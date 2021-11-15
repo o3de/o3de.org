@@ -83,46 +83,46 @@ virtual const <a class="el" href="struct_a_z_1_1_debug_1_1_driller_1_1_param.htm
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a52423560905511d998098db0551d390b"><td class="memItemLeft" align="right" valign="top"><a id="a52423560905511d998098db0551d390b"></a>
-virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_memory_driller.html#a52423560905511d998098db0551d390b">GroupName</a> () const</td></tr>
-<tr class="memdesc:a52423560905511d998098db0551d390b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_debug_1_1_driller.html">Driller</a> group name, used only for organizational purpose. <br /></td></tr>
-<tr class="separator:a52423560905511d998098db0551d390b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bfc7388795111cb038de5484b022789"><td class="memItemLeft" align="right" valign="top"><a id="a7bfc7388795111cb038de5484b022789"></a>
-virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_memory_driller.html#a7bfc7388795111cb038de5484b022789">GetName</a> () const</td></tr>
-<tr class="memdesc:a7bfc7388795111cb038de5484b022789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique name of the <a class="el" href="class_a_z_1_1_debug_1_1_driller.html">Driller</a>, driller ID is the Crc of the name. <br /></td></tr>
-<tr class="separator:a7bfc7388795111cb038de5484b022789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a6ea06726b4379f3c939bb1d7508203"><td class="memItemLeft" align="right" valign="top"><a id="a0a6ea06726b4379f3c939bb1d7508203"></a>
-virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescription</b> () const</td></tr>
-<tr class="separator:a0a6ea06726b4379f3c939bb1d7508203"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ae5b903edffe8edd366638e3d3e903a"><td class="memItemLeft" align="right" valign="top"><a id="a1ae5b903edffe8edd366638e3d3e903a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_memory_driller.html#a1ae5b903edffe8edd366638e3d3e903a">Start</a> (const <a class="el" href="struct_a_z_1_1_debug_1_1_driller_1_1_param.html">Param</a> *params=NULL, int numParams=0)</td></tr>
-<tr class="memdesc:a1ae5b903edffe8edd366638e3d3e903a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="class_a_z_1_1_debug_1_1_driller_manager.html">DrillerManager</a>. <br /></td></tr>
-<tr class="separator:a1ae5b903edffe8edd366638e3d3e903a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2adf4b6334039c8a49a89b490bd9de67"><td class="memItemLeft" align="right" valign="top"><a id="a2adf4b6334039c8a49a89b490bd9de67"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_memory_driller.html#a2adf4b6334039c8a49a89b490bd9de67">Stop</a> ()</td></tr>
-<tr class="memdesc:a2adf4b6334039c8a49a89b490bd9de67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="class_a_z_1_1_debug_1_1_driller_manager.html">DrillerManager</a>. <br /></td></tr>
-<tr class="separator:a2adf4b6334039c8a49a89b490bd9de67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a888e39e52f9c3c5811bdff8ea86b8f30"><td class="memItemLeft" align="right" valign="top"><a id="a888e39e52f9c3c5811bdff8ea86b8f30"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterAllocator</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *allocator)</td></tr>
-<tr class="separator:a888e39e52f9c3c5811bdff8ea86b8f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac95b3a7d15fe70e709ef07177a503959"><td class="memItemLeft" align="right" valign="top"><a id="ac95b3a7d15fe70e709ef07177a503959"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterAllocator</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *allocator)</td></tr>
-<tr class="separator:ac95b3a7d15fe70e709ef07177a503959"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca39c093fa2a089ba50aaffc453f21fc"><td class="memItemLeft" align="right" valign="top"><a id="aca39c093fa2a089ba50aaffc453f21fc"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterAllocation</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *allocator, void *address, size_t byteSize, size_t alignment, const char *name, const char *fileName, int lineNum, unsigned int stackSuppressCount)</td></tr>
-<tr class="separator:aca39c093fa2a089ba50aaffc453f21fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ac1235a6bed2005e1a7603b027a13fa"><td class="memItemLeft" align="right" valign="top"><a id="a6ac1235a6bed2005e1a7603b027a13fa"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterAllocation</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *allocator, void *address, size_t byteSize, size_t alignment, <a class="el" href="struct_a_z_1_1_debug_1_1_allocation_info.html">AllocationInfo</a> *info)</td></tr>
-<tr class="separator:a6ac1235a6bed2005e1a7603b027a13fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f74ef26d124fadd7ffd06a3c52e8220"><td class="memItemLeft" align="right" valign="top"><a id="a1f74ef26d124fadd7ffd06a3c52e8220"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReallocateAllocation</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *allocator, void *prevAddress, void *newAddress, size_t newByteSize, size_t newAlignment)</td></tr>
-<tr class="separator:a1f74ef26d124fadd7ffd06a3c52e8220"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14ef43664a62c5b38746512a668dcc3a"><td class="memItemLeft" align="right" valign="top"><a id="a14ef43664a62c5b38746512a668dcc3a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ResizeAllocation</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *allocator, void *address, size_t newSize)</td></tr>
-<tr class="separator:a14ef43664a62c5b38746512a668dcc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d08fa1290459ab0b0017dc4ac6faebd"><td class="memItemLeft" align="right" valign="top"><a id="a8d08fa1290459ab0b0017dc4ac6faebd"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DumpAllAllocations</b> ()</td></tr>
-<tr class="separator:a8d08fa1290459ab0b0017dc4ac6faebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea12066b0c1ef1e0e44dec8e29a863d6"><td class="memItemLeft" align="right" valign="top"><a id="aea12066b0c1ef1e0e44dec8e29a863d6"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_memory_driller.html#aea12066b0c1ef1e0e44dec8e29a863d6">GroupName</a> () const override</td></tr>
+<tr class="memdesc:aea12066b0c1ef1e0e44dec8e29a863d6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_debug_1_1_driller.html">Driller</a> group name, used only for organizational purpose. <br /></td></tr>
+<tr class="separator:aea12066b0c1ef1e0e44dec8e29a863d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e5473c5f290a96cca2a41c86be48d0"><td class="memItemLeft" align="right" valign="top"><a id="a17e5473c5f290a96cca2a41c86be48d0"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_memory_driller.html#a17e5473c5f290a96cca2a41c86be48d0">GetName</a> () const override</td></tr>
+<tr class="memdesc:a17e5473c5f290a96cca2a41c86be48d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique name of the <a class="el" href="class_a_z_1_1_debug_1_1_driller.html">Driller</a>, driller ID is the Crc of the name. <br /></td></tr>
+<tr class="separator:a17e5473c5f290a96cca2a41c86be48d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa92eb2ebd7abe2660b8e6d5598e0df17"><td class="memItemLeft" align="right" valign="top"><a id="aa92eb2ebd7abe2660b8e6d5598e0df17"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescription</b> () const override</td></tr>
+<tr class="separator:aa92eb2ebd7abe2660b8e6d5598e0df17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c73da91caa84ea35819d489eaf88ddc"><td class="memItemLeft" align="right" valign="top"><a id="a9c73da91caa84ea35819d489eaf88ddc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_memory_driller.html#a9c73da91caa84ea35819d489eaf88ddc">Start</a> (const <a class="el" href="struct_a_z_1_1_debug_1_1_driller_1_1_param.html">Param</a> *params=NULL, int numParams=0) override</td></tr>
+<tr class="memdesc:a9c73da91caa84ea35819d489eaf88ddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="class_a_z_1_1_debug_1_1_driller_manager.html">DrillerManager</a>. <br /></td></tr>
+<tr class="separator:a9c73da91caa84ea35819d489eaf88ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a881b66c5a845fd70fd8372aa9d012fde"><td class="memItemLeft" align="right" valign="top"><a id="a881b66c5a845fd70fd8372aa9d012fde"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_memory_driller.html#a881b66c5a845fd70fd8372aa9d012fde">Stop</a> () override</td></tr>
+<tr class="memdesc:a881b66c5a845fd70fd8372aa9d012fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="class_a_z_1_1_debug_1_1_driller_manager.html">DrillerManager</a>. <br /></td></tr>
+<tr class="separator:a881b66c5a845fd70fd8372aa9d012fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5087e2b5e364bd14593c68b124b67893"><td class="memItemLeft" align="right" valign="top"><a id="a5087e2b5e364bd14593c68b124b67893"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterAllocator</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *allocator) override</td></tr>
+<tr class="separator:a5087e2b5e364bd14593c68b124b67893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e6648b535e9fc21060acfb23435fdf"><td class="memItemLeft" align="right" valign="top"><a id="a45e6648b535e9fc21060acfb23435fdf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterAllocator</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *allocator) override</td></tr>
+<tr class="separator:a45e6648b535e9fc21060acfb23435fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a863a04940f7e7e0289a766d49e74e8"><td class="memItemLeft" align="right" valign="top"><a id="a1a863a04940f7e7e0289a766d49e74e8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterAllocation</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *allocator, void *address, size_t byteSize, size_t alignment, const char *name, const char *fileName, int lineNum, unsigned int stackSuppressCount) override</td></tr>
+<tr class="separator:a1a863a04940f7e7e0289a766d49e74e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e3c654fb51d087a38647eb395aff3e8"><td class="memItemLeft" align="right" valign="top"><a id="a0e3c654fb51d087a38647eb395aff3e8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterAllocation</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *allocator, void *address, size_t byteSize, size_t alignment, <a class="el" href="struct_a_z_1_1_debug_1_1_allocation_info.html">AllocationInfo</a> *info) override</td></tr>
+<tr class="separator:a0e3c654fb51d087a38647eb395aff3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e18ef93b7b27aabc1232396c80e00f9"><td class="memItemLeft" align="right" valign="top"><a id="a8e18ef93b7b27aabc1232396c80e00f9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReallocateAllocation</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *allocator, void *prevAddress, void *newAddress, size_t newByteSize, size_t newAlignment) override</td></tr>
+<tr class="separator:a8e18ef93b7b27aabc1232396c80e00f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7287c0256c320f1239339b01631f5b5d"><td class="memItemLeft" align="right" valign="top"><a id="a7287c0256c320f1239339b01631f5b5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResizeAllocation</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *allocator, void *address, size_t newSize) override</td></tr>
+<tr class="separator:a7287c0256c320f1239339b01631f5b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a494cb8d771614bfcdd24dd491bc67618"><td class="memItemLeft" align="right" valign="top"><a id="a494cb8d771614bfcdd24dd491bc67618"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DumpAllAllocations</b> () override</td></tr>
+<tr class="separator:a494cb8d771614bfcdd24dd491bc67618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a941717e2e2f73f50e506815dfc51271e"><td class="memItemLeft" align="right" valign="top"><a id="a941717e2e2f73f50e506815dfc51271e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterAllocatorOutput</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *allocator)</td></tr>
 <tr class="separator:a941717e2e2f73f50e506815dfc51271e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,7 +154,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:50 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:18:29 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

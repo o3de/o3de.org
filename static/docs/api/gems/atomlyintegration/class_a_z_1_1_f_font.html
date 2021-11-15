@@ -66,8 +66,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_f_font_1_1_font_hint_params.html">FontHintParams</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple struct used to communicate font hinting parameters to font renderer.  <a href="struct_a_z_1_1_f_font_1_1_font_hint_params.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_f_font_1_1_font_pipeline_state_map_key.html">FontPipelineStateMapKey</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_f_font_1_1_font_rendering_pass.html">FontRenderingPass</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_f_font_1_1_font_shader_data.html">FontShaderData</a></td></tr>
@@ -127,12 +125,9 @@ Vec2&#160;</td><td class="memItemRight" valign="bottom"><b>GetTextSize</b> (cons
 <tr class="memitem:ae1d76508a578da2d531154f02f90e092"><td class="memItemLeft" align="right" valign="top"><a id="ae1d76508a578da2d531154f02f90e092"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetTextLength</b> (const char *str, const bool asciiMultiLine) const override</td></tr>
 <tr class="separator:ae1d76508a578da2d531154f02f90e092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82bf7cd06c00723f0a4a603f1594b73c"><td class="memItemLeft" align="right" valign="top"><a id="a82bf7cd06c00723f0a4a603f1594b73c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WrapText</b> (string &amp;result, float maxWidth, const char *str, const TextDrawContext &amp;ctx) override</td></tr>
-<tr class="separator:a82bf7cd06c00723f0a4a603f1594b73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f7143db253fc9fed04f82ccdf719dcc"><td class="memItemLeft" align="right" valign="top"><a id="a0f7143db253fc9fed04f82ccdf719dcc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GetMemoryUsage</b> ([[maybe_unused]] ICrySizer *sizer) const override</td></tr>
-<tr class="separator:a0f7143db253fc9fed04f82ccdf719dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891001397fa8414e5effd4e51aeb4903"><td class="memItemLeft" align="right" valign="top"><a id="a891001397fa8414e5effd4e51aeb4903"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WrapText</b> (AZStd::string &amp;result, float maxWidth, const char *str, const TextDrawContext &amp;ctx) override</td></tr>
+<tr class="separator:a891001397fa8414e5effd4e51aeb4903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82e71210ebca780bdbc3c3235b683344"><td class="memItemLeft" align="right" valign="top"><a id="a82e71210ebca780bdbc3c3235b683344"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>GetGradientTextureCoord</b> (float &amp;minU, float &amp;minV, float &amp;maxU, float &amp;maxV) const override</td></tr>
 <tr class="separator:a82e71210ebca780bdbc3c3235b683344"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,9 +188,9 @@ AZ::Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>GetTextSize</b
 <tr class="memitem:ab8a99a3d8408674ffd3343ee1e362bc0"><td class="memItemLeft" align="right" valign="top"><a id="ab8a99a3d8408674ffd3343ee1e362bc0"></a>
 <a class="el" href="class_a_z_1_1_font_texture.html">FontTexture</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFontTexture</b> () const</td></tr>
 <tr class="separator:ab8a99a3d8408674ffd3343ee1e362bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9622137de4c46c30750506232dfd032"><td class="memItemLeft" align="right" valign="top"><a id="ad9622137de4c46c30750506232dfd032"></a>
-const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
-<tr class="separator:ad9622137de4c46c30750506232dfd032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d8679fe841038c6ac99d6e019f85f3"><td class="memItemLeft" align="right" valign="top"><a id="ac8d8679fe841038c6ac99d6e019f85f3"></a>
+const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
+<tr class="separator:ac8d8679fe841038c6ac99d6e019f85f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcd62f02854947409f7c6db9d51e5964"><td class="memItemLeft" align="right" valign="top"><a id="afcd62f02854947409f7c6db9d51e5964"></a>
 <a class="el" href="struct_a_z_1_1_f_font_1_1_font_effect.html">FontEffect</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AddEffect</b> (const char *effectName)</td></tr>
 <tr class="separator:afcd62f02854947409f7c6db9d51e5964"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -307,7 +302,7 @@ AZ::Data::Instance&lt; AZ::RPI::Image &gt;&#160;</td><td class="memItemRight" va
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:26 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:21 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -53,8 +53,8 @@ $(function() {
 <li>EditorSelectionIntersectRayViewport()
 : <a class="el" href="class_az_tools_framework_1_1_editor_component_selection_requests.html#a80bc5fc849d02f386001544f59594b25">AzToolsFramework::EditorComponentSelectionRequests</a>
 </li>
-<li>EditOwningPrefab()
-: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_edit_interface.html#adb626509427cac6a106b3487c58116ed">AzToolsFramework::Prefab::PrefabEditInterface</a>
+<li>EditorViewportInputTimeNow()
+: <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_editor_viewport_input_time_now_requests.html#a756dffd56576d64447f85bae5ab4847e">AzToolsFramework::ViewportInteraction::EditorViewportInputTimeNowRequests</a>
 </li>
 <li>EnableComponents()
 : <a class="el" href="class_az_tools_framework_1_1_editor_component_a_p_i_requests.html#a6a428b970f1db1770744b6d7b9ce6c6a">AzToolsFramework::EditorComponentAPIRequests</a>
@@ -81,12 +81,6 @@ $(function() {
 </li>
 <li>EndUndoBatch()
 : <a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a99c50798020756682c1c6fb66153378f">AzToolsFramework::ToolsApplicationRequests</a>
-</li>
-<li>EndWidgetContext()
-: <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_main_editor_viewport_interaction_requests.html#af1ae13408474a54714e41968f8cce230">AzToolsFramework::ViewportInteraction::MainEditorViewportInteractionRequests</a>
-</li>
-<li>EnteredComponentMode()
-: <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_component_mode_notifications.html#ae9e60207ad42fb9af8708e4665249bbc">AzToolsFramework::ComponentModeFramework::EditorComponentModeNotifications</a>
 </li>
 <li>EnterEditorIsolationMode()
 : <a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a41b4bd9524e48e323a493f597922be2b">AzToolsFramework::ToolsApplicationRequests</a>
@@ -115,8 +109,14 @@ $(function() {
 <li>EntityDeregistered()
 : <a class="el" href="class_az_tools_framework_1_1_tools_application_events.html#ad3df6a1e1c20837b2e54f128d445e8d4">AzToolsFramework::ToolsApplicationEvents</a>
 </li>
+<li>EntityExists()
+: <a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a108c8298e0b4c8cba8dfa214e963e09e">AzToolsFramework::ToolsApplicationRequests</a>
+</li>
 <li>EntityIdGenerationApproach
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_entity_id_mapper.html#ac550c8cc8a20b9bc071bcee3159b6f06">AzToolsFramework::Prefab::InstanceEntityIdMapper</a>
+</li>
+<li>EntityIdUnderCursor()
+: <a class="el" href="class_az_tools_framework_1_1_cursor_entity_id_query.html#a957610f429f86587d44e39b0e1fb07f0">AzToolsFramework::CursorEntityIdQuery</a>
 </li>
 <li>EntityParentChanged()
 : <a class="el" href="class_az_tools_framework_1_1_tools_application_events.html#a5728d0a399e075cbf7fc6aaaf9ac49f9">AzToolsFramework::ToolsApplicationEvents</a>
@@ -128,16 +128,20 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_entity_composition_requests.html#a423787c0bdc3489fe45d3ca1488a7a5b">AzToolsFramework::EntityCompositionRequests</a>
 </li>
 <li>ExecuteByFilename()
-: <a class="el" href="class_az_tools_framework_1_1_editor_python_runner_requests.html#a458008085671255be1088c0396bd227b">AzToolsFramework::EditorPythonRunnerRequests</a>
+: <a class="el" href="class_az_tools_framework_1_1_editor_python_runner_requests.html#a89717705d83eda1fbe287f932fc10b96">AzToolsFramework::EditorPythonRunnerRequests</a>
 </li>
 <li>ExecuteByFilenameAsTest()
-: <a class="el" href="class_az_tools_framework_1_1_editor_python_runner_requests.html#a93ec9ad68b6d12178d771feccc7415c1">AzToolsFramework::EditorPythonRunnerRequests</a>
+: <a class="el" href="class_az_tools_framework_1_1_editor_python_runner_requests.html#a3db6d8b3e473a270111acdf5c15dae22">AzToolsFramework::EditorPythonRunnerRequests</a>
 </li>
 <li>ExecuteByFilenameWithArgs()
-: <a class="el" href="class_az_tools_framework_1_1_editor_python_runner_requests.html#a3189cfdf9efb7f8febf087820b8c319e">AzToolsFramework::EditorPythonRunnerRequests</a>
+: <a class="el" href="class_az_tools_framework_1_1_editor_python_runner_requests.html#a6dead442a823692b9ec9abe9ee83f892">AzToolsFramework::EditorPythonRunnerRequests</a>
 </li>
 <li>ExecuteByString()
-: <a class="el" href="class_az_tools_framework_1_1_editor_python_runner_requests.html#ab91759af692736b28139a743e73c2ecb">AzToolsFramework::EditorPythonRunnerRequests</a>
+: <a class="el" href="class_az_tools_framework_1_1_editor_python_runner_requests.html#aa4ef9c37c3c408464547ecc8a1976590">AzToolsFramework::EditorPythonRunnerRequests</a>
+</li>
+<li>ExecuteClosePrefabDialog()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_integration_interface.html#a8108932ca68f2f9a0eac53c24d6a1066">AzToolsFramework::Prefab::PrefabIntegrationInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_integration_manager.html#abef291d4922ee4d206808247fc2063d7">AzToolsFramework::Prefab::PrefabIntegrationManager</a>
 </li>
 <li>ExecuteIPCHandlers()
 : <a class="el" href="class_legacy_framework_1_1_i_p_c_command_a_p_i.html#a477e2d96b5a9c3625d3bc5e6058d86ed">LegacyFramework::IPCCommandAPI</a>
@@ -148,6 +152,10 @@ $(function() {
 <li>ExecuteRawSqlQuery()
 : <a class="el" href="class_az_tools_framework_1_1_s_q_lite_1_1_connection.html#a9abb0d846f89ebad7495bcdeb01dba3e">AzToolsFramework::SQLite::Connection</a>
 </li>
+<li>ExecuteSavePrefabDialog()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_integration_interface.html#ab84cdfd9b27f9a6906dfe0eb25214363">AzToolsFramework::Prefab::PrefabIntegrationInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_integration_manager.html#a206c49269b1f888584ec17dc17e2a06c">AzToolsFramework::Prefab::PrefabIntegrationManager</a>
+</li>
 <li>ExecuteWithLock()
 : <a class="el" href="class_az_tools_framework_1_1_editor_python_events_interface.html#a2ee8bdc523576f61ef70b7f0508e47e2">AzToolsFramework::EditorPythonEventsInterface</a>
 </li>
@@ -155,22 +163,16 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a5f63b34061257107f478fc0a1cfa3079">AzToolsFramework::ToolsApplicationRequests</a>
 </li>
 <li>ExtractArchive()
-: <a class="el" href="class_az_tools_framework_1_1_archive_commands.html#ad63c5877db5813d4080c23da9a2be2d4">AzToolsFramework::ArchiveCommands</a>
-</li>
-<li>ExtractArchiveBlocking()
-: <a class="el" href="class_az_tools_framework_1_1_archive_commands.html#ab82e49d7f0082d6e154c634f59d23579">AzToolsFramework::ArchiveCommands</a>
+: <a class="el" href="class_az_tools_framework_1_1_archive_commands.html#a6c3e6621581ae1e0c0ee395ac864f213">AzToolsFramework::ArchiveCommands</a>
 </li>
 <li>ExtractFile()
-: <a class="el" href="class_az_tools_framework_1_1_archive_commands.html#ad5620b0e8eb8002d02f6b8b71606fc54">AzToolsFramework::ArchiveCommands</a>
-</li>
-<li>ExtractFileBlocking()
-: <a class="el" href="class_az_tools_framework_1_1_archive_commands.html#aa30c4fba383cfb7ed8e9986593b2d401">AzToolsFramework::ArchiveCommands</a>
+: <a class="el" href="class_az_tools_framework_1_1_archive_commands.html#af10e46056c29d75912f3978950cb2781">AzToolsFramework::ArchiveCommands</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:41 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:26 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

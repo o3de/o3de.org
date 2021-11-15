@@ -14,7 +14,7 @@ You can learn the basics of navigating and customizing O3DE Editor from the quic
 
 ## Launch O3DE Editor
 
-O3DE Editor can be launched by running `Editor.exe` from your O3DE installation's `/bin/<platform>/<config>` directory. You will be greeted by **Project Manager** which will allow you to choose or create a project. When you choose a project, O3DE Editor launches, and you're given the option to create a new level or load an existing level. Levels aren't just environments. Levels are complex assets with many files that represent a section of your project. In general, levels are stored in named subdirectories of the project's `Levels` directory.
+O3DE Editor can be launched by running `Editor.exe` from your O3DE installation's `/bin/<platform>/<config>/Default` directory. You will be greeted by **Project Manager** which will allow you to choose or create a project. When you choose a project, O3DE Editor launches, and you're given the option to create a new level or load an existing level. Levels aren't just environments. Levels are complex assets with many files that represent a section of your project. In general, levels are stored in named subdirectories of the project's `Levels` directory.
 
 ## The O3DE Editor default layout
 
@@ -28,7 +28,7 @@ You can customize the layout through drag and drop, and save to a custom layout 
 
    The Menu Bar contains several familiar menus:
 
-   * **File** - File menu items include actions for opening an saving levels, managing editor and project settings, and creating and opening projects.
+   * **File** - File menu items include actions for opening and saving levels, managing editor and project settings, and creating and opening projects.
 
    * **Edit** - Edit menu items include actions for working with selections such as duplicate, delete, hide and show selection, and working with selection transforms.
 
@@ -60,7 +60,7 @@ You can customize the layout through drag and drop, and save to a custom layout 
 
    Right-click in the viewport of Perspective to open the context menu to create entities and prefabs. Much of the context menu functionality in Perspective is shared with the context menu functionality of Entity Outliner.
 
-   In the upper left and upper right corners of Perspective are icon trays for manipulating entities. On the left (**D1**), you can use the icons to select a transform operation. From top to bottom the icons represent translate, rotate, and scale operations. On the right (**D2**), you can use the icons to select a space for the transform operation. From top to bottom the icons represent world, parent, and local spaces. 
+   In the upper left and upper right corners of Perspective are icon trays for manipulating entities. On the left (**D1**), you can use the icons to select a transform operation. From top to bottom the icons represent {{< icon "move.svg" >}} translate, {{< icon "rotate.svg" >}} rotate, and {{< icon "scale.svg" >}} scale operations. On the right (**D2**), you can use the icons to select a space for the transform operation. From top to bottom the icons represent {{< icon "world.svg" >}} world, {{< icon "parent.svg" >}} parent, and {{< icon "local.svg" >}} local spaces. 
 
 * **E:**  On the right side of O3DE Editor, **Entity Inspector** displays the components of the currently selected entity. At the top of Entity Inspector is a field for the entity **Name** and an **Add Component** button. The Add Component button opens a list of available components, sorted by type, that can be added to the entity. Each component has its own set of properties that are displayed in Entity Inspector. All entities contain a transform component that sets the position, rotation, and scale of the entity in the level.
 
@@ -107,7 +107,7 @@ You might prefer to invert either axis of your editor camera controls, or, you m
 
 In the **Edit** menu, from the **Editor Settings** group, choose **Global Preferences**. Select **Camera** from list on the left. Here, you can invert either mouse axis and adjust the movement speed of the editor camera.
 
-When you have your movement preferences set to your liking, you might find at times that the editor camera movement is too fast or too slow in certain situations. You can adjust the movement speed by choosine the **Camera** icon in the **Perspective Toolbar** at the top of the **Perspective** pane.
+When you have your movement preferences set to your liking, you might find at times that the editor camera movement is too fast or too slow in certain situations. You can adjust the movement speed by choosing the **Camera** icon in the **Perspective Toolbar** at the top of the **Perspective** pane.
 
 ![O3DE Perspective movement speed.](/images/welcome-guide/ui-camera-speed.png)
 

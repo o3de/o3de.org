@@ -50,7 +50,6 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_a_z_1_1_r_p_i_1_1_cullable-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::RPI::Cullable Struct Reference</div>  </div>
@@ -61,11 +60,18 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_cullable_1_1_cull_data.html">CullData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_cullable_1_1_lod_configuration.html">LodConfiguration</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_cullable_1_1_lod_data.html">LodData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:ab33c9cdb077b425b8cb65fb5d8cffd9f"><td class="memItemLeft" align="right" valign="top"><a id="ab33c9cdb077b425b8cb65fb5d8cffd9f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>LodType</b> : uint8_t { <b>Default</b> = 0, 
+<b>ScreenCoverage</b>, 
+<b>SpecificLod</b>
+ }</td></tr>
+<tr class="separator:ab33c9cdb077b425b8cb65fb5d8cffd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e2256c411bf6a9a86c03c0346b1f26d"><td class="memItemLeft" align="right" valign="top"><a id="a8e2256c411bf6a9a86c03c0346b1f26d"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>LodOverride</b> = uint8_t</td></tr>
 <tr class="separator:a8e2256c411bf6a9a86c03c0346b1f26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,12 +97,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a82da63bc61a1a0bd313cfdf701baba18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae6b17c571262b249ddf4e02eef4f3af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_cullable.html#aae6b17c571262b249ddf4e02eef4f3af">m_isHidden</a> = false</td></tr>
 <tr class="separator:aae6b17c571262b249ddf4e02eef4f3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:abcf0b17ecfb4e48863ab0196df998c5f"><td class="memItemLeft" align="right" valign="top"><a id="abcf0b17ecfb4e48863ab0196df998c5f"></a>
-static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>NoLodOverride</b> = AZStd::numeric_limits&lt;LodOverride&gt;::max()</td></tr>
-<tr class="separator:abcf0b17ecfb4e48863ab0196df998c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="aae6b17c571262b249ddf4e02eef4f3af"></a>
@@ -135,7 +135,7 @@ static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>N
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:21 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:16 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

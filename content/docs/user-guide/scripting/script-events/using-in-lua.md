@@ -1,17 +1,18 @@
 ---
-description: ' Learn how to use script events in Lua in Open 3D Engine. '
 title: Using Script Events in Lua
+description: Learn how to use script events with Lua in Open 3D Engine (O3DE).
 weight: 300
 ---
 
-Lua scripts can use script events to communicate with each other. There are two example scripts that show this communication, both available in the `Gems\ScriptEvents\Assets\Scripts\Example` directory. They are called `ScriptEvents_Addressable.lua` and `ScriptEvents_Broadcast.lua`. If an EBus is addressed, events are sent to a specific address ID. Events that are broadcast globally are received at all addresses. For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
+Lua scripts can use script events to communicate with each other. There are two example scripts that show this communication, both available in the `Gems\ScriptEvents\Assets\Scripts\Example` directory. They are called `ScriptEvents_Addressable.lua` and `ScriptEvents_Broadcast.lua`. If an EBus is addressed, events are sent to a specific address ID. Events that are broadcast globally are received at all addresses. For more information, see [The Open 3D Engine Event Bus (EBus) System](/docs/user-guide/engine/ebus/).
 
-**ScriptEvents\_Addressable.lua**
+### ScriptEvents_Addressable.lua
+
 The `ScriptEvents_Addressable.lua` example script implements a handler for a script event that requires an address for a handler to be invoked. It broadcasts a method, but only handlers connected to the address that match the one specified in the event can invoke it.
 
 **Example**
 
-```
+```lua
 -- ScriptEvents_Addressable.lua
 function ScriptTrace(txt)
     Debug.Log(txt)
@@ -82,12 +83,13 @@ ScriptExpectTrue(returnValue, "Method0's return value must be true")
 Script_Event.Event.MethodWithId1("ScriptEventAddress")
 ```
 
-**ScriptEvents\_Broadcast.lua**
+### ScriptEvents_Broadcast.lua
+
 The `ScriptEvents_Broadcast.lua` example script implements a handler for a broadcast script event. Because broadcast script events do not specify an address type, any handler can connect to them.
 
 **Example**
 
-```
+```lua
 -- ScriptEvents_Broadcast.lua
             function ScriptTrace(txt)
     Debug.Log(txt)

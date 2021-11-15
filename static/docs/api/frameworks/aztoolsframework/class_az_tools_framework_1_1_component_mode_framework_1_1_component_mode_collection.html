@@ -57,6 +57,8 @@ $(function() {
  <a href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_collection.html#details">More...</a></p>
 
 <p><code>#include &lt;ComponentModeCollection.h&gt;</code></p>
+
+<p>Inherits <a class="el" href="class_az_tools_framework_1_1_component_mode_collection_interface.html">AzToolsFramework::ComponentModeCollectionInterface</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -112,6 +114,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a3975c441323f04550546baa3d75c5a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaa57430ad7f0d313ed5d7e1d2862ec1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_collection.html#aaaa57430ad7f0d313ed5d7e1d2862ec1">PopulateViewportUi</a> ()</td></tr>
 <tr class="separator:aaaa57430ad7f0d313ed5d7e1d2862ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390fa2980c35eea36f23cf9e4e08f57e"><td class="memItemLeft" align="right" valign="top">AZStd::vector&lt; AZ::Uuid &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_collection.html#a390fa2980c35eea36f23cf9e4e08f57e">GetComponentTypes</a> () const override</td></tr>
+<tr class="separator:a390fa2980c35eea36f23cf9e4e08f57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_az_tools_framework_1_1_component_mode_collection_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_az_tools_framework_1_1_component_mode_collection_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_az_tools_framework_1_1_component_mode_collection_interface.html">AzToolsFramework::ComponentModeCollectionInterface</a></td></tr>
+<tr class="memitem:ad19142fdaa1d9aec9e4e34e81f734c5d inherit pub_methods_class_az_tools_framework_1_1_component_mode_collection_interface"><td class="memItemLeft" align="right" valign="top"><a id="ad19142fdaa1d9aec9e4e34e81f734c5d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_component_mode_collection_interface.html">ComponentModeCollectionInterface</a>, &quot;{DFAA4450-BBCD-47C0-9B91-FEA2DBD9B152}&quot;)</td></tr>
+<tr class="separator:ad19142fdaa1d9aec9e4e34e81f734c5d inherit pub_methods_class_az_tools_framework_1_1_component_mode_collection_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages all individual ComponentModes for a single instance of Editor wide <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a>. </p>
@@ -205,6 +213,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="a390fa2980c35eea36f23cf9e4e08f57e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a390fa2980c35eea36f23cf9e4e08f57e">&#9670;&nbsp;</a></span>GetComponentTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::vector&lt;AZ::Uuid&gt; AzToolsFramework::ComponentModeFramework::ComponentModeCollection::GetComponentTypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieves the list of all Component types (usually one). </p><dl class="section note"><dt>Note</dt><dd>If called outside of component mode, an empty vector will be returned. </dd></dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_component_mode_collection_interface.html#a46aa09d106f248fc15e6da90e9b878ea">AzToolsFramework::ComponentModeCollectionInterface</a>.</p>
+
+</div>
+</div>
 <a id="acdb5719cea86dc2a94fc38e0262b63ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acdb5719cea86dc2a94fc38e0262b63ec">&#9670;&nbsp;</a></span>ModesAdded()</h2>
 
@@ -255,7 +291,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:39 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:23 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

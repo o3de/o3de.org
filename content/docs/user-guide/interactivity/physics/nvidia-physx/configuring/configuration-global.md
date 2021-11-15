@@ -63,8 +63,9 @@ The following options relate to the **Debug Draw COM** (center of mass) option o
 | Joints Hierarchy Follower Color  |  Color of the **follower** half of a lead-follower joint connection line.  |
 | Joints Hierarchy Distance Threshold  |  Minimum distance required to draw from follower to joint. Distances shorter than this threshold will result in the line drawn from the joint to the lead. The default is `1.0`.  |
 
-**Note**
+{{< note >}}
 These options are part of the PhysX gem and are not related to the Debug Draw gem or the [PhysX Debug](/docs/user-guide/gems/reference/physics/nvidia/physx-debug/) gem.
+{{< /note >}}
 
 ## Wind Configuration 
 

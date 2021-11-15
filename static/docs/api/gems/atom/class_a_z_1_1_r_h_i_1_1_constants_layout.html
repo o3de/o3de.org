@@ -99,6 +99,8 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="separator:ad7f1ed339fef71daa084ff2c56a78a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09d86deadb41f3d491ca7146b1bbbe6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_layout.html#a09d86deadb41f3d491ca7146b1bbbe6f">ValidateAccess</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex) const</td></tr>
 <tr class="separator:a09d86deadb41f3d491ca7146b1bbbe6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ee69a171eb4adb04e2986a45aaebd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_layout.html#a50ee69a171eb4adb04e2986a45aaebd1">DebugPrintNames</a> (AZStd::array_view&lt; <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> &gt; constantList) const</td></tr>
+<tr class="separator:a50ee69a171eb4adb04e2986a45aaebd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -113,6 +115,25 @@ static RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_layout
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_layout.html">ConstantsLayout</a> defines a the layout of a set of constant shader inputs. Each constant input spans a range of bytes in an byte array. The array could represent a constant buffer or an inline structure depending on where the constants are being use.</p>
 <p>To use the class, assign shader inputs using AddShaderInput, and call Finalize to complete construction of the layout. This class is intended to be built using an offline shader compiler, and serialized to / from disk. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a50ee69a171eb4adb04e2986a45aaebd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50ee69a171eb4adb04e2986a45aaebd1">&#9670;&nbsp;</a></span>DebugPrintNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RHI::ConstantsLayout::DebugPrintNames </td>
+          <td>(</td>
+          <td class="paramtype">AZStd::array_view&lt; <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> &gt;&#160;</td>
+          <td class="paramname"><em>constantList</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prints to the console the shader input names specified by input list of indices Will ignore any indices outside of the inputs array bounds </p>
+
+</div>
+</div>
 <a id="a792a1a725fa0d5587500890892c9973b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a792a1a725fa0d5587500890892c9973b">&#9670;&nbsp;</a></span>Finalize()</h2>
 
@@ -212,7 +233,7 @@ static RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_layout
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:14 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

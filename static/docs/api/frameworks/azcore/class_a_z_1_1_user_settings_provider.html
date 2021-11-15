@@ -69,15 +69,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> ()</td
 <tr class="memitem:a06bee07c9426a8aee891f17881d43347"><td class="memItemLeft" align="right" valign="top"><a id="a06bee07c9426a8aee891f17881d43347"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> (const char *settingsPath, <a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> *sc)</td></tr>
 <tr class="separator:a06bee07c9426a8aee891f17881d43347"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a804224d1a77ee6fcc1afe4d65b2c70dd"><td class="memItemLeft" align="right" valign="top"><a id="a804224d1a77ee6fcc1afe4d65b2c70dd"></a>
-virtual <a class="el" href="class_a_z_std_1_1intrusive__ptr.html">AZStd::intrusive_ptr</a>&lt; <a class="el" href="class_a_z_1_1_user_settings.html">UserSettings</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FindUserSettings</b> (u32 id)</td></tr>
-<tr class="separator:a804224d1a77ee6fcc1afe4d65b2c70dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad47006cfd4031b594ea54a8eaef123b3"><td class="memItemLeft" align="right" valign="top"><a id="ad47006cfd4031b594ea54a8eaef123b3"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddUserSettings</b> (u32 id, <a class="el" href="class_a_z_1_1_user_settings.html">UserSettings</a> *settings)</td></tr>
-<tr class="separator:ad47006cfd4031b594ea54a8eaef123b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54fcb96d0284b3ea8f984d1dd7b3e176"><td class="memItemLeft" align="right" valign="top"><a id="a54fcb96d0284b3ea8f984d1dd7b3e176"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Save</b> (const char *settingsPath, <a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> *sc)</td></tr>
-<tr class="separator:a54fcb96d0284b3ea8f984d1dd7b3e176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1870bfc8899ab8a3526a3ee19f90b9e"><td class="memItemLeft" align="right" valign="top"><a id="ae1870bfc8899ab8a3526a3ee19f90b9e"></a>
+<a class="el" href="class_a_z_std_1_1intrusive__ptr.html">AZStd::intrusive_ptr</a>&lt; <a class="el" href="class_a_z_1_1_user_settings.html">UserSettings</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FindUserSettings</b> (u32 id) override</td></tr>
+<tr class="separator:ae1870bfc8899ab8a3526a3ee19f90b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23ce51d25f0e62dc9e2661735d5d9c8"><td class="memItemLeft" align="right" valign="top"><a id="aa23ce51d25f0e62dc9e2661735d5d9c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddUserSettings</b> (u32 id, <a class="el" href="class_a_z_1_1_user_settings.html">UserSettings</a> *settings) override</td></tr>
+<tr class="separator:aa23ce51d25f0e62dc9e2661735d5d9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26e26a03ab5e34c7e1c09992e2cef9bb"><td class="memItemLeft" align="right" valign="top"><a id="a26e26a03ab5e34c7e1c09992e2cef9bb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Save</b> (const char *settingsPath, <a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> *sc) override</td></tr>
+<tr class="separator:a26e26a03ab5e34c7e1c09992e2cef9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -103,7 +103,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:49 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:18:28 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -77,6 +77,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a968fd7c44ee3a69f740532aa3e325892"><td class="memItemLeft" align="right" valign="top"><a id="a968fd7c44ee3a69f740532aa3e325892"></a>
 <a class="el" href="class_a_z_1_1_event.html">Event</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_1_1_event.html">Event</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:a968fd7c44ee3a69f740532aa3e325892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c93a16c0f8dcc8caaf9cff4d97b8b7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_event.html">Event</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_event.html#a1c93a16c0f8dcc8caaf9cff4d97b8b7f">ClaimHandlers</a> (<a class="el" href="class_a_z_1_1_event.html">Event</a> &amp;&amp;other)</td></tr>
+<tr class="separator:a1c93a16c0f8dcc8caaf9cff4d97b8b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6de210276ed5a58adb7a9e4fc815ba01"><td class="memItemLeft" align="right" valign="top"><a id="a6de210276ed5a58adb7a9e4fc815ba01"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_event.html#a6de210276ed5a58adb7a9e4fc815ba01">HasHandlerConnected</a> () const</td></tr>
 <tr class="memdesc:a6de210276ed5a58adb7a9e4fc815ba01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if at least one handler is connected to this event. <br /></td></tr>
@@ -105,6 +107,32 @@ class AZ::Event&lt; Params &gt;</h3>
 <div class="line">    <span class="keyword">event</span>.Signal(1); <span class="comment">// Our handlers lambda will now get invoked with the value 1</span></div>
 <div class="line">};</div>
 </div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1c93a16c0f8dcc8caaf9cff4d97b8b7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c93a16c0f8dcc8caaf9cff4d97b8b7f">&#9670;&nbsp;</a></span>ClaimHandlers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Params&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="class_a_z_1_1_event.html">AZ::Event</a>&lt; Params &gt;::ClaimHandlers </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_event.html">Event</a>&lt; Params &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Take the handlers registered with the other event and move them to this event. The other will event will be cleared after call </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>event to move handlers </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="adcc4709214b09d7d712fb90cadcc4f17"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adcc4709214b09d7d712fb90cadcc4f17">&#9670;&nbsp;</a></span>Signal()</h2>
 
@@ -139,7 +167,7 @@ template&lt;typename... Params&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:46 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:18:24 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

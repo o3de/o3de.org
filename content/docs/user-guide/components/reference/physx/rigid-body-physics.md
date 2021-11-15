@@ -17,8 +17,9 @@ Dynamic is the default.
 Kinematic rigid bodies are not fully simulated. Kinematic rigid bodies are moved by script and not effected by forces or gravity. Movement is created with the `SetKinematicTarget` method that you specify in the script.
 Use this feature for objects such as moving platforms, doors, or anything that doesn't need to be fully simulated by physics.
 
-**Note**
+{{< note >}}
 You should always add the **PhysX Rigid Body** component to the top level of an entity hierarchy. If you add the component to a child entity, this can cause conflicts with the entity's world transform and result in undefined behavior.
+{{< /note >}}
 
 The **PhysX Rigid Body** components requires the [PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/) gem.
 
@@ -81,7 +82,7 @@ When enabled, friction is applied when CCD collisions are resolved.
 When enabled, mass is computed for the rigid body.
 
 **Mass**
-When **Compute Mass** is disabled, a **Mass** value can be specified for the PhysX rigid body. Valid **Mass** values range for **0** to **Infinity**.
+When **Compute Mass** is disabled, a **Mass** value can be specified for the PhysX rigid body. Valid **Mass** values range for **0** to **Infinity**. A value of **0** is treated as infinite. The trajectory of infinite mass bodies cannot be affected by any collisions or forces other than gravity.
 
 **Compute COM**
 When enabled, the center of mass is computed for the rigid body.

@@ -51,7 +51,7 @@ $(function() {
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_az_framework_1_1_spawnable_entities_manager_1_1_ticket-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AzFramework::SpawnableEntitiesManager::Ticket Struct Reference</div>  </div>
+<div class="title">AzFramework::SpawnableEntitiesManager::Ticket Struct Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
@@ -70,9 +70,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a86064b7f7573424f2571f56b0b6aa1cc"><td class="memItemLeft" align="right" valign="top"><a id="a86064b7f7573424f2571f56b0b6aa1cc"></a>
 AZStd::vector&lt; AZ::Entity * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_spawnedEntities</b></td></tr>
 <tr class="separator:a86064b7f7573424f2571f56b0b6aa1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37a4135423e45c584ca8a2f50d0cec32"><td class="memItemLeft" align="right" valign="top"><a id="a37a4135423e45c584ca8a2f50d0cec32"></a>
-AZStd::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_spawnedEntityIndices</b></td></tr>
-<tr class="separator:a37a4135423e45c584ca8a2f50d0cec32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1e2eb2e419e1d9f16c9f63617e78ad5"><td class="memItemLeft" align="right" valign="top"><a id="ac1e2eb2e419e1d9f16c9f63617e78ad5"></a>
+AZStd::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_spawnedEntityIndices</b></td></tr>
+<tr class="separator:ac1e2eb2e419e1d9f16c9f63617e78ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23eaf2327ee66e922118678626afd388"><td class="memItemLeft" align="right" valign="top"><a id="a23eaf2327ee66e922118678626afd388"></a>
 AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_spawnable</b></td></tr>
 <tr class="separator:a23eaf2327ee66e922118678626afd388"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,7 +106,7 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Map of template entity ids to their associated instance ids. Tickets can be used to spawn the same template entities multiple times, in any order, across multiple calls. Since template entities can reference other entities, this map is used to fix up those references across calls using the following policy:</p><ul>
+<p>Map of prototype entity ids to their associated instance ids. Tickets can be used to spawn the same prototype entities multiple times, in any order, across multiple calls. Since prototype entities can reference other entities, this map is used to fix up those references across calls using the following policy:</p><ul>
 <li>Entities referencing an entity that hasn't been spawned yet will get a reference to the id that <em>will</em> be used the first time that entity will be spawned. The reference will be invalid until that entity is spawned, but will be valid if/when it gets spawned.</li>
 <li>Entities referencing an entity that <em>has</em> been spawned will get a reference to the id that was <em>last</em> used to spawn the entity. Note that this implies a certain level of non-determinism when spawning across calls, because the entity references will be based on the order in which the SpawnEntity calls occur, which can be affected by things like priority. </li>
 </ul>
@@ -134,7 +134,7 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:24 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

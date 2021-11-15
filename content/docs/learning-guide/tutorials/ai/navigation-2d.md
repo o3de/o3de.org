@@ -1,7 +1,7 @@
 ---
 linkTitle: 2D Navigation
 title: 2D Navigation with Kythera AI
-description: Tutorial for 2D navigation with the Kythera AI Gem in OPen 3D Engine (O3DE)
+description: Tutorial for 2D navigation with the Kythera AI Gem in Open 3D Engine (O3DE)
 weight: 100
 toc: true
 ---
@@ -100,7 +100,7 @@ Navmeshes can be global, meaning they are available in all levels in the project
 
 1. Activate `Basic Debug Draw` in the drop-down of the Kythera Toolbar. This is the first drop-down in the toolbar, showing  `NavMesh Dbg off` by default.
 
-1. Choose the **Generate navmesh** button (![Generate navemsh icon](/images/user-guide/gems/kythera-ai/toolbar-generate-navmesh.png)) in the Kythera AI Toolbar.
+1. Choose the **Generate navmesh** button (![Generate navmesh icon](/images/user-guide/gems/kythera-ai/toolbar-generate-navmesh.png)) in the Kythera AI Toolbar.
 
 1. Create a new entity called `Agent`. This will be the AI character.
 

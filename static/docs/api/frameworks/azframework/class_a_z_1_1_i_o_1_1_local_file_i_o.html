@@ -60,9 +60,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af68d57b492d4150beedc6ddd93ca0de3"><td class="memItemLeft" align="right" valign="top"><a id="af68d57b492d4150beedc6ddd93ca0de3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_local_file_i_o.html">LocalFileIO</a>, &quot;{87A8D32B-F695-4105-9A4D-D99BE15DFD50}&quot;, FileIOBase)</td></tr>
 <tr class="separator:af68d57b492d4150beedc6ddd93ca0de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a803949f54234b6e793408b620630f17e"><td class="memItemLeft" align="right" valign="top"><a id="a803949f54234b6e793408b620630f17e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_local_file_i_o.html">LocalFileIO</a>, OSAllocator, 0)</td></tr>
-<tr class="separator:a803949f54234b6e793408b620630f17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c33c3dd2db921a06c06dad793de0c5"><td class="memItemLeft" align="right" valign="top"><a id="a09c33c3dd2db921a06c06dad793de0c5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_local_file_i_o.html">LocalFileIO</a>, SystemAllocator, 0)</td></tr>
+<tr class="separator:a09c33c3dd2db921a06c06dad793de0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a8ec1243a8de4757de4c2cd61ae0dfb"><td class="memItemLeft" align="right" valign="top"><a id="a1a8ec1243a8de4757de4c2cd61ae0dfb"></a>
 Result&#160;</td><td class="memItemRight" valign="bottom"><b>Open</b> (const char *filePath, OpenMode mode, HandleType &amp;fileHandle) override</td></tr>
 <tr class="separator:a1a8ec1243a8de4757de4c2cd61ae0dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +135,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearAlias</b> (const
 <tr class="memitem:a7af0f1f92c308921ea6bb4878cf8412f"><td class="memItemLeft" align="right" valign="top"><a id="a7af0f1f92c308921ea6bb4878cf8412f"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAlias</b> (const char *alias) const override</td></tr>
 <tr class="separator:a7af0f1f92c308921ea6bb4878cf8412f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0135ca4f1075e8cd42087df734d7f0bd"><td class="memItemLeft" align="right" valign="top"><a id="a0135ca4f1075e8cd42087df734d7f0bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDeprecatedAlias</b> (AZStd::string_view oldAlias, AZStd::string_view newAlias) override</td></tr>
+<tr class="separator:a0135ca4f1075e8cd42087df734d7f0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c078a06f55fafc8acc3eae44b4791ae"><td class="memItemLeft" align="right" valign="top"><a id="a8c078a06f55fafc8acc3eae44b4791ae"></a>
 AZStd::optional&lt; AZ::u64 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToAlias</b> (char *inOutBuffer, AZ::u64 bufferLength) const override</td></tr>
 <tr class="separator:a8c078a06f55fafc8acc3eae44b4791ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,7 +166,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToAbsolutePath
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:21 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:03 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

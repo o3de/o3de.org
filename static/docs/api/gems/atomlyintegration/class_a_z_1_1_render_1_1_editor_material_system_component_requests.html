@@ -54,19 +54,28 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_requests.html" title="EditorMaterialSystemComponentRequests provides an interface to communicate with MaterialEditor.">EditorMaterialSystemComponentRequests</a> provides an interface to communicate with MaterialEditor.  
- <a href="class_a_z_1_1_render_1_1_editor_material_system_component_requests.html#details">More...</a></p>
-
 <p><code>#include &lt;EditorMaterialSystemComponentRequestBus.h&gt;</code></p>
 
 <p>Inherits EBusTraits.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adfbb784b33e15b9571c846561ca1b119"><td class="memItemLeft" align="right" valign="top"><a id="adfbb784b33e15b9571c846561ca1b119"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_requests.html#adfbb784b33e15b9571c846561ca1b119">OpenInMaterialEditor</a> (const AZStd::string &amp;sourcePath)=0</td></tr>
-<tr class="memdesc:adfbb784b33e15b9571c846561ca1b119"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open document in material editor. <br /></td></tr>
-<tr class="separator:adfbb784b33e15b9571c846561ca1b119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e70214dc4d7f801bb3084e49a63efa"><td class="memItemLeft" align="right" valign="top"><a id="a63e70214dc4d7f801bb3084e49a63efa"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_requests.html#a63e70214dc4d7f801bb3084e49a63efa">OpenMaterialEditor</a> (const AZStd::string &amp;sourcePath)=0</td></tr>
+<tr class="memdesc:a63e70214dc4d7f801bb3084e49a63efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open source material in material editor. <br /></td></tr>
+<tr class="separator:a63e70214dc4d7f801bb3084e49a63efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10595fd68477f1ee475ec4ce0372252"><td class="memItemLeft" align="right" valign="top"><a id="ab10595fd68477f1ee475ec4ce0372252"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_requests.html#ab10595fd68477f1ee475ec4ce0372252">OpenMaterialInspector</a> (const AZ::EntityId &amp;entityId, const AZ::Render::MaterialAssignmentId &amp;materialAssignmentId)=0</td></tr>
+<tr class="memdesc:ab10595fd68477f1ee475ec4ce0372252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open material instance editor. <br /></td></tr>
+<tr class="separator:ab10595fd68477f1ee475ec4ce0372252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93cdbdd470b9187e16cbb7b39a45e1c5"><td class="memItemLeft" align="right" valign="top"><a id="a93cdbdd470b9187e16cbb7b39a45e1c5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_requests.html#a93cdbdd470b9187e16cbb7b39a45e1c5">RenderMaterialPreview</a> (const AZ::EntityId &amp;entityId, const AZ::Render::MaterialAssignmentId &amp;materialAssignmentId)=0</td></tr>
+<tr class="memdesc:a93cdbdd470b9187e16cbb7b39a45e1c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a material preview image. <br /></td></tr>
+<tr class="separator:a93cdbdd470b9187e16cbb7b39a45e1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c246bc01ae46e48fecfea6842d95827"><td class="memItemLeft" align="right" valign="top"><a id="a5c246bc01ae46e48fecfea6842d95827"></a>
+virtual QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_requests.html#a5c246bc01ae46e48fecfea6842d95827">GetRenderedMaterialPreview</a> (const AZ::EntityId &amp;entityId, const AZ::Render::MaterialAssignmentId &amp;materialAssignmentId) const =0</td></tr>
+<tr class="memdesc:a5c246bc01ae46e48fecfea6842d95827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get recently rendered material preview image. <br /></td></tr>
+<tr class="separator:a5c246bc01ae46e48fecfea6842d95827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -78,14 +87,14 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 <tr class="separator:a6d68b6e54099c47de729306d28a95808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_requests.html" title="EditorMaterialSystemComponentRequests provides an interface to communicate with MaterialEditor.">EditorMaterialSystemComponentRequests</a> provides an interface to communicate with MaterialEditor. </p>
+<div class="textblock"><p><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_requests.html">EditorMaterialSystemComponentRequests</a> provides an interface for interacting with EditorMaterialSystemComponent, performing different operations like opening the material editor, the material instance inspector, and managing material preview images </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/AtomLyIntegration/CommonFeatures/Code/Include/AtomLyIntegration/CommonFeatures/Material/EditorMaterialSystemComponentRequestBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:26 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:22 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

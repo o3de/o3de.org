@@ -5,7 +5,7 @@ description: Learn about the various systems that provide animation and renderin
 weight: 1000
 ---
 
-In Open 3D Engine (O3DE), you can bring actors to life with complex animated behaviors, create engaging cinematic sequences, and visualize your creations in stunning realism with O3DE's physically based renderer Atom. The topics in this section cover the concepts, tools, and processes used to achieve your creative vision.
+In **Open 3D Engine (O3DE)**, you can bring actors to life with complex animated behaviors, create engaging cinematic sequences, and visualize your creations in stunning realism with O3DE's physically based renderer Atom. The topics in this section cover the concepts, tools, and processes used to achieve your creative vision.
 
 | Topic | Description |
 | - | - |

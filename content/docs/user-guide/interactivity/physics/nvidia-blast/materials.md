@@ -3,14 +3,17 @@ description: ' Use Blast materials to set destruction properties in Open 3D Engi
   NVIDIA Blast. '
 title: Specify destruction properties with Blast materials
 weight: 600
+draft: true
 ---
 
 
 The chunks of blast assets are held together by bonds. Blast materials determine what types of forces can damage the bonds, the minimum amount of force that can damage the bonds, and how much damage the bonds can sustain before breaking.
 
-**Important**
+{{< important >}}
 Blast materials are a critical component in creating realistic destructible entities. Passive forces like gravity can have a cumulative damage effect on a blast asset, causing destruction to trigger when no obvious external force or collider has acted on the asset.
+
 Large-scale destructible assets such as buildings have large chunks that require stronger bonds and higher damage thresholds to prevent premature triggering of destruction.
+{{< /important >}}
 
 **Contents**
 + [Create Blast materials](#create-blast-materials)
@@ -44,6 +47,7 @@ The blast material library for the project is set in **Blast Configuration**.
 **To use Blast Configuration**
 
 1. From the **Tools** menu, choose **Blast Configuration**.
+
 ![Blast configuration.](/images/user-guide/physx/blast/ui-blast-configuration.png)
 
 1. Set the **Blast material library** for your project. Choose the **Folder** button to the right of **Blast material library** and select the blast material library that you created.

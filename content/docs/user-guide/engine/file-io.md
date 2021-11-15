@@ -52,8 +52,9 @@ AZ::IO::FileIOBase::GetInstance()
 + `FileIOBase` file operations behave similarly to the C language API `fopen`, `fread`, and `fclose` operations, but are 64-bit aware and work with very large files.
 + Because the `FileIOBase` instance is created and initialized when the engine initializes, it is generally always available. It can inspect `.pak` files and arbitrary files on disk. For more information, see [The FileIO Stack](#file-access-direct-fileio-stack) later in this document.
 
-**Note**
+    {{< note >}}
 Because `.pak` files are initialized only after the application boots, attempting to access data inside `.pak` files before they are mounted will fail.
+{{< /note >}}
 
 For more information, see the code comments in the `FileIO.h` file.
 
@@ -61,8 +62,9 @@ For more information, see the code comments in the `FileIO.h` file.
 
 In addition to a set of file functions mentioned above, the `FileIOBase` class provides *directory aliases.* Directory aliases are prefixes that you add to a file name. An alias indicates a virtual directory for a `.pak` file or arbitrary location on disk.
 
-**Note**
+{{< note >}}
 We recommend that you always use the aliasing system to refer to files that are in the cache. Never use absolute paths. Files in the cache might be inside `.pak` files or in unexpected locations on mobile devices. In these cases, the use of absolute path names can fail.
+{{< /note >}}
 
 ### Getting the Path of an Alias 
 
@@ -79,8 +81,11 @@ This section describes the use of directory aliases.
 **`@assets@`**
 Refers to the asset cache. This is the default alias when no alias is specified. Note the following:
 + Because `@assets@` is the default alias, code can simply load files by name \(for example, `textures\MyTexture.dds`\) without using the asset system. This makes it unnecessary to have the `@assets@` alias appear throughout the code.
-**Note**
+
+    {{< note >}}
 If you are loading files from the asset cache, do not prefix your file names with the `@assets@` alias. The use of aliases is required only when you must alter the default behavior. This best practice makes your code easier to read and enhances compatibility.
+{{< /note >}}
+
 + During development on a PC, `@assets@` points to the `dev\Cache\<game_name>\pc\<game_name>` directory. After release, it points to the directory where your `.pak` files are stored (not the root of your cache where your configuration files are stored).
 + Because the asset cache can be locked by asset processing operations, attempting to write to the asset cache can cause an assertion fail. Do not attempt to write files to the asset cache.
 

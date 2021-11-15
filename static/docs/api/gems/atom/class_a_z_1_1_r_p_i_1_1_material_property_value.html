@@ -57,7 +57,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aea35fa01df8c344102aa819a9e2e78c7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#aea35fa01df8c344102aa819a9e2e78c7">ValueType</a> = AZStd::variant&lt; AZStd::monostate, bool, int32_t, uint32_t, float, Vector2, Vector3, Vector4, Color, Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_asset.html">ImageAsset</a> &gt;, Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_image.html">Image</a> &gt;, AZStd::string &gt;</td></tr>
+<tr class="memitem:aea35fa01df8c344102aa819a9e2e78c7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#aea35fa01df8c344102aa819a9e2e78c7">ValueType</a> = AZStd::variant&lt; AZStd::monostate, bool, int32_t, uint32_t, float, Vector2, Vector3, Vector4, Color, <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_asset.html">ImageAsset</a> &gt;, Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_image.html">Image</a> &gt;, AZStd::string &gt;</td></tr>
 <tr class="separator:aea35fa01df8c344102aa819a9e2e78c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -94,7 +94,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MaterialPropertyValue</b> (const Color &amp;value)</td></tr>
 <tr class="separator:a2a410491ee17c71dc8cc38aaf2340621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c06aa99874be581edf11b6c8158a753"><td class="memItemLeft" align="right" valign="top"><a id="a3c06aa99874be581edf11b6c8158a753"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialPropertyValue</b> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_asset.html">ImageAsset</a> &gt; &amp;value)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialPropertyValue</b> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_asset.html">ImageAsset</a> &gt; &amp;value)</td></tr>
 <tr class="separator:a3c06aa99874be581edf11b6c8158a753"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fc8c68b6634d309be89b925deabd741"><td class="memItemLeft" align="right" valign="top"><a id="a4fc8c68b6634d309be89b925deabd741"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MaterialPropertyValue</b> (const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_image.html">Image</a> &gt; &amp;value)</td></tr>
@@ -152,7 +152,7 @@ static AZStd::any&#160;</td><td class="memItemRight" valign="bottom"><b>ToAny</b
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#aea35fa01df8c344102aa819a9e2e78c7">AZ::RPI::MaterialPropertyValue::ValueType</a> =  AZStd::variant&lt;AZStd::monostate, bool, int32_t, uint32_t, float, Vector2, Vector3, Vector4, Color, Data::Asset&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_image_asset.html">ImageAsset</a>&gt;, Data::Instance&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_image.html">Image</a>&gt;, AZStd::string&gt;</td>
+          <td class="memname">using <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#aea35fa01df8c344102aa819a9e2e78c7">AZ::RPI::MaterialPropertyValue::ValueType</a> =  AZStd::variant&lt;AZStd::monostate, bool, int32_t, uint32_t, float, Vector2, Vector3, Vector4, Color, <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_image_asset.html">ImageAsset</a>&gt;, Data::Instance&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_image.html">Image</a>&gt;, AZStd::string&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -251,7 +251,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

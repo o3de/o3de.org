@@ -61,16 +61,22 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReplicationSe
 <tr class="memitem:aa610cd2dccc82c309221e453e458a0fe"><td class="memItemLeft" align="right" valign="top"><a id="aa610cd2dccc82c309221e453e458a0fe"></a>
 virtual const ReplicationSet &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetReplicationSet</b> () const =0</td></tr>
 <tr class="separator:aa610cd2dccc82c309221e453e458a0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ddecc0df99c38d339a22e6dcf876ab1"><td class="memItemLeft" align="right" valign="top"><a id="a1ddecc0df99c38d339a22e6dcf876ab1"></a>
-virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_replication_window.html#a1ddecc0df99c38d339a22e6dcf876ab1">GetMaxEntityReplicatorSendCount</a> () const =0</td></tr>
-<tr class="memdesc:a1ddecc0df99c38d339a22e6dcf876ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max number of entities we can send updates for in one frame. <br /></td></tr>
-<tr class="separator:a1ddecc0df99c38d339a22e6dcf876ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4829ec07e8843aefb37cd64ec8d5bca5"><td class="memItemLeft" align="right" valign="top"><a id="a4829ec07e8843aefb37cd64ec8d5bca5"></a>
+virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_replication_window.html#a4829ec07e8843aefb37cd64ec8d5bca5">GetMaxProxyEntityReplicatorSendCount</a> () const =0</td></tr>
+<tr class="memdesc:a4829ec07e8843aefb37cd64ec8d5bca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max number of entities we can send updates for in one frame. <br /></td></tr>
+<tr class="separator:a4829ec07e8843aefb37cd64ec8d5bca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a597744e737f04bb7c7a5cfe05be7005a"><td class="memItemLeft" align="right" valign="top"><a id="a597744e737f04bb7c7a5cfe05be7005a"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInWindow</b> (const <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html">ConstNetworkEntityHandle</a> &amp;entityPtr, NetEntityRole &amp;outNetworkRole) const =0</td></tr>
 <tr class="separator:a597744e737f04bb7c7a5cfe05be7005a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84b7238295cd8b4ef6343956dd8436ad"><td class="memItemLeft" align="right" valign="top"><a id="a84b7238295cd8b4ef6343956dd8436ad"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateWindow</b> ()=0</td></tr>
 <tr class="separator:a84b7238295cd8b4ef6343956dd8436ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a15d2f34ae5234db64bab039c688c0"><td class="memItemLeft" align="right" valign="top"><a id="a28a15d2f34ae5234db64bab039c688c0"></a>
+virtual AzNetworking::PacketId&#160;</td><td class="memItemRight" valign="bottom"><b>SendEntityUpdateMessages</b> (NetworkEntityUpdateVector &amp;entityUpdateVector)=0</td></tr>
+<tr class="separator:a28a15d2f34ae5234db64bab039c688c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4669dd3d1b8b6a517192ea28049d86bb"><td class="memItemLeft" align="right" valign="top"><a id="a4669dd3d1b8b6a517192ea28049d86bb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SendEntityRpcs</b> (NetworkEntityRpcVector &amp;entityRpcVector, bool reliable)=0</td></tr>
+<tr class="separator:a4669dd3d1b8b6a517192ea28049d86bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7a4f759c8958f18ddee0b122cad7528"><td class="memItemLeft" align="right" valign="top"><a id="ac7a4f759c8958f18ddee0b122cad7528"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DebugDraw</b> () const =0</td></tr>
 <tr class="separator:ac7a4f759c8958f18ddee0b122cad7528"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -81,7 +87,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DebugDraw</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:43 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:44 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

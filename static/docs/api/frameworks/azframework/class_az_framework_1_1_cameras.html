@@ -52,17 +52,18 @@ $(function() {
 <div class="title">AzFramework::Cameras Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;CameraInput.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a956872e011620893056dfa7f5b1f9a4e"><td class="memItemLeft" align="right" valign="top"><a id="a956872e011620893056dfa7f5b1f9a4e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleEvents</b> (const InputEvent &amp;event, const <a class="el" href="struct_az_framework_1_1_screen_vector.html">ScreenVector</a> &amp;cursorDelta, float scrollDelta)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleEvents</b> (const <a class="el" href="namespace_az_framework.html#a4a87e38f15ae672e5f11c0e70fb152f0">InputEvent</a> &amp;event, const <a class="el" href="struct_az_framework_1_1_screen_vector.html">ScreenVector</a> &amp;cursorDelta, float scrollDelta)</td></tr>
 <tr class="separator:a956872e011620893056dfa7f5b1f9a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae57d62accb964d7bcd7347ef897fea18"><td class="memItemLeft" align="right" valign="top"><a id="ae57d62accb964d7bcd7347ef897fea18"></a>
 <a class="el" href="struct_az_framework_1_1_camera.html">Camera</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StepCamera</b> (const <a class="el" href="struct_az_framework_1_1_camera.html">Camera</a> &amp;targetCamera, const <a class="el" href="struct_az_framework_1_1_screen_vector.html">ScreenVector</a> &amp;cursorDelta, float scrollDelta, float deltaTime)</td></tr>
 <tr class="separator:ae57d62accb964d7bcd7347ef897fea18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09d73b8c0da065ce9a2628fad89ccf56"><td class="memItemLeft" align="right" valign="top"><a id="a09d73b8c0da065ce9a2628fad89ccf56"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddCamera</b> (AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_camera_input.html">CameraInput</a> &gt; cameraInput)</td></tr>
+<tr class="memitem:a09d73b8c0da065ce9a2628fad89ccf56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_cameras.html#a09d73b8c0da065ce9a2628fad89ccf56">AddCamera</a> (AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_camera_input.html">CameraInput</a> &gt; cameraInput)</td></tr>
 <tr class="separator:a09d73b8c0da065ce9a2628fad89ccf56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace6a5647084aef70cd92c68f0f41cd16"><td class="memItemLeft" align="right" valign="top"><a id="ace6a5647084aef70cd92c68f0f41cd16"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_cameras.html#ace6a5647084aef70cd92c68f0f41cd16">Reset</a> ()</td></tr>
@@ -75,15 +76,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:aa866a03e39c0905ec420f8a5ca9998c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_cameras.html#aa866a03e39c0905ec420f8a5ca9998c6">Exclusive</a> () const</td></tr>
 <tr class="separator:aa866a03e39c0905ec420f8a5ca9998c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Manages a list of camera inputs. By default all camera inputs are added to the idle list, when a camera activates it will be added to the active list, when it deactivates it will be returned to the idle list. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a09d73b8c0da065ce9a2628fad89ccf56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09d73b8c0da065ce9a2628fad89ccf56">&#9670;&nbsp;</a></span>AddCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzFramework::Cameras::AddCamera </td>
+          <td>(</td>
+          <td class="paramtype">AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_camera_input.html">CameraInput</a> &gt;&#160;</td>
+          <td class="paramname"><em>cameraInput</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add a camera input (behavior) to run in this set of camera inputs. The camera inputs added here will determine the overall behavior of the camera. </p>
+
+</div>
+</div>
 <a id="aa866a03e39c0905ec420f8a5ca9998c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa866a03e39c0905ec420f8a5ca9998c6">&#9670;&nbsp;</a></span>Exclusive()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool AzFramework::Cameras::Exclusive </td>
@@ -92,11 +111,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Is one of the cameras in the active camera inputs marked as 'exclusive'. </p><dl class="section note"><dt>Note</dt><dd>This implies no other sibling cameras can begin while the exclusive camera is running. </dd></dl>
 
@@ -108,7 +122,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:22 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:03 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

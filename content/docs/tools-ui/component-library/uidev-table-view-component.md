@@ -9,21 +9,23 @@ Use the **table view** component to present multiple columns of structured data 
 
 ![component table view example](/images/tools-ui/component-table-view-example.png)
 
-**Note**
- `AzQtComponents::TableView` actually derives from `QTreeView`, not `QTableView`, to provide more customization over the size of rows.
+{{< note >}}
+`AzQtComponents::TableView` actually derives from `QTreeView`, not `QTableView`, to provide more customization over the size of rows.
+{{< /note >}}
 
-## Basic table view<a name="table-view-basic"></a>
+## Basic table view
 
 ![component table view basic](/images/tools-ui/component-table-view-basic.png)
 
 Create a simple logging table view.
 
-**Note**
-If a table view is combined with a [tree view](uidev-tree-view-component.md), you might need to turn off zebra striping in one of the widgets using the setAlternatingRowColors(false) function.
+{{< note >}}
+If a table view is combined with a [tree view](/docs/tools-ui/component-library/uidev-tree-view-component), you might need to turn off zebra striping in one of the widgets using the setAlternatingRowColors(false) function.
+{{< /note >}}
 
- **Example**
+### Example
 
-```
+```cpp
 #include <AzQtComponents/Components/Widgets/TableView.h>
 #include <AzToolsFramework/UI/Logging/LogTableModel.h>
 #include <AzToolsFramework/UI/Logging/LogLine.h>
@@ -61,7 +63,7 @@ logModel->AppendLine(
         QDateTime::currentMSecsSinceEpoch()));
 ```
 
-## C++ API reference<a name="table-view-api-ref"></a>
+## C++ API reference
 
 For details on the **table view** API, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::TableView](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_table_view.html)

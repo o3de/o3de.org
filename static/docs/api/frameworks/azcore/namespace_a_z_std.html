@@ -637,10 +637,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1plus_3_01void_01_4.html">plus&lt; void &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1priority__queue.html">priority_queue</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1queue.html">queue</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1ratio.html">ratio</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1ratio__add.html">ratio_add</a></td></tr>
@@ -753,9 +749,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1spin__mutex.html">spin_mutex</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1stack.html">stack</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1stack__allocator.html">stack_allocator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1stateless__allocator.html">stateless_allocator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1static__buffer__allocator.html">static_buffer_allocator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -842,6 +838,18 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a677e82b695450c99d37b776aa12073c5"><td class="memItemLeft" align="right" valign="top"><a id="a677e82b695450c99d37b776aa12073c5"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>sys_time_t</b> = AZ::s64</td></tr>
 <tr class="separator:a677e82b695450c99d37b776aa12073c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d0a1d44d380d8c9c659abd24beea41"><td class="memTemplParams" colspan="2"><a id="a34d0a1d44d380d8c9c659abd24beea41"></a>
+template&lt;class T , class Container  = AZStd::deque&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:a34d0a1d44d380d8c9c659abd24beea41"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>queue</b> = std::queue&lt; T, Container &gt;</td></tr>
+<tr class="separator:a34d0a1d44d380d8c9c659abd24beea41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cda5c649f3b5ace4be1df1ecbb2f142"><td class="memTemplParams" colspan="2"><a id="a0cda5c649f3b5ace4be1df1ecbb2f142"></a>
+template&lt;class T , class Container  = AZStd::vector&lt;T&gt;, class Compare  = AZStd::less&lt;typename Container::value_type&gt;&gt; </td></tr>
+<tr class="memitem:a0cda5c649f3b5ace4be1df1ecbb2f142"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>priority_queue</b> = std::priority_queue&lt; T, Container, Compare &gt;</td></tr>
+<tr class="separator:a0cda5c649f3b5ace4be1df1ecbb2f142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a847a9e5f38265fd7d914a7bb4ee79d2d"><td class="memTemplParams" colspan="2"><a id="a847a9e5f38265fd7d914a7bb4ee79d2d"></a>
+template&lt;class T , class Container  = AZStd::deque&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:a847a9e5f38265fd7d914a7bb4ee79d2d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stack</b> = std::stack&lt; T, Container &gt;</td></tr>
+<tr class="separator:a847a9e5f38265fd7d914a7bb4ee79d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8de5f798ef27a839d2bf7afd3ef615fd"><td class="memTemplParams" colspan="2"><a id="a8de5f798ef27a839d2bf7afd3ef615fd"></a>
 template&lt;size_t Index, class T &gt; </td></tr>
 <tr class="memitem:a8de5f798ef27a839d2bf7afd3ef615fd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>variant_alternative_t</b> = typename <a class="el" href="struct_a_z_std_1_1variant__alternative.html">variant_alternative</a>&lt; Index, T &gt;::type</td></tr>
@@ -1665,6 +1673,12 @@ AZ_FORCE_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>opera
 <tr class="memitem:a8a3219d74755e926da16d53b3cfdec38"><td class="memItemLeft" align="right" valign="top"><a id="a8a3219d74755e926da16d53b3cfdec38"></a>
 AZ_FORCE_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_a_z_std_1_1stack__allocator.html">stack_allocator</a> &amp;a, const <a class="el" href="class_a_z_std_1_1stack__allocator.html">stack_allocator</a> &amp;b)</td></tr>
 <tr class="separator:a8a3219d74755e926da16d53b3cfdec38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7b8bb5355427a2bf3851f797693fd6"><td class="memItemLeft" align="right" valign="top"><a id="adf7b8bb5355427a2bf3851f797693fd6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_std_1_1stateless__allocator.html">stateless_allocator</a> &amp;left, const <a class="el" href="class_a_z_std_1_1stateless__allocator.html">stateless_allocator</a> &amp;right)</td></tr>
+<tr class="separator:adf7b8bb5355427a2bf3851f797693fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9450d8d62ce2e4420078005ff4341084"><td class="memItemLeft" align="right" valign="top"><a id="a9450d8d62ce2e4420078005ff4341084"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_a_z_std_1_1stateless__allocator.html">stateless_allocator</a> &amp;left, const <a class="el" href="class_a_z_std_1_1stateless__allocator.html">stateless_allocator</a> &amp;right)</td></tr>
+<tr class="separator:a9450d8d62ce2e4420078005ff4341084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c7d47e9fc25978e0ac298a1a5511da9"><td class="memTemplParams" colspan="2"><a id="a5c7d47e9fc25978e0ac298a1a5511da9"></a>
 template&lt;AZStd::size_t Size, AZStd::size_t Alignment&gt; </td></tr>
 <tr class="memitem:a5c7d47e9fc25978e0ac298a1a5511da9"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_std_1_1static__buffer__allocator.html">static_buffer_allocator</a>&lt; Size, Alignment &gt; &amp;a, const <a class="el" href="class_a_z_std_1_1static__buffer__allocator.html">static_buffer_allocator</a>&lt; Size, Alignment &gt; &amp;b)</td></tr>
@@ -1941,14 +1955,6 @@ template&lt;class Key , class MappedType , class Compare , class Allocator &gt; 
 template&lt;class Key , class MappedType , class Compare , class Allocator , class Predicate &gt; </td></tr>
 <tr class="memitem:ac954e950536d009a823a6a9c550f473f"><td class="memTemplItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><b>erase_if</b> (<a class="el" href="class_a_z_std_1_1multimap.html">multimap</a>&lt; Key, MappedType, Compare, Allocator &gt; &amp;container, Predicate predicate)</td></tr>
 <tr class="separator:ac954e950536d009a823a6a9c550f473f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b3d927221d9fe159314e9e6cc496a97"><td class="memTemplParams" colspan="2"><a id="a0b3d927221d9fe159314e9e6cc496a97"></a>
-template&lt;class T , class Container &gt; </td></tr>
-<tr class="memitem:a0b3d927221d9fe159314e9e6cc496a97"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_std_1_1queue.html">AZStd::queue</a>&lt; T, Container &gt; &amp;left, const <a class="el" href="class_a_z_std_1_1queue.html">AZStd::queue</a>&lt; T, Container &gt; &amp;right)</td></tr>
-<tr class="separator:a0b3d927221d9fe159314e9e6cc496a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace06f5d07b57374b23ec98deb9380ee7"><td class="memTemplParams" colspan="2"><a id="ace06f5d07b57374b23ec98deb9380ee7"></a>
-template&lt;class T , class Container &gt; </td></tr>
-<tr class="memitem:ace06f5d07b57374b23ec98deb9380ee7"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_a_z_std_1_1queue.html">AZStd::queue</a>&lt; T, Container &gt; &amp;left, const <a class="el" href="class_a_z_std_1_1queue.html">AZStd::queue</a>&lt; T, Container &gt; &amp;right)</td></tr>
-<tr class="separator:ace06f5d07b57374b23ec98deb9380ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ae49579081e73b83332b56027243a96"><td class="memTemplParams" colspan="2"><a id="a8ae49579081e73b83332b56027243a96"></a>
 template&lt;class T , class Allocator &gt; </td></tr>
 <tr class="memitem:a8ae49579081e73b83332b56027243a96"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_std_1_1ring__buffer.html">ring_buffer</a>&lt; T, Allocator &gt; &amp;lhs, const <a class="el" href="class_a_z_std_1_1ring__buffer.html">ring_buffer</a>&lt; T, Allocator &gt; &amp;rhs)</td></tr>
@@ -2025,14 +2031,6 @@ template&lt;class Key , class Compare , class Allocator &gt; </td></tr>
 template&lt;class Key , class Compare , class Allocator , class Predicate &gt; </td></tr>
 <tr class="memitem:ac7fc7d59d911a44c42e380912afccc4e"><td class="memTemplItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><b>erase_if</b> (<a class="el" href="class_a_z_std_1_1multiset.html">multiset</a>&lt; Key, Compare, Allocator &gt; &amp;container, Predicate predicate)</td></tr>
 <tr class="separator:ac7fc7d59d911a44c42e380912afccc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14295436ec4d1eddc41b250c659f7be9"><td class="memTemplParams" colspan="2"><a id="a14295436ec4d1eddc41b250c659f7be9"></a>
-template&lt;class T , class Container &gt; </td></tr>
-<tr class="memitem:a14295436ec4d1eddc41b250c659f7be9"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_std_1_1stack.html">AZStd::stack</a>&lt; T, Container &gt; &amp;left, const <a class="el" href="class_a_z_std_1_1stack.html">AZStd::stack</a>&lt; T, Container &gt; &amp;right)</td></tr>
-<tr class="separator:a14295436ec4d1eddc41b250c659f7be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a806153ebaf3759ca54143b9192252369"><td class="memTemplParams" colspan="2"><a id="a806153ebaf3759ca54143b9192252369"></a>
-template&lt;class T , class Container &gt; </td></tr>
-<tr class="memitem:a806153ebaf3759ca54143b9192252369"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_a_z_std_1_1stack.html">AZStd::stack</a>&lt; T, Container &gt; &amp;left, const <a class="el" href="class_a_z_std_1_1stack.html">AZStd::stack</a>&lt; T, Container &gt; &amp;right)</td></tr>
-<tr class="separator:a806153ebaf3759ca54143b9192252369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4949667ec1304002184dcca8e33c24ca"><td class="memTemplParams" colspan="2"><a id="a4949667ec1304002184dcca8e33c24ca"></a>
 template&lt;class Key , class MappedType , class Hasher , class EqualKey , class Allocator &gt; </td></tr>
 <tr class="memitem:a4949667ec1304002184dcca8e33c24ca"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>swap</b> (<a class="el" href="class_a_z_std_1_1unordered__map.html">unordered_map</a>&lt; Key, MappedType, Hasher, EqualKey, Allocator &gt; &amp;left, <a class="el" href="class_a_z_std_1_1unordered__map.html">unordered_map</a>&lt; Key, MappedType, Hasher, EqualKey, Allocator &gt; &amp;right)</td></tr>
@@ -2245,23 +2243,9 @@ template&lt;class T , class Allocator , class Predicate &gt; </td></tr>
 <tr class="memitem:a6e63b1e12b348391bebb3afc8988a5c1"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt , size_t N&gt; </td></tr>
 <tr class="memitem:a6e63b1e12b348391bebb3afc8988a5c1"><td class="memTemplItemLeft" align="right" valign="top">constexpr ForwardIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_z_std.html#a6e63b1e12b348391bebb3afc8988a5c1">destroy_n</a> (ForwardIt first, size_t numElements)</td></tr>
 <tr class="separator:a6e63b1e12b348391bebb3afc8988a5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb06618e8e5622f6eaea86d3e62b1c86"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
-<tr class="memitem:adb06618e8e5622f6eaea86d3e62b1c86"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_z_std.html#adb06618e8e5622f6eaea86d3e62b1c86">construct_at</a> (T *ptr, Args &amp;&amp;... args) -&gt; enable_if_t&lt; is_void_v&lt; void_t&lt; decltype(new(declval&lt; void * &gt;()) T(AZStd::forward&lt; Args &gt;(args)...))&gt;&gt;, T * &gt;</td></tr>
-<tr class="separator:adb06618e8e5622f6eaea86d3e62b1c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebeeba4bae79641e18f4add990fd37d7"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt &gt; </td></tr>
-<tr class="memitem:aebeeba4bae79641e18f4add990fd37d7"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_z_std.html#aebeeba4bae79641e18f4add990fd37d7">uninitialized_default_construct</a> (ForwardIt first, ForwardIt last) -&gt; enable_if_t&lt; Internal::is_forward_iterator_v&lt; ForwardIt &gt;, void &gt;</td></tr>
-<tr class="separator:aebeeba4bae79641e18f4add990fd37d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27900bbf42ac1caa8843b3fc277b415c"><td class="memTemplParams" colspan="2"><a id="a27900bbf42ac1caa8843b3fc277b415c"></a>
-template&lt;typename ForwardIt , typename Size &gt; </td></tr>
-<tr class="memitem:a27900bbf42ac1caa8843b3fc277b415c"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>uninitialized_default_construct_n</b> (ForwardIt first, Size numElements) -&gt; enable_if_t&lt; Internal::is_forward_iterator_v&lt; ForwardIt &gt;, ForwardIt &gt;</td></tr>
-<tr class="separator:a27900bbf42ac1caa8843b3fc277b415c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4f4a7c260214cb64955efe3f02f8504"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt &gt; </td></tr>
-<tr class="memitem:ad4f4a7c260214cb64955efe3f02f8504"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_z_std.html#ad4f4a7c260214cb64955efe3f02f8504">uninitialized_value_construct</a> (ForwardIt first, ForwardIt last) -&gt; enable_if_t&lt; Internal::is_forward_iterator_v&lt; ForwardIt &gt;, void &gt;</td></tr>
-<tr class="separator:ad4f4a7c260214cb64955efe3f02f8504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54b84c4bc571d6e69f06e373c49a2e3e"><td class="memTemplParams" colspan="2"><a id="a54b84c4bc571d6e69f06e373c49a2e3e"></a>
-template&lt;typename ForwardIt , typename Size &gt; </td></tr>
-<tr class="memitem:a54b84c4bc571d6e69f06e373c49a2e3e"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>uninitialized_value_construct_n</b> (ForwardIt first, Size numElements) -&gt; enable_if_t&lt; Internal::is_forward_iterator_v&lt; ForwardIt &gt;, ForwardIt &gt;</td></tr>
-<tr class="separator:a54b84c4bc571d6e69f06e373c49a2e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced73d319f6e1be2b8847ca423e66441"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:aced73d319f6e1be2b8847ca423e66441"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_z_std.html#aced73d319f6e1be2b8847ca423e66441">construct_at</a> (T *ptr, Args &amp;&amp;... args) -&gt; enable_if_t&lt; AZStd::is_void_v&lt; AZStd::void_t&lt; decltype(new(AZStd::declval&lt; void * &gt;()) T(AZStd::forward&lt; Args &gt;(args)...))&gt;&gt;, T * &gt;</td></tr>
+<tr class="separator:aced73d319f6e1be2b8847ca423e66441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21c483b6b1bbaab60d75bacd9c84f513"><td class="memTemplParams" colspan="2">template&lt;class InputIterator , class ForwardIterator &gt; </td></tr>
 <tr class="memitem:a21c483b6b1bbaab60d75bacd9c84f513"><td class="memTemplItemLeft" align="right" valign="top">constexpr ForwardIterator&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_z_std.html#a21c483b6b1bbaab60d75bacd9c84f513">uninitialized_copy</a> (const InputIterator &amp;first, const InputIterator &amp;last, ForwardIterator result, const false_type &amp;)</td></tr>
 <tr class="separator:a21c483b6b1bbaab60d75bacd9c84f513"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2426,6 +2410,15 @@ template&lt;typename R , typename... Args&gt; </td></tr>
 template&lt;class F , class... Args&gt; </td></tr>
 <tr class="memitem:a97ca1f7360b3db54cc2f5becc76a287f"><td class="memTemplItemLeft" align="right" valign="top">constexpr invoke_result_t&lt; F, Args... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>invoke</b> (F &amp;&amp;f, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a97ca1f7360b3db54cc2f5becc76a287f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6593f9c42af0795ecf13025997cd972b"><td class="memItemLeft" align="right" valign="top"><a id="a6593f9c42af0795ecf13025997cd972b"></a>
+constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>lerp</b> (float a, float b, float t) noexcept</td></tr>
+<tr class="separator:a6593f9c42af0795ecf13025997cd972b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9078f04fb22d967f9888c29e706402"><td class="memItemLeft" align="right" valign="top"><a id="a4d9078f04fb22d967f9888c29e706402"></a>
+constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>lerp</b> (double a, double b, double t) noexcept</td></tr>
+<tr class="separator:a4d9078f04fb22d967f9888c29e706402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e79cf922b467905f08fcd1d752208c"><td class="memItemLeft" align="right" valign="top"><a id="ab0e79cf922b467905f08fcd1d752208c"></a>
+constexpr long double&#160;</td><td class="memItemRight" valign="bottom"><b>lerp</b> (long double a, long double b, long double t) noexcept</td></tr>
+<tr class="separator:ab0e79cf922b467905f08fcd1d752208c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a289f570ae3d7f19385e619c8d27c9c9f"><td class="memTemplParams" colspan="2"><a id="a289f570ae3d7f19385e619c8d27c9c9f"></a>
 template&lt;typename InputIt , typename T &gt; </td></tr>
 <tr class="memitem:a289f570ae3d7f19385e619c8d27c9c9f"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>accumulate</b> (InputIt first, InputIt last, T init)</td></tr>
@@ -2918,14 +2911,20 @@ template&lt;class Str &gt; </td></tr>
 <tr class="memitem:ab2eccce32af57858d0969cf7627b9bfe"><td class="memItemLeft" align="right" valign="top"><a id="ab2eccce32af57858d0969cf7627b9bfe"></a>
 <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>to_string</b> (long double val)</td></tr>
 <tr class="separator:ab2eccce32af57858d0969cf7627b9bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a372a50dbf7d94c587f2129ab41f943c4"><td class="memTemplParams" colspan="2"><a id="a372a50dbf7d94c587f2129ab41f943c4"></a>
-template&lt;class Allocator1 &gt; </td></tr>
-<tr class="memitem:a372a50dbf7d94c587f2129ab41f943c4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_string</b> (<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::basic_string</a>&lt; string::value_type, string::traits_type, Allocator1 &gt; &amp;dest, const wchar_t *str, size_t srcLen=0)</td></tr>
-<tr class="separator:a372a50dbf7d94c587f2129ab41f943c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0516bcb69894e52e4dff054ed0e159db"><td class="memTemplParams" colspan="2"><a id="a0516bcb69894e52e4dff054ed0e159db"></a>
-template&lt;class Allocator1 , class Allocator2 &gt; </td></tr>
-<tr class="memitem:a0516bcb69894e52e4dff054ed0e159db"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_string</b> (<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::basic_string</a>&lt; string::value_type, string::traits_type, Allocator1 &gt; &amp;dest, const <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::basic_string</a>&lt; wstring::value_type, wstring::traits_type, Allocator2 &gt; &amp;src)</td></tr>
-<tr class="separator:a0516bcb69894e52e4dff054ed0e159db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081861fc4217f2e0dd93a1f6f730f24e"><td class="memTemplParams" colspan="2"><a id="a081861fc4217f2e0dd93a1f6f730f24e"></a>
+template&lt;class Allocator &gt; </td></tr>
+<tr class="memitem:a081861fc4217f2e0dd93a1f6f730f24e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_string</b> (<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::basic_string</a>&lt; string::value_type, string::traits_type, Allocator &gt; &amp;dest, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::wstring_view</a> src)</td></tr>
+<tr class="separator:a081861fc4217f2e0dd93a1f6f730f24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50c0fb984641258961a3ce9646ad415e"><td class="memTemplParams" colspan="2"><a id="a50c0fb984641258961a3ce9646ad415e"></a>
+template&lt;size_t MaxElementCount&gt; </td></tr>
+<tr class="memitem:a50c0fb984641258961a3ce9646ad415e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_string</b> (<a class="el" href="class_a_z_std_1_1basic__fixed__string.html">AZStd::basic_fixed_string</a>&lt; string::value_type, MaxElementCount, string::traits_type &gt; &amp;dest, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::wstring_view</a> src)</td></tr>
+<tr class="separator:a50c0fb984641258961a3ce9646ad415e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ca08c12db928c4d352e5e0498793b6"><td class="memItemLeft" align="right" valign="top"><a id="a05ca08c12db928c4d352e5e0498793b6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>to_string</b> (char *dest, size_t destSize, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::wstring_view</a> src)</td></tr>
+<tr class="separator:a05ca08c12db928c4d352e5e0498793b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae25f316d043906787e8d585589a9b822"><td class="memItemLeft" align="right" valign="top"><a id="ae25f316d043906787e8d585589a9b822"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>to_string_length</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::wstring_view</a> src)</td></tr>
+<tr class="separator:ae25f316d043906787e8d585589a9b822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6956d9c16e2b0786d51301a0d71e80e"><td class="memTemplParams" colspan="2"><a id="ac6956d9c16e2b0786d51301a0d71e80e"></a>
 template&lt;class Str &gt; </td></tr>
 <tr class="memitem:ac6956d9c16e2b0786d51301a0d71e80e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_wstring</b> (Str &amp;str, long long value)</td></tr>
@@ -2947,14 +2946,17 @@ template&lt;class Str &gt; </td></tr>
 <tr class="memitem:a2abc7dbc7dac309073cde03d4dbb60c1"><td class="memItemLeft" align="right" valign="top"><a id="a2abc7dbc7dac309073cde03d4dbb60c1"></a>
 <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::wstring</a>&#160;</td><td class="memItemRight" valign="bottom"><b>to_wstring</b> (long double val)</td></tr>
 <tr class="separator:a2abc7dbc7dac309073cde03d4dbb60c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1c27449ecb5333064ef3ac4483c7946"><td class="memTemplParams" colspan="2"><a id="aa1c27449ecb5333064ef3ac4483c7946"></a>
-template&lt;class Allocator1 &gt; </td></tr>
-<tr class="memitem:aa1c27449ecb5333064ef3ac4483c7946"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_wstring</b> (<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::basic_string</a>&lt; wstring::value_type, wstring::traits_type, Allocator1 &gt; &amp;dest, const char *str, size_t strLen=0)</td></tr>
-<tr class="separator:aa1c27449ecb5333064ef3ac4483c7946"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64d60c25cc1c75299c2cf2ea16486a93"><td class="memTemplParams" colspan="2"><a id="a64d60c25cc1c75299c2cf2ea16486a93"></a>
-template&lt;class Allocator1 , class Allocator2 &gt; </td></tr>
-<tr class="memitem:a64d60c25cc1c75299c2cf2ea16486a93"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_wstring</b> (<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::basic_string</a>&lt; wstring::value_type, wstring::traits_type, Allocator1 &gt; &amp;dest, const <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::basic_string</a>&lt; string::value_type, string::traits_type, Allocator2 &gt; &amp;src)</td></tr>
-<tr class="separator:a64d60c25cc1c75299c2cf2ea16486a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d1b8ea354cd9e06e92d72433ce8c11"><td class="memTemplParams" colspan="2"><a id="a60d1b8ea354cd9e06e92d72433ce8c11"></a>
+template&lt;class Allocator &gt; </td></tr>
+<tr class="memitem:a60d1b8ea354cd9e06e92d72433ce8c11"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_wstring</b> (<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::basic_string</a>&lt; wstring::value_type, wstring::traits_type, Allocator &gt; &amp;dest, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> src)</td></tr>
+<tr class="separator:a60d1b8ea354cd9e06e92d72433ce8c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27fc6309be19ddc1bfb81e5f32b591e"><td class="memTemplParams" colspan="2"><a id="af27fc6309be19ddc1bfb81e5f32b591e"></a>
+template&lt;size_t MaxElementCount&gt; </td></tr>
+<tr class="memitem:af27fc6309be19ddc1bfb81e5f32b591e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_wstring</b> (<a class="el" href="class_a_z_std_1_1basic__fixed__string.html">AZStd::basic_fixed_string</a>&lt; wstring::value_type, MaxElementCount, wstring::traits_type &gt; &amp;dest, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> src)</td></tr>
+<tr class="separator:af27fc6309be19ddc1bfb81e5f32b591e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c657ab39e72bf52365b72667f854ebf"><td class="memItemLeft" align="right" valign="top"><a id="a3c657ab39e72bf52365b72667f854ebf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>to_wstring</b> (wchar_t *dest, size_t destSize, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> src)</td></tr>
+<tr class="separator:a3c657ab39e72bf52365b72667f854ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ba8962d3bb60ac6e57a5da92f2ca0ff"><td class="memTemplParams" colspan="2"><a id="a6ba8962d3bb60ac6e57a5da92f2ca0ff"></a>
 template&lt;class Iterator &gt; </td></tr>
 <tr class="memitem:a6ba8962d3bb60ac6e57a5da92f2ca0ff"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_lower</b> (Iterator first, Iterator last)</td></tr>
@@ -4307,8 +4309,8 @@ template&lt;class InputIter , class UnaryOperation &gt; </div>
 
 </div>
 </div>
-<a id="adb06618e8e5622f6eaea86d3e62b1c86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb06618e8e5622f6eaea86d3e62b1c86">&#9670;&nbsp;</a></span>construct_at()</h2>
+<a id="aced73d319f6e1be2b8847ca423e66441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced73d319f6e1be2b8847ca423e66441">&#9670;&nbsp;</a></span>construct_at()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4333,7 +4335,7 @@ template&lt;typename T , typename... Args&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; enable_if_t&lt;is_void_v&lt;void_t&lt;decltype(new (declval&lt;void*&gt;()) T(AZStd::forward&lt;Args&gt;(args)...))&gt;&gt;, T*&gt;
+          <td></td><td> -&gt; enable_if_t&lt;AZStd::is_void_v&lt;AZStd::void_t&lt;decltype(new (AZStd::declval&lt;void*&gt;()) T(AZStd::forward&lt;Args&gt;(args)...))&gt;&gt;, T*&gt;
     </td>
         </tr>
       </table>
@@ -5100,55 +5102,6 @@ template&lt;class InputIterator , class ForwardIterator &gt; </div>
 
 </div>
 </div>
-<a id="aebeeba4bae79641e18f4add990fd37d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebeeba4bae79641e18f4add990fd37d7">&#9670;&nbsp;</a></span>uninitialized_default_construct()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ForwardIt &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto AZStd::uninitialized_default_construct </td>
-          <td>(</td>
-          <td class="paramtype">ForwardIt&#160;</td>
-          <td class="paramname"><em>first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ForwardIt&#160;</td>
-          <td class="paramname"><em>last</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; enable_if_t&lt;Internal::is_forward_iterator_v&lt;ForwardIt&gt;, void&gt;
-    </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>C++20 implementation of uninitialized_default_construct Initializes objects by default-initialization via placement new Ex. <code>new(declval&lt;void*&gt;()) T</code> - Notice no parenthesis after T This performs default initialization instead of value initialization Default initialization performs the following actions </p>
-<h1><a class="anchor" id="autotoc_md44"></a>
-If T is a class type it considers constructors which can be invoked</h1>
-<p>with an empty argument list. The selected constructor is invoked to provide the initial value of the object </p>
-<h1><a class="anchor" id="autotoc_md45"></a>
-If T is an array type, then default initialization is performed</h1>
-<p>on each array element </p>
-<h1><a class="anchor" id="autotoc_md46"></a>
-Otherwise nothing is done and objects with automatic storage duration(i.e scope)</h1>
-<p>are initialized with indeterminate values For example given the following struct struct Foo { int mint; double bubble; }; Invoking uninitialized_default_construct(FooPtr, FooPtr + 1) Will default initialize the FooPtr object (Foo has an implicitly-defined default constructor) The values of mint and bubble are indeterminate </p>
-
-</div>
-</div>
 <a id="a41415f3ee150b06d42542226390b3ae2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a41415f3ee150b06d42542226390b3ae2">&#9670;&nbsp;</a></span>uninitialized_move()</h2>
 
@@ -5183,58 +5136,6 @@ template&lt;typename InputIt , typename ForwardIt &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Implements the C++17 uninitialized_move function The functions accepts two input iterators and an output iterator It performs an AZStd::move on each in in the range of the input iterator and stores the result in location pointed by the output iterator </p>
-
-</div>
-</div>
-<a id="ad4f4a7c260214cb64955efe3f02f8504"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4f4a7c260214cb64955efe3f02f8504">&#9670;&nbsp;</a></span>uninitialized_value_construct()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ForwardIt &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto AZStd::uninitialized_value_construct </td>
-          <td>(</td>
-          <td class="paramtype">ForwardIt&#160;</td>
-          <td class="paramname"><em>first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ForwardIt&#160;</td>
-          <td class="paramname"><em>last</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; enable_if_t&lt;Internal::is_forward_iterator_v&lt;ForwardIt&gt;, void&gt;
-    </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>C++20 implementation of uninitialized_value_construct Initializes objects by value-initialization via placement new Ex. <code>new(declval&lt;void*&gt;()) T()</code> - Notice parenthesis are here after T value-initialization of an object performs different rules depending on the type of T Value initialization performs the following actions </p>
-<h1><a class="anchor" id="autotoc_md47"></a>
-If T is a class type with no default constructor or with a user-provided</h1>
-<p>constructor or a deleted default constructor, then default-initialization is performed </p>
-<h1><a class="anchor" id="autotoc_md48"></a>
-If T is a class type with a default constructor that is neither</h1>
-<p>user-provided nor deleted(i.e a class with an implicitly-defined or defaulted default constructor), then the object is zero-initialized and then it is default-initialized if it has a non-trivial default constructor </p>
-<h1><a class="anchor" id="autotoc_md49"></a>
-If T is an array type, then value initialization is performed</h1>
-<p>on each array element </p>
-<h1><a class="anchor" id="autotoc_md50"></a>
-Otherwise the object is zero-initialized</h1>
-<p>(i.e sets arithmetic and enum objects to 0, bool objects to false, pointers to nullptr) For example given the following struct struct Foo { int mint; double bubble; }; Invoking uninitialized_default_construct(FooPtr, FooPtr + 1) Will value-initialize the FooPtr object. The Foo has an implicitly-defined default constructor. For aggregates such as int and double this will perform zero-initialization which will set their values to 0 Therefore The values of mint will be 0 and and bubble 0.0 </p>
 
 </div>
 </div>
@@ -5395,7 +5296,7 @@ template&lt;typename BinaryOp &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:52 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:18:31 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

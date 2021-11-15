@@ -93,7 +93,7 @@ Like the `Navmesh Bounds` component, the `Octree` component comes with a `Polygo
 
 ![Octree component configuration](/images/learning-guide/tutorials/ai/kythera-city-octree-dialog.png)
 
-The `3DOctree` entity's `Octree component` is an configured for accuracy at the cost of some performance, using a small cell size to represent the complex geometry of the level.
+The `3DOctree` entity's `Octree component` is configured for accuracy at the cost of some performance, using a small cell size to represent the complex geometry of the level.
 
 ![Octree debug draw](/images/learning-guide/tutorials/ai/kythera-city-octree.png)
 
@@ -123,7 +123,7 @@ Expand `debug options`, here you can disable/enable various specific debug draw 
 To view the behavior trees, click on BT Editor at the top of the page and select a behavior tree name to edit.
 Make sure that the game or **O3DE Editor** isn't playing or simulating while editing the behavior trees.
 
-![](/images/learning-guide/tutorials/ai/kythera-city-inspector-bteditor.png)
+![The BT Editor in the Kythera AI Inspector](/images/learning-guide/tutorials/ai/kythera-city-inspector-bteditor.png)
 
 Alternatively, you can view the behavior in live mode, go to:
 

@@ -67,13 +67,25 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MaterialAssignment</b> (const AZ::Data::AssetId &amp;materialAssetId)</td></tr>
 <tr class="separator:a812d00d4d4bf6c46f2f19fae9e1029c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb566908d939134c8fc443cfda47102f"><td class="memItemLeft" align="right" valign="top"><a id="acb566908d939134c8fc443cfda47102f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialAssignment</b> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">RPI::MaterialAsset</a> &gt; &amp;asset)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialAssignment</b> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">RPI::MaterialAsset</a> &gt; &amp;asset)</td></tr>
 <tr class="separator:acb566908d939134c8fc443cfda47102f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aa06047b9636d0629bedc978c600ada"><td class="memItemLeft" align="right" valign="top"><a id="a9aa06047b9636d0629bedc978c600ada"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialAssignment</b> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">RPI::MaterialAsset</a> &gt; &amp;asset, const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">RPI::Material</a> &gt; &amp;instance)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialAssignment</b> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">RPI::MaterialAsset</a> &gt; &amp;asset, const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">RPI::Material</a> &gt; &amp;instance)</td></tr>
 <tr class="separator:a9aa06047b9636d0629bedc978c600ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac92e52cfd8a1f265c51540cd89d21aca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment.html#ac92e52cfd8a1f265c51540cd89d21aca">RebuildInstance</a> ()</td></tr>
 <tr class="separator:ac92e52cfd8a1f265c51540cd89d21aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a894eea0bb62534741dee8c709e003c38"><td class="memItemLeft" align="right" valign="top"><a id="a894eea0bb62534741dee8c709e003c38"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment.html#a894eea0bb62534741dee8c709e003c38">Release</a> ()</td></tr>
+<tr class="memdesc:a894eea0bb62534741dee8c709e003c38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release asset and instance references. <br /></td></tr>
+<tr class="separator:a894eea0bb62534741dee8c709e003c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b9f5331c222eccf4d5fa655c7fecc4"><td class="memItemLeft" align="right" valign="top"><a id="ae0b9f5331c222eccf4d5fa655c7fecc4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment.html#ae0b9f5331c222eccf4d5fa655c7fecc4">RequiresLoading</a> () const</td></tr>
+<tr class="memdesc:ae0b9f5331c222eccf4d5fa655c7fecc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if contained assets have not been loaded. <br /></td></tr>
+<tr class="separator:ae0b9f5331c222eccf4d5fa655c7fecc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af82d9dd318c728218fe83e4e1fb4744c"><td class="memItemLeft" align="right" valign="top"><a id="af82d9dd318c728218fe83e4e1fb4744c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment.html#af82d9dd318c728218fe83e4e1fb4744c">ApplyProperties</a> ()</td></tr>
+<tr class="memdesc:af82d9dd318c728218fe83e4e1fb4744c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies property overrides to material instance. <br /></td></tr>
+<tr class="separator:af82d9dd318c728218fe83e4e1fb4744c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d6cdc38686ed9c2c094a696cbfa9de8"><td class="memItemLeft" align="right" valign="top"><a id="a2d6cdc38686ed9c2c094a696cbfa9de8"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment.html#a2d6cdc38686ed9c2c094a696cbfa9de8">ToString</a> () const</td></tr>
 <tr class="memdesc:a2d6cdc38686ed9c2c094a696cbfa9de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string composed of the asset path. <br /></td></tr>
@@ -88,8 +100,11 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (R
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ac517bd6fe17c583e3a225c4c31f8eb09"><td class="memItemLeft" align="right" valign="top"><a id="ac517bd6fe17c583e3a225c4c31f8eb09"></a>
-Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">RPI::MaterialAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialAsset</b></td></tr>
+<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">RPI::MaterialAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialAsset</b></td></tr>
 <tr class="separator:ac517bd6fe17c583e3a225c4c31f8eb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa16ea7ddd2e6cadad50e277a90a413e3"><td class="memItemLeft" align="right" valign="top"><a id="aa16ea7ddd2e6cadad50e277a90a413e3"></a>
+<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">RPI::MaterialAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_defaultMaterialAsset</b></td></tr>
+<tr class="separator:aa16ea7ddd2e6cadad50e277a90a413e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7207d75773dcebee825ef38a69e8fe38"><td class="memItemLeft" align="right" valign="top"><a id="a7207d75773dcebee825ef38a69e8fe38"></a>
 Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">RPI::Material</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialInstance</b></td></tr>
 <tr class="separator:a7207d75773dcebee825ef38a69e8fe38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,6 +114,9 @@ MaterialPropertyOverrideMap&#160;</td><td class="memItemRight" valign="bottom"><
 <tr class="memitem:a5c1feaef671ce0cdce208630e7216dcd"><td class="memItemLeft" align="right" valign="top"><a id="a5c1feaef671ce0cdce208630e7216dcd"></a>
 RPI::MaterialModelUvOverrideMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_matModUvOverrides</b></td></tr>
 <tr class="separator:a5c1feaef671ce0cdce208630e7216dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a191fe5901044e2c36d2dee7319a84fbc"><td class="memItemLeft" align="right" valign="top"><a id="a191fe5901044e2c36d2dee7319a84fbc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialInstancePreCreated</b> = false</td></tr>
+<tr class="separator:a191fe5901044e2c36d2dee7319a84fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac92e52cfd8a1f265c51540cd89d21aca"></a>
@@ -125,7 +143,7 @@ RPI::MaterialModelUvOverrideMap&#160;</td><td class="memItemRight" valign="botto
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:13 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

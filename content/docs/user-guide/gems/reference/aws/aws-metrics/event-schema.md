@@ -6,7 +6,7 @@ toc: true
 weight: 600
 ---
 
-The AWS Metrics Gem provides the following JSON schema for validating input events. See the advanced topic on [Metrics Event Schema](./advanced-topics.md#metrics-event-schema) for information on customizing the schema.
+The AWS Metrics Gem provides the following JSON schema for validating input events. See the advanced topic on [Metrics Event Schema](./advanced-topics/#metrics-event-schema) for information on customizing the schema.
 
 ```json
 {

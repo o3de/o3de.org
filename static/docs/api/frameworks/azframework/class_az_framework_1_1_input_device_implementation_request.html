@@ -48,6 +48,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_az_framework_1_1_input_device_implementation_request-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputDeviceImplementationRequest&lt; InputDeviceType &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -63,19 +64,32 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:acfbe8c7c885583bfbc5040694f2b693c"><td class="memItemLeft" align="right" valign="top"><a id="acfbe8c7c885583bfbc5040694f2b693c"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_implementation_request.html#acfbe8c7c885583bfbc5040694f2b693c">BusIdType</a> = <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a></td></tr>
+<tr class="memdesc:acfbe8c7c885583bfbc5040694f2b693c"><td class="mdescLeft">&#160;</td><td class="mdescRight">EBus Trait: requests can be addressed to a specific <a class="el" href="class_az_framework_1_1_input_device_id.html" title="Class that identifies a specific input device.">InputDeviceId</a>. <br /></td></tr>
+<tr class="separator:acfbe8c7c885583bfbc5040694f2b693c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebdc96190eae9d3898e63eacb8be6762"><td class="memItemLeft" align="right" valign="top"><a id="aebdc96190eae9d3898e63eacb8be6762"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_implementation_request.html#aebdc96190eae9d3898e63eacb8be6762">BusIdOrderCompare</a> = AZStd::less&lt; <a class="el" href="class_az_framework_1_1_input_device_implementation_request.html#acfbe8c7c885583bfbc5040694f2b693c">BusIdType</a> &gt;</td></tr>
+<tr class="memdesc:aebdc96190eae9d3898e63eacb8be6762"><td class="mdescLeft">&#160;</td><td class="mdescRight">EBus Trait: requests are handled by connected devices in the order of local player index. <br /></td></tr>
+<tr class="separator:aebdc96190eae9d3898e63eacb8be6762"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16dc6235d1a503aa03b21db9716978a3"><td class="memItemLeft" align="right" valign="top"><a id="a16dc6235d1a503aa03b21db9716978a3"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_implementation_request.html#a16dc6235d1a503aa03b21db9716978a3">Bus</a> = AZ::EBus&lt; <a class="el" href="class_az_framework_1_1_input_device_implementation_request.html">InputDeviceImplementationRequest</a>&lt; InputDeviceType &gt; &gt;</td></tr>
 <tr class="memdesc:a16dc6235d1a503aa03b21db9716978a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for the EBus implementation of this interface. <br /></td></tr>
 <tr class="separator:a16dc6235d1a503aa03b21db9716978a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf34affad3338e74f53adb4a8b25cc85"><td class="memItemLeft" align="right" valign="top"><a id="aaf34affad3338e74f53adb4a8b25cc85"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_implementation_request.html#aaf34affad3338e74f53adb4a8b25cc85">CreateFunctionType</a> = typename InputDeviceType::Implementation *(*)(InputDeviceType &amp;)</td></tr>
-<tr class="memdesc:aaf34affad3338e74f53adb4a8b25cc85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for the function type used to create the custom implementations. <br /></td></tr>
-<tr class="separator:aaf34affad3338e74f53adb4a8b25cc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a379e8dd9235c95698f30c6944f1f0d6d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_implementation_request.html#a379e8dd9235c95698f30c6944f1f0d6d">CreateCustomImplementation</a> (<a class="el" href="class_az_framework_1_1_input_device_implementation_request.html#aaf34affad3338e74f53adb4a8b25cc85">CreateFunctionType</a> createFunction)=0</td></tr>
-<tr class="separator:a379e8dd9235c95698f30c6944f1f0d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbcdb2cc3dd035e280af5f14b35f2153"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_implementation_request.html#abbcdb2cc3dd035e280af5f14b35f2153">SetCustomImplementation</a> (typename InputDeviceType::ImplementationFactory implementationFactory)=0</td></tr>
+<tr class="separator:abbcdb2cc3dd035e280af5f14b35f2153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ab7aeae77d0eb03686912559617b1e9fa"><td class="memItemLeft" align="right" valign="top">static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_implementation_request.html#ab7aeae77d0eb03686912559617b1e9fa">AddressPolicy</a> = AZ::EBusAddressPolicy::ByIdAndOrdered</td></tr>
+<tr class="separator:ab7aeae77d0eb03686912559617b1e9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63fe626e11ced8593378a99b44f18114"><td class="memItemLeft" align="right" valign="top"><a id="a63fe626e11ced8593378a99b44f18114"></a>
+static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_implementation_request.html#a63fe626e11ced8593378a99b44f18114">HandlerPolicy</a> = AZ::EBusHandlerPolicy::Single</td></tr>
+<tr class="memdesc:a63fe626e11ced8593378a99b44f18114"><td class="mdescLeft">&#160;</td><td class="mdescRight">EBus Trait: requests should be handled by only one input device connected to each id. <br /></td></tr>
+<tr class="separator:a63fe626e11ced8593378a99b44f18114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class InputDeviceType&gt;<br />
@@ -83,8 +97,8 @@ class AzFramework::InputDeviceImplementationRequest&lt; InputDeviceType &gt;</h3
 
 <p>Templated EBus interface used to create a custom implementation for a specific device type. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a379e8dd9235c95698f30c6944f1f0d6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a379e8dd9235c95698f30c6944f1f0d6d">&#9670;&nbsp;</a></span>CreateCustomImplementation()</h2>
+<a id="abbcdb2cc3dd035e280af5f14b35f2153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbcdb2cc3dd035e280af5f14b35f2153">&#9670;&nbsp;</a></span>SetCustomImplementation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -95,10 +109,10 @@ template&lt;class InputDeviceType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="class_az_framework_1_1_input_device_implementation_request.html">AzFramework::InputDeviceImplementationRequest</a>&lt; InputDeviceType &gt;::CreateCustomImplementation </td>
+          <td class="memname">virtual void <a class="el" href="class_az_framework_1_1_input_device_implementation_request.html">AzFramework::InputDeviceImplementationRequest</a>&lt; InputDeviceType &gt;::SetCustomImplementation </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_az_framework_1_1_input_device_implementation_request.html#aaf34affad3338e74f53adb4a8b25cc85">CreateFunctionType</a>&#160;</td>
-          <td class="paramname"><em>createFunction</em></td><td>)</td>
+          <td class="paramtype">typename InputDeviceType::ImplementationFactory&#160;</td>
+          <td class="paramname"><em>implementationFactory</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -108,12 +122,38 @@ template&lt;class InputDeviceType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create a custom implementation for all the existing instances of this input device type. Passing InputDeviceType::Implementation::Create as the argument will create the default device implementation, while passing nullptr will delete any existing implementation. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set a custom implementation for this input device type, either for a specific instance by addressing the call to an <a class="el" href="class_az_framework_1_1_input_device_id.html" title="Class that identifies a specific input device.">InputDeviceId</a>, or for all existing instances by broadcast. Passing InputDeviceType::Implementation::Create as the argument will create the default device implementation, while passing nullptr will delete any existing implementation. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">createFunction</td><td>Pointer to the function that will create the implementation. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">implementationFactory</td><td>Pointer to the function that creates the implementation. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab7aeae77d0eb03686912559617b1e9fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7aeae77d0eb03686912559617b1e9fa">&#9670;&nbsp;</a></span>AddressPolicy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class InputDeviceType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const AZ::EBusAddressPolicy <a class="el" href="class_az_framework_1_1_input_device_implementation_request.html">AzFramework::InputDeviceImplementationRequest</a>&lt; InputDeviceType &gt;::AddressPolicy = AZ::EBusAddressPolicy::ByIdAndOrdered</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>EBus Trait: requests can be addressed to a specific <a class="el" href="class_az_framework_1_1_input_device_id.html" title="Class that identifies a specific input device.">InputDeviceId</a> so that they are only handled by one input device that has connected to the bus using that unique id, or they can be broadcast to all input devices that have connected to the bus, regardless of id. Connected input devices are ordered by their local player index from lowest to highest. </p>
 
 </div>
 </div>
@@ -123,7 +163,7 @@ template&lt;class InputDeviceType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:22 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:04 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

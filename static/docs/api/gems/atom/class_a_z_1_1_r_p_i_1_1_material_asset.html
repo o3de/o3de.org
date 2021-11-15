@@ -69,7 +69,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a>, SystemAllocator, 0)</td></tr>
 <tr class="separator:a4437835bcf74e3d93b74b8aa63686cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a698c6499c62e43ee5bf36ef8e2381638"><td class="memItemLeft" align="right" valign="top"><a id="a698c6499c62e43ee5bf36ef8e2381638"></a>
-const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#a698c6499c62e43ee5bf36ef8e2381638">GetMaterialTypeAsset</a> () const</td></tr>
+const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#a698c6499c62e43ee5bf36ef8e2381638">GetMaterialTypeAsset</a> () const</td></tr>
 <tr class="memdesc:a698c6499c62e43ee5bf36ef8e2381638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a>. <br /></td></tr>
 <tr class="separator:a698c6499c62e43ee5bf36ef8e2381638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adce1c359cdeb79d3b56850b560669473"><td class="memItemLeft" align="right" valign="top"><a id="adce1c359cdeb79d3b56850b560669473"></a>
@@ -78,10 +78,18 @@ const <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_collection.html">Shader
 <tr class="separator:adce1c359cdeb79d3b56850b560669473"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ad2fcc56da85b96e1651c0fdf12286c"><td class="memItemLeft" align="right" valign="top">const MaterialFunctorList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#a4ad2fcc56da85b96e1651c0fdf12286c">GetMaterialFunctors</a> () const</td></tr>
 <tr class="separator:a4ad2fcc56da85b96e1651c0fdf12286c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4dd581b342398931fe46911f81c93c5"><td class="memItemLeft" align="right" valign="top">const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#aa4dd581b342398931fe46911f81c93c5">GetMaterialSrgAsset</a> () const</td></tr>
-<tr class="separator:aa4dd581b342398931fe46911f81c93c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc26e8945e64b60551f34992d79780c1"><td class="memItemLeft" align="right" valign="top">const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#acc26e8945e64b60551f34992d79780c1">GetObjectSrgAsset</a> () const</td></tr>
-<tr class="separator:acc26e8945e64b60551f34992d79780c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e6cd65c61468bc177f32e03e30436c"><td class="memItemLeft" align="right" valign="top">const RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#a86e6cd65c61468bc177f32e03e30436c">GetMaterialSrgLayout</a> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">SupervariantIndex</a> &amp;supervariantIndex) const</td></tr>
+<tr class="separator:a86e6cd65c61468bc177f32e03e30436c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5986387f3f751a33c0bafcc795843d88"><td class="memItemLeft" align="right" valign="top">const RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#a5986387f3f751a33c0bafcc795843d88">GetMaterialSrgLayout</a> (const AZ::Name &amp;supervariantName) const</td></tr>
+<tr class="separator:a5986387f3f751a33c0bafcc795843d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870d0bd3b446285a1c85f9e65a50204f"><td class="memItemLeft" align="right" valign="top">const RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#a870d0bd3b446285a1c85f9e65a50204f">GetMaterialSrgLayout</a> () const</td></tr>
+<tr class="separator:a870d0bd3b446285a1c85f9e65a50204f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57fcec8d9f37c3120951ebb18fe63f68"><td class="memItemLeft" align="right" valign="top">const RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#a57fcec8d9f37c3120951ebb18fe63f68">GetObjectSrgLayout</a> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">SupervariantIndex</a> &amp;supervariantIndex) const</td></tr>
+<tr class="separator:a57fcec8d9f37c3120951ebb18fe63f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90dd7d1b4fe04ba86e103053de6eab4b"><td class="memItemLeft" align="right" valign="top">const RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#a90dd7d1b4fe04ba86e103053de6eab4b">GetObjectSrgLayout</a> (const AZ::Name &amp;supervariantName) const</td></tr>
+<tr class="separator:a90dd7d1b4fe04ba86e103053de6eab4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa587e3c444101483ec98db93493e5dba"><td class="memItemLeft" align="right" valign="top">const RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#aa587e3c444101483ec98db93493e5dba">GetObjectSrgLayout</a> () const</td></tr>
+<tr class="separator:aa587e3c444101483ec98db93493e5dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae82d5c89ff3c19e94feda77d53a1e546"><td class="memItemLeft" align="right" valign="top"><a id="ae82d5c89ff3c19e94feda77d53a1e546"></a>
 const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_properties_layout.html">MaterialPropertiesLayout</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#ae82d5c89ff3c19e94feda77d53a1e546">GetMaterialPropertiesLayout</a> () const</td></tr>
 <tr class="memdesc:ae82d5c89ff3c19e94feda77d53a1e546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a layout that includes a list of MaterialPropertyDescriptors for each material property. <br /></td></tr>
@@ -109,6 +117,9 @@ static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>Extens
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
+<tr class="memitem:a06f56261afbbe413925d6bbe1818deeb"><td class="memItemLeft" align="right" valign="top"><a id="a06f56261afbbe413925d6bbe1818deeb"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialVersionUpdate</b></td></tr>
+<tr class="separator:a06f56261afbbe413925d6bbe1818deeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89569fe8b51cea43e2eab52cb517ab93"><td class="memItemLeft" align="right" valign="top"><a id="a89569fe8b51cea43e2eab52cb517ab93"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialAssetCreator</b></td></tr>
 <tr class="separator:a89569fe8b51cea43e2eab52cb517ab93"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,39 +152,125 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialAssetCreator
 
 </div>
 </div>
-<a id="aa4dd581b342398931fe46911f81c93c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4dd581b342398931fe46911f81c93c5">&#9670;&nbsp;</a></span>GetMaterialSrgAsset()</h2>
+<a id="a870d0bd3b446285a1c85f9e65a50204f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a870d0bd3b446285a1c85f9e65a50204f">&#9670;&nbsp;</a></span>GetMaterialSrgLayout() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const Data::Asset&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a>&gt;&amp; AZ::RPI::MaterialAsset::GetMaterialSrgAsset </td>
+          <td class="memname">const RHI::Ptr&lt;<a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a>&gt;&amp; AZ::RPI::MaterialAsset::GetMaterialSrgLayout </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the shader resource group asset that has per-material frequency, which indicates most of the topology for a material's shaders. All shaders in a material will have the same per-material SRG asset. </p>
+<p>Just like the original <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#a86e6cd65c61468bc177f32e03e30436c">GetMaterialSrgLayout()</a> where it uses the index of the default supervariant. See the definition of DefaultSupervariantIndex. </p>
 
 </div>
 </div>
-<a id="acc26e8945e64b60551f34992d79780c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc26e8945e64b60551f34992d79780c1">&#9670;&nbsp;</a></span>GetObjectSrgAsset()</h2>
+<a id="a5986387f3f751a33c0bafcc795843d88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5986387f3f751a33c0bafcc795843d88">&#9670;&nbsp;</a></span>GetMaterialSrgLayout() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const Data::Asset&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a>&gt;&amp; AZ::RPI::MaterialAsset::GetObjectSrgAsset </td>
+          <td class="memname">const RHI::Ptr&lt;<a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a>&gt;&amp; AZ::RPI::MaterialAsset::GetMaterialSrgLayout </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Name &amp;&#160;</td>
+          <td class="paramname"><em>supervariantName</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Same as above but accepts the supervariant name. There's a minor penalty when using this function because it will discover the index from the name. </p>
+
+</div>
+</div>
+<a id="a86e6cd65c61468bc177f32e03e30436c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e6cd65c61468bc177f32e03e30436c">&#9670;&nbsp;</a></span>GetMaterialSrgLayout() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const RHI::Ptr&lt;<a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a>&gt;&amp; AZ::RPI::MaterialAsset::GetMaterialSrgLayout </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">SupervariantIndex</a> &amp;&#160;</td>
+          <td class="paramname"><em>supervariantIndex</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the shader resource group layout that has per-material frequency, which indicates most of the topology for a material's shaders. All shaders in a material will have the same per-material SRG layout. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">supervariantIndex</td><td>supervariant index to get the layout from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa587e3c444101483ec98db93493e5dba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa587e3c444101483ec98db93493e5dba">&#9670;&nbsp;</a></span>GetObjectSrgLayout() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const RHI::Ptr&lt;<a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a>&gt;&amp; AZ::RPI::MaterialAsset::GetObjectSrgLayout </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the shader resource group asset that has per-object frequency. What constitutes an "object" is an agreement between the <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html" title="Interface that FeatureProcessors should derive from @detail FeatureProcceors will record simulation s...">FeatureProcessor</a> and the shaders, but an example might be world-transform for a model. All shaders in a material will have the same per-object SRG asset. </p>
+<p>Just like the original <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#a57fcec8d9f37c3120951ebb18fe63f68">GetObjectSrgLayout()</a> where it uses the index of the default supervariant. See the definition of DefaultSupervariantIndex. </p>
+
+</div>
+</div>
+<a id="a90dd7d1b4fe04ba86e103053de6eab4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90dd7d1b4fe04ba86e103053de6eab4b">&#9670;&nbsp;</a></span>GetObjectSrgLayout() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const RHI::Ptr&lt;<a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a>&gt;&amp; AZ::RPI::MaterialAsset::GetObjectSrgLayout </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Name &amp;&#160;</td>
+          <td class="paramname"><em>supervariantName</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Same as above but accepts the supervariant name. There's a minor penalty when using this function because it will discover the index from the name. </p>
+
+</div>
+</div>
+<a id="a57fcec8d9f37c3120951ebb18fe63f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57fcec8d9f37c3120951ebb18fe63f68">&#9670;&nbsp;</a></span>GetObjectSrgLayout() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const RHI::Ptr&lt;<a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a>&gt;&amp; AZ::RPI::MaterialAsset::GetObjectSrgLayout </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">SupervariantIndex</a> &amp;&#160;</td>
+          <td class="paramname"><em>supervariantIndex</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the shader resource group layout that has per-object frequency. What constitutes an "object" is an agreement between the <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html" title="Interface that FeatureProcessors should derive from @detail FeatureProcceors will record simulation s...">FeatureProcessor</a> and the shaders, but an example might be world-transform for a model. All shaders in a material will have the same per-object SRG layout. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">supervariantIndex</td><td>supervariant index to get the layout from. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -202,7 +299,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialAssetCreator
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

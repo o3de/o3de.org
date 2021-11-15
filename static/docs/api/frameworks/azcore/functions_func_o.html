@@ -57,7 +57,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_behavior_context_events.html#ace561276c30e60ed32e46df1af774aec">AZ::BehaviorContextEvents</a>
 </li>
 <li>OnAssert()
-: <a class="el" href="class_a_z_1_1_debug_1_1_trace_messages_driller.html#a76014712c6441366190bbb948456d962">AZ::Debug::TraceMessagesDriller</a>
+: <a class="el" href="class_a_z_1_1_debug_1_1_trace_messages_driller.html#a183a839953ac61c54565b53c63fed71b">AZ::Debug::TraceMessagesDriller</a>
 </li>
 <li>OnAssetCanceled()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset_events.html#a962d86be60d414fcd045bec8fc2f1336">AZ::Data::AssetEvents</a>
@@ -110,6 +110,9 @@ $(function() {
 </li>
 <li>OnBeginSlicePush()
 : <a class="el" href="class_a_z_1_1_slice_asset_serialization_notifications.html#ad6c84de935713f5e796dd802233f815e">AZ::SliceAssetSerializationNotifications</a>
+</li>
+<li>OnCaptureFinished()
+: <a class="el" href="class_a_z_1_1_debug_1_1_profiler_notifications.html#ae37e34504002ccc74d03cf16a8014433">AZ::Debug::ProfilerNotifications</a>
 </li>
 <li>OnChildAdded()
 : <a class="el" href="class_a_z_1_1_transform_notification.html#a763d8f4f03fe7321fc74419d33308182">AZ::TransformNotification</a>
@@ -185,9 +188,6 @@ $(function() {
 <li>OnExitTag()
 : <a class="el" href="class_a_z_1_1_debug_1_1_driller_handler_parser.html#a424d58ae9f36fbf360a9ecadb47a9664">AZ::Debug::DrillerHandlerParser</a>
 </li>
-<li>OnFrameProfilerData()
-: <a class="el" href="class_a_z_1_1_debug_1_1_frame_profiler_events.html#af9804213adb51993a6b904a78903e344">AZ::Debug::FrameProfilerEvents</a>
-</li>
 <li>OnLegacyDataPatchLoaded()
 : <a class="el" href="class_a_z_1_1_data_patch_notifications.html#abc8351213c7104c3a4d5eb009551e74c">AZ::DataPatchNotifications</a>
 </li>
@@ -257,13 +257,11 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_debug_1_1_driller_s_a_x_parser_handler.html#ad980e6bdeaa5bc9021fe488be0e1ee36">AZ::Debug::DrillerSAXParserHandler</a>
 </li>
 <li>OnThreadEnter()
-: <a class="el" href="class_a_z_1_1_debug_1_1_profiler_driller.html#ac308653c37f22f7bcaffaa7aaeb20ae7">AZ::Debug::ProfilerDriller</a>
-, <a class="el" href="class_a_z_std_1_1_thread_driller_events.html#a3323bfa0a7e5e0a044c97a0d3747096f">AZStd::ThreadDrillerEvents</a>
+: <a class="el" href="class_a_z_std_1_1_thread_driller_events.html#a3323bfa0a7e5e0a044c97a0d3747096f">AZStd::ThreadDrillerEvents</a>
 , <a class="el" href="class_a_z_std_1_1_thread_events.html#a566c019fd3f402aecc589188088de9c1">AZStd::ThreadEvents</a>
 </li>
 <li>OnThreadExit()
-: <a class="el" href="class_a_z_1_1_debug_1_1_profiler_driller.html#a5d813f908731ded5aed2722348ad1521">AZ::Debug::ProfilerDriller</a>
-, <a class="el" href="class_a_z_std_1_1_thread_driller_events.html#a7f7b4c585282c4a9939bd1f631111017">AZStd::ThreadDrillerEvents</a>
+: <a class="el" href="class_a_z_std_1_1_thread_driller_events.html#a7f7b4c585282c4a9939bd1f631111017">AZStd::ThreadDrillerEvents</a>
 , <a class="el" href="class_a_z_std_1_1_thread_events.html#ab3d5f3e68e9a4406580bfbe928694e07">AZStd::ThreadEvents</a>
 </li>
 <li>OnTick()
@@ -305,8 +303,12 @@ $(function() {
 <li>OnWriteEnd()
 : <a class="el" href="class_a_z_1_1_serialize_context_1_1_i_event_handler.html#af7cf584e2e493f749a2351116a6cf0c8">AZ::SerializeContext::IEventHandler</a>
 </li>
+<li>OpaqueValue()
+: <a class="el" href="class_a_z_1_1_d_o_m_1_1_visitor.html#a0c365f2464eac1f2f1c72d5673807090">AZ::DOM::Visitor</a>
+</li>
 <li>Open()
 : <a class="el" href="class_a_z_1_1_android_1_1_a_p_k_file_handler.html#a21d3525495a9cf8b71c65de74c3eaf89">AZ::Android::APKFileHandler</a>
+, <a class="el" href="class_a_z_1_1_i_o_1_1_file_reader.html#a0464c69833939c0e1e4aa3ed97298369">AZ::IO::FileReader</a>
 , <a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html#aa47064a9a49f1a9c6f779e56f05b17ee">AZ::IO::SystemFile</a>
 , <a class="el" href="class_a_z_1_1_shared_memory.html#abbaf343b5f214a69ed6f6eb65271af8c">AZ::SharedMemory</a>
 </li>
@@ -358,9 +360,9 @@ $(function() {
 <li>operator*()
 : <a class="el" href="class_a_z_1_1_allocator_wrapper.html#a9221ad0be32cd0d8f6b1625fd8fb185c">AZ::AllocatorWrapper&lt; Allocator &gt;</a>
 , <a class="el" href="struct_a_z_1_1_i_o_1_1parser_1_1_path_parser.html#af5c19553a255f22a264c1239580ed2d8">AZ::IO::parser::PathParser</a>
-, <a class="el" href="class_a_z_1_1_matrix3x3.html#a949f9ec82cdfea78b731ede8fce93396">AZ::Matrix3x3</a>
+, <a class="el" href="class_a_z_1_1_matrix3x3.html#a1e2d5fd71db44689cc8da5eeba59e332">AZ::Matrix3x3</a>
 , <a class="el" href="class_a_z_1_1_matrix3x4.html#a5ef7072743eb060904da1669ca8e64ba">AZ::Matrix3x4</a>
-, <a class="el" href="class_a_z_1_1_matrix4x4.html#a5811d8102712fa3f2aca09b5c4fca382">AZ::Matrix4x4</a>
+, <a class="el" href="class_a_z_1_1_matrix4x4.html#a9884b195826ee36061be9f705f1e3c5c">AZ::Matrix4x4</a>
 </li>
 <li>operator+()
 : <a class="el" href="class_a_z_1_1_matrix3x3.html#a8858572ff42ddfc9f182cc5f78adf3df">AZ::Matrix3x3</a>
@@ -369,9 +371,9 @@ $(function() {
 , <a class="el" href="struct_a_z_1_1_uuid.html#a7800181fd8e41312cf0e90f099d82b0b">AZ::Uuid</a>
 </li>
 <li>operator-()
-: <a class="el" href="class_a_z_1_1_matrix3x3.html#ae8bb501e3208fc1b6a4c4e7f1fd0f86c">AZ::Matrix3x3</a>
+: <a class="el" href="class_a_z_1_1_matrix3x3.html#a25f6f7fa97b8275955a8f8198f4020dc">AZ::Matrix3x3</a>
 , <a class="el" href="class_a_z_1_1_matrix3x4.html#afc3759acca6a9ca728c803972f48bcf9">AZ::Matrix3x4</a>
-, <a class="el" href="class_a_z_1_1_matrix4x4.html#a94d9860a324be450616d985aabf4f22c">AZ::Matrix4x4</a>
+, <a class="el" href="class_a_z_1_1_matrix4x4.html#ac2a2467989ca577a989c57b5e3a2c256">AZ::Matrix4x4</a>
 , <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html#a9e2e1ce7fadf65ca5fce7cbb2c1c965c">AZStd::deque&lt; T, Allocator, NumElementsPerBlock, MinMapSize &gt;::const_iterator_impl</a>
 </li>
 <li>operator-&gt;()
@@ -395,15 +397,16 @@ $(function() {
 <li>operator=()
 : <a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1shared__ref.html#a9eef43f48ea9f346f7d174d3f86701d1">AZ::Android::JNI::shared_ref&lt; JniType &gt;</a>
 , <a class="el" href="class_a_z_1_1_console_data_wrapper.html#a0d43096f8640ee42de7a9c72f62e2215">AZ::ConsoleDataWrapper&lt; BASE_TYPE, THREAD_SAFETY &gt;</a>
-, <a class="el" href="struct_a_z_1_1_e_bus_aggregate_results.html#ac952b8f722be9ac2cefdfce984b397d2">AZ::EBusAggregateResults&lt; T &gt;</a>
-, <a class="el" href="struct_a_z_1_1_e_bus_reduce_result.html#a3118a45d9c9f4ccd5c1f54b7d41de576">AZ::EBusReduceResult&lt; T, Aggregator &gt;</a>
+, <a class="el" href="struct_a_z_1_1_e_bus_aggregate_results.html#a114dc689647a27b847d0261540c4d061">AZ::EBusAggregateResults&lt; T &gt;</a>
+, <a class="el" href="struct_a_z_1_1_e_bus_reduce_result.html#af2e8375db659518121421931cac44e27">AZ::EBusReduceResult&lt; T, Aggregator &gt;</a>
 , <a class="el" href="struct_a_z_1_1_e_bus_reduce_result_3_01_t_01_6_00_01_aggregator_01_4.html#a74a23dad199897c75b8fd4d5e0650e36">AZ::EBusReduceResult&lt; T &amp;, Aggregator &gt;</a>
+, <a class="el" href="class_a_z_1_1_i_o_1_1_file_reader.html#a611f43d09d1c24ef3e514d2e4ae1935c">AZ::IO::FileReader</a>
 , <a class="el" href="class_a_z_1_1_matrix3x3.html#af56aba6453cfba20b1d457c9e1949364">AZ::Matrix3x3</a>
 , <a class="el" href="class_a_z_1_1_matrix3x4.html#a515a0e5baaab31d65488568db19da51e">AZ::Matrix3x4</a>
 , <a class="el" href="class_a_z_1_1_name.html#aa4debf0720b05230f50504c23189a80c">AZ::Name</a>
 , <a class="el" href="class_a_z_1_1_outcome.html#abdcd008633b7a9c1351f99ddb1d7de1c">AZ::Outcome&lt; ValueT, ErrorT &gt;</a>
 , <a class="el" href="class_a_z_1_1_thread_safe_object.html#a0a52f5a170ded687cabc2451bd2e967b">AZ::ThreadSafeObject&lt; _TYPE &gt;</a>
-, <a class="el" href="class_a_z_std_1_1any.html#a367f5fe4466d976a3bbcfe46029a020b">AZStd::any</a>
+, <a class="el" href="class_a_z_std_1_1any.html#a111c317736b2b11ecc26d6662c01b57a">AZStd::any</a>
 </li>
 <li>operator==()
 : <a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1shared__ref.html#ab5f6eb3af7c7e235bdb7cae9c2637e4b">AZ::Android::JNI::shared_ref&lt; JniType &gt;</a>
@@ -430,19 +433,13 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_matrix3x4.html#aaf0d473d1ebcd1a571748abc098df7c0">AZ::Matrix3x4</a>
 </li>
 <li>Outcome()
-: <a class="el" href="class_a_z_1_1_outcome.html#a8573c5ec0d11536de89af6d8b18a30af">AZ::Outcome&lt; ValueT, ErrorT &gt;</a>
-</li>
-<li>OutputThreadEnter()
-: <a class="el" href="class_a_z_1_1_debug_1_1_profiler_driller.html#afe1d84c4dfe35dbdaea166abaea9a0f6">AZ::Debug::ProfilerDriller</a>
-</li>
-<li>OutputThreadExit()
-: <a class="el" href="class_a_z_1_1_debug_1_1_profiler_driller.html#a3c40bb94d460ce37b6ca6171e6fd8679">AZ::Debug::ProfilerDriller</a>
+: <a class="el" href="class_a_z_1_1_outcome.html#a85a768eb370a2c239dfd1a250305285b">AZ::Outcome&lt; ValueT, ErrorT &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:18 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:18:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -77,9 +77,6 @@ virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetWidth</
 <tr class="memitem:acfec53556069bf0f5627a13c858e187c"><td class="memItemLeft" align="right" valign="top"><a id="acfec53556069bf0f5627a13c858e187c"></a>
 virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetHeight</b> (AZ::u32 mip) const =0</td></tr>
 <tr class="separator:acfec53556069bf0f5627a13c858e187c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ad13cea445284f24cc51d0d717f2a77"><td class="memItemLeft" align="right" valign="top"><a id="a8ad13cea445284f24cc51d0d717f2a77"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsCubemap</b> () const =0</td></tr>
-<tr class="separator:a8ad13cea445284f24cc51d0d717f2a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae11cb1a74d4dbe8b309e920a20126f4b"><td class="memItemLeft" align="right" valign="top"><a id="ae11cb1a74d4dbe8b309e920a20126f4b"></a>
 virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetMipCount</b> () const =0</td></tr>
 <tr class="separator:ae11cb1a74d4dbe8b309e920a20126f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,15 +122,6 @@ virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeAlpha
 <tr class="memitem:ad51b2db3dc64f8d53daf1ee8367d98e3"><td class="memItemLeft" align="right" valign="top"><a id="ad51b2db3dc64f8d53daf1ee8367d98e3"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>CompareImage</b> (const IImageObjectPtr otherImage) const =0</td></tr>
 <tr class="separator:ad51b2db3dc64f8d53daf1ee8367d98e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd68e19896ad90d497e93f23423162f8"><td class="memItemLeft" align="right" valign="top"><a id="abd68e19896ad90d497e93f23423162f8"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveImage</b> (const char *filename, IImageObjectPtr alphaImage, AZStd::vector&lt; AZStd::string &gt; &amp;outFilePaths) const =0</td></tr>
-<tr class="separator:abd68e19896ad90d497e93f23423162f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0acb121fb323de16e0fa2f33aa503c17"><td class="memItemLeft" align="right" valign="top"><a id="a0acb121fb323de16e0fa2f33aa503c17"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveImage</b> (AZ::IO::SystemFileStream &amp;out) const =0</td></tr>
-<tr class="separator:a0acb121fb323de16e0fa2f33aa503c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af386b9069430d8c1dc9e1ccf6a8958fd"><td class="memItemLeft" align="right" valign="top"><a id="af386b9069430d8c1dc9e1ccf6a8958fd"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveMipToFile</b> (AZ::u32 mip, const AZStd::string &amp;filename) const =0</td></tr>
-<tr class="separator:af386b9069430d8c1dc9e1ccf6a8958fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7294cca2e74f122b083498851a629591"><td class="memItemLeft" align="right" valign="top"><a id="a7294cca2e74f122b083498851a629591"></a>
 virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetTextureMemory</b> () const =0</td></tr>
 <tr class="separator:a7294cca2e74f122b083498851a629591"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,9 +158,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAverageBri
 <tr class="memitem:a630e259a9abf34518f9916c60d7f30b7"><td class="memItemLeft" align="right" valign="top"><a id="a630e259a9abf34518f9916c60d7f30b7"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GlossFromNormals</b> (bool hasAuthoredGloss)=0</td></tr>
 <tr class="separator:a630e259a9abf34518f9916c60d7f30b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac14e0265edfd7569a3eea4209dfcf77f"><td class="memItemLeft" align="right" valign="top"><a id="ac14e0265edfd7569a3eea4209dfcf77f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertLegacyGloss</b> ()=0</td></tr>
-<tr class="separator:ac14e0265edfd7569a3eea4209dfcf77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad58d7e668a6b1a59919e3836766cc491"><td class="memItemLeft" align="right" valign="top"><a id="ad58d7e668a6b1a59919e3836766cc491"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearColor</b> (float r, float g, float b, float a)=0</td></tr>
 <tr class="separator:ad58d7e668a6b1a59919e3836766cc491"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,7 +174,7 @@ static <a class="el" href="class_image_processing_atom_1_1_i_image_object.html">
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:23 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

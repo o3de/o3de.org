@@ -6,7 +6,7 @@ toc: true
 weight: 120
 ---
 
-This tutorial shows you how to add and remove Gems in your project by using the **Project Manager** or the command line interface (CLI) in Open 3D Engine (O3DE). Gems provide features and assets to your project. For more details on Gems and what Gems are available with O3DE, refer to the [Gems](/docs/user-guide/gems) section.
+This tutorial shows you how to add and remove Gems in your project by using the **Project Manager** or the command line interface (CLI) in **Open 3D Engine (O3DE)**. Gems provide features and assets to your project. For more details on Gems and what Gems are available with O3DE, refer to the [Gems](/docs/user-guide/gems) section.
 
 O3DE includes many Gems that you can add to your project. You can also use Gems from *external* sources. External Gems must be registered to your project before you can enable them. Refer to [Registering Gems](/docs/user-guide/project-config/register-gems/) for instructions on how to register additional Gems.
 
@@ -28,7 +28,7 @@ The basic steps to configure Gems for your project are as follows:
 
 ### Opening the Configure Gems screen
 
-1. Launch **Project Manager**, which can be found on your desktop or in `bin/Windows/profile/o3de.exe` if you installed O3DE, or in your engine build directory if you built O3DE from source.
+1. Launch **Project Manager**, which can be found on your desktop or in `bin/Windows/profile/Default/o3de.exe` if you installed O3DE, or in your engine build directory if you built O3DE from source.
 
 1. Open the menu for a project and select the **Edit Project Settings...** button.
 
@@ -40,7 +40,7 @@ The basic steps to configure Gems for your project are as follows:
 
 1. In the **Configure Gems** screen, you can filter or search for available Gems. Scroll through the resulting list to find the Gem you want to enable or disable for your project.
 
-    ![Configure Gems screen.](/images/user-guide/project-config/add-remove-gems/quick-start-3.png)
+    ![Configure Gems screen.](/images/user-guide/project-config/add-remove-gems/configure-gems-screen.png)
 
 ### Locating Gems
 
@@ -61,7 +61,13 @@ You can filter by the following groups:
 
 **Searching the catalog**
 
-Search the Gem catalog by entering the Gem name in the search field.  
+Search the Gem catalog by entering text in the search field. You can search for Gems using any of the following search terms:
+
+* Gem name
+* Gem display name
+* Origin
+* Summary
+* Features
 
 ![Search field](/images/user-guide/project-config/add-remove-gems/ui-search.png)
 
@@ -95,7 +101,7 @@ You can enable or disable multiple Gems at once. The changes that will be made t
 
 ## Using the Command Line Interface (CLI)
 
-You can also configure Gems using the CLI. Refer to [CLI Reference](docs/user-guide/project-config/cli-reference/) for additional supported CLI commands.
+You can also configure Gems using the CLI. Refer to [CLI Reference](/docs/user-guide/project-config/cli-reference/) for additional supported CLI commands.
 
 1. Open a command prompt to the folder where your engine is located.
 

@@ -12,12 +12,17 @@ To create and manage projects, you can use either the GUI-based **Project Manage
 | Topic | Description |
 | - | - |
 | [Understanding `project.json`](#understanding-project-json) | Get a detailed look at the fields in the project manifest, an important project configuration file. |
+| [Project Manager](project-manager/) | Learn how to create and manage projects using a GUI-based tool. |
 | [Adding and Removing Gems](add-remove-gems/) | Learn how to add and remove Gems in your project. |
 | [Registering Gems](register-gems/) | Learn how to register external Gems from sources outside of O3DE. |
 | [O3DE CLI Reference](cli-reference/) | Learn how to create and configure your O3DE environment and its objects, including engines, projects, and Gems, using the `o3de` Python script. |
 | [Troubleshooting](troubleshooting/) | Troubleshoot common issues that you might encounter during project configuration. |
 
-To build projects, you can use either Project Manager or **CMake**. For more information, refer to the [introductory tutorials](/docs/welcome-guide/create/) in the Get Started Guide, and the [Configure and Build](/docs/user-guide/build/configure-and-build) topic in the Build section of this User Guide.
+To build projects, use either Project Manager or **CMake**. For more information, refer to any of the following resources:
+
+* [Introductory tutorials](/docs/welcome-guide/create/) in the Get Started Guide.
+* [Project Manager](project-manager/) and its **Build** command in the project drop-down menu.
+* [Configure and build](/docs/user-guide/build/configure-and-build) topic in the Build section of this User Guide.
 
 ## Understanding `project.json` {#understanding-project-json}
 

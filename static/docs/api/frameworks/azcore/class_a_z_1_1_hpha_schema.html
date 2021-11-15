@@ -68,45 +68,49 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab4440d2d225e6347865befb13be494ed"><td class="memItemLeft" align="right" valign="top"><a id="ab4440d2d225e6347865befb13be494ed"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>HphaSchema</b> (const <a class="el" href="struct_a_z_1_1_hpha_schema_1_1_descriptor.html">Descriptor</a> &amp;desc)</td></tr>
 <tr class="separator:ab4440d2d225e6347865befb13be494ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa21da422fb066cde9b84b5918a2fdf2a"><td class="memItemLeft" align="right" valign="top"><a id="aa21da422fb066cde9b84b5918a2fdf2a"></a>
-virtual pointer_type&#160;</td><td class="memItemRight" valign="bottom"><b>Allocate</b> (size_type byteSize, size_type alignment, int flags=0, const char *name=0, const char *fileName=0, int lineNum=0, unsigned int suppressStackRecord=0)</td></tr>
-<tr class="separator:aa21da422fb066cde9b84b5918a2fdf2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad50a8175fe3d2f1f73e8d7454d6b4ec"><td class="memItemLeft" align="right" valign="top"><a id="aad50a8175fe3d2f1f73e8d7454d6b4ec"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DeAllocate</b> (pointer_type ptr, size_type byteSize=0, size_type alignment=0)</td></tr>
-<tr class="separator:aad50a8175fe3d2f1f73e8d7454d6b4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aced691929c5cce411dffcad0fe134369"><td class="memItemLeft" align="right" valign="top"><a id="aced691929c5cce411dffcad0fe134369"></a>
-virtual pointer_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#aced691929c5cce411dffcad0fe134369">ReAllocate</a> (pointer_type ptr, size_type newSize, size_type newAlignment)</td></tr>
-<tr class="memdesc:aced691929c5cce411dffcad0fe134369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realloc an allocate memory memory block. Similar to Resize except it will move the memory block if needed. Return NULL if realloc is not supported or run out of memory. <br /></td></tr>
-<tr class="separator:aced691929c5cce411dffcad0fe134369"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc317db4c969db76338323f1fdaded30"><td class="memItemLeft" align="right" valign="top"><a id="adc317db4c969db76338323f1fdaded30"></a>
-virtual size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#adc317db4c969db76338323f1fdaded30">Resize</a> (pointer_type ptr, size_type newSize)</td></tr>
-<tr class="memdesc:adc317db4c969db76338323f1fdaded30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes allocated memory block to the size possible and returns that size. <br /></td></tr>
-<tr class="separator:adc317db4c969db76338323f1fdaded30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3f8da3433057a22ae5c2ccef0907302"><td class="memItemLeft" align="right" valign="top"><a id="ac3f8da3433057a22ae5c2ccef0907302"></a>
-virtual size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#ac3f8da3433057a22ae5c2ccef0907302">AllocationSize</a> (pointer_type ptr)</td></tr>
-<tr class="memdesc:ac3f8da3433057a22ae5c2ccef0907302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns allocation size for given address. 0 if the address doesn't belong to the allocator. <br /></td></tr>
-<tr class="separator:ac3f8da3433057a22ae5c2ccef0907302"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af452790091310cacb62122f82a1d8427"><td class="memItemLeft" align="right" valign="top"><a id="af452790091310cacb62122f82a1d8427"></a>
-virtual size_type&#160;</td><td class="memItemRight" valign="bottom"><b>NumAllocatedBytes</b> () const</td></tr>
-<tr class="separator:af452790091310cacb62122f82a1d8427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8eb8e22844842624c9f4381c034da503"><td class="memItemLeft" align="right" valign="top"><a id="a8eb8e22844842624c9f4381c034da503"></a>
-virtual size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#a8eb8e22844842624c9f4381c034da503">Capacity</a> () const</td></tr>
-<tr class="memdesc:a8eb8e22844842624c9f4381c034da503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the capacity of the Allocator in bytes. If the return value is 0 the Capacity is undefined (usually depends on another allocator) <br /></td></tr>
-<tr class="separator:a8eb8e22844842624c9f4381c034da503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bf54ac1efa9e84c424dbbb9078250bc"><td class="memItemLeft" align="right" valign="top"><a id="a0bf54ac1efa9e84c424dbbb9078250bc"></a>
-virtual size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#a0bf54ac1efa9e84c424dbbb9078250bc">GetMaxAllocationSize</a> () const</td></tr>
-<tr class="memdesc:a0bf54ac1efa9e84c424dbbb9078250bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns max allocation size if possible. If not returned value is 0. <br /></td></tr>
-<tr class="separator:a0bf54ac1efa9e84c424dbbb9078250bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3627c249948f221086791e58d0fdd5b9"><td class="memItemLeft" align="right" valign="top">virtual size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#a3627c249948f221086791e58d0fdd5b9">GetUnAllocatedMemory</a> (bool isPrint=false) const</td></tr>
-<tr class="separator:a3627c249948f221086791e58d0fdd5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaf017f52c09959e709b269379880f42"><td class="memItemLeft" align="right" valign="top"><a id="aaaf017f52c09959e709b269379880f42"></a>
-virtual <a class="el" href="class_a_z_1_1_i_allocator_allocate.html">IAllocatorAllocate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#aaaf017f52c09959e709b269379880f42">GetSubAllocator</a> ()</td></tr>
-<tr class="memdesc:aaaf017f52c09959e709b269379880f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to a sub-allocator or NULL. <br /></td></tr>
-<tr class="separator:aaaf017f52c09959e709b269379880f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83db25b3bb6bb207c9bc6cf8236a0230"><td class="memItemLeft" align="right" valign="top"><a id="a83db25b3bb6bb207c9bc6cf8236a0230"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#a83db25b3bb6bb207c9bc6cf8236a0230">GarbageCollect</a> ()</td></tr>
-<tr class="memdesc:a83db25b3bb6bb207c9bc6cf8236a0230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return unused memory to the OS (if we don't use fixed block). Don't call this unless you really need free memory, it is slow. <br /></td></tr>
-<tr class="separator:a83db25b3bb6bb207c9bc6cf8236a0230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1477dcf416722933e8d83a404e6550c"><td class="memItemLeft" align="right" valign="top"><a id="aa1477dcf416722933e8d83a404e6550c"></a>
+pointer_type&#160;</td><td class="memItemRight" valign="bottom"><b>Allocate</b> (size_type byteSize, size_type alignment, int flags=0, const char *name=0, const char *fileName=0, int lineNum=0, unsigned int suppressStackRecord=0) override</td></tr>
+<tr class="separator:aa1477dcf416722933e8d83a404e6550c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d9e90af33fff47547cae4c9742cc204"><td class="memItemLeft" align="right" valign="top"><a id="a7d9e90af33fff47547cae4c9742cc204"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DeAllocate</b> (pointer_type ptr, size_type byteSize=0, size_type alignment=0) override</td></tr>
+<tr class="separator:a7d9e90af33fff47547cae4c9742cc204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75fb6cdf1665eb51de79e849d445d47e"><td class="memItemLeft" align="right" valign="top"><a id="a75fb6cdf1665eb51de79e849d445d47e"></a>
+pointer_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#a75fb6cdf1665eb51de79e849d445d47e">ReAllocate</a> (pointer_type ptr, size_type newSize, size_type newAlignment) override</td></tr>
+<tr class="memdesc:a75fb6cdf1665eb51de79e849d445d47e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realloc an allocate memory memory block. Similar to Resize except it will move the memory block if needed. Return NULL if realloc is not supported or run out of memory. <br /></td></tr>
+<tr class="separator:a75fb6cdf1665eb51de79e849d445d47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3832ec2cac71ad96afd134c24e0ca68e"><td class="memItemLeft" align="right" valign="top"><a id="a3832ec2cac71ad96afd134c24e0ca68e"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#a3832ec2cac71ad96afd134c24e0ca68e">Resize</a> (pointer_type ptr, size_type newSize) override</td></tr>
+<tr class="memdesc:a3832ec2cac71ad96afd134c24e0ca68e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes allocated memory block to the size possible and returns that size. <br /></td></tr>
+<tr class="separator:a3832ec2cac71ad96afd134c24e0ca68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5f1ee16d5d83f7a802e927bad35b1a"><td class="memItemLeft" align="right" valign="top"><a id="a8e5f1ee16d5d83f7a802e927bad35b1a"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#a8e5f1ee16d5d83f7a802e927bad35b1a">AllocationSize</a> (pointer_type ptr) override</td></tr>
+<tr class="memdesc:a8e5f1ee16d5d83f7a802e927bad35b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns allocation size for given address. 0 if the address doesn't belong to the allocator. <br /></td></tr>
+<tr class="separator:a8e5f1ee16d5d83f7a802e927bad35b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6952e0b55a06eb8d94e7c3991a4f779f"><td class="memItemLeft" align="right" valign="top"><a id="a6952e0b55a06eb8d94e7c3991a4f779f"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>NumAllocatedBytes</b> () const override</td></tr>
+<tr class="separator:a6952e0b55a06eb8d94e7c3991a4f779f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a546980420ceca9bc8fd7939bbdb25e40"><td class="memItemLeft" align="right" valign="top"><a id="a546980420ceca9bc8fd7939bbdb25e40"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#a546980420ceca9bc8fd7939bbdb25e40">Capacity</a> () const override</td></tr>
+<tr class="memdesc:a546980420ceca9bc8fd7939bbdb25e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the capacity of the Allocator in bytes. If the return value is 0 the Capacity is undefined (usually depends on another allocator) <br /></td></tr>
+<tr class="separator:a546980420ceca9bc8fd7939bbdb25e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3e1dfc5b52335500e76040b7a94a90"><td class="memItemLeft" align="right" valign="top"><a id="a9d3e1dfc5b52335500e76040b7a94a90"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#a9d3e1dfc5b52335500e76040b7a94a90">GetMaxAllocationSize</a> () const override</td></tr>
+<tr class="memdesc:a9d3e1dfc5b52335500e76040b7a94a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns max allocation size if possible. If not returned value is 0. <br /></td></tr>
+<tr class="separator:a9d3e1dfc5b52335500e76040b7a94a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564af7eaddba2f8d0ee770f3c8193d13"><td class="memItemLeft" align="right" valign="top"><a id="a564af7eaddba2f8d0ee770f3c8193d13"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#a564af7eaddba2f8d0ee770f3c8193d13">GetMaxContiguousAllocationSize</a> () const override</td></tr>
+<tr class="memdesc:a564af7eaddba2f8d0ee770f3c8193d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum contiguous allocation size of a single allocation. <br /></td></tr>
+<tr class="separator:a564af7eaddba2f8d0ee770f3c8193d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af06239a923f88f9d293fe95a631d01eb"><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#af06239a923f88f9d293fe95a631d01eb">GetUnAllocatedMemory</a> (bool isPrint=false) const override</td></tr>
+<tr class="separator:af06239a923f88f9d293fe95a631d01eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e35236b9a49cc79f034bf6dc9a57e41"><td class="memItemLeft" align="right" valign="top"><a id="a9e35236b9a49cc79f034bf6dc9a57e41"></a>
+<a class="el" href="class_a_z_1_1_i_allocator_allocate.html">IAllocatorAllocate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#a9e35236b9a49cc79f034bf6dc9a57e41">GetSubAllocator</a> () override</td></tr>
+<tr class="memdesc:a9e35236b9a49cc79f034bf6dc9a57e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to a sub-allocator or NULL. <br /></td></tr>
+<tr class="separator:a9e35236b9a49cc79f034bf6dc9a57e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a4ba57bfde139f3960d939f6b4e092"><td class="memItemLeft" align="right" valign="top"><a id="af7a4ba57bfde139f3960d939f6b4e092"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_hpha_schema.html#af7a4ba57bfde139f3960d939f6b4e092">GarbageCollect</a> () override</td></tr>
+<tr class="memdesc:af7a4ba57bfde139f3960d939f6b4e092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return unused memory to the OS (if we don't use fixed block). Don't call this unless you really need free memory, it is slow. <br /></td></tr>
+<tr class="separator:af7a4ba57bfde139f3960d939f6b4e092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -124,8 +128,8 @@ typedef ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>differen
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Heap allocator schema, based on Dimitar Lazarov "High Performance Heap Allocator". </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3627c249948f221086791e58d0fdd5b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3627c249948f221086791e58d0fdd5b9">&#9670;&nbsp;</a></span>GetUnAllocatedMemory()</h2>
+<a id="af06239a923f88f9d293fe95a631d01eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af06239a923f88f9d293fe95a631d01eb">&#9670;&nbsp;</a></span>GetUnAllocatedMemory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,7 +138,7 @@ typedef ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>differen
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual size_type AZ::HphaSchema::GetUnAllocatedMemory </td>
+          <td class="memname">size_type AZ::HphaSchema::GetUnAllocatedMemory </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>isPrint</em> = <code>false</code></td><td>)</td>
@@ -143,7 +147,7 @@ typedef ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>differen
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -159,7 +163,7 @@ typedef ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>differen
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:46 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:18:24 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

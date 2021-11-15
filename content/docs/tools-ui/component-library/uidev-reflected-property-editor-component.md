@@ -5,19 +5,19 @@ description: Use the O3DE UI reflected property editor to automatically lay out 
 toc: true
 ---
 
-A **reflected property editor** automatically lays out controls for user-editable properties that are reflected using the edit context. It is frequently used as a content widget to populate [card](uidev-card-component.md) components.
+A **reflected property editor** automatically lays out controls for user-editable properties that are reflected using the edit context. It is frequently used as a content widget to populate [card](./uidev-card-component) components.
 
 ![component reflected property editor in card](/images/tools-ui/component-reflected-property-editor-in-card.png)
 
 For more information about reflecting and the edit context, see the **O3DE User Guide** topic on [Reflecting a Component for Serialization and Editing](/docs/user-guide/components/development/reflection/).
 
-## Reflected property editor in a card<a name="reflected-property-editor-basic"></a>
+## Reflected property editor in a card
 
 The following code shows how to add a simple **reflected property editor** to a **card**, like the one pictured in the image at the beginning of this topic.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <AzToolsFramework/UI/PropertyEditor/ReflectedPropertyEditor.hxx>
 #include <AzCore/Serialization/SerializeContext.h>
 #include <AzCore/Serialization/EditContext.h>
@@ -35,14 +35,14 @@ auto cardPropertyEditor = aznew AzToolsFramework::ReflectedPropertyEditor(card);
 card->setContentWidget(cardPropertyEditor);
 ```
 
-## C++ API reference<a name="card-api-ref"></a>
+## C++ API reference
 
 For details on the **card** API, see the following topics in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::Card](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_card.html)
 +  [AzQtComponents::CardHeader](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_card_header.html)
 +  [AzQtComponents::CardNotification](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_card_notification.html)
 
-## Related links<a name="reflected-property-editor-related-links"></a>
+## Related links
 
 For additional information related to the **reflected property editor** component, see the following topics:
-+  [Card Component](uidev-card-component.md)
++  [Card Component](./uidev-card-component)

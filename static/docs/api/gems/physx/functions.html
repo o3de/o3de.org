@@ -78,6 +78,9 @@ $(function() {
 <li>CreateFilterData()
 : <a class="el" href="class_phys_x_1_1_system_requests.html#a74fccb2ceff67f38e8dc77bf16a4621d">PhysX::SystemRequests</a>
 </li>
+<li>CreateHeightField()
+: <a class="el" href="class_phys_x_1_1_system_requests.html#a12539bcdc21fa739bd588f6c18e729cd">PhysX::SystemRequests</a>
+</li>
 <li>CreateTriangleMeshFromCooked()
 : <a class="el" href="class_phys_x_1_1_system_requests.html#a89e8603f87bfdadc2e1c031f9f2aef11">PhysX::SystemRequests</a>
 </li>
@@ -210,6 +213,9 @@ $(function() {
 <li>GetSphereRadius()
 : <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#a658049f9fe0f616e4bee7de3dd8ace60">PhysX::EditorColliderComponentRequests</a>
 </li>
+<li>GetSubComponentModesState()
+: <a class="el" href="class_phys_x_1_1_editor_joint_requests.html#a0479fcfb1cbe73a096580eabe02f751f">PhysX::EditorJointRequests</a>
+</li>
 <li>GetTargetSpeed()
 : <a class="el" href="class_phys_x_1_1_force_spline_follow_requests.html#a90528cb50b75dc4a58ee4b1ea1f524f1">PhysX::ForceSplineFollowRequests</a>
 </li>
@@ -241,14 +247,14 @@ $(function() {
 <li>IsFileDebug()
 : <a class="el" href="struct_phys_x_1_1_debug_1_1_pvd_configuration.html#a54d28ba80bd879c88a250fb07f0c7cc0">PhysX::Debug::PvdConfiguration</a>
 </li>
+<li>IsFlagSet()
+: <a class="el" href="struct_phys_x_1_1_joint_generic_properties.html#ab4991f2721bd9f8435e606fd99e7c0bd">PhysX::JointGenericProperties</a>
+</li>
 <li>IsNetworkDebug()
 : <a class="el" href="struct_phys_x_1_1_debug_1_1_pvd_configuration.html#a87680da776a18557fb7a753bb97b4f2a">PhysX::Debug::PvdConfiguration</a>
 </li>
 <li>IsOnGround()
 : <a class="el" href="class_phys_x_1_1_character_gameplay_requests.html#a36a0f12f4023bae9dfa9d87aff666bdb">PhysX::CharacterGameplayRequests</a>
-</li>
-<li>IsParameterUsed()
-: <a class="el" href="class_phys_x_1_1_editor_joint_requests.html#acc1eb1ff18165e5f8f312e7709edf370">PhysX::EditorJointRequests</a>
 </li>
 <li>IsTrigger()
 : <a class="el" href="class_phys_x_1_1_collider_shape_requests.html#a24bb38ab90608b02660ee62b5df7f561">PhysX::ColliderShapeRequests</a>
@@ -288,6 +294,9 @@ $(function() {
 <li>m_collisionLayer
 : <a class="el" href="class_phys_x_1_1_pipeline_1_1_asset_collider_configuration.html#a11821727140b33c06bb00af6750b5f38">PhysX::Pipeline::AssetColliderConfiguration</a>
 </li>
+<li>m_damping
+: <a class="el" href="struct_phys_x_1_1_joint_limit_properties.html#a8e1fe15f00155f5ea821565c4065805c">PhysX::JointLimitProperties</a>
+</li>
 <li>m_eigenpairs
 : <a class="el" href="struct_numerical_methods_1_1_eigenanalysis_1_1_solver_result.html#a3106a7d2949921a7986e362b14cab220">NumericalMethods::Eigenanalysis::SolverResult&lt; Scalar, D &gt;</a>
 </li>
@@ -297,11 +306,23 @@ $(function() {
 <li>m_fileName
 : <a class="el" href="struct_phys_x_1_1_debug_1_1_pvd_configuration.html#ad47536ac095d5e23b3beb29d755102be">PhysX::Debug::PvdConfiguration</a>
 </li>
+<li>m_flags
+: <a class="el" href="struct_phys_x_1_1_joint_generic_properties.html#a0f08f6bfcf34799bb6bf742a95fae3ec">PhysX::JointGenericProperties</a>
+</li>
+<li>m_forceMax
+: <a class="el" href="struct_phys_x_1_1_joint_generic_properties.html#a2b3809f624dd078fd8f7c91eb087dc99">PhysX::JointGenericProperties</a>
+</li>
 <li>m_globalWindTag
 : <a class="el" href="class_phys_x_1_1_wind_configuration.html#a50777efd33282d51232b954af46d8c37">PhysX::WindConfiguration</a>
 </li>
 <li>m_host
 : <a class="el" href="struct_phys_x_1_1_debug_1_1_pvd_configuration.html#a4b8f11c2dbe7b47ac10107061bd73a47">PhysX::Debug::PvdConfiguration</a>
+</li>
+<li>m_isLimited
+: <a class="el" href="struct_phys_x_1_1_joint_limit_properties.html#a8093c3f1221afb85f58f0a84be655dd0">PhysX::JointLimitProperties</a>
+</li>
+<li>m_isSoftLimit
+: <a class="el" href="struct_phys_x_1_1_joint_limit_properties.html#a30e8eff7033e659e77bfc8573d6041b0">PhysX::JointLimitProperties</a>
 </li>
 <li>m_isTrigger
 : <a class="el" href="class_phys_x_1_1_pipeline_1_1_asset_collider_configuration.html#a7c22e87f1a07280ea21f8439cd3bc5ba">PhysX::Pipeline::AssetColliderConfiguration</a>
@@ -317,6 +338,12 @@ $(function() {
 </li>
 <li>m_jointHierarchyLeadColor
 : <a class="el" href="struct_phys_x_1_1_debug_1_1_debug_display_data.html#a1675a09a00cf38801ad43077514f12dc">PhysX::Debug::DebugDisplayData</a>
+</li>
+<li>m_limitFirst
+: <a class="el" href="struct_phys_x_1_1_joint_limit_properties.html#a04780216ad26deade3ee51253d55a096">PhysX::JointLimitProperties</a>
+</li>
+<li>m_limitSecond
+: <a class="el" href="struct_phys_x_1_1_joint_limit_properties.html#a0a8856b74e83585683dd2b7edd02b914">PhysX::JointLimitProperties</a>
 </li>
 <li>m_localWindTag
 : <a class="el" href="class_phys_x_1_1_wind_configuration.html#ad3f3a81fa80a0b6d91d42a4f5469d273">PhysX::WindConfiguration</a>
@@ -349,14 +376,35 @@ $(function() {
 <li>m_showJointHierarchy
 : <a class="el" href="struct_phys_x_1_1_debug_1_1_debug_display_data.html#a98d9da0c6a5eafb55c20a9bba3e13e53">PhysX::Debug::DebugDisplayData</a>
 </li>
+<li>m_stiffness
+: <a class="el" href="struct_phys_x_1_1_joint_limit_properties.html#a4c3a87922e85ac8b6d23d13cf2a7514a">PhysX::JointLimitProperties</a>
+</li>
+<li>m_swingLimitY
+: <a class="el" href="struct_phys_x_1_1_d6_joint_limit_configuration.html#a8cb3d95772881188cbb13bc907406e37">PhysX::D6JointLimitConfiguration</a>
+</li>
+<li>m_swingLimitZ
+: <a class="el" href="struct_phys_x_1_1_d6_joint_limit_configuration.html#a64fce7baba1027b7e42e6421c8c40c06">PhysX::D6JointLimitConfiguration</a>
+</li>
 <li>m_tag
 : <a class="el" href="class_phys_x_1_1_pipeline_1_1_asset_collider_configuration.html#a6814633159f00dd7cd2387bec9c0d44f">PhysX::Pipeline::AssetColliderConfiguration</a>
 </li>
 <li>m_timeoutInMilliseconds
 : <a class="el" href="struct_phys_x_1_1_debug_1_1_pvd_configuration.html#a25c265c07aefe9c633722e7c189de5fb">PhysX::Debug::PvdConfiguration</a>
 </li>
+<li>m_tolerance
+: <a class="el" href="struct_phys_x_1_1_joint_limit_properties.html#a6f6701568984b375c8d5d9c166efdead">PhysX::JointLimitProperties</a>
+</li>
+<li>m_torqueMax
+: <a class="el" href="struct_phys_x_1_1_joint_generic_properties.html#ac0163424a0147816f4a28cc86c650a29">PhysX::JointGenericProperties</a>
+</li>
 <li>m_transportType
 : <a class="el" href="struct_phys_x_1_1_debug_1_1_pvd_configuration.html#a4bc9c1d695ee6f0c5066884fedd499d1">PhysX::Debug::PvdConfiguration</a>
+</li>
+<li>m_twistLimitLower
+: <a class="el" href="struct_phys_x_1_1_d6_joint_limit_configuration.html#abbbf7d1fc8cf23a08101150b021a7b03">PhysX::D6JointLimitConfiguration</a>
+</li>
+<li>m_twistLimitUpper
+: <a class="el" href="struct_phys_x_1_1_d6_joint_limit_configuration.html#a068b640fd5137165795e26b0a357d4b0">PhysX::D6JointLimitConfiguration</a>
 </li>
 <li>m_windConfiguration
 : <a class="el" href="struct_phys_x_1_1_phys_x_system_configuration.html#ac388273061feca7983cec869e1778945">PhysX::PhysXSystemConfiguration</a>
@@ -400,9 +448,6 @@ $(function() {
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
-<li>s_sanityValue
-: <a class="el" href="class_phys_x_1_1_base_actor_data.html#a6c9f000094d7a9f2b241de49ee874dec">PhysX::BaseActorData</a>
-</li>
 <li>SetAssetScale()
 : <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#a652b88f23677d44527279dabb79b9ff2">PhysX::EditorColliderComponentRequests</a>
 </li>
@@ -501,10 +546,17 @@ $(function() {
 : <a class="el" href="class_phys_x_1_1_debug_1_1_phys_x_debug_interface.html#ab89b567cf47c53980d8ab2b13a74404a">PhysX::Debug::PhysXDebugInterface</a>
 </li>
 </ul>
+
+
+<h3><a id="index_v"></a>- v -</h3><ul>
+<li>ValidateRigidBodyMeshGeometryType()
+: <a class="el" href="class_phys_x_1_1_editor_collider_validation_requests.html#a65ec5eac3bdee030474b531e6cdcdafa">PhysX::EditorColliderValidationRequests</a>
+</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:46 for Open 3D Engine PhysX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:46 for Open 3D Engine PhysX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

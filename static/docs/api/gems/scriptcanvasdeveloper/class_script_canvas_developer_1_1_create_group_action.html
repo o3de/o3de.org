@@ -77,9 +77,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0550b3175adbde96d42bc709b42ee26a"><td class="memItemLeft" align="right" valign="top"><a id="a0550b3175adbde96d42bc709b42ee26a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CreateGroupAction</b> (GraphCanvas::EditorId editorGraph, GraphCanvas::GraphId graphId, CreationType creationType=CreationType::Hotkey)</td></tr>
 <tr class="separator:a0550b3175adbde96d42bc709b42ee26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b224918e8651a5f5d3dfc01676b621c"><td class="memItemLeft" align="right" valign="top"><a id="a6b224918e8651a5f5d3dfc01676b621c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupAction</b> ()</td></tr>
-<tr class="separator:a6b224918e8651a5f5d3dfc01676b621c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65eaadc162deae6fdf5bc3a72dd51aee"><td class="memItemLeft" align="right" valign="top"><a id="a65eaadc162deae6fdf5bc3a72dd51aee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupAction</b> () override</td></tr>
+<tr class="separator:a65eaadc162deae6fdf5bc3a72dd51aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4163b33dc370d8b6121cb81f55d3708f"><td class="memItemLeft" align="right" valign="top"><a id="a4163b33dc370d8b6121cb81f55d3708f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnNodeAdded</b> (const AZ::EntityId &amp;groupId, bool isPaste=false) override</td></tr>
 <tr class="separator:a4163b33dc370d8b6121cb81f55d3708f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,9 +130,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupToolbarAction</b
 <tr class="memitem:ae15379a2fac1dbfadeffe00fd888985a"><td class="memItemLeft" align="right" valign="top"><a id="ae15379a2fac1dbfadeffe00fd888985a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupHotkeyAction</b> ()</td></tr>
 <tr class="separator:ae15379a2fac1dbfadeffe00fd888985a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eeb0c6403020658a39c1fccdde644f5"><td class="memItemLeft" align="right" valign="top"><a id="a4eeb0c6403020658a39c1fccdde644f5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnActionsComplete</b> ()</td></tr>
-<tr class="separator:a4eeb0c6403020658a39c1fccdde644f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006169909b156dc302479537d01a5ef3"><td class="memItemLeft" align="right" valign="top"><a id="a006169909b156dc302479537d01a5ef3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnActionsComplete</b> () override</td></tr>
+<tr class="separator:a006169909b156dc302479537d01a5ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_script_canvas_developer_1_1_compound_action"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_script_canvas_developer_1_1_compound_action')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_script_canvas_developer_1_1_compound_action.html">ScriptCanvasDeveloper::CompoundAction</a></td></tr>
 <tr class="memitem:a691bd79701a35f03958022ddca6d5557 inherit pro_methods_class_script_canvas_developer_1_1_compound_action"><td class="memItemLeft" align="right" valign="top"><a id="a691bd79701a35f03958022ddca6d5557"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearActionQueue</b> ()</td></tr>
@@ -150,7 +150,7 @@ virtual <a class="el" href="class_script_canvas_developer_1_1_editor_automation_
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:30:01 for Open 3D Engine ScriptCanvasDeveloper Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:21:04 for Open 3D Engine ScriptCanvasDeveloper Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

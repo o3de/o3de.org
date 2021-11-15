@@ -18,15 +18,19 @@ Annotations in the O3DE Profiler tool flag frames in your captured data that hav
 **To use annotations**
 
 1. To turn on annotations in the O3DE Profiler tool, click **Configure Annotations**:
+
 ![Configure Annotations](/images/user-guide/profiler-annotations-using-configure.png)
+
 ![Configure Annotations dialog box](/images/user-guide/profiler-annotations-using-configure-dialog.png)
 
    The **Configure Annotations** dialog box contains a list of available annotations and their display colors. For information on creating annotations for your application, see [ Creating Annotations](#profiler-annotations-creating).
 
 1. When you select an annotation in the dialog box, a marker and line of the same color appears in the channel display. Note that you might have to scroll horizontally to find the marker.
+
 ![Annotation marker](/images/user-guide/profiler-annotations-using-marker.png)
 
 1. To display details for the annotations that occurred on a frame, pause your pointer on an annotation marker. In the example image, IP addresses have been redacted out.
+
 ![Annotation content](/images/user-guide/profiler-annotations-using-select.png)
 
 ## Creating Annotations 

@@ -5,7 +5,7 @@ weight: 300
 toc: true
 ---
 
-Getting the source for Open 3D Engine (O3DE) from GitHub is a great way to set up your development environment. This method lets you easily sync future engine updates and make contributions to the open source project base. For instructions on setting up O3DE from GitHub, check out the following video or the tutorial on this page.
+Getting the source for **Open 3D Engine (O3DE)** from GitHub is a great way to set up your development environment. This method lets you easily sync future engine updates and make contributions to the open source project base. For instructions on setting up O3DE from GitHub, check out the following video or the tutorial on this page.
 
 The video and written instructions guide you through the following steps:
 
@@ -195,13 +195,12 @@ Choose one of the following build types based on the primary focus of your devel
 1. Use CMake to create the Visual Studio project for the engine. Supply the build directory, the Visual Studio generator, the path to the packages directory that you created, and any other project options. Paths can be absolute or relative. Alternatively, you can use the CMake GUI to complete this step.
 
     ```cmd
-    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON
+    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages
     ```
 
     The preceding command specifies several noteworthy custom definitions (`-D`). All are optional but recommended in this example.
 
     * `LY_3RDPARTY_PATH` : The path to the downloadable package directory, also known as the "third-party path". Do not use trailing slashes when specifying the path to the packages directory.
-    * `LY_UNITY_BUILD` : We recommend Unity builds in many cases for improved build performance. If you encounter a build error, disable Unity builds to help debug the problem.
 
 1. (Optional) Use CMake to build the source engine. This step is optional because in the "source engine" build model, the engine is built inside of every project. If you plan on working with projects, to avoid building the engine twice, consider waiting until you learn how to create and build a project, which we cover in our documentation on creating projects. The following command builds the engine without a project.
 
@@ -237,15 +236,14 @@ Choose one of the following build types based on the primary focus of your devel
 1. Use CMake to create the Visual Studio project for the engine. Supply the build directory, the Visual Studio generator, the path to the packages directory that you created, and any other project options. Paths can be absolute or relative. Alternatively, you can use the CMake GUI to complete this step.
 
     ```cmd
-    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=C:\o3de-install
+    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=C:\o3de-install
     ```
 
     The preceding command specifies several noteworthy custom definitions (`-D`). All are optional but recommended in this example.
 
     * `LY_3RDPARTY_PATH` : The path to the downloadable package directory, also known as the "third-party path". Do not use trailing slashes when specifying the path to the packages directory.
-    * `LY_UNITY_BUILD` : We recommend Unity builds in many cases for improved build performance. If you encounter a build error, disable Unity builds to help debug the problem.
     * `LY_VERSION_ENGINE_NAME` : The name you want to give the engine. Giving the install layout a different engine name ("o3de-install") than the source engine ("o3de") enables useful side-by-side options.
-    * `CMAKE_INSTALL_PREFIX`: The path to the installed build of the engine source. The directory you specify here is your engine install directory. You will find the Project Manager, Editor, and other tools in the subdirectory `bin/Windows/profile`. If you don't specify this option, the engine SDK binaries will be built to `<ENGINE_SOURCE>/install/bin/Windows/profile`.
+    * `CMAKE_INSTALL_PREFIX`: The path to the installed build of the engine source. The directory you specify here is your engine install directory. You will find the Project Manager, Editor, and other tools in the subdirectory `bin/Windows/profile/Default`. If you don't specify this option, the engine SDK binaries will be built to `<ENGINE_SOURCE>/install/bin/Windows/profile/Default`.
 
 1. Use CMake to build the engine as an SDK, the same as if you installed the engine from an installer tool. The following example shows the `profile` build configuration.
 
@@ -255,10 +253,14 @@ Choose one of the following build types based on the primary focus of your devel
 
     The `/m` is a recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
 
-    The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `C:\o3de-install\bin\Windows\profile`.
+    The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `C:\o3de-install\bin\Windows\profile\Default`.
 
 {{% /tab %}}
 {{< /tabs >}}
+
+{{< note >}}
+CMake [unity builds](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html) are on by default. This is a CMake feature that can greatly improve build times by merging source files into single compilation units. If you encounter a build error, disabling unity builds might help debug the problem. To disable unity builds, run the `cmake` project generation command with the `-DLY_UNITY_BUILD=OFF` argument to regenerate your project files.
+{{< /note >}}
 
 ## Register the engine
 

@@ -66,6 +66,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab6adc6fd08c03dcc47b4a208377e4dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a301f0b6396e6d26fb9570be1a2cc4b37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_json_serialization_result_1_1_result.html">JsonSerializationResult::Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_unordered_multi_map_serializer.html#a301f0b6396e6d26fb9570be1a2cc4b37">Store</a> (rapidjson::Value &amp;outputValue, const void *inputValue, const void *defaultValue, const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;valueTypeId, <a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;context) override</td></tr>
 <tr class="separator:a301f0b6396e6d26fb9570be1a2cc4b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b4ebb631ca8b53b95a5abcb1d33a5f4"><td class="memItemLeft" align="right" valign="top"><a id="a5b4ebb631ca8b53b95a5abcb1d33a5f4"></a>
+<a class="el" href="class_a_z_1_1_json_serialization_result_1_1_result.html">JsonSerializationResult::Result</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Store</b> (rapidjson::Value &amp;outputValue, const void *inputValue, const void *defaultValue, const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;valueTypeId, <a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;context) override</td></tr>
+<tr class="separator:a5b4ebb631ca8b53b95a5abcb1d33a5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29bad5fc732d97a5e32466d301fb83ee"><td class="memItemLeft" align="right" valign="top"><a id="a29bad5fc732d97a5e32466d301fb83ee"></a>
+virtual <a class="el" href="class_a_z_1_1_json_serialization_result_1_1_result.html">JsonSerializationResult::Result</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Store</b> (rapidjson::Value &amp;outputValue, const void *inputValue, const void *defaultValue, const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;valueTypeId, <a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;context, bool sortResult)</td></tr>
+<tr class="separator:a29bad5fc732d97a5e32466d301fb83ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_json_map_serializer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_json_map_serializer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_json_map_serializer.html">AZ::JsonMapSerializer</a></td></tr>
 <tr class="memitem:a491a5c3b3b449bf7a6f9f08cbe70ab8c inherit pub_methods_class_a_z_1_1_json_map_serializer"><td class="memItemLeft" align="right" valign="top"><a id="a491a5c3b3b449bf7a6f9f08cbe70ab8c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_json_map_serializer.html">JsonMapSerializer</a>, &quot;{9D53A00C-EE25-4B39-A9C5-9EBAEB5CCF26}&quot;, BaseJsonSerializer)</td></tr>
@@ -94,10 +100,14 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_a_z_1_1_base_json_serializer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_z_1_1_base_json_serializer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_z_1_1_base_json_serializer.html">AZ::BaseJsonSerializer</a></td></tr>
-<tr class="memitem:a7c10bf90c4e1e256a930c22d2b02e177 inherit pub_types_class_a_z_1_1_base_json_serializer"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_base_json_serializer.html#a7c10bf90c4e1e256a930c22d2b02e177">ContinuationFlags</a> { <b>None</b> = 0, 
+<tr class="memitem:a7c10bf90c4e1e256a930c22d2b02e177 inherit pub_types_class_a_z_1_1_base_json_serializer"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_base_json_serializer.html#a7c10bf90c4e1e256a930c22d2b02e177">ContinuationFlags</a> { <br />
+&#160;&#160;<b>None</b> = 0, 
 <a class="el" href="class_a_z_1_1_base_json_serializer.html#a7c10bf90c4e1e256a930c22d2b02e177a477ad59e0717caead5fa36e0c139460d">ContinuationFlags::ResolvePointer</a> = 1 &lt;&lt; 0, 
 <a class="el" href="class_a_z_1_1_base_json_serializer.html#a7c10bf90c4e1e256a930c22d2b02e177a6b5fa1a1e06bfd5f913c241aaece1f04">ContinuationFlags::ReplaceDefault</a> = 1 &lt;&lt; 1, 
-<a class="el" href="class_a_z_1_1_base_json_serializer.html#a7c10bf90c4e1e256a930c22d2b02e177af9d3633b0a967c817b502f81fe489ccc">ContinuationFlags::LoadAsNewInstance</a> = 1 &lt;&lt; 2
+<a class="el" href="class_a_z_1_1_base_json_serializer.html#a7c10bf90c4e1e256a930c22d2b02e177af9d3633b0a967c817b502f81fe489ccc">ContinuationFlags::LoadAsNewInstance</a> = 1 &lt;&lt; 2, 
+<br />
+&#160;&#160;<a class="el" href="class_a_z_1_1_base_json_serializer.html#a7c10bf90c4e1e256a930c22d2b02e177ab698caf5a585a943f315f3459ed3df97">ContinuationFlags::IgnoreTypeSerializer</a> = 1 &lt;&lt; 3
+<br />
  }</td></tr>
 <tr class="separator:a7c10bf90c4e1e256a930c22d2b02e177 inherit pub_types_class_a_z_1_1_base_json_serializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b7b72ae25e0bee97dc867d42321086a inherit pub_types_class_a_z_1_1_base_json_serializer"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_base_json_serializer.html#a1b7b72ae25e0bee97dc867d42321086a">OperationFlags</a> { <b>None</b> = 0, 
@@ -201,7 +211,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanBeConverte
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:46 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:18:25 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

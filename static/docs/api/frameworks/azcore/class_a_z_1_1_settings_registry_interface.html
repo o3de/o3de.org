@@ -64,6 +64,8 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_command_line_argument_settings.html">CommandLineArgumentSettings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_scoped_merge_event.html">ScopedMergeEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html">Specializations</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_visitor.html">Visitor</a></td></tr>
@@ -113,6 +115,24 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyEvent</b> = <a
 <tr class="memitem:a6e8d247b2196ac9a21070e5cbf0adf77"><td class="memItemLeft" align="right" valign="top"><a id="a6e8d247b2196ac9a21070e5cbf0adf77"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyEventHandler</b> = typename <a class="el" href="class_a_z_1_1_event_handler.html">NotifyEvent::Handler</a></td></tr>
 <tr class="separator:a6e8d247b2196ac9a21070e5cbf0adf77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac7fb0869763aa70f20e02dc817f3ab"><td class="memItemLeft" align="right" valign="top"><a id="a5ac7fb0869763aa70f20e02dc817f3ab"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>PreMergeEventCallback</b> = <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; void(<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> path, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> rootKey)&gt;</td></tr>
+<tr class="separator:a5ac7fb0869763aa70f20e02dc817f3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bbc4bebec50f37204c07dcb12375368"><td class="memItemLeft" align="right" valign="top"><a id="a6bbc4bebec50f37204c07dcb12375368"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>PostMergeEventCallback</b> = <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; void(<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> path, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> rootKey)&gt;</td></tr>
+<tr class="separator:a6bbc4bebec50f37204c07dcb12375368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c3c13afcdaa5fd3738e3ddbb098f23"><td class="memItemLeft" align="right" valign="top"><a id="a84c3c13afcdaa5fd3738e3ddbb098f23"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>PreMergeEvent</b> = <a class="el" href="class_a_z_1_1_event.html">AZ::Event</a>&lt; <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> &gt;</td></tr>
+<tr class="separator:a84c3c13afcdaa5fd3738e3ddbb098f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a5f132ddb02acc6aa807eef4d744cc"><td class="memItemLeft" align="right" valign="top"><a id="ab4a5f132ddb02acc6aa807eef4d744cc"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>PostMergeEvent</b> = <a class="el" href="class_a_z_1_1_event.html">AZ::Event</a>&lt; <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> &gt;</td></tr>
+<tr class="separator:ab4a5f132ddb02acc6aa807eef4d744cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a71e0a86f13a54355c8320bc099b520"><td class="memItemLeft" align="right" valign="top"><a id="a3a71e0a86f13a54355c8320bc099b520"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>PreMergeEventHandler</b> = typename <a class="el" href="class_a_z_1_1_event_handler.html">PreMergeEvent::Handler</a></td></tr>
+<tr class="separator:a3a71e0a86f13a54355c8320bc099b520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0909a9e1b178402ac38918e0afc83abe"><td class="memItemLeft" align="right" valign="top"><a id="a0909a9e1b178402ac38918e0afc83abe"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>PostMergeEventHandler</b> = typename <a class="el" href="class_a_z_1_1_event_handler.html">PostMergeEvent::Handler</a></td></tr>
+<tr class="separator:a0909a9e1b178402ac38918e0afc83abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06cee7b3f8f67b134c16b0b1a4325c76"><td class="memItemLeft" align="right" valign="top"><a id="a06cee7b3f8f67b134c16b0b1a4325c76"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>VisitorCallback</b> = <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; <a class="el" href="class_a_z_1_1_settings_registry_interface.html#a5945696e175a8981c9983c3cad42dbee">VisitResponse</a>(<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> path, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> valueName, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#a2d2adea113efbc113820337142ed0f48">VisitAction</a> action, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#aa75183be24f262f58ae98105b4d27c43">Type</a> type)&gt;</td></tr>
 <tr class="separator:a06cee7b3f8f67b134c16b0b1a4325c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,10 +153,18 @@ virtual <a class="el" href="class_a_z_1_1_settings_registry_interface.html#aa751
 <tr class="separator:a68d4d0de5721702482a4853a84ecd14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1024a45d21d0b8513ac5c1c5fc97367"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#ad1024a45d21d0b8513ac5c1c5fc97367">Visit</a> (const <a class="el" href="class_a_z_std_1_1function.html">VisitorCallback</a> &amp;callback, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> path) const =0</td></tr>
 <tr class="separator:ad1024a45d21d0b8513ac5c1c5fc97367"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc7fbc0a8ac63ccbc541fc2c24e6685e"><td class="memItemLeft" align="right" valign="top">virtual NotifyEventHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#adc7fbc0a8ac63ccbc541fc2c24e6685e">RegisterNotifier</a> (const <a class="el" href="class_a_z_std_1_1function.html">NotifyCallback</a> &amp;callback)=0</td></tr>
-<tr class="separator:adc7fbc0a8ac63ccbc541fc2c24e6685e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1adbfcc9ce671256227fd3f445253dfe"><td class="memItemLeft" align="right" valign="top">virtual NotifyEventHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#a1adbfcc9ce671256227fd3f445253dfe">RegisterNotifier</a> (<a class="el" href="class_a_z_std_1_1function.html">NotifyCallback</a> &amp;&amp;callback)=0</td></tr>
-<tr class="separator:a1adbfcc9ce671256227fd3f445253dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fed4586d63ca1651d239ec009edd97d"><td class="memItemLeft" align="right" valign="top">virtual NotifyEventHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#a1fed4586d63ca1651d239ec009edd97d">RegisterNotifier</a> (<a class="el" href="class_a_z_std_1_1function.html">NotifyCallback</a> callback)=0</td></tr>
+<tr class="separator:a1fed4586d63ca1651d239ec009edd97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13f73e05118b23bb5531ce07bd6e1dc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#ae13f73e05118b23bb5531ce07bd6e1dc">RegisterNotifier</a> (NotifyEventHandler &amp;handler)=0</td></tr>
+<tr class="separator:ae13f73e05118b23bb5531ce07bd6e1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa26af0d9a79356f44a17397aaa9e1ec"><td class="memItemLeft" align="right" valign="top">virtual PreMergeEventHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#afa26af0d9a79356f44a17397aaa9e1ec">RegisterPreMergeEvent</a> (<a class="el" href="class_a_z_std_1_1function.html">PreMergeEventCallback</a> callback)=0</td></tr>
+<tr class="separator:afa26af0d9a79356f44a17397aaa9e1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb755d6c4db9e5d4a0ec6bfff5b7885f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#abb755d6c4db9e5d4a0ec6bfff5b7885f">RegisterPreMergeEvent</a> (PreMergeEventHandler &amp;handler)=0</td></tr>
+<tr class="separator:abb755d6c4db9e5d4a0ec6bfff5b7885f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7dac6e0caa01241c5ad737f7e0f7b45"><td class="memItemLeft" align="right" valign="top">virtual PostMergeEventHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#aa7dac6e0caa01241c5ad737f7e0f7b45">RegisterPostMergeEvent</a> (<a class="el" href="class_a_z_std_1_1function.html">PostMergeEventCallback</a> callback)=0</td></tr>
+<tr class="separator:aa7dac6e0caa01241c5ad737f7e0f7b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe04f34bb8a820d27ea3e0327d4bc118"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#abe04f34bb8a820d27ea3e0327d4bc118">RegisterPostMergeEvent</a> (PostMergeEventHandler &amp;hanlder)=0</td></tr>
+<tr class="separator:abe04f34bb8a820d27ea3e0327d4bc118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85776272606418fe6440cb273555e2f8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#a85776272606418fe6440cb273555e2f8">Get</a> (bool &amp;result, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> path) const =0</td></tr>
 <tr class="separator:a85776272606418fe6440cb273555e2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa952537e6581b37466fb2af477b0cde1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#aa952537e6581b37466fb2af477b0cde1">Get</a> (s64 &amp;result, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> path) const =0</td></tr>
@@ -176,19 +204,21 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (<a c
 <tr class="separator:a7d5b86a746cb20f471eb916ef8f443b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5640dc710afe198704fb8c2dd09aa884"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#a5640dc710afe198704fb8c2dd09aa884">Remove</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> path)=0</td></tr>
 <tr class="separator:a5640dc710afe198704fb8c2dd09aa884"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af08ec6efe36f3e48d5a00ffee7a37d64"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#af08ec6efe36f3e48d5a00ffee7a37d64">MergeCommandLineArgument</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> argument, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> rootKey=&quot;&quot;, const <a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_command_line_argument_settings.html">CommandLineArgumentSettings</a> &amp;commandLineSettings={})=0</td></tr>
-<tr class="separator:af08ec6efe36f3e48d5a00ffee7a37d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80ae38b5944c0afd3dc126678c62ce85"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#a80ae38b5944c0afd3dc126678c62ce85">MergeSettings</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> data, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#ac48504d2c860c9696d35e37107efd88f">Format</a> format)=0</td></tr>
-<tr class="separator:a80ae38b5944c0afd3dc126678c62ce85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff7426fc771d33c6323aa2cb1916e3f2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#aff7426fc771d33c6323aa2cb1916e3f2">MergeSettingsFile</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> path, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#ac48504d2c860c9696d35e37107efd88f">Format</a> format, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> rootKey=&quot;&quot;, <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; char &gt; *scratchBuffer=nullptr)=0</td></tr>
-<tr class="separator:aff7426fc771d33c6323aa2cb1916e3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a94b17e0ee588c4882980c415036537"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#a6a94b17e0ee588c4882980c415036537">MergeSettingsFolder</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> path, const <a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html">Specializations</a> &amp;specializations, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> platform={}, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> rootKey=&quot;&quot;, <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; char &gt; *scratchBuffer=nullptr)=0</td></tr>
-<tr class="separator:a6a94b17e0ee588c4882980c415036537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5588003c9447b13f7bfdb26b8f983af"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#af5588003c9447b13f7bfdb26b8f983af">MergeCommandLineArgument</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> argument, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> anchorKey=&quot;&quot;, const <a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_command_line_argument_settings.html">CommandLineArgumentSettings</a> &amp;commandLineSettings={})=0</td></tr>
+<tr class="separator:af5588003c9447b13f7bfdb26b8f983af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3fc4b6b78d2ddea774b189c1843e632"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#ae3fc4b6b78d2ddea774b189c1843e632">MergeSettings</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> data, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#ac48504d2c860c9696d35e37107efd88f">Format</a> format, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> anchorKey=&quot;&quot;)=0</td></tr>
+<tr class="separator:ae3fc4b6b78d2ddea774b189c1843e632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d2b7255c47a04447ad728ade3397a7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#ad1d2b7255c47a04447ad728ade3397a7">MergeSettingsFile</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> path, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#ac48504d2c860c9696d35e37107efd88f">Format</a> format, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> anchorKey=&quot;&quot;, <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; char &gt; *scratchBuffer=nullptr)=0</td></tr>
+<tr class="separator:ad1d2b7255c47a04447ad728ade3397a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc3de6271f00e4fbf3ccf7c146320ce"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#adfc3de6271f00e4fbf3ccf7c146320ce">MergeSettingsFolder</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> path, const <a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html">Specializations</a> &amp;specializations, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> platform={}, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> anchorKey=&quot;&quot;, <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; char &gt; *scratchBuffer=nullptr)=0</td></tr>
+<tr class="separator:adfc3de6271f00e4fbf3ccf7c146320ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf51c98f70814b11a2c72615e7e3ec2f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#abf51c98f70814b11a2c72615e7e3ec2f">SetApplyPatchSettings</a> (const <a class="el" href="struct_a_z_1_1_json_apply_patch_settings.html">AZ::JsonApplyPatchSettings</a> &amp;applyPatchSettings)=0</td></tr>
 <tr class="separator:abf51c98f70814b11a2c72615e7e3ec2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a782164bee2c60b2c90442ddb1379ab"><td class="memItemLeft" align="right" valign="top"><a id="a3a782164bee2c60b2c90442ddb1379ab"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetApplyPatchSettings</b> (<a class="el" href="struct_a_z_1_1_json_apply_patch_settings.html">AZ::JsonApplyPatchSettings</a> &amp;applyPatchSettings)=0</td></tr>
 <tr class="separator:a3a782164bee2c60b2c90442ddb1379ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1850a0ad248a920b7e22569170668f1e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#a1850a0ad248a920b7e22569170668f1e">SetUseFileIO</a> (bool useFileIo)=0</td></tr>
+<tr class="separator:a1850a0ad248a920b7e22569170668f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -605,8 +635,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="af08ec6efe36f3e48d5a00ffee7a37d64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af08ec6efe36f3e48d5a00ffee7a37d64">&#9670;&nbsp;</a></span>MergeCommandLineArgument()</h2>
+<a id="af5588003c9447b13f7bfdb26b8f983af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5588003c9447b13f7bfdb26b8f983af">&#9670;&nbsp;</a></span>MergeCommandLineArgument()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -624,7 +654,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td>
-          <td class="paramname"><em>rootKey</em> = <code>&quot;&quot;</code>, </td>
+          <td class="paramname"><em>anchorKey</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -653,7 +683,8 @@ template&lt;typename T &gt; </div>
 <li>Everything else is considered a string. <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">argument</td><td>The command line argument. </td></tr>
-    <tr><td class="paramname">structure</td><td>which contains functors which determine what characters are delimiters </td></tr>
+    <tr><td class="paramname">anchorKey</td><td>The key where the merged command line argument will be anchored under </td></tr>
+    <tr><td class="paramname">commandLineSettings</td><td>structure which contains functors which determine what characters are delimiters </td></tr>
   </table>
   </dd>
 </dl>
@@ -661,12 +692,12 @@ template&lt;typename T &gt; </div>
 </li>
 </ul>
 
-<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#aacadbfbbdeb15789bd9842dd32fcb229">AZ::SettingsRegistryImpl</a>.</p>
+<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#afb24a8eebfb076d94cc999060872ce11">AZ::SettingsRegistryImpl</a>.</p>
 
 </div>
 </div>
-<a id="a80ae38b5944c0afd3dc126678c62ce85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80ae38b5944c0afd3dc126678c62ce85">&#9670;&nbsp;</a></span>MergeSettings()</h2>
+<a id="ae3fc4b6b78d2ddea774b189c1843e632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3fc4b6b78d2ddea774b189c1843e632">&#9670;&nbsp;</a></span>MergeSettings()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -684,7 +715,13 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#ac48504d2c860c9696d35e37107efd88f">Format</a>&#160;</td>
-          <td class="paramname"><em>format</em>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td>
+          <td class="paramname"><em>anchorKey</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -702,17 +739,18 @@ template&lt;typename T &gt; </div>
   <table class="params">
     <tr><td class="paramname">data</td><td>The json data stored in a string. </td></tr>
     <tr><td class="paramname">format</td><td>The format of the provided data. </td></tr>
+    <tr><td class="paramname">anchorKey</td><td>The key where the merged json content will be anchored under. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the data was successfully merged, otherwise false. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#ad49368d1afa6f45b50c99e087b591538">AZ::SettingsRegistryImpl</a>.</p>
+<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a2e160bbe7fdf79c85618ba1a716ed6bf">AZ::SettingsRegistryImpl</a>.</p>
 
 </div>
 </div>
-<a id="aff7426fc771d33c6323aa2cb1916e3f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff7426fc771d33c6323aa2cb1916e3f2">&#9670;&nbsp;</a></span>MergeSettingsFile()</h2>
+<a id="ad1d2b7255c47a04447ad728ade3397a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1d2b7255c47a04447ad728ade3397a7">&#9670;&nbsp;</a></span>MergeSettingsFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -736,7 +774,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td>
-          <td class="paramname"><em>rootKey</em> = <code>&quot;&quot;</code>, </td>
+          <td class="paramname"><em>anchorKey</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -760,19 +798,19 @@ template&lt;typename T &gt; </div>
   <table class="params">
     <tr><td class="paramname">path</td><td>The path to the registry file. </td></tr>
     <tr><td class="paramname">format</td><td>The format of the text data in the file at the provided path. </td></tr>
-    <tr><td class="paramname">rootKey</td><td>The key where the root of the settings file will be stored under. </td></tr>
+    <tr><td class="paramname">anchorKey</td><td>The key where the content of the settings file will be anchored. </td></tr>
     <tr><td class="paramname">scratchBuffer</td><td>An optional buffer that's used to load the file into. Use this when loading multiple patches to reduce the number of intermediate memory allocations. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the registry file was successfully merged, otherwise false. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a6ee680f973dcd8284d48a217700c30ea">AZ::SettingsRegistryImpl</a>.</p>
+<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a07dd4369f65a57262fd30ba2147f2d90">AZ::SettingsRegistryImpl</a>.</p>
 
 </div>
 </div>
-<a id="a6a94b17e0ee588c4882980c415036537"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a94b17e0ee588c4882980c415036537">&#9670;&nbsp;</a></span>MergeSettingsFolder()</h2>
+<a id="adfc3de6271f00e4fbf3ccf7c146320ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfc3de6271f00e4fbf3ccf7c146320ce">&#9670;&nbsp;</a></span>MergeSettingsFolder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -802,7 +840,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td>
-          <td class="paramname"><em>rootKey</em> = <code>&quot;&quot;</code>, </td>
+          <td class="paramname"><em>anchorKey</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -833,6 +871,7 @@ template&lt;typename T &gt; </div>
     <tr><td class="paramname">path</td><td>The path to the registry folder. </td></tr>
     <tr><td class="paramname">specializations</td><td>The specializations that will be used filter out registry files. </td></tr>
     <tr><td class="paramname">platform</td><td>An optional name of a platform. Platform overloads are located at &lt;path&gt;/Platform/&lt;platform&gt;/ Files in a platform are applied in the same order as for the main folder but always after the same file in the main folder. </td></tr>
+    <tr><td class="paramname">anchorKey</td><td>The registry path location where the settings will be anchored </td></tr>
     <tr><td class="paramname">scratchBuffer</td><td>An optional buffer that's used to load the file into. Use this when loading multiple patches to reduce the number of intermediate memory allocations. </td></tr>
   </table>
   </dd>
@@ -841,12 +880,12 @@ template&lt;typename T &gt; </div>
 </li>
 </ul>
 
-<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a7d4d5e0e1d6d24624807ebdb0e7f69c8">AZ::SettingsRegistryImpl</a>.</p>
+<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#aaf15496587cb70efb8120cec22394a75">AZ::SettingsRegistryImpl</a>.</p>
 
 </div>
 </div>
-<a id="adc7fbc0a8ac63ccbc541fc2c24e6685e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc7fbc0a8ac63ccbc541fc2c24e6685e">&#9670;&nbsp;</a></span>RegisterNotifier() <span class="overload">[1/2]</span></h2>
+<a id="a1fed4586d63ca1651d239ec009edd97d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fed4586d63ca1651d239ec009edd97d">&#9670;&nbsp;</a></span>RegisterNotifier() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -857,7 +896,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">virtual NotifyEventHandler AZ::SettingsRegistryInterface::RegisterNotifier </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_a_z_std_1_1function.html">NotifyCallback</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_a_z_std_1_1function.html">NotifyCallback</a>&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
           <td></td>
         </tr>
@@ -868,14 +907,15 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Register a callback that will be called whenever an entry gets a new/updated value. @callback The function to call when an entry gets a new/updated value. </p>
+<p>Register a callback that will be called whenever an entry gets a new/updated value.</p>
+<p>@callback The function to call when an entry gets a new/updated value. </p><dl class="section return"><dt>Returns</dt><dd>NotifyEventHandler instance which must persist to receive event signal </dd></dl>
 
-<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a95cd0c28697a6fd6997b90f80c408b53">AZ::SettingsRegistryImpl</a>.</p>
+<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a5324d39ae73e4fa288e7f60da2f0c102">AZ::SettingsRegistryImpl</a>.</p>
 
 </div>
 </div>
-<a id="a1adbfcc9ce671256227fd3f445253dfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1adbfcc9ce671256227fd3f445253dfe">&#9670;&nbsp;</a></span>RegisterNotifier() <span class="overload">[2/2]</span></h2>
+<a id="ae13f73e05118b23bb5531ce07bd6e1dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae13f73e05118b23bb5531ce07bd6e1dc">&#9670;&nbsp;</a></span>RegisterNotifier() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -884,9 +924,43 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual NotifyEventHandler AZ::SettingsRegistryInterface::RegisterNotifier </td>
+          <td class="memname">virtual void AZ::SettingsRegistryInterface::RegisterNotifier </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_std_1_1function.html">NotifyCallback</a> &amp;&amp;&#160;</td>
+          <td class="paramtype">NotifyEventHandler &amp;&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Register a notify event handler with the NotifyEvent. The handler will be called whenever an entry gets a new/updated value. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>The handler to register with the NotifyEvent. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a22360591d7adb9af3f7af98466eb3911">AZ::SettingsRegistryImpl</a>.</p>
+
+</div>
+</div>
+<a id="aa7dac6e0caa01241c5ad737f7e0f7b45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7dac6e0caa01241c5ad737f7e0f7b45">&#9670;&nbsp;</a></span>RegisterPostMergeEvent() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual PostMergeEventHandler AZ::SettingsRegistryInterface::RegisterPostMergeEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_std_1_1function.html">PostMergeEventCallback</a>&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
           <td></td>
         </tr>
@@ -897,9 +971,118 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Register a callback that will be called whenever an entry gets a new/updated value. @callback The function to call when an entry gets a new/updated value. </p>
+<p>Register a function that will be called after a file is merged. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>The function to call after a file is merged. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PostMergeEventHandler instance which must persist to receive event signal </dd></dl>
 
-<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a2594676cc4c02612fe890a1bbafc22ea">AZ::SettingsRegistryImpl</a>.</p>
+<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a89189c154ba3c50815b7d151559cf934">AZ::SettingsRegistryImpl</a>.</p>
+
+</div>
+</div>
+<a id="abe04f34bb8a820d27ea3e0327d4bc118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe04f34bb8a820d27ea3e0327d4bc118">&#9670;&nbsp;</a></span>RegisterPostMergeEvent() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::SettingsRegistryInterface::RegisterPostMergeEvent </td>
+          <td>(</td>
+          <td class="paramtype">PostMergeEventHandler &amp;&#160;</td>
+          <td class="paramname"><em>hanlder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Register a post-merge hahndler with the PostMergeEvent. The handler will be called after a file is merged. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>The handler to register with the PostmergeEVent. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a7d237a083f19edacd1a3166986e6c3fe">AZ::SettingsRegistryImpl</a>.</p>
+
+</div>
+</div>
+<a id="afa26af0d9a79356f44a17397aaa9e1ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa26af0d9a79356f44a17397aaa9e1ec">&#9670;&nbsp;</a></span>RegisterPreMergeEvent() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual PreMergeEventHandler AZ::SettingsRegistryInterface::RegisterPreMergeEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_std_1_1function.html">PreMergeEventCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Register a function that will be called before a file is merged. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>The function to call before a file is merged. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PreMergeEventHandler instance which must persist to receive event signal </dd></dl>
+
+<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a6c0b8500462566700cf34d2c9617921d">AZ::SettingsRegistryImpl</a>.</p>
+
+</div>
+</div>
+<a id="abb755d6c4db9e5d4a0ec6bfff5b7885f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb755d6c4db9e5d4a0ec6bfff5b7885f">&#9670;&nbsp;</a></span>RegisterPreMergeEvent() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::SettingsRegistryInterface::RegisterPreMergeEvent </td>
+          <td>(</td>
+          <td class="paramtype">PreMergeEventHandler &amp;&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Register a pre-merge handler with the PreMergeEvent. The handler will be called before a file is merged. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>The hanlder to register with the PreMergeEvent. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#aee99e75042513cbfee5f645d1a238aa7">AZ::SettingsRegistryImpl</a>.</p>
 
 </div>
 </div>
@@ -1301,6 +1484,40 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a1850a0ad248a920b7e22569170668f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1850a0ad248a920b7e22569170668f1e">&#9670;&nbsp;</a></span>SetUseFileIO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::SettingsRegistryInterface::SetUseFileIO </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useFileIo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Stores option to indicate whether the FileIOBase instance should be used for file operations </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">useFileIo</td><td>If true the FileIOBase instance will attempted to be used for FileIOBase operations before falling back to use SystemFile </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a9b3998727cedb616dcb29b18258b56cb">AZ::SettingsRegistryImpl</a>.</p>
+
+</div>
+</div>
 <a id="ad1024a45d21d0b8513ac5c1c5fc97367"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad1024a45d21d0b8513ac5c1c5fc97367">&#9670;&nbsp;</a></span>Visit() <span class="overload">[1/2]</span></h2>
 
@@ -1399,7 +1616,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:48 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:18:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -64,8 +64,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aeda0c9d359c43fb25a2a9e3ed03cd078"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb7932a3a76c88348a1aae88018a2260"><td class="memItemLeft" align="right" valign="top"><a id="afb7932a3a76c88348a1aae88018a2260"></a>
 virtual AZ::Aabb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_i_entity_bounds_union.html#afb7932a3a76c88348a1aae88018a2260">GetEntityLocalBoundsUnion</a> (AZ::EntityId entityId) const =0</td></tr>
-<tr class="memdesc:afb7932a3a76c88348a1aae88018a2260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cached union of all component Aabbs. <br /></td></tr>
+<tr class="memdesc:afb7932a3a76c88348a1aae88018a2260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cached union of all component Aabbs in local entity space. <br /></td></tr>
 <tr class="separator:afb7932a3a76c88348a1aae88018a2260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05db7f36d39fcc6aa87c16e87afc102f"><td class="memItemLeft" align="right" valign="top"><a id="a05db7f36d39fcc6aa87c16e87afc102f"></a>
+virtual AZ::Aabb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_i_entity_bounds_union.html#a05db7f36d39fcc6aa87c16e87afc102f">GetEntityWorldBoundsUnion</a> (AZ::EntityId entityId) const =0</td></tr>
+<tr class="memdesc:a05db7f36d39fcc6aa87c16e87afc102f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cached union of all component Aabbs in world space. <br /></td></tr>
+<tr class="separator:a05db7f36d39fcc6aa87c16e87afc102f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6226107879810421c0ff2b6d209b9b92"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_i_entity_bounds_union.html#a6226107879810421c0ff2b6d209b9b92">ProcessEntityBoundsUnionRequests</a> ()=0</td></tr>
 <tr class="separator:a6226107879810421c0ff2b6d209b9b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a000ef43e09dd2c5758a6de3b3d06c11e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_i_entity_bounds_union.html#a000ef43e09dd2c5758a6de3b3d06c11e">OnTransformUpdated</a> (AZ::Entity *entity)=0</td></tr>
@@ -165,7 +169,7 @@ virtual AZ::Aabb&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:22 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:03 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

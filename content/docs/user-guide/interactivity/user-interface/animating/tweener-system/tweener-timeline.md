@@ -1,7 +1,8 @@
 ---
-description: ' Use Scripted Entity Tweener''s timeline abilities to chain animations
-  together and exert fine control over them in Open 3D Engine. '
+linkTitle: Tweener Timeline
+description: ' Use Scripted Entity Tweener''s timeline abilities to chain animations together and exert fine control over them in Open 3D Engine. '
 title: Tweener Timeline
+weight: 500
 ---
 
 In the Scripted Entity Tweener system, you can create a timeline for granular control over your animations. You can chain and group animations. You can pause, resume, seek, play backward, label, and even dynamically control the playback speed of the animations.

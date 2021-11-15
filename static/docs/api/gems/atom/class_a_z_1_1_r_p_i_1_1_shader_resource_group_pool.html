@@ -79,8 +79,8 @@ const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_pool.htm
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:afd3b192e8497c08861f7f00daa2f2104"><td class="memItemLeft" align="right" valign="top">static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_pool.html">ShaderResourceGroupPool</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_pool.html#afd3b192e8497c08861f7f00daa2f2104">FindOrCreate</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a> &gt; &amp;srgAsset)</td></tr>
-<tr class="separator:afd3b192e8497c08861f7f00daa2f2104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5605c24e55d42bd1c352582326f954ac"><td class="memItemLeft" align="right" valign="top">static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_pool.html">ShaderResourceGroupPool</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_pool.html#a5605c24e55d42bd1c352582326f954ac">FindOrCreate</a> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">SupervariantIndex</a> &amp;supervariantIndex, const AZ::Name &amp;srgName)</td></tr>
+<tr class="separator:a5605c24e55d42bd1c352582326f954ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -90,11 +90,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderSystem</b></td
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wraps a RHI <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_pool.html">ShaderResourceGroupPool</a> for use in the RPI to initialize ShaderResourceGroups.</p>
-<p>This class is a bit unusual in that InstanceData objects usually associate with an AssetData class of corresponding type (for example, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> and <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a>). In this case, the <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_pool.html">ShaderResourceGroupPool</a> instance corresponds to a specific <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a>, not a <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a>[Pool]Asset. This is because there is a 1:1 relationship with <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a>'s ShaderResourceGroupLayout and no additional configuration data is needed for the pool.</p>
+<p>This class is a bit unusual in that InstanceData objects usually associate with an AssetData class of corresponding type (for example, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> and <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a>). In this case, the <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_pool.html">ShaderResourceGroupPool</a> instance corresponds to a specific ShaderResourceGroupAsset, not a <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a>[Pool]Asset. This is because there is a 1:1 relationship with ShaderResourceGroupAsset's ShaderResourceGroupLayout and no additional configuration data is needed for the pool.</p>
 <p>User code should not need to access this pool directly; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">RPI::ShaderResourceGroup</a> uses it internally. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="afd3b192e8497c08861f7f00daa2f2104"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd3b192e8497c08861f7f00daa2f2104">&#9670;&nbsp;</a></span>FindOrCreate()</h2>
+<a id="a5605c24e55d42bd1c352582326f954ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5605c24e55d42bd1c352582326f954ac">&#9670;&nbsp;</a></span>FindOrCreate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -105,9 +105,25 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderSystem</b></td
         <tr>
           <td class="memname">static Data::Instance&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_pool.html">ShaderResourceGroupPool</a>&gt; AZ::RPI::ShaderResourceGroupPool::FindOrCreate </td>
           <td>(</td>
-          <td class="paramtype">const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>srgAsset</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>shaderAsset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">SupervariantIndex</a> &amp;&#160;</td>
+          <td class="paramname"><em>supervariantIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Name &amp;&#160;</td>
+          <td class="paramname"><em>srgName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -116,7 +132,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderSystem</b></td
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Instantiates or returns an existing runtime pool for a given <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Instantiates or returns an existing runtime pool for a given <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">shaderResourceGroupPoolAsset</td><td>The asset used to instantiate an instance of the streaming image pool. </td></tr>
   </table>
@@ -131,7 +147,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderSystem</b></td
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:23 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

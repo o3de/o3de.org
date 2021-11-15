@@ -59,6 +59,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a55cd764f79a0027387e9231f4eacde66"><td class="memItemLeft" align="right" valign="top"><a id="a55cd764f79a0027387e9231f4eacde66"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_settings_registry_merge_utils_1_1_config_parser_settings.html#a55cd764f79a0027387e9231f4eacde66">FileReaderClass</a> { <b>UseFileIOIfAvailableFallbackToSystemFile</b>, 
+<b>UseSystemFileOnly</b>, 
+<b>UseFileIOOnly</b>
+ }</td></tr>
+<tr class="memdesc:a55cd764f79a0027387e9231f4eacde66"><td class="mdescLeft">&#160;</td><td class="mdescRight">enumeration to indicate if <a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html" title="The base class for file IO stack classes.">AZ::IO::FileIOBase</a> should be used to open the config file over <a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html">AZ::IO::SystemFile</a> <br /></td></tr>
+<tr class="separator:a55cd764f79a0027387e9231f4eacde66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17be4ab6308e9aceaabf9acf49349fc9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_settings_registry_merge_utils_1_1_config_parser_settings.html#a17be4ab6308e9aceaabf9acf49349fc9">CommentPrefixFunc</a> = <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>(<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> line)&gt;</td></tr>
 <tr class="separator:a17be4ab6308e9aceaabf9acf49349fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66e6fae5495981fd074bf1a6ae6d6f95"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_settings_registry_merge_utils_1_1_config_parser_settings.html#a66e6fae5495981fd074bf1a6ae6d6f95">SectionHeaderFunc</a> = <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>(<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> line)&gt;</td></tr>
@@ -83,6 +89,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a8b3496d2e229589a86d398b9b48c008d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e23edd24a3f81c8ce5f745ef9200c48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_command_line_argument_settings.html">SettingsRegistryInterface::CommandLineArgumentSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_settings_registry_merge_utils_1_1_config_parser_settings.html#a8e23edd24a3f81c8ce5f745ef9200c48">m_commandLineSettings</a></td></tr>
 <tr class="separator:a8e23edd24a3f81c8ce5f745ef9200c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f024c585b2fb48bc29a8230d143b050"><td class="memItemLeft" align="right" valign="top"><a id="a8f024c585b2fb48bc29a8230d143b050"></a>
+<a class="el" href="struct_a_z_1_1_settings_registry_merge_utils_1_1_config_parser_settings.html#a55cd764f79a0027387e9231f4eacde66">FileReaderClass</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileReaderClass</b> = FileReaderClass::UseFileIOIfAvailableFallbackToSystemFile</td></tr>
+<tr class="separator:a8f024c585b2fb48bc29a8230d143b050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Settings structure which is used to determine how to parse Windows INI style config file(.cfg, .ini, etc...) It supports being able to supply a custom comment filter and section header filter The names of section headers are appended to the root Json pointer path member to form new root paths </p>
@@ -184,7 +193,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:51 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:18:30 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

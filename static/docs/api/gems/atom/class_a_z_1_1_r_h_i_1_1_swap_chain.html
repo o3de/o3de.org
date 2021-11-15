@@ -48,6 +48,8 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_r_h_i_1_1_swap_chain-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::RHI::SwapChain Class Reference</div>  </div>
@@ -65,6 +67,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a5bdba00da6ef354623d0d4f961e5ed95"><td class="memItemLeft" align="right" valign="top"><a id="a5bdba00da6ef354623d0d4f961e5ed95"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html">SwapChain</a>, &quot;{888B64A5-D956-406F-9C33-CF6A54FC41B0}&quot;, Object)</td></tr>
+<tr class="separator:a5bdba00da6ef354623d0d4f961e5ed95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36b24fa5008ef172c4adde66b59d24f1"><td class="memItemLeft" align="right" valign="top"><a id="a36b24fa5008ef172c4adde66b59d24f1"></a>
 ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#a36b24fa5008ef172c4adde66b59d24f1">Init</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">RHI::Device</a> &amp;device, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain_descriptor.html">SwapChainDescriptor</a> &amp;descriptor)</td></tr>
 <tr class="memdesc:a36b24fa5008ef172c4adde66b59d24f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the swap chain, making it ready for attachment. <br /></td></tr>
@@ -99,15 +104,20 @@ const AttachmentId &amp;&#160;</td><td class="memItemRight" valign="bottom"><a c
 const <a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain_descriptor.html">RHI::SwapChainDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#a137464090a9ea70567445fcc7eeb6a18">GetDescriptor</a> () const override final</td></tr>
 <tr class="memdesc:a137464090a9ea70567445fcc7eeb6a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the descriptor provided when initializing the swap chain. <br /></td></tr>
 <tr class="separator:a137464090a9ea70567445fcc7eeb6a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a303b3f85ab7d4ba9b52f8b5be19c098a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#a303b3f85ab7d4ba9b52f8b5be19c098a">IsExclusiveFullScreenPreferred</a> () const</td></tr>
+<tr class="memitem:a303b3f85ab7d4ba9b52f8b5be19c098a"><td class="memItemLeft" align="right" valign="top"><a id="a303b3f85ab7d4ba9b52f8b5be19c098a"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#a303b3f85ab7d4ba9b52f8b5be19c098a">IsExclusiveFullScreenPreferred</a> () const</td></tr>
+<tr class="memdesc:a303b3f85ab7d4ba9b52f8b5be19c098a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns True if the swap chain prefers to use exclusive full screen mode. <br /></td></tr>
 <tr class="separator:a303b3f85ab7d4ba9b52f8b5be19c098a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf2f7514c853c23c38f5af06e65fd80b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#acf2f7514c853c23c38f5af06e65fd80b">GetExclusiveFullScreenState</a> () const</td></tr>
+<tr class="memitem:acf2f7514c853c23c38f5af06e65fd80b"><td class="memItemLeft" align="right" valign="top"><a id="acf2f7514c853c23c38f5af06e65fd80b"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#acf2f7514c853c23c38f5af06e65fd80b">GetExclusiveFullScreenState</a> () const</td></tr>
+<tr class="memdesc:acf2f7514c853c23c38f5af06e65fd80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns True if the swap chain prefers exclusive full screen mode and it is currently true, false otherwise. <br /></td></tr>
 <tr class="separator:acf2f7514c853c23c38f5af06e65fd80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada643463dd1a131aec4bcdc3deb0dd58"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#ada643463dd1a131aec4bcdc3deb0dd58">SetExclusiveFullScreenState</a> ([[maybe_unused]]bool fullScreenState)</td></tr>
+<tr class="memitem:ada643463dd1a131aec4bcdc3deb0dd58"><td class="memItemLeft" align="right" valign="top"><a id="ada643463dd1a131aec4bcdc3deb0dd58"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#ada643463dd1a131aec4bcdc3deb0dd58">SetExclusiveFullScreenState</a> ([[maybe_unused]]bool fullScreenState)</td></tr>
+<tr class="memdesc:ada643463dd1a131aec4bcdc3deb0dd58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return True if the swap chain prefers exclusive full screen mode and a transition happened, false otherwise. <br /></td></tr>
 <tr class="separator:ada643463dd1a131aec4bcdc3deb0dd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bdba00da6ef354623d0d4f961e5ed95"><td class="memItemLeft" align="right" valign="top"><a id="a5bdba00da6ef354623d0d4f961e5ed95"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html">SwapChain</a>, &quot;{888B64A5-D956-406F-9C33-CF6A54FC41B0}&quot;, Object)</td></tr>
-<tr class="separator:a5bdba00da6ef354623d0d4f961e5ed95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f40fac6d10a31232e4465e6f0fb86c5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#a4f40fac6d10a31232e4465e6f0fb86c5">ProcessRecreation</a> ()</td></tr>
+<tr class="separator:a4f40fac6d10a31232e4465e6f0fb86c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_r_h_i_1_1_image_pool_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_h_i_1_1_image_pool_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_image_pool_base.html">AZ::RHI::ImagePoolBase</a></td></tr>
 <tr class="memitem:a83995ab2c813b1feaaccca9a5f4b15b9 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_image_pool_base"><td class="memItemLeft" align="right" valign="top"><a id="a83995ab2c813b1feaaccca9a5f4b15b9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_image_pool_base.html">ImagePoolBase</a>, &quot;{6353E390-C5D2-42FF-8AA9-9AFCD1F2F1B5}&quot;, ResourcePool)</td></tr>
@@ -165,13 +175,16 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a3974b3af221310b51746ee2b193b57e8 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memItemLeft" align="right" valign="top">const Name &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html#a3974b3af221310b51746ee2b193b57e8">GetName</a> () const</td></tr>
 <tr class="separator:a3974b3af221310b51746ee2b193b57e8 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html">AZ::RHI::ResourcePool</a></td></tr>
-<tr class="memitem:afb820b68e4930670d9fbfbf8e0ce86d8 inherit pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="memItemLeft" align="right" valign="top"><a id="afb820b68e4930670d9fbfbf8e0ce86d8"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html#afb820b68e4930670d9fbfbf8e0ce86d8">PlatformMethod</a> = AZStd::function&lt; RHI::ResultCode()&gt;</td></tr>
-<tr class="memdesc:afb820b68e4930670d9fbfbf8e0ce86d8 inherit pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple functor that returns a result code. <br /></td></tr>
-<tr class="separator:afb820b68e4930670d9fbfbf8e0ce86d8 inherit pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a500a8a571def0802d796549c75caab77"><td class="memItemLeft" align="right" valign="top"><a id="a500a8a571def0802d796549c75caab77"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#a500a8a571def0802d796549c75caab77">ShutdownImages</a> ()</td></tr>
+<tr class="memdesc:a500a8a571def0802d796549c75caab77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown and clear all the images. <br /></td></tr>
+<tr class="separator:a500a8a571def0802d796549c75caab77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35d4b847bee72d8071f1df5b2cd9ac4"><td class="memItemLeft" align="right" valign="top"><a id="ab35d4b847bee72d8071f1df5b2cd9ac4"></a>
+ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#ab35d4b847bee72d8071f1df5b2cd9ac4">InitImages</a> ()</td></tr>
+<tr class="memdesc:ab35d4b847bee72d8071f1df5b2cd9ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialized all the images. <br /></td></tr>
+<tr class="separator:ab35d4b847bee72d8071f1df5b2cd9ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_a_z_1_1_r_h_i_1_1_image_pool_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_h_i_1_1_image_pool_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_image_pool_base.html">AZ::RHI::ImagePoolBase</a></td></tr>
 <tr class="memitem:a1bdcf73c2a2f92b772514d151206bb51 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_image_pool_base"><td class="memItemLeft" align="right" valign="top"><a id="a1bdcf73c2a2f92b772514d151206bb51"></a>
 ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>InitImage</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_image.html">Image</a> *image, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_descriptor.html">ImageDescriptor</a> &amp;descriptor, <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html#afb820b68e4930670d9fbfbf8e0ce86d8">PlatformMethod</a> platformInitResourceMethod)</td></tr>
@@ -210,40 +223,29 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_object.html#a80ab91a69f8f962f519c29f6529cac51">Init</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">Device</a> &amp;device)</td></tr>
 <tr class="memdesc:a80ab91a69f8f962f519c29f6529cac51 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_device_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">The derived class should call this method to assign the device. <br /></td></tr>
 <tr class="separator:a80ab91a69f8f962f519c29f6529cac51 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:afb9db5b7215b9017a9e0d2bfa619ff00"><td class="memItemLeft" align="right" valign="top"><a id="afb9db5b7215b9017a9e0d2bfa619ff00"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#afb9db5b7215b9017a9e0d2bfa619ff00">m_pendingRecreation</a> = false</td></tr>
+<tr class="memdesc:afb9db5b7215b9017a9e0d2bfa619ff00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag indicating if swapchain recreation is needed at the end of the frame. <br /></td></tr>
+<tr class="separator:afb9db5b7215b9017a9e0d2bfa619ff00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_a_z_1_1_r_h_i_1_1_resource_pool"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_r_h_i_1_1_resource_pool')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html">AZ::RHI::ResourcePool</a></td></tr>
 <tr class="memitem:a3181366eaa57c5f71850feb2b67bfd2c inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_pool_memory_usage.html">PoolMemoryUsage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html#a3181366eaa57c5f71850feb2b67bfd2c">m_memoryUsage</a></td></tr>
 <tr class="separator:a3181366eaa57c5f71850feb2b67bfd2c inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html">AZ::RHI::ResourcePool</a></td></tr>
+<tr class="memitem:afb820b68e4930670d9fbfbf8e0ce86d8 inherit pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="memItemLeft" align="right" valign="top"><a id="afb820b68e4930670d9fbfbf8e0ce86d8"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html#afb820b68e4930670d9fbfbf8e0ce86d8">PlatformMethod</a> = AZStd::function&lt; RHI::ResultCode()&gt;</td></tr>
+<tr class="memdesc:afb820b68e4930670d9fbfbf8e0ce86d8 inherit pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple functor that returns a result code. <br /></td></tr>
+<tr class="separator:afb820b68e4930670d9fbfbf8e0ce86d8 inherit pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The platform-independent swap chain base class. Swap chains contain a "chain" of images which map to a platform-specific window, displayed on a physical monitor. The user is allowed to adjust the swap chain outside of the current <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_scheduler.html">FrameScheduler</a> frame. Doing so within a frame scheduler frame results in undefined behavior.</p>
 <p>The frame scheduler controls presentation of the swap chain. The user may attach a swap chain to a scope in order to render to the current image. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="acf2f7514c853c23c38f5af06e65fd80b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf2f7514c853c23c38f5af06e65fd80b">&#9670;&nbsp;</a></span>GetExclusiveFullScreenState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool AZ::RHI::SwapChain::GetExclusiveFullScreenState </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>True if the swap chain prefers exclusive full screen mode and it is currently true, false otherwise. </dd></dl>
-
-</div>
-</div>
 <a id="adaeabc441e8e422a7aa5f116c24d8012"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adaeabc441e8e422a7aa5f116c24d8012">&#9670;&nbsp;</a></span>GetImage()</h2>
 
@@ -263,8 +265,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a303b3f85ab7d4ba9b52f8b5be19c098a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a303b3f85ab7d4ba9b52f8b5be19c098a">&#9670;&nbsp;</a></span>IsExclusiveFullScreenPreferred()</h2>
+<a id="a4f40fac6d10a31232e4465e6f0fb86c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f40fac6d10a31232e4465e6f0fb86c5">&#9670;&nbsp;</a></span>ProcessRecreation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,10 +275,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool AZ::RHI::SwapChain::IsExclusiveFullScreenPreferred </td>
+          <td class="memname">virtual void AZ::RHI::SwapChain::ProcessRecreation </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -285,7 +287,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>True if the swap chain prefers to use exclusive full screen mode. </dd></dl>
+<p>Recreate the swapchain if it becomes invalid during presenting. This should happen at the end of the frame due to images being used as attachments in the frame graph. </p>
 
 </div>
 </div>
@@ -305,33 +307,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 <p>Resizes the display resolution of the swap chain. Ideally, this matches the platform window resolution. Typically, the resize operation will occur in reaction to a platform window size change. Takes effect immediately and results in a GPU pipeline flush. </p>
-
-</div>
-</div>
-<a id="ada643463dd1a131aec4bcdc3deb0dd58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada643463dd1a131aec4bcdc3deb0dd58">&#9670;&nbsp;</a></span>SetExclusiveFullScreenState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool AZ::RHI::SwapChain::SetExclusiveFullScreenState </td>
-          <td>(</td>
-          <td class="paramtype">[[maybe_unused] ]bool&#160;</td>
-          <td class="paramname"><em>fullScreenState</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>True if the swap chain prefers exclusive full screen mode and a transition happened, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -361,7 +336,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:21 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:16 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

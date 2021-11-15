@@ -55,25 +55,25 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Base class for derived immediate and retained action dispatchers.  
+<p>Base class for derived immediate action dispatchers.  
  <a href="class_az_manipulator_test_framework_1_1_action_dispatcher.html#details">More...</a></p>
 
 <p><code>#include &lt;ActionDispatcher.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0bc0b096c44462549558d39578335f9f"><td class="memItemLeft" align="right" valign="top"><a id="a0bc0b096c44462549558d39578335f9f"></a>
-DerivedDispatcherT *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_manipulator_test_framework_1_1_action_dispatcher.html#a0bc0b096c44462549558d39578335f9f">EnableSnapToGrid</a> ()</td></tr>
-<tr class="memdesc:a0bc0b096c44462549558d39578335f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable grid snapping. <br /></td></tr>
-<tr class="separator:a0bc0b096c44462549558d39578335f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d85de301e4d5e38cd44503571f6ed1c"><td class="memItemLeft" align="right" valign="top"><a id="a2d85de301e4d5e38cd44503571f6ed1c"></a>
-DerivedDispatcherT *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_manipulator_test_framework_1_1_action_dispatcher.html#a2d85de301e4d5e38cd44503571f6ed1c">DisableSnapToGrid</a> ()</td></tr>
-<tr class="memdesc:a2d85de301e4d5e38cd44503571f6ed1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable grid snapping. <br /></td></tr>
-<tr class="separator:a2d85de301e4d5e38cd44503571f6ed1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174ef31e822babf92b9c6d05edc58d10"><td class="memItemLeft" align="right" valign="top"><a id="a174ef31e822babf92b9c6d05edc58d10"></a>
+DerivedDispatcherT *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_manipulator_test_framework_1_1_action_dispatcher.html#a174ef31e822babf92b9c6d05edc58d10">SetSnapToGrid</a> (bool enabled)</td></tr>
+<tr class="memdesc:a174ef31e822babf92b9c6d05edc58d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable grid snapping. <br /></td></tr>
+<tr class="separator:a174ef31e822babf92b9c6d05edc58d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93b5c2a0b8ea2e509140d12170e61f0f"><td class="memItemLeft" align="right" valign="top"><a id="a93b5c2a0b8ea2e509140d12170e61f0f"></a>
 DerivedDispatcherT *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_manipulator_test_framework_1_1_action_dispatcher.html#a93b5c2a0b8ea2e509140d12170e61f0f">GridSize</a> (float size)</td></tr>
 <tr class="memdesc:a93b5c2a0b8ea2e509140d12170e61f0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the grid size. <br /></td></tr>
 <tr class="separator:a93b5c2a0b8ea2e509140d12170e61f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae349b691821f4cfcb6d9c411e3428082"><td class="memItemLeft" align="right" valign="top"><a id="ae349b691821f4cfcb6d9c411e3428082"></a>
+DerivedDispatcherT *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_manipulator_test_framework_1_1_action_dispatcher.html#ae349b691821f4cfcb6d9c411e3428082">SetStickySelect</a> (bool enabled)</td></tr>
+<tr class="memdesc:ae349b691821f4cfcb6d9c411e3428082"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable sticky select. <br /></td></tr>
+<tr class="separator:ae349b691821f4cfcb6d9c411e3428082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2d0c8386c46039cd320f15f48de307b"><td class="memItemLeft" align="right" valign="top"><a id="ae2d0c8386c46039cd320f15f48de307b"></a>
 DerivedDispatcherT *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_manipulator_test_framework_1_1_action_dispatcher.html#ae2d0c8386c46039cd320f15f48de307b">LogActions</a> (bool logging)</td></tr>
 <tr class="memdesc:ae2d0c8386c46039cd320f15f48de307b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable action logging. <br /></td></tr>
@@ -95,6 +95,10 @@ DerivedDispatcherT *&#160;</td><td class="memItemRight" valign="bottom"><a class
 DerivedDispatcherT *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_manipulator_test_framework_1_1_action_dispatcher.html#a90848c3e7de84f8e525eaff6c5746e7f">MouseLButtonUp</a> ()</td></tr>
 <tr class="memdesc:a90848c3e7de84f8e525eaff6c5746e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the left mouse button up. <br /></td></tr>
 <tr class="separator:a90848c3e7de84f8e525eaff6c5746e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877b35cf7ca0c0c8f32d6decf16a30e3"><td class="memItemLeft" align="right" valign="top"><a id="a877b35cf7ca0c0c8f32d6decf16a30e3"></a>
+DerivedDispatcherT *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_manipulator_test_framework_1_1_action_dispatcher.html#a877b35cf7ca0c0c8f32d6decf16a30e3">MouseLButtonDoubleClick</a> ()</td></tr>
+<tr class="memdesc:a877b35cf7ca0c0c8f32d6decf16a30e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a double click event. <br /></td></tr>
+<tr class="separator:a877b35cf7ca0c0c8f32d6decf16a30e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57ca8dd22cf44595911c8e189fe7039c"><td class="memItemLeft" align="right" valign="top"><a id="a57ca8dd22cf44595911c8e189fe7039c"></a>
 DerivedDispatcherT *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_manipulator_test_framework_1_1_action_dispatcher.html#a57ca8dd22cf44595911c8e189fe7039c">KeyboardModifierDown</a> (const AzToolsFramework::ViewportInteraction::KeyboardModifier &amp;keyModifier)</td></tr>
 <tr class="memdesc:a57ca8dd22cf44595911c8e189fe7039c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the keyboard modifier button down. <br /></td></tr>
@@ -143,12 +147,12 @@ template&lt;typename ComponentT &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a90d913a17094fe02da918bedf4fe0cfc"><td class="memItemLeft" align="right" valign="top"><a id="a90d913a17094fe02da918bedf4fe0cfc"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>EnableSnapToGridImpl</b> ()=0</td></tr>
-<tr class="separator:a90d913a17094fe02da918bedf4fe0cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48a2abf3547293f289e501d083cc037c"><td class="memItemLeft" align="right" valign="top"><a id="a48a2abf3547293f289e501d083cc037c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSnapToGridImpl</b> ()=0</td></tr>
-<tr class="separator:a48a2abf3547293f289e501d083cc037c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a28d6eecc7cc04f93d14e915289876"><td class="memItemLeft" align="right" valign="top"><a id="a37a28d6eecc7cc04f93d14e915289876"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSnapToGridImpl</b> (bool enabled)=0</td></tr>
+<tr class="separator:a37a28d6eecc7cc04f93d14e915289876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5918c15060892f287d0b907b9d8fa85"><td class="memItemLeft" align="right" valign="top"><a id="ad5918c15060892f287d0b907b9d8fa85"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStickySelectImpl</b> (bool enabled)=0</td></tr>
+<tr class="separator:ad5918c15060892f287d0b907b9d8fa85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a226e4e1d02e4c305d513afdd3a1452ff"><td class="memItemLeft" align="right" valign="top"><a id="a226e4e1d02e4c305d513afdd3a1452ff"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GridSizeImpl</b> (float size)=0</td></tr>
 <tr class="separator:a226e4e1d02e4c305d513afdd3a1452ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +165,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>MouseLButtonD
 <tr class="memitem:af6952d1febd25e9c2d70bc7e9d00d564"><td class="memItemLeft" align="right" valign="top"><a id="af6952d1febd25e9c2d70bc7e9d00d564"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>MouseLButtonUpImpl</b> ()=0</td></tr>
 <tr class="separator:af6952d1febd25e9c2d70bc7e9d00d564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d052ccb65ff74e3c747fc2f463b311f"><td class="memItemLeft" align="right" valign="top"><a id="a9d052ccb65ff74e3c747fc2f463b311f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>MouseLButtonDoubleClickImpl</b> ()=0</td></tr>
+<tr class="separator:a9d052ccb65ff74e3c747fc2f463b311f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09b338a8f53d5ab34c2feee4a13062d5"><td class="memItemLeft" align="right" valign="top"><a id="a09b338a8f53d5ab34c2feee4a13062d5"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>MousePositionImpl</b> (const AzFramework::ScreenPoint &amp;position)=0</td></tr>
 <tr class="separator:a09b338a8f53d5ab34c2feee4a13062d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,14 +210,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_logging</b> = false
 <div class="textblock"><h3>template&lt;typename DerivedDispatcherT&gt;<br />
 class AzManipulatorTestFramework::ActionDispatcher&lt; DerivedDispatcherT &gt;</h3>
 
-<p>Base class for derived immediate and retained action dispatchers. </p>
+<p>Base class for derived immediate action dispatchers. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzManipulatorTestFramework/Include/AzManipulatorTestFramework/ActionDispatcher.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:27 for Open 3D Engine AzManipulatorTestFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:09 for Open 3D Engine AzManipulatorTestFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

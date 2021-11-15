@@ -77,10 +77,10 @@ Static Public Member Functions</h2></td></tr>
 static <a class="el" href="class_a_z_1_1_render_1_1_im_gui_active_context_scope.html">ImGuiActiveContextScope</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_im_gui_active_context_scope.html#a348b7969f44d1c898b2ae462557a1c2e">FromDefaultPass</a> ()</td></tr>
 <tr class="memdesc:a348b7969f44d1c898b2ae462557a1c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the active context based on the current default ImGui pass. If no default ImGui pass is set, then do nothing. <br /></td></tr>
 <tr class="separator:a348b7969f44d1c898b2ae462557a1c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5f4399d521c89e80c5836d50a023997"><td class="memItemLeft" align="right" valign="top"><a id="ab5f4399d521c89e80c5836d50a023997"></a>
-static <a class="el" href="class_a_z_1_1_render_1_1_im_gui_active_context_scope.html">ImGuiActiveContextScope</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_im_gui_active_context_scope.html#ab5f4399d521c89e80c5836d50a023997">FromPass</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_hierarchy_filter.html">RPI::PassHierarchyFilter</a> &amp;passHierarchyFilter)</td></tr>
-<tr class="memdesc:ab5f4399d521c89e80c5836d50a023997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the active context based on the provided PassHierarchyFilter. If the filter doesn't match exactly one pass, then do nothing. <br /></td></tr>
-<tr class="separator:ab5f4399d521c89e80c5836d50a023997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace128d240418bd2565e2c813de055786"><td class="memItemLeft" align="right" valign="top"><a id="ace128d240418bd2565e2c813de055786"></a>
+static <a class="el" href="class_a_z_1_1_render_1_1_im_gui_active_context_scope.html">ImGuiActiveContextScope</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_im_gui_active_context_scope.html#ace128d240418bd2565e2c813de055786">FromPass</a> (const AZStd::vector&lt; AZStd::string &gt; &amp;passHierarchy)</td></tr>
+<tr class="memdesc:ace128d240418bd2565e2c813de055786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the active context based on the provided pass hierarchy filter. If the filter doesn't match exactly one pass, then do nothing. <br /></td></tr>
+<tr class="separator:ace128d240418bd2565e2c813de055786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class handles pushing a new context onto the active context stack, enabling it, then popping it from the stack when it's deleted. It's useful to make sure a specific context is set in some scope, and that the previous context is restored once that scope ends. </p>
@@ -90,7 +90,7 @@ static <a class="el" href="class_a_z_1_1_render_1_1_im_gui_active_context_scope.
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:13 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

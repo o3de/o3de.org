@@ -46,6 +46,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_data-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -55,6 +56,33 @@ $(function() {
 
 <p><code>#include &lt;ShaderResourceGroupData.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:abf93e63d8fa2114c794e065c7399f4b2"><td class="memItemLeft" align="right" valign="top"><a id="abf93e63d8fa2114c794e065c7399f4b2"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ResourceType</b> : uint32_t { <br />
+&#160;&#160;<b>ConstantData</b>, 
+<b>BufferView</b>, 
+<b>ImageView</b>, 
+<b>BufferViewUnboundedArray</b>, 
+<br />
+&#160;&#160;<b>ImageViewUnboundedArray</b>, 
+<b>Sampler</b>, 
+<b>Count</b>
+<br />
+ }</td></tr>
+<tr class="separator:abf93e63d8fa2114c794e065c7399f4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3104a96b63ee46b1f1416c0c73bff402"><td class="memItemLeft" align="right" valign="top"><a id="a3104a96b63ee46b1f1416c0c73bff402"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ResourceTypeMask</b> : uint32_t { <br />
+&#160;&#160;<b>None</b> = 0, 
+<b>ConstantDataMask</b> = AZ_BIT(static_cast&lt;uint32_t&gt;(ResourceType::ConstantData)), 
+<b>BufferViewMask</b> = AZ_BIT(static_cast&lt;uint32_t&gt;(ResourceType::BufferView)), 
+<b>ImageViewMask</b> = AZ_BIT(static_cast&lt;uint32_t&gt;(ResourceType::ImageView)), 
+<br />
+&#160;&#160;<b>BufferViewUnboundedArrayMask</b> = AZ_BIT(static_cast&lt;uint32_t&gt;(ResourceType::BufferViewUnboundedArray)), 
+<b>ImageViewUnboundedArrayMask</b> = AZ_BIT(static_cast&lt;uint32_t&gt;(ResourceType::ImageViewUnboundedArray)), 
+<b>SamplerMask</b> = AZ_BIT(static_cast&lt;uint32_t&gt;(ResourceType::Sampler))
+<br />
+ }</td></tr>
+<tr class="separator:a3104a96b63ee46b1f1416c0c73bff402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2515081ae4e39dfabca45af690e36b61"><td class="memItemLeft" align="right" valign="top"><a id="a2515081ae4e39dfabca45af690e36b61"></a>
@@ -204,12 +232,32 @@ AZStd::array_view&lt; ConstPtr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_b
 <tr class="memitem:a6c4808ff692a773ed9f2799cd141e52a"><td class="memItemLeft" align="right" valign="top"><a id="a6c4808ff692a773ed9f2799cd141e52a"></a>
 AZStd::array_view&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_sampler_state.html">SamplerState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSamplerGroup</b> () const</td></tr>
 <tr class="separator:a6c4808ff692a773ed9f2799cd141e52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adef8019144a236fae2b4838576a4db45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#adef8019144a236fae2b4838576a4db45">ResetViews</a> ()</td></tr>
+<tr class="separator:adef8019144a236fae2b4838576a4db45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21a788c7be036eb0d2caaeb551209e0f"><td class="memItemLeft" align="right" valign="top">AZStd::array_view&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#a21a788c7be036eb0d2caaeb551209e0f">GetConstantData</a> () const</td></tr>
 <tr class="separator:a21a788c7be036eb0d2caaeb551209e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8ded674e50e1cecf809972393c1df8"><td class="memItemLeft" align="right" valign="top"><a id="a4b8ded674e50e1cecf809972393c1df8"></a>
+const <a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html">ConstantsData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#a4b8ded674e50e1cecf809972393c1df8">GetConstantsData</a> () const</td></tr>
+<tr class="memdesc:a4b8ded674e50e1cecf809972393c1df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the underlying <a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html">ConstantsData</a> struct. <br /></td></tr>
+<tr class="separator:a4b8ded674e50e1cecf809972393c1df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3bcd5f5923fef03b1200b62e89a9d42"><td class="memItemLeft" align="right" valign="top"><a id="ac3bcd5f5923fef03b1200b62e89a9d42"></a>
 const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">ShaderResourceGroupLayout</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#ac3bcd5f5923fef03b1200b62e89a9d42">GetLayout</a> () const</td></tr>
 <tr class="memdesc:ac3bcd5f5923fef03b1200b62e89a9d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the shader resource layout for this group. <br /></td></tr>
 <tr class="separator:ac3bcd5f5923fef03b1200b62e89a9d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a90757ffa7b9f2280b03fa5291e5348"><td class="memItemLeft" align="right" valign="top"><a id="a5a90757ffa7b9f2280b03fa5291e5348"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#a5a90757ffa7b9f2280b03fa5291e5348">IsResourceTypeEnabledForCompilation</a> (uint32_t resourceTypeMask) const</td></tr>
+<tr class="memdesc:a5a90757ffa7b9f2280b03fa5291e5348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a resource type specified by resourceTypeMask is enabled for compilation. <br /></td></tr>
+<tr class="separator:a5a90757ffa7b9f2280b03fa5291e5348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e30f2978a9b51af386f79684f784be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#ab4e30f2978a9b51af386f79684f784be">DisableCompilationForAllResourceTypes</a> ()</td></tr>
+<tr class="separator:ab4e30f2978a9b51af386f79684f784be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aa279c95856882d4e38ff3b678f6b00"><td class="memItemLeft" align="right" valign="top"><a id="a4aa279c95856882d4e38ff3b678f6b00"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#a4aa279c95856882d4e38ff3b678f6b00">IsAnyResourceTypeUpdated</a> () const</td></tr>
+<tr class="memdesc:a4aa279c95856882d4e38ff3b678f6b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if any of the resource type has been enabled for compilation. <br /></td></tr>
+<tr class="separator:a4aa279c95856882d4e38ff3b678f6b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34d3dc9b365e58c3f4295a90e89cea0"><td class="memItemLeft" align="right" valign="top"><a id="ad34d3dc9b365e58c3f4295a90e89cea0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#ad34d3dc9b365e58c3f4295a90e89cea0">EnableResourceTypeCompilation</a> (ResourceTypeMask resourceTypeMask, ResourceType resourceType)</td></tr>
+<tr class="memdesc:ad34d3dc9b365e58c3f4295a90e89cea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable compilation for a resourceType specified by resourceType/resourceTypeMask. <br /></td></tr>
+<tr class="separator:ad34d3dc9b365e58c3f4295a90e89cea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a155c13de5cbb6fe0fa917589de360a89"><td class="memTemplParams" colspan="2"><a id="a155c13de5cbb6fe0fa917589de360a89"></a>
 template&lt;typename TShaderInput , typename TShaderInputDescriptor &gt; </td></tr>
 <tr class="memitem:a155c13de5cbb6fe0fa917589de360a89"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ValidateImageViewAccess</b> (TShaderInput inputIndex, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_image_view.html">ImageView</a> *imageView, [[maybe_unused]] uint32_t arrayIndex) const</td></tr>
@@ -226,6 +274,24 @@ template&lt;typename TShaderInput , typename TShaderInputDescriptor &gt; </td></
 <p>NOTE [Performance Warning]: This data structure allocates memory. If compiling several SRG's in a batch, prefer to share the data between them (i.e. within a single job).</p>
 <p>NOTE [SRG Constants]: The <a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html">ConstantsData</a> class is used for efficiently setting/getting the constants values of the SRG. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab4e30f2978a9b51af386f79684f784be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4e30f2978a9b51af386f79684f784be">&#9670;&nbsp;</a></span>DisableCompilationForAllResourceTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RHI::ShaderResourceGroupData::DisableCompilationForAllResourceTypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Disables all resource types for compilation after m_updateMaskResetLatency number of compiles This allows higher level code to ensure that if SRG is multi-buffered it can compile multiple times in order to ensure all SRG buffers are updated. </p>
+
+</div>
+</div>
 <a id="af9a98212e26c8937b49ea170acb6df70"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9a98212e26c8937b49ea170acb6df70">&#9670;&nbsp;</a></span>FindShaderInputBufferIndex()</h2>
 
@@ -358,6 +424,24 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="adef8019144a236fae2b4838576a4db45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adef8019144a236fae2b4838576a4db45">&#9670;&nbsp;</a></span>ResetViews()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RHI::ShaderResourceGroupData::ResetViews </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reset image and buffer views setup for this <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html">ShaderResourceGroupData</a> So it won't hold references for any RHI resources </p>
+
+</div>
+</div>
 <a id="a58c8a1270cfe6b622fdb824046817bd8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58c8a1270cfe6b622fdb824046817bd8">&#9670;&nbsp;</a></span>SetConstantData()</h2>
 
@@ -394,7 +478,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:21 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:16 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

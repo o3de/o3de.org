@@ -95,8 +95,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3b114c42750dd1c6afed11bcf5a60756"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a962021d19f08b7d04ffa9b3dcb351df0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a962021d19f08b7d04ffa9b3dcb351df0">WasPacketAcked</a> (ConnectionId connectionId, PacketId packetId) override</td></tr>
 <tr class="separator:a962021d19f08b7d04ffa9b3dcb351df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05602455af67d30adca7f8f7defbb70"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#ad05602455af67d30adca7f8f7defbb70">StopListening</a> () override</td></tr>
+<tr class="separator:ad05602455af67d30adca7f8f7defbb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06c314ac0ef88dced460596eecebe7f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a06c314ac0ef88dced460596eecebe7f0">Disconnect</a> (ConnectionId connectionId, DisconnectReason reason) override</td></tr>
 <tr class="separator:a06c314ac0ef88dced460596eecebe7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad85278b43a6672d34070103ca66177"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a4ad85278b43a6672d34070103ca66177">SetTimeoutMs</a> (AZ::TimeMs timeoutMs) override</td></tr>
+<tr class="separator:a4ad85278b43a6672d34070103ca66177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdab58b0a002ed979daa82d0ff7444c5"><td class="memItemLeft" align="right" valign="top">AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#acdab58b0a002ed979daa82d0ff7444c5">GetTimeoutMs</a> () const override</td></tr>
+<tr class="separator:acdab58b0a002ed979daa82d0ff7444c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_az_networking_1_1_i_network_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_az_networking_1_1_i_network_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_az_networking_1_1_i_network_interface.html">AzNetworking::INetworkInterface</a></td></tr>
 <tr class="memitem:abde6ec41f5dad0462ddf280bc9f4edfa inherit pub_methods_class_az_networking_1_1_i_network_interface"><td class="memItemLeft" align="right" valign="top"><a id="abde6ec41f5dad0462ddf280bc9f4edfa"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_networking_1_1_i_network_interface.html">INetworkInterface</a>, &quot;{ECDA6FA2-4AA0-435E-881F-214C4B179A31}&quot;)</td></tr>
@@ -385,6 +391,34 @@ Encryption</h3>
 
 </div>
 </div>
+<a id="acdab58b0a002ed979daa82d0ff7444c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdab58b0a002ed979daa82d0ff7444c5">&#9670;&nbsp;</a></span>GetTimeoutMs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ::TimeMs AzNetworking::UdpNetworkInterface::GetTimeoutMs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieves the timeout time in milliseconds for this network interface, 0 ms means timeouts are disabled. </p><dl class="section return"><dt>Returns</dt><dd>the timeout time in milliseconds for this network interface, 0 ms means timeouts are disabled </dd></dl>
+
+<p>Implements <a class="el" href="class_az_networking_1_1_i_network_interface.html#a2c7a84c5b3b75a0b2464dcca12b0e947">AzNetworking::INetworkInterface</a>.</p>
+
+</div>
+</div>
 <a id="affd446250d821c8aa9984270d30c8fb8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#affd446250d821c8aa9984270d30c8fb8">&#9670;&nbsp;</a></span>GetTrustZone()</h2>
 
@@ -604,6 +638,68 @@ Encryption</h3>
 
 </div>
 </div>
+<a id="a4ad85278b43a6672d34070103ca66177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad85278b43a6672d34070103ca66177">&#9670;&nbsp;</a></span>SetTimeoutMs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzNetworking::UdpNetworkInterface::SetTimeoutMs </td>
+          <td>(</td>
+          <td class="paramtype">AZ::TimeMs&#160;</td>
+          <td class="paramname"><em>timeoutMs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the timeout time in milliseconds, 0 ms means timeouts are disabled. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeoutMs</td><td>the number of milliseconds with no traffic before we timeout and close a connection </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_az_networking_1_1_i_network_interface.html#a4b5044d417201bec1131d5aceca3a6e1">AzNetworking::INetworkInterface</a>.</p>
+
+</div>
+</div>
+<a id="ad05602455af67d30adca7f8f7defbb70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad05602455af67d30adca7f8f7defbb70">&#9670;&nbsp;</a></span>StopListening()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzNetworking::UdpNetworkInterface::StopListening </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Closes the network interface to stop accepting new incoming connections. </p><dl class="section return"><dt>Returns</dt><dd>boolean true if the operation was successful, false if it failed </dd></dl>
+
+<p>Implements <a class="el" href="class_az_networking_1_1_i_network_interface.html#ad9d4e7c08b5a2ceada8a165691a76d25">AzNetworking::INetworkInterface</a>.</p>
+
+</div>
+</div>
 <a id="ae7cb42cedb625a3b43936f035e7843cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7cb42cedb625a3b43936f035e7843cd">&#9670;&nbsp;</a></span>Update()</h2>
 
@@ -690,7 +786,7 @@ Encryption</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:28 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:11 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

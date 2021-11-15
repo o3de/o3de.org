@@ -71,10 +71,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:ad15de2027b14a1120b90f8a3eca8a76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1727535f517b8c8792178fd554b2f234"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_handshake.html#a1727535f517b8c8792178fd554b2f234">OnConfirmAck</a> (<a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> id, <a class="el" href="class_grid_mate_1_1_read_buffer.html">ReadBuffer</a> &amp;rb)=0</td></tr>
 <tr class="separator:a1727535f517b8c8792178fd554b2f234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1d172d349d74cf83a75ddff1fd2a49b"><td class="memItemLeft" align="right" valign="top"><a id="ae1d172d349d74cf83a75ddff1fd2a49b"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_handshake.html#ae1d172d349d74cf83a75ddff1fd2a49b">OnNewConnection</a> (const <a class="el" href="namespace_grid_mate.html#a5ea6ed0f635b270ab1a96cf6c5deef51">string</a> &amp;address)=0</td></tr>
-<tr class="memdesc:ae1d172d349d74cf83a75ddff1fd2a49b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if you want to reject early reject a connection. <br /></td></tr>
-<tr class="separator:ae1d172d349d74cf83a75ddff1fd2a49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a610f87e8c9fb00fff8b2b384814a0e23"><td class="memItemLeft" align="right" valign="top"><a id="a610f87e8c9fb00fff8b2b384814a0e23"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_handshake.html#a610f87e8c9fb00fff8b2b384814a0e23">OnNewConnection</a> (const AZStd::string &amp;address)=0</td></tr>
+<tr class="memdesc:a610f87e8c9fb00fff8b2b384814a0e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if you want to reject early reject a connection. <br /></td></tr>
+<tr class="separator:a610f87e8c9fb00fff8b2b384814a0e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7948da6545f0496c8005f1c4c083bc06"><td class="memItemLeft" align="right" valign="top"><a id="a7948da6545f0496c8005f1c4c083bc06"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_handshake.html#a7948da6545f0496c8005f1c4c083bc06">OnDisconnect</a> (<a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> id)=0</td></tr>
 <tr class="memdesc:a7948da6545f0496c8005f1c4c083bc06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we close a connection. <br /></td></tr>
@@ -122,7 +122,7 @@ virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><div class="memdoc">
 <p>Called when we receive Ack from the other system while we were connected. This callback is called so we can just confirm that our connection is valid! </p>
 
-<p>Implemented in <a class="el" href="class_grid_mate_1_1_default_handshake.html#ab321c3a57eba2fd422df45fb254af47f">GridMate::DefaultHandshake</a>.</p>
+<p>Implemented in <a class="el" href="class_grid_mate_1_1_default_handshake.html#ae2f170d4c7d179db96ce840095eba5be">GridMate::DefaultHandshake</a>.</p>
 
 </div>
 </div>
@@ -161,7 +161,7 @@ virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><div class="memdoc">
 <p>If we already have a valid connection and we receive another connection request, the system will call this function to verify the state of the connection. </p>
 
-<p>Implemented in <a class="el" href="class_grid_mate_1_1_default_handshake.html#a30d3d21f462f05f44e018872e0c52796">GridMate::DefaultHandshake</a>.</p>
+<p>Implemented in <a class="el" href="class_grid_mate_1_1_default_handshake.html#a063a4f7e2bf5df5d47bd4c5a24c69f33">GridMate::DefaultHandshake</a>.</p>
 
 </div>
 </div>
@@ -200,7 +200,7 @@ virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><div class="memdoc">
 <p>Called when we receive Ack from the other system on our initial data <a class="el" href="class_grid_mate_1_1_handshake.html#a93f64256df4536cad2d1797c21d6c5f4">OnInitiate</a>. return true to accept the ack or false to reject the handshake. </p>
 
-<p>Implemented in <a class="el" href="class_grid_mate_1_1_default_handshake.html#a924727afb782aad773d532b98850a75d">GridMate::DefaultHandshake</a>.</p>
+<p>Implemented in <a class="el" href="class_grid_mate_1_1_default_handshake.html#a0092357e1167a67efb214adb1b50f38e">GridMate::DefaultHandshake</a>.</p>
 
 </div>
 </div>
@@ -245,7 +245,7 @@ virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><div class="memdoc">
 <p>Called when a system receives a handshake initiation from another system. You can write a reply in the <a class="el" href="class_grid_mate_1_1_write_buffer.html">WriteBuffer</a>. return true if you accept this connection and false if you reject it. </p>
 
-<p>Implemented in <a class="el" href="class_grid_mate_1_1_default_handshake.html#aeabc9941aba0f8810036fc404e83392e">GridMate::DefaultHandshake</a>.</p>
+<p>Implemented in <a class="el" href="class_grid_mate_1_1_default_handshake.html#a9ed62fe6e37b6700476411e611f5b55d">GridMate::DefaultHandshake</a>.</p>
 
 </div>
 </div>
@@ -255,7 +255,7 @@ virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:43 for Open 3D Engine GridMate API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:28 for Open 3D Engine GridMate API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

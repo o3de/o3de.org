@@ -4,14 +4,14 @@ description: Learn how to use the CMake build tools with Open 3D Engine (O3DE).
 weight: 100
 ---
 
-Building Open 3D Engine or any of its projects with CMake is done in two steps: Creating *Native projects* for a build toolchain, and then invoking that toolchain to build the engine or a project.
+Building **Open 3D Engine (O3DE)**or any of its projects with CMake is done in two steps: Creating *Native projects* for a build toolchain, and then invoking that toolchain to build the engine or a project.
 
 As part of keeping builds fast, CMake maintains a cache of both its internal values used for generation and takes advantage of any incremental builds supported by the native build tools. After your first configuration, you won't need to make any changes to the CMake cache unless you're changing a value needed to re-create native build projects. In most workflows, you'll only need to regenerate your native build projects whenever adding source code.
 
 An important element of CMake in O3DE is that the same commands are used to configure and build **both** the engine itself and any O3DE projects.
 
 {{< note >}}
-These instructions are for Windows 10, but will get you started building on any platform as long as you generate the correct files and know if your platform needs additional arguments. For more information, see the [CMake configuration reference](./reference.md) or the relevant [platform overview](/docs/user-guide/platforms/).
+These instructions are for Windows 10, but will get you started building on any platform as long as you generate the correct files and know if your platform needs additional arguments. For more information, see the [CMake configuration reference](./reference/) or the relevant [platform overview](/docs/user-guide/platforms/).
 {{< /note >}}
 
 ## Supported compiler toolchains
@@ -30,7 +30,7 @@ O3DE has build support for the following platforms and toolchains:
 
 In order to follow these build instructions, you'll need the following.
 
-* CMake {{< versions/cmake >}} or later. [Download from the CMake project](https://cmake.org/download/).
+* CMake {{< versions/cmake >}} or later. [Download from the CMake project](https://cmake.org/download/#latest).
 * A toolchain for your _host_ platform, to build the editor and tools.
 * A toolchain for your _target_ platform, to build your project. In most cases this will be the same as your host platform.
 
@@ -46,18 +46,20 @@ When building using the CMake CLI, you'll need to have a build output directory 
   
     ```cmd
     cmake -B build/windows_vs2019 -S . -G "Visual Studio 16 2019" ^
-        -DLY_3RDPARTY_PATH=<o3de-packages-absolute-path> ^
-        -DLY_UNITY_BUILD=ON
+        -DLY_3RDPARTY_PATH=<o3de-packages-absolute-path>
     ```
 
     * `-B` : Location of build directory, where to put the generated files.
     * `-S` : Source directory, where the root CMake file is.
     * `-G` : The generator to use to create the native project files.
   
-    The other arguments are custom definitions (`-D`) for the build script, used by O3DE:  
+    The other argument is a custom definition (`-D`) for the build script, used by O3DE:  
 
     * `LY_3RDPARTY_PATH` : The *absolute* path to your [O3DE packages](./packages). If packages are missing during configuration, they'll be downloaded to this location.
-    * `LY_UNITY_BUILD` : Unity builds are a CMake feature that can greatly improve build times.
+
+    {{< note >}}
+CMake [unity builds](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html) are on by default. This is a CMake feature that can greatly improve build times by merging source files into single compilation units. If you encounter a build error, disabling unity builds might help debug the problem. To disable unity builds, run the previous `cmake` command with the `-DLY_UNITY_BUILD=OFF` argument to regenerate your project files.
+    {{< /note >}}
 
 ## Configure with the CMake GUI
 
@@ -75,7 +77,10 @@ Set the following values in the GUI after launching it:
 * Use `Visual Studio 16 2019` as your generator.
 * Your configure may fail at various points due to unset values. Make sure that you set the following parameters:
   * `LY_3RDPARTY_PATH` : The path to your 3rd party libraries. If any new 3rd party libraries are downloaded during configure, they'll be unpacked in this directory.
-  * `LY_UNITY_BUILD` : Unity builds are a CMake feature that can greatly improve build times.
+
+{{< note >}}
+CMake [unity builds](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html) are on by default. This is a CMake feature that can greatly improve build times by merging source files into single compilation units. If you encounter a build error, disabling unity builds might help debug the problem. To disable unity builds in the CMake GUI, find the `LY_UNITY_BUILD` variable and uncheck it, then regenerate your project files.
+{{< /note >}}
 
 ## Build O3DE targets with CMake
 

@@ -75,6 +75,17 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_draw2d_1_1_draw2d_shader_data.html">Draw2dShaderData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_draw2d_1_1_image_options.html">ImageOptions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct used to pass additional image options.  <a href="struct_c_draw2d_1_1_image_options.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_draw2d_1_1_render_state.html">RenderState</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_draw2d_1_1_text_options.html">TextOptions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct used to pass additional text options - mostly ones that do not change from call to call.  <a href="struct_c_draw2d_1_1_text_options.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_draw2d_1_1_vertex_pos_col_u_v.html">VertexPosColUV</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to pass in arrays of vertices (e.g. to DrawQuad)  <a href="struct_c_draw2d_1_1_vertex_pos_col_u_v.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -82,28 +93,28 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a95052b27b53472885e9ace19d510d913">CDraw2d</a> (AZ::RPI::ViewportContextPtr viewportContext=nullptr)</td></tr>
 <tr class="memdesc:a95052b27b53472885e9ace19d510d913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor, constructed by the LyShine class. <br /></td></tr>
 <tr class="separator:a95052b27b53472885e9ace19d510d913"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5db214995ada60dc7e13fcc42e5963c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a5db214995ada60dc7e13fcc42e5963c7">DrawImage</a> (AZ::Data::Instance&lt; AZ::RPI::Image &gt; image, AZ::Vector2 position, AZ::Vector2 size, float opacity=1.0f, float rotation=0.0f, const AZ::Vector2 *pivotPoint=nullptr, const AZ::Vector2 *minMaxTexCoords=nullptr, ImageOptions *imageOptions=nullptr)</td></tr>
+<tr class="memitem:a5db214995ada60dc7e13fcc42e5963c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a5db214995ada60dc7e13fcc42e5963c7">DrawImage</a> (AZ::Data::Instance&lt; AZ::RPI::Image &gt; image, AZ::Vector2 position, AZ::Vector2 size, float opacity=1.0f, float rotation=0.0f, const AZ::Vector2 *pivotPoint=nullptr, const AZ::Vector2 *minMaxTexCoords=nullptr, <a class="el" href="struct_c_draw2d_1_1_image_options.html">ImageOptions</a> *imageOptions=nullptr)</td></tr>
 <tr class="memdesc:a5db214995ada60dc7e13fcc42e5963c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a textured quad with the top left corner at the given position.  <a href="class_c_draw2d.html#a5db214995ada60dc7e13fcc42e5963c7">More...</a><br /></td></tr>
 <tr class="separator:a5db214995ada60dc7e13fcc42e5963c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8769d92333c19653ae3421ba6dc94fcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a8769d92333c19653ae3421ba6dc94fcf">DrawImageAligned</a> (AZ::Data::Instance&lt; AZ::RPI::Image &gt; image, AZ::Vector2 position, AZ::Vector2 size, HAlign horizontalAlignment, VAlign verticalAlignment, float opacity=1.0f, float rotation=0.0f, const AZ::Vector2 *minMaxTexCoords=nullptr, ImageOptions *imageOptions=nullptr)</td></tr>
+<tr class="memitem:a8769d92333c19653ae3421ba6dc94fcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a8769d92333c19653ae3421ba6dc94fcf">DrawImageAligned</a> (AZ::Data::Instance&lt; AZ::RPI::Image &gt; image, AZ::Vector2 position, AZ::Vector2 size, HAlign horizontalAlignment, VAlign verticalAlignment, float opacity=1.0f, float rotation=0.0f, const AZ::Vector2 *minMaxTexCoords=nullptr, <a class="el" href="struct_c_draw2d_1_1_image_options.html">ImageOptions</a> *imageOptions=nullptr)</td></tr>
 <tr class="memdesc:a8769d92333c19653ae3421ba6dc94fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a textured quad where the position specifies the point specified by the alignment.  <a href="class_c_draw2d.html#a8769d92333c19653ae3421ba6dc94fcf">More...</a><br /></td></tr>
 <tr class="separator:a8769d92333c19653ae3421ba6dc94fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade584791cb5aabd8bf45916621f9e40e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#ade584791cb5aabd8bf45916621f9e40e">DrawQuad</a> (AZ::Data::Instance&lt; AZ::RPI::Image &gt; image, VertexPosColUV *verts, int blendMode=UseDefault, Rounding pixelRounding=Rounding::Nearest, int baseState=UseDefault)</td></tr>
-<tr class="memdesc:ade584791cb5aabd8bf45916621f9e40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a textured quad where the position, color and uv of each point is specified explicitly.  <a href="class_c_draw2d.html#ade584791cb5aabd8bf45916621f9e40e">More...</a><br /></td></tr>
-<tr class="separator:ade584791cb5aabd8bf45916621f9e40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab96799ec41046a09a9449e4a5224574c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#ab96799ec41046a09a9449e4a5224574c">DrawLine</a> (AZ::Vector2 start, AZ::Vector2 end, AZ::Color color, int blendMode=UseDefault, IDraw2d::Rounding pixelRounding=IDraw2d::Rounding::Nearest, int baseState=UseDefault)</td></tr>
-<tr class="memdesc:ab96799ec41046a09a9449e4a5224574c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a line.  <a href="class_c_draw2d.html#ab96799ec41046a09a9449e4a5224574c">More...</a><br /></td></tr>
-<tr class="separator:ab96799ec41046a09a9449e4a5224574c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c4dc2e9d7019bafd086c05f9ca8e896"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a4c4dc2e9d7019bafd086c05f9ca8e896">DrawLineTextured</a> (AZ::Data::Instance&lt; AZ::RPI::Image &gt; image, VertexPosColUV *verts, int blendMode=UseDefault, IDraw2d::Rounding pixelRounding=IDraw2d::Rounding::Nearest, int baseState=UseDefault)</td></tr>
-<tr class="memdesc:a4c4dc2e9d7019bafd086c05f9ca8e896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a line with a texture so it can be dotted or dashed.  <a href="class_c_draw2d.html#a4c4dc2e9d7019bafd086c05f9ca8e896">More...</a><br /></td></tr>
-<tr class="separator:a4c4dc2e9d7019bafd086c05f9ca8e896"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe4a6797d9ef321a1f21e2bc880cc8ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#afe4a6797d9ef321a1f21e2bc880cc8ad">DrawText</a> (const char *textString, AZ::Vector2 position, float pointSize, float opacity=1.0f, TextOptions *textOptions=nullptr)</td></tr>
+<tr class="memitem:a35428f9502816eeb415e0510eede88d8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a35428f9502816eeb415e0510eede88d8">DrawQuad</a> (AZ::Data::Instance&lt; AZ::RPI::Image &gt; image, <a class="el" href="struct_c_draw2d_1_1_vertex_pos_col_u_v.html">VertexPosColUV</a> *verts, Rounding pixelRounding=Rounding::Nearest, const <a class="el" href="struct_c_draw2d_1_1_render_state.html">RenderState</a> &amp;renderState=<a class="el" href="struct_c_draw2d_1_1_render_state.html">RenderState</a>{})</td></tr>
+<tr class="memdesc:a35428f9502816eeb415e0510eede88d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a textured quad where the position, color and uv of each point is specified explicitly.  <a href="class_c_draw2d.html#a35428f9502816eeb415e0510eede88d8">More...</a><br /></td></tr>
+<tr class="separator:a35428f9502816eeb415e0510eede88d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc222d6bc16c225739d6ea90e9b6d63f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#acc222d6bc16c225739d6ea90e9b6d63f">DrawLine</a> (AZ::Vector2 start, AZ::Vector2 end, AZ::Color color, IDraw2d::Rounding pixelRounding=IDraw2d::Rounding::Nearest, const <a class="el" href="struct_c_draw2d_1_1_render_state.html">RenderState</a> &amp;renderState=<a class="el" href="struct_c_draw2d_1_1_render_state.html">RenderState</a>{})</td></tr>
+<tr class="memdesc:acc222d6bc16c225739d6ea90e9b6d63f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a line.  <a href="class_c_draw2d.html#acc222d6bc16c225739d6ea90e9b6d63f">More...</a><br /></td></tr>
+<tr class="separator:acc222d6bc16c225739d6ea90e9b6d63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a131424f0c46ae2541331b8f32bda6e7e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a131424f0c46ae2541331b8f32bda6e7e">DrawLineTextured</a> (AZ::Data::Instance&lt; AZ::RPI::Image &gt; image, <a class="el" href="struct_c_draw2d_1_1_vertex_pos_col_u_v.html">VertexPosColUV</a> *verts, IDraw2d::Rounding pixelRounding=IDraw2d::Rounding::Nearest, const <a class="el" href="struct_c_draw2d_1_1_render_state.html">RenderState</a> &amp;renderState=<a class="el" href="struct_c_draw2d_1_1_render_state.html">RenderState</a>{})</td></tr>
+<tr class="memdesc:a131424f0c46ae2541331b8f32bda6e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a line with a texture so it can be dotted or dashed.  <a href="class_c_draw2d.html#a131424f0c46ae2541331b8f32bda6e7e">More...</a><br /></td></tr>
+<tr class="separator:a131424f0c46ae2541331b8f32bda6e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4a6797d9ef321a1f21e2bc880cc8ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#afe4a6797d9ef321a1f21e2bc880cc8ad">DrawText</a> (const char *textString, AZ::Vector2 position, float pointSize, float opacity=1.0f, <a class="el" href="struct_c_draw2d_1_1_text_options.html">TextOptions</a> *textOptions=nullptr)</td></tr>
 <tr class="memdesc:afe4a6797d9ef321a1f21e2bc880cc8ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a text string. Only supports ASCII text.  <a href="class_c_draw2d.html#afe4a6797d9ef321a1f21e2bc880cc8ad">More...</a><br /></td></tr>
 <tr class="separator:afe4a6797d9ef321a1f21e2bc880cc8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eee9e7af49f7865a867766de8a10fac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a7eee9e7af49f7865a867766de8a10fac">DrawRectOutlineTextured</a> (AZ::Data::Instance&lt; AZ::RPI::Image &gt; image, UiTransformInterface::RectPoints points, AZ::Vector2 rightVec, AZ::Vector2 downVec, AZ::Color color, uint32_t lineThickness=0)</td></tr>
 <tr class="memdesc:a7eee9e7af49f7865a867766de8a10fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a rectangular outline with a texture.  <a href="class_c_draw2d.html#a7eee9e7af49f7865a867766de8a10fac">More...</a><br /></td></tr>
 <tr class="separator:a7eee9e7af49f7865a867766de8a10fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac4fcca4a21a2b501a4b70c33efa276d"><td class="memItemLeft" align="right" valign="top">AZ::Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#aac4fcca4a21a2b501a4b70c33efa276d">GetTextSize</a> (const char *textString, float pointSize, TextOptions *textOptions=nullptr)</td></tr>
+<tr class="memitem:aac4fcca4a21a2b501a4b70c33efa276d"><td class="memItemLeft" align="right" valign="top">AZ::Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#aac4fcca4a21a2b501a4b70c33efa276d">GetTextSize</a> (const char *textString, float pointSize, <a class="el" href="struct_c_draw2d_1_1_text_options.html">TextOptions</a> *textOptions=nullptr)</td></tr>
 <tr class="memdesc:aac4fcca4a21a2b501a4b70c33efa276d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the width and height (in pixels) that would be used to draw the given text string.  <a href="class_c_draw2d.html#aac4fcca4a21a2b501a4b70c33efa276d">More...</a><br /></td></tr>
 <tr class="separator:aac4fcca4a21a2b501a4b70c33efa276d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2849c2750dee8c548095aad977b8bd4"><td class="memItemLeft" align="right" valign="top"><a id="ae2849c2750dee8c548095aad977b8bd4"></a>
@@ -114,10 +125,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#ae1e27b22c18cd41bdba228fd343ec763">GetViewportHeight</a> () const</td></tr>
 <tr class="memdesc:ae1e27b22c18cd41bdba228fd343ec763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the height of the rendering viewport (in pixels). <br /></td></tr>
 <tr class="separator:ae1e27b22c18cd41bdba228fd343ec763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ee60ad99a2cf981dde7abfa90e9138b"><td class="memItemLeft" align="right" valign="top">virtual const ImageOptions &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a2ee60ad99a2cf981dde7abfa90e9138b">GetDefaultImageOptions</a> () const</td></tr>
+<tr class="memitem:a2ee60ad99a2cf981dde7abfa90e9138b"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="struct_c_draw2d_1_1_image_options.html">ImageOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a2ee60ad99a2cf981dde7abfa90e9138b">GetDefaultImageOptions</a> () const</td></tr>
 <tr class="memdesc:a2ee60ad99a2cf981dde7abfa90e9138b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default values that would be used if no image options were passed in.  <a href="class_c_draw2d.html#a2ee60ad99a2cf981dde7abfa90e9138b">More...</a><br /></td></tr>
 <tr class="separator:a2ee60ad99a2cf981dde7abfa90e9138b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adad73e1a92dd1a55577913f9a4e879f6"><td class="memItemLeft" align="right" valign="top">virtual const TextOptions &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#adad73e1a92dd1a55577913f9a4e879f6">GetDefaultTextOptions</a> () const</td></tr>
+<tr class="memitem:adad73e1a92dd1a55577913f9a4e879f6"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="struct_c_draw2d_1_1_text_options.html">TextOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#adad73e1a92dd1a55577913f9a4e879f6">GetDefaultTextOptions</a> () const</td></tr>
 <tr class="memdesc:adad73e1a92dd1a55577913f9a4e879f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default values that would be used if no text options were passed in.  <a href="class_c_draw2d.html#adad73e1a92dd1a55577913f9a4e879f6">More...</a><br /></td></tr>
 <tr class="separator:adad73e1a92dd1a55577913f9a4e879f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6827280c44ba8328e1741b219dc09dc"><td class="memItemLeft" align="right" valign="top"><a id="ac6827280c44ba8328e1741b219dc09dc"></a>
@@ -183,11 +194,11 @@ AZ::RPI::ViewportContextPtr&#160;</td><td class="memItemRight" valign="bottom"><
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ac5264fad55516ac3b5f9d85ca3e07d57"><td class="memItemLeft" align="right" valign="top"><a id="ac5264fad55516ac3b5f9d85ca3e07d57"></a>
-ImageOptions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#ac5264fad55516ac3b5f9d85ca3e07d57">m_defaultImageOptions</a></td></tr>
+<a class="el" href="struct_c_draw2d_1_1_image_options.html">ImageOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#ac5264fad55516ac3b5f9d85ca3e07d57">m_defaultImageOptions</a></td></tr>
 <tr class="memdesc:ac5264fad55516ac3b5f9d85ca3e07d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default image options used if nullptr is passed. <br /></td></tr>
 <tr class="separator:ac5264fad55516ac3b5f9d85ca3e07d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57c3501ef15ce1aa1ddc22e33b90de74"><td class="memItemLeft" align="right" valign="top"><a id="a57c3501ef15ce1aa1ddc22e33b90de74"></a>
-TextOptions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a57c3501ef15ce1aa1ddc22e33b90de74">m_defaultTextOptions</a></td></tr>
+<a class="el" href="struct_c_draw2d_1_1_text_options.html">TextOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a57c3501ef15ce1aa1ddc22e33b90de74">m_defaultTextOptions</a></td></tr>
 <tr class="memdesc:a57c3501ef15ce1aa1ddc22e33b90de74"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default text options used if nullptr is passed. <br /></td></tr>
 <tr class="separator:a57c3501ef15ce1aa1ddc22e33b90de74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6c76565337676412093fedc3252328f"><td class="memItemLeft" align="right" valign="top"><a id="ab6c76565337676412093fedc3252328f"></a>
@@ -262,7 +273,7 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ImageOptions *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_c_draw2d_1_1_image_options.html">ImageOptions</a> *&#160;</td>
           <td class="paramname"><em>imageOptions</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -347,7 +358,7 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ImageOptions *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_c_draw2d_1_1_image_options.html">ImageOptions</a> *&#160;</td>
           <td class="paramname"><em>imageOptions</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -376,8 +387,8 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
 
 </div>
 </div>
-<a id="ab96799ec41046a09a9449e4a5224574c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab96799ec41046a09a9449e4a5224574c">&#9670;&nbsp;</a></span>DrawLine()</h2>
+<a id="acc222d6bc16c225739d6ea90e9b6d63f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc222d6bc16c225739d6ea90e9b6d63f">&#9670;&nbsp;</a></span>DrawLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -406,20 +417,14 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>blendMode</em> = <code>UseDefault</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">IDraw2d::Rounding&#160;</td>
           <td class="paramname"><em>pixelRounding</em> = <code>IDraw2d::Rounding::Nearest</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>baseState</em> = <code>UseDefault</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_c_draw2d_1_1_render_state.html">RenderState</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderState</em> = <code><a class="el" href="struct_c_draw2d_1_1_render_state.html">RenderState</a>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -440,17 +445,16 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
     <tr><td class="paramname">start</td><td>The start position </td></tr>
     <tr><td class="paramname">end</td><td>The end position </td></tr>
     <tr><td class="paramname">color</td><td>The color of the line </td></tr>
-    <tr><td class="paramname">blendMode</td><td>UseDefault means default blend mode (currently GS_BLSRC_SRCALPHA | GS_BLDST_ONEMINUSSRCALPHA) </td></tr>
     <tr><td class="paramname">pixelRounding</td><td>Whether and how to round pixel coordinates </td></tr>
-    <tr><td class="paramname">baseState</td><td>Additional render state to pass to or into value passed to renderer SetState </td></tr>
+    <tr><td class="paramname">renderState</td><td>Blend mode and depth state </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a4c4dc2e9d7019bafd086c05f9ca8e896"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c4dc2e9d7019bafd086c05f9ca8e896">&#9670;&nbsp;</a></span>DrawLineTextured()</h2>
+<a id="a131424f0c46ae2541331b8f32bda6e7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a131424f0c46ae2541331b8f32bda6e7e">&#9670;&nbsp;</a></span>DrawLineTextured()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -467,14 +471,8 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">VertexPosColUV *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_c_draw2d_1_1_vertex_pos_col_u_v.html">VertexPosColUV</a> *&#160;</td>
           <td class="paramname"><em>verts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>blendMode</em> = <code>UseDefault</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -485,8 +483,8 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>baseState</em> = <code>UseDefault</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_c_draw2d_1_1_render_state.html">RenderState</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderState</em> = <code><a class="el" href="struct_c_draw2d_1_1_render_state.html">RenderState</a>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -506,17 +504,16 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
   <table class="params">
     <tr><td class="paramname">texId</td><td>The texture ID returned by ITexture::GetTextureID() </td></tr>
     <tr><td class="paramname">verts</td><td>An array of 2 vertices for the start and end points of the line </td></tr>
-    <tr><td class="paramname">blendMode</td><td>UseDefault means default blend mode (currently GS_BLSRC_SRCALPHA | GS_BLDST_ONEMINUSSRCALPHA) </td></tr>
     <tr><td class="paramname">pixelRounding</td><td>Whether and how to round pixel coordinates </td></tr>
-    <tr><td class="paramname">baseState</td><td>Additional render state to pass to or into value passed to renderer SetState </td></tr>
+    <tr><td class="paramname">renderState</td><td>Blend mode and depth state </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ade584791cb5aabd8bf45916621f9e40e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade584791cb5aabd8bf45916621f9e40e">&#9670;&nbsp;</a></span>DrawQuad()</h2>
+<a id="a35428f9502816eeb415e0510eede88d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35428f9502816eeb415e0510eede88d8">&#9670;&nbsp;</a></span>DrawQuad()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -533,14 +530,8 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">VertexPosColUV *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_c_draw2d_1_1_vertex_pos_col_u_v.html">VertexPosColUV</a> *&#160;</td>
           <td class="paramname"><em>verts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>blendMode</em> = <code>UseDefault</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -551,8 +542,8 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>baseState</em> = <code>UseDefault</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_c_draw2d_1_1_render_state.html">RenderState</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderState</em> = <code><a class="el" href="struct_c_draw2d_1_1_render_state.html">RenderState</a>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -572,9 +563,8 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
   <table class="params">
     <tr><td class="paramname">texId</td><td>The texture ID returned by ITexture::GetTextureID() </td></tr>
     <tr><td class="paramname">verts</td><td>An array of 4 vertices, in clockwise order (e.g. top left, top right, bottom right, bottom left) </td></tr>
-    <tr><td class="paramname">blendMode</td><td>UseDefault means default blend mode (currently GS_BLSRC_SRCALPHA | GS_BLDST_ONEMINUSSRCALPHA) </td></tr>
     <tr><td class="paramname">pixelRounding</td><td>Whether and how to round pixel coordinates </td></tr>
-    <tr><td class="paramname">baseState</td><td>Additional render state to pass to or into value passed to renderer SetState </td></tr>
+    <tr><td class="paramname">renderState</td><td>Blend mode and depth state </td></tr>
   </table>
   </dd>
 </dl>
@@ -679,7 +669,7 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TextOptions *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_c_draw2d_1_1_text_options.html">TextOptions</a> *&#160;</td>
           <td class="paramname"><em>textOptions</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -715,7 +705,7 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const ImageOptions&amp; CDraw2d::GetDefaultImageOptions </td>
+          <td class="memname">virtual const <a class="el" href="struct_c_draw2d_1_1_image_options.html">ImageOptions</a>&amp; CDraw2d::GetDefaultImageOptions </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -743,7 +733,7 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const TextOptions&amp; CDraw2d::GetDefaultTextOptions </td>
+          <td class="memname">virtual const <a class="el" href="struct_c_draw2d_1_1_text_options.html">TextOptions</a>&amp; CDraw2d::GetDefaultTextOptions </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -782,7 +772,7 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TextOptions *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_c_draw2d_1_1_text_options.html">TextOptions</a> *&#160;</td>
           <td class="paramname"><em>textOptions</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -855,7 +845,7 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:41 for Open 3D Engine LyShine Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:40 for Open 3D Engine LyShine Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

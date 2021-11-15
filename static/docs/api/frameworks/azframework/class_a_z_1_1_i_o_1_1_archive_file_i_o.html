@@ -144,12 +144,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAlias</b> (const c
 <tr class="memitem:a1e6b4ea767f770a8c488cf43c3ee2e3e"><td class="memItemLeft" align="right" valign="top"><a id="a1e6b4ea767f770a8c488cf43c3ee2e3e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearAlias</b> (const char *alias) override</td></tr>
 <tr class="separator:a1e6b4ea767f770a8c488cf43c3ee2e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d4139082861313f5e7e6585b53ca6b"><td class="memItemLeft" align="right" valign="top"><a id="ac2d4139082861313f5e7e6585b53ca6b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDeprecatedAlias</b> (AZStd::string_view oldAlias, AZStd::string_view newAlias) override</td></tr>
+<tr class="separator:ac2d4139082861313f5e7e6585b53ca6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae032a4fa8c2e0b96334ff2cc383cf1d2"><td class="memItemLeft" align="right" valign="top"><a id="ae032a4fa8c2e0b96334ff2cc383cf1d2"></a>
 AZStd::optional&lt; AZ::u64 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToAlias</b> (char *inOutBuffer, AZ::u64 bufferLength) const override</td></tr>
 <tr class="separator:ae032a4fa8c2e0b96334ff2cc383cf1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a590107995b05c442d588355d50942329"><td class="memItemLeft" align="right" valign="top"><a id="a590107995b05c442d588355d50942329"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToAlias</b> (AZ::IO::FixedMaxPath &amp;convertedPath, const AZ::IO::PathView &amp;path) const</td></tr>
-<tr class="separator:a590107995b05c442d588355d50942329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0325c0a0fef5eb0fb5f90fecf328a4b"><td class="memItemLeft" align="right" valign="top"><a id="aa0325c0a0fef5eb0fb5f90fecf328a4b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToAlias</b> (AZ::IO::FixedMaxPath &amp;convertedPath, const AZ::IO::PathView &amp;path) const override</td></tr>
+<tr class="separator:aa0325c0a0fef5eb0fb5f90fecf328a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1fe43ca73eea8ccc85811b5b2068609"><td class="memItemLeft" align="right" valign="top"><a id="aa1fe43ca73eea8ccc85811b5b2068609"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAlias</b> (const char *alias) const override</td></tr>
 <tr class="separator:aa1fe43ca73eea8ccc85811b5b2068609"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,9 +174,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:afd243913d96c6640d8b563bb31ba6794"><td class="memItemLeft" align="right" valign="top"><a id="afd243913d96c6640d8b563bb31ba6794"></a>
 AZStd::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_operationGuard</b></td></tr>
 <tr class="separator:afd243913d96c6640d8b563bb31ba6794"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af197f2091eeaeb889d18405200edf1fb"><td class="memItemLeft" align="right" valign="top"><a id="af197f2091eeaeb889d18405200edf1fb"></a>
-AZStd::unordered_map&lt; IO::HandleType, AZ::OSString, AZStd::hash&lt; IO::HandleType &gt;, AZStd::equal_to&lt; IO::HandleType &gt;, AZ::OSStdAllocator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_trackedFiles</b></td></tr>
-<tr class="separator:af197f2091eeaeb889d18405200edf1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8af75b1eb6c7f7f6cb320b6d7870fb8b"><td class="memItemLeft" align="right" valign="top"><a id="a8af75b1eb6c7f7f6cb320b6d7870fb8b"></a>
+AZStd::unordered_map&lt; IO::HandleType, AZ::IO::Path &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_trackedFiles</b></td></tr>
+<tr class="separator:a8af75b1eb6c7f7f6cb320b6d7870fb8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a673126c075992d706b26b61728c7af42"><td class="memItemLeft" align="right" valign="top"><a id="a673126c075992d706b26b61728c7af42"></a>
 AZStd::fixed_vector&lt; char, ArchiveFileIoMaxBuffersize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_copyBuffer</b></td></tr>
 <tr class="separator:a673126c075992d706b26b61728c7af42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,7 +192,7 @@ AZStd::fixed_vector&lt; char, ArchiveFileIoMaxBuffersize &gt;&#160;</td><td clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:21 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:02 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

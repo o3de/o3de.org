@@ -65,21 +65,22 @@ In the following procedure, make changes to your code so that you can enter Comp
    ```
 
 1. Add the following changes to your code:
-   + Add an implementation of `SupportsEditorRayIntersect` to return `true`. By default, this function returns `false`.
-   + Add an implementation of `GetBoundingBoxDisplayType` to return `AzToolsFramework::EditorComponentSelectionRequests::BoundingBoxDisplay::NoBoundingBox`.
+    + Add an implementation of `SupportsEditorRayIntersect` to return `true`. By default, this function returns `false`.
+    + Add an implementation of `GetBoundingBoxDisplayType` to return `AzToolsFramework::EditorComponentSelectionRequests::BoundingBoxDisplay::NoBoundingBox`.
 
-   ```
-   bool EditorPointLightComponent::SupportsEditorRayIntersect()
-   {
+    ```
+    bool EditorPointLightComponent::SupportsEditorRayIntersect()
+    {
        return true;
-   }
+    }
 
        AZ::u32 EditorPointLightComponent::GetBoundingBoxDisplayType()
-   {
+    {
            return AzToolsFramework::EditorComponentSelectionRequests::BoundingBoxDisplay::NoBoundingBox;}
-   ```
-**Note**
+    ```
+    {{< note >}}
 It's possible to instead return the `AzToolsFramework::EditorComponentSelectionRequests::BoundingBoxDisplay:BoundingBox` for debugging, but you shouldn't leave it enabled.
+{{< /note >}}
 
    The next two functions show how to implement the picking and selection support.
 

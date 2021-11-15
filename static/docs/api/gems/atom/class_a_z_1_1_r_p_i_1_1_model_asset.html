@@ -76,12 +76,20 @@ const Name &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 const AZ::Aabb &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html#a028305387c9702b17d47e117d675e473">GetAabb</a> () const</td></tr>
 <tr class="memdesc:a028305387c9702b17d47e117d675e473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the model-space axis aligned bounding box. <br /></td></tr>
 <tr class="separator:a028305387c9702b17d47e117d675e473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae18c6b365e24da3a479d0cc5855ae6e3"><td class="memItemLeft" align="right" valign="top"><a id="ae18c6b365e24da3a479d0cc5855ae6e3"></a>
+const ModelMaterialSlotMap &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html#ae18c6b365e24da3a479d0cc5855ae6e3">GetMaterialSlots</a> () const</td></tr>
+<tr class="memdesc:ae18c6b365e24da3a479d0cc5855ae6e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of all <a class="el" href="struct_a_z_1_1_r_p_i_1_1_model_material_slot.html">ModelMaterialSlot</a>'s for the model, across all LODs. <br /></td></tr>
+<tr class="separator:ae18c6b365e24da3a479d0cc5855ae6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8eb3596f871388fffb1407e04fe147"><td class="memItemLeft" align="right" valign="top"><a id="aee8eb3596f871388fffb1407e04fe147"></a>
+const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_model_material_slot.html">ModelMaterialSlot</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html#aee8eb3596f871388fffb1407e04fe147">FindMaterialSlot</a> (uint32_t stableId) const</td></tr>
+<tr class="memdesc:aee8eb3596f871388fffb1407e04fe147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a material slot with the given stableId, or returns an invalid slot if it isn't found. <br /></td></tr>
+<tr class="separator:aee8eb3596f871388fffb1407e04fe147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04c5925b27e2ce559a379f02986aea33"><td class="memItemLeft" align="right" valign="top"><a id="a04c5925b27e2ce559a379f02986aea33"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html#a04c5925b27e2ce559a379f02986aea33">GetLodCount</a> () const</td></tr>
 <tr class="memdesc:a04c5925b27e2ce559a379f02986aea33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of Lods in the model. <br /></td></tr>
 <tr class="separator:a04c5925b27e2ce559a379f02986aea33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed9696ebc45317a99bd3a3a14481edad"><td class="memItemLeft" align="right" valign="top"><a id="aed9696ebc45317a99bd3a3a14481edad"></a>
-AZStd::array_view&lt; Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod_asset.html">ModelLodAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetLodAssets</b> () const</td></tr>
+AZStd::array_view&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod_asset.html">ModelLodAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetLodAssets</b> () const</td></tr>
 <tr class="separator:aed9696ebc45317a99bd3a3a14481edad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae37db2e20cc8bb2764fc9d79201620d9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html#ae37db2e20cc8bb2764fc9d79201620d9">LocalRayIntersectionAgainstModel</a> (const AZ::Vector3 &amp;rayStart, const AZ::Vector3 &amp;rayDir, bool allowBruteForce, float &amp;distanceNormalized, AZ::Vector3 &amp;normal) const</td></tr>
 <tr class="separator:ae37db2e20cc8bb2764fc9d79201620d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,7 +193,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ModelAssetCreator</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

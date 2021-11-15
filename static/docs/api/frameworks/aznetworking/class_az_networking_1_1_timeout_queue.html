@@ -47,6 +47,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_az_networking_1_1_timeout_queue-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -64,6 +65,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_networking_1_1_timeout_queue_1_1_timeout_item.html">TimeoutItem</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:adcfdfad98f88f6bc52218a2deb605f90"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_timeout_queue.html#adcfdfad98f88f6bc52218a2deb605f90">TimeoutHandler</a> = AZStd::function&lt; TimeoutResult(<a class="el" href="struct_az_networking_1_1_timeout_queue_1_1_timeout_item.html">TimeoutQueue::TimeoutItem</a> &amp;)&gt;</td></tr>
+<tr class="separator:adcfdfad98f88f6bc52218a2deb605f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e3d07f860af8785a9454d3c6747333c"><td class="memItemLeft" align="right" valign="top"><a id="a9e3d07f860af8785a9454d3c6747333c"></a>
@@ -76,12 +82,35 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:aadf106fcd7db7d6356dadea7e67cb532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d4ae4f240f546734096c8d8ecedc1ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_timeout_queue.html#a0d4ae4f240f546734096c8d8ecedc1ed">RemoveItem</a> (TimeoutId timeoutId)</td></tr>
 <tr class="separator:a0d4ae4f240f546734096c8d8ecedc1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22d6ee6f18c243c95fe628fde594ae62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_timeout_queue.html#a22d6ee6f18c243c95fe628fde594ae62">UpdateTimeouts</a> (<a class="el" href="class_az_networking_1_1_i_timeout_handler.html">ITimeoutHandler</a> &amp;timeoutHandler, int32_t maxTimeouts=-1)</td></tr>
-<tr class="separator:a22d6ee6f18c243c95fe628fde594ae62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1184b453b07ef492495270080c35d9"><td class="memItemLeft" align="right" valign="top"><a id="a0b1184b453b07ef492495270080c35d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateTimeouts</b> (const <a class="el" href="class_az_networking_1_1_timeout_queue.html#adcfdfad98f88f6bc52218a2deb605f90">TimeoutHandler</a> &amp;timeoutHandler, int32_t maxTimeouts=-1)</td></tr>
+<tr class="separator:a0b1184b453b07ef492495270080c35d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>class for managing timeout items. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="adcfdfad98f88f6bc52218a2deb605f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcfdfad98f88f6bc52218a2deb605f90">&#9670;&nbsp;</a></span>TimeoutHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_az_networking_1_1_timeout_queue.html#adcfdfad98f88f6bc52218a2deb605f90">AzNetworking::TimeoutQueue::TimeoutHandler</a> =  AZStd::function&lt;TimeoutResult(<a class="el" href="struct_az_networking_1_1_timeout_queue_1_1_timeout_item.html">TimeoutQueue::TimeoutItem</a>&amp;)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Updates timeouts for all items, invokes the provided timeout functor if required. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeoutHandler</td><td>lambda to invoke for all timeouts </td></tr>
+    <tr><td class="paramname">maxTimeouts</td><td>the maximum number of timeouts to process before breaking iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a62c864b8a77e2b8523491969983b2598"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62c864b8a77e2b8523491969983b2598">&#9670;&nbsp;</a></span>RegisterItem()</h2>
 
@@ -167,48 +196,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a22d6ee6f18c243c95fe628fde594ae62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22d6ee6f18c243c95fe628fde594ae62">&#9670;&nbsp;</a></span>UpdateTimeouts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzNetworking::TimeoutQueue::UpdateTimeouts </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_az_networking_1_1_i_timeout_handler.html">ITimeoutHandler</a> &amp;&#160;</td>
-          <td class="paramname"><em>timeoutHandler</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>maxTimeouts</em> = <code>-1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Updates timeouts for all items, invokes timeout handlers if required. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">timeoutHandler</td><td>listener instance to call back on for timeouts </td></tr>
-    <tr><td class="paramname">maxTimeouts</td><td>the maximum number of timeouts to process before breaking iteration </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzNetworking/AzNetworking/DataStructures/TimeoutQueue.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:28 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:11 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -61,6 +61,10 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_component_stats.html">ComponentStats</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_event_handlers.html">EventHandlers</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_events.html">Events</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_metric.html">Metric</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -75,18 +79,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2bdc844bac0bdf65a8bb98e12d160fba"><td class="memItemLeft" align="right" valign="top"><a id="a2bdc844bac0bdf65a8bb98e12d160fba"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ReserveComponentStats</b> (NetComponentId netComponentId, uint16_t propertyCount, uint16_t rpcCount)</td></tr>
 <tr class="separator:a2bdc844bac0bdf65a8bb98e12d160fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1613b3f4c94842c673036e1460ec71"><td class="memItemLeft" align="right" valign="top"><a id="afc1613b3f4c94842c673036e1460ec71"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordEntitySerializeStart</b> (AzNetworking::SerializerMode mode, AZ::EntityId entityId, const char *entityName)</td></tr>
+<tr class="separator:afc1613b3f4c94842c673036e1460ec71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063650287d3aba60f9a3f869b11d5ac0"><td class="memItemLeft" align="right" valign="top"><a id="a063650287d3aba60f9a3f869b11d5ac0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordComponentSerializeEnd</b> (AzNetworking::SerializerMode mode, NetComponentId netComponentId)</td></tr>
+<tr class="separator:a063650287d3aba60f9a3f869b11d5ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b21dc244f8c92598fda21d782554ffe"><td class="memItemLeft" align="right" valign="top"><a id="a7b21dc244f8c92598fda21d782554ffe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordEntitySerializeStop</b> (AzNetworking::SerializerMode mode, AZ::EntityId entityId, const char *entityName)</td></tr>
+<tr class="separator:a7b21dc244f8c92598fda21d782554ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8eb0352926d4169112c1de40413e1db"><td class="memItemLeft" align="right" valign="top"><a id="ac8eb0352926d4169112c1de40413e1db"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordPropertySent</b> (NetComponentId netComponentId, PropertyIndex propertyId, uint32_t totalBytes)</td></tr>
 <tr class="separator:ac8eb0352926d4169112c1de40413e1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a211aee7a264aee5e6addb2bb6012e576"><td class="memItemLeft" align="right" valign="top"><a id="a211aee7a264aee5e6addb2bb6012e576"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordPropertyReceived</b> (NetComponentId netComponentId, PropertyIndex propertyId, uint32_t totalBytes)</td></tr>
 <tr class="separator:a211aee7a264aee5e6addb2bb6012e576"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb5f5af2329e27d3e8dbc9d3cd339d91"><td class="memItemLeft" align="right" valign="top"><a id="aeb5f5af2329e27d3e8dbc9d3cd339d91"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordRpcSent</b> (NetComponentId netComponentId, RpcIndex rpcId, uint32_t totalBytes)</td></tr>
-<tr class="separator:aeb5f5af2329e27d3e8dbc9d3cd339d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94e3397b46a7bfda1fbec703413b3acf"><td class="memItemLeft" align="right" valign="top"><a id="a94e3397b46a7bfda1fbec703413b3acf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordRpcReceived</b> (NetComponentId netComponentId, RpcIndex rpcId, uint32_t totalBytes)</td></tr>
-<tr class="separator:a94e3397b46a7bfda1fbec703413b3acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac036da41dcb1158118c1d97cc4a3f176"><td class="memItemLeft" align="right" valign="top"><a id="ac036da41dcb1158118c1d97cc4a3f176"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordRpcSent</b> (AZ::EntityId entityId, const char *entityName, NetComponentId netComponentId, RpcIndex rpcId, uint32_t totalBytes)</td></tr>
+<tr class="separator:ac036da41dcb1158118c1d97cc4a3f176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d534df6e2bd935d07be065f4d111b5"><td class="memItemLeft" align="right" valign="top"><a id="ab1d534df6e2bd935d07be065f4d111b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordRpcReceived</b> (AZ::EntityId entityId, const char *entityName, NetComponentId netComponentId, RpcIndex rpcId, uint32_t totalBytes)</td></tr>
+<tr class="separator:ab1d534df6e2bd935d07be065f4d111b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb7128b577bfb5c0faeb8f62adf19c22"><td class="memItemLeft" align="right" valign="top"><a id="adb7128b577bfb5c0faeb8f62adf19c22"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>TickStats</b> (AZ::TimeMs metricFrameTimeMs)</td></tr>
 <tr class="separator:adb7128b577bfb5c0faeb8f62adf19c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,6 +127,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>TickStats</b> (AZ::Ti
 <tr class="memitem:acab744f089c3517e8ecc395101994ff5"><td class="memItemLeft" align="right" valign="top"><a id="acab744f089c3517e8ecc395101994ff5"></a>
 <a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_metric.html">Metric</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateTotalRpcsRecvMetrics</b> () const</td></tr>
 <tr class="separator:acab744f089c3517e8ecc395101994ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69644e2f0323495abc3cbe1e9963fc2"><td class="memItemLeft" align="right" valign="top"><a id="ad69644e2f0323495abc3cbe1e9963fc2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ConnectHandlers</b> (<a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_event_handlers.html">EventHandlers</a> &amp;handlers)</td></tr>
+<tr class="separator:ad69644e2f0323495abc3cbe1e9963fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -135,6 +151,9 @@ AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>m_totalHistoryT
 <tr class="memitem:adc0eaff0ea2381514a79690cfe418f52"><td class="memItemLeft" align="right" valign="top"><a id="adc0eaff0ea2381514a79690cfe418f52"></a>
 AZStd::vector&lt; <a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_component_stats.html">ComponentStats</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_componentStats</b></td></tr>
 <tr class="separator:adc0eaff0ea2381514a79690cfe418f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdb07fe404b833905ca7236ff32d541c"><td class="memItemLeft" align="right" valign="top"><a id="afdb07fe404b833905ca7236ff32d541c"></a>
+<a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_events.html">Events</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_events</b></td></tr>
+<tr class="separator:afdb07fe404b833905ca7236ff32d541c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -148,7 +167,7 @@ static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Ring
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:44 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:44 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

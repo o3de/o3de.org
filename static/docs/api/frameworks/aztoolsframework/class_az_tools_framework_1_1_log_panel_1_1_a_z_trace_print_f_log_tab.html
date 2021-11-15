@@ -104,21 +104,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a57e8eb6c0607aa7568e3284b3a5019dd"><td class="memItemLeft" align="right" valign="top"><a id="a57e8eb6c0607aa7568e3284b3a5019dd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZTracePrintFLogTab</b> (QWidget *pParent, const <a class="el" href="struct_az_tools_framework_1_1_log_panel_1_1_tab_settings.html">TabSettings</a> &amp;in_settings)</td></tr>
 <tr class="separator:a57e8eb6c0607aa7568e3284b3a5019dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8f85b0c806083f49cc4f0c73f29d32e"><td class="memItemLeft" align="right" valign="top"><a id="ad8f85b0c806083f49cc4f0c73f29d32e"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssert</b> (const char *message)</td></tr>
-<tr class="separator:ad8f85b0c806083f49cc4f0c73f29d32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ecb458a50d385c470dbdc67f43d098c"><td class="memItemLeft" align="right" valign="top"><a id="a7ecb458a50d385c470dbdc67f43d098c"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnException</b> (const char *message)</td></tr>
-<tr class="separator:a7ecb458a50d385c470dbdc67f43d098c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90b1ddab1e20c543d0790a0c8b024e28"><td class="memItemLeft" align="right" valign="top"><a id="a90b1ddab1e20c543d0790a0c8b024e28"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnError</b> (const char *window, const char *message)</td></tr>
-<tr class="separator:a90b1ddab1e20c543d0790a0c8b024e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80ce4e79c181499bc2209ea91b77bc8b"><td class="memItemLeft" align="right" valign="top"><a id="a80ce4e79c181499bc2209ea91b77bc8b"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnWarning</b> (const char *window, const char *message)</td></tr>
-<tr class="separator:a80ce4e79c181499bc2209ea91b77bc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8384024e7c0d371ee9d00064ac0ed76"><td class="memItemLeft" align="right" valign="top"><a id="af8384024e7c0d371ee9d00064ac0ed76"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrintf</b> (const char *window, const char *message)</td></tr>
-<tr class="separator:af8384024e7c0d371ee9d00064ac0ed76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092aa5329a01ac904205c7a6c3743b81"><td class="memItemLeft" align="right" valign="top"><a id="a092aa5329a01ac904205c7a6c3743b81"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssert</b> (const char *message) override</td></tr>
+<tr class="separator:a092aa5329a01ac904205c7a6c3743b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea6c8834923f78eb5c362f835caf1e8"><td class="memItemLeft" align="right" valign="top"><a id="a8ea6c8834923f78eb5c362f835caf1e8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnException</b> (const char *message) override</td></tr>
+<tr class="separator:a8ea6c8834923f78eb5c362f835caf1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab536e9bddbf0f498f6e940734f6fbcf7"><td class="memItemLeft" align="right" valign="top"><a id="ab536e9bddbf0f498f6e940734f6fbcf7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnError</b> (const char *window, const char *message) override</td></tr>
+<tr class="separator:ab536e9bddbf0f498f6e940734f6fbcf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac16430e34f38460e951aead675e39d"><td class="memItemLeft" align="right" valign="top"><a id="abac16430e34f38460e951aead675e39d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnWarning</b> (const char *window, const char *message) override</td></tr>
+<tr class="separator:abac16430e34f38460e951aead675e39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae17f658c537ef852a344c1738d4dfd18"><td class="memItemLeft" align="right" valign="top"><a id="ae17f658c537ef852a344c1738d4dfd18"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrintf</b> (const char *window, const char *message) override</td></tr>
+<tr class="separator:ae17f658c537ef852a344c1738d4dfd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d14dc3f616c8f47a922270c1f418620"><td class="memItemLeft" align="right" valign="top"><a id="a8d14dc3f616c8f47a922270c1f418620"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_log_panel_1_1_a_z_trace_print_f_log_tab.html#a8d14dc3f616c8f47a922270c1f418620">LogTraceMessage</a> (Logging::LogLine::LogType type, const char *window, const char *message, void *data=nullptr)</td></tr>
 <tr class="memdesc:a8d14dc3f616c8f47a922270c1f418620"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a message received from the TraceMessageBus. <br /></td></tr>
@@ -229,7 +229,7 @@ static QIcon &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebu
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:39 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

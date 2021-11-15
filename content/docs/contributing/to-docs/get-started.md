@@ -6,7 +6,7 @@ toc: true
 weight: 200
 ---
 
-Anyone can be a contributor to Open 3D Engine (O3DE) docs and determine their own level of participation. Here, we'll help you navigate the documentation process so you can decide how you'd like to contribute.
+Anyone can be a contributor to **Open 3D Engine (O3DE)** docs and determine their own level of participation. Here, we'll help you navigate the documentation process so you can decide how you'd like to contribute.
 
 ## Before you do anything
 
@@ -26,6 +26,10 @@ Some documentation, such as **API Reference**, is generated automatically. Some 
 {{< note >}}
 Participation as a contributor requires a [GitHub account](https://github.com/signup).
 {{< /note >}}
+
+Don't want to read tiresome words, and prefer a snappy video to help you get started? Watch this video, instead!
+
+{{< youtube id="DGz9Clo6EKw" title="Contributing to O3DE Documentation" >}}
 
 ## Technical information
 

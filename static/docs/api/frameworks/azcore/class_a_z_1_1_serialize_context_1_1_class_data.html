@@ -73,10 +73,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearAttributes</b> (
 <tr class="separator:aae8e5316438a072a35082ff08bb618aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a29e683092887993b5b62e75f6d82b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_attribute.html">Attribute</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_data.html#a4a29e683092887993b5b62e75f6d82b3">FindAttribute</a> (AttributeId attributeId) const</td></tr>
 <tr class="separator:a4a29e683092887993b5b62e75f6d82b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a045d70e7f64efe34ddddeb153466ad6a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_data.html#a045d70e7f64efe34ddddeb153466ad6a">CanConvertFromType</a> (const <a class="el" href="namespace_a_z.html#a6ce25a76e8886c88778e95866aa51150">TypeId</a> &amp;convertibleTypeId, <a class="el" href="class_a_z_1_1_serialize_context.html">AZ::SerializeContext</a> &amp;serializeContext) const</td></tr>
+<tr class="memitem:a045d70e7f64efe34ddddeb153466ad6a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_data.html#a045d70e7f64efe34ddddeb153466ad6a">CanConvertFromType</a> (const <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp;convertibleTypeId, <a class="el" href="class_a_z_1_1_serialize_context.html">AZ::SerializeContext</a> &amp;serializeContext) const</td></tr>
 <tr class="separator:a045d70e7f64efe34ddddeb153466ad6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc61fe42fb9f5d7b00c38430bc16e321"><td class="memItemLeft" align="right" valign="top"><a id="abc61fe42fb9f5d7b00c38430bc16e321"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertFromType</b> (void *&amp;convertibleTypePtr, const <a class="el" href="namespace_a_z.html#a6ce25a76e8886c88778e95866aa51150">TypeId</a> &amp;convertibleTypeId, void *classPtr, <a class="el" href="class_a_z_1_1_serialize_context.html">AZ::SerializeContext</a> &amp;serializeContext) const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertFromType</b> (void *&amp;convertibleTypePtr, const <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp;convertibleTypeId, void *classPtr, <a class="el" href="class_a_z_1_1_serialize_context.html">AZ::SerializeContext</a> &amp;serializeContext) const</td></tr>
 <tr class="separator:abc61fe42fb9f5d7b00c38430bc16e321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af99ac03a0c8a60983e9ec1b8986174e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context.html#a744fde9cdda7fab9939793a55efe4416">ClassPersistentId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_data.html#af99ac03a0c8a60983e9ec1b8986174e8">GetPersistentId</a> (const <a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> &amp;context) const</td></tr>
 <tr class="memdesc:af99ac03a0c8a60983e9ec1b8986174e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the persistence id (check base classes)  <a href="class_a_z_1_1_serialize_context_1_1_class_data.html#af99ac03a0c8a60983e9ec1b8986174e8">More...</a><br /></td></tr>
@@ -167,7 +167,7 @@ IDataSerializerPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="
         <tr>
           <td class="memname">bool AZ::SerializeContext::ClassData::CanConvertFromType </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespace_a_z.html#a6ce25a76e8886c88778e95866aa51150">TypeId</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp;&#160;</td>
           <td class="paramname"><em>convertibleTypeId</em>, </td>
         </tr>
         <tr>
@@ -191,8 +191,7 @@ IDataSerializerPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if a non-null memory address has been returned that can store the convertible type <br  />
- </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if a non-null memory address has been returned that can store the convertible type </dd></dl>
 
 </div>
 </div>
@@ -263,7 +262,7 @@ IDataSerializerPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:48 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:18:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

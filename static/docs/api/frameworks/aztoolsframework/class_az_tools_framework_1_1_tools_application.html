@@ -76,9 +76,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a72d8002f8dcdeac111546cbdfaf90c34"><td class="memItemLeft" align="right" valign="top"><a id="a72d8002f8dcdeac111546cbdfaf90c34"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ToolsApplication</b> (int *argc=nullptr, char ***argv=nullptr)</td></tr>
 <tr class="separator:a72d8002f8dcdeac111546cbdfaf90c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cb63cbd8d5da0ba78f632a50efdc25c"><td class="memItemLeft" align="right" valign="top"><a id="a7cb63cbd8d5da0ba78f632a50efdc25c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Stop</b> ()</td></tr>
-<tr class="separator:a7cb63cbd8d5da0ba78f632a50efdc25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62f123ed966192ac9c8320b2fe30d90e"><td class="memItemLeft" align="right" valign="top"><a id="a62f123ed966192ac9c8320b2fe30d90e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Stop</b> () override</td></tr>
+<tr class="separator:a62f123ed966192ac9c8320b2fe30d90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57c2473116fe82dfb540d33727bcf312"><td class="memItemLeft" align="right" valign="top"><a id="a57c2473116fe82dfb540d33727bcf312"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateReflectionManager</b> () override</td></tr>
 <tr class="separator:a57c2473116fe82dfb540d33727bcf312"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,6 +229,9 @@ AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>CreateNewEnti
 <tr class="memitem:a304bff7076e203dab8e242d110afc8c0"><td class="memItemLeft" align="right" valign="top"><a id="a304bff7076e203dab8e242d110afc8c0"></a>
 AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetExistingEntity</b> (AZ::u64 id) override</td></tr>
 <tr class="separator:a304bff7076e203dab8e242d110afc8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30563b3773aab7f07c8d6ed74e9f9b47"><td class="memItemLeft" align="right" valign="top"><a id="a30563b3773aab7f07c8d6ed74e9f9b47"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>EntityExists</b> (AZ::EntityId id) override</td></tr>
+<tr class="separator:a30563b3773aab7f07c8d6ed74e9f9b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af16983377993167c867b29023c7af047"><td class="memItemLeft" align="right" valign="top"><a id="af16983377993167c867b29023c7af047"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteSelected</b> () override</td></tr>
 <tr class="separator:af16983377993167c867b29023c7af047"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -394,7 +397,7 @@ EntityIdSet&#160;</td><td class="memItemRight" valign="bottom"><b>m_isolatedEnti
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:38 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:22 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

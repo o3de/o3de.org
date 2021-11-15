@@ -107,15 +107,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Free</b> (void *ptr)<
 <tr class="memitem:a7c36f6f9460ed47f858cb5f9a61872db"><td class="memItemLeft" align="right" valign="top"><a id="a7c36f6f9460ed47f858cb5f9a61872db"></a>
 ErrorEnum&#160;</td><td class="memItemRight" valign="bottom"><b>Refresh</b> (<a class="el" href="struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_base.html">FileEntryBase</a> *pFileEntry)</td></tr>
 <tr class="separator:a7c36f6f9460ed47f858cb5f9a61872db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74db08735c142468cbe021aa75b637de"><td class="memItemLeft" align="right" valign="top"><a id="a74db08735c142468cbe021aa75b637de"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetSize</b> () const</td></tr>
-<tr class="separator:a74db08735c142468cbe021aa75b637de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c1bf07b65e4b4a74883cb75bd7d55c6"><td class="memItemLeft" align="right" valign="top"><a id="a5c1bf07b65e4b4a74883cb75bd7d55c6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOwnerOf</b> (const <a class="el" href="struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry.html">FileEntry</a> *pFileEntry) const</td></tr>
 <tr class="separator:a5c1bf07b65e4b4a74883cb75bd7d55c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a936e20f61adfaa1e49c2cb39c5fe1a57"><td class="memItemLeft" align="right" valign="top"><a id="a936e20f61adfaa1e49c2cb39c5fe1a57"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFilePath</b> () const</td></tr>
-<tr class="separator:a936e20f61adfaa1e49c2cb39c5fe1a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e023fc9b3cd021875dd897ea752a58c"><td class="memItemLeft" align="right" valign="top"><a id="a0e023fc9b3cd021875dd897ea752a58c"></a>
+AZ::IO::PathView&#160;</td><td class="memItemRight" valign="bottom"><b>GetFilePath</b> () const</td></tr>
+<tr class="separator:a0e023fc9b3cd021875dd897ea752a58c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbd1ed10c4130e315d794dd9e11f5b60"><td class="memItemLeft" align="right" valign="top"><a id="abbd1ed10c4130e315d794dd9e11f5b60"></a>
 <a class="el" href="class_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_tree.html">FileEntryTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetRoot</b> ()</td></tr>
 <tr class="separator:abbd1ed10c4130e315d794dd9e11f5b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,12 +185,12 @@ AZ::IO::HandleType&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileH
 <tr class="memitem:adb50a35356089f2b478d03f1f37a9229"><td class="memItemLeft" align="right" valign="top"><a id="adb50a35356089f2b478d03f1f37a9229"></a>
 AZ::IAllocatorAllocate *&#160;</td><td class="memItemRight" valign="bottom"><b>m_allocator</b></td></tr>
 <tr class="separator:adb50a35356089f2b478d03f1f37a9229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56221185e75eca007a52ff29bfb94198"><td class="memItemLeft" align="right" valign="top"><a id="a56221185e75eca007a52ff29bfb94198"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_strFilePath</b></td></tr>
-<tr class="separator:a56221185e75eca007a52ff29bfb94198"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdcf0980b8d7cb3318840e86c32109ba"><td class="memItemLeft" align="right" valign="top"><a id="acdcf0980b8d7cb3318840e86c32109ba"></a>
-AZStd::unordered_set&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_relativePathPool</b></td></tr>
-<tr class="separator:acdcf0980b8d7cb3318840e86c32109ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b727b6a1f47bf20ce0186c06783f58"><td class="memItemLeft" align="right" valign="top"><a id="a57b727b6a1f47bf20ce0186c06783f58"></a>
+AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>m_strFilePath</b></td></tr>
+<tr class="separator:a57b727b6a1f47bf20ce0186c06783f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a464a3bb6f3571c899f135f18802fe8ad"><td class="memItemLeft" align="right" valign="top"><a id="a464a3bb6f3571c899f135f18802fe8ad"></a>
+AZStd::unordered_set&lt; AZ::IO::Path &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_relativePathPool</b></td></tr>
+<tr class="separator:a464a3bb6f3571c899f135f18802fe8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50b777eb5c8395f38e2fb46031ea5572"><td class="memItemLeft" align="right" valign="top"><a id="a50b777eb5c8395f38e2fb46031ea5572"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_lCDROffset</b></td></tr>
 <tr class="separator:a50b777eb5c8395f38e2fb46031ea5572"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,7 +231,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FileEntryTransaction
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:21 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:03 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

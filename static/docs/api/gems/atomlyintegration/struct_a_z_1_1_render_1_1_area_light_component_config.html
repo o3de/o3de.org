@@ -152,10 +152,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_area_light_component_config.html#a5d397d65527c65696c14eb9f7ede6a18">IsShadowPcfDisabled</a> () const</td></tr>
 <tr class="memdesc:a5d397d65527c65696c14eb9f7ede6a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if pcf shadows are disabled. <br /></td></tr>
 <tr class="separator:a5d397d65527c65696c14eb9f7ede6a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3b1285b59dd5a840b1e0f001d23c4fc"><td class="memItemLeft" align="right" valign="top"><a id="ad3b1285b59dd5a840b1e0f001d23c4fc"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_area_light_component_config.html#ad3b1285b59dd5a840b1e0f001d23c4fc">IsPcfBoundarySearchDisabled</a> () const</td></tr>
-<tr class="memdesc:ad3b1285b59dd5a840b1e0f001d23c4fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if pcf boundary search is disabled. <br /></td></tr>
-<tr class="separator:ad3b1285b59dd5a840b1e0f001d23c4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b97465b595e698b09e8102bcf078773"><td class="memItemLeft" align="right" valign="top"><a id="a6b97465b595e698b09e8102bcf078773"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_area_light_component_config.html#a6b97465b595e698b09e8102bcf078773">IsEsmDisabled</a> () const</td></tr>
 <tr class="memdesc:a6b97465b595e698b09e8102bcf078773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if exponential shadow maps are disabled. <br /></td></tr>
@@ -208,21 +204,15 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_outerShutterAngleD
 <tr class="memitem:a09e3aafee32e192ef6ddfb407d991720"><td class="memItemLeft" align="right" valign="top"><a id="a09e3aafee32e192ef6ddfb407d991720"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_enableShadow</b> = false</td></tr>
 <tr class="separator:a09e3aafee32e192ef6ddfb407d991720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a771e6e2ed550decb751626964d194c0a"><td class="memItemLeft" align="right" valign="top"><a id="a771e6e2ed550decb751626964d194c0a"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_bias</b> = 0.1f</td></tr>
+<tr class="separator:a771e6e2ed550decb751626964d194c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50fdbc1d4448d3d87813566fb178abf8"><td class="memItemLeft" align="right" valign="top"><a id="a50fdbc1d4448d3d87813566fb178abf8"></a>
 ShadowmapSize&#160;</td><td class="memItemRight" valign="bottom"><b>m_shadowmapMaxSize</b> = ShadowmapSize::Size256</td></tr>
 <tr class="separator:a50fdbc1d4448d3d87813566fb178abf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b676966c4938dc34f310ecd5374ee7e"><td class="memItemLeft" align="right" valign="top"><a id="a1b676966c4938dc34f310ecd5374ee7e"></a>
 ShadowFilterMethod&#160;</td><td class="memItemRight" valign="bottom"><b>m_shadowFilterMethod</b> = ShadowFilterMethod::None</td></tr>
 <tr class="separator:a1b676966c4938dc34f310ecd5374ee7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a9466ba8772434d890721229c8d90eb"><td class="memItemLeft" align="right" valign="top"><a id="a9a9466ba8772434d890721229c8d90eb"></a>
-PcfMethod&#160;</td><td class="memItemRight" valign="bottom"><b>m_pcfMethod</b> = PcfMethod::Bicubic</td></tr>
-<tr class="separator:a9a9466ba8772434d890721229c8d90eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac35f48c45096f831a6140f59782eedfc"><td class="memItemLeft" align="right" valign="top"><a id="ac35f48c45096f831a6140f59782eedfc"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_boundaryWidthInDegrees</b> = 0.25f</td></tr>
-<tr class="separator:ac35f48c45096f831a6140f59782eedfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f03d4a072a1d591bc41a45229471114"><td class="memItemLeft" align="right" valign="top"><a id="a9f03d4a072a1d591bc41a45229471114"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_predictionSampleCount</b> = 4</td></tr>
-<tr class="separator:a9f03d4a072a1d591bc41a45229471114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af31d6cd514b313387ec9dfc49378133d"><td class="memItemLeft" align="right" valign="top"><a id="af31d6cd514b313387ec9dfc49378133d"></a>
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_filteringSampleCount</b> = 12</td></tr>
 <tr class="separator:af31d6cd514b313387ec9dfc49378133d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,7 +232,7 @@ static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>Cut
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:26 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:22 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

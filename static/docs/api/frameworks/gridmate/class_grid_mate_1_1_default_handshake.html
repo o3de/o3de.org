@@ -65,36 +65,36 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c0f3c5479dc3e8abd90daa3228d7cb1"><td class="memItemLeft" align="right" valign="top"><a id="a7c0f3c5479dc3e8abd90daa3228d7cb1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DefaultHandshake</b> (unsigned int timeOut, VersionType version)</td></tr>
 <tr class="separator:a7c0f3c5479dc3e8abd90daa3228d7cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7d57badc0e9d3ead09a44dd47bc1e67"><td class="memItemLeft" align="right" valign="top"><a id="ae7d57badc0e9d3ead09a44dd47bc1e67"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_default_handshake.html#ae7d57badc0e9d3ead09a44dd47bc1e67">OnInitiate</a> (<a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> id, <a class="el" href="class_grid_mate_1_1_write_buffer.html">WriteBuffer</a> &amp;wb)</td></tr>
-<tr class="memdesc:ae7d57badc0e9d3ead09a44dd47bc1e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called from the system to write initial handshake data. <br /></td></tr>
-<tr class="separator:ae7d57badc0e9d3ead09a44dd47bc1e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeabc9941aba0f8810036fc404e83392e"><td class="memItemLeft" align="right" valign="top">virtual HandshakeErrorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_default_handshake.html#aeabc9941aba0f8810036fc404e83392e">OnReceiveRequest</a> (<a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> id, <a class="el" href="class_grid_mate_1_1_read_buffer.html">ReadBuffer</a> &amp;rb, <a class="el" href="class_grid_mate_1_1_write_buffer.html">WriteBuffer</a> &amp;wb)</td></tr>
-<tr class="separator:aeabc9941aba0f8810036fc404e83392e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30d3d21f462f05f44e018872e0c52796"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_default_handshake.html#a30d3d21f462f05f44e018872e0c52796">OnConfirmRequest</a> (<a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> id, <a class="el" href="class_grid_mate_1_1_read_buffer.html">ReadBuffer</a> &amp;rb)</td></tr>
-<tr class="separator:a30d3d21f462f05f44e018872e0c52796"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a924727afb782aad773d532b98850a75d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_default_handshake.html#a924727afb782aad773d532b98850a75d">OnReceiveAck</a> (<a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> id, <a class="el" href="class_grid_mate_1_1_read_buffer.html">ReadBuffer</a> &amp;rb)</td></tr>
-<tr class="separator:a924727afb782aad773d532b98850a75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab321c3a57eba2fd422df45fb254af47f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_default_handshake.html#ab321c3a57eba2fd422df45fb254af47f">OnConfirmAck</a> (<a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> id, <a class="el" href="class_grid_mate_1_1_read_buffer.html">ReadBuffer</a> &amp;rb)</td></tr>
-<tr class="separator:ab321c3a57eba2fd422df45fb254af47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a017557f9a8de1d65c4fb81e16a71ab2b"><td class="memItemLeft" align="right" valign="top"><a id="a017557f9a8de1d65c4fb81e16a71ab2b"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_default_handshake.html#a017557f9a8de1d65c4fb81e16a71ab2b">OnNewConnection</a> (const <a class="el" href="namespace_grid_mate.html#a5ea6ed0f635b270ab1a96cf6c5deef51">string</a> &amp;address)</td></tr>
-<tr class="memdesc:a017557f9a8de1d65c4fb81e16a71ab2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if you want to reject early reject a connection. <br /></td></tr>
-<tr class="separator:a017557f9a8de1d65c4fb81e16a71ab2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee3c0d0058488459b2b49ae2510a7c67"><td class="memItemLeft" align="right" valign="top"><a id="aee3c0d0058488459b2b49ae2510a7c67"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_default_handshake.html#aee3c0d0058488459b2b49ae2510a7c67">OnDisconnect</a> (<a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> id)</td></tr>
-<tr class="memdesc:aee3c0d0058488459b2b49ae2510a7c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we close a connection. <br /></td></tr>
-<tr class="separator:aee3c0d0058488459b2b49ae2510a7c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66ff5eaff9136e79a9a9dbfdeb2b1855"><td class="memItemLeft" align="right" valign="top"><a id="a66ff5eaff9136e79a9a9dbfdeb2b1855"></a>
-virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_default_handshake.html#a66ff5eaff9136e79a9a9dbfdeb2b1855">GetHandshakeTimeOutMS</a> () const</td></tr>
-<tr class="memdesc:a66ff5eaff9136e79a9a9dbfdeb2b1855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return timeout in milliseconds of the handshake procedure. <br /></td></tr>
-<tr class="separator:a66ff5eaff9136e79a9a9dbfdeb2b1855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee50b8d54fb1fdd5c25200e589a0c60"><td class="memItemLeft" align="right" valign="top"><a id="acee50b8d54fb1fdd5c25200e589a0c60"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_default_handshake.html#acee50b8d54fb1fdd5c25200e589a0c60">OnInitiate</a> (<a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> id, <a class="el" href="class_grid_mate_1_1_write_buffer.html">WriteBuffer</a> &amp;wb) override</td></tr>
+<tr class="memdesc:acee50b8d54fb1fdd5c25200e589a0c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called from the system to write initial handshake data. <br /></td></tr>
+<tr class="separator:acee50b8d54fb1fdd5c25200e589a0c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ed62fe6e37b6700476411e611f5b55d"><td class="memItemLeft" align="right" valign="top">HandshakeErrorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_default_handshake.html#a9ed62fe6e37b6700476411e611f5b55d">OnReceiveRequest</a> (<a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> id, <a class="el" href="class_grid_mate_1_1_read_buffer.html">ReadBuffer</a> &amp;rb, <a class="el" href="class_grid_mate_1_1_write_buffer.html">WriteBuffer</a> &amp;wb) override</td></tr>
+<tr class="separator:a9ed62fe6e37b6700476411e611f5b55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063a4f7e2bf5df5d47bd4c5a24c69f33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_default_handshake.html#a063a4f7e2bf5df5d47bd4c5a24c69f33">OnConfirmRequest</a> (<a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> id, <a class="el" href="class_grid_mate_1_1_read_buffer.html">ReadBuffer</a> &amp;rb) override</td></tr>
+<tr class="separator:a063a4f7e2bf5df5d47bd4c5a24c69f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0092357e1167a67efb214adb1b50f38e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_default_handshake.html#a0092357e1167a67efb214adb1b50f38e">OnReceiveAck</a> (<a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> id, <a class="el" href="class_grid_mate_1_1_read_buffer.html">ReadBuffer</a> &amp;rb) override</td></tr>
+<tr class="separator:a0092357e1167a67efb214adb1b50f38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f170d4c7d179db96ce840095eba5be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_default_handshake.html#ae2f170d4c7d179db96ce840095eba5be">OnConfirmAck</a> (<a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> id, <a class="el" href="class_grid_mate_1_1_read_buffer.html">ReadBuffer</a> &amp;rb) override</td></tr>
+<tr class="separator:ae2f170d4c7d179db96ce840095eba5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a808ee2f5d57630452cc002c733d6e"><td class="memItemLeft" align="right" valign="top"><a id="a10a808ee2f5d57630452cc002c733d6e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_default_handshake.html#a10a808ee2f5d57630452cc002c733d6e">OnNewConnection</a> (const AZStd::string &amp;address) override</td></tr>
+<tr class="memdesc:a10a808ee2f5d57630452cc002c733d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if you want to reject early reject a connection. <br /></td></tr>
+<tr class="separator:a10a808ee2f5d57630452cc002c733d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432b4ca5c75e77b5f62ca20893fcd838"><td class="memItemLeft" align="right" valign="top"><a id="a432b4ca5c75e77b5f62ca20893fcd838"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_default_handshake.html#a432b4ca5c75e77b5f62ca20893fcd838">OnDisconnect</a> (<a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> id) override</td></tr>
+<tr class="memdesc:a432b4ca5c75e77b5f62ca20893fcd838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we close a connection. <br /></td></tr>
+<tr class="separator:a432b4ca5c75e77b5f62ca20893fcd838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a99322632815c5b2e0df392c821d61"><td class="memItemLeft" align="right" valign="top"><a id="a28a99322632815c5b2e0df392c821d61"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_default_handshake.html#a28a99322632815c5b2e0df392c821d61">GetHandshakeTimeOutMS</a> () const override</td></tr>
+<tr class="memdesc:a28a99322632815c5b2e0df392c821d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return timeout in milliseconds of the handshake procedure. <br /></td></tr>
+<tr class="separator:a28a99322632815c5b2e0df392c821d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Default handshake interface. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab321c3a57eba2fd422df45fb254af47f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab321c3a57eba2fd422df45fb254af47f">&#9670;&nbsp;</a></span>OnConfirmAck()</h2>
+<a id="ae2f170d4c7d179db96ce840095eba5be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f170d4c7d179db96ce840095eba5be">&#9670;&nbsp;</a></span>OnConfirmAck()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -103,7 +103,7 @@ virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool GridMate::DefaultHandshake::OnConfirmAck </td>
+          <td class="memname">bool GridMate::DefaultHandshake::OnConfirmAck </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a>&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -122,7 +122,7 @@ virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -132,8 +132,8 @@ virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
 
 </div>
 </div>
-<a id="a30d3d21f462f05f44e018872e0c52796"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30d3d21f462f05f44e018872e0c52796">&#9670;&nbsp;</a></span>OnConfirmRequest()</h2>
+<a id="a063a4f7e2bf5df5d47bd4c5a24c69f33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a063a4f7e2bf5df5d47bd4c5a24c69f33">&#9670;&nbsp;</a></span>OnConfirmRequest()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -142,7 +142,7 @@ virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool GridMate::DefaultHandshake::OnConfirmRequest </td>
+          <td class="memname">bool GridMate::DefaultHandshake::OnConfirmRequest </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a>&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -161,7 +161,7 @@ virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -171,8 +171,8 @@ virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
 
 </div>
 </div>
-<a id="a924727afb782aad773d532b98850a75d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a924727afb782aad773d532b98850a75d">&#9670;&nbsp;</a></span>OnReceiveAck()</h2>
+<a id="a0092357e1167a67efb214adb1b50f38e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0092357e1167a67efb214adb1b50f38e">&#9670;&nbsp;</a></span>OnReceiveAck()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,7 +181,7 @@ virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool GridMate::DefaultHandshake::OnReceiveAck </td>
+          <td class="memname">bool GridMate::DefaultHandshake::OnReceiveAck </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a>&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -200,18 +200,18 @@ virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Called when we receive Ack from the other system on our initial data <a class="el" href="class_grid_mate_1_1_default_handshake.html#ae7d57badc0e9d3ead09a44dd47bc1e67">OnInitiate</a>. return true to accept the ack or false to reject the handshake. </p>
+<p>Called when we receive Ack from the other system on our initial data <a class="el" href="class_grid_mate_1_1_default_handshake.html#acee50b8d54fb1fdd5c25200e589a0c60">OnInitiate</a>. return true to accept the ack or false to reject the handshake. </p>
 
 <p>Implements <a class="el" href="class_grid_mate_1_1_handshake.html#ad15de2027b14a1120b90f8a3eca8a76d">GridMate::Handshake</a>.</p>
 
 </div>
 </div>
-<a id="aeabc9941aba0f8810036fc404e83392e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeabc9941aba0f8810036fc404e83392e">&#9670;&nbsp;</a></span>OnReceiveRequest()</h2>
+<a id="a9ed62fe6e37b6700476411e611f5b55d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed62fe6e37b6700476411e611f5b55d">&#9670;&nbsp;</a></span>OnReceiveRequest()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -220,7 +220,7 @@ virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual HandshakeErrorCode GridMate::DefaultHandshake::OnReceiveRequest </td>
+          <td class="memname">HandshakeErrorCode GridMate::DefaultHandshake::OnReceiveRequest </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a>&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -245,7 +245,7 @@ virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -261,7 +261,7 @@ virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:43 for Open 3D Engine GridMate API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:28 for Open 3D Engine GridMate API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

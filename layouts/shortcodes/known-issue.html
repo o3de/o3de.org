@@ -1,0 +1,31 @@
+{{/* This shortcode creates a known-issue callout.  */}}
+
+<blockquote class="known-issue callout card border-warning">
+    <div class="row no-gutters">
+      <div class="col-md-2 bg-warning text-white p-2"><strong>Known issue: </strong></div> 
+      <div class="col p-2">  <p>{{ trim .Inner " \n" | markdownify }}</p>
+        <!-- Find GitHub issue <a href="{{.Get "issue"}}">here</a>. -->
+            {{ if .Get "link" }}
+                You can find information about this issue here <a href="{{.Get "issue"}}">here</a>.
+            {{else}}
+                There is no information listed for this issue. Add information by referencing an <a href="https://github.com/o3de/o3de/issues">issue</a>, <a href="https://github.com/o3de/o3de/discussions">discussion</a>, or <a href="https://github.com/o3de/o3de/pulls">pull request</a>.
+            {{end}}
+      </div>
+
+      
+      
+    </div>
+  </blockquote>
+  
+{{/*  
+    Example:
+
+    {{< todo issue="https://github.com/o3de/o3de.org/issues/432" >}}
+    At this time, you cannot do X. This will be resolved by YZ in development. 
+    {{< /todo >}}
+    
+    
+    {{< todo >}}
+    The details of this issue are XYZ. There is no link to the issue.
+    {{< /todo >}}    
+*/}}

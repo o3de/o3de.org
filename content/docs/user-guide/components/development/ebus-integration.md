@@ -119,8 +119,9 @@ Another best practice is to use descriptive names in EBuses and avoid overloaded
 
 A component uses its notification bus to inform other components and the rest of the engine about relevant changes. To do this, it sends notifications in the form of EBus events to any class that monitors the bus. To monitor the bus, classes implement the notification bus handler interface \(in the case of `TransformComponent`, this is `AZ::TransformNotificationBus::Handler`.\)
 
-**Note**
+{{< note >}}
 A request bus sends messages **to** a component; a notification bus sends messages **from** a component.
+{{< /note >}}
 
 ### Transform Notification Event Group 
 

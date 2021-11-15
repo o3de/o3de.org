@@ -91,7 +91,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetProbeTransform</b>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>BakeProbe</b> (const ReflectionProbeHandle &amp;probe, BuildCubeMapCallback callback, const AZStd::string &amp;relativePath) override</td></tr>
 <tr class="separator:a5bcd090acae15d68944b36b0313ec704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dc1adc1513192ad4531e21673168084"><td class="memItemLeft" align="right" valign="top"><a id="a5dc1adc1513192ad4531e21673168084"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CheckCubeMapAssetNotification</b> (const AZStd::string &amp;relativePath, Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image_asset.html">RPI::StreamingImageAsset</a> &gt; &amp;outCubeMapAsset, CubeMapAssetNotificationType &amp;outNotificationType) override</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CheckCubeMapAssetNotification</b> (const AZStd::string &amp;relativePath, <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image_asset.html">RPI::StreamingImageAsset</a> &gt; &amp;outCubeMapAsset, CubeMapAssetNotificationType &amp;outNotificationType) override</td></tr>
 <tr class="separator:a5dc1adc1513192ad4531e21673168084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8374759228bc2e530f6c8552118230e4"><td class="memItemLeft" align="right" valign="top"><a id="a8374759228bc2e530f6c8552118230e4"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsCubeMapReferenced</b> (const AZStd::string &amp;relativePath) override</td></tr>
@@ -102,6 +102,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValidProbeHandle</b
 <tr class="memitem:a3881415d89ccc67736ea627b472af801"><td class="memItemLeft" align="right" valign="top"><a id="a3881415d89ccc67736ea627b472af801"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowProbeVisualization</b> (const ReflectionProbeHandle &amp;probe, bool showVisualization) override</td></tr>
 <tr class="separator:a3881415d89ccc67736ea627b472af801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aada9a1a47a75c0824c49ecb0da5ad1ac"><td class="memItemLeft" align="right" valign="top"><a id="aada9a1a47a75c0824c49ecb0da5ad1ac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRenderExposure</b> (const ReflectionProbeHandle &amp;probe, float renderExposure) override</td></tr>
+<tr class="separator:aada9a1a47a75c0824c49ecb0da5ad1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac840d4822f90c79be05f25deef41bab8"><td class="memItemLeft" align="right" valign="top"><a id="ac840d4822f90c79be05f25deef41bab8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBakeExposure</b> (const ReflectionProbeHandle &amp;probe, float bakeExposure) override</td></tr>
+<tr class="separator:ac840d4822f90c79be05f25deef41bab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7f26e0dfa3e24a7e97cbe6a907a8b5e"><td class="memItemLeft" align="right" valign="top"><a id="ac7f26e0dfa3e24a7e97cbe6a907a8b5e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_reflection_probe_feature_processor.html#ac7f26e0dfa3e24a7e97cbe6a907a8b5e">Activate</a> () override</td></tr>
 <tr class="memdesc:ac7f26e0dfa3e24a7e97cbe6a907a8b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform any necessary activation and gives access to owning Scene. <br /></td></tr>
@@ -161,7 +167,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:13 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

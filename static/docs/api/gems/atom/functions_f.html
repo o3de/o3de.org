@@ -56,7 +56,6 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_stage_function.html#addd16e6901db553d93f39498ebc58983">AZ::RHI::ShaderStageFunction</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_pipeline_state_for_draw.html#a36b2a6b174a850606145c2140a70785d">AZ::RPI::PipelineStateForDraw</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group_layout.html#a2d856e921d3b654974b8a4f6b1e7e13d">AZ::RPI::ShaderOptionGroupLayout</a>
-, <a class="el" href="class_a_z_1_1_vulkan_1_1_shader_descriptor.html#abecd86176abf40999e757a447d35132e">AZ::Vulkan::ShaderDescriptor</a>
 </li>
 <li>FinalizeDrawLists()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a1e92bb51c1178ac3c5e6639c89074084">AZ::RPI::View</a>
@@ -69,7 +68,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_object_cache.html#abc6ef9dcbd2a39e4cb64a3eaaa5666bb">AZ::RHI::ObjectCache&lt; ObjectType, KeyType, EvictionCallback &gt;</a>
 </li>
 <li>FindAttachment()
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_attachment_database.html#a66132393eaf348f472b0b453bf18f727">AZ::RHI::FrameGraphAttachmentDatabase</a>
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_attachment_database.html#a45e6725dd64f291d4fc6a370c4596f73">AZ::RHI::FrameGraphAttachmentDatabase</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_attachment_interface.html#a0c1c439bc8ab86d4a101a6a27e946890">AZ::RHI::FrameGraphAttachmentInterface</a>
 </li>
 <li>FindCapableCrossQueueProducer()
@@ -91,9 +90,13 @@ $(function() {
 <li>FindCrossQueueProducer()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope.html#ae5bbe752a6c09aeed782300c0bbe32e7">AZ::RHI::Scope</a>
 </li>
-<li>FindFallbackShaderResourceGroupAsset()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#a7ebb55e151fead0f9ddcd8731534e411">AZ::RPI::Shader</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html#aacea71ab8dfa6f626804f70949d1424c">AZ::RPI::ShaderAsset</a>
+<li>FindFallbackShaderResourceGroupLayout()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#a156c3229ba7e996397dab8b754981d38">AZ::RPI::Shader</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html#a9fd1e23554ab327a5588b222cc971703">AZ::RPI::ShaderAsset</a>
+</li>
+<li>FindFirstPass()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#ae3a2245a44016642a069dc4e6b0b4148">AZ::RPI::PassSystem</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a14859d6743b106159a2f6258af99a08f">AZ::RPI::PassSystemInterface</a>
 </li>
 <li>FindMaterialAssetsUsingShader()
 : <a class="el" href="class_shader_management_console_1_1_shader_management_console_requests.html#ad20e7f35f99304558b7fe279bf55f472">ShaderManagementConsole::ShaderManagementConsoleRequests</a>
@@ -105,6 +108,9 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_functor_source_data_1_1_editor_context.html#a05b7fdf9102fc1153b7cbfb36a4a7a07">AZ::RPI::MaterialFunctorSourceData::EditorContext</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_functor_source_data_1_1_runtime_context.html#afafcb0dd251e1d5cea866973e583ba2a">AZ::RPI::MaterialFunctorSourceData::RuntimeContext</a>
 </li>
+<li>FindMaterialSlot()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html#aee8eb3596f871388fffb1407e04fe147">AZ::RPI::ModelAsset</a>
+</li>
 <li>FindMoreCapableCrossQueueProducer()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope.html#a86cfe05e977cd73da7f4cc4cb71e2306">AZ::RHI::Scope</a>
 </li>
@@ -113,28 +119,22 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_attachment_image_pool.html#a632f2c48d7ffb3137cd82aeeace4b8a1">AZ::RPI::AttachmentImagePool</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer.html#a16a766800901489e4a668b7a756d939c">AZ::RPI::Buffer</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_pool.html#ae1c008454398beccc38b44d9e04c7173">AZ::RPI::BufferPool</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#aa4d0e4ad03415a4f7985527e2044bb08">AZ::RPI::Shader</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a1f224e74b43cbe7ec908dba23790bcd2">AZ::RPI::ShaderResourceGroup</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_pool.html#afd3b192e8497c08861f7f00daa2f2104">AZ::RPI::ShaderResourceGroupPool</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#ad65869d6ed2caa338d89ab26be0cda97">AZ::RPI::Shader</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_pool.html#a5605c24e55d42bd1c352582326f954ac">AZ::RPI::ShaderResourceGroupPool</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image.html#a0ca6e98c15a92c386cbdda9494ca47ce">AZ::RPI::StreamingImage</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image_pool.html#a8967dbd5632cfb9ab36401116a41101c">AZ::RPI::StreamingImagePool</a>
 </li>
 <li>FindPass()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_parent_pass.html#a12005bb1c58426e972644786b2dafc38">AZ::RPI::ParentPass</a>
 </li>
-<li>FindPassByNameRecursive()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_parent_pass.html#a514580a1c8ec36f63439c6ebc198d88d">AZ::RPI::ParentPass</a>
-</li>
-<li>FindPasses()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_library.html#aba023e2fb6c631bfda0476c00e52da60">AZ::RPI::PassLibrary</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a4572b682546a8aff366f2b4bba69c07f">AZ::RPI::PassSystem</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a510ede393a2ed708994daed045a990a0">AZ::RPI::PassSystemInterface</a>
-</li>
 <li>FindPassRequest()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html#a60412af6954154c02f8e217bd2882bd9">AZ::RPI::PassTemplate</a>
 </li>
+<li>FindProperty()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#a34160ceeedb7d7c74d527de8561ce943">AZ::RPI::MaterialTypeSourceData</a>
+</li>
 <li>FindPropertyIndex()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html#acfcdbde28b10316e5973ff427a7ac8ec">AZ::RPI::Material</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html#a2d9ff319c56b9f5a8d2c6869d26516ee">AZ::RPI::Material</a>
 </li>
 <li>FindScope()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph.html#a18889e4744bbce22146c868151b69a84">AZ::RHI::FrameGraph</a>
@@ -158,9 +158,9 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group.html#af4eb91958b3d5e8a692531fe31efb694">AZ::RPI::ShaderOptionGroup</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group_layout.html#ae303b19f666b6199e694f889fba580de">AZ::RPI::ShaderOptionGroupLayout</a>
 </li>
-<li>FindShaderResourceGroupAsset()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#a76f472810d80e4c461adde454adeed81">AZ::RPI::Shader</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html#af5670b30ec3afb10cf88945df043d89a">AZ::RPI::ShaderAsset</a>
+<li>FindShaderResourceGroupLayout()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#afd89cab70f9ef4b60e545d1cf6316464">AZ::RPI::Shader</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html#aae44ec8d4d7be2ec21fe3ab82f97fb32">AZ::RPI::ShaderAsset</a>
 </li>
 <li>FindSwapChainPass()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a5a05ef40c34a17daec128010b9fa7625">AZ::RPI::PassSystem</a>
@@ -171,7 +171,7 @@ $(function() {
 </li>
 <li>FindValue()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_descriptor.html#ac4d0234ece7a7e2374aae9629dd5a01e">AZ::RPI::ShaderOptionDescriptor</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group_layout.html#a44ce583f5fde33f40f22808e2e53988e">AZ::RPI::ShaderOptionGroupLayout</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group_layout.html#a4e8d7f92dc855b2949f9e534035e501b">AZ::RPI::ShaderOptionGroupLayout</a>
 </li>
 <li>FindVariantStableId()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#a2511e12233eb7c359abb63789632dbc4">AZ::RPI::Shader</a>
@@ -189,7 +189,12 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool_database.html#a2d6b7c4139be77a7f0b00051f3c7f145">AZ::RHI::ResourcePoolDatabase</a>
 </li>
 <li>ForEachImagePool()
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool_database.html#a8341e3a33dd47e147a20bf54dc7dede9">AZ::RHI::ResourcePoolDatabase</a>
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool_database.html#a75159f32222ddab98e83d32eec3cef26">AZ::RHI::ResourcePoolDatabase</a>
+</li>
+<li>ForEachPass()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_library.html#a70dcb31806ff9472fdc94baf45479519">AZ::RPI::PassLibrary</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#aa159ed700311033d865392c5d9b1cb78">AZ::RPI::PassSystem</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a55cb6c3724d046ec60740480b92b4c9d">AZ::RPI::PassSystemInterface</a>
 </li>
 <li>ForEachPool()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool_database.html#a80e3493198d70f5e4dda6a0923f1ac46">AZ::RHI::ResourcePoolDatabase</a>
@@ -225,7 +230,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_render_1_1_im_gui_active_context_scope.html#a348b7969f44d1c898b2ae462557a1c2e">AZ::Render::ImGuiActiveContextScope</a>
 </li>
 <li>FromPass()
-: <a class="el" href="class_a_z_1_1_render_1_1_im_gui_active_context_scope.html#ab5f4399d521c89e80c5836d50a023997">AZ::Render::ImGuiActiveContextScope</a>
+: <a class="el" href="class_a_z_1_1_render_1_1_im_gui_active_context_scope.html#ace128d240418bd2565e2c813de055786">AZ::Render::ImGuiActiveContextScope</a>
 </li>
 <li>FunctorResult
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_functor_source_data.html#a17b4aeaff7c2f5eb51197b0a94bd5539">AZ::RPI::MaterialFunctorSourceData</a>
@@ -234,7 +239,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:20 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

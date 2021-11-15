@@ -108,8 +108,12 @@ virtual InputPriorityOrder&#160;</td><td class="memItemRight" valign="bottom"><a
 <tr class="separator:a31f302ad25385d1eecc386dfaddaa22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70e2dcaaf5c71c763d3f7f864de5df83"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a70e2dcaaf5c71c763d3f7f864de5df83">ProcessInput</a> (<a class="el" href="class_multiplayer_1_1_network_input.html">NetworkInput</a> &amp;networkInput, float deltaTime)=0</td></tr>
 <tr class="separator:a70e2dcaaf5c71c763d3f7f864de5df83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00028ee04445882e4bfbdf5bec751e82"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a00028ee04445882e4bfbdf5bec751e82">ProcessInputFromScript</a> ([[maybe_unused]] <a class="el" href="class_multiplayer_1_1_network_input.html">NetworkInput</a> &amp;networkInput, [[maybe_unused]] float deltaTime)</td></tr>
+<tr class="separator:a00028ee04445882e4bfbdf5bec751e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3555c7eb2f7d27940d0e8196b5c19dce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a3555c7eb2f7d27940d0e8196b5c19dce">CreateInput</a> (<a class="el" href="class_multiplayer_1_1_network_input.html">NetworkInput</a> &amp;networkInput, float deltaTime)=0</td></tr>
 <tr class="separator:a3555c7eb2f7d27940d0e8196b5c19dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a732770691746a222ac1c60bb2cf43062"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a732770691746a222ac1c60bb2cf43062">CreateInputFromScript</a> ([[maybe_unused]]<a class="el" href="class_multiplayer_1_1_network_input.html">NetworkInput</a> &amp;networkInput, [[maybe_unused]] float deltaTime)</td></tr>
+<tr class="separator:a732770691746a222ac1c60bb2cf43062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34118d0b9c7eb041d0cef69748e061fc"><td class="memTemplParams" colspan="2"><a id="a34118d0b9c7eb041d0cef69748e061fc"></a>
 template&lt;typename ComponentType &gt; </td></tr>
 <tr class="memitem:a34118d0b9c7eb041d0cef69748e061fc"><td class="memTemplItemLeft" align="right" valign="top">const ComponentType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>FindComponent</b> () const</td></tr>
@@ -181,6 +185,49 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NetBindComponent</b>
 </table>
 </div><div class="memdoc">
 <p>Only valid on a client, should never be invoked on the server. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">networkInput</td><td>input structure to process </td></tr>
+    <tr><td class="paramname">deltaTime</td><td>amount of time to integrate the provided inputs over </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a732770691746a222ac1c60bb2cf43062"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a732770691746a222ac1c60bb2cf43062">&#9670;&nbsp;</a></span>CreateInputFromScript()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Multiplayer::MultiplayerController::CreateInputFromScript </td>
+          <td>(</td>
+          <td class="paramtype">[[maybe_unused] ]<a class="el" href="class_multiplayer_1_1_network_input.html">NetworkInput</a> &amp;&#160;</td>
+          <td class="paramname"><em>networkInput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[[maybe_unused] ] float&#160;</td>
+          <td class="paramname"><em>deltaTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Similar to CreateInput, should never be invoked on the server. This only needs to be overridden in components which allow <a class="el" href="class_multiplayer_1_1_network_input.html" title="A single networked client input command.">NetworkInput</a> creation to be handled by scripts. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">networkInput</td><td>input structure to process </td></tr>
     <tr><td class="paramname">deltaTime</td><td>amount of time to integrate the provided inputs over </td></tr>
@@ -393,13 +440,56 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NetBindComponent</b>
 
 </div>
 </div>
+<a id="a00028ee04445882e4bfbdf5bec751e82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00028ee04445882e4bfbdf5bec751e82">&#9670;&nbsp;</a></span>ProcessInputFromScript()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Multiplayer::MultiplayerController::ProcessInputFromScript </td>
+          <td>(</td>
+          <td class="paramtype">[[maybe_unused] ] <a class="el" href="class_multiplayer_1_1_network_input.html">NetworkInput</a> &amp;&#160;</td>
+          <td class="paramname"><em>networkInput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[[maybe_unused] ] float&#160;</td>
+          <td class="paramname"><em>deltaTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Similar to ProcessInput, do not call directly. This only needs to be overridden in components which allow <a class="el" href="class_multiplayer_1_1_network_input.html" title="A single networked client input command.">NetworkInput</a> to be processed by script. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">networkInput</td><td>input structure to process </td></tr>
+    <tr><td class="paramname">deltaTime</td><td>amount of time to integrate the provided inputs over </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Multiplayer/Code/Include/Multiplayer/Components/MultiplayerController.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:44 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:44 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

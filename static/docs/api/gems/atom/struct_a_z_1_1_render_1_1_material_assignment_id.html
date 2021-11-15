@@ -66,36 +66,34 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b6ce3742de789a76d294fec8eb6f518"><td class="memItemLeft" align="right" valign="top"><a id="a5b6ce3742de789a76d294fec8eb6f518"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">AZ::Render::MaterialAssignmentId</a>, SystemAllocator, 0)</td></tr>
 <tr class="separator:a5b6ce3742de789a76d294fec8eb6f518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9271e5530e0c2ebe90bf189abd3ce312"><td class="memItemLeft" align="right" valign="top"><a id="a9271e5530e0c2ebe90bf189abd3ce312"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialAssignmentId</b> (MaterialAssignmentLodIndex lodIndex, const AZ::Data::AssetId &amp;materialAssetId)</td></tr>
-<tr class="separator:a9271e5530e0c2ebe90bf189abd3ce312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9005523d7ef85373feb2159fccd12ae"><td class="memItemLeft" align="right" valign="top"><a id="ab9005523d7ef85373feb2159fccd12ae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialAssignmentId</b> (MaterialAssignmentLodIndex lodIndex, RPI::ModelMaterialSlot::StableId materialSlotStableId)</td></tr>
+<tr class="separator:ab9005523d7ef85373feb2159fccd12ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5e93d2fdc07d725157b8cb916b98fe5"><td class="memItemLeft" align="right" valign="top"><a id="af5e93d2fdc07d725157b8cb916b98fe5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#af5e93d2fdc07d725157b8cb916b98fe5">IsDefault</a> () const</td></tr>
-<tr class="memdesc:af5e93d2fdc07d725157b8cb916b98fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the asset ID and LOD are invalid. <br /></td></tr>
+<tr class="memdesc:af5e93d2fdc07d725157b8cb916b98fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the slot stable ID and LOD are invalid, meaning this assignment applies to the entire model. <br /></td></tr>
 <tr class="separator:af5e93d2fdc07d725157b8cb916b98fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcdda9f1c4c5726361092f338734d774"><td class="memItemLeft" align="right" valign="top"><a id="afcdda9f1c4c5726361092f338734d774"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#afcdda9f1c4c5726361092f338734d774">IsAssetOnly</a> () const</td></tr>
-<tr class="memdesc:afcdda9f1c4c5726361092f338734d774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the asset ID is valid and LOD is invalid. <br /></td></tr>
-<tr class="separator:afcdda9f1c4c5726361092f338734d774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5006e03f3a04ece7326f4f35c518486"><td class="memItemLeft" align="right" valign="top"><a id="ac5006e03f3a04ece7326f4f35c518486"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#ac5006e03f3a04ece7326f4f35c518486">IsLodAndAsset</a> () const</td></tr>
-<tr class="memdesc:ac5006e03f3a04ece7326f4f35c518486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the asset ID and LOD are both valid. <br /></td></tr>
-<tr class="separator:ac5006e03f3a04ece7326f4f35c518486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a127961775f42d99c2cecb6b86844c27d"><td class="memItemLeft" align="right" valign="top"><a id="a127961775f42d99c2cecb6b86844c27d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a127961775f42d99c2cecb6b86844c27d">IsSlotIdOnly</a> () const</td></tr>
+<tr class="memdesc:a127961775f42d99c2cecb6b86844c27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the slot stable ID is valid and LOD is invalid, meaning this assignment applies to every LOD. <br /></td></tr>
+<tr class="separator:a127961775f42d99c2cecb6b86844c27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac91d1571b0ef51da5b01d5c9db7482d5"><td class="memItemLeft" align="right" valign="top"><a id="ac91d1571b0ef51da5b01d5c9db7482d5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#ac91d1571b0ef51da5b01d5c9db7482d5">IsLodAndSlotId</a> () const</td></tr>
+<tr class="memdesc:ac91d1571b0ef51da5b01d5c9db7482d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the slot stable ID and LOD are both valid, meaning this assignment applies to a single material slot on a specific LOD. <br /></td></tr>
+<tr class="separator:ac91d1571b0ef51da5b01d5c9db7482d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a118a5986ac185e0911c055f1d18b63d0"><td class="memItemLeft" align="right" valign="top"><a id="a118a5986ac185e0911c055f1d18b63d0"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a118a5986ac185e0911c055f1d18b63d0">ToString</a> () const</td></tr>
-<tr class="memdesc:a118a5986ac185e0911c055f1d18b63d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string composed of the asset path and LOD. <br /></td></tr>
+<tr class="memdesc:a118a5986ac185e0911c055f1d18b63d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string describing all the details of the assignment ID. <br /></td></tr>
 <tr class="separator:a118a5986ac185e0911c055f1d18b63d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96405732a746faebb0abdcead2fdea2f"><td class="memItemLeft" align="right" valign="top"><a id="a96405732a746faebb0abdcead2fdea2f"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a96405732a746faebb0abdcead2fdea2f">GetHash</a> () const</td></tr>
-<tr class="memdesc:a96405732a746faebb0abdcead2fdea2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a hash composed of the asset ID sub ID and LOD. <br /></td></tr>
+<tr class="memdesc:a96405732a746faebb0abdcead2fdea2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a hash composed of all elements of the assignment ID. <br /></td></tr>
 <tr class="separator:a96405732a746faebb0abdcead2fdea2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1011a57914d738f624a562115de4bbe8"><td class="memItemLeft" align="right" valign="top"><a id="a1011a57914d738f624a562115de4bbe8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a1011a57914d738f624a562115de4bbe8">operator==</a> (const <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a> &amp;rhs) const</td></tr>
-<tr class="memdesc:a1011a57914d738f624a562115de4bbe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if both asset ID sub IDs and LODs match. <br /></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a> &amp;rhs) const</td></tr>
 <tr class="separator:a1011a57914d738f624a562115de4bbe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00407489e52bf4b4c9c0043cbff88b2e"><td class="memItemLeft" align="right" valign="top"><a id="a00407489e52bf4b4c9c0043cbff88b2e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a00407489e52bf4b4c9c0043cbff88b2e">operator!=</a> (const <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a> &amp;rhs) const</td></tr>
-<tr class="memdesc:a00407489e52bf4b4c9c0043cbff88b2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if both asset ID sub IDs and LODs do not match. <br /></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a> &amp;rhs) const</td></tr>
 <tr class="separator:a00407489e52bf4b4c9c0043cbff88b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -103,43 +101,46 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a116cedbc31afb16240e3d2cc8bacfb4c"><td class="memItemLeft" align="right" valign="top"><a id="a116cedbc31afb16240e3d2cc8bacfb4c"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (ReflectContext *context)</td></tr>
 <tr class="separator:a116cedbc31afb16240e3d2cc8bacfb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ebc99779231e90bcbedcaee85fbe39"><td class="memItemLeft" align="right" valign="top"><a id="a21ebc99779231e90bcbedcaee85fbe39"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertVersion</b> (AZ::SerializeContext &amp;context, AZ::SerializeContext::DataElementNode &amp;classElement)</td></tr>
+<tr class="separator:a21ebc99779231e90bcbedcaee85fbe39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a756f466692a1902525bf36759bc8429b"><td class="memItemLeft" align="right" valign="top"><a id="a756f466692a1902525bf36759bc8429b"></a>
 static <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a756f466692a1902525bf36759bc8429b">CreateDefault</a> ()</td></tr>
-<tr class="memdesc:a756f466692a1902525bf36759bc8429b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an ID that maps to all material slots, regardless of asset ID or LOD, effectively applying to an entire model. <br /></td></tr>
+<tr class="memdesc:a756f466692a1902525bf36759bc8429b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an ID that maps to all material slots, regardless of slot ID or LOD, effectively applying to an entire model. <br /></td></tr>
 <tr class="separator:a756f466692a1902525bf36759bc8429b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a916356bc615a60ead28fc3ba6e7b0e54"><td class="memItemLeft" align="right" valign="top"><a id="a916356bc615a60ead28fc3ba6e7b0e54"></a>
-static <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a916356bc615a60ead28fc3ba6e7b0e54">CreateFromAssetOnly</a> (AZ::Data::AssetId materialAssetId)</td></tr>
-<tr class="memdesc:a916356bc615a60ead28fc3ba6e7b0e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an ID that maps to all material slots with a corresponding asset ID, regardless of LOD. <br /></td></tr>
-<tr class="separator:a916356bc615a60ead28fc3ba6e7b0e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5968b405f599508f7150e064a1a81d0a"><td class="memItemLeft" align="right" valign="top"><a id="a5968b405f599508f7150e064a1a81d0a"></a>
-static <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a5968b405f599508f7150e064a1a81d0a">CreateFromLodAndAsset</a> (MaterialAssignmentLodIndex lodIndex, AZ::Data::AssetId materialAssetId)</td></tr>
-<tr class="memdesc:a5968b405f599508f7150e064a1a81d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an ID that maps to a specific material slot with a corresponding asset ID and LOD. <br /></td></tr>
-<tr class="separator:a5968b405f599508f7150e064a1a81d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8924fb308c8d08d80d03e21a1f6fd7b"><td class="memItemLeft" align="right" valign="top"><a id="ae8924fb308c8d08d80d03e21a1f6fd7b"></a>
+static <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#ae8924fb308c8d08d80d03e21a1f6fd7b">CreateFromStableIdOnly</a> (RPI::ModelMaterialSlot::StableId materialSlotStableId)</td></tr>
+<tr class="memdesc:ae8924fb308c8d08d80d03e21a1f6fd7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an ID that maps to all material slots with a corresponding slot ID, regardless of LOD. <br /></td></tr>
+<tr class="separator:ae8924fb308c8d08d80d03e21a1f6fd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24850c09ed114eb984c3dfef35ee9325"><td class="memItemLeft" align="right" valign="top"><a id="a24850c09ed114eb984c3dfef35ee9325"></a>
+static <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a24850c09ed114eb984c3dfef35ee9325">CreateFromLodAndStableId</a> (MaterialAssignmentLodIndex lodIndex, RPI::ModelMaterialSlot::StableId materialSlotStableId)</td></tr>
+<tr class="memdesc:a24850c09ed114eb984c3dfef35ee9325"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an ID that maps to a specific material slot with a corresponding stable ID and LOD. <br /></td></tr>
+<tr class="separator:a24850c09ed114eb984c3dfef35ee9325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a6934845bf35a434fffe68cd4a9b23f74"><td class="memItemLeft" align="right" valign="top"><a id="a6934845bf35a434fffe68cd4a9b23f74"></a>
 MaterialAssignmentLodIndex&#160;</td><td class="memItemRight" valign="bottom"><b>m_lodIndex</b> = NonLodIndex</td></tr>
 <tr class="separator:a6934845bf35a434fffe68cd4a9b23f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af555c11500172a18b6a1699d2d69d21a"><td class="memItemLeft" align="right" valign="top"><a id="af555c11500172a18b6a1699d2d69d21a"></a>
-AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialAssetId</b> = AZ::Data::AssetId()</td></tr>
-<tr class="separator:af555c11500172a18b6a1699d2d69d21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a943bedcdccb3640441177a5fbaf0f20e"><td class="memItemLeft" align="right" valign="top"><a id="a943bedcdccb3640441177a5fbaf0f20e"></a>
+RPI::ModelMaterialSlot::StableId&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialSlotStableId</b> = RPI::ModelMaterialSlot::InvalidStableId</td></tr>
+<tr class="separator:a943bedcdccb3640441177a5fbaf0f20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a1fb5a173ce7f7efbd2a5166108117415"><td class="memItemLeft" align="right" valign="top"><a id="a1fb5a173ce7f7efbd2a5166108117415"></a>
-static constexpr MaterialAssignmentLodIndex&#160;</td><td class="memItemRight" valign="bottom"><b>NonLodIndex</b> = -1</td></tr>
+static constexpr MaterialAssignmentLodIndex&#160;</td><td class="memItemRight" valign="bottom"><b>NonLodIndex</b> = std::numeric_limits&lt;MaterialAssignmentLodIndex&gt;::max()</td></tr>
 <tr class="separator:a1fb5a173ce7f7efbd2a5166108117415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a> is used to address available and overridable material slots on a model. The LOD and one of the model's original material asset IDs are used as coordinates that identify a specific material slot or a set of slots matching either. </p>
+<div class="textblock"><p><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a> is used to address available and overridable material slots on a model. The LOD and one of the model's original material slot IDs are used as coordinates that identify a specific material slot or a set of slots matching either. </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Gems/Atom/Feature/Common/Code/Include/Atom/Feature/Material/MaterialAssignmentId.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:13 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

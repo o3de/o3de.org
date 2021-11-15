@@ -1,7 +1,8 @@
 ---
-description: ' Use the toolbar in Open 3D Engine''s UI Editor to manipulate your
-  game UI elements. '
-title: Toolbar
+linkTitle: UI Editor Toolbar
+description: ' Use the toolbar in Open 3D Engine''s UI Editor to manipulate your game UI elements. '
+title: UI Editor Toolbar
+weight: 100
 ---
 
 ## Interaction Modes 
@@ -17,7 +18,7 @@ You can move UI elements in the following ways:
 + Select an element and drag it to a new position.
 + Select a particular axis (X, Y, or Z) on the axis gizmo and drag the element by only one axis at a time.
 + Nudge your selected elemented using keyboard arrows.
-+ Select multiple elements and align them using the [Alignment Tool](#ui-editor-toolbar-alignment-tool).
++ Select multiple elements and align them using the [Alignment Tool](#alignment-tool).
 
 **Rotate**
 Select and rotate UI elements.
@@ -33,12 +34,13 @@ In **Anchor** mode, you can interact with UI elements in the same ways as in the
 
 The alignment tool is a set of buttons on the **UI Editor**'s toolbar.
 
-![The alignment tools are on the UI Editor's toolbar.](/images/user-guide/game_ui_editor/ui-editor-toolbar-alignment-tool-buttons.png)
+![The alignment tools are on the UI Editor's toolbar.](/images/user-guide/interactivity/user-interface/editor/ui-editor-toolbar-alignment-tool-buttons.png)
 
 The alignment tools are enabled when your interaction mode is **Move** or **Anchor** and you have selected two or more movable elements.
 
-**Note**
+{{< note >}}
 One type of element that you can't moved is one that a parent layout element controls.
+{{< /note >}}
 
 With these tools, you can align elements by lining up their:
 + Top edges
@@ -66,12 +68,12 @@ A bounding rectangle is a useful graphic for understanding how the alignment too
 
 Imagine a gray bounding rectangle that encompasses the elements in it.
 
-![The selected elements are contained by an imaginary bounding rectangle, which determines how the elements are moved.](/images/user-guide/game_ui_editor/ui-editor-toolbar-alignment-tool-bounding1.png)
+![The selected elements are contained by an imaginary bounding rectangle, which determines how the elements are moved.](/images/user-guide/interactivity/user-interface/editor/ui-editor-toolbar-alignment-tool-bounding1.png)
 
 If you align vertically by the elements' centers, the elements are centered at the bounding rectangle's center, which remains in its original position.
 
-![Align elements vertically by their center.](/images/user-guide/game_ui_editor/ui-editor-toolbar-alignment-tool-bounding2.png)
+![Align elements vertically by their center.](/images/user-guide/interactivity/user-interface/editor/ui-editor-toolbar-alignment-tool-bounding2.png)
 
 If you align vertically by the elements' right edges, the elements' right edges are aligned to the bounding rectangle's right edge.
 
-![Align elements vertically by their right edges.](/images/user-guide/game_ui_editor/ui-editor-toolbar-alignment-tool-bounding3.png)
+![Align elements vertically by their right edges.](/images/user-guide/interactivity/user-interface/editor/ui-editor-toolbar-alignment-tool-bounding3.png)

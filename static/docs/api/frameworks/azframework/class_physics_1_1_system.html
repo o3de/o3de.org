@@ -72,21 +72,10 @@ virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_shape.html">
 <tr class="memitem:a9de26d14b7570692734769678f7cfe1d"><td class="memItemLeft" align="right" valign="top"><a id="a9de26d14b7570692734769678f7cfe1d"></a>
 virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_material.html">Material</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateMaterial</b> (const <a class="el" href="class_physics_1_1_material_configuration.html">Physics::MaterialConfiguration</a> &amp;materialConfiguration)=0</td></tr>
 <tr class="separator:a9de26d14b7570692734769678f7cfe1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff65e2685127211a138579f8e51287f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_system.html#a3ff65e2685127211a138579f8e51287f">ReleaseNativeHeightfieldObject</a> (void *nativeHeightfieldObject)=0</td></tr>
+<tr class="separator:a3ff65e2685127211a138579f8e51287f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0741232a3c80a7fe21643436a4ad5718"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_system.html#a0741232a3c80a7fe21643436a4ad5718">ReleaseNativeMeshObject</a> (void *nativeMeshObject)=0</td></tr>
 <tr class="separator:a0741232a3c80a7fe21643436a4ad5718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3d83522061a5b45c2dc3c633eb2a6a1"><td class="memItemLeft" align="right" valign="top"><a id="ab3d83522061a5b45c2dc3c633eb2a6a1"></a>
-virtual AZStd::vector&lt; AZ::TypeId &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSupportedJointTypes</b> ()=0</td></tr>
-<tr class="separator:ab3d83522061a5b45c2dc3c633eb2a6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae16665d1c58e0c962407a6510094e362"><td class="memItemLeft" align="right" valign="top"><a id="ae16665d1c58e0c962407a6510094e362"></a>
-virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_joint_limit_configuration.html">JointLimitConfiguration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateJointLimitConfiguration</b> (AZ::TypeId jointType)=0</td></tr>
-<tr class="separator:ae16665d1c58e0c962407a6510094e362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae79bd4892b9870aa780f503900f66fd8"><td class="memItemLeft" align="right" valign="top"><a id="ae79bd4892b9870aa780f503900f66fd8"></a>
-virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_joint.html">Joint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateJoint</b> (const AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_joint_limit_configuration.html">JointLimitConfiguration</a> &gt; &amp;configuration, <a class="el" href="struct_az_physics_1_1_simulated_body.html">AzPhysics::SimulatedBody</a> *parentBody, <a class="el" href="struct_az_physics_1_1_simulated_body.html">AzPhysics::SimulatedBody</a> *childBody)=0</td></tr>
-<tr class="separator:ae79bd4892b9870aa780f503900f66fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04b235732ad590eb23f9cc9923073213"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_system.html#a04b235732ad590eb23f9cc9923073213">GenerateJointLimitVisualizationData</a> (const <a class="el" href="class_physics_1_1_joint_limit_configuration.html">JointLimitConfiguration</a> &amp;configuration, const AZ::Quaternion &amp;parentRotation, const AZ::Quaternion &amp;childRotation, float scale, AZ::u32 angularSubdivisions, AZ::u32 radialSubdivisions, AZStd::vector&lt; AZ::Vector3 &gt; &amp;vertexBufferOut, AZStd::vector&lt; AZ::u32 &gt; &amp;indexBufferOut, AZStd::vector&lt; AZ::Vector3 &gt; &amp;lineBufferOut, AZStd::vector&lt; bool &gt; &amp;lineValidityBufferOut)=0</td></tr>
-<tr class="separator:a04b235732ad590eb23f9cc9923073213"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4307a96cf23df2a9ff4cae36c8509160"><td class="memItemLeft" align="right" valign="top">virtual AZStd::unique_ptr&lt; <a class="el" href="class_physics_1_1_joint_limit_configuration.html">JointLimitConfiguration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_system.html#a4307a96cf23df2a9ff4cae36c8509160">ComputeInitialJointLimitConfiguration</a> (const AZ::TypeId &amp;jointLimitTypeId, const AZ::Quaternion &amp;parentWorldRotation, const AZ::Quaternion &amp;childWorldRotation, const AZ::Vector3 &amp;axis, const AZStd::vector&lt; AZ::Quaternion &gt; &amp;exampleLocalRotations)=0</td></tr>
-<tr class="separator:a4307a96cf23df2a9ff4cae36c8509160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f6153869bea1adef788739f78306cd4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_system.html#a0f6153869bea1adef788739f78306cd4">CookConvexMeshToFile</a> (const AZStd::string &amp;filePath, const AZ::Vector3 *vertices, AZ::u32 vertexCount)=0</td></tr>
 <tr class="separator:a0f6153869bea1adef788739f78306cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dfbc8ce4a2011661d70a3df6bc30cdf"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_system.html#a8dfbc8ce4a2011661d70a3df6bc30cdf">CookConvexMeshToMemory</a> (const AZ::Vector3 *vertices, AZ::u32 vertexCount, AZStd::vector&lt; AZ::u8 &gt; &amp;result)=0</td></tr>
@@ -99,70 +88,6 @@ virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_joint.html">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Physics system global requests. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4307a96cf23df2a9ff4cae36c8509160"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4307a96cf23df2a9ff4cae36c8509160">&#9670;&nbsp;</a></span>ComputeInitialJointLimitConfiguration()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual AZStd::unique_ptr&lt;<a class="el" href="class_physics_1_1_joint_limit_configuration.html">JointLimitConfiguration</a>&gt; Physics::System::ComputeInitialJointLimitConfiguration </td>
-          <td>(</td>
-          <td class="paramtype">const AZ::TypeId &amp;&#160;</td>
-          <td class="paramname"><em>jointLimitTypeId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZ::Quaternion &amp;&#160;</td>
-          <td class="paramname"><em>parentWorldRotation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZ::Quaternion &amp;&#160;</td>
-          <td class="paramname"><em>childWorldRotation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
-          <td class="paramname"><em>axis</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZStd::vector&lt; AZ::Quaternion &gt; &amp;&#160;</td>
-          <td class="paramname"><em>exampleLocalRotations</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Computes parameters such as joint limit local rotations to give the desired initial joint limit orientation. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">jointLimitTypeId</td><td>The type ID used to identify the particular kind of joint limit configuration to be created. </td></tr>
-    <tr><td class="paramname">parentWorldRotation</td><td>The rotation in world space of the parent world body associated with the joint. </td></tr>
-    <tr><td class="paramname">childWorldRotation</td><td>The rotation in world space of the child world body associated with the joint. </td></tr>
-    <tr><td class="paramname">axis</td><td>Axis used to define the centre for limiting angular degrees of freedom. </td></tr>
-    <tr><td class="paramname">exampleLocalRotations</td><td>A vector (which may be empty) containing example valid rotations in the local space of the child world body relative to the parent world body, which may optionally be used to help estimate the extents of the joint limit. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a0f6153869bea1adef788739f78306cd4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f6153869bea1adef788739f78306cd4">&#9670;&nbsp;</a></span>CookConvexMeshToFile()</h2>
 
@@ -395,8 +320,8 @@ virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_joint.html">
 
 </div>
 </div>
-<a id="a04b235732ad590eb23f9cc9923073213"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04b235732ad590eb23f9cc9923073213">&#9670;&nbsp;</a></span>GenerateJointLimitVisualizationData()</h2>
+<a id="a3ff65e2685127211a138579f8e51287f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ff65e2685127211a138579f8e51287f">&#9670;&nbsp;</a></span>ReleaseNativeHeightfieldObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -405,69 +330,11 @@ virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_joint.html">
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Physics::System::GenerateJointLimitVisualizationData </td>
+          <td class="memname">virtual void Physics::System::ReleaseNativeHeightfieldObject </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_physics_1_1_joint_limit_configuration.html">JointLimitConfiguration</a> &amp;&#160;</td>
-          <td class="paramname"><em>configuration</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>nativeHeightfieldObject</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const AZ::Quaternion &amp;&#160;</td>
-          <td class="paramname"><em>parentRotation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZ::Quaternion &amp;&#160;</td>
-          <td class="paramname"><em>childRotation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>scale</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AZ::u32&#160;</td>
-          <td class="paramname"><em>angularSubdivisions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AZ::u32&#160;</td>
-          <td class="paramname"><em>radialSubdivisions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AZStd::vector&lt; AZ::Vector3 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>vertexBufferOut</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AZStd::vector&lt; AZ::u32 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>indexBufferOut</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AZStd::vector&lt; AZ::Vector3 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>lineBufferOut</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AZStd::vector&lt; bool &gt; &amp;&#160;</td>
-          <td class="paramname"><em>lineValidityBufferOut</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -476,18 +343,9 @@ virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_joint.html">
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Generates joint limit visualization data in appropriate format to pass to DebugDisplayRequests draw functions. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Releases the height field object created by the physics backend. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">configuration</td><td>The joint configuration to generate visualization data for. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">parentRotation</td><td>The rotation of the joint's parent body (in the same frame as childRotation). </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">childRotation</td><td>The rotation of the joint's child body (in the same frame as parentRotation). </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">scale</td><td>Scale factor for the output display data. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">angularSubdivisions</td><td>Level of detail in the angular direction (may be clamped in the implementation). </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">radialSubdivisions</td><td>Level of detail in the radial direction (may be clamped in the implementation). </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">vertexBufferOut</td><td>Used with indexBufferOut to define triangles to be displayed. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">indexBufferOut</td><td>Used with vertexBufferOut to define triangles to be displayed. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">lineBufferOut</td><td>Used to define lines to be displayed. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">lineValidityBufferOut</td><td>Whether each line in the line buffer is part of a valid or violated limit. </td></tr>
+    <tr><td class="paramname">nativeHeightfieldObject</td><td>Pointer to the height field object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -532,7 +390,7 @@ virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_joint.html">
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:25 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:08 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -381,13 +381,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_script_event_version_mismatch.html">ScriptEventVersionMismatch</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_serialization_listener.html">SerializationListener</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_serialization_utils.html">SerializationUtils</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_serialize_context_on_write_end_handler.html">SerializeContextOnWriteEndHandler</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_serialize_context_on_write_handler.html">SerializeContextOnWriteHandler</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_serialize_context_read_write_handler.html">SerializeContextReadWriteHandler</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_script_canvas_1_1_set_default_values_by_index.html">SetDefaultValuesByIndex</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -691,6 +687,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>SystemRequestBus</b>
 <tr class="memitem:a7a6f2ee22bbe95ea60ce88422fa63b68"><td class="memItemLeft" align="right" valign="top"><a id="a7a6f2ee22bbe95ea60ce88422fa63b68"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BatchOperationNotificationBus</b> = AZ::EBus&lt; <a class="el" href="class_script_canvas_1_1_batch_operation_notifications.html">BatchOperationNotifications</a> &gt;</td></tr>
 <tr class="separator:a7a6f2ee22bbe95ea60ce88422fa63b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a288ed4135a57c98e7105a421db747a"><td class="memItemLeft" align="right" valign="top"><a id="a2a288ed4135a57c98e7105a421db747a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SerializationListeners</b> = AZStd::vector&lt; <a class="el" href="class_script_canvas_1_1_serialization_listener.html">SerializationListener</a> * &gt;</td></tr>
+<tr class="separator:a2a288ed4135a57c98e7105a421db747a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6043c2f4027cc54e9a42bf377505744"><td class="memItemLeft" align="right" valign="top"><a id="ae6043c2f4027cc54e9a42bf377505744"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BehaviorContextObjectPtr</b> = AZStd::intrusive_ptr&lt; <a class="el" href="class_script_canvas_1_1_behavior_context_object.html">BehaviorContextObject</a> &gt;</td></tr>
 <tr class="separator:ae6043c2f4027cc54e9a42bf377505744"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -796,6 +795,11 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>NamedVariabledId</b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:aa4d2343aef5fed202aeb0aaf31c518a3"><td class="memItemLeft" align="right" valign="top"><a id="aa4d2343aef5fed202aeb0aaf31c518a3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PropertyStatus</b> : AZ::u8 { <b>Getter</b>, 
+<b>None</b>, 
+<b>Setter</b>
+ }</td></tr>
+<tr class="separator:aa4d2343aef5fed202aeb0aaf31c518a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8851effabe715a2af9915587fa7d7111"><td class="memItemLeft" align="right" valign="top"><a id="a8851effabe715a2af9915587fa7d7111"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>GrammarVersion</b> : int { <b>Initial</b> = -1, 
 <b>BackendSplit</b> = 0, 
 <b>Current</b>
@@ -806,11 +810,11 @@ Enumerations</h2></td></tr>
 <b>Current</b>
  }</td></tr>
 <tr class="separator:adc216dd892325a1dfd1b884331e9c41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4d2343aef5fed202aeb0aaf31c518a3"><td class="memItemLeft" align="right" valign="top"><a id="aa4d2343aef5fed202aeb0aaf31c518a3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PropertyStatus</b> : AZ::u8 { <b>Getter</b>, 
-<b>None</b>, 
-<b>Setter</b>
+<tr class="memitem:a59a023d28971e05ce023d9d905cdfd2c"><td class="memItemLeft" align="right" valign="top"><a id="a59a023d28971e05ce023d9d905cdfd2c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>FileVersion</b> : int { <b>Initial</b> = -1, 
+<b>JSON</b> = 0, 
+<b>Current</b>
  }</td></tr>
-<tr class="separator:aa4d2343aef5fed202aeb0aaf31c518a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a59a023d28971e05ce023d9d905cdfd2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4519cd76fe274c49f04ebb2bc9ac987"><td class="memItemLeft" align="right" valign="top"><a id="ad4519cd76fe274c49f04ebb2bc9ac987"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EventType</b> { <br />
 &#160;&#160;<b>Broadcast</b>, 
 <b>BroadcastQueue</b>, 
@@ -918,6 +922,9 @@ Functions</h2></td></tr>
 <tr class="memitem:afa28e0a6970b549e01c674c2201fb063"><td class="memItemLeft" align="right" valign="top"><a id="afa28e0a6970b549e01c674c2201fb063"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsNamespacePathEqual</b> (const NamespacePath &amp;lhs, const NamespacePath &amp;rhs)</td></tr>
 <tr class="separator:afa28e0a6970b549e01c674c2201fb063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40dc6e5977e8c877ff76f35184d3ecee"><td class="memItemLeft" align="right" valign="top"><a id="a40dc6e5977e8c877ff76f35184d3ecee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReflectEventTypeOnDemand</b> (const AZ::TypeId &amp;typeId, AZStd::string_view name, AZ::IRttiHelper *rttiHelper=nullptr)</td></tr>
+<tr class="separator:a40dc6e5977e8c877ff76f35184d3ecee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a605a43b0a68d46cee08bd5bc615d6e06"><td class="memItemLeft" align="right" valign="top"><a id="a605a43b0a68d46cee08bd5bc615d6e06"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DATUM_GET_NUMBER_SPECIALIZE</b> (char)</td></tr>
 <tr class="separator:a605a43b0a68d46cee08bd5bc615d6e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1112,6 +1119,9 @@ constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>k_O
 <tr class="memitem:a0f2be03c90a34f23d3275d474d612178"><td class="memItemLeft" align="right" valign="top"><a id="a0f2be03c90a34f23d3275d474d612178"></a>
 constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>k_OnVariableWriteEbusName</b> = &quot;VariableNotification&quot;</td></tr>
 <tr class="separator:a0f2be03c90a34f23d3275d474d612178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9efb95bf5aa30485c2d5fb5cbb1f05b9"><td class="memItemLeft" align="right" valign="top"><a id="a9efb95bf5aa30485c2d5fb5cbb1f05b9"></a>
+constexpr const AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>k_VersionExplorerWindow</b> = &quot;VersionExplorerWindow&quot;</td></tr>
+<tr class="separator:a9efb95bf5aa30485c2d5fb5cbb1f05b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3960f18a151f9651e31685068fe5e2ea"><td class="memItemLeft" align="right" valign="top"><a id="a3960f18a151f9651e31685068fe5e2ea"></a>
 const <a class="el" href="struct_script_canvas_1_1_behavior_context_result_tag.html">BehaviorContextResultTag</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_behaviorContextResultTag</b> {}</td></tr>
 <tr class="separator:a3960f18a151f9651e31685068fe5e2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1134,7 +1144,7 @@ static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>s_node
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:54 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:55 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

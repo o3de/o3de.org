@@ -72,43 +72,60 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a5d56a3f50ced905a765b4c952e21e529"><td class="memItemLeft" align="right" valign="top"><a id="a5d56a3f50ced905a765b4c952e21e529"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_creationTime</b></td></tr>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_session_config.html#a5d56a3f50ced905a765b4c952e21e529">m_creationTime</a> = 0</td></tr>
+<tr class="memdesc:a5d56a3f50ced905a765b4c952e21e529"><td class="mdescLeft">&#160;</td><td class="mdescRight">A time stamp indicating when this session was created. Format is a number expressed in Unix time as milliseconds. <br /></td></tr>
 <tr class="separator:a5d56a3f50ced905a765b4c952e21e529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf2b150a3da51e975f97b6fb287a6543"><td class="memItemLeft" align="right" valign="top"><a id="acf2b150a3da51e975f97b6fb287a6543"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_terminationTime</b></td></tr>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_session_config.html#acf2b150a3da51e975f97b6fb287a6543">m_terminationTime</a> = 0</td></tr>
+<tr class="memdesc:acf2b150a3da51e975f97b6fb287a6543"><td class="mdescLeft">&#160;</td><td class="mdescRight">A time stamp indicating when this data object was terminated. Same format as creation time. <br /></td></tr>
 <tr class="separator:acf2b150a3da51e975f97b6fb287a6543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a638de627ca6957fe95ab29ddfe5f5917"><td class="memItemLeft" align="right" valign="top"><a id="a638de627ca6957fe95ab29ddfe5f5917"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_creatorId</b></td></tr>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_session_config.html#a638de627ca6957fe95ab29ddfe5f5917">m_creatorId</a></td></tr>
+<tr class="memdesc:a638de627ca6957fe95ab29ddfe5f5917"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique identifier for a player or entity creating the session. <br /></td></tr>
 <tr class="separator:a638de627ca6957fe95ab29ddfe5f5917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bfdd46cb06ad3a9ee8f5dbf6289b4f2"><td class="memItemLeft" align="right" valign="top"><a id="a4bfdd46cb06ad3a9ee8f5dbf6289b4f2"></a>
-AZStd::unordered_map&lt; AZStd::string, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_sessionProperties</b></td></tr>
+AZStd::unordered_map&lt; AZStd::string, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_session_config.html#a4bfdd46cb06ad3a9ee8f5dbf6289b4f2">m_sessionProperties</a></td></tr>
+<tr class="memdesc:a4bfdd46cb06ad3a9ee8f5dbf6289b4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of custom properties for a session. <br /></td></tr>
 <tr class="separator:a4bfdd46cb06ad3a9ee8f5dbf6289b4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4573b684b268c6be67ed0bf7e1a0d06"><td class="memItemLeft" align="right" valign="top"><a id="ae4573b684b268c6be67ed0bf7e1a0d06"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_session_config.html#ae4573b684b268c6be67ed0bf7e1a0d06">m_matchmakingData</a></td></tr>
+<tr class="memdesc:ae4573b684b268c6be67ed0bf7e1a0d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">The matchmaking process information that was used to create the session. <br /></td></tr>
+<tr class="separator:ae4573b684b268c6be67ed0bf7e1a0d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d978db4bf8a52a9a02343ad287e36de"><td class="memItemLeft" align="right" valign="top"><a id="a1d978db4bf8a52a9a02343ad287e36de"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_sessionId</b></td></tr>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_session_config.html#a1d978db4bf8a52a9a02343ad287e36de">m_sessionId</a></td></tr>
+<tr class="memdesc:a1d978db4bf8a52a9a02343ad287e36de"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique identifier for the session. <br /></td></tr>
 <tr class="separator:a1d978db4bf8a52a9a02343ad287e36de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a720184be45fad5340f867f0d6918f7ee"><td class="memItemLeft" align="right" valign="top"><a id="a720184be45fad5340f867f0d6918f7ee"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_sessionName</b></td></tr>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_session_config.html#a720184be45fad5340f867f0d6918f7ee">m_sessionName</a></td></tr>
+<tr class="memdesc:a720184be45fad5340f867f0d6918f7ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">A descriptive label that is associated with a session. <br /></td></tr>
 <tr class="separator:a720184be45fad5340f867f0d6918f7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a335db7d2887ff8841211bc6b2eb39b9a"><td class="memItemLeft" align="right" valign="top"><a id="a335db7d2887ff8841211bc6b2eb39b9a"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_dnsName</b></td></tr>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_session_config.html#a335db7d2887ff8841211bc6b2eb39b9a">m_dnsName</a></td></tr>
+<tr class="memdesc:a335db7d2887ff8841211bc6b2eb39b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The DNS identifier assigned to the instance that is running the session. <br /></td></tr>
 <tr class="separator:a335db7d2887ff8841211bc6b2eb39b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae159996d20203ff7ace23777b90f4d80"><td class="memItemLeft" align="right" valign="top"><a id="ae159996d20203ff7ace23777b90f4d80"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_ipAddress</b></td></tr>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_session_config.html#ae159996d20203ff7ace23777b90f4d80">m_ipAddress</a></td></tr>
+<tr class="memdesc:ae159996d20203ff7ace23777b90f4d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">The IP address of the session. <br /></td></tr>
 <tr class="separator:ae159996d20203ff7ace23777b90f4d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ea78d7c8b00447df1b7f23e6c50e144"><td class="memItemLeft" align="right" valign="top"><a id="a1ea78d7c8b00447df1b7f23e6c50e144"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_port</b></td></tr>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_session_config.html#a1ea78d7c8b00447df1b7f23e6c50e144">m_port</a> = 0</td></tr>
+<tr class="memdesc:a1ea78d7c8b00447df1b7f23e6c50e144"><td class="mdescLeft">&#160;</td><td class="mdescRight">The port number for the session. <br /></td></tr>
 <tr class="separator:a1ea78d7c8b00447df1b7f23e6c50e144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7c8c9eefcb8207481568b1cbbe4cb17"><td class="memItemLeft" align="right" valign="top"><a id="ad7c8c9eefcb8207481568b1cbbe4cb17"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxPlayer</b></td></tr>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_session_config.html#ad7c8c9eefcb8207481568b1cbbe4cb17">m_maxPlayer</a> = 0</td></tr>
+<tr class="memdesc:ad7c8c9eefcb8207481568b1cbbe4cb17"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of players that can be connected simultaneously to the session. <br /></td></tr>
 <tr class="separator:ad7c8c9eefcb8207481568b1cbbe4cb17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bb7fb938168f0125fdc8724254cb3fb"><td class="memItemLeft" align="right" valign="top"><a id="a5bb7fb938168f0125fdc8724254cb3fb"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentPlayer</b></td></tr>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_session_config.html#a5bb7fb938168f0125fdc8724254cb3fb">m_currentPlayer</a> = 0</td></tr>
+<tr class="memdesc:a5bb7fb938168f0125fdc8724254cb3fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of players currently in the session. <br /></td></tr>
 <tr class="separator:a5bb7fb938168f0125fdc8724254cb3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fd9420c5cf3a95529a358a278bb98e2"><td class="memItemLeft" align="right" valign="top"><a id="a8fd9420c5cf3a95529a358a278bb98e2"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_status</b></td></tr>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_session_config.html#a8fd9420c5cf3a95529a358a278bb98e2">m_status</a></td></tr>
+<tr class="memdesc:a8fd9420c5cf3a95529a358a278bb98e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current status of the session. <br /></td></tr>
 <tr class="separator:a8fd9420c5cf3a95529a358a278bb98e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4297a5f776579cfae5e69aebe460fdcd"><td class="memItemLeft" align="right" valign="top"><a id="a4297a5f776579cfae5e69aebe460fdcd"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_statusReason</b></td></tr>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_session_config.html#a4297a5f776579cfae5e69aebe460fdcd">m_statusReason</a></td></tr>
+<tr class="memdesc:a4297a5f776579cfae5e69aebe460fdcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides additional information about session status. <br /></td></tr>
 <tr class="separator:a4297a5f776579cfae5e69aebe460fdcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -119,7 +136,7 @@ AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_statusReas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:23 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

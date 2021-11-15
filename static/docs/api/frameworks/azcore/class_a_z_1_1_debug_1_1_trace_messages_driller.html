@@ -59,41 +59,41 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a32ccc33d38a2c920c4cc46d04380f370"><td class="memItemLeft" align="right" valign="top"><a id="a32ccc33d38a2c920c4cc46d04380f370"></a>
-virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace_messages_driller.html#a32ccc33d38a2c920c4cc46d04380f370">GroupName</a> () const</td></tr>
-<tr class="memdesc:a32ccc33d38a2c920c4cc46d04380f370"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_debug_1_1_driller.html">Driller</a> group name, used only for organizational purpose. <br /></td></tr>
-<tr class="separator:a32ccc33d38a2c920c4cc46d04380f370"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad30f93a51e01f15b94035c9ed70b20ed"><td class="memItemLeft" align="right" valign="top"><a id="ad30f93a51e01f15b94035c9ed70b20ed"></a>
-virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace_messages_driller.html#ad30f93a51e01f15b94035c9ed70b20ed">GetName</a> () const</td></tr>
-<tr class="memdesc:ad30f93a51e01f15b94035c9ed70b20ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique name of the <a class="el" href="class_a_z_1_1_debug_1_1_driller.html">Driller</a>, driller ID is the Crc of the name. <br /></td></tr>
-<tr class="separator:ad30f93a51e01f15b94035c9ed70b20ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82f631b74d61788515d1a34011743f81"><td class="memItemLeft" align="right" valign="top"><a id="a82f631b74d61788515d1a34011743f81"></a>
-virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescription</b> () const</td></tr>
-<tr class="separator:a82f631b74d61788515d1a34011743f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c2a23736c65bae8d097785918c5ed3c"><td class="memItemLeft" align="right" valign="top"><a id="a3c2a23736c65bae8d097785918c5ed3c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace_messages_driller.html#a3c2a23736c65bae8d097785918c5ed3c">Start</a> (const <a class="el" href="struct_a_z_1_1_debug_1_1_driller_1_1_param.html">Param</a> *params=NULL, int numParams=0)</td></tr>
-<tr class="memdesc:a3c2a23736c65bae8d097785918c5ed3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="class_a_z_1_1_debug_1_1_driller_manager.html">DrillerManager</a>. <br /></td></tr>
-<tr class="separator:a3c2a23736c65bae8d097785918c5ed3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d8c64ddc02d44dac69be6c8ce6250cb"><td class="memItemLeft" align="right" valign="top"><a id="a2d8c64ddc02d44dac69be6c8ce6250cb"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace_messages_driller.html#a2d8c64ddc02d44dac69be6c8ce6250cb">Stop</a> ()</td></tr>
-<tr class="memdesc:a2d8c64ddc02d44dac69be6c8ce6250cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="class_a_z_1_1_debug_1_1_driller_manager.html">DrillerManager</a>. <br /></td></tr>
-<tr class="separator:a2d8c64ddc02d44dac69be6c8ce6250cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76014712c6441366190bbb948456d962"><td class="memItemLeft" align="right" valign="top"><a id="a76014712c6441366190bbb948456d962"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace_messages_driller.html#a76014712c6441366190bbb948456d962">OnAssert</a> (const char *message)</td></tr>
-<tr class="memdesc:a76014712c6441366190bbb948456d962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when a AZ_Assert failed. This is terminating event! (the code will break, crash). <br /></td></tr>
-<tr class="separator:a76014712c6441366190bbb948456d962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e4cca688276be4296b20d30fb5c3b44"><td class="memItemLeft" align="right" valign="top"><a id="a8e4cca688276be4296b20d30fb5c3b44"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnException</b> (const char *message)</td></tr>
-<tr class="separator:a8e4cca688276be4296b20d30fb5c3b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49f4964b5f8e13576343c959fe7a597d"><td class="memItemLeft" align="right" valign="top"><a id="a49f4964b5f8e13576343c959fe7a597d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnError</b> (const char *window, const char *message)</td></tr>
-<tr class="separator:a49f4964b5f8e13576343c959fe7a597d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbab1f3f7c63816470c2804c6deb517c"><td class="memItemLeft" align="right" valign="top"><a id="adbab1f3f7c63816470c2804c6deb517c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnWarning</b> (const char *window, const char *message)</td></tr>
-<tr class="separator:adbab1f3f7c63816470c2804c6deb517c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4c48aca6d0aa41138dc323cbcee725c"><td class="memItemLeft" align="right" valign="top"><a id="ab4c48aca6d0aa41138dc323cbcee725c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrintf</b> (const char *window, const char *message)</td></tr>
-<tr class="separator:ab4c48aca6d0aa41138dc323cbcee725c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1aa6aa6ae159c6aac60b4f79b348e9"><td class="memItemLeft" align="right" valign="top"><a id="a0b1aa6aa6ae159c6aac60b4f79b348e9"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace_messages_driller.html#a0b1aa6aa6ae159c6aac60b4f79b348e9">GroupName</a> () const override</td></tr>
+<tr class="memdesc:a0b1aa6aa6ae159c6aac60b4f79b348e9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_debug_1_1_driller.html">Driller</a> group name, used only for organizational purpose. <br /></td></tr>
+<tr class="separator:a0b1aa6aa6ae159c6aac60b4f79b348e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319673223637990c401e5a07da129d45"><td class="memItemLeft" align="right" valign="top"><a id="a319673223637990c401e5a07da129d45"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace_messages_driller.html#a319673223637990c401e5a07da129d45">GetName</a> () const override</td></tr>
+<tr class="memdesc:a319673223637990c401e5a07da129d45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique name of the <a class="el" href="class_a_z_1_1_debug_1_1_driller.html">Driller</a>, driller ID is the Crc of the name. <br /></td></tr>
+<tr class="separator:a319673223637990c401e5a07da129d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4962e8212e452fe79980aca8bab4ec40"><td class="memItemLeft" align="right" valign="top"><a id="a4962e8212e452fe79980aca8bab4ec40"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescription</b> () const override</td></tr>
+<tr class="separator:a4962e8212e452fe79980aca8bab4ec40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389103b4c08c9ad61aab8fbca4c7d22a"><td class="memItemLeft" align="right" valign="top"><a id="a389103b4c08c9ad61aab8fbca4c7d22a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace_messages_driller.html#a389103b4c08c9ad61aab8fbca4c7d22a">Start</a> (const <a class="el" href="struct_a_z_1_1_debug_1_1_driller_1_1_param.html">Param</a> *params=NULL, int numParams=0) override</td></tr>
+<tr class="memdesc:a389103b4c08c9ad61aab8fbca4c7d22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="class_a_z_1_1_debug_1_1_driller_manager.html">DrillerManager</a>. <br /></td></tr>
+<tr class="separator:a389103b4c08c9ad61aab8fbca4c7d22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f8708fd560c91ca93a1317a936d2bd"><td class="memItemLeft" align="right" valign="top"><a id="a74f8708fd560c91ca93a1317a936d2bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace_messages_driller.html#a74f8708fd560c91ca93a1317a936d2bd">Stop</a> () override</td></tr>
+<tr class="memdesc:a74f8708fd560c91ca93a1317a936d2bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="class_a_z_1_1_debug_1_1_driller_manager.html">DrillerManager</a>. <br /></td></tr>
+<tr class="separator:a74f8708fd560c91ca93a1317a936d2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183a839953ac61c54565b53c63fed71b"><td class="memItemLeft" align="right" valign="top"><a id="a183a839953ac61c54565b53c63fed71b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace_messages_driller.html#a183a839953ac61c54565b53c63fed71b">OnAssert</a> (const char *message) override</td></tr>
+<tr class="memdesc:a183a839953ac61c54565b53c63fed71b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when a AZ_Assert failed. This is terminating event! (the code will break, crash). <br /></td></tr>
+<tr class="separator:a183a839953ac61c54565b53c63fed71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74edd7516f988ae64325ce4d93178296"><td class="memItemLeft" align="right" valign="top"><a id="a74edd7516f988ae64325ce4d93178296"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnException</b> (const char *message) override</td></tr>
+<tr class="separator:a74edd7516f988ae64325ce4d93178296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a180b1e2c832dee1724aa9eca4672fa18"><td class="memItemLeft" align="right" valign="top"><a id="a180b1e2c832dee1724aa9eca4672fa18"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnError</b> (const char *window, const char *message) override</td></tr>
+<tr class="separator:a180b1e2c832dee1724aa9eca4672fa18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f4bd90b718825ed2c6978073616cf3"><td class="memItemLeft" align="right" valign="top"><a id="ad1f4bd90b718825ed2c6978073616cf3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnWarning</b> (const char *window, const char *message) override</td></tr>
+<tr class="separator:ad1f4bd90b718825ed2c6978073616cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6580251c79abf32ddf8cb31808a4751"><td class="memItemLeft" align="right" valign="top"><a id="ac6580251c79abf32ddf8cb31808a4751"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrintf</b> (const char *window, const char *message) override</td></tr>
+<tr class="separator:ac6580251c79abf32ddf8cb31808a4751"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_a_z_1_1_debug_1_1_driller"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_debug_1_1_driller')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_debug_1_1_driller.html">AZ::Debug::Driller</a></td></tr>
 <tr class="memitem:a850061b2e1a7c5109511cf405bd4fd56 inherit pro_methods_class_a_z_1_1_debug_1_1_driller"><td class="memItemLeft" align="right" valign="top"><a id="a850061b2e1a7c5109511cf405bd4fd56"></a>
 <a class="el" href="class_a_z_1_1_debug_1_1_driller.html">Driller</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1_debug_1_1_driller.html">Driller</a> &amp;)</td></tr>
@@ -130,7 +130,7 @@ virtual const <a class="el" href="struct_a_z_1_1_debug_1_1_driller_1_1_param.htm
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:50 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:18:29 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

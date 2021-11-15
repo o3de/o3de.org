@@ -5,4 +5,4 @@ description: The Gradient Signal Gem provides a number of components for generat
 toc: true
 ---
 
-The Gradient Signal Gem provides a number of components for generating, modifying, and mixing gradient signals in Open 3D Engine (O3DE) projects.
+The Gradient Signal Gem provides a number of components for generating, modifying, and mixing gradient signals in **Open 3D Engine (O3DE)** projects.

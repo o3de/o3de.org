@@ -100,18 +100,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGridSize</b> (cons
 <tr class="memitem:ab970e0206a894c5636d90edbd1905fe9"><td class="memItemLeft" align="right" valign="top"><a id="ab970e0206a894c5636d90edbd1905fe9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAnchorPoint</b> (const AZ::Vector2 &amp;anchorPoint)</td></tr>
 <tr class="separator:ab970e0206a894c5636d90edbd1905fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2f77d51c29bfda9b9009993ca4f9eea"><td class="memItemLeft" align="right" valign="top"><a id="ab2f77d51c29bfda9b9009993ca4f9eea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnStateChanged</b> ([[maybe_unused]] const RootGraphicsItemDisplayState &amp;displayState)</td></tr>
-<tr class="separator:ab2f77d51c29bfda9b9009993ca4f9eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b6342542882cd91014eb1c977272899"><td class="memItemLeft" align="right" valign="top"><a id="a8b6342542882cd91014eb1c977272899"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTick</b> (float delta, AZ::ScriptTimePoint)</td></tr>
-<tr class="separator:a8b6342542882cd91014eb1c977272899"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4156ea6a226cf51e404c30301ce10b62"><td class="memItemLeft" align="right" valign="top"><a id="a4156ea6a226cf51e404c30301ce10b62"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AnimatePositionTo</b> (const QPointF &amp;scenePoint, const AZStd::chrono::milliseconds &amp;duration)</td></tr>
-<tr class="separator:a4156ea6a226cf51e404c30301ce10b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a869dc28101f6bde0d93d4123f3dc3285"><td class="memItemLeft" align="right" valign="top"><a id="a869dc28101f6bde0d93d4123f3dc3285"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelAnimation</b> ()</td></tr>
-<tr class="separator:a869dc28101f6bde0d93d4123f3dc3285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794d44bc8ee8a824630060e3c5e85a5f"><td class="memItemLeft" align="right" valign="top"><a id="a794d44bc8ee8a824630060e3c5e85a5f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnStateChanged</b> ([[maybe_unused]] const RootGraphicsItemDisplayState &amp;displayState) override</td></tr>
+<tr class="separator:a794d44bc8ee8a824630060e3c5e85a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e5ee3be55a96bea49de49092225ac5"><td class="memItemLeft" align="right" valign="top"><a id="a82e5ee3be55a96bea49de49092225ac5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTick</b> (float delta, AZ::ScriptTimePoint) override</td></tr>
+<tr class="separator:a82e5ee3be55a96bea49de49092225ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af90fc3f5d52c57ac5bf304652553d276"><td class="memItemLeft" align="right" valign="top"><a id="af90fc3f5d52c57ac5bf304652553d276"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AnimatePositionTo</b> (const QPointF &amp;scenePoint, const AZStd::chrono::milliseconds &amp;duration) override</td></tr>
+<tr class="separator:af90fc3f5d52c57ac5bf304652553d276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a705c67b8f4f196fe6993b8d832b42708"><td class="memItemLeft" align="right" valign="top"><a id="a705c67b8f4f196fe6993b8d832b42708"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelAnimation</b> () override</td></tr>
+<tr class="separator:a705c67b8f4f196fe6993b8d832b42708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea5ed800ad2b5e76a7d8dc06da6e8136"><td class="memItemLeft" align="right" valign="top"><a id="aea5ed800ad2b5e76a7d8dc06da6e8136"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OffsetBy</b> (const AZ::Vector2 &amp;delta) override</td></tr>
 <tr class="separator:aea5ed800ad2b5e76a7d8dc06da6e8136"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,9 +130,9 @@ RootGraphicsItemDisplayState&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:a4d6ac6fb59b1b4d01b5d05238d882812"><td class="memItemLeft" align="right" valign="top"><a id="a4d6ac6fb59b1b4d01b5d05238d882812"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetEnabledState</b> (RootGraphicsItemEnabledState state) override</td></tr>
 <tr class="separator:a4d6ac6fb59b1b4d01b5d05238d882812"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a547370c5d90d130f14f9870bece49ab4"><td class="memItemLeft" align="right" valign="top"><a id="a547370c5d90d130f14f9870bece49ab4"></a>
-RootGraphicsItemEnabledState&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnabledState</b> () const</td></tr>
-<tr class="separator:a547370c5d90d130f14f9870bece49ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac80fcd201b94fa23e89690627282197b"><td class="memItemLeft" align="right" valign="top"><a id="ac80fcd201b94fa23e89690627282197b"></a>
+RootGraphicsItemEnabledState&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnabledState</b> () const override</td></tr>
+<tr class="separator:ac80fcd201b94fa23e89690627282197b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -190,7 +190,7 @@ class GraphCanvas::RootGraphicsItem&lt; GraphicsItem &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:36 for Open 3D Engine GraphCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:35 for Open 3D Engine GraphCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

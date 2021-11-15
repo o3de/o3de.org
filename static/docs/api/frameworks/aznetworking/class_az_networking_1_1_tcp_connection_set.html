@@ -95,6 +95,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8d8d07fd4693f020a53dee1596687e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa863e91264e6e5e0c43a28972ac41d07"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_connection_set.html#aa863e91264e6e5e0c43a28972ac41d07">GetConnectionCount</a> () const override</td></tr>
 <tr class="separator:aa863e91264e6e5e0c43a28972ac41d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eff02c9bf013307d4e415233c3ca1cc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_connection_set.html#a2eff02c9bf013307d4e415233c3ca1cc">GetActiveConnectionCount</a> () const override</td></tr>
+<tr class="separator:a2eff02c9bf013307d4e415233c3ca1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Tracks current TCP connections and allows fast lookups by socket fd and connection identifier. </p>
@@ -181,6 +183,34 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean true on success </dd></dl>
+
+</div>
+</div>
+<a id="a2eff02c9bf013307d4e415233c3ca1cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eff02c9bf013307d4e415233c3ca1cc">&#9670;&nbsp;</a></span>GetActiveConnectionCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t AzNetworking::TcpConnectionSet::GetActiveConnectionCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the current total count of connections not pending disconnect for this connection set </p><dl class="section return"><dt>Returns</dt><dd>the current total count of connections not pending disconnect for this connection set </dd></dl>
+
+<p>Implements <a class="el" href="class_az_networking_1_1_i_connection_set.html#a3d63426588215e1a23079e4d9a5fa74e">AzNetworking::IConnectionSet</a>.</p>
 
 </div>
 </div>
@@ -353,7 +383,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:28 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:11 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -65,9 +65,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>Open</b> (const char 
 <tr class="memitem:a91b3490f0b69a05993803ee484fd913b"><td class="memItemLeft" align="right" valign="top"><a id="a91b3490f0b69a05993803ee484fd913b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Close</b> ()</td></tr>
 <tr class="separator:a91b3490f0b69a05993803ee484fd913b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab443e72cb214525d1f668c694162b922"><td class="memItemLeft" align="right" valign="top"><a id="ab443e72cb214525d1f668c694162b922"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteBinary</b> (const void *data, unsigned int dataSize)</td></tr>
-<tr class="separator:ab443e72cb214525d1f668c694162b922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9391f620079065d90505045203442ea2"><td class="memItemLeft" align="right" valign="top"><a id="a9391f620079065d90505045203442ea2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteBinary</b> (const void *data, unsigned int dataSize) override</td></tr>
+<tr class="separator:a9391f620079065d90505045203442ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_i_o_1_1_system_file')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html">AZ::IO::SystemFile</a></td></tr>
 <tr class="memitem:a5754374c9d95616f33d979bf5f8cb122 inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="memItemLeft" align="right" valign="top"><a id="a5754374c9d95616f33d979bf5f8cb122"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SystemFile</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html">SystemFile</a> &amp;&amp;)</td></tr>
@@ -88,14 +88,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html#ad9f5048c9e295f24c144ff8c0d7a121c">Seek</a> (SeekSizeType offset, SeekMode mode)</td></tr>
 <tr class="memdesc:ad9f5048c9e295f24c144ff8c0d7a121c inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seek in current file. <br /></td></tr>
 <tr class="separator:ad9f5048c9e295f24c144ff8c0d7a121c inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b0500fda82a9644e0b6d5e0e87d67a3 inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="memItemLeft" align="right" valign="top"><a id="a1b0500fda82a9644e0b6d5e0e87d67a3"></a>
-SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html#a1b0500fda82a9644e0b6d5e0e87d67a3">Tell</a> ()</td></tr>
-<tr class="memdesc:a1b0500fda82a9644e0b6d5e0e87d67a3 inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cursor position in the current file. <br /></td></tr>
-<tr class="separator:a1b0500fda82a9644e0b6d5e0e87d67a3 inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5462e90f2bf2297dd56b30b20b1007e1 inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="memItemLeft" align="right" valign="top"><a id="a5462e90f2bf2297dd56b30b20b1007e1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html#a5462e90f2bf2297dd56b30b20b1007e1">Eof</a> ()</td></tr>
-<tr class="memdesc:a5462e90f2bf2297dd56b30b20b1007e1 inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the cursor at the end of the file? <br /></td></tr>
-<tr class="separator:a5462e90f2bf2297dd56b30b20b1007e1 inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293249b1595fb0c3680362d3698368fb inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="memItemLeft" align="right" valign="top"><a id="a293249b1595fb0c3680362d3698368fb"></a>
+SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html#a293249b1595fb0c3680362d3698368fb">Tell</a> () const</td></tr>
+<tr class="memdesc:a293249b1595fb0c3680362d3698368fb inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cursor position in the current file. <br /></td></tr>
+<tr class="separator:a293249b1595fb0c3680362d3698368fb inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9555b7b6621717ea772f6a8ebf636053 inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="memItemLeft" align="right" valign="top"><a id="a9555b7b6621717ea772f6a8ebf636053"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html#a9555b7b6621717ea772f6a8ebf636053">Eof</a> () const</td></tr>
+<tr class="memdesc:a9555b7b6621717ea772f6a8ebf636053 inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the cursor at the end of the file? <br /></td></tr>
+<tr class="separator:a9555b7b6621717ea772f6a8ebf636053 inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8fb3e581d1c8fc9f3b2f3e4d34431dd inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="memItemLeft" align="right" valign="top"><a id="ae8fb3e581d1c8fc9f3b2f3e4d34431dd"></a>
 AZ::u64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html#ae8fb3e581d1c8fc9f3b2f3e4d34431dd">ModificationTime</a> ()</td></tr>
 <tr class="memdesc:ae8fb3e581d1c8fc9f3b2f3e4d34431dd inherit pub_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time the file was last modified. <br /></td></tr>
@@ -252,6 +252,10 @@ typedef <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html#ab1e39e7b07f1b3ffcf1dac56c8c94c5b">Exists</a> (const char *path)</td></tr>
 <tr class="memdesc:ab1e39e7b07f1b3ffcf1dac56c8c94c5b inherit pub_static_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a file or directory exists. <br /></td></tr>
 <tr class="separator:ab1e39e7b07f1b3ffcf1dac56c8c94c5b inherit pub_static_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3ebb1698480cd6910e01afc215c9af inherit pub_static_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="memItemLeft" align="right" valign="top"><a id="a8e3ebb1698480cd6910e01afc215c9af"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html#a8e3ebb1698480cd6910e01afc215c9af">IsDirectory</a> (const char *path)</td></tr>
+<tr class="memdesc:a8e3ebb1698480cd6910e01afc215c9af inherit pub_static_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if path is a directory. <br /></td></tr>
+<tr class="separator:a8e3ebb1698480cd6910e01afc215c9af inherit pub_static_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d01d8f612ad37693d9662887406f990 inherit pub_static_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="memItemLeft" align="right" valign="top"><a id="a3d01d8f612ad37693d9662887406f990"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>FindFiles</b> (const char *filter, <a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html#a0716cb6e435b0c399083cecaaf7a2e9f">FindFileCB</a> cb)</td></tr>
 <tr class="separator:a3d01d8f612ad37693d9662887406f990 inherit pub_static_methods_class_a_z_1_1_i_o_1_1_system_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -314,7 +318,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:50 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:18:29 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

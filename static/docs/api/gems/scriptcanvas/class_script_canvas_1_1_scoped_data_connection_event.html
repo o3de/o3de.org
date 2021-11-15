@@ -69,21 +69,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abe978a93fa4ea51a644f0b5bf58e131f"><td class="memItemLeft" align="right" valign="top"><a id="abe978a93fa4ea51a644f0b5bf58e131f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ScopedDataConnectionEvent</b> (const AZ::EntityId &amp;connectionId, const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;targetNode, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;targetSlot, const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;sourceNode, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;sourceSlot)</td></tr>
 <tr class="separator:abe978a93fa4ea51a644f0b5bf58e131f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e566b057f4714df433719459c0af1e4"><td class="memItemLeft" align="right" valign="top"><a id="a3e566b057f4714df433719459c0af1e4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanAutoFix</b> () const</td></tr>
-<tr class="separator:a3e566b057f4714df433719459c0af1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecb287341058e8b5ad75dd6aa87cc5b2"><td class="memItemLeft" align="right" valign="top"><a id="aecb287341058e8b5ad75dd6aa87cc5b2"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetIdentifier</b> () const</td></tr>
-<tr class="separator:aecb287341058e8b5ad75dd6aa87cc5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaeb7833d387f8b226aaa76d43ac05a60"><td class="memItemLeft" align="right" valign="top"><a id="aaeb7833d387f8b226aaa76d43ac05a60"></a>
-AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetIdCrc</b> () const</td></tr>
-<tr class="separator:aaeb7833d387f8b226aaa76d43ac05a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee3b375cead6df00244b63a9019fc50"><td class="memItemLeft" align="right" valign="top"><a id="abee3b375cead6df00244b63a9019fc50"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanAutoFix</b> () const override</td></tr>
+<tr class="separator:abee3b375cead6df00244b63a9019fc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4356af930035951bd3db38ae5bec5769"><td class="memItemLeft" align="right" valign="top"><a id="a4356af930035951bd3db38ae5bec5769"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetIdentifier</b> () const override</td></tr>
+<tr class="separator:a4356af930035951bd3db38ae5bec5769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f13c4d14fcbc6b995e7ae1f5194428"><td class="memItemLeft" align="right" valign="top"><a id="a74f13c4d14fcbc6b995e7ae1f5194428"></a>
+AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetIdCrc</b> () const override</td></tr>
+<tr class="separator:a74f13c4d14fcbc6b995e7ae1f5194428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdbbcb8d3fa9ccb91123ed96e6fc5168"><td class="memItemLeft" align="right" valign="top"><a id="afdbbcb8d3fa9ccb91123ed96e6fc5168"></a>
 const AZ::EntityId &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetConnectionId</b> () const</td></tr>
 <tr class="separator:afdbbcb8d3fa9ccb91123ed96e6fc5168"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01d71001306d415b127f19af41ca4415"><td class="memItemLeft" align="right" valign="top"><a id="a01d71001306d415b127f19af41ca4415"></a>
-AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetTooltip</b> () const</td></tr>
-<tr class="separator:a01d71001306d415b127f19af41ca4415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c78109d850ca202e3f58ee29c273b8c"><td class="memItemLeft" align="right" valign="top"><a id="a2c78109d850ca202e3f58ee29c273b8c"></a>
+AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetTooltip</b> () const override</td></tr>
+<tr class="separator:a2c78109d850ca202e3f58ee29c273b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b54365287c5d2be2ae3f019453361fc"><td class="memItemLeft" align="right" valign="top"><a id="a3b54365287c5d2be2ae3f019453361fc"></a>
 AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetHighlightTarget</b> () const override</td></tr>
 <tr class="separator:a3b54365287c5d2be2ae3f019453361fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,7 +137,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetValidationType</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:55 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:57 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -62,24 +62,96 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa3b57b0fc3fa6f39605ad93c5574bef9"><td class="memItemLeft" align="right" valign="top"><a id="aa3b57b0fc3fa6f39605ad93c5574bef9"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_converter_requests.html#aa3b57b0fc3fa6f39605ad93c5574bef9">ConvertMaterial</a> (const AZ::SceneAPI::DataTypes::IMaterialData &amp;materialData, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html">MaterialSourceData</a> &amp;out)=0</td></tr>
-<tr class="memdesc:aa3b57b0fc3fa6f39605ad93c5574bef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the converion was successful. <br /></td></tr>
+<tr class="memitem:ab6c7b5e71fc385f587a5feb000f34d7e"><td class="memItemLeft" align="right" valign="top"><a id="ab6c7b5e71fc385f587a5feb000f34d7e"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEnabled</b> () const =0</td></tr>
+<tr class="separator:ab6c7b5e71fc385f587a5feb000f34d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a780b69f7144f126ca8f8c2fccb3f5e12"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_converter_requests.html#a780b69f7144f126ca8f8c2fccb3f5e12">ShouldIncludeMaterialPropertyNames</a> () const =0</td></tr>
+<tr class="separator:a780b69f7144f126ca8f8c2fccb3f5e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b57b0fc3fa6f39605ad93c5574bef9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_converter_requests.html#aa3b57b0fc3fa6f39605ad93c5574bef9">ConvertMaterial</a> (const AZ::SceneAPI::DataTypes::IMaterialData &amp;materialData, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html">MaterialSourceData</a> &amp;out)=0</td></tr>
 <tr class="separator:aa3b57b0fc3fa6f39605ad93c5574bef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a693c5cddeb1f6931078c64c6f99a2d6b"><td class="memItemLeft" align="right" valign="top"><a id="a693c5cddeb1f6931078c64c6f99a2d6b"></a>
-virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_converter_requests.html#a693c5cddeb1f6931078c64c6f99a2d6b">GetMaterialTypePath</a> () const =0</td></tr>
-<tr class="memdesc:a693c5cddeb1f6931078c64c6f99a2d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path to the .materialtype file that the materials are based on, such as StandardPBR.materialtype, etc. <br /></td></tr>
-<tr class="separator:a693c5cddeb1f6931078c64c6f99a2d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e150e2c09abd5b183bed6ec81f9a314"><td class="memItemLeft" align="right" valign="top"><a id="a2e150e2c09abd5b183bed6ec81f9a314"></a>
+virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_converter_requests.html#a2e150e2c09abd5b183bed6ec81f9a314">GetMaterialTypePath</a> () const =0</td></tr>
+<tr class="memdesc:a2e150e2c09abd5b183bed6ec81f9a314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path to the .materialtype file that the converted materials are based on, such as StandardPBR.materialtype, etc. <br /></td></tr>
+<tr class="separator:a2e150e2c09abd5b183bed6ec81f9a314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af363c476d94b5a149edf18f456fcd714"><td class="memItemLeft" align="right" valign="top"><a id="af363c476d94b5a149edf18f456fcd714"></a>
+virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_converter_requests.html#af363c476d94b5a149edf18f456fcd714">GetDefaultMaterialPath</a> () const =0</td></tr>
+<tr class="memdesc:af363c476d94b5a149edf18f456fcd714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path to a .material file to use as the default material when conversion is disabled. <br /></td></tr>
+<tr class="separator:af363c476d94b5a149edf18f456fcd714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Providers a user callback to convert from SceneAPI data into Atom materials. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa3b57b0fc3fa6f39605ad93c5574bef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3b57b0fc3fa6f39605ad93c5574bef9">&#9670;&nbsp;</a></span>ConvertMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AZ::RPI::MaterialConverterRequests::ConvertMaterial </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::SceneAPI::DataTypes::IMaterialData &amp;&#160;</td>
+          <td class="paramname"><em>materialData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html">MaterialSourceData</a> &amp;&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Converts data from a IMaterialData object to an Atom <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html" title="This is a simple data structure for serializing in/out material source files.">MaterialSourceData</a>. Only works when IsEnabled() is true. </p><dl class="section return"><dt>Returns</dt><dd>true if the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html" title="This is a simple data structure for serializing in/out material source files.">MaterialSourceData</a> output was populated with converted material data. </dd></dl>
+
+</div>
+</div>
+<a id="a780b69f7144f126ca8f8c2fccb3f5e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a780b69f7144f126ca8f8c2fccb3f5e12">&#9670;&nbsp;</a></span>ShouldIncludeMaterialPropertyNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AZ::RPI::MaterialConverterRequests::ShouldIncludeMaterialPropertyNames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if material property names should be included in azmaterials. This allows unlinking of dependencies for some file types to materialtype files (e.g. fbx). <br  />
+ </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/RPI/Code/Include/Atom/RPI.Edit/Material/MaterialConverterBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
