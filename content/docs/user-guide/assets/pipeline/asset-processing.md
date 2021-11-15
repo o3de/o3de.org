@@ -6,11 +6,13 @@ weight: 100
 toc: true
 ---
 
-In **Open 3D Engine (O3DE)**, an asset is a resource file, saved to disk, that is consumed by O3DE in some way. Assets include meshes, textures, animation, and audio files created in third-party applications, as well as assets created with O3DE's tools and automated processes.
+In **Open 3D Engine (O3DE)**, an asset is a resource file, saved to disk, that is consumed by O3DE in some way. Assets include meshes, textures, animations, and audio files created in third-party applications, as well as assets created with O3DE's tools and automated processes.
+
 
 Most assets must undergo some form of processing to generate runtime optimized files that can be used by **O3DE Editor** and **Launcher**. For example, a texture stored as a `.png` file is processed and generates a file that can be streamed and efficiently stored in the memory of a video card (GPU). This end to end process is the **Asset Pipeline**.
 
-In O3DE, assets can be divided into two categories; *source* assets and *product* assets. Source assets are portable assets created with third-party applications and with O3DE's tools; the inputs for the Asset Pipeline. Product assets are the runtime optimized assets required by O3DE Editor and Launcher; the products of Asset Pipeline.
+In O3DE, assets can be divided into two categories; *source* assets and *product* assets. Source assets are portable assets created with third-party applications and with O3DE's tools. These are the inputs for the Asset Pipeline. Product assets are the runtime optimized assets required by O3DE Editor and Launcher. These are the products of the Asset Pipeline.
+
 
 ## Asset Pipeline overview
 
