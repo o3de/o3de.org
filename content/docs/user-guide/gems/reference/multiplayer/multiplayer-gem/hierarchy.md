@@ -54,7 +54,7 @@ Network hierarchies can be created either in the Editor or by parenting entities
 
 ### ImGui Hierarchy Debugger
 
-O3DE Multiplayer Gem comes with a debugger to help you trouble shoot and analyze hierarchy structure in your level. It can be enabled by bringing up ImGui menu (**HOME** key by default), and then selecting **Multiplayer** > **Multiplayer Hierarchy Debugger**. With the hierarchy debugger enabled, you will be able to browse hierarchies and get debug text in the world over the root entities of hierarchies.
+O3DE Multiplayer Gem comes with a debugger to help you trouble shoot and analyze hierarchy structure in an O3DE application. It can be enabled by bringing up ImGui menu (**HOME** key by default), and then selecting **Multiplayer** > **Multiplayer Hierarchy Debugger**. With the hierarchy debugger enabled, you will be able to browse hierarchies and get debug text in the world over the root entities of hierarchies.
 
 Using this debugger, you can find the following information about a hierarchy:
 - Its root entity name
