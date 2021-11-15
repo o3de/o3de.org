@@ -34,6 +34,7 @@ Read about [the features provided by Open 3D Engine](/docs/welcome-guide/feature
 
 | Documentation                        | Details |
 |--------------------------------------|---------|
-| [Asset file types](appendix/asset-file-types/) | Reference for the asset file types supported in O3DE by default. |
-| [Console variable reference](appendix/cvars/) | Reference for the O3DE console variables. |
 | [Glossary](appendix/glossary) | Common terms and concepts used in O3DE development. |
+| [Asset file types](appendix/asset-file-types/) | Reference for the asset file types supported in O3DE by default. |
+| [Console variable reference](appendix/cvars/) | Reference for the O3DE console variables (CVARs). |
+| [Log files](appendix/log-files) | Learn where to find common log files in O3DE. |

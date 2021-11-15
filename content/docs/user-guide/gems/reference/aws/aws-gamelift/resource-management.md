@@ -140,6 +140,44 @@ The following example runs two Windows server processes on the fleet and writes 
 ]
 ```
 
+## (Optional) Update FlexMatch configuration
+
+If your game supports FlexMatch, you need to update the FlexMatch configuration defined at `/Gems/AWSGameLift/cdk/aws_gamelift/flexmatch/flexmatch_configurations.py` before deploying the AWS CDK application.
+
+### Rule set body
+
+A collection of matchmaking rules, formatted as a JSON string, such as the example below.
+
+For instructions on designing Matchmaking rule sets, please check [Design a FlexMatch rule set](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-design-ruleset.html).
+
+```bash
+RULE_SET_BODY = '{"ruleLanguageVersion":"1.0","teams":[{"name":"Players","maxPlayers":4,"minPlayers":2}]}'
+```
+
+### Acceptance required
+
+A flag that determines whether a match that was created with this configuration must be accepted by the matched players. To require acceptance, set to True.
+
+### Required timeout
+
+The maximum duration, in seconds, that a matchmaking ticket can remain in process before timing out.
+
+### Additional player count
+
+The number of player slots in a match to keep open for future players.
+
+### Backfill mode
+
+The method used to backfill game sessions that are created with this matchmaking configuration. 
+
+Specify MANUAL when your game manages backfill requests manually or does not use the match backfill feature.
+Specify AUTOMATIC to have GameLift create a StartMatchBackfill request whenever a game session has one or more open slots.
+
+```bash
+BACKFILL_MODE = 'AUTOMATIC'
+```
+
+
 ## Navigate to the AWS CDK application folder
 
 To set up the Python environment and deploy the AWS CDK application, open a command line window and navigate to the `cdk` folder of the AWS GameLift Gem.
@@ -165,18 +203,34 @@ $ cdk synth
 
 ### Enable optional features
 
+
+#### Upload with support stack
+
 If you need the AWS CDK application to upload a local package and create a GameLift build accordingly, you must enable the `upload-with-support-stack` context variable:
 
 ```cmd
 $ cdk synth -c upload-with-support-stack=true --all
 ```
 
+
 When this optional feature is enabled, an additional CloudFormation stack will be deployed. The additional stack contains the AWS resources that are required to support the build upload and creation. The `--all` argument tells the CDK application to synthesize all the available stacks.
 
-Optionally, you can create a game session queue resource using this CDK application by providing the `create_game_session_queue` context variable when synthesizing stack(s). The following example command synthesizes the application with all the optional features enabled:
+
+#### Create game session queue
+
+It is recommended you create the optional game session queue using this CDK application by providing the `create_game_session_queue` context variable when synthesizing stack(s). The following example command synthesizes the application with this optional features enabled:
 
 ```cmd
-$ cdk synth -c upload-with-support-stack=true -c create_game_session_queue=true --all
+$ cdk synth -c create_game_session_queue=true
+```
+
+
+#### Create FlexMatch resources
+
+You can also create matchmaking configuration and matchmaking rule set using this CDK application by providing the `flex_match` context variable when synthesizing stack(s). The following example command synthesizes the application with this optional features enabled:
+
+```cmd
+$ cdk synth -c flex_match=true
 ```
 
 
@@ -199,10 +253,10 @@ Similar to using the `synth` command, if you want the AWS CDK application to upl
 $ cdk deploy -c upload-with-support-stack=true --all
 ```
 
-To deploy a game session queue resource using this CDK application, you must provide the `create_game_session_queue` context variable when deploying stack(s). The following example command deploys the application with all the optional features enabled:
+To deploy this CDK application with optional features enabled, you must provide the corresponding context variables when deploying stack(s). The following example command deploys the application with all the optional features enabled:
 
 ```cmd
-$ cdk deploy -c upload-with-support-stack=true -c create_game_session_queue=true --all
+$ cdk deploy -c upload-with-support-stack=true -c create_game_session_queue=true -c flex_match=true --all
 ```
 
 
@@ -219,8 +273,8 @@ To destroy all of the AWS resources that the AWS CDK application (which uses an 
 $ cdk destroy
 ```
 
-If you have any of the optional feature enabled, you can destroy the CDK application with all the optional features enabled by providing the context variable and the `--all` argument. The following command destroys the CDK application with all the optional features enabled:
+If you have any of the optional feature enabled, you can destroy the CDK application with all the optional features enabled by providing the corresponding context variables and the `--all` argument. The following command destroys the CDK application with all the optional features enabled:
 
 ```cmd
-$ cdk -c upload-with-support-stack=true -c create_game_session_queue=true --all
+$ cdk -c upload-with-support-stack=true -c create_game_session_queue=true -c flex_match=true --all
 ```

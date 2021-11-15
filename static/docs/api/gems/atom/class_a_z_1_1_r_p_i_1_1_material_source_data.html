@@ -70,6 +70,11 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a4f2b36d5de5634a09aa935d00d7afb42"><td class="memItemLeft" align="right" valign="top"><a id="a4f2b36d5de5634a09aa935d00d7afb42"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ApplyVersionUpdatesResult</b> { <b>Failed</b>, 
+<b>NoUpdates</b>, 
+<b>UpdatesApplied</b>
+ }</td></tr>
+<tr class="separator:a4f2b36d5de5634a09aa935d00d7afb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f21e0221344c76925021f7eaaa5d66d"><td class="memItemLeft" align="right" valign="top"><a id="a3f21e0221344c76925021f7eaaa5d66d"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>PropertyMap</b> = AZStd::map&lt; AZStd::string, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_source_data_1_1_property.html">Property</a> &gt;</td></tr>
 <tr class="separator:a3f21e0221344c76925021f7eaaa5d66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -82,8 +87,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adc7f8695bbabe17774562a187f06c662"><td class="memItemLeft" align="right" valign="top"><a id="adc7f8695bbabe17774562a187f06c662"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html">AZ::RPI::MaterialSourceData</a>, &quot;{B8881D92-DF9F-4552-9F22-FF4421C45D9A}&quot;)</td></tr>
 <tr class="separator:adc7f8695bbabe17774562a187f06c662"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6c034b1d98daf6f8f3534606a0410a0"><td class="memItemLeft" align="right" valign="top">Outcome&lt; Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html#ac6c034b1d98daf6f8f3534606a0410a0">CreateMaterialAsset</a> (Data::AssetId assetId, AZStd::string_view materialSourceFilePath=&quot;&quot;, bool elevateWarnings=true, bool includeMaterialPropertyNames=true) const</td></tr>
+<tr class="memitem:a604be4035b78e479ec5b3b7a85b5b284"><td class="memItemLeft" align="right" valign="top">ApplyVersionUpdatesResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html#a604be4035b78e479ec5b3b7a85b5b284">ApplyVersionUpdates</a> (AZStd::string_view materialSourceFilePath=&quot;&quot;)</td></tr>
+<tr class="separator:a604be4035b78e479ec5b3b7a85b5b284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6c034b1d98daf6f8f3534606a0410a0"><td class="memItemLeft" align="right" valign="top">Outcome&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html#ac6c034b1d98daf6f8f3534606a0410a0">CreateMaterialAsset</a> (Data::AssetId assetId, AZStd::string_view materialSourceFilePath=&quot;&quot;, bool elevateWarnings=true, bool includeMaterialPropertyNames=true) const</td></tr>
 <tr class="separator:ac6c034b1d98daf6f8f3534606a0410a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6efa217705e3db3accea886f937c59"><td class="memItemLeft" align="right" valign="top">Outcome&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html#a7b6efa217705e3db3accea886f937c59">CreateMaterialAssetFromSourceData</a> (Data::AssetId assetId, AZStd::string_view materialSourceFilePath=&quot;&quot;, bool elevateWarnings=true, bool includeMaterialPropertyNames=true, AZStd::unordered_set&lt; AZStd::string &gt; *sourceDependencies=nullptr) const</td></tr>
+<tr class="separator:a7b6efa217705e3db3accea886f937c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -104,10 +113,10 @@ AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html#af66c8c5eb716b32c97051601bb045944">m_parentMaterial</a></td></tr>
 <tr class="memdesc:af66c8c5eb716b32c97051601bb045944"><td class="mdescLeft">&#160;</td><td class="mdescRight">The immediate parent of this material. <br /></td></tr>
 <tr class="separator:af66c8c5eb716b32c97051601bb045944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cae450cca43aa07ecc89ac4f6759ab3"><td class="memItemLeft" align="right" valign="top"><a id="a1cae450cca43aa07ecc89ac4f6759ab3"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html#a1cae450cca43aa07ecc89ac4f6759ab3">m_propertyLayoutVersion</a> = 0</td></tr>
-<tr class="memdesc:a1cae450cca43aa07ecc89ac4f6759ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The version of the property layout, defined in the material type, which was used to configure this material. <br /></td></tr>
-<tr class="separator:a1cae450cca43aa07ecc89ac4f6759ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c381db13ba006e862ec8f2405d65cda"><td class="memItemLeft" align="right" valign="top"><a id="a6c381db13ba006e862ec8f2405d65cda"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html#a6c381db13ba006e862ec8f2405d65cda">m_materialTypeVersion</a> = 0</td></tr>
+<tr class="memdesc:a6c381db13ba006e862ec8f2405d65cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">The version of the material type that was used to configure this material. <br /></td></tr>
+<tr class="separator:a6c381db13ba006e862ec8f2405d65cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae39fe79bc272f1de02fc0e201214a436"><td class="memItemLeft" align="right" valign="top"><a id="ae39fe79bc272f1de02fc0e201214a436"></a>
 PropertyGroupMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_properties</b></td></tr>
 <tr class="separator:ae39fe79bc272f1de02fc0e201214a436"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,6 +130,30 @@ static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is a simple data structure for serializing in/out material source files. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a604be4035b78e479ec5b3b7a85b5b284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a604be4035b78e479ec5b3b7a85b5b284">&#9670;&nbsp;</a></span>ApplyVersionUpdates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ApplyVersionUpdatesResult AZ::RPI::MaterialSourceData::ApplyVersionUpdates </td>
+          <td>(</td>
+          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramname"><em>materialSourceFilePath</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks the material type version and potentially applies a series of property changes (most common are simple property renames) based on the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a>'s version update procedure. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialSourceFilePath</td><td>Indicates the path of the .material file that the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html" title="This is a simple data structure for serializing in/out material source files.">MaterialSourceData</a> represents. Used for resolving file-relative paths. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac6c034b1d98daf6f8f3534606a0410a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6c034b1d98daf6f8f3534606a0410a0">&#9670;&nbsp;</a></span>CreateMaterialAsset()</h2>
 
@@ -128,7 +161,7 @@ static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Outcome&lt;Data::Asset&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a>&gt; &gt; AZ::RPI::MaterialSourceData::CreateMaterialAsset </td>
+          <td class="memname">Outcome&lt;<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a>&gt; &gt; AZ::RPI::MaterialSourceData::CreateMaterialAsset </td>
           <td>(</td>
           <td class="paramtype">Data::AssetId&#160;</td>
           <td class="paramname"><em>assetId</em>, </td>
@@ -170,13 +203,69 @@ static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><
 
 </div>
 </div>
+<a id="a7b6efa217705e3db3accea886f937c59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b6efa217705e3db3accea886f937c59">&#9670;&nbsp;</a></span>CreateMaterialAssetFromSourceData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Outcome&lt;<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a>&gt; &gt; AZ::RPI::MaterialSourceData::CreateMaterialAssetFromSourceData </td>
+          <td>(</td>
+          <td class="paramtype">Data::AssetId&#160;</td>
+          <td class="paramname"><em>assetId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramname"><em>materialSourceFilePath</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>elevateWarnings</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeMaterialPropertyNames</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::unordered_set&lt; AZStd::string &gt; *&#160;</td>
+          <td class="paramname"><em>sourceDependencies</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> from the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html" title="This is a simple data structure for serializing in/out material source files.">MaterialSourceData</a> content. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">assetId</td><td>ID for the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> </td></tr>
+    <tr><td class="paramname">materialSourceFilePath</td><td>Indicates the path of the .material file that the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html" title="This is a simple data structure for serializing in/out material source files.">MaterialSourceData</a> represents. Used for resolving file-relative paths. </td></tr>
+    <tr><td class="paramname">elevateWarnings</td><td>Indicates whether to treat warnings as errors </td></tr>
+    <tr><td class="paramname">includeMaterialPropertyNames</td><td>Indicates whether to save material property names into the material asset file </td></tr>
+    <tr><td class="paramname">sourceDependencies</td><td>if not null, will be populated with a set of all of the loaded material and material type paths </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/RPI/Code/Include/Atom/RPI.Edit/Material/MaterialSourceData.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:32:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

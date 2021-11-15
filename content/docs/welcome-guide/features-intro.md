@@ -87,9 +87,9 @@ O3DE provides support for a suite of industry standard physics solutions that yo
 
 * **NVIDIA Cloth:** Create clothing and fabrics that realistically react to animated entities and physical forces. NVIDIA Cloth has robust support for colliders, constraints, and per-vertex cloth data to compute highly resolving, layered cloth simulation.
 
-* **NVIDIA Blast:** Create dynamic destruction with multiple layers of fracturing and user defined vector and stress damage limits.
-
 * **AMD TressFX:** Create hair and fur using guide hairs and grooming data that realistically reacts to animated entities and physical forces.
+
+<!-- * **NVIDIA Blast:** Create dynamic destruction with multiple layers of fracturing and user defined vector and stress damage limits. -->
 
 ## Robust networking
 
