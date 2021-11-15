@@ -15,12 +15,11 @@ The **AWS GameLift** Gem provides the following features:
 - Instructions to package and optionally upload the dedicated server build.
 - A sample [AWS Cloud Development Kit (AWS CDK)](https://docs.aws.amazon.com/cdk/latest/guide/home.html) application. You can deploy the AWS CDK application to set up basic GameLift resources, or modify the application to meet your needs by adding or updating the deployed resources. 
 
-## Release highlights
-
-**Preview features**  
+## Release highlights 
 
 - Support for CreateSession (on fleet/on queue), SearchSessions, JoinSession, and LeaveSession through GameLift.
-- Support for Windows dedicated servers and Windows client launchers. 
+- Support for FlexMatch including backfill through GameLift.
+- Support for Windows/Linux dedicated servers and multi-platform client launchers.
 - Support for AWS CDK applications to manage GameLift resources.
 
 
@@ -28,6 +27,7 @@ The **AWS GameLift** Gem provides the following features:
 
 For a better understanding of the AWS GameLift Gem topics in this guide, we recommend reviewing the following: 
 - [What Is Amazon GameLift? (Amazon GameLift Developer Guide)](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-intro.html)
+- [FlexMatch](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-intro.html)
 - [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/multiplayer/)
 - [Networking](/docs/user-guide/networking/)
 
@@ -38,9 +38,9 @@ For a better understanding of the AWS GameLift Gem topics in this guide, we reco
 | - | - |
 | [AWS GameLift Gem Setup](gem-setup/) | Set up the AWS GameLift Gem in O3DE. |
 | Game Preparation with the AWS GameLift Gem |  |
-| <ul><li> [AWS GameLift Gem C++ API](cpp-api/)</li></ul>| Learn how to prepare your game using the C++ API for the AWS GameLift Gem. |
-| <ul><li> [AWS GameLift Gem Scripting](scripting/) </li></ul>| Learn how to prepare your game using Script Canvas nodes that the AWS GameLift Gem provides. |
-| <ul><li> [AWS GameLift Gem Advanced Topics](advanced-topics/) | Learn some advanced ways to prepare your game with the AWS GameLift Gem. |
+| <ul><li> [Game Session Management](session-management/)</li></ul>| Learn how to prepare your game for session management. |
+| <ul><li> [FlexMatch Support](flexmatch/) </li></ul>| Learn how to prepare your game for making matches and backfilling existing matches. |
+| <ul><li> [AWS GameLift Gem Advanced Topics](advanced-topics/) </li></ul>| Learn some advanced ways to prepare your game with the AWS GameLift Gem. |
 | [AWS GameLift Gem Local Testing](local-testing/) | Verify AWS GameLift Gem feature integrations locally using GameLift Local, a command line tool that starts a self-contained version of the managed GameLift service. |
 | [AWS GameLift Gem Build Packaging for Windows](build-packaging-for-windows/) | Learn how to package your Windows dedicated server builds so that you can install and run them on GameLift. |
 | [AWS GameLift Gem Build Packaging for Linux](build-packaging-for-linux/) | Learn how to package your Linux dedicated server builds so that you can install and run them on GameLift. |

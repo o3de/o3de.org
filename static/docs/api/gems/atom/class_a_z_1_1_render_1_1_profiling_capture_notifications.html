@@ -63,8 +63,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0de7b48e940ac0bd77e4db5416fd77b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a699c6404d8efa869568c24b14a905d8c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_profiling_capture_notifications.html#a699c6404d8efa869568c24b14a905d8c">OnCaptureQueryPipelineStatisticsFinished</a> (bool result, const AZStd::string &amp;info)=0</td></tr>
 <tr class="separator:a699c6404d8efa869568c24b14a905d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6685a372228c3824e2438fa3f2fe62d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_profiling_capture_notifications.html#ab6685a372228c3824e2438fa3f2fe62d">OnCaptureCpuProfilingStatisticsFinished</a> (bool result, const AZStd::string &amp;info)=0</td></tr>
-<tr class="separator:ab6685a372228c3824e2438fa3f2fe62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b35e0c31c563042733d05f882f7f4e2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_profiling_capture_notifications.html#a7b35e0c31c563042733d05f882f7f4e2">OnCaptureBenchmarkMetadataFinished</a> (bool result, const AZStd::string &amp;info)=0</td></tr>
 <tr class="separator:a7b35e0c31c563042733d05f882f7f4e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -146,49 +144,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Notify when the current CpuFrameTimeStatistics capture is finished </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">result</td><td>Set to true if it's finished successfully </td></tr>
-    <tr><td class="paramname">info</td><td>The output file path or error information which depends on the return. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab6685a372228c3824e2438fa3f2fe62d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6685a372228c3824e2438fa3f2fe62d">&#9670;&nbsp;</a></span>OnCaptureCpuProfilingStatisticsFinished()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AZ::Render::ProfilingCaptureNotifications::OnCaptureCpuProfilingStatisticsFinished </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>info</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Notify when the current CpuProfilingStatistics capture is finished </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">result</td><td>Set to true if it's finished successfully </td></tr>
     <tr><td class="paramname">info</td><td>The output file path or error information which depends on the return. </td></tr>
@@ -290,7 +245,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:32:16 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:13 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

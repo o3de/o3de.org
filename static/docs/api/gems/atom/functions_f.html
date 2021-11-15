@@ -94,6 +94,10 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#a156c3229ba7e996397dab8b754981d38">AZ::RPI::Shader</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html#a9fd1e23554ab327a5588b222cc971703">AZ::RPI::ShaderAsset</a>
 </li>
+<li>FindFirstPass()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#ae3a2245a44016642a069dc4e6b0b4148">AZ::RPI::PassSystem</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a14859d6743b106159a2f6258af99a08f">AZ::RPI::PassSystemInterface</a>
+</li>
 <li>FindMaterialAssetsUsingShader()
 : <a class="el" href="class_shader_management_console_1_1_shader_management_console_requests.html#ad20e7f35f99304558b7fe279bf55f472">ShaderManagementConsole::ShaderManagementConsoleRequests</a>
 </li>
@@ -123,19 +127,14 @@ $(function() {
 <li>FindPass()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_parent_pass.html#a12005bb1c58426e972644786b2dafc38">AZ::RPI::ParentPass</a>
 </li>
-<li>FindPassByNameRecursive()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_parent_pass.html#a514580a1c8ec36f63439c6ebc198d88d">AZ::RPI::ParentPass</a>
-</li>
-<li>FindPasses()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_library.html#aba023e2fb6c631bfda0476c00e52da60">AZ::RPI::PassLibrary</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a4572b682546a8aff366f2b4bba69c07f">AZ::RPI::PassSystem</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a510ede393a2ed708994daed045a990a0">AZ::RPI::PassSystemInterface</a>
-</li>
 <li>FindPassRequest()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html#a60412af6954154c02f8e217bd2882bd9">AZ::RPI::PassTemplate</a>
 </li>
+<li>FindProperty()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#a34160ceeedb7d7c74d527de8561ce943">AZ::RPI::MaterialTypeSourceData</a>
+</li>
 <li>FindPropertyIndex()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html#a04e1cc488ee67ce0d32aa6e90f840db2">AZ::RPI::Material</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html#a2d9ff319c56b9f5a8d2c6869d26516ee">AZ::RPI::Material</a>
 </li>
 <li>FindScope()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph.html#a18889e4744bbce22146c868151b69a84">AZ::RHI::FrameGraph</a>
@@ -160,7 +159,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group_layout.html#ae303b19f666b6199e694f889fba580de">AZ::RPI::ShaderOptionGroupLayout</a>
 </li>
 <li>FindShaderResourceGroupLayout()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#a1507a0cab4057c55cceddf79ad3e03e6">AZ::RPI::Shader</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#afd89cab70f9ef4b60e545d1cf6316464">AZ::RPI::Shader</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html#aae44ec8d4d7be2ec21fe3ab82f97fb32">AZ::RPI::ShaderAsset</a>
 </li>
 <li>FindSwapChainPass()
@@ -172,7 +171,7 @@ $(function() {
 </li>
 <li>FindValue()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_descriptor.html#ac4d0234ece7a7e2374aae9629dd5a01e">AZ::RPI::ShaderOptionDescriptor</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group_layout.html#a44ce583f5fde33f40f22808e2e53988e">AZ::RPI::ShaderOptionGroupLayout</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group_layout.html#a4e8d7f92dc855b2949f9e534035e501b">AZ::RPI::ShaderOptionGroupLayout</a>
 </li>
 <li>FindVariantStableId()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#a2511e12233eb7c359abb63789632dbc4">AZ::RPI::Shader</a>
@@ -190,13 +189,18 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool_database.html#a2d6b7c4139be77a7f0b00051f3c7f145">AZ::RHI::ResourcePoolDatabase</a>
 </li>
 <li>ForEachImagePool()
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool_database.html#a8341e3a33dd47e147a20bf54dc7dede9">AZ::RHI::ResourcePoolDatabase</a>
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool_database.html#a75159f32222ddab98e83d32eec3cef26">AZ::RHI::ResourcePoolDatabase</a>
+</li>
+<li>ForEachPass()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_library.html#a70dcb31806ff9472fdc94baf45479519">AZ::RPI::PassLibrary</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#aa159ed700311033d865392c5d9b1cb78">AZ::RPI::PassSystem</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a55cb6c3724d046ec60740480b92b4c9d">AZ::RPI::PassSystemInterface</a>
 </li>
 <li>ForEachPool()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool_database.html#a80e3493198d70f5e4dda6a0923f1ac46">AZ::RHI::ResourcePoolDatabase</a>
 </li>
 <li>ForEachPoolResolver()
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool_database.html#a66bd483d84e222c30a870144f56dfc65">AZ::RHI::ResourcePoolDatabase</a>
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool_database.html#ada0a8dc37e50ae19aa68411259314d9e">AZ::RHI::ResourcePoolDatabase</a>
 </li>
 <li>ForEachShaderResourceGroupPool()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool_database.html#af58f8a00b2c8faf7b1c6ac0a5abf01e7">AZ::RHI::ResourcePoolDatabase</a>
@@ -226,7 +230,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_render_1_1_im_gui_active_context_scope.html#a348b7969f44d1c898b2ae462557a1c2e">AZ::Render::ImGuiActiveContextScope</a>
 </li>
 <li>FromPass()
-: <a class="el" href="class_a_z_1_1_render_1_1_im_gui_active_context_scope.html#ab5f4399d521c89e80c5836d50a023997">AZ::Render::ImGuiActiveContextScope</a>
+: <a class="el" href="class_a_z_1_1_render_1_1_im_gui_active_context_scope.html#ace128d240418bd2565e2c813de055786">AZ::Render::ImGuiActiveContextScope</a>
 </li>
 <li>FunctorResult
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_functor_source_data.html#a17b4aeaff7c2f5eb51197b0a94bd5539">AZ::RPI::MaterialFunctorSourceData</a>
@@ -235,7 +239,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:32:21 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:20 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
