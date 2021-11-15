@@ -69,11 +69,9 @@ $(() => {
 });
 
 // --- Downloads page
-// Handle click to switch between download pages
+// Handle click to switch between download pages.
 $(function() {
   $(".os-selector-button").click(function(event){
-    event.preventDefault();
-
     if($(this).hasClass("active"))
     {
       return;
@@ -86,8 +84,18 @@ $(function() {
     // Switch content
     $(".os-content.active").removeClass("active");
     $("#content-" + $(this).data("os")).addClass("active");
-    console.log("#content-" + $(this).data("os"));
   });
+});
+
+// Detect anchor in URL on load and select appropriate tab.
+// This uses the click to switch function, so it must be defined after it.
+$(function() {
+  // Retrieve the hash from the url.
+  var hash = $(location).attr('hash').replace( /#/, "" );
+
+  // Try to click the appropriate button.
+  // If it doesn't exist, this will just do nothing.
+  $("#os-" + hash).trigger("click");
 });
 
 // Search 
