@@ -6,7 +6,8 @@ weight: 500
 toc: true
 ---
 
-If you are having issues with **Asset Processor** use the methods below to debug the issues.
+If you are having issues with **Asset Processor**, use the methods below to debug the issues.
+
 
 ## View Asset Processor Logs 
 

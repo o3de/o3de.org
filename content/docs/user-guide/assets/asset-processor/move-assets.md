@@ -13,7 +13,7 @@ To support asset relocation and removal, the **Asset Processor Batch** tool offe
 {{< note >}}
 Some assets that contain references may be in a binary format. For example, `.fbx` files can be either ascii or binary format. References in binary format files are not automatically updated.
 
-Because moving or deleting files might be a destructive operations, the `--move` and `--delete` commands require an additional `--confirm` option to perform the operation. Using either command without the `--confirm` option only provides a preview of the results of the command.
+Because moving or deleting files might be a destructive operation, the `--move` and `--delete` commands require an additional `--confirm` option to perform the operation. Using either command without the `--confirm` option only provides a preview of the results of the command.
 {{< /note >}}
 
 ## Move Syntax
