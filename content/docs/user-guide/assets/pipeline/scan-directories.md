@@ -1,7 +1,8 @@
 ---
 linkTitle: Scan Directories 
 title: Scan Directories 
-description: Scan directories are monitored by Asset Processor for new an updated assets.
+description: Scan directories are monitored by Asset Processor for new and updated assets.
+
 weight: 300
 toc: true
 ---
