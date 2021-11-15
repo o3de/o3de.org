@@ -175,8 +175,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSimulation
 <tr class="memitem:a255ba0da6fea4f2301daebc008677318"><td class="memItemLeft" align="right" valign="top"><a id="a255ba0da6fea4f2301daebc008677318"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCCDEnabled</b> (bool enabled)=0</td></tr>
 <tr class="separator:a255ba0da6fea4f2301daebc008677318"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae289ae9ddbeec13c108291b12416e371"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_physics_1_1_rigid_body.html#ae289ae9ddbeec13c108291b12416e371">UpdateMassProperties</a> (MassComputeFlags flags=MassComputeFlags::DEFAULT, const AZ::Vector3 *centerOfMassOffsetOverride=nullptr, const AZ::Matrix3x3 *inertiaTensorOverride=nullptr, const float *massOverride=nullptr)=0</td></tr>
-<tr class="separator:ae289ae9ddbeec13c108291b12416e371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad710290245ad72b6fa1efedbb690f3f0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_physics_1_1_rigid_body.html#ad710290245ad72b6fa1efedbb690f3f0">UpdateMassProperties</a> (MassComputeFlags flags=MassComputeFlags::DEFAULT, const AZ::Vector3 &amp;centerOfMassOffsetOverride=AZ::Vector3::CreateZero(), const AZ::Matrix3x3 &amp;inertiaTensorOverride=AZ::Matrix3x3::CreateIdentity(), const float massOverride=1.0f)=0</td></tr>
+<tr class="separator:ad710290245ad72b6fa1efedbb690f3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct_az_physics_1_1_simulated_body"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_az_physics_1_1_simulated_body')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_az_physics_1_1_simulated_body.html">AzPhysics::SimulatedBody</a></td></tr>
 <tr class="memitem:a90c289263bbbc9d0386fbe9dbaaf78d5 inherit pub_methods_struct_az_physics_1_1_simulated_body"><td class="memItemLeft" align="right" valign="top"><a id="a90c289263bbbc9d0386fbe9dbaaf78d5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="struct_az_physics_1_1_simulated_body.html">AzPhysics::SimulatedBody</a>, &quot;{BCC37A4F-1C05-4660-9E41-0CCF2D5E7175}&quot;)</td></tr>
@@ -273,8 +273,8 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Dynamic rigid body. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae289ae9ddbeec13c108291b12416e371"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae289ae9ddbeec13c108291b12416e371">&#9670;&nbsp;</a></span>UpdateMassProperties()</h2>
+<a id="ad710290245ad72b6fa1efedbb690f3f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad710290245ad72b6fa1efedbb690f3f0">&#9670;&nbsp;</a></span>UpdateMassProperties()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,20 +291,20 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const AZ::Vector3 *&#160;</td>
-          <td class="paramname"><em>centerOfMassOffsetOverride</em> = <code>nullptr</code>, </td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>centerOfMassOffsetOverride</em> = <code>AZ::Vector3::CreateZero()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const AZ::Matrix3x3 *&#160;</td>
-          <td class="paramname"><em>inertiaTensorOverride</em> = <code>nullptr</code>, </td>
+          <td class="paramtype">const AZ::Matrix3x3 &amp;&#160;</td>
+          <td class="paramname"><em>inertiaTensorOverride</em> = <code>AZ::Matrix3x3::CreateIdentity()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>massOverride</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>massOverride</em> = <code>1.0f</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -336,7 +336,7 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:31:15 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:07 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
