@@ -14,7 +14,7 @@ The Descriptor provides **Asset Processor** the information required to identify
 
 | Field | Type | Description |
 | - | - | - |
-| `busId` | `azlmbr.math.Uuid` | The universal unique ID for (UUID) the Asset Builder. |
+| `busId` | `azlmbr.math.Uuid` | The universal unique ID (UUID) for the Asset Builder. |
 | `name` | String | The name of the Asset Builder. |
 | `patterns` | List[`azlmbr.asset.builder.AssetBuilderPattern`] | The collection of file patterns that the Asset Builder can process. |
 | `version` | Number | The version number of the Asset Builder. |

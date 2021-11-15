@@ -131,7 +131,7 @@ jobParameterMap = {1 : "MyValue", 2 : "Another Value"}
 
 | Type | Description |
 | - | - |
-| `azlmbr.asset.builder.JobDependency_Fingerprint` | The dependent job should get processed by Asset Processor when the fingerprint of job it depends on changes. |
+| `azlmbr.asset.builder.JobDependency_Fingerprint` | The dependent job should get processed by Asset Processor when the fingerprint of the job it depends on changes. |
 | `azlmbr.asset.builder.JobDependency_Order` | The dependent job should only run after the job it depends on is processed by Asset Processor. |
 | `azlmbr.asset.builder.JobDependency_OrderOnce` | The dependent job should only run after the job it depends on is processed by Asset Processor and only if the dependencies have never been processed by Asset Processor. |
 

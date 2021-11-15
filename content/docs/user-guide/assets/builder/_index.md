@@ -8,7 +8,7 @@ toc: true
 
 With **Python Asset Builder**, you can create custom process jobs for assets produced in content creation tools such as Maya and Houdini, or any source asset type with a known file format.
 
-To use Python Asset Builder you must enable the [Python Asset Builder Gem](/docs/user-guide/gems/reference/script/python/python-asset-builder).
+To use Python Asset Builder, you must enable the [Python Asset Builder Gem](/docs/user-guide/gems/reference/script/python/python-asset-builder).
 
 ## Python Asset Builder implementation
 
