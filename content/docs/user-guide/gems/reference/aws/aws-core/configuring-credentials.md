@@ -27,7 +27,8 @@ To [manage a team](#setting-up-credentials-for-a-team) in an AWS account, you wi
 Once the preceding tasks are complete, users can export their credentials to their local environment.
 
 
-## General Advice for Working with AWS Credentials
+## Working with AWS credentials
+
 You will need to provide AWS credentials for users. You can choose between short-term and long-term credentials. Long-term credentials are convenient during the development process. They're easier to configure, but you need to be careful they are kept secure. Short-term credentials are generally recommended when you distribute your builds to external users because they have a finite lifetime. For more information, refer to the AWS guide on [Best Practices for Managing AWS Access Keys](https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html).
 
 * To provision long-term credentials, create an AWS Identity and Access Management (IAM) user with programmatic credentials and follow the guide below to setup that user for O3DE. See [AWS Credentials - Programmatic Access](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) for more information. 
