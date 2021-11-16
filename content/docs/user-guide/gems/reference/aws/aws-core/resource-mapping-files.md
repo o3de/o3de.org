@@ -29,9 +29,10 @@ Each entry defines a lookup name - a logical name for the resource - and a colle
 * AccountId - Used to override the global account id attribute, if this resource is deployed in a different AWS account.
 
 **Global attributes**
-The mapping file also supports three **required** global attributes:
 
-* AccountId - The default AWS account containing resources in this mapping file.
+The mapping file also supports one _optional_ and two **required** global attributes:
+
+* AccountId (optional) - The default AWS account containing resources in this mapping file.
 * Region - The default region to use with this mapping file.
 * Version - The json schema version of this document.
 
@@ -52,6 +53,10 @@ The mapping file also supports three **required** global attributes:
 ```
 
 This mapping file has a single mapping: **MyKey**, which is a Lambda function called "ExampleLambda". It is deployed in us-west-2 in the AWS account with account ID "123456789123".
+
+{{< important >}}
+Your AWS account ID should not be included in builds running on untrusted clients.
+{{< /important >}}
 
 ## Generating a resource mappings file
 
