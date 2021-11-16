@@ -42,7 +42,7 @@ It is strongly recommend against using your AWS account root user for day-to-day
 
 ## Setting up Credentials as an Individual
 
-This section assumes you have an [AWS IAM Administrator user](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html) setup in your AWS account.
+This section assumes you have an [AWS IAM Administrator user](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html) set up in your AWS account.
 
 For local development with AWS setup this guide covers how to use an IAM user with long term programmatic credentials. If you don't have access keys configured, use the AWS Console to generate and download new access keys for an existing or new IAM user using the steps shown in the AWS Reference Guide for [Programmatic Access](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 
