@@ -76,7 +76,7 @@ You can also utilize IAM roles by defining role based profiles. Refer to [Using 
 ### Option 2: Configure local credentials via config files
 If you have an automated process or other provisioning mechanism, you can place pre-configured user credentials in the standard AWS config files.
 
-First, manually create or edit the `~/.aws/config` and `~/.aws/credentials` files (on macOS or Linux) or `%USERPROFILE%\.aws\config` and `%USERPROFILE%\.aws\credentials` files(on Windows) to include the credentials and a default region. 
+Manually create or edit the `~/.aws/config` and `~/.aws/credentials` files (on macOS or Linux) or `%USERPROFILE%\.aws\config` and `%USERPROFILE%\.aws\credentials` files (on Windows) to include the credentials and a default region. 
 
 First, in `~/.aws/config` or `%USERPROFILE%\.aws\config` set your default region:
 
