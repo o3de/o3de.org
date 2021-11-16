@@ -85,7 +85,7 @@ First, in `~/.aws/config` or `%USERPROFILE%\.aws\config` set your default region
 region=us-west-2
 ```
 
-Second, in `~/.aws/credentials` or `%USERPROFILE%\.aws\credentials` set up [named profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) as needed. You can configure ```default``` profile that is used when no profile is explicitly referenced in commands. 
+Second, in `~/.aws/credentials` or `%USERPROFILE%\.aws\credentials` set up [named profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) as needed. You can configure a ```default``` profile that is used when no profile is explicitly referenced in commands. 
 
 ```
 [default]
