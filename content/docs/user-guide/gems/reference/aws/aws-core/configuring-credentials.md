@@ -71,7 +71,7 @@ You can control which profile is used by default in the AWS CLI either by settin
 
 For more information on using AWS CLI configure commands, see [Configuration and Credential File Settings](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) in the AWS CLI User Guide. 
 
-You can also utilize IAM roles via role based profiles, see [Using an IAM role in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html) for further information.
+You can also utilize IAM roles by defining role based profiles. Refer to [Using an IAM role in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html) for information.
 
 ### Option 2: Configure local credentials via config files
 If you have an automated process or other provisioning mechanism, you can place pre-configured user credentials in the standard AWS config files.
