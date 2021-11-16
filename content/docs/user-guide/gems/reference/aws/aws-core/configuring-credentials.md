@@ -145,8 +145,8 @@ We recommend that you adhere to the following guidelines:
 To make managing permissions easier, we recommend that you create IAM [user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html). User groups let you specify permissions for multiple users at a time, which can make it easier to manage the permissions for groups of users.
 
 Create user groups using the AWS Console, the AWS CLI, or the CloudFormation/CDK. We recommend you create at least two user groups to work with AWS in O3DE:
-* Admins - Administrator users required to own and manage AWS resources. Typically, performing updates and management of key resources.
-* Users - set of users that take action on the resources as part of normally gameplay or simulation.
+* **Admins** - These are the administrators who own and manage AWS resources. Typically, they will perform updates and manage key resources.
+* **Users** - These are the users who can take action on the resources, as part of normal gameplay or a simulation.
 
 #### Create a user group via the AWS Console
 1. Open the IAM console via https://console.aws.amazon.com/iamv2
