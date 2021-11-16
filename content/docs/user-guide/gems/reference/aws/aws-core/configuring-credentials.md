@@ -133,7 +133,7 @@ aws configure list
 aws configure list-profiles
 ```
 
-## Controlling Permissions for Users
+## Controlling user permissions
 All AWS IAM users are given permissions through the attachment of managed or inline IAM polices. See [Changing permissions for an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html).
 
 Its recommended that you:
