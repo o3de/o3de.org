@@ -33,7 +33,7 @@ You will need to provide AWS credentials for users. You can choose between short
 
 * To provision long-term credentials, create an AWS Identity and Access Management (IAM) user with programmatic credentials and follow the guide below to setup that user for O3DE. See [AWS Credentials - Programmatic Access](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) for more information. 
 
-* To provide short-term credentials, use [AWS Cognito](https://aws.amazon.com/cognito/) or [AWS Security Token Service](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html) to generate [temporary security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html). The [AWS Client Auth Gem](/docs/user-guide/gems/reference/aws/aws-client-auth) provides configuration points for using AWS Cognito in O3DE.
+* To provide short-term credentials, use [Amazon Cognito](https://aws.amazon.com/cognito/) or [AWS Security Token Service](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html) to generate [temporary security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html). The [AWS Client Auth Gem](/docs/user-guide/gems/reference/aws/aws-client-auth) provides configuration points for using Amazon Cognito in O3DE.
 
 * To provide access via IAM roles, see the [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) documentation for more information and follow [Using an IAM role in the AWS CL](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html) for setup information.
 
