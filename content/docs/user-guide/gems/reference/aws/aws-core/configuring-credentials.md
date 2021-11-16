@@ -19,7 +19,7 @@ The to set up an [individual user](#setting-up-credentials-as-an-individual), yo
 * Export the credentials to the local environment.
 
 To [manage a team](#setting-up-credentials-for-a-team) in an AWS account, you will need to:
-* Setup users and IAM credentials.
+* Set up users and IAM credentials.
 * Create user groups.
 * Add AWS IAM users to the appropriate user group.
 * Add AWS permissions to the user groups.
