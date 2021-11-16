@@ -48,7 +48,7 @@ For local development with AWS setup this guide covers how to use an IAM user wi
 
 If you want to use short-term credentials for working with AWS, please see setup information in the [AWS Client Auth Gem](/docs/user-guide/gems/reference/aws/aws-client-auth).
 
-Chose from the following options to set up a user's AWS credentials for use in O3DE. If you are using [named profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) remember to set the profile in the project settings.
+Choose from the following options to set up a user's AWS credentials for use in O3DE. If you are using [named profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) remember to set the profile in the project settings.
 
 ### Option 1: Create a named profile via the AWS CLI
 O3DE recommends using the [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) (CLI) (version 2) to manage the import and configuration of AWS credentials. If you have not configured credentials or a region on your computer, the easiest way to satisfy this requirement is to use the AWS `configure` command:
