@@ -160,3 +160,49 @@ $(function() {
     }
   });
 });
+
+// Homepage Hero Slideshow
+$(function()
+{
+  if($("#hero-slideshow").length > 0)
+  {
+    var slides = [];
+    var i = 0;
+    $("#hero-slideshow").find(".hero-slideshow-image").each(function()
+    {
+      slides[i] = $(this);
+      ++i;
+    });
+
+    var slidesNum = slides.length;
+    
+    function setupSlides(index)
+    {
+      if(index < 0 || index >= slidesNum)
+      {
+        return;
+      }
+
+      var previousActive = $(".hero-slideshow-image.active");
+      previousActive.addClass("fadeOut");
+      slides[index].addClass("active");
+      
+      setTimeout(function() {
+        previousActive.removeClass("fadeOut").removeClass("active");
+      }, 1000);
+
+      var nextIndex = index + 1;
+      if (nextIndex == slidesNum)
+      {
+        nextIndex = 0;
+      }
+
+      setTimeout(function() {
+        setupSlides(nextIndex);
+      }, 10000);
+    }
+
+    setupSlides(0);
+  }
+  
+});
