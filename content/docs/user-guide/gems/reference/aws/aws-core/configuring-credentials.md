@@ -216,7 +216,7 @@ To set up a team, repeat the instructions for individual users above to:
 1. Create relevant IAM user groups. See the [Create an IAM User Groups](#create-an-iam-user-groups) instructions in this guide.
 2. Provide any [permissions required](#attaching-permissions-to-a-user-group) to access AWS resources to those user groups. 
 3. Create any IAM users and distribute credentials using the instructions above for [individual users](#setting-up-credentials-as-an-individual) as a guide.
-4. [Add users](#add-users-to-the-user-group) to the relevant user groups to grant them permissions required.
+4. [Add users](#adding-users-to-a-user-group) to the relevant user groups to grant them permissions they require.
 
 Please read [Working with AWS credentials](#working-with-aws-credentials) to decide the right method for providing AWS IAM credentials for your O3DE project.
 
