@@ -141,7 +141,7 @@ We recommend that you adhere to the following guidelines:
 * Grant [least privileges](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) on your AWS users, so they only have the minimum set of permissions on specific resources they require to function. This is controlled through setting of managed IAM policies and other mechanisms.
 * Update managed policies to grant or revoke the appropriate permissions as you add and remove AWS resources.
 
-### Create an IAM User Groups
+### Creating IAM user groups
 To make managing permissions easier, it's recommended that you create IAM [user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html). User groups let you specify permissions for multiple users at time, which can make it easier to manage the permissions for groups of users.
 
 You can create user groups via the AWS Console, the AWS CLI or through the CloudFormation/CDK. We recommend you create at least two user groups to work with AWS in O3DE:
