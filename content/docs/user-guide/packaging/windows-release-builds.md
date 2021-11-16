@@ -1,45 +1,45 @@
 ---
+linktTitle: "Project Game Release Layout (Windows)"
 title: "Creating a Project Game Release Layout for Windows"
-linktitle: "Project Game Release Layout (Windows)"
-description: Learn how to create a project game release layout for Windows with Open 3D Engine (O3DE). 
+description: Learn how to create an Open 3D Engine (O3DE) project game release layout for Windows.
 toc: true
 ---
 
-This tutorial guides you through the process of creating a project game release layout for Windows PCs in **Open 3D Engine (O3DE)**. A *project game release layout* is a directory structure that contains the **Game Launcher** and the packaged assets needed to run the Game Launcher outside of the developer environment. 
+This tutorial guides you through the process of creating an **Open 3D Engine (O3DE)** *project game release layout* for Windows PCs. A project game release layout is a directory structure that contains the **Game Launcher** and the bundled assets needed to run the Game Launcher outside of the developer environment. You create a project game release layout when you build your project for release, known as a *release build*.
 
-A release build requires *Bundled content*, product assets pulled from the project's `Cache/pc` directory into package files (`.pak`). The Game Launcher loads the bundled content that make up a project, such as its levels, objects, environment, and gameplay logic.
+A release build requires *bundled content*, which are cached product assets stored in package files (`.pak`). Cached product assets are located in the project's `Cache/pc` directory. The Game Launcher loads the bundled content that makes up a project, such as its levels, objects, environments, and gameplay logic.
 
 The instructions here guide you through the following steps:
-- Set the starting level.
-- Process your project's assets.
-- Bundle your project's assets.
-- Create a project game release layout.
-- Run your project's Game Launcher from the release.
+
+1. Set the starting level.
+1. Process your project's assets.
+1. (Optional) Bundle your project's assets.
+1. Create a project game release layout.
+1. Run your project's Game Launcher from the project game release layout.
 
 
 ## Prerequisites
 
 The following instructions assume that you have:
 
-- Set up O3DE on your computer as either a source engine or pre-built SDK engine. For help, refer to [Set up Open 3D Engine](/docs/welcome-guide/setup/). 
+- Set up O3DE on your computer as either a source engine or pre-built SDK engine. For help, refer to [Set up Open 3D Engine](/docs/welcome-guide/setup/).
 
-- Created an O3DE project that contains at least one level. You may need to resolve any errors in your project to create a project game release layout.
+- Created an O3DE project that contains at least one level. To build your project for release, you might need to resolve any errors in your project.
 
 - Generated a Visual Studio project for either of the following:
   
-    - If you are using a source engine, you must generate a Visual Studio project for your project. For help, refer to [Create a Visual Studio project](/docs/welcome-guide/create/creating-projects-using-cli/#create-a-visual-studio-project).
-  
-    - If you are using a pre-built SDK, you must generate a Visual Studio project for your engine. For help, refer to the **Pre-built SDK engine** tab in [Setup from GitHub](https://o3de.org/docs/welcome-guide/setup/setup-from-github/).
+  - Your project -- If you're using a source engine, you must generate a Visual Studio project for your project. For help, refer to [Create a Visual Studio project](/docs/welcome-guide/create/creating-projects-using-cli/#create-a-visual-studio-project).
 
-- Registered your project to your engine. For help, refer to 
+  - Your engine -- If you're using a pre-built SDK engine, you must generate a Visual Studio project for your engine. For help, refer to the **Pre-built SDK engine** steps in [Setting up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github).
 
+- Registered your project to your engine.
+
+
+## Tutorial Specifics
 
 This tutorial uses the following directories in the examples.
 
 - Project name and directory: `C:/MyProject`
-  - Project's profile build directory: `C:/MyProject/build/windows_vs2019/bin/profile`
-  - Project's release build directory: `C:/MyProject/build/windows_vs2019/bin/release`
-
 - Third-party directory: `C:/o3de-packages`
 - Source engine: `C:/o3de`
 - Pre-built SDK engine: `C:/o3de-install`
@@ -47,250 +47,379 @@ This tutorial uses the following directories in the examples.
 
 ## Set the starting level
 
-Before you create a project game release layout, specify the starting level that the Game Launcher will load first in your settings registry.
+Before you create a project game release layout, your project must specify a starting level to inform the Game Launcher which level it should load first. You can specify the starting level in your project's settings registry (`.setreg`) or in your project's code base via a level manager or s similar system that your team develops. If you set the starting level in your project's code base, you can skip this step.
 
-1. Create an `autoexec.game.setreg` file in `MyProject/Registry` directory and add the following lines. This sets the starting level by using `Loadlevel` and providing a path to the level. The path must be relative to the `Cache/pc` directory. In this example, the level asset is `mainmenu.spawnable`.
+For this example, set your project's starting level in the settings registry by creating an `autoexec.game.setreg` file in the `C:\MyProject\Registry` directory. Then, add the following lines.
 
-
-```
+```JSON
 {
     "O3DE": {
         "Autoexec": {
             "ConsoleCommands": {
-                "LoadLevel": "levels/mainmenu/mainmenu.spawnable"
+                "LoadLevel": "mainmenu"
             }
         }
     }
 }
 ```
 
+This configuration specifies the starting level by setting `Loadlevel` to the name of the level. For this example, the level asset is named `mainmenu`. You don't need to specify the level asset's file extension, such as `main.prefab` or `main.spawnable`. You can find your project's levels in the `C:\MyProject\Levels` directory.
+
 
 ## Process assets
 
-The Asset Processor or Asset Processor Batch are responsible for processing source assets into product assets, which the Game Launcher consumes at runtime.
+Use **Asset Processor** or the **Asset Processor Batch** program to process source assets into product assets, which the Game Launcher consumes at runtime. The Asset Processor provides a graphical user interface (GUI), while the Asset Processor Batch provides a command line interface (CLI).
 
-1. Process your project's assets by following either one of the following instructions in your project's profile build directory.
-    
-    - Use **CMake** to build the Asset Processor Batch and its dependencies by specifying the `MyProject.Assets` target. After building, this command runs Asset Processor Batch and processes the assets.
+### Methods to process assets
+
+To process your project's assets, do one of the following:
+
+- **Run Asset Processor.** Choose this if you already built the Asset Processor and prefer to use a GUI.
+
+    1.Run `AssetProcessor.exe` from the `<engine>/build/windows_vs2019/bin/profile` directory.
+
+        {{< image-width "/images/user-guide/packaging/windows-release-build/asset-processor.png" "700" "An image of O3DE Asset Processor." >}}
+
+    1. Wait for all jobs to complete. You can view the status of each asset in the **Asset Status** panel and their details in the **Event Log Details** panel.
+
+- **Run Asset Processor Batch.** Choose this if you already built the Asset Processor and prefer to use a command line window.
+
+    1. Run `AssetProcessorBatch.exe` from the `<engine>/build/windows_vs2019/bin/profile` directory.
+
+        {{< image-width "/images/user-guide/packaging/windows-release-build/asset-processor-batch.png" "700" "An image of O3DE Asset Processor." >}}
+
+    2. Wait for all jobs to complete. You can view the output in the `AP_Batch.log` file in the `<project>/user/log` directory.
+
+- **Build your project's Asset Processor tools.** Choose this if you have not built Asset Processor and Asset Processor Batch yet.
+
+    1. Use **CMake** to invoke Visual Studio to build the Asset Processor tools and their dependencies. Specify the `MyProject.Assets` target.
 
         ```cmd
-        cmake --build build/windows_vs2019 --target MyProject.Assets --config profile -- /m
+        cmake --build build\windows_vs2019 --target MyProject.Assets --config profile -- /m
         ```
 
-    - Launch `AssetProcessor.exe` to begin processing the assets.
+        First, this command builds the Asset Processor tools. Then, it runs Asset Processor Batch and processes the assets. You don't need to rerun Asset Processor or Asset Processor Batch unless you make changes in your project.
 
+    2. Wait for all jobs to complete. You can view the output in the `AP_Batch.log` file in the `<project>/user/log` directory.
 
-{{< caution >}} Ensure that the Asset Processor or Asset Processor Batch processes all of your assets without failure. {{< /caution >}}
+### Verify assets are successfully processed
+
+Verify that Asset Processor successfully processed your assets by checking their status. Asset Processor can process your assets with or without warning or error, or they can fail to process. Warnings and errors indicate that your asset may need your attention, but they don't impede the ability to create a project game release layout. On the other hand, it's critical that you resolve any assets that were not processed due to failure.
+
+For help with debugging failures, refer to [Debugging](#debugging).
 
 
 ## Create a project game release layout
 
-Now that you've prepared your project, you can create a project game release layout. There are different ways you can go about this, depending on how you set up your engine and whether you want to create a non-monolithic or monolithic release build.
+Now that you've prepared your project, you can create a project game release layout. You can do this in different ways, depending on how you set up your engine and whether you want to create a non-monolithic or monolithic release build.
 
-When you set up O3DE, you may have built your engine as a *source engine* or a *pre-built SDK engine*. You can use either build type to create a project game release layout. For more information on build types, refer to [Build the engine](https://o3de.org/docs/welcome-guide/setup/setup-from-github/#build-the-engine).
+When you set up O3DE, you built your engine as either a *source engine* or a *pre-built SDK engine*. You can use either build type to create a project game release layout. For more information on build types, refer to [Build the engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine).
 
-Additionally, you can create a project game release layout that is either *non-monolithic* or *monolithic*. A monolithic release layout only contains files that are necessary to run the project, such as the Game Launcher, bundled content, and a minimal set of dependent `.dll` files, if any. A non-monolithic release layout contains the same files needed to run the project, as well as the objects that you use for development such as tools, shader compilers, and all `.dll` files.  Non-monolithic releases are typically much larger than monolithic releases. On some platforms that don't allow loading shared objects, you must use a monolithic release.
+Additionally, you can create a project game release layout that's either *non-monolithic* or *monolithic*. A non-monolithic build uses Gems as dynamically linked libraries (`.dll`), whereas a monolithic build uses Gems as statically linked libraries (`.lib`). Using Gems as statically linked libraries, strips out unused pieces of code and removes redundant symbols across them. As a result, the total space on disk for a monolithic build is smaller than a non-monolithic build.
 
-In this step, you will use CMake to build either a monolithic or a non-monolithic project and specify the `INSTALL` target and `release` configuration. This handles several tasks:
+{{< note >}}
+The final output of a monolithic build may contain some dynamically linked libraries. This occurs when 3rd party libraries only provide dynamically linked libraries.
+{{< /note >}}
 
-- Creates an `install` directory in your project directory that will contain the project's release layout.
+In this step, you use CMake to build either a non-monolithic or a monolithic project for release. This handles several tasks:
 
-- Bundles your game content into an `engine.pak` file by packaging all of the product assets in your `Cache/pc` directory.
+1. Creates an *install directory* that contains the project game release layout. By default, the install directory is located in your project's directory (for example, `C:/MyProject/install`). Alternatively, you can set the install directory to another location by setting `CMAKE_INSTALL_PREFIX` in the `CMakeCache.txt` file in the `<project>/build/<build>` directory (for example, `C:/MyProject/build/windows_vs2019/CMakeCache.txt`).
 
-- Builds the Game Launcher and other supporting files.
+2. Bundles your game content by packaging all of the product assets in the `<project>/Cache/pc` directory into an `engine.pak` file.
 
-{{< todo >}}
-The Game Launcher may fail to load your assets if the `engine.pak` file is over 4 GB. This issue will be resolved when development on the Asset Bundler is stable.
-{{< /todo >}}
+3. Builds the Game Launcher and other supporting files in the project game release layout.
 
-### Using source engine
- 
-With the source engine, you must use a project-centric configuration to create a project game release layout. In a project-centric configuration, the CMake source directory is in the project build directory.
+{{< tabs name="Release build instructions" >}}
+{{% tab name="Source engine" %}}
 
-The source engine supports non-monolithic projects by default. As listed under [Prerequisites](#prerequisites), you should have already created a Visual Studio project for the engine and registered the engine.
+### Source Engine
 
-#### Non-monolithic
+With a source engine, you must use a project-centric configuration to create a project game release layout. In a project-centric configuration, the CMake source directory is in the project build directory. So, O3DE tools (for example, O3DE Editor and Asset Processor) are located in your `<project>/build` directory.
 
-1. Use CMake to invoke Visual Studio to build your non-monolithic project. Specify the `INSTALL` target and `release` configuration.
-
-    ```cmd
-    cd C:/o3de-projects/MyProject
-    cmake --build build/windows_vs2019 --target INSTALL --config release. 
-    ```
-
-The result is a project release install directory that's located in your project's directory at `install/bin/Windows/release/Default`. Your packaged assets are located in `Cache/pc` in your project release install directory.
-
-#### Monolithic
-
-1. Use CMake to create a Visual Studio project for a monolithic project. Specify a new CMake build directory, `build/windows_mono`, in your project directory to seperate it from your non-monolithic build directory. Specify a monolithic build by enabling the `-D` option, `LY_MONOLITHIC_GAME`.
-
-    ```cmd
-    cd C:/o3de-projects/MyProject
-    cmake -B build/windows_mono -S. -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_MONOLITHIC_GAME=1
-    ```
-
-2. Use CMake to invoke Visual Studio to build your monolithic project. Specify the `INSTALL` target and `release` configuration. This generates a Game Launcher and packages your project's assets in the `<project>/Cache` directory into `engine.pak`.
-
-    ```cmd
-    cd C:/o3de-projects/MyProject
-    cmake --build build/windows_mono --target INSTALL --config release
-    ```
-
-The result is a project release install directory that's located in your project's directory at `install/bin/Windows/release/Monolithic`. Your packaged assets are located in `Cache/pc` in your project release install directory. 
-
-
-### Using pre-built SDK engine
-
-With a pre-built SDK engine, you must append non-monolithic or monolithic artifacts to create a project game release layout. 
-
-Verify that your project is registered to the pre-built SDK engine by checking your project's `project.json` file. To register your project use O3DE CLI from your pre-built SDK engine.
-
-    ```cmd
-    cd C:/o3de-install
-    scripts/o3de.bat register --pp C:/o3de-projects/MyProject
-    ```
+To create a non-monolithic or monolithic project game release layout using a source engine, complete the following steps.
 
 #### Non-monolithic
 
-The pre-built SDK engine supports non-monolithic projects by default. As listed under [Prerequisites](#prerequisites), you should have already created a Visual Studio project for the engine and registered the engine.
+A source engine supports non-monolithic projects by default. As detailed in [Prerequisites](#prerequisites), you should have already created a Visual Studio project for your project and registered your project to your engine.
 
-1. In your source engine, use CMake to invoke Visual Studio to append release non-monolithic artifacts to the SDK layout. 
-
-    ```cmd
-    cd C:/o3de
-    cmake --build build/windows_vs2019 --target INSTALL --config release
-    ```
-
-The result is a project release install directory that's located in your project's directory at `install/bin/Windows/release/Default`. Your packaged assets are located in `Cache/pc` in your project release install directory.
-
-#### Monolithic
-
-1. Use CMake to create a Visual Studio project for an engine that supports monolithic projects. Specify a new CMake build directory, `build/windows_mono` in your pre-built SDK engine directory to seperate it from your non-monolithic build directory. Specify a monolithic build by enabling the `-D` option to `LY_MONOLITHIC_GAME`.
-
-    ```cmd
-    C:/o3de>cmake -B build/windows_mono -S . -DCMAKE_INSTALL_PREFIX=C:/o3de-install -DLY_VERSION_ENGINE_NAME=o3de-install -DLY_MONOLITHIC_GAME=1 
-    ```
-
-2. In your source engine, use CMake to invoke Visual Studio to append release non-monolithic artifacts to the SDK layout. 
-
-    ```cmd
-    cd C:/o3de
-    cmake --build build/windows_mono --target INSTALL --config release
-    ```
-
-3. Use CMake to invoke Visual Studio to build your non-monolothic project using the pre-built SDK engine. 
-
-The result is a project release install directory that's located in your project's directory at `install/bin/Windows/release/Monolithic`. Your packaged assets are located in `Cache/pc` in your project release install directory. 
-
-
-## Bundle content 
-
-The Asset Bundler is a tool that allows you to create and optimize your bundled content. When you created a project game release layout, it also bundled all of your assets into a `engine.pak` file. You can optimize your package file by using the Asset Bundler and configuring how you want your assets to be bundled. 
-
-In this example, you will create two bundles - for game assets and engine assets. The game assets contains your project's levels and all of the assets within them, such as objects, environment, materials, and so on. The engine assets contain essential files needed to load and run the Game Launcher. 
-
-### Build the Asset Bundler
-
-1. Use CMake to build the Asset Bundler in your engine. 
+To build your non-monolithic project for release, use CMake to invoke Visual Studio builder. Specify the `INSTALL` target and `release` configuration.
 
 ```cmd
-cmake --build build/windows_vs2019 --target AssetBundler --config profile -- /m
+cd C:\MyProject
+cmake --build build\windows_vs2019 --target INSTALL --config release 
 ```
+
+The source engine supports non-monolithic projects by default, but you can specify a non-monolithic build by appending the option `-DLY_MONOLITHIC_GAME=0`. This command generates O3DE tools (such as Editor, Asset Processor, and Game Launcher) and dependent `.dll` files. It also bundles your project's product assets that're located in `<project>/Cache/pc` into an `engine.pak` file.
+
+The result is a project game release layout in the install directory that's located at `<install>/bin/Windows/release/Default`. In your project game release layout, your `engine.pak` is located in `Cache/pc`.
+
+#### Monolithic
+
+1. Use CMake to create a Visual Studio project for a monolithic project. Specify a new CMake build directory (`build/windows_mono`) in your project directory to separate it from your non-monolithic build directory. Specify a monolithic build by enabling the `-D` option to `LY_MONOLITHIC_GAME`.
+
+    ```cmd
+    cd C:\MyProject
+    cmake -B build\windows_mono -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_MONOLITHIC_GAME=1
+    ```
+
+2. To build your monolithic project for release, use CMake to invoke Visual Studio builder. Specify the `INSTALL` target and `release` configuration.
+
+    ```cmd
+    cd C:\MyProject
+    cmake --build build\windows_mono --target INSTALL --config release
+    ```
+
+    This command generates a Game Launcher and dependent `.lib` files. It also bundles your project's product assets that're located in `<project>/Cache/pc` into an `engine.pak` file.
+
+The result is a project game release layout in the install directory that's located at `<install>/bin/Windows/release/Monolithic`. In your project game release layout, your `engine.pak` file is located in `Cache/pc`.
+
+
+{{% /tab %}}
+{{% tab name="Pre-built SDK engine" %}}
+
+### Pre-built SDK engine
+
+With a pre-built SDK engine, to create a project game release layout, you must append non-monolithic or monolithic artifacts.
+
+Verify that your project is registered to your pre-built SDK engine by checking your project's `project.json` file. To register your project, use O3DE CLI from your pre-built SDK engine.
+
+```cmd
+cd C:\o3de-install
+scripts\o3de.bat register --pp C:\o3de-projects\MyProject
+```
+
+#### Non-monolithic
+
+A pre-built SDK engine supports non-monolithic projects by default. As detailed in [Prerequisites](#prerequisites), you should have already created a Visual Studio project for the engine and registered the engine.
+
+In your source engine, use CMake to invoke Visual Studio to append non-monolithic release artifacts to the pre-built SDK layout.
+
+```cmd
+cd C:\o3de
+cmake --build build\windows_vs2019 --target INSTALL --config release
+```
+
+The pre-built SDK engine supports non-monolithic projects by default, but you can specify a non-monolithic build by appending the option `-DLY_MONOLITHIC_GAME=0`. This command generates O3DE tools (such as Editor, Asset Processor, and Game Launcher) and dependent `.dll` files. It also bundles your project's product assets that're located in `<project>/Cache/pc` into an `engine.pak` file.
+
+The result is a project game release layout in the install directory that's located at `<install>/bin/Windows/release/Default`. In your project game release layout, your `engine.pak` is located in `Cache/pc`.
+
+
+
+#### Monolithic
+
+1. Use CMake to create a Visual Studio project for an engine that supports monolithic projects. Specify a new CMake build directory (`build/windows_mono`) in your pre-built SDK engine directory, separate from your non-monolithic build directory. Specify a monolithic build by enabling the `-D` option to `LY_MONOLITHIC_GAME`.
+
+    ```cmd
+    cd C:\o3de
+    cmake -B build\windows_mono -S . -DCMAKE_INSTALL_PREFIX=C:\o3de-install -DLY_VERSION_ENGINE_NAME=o3de-install -DLY_MONOLITHIC_GAME=1 
+    ```
+
+2. In your source engine, use CMake to invoke Visual Studio to append non-monolithic release artifacts to the pre-built SDK layout.
+
+    ```cmd
+    cd C:\o3de
+    cmake --build build\windows_mono --target INSTALL --config release
+    ``` 
+
+    This command generates a Game Launcher and dependent `.lib` files. It also bundles your project's product assets that're located in `<project>/Cache/pc` into an `engine.pak` file.
+
+The result is a project game release layout in the install directory that's located at `<install>/bin/Windows/release/Monolithic`. In your project game release layout, your `engine.pak` is located in `Cache/pc`.
+
+{{% /tab %}}
+{{< /tabs >}}
+
+
+## (Optional) Bundle content
+
+Asset Bundler and the Asset Bundler Batch program are tools that let you create and optimize your bundled content. When you created a project game release layout, you bundled all of your assets into an `engine.pak` file, which contains all of your projects product assets. The `engine.pak` file may be unoptimized if your project contains many unused assets. To optimize your bundled content use the Asset Bundler and configure how you want to bundle your assets.
+
+In this example, you use Asset Bundler to create two bundles---one for game assets and one for engine assets. The game asset bundle contains your project's levels and all of the assets within them, such as objects, environments, materials, and so on. The engine assets bundle contains essential files needed to load and run the Game Launcher.
+
+In the following steps, replace `<engine>` with either one of the following:
+
+- `C:\MyProject` --- If you're using a source engine.
+- `C:\o3de-install` --- If you're using a pre-built SDK engine.
+
+
+### Set up Asset Bundler
+
+To set up and run Asset Bundler:
+
+1. In your `<engine>` directory, use CMake to invoke Visual Studio to build the Asset Bundler.
+
+    ```cmd
+    cmake --build build\windows_vs2019 --target AssetBundler --config profile -- /m
+    ```
+
+    This command contains the following options:
+
+    - `--target AssetBundler`: Sets the build target to Asset Bundler and Asset Bundler Batch, and their dependent modules.
+
+    - `--config profile`: Sets the build configuration to profile, which enables optimization and allows debugging.
+
+
+2. Run `AssetBundler.exe` from the `<engine>\build\windows_vs2019\bin\profile` directory. This opens Asset Bundler with the GUI, which we'll use in the following examples. (Alternatively, to use the CLI, run `AssetBundlerBatch.exe`.)
+
+Now you have the Asset Bundler running. It should look like this:
+
+{{< image-width "/images/user-guide/packaging/windows-release-build/asset-bundler-default-gui.png" "1000" "An annotated image of O3DE editor's user interface." >}}
+
+<br></br>
+
+{{< known-issue >}}
+There may be errors and warnings about the "AssetBundler" and "AssetSeedManager" that are listed in the console of the Asset Bundler. You can safely ignore them.
+{{< /known-issue >}}
 
 ### Create a bundle for game assets
 
-When bundling your game assets, it's only important to bundle assets that your game actually uses in its levels. There's no need to include assets in your project directory that are never loaded in your project. You can use the Asset Bundler to generate a list of assets that your levels depend on. This ensures that your resulting package file is at an optimal size. 
+When bundling your game assets, it's only important to bundle assets that your game actually uses in its levels. There's no need to include assets in your project directory that are never loaded in your project. You can use the Asset Bundler to generate a list of assets that your levels depend on. This helps ensure that your resulting package file is at an optimal size.
 
 
 #### Create a new seed asset list
-Create a new see asset list that contains only your level assets. 
 
-2. Create a new seed list file by clicking **Create a new Seed List file** in the **Seed List file** panel under the **Seeds** tab
-3. Select your new seed list file from the list. 
-4. Click **+ Add Asset** in the **Product Assets** panel. This opens the **Add Seed Asset** dialog. 
-5. In the list of platforms, enable **pc**.
-6. Click **Browse...** and navigate to the `levels` folder and choose **Add Seed**. 
-7. Verify that your seed list has the level assets in the **Product Assets** panel. 
+1. In the Asset Bundler, on the **Seeds** tab, in the **Seed List file** panel, click **Create a new Seed List file**. For this example, name the file `GameSeedList`.
 
-#### Generate an asset list 
+2. Select the `GameSeedList` file from the list.
 
-1. Select your new seed list file by enabling the check box. 
-2. Click **Generate Asset Lists**. This will open the **Generate Asset List files** dialog. 
-3. In the list of platforms, select **pc** by enabling the check box.  
-4. Click **Browse...** to open the File Explorer. 
-5. Enter a name for your asset list and save. In this example, we'll use the name `game.assetlist`. 
-5. Navigate to the **Asset Lists** tab to verify the assets in `game.assetlist`. The assets are listed under the **Asset List** panel. 
+3. In the **Product Assets** panel, click **+ Add Asset**, which opens the **Add Seed Asset** dialog.
+
+4. In the list of platforms, select the **pc** check box.
+
+5. Click **Browse...**, which opens File Explorer.
+
+6. In File Explorer, navigate to the `levels` folder, and then choose **Add Seed**.
+
+7. In the Asset Bundler, in the **Product Assets** panel, verify that your seed list has the level assets.
+
+#### Generate an asset list
+
+1. In the Asset Bundler, select your new seed list file from the list.
+
+2. Click **Generate Asset Lists**, which opens the **Generate Asset List files** dialog.
+
+3. In the list of platforms, select the **pc** check box.
+
+4. Click **Browse...**, which opens File Explorer.
+
+5. In File Explorer, enter a name for your asset list, and then click **Save**. For this example, use the name `game.assetlist`.
+
+6. In the Asset Bundler, navigate to the **Asset Lists** tab to verify the assets in `game.assetlist`. The assets are listed in the **Asset List** panel.
 
 #### Bundle your assets
 
-1. Select your `game.assetlist` in the** Asset List Files** panel under the **Asset Lists** tab.
+1. In the Asset Bundler, on the **Asset Lists** tab, in the **Asset List Files** panel, select your asset list (`game.assetlist`).
 
-2. Click **Generate Bundle**. This opens the **Generate Bundles** dialog. 
+2. Click **Generate Bundle**, which opens the **Generate Bundles** dialog.
 
-3. Click **Browse...** to open the File Explorer. 
+3. Click **Browse...**, which opens the File Explorer.
 
-4. Enter a name for your package file and save. In this example, we'll use the name `game_bundle.pak`.
+4. In File Explorer, enter a name for your package file, and then click **Save**. For this example, use the name `game.pak`.
 
 
 ### Create a bundle for engine assets
 
-Now, you'll create a bundle for your project's engine assets. 
+Next, create a bundle for your project's engine assets.
 
 #### Generate an asset list from default seed lists
 
-1. Navigate to the Seeds tab. 
+1. In the Asset Bundler, navigate to the **Seeds** tab.
 
-2. Select **Default Seed Lists** at the bottom of the **Seed List files** panel. Make sure to deselect other seed list files. 
+2. At the bottom of the **Seed List files** panel, select the **Default Seed Lists** check box. Make sure to deselect the `GameSeedList` file.
 
-2. Click **Generate Asset Lists**. This will open the **Generate Asset List files** dialog. 
+3. Click **Generate Asset Lists**, which opens the **Generate Asset List files** dialog.
 
-3. In the list of platforms, select **pc** by enabling the check box.  
+4. In the list of platforms, select the **pc** check box.
 
-4. Click **Browse...** to open the File Explorer. 
+5. Click **Browse...**, which opens File Explorer.
 
-5. Enter a name for your asset list and save. In this example, we'll use the name `engine.assetlist`. 
+6. In File Explorer, enter a name for your asset list, and then click **Save**. For this example, we'll use the name `engine.assetlist`.
 
-5. Navigate to the **Asset Lists** tab to verify the assets in `engine.assetlist`. The assets are listed under the **Asset List** panel. 
+7. In the Asset Bundler, navigate to the **Asset Lists** tab to verify the assets in `engine.assetlist`. The assets are listed in the **Asset List** panel.
 
 #### Bundle your assets
 
-1. Select your `engine.assetlist` in the** Asset List Files** panel under the **Asset Lists** tab.
+1. In the Asset Bundler, on the **Asset Lists** tab, in the **Asset List Files** panel, select the `engine.assetlist` file.
 
-2. Click **Generate Bundle**. This opens the **Generate Bundles** dialog. 
+2. Click **Generate Bundle**, which opens the **Generate Bundles** dialog.
 
-3. Click **Browse...** to open the File Explorer. 
+3. Click **Browse...**, which opens File Explorer.
 
-4. Enter a name for your package file and save. In this example, we'll use the name `engine_bundle.pak`.
-
-
-You now have two bundled content: `game_bundle.pak` and `engine_bundle.pak`. 
+4. In File Explorer, enter a name for your package file, and then click **Save**. For this example, use the name `engine.pak`.
 
 
-### Add your bundles to install layout
+For Windows, when Asset Bundler saves your bundle, it appends `_pc` to the bundle's name. So, you now have two asset bundles: `game_pc.pak` and `engine_pc.pak`.
 
-Next, add `game_bundle.pak` and `engine_bundle.pak` to `install/bin/Windows/release/Default`. You can remove the `engine.pak` file that was created earlier. 
+
+### Add bundles to the project game release layout
+
+
+Next, add your `game_pc.pak` and `engine_pc.pak` files to your project game release layout, so the Game Launcher can load assets from those bundles.
+
+1. Navigate to the `<install>/bin/Windows/release/<build>/Cache/pc` directory, which contains the bundled content in your project game release layout directory. For example, the default path may be:
+
+   - `C:/MyProject/install/bin/Windows/release/Default/Cache/pc` -- For non-monolithic.
+
+   - `C:/MyProject/install/bin/Windows/release/Monolithic/Cache/pc` -- For monolithic.
+
+2. Remove the `engine.pak` file that was created earlier in [Create a project game release layout](#create-a-project-game-release-layout). You don't need it because you created new bundles.
+
+3. Add your new bundles: `game_bundle_pc.pak` and `engine_bundle_pc.pak`.
 
 
 ## Run the game launcher
 
-Now that you've packaged your assets and built your project game release layout, you are ready to run your project's Game Launcher.
+Now you're ready to run your project's Game Launcher.
 
-1. Open a command line window and change to your project's release build install directory.
+Run `GameLauncher.exe` from your project game release layout, which is located in the `<install>/bin/Windows/release/<build>` directory. Examples of the path are
 
-    - For monolithic release builds:
-        ```cmd
-        cd C:/o3de-projects/MyProject/install/bin/Windows/release/Monolithic
-        ```
+- `C:/MyProject/install/bin/Windows/release/Default` -- for non-monolithic.
 
-    - For non-monolithic release builds:
-        ```cmd
-        cd C:/o3de-projects/MyProject/install/bin/Windows/release/Default
-        ```
+- `C:/MyProject/install/bin/Windows/release/Monolithic` -- for monolithic.
 
-2. Run the Game Launcher. This opens the Game Launcher and loads the starting level.
+Now you can distribute your project to other Windows devices. To run the Game Launcher, you must install [Microsoft Visual C++ (MSVC) Redistributable](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-160).
+
+
+## Debugging
+
+If you encounter issues when you build a project for release, try the following techniques to help you debug.
+
+### Compile with optimizations disabled and debug symbols enabled
+
+In Visual Studio 2019, you can compile with optimizations disabled and debug symbols enabled. This allows Visual Studio 2019's debugging tools to produce more helpful information that can help you debug.
+
+To do this, make the following modifications to `Configurations_msvc.cmake` in the `<engine>/cmake/Platform/Common/MSVC` directory. In `ly_append_configurations_options`, under `COMPILATION _RELEASE`:
+ - Change `/Od` to `/Ox`.
+ - Add `/Zi`.
+
+After making those modifications, `ly_append_configurations_options` should look like this:
+
+```
+ly_append_configurations_options(
+
+    # ...
+
+    COMPILATION_RELEASE
+        /Od             # Enable debug symbols
+        /Ob2            # Inline any suitable function
+        /Ot             # Favor fast code over small code
+        /Oi             # Use Intrinsic Functions
+        /Oy             # Omit the frame pointer
+        /Zi             # Generate debugging information (no Edit/Continue)
     
-    ```cmd
-    ./MyProject.GameLauncher.exe
-    ```  
-    
-Now you can distribute your project to other Windows devices. To run the Game Launcher, [Microsoft Visual C++ (MSVC) Redistributable](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-160) must be installed.
+    # ... 
+```
+
+### Create a `profile` build
+
+You can build with the `profile` configuration to debug a non-monolithic or monolithic build and its `.pak` files. The `profile` configuration creates log files that provide information to help you debug. For information on O3DE log files, refer to [Log Files](\docs\user-guide\appendix\log-files.md).
+
+Use CMake to invoke Visual Studio to build your project with the `profile` configuration.
+
+```cmd
+cd C:\MyProject
+cmake --build <build> --target INSTALL --config profile
+```
+
+Replace `<build>` with either one of the following:
+- `build\windows_vs2019` -- For non-monolithic builds. 
+- `build\windows_mono` -- For monolithic builds.
