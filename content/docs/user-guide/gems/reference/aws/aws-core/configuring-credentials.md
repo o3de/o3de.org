@@ -142,7 +142,7 @@ We recommend that you adhere to the following guidelines:
 * Update managed policies to grant or revoke the appropriate permissions as you add and remove AWS resources.
 
 ### Creating IAM user groups
-To make managing permissions easier, it's recommended that you create IAM [user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html). User groups let you specify permissions for multiple users at time, which can make it easier to manage the permissions for groups of users.
+To make managing permissions easier, we recommend that you create IAM [user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html). User groups let you specify permissions for multiple users at a time, which can make it easier to manage the permissions for groups of users.
 
 Create user groups using the AWS Console, the AWS CLI, or the CloudFormation/CDK. We recommend you create at least two user groups to work with AWS in O3DE:
 * Admins - Administrator users required to own and manage AWS resources. Typically, performing updates and management of key resources.
