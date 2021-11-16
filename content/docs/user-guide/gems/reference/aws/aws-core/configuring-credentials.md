@@ -137,7 +137,7 @@ aws configure list-profiles
 All AWS IAM users are given permissions through the attachment of managed or inline IAM polices. See [Changing permissions for an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html).
 
 We recommend that you adhere to the following guidelines:
-* Only use an Admin user, that is a user with full permissions on an AWS account, when absolutely necessary, such as deploying and provisioning AWS resources.
+* Only use an admin user when absolutely necessary, such as when deploying and provisioning AWS resources. An _admin user_ is defined here as a user with full permissions on an AWS account.
 * Grant [least privileges](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) on your AWS users, so they only have the minimum set of permissions on specific resources they require to function. This is controlled through setting of managed IAM policies and other mechanisms.
 * You update managed policies to grant or revoke the appropriate permissions as you add and remove AWS resources.
 
