@@ -139,7 +139,7 @@ All AWS IAM users are given permissions through the attachment of managed or inl
 We recommend that you adhere to the following guidelines:
 * Only use an admin user when absolutely necessary, such as when deploying and provisioning AWS resources. An _admin user_ is defined here as a user with full permissions on an AWS account.
 * Grant [least privileges](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) on your AWS users, so they only have the minimum set of permissions on specific resources they require to function. This is controlled through setting of managed IAM policies and other mechanisms.
-* You update managed policies to grant or revoke the appropriate permissions as you add and remove AWS resources.
+* Update managed policies to grant or revoke the appropriate permissions as you add and remove AWS resources.
 
 ### Create an IAM User Groups
 To make managing permissions easier, it's recommended that you create IAM [user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html). User groups let you specify permissions for multiple users at time, which can make it easier to manage the permissions for groups of users.
