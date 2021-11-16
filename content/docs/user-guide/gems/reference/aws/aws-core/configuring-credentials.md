@@ -67,7 +67,7 @@ aws configure import --csv file://credentials.csv
 
 This will create a named profile based on the name of the IAM user in your .credentials file. 
 
-You can control what profile is used by default in the AWS CLI, either by setting a ```[default]``` profile or through the use of the [AWS_DEFAULT_PROFILE](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html#using-profiles) environment variable.
+You can control which profile is used by default in the AWS CLI either by setting a ```[default]``` profile or by using the [AWS_DEFAULT_PROFILE](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html#using-profiles) environment variable.
 
 For more information on using AWS CLI configure commands, see [Configuration and Credential File Settings](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) in the AWS CLI User Guide. 
 
