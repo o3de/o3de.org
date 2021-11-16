@@ -106,7 +106,7 @@ You can also provide AWS credentials using environmental variables:
 For more information on using environment variables for credentials, see [Environment variables to configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html) in the AWS CLI User Guide.
 
 ### Option 4: Use O3DE console variables to provide credentials
-This will only work when using an O3DE runtime binary (Launcher and Editor). Credentials can be provided directly by setting the `cl_awsAccessKey` and `cl_awsSecretKey` Console Variables (CVARs), as follows:
+This method will only work when using an O3DE runtime binary (Launcher and Editor). Credentials can be provided directly by setting the `cl_awsAccessKey` and `cl_awsSecretKey` Console Variables (CVARs), as follows:
 
 ```cmd
 Editor.exe +cl_awsAccessKey AKXXXXXXXXXXX +cl_awsSecretKey xxXXXXXXBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY
