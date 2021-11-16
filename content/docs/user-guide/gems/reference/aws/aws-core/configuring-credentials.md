@@ -73,7 +73,7 @@ For more information on using AWS CLI configure commands, see [Configuration and
 
 You can also utilize IAM roles by defining role based profiles. Refer to [Using an IAM role in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html) for information.
 
-### Option 2: Configure local credentials via config files
+### Option 2: Configure local credentials using config files
 If you have an automated process or other provisioning mechanism, you can place pre-configured user credentials in the standard AWS config files.
 
 Manually create or edit the `~/.aws/config` and `~/.aws/credentials` files (on macOS or Linux) or `%USERPROFILE%\.aws\config` and `%USERPROFILE%\.aws\credentials` files (on Windows) to include the credentials and a default region. 
