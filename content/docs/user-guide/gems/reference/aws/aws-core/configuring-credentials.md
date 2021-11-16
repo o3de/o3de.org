@@ -93,7 +93,7 @@ aws_access_key_id=AKXXXXXXXXXXX
 aws_secret_access_key=xxXXXXXXBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY
 ```
 
-### Option 3: Using environment variables to provide credentials
+### Option 3: Use environment variables to provide credentials
 You can also provide AWS credentials using environmental variables:
 
 | Variable | Description |
