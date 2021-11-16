@@ -85,9 +85,9 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>BasicPath</b> (c
 <tr class="memitem:a1e6d286043877593a1a7a8472affbd91"><td class="memItemLeft" align="right" valign="top"><a id="a1e6d286043877593a1a7a8472affbd91"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>BasicPath</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</a> &amp;&amp;other)=default</td></tr>
 <tr class="separator:a1e6d286043877593a1a7a8472affbd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b317c812dafc7330ddd6647b96bd1b5"><td class="memItemLeft" align="right" valign="top"><a id="a9b317c812dafc7330ddd6647b96bd1b5"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>BasicPath</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a> &amp;other)</td></tr>
-<tr class="separator:a9b317c812dafc7330ddd6647b96bd1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26d1adb8407a228c093277dc065dcfd"><td class="memItemLeft" align="right" valign="top"><a id="af26d1adb8407a228c093277dc065dcfd"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>BasicPath</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a> &amp;other) noexcept</td></tr>
+<tr class="separator:af26d1adb8407a228c093277dc065dcfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8eaa7cd31d0b3ca90f891e14688b22e"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html#ac8eaa7cd31d0b3ca90f891e14688b22e">BasicPath</a> (const string_type &amp;pathString) noexcept</td></tr>
 <tr class="separator:ac8eaa7cd31d0b3ca90f891e14688b22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0071d99bb07c35275dc19a495a37c95"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html#ae0071d99bb07c35275dc19a495a37c95">BasicPath</a> (const string_type &amp;pathString, const char preferredSeparator) noexcept</td></tr>
@@ -125,9 +125,9 @@ constexpr <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</
 <tr class="memitem:a94827899fe2819e980ead781f0892405"><td class="memItemLeft" align="right" valign="top"><a id="a94827899fe2819e980ead781f0892405"></a>
 constexpr <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</a> &amp;&amp;other)=default</td></tr>
 <tr class="separator:a94827899fe2819e980ead781f0892405"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f40ea31a9dc1c7c05109864e9263f6b"><td class="memItemLeft" align="right" valign="top"><a id="a5f40ea31a9dc1c7c05109864e9263f6b"></a>
-constexpr <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a> &amp;pathView)</td></tr>
-<tr class="separator:a5f40ea31a9dc1c7c05109864e9263f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8246d9bcd996113b5e4c401496a4402"><td class="memItemLeft" align="right" valign="top"><a id="ac8246d9bcd996113b5e4c401496a4402"></a>
+constexpr <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a> &amp;pathView) noexcept</td></tr>
+<tr class="separator:ac8246d9bcd996113b5e4c401496a4402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47598929e74379d24e848110814a7cca"><td class="memItemLeft" align="right" valign="top"><a id="a47598929e74379d24e848110814a7cca"></a>
 constexpr <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const string_type &amp;str) noexcept</td></tr>
 <tr class="separator:a47598929e74379d24e848110814a7cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,6 +237,11 @@ constexpr string_type &amp;&amp;&#160;</td><td class="memItemRight" valign="bott
 <tr class="separator:ad3df10aa7c5e2bff3257bb0f63f3204a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a468e712ece51c198262bf4ebbb38316e"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">AZStd::fixed_string</a>&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#ae164229bbf1f88cf7a2bbfb660f444c6">MaxPathLength</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html#a468e712ece51c198262bf4ebbb38316e">FixedMaxPathString</a> () const</td></tr>
 <tr class="separator:a468e712ece51c198262bf4ebbb38316e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1966addf5380980d7f0ec03532ad2447"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html#a1966addf5380980d7f0ec03532ad2447">StringAsPosix</a> () const</td></tr>
+<tr class="separator:a1966addf5380980d7f0ec03532ad2447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929895caaabba8dec909b3b144f5e8f0"><td class="memItemLeft" align="right" valign="top"><a id="a929895caaabba8dec909b3b144f5e8f0"></a>
+constexpr <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">AZStd::fixed_string</a>&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#ae164229bbf1f88cf7a2bbfb660f444c6">MaxPathLength</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FixedMaxPathStringAsPosix</b> () const noexcept</td></tr>
+<tr class="separator:a929895caaabba8dec909b3b144f5e8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaebf9dd2304742c55cbb947121b38b72"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html#aaebf9dd2304742c55cbb947121b38b72">Compare</a> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a> &amp;other) const noexcept</td></tr>
 <tr class="separator:aaebf9dd2304742c55cbb947121b38b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5237e27dd588fbf92ba865c3b5e536b5"><td class="memItemLeft" align="right" valign="top"><a id="a5237e27dd588fbf92ba865c3b5e536b5"></a>
@@ -409,7 +414,7 @@ template&lt;typename StringType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructs a Path by copying the pathString to its internal string The preferred separator it set to the parameter </p>
+<p>Constructs a Path by copying the pathString to its internal string The preferred separator is set to the parameter </p>
 
 </div>
 </div>
@@ -477,7 +482,7 @@ template&lt;typename StringType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructs a Path by copying the pathString to its internal string The preferred separator it set to the parameter </p>
+<p>Constructs a Path by copying the pathString to its internal string The preferred separator is set to the parameter </p>
 
 </div>
 </div>
@@ -545,7 +550,7 @@ template&lt;typename StringType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructs a Path by constructing it's internal out of a string_view The preferred separators it set to the parameter </p>
+<p>Constructs a Path by constructing it's internal out of a string_view The preferred separator is set to the parameter </p>
 
 </div>
 </div>
@@ -613,7 +618,7 @@ template&lt;typename StringType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructs a Path by constructing it's internal out of a value_type* The preferred separator it set to the parameter </p>
+<p>Constructs a Path by constructing it's internal out of a value_type* The preferred separator is set to the parameter </p>
 
 </div>
 </div>
@@ -1288,6 +1293,23 @@ template&lt;typename StringType &gt; </div>
 
 </div>
 </div>
+<a id="a1966addf5380980d7f0ec03532ad2447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1966addf5380980d7f0ec03532ad2447">&#9670;&nbsp;</a></span>StringAsPosix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StringType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">AZ::IO::BasicPath</a>&lt; StringType &gt;::StringAsPosix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Replicates the behavior of the Python pathlib as_posix method by replacing the Windows Path Separator with the Posix Path Seperator </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Code/Framework/AzCore/AzCore/IO/Path/Path.h</li>
 <li>Code/Framework/AzCore/AzCore/IO/Path/Path.inl</li>
@@ -1295,7 +1317,7 @@ template&lt;typename StringType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:30:38 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:18:29 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

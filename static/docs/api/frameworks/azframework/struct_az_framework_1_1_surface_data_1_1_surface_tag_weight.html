@@ -60,59 +60,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a273d0dd99663db933588c42fe7c8dbd1"><td class="memItemLeft" align="right" valign="top"><a id="a273d0dd99663db933588c42fe7c8dbd1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (<a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_tag_weight.html">SurfaceTagWeight</a>, &quot;{EA14018E-E853-4BF5-8E13-D83BB99A54CC}&quot;)</td></tr>
 <tr class="separator:a273d0dd99663db933588c42fe7c8dbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f92260d979159824b8d10f72024843"><td class="memItemLeft" align="right" valign="top"><a id="ac7f92260d979159824b8d10f72024843"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SurfaceTagWeight</b> (AZ::Crc32 surfaceType, float weight)</td></tr>
+<tr class="separator:ac7f92260d979159824b8d10f72024843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6fc6d1d85eb6eca72e8b6bf3a3190ce1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_tag_weight.html#a6fc6d1d85eb6eca72e8b6bf3a3190ce1">Reflect</a> (AZ::ReflectContext *context)</td></tr>
-<tr class="memdesc:a6fc6d1d85eb6eca72e8b6bf3a3190ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Value in the range [0.0f .. 1.0f].  <a href="struct_az_framework_1_1_surface_data_1_1_surface_tag_weight.html#a6fc6d1d85eb6eca72e8b6bf3a3190ce1">More...</a><br /></td></tr>
+<tr class="memitem:a6fc6d1d85eb6eca72e8b6bf3a3190ce1"><td class="memItemLeft" align="right" valign="top"><a id="a6fc6d1d85eb6eca72e8b6bf3a3190ce1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_tag_weight.html#a6fc6d1d85eb6eca72e8b6bf3a3190ce1">Reflect</a> (AZ::ReflectContext *context)</td></tr>
+<tr class="memdesc:a6fc6d1d85eb6eca72e8b6bf3a3190ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Value in the range [0.0f .. 1.0f]. <br /></td></tr>
 <tr class="separator:a6fc6d1d85eb6eca72e8b6bf3a3190ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a87af12d5a23328fc87f36b60b964bc4c"><td class="memItemLeft" align="right" valign="top"><a id="a87af12d5a23328fc87f36b60b964bc4c"></a>
-AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>m_surfaceType</b></td></tr>
+AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>m_surfaceType</b> = AZ::Crc32(Constants::s_unassignedTagName)</td></tr>
 <tr class="separator:a87af12d5a23328fc87f36b60b964bc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0db16c72aff073786b9ab045c1f0a5e8"><td class="memItemLeft" align="right" valign="top"><a id="a0db16c72aff073786b9ab045c1f0a5e8"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_weight</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_weight</b> = 0.0f</td></tr>
 <tr class="separator:a0db16c72aff073786b9ab045c1f0a5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6fc6d1d85eb6eca72e8b6bf3a3190ce1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fc6d1d85eb6eca72e8b6bf3a3190ce1">&#9670;&nbsp;</a></span>Reflect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void AzFramework::SurfaceData::SurfaceTagWeight::Reflect </td>
-          <td>(</td>
-          <td class="paramtype">AZ::ReflectContext *&#160;</td>
-          <td class="paramname"><em>context</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>A Value in the range [0.0f .. 1.0f]. </p>
-<p>Don't call this directly. TerrainDataRequests::Reflect is doing it already. </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>Code/Framework/AzFramework/AzFramework/Terrain/TerrainDataRequestBus.h</li>
+<li>Code/Framework/AzFramework/AzFramework/SurfaceData/SurfaceData.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:31:15 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:07 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

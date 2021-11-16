@@ -55,7 +55,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;ISessionRequests.h&gt;</code></p>
+<p><code>#include &lt;SessionRequests.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -71,28 +71,46 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ae95650795b172d8eba6e3416e48dafac"><td class="memItemLeft" align="right" valign="top"><a id="ae95650795b172d8eba6e3416e48dafac"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_filterExpression</b></td></tr>
+<tr class="memitem:ae95650795b172d8eba6e3416e48dafac"><td class="memItemLeft" align="right" valign="top">AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_search_sessions_request.html#ae95650795b172d8eba6e3416e48dafac">m_filterExpression</a></td></tr>
 <tr class="separator:ae95650795b172d8eba6e3416e48dafac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad80dea523caf6b2dc171287e3f9e3e41"><td class="memItemLeft" align="right" valign="top"><a id="ad80dea523caf6b2dc171287e3f9e3e41"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_sortExpression</b></td></tr>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_search_sessions_request.html#ad80dea523caf6b2dc171287e3f9e3e41">m_sortExpression</a></td></tr>
+<tr class="memdesc:ad80dea523caf6b2dc171287e3f9e3e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructions on how to sort the search results. If no sort expression is included, the request returns results in random order. <br /></td></tr>
 <tr class="separator:ad80dea523caf6b2dc171287e3f9e3e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e08f59d2dbfb8603a65adb53bf48eec"><td class="memItemLeft" align="right" valign="top"><a id="a7e08f59d2dbfb8603a65adb53bf48eec"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxResult</b> = 0</td></tr>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_search_sessions_request.html#a7e08f59d2dbfb8603a65adb53bf48eec">m_maxResult</a> = 0</td></tr>
+<tr class="memdesc:a7e08f59d2dbfb8603a65adb53bf48eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of results to return. <br /></td></tr>
 <tr class="separator:a7e08f59d2dbfb8603a65adb53bf48eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb52bf325ce9b3108da6b438b856d0c7"><td class="memItemLeft" align="right" valign="top"><a id="abb52bf325ce9b3108da6b438b856d0c7"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_nextToken</b></td></tr>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_search_sessions_request.html#abb52bf325ce9b3108da6b438b856d0c7">m_nextToken</a></td></tr>
+<tr class="memdesc:abb52bf325ce9b3108da6b438b856d0c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A token that indicates the start of the next sequential page of results. <br /></td></tr>
 <tr class="separator:abb52bf325ce9b3108da6b438b856d0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="struct_az_framework_1_1_search_sessions_request.html">SearchSessionsRequest</a> The container for SearchSessions request parameters. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>Code/Framework/AzFramework/AzFramework/Session/ISessionRequests.h</li>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae95650795b172d8eba6e3416e48dafac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae95650795b172d8eba6e3416e48dafac">&#9670;&nbsp;</a></span>m_filterExpression</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::string AzFramework::SearchSessionsRequest::m_filterExpression</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>String containing the search criteria for the session search. If no filter expression is included, the request returns results for all active sessions. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>Code/Framework/AzFramework/AzFramework/Session/SessionRequests.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:31:13 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

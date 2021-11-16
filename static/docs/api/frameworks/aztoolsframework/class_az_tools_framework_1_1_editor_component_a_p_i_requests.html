@@ -90,6 +90,8 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PropertyOutcome</b> 
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a19849a2af7aeec95ba965abbf516d048"><td class="memItemLeft" align="right" valign="top">virtual AZStd::vector&lt; AZ::Uuid &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_component_a_p_i_requests.html#a19849a2af7aeec95ba965abbf516d048">FindComponentTypeIdsByEntityType</a> (const AZStd::vector&lt; AZStd::string &gt; &amp;componentTypeNames, EntityType entityType)=0</td></tr>
 <tr class="separator:a19849a2af7aeec95ba965abbf516d048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7212ff739b8da944ab4eb22d4ea644f5"><td class="memItemLeft" align="right" valign="top">virtual AZStd::vector&lt; AZ::Uuid &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_component_a_p_i_requests.html#a7212ff739b8da944ab4eb22d4ea644f5">FindComponentTypeIdsByService</a> (const AZStd::vector&lt; AZ::ComponentServiceType &gt; &amp;serviceFilter, const AZStd::vector&lt; AZ::ComponentServiceType &gt; &amp;incompatibleServiceFilter)=0</td></tr>
+<tr class="separator:a7212ff739b8da944ab4eb22d4ea644f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0c25ef328e869ceee130d759b490c52"><td class="memItemLeft" align="right" valign="top"><a id="aa0c25ef328e869ceee130d759b490c52"></a>
 virtual AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_component_a_p_i_requests.html#aa0c25ef328e869ceee130d759b490c52">FindComponentTypeNames</a> (const AZ::ComponentTypeList &amp;componentTypeIds)=0</td></tr>
 <tr class="memdesc:aa0c25ef328e869ceee130d759b490c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the component names from their type ids. <br /></td></tr>
@@ -214,6 +216,43 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
+<a id="a7212ff739b8da944ab4eb22d4ea644f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7212ff739b8da944ab4eb22d4ea644f5">&#9670;&nbsp;</a></span>FindComponentTypeIdsByService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::vector&lt;AZ::Uuid&gt; AzToolsFramework::EditorComponentAPIRequests::FindComponentTypeIdsByService </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::vector&lt; AZ::ComponentServiceType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>serviceFilter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::vector&lt; AZ::ComponentServiceType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>incompatibleServiceFilter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return a list of type ids for components that match the required services filter, and don't conflict with any of the incompatible services filter </p>
+
+</div>
+</div>
 <a id="a8ba965a9a007c7f993b887052a1f0f9d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ba965a9a007c7f993b887052a1f0f9d">&#9670;&nbsp;</a></span>SetComponentProperty()</h2>
 
@@ -268,7 +307,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:31:28 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:20 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

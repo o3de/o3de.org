@@ -85,12 +85,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad2713f0b5239aa775341cdb3f531a864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a5cf5ec4a68f412e289de2236184486"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a2a5cf5ec4a68f412e289de2236184486">AddConnectionAcquiredHandler</a> (ConnectionAcquiredEvent::Handler &amp;handler)=0</td></tr>
 <tr class="separator:a2a5cf5ec4a68f412e289de2236184486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a1c5737eedcec6ccaddc06ae81d1ad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a12a1c5737eedcec6ccaddc06ae81d1ad">AddServerAcceptanceReceivedHandler</a> (ServerAcceptanceReceivedEvent::Handler &amp;handler)=0</td></tr>
+<tr class="separator:a12a1c5737eedcec6ccaddc06ae81d1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a393df910eade10cf771978203ed3d0e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a393df910eade10cf771978203ed3d0e8">AddSessionInitHandler</a> (SessionInitEvent::Handler &amp;handler)=0</td></tr>
 <tr class="separator:a393df910eade10cf771978203ed3d0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58cec4e0bc53a20dacc05df0ebf8fb73"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a58cec4e0bc53a20dacc05df0ebf8fb73">AddSessionShutdownHandler</a> (SessionShutdownEvent::Handler &amp;handler)=0</td></tr>
 <tr class="separator:a58cec4e0bc53a20dacc05df0ebf8fb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab312b1346025db9918359640ce03cae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#aab312b1346025db9918359640ce03cae">SendNotifyClientMigrationEvent</a> (const HostId &amp;hostId, uint64_t userIdentifier, ClientInputId lastClientInputId)=0</td></tr>
-<tr class="separator:aab312b1346025db9918359640ce03cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9fa9e81bbc60aba575ef0271485357"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a5c9fa9e81bbc60aba575ef0271485357">SendNotifyClientMigrationEvent</a> (AzNetworking::ConnectionId connectionId, const HostId &amp;hostId, uint64_t userIdentifier, ClientInputId lastClientInputId, NetEntityId controlledEntityId)=0</td></tr>
+<tr class="separator:a5c9fa9e81bbc60aba575ef0271485357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08f8a5edcca8a9975fb37f40f3bf0dc6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a08f8a5edcca8a9975fb37f40f3bf0dc6">SendNotifyEntityMigrationEvent</a> (const <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html">ConstNetworkEntityHandle</a> &amp;entityHandle, const HostId &amp;remoteHostId)=0</td></tr>
 <tr class="separator:a08f8a5edcca8a9975fb37f40f3bf0dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d143ca3330c235a6c1638fd390844c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a8d143ca3330c235a6c1638fd390844c1">SendReadyForEntityUpdates</a> (bool readyForEntityUpdates)=0</td></tr>
@@ -107,6 +109,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8c6a35a25510858bab117d19f0c85e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa314d3205cd760ac85e0b4b435ecb36"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_multiplayer_1_1_i_filter_entity_manager.html">IFilterEntityManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#aaa314d3205cd760ac85e0b4b435ecb36">GetFilterEntityManager</a> ()=0</td></tr>
 <tr class="separator:aaa314d3205cd760ac85e0b4b435ecb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a0d1d0df0dd3088468239064faef17"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a96a0d1d0df0dd3088468239064faef17">RegisterPlayerIdentifierForRejoin</a> (uint64_t temporaryUserIdentifier, NetEntityId controlledEntityId)=0</td></tr>
+<tr class="separator:a96a0d1d0df0dd3088468239064faef17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87028dc8b5cc3d800029d1abf4df4754"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a87028dc8b5cc3d800029d1abf4df4754">CompleteClientMigration</a> (uint64_t temporaryUserIdentifier, AzNetworking::ConnectionId connectionId, const HostId &amp;publicHostId, ClientInputId migratedClientInputId)=0</td></tr>
+<tr class="separator:a87028dc8b5cc3d800029d1abf4df4754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c129c7a72f19f9ecb775076c78cbbc5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a5c129c7a72f19f9ecb775076c78cbbc5">SetShouldSpawnNetworkEntities</a> (bool value)=0</td></tr>
 <tr class="separator:a5c129c7a72f19f9ecb775076c78cbbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87a3c3c2680aff4f01f29fe7d9ce67bd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a87a3c3c2680aff4f01f29fe7d9ce67bd">GetShouldSpawnNetworkEntities</a> () const =0</td></tr>
@@ -311,6 +317,38 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a12a1c5737eedcec6ccaddc06ae81d1ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12a1c5737eedcec6ccaddc06ae81d1ad">&#9670;&nbsp;</a></span>AddServerAcceptanceReceivedHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Multiplayer::IMultiplayer::AddServerAcceptanceReceivedHandler </td>
+          <td>(</td>
+          <td class="paramtype">ServerAcceptanceReceivedEvent::Handler &amp;&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adds a ServerAcceptanceReceived Handler which is invoked when the client receives the accept packet from the server. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>The ServerAcceptanceReceived Handler to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a393df910eade10cf771978203ed3d0e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a393df910eade10cf771978203ed3d0e8">&#9670;&nbsp;</a></span>AddSessionInitHandler()</h2>
 
@@ -369,6 +407,63 @@ Public Member Functions</h2></td></tr>
 <p>Adds a SessionShutdownEvent Handler which is invoked when the current network session ends. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handler</td><td>The SessionShutdownEvent handler to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a87028dc8b5cc3d800029d1abf4df4754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87028dc8b5cc3d800029d1abf4df4754">&#9670;&nbsp;</a></span>CompleteClientMigration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Multiplayer::IMultiplayer::CompleteClientMigration </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>temporaryUserIdentifier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AzNetworking::ConnectionId&#160;</td>
+          <td class="paramname"><em>connectionId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const HostId &amp;&#160;</td>
+          <td class="paramname"><em>publicHostId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ClientInputId&#160;</td>
+          <td class="paramname"><em>migratedClientInputId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Completes a client migration event by informing the appropriate client to migrate between hosts. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">temporaryUserIdentifier</td><td>the temporary user identifier used to identify a player across hosts </td></tr>
+    <tr><td class="paramname">connectionId</td><td>the connection id of the player being migrated </td></tr>
+    <tr><td class="paramname">publicHostId</td><td>the public address of the new host the client should connect to </td></tr>
+    <tr><td class="paramname">migratedClientInputId</td><td>the last clientInputId processed prior to migration </td></tr>
   </table>
   </dd>
 </dl>
@@ -664,8 +759,51 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aab312b1346025db9918359640ce03cae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab312b1346025db9918359640ce03cae">&#9670;&nbsp;</a></span>SendNotifyClientMigrationEvent()</h2>
+<a id="a96a0d1d0df0dd3088468239064faef17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96a0d1d0df0dd3088468239064faef17">&#9670;&nbsp;</a></span>RegisterPlayerIdentifierForRejoin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Multiplayer::IMultiplayer::RegisterPlayerIdentifierForRejoin </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>temporaryUserIdentifier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NetEntityId&#160;</td>
+          <td class="paramname"><em>controlledEntityId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Registers a temp userId to allow a host to look up a players controlled entity in the event of a rejoin or migration event. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">temporaryUserIdentifier</td><td>the temporary user identifier used to identify a player across hosts </td></tr>
+    <tr><td class="paramname">controlledEntityId</td><td>the controlled entityId of the players autonomous entity </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5c9fa9e81bbc60aba575ef0271485357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c9fa9e81bbc60aba575ef0271485357">&#9670;&nbsp;</a></span>SendNotifyClientMigrationEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -676,6 +814,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void Multiplayer::IMultiplayer::SendNotifyClientMigrationEvent </td>
           <td>(</td>
+          <td class="paramtype">AzNetworking::ConnectionId&#160;</td>
+          <td class="paramname"><em>connectionId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const HostId &amp;&#160;</td>
           <td class="paramname"><em>hostId</em>, </td>
         </tr>
@@ -689,7 +833,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">ClientInputId&#160;</td>
-          <td class="paramname"><em>lastClientInputId</em>&#160;</td>
+          <td class="paramname"><em>lastClientInputId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NetEntityId&#160;</td>
+          <td class="paramname"><em>controlledEntityId</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -705,9 +855,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Signals a NotifyClientMigrationEvent with the provided parameters. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">connectionId</td><td>the connection id of the client that is migrating </td></tr>
     <tr><td class="paramname">hostId</td><td>the host id of the host the client is migrating to </td></tr>
     <tr><td class="paramname">userIdentifier</td><td>the user identifier the client will provide the new host to validate identity </td></tr>
     <tr><td class="paramname">lastClientInputId</td><td>the last processed clientInputId by the current host </td></tr>
+    <tr><td class="paramname">controlledEntityId</td><td>the entityId of the clients autonomous entity </td></tr>
   </table>
   </dd>
 </dl>
@@ -935,7 +1087,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:32:44 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:44 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
