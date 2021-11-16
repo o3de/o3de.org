@@ -69,7 +69,7 @@ This will create a named profile based on the name of the IAM user in your .cred
 
 You can control which profile is used by default in the AWS CLI either by setting a ```[default]``` profile or by using the [AWS_DEFAULT_PROFILE](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html#using-profiles) environment variable.
 
-For more information on using AWS CLI configure commands, see [Configuration and Credential File Settings](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) in the AWS CLI User Guide. 
+For more information on using AWS CLI configure commands, see [Configuration and credential file settings](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) in the AWS CLI User Guide. 
 
 You can also utilize IAM roles by defining role based profiles. Refer to [Using an IAM role in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html) for information.
 
