@@ -160,3 +160,16 @@ $(function() {
     }
   });
 });
+
+// Detect anchor links, add correct offset and scroll behavior.
+$(function() {
+  var scrollOffset = $(".main-navbar").height() + 32;
+
+  $("a[href^=\\#]").click(function(e) {
+    var dest = $(this).attr('href');
+    if(dest != "" && $(dest).length > 0)
+    {
+      $('html,body').animate({ scrollTop: $(dest).offset().top - scrollOffset }, 'slow');
+    }
+  });
+});
