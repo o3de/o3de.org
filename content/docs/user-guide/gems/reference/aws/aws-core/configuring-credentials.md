@@ -148,7 +148,7 @@ Create user groups using the AWS Console, the AWS CLI, or the CloudFormation/CDK
 * **Admins** - These are the administrators who own and manage AWS resources. Typically, they will perform updates and manage key resources.
 * **Users** - These are the users who can take action on the resources, as part of normal gameplay or a simulation.
 
-#### Create a user group via the AWS Console
+#### To create a user group using the AWS Console
 1. Open the IAM console via https://console.aws.amazon.com/iamv2
 2. In the IAM console's navigation pane, choose **Groups**.
 3. Choose **Create New Group**.
