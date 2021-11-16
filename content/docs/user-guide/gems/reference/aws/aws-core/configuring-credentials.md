@@ -5,7 +5,7 @@ weight: 150
 toc: true
 ---
 
-These instructions assume that you have (or will have) administrative access to an AWS account. For more information, see the [AWS home page](https://aws.amazon.com/) for instructions on creating an account, information about [AWS account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) and [CCreating your first IAM admin user and user group](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html). If you already have an AWS account, but you do not have administrative access to it, see your AWS account administrator. 
+These instructions assume that you have (or will have) administrative access to an AWS account. For more information, see the [AWS home page](https://aws.amazon.com/) for instructions on creating an account, information about the [AWS account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) and [Creating your first IAM admin user and user group](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html). If you already have an AWS account, but you do not have administrative access to it, see your AWS account administrator. 
 
 The expectation is that, by the end of this guide and its linked resources, you will:
 * Understand how to set up AWS credentials for O3DE.
@@ -13,7 +13,7 @@ The expectation is that, by the end of this guide and its linked resources, you 
 * Understand steps to take around team setup.
 * Have a sense about how to manage credentials during the development and release/distribution phases of your project.
 
-The to set up an [individual user](#setting-up-credentials-as-an-individual), you will need to:
+To set up an [individual user](#setting-up-credentials-as-an-individual), you will need to:
 * Create the required IAM user.
 * Add any AWS permissions required.
 * Export the credentials to the local environment.
@@ -23,6 +23,7 @@ To [manage a team](#setting-up-credentials-for-a-team) in an AWS account, you wi
 * Create user groups.
 * Add AWS IAM users to the appropriate user group.
 * Add AWS permissions to the user groups.
+* Add AWS permissions to the user groups.
 
 Once the preceding tasks are complete, users can export their credentials to their local environment.
 
@@ -31,20 +32,20 @@ Once the preceding tasks are complete, users can export their credentials to the
 
 You will need to provide AWS credentials for users. You can choose between short-term and long-term credentials. Long-term credentials are convenient during the development process. They're easier to configure, but you need to be careful they are kept secure. Short-term credentials are generally recommended when you distribute your builds to external users because they have a finite lifetime. For more information, refer to the AWS guide on [Best Practices for Managing AWS Access Keys](https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html).
 
-* To provision long-term credentials, create an AWS Identity and Access Management (IAM) user with programmatic credentials and follow the guide below to setup that user for O3DE. See [AWS Credentials - Programmatic Access](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) for more information. 
+* To provision long-term credentials, create an AWS Identity and Access Management (IAM) user with programmatic credentials and follow the guide covering []() that user for O3DE. See [AWS Credentials - Programmatic Access](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) for more information. 
 
 * To provide short-term credentials, use [Amazon Cognito](https://aws.amazon.com/cognito/) or [AWS Security Token Service](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html) to generate [temporary security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html). The [AWS Client Auth Gem](/docs/user-guide/gems/reference/aws/aws-client-auth) provides configuration points for using Amazon Cognito in O3DE.
 
-* To provide access via IAM roles, see the [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) documentation for more information and follow [Using an IAM role in the AWS CL](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html) for setup information.
+* To provide access via IAM roles, see the [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) documentation for more information and follow [Using an IAM role in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html) for setup information.
 
-It is strongly recommend against using your AWS account root user for day-to-day tasks. Instead, create user or roles in IAM with the required permissions for your use cases. Best practice is to change users' access keys regularly and follow the practice of least-privileges. For more information on managing access keys, see [Managing Access Keys for IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) in the AWS IAM User Guide.
+It is strongly recommend to not use your AWS account root user for day-to-day tasks. Instead, create users or roles in IAM with the required permissions for your use cases. Best practice is to change users' access keys regularly and follow the practice of least-privileges. For more information on managing access keys, see [Managing Access Keys for IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) in the AWS IAM User Guide.
 
 
-## Setting up Credentials as an Individual
+## Setting up AWS Credentials as a developer
 
 This section assumes you have an [AWS IAM Administrator user](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html) set up in your AWS account.
 
-For local development with AWS setup this guide covers how to use an IAM user with long term programmatic credentials. If you don't have access keys configured, use the AWS Console to generate and download new access keys for an existing or new IAM user using the steps shown in the AWS Reference Guide for [Programmatic Access](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
+The steps in this guide cover how to use an IAM user with long term programmatic credentials to use in O3DE. If you don't have IAM access keys configured, use the AWS Console to generate and download new access keys for an existing or new IAM user using the steps shown in the AWS Reference Guide for [Programmatic Access](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 
 If you want to use short-term credentials for working with AWS, please see setup information in the [AWS Client Auth Gem](/docs/user-guide/gems/reference/aws/aws-client-auth).
 
@@ -65,9 +66,9 @@ Alternatively, when you create new access keys for a user, you are given the opt
 aws configure import --csv file://credentials.csv
 ```
 
-This will create a named profile based on the name of the IAM user in your .credentials file. 
+This will create a named profile based on the name of the IAM user in your `credentials` file. 
 
-You can control which profile is used by default in the AWS CLI either by setting a ```[default]``` profile or by using the [AWS_DEFAULT_PROFILE](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html#using-profiles) environment variable.
+You can control which profile is used by default in the AWS CLI either by setting a ```[default]``` profile or through the use of the [AWS_DEFAULT](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html#using-profiles) environment variable.
 
 For more information on using AWS CLI configure commands, see [Configuration and credential file settings](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) in the AWS CLI User Guide. 
 
@@ -172,7 +173,7 @@ See the [CDK setup instructions](cdk-application) for more details.
 ### Adding users to a user group
 You can add users to IAM User Groups using either the AWS Console or the AWS CLI. See [Adding and removing users in an IAM user group ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups_manage_add-remove-users.html) for full details.
 
-You can quickly add users via the cli as follows:
+You can quickly add users via the CLI as follows:
 
 ```
 aws iam add-user-to-group --group-name MyGroup --user-name MyNewUser
@@ -225,4 +226,4 @@ Please read [Working with AWS credentials](#working-with-aws-credentials) to dec
 * For general help with AWS CLI configuration commands, see [Configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html).
 * For help with configuring credentials for the **AWS C++ SDK**, see [Providing AWS credentials](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/credentials.html).
 * For help with managing permissions for AWS resources, see [Policies and permissions in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
-* For help with using [IAM Roles]().
+* See the IAM documentation for help with [IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) and [Using IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html).
