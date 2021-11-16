@@ -121,7 +121,7 @@ Note: Because of a console variable string size limitation, providing a session 
 
 
 ## Setting a default profile to use in O3DE
-If your development machine is configured with named profiles in your local AWS credentials file, you can set a profile to be automatically used with O3DE on a per-project basis. This profile should be set in the [O3DE Project Settings](./getting-started/#project-settings) file and will then be used by default each time the Editor starts.
+If your development machine is configured with named profiles in your local AWS credentials file, you can set a profile to be automatically used with O3DE on a per-project basis. This profile should be set in the AWS Core [configuration settings](./getting-started/#project-settings) file and will then be used by default each time the O3DE Editor starts.
 
 You can use the following commands to list your defaults and all named profiles (requires AWS CLI version 2):
 
