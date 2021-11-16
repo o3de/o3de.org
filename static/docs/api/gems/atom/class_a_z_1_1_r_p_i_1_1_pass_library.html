@@ -99,6 +99,8 @@ const AZStd::shared_ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_tem
 <tr class="memitem:ad6031e4908f3e4c32602b1a11ba8b9cf"><td class="memItemLeft" align="right" valign="top"><a id="ad6031e4908f3e4c32602b1a11ba8b9cf"></a>
 const AZStd::vector&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPassesForTemplate</b> (const Name &amp;templateName) const</td></tr>
 <tr class="separator:ad6031e4908f3e4c32602b1a11ba8b9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a521d597a82ad7dcfa011e1373be9c916"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_library.html#a521d597a82ad7dcfa011e1373be9c916">RemovePassTemplate</a> (const Name &amp;name)</td></tr>
+<tr class="separator:a521d597a82ad7dcfa011e1373be9c916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a075a5b7e4374b69143bcd480e84da1e1"><td class="memItemLeft" align="right" valign="top"><a id="a075a5b7e4374b69143bcd480e84da1e1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_library.html#a075a5b7e4374b69143bcd480e84da1e1">RemovePassFromLibrary</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> *pass)</td></tr>
 <tr class="memdesc:a075a5b7e4374b69143bcd480e84da1e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a pass from both it's associated template (if it has one) and from the pass name mapping. <br /></td></tr>
@@ -108,23 +110,43 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ab3a1b5dd9272c4cae70002c8b461d4ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load pass templates which are list in an <a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_aliases.html">AssetAliases</a>. <br /></td></tr>
 <tr class="separator:ab3a1b5dd9272c4cae70002c8b461d4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a762634bcfce6acbd6a5e60b94ca0cb9f"><td class="memItemLeft" align="right" valign="top"><a id="a762634bcfce6acbd6a5e60b94ca0cb9f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadPassTemplateMappings</b> (Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_any_asset.html">AnyAsset</a> &gt; mappingAsset)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadPassTemplateMappings</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_any_asset.html">AnyAsset</a> &gt; mappingAsset)</td></tr>
 <tr class="separator:a762634bcfce6acbd6a5e60b94ca0cb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba023e2fb6c631bfda0476c00e52da60"><td class="memItemLeft" align="right" valign="top"><a id="aba023e2fb6c631bfda0476c00e52da60"></a>
-AZStd::vector&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_library.html#aba023e2fb6c631bfda0476c00e52da60">FindPasses</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_filter.html">PassFilter</a> &amp;passFilter) const</td></tr>
-<tr class="memdesc:aba023e2fb6c631bfda0476c00e52da60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of passes found in the pass name mapping using the provided pass filter. <br /></td></tr>
-<tr class="separator:aba023e2fb6c631bfda0476c00e52da60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70dcb31806ff9472fdc94baf45479519"><td class="memItemLeft" align="right" valign="top"><a id="a70dcb31806ff9472fdc94baf45479519"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_library.html#a70dcb31806ff9472fdc94baf45479519">ForEachPass</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_filter.html">PassFilter</a> &amp;passFilter, AZStd::function&lt; PassFilterExecutionFlow(<a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> *)&gt; passFunction)</td></tr>
+<tr class="memdesc:a70dcb31806ff9472fdc94baf45479519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visit each pass which matches the filter. <br /></td></tr>
+<tr class="separator:a70dcb31806ff9472fdc94baf45479519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Library used to keep track of passes and pass template. Responsible for Storing all PassTemplates Storing all PassAssets Storing references to all Passes Retrieving a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> given it's Name Retrieving all passes given a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> Retrieving all passes with a given Name Retrieving all passes with a given <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_filter.html">PassFilter</a></p>
 <p>Because <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_library.html">PassLibrary</a> enables PassTemplates to be referenced with just a Name, this enables code to reference Passes defined in data and vice-versa </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a521d597a82ad7dcfa011e1373be9c916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a521d597a82ad7dcfa011e1373be9c916">&#9670;&nbsp;</a></span>RemovePassTemplate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::PassLibrary::RemovePassTemplate </td>
+          <td>(</td>
+          <td class="paramtype">const Name &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Removes a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> by name, only if the following two conditions are met: 1- The template was NOT created from an Asset. This means the template will be erasable only if it was created at runtime with C++. 2- The are no instantiated Passes referencing such template. If the template exists but both conditions are not met then the function will assert. If a template with the given name doesn't exist the function does nothing. This function should be used judiciously, and under rare circumstances. For example, Applications that iteratively create and need to delete templates at runtime. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/RPI/Code/Include/Atom/RPI.Public/Pass/PassLibrary.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:32:20 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

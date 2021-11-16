@@ -75,6 +75,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_shader_variant_reference_data.html">ShaderVariantReferenceData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_version_update_definition.html">VersionUpdateDefinition</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_version_updates_rename_operation_definition.html">VersionUpdatesRenameOperationDefinition</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -84,6 +88,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PropertyConnectionLi
 <tr class="memitem:a0b067aebeabdcdbf8f3ea09129fc67fb"><td class="memItemLeft" align="right" valign="top"><a id="a0b067aebeabdcdbf8f3ea09129fc67fb"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>PropertyList</b> = AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_definition.html">PropertyDefinition</a> &gt;</td></tr>
 <tr class="separator:a0b067aebeabdcdbf8f3ea09129fc67fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a678490bc7828a6eeff8437b20a37672f"><td class="memItemLeft" align="right" valign="top"><a id="a678490bc7828a6eeff8437b20a37672f"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>VersionUpdateActions</b> = AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_version_updates_rename_operation_definition.html">VersionUpdatesRenameOperationDefinition</a> &gt;</td></tr>
+<tr class="separator:a678490bc7828a6eeff8437b20a37672f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae048fecf2d9d6e75c5e252cd4d47979f"><td class="memItemLeft" align="right" valign="top"><a id="ae048fecf2d9d6e75c5e252cd4d47979f"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>VersionUpdates</b> = AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_version_update_definition.html">VersionUpdateDefinition</a> &gt;</td></tr>
+<tr class="separator:ae048fecf2d9d6e75c5e252cd4d47979f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf921017932a2654c85ae783c07594cb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#aaf921017932a2654c85ae783c07594cb">UvNameMap</a> = AZStd::map&lt; AZStd::string, AZStd::string &gt;</td></tr>
 <tr class="separator:aaf921017932a2654c85ae783c07594cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3e7ba492c2526a2afe1a96994a0a533"><td class="memItemLeft" align="right" valign="top"><a id="ac3e7ba492c2526a2afe1a96994a0a533"></a>
@@ -106,20 +116,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ad41d7e6267ee73e668fb4d2c89d2fa8d"><td class="memItemLeft" align="right" valign="top"><a id="ad41d7e6267ee73e668fb4d2c89d2fa8d"></a>
 const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_group_definition.html">GroupDefinition</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindGroup</b> (AZStd::string_view groupName) const</td></tr>
 <tr class="separator:ad41d7e6267ee73e668fb4d2c89d2fa8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4b2ad2e464c7c03ec7e9ae6240b076a"><td class="memItemLeft" align="right" valign="top"><a id="aa4b2ad2e464c7c03ec7e9ae6240b076a"></a>
-const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_definition.html">PropertyDefinition</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindProperty</b> (AZStd::string_view groupName, AZStd::string_view propertyName) const</td></tr>
-<tr class="separator:aa4b2ad2e464c7c03ec7e9ae6240b076a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34160ceeedb7d7c74d527de8561ce943"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_definition.html">PropertyDefinition</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#a34160ceeedb7d7c74d527de8561ce943">FindProperty</a> (AZStd::string_view groupName, AZStd::string_view propertyName, uint32_t materialTypeVersion=0) const</td></tr>
+<tr class="separator:a34160ceeedb7d7c74d527de8561ce943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a2265d292154dc87498a3f53c684021"><td class="memItemLeft" align="right" valign="top">AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_group_definition.html">GroupDefinition</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#a0a2265d292154dc87498a3f53c684021">GetGroupDefinitionsInDisplayOrder</a> () const</td></tr>
 <tr class="separator:a0a2265d292154dc87498a3f53c684021"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a936164e5291d58014fa88e0d8863c8bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#a936164e5291d58014fa88e0d8863c8bf">EnumerateProperties</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ac3e7ba492c2526a2afe1a96994a0a533">EnumeratePropertiesCallback</a> &amp;callback) const</td></tr>
 <tr class="separator:a936164e5291d58014fa88e0d8863c8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3d41b20a593288f0bac92a0a54134a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#aa3d41b20a593288f0bac92a0a54134a5">EnumeratePropertiesInDisplayOrder</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ac3e7ba492c2526a2afe1a96994a0a533">EnumeratePropertiesCallback</a> &amp;callback) const</td></tr>
 <tr class="separator:aa3d41b20a593288f0bac92a0a54134a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52e2b68117c207821072e251c6cdc1f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#a52e2b68117c207821072e251c6cdc1f0">ConvertPropertyValueToSourceDataFormat</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_definition.html">PropertyDefinition</a> &amp;propertyDefinition, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> &amp;propertyValue) const</td></tr>
-<tr class="separator:a52e2b68117c207821072e251c6cdc1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a394a8546e86320646701faa9a1528e6f"><td class="memItemLeft" align="right" valign="top"><a id="a394a8546e86320646701faa9a1528e6f"></a>
-Outcome&lt; Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateMaterialTypeAsset</b> (Data::AssetId assetId, AZStd::string_view materialTypeSourceFilePath=&quot;&quot;, bool elevateWarnings=true) const</td></tr>
+Outcome&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateMaterialTypeAsset</b> (Data::AssetId assetId, AZStd::string_view materialTypeSourceFilePath=&quot;&quot;, bool elevateWarnings=true) const</td></tr>
 <tr class="separator:a394a8546e86320646701faa9a1528e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad086d4d0f007a67a670d6b6e8474e547"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ad086d4d0f007a67a670d6b6e8474e547">ApplyPropertyRenames</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html">MaterialPropertyId</a> &amp;propertyId, uint32_t materialTypeVersion=0) const</td></tr>
+<tr class="separator:ad086d4d0f007a67a670d6b6e8474e547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -132,6 +141,13 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae97f0bcbc9c27c62ca04ee9887ed6b26"><td class="memItemLeft" align="right" valign="top"><a id="ae97f0bcbc9c27c62ca04ee9887ed6b26"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_description</b></td></tr>
 <tr class="separator:ae97f0bcbc9c27c62ca04ee9887ed6b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7cd9a911187cc1f9421a90752117e9"><td class="memItemLeft" align="right" valign="top"><a id="a0f7cd9a911187cc1f9421a90752117e9"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#a0f7cd9a911187cc1f9421a90752117e9">m_version</a> = 1</td></tr>
+<tr class="memdesc:a0f7cd9a911187cc1f9421a90752117e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version 1 is the default and should not contain any version update. <br /></td></tr>
+<tr class="separator:a0f7cd9a911187cc1f9421a90752117e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a892448bae50b715c03e020f6b2d43e43"><td class="memItemLeft" align="right" valign="top"><a id="a892448bae50b715c03e020f6b2d43e43"></a>
+VersionUpdates&#160;</td><td class="memItemRight" valign="bottom"><b>m_versionUpdates</b></td></tr>
+<tr class="separator:a892448bae50b715c03e020f6b2d43e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a069f8c7a8905abc950c00928b5e71251"><td class="memItemLeft" align="right" valign="top"><a id="a069f8c7a8905abc950c00928b5e71251"></a>
 <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_layout.html">PropertyLayout</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_propertyLayout</b></td></tr>
 <tr class="separator:a069f8c7a8905abc950c00928b5e71251"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,23 +188,23 @@ static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a52e2b68117c207821072e251c6cdc1f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52e2b68117c207821072e251c6cdc1f0">&#9670;&nbsp;</a></span>ConvertPropertyValueToSourceDataFormat()</h2>
+<a id="ad086d4d0f007a67a670d6b6e8474e547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad086d4d0f007a67a670d6b6e8474e547">&#9670;&nbsp;</a></span>ApplyPropertyRenames()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool AZ::RPI::MaterialTypeSourceData::ConvertPropertyValueToSourceDataFormat </td>
+          <td class="memname">bool AZ::RPI::MaterialTypeSourceData::ApplyPropertyRenames </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_definition.html">PropertyDefinition</a> &amp;&#160;</td>
-          <td class="paramname"><em>propertyDefinition</em>, </td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html">MaterialPropertyId</a> &amp;&#160;</td>
+          <td class="paramname"><em>propertyId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> &amp;&#160;</td>
-          <td class="paramname"><em>propertyValue</em>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>materialTypeVersion</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -197,7 +213,13 @@ static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Convert the property value into the format that will be stored in the source data This is primarily needed to support conversions of special types like enums and images </p>
+<p>Possibly renames @propertyId based on the material version update steps. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialTypeVersion</td><td>indicates the version number of the property name being passed in. Only renames above this version number will be applied. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the property was renamed </dd></dl>
 
 </div>
 </div>
@@ -239,6 +261,47 @@ static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><
 
 </div>
 </div>
+<a id="a34160ceeedb7d7c74d527de8561ce943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34160ceeedb7d7c74d527de8561ce943">&#9670;&nbsp;</a></span>FindProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_definition.html">PropertyDefinition</a>* AZ::RPI::MaterialTypeSourceData::FindProperty </td>
+          <td>(</td>
+          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramname"><em>groupName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramname"><em>propertyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>materialTypeVersion</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Searches for a specific property. Note this function can find properties using old versions of the property name; in that case, the name in the returned PropertyDefinition* will not match the @propertyName that was searched for. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialTypeVersion</td><td>indicates the version number of the property name being passed in. Only renames above this version number will be applied. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the requested property, or null if it could not be found </dd></dl>
+
+</div>
+</div>
 <a id="a0a2265d292154dc87498a3f53c684021"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a2265d292154dc87498a3f53c684021">&#9670;&nbsp;</a></span>GetGroupDefinitionsInDisplayOrder()</h2>
 
@@ -263,7 +326,7 @@ static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:32:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
