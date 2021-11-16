@@ -311,8 +311,8 @@ if (auto behaviorContext = azrtti_cast <AZ::BehaviorContext*>(reflectContext))
 {
     behaviorContext->EBus<MyBus>("MyBus")
         // This is the category that appears in the Node Palette window.
-        ->Attribute (AZ::Script::Attributes::Category, "Rendering")
-        ->Event ("SomeEvent", &MyBus::Events::SomeEvent);
+        ->Attribute(AZ::Script::Attributes::Category, "Rendering")
+        ->Event("SomeEvent", &MyBus::Events::SomeEvent);
 }
 ```
 
@@ -324,7 +324,7 @@ if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(reflectContext))
     behaviorContext->EBus<MyBus>("MyBus")
         // This is the category that appears in the Node Palette window.
         ->Attribute(AZ::Script::Attributes::Category, "Rendering")
-        ->Event("SomeEvent", &MyBus::Events::SomeEvent, {{{ "FirstParam" , "First Param Tooltip" }, { "SecondParam", "Second Param Tooltip" }}});
+        ->Event("SomeEvent", &MyBus::Events::SomeEvent, {{{"FirstParam" , "First Param Tooltip"}, { "SecondParam", "Second Param Tooltip"}}});
 }
 ```
 
@@ -339,8 +339,8 @@ You can also use the alternate syntax `AZ::BehaviorParameterOverrides` to create
 ```cpp
 if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(reflectContext))
 {
-    AZ::BehaviorParameterOverrides someEventParam1 = { "FirstParam", "First Param Tooltip" };
-    AZ::BehaviorParameterOverrides someEventParam2 = { "SecondParam", "Second Param Tooltip" };
+    AZ::BehaviorParameterOverrides someEventParam1 = {"FirstParam", "First Param Tooltip"};
+    AZ::BehaviorParameterOverrides someEventParam2 = {"SecondParam", "Second Param Tooltip"};
     behaviorContext->EBus<MyBus>("MyBus")
         // This is the category that appears in the Node Palette window
         ->Attribute(AZ::Script::Attributes::Category, "Rendering")
@@ -352,7 +352,7 @@ if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(reflectContext))
 
 The following are some common problems that occur when programming with Script Canvas and the behavior context.
 
-**I reflected my class to the behavior context, but it doesn't appear in Script Canvas.**
+### Reflected object does not appear in Script Canvas
 
 Both the serialization context and the behavior context use the same `Reflect` function:
 
@@ -370,15 +370,13 @@ void Example::Reflect(AZ::ReflectContext* context)
     if (AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(context))
     {
         serializeContext->Class<Example>()
-            ->Version(1)
-            ;
+            ->Version(1);
 
         // Problem! BehaviorContext is inside the SerializeContext scope and will not get reflected.
         if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
         {
             behaviorContext->Class<Example>()
-                ->Method("IsValid", &Example::IsValid)
-                ;
+                ->Method("IsValid", &Example::IsValid);
         }
     }
 }
@@ -392,28 +390,30 @@ void Example::Reflect(AZ::ReflectContext* context)
     if (AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(context))
     {
         serializeContext->Class<Example>()
-            ->Version(1)
-            ;
+            ->Version(1);
     }
 
     // Correct! Each context requires its own scope as this function is called multiple times (once per context)
     if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
     {
         behaviorContext->Class<Example>()
-            ->Method("IsValid", &Example::IsValid)
-            ;
+            ->Method("IsValid", &Example::IsValid);
      }
 }
 ```
 
-**I exposed a new EBus to the Behavior Context, but my handler is not getting called.**
+### EBus handler is not getting called
 
-For example, you created an EBus handler and properly exposed it script. Yet, when you try to receive the event in Script Canvas, it does not get triggered.
+**Problem**
 
-This is caused by an oversight that is easy to make: newly implemented EBus handlers must be connected before they can receive events. The solution is to ensure that your component connects to the bus, as in the following example:
+You created an EBus handler and properly exposed it to the behavior context. However, when you try to receive the event in Script Canvas, it does not get triggered.
+
+**Solution**
+
+EBus handlers must be connected before they can receive events. Make sure your component connects to the bus, as in the following example:
 
 ```cpp
-MyBus::BusConnect()
+MyBus::BusConnect();
 ```
 
 Depending on the type of bus, you might have to specify an ID to connect to. For more information, refer to [The Open 3D Engine Event Bus (EBus) System](/docs/user-guide/engine/ebus/).
