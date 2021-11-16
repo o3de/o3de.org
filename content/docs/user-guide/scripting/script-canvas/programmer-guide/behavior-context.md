@@ -264,83 +264,77 @@ Once compiled, these event handlers are available to Script Canvas from the `Lig
 
 ![Light notification node](/images/user-guide/scripting/script-canvas/behavior-context-ebus-light-notification-node.png)
 
-## Objects: The PhysicsComponent example
+## Example: Data types
 
-{{< todo issue="https://github.com/o3de/o3de.org/issues/992" >}}
-This example is outdated. It refers to a legacy component that no longer exists.
-{{< /todo >}}
+To make a custom data type available for use as a variable in Script Canvas, you can reflect it using the behavior context's Class builder. The new type is also available to pass as a parameter to functions and events.
 
-Objects that are reflected to the behavior context are also available in Script Canvas. Objects become available in the form of variables.
+This example uses the `BoxShapeConfig` class as an example. This class is defined in the file `Gems\LmbrCentral\Code\include\LmbrCentral\Shape\BoxShapeComponentBus.h` and reflected in `Gems\LmbrCentral\Code\Source\Shape\BoxShapeComponent.cpp`.
 
-The Light component does not provide any objects, but the `PhysicsComponent` provides an example of an object reflected to the behavior context. The `Collision` class is reflected as a behavior context object that you can access through the use of variables in Script Canvas. You can find the following source code in the file `dev\Gems\LmbrCentral\Code\Source\Physics\PhysicsComponent.cpp`.
+A data type must be reflected to both the `SerializeContext` and the `BehaviorContext`. The serialization context enables the data type to be stored and read from a file, and the behavior context allows it to be bound to the scripting system.
 
 ```cpp
-using Collision = PhysicsComponentNotifications::Collision;
-// Information about a collision event
-behaviorContext->Class<Collision>()
-    ->Attribute(AZ::Script::Attributes::Storage, AZ::Script::Attributes::StorageType::Value)
-    ->Property("entity", BehaviorValueProperty(&Collision::m_entity))
-    ->Property("position", BehaviorValueProperty(&Collision::m_position))
-    ->Property("normal", BehaviorValueProperty(&Collision::m_normal))
-    ->Property("impulse", BehaviorValueProperty(&Collision::m_impulse))
-    ->Property("velocities", BehaviorValueGetter(&Collision::m_velocities), nullptr)
-    ->Property("masses", BehaviorValueGetter(&Collision::m_masses), nullptr)
-    ->Property("surfaces", BehaviorValueGetter(&Collision::m_surfaces), nullptr)
-     ;
+void BoxShapeConfig::Reflect(AZ::ReflectContext* context)
+{
+    if (auto serializeContext = azrtti_cast<AZ::SerializeContext*>(context))
+    {
+        serializeContext->Class<BoxShapeConfig, ShapeComponentConfig>()
+            ->Version(2)
+            ->Field("Dimensions", &BoxShapeConfig::m_dimensions);
+     }
+
+    if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
+    {
+         behaviorContext->Class<BoxShapeConfig>()
+            ->Constructor()
+            ->Constructor<AZ::Vector3&>()
+            ->Property("Dimensions", BehaviorValueProperty(&BoxShapeConfig::m_dimensions));
+    }
+}
 ```
 
-{{< note >}}
-<!-- During the preview release of Script Canvas, -->Properties must provide both getters and setters to be accessible on a Script Canvas node. Containers such as vectors are currently not supported. For this reason, velocities, masses, and surfaces do not provide a setter.
-{{< /note >}}
+Resulting variable node:
 
-Most object variables are set as a result of an event. In the case of the preceding `Collision` example, the `Collision` variable is returned by the `OnCollision` event.
+![Get BoxShapeConfig variable node](/images/user-guide/scripting/script-canvas/behavior-context-data-types-boxshapeconfig.png)
 
-![Collision variable](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-4.png)
-
-You can use the following graph to set the collision variable:
-
-![Setting the Collision variable](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-5.png)
-
-## Displaying EBus event parameter names in Script Canvas nodes
+## Best practice: Displaying EBus event parameter names in nodes
 
 To display parameter names correctly for your EBus events, ensure that you specify custom names when you reflect your events to the behavior context.
 
 If you do not specify names for the parameters, they are given default display names like "1", "2", or "3", as in the following image:
 
-![Default parameter names displayed](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-parameter-names-1.png)
+![Default parameter names displayed](/images/user-guide/scripting/script-canvas/behavior-context-displaying-parameter-names-1.png)
 
 The following code produced the event node in the image:
 
 ```cpp
-if (auto behaviorContext =
-    azrtti_cast < AZ::BehaviorContext * >(reflectContext))
+if (auto behaviorContext = azrtti_cast <AZ::BehaviorContext*>(reflectContext))
 {
-    behaviorContext->EBus < MyBus > ("MyBus")
-      // This is the category that appears in the Node Palette window
-      ->Attribute (AZ::Script::Attributes::Category,
-           "Rendering")->Event ("SomeEvent",
-                &MyBus::Events::SomeEvent);
+    behaviorContext->EBus<MyBus>("MyBus")
+        // This is the category that appears in the Node Palette window.
+        ->Attribute (AZ::Script::Attributes::Category, "Rendering")
+        ->Event ("SomeEvent", &MyBus::Events::SomeEvent);
 }
 ```
 
-The following version of the same code adds the parameter names `FirstParam` and `SecondParam` and corresponding tooltip text to the `Event` function:
+An improved version of the same code adds the parameter names `FirstParam` and `SecondParam` and corresponding tooltip text to the `Event` function:
 
 ```cpp
 if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(reflectContext))
 {
     behaviorContext->EBus<MyBus>("MyBus")
-        // This is the category that appears in the Node Palette window
+        // This is the category that appears in the Node Palette window.
         ->Attribute(AZ::Script::Attributes::Category, "Rendering")
-        ->Event("SomeEvent", &MyBus::Events::SomeEvent, { { { "FirstParam" , "First Param Tooltip" }, { "SecondParam", "Second Param Tooltip" } } });
+        ->Event("SomeEvent", &MyBus::Events::SomeEvent, {{{ "FirstParam" , "First Param Tooltip" }, { "SecondParam", "Second Param Tooltip" }}});
 }
 ```
 
 In the node palette window, the parameter names appear as specified:
 
-![Specified parameter names displayed](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-parameter-names-2.png)
+![Specified parameter names displayed](/images/user-guide/scripting/script-canvas/behavior-context-displaying-parameter-names-2.png)
 
-**Alternate Syntax**
-You can also use the following alternate syntax to create parameter override instances before passing them to the `Event` function:
+### Alternate syntax
+
+You can also use the alternate syntax `AZ::BehaviorParameterOverrides` to create parameter override instances before passing them to the `Event` function.
 
 ```cpp
 if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(reflectContext))
@@ -350,11 +344,11 @@ if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(reflectContext))
     behaviorContext->EBus<MyBus>("MyBus")
         // This is the category that appears in the Node Palette window
         ->Attribute(AZ::Script::Attributes::Category, "Rendering")
-        ->Event("SomeEvent", &MyBus::Events::SomeEvent, { {someEventParam1, someEventParam2} });
+        ->Event("SomeEvent", &MyBus::Events::SomeEvent, {{ someEventParam1, someEventParam2 }});
 }
 ```
 
-## Common programming problems
+## Common behavior context problems
 
 The following are some common problems that occur when programming with Script Canvas and the behavior context.
 
