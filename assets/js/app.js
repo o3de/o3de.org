@@ -161,11 +161,17 @@ $(function() {
   });
 });
 
-// Detect anchor links in Table Of Contents, add correct offset and scroll behavior.
+// Detect anchor links, add correct offset and scroll behavior.
 $(function() {
   var scrollOffset = $(".main-navbar").height() + 32;
 
-  $("#TableOfContents a[href^=\\#]").click(function(e) {
+  $("a[href^=\\#]").click(function(e) {
+    // Don't apply behavior to tabs
+    if($(this).data("toggle") == "tab")
+    {
+      return;
+    }
+
     var dest = $(this).attr('href');
     if(dest != "" && $(dest).length > 0)
     {
