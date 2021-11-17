@@ -133,7 +133,7 @@ bool LightComponent::TurnOnLight()
     bool success = m_light.TurnOn();
     if (success)
     {
-        EBUS_EVENT_ID(GetEntityId(), LightComponentNotificationBus, LightTurnedOn);
+        LightComponentNotificationBus::Event(GetEntityId(), &LightComponentNotifications::LightTurnedOn);
     }
     return success;
 }
@@ -143,7 +143,7 @@ bool LightComponent::TurnOffLight()
     bool success = m_light.TurnOff();
     if (success)
     {
-        EBUS_EVENT_ID(GetEntityId(), LightComponentNotificationBus, LightTurnedOff);
+        LightComponentNotificationBus::Event(GetEntityId(), &LightComponentNotifications::LightTurnedOff);
     }
     return success;
 }
@@ -168,13 +168,13 @@ if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(con
 {
     behaviorContext->EBus<LightComponentRequestBus>("Light", "LightComponentRequestBus")
         ->Attribute(AZ::Script::Attributes::Category, "Rendering")
-        ->Event("TurnOn", &LightComponentRequestBus::Events::TurnOnLight, "TurnOnLight")
-        ->Event("TurnOff", &LightComponentRequestBus::Events::TurnOffLight, "TurnOffLight")
-        ->Event("Toggle", &LightComponentRequestBus::Events::ToggleLight, "ToggleLight");
+        ->Event("TurnOn", &LightComponentRequestBus::Events::TurnOnLight)
+        ->Event("TurnOff", &LightComponentRequestBus::Events::TurnOffLight)
+        ->Event("Toggle", &LightComponentRequestBus::Events::ToggleLight);
 }
 ```
 
-When Script Canvas examines the behavior context, it finds these events and automatically generates the corresponding nodes for you.
+When Script Canvas examines the behavior context, it finds these events and automatically generates the corresponding nodes.
 
 ![Light component nodes in Script Canvas](/images/user-guide/scripting/script-canvas/behavior-context-ebus-request-light-nodes.png)
 
@@ -193,11 +193,11 @@ Script Canvas nodes should include a helpful tooltip for every parameter. For ex
 void SetLightState(State state);
 ```
 
-You should add a tooltip in the behavior context reflection to describe the parameter. In this example, the tooltip will show "1=On, 0=Off" when a user hovers over the `State` parameter on the node.
+You should add a tooltip in the behavior context reflection to describe the parameter. In this example, the tooltip will show "1=On, 0=Off" when a user hovers over the `State` parameter on the `SetState` node.
 
 ```cpp
     behaviorContext->EBus<LightComponentRequestBus>("Light", "LightComponentRequestBus")
-        ->Event("SetState", &LightComponentRequestBus::Events::SetLightState, "SetLightState", {{{"State", "1=On, 0=Off"}}});
+        ->Event("SetState", &LightComponentRequestBus::Events::SetLightState, {{{"State", "1=On, 0=Off"}}});
 ```
 
 ### Notification bus
