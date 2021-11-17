@@ -55,7 +55,7 @@ The mapping file also supports one _optional_ and two **required** global attrib
 This mapping file has a single mapping: **MyKey**, which is a Lambda function called "ExampleLambda". It is deployed in us-west-2 in the AWS account with account ID "123456789123".
 
 {{< important >}}
-Your AWS account ID should not be included in builds running on untrusted clients.
+We strongly recommend against including your AWS account ID in builds distributed to untrusted environments. Depending on your use case, anonymous [client authentication](https://o3de.org/docs/user-guide/gems/reference/aws/aws-client-auth/) or the use of [custom domains](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html) may provide ways of interacting with your AWS resources without needing to specify an account ID.
 {{< /important >}}
 
 ## Generating a resource mappings file
