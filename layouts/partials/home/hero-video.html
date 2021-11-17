@@ -1,0 +1,32 @@
+{{ $title := site.Title }}
+{{ $desc  := site.Params.description | markdownify }}
+{{ $source := site.Params.sourceRepo }}
+<div class="hero-video-block scalable d-flex flex-column align-items-center justify-content-around">
+  <div class="hero-video-background">
+    <div class="hero-video-container">
+      <iframe src="https://www.youtube.com/embed/6ccjR9qI5YU?controls=0&autoplay=1&mute=1&modestbranding=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; loop; picture-in-picture"></iframe>
+    </div>
+  </div>
+  <div class="container hero-slideshow-foreground">
+    <div class="row">
+      <div class="col col-12 col-md-7 pb-4 pt-4">
+          <h1 class="title">
+            {{ $title }}
+          </h1>
+          <h4 class="title mt-0">
+            An open-source, real-time 3D development engine
+          </h4>
+
+          {{ with $desc }}
+          <p class="desc mt-5">
+            {{ . }}
+          </p>
+          {{ end }}
+
+          <p class="buttons">
+            <a href="/download" class="mt-4 btn btn-lg text-white download-cta">Download O3DE</a>
+          </p>
+        </div>
+      </div>
+    </div>
+</div>

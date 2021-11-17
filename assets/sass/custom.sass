@@ -589,6 +589,56 @@ $width: '59vw';
     width: 100%
     margin-top: 0 !important
 
+// Home Video
+
+.hero-video-block
+  position: relative
+
+.hero-video-background
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  overflow: hidden
+  
+  &::after
+    content: ""
+    position: absolute
+    background: rgba(0,0,0,.6)
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+  
+  .hero-video-container
+    width: 100%
+    padding-bottom: 100%
+    position: absolute
+    top: 50%
+    transform: translate(0, -50%)
+    -webkit-transform: translate(0, -50%)
+
+    @include media-breakpoint-down(md)
+      left: 50%
+      width: 300%
+      height: 200%
+      padding-bottom: 0
+      transform: translate(-50%, -50%)
+      -webkit-transform: translate(-50%, -50%)
+
+    iframe
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+
+.hero-slideshow-foreground
+  color: $o3de-white
+
 
 // layouts/partial/download/hero.html
 
