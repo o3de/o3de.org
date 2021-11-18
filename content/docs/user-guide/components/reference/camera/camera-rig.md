@@ -82,7 +82,7 @@ Use **Rotate Camera Target** to rotate the camera target separately from its sou
 | **Invert Axis** | If enabled, inverts the **Axis Of Rotation**. | Boolean | `Disabled` |
 | **Rotation Speed Scale** | Multiplier for Input Event values used to scale the speed of rotation. | 0.001 to Infinity | `1.0` |
 
-For more information about Input Events, refer to [Working with the Input component](/docs/user-guide/interactivity/input/working-with-the-input-component).
+For more information about Input Events, refer to [Working with the Input component](/docs/user-guide/interactivity/input/using-player-input).
 
 {{% /tab %}}
 {{% tab name="Slide Along Axis Based On Angle" %}}
@@ -132,7 +132,7 @@ Use **SlideAlongAxisBasedOnAngle** to modify the position of the look-at target 
 | **Zoom Out Event Name** | Input Event name that increases the current follow distance, in effect, zooming out. | String | None |
 | **Zoom Speed Scale** | Multiplier for Input Event values used to scale the speed of zooming. | -Infinity to Infinity | `1.0` |
 
-For more information about Input Events, refer to [Working with the Input component](/docs/user-guide/interactivity/input/working-with-the-input-component).
+For more information about Input Events, refer to [Working with the Input component](/docs/user-guide/interactivity/input/using-player-input).
 
 {{% /tab %}}
 {{% tab name="Rotate" %}}
