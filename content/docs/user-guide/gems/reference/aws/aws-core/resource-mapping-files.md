@@ -32,7 +32,7 @@ Each entry defines a lookup name - a logical name for the resource - and a colle
 
 The mapping file also supports one _optional_ and two **required** global attributes:
 
-* AccountId (optional) - The default AWS account containing resources in this mapping file.
+* AccountId (optional) - The default AWS account that is used to search for AWS resources referenced in your O3DE application code.
 * Region - The default region to use with this mapping file.
 * Version - The json schema version of this document.
 
