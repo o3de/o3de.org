@@ -4,9 +4,9 @@ title: AZSL, Binding Rules For Unbounded Arrays
 description: There are limitations into how many and what kind of Unbounded Arrays can be declared. 
 weight: 100
 ---
-AZSL supports declaration of Unbounded Arrays inside ShaderResourceGroups, but there are limitations into how many and what kind of Unbounded Arrays can be declared. The shader compiler, AZSLc, makes sure those rules are not violated.  
+AZSL supports declaration of Unbounded Arrays inside `ShaderResourceGroup`s, but there are limitations into how many and what kind of Unbounded Arrays can be declared. The shader compiler, **AZSLc**, makes sure those rules are not violated.  
   
-Here is a summary of the rules and limitations per platform (DX12, Vulkan and Metal). '--use-spaces' and '--unique-idx' are command line arguments for AZSLc that are used for each platform.  
+Here is a summary of the rules and limitations per platform (DX12, Vulkan and Metal). '--use-spaces' and '--unique-idx' are command line arguments for **AZSLc** that are used for each platform.  
 | --use-spaces   | --unique-idx | platform | Results |
 |----------------|--------------|----------|---------|
 | OFF | OFF |                   | Only the last SRG can contain one last unbounded array for each:<br> t[], u[], b[], s[]|
@@ -16,8 +16,8 @@ Here is a summary of the rules and limitations per platform (DX12, Vulkan and Me
   
 ## Things to know before going over some examples:
 * "Register Space" in HLSL is the same as "Descriptor Set" in Vulkan.
-* When "--use-spaces" is used, AZSLc will assign a unique Register Space per SRG.
-* When "--unique-idx" is used, AZSLc will emit all resource descriptors in a Register Space to be in numerical sequence, regardless of the descriptor type. Platforms like Vulkan and Metal require this.
+* When "--use-spaces" is used, **AZSLc** will assign a unique Register Space per SRG.
+* When "--unique-idx" is used, **AZSLc** will emit all resource descriptors in a Register Space to be in numerical sequence, regardless of the descriptor type. Platforms like Vulkan and Metal require this.
 * Unbounded arrays take over the whole range of register indices from the point they are being declared. This means two things:
     1. It is possible to declare any kind of resources or any amount of bounded arrays of resources, BEFORE any given Unbounded Array of a particular kind.
     2. Any resource declared AFTER an Unbounded Array will be considered an error.
@@ -53,9 +53,9 @@ In this example there's only one SRG, and no unbounded arrays yet. It is useful 
     };
   
 ### Example 2: (Error case)
-This example is based on Example 1, but this time We are trying to introduce the first Unbounded Array: 'Texture2D<float4> m_texSRV_unbounded[]'.  
+This example is based on Example 1, but this time We are trying to introduce the first Unbounded Array: `Texture2D<float4> m_texSRV_unbounded[]`.  
 This example will fail to compile because, as mentioned before, an Unbounded Array takes over the whole register starting from their index of declaration.  
-In this example, m_texSRV_unbounded, is the first texture SRV so it will start at t0, and take over the rest of the indices until tN. Any other texture SRV declared afterwards won't find a register index to bind to.  
+In this example, `m_texSRV_unbounded`, is the first texture SRV so it will start at **t0**, and take over the rest of the indices until **tN**. Any other texture SRV declared afterwards won't find a register index to bind to.  
   
     ShaderResourceGroupSemantic slot1
     {
@@ -83,7 +83,7 @@ In this example, m_texSRV_unbounded, is the first texture SRV so it will start a
     };
   
 ### Example 3: (Error case)
-This error case is very similar to Example 2, but 'm_texSRV_unbounded' is declared after 'm_texSRV1', but before 'm_texSRV2'.  
+This error case is very similar to Example 2, but `m_texSRV_unbounded` is declared after `m_texSRV1`, but before `m_texSRV2`.  
   
     ShaderResourceGroupSemantic slot1
     {
@@ -111,7 +111,7 @@ This error case is very similar to Example 2, but 'm_texSRV_unbounded' is declar
     };
   
 ### Example 4:
-This case fixes the issues in Example 3. By moving the point of declaration of 'm_texSRV_unbounded[]' after 'm_texSRV2' there are no more register assignment conflicts.  
+This case fixes the issues in Example 3. By moving the point of declaration of `m_texSRV_unbounded[]` after `m_texSRV2` there are no more register assignment conflicts.  
   
     ShaderResourceGroupSemantic slot1
     {
@@ -225,8 +225,8 @@ Same code as Example 1, but it is assumed to be compiled with '--unique-idx' (ON
     };
   
 ### Example 8: Fix for Example 7.
-The solution to Example 7, is to move the declaration of 'm_texSRV_unbounded' to the end of 'SRG1', basically after 'm_cb2'.  
-Alternatively, you could create a second SRG2, and move the declaration of 'm_texSRV_unbounded' to SRG2 (As the last resource in SRG2, in case there are more resources in SRG2.)  
+The solution to Example 7, is to move the declaration of `m_texSRV_unbounded` to the end of `SRG1`, basically after `m_cb2`.  
+Alternatively, you could create a second `SRG2`, and move the declaration of `m_texSRV_unbounded` to `SRG2` (As the last resource in `SRG2`, in case there are more resources in `SRG2`.)  
   
     ShaderResourceGroupSemantic slot1
     {

@@ -5,7 +5,7 @@ description: Learn about AZSL Shader Resource Group Semantics in the Atom Render
 weight: 100
 ---
 
-The ShaderResourceGroupSemantic, SRG Semantic, for short, defines the order in which descriptor bindings and descriptor sets (descriptor sets are also known as register spaces in HLSL) are emitted for each ShaderResourceGroup.  
+The `ShaderResourceGroupSemantic`, SRG Semantic, for short, defines the order in which descriptor bindings and descriptor sets (descriptor sets are also known as register spaces in HLSL) are emitted for each `ShaderResourceGroup`.  
   
     ShaderResourceGroupSemantic <name>
     {
@@ -13,22 +13,22 @@ The ShaderResourceGroupSemantic, SRG Semantic, for short, defines the order in w
         [ShaderVariantFallback = <number of bits>;] // (Optional)
     }
   
-Conceptually, an SRG Semantic relates to the frequency of change of SRG data. In particular, Atom has a predefined set of SRG Semantics in "&lt;Engine Root&gt;/Gems/Atom/Feature/Common/Assets/ShaderLib/Atom/Features/SrgSemantics.azsli".  
+Conceptually, an SRG Semantic relates to the frequency of change of SRG data. In particular, the render pipeline has a predefined set of SRG Semantics in "&lt;Engine Root&gt;/Gems/Atom/Feature/Common/Assets/ShaderLib/Atom/Features/SrgSemantics.azsli".  
 https://github.com/o3de/o3de/blob/main/Gems/Atom/Feature/Common/Assets/ShaderLib/Atom/Features/SrgSemantics.azsli  
   
-    SRG_PerDraw: Data changes per draw packet. Highest frequency.
-    SRG_PerObject: Data changes per object.
-    SRG_PerMaterial: Data changes per material.
-    SRG_PerSubPass: Data changes per sub-pass.
-    SRG_PerPass: Data changes per pass.
-    SRG_PerPass_WithFallback: Same as SRG_PerPass, but used for cases where the Pass SRG defines the Fallback key.
-    SRG_PerView: Data changes per viewport, because each viewport has its own camera.
-    SRG_PerScene: Data changes per scene. Lowest frequency.
-    SRG_RayTracingGlobal: Reserved for ray tracing shaders.
-    SRG_RayTracingLocal_[1..7]: Reserved for ray tracing shaders.
+* `SRG_PerDraw`: Data changes per draw packet. Highest frequency.
+* `SRG_PerObject`: Data changes per object.
+* `SRG_PerMaterial`: Data changes per material.
+* `SRG_PerSubPass`: Data changes per sub-pass.
+* `SRG_PerPass`: Data changes per pass.
+* `SRG_PerPass_WithFallback`: Same as SRG_PerPass, but used for cases where the Pass SRG defines the Fallback key.
+* `SRG_PerView`: Data changes per viewport, because each viewport has its own camera.
+* `SRG_PerScene`: Data changes per scene. Lowest frequency.
+* `SRG_RayTracingGlobal`: Reserved for ray tracing shaders.
+* `SRG_RayTracingLocal_[1..7]`: Reserved for ray tracing shaders.
   
 ## FrequencyId: Defining the order of emission and register space utilization.
-With the value of **FrequencyId** we can define in what order we utilize the register space when compiling ShaderResourceGroups.  
+With the value of `FrequencyId` we can define in what order we utilize the register space when compiling SRGs.  
 Consider the following SRG definitions:  
   
     ShaderResourceGroupSemantic SRG_PerDraw
@@ -96,9 +96,9 @@ When compiling the AZSL code shown above, with default arguments, it will yield 
     ConstantBuffer<::DrawSrg_SRGConstantsStruct> DrawSrg_SRGConstantBuffer : register(b0);
     
   
-In the compiled output above, you can see that both SRGs share the same register space (space0, implicit), aka the same descriptor set. And of particular importance, please note how the register binding for "DrawSrg" starts at 0, while the resources for "ObjectSrg" start at 1. This ordering was determined by the FrequencyId member of the SRG Semantics.  
+In the compiled output above, you can see that both SRGs share the same register space (space0, implicit), aka the same descriptor set. And of particular importance, please note how the register binding for `DrawSrg` starts at 0, while the resources for `ObjectSrg` start at 1. This ordering was determined by the `FrequencyId` member of the SRG Semantics.  
   
-Let's see what happens when **--use-spaces** is passed as the command line argument for AZSLc:  
+Let's see what happens when *--use-spaces* is passed as the command line argument for **AZSLc**:  
 --use-spaces: Each SRG will be assigned its own register space, ordered by the FrequencyId of the SRG Semantics.  
   
     /* Generated code from
@@ -134,11 +134,11 @@ Let's see what happens when **--use-spaces** is passed as the command line argum
     ConstantBuffer<::DrawSrg_SRGConstantsStruct> DrawSrg_SRGConstantBuffer : register(b0, space0);
     
   
-In the compiled output above, you can see that both SRGs start the register bindings at index 0, but all resources of "DrawSrg" are assigned to space0, while the resources for "ObjectSrg" start at space1. This ordering was determined by the FrequencyId member of the SRG Semantics.  
+In the compiled output above, you can see that both SRGs start the register bindings at index 0, but all resources of `DrawSrg` are assigned to `space0`, while the resources for `ObjectSrg` start at `space1`. This ordering was determined by the `FrequencyId` member of the SRG Semantics.  
   
   
-Some platforms, like Vulkan & Metal, require all registers to be bound in sequence across all resource types for a given register space (descriptor set). To accommodate for this case, AZSLc accepts the command line argument **--unique-idx**.  
-This is the output of the same AZSL file when compiler with **--unique-idx**, and using a single register space.  
+Some platforms, like Vulkan & Metal, require all registers to be bound in sequence across all resource types for a given register space (descriptor set). To accommodate for this case, **AZSLc** accepts the command line argument *--unique-idx*.  
+This is the output of the same AZSL file when compiled with *--unique-idx*, and using a single register space.  
   
     /* Generated code from
     ShaderResourceGroup ObjectSrg
@@ -173,10 +173,10 @@ This is the output of the same AZSL file when compiler with **--unique-idx**, an
     ConstantBuffer<::DrawSrg_SRGConstantsStruct> DrawSrg_SRGConstantBuffer : register(b3);
     
   
-Note how all registers associated with "DrawSrg" start at index 0, while the registers bound to "ObjectSrg" start at     index 4. Again, the reason the "DrawSrg" register indices start before "ObjectSrg" is because the FrequencyId of the SRG  Semantic "SRG_PerDraw" is 0, while the the FrequencyId of the SRG Semantic "SRG_PerObject" is 1.  
+Note how all registers associated with `DrawSrg` start at index 0, while the registers bound to `ObjectSrg` start at index 4. Again, the reason the `DrawSrg` register indices start before `ObjectSrg` is because the `FrequencyId` of the SRG Semantic `SRG_PerDraw` is 0, while the `FrequencyId` of the SRG Semantic `SRG_PerObject` is 1.  
   
   
-Finally, if we compile to use a register space per SRG, with **--use-spaces**, but with **--unique-idx** this will be the output HLSL code:  
+Finally, if we compile to use a register space per SRG, with *--use-spaces*, and with *--unique-idx* this will be the output HLSL code:  
   
     /* Generated code from
     ShaderResourceGroup ObjectSrg
@@ -211,11 +211,11 @@ Finally, if we compile to use a register space per SRG, with **--use-spaces**, b
     ConstantBuffer<::DrawSrg_SRGConstantsStruct> DrawSrg_SRGConstantBuffer : register(b3, space0);
     
   
-Note, for each register space, in this case, each SRG, all registers start at 0, BUT resources that belong to "DrawSrg" are bound to register space 0, while resources that belong to "ObjectSrg" are bound to space 1. This ordering of register spaces was determined by the FrequencyId member of the SRG Semantics.  
+Note, for each register space, in this case, each SRG, all registers start at 0, BUT resources that belong to `DrawSrg` are bound to register space 0, while resources that belong to `ObjectSrg` are bound to space 1. This ordering of register spaces was determined by the `FrequencyId` member of the SRG Semantics.  
   
 ## ShaderVariantFallback: Defining Who Owns The Bit Array Of Options
-**ShaderVariantFallback** is an optional keyword that marks an SRG as the owner of the array of bits where all Shader Variants will be encoded.  
-Because there can only be one array of bits to encode the Shader Variant Options, only one SRG can bind to an SRGSemantic that uses the ShaderVariantFallback keyword.  
-If a shader makes no use of Shader Variant Options, then the ShaderVariantFallback is not required to be used.  
+`ShaderVariantFallback` is an optional keyword that marks an SRG as the owner of the array of bits where all Shader Variants will be encoded.  
+Because there can only be one array of bits to encode the Shader Variant Options, only one SRG can bind to an SRG Semantic that uses the `ShaderVariantFallback` keyword.  
+If a shader makes no use of Shader Variant Options, then the `ShaderVariantFallback` is not required to be used.  
   
-For a deeper dive into Shader Variant Options encoding see: [Shader Variant Options & The Fallback Key](shader-variants-fallback-key.md).
+For a deeper dive into Shader Variant Options encoding see: [Shader Variant Options & The Fallback Key](shader-variants-fallback-key).
