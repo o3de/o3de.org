@@ -11,4 +11,4 @@ The Scene Processing Gem provides **FBX Settings** to specify the default settin
 The Scene Processing Gem is required and enabled by default for O3DE projects.
 {{< /note >}}
 
-For information about working with file types and settings, see [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/).
+For information about working with file types and settings, see [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/scene-settings/).
