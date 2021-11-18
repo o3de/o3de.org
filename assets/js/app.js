@@ -212,7 +212,7 @@ $(function()
 
       setTimeout(function() {
         setupSlides(nextIndex);
-      }, 10000);
+      }, 7000);
     }
 
     setupSlides(0);
