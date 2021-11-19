@@ -153,11 +153,11 @@ We suggest that your learning path looks like this:
 
 Here is a basic set of O3DE tools and technologies to focus on:
 *  [O3DE Editor](/docs/user-guide/editor/)
-*  [Programming Concepts](/docs/user-guide/engine/intro/)
+*  [Programming Concepts](/docs/user-guide/programming/intro/)
 *  [Gems](/docs/user-guide/gems/)
 *  [Component Entity System](/docs/user-guide/components/)
 *  [Component Reference](/docs/user-guide/components/reference/)
-*  [Programmer's Guide to Entities and Components](/docs/user-guide/components/development/)
+*  [Programmer's Guide to Entities and Components](/docs/user-guide/programming/components/)
 *  [Animation Editor](/docs/user-guide/visualization/animation/animation-editor/)
 *  [Script Canvas](/docs/user-guide/scripting/script-canvas/)
 *  [Lua Editor](/docs/user-guide/scripting/lua/)
