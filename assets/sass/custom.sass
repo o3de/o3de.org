@@ -608,7 +608,6 @@ $width: '59vw';
     h5
       font-size: .8rem
 
-
 .getting-started
   background: #111
 
@@ -1003,6 +1002,42 @@ $width: '59vw';
     
     @include media-breakpoint-down(sm)
       padding-bottom: 14rem
+
+.home-getstarted.card-stack
+  a.card
+    @include media-breakpoint-down(md)
+      min-height: 8rem
+      
+    .card-body
+      padding: 1rem
+      font-size: 14px
+
+      .card-title
+        margin-bottom: 0.5rem
+
+      @include media-breakpoint-down(md)
+        padding: 1.25rem 1rem 0
+        text-align: left
+        
+        h5
+          font-size: 1rem
+          margin-bottom: .5rem
+        
+        font-size: .9rem
+        
+      @include media-breakpoint-up(lg)
+        min-height: 220px
+
+        .learn-more
+          position: absolute
+          bottom: 0
+      
+    .card-image
+      @include media-breakpoint-down(md)
+        padding-bottom: 8rem
+      
+      @include media-breakpoint-down(sm)
+        display: none
 
 // layouts/contribute/section.html 
 
