@@ -17,7 +17,8 @@ You can modify the engine settings registry file for **Asset Processor** in `Reg
 Asset Processor automatically builds assets for the host platform. For example, if Asset Processor is running on Windows, Asset Processor builds Windows assets even if pc is not enabled in the `.setreg` file.
     {{< /note >}}
 
-* Add additional scan directories for Asset Processor.
+* Add scan directories for Asset Processor.
+
 * Set the number of process jobs.
 * Specify *metafile fingerprinting*, that is, which files trigger related files to be rebuilt.
 

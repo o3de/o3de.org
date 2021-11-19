@@ -103,7 +103,8 @@ You can perform actions on each row in the Asset Status table. **Right-click** o
 
 ### Event Log Details
 
-The Event Log Details table displays asset processing information for the asset selected the Asset Status table. This table provides an activity log that shows how the asset was processed and any errors or warnings generated during processing.
+The Event Log Details table displays asset processing information for the asset selected in the Asset Status table. This table provides an activity log that shows how the asset was processed and any errors or warnings generated during processing.
+
 
 The **Status** column displays icons for the following message types:
 
@@ -177,9 +178,12 @@ When an asset is selected in the Product Assets list, information about the asse
 | Pane | Description |
 | - | - |
 | **Asset Information** | Information for the product asset including the asset UUID, the last time the product was generated, the type of job that generated the asset, which platform the asset was produced for, and which source asset is the primary input for the product. |
-| **Outgoing Product Dependencies** | The list of product assets which depend on this product asset. |
-| **Outgoing Unmet Path Product Dependencies**<sup>1</sup> | The list of product assets which are hardcoded paths to be loaded by the O3DE runtime. |
-| **Incoming Product Dependencies** | The list of product assets which this product asset depends on. |
+| **Outgoing Product Dependencies** | The list of product assets that depend on this product asset. |
+
+| **Outgoing Unmet Path Product Dependencies**<sup>1</sup> | The list of product assets that are hardcoded paths to be loaded by the O3DE runtime. |
+
+| **Incoming Product Dependencies** | The list of product assets that this product asset depends on. |
+
 | **Missing Product Dependencies** | Detect missing product dependencies. |
 
 {{< note >}}
@@ -188,7 +192,8 @@ When an asset is selected in the Product Assets list, information about the asse
 
 ## Logs
 
-The Logs tab displays logs for Asset Processor itself, not for process jobs. If you are having issues with a specific process job, start debugging with the the logs for the job found in the Jobs tab. The type of errors displayed in the Logs tab are often related issues with managing the process jobs, maintaining the Asset Cache, and writing log information for process jobs. 
+The Logs tab displays logs for Asset Processor itself, not for process jobs. If you are having issues with a specific process job, start debugging with the logs for the job found in the Jobs tab. The type of errors displayed in the Logs tab are often related issues with managing the process jobs, maintaining the Asset Cache, and writing log information for process jobs. 
+
 
 The Logs tab has a single pane with three default tabs that display **Debug**, **Messages**, or **Warnings/Errors Only**. You can also add custom tabs to display any combination of information.
 
