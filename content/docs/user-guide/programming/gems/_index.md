@@ -2,7 +2,7 @@
 linkTitle: Gem Development
 title: Programmer's Guide to Gem Development
 description: Learn how to create your own Gems in Open 3D Engine (O3DE).
-weight: 200
+weight: 120
 ---
 
 ## Topics
