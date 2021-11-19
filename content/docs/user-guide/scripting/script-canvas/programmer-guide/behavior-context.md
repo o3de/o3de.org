@@ -102,7 +102,7 @@ The result contains some helpful categorization and parameter information for us
 
 The ability to bind an EBus to the behavior context enables scripting to become driven and modular. The two main use cases for reflecting EBuses to the behavior context are _event handlers_ and _events_.
 
-Events are typically defined in code as part of a `RequestBus`, and are generally handled by some code system such as a component. Event handlers are typically defined as part of a `NotificationBus`.
+Events are typically defined in code as part of a request bus, and are generally handled by some code system such as a component. Event handlers are typically defined as part of a notification bus.
 
 In this example, we'll take a look at a basic **Light** component. The example shows how its behavior context reflection translates into Script Canvas nodes.
 
@@ -182,7 +182,7 @@ When Script Canvas examines the behavior context, it finds these events and auto
 
 EBuses communicate with an entity's components. To do this, it needs an address. All component EBuses derive from `AZ::ComponentBus`, which is addressable by an ID of the type `AZ::EntityId`. For this reason, all nodes from a component EBus have a data pin for an **EntityID**. The presence of `Self` in the **EntityID** pin refers to the `AZ::EntityID` of the entity that owns the Script Canvas graph. However, this ID can be assigned to another entity, or even changed to an invalid ID.
 
-![Self EntityID](/images/user-guide/scripting/script-canvas/behavior-context-ebus-request-entityID.png)
+![Self EntityID data pin](/images/user-guide/scripting/script-canvas/behavior-context-ebus-request-entityID.png)
 
 #### Tooltips
 
@@ -204,7 +204,7 @@ You should add a tooltip in the behavior context reflection to describe the para
 
 A notification bus is an EBus that enables the use of *event handlers*. Event handlers in a component can respond to the events that are sent to the component. You can reflect event handlers to the behavior context to make them available to scripting environments such as Script Canvas.
 
-Our Light component example handles the TurnOn, TurnOff, and Toggle events using the following C++ event handler methods on the `LightComponentNotificationBus`:
+Our Light component example handles the `TurnOn`, `TurnOff`, and `Toggle` events from the request bus using the following C++ event handler methods on the `LightComponentNotificationBus`:
 
 ```cpp
 class LightComponentNotifications
@@ -260,17 +260,17 @@ if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(con
 }
 ```
 
-Once compiled, these event handlers are available to Script Canvas from the `LightNotification` node.
+Once compiled, these event handlers are available to Script Canvas from the **LightNotification** node.
 
 ![Light notification node](/images/user-guide/scripting/script-canvas/behavior-context-ebus-light-notification-node.png)
 
 ## Example: Data types
 
-To make a custom data type available for use as a variable in Script Canvas, you can reflect it using the behavior context's Class builder. The new type is also available to pass as a parameter to functions and events.
+To make a custom data type available for use as a variable in Script Canvas, you can reflect it using the behavior context's `Class` builder. The new type is also available to pass as a parameter to functions and events.
 
 This example uses the `BoxShapeConfig` class as an example. This class is defined in the file `Gems\LmbrCentral\Code\include\LmbrCentral\Shape\BoxShapeComponentBus.h` and reflected in `Gems\LmbrCentral\Code\Source\Shape\BoxShapeComponent.cpp`.
 
-A data type must be reflected to both the `SerializeContext` and the `BehaviorContext`. The serialization context enables the data type to be stored and read from a file, and the behavior context allows it to be bound to the scripting system.
+A data type must be reflected to both the serialization context and the behavior context. The serialization context enables the data type to be stored and read from a file, and the behavior context allows it to be bound to the scripting system.
 
 ```cpp
 void BoxShapeConfig::Reflect(AZ::ReflectContext* context)
