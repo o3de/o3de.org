@@ -260,6 +260,23 @@ code
   &:hover
     border: 2px solid  $o3de-blue
 
+// additional button definitions
+
+.btn-primary
+  background: linear-gradient(0deg, #1E70EB 0%, #0095F2 100%);
+  border-color: #0095F2
+  
+  &:hover 
+    background: darken(#1E70EB, 10%)
+
+.btn-green
+  color: #fff
+  background: linear-gradient(0deg, #008525 0%, #00A62E 100%);
+  border-color: #00A62E
+    
+  &:hover 
+    background: darken(#008525, 10%)
+
 // layouts/partials/navbar.html 
 
 .main-navbar 
@@ -432,7 +449,6 @@ a.top-banner
   position: relative
   z-index: 1
   
-  
   &:hover 
     background-color: darken(#1E71EB, 10%)
 
@@ -598,15 +614,82 @@ $width: '59vw';
   background-position: 50% 50%
   max-height: 20rem
 
+  h4
+    max-width: 800px
+    font-weight: 300
+    margin: 2.5% auto 0
+    line-height: 2.5rem
+
   @include media-breakpoint-down(md)
     h1
       font-size: 1.8rem
       
     h4
       font-size: 1.25rem
+
       
     h5
       font-size: .8rem
+
+
+$os-selector-height: 72px
+$os-selector-mobile-height: 48px
+
+.os-selector
+  overflow: visible
+  height: $os-selector-height / 2
+  
+  @include media-breakpoint-down(md)
+    height: $os-selector-mobile-height
+
+.os-selector-row
+  text-align: center
+  height: $os-selector-height
+  transform: translate(0, -50%)
+  -webkit-transform: translate(0, -50%)
+  
+  @include media-breakpoint-down(md)
+    height: $os-selector-mobile-height
+
+.os-selector-button
+  color: #000000
+  background-color: #EEEEEE
+  border-radius: 0 
+  cursor: pointer
+  width: 320px
+  margin: 0 8px
+  display: inline-block
+  height: 100%
+  line-height: $os-selector-height
+  font-size: 1.25rem
+  box-shadow: 0px 2px 4px 0px #0000001A;
+
+  &:hover
+    color: #000000
+    background-color: #E8E8E8
+
+  &.active
+    background-color: #FFFFFF
+    border-bottom: 3px solid #1E70EB
+    
+  @include media-breakpoint-down(md)
+    width: 128px
+    height: $os-selector-mobile-height
+    line-height: $os-selector-mobile-height
+
+.os-content
+  display: none
+
+.os-content.active
+  display: block
+
+.download_notes
+  font-size: .85rem
+  line-height: 1.4rem
+  margin: 0.8rem 0
+
+  @include media-breakpoint-up(lg)
+    max-width: 70%
 
 
 .getting-started
