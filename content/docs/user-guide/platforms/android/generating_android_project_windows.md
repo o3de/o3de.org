@@ -25,7 +25,7 @@ The following instructions assume that you have:
 9.  [Atom Sample Viewer](https://github.com/o3de/o3de-atom-sampleviewer.git) has been cloned locally on the system (to D:\\github\\o3de-atom-sampleviewer)
 
 {{< note >}}
-This example workflow represents the 'Source Engine' workflow when setting up [O3DE from GitHub](docs/welcome-guide/setup/setup-from-github)
+This example workflow represents the 'Source Engine' workflow when setting up [O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github)
 {{< /note >}}
 
 

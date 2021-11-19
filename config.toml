@@ -48,6 +48,11 @@ name = "O3DE Twitter"
 url = "https://twitter.com/o3dengine"
 icon = "fab fa-twitter"
 
+[[params.social]]
+name = "O3DE YouTube"
+url = "https://www.youtube.com/channel/UCTC8GDw1XidOTUBEFRbN-sA"
+icon = "fab fa-youtube"
+
 [[params.fonts]]
 name = "Open Sans"
 sizes = [300, 400, 600, 700]

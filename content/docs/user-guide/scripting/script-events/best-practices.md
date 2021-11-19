@@ -11,7 +11,7 @@ The following are some best practices for using script events in **Open 3D Engin
 
 Sending events during entity activation can have undesired results. Because the order of activation of entities is not guaranteed, when an event is sent during activation, some entities that need to handle the event might not receive it. In particular, the **On Graph Start** and **On Entity Activated** events are subject to activation order issues.
 
-To ensure that all entities that need to listen for and handle a given script event are ready to receive the event, queue the message on the [tick bus](/docs/user-guide/components/development/tick). One way to implement this strategy in Script Canvas is to connect the **On Graph Start** node to a **Tick Delay** node. The delay helps to ensure that when a script event message is sent, all entities that could possibly be connected to that script event receive the event.
+To ensure that all entities that need to listen for and handle a given script event are ready to receive the event, queue the message on the [tick bus](/docs/user-guide/programming/components/tick). One way to implement this strategy in Script Canvas is to connect the **On Graph Start** node to a **Tick Delay** node. The delay helps to ensure that when a script event message is sent, all entities that could possibly be connected to that script event receive the event.
 
 ![Using the Tick Delay node in Script Canvas to ensure that entities are activated before events are sent.](/images/user-guide/scripting/script-events/best-practices-tick-delay.png)
 

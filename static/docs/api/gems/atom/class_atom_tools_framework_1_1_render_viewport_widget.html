@@ -125,6 +125,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>EndCursorCapture</b> 
 <tr class="memitem:a21327b6b34fe6f7bb878301fe87f7790"><td class="memItemLeft" align="right" valign="top"><a id="a21327b6b34fe6f7bb878301fe87f7790"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsMouseOver</b> () const override</td></tr>
 <tr class="separator:a21327b6b34fe6f7bb878301fe87f7790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69fec3ccfac0cfa23cc6ec06a4c00d76"><td class="memItemLeft" align="right" valign="top"><a id="a69fec3ccfac0cfa23cc6ec06a4c00d76"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOverrideCursor</b> (AzToolsFramework::ViewportInteraction::CursorStyleOverride cursorStyleOverride) override</td></tr>
+<tr class="separator:a69fec3ccfac0cfa23cc6ec06a4c00d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8be339343290a913f255dc30af751e7"><td class="memItemLeft" align="right" valign="top"><a id="ae8be339343290a913f255dc30af751e7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearOverrideCursor</b> () override</td></tr>
+<tr class="separator:ae8be339343290a913f255dc30af751e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11ccd6d0ed368c6cc84ca2468d4c4644"><td class="memItemLeft" align="right" valign="top"><a id="a11ccd6d0ed368c6cc84ca2468d4c4644"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWindowTitle</b> (const AZStd::string &amp;title) override</td></tr>
 <tr class="separator:a11ccd6d0ed368c6cc84ca2468d4c4644"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,9 +170,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnInputChannelEventFi
 <tr class="memitem:a12685f812578a4e84c9cd5c8a2e74f21"><td class="memItemLeft" align="right" valign="top"><a id="a12685f812578a4e84c9cd5c8a2e74f21"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTick</b> (float deltaTime, AZ::ScriptTimePoint time) override</td></tr>
 <tr class="separator:a12685f812578a4e84c9cd5c8a2e74f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15f9b52251444a06e2ab652e66ff5882"><td class="memItemLeft" align="right" valign="top"><a id="a15f9b52251444a06e2ab652e66ff5882"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *event) override</td></tr>
-<tr class="separator:a15f9b52251444a06e2ab652e66ff5882"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f4acda0d547d6c3d09a8e3a9005541f"><td class="memItemLeft" align="right" valign="top"><a id="a9f4acda0d547d6c3d09a8e3a9005541f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>event</b> (QEvent *event) override</td></tr>
 <tr class="separator:a9f4acda0d547d6c3d09a8e3a9005541f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,12 +179,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enterEvent</b> (QEven
 <tr class="memitem:a19354d4c75c1a51d01d04144cf4e8f69"><td class="memItemLeft" align="right" valign="top"><a id="a19354d4c75c1a51d01d04144cf4e8f69"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>leaveEvent</b> (QEvent *event) override</td></tr>
 <tr class="separator:a19354d4c75c1a51d01d04144cf4e8f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9baa35c7cf3519363892429d58a58dd"><td class="memItemLeft" align="right" valign="top"><a id="aa9baa35c7cf3519363892429d58a58dd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMouseEvent *event) override</td></tr>
-<tr class="separator:aa9baa35c7cf3519363892429d58a58dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html">RenderViewportWidget</a> class is a Qt wrapper around an Atom viewport. <a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html">RenderViewportWidget</a> renders to an internal window using RPI::ViewportContext and delegates input via its internal ViewportControllerList. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">AZ::RPI::ViewportContext</a> for Atom's API for setting up <br  />
+<div class="textblock"><p>The <a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html">RenderViewportWidget</a> class is a Qt wrapper around an Atom viewport. <a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html">RenderViewportWidget</a> renders to an internal window using <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">AZ::RPI::ViewportContext</a> and delegates input via its internal ViewportControllerList. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">AZ::RPI::ViewportContext</a> for Atom's API for setting up <br  />
  </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa2a85c245ac8ed1100d3bdf9474c06a3"></a>
@@ -217,7 +217,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (Q
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates a <a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html">RenderViewportWidget</a>. Requires the Atom RPI to be initialized in order to internally construct an RPI::ViewportContext. If initializeViewportContext is set to false, nothing will be displayed on-screen until InitiliazeViewportContext is called. </p>
+<p>Creates a <a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html">RenderViewportWidget</a>. Requires the Atom RPI to be initialized in order to internally construct an <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">AZ::RPI::ViewportContext</a>. If initializeViewportContext is set to false, nothing will be displayed on-screen until InitiliazeViewportContext is called. </p>
 
 </div>
 </div>
@@ -416,7 +416,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (Q
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:32:15 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:12 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

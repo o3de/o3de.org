@@ -153,6 +153,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_az_type_info_3_01_t_00_01true_01_4.html">AzTypeInfo&lt; T, true &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_base_json_importer.html">BaseJsonImporter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_base_json_integer_serializer.html">BaseJsonIntegerSerializer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_base_json_matrix_serializer.html">BaseJsonMatrixSerializer</a></td></tr>
@@ -176,6 +178,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_e_bus_event_sender.html">BehaviorEBusEventSender</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_behavior_e_bus_handler.html">BehaviorEBusHandler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_behavior_interface_proxy.html">BehaviorInterfaceProxy</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_behavior_method.html">BehaviorMethod</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -490,6 +494,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_entity_serializer.html">JsonEntitySerializer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_float_serializer.html">JsonFloatSerializer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_import_resolver.html">JsonImportResolver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_json_import_settings.html">JsonImportSettings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_int_serializer.html">JsonIntSerializer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1709,6 +1717,12 @@ Enumerations</h2></td></tr>
 <b>CryScriptContextId</b> = 1
  }</td></tr>
 <tr class="separator:ad19fdaa2e1b1c07a04396543ad008927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c567a51310ff14b8bf5604b1670290"><td class="memItemLeft" align="right" valign="top"><a id="a43c567a51310ff14b8bf5604b1670290"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ImportTracking</b> : AZ::u8 { <b>None</b> = 0, 
+<b>Dependencies</b> = (1&lt;&lt;0), 
+<b>Imports</b> = (1&lt;&lt;1), 
+<b>All</b> = (Dependencies | Imports)
+ }</td></tr>
+<tr class="separator:a43c567a51310ff14b8bf5604b1670290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a408cd8672ae4532f76638045f0746b5e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#a408cd8672ae4532f76638045f0746b5e">JsonMergeApproach</a> { <a class="el" href="namespace_a_z.html#a408cd8672ae4532f76638045f0746b5eafdaf6e2538f75fd867f5fd074b046411">JsonMergeApproach::JsonPatch</a>, 
 <a class="el" href="namespace_a_z.html#a408cd8672ae4532f76638045f0746b5eab3bcd102c185556673c53e2a5586be11">JsonMergeApproach::JsonMergePatch</a>
  }</td></tr>
@@ -2689,6 +2703,9 @@ static const AZ_INLINE <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a>&#1
 <tr class="memitem:ab036def1722bf6dd94437e17af299994"><td class="memTemplParams" colspan="2">template&lt;typename ToType , typename FromType &gt; </td></tr>
 <tr class="memitem:ab036def1722bf6dd94437e17af299994"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#ab036def1722bf6dd94437e17af299994">JsonNumericCast</a> (ToType &amp;result, FromType value, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> path, const <a class="el" href="class_a_z_std_1_1function.html">AZ::JsonSerializationResult::JsonIssueCallback</a> &amp;reporting)</td></tr>
 <tr class="separator:ab036def1722bf6dd94437e17af299994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1cb9f951669872b4914313003bb46f6"><td class="memItemLeft" align="right" valign="top"><a id="ab1cb9f951669872b4914313003bb46f6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DEFINE_ENUM_BITWISE_OPERATORS</b> (ImportTracking)</td></tr>
+<tr class="separator:ab1cb9f951669872b4914313003bb46f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a481bc8ca656a80ad21224a927bf202a6"><td class="memItemLeft" align="right" valign="top"><a id="a481bc8ca656a80ad21224a927bf202a6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_SPECIALIZE</b> (<a class="el" href="namespace_a_z.html#a7666d3f9dc0fcb4669d8ce2a1b5d1960">ObjectStreamWriteOverrideCB</a>, &quot;{87B1A36B-8C8A-42B6-A0B5-E770D9FDBAD4}&quot;)</td></tr>
 <tr class="separator:a481bc8ca656a80ad21224a927bf202a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5910,7 +5927,7 @@ template&lt;class ValueT , class &gt; </div>
 <div class="ttc" id="aclass_a_z_1_1_module_html"><div class="ttname"><a href="class_a_z_1_1_module.html">AZ::Module</a></div><div class="ttdef"><b>Definition:</b> Module.h:31</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:30:32 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:18:22 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

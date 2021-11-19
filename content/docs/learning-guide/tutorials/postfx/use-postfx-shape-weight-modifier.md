@@ -52,4 +52,4 @@ To use post-processing volumes:
 
 The image series below demonstrates how PostFX volumes work in this example. As shown on the left, when the camera is outside of the volume, the scene appears bright. On the right, when the camera enters the volume, the scene darkens.
 
-![Using PostFX Volumes](/images/user-guide/components/reference/atom/post-processing-volumes/postfx-example.png)
+![Using PostFX Volumes](/images/user-guide/components/reference/atom/post-processing-modifiers/postfx-example.png)

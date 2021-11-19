@@ -271,7 +271,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Creates a dedicated cache for the target file. The target file won't be removed from the cache until DestroyDedicatedCache is called. Typical use of a dedicated cache is for files that have their own compression and are periodically visited to read a section, e.g. streaming video play or streaming audio banks. This request will fail if there are no nodes in <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html">Streamer</a>'s stack that deal with dedicated caches. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">relativePath</td><td>Relative path to the file to receive a dedicated cache. This can include aliases such as @assets. </td></tr>
+    <tr><td class="paramname">relativePath</td><td>Relative path to the file to receive a dedicated cache. This can include aliases such as @products. </td></tr>
   </table>
   </dd>
 </dl>
@@ -317,7 +317,7 @@ Public Member Functions</h2></td></tr>
 <p>Creates a dedicated cache for the target file. The target file won't be removed from the cache until DestroyDedicatedCache is called. Typical use of a dedicated cache is for files that have their own compression and are periodically visited to read a section, e.g. streaming video play or streaming audio banks. This request will fail if there are no nodes in <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html">Streamer</a>'s stack that deal with dedicated caches. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td>The request that will store the command to create a dedicated cache. </td></tr>
-    <tr><td class="paramname">relativePath</td><td>Relative path to the file to receive a dedicated cache. This can include aliases such as @assets. </td></tr>
+    <tr><td class="paramname">relativePath</td><td>Relative path to the file to receive a dedicated cache. This can include aliases such as @products. </td></tr>
   </table>
   </dd>
 </dl>
@@ -506,7 +506,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Destroy a dedicated cache created by CreateDedicatedCache. See CreateDedicatedCache for more details. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">relativePath</td><td>Relative path to the file that got a dedicated cache. This can include aliases such as @assets. </td></tr>
+    <tr><td class="paramname">relativePath</td><td>Relative path to the file that got a dedicated cache. This can include aliases such as @products. </td></tr>
   </table>
   </dd>
 </dl>
@@ -552,7 +552,7 @@ Public Member Functions</h2></td></tr>
 <p>Destroy a dedicated cache created by CreateDedicatedCache. See CreateDedicatedCache for more details. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td>The request that will store the command to destroy a dedicated cache. </td></tr>
-    <tr><td class="paramname">relativePath</td><td>Relative path to the file that got a dedicated cache. This can include aliases such as @assets. </td></tr>
+    <tr><td class="paramname">relativePath</td><td>Relative path to the file that got a dedicated cache. This can include aliases such as @products. </td></tr>
   </table>
   </dd>
 </dl>
@@ -587,7 +587,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Clears a file from all caches in use by <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html">Streamer</a>. Flushing the cache will cause the streaming stack to pause processing until it's idle before issuing the flush and resuming processing. This can result in a noticeable interruption. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">relativePath</td><td>Relative path to the file that will be cleared from all caches. This can include aliases such as @assets. </td></tr>
+    <tr><td class="paramname">relativePath</td><td>Relative path to the file that will be cleared from all caches. This can include aliases such as @products. </td></tr>
   </table>
   </dd>
 </dl>
@@ -633,7 +633,7 @@ Public Member Functions</h2></td></tr>
 <p>Clears a file from all caches in use by <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html">Streamer</a>. Flushing the cache will cause the streaming stack to pause processing until it's idle before issuing the flush and resuming processing. This can result in a noticeable interruption. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td>The request that will store the command to flush a file from all caches. </td></tr>
-    <tr><td class="paramname">relativePath</td><td>Relative path to the file that will be cleared from all caches. This can include aliases such as @assets. </td></tr>
+    <tr><td class="paramname">relativePath</td><td>Relative path to the file that will be cleared from all caches. This can include aliases such as @products. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1059,7 +1059,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Creates a request to the read command. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">relativePath</td><td>Relative path to the file to load. This can include aliases such as @assets. </td></tr>
+    <tr><td class="paramname">relativePath</td><td>Relative path to the file to load. This can include aliases such as @products. </td></tr>
     <tr><td class="paramname">allocator</td><td>The allocator used to reserve and release memory for the read request. Memory allocated this way will be automatically freed when there are no more references to the FileRequestPtr. To avoid this, use GetReadRequestResult to claim the pointer and use the provided allocator to release the memory at a later point. The allocator needs to live at least as long as the FileRequestPtr is in use. Do not store the FileRequestPtr in the allocator as this will result in a circular dependency and a memory leak. </td></tr>
     <tr><td class="paramname">size</td><td>The number of bytes to read from the file at the relative path. </td></tr>
     <tr><td class="paramname">deadline</td><td>The amount of time from calling Read that the request should complete. Is FileRequest::s_noDeadline if the request doesn't need to be completed before a specific time. </td></tr>
@@ -1139,7 +1139,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Creates a request to read a file. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">relativePath</td><td>Relative path to the file to load. This can include aliases such as @assets. </td></tr>
+    <tr><td class="paramname">relativePath</td><td>Relative path to the file to load. This can include aliases such as @products. </td></tr>
     <tr><td class="paramname">outputBuffer</td><td>The buffer that will hold the loaded data. This must be able to at least hold "size" number of bytes. </td></tr>
     <tr><td class="paramname">outputBufferSize</td><td>The size of the buffer that will hold the loaded data. This must be equal or larger than "size" number of bytes. </td></tr>
     <tr><td class="paramname">readSize</td><td>The number of bytes to read from the file at the relative path. </td></tr>
@@ -1221,7 +1221,7 @@ Public Member Functions</h2></td></tr>
 <p>Sets a request to the read command. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td>The request that will store the read command. </td></tr>
-    <tr><td class="paramname">relativePath</td><td>Relative path to the file to load. This can include aliases such as @assets. </td></tr>
+    <tr><td class="paramname">relativePath</td><td>Relative path to the file to load. This can include aliases such as @products. </td></tr>
     <tr><td class="paramname">allocator</td><td>The allocator used to reserve and release memory for the read request. Memory allocated this way will be automatically freed when there are no more references to the FileRequestPtr. To avoid this, use GetReadRequestResult to claim the pointer and use the provided allocator to release the memory at a later point. The allocator needs to live at least as long as the FileRequestPtr is in use. Do not store the FileRequestPtr in the allocator as this will result in a circular dependency and a memory leak. </td></tr>
     <tr><td class="paramname">size</td><td>The number of bytes to read from the file at the relative path. </td></tr>
     <tr><td class="paramname">deadline</td><td>The amount of time from calling Read that the request should complete. Is FileRequest::s_noDeadline if the request doesn't need to be completed before a specific time. </td></tr>
@@ -1308,7 +1308,7 @@ Public Member Functions</h2></td></tr>
 <p>Sets a request to the read command. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td>The request that will store the read command. </td></tr>
-    <tr><td class="paramname">relativePath</td><td>Relative path to the file to load. This can include aliases such as @assets. </td></tr>
+    <tr><td class="paramname">relativePath</td><td>Relative path to the file to load. This can include aliases such as @products. </td></tr>
     <tr><td class="paramname">outputBuffer</td><td>The buffer that will hold the loaded data. This must be able to at least hold "size" number of bytes. </td></tr>
     <tr><td class="paramname">outputBufferSize</td><td>The size of the buffer that will hold the loaded data. This must be equal or larger than "size" number of bytes. </td></tr>
     <tr><td class="paramname">readSize</td><td>The number of bytes to read from the file at the relative path. </td></tr>
@@ -1545,7 +1545,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:30:38 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:18:30 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
