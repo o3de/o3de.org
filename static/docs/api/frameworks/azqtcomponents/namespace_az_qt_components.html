@@ -330,6 +330,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_title_bar_overdraw_screen_handler.html">TitleBarOverdrawScreenHandler</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_toast_configuration.html">ToastConfiguration</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_toast_notification.html">ToastNotification</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_tool_bar.html">ToolBar</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to provide extra functionality for working with <a class="el" href="class_az_qt_components_1_1_tool_bar.html" title="Class to provide extra functionality for working with ToolBar controls.">ToolBar</a> controls.  <a href="class_az_qt_components_1_1_tool_bar.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -381,6 +385,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>OverlayWidgetButtonL
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a884160b82fa25f4de6653d528860cc08"><td class="memItemLeft" align="right" valign="top"><a id="a884160b82fa25f4de6653d528860cc08"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ToastType</b> { <b>Information</b>, 
+<b>Warning</b>, 
+<b>Error</b>, 
+<b>Custom</b>
+ }</td></tr>
+<tr class="separator:a884160b82fa25f4de6653d528860cc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afce3df4cbd216a44dd9e9a8b65bcdc59"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_az_qt_components.html#afce3df4cbd216a44dd9e9a8b65bcdc59">NavigationButton</a> { <a class="el" href="namespace_az_qt_components.html#afce3df4cbd216a44dd9e9a8b65bcdc59a0557fa923dcee4d0f86b1409f5c2167f">NavigationButton::Back</a>, 
 <a class="el" href="namespace_az_qt_components.html#afce3df4cbd216a44dd9e9a8b65bcdc59a67d2f6740a8eaebf4d5c6f79be8da481">NavigationButton::Forward</a>, 
 <a class="el" href="namespace_az_qt_components.html#afce3df4cbd216a44dd9e9a8b65bcdc59a1b9abf135ccb7ed2f2cd9c155137c351">NavigationButton::Browse</a>, 
@@ -451,6 +461,9 @@ AZ_QT_COMPONENTS_API QString&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:aa399148a146ef0ef86912a71afddc49d"><td class="memItemLeft" align="right" valign="top"><a id="aa399148a146ef0ef86912a71afddc49d"></a>
 AZ_QT_COMPONENTS_API QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>ScalePixmapForScreenDpi</b> (QPixmap pixmap, QScreen *screen, QSize size, Qt::AspectRatioMode aspectRatioMode, Qt::TransformationMode transformationMode)</td></tr>
 <tr class="separator:aa399148a146ef0ef86912a71afddc49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a08591d622f276bccb6742a65346c0"><td class="memItemLeft" align="right" valign="top"><a id="af8a08591d622f276bccb6742a65346c0"></a>
+AZ_QT_COMPONENTS_API QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>CropPixmapForScreenDpi</b> (QPixmap pixmap, QScreen *screen, QRect rect)</td></tr>
+<tr class="separator:af8a08591d622f276bccb6742a65346c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1ea5a84a9d86b74545f87da43f07ee3"><td class="memItemLeft" align="right" valign="top"><a id="ac1ea5a84a9d86b74545f87da43f07ee3"></a>
 AZ_QT_COMPONENTS_API void&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareQtPaths</b> ()</td></tr>
 <tr class="separator:ac1ea5a84a9d86b74545f87da43f07ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -668,7 +681,7 @@ static const QString&#160;</td><td class="memItemRight" valign="bottom"><b>MIME_
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:31:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:14 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

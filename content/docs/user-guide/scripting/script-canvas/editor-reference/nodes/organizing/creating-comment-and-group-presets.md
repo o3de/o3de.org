@@ -17,7 +17,7 @@ For more information, refer to [Customizing Groups](grouping-nodes/#customizing-
 
 ## Creating and using presets
 
-You can create a preset in the Script Canvas editor by using an existing node group or node comment.
+You can create a preset in the **Script Canvas Editor** by using an existing node group or node comment.
 
 **To create a preset from a group or comment**
 
@@ -37,13 +37,13 @@ You can create a preset in the Script Canvas editor by using an existing node gr
 
 You can define a preset as the default for either a node group or a comment. The default group or comment is created when you perform one of the following actions:
 
-+ On the Script Canvas editor toolbar, choose the new comment ![New comment icon](/images/user-guide/scripting/script-canvas/nodes-comment-and-group-presets-5.png) or new group ![New group icon](/images/user-guide/scripting/script-canvas/nodes-comment-and-group-presets-6.png) icon.
++ On the Script Canvas Editor toolbar, choose the new comment ![New comment icon](/images/user-guide/scripting/script-canvas/nodes-comment-and-group-presets-5.png) or new group ![New group icon](/images/user-guide/scripting/script-canvas/nodes-comment-and-group-presets-6.png) icon.
 + Press **Ctrl+Alt+M** to create a comment.
 + Press **Ctrl+Shift+G** to create a group.
 
 **To configure a default preset**
 
-1. In the Script Canvas editor, choose **Tools**, **Presets Editor**.
+1. In the Script Canvas Editor, choose **Tools**, **Presets Editor**.
 
 1. For **Construct Type,** choose **Comment** or **Node Group**.
 
@@ -57,7 +57,7 @@ To remove presets, use the Script Canvas Presets Editor.
 
 **To remove a preset**
 
-1. In the Script Canvas editor, choose **Tools**, **Presets Editor**.
+1. In the Script Canvas Editor, choose **Tools**, **Presets Editor**.
 
 1. For **Construct Type,** choose **Comment** or **Node Group**.
 
