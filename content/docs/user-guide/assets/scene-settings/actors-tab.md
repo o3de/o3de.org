@@ -69,7 +69,7 @@ Set a uniform scale for the actor group. This setting is useful if the source as
 
 ![The Scene Settings Actors tab Skeleton lod modifier.](/images/user-guide/assets/scene-settings/skeleton-lod-modifier.png)
 
-A Skeleton LOD is a simplified skeleton where some leaf bones have been removed from the skeleton. The farther an entity is from the camera, the less detail is required from the actor. Using a character as an example, fine details such as facial animation and individual finger bones may not be required beyond a certain distance from the camera. The corresponding bones for these details can be optimized out of the skeleton. In networked games, the skeletons used on dedicated servers can be optimized down to the bones that transform PhysX colliders that provide hit detection and triggers.
+A Skeleton LOD is a simplified skeleton where some leaf bones have been removed from the skeleton. The farther an entity is from the camera, the less detail is required from the actor. Using a character as an example, fine details such as facial animation and individual finger bones may not be required beyond a certain distance from the camera. The corresponding bones for these details can be optimized out of the skeleton. In networked games, the skeletons used on dedicated servers can be optimized to only include bones that transform colliders. Leaf bones that are downstream from colliders can be removed.
 
 You can create up to five LODs for actor groups which are numbered \[`0`\] to \[`4`\], with \[`0`\] being the *highest* level of detail. LODs are not required but are recommended because they help get the best performance and visual fidelity across a range of platforms with different hardware capabilities.
 
@@ -80,7 +80,7 @@ You can create up to five LODs for actor groups which are numbered \[`0`\] to \[
 * Choose the {{< icon browse-edit-select-files.svg >}} **Selection list** button to specify the bones to include in the LOD.
 
 {{< important >}}
-When deselecting bones in a skeleton LOD, only leaf bones (bones at the end of a bone chain) should be deselected. The bones included in a skeleton LOD should correspond to the bones the mesh LOD uses. Do not deselect bones that are in the middle of a chain.
+When deselecting bones in a skeleton LOD, only leaf bones (bones at the end of a bone chain) should be deselected. The bones included in a skeleton LOD should correspond to the bones that the mesh LOD uses. Do not deselect bones that are in the middle of a chain.
 
 For example, LODs for a character's hands might follow the scenario below:
 

@@ -6,7 +6,7 @@ weight: 300
 toc: true
 ---
 
-In the **Meshes** tab, you can create mesh groups to be processed as mesh product assets. By default, all meshes that aren't designated as a level of detail or PhysX mesh through naming conventions are processed in a single mesh group. You can create any number of mesh groups containing specific meshes from the source asset. Each mesh group produces its own product assets. The runtime product assets appear in **Asset Browser** as children of the source asset.
+In the **Meshes** tab, you can create mesh groups to be processed as mesh product assets. By default, all meshes that aren't designated as a level of detail (meshes named with a `_lod<n>` postfix) or as a PhysX mesh (meshes named with a `_phys` postfix) are processed in a single mesh group. You can create any number of mesh groups containing specific meshes from the source asset. Each mesh group produces its own product assets. The runtime product assets appear in **Asset Browser** as children of the source asset.
 
 The Meshes tab is available if the source asset contains at least one mesh.
 

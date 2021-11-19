@@ -82,6 +82,10 @@ Set the range of the animation for the motion. This is used to extract motions f
 | **Start frame** | Specify the start keyframe of the motion. |
 | **End frame** | Specify the end keyframe of the motion. |
 
+{{< important >}}
+`.motion` product assets are indexed with `0` as the first frame. If your animation has 30 frames, they are indexed as frames `0` through `29` in the `.motion` file. Keep this in mind if you typically use frame `1` as the start frame, or use frame `0` or `-1` to store a rest pose in your source assets.
+{{< /important >}}
+
 ## Motion sampling
 
 ![The Scene Settings Motions tab Motion sampling modifier.](/images/user-guide/assets/scene-settings/motion-sampling-modifier.png)
