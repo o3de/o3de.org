@@ -24,12 +24,14 @@ Product dependencies are a runtime concept.
 
 Product dependencies contain data on the relationships between product assets. Product dependencies are used during runtime loading and asset bundling.
 
-When an product asset is loaded at runtime, the product dependencies specify other product assets that must be loaded for this product asset to function. Similarly, when bundling assets, the product dependencies specify additional product assets required by the assets being bundled. An easy to understand example is a level prefab.  All the meshes, shaders, materials, audio files, and scripts used by entities and prefabs that are placed in the level, are dependencies of the level prefab. When you load or bundle a level prefab, the chain of asset dependencies specifies all the product assets required by the level prefab, as well as the product assets referenced by those dependencies, and so on, until all the product dependencies are met.
+When a product asset is loaded at runtime, the product dependencies specify other product assets that must be loaded for this product asset to function. Similarly, when bundling assets, the product dependencies specify additional product assets required by the assets being bundled. An easy to understand example is a level prefab.  All the meshes, shaders, materials, audio files, and scripts used by entities and prefabs that are placed in the level are dependencies of the level prefab. When you load or bundle a level prefab, the chain of asset dependencies specifies all the product assets required by the level prefab, as well as the product assets referenced by those dependencies, and so on, until all the product dependencies are met.
+
 
 Product dependencies can also be marked as required or optional. If a required product dependency is not available, the runtime load process or the bundling process fails. If an optional product dependency is not available, the runtime load process or bundling process can proceed.
 
 ## Asset identifiers
 
-Source assets are identified by a Universally Unique Identifier (UUID also known as a Globally Unique Identifier or GUID). The source asset UUID is generated based on the file name and scan directory relative path. This ensures the source asset UUID is identical on any host platform machine for the project.
+Source assets are identified by a Universally Unique Identifier (UUID). The source asset UUID is generated based on the file name and scan directory relative path. This ensures the source asset UUID is identical on any host platform machine for the project.
+
 
 Product assets are identified by a combination of the UUID for the source asset and a sub ID based on the fingerprint of the **Asset Builder** that produced the product asset. This ensures each product asset ID is deterministic and unique, and that references to these product assets can be maintained when assets are updated. In the rare event of a product asset ID collision, Asset Processor notifies you that an asset already exists with the product ID so you can resolve the issue.

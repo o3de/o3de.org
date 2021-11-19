@@ -9,7 +9,8 @@ toc: true
 An **Asset Builder** is a bundle of code that **Asset Processor** runs to generate product assets. Asset Builders can be distributed as Gems and might use third-party libraries to process assets. The **Scene Processing** Gem, for example, contains the Asset Builders that process `.fbx` files, and uses the [Open Asset Import Library](https://github.com/assimp/assimp) to parse `.fbx` files.
 
 {{< note >}}
-The Open Asset Import Library supports [many scene formats](https://github.com/assimp/assimp/blob/master/doc/Fileformats.md). You can experiment with additional formats by editing `o3de/Registry/sceneassetimporter.setreg` and adding additional format extensions to the `"SupportedFileTypeExtensions":` list.
+The Open Asset Import Library supports [many scene formats](https://github.com/assimp/assimp/blob/master/doc/Fileformats.md). You can experiment with additional formats by editing `o3de/Registry/sceneassetimporter.setreg` and adding format extensions to the `"SupportedFileTypeExtensions":` list.
+
 {{< /note >}}
 
 ## Anatomy of an Asset Builder
