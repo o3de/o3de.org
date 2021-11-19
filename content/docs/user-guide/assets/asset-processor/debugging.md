@@ -11,7 +11,7 @@ If you are having issues with **Asset Processor**, use the methods below to debu
 
 ## View Asset Processor Logs 
 
-If Asset Processor isn't working as expected, use the information in the **Logs** tab to debug the issue. The Logs tab contains log information for Asset Processor and not for individual process jobs.
+If Asset Processor isn't working as expected, use the information in the **Logs** tab to debug the issue. The Logs tab contains log information for Asset Processor and not for individual process jobs. To view logs for individual process jobs, refer to the **Event Log Details** pane in the **Jobs** tab of Asset Processor.
 
 1. In Asset Processor, choose **Logs**.
 
