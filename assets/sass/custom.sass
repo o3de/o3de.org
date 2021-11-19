@@ -1010,6 +1010,10 @@ $width: '59vw';
       
     .card-body
       padding: 1rem
+      font-size: 14px
+
+      .card-title
+        margin-bottom: 0.5rem
 
       @include media-breakpoint-down(md)
         padding: 1.25rem 1rem 0
@@ -1020,6 +1024,13 @@ $width: '59vw';
           margin-bottom: .5rem
         
         font-size: .9rem
+        
+      @include media-breakpoint-up(lg)
+        min-height: 220px
+
+        .learn-more
+          position: absolute
+          bottom: 0
       
     .card-image
       @include media-breakpoint-down(md)
