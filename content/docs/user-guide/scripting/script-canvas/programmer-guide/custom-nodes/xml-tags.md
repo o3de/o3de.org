@@ -19,7 +19,7 @@ ScriptCanvas_Node(Countdown,
 );
 ```
 
-Note that while internally the class name is `Countdown`, the code specifies that **Delay** be used as the node name in Script Canvas editor. AZ Code Generator uses the `ScriptCanvas_Node` tag to produce the following code in `Countdown.generated.h`:
+Note that while internally the class name is `Countdown`, the code specifies that **Delay** be used as the node name in **Script Canvas Editor**. AZ Code Generator uses the `ScriptCanvas_Node` tag to produce the following code in `Countdown.generated.h`:
 
 ```cpp
 #define AZ_GENERATED_Countdown \
@@ -80,6 +80,6 @@ ScriptCanvas_Property(float,
 );
 ```
 
-In the Script Canvas editor, the node shows the **Time**, **Loop**, **Hold**, and **Elapsed** properties that were defined:
+In the Script Canvas Editor, the node shows the **Time**, **Loop**, **Hold**, and **Elapsed** properties that were defined:
 
 ![Properties on the Delay node](/images/user-guide/scripting/script-canvas/script-canvas-custom-nodes-2.png)

@@ -81,6 +81,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ResizeClientArea</b> 
 <tr class="memitem:ae3a26a451eb8f49e602ae461708393bc"><td class="memItemLeft" align="right" valign="top"><a id="ae3a26a451eb8f49e602ae461708393bc"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetDisplayRefreshRate</b> () const override</td></tr>
 <tr class="separator:ae3a26a451eb8f49e602ae461708393bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b8b011ebcea516ced3f26918cbe22d"><td class="memItemLeft" align="right" valign="top"><a id="ad9b8b011ebcea516ced3f26918cbe22d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFullScreenState</b> () const override</td></tr>
+<tr class="separator:ad9b8b011ebcea516ced3f26918cbe22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a934557b93c7be3b7cb5c5ef410d8bc59"><td class="memItemLeft" align="right" valign="top"><a id="a934557b93c7be3b7cb5c5ef410d8bc59"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFullScreenState</b> (bool fullScreenState) override</td></tr>
+<tr class="separator:a934557b93c7be3b7cb5c5ef410d8bc59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cb179c059410c06926c80f5e4c7a68e"><td class="memItemLeft" align="right" valign="top"><a id="a6cb179c059410c06926c80f5e4c7a68e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleXcbEvent</b> (xcb_generic_event_t *event) override</td></tr>
 <tr class="separator:a6cb179c059410c06926c80f5e4c7a68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,12 +97,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsActive</b> () const
 <tr class="memitem:a4ddc4e66c98c13719edac972a67873f6 inherit pub_methods_class_az_framework_1_1_native_window_1_1_implementation"><td class="memItemLeft" align="right" valign="top"><a id="a4ddc4e66c98c13719edac972a67873f6"></a>
 virtual <a class="el" href="struct_az_framework_1_1_window_size.html">WindowSize</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetClientAreaSize</b> () const</td></tr>
 <tr class="separator:a4ddc4e66c98c13719edac972a67873f6 inherit pub_methods_class_az_framework_1_1_native_window_1_1_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0394e4992c24ca88634a8aa6546a225 inherit pub_methods_class_az_framework_1_1_native_window_1_1_implementation"><td class="memItemLeft" align="right" valign="top"><a id="ab0394e4992c24ca88634a8aa6546a225"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFullScreenState</b> () const</td></tr>
-<tr class="separator:ab0394e4992c24ca88634a8aa6546a225 inherit pub_methods_class_az_framework_1_1_native_window_1_1_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a552a9fcd08c19013824b37423591d1f9 inherit pub_methods_class_az_framework_1_1_native_window_1_1_implementation"><td class="memItemLeft" align="right" valign="top"><a id="a552a9fcd08c19013824b37423591d1f9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFullScreenState</b> (bool fullScreenState)</td></tr>
-<tr class="separator:a552a9fcd08c19013824b37423591d1f9 inherit pub_methods_class_az_framework_1_1_native_window_1_1_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad54831c2d60e8e2e4bb53fc62c4999a9 inherit pub_methods_class_az_framework_1_1_native_window_1_1_implementation"><td class="memItemLeft" align="right" valign="top"><a id="ad54831c2d60e8e2e4bb53fc62c4999a9"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanToggleFullScreenState</b> () const</td></tr>
 <tr class="separator:ad54831c2d60e8e2e4bb53fc62c4999a9 inherit pub_methods_class_az_framework_1_1_native_window_1_1_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,7 +127,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_activated</b> = fal
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:31:14 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:06 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

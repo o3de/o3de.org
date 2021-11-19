@@ -121,9 +121,9 @@ Likewise, to expose functionality from your own gems and provide data to another
 
 Inside of your Gem code, you also manage the connection and disconnection of your implemented handler for the EBus. EBus is just a list of handlers that calls all the functors (function pointers) registered with it.
 
-For singleton handlers where you only need one interface to communicate across DLLs, consider using [AZ::Interface](/docs/user-guide/engine/az-interface) and [AZ:Event](/docs/user-guide/engine/az-event) directly, without EBus.
+For singleton handlers where you only need one interface to communicate across DLLs, consider using [AZ::Interface](/docs/user-guide/programming/az-interface) and [AZ:Event](/docs/user-guide/programming/az-event) directly, without EBus.
 
-For details on using EBus, see [Working with the Event Bus (EBus) System](/docs/user-guide/engine/ebus)
+For details on using EBus, see [Working with the Event Bus (EBus) System](/docs/user-guide/programming/ebus)
 
 ## The Component Entity system
 
@@ -176,7 +176,7 @@ Asset Bundler makes shipping the specific assets that are used for the release o
 
 O3DE includes two scripting technologies for creating logic and behaviors: *Script Canvas* and *Lua*.
 
-**Script Canvas** is a visual scripting environment. In the Script Canvas editor, you create, connect, and rearrange graphical nodes that provide a visual representation of the logic flow. Script Canvas offers an approachable and easy-to-read environment to author behaviors using the same framework as Lua and C++. You can use Script Canvas to create scripts without needing to know how to code.
+**Script Canvas** is a general purpose, visual scripting environment. In the **Script Canvas Editor**, you lay out and connect graphical nodes that provide a visual representation of the logic flow. Script Canvas offers an approachable and easy-to-read environment to author behaviors using the same framework as Lua and C++. You can use Script Canvas to create scripts without needing to know how to code.
 
 To enable Script Canvas for O3DE, you must enable the **Script Canvas Gem**.
 

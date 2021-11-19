@@ -1,7 +1,7 @@
 ---
 linktitle: Adding Bookmarks
 title: Adding Bookmarks in Script Canvas
-description: Use the Open 3D Engine Script Canvas editor to add bookmarks to your script.
+description: Use the Open 3D Engine (O3DE) Script Canvas Editor to add bookmarks to your script.
 weight: 500
 ---
 
@@ -20,7 +20,7 @@ A bookmark is a shortcut that you can add to a specific location on your Script 
 
 **To manage your bookmarks**
 
-1. In the **Script Canvas** editor, choose **View**, **Bookmarks**.
+1. In the **Script Canvas Editor**, choose **View**, **Bookmarks**.
 
 1. In the **Bookmarks** window, you can do the following:
    + Search for the bookmark name.

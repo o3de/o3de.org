@@ -94,8 +94,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab63c12356d6aae470283c4fb6e5a2907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad18a933572d225d33159c44390c0c49f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_service_client_job_config.html#ad18a933572d225d33159c44390c0c49f">ServiceClientJobConfig</a> (<a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html">AwsApiJobConfig</a> *defaultConfig=nullptr, InitializerFunction initializer=nullptr)</td></tr>
 <tr class="separator:ad18a933572d225d33159c44390c0c49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78810113ff98163595d20327e4e1630a"><td class="memItemLeft" align="right" valign="top">const AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_service_client_job_config.html#a78810113ff98163595d20327e4e1630a">GetServiceUrl</a> () override</td></tr>
-<tr class="separator:a78810113ff98163595d20327e4e1630a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b6138344d517c813fb586000d2b4081"><td class="memItemLeft" align="right" valign="top">AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_service_client_job_config.html#a0b6138344d517c813fb586000d2b4081">GetServiceUrl</a> () override</td></tr>
+<tr class="separator:a0b6138344d517c813fb586000d2b4081"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_w_s_core_1_1_service_job_config"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_w_s_core_1_1_service_job_config')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_w_s_core_1_1_service_job_config.html">AWSCore::ServiceJobConfig</a></td></tr>
 <tr class="memitem:ae1b667bf06294c7441819baf83a94130 inherit pub_methods_class_a_w_s_core_1_1_service_job_config"><td class="memItemLeft" align="right" valign="top"><a id="ae1b667bf06294c7441819baf83a94130"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_w_s_core_1_1_service_job_config.html">ServiceJobConfig</a>, AZ::SystemAllocator, 0)</td></tr>
@@ -104,7 +104,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad3cbc6d2b376f448b538f51c6a29d9ba inherit pub_methods_class_a_w_s_core_1_1_service_job_config"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d728e7cbb1f8219d26c50eef68c1d57 inherit pub_methods_class_a_w_s_core_1_1_service_job_config"><td class="memItemLeft" align="right" valign="top"><a id="a8d728e7cbb1f8219d26c50eef68c1d57"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_service_job_config.html#a8d728e7cbb1f8219d26c50eef68c1d57">ApplySettings</a> () override</td></tr>
-<tr class="memdesc:a8d728e7cbb1f8219d26c50eef68c1d57 inherit pub_methods_class_a_w_s_core_1_1_service_job_config"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applys settings changes made after first use. <br /></td></tr>
+<tr class="memdesc:a8d728e7cbb1f8219d26c50eef68c1d57 inherit pub_methods_class_a_w_s_core_1_1_service_job_config"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies settings changes made after first use. <br /></td></tr>
 <tr class="separator:a8d728e7cbb1f8219d26c50eef68c1d57 inherit pub_methods_class_a_w_s_core_1_1_service_job_config"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_w_s_core_1_1_http_request_job_config"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_w_s_core_1_1_http_request_job_config')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_w_s_core_1_1_http_request_job_config.html">AWSCore::HttpRequestJobConfig</a></td></tr>
 <tr class="memitem:a82a00f56f8afa0b627066f353ab96839 inherit pub_methods_class_a_w_s_core_1_1_http_request_job_config"><td class="memItemLeft" align="right" valign="top"><a id="a82a00f56f8afa0b627066f353ab96839"></a>
@@ -263,7 +263,6 @@ template&lt;class ServiceTraitsType &gt; </div>
 <p>Initialize an <a class="el" href="class_a_w_s_core_1_1_service_client_job_config.html" title="Provides service job configuration using settings properties.">ServiceClientJobConfig</a> object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">DefaultConfigType</td><td>- the type of the config object from which default values will be taken.</td></tr>
     <tr><td class="paramname">defaultConfig</td><td>- the config object that provides values when no override has been set in this object. The default is nullptr, which will cause a default value to be used.</td></tr>
     <tr><td class="paramname">initializer</td><td>- a function called to initialize this object. This simplifies the initialization of static instances. The default value is nullptr, in which case no initializer will be called. </td></tr>
   </table>
@@ -273,8 +272,8 @@ template&lt;class ServiceTraitsType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a78810113ff98163595d20327e4e1630a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78810113ff98163595d20327e4e1630a">&#9670;&nbsp;</a></span>GetServiceUrl()</h2>
+<a id="a0b6138344d517c813fb586000d2b4081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b6138344d517c813fb586000d2b4081">&#9670;&nbsp;</a></span>GetServiceUrl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -285,7 +284,7 @@ template&lt;class ServiceTraitsType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const AZStd::string <a class="el" href="class_a_w_s_core_1_1_service_client_job_config.html">AWSCore::ServiceClientJobConfig</a>&lt; ServiceTraitsType &gt;::GetServiceUrl </td>
+          <td class="memname">AZStd::string <a class="el" href="class_a_w_s_core_1_1_service_client_job_config.html">AWSCore::ServiceClientJobConfig</a>&lt; ServiceTraitsType &gt;::GetServiceUrl </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -309,7 +308,7 @@ template&lt;class ServiceTraitsType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:32:06 for Open 3D Engine AWSCore Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:03 for Open 3D Engine AWSCore Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
