@@ -804,7 +804,7 @@ $os-selector-mobile-height: 48px
   position: relative
   display: block
   @include media-breakpoint-up(lg)
-    padding: 32px 0
+    padding: 0
 
 .features-img
   background-size: cover
@@ -843,8 +843,7 @@ $os-selector-mobile-height: 48px
     background-position: 0 0
 
 .features-img-copy
-  @include media-breakpoint-down(md)
-    background-position: 0 100%
+    background-position: 0 0
 
 
 .features-text
@@ -1059,17 +1058,21 @@ $os-selector-mobile-height: 48px
     position: relative
     display: block
     padding-bottom: 75%
-    background-size: cover
-    background-position: 50% 50%
+    background-size: auto 100%
+    background-position: 75% 50%
     border-radius: 5px
     overflow: hidden
+    transition: background-size .6s ease
+    -webkit-transition: background-size .6s ease
     
     @include media-breakpoint-down(md)
       margin-bottom: 2rem
   
     .collaboration-overlay
       position: absolute
-      background: rgba(0,0,0,.5)
+      background: rgba(0,0,0,.2)
+      transition: background .6s ease
+      -webkit-transition: background .6s ease
       left: 0
       top: 0
       right: 0
@@ -1100,11 +1103,16 @@ $os-selector-mobile-height: 48px
             color: #000
     
     &:hover
-      .collaboration-content
-        margin-top: 0
+      background-size: auto 105%
 
-        .cta
-          opacity: 1
+      .collaboration-overlay
+        background: rgba(0,0,0,.5)
+
+        .collaboration-content
+          margin-top: 0
+
+          .cta
+            opacity: 1
 
 // Lightbox
 
