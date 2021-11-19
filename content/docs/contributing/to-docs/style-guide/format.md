@@ -47,7 +47,7 @@ A table of contents for the page is automatically generated in the right gutter 
 
 ## Links
 
-Write links without the file extentension *.md*.
+Write links without the file extension *.md*.
 
 | Relative link | Result |
 | - | - |

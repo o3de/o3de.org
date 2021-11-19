@@ -121,9 +121,9 @@ Likewise, to expose functionality from your own gems and provide data to another
 
 Inside of your Gem code, you also manage the connection and disconnection of your implemented handler for the EBus. EBus is just a list of handlers that calls all the functors (function pointers) registered with it.
 
-For singleton handlers where you only need one interface to communicate across DLLs, consider using [AZ::Interface](/docs/user-guide/engine/az-interface) and [AZ:Event](/docs/user-guide/engine/az-event) directly, without EBus.
+For singleton handlers where you only need one interface to communicate across DLLs, consider using [AZ::Interface](/docs/user-guide/programming/az-interface) and [AZ:Event](/docs/user-guide/programming/az-event) directly, without EBus.
 
-For details on using EBus, see [Working with the Event Bus (EBus) System](/docs/user-guide/engine/ebus)
+For details on using EBus, see [Working with the Event Bus (EBus) System](/docs/user-guide/programming/ebus)
 
 ## The Component Entity system
 
