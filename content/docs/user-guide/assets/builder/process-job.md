@@ -15,7 +15,7 @@ toc: true
 
 ## ProcessJobRequest
 
-`azlmbr.asset.builder.ProcessJobRequest` is the input into the `OnProcessJobRequest` function that processes a source asset. it contains the input data that's needed for the process job.
+`azlmbr.asset.builder.ProcessJobRequest` is the input into the `OnProcessJobRequest` function that processes a source asset. It contains the input data that's needed for the process job.
 
 | Field | Type | Description |
 | - | - | - |
@@ -44,7 +44,7 @@ The `sourceFileUUID` field is both the unique ID of the source asset, and the fi
 | - | - | - |
 | `resultCode` | `azlmbr.asset.builder.ProcessJobResponse Result Code` | The result of the process job. |
 | `outputProducts` | List[`azlmbr.asset.builder.JobProduct`] | List of job product assets. |
-| `requiresSubIdGeneration` | Boolean | Determines if legacy product assets need sub ids generated. |
+| `requiresSubIdGeneration` | Boolean | Determines if legacy product assets need sub IDs generated. |
 | `sourcesToReprocess` | List[String] | Absolute source asset paths to trigger rebuilds. |
 
 The `resultCode` field defaults to `azlmbr.asset.builder.ProcessJobResponse_Failed`. An empty `ProcessJobResponse` indicates that the job failed.
@@ -110,12 +110,12 @@ The `dependencyType` field indicates if the path points to a source asset or a p
 
 | Field | Type | Description |
 | - | - | - |
-| `dependencyPath` | String | relative path to the asset dependency |
+| `dependencyPath` | String | Relative path to the asset dependency. |
 | `dependencyType` | `azlmbr.asset.builder.ProductPathDependency Type` | Indicates if the dependency path points to a source asset or a product asset. |
 
 ### ProductPathDependency Type 
 
-`azlmbr.asset.builder.ProductPathDependency Type` indicates how to use the dependency path in the `ProductPathDependency`. A dependency on a source asset is converted into dependencies on all product assets produced. It's preferred to depend on product assets whenever possible, to avoid introducing unintended dependencies.
+`azlmbr.asset.builder.ProductPathDependency Type` indicates how to use the dependency path in the `ProductPathDependency`. A dependency on a source asset is converted into dependencies on all product assets produced. It's preferable to depend on product assets whenever possible, to avoid introducing unintended dependencies.
  
 | Type | Description |
 | - | - |
