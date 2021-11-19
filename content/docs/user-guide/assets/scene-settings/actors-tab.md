@@ -16,7 +16,7 @@ The Actors tab is available if the source asset contains at least one bone.
 
 | Property | Description |
 | - | - |
-| **Add another actor** | Add an actor group  to process. Each actor group produces its own `.actor` and `.skinmeta` product assets. |
+| **Add another actor** | Add an actor group to process. Each actor group produces its own `.actor` and `.skinmeta` product assets. |
 | **Name actor** | The name of the actor group. This is the name of the product asset that's displayed in Asset Browser. |
 | **Select root bone** | Specify the root bone of the skeleton hierarchy. The topmost parent bone of the skeleton is selected as the root bone by default. |
 | **Add Modifier** | Modifiers add specialized options for processing source assets. Choose the **Add Modifier** button to display a list of available modifiers. Some modifiers are not available unless the gem that provides the modifier is enabled in your project. |
@@ -25,7 +25,7 @@ The Actors tab is available if the source asset contains at least one bone.
 
 ![The Scene Settings Meshes tab Comment modifier.](/images/user-guide/assets/scene-settings/comment-modifier.png)
 
-Add a comment to the file for the actor group. You can add a comment about changes made to the source asset file for tracking purposes or notes on export options, for example. Comments don't affect how files are processed. Multiple comment modifiers can be added to a actor group.
+Add a comment to the file for the actor group. You can add a comment about changes made to the source asset file for tracking purposes or notes on export options, for example. Comments don't affect how files are processed. Multiple comment modifiers can be added to an actor group.
 
 ## Coordinate system change
 
