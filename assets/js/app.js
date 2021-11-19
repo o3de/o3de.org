@@ -28,6 +28,30 @@ $(() => {
   })
 });
 
+// Lightbox behavior
+
+$(function() {
+  $("a.lightbox-trigger").click(function(e) {
+    var lightboxId = $(this).data("lightbox");
+    if(lightboxId)
+    {
+      var lightboxObject = $("#" + lightboxId);
+      if(lightboxObject.hasClass("lightbox-content"))
+      {
+        e.preventDefault();
+        lightboxObject.fadeIn(500);
+      }
+    }
+  });
+  
+  $(".lightbox-content").click(function(e) {
+    $(this).fadeOut(500);
+  });
+  
+  $(".lightbox-content iframe").click(function(e) {
+    e.preventDefault();
+  });
+});
 
 // nav bar search
 
@@ -182,9 +206,9 @@ $(function() {
 $(function() {
   var scrollOffset = $(".main-navbar").height() + 32;
 
-  $("a[href^=\\#]").click(function(e) {
+  $('a[href*=\\#]').click(function(e) {
     var dest = $(this).attr('href');
-    if(dest != "" && $(dest).length > 0)
+    if(dest != "" && dest.length > 1 && $(dest).length > 0)
     {
       $('html,body').animate({ scrollTop: $(dest).offset().top - scrollOffset }, 'slow');
     }
