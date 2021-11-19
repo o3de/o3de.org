@@ -24,7 +24,7 @@ Our starting base will be the O3DE MultiplayerSample project. You can find the i
 
 We will start by creating a network component - MyFirstNetworkComponent. It will only do one thing, which is to replicate a monotonic counter.
 
-Since we already have MultiplayerSample setup for [automated code generation](/docs/user-guide/engine/autogen) (codegen), we can start by duplicating one of the existing codegen xml files.
+Since we already have MultiplayerSample setup for [automated code generation](/docs/user-guide/programming/autogen) (codegen), we can start by duplicating one of the existing codegen xml files.
 
 1. Copy `<o3de-multiplayersample>\Gem\Code\Source\AutoGen\SimplePlayerCameraComponent.AutoComponent.xml` to `<o3de-multiplayersample>\Gem\Code\Source\AutoGen\MyFirstNetworkComponent.AutoComponent.xml`
 
