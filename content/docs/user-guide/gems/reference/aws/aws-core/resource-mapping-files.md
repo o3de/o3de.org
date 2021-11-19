@@ -29,9 +29,10 @@ Each entry defines a lookup name - a logical name for the resource - and a colle
 * AccountId - Used to override the global account id attribute, if this resource is deployed in a different AWS account.
 
 **Global attributes**
-The mapping file also supports three **required** global attributes:
 
-* AccountId - The default AWS account containing resources in this mapping file.
+The mapping file also supports one _optional_ and two **required** global attributes:
+
+* AccountId (optional) - The default AWS account that is used to search for AWS resources referenced in your O3DE application code. Used when account ID is not otherwise explicitly referenced (such as on a specific resource mapping).
 * Region - The default region to use with this mapping file.
 * Version - The json schema version of this document.
 
@@ -52,6 +53,10 @@ The mapping file also supports three **required** global attributes:
 ```
 
 This mapping file has a single mapping: **MyKey**, which is a Lambda function called "ExampleLambda". It is deployed in us-west-2 in the AWS account with account ID "123456789123".
+
+{{< important >}}
+We strongly recommend against including your AWS account ID in builds distributed to untrusted environments. Depending on your use case, anonymous [client authentication](https://o3de.org/docs/user-guide/gems/reference/aws/aws-client-auth/) or the use of [custom domains](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html) may provide ways of interacting with your AWS resources without needing to specify an account ID.
+{{< /important >}}
 
 ## Generating a resource mappings file
 
