@@ -56,7 +56,7 @@ After you read through this tutorial on writing Lua scripts for the component en
 | Topic | Description |
 | --- | --- |
 | [Camera Component](/docs/user-guide/components/reference/camera/camera) | Use the Camera component to allow an entity to be used as a camera. |
-| [Using Player Input](/docs/user-guide/interactivity/input/working-with-the-input-component) |  Work with the Input component in O3DE. |
+| [Using Player Input](/docs/user-guide/interactivity/input/using-player-input) |  Work with the Input component in O3DE. |
 | [Input Component Event Bus Interface](/docs/user-guide/components/reference/gameplay/input-event-bus-interface) | Work with the Input component EBus (event bus). |
 | [Simple State Component](/docs/user-guide/components/reference/gameplay/simple-state) | Use the Simple State component to provide a simple state machine. |
 | [Tag Component](/docs/user-guide/components/reference/gameplay/tag) | Use the Tag component to apply labels to entities. |
