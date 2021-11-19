@@ -52,7 +52,7 @@ The AWS Core Gem provides the following JSON schema for resource mapping.
     },
     "AccountIdString": {
         "type": "string",
-        "pattern": "^[0-9]{12}$"
+        "pattern": "^[0-9]{12}$|EMPTY|^$"
     },
     "NonEmptyString": {
         "type": "string",
