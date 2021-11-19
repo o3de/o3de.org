@@ -30,7 +30,7 @@ Scene Settings operates on one source asset at a time. To open Scene Settings, u
 <!-- Don't remove the newline below. -->
 \
 {{< note >}}
-O3DE integrates [Open Asset Import Library](https://github.com/assimp/assimp) to parse 3D scene source assets with support for `.fbx`, `.stl`, and `.gltf` enabled by default. If you want to experiment with other [scene formats](https://github.com/assimp/assimp/blob/master/doc/Fileformats.md) supported by Open Asset Import Library, you can edit the `o3de/Registry/sceneassetimporter.setreg` settings file and add format extensions to the `"SupportedFileTypeExtensions":` list. When you add a new format extension, the **Edit Settings...** option appears in the right click menu for that source asset format.
+O3DE integrates [Open Asset Import Library](https://github.com/assimp/assimp) to parse 3D scene source assets with support for `.fbx`, `.stl`, and `.gltf` enabled by default. If you want to experiment with other [scene formats](https://github.com/assimp/assimp/blob/master/doc/Fileformats.md) supported by Open Asset Import Library, you can edit the `o3de/Registry/sceneassetimporter.setreg` settings file and add format extensions to the `"SupportedFileTypeExtensions":` list. When you add a new format extension, the **Edit Settings...** option appears in the context menu for that source asset format.
 {{< /note >}}
 
 ## The `.assetinfo` sidecar file
@@ -39,7 +39,7 @@ The asset groups you create, the modifiers you add, and the options you set in S
 
 You can create, for example, a 3D scene source asset that contains plants of different types and sizes, with skinned meshes and LODs, and then use Scene Settings to specify mesh groups, actors, motions, and PhysX colliders for each plant contained in the source asset. The information needed to process all the plants is contained in a single `.assetinfo` file. It's important to understand that if you choose to process many product assets from a single source asset, a change to any aspect of the source asset or its dependencies will automatically reprocess everything contained in the source asset.
 
-The `.assetinfo` sidecar file is formatted with JSON, is human readable, and can be easily generated and modified through automated processes such as a Python script.
+The `.assetinfo` sidecar file is formatted with JSON, is human-readable, and can be easily generated and modified through automated processes such as a Python script.
 
 ## Scene Settings tabs
 
@@ -48,7 +48,7 @@ There are four tabs in Scene Settings: **Meshes**, **Actors**, **Motions**, and 
 | Tab | Description | Requirements |
 | - | - | - |
 | [Meshes](meshes-tab) | Create mesh groups and modify process job settings for meshes. Mesh processing generates `.azmodel`, `.azlod`, and `.azbuffer` product assets. | The source asset must contain at least one mesh. |
-| [Actors](actors-tab) | Create actor groups and modify process job settings for actors. An actor is any source asset (not necessarily a character) that contains a skeleton with at least one bone and a skinned mesh. Actor processing generates `.actor` and `.skinmeta` product assets. | The source asset must contain at least one bone. |
+| [Actors](actors-tab) | Create actor groups and modify process job settings for actors. An actor is any source asset (not necessarily a character). Actor processing generates `.actor` and `.skinmeta` product assets. | The source asset must contain at least one bone and a skinned mesh. |
 | [Motions](motions-tab) | Create and modify process job settings for motions (animation). Motion processing generates `.motion` product assets. | The source asset must contain a skeleton with keyframe animation. |
 | [PhysX](physx-tab) | Create PhysX mesh groups and modify process job settings for PhysX colliders. PhysX processing generates `.pxmesh` product assets. | The source asset must contain at least one mesh. The **PhysX Gem** must be enabled for your project to process and use PhysX colliders. |
 

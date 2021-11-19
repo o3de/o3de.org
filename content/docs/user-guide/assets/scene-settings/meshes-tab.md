@@ -83,7 +83,7 @@ Change the **Translation** (position), **Rotation** (orientation), and **Scale**
 
 ![The Scene Settings Meshes tab Level of Detail modifier.](/images/user-guide/assets/scene-settings/mesh-lod-modifier.png)
 
-LODs are optimized meshes with progressively lower polygon counts, fewer and smaller textures, and simplified materials. The farther an entity is from the camera, the less detail is required from the meshes that make up the entity. As the entity moves farther from the camera, it swaps to a lower mesh LOD.
+LODs are optimized meshes with progressively lower polygon counts, fewer and smaller textures, and simplified materials. The farther an entity is from the camera, the less detail is required from the meshes that make up the entity. As the entity moves farther from the camera, it swaps to progressively simpler LOD.
 
 You can specify up to five LODs (not including the base mesh) that are numbered \[`0`\] to \[`4`\], with \[`0`\] being the *highest* level of detail. LODs are not required but are recommended because they help get the best performance and visual fidelity across a range of platforms with different hardware capabilities.
 
