@@ -1,7 +1,7 @@
 ---
-linkTitle: Process Job
-title: Python Asset Builder Process Job
-description: Process Job in Python Asset Builder produces job information for Asset Processor and generates product assets. 
+linkTitle: ProcessJob
+title: Python Asset Builder ProcessJob
+description: ProcessJob in Python Asset Builder produces job information for Asset Processor and generates product assets. 
 weight: 300
 toc: true
 ---
@@ -122,7 +122,7 @@ The `dependencyType` field indicates if the path points to a source asset or a p
 | `azlmbr.asset.builder.ProductPathDependency_ProductFile` | If the source asset depends on another product asset file, the value should be `SourceFile`. |
 | `azlmbr.asset.builder.ProductPathDependency_SourceFile` | If the source asset depends on another source asset, the value should be `ProductFile`. |
 
-## Example: Process Job
+## Example: ProcessJob
 
 The example below demonstrates how an Asset Builder might process a job when Asset Processor detects a new or changed source asset with the registered pattern in a scan directory.
 

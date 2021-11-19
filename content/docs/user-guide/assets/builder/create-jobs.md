@@ -1,12 +1,12 @@
 ---
-linkTitle: Create Jobs
-title: Python Asset Builder Create Jobs
-description: Create process job information for Asset Processor with Create Jobs in Python Asset Builder. 
+linkTitle: CreateJobs
+title: Python Asset Builder CreateJobs
+description: Create process job information for Asset Processor with CreateJobs in Python Asset Builder. 
 weight: 300
 toc: true
 ---
 
-Create Jobs generates asset processing jobs for **Asset Processor**. When Asset Processor detects a new or updated source asset and determines the appropriate **Asset Builder** to process the source asset, it sends a `CreateJobsRequest` that contains information about the source asset, including its path, to the Asset Builder. The Asset Builder responds with a `CreateJobsResponse` that contains `JobDescriptor` structures, and source and job dependencies.
+CreateJobs generates asset processing jobs for **Asset Processor**. When Asset Processor detects a new or updated source asset and determines the appropriate **Asset Builder** to process the source asset, it sends a `CreateJobsRequest` that contains information about the source asset, including its path, to the Asset Builder. The Asset Builder responds with a `CreateJobsResponse` that contains `JobDescriptor` structures, and source and job dependencies.
 
 ## CreateJobsRequest
 
@@ -135,7 +135,7 @@ jobParameterMap = {1 : "MyValue", 2 : "Another Value"}
 | `azlmbr.asset.builder.JobDependency_Order` | The dependent job should only run after the job it depends on is processed by Asset Processor. |
 | `azlmbr.asset.builder.JobDependency_OrderOnce` | The dependent job should only run after the job it depends on is processed by Asset Processor and only if the dependencies have never been processed by Asset Processor. |
 
-## Example: Create Jobs
+## Example: CreateJobs
 
 The example below demonstrates how the Asset Builder might create jobs when **Asset Processor** detects a new or changed source asset with the registered pattern in a scan directory.
 
