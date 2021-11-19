@@ -15,7 +15,7 @@ In short, use the behavior context with Script Canvas to do the following:
 
 In this topic, you will learn how Script Canvas uses the behavior context to create new nodes and expose new data types to do all of the things described. There are several illustrative examples, and each example contains tips and best practices when using the behavior context to extend Script Canvas.
 
-## Script Canvas Architecture
+## Script Canvas architecture
 
 The following code architecture diagram shows the relationship between Script Canvas and the behavior context in Open 3D Engine.
 
@@ -58,7 +58,7 @@ public:
 };
 ```
 
-In the class's static `Reflect` method, we use the behavior context to reflect the `GlobalClass` and bind the static `Sin` and `Cos` methods that are part of the class. In this example, the functions are configured to be part of a group called "Globals". The group is used as a subtitle on the new node and the category under which the nodes will appear in Script Canvas's Node Palette.
+In the class's static `Reflect` method, we use the behavior context to reflect the `GlobalClass` and bind the static `Sin` and `Cos` methods that are part of the class. In this example, the functions are configured to be part of a group called `Globals`. The group is used as a subtitle on the new node and the category under which the nodes will appear in Script Canvas's Node Palette.
 
 ```cpp
 static void GlobalClass::Reflect(AZ::ReflectContext* context)
@@ -80,8 +80,8 @@ Once the code has been compiled, it is available as a new node in Script Canvas:
 
 However, there are a few usability improvements that can be made to improve its appearance in Script Canvas:
 
-+ Provide the class with a top-level category, "My Extensions", instead of the default "Other".
-+ Provide a user-friendly parameter name, "Radians", for the input pin.
++ Provide the class with a top-level category, `My Extensions`, instead of the default `Other`.
++ Provide a user-friendly parameter name, `Radians`, for the input pin.
 + Provide a tooltip when a user hovers over the Radians parameter.
 
 This can all be accomplished through changes to the code in the `Reflect` function:
@@ -104,7 +104,7 @@ The ability to bind an EBus to the behavior context enables scripting to become 
 
 Events are typically defined in code as part of a `RequestBus`, and are generally handled by some code system such as a component. Event handlers are typically defined as part of a `NotificationBus`.
 
-In this example, we'll take a look at a simplistic **Light** component. The example shows how its behavior context reflection translates into Script Canvas nodes.
+In this example, we'll take a look at a basic **Light** component. The example shows how its behavior context reflection translates into Script Canvas nodes.
 
 In this Light component, the user can configure the light by setting parameters such as color, intensity, and radius. The Light component can also be turned on or off, and you can respond to these events when they occur. Communication with an entity's Light component is done through two EBuses: the `LightComponentRequestBus` and the `LightComponentNotificationBus`.
 
@@ -178,9 +178,9 @@ When Script Canvas examines the behavior context, it finds these events and auto
 
 ![Light component nodes in Script Canvas](/images/user-guide/scripting/script-canvas/behavior-context-ebus-request-light-nodes.png)
 
-#### EBus events and EntityID
+#### EBus events and EntityId
 
-EBuses communicate with an entity's components. To do this, it needs an address. All component EBuses derive from `AZ::ComponentBus`, which is addressable by an ID of the type `AZ::EntityId`. For this reason, all nodes from a component EBus have a data pin for an `EntityID`. The presence of `Self` in the `EntityID` field refers to the `EntityID` of the entity that owns the Script Canvas graph. However, this ID can be assigned to another entity, or even changed to an invalid entity ID.
+EBuses communicate with an entity's components. To do this, it needs an address. All component EBuses derive from `AZ::ComponentBus`, which is addressable by an ID of the type `AZ::EntityId`. For this reason, all nodes from a component EBus have a data pin for an **EntityID**. The presence of `Self` in the **EntityID** pin refers to the `AZ::EntityID` of the entity that owns the Script Canvas graph. However, this ID can be assigned to another entity, or even changed to an invalid ID.
 
 ![Self EntityID](/images/user-guide/scripting/script-canvas/behavior-context-ebus-request-entityID.png)
 
@@ -193,7 +193,7 @@ Script Canvas nodes should include a helpful tooltip for every parameter. For ex
 void SetLightState(State state);
 ```
 
-You should add a tooltip in the behavior context reflection to describe the parameter. In this example, the tooltip will show "1=On, 0=Off" when a user hovers over the `State` parameter on the `SetState` node.
+You should add a tooltip in the behavior context reflection to describe the parameter. In this example, the tooltip will show `1=On, 0=Off` when a user hovers over the **State** data pin on the **SetState** node.
 
 ```cpp
     behaviorContext->EBus<LightComponentRequestBus>("Light", "LightComponentRequestBus")
@@ -300,7 +300,7 @@ Resulting variable node:
 
 To display parameter names correctly for your EBus events, ensure that you specify custom names when you reflect your events to the behavior context.
 
-If you do not specify names for the parameters, they are given default display names like "1", "2", or "3", as in the following image:
+If you do not specify names for the parameters, they are given default display names like `1`, `2`, or `3`, as in the following image:
 
 ![Default parameter names displayed](/images/user-guide/scripting/script-canvas/behavior-context-displaying-parameter-names-1.png)
 
