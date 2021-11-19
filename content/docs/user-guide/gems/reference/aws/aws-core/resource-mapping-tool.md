@@ -170,4 +170,4 @@ Check the [resource mapping file](/docs/user-guide/gems/reference/aws/aws-core/r
 Errors of the form ```Cannot determine region from the url``` in the logs indicate the wrong region or account has been set for the resource.
 * Double check that the resource's mapping entry has the correct region and account information, if overriding the global region and account attributes.
 * Double check that the resource's mapping entry has the correct resource type and name.
-* Ensure the mapping file sets the required global attributes for region and account. Ensure they are set to the expected values.
+* Ensure the mapping file sets the required global attributes for region and version. Ensure they are set to the expected values.
