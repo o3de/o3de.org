@@ -48,15 +48,13 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_viewport_editor_mode_notifications-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::ViewportEditorModeNotifications Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Provides a bus to notify when the different editor modes are entered/exit.  
- <a href="class_az_tools_framework_1_1_viewport_editor_mode_notifications.html#details">More...</a></p>
 
 <p><code>#include &lt;ViewportEditorModeTrackerNotificationBus.h&gt;</code></p>
 
@@ -70,6 +68,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>BusIdType</b> = View
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a11ddde7dece254be76c944743610b89f"><td class="memItemLeft" align="right" valign="top"><a id="a11ddde7dece254be76c944743610b89f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_viewport_editor_mode_notifications.html">ViewportEditorModeNotifications</a>, &quot;{9469DE39-6C21-423C-94FA-EF3A9616B14F}&quot;, AZ::EBusTraits)</td></tr>
+<tr class="separator:a11ddde7dece254be76c944743610b89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acae45cc25b6e0ac52665a01701cc22d3"><td class="memItemLeft" align="right" valign="top"><a id="acae45cc25b6e0ac52665a01701cc22d3"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_editor_mode_notifications.html#acae45cc25b6e0ac52665a01701cc22d3">OnEditorModeActivated</a> ([[maybe_unused]] const <a class="el" href="class_az_tools_framework_1_1_viewport_editor_modes_interface.html">ViewportEditorModesInterface</a> &amp;editorModeState, [[maybe_unused]] ViewportEditorMode mode)</td></tr>
 <tr class="memdesc:acae45cc25b6e0ac52665a01701cc22d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies subscribers of the a given viewport to the activation of the specified editor mode. <br /></td></tr>
@@ -78,6 +79,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_editor_mode_notifications.html#a6364eeafcdb76c7bb04106a6ed6683c9">OnEditorModeDeactivated</a> ([[maybe_unused]] const <a class="el" href="class_az_tools_framework_1_1_viewport_editor_modes_interface.html">ViewportEditorModesInterface</a> &amp;editorModeState, [[maybe_unused]] ViewportEditorMode mode)</td></tr>
 <tr class="memdesc:a6364eeafcdb76c7bb04106a6ed6683c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies subscribers of the a given viewport to the deactivation of the specified editor mode. <br /></td></tr>
 <tr class="separator:a6364eeafcdb76c7bb04106a6ed6683c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a5a04a056825187f611697adb450eaffc"><td class="memItemLeft" align="right" valign="top"><a id="a5a04a056825187f611697adb450eaffc"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
+<tr class="separator:a5a04a056825187f611697adb450eaffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -89,14 +96,14 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 <tr class="separator:aadc6d0853b5620a32f3387c8d77965eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides a bus to notify when the different editor modes are entered/exit. </p>
+<div class="textblock"><p>Provides a bus to notify when the different editor modes are entered/exit. </p><dl class="section note"><dt>Note</dt><dd>The editor modes are not discrete states but rather each progression of mode retain the active the parent mode that the new mode progressed from. </dd></dl>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/API/ViewportEditorModeTrackerNotificationBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:31:30 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:22 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

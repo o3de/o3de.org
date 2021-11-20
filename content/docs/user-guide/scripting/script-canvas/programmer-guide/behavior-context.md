@@ -416,10 +416,10 @@ EBus handlers must be connected before they can receive events. Make sure your c
 MyBus::BusConnect();
 ```
 
-Depending on the type of bus, you might have to specify an ID to connect to. For more information, refer to [The Open 3D Engine Event Bus (EBus) System](/docs/user-guide/engine/ebus/).
+Depending on the type of bus, you might have to specify an ID to connect to. For more information, refer to [The Open 3D Engine Event Bus (EBus) System](/docs/user-guide/programming/ebus/).
 
 ## Additional material
 
-To get started creating new components in O3DE that integrate the behavior context, we recommend that you read the [Programmer's Guide to Component Development](/docs/user-guide/components/development/).
+To get started creating new components in O3DE that integrate the behavior context, we recommend that you read the [Programmer's Guide to Component Development](/docs/user-guide/programming/components/).
 
-For a closer look at the behavior context system itself, refer to [Behavior Context In-Depth](/docs/user-guide/components/development/behavior-context).
+For a closer look at the behavior context system itself, refer to [Behavior Context In-Depth](/docs/user-guide/programming/components/behavior-context).
