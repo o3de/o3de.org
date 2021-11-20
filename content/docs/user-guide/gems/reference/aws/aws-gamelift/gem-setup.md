@@ -87,28 +87,21 @@ You must include the AWS GameLift Gem static library in your project's CMake bui
     )
     ```
 
-## 3. Integrate game
+## 3. Integrate game and dedicated server
 
-For a client application, your game must implement the following use cases to manage a session:
-- `CreateSession`
-- `SearchSessions`
-- `JoinSession`
-- `LeaveSession`
-
-The AWS GameLift Gem provides both [C++ APIs](cpp-api/) and [scripting](scripting/). You can implement these use cases using either method.
+Check [Session Management Integration](session-management/integration/) for managing game sesions within your game and dedicated server.
+To support the optional FlexMatch feature, check [FlexMatch Integration](flexmatch/integration/).
 
 
-## 4. Integrate server
-
-To establish communication between your server and GameLift, you must notify GameLift that your server is ready, and then have your server respond to GameLift notifications.
-
-For more details on GameLift server notifications, refer to the [Server notifications](cpp-api/#server-notifications) section of the AWS GameLift Gem C++ API page.
-
-## 5. Set up AWS credentials
+## 4. Set up AWS credentials
 
 To work with AWS resources in O3DE you must set up AWS credentials for your users. 
 
-For more details, refer to [Configuring AWS Credentials](/docs/user-guide/gems/reference/aws/aws-core/configuring-credentials/).
+For more details on configuring your AWS credentials in O3DE, refer to [Configuring AWS Credentials](/docs/user-guide/gems/reference/aws/aws-core/configuring-credentials/).
+
+Please check [IAM policy examples for GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-iam-policy-examples.html) to configure appropriate permissions required to use the GameLift service.
+
+To use the FlexMatch feature for matchmaking and backfill, please check [Setting up FlexMatch](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-setting-up.html) for the required permissions.
 
 {{< note >}} 
 This step is only required for developers who perform remote tests and infrastructure builds against the GameLift service.
@@ -117,7 +110,7 @@ Alternatively, you can test your server's GameLift integration locally using Gam
 {{< /note >}} 
 
 
-## 6. Set up the AWS CLI and AWS CDK
+## 5. Set up the AWS CLI and AWS CDK
 
 The AWS GameLift Gem provides a sample AWS Cloud Development Kit (AWS CDK) application that you can use to model GameLift resources and deploy your server to GameLift. To do this, you must have the [AWS Command Line Interface (AWS CLI)](https://aws.amazon.com/cli/) and [AWS CDK](https://aws.amazon.com/cdk/) installed on your local machine.
 
@@ -126,4 +119,4 @@ The AWS GameLift Gem provides a sample AWS Cloud Development Kit (AWS CDK) appli
 
 Previous topic: [AWS GameLift Gem feature overview](/docs/user-guide/gems/reference/aws/aws-gamelift)
 
-Next topic: [AWS GameLift Gem C++ API](cpp-api/)
+Next topic: [Session Management](session-management/)

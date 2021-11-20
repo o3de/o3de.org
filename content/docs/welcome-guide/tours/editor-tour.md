@@ -28,7 +28,7 @@ You can customize the layout through drag and drop, and save to a custom layout 
 
    The Menu Bar contains several familiar menus:
 
-   * **File** - File menu items include actions for opening an saving levels, managing editor and project settings, and creating and opening projects.
+   * **File** - File menu items include actions for opening and saving levels, managing editor and project settings, and creating and opening projects.
 
    * **Edit** - Edit menu items include actions for working with selections such as duplicate, delete, hide and show selection, and working with selection transforms.
 
@@ -107,7 +107,7 @@ You might prefer to invert either axis of your editor camera controls, or, you m
 
 In the **Edit** menu, from the **Editor Settings** group, choose **Global Preferences**. Select **Camera** from list on the left. Here, you can invert either mouse axis and adjust the movement speed of the editor camera.
 
-When you have your movement preferences set to your liking, you might find at times that the editor camera movement is too fast or too slow in certain situations. You can adjust the movement speed by choosine the **Camera** icon in the **Perspective Toolbar** at the top of the **Perspective** pane.
+When you have your movement preferences set to your liking, you might find at times that the editor camera movement is too fast or too slow in certain situations. You can adjust the movement speed by choosing the **Camera** icon in the **Perspective Toolbar** at the top of the **Perspective** pane.
 
 ![O3DE Perspective movement speed.](/images/welcome-guide/ui-camera-speed.png)
 

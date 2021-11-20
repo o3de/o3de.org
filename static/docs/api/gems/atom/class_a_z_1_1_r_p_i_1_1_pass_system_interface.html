@@ -155,10 +155,6 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#aa1e62dddff1f5630ea918820965e0062">HasPassesForTemplateName</a> (const Name &amp;templateName) const =0</td></tr>
 <tr class="memdesc:aa1e62dddff1f5630ea918820965e0062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the pass factory contains passes created with the given template name. <br /></td></tr>
 <tr class="separator:aa1e62dddff1f5630ea918820965e0062"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8e5fb92d46bccff0f29869753cff63e"><td class="memItemLeft" align="right" valign="top"><a id="af8e5fb92d46bccff0f29869753cff63e"></a>
-virtual const AZStd::vector&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#af8e5fb92d46bccff0f29869753cff63e">GetPassesForTemplateName</a> (const Name &amp;templateName) const =0</td></tr>
-<tr class="memdesc:af8e5fb92d46bccff0f29869753cff63e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the passes created with the given template name. <br /></td></tr>
-<tr class="separator:af8e5fb92d46bccff0f29869753cff63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a411b96182e6927edb21a6216dd1be2b2"><td class="memItemLeft" align="right" valign="top"><a id="a411b96182e6927edb21a6216dd1be2b2"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a411b96182e6927edb21a6216dd1be2b2">AddPassTemplate</a> (const Name &amp;name, const AZStd::shared_ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> &gt; &amp;passTemplate)=0</td></tr>
 <tr class="memdesc:a411b96182e6927edb21a6216dd1be2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> to the library. <br /></td></tr>
@@ -167,14 +163,18 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual const AZStd::shared_ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a7b26b54b50e1f906ae41e906622ed342">GetPassTemplate</a> (const Name &amp;name) const =0</td></tr>
 <tr class="memdesc:a7b26b54b50e1f906ae41e906622ed342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> from the library. <br /></td></tr>
 <tr class="separator:a7b26b54b50e1f906ae41e906622ed342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ffd56ef8d513e99c85e915dbf6b616"><td class="memItemLeft" align="right" valign="top"><a id="aa6ffd56ef8d513e99c85e915dbf6b616"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#aa6ffd56ef8d513e99c85e915dbf6b616">RemovePassTemplate</a> (const Name &amp;name)=0</td></tr>
+<tr class="memdesc:aa6ffd56ef8d513e99c85e915dbf6b616"><td class="mdescLeft">&#160;</td><td class="mdescRight">See remarks in PassLibrary.h for the function with this name. <br /></td></tr>
+<tr class="separator:aa6ffd56ef8d513e99c85e915dbf6b616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad87c35c2fb3b9afb35f230d67efed58"><td class="memItemLeft" align="right" valign="top"><a id="aad87c35c2fb3b9afb35f230d67efed58"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#aad87c35c2fb3b9afb35f230d67efed58">RemovePassFromLibrary</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> *pass)=0</td></tr>
 <tr class="memdesc:aad87c35c2fb3b9afb35f230d67efed58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all references to the given pass from the pass library. <br /></td></tr>
 <tr class="separator:aad87c35c2fb3b9afb35f230d67efed58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a510ede393a2ed708994daed045a990a0"><td class="memItemLeft" align="right" valign="top"><a id="a510ede393a2ed708994daed045a990a0"></a>
-virtual AZStd::vector&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a510ede393a2ed708994daed045a990a0">FindPasses</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_filter.html">PassFilter</a> &amp;passFilter) const =0</td></tr>
-<tr class="memdesc:a510ede393a2ed708994daed045a990a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find matching passes from registered passes with specified filter. <br /></td></tr>
-<tr class="separator:a510ede393a2ed708994daed045a990a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cb6c3724d046ec60740480b92b4c9d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a55cb6c3724d046ec60740480b92b4c9d">ForEachPass</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_filter.html">PassFilter</a> &amp;filter, AZStd::function&lt; PassFilterExecutionFlow(<a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> *)&gt; passFunction)=0</td></tr>
+<tr class="separator:a55cb6c3724d046ec60740480b92b4c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14859d6743b106159a2f6258af99a08f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a14859d6743b106159a2f6258af99a08f">FindFirstPass</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_filter.html">PassFilter</a> &amp;filter)=0</td></tr>
+<tr class="separator:a14859d6743b106159a2f6258af99a08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -221,6 +221,75 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PassTests</b></td></
 <p>Connect a handler to listen to the event that the pass system is ready to load pass templates The event is triggered when pass system is initialized and asset system is ready. The handler can add new pass templates or load pass template mappings from assets </p>
 
 <p>Implemented in <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a241568863905db9950829a713a6d8850">AZ::RPI::PassSystem</a>.</p>
+
+</div>
+</div>
+<a id="a14859d6743b106159a2f6258af99a08f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14859d6743b106159a2f6258af99a08f">&#9670;&nbsp;</a></span>FindFirstPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a>* AZ::RPI::PassSystemInterface::FindFirstPass </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_filter.html">PassFilter</a> &amp;&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Find the first matching pass from registered passes with specified filter Note: this function SHOULD ONLY be used when you are certain you only need to handle the first pass found </p>
+
+<p>Implemented in <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#ae3a2245a44016642a069dc4e6b0b4148">AZ::RPI::PassSystem</a>.</p>
+
+</div>
+</div>
+<a id="a55cb6c3724d046ec60740480b92b4c9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55cb6c3724d046ec60740480b92b4c9d">&#9670;&nbsp;</a></span>ForEachPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::RPI::PassSystemInterface::ForEachPass </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_filter.html">PassFilter</a> &amp;&#160;</td>
+          <td class="paramname"><em>filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::function&lt; PassFilterExecutionFlow(<a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> *)&gt;&#160;</td>
+          <td class="paramname"><em>passFunction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Visit the matching passes from registered passes with specified filter The return value of the passFunction decides if the search continues or not Note: this function will find all the passes which match the pass filter even they are for render pipelines which are not added to a scene This function is fast if a pass name or a pass template name is specified. <br  />
+ </p>
+
+<p>Implemented in <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#aa159ed700311033d865392c5d9b1cb78">AZ::RPI::PassSystem</a>.</p>
 
 </div>
 </div>
@@ -355,7 +424,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PassTests</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:32:20 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

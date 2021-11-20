@@ -7,7 +7,7 @@
     {{ $social := site.Params.social }}
     {{ range $social }}
     {{ $color := .color }}
-    <div class="col-6 col-md-3">
+    <div class="col-6 col-md-4">
       <a class="btn" title="{{ .name }}" href="{{ .url }}" target="_blank">
         {{ with .icon }}
         <span class="icon">

@@ -36,7 +36,7 @@ For learning the Lua language itself, the [lua.org](http://www.lua.org) website 
 After you read through this tutorial on writing Lua scripts for the component entity system, learn more about using Lua in O3DE by consulting the following resources.
 
   + For information on O3DE's built-in Lua editor, refer to [Lua Editor](./lua-editor).
-  + For information about the O3DE EBus, refer to [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus).
+  + For information about the O3DE EBus, refer to [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus).
   
 ## Section Topics
 
@@ -56,7 +56,7 @@ After you read through this tutorial on writing Lua scripts for the component en
 | Topic | Description |
 | --- | --- |
 | [Camera Component](/docs/user-guide/components/reference/camera/camera) | Use the Camera component to allow an entity to be used as a camera. |
-| [Using Player Input](/docs/user-guide/interactivity/input/working-with-the-input-component) |  Work with the Input component in O3DE. |
+| [Using Player Input](/docs/user-guide/interactivity/input/using-player-input) |  Work with the Input component in O3DE. |
 | [Input Component Event Bus Interface](/docs/user-guide/components/reference/gameplay/input-event-bus-interface) | Work with the Input component EBus (event bus). |
 | [AWS Client Auth Scripting](/docs/user-guide/gems/reference/aws/aws-client-auth/scripting) | Examples of using the AWS Client Auth Gem with Script Canvas and Lua. |
 | [AWS Metrics Scripting](/docs/user-guide/gems/reference/aws/aws-metrics/scripting) | Examples of using Script Canvas or Lua with the AWS Metrics Gem to generate and submit metrics. |

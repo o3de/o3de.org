@@ -1,7 +1,7 @@
 ---
 linktitle: Nodes
 title: Script Canvas Nodes
-description: Learn how to place, connect, and organize nodes in the Open 3D Engine (O3DE) Script Canvas editor.
+description: Learn how to place, connect, and organize nodes in the Open 3D Engine (O3DE) Script Canvas Editor.
 weight: 200
 ---
 
@@ -24,6 +24,7 @@ A node in Script Canvas consists of a title bar, inputs, and outputs.
 The execution of a script is driven by triangular inputs and outputs on every node. These connections determine the order of execution. A Script Canvas script runs when the entity that is attached to the script is activated. Nodes are connected from the inputs on their left side. After they finish running, they activate nodes that are connected to their outputs on the right side.
 
 An output logic pin with multiple connections runs a logic branch in sequence. The execution sequence is determined by the order that the connections were made, from earliest to most recent. If a specific execution order is required, you can specify the sequence order by using a single logic flow or a **Sequencer** node.
+
 An incoming logic pin with multiple connections runs each time that the logic flow triggers the node. For example, if a node is triggered by three different nodes in a script, the node runs three times.
 
 **Data inputs, outputs, and connections**
@@ -36,7 +37,7 @@ You can make connections only between pins of the same type. For example, you ma
 
 **To make a connection**
 
-1. In the Script Canvas editor canvas, drag from the input pin of one node to an output pin of another node. This creates a connection line between the two pins.
+1. In the **Script Canvas Editor** canvas, drag from the input pin of one node to an output pin of another node. This creates a connection line between the two pins.
 
 1. To move a connection from one pin to another, drag the end of a line from one pin and drop it onto another pin.
 
@@ -56,7 +57,7 @@ For more information about using variables in Script Canvas, refer to [Script Ca
 
 ## Event nodes
 
-In O3DE's [Event Bus (EBus) system](/docs/user-guide/engine/ebus/), events can be sent or received. Script Canvas surfaces this system through the use of sender nodes and receiver nodes.
+In O3DE's [Event Bus (EBus) system](/docs/user-guide/programming/ebus/), events can be sent or received. Script Canvas surfaces this system through the use of sender nodes and receiver nodes.
 
 ### Sender nodes
 
@@ -125,11 +126,11 @@ The following example uses the Light component **Turned On** event node.
 
 **To enable and use Display Connection Controls**
 
-1. Ensure that **Node Inspector** is visible. In Script Canvas editor, choose **View**, **Node Inspector**, or press **Ctrl+Shift+I**.
+1. Ensure that **Node Inspector** is visible. In Script Canvas Editor, choose **View**, **Node Inspector**, or press **Ctrl+Shift+I**.
 
 1. Choose the Light **Turned On** node to select it.
 
-    ![Click to select a node in Script Canvas editor.](/images/user-guide/scripting/script-canvas/nodes-event-connection-controls-1.png)
+    ![Click to select a node in Script Canvas Editor.](/images/user-guide/scripting/script-canvas/nodes-event-connection-controls-1.png)
 
 1. In **Node Inspector**, select **Display Connection Controls**.
 

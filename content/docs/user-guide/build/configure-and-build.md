@@ -30,7 +30,7 @@ O3DE has build support for the following platforms and toolchains:
 
 In order to follow these build instructions, you'll need the following.
 
-* CMake {{< versions/cmake >}} or later. [Download from the CMake project](https://cmake.org/download/).
+* CMake {{< versions/cmake >}} or later. [Download from the CMake project](https://cmake.org/download/#latest).
 * A toolchain for your _host_ platform, to build the editor and tools.
 * A toolchain for your _target_ platform, to build your project. In most cases this will be the same as your host platform.
 

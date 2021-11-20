@@ -114,8 +114,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:aa17c39c5234a8c946d4010b80a35bb56 inherit pub_types_class_a_z_1_1_component_bus"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_a_z_1_1_entity_id.html">EntityId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_bus.html#aa17c39c5234a8c946d4010b80a35bb56">BusIdType</a></td></tr>
 <tr class="separator:aa17c39c5234a8c946d4010b80a35bb56 inherit pub_types_class_a_z_1_1_component_bus"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_struct_a_z_1_1_e_bus_traits"><td colspan="2" onclick="javascript:toggleInherit('pub_types_struct_a_z_1_1_e_bus_traits')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="struct_a_z_1_1_e_bus_traits.html">AZ::EBusTraits</a></td></tr>
-<tr class="memitem:a85f5dc9fc3acbfd2355e695fecca1e42 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a85f5dc9fc3acbfd2355e695fecca1e42">AllocatorType</a> = <a class="el" href="class_a_z_std_1_1allocator.html">AZStd::allocator</a></td></tr>
-<tr class="separator:a85f5dc9fc3acbfd2355e695fecca1e42 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d18a8cf116a63f6f1a2a39089651aac inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a7d18a8cf116a63f6f1a2a39089651aac">AllocatorType</a> = AZ::Internal::EBusEnvironmentAllocator</td></tr>
+<tr class="separator:a7d18a8cf116a63f6f1a2a39089651aac inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9445433422a226bf6ca92d06e74835f inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#ac9445433422a226bf6ca92d06e74835f">BusIdType</a> = <a class="el" href="struct_a_z_1_1_null_bus_id.html">NullBusId</a></td></tr>
 <tr class="separator:ac9445433422a226bf6ca92d06e74835f inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a5cc9acf15e838b810d9371aa6b858e inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a6a5cc9acf15e838b810d9371aa6b858e">BusIdOrderCompare</a> = NullBusIdCompare</td></tr>
@@ -138,6 +138,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a26e2728bcd1004fe8f1959350d55ab8f inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top"><a id="a26e2728bcd1004fe8f1959350d55ab8f"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>EventProcessingPolicy</b> = <a class="el" href="struct_a_z_1_1_e_bus_event_processing_policy.html">EBusEventProcessingPolicy</a></td></tr>
 <tr class="separator:a26e2728bcd1004fe8f1959350d55ab8f inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a111142fb7527a57987841927b4113 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplParams" colspan="2">template&lt;typename DispatchMutex , bool IsLocklessDispatch&gt; </td></tr>
+<tr class="memitem:ae1a111142fb7527a57987841927b4113 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#ae1a111142fb7527a57987841927b4113">DispatchLockGuard</a> = AZStd::conditional_t&lt; IsLocklessDispatch, AZ::Internal::NullLockGuard&lt; DispatchMutex &gt;, <a class="el" href="class_a_z_std_1_1scoped__lock.html">AZStd::scoped_lock</a>&lt; DispatchMutex &gt; &gt;</td></tr>
+<tr class="separator:ae1a111142fb7527a57987841927b4113 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_struct_a_z_1_1_e_bus_traits"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_struct_a_z_1_1_e_bus_traits')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="struct_a_z_1_1_e_bus_traits.html">AZ::EBusTraits</a></td></tr>
 <tr class="memitem:ab28df8aaec278ff471e7b5bd943cdc17 inherit pro_methods_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#ab28df8aaec278ff471e7b5bd943cdc17">~EBusTraits</a> ()=default</td></tr>
 <tr class="separator:ab28df8aaec278ff471e7b5bd943cdc17 inherit pro_methods_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,7 +153,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>EventProcessingPolic
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:30:34 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:18:25 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
