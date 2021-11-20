@@ -23,7 +23,7 @@ Use the **Look-At** component to force an entity to face another entity or posit
 
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
-| `SetAxis` | Sets the **Forward Axis** of the Look-At component. | Axis: 0 - 5; 0 = `Y+`, 1 = `Y-`, 2 = `X+`, 3 = `X-`, 4 = `Z+`, 5 = `Z-`| None | Yes |
+| `SetAxis` | Sets the **Forward Axis** of the Look-At component. | Axis: 0 - 5; 0 = `X+`, 1 = `X-`, 2 = `Y+`, 3 = `Y-`, 4 = `Z+`, 5 = `Z-`| None | Yes |
 | `SetTarget` | Sets the **Target** entity of the Look-At component. | Target Entity: EntityId | None | Yes |
 | `SetTargetPosition` | Sets the Look-At component to always point to a specific position. | Target Position: Vector3 | None | Yes |
 
