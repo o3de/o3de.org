@@ -1,12 +1,12 @@
 ---
-linkTitle: Custom Tools
-title: Custom Tool Tutorials
-description: Learn to design and develop custom tools to expand the Open 3D Engine (O3DE).
+linkTitle: Extend the Editor
+title: Extend the Open 3D Engine Editor
+description: Extend the Open 3D Engine (O3DE) Editor by developing a custom tool Gem.
 ---
 
-This section contains tutorials related to the design and development of custom tools that extend the **Open 3D Engine (O3DE) Editor**. Tools are dockable widgets or dialog windows that add functionality to O3DE. You can create custom tools written in C++ or Python.
+Extend the Open 3D Engine (O3DE) Editor by creating a custom tool Gem. A tool is a dockable widget or dialog window that implements functionality to O3DE Editor. You can create custom tools in C++ or Python.
 
 | Tutorial | Description |
 | - | - |
-| [Create a Custom Shape Tool in C++](shape-example-cpp) | Create a custom shape tool written in C++ that allows you to quickly create shape objects in your level. Learn about the **CppToolGem** template, the Tools UI API, and C++ development for O3DE. |
-| [Create a Custom Shape Tool in Python](shape-example-py) | Create a custom shape tool written in Python that allows you to quickly create shape objects in your level. Learn about the **PythonToolGem** template, the Tools UI API, and Python development for O3DE. |
+| [Create a Custom Tool Gem in C++](custom-tools/shape-example-cpp.md) | Extend the Editor by creating a custom tool Gem that's written in C++. Learn how to use the **CppToolGem** template, and practice C++ development with [Qt](https://wiki.qt.io/Main), O3DE's Tools UI API, and other O3DE APIs. |
+| [Create a Custom Tool Gem in Python](custom-tools/shape-example-py.md) | Extend the Editor by creating a custom tool Gem that's written in Python. Learn how to use the **PythonToolGem** template, and practice Python development with [Qt](https://wiki.qt.io/Main), O3DE Tools UI API, and other O3DE APIs.|
