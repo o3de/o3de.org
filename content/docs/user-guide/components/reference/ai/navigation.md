@@ -2,6 +2,7 @@
 description: ' Use the Navigation component to enable an entity to find and follow
   paths in Open 3D Engine. '
 title: Navigation
+draft: True
 ---
 
 

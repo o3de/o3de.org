@@ -2,6 +2,7 @@
 description: ' Use the Navigation Seed component to generate a color-coded markup
   that indicates where your AI can travel in Open 3D Engine. '
 title: Navigation Seed
+draft: True
 ---
 
 
