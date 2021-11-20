@@ -14,7 +14,7 @@ By the end of this tutorial, you'll be able to extend the Editor by creating you
 
 The following image is a preview of the Shape Exmple tool that you create in this tutorial.
 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/python-shape-example-demo.png" "1080" "An image of the Shape Example tool and some entities created by it." >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/python-shape-example-demo.png" "1080" "An image of the Shape Example tool and some entities created by it." >}}
 
 
 ## Prerequisites
@@ -73,7 +73,7 @@ To create a Gem based on the `PythonToolGem` template, complete the following st
 
 Now you can access the Shape Example tool! By default, this tool contains a simple user interface (UI). In the next steps, we'll design the tool's UI and code its functionality. (See C.)
 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/python-tool-gem-template-in-editor.png" "1080" "Editor with a tool created using the PythonToolGem template." >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/python-tool-gem-template-in-editor.png" "1080" "Editor with a tool created using the PythonToolGem template." >}}
 
 
 ## Code directory
@@ -82,11 +82,11 @@ This sections describes your MyPyShapeExample Gem's code structure. It's importa
 
 Example of `Code/Source` directory:
 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/python-tool-gem-template-directory.png" "720" "Editor with a tool created using the PythonToolGem template." >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/python-tool-gem-template-directory.png" "720" "Editor with a tool created using the PythonToolGem template." >}}
 
 Example of `Editor/Scripts` directory:
 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/python-tool-gem-template-directory-2.png" "620" "Editor with a tool created using the PythonToolGem template." >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/python-tool-gem-template-directory-2.png" "620" "Editor with a tool created using the PythonToolGem template." >}}
 
 ### Modules and system components
 
@@ -142,7 +142,7 @@ In this step, create an input field for the entity's name and a check box for an
 
 By the end of this step, your input field and check box should look like this:
 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/input-field-check-box.png" "500" "Shows UI for an input field and check box" >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/input-field-check-box.png" "500" "Shows UI for an input field and check box" >}}
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
@@ -229,7 +229,7 @@ In this step, you will create a combo box that contains a list of values that yo
 
 By the end of this step, your combo box should look like this:
 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/combo-box.png" "500" "Shows UI for combo box" >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/combo-box.png" "500" "Shows UI for combo box" >}}
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
@@ -288,7 +288,7 @@ In this step, you will create a collection of buttons that create an entity with
 
 By the end of this step, your buttons should look like this:
 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/buttons.png" "500" "Shows UI for buttons" >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/buttons.png" "500" "Shows UI for buttons" >}}
 
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
@@ -439,7 +439,7 @@ Define `CreateEntityWithShapeComponent(...)`, which communicates with O3DE EBuse
 
 An icon is an image file that's used to represent your tool in the Editor. The icon appears in the Edit Mode Toolbar in the Editor (see the following image).
 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/icon.png" "500" "Add an icon for your tool in the Editor" >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/icon.png" "500" "Add an icon for your tool in the Editor" >}}
 
 ### Add an icon
 
@@ -477,13 +477,13 @@ You can debug your custom tool by running it from the **Python Scripts** panel i
 
 1. Open Editor for your project.
 
-2. Open the Python Scripts panel by selecting **Tools > Other > Python Scripts** from the file menu. (See A in the following image.)
+2. Open the Python Scripts panel by selecting **Tools > Other > Python Scripts** from the file menu.
 
-3. Open `pyshapeexample_dialog` in the Python Scripts panel. (See B in the following image.)
+3. Open `pyshapeexample_dialog` in the Python Scripts panel.
 
 Congratulations! You created a custom tool Gem that's written in Python, built it, and loaded it in the Editor. Your Shape Example tool should look something like this:
 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/python-shape-example-ui.png" "500" "An image of the Shape Example tool." >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/python-shape-example-ui.png" "500" "An image of the Shape Example tool." >}}
 
 ## Download the PyShapeExample Gem sample
 

@@ -14,7 +14,7 @@ By the end of this tutorial, you'll be able to extend the Editor by creating you
 
 The following image is a preview of the Shape Exmple tool that you create in this tutorial.
 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/cpp-shape-example-demo.png" "1080" "An image of the Shape Example tool and some entities created by it." >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/cpp-shape-example-demo.png" "1080" "An image of the Shape Example tool and some entities created by it." >}}
 
 
 ## Prerequisites
@@ -72,7 +72,7 @@ To create a Gem from the `CppToolGem` template, complete the following steps:
 
 Now you can access the Shape Example tool! By default, this tool contains a simple user interface (UI). In the next steps, we'll design the tool's UI and code its functionality. (See C.)
 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/cpp-tool-gem-template-in-editor.png" "1080" "Editor with a tool created using the CppToolGem template" >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/cpp-tool-gem-template-in-editor.png" "1080" "Editor with a tool created using the CppToolGem template" >}}
 
 
 ## Code directory
@@ -81,7 +81,7 @@ This sections describes your MyCppShapeExample Gem's code structure. It's import
 
 Example of `Code/Source` directory:
 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/cpp-tool-gem-template-directory.png" "720" "Editor with a tool created using the CppToolGem template." >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/cpp-tool-gem-template-directory.png" "720" "Editor with a tool created using the CppToolGem template." >}}
 
 
 ### Modules and system components
@@ -137,7 +137,7 @@ ShapeExampleWidget::ShapeExampleWidget(QWidget* parent)
 In this step, create an input field for the entity's name and a check box for an option to append a suffix---the component's name---to the entity's name. For example, suppose you set the entity's name to "MyEntity" and enable the check box. Then, when you create an entity with a **Box Shape** component and another with a **Sphere Shape** component, they will respectively be named "MyEntity_BoxShape" and "MyEntity_SphereShape".
 
 By the end of this step, your input field and check box should look like this: 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/input-field-check-box.png" "500" "Shows UI for an input field and check box" >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/input-field-check-box.png" "500" "Shows UI for an input field and check box" >}}
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
@@ -229,7 +229,7 @@ After creating the UI elements---an input field and a check box---and connecting
 In this step, you will create a combo box that contains a list of values that you can use to scale the size of the entity.
 
 By the end of this step, your combo box should look like this: 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/combo-box.png" "500" "Shows UI for combo box" >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/combo-box.png" "500" "Shows UI for combo box" >}}
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
@@ -287,7 +287,7 @@ A combo box allows users to select an item from a pop up list of items. With Qt,
 In this step, you will create a collection of buttons that create an entity with different Shape components, such as with a Box Shape, Sphere Shape, Cone Shape, and so on.
 
 By the end of this step, your buttons should look like this: 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/buttons.png" "500" "Shows UI for buttons" >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/buttons.png" "500" "Shows UI for buttons" >}}
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
@@ -474,7 +474,7 @@ void ShapeExampleWidget::CreateEntityWithShapeComponent(const AZ::TypeId& typeId
 
 An icon is an image file that's used to represent your tool in the Editor. The icon appears in the Edit Mode Toolbar in the Editor (see the following image).
 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/icon.png" "500" "Add an icon for your tool in the Editor" >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/icon.png" "500" "Add an icon for your tool in the Editor" >}}
 
 
 ### Add an icon
@@ -518,7 +518,7 @@ After, you can launch Editor and load the Gem.
 
 Congratulations! You created a custom tool Gem that's written in C++, built it, and loaded it in the Editor. Your Shape Example tool should look something like this:
 
-{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/cpp-shape-example-ui.png" "500" "An image of the Shape Example tool." >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/cpp-shape-example-ui.png" "500" "An image of the Shape Example tool." >}}
 
 ## Download the ShapeExample Gem sample
 
