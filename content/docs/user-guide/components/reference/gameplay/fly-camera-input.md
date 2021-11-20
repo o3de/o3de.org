@@ -8,7 +8,7 @@ Use the **Fly Camera Input** component to quickly add a controllable camera to y
 
 ## Provider
 
-Atom Bridge Gem
+[Atom Bridge Gem](https://o3de.org/docs/user-guide/gems/reference/rendering/atom/atom-ly-integration/)
 
 ## Dependencies ##
 

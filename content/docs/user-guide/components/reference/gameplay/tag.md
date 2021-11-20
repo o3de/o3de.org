@@ -16,7 +16,7 @@ Use the **Tag** component to apply one or more labels, or *tags*, to an entity. 
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Tags** | An array of tags that are added to the entity. | EntityId | None | 
+| **Tags** | An array of tags that are added to the entity. | Array: Tag | None | 
 
 ## TagHelper
 
