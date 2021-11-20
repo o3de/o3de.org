@@ -12,8 +12,8 @@ toc: true
 
 | Gem | Description |
 | - | - |
-| [EMotionFX](./animation/emotionfx) | The EMotion FX Animation Gem provides Open 3D Engine's animation system for rigged actors and includes Animation Editor, a tool for creating animated behaviors, simulated objects, and colliders for rigged actors. |
-| [Maestro](./animation/maestro) | The Maestro Gem provides Track View, Open 3D Engine's animated sequence and cinematics editor. |
+| [EMotion FX Animation](./animation/emotionfx) | The EMotion FX Animation Gem provides Open 3D Engine's animation system for rigged actors and includes Animation Editor, a tool for creating animated behaviors, simulated objects, and colliders for rigged actors. |
+| [Maestro Cinematics](./animation/maestro) | The Maestro Cinematics Gem provides Track View, Open 3D Engine's animated sequence and cinematics editor. |
 
 ## Artificial Intelligence
 
@@ -29,7 +29,7 @@ toc: true
 | [Asset Validation](./assets/asset-validation) | The Asset Validation Gem provides seed-related commands to ensure assets have valid seeds for asset bundling. |
 | [Custom Asset Example](./assets/custom-asset-example) | The Custom Asset Example Gem provides example code for creating a custom asset for Open 3D Engine's asset pipeline. |
 | [Dev Textures](./assets/dev-textures) | The Dev Textures Gem provides a collection of general purpose texture assets useful for prototypes and preproduction. |
-| [Prefab](./assets/prefab) | The Prefab Gem provides an Asset Processor module for prefabs, which are complex assets built by combining smaller entities. |
+| [Prefab Builder](./assets/prefab) | The Prefab Builder Gem provides an Asset Processor module for prefabs, which are complex assets built by combining smaller entities. |
 | [Primitive Assets](./assets/primitive-assets) | The Primitive Assets Gem provides primitive shape mesh objects with physics enabled. |
 | [Scene Processing](./assets/scene-processing) | The Scene Processing Gem provides FBX Settings, a tool you can use to specify the default settings for processing .fbx files for actors, meshes, motions, and PhysX. |
 | [Test Asset Builder](./assets/test-asset-builder) | The Test Asset Builder Gem is used to feature test Asset Processor. |
@@ -62,10 +62,10 @@ toc: true
 | Gem | Description |
 | - | - |
 | [Asset Memory Analyzer](./debug/asset-memory-analyzer) | The Asset Memory Analyzer Gem provides tools to profile asset memory usage in Open 3D Engine through ImGUI (Immediate Mode Graphical User Interface). |
-| [Automated Launcher Testing](./debug/automated-launcher-testing) | The Automated Launcher Testing Gem manages automated Open 3D Engine (O3DE) launcher tests. |
 | [Crash Reporting](./debug/crash-reporting) | The Crash Reporting Gem provides support for external crash reporting for Open 3D Engine projects. |
 | [Debug Draw](./debug/debug-draw) | The Debug Draw Gem provides Editor and runtime debug visualization features for Open 3D Engine. |
-| [Immediate Mode GUI (ImGui)](./debug/imgui) | The Immediate Mode GUI Gem provides the 3rdParty library IMGUI which can be used to create run time immediate mode overlays for debugging and profiling information in Open 3D Engine. |
+| [Immediate Mode GUI (IMGUI)](./debug/imgui) | The Immediate Mode GUI Gem provides the 3rdParty library IMGUI which can be used to create run time immediate mode overlays for debugging and profiling information in Open 3D Engine. |
+<!-- | [Automated Launcher Testing](./debug/automated-launcher-testing) | The Automated Launcher Testing Gem manages automated Open 3D Engine (O3DE) launcher tests. | -->
 
 ## Design
 
@@ -80,8 +80,8 @@ toc: true
 | [Landscape Canvas](./environment/landscape-canvas) | The Landscape Canvas Gem provides the Landscape Canvas editor; a node-based graph tool for authoring workflows to populate landscape with dynamic vegetation. |
 | [Surface Data](./environment/surface-data) | The Surface Data Gem provides functionality to emit signals or tags from surfaces such as meshes and terrain. |
 | [Vegetation](./environment/vegetation) | The Vegetation Gem provides tools to place natural-looking vegetation in Open 3D Engine. |
-| [Vegetation Gem Assets](./environment/vegetation-gem-assets) | The Vegetation Assets Gem provides vegetation models, textures, and other assets and samples for use with the Vegetation Gem and Landscape Canvas. |
 | [Terrain](./environment/terrain) | The Terrain Gem provides a terrain system that maps height, color, and surface data to regions of the world. It also provides gradient-based and shape-based authoring tools and workflows, integrates with physics for physical simulation and efficiently renders terrain. |
+<!-- | [Vegetation Gem Assets](./environment/vegetation-gem-assets) | The Vegetation Assets Gem provides vegetation models, textures, and other assets and samples for use with the Vegetation Gem and Landscape Canvas. | -->
 
 ## Framework
 
@@ -139,13 +139,13 @@ toc: true
 
 | Gem | Description |
 | - | - |
-| [Atom](./rendering/atom/atom) | The Atom Gem provides Atom Renderer and its associated tools (such as Material Editor), utilites, libraries, and interfaces. |
+| [Atom Common Features](./rendering/atom/atom) | The Atom Gem provides Atom Renderer and its associated tools (such as Material Editor), utilites, libraries, and interfaces. |
 | [Atom Content](./rendering/atom/atom-content) | The Atom Content Gem provides assets including models, textures, and materials, that  can be used to test Atom Renderer in  Open 3D Engine. |
 | [Atom O3DE Integration](./rendering/atom/atom-o3de-integration) | The Atom O3DE Integration Gem provides components, libraries, and functionality to support and integrate Atom Renderer in Open 3D Engine. |
 | [Atom TressFX](./rendering/amd/atom-tressfx) | The Atom TressFX Gem provides realistic hair and fur simulation and rendering in Atom and Open 3D Engine. |
 | [Camera](./rendering/camera) | The Camera Gem provides a basic camera component that defines a frustum for runtime rendering. |
 | [Camera Framework](./rendering/camera-framework) | The Camera Framework Gem provides a base for implementing more complex camera systems. |
-| [PBS Reference Materials](./rendering/pbs-reference-materials) | The PBS Reference Materials Gem provides physically based reference materials for Open 3D Engine (O3DE) projects. |
+| [PBR Reference Materials](./rendering/pbr-reference-materials) | The PBR Reference Materials Gem provides physically based reference materials for Open 3D Engine (O3DE) projects. |
 | [Starting Point Camera](./rendering/starting-point-camera) | The Starting Point Camera Gem provides the behaviors used with the Camera Framework Gem to define a camera rig. |
 | [Video Playback Framework](./rendering/video-playback-framework) | The Video Playback Framework Gem provides the interface to play back video. |
 
@@ -168,7 +168,7 @@ toc: true
 
 | Gem | Description |
 | - | - |
-| [In App Purchases](./sdk/in-app-purchases) | The In App Purchases Gem provides functionality for in app purchases in Open 3D Engine projects. |
+| [In-App Purchases](./sdk/in-app-purchases) | The In-App Purchases Gem provides functionality for in app purchases in Open 3D Engine projects. |
 
 ## UI
 
