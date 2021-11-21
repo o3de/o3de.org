@@ -1,5 +1,5 @@
 ---
-title: Display Mapper component
+title: Display Mapper Component
 linktitle: Display Mapper
 description: 'Open 3D Engine (O3DE) Display Mapper component reference.'
 toc: true

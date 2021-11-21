@@ -1,5 +1,5 @@
 ---
-title: Physical Sky component
+title: Physical Sky Component
 linktitle: Physical Sky
 description: 'Open 3D Engine (O3DE) Physical Sky component reference.'
 toc: true

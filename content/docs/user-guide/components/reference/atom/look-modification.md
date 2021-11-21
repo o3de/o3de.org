@@ -1,5 +1,5 @@
 ---
-title: Look Modification component
+title: Look Modification Component
 linktitle: Look Modification
 description: 'Open 3D Engine (O3DE) Look Modification component reference.'
 toc: true

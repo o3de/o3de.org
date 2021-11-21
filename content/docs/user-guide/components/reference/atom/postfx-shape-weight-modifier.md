@@ -1,5 +1,5 @@
 ---
-title: PostFX Shape Weight Modifier component
+title: PostFX Shape Weight Modifier Component
 linktitle: PostFX Shape Weight Modifier
 description: 'Open 3D Engine (O3DE) PostFX Shape Weight Modifier component reference.'
 toc: true
