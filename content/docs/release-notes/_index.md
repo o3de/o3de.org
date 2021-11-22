@@ -22,8 +22,8 @@ primary: true
 
 | Version                            | Binary download link                             |  Date of Release   |
 |------------------------------------|--------------------------------------------------|--------------------|
-| 21.11 \[Windows\] (Stable)         | [Download](https://o3debinaries.org/development/Latest/Windows/o3de_installer.exe) | December 2, 2021   |
-| 21.11 \[Linux\] (Stable Preview)   | [Download](https://o3debinaries.org/main/Latest/Linux/O3DE_latest.deb            ) | December 2, 2021   |
+| 21.11 \[Windows\] (Stable)         | [Download](https://o3debinaries.org) | December 2, 2021   |
+| 21.11 \[Linux\] (Stable Preview)   | [Download](https://o3debinaries.org) | December 2, 2021   |
 | 2107.1 (Developer Preview)         | Source code only                                 | July 6, 2021       |
 
 ### Get the latest source code
