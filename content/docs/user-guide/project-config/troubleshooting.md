@@ -23,3 +23,10 @@ Looking for error logs or memory dumps? Refer to [Open 3D Engine Log Files](/doc
 **Issue:** CMake cannot find the directory of the specified Gem. When adding external Gems to your project, you must register the Gem's directory to your project. This enables your project to find the Gem. This issue may occur if the Gem's directory location has changed.
 
 **Remedy:** Check that the correct path of the Gem is registered to your project. You can find the paths to a registered Gem in your project's `project.json` configuration file under `external_subdirectories`. If necessary, update the Gem's directory path, or clean up any obsolete paths.
+
+## Editor and Asset Processor running incorrect project when using O3DE.exe (Source Engine only)
+
+**Issue:** The Editor and the Asset Processor that is launched by the `O3DE.exe` runs with the incorrect project. This occurs if the executable directory is underneath a project root that differs from the launched project. This issue may occur if using an` O3DE.exe` built in a project-centric workflow where the build directory is placed under the project root. This is due to applications first detecting the project root via scanning upwards for a `project.json` file before using the `--project-path` option.  
+This issue will not occur when using O3DE.exe with an SDK Engine.
+
+**Remedy:** Close the current `O3DE.exe` instance and navigate over to the new project's directory. If the new project has successfully built, then run the `O3DE.exe` in the `<project-path>/build/<build-dir-name>/bin/profile` directory.
