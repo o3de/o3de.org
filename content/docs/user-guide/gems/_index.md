@@ -19,6 +19,5 @@ All Gems that come bundled with O3DE are located in the `Gems` directory. Enable
 
 | **Topic** | **Description** |
 | --- | --- |
-| [Developing Gems](./development) | Learn how to develop custom Gems to use in O3DE projects. |
 | [Gems Available in O3DE](./reference) | The complete reference to all Gems available in O3DE. |
 | [Core O3DE Gems](./core-gems) | Learn about the core Gems that are required for most projects in O3DE. |
