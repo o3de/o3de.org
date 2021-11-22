@@ -10,21 +10,9 @@ guide_img: "/images/release-notes/guide_img.png"
 primary: true
 ---
 
-## Current Versions of Open 3D Engine
+The complete index of compiled release notes for each available version of **Open 3D Engine (O3DE)**. Newer versions appear higher on the list.
 
-### Download the latest version
-
-| Version        | Binary download link          |  Date of Release   |
-|----------------|-------------------------------|--------------------|
-| 2107.1 (Developer Preview) | _COMING SOON!_         |  July 6, 2021      |
-
-### Get the latest source code
-
-| Version         | Current branch                   |  Last updated      |
-|-----------------|----------------------------------|--------------------|
-| 2107.1 (Developer Preview) | [2107.1](https://github.com/o3de/o3de/tree/main) |  July 6, 2021      |
-
-### 2107.1 (Developer Preview) Release Information
-
-* [2107.1 Release Notes](archive/2107-1-release-notes)
-* [2107.1 Known Issues](https://github.com/o3de/o3de/issues/1736)
+| Version | Date of Release |
+|-|-|
+| [2111.1](2111-1) | 2021-11-30 |
+| [2107.1 - Developer Preview](2107-1-release-notes) | 2021-07-05 |
