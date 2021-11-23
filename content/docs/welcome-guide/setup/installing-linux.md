@@ -16,9 +16,9 @@ The instructions here assume that you have met all hardware and software require
 1. Get the latest version of the deb package from the [O3DE download](https://o3de.org/download/#linux) page.
 
 1. Run the installer from your download location.
-```shell
-sudo apt install <path_to_deb_package>/<debian_package_name>.deb
-```
+    ```shell
+    sudo apt install <path_to_deb_package>/<debian_package_name>.deb
+    ```
 Where:
 * `<path_to_deb_package>` is the path where the deb package was downloaded to, e.g. `~/Downloads`
 * `<debian_package_name>` is the name of the package, e.g. `O3DE_2111_1.deb`
