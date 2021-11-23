@@ -23,7 +23,7 @@ The instructions here assume that you have met all hardware and software require
     * `<path_to_deb_package>`: The path where you downloaded the deb package. Example: `~/Downloads`.
     * `<debian_package_name>`: The name of the package. Example: `O3DE_2111_1.deb`.
 
-1. The default install location is: `/opt/O3DE/<version>`. Where `<version>` is the version of the installer, e.g. `2111_1`.
+    O3DE will be installed in the default location: `/opt/O3DE/<version>`, where `<version>` is the version of the installer. Example: `2111_1`.
 
 1. During installation, the installer downloads additional packages as needed. The process can take some time, depending on your internet connection speed and what packages were already installed. An example output looks like the following (versions and paths may not match):
 ```shell
