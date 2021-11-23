@@ -253,14 +253,14 @@ To set up and run Asset Bundler, do the following:
 
     This command contains the following options:
 
-    - `--target AssetBundler`: Sets the build target to Asset Bundler and Asset Bundler Batch, and their dependent modules.
+    - `--target AssetBundler` -- Sets the build target to Asset Bundler and Asset Bundler Batch, and their dependent modules.
 
-    - `--config profile`: Sets the build configuration to profile, which enables optimization and allows debugging.
+    - `--config profile` -- Sets the build configuration to profile, which enables optimization and allows debugging.
 
 
 1. Run `AssetBundler.exe` from the `<engine>\build\windows_vs2019\bin\profile` directory. This opens Asset Bundler with the GUI. (Alternatively, to use the CLI, run `AssetBundlerBatch.exe`.)
 
-Now you should have Asset Bundler running, which looks like this in the GUI:
+Now you should have Asset Bundler open, which looks like this in the GUI:
 
 {{< image-width "/images/user-guide/packaging/windows-release-build/asset-bundler-default-gui.png" "1000" "An annotated image of O3DE editor's user interface." >}}
 
@@ -277,7 +277,7 @@ When bundling your game assets, it's only important to bundle assets that your g
 
 #### Create a new seed asset list
 
-1. In the Asset Bundler GUI, on the **Seeds** tab, in the **Seed List file** panel, click **Create a new Seed List file**. For this example, name the file `GameSeedList`.
+1. In the Asset Bundler GUI, on the **Seeds** tab, in the **Seed List file** panel, click **Create new Seed List file**. For this example, name the file `GameSeedList`.
 
 1. Select the `GameSeedList` file from the list.
 
@@ -287,9 +287,11 @@ When bundling your game assets, it's only important to bundle assets that your g
 
 1. Click **Browse...**, which opens File Explorer.
 
-1. In File Explorer, browse to the `levels` folder, and then choose **Add Seed**.
+1. In File Explorer, browse to the `levels` folder.
 
-1. In the Asset Bundler GUI, in the **Product Assets** panel, verify that your seed list has the level assets.
+1. In the **Add Seed Asset** dialog, click **Add Seed**.
+
+1. In the Asset Bundler, in the **Product Assets** panel, verify that your seed list has the level assets.
 
 #### Generate an asset list
 
@@ -357,9 +359,9 @@ Next, add your `game_pc.pak` and `engine_pc.pak` files to your project game rele
 
 1. Navigate to the `<install>\bin\Windows\release\<build>\Cache\pc` directory, which contains the bundled content in your project game release layout directory. For example, the default path could be:
 
-   - `C:/MyProject/install/bin/Windows/release/Default/Cache/pc` -- For non-monolithic.
-
-   - `C:/MyProject/install/bin/Windows/release/Monolithic/Cache/pc` -- For monolithic.
+   - `C:\MyProject\install\bin\Windows\release\Default\Cache\pc` -- For non-monolithic builds.
+   
+   - `C:\MyProject\install\bin\Windows\release\Monolithic\Cache\pc` -- For monolithic builds.
 
 1. Remove the `engine.pak` file created earlier in [Create a project game release layout](#create-a-project-game-release-layout). You don't need it because you created new bundles.
 
