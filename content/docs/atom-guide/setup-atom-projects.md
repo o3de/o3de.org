@@ -21,7 +21,7 @@ This tutorial uses the following project name and directories in the examples:
 - O3DE engine directory: `C:\o3de`
 - Atom Test project directory: `C:\AtomTest`
 - Atom Sample Viewer project directory: `C:\AtomSampleViewer`
-- Package directory (created earlier during [setup](/docs/welcome-guide/setup/setup-from-github/#create-a-packages-directory)): `C:\o3de-packages`
+- Package directory (created earlier during [setup](/docs/welcome-guide/setup/setup-from-github/)): `C:\o3de-packages`
 
 ## Clone project repos
 
