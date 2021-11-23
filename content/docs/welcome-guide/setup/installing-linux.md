@@ -1,5 +1,6 @@
 ---
-title: Setting up O3DE from a deb package in Linux
+linktitle: Installing O3DE for Linux
+title: Installing O3DE for Linux from a deb package
 description: Learn how to install and set up Open 3D Engine (O3DE) using a deb package in Linux.
 weight: 200
 draft: true
