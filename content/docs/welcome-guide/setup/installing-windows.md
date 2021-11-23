@@ -5,18 +5,18 @@ description: Learn how to install and set up Open 3D Engine (O3DE) for Windows u
 weight: 100
 ---
 
-To get started quickly with O3DE, download and run the installer. The following instructions guide you through the installation process. After a successful install, you'll have a stable, pre-built version of the engine and its Gems, and you'll be ready to create new or open existing projects with the **Project Manager** tool.
+To get started quickly with O3DE in Windows, download and run the installer. The following instructions guide you through the installation process. After a successful install, you'll have a stable, pre-built version of the engine and its Gems, and you'll be ready to create new or open existing projects with the **Project Manager** tool.
 
 ## Prerequisites
 
-The instructions here assume that you have:
+The following instructions assume that you have:
 
 * Met all hardware and software requirements listed in [O3DE System Requirements](../requirements).
-* Configured the required software as described in the [Software configuration](../requirements#software-configuration) section of the system requirements topic.
+* Configured the required Windows software as described in the [Microsoft Windows](../requirements/#microsoft-windows) section of the system requirements topic.
 
 ## Installing O3DE
 
-1. Get the latest version of the installer from the [O3DE download](https://o3de.org/download/) page.
+1. Get the latest version of the Windows installer from the [O3DE download](https://o3de.org/download/#windows) page.
 
 1. Run the installer from your download location.
 

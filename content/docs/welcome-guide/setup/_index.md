@@ -9,5 +9,6 @@ The topics in this section guide you through the process of setting up your **Op
 
 | Topic | Description |
 | --- | --- |
+| [Installing O3DE for Windows](./installing-windows) | Learn how to install and set up O3DE for Windows using the installer tool. |
 | [Setting up O3DE from GitHub](./setup-from-github) | Learn how to set up O3DE by downloading and building the engine from its GitHub source. |
-| [Troubleshooting the setup](./troubleshooting) | Find tips to help troubleshoot your O3DE setup when things go wrong. |
+| [Troubleshooting the Setup](./troubleshooting) | Find tips to help troubleshoot your O3DE setup when things go wrong. |
