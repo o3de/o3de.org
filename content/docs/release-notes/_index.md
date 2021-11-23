@@ -22,8 +22,8 @@ primary: true
 
 | Version                            | Binary download link                             |  Date of Release   |
 |------------------------------------|--------------------------------------------------|--------------------|
-| 21.11 \[Windows\] (Stable)         | [Download](https://o3debinaries.org/download/windows.html) | December 2, 2021   |
-| 21.11 \[Linux\] (Stable Preview)   | [Download](https://o3debinaries.org/download/linux.html) | December 2, 2021   |
+| 21.11 \[Windows\] (Stable) | [Download](https://o3debinaries.org/download/windows.html) | December 2, 2021   |
+| 21.11 \[Linux\] (Preview)  | [Download](https://o3debinaries.org/download/linux.html) | December 2, 2021   |
 
 ### Get the latest source code
 
