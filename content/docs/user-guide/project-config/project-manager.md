@@ -109,20 +109,20 @@ The project context menu contains the following actions:
 The **Engine** tab contains settings from the engine manifest and the O3DE manifest. The default folder locations are editable on this screen.
 
 {{< note >}}
-The `.o3de` directory in your user folder is the default location for all of the default folders. If you have limited drive space in your user folder, consider changing some of these default folder locations&mdash;particularly the "3rd Party Software Folder," which will contain several GB of downloaded packages after creating your first project.
+The default location for all of the default folders is in your user folder. If you have limited drive space in your user folder, consider changing some of these default folder locations&mdash;particularly the "3rd Party Software Folder," which will contain several GB of downloaded packages after creating your first project.
 {{< /note >}}
 
 ![Engine tab with default values](/images/user-guide/project-config/project-manager/engine-tab.png)
 
 The Engine tab contains the following O3DE settings:
 
-| Setting | Description |
-| - | - |
-| **Engine Version** | (Read-only) Displays the O3DE engine version read from the `engine.json` manifest of the engine associated with Project Manager when Project Manager was launched. |
-| **3rd Party Software Folder** | Defines the location of the downloadable packages used by O3DE and its components. |
-| **Default Projects Folder** | Defines the default folder for projects. New projects will be created in this folder unless a different path is specified during the new project workflow. |
-| **Default Gems Folder** | Defines the default folder for Gems. New Gems will be created in this folder unless a different path is specified when the Gem is created. |
-| **Default Project Templates Folder** | Defines the default folder for project templates. New project templates will be created in this folder unless a different path is specified when the project template is created. |
+| Setting | Description | Default |
+| - | - | - |
+| **Engine Version** | (Read-only) Displays the O3DE engine version read from the `engine.json` manifest of the engine associated with Project Manager when Project Manager was launched. | |
+| **3rd Party Software Folder** | Defines the location of the downloadable packages used by O3DE and its components. | `<user>/.o3de/3rdParty` |
+| **Default Projects Folder** | Defines the default folder for projects. New projects will be created in this folder unless a different path is specified during the new project workflow. | `<user>/O3DE/Projects` |
+| **Default Gems Folder** | Defines the default folder for Gems. New Gems will be created in this folder unless a different path is specified when the Gem is created. | `<user>/O3DE/Gems` |
+| **Default Project Templates Folder** | Defines the default folder for project templates. New project templates will be created in this folder unless a different path is specified when the project template is created. | `<user>/O3DE/Templates` |
 
 ### Project details
 
