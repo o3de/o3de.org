@@ -13,7 +13,7 @@ The instructions here assume that you have met all hardware and software require
 
 ## Installing O3DE
 
-1. Get the latest version of the deb package from the [O3DE download](https://o3de.org/download/) page.
+1. Get the latest version of the deb package from the [O3DE download](https://o3de.org/download/#linux) page.
 
 1. Run the installer from your download location.
 ```shell
