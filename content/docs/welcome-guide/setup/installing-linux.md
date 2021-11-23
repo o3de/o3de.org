@@ -50,7 +50,9 @@ Unpacking o3de (2111_1) over (2111_1) ...
 Setting up o3de (2111_1) ...
 ```
 
-1. Project Manager can be located in `/opt/O3DE/<version>/bin/Linux/profile/Default/o3de`. Can be launched by invoking it from the shell, example:
+When installation is complete, you can find **Project Manager** and other tools in `<install-directory>/bin/Linux/profile/Default`.
+
+Example of launching Project Manager from the shell:
 ```shell
 /opt/O3DE/2111_1/bin/Linux/profile/Default/o3de
 ```
