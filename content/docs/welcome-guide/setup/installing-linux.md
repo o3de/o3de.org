@@ -3,7 +3,6 @@ linktitle: Installing O3DE for Linux
 title: Installing O3DE for Linux from a deb package
 description: Learn how to install and set up Open 3D Engine (O3DE) for Linux using a deb package.
 weight: 200
-draft: true
 ---
 
 To get started quickly with O3DE in Linux, download and install the deb package. The following instructions guide you through the installation process. After a successful install, you'll have a stable, pre-built version of the engine and its Gems, and you'll be ready to create new or open existing projects with the **Project Manager** tool.
