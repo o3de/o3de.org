@@ -25,73 +25,47 @@ Other highlights include:
 
 ## Features
 
-We've grouped new and updated features by the O3DE Special Interest Groups (SIGs) that developed them.
-### SIG-Networking
+### Networking
 
-* **Cloud Services**
-  * The AWS GameLift Gem is completed and out of preview.
-    * Added Linux support
-    * Added [AWS GameLift FlexMatch](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-intro.html) support
-* **Networking**
-  * Added support for Network Hierarchy of Entities, which provides a way to group network entities to combine the processing of multiplayer inputs.
-    * RFC: https://github.com/o3de/sig-network/blob/main/rfcs/rfc-net-20211005-2-entityhierarchies.md
-  * Added support for networking scripting inputs, which enables extensive use of O3DE's Script Canvas to build and run networking scripts.
-    * RFC: https://github.com/o3de/sig-network/blob/main/rfcs/rfc-net-20211005-1-inputscripting.md
-  * Added Linux support for Client and Server targets in [O3DE-MultiplayerSample](https://github.com/o3de/o3de-multiplayersample).
-        * `MultiplayerSample.GameLauncher` and `MultiplayerSample.ServerLauncher` can now be built and executed on Linux!
+* Added support for Network Hierarchy of Entities, which provides a way to group network entities to combine their multiplayer input processing. ([RFC](https://github.com/o3de/sig-network/blob/main/rfcs/rfc-net-20211005-2-entityhierarchies.md))
+* Added support for networking scripting inputs, which enables extensive use of script canvas to build and run networking scripts ([RFC](https://github.com/o3de/sig-network/blob/main/rfcs/rfc-net-20211005-1-inputscripting.md))
+* Added Linux support for Client and Server targets in [O3DE-MultiplayerSample](https://github.com/o3de/o3de-multiplayersample).
 
-### SIG-UI/UX
+#### Cloud Services
 
-* Improved the new user onboarding experience.
-  * Added UI support for Remote Gems
-  * Bug fixes in Project Manager
-* Improved the gameplay development experience.
-  * Improved prefabs editing in the Viewport with the prefab editing focus mode
-  * Improved the searching experience in Asset Browser. Users can now see the search results shown in a flat view without the folder structure, which makes it easier for users to find the files they are searching for faster
-  * Updated PhysX joint-related components to adopt the new Component Editing mode in the Viewport. Now users can edit the PhysX joints directly in the Viewport using the manipulators.
-* Improved the Look development experience.
-  * Improved the speed of iteration between Maya/Blender and O3DE with the hot reload feature
-* Improved the O3DE Editor extension experience.
-  * We introduced several things to improve the implementation efficiency for engine builders to extend O3DE with their own tools and workflows:
-    * Sample Gems to extend the UIs
-    * Documentation to support users extending the engine
-* Improved the packaging and deployment experience.
-  * User can now easily package their project and share it with their friends for them to play
+* The AWS GameLift Gem is completed and out of preview.
+  * Added Linux support
+  * Added [AWS GameLift FlexMatch](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-intro.html) support
 
-### SIG-Testing
+### Testing
 
-* Implemented Parallel Python test execution and standardization
-  * Test Automation Framework that allows for parallel execution of Python tests using multiple O3DE Editor instances
-* Added **LyTestTools** support for Linux.
-  * LyTestTools automation framework now supports executing test cases on Linux
+* Parallel Python Test Execution and Standardization - Test Automation Framework that allows for parallel execution of python tests using multiple editor instances
+* LyTestTools support for Linux
 
-### SIG-Graphics/Audio
+### Graphics and Audio
 
-* Created the AtomTressFX Hair Gem, which renders cutting-edge hair behaviors based on NVIDIA TressFX 4.1. In this version we introduced and improved both rendering methods (PPLL and ShortCut) and implemented the advanced Marshcner lighting model.
-
-Remark: Keeva is a preliminary work courtesy of Apocalypse Studios and Denis Dyack.
-
-* Added support for refresh rate and sync interval support.
-* Enabled AZSLC for Linux.
-* Added support for xcb connections for Linux/Vulkan.
-* Added Renderdoc support via command line.
-* Added Pix support via command line.
-* Moved RHI settings into settings registry.
-* Added GPU Buffer/Image memory visualizer.
-* Fixed AtomStarter game to run on mobile devices.
-* Enabled PipelineLibrary support to enable PSO caching for DX12 and Vulkan.
-* Promoted CPUProfiler from RHI to O3DE.
+* AtomTressFX hair gem was implemented, displaying cutting edge hair technology based on the TressFX 4.1 In this version we introduced and improved both rendering methods (PPLL and ShortCut) and implemented the advanced Marshcner lighting model.
+* Add support for refresh rate and sync interval support
+* Enable Azslc for Linux
+* Add support for xcb connections for Linux/Vulkan
+* Add Renderdoc support via command line
+* Add Pix support via command line
+* Move RHI settings into settings registry
+* Added GPU Buffer/Image memory visualizer
+* AtomStarter game related fixed for mobile
+* Enabled PipelineLibrary support to enable PSO caching for DX12 and Vulkan
+* CPUProfiler is promoted from RHI to O3de
 * Added support for GPU descriptor heap compaction for DX12 in case the gpu visible descriptor heap fragments
-* Added support for taskgraph to SRG compilation
-* Optimized SRG compilation to allow partial SRG updates
-* Enabled parallel encoding for Vulkan
-* Fixed a bunch of Vulkan validation errors
-* Fixed null descriptor issues for devices without null descriptor extension.
-* Delivered multiple fixes to managing and creation of Vk swapchain.
-* Fixed 3rd party path for Android.
-* Performed passes on ASV samples for QualComm and Mali devices.
+* Add support for taskgraph to SRG compilation
+* Optimize SRG compilation to allow partial SRG updates
+* Enable parallel encoding for Vulkan
+* Fix a bunch of Vulkan validation errors
+* Fix null descriptor issues for devices without null descriptor extension.
+* Multiple fixes done to managing and creation of Vk swapchain
+* Fix 3rd party path for android.
+* Pass on ASV samples for Qualcomm and Mali devices.
 
-### SIG-Core
+### Core functionality
 
 * Added Engine SDK layout support for Linux and Mac: [[Linux] Create an Engine SDK Layout that contains the debug, profile and release configurations](https://github.com/o3de/o3de/issues/3189), [[MacOS] Create an Engine SDK Layout that contains the debug, profile and release configurations](https://github.com/o3de/o3de/issues/3192)
 * Added support for installing non-monolithic and monolithic artifacts into the same Engine SDK layout: [Add support for installing Monolithic and Non-Monolithic configurations into the same SDK layout](https://github.com/o3de/o3de/issues/3227)
@@ -101,52 +75,49 @@ Remark: Keeva is a preliminary work courtesy of Apocalypse Studios and Denis Dya
 * Improved Error messags in the project's EngineFinder.cmake to help with indicating why the project could not locate the engine: [Improve the errors in EngineFinder.cmake](https://github.com/o3de/o3de/pull/4713)
 * Added Multi-Config/Multi-Permutation support to the installer. This adds support for build configurations like debug, profile, release can be placed in the same installer. This also allows non-monolithic(Default) and monolithic(Monolithic) permutations to be added to the installer: [Adding support for multi-config/multi-permutation installer](https://github.com/o3de/o3de/pull/5062)
 * Limit the configuration types available in the Engine SDK layout to only the configurations that were built. i.e If the SDK was only built with the profile configuration, only the profile configuration will be available when using the SDK with a project: [Build: Limit cmake build types based on Engine SDK build type](https://github.com/o3de/o3de/issues/2526)
-* Added support for importing Json files: [Support for importing Json files](https://github.com/o3de/o3de/pull/4609)
-* Better compiler detection on Linux. Passing `CMAKE_C_COMPILER` and `CMAKE_CXX_COMPILER` is no longer required: [Better compiler detection on Linux](https://github.com/o3de/o3de/pull/5376)
+* Added support for importing Json files. [Support for importing Json files](https://github.com/o3de/o3de/pull/4609)
+* Better compiler detection on Linux. Passing `CMAKE_C_COMPILER` and `CMAKE_CXX_COMPILER` is no longer required. [Better compiler detection on Linux](https://github.com/o3de/o3de/pull/5376)
 * Support for multiple configurations and monolithic into the SDK [Adding support for multi-config/multi-permutation installer](https://github.com/o3de/o3de/pull/5062)
 * Adds stack traces to exception handling [Adding stack traces to exception handling in unit tests](https://github.com/o3de/o3de/pull/4708)
 * Enabled override/virtual warnings [Enables override/virtual warnings](https://github.com/o3de/o3de/pull/4071)
 * Limit configuration types a project sees when using an engine SDK [Limits configuration types a project sees when using an engine SDK](https://github.com/o3de/o3de/pull/4033)
-* Enabled format security warnings [Enabling warnings around format security](https://github.com/o3de/o3de/pull/3937)
+* Enabled format securty warnings [Enabling warnings around format security](https://github.com/o3de/o3de/pull/3937)
 * Set MSVC compiler into permissive mode [Setting /permissive- to make MSVC more "standard"](https://github.com/o3de/o3de/pull/3701)
 * Improvements to input dependency tracking in runtime dependencies [Improves runtime dependencies input dependency](https://github.com/o3de/o3de/pull/3665)
 * Enabled multiple warnings in MSVC and Clang [Enabling several warnings on MSVC that are not enabled by default and are good to have](https://github.com/o3de/o3de/pull/3378) [Linux/Clang fix warn-unused and related](https://github.com/o3de/o3de/pull/3376) [Enable warning MSVC 4296: 'operator': expression is always false](https://github.com/o3de/o3de/pull/3352) [SPEC-2513 Last warnings to get to Warning Level 4](https://github.com/o3de/o3de/pull/3033) [SPEC-2513 Fixing w4018](https://github.com/o3de/o3de/pull/2925)
 * Adds support to compile with ASan [Adding support for ASan (Windows/MSVC) and fixing AzCore](https://github.com/o3de/o3de/pull/3292)
 * Adds helper RUN targets in project-centric workflow [Create RUN target as helpers for the project-centric workflow (#2520)](https://github.com/o3de/o3de/pull/2635)
 
-### SIG-Content
+### Editor and tools
 
-* Prefabs 
-  * Prefab Focus Mode. Enhanced support for editing prefabs in the viewport.
-         Prefabs are now displayed in the Outliner and Viewport as a single object, regardless of how many entities are nested under them. To make changes to the prefab, the user now needs to expand it via the "Edit Prefab" action (there are multiple ways to access the action: right click context menu item, double click, + shortcut, edit button in the Outliner). That will move the Editor's focus to the selected Prefab; when a Prefab is in focus, editing is limited to it. All other instances of the same prefab in the scene will receive the changes in real time.
-  * [Focus Mode - Viewport Interaction Model support for Prefabs](https://github.com/o3de/o3de/issues/3445) (first part of [Edit mode - Prefab edit operation](https://github.com/o3de/o3de/issues/3446)) 
-  * Added support to delete entities spawned at runtime via the Spawnables system.
-  * [Enable destroying entities spawned using a spawnable](https://github.com/o3de/o3de/pull/4154) 
-  * Improved messaging for prefab save operations - when saving a prefab, the user is prompted to save the nested prefabs too. Also adds dialog for unsaved changes on all open prefabs when closing the Editor or switching to a different level.
-  * [Provide options to save prefabs when saving levels](https://github.com/o3de/o3de/pull/3440)
-  * Prefab patching now uses a best-effort mechanism, which allow levels to be loaded with errors.
-  * [Make prefab patch application use a best effort mechanism](https://github.com/o3de/o3de/pull/2110)
+#### Prefabs
 
-* Terrain
-  * Experimental Terrain System with mesh, physics and macro material support. This is in an optional Terrain Gem that is disabled by default.
-  * [Terrain System](https://github.com/o3de/o3de/issues/1847)
+* [Focus Mode - Viewport Interaction Model support for Prefabs](https://github.com/o3de/o3de/issues/3445) (first part of [Edit mode - Prefab edit operation](https://github.com/o3de/o3de/issues/3446)) 
+* [Enable destroying entities spawned using a spawnable](https://github.com/o3de/o3de/pull/4154) 
+* [Provide options to save prefabs when saving levels](https://github.com/o3de/o3de/pull/3440) 
+* [Make prefab patch application use a best effort mechanism](https://github.com/o3de/o3de/pull/2110)
 
-* Viewport
-  * Updates to how entity space is handled in the viewport.[Update how World/Parent/Local space function in the viewport](https://github.com/o3de/o3de/issues/3580)
-  * Updates to how selection works in the viewport.
-  * [Update how entity selection works in the default viewport](https://github.com/o3de/o3de/issues/3578)
-  * Can now create a project-specific Editor desktop shortcut from each project's menu. (Windows only)
-  * Can open CMake-GUI from each project's menu and from the project's Build button, pre-filled with the paths for that project.
-  * Project Manager will now prompt to get and setup Python on start up if Python is not found.
-  * Engine Name, version and path now visible in Engine Settings.
-  * Gem Catalog shows notifications when Gems and their dependencies are added or removed.
-  * Gem Catalog shows Gem dependencies.
-  * Gem Catalog notifies you when removing a Gem will also remove Gem dependencies.
-  * Project path automatically updates based on project name text input field.
-  * External Gems can now be added from the Gem Catalog.
-  * Project Manager logs output to the .o3de/Logs folder.
+#### Terrain
 
-### SIG-Platforms
+* Experimental Terrain System with mesh, physics and macro material support. This is in an optional Terrain Gem that is disabled by default. [Terrain System](https://github.com/o3de/o3de/issues/1847)
+
+#### Viewport
+
+* Updates to how entity space is handled in the viewport.[Update how World/Parent/Local space function in the viewport](https://github.com/o3de/o3de/issues/3580)
+* Updates to how selection works in the viewport.
+* [Update how entity selection works in the default viewport](https://github.com/o3de/o3de/issues/3578)
+* Can now create a project-specific Editor desktop shortcut from each project's menu. (Windows only)
+* Can open CMake-GUI from each project's menu and from the project's Build button, pre-filled with the paths for that project.
+* Project Manager will now prompt to get and setup Python on start up if Python is not found.
+* Engine Name, version and path now visible in Engine Settings.
+* Gem Catalog shows notifications when Gems and their dependencies are added or removed.
+* Gem Catalog shows Gem dependencies.
+* Gem Catalog notifies you when removing a Gem will also remove Gem dependencies.
+* Project path automatically updates based on project name text input field.
+* External Gems can now be added from the Gem Catalog.
+* Project Manager logs output to the .o3de/Logs folder.
+
+### Platforms
 
 * Various Platform Abstraction Layer (PAL) changes required for restricted platforms. 
 * Input context component: [Input context component](https://github.com/o3de/o3de/pull/4152)
@@ -164,48 +135,49 @@ Remark: Keeva is a preliminary work courtesy of Apocalypse Studios and Denis Dya
 * Implement build project manager build button cross platform [Implement build project manager build button cross platform](https://github.com/o3de/o3de/pull/4248) 
 * Implement open in file browser for Linux [Implement open in file browser for Linux](https://github.com/o3de/o3de/pull/4677)
 
-### SIG-Build
+### Build and Install
 
-* Windows installer released for the 21.11 (source code version: 2111.1) release
+* Windows installer released for the 2111.1 release
 * Windows nightly build installer available for the Development branch
-* Debian package for Linux available for the 21.11 (source code version: 2111.1) release
+* Debian package for Linux available for the 2111.1 release
 * Debian nightly build package for Linux available for the Development branch
+
 
 ## Bug Fixes
 
-### SIG-Networking bug fixes
+### Networking bug fixes
 
 * Fixed dependencies for networking that could crash the Editor: [Open editor crashes](https://github.com/o3de/o3de/issues/5277)
 * Enabled tests for HttpRequestor Gem: [HttpRequestorGem's HttpTest is not running and running it fails](https://github.com/o3de/o3de/issues/4687)
 * Changed the serialization format for networking to binary to save space and time: [NetworkPrefabProcessor stores the .network.spawnable in JSON causing file bloat](https://github.com/o3de/o3de/issues/4608) 
-* Multiplayer NetworkInput Silently Fails Unless LocalPredictionPlayerInputComponent is Attached: [Multiplayer NetworkInput Silently Fails Unless LocalPredictionPlayerInputComponent is Attached](https://github.com/o3de/o3de/issues/3155)
+* Multiplayer network input silently fails unless `LocalPredictionPlayerInputComponent` is attached: [Multiplayer NetworkInput Silently Fails Unless LocalPredictionPlayerInputComponent is Attached](https://github.com/o3de/o3de/issues/3155)
 
-### SIG-Graphics-Audio  bug fixes
+### Audio bug fixes
 
-* Material files are now backward compatible with material property renames, by defining version updates in the .materialtype file.
+* Material files are now backward compatible with material property renames, by defining version updates in the `.materialtype` file.
 * Reduced build dependencies on .materialtype files so that modifying shader code will no longer cause all .material and .fbx files to reprocess.
 
-### SIG-Core bug fixes
+### Core Editor and Tools bug fixes
 
 * Resolved issues with required Gems not being treated as required when using an Engine SDK: [Required Gems are not set as required in the SDK Layout build](https://github.com/o3de/o3de/issues/3430)
 * Fixed issue "Relocating the Project Game Release Layout outside of the install directory fails to initialize": [o3de/o3de@`6270128`](https://github.com/o3de/o3de/commit/627012840d62a8f10fd6a7c595bac0b68d936f4b)
-* Fixed for launching the Editor through ProjectManager on Mac as well as other miscellaneous Project Manager fixes.: [[MacOS] Launching Editor from ProjectManager and other misc. fixes](https://github.com/o3de/o3de/pull/5264)
+* Fixed error when launching the Editor through Project Manager on Mac as well as other miscellaneous Project Manager fixes: [[MacOS] Launching Editor from ProjectManager and other misc. fixes](https://github.com/o3de/o3de/pull/5264)
 * Fixed level creation on Linux: [Fix level creation on Linux](https://github.com/o3de/o3de/pull/3488)
 * Fixed rpaths when using an Engine SDK layout on Linux: [Fix rpaths during o3de sdk install on Linux](https://github.com/o3de/o3de/pull/3370)
 * Added fix for Android Monolithic release builds: [Android release/monolithic-release fixes](https://github.com/o3de/o3de/pull/3788)
 * Fixed issue where CMake targets which were wrapped in two layers of generator expressions could not be added as dependencies when using an Engine SDK layout: https://github.com/o3de/o3de/pull/2337/files
-* Fixes for CMake 3,22rc [Fixes for CMake 3.22rc](https://github.com/o3de/o3de/pull/5314)
-* LuaIDE->GridHub dependency added [Adds LuaIDE->GridHub dependency](https://github.com/o3de/o3de/pull/5229)
-* Editor->LuaIDE dependency added [Makes Editor depend on LuaIDE](https://github.com/o3de/o3de/pull/4514)
-* XCode generation fails [[MacOS] Generating XCode solution fails](https://github.com/o3de/o3de/issues/3832)
-* It is not possible to create new Projects [It is not possible to create new Projects](https://github.com/o3de/o3de/issues/3443)
-* runtime dependencies do not add target file dependencies [ly_add_target RUNTIME_DEPENDENCIES and ly_add_target_files does not add file dependencies on the TARGET](https://github.com/o3de/o3de/issues/3391)
-* Jinja files are not being copied to install layout [Jinja files are not copied over to the INSTALL install laoyut when they are PUBLIC files](https://github.com/o3de/o3de/issues/2517) 
-* Some projects are being re-processed in VS despite being clean [Some projects are re-processed in VS despite being clean](https://github.com/o3de/o3de/issues/2288)
-* PhysX Gem can't be used as build dependency in engine SDK [PhysX Gem can't be used as build dependency in engine SDK Part 2](https://github.com/o3de/o3de/issues/2126)
-* 3rdParty runtime dependencies copied multiple times [3rdParty runtime dependencies copied multiple times](https://github.com/o3de/o3de/issues/2045) [PhysX Gem can't be used as build dependency in engine SDK](https://github.com/o3de/o3de/issues/1971)
+* Fixes for CMake 3.22rc [Fixes for CMake 3.22rc](https://github.com/o3de/o3de/pull/5314)
+* LuaIDE->GridHub dependency added: [Adds LuaIDE->GridHub dependency](https://github.com/o3de/o3de/pull/5229)
+* Editor->LuaIDE dependency added: [Makes Editor depend on LuaIDE](https://github.com/o3de/o3de/pull/4514).
+* Fixed a problem where XCode generation fails: [[MacOS] Generating XCode solution fails](https://github.com/o3de/o3de/issues/3832).
+* Fixed an error where it is not possible to create new Projects: [It is not possible to create new Projects](https://github.com/o3de/o3de/issues/3443).
+* Runtime dependencies do not add target file dependencies: [ly_add_target RUNTIME_DEPENDENCIES and ly_add_target_files does not add file dependencies on the TARGET](https://github.com/o3de/o3de/issues/3391).
+* Jinja files are not being copied to install layout: [Jinja files are not copied over to the INSTALL install laoyut when they are PUBLIC files](https://github.com/o3de/o3de/issues/2517).
+* Some projects are being re-processed in Visual Studio despite being clean: [Some projects are re-processed in VS despite being clean](https://github.com/o3de/o3de/issues/2288).
+* PhysX Gem can't be used as build dependency in engine SDK: [PhysX Gem can't be used as build dependency in engine SDK Part 2](https://github.com/o3de/o3de/issues/2126).
+* 3rdParty runtime dependencies copied multiple times: [3rdParty runtime dependencies copied multiple times](https://github.com/o3de/o3de/issues/2045) [PhysX Gem can't be used as build dependency in engine SDK](https://github.com/o3de/o3de/issues/1971).
 
-### SIG-Content bug fixes
+### Content functionality bug fixes
 
 * Resolved numerous Scaling/DPI issues affecting environments with multiple screens with different DPI settings: [Editor DPI/Scaling Issues](https://github.com/o3de/o3de/issues/3339).
 * Prefabs now store entity sort order information correctly: [Fix Entity Outliner sort order with Prefabs enabled](https://github.com/o3de/o3de/pull/5297)
@@ -222,7 +194,7 @@ Remark: Keeva is a preliminary work courtesy of Apocalypse Studios and Denis Dya
 * Fixed AssetBus mutex not being re-locked before modifying the context again: [Fix AssetBus connection policy to re-lock the mutex afterward](https://github.com/o3de/o3de/pull/5575).
 * Fixed race condition in asset loading: [Fix insert streaming request failure](https://github.com/o3de/o3de/pull/5604).
 * Fixed race condition in asset container loading: [ParallelDeepAssetReferences is failing intermittently](https://github.com/o3de/o3de/pull/5721).
-* Project Manager
+* **Project Manager**
   * Better detection of whether a build fails when building through Project Manager
     * Link to view log while building
     * Showing the build button for projects that need to be rebuilt after a restart of Project Manager
@@ -253,7 +225,7 @@ Remark: Keeva is a preliminary work courtesy of Apocalypse Studios and Denis Dya
   * Asset bundler tests no longer time out: [asset bundler tests timing out](https://github.com/o3de/o3de/pull/3356).
   * Fixed failing periodic Asset Pipeline tests that were timing out and using the wrong project path: [4 Asset Pipeline Tests are failing in the periodic suite](https://github.com/o3de/o3de/pull/2727).
 
-### SIG-Platforms bug fixes
+### Platforms bug fixes
 
 * Miscellaneous bug fixes required for various platforms. 
 * Fixed the GameStateSamples Gem: [Fix the GameStateSamples Gem and remove an unused variable from DebugConsole.h](https://github.com/o3de/o3de/pull/3347).
@@ -279,17 +251,20 @@ Remark: Keeva is a preliminary work courtesy of Apocalypse Studios and Denis Dya
 
 ## Deprecations
 
-* Updated the FileIO Aliases to provide more accurate descriptions of the paths they represent: [Update FileIOAliases to be more accurately indicate which kind of paths they refer to](https://github.com/o3de/o3de/issues/4183). [Impactful Change link](https://discord.com/channels/805939474655346758/852574203437121586/895059153247170590)
-* The AssetProcessor Exclude Filters are now treated relative to the Scan Folder: [Reserved keywords in the project path](https://github.com/o3de/o3de/issues/4044). [Impactful Change link](https://discord.com/channels/805939474655346758/852574203437121586/902248898683363400)
-* The `--project-path` parameter is now treated relative to the current working directory in C++ Applications: [Update how Project Filepaths are calculated when not supplied via command line](https://github.com/o3de/o3de/pull/5194). [Impactful Change link](https://discord.com/channels/805939474655346758/852574203437121586/905874057998766161)
-* Rewrote the AzToolsFramework ArchiveComponent to use the AZ::IO::Archive instead of `7za.exe`. `7za.exe` has been removed from the code base: [Archive Component - Rewrite and additional work on Archive and Asset Bundler](https://github.com/o3de/o3de/pull/4332)
-* Removed the VTUNE profiler hooks from Cry [Removes VTUNE profiler hooks from Cry](https://github.com/o3de/o3de/pull/5291)
-* Removed the Cry load DLL functions: [Cleanup: Remove cry load dll functions](https://github.com/o3de/o3de/pull/5295)
-* Renamed PHYSX_ENABLE_RUNNING_BENCHMARKS to LY_PHYSX_ENABLE_RUNNING_BENCHMARKS: [Renamed physx trait to make it consistent and show properly in cmake-gui](https://github.com/o3de/o3de/pull/5118) 
-* Removed old "Integ"-type tests: [Remove old "Integ" functionality from tests](https://github.com/o3de/o3de/pull/4688)
-* Removed crcfix: [Remove crcfix](https://github.com/o3de/o3de/pull/3294)
-* Changed LY_UNITY_BUILD default to ON: [Change LY_UNITY_BUILD default to "ON"](https://github.com/o3de/o3de/pull/3244)
-* Removed CryString and related classes: [Removal of CryString and related files/classes](https://github.com/o3de/o3de/pull/2757)
+* The legacy GridMate networking layer is still shipped, but should not be used for new projects.
+* Updated the FileIO Aliases to provide more accurate descriptions of the paths they represent ([Update FileIOAliases to be more accurately indicate which kind of paths they refer to](https://github.com/o3de/o3de/issues/4183)). The following aliases have been removed, and their replacement is listed (if required):
+  * `@devroot@` - Use `@engroot@` 
+  * `@devassets@` - Use `@projectroot@/Assets`.
+  * `@projectcache@`
+* AssetProcessor Exclude Filters are now treated relative to the Scan Folder and path separators `/` no longer need to be escaped. ([Reserved keywords in the project path](https://github.com/o3de/o3de/issues/4044)).
+* The `--project-path` parameter is now treated relative to the current working directory in C++ Applications. The same applies to the `/Amazon/AzCore/Bootstrap/project_path` settings key. ([Update how Project Filepaths are calculated when not supplied via command line](https://github.com/o3de/o3de/pull/5194))
+* Rewrote the AzToolsFramework ArchiveComponent to use `AZ::IO::Archive` instead of `7za.exe`. `7za.exe` has been removed from the code base ([Archive Component - Rewrite and additional work on Archive and Asset Bundler ](https://github.com/o3de/o3de/pull/4332))
+* Removed `VTUNE` profiler hooks from Cry ([Removes VTUNE profiler hooks from Cry](https://github.com/o3de/o3de/pull/5291))
+* Removed Cry load dll functions ([Cleanup: Remove cry load dll functions](https://github.com/o3de/o3de/pull/5295))
+* Renamed `PHYSX_ENABLE_RUNNING_BENCHMARKS` to `LY_PHYSX_ENABLE_RUNNING_BENCHMARKS` ([Renamed physx trait to make it consistent and show properly in cmake-gui](https://github.com/o3de/o3de/pull/5118) )
+* Removed old "Integ" tests ([Remove old "Integ" functionality from tests](https://github.com/o3de/o3de/pull/4688))
+* Removed `crcfix` ([Remove crcfix](https://github.com/o3de/o3de/pull/3294))
+* Removed `CryString` and related classes ([Removal of CryString and related files/classes](https://github.com/o3de/o3de/pull/2757))
 
 ## Known issues
 
