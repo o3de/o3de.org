@@ -19,9 +19,9 @@ The instructions here assume that you have met all hardware and software require
     ```shell
     sudo apt install <path_to_deb_package>/<debian_package_name>.deb
     ```
-Where:
-* `<path_to_deb_package>` is the path where the deb package was downloaded to, e.g. `~/Downloads`
-* `<debian_package_name>` is the name of the package, e.g. `O3DE_2111_1.deb`
+    Use the following path substitutions:
+    * `<path_to_deb_package>`: The path where you downloaded the deb package. Example: `~/Downloads`.
+    * `<debian_package_name>`: The name of the package. Example: `O3DE_2111_1.deb`.
 
 1. The default install location is: `/opt/O3DE/<version>`. Where `<version>` is the version of the installer, e.g. `2111_1`.
 
