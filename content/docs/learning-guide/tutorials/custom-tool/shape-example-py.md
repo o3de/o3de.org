@@ -2,7 +2,7 @@
 linkTitle: Create a Custom Shape Tool in Python
 title: Create a Custom Shape Tool in Python for Open 3D Engine
 description: Learn to create a custom shape tool in Python to extend Open 3D Engine (O3DE).
-weight: 300
+weight: 3023
 toc: true
 ---
 
