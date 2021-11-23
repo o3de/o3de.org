@@ -41,7 +41,7 @@ The following command generates a build folder, `build/linux`, under the root of
 
 cd $O3DE_PROJECT_PATH
 
-cmake -B build/linux -S . -G "Ninja Multi-Config" -DCMAKE_C_COMPILER=clang-12 -DCMAKE_CXX_COMPILER=clang++-12 
+cmake -B build/linux -S . -G "Ninja Multi-Config"
 
 ```
 
@@ -53,7 +53,7 @@ If you do not need to generate multi-config build folders, you can specify "Unix
 
 cd $O3DE_PROJECT_PATH
 
-cmake -B build/linux -S . -G "Unix Makefiles" -DCMAKE_C_COMPILER=clang-12 -DCMAKE_CXX_COMPILER=clang++-12 -DCMAKE_BUILD_TYPE=$BUILD_CONFIG
+cmake -B build/linux -S . -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=$BUILD_CONFIG
 
 ```
 
