@@ -88,7 +88,7 @@ To process your project's assets, do one of the following:
 
         {{< image-width "/images/user-guide/packaging/windows-release-build/asset-processor-batch.png" "700" "An image of O3DE Asset Processor Batch." >}}
 
-    2. Wait for all jobs to complete. You can view the output in the `AP_Batch.log` file in the `<project>\user\log` directory.
+    1. Wait for all jobs to complete. You can view the output in the `AP_Batch.log` file in the `<project>\user\log` directory.
 
 - **Build your project's Asset Processor tools.** Do this if you have not yet built Asset Processor and Asset Processor Batch.
 
@@ -100,7 +100,7 @@ To process your project's assets, do one of the following:
 
         First, this command builds the Asset Processor tools. Then, it runs Asset Processor Batch and processes the assets. You don't need to rerun Asset Processor or Asset Processor Batch unless you make changes in your project.
 
-    2. Wait for all jobs to complete. You can view the output in the `AP_Batch.log` file in the `<project>\user\log` directory.
+    1. Wait for all jobs to complete. You can view the output in the `AP_Batch.log` file in the `<project>\user\log` directory.
 
 ### Verify assets are successfully processed
 
@@ -291,7 +291,7 @@ When bundling your game assets, it's only important to bundle assets that your g
 
 1. In the **Add Seed Asset** dialog, click **Add Seed**.
 
-1. In the Asset Bundler, in the **Product Assets** panel, verify that your seed list has the level assets.
+1. In the Asset Bundler GUI, in the **Product Assets** panel, verify that your seed list has the level assets.
 
 #### Generate an asset list
 
