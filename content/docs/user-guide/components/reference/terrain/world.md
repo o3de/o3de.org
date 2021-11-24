@@ -1,7 +1,7 @@
 ---
 linktitle: Terrain World
 title: Terrain World Component
-description: 'Open 3D Engine (O3DE) Terrain World component reference.'
+description: The Terrain World component allows the bounds of the world and the height query resolution to be set. 
 toc: true
 ---
 

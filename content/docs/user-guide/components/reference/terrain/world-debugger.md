@@ -1,17 +1,11 @@
 ---
-title: Terrain Debugger Component
-linktitle: Terrain Debugger
-description: 'Open 3D Engine (O3DE) Terrain Debugger component reference.'
-weight: 100
+linktitle: Terrain World Debugger
+title: Terrain World Debugger Component
+description: The Terrain World Debugger component provides a means to display a Wireframe or Bounds representaion of the Terrain World.
+toc: true
 ---
 
-The **Terrain Surface Gradient List** component defines mappings between a gradient and a surface type on a terrain layer.  When you assign a gradient to a surface, the gradient defines the strength of that surface in the displayed terrain. For example, you can assign a gradient to a rocky surface to make parts of it appear through a grassy region.
-
-## Usage ##
-
-You select a gradient either by dragging an entity containing a gradient component to the **GradientEntity** field, or by clicking {{< icon "picker.svg" >}}.
-Once a gradient is assigned, you can select the surface type that this gradient represents, by using the **Surface Tag** pull-down menu. 
-You can configure the dimensions and priority of the layer using the required [Terrain Layer Spawner](/docs/user-guide/components/reference/terrain/layer_spawner)
+The **Terrain World Debugger** component allows a representation of the World Bounds to be shown. These can be toggled on or off.
 
 ## Provider ##
 
@@ -19,37 +13,13 @@ You can configure the dimensions and priority of the layer using the required [T
 
 ## Dependencies ##
 
-[Terrain Layer Spawner](/docs/user-guide/components/reference/terrain/layer_spawner)
+[Terrain World](/docs/user-guide/components/reference/terrain/world)
 
 ## Properties ##
 
+![\[Terrain World Debugger component interface.\]](/images/user-guide/component/terrain/terrain/ui-terrain-world-debugger-A.png)
+
 | Property | Description | Values | Default |
-|-|-|-|-|
-| **GradientEntity** | The gradient entity to assign to this layer. | Gradient Entity | None |
-| **Surface Tag** | Sets the surface type that this gradient represents. | Surface Tag | None |
-
-
-## TerrainAreaSurfaceRequestBus  ##
-
-Use the following request functions with the `TerrainAreaSurfaceRequestBus ` EBus interface to communicate with other components of your game.
-
-### GetSurfaceWeights 
-
-Retrieves all of the surfaces that are assigned to this component, along with the gradient's weight value at the given position.
-
-#### Parameters
-
-##### `InPosition`
-
-Type: Vector3  
-Position to retrieve information for.
-
-##### `SurfaceWeights [out]`
-
-Type: SurfaceTagWeightMap  
-A list of all the retrieved surfaces and weight values. 
-
-#### Returns
-
-None
-
+| - | - | - | - |
+| Show Wireframe | Enable to show a wireframe representation of the Terrain World. | Boolean | Enabled |
+| Show World Bounds | Enable to show the Terrain World Bounds. | Boolean | Enabled |
