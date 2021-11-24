@@ -213,6 +213,9 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Terrain Height Gradient List](./terrain/height_gradient_list) | Provides terrain height data from a list of gradients. |
 | [Terrain Surface Material List](./terrain/surface-material-list) | Defines mappings between a surface type and a render material. |
 | [Terrain Surface Gradient List](./terrain/surface-gradient-list) | Defines mappings between a gradient and a surface type on a terrain layer. |
+| [Terrain World](./terrain/world) | Provides terrain height data from a list of gradients. |
+| [Terrain World Debugger](./terrain/world-debugger) | Provides terrain height data from a list of gradients. |
+| [Terrain World Renderer](./terrain/world-renderer) | Provides terrain height data from a list of gradients. |
 
 
 ### Test  
