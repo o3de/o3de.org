@@ -39,10 +39,10 @@ The following instructions assume that you have:
 
 This tutorial uses the following directories in the examples.
 
-- Project name and directory: `C:/MyProject`
-- Third-party directory: `C:/o3de-packages`
-- Source engine: `C:/o3de`
-- Pre-built SDK engine: `C:/o3de-install`
+- Project name and directory: `C:\MyProject`
+- Third-party directory: `C:\o3de-packages`
+- Source engine: `C:\o3de`
+- Pre-built SDK engine: `C:\o3de-install`
 
 
 ## Set the starting level
