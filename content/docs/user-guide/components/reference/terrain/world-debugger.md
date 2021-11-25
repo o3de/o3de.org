@@ -1,11 +1,11 @@
 ---
 linktitle: Terrain World Debugger
 title: Terrain World Debugger Component
-description: The Terrain World Debugger component provides a means to display a Wireframe or Bounds representaion of the Terrain World.
+description: The Terrain World Debugger component provides a means to display a wireframe or bounds representaion of the Terrain World.
 toc: true
 ---
 
-The **Terrain World Debugger** component allows a representation of the World Bounds to be shown. These can be toggled on or off.
+The **Terrain World Debugger** component allows a representation of the World Bounds to be shown. This visualization can be toggled on or off.
 
 ## Provider ##
 
@@ -17,9 +17,9 @@ The **Terrain World Debugger** component allows a representation of the World Bo
 
 ## Properties ##
 
-![\[Terrain World Debugger component interface.\]](/images/user-guide/component/terrain/terrain/ui-terrain-world-debugger-A.png)
+![Terrain World Debugger component interface.](/images/user-guide/component/terrain/terrain/ui-terrain-world-debugger-A.png)
 
 | Property | Description | Values | Default |
 | - | - | - | - |
-| Show Wireframe | Enable to show a wireframe representation of the Terrain World. | Boolean | Enabled |
-| Show World Bounds | Enable to show the Terrain World Bounds. | Boolean | Enabled |
+| Show Wireframe | Displays a wireframe representation of the Terrain World. | Boolean | `Enabled` |
+| Show World Bounds | Displays the Terrain World bounds. | Boolean | `Enabled` |

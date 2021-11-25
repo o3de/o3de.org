@@ -1,11 +1,11 @@
 ---
 linktitle: Terrain World Renderer
 title: Terrain World Renderer Component
-description: The Terrain World Renderer component renders the current world.
+description: The Terrain World Renderer component renders the terrain within the world.
 toc: true
 ---
 
-The **Terrain World Renderer** component renders the current world.
+The **Terrain World Renderer** component renders the terrain within the bounds set by the **Terrain World** component.
 
 ## Provider ##
 
@@ -17,4 +17,4 @@ The **Terrain World Renderer** component renders the current world.
 
 ## Properties ##
 
-![\[Terrain World Renderer component interface.\]](/images/user-guide/component/terrain/terrain/ui-terrain-world-renderer-A.png)
+![Terrain World Renderer component interface.](/images/user-guide/component/terrain/terrain/ui-terrain-world-renderer-A.png)
