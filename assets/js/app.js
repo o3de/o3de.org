@@ -166,6 +166,12 @@ $(function() {
   var scrollOffset = $(".main-navbar").height() + 32;
 
   $("a[href^=\\#]").click(function(e) {
+    // Don't apply behavior to tabs
+    if($(this).data("toggle") == "tab")
+    {
+      return;
+    }
+
     var dest = $(this).attr('href');
     if(dest != "" && $(dest).length > 0)
     {
