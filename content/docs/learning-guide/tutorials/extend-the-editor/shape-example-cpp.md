@@ -6,11 +6,11 @@ weight: 200
 toc: true
 ---
 
-In this tutorial, you create a custom tool Gem written in C++, called **Shape Example**, that extends the **Open 3D Engine (O3DE) Editor**. The Shape Example tool allows you to create entities with a Shape component and configure their component properties. You'll learn how to use the `CppToolGem` template and practice C++ development with [Qt](https://wiki.qt.io/Main), O3DE Tools UI API, and other O3DE APIs.
+In this tutorial, you'll learn how to extend the **Open 3D Engine (O3DE) Editor** using the `CppToolGem` template to create a custom tool Gem called **Shape Example**. This tool Gem allows you to create entities with a Shape component and configure their component properties. The Gem is written in C++ with [Qt](https://wiki.qt.io/Main), the O3DE Tools UI API, and other O3DE APIs.
 
-This tutorial shows you how to create the **ShapeExample** Gem, which is a sample Gem in the [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/cpp_gems/ShapeExample). You can reference the ShapeExample Gem sample as you follow along this tutorial.
+The **ShapeExample** Gem is also one of the sample Gems in the [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/cpp_gems/ShapeExample). You can reference the ShapeExample Gem sample as you follow along this tutorial.
 
-By the end of this tutorial, you'll be able to extend the Editor by creating your own custom tools written in Python.
+By the end of this tutorial, you'll be able to extend the Editor by creating your own custom tools written in C++.
 
 The following image is a preview of the Shape Exmple tool that you create in this tutorial.
 
@@ -21,22 +21,25 @@ The following image is a preview of the Shape Exmple tool that you create in thi
 
 Before you start the tutorial, ensure that you have the following:
 
-- Set up an O3DE development environment. You can build O3DE as a source engine or a pre-built SDK engine. For more information, refer to [Setting up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github.md).
+- Set up an O3DE development environment. For instructions, refer to [Set up Open 3D Engine](/docs/welcome-guide/setup/).
+
+## Tutorial specifics
+
+This tutorial uses the following Windows directory names and locations in the examples. You may choose different folder names and locations on your disk.
+
+- **O3DE engine directory**: `C:\o3de`  
+    The source directory that contains the engine.
+
+- **`CppToolGem` template**: `C:\o3de\Templates\CppToolGem`  
+    The Gem template that your custom Gem is based off of.
+
+- **MyCppShapeExample Gem**: `C:\o3de-gems\MyCppShapeExample`  
+    Your custom Gem. You may choose a different folder name and location in your disk.
+
 
 ## Create a Gem from the `CppToolGem` template
 
-To start, create a Gem from the `CppToolGem` template. The `CppToolGem` template contains a basic C++ framework to create a dockable tool (widget) in the Editor.
-
-This tutorial uses the following directory names and locations in the examples.
-
-- **O3DE engine directory**: `C:/o3de`  
-    The source directory that contains the engine.
-
-- **`CppToolGem` template**: `C:/o3de/Templates/CppToolGem`  
-    The Gem template that your custom Gem is based off of.
-
-- **MyCppShapeExample Gem**: `C:/o3de-gems/MyCppShapeExample`  
-    Your custom Gem. You may choose a different folder name and location in your disk.
+Start by creating a Gem from the `CppToolGem` template, which contains a basic C++ framework to create a dockable tool (widget) in the Editor.
 
 To create a Gem from the `CppToolGem` template, complete the following steps:
 
@@ -48,7 +51,7 @@ To create a Gem from the `CppToolGem` template, complete the following steps:
 
    Depending on the Gem path, this command automatically registers the Gem to one of the manifest files: `.o3de/o3de_manifest.json`, `<engine>/engine.json`, and `<project>/project.json`.
 
-2. (Optional) Register the Gem to your project. This step is optional because when you create a Gem using the O3DE CLI in the previous step, it automatically registers the Gem.
+2. (Optional) Register the Gem to your project. This step is optional because when you create a Gem using the O3DE CLI in the previous step, it automatically registers the Gem. If you downloaded the ShapeExample Gem from the sample code Gems repository, you must register it to your project.
 
     ```cmd
     scripts/o3de register -gp C:/o3de-gems/MyCppShapeExample -espp <project-path>
@@ -64,7 +67,7 @@ To create a Gem from the `CppToolGem` template, complete the following steps:
 
 4. Build the project by using the O3DE CLI (refer to [Build a project](/docs/user-guide/build/configure-and-build/#build-a-project)). Or, use the Project Manager (refer to the **Build** action in the [Project Manager](/docs/user-guide/project-config/project-manager/)) page.
 
-5. Open Editor for your project.
+5. Open your project in the Editor.
 
 6. Open the tool by selecting **Tools > Examples > MyCppShapeExample** from the file menu. (See A in the following image.) 
 
@@ -88,7 +91,7 @@ Example of `Code/Source` directory:
 
 All Gems have modules and system component classes written in C++ that connect the tool to O3DE and allow it to communicate with other systems. The `CppToolGem` template already contains all of the code needed to run the tool in the Editor. You can find these C++ files in `Code/Source`.
 
-For more information on Gem modules and system components, refer to the [C++ Programming for Gem Development](docs/user-guide/gems/development/programming-for-gems.md) page.
+For more information on Gem modules and system components, refer to the [C++ Programming for Gem Development](/docs/user-guide/programming/gems/) page.
 
 
 ### O3DE and Qt frameworks
