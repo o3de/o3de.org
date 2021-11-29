@@ -4,17 +4,22 @@ description: Learn how to use the CMake build tools with Open 3D Engine (O3DE).
 weight: 100
 ---
 
-Building **Open 3D Engine (O3DE)**or any of its projects with CMake is done in two steps: Creating *Native projects* for a build toolchain, and then invoking that toolchain to build the engine or a project.
+Building **Open 3D Engine (O3DE)** or any of its projects with CMake is done in two steps: Creating *native projects* for a build toolchain, and then invoking that toolchain to build the engine or a project.
 
-As part of keeping builds fast, CMake maintains a cache of both its internal values used for generation and takes advantage of any incremental builds supported by the native build tools. After your first configuration, you won't need to make any changes to the CMake cache unless you're changing a value needed to re-create native build projects. In most workflows, you'll only need to regenerate your native build projects whenever adding source code.
+As part of keeping builds fast, CMake maintains a cache of its internal values used for generation of project files and takes advantage of any incremental builds supported by the native build tools. After your first configuration, you won't need to make any changes to the CMake cache unless you're changing a value needed to re-create native build projects. In most workflows, you'll only need to regenerate your native build projects whenever adding source code.
 
 An important element of CMake in O3DE is that the same commands are used to configure and build **both** the engine itself and any O3DE projects.
 
-{{< note >}}
-These instructions are for Windows 10, but will get you started building on any platform as long as you generate the correct files and know if your platform needs additional arguments. For more information, see the [CMake configuration reference](./reference/) or the relevant [platform overview](/docs/user-guide/platforms/).
-{{< /note >}}
+## Prerequisites
 
-## Supported compiler toolchains
+To create and build projects in O3DE, you must configure the required software for your platform as described in the [Software prerequisites and configuration](/docs/welcome-guide/requirements/#software-prerequisites) section of the system requirements topic.
+
+You'll need to identify the following:
+
+* A toolchain for your _host_ platform, to build the editor and tools.
+* A toolchain for your _target_ platform, to build your project. In many cases, this will be the same as your host platform.
+
+### Supported compiler toolchains
 
 O3DE has build support for the following platforms and toolchains:
 
@@ -23,68 +28,110 @@ O3DE has build support for the following platforms and toolchains:
 | --- | --- |
 | Windows 64-bit | Visual Studio 2019 |
 | macOS, iOS | XCode 11 or later |
-| Android | Android Studio |
-| Linux | Automake |
-
-## Requirements to build O3DE
-
-In order to follow these build instructions, you'll need the following.
-
-* CMake {{< versions/cmake >}} or later. [Download from the CMake project](https://cmake.org/download/#latest).
-* A toolchain for your _host_ platform, to build the editor and tools.
-* A toolchain for your _target_ platform, to build your project. In most cases this will be the same as your host platform.
-
-## Configure with the CMake CLI
-
-When building using the CMake CLI, you'll need to have a build output directory created, know where your 3rd party libraries are, and which O3DE projects you want to be able to build and run. Walking through the following steps will get you started with your first O3DE build out of the box, let you know which values to change on subsequent builds, and help you learn how the build process works with CMake.
-
-<!-- TODO: Tabs, when they work for non-code content in Markdown -->
-
-1. Open a command line prompt and navigate to the O3DE source *or* your project source.
-2. Create a directory for your build: `mkdir build\windows_vs2019`
-3. Run the CMake generator:
-  
-    ```cmd
-    cmake -B build/windows_vs2019 -S . -G "Visual Studio 16 2019" ^
-        -DLY_3RDPARTY_PATH=<o3de-packages-absolute-path>
-    ```
-
-    * `-B` : Location of build directory, where to put the generated files.
-    * `-S` : Source directory, where the root CMake file is.
-    * `-G` : The generator to use to create the native project files.
-  
-    The other argument is a custom definition (`-D`) for the build script, used by O3DE:  
-
-    * `LY_3RDPARTY_PATH` : The *absolute* path to your [O3DE packages](./packages). If packages are missing during configuration, they'll be downloaded to this location.
-
-    {{< note >}}
-CMake [unity builds](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html) are on by default. This is a CMake feature that can greatly improve build times by merging source files into single compilation units. If you encounter a build error, disabling unity builds might help debug the problem. To disable unity builds, run the previous `cmake` command with the `-DLY_UNITY_BUILD=OFF` argument to regenerate your project files.
-    {{< /note >}}
-
-## Configure with the CMake GUI
-
-CMake also offers an intuitive, GUI-based tool that you can use instead of the command line. Launch the CMake GUI with:
-
-```shell
-cd <source-directory>
-cmake-gui .
-```
-
-Set the following values in the GUI after launching it:
-
-* Set the **Where is the source code:** text field to your O3DE directory.
-* Set the **Where to build your binaries:** text field to a subdirectory of your O3DE directory where you want your build files and products to be generated.
-* Use `Visual Studio 16 2019` as your generator.
-* Your configure may fail at various points due to unset values. Make sure that you set the following parameters:
-  * `LY_3RDPARTY_PATH` : The path to your 3rd party libraries. If any new 3rd party libraries are downloaded during configure, they'll be unpacked in this directory.
+| Android | Android Clang/LLVM |
+| Linux | Clang/LLVM |
 
 {{< note >}}
-CMake [unity builds](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html) are on by default. This is a CMake feature that can greatly improve build times by merging source files into single compilation units. If you encounter a build error, disabling unity builds might help debug the problem. To disable unity builds in the CMake GUI, find the `LY_UNITY_BUILD` variable and uncheck it, then regenerate your project files.
+For additional platform-specific information, refer to the [Settings Reference](./reference/) and the relevant [platform overviews](/docs/user-guide/platforms/).
 {{< /note >}}
 
-## Build O3DE targets with CMake
+## First project
 
-CMake allows you to invoke the native toolchains from its generated projects with the `--build` option. CMake builds are offered for convenience - after generating a native project, you can work completely within an IDE. 
+To get you started with your first O3DE build out of the box, we recommend that you follow the [Creating Projects Using the Command Line Interface](/docs/welcome-guide/create/creating-projects-using-cli/) tutorial in the Get Started Guide.
+
+There you will learn the basics, including how to:
+
+* Start a new project using `o3de create-project`.
+* Generate project files using `cmake -G`.
+* Build the project using `cmake --build`.
+
+The remaining sections in this topic will cover configuring and building with CMake in more detail, including which values to change on subsequent builds.
+
+## Configuring projects
+
+Configuring a project involves defining variables for the CMake cache and generating project files that are needed to build your project. You can do this from the command line or terminal window using the CMake CLI, or by using the CMake GUI.
+
+To configure an O3DE project using CMake, you'll need the following information:
+
+* The locations of the build source and output directories.
+* The generator you want to use to create the native project files.
+* The location of the downloadable packages, also known as the third-party libraries.
+
+### Configure with the CMake CLI
+
+The typical CMake command used to configure a project looks like the following:
+
+{{< tabs name="CMake configure example" >}}
+{{% tab name="Windows" %}}
+
+```cmd
+cmake -B build/windows_vs2019 -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=<downloadable-packages-directory>
+```
+
+{{% /tab %}}
+{{% tab name="Linux" %}}
+
+```shell
+cmake -B build/linux -S . -G "Ninja Multi-Config" -DLY_3RDPARTY_PATH=<downloadable-packages-directory>
+```
+
+{{% /tab %}}
+{{< /tabs >}}
+
+* `-B` : Location of build directory, where to put the generated files.
+* `-S` : Source directory, where the root CMakeLists.txt file is. Optional when running `cmake` from the source directory.
+* `-G` : The generator to use to create the native project files.
+
+The other argument is a custom definition (`-D`) for the build script, used by O3DE:  
+
+* `LY_3RDPARTY_PATH` : The *absolute* path to your [O3DE packages](./packages). If packages are missing during configuration, they'll be downloaded to this location.
+
+{{< note >}}
+CMake [unity builds](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html) are on by default. This is a CMake feature that can greatly improve build times by merging source files into single compilation units. If you encounter a build error, disabling unity builds might help debug the problem. To disable unity builds, run the previous `cmake` command with the `-DLY_UNITY_BUILD=OFF` argument to regenerate your project files.
+{{< /note >}}
+
+### Configure with the CMake GUI
+
+CMake also offers an intuitive, GUI-based tool that you can use instead of the command line.
+
+1. Launch the CMake GUI with:
+
+    ```shell
+    cd <source-directory>
+    cmake-gui .
+    ```
+
+1. Set the following values in the GUI after launching it:
+
+    * Set the **Where is the source code:** text field to your O3DE project directory.
+    * Set the **Where to build the binaries:** text field to a subdirectory of your O3DE project where you want your build files to be generated. Typical values are `build\windows_vs2019` for Windows, and `build/linux` for Linux platforms.
+
+1. (Optional) Choose the **Add Entry** button and add a cache entry for the `LY_3RDPARTY_PATH` downloadable package directory. Use the following values for this entry:
+
+    * **Name:** LY_3RDPARTY_PATH
+    * **Type:** STRING
+    * **Value:** `<directory where you want CMake to download the packaged libraries>`
+
+    If you don't provide this entry, the libraries will be downloaded to the default directory: `<user>/.o3de/3rdParty` for Windows, and `$HOME/.o3de/3rdParty` for Linux.
+
+1. Choose **Configure** to configure your project. This will also download any needed packages to the path set by `LY_3RDPARTY_PATH`.
+
+1. Specify the generator for the project.
+
+    * **For Windows:** Visual Studio 16 2019
+    * **For Linux:** Ninja Multi-Config
+
+1. Inspect the variables that are read in and update any that are not correct.
+
+    {{< note >}}
+CMake [unity builds](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html) are on by default. This is a CMake feature that can greatly improve build times by merging source files into single compilation units. If you encounter a build error, disabling unity builds might help debug the problem. To disable unity builds in the CMake GUI, find the `LY_UNITY_BUILD` variable and uncheck it.
+    {{< /note >}}
+
+1. Choose **Generate** to generate the project files in the build directory.
+
+## Building O3DE targets with CMake
+
+CMake enables you to invoke the native toolchains from its generated projects with the `--build` option. CMake builds are offered for convenience - after generating a native project, you can work completely within an IDE.
 
 ### Generated build configurations
 
@@ -97,10 +144,6 @@ For the full set of flags used by the compiler for each build configuration, see
 * `cmake/Common/<compiler>/Configurations_<compiler>.cmake`
 * `cmake/Platform/<platform ID>/Configurations_<platform ID>.cmake`
 
-{{< note >}}
-On the Linux platform when generating configurations and makefiles for GNU Automake, the build configuration is selected at the time of toolchain file generation and can't be configured on a per-build basis. To change build types on Linux, you'll need to regenerate the build files. For more information, read [Linux support](/docs/user-guide/platforms/linux).
-{{< /note >}}
-
 The following table is a high-level overview of what each build configuration does.
 
 | Configuration | Effects |
@@ -111,20 +154,127 @@ The following table is a high-level overview of what each build configuration do
 
 ### Build the O3DE editor, engine, and tools
 
+Use the following command to build just the Editor and its tool dependencies:
+
+{{< tabs name="CMake engine build example" >}}
+{{% tab name="Windows" %}}
+
 ```cmd
-cd <o3de-source>
-cmake --build build/windows_vs2019  --config profile --target Editor -- /m
+cmake --build build/windows_vs2019 --target Editor --config profile -- /m
 ```
 
-Build products are placed in the `build\windows_vs2019\bin\profile` directory.
+* `--build` : Location of build directory, where to put the build output.
+* `--target` : Build target(s). More than one can be specified, separated by a space.
+* `--config` : The build configuration. Refer to the previous section on [Generated build configurations](#generated-build-configurations).
+* `/m` : A recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
+
+In this example, build products are placed in the `build\windows_vs2019\bin\profile` directory.
+
+{{% /tab %}}
+{{% tab name="Linux" %}}
+
+```shell
+cmake --build build/linux --target Editor --config profile -j <number of parallel build tasks>
+```
+
+* `--build` : Location of build directory, where to put the build output.
+* `--target` : Build target(s). More than one can be specified, separated by a space.
+* `--config` : The build configuration. Refer to the previous section on [Generated build configurations](#generated-build-configurations).
+* `-j` : A recommended build tool optimization. It tells the Ninja build tool the number of parallel build tasks that will be executed simultaneously. The 'number of parallel build tasks' is recommended to match the number of cores available on the Linux host machine.
+
+In this example, build products are placed in the `build/linux/bin/profile` directory.
+
+{{% /tab %}}
+{{< /tabs >}}
 
 ### Build a project
 
-This section assumes you've already generated your project files into the project subdirectory `build\windows_vs2019`. But once you've done that, it's just one line:
+Use the following command to build the project, Editor, and its tool dependencies:
+
+{{< tabs name="CMake project build example" >}}
+{{% tab name="Windows" %}}
 
 ```cmd
-cd <project-directory>
-cmake --build build/windows_vs2019  --config profile --target <Project Name>.GameLauncher -- /m
+cmake --build build/windows_vs2019 --target <ProjectName>.GameLauncher Editor --config profile -- /m
 ```
 
-Build products are placed in the `build\windows_vs2019\bin\profile` directory.
+Refer to the previous section for an explanation of each parameter.
+
+In this example, build products are placed in the `build\windows_vs2019\bin\profile` directory.
+
+{{% /tab %}}
+{{% tab name="Linux" %}}
+
+```shell
+cmake --build build/linux --target <ProjectName>.GameLauncher Editor --config profile -j <number of parallel build tasks>
+```
+
+Refer to the previous section for an explanation of each parameter.
+
+In this example, build products are placed in the `build/linux/bin/profile` directory.
+
+{{% /tab %}}
+{{< /tabs >}}
+
+## Simulate an automated review run
+
+To test a build in your branch, you can use the `ci_build.py` Python script that's included with O3DE to simulate the automated review (AR) run that is executed on the Jenkins build nodes. Any contributions you make to the O3DE repo will need to pass this test run before your GitHub pull request can be merged.
+
+Use the following instructions to run `ci_build.py` to simulate an AR run. This build script is located in the `<O3DE_engine>/scripts/build/` directory. The script requires the environment variable `LY_3RDPARTY_PATH` to be set to your downloadable packages ("third-party") folder.
+
+{{< tabs name="Simulate AR run example" >}}
+{{% tab name="Windows" %}}
+
+1. Set the `LY_3RDPARTY_PATH` environment variable if it has not been set.
+
+    ```cmd
+    set LY_3RDPARTY_PATH=<path to your downloadable packages folder>
+    ```
+
+    For example, to use the default downloadable packages folder, set the following path:
+
+    ```cmd
+    set LY_3RDPARTY_PATH=%USERPROFILE%\.o3de\3rdParty
+    ```
+
+1. Run the following command from the engine root folder.
+
+    ```cmd
+    python\python.cmd -u scripts\build\ci_build.py --platform Windows --type <test_type>
+    ```
+
+    For the `<test_type>`, use any test type that is defined in the file `scripts\build\Platform\Windows\build_config.json`. For example, to run a test suite for the profile configuration, you can use `profile_vs2019`.
+
+    ```cmd
+    python\python.cmd -u scripts\build\ci_build.py --platform Windows --type profile_vs2019
+    ```
+
+{{% /tab %}}
+{{% tab name="Linux" %}}
+
+1. Set the `LY_3RDPARTY_PATH` environment variable if it has not been set.
+
+    ```shell
+    export LY_3RDPARTY_PATH=<path to your downloadable packages folder>
+    ```
+
+    For example, to use the default downloadable packages folder, set the following path:
+
+    ```shell
+    export LY_3RDPARTY_PATH=~/.o3de/3rdParty
+    ```
+
+1. Run the following command from the engine root folder.
+
+    ```shell
+    python/python.sh -u scripts/build/ci_build.py --platform Linux --type <test_type>
+    ```
+
+    For `<test_type>`, use any test type that is defined in the file `scripts/build/Platform/Linux/build_config.json`. For example, to run a test suite for the profile configuration, you can use `test_profile`.
+
+    ```shell
+    python/python.sh -u scripts/build/ci_build.py --platform Linux --type test_profile
+    ```
+
+{{% /tab %}}
+{{< /tabs >}}

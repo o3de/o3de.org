@@ -23,7 +23,7 @@ The packet types used to complete the handshake operation are:
 To ensure only these types transmit, all other packets are queued to be sent after authentication. This occurs prior to any packet fragmentation so the only `FragmentedPackets` generated are of `ConnectionHandshakePacket`.
 
 {{< note >}}
-These classes have no API reference as they're generated during the Open 3D Engine build by [AzAutoGen](/docs/user-guide/engine/autogen/) from the contents of `Code/Framework/AzNetworking/AzNetworking/AutoGen`.
+These classes have no API reference as they're generated during the Open 3D Engine build by [AzAutoGen](/docs/user-guide/programming/autogen/) from the contents of `Code/Framework/AzNetworking/AzNetworking/AutoGen`.
 {{< /note >}}
 
 Once one side of the handshake has confirmed initialization of SSL, it immediately begins transmitting encrypted traffic. If the other side of the handshake process hasn't yet completed its SSL initialization, this presents a problem where encrypted traffic needs to be blocked while the handshake completes. In order to handle this issue, an encrypted socket will drop data it believes to be garbage **only** while connecting. Once the handshake has completed, receiving garbage data will lead to a disconnect.

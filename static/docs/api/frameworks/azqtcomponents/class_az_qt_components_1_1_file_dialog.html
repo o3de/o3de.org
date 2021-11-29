@@ -57,8 +57,47 @@ $(function() {
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ce5ab577ccc3f86330a04684aea60f1"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_file_dialog.html#a9ce5ab577ccc3f86330a04684aea60f1">GetSaveFileName</a> (QWidget *parent=nullptr, const QString &amp;caption=QString(), const QString &amp;dir=QString(), const QString &amp;filter=QString(), QString *selectedFilter=nullptr, QFileDialog::Options options=QFileDialog::Options())</td></tr>
 <tr class="separator:a9ce5ab577ccc3f86330a04684aea60f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41242b73a48075a9ef85556975b84b8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_file_dialog.html#ac41242b73a48075a9ef85556975b84b8">ApplyMissingExtension</a> (const QString &amp;selectedFilter, QString &amp;filePath)</td></tr>
+<tr class="separator:ac41242b73a48075a9ef85556975b84b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac41242b73a48075a9ef85556975b84b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac41242b73a48075a9ef85556975b84b8">&#9670;&nbsp;</a></span>ApplyMissingExtension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool AzQtComponents::FileDialog::ApplyMissingExtension </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>selectedFilter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Helper method that parses a selected filter from Qt's QFileDialog::getSaveFileName and applies the selected filter's extension to the filePath if it doesnt already have the extension. This is needed on platforms that do not have a default file dialog (These platforms uses Qt's custom file dialog which will not apply the filter's extension automatically on user entered filenames) </p>
+
+</div>
+</div>
 <a id="a9ce5ab577ccc3f86330a04684aea60f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ce5ab577ccc3f86330a04684aea60f1">&#9670;&nbsp;</a></span>GetSaveFileName()</h2>
 
@@ -126,7 +165,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:31:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:14 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

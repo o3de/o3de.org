@@ -12,7 +12,7 @@ toc: true
 
 This tutorial will link all the relevant documentation to provide you with a detailed guide on getting started with creating multiplayer components. By the end of this tutorial you will learn how to create a new network component that has a network property and a remote procedure call.
 
-Our starting base will be the O3DE MultiplayerSample project. You can find the instructions on how to build and run it in the [MultiplayerSample project readme](https://github.com/o3de/o3de-multiplayersample/blob/development/README/).
+Our starting base will be the O3DE MultiplayerSample project. You can find the instructions on how to build and run it in the [MultiplayerSample project readme](https://github.com/o3de/o3de-multiplayersample/blob/development/README.md).
 
 
 
@@ -24,7 +24,7 @@ Our starting base will be the O3DE MultiplayerSample project. You can find the i
 
 We will start by creating a network component - MyFirstNetworkComponent. It will only do one thing, which is to replicate a monotonic counter.
 
-Since we already have MultiplayerSample setup for [automated code generation](/docs/user-guide/engine/autogen) (codegen), we can start by duplicating one of the existing codegen xml files.
+Since we already have MultiplayerSample setup for [automated code generation](/docs/user-guide/programming/autogen) (codegen), we can start by duplicating one of the existing codegen xml files.
 
 1. Copy `<o3de-multiplayersample>\Gem\Code\Source\AutoGen\SimplePlayerCameraComponent.AutoComponent.xml` to `<o3de-multiplayersample>\Gem\Code\Source\AutoGen\MyFirstNetworkComponent.AutoComponent.xml`
 

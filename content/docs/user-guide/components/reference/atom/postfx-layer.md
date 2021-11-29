@@ -19,7 +19,7 @@ None
 
 ## Base properties
 
-![PostFX Layer base properties](/images/user-guide/components/reference/atom/post-processing-volumes/postfx-layer.png)
+![PostFX Layer base properties](/images/user-guide/components/reference/atom/post-processing-modifiers/postfx-layer.png)
 
 | Property | Description | Values | Default |
 | - | - | - | - |
@@ -66,6 +66,6 @@ You can include or exclude Cameras from a PostFX Layer component through **Tag**
 
 In this example, the PostFX Entity has a PostFX Layer component that only affects camera entities that have the tag `MainCamera`. This affects Camera Entity, which has the `MainCamera` tag.
 
-![Using camera tags with PostFX Layer](/images/user-guide/components/reference/atom/post-processing-volumes/postfx-layer-camera-tags-1.png)
+![Using camera tags with PostFX Layer](/images/user-guide/components/reference/atom/post-processing-modifiers/postfx-layer-camera-tags-1.png)
 
-![Using camera tags with PostFX Layer](/images/user-guide/components/reference/atom/post-processing-volumes/postfx-layer-camera-tags-2.png)
+![Using camera tags with PostFX Layer](/images/user-guide/components/reference/atom/post-processing-modifiers/postfx-layer-camera-tags-2.png)

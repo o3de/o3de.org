@@ -33,3 +33,9 @@ Extend **O3DE Editor** by creating a custom tool Gem. A tool is a dockable widge
 | Tutorial | Description |
 | - | - |
 | [Your First Network Component](multiplayer/first-multiplayer-component) | Create multiplayer components with C++ in this introduction to network components. |
+
+## PostFX
+
+| Tutorial | Description |
+| - | - |
+| [PostFX Shape Weight Modifier](postfx/use-postfx-shape-weight-modifier) | Use a **PostFX Shape Weight Modifier** component to modify exposure control in O3DE. This example demonstrates how to modify post-processing effects (PostFX) at runtime. |
