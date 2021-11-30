@@ -1,5 +1,5 @@
 ---
-title: Overview of the Open 3D Engine Gem Module system
+title: Gem Module system in Open 3D System
 description: An overview of the Open 3D Engine Gem system and module loader.
 linktitle: Overview
 weight: 100
@@ -23,16 +23,20 @@ All Modules are required to provide the following functions, declared with the `
 * `void UninitializeDynamicModule()` - The function called immediately _before_ the module is unloaded. The Module should clean up any static resources and environment information which are no longer needed, but were set up in `InitializeDynamicModule()`.
 
 {{< important >}}
-Although `CreateModuleClass()` and `DestroyModuleClass(Az::Module*)` are called only once by the Module loader (when creating an instance after load, and destroying the instance before unloading), this is **not** guaranteed behavior since end users may manually load Modules. If your Module requires singleton behavior, make sure to enforce it on your own to prevent developers from accidentally instantiating multiple objects.
+Although `CreateModuleClass()` and `DestroyModuleClass(Az::Module*)` are called only once by the Module loader (when creating an instance after load, and destroying the instance before unloading), this is not guaranteed behavior since end users may manually load Modules. If your Module requires singleton behavior, make sure to enforce it on your own to prevent developers from accidentally instantiating multiple objects.
 {{< /important >}}
+
+These Module entry point functions are defined by the `AZ_DECLARE_MODULE_CLASS(...)` macro that's called in the Gem's Module class.
 
 ## The AZ_DECLARE_MODULE_CLASS(...) Macro
 
 Since many Modules would use the same general boilerplate code to generate the entry point code, O3DE provides the `AZ_DECLARE_MODULE_CLASS(...)` macro, which generates standard entry point function implementations. The syntax for the macro is `AZ_DECLARE_MODULE_CLASS(<UUID>, <ModuleClassName>)`. By convention, the `<UUID>` used for Modules associated with Gems should be `Gem_<GemName>`.
 
+The `AZ_DECLARE_MODULE_CLASS(...)` macro is defined in the `Module` class that's located in the `/Code/Framework/AzCore/AzCore/Module` directory of the engine source.
+
 ## Example Module Class
 
-The following C++ class is the most minimal possible O3DE Module: It derives from `Az::Module`, declares the necessary overrides, and generates the entry point functions. It provides no additional functionality. Note that this is an **implementation**, not a **definition**. This Module implementation belongs to a Gem called `Example` for the purposes of following good naming conventions.
+The following C++ class is the most minimal possible O3DE Module: It derives from `AZ::Module`, declares the necessary overrides, and generates the entry point functions. It provides no additional functionality. Note that this is an **implementation**, not a **definition**. This Module implementation belongs to a Gem called `Example` for the purposes of following good naming conventions.
 
 ```cpp
 class ExampleModule
@@ -50,6 +54,6 @@ class ExampleModule
 AZ_DECLARE_MODULE_CLASS(Gem_Example, Example)
 ```
 
-## "Monolithic" Builds and Gems
+## Monolithic builds and gems
 
-The Module system can also function in "monolithic" mode. Enabling Monolithic builds causes dynamic Modules to become static Modules, and be linked directly to the application executables instead of dynamically loaded on startup. This allows developers to ship a single (large) server or client application executable. Monolithic builds can optimize startup time, as well as avoid performance issues or platform restrictions that might prevent the loading of dynamic libraries.
+The Module system can also function in *monolithic* mode. Enabling monolithic builds causes dynamic Modules to become static Modules, and be linked directly to the application executables instead of dynamically loaded on startup. This allows developers to ship a single (large) server or client application executable. Monolithic builds can optimize startup time, as well as avoid performance issues or platform restrictions that might prevent the loading of dynamic libraries.
