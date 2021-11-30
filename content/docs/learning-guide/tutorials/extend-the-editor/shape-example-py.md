@@ -41,7 +41,7 @@ This tutorial uses the following directory names and locations in the examples.
 
 To create a Gem based on the `PythonToolGem` template, complete the following steps: 
 
-1. Create a Gem by using the **O3DE CLI** (`o3de`) script that's in your engine source directory. Specify the Gem's name (`--gem-name`, `-gn`), the Gem directory path (`--gem-path`, `-gp`), and the Gem template to create from (`--template-name`, `-tn`). This Gem is based off of the `PythonToolGem` template. In this example, we'll name the Gem `MyPyShapeExample` and create it in `C:/o3de-gems/MyPyShapeExample`.
+1. Create a Gem by using the **O3DE CLI** (`o3de`) script that's in your engine source directory. Specify the Gem's name (`--gem-name`, `-gn`), the Gem directory path (`--gem-path`, `-gp`), and the Gem template to create from (`--template-name`, `-tn`). This Gem is based off of the `PythonToolGem` template. In this example, name the Gem `MyPyShapeExample` and create it in `C:/o3de-gems/MyPyShapeExample`.
 
     ```cmd
     scripts/o3de create-gem --gem-name MyPyShapeExample --gem-path C:/o3de-gems/MyPyShapeExample --template-name PythonToolGem
@@ -92,7 +92,7 @@ Example of `Editor/Scripts` directory:
 
 All Gems have modules and system component classes written in C++ that connect the tool to O3DE and allow it to communicate with other systems. The `PythonToolGem` template already contains all of the code needed to run the tool in the Editor. You can find these C++ files in `Code/Source`.
 
-For more information on Gem modules and system components, refer to the [C++ Programming for Gem Development](docs/user-guide/gems/development/programming-for-gems.md) page.
+For more information on Gem modules and system components, refer to the [Overview of the Open 3D Engine Gem Module system](/docs/user-guide/programming/gems/) page.
 
 ### O3DE and Qt frameworks
 
@@ -136,19 +136,19 @@ class PyShapeExampleDialog(QDialog):
 ```
 
 
-## Input fields and check boxes
+## Input fields and checkboxes
 
-In this step, create an input field for the entity's name and a check box for an option to append a suffix---the component's name---to the entity's name. For example, suppose you set the entity's name to "MyEntity" and enable the check box. Then, when you create an entity with a **Box Shape** component and another with a **Sphere Shape** component, they will respectively be named "MyEntity_BoxShape" and "MyEntity_SphereShape".
+In this step, create an input field for the entity's name and a checkbox for an option to append a suffix---the component's name---to the entity's name. For example, suppose you set the entity's name to "MyEntity" and enable the checkbox. Then, when you create an entity with a **Box Shape** component and another with a **Sphere Shape** component, they will respectively be named "MyEntity_BoxShape" and "MyEntity_SphereShape".
 
-By the end of this step, your input field and check box should look like this:
+By the end of this step, your input field and checkbox should look like this:
 
-{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/input-field-check-box.png" "500" "Shows UI for an input field and check box" >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/input-field-check-box.png" "500" "Shows UI for an input field and checkbox" >}}
 
-First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
+After instantiating `mainLayout`, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
 1. To start, instantiate a `QGroupBox` called `entity_name_widget` and a `QFormLayout` called `form_layout`.
 
-2. Later, you will create the input field and check box and add them to this widget. 
+2. Later, you will create the input field and checkbox and add them to this widget. 
 
 3. Finally, set the layout of `entity_name_widget` to `form_layout`, and add `entity_name_widget` to `main_layout`.
 
@@ -156,7 +156,7 @@ First, wrap these UI elements in their own sub-widget, set the layout, and add i
         entity_name_widget = QGroupBox("Name your entity (Line Edit)", self)    # 1
         form_layout = QFormLayout()
 
-                                                                                # 2
+        # ...                                                                   # 2
 
         entity_name_widget.setLayout(form_layout)                               # 3
         main_layout.addWidget(entity_name_widget)
@@ -178,13 +178,13 @@ An input field takes text input from the user. With Qt, you can create an input 
         self.name_input.setClearButtonEnabled(True)
 ```
 
-### Create a check box
+### Create a checkbox
 
-A check box is an option button that users can enable or disable to trigger a user-defined behavior. With Qt, you can create an input field by using the `QCheckBox` object. In this example, the check box will control whether or not to append a suffix to the entity's name. At runtime, it will start disabled, and enable when the user enters the entity's name to the input field. You will define this behavior later.
+A checkbox is an option button that users can enable or disable to trigger a user-defined behavior. With Qt, you can create an checkbox by using the `QCheckBox` object. In this example, the checkbox controls whether or not to append a suffix to the entity's name. At runtime, it will start disabled, and enable when the user enters the entity's name to the input field. You will define this behavior later.
 
-1. Create a check box by instantiating `QCheckBox`. In this example, name it `add_shape_name_suffix`.
+1. Create a checkbox by instantiating `QCheckBox`. In this example, name it `add_shape_name_suffix`.
 
-2. Set the check box to the start in the disabled state by using `setDisabled(True)`.
+2. Set the checkbox to the start in the disabled state by using `setDisabled(True)`.
 
 ```py
         self.add_shape_name_suffix = QCheckBox(self)
@@ -194,7 +194,7 @@ A check box is an option button that users can enable or disable to trigger a us
 
 ### Add a signal listener with a slot handler
 
-Qt uses signals and slots to communicate between objects (refer to [Signals & Slots](https://doc.qt.io/qt-5/signalsandslots.html) in the Qt Documentation). Set up a signal listener such that when the user enters text into the input field at runtime, the check box automatically enables.
+Qt uses signals and slots to communicate between objects (refer to [Signals & Slots](https://doc.qt.io/qt-5/signalsandslots.html) in the Qt Documentation). Set up a signal listener such that when the user enters text into the input field at runtime, the checkbox automatically enables.
 
 In this example, the signal listener uses a slot handler, which is essentially a Python function that a signal can connect to.
 
@@ -216,31 +216,31 @@ In this example, the signal listener uses a slot handler, which is essentially a
 
 ### Add UI elements to layout
 
-After creating the UI elements---an input field and a check box---and connecting a signal listener to them, add them to the UI. To ensure they belong to the sub-widget `entity_name_widget`, add them to `form_layout` by calling `addRow(...)`.
+After creating the UI elements---an input field and a checkbox---and connecting a signal listener to them, add them to the UI. To ensure they belong to the sub-widget `entity_name_widget`, add them to `form_layout` by calling `addRow(...)`.
 
 ```py
         form_layout.addRow("Entity name", self.name_input)
         form_layout.addRow("Add shape name suffix", self.add_shape_name_suffix)
 ```
 
-## Combo boxes
+## Comboboxes
 
-In this step, you will create a combo box that contains a list of values that you can use to scale the size of the entity.
+In this step, you will create a combobox that contains a list of values that you can use to scale the size of the entity.
 
-By the end of this step, your combo box should look like this:
+By the end of this step, your combobox should look like this:
 
-{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/combo-box.png" "500" "Shows UI for combo box" >}}
+{{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/combo-box.png" "500" "Shows UI for combobox" >}}
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
-1. To start, instantiate a `QGroupBox` called `comboBoxGroup` and a `QVBoxLayout` called `comboBoxLayout`.
+1. To start, instantiate a `QGroupBox` called `combobox_group` and a `QVBoxLayout` called `combobox_layout`.
 
-2. Later, you will create a combo box and define a list of scale values.
+2. Later, you will create a combobox and define a list of scale values.
 
-3. Finally, set the layout of `comboBoxGroup` to `comboBoxLayout`, and add `comboBoxGroup` to `mainLayout`.
+3. Finally, set the layout of `combobox_group` to `combobox_layout`, and add `combobox_group` to `mainLayout`.
 
 ```py
-        combobox_group = QGroupBox("Choose your scale (Combo Box)", self)   # 1
+        combobox_group = QGroupBox("Choose your scale (combobox)", self)   # 1
         combobox_layout = QVBoxLayout()
 
         # ...                                                               # 2
@@ -249,21 +249,21 @@ First, wrap these UI elements in their own sub-widget, set the layout, and add i
         main_layout.addWidget(combobox_group)
 ```
 
-### Create a combo box
+### Create a combobox
 
-A combo box allows users to select an item from a pop up list of items. With Qt, you can create an input field by using the `QComboBox` object.
+A combobox allows users to select an item from a pop up list of items. With Qt, you can create an input field by using the `QComboBox` object.
 
-1. Define a list of scale values. In this example, we'll name it `scale_values`.
+1. Define a list of scale values. In this example, name it `scale_values`.
 
-2. Create a combo box by instantiating `QComboBox`. In this example, we'll name it `scale_combobox`. 
+2. Create a combobox by instantiating `QComboBox`. In this example, name it `scale_combobox`. 
 
-3. Allow users to enter a custom option in the combo box by calling `setEditable(True)`. 
+3. Allow users to enter a custom option in the combobox by calling `setEditable(True)`. 
 
 4. If a user enters a custom option, validate that the value they entered is a numerical value within a specific range and decimal place by calling `setValidator(...)`. In this example, set the lower bound to `0.0`, the upper bound to `100.0`, and the decimal places to `3`. 
 
-5. Add the list of values to the combo box by calling `addItems(...)`.
+5. Add the list of values to the combobox by calling `addItems(...)`.
 
-6. Add the combo box to `combobox_layout` by calling `addWidget(...)`.
+6. Add the combobox to `combobox_layout` by calling `addWidget(...)`.
 
 ```py
         scale_values = [                                                            # 1
@@ -390,7 +390,7 @@ Define `CreateEntityWithShapeComponent(...)`, which communicates with O3DE EBuse
 
    - Get the name of the entity by calling `text()`, and store it in `entity_name`.
 
-   - If the user enabled the check box to apply a suffix of the component's name to the entity's name, query the component's name. Use `editor.EditorComponentAPIBus` to call `bus.Broadcast` and dispatch the `FindComponentTypeNames` event, which finds the component names of the provided list and stores them in `component_names`.  
+   - If the user enabled the checkbox to apply a suffix of the component's name to the entity's name, query the component's name. Use `editor.EditorComponentAPIBus` to call `bus.Broadcast` and dispatch the `FindComponentTypeNames` event, which finds the component names of the provided list and stores them in `component_names`.  
 
    - Format the name and suffix, if any.
 
@@ -398,7 +398,7 @@ Define `CreateEntityWithShapeComponent(...)`, which communicates with O3DE EBuse
 
 3. Set the entity's scale.
    
-   - Get the value in the combo box by calling `currentText()`, and store it in `scale_text`.
+   - Get the value in the combobox by calling `currentText()`, and store it in `scale_text`.
 
    - Set the entity's scale by using `components.TransformBus` to call `bus.Event` and dispatch `"SetLocalUniformScale"`, which sets the scale of `new_entity_id`. Be aware that you must convert `scale_text` to a float.
 
@@ -471,9 +471,9 @@ The following instructions walk you through how to store the icon using the Qt R
     - Call `InitShapeExampleResource()` in the `EditorModule` class's constructor.
 
 
-## Build and debug your tool
+## Build and test your tool
 
-You can debug your custom tool by running it from the **Python Scripts** panel in the Editor.
+You can test your custom tool by running it from the **Python Scripts** panel in the Editor.
 
 1. Open Editor for your project.
 
@@ -505,4 +505,4 @@ This tutorial is based off of the PyShapeExample Gem in [`o3de/sample-code-gems`
 
    - Open the tool in the Editor.
 
-    These steps are explained earlier in this tutorial (refer to [Create a tool with the `PythonToolGem` template](#create-a-tool-with-the-pythontoolgem-template)).
+    These steps are explained earlier in this tutorial. Refer to [Create a tool with the `PythonToolGem` template](#create-a-tool-with-the-pythontoolgem-template).
