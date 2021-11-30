@@ -6,13 +6,13 @@ weight: 300
 toc: true
 ---
 
-In this tutorial, you create a custom tool Gem written in Python, called **Shape Example**, that extends the **Open 3D Engine (O3DE) Editor**. The Shape Example tool allows you to create entities with a Shape component and configure their component properties. You'll learn how to use the `PythonToolGem` template and practice Python development with [Qt](https://wiki.qt.io/Main), O3DE Tools UI API, and other O3DE APIs.
+In this tutorial, you'll learn how to extend the **Open 3D Engine (O3DE) Editor** using the `PythonToolGem` template to create a custom tool Gem called **MyPyShapeExample**. This custom tool allows you to create entities with a Shape component and configure their component properties. The Gem is written in Python with [Qt](https://wiki.qt.io/Main), the O3DE Tools UI API, and other O3DE APIs.
 
-This tutorial shows you how to create the **PyShapeExample** Gem, which is a sample Gem in [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/py_gems/PyShapeExample). You can reference the PyShapeExample Gem sample as you follow along this tutorial.
+The **PyShapeExample** Gem, a sample Gem in the [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/py_gems/PyShapeExample), demonstrates the finished Gem that you create in this tutorial. You can reference the PyShapeExample Gem sample as you follow along this tutorial.
 
 By the end of this tutorial, you'll be able to extend the Editor by creating your own custom tools written in C++.
 
-The following image is a preview of the Shape Exmple tool that you create in this tutorial.
+The following image is a preview of the custom tool that you create.
 
 {{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/python-shape-example-demo.png" "1080" "An image of the Shape Example tool and some entities created by it." >}}
 
@@ -21,44 +21,53 @@ The following image is a preview of the Shape Exmple tool that you create in thi
 
 Before you start the tutorial, ensure that you have the following:
 
-- Set up an O3DE development environment. You can build O3DE as a source engine or a pre-built SDK engine. For more information, refer to [Setting up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github.md).
+- Set up an O3DE development environment. For instructions, refer to [Set up Open 3D Engine](/docs/welcome-guide/setup/).
 
+
+## Tutorial specifics
+
+This tutorial uses the following Windows directory names and locations in the examples. You may choose different folder names and locations on your disk.
+
+- **O3DE engine directory**: `C:\o3de`  
+    The source directory that contains the engine.
+
+- **`PythonToolGem` template**: `C:\o3de\Templates\PythonToolGem`  
+    The Gem template that your custom Gem is based off of.
+
+- **MyPyShapeExample Gem**: `C:\o3de-gems\MyPyShapeExample`  
+    Your custom Gem. You may choose a different folder name and location in disk.
 
 ## Create a Gem with the `PythonToolGem` template
 
-To start, create a Gem by using the `PythonToolGem` template. The `PythonToolGem` template provides a basic Python framework to create a dialog window that extends the Editor.
-
-This tutorial uses the following directory names and locations in the examples.
-
-- **O3DE engine directory**: `C:/o3de`  
-    The source directory that contains the engine.
-
-- **`PythonToolGem` template**: `C:/o3de/Templates/PythonToolGem`  
-    The Gem template that your custom Gem is based off of.
-
-- **MyPyShapeExample Gem**: `C:/o3de-gems/MyPyShapeExample`  
-    Your custom Gem. You may choose a different folder name and location in disk.
+Start by creating a Gem from the `PythonToolGem` template, which contains a basic Python framework to create a dialog window that extends the Editor.
 
 To create a Gem based on the `PythonToolGem` template, complete the following steps: 
 
-1. Create a Gem by using the **O3DE CLI** (`o3de`) script that's in your engine source directory. Specify the Gem's name (`--gem-name`, `-gn`), the Gem directory path (`--gem-path`, `-gp`), and the Gem template to create from (`--template-name`, `-tn`). This Gem is based off of the `PythonToolGem` template. In this example, name the Gem `MyPyShapeExample` and create it in `C:/o3de-gems/MyPyShapeExample`.
+1. Create a Gem by using the **O3DE CLI** (`o3de`) script that's in your engine directory. 
 
     ```cmd
-    scripts/o3de create-gem --gem-name MyPyShapeExample --gem-path C:/o3de-gems/MyPyShapeExample --template-name PythonToolGem
+    scripts\o3de create-gem --gem-name MyPyShapeExample --gem-path C:\o3de-gems\MyPyShapeExample --template-name PythonToolGem
     ```
 
-   Depending on the Gem path, this command automatically registers the Gem to one of the manifest files: `.o3de/o3de_manifest.json`, `<engine>/engine.json`, and `<project>/project.json`.
+    The command specifies the following options: 
+    - `--gem-name`, `-gn`: The name of the new Gem. 
+    - `--gem-path`, `-gp`: The path to create the new Gem at. 
+    - `--template-name`, `-tn`: The path to the template that you want to create the new Gem from.
+
+    This Gem is based off of the `PythonToolGem` template. In this example, name the Gem `MyPyShapeExample` and create it in `C:\o3de-gems\MyPyShapeExample`.
+
+   Depending on the Gem path, this command automatically registers the Gem to one of the manifest files: `.o3de\o3de_manifest.json`, `<engine>\engine.json`, and `<project>\project.json`.
 
 2. (Optional) Register the Gem to your project. This step is optional because when you create a Gem using the O3DE CLI in the previous step, it automatically registers the Gem.
 
     ```cmd
-    scripts/o3de register -gp C:/o3de-gems/MyPyShapeExample -espp <project-path>
+    scripts\o3de register -gp C:\o3de-gems\MyPyShapeExample -espp <project-path>
     ```
 
 3. Add the Gem in your project by using the `o3de` script.
 
     ```cmd
-    scripts/o3de enable-gem -gn MyPyShapeExample -pp <project-path>
+    scripts\o3de enable-gem -gn MyPyShapeExample -pp <project-path>
     ```
 
     Or, enable the Gem using the Project Manager (refer to [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems.md)).
@@ -67,7 +76,7 @@ To create a Gem based on the `PythonToolGem` template, complete the following st
 
 5. Open Editor for your project.
 
-6. Open the tool by selecting **Tools > Examples > MyPythonShapeExample** from the file menu. (See A in the following image.)
+6. Open the tool by selecting **Tools > Examples > MyPyShapeExample** from the file menu. (See A in the following image.)
 
     Or, open the tool directly by clicking on the tool's icon in the **Edit Mode Toolbar**. (See B.)
 
@@ -78,27 +87,27 @@ Now you can access the Shape Example tool! By default, this tool contains a simp
 
 ## Code directory
 
-This sections describes your MyPyShapeExample Gem's code structure. It's important to become familiar with your Gem's code structure because this is the entry point where you will program your tool's custom functionality. In this example, your Gem's directory is located at: `C:/o3de-gems/MyPyShapeExample`. This is the path that you specified when you created the Gem. Your Gem's code is located in the subdirectories `Code/Source` and `Editor/Scripts`, which contains the following classes and frameworks that make up your custom tool.
+This sections describes your MyPyShapeExample Gem's code structure. It's important to become familiar with your Gem's code structure because this is the entry point where you will program your tool's custom functionality. In this example, your Gem's directory is located at: `C:\o3de-gems\MyPyShapeExample`. This is the path that you specified when you created the Gem. Your Gem's code is located in the subdirectories `Code\Source` and `Editor\Scripts`, which contains the following classes and frameworks that make up your custom tool.
 
-Example of `Code/Source` directory:
+Example of `Code\Source` directory:
 
 {{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/python-tool-gem-template-directory.png" "720" "Editor with a tool created using the PythonToolGem template." >}}
 
-Example of `Editor/Scripts` directory:
+Example of `Editor\Scripts` directory:
 
 {{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/python-tool-gem-template-directory-2.png" "620" "Editor with a tool created using the PythonToolGem template." >}}
 
 ### Modules and system components
 
-All Gems have modules and system component classes written in C++ that connect the tool to O3DE and allow it to communicate with other systems. The `PythonToolGem` template already contains all of the code needed to run the tool in the Editor. You can find these C++ files in `Code/Source`.
+All Gems have modules and system component classes written in C++ that connect the tool to O3DE and allow it to communicate with other systems. The `PythonToolGem` template already contains all of the code needed to run the tool in the Editor. You can find these C++ files in `Code\Source`.
 
-For more information on Gem modules and system components, refer to the [Overview of the Open 3D Engine Gem Module system](/docs/user-guide/programming/gems/) page.
+For more information on Gem modules and system components, refer to the [Overview of the Open 3D Engine Gem Module system](/docs/user-guide/programming/gems/overview/) page.
 
 ### O3DE and Qt frameworks
 
 O3DE extends the **Qt** framework, so you will use [PySide2](https://pypi.org/project/PySide2/)---the Python bindings for Qt, [Qt for Python](https://doc.qt.io/qtforpython/)---to create a graphical user interface (GUI). You will also use O3DE's EBuses to communicate with other O3DE interfaces, such as entities and components, and connect them to Qt elements.
 
-You will write most of your tool's functionality and UI elements in the`PyShapeExampleDialog` class that's located in `Editor/Scripts/pyshapeexample_dialog.py`.
+You will write most of your tool's functionality and UI elements in the`PyShapeExampleDialog` class that's located in `Editor\Scripts\pyshapeexample_dialog.py`.
 
 ### Qt Resources
 
@@ -184,7 +193,7 @@ A checkbox is an option button that users can enable or disable to trigger a use
 
 1. Create a checkbox by instantiating `QCheckBox`. In this example, name it `add_shape_name_suffix`.
 
-2. Set the checkbox to the start in the disabled state by using `setDisabled(True)`.
+2. Set the checkbox to start in the disabled state by using `setDisabled(True)`.
 
 ```py
         self.add_shape_name_suffix = QCheckBox(self)
@@ -445,19 +454,19 @@ An icon is an image file that's used to represent your tool in the Editor. The i
 
 The following instructions walk you through how to store the icon using the Qt Resource System and load it from your Gem module. Be aware that some of the instructions may already be done by the `PythonToolGem` template.
 
-1. Add an image file to the `Code/Source` directory to use as your icon. In this example, the icon is named `toolbar.svg`. We recommend that your icon adheres to the guidelines in [UI development best practices](https://o3de.org/docs/tools-ui/uidev-component-development-guidelines/#ui-development-best-practices).
+1. Add an image file to the `Code\Source` directory to use as your icon. In this example, the icon is named `toolbar.svg`. We recommend that your icon adheres to the guidelines in [UI development best practices](https://o3de.org/docs/tools-ui/uidev-component-development-guidelines/#ui-development-best-practices).
 
-2. Add your icon to PyShapeExample Gem's resources by updating `Code/Source/ShapeExample.qrc` with your new icon's file name.
+2. Add your icon to MyPyShapeExample Gem's resources by updating `Code\Source\ShapeExample.qrc` with your new icon's file name.
 
     ```xml
     <!DOCTYPE RCC><RCC version="1.0">
-        <qresource prefix="/PyShapeExample">
+        <qresource prefix="/MyPyShapeExample">
             <file alias="toolbar_icon.svg">toolbar_icon.svg</file>
         </qresource>
     </RCC>
     ```
 
-3. Register PyShapeExample Gem's resources to Qt Resource System by adding the following code in `Code/Source/EditorModule.cpp`. 
+3. Register MyPyShapeExample Gem's resources to Qt Resource System by adding the following code in `Code\Source\EditorModule.cpp`. 
 
     - Define the function `InitShapeExampleResource()` and call `Q_INIT_RESOURCE(...)` to register the Qt resrouces listed in `ShapeExample.qrc`.
 
@@ -487,9 +496,11 @@ Congratulations! You created a custom tool Gem that's written in Python, built i
 
 ## Download the PyShapeExample Gem sample
 
-This tutorial is based off of the PyShapeExample Gem in [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/py_gems/PyShapeExample). You can download this sample and load it in the Editor.
+Now that you've completed this tutorial, you can compare your MyPyShapeExample Gem to the sample, **PyShapeExample** Gem, in [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/cpp_gems/ShapeExample).
 
-1. Download or clone the repository. The PyShapeExample Gem is located in `sample-code-gems/py_gems/PyShapeExample`.
+To download this sample and load it in the Editor:
+
+1. Download or clone the repository. The PyShapeExample Gem is located in `<repo>\sample-code-gems\py_gems\PyShapeExample`.
 
     ```cmd
     git clone https://github.com/o3de/sample-code-gems.git
@@ -505,4 +516,4 @@ This tutorial is based off of the PyShapeExample Gem in [`o3de/sample-code-gems`
 
    - Open the tool in the Editor.
 
-    These steps are explained earlier in this tutorial. Refer to [Create a tool with the `PythonToolGem` template](#create-a-tool-with-the-pythontoolgem-template).
+    These steps are explained earlier in this tutorial. Refer to [Create a Gem from the `PythonToolGem` template](#create-a-tool-with-the-pythontoolgem-template).

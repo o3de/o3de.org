@@ -4,7 +4,7 @@ title: Extend the Open 3D Engine Editor
 description: Extend the Open 3D Engine (O3DE) Editor by developing a custom tool Gem.
 ---
 
-Extend the Open 3D Engine (O3DE) Editor by creating a custom tool Gem. A tool is a dockable widget or dialog window that implements functionality to Editor. You can create custom tools in C++ or Python.
+Extend the **Open 3D Engine (O3DE) Editor** by creating a custom tool Gem. A tool is a dockable widget or dialog window that implements functionality in Editor. You can create custom tools in C++ or Python.
 
 | Tutorial | Description |
 | - | - |

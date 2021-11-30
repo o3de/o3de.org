@@ -6,13 +6,13 @@ weight: 200
 toc: true
 ---
 
-In this tutorial, you'll learn how to extend the **Open 3D Engine (O3DE) Editor** using the `CppToolGem` template to create a custom tool Gem called **Shape Example**. This tool Gem allows you to create entities with a Shape component and configure their component properties. The Gem is written in C++ with [Qt](https://wiki.qt.io/Main), the O3DE Tools UI API, and other O3DE APIs.
+In this tutorial, you'll learn how to extend the **Open 3D Engine (O3DE) Editor** using the `CppToolGem` template to create a custom tool Gem called **MyShapeExample**. This custom tool allows you to create entities with a Shape component and configure their component properties. The Gem is written in C++ with [Qt](https://wiki.qt.io/Main), the O3DE Tools UI API, and other O3DE APIs.
 
-The **ShapeExample** Gem is also one of the sample Gems in the [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/cpp_gems/ShapeExample). You can reference the ShapeExample Gem sample as you follow along this tutorial.
+The **ShapeExample** Gem, a sample Gem in the [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/cpp_gems/ShapeExample), demonstrates the finished Gem that you create in this tutorial. You can reference the ShapeExample Gem sample as you follow along this tutorial.
 
 By the end of this tutorial, you'll be able to extend the Editor by creating your own custom tools written in C++.
 
-The following image is a preview of the Shape Exmple tool that you create in this tutorial.
+The following image is a preview of the custom tool that you create.
 
 {{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/cpp-shape-example-demo.png" "1080" "An image of the Shape Example tool and some entities created by it." >}}
 
@@ -43,24 +43,31 @@ Start by creating a Gem from the `CppToolGem` template, which contains a basic C
 
 To create a Gem from the `CppToolGem` template, complete the following steps:
 
-1. Create a Gem by using the **O3DE CLI** (`o3de`) script that's in your engine source directory. Specify the Gem's name (`--gem-name`, `-gn`), the Gem directory path (`--gem-path`, `-gp`), and the Gem template to create from (`--template-name`, `-tn`). This Gem is based off of the `CppToolGem` template. In this example, we'll name the Gem `MyCppShapeExample` and create it in `C:/o3de-gems/MyCppShapeExample`.
+1. Create a Gem by using the **O3DE CLI** (`o3de`) script that's in your engine directory.
 
     ```cmd
-    scripts/o3de create-gem --gem-name MyCppShapeExample --template-name CppToolGem --gem-path C:/o3de-gems/MyCppShapeExample
+    scripts\o3de create-gem --gem-name MyCppShapeExample --template-name CppToolGem --gem-path C:\o3de-gems\MyCppShapeExample
     ```
 
-   Depending on the Gem path, this command automatically registers the Gem to one of the manifest files: `.o3de/o3de_manifest.json`, `<engine>/engine.json`, and `<project>/project.json`.
+    This command specifies the following options: 
+    - `--gem-name`, `-gn`: The name of the new Gem. 
+    - `--gem-path`, `-gp`: The path to create the new Gem at. 
+    - `--template-name`, `-tn`: The path to the template that you want to create the new Gem from.
+
+    This Gem is based off of the `CppToolGem` template. In this example, name the Gem `MyCppShapeExample` and create it in `C:\o3de-gems\MyCppShapeExample`.
+
+   Depending on the Gem path, this command automatically registers the Gem to one of the manifest files: `.o3de\o3de_manifest.json`, `<engine>\engine.json`, and `<project>\project.json`.
 
 2. (Optional) Register the Gem to your project. This step is optional because when you create a Gem using the O3DE CLI in the previous step, it automatically registers the Gem. If you downloaded the ShapeExample Gem from the sample code Gems repository, you must register it to your project.
 
     ```cmd
-    scripts/o3de register -gp C:/o3de-gems/MyCppShapeExample -espp <project-path>
+    scripts\o3de register -gp C:\o3de-gems\MyCppShapeExample -espp <project-path>
     ```
 
 3. Add the Gem in your project.
 
     ```cmd
-    scripts/o3de enable-gem -gn MyCppShapeExample -pp <project-path>
+    scripts\o3de enable-gem -gn MyCppShapeExample -pp <project-path>
     ```
 
     Or, enable the Gem using the Project Manager (refer to [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems.md)).
@@ -80,25 +87,25 @@ Now you can access the Shape Example tool! By default, this tool contains a simp
 
 ## Code directory
 
-This sections describes your MyCppShapeExample Gem's code structure. It's important to become familiar with your Gem's code structure because this is the entry point where you will program your tool's custom functionality. In this example, your Gem's directory is located at: `C:/o3de-gems/MyCppShapeExample`. This is the path that you specified when you created the Gem. Your Gem's code is located in the subdirectory `Code/Source`, which contains the following classes and frameworks that make up your custom tool.
+This sections describes your MyCppShapeExample Gem's code structure. It's important to become familiar with your Gem's code structure because this is the entry point where you will program your tool's custom functionality. In this example, your Gem's directory is located at: `C:\o3de-gems\MyCppShapeExample`. This is the path that you specified when you created the Gem. Your Gem's code is located in the subdirectory `Code\Source`, which contains the following classes and frameworks that make up your custom tool.
 
-Example of `Code/Source` directory:
+Example of `Code\Source` directory:
 
 {{< image-width "/images/learning-guide/tutorials/extend-the-editor/shape-example/cpp-tool-gem-template-directory.png" "720" "Editor with a tool created using the CppToolGem template." >}}
 
 
 ### Modules and system components
 
-All Gems have modules and system component classes written in C++ that connect the tool to O3DE and allow it to communicate with other systems. The `CppToolGem` template already contains all of the code needed to run the tool in the Editor. You can find these C++ files in `Code/Source`.
+All Gems have modules and system component classes written in C++ that connect the tool to O3DE and allow it to communicate with other systems. The `CppToolGem` template already contains all of the code needed to run the tool in the Editor. You can find these C++ files in `Code\Source`.
 
-For more information on Gem modules and system components, refer to the [Overview of the Open 3D Engine Gem Module system](/docs/user-guide/programming/gems/) page.
+For more information on Gem modules and system components, refer to the [Overview of the Open 3D Engine Gem Module system](/docs/user-guide/programming/gems/overview/) page.
 
 
 ### O3DE and Qt frameworks
 
 O3DE extends the **Qt** framework, so you will use [Qt Widgets Module](https://doc.qt.io/qt-5/qtwidgets-index.html) to create a graphical user interface (GUI). You will also use O3DE's EBuses to communicate with other O3DE interfaces, such as entities and components, and connect them to Qt elements.
 
-You will write most of your tool's functionality and UI elements in the `ShapeExample` class that's located in `Code/Source/ShapeExampleWidget.h` and `Code/Source/ShapeExampleWidget.cpp`.
+You will write most of your tool's functionality and UI elements in the `ShapeExample` class that's located in `Code\Source\ShapeExampleWidget.h` and `Code\Source\ShapeExampleWidget.cpp`.
 
 
 ### Qt Resources
@@ -164,7 +171,7 @@ After instantiating `mainLayout`, wrap the input field and checkbox in their own
 
 An input field is a UI element that takes text input from the user. With Qt, you can create an input field by using the `QLineEdit` object.
 
-In `ShapeExampleWidget.h`, create a private `QLineEdit*` variable. In this example, name it `m_nameInput.
+In `ShapeExampleWidget.h`, create a private `QLineEdit*` variable. In this example, name it `m_nameInput`.
 
 ```cpp
     private:
@@ -204,7 +211,7 @@ In `ShapeExampleWidget.cpp`, do the following:
 
 1. Create a checkbox by instantiating `QCheckBox` and assigning it to `m_addShapeNameSuffix`.
 
-2. Set the checkbox to the start in the disabled state by using `setDisabled(true)`.
+2. Set the checkbox to start in the disabled state by using `setDisabled(true)`.
 
 ```cpp
     m_addShapeNameSuffix = new QCheckBox(this);
@@ -217,7 +224,7 @@ Qt uses signals and slots to communicate between objects (refer to [Signals & Sl
 
 In this example, the signal listener uses a slot handler, which is essentially a C++ function that a signal can connect to. 
 
-1. Declare a slot in `Code/Source/ShapeExampleWidget.h` by using the `Q_SLOTS` macro.
+1. Declare a slot in `Code\Source\ShapeExampleWidget.h` by using the `Q_SLOTS` macro.
 
     ```cpp
     private Q_SLOTS:
@@ -516,9 +523,9 @@ An icon is an image file that's used to represent your tool in the Editor. The i
 
 The following instructions walk you through how to store the icon using the Qt Resource System and load it from your Gem module. Be aware that some of the instructions may already be done by the `CppToolGem` template.
 
-1. Add an image file to the `Code/Source` directory to use as your icon. In this example, the icon is named `toolbar.svg`. We recommend that your icon adheres to the guidelines in [UI development best practices](/docs/tools-ui/uidev-component-development-guidelines/#ui-development-best-practices).
+1. Add an image file to the `Code\Source` directory to use as your icon. In this example, the icon is named `toolbar.svg`. We recommend that your icon adheres to the guidelines in [UI development best practices](/docs/tools-ui/uidev-component-development-guidelines/#ui-development-best-practices).
 
-2. Add your icon to MyCppShapeExample Gem's resources by updating `Code/Source/MyCppShapeExample.qrc` with your new icon's file name.
+2. Add your icon to MyCppShapeExample Gem's resources by updating `Code\Source\MyCppShapeExample.qrc` with your new icon's file name.
     
     ```xml
     <!DOCTYPE RCC><RCC version="1.0">
@@ -528,7 +535,7 @@ The following instructions walk you through how to store the icon using the Qt R
     </RCC>
     ```
 
-3. Register MyCppShapeExample Gem's resources to Qt Resource System by adding the following code in `Code/Source/EditorModule.cpp`.
+3. Register MyCppShapeExample Gem's resources to Qt Resource System by adding the following code in `Code\Source\EditorModule.cpp`.
 
     - Define the function `InitShapeExampleResources()` and call `Q_INIT_RESOURCE(...)` to register the Qt resources listed in `MyCppShapeExample.qrc`.
 
@@ -561,9 +568,11 @@ Congratulations! You created a custom tool Gem that's written in C++, built it, 
 
 ## Download the ShapeExample Gem sample
 
-This tutorial is based off of the **ShapeExample** Gem in [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/cpp_gems/ShapeExample). You can download this sample and load it in the Editor.
+Now that you've completed this tutorial, you can compare your MyCppShapeExample Gem to the sample Gem, **ShapeExample** Gem, in [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/cpp_gems/ShapeExample). 
 
-1. Download or clone the repository. The ShapeExample Gem is located in `sample-code-gems/cpp_gems/ShapeExample`.
+To download this sample and load it in the Editor.
+
+1. Download or clone the repository. The ShapeExample Gem is located in `<repo>\sample-code-gems\cpp_gems\ShapeExample`.
 
     ```cmd
     git clone https://github.com/o3de/sample-code-gems.git
@@ -579,4 +588,4 @@ This tutorial is based off of the **ShapeExample** Gem in [`o3de/sample-code-gem
 
    - Open the tool in the Editor.
 
-    These steps are explained earlier in this tutorial. Refer to [Create a tool with the `CppToolGem` template](#create-a-gem-from-the-cpptoolgem-template).
+    These steps are explained earlier in this tutorial. Refer to [Create a Gem from the `CppToolGem` template](#create-a-gem-from-the-cpptoolgem-template).
