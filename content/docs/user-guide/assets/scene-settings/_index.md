@@ -18,6 +18,7 @@ The topics in this section provide general information about the Scene Settings 
 
 | Topic | Description |
 | - | - |
+| [Scene format support](scene-format-support) | In depth information on scene data supported in O3DE, as well as considerations when creating source assets. |
 | [Interface](interface) | An overview of the Scene Settings interface and the options it displays based on the contents of source assets. |
 | [Meshes](meshes-tab) | An explanation of the **Meshes** tab, and the modifiers you can add to customize mesh product asset generation. |
 | [Actors](actors-tab) | An explanation of the **Actors** tab, and the modifiers you can add to customize actor product asset generation. |
