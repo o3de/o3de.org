@@ -14,9 +14,9 @@ Open Asset Import Library supports many common [scene formats](https://github.co
 
 It's important to understand O3DE's coordinate system and the varying coordinate systems of digital content creation (DCC) applications. If the source asset uses a different coordinate system than O3DE, the asset might not be oriented correctly when loaded in **O3DE Editor**.
 
-O3DE uses a *left-handed* coordinate system with **Z** as the up axis. DCC applications commonly use *right-handed* coordinate systems, often with **Y** as the up axis. The change between left-handed and right-handed coordinates flips the forward axis.
+O3DE uses a *right-handed* coordinate system with **Z** as the up axis. DCC applications often use right-handed coordinate systems with **Y** as the up axis. In a right-handed coordinate system, positive rotation from the positive **X** axis to the positive **Y** axis is counter-clockwise.
 
-In a left-handed coordinate system, with the positive **X** axis aimed to the right, the forward axis points away from the viewer. In a right-handed coordinate system, with the positive **X** axis aimed to the right, the forward axis points toward the viewer. See the illustration below for a comparison of O3DE's coordinate system and a common DCC application coordinate system.
+In O3DE's coordinate system, with the positive **X** axis aimed to the right, the forward axis points away from the viewer. In most DCC application coordinate systems, with the positive **X** axis aimed to the right, the forward axis points toward the viewer. See the illustration below for a comparison of O3DE's coordinate system and a common DCC application coordinate system.
 
 {{< image-width "/images/user-guide/assets/scene-settings/o3de-coordinate-system.svg" "650" "Example image of O3DE's coordinate system compared to a common content creation application coordinate system." >}}
 
