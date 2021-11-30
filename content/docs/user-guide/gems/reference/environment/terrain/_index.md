@@ -29,6 +29,7 @@ To enable the Terrain Gem, do the following:
 
 | Component | Description | 
 | - | - |
+| [Terrain Physics Collider](/docs/user-guide/components/reference/terrain/terrain-physics-collider) | Provides terrain data to a physics collider in the form of a heightfield and surface to material mapping. |
 | [Terrain Layer Spawner](/docs/user-guide/components/reference/terrain/layer_spawner) | Spawns a terrain region contained within configurable bounds, and allows prioritization of overlapping terrain layers. |
 | [Terrain Height Gradient List](/docs/user-guide/components/reference/terrain/height_gradient_list) | Provides terrain height data from a list of gradients. |
 | [Terrain Surface Material List](/docs/user-guide/components/reference/terrain/surface-material-list) | Defines mappings between a surface type and a render material. |
