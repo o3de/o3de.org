@@ -30,7 +30,7 @@ Most DCC applications have user settings that you can use to change the DCC's ba
 
 ## Supported 3D scene data
 
-When a 3D scene file source asset is processed, runtime optimized product assets are created and stored in the **Asset Cache** of you project. In most scenarios, there isn't a one-to-one relationship between the source asset and the number of product assets that are generated. A simple mesh, for example, might produce an `.azmodel`, several `.azlod` and `.pxmesh` product assets, and even more `.azbuffer` product assets. Each of the product assets contains a subset of the scene data required for the asset.
+When a 3D scene file source asset is processed, runtime optimized product assets are created and stored in the **Asset Cache** of your project. In most scenarios, there isn't a one-to-one relationship between the source asset and the number of product assets that are generated. A simple mesh, for example, might produce an `.azmodel`, several `.azlod` and `.pxmesh` product assets, and even more `.azbuffer` product assets. Each of the product assets contains a subset of the scene data required for the asset.
 
 O3DE supports a wide array of 3D scene data, however, due to the specifications of various intermediate scene formats, and the restrictions imposed by hardware resources for real-time applications, there are limitations on the data that can be processed for product assets.
 
