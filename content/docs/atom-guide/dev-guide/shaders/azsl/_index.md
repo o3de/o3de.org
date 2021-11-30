@@ -1,32 +1,27 @@
 ---
 linktitle: AZSL
 title: AZSL, The Amazon Shading Language
-description: Learn about the Amazon Shading Language in the Atom Renderer.
+description: Learn about the Amazon Shading Language (AZSL) for Atom Renderer.
 toc: true
 weight: 100
 ---
 
-In O3DE, shaders are written in the Amazon Shading Language (AZSL).
+Shaders for Atom Renderer are written in Amazon Shading Language (AZSL). AZSL is a superset of high-level shader language (HLSL). AZSL supports Vertex, Fragment and Compute shaders according to Shader Model 6.2. Ray-Tracing shaders are also supported according to Shader Model 6.3.
 
-AZSL is a superset of HLSL. AZSL supports Vertex, Fragment and Compute shaders according to Shader Model 6.2. Ray-Tracing shaders are also supported according to Shader Model 6.3.
-
-Typically, a shader is written in a file with the *.azsl* extension.
-
-Shader code can be written in include files with the *.azsli* (optional, yet recommended) extension and referenced by multiple AZSL source files.
-
+Typically, you write shader code in a file with the `.azsl` extension, also known as an _AZSL source file_. You can also write shader code in a file with the `.azsli` extension, which is an include file that multiple AZSL source files can reference. Consider writing your shaders in `.azsli` files to reuse them in multiple AZSL source files and reduce code redundancy.  
 
 AZSL is defined on top of HLSL with the following differences:
 
-* [Declaration Of Shader Constants](#shaderconstants).
-* [Shader Resource Groups](#ShaderResourceGroup).
-* [Shader Resource Group Semantics](srg-semantics).
-* [Root Constants](#rootconstant).
-* [Shader Variant Options](#option).
-* [The special attribute](#padton) [[pad_to(N)]].
+* [Declaration Of Shader Constants](#declaring-shader-constants)
+* [Shader Resource Groups](#ShaderResourceGroup)
+* [Shader Resource Group Semantics](srg-semantics)
+* [Root Constants](#root-constants)
+* [Shader variant options](#option)
+* [The special attribute \[\[pad_to(N)\]\]](#padton)
 
-Although not a language extension, the shader build pipeline allows for *.azsl* files to include other files and define C/C++ Macros. The *.azsl* files are always pre-processed by the *C Pre-Processor (MCPP)* before being transpiled into HLSL. In other words, if a raw *.azsl* file has `#include`, `#pragma` or `#define` directives it should be run through **MCPP** before being compiled with **AZSLc**, otherwise **AZSLc** will fail to compile such files.
+The shader build pipeline allows for `.azsl` files to include other files and define C/C++ Macros. The `.azsl` files are always pre-processed by the **[C Pre-Processor (MCPP)](http://mcpp.sourceforge.net/)** before being transpiled into HLSL. In other words, if a raw `.azsl` file has `#include`, `#pragma` or `#define` directives it should be run through **MCPP** before being compiled with **AZSLc**, otherwise **AZSLc** will fail to compile such files.
 
-**Caveat**: **MCPP**, doesn't support Macros with arithmetic expressions. Examples:  
+**Caveat**: **MCPP** doesn't support Macros with arithmetic expressions. Examples:  
 ```cpp
     // Bad (Arithmetic Expression in C-Macros are not supported by MCPP)
     #define BAD_MACRO(x, y) ((x * 0.5) - (y * 2.0))
@@ -34,55 +29,59 @@ Although not a language extension, the shader build pipeline allows for *.azsl* 
     // Good
     #define HEIGHT (7.2)
 ```
-## <a name="shaderconstants"></a>Declaring Shader Constants (also known as Shader Uniforms in other shader languages, like GLSL)
+## Declaring Shader Constants
+Also known as Shader Uniforms in other shader languages, like GLSL.
 
-AZSL only allows the declaration of shader constants inside the following places:
+AZSL allows the declaration of shader constants only in the following places:
 
 * [Shader Resource Groups](#ShaderResourceGroup).
-* [Root Constants](#rootconstant).
-* `option` variables, but these variables can also be used equivalently as Vulkan's Specialization Constants, in other words, these constants can be statically defined at compilation time to avoid branching at runtime.  
+* [Root Constants](#root-constant).
+* `option` variables
+{{< note >}}
+You can also use `option` variables equivalently as Vulkan's Specialization Constants. In other words, You can define these constants statically at compilation time to avoid branching at runtime.
+{{< /note >}}
   
-**AZSLc** will trigger a compilation error if an arbitrary `cbuffer` or any other type of resources are declared outside the scopes mentioned above. The exception would be `static` global variables, which won't be exposed to the application but will be usable internally by the shaders.
+**AZSLc** triggers a compilation error if an arbitrary `cbuffer` or any other type of resource is declared outside of the scopes mentioned above. The exception is `static` global variables, which shaders use internally, but aren't exposed to the application.
 
 ## <a name="ShaderResourceGroup"></a>Shader Resource Groups
 
-A *Shader Resource Group (SRG)* is a logical namespace to declare shader constants and resources. In AZSL the keyword to declare an SRG is `ShaderResourceGroup`. Shader resources are constants of the type Shader Resource Views (SRV), Unordered Access Views (UAV), Constant Buffer Views (CBV), and Sampler States.
+A *Shader Resource Group (SRG)* is a logical namespace to declare shader constants and resources. In AZSL the keyword to declare an SRG is `ShaderResourceGroup`. Shader resources are constants of the types: Shader Resource Views (SRV), Unordered Access Views (UAV), Constant Buffer Views (CBV), and Sampler States.
 
-When compiling shaders with the "--use-spaces" argument, each SRG will take over a whole register space (or descriptor set, as known in Vulkan). AZSL abstracts the register and register space assignment of resource descriptors with the `ShaderResourceGroupSemantic` keyword, which must be specified when declaring SRGs.
+When compiling shaders with the `--use-spaces` argument, each SRG takes over a whole register space (or descriptor set, as known in Vulkan). AZSL abstracts the register and register space assignment of resource descriptors with the `ShaderResourceGroupSemantic` keyword, which you must specify when declaring SRGs.
 
-A Shader Resource Group is declared with the following syntax:
+Use the following syntax to declare an SRG:
 ```cpp
     ShaderResourceGroup <Name> : <Semantic>
     {
         <Data>
     };
-     
-    //Alternatively
+```
+Alternatively, use a `partial` qualifier to declare an SRG. For more information on partials, refer to [Partial ShaderResourceGroup Definitions](#partial-shaderresourcegroup-definitions).
+```cpp
     partial ShaderResourceGroup <Name> : <Semantic>
     {
         <Data>
     };
 ```
-* **&lt;Name&gt;** is the user defined name for the SRG.
-* **&lt;Semantic&gt;** is the name of the `ShaderResourceGroupSemantic` for the SRG. More on this later.
-* **&lt;Data&gt;** is one or more declaration of functions, constants and resources for the binding data contained in the SRG.  
+* `<Name>` is the user defined name for the SRG.
+* `<Semantic>` is the name of the `ShaderResourceGroupSemantic` for the SRG. For more information on SRG Semantics, refer to [AZSL, Shader Resource Group Semantics](srg-semantics).
+* `<Data>` is one or more declarations of functions, constants, and resources for the binding data that the SRG contains. For more information on the type data that an SRG can contain, refer to [Data](#data).  
   
-In the code block shown above, a [partial](#partial) qualifier can be used when declaring SRGs.
-### &lt;Data&gt;
-SRGs can contain fundamental type variables like float, float3, int2, bool, matrices, etc. For each SRG, a Constant Buffer View (CBV) will be automatically created and it will pack all the fundamental type variables declared inside the SRG.
+### Data
+* Fundamental type variables like `float`, `float3`, `int2`, `bool`, `matrices`, and so on. AZSLc emits a *Constant Buffer View (CBV)* that packs all the Fundamental type variables that the SRG declares.
 
-SRGs can contain resource declarations like Texture2D, Texture2DMS, ByteAddressBuffer, etc. In general any HLSL shader resource of the categories:  Shader Resource Views (SRV), Unordered Access Views (UAV), Samplers and Constant Buffer Views (CBV).
+* Resource declarations like `Texture2D`, `Texture2DMS`, `ByteAddressBuffer`, as well as HLSL shader resource of the categories: Shader Resource Views (SRV), Unordered Access Views (UAV), Samplers and CBVs.
 
-SRGs can contain unbounded arrays for resource declarations: SRVs, UAVs, CBVs and Samplers. There are some rules that need to be considered, depending on command line arguments when compiling with **AZSLc**. More on unbounded arrays [here](unbounded-arrays).
+* Unbounded arrays for the following resource declarations: SRVs, UAVs, CBVs and Samplers. You may need to consider some rules for unbounded arrays, depending on the command line arguments you use when you compile with AZSLc. For more information, refer to [AZSL, Binding Rules fore Unbounded Arrays](./unbounded-arrays).
 
-SRGs can contain functions.
+* Functions.
 
-SRGs can contain structs (declaration & instances). The Shader Build Pipeline and the runtime handle the platform-specific packing rules and alignment.
+* Structs (declaration and instances).
 
-SRGs can contain instances of classes (but you can not declare classes inside an SRG).  
+* Instances of classes. You can instantiate classes in an SRG, but you must declare them outside of the SRG.  
   
 **Example**  
-The following example demonstrates declaration of a Shader Resource Group. We have not covered details of what is a `ShaderResourceGroupSemantic`, but suffice to say, it defines the space (aka, descriptor set) index of the constants and resources declared inside the SRG.  
+The following example demonstrates an SRG declaration. A *Shader Resource Group Semantic (SRG Semantic)* defines the space index, or descriptor set, of the constants and resources declared inside the SRG.  When you declare an SRG, it must specify an SRG Semantic. For more information on SRG Semantics, refer to [AZSL, Shader Resource Group Semantics](./srg-semantics).
 ```cpp
     ShaderResourceGroupSemantic BindingPerExample
     {
@@ -118,18 +117,16 @@ Every SRG defines a scope and the SRG data must be qualified when accessed from 
 ```
 
 ### Sampler variables
-* Dynamic Samplers are declared without a body definition. They have to be set in the runtime. Dynamic Samplers can also be declared as arrays.
-* Static Samplers are declared with a body definition.
-    * Although you can declare Samplers directly as `SamplerState` or `SamplerComparisonState`, AZSL provides a convenient single `Sampler` keyword for both.
-    * Sampler variables will be compiled into regular HLSL `SamplerState` variables, unless a `ComparisonFunc` is defined inside the `Sampler` block, which will be compiled as `SamplerComparisonState`.  
+A dynamic sampler declaration does not contain a body definition because they must be set at runtime. You can also declare a dynamic sampler as an array.
 
-<!-- -->
+A static sampler declaration contains a body definition. You can declare a sampler and sampler-comparison by using AZSL's `Sampler` keyword, which conveniently encompasses HLSL's `SamplerState` and `SamplerComparisonState` keywords. AZSLc compiles sampler variables into the corresponding HLSL variables: `SamplerState`, or `SamplerComparisonState`, if it contains a `ComparisonFunc` definition..  
+
+The following examples demonstrate declarations for a dynamic sampler, a static sampler, and a static sampler comparison. They must be declared inside an SRG.
 ```cpp
-    //These samplers are declared inside an SRG
-    ...
+    // Dynamic sampler declaration
     Sampler m_dynamicSampler;
      
-    // Compiled as HLSL SamplerState
+    // Static sampler declaration. Compiled as HLSL SamplerState
     Sampler m_staticSamplerState
     {
         AddressU = Wrap;
@@ -138,7 +135,7 @@ Every SRG defines a scope and the SRG data must be qualified when accessed from 
         MagFilter = Linear;
     };
      
-    //Compiled as HLSL SamplerComparisonState because of the ComparisonFunc declaration.
+    // Static sampler declaration. Compiled as HLSL SamplerComparisonState because of the ComparisonFunc declaration.
     Sampler m_staticSamplerComparisonState
     {
         AddressU = Wrap;
@@ -150,7 +147,7 @@ Every SRG defines a scope and the SRG data must be qualified when accessed from 
     ...
 ```
 ### Functions
-Functions can be declared in classes, global scopes, or inside SRGs. Declaring functions in classes or in the global scope is a standard HLSL feature. Defining functions inside SRGs is unique to AZSL (Of course, because ShaderResourceGroup  is a exclusive feature of AZSL).  
+Functions can be declared in classes, global scopes, or inside SRGs. Defining functions inside SRGs is unique to AZSL.  
 ```cpp
     ShaderResourceGroup PerObject : BindingPerObject
     {
@@ -197,27 +194,27 @@ Functions can be declared in classes, global scopes, or inside SRGs. Declaring f
     }
 ```
 ### Structs
-Just like in HLSL, structs can be defined globally, but in AZSL they can also be defined and instantiated inside SRGs. You can only instantiate globally defined structs inside SRGs, rootconstants or inside another struct or class.  
+Just like in HLSL, the following rules apply for structs:
+- Must be defined globally. 
+- Contains only data, not methods. 
+- Cannot have a constructor or destructor. 
+- Cannot accept default member initializers.  
   
-In general, structs are supported just like in HLSL. struct has no constructors/destructors and as such, do not accept default member initializers.  
-  
-Just like in HLSL, struct has the particularity to be data only (no methods).
+AZSL adds an extended rule: Define and instantiate structs inside SRGS. You can instantiate globally defined structs inside SRGs, root constants, and another struct or class.
 
 ### Classes
-Classes are supported in AZSL with the exact same expectations of how they are supported in HLSL. They can only be declared/defined in global scopes (outside of SRGs), but an SRG can instantiate class type variables.  
+Just like in HLSL, the following rules apply for classes:
+- Must be declared and defined only in global scopes, outside of SRGs. 
+- Can inherit from interfaces, which forces the class to repect a minimal method set. 
+- Don't have constructors or destructors.
+- Don't accept default member initializers.  
   
-Like in HLSL, classes can inherit from interfaces to be forced to respect a minimal method set.  
-  
-Unlike in HLSL, AZSL forbids class inheritance among classes.  
-  
-Classes has no constructors/destructors and as such, do not accept default member initializers.
+ASZL adds the following extended rules for classes:
+- Can instantiate class type variables in an SRG. 
+- Cannot inherit classes, unlike in HLSL. .
 
 ### Matrices
-AZSL follows the HLSL convention to use column major matrices by default.  
-  
-However, in the O3DE Runtime, the default convention is row major matrices.  
-  
-When declaring a matrix, the order can be specified using the row_major or column_major keywords.  
+AZSL follows the HLSL convention to use column major matrices by default. However, in O3DE runtime, the default convention is row major matrices. When declaring a matrix, you can specify the order by using the `row_major` or `column_major` keywords.  
 ```cpp
     ShaderResourceGroupSemantic MatrixExample
     {
@@ -232,7 +229,7 @@ When declaring a matrix, the order can be specified using the row_major or colum
     };
 ```
 ### Arrays And Unbounded Arrays
-From the point of view of defining arrays, the rules and limitations are exactly the same as HLSL. Examples:  
+For array definitions, the rules and limitations are exactly the same as HLSL. The following examples demonstrate array declarations: 
 ```cpp
     ShaderResourceGroup PerObject : BindingPerObject
     {
@@ -253,19 +250,23 @@ From the point of view of defining arrays, the rules and limitations are exactly
         ConstantBuffer<SomeStruct> m_unboundedArrayOfStructs[]; // GOOD. Unbounded array of Resource View type is ok. BUT, there are some restrictions.
     }
 ```
-To learn more about what are the limitations when declaring unbounded arrays, go here: [Binding Rules For Unbounded Arrays.](unbounded-arrays)  
+To learn more about the limitations when declaring unbounded arrays, go to: [Binding Rules For Unbounded Arrays.](./unbounded-arrays)  
   
-### <a name="partial"></a> Partial ShaderResourceGroup Definitions.
-Before talking about `partial ShaderResourceGroup`, it's important to talk about [ShaderResourceGroupSemantic](srg-semantics), which is always required when declaring a `ShaderResourceGroup`.  
-Go to this section to read about [ShaderResourceGroupSemantic](srg-semantics).  
+### Partial ShaderResourceGroup Definitions.
+Before talking about partial SRGs, it's important to talk about SRG Semantics, which is always required when declaring a `ShaderResourceGroup`. Read about SRG Semantics in [Shader Resource Group Semantics](srg-semantics).  
   
-The `partial` keyword is useful to define parts of an SRG in different blocks. For example, across different files. This is a similar concept as partial classes in C#.  
-There are no limits into how many `partial` blocks can be used to define an SRG.  
-There are only three requirements:  
-1. When using `partial` to define an SRG block, all other SRG definition blocks, for the same SRG, must start with the `partial` keyword.
-2. For a given SRG, at least one `partial` SRG block must define the Shader Resource Group Semantic.
-3. For a given SRG, if the Shader Resource Group Semantic is defined more than once across different `partial` blocks, they must refer to the same `ShaderResourceGroupSemantic`.  
+Define a partial SRG by using `partial ShaderResourceGroup`. The `partial` keyword is useful to define parts of an SRG in different blocks (for example, across different files). This is a similar concept as partial classes in C#.  
+There are no limits on how many `partial` blocks can be used to define an SRG.  
+
+There are three requirements for defining partial SRGs:  
+1. When using `partial` to define an SRG block, all other SRG definition blocks within for the same SRG must also start with the `partial` keyword.
+2. For a given SRG, at least one `partial` SRG block must define the SRG Semantic.
+3. For a given SRG, if the SRG Semantic is defined more than once across different `partial` blocks, then they must refer to the same SRG Semantic.  
   
+{{< important >}}
+When AZSLc finds the first `partial ShaderResourceGroup` block, it will use it as the unified point of emission for all the data of a given SRG across all partial blocks. The main recommendation that comes out of this rule, is that any globally defined struct, or class that may be referenced by a partial SRG block must be defined before the first partial block for the SRG in question.
+{{< /important >}}
+
 **Example: Using the partial keyword**  
 ```cpp
     ShaderResourceGroupSemantic PerPass
@@ -300,7 +301,6 @@ There are only three requirements:
         return OUT;
     }
 ```
-An important remark about partial SRG blocks is that when the compiler, **AZSLc**, finds the first `partial` block, it will use it as the unified point of emission for all the data of a given SRG across all `partial` blocks. The main recommendation that comes out of this rule, is that any globally defined `struct`, or `class` that may be referenced by a `partial` SRG block must be defined before the first partial block for the SRG in question.  
   
 **Example (Error): partial, emission point Error**  
 ```cpp
@@ -383,7 +383,7 @@ An important remark about partial SRG blocks is that when the compiler, **AZSLc*
         return OUT;
     }
 ```
-## <a name="rootconstant"></a>Root Constants
+## Root Constants
 AZSL supports the definition of shader constants that conform to the DX12 concept of Root Constants: https://docs.microsoft.com/en-us/windows/win32/direct3d12/using-constants-directly-in-the-root-signature.  
   
 Root Constants, declared with the `rootconstant` keyword, will be transparently embedded into a `ConstantBuffer`. They are useful to define shader constants of frequent access. Because they are located in the root signature they can be read instantly without requiring additional levels of indirection.  
@@ -395,15 +395,15 @@ Shader constants qualified as `rootconstant` are always declared globally. Examp
 ```
 Root Constants should be used sparingly because the space to define root constants, the Root Signature, is shared with Root Descriptors and Descriptor Tables. In D3D12, the Root Signature is limited at 64 DWords (256 Bytes) worth of space that is shared among Root Constants, Root Descriptors and Descriptor Tables.  
   
-## <a name="option"></a>Shader Variant Options
+## <a name="option"></a>Shader variant options
 
-Before describing how to use Shader Variant Options in a shader, you should read this: [AZSL: Design Principles And Purpose Of Shader Variant Options.](shader-variant-options)  
+Before describing how to use Shader variant options in a shader, you should read this: [AZSL: Design Principles And Purpose Of Shader variant options.](shader-variant-options)  
   
-Shader Variant Options are declared as global variables with the `option` keyword. Their ultimate purpose is to avoid conditional branching, in favor of static execution, all for the sake of performance.  
+Shader variant options are declared as global variables with the `option` keyword. Their ultimate purpose is to avoid conditional branching, in favor of static execution, all for the sake of performance.  
   
 Although the ultimate purpose is to avoid conditional branching at runtime, they can be used to conditionally branch at runtime and, in fact, it's the default behavior of the shader code to conditionally branch at runtime when a Shader Variant has not been compiled (not *baked*).  
   
-It is helpful to think of Shader Variant Options as compile time configurable C Macros.  
+It is helpful to think of Shader variant options as compile time configurable C Macros.  
   
 They can be of type `bool`, `int`, or `enum`. Other data types like `float` and `struct` options are not supported.  
   
@@ -423,8 +423,8 @@ An `int` option requires a range attribute to specify the minimum and maximum ra
     [[range(3, 16)]] // This integer option accepts values between 3 and 16 (both ends included).  
     option int o_numberOfTaps;
 ```
-Even though the Shader Variant Options are declared globally, they are actually encoded in a single array of bits as a member variable of one, and only one, SRG.  
-To learn more about how Shader Variant Options are encoded when compiled, please read: [Shader Variant Options & The Fallback Key.](shader-variants-fallback-key)  
+Even though the Shader variant options are declared globally, they are actually encoded in a single array of bits as a member variable of one, and only one, SRG.  
+To learn more about how Shader variant options are encoded when compiled, please read: [Shader variant options & The Fallback Key.](shader-variants-fallback-key)  
   
 # <a name="padton"></a>The special attribute [[pad_to(N)]]
 In DX12, the layout, offset & sizes, of variables inside `struct` definitions changes whether a `struct` is being used as part of a `ConstantBuffer`, or as part of a `StructuredBuffer`.  

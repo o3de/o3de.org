@@ -1,17 +1,11 @@
 ---
-linktitle: Shader Variant Options And The Fallback Key
-title: AZSL, Shader Variant Options And The Fallback Key
-description: Learn about the design principles and purpose of AZSL Shader Variant Options in the Atom Renderer. 
+linkTitle: The Fallback Key
+title: Shader Variant Options and the Fallback Key
+description: Learn about the fallback key; the array that contains the shader variant options for an Amazon Shading Language (AZSL) shader. 
 weight: 100
 ---
 
-Even though the Shader Variant Options are declared globally, they are actually encoded in a single array of bits as a member variable of **one, and only one** SRG.  
-  
-This single array of bits is known as the Fallback Key, and the SRG that owns the Fallback Key is known as the Shader Variant Fallback.  
-  
-Two questions arise:
-1. Which SRG is chosen by the compiler to own the Fallback Key?
-2. How many bits long is the Fallback Key?
+Shader variant options are declared globally. They are encoded in a bit array as a member variable of *one, and only one* shader resource group (SRG). This bit array is known as the *fallback key*, and the SRG that owns the fallback key is known as the *shader variant fallback*.  
   
 ## Which SRG is chosen by the compiler to own the Fallback Key?
 The shader developer is the one who chooses which SRG will own the Fallback Key. This is done via the `ShaderVariantFallback` member of the SRG Semantic.  
@@ -96,7 +90,7 @@ And here is the solution, in which the developer chooses `DrawSrg` to be the Sha
         return OUT;
     }
 ```
-### How many bits long is this array of bits where the compiler encodes all of the Shader Variant Options?
+### How many bits long is this array of bits where the compiler encodes all of the Shader variant options?
 When one or more option variables are declared, one and only one SRG must have a fallback value.  
   
 The size of the fallback value should be at least 128 bit.  

@@ -1,7 +1,7 @@
 ---
 linktitle: SRG Semantics
-title: AZSL, Shader Resource Group Semantics (ShaderResourceGroupSemantic).
-description: Learn about AZSL Shader Resource Group Semantics in the Atom Renderer.
+title: Shader Resource Group Semantics (ShaderResourceGroupSemantic).
+description: Learn about Amazon Shading Language (AZSL) shader resource group semantics (SRG) for Atom Renderer.
 weight: 100
 ---
 
@@ -13,22 +13,24 @@ The `ShaderResourceGroupSemantic`, SRG Semantic, for short, defines the order in
         [ShaderVariantFallback = <number of bits>;] // (Optional)
     }
 ```
-Conceptually, an SRG Semantic relates to the frequency of change of SRG data. In particular, the render pipeline has a predefined set of SRG Semantics in "&lt;Engine Root&gt;/Gems/Atom/Feature/Common/Assets/ShaderLib/Atom/Features/SrgSemantics.azsli".  
-https://github.com/o3de/o3de/blob/main/Gems/Atom/Feature/Common/Assets/ShaderLib/Atom/Features/SrgSemantics.azsli  
+An SRG semantic relates to the frequency of change of SRG data. The render pipeline has a predefined set of SRG semantics in [`<Engine Root>/Gems/Atom/Feature/Common/Assets/ShaderLib/Atom/Features/SrgSemantics.azsli`](https://github.com/o3de/o3de/blob/main/Gems/Atom/Feature/Common/Assets/ShaderLib/Atom/Features/SrgSemantics.azsli) 
   
-* `SRG_PerDraw`: Data changes per draw packet. Highest frequency.
-* `SRG_PerObject`: Data changes per object.
-* `SRG_PerMaterial`: Data changes per material.
-* `SRG_PerSubPass`: Data changes per sub-pass.
-* `SRG_PerPass`: Data changes per pass.
-* `SRG_PerPass_WithFallback`: Same as SRG_PerPass, but used for cases where the Pass SRG defines the Fallback key.
-* `SRG_PerView`: Data changes per viewport, because each viewport has its own camera.
-* `SRG_PerScene`: Data changes per scene. Lowest frequency.
-* `SRG_RayTracingGlobal`: Reserved for ray tracing shaders.
-* `SRG_RayTracingLocal_[1..7]`: Reserved for ray tracing shaders.
+The table below outlines the various predefined SRG semantics and their change frequencies.
+| SRG semantic | Change frequency |
+| - | - |
+| `SRG_PerDraw` | Data changes per draw packet. Highest frequency. |
+| `SRG_PerObject` | Data changes per object. |
+| `SRG_PerMaterial` | Data changes per material. |
+| `SRG_PerSubPass` | Data changes per sub-pass. |
+| `SRG_PerPass` | Data changes per pass. |
+| `SRG_PerPass_WithFallback` | Same as SRG_PerPass, but used for cases where the Pass SRG defines the Fallback key. |
+| `SRG_PerView` | Data changes per viewport. Each viewport has its own camera. |
+| `SRG_PerScene` | Data changes per scene. Lowest frequency. |
+| `SRG_RayTracingGlobal` | Reserved for ray tracing shaders. |
+| `SRG_RayTracingLocal_[1..7]` | Reserved for ray tracing shaders. |
   
-## FrequencyId: Defining the order of emission and register space utilization.
-With the value of `FrequencyId` we can define in what order we utilize the register space when compiling SRGs.  
+## `FrequencyId`
+The value of `FrequencyId` defines the order of the compiled SRGs in register space and the order in which they are emitted.
 Consider the following SRG definitions:  
 ```cpp
     ShaderResourceGroupSemantic SRG_PerDraw
@@ -61,7 +63,7 @@ Consider the following SRG definitions:
         Sampler                  m_sampler;
     }
 ```
-When compiling the AZSL code shown above, with default arguments, it will yield the following HLSL code:  
+When the AZSL code shown above is compiled with default arguments, it yields the following HLSL code:  
 ```cpp
     /* Generated code from
     ShaderResourceGroup ObjectSrg
@@ -214,7 +216,7 @@ Note, for each register space, in this case, each SRG, all registers start at 0,
   
 ## ShaderVariantFallback: Defining Who Owns The Bit Array Of Options
 `ShaderVariantFallback` is an optional keyword that marks an SRG as the owner of the array of bits where all Shader Variants will be encoded.  
-Because there can only be one array of bits to encode the Shader Variant Options, only one SRG can bind to an SRG Semantic that uses the `ShaderVariantFallback` keyword.  
-If a shader makes no use of Shader Variant Options, then the `ShaderVariantFallback` is not required to be used.  
+Because there can only be one array of bits to encode the Shader variant options, only one SRG can bind to an SRG Semantic that uses the `ShaderVariantFallback` keyword.  
+If a shader makes no use of Shader variant options, then the `ShaderVariantFallback` is not required to be used.  
   
-For a deeper dive into Shader Variant Options encoding see: [Shader Variant Options & The Fallback Key](shader-variants-fallback-key).
+For a deeper dive into Shader variant options encoding see: [Shader variant options & The Fallback Key](shader-variants-fallback-key).

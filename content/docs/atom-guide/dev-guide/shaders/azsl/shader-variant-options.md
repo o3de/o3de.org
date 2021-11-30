@@ -1,13 +1,13 @@
 ---
-linktitle: Shader Variant Options
-title: AZSL, Design Principles And Purpose Of Shader Variant Options
-description: Learn about the design principles and purpose of AZSL Shader Variant Options in the Atom Renderer. 
+linktitle: Shader variant options
+title: Shader variant options in Amazon Shading Language (AZSL)
+description: Learn about Amazon Shading Language (AZSL) shader variant options for Atom Renderer. 
 weight: 100
 ---
 
-Shader Variant Options are "statically optimizable" Shader Constants that the developer can choose to compile as static constants or as regular global variables. They are only used in conditional statements.  
+Shader variant options are shader constants that are only used in conditional statements that can be statically optimized. You can choose to compile them as static constants or as global variables.  
   
-Shader Variant Options are conceptually equivalent to [Specialization Constants](https://www.khronos.org/registry/vulkan/specs/1.1-khr-extensions/html/chap10.html#pipelines-specialization-constants) (external link) in Vulkan.  
+Shader variant options are conceptually equivalent to [Specialization Constants](https://www.khronos.org/registry/vulkan/specs/1.1-khr-extensions/html/chap10.html#pipelines-specialization-constants) (external link) in Vulkan.  
   
 The idea is easier to explain with some code. Consider the following AZSL code snippet, where a Shader Variant Option is being used to conditionally branch:  
 ```cpp
@@ -17,29 +17,35 @@ The idea is easier to explain with some code. Consider the following AZSL code s
         color = float3(0, 0, 1);
     }
 ```
-When the shader code, shown above, is compiled and the value of `o_useRed` is not known at compilation time then `o_useRed` will be compiled as a regular Shader Constant. The shader byte code **will branch at runtime** depending on the value of `o_useRed` as defined by the Application.  
-  
-Please notice that **"will branch at runtime"** was emphasized. In general, branching is slower than not branching. To avoid branching, the value of `o_useRed` can be defined at compilation time, let's say to `true`.  
+In the shader code above, the value of `o_useRed` is not known at compilation time, so `o_useRed` is compiled as a shader constant. The shader byte code branches at runtime depending on the runtime value of `o_useRed`.  In general, branching is slow and should be avoided.
+In this scenario, if the value of `o_useRed` is defined as `true` at compilation time, then the compiler produces the following branch-less code.  
 ```cpp
     // Because the developer chose o_useRed to be true at compilation time,
     // the compiler will optimize and produce the following branch-less code.
     color = float3(1, 0, 0);
 ```
-Alternatively, at compilation time, `o_useRed` may be defined as `false`, and the optimized output code will look like:  
+If `o_useRed` is defined as `false` at compilation time, then the compiler produces the following branch-less code:  
 ```cpp
     // Because the developer chose o_useRed to be false at compilation time,
     // the compiler will optimize and produce the following branch-less code.
     color = float3(0, 0, 1);
 ```
-We can see from this simple example that there can be three different versions of the compiled shader code to be used at runtime. These are called Shader Variants (**ShaderVariantAssets**), and they only differ only in two ways:  
-1. Whether the value of some Shader Variant Options is statically defined at compilation time or not.
-2. And the values chosen at compilation time for those statically defined Shader Variant Options.
+The example above produces three different versions of the compiled shader code. These are called *shader variants* (`ShaderVariantAsset`). The three shader variants produced in the example differ in two ways:
+* Whether or not the value of the shader variant option `o_useRed` is statically defined at compilation time.
+* The compilation time value for the `o_useRed` when the shader variant option is statically defined.
   
-Following up with this example, We can endup with three different versions (Variants) of the shader bytecode:  
-1. The first variant is the one where `o_useRed` is just a regular Shader Constant. This byte code will branch at runtime, BUT provides flexibility to the application to set its value before the shader is submitted for execution. This is called the Root Variant (Root ShaderVariantAsset).
-2. The second variant is the one where `o_useRed` was given the value `true` at compilation time. This byte code won't branch at runtime, there are APIs to help the Application discover this variant of the shader before submitting for execution.
-3. The third variant is the one where `o_useRed` was given the value `false` at compilation time. This byte code won't branch at runtime.  
+The table below describes the three shader variants created by the example.
+| `o_useRed` value | Runtime branch? | Notes |
+| - | - | - |
+| undefined | yes | Slower than branch-less shader code, but can be set at runtime. This is the root variant (`Root ShaderVariantAsset`). |
+| `true` | no | Faster because the value of `o_useRed` is baked in, and shader variant doesn't branch at runtime. |
+| `false` | no | Faster because the value of `o_useRed` is baked in, and shader variant doesn't branch at runtime. |
+
   
-Using Baked Shader Variants will provide the maximum runtime performance of shaders, at the expense of more shader byte code files in the asset catalog (more ShaderVariantAssets).  
+Using baked shader variant options provides maximum shader runtime performance but generates more shader variants (`ShaderVariantAssets`) in the **Asset Cache**.  
   
-Depending on the amount of Shader Variant Options declared in a shader, the application may end up with a large permutation of shader variant assets. More on this topic [here](shader-variants-fallback-key).  
+{{< important >}}
+If many shader variant options are declared in a shader, a large number of shader variant assets might be generated. This is particularly important to understand if the shader code has nested conditional statements that have shader variant options. A shader variant asset is generated for each possible combination shader variant options, which creates an exponential number of shader variants.
+For more information on this topic, refer to [Shader Variant Options and the Fallback Key](../shader-variants-fallback-key).
+{{< /important >}}
+
