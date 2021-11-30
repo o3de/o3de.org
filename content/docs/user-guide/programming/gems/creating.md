@@ -31,14 +31,15 @@ This will create your Gem with a standard file structure and CMake files created
 
 For more information on how to use the `o3de` tool, refer to [Project Configuration CLI Reference](/docs/user-guide/project-config/cli-reference/).
 
-## Gem Assets
+## Assets
 
 Each Gem has an `Assets` directory that can contain models, textures, scripts, animations, and more. Asset files are accessed the same way as they are in a game project. O3DE uses this root directory to find the asset file path. For example, when O3DE looks for the `textures/rain/rainfall_ddn.tif` file, it looks in the `<GemName>/Assets/textures/rain/` directory.
 
-## Gem Code (Optional)
+## Code (Optional)
 
-Gem code can be contained in any directory that is picked up by the `CMakeLists.txt` file of the Gem, although, by convention, Gems with only one source module
-use `Code` for the directory name.
+Gem code can be contained in any directory that is picked up by the `CMakeLists.txt` file of the Gem, although, by convention, Gems with only one source module use `Code` for the directory name.
+
+A Gem that contains code is known as a *Code Gem*. For more information on developing Code Gems, refer to [Programmer's Guide to Gem Development](/docs/user-guide/programming/gems/).
 
 ## Manifest file
 
