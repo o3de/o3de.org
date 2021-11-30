@@ -17,7 +17,7 @@ The **Terrain World Debugger** component allows a representation of the World Bo
 
 ## Properties ##
 
-![Terrain World Debugger component interface.](/images/user-guide/component/terrain/terrain/ui-terrain-world-debugger-A.png)
+![Terrain World Debugger component interface.](/images/user-guide/components/reference/terrain/terrain-world-debugger-A.png)
 
 | Property | Description | Values | Default |
 | - | - | - | - |

@@ -17,4 +17,4 @@ The **Terrain World Renderer** component renders the terrain within the bounds s
 
 ## Properties ##
 
-![Terrain World Renderer component interface.](/images/user-guide/component/terrain/terrain/ui-terrain-world-renderer-A.png)
+![Terrain World Renderer component interface.](/images/user-guide/components/reference/terrain/terrain-world-renderer-A.png)

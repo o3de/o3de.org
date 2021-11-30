@@ -13,7 +13,7 @@ The **Terrain World** component provides the data required for other terrain sys
 
 ## Terrain World Properties ##
 
-![Terrain World component interface.](/images/user-guide/component/terrain/terrain/ui-terrain-world-A.png)
+![Terrain World component interface.](/images/user-guide/components/reference/terrain/terrain-world-A.png)
 
 | Property | Description | Values | Default |
 | - | - | - | - |
@@ -22,5 +22,5 @@ The **Terrain World** component provides the data required for other terrain sys
 | Height Query Resolution (m) | The resolution required between each height sample, in meters. | Vector2: 0.001 to Infinity | X:`1.0` Y:`1.0` |
 
 {{< note >}}
-Because large numbers of terrain height samples can take a long time to calculate, O3DE will not allow the number of samples to exceed 8M.
+Because large numbers of terrain height samples can take a long time to calculate, O3DE will not allow the number of samples to exceed 8 million.
 {{< /note >}}
