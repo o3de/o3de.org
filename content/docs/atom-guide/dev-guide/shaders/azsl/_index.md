@@ -1,12 +1,12 @@
 ---
 linktitle: AZSL
-title: AZSL, The Amazon Shader Language
-description: Learn about the Amazon Shader Language in the Atom Renderer.
+title: AZSL, The Amazon Shading Language
+description: Learn about the Amazon Shading Language in the Atom Renderer.
 toc: true
 weight: 100
 ---
 
-In O3DE, shaders are written in the Amazon Shader Language (AZSL).
+In O3DE, shaders are written in the Amazon Shading Language (AZSL).
 
 AZSL is a superset of HLSL. AZSL supports Vertex, Fragment and Compute shaders according to Shader Model 6.2. Ray-Tracing shaders are also supported according to Shader Model 6.3.
 
@@ -51,7 +51,7 @@ A *Shader Resource Group (SRG)* is a logical namespace to declare shader constan
 When compiling shaders with the "--use-spaces" argument, each SRG will take over a whole register space (or descriptor set, as known in Vulkan). AZSL abstracts the register and register space assignment of resource descriptors with the `ShaderResourceGroupSemantic` keyword, which must be specified when declaring SRGs.
 
 A Shader Resource Group is declared with the following syntax:
-  
+```cpp
     ShaderResourceGroup <Name> : <Semantic>
     {
         <Data>
@@ -62,7 +62,7 @@ A Shader Resource Group is declared with the following syntax:
     {
         <Data>
     };
-  
+```
 * **&lt;Name&gt;** is the user defined name for the SRG.
 * **&lt;Semantic&gt;** is the name of the `ShaderResourceGroupSemantic` for the SRG. More on this later.
 * **&lt;Data&gt;** is one or more declaration of functions, constants and resources for the binding data contained in the SRG.  
@@ -83,7 +83,7 @@ SRGs can contain instances of classes (but you can not declare classes inside an
   
 **Example**  
 The following example demonstrates declaration of a Shader Resource Group. We have not covered details of what is a `ShaderResourceGroupSemantic`, but suffice to say, it defines the space (aka, descriptor set) index of the constants and resources declared inside the SRG.  
-  
+```cpp
     ShaderResourceGroupSemantic BindingPerExample
     {
         FrequencyId = 0;
@@ -109,13 +109,13 @@ The following example demonstrates declaration of a Shader Resource Group. We ha
             return m_uniformColor.r;
         }
     };
-  
+```
 ### Scope
 Every SRG defines a scope and the SRG data must be qualified when accessed from out-of-SRG scope code.  
-  
+```cpp
     float4 color = ExampleSRG::m_uniformColor;
     color *= ExampleSRG::m_texture.Sample(ExampleSRG::m_staticSampler, float2(0.5, 0.5));
-  
+```
 
 ### Sampler variables
 * Dynamic Samplers are declared without a body definition. They have to be set in the runtime. Dynamic Samplers can also be declared as arrays.
@@ -124,7 +124,7 @@ Every SRG defines a scope and the SRG data must be qualified when accessed from 
     * Sampler variables will be compiled into regular HLSL `SamplerState` variables, unless a `ComparisonFunc` is defined inside the `Sampler` block, which will be compiled as `SamplerComparisonState`.  
 
 <!-- -->
-
+```cpp
     //These samplers are declared inside an SRG
     ...
     Sampler m_dynamicSampler;
@@ -148,10 +148,10 @@ Every SRG defines a scope and the SRG data must be qualified when accessed from 
         ComparisonFunc = Less;
     };
     ...
-  
+```
 ### Functions
 Functions can be declared in classes, global scopes, or inside SRGs. Declaring functions in classes or in the global scope is a standard HLSL feature. Defining functions inside SRGs is unique to AZSL (Of course, because ShaderResourceGroup  is a exclusive feature of AZSL).  
-  
+```cpp
     ShaderResourceGroup PerObject : BindingPerObject
     {
         row_major float3x4 m_modelToWorld;
@@ -195,7 +195,7 @@ Functions can be declared in classes, global scopes, or inside SRGs. Declaring f
        
         return output;
     }
-  
+```
 ### Structs
 Just like in HLSL, structs can be defined globally, but in AZSL they can also be defined and instantiated inside SRGs. You can only instantiate globally defined structs inside SRGs, rootconstants or inside another struct or class.  
   
@@ -218,7 +218,7 @@ AZSL follows the HLSL convention to use column major matrices by default.
 However, in the O3DE Runtime, the default convention is row major matrices.  
   
 When declaring a matrix, the order can be specified using the row_major or column_major keywords.  
-  
+```cpp
     ShaderResourceGroupSemantic MatrixExample
     {
         FrequencyId = 1;
@@ -230,10 +230,10 @@ When declaring a matrix, the order can be specified using the row_major or colum
         row_major    float2x3 rowMajorMatrix;
         column_major float2x3 colMajorMatrix;
     };
-  
+```
 ### Arrays And Unbounded Arrays
 From the point of view of defining arrays, the rules and limitations are exactly the same as HLSL. Examples:  
-  
+```cpp
     ShaderResourceGroup PerObject : BindingPerObject
     {
         float m_arrayOfFloats[64]; // GOOD. Arrays of fundamental types must be of constant size.
@@ -252,7 +252,7 @@ From the point of view of defining arrays, the rules and limitations are exactly
          
         ConstantBuffer<SomeStruct> m_unboundedArrayOfStructs[]; // GOOD. Unbounded array of Resource View type is ok. BUT, there are some restrictions.
     }
-  
+```
 To learn more about what are the limitations when declaring unbounded arrays, go here: [Binding Rules For Unbounded Arrays.](unbounded-arrays)  
   
 ### <a name="partial"></a> Partial ShaderResourceGroup Definitions.
@@ -267,7 +267,7 @@ There are only three requirements:
 3. For a given SRG, if the Shader Resource Group Semantic is defined more than once across different `partial` blocks, they must refer to the same `ShaderResourceGroupSemantic`.  
   
 **Example: Using the partial keyword**  
-  
+```cpp
     ShaderResourceGroupSemantic PerPass
     {
         FrequencyId = 1;
@@ -299,11 +299,11 @@ There are only three requirements:
         OUT.m_color = PassSrg::ReadColor(uv);
         return OUT;
     }
-  
+```
 An important remark about partial SRG blocks is that when the compiler, **AZSLc**, finds the first `partial` block, it will use it as the unified point of emission for all the data of a given SRG across all `partial` blocks. The main recommendation that comes out of this rule, is that any globally defined `struct`, or `class` that may be referenced by a `partial` SRG block must be defined before the first partial block for the SRG in question.  
   
 **Example (Error): partial, emission point Error**  
-  
+```cpp
     ShaderResourceGroupSemantic PerPass
     {
         FrequencyId = 1;
@@ -345,9 +345,9 @@ An important remark about partial SRG blocks is that when the compiler, **AZSLc*
         OUT.m_color = PassSrg::GetColor();
         return OUT;
     }
-  
+```
 **Example (Solution): partial, emission point success**  
-  
+```cpp
     ShaderResourceGroupSemantic PerPass
     {
         FrequencyId = 1;
@@ -382,17 +382,17 @@ An important remark about partial SRG blocks is that when the compiler, **AZSLc*
         OUT.m_color = PassSrg::GetColor();
         return OUT;
     }
-  
+```
 ## <a name="rootconstant"></a>Root Constants
 AZSL supports the definition of shader constants that conform to the DX12 concept of Root Constants: https://docs.microsoft.com/en-us/windows/win32/direct3d12/using-constants-directly-in-the-root-signature.  
   
 Root Constants, declared with the `rootconstant` keyword, will be transparently embedded into a `ConstantBuffer`. They are useful to define shader constants of frequent access. Because they are located in the root signature they can be read instantly without requiring additional levels of indirection.  
   
 Shader constants qualified as `rootconstant` are always declared globally. Examples:  
-  
+```cpp
     rootconstant float4x4 s_objectMatrix;
     rootconstant uint s_materialIndex;
-  
+```
 Root Constants should be used sparingly because the space to define root constants, the Root Signature, is shared with Root Descriptors and Descriptor Tables. In D3D12, the Root Signature is limited at 64 DWords (256 Bytes) worth of space that is shared among Root Constants, Root Descriptors and Descriptor Tables.  
   
 ## <a name="option"></a>Shader Variant Options
@@ -408,7 +408,7 @@ It is helpful to think of Shader Variant Options as compile time configurable C 
 They can be of type `bool`, `int`, or `enum`. Other data types like `float` and `struct` options are not supported.  
   
 An `int` option requires a range attribute to specify the minimum and maximum range of values.  
-  
+```cpp
     option bool o_useIBL;
     option bool o_useShadows = true;
      
@@ -422,14 +422,14 @@ An `int` option requires a range attribute to specify the minimum and maximum ra
      
     [[range(3, 16)]] // This integer option accepts values between 3 and 16 (both ends included).  
     option int o_numberOfTaps;
-  
+```
 Even though the Shader Variant Options are declared globally, they are actually encoded in a single array of bits as a member variable of one, and only one, SRG.  
 To learn more about how Shader Variant Options are encoded when compiled, please read: [Shader Variant Options & The Fallback Key.](shader-variants-fallback-key)  
   
 # <a name="padton"></a>The special attribute [[pad_to(N)]]
 In DX12, the layout, offset & sizes, of variables inside `struct` definitions changes whether a `struct` is being used as part of a `ConstantBuffer`, or as part of a `StructuredBuffer`.  
 Example:  
-  
+```cpp
     struct MyStruct
     {
          float m_data;
@@ -445,19 +445,19 @@ For StructuredBuffer&lt;MyStruct&gt; case you'll get:
   
     float m_data;                     ; Offset:    0
     float4 m_arr[2];                  ; Offset:    4
-  
+```
 The [[pad_to(N)]] attribute is useful to pad the data with dummy variables until guaranteeing that the offset of the next variable starts with the desired alignment. The **N** argument is a single integral literal that must be a multiple of 4.  
 In the case posted above, `struct MyStruct`, using `[[pad_to(16)]]` can be useful to guarantee the same layout regardless of how it is used, as part of a `ConstantBuffer` or a `StructuredBuffer`:  
-  
+```cpp
     struct MyStruct
     {
          float m_data;
          [[pad_to(16)]]
          float4 m_arr[2]; //Now, this member variable will always start at offset 16.
     };
-  
+```
 In this example, **MyStruct** is forced to be of size 64 bytes:  
-  
+```cpp
     struct MyStruct
     {
          float m_data;
@@ -465,4 +465,4 @@ In this example, **MyStruct** is forced to be of size 64 bytes:
          float4 m_arr[2]; //Now, this member variable will always start at offset 16.
          [[pad_to(64)]] // This guarantees the sizeof(MyStruct) to be 64.
     };
-  
+```

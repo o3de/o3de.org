@@ -27,7 +27,7 @@ All the examples shown here assume '--use-spaces' is ON when compiling the shade
 
 ### Example 1
 In this example there's only one SRG, and no unbounded arrays yet. It is useful to understand register space & index binding assignment.  
-  
+```cpp
     ShaderResourceGroupSemantic slot1
     {
         FrequencyId = 1;
@@ -51,12 +51,12 @@ In this example there's only one SRG, and no unbounded arrays yet. It is useful 
         ConstantBuffer<MyStruct> m_cb1; // Will be bound to b1 register. (Because The ConstantBuffer reserved for SRG1 will be bound to b0 register).
         ConstantBuffer<MyStruct> m_cb2; // Will be bound to b2 register.
     };
-  
+```
 ### Example 2: (Error case)
 This example is based on Example 1, but this time We are trying to introduce the first Unbounded Array: `Texture2D<float4> m_texSRV_unbounded[]`.  
 This example will fail to compile because, as mentioned before, an Unbounded Array takes over the whole register starting from their index of declaration.  
 In this example, `m_texSRV_unbounded`, is the first texture SRV so it will start at **t0**, and take over the rest of the indices until **tN**. Any other texture SRV declared afterwards won't find a register index to bind to.  
-  
+```cpp
     ShaderResourceGroupSemantic slot1
     {
         FrequencyId = 1;
@@ -81,10 +81,10 @@ In this example, `m_texSRV_unbounded`, is the first texture SRV so it will start
         ConstantBuffer<MyStruct> m_cb1; // Will be bound to b1 register. (Because The ConstantBuffer reserved for SRG1 will be bound to b0 register).
         ConstantBuffer<MyStruct> m_cb2; // Will be bound to b2 register.
     };
-  
+```
 ### Example 3: (Error case)
 This error case is very similar to Example 2, but `m_texSRV_unbounded` is declared after `m_texSRV1`, but before `m_texSRV2`.  
-  
+```cpp
     ShaderResourceGroupSemantic slot1
     {
         FrequencyId = 1;
@@ -109,10 +109,10 @@ This error case is very similar to Example 2, but `m_texSRV_unbounded` is declar
         ConstantBuffer<MyStruct> m_cb1; // Will be bound to b1 register. (Because The ConstantBuffer reserved for SRG1 will be bound to b0 register).
         ConstantBuffer<MyStruct> m_cb2; // Will be bound to b2 register.
     };
-  
+```
 ### Example 4:
 This case fixes the issues in Example 3. By moving the point of declaration of `m_texSRV_unbounded[]` after `m_texSRV2` there are no more register assignment conflicts.  
-  
+```cpp
     ShaderResourceGroupSemantic slot1
     {
         FrequencyId = 1;
@@ -137,10 +137,10 @@ This case fixes the issues in Example 3. By moving the point of declaration of `
         ConstantBuffer<MyStruct> m_cb1; // Will be bound to b1 register. (Because The ConstantBuffer reserved for SRG1 will be bound to b0 register).
         ConstantBuffer<MyStruct> m_cb2; // Will be bound to b2 register.
     };
-  
+```
 ### Example 5:
 This case shows how to declare one Unbounded Array for each resource type. The rule of thumb is to always declare each Unbounded Array after the last non-Unbounded resource.  
-  
+```cpp
     ShaderResourceGroupSemantic slot1
     {
         FrequencyId = 1;
@@ -167,12 +167,12 @@ This case shows how to declare one Unbounded Array for each resource type. The r
         ConstantBuffer<MyStruct> m_cb2; // Will be bound to b3 register.
         ConstantBuffer<MyStruct> m_cb_unbounded[]; // Will be bound to b4 register, and will take over b5+.
     };
-  
+```
 Now, let's review what will happen to all the examples above when using '--unique-idx', which is the case for Vulkan & Metal.
 
 ### Example 6: Based on Example 1, with '--unique-idx'
 Same code as Example 1, but it is assumed to be compiled with '--unique-idx' (ON), which is required by Vulkan & Metal. Please note how the register index always increments, regardless of the resource type.  
-  
+```cpp
     ShaderResourceGroupSemantic slot1
     {
         FrequencyId = 1;
@@ -196,9 +196,9 @@ Same code as Example 1, but it is assumed to be compiled with '--unique-idx' (ON
         ConstantBuffer<MyStruct> m_cb1; // Will be bound to b7 register.
         ConstantBuffer<MyStruct> m_cb2; // Will be bound to b8 register.
     };
-  
+```
 ### Example 7: Based on Example 2, with '--unique-idx'. Error Case.
-  
+```cpp
     ShaderResourceGroupSemantic slot1
     {
         FrequencyId = 1;
@@ -223,11 +223,11 @@ Same code as Example 1, but it is assumed to be compiled with '--unique-idx' (ON
         ConstantBuffer<MyStruct> m_cb1; // ERROR. There's no bN available to bind this resource to.
         ConstantBuffer<MyStruct> m_cb2; // ERROR. There's no bN available to bind this resource to.
     };
-  
+```
 ### Example 8: Fix for Example 7.
 The solution to Example 7, is to move the declaration of `m_texSRV_unbounded` to the end of `SRG1`, basically after `m_cb2`.  
 Alternatively, you could create a second `SRG2`, and move the declaration of `m_texSRV_unbounded` to `SRG2` (As the last resource in `SRG2`, in case there are more resources in `SRG2`.)  
-  
+```cpp
     ShaderResourceGroupSemantic slot1
     {
         FrequencyId = 1;
@@ -252,12 +252,12 @@ Alternatively, you could create a second `SRG2`, and move the declaration of `m_
         ConstantBuffer<MyStruct> m_cb2; // Will be bound to b8 register.
         Texture2D<float4>        m_texSRV_unbounded[]; // Will be bound to t9 register, and will take over ALL10+.
     };
-  
+```
 ### Example 9: Similar to Example 5, but with '--unique-idx'
 In example 5, it is shown how to declare one Unbounded Array for each major resource type: SRV(t), UAV(u), Sampler(s) and CBV(b) inside a single SRG.  
 Unfortunately, when using '--unique-idx', this is impossible to do.  
 The only workaround is to declare more SRGs (in this case three more SRGs) and making sure the Unbounded Array is always the last variable declared inside each SRG.  
-  
+```cpp
     ShaderResourceGroupSemantic slot1 { FrequencyId = 1; };
     ShaderResourceGroupSemantic slot2 { FrequencyId = 2; };
     ShaderResourceGroupSemantic slot3 { FrequencyId = 3; };
@@ -303,4 +303,4 @@ The only workaround is to declare more SRGs (in this case three more SRGs) and m
         ConstantBuffer<MyStruct> m_cb_unbounded[]; // Will be bound to b4 register, and will take over ALL5+ for Register Space 3.
         int m_intValue; // Declaring this variable, of Fundamental type, after an Unbounded Array is ok, as it is not a resource.
     };
-  
+```

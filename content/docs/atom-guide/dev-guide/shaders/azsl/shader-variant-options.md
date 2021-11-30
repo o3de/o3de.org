@@ -10,27 +10,27 @@ Shader Variant Options are "statically optimizable" Shader Constants that the de
 Shader Variant Options are conceptually equivalent to [Specialization Constants](https://www.khronos.org/registry/vulkan/specs/1.1-khr-extensions/html/chap10.html#pipelines-specialization-constants) (external link) in Vulkan.  
   
 The idea is easier to explain with some code. Consider the following AZSL code snippet, where a Shader Variant Option is being used to conditionally branch:  
-  
+```cpp
     if (o_useRed) {
         color = float3(1, 0, 0);
     } else {
         color = float3(0, 0, 1);
     }
-  
+```
 When the shader code, shown above, is compiled and the value of `o_useRed` is not known at compilation time then `o_useRed` will be compiled as a regular Shader Constant. The shader byte code **will branch at runtime** depending on the value of `o_useRed` as defined by the Application.  
   
 Please notice that **"will branch at runtime"** was emphasized. In general, branching is slower than not branching. To avoid branching, the value of `o_useRed` can be defined at compilation time, let's say to `true`.  
-  
+```cpp
     // Because the developer chose o_useRed to be true at compilation time,
     // the compiler will optimize and produce the following branch-less code.
     color = float3(1, 0, 0);
-  
+```
 Alternatively, at compilation time, `o_useRed` may be defined as `false`, and the optimized output code will look like:  
-  
+```cpp
     // Because the developer chose o_useRed to be false at compilation time,
     // the compiler will optimize and produce the following branch-less code.
     color = float3(0, 0, 1);
-  
+```
 We can see from this simple example that there can be three different versions of the compiled shader code to be used at runtime. These are called Shader Variants (**ShaderVariantAssets**), and they only differ only in two ways:  
 1. Whether the value of some Shader Variant Options is statically defined at compilation time or not.
 2. And the values chosen at compilation time for those statically defined Shader Variant Options.

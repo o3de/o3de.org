@@ -1,7 +1,7 @@
 ---
 linktitle: AZSLc
-title: AZSLc, The Amazon Shader Language Compiler
-description: Learn about the Amazon Shader Language Compiler in the Atom Renderer. 
+title: AZSLc, The Amazon Shading Language Compiler
+description: Learn about the Amazon Shading Language Compiler in the Atom Renderer. 
 weight: 100
 ---
 

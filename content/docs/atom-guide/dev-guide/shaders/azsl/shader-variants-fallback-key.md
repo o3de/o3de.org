@@ -22,7 +22,7 @@ In the following example we are declaring a single Shader Variant Option of bool
 
 The compiler, **AZSLc**, will report the following error:  
 `IR error #129: If you have non-static options, one SRG must be designated as the default ShaderVariantFallback`.  
-  
+```cpp
     option bool o_useObjectColor;
     
     ShaderResourceGroupSemantic SRG_PerDraw
@@ -57,9 +57,9 @@ The compiler, **AZSLc**, will report the following error:
         }
         return OUT;
     }
-  
+```
 And here is the solution, in which the developer chooses `DrawSrg` to be the Shader Variant Fallback. In other words, `DrawSrg` will own the Fallback Key:  
-  
+```cpp
     option bool o_useObjectColor;
     
     ShaderResourceGroupSemantic SRG_PerDraw
@@ -95,19 +95,19 @@ And here is the solution, in which the developer chooses `DrawSrg` to be the Sha
         }
         return OUT;
     }
-  
+```
 ### How many bits long is this array of bits where the compiler encodes all of the Shader Variant Options?
 When one or more option variables are declared, one and only one SRG must have a fallback value.  
   
 The size of the fallback value should be at least 128 bit.  
 The fallback value is specified on a Shader Resource Group Semantic.  
-  
+```cpp
     ShaderResourceGroupSemantic OptionExample
     {
         FrequencyId = 6;
         ShaderVariantFallback = 128;
     };
-  
+```
 The Fallback Key is a Shader Constant, but has its own API to configure At runtime. For a 128 bits long fallback key, an array of four 32-bit integers will be reserved to hold the bitset representing the values of all options not defined statically at compilation time.  
   
 Now that the concept of Fallback Key has been introduced, it is time to talk about Shader Variant Byte Code (*ShaderVariantAsset*) Permutations.  
@@ -120,7 +120,7 @@ In order to fully "specialize" (or bake) all the possible permutations the shade
 Fortunately, the Shader Build Pipeline only builds the permutations specified by the developer.  
   
 For a realistic example, imagine an arbitrary integral option, in the range 2 to 17 (16 unique values):  
-  
+```cpp
     [[range(2, 17)]] // This integer option accepts values between 2 and 17 (inclusive at both ends).  
     option int o_numberOfTaps;
     
@@ -134,7 +134,7 @@ For a realistic example, imagine an arbitrary integral option, in the range 2 to
         ...
         case 17:
     }
-  
+```
 In order to fit 16 unique values, **o_numberOfTaps** will take 4 of 128 bits from the Shader Variant Fallback Key.  
 And, if the user wants to fully avoid dynamic branching, then in addition to the Root ShaderVariantAsset, 16 unique ShaderVariantAssets, per platform (dx12, vulkan, metal, etc), will be compiled by the Shader Build Pipeline.  
   

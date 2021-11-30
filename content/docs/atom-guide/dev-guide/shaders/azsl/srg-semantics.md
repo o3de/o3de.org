@@ -6,13 +6,13 @@ weight: 100
 ---
 
 The `ShaderResourceGroupSemantic`, SRG Semantic, for short, defines the order in which descriptor bindings and descriptor sets (descriptor sets are also known as register spaces in HLSL) are emitted for each `ShaderResourceGroup`.  
-  
+```cpp
     ShaderResourceGroupSemantic <name>
     {
         FrequencyId = <0-based index>;
         [ShaderVariantFallback = <number of bits>;] // (Optional)
     }
-  
+```
 Conceptually, an SRG Semantic relates to the frequency of change of SRG data. In particular, the render pipeline has a predefined set of SRG Semantics in "&lt;Engine Root&gt;/Gems/Atom/Feature/Common/Assets/ShaderLib/Atom/Features/SrgSemantics.azsli".  
 https://github.com/o3de/o3de/blob/main/Gems/Atom/Feature/Common/Assets/ShaderLib/Atom/Features/SrgSemantics.azsli  
   
@@ -30,7 +30,7 @@ https://github.com/o3de/o3de/blob/main/Gems/Atom/Feature/Common/Assets/ShaderLib
 ## FrequencyId: Defining the order of emission and register space utilization.
 With the value of `FrequencyId` we can define in what order we utilize the register space when compiling SRGs.  
 Consider the following SRG definitions:  
-  
+```cpp
     ShaderResourceGroupSemantic SRG_PerDraw
     {
         FrequencyId = 0;
@@ -60,9 +60,9 @@ Consider the following SRG definitions:
         RWTexture2D<float4>      m_rwtexture;
         Sampler                  m_sampler;
     }
-  
+```
 When compiling the AZSL code shown above, with default arguments, it will yield the following HLSL code:  
-  
+```cpp
     /* Generated code from
     ShaderResourceGroup ObjectSrg
     */
@@ -94,13 +94,12 @@ When compiling the AZSL code shown above, with default arguments, it will yield 
     };
     
     ConstantBuffer<::DrawSrg_SRGConstantsStruct> DrawSrg_SRGConstantBuffer : register(b0);
-    
-  
+```
 In the compiled output above, you can see that both SRGs share the same register space (space0, implicit), aka the same descriptor set. And of particular importance, please note how the register binding for `DrawSrg` starts at 0, while the resources for `ObjectSrg` start at 1. This ordering was determined by the `FrequencyId` member of the SRG Semantics.  
   
 Let's see what happens when *--use-spaces* is passed as the command line argument for **AZSLc**:  
 --use-spaces: Each SRG will be assigned its own register space, ordered by the FrequencyId of the SRG Semantics.  
-  
+```cpp
     /* Generated code from
     ShaderResourceGroup ObjectSrg
     */
@@ -133,13 +132,13 @@ Let's see what happens when *--use-spaces* is passed as the command line argumen
     
     ConstantBuffer<::DrawSrg_SRGConstantsStruct> DrawSrg_SRGConstantBuffer : register(b0, space0);
     
-  
+```
 In the compiled output above, you can see that both SRGs start the register bindings at index 0, but all resources of `DrawSrg` are assigned to `space0`, while the resources for `ObjectSrg` start at `space1`. This ordering was determined by the `FrequencyId` member of the SRG Semantics.  
   
   
 Some platforms, like Vulkan & Metal, require all registers to be bound in sequence across all resource types for a given register space (descriptor set). To accommodate for this case, **AZSLc** accepts the command line argument *--unique-idx*.  
 This is the output of the same AZSL file when compiled with *--unique-idx*, and using a single register space.  
-  
+```cpp
     /* Generated code from
     ShaderResourceGroup ObjectSrg
     */
@@ -172,12 +171,12 @@ This is the output of the same AZSL file when compiled with *--unique-idx*, and 
     
     ConstantBuffer<::DrawSrg_SRGConstantsStruct> DrawSrg_SRGConstantBuffer : register(b3);
     
-  
+```
 Note how all registers associated with `DrawSrg` start at index 0, while the registers bound to `ObjectSrg` start at index 4. Again, the reason the `DrawSrg` register indices start before `ObjectSrg` is because the `FrequencyId` of the SRG Semantic `SRG_PerDraw` is 0, while the `FrequencyId` of the SRG Semantic `SRG_PerObject` is 1.  
   
   
 Finally, if we compile to use a register space per SRG, with *--use-spaces*, and with *--unique-idx* this will be the output HLSL code:  
-  
+```cpp
     /* Generated code from
     ShaderResourceGroup ObjectSrg
     */
@@ -210,7 +209,7 @@ Finally, if we compile to use a register space per SRG, with *--use-spaces*, and
     
     ConstantBuffer<::DrawSrg_SRGConstantsStruct> DrawSrg_SRGConstantBuffer : register(b3, space0);
     
-  
+```
 Note, for each register space, in this case, each SRG, all registers start at 0, BUT resources that belong to `DrawSrg` are bound to register space 0, while resources that belong to `ObjectSrg` are bound to space 1. This ordering of register spaces was determined by the `FrequencyId` member of the SRG Semantics.  
   
 ## ShaderVariantFallback: Defining Who Owns The Bit Array Of Options
