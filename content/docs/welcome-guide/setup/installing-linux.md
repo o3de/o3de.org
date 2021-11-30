@@ -23,12 +23,13 @@ The following instructions assume that you have met all hardware and software re
     * `<path_to_deb_package>`: The path where you downloaded the deb package. Example: `~/Downloads`.
     * `<debian_package_name>`: The name of the package. Example: `o3de_2111_1.deb`.
 
-    {{< known-issue >}}
+    {{< known-issue link="https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1522675" >}}
 When installing the package, you may observe the following error:
 ```shell
-N: Download is performed unsandboxed as root as file '/home/<user>/Downloads/o3de_2111_1.deb' couldn't be accessed by user '_apt'. - pkgAcquire::Run (13: Permission denied)
+N: Download is performed unsandboxed as root as file '/home/<user>/Downloads/o3de_2111_1.deb' 
+   couldn't be accessed by user '_apt'. - pkgAcquire::Run (13: Permission denied)
 ```
-This is a [bug](https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1522675) in apt that has already been fixed. The error should go away once your current Linux distribution takes the fix.
+This is a bug in apt that has already been fixed. The error should go away once your current Linux distribution takes the fix.
 Until your distribution takes the fix, you can workaround the issue by repairing folder permissions with the following commands:
 ```shell
 sudo chown -Rv _apt:root /var/cache/apt/archives/partial/
@@ -36,13 +37,12 @@ sudo chmod -Rv 700 /var/cache/apt/archives/partial/
 ```
     {{< /known-issue >}}
 
-    {{< known-issue >}}
+    {{< known-issue link="https://salsa.debian.org/apt-team/apt/-/merge_requests/177" >}}
 If removing and installing the package, you may observe a warning like the following:
 ```shell
 W: Repository is broken: o3de:amd64 (= 21.11.1) has no Size information
 ```
-This is a [bug](https://salsa.debian.org/apt-team/apt/-/merge_requests/177) in apt that has already been fixed. The warning should go away once your current Linux distribution takes the fix.
-The issue is a warning and does not affect installing or removing.
+This is a bug in apt that has already been fixed. The warning should go away once your current Linux distribution takes the fix. The issue is a warning and does not affect installing or removing.
     {{< /known-issue >}}
 
     O3DE will be installed in the default location: `/opt/O3DE/<version>`, where `<version>` is the version of the installer. Example: `2111_1`.
