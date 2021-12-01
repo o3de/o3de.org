@@ -56,10 +56,10 @@ To prepare to build the engine and projects, choose one of the following build t
     The following example shows the `profile` build configuration.
 
     ```cmd
-    cmake --build build/windows_vs2019 --target Editor --config profile -- /m
+    cmake --build build/windows_vs2019 --target Editor --config profile -- -m
     ```
 
-    The `/m` is a recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
+    The `-m` is a recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
 
     The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `C:\o3de\build\windows_vs2019\bin\profile`.
 
@@ -97,10 +97,10 @@ To prepare to build the engine and projects, choose one of the following build t
 1. Use CMake to build the engine as an SDK, the same as if you installed the engine from an installer tool. The following example shows the `profile` build configuration.
 
     ```cmd
-    cmake --build build/windows_vs2019 --target INSTALL --config profile -- /m
+    cmake --build build/windows_vs2019 --target INSTALL --config profile -- -m
     ```
 
-    The `/m` is a recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
+    The `-m` is a recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
 
     The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `C:\o3de-install\bin\Windows\profile\Default`.
 
