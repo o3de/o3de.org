@@ -1,6 +1,9 @@
 ---
-title: "Packaging and release"
-date: 2021-03-02T00:23:56-05:00
+linkTitle: "Packaging and Release"
+title: "Packaging and Release"
 weight: 1600
+description: Learn how to package and build your Open 3D Engine (O3DE) project for release.
 ---
+
+This section is about how to prepare your finished **Open 3D Engine (O3DE)** project for release.
 

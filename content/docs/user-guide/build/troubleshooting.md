@@ -69,7 +69,7 @@ Call Stack (most recent call first):
   CMakeLists.txt:43 (include)-- Configuring incomplete, errors occurred!
 ```
 
-**Remedy:** This issue is caused when the `LY_3RDPARTY_PATH` value passed to CMake ends in a `\` character. Do one of the following:
+**Remedy:** This issue is caused on Windows when the `LY_3RDPARTY_PATH` value passed to CMake ends in a `\` character. Do one of the following:
 
 * Change the value to remove the trailing `\`.
 * Change the format of your `LY_3RDPARTY_PATH` to use the platform-agnostic `/` path separator.

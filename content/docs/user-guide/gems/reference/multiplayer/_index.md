@@ -18,6 +18,7 @@ For a quick introduction of the O3DE Multiplayer Gem and networking, watch the v
 | [Project configuration](./multiplayer-gem/configuration) | How to enable the O3DE Multiplayer Gem in a project. |
 | [Multiplayer Auto-components](./multiplayer-gem/autocomponents) | Automatically create components for use with the Multiplayer Gem using the AzAutoGen system. |
 | [Test Multiplayer Projects in the Editor](./multiplayer-gem/test-in-editor) | Automatically launch local servers or connect to a remote persistent server when working on a multiplayer project in the O3DE Editor. |
+| [Multiplayer Hierarchical Entities](./multiplayer-gem/hierarchy) | Group network entities into hierarchies that process their input together. |
 
 ## Related topics
 
