@@ -2,10 +2,8 @@
 linktitle: 2107.1 Release Notes
 title: Release Notes for Open 3D Engine 2107.1 (Developer Preview)
 description: Find out what was delivered in O3DE 2107.1 (Developer Preview).
-weight: 101
+weight: 102
 toc: true
-menu_uuid: releasenotes
-guide_img: "/images/release-notes/guide_img.svg"
 ---
 
 These are the release notes for **Open 3D Engine 2107.1 (Developer Preview)**, released on 2021-07-06. Check out the [known issues](https://github.com/o3de/o3de/issues/1736).

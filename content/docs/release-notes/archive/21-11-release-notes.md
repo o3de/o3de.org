@@ -1,27 +1,68 @@
 ---
-linktitle: 21.11 Release Notes
-title: Release Notes for Open 3D Engine 21.11
-description: Find out what was delivered in O3DE 21.11.
+linktitle: 2111.1 Release Notes
+title: Release Notes for Open 3D Engine 2111.1
+description: Find out what was delivered in O3DE 2111.1
 weight: 101
 toc: true
-menu_uuid: releasenotes
-guide_img: "/images/release-notes/guide_img.svg"
 ---
 
 Good news, everyone! The Open 3D Foundation is proud to announce that we've delivered our first stable release of Open 3D Engine (O3DE), version 21.11.
 
 ## Highlights
 
-The O3DE community has been hard at work since our last release in July 2021, refactoring and hardening existing code, and adding in new features.
+### Open 3D Engine Binaries Installer
 
-First off the bat, we're pleased to announce that **we have binary installers for both Windows and Linux (Preview)**, with download hosting provided by Amazon. Now, you can grab a binary package from the web, run it, and have the O3DE Editor and tools ready for evaluation and early development on your desktop! (We are still missing many key features, but we worked hard to test and harden basic game developer workflows.)
+There's now a binary installer for Windows for Open 3D Engine! Now you can try out our creative tools without building from source every time. This model - sometimes called "Open 3D Engine as an SDK" or "Open 3D Engine toolkit" - delivers pre-built binaries, DLLs, and headers which you can use for local development. For users who want to try out our tools without going through build time iterations, or are only interested in seeing how to write Gems and extensions to O3DE which don't require core source changes, the installer is an ideal new way to try out these workflows and find issues with us.
 
-Other highlights include:
+For everyone who's joining us as a creative worker in simulations and games eager to try out Open 3D Engine: Please keep in mind our journey is just beginning! Don't expect to make a full, production-ready game in O3DE - yet. Right now we want our community to grow by playing with these tools and giving us feedback that we need to make O3DE a long-term success. That means if you're committed to trying the binary installer, be prepared for hiccups as you work, and be ready to file bugs (or maybe even make a code contribution!) as you encounter issues.
 
-*
-*
-*
-*
+Want to try it? [Download the Windows installer for O3DE 21.11 Stable!](https://o3debinaries.org/download/windows.html)
+
+{{< note >}}
+For this release of O3DE, we're using two version numbers due to some technical limitations of Windows that we're working on resolving. The source releases of O3DE are versioned as **2111.1**, and binary installers are versioned as **21.11 (Stable)**.
+{{< /note >}} 
+
+### Linux support
+
+Open 3D Engine is now considered to be available in preview for Linux! Don't expect to have support for everything you need quite yet, and we're still making sure that all the bugs and issues are ironed out, but you can now run O3DE client applications and runtimes - like the O3DE Editor itself - on Linux desktop.
+
+![The O3DE Editor running on an X desktop environment on Ubuntu 20.04 LTS (Focal Fossa)](/images/release-notes/2111-1/linux-desktop.png)
+
+Right now we only have official support for Debian 20.04 LTS (Focal Fossa) as a pre-built binary distribution, but many Linux systems which meet the [hardware and software requirements](/docs/welcome-guide/requirements/) can be modified to successfully run Open 3D Engine. To get started building O3DE and your projects on Linux, check out the [Linux getting started documentation](docs/welcome-guide/setup/setup-from-github/building-linux/)
+
+And of course, you can [download the Debian package!](https://o3debinaries.org/download/linux.html)
+
+### Atom improvements
+
+Atom, the rendering library that powers Open 3D Engine, has received numerous improvements in this release, too.  Atom is now supported on Linux in a preview state alongside this release's support for the platform! In particular, AZSLc now compiles for Linux, null video devices no longer cause crashes, and [XCB](https://xcb.freedesktop.org/) connection support was added. The Vulkan rendering components of Atom were also all-up improved to help bring Linux support forward.
+
+More than just improvements and new platform support, Atom also now has improved debugging tools! First, the CPU profiler has been elevated to work with all of O3DE, allowing everyone to get more accurate profiling for their runtimes. We've also added support for [renderdoc]( https://renderdoc.org/) and provide a custom GPU visualizer so that you can perform advanced diagnostics on rendering pipelines.
+
+For content creators, Atom now has support for [TressFX 4.1]( https://github.com/GPUOpen-Effects/TressFX/) via the AtomTressFX Gem. With the AtomTressFX Gem, you have the power to create, model, and simulate realistic hair, fur, and other dense thin-volumed surfaces.
+
+### Editor improvements
+
+Open 3D Engine Editor 2111.1 has major improvements across the board in terms of performance and stability, like the rest of the engine, and content creation workflows are getting a lot of attention! Thanks to user feedback and sessions conducted with the O3DE UI/UX Special Interest Group, we collected a number of important adjustments our community wanted.
+
+Most importantly, Prefabs are now represented as a single object in the world, and you must use the **Edit Prefab** action on a Prefab in the Editor in order to edit the prefab itself. Prefab editing is available through **double-clicking** on an object in the Editor. While locked to the prefab edit mode, other instances of the prefab visible through the Editor viewport will receive real-time updates.
+
+And another change that we thought was so important that it deserves its own callout: This means is no more "sticky-select" in the Editor by default! You no longer have to double-click when deselecting an entity that you're editing. If you'd like to re-enable this feature, it can be changed in Editor Settings or with the `/Amazon/Preferences/Editor/StickySelect` registry setting.
+
+### Heightfield-based terrain
+
+We now have an experimental terrain system! Even basic terrain is important for designing outdoor environments and larger-scale worlds. The terrain system uses [heightmaps](https://en.wikipedia.org/wiki/Heightmap) to define deformations over a geometric plane to create world terrain. Anyone familiar with heightmaps should be able to play around with terrain now, and we encourage all of our users to try this feature when creating outdoor scenes in Open 3D Engine.
+
+![Heightfield Terrain editing in the O3DE Editor](/images/release-notes/2111-1/terrain.png)
+
+For the full information on implementation progress and the planned design, please see [O3DE SIG-Content RFC #4](https://github.com/o3de/sig-content/blob/main/rfcs/rfc-4-terrain-system.md).
+
+### Project manager external Gems support
+
+Open 3D Engine Project Manager how has improvements which allow the support of Gems which exist outside of the official Gem catalog! This feature comes along with the ability to register a source control repository with the Project Manager, and use this as an external source to pull and install Gems for your project. In addition, we've fixed a critical bug: Project Manager now correctly auto-adds and auto-displays Gem dependencies which affect your project configuration.
+
+### Script canvas performance and editing
+
+2111.1 contains plenty of performance improvements, but one which affects all project runtimes (and working in the Editor!) is worth calling out. Script Canvas now uses JSON as its new file format, which gives an average 71% size file reduction. Smaller files means faster loads, too! And not just that, but with the migration away from XML serialization and towards more flexible JSON tools, it's easier than ever to write external tools and scripts that can ingest Script Canvas JSON files.
 
 ## Features
 
@@ -44,26 +85,26 @@ Other highlights include:
 
 ### Graphics and Audio
 
-* AtomTressFX hair gem was implemented, displaying cutting edge hair technology based on the TressFX 4.1 In this version we introduced and improved both rendering methods (PPLL and ShortCut) and implemented the advanced Marshcner lighting model.
-* Add support for refresh rate and sync interval support
-* Enable Azslc for Linux
-* Add support for xcb connections for Linux/Vulkan
-* Add Renderdoc support via command line
-* Add Pix support via command line
-* Move RHI settings into settings registry
-* Added GPU Buffer/Image memory visualizer
-* AtomStarter game related fixed for mobile
-* Enabled PipelineLibrary support to enable PSO caching for DX12 and Vulkan
-* CPUProfiler is promoted from RHI to O3de
-* Added support for GPU descriptor heap compaction for DX12 in case the gpu visible descriptor heap fragments
-* Add support for taskgraph to SRG compilation
-* Optimize SRG compilation to allow partial SRG updates
-* Enable parallel encoding for Vulkan
-* Fix a bunch of Vulkan validation errors
-* Fix null descriptor issues for devices without null descriptor extension.
-* Multiple fixes done to managing and creation of Vk swapchain
-* Fix 3rd party path for android.
-* Pass on ASV samples for Qualcomm and Mali devices.
+*	Add the AtomTressFX hair Gem for cutting edge hair rendering technology based on TressFX 4.1
+*	Add support for refresh rate syncing and sync intervals
+*	Enable `Azslc` for Linux
+*	Add support for xcb connections for Linux/Vulkan
+*	Add Renderdoc support via command line
+*	Add Pix support via command line
+*	Move RHI settings into settings registry
+*	Add GPU Buffer/Image memory visualizer
+*	AtomStarter game related fixed for mobile
+*	Enable PipelineLibrary to support PSO caching for DX12 and Vulkan
+*	Promote CPUProfiler from RHI to O3DE
+*	Add support for GPU descriptor heap compaction in DX12 
+*	Add support for taskgraph to SRG compilation
+*	Optimize SRG compilation to allow partial SRG updates
+*	Enable parallel encoding for Vulkan
+*	Fix numerous Vulkan validation errors
+*	Fix null descriptor crash for devices without null descriptor extensions
+*	Fixes for managing and creating Vulkan swapchains
+*	Fix 3rd party path for Android
+*	Improvements to ASV samples for Qualcomm and Mali devices
 
 ### Core functionality
 
@@ -273,13 +314,23 @@ Other highlights include:
   * GitHub Issue: [o3de/o3de#5213](https://github.com/o3de/o3de/issues/5213)
 * `MaterialType New Property Not Initially Applied` error. When adding new material properties, the Asset Processor may initially fail for material files, and the AP needs a re-scan or restart.
   * GitHub Issue: [o3de/o3de#5215](https://github.com/o3de/o3de/issues/5215)
-* GameLift server launchers are manually relocatable. There is currently no automated build or asset layout generation. See instructions here: [AWS GameLift Gem Build Packaging for Windows](https://o3de.org/docs/user-guide/Gems/reference/aws/aws-gamelift/build-packaging-for-windows/) and [AWS GameLift Gem Build Packaging for Linux](https://o3de.org/docs/user-guide/Gems/reference/aws/aws-gamelift/build-packaging-for-linux). (You can ignore GameLift-specific steps if you are not relocating your servers to GameLift instances).
+* GameLift server launchers are manually relocatable. There is currently no automated build or asset layout generation. See instructions here: [AWS GameLift Gem Build Packaging for Windows](/docs/user-guide/Gems/reference/aws/aws-gamelift/build-packaging-for-windows/) and [AWS GameLift Gem Build Packaging for Linux](/docs/user-guide/Gems/reference/aws/aws-gamelift/build-packaging-for-linux). (You can ignore GameLift-specific steps if you are not relocating your servers to GameLift instances).
 * Monolithic release server builds are currently not supported.
 * Network entity hierarchies are limited to hierarchies with max count of 16 entities.
 * `imgui` keyboard is not working in server launcher.
 * `consol`e is not working on server launcher.
-* The legacy GridMate networking layer is still shipped in code. We recommend you do **not** use it for networking. Instead, use the new O3DE networking components: [O3DE Networking documentation](https://o3de.org/docs/user-guide/networking/).
+* The legacy GridMate networking layer is still shipped in code. We recommend you do **not** use it for networking. Instead, use the new O3DE networking components: [O3DE Networking documentation](/docs/user-guide/networking/).
 * Mouse controls are not friendly to working over remote desktop connections. See https://github.com/o3de/o3de/issues/5339. You may need to turn off **Capture Mouse Cursor** mode in the editor (**Edit** -> **Editor Settings** -> **Global Preferences** -> **Camera**)
+* On CPUs with 6 or less hardware threads, the Editor may freeze during certain editing scenarios due to running out of internal Job Manager threads.  The number of CPU hardware threads affects the number of Job Manager threads created, which currently has a hard minimum value of 2. At 6 CPU hardware threads, this minimum is reached. The issue can be worked around by creating a `user\Registry\boostrap.setreg` file with the following contents:
+
+  ```json
+  { "Amazon": { "AzCore": { "Runtime": { "ConsoleCommands": { "cl_jobThreadsMinNumber": 3 } } } } }
+  ```
+
+  This configuration file sets the hard minimum to 3 threads, which ensures that the Job Manager has enough threads to continue processing.
+* The O3DE Editor may crash if launched before project assets have been processed and PhysX tab in FBX Settings is used. This is due to the global physics material library asset being not ready to be used.
+
+  To work around this issue, run AssetProcessor to process project assets before launching Editor for the first time. After all assets are processed initially, Editor can be launched without manually running AssetProcessor.
 
 ## Notes
 
