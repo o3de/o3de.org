@@ -113,6 +113,9 @@ $(function() {
 <li>GetAspectFlags()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_image.html#a9ff353aa9eb8495a67e985f2b6f179c3">AZ::RHI::Image</a>
 </li>
+<li>GetAssertCount()
+: <a class="el" href="class_atom_tools_framework_1_1_trace_recorder.html#a0c6a7841c90631bacffd80e93368328a">AtomToolsFramework::TraceRecorder</a>
+</li>
 <li>GetAsset()
 : <a class="el" href="class_a_z_1_1_asset_collection_async_loader.html#adcde98f7f67a810365a18a7172cdbbd3">AZ::AssetCollectionAsyncLoader</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#a56b99cab8bd35c1f67c89fa027b734ee">AZ::RPI::Shader</a>
@@ -232,9 +235,8 @@ $(function() {
 : <a class="el" href="class_atom_tools_framework_1_1_atom_tools_application.html#a54f09ebe01ff60035686742aa13ed8a1">AtomToolsFramework::AtomToolsApplication</a>
 </li>
 <li>GetBuildTimestamp()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html#a7bf88250f1249159f4d50f74303e392c">AZ::RPI::ShaderAsset</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_variant.html#a6fa0949b01abafb5e42a5e4f33df3fee">AZ::RPI::ShaderVariant</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_variant_asset.html#aca5132cb80dddbdb271cfa3ecc1b457b">AZ::RPI::ShaderVariantAsset</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_variant.html#a6fa0949b01abafb5e42a5e4f33df3fee">AZ::RPI::ShaderVariant</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_variant_asset.html#ab7631974a05202aec56dbf74e237856f">AZ::RPI::ShaderVariantAsset</a>
 </li>
 <li>GetByteCode()
 : <a class="el" href="class_a_z_1_1_d_x12_1_1_shader_stage_function.html#ad056d34dbdf1407f8863659f0a0b8f82">AZ::DX12::ShaderStageFunction</a>
@@ -560,11 +562,14 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_metal_1_1_shader_stage_function.html#a36a0648dcb35931266c9d78264ed1188">AZ::Metal::ShaderStageFunction</a>
 , <a class="el" href="class_a_z_1_1_vulkan_1_1_shader_stage_function.html#a5ff958336ca72432058e650f5872ad2b">AZ::Vulkan::ShaderStageFunction</a>
 </li>
-<li>GetEnumName()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_descriptor.html#ab79851ca87d6920f7af205179ffb9cdd">AZ::RPI::MaterialPropertyDescriptor</a>
+<li>GetErrorCount()
+: <a class="el" href="class_atom_tools_framework_1_1_trace_recorder.html#a2d1577457a880aa8b3658bb5ba75f489">AtomToolsFramework::TraceRecorder</a>
 </li>
 <li>GetEstimatedItemCount()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope.html#a4ba0ba1002a93e6b785cb7b4ff53323b">AZ::RHI::Scope</a>
+</li>
+<li>GetExceptionCount()
+: <a class="el" href="class_atom_tools_framework_1_1_trace_recorder.html#abb7484ae44a6a2bb07fed645cc5fabf5">AtomToolsFramework::TraceRecorder</a>
 </li>
 <li>GetExclusiveFullScreenState()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#acf2f7514c853c23c38f5af06e65fd80b">AZ::RHI::SwapChain</a>
@@ -854,9 +859,6 @@ $(function() {
 <li>GetLightingPresetNames()
 : <a class="el" href="class_material_editor_1_1_material_viewport_requests.html#ad52bcfce48b3bb40d76307244c09f219">MaterialEditor::MaterialViewportRequests</a>
 </li>
-<li>GetLightingPresetPreview()
-: <a class="el" href="class_material_editor_1_1_material_viewport_requests.html#a509928bec4620485c6720cee4e36e61d">MaterialEditor::MaterialViewportRequests</a>
-</li>
 <li>GetLightingPresets()
 : <a class="el" href="class_material_editor_1_1_material_viewport_requests.html#a0d3d1582de95b27fcf28cd910f0d89aa">MaterialEditor::MaterialViewportRequests</a>
 </li>
@@ -1013,9 +1015,6 @@ $(function() {
 <li>GetModelPresetNames()
 : <a class="el" href="class_material_editor_1_1_material_viewport_requests.html#add48e5323454f5898e5df59082c31032">MaterialEditor::MaterialViewportRequests</a>
 </li>
-<li>GetModelPresetPreview()
-: <a class="el" href="class_material_editor_1_1_material_viewport_requests.html#a4fb8246068bfb2755ae510edb46901da">MaterialEditor::MaterialViewportRequests</a>
-</li>
 <li>GetModelPresets()
 : <a class="el" href="class_material_editor_1_1_material_viewport_requests.html#a7b249b5b13b830488cfee7532f88d675">MaterialEditor::MaterialViewportRequests</a>
 </li>
@@ -1077,7 +1076,7 @@ $(function() {
 </li>
 <li>GetObjectSrgLayout()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#a57fcec8d9f37c3120951ebb18fe63f68">AZ::RPI::MaterialAsset</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html#a7b84580a933b918372568a88fe83dd14">AZ::RPI::MaterialTypeAsset</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html#aa0ab073c23948fa761d993fa4c70155f">AZ::RPI::MaterialTypeAsset</a>
 </li>
 <li>GetObjectSrgs()
 : <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a0d641a9142333da5c8642eb68d3c653a">AZ::Render::MeshFeatureProcessor</a>
@@ -1181,6 +1180,9 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_image_scope_attachment.html#a7e291148b6ba2bbd7363a0012d242d67">AZ::RHI::ImageScopeAttachment</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_attachment.html#a3bef86cf595c12da1d3892d68c5b627a">AZ::RHI::ScopeAttachment</a>
 </li>
+<li>GetPrintfCount()
+: <a class="el" href="class_atom_tools_framework_1_1_trace_recorder.html#ae6209467cba2d97b192e995758428e44">AtomToolsFramework::TraceRecorder</a>
+</li>
 <li>GetPriority()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_event_interface.html#acee36b2fc8ac140787ae4b7823e053ba">AZ::RHI::ResourceEventInterface</a>
 </li>
@@ -1233,9 +1235,6 @@ $(function() {
 </li>
 <li>GetReducedMip()
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_size.html#a0253945e095ef353ac314d23786b9892">AZ::RHI::Size</a>
-</li>
-<li>GetReferenceFrame()
-: <a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#a97b04a26c98fd7e9bb94b1ad8e427a32">AtomToolsFramework::ModularViewportCameraControllerRequests</a>
 </li>
 <li>GetRelativePath()
 : <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#aeed0d47a84c01562f6366d1ee290660c">AtomToolsFramework::AtomToolsDocumentRequests</a>
@@ -1309,10 +1308,10 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html#a18f9290a7640675ba955a667c83defe3">AZ::RHI::ResourcePool</a>
 </li>
 <li>GetResourceMemoryRequirements()
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html#aab88e3610e915b0251b3f4155999e76b">AZ::RHI::Device</a>
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html#ab31508bad3c31c25c88339316d21d32a">AZ::RHI::Device</a>
 </li>
 <li>GetResourcePoolDatabase()
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html#aadfa355fb5e4ad277fa2efb74ec5d8aa">AZ::RHI::Device</a>
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html#aa5a3803a1dd4e273191de1bd7cee0fbb">AZ::RHI::Device</a>
 </li>
 <li>GetResourcePoolResolves()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope.html#a6e0760d66bd917474442ec9291a3e9f7">AZ::RHI::Scope</a>
@@ -1322,10 +1321,10 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_attachment.html#a3ce62ecb8d81093b4930a50f5c7220bf">AZ::RHI::ScopeAttachment</a>
 </li>
 <li>GetResults()
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_query_pool.html#ae88c3cef749e9c0579868b01a6c9f4c1">AZ::RHI::QueryPool</a>
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_query_pool.html#a7605be35bb0a05ca0eaed84b9a78f73f">AZ::RHI::QueryPool</a>
 </li>
 <li>GetRHIImage()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_image.html#ade71d54f036bf55dfc0784b91b0d0364">AZ::RPI::Image</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_image.html#a9c47cdca5d4f562ee49fed83c6dfdba7">AZ::RPI::Image</a>
 </li>
 <li>GetRHIPipelineState()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_pipeline_state_for_draw.html#a212549d5170de555979b423dcbfe1e6c">AZ::RPI::PipelineStateForDraw</a>
@@ -1409,6 +1408,9 @@ $(function() {
 <li>GetShader()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a33d000c15a9aa261cd20c59f4336b8f9">AZ::RPI::DynamicDrawContext</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_pipeline_state_for_draw.html#a3bbbd7d8b11b9e34dfeaa57468d39973">AZ::RPI::PipelineStateForDraw</a>
+</li>
+<li>GetShaderAssetBuildTimestamp()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html#a837d7d4cef005746f5be5c0586e17082">AZ::RPI::ShaderAsset</a>
 </li>
 <li>GetShaderAssetForMaterialSrg()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html#ac556a45be808b6838e168c13f4bf6e01">AZ::RPI::MaterialTypeAsset</a>
@@ -1612,7 +1614,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_mip_chain_asset.html#a7ab09e18de2c9efdd4eedcf0782d7cb2">AZ::RPI::ImageMipChainAsset</a>
 </li>
 <li>GetSubImageData()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_mip_chain_asset.html#a771a5a96cc158c1f4baf6e194194ecd7">AZ::RPI::ImageMipChainAsset</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_mip_chain_asset.html#ab410d5bda690d62e05aa58c1aa8582ba">AZ::RPI::ImageMipChainAsset</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image_asset.html#a0590bdd85c8eab94b2fc4b8ff5f2dd73">AZ::RPI::StreamingImageAsset</a>
 </li>
 <li>GetSubImageLayout()
@@ -1760,7 +1762,7 @@ $(function() {
 : <a class="el" href="struct_atom_tools_framework_1_1_dynamic_property.html#a8ceb7b1e953bd33a880d13b06bfc7910">AtomToolsFramework::DynamicProperty</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#ab928a5ad63dadd7116190228cff93abc">AZ::RPI::MaterialPropertyValue</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value_source_data.html#afb65b7f17fa6183c0cd53490f9738afa">AZ::RPI::MaterialPropertyValueSourceData</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group.html#ab66fd50dd2db1ddc0b404e474eb6c9c5">AZ::RPI::ShaderOptionGroup</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group.html#a13ff16a174671aa8070b5a57e8fc2b02">AZ::RPI::ShaderOptionGroup</a>
 </li>
 <li>GetValueName()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_descriptor.html#a7b7e8f795a6905377c1b69018e211b92">AZ::RPI::ShaderOptionDescriptor</a>
@@ -1814,6 +1816,9 @@ $(function() {
 <li>GetVisibility()
 : <a class="el" href="struct_atom_tools_framework_1_1_dynamic_property.html#ab08396fbf26d7cf94d739b47c256cdc1">AtomToolsFramework::DynamicProperty</a>
 </li>
+<li>GetWarningCount()
+: <a class="el" href="class_atom_tools_framework_1_1_trace_recorder.html#a6514e3f42b52903dfabd0ef852f69813">AtomToolsFramework::TraceRecorder</a>
+</li>
 <li>GetWindowContext()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#ab92818c084f7f003f61d8878709311b4">AZ::RPI::ViewportContext</a>
 </li>
@@ -1829,7 +1834,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 13 2021 14:20:20 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:59 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
