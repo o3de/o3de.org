@@ -186,6 +186,10 @@ virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#a44d3c21d0da088e40da7dbf81fff691f">SetEsmExponent</a> (float exponent)=0</td></tr>
 <tr class="memdesc:a44d3c21d0da088e40da7dbf81fff691f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Esm exponent. Higher values produce a steeper falloff between light and shadow. <br /></td></tr>
 <tr class="separator:a44d3c21d0da088e40da7dbf81fff691f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a899683544fa3433686de460b89498e53"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#a899683544fa3433686de460b89498e53">GetNormalShadowBias</a> () const =0</td></tr>
+<tr class="separator:a899683544fa3433686de460b89498e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6466b15c34262ecde4bb4564cad350"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#afb6466b15c34262ecde4bb4564cad350">SetNormalShadowBias</a> (float normalShadowBias)=0</td></tr>
+<tr class="separator:afb6466b15c34262ecde4bb4564cad350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -195,6 +199,32 @@ static const EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bottom
 <tr class="separator:afbb1f8707eaee68b0cb1940db5ba076f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a899683544fa3433686de460b89498e53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a899683544fa3433686de460b89498e53">&#9670;&nbsp;</a></span>GetNormalShadowBias()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float AZ::Render::AreaLightRequests::GetNormalShadowBias </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reduces acne by biasing the shadowmap lookup along the geometric normal. </p><dl class="section return"><dt>Returns</dt><dd>Returns the amount of bias to apply. </dd></dl>
+
+</div>
+</div>
 <a id="a826a4b0aaf4b6b6c1e38f2da84a75795"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a826a4b0aaf4b6b6c1e38f2da84a75795">&#9670;&nbsp;</a></span>SetIntensity()</h2>
 
@@ -222,13 +252,45 @@ static const EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bottom
 
 </div>
 </div>
+<a id="afb6466b15c34262ecde4bb4564cad350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb6466b15c34262ecde4bb4564cad350">&#9670;&nbsp;</a></span>SetNormalShadowBias()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::AreaLightRequests::SetNormalShadowBias </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>normalShadowBias</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reduces acne by biasing the shadowmap lookup along the geometric normal. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">normalShadowBias</td><td>Sets the amount of normal shadow bias to apply. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/AtomLyIntegration/CommonFeatures/Code/Include/AtomLyIntegration/CommonFeatures/CoreLights/AreaLightBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 13 2021 14:20:22 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:16:00 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
