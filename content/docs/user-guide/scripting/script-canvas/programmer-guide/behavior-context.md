@@ -4,79 +4,227 @@ description: Learn about the important relationship between Script Canvas and th
 weight: 100
 ---
 
-You can use Script Canvas to expose runtime code in a visual authoring environment using the behavior context. This topic focuses on the concept of behavior context as it relates to Script Canvas. For a broader introduction to this material, we recommend that you read the [Programmer's Guide to Component Development](/docs/user-guide/programming/components/). And for additional details, refer to [Behavior Context](/docs/user-guide/programming/components/behavior-context).
+The behavior context is a reflection system in **Open 3D Engine (O3DE)** that exposes C++ classes, methods, constants, data types, and the O3DE event mechanisms, providing the necessary bindings for scripting environments to invoke the code at run time. Script Canvas uses the script bindings to automatically create new nodes in the Node Palette for use in your Script Canvas graphs. Using these new nodes, you can call the C++ methods, get and set properties, retrieve constants, broadcast and handle events, and pass your custom data types through the node's data pins.
+
+In short, use the behavior context with Script Canvas to do the following:
+
++ Call C++ methods using Script Canvas nodes.
++ Access properties and constants from Script Canvas.
++ Expose C++ data types to Script Canvas.
++ Send and receive AZ::Event and EBus events through Script Canvas nodes.
+
+In this topic, you will learn how Script Canvas uses the behavior context to create new nodes and expose new data types to do all of the things described. There are several illustrative examples, and each example contains tips and best practices when using the behavior context to extend Script Canvas.
+
+## Script Canvas architecture
 
 The following code architecture diagram shows the relationship between Script Canvas and the behavior context in Open 3D Engine.
 
-![Script Canvas code architecture](/images/user-guide/scripting/script-canvas/script-canvas-code-architecture-1.png)
+![Script Canvas code architecture](/images/user-guide/scripting/script-canvas/behavior-context-code-architecture.png)
 
-The core Script Canvas code is built as a static library that is linked into the dependent gem and editor gem. This allows the code footprint at run time to be as small as the minimum required to run a Script Canvas graph. It also allows the Script Canvas Editor Gem to contain all the code required to author and develop Script Canvas graphs.
+The core Script Canvas code is built as a static library that is linked into the dependent Gem and the Script Canvas Editor Gem. This allows the code footprint at run time to be as small as the minimum required to run a Script Canvas graph. It also allows the Script Canvas Editor Gem to contain all the code required to author and develop Script Canvas graphs.
 
-Script Canvas is designed to use behavior context reflection and provide access to the same objects and [EBus](/docs/user-guide/programming/ebus/) that are available in Lua. When you use the behavior context, you do not need to write any Script Canvas-specific code. However, it is important that the way in which your code is reflected to the behavior context remains intuitive in a visual scripting environment.
+When you use the behavior context, you do not need to write any code specific to Script Canvas. However, it is important that the way in which your code is reflected to the behavior context remains intuitive and practical in a visual scripting environment.
 
-The behavior context for Script Canvas includes the following benefits:
+The combination of the Script Canvas and behavior context archictectures includes the following benefits:
 
-+ Functionality exposed through the behavior context is also available in Lua (and any other scripting solution bound to the behavior context).
-+ The EBus system makes it easier for you to use decoupled, event-driven programming paradigms.
-+ Script Canvas can use any functionality that is exposed to the behavior context, even if it comes from other gems. Therefore, when code is reflected to the behavior context, gems can enhance Script Canvas.
-+ Reflecting gems to the behavior context removes any need to add gem dependencies to Script Canvas.
++ Support for the AZ::Event and EBus event systems enable your scripts to use decoupled, event-driven programming paradigms.
++ Script Canvas can use functionality exposed through the behavior context from any Gem, enabling any Gem to enhance Script Canvas.
++ Support for Gems reflecting C++ code through the behavior context means there is no need to add Gem dependencies to Script Canvas.
 
-## The Light component and Script Canvas
+## Example: Static functions
 
-{{< todo issue="https://github.com/o3de/o3de.org/issues/992" >}}
-This example is outdated. It refers to a legacy component that no longer exists.
-{{< /todo >}}
+To demonstrate how C++ code can become a Script Canvas node, this example uses the behavior context to reflect a few simple, static math library functions.
 
-So that you can better understand the relationship between the behavior context and Script Canvas, this section discusses the fairly simple Light component. The example shows how its behavior context reflection translates into Script Canvas nodes.
-
-You can use the Light component to give an entity a light. You can configure the light by setting parameters such as color, intensity, and radius. The Light component can also be turned on or off, and you can respond to these events when they occur.
-
-Communication with an entity's Light component is done through two EBuses: `LightComponentRequestBus` and `LightComponentNotificationBus`.
-
-A request bus provides methods that can be called on an entity. If an entity has a Light component, the Light component implements the behavior of the requests that are made to it.
-
-Some of the requests that you can issue on a Light Component are the following. For the source code, see the file `dev\Gems\LmbrCentral\Code\include\LmbrCentral\Rendering\LightComponentBus.h`.
+We start with the static function declarations. The following functions return the sine and cosine of an angle. The angle is in radians:
 
 ```cpp
-//! Turns light on. Returns true if the light was successfully turned on.
-virtual bool TurnOnLight() { return false; }
-//! Turns light off. Returns true if the light was successfully turned off.
-virtual bool TurnOffLight() { return false; }
-//! Toggles light state.
-virtual void ToggleLight() {}
+float Sin(float angle);
+float Cos(float angle);
 ```
 
-These requests are part of the `LightComponentRequestBus`. Their behavior is implemented by `LightComponent`.
-
-To make these requests accessible for scripting, they must be reflected to the behavior context. This is done in `LightComponent::Reflect`. The source code is in the file `dev\Gems\LmbrCentral\Code\Source\Rendering\LightComponent.cpp`.
+We also need a class that defines the namespace for these functions:
 
 ```cpp
-behaviorContext->EBus<LightComponentRequestBus>("Light", "LightComponentRequestBus")
-    ->Attribute(AZ::Script::Attributes::Category, "Rendering")
-    ->Event("TurnOn", &LightComponentRequestBus::Events::TurnOnLight, "TurnOnLight")
-    ->Event("TurnOff", &LightComponentRequestBus::Events::TurnOffLight, "TurnOffLight")
-    ->Event("Toggle", &LightComponentRequestBus::Events::ToggleLight, "ToggleLight")
+class GlobalClass
+{
+public:
+    AZ_TYPE_INFO(GlobalClass, "{47A07917-103F-41F5-A586-8D7C1C40A625}");
+    AZ_CLASS_ALLOCATOR(GlobalClass, SystemAllocator, 0);
+
+    GlobalClass() = default;
+    ~GlobalClass() = default;
+        
+    static void Reflect(AZ::ReflectContext* context);
+};
 ```
 
-When Script Canvas examines the behavior context, it finds these bindings and automatically generates the corresponding nodes for you.
-
-![Light component nodes in Script Canvas](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-1.png)
-
-You use EBuses to communicate with an entity's components. To do so, you need an address. All component EBuses derive from `AZ::ComponentBus`, which is addressable by an ID of the type `AZ::EntityId`. For this reason, all nodes from a component EBus have an entry slot for an `EntityID`. The presence of `Self` in the `EntityID` field refers to the `EntityID` of the entity that owns the Script Canvas graph. However, this ID can be assigned to another entity, or even changed to an invalid entity ID.
-
-![Self EntityID](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-2.png)
-
-The other bus that the Light component reflects to the behavior context is `LightComponentNotificationBus`. The following source code is also in the file `dev\Gems\LmbrCentral\Code\Source\Rendering\LightComponent.cpp`.
+In the class's static `Reflect` method, we use the behavior context to reflect the `GlobalClass` and bind the static `Sin` and `Cos` methods that are part of the class. In this example, the functions are configured to be part of a group called `Globals`. The group is used as a subtitle on the new node and the category under which the nodes will appear in Script Canvas's Node Palette.
 
 ```cpp
-behaviorContext->EBus<LightComponentNotificationBus>("LightNotification", "LightComponentNotificationBus", "Notifications for the Light Components")
-    ->Attribute(AZ::Script::Attributes::Category, "Rendering")
-    ->Handler<BehaviorLightComponentNotificationBusHandler>();
+static void GlobalClass::Reflect(AZ::ReflectContext* context)
+{
+    if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
+    {
+        behaviorContext->Class<GlobalClass>("Globals")
+            ->Method("Sin", &Sin)
+            ->Method("Cos", &Cos);
+    }
+}
 ```
 
-Notification buses are also known as *event handlers*. You can use these event handlers on a component to respond to the events that happen to the component. As part of reflection to the behavior context, the preceding code specifies that the `BehaviorLightComponentNotificationBusHandler` handles events for the Light component.
+To complete the example, `GlobalClass::Reflect` must be called from a system component's Reflect function.
 
-The following code shows the binding for the `BehaviorLightComponentNotificationBusHandler` and defines two events: `LightTurnedOn` and `LightTurnedOff`.
+Once the code has been compiled, it is available as a new node in Script Canvas:
+
+![Sin function available as a Script Canvas node](/images/user-guide/scripting/script-canvas/behavior-context-sin-function.png)
+
+However, there are a few usability improvements that can be made to improve its appearance in Script Canvas:
+
++ Provide the class with a top-level category, `My Extensions`, instead of the default `Other`.
++ Provide a user-friendly parameter name, `Radians`, for the input pin.
++ Provide a tooltip when a user hovers over the Radians parameter.
+
+This can all be accomplished through changes to the code in the `Reflect` function:
+
+```cpp
+        behaviorContext->Class<GlobalClass>("Globals")
+          ->Attribute(AZ::Script::Attributes::Category, "My Extensions")
+          ->Method("Sin", &Sin, {{{"Radians", "The value in radians"}}})
+          ->Method("Cos", &Cos, {{{"Radians", "The value in radians"}}});
+```
+
+The result contains some helpful categorization and parameter information for users of this new node:
+
+![](/images/user-guide/scripting/script-canvas/behavior-context-my-extensions-nodes.png)
+![](/images/user-guide/scripting/script-canvas/behavior-context-sin-node-with-tooltip.png)
+
+## Example: Reflecting an EBus
+
+The ability to bind an EBus to the behavior context enables scripting to become driven and modular. The two main use cases for reflecting EBuses to the behavior context are _event handlers_ and _events_.
+
+Events are typically defined in code as part of a request bus, and are generally handled by some code system such as a component. Event handlers are typically defined as part of a notification bus.
+
+In this example, we'll take a look at a basic **Light** component. The example shows how its behavior context reflection translates into Script Canvas nodes.
+
+In this Light component, the user can configure the light by setting parameters such as color, intensity, and radius. The Light component can also be turned on or off, and you can respond to these events when they occur. Communication with an entity's Light component is done through two EBuses: the `LightComponentRequestBus` and the `LightComponentNotificationBus`.
+
+### Request bus
+
+A request bus is an EBus that can send _events_. Events can be thought of as requests that are intended for a system or object to handle. Components can reflect their event methods to the behavior context to make them available to scripting environments such as Script Canvas.
+
+Here are a few of the C++ event methods in the Light component:
+
+```cpp
+// Turn light on. Returns true if the light was successfully turned on.
+bool TurnOnLight();
+
+// Turn light off. Returns true if the light was successfully turned off.
+bool TurnOffLight();
+
+// Toggle light state.
+void ToggleLight();
+```
+
+These events are part of the `LightComponentRequestBus`. Their behavior is implemented by `LightComponent`.
+
+```cpp
+bool LightComponent::TurnOnLight()
+{
+    bool success = m_light.TurnOn();
+    if (success)
+    {
+        LightComponentNotificationBus::Event(GetEntityId(), &LightComponentNotifications::LightTurnedOn);
+    }
+    return success;
+}
+
+bool LightComponent::TurnOffLight()
+{
+    bool success = m_light.TurnOff();
+    if (success)
+    {
+        LightComponentNotificationBus::Event(GetEntityId(), &LightComponentNotifications::LightTurnedOff);
+    }
+    return success;
+}
+
+void LightComponent::ToggleLight()
+{
+    if (m_light.IsOn())
+    {
+        TurnOffLight();
+    }
+    else
+    {
+        TurnOnLight();
+    }
+}
+```
+
+To make these events accessible for scripting, their methods must be reflected to the behavior context. This is done in `LightComponent::Reflect`.
+
+```cpp
+if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
+{
+    behaviorContext->EBus<LightComponentRequestBus>("Light", "LightComponentRequestBus")
+        ->Attribute(AZ::Script::Attributes::Category, "Rendering")
+        ->Event("TurnOn", &LightComponentRequestBus::Events::TurnOnLight)
+        ->Event("TurnOff", &LightComponentRequestBus::Events::TurnOffLight)
+        ->Event("Toggle", &LightComponentRequestBus::Events::ToggleLight);
+}
+```
+
+When Script Canvas examines the behavior context, it finds these events and automatically generates the corresponding nodes.
+
+![Light component nodes in Script Canvas](/images/user-guide/scripting/script-canvas/behavior-context-ebus-request-light-nodes.png)
+
+#### EBus events and EntityId
+
+EBuses communicate with an entity's components. To do this, it needs an address. All component EBuses derive from `AZ::ComponentBus`, which is addressable by an ID of the type `AZ::EntityId`. For this reason, all nodes from a component EBus have a data pin for an **EntityID**. The presence of `Self` in the **EntityID** pin refers to the `AZ::EntityID` of the entity that owns the Script Canvas graph. However, this ID can be assigned to another entity, or even changed to an invalid ID.
+
+![Self EntityID data pin](/images/user-guide/scripting/script-canvas/behavior-context-ebus-request-entityID.png)
+
+#### Tooltips
+
+Script Canvas nodes should include a helpful tooltip for every parameter. For example, the Light component might have a `SetLightState` event with a `state` parameter:
+
+```cpp
+// Set the light state to on or off.
+void SetLightState(State state);
+```
+
+You should add a tooltip in the behavior context reflection to describe the parameter. In this example, the tooltip will show `1=On, 0=Off` when a user hovers over the **State** data pin on the **SetState** node.
+
+```cpp
+    behaviorContext->EBus<LightComponentRequestBus>("Light", "LightComponentRequestBus")
+        ->Event("SetState", &LightComponentRequestBus::Events::SetLightState, {{{"State", "1=On, 0=Off"}}});
+```
+
+### Notification bus
+
+A notification bus is an EBus that enables the use of *event handlers*. Event handlers in a component can respond to the events that are sent to the component. You can reflect event handlers to the behavior context to make them available to scripting environments such as Script Canvas.
+
+Our Light component example handles the `TurnOn`, `TurnOff`, and `Toggle` events from the request bus using the following C++ event handler methods on the `LightComponentNotificationBus`:
+
+```cpp
+class LightComponentNotifications
+      : public AZ::ComponentBus
+{
+public:
+
+    // Sent when the light is turned on.
+    virtual void LightTurnedOn() {}
+
+    // Sent when the light is turned off.
+    virtual void LightTurnedOff() {}
+};
+
+using LightComponentNotificationBus = AZ::EBus <LightComponentNotifications>;
+```
+
+To create the script binding between the C++ EBus and the scripting system, you must implement an EBus handler.
+
+In the following code, the `BehaviorLightComponentNotificationBusHandler` handler establishes the script binding with two event handlers: `LightTurnedOn` and `LightTurnedOff`.
 
 ```cpp
 class BehaviorLightComponentNotificationBusHandler : public LightComponentNotificationBus::Handler, public AZ::BehaviorEBusHandler
@@ -84,11 +232,13 @@ class BehaviorLightComponentNotificationBusHandler : public LightComponentNotifi
 public:
     AZ_EBUS_BEHAVIOR_BINDER(BehaviorLightComponentNotificationBusHandler, "{969C5B17-10D1-41DB-8123-6664FA64B4E9}", AZ::SystemAllocator,
         LightTurnedOn, LightTurnedOff);
+
     // Sent when the light is turned on.
     void LightTurnedOn() override
     {
         Call(FN_LightTurnedOn);
     }
+
     // Sent when the light is turned off.
     void LightTurnedOff() override
     {
@@ -97,105 +247,112 @@ public:
 };
 ```
 
-Script Canvas has a node that gives you access to all the events for EBus. You can handle the events that you are interested in.
-
-![Light notification bus](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-3.png)
-
-## Objects: The PhysicsComponent example
-
-{{< todo issue="https://github.com/o3de/o3de.org/issues/992" >}}
-This example is outdated. It refers to a legacy component that no longer exists.
-{{< /todo >}}
-
-Objects that are reflected to the behavior context are also available in Script Canvas. Objects become available in the form of variables.
-
-The Light component does not provide any objects, but the `PhysicsComponent` provides an example of an object reflected to the behavior context. The `Collision` class is reflected as a behavior context object that you can access through the use of variables in Script Canvas. You can find the following source code in the file `dev\Gems\LmbrCentral\Code\Source\Physics\PhysicsComponent.cpp`.
+Next, you need to reflect the notification bus to the behavior context in the Light component's `Reflect` method. As part of this reflection, you also specify that the `BehaviorLightComponentNotificationBusHandler` handles events for the Light component. The following code is added after the reflection of the request bus:
 
 ```cpp
-using Collision = PhysicsComponentNotifications::Collision;
-// Information about a collision event
-behaviorContext->Class<Collision>()
-    ->Attribute(AZ::Script::Attributes::Storage, AZ::Script::Attributes::StorageType::Value)
-    ->Property("entity", BehaviorValueProperty(&Collision::m_entity))
-    ->Property("position", BehaviorValueProperty(&Collision::m_position))
-    ->Property("normal", BehaviorValueProperty(&Collision::m_normal))
-    ->Property("impulse", BehaviorValueProperty(&Collision::m_impulse))
-    ->Property("velocities", BehaviorValueGetter(&Collision::m_velocities), nullptr)
-    ->Property("masses", BehaviorValueGetter(&Collision::m_masses), nullptr)
-    ->Property("surfaces", BehaviorValueGetter(&Collision::m_surfaces), nullptr)
-     ;
+if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
+{
+    ...
+
+    behaviorContext->EBus<LightComponentNotificationBus>("LightNotification", "LightComponentNotificationBus", "Notifications for the Light components")
+        ->Attribute(AZ::Script::Attributes::Category, "Rendering")
+        ->Handler<BehaviorLightComponentNotificationBusHandler>();
+}
 ```
 
-{{< note >}}
-<!-- During the preview release of Script Canvas, -->Properties must provide both getters and setters to be accessible on a Script Canvas node. Containers such as vectors are currently not supported. For this reason, velocities, masses, and surfaces do not provide a setter.
-{{< /note >}}
+Once compiled, these event handlers are available to Script Canvas from the **LightNotification** node.
 
-Most object variables are set as a result of an event. In the case of the preceding `Collision` example, the `Collision` variable is returned by the `OnCollision` event.
+![Light notification node](/images/user-guide/scripting/script-canvas/behavior-context-ebus-light-notification-node.png)
 
-![Collision variable](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-4.png)
+## Example: Data types
 
-You can use the following graph to set the collision variable:
+To make a custom data type available for use as a variable in Script Canvas, you can reflect it using the behavior context's `Class` builder. The new type is also available to pass as a parameter to functions and events.
 
-![Setting the Collision variable](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-5.png)
+This example uses the `BoxShapeConfig` class as an example. This class is defined in the file `Gems\LmbrCentral\Code\include\LmbrCentral\Shape\BoxShapeComponentBus.h` and reflected in `Gems\LmbrCentral\Code\Source\Shape\BoxShapeComponent.cpp`.
 
-## Displaying EBus event parameter names in Script Canvas nodes
+A data type must be reflected to both the serialization context and the behavior context. The serialization context enables the data type to be stored and read from a file, and the behavior context allows it to be bound to the scripting system.
+
+```cpp
+void BoxShapeConfig::Reflect(AZ::ReflectContext* context)
+{
+    if (auto serializeContext = azrtti_cast<AZ::SerializeContext*>(context))
+    {
+        serializeContext->Class<BoxShapeConfig, ShapeComponentConfig>()
+            ->Version(2)
+            ->Field("Dimensions", &BoxShapeConfig::m_dimensions);
+     }
+
+    if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
+    {
+         behaviorContext->Class<BoxShapeConfig>()
+            ->Constructor()
+            ->Constructor<AZ::Vector3&>()
+            ->Property("Dimensions", BehaviorValueProperty(&BoxShapeConfig::m_dimensions));
+    }
+}
+```
+
+Resulting variable node:
+
+![Get BoxShapeConfig variable node](/images/user-guide/scripting/script-canvas/behavior-context-data-types-boxshapeconfig.png)
+
+## Best practice: Displaying EBus event parameter names in nodes
 
 To display parameter names correctly for your EBus events, ensure that you specify custom names when you reflect your events to the behavior context.
 
-If you do not specify names for the parameters, they are given default display names like "1", "2", or "3", as in the following image:
+If you do not specify names for the parameters, they are given default display names like `1`, `2`, or `3`, as in the following image:
 
-![Default parameter names displayed](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-parameter-names-1.png)
+![Default parameter names displayed](/images/user-guide/scripting/script-canvas/behavior-context-displaying-parameter-names-1.png)
 
 The following code produced the event node in the image:
 
 ```cpp
-if (auto behaviorContext =
-    azrtti_cast < AZ::BehaviorContext * >(reflectContext))
+if (auto behaviorContext = azrtti_cast <AZ::BehaviorContext*>(reflectContext))
 {
-    behaviorContext->EBus < MyBus > ("MyBus")
-      // This is the category that appears in the Node Palette window
-      ->Attribute (AZ::Script::Attributes::Category,
-           "Rendering")->Event ("SomeEvent",
-                &MyBus::Events::SomeEvent);
+    behaviorContext->EBus<MyBus>("MyBus")
+        // This is the category that appears in the Node Palette window.
+        ->Attribute(AZ::Script::Attributes::Category, "Rendering")
+        ->Event("SomeEvent", &MyBus::Events::SomeEvent);
 }
 ```
 
-The following version of the same code adds the parameter names `FirstParam` and `SecondParam` and corresponding tooltip text to the `Event` function:
+An improved version of the same code adds the parameter names `FirstParam` and `SecondParam` and corresponding tooltip text to the `Event` function:
 
 ```cpp
 if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(reflectContext))
 {
     behaviorContext->EBus<MyBus>("MyBus")
-        // This is the category that appears in the Node Palette window
+        // This is the category that appears in the Node Palette window.
         ->Attribute(AZ::Script::Attributes::Category, "Rendering")
-        ->Event("SomeEvent", &MyBus::Events::SomeEvent, { { { "FirstParam" , "First Param Tooltip" }, { "SecondParam", "Second Param Tooltip" } } });
+        ->Event("SomeEvent", &MyBus::Events::SomeEvent, {{{"FirstParam" , "First Param Tooltip"}, { "SecondParam", "Second Param Tooltip"}}});
 }
 ```
 
 In the node palette window, the parameter names appear as specified:
 
-![Specified parameter names displayed](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-parameter-names-2.png)
+![Specified parameter names displayed](/images/user-guide/scripting/script-canvas/behavior-context-displaying-parameter-names-2.png)
 
-**Alternate Syntax**
-You can also use the following alternate syntax to create parameter override instances before passing them to the `Event` function:
+### Alternate syntax
+
+You can also use the alternate syntax `AZ::BehaviorParameterOverrides` to create parameter override instances before passing them to the `Event` function.
 
 ```cpp
 if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(reflectContext))
 {
-    AZ::BehaviorParameterOverrides someEventParam1 = { "FirstParam", "First Param Tooltip" };
-    AZ::BehaviorParameterOverrides someEventParam2 = { "SecondParam", "Second Param Tooltip" };
+    AZ::BehaviorParameterOverrides someEventParam1 = {"FirstParam", "First Param Tooltip"};
+    AZ::BehaviorParameterOverrides someEventParam2 = {"SecondParam", "Second Param Tooltip"};
     behaviorContext->EBus<MyBus>("MyBus")
         // This is the category that appears in the Node Palette window
         ->Attribute(AZ::Script::Attributes::Category, "Rendering")
-        ->Event("SomeEvent", &MyBus::Events::SomeEvent, { {someEventParam1, someEventParam2} });
+        ->Event("SomeEvent", &MyBus::Events::SomeEvent, {{ someEventParam1, someEventParam2 }});
 }
 ```
 
-## Common programming problems
+## Common behavior context problems
 
 The following are some common problems that occur when programming with Script Canvas and the behavior context.
 
-**I reflected my class to the behavior context, but it doesn't appear in Script Canvas.**
+### Reflected object does not appear in Script Canvas
 
 Both the serialization context and the behavior context use the same `Reflect` function:
 
@@ -213,15 +370,13 @@ void Example::Reflect(AZ::ReflectContext* context)
     if (AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(context))
     {
         serializeContext->Class<Example>()
-            ->Version(1)
-            ;
+            ->Version(1);
 
         // Problem! BehaviorContext is inside the SerializeContext scope and will not get reflected.
         if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
         {
             behaviorContext->Class<Example>()
-                ->Method("IsValid", &Example::IsValid)
-                ;
+                ->Method("IsValid", &Example::IsValid);
         }
     }
 }
@@ -235,28 +390,36 @@ void Example::Reflect(AZ::ReflectContext* context)
     if (AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(context))
     {
         serializeContext->Class<Example>()
-            ->Version(1)
-            ;
+            ->Version(1);
     }
 
     // Correct! Each context requires its own scope as this function is called multiple times (once per context)
     if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
     {
         behaviorContext->Class<Example>()
-            ->Method("IsValid", &Example::IsValid)
-            ;
+            ->Method("IsValid", &Example::IsValid);
      }
 }
 ```
 
-**I exposed a new EBus to the Behavior Context, but my handler is not getting called.**
+### EBus handler is not getting called
 
-For example, you created an EBus handler and properly exposed it script. Yet, when you try to receive the event in Script Canvas, it does not get triggered.
+**Problem**
 
-This is caused by an oversight that is easy to make: newly implemented EBus handlers must be connected before they can receive events. The solution is to ensure that your component connects to the bus, as in the following example:
+You created an EBus handler and properly exposed it to the behavior context. However, when you try to receive the event in Script Canvas, it does not get triggered.
+
+**Solution**
+
+EBus handlers must be connected before they can receive events. Make sure your component connects to the bus, as in the following example:
 
 ```cpp
-MyBus::BusConnect()
+MyBus::BusConnect();
 ```
 
 Depending on the type of bus, you might have to specify an ID to connect to. For more information, refer to [The Open 3D Engine Event Bus (EBus) System](/docs/user-guide/programming/ebus/).
+
+## Additional material
+
+To get started creating new components in O3DE that integrate the behavior context, we recommend that you read the [Programmer's Guide to Component Development](/docs/user-guide/programming/components/).
+
+For a closer look at the behavior context system itself, refer to [Behavior Context In-Depth](/docs/user-guide/programming/components/behavior-context).
