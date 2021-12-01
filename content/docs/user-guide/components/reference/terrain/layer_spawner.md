@@ -1,6 +1,6 @@
 ---
-title: Terrain Layer Spawner component
-linktitle: LayerSpawner
+title: Terrain Layer Spawner Component
+linktitle: Terrain Layer Spawner
 description: ' Open 3D Engine (O3DE) Terrain Layer Spawner reference. '
 weight: 100
 ---
