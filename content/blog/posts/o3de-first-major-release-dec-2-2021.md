@@ -5,6 +5,7 @@ date: 2021-12-02
 slug: o3de-2111-announcement
 author: Liv Erickson
 blog_img: "/images/blog/announcement_thumbnail.jpg"
+full_img: "/images/blog/o3de-2111-release-blog-image.png"
 ---
 
 ## Open 3D Foundation announces first major release of Open 3D Engine
