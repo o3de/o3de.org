@@ -17,7 +17,9 @@ Example:
 | 1000.0              | 10.00                  |
 | 1234.5              | 12.34                  |
 
-**NOTE:** Given that we are a new open source community, this version numbering is subject to change for future releases pending discussions and alignment between SIG-Release, the marketing committee, and the technical steering committee. We are also considering the introduction of a friendly name schema for major versions of the engine. We invite any and all feedback and contributions from the community to help define a strategy for release terminology and friendly names for future iterations of O3DE [here](https://github.com/o3de/sig-release/issues/20).
+{{ note }}
+Given that we are a new open source community, this version numbering is subject to change for future releases pending discussions and alignment between SIG-Release, the marketing committee, and the technical steering committee. We are also considering the introduction of a friendly name schema for major versions of the engine. We invite any and all feedback and contributions from the community to help define a strategy for release terminology and friendly names for future iterations of O3DE [here](https://github.com/o3de/sig-release/issues/20).
+{{ / note }}
 
 ## O3DE Release Terminology
 

@@ -8,7 +8,7 @@ menu_uuid: releasenotes
 guide_img: "/images/release-notes/guide_img.svg"
 ---
 
-The current version of Open 3D Engine is 2107.1 (Developer Preview). Check out the [known issues](https://github.com/o3de/o3de/issues/1736).
+These are the release notes for **Open 3D Engine 2107.1 (Developer Preview)**, released on 2021-07-06. Check out the [known issues](https://github.com/o3de/o3de/issues/1736).
 
 ## Highlights
 
