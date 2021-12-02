@@ -1,6 +1,6 @@
 ---
-title: Terrain Height Gradient List component
-linktitle: TerrainHeightGradientList
+title: Terrain Height Gradient List Component
+linktitle: Terrain Height Gradient List
 description: ' Open 3D Engine (O3DE) Terrain Height Gradient List reference. '
 weight: 100
 ---
