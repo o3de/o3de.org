@@ -25,3 +25,9 @@ You can also download a ZIP of our brand guidelines and logos: [O3DE Logo Pack.z
 | [O3DE UI component development guidelines](uidev-component-development-guidelines/) | An overview of O3DE UI component development and the custom Qt widget library. |
 | [O3DE UI component library](component-library/) | An introduction to each UI component (i.e. widget) in O3DE and guidelines for their usage. |
 | [O3DE UI icon assets](icon-assets/) | A library of icon assets used in the O3DE development environment. |
+
+## Related topics
+
+| **Topic** | **Description** |
+| --- | --- |
+| [Extend the Editor Tutorials](/docs/learning-guide/tutorials/extend-the-editor/) | Tutorials to extend the **O3DE Editor** by creating a custom tool Gem with O3DE UI components. |
