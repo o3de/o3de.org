@@ -37,7 +37,7 @@ This tutorial uses the following Windows directory names and locations in the ex
 - **MyPyShapeExample Gem**: `C:\o3de-gems\MyPyShapeExample`  
     Your custom Gem. You may choose a different folder name and location in disk.
 
-## Create a Gem with the `PythonToolGem` template
+## Create a Gem from the `PythonToolGem` template
 
 Start by creating a Gem from the `PythonToolGem` template, which contains a basic Python framework to create a dialog window that extends the Editor.
 
@@ -516,4 +516,4 @@ To download this sample and load it in the Editor:
 
    - Open the tool in the Editor.
 
-    These steps are explained earlier in this tutorial. Refer to [Create a Gem from the `PythonToolGem` template](#create-a-tool-with-the-pythontoolgem-template).
+    These steps are explained earlier in this tutorial. Refer to [Create a Gem from the `PythonToolGem` template](#create-a-gem-from-the-pythontoolgem-template).

@@ -340,7 +340,7 @@ First, wrap these UI elements in their own sub-widget, set the layout, and add i
 3. Finally, set the layout of `shapeButtons` to `gridLayout`, and add `shapeButtons` to `mainLayout`. 
 
 ```cpp
-    QGroupBox* shapeButtons = new QGroupBox(this);          // 1
+    QGroupBox* shapeButtons = new QGroupBox(this);      // 1
     QGridLayout* gridLayout = new QGridLayout();
 
     // ...                                              // 2
