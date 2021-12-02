@@ -28,6 +28,6 @@ You can also download a ZIP of our brand guidelines and logos: [O3DE Logo Pack.z
 
 ## Related topics
 
-| **Topic** | **Description** |
+| Topic | Description |
 | --- | --- |
 | [Extend the Editor Tutorials](/docs/learning-guide/tutorials/extend-the-editor/) | Tutorials to extend the **O3DE Editor** by creating a custom tool Gem with O3DE UI components. |
