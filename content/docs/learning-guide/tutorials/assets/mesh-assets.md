@@ -6,17 +6,17 @@ weight: 100
 toc: true
 ---
 
-This tutorial demonstrates how to customize mesh asset processing for **Open 3D Engine**. You can use any mesh for this tutorial. The primary 3D scene format supported by O3DE is `.fbx`, so it's recommended to use a simple mesh asset saved to an `.fbx` for this tutorial. If you don't have your own asset for this tutorial, you can use one of the assets provided with O3DE.
+This tutorial demonstrates how to customize mesh asset processing for **Open 3D Engine**. You can use any mesh for this tutorial. The primary 3D scene format supported by O3DE is `.fbx`, so it's recommended to use a simple mesh asset saved to a `.fbx` file for this tutorial. If you don't have your own source asset for this tutorial, you can use one of the assets provided with O3DE.
 
 ## Preparation
 
 O3DE's **Asset Processor** is an application and a service that runs in the background while you use O3DE. Asset Processor automatically detects source assets that are placed in scan directories and schedules process jobs for the found source assets. The product assets that are generated are runtime optimized for O3DE. To learn more about Asset Processor and O3DE's **Asset Pipeline**, refer to the [Assets](/docs/user-guide/assets/) topic in the User Guide.
 
-Your entire project directory structure is a scan directory. You can place your asset in any subdirectory of your project so that Asset Processor can detect the asset and process it. Place your `.fbx` source asset somewhere in you project, such as the `Assets` subdirectory, of and let's begin.
+Your entire project directory structure is a scan directory. You can place your asset in any subdirectory of your project so that Asset Processor can detect the asset and process it. Place your `.fbx` source asset somewhere in your project, such as the `Assets` subdirectory, of and let's begin.
 
 ## Processing a mesh asset
 
-When you placed your `.fbx` source asset in your project, Asset processor detected the asset and processed it with a default set of rules for `.fbx` source assets. To customize the rules used to process a mesh asset, follow the steps below:
+When you placed your `.fbx` source asset in your project, Asset processor detected the asset and processed it with a default set of rules for `.fbx` source assets. To customize the rules that process a mesh asset, follow the steps below:
 
 1. In **O3DE Editor** locate your asset in **Asset Browser**. If you don't have an asset of your own, you can type `fbx` into the search field at the top of asset browser and use one of the provided `.fbx` files such as `sphere.fbx`.
 
@@ -62,6 +62,6 @@ You can learn about all the advanced settings properties of the Coordinate syste
 
     {{< image-width "/images/learning-guide/tutorials/assets/meshes-finished.png" "800" "Drag the mesh asset into the viewport">}}
 
-    When you drag the asset into the viewport, O3DE automatically creates an entity with an Mesh component that references the mesh asset. If the source asset contains materials, the materials are also processed and applied by default.
+    When you drag the asset into the viewport, O3DE automatically creates an entity with a **Mesh** component that references the mesh product asset. If the source asset contains materials that have been processed, the materials are also processed and applied to the mesh by default.
 
 There are many options for customizing mesh processing, but there are limits to the data that can be processed for meshes. Note that there are several product assets generated for the mesh listed below the source asset in Asset Browser. Each of these product assets contains some stream of data for the mesh. To learn more about the data that can be processed for a mesh and the limits of the data that can be processed, refer to [Scene Format Support](/docs/user-guide/assets/scene-settings/scene-format-support) in the User Guide.
