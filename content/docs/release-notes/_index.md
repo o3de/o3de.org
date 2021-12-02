@@ -12,10 +12,10 @@ primary: true
 
 ## Current Versions of Open 3D Engine
 
-**Latest version**: 2111.1 (Stable)
+**Latest version**: 2111.1
 
-* Release Notes: [O3DE 2111.1 (Stable) Release Notes](./archive/21-11-release-notes)
-* Known Issues: [O3DE 2111.1 (Stable) Known Issues](https://github.com/o3de/o3de/issues/1736)
+* Release Notes: [O3DE 2111.1 Release Notes](./archive/21-11-release-notes)
+* Known Issues: [O3DE 2111.1 Known Issues](https://github.com/o3de/o3de/issues/1736)
 
 **Note**: Source versions use the `XXXX.X` numbering model. Binary releases use the `XX.XX` numbering model, where the decimal place is moved to the left by 2 values from the original source code version, and any values after 4 are truncated.
 ### Download the latest version
