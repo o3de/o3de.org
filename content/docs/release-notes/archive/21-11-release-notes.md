@@ -16,10 +16,10 @@ There's now a binary installer for Windows for Open 3D Engine! Now you can try o
 
 For everyone who's joining us as a creative worker in simulations and games eager to try out Open 3D Engine: Please keep in mind our journey is just beginning! Don't expect to make a full, production-ready game in O3DE - yet. Right now we want our community to grow by playing with these tools and giving us feedback that we need to make O3DE a long-term success. That means if you're committed to trying the binary installer, be prepared for hiccups as you work, and be ready to file bugs (or maybe even make a code contribution!) as you encounter issues.
 
-Want to try it? [Download the Windows installer for O3DE 21.11 Stable!](https://o3debinaries.org/download/windows.html)
+Want to try it? [Download the Windows installer for O3DE Stable 21.11!](https://o3debinaries.org/download/windows.html)
 
 {{< note >}}
-For this release of O3DE, we're using two version numbers due to some technical limitations of Windows that we're working on resolving. The source releases of O3DE are versioned as **2111.1**, and binary installers are versioned as **21.11 (Stable)**.
+For this release of O3DE, we're using two version numbers due to some technical limitations of Windows that we're working on resolving. The source releases of O3DE are versioned **2111.1**, and binary installers are named **Stable 21.11**.
 {{< /note >}} 
 
 ### Linux support
@@ -28,23 +28,23 @@ Open 3D Engine is now considered to be available in preview for Linux! Don't exp
 
 ![The O3DE Editor running on an X desktop environment on Ubuntu 20.04 LTS (Focal Fossa)](/images/release-notes/2111-1/linux-desktop.png)
 
-Right now we only have official support for Debian 20.04 LTS (Focal Fossa) as a pre-built binary distribution, but many Linux systems which meet the [hardware and software requirements](/docs/welcome-guide/requirements/) can be modified to successfully run Open 3D Engine. To get started building O3DE and your projects on Linux, check out the [Linux getting started documentation](docs/welcome-guide/setup/setup-from-github/building-linux/)
+Right now we only have official support for Ubuntu 20.04.3 LTS (Focal Fossa) as a pre-built binary debian package. Other Linux systems which meet the [hardware and software requirements](/docs/welcome-guide/requirements/) are considered experimental and may need modifications to successfully run Open 3D Engine. To get started with O3DE on Linux, check out the [Linux install documentation](/docs/welcome-guide/setup/installing-linux). Or, learn how to build O3DE for Linux from source with the [Linux build documentation](/docs/welcome-guide/setup/setup-from-github/building-linux/).
 
-And of course, you can [download the Debian package!](https://o3debinaries.org/download/linux.html)
+And of course, you can [download the Debian package for Ubuntu 20.04.3 LTS!](https://o3debinaries.org/download/linux.html)
 
 ### Atom improvements
 
 Atom, the rendering library that powers Open 3D Engine, has received numerous improvements in this release, too.  Atom is now supported on Linux in a preview state alongside this release's support for the platform! In particular, AZSLc now compiles for Linux, null video devices no longer cause crashes, and [XCB](https://xcb.freedesktop.org/) connection support was added. The Vulkan rendering components of Atom were also all-up improved to help bring Linux support forward.
 
-More than just improvements and new platform support, Atom also now has improved debugging tools! First, the CPU profiler has been elevated to work with all of O3DE, allowing everyone to get more accurate profiling for their runtimes. We've also added support for [renderdoc]( https://renderdoc.org/) and provide a custom GPU visualizer so that you can perform advanced diagnostics on rendering pipelines.
+More than just improvements and new platform support, Atom also now has improved debugging tools! First, the CPU profiler has been elevated to work with all of O3DE, allowing everyone to get more accurate profiling for their runtimes. We've also added support for [renderdoc]( https://renderdoc.org/) and provided a custom GPU visualizer so that you can perform advanced diagnostics on rendering pipelines.
 
 For content creators, Atom now has support for [TressFX 4.1]( https://github.com/GPUOpen-Effects/TressFX/) via the AtomTressFX Gem. With the AtomTressFX Gem, you have the power to create, model, and simulate realistic hair, fur, and other dense thin-volumed surfaces.
 
 ### Editor improvements
 
-Open 3D Engine Editor 2111.1 has major improvements across the board in terms of performance and stability, like the rest of the engine, and content creation workflows are getting a lot of attention! Thanks to user feedback and sessions conducted with the O3DE UI/UX Special Interest Group, we collected a number of important adjustments our community wanted.
+Open 3D Engine Editor 2111.1 has major improvements across the board in terms of performance and stability, like the rest of the engine, and content creation workflows are getting a lot of attention! Thanks to user feedback and sessions conducted with the O3DE UI/UX Special Interest Group, we collected a number of important adjustments that our community wanted.
 
-Most importantly, Prefabs are now represented as a single object in the world, and you must use the **Edit Prefab** action on a Prefab in the Editor in order to edit the prefab itself. Prefab editing is available through **double-clicking** on an object in the Editor. While locked to the prefab edit mode, other instances of the prefab visible through the Editor viewport will receive real-time updates.
+Most importantly, prefabs are now represented as a single object in the world, and you must use the **Edit Prefab** action on a prefab in the Editor in order to edit the prefab itself. Prefab editing is available through **double-clicking** on an object in the Editor. While locked to the prefab edit mode, other instances of the prefab visible through the Editor viewport will receive real-time updates.
 
 And another change that we thought was so important that it deserves its own callout: This means is no more "sticky-select" in the Editor by default! You no longer have to double-click when deselecting an entity that you're editing. If you'd like to re-enable this feature, it can be changed in Editor Settings or with the `/Amazon/Preferences/Editor/StickySelect` registry setting.
 
@@ -56,13 +56,13 @@ We now have an experimental terrain system! Even basic terrain is important for 
 
 For the full information on implementation progress and the planned design, please see [O3DE SIG-Content RFC #4](https://github.com/o3de/sig-content/blob/main/rfcs/rfc-4-terrain-system.md).
 
-### Project manager external Gems support
+### External Gems support in Project Manager
 
-Open 3D Engine Project Manager how has improvements which allow the support of Gems which exist outside of the official Gem catalog! This feature comes along with the ability to register a source control repository with the Project Manager, and use this as an external source to pull and install Gems for your project. In addition, we've fixed a critical bug: Project Manager now correctly auto-adds and auto-displays Gem dependencies which affect your project configuration.
+Open 3D Engine Project Manager now has improvements which allow the support of Gems that exist outside of the official Gem catalog! This feature comes along with the ability to register a source control repository with the Project Manager, and use this as an external source to pull and install Gems for your project. In addition, we've fixed a critical bug: Project Manager now correctly auto-adds and auto-displays Gem dependencies which affect your project configuration.
 
-### Script canvas performance and editing
+### Script Canvas performance and editing
 
-2111.1 contains plenty of performance improvements, but one which affects all project runtimes (and working in the Editor!) is worth calling out. Script Canvas now uses JSON as its new file format, which gives an average 71% size file reduction. Smaller files means faster loads, too! And not just that, but with the migration away from XML serialization and towards more flexible JSON tools, it's easier than ever to write external tools and scripts that can ingest Script Canvas JSON files.
+2111.1 contains plenty of performance improvements, but one which affects all project runtimes and performance in the Editor is worth calling out. Script Canvas now uses JSON as its file format instead of XML, which gives an average 71% file size reduction. Smaller files means faster loads, too! And not just that, but with the migration away from XML serialization and towards more flexible JSON tools, it's easier than ever to write external tools and scripts that can ingest Script Canvas JSON files.
 
 ## Features
 
@@ -113,7 +113,7 @@ Open 3D Engine Project Manager how has improvements which allow the support of G
 * Added support for installing a Project Game Release Layout(Windows, Linux, MacOS): [Create a Project Game Release Layout](https://github.com/o3de/o3de/issues/3201)
 * Added ComponentApplication Lifecycle Events to facilitate startup configuration for the GameLauncher: [o3de/o3de@`b3b646d`](https://github.com/o3de/o3de/commit/b3b646dad9c16d4a93cf1058034329c615c1a54b) 
 * Updated the AssetBundler to use AZ::IO::Archive for creation of Pak Files: [Update AssetBundler to use AZ::IO::Archive for creating PAK files](https://github.com/o3de/o3de/issues/3419)
-* Improved Error messags in the project's EngineFinder.cmake to help with indicating why the project could not locate the engine: [Improve the errors in EngineFinder.cmake](https://github.com/o3de/o3de/pull/4713)
+* Improved Error messages in the project's EngineFinder.cmake to help with indicating why the project could not locate the engine: [Improve the errors in EngineFinder.cmake](https://github.com/o3de/o3de/pull/4713)
 * Added Multi-Config/Multi-Permutation support to the installer. This adds support for build configurations like debug, profile, release can be placed in the same installer. This also allows non-monolithic(Default) and monolithic(Monolithic) permutations to be added to the installer: [Adding support for multi-config/multi-permutation installer](https://github.com/o3de/o3de/pull/5062)
 * Limit the configuration types available in the Engine SDK layout to only the configurations that were built. i.e If the SDK was only built with the profile configuration, only the profile configuration will be available when using the SDK with a project: [Build: Limit cmake build types based on Engine SDK build type](https://github.com/o3de/o3de/issues/2526)
 * Added support for importing Json files. [Support for importing Json files](https://github.com/o3de/o3de/pull/4609)
@@ -122,7 +122,7 @@ Open 3D Engine Project Manager how has improvements which allow the support of G
 * Adds stack traces to exception handling [Adding stack traces to exception handling in unit tests](https://github.com/o3de/o3de/pull/4708)
 * Enabled override/virtual warnings [Enables override/virtual warnings](https://github.com/o3de/o3de/pull/4071)
 * Limit configuration types a project sees when using an engine SDK [Limits configuration types a project sees when using an engine SDK](https://github.com/o3de/o3de/pull/4033)
-* Enabled format securty warnings [Enabling warnings around format security](https://github.com/o3de/o3de/pull/3937)
+* Enabled format security warnings [Enabling warnings around format security](https://github.com/o3de/o3de/pull/3937)
 * Set MSVC compiler into permissive mode [Setting /permissive- to make MSVC more "standard"](https://github.com/o3de/o3de/pull/3701)
 * Improvements to input dependency tracking in runtime dependencies [Improves runtime dependencies input dependency](https://github.com/o3de/o3de/pull/3665)
 * Enabled multiple warnings in MSVC and Clang [Enabling several warnings on MSVC that are not enabled by default and are good to have](https://github.com/o3de/o3de/pull/3378) [Linux/Clang fix warn-unused and related](https://github.com/o3de/o3de/pull/3376) [Enable warning MSVC 4296: 'operator': expression is always false](https://github.com/o3de/o3de/pull/3352) [SPEC-2513 Last warnings to get to Warning Level 4](https://github.com/o3de/o3de/pull/3033) [SPEC-2513 Fixing w4018](https://github.com/o3de/o3de/pull/2925)
@@ -213,7 +213,7 @@ Open 3D Engine Project Manager how has improvements which allow the support of G
 * Fixed a problem where XCode generation fails: [[MacOS] Generating XCode solution fails](https://github.com/o3de/o3de/issues/3832).
 * Fixed an error where it is not possible to create new Projects: [It is not possible to create new Projects](https://github.com/o3de/o3de/issues/3443).
 * Runtime dependencies do not add target file dependencies: [ly_add_target RUNTIME_DEPENDENCIES and ly_add_target_files does not add file dependencies on the TARGET](https://github.com/o3de/o3de/issues/3391).
-* Jinja files are not being copied to install layout: [Jinja files are not copied over to the INSTALL install laoyut when they are PUBLIC files](https://github.com/o3de/o3de/issues/2517).
+* Jinja files are not being copied to install layout: [Jinja files are not copied over to the INSTALL install layout when they are PUBLIC files](https://github.com/o3de/o3de/issues/2517).
 * Some projects are being re-processed in Visual Studio despite being clean: [Some projects are re-processed in VS despite being clean](https://github.com/o3de/o3de/issues/2288).
 * PhysX Gem can't be used as build dependency in engine SDK: [PhysX Gem can't be used as build dependency in engine SDK Part 2](https://github.com/o3de/o3de/issues/2126).
 * 3rdParty runtime dependencies copied multiple times: [3rdParty runtime dependencies copied multiple times](https://github.com/o3de/o3de/issues/2045) [PhysX Gem can't be used as build dependency in engine SDK](https://github.com/o3de/o3de/issues/1971).
