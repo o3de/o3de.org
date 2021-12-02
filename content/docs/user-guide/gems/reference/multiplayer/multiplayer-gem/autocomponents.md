@@ -4,7 +4,7 @@ description: A reference for defining Open 3D Engine multiplayer state through a
 linktitle: Auto-components
 ---
 
-*Auto-components* provide a convenient way to define states of a multiplayer component relevant to network synchronization. Using the [AzAutoGen](/docs/user-guide/engine/autogen) system, auto-component files found inside of your project are processed during builds to create C++ classes for components and controllers that provide network replication and remote function calls. Auto-components also take care of Editor and behavior context bindings so that the bound component shows in the Editor and works with O3DE scripting.
+*Auto-components* provide a convenient way to define states of a multiplayer component relevant to network synchronization. Using the [AzAutoGen](/docs/user-guide/programming/autogen) system, auto-component files found inside of your project are processed during builds to create C++ classes for components and controllers that provide network replication and remote function calls. Auto-components also take care of Editor and behavior context bindings so that the bound component shows in the Editor and works with O3DE scripting.
 
 In order to enable auto-component builds for your project, follow the instructions in [Multiplayer Project Configuration](./configuration).
 
@@ -46,6 +46,7 @@ For components which have a relation constraint of `Required` or `Weak`, accesso
 The `Include` tag is used to generate the `#includes` of the C++ code. Use an `Include` tag for each header that your generated classes will use.
 
 | Property | Description | Type |
+|---|---|---|---|
 | File | The path to a header to add as an `#include` of the generated source. | `string` |
 
 {{< todo issue="https://github.com/o3de/o3de.org/issues/678" >}}
@@ -62,7 +63,7 @@ The following is an example of an auto-component which synchronizes a component 
 
 ```xml
 <?xml version="1.0"?>
- 
+
 <Component
     Name="NetworkWeaponsComponent"
     Namespace="MultiplayerSample"
@@ -70,27 +71,27 @@ The following is an example of an auto-component which synchronizes a component 
     OverrideController="true"
     OverrideInclude="Source/Components/NetworkWeaponsComponent.h"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
- 
+
     <ComponentRelation Constraint="Required" HasController="true" Name="NetworkAnimationComponent" Namespace="MultiplayerSample" Include="Source/Components/NetworkAnimationComponent.h" />
- 
+
     <Include File="Source/Weapons/WeaponTypes.h" />
- 
+
     <NetworkInput Type="bool" Name="Draw" Init="false" />
     <NetworkInput Type="WeaponActivationBitset" Name="Firing"  Init="" />
- 
+
     <NetworkProperty Type="AZ::Vector3"  Name="TargetPosition"   Init="AZ::Vector3::CreateZero()" Container="Object"       ReplicateFrom="Authority" ReplicateTo="Client"     IsPublic="false" IsRewindable="false" IsPredictable="false" ExposeToEditor="false" GenerateEventBindings="false" Description="Target position the weapons component is currently aiming at" />
     <NetworkProperty Type="FireParams"   Name="ActivationParams" Init=""  Container="Array" Count="MaxWeaponsPerComponent" ReplicateFrom="Authority" ReplicateTo="Client"     IsPublic="false" IsRewindable="false" IsPredictable="false" ExposeToEditor="false" GenerateEventBindings="false" Description="Parameters for the current weapon activation" />
     <NetworkProperty Type="uint8_t"      Name="ActivationCounts" Init="0" Container="Array" Count="MaxWeaponsPerComponent" ReplicateFrom="Authority" ReplicateTo="Client"     IsPublic="false" IsRewindable="false" IsPredictable="false" ExposeToEditor="false" GenerateEventBindings="false" Description="The number of activations" />
     <NetworkProperty Type="WeaponState"  Name="WeaponStates"     Init=""  Container="Array" Count="MaxWeaponsPerComponent" ReplicateFrom="Authority" ReplicateTo="Autonomous" IsPublic="false" IsRewindable="false" IsPredictable="true"  ExposeToEditor="false" GenerateEventBindings="false" Description="The predictable states of the weapons" />
- 
+
     <ArchetypeProperty Type="WeaponParams" Name="WeaponParams"  Init=""           Container="Array" Count="MaxWeaponsPerComponent" ExposeToEditor="true" Description="Parameters for the weapons attached to this NetworkWeaponsComponent" />
     <ArchetypeProperty Type="AZ::Name"     Name="FireBoneNames" Init="AZ::Name()" Container="Array" Count="MaxWeaponsPerComponent" ExposeToEditor="true" Description="Name of the bone to attach to for fire events" />
- 
+
     <RemoteProcedure Name="SendConfirmHit" InvokeFrom="Authority" HandleOn="Client" IsPublic="false" IsReliable="false" GenerateEventBindings="false" Description="Single hit event confirmed by the server" >
         <Param Type="WeaponIndex" Name="WeaponIndex" />
         <Param Type="HitEvent"    Name="HitEvent" />
     </RemoteProcedure>
- 
+
     <RemoteProcedure Name="SendConfirmProjectileHit" InvokeFrom="Authority" HandleOn="Client" IsPublic="false" IsReliable="false" GenerateEventBindings="false" Description="Fired by projectile entities on confirmed hit" >
         <Param Type="WeaponIndex" Name="WeaponIndex" />
         <Param Type="HitEvent"    Name="HitEvent" />
