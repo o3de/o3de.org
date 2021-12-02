@@ -89,6 +89,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveDir</b> (AZStd::
 <tr class="memitem:ab8539d69bac94d1e4af6aac5d5d3b31e"><td class="memItemLeft" align="right" valign="top"><a id="ab8539d69bac94d1e4af6aac5d5d3b31e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAll</b> () override</td></tr>
 <tr class="separator:ab8539d69bac94d1e4af6aac5d5d3b31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc25c5e44982e06384b003a34f2cc47"><td class="memItemLeft" align="right" valign="top"><a id="aecc25c5e44982e06384b003a34f2cc47"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ListAllFiles</b> (AZStd::vector&lt; AZ::IO::Path &gt; &amp;outFileEntries) override</td></tr>
+<tr class="separator:aecc25c5e44982e06384b003a34f2cc47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60ee71535b837a2ed710b8e0b677ab32"><td class="memItemLeft" align="right" valign="top"><a id="a60ee71535b837a2ed710b8e0b677ab32"></a>
 Handle&#160;</td><td class="memItemRight" valign="bottom"><b>FindFile</b> (AZStd::string_view szRelativePath) override</td></tr>
 <tr class="separator:a60ee71535b837a2ed710b8e0b677ab32"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,9 +104,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFile</b> (Handle f
 <tr class="memitem:acad47c29a8dc2665e2c87b666fa06b35"><td class="memItemLeft" align="right" valign="top"><a id="acad47c29a8dc2665e2c87b666fa06b35"></a>
 AZ::IO::PathView&#160;</td><td class="memItemRight" valign="bottom"><b>GetFullPath</b> () const override</td></tr>
 <tr class="separator:acad47c29a8dc2665e2c87b666fa06b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d03a75725f521e1b1b0e46f5e865974"><td class="memItemLeft" align="right" valign="top"><a id="a1d03a75725f521e1b1b0e46f5e865974"></a>
-<a class="el" href="class_a_z_1_1_i_o_1_1_zip_dir_1_1_cache.html">ZipDir::Cache</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCache</b> ()</td></tr>
-<tr class="separator:a1d03a75725f521e1b1b0e46f5e865974"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8cf73aa4838a8c5a0c9512effd11901"><td class="memItemLeft" align="right" valign="top"><a id="ac8cf73aa4838a8c5a0c9512effd11901"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetFlags</b> () const override</td></tr>
 <tr class="separator:ac8cf73aa4838a8c5a0c9512effd11901"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,6 +116,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ResetFlags</b> (uint3
 <tr class="memitem:a45fbc4a136c928e5f31478caf880802c"><td class="memItemLeft" align="right" valign="top"><a id="a45fbc4a136c928e5f31478caf880802c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetPackAccessible</b> (bool bAccessible) override</td></tr>
 <tr class="separator:a45fbc4a136c928e5f31478caf880802c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d03a75725f521e1b1b0e46f5e865974"><td class="memItemLeft" align="right" valign="top"><a id="a1d03a75725f521e1b1b0e46f5e865974"></a>
+<a class="el" href="class_a_z_1_1_i_o_1_1_zip_dir_1_1_cache.html">ZipDir::Cache</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCache</b> ()</td></tr>
+<tr class="separator:a1d03a75725f521e1b1b0e46f5e865974"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct_a_z_1_1_i_o_1_1_i_nested_archive"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_a_z_1_1_i_o_1_1_i_nested_archive')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_a_z_1_1_i_o_1_1_i_nested_archive.html">AZ::IO::INestedArchive</a></td></tr>
 <tr class="memitem:a0caf95689905c614dfa1a8e8dfdaa811 inherit pub_methods_struct_a_z_1_1_i_o_1_1_i_nested_archive"><td class="memItemLeft" align="right" valign="top"><a id="a0caf95689905c614dfa1a8e8dfdaa811"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReadOnly</b> () const</td></tr>
@@ -170,7 +173,10 @@ Additional Inherited Members</h2></td></tr>
 <br />
 &#160;&#160;<b>FLAGS_CREATE_NEW</b> = 1 &lt;&lt; 4, 
 <b>FLAGS_DONT_COMPACT</b> = 1 &lt;&lt; 5, 
-<b>FLAGS_DISABLE_PAK</b> = 1 &lt;&lt; 11
+<b>FLAGS_VALIDATE_HEADERS</b> = 1 &lt;&lt; 9, 
+<b>FLAGS_FULL_VALIDATE</b> = 1 &lt;&lt; 10, 
+<br />
+&#160;&#160;<b>FLAGS_DISABLE_PAK</b> = 1 &lt;&lt; 11
 <br />
  }</td></tr>
 <tr class="separator:a55ad2822f17fbee54b9a72dcc51721f6 inherit pub_types_struct_a_z_1_1_i_o_1_1_i_nested_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,7 +190,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Handle</b> = void *<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:45 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:14:57 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

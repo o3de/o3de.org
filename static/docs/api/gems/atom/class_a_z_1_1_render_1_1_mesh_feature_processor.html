@@ -103,11 +103,11 @@ Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html">RPI::
 <tr class="memdesc:ac37253075638d543c1e1cbd2b5c8e425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the underlying <a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html">RPI::Model</a> instance for a meshHandle. May be null if the model has not loaded. <br /></td></tr>
 <tr class="separator:ac37253075638d543c1e1cbd2b5c8e425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cc2d6730c2f9842589a7760ebd4de7d"><td class="memItemLeft" align="right" valign="top"><a id="a3cc2d6730c2f9842589a7760ebd4de7d"></a>
-Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a3cc2d6730c2f9842589a7760ebd4de7d">GetModelAsset</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) const override</td></tr>
+<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a3cc2d6730c2f9842589a7760ebd4de7d">GetModelAsset</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) const override</td></tr>
 <tr class="memdesc:a3cc2d6730c2f9842589a7760ebd4de7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the underlying <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> for a meshHandle. <br /></td></tr>
 <tr class="separator:a3cc2d6730c2f9842589a7760ebd4de7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8501cc0a3b795dbc327b2805540d9a57"><td class="memItemLeft" align="right" valign="top">Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">RPI::ShaderResourceGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a8501cc0a3b795dbc327b2805540d9a57">GetObjectSrg</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) const override</td></tr>
-<tr class="separator:a8501cc0a3b795dbc327b2805540d9a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d641a9142333da5c8642eb68d3c653a"><td class="memItemLeft" align="right" valign="top">const AZStd::vector&lt; Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">RPI::ShaderResourceGroup</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a0d641a9142333da5c8642eb68d3c653a">GetObjectSrgs</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) const override</td></tr>
+<tr class="separator:a0d641a9142333da5c8642eb68d3c653a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8eab9890ff0491a89a71203d2f6bfe5"><td class="memItemLeft" align="right" valign="top"><a id="ad8eab9890ff0491a89a71203d2f6bfe5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#ad8eab9890ff0491a89a71203d2f6bfe5">QueueObjectSrgForCompile</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) const override</td></tr>
 <tr class="memdesc:ad8eab9890ff0491a89a71203d2f6bfe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queues the object srg for compile. <br /></td></tr>
@@ -216,9 +216,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_a_z_1_1_render_1_1_mesh_feature_processor_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_z_1_1_render_1_1_mesh_feature_processor_interface')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html">AZ::Render::MeshFeatureProcessorInterface</a></td></tr>
-<tr class="memitem:a0b64dffbb6400f3b7231cd011a149b81 inherit pub_types_class_a_z_1_1_render_1_1_mesh_feature_processor_interface"><td class="memItemLeft" align="right" valign="top"><a id="a0b64dffbb6400f3b7231cd011a149b81"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>MeshHandle</b> = <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">StableDynamicArrayHandle</a>&lt; <a class="el" href="class_a_z_1_1_render_1_1_mesh_data_instance.html">MeshDataInstance</a> &gt;</td></tr>
-<tr class="separator:a0b64dffbb6400f3b7231cd011a149b81 inherit pub_types_class_a_z_1_1_render_1_1_mesh_feature_processor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad271c4916633873d663826c18f9435c0 inherit pub_types_class_a_z_1_1_render_1_1_mesh_feature_processor_interface"><td class="memItemLeft" align="right" valign="top"><a id="ad271c4916633873d663826c18f9435c0"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>MeshHandle</b> = <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">StableDynamicArrayHandle</a>&lt; <a class="el" href="class_a_z_1_1_render_1_1_model_data_instance.html">ModelDataInstance</a> &gt;</td></tr>
+<tr class="separator:ad271c4916633873d663826c18f9435c0 inherit pub_types_class_a_z_1_1_render_1_1_mesh_feature_processor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a204218038491066bf47d1dba1c27bab9 inherit pub_types_class_a_z_1_1_render_1_1_mesh_feature_processor_interface"><td class="memItemLeft" align="right" valign="top"><a id="a204218038491066bf47d1dba1c27bab9"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ModelChangedEvent</b> = Event&lt; const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html">RPI::Model</a> &gt; &gt;</td></tr>
 <tr class="separator:a204218038491066bf47d1dba1c27bab9 inherit pub_types_class_a_z_1_1_render_1_1_mesh_feature_processor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -277,8 +277,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 
 </div>
 </div>
-<a id="a8501cc0a3b795dbc327b2805540d9a57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8501cc0a3b795dbc327b2805540d9a57">&#9670;&nbsp;</a></span>GetObjectSrg()</h2>
+<a id="a0d641a9142333da5c8642eb68d3c653a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d641a9142333da5c8642eb68d3c653a">&#9670;&nbsp;</a></span>GetObjectSrgs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,7 +287,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Data::Instance&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">RPI::ShaderResourceGroup</a>&gt; AZ::Render::MeshFeatureProcessor::GetObjectSrg </td>
+          <td class="memname">const AZStd::vector&lt;Data::Instance&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">RPI::ShaderResourceGroup</a>&gt; &gt;&amp; AZ::Render::MeshFeatureProcessor::GetObjectSrgs </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;&#160;</td>
           <td class="paramname"><em>meshHandle</em></td><td>)</td>
@@ -300,9 +300,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets the ObjectSrg for a meshHandle. Updating the ObjectSrg should be followed by a call to QueueObjectSrgForCompile, instead of compiling the srg directly. This way, if the srg has already been queued for compile, it will not be queued twice in the same frame. The ObjectSrg should not be updated during Simulate, or it will create a race between updating the data and the call to Compile </p>
+<p>Gets the ObjectSrgs for a meshHandle. Updating the ObjectSrgs should be followed by a call to QueueObjectSrgForCompile, instead of compiling the srgs directly. This way, if the srgs have already been queued for compile, they will not be queued twice in the same frame. The ObjectSrgs should not be updated during Simulate, or it will create a race between updating the data and the call to Compile Cases where there may be multiple ObjectSrgs: if a model has multiple submeshes and those submeshes use different materials with different object SRGs. </p>
 
-<p>Implements <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a35c94080adfefd73c0bfcc0aca2df765">AZ::Render::MeshFeatureProcessorInterface</a>.</p>
+<p>Implements <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#aae293194d94e56a717ff4e080d37513d">AZ::Render::MeshFeatureProcessorInterface</a>.</p>
 
 </div>
 </div>
@@ -351,7 +351,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:51 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:53 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

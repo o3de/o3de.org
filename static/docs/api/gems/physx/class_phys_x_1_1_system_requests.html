@@ -66,6 +66,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a97d585cf688e8ca611213c4a7768c291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89e8603f87bfdadc2e1c031f9f2aef11"><td class="memItemLeft" align="right" valign="top">virtual physx::PxTriangleMesh *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_system_requests.html#a89e8603f87bfdadc2e1c031f9f2aef11">CreateTriangleMeshFromCooked</a> (const void *cookedMeshData, AZ::u32 bufferSize)=0</td></tr>
 <tr class="separator:a89e8603f87bfdadc2e1c031f9f2aef11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12539bcdc21fa739bd588f6c18e729cd"><td class="memItemLeft" align="right" valign="top">virtual physx::PxHeightField *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_system_requests.html#a12539bcdc21fa739bd588f6c18e729cd">CreateHeightField</a> (const physx::PxHeightFieldSample *samples, AZ::u32 numRows, AZ::u32 numColumns)=0</td></tr>
+<tr class="separator:a12539bcdc21fa739bd588f6c18e729cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74fccb2ceff67f38e8dc77bf16a4621d"><td class="memItemLeft" align="right" valign="top">virtual physx::PxFilterData&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_system_requests.html#a74fccb2ceff67f38e8dc77bf16a4621d">CreateFilterData</a> (const AzPhysics::CollisionLayer &amp;layer, const AzPhysics::CollisionGroup &amp;group)=0</td></tr>
 <tr class="separator:a74fccb2ceff67f38e8dc77bf16a4621d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a550ad6fd868177fabf997f348e48c903"><td class="memItemLeft" align="right" valign="top">virtual physx::PxCooking *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_system_requests.html#a550ad6fd868177fabf997f348e48c903">GetCooking</a> ()=0</td></tr>
@@ -221,6 +223,57 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
+<a id="a12539bcdc21fa739bd588f6c18e729cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12539bcdc21fa739bd588f6c18e729cd">&#9670;&nbsp;</a></span>CreateHeightField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual physx::PxHeightField* PhysX::SystemRequests::CreateHeightField </td>
+          <td>(</td>
+          <td class="paramtype">const physx::PxHeightFieldSample *&#160;</td>
+          <td class="paramname"><em>samples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::u32&#160;</td>
+          <td class="paramname"><em>numRows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::u32&#160;</td>
+          <td class="paramname"><em>numColumns</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a new heightfield. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">samples</td><td>Pointer to beginning of heightfield sample data. </td></tr>
+    <tr><td class="paramname">numRows</td><td>Number of rows in the heightfield. </td></tr>
+    <tr><td class="paramname">numColumns</td><td>Number of columns in the heightfield. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the created heightfield. </dd></dl>
+
+</div>
+</div>
 <a id="a89e8603f87bfdadc2e1c031f9f2aef11"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89e8603f87bfdadc2e1c031f9f2aef11">&#9670;&nbsp;</a></span>CreateTriangleMeshFromCooked()</h2>
 
@@ -297,7 +350,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:57:22 for Open 3D Engine PhysX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:16:22 for Open 3D Engine PhysX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

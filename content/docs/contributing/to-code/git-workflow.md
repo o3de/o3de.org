@@ -6,7 +6,7 @@ toc: true
 weight: 200
 ---
 
-Looking to submit new or changed code to O3DE? Exciting! Follow the guidance below to submit your first PR.
+Looking to submit new or changed code to **Open 3D Engine (O3DE)**? Exciting! Follow the guidance below to submit your first PR.
 
 ### GitHub Code Contribution Workflow
 
@@ -107,10 +107,9 @@ We require DCO signing on all code commits. This requires that you have both you
 
 2. (Optional): Test your branch with Jenkins.
 
-    <!-- Need specific locations here! -->
     The source for the code build pipeline and the required infrastructure is stored in the O3DE repo. Contributors can utilize this to spin up their own build/test pipeline or they can test locally.
 
-    The `Jenkinsfile` (AutomatedReview/Jenkinsfile) is the source for the AR/Jenkins Pipeline used by O3DE.
+    The `Jenkinsfile` (AutomatedReview/Jenkinsfile) is the source for the Automated Review (AR)/Jenkins Pipeline used by O3DE. Refer to [Simulate an automated review run](/docs/user-guide/build/configure-and-build/#simulate-an-automated-review-run) in the user guide for more information on how to run a test locally.
 
     The scripts to install all the dependencies on the build nodes and other infrastructure setup scripts are also stored in the repo for contributors and customers to use.
 

@@ -6,7 +6,7 @@ weight: 200
 toc: true
 ---
 
-Use the `o3de` Python script to configure your O3DE environment and its objects, including engines, projects, and Gems, from a command line interface (CLI). The script aggregates all of the functions from lower-level scripts in Open 3D Engine (O3DE), so you can access them from a single point. Find the script in your engine directory at `/scripts/o3de.py`.
+Use the `o3de` Python script to configure your O3DE environment and its objects, including engines, projects, and Gems, from a command line interface (CLI). The script aggregates all of the functions from lower-level scripts in **Open 3D Engine (O3DE)**, so you can access them from a single point. Find the script in your engine directory at `/scripts/o3de.py`.
 
 You can use the `o3de` Python script for the following tasks:
 
@@ -14,7 +14,7 @@ You can use the `o3de` Python script for the following tasks:
 - Creating Gems
 - Creating templates
 - [Enabling and disabling Gems for your project](add-remove-gems/#using-the-command-line-interface-cli)
-- [Registering the engine](/docs/welcome-guide/setup/setup-from-github#register-the-engine)
+- Registering the engine
 - Registering projects and Gems
   
 
@@ -22,8 +22,7 @@ You can use the `o3de` Python script for the following tasks:
 
 ## Prerequisites
 
-To use the `o3de` Python script, you must set up the Python runtime, which you download when you set up the engine. For instructions on downloading the runtime, refer to the [Register the engine](/docs/welcome-guide/setup/setup-from-github/#register-the-engine) section of the Setting up O3DE from GitHub page.
-
+To use the `o3de` Python script, you must set up the Python runtime, which you download when you set up the engine. For instructions on downloading the runtime, refer to the **Register the engine** section of the Setting up O3DE from GitHub topic for [Windows](/docs/welcome-guide/setup/setup-from-github/building-windows/#register-the-engine) or [Linux](/docs/welcome-guide/setup/setup-from-github/building-linux/#register-the-engine).
 
 <!-------------------------------------------------------------->
 

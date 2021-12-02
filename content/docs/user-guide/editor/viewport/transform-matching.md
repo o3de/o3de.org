@@ -32,9 +32,9 @@ You can use the ditto feature for a group of entities. This makes it easier for 
 
 ## Ditto a Group Selection to Local Space 
 
-You can ditto a group of entities to local space so that you can modify entities in local space in relation to another entity.
+You can ditto a group of entities using individual influence (**Alt**) so that you can modify entities in their own local space in relation to another entity.
 
-**To ditto a group selection to local space**
+**To ditto a group selection to individual influence**
 
 1. In the viewport, select a group of entities.
 

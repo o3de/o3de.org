@@ -49,12 +49,12 @@ To launch Project Manager, do the following:
 
 1. Open a file browser or command line window on your computer and navigate to your O3DE install directory.
 
-1. Locate and launch the Project Manager application, `o3de.exe`, from `<INSTALL_DIRECTORY>/bin/<PLATFORM>/<BUILD_CONFIGURATION>`.
+1. Locate and launch the Project Manager application, `o3de.exe`, from `<INSTALL_DIRECTORY>/bin/<PLATFORM>/<BUILD_CONFIGURATION>/Default`.
 
 Example:
 
 ```cmd
-bin\Windows\profile\o3de.exe
+bin\Windows\profile\Default\o3de.exe
 ```
 
 {{< important >}}
@@ -109,7 +109,7 @@ The project context menu contains the following actions:
 The **Engine** tab contains settings from the engine manifest and the O3DE manifest. The default folder locations are editable on this screen.
 
 {{< note >}}
-The `.o3de` directory in your user folder is the default location for all of the default folders. If you have limited drive space in your user folder, consider changing some of these default folder locations–particularly the "3rd Party Software Folder," which will contain several GB of downloaded packages after creating your first project.
+The `.o3de` directory in your user folder is the default location for all of the default folders. If you have limited drive space in your user folder, consider changing some of these default folder locations&mdash;particularly the "3rd Party Software Folder," which will contain several GB of downloaded packages after creating your first project.
 {{< /note >}}
 
 ![Engine tab with default values](/images/user-guide/project-config/project-manager/engine-tab.png)

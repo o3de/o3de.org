@@ -56,7 +56,7 @@ $(function() {
 
 <p><code>#include &lt;ModularViewportCameraController.h&gt;</code></p>
 
-<p>Inherits MultiViewportControllerInstanceInterface&lt; ModularViewportCameraController &gt;, Handler, and Handler.</p>
+<p>Inherits MultiViewportControllerInstanceInterface&lt; ModularViewportCameraController &gt;, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -69,12 +69,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleInputChannelEve
 <tr class="memitem:afaf2bdbb03244f79b07d1f0a3aebc0bc"><td class="memItemLeft" align="right" valign="top"><a id="afaf2bdbb03244f79b07d1f0a3aebc0bc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateViewport</b> (const AzFramework::ViewportControllerUpdateEvent &amp;event) override</td></tr>
 <tr class="separator:afaf2bdbb03244f79b07d1f0a3aebc0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a710c8eb90970d56d5963ac94fa386092"><td class="memItemLeft" align="right" valign="top"><a id="a710c8eb90970d56d5963ac94fa386092"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InterpolateToTransform</b> (const AZ::Transform &amp;worldFromLocal, float lookAtDistance) override</td></tr>
-<tr class="separator:a710c8eb90970d56d5963ac94fa386092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0abac5ae57e5f217f2c39441ce536a40"><td class="memItemLeft" align="right" valign="top"><a id="a0abac5ae57e5f217f2c39441ce536a40"></a>
-AZStd::optional&lt; AZ::Vector3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LookAtAfterInterpolation</b> () const override</td></tr>
-<tr class="separator:a0abac5ae57e5f217f2c39441ce536a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a549c8ba41fb35dd179c23443807a0d04"><td class="memItemLeft" align="right" valign="top"><a id="a549c8ba41fb35dd179c23443807a0d04"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>InterpolateToTransform</b> (const AZ::Transform &amp;worldFromLocal) override</td></tr>
+<tr class="separator:a549c8ba41fb35dd179c23443807a0d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa92631c7a62c3d37e6e6f384c69c0e2d"><td class="memItemLeft" align="right" valign="top"><a id="aa92631c7a62c3d37e6e6f384c69c0e2d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInterpolating</b> () const override</td></tr>
+<tr class="separator:aa92631c7a62c3d37e6e6f384c69c0e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3097908e194a6e6db30de101dea3e5d7"><td class="memItemLeft" align="right" valign="top"><a id="a3097908e194a6e6db30de101dea3e5d7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartTrackingTransform</b> (const AZ::Transform &amp;worldFromLocal) override</td></tr>
+<tr class="separator:a3097908e194a6e6db30de101dea3e5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8e9ef5c2ef8cacf32827433f4599a7"><td class="memItemLeft" align="right" valign="top"><a id="a2d8e9ef5c2ef8cacf32827433f4599a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StopTrackingTransform</b> () override</td></tr>
+<tr class="separator:a2d8e9ef5c2ef8cacf32827433f4599a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a873db61dfb931ff69ebc24dbb161c085"><td class="memItemLeft" align="right" valign="top"><a id="a873db61dfb931ff69ebc24dbb161c085"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTrackingTransform</b> () const override</td></tr>
+<tr class="separator:a873db61dfb931ff69ebc24dbb161c085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A customizable camera controller that can be configured to run a varying set of CameraInput instances. The controller can also be animated from its current transform to a new translation and orientation. </p>
@@ -84,7 +93,7 @@ AZStd::optional&lt; AZ::Vector3 &gt;&#160;</td><td class="memItemRight" valign="
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:50 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:53 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

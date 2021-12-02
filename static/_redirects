@@ -5,3 +5,6 @@
 /docs/welcome-guide/get-started/project-config/*    /docs/welcome-guide/create/:splat
 /docs/welcome-guide/get-started/create-intro        /docs/welcome-guide/tours/create-intro
 /docs/welcome-guide/get-started/editor-tour         /docs/welcome-guide/tours/editor-tour
+/docs/user-guide/engine/*                           /docs/user-guide/programming/:splat
+/docs/user-guide/components/development/*           /docs/user-guide/programming/components/:splat
+/docs/user-guide/gems/development/*                 /docs/user-guide/programming/gems/:splat

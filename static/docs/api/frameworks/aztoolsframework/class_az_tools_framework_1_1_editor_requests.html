@@ -96,14 +96,6 @@ virtual QDockWidget *&#160;</td><td class="memItemRight" valign="bottom"><a clas
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_requests.html#a46985f6609f3ed7ce6b90ce3927a5a7c">BrowseForAssets</a> (<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_selection_model.html">AssetBrowser::AssetSelectionModel</a> &amp;)=0</td></tr>
 <tr class="memdesc:a46985f6609f3ed7ce6b90ce3927a5a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawn asset browser for the appropriate asset types. <br /></td></tr>
 <tr class="separator:a46985f6609f3ed7ce6b90ce3927a5a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c3b286baa9aa209524c419122a6e973"><td class="memItemLeft" align="right" valign="top"><a id="a5c3b286baa9aa209524c419122a6e973"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_requests.html#a5c3b286baa9aa209524c419122a6e973">HandleObjectModeSelection</a> (const AZ::Vector2 &amp;, int, bool &amp;)</td></tr>
-<tr class="memdesc:a5c3b286baa9aa209524c419122a6e973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow interception of selection / left-mouse clicks in ObjectMode, for customizing selection behavior. <br /></td></tr>
-<tr class="separator:a5c3b286baa9aa209524c419122a6e973"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c3633ae6e5619b990f956b88bb938fa"><td class="memItemLeft" align="right" valign="top"><a id="a7c3633ae6e5619b990f956b88bb938fa"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_requests.html#a7c3633ae6e5619b990f956b88bb938fa">UpdateObjectModeCursor</a> (AZ::u32 &amp;, AZStd::string &amp;)</td></tr>
-<tr class="memdesc:a7c3633ae6e5619b990f956b88bb938fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow interception of cursor, for customizing selection behavior. <br /></td></tr>
-<tr class="separator:a7c3633ae6e5619b990f956b88bb938fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1271cbe6808c47db32c50bead167ecc9"><td class="memItemLeft" align="right" valign="top"><a id="a1271cbe6808c47db32c50bead167ecc9"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_requests.html#a1271cbe6808c47db32c50bead167ecc9">CreateEditorRepresentation</a> (AZ::Entity *)</td></tr>
 <tr class="memdesc:a1271cbe6808c47db32c50bead167ecc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates editor-side representation of an underlying entity. <br /></td></tr>
@@ -184,6 +176,8 @@ virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a clas
 <tr class="separator:ac728b6ece9f7bd685bc217b1d400a25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6903045b4b5353be46a0e9ce5fac01e8"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_requests.html#a6903045b4b5353be46a0e9ce5fac01e8">GetComponentEditorIcon</a> (const AZ::Uuid &amp;, AZ::Component *)</td></tr>
 <tr class="separator:a6903045b4b5353be46a0e9ce5fac01e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69bfe7959fc4253298b945aea137022"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_requests.html#ab69bfe7959fc4253298b945aea137022">GetComponentTypeEditorIcon</a> (const AZ::Uuid &amp;)</td></tr>
+<tr class="separator:ab69bfe7959fc4253298b945aea137022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad93c5ef6896ca1ab1b14b0bec577694d"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_requests.html#ad93c5ef6896ca1ab1b14b0bec577694d">GetComponentIconPath</a> (const AZ::Uuid &amp;, AZ::Crc32, AZ::Component *)</td></tr>
 <tr class="separator:ad93c5ef6896ca1ab1b14b0bec577694d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a541571b3a2d8caf94c0dc61b908065ae"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_requests.html#a541571b3a2d8caf94c0dc61b908065ae">CalculateAgentNavigationRadius</a> (const char *)</td></tr>
@@ -410,6 +404,33 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
+<a id="ab69bfe7959fc4253298b945aea137022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab69bfe7959fc4253298b945aea137022">&#9670;&nbsp;</a></span>GetComponentTypeEditorIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::string AzToolsFramework::EditorRequests::GetComponentTypeEditorIcon </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Uuid &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return path to icon for component type. Path will be empty if component type should have no icon. </p>
+
+</div>
+</div>
 <a id="aaeb2716a8a8588f872ff4ff617fbf1de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaeb2716a8a8588f872ff4ff617fbf1de">&#9670;&nbsp;</a></span>GetDefaultAgentNavigationTypeName()</h2>
 
@@ -576,7 +597,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:03 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:10 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

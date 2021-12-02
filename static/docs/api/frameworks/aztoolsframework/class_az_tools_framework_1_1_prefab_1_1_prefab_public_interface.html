@@ -90,8 +90,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa0ba70d009f5b243fdb692825c2c67e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa578241e92eeea6629986c8724a8b8a4"><td class="memItemLeft" align="right" valign="top">virtual PrefabOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#aa578241e92eeea6629986c8724a8b8a4">DeleteEntitiesAndAllDescendantsInInstance</a> (const EntityIdList &amp;entityIds)=0</td></tr>
 <tr class="separator:aa578241e92eeea6629986c8724a8b8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a75b291ecf3aff23af04d7488ad7c11"><td class="memItemLeft" align="right" valign="top">virtual PrefabOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a4a75b291ecf3aff23af04d7488ad7c11">DuplicateEntitiesInInstance</a> (const EntityIdList &amp;entityIds)=0</td></tr>
-<tr class="separator:a4a75b291ecf3aff23af04d7488ad7c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5c22d0cbd15c86a97e523a616fad2d"><td class="memItemLeft" align="right" valign="top">virtual DuplicatePrefabResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a4c5c22d0cbd15c86a97e523a616fad2d">DuplicateEntitiesInInstance</a> (const EntityIdList &amp;entityIds)=0</td></tr>
+<tr class="separator:a4c5c22d0cbd15c86a97e523a616fad2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ed4214e4db244b3bfc32055692d483b"><td class="memItemLeft" align="right" valign="top">virtual PrefabOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a1ed4214e4db244b3bfc32055692d483b">DetachPrefab</a> (const AZ::EntityId &amp;containerEntityId)=0</td></tr>
 <tr class="separator:a1ed4214e4db244b3bfc32055692d483b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -330,7 +330,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>If the entity id is a container entity id, detaches the prefab instance corresponding to it. This includes converting the container entity into a regular entity and putting it under the parent prefab, removing the link between this instance and the parent, removing links between this instance and it's nested instances, adding entities directly owned by this instance under the parent instance. Bails if the entity is not a container entity or belongs to the level prefab instance. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>If the entity id is a container entity id, detaches the prefab instance corresponding to it. This includes converting the container entity into a regular entity and putting it under the parent prefab, removing the link between this instance and the parent, removing links between this instance and its nested instances, and adding entities directly owned by this instance under the parent instance. Bails if the entity is not a container entity or belongs to the level prefab instance. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">containerEntityId</td><td>The container entity id of the instance to detach. </td></tr>
   </table>
@@ -342,8 +342,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a75b291ecf3aff23af04d7488ad7c11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a75b291ecf3aff23af04d7488ad7c11">&#9670;&nbsp;</a></span>DuplicateEntitiesInInstance()</h2>
+<a id="a4c5c22d0cbd15c86a97e523a616fad2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c5c22d0cbd15c86a97e523a616fad2d">&#9670;&nbsp;</a></span>DuplicateEntitiesInInstance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,7 +352,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual PrefabOperationResult AzToolsFramework::Prefab::PrefabPublicInterface::DuplicateEntitiesInInstance </td>
+          <td class="memname">virtual DuplicatePrefabResult AzToolsFramework::Prefab::PrefabPublicInterface::DuplicateEntitiesInInstance </td>
           <td>(</td>
           <td class="paramtype">const EntityIdList &amp;&#160;</td>
           <td class="paramname"><em>entityIds</em></td><td>)</td>
@@ -371,9 +371,9 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An outcome object; on failure, it comes with an error message detailing the cause of the error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An outcome object with a list of ids of target entities' duplicates if duplication succeeded; on failure, it comes with an error message detailing the cause of the error. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a7a2bdd6997d366f08143a488a48146f9">AzToolsFramework::Prefab::PrefabPublicHandler</a>.</p>
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a23361b138f4ddc0bd8ccf1fe2704b273">AzToolsFramework::Prefab::PrefabPublicHandler</a>.</p>
 
 </div>
 </div>
@@ -721,7 +721,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:07 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:12 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

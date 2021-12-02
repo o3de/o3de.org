@@ -67,14 +67,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnActivate</b> ([[may
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDeactivate</b> ([[maybe_unused]] Multiplayer::EntityIsMigrating entityIsMigrating) override</td></tr>
 <tr class="separator:a2564593e2fa569e5ff3169c480f2789e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7c74858fc271a78ceac59999480a463"><td class="memItemLeft" align="right" valign="top"><a id="af7c74858fc271a78ceac59999480a463"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleSendClientInput</b> (AzNetworking::IConnection *invokingConnection, const Multiplayer::NetworkInputArray &amp;inputArray, const AZ::HashValue32 &amp;stateHash) override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleSendClientInput</b> (AzNetworking::IConnection *invokingConnection, const <a class="el" href="class_multiplayer_1_1_network_input_array.html">Multiplayer::NetworkInputArray</a> &amp;inputArray, const AZ::HashValue32 &amp;stateHash) override</td></tr>
 <tr class="separator:af7c74858fc271a78ceac59999480a463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcc795bff18881d5b1a27215041a35ad"><td class="memItemLeft" align="right" valign="top"><a id="afcc795bff18881d5b1a27215041a35ad"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleSendMigrateClientInput</b> (AzNetworking::IConnection *invokingConnection, const Multiplayer::NetworkInputMigrationVector &amp;inputArray) override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleSendMigrateClientInput</b> (AzNetworking::IConnection *invokingConnection, const <a class="el" href="class_multiplayer_1_1_network_input_migration_vector.html">Multiplayer::NetworkInputMigrationVector</a> &amp;inputArray) override</td></tr>
 <tr class="separator:afcc795bff18881d5b1a27215041a35ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59d32f2a82e38c596ae923d058f52e5d"><td class="memItemLeft" align="right" valign="top"><a id="a59d32f2a82e38c596ae923d058f52e5d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleSendClientInputCorrection</b> (AzNetworking::IConnection *invokingConnection, const Multiplayer::ClientInputId &amp;inputId, const AzNetworking::PacketEncodingBuffer &amp;correction) override</td></tr>
 <tr class="separator:a59d32f2a82e38c596ae923d058f52e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedac1ff3c7cbd87fce5e5caba3ced4f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_local_prediction_player_input_component_controller.html#aedac1ff3c7cbd87fce5e5caba3ced4f6">ForceEnableAutonomousUpdate</a> ()</td></tr>
+<tr class="separator:aedac1ff3c7cbd87fce5e5caba3ced4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afccab922d1ceaf1094b2ce233da97d0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_local_prediction_player_input_component_controller.html#afccab922d1ceaf1094b2ce233da97d0d">ForceDisableAutonomousUpdate</a> ()</td></tr>
+<tr class="separator:afccab922d1ceaf1094b2ce233da97d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a3ff9c94aa14ec6a6a19c85318d8265"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_local_prediction_player_input_component_controller.html#a4a3ff9c94aa14ec6a6a19c85318d8265">IsMigrating</a> () const</td></tr>
 <tr class="separator:a4a3ff9c94aa14ec6a6a19c85318d8265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38c4751b559ad7c2065d5879879cafa6"><td class="memItemLeft" align="right" valign="top"><a id="a38c4751b559ad7c2065d5879879cafa6"></a>
@@ -85,6 +89,42 @@ HostFrameId&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputFrameI
 <tr class="separator:ab3fc4af093b10d6138df30ac3b393f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="afccab922d1ceaf1094b2ce233da97d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afccab922d1ceaf1094b2ce233da97d0d">&#9670;&nbsp;</a></span>ForceDisableAutonomousUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiplayer::LocalPredictionPlayerInputComponentController::ForceDisableAutonomousUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Forcibly disables ProcessInput from executing on the entity. Note that this function is quite dangerous and should normally never be used </p>
+
+</div>
+</div>
+<a id="aedac1ff3c7cbd87fce5e5caba3ced4f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedac1ff3c7cbd87fce5e5caba3ced4f6">&#9670;&nbsp;</a></span>ForceEnableAutonomousUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiplayer::LocalPredictionPlayerInputComponentController::ForceEnableAutonomousUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Forcibly enables ProcessInput to execute on the entity. Note that this function is quite dangerous and should normally never be used </p>
+
+</div>
+</div>
 <a id="a4a3ff9c94aa14ec6a6a19c85318d8265"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a3ff9c94aa14ec6a6a19c85318d8265">&#9670;&nbsp;</a></span>IsMigrating()</h2>
 
@@ -109,7 +149,7 @@ HostFrameId&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputFrameI
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:57:19 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:16:20 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

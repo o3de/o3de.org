@@ -11,7 +11,7 @@ In O3DE Editor, the console window shows a running list of all editor commands, 
 + [Exporting All Console Commands and Variables](#exporting-console-variables-cvars)
 + [Configuring Console Variables](#configuring-console-variables-cvars)
 + [Console in Depth](/docs/user-guide/editor/console-cvars-commands/)
-+ [Console Variable Tutorial](/docs/user-guide/engine/cvars/)
++ [Console Variable Tutorial](/docs/user-guide/programming/cvars/)
 
 ## Viewing the Console Window 
 

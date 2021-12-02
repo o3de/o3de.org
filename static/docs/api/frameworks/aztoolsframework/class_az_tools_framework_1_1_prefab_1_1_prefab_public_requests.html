@@ -73,6 +73,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a94a49ee4d039b0e932c491c6002a00c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70a6c894f67d93a01faadd93f6b8f0af"><td class="memItemLeft" align="right" valign="top">virtual PrefabOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#a70a6c894f67d93a01faadd93f6b8f0af">DeleteEntitiesAndAllDescendantsInInstance</a> (const EntityIdList &amp;entityIds)=0</td></tr>
 <tr class="separator:a70a6c894f67d93a01faadd93f6b8f0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a007cce70443487b3866f199b12ef5"><td class="memItemLeft" align="right" valign="top">virtual PrefabOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#a04a007cce70443487b3866f199b12ef5">DetachPrefab</a> (const AZ::EntityId &amp;containerEntityId)=0</td></tr>
+<tr class="separator:a04a007cce70443487b3866f199b12ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee6c9f073462e5c5cd2a01f365ae8ae"><td class="memItemLeft" align="right" valign="top">virtual DuplicatePrefabResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#aaee6c9f073462e5c5cd2a01f365ae8ae">DuplicateEntitiesInInstance</a> (const EntityIdList &amp;entityIds)=0</td></tr>
+<tr class="separator:aaee6c9f073462e5c5cd2a01f365ae8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1bc6d5265243d4406b1545f3cae5054"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#aa1bc6d5265243d4406b1545f3cae5054">GetOwningInstancePrefabPath</a> (AZ::EntityId entityId) const =0</td></tr>
+<tr class="separator:aa1bc6d5265243d4406b1545f3cae5054"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -147,6 +153,87 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
+<a id="a04a007cce70443487b3866f199b12ef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04a007cce70443487b3866f199b12ef5">&#9670;&nbsp;</a></span>DetachPrefab()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual PrefabOperationResult AzToolsFramework::Prefab::PrefabPublicRequests::DetachPrefab </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::EntityId &amp;&#160;</td>
+          <td class="paramname"><em>containerEntityId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>If the entity id is a container entity id, detaches the prefab instance corresponding to it. This includes converting the container entity into a regular entity and putting it under the parent prefab, removing the link between this instance and the parent, removing links between this instance and its nested instances, and adding entities directly owned by this instance under the parent instance. Bails if the entity is not a container entity or belongs to the level prefab instance. Return an outcome object; on failure, it comes with an error message detailing the cause of the error. </p>
+
+</div>
+</div>
+<a id="aaee6c9f073462e5c5cd2a01f365ae8ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee6c9f073462e5c5cd2a01f365ae8ae">&#9670;&nbsp;</a></span>DuplicateEntitiesInInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DuplicatePrefabResult AzToolsFramework::Prefab::PrefabPublicRequests::DuplicateEntitiesInInstance </td>
+          <td>(</td>
+          <td class="paramtype">const EntityIdList &amp;&#160;</td>
+          <td class="paramname"><em>entityIds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Duplicates all entities in the owning instance. Bails if the entities don't all belong to the same instance. Return an outcome object with a list of ids of given entities' duplicates if duplication succeeded; on failure, it comes with an error message detailing the cause of the error. </p>
+
+</div>
+</div>
+<a id="aa1bc6d5265243d4406b1545f3cae5054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1bc6d5265243d4406b1545f3cae5054">&#9670;&nbsp;</a></span>GetOwningInstancePrefabPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::string AzToolsFramework::Prefab::PrefabPublicRequests::GetOwningInstancePrefabPath </td>
+          <td>(</td>
+          <td class="paramtype">AZ::EntityId&#160;</td>
+          <td class="paramname"><em>entityId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the file path to the prefab file for the prefab instance owning the entity provided. Returns the path to the prefab, or an empty path if the entity is owned by the level. </p>
+
+</div>
+</div>
 <a id="a94a49ee4d039b0e932c491c6002a00c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94a49ee4d039b0e932c491c6002a00c6">&#9670;&nbsp;</a></span>InstantiatePrefab()</h2>
 
@@ -196,7 +283,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:07 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:12 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,9 +22,9 @@ To align selected nodes in a Script Canvas graph, you can use the context menu, 
 
     The following animated images show the first two methods.
 
-    ![Aligning nodes to the top in the Script Canvas editor using icon.](/images/user-guide/scripting/script-canvas/nodes-aligning-top-using-icon.gif)
+    ![Aligning nodes to the top in the Script Canvas Editor using icon.](/images/user-guide/scripting/script-canvas/nodes-aligning-top-using-icon.gif)
 
-    ![Aligning nodes to the top in the Script Canvas editor using keyboard.](/images/user-guide/scripting/script-canvas/nodes-aligning-top-using-keyboard.gif)
+    ![Aligning nodes to the top in the Script Canvas Editor using keyboard.](/images/user-guide/scripting/script-canvas/nodes-aligning-top-using-keyboard.gif)
 
 **To align all nodes in a selection to the bottommost node**
 + Use one of the following methods:
@@ -34,9 +34,9 @@ To align selected nodes in a Script Canvas graph, you can use the context menu, 
 
     The following animated images show the first two methods.
 
-    ![Aligning nodes to the bottom in the Script Canvas editor using icon.](/images/user-guide/scripting/script-canvas/nodes-aligning-bottom-using-icon.gif)
+    ![Aligning nodes to the bottom in the Script Canvas Editor using icon.](/images/user-guide/scripting/script-canvas/nodes-aligning-bottom-using-icon.gif)
 
-    ![Aligning nodes to the bottom in the Script Canvas editor using keyboard.](/images/user-guide/scripting/script-canvas/nodes-aligning-bottom-using-keyboard.gif)
+    ![Aligning nodes to the bottom in the Script Canvas Editor using keyboard.](/images/user-guide/scripting/script-canvas/nodes-aligning-bottom-using-keyboard.gif)
 
 **To align all nodes in a selection to the leftmost node**
 + Use one of the following methods:
@@ -46,9 +46,9 @@ To align selected nodes in a Script Canvas graph, you can use the context menu, 
 
     The following animated images show the first two methods.
 
-    ![Aligning nodes to the left in the Script Canvas editor using icon.](/images/user-guide/scripting/script-canvas/nodes-aligning-left-using-icon.gif)
+    ![Aligning nodes to the left in the Script Canvas Editor using icon.](/images/user-guide/scripting/script-canvas/nodes-aligning-left-using-icon.gif)
 
-    ![Aligning nodes to the left in the Script Canvas editor using keyboard.](/images/user-guide/scripting/script-canvas/nodes-aligning-left-using-keyboard.gif)
+    ![Aligning nodes to the left in the Script Canvas Editor using keyboard.](/images/user-guide/scripting/script-canvas/nodes-aligning-left-using-keyboard.gif)
 
 **To align all nodes in a selection to the rightmost node**
 + Use one of the following methods:
@@ -58,6 +58,6 @@ To align selected nodes in a Script Canvas graph, you can use the context menu, 
 
     The following animated images show the first two methods.
 
-    ![Aligning nodes to the right in the Script Canvas editor using icon.](/images/user-guide/scripting/script-canvas/nodes-aligning-right-using-icon.gif)
+    ![Aligning nodes to the right in the Script Canvas Editor using icon.](/images/user-guide/scripting/script-canvas/nodes-aligning-right-using-icon.gif)
 
-    ![Aligning nodes to the right in the Script Canvas editor using keyboard.](/images/user-guide/scripting/script-canvas/nodes-aligning-right-using-keyboard.gif)
+    ![Aligning nodes to the right in the Script Canvas Editor using keyboard.](/images/user-guide/scripting/script-canvas/nodes-aligning-right-using-keyboard.gif)

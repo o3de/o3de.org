@@ -148,18 +148,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyLocalChanges</b
 <tr class="memitem:ab314cdca97694a85edaa49e287b2cef0"><td class="memItemLeft" align="right" valign="top"><a id="ab314cdca97694a85edaa49e287b2cef0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifySyncRewindState</b> ()</td></tr>
 <tr class="separator:ab314cdca97694a85edaa49e287b2cef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25de44ed95bf1ac7a7dbe70bf4031c2b"><td class="memItemLeft" align="right" valign="top"><a id="a25de44ed95bf1ac7a7dbe70bf4031c2b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyMigrationStart</b> (ClientInputId migratedInputId)</td></tr>
-<tr class="separator:a25de44ed95bf1ac7a7dbe70bf4031c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb6581774f15c7f435c39ea73f10994f"><td class="memItemLeft" align="right" valign="top"><a id="acb6581774f15c7f435c39ea73f10994f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyMigrationEnd</b> ()</td></tr>
-<tr class="separator:acb6581774f15c7f435c39ea73f10994f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe18d9b486b625a7d6231a10842ddaec"><td class="memItemLeft" align="right" valign="top"><a id="afe18d9b486b625a7d6231a10842ddaec"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyServerMigration</b> (HostId hostId, AzNetworking::ConnectionId connectionId)</td></tr>
-<tr class="separator:afe18d9b486b625a7d6231a10842ddaec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73ca347d8ab6c69940559e302b064059"><td class="memItemLeft" align="right" valign="top"><a id="a73ca347d8ab6c69940559e302b064059"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyPreRender</b> (float deltaTime, float blendFactor)</td></tr>
-<tr class="separator:a73ca347d8ab6c69940559e302b064059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6842f2774b71e2354b12d4d461acb2d"><td class="memItemLeft" align="right" valign="top"><a id="aa6842f2774b71e2354b12d4d461acb2d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyServerMigration</b> (const HostId &amp;remoteHostId)</td></tr>
+<tr class="separator:aa6842f2774b71e2354b12d4d461acb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfb2b4707f2f1ef3956ad47172adb73d"><td class="memItemLeft" align="right" valign="top"><a id="acfb2b4707f2f1ef3956ad47172adb73d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyPreRender</b> (float deltaTime)</td></tr>
+<tr class="separator:acfb2b4707f2f1ef3956ad47172adb73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e0612464fbbe03089925114ce357c8"><td class="memItemLeft" align="right" valign="top"><a id="a52e0612464fbbe03089925114ce357c8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyCorrection</b> ()</td></tr>
 <tr class="separator:a52e0612464fbbe03089925114ce357c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,12 +166,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntityDirtiedEvent
 <tr class="memitem:a944521bf693e8c180fcba493ba6c5bc4"><td class="memItemLeft" align="right" valign="top"><a id="a944521bf693e8c180fcba493ba6c5bc4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntitySyncRewindEventHandler</b> (EntitySyncRewindEvent::Handler &amp;eventHandler)</td></tr>
 <tr class="separator:a944521bf693e8c180fcba493ba6c5bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50cff0fe5a3b44f81199a8a000ac899d"><td class="memItemLeft" align="right" valign="top"><a id="a50cff0fe5a3b44f81199a8a000ac899d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntityMigrationStartEventHandler</b> (EntityMigrationStartEvent::Handler &amp;eventHandler)</td></tr>
-<tr class="separator:a50cff0fe5a3b44f81199a8a000ac899d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add4bb2e9f8179227003daca15e81c1db"><td class="memItemLeft" align="right" valign="top"><a id="add4bb2e9f8179227003daca15e81c1db"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntityMigrationEndEventHandler</b> (EntityMigrationEndEvent::Handler &amp;eventHandler)</td></tr>
-<tr class="separator:add4bb2e9f8179227003daca15e81c1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f8f3bf9fb6561fc4ff6f2e92496eedf"><td class="memItemLeft" align="right" valign="top"><a id="a5f8f3bf9fb6561fc4ff6f2e92496eedf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntityServerMigrationEventHandler</b> (EntityServerMigrationEvent::Handler &amp;eventHandler)</td></tr>
 <tr class="separator:a5f8f3bf9fb6561fc4ff6f2e92496eedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,6 +220,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NetworkEntityManager
 <tr class="memitem:a98e41c77cd475626d46260c9a75dc604"><td class="memItemLeft" align="right" valign="top"><a id="a98e41c77cd475626d46260c9a75dc604"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>EntityReplicationManager</b></td></tr>
 <tr class="separator:a98e41c77cd475626d46260c9a75dc604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c36646558ae69e70e637f8ae60497ac"><td class="memItemLeft" align="right" valign="top"><a id="a7c36646558ae69e70e637f8ae60497ac"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>HierarchyTests</b></td></tr>
+<tr class="separator:a7c36646558ae69e70e637f8ae60497ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a855204c66661f0d7e615ce063c032cd4"><td class="memItemLeft" align="right" valign="top"><a id="a855204c66661f0d7e615ce063c032cd4"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>HierarchyBenchmarkBase</b></td></tr>
+<tr class="separator:a855204c66661f0d7e615ce063c032cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Component that provides net-binding to a networked entity. </p>
@@ -377,7 +371,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntityReplicationMan
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:57:19 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:16:20 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -71,10 +71,6 @@ Public Member Functions</h2></td></tr>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_system_1_1_asset_system_request.html#a24506879a2707cf7d7b53c7346e6a53a">GetAbsoluteAssetDatabaseLocation</a> (AZStd::string &amp;)</td></tr>
 <tr class="memdesc:a24506879a2707cf7d7b53c7346e6a53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the absolute path for the Asset Database Location. <br /></td></tr>
 <tr class="separator:a24506879a2707cf7d7b53c7346e6a53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7374f158c36c2139172ffc7fe35048d"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_system_1_1_asset_system_request.html#ae7374f158c36c2139172ffc7fe35048d">GetAbsoluteDevGameFolderPath</a> ()=0</td></tr>
-<tr class="separator:ae7374f158c36c2139172ffc7fe35048d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a580777b45516c3a5ecd5ab286f6bfc2d"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_system_1_1_asset_system_request.html#a580777b45516c3a5ecd5ab286f6bfc2d">GetAbsoluteDevRootFolderPath</a> ()=0</td></tr>
-<tr class="separator:a580777b45516c3a5ecd5ab286f6bfc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a882090d9d0abfbe7af57ec190fab4cba"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_system_1_1_asset_system_request.html#a882090d9d0abfbe7af57ec190fab4cba">GetRelativeProductPathFromFullSourceOrProductPath</a> (const AZStd::string &amp;fullPath, AZStd::string &amp;relativeProductPath)=0</td></tr>
 <tr class="separator:a882090d9d0abfbe7af57ec190fab4cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a346dbc93b5276669698ef25177857f85"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_system_1_1_asset_system_request.html#a346dbc93b5276669698ef25177857f85">GenerateRelativeSourcePath</a> (const AZStd::string &amp;sourcePath, AZStd::string &amp;relativePath, AZStd::string &amp;rootFilePath)=0</td></tr>
@@ -163,58 +159,6 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if a valid relative path was created, false if it wasn't </dd></dl>
-
-</div>
-</div>
-<a id="ae7374f158c36c2139172ffc7fe35048d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7374f158c36c2139172ffc7fe35048d">&#9670;&nbsp;</a></span>GetAbsoluteDevGameFolderPath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* AzToolsFramework::AssetSystem::AssetSystemRequest::GetAbsoluteDevGameFolderPath </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Retrieve the absolute folder path to the current game's source assets (the ones that go into source control) This may include the current mod path, if a mod is being edited by the editor </p>
-
-</div>
-</div>
-<a id="a580777b45516c3a5ecd5ab286f6bfc2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a580777b45516c3a5ecd5ab286f6bfc2d">&#9670;&nbsp;</a></span>GetAbsoluteDevRootFolderPath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* AzToolsFramework::AssetSystem::AssetSystemRequest::GetAbsoluteDevRootFolderPath </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Retrieve the absolute folder path to the current developer root ('dev'), which contains source artifacts and is generally checked into source control. </p>
 
 </div>
 </div>
@@ -572,7 +516,7 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:06 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:11 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

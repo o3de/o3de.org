@@ -6,7 +6,7 @@ weight: 100
 toc: true
 ---
 
-Components add functionality to entities in Open 3D Engine (O3DE). An entity can contain any number or combination of components. Some components allow only one instance per entity, and some depend on other components to function.
+Components add functionality to entities in **Open 3D Engine (O3DE)**. An entity can contain any number or combination of components. Some components allow only one instance per entity, and some depend on other components to function.
 
 Components are provided by Gems. To make a component available in **O3DE Editor**, you must add the Gem that provides the component. Though components might belong to the same type, they might not be provided by the same Gem. You can find out which Gem provides a component in the reference topic for the component.
 
@@ -66,10 +66,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Mesh](/docs/user-guide/components/reference/atom/mesh/) | Specifies a model to render. |
 | [Occlusion Culling Plane](/docs/user-guide/components/reference/atom/occlusion-culling-plane/) | Creates an occluder that when put between the camera and a mesh, can block the mesh from being rendered. |
 | [Physical Sky](/docs/user-guide/components/reference/atom/physical-sky/) | Adjusts the physical environment of the scene, such as the sky, sun, and fog. |
-| [PostFX Gradient Weight Modifier](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/) | Modifies post-processing effects' (PostFX) weight based on another entity's gradient signal. |
-| [PostFX Layer](/docs/user-guide/components/reference/atom/postfx-layer/) | Controls how PostFX are applied in a scene. |
-| [PostFX Shape Weight Modifier](/docs/user-guide/components/reference/atom/postfx-shape-weight-modifier/) | Limits PostFX to a volume of space that's defined by a **Shape** component. The PostFX's weight remains constant within the volume, and it begins to fade outside of the volume.|
-| [Radius Weight Modifier](/docs/user-guide/components/reference/atom/radius-weight-modifier/) | Modifies PostFX's weight based on the camera's distance to the center. |
+| [Post-processing Modifiers](/docs/user-guide/components/reference/atom/post-processing-modifiers/) | A collection of components that define layers, volumes, areas, and weights for post-processing effects (PostFX). |
 | [Reflection Probe](/docs/user-guide/components/reference/atom/reflection-probe/) | Creates specular reflections in the environment around a probe (capture point). |
 | [SSAO](/docs/user-guide/components/reference/atom/ssao/) | Approximates indirect lighting in a scene by using the screen space ambient occlusion technique. |
 
@@ -94,11 +91,11 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Camera](/docs/user-guide/components/reference/camera/camera/) | Allows an entity to be used as a camera. |
 | [Camera Rig](/docs/user-guide/components/reference/camera/camera-rig/) | Manages the behaviors that drive a camera entity. |
 
-### Destruction
+<!--### Destruction
 | Component | Description | 
 | - | - |
 | [Blast Family](/docs/user-guide/components/reference/destruction/blast-family/) | Enables destruction simulation using the [NVIDIA Blast library](https://developer.nvidia.com/blast). |
-| [Blast Family Mesh Data](/docs/user-guide/components/reference/destruction/blast-family-mesh-data/) | Sets the mesh and material assets for NVIDIA Blast entities. |
+| [Blast Family Mesh Data](/docs/user-guide/components/reference/destruction/blast-family-mesh-data/) | Sets the mesh and material assets for NVIDIA Blast entities. | Hiding until blast tools are fixed, and blast docs are updated.-->
 
 ### Editor
 | Component | Description | 
@@ -109,11 +106,9 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| Fly Camera Input | Allows you to control the camera using mouse and key inputs. |
-| Look At | Forces an entity to always look at a given target. |
-| Random Timed Spawner) | Deprecated. |
+| [Fly Camera Input](./gameplay/fly-camera-input/) | Allows you to control the camera using mouse and key inputs. |
+| [Look At](./gameplay/look-at/) | Forces an entity to always look at a given target. |
 | [Simple State](/docs/user-guide/components/reference/gameplay/simple-state/) | Provides a simple state machine that allows you to activate and deactivate associated entities.|
-| Spawner | Deprecated. |
 | [Tag](./gameplay/tag/) | Allows you to apply one or more labels to an entity. |
 | [Input](./gameplay/input/) | Binds raw input to events in your game. |
 
@@ -169,6 +164,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [PhysX Collider](./physx/collider/) | Allows you to specify primitive shapes or PhysX mesh assets to calculate collisions between entities. |
 | [PhysX Fixed Joint](/docs/user-guide/components/reference/physx/fixed-joint/) | Creates a dynamic fixed joint that constrains an entity to the joint with no degree of freedom in any axis. |
 | [PhysX Force Region](/docs/user-guide/components/reference/physx/force-region/) | Applies a physical force on objects that are within the specified region. |
+  [PhysX Heightfield Collider](/docs/user-guide/components/reference/physx/heightfield-collider/) | Creates a geometric collider based on the Axis-Aligned Box component. |
 | [PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/) | Creates a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.|
 | [PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/) | Simulates ragdoll physics by creating a hierarchy of rigid bodies connected by joints. |
 | [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/) | Defines the entity as a rigid object that is solid and can move and collide with other PhysX entities. |
@@ -211,8 +207,15 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| [Terrain Layer Spawner](/docs/user-guide/components/reference/terrain/layer_spawner/) | Spawns a terrain region contained within configurable bounds, and allows prioritization of overlapping terrain layers. |
-| [Terrain Height Gradient List](/docs/user-guide/components/reference/terrain/terrain_height_gradient_list.md) | Provides terrain height data from a list of gradients. |
+| [Terrain Physics Collider](./terrain/terrain-physics-collider) | Provides terrain data to a physics collider in the form of a heightfield and surface to material mapping. |
+| [Terrain Layer Spawner](./terrain/layer_spawner) | Spawns a terrain region contained within configurable bounds, and allows prioritization of overlapping terrain layers. |
+| [Terrain Height Gradient List](./terrain/height_gradient_list) | Provides terrain height data from a list of gradients. |
+| [Terrain Surface Material List](./terrain/surface-material-list) | Defines mappings between a surface type and a render material. |
+| [Terrain Surface Gradient List](./terrain/surface-gradient-list) | Defines mappings between a gradient and a surface type on a terrain layer. |
+| [Terrain World](./terrain/world) | Allows the bounds of the Terrain World and the height query resolution to be set. |
+| [Terrain World Debugger](./terrain/world-debugger) | Provides a means to display a wireframe or bounds representaion of the Terrain World. |
+| [Terrain World Renderer](./terrain/world-renderer) | Renders the terrain within the Terrain World bounds. |
+
 
 ### Test  
 

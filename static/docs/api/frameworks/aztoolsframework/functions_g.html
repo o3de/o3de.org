@@ -99,12 +99,6 @@ $(function() {
 <li>GetAbsoluteAssetDatabaseLocation()
 : <a class="el" href="class_az_tools_framework_1_1_asset_system_1_1_asset_system_request.html#a24506879a2707cf7d7b53c7346e6a53a">AzToolsFramework::AssetSystem::AssetSystemRequest</a>
 </li>
-<li>GetAbsoluteDevGameFolderPath()
-: <a class="el" href="class_az_tools_framework_1_1_asset_system_1_1_asset_system_request.html#ae7374f158c36c2139172ffc7fe35048d">AzToolsFramework::AssetSystem::AssetSystemRequest</a>
-</li>
-<li>GetAbsoluteDevRootFolderPath()
-: <a class="el" href="class_az_tools_framework_1_1_asset_system_1_1_asset_system_request.html#a580777b45516c3a5ecd5ab286f6bfc2d">AzToolsFramework::AssetSystem::AssetSystemRequest</a>
-</li>
 <li>GetActiveCameraPosition()
 : <a class="el" href="class_camera_1_1_editor_camera_requests.html#afbb8feb3f6c399a0ce4541aa876756d2">Camera::EditorCameraRequests</a>
 </li>
@@ -237,6 +231,13 @@ $(function() {
 , <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_viewport_ui.html#abbb126e703bd12a7951d4a42a66f5b53">AzToolsFramework::ComponentModeFramework::ComponentModeViewportUi</a>
 , <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_base_component_mode.html#ad3e0a238f730da12ab8afcccc5f98d9c">AzToolsFramework::ComponentModeFramework::EditorBaseComponentMode</a>
 </li>
+<li>GetComponentTypeEditorIcon()
+: <a class="el" href="class_az_tools_framework_1_1_editor_requests.html#ab69bfe7959fc4253298b945aea137022">AzToolsFramework::EditorRequests</a>
+</li>
+<li>GetComponentTypes()
+: <a class="el" href="class_az_tools_framework_1_1_component_mode_collection_interface.html#a46aa09d106f248fc15e6da90e9b878ea">AzToolsFramework::ComponentModeCollectionInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_collection.html#a390fa2980c35eea36f23cf9e4e08f57e">AzToolsFramework::ComponentModeFramework::ComponentModeCollection</a>
+</li>
 <li>GetConnectionSetting()
 : <a class="el" href="class_az_tools_framework_1_1_source_control_connection_requests.html#a243dddf0c74d8da236c854108bf4446e">AzToolsFramework::SourceControlConnectionRequests</a>
 </li>
@@ -335,6 +336,22 @@ $(function() {
 </li>
 <li>GetFileInfo()
 : <a class="el" href="class_az_tools_framework_1_1_source_control_commands.html#a5f193320d0488ba6db2491658d4c5bed">AzToolsFramework::SourceControlCommands</a>
+</li>
+<li>GetFocusedPrefabContainerEntityId()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a5a0483199f710a4671676734c38d9c8d">AzToolsFramework::Prefab::PrefabFocusHandler</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html#a860ce475548ba504fce32e4b91f95f95">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>
+</li>
+<li>GetFocusedPrefabInstance()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#aa396563871cff0a0833d12c5b52445ee">AzToolsFramework::Prefab::PrefabFocusHandler</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface.html#ad62458fb0c84d1cf8a6f02a0248d8be9">AzToolsFramework::Prefab::PrefabFocusInterface</a>
+</li>
+<li>GetFocusedPrefabTemplateId()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a69165a53c72a24519acc899fe6f943bf">AzToolsFramework::Prefab::PrefabFocusHandler</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface.html#a5f6ed2340d55923860d92faa64d06bfd">AzToolsFramework::Prefab::PrefabFocusInterface</a>
+</li>
+<li>GetFocusRoot()
+: <a class="el" href="class_az_tools_framework_1_1_focus_mode_interface.html#a76eb0d3db78a8e835738e6e9d249c9ce">AzToolsFramework::FocusModeInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_focus_mode_system_component.html#ad8c55fd52a98932add40a2540774f39a">AzToolsFramework::FocusModeSystemComponent</a>
 </li>
 <li>GetFullPath()
 : <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#a1e9ae417f11c8600bcd7e89e8cf7d204">AzToolsFramework::AssetBrowser::AssetBrowserEntry</a>
@@ -470,6 +487,7 @@ $(function() {
 <li>GetOwningInstancePrefabPath()
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a39a125207d55c584d26e87056dad2ebd">AzToolsFramework::Prefab::PrefabPublicHandler</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a75a5cf3516b4b1f3b2a8d6fa71a6a19b">AzToolsFramework::Prefab::PrefabPublicInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#aa1bc6d5265243d4406b1545f3cae5054">AzToolsFramework::Prefab::PrefabPublicRequests</a>
 </li>
 <li>GetParent()
 : <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#a70c862512fcd900843cd13f103a65aae">AzToolsFramework::AssetBrowser::AssetBrowserEntry</a>
@@ -479,6 +497,14 @@ $(function() {
 </li>
 <li>GetPlayInEditorAssetData()
 : <a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a0d3f49cbca95b2d84e691aa092953a4e">AzToolsFramework::PrefabEditorEntityOwnershipInterface</a>
+</li>
+<li>GetPrefabFocusPath()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a4803443f0e88a1b70a3080e2aa40f911">AzToolsFramework::Prefab::PrefabFocusHandler</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html#a0ddbbec4d6a877e8b28450ff37cf8d2b">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>
+</li>
+<li>GetPrefabFocusPathLength()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#aacefa00301683ccc8112b5caf708d9f2">AzToolsFramework::Prefab::PrefabFocusHandler</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html#ad24636d2300ccfdd052d521d8c059840">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>
 </li>
 <li>GetPreviewerFactory()
 : <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_previewer_requests.html#a4d2e77a0799df08bcba612bf8deca256">AzToolsFramework::AssetBrowser::PreviewerRequests</a>
@@ -585,6 +611,10 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnail_context.html#a0fbe04081dcae201d03aeeb3d3926781">AzToolsFramework::Thumbnailer::ThumbnailContext</a>
 , <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#a02e8d6baaa70b1319c31cd1bccb4f789">AzToolsFramework::Thumbnailer::ThumbnailerRequests</a>
 </li>
+<li>GetTrackedViewportCount()
+: <a class="el" href="class_az_tools_framework_1_1_viewport_editor_mode_tracker.html#a620ecc4d9e5841ae5e800c917c03fc42">AzToolsFramework::ViewportEditorModeTracker</a>
+, <a class="el" href="class_az_tools_framework_1_1_viewport_editor_mode_tracker_interface.html#a1bdd4c6f69eec90269b44aab219cee1f">AzToolsFramework::ViewportEditorModeTrackerInterface</a>
+</li>
 <li>GetTransform()
 : <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a8afa8f0ab017c8cbc0467415b6698d90">AzToolsFramework::Components::EditorComponentBase</a>
 </li>
@@ -599,6 +629,10 @@ $(function() {
 </li>
 <li>GetViewPaneWidget()
 : <a class="el" href="class_az_tools_framework_1_1_editor_requests.html#a19d8d2888f03362ddde35c6432db9bed">AzToolsFramework::EditorRequests</a>
+</li>
+<li>GetViewportEditorModes()
+: <a class="el" href="class_az_tools_framework_1_1_viewport_editor_mode_tracker.html#ac00f6023e5513cadeec592b89d5f517e">AzToolsFramework::ViewportEditorModeTracker</a>
+, <a class="el" href="class_az_tools_framework_1_1_viewport_editor_mode_tracker_interface.html#a081ee443e268b1b80a891b4b97187625">AzToolsFramework::ViewportEditorModeTrackerInterface</a>
 </li>
 <li>GetVisibilityFlag()
 : <a class="el" href="class_az_tools_framework_1_1_editor_visibility_requests.html#a170d9910bc244ed42d29836a80bde22b">AzToolsFramework::EditorVisibilityRequests</a>
@@ -631,7 +665,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:09 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:13 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

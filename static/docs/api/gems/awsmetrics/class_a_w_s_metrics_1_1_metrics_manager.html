@@ -48,6 +48,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_a_w_s_metrics_1_1_metrics_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AWSMetrics::MetricsManager Class Reference</div>  </div>
@@ -99,6 +100,11 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a2062118e490097adfe0e33a4fe4433be"><td class="memItemLeft" align="right" valign="top"><a id="a2062118e490097adfe0e33a4fe4433be"></a>
 static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>DesiredMaxWorkers</b> = 2</td></tr>
 <tr class="separator:a2062118e490097adfe0e33a4fe4433be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a189274b2dda413ee0db04de20f82c170"><td class="memItemLeft" align="right" valign="top">virtual AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_metrics_1_1_metrics_manager.html#a189274b2dda413ee0db04de20f82c170">SendMetricsToFile</a> (AZStd::shared_ptr&lt; <a class="el" href="class_a_w_s_metrics_1_1_metrics_queue.html">MetricsQueue</a> &gt; metricsQueue)</td></tr>
+<tr class="separator:a189274b2dda413ee0db04de20f82c170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Metrics manager handles direct or batch sending metrics to backend. </p>
@@ -289,6 +295,39 @@ static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>
 
 </div>
 </div>
+<a id="a189274b2dda413ee0db04de20f82c170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a189274b2dda413ee0db04de20f82c170">&#9670;&nbsp;</a></span>SendMetricsToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZ::Outcome&lt;void, AZStd::string&gt; AWSMetrics::MetricsManager::SendMetricsToFile </td>
+          <td>(</td>
+          <td class="paramtype">AZStd::shared_ptr&lt; <a class="el" href="class_a_w_s_metrics_1_1_metrics_queue.html">MetricsQueue</a> &gt;&#160;</td>
+          <td class="paramname"><em>metricsQueue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Send metrics to a local file. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">metricsQueue</td><td>metricsQueue Metrics queue that stores the metrics. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Outcome of the operation. </dd></dl>
+
+</div>
+</div>
 <a id="a0e3baf30ae6463a8e7ab463f18636536"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e3baf30ae6463a8e7ab463f18636536">&#9670;&nbsp;</a></span>SubmitMetrics()</h2>
 
@@ -373,7 +412,7 @@ static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:43 for Open 3D Engine AWSMetrics Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:48 for Open 3D Engine AWSMetrics Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

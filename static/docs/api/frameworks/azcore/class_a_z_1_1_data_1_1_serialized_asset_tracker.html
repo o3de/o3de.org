@@ -46,6 +46,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_a_z_1_1_data_1_1_serialized_asset_tracker-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -53,14 +54,26 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a12bfa3becc69d89bb9cb30eaa71d1ae2"><td class="memItemLeft" align="right" valign="top"><a id="a12bfa3becc69d89bb9cb30eaa71d1ae2"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>AssetFixUp</b> = <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; void(<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; &amp;asset)&gt;</td></tr>
+<tr class="separator:a12bfa3becc69d89bb9cb30eaa71d1ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aebc8bf6f4dd47f3af98ebbd7f4e2d146"><td class="memItemLeft" align="right" valign="top"><a id="aebc8bf6f4dd47f3af98ebbd7f4e2d146"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_data_1_1_serialized_asset_tracker.html">SerializedAssetTracker</a>, &quot;{1E067091-8C0A-44B1-A455-6E97663F6963}&quot;)</td></tr>
 <tr class="separator:aebc8bf6f4dd47f3af98ebbd7f4e2d146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb349eb4dd039a686634858e1abbb40e"><td class="memItemLeft" align="right" valign="top"><a id="adb349eb4dd039a686634858e1abbb40e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAsset</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; &amp;asset)</td></tr>
-<tr class="separator:adb349eb4dd039a686634858e1abbb40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b7c2c5acb5a24383eeae3a009ca7779"><td class="memItemLeft" align="right" valign="top"><a id="a7b7c2c5acb5a24383eeae3a009ca7779"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAssetFixUp</b> (<a class="el" href="class_a_z_std_1_1function.html">AssetFixUp</a> assetFixUpCallback)</td></tr>
+<tr class="separator:a7b7c2c5acb5a24383eeae3a009ca7779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e73f4a5f1467a2658814f43578b1087"><td class="memItemLeft" align="right" valign="top"><a id="a2e73f4a5f1467a2658814f43578b1087"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FixUpAsset</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; &amp;asset)</td></tr>
+<tr class="separator:a2e73f4a5f1467a2658814f43578b1087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00d35d1bd3ae30314ae5e0ec4b82bf50"><td class="memItemLeft" align="right" valign="top"><a id="a00d35d1bd3ae30314ae5e0ec4b82bf50"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAsset</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; asset)</td></tr>
+<tr class="separator:a00d35d1bd3ae30314ae5e0ec4b82bf50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6784862a584d2a9d1c0e495b4697385"><td class="memItemLeft" align="right" valign="top"><a id="af6784862a584d2a9d1c0e495b4697385"></a>
 <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTrackedAssets</b> ()</td></tr>
 <tr class="separator:af6784862a584d2a9d1c0e495b4697385"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -74,7 +87,7 @@ const <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:11 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:14:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

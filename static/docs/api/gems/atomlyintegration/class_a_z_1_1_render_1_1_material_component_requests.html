@@ -90,6 +90,28 @@ virtual const MaterialAssignmentMap &amp;&#160;</td><td class="memItemRight" val
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a0526bebff78a51502f12ee76ccb20b36">ClearAllMaterialOverrides</a> ()=0</td></tr>
 <tr class="memdesc:a0526bebff78a51502f12ee76ccb20b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all material overrides. <br /></td></tr>
 <tr class="separator:a0526bebff78a51502f12ee76ccb20b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58bfc87181140f066fb662ab2b99db7"><td class="memItemLeft" align="right" valign="top"><a id="aa58bfc87181140f066fb662ab2b99db7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#aa58bfc87181140f066fb662ab2b99db7">ClearModelMaterialOverrides</a> ()=0</td></tr>
+<tr class="memdesc:aa58bfc87181140f066fb662ab2b99db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear non-lod material overrides. <br /></td></tr>
+<tr class="separator:aa58bfc87181140f066fb662ab2b99db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eaeb243469cb51c2aa27baf612d3da1"><td class="memItemLeft" align="right" valign="top"><a id="a0eaeb243469cb51c2aa27baf612d3da1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a0eaeb243469cb51c2aa27baf612d3da1">ClearLodMaterialOverrides</a> ()=0</td></tr>
+<tr class="memdesc:a0eaeb243469cb51c2aa27baf612d3da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear lod material overrides. <br /></td></tr>
+<tr class="separator:a0eaeb243469cb51c2aa27baf612d3da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af54ccf922717a1c3395af434604b7e56"><td class="memItemLeft" align="right" valign="top"><a id="af54ccf922717a1c3395af434604b7e56"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#af54ccf922717a1c3395af434604b7e56">ClearIncompatibleMaterialOverrides</a> ()=0</td></tr>
+<tr class="memdesc:af54ccf922717a1c3395af434604b7e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear residual materials that don't correspond to the associated model. <br /></td></tr>
+<tr class="separator:af54ccf922717a1c3395af434604b7e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad303958a6e943d2537d5f385671e8b8e"><td class="memItemLeft" align="right" valign="top"><a id="ad303958a6e943d2537d5f385671e8b8e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#ad303958a6e943d2537d5f385671e8b8e">ClearInvalidMaterialOverrides</a> ()=0</td></tr>
+<tr class="memdesc:ad303958a6e943d2537d5f385671e8b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear materials that reference missing assets. <br /></td></tr>
+<tr class="separator:ad303958a6e943d2537d5f385671e8b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4373c26f4677c954c328c25cb544029"><td class="memItemLeft" align="right" valign="top"><a id="aa4373c26f4677c954c328c25cb544029"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#aa4373c26f4677c954c328c25cb544029">RepairInvalidMaterialOverrides</a> ()=0</td></tr>
+<tr class="memdesc:aa4373c26f4677c954c328c25cb544029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repair materials that reference missing assets by assigning the default asset. <br /></td></tr>
+<tr class="separator:aa4373c26f4677c954c328c25cb544029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f15dc0f75b2572d56296af6559913cb"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a7f15dc0f75b2572d56296af6559913cb">ApplyAutomaticPropertyUpdates</a> ()=0</td></tr>
+<tr class="separator:a7f15dc0f75b2572d56296af6559913cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e9e78d836d95735c23add58bdee7fb8"><td class="memItemLeft" align="right" valign="top"><a id="a4e9e78d836d95735c23add58bdee7fb8"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a4e9e78d836d95735c23add58bdee7fb8">SetDefaultMaterialOverride</a> (const AZ::Data::AssetId &amp;materialAssetId)=0</td></tr>
 <tr class="memdesc:a4e9e78d836d95735c23add58bdee7fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default material override. <br /></td></tr>
@@ -118,98 +140,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#abf936f8b52c84d174b2d05593f2d380e">SetPropertyOverride</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const AZStd::any &amp;value)=0</td></tr>
 <tr class="memdesc:abf936f8b52c84d174b2d05593f2d380e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a material property override value wrapped by an AZStd::any. <br /></td></tr>
 <tr class="separator:abf936f8b52c84d174b2d05593f2d380e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a522a840826224a9a79fd1bd04a4cec7d"><td class="memItemLeft" align="right" valign="top"><a id="a522a840826224a9a79fd1bd04a4cec7d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a522a840826224a9a79fd1bd04a4cec7d">SetPropertyOverrideBool</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const bool &amp;value)=0</td></tr>
-<tr class="memdesc:a522a840826224a9a79fd1bd04a4cec7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a material property override value to a bool. <br /></td></tr>
-<tr class="separator:a522a840826224a9a79fd1bd04a4cec7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a774b910daaf019a19c872b43d98b46ec"><td class="memItemLeft" align="right" valign="top"><a id="a774b910daaf019a19c872b43d98b46ec"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a774b910daaf019a19c872b43d98b46ec">SetPropertyOverrideInt32</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const int32_t &amp;value)=0</td></tr>
-<tr class="memdesc:a774b910daaf019a19c872b43d98b46ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a material property override value to a integer. <br /></td></tr>
-<tr class="separator:a774b910daaf019a19c872b43d98b46ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58e794063ed7ec10f453d39f97ebe410"><td class="memItemLeft" align="right" valign="top"><a id="a58e794063ed7ec10f453d39f97ebe410"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a58e794063ed7ec10f453d39f97ebe410">SetPropertyOverrideUInt32</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const uint32_t &amp;value)=0</td></tr>
-<tr class="memdesc:a58e794063ed7ec10f453d39f97ebe410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a material property override value to a unsigned integer. <br /></td></tr>
-<tr class="separator:a58e794063ed7ec10f453d39f97ebe410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a390c2bd7b153829fea872a7c2f51c529"><td class="memItemLeft" align="right" valign="top"><a id="a390c2bd7b153829fea872a7c2f51c529"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a390c2bd7b153829fea872a7c2f51c529">SetPropertyOverrideFloat</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const float &amp;value)=0</td></tr>
-<tr class="memdesc:a390c2bd7b153829fea872a7c2f51c529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a material property override value to a float. <br /></td></tr>
-<tr class="separator:a390c2bd7b153829fea872a7c2f51c529"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dfe8840c758fefd11e680679a8014f6"><td class="memItemLeft" align="right" valign="top"><a id="a0dfe8840c758fefd11e680679a8014f6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a0dfe8840c758fefd11e680679a8014f6">SetPropertyOverrideVector2</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const AZ::Vector2 &amp;value)=0</td></tr>
-<tr class="memdesc:a0dfe8840c758fefd11e680679a8014f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a material property override value to a Vector2. <br /></td></tr>
-<tr class="separator:a0dfe8840c758fefd11e680679a8014f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80c1e9a4fe570af9aee84280b4edfc2e"><td class="memItemLeft" align="right" valign="top"><a id="a80c1e9a4fe570af9aee84280b4edfc2e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a80c1e9a4fe570af9aee84280b4edfc2e">SetPropertyOverrideVector3</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const AZ::Vector3 &amp;value)=0</td></tr>
-<tr class="memdesc:a80c1e9a4fe570af9aee84280b4edfc2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a material property override value to a Vector3. <br /></td></tr>
-<tr class="separator:a80c1e9a4fe570af9aee84280b4edfc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb0aa2ec7c9a43e0df62a892e9f05c4f"><td class="memItemLeft" align="right" valign="top"><a id="acb0aa2ec7c9a43e0df62a892e9f05c4f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#acb0aa2ec7c9a43e0df62a892e9f05c4f">SetPropertyOverrideVector4</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const AZ::Vector4 &amp;value)=0</td></tr>
-<tr class="memdesc:acb0aa2ec7c9a43e0df62a892e9f05c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a material property override value to a Vector4. <br /></td></tr>
-<tr class="separator:acb0aa2ec7c9a43e0df62a892e9f05c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc11bdea6d19c61a26c112263da3055d"><td class="memItemLeft" align="right" valign="top"><a id="abc11bdea6d19c61a26c112263da3055d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#abc11bdea6d19c61a26c112263da3055d">SetPropertyOverrideColor</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const AZ::Color &amp;value)=0</td></tr>
-<tr class="memdesc:abc11bdea6d19c61a26c112263da3055d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a material property override value to a color. <br /></td></tr>
-<tr class="separator:abc11bdea6d19c61a26c112263da3055d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c44a012ff133e2be8612266fd588fda"><td class="memItemLeft" align="right" valign="top"><a id="a2c44a012ff133e2be8612266fd588fda"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a2c44a012ff133e2be8612266fd588fda">SetPropertyOverrideImageAsset</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const AZ::Data::Asset&lt; AZ::RPI::ImageAsset &gt; &amp;value)=0</td></tr>
-<tr class="memdesc:a2c44a012ff133e2be8612266fd588fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a material property override value to an image asset. <br /></td></tr>
-<tr class="separator:a2c44a012ff133e2be8612266fd588fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa06a1c1cefbb9cd35723205bfc349ad"><td class="memItemLeft" align="right" valign="top"><a id="afa06a1c1cefbb9cd35723205bfc349ad"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#afa06a1c1cefbb9cd35723205bfc349ad">SetPropertyOverrideImageInstance</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const AZ::Data::Instance&lt; AZ::RPI::Image &gt; &amp;value)=0</td></tr>
-<tr class="memdesc:afa06a1c1cefbb9cd35723205bfc349ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a material property override value to an image instance. <br /></td></tr>
-<tr class="separator:afa06a1c1cefbb9cd35723205bfc349ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43707870a11b7688286f4a362520e155"><td class="memItemLeft" align="right" valign="top"><a id="a43707870a11b7688286f4a362520e155"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a43707870a11b7688286f4a362520e155">SetPropertyOverrideString</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const AZStd::string &amp;value)=0</td></tr>
-<tr class="memdesc:a43707870a11b7688286f4a362520e155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a material property override value to a string. <br /></td></tr>
-<tr class="separator:a43707870a11b7688286f4a362520e155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef2473bffbe980c5d147e686461e4329"><td class="memItemLeft" align="right" valign="top"><a id="aef2473bffbe980c5d147e686461e4329"></a>
 virtual AZStd::any&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#aef2473bffbe980c5d147e686461e4329">GetPropertyOverride</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const =0</td></tr>
 <tr class="memdesc:aef2473bffbe980c5d147e686461e4329"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a material property override value wrapped by an AZStd::any. <br /></td></tr>
 <tr class="separator:aef2473bffbe980c5d147e686461e4329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e92880cbd894bf7503dac6acf8a9cf9"><td class="memItemLeft" align="right" valign="top"><a id="a9e92880cbd894bf7503dac6acf8a9cf9"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a9e92880cbd894bf7503dac6acf8a9cf9">GetPropertyOverrideBool</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const =0</td></tr>
-<tr class="memdesc:a9e92880cbd894bf7503dac6acf8a9cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a material property override value as a bool. <br /></td></tr>
-<tr class="separator:a9e92880cbd894bf7503dac6acf8a9cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2fb6b313c0c0972648c86fd04053bcf"><td class="memItemLeft" align="right" valign="top"><a id="aa2fb6b313c0c0972648c86fd04053bcf"></a>
-virtual int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#aa2fb6b313c0c0972648c86fd04053bcf">GetPropertyOverrideInt32</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const =0</td></tr>
-<tr class="memdesc:aa2fb6b313c0c0972648c86fd04053bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a material property override value as an integer. <br /></td></tr>
-<tr class="separator:aa2fb6b313c0c0972648c86fd04053bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac995b7178e305d448ceb2fc5d6e37d56"><td class="memItemLeft" align="right" valign="top"><a id="ac995b7178e305d448ceb2fc5d6e37d56"></a>
-virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#ac995b7178e305d448ceb2fc5d6e37d56">GetPropertyOverrideUInt32</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const =0</td></tr>
-<tr class="memdesc:ac995b7178e305d448ceb2fc5d6e37d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a material property override value as an unsigned integer. <br /></td></tr>
-<tr class="separator:ac995b7178e305d448ceb2fc5d6e37d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f974393ae0539cc45e0ed5952e8ab66"><td class="memItemLeft" align="right" valign="top"><a id="a5f974393ae0539cc45e0ed5952e8ab66"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a5f974393ae0539cc45e0ed5952e8ab66">GetPropertyOverrideFloat</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const =0</td></tr>
-<tr class="memdesc:a5f974393ae0539cc45e0ed5952e8ab66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a material property override value as a float. <br /></td></tr>
-<tr class="separator:a5f974393ae0539cc45e0ed5952e8ab66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe4af94fb72b291ce5849b5e13415855"><td class="memItemLeft" align="right" valign="top"><a id="afe4af94fb72b291ce5849b5e13415855"></a>
-virtual AZ::Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#afe4af94fb72b291ce5849b5e13415855">GetPropertyOverrideVector2</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const =0</td></tr>
-<tr class="memdesc:afe4af94fb72b291ce5849b5e13415855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a material property override value as a Vector2. <br /></td></tr>
-<tr class="separator:afe4af94fb72b291ce5849b5e13415855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a772a214d6ba7d5630d98b2bfddf95ac5"><td class="memItemLeft" align="right" valign="top"><a id="a772a214d6ba7d5630d98b2bfddf95ac5"></a>
-virtual AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a772a214d6ba7d5630d98b2bfddf95ac5">GetPropertyOverrideVector3</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const =0</td></tr>
-<tr class="memdesc:a772a214d6ba7d5630d98b2bfddf95ac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a material property override value as a Vector3. <br /></td></tr>
-<tr class="separator:a772a214d6ba7d5630d98b2bfddf95ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6a4b15642a79327808624857bd64ce4"><td class="memItemLeft" align="right" valign="top"><a id="ad6a4b15642a79327808624857bd64ce4"></a>
-virtual AZ::Vector4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#ad6a4b15642a79327808624857bd64ce4">GetPropertyOverrideVector4</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const =0</td></tr>
-<tr class="memdesc:ad6a4b15642a79327808624857bd64ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a material property override value as a Vector4. <br /></td></tr>
-<tr class="separator:ad6a4b15642a79327808624857bd64ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a8c232b7ed233c0ff0b436cdba4ba77"><td class="memItemLeft" align="right" valign="top"><a id="a0a8c232b7ed233c0ff0b436cdba4ba77"></a>
-virtual AZ::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a0a8c232b7ed233c0ff0b436cdba4ba77">GetPropertyOverrideColor</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const =0</td></tr>
-<tr class="memdesc:a0a8c232b7ed233c0ff0b436cdba4ba77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a material property override value as a Color. <br /></td></tr>
-<tr class="separator:a0a8c232b7ed233c0ff0b436cdba4ba77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c3bc80b6a528d63bdce12a8d1c2f05a"><td class="memItemLeft" align="right" valign="top"><a id="a2c3bc80b6a528d63bdce12a8d1c2f05a"></a>
-virtual AZ::Data::Asset&lt; AZ::RPI::ImageAsset &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a2c3bc80b6a528d63bdce12a8d1c2f05a">GetPropertyOverrideImageAsset</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const =0</td></tr>
-<tr class="memdesc:a2c3bc80b6a528d63bdce12a8d1c2f05a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a material property override value as an image asset. <br /></td></tr>
-<tr class="separator:a2c3bc80b6a528d63bdce12a8d1c2f05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a879aa50badd1adc1dd188d23a554e7c6"><td class="memItemLeft" align="right" valign="top"><a id="a879aa50badd1adc1dd188d23a554e7c6"></a>
-virtual AZ::Data::Instance&lt; AZ::RPI::Image &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a879aa50badd1adc1dd188d23a554e7c6">GetPropertyOverrideImageInstance</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const =0</td></tr>
-<tr class="memdesc:a879aa50badd1adc1dd188d23a554e7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a material property override value as an image instance. <br /></td></tr>
-<tr class="separator:a879aa50badd1adc1dd188d23a554e7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a353649845d85c66a032385237aaf7ee2"><td class="memItemLeft" align="right" valign="top"><a id="a353649845d85c66a032385237aaf7ee2"></a>
-virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a353649845d85c66a032385237aaf7ee2">GetPropertyOverrideString</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const =0</td></tr>
-<tr class="memdesc:a353649845d85c66a032385237aaf7ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a material property override value as a string. <br /></td></tr>
-<tr class="separator:a353649845d85c66a032385237aaf7ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7932693a143b3483e6cf989680b11de"><td class="memItemLeft" align="right" valign="top"><a id="ac7932693a143b3483e6cf989680b11de"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#ac7932693a143b3483e6cf989680b11de">ClearPropertyOverride</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName)=0</td></tr>
 <tr class="memdesc:ac7932693a143b3483e6cf989680b11de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear property override for a specific material assignment. <br /></td></tr>
@@ -238,16 +172,53 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual AZ::RPI::MaterialModelUvOverrideMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#adda564ff34f50de110c44a1a3e7bb41d">GetModelUvOverrides</a> (const MaterialAssignmentId &amp;materialAssignmentId) const =0</td></tr>
 <tr class="memdesc:adda564ff34f50de110c44a1a3e7bb41d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Model UV overrides for a specific material assignment. <br /></td></tr>
 <tr class="separator:adda564ff34f50de110c44a1a3e7bb41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f0f4347539fe296215ef260b19f39f"><td class="memTemplParams" colspan="2"><a id="a32f0f4347539fe296215ef260b19f39f"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a32f0f4347539fe296215ef260b19f39f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a32f0f4347539fe296215ef260b19f39f">SetPropertyOverrideT</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const T &amp;value)</td></tr>
+<tr class="memdesc:a32f0f4347539fe296215ef260b19f39f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set material property override value with a specific type. <br /></td></tr>
+<tr class="separator:a32f0f4347539fe296215ef260b19f39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ca0d002ff3cc3b830cfb0caa7d7390"><td class="memTemplParams" colspan="2"><a id="a80ca0d002ff3cc3b830cfb0caa7d7390"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a80ca0d002ff3cc3b830cfb0caa7d7390"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a80ca0d002ff3cc3b830cfb0caa7d7390">GetPropertyOverrideT</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const</td></tr>
+<tr class="memdesc:a80ca0d002ff3cc3b830cfb0caa7d7390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get material property override value with a specific type. <br /></td></tr>
+<tr class="separator:a80ca0d002ff3cc3b830cfb0caa7d7390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>MaterialComponentRequestBus provides an interface to request operations on a MaterialComponent. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7f15dc0f75b2572d56296af6559913cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f15dc0f75b2572d56296af6559913cb">&#9670;&nbsp;</a></span>ApplyAutomaticPropertyUpdates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint32_t AZ::Render::MaterialComponentRequests::ApplyAutomaticPropertyUpdates </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Repair material property overrides that reference missing properties by auto-renaming them where possible </p><dl class="section return"><dt>Returns</dt><dd>the number of properties that were updated </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/AtomLyIntegration/CommonFeatures/Code/Include/AtomLyIntegration/CommonFeatures/Material/MaterialComponentBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:57:01 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:16:00 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

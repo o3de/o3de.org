@@ -1,7 +1,9 @@
 ---
-description: ' Use O3DE''s UI Animation Editor to animate elements in your game''s
-  UI. '
+linkTitle: UI Animation Editor
+description: ' Use O3DE''s UI Animation Editor to animate elements in your game''s UI. '
 title: UI Animation Editor
+toc: true
+weight: 200
 ---
 
 You can use animation sequences to animate UI elements in your game's UI. A UI canvas can contain many named animation sequences.
@@ -16,6 +18,6 @@ The UI **Animation Editor** has the following features:
 
 + From the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor) menu, choose **View**, **Animation Editor**.
 
-![UI Animation Window](/images/user-guide/ui-animation-window.png)
+![UI Animation Window](/images/user-guide/interactivity/user-interface/animating/animation-editor/ui-animation-window.png)
 
 To create an animation sequence, you first create a new sequence, assign one or more UI elements to it, and then record changes you make to the UI element(s)-this becomes the animation sequence. You can then edit the animation sequence(s) using the **Animation Editor**. These processes are described in greater detail in the following sections.

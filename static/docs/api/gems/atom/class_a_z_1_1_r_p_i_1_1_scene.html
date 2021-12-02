@@ -135,6 +135,9 @@ Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_g
 <tr class="memitem:a2e91a70f0d0168fa8be39918332d6bdb"><td class="memItemLeft" align="right" valign="top"><a id="a2e91a70f0d0168fa8be39918332d6bdb"></a>
 const SceneId &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetId</b> () const</td></tr>
 <tr class="separator:a2e91a70f0d0168fa8be39918332d6bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee4784112e874865b56fd66d7603e983"><td class="memItemLeft" align="right" valign="top"><a id="aee4784112e874865b56fd66d7603e983"></a>
+AZ::Name&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
+<tr class="separator:aee4784112e874865b56fd66d7603e983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a344433e0fa483abc6ee4b1dccd962f30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a344433e0fa483abc6ee4b1dccd962f30">SetDefaultRenderPipeline</a> (const RenderPipelineId &amp;pipelineId)</td></tr>
 <tr class="separator:a344433e0fa483abc6ee4b1dccd962f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e9de7d726102e68ab3fa88cf763d907"><td class="memItemLeft" align="right" valign="top"><a id="a3e9de7d726102e68ab3fa88cf763d907"></a>
@@ -168,10 +171,14 @@ Static Public Member Functions</h2></td></tr>
 static ScenePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateScene</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_scene_descriptor.html">SceneDescriptor</a> &amp;sceneDescriptor)</td></tr>
 <tr class="separator:a2e9d66e83bd427d4e1beda3fba1fa36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab06b395e37f8b2c6efbee7305a1a11fb"><td class="memItemLeft" align="right" valign="top"><a id="ab06b395e37f8b2c6efbee7305a1a11fb"></a>
-static ScenePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateSceneFromAsset</b> (Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_any_asset.html">AnyAsset</a> &gt; sceneAsset)</td></tr>
+static ScenePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateSceneFromAsset</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_any_asset.html">AnyAsset</a> &gt; sceneAsset)</td></tr>
 <tr class="separator:ab06b395e37f8b2c6efbee7305a1a11fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adebef26e0a77352aa12687c532ae9645"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#adebef26e0a77352aa12687c532ae9645">GetSceneForEntityContextId</a> (AzFramework::EntityContextId entityContextId)</td></tr>
 <tr class="separator:adebef26e0a77352aa12687c532ae9645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9e0b6b7b008fc75497b4f4f7374d88"><td class="memItemLeft" align="right" valign="top"><a id="a1f9e0b6b7b008fc75497b4f4f7374d88"></a>
+static <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a1f9e0b6b7b008fc75497b4f4f7374d88">GetSceneForEntityId</a> (AZ::EntityId entityId)</td></tr>
+<tr class="memdesc:a1f9e0b6b7b008fc75497b4f4f7374d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">RPI::Scene</a> for a given entityId. <br /></td></tr>
+<tr class="separator:a1f9e0b6b7b008fc75497b4f4f7374d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fd24b67ee04bf03091063dc151b0796"><td class="memTemplParams" colspan="2"><a id="a2fd24b67ee04bf03091063dc151b0796"></a>
 template&lt;typename FeatureProcessorType &gt; </td></tr>
 <tr class="memitem:a2fd24b67ee04bf03091063dc151b0796"><td class="memTemplItemLeft" align="right" valign="top">static FeatureProcessorType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetFeatureProcessorForEntity</b> (AZ::EntityId entityId)</td></tr>
@@ -186,12 +193,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a221894c215ae2482c19a4b4ba9806dcc"><td class="memItemLeft" align="right" valign="top"><a id="a221894c215ae2482c19a4b4ba9806dcc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSceneNotifictaionHandlerConnected</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html">SceneNotification</a> *handler)</td></tr>
 <tr class="separator:a221894c215ae2482c19a4b4ba9806dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac62c971216fa8170bb1911515074de9f"><td class="memItemLeft" align="right" valign="top"><a id="ac62c971216fa8170bb1911515074de9f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Simulate</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_tick_time_info.html">TickTimeInfo</a> &amp;tickInfo, RHI::JobPolicy jobPolicy)</td></tr>
-<tr class="separator:ac62c971216fa8170bb1911515074de9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01aae7c4bc1537f17cc7564fdb94459a"><td class="memItemLeft" align="right" valign="top"><a id="a01aae7c4bc1537f17cc7564fdb94459a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareRender</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_tick_time_info.html">TickTimeInfo</a> &amp;tickInfo, RHI::JobPolicy jobPolicy)</td></tr>
-<tr class="separator:a01aae7c4bc1537f17cc7564fdb94459a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38eb6d23cde85ef87144b56448e6e06"><td class="memItemLeft" align="right" valign="top"><a id="ad38eb6d23cde85ef87144b56448e6e06"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Simulate</b> (RHI::JobPolicy jobPolicy, float simulationTime)</td></tr>
+<tr class="separator:ad38eb6d23cde85ef87144b56448e6e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb6e73f7c867d96b503291a123fe8c5"><td class="memItemLeft" align="right" valign="top"><a id="a2eb6e73f7c867d96b503291a123fe8c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareRender</b> (RHI::JobPolicy jobPolicy, float simulationTime)</td></tr>
+<tr class="separator:a2eb6e73f7c867d96b503291a123fe8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dfc429b803085779ef32c9a04c53b05"><td class="memItemLeft" align="right" valign="top"><a id="a4dfc429b803085779ef32c9a04c53b05"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFrameEnd</b> ()</td></tr>
 <tr class="separator:a4dfc429b803085779ef32c9a04c53b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -360,7 +367,7 @@ template&lt;typename FeatureProcessorType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

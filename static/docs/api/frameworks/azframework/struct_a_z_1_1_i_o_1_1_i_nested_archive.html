@@ -85,7 +85,10 @@ Public Types</h2></td></tr>
 <br />
 &#160;&#160;<b>FLAGS_CREATE_NEW</b> = 1 &lt;&lt; 4, 
 <b>FLAGS_DONT_COMPACT</b> = 1 &lt;&lt; 5, 
-<b>FLAGS_DISABLE_PAK</b> = 1 &lt;&lt; 11
+<b>FLAGS_VALIDATE_HEADERS</b> = 1 &lt;&lt; 9, 
+<b>FLAGS_FULL_VALIDATE</b> = 1 &lt;&lt; 10, 
+<br />
+&#160;&#160;<b>FLAGS_DISABLE_PAK</b> = 1 &lt;&lt; 11
 <br />
  }</td></tr>
 <tr class="separator:a55ad2822f17fbee54b9a72dcc51721f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,6 +122,9 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveDir</b> 
 <tr class="memitem:a33f3f65ce0c80fcd30c7d662b9baa0f9"><td class="memItemLeft" align="right" valign="top"><a id="a33f3f65ce0c80fcd30c7d662b9baa0f9"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAll</b> ()=0</td></tr>
 <tr class="separator:a33f3f65ce0c80fcd30c7d662b9baa0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0378444b729e65e29ba66c65d9058c"><td class="memItemLeft" align="right" valign="top"><a id="a7e0378444b729e65e29ba66c65d9058c"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>ListAllFiles</b> (AZStd::vector&lt; AZ::IO::Path &gt; &amp;outFileEntries)=0</td></tr>
+<tr class="separator:a7e0378444b729e65e29ba66c65d9058c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa76778bc41e16ae9d7c8f26d8615d09d"><td class="memItemLeft" align="right" valign="top"><a id="aa76778bc41e16ae9d7c8f26d8615d09d"></a>
 virtual Handle&#160;</td><td class="memItemRight" valign="bottom"><b>FindFile</b> (AZStd::string_view szPath)=0</td></tr>
 <tr class="separator:aa76778bc41e16ae9d7c8f26d8615d09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,7 +159,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReadOnly</b> () con
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:45 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:14:57 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

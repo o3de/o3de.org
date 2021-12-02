@@ -73,9 +73,21 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnSessionHeal
 <tr class="memitem:a5697e3ea44970dc60483e5e393c9fe4c"><td class="memItemLeft" align="right" valign="top"><a id="a5697e3ea44970dc60483e5e393c9fe4c"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnCreateSessionBegin</b> (const <a class="el" href="struct_az_framework_1_1_session_config.html">SessionConfig</a> &amp;sessionConfig)=0</td></tr>
 <tr class="separator:a5697e3ea44970dc60483e5e393c9fe4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f7a241784c80b3781f9d8f3a0bdfca"><td class="memItemLeft" align="right" valign="top"><a id="a74f7a241784c80b3781f9d8f3a0bdfca"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCreateSessionEnd</b> ()=0</td></tr>
+<tr class="separator:a74f7a241784c80b3781f9d8f3a0bdfca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a653b86113ba70bf1ba460aae3f49e5f3"><td class="memItemLeft" align="right" valign="top"><a id="a653b86113ba70bf1ba460aae3f49e5f3"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnDestroySessionBegin</b> ()=0</td></tr>
 <tr class="separator:a653b86113ba70bf1ba460aae3f49e5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d803129dc9a5df7e43e1e92f32ac7b0"><td class="memItemLeft" align="right" valign="top"><a id="a1d803129dc9a5df7e43e1e92f32ac7b0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDestroySessionEnd</b> ()=0</td></tr>
+<tr class="separator:a1d803129dc9a5df7e43e1e92f32ac7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a759fd1f03df18b8a41b1e2fcd66e9610"><td class="memItemLeft" align="right" valign="top"><a id="a759fd1f03df18b8a41b1e2fcd66e9610"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnUpdateSessionBegin</b> (const <a class="el" href="struct_az_framework_1_1_session_config.html">SessionConfig</a> &amp;sessionConfig, const AZStd::string &amp;updateReason)=0</td></tr>
+<tr class="separator:a759fd1f03df18b8a41b1e2fcd66e9610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b52efb6e71463692891cc44b6b260b"><td class="memItemLeft" align="right" valign="top"><a id="ad7b52efb6e71463692891cc44b6b260b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnUpdateSessionEnd</b> ()=0</td></tr>
+<tr class="separator:ad7b52efb6e71463692891cc44b6b260b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -94,7 +106,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:47 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:14:59 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

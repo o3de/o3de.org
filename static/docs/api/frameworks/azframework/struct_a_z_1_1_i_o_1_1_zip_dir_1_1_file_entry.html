@@ -103,7 +103,7 @@ AZStd::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_readLock</b
 <a class="el" href="struct_a_z_1_1_i_o_1_1_zip_file_1_1_data_descriptor.html">ZipFile::DataDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>desc</b> {}</td></tr>
 <tr class="separator:a0d6d73301593677f3128b1dc6682a469 inherit pub_attribs_struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9236a0174bf59f8677abac22ba0d210e inherit pub_attribs_struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_base"><td class="memItemLeft" align="right" valign="top"><a id="a9236a0174bf59f8677abac22ba0d210e"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>nFileDataOffset</b> {}</td></tr>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>nFileDataOffset</b> { INVALID_DATA_OFFSET }</td></tr>
 <tr class="separator:a9236a0174bf59f8677abac22ba0d210e inherit pub_attribs_struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeb99793918fbba48ff588b8b6f2e995 inherit pub_attribs_struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_base"><td class="memItemLeft" align="right" valign="top"><a id="abeb99793918fbba48ff588b8b6f2e995"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>nFileHeaderOffset</b> { INVALID_DATA_OFFSET }</td></tr>
@@ -129,6 +129,9 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>nNTFS_LastModifyT
 <tr class="memitem:a82a36804c9c4afa53d7fd8f21e5f108d inherit pub_attribs_struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_base"><td class="memItemLeft" align="right" valign="top"><a id="a82a36804c9c4afa53d7fd8f21e5f108d"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>nEOFOffset</b> {}</td></tr>
 <tr class="separator:a82a36804c9c4afa53d7fd8f21e5f108d inherit pub_attribs_struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb24439afaa106153b1e64e48ff1734 inherit pub_attribs_struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_base"><td class="memItemLeft" align="right" valign="top"><a id="afeb24439afaa106153b1e64e48ff1734"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>bCheckCRCNextRead</b> {}</td></tr>
+<tr class="separator:afeb24439afaa106153b1e64e48ff1734 inherit pub_attribs_struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -143,7 +146,7 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:45 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:14:57 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

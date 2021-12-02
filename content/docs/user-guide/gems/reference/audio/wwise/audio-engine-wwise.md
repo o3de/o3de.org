@@ -5,7 +5,7 @@ description: The Wwise Audio Engine Gem provides support for using Audiokinetic 
 toc: true
 ---
 
-The Wwise Audio Engine Gem provides support for using the Audiokinetic Wave Works Interactive Sound Engine (Wwise) in Open 3D Engine (O3DE) projects.
+The Wwise Audio Engine Gem provides support for using the Audiokinetic Wave Works Interactive Sound Engine (Wwise) in **Open 3D Engine (O3DE)** projects.
 
 The Wwise Audio Engine Gem requires the Audio System Gem.
 

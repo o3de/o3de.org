@@ -55,6 +55,7 @@ $(function() {
 , <a class="el" href="class_az_tools_framework_1_1_entity_manipulator_command.html#a7c3570c9302762dd7ea817ac52be5ccc">AzToolsFramework::EntityManipulatorCommand</a>
 , <a class="el" href="class_az_tools_framework_1_1_entity_state_command.html#ab6af904144c44b081e3b36f3427d604f">AzToolsFramework::EntityStateCommand</a>
 , <a class="el" href="class_az_tools_framework_1_1_legacy_command.html#a53ba8cc018930a99bc099a7bc97c37b2">AzToolsFramework::LegacyCommand&lt; UndoObjectType &gt;</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_undo.html#a438001414b0531b5aa8d0a43eb4bb122">AzToolsFramework::Prefab::PrefabFocusUndo</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_undo_entity_update.html#a6e263e2ad76d4033932bfbea3e9452a8">AzToolsFramework::Prefab::PrefabUndoEntityUpdate</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_undo_instance.html#af7454c5de7d7e6f4da7b1e7f806c747c">AzToolsFramework::Prefab::PrefabUndoInstance</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_undo_instance_link.html#a7283bb376785383611025966538d34de">AzToolsFramework::Prefab::PrefabUndoInstanceLink</a>
@@ -77,6 +78,10 @@ $(function() {
 <li>UnregisterContext()
 : <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#afc0c5ee91db4b527023eba83cb859380">AzToolsFramework::Thumbnailer::ThumbnailerRequests</a>
 </li>
+<li>UnregisterEntityAsContainer()
+: <a class="el" href="class_az_tools_framework_1_1_container_entity_interface.html#aeb68befa341598c4c4d6e082651f5468">AzToolsFramework::ContainerEntityInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_container_entity_system_component.html#a0e5f87ae25941a31abe82e4192b9c51a">AzToolsFramework::ContainerEntitySystemComponent</a>
+</li>
 <li>UnregisterManipulator()
 : <a class="el" href="class_az_tools_framework_1_1_editor_transform_component_selection.html#a3f1a39301ffff675b1dc8b69fe7cf44c">AzToolsFramework::EditorTransformComponentSelection</a>
 , <a class="el" href="class_az_tools_framework_1_1_manipulator_manager_requests.html#af7cae8e4a0cf0b85400c6d22f29b46ae">AzToolsFramework::ManipulatorManagerRequests</a>
@@ -93,6 +98,9 @@ $(function() {
 </li>
 <li>Update()
 : <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_root_asset_browser_entry.html#ad341e6fbd78dbbaac784ae406980d14c">AzToolsFramework::AssetBrowser::RootAssetBrowserEntry</a>
+, <a class="el" href="class_az_tools_framework_1_1_expanding_fading_circles.html#a758e3b4cf35ff29d07fa4a334fc33431">AzToolsFramework::ExpandingFadingCircles</a>
+, <a class="el" href="class_az_tools_framework_1_1_fading_text.html#a5d5ee7b20d6b10fe209c5482027dbcfa">AzToolsFramework::FadingText</a>
+, <a class="el" href="class_az_tools_framework_1_1_invalid_click.html#a3f1f1702222ffe5efa9fbf0be87c3f11">AzToolsFramework::InvalidClick</a>
 , <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_manager.html#a0223ad4e8e7a9e7606b8a9850ec11e5e">AzToolsFramework::ViewportUi::ViewportUiManager</a>
 </li>
 <li>UpdateBound()
@@ -124,14 +132,11 @@ $(function() {
 <li>UpdateListOfDiscoveredEntityIds()
 : <a class="el" href="class_az_tools_framework_1_1_layers_1_1_editor_layer_component.html#abf7fd8c99a7b1586d4337bb711d52bfa">AzToolsFramework::Layers::EditorLayerComponent</a>
 </li>
-<li>UpdateObjectModeCursor()
-: <a class="el" href="class_az_tools_framework_1_1_editor_requests.html#a7c3633ae6e5619b990f956b88bb938fa">AzToolsFramework::EditorRequests</a>
-</li>
 <li>UpdatePreemptiveUndoCache()
 : <a class="el" href="class_az_tools_framework_1_1_component_entity_object_requests.html#a53081ea43f842d02ba5cffb129484352">AzToolsFramework::ComponentEntityObjectRequests</a>
 </li>
 <li>UpdatePrefabInstances()
-: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#ae1cf36d13c0154dfaa8094527a961557">AzToolsFramework::Prefab::PrefabSystemComponent</a>
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a7648afe6a6537ac9d52bd8636df3ffc5">AzToolsFramework::Prefab::PrefabSystemComponent</a>
 </li>
 <li>UpdatePrefabTemplate()
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#ae45476048a21e773212bc3f13c4954af">AzToolsFramework::Prefab::PrefabSystemComponent</a>
@@ -142,6 +147,11 @@ $(function() {
 <li>UpdateTemplateFilePath()
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a20baeea33dbd8fc687f24681b30ebf66">AzToolsFramework::Prefab::PrefabSystemComponent</a>
 </li>
+<li>Updating()
+: <a class="el" href="class_az_tools_framework_1_1_expanding_fading_circles.html#a1dfc2b9f18e723a7e7e3fa31a19871be">AzToolsFramework::ExpandingFadingCircles</a>
+, <a class="el" href="class_az_tools_framework_1_1_fading_text.html#a091a0a3ebd630823f988b50b039ac24f">AzToolsFramework::FadingText</a>
+, <a class="el" href="class_az_tools_framework_1_1_invalid_click.html#a73eb1f6a2008bea9027883498656e9fc">AzToolsFramework::InvalidClick</a>
+</li>
 <li>URSequencePoint()
 : <a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point.html#aea365db09e04d0ed0d192b4cf6d9db6d">AzToolsFramework::UndoSystem::URSequencePoint</a>
 </li>
@@ -149,7 +159,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:09 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:14 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -83,19 +83,24 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#ac226fc0392411006efffc6591527f2d4">UnregisterScene</a> (ScenePtr scene)=0</td></tr>
 <tr class="memdesc:ac226fc0392411006efffc6591527f2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a scene from <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html">RPISystem</a>. The scene won't be simulated or rendered. <br /></td></tr>
 <tr class="separator:ac226fc0392411006efffc6591527f2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f9d065f1656e44634d380d50fa5b22d"><td class="memItemLeft" align="right" valign="top"><a id="a2f9d065f1656e44634d380d50fa5b22d"></a>
-virtual ScenePtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultScene</b> () const =0</td></tr>
-<tr class="separator:a2f9d065f1656e44634d380d50fa5b22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae30fc020d892a8ae114f8b20cb95ff3a"><td class="memItemLeft" align="right" valign="top"><a id="ae30fc020d892a8ae114f8b20cb95ff3a"></a>
-virtual ScenePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#ae30fc020d892a8ae114f8b20cb95ff3a">GetScene</a> (const SceneId &amp;sceneId) const =0</td></tr>
-<tr class="memdesc:ae30fc020d892a8ae114f8b20cb95ff3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get scene by using scene id. <br /></td></tr>
-<tr class="separator:ae30fc020d892a8ae114f8b20cb95ff3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b5d27f323d01b0183a16a7ca997d93"><td class="memItemLeft" align="right" valign="top"><a id="a45b5d27f323d01b0183a16a7ca997d93"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a45b5d27f323d01b0183a16a7ca997d93">AZ_DEPRECATED</a> (virtual ScenePtr GetDefaultScene() const =0;, &quot;This method has been deprecated. Please use <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#ae10e2db8b9cc10dec9b1cea38734e9a4">GetSceneByName</a>(name), GetSceneForEntityContextId(entityContextId) or <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a1f9e0b6b7b008fc75497b4f4f7374d88">Scene::GetSceneForEntityId</a>(AZ::EntityId entityId) instead.&quot;)</td></tr>
+<tr class="memdesc:a45b5d27f323d01b0183a16a7ca997d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated. Use GetSceneByName(name), GetSceneForEntityContextId(entityContextId) or <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a1f9e0b6b7b008fc75497b4f4f7374d88" title="Gets the RPI::Scene for a given entityId.">Scene::GetSceneForEntityId(AZ::EntityId entityId)</a> instead. <br /></td></tr>
+<tr class="separator:a45b5d27f323d01b0183a16a7ca997d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72997c379dbd861d9e829847067e8cd"><td class="memItemLeft" align="right" valign="top"><a id="ac72997c379dbd861d9e829847067e8cd"></a>
+virtual <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#ac72997c379dbd861d9e829847067e8cd">GetScene</a> (const SceneId &amp;sceneId) const =0</td></tr>
+<tr class="memdesc:ac72997c379dbd861d9e829847067e8cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get scene by using scene id. <br /></td></tr>
+<tr class="separator:ac72997c379dbd861d9e829847067e8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae10e2db8b9cc10dec9b1cea38734e9a4"><td class="memItemLeft" align="right" valign="top"><a id="ae10e2db8b9cc10dec9b1cea38734e9a4"></a>
+virtual <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#ae10e2db8b9cc10dec9b1cea38734e9a4">GetSceneByName</a> (const AZ::Name &amp;name) const =0</td></tr>
+<tr class="memdesc:ae10e2db8b9cc10dec9b1cea38734e9a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get scene by using scene name. <br /></td></tr>
+<tr class="separator:ae10e2db8b9cc10dec9b1cea38734e9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5bb54ab4b1b22ada3354e7910fc33d4"><td class="memItemLeft" align="right" valign="top"><a id="af5bb54ab4b1b22ada3354e7910fc33d4"></a>
 virtual RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#af5bb54ab4b1b22ada3354e7910fc33d4">GetRenderPipelineForWindow</a> (AzFramework::NativeWindowHandle windowHandle)=0</td></tr>
 <tr class="memdesc:af5bb54ab4b1b22ada3354e7910fc33d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the render pipeline created for a window. <br /></td></tr>
 <tr class="separator:af5bb54ab4b1b22ada3354e7910fc33d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada26b20cb0ade3a250d738131bf5b7f8"><td class="memItemLeft" align="right" valign="top"><a id="ada26b20cb0ade3a250d738131bf5b7f8"></a>
-virtual Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#ada26b20cb0ade3a250d738131bf5b7f8">GetCommonShaderAssetForSrgs</a> () const =0</td></tr>
+virtual <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#ada26b20cb0ade3a250d738131bf5b7f8">GetCommonShaderAssetForSrgs</a> () const =0</td></tr>
 <tr class="memdesc:ada26b20cb0ade3a250d738131bf5b7f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the shader asset that is being used as the source for the SceneSrg and ViewSrg layouts. <br /></td></tr>
 <tr class="separator:ada26b20cb0ade3a250d738131bf5b7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab98b2588aec56784e5b1da59c3423147"><td class="memItemLeft" align="right" valign="top"><a id="ab98b2588aec56784e5b1da59c3423147"></a>
@@ -262,7 +267,7 @@ static <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html">
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

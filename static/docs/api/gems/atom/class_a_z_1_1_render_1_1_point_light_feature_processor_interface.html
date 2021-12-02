@@ -118,8 +118,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a324ad31538898db8320bb7465f3bbb77">SetShadowFilterMethod</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">LightHandle</a> handle, ShadowFilterMethod method)=0</td></tr>
 <tr class="memdesc:a324ad31538898db8320bb7465f3bbb77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies filter method of shadows. <br /></td></tr>
 <tr class="separator:a324ad31538898db8320bb7465f3bbb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ea65df1f9bf1e3c141861f5680385ab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a1ea65df1f9bf1e3c141861f5680385ab">SetSofteningBoundaryWidthAngle</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">LightHandle</a> handle, float boundaryWidthRadians)=0</td></tr>
-<tr class="separator:a1ea65df1f9bf1e3c141861f5680385ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac477fa63557151d6c5729d54239b2b5e"><td class="memItemLeft" align="right" valign="top"><a id="ac477fa63557151d6c5729d54239b2b5e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#ac477fa63557151d6c5729d54239b2b5e">SetFilteringSampleCount</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">LightHandle</a> handle, uint16_t count)=0</td></tr>
 <tr class="memdesc:ac477fa63557151d6c5729d54239b2b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets sample count for filtering of shadow boundary (up to 64) <br /></td></tr>
@@ -128,6 +126,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a456f0c1633af821c861561fda91f5a9b">SetEsmExponent</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">LightHandle</a> handle, float exponent)=0</td></tr>
 <tr class="memdesc:a456f0c1633af821c861561fda91f5a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Esm exponent to use. Higher values produce a steeper falloff in the border areas between light and shadow. <br /></td></tr>
 <tr class="separator:a456f0c1633af821c861561fda91f5a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86683d8f3e69a2a6b73f3dfd492680f"><td class="memItemLeft" align="right" valign="top"><a id="ab86683d8f3e69a2a6b73f3dfd492680f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#ab86683d8f3e69a2a6b73f3dfd492680f">SetNormalShadowBias</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">LightHandle</a> handle, float bias)=0</td></tr>
+<tr class="memdesc:ab86683d8f3e69a2a6b73f3dfd492680f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the normal shadow bias. Reduces acne by biasing the shadowmap lookup along the geometric normal. <br /></td></tr>
+<tr class="separator:ab86683d8f3e69a2a6b73f3dfd492680f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe07c51aea5863f6fd3b318af26d591c"><td class="memItemLeft" align="right" valign="top"><a id="abe07c51aea5863f6fd3b318af26d591c"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#abe07c51aea5863f6fd3b318af26d591c">SetPointData</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">LightHandle</a> handle, const <a class="el" href="struct_a_z_1_1_render_1_1_point_light_data.html">PointLightData</a> &amp;data)=0</td></tr>
 <tr class="memdesc:abe07c51aea5863f6fd3b318af26d591c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all of the the point data for the provided LightHandle. <br /></td></tr>
@@ -204,50 +206,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 
 </div>
 </div>
-<a id="a1ea65df1f9bf1e3c141861f5680385ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ea65df1f9bf1e3c141861f5680385ab">&#9670;&nbsp;</a></span>SetSofteningBoundaryWidthAngle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AZ::Render::PointLightFeatureProcessorInterface::SetSofteningBoundaryWidthAngle </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">LightHandle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>boundaryWidthRadians</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Specifies the width of boundary between shadowed area and lit area in radians. The degree ofshadowed gradually changes on the boundary. 0 disables softening. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/Feature/Common/Code/Include/Atom/Feature/CoreLights/PointLightFeatureProcessorInterface.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:52 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:54 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

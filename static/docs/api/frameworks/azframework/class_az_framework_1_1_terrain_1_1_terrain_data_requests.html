@@ -89,25 +89,56 @@ virtual AZ::Aabb&#160;</td><td class="memItemRight" valign="bottom"><b>GetTerrai
 <tr class="memitem:a50253107d137d4bfdaf5f36554c76f8c"><td class="memItemLeft" align="right" valign="top"><a id="a50253107d137d4bfdaf5f36554c76f8c"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTerrainAabb</b> (const AZ::Aabb &amp;worldBounds)=0</td></tr>
 <tr class="separator:a50253107d137d4bfdaf5f36554c76f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad437b916c24bc24781dbd090183ab6fe"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#ad437b916c24bc24781dbd090183ab6fe">GetHeight</a> (AZ::Vector3 position, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampler=Sampler::BILINEAR, bool *terrainExistsPtr=nullptr) const =0</td></tr>
-<tr class="separator:ad437b916c24bc24781dbd090183ab6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38696519098848771f69175370e71d04"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a38696519098848771f69175370e71d04">GetHeight</a> (const AZ::Vector3 &amp;position, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampler=Sampler::BILINEAR, bool *terrainExistsPtr=nullptr) const =0</td></tr>
+<tr class="separator:a38696519098848771f69175370e71d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f1ce01a932627e4aa6dc57ee92f410a"><td class="memItemLeft" align="right" valign="top"><a id="a8f1ce01a932627e4aa6dc57ee92f410a"></a>
+virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetHeightFromVector2</b> (const AZ::Vector2 &amp;position, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampler=Sampler::BILINEAR, bool *terrainExistsPtr=nullptr) const =0</td></tr>
+<tr class="separator:a8f1ce01a932627e4aa6dc57ee92f410a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a642fbd7f6f9833a334fd3a29816d3e6d"><td class="memItemLeft" align="right" valign="top"><a id="a642fbd7f6f9833a334fd3a29816d3e6d"></a>
 virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetHeightFromFloats</b> (float x, float y, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampler=Sampler::BILINEAR, bool *terrainExistsPtr=nullptr) const =0</td></tr>
 <tr class="separator:a642fbd7f6f9833a334fd3a29816d3e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa108eee611e195378ed64010e28c72f3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_tag_weight.html">SurfaceData::SurfaceTagWeight</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#aa108eee611e195378ed64010e28c72f3">GetMaxSurfaceWeight</a> (AZ::Vector3 position, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=Sampler::BILINEAR, bool *terrainExistsPtr=nullptr) const =0</td></tr>
-<tr class="separator:aa108eee611e195378ed64010e28c72f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad32a5128166124b65cecbff5bf23eccb"><td class="memItemLeft" align="right" valign="top"><a id="ad32a5128166124b65cecbff5bf23eccb"></a>
-virtual <a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_tag_weight.html">SurfaceData::SurfaceTagWeight</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxSurfaceWeightFromFloats</b> (float x, float y, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=Sampler::BILINEAR, bool *terrainExistsPtr=nullptr) const =0</td></tr>
-<tr class="separator:ad32a5128166124b65cecbff5bf23eccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a691b0eb009c565365c6b5a85c504fc01"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a691b0eb009c565365c6b5a85c504fc01">GetMaxSurfaceName</a> (AZ::Vector3 position, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=Sampler::BILINEAR, bool *terrainExistsPtr=nullptr) const =0</td></tr>
-<tr class="separator:a691b0eb009c565365c6b5a85c504fc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf5329e857b61f044d7eb626620dcb70"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#acf5329e857b61f044d7eb626620dcb70">GetIsHoleFromFloats</a> (float x, float y, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=Sampler::BILINEAR) const =0</td></tr>
+<tr class="memitem:a786a0f4159ab6350757e640292538102"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a786a0f4159ab6350757e640292538102">GetIsHole</a> (const AZ::Vector3 &amp;position, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=Sampler::BILINEAR) const =0</td></tr>
+<tr class="separator:a786a0f4159ab6350757e640292538102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a598b852182234b9e31d8baf65841b684"><td class="memItemLeft" align="right" valign="top"><a id="a598b852182234b9e31d8baf65841b684"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetIsHoleFromVector2</b> (const AZ::Vector2 &amp;position, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=Sampler::BILINEAR) const =0</td></tr>
+<tr class="separator:a598b852182234b9e31d8baf65841b684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf5329e857b61f044d7eb626620dcb70"><td class="memItemLeft" align="right" valign="top"><a id="acf5329e857b61f044d7eb626620dcb70"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetIsHoleFromFloats</b> (float x, float y, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=Sampler::BILINEAR) const =0</td></tr>
 <tr class="separator:acf5329e857b61f044d7eb626620dcb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85f5ecd801336217efaab72f074aaed0"><td class="memItemLeft" align="right" valign="top">virtual AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a85f5ecd801336217efaab72f074aaed0">GetNormal</a> (AZ::Vector3 position, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=Sampler::BILINEAR, bool *terrainExistsPtr=nullptr) const =0</td></tr>
-<tr class="separator:a85f5ecd801336217efaab72f074aaed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa5edc8703bbd56e188a893d9d0a2e5"><td class="memItemLeft" align="right" valign="top">virtual AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#afaa5edc8703bbd56e188a893d9d0a2e5">GetNormal</a> (const AZ::Vector3 &amp;position, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=Sampler::BILINEAR, bool *terrainExistsPtr=nullptr) const =0</td></tr>
+<tr class="separator:afaa5edc8703bbd56e188a893d9d0a2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251628e0b1c7cb3ef39f90f38ed18d7a"><td class="memItemLeft" align="right" valign="top"><a id="a251628e0b1c7cb3ef39f90f38ed18d7a"></a>
+virtual AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetNormalFromVector2</b> (const AZ::Vector2 &amp;position, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=Sampler::BILINEAR, bool *terrainExistsPtr=nullptr) const =0</td></tr>
+<tr class="separator:a251628e0b1c7cb3ef39f90f38ed18d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c9fa1fbb217292b8651ea77977c5ff3"><td class="memItemLeft" align="right" valign="top"><a id="a3c9fa1fbb217292b8651ea77977c5ff3"></a>
 virtual AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetNormalFromFloats</b> (float x, float y, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=Sampler::BILINEAR, bool *terrainExistsPtr=nullptr) const =0</td></tr>
 <tr class="separator:a3c9fa1fbb217292b8651ea77977c5ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd125b94c74ee456b03d96577df7b884"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_tag_weight.html">SurfaceData::SurfaceTagWeight</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#afd125b94c74ee456b03d96577df7b884">GetMaxSurfaceWeight</a> (const AZ::Vector3 &amp;position, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=Sampler::BILINEAR, bool *terrainExistsPtr=nullptr) const =0</td></tr>
+<tr class="separator:afd125b94c74ee456b03d96577df7b884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a465962c346f08a0dfa2fcdcb8473cca3"><td class="memItemLeft" align="right" valign="top"><a id="a465962c346f08a0dfa2fcdcb8473cca3"></a>
+virtual <a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_tag_weight.html">SurfaceData::SurfaceTagWeight</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxSurfaceWeightFromVector2</b> (const AZ::Vector2 &amp;inPosition, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, bool *terrainExistsPtr=nullptr) const =0</td></tr>
+<tr class="separator:a465962c346f08a0dfa2fcdcb8473cca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad32a5128166124b65cecbff5bf23eccb"><td class="memItemLeft" align="right" valign="top"><a id="ad32a5128166124b65cecbff5bf23eccb"></a>
+virtual <a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_tag_weight.html">SurfaceData::SurfaceTagWeight</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxSurfaceWeightFromFloats</b> (float x, float y, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=Sampler::BILINEAR, bool *terrainExistsPtr=nullptr) const =0</td></tr>
+<tr class="separator:ad32a5128166124b65cecbff5bf23eccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a435389590b5fd6fc49626ff3dbb3aab5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a435389590b5fd6fc49626ff3dbb3aab5">GetSurfaceWeights</a> (const AZ::Vector3 &amp;inPosition, SurfaceData::SurfaceTagWeightList &amp;outSurfaceWeights, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, bool *terrainExistsPtr=nullptr) const =0</td></tr>
+<tr class="separator:a435389590b5fd6fc49626ff3dbb3aab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbe8b2d3d2180ef0a66832fc8f8ca6f2"><td class="memItemLeft" align="right" valign="top"><a id="afbe8b2d3d2180ef0a66832fc8f8ca6f2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfaceWeightsFromVector2</b> (const AZ::Vector2 &amp;inPosition, SurfaceData::SurfaceTagWeightList &amp;outSurfaceWeights, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, bool *terrainExistsPtr=nullptr) const =0</td></tr>
+<tr class="separator:afbe8b2d3d2180ef0a66832fc8f8ca6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d3d0318d3bf141fd9c3748c7591bf3"><td class="memItemLeft" align="right" valign="top"><a id="af7d3d0318d3bf141fd9c3748c7591bf3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfaceWeightsFromFloats</b> (float x, float y, SurfaceData::SurfaceTagWeightList &amp;outSurfaceWeights, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, bool *terrainExistsPtr=nullptr) const =0</td></tr>
+<tr class="separator:af7d3d0318d3bf141fd9c3748c7591bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dba3a93972e37600840c78229edf7f2"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a0dba3a93972e37600840c78229edf7f2">GetMaxSurfaceName</a> (const AZ::Vector3 &amp;position, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=Sampler::BILINEAR, bool *terrainExistsPtr=nullptr) const =0</td></tr>
+<tr class="separator:a0dba3a93972e37600840c78229edf7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e6d37729eab9efc741bee254a3b2bd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a72e6d37729eab9efc741bee254a3b2bd">GetSurfacePoint</a> (const AZ::Vector3 &amp;inPosition, <a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_point.html">SurfaceData::SurfacePoint</a> &amp;outSurfacePoint, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, bool *terrainExistsPtr=nullptr) const =0</td></tr>
+<tr class="separator:a72e6d37729eab9efc741bee254a3b2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea79e02d8a6310df7c93e03c6758ab2"><td class="memItemLeft" align="right" valign="top"><a id="a3ea79e02d8a6310df7c93e03c6758ab2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfacePointFromVector2</b> (const AZ::Vector2 &amp;inPosition, <a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_point.html">SurfaceData::SurfacePoint</a> &amp;outSurfacePoint, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, bool *terrainExistsPtr=nullptr) const =0</td></tr>
+<tr class="separator:a3ea79e02d8a6310df7c93e03c6758ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766e0efa4da0f20b2ea0a37378b2ede9"><td class="memItemLeft" align="right" valign="top"><a id="a766e0efa4da0f20b2ea0a37378b2ede9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfacePointFromFloats</b> (float x, float y, <a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_point.html">SurfaceData::SurfacePoint</a> &amp;outSurfacePoint, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, bool *terrainExistsPtr=nullptr) const =0</td></tr>
+<tr class="separator:a766e0efa4da0f20b2ea0a37378b2ede9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -164,8 +195,8 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad437b916c24bc24781dbd090183ab6fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad437b916c24bc24781dbd090183ab6fe">&#9670;&nbsp;</a></span>GetHeight()</h2>
+<a id="a38696519098848771f69175370e71d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38696519098848771f69175370e71d04">&#9670;&nbsp;</a></span>GetHeight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,7 +207,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual float AzFramework::Terrain::TerrainDataRequests::GetHeight </td>
           <td>(</td>
-          <td class="paramtype">AZ::Vector3&#160;</td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
           <td class="paramname"><em>position</em>, </td>
         </tr>
         <tr>
@@ -207,8 +238,8 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="acf5329e857b61f044d7eb626620dcb70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf5329e857b61f044d7eb626620dcb70">&#9670;&nbsp;</a></span>GetIsHoleFromFloats()</h2>
+<a id="a786a0f4159ab6350757e640292538102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a786a0f4159ab6350757e640292538102">&#9670;&nbsp;</a></span>GetIsHole()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,16 +248,10 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool AzFramework::Terrain::TerrainDataRequests::GetIsHoleFromFloats </td>
+          <td class="memname">virtual bool AzFramework::Terrain::TerrainDataRequests::GetIsHole </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -250,8 +275,8 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a691b0eb009c565365c6b5a85c504fc01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a691b0eb009c565365c6b5a85c504fc01">&#9670;&nbsp;</a></span>GetMaxSurfaceName()</h2>
+<a id="a0dba3a93972e37600840c78229edf7f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dba3a93972e37600840c78229edf7f2">&#9670;&nbsp;</a></span>GetMaxSurfaceName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +287,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual const char* AzFramework::Terrain::TerrainDataRequests::GetMaxSurfaceName </td>
           <td>(</td>
-          <td class="paramtype">AZ::Vector3&#160;</td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
           <td class="paramname"><em>position</em>, </td>
         </tr>
         <tr>
@@ -293,8 +318,8 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="aa108eee611e195378ed64010e28c72f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa108eee611e195378ed64010e28c72f3">&#9670;&nbsp;</a></span>GetMaxSurfaceWeight()</h2>
+<a id="afd125b94c74ee456b03d96577df7b884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd125b94c74ee456b03d96577df7b884">&#9670;&nbsp;</a></span>GetMaxSurfaceWeight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,7 +330,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual <a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_tag_weight.html">SurfaceData::SurfaceTagWeight</a> AzFramework::Terrain::TerrainDataRequests::GetMaxSurfaceWeight </td>
           <td>(</td>
-          <td class="paramtype">AZ::Vector3&#160;</td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
           <td class="paramname"><em>position</em>, </td>
         </tr>
         <tr>
@@ -336,8 +361,8 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a85f5ecd801336217efaab72f074aaed0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85f5ecd801336217efaab72f074aaed0">&#9670;&nbsp;</a></span>GetNormal()</h2>
+<a id="afaa5edc8703bbd56e188a893d9d0a2e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaa5edc8703bbd56e188a893d9d0a2e5">&#9670;&nbsp;</a></span>GetNormal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -348,7 +373,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual AZ::Vector3 AzFramework::Terrain::TerrainDataRequests::GetNormal </td>
           <td>(</td>
-          <td class="paramtype">AZ::Vector3&#160;</td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
           <td class="paramname"><em>position</em>, </td>
         </tr>
         <tr>
@@ -379,13 +404,111 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
+<a id="a72e6d37729eab9efc741bee254a3b2bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72e6d37729eab9efc741bee254a3b2bd">&#9670;&nbsp;</a></span>GetSurfacePoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzFramework::Terrain::TerrainDataRequests::GetSurfacePoint </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>inPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_point.html">SurfaceData::SurfacePoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>outSurfacePoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a>&#160;</td>
+          <td class="paramname"><em>sampleFilter</em> = <code><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>terrainExistsPtr</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Given an XY coordinate, return all terrain information at that location. The Vector3 input position version is defined to ignore the input Z value. </p>
+
+</div>
+</div>
+<a id="a435389590b5fd6fc49626ff3dbb3aab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a435389590b5fd6fc49626ff3dbb3aab5">&#9670;&nbsp;</a></span>GetSurfaceWeights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzFramework::Terrain::TerrainDataRequests::GetSurfaceWeights </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>inPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SurfaceData::SurfaceTagWeightList &amp;&#160;</td>
+          <td class="paramname"><em>outSurfaceWeights</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a>&#160;</td>
+          <td class="paramname"><em>sampleFilter</em> = <code><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>terrainExistsPtr</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Given an XY coordinate, return the set of surface types and weights. The Vector3 input position version is defined to ignore the input Z value. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Terrain/TerrainDataRequestBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:49 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:00 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

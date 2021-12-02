@@ -9,7 +9,7 @@ Use a toggle switch to enable users to quickly switch between two states with a 
 
 ![component toggle switch style](/images/tools-ui/component-toggle-switch-style.png)
 
-## Usage guidelines<a name="toggle-switch-usage"></a>
+## Usage guidelines
 
 Follow these guidelines as you design your UI with toggle switches:
 
@@ -23,15 +23,15 @@ Avoid these design choices when using toggle switches:
 + Don't use when the options presented to the user are not binary. For example, if a mail setting has IMAP and POP as the two mail retrieval options, use a radio group instead. In this example there are actually four states - IMAP on, IMAP off, POP on, and POP off.
 + Don't use if the state does not persist or get serialized across sessions. For example, don't use for search filters, since filters are reset each time a user performs a new search.
 
-## Basic toggle switch<a name="toggle-switch-basic"></a>
+## Basic toggle switch
 
 ![component toggle switch basic](/images/tools-ui/component-toggle-switch-basic.png)
 
 Toggle switches are implemented using the **QCheckBox** Qt class. The toggle switch style is then applied using the static function, `AzQtComponents::CheckBox::applyToggleSwitchStyle()`.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <AzQtComponents/Components/Widgets/CheckBox.h>
 #include <QCheckBox>
 
@@ -49,7 +49,7 @@ toggleSwitch->setChecked(false);
 toggleSwitch->setEnabled(false);
 ```
 
-## C++ API reference<a name="toggle-switch-api-ref"></a>
+## C++ API reference
 
 For details on the **checkbox** API used to style a toggle switch, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::CheckBox](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_check_box.html)
@@ -57,7 +57,7 @@ For details on the **checkbox** API used to style a toggle switch, see the follo
 Relevant Qt documentation includes the following topics:
 +  [QCheckBox Class](https://doc.qt.io/qt-5/qcheckbox.html)
 
-## Related links<a name="checkbox-related-links"></a>
+## Related links
 
 For additional information related to the **toggle switch** component, see the following topics:
-+  [Checkbox](uidev-checkbox-component/)
++  [Checkbox](./uidev-checkbox-component)

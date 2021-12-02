@@ -80,7 +80,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ab07332be27c265b6debeb206722b0c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a buffer upload is pending. <br /></td></tr>
 <tr class="separator:ab07332be27c265b6debeb206722b0c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9815c33a8774b0e8284bdb94db226e1"><td class="memItemLeft" align="right" valign="top"><a id="ab9815c33a8774b0e8284bdb94db226e1"></a>
-const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">ModelAsset</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetModelAsset</b> () const</td></tr>
+const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">ModelAsset</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetModelAsset</b> () const</td></tr>
 <tr class="separator:ab9815c33a8774b0e8284bdb94db226e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a567e46abf8aff45f064de3f7a0bd853b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html#a567e46abf8aff45f064de3f7a0bd853b">LocalRayIntersection</a> (const AZ::Vector3 &amp;rayStart, const AZ::Vector3 &amp;rayDir, float &amp;distanceNormalized, AZ::Vector3 &amp;normal) const</td></tr>
 <tr class="separator:a567e46abf8aff45f064de3f7a0bd853b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -94,8 +94,10 @@ const AZStd::unordered_set&lt; AZ::Name &gt; &amp;&#160;</td><td class="memItemR
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aec62827bcbf495be8c8d9479ee1e1e3e"><td class="memItemLeft" align="right" valign="top"><a id="aec62827bcbf495be8c8d9479ee1e1e3e"></a>
-static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html">Model</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FindOrCreate</b> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">ModelAsset</a> &gt; &amp;modelAsset)</td></tr>
+static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html">Model</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FindOrCreate</b> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">ModelAsset</a> &gt; &amp;modelAsset)</td></tr>
 <tr class="separator:aec62827bcbf495be8c8d9479ee1e1e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac58f00095ff0e444542f1fc8165cbee9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html#ac58f00095ff0e444542f1fc8165cbee9">TEMPOrphanFromDatabase</a> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">ModelAsset</a> &gt; &amp;modelAsset)</td></tr>
+<tr class="separator:ac58f00095ff0e444542f1fc8165cbee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -220,6 +222,33 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ModelSystem</b></td>
 
 </div>
 </div>
+<a id="ac58f00095ff0e444542f1fc8165cbee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac58f00095ff0e444542f1fc8165cbee9">&#9670;&nbsp;</a></span>TEMPOrphanFromDatabase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AZ::RPI::Model::TEMPOrphanFromDatabase </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">ModelAsset</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>modelAsset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Orphan the model, its lods, and all their buffers so that they can be replaced in the instance database This is a temporary function, that will be removed once the Model/ModelAsset classes no longer need it </p>
+
+</div>
+</div>
 <a id="a0a99aa5ec5b8e1820a8f56a0afe5cbe3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a99aa5ec5b8e1820a8f56a0afe5cbe3">&#9670;&nbsp;</a></span>WaitForUpload()</h2>
 
@@ -244,7 +273,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ModelSystem</b></td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:56 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

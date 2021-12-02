@@ -166,6 +166,10 @@ AZStd::array_view&lt; Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i
 <tr class="memitem:ae2a8efa05e496d6251f7a2f96ddafb07"><td class="memItemLeft" align="right" valign="top"><a id="ae2a8efa05e496d6251f7a2f96ddafb07"></a>
 AZStd::array_view&lt; Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer.html">Buffer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetBufferArray</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::ShaderInputBufferIndex</a> inputIndex) const</td></tr>
 <tr class="separator:ae2a8efa05e496d6251f7a2f96ddafb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6100eb034faa2a9851f3d56fcff86e1"><td class="memItemLeft" align="right" valign="top"><a id="ad6100eb034faa2a9851f3d56fcff86e1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#ad6100eb034faa2a9851f3d56fcff86e1">ResetViews</a> ()</td></tr>
+<tr class="memdesc:ad6100eb034faa2a9851f3d56fcff86e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset image and buffer views so that it won't hold references for any RHI resources. <br /></td></tr>
+<tr class="separator:ad6100eb034faa2a9851f3d56fcff86e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9097e415b07cf28712df1771eea1456b"><td class="memItemLeft" align="right" valign="top"><a id="a9097e415b07cf28712df1771eea1456b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a9097e415b07cf28712df1771eea1456b">SetImageView</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_input_name_index.html">RHI::ShaderInputNameIndex</a> &amp;inputIndex, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_image_view.html">RHI::ImageView</a> *imageView, uint32_t arrayIndex=0)</td></tr>
 <tr class="memdesc:a9097e415b07cf28712df1771eea1456b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets one image view for the given shader input index. <br /></td></tr>
@@ -356,9 +360,9 @@ AZStd::array_view&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bo
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aba6c995d8a7158a902324954232572e3"><td class="memItemLeft" align="right" valign="top">static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#aba6c995d8a7158a902324954232572e3">Create</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset, const AZ::Name &amp;srgName)</td></tr>
+<tr class="memitem:aba6c995d8a7158a902324954232572e3"><td class="memItemLeft" align="right" valign="top">static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#aba6c995d8a7158a902324954232572e3">Create</a> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset, const AZ::Name &amp;srgName)</td></tr>
 <tr class="separator:aba6c995d8a7158a902324954232572e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ac76dc6663eb5cea44fa4be30dbf760"><td class="memItemLeft" align="right" valign="top">static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a8ac76dc6663eb5cea44fa4be30dbf760">Create</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">SupervariantIndex</a> &amp;supervariantIndex, const AZ::Name &amp;srgName)</td></tr>
+<tr class="memitem:a8ac76dc6663eb5cea44fa4be30dbf760"><td class="memItemLeft" align="right" valign="top">static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a8ac76dc6663eb5cea44fa4be30dbf760">Create</a> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">SupervariantIndex</a> &amp;supervariantIndex, const AZ::Name &amp;srgName)</td></tr>
 <tr class="separator:a8ac76dc6663eb5cea44fa4be30dbf760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -387,7 +391,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderResourceGroupP
         <tr>
           <td class="memname">static Data::Instance&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a>&gt; AZ::RPI::ShaderResourceGroup::Create </td>
           <td>(</td>
-          <td class="paramtype">const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>shaderAsset</em>, </td>
         </tr>
         <tr>
@@ -424,7 +428,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderResourceGroupP
         <tr>
           <td class="memname">static Data::Instance&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a>&gt; AZ::RPI::ShaderResourceGroup::Create </td>
           <td>(</td>
-          <td class="paramtype">const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>shaderAsset</em>, </td>
         </tr>
         <tr>
@@ -554,7 +558,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

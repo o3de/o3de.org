@@ -135,6 +135,8 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html#ac72d98ba72b26370a23aefe6d2814bfa">GetOutputCount</a> () const</td></tr>
 <tr class="memdesc:ac72d98ba72b26370a23aefe6d2814bfa inherit pub_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of output attachment bindings. <br /></td></tr>
 <tr class="separator:ac72d98ba72b26370a23aefe6d2814bfa inherit pub_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad293d8e8ca2690f80800412aab2e3aa9 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html#ad293d8e8ca2690f80800412aab2e3aa9">GetPassTemplate</a> () const</td></tr>
+<tr class="separator:ad293d8e8ca2690f80800412aab2e3aa9 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5579dfa4151d49ff642786c490f83732 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html#a5579dfa4151d49ff642786c490f83732">SetEnabled</a> (bool enabled)</td></tr>
 <tr class="separator:a5579dfa4151d49ff642786c490f83732 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace55b2a3c1d0d4842fb5e3841d9019e3 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a id="ace55b2a3c1d0d4842fb5e3841d9019e3"></a>
@@ -328,7 +330,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>MatchDimensionsToOutp
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnShaderReinitialized</b> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> &amp;shader) override</td></tr>
 <tr class="separator:ac44346218afe5b999ce3f5647f4930e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91b1e561ff52b5e2bf76303e1ba4c405"><td class="memItemLeft" align="right" valign="top"><a id="a91b1e561ff52b5e2bf76303e1ba4c405"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnShaderAssetReinitialized</b> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset) override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnShaderAssetReinitialized</b> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset) override</td></tr>
 <tr class="separator:a91b1e561ff52b5e2bf76303e1ba4c405"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb33d0b69e1d228944edc76f53186d52"><td class="memItemLeft" align="right" valign="top"><a id="afb33d0b69e1d228944edc76f53186d52"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnShaderVariantReinitialized</b> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_variant.html">ShaderVariant</a> &amp;shaderVariant) override</td></tr>
@@ -432,6 +434,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>FrameEnd</b> ()</td><
 <tr class="memitem:a56112fc14a2009c7cd18feed26ce5875 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a id="a56112fc14a2009c7cd18feed26ce5875"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateReadbackAttachment</b> (<a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_1_1_frame_prepare_params.html">FramePrepareParams</a> params, bool beforeAddScopes)</td></tr>
 <tr class="separator:a56112fc14a2009c7cd18feed26ce5875 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a363a79d17b36df6187e89e1f33490176 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a id="a363a79d17b36df6187e89e1f33490176"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateAttachmentCopy</b> (<a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_1_1_frame_prepare_params.html">FramePrepareParams</a> params)</td></tr>
+<tr class="separator:a363a79d17b36df6187e89e1f33490176 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_a_z_1_1_r_h_i_1_1_scope_producer"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_h_i_1_1_scope_producer')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html">AZ::RHI::ScopeProducer</a></td></tr>
 <tr class="memitem:aa9baf156d938f81797608012f54dd298 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_scope_producer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html#aa9baf156d938f81797608012f54dd298">ScopeProducer</a> ()</td></tr>
 <tr class="separator:aa9baf156d938f81797608012f54dd298 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_scope_producer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -559,6 +564,9 @@ AZStd::shared_ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_attachment_rea
 <tr class="memitem:a18d68ecd8c0d83f6c55fba8c93ccf855 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a id="a18d68ecd8c0d83f6c55fba8c93ccf855"></a>
 PassAttachmentReadbackOption&#160;</td><td class="memItemRight" valign="bottom"><b>m_readbackOption</b></td></tr>
 <tr class="separator:a18d68ecd8c0d83f6c55fba8c93ccf855 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a683eae05f9b66815c4f17fa10628010d inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a id="a683eae05f9b66815c4f17fa10628010d"></a>
+AZStd::weak_ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_attachment_copy.html">ImageAttachmentCopy</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_attachmentCopy</b></td></tr>
+<tr class="separator:a683eae05f9b66815c4f17fa10628010d inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -643,7 +651,7 @@ static const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>Messag
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:55 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:56 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

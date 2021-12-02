@@ -73,8 +73,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad116f9be3908c1cefb7d4bd66e7293d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad97300f2a64ec8b6c3b8172d6a2e56e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_network_entity_update_message.html#ad97300f2a64ec8b6c3b8172d6a2e56e3">NetworkEntityUpdateMessage</a> (NetEntityRole entityRole, NetEntityId entityId, const <a class="el" href="struct_multiplayer_1_1_prefab_entity_id.html">PrefabEntityId</a> &amp;prefabEntityId)</td></tr>
 <tr class="separator:ad97300f2a64ec8b6c3b8172d6a2e56e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f43b5a809015770ee7104d57d02917f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_network_entity_update_message.html#a3f43b5a809015770ee7104d57d02917f">NetworkEntityUpdateMessage</a> (NetEntityId entityId, bool isMigrated, bool takeOwnership)</td></tr>
-<tr class="separator:a3f43b5a809015770ee7104d57d02917f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac81cad57a6f82301351c6b51640020ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_network_entity_update_message.html#ac81cad57a6f82301351c6b51640020ae">NetworkEntityUpdateMessage</a> (NetEntityId entityId, bool isMigrated)</td></tr>
+<tr class="separator:ac81cad57a6f82301351c6b51640020ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3c0fec376fd19627266784bf1a04f38"><td class="memItemLeft" align="right" valign="top"><a id="ad3c0fec376fd19627266784bf1a04f38"></a>
 <a class="el" href="class_multiplayer_1_1_network_entity_update_message.html">NetworkEntityUpdateMessage</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_multiplayer_1_1_network_entity_update_message.html">NetworkEntityUpdateMessage</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:ad3c0fec376fd19627266784bf1a04f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,8 +97,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 <tr class="separator:a6ec7d9f553516290b5e4476b5620e678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a265a53f32c87e9cf914418ed03996598"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_network_entity_update_message.html#a265a53f32c87e9cf914418ed03996598">GetWasMigrated</a> () const</td></tr>
 <tr class="separator:a265a53f32c87e9cf914418ed03996598"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ffce1cd8645ac1e68669281024afada"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_network_entity_update_message.html#a2ffce1cd8645ac1e68669281024afada">GetTakeOwnership</a> () const</td></tr>
-<tr class="separator:a2ffce1cd8645ac1e68669281024afada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a532e23118a23a65ed2664175f7b0b98f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_network_entity_update_message.html#a532e23118a23a65ed2664175f7b0b98f">GetHasValidPrefabId</a> () const</td></tr>
 <tr class="separator:a532e23118a23a65ed2664175f7b0b98f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad03a59ca3eef9804dd022a91b5b7818d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_network_entity_update_message.html#ad03a59ca3eef9804dd022a91b5b7818d">SetPrefabEntityId</a> (const <a class="el" href="struct_multiplayer_1_1_prefab_entity_id.html">PrefabEntityId</a> &amp;value)</td></tr>
@@ -210,8 +208,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 
 </div>
 </div>
-<a id="a3f43b5a809015770ee7104d57d02917f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f43b5a809015770ee7104d57d02917f">&#9670;&nbsp;</a></span>NetworkEntityUpdateMessage() <span class="overload">[3/3]</span></h2>
+<a id="ac81cad57a6f82301351c6b51640020ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac81cad57a6f82301351c6b51640020ae">&#9670;&nbsp;</a></span>NetworkEntityUpdateMessage() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,13 +227,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isMigrated</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>takeOwnership</em>&#160;</td>
+          <td class="paramname"><em>isMigrated</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -253,7 +245,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
   <table class="params">
     <tr><td class="paramname">entityId</td><td>the networkId of the entity being deleted </td></tr>
     <tr><td class="paramname">isMigrated</td><td>whether or not the entity is being migrated or deleted </td></tr>
-    <tr><td class="paramname">takeOwnership</td><td>true if the remote replicator should take ownership of the entity </td></tr>
   </table>
   </dd>
 </dl>
@@ -387,24 +378,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 
 </div>
 </div>
-<a id="a2ffce1cd8645ac1e68669281024afada"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ffce1cd8645ac1e68669281024afada">&#9670;&nbsp;</a></span>GetTakeOwnership()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Multiplayer::NetworkEntityUpdateMessage::GetTakeOwnership </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Gets the current value of TakeOwnership. </p><dl class="section return"><dt>Returns</dt><dd>the current value of TakeOwnership </dd></dl>
-
-</div>
-</div>
 <a id="a265a53f32c87e9cf914418ed03996598"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a265a53f32c87e9cf914418ed03996598">&#9670;&nbsp;</a></span>GetWasMigrated()</h2>
 
@@ -520,7 +493,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:57:19 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:16:20 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

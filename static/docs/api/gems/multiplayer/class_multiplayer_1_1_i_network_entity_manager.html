@@ -73,18 +73,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a49f6776d89941716198e53fa11ef1ec4"><td class="memItemLeft" align="right" valign="top"><a id="a49f6776d89941716198e53fa11ef1ec4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html">INetworkEntityManager</a>, &quot;{109759DE-9492-439C-A0B1-AE46E6FD029C}&quot;)</td></tr>
 <tr class="separator:a49f6776d89941716198e53fa11ef1ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37aff4799d16b4d2d2cec8392090e50a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a37aff4799d16b4d2d2cec8392090e50a">Initialize</a> (const HostId &amp;hostId, AZStd::unique_ptr&lt; <a class="el" href="class_multiplayer_1_1_i_entity_domain.html">IEntityDomain</a> &gt; entityDomain)=0</td></tr>
+<tr class="separator:a37aff4799d16b4d2d2cec8392090e50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85049cfd05fd9bf3e293a00299da2259"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a85049cfd05fd9bf3e293a00299da2259">IsInitialized</a> () const =0</td></tr>
+<tr class="separator:a85049cfd05fd9bf3e293a00299da2259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68a640d2d80730a2e903a9849473186"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_multiplayer_1_1_i_entity_domain.html">IEntityDomain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#ad68a640d2d80730a2e903a9849473186">GetEntityDomain</a> () const =0</td></tr>
+<tr class="separator:ad68a640d2d80730a2e903a9849473186"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e32f2e92500b2720926dfac39d8a011"><td class="memItemLeft" align="right" valign="top">virtual NetworkEntityTracker *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a1e32f2e92500b2720926dfac39d8a011">GetNetworkEntityTracker</a> ()=0</td></tr>
 <tr class="separator:a1e32f2e92500b2720926dfac39d8a011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60658c3afc7ce1af8c7eaedeb4da9713"><td class="memItemLeft" align="right" valign="top">virtual NetworkEntityAuthorityTracker *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a60658c3afc7ce1af8c7eaedeb4da9713">GetNetworkEntityAuthorityTracker</a> ()=0</td></tr>
 <tr class="separator:a60658c3afc7ce1af8c7eaedeb4da9713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07892c9c36dde2f81d2d4253c5ac6e85"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_multiplayer_1_1_multiplayer_component_registry.html">MultiplayerComponentRegistry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a07892c9c36dde2f81d2d4253c5ac6e85">GetMultiplayerComponentRegistry</a> ()=0</td></tr>
 <tr class="separator:a07892c9c36dde2f81d2d4253c5ac6e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a780a312ae6b683f622436e82e56f9f4c"><td class="memItemLeft" align="right" valign="top">virtual HostId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a780a312ae6b683f622436e82e56f9f4c">GetHostId</a> () const =0</td></tr>
-<tr class="separator:a780a312ae6b683f622436e82e56f9f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a824d9fef8f21a841361ad25492816747"><td class="memItemLeft" align="right" valign="top">virtual const HostId &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a824d9fef8f21a841361ad25492816747">GetHostId</a> () const =0</td></tr>
+<tr class="separator:a824d9fef8f21a841361ad25492816747"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc8265baaa91743e208150fdda98a28c"><td class="memItemLeft" align="right" valign="top">virtual EntityList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#afc8265baaa91743e208150fdda98a28c">CreateEntitiesImmediate</a> (const <a class="el" href="struct_multiplayer_1_1_prefab_entity_id.html">PrefabEntityId</a> &amp;prefabEntryId, NetEntityRole netEntityRole, const AZ::Transform &amp;transform, AutoActivate autoActivate=AutoActivate::Activate)=0</td></tr>
 <tr class="separator:afc8265baaa91743e208150fdda98a28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7d4cca0388db7bb538d551b4a74f04e"><td class="memItemLeft" align="right" valign="top">virtual EntityList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#ac7d4cca0388db7bb538d551b4a74f04e">CreateEntitiesImmediate</a> (const <a class="el" href="struct_multiplayer_1_1_prefab_entity_id.html">PrefabEntityId</a> &amp;prefabEntryId, NetEntityId netEntityId, NetEntityRole netEntityRole, AutoActivate autoActivate, const AZ::Transform &amp;transform)=0</td></tr>
 <tr class="separator:ac7d4cca0388db7bb538d551b4a74f04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef75625a11e8dec234ad5d579ebb90de"><td class="memItemLeft" align="right" valign="top">virtual AZStd::unique_ptr&lt; AzFramework::EntitySpawnTicket &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#aef75625a11e8dec234ad5d579ebb90de">RequestNetSpawnableInstantiation</a> (const AZ::Data::Asset&lt; AzFramework::Spawnable &gt; &amp;netSpawnable, const AZ::Transform &amp;transform)=0</td></tr>
+<tr class="separator:aef75625a11e8dec234ad5d579ebb90de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1eea949f3bac155bd09502cf8f0c7a2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#ab1eea949f3bac155bd09502cf8f0c7a2">SetupNetEntity</a> (AZ::Entity *netEntity, <a class="el" href="struct_multiplayer_1_1_prefab_entity_id.html">PrefabEntityId</a> prefabEntityId, NetEntityRole netEntityRole)=0</td></tr>
 <tr class="separator:ab1eea949f3bac155bd09502cf8f0c7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1de6f5509975d51c8ab838e806f99dc6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html">ConstNetworkEntityHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a1de6f5509975d51c8ab838e806f99dc6">GetEntity</a> (NetEntityId netEntityId) const =0</td></tr>
@@ -129,6 +137,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a837079f042f200c274bfc3ba345289c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b9d2bb30895a67bc6538d7438b4deb3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a0b9d2bb30895a67bc6538d7438b4deb3">HandleLocalRpcMessage</a> (<a class="el" href="class_multiplayer_1_1_network_entity_rpc_message.html">NetworkEntityRpcMessage</a> &amp;message)=0</td></tr>
 <tr class="separator:a0b9d2bb30895a67bc6538d7438b4deb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500ead1043aabb9b0642bfcbcf669d9b"><td class="memItemLeft" align="right" valign="top"><a id="a500ead1043aabb9b0642bfcbcf669d9b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a500ead1043aabb9b0642bfcbcf669d9b">DebugDraw</a> () const =0</td></tr>
+<tr class="memdesc:a500ead1043aabb9b0642bfcbcf669d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visualization of network entity manager state. <br /></td></tr>
+<tr class="separator:a500ead1043aabb9b0642bfcbcf669d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The interface for managing all networked entities. </p>
@@ -542,8 +554,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a780a312ae6b683f622436e82e56f9f4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a780a312ae6b683f622436e82e56f9f4c">&#9670;&nbsp;</a></span>GetHostId()</h2>
+<a id="ad68a640d2d80730a2e903a9849473186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad68a640d2d80730a2e903a9849473186">&#9670;&nbsp;</a></span>GetEntityDomain()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -552,7 +564,33 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual HostId Multiplayer::INetworkEntityManager::GetHostId </td>
+          <td class="memname">virtual <a class="el" href="class_multiplayer_1_1_i_entity_domain.html">IEntityDomain</a>* Multiplayer::INetworkEntityManager::GetEntityDomain </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the entity domain associated with this network entity manager, this will be nullptr on clients. </p><dl class="section return"><dt>Returns</dt><dd>boolean the entity domain for this network entity manager </dd></dl>
+
+</div>
+</div>
+<a id="a824d9fef8f21a841361ad25492816747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a824d9fef8f21a841361ad25492816747">&#9670;&nbsp;</a></span>GetHostId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const HostId&amp; Multiplayer::INetworkEntityManager::GetHostId </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -711,6 +749,75 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a id="a37aff4799d16b4d2d2cec8392090e50a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37aff4799d16b4d2d2cec8392090e50a">&#9670;&nbsp;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Multiplayer::INetworkEntityManager::Initialize </td>
+          <td>(</td>
+          <td class="paramtype">const HostId &amp;&#160;</td>
+          <td class="paramname"><em>hostId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::unique_ptr&lt; <a class="el" href="class_multiplayer_1_1_i_entity_domain.html">IEntityDomain</a> &gt;&#160;</td>
+          <td class="paramname"><em>entityDomain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Configures the NetworkEntityManager to operate as an authoritative host. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hostId</td><td>the hostId of this NetworkEntityManager </td></tr>
+    <tr><td class="paramname">entityDomain</td><td>the entity domain used to determine which entities this manager has authority over </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a85049cfd05fd9bf3e293a00299da2259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85049cfd05fd9bf3e293a00299da2259">&#9670;&nbsp;</a></span>IsInitialized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Multiplayer::INetworkEntityManager::IsInitialized </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns whether or not the network entity manager has been initialized to host. </p><dl class="section return"><dt>Returns</dt><dd>boolean true if this network entity manager has been intialized to host </dd></dl>
+
+</div>
+</div>
 <a id="a0f820b45c0c5b93f81f18c19aed9c8e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f820b45c0c5b93f81f18c19aed9c8e3">&#9670;&nbsp;</a></span>IsMarkedForRemoval()</h2>
 
@@ -862,6 +969,50 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a id="aef75625a11e8dec234ad5d579ebb90de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef75625a11e8dec234ad5d579ebb90de">&#9670;&nbsp;</a></span>RequestNetSpawnableInstantiation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::unique_ptr&lt;AzFramework::EntitySpawnTicket&gt; Multiplayer::INetworkEntityManager::RequestNetSpawnableInstantiation </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Data::Asset&lt; AzFramework::Spawnable &gt; &amp;&#160;</td>
+          <td class="paramname"><em>netSpawnable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Transform &amp;&#160;</td>
+          <td class="paramname"><em>transform</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Requests a network spawnable to instantiate at a given transform This is an async function. The instantiated entities are not available immediately but will be constructed by the spawnable system The spawnable ticket has to be kept for the whole lifetime of the entities </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">netSpawnable</td><td>the network spawnable to spawn </td></tr>
+    <tr><td class="paramname">transform</td><td>the transform where the spawnable should be spawned </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the ticket for managing the spawned entities </dd></dl>
+
+</div>
+</div>
 <a id="ab1eea949f3bac155bd09502cf8f0c7a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1eea949f3bac155bd09502cf8f0c7a2">&#9670;&nbsp;</a></span>SetupNetEntity()</h2>
 
@@ -918,7 +1069,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:57:19 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:16:20 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

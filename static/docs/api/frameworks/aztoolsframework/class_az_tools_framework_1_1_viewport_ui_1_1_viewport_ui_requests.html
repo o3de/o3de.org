@@ -69,6 +69,10 @@ virtual const <a class="el" href="class_az_tools_framework_1_1_id_type.html">Swi
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a329e0193dfbe1e492eb8950561c88ae4">SetClusterActiveButton</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId)=0</td></tr>
 <tr class="memdesc:a329e0193dfbe1e492eb8950561c88ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the active button of the cluster. This is the button which will display as highlighted. <br /></td></tr>
 <tr class="separator:a329e0193dfbe1e492eb8950561c88ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac22e8771946058ed073d85dc5bbd23f1"><td class="memItemLeft" align="right" valign="top"><a id="ac22e8771946058ed073d85dc5bbd23f1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#ac22e8771946058ed073d85dc5bbd23f1">ClearClusterActiveButton</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId)=0</td></tr>
+<tr class="memdesc:ac22e8771946058ed073d85dc5bbd23f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the active button of the cluster if one is active. The button will no longer display as highlighted. <br /></td></tr>
+<tr class="separator:ac22e8771946058ed073d85dc5bbd23f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66da743ce25c8aa2ce7fe58ce79164c9"><td class="memItemLeft" align="right" valign="top"><a id="a66da743ce25c8aa2ce7fe58ce79164c9"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a66da743ce25c8aa2ce7fe58ce79164c9">SetSwitcherActiveButton</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> clusterId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId)=0</td></tr>
 <tr class="memdesc:a66da743ce25c8aa2ce7fe58ce79164c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the active button of the switcher. This is the button which has a text label. <br /></td></tr>
@@ -102,7 +106,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a0d375bfd76cd12de4fc4de6cdd01b172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a cluster from the Viewport UI system. <br /></td></tr>
 <tr class="separator:a0d375bfd76cd12de4fc4de6cdd01b172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a751e44c1b9bfa1c2291d888b3b41d2f5"><td class="memItemLeft" align="right" valign="top"><a id="a751e44c1b9bfa1c2291d888b3b41d2f5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveSwitcher</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a751e44c1b9bfa1c2291d888b3b41d2f5">RemoveSwitcher</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId)=0</td></tr>
+<tr class="memdesc:a751e44c1b9bfa1c2291d888b3b41d2f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a switcher from the Viewport UI system. <br /></td></tr>
 <tr class="separator:a751e44c1b9bfa1c2291d888b3b41d2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad23b078ebcd8ce2cac915dd2fa3a0c10"><td class="memItemLeft" align="right" valign="top"><a id="ad23b078ebcd8ce2cac915dd2fa3a0c10"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#ad23b078ebcd8ce2cac915dd2fa3a0c10">SetClusterVisible</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, bool visible)=0</td></tr>
@@ -132,20 +137,21 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a0a8548ec628679523ea6e268b1475d9c">SetTextFieldVisible</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">TextFieldId</a> textFieldId, bool visible)=0</td></tr>
 <tr class="memdesc:a0a8548ec628679523ea6e268b1475d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the visibility of the text field. <br /></td></tr>
 <tr class="separator:a0a8548ec628679523ea6e268b1475d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7051787c6138114984dbee8d6529ca5"><td class="memItemLeft" align="right" valign="top"><a id="ad7051787c6138114984dbee8d6529ca5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#ad7051787c6138114984dbee8d6529ca5">CreateComponentModeBorder</a> (const AZStd::string &amp;borderTitle)=0</td></tr>
-<tr class="memdesc:ad7051787c6138114984dbee8d6529ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the highlight border for Component Mode. <br /></td></tr>
-<tr class="separator:ad7051787c6138114984dbee8d6529ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a029565de55b97d90922cb850c020058b"><td class="memItemLeft" align="right" valign="top"><a id="a029565de55b97d90922cb850c020058b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a029565de55b97d90922cb850c020058b">RemoveComponentModeBorder</a> ()=0</td></tr>
-<tr class="memdesc:a029565de55b97d90922cb850c020058b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the highlight border for Component Mode. <br /></td></tr>
-<tr class="separator:a029565de55b97d90922cb850c020058b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5875a27d748f7caf4c98a9550c6021"><td class="memItemLeft" align="right" valign="top"><a id="acd5875a27d748f7caf4c98a9550c6021"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#acd5875a27d748f7caf4c98a9550c6021">CreateViewportBorder</a> (const AZStd::string &amp;borderTitle, AZStd::optional&lt; ViewportUiBackButtonCallback &gt; backButtonCallback)=0</td></tr>
+<tr class="memdesc:acd5875a27d748f7caf4c98a9550c6021"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the highlight border with optional back button to exit the given editor mode. <br /></td></tr>
+<tr class="separator:acd5875a27d748f7caf4c98a9550c6021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd2571ea27cefbcda0ef53ab02eadeb6"><td class="memItemLeft" align="right" valign="top"><a id="afd2571ea27cefbcda0ef53ab02eadeb6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#afd2571ea27cefbcda0ef53ab02eadeb6">RemoveViewportBorder</a> ()=0</td></tr>
+<tr class="memdesc:afd2571ea27cefbcda0ef53ab02eadeb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the highlight border. <br /></td></tr>
+<tr class="separator:afd2571ea27cefbcda0ef53ab02eadeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3626fa2b31652198543aa64e2f05c7b4"><td class="memItemLeft" align="right" valign="top"><a id="a3626fa2b31652198543aa64e2f05c7b4"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a3626fa2b31652198543aa64e2f05c7b4">PressButton</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId)=0</td></tr>
-<tr class="memdesc:a3626fa2b31652198543aa64e2f05c7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke a button press in a cluster. <br /></td></tr>
+<tr class="memdesc:a3626fa2b31652198543aa64e2f05c7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke a button press on a cluster. <br /></td></tr>
 <tr class="separator:a3626fa2b31652198543aa64e2f05c7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a324c8fe399ddee458bc8937cd20f6379"><td class="memItemLeft" align="right" valign="top"><a id="a324c8fe399ddee458bc8937cd20f6379"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PressButton</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a324c8fe399ddee458bc8937cd20f6379">PressButton</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId)=0</td></tr>
+<tr class="memdesc:a324c8fe399ddee458bc8937cd20f6379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke a button press on a switcher. <br /></td></tr>
 <tr class="separator:a324c8fe399ddee458bc8937cd20f6379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -156,7 +162,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PressButton</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:08 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:13 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

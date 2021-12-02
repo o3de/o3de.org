@@ -9,7 +9,7 @@ Script Canvas uses the [behavior context](/docs/user-guide/scripting/script-canv
 
 If your Gem provides custom Script Canvas nodes, you must specify a dependency on the Script Canvas Gem. Functionality that you reflect through the behavior context requires no dependency on the Script Canvas Gem.
 
-Custom nodes in Script Canvas take advantage of [Automating Boilerplate with AZ Code Generator](/docs/user-guide/engine/autogen/) and boilerplate code. These reduce complexity and lets you focus on implementing the behavior of the node.
+Custom nodes in Script Canvas take advantage of [Automating Boilerplate with AZ Code Generator](/docs/user-guide/programming/autogen/) and boilerplate code. These reduce complexity and lets you focus on implementing the behavior of the node.
 
 The following diagram shows the AZ Code Generator process for Script Canvas.
 

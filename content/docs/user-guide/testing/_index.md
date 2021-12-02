@@ -20,7 +20,7 @@ O3DE uses standard test runners to collect, execute, and gather results. The off
 
 ## Test Tools Packages
 
-Open 3D Engine (O3DE) offers several tools packages to make writing tests quicker, safer, and more consistent. Before you write tests, take time to familiarize yourself with the tools.
+**Open 3D Engine (O3DE)** offers several tools packages to make writing tests quicker, safer, and more consistent. Before you write tests, take time to familiarize yourself with the tools.
 
 ### AzTest
 

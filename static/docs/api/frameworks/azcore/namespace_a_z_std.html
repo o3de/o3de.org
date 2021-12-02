@@ -751,6 +751,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1stack__allocator.html">stack_allocator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1stateless__allocator.html">stateless_allocator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1static__buffer__allocator.html">static_buffer_allocator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1static__pool__allocator.html">static_pool_allocator</a></td></tr>
@@ -1671,6 +1673,12 @@ AZ_FORCE_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>opera
 <tr class="memitem:a8a3219d74755e926da16d53b3cfdec38"><td class="memItemLeft" align="right" valign="top"><a id="a8a3219d74755e926da16d53b3cfdec38"></a>
 AZ_FORCE_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_a_z_std_1_1stack__allocator.html">stack_allocator</a> &amp;a, const <a class="el" href="class_a_z_std_1_1stack__allocator.html">stack_allocator</a> &amp;b)</td></tr>
 <tr class="separator:a8a3219d74755e926da16d53b3cfdec38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7b8bb5355427a2bf3851f797693fd6"><td class="memItemLeft" align="right" valign="top"><a id="adf7b8bb5355427a2bf3851f797693fd6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_std_1_1stateless__allocator.html">stateless_allocator</a> &amp;left, const <a class="el" href="class_a_z_std_1_1stateless__allocator.html">stateless_allocator</a> &amp;right)</td></tr>
+<tr class="separator:adf7b8bb5355427a2bf3851f797693fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9450d8d62ce2e4420078005ff4341084"><td class="memItemLeft" align="right" valign="top"><a id="a9450d8d62ce2e4420078005ff4341084"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_a_z_std_1_1stateless__allocator.html">stateless_allocator</a> &amp;left, const <a class="el" href="class_a_z_std_1_1stateless__allocator.html">stateless_allocator</a> &amp;right)</td></tr>
+<tr class="separator:a9450d8d62ce2e4420078005ff4341084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c7d47e9fc25978e0ac298a1a5511da9"><td class="memTemplParams" colspan="2"><a id="a5c7d47e9fc25978e0ac298a1a5511da9"></a>
 template&lt;AZStd::size_t Size, AZStd::size_t Alignment&gt; </td></tr>
 <tr class="memitem:a5c7d47e9fc25978e0ac298a1a5511da9"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_std_1_1static__buffer__allocator.html">static_buffer_allocator</a>&lt; Size, Alignment &gt; &amp;a, const <a class="el" href="class_a_z_std_1_1static__buffer__allocator.html">static_buffer_allocator</a>&lt; Size, Alignment &gt; &amp;b)</td></tr>
@@ -2235,9 +2243,9 @@ template&lt;class T , class Allocator , class Predicate &gt; </td></tr>
 <tr class="memitem:a6e63b1e12b348391bebb3afc8988a5c1"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt , size_t N&gt; </td></tr>
 <tr class="memitem:a6e63b1e12b348391bebb3afc8988a5c1"><td class="memTemplItemLeft" align="right" valign="top">constexpr ForwardIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_z_std.html#a6e63b1e12b348391bebb3afc8988a5c1">destroy_n</a> (ForwardIt first, size_t numElements)</td></tr>
 <tr class="separator:a6e63b1e12b348391bebb3afc8988a5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb06618e8e5622f6eaea86d3e62b1c86"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
-<tr class="memitem:adb06618e8e5622f6eaea86d3e62b1c86"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_z_std.html#adb06618e8e5622f6eaea86d3e62b1c86">construct_at</a> (T *ptr, Args &amp;&amp;... args) -&gt; enable_if_t&lt; is_void_v&lt; void_t&lt; decltype(new(declval&lt; void * &gt;()) T(AZStd::forward&lt; Args &gt;(args)...))&gt;&gt;, T * &gt;</td></tr>
-<tr class="separator:adb06618e8e5622f6eaea86d3e62b1c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced73d319f6e1be2b8847ca423e66441"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:aced73d319f6e1be2b8847ca423e66441"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_z_std.html#aced73d319f6e1be2b8847ca423e66441">construct_at</a> (T *ptr, Args &amp;&amp;... args) -&gt; enable_if_t&lt; AZStd::is_void_v&lt; AZStd::void_t&lt; decltype(new(AZStd::declval&lt; void * &gt;()) T(AZStd::forward&lt; Args &gt;(args)...))&gt;&gt;, T * &gt;</td></tr>
+<tr class="separator:aced73d319f6e1be2b8847ca423e66441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21c483b6b1bbaab60d75bacd9c84f513"><td class="memTemplParams" colspan="2">template&lt;class InputIterator , class ForwardIterator &gt; </td></tr>
 <tr class="memitem:a21c483b6b1bbaab60d75bacd9c84f513"><td class="memTemplItemLeft" align="right" valign="top">constexpr ForwardIterator&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_z_std.html#a21c483b6b1bbaab60d75bacd9c84f513">uninitialized_copy</a> (const InputIterator &amp;first, const InputIterator &amp;last, ForwardIterator result, const false_type &amp;)</td></tr>
 <tr class="separator:a21c483b6b1bbaab60d75bacd9c84f513"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2402,6 +2410,15 @@ template&lt;typename R , typename... Args&gt; </td></tr>
 template&lt;class F , class... Args&gt; </td></tr>
 <tr class="memitem:a97ca1f7360b3db54cc2f5becc76a287f"><td class="memTemplItemLeft" align="right" valign="top">constexpr invoke_result_t&lt; F, Args... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>invoke</b> (F &amp;&amp;f, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a97ca1f7360b3db54cc2f5becc76a287f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6593f9c42af0795ecf13025997cd972b"><td class="memItemLeft" align="right" valign="top"><a id="a6593f9c42af0795ecf13025997cd972b"></a>
+constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>lerp</b> (float a, float b, float t) noexcept</td></tr>
+<tr class="separator:a6593f9c42af0795ecf13025997cd972b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9078f04fb22d967f9888c29e706402"><td class="memItemLeft" align="right" valign="top"><a id="a4d9078f04fb22d967f9888c29e706402"></a>
+constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>lerp</b> (double a, double b, double t) noexcept</td></tr>
+<tr class="separator:a4d9078f04fb22d967f9888c29e706402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e79cf922b467905f08fcd1d752208c"><td class="memItemLeft" align="right" valign="top"><a id="ab0e79cf922b467905f08fcd1d752208c"></a>
+constexpr long double&#160;</td><td class="memItemRight" valign="bottom"><b>lerp</b> (long double a, long double b, long double t) noexcept</td></tr>
+<tr class="separator:ab0e79cf922b467905f08fcd1d752208c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a289f570ae3d7f19385e619c8d27c9c9f"><td class="memTemplParams" colspan="2"><a id="a289f570ae3d7f19385e619c8d27c9c9f"></a>
 template&lt;typename InputIt , typename T &gt; </td></tr>
 <tr class="memitem:a289f570ae3d7f19385e619c8d27c9c9f"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>accumulate</b> (InputIt first, InputIt last, T init)</td></tr>
@@ -4292,8 +4309,8 @@ template&lt;class InputIter , class UnaryOperation &gt; </div>
 
 </div>
 </div>
-<a id="adb06618e8e5622f6eaea86d3e62b1c86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb06618e8e5622f6eaea86d3e62b1c86">&#9670;&nbsp;</a></span>construct_at()</h2>
+<a id="aced73d319f6e1be2b8847ca423e66441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced73d319f6e1be2b8847ca423e66441">&#9670;&nbsp;</a></span>construct_at()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4318,7 +4335,7 @@ template&lt;typename T , typename... Args&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; enable_if_t&lt;is_void_v&lt;void_t&lt;decltype(new (declval&lt;void*&gt;()) T(AZStd::forward&lt;Args&gt;(args)...))&gt;&gt;, T*&gt;
+          <td></td><td> -&gt; enable_if_t&lt;AZStd::is_void_v&lt;AZStd::void_t&lt;decltype(new (AZStd::declval&lt;void*&gt;()) T(AZStd::forward&lt;Args&gt;(args)...))&gt;&gt;, T*&gt;
     </td>
         </tr>
       </table>
@@ -5279,7 +5296,7 @@ template&lt;typename BinaryOp &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:13 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:14:28 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

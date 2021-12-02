@@ -153,6 +153,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_az_type_info_3_01_t_00_01true_01_4.html">AzTypeInfo&lt; T, true &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_base_json_importer.html">BaseJsonImporter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_base_json_integer_serializer.html">BaseJsonIntegerSerializer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_base_json_matrix_serializer.html">BaseJsonMatrixSerializer</a></td></tr>
@@ -426,7 +428,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_iterator___v_m_3_01_a_z_std_1_1vector_3_01t___value_00_01t___allocator_01_4_01_4.html">Iterator_VM&lt; AZStd::vector&lt; t_Value, t_Allocator &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html">ITime</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an AZ::Interface&lt;&gt; for managing time related operations.  <a href="class_a_z_1_1_i_time.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an AZ::Interface&lt;&gt; for managing time related operations. <a class="el" href="class_a_z_1_1_i_time.html" title="This is an AZ::Interface&lt;&gt; for managing time related operations. AZ::ITime and associated types may n...">AZ::ITime</a> and associated types may not operate in realtime. These abstractions are to allow our application simulation to operate both slower and faster than realtime in a well defined and user controllable manner The rate at which time passes for <a class="el" href="class_a_z_1_1_i_time.html" title="This is an AZ::Interface&lt;&gt; for managing time related operations. AZ::ITime and associated types may n...">AZ::ITime</a> is controlled by the cvar t_scale t_scale == 0 means simulation time should halt 0 &lt; t_scale &lt; 1 will cause time to pass slower than realtime, with t_scale 0.1 being roughly 1/10th realtime t_scale == 1 will cause time to pass at roughly realtime t_scale &gt; 1 will cause time to pass faster than normal, with t_scale 10 being roughly 10x realtime.  <a href="class_a_z_1_1_i_time.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time_requests.html">ITimeRequests</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -465,6 +467,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_basic_container_serializer.html">JsonBasicContainerSerializer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_bitset_serializer.html">JsonBitsetSerializer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_bool_serializer.html">JsonBoolSerializer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_byte_stream_serializer.html">JsonByteStreamSerializer</a></td></tr>
@@ -490,6 +494,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_entity_serializer.html">JsonEntitySerializer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_float_serializer.html">JsonFloatSerializer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_import_resolver.html">JsonImportResolver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_json_import_settings.html">JsonImportSettings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_int_serializer.html">JsonIntSerializer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1046,7 +1054,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_task_graph.html">TaskGraph</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_task_graph_active_interface.html">TaskGraphActiveInterface</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_task_graph_event.html">TaskGraphEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_task_graph_system_component.html">TaskGraphSystemComponent</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_task_token.html">TaskToken</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1065,7 +1077,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_tick_requests.html">TickRequests</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_time_system_component.html">TimeSystemComponent</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the <a class="el" href="class_a_z_1_1_i_time.html" title="This is an AZ::Interface&lt;&gt; for managing time related operations.">ITime</a> system interface.  <a href="class_a_z_1_1_time_system_component.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the <a class="el" href="class_a_z_1_1_i_time.html" title="This is an AZ::Interface&lt;&gt; for managing time related operations. AZ::ITime and associated types may n...">ITime</a> system interface.  <a href="class_a_z_1_1_time_system_component.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_transform.html">Transform</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1522,11 +1534,9 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespace_a_z.html#a62ef7e159c578958b5ac0b9c819b3fa9ab0396cbeb45da6f3104ca9f364890ff0">TICK_ATTACHMENT</a> = 500, 
 <br />
 &#160;&#160;<a class="el" href="namespace_a_z.html#a62ef7e159c578958b5ac0b9c819b3fa9a6ed1b659b4b369094d5bb3b084bb523e">TICK_PRE_RENDER</a> = 750, 
-<a class="el" href="namespace_a_z.html#a62ef7e159c578958b5ac0b9c819b3fa9a8f2e969bb51bdd2a7c39872a75a9dbe6">TICK_RENDER</a> = 800, 
 <a class="el" href="namespace_a_z.html#a62ef7e159c578958b5ac0b9c819b3fa9a8d7b7e67448f763dee2bc9d8cc52b34a">TICK_DEFAULT</a> = 1000, 
 <a class="el" href="namespace_a_z.html#a62ef7e159c578958b5ac0b9c819b3fa9aa139d4150ab9b571005b9507d0aaec4e">TICK_UI</a> = 2000, 
-<br />
-&#160;&#160;<a class="el" href="namespace_a_z.html#a62ef7e159c578958b5ac0b9c819b3fa9ae4991250ef67eab5fae4992647a2dcbd">TICK_LAST</a> = 100000
+<a class="el" href="namespace_a_z.html#a62ef7e159c578958b5ac0b9c819b3fa9ae4991250ef67eab5fae4992647a2dcbd">TICK_LAST</a> = 100000
 <br />
  }</td></tr>
 <tr class="separator:a62ef7e159c578958b5ac0b9c819b3fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1707,6 +1717,12 @@ Enumerations</h2></td></tr>
 <b>CryScriptContextId</b> = 1
  }</td></tr>
 <tr class="separator:ad19fdaa2e1b1c07a04396543ad008927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c567a51310ff14b8bf5604b1670290"><td class="memItemLeft" align="right" valign="top"><a id="a43c567a51310ff14b8bf5604b1670290"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ImportTracking</b> : AZ::u8 { <b>None</b> = 0, 
+<b>Dependencies</b> = (1&lt;&lt;0), 
+<b>Imports</b> = (1&lt;&lt;1), 
+<b>All</b> = (Dependencies | Imports)
+ }</td></tr>
+<tr class="separator:a43c567a51310ff14b8bf5604b1670290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a408cd8672ae4532f76638045f0746b5e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#a408cd8672ae4532f76638045f0746b5e">JsonMergeApproach</a> { <a class="el" href="namespace_a_z.html#a408cd8672ae4532f76638045f0746b5eafdaf6e2538f75fd867f5fd074b046411">JsonMergeApproach::JsonPatch</a>, 
 <a class="el" href="namespace_a_z.html#a408cd8672ae4532f76638045f0746b5eab3bcd102c185556673c53e2a5586be11">JsonMergeApproach::JsonMergePatch</a>
  }</td></tr>
@@ -2687,6 +2703,9 @@ static const AZ_INLINE <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a>&#1
 <tr class="memitem:ab036def1722bf6dd94437e17af299994"><td class="memTemplParams" colspan="2">template&lt;typename ToType , typename FromType &gt; </td></tr>
 <tr class="memitem:ab036def1722bf6dd94437e17af299994"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#ab036def1722bf6dd94437e17af299994">JsonNumericCast</a> (ToType &amp;result, FromType value, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> path, const <a class="el" href="class_a_z_std_1_1function.html">AZ::JsonSerializationResult::JsonIssueCallback</a> &amp;reporting)</td></tr>
 <tr class="separator:ab036def1722bf6dd94437e17af299994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1cb9f951669872b4914313003bb46f6"><td class="memItemLeft" align="right" valign="top"><a id="ab1cb9f951669872b4914313003bb46f6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DEFINE_ENUM_BITWISE_OPERATORS</b> (ImportTracking)</td></tr>
+<tr class="separator:ab1cb9f951669872b4914313003bb46f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a481bc8ca656a80ad21224a927bf202a6"><td class="memItemLeft" align="right" valign="top"><a id="a481bc8ca656a80ad21224a927bf202a6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_SPECIALIZE</b> (<a class="el" href="namespace_a_z.html#a7666d3f9dc0fcb4669d8ce2a1b5d1960">ObjectStreamWriteOverrideCB</a>, &quot;{87B1A36B-8C8A-42B6-A0B5-E770D9FDBAD4}&quot;)</td></tr>
 <tr class="separator:a481bc8ca656a80ad21224a927bf202a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2709,10 +2728,40 @@ static const AZ_INLINE <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a>&#1
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#a9c10b392bc162b3189f0bbaa5517fc0d">AZ_TYPE_SAFE_INTEGRAL</a> (TimeMs, int64_t)</td></tr>
 <tr class="memdesc:a9c10b392bc162b3189f0bbaa5517fc0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a strong typedef for representing a millisecond value since application start. <br /></td></tr>
 <tr class="separator:a9c10b392bc162b3189f0bbaa5517fc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a86c9677fe9110e180e8807ceb9cc25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#a5a86c9677fe9110e180e8807ceb9cc25">AZ_TYPE_SAFE_INTEGRAL</a> (TimeUs, int64_t)</td></tr>
+<tr class="separator:a5a86c9677fe9110e180e8807ceb9cc25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3217c2038f297fb68def30f909f3cbb2"><td class="memItemLeft" align="right" valign="top"><a id="a3217c2038f297fb68def30f909f3cbb2"></a>
 TimeMs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#a3217c2038f297fb68def30f909f3cbb2">GetElapsedTimeMs</a> ()</td></tr>
 <tr class="memdesc:a3217c2038f297fb68def30f909f3cbb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a simple convenience wrapper. <br /></td></tr>
 <tr class="separator:a3217c2038f297fb68def30f909f3cbb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd90c27f506ba9defb47a68a6b829e7f"><td class="memItemLeft" align="right" valign="top"><a id="acd90c27f506ba9defb47a68a6b829e7f"></a>
+TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#acd90c27f506ba9defb47a68a6b829e7f">GetElapsedTimeUs</a> ()</td></tr>
+<tr class="memdesc:acd90c27f506ba9defb47a68a6b829e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a simple convenience wrapper. <br /></td></tr>
+<tr class="separator:acd90c27f506ba9defb47a68a6b829e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c7f42985817fb8bcd50ef43e0bd0c0"><td class="memItemLeft" align="right" valign="top"><a id="af3c7f42985817fb8bcd50ef43e0bd0c0"></a>
+TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#af3c7f42985817fb8bcd50ef43e0bd0c0">TimeMsToUs</a> (TimeMs value)</td></tr>
+<tr class="memdesc:af3c7f42985817fb8bcd50ef43e0bd0c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts from milliseconds to microseconds. <br /></td></tr>
+<tr class="separator:af3c7f42985817fb8bcd50ef43e0bd0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88497418ba16fb91d50beb50023c25de"><td class="memItemLeft" align="right" valign="top"><a id="a88497418ba16fb91d50beb50023c25de"></a>
+TimeMs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#a88497418ba16fb91d50beb50023c25de">TimeUsToMs</a> (TimeUs value)</td></tr>
+<tr class="memdesc:a88497418ba16fb91d50beb50023c25de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts from microseconds to milliseconds. <br /></td></tr>
+<tr class="separator:a88497418ba16fb91d50beb50023c25de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4949d0a185290e887e512851bd1c992a"><td class="memItemLeft" align="right" valign="top"><a id="a4949d0a185290e887e512851bd1c992a"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#a4949d0a185290e887e512851bd1c992a">TimeMsToSeconds</a> (TimeMs value)</td></tr>
+<tr class="memdesc:a4949d0a185290e887e512851bd1c992a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts from milliseconds to seconds. <br /></td></tr>
+<tr class="separator:a4949d0a185290e887e512851bd1c992a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af82ede4a032ccfa69850af1fdafe7cba"><td class="memItemLeft" align="right" valign="top"><a id="af82ede4a032ccfa69850af1fdafe7cba"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#af82ede4a032ccfa69850af1fdafe7cba">TimeUsToSeconds</a> (TimeUs value)</td></tr>
+<tr class="memdesc:af82ede4a032ccfa69850af1fdafe7cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts from microseconds to seconds. <br /></td></tr>
+<tr class="separator:af82ede4a032ccfa69850af1fdafe7cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912f2b8ed1b57298cb50c41c988de3d8"><td class="memItemLeft" align="right" valign="top"><a id="a912f2b8ed1b57298cb50c41c988de3d8"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#a912f2b8ed1b57298cb50c41c988de3d8">TimeMsToChrono</a> (TimeMs value)</td></tr>
+<tr class="memdesc:a912f2b8ed1b57298cb50c41c988de3d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts from milliseconds to <a class="el" href="class_a_z_std_1_1chrono_1_1time__point.html">AZStd::chrono::time_point</a>. <br /></td></tr>
+<tr class="separator:a912f2b8ed1b57298cb50c41c988de3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c6cb6dc94c6bb7ee8b4b0b2306612f"><td class="memItemLeft" align="right" valign="top"><a id="a44c6cb6dc94c6bb7ee8b4b0b2306612f"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#a44c6cb6dc94c6bb7ee8b4b0b2306612f">TimeUsToChrono</a> (TimeUs value)</td></tr>
+<tr class="memdesc:a44c6cb6dc94c6bb7ee8b4b0b2306612f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts from microseconds to <a class="el" href="class_a_z_std_1_1chrono_1_1time__point.html">AZStd::chrono::time_point</a>. <br /></td></tr>
+<tr class="separator:a44c6cb6dc94c6bb7ee8b4b0b2306612f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e8d54d6a862264a7e6b250a503ce2a6"><td class="memItemLeft" align="right" valign="top"><a id="a8e8d54d6a862264a7e6b250a503ce2a6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_SAFE_INTEGRAL</b> (HashValue32, u32)</td></tr>
 <tr class="separator:a8e8d54d6a862264a7e6b250a503ce2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2924,6 +2973,7 @@ static const <a class="el" href="namespace_a_z.html#ad49ae84c220453bc7b80048c9da
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Reopen namespace to define <a class="el" href="class_a_z_1_1_data_patch.html">DataPatch</a> class. </p>
 <p>Namespace for string functions.</p>
+<p>include <a class="el" href="namespace_a_z_std.html" title="AZ namespace needs to be closed in order to specialize the AZStd::hash struct for AddressTypeElement ...">AZStd</a> containers generics</p>
 <p>Data types with specific length. They should be used ONLY when we serialize data if they have native type equivalent, which should take precedence.</p>
 <p>Utility functions for convertings math types into strings.</p>
 <p>A utility file to convert <a class="el" href="namespace_a_z.html" title="Reopen namespace to define DataPatch class.">AZ</a> Vectors between each other</p>
@@ -3382,8 +3432,6 @@ static const <a class="el" href="namespace_a_z.html#ad49ae84c220453bc7b80048c9da
 </td></tr>
 <tr><td class="fieldname"><a id="a62ef7e159c578958b5ac0b9c819b3fa9a6ed1b659b4b369094d5bb3b084bb523e"></a>TICK_PRE_RENDER&#160;</td><td class="fielddoc"><p>Suggested tick handler position to update render-related data. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a62ef7e159c578958b5ac0b9c819b3fa9a8f2e969bb51bdd2a7c39872a75a9dbe6"></a>TICK_RENDER&#160;</td><td class="fielddoc"><p>Suggested tick handler position for rendering. </p>
-</td></tr>
 <tr><td class="fieldname"><a id="a62ef7e159c578958b5ac0b9c819b3fa9a8d7b7e67448f763dee2bc9d8cc52b34a"></a>TICK_DEFAULT&#160;</td><td class="fielddoc"><p>Default tick handler position when the handler is constructed. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a62ef7e159c578958b5ac0b9c819b3fa9aa139d4150ab9b571005b9507d0aaec4e"></a>TICK_UI&#160;</td><td class="fielddoc"><p>Suggested tick handler position for UI components. </p>
@@ -3779,6 +3827,35 @@ template&lt;typename T , typename S &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Helper class to determine if type T has a AZ_CLASS_ALLOCATOR defined, so we can safely call aznew on it. - AZClassAllocator&lt;ClassType&gt;.... </p>
+
+</div>
+</div>
+<a id="a5a86c9677fe9110e180e8807ceb9cc25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a86c9677fe9110e180e8807ceb9cc25">&#9670;&nbsp;</a></span>AZ_TYPE_SAFE_INTEGRAL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ::AZ_TYPE_SAFE_INTEGRAL </td>
+          <td>(</td>
+          <td class="paramtype">TimeUs&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is a strong typedef for representing a microsecond value since application start. Using int64_t as the underlying type, this is good to represent approximately 292,471 years </p>
 
 </div>
 </div>
@@ -5850,7 +5927,7 @@ template&lt;class ValueT , class &gt; </div>
 <div class="ttc" id="aclass_a_z_1_1_module_html"><div class="ttname"><a href="class_a_z_1_1_module.html">AZ::Module</a></div><div class="ttdef"><b>Definition:</b> Module.h:31</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:04 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:14:21 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

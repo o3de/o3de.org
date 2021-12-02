@@ -66,21 +66,25 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:addde850352f52414d8a77732412ee5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c1a53e16fd398ca0e283dbcafc2aafc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_heap_memory_usage.html#a7c1a53e16fd398ca0e283dbcafc2aafc">TryReserveMemory</a> (size_t sizeInBytes)</td></tr>
 <tr class="separator:a7c1a53e16fd398ca0e283dbcafc2aafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39c25554e14198b36f3c6e8213964d92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_heap_memory_usage.html#a39c25554e14198b36f3c6e8213964d92">Validate</a> ()</td></tr>
+<tr class="memitem:a39c25554e14198b36f3c6e8213964d92"><td class="memItemLeft" align="right" valign="top"><a id="a39c25554e14198b36f3c6e8213964d92"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_heap_memory_usage.html#a39c25554e14198b36f3c6e8213964d92">Validate</a> ()</td></tr>
+<tr class="memdesc:a39c25554e14198b36f3c6e8213964d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to validate sizes. <br /></td></tr>
 <tr class="separator:a39c25554e14198b36f3c6e8213964d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa74a3297981ce7083d28d87c91f9b260"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_heap_memory_usage.html#aa74a3297981ce7083d28d87c91f9b260">m_budgetInBytes</a> = 0</td></tr>
+<tr class="memitem:aa74a3297981ce7083d28d87c91f9b260"><td class="memItemLeft" align="right" valign="top"><a id="aa74a3297981ce7083d28d87c91f9b260"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_budgetInBytes</b> = 0</td></tr>
 <tr class="separator:aa74a3297981ce7083d28d87c91f9b260"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a685f7051be63eb089b65e513cf4b9003"><td class="memItemLeft" align="right" valign="top">AZStd::atomic_size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_heap_memory_usage.html#a685f7051be63eb089b65e513cf4b9003">m_reservedInBytes</a> { 0 }</td></tr>
+<tr class="memitem:a685f7051be63eb089b65e513cf4b9003"><td class="memItemLeft" align="right" valign="top"><a id="a685f7051be63eb089b65e513cf4b9003"></a>
+AZStd::atomic_size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_reservedInBytes</b> { 0 }</td></tr>
 <tr class="separator:a685f7051be63eb089b65e513cf4b9003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a531d7a9c5d5efdece882a94a56269a59"><td class="memItemLeft" align="right" valign="top">AZStd::atomic_size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_heap_memory_usage.html#a531d7a9c5d5efdece882a94a56269a59">m_residentInBytes</a> { 0 }</td></tr>
+<tr class="memitem:a531d7a9c5d5efdece882a94a56269a59"><td class="memItemLeft" align="right" valign="top"><a id="a531d7a9c5d5efdece882a94a56269a59"></a>
+AZStd::atomic_size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_residentInBytes</b> { 0 }</td></tr>
 <tr class="separator:a531d7a9c5d5efdece882a94a56269a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Tracks memory usage for a specific heap in the system. The data is expected to adhere to the following constraints:</p>
-<p>1) Reserved &lt;= Budget (unless the budget is 0). 2) Resident &lt;= Reserved. </p>
+<div class="textblock"><p>Tracks memory usage for a specific heap in the system. The data is expected to adhere to the following constraints: 1) Reserved &lt;= Budget (unless the budget is 0). 2) Resident &lt;= Reserved. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7c1a53e16fd398ca0e283dbcafc2aafc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c1a53e16fd398ca0e283dbcafc2aafc">&#9670;&nbsp;</a></span>TryReserveMemory()</h2>
@@ -105,8 +109,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This helper reserves memory in a thread-safe fashion. If the result exceeds the budget, the reservation is safely reverted and false is returned. otherwise, true is returned. Only m_reservedInBytes is affected.</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>This helper reserves memory in a thread-safe fashion. If the result exceeds the budget, the reservation is safely reverted and false is returned. otherwise, true is returned. Only m_reservedInBytes is affected. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sizeInBytes</td><td>The amount of bytes to reserve. </td></tr>
   </table>
@@ -116,85 +119,13 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a39c25554e14198b36f3c6e8213964d92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39c25554e14198b36f3c6e8213964d92">&#9670;&nbsp;</a></span>Validate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::RHI::HeapMemoryUsage::Validate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Helper function to validate sizes </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="aa74a3297981ce7083d28d87c91f9b260"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa74a3297981ce7083d28d87c91f9b260">&#9670;&nbsp;</a></span>m_budgetInBytes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t AZ::RHI::HeapMemoryUsage::m_budgetInBytes = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The budget for the heap in bytes. A non-zero budget means the pool will reject reservation requests once the budget is exceeded. A zero budget effectively disables this check. On certain platforms, it may be unnecessary to budget certain heaps. Other platforms may require a non-zero budget for certain heaps. </p>
-
-</div>
-</div>
-<a id="a685f7051be63eb089b65e513cf4b9003"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a685f7051be63eb089b65e513cf4b9003">&#9670;&nbsp;</a></span>m_reservedInBytes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZStd::atomic_size_t AZ::RHI::HeapMemoryUsage::m_reservedInBytes { 0 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Number of bytes reserved on the heap for allocations. This value represents the allocation capacity for the platform. It is validated against the budget and may not exceed it. </p>
-
-</div>
-</div>
-<a id="a531d7a9c5d5efdece882a94a56269a59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a531d7a9c5d5efdece882a94a56269a59">&#9670;&nbsp;</a></span>m_residentInBytes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZStd::atomic_size_t AZ::RHI::HeapMemoryUsage::m_residentInBytes { 0 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Number of bytes physically allocated on the heap. This may not exceed the reservation. Certain platforms may choose to transfer memory down the heap level hierarchy in response to memory trim events from the driver. </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Gems/Atom/RHI/Code/Include/Atom/RHI.Reflect/MemoryUsage.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:53 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:54 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

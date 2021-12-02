@@ -66,6 +66,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_editor_modifier_key_requests.html">EditorModifierKeyRequests</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An interface to query editor modifier keys.  <a href="class_az_tools_framework_1_1_viewport_interaction_1_1_editor_modifier_key_requests.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_editor_viewport_input_time_now_requests.html">EditorViewportInputTimeNowRequests</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_interaction_id.html">InteractionId</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information relevant when interacting with a particular viewport.  <a href="struct_az_tools_framework_1_1_viewport_interaction_1_1_interaction_id.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,6 +143,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>EditorEntityViewport
 <tr class="memitem:a8a02a76362119a4e3d193f03565e06ce"><td class="memItemLeft" align="right" valign="top"><a id="a8a02a76362119a4e3d193f03565e06ce"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>EditorModifierKeyRequestBus</b> = AZ::EBus&lt; <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_editor_modifier_key_requests.html">EditorModifierKeyRequests</a> &gt;</td></tr>
 <tr class="separator:a8a02a76362119a4e3d193f03565e06ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06fb7431ece03099adbf424ad733756a"><td class="memItemLeft" align="right" valign="top"><a id="a06fb7431ece03099adbf424ad733756a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>EditorViewportInputTimeNowRequestBus</b> = AZ::EBus&lt; <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_editor_viewport_input_time_now_requests.html">EditorViewportInputTimeNowRequests</a> &gt;</td></tr>
+<tr class="separator:a06fb7431ece03099adbf424ad733756a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49cc63578c87b0f36ed4194bc4b0728b"><td class="memItemLeft" align="right" valign="top"><a id="a49cc63578c87b0f36ed4194bc4b0728b"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_az_tools_framework_1_1_viewport_interaction.html#a49cc63578c87b0f36ed4194bc4b0728b">ViewportMouseCursorRequestBus</a> = AZ::EBus&lt; <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_mouse_cursor_requests.html">ViewportMouseCursorRequests</a>, <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_e_bus_traits.html">ViewportEBusTraits</a> &gt;</td></tr>
 <tr class="memdesc:a49cc63578c87b0f36ed4194bc4b0728b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type to inherit to implement <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_main_editor_viewport_interaction_requests.html" title="Viewport requests that are only guaranteed to be serviced by the Main Editor viewport.">MainEditorViewportInteractionRequests</a>. <br /></td></tr>
@@ -154,6 +159,10 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:adfb666d820232760737df1ad1a79b006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result of handling mouse interaction.  <a href="namespace_az_tools_framework_1_1_viewport_interaction.html#adfb666d820232760737df1ad1a79b006">More...</a><br /></td></tr>
 <tr class="separator:adfb666d820232760737df1ad1a79b006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab44dbc924ebc5684304baf34fd5dc4d0"><td class="memItemLeft" align="right" valign="top"><a id="ab44dbc924ebc5684304baf34fd5dc4d0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_az_tools_framework_1_1_viewport_interaction.html#ab44dbc924ebc5684304baf34fd5dc4d0">CursorStyleOverride</a> { <b>Forbidden</b>
+ }</td></tr>
+<tr class="memdesc:ab44dbc924ebc5684304baf34fd5dc4d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The style of cursor override. <br /></td></tr>
+<tr class="separator:ab44dbc924ebc5684304baf34fd5dc4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a778b4b054333047f82a1e7edea4b752d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_az_tools_framework_1_1_viewport_interaction.html#a778b4b054333047f82a1e7edea4b752d">KeyboardModifier</a> : AZ::u32 { <br />
 &#160;&#160;<a class="el" href="namespace_az_tools_framework_1_1_viewport_interaction.html#a778b4b054333047f82a1e7edea4b752da6adf97f83acf6453d4a6a4b1070f3754">KeyboardModifier::None</a> = 0, 
 <a class="el" href="namespace_az_tools_framework_1_1_viewport_interaction.html#a778b4b054333047f82a1e7edea4b752daa2e92861b757ab878312dd57993d60cf">KeyboardModifier::Alt</a> = 0x01, 
@@ -399,7 +408,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:08 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:13 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

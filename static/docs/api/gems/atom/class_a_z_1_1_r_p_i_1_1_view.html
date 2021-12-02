@@ -131,6 +131,9 @@ const AZ::Matrix4x4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:a32012a2cd2ef1b774df2fb494a291b83"><td class="memItemLeft" align="right" valign="top"><a id="a32012a2cd2ef1b774df2fb494a291b83"></a>
 const AZ::Matrix4x4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldToClipMatrix</b> () const</td></tr>
 <tr class="separator:a32012a2cd2ef1b774df2fb494a291b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa4f933f1ab559526b2227ed02b96c60"><td class="memItemLeft" align="right" valign="top"><a id="aaa4f933f1ab559526b2227ed02b96c60"></a>
+const AZ::Matrix4x4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetClipToWorldMatrix</b> () const</td></tr>
+<tr class="separator:aaa4f933f1ab559526b2227ed02b96c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4e9a129b0818ec4cb62bdfc4a992b63"><td class="memItemLeft" align="right" valign="top"><a id="ac4e9a129b0818ec4cb62bdfc4a992b63"></a>
 AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#ac4e9a129b0818ec4cb62bdfc4a992b63">GetCameraTransform</a> () const</td></tr>
 <tr class="memdesc:ac4e9a129b0818ec4cb62bdfc4a992b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the camera's world transform, converted from the viewToWorld matrix's native y-up to z-up. <br /></td></tr>
@@ -178,6 +181,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 MaskedOcclusionCulling *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a0feb0dbc1372c08975a7420e771cd794">GetMaskedOcclusionCulling</a> ()</td></tr>
 <tr class="memdesc:a0feb0dbc1372c08975a7420e771cd794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the masked occlusion culling interface. <br /></td></tr>
 <tr class="separator:a0feb0dbc1372c08975a7420e771cd794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a508d18b042b6f966b26a58bf75763b1b"><td class="memItemLeft" align="right" valign="top"><a id="a508d18b042b6f966b26a58bf75763b1b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a508d18b042b6f966b26a58bf75763b1b">OnAddToRenderPipeline</a> ()</td></tr>
+<tr class="memdesc:a508d18b042b6f966b26a58bf75763b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is called by <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> when this view is added to the pipeline. <br /></td></tr>
+<tr class="separator:a508d18b042b6f966b26a58bf75763b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -272,7 +279,7 @@ static ViewPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:58 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

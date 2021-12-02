@@ -76,10 +76,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab053805910f9889690908bbc259a2049"><td class="memItemLeft" align="right" valign="top"><a id="ab053805910f9889690908bbc259a2049"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a>, SystemAllocator, 0)</td></tr>
 <tr class="separator:ab053805910f9889690908bbc259a2049"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfcdbde28b10316e5973ff427a7ac8ec"><td class="memItemLeft" align="right" valign="top"><a id="acfcdbde28b10316e5973ff427a7ac8ec"></a>
-<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">MaterialPropertyIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html#acfcdbde28b10316e5973ff427a7ac8ec">FindPropertyIndex</a> (const Name &amp;name) const</td></tr>
-<tr class="memdesc:acfcdbde28b10316e5973ff427a7ac8ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the material property index from the material property name. <br /></td></tr>
-<tr class="separator:acfcdbde28b10316e5973ff427a7ac8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9ff319c56b9f5a8d2c6869d26516ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">MaterialPropertyIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html#a2d9ff319c56b9f5a8d2c6869d26516ee">FindPropertyIndex</a> (const Name &amp;propertyId, bool *wasRenamed=nullptr, Name *newName=nullptr) const</td></tr>
+<tr class="separator:a2d9ff319c56b9f5a8d2c6869d26516ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94e3ae3db13547ade75a247229d8699b"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
 <tr class="memitem:a94e3ae3db13547ade75a247229d8699b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html#a94e3ae3db13547ade75a247229d8699b">SetPropertyValue</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">MaterialPropertyIndex</a> index, const Type &amp;value)</td></tr>
 <tr class="separator:a94e3ae3db13547ade75a247229d8699b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,7 +118,7 @@ const <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_collection.html">Shader
 const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html">RHI::ShaderResourceGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetRHIShaderResourceGroup</b> () const</td></tr>
 <tr class="separator:afd41370b0b4169be5f7712ec7678c724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fe8778f960b91197f56dbd5d22cc276"><td class="memItemLeft" align="right" valign="top"><a id="a1fe8778f960b91197f56dbd5d22cc276"></a>
-const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAsset</b> () const</td></tr>
+const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAsset</b> () const</td></tr>
 <tr class="separator:a1fe8778f960b91197f56dbd5d22cc276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fa8a65ace996c0f4e62f7675b581efd"><td class="memItemLeft" align="right" valign="top"><a id="a0fa8a65ace996c0f4e62f7675b581efd"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html#a0fa8a65ace996c0f4e62f7675b581efd">CanCompile</a> () const</td></tr>
@@ -134,10 +132,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aad786f6fa397bae70b7f446c0926e95f"><td class="memItemLeft" align="right" valign="top"><a id="aad786f6fa397bae70b7f446c0926e95f"></a>
-static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FindOrCreate</b> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> &gt; &amp;materialAsset)</td></tr>
+static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FindOrCreate</b> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> &gt; &amp;materialAsset)</td></tr>
 <tr class="separator:aad786f6fa397bae70b7f446c0926e95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a858e5d94d87f92ce439f66fe0d6e371b"><td class="memItemLeft" align="right" valign="top"><a id="a858e5d94d87f92ce439f66fe0d6e371b"></a>
-static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> &gt; &amp;materialAsset)</td></tr>
+static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> &gt; &amp;materialAsset)</td></tr>
 <tr class="separator:a858e5d94d87f92ce439f66fe0d6e371b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -173,6 +171,47 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialSystem</b></
       </table>
 </div><div class="memdoc">
 <p>Must be called after changing any material property values in order to apply those changes to the shader. Does nothing if <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html#ab57e79c1995d884f01d7aeccd6c1a0f1" title="Returns whether the material has property changes that have not been compiled yet.">NeedsCompile()</a> is false or <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html#a0fa8a65ace996c0f4e62f7675b581efd" title="Returns whether the material is ready to compile pending changes. (Materials can only be compiled onc...">CanCompile()</a> is false. </p><dl class="section return"><dt>Returns</dt><dd>whether compilation occurred </dd></dl>
+
+</div>
+</div>
+<a id="a2d9ff319c56b9f5a8d2c6869d26516ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d9ff319c56b9f5a8d2c6869d26516ee">&#9670;&nbsp;</a></span>FindPropertyIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">MaterialPropertyIndex</a> AZ::RPI::Material::FindPropertyIndex </td>
+          <td>(</td>
+          <td class="paramtype">const Name &amp;&#160;</td>
+          <td class="paramname"><em>propertyId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>wasRenamed</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Name *&#160;</td>
+          <td class="paramname"><em>newName</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Finds the material property index from the material property ID </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wasRenamed</td><td>optional parameter that is set to true if @propertyId is an old name and an automatic rename was applied to find the index. </td></tr>
+    <tr><td class="paramname">newName</td><td>optional parameter that is set to the new property name, if the property was renamed. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -315,7 +354,7 @@ template&lt;typename Type &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:56 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:56 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

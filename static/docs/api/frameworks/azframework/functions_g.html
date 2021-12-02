@@ -79,9 +79,6 @@ $(function() {
 <li>GetApplicationCommandLine()
 : <a class="el" href="class_az_framework_1_1_application_requests.html#ac434ea89f2f4bac3b204778462121c52">AzFramework::ApplicationRequests</a>
 </li>
-<li>GetAppRoot()
-: <a class="el" href="class_az_framework_1_1_application_requests.html#a4c536782b953292dfe0506994e11726c">AzFramework::ApplicationRequests</a>
-</li>
 <li>GetAssetIdByPath()
 : <a class="el" href="class_az_framework_1_1_asset_registry.html#a13163db958e5511a6074c1aca0a97066">AzFramework::AssetRegistry</a>
 </li>
@@ -179,9 +176,6 @@ $(function() {
 <li>GetComponentTypeId()
 : <a class="el" href="class_az_framework_1_1_application_requests.html#a3e71bf0887725949beae7d5e48012fa7">AzFramework::ApplicationRequests</a>
 </li>
-<li>GetCoMVisibility()
-: <a class="el" href="class_physics_1_1_rigid_body_configuration.html#a672cfb9ded1f354927c78ad050e2f589">Physics::RigidBodyConfiguration</a>
-</li>
 <li>GetConfiguration()
 : <a class="el" href="class_az_physics_1_1_scene.html#ae00a0304d209f40e1d427c8c856f6cad">AzPhysics::Scene</a>
 , <a class="el" href="class_az_physics_1_1_system_interface.html#a942eba01199d9b19bc16593929984484">AzPhysics::SystemInterface</a>
@@ -249,15 +243,14 @@ $(function() {
 <li>GetEditorSceneHandle()
 : <a class="el" href="class_physics_1_1_editor_world_requests.html#acb7df7802ae98abf6cbda923e2cb2176">Physics::EditorWorldRequests</a>
 </li>
-<li>GetEngineRoot()
-: <a class="el" href="class_az_framework_1_1_application.html#aafbcd729c7b1380620acd024fb6c60e2">AzFramework::Application</a>
-, <a class="el" href="class_az_framework_1_1_application_requests.html#aee5e403b5b3c7dc3a96495e8c90a4b58">AzFramework::ApplicationRequests</a>
-</li>
 <li>GetEntityLocalBoundsUnion()
 : <a class="el" href="class_az_framework_1_1_i_entity_bounds_union.html#afb7932a3a76c88348a1aae88018a2260">AzFramework::IEntityBoundsUnion</a>
 </li>
 <li>GetEntityName()
 : <a class="el" href="class_az_framework_1_1_game_entity_context_requests.html#aac87b2a56f71c7e6c1b9776252bac324">AzFramework::GameEntityContextRequests</a>
+</li>
+<li>GetEntityWorldBoundsUnion()
+: <a class="el" href="class_az_framework_1_1_i_entity_bounds_union.html#a05db7f36d39fcc6aa87c16e87afc102f">AzFramework::IEntityBoundsUnion</a>
 </li>
 <li>GetEntries()
 : <a class="el" href="class_az_framework_1_1_octree_node.html#a542d3dae007c8419aeb00d18509e8fc8">AzFramework::OctreeNode</a>
@@ -310,7 +303,40 @@ $(function() {
 , <a class="el" href="class_az_physics_1_1_scene_interface.html#af8611d356f4c7d73f477ee4fda89ea90">AzPhysics::SceneInterface</a>
 </li>
 <li>GetHeight()
-: <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#ad437b916c24bc24781dbd090183ab6fe">AzFramework::Terrain::TerrainDataRequests</a>
+: <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a38696519098848771f69175370e71d04">AzFramework::Terrain::TerrainDataRequests</a>
+</li>
+<li>GetHeightfieldAabb()
+: <a class="el" href="class_physics_1_1_heightfield_provider_requests.html#a4f4902a19f8ff1ef1ba48ac7e642cc4b">Physics::HeightfieldProviderRequests</a>
+</li>
+<li>GetHeightfieldGridColumns()
+: <a class="el" href="class_physics_1_1_heightfield_provider_requests.html#aef2c1e9bdfff3db401d14d130f144953">Physics::HeightfieldProviderRequests</a>
+</li>
+<li>GetHeightfieldGridRows()
+: <a class="el" href="class_physics_1_1_heightfield_provider_requests.html#a17323048844231f45f8109b46ba99e35">Physics::HeightfieldProviderRequests</a>
+</li>
+<li>GetHeightfieldGridSize()
+: <a class="el" href="class_physics_1_1_heightfield_provider_requests.html#a40f6cd215ca92bec3b061d840140ef7f">Physics::HeightfieldProviderRequests</a>
+</li>
+<li>GetHeightfieldGridSpacing()
+: <a class="el" href="class_physics_1_1_heightfield_provider_requests.html#af8580d56d9ba6348ba79a47bdcccf7b0">Physics::HeightfieldProviderRequests</a>
+</li>
+<li>GetHeightfieldHeightBounds()
+: <a class="el" href="class_physics_1_1_heightfield_provider_requests.html#a328948245c3f8db2ef1781a34438c34a">Physics::HeightfieldProviderRequests</a>
+</li>
+<li>GetHeightfieldMaxHeight()
+: <a class="el" href="class_physics_1_1_heightfield_provider_requests.html#ac88a22c92f635db927d8562c82e4e5cc">Physics::HeightfieldProviderRequests</a>
+</li>
+<li>GetHeightfieldMinHeight()
+: <a class="el" href="class_physics_1_1_heightfield_provider_requests.html#a7c5d31c80b013789ff875f9d7f5d8baa">Physics::HeightfieldProviderRequests</a>
+</li>
+<li>GetHeightfieldTransform()
+: <a class="el" href="class_physics_1_1_heightfield_provider_requests.html#a9a3fbf8c3c08ef0eb77adb59f1c15cce">Physics::HeightfieldProviderRequests</a>
+</li>
+<li>GetHeights()
+: <a class="el" href="class_physics_1_1_heightfield_provider_requests.html#a00a400623038a6b9f63249b9f1851c0c">Physics::HeightfieldProviderRequests</a>
+</li>
+<li>GetHeightsAndMaterials()
+: <a class="el" href="class_physics_1_1_heightfield_provider_requests.html#aa0fa7e3bedd00b038c6569eff8a405a7">Physics::HeightfieldProviderRequests</a>
 </li>
 <li>GetId()
 : <a class="el" href="class_az_framework_1_1_behavior_entity.html#a978c4bf6be11e2a98dc65ad9cd980a62">AzFramework::BehaviorEntity</a>
@@ -327,12 +353,6 @@ $(function() {
 <li>GetIndex()
 : <a class="el" href="class_az_framework_1_1_input_device_id.html#a11b4f380c048cbdc7ba30d83f3feabab">AzFramework::InputDeviceId</a>
 , <a class="el" href="class_az_physics_1_1_collision_layer.html#a04720820188a5ceb8e65cd70eef921be">AzPhysics::CollisionLayer</a>
-</li>
-<li>GetInertiaSettingsVisibility()
-: <a class="el" href="class_physics_1_1_rigid_body_configuration.html#a2ba8f80c83dd4c0880d470e488f7a45f">Physics::RigidBodyConfiguration</a>
-</li>
-<li>GetInertiaVisibility()
-: <a class="el" href="class_physics_1_1_rigid_body_configuration.html#a3e798e982fa8577f7c84368561f4deaf">Physics::RigidBodyConfiguration</a>
 </li>
 <li>GetInputChannel()
 : <a class="el" href="class_az_framework_1_1_input_channel.html#a669aa4a23ee97297ff86ad395abb31de">AzFramework::InputChannel</a>
@@ -391,8 +411,8 @@ $(function() {
 <li>GetInstance()
 : <a class="el" href="class_az_framework_1_1_socket_connection.html#a84fe5373cc3594cd61230c8499577737">AzFramework::SocketConnection</a>
 </li>
-<li>GetIsHoleFromFloats()
-: <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#acf5329e857b61f044d7eb626620dcb70">AzFramework::Terrain::TerrainDataRequests</a>
+<li>GetIsHole()
+: <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a786a0f4159ab6350757e640292538102">AzFramework::Terrain::TerrainDataRequests</a>
 </li>
 <li>GetJointFromHandle()
 : <a class="el" href="class_az_physics_1_1_scene.html#a77cffca1975d6d63edd2456fd8317c17">AzPhysics::Scene</a>
@@ -415,7 +435,6 @@ $(function() {
 </li>
 <li>GetLinearVelocity()
 : <a class="el" href="struct_az_physics_1_1_rigid_body.html#a786be65e6c2fbbe1741ac15612fb3846">AzPhysics::RigidBody</a>
-, <a class="el" href="class_physics_1_1_rigid_body.html#a947650800b368f94feff206b8d742eb3">Physics::RigidBody</a>
 </li>
 <li>GetLoadedEntityIdMap()
 : <a class="el" href="class_az_framework_1_1_slice_entity_ownership_service_requests.html#afeb1cc519fdc0a2cf5269f9c59c8f2ce">AzFramework::SliceEntityOwnershipServiceRequests</a>
@@ -433,9 +452,6 @@ $(function() {
 : <a class="el" href="class_az_physics_1_1_collision_group.html#a021a384dd726241912bc0ca2651493ce">AzPhysics::CollisionGroup</a>
 , <a class="el" href="class_az_physics_1_1_collision_layer.html#af5a36a479da5fad07cbe462813e2885e">AzPhysics::CollisionLayer</a>
 </li>
-<li>GetMassVisibility()
-: <a class="el" href="class_physics_1_1_rigid_body_configuration.html#a5cfa735a4af7c2b5e8d000022fa88316">Physics::RigidBodyConfiguration</a>
-</li>
 <li>GetMaterialById()
 : <a class="el" href="class_physics_1_1_physics_material_requests.html#a405cc92f80c54cc6986b13e5dc2df9b3">Physics::PhysicsMaterialRequests</a>
 </li>
@@ -447,6 +463,9 @@ $(function() {
 </li>
 <li>GetMaterialIdsAssignedToSlots()
 : <a class="el" href="class_physics_1_1_material_selection.html#a075bb9e0b6f68a1868f9dac71269a9c3">Physics::MaterialSelection</a>
+</li>
+<li>GetMaterialList()
+: <a class="el" href="class_physics_1_1_heightfield_provider_requests.html#a46e00450778b4d6fa0936bb2c6e3dd17">Physics::HeightfieldProviderRequests</a>
 </li>
 <li>GetMaterials()
 : <a class="el" href="class_physics_1_1_physics_material_requests.html#aed83f29e6a8b0330f26a5300f1145ce4">Physics::PhysicsMaterialRequests</a>
@@ -461,10 +480,10 @@ $(function() {
 : <a class="el" href="class_az_framework_1_1_input_device_gamepad.html#aab0f9b074106b75f7aed7daac6a7d960">AzFramework::InputDeviceGamepad</a>
 </li>
 <li>GetMaxSurfaceName()
-: <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a691b0eb009c565365c6b5a85c504fc01">AzFramework::Terrain::TerrainDataRequests</a>
+: <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a0dba3a93972e37600840c78229edf7f2">AzFramework::Terrain::TerrainDataRequests</a>
 </li>
 <li>GetMaxSurfaceWeight()
-: <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#aa108eee611e195378ed64010e28c72f3">AzFramework::Terrain::TerrainDataRequests</a>
+: <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#afd125b94c74ee456b03d96577df7b884">AzFramework::Terrain::TerrainDataRequests</a>
 </li>
 <li>GetMessageType()
 : <a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_dependency_info_request.html#a665e926bc41b7d4eab6c6162da9a3a6f">AzFramework::AssetSystem::AssetDependencyInfoRequest</a>
@@ -578,7 +597,7 @@ $(function() {
 , <a class="el" href="class_az_framework_1_1_slice_entity_ownership_service.html#a6e706dd54f8fae9dc06248f62bbd5446">AzFramework::SliceEntityOwnershipService</a>
 </li>
 <li>GetNormal()
-: <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a85f5ecd801336217efaab72f074aaed0">AzFramework::Terrain::TerrainDataRequests</a>
+: <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#afaa5edc8703bbd56e188a893d9d0a2e5">AzFramework::Terrain::TerrainDataRequests</a>
 </li>
 <li>GetNumNodes()
 : <a class="el" href="class_physics_1_1_ragdoll.html#ab02299afd79c26f8fa988ff4fd27e097">Physics::Ragdoll</a>
@@ -701,8 +720,14 @@ $(function() {
 <li>GetSupportedPlatforms()
 : <a class="el" href="class_az_framework_1_1_asset_system_1_1_network_asset_update_interface.html#ace27b4d0459f72256b7023e9084ad979">AzFramework::AssetSystem::NetworkAssetUpdateInterface</a>
 </li>
+<li>GetSurfacePoint()
+: <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a72e6d37729eab9efc741bee254a3b2bd">AzFramework::Terrain::TerrainDataRequests</a>
+</li>
 <li>GetSurfaceType()
 : <a class="el" href="class_physics_1_1_material.html#af7e2227890df1880db2b86d8be4ef32e">Physics::Material</a>
+</li>
+<li>GetSurfaceWeights()
+: <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a435389590b5fd6fc49626ff3dbb3aab5">AzFramework::Terrain::TerrainDataRequests</a>
 </li>
 <li>GetSyncInterval()
 : <a class="el" href="class_az_framework_1_1_window_requests.html#a7d70cfa790d83e36e31699169417d238">AzFramework::WindowRequests</a>
@@ -714,11 +739,13 @@ $(function() {
 : <a class="el" href="class_az_framework_1_1_input_device_mouse.html#a9bf93f29c5f88b91ad7dd4b846563e4f">AzFramework::InputDeviceMouse</a>
 , <a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#ae808d2a4187ddd79cad1c010c7396445">AzFramework::InputDeviceMouse::Implementation</a>
 , <a class="el" href="class_az_framework_1_1_input_system_cursor_requests.html#a9d63dc20f5b24cc5eaa84e1b377baf40">AzFramework::InputSystemCursorRequests</a>
+, <a class="el" href="class_az_framework_1_1_xcb_input_device_mouse.html#a326fb38a129d4be1909e197efa3536b6">AzFramework::XcbInputDeviceMouse</a>
 </li>
 <li>GetSystemCursorState()
 : <a class="el" href="class_az_framework_1_1_input_device_mouse.html#a9d6570c0900b04b3f386d3c70d6dccc6">AzFramework::InputDeviceMouse</a>
 , <a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#a3c90218e7fb763b06fad92ff9410182b">AzFramework::InputDeviceMouse::Implementation</a>
 , <a class="el" href="class_az_framework_1_1_input_system_cursor_requests.html#a6eac938725cb7d0659a94a6128ad3a41">AzFramework::InputSystemCursorRequests</a>
+, <a class="el" href="class_az_framework_1_1_xcb_input_device_mouse.html#a584251e751898ebb52f39c8636655351">AzFramework::XcbInputDeviceMouse</a>
 </li>
 <li>GetTags()
 : <a class="el" href="class_az_framework_1_1_file_tag_1_1_query_file_tags_event.html#a76227d7fcb102a5dfb4a4b99babc1b50">AzFramework::FileTag::QueryFileTagsEvent</a>
@@ -765,8 +792,11 @@ $(function() {
 <li>GetView()
 : <a class="el" href="class_az_framework_1_1_debug_camera_interface.html#a4ccb8057a9b9f7700d06c157012f34a9">AzFramework::DebugCameraInterface</a>
 </li>
+<li>GetViewportBorderPadding()
+: <a class="el" href="class_az_framework_1_1_viewport_border_requests.html#a1a2cc84992f04e184db969794da7fa2a">AzFramework::ViewportBorderRequests</a>
+</li>
 <li>GetWind()
-: <a class="el" href="class_physics_1_1_wind_requests.html#a05993a88f36130e4367c19dcd19d78ae">Physics::WindRequests</a>
+: <a class="el" href="class_physics_1_1_wind_requests.html#a42a71982c2e93c45ed5267c89ba506af">Physics::WindRequests</a>
 </li>
 <li>GetWindowHandle()
 : <a class="el" href="class_az_framework_1_1_native_window.html#af1ffeeac0a047903ced579366f60f634">AzFramework::NativeWindow</a>
@@ -779,13 +809,12 @@ $(function() {
 </li>
 <li>Gravity
 : <a class="el" href="struct_az_physics_1_1_rigid_body_configuration.html#a1be6f3bef01f0a39e2273a2e38a1a3a9a03621b51024aad163db2edeae4e2a654">AzPhysics::RigidBodyConfiguration</a>
-, <a class="el" href="class_physics_1_1_rigid_body_configuration.html#a5345a77d8a73051131be70cf2b8adffba766b43f11ba841aed927b3e4a01f7092">Physics::RigidBodyConfiguration</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:51 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:01 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

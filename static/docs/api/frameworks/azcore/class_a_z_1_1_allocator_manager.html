@@ -187,6 +187,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>AllocatorBase</b></t
 <tr class="memitem:ae67bbc09c01e4489563671e6deb2eed3"><td class="memItemLeft" align="right" valign="top"><a id="ae67bbc09c01e4489563671e6deb2eed3"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Debug::AllocationRecords</b></td></tr>
 <tr class="separator:ae67bbc09c01e4489563671e6deb2eed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad59d821f4d85c65d8daebe323b0810"><td class="memTemplParams" colspan="2"><a id="a7ad59d821f4d85c65d8daebe323b0810"></a>
+template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a7ad59d821f4d85c65d8daebe323b0810"><td class="memTemplItemLeft" align="right" valign="top">constexpr friend auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>AZStd::construct_at</b> (T *, Args &amp;&amp;... args) -&gt; AZStd::enable_if_t&lt; AZStd::is_void_v&lt; AZStd::void_t&lt; decltype(new(AZStd::declval&lt; void * &gt;()) T(AZStd::forward&lt; Args &gt;(args)...))&gt;&gt;, T * &gt;</td></tr>
+<tr class="separator:a7ad59d821f4d85c65d8daebe323b0810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c2225d87b90d21def75ac9ff36a61bf"><td class="memTemplParams" colspan="2"><a id="a9c2225d87b90d21def75ac9ff36a61bf"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9c2225d87b90d21def75ac9ff36a61bf"><td class="memTemplItemLeft" align="right" valign="top">constexpr friend void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>AZStd::destroy_at</b> (T *)</td></tr>
+<tr class="separator:a9c2225d87b90d21def75ac9ff36a61bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Global allocation manager. It has access to all created allocators <a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> interface. And control some global allocations. This manager is NOT thread safe, so all allocators should be created on the same thread (we can change that if needed, we just need a good reason). </p>
@@ -245,7 +253,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Debug::AllocationRec
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:04 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:14:21 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

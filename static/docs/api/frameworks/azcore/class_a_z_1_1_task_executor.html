@@ -48,6 +48,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_task_executor-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::TaskExecutor Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -62,9 +63,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a43baa0ccf8e392c10ed3ac179f8a9930"><td class="memItemLeft" align="right" valign="top"><a id="a43baa0ccf8e392c10ed3ac179f8a9930"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TaskExecutor</b> (uint32_t threadCount=0)</td></tr>
 <tr class="separator:a43baa0ccf8e392c10ed3ac179f8a9930"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01b7fce922f376dc920be0010e4ffe10"><td class="memItemLeft" align="right" valign="top"><a id="a01b7fce922f376dc920be0010e4ffe10"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Submit</b> (Internal::CompiledTaskGraph &amp;graph)</td></tr>
-<tr class="separator:a01b7fce922f376dc920be0010e4ffe10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fe4737fc3c7bc5809e44f9342ce8dfc"><td class="memItemLeft" align="right" valign="top"><a id="a4fe4737fc3c7bc5809e44f9342ce8dfc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Submit</b> (Internal::CompiledTaskGraph &amp;graph, <a class="el" href="class_a_z_1_1_task_graph_event.html">TaskGraphEvent</a> *event)</td></tr>
+<tr class="separator:a4fe4737fc3c7bc5809e44f9342ce8dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1766cb7c1d30149dcc3fdb85c4d27378"><td class="memItemLeft" align="right" valign="top"><a id="a1766cb7c1d30149dcc3fdb85c4d27378"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Submit</b> (Internal::Task &amp;task)</td></tr>
 <tr class="separator:a1766cb7c1d30149dcc3fdb85c4d27378"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -77,6 +78,12 @@ static <a class="el" href="class_a_z_1_1_task_executor.html">TaskExecutor</a> &a
 <tr class="memitem:ada585f9f4a7a61eb57dc41dfd6f10db7"><td class="memItemLeft" align="right" valign="top"><a id="ada585f9f4a7a61eb57dc41dfd6f10db7"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInstance</b> (<a class="el" href="class_a_z_1_1_task_executor.html">TaskExecutor</a> *executor)</td></tr>
 <tr class="separator:ada585f9f4a7a61eb57dc41dfd6f10db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:abe5e473f8a0cd841597340ca829ba5f7"><td class="memItemLeft" align="right" valign="top"><a id="abe5e473f8a0cd841597340ca829ba5f7"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>TaskGraphEvent</b></td></tr>
+<tr class="separator:abe5e473f8a0cd841597340ca829ba5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Task/TaskExecutor.h</li>
@@ -84,7 +91,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInstance</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:10 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:14:25 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

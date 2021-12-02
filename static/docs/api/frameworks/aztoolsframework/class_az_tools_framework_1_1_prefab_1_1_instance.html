@@ -79,18 +79,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a252698c5b008e768e626f4db072c0b59"><td class="memItemLeft" align="right" valign="top"><a id="a252698c5b008e768e626f4db072c0b59"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> (AZStd::unique_ptr&lt; AZ::Entity &gt; containerEntity)</td></tr>
 <tr class="separator:a252698c5b008e768e626f4db072c0b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af99b06f0a08ad5c9f77a5d8e6f959134"><td class="memItemLeft" align="right" valign="top"><a id="af99b06f0a08ad5c9f77a5d8e6f959134"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> (InstanceOptionalReference parent)</td></tr>
+<tr class="separator:af99b06f0a08ad5c9f77a5d8e6f959134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af24504efe435ed9f3f1af92bfbaec951"><td class="memItemLeft" align="right" valign="top"><a id="af24504efe435ed9f3f1af92bfbaec951"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> (AZStd::unique_ptr&lt; AZ::Entity &gt; containerEntity, InstanceOptionalReference parent)</td></tr>
+<tr class="separator:af24504efe435ed9f3f1af92bfbaec951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77aa15b76ffcd2bd9d4b062d080549a5"><td class="memItemLeft" align="right" valign="top"><a id="a77aa15b76ffcd2bd9d4b062d080549a5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> (InstanceAlias alias)</td></tr>
+<tr class="separator:a77aa15b76ffcd2bd9d4b062d080549a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bfd3f2083c5c29fd433e4e334c9e965"><td class="memItemLeft" align="right" valign="top"><a id="a2bfd3f2083c5c29fd433e4e334c9e965"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> (const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;rhs)=delete</td></tr>
 <tr class="separator:a2bfd3f2083c5c29fd433e4e334c9e965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7abb42e8168402594d4b787d93af22b"><td class="memItemLeft" align="right" valign="top"><a id="aa7abb42e8168402594d4b787d93af22b"></a>
 <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;rhs)=delete</td></tr>
 <tr class="separator:aa7abb42e8168402594d4b787d93af22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31345deee0060b8c52c93e00fccdc8f2"><td class="memItemLeft" align="right" valign="top"><a id="a31345deee0060b8c52c93e00fccdc8f2"></a>
-const TemplateId &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTemplateId</b> () const</td></tr>
-<tr class="separator:a31345deee0060b8c52c93e00fccdc8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35a0413e85b50f27e0d3735ce80e2a22"><td class="memItemLeft" align="right" valign="top"><a id="a35a0413e85b50f27e0d3735ce80e2a22"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTemplateId</b> (const TemplateId &amp;templateId)</td></tr>
-<tr class="separator:a35a0413e85b50f27e0d3735ce80e2a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ef83facce9219ae97521f76235b45c"><td class="memItemLeft" align="right" valign="top"><a id="a32ef83facce9219ae97521f76235b45c"></a>
+TemplateId&#160;</td><td class="memItemRight" valign="bottom"><b>GetTemplateId</b> () const</td></tr>
+<tr class="separator:a32ef83facce9219ae97521f76235b45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b073df15e64eff80ce46aa26cca47d3"><td class="memItemLeft" align="right" valign="top"><a id="a5b073df15e64eff80ce46aa26cca47d3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTemplateId</b> (TemplateId templateId)</td></tr>
+<tr class="separator:a5b073df15e64eff80ce46aa26cca47d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a383b4a238cbaeb3fe89eafa80d6eb5"><td class="memItemLeft" align="right" valign="top"><a id="a3a383b4a238cbaeb3fe89eafa80d6eb5"></a>
 const AZ::IO::Path &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTemplateSourcePath</b> () const</td></tr>
 <tr class="separator:a3a383b4a238cbaeb3fe89eafa80d6eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,9 +132,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr
 <tr class="memitem:ad4368126246581601537c0790628049b"><td class="memItemLeft" align="right" valign="top"><a id="ad4368126246581601537c0790628049b"></a>
 <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>AddInstance</b> (AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt; instance)</td></tr>
 <tr class="separator:ad4368126246581601537c0790628049b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad59a5150503335847e544eb6db0437b9"><td class="memItemLeft" align="right" valign="top"><a id="ad59a5150503335847e544eb6db0437b9"></a>
-<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>AddInstance</b> (AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt; instance, InstanceAlias instanceAlias)</td></tr>
-<tr class="separator:ad59a5150503335847e544eb6db0437b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99b64c8fd97fdf5d380fa4794de09d32"><td class="memItemLeft" align="right" valign="top"><a id="a99b64c8fd97fdf5d380fa4794de09d32"></a>
 AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DetachNestedInstance</b> (const InstanceAlias &amp;instanceAlias)</td></tr>
 <tr class="separator:a99b64c8fd97fdf5d380fa4794de09d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -386,7 +392,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>InstanceEntityIdMapp
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:07 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:12 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

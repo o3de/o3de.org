@@ -10,9 +10,9 @@ The **Material Editor** is a standalone application that allows artists to view,
 To get started, launch the Material Editor and create or edit a material. 
 
 #### Launch the Material Editor
-You can launch the Material Editor from the Open 3D Engine (O3DE) Editor, or as a standalone application:   
+You can launch the Material Editor from the **Open 3D Engine (O3DE)** Editor, or as a standalone application:   
 
-- From the Open 3D Engine (O3DE) Editor, you can launch Material Editor in two ways.
+- From the O3DE Editor, you can launch Material Editor in two ways.
   
   - Select **Main Menu > Tools > Material Editor**.
   

@@ -67,15 +67,26 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>BusIdType</b> = AzFr
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8a1ede8b1233832f9d370b7e21e68825"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#a8a1ede8b1233832f9d370b7e21e68825">InterpolateToTransform</a> (const AZ::Transform &amp;worldFromLocal, float lookAtDistance)=0</td></tr>
-<tr class="separator:a8a1ede8b1233832f9d370b7e21e68825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ed72bf01117f732c40aa4b0b335fb63"><td class="memItemLeft" align="right" valign="top"><a id="a7ed72bf01117f732c40aa4b0b335fb63"></a>
-virtual AZStd::optional&lt; AZ::Vector3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#a7ed72bf01117f732c40aa4b0b335fb63">LookAtAfterInterpolation</a> () const =0</td></tr>
-<tr class="memdesc:a7ed72bf01117f732c40aa4b0b335fb63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look at point after an interpolation has finished and no translation has occurred. <br /></td></tr>
-<tr class="separator:a7ed72bf01117f732c40aa4b0b335fb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e5b32f25b45292e4e319f1be2e9a535"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#a3e5b32f25b45292e4e319f1be2e9a535">InterpolateToTransform</a> (const AZ::Transform &amp;worldFromLocal)=0</td></tr>
+<tr class="separator:a3e5b32f25b45292e4e319f1be2e9a535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9bdef54945818e4e9bf6715e9e4ca10"><td class="memItemLeft" align="right" valign="top"><a id="af9bdef54945818e4e9bf6715e9e4ca10"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#af9bdef54945818e4e9bf6715e9e4ca10">IsInterpolating</a> () const =0</td></tr>
+<tr class="memdesc:af9bdef54945818e4e9bf6715e9e4ca10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if the camera is currently interpolating to a new transform. <br /></td></tr>
+<tr class="separator:af9bdef54945818e4e9bf6715e9e4ca10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f859fecd248e6559540a49f32b60cb7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#a7f859fecd248e6559540a49f32b60cb7">StartTrackingTransform</a> (const AZ::Transform &amp;worldFromLocal)=0</td></tr>
+<tr class="separator:a7f859fecd248e6559540a49f32b60cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6da631abb90793cf3892611267b750"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#a0e6da631abb90793cf3892611267b750">StopTrackingTransform</a> ()=0</td></tr>
+<tr class="separator:a0e6da631abb90793cf3892611267b750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa12f60c3dfce1b57108a84eda618cdc7"><td class="memItemLeft" align="right" valign="top"><a id="aa12f60c3dfce1b57108a84eda618cdc7"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#aa12f60c3dfce1b57108a84eda618cdc7">IsTrackingTransform</a> () const =0</td></tr>
+<tr class="memdesc:aa12f60c3dfce1b57108a84eda618cdc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if the tracking transform is set. <br /></td></tr>
+<tr class="separator:aa12f60c3dfce1b57108a84eda618cdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:aa71d7566733b1edec5eb6ac3f84ca8e9"><td class="memItemLeft" align="right" valign="top"><a id="aa71d7566733b1edec5eb6ac3f84ca8e9"></a>
+static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>InterpolateToTransformDuration</b> = 1.0f</td></tr>
+<tr class="separator:aa71d7566733b1edec5eb6ac3f84ca8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a94b370e93064db979a8d00516070b5"><td class="memItemLeft" align="right" valign="top"><a id="a6a94b370e93064db979a8d00516070b5"></a>
 static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>AddressPolicy</b> = AZ::EBusAddressPolicy::ById</td></tr>
 <tr class="separator:a6a94b370e93064db979a8d00516070b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -86,8 +97,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides an interface to control the modern viewport camera controller from the Editor. </p><dl class="section note"><dt>Note</dt><dd>The bus is addressed by viewport id. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8a1ede8b1233832f9d370b7e21e68825"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a1ede8b1233832f9d370b7e21e68825">&#9670;&nbsp;</a></span>InterpolateToTransform()</h2>
+<a id="a3e5b32f25b45292e4e319f1be2e9a535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e5b32f25b45292e4e319f1be2e9a535">&#9670;&nbsp;</a></span>InterpolateToTransform()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -96,21 +107,11 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void AtomToolsFramework::ModularViewportCameraControllerRequests::InterpolateToTransform </td>
+          <td class="memname">virtual bool AtomToolsFramework::ModularViewportCameraControllerRequests::InterpolateToTransform </td>
           <td>(</td>
           <td class="paramtype">const AZ::Transform &amp;&#160;</td>
-          <td class="paramname"><em>worldFromLocal</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>worldFromLocal</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>lookAtDistance</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -122,10 +123,63 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 <p>Begin a smooth transition of the camera to the requested transform. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">worldFromLocal</td><td>The transform of where the camera should end up. </td></tr>
-    <tr><td class="paramname">lookAtDistance</td><td>The distance between the camera transform and the imagined look at point. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if the call began an interpolation and false otherwise. Calls to InterpolateToTransform will have no effect if an interpolation is currently in progress. </dd></dl>
+
+</div>
+</div>
+<a id="a7f859fecd248e6559540a49f32b60cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f859fecd248e6559540a49f32b60cb7">&#9670;&nbsp;</a></span>StartTrackingTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AtomToolsFramework::ModularViewportCameraControllerRequests::StartTrackingTransform </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Transform &amp;&#160;</td>
+          <td class="paramname"><em>worldFromLocal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Start tracking a transform. Store the current camera transform and move to the next camera transform. </p>
+
+</div>
+</div>
+<a id="a0e6da631abb90793cf3892611267b750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e6da631abb90793cf3892611267b750">&#9670;&nbsp;</a></span>StopTrackingTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AtomToolsFramework::ModularViewportCameraControllerRequests::StopTrackingTransform </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Stop tracking the set transform. The previously stored camera transform is restored. </p>
 
 </div>
 </div>
@@ -135,7 +189,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:50 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:53 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

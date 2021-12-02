@@ -57,7 +57,7 @@ $(function() {
 
 <p><code>#include &lt;Shader.h&gt;</code></p>
 
-<p>Inherits InstanceData, Handler, Handler, and Handler.</p>
+<p>Inherits InstanceData, MultiHandler, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -121,7 +121,7 @@ AZStd::array_view&lt; RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_s
 <tr class="memdesc:a6bbbb6ddb27b7da05c004a048a4a6585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the set of shader resource groups referenced by all variants in the shader asset. <br /></td></tr>
 <tr class="separator:a6bbbb6ddb27b7da05c004a048a4a6585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56b99cab8bd35c1f67c89fa027b734ee"><td class="memItemLeft" align="right" valign="top"><a id="a56b99cab8bd35c1f67c89fa027b734ee"></a>
-const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#a56b99cab8bd35c1f67c89fa027b734ee">GetAsset</a> () const</td></tr>
+const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#a56b99cab8bd35c1f67c89fa027b734ee">GetAsset</a> () const</td></tr>
 <tr class="memdesc:a56b99cab8bd35c1f67c89fa027b734ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the asset used to initialize this shader. <br /></td></tr>
 <tr class="separator:a56b99cab8bd35c1f67c89fa027b734ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ad14c8c63c7e09e1974723c2994add3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::DrawListTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#a1ad14c8c63c7e09e1974723c2994add3">GetDrawListTag</a> () const</td></tr>
@@ -132,11 +132,11 @@ const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.h
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad65869d6ed2caa338d89ab26be0cda97"><td class="memItemLeft" align="right" valign="top"><a id="ad65869d6ed2caa338d89ab26be0cda97"></a>
-static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#ad65869d6ed2caa338d89ab26be0cda97">FindOrCreate</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset, const Name &amp;supervariantName)</td></tr>
+static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#ad65869d6ed2caa338d89ab26be0cda97">FindOrCreate</a> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset, const Name &amp;supervariantName)</td></tr>
 <tr class="memdesc:ad65869d6ed2caa338d89ab26be0cda97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the shader instance associated with the provided asset. <br /></td></tr>
 <tr class="separator:ad65869d6ed2caa338d89ab26be0cda97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4d0e4ad03415a4f7985527e2044bb08"><td class="memItemLeft" align="right" valign="top"><a id="aa4d0e4ad03415a4f7985527e2044bb08"></a>
-static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#aa4d0e4ad03415a4f7985527e2044bb08">FindOrCreate</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset)</td></tr>
+static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html#aa4d0e4ad03415a4f7985527e2044bb08">FindOrCreate</a> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset)</td></tr>
 <tr class="memdesc:aa4d0e4ad03415a4f7985527e2044bb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as above, but uses the default supervariant. <br /></td></tr>
 <tr class="separator:aa4d0e4ad03415a4f7985527e2044bb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -252,7 +252,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderSystem</b></td
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

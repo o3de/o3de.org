@@ -65,11 +65,11 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a67e3fa06193ce5490fc45b9847be7f4e"><td class="memItemLeft" align="right" valign="top"><a id="a67e3fa06193ce5490fc45b9847be7f4e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>StatIdType</b> = <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a></td></tr>
-<tr class="separator:a67e3fa06193ce5490fc45b9847be7f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77a6f8f00b40b58a1a7bef4294adebec"><td class="memItemLeft" align="right" valign="top"><a id="a77a6f8f00b40b58a1a7bef4294adebec"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>StatIdType</b> = <a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a></td></tr>
+<tr class="separator:a77a6f8f00b40b58a1a7bef4294adebec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5bb7a82ebdf6f201817eb88dca7b755"><td class="memItemLeft" align="right" valign="top"><a id="ad5bb7a82ebdf6f201817eb88dca7b755"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>StatisticalProfilerType</b> = <a class="el" href="class_a_z_1_1_statistics_1_1_statistical_profiler.html">StatisticalProfiler</a>&lt; <a class="el" href="class_a_z_std_1_1basic__string.html">StatIdType</a>, <a class="el" href="class_a_z_std_1_1shared__mutex.html">AZStd::shared_spin_mutex</a> &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>StatisticalProfilerType</b> = <a class="el" href="class_a_z_1_1_statistics_1_1_statistical_profiler.html">StatisticalProfiler</a>&lt; <a class="el" href="class_a_z_1_1_crc32.html">StatIdType</a>, <a class="el" href="class_a_z_std_1_1shared__mutex.html">AZStd::shared_spin_mutex</a> &gt;</td></tr>
 <tr class="separator:ad5bb7a82ebdf6f201817eb88dca7b755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -83,17 +83,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8474a4c20eb83e201a7f0af0558be5c5"><td class="memItemLeft" align="right" valign="top"><a id="a8474a4c20eb83e201a7f0af0558be5c5"></a>
 <a class="el" href="class_a_z_1_1_statistics_1_1_statistical_profiler_proxy.html">StatisticalProfilerProxy</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_1_1_statistics_1_1_statistical_profiler_proxy.html">StatisticalProfilerProxy</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:a8474a4c20eb83e201a7f0af0558be5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3457e6e26a6fd140f4b25fbb16fe76"><td class="memItemLeft" align="right" valign="top"><a id="afc3457e6e26a6fd140f4b25fbb16fe76"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterProfilerId</b> (StatisticalProfilerId id)</td></tr>
+<tr class="separator:afc3457e6e26a6fd140f4b25fbb16fe76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22108eae286eb4f79695c37a89e6fd68"><td class="memItemLeft" align="right" valign="top"><a id="a22108eae286eb4f79695c37a89e6fd68"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsProfilerActive</b> (StatisticalProfilerId id) const</td></tr>
 <tr class="separator:a22108eae286eb4f79695c37a89e6fd68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e55965fbe23b48bdf8aff3b701ebf99"><td class="memItemLeft" align="right" valign="top"><a id="a5e55965fbe23b48bdf8aff3b701ebf99"></a>
 <a class="el" href="class_a_z_1_1_statistics_1_1_statistical_profiler.html">StatisticalProfilerType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetProfiler</b> (StatisticalProfilerId id)</td></tr>
 <tr class="separator:a5e55965fbe23b48bdf8aff3b701ebf99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace1ab8d2e67d004ccc8f169e5accdad5"><td class="memItemLeft" align="right" valign="top"><a id="ace1ab8d2e67d004ccc8f169e5accdad5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ActivateProfiler</b> (StatisticalProfilerId id, bool activate)</td></tr>
-<tr class="separator:ace1ab8d2e67d004ccc8f169e5accdad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abacf84d5b6895adcc57c864ad4486f37"><td class="memItemLeft" align="right" valign="top"><a id="abacf84d5b6895adcc57c864ad4486f37"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ActivateProfiler</b> (StatisticalProfilerId id, bool activate, bool autoCreate=true)</td></tr>
+<tr class="separator:abacf84d5b6895adcc57c864ad4486f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a529116464f27ae5551888f0ac3aefa29"><td class="memItemLeft" align="right" valign="top"><a id="a529116464f27ae5551888f0ac3aefa29"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PushSample</b> (StatisticalProfilerId id, const <a class="el" href="class_a_z_std_1_1basic__string.html">StatIdType</a> &amp;statId, double value)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PushSample</b> (StatisticalProfilerId id, const <a class="el" href="class_a_z_1_1_crc32.html">StatIdType</a> &amp;statId, double value)</td></tr>
 <tr class="separator:a529116464f27ae5551888f0ac3aefa29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -114,7 +117,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TimedScope</b></td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:13 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:14:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

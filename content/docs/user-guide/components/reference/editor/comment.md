@@ -1,36 +1,25 @@
 ---
-description: ' Use the Comment component in Open 3D Engine to add text comments for component
+linkTitle: Comment
+title: Comment Component
+description: ' Use the Comment component in Open 3D Engine (O3DE) to add text comments for component
   entities. '
-title: Comment
 ---
 
 
 
-The **Comment** component allows you to add long-form text comments for component entities. When enabled, the **Comment** component displays a dialog box that expands based on the size of the comment that you enter. The following examples demonstrate how you can use the comment text box:
-+ Explain how the scripts or components on an entity interact with other scripts or components
-+ Describe how everything in a level ties together
-+ Send descriptions, instructions, or notes to team members
+The **Comment** component allows you to add long-form text comments to component entities. When added to an entity, the Comment component displays a dialog box that expands based on the size of the comment. The following examples demonstrate how you can use the comment text box:
++ Explain how the scripts or components on an entity interact with other scripts or components.
++ Describe how everything in a level ties together.
++ Send descriptions, instructions, or notes to team members.
 
-![The Comment Component](/images/user-guide/component/comment-component.png)
+## Provider ##
 
-## Comment Properties 
+[O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
 
-The **Comment** component has the following property:
+## Comment properties 
 
-**Comment text box**
-Stores the user comment for the component entity.
-Default: None
+![The Comment Component](/images/user-guide/components/reference/editor/comment-component.png)
 
-## Using the Comment Component 
-
-You can use this feature by adding the component to an entity in your level.
-
-**To use the Comment component**
-
-1. In O3DE Editor, right-click the viewport in your level, and click **Create entity**.
-
-1. In the **Entity Inspector**, click **Add Component**.
-
-1. Under **Editor**, click **Comment**.
-
-1. In the **Entity Inspector**, under **Comment**, add comments for the component entity in the text box.
+| Property | Description | Values | Default |
+|-|-|-|-|
+| **Comment text box** | Stores the user comment for the component entity. | Text | None |

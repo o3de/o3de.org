@@ -175,10 +175,6 @@ $(function() {
 <li>GetAppPublicStoragePath()
 : <a class="el" href="class_a_z_1_1_android_1_1_android_env.html#a7c6954b82461dc141cceb750cf55a774">AZ::Android::AndroidEnv</a>
 </li>
-<li>GetAppRoot()
-: <a class="el" href="class_a_z_1_1_component_application.html#a28b402c4600bbcf54cd9a1d60ed7b7f2">AZ::ComponentApplication</a>
-, <a class="el" href="class_a_z_1_1_component_application_requests.html#af13d5523adfce00d4b297686d4bba721">AZ::ComponentApplicationRequests</a>
-</li>
 <li>GetAppVersionCode()
 : <a class="el" href="class_a_z_1_1_android_1_1_android_env.html#a335d3eaecda093fe09ff4d355dde9ffe">AZ::Android::AndroidEnv</a>
 </li>
@@ -511,6 +507,9 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_i_time.html#a1c224a9213fab2fa5b59c60e2c7867b1">AZ::ITime</a>
 , <a class="el" href="class_a_z_1_1_time_system_component.html#aceb01900f98ed468ec39a501051194eb">AZ::TimeSystemComponent</a>
 </li>
+<li>GetElapsedTimeUs()
+: <a class="el" href="class_a_z_1_1_i_time.html#acdcc3cf793ba8937bf5bc3d1920bc101">AZ::ITime</a>
+</li>
 <li>GetElement()
 : <a class="el" href="class_a_z_1_1_matrix3x3.html#ac4656472b6cc8365d488db8fa897fc3e">AZ::Matrix3x3</a>
 , <a class="el" href="class_a_z_1_1_matrix3x4.html#a27f62af1fea8e1100be21833d5a318f5">AZ::Matrix3x4</a>
@@ -615,9 +614,17 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_dynamic_module_handle.html#acfbef5b87afdbee22b7bddb805ae54de">AZ::DynamicModuleHandle</a>
 , <a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html#acd70e6af3b4911f0592cf0daf3c254e9">AZ::IO::FileIOBase</a>
 </li>
+<li>GetFilePath()
+: <a class="el" href="class_a_z_1_1_i_o_1_1_file_reader.html#a6735cdfc743f8f07df874e777d450469">AZ::IO::FileReader</a>
+</li>
 <li>GetFlags()
 : <a class="el" href="class_a_z_1_1_console_functor_base.html#af45903f727848c69951e7ab7fd2dd9b8">AZ::ConsoleFunctorBase</a>
 , <a class="el" href="class_a_z_1_1_data_1_1_asset.html#ad32e50705b6a37b41499ee7b763a1a21">AZ::Data::Asset&lt; T &gt;</a>
+</li>
+<li>GetFloor()
+: <a class="el" href="class_a_z_1_1_vector2.html#acaf66f4b94f9020dd9f2a178bb2886c5">AZ::Vector2</a>
+, <a class="el" href="class_a_z_1_1_vector3.html#aaf90907ddc10545af12d6cdc82a6db58">AZ::Vector3</a>
+, <a class="el" href="class_a_z_1_1_vector4.html#ae9c785955c5eb884d2a08d423598111e">AZ::Vector4</a>
 </li>
 <li>GetFunction()
 : <a class="el" href="class_a_z_1_1_dynamic_module_handle.html#a43af7c2240e6499fb70af3aec92946d5">AZ::DynamicModuleHandle</a>
@@ -1034,7 +1041,7 @@ $(function() {
 </li>
 <li>GetObject()
 : <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a29b982eb9399d71ebaace1a26f2ae441">AZ::SettingsRegistryImpl</a>
-, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#ae24ad1a7ce92778bc252aa896744bbbf">AZ::SettingsRegistryInterface</a>
+, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#a049fb028a4adaa88b69cd167335147b2">AZ::SettingsRegistryInterface</a>
 </li>
 <li>GetOffset()
 : <a class="el" href="class_a_z_1_1_i_o_1_1_file_range.html#aabcff61c48fbbdadb288117d60067540">AZ::IO::FileRange</a>
@@ -1143,7 +1150,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_plane.html#a48620bab7620d1514d1d160731597a1a">AZ::Plane</a>
 </li>
 <li>GetPolarDecomposition()
-: <a class="el" href="class_a_z_1_1_matrix3x3.html#af53d19fc0ec644baaf8b6689fe914242">AZ::Matrix3x3</a>
+: <a class="el" href="class_a_z_1_1_matrix3x3.html#a8ec55665bee011821e6c3f530bde63ee">AZ::Matrix3x3</a>
 </li>
 <li>GetPosition()
 : <a class="el" href="class_a_z_1_1_bezier_spline.html#a3b9f5e3561e62e3dd9e8018a9f2fc7f6">AZ::BezierSpline</a>
@@ -1155,7 +1162,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_i_o_1_1_streamer_context.html#af1218f8e3bc1c6d95927163a4923eab6">AZ::IO::StreamerContext</a>
 </li>
 <li>GetPriority()
-: <a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html#a530eae8b2ec1f3e1f29f4239f4ea37b4">AZ::SettingsRegistryInterface::Specializations</a>
+: <a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html#a38e585341ed6d7927b8c22548d304ed4">AZ::SettingsRegistryInterface::Specializations</a>
 </li>
 <li>GetProcessSignature()
 : <a class="el" href="class_a_z_1_1_entity.html#a5d1ad5a5167c0b88a21f69d0ad49afb0">AZ::Entity</a>
@@ -1180,7 +1187,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_user_settings_component.html#aaa19782ea5f34040497987fec9f0eca3">AZ::UserSettingsComponent</a>
 </li>
 <li>GetRandom()
-: <a class="el" href="class_a_z_1_1_better_pseudo_random___unix_like.html#ad140fe6bcf397a76043ed65ef49f08cc">AZ::BetterPseudoRandom_UnixLike</a>
+: <a class="el" href="class_a_z_1_1_better_pseudo_random___unix_like.html#a67b4fdb82d5ce17c2174aac9262798ce">AZ::BetterPseudoRandom_UnixLike</a>
 , <a class="el" href="class_a_z_1_1_better_pseudo_random___windows.html#afd0a5ca6365f53705bca068fc499ed0a">AZ::BetterPseudoRandom_Windows</a>
 </li>
 <li>GetReadRequestResult()
@@ -1225,7 +1232,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_console_functor_base.html#af72dbdac7bed4fe46c6a71fa8b906cc2">AZ::ConsoleFunctorBase</a>
 </li>
 <li>GetReporter()
-: <a class="el" href="class_a_z_1_1_json_base_context.html#a95908657346592812d6c9bacb8712222">AZ::JsonBaseContext</a>
+: <a class="el" href="class_a_z_1_1_json_base_context.html#ac57be0f6edbda59bdd93706ce62e28a6">AZ::JsonBaseContext</a>
 </li>
 <li>GetRequestStatus()
 : <a class="el" href="class_a_z_1_1_i_o_1_1_i_streamer.html#a74a99d73452bdc019af0e88d9c1c6729">AZ::IO::IStreamer</a>
@@ -1325,6 +1332,9 @@ $(function() {
 </li>
 <li>GetSlices()
 : <a class="el" href="class_a_z_1_1_slice_component.html#ac40357e3b9a3d126fde1d5a5774dfdcd">AZ::SliceComponent</a>
+</li>
+<li>GetSpawnTicketId()
+: <a class="el" href="class_a_z_1_1_entity.html#a269916f323bcca646bbe79d559976ea4">AZ::Entity</a>
 </li>
 <li>GetSpecialization()
 : <a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html#a35bba665a2232919cd1dae6d75b69b13">AZ::SettingsRegistryInterface::Specializations</a>
@@ -1436,13 +1446,14 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_e_bus.html#ad8bd1c39f535bd845cc864d55edd0688">AZ::EBus&lt; Interface, BusTraits &gt;</a>
 </li>
 <li>GetTransform()
-: <a class="el" href="class_a_z_1_1_plane.html#aa8bd98a4c5a8a86a5bccc379ec283034">AZ::Plane</a>
+: <a class="el" href="class_a_z_1_1_entity.html#a01f8ca5e71c12edf323078d47fda36b8">AZ::Entity</a>
+, <a class="el" href="class_a_z_1_1_plane.html#aa8bd98a4c5a8a86a5bccc379ec283034">AZ::Plane</a>
 </li>
 <li>GetTransformedAabb()
-: <a class="el" href="class_a_z_1_1_aabb.html#af7181459b514caecd41ce4423db26a7e">AZ::Aabb</a>
+: <a class="el" href="class_a_z_1_1_aabb.html#a17fa039fa4d114d6cb5d3b3672188d2e">AZ::Aabb</a>
 </li>
 <li>GetTransformedObb()
-: <a class="el" href="class_a_z_1_1_aabb.html#a22eb12c71f0f591c7b416a27fc58c695">AZ::Aabb</a>
+: <a class="el" href="class_a_z_1_1_aabb.html#adbe526bc805594c169e335391d0d5fe5">AZ::Aabb</a>
 </li>
 <li>GetTranslation()
 : <a class="el" href="class_a_z_1_1_matrix3x4.html#a7c7a2e59c12258080accd48a1ae90eb2">AZ::Matrix3x4</a>
@@ -1559,7 +1570,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:14:55 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

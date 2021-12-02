@@ -5,4 +5,4 @@ description: The Video Playback Framework Gem provides the interface to play bac
 toc: true
 ---
 
-The Video Playback Framework Gem provides the interface to play back video in an Open 3D Engine (O3DE) project.
+The Video Playback Framework Gem provides the interface to play back video in an **Open 3D Engine (O3DE)** project.

@@ -67,6 +67,26 @@ Public Member Functions</h2></td></tr>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_trace_recorder.html#a2276adb605edd66167589dc5c51eadda">GetDump</a> () const</td></tr>
 <tr class="memdesc:a2276adb605edd66167589dc5c51eadda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the combined output of all messages. <br /></td></tr>
 <tr class="separator:a2276adb605edd66167589dc5c51eadda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c6a7841c90631bacffd80e93368328a"><td class="memItemLeft" align="right" valign="top"><a id="a0c6a7841c90631bacffd80e93368328a"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_trace_recorder.html#a0c6a7841c90631bacffd80e93368328a">GetAssertCount</a> () const</td></tr>
+<tr class="memdesc:a0c6a7841c90631bacffd80e93368328a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of OnAssert calls. <br /></td></tr>
+<tr class="separator:a0c6a7841c90631bacffd80e93368328a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7484ae44a6a2bb07fed645cc5fabf5"><td class="memItemLeft" align="right" valign="top"><a id="abb7484ae44a6a2bb07fed645cc5fabf5"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_trace_recorder.html#abb7484ae44a6a2bb07fed645cc5fabf5">GetExceptionCount</a> () const</td></tr>
+<tr class="memdesc:abb7484ae44a6a2bb07fed645cc5fabf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of OnException calls. <br /></td></tr>
+<tr class="separator:abb7484ae44a6a2bb07fed645cc5fabf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d1577457a880aa8b3658bb5ba75f489"><td class="memItemLeft" align="right" valign="top"><a id="a2d1577457a880aa8b3658bb5ba75f489"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_trace_recorder.html#a2d1577457a880aa8b3658bb5ba75f489">GetErrorCount</a> (bool includeHigher=false) const</td></tr>
+<tr class="memdesc:a2d1577457a880aa8b3658bb5ba75f489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of OnError calls, and includes OnAssert and OnException if @includeHigher is true. <br /></td></tr>
+<tr class="separator:a2d1577457a880aa8b3658bb5ba75f489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6514e3f42b52903dfabd0ef852f69813"><td class="memItemLeft" align="right" valign="top"><a id="a6514e3f42b52903dfabd0ef852f69813"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_trace_recorder.html#a6514e3f42b52903dfabd0ef852f69813">GetWarningCount</a> (bool includeHigher=false) const</td></tr>
+<tr class="memdesc:a6514e3f42b52903dfabd0ef852f69813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of OnWarning calls, and includes higher categories if @includeHigher is true. <br /></td></tr>
+<tr class="separator:a6514e3f42b52903dfabd0ef852f69813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6209467cba2d97b192e995758428e44"><td class="memItemLeft" align="right" valign="top"><a id="ae6209467cba2d97b192e995758428e44"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_trace_recorder.html#ae6209467cba2d97b192e995758428e44">GetPrintfCount</a> (bool includeHigher=false) const</td></tr>
+<tr class="memdesc:ae6209467cba2d97b192e995758428e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of OnPrintf calls, and includes higher categories if @includeHigher is true. <br /></td></tr>
+<tr class="separator:ae6209467cba2d97b192e995758428e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/Tools/AtomToolsFramework/Code/Include/AtomToolsFramework/Debug/TraceRecorder.h</li>
@@ -74,7 +94,7 @@ AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:50 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:53 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

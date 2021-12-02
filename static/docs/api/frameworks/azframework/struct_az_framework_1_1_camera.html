@@ -77,46 +77,32 @@ AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a5d574ac5de65bb10d0f08c411c4dafb4"><td class="memItemLeft" align="right" valign="top">AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_camera.html#a5d574ac5de65bb10d0f08c411c4dafb4">m_lookAt</a> = AZ::Vector3::CreateZero()</td></tr>
-<tr class="separator:a5d574ac5de65bb10d0f08c411c4dafb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6055cf2616f475df9f2eb1b885c4742"><td class="memItemLeft" align="right" valign="top"><a id="ae6055cf2616f475df9f2eb1b885c4742"></a>
+AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_camera.html#ae6055cf2616f475df9f2eb1b885c4742">m_pivot</a> = AZ::Vector3::CreateZero()</td></tr>
+<tr class="memdesc:ae6055cf2616f475df9f2eb1b885c4742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pivot point to rotate about (modified in world space). <br /></td></tr>
+<tr class="separator:ae6055cf2616f475df9f2eb1b885c4742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af04ac67a7acdc8ad2043c5b0263c3fdf"><td class="memItemLeft" align="right" valign="top"><a id="af04ac67a7acdc8ad2043c5b0263c3fdf"></a>
+AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_camera.html#af04ac67a7acdc8ad2043c5b0263c3fdf">m_offset</a> = AZ::Vector3::CreateZero()</td></tr>
+<tr class="memdesc:af04ac67a7acdc8ad2043c5b0263c3fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset relative to pivot (modified in camera space). <br /></td></tr>
+<tr class="separator:af04ac67a7acdc8ad2043c5b0263c3fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a161cd1436069c7f19277b6ce4980dc40"><td class="memItemLeft" align="right" valign="top"><a id="a161cd1436069c7f19277b6ce4980dc40"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_camera.html#a161cd1436069c7f19277b6ce4980dc40">m_yaw</a> { 0.0 }</td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_camera.html#a161cd1436069c7f19277b6ce4980dc40">m_yaw</a> = 0.0f</td></tr>
 <tr class="memdesc:a161cd1436069c7f19277b6ce4980dc40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yaw rotation of camera (stored in radians) usually clamped to 0-360 degrees (0-2Pi radians). <br /></td></tr>
 <tr class="separator:a161cd1436069c7f19277b6ce4980dc40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6e3f7619d586177c969bde67758d7e7"><td class="memItemLeft" align="right" valign="top"><a id="ad6e3f7619d586177c969bde67758d7e7"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_camera.html#ad6e3f7619d586177c969bde67758d7e7">m_pitch</a> { 0.0 }</td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_camera.html#ad6e3f7619d586177c969bde67758d7e7">m_pitch</a> = 0.0f</td></tr>
 <tr class="memdesc:ad6e3f7619d586177c969bde67758d7e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pitch rotation of the camera (stored in radians) usually clamped to +/-90 degrees (-Pi/2 - Pi/2 radians). <br /></td></tr>
 <tr class="separator:ad6e3f7619d586177c969bde67758d7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a155c85fe6304dbb75f222210eae17013"><td class="memItemLeft" align="right" valign="top"><a id="a155c85fe6304dbb75f222210eae17013"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_camera.html#a155c85fe6304dbb75f222210eae17013">m_lookDist</a> { 0.0 }</td></tr>
-<tr class="memdesc:a155c85fe6304dbb75f222210eae17013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zero gives first person free look, otherwise orbit about m_lookAt. <br /></td></tr>
-<tr class="separator:a155c85fe6304dbb75f222210eae17013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A simple camera representation using spherical coordinates as input (pitch, yaw and look distance). The cameras transform and view can be obtained through accessor functions that use the internal spherical coordinates to calculate the position and orientation. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a5d574ac5de65bb10d0f08c411c4dafb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d574ac5de65bb10d0f08c411c4dafb4">&#9670;&nbsp;</a></span>m_lookAt</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZ::Vector3 AzFramework::Camera::m_lookAt = AZ::Vector3::CreateZero()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Position of camera when m_lookDist is zero, or position of m_lookAt when m_lookDist is greater than zero. </p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>A simple camera representation using spherical coordinates as input (pitch, yaw, pivot and offset). The camera's transform and view can be obtained through accessor functions that use the internal spherical coordinates to calculate the position and orientation. </p><dl class="section note"><dt>Note</dt><dd>Modifying m_pivot directly and leaving m_offset as zero will produce a free look camera effect, giving m_offset a value (e.g. in negative Y only) will produce an orbit camera effect, modifying X and Z of m_offset will further alter the camera translation in relation to m_pivot so it appears off center. </dd></dl>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Viewport/CameraInput.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:45 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:14:57 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

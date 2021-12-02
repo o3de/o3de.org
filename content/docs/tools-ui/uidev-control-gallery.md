@@ -14,7 +14,7 @@ Use the **O3DE Qt Control Gallery** tool to see the O3DE UI custom Qt widget lib
 
 Before you begin, make sure that you have built or installed O3DE on your computer.
 
-1. Open your computer's file explorer to the O3DE binaries directory. If you installed the O3DE engine, the path on your computer will be similar to `<engine>/bin/Windows/profile`. If you build O3DE from source, the tool will build to your engine build directory.
+1. Open your computer's file explorer to the O3DE binaries directory. If you installed the O3DE engine, the path on your computer will be similar to `<engine>/bin/Windows/profile/Default`. If you build O3DE from source, the tool will build to your engine build directory.
 
 1. Locate and then launch `O3DEQtControlGallery.exe`.
 

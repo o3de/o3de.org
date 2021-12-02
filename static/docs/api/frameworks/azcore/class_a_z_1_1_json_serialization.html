@@ -106,21 +106,28 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aa3551ba3a22040189cfcf59ef98b197b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a021d46663b4b4b81b1e78677f3bf385d"><td class="memItemLeft" align="right" valign="top">static JsonSerializerCompareResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_serialization.html#a021d46663b4b4b81b1e78677f3bf385d">Compare</a> (const rapidjson::Value &amp;lhs, const rapidjson::Value &amp;rhs)</td></tr>
 <tr class="separator:a021d46663b4b4b81b1e78677f3bf385d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89f3632dcc803b2062b395caa56518c5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_serialization.html#a89f3632dcc803b2062b395caa56518c5">ResolveImports</a> (rapidjson::Value &amp;jsonDoc, rapidjson::Document::AllocatorType &amp;allocator, <a class="el" href="struct_a_z_1_1_json_import_settings.html">JsonImportSettings</a> &amp;settings)</td></tr>
+<tr class="separator:a89f3632dcc803b2062b395caa56518c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a383dafc031c92b85938980117bfdc68e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_serialization.html#a383dafc031c92b85938980117bfdc68e">RestoreImports</a> (rapidjson::Value &amp;jsonDoc, rapidjson::Document::AllocatorType &amp;allocator, <a class="el" href="struct_a_z_1_1_json_import_settings.html">JsonImportSettings</a> &amp;settings)</td></tr>
+<tr class="separator:a383dafc031c92b85938980117bfdc68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:aa947dc11a46a8b5ebd11f83424d681d9"><td class="memItemLeft" align="right" valign="top"><a id="aa947dc11a46a8b5ebd11f83424d681d9"></a>
-static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>TypeIdFieldIdentifier</b></td></tr>
-<tr class="separator:aa947dc11a46a8b5ebd11f83424d681d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afac3fd89549165046b97abc042cacb64"><td class="memItemLeft" align="right" valign="top"><a id="afac3fd89549165046b97abc042cacb64"></a>
-static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultStringIdentifier</b></td></tr>
-<tr class="separator:afac3fd89549165046b97abc042cacb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a376315ceaff4faeb88c39208ec2679ba"><td class="memItemLeft" align="right" valign="top"><a id="a376315ceaff4faeb88c39208ec2679ba"></a>
-static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>KeyFieldIdentifier</b></td></tr>
-<tr class="separator:a376315ceaff4faeb88c39208ec2679ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a68c603876139eef63378eb47efd666"><td class="memItemLeft" align="right" valign="top"><a id="a0a68c603876139eef63378eb47efd666"></a>
-static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>ValueFieldIdentifier</b></td></tr>
-<tr class="separator:a0a68c603876139eef63378eb47efd666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53c61b81e84b23f92a888ae0176ad006"><td class="memItemLeft" align="right" valign="top"><a id="a53c61b81e84b23f92a888ae0176ad006"></a>
+static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>TypeIdFieldIdentifier</b> = &quot;$type&quot;</td></tr>
+<tr class="separator:a53c61b81e84b23f92a888ae0176ad006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a212ba70acd55d2f3624bec135ae7afc1"><td class="memItemLeft" align="right" valign="top"><a id="a212ba70acd55d2f3624bec135ae7afc1"></a>
+static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultStringIdentifier</b> = &quot;{}&quot;</td></tr>
+<tr class="separator:a212ba70acd55d2f3624bec135ae7afc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19342e77c5cc28e44c6e20095f63cd2f"><td class="memItemLeft" align="right" valign="top"><a id="a19342e77c5cc28e44c6e20095f63cd2f"></a>
+static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>KeyFieldIdentifier</b> = &quot;Key&quot;</td></tr>
+<tr class="separator:a19342e77c5cc28e44c6e20095f63cd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f245683a19195fcd1353bc6da44a1a"><td class="memItemLeft" align="right" valign="top"><a id="ab3f245683a19195fcd1353bc6da44a1a"></a>
+static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>ValueFieldIdentifier</b> = &quot;Value&quot;</td></tr>
+<tr class="separator:ab3f245683a19195fcd1353bc6da44a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc39bd5e81a517fdbb681de1a897f2d5"><td class="memItemLeft" align="right" valign="top"><a id="acc39bd5e81a517fdbb681de1a897f2d5"></a>
+static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>ImportDirectiveIdentifier</b> = &quot;$import&quot;</td></tr>
+<tr class="separator:acc39bd5e81a517fdbb681de1a897f2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Core class to handle serialization to and from json documents. The Json Serialization works by taking a default constructed object and then apply the information found in the JSON document on top of that object. This allows the Json Serialization to avoid storing default values and helps guarantee that the final object is in a valid state even if non-fatal issues are encountered. Note on containers: Containers such as vector or map are always considered to be empty even if there's entries in the provided default object. During deserialization entries will be appended to any existing values. A flag is provided to automatically clear containers during deserialization. Note on maps: If the key for map containers such as unordered_map can be interpret as a string the Json Serialization will use a JSON Object to store the data in instead of an array with key/value objects. Note on pointers: The Json Serialization assumes that are always constructed, so a default JSON value of "{}" is interpret as creating a new default instance even if the default value is a null pointer. A JSON Null needs to be explicitly stored in the JSON Document in order to default or explicitly set a pointer to null. Note on pointer memory: Objects created/destroyed by the Json Serialization for pointers require that the AZ_CLASS_ALLOCATOR is declared and the object is created using aznew or memory is allocated using azmalloc. Without these the application may crash if the Json Serialization tries to create or destroy an object pointed to by a pointer. </p>
@@ -927,6 +934,106 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a89f3632dcc803b2062b395caa56518c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89f3632dcc803b2062b395caa56518c5">&#9670;&nbsp;</a></span>ResolveImports()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a> AZ::JsonSerialization::ResolveImports </td>
+          <td>(</td>
+          <td class="paramtype">rapidjson::Value &amp;&#160;</td>
+          <td class="paramname"><em>jsonDoc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">rapidjson::Document::AllocatorType &amp;&#160;</td>
+          <td class="paramname"><em>allocator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_a_z_1_1_json_import_settings.html">JsonImportSettings</a> &amp;&#160;</td>
+          <td class="paramname"><em>settings</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Resolves all import directives, including nested imports, in the given document. An importer object needs to be passed in through the settings. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jsonDoc</td><td>The json document in which to resolve imports. </td></tr>
+    <tr><td class="paramname">allocator</td><td>The allocator associated with the json document. </td></tr>
+    <tr><td class="paramname">settings</td><td>Additional settings that control the way the imports are resolved. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a383dafc031c92b85938980117bfdc68e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a383dafc031c92b85938980117bfdc68e">&#9670;&nbsp;</a></span>RestoreImports()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a> AZ::JsonSerialization::RestoreImports </td>
+          <td>(</td>
+          <td class="paramtype">rapidjson::Value &amp;&#160;</td>
+          <td class="paramname"><em>jsonDoc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">rapidjson::Document::AllocatorType &amp;&#160;</td>
+          <td class="paramname"><em>allocator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_a_z_1_1_json_import_settings.html">JsonImportSettings</a> &amp;&#160;</td>
+          <td class="paramname"><em>settings</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Restores all import directives that were present in the json document. The same importer object that was passed into ResolveImports through the settings needs to be passed here through settings as well. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jsonDoc</td><td>The json document in which to restore imports. </td></tr>
+    <tr><td class="paramname">allocator</td><td>The allocator associated with the json document. </td></tr>
+    <tr><td class="paramname">settings</td><td>Additional settings that control the way the imports are restored. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab18bdf7ef288a00bcf5652d974e04006"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab18bdf7ef288a00bcf5652d974e04006">&#9670;&nbsp;</a></span>Store() <span class="overload">[1/6]</span></h2>
 
@@ -1453,7 +1560,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:07 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:14:23 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
