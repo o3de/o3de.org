@@ -60,120 +60,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3f02b9d95069b80ba8f3f1db80803929"><td class="memItemLeft" align="right" valign="top"><a id="a3f02b9d95069b80ba8f3f1db80803929"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_framework_1_1_i_matchmaking_requests.html">IMatchmakingRequests</a>, &quot;{BC0B74DA-A448-4F40-9B50-9D73142829D5}&quot;)</td></tr>
 <tr class="separator:a3f02b9d95069b80ba8f3f1db80803929"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cdfdbfed3325c276e4f6eea1b30c555"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_i_matchmaking_requests.html#a1cdfdbfed3325c276e4f6eea1b30c555">AcceptMatch</a> (const <a class="el" href="struct_az_framework_1_1_accept_match_request.html">AcceptMatchRequest</a> &amp;acceptMatchRequest)=0</td></tr>
+<tr class="memitem:a1cdfdbfed3325c276e4f6eea1b30c555"><td class="memItemLeft" align="right" valign="top"><a id="a1cdfdbfed3325c276e4f6eea1b30c555"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AcceptMatch</b> (const <a class="el" href="struct_az_framework_1_1_accept_match_request.html">AcceptMatchRequest</a> &amp;acceptMatchRequest)=0</td></tr>
 <tr class="separator:a1cdfdbfed3325c276e4f6eea1b30c555"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9664e20e615ad5a978afd2376f6ab3c0"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_i_matchmaking_requests.html#a9664e20e615ad5a978afd2376f6ab3c0">StartMatchmaking</a> (const <a class="el" href="struct_az_framework_1_1_start_matchmaking_request.html">StartMatchmakingRequest</a> &amp;startMatchmakingRequest)=0</td></tr>
+<tr class="memitem:a9664e20e615ad5a978afd2376f6ab3c0"><td class="memItemLeft" align="right" valign="top"><a id="a9664e20e615ad5a978afd2376f6ab3c0"></a>
+virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>StartMatchmaking</b> (const <a class="el" href="struct_az_framework_1_1_start_matchmaking_request.html">StartMatchmakingRequest</a> &amp;startMatchmakingRequest)=0</td></tr>
 <tr class="separator:a9664e20e615ad5a978afd2376f6ab3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1fccdd39417953528100843ed6b53b4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_i_matchmaking_requests.html#ad1fccdd39417953528100843ed6b53b4">StopMatchmaking</a> (const <a class="el" href="struct_az_framework_1_1_stop_matchmaking_request.html">StopMatchmakingRequest</a> &amp;stopMatchmakingRequest)=0</td></tr>
+<tr class="memitem:ad1fccdd39417953528100843ed6b53b4"><td class="memItemLeft" align="right" valign="top"><a id="ad1fccdd39417953528100843ed6b53b4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StopMatchmaking</b> (const <a class="el" href="struct_az_framework_1_1_stop_matchmaking_request.html">StopMatchmakingRequest</a> &amp;stopMatchmakingRequest)=0</td></tr>
 <tr class="separator:ad1fccdd39417953528100843ed6b53b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_az_framework_1_1_i_matchmaking_requests.html">IMatchmakingRequests</a> Pure virtual session interface class to abstract the details of session handling from application code. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1cdfdbfed3325c276e4f6eea1b30c555"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cdfdbfed3325c276e4f6eea1b30c555">&#9670;&nbsp;</a></span>AcceptMatch()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AzFramework::IMatchmakingRequests::AcceptMatch </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_az_framework_1_1_accept_match_request.html">AcceptMatchRequest</a> &amp;&#160;</td>
-          <td class="paramname"><em>acceptMatchRequest</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Registers a player's acceptance or rejection of a proposed matchmaking. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">acceptMatchRequest</td><td>The request of AcceptMatch operation </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a9664e20e615ad5a978afd2376f6ab3c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9664e20e615ad5a978afd2376f6ab3c0">&#9670;&nbsp;</a></span>StartMatchmaking()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual AZStd::string AzFramework::IMatchmakingRequests::StartMatchmaking </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_az_framework_1_1_start_matchmaking_request.html">StartMatchmakingRequest</a> &amp;&#160;</td>
-          <td class="paramname"><em>startMatchmakingRequest</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create a game match for a group of players. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">startMatchmakingRequest</td><td>The request of StartMatchmaking operation </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A unique identifier for a matchmaking ticket </dd></dl>
-
-</div>
-</div>
-<a id="ad1fccdd39417953528100843ed6b53b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1fccdd39417953528100843ed6b53b4">&#9670;&nbsp;</a></span>StopMatchmaking()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AzFramework::IMatchmakingRequests::StopMatchmaking </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_az_framework_1_1_stop_matchmaking_request.html">StopMatchmakingRequest</a> &amp;&#160;</td>
-          <td class="paramname"><em>stopMatchmakingRequest</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Cancels a matchmaking ticket that is currently being processed. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">stopMatchmakingRequest</td><td>The request of StopMatchmaking operation </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Matchmaking/IMatchmakingRequests.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 13 2021 14:19:03 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:14:57 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

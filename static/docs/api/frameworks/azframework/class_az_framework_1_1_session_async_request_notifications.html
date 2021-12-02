@@ -67,15 +67,17 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>MutexType</b> = AZSt
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abe4e9700c247c0fc41849595c7854d03"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_session_async_request_notifications.html#abe4e9700c247c0fc41849595c7854d03">OnCreateSessionAsyncComplete</a> (const AZStd::string &amp;createSessionReponse)=0</td></tr>
+<tr class="memitem:abe4e9700c247c0fc41849595c7854d03"><td class="memItemLeft" align="right" valign="top"><a id="abe4e9700c247c0fc41849595c7854d03"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCreateSessionAsyncComplete</b> (const AZStd::string &amp;createSessionReponse)=0</td></tr>
 <tr class="separator:abe4e9700c247c0fc41849595c7854d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18dbb370cb1121bcf8fd63a905aaec81"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_session_async_request_notifications.html#a18dbb370cb1121bcf8fd63a905aaec81">OnSearchSessionsAsyncComplete</a> (const <a class="el" href="struct_az_framework_1_1_search_sessions_response.html">SearchSessionsResponse</a> &amp;searchSessionsResponse)=0</td></tr>
+<tr class="memitem:a18dbb370cb1121bcf8fd63a905aaec81"><td class="memItemLeft" align="right" valign="top"><a id="a18dbb370cb1121bcf8fd63a905aaec81"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSearchSessionsAsyncComplete</b> (const <a class="el" href="struct_az_framework_1_1_search_sessions_response.html">SearchSessionsResponse</a> &amp;searchSessionsResponse)=0</td></tr>
 <tr class="separator:a18dbb370cb1121bcf8fd63a905aaec81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade8d7e9689c720d1528ce01c72d8f3ef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_session_async_request_notifications.html#ade8d7e9689c720d1528ce01c72d8f3ef">OnJoinSessionAsyncComplete</a> (bool joinSessionsResponse)=0</td></tr>
+<tr class="memitem:ade8d7e9689c720d1528ce01c72d8f3ef"><td class="memItemLeft" align="right" valign="top"><a id="ade8d7e9689c720d1528ce01c72d8f3ef"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnJoinSessionAsyncComplete</b> (bool joinSessionsResponse)=0</td></tr>
 <tr class="separator:ade8d7e9689c720d1528ce01c72d8f3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71a5e6abd9719d63310a249ecd87b32d"><td class="memItemLeft" align="right" valign="top"><a id="a71a5e6abd9719d63310a249ecd87b32d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_session_async_request_notifications.html#a71a5e6abd9719d63310a249ecd87b32d">OnLeaveSessionAsyncComplete</a> ()=0</td></tr>
-<tr class="memdesc:a71a5e6abd9719d63310a249ecd87b32d"><td class="mdescLeft">&#160;</td><td class="mdescRight">OnLeaveSessionAsyncComplete is fired once LeaveSessionAsync completes. <br /></td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnLeaveSessionAsyncComplete</b> ()=0</td></tr>
 <tr class="separator:a71a5e6abd9719d63310a249ecd87b32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -89,110 +91,13 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_az_framework_1_1_session_async_request_notifications.html">SessionAsyncRequestNotifications</a> The notifications correspond to session async requests </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="abe4e9700c247c0fc41849595c7854d03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe4e9700c247c0fc41849595c7854d03">&#9670;&nbsp;</a></span>OnCreateSessionAsyncComplete()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AzFramework::SessionAsyncRequestNotifications::OnCreateSessionAsyncComplete </td>
-          <td>(</td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>createSessionReponse</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>OnCreateSessionAsyncComplete is fired once CreateSessionAsync completes </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">createSessionResponse</td><td>The request id if session creation request succeeds; empty if it fails </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ade8d7e9689c720d1528ce01c72d8f3ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade8d7e9689c720d1528ce01c72d8f3ef">&#9670;&nbsp;</a></span>OnJoinSessionAsyncComplete()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AzFramework::SessionAsyncRequestNotifications::OnJoinSessionAsyncComplete </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>joinSessionsResponse</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>OnJoinSessionAsyncComplete is fired once JoinSessionAsync completes </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">joinSessionsResponse</td><td>True if joining session succeeds; False otherwise </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a18dbb370cb1121bcf8fd63a905aaec81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18dbb370cb1121bcf8fd63a905aaec81">&#9670;&nbsp;</a></span>OnSearchSessionsAsyncComplete()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AzFramework::SessionAsyncRequestNotifications::OnSearchSessionsAsyncComplete </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_az_framework_1_1_search_sessions_response.html">SearchSessionsResponse</a> &amp;&#160;</td>
-          <td class="paramname"><em>searchSessionsResponse</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>OnSearchSessionsAsyncComplete is fired once SearchSessionsAsync completes </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">searchSessionsResponse</td><td>The response of SearchSessions call </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Session/ISessionRequests.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 13 2021 14:19:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:14:59 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
