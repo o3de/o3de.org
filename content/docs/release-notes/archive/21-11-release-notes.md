@@ -6,11 +6,11 @@ weight: 101
 toc: true
 ---
 
-Good news, everyone! The Open 3D Foundation is proud to announce that we've delivered our first stable release of Open 3D Engine (O3DE), version 21.11.
+Good news, everyone! The Open 3D Foundation is proud to announce that we've delivered our first stable release of Open 3D Engine (O3DE), version 2111.1.
 
 ## Highlights
 
-### Open 3D Engine Binaries Installer
+### Open 3D Engine binaries installer
 
 There's now a binary installer for Windows for Open 3D Engine! Now you can try out our creative tools without building from source every time. This model - sometimes called "Open 3D Engine as an SDK" or "Open 3D Engine toolkit" - delivers pre-built binaries, DLLs, and headers which you can use for local development. For users who want to try out our tools without going through build time iterations, or are only interested in seeing how to write Gems and extensions to O3DE which don't require core source changes, the installer is an ideal new way to try out these workflows and find issues with us.
 
