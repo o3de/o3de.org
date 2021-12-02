@@ -27,4 +27,4 @@ All Gems that come bundled with O3DE are located in the `Gems` directory. Enable
 
 | **Topic** | **Description** |
 | --- | --- |
-| [Extend the Editor Tutorials](/docs/learning-guide/tutorials/extend-the-editor/) | Tutorials to extend the **O3DE Editor** by creating a custom tool Gem in C++ or Python.
+| [Extend the Editor Tutorials](/docs/learning-guide/tutorials/extend-the-editor/) | Tutorials to extend the **O3DE Editor** by creating a custom tool Gem in C++ or Python. |
