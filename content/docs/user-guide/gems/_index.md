@@ -18,13 +18,13 @@ All Gems that come bundled with O3DE are located in the `Gems` directory. Enable
 
 ## Section topics
 
-| **Topic** | **Description** |
+| Topic | Description |
 | --- | --- |
 | [Gems Available in O3DE](./reference) | The complete reference to all Gems available in O3DE. |
 | [Core O3DE Gems](./core-gems) | Learn about the core Gems that are required for most projects in O3DE. |
 
 ## Related topics
 
-| **Topic** | **Description** |
+| Topic | Description |
 | --- | --- |
 | [Extend the Editor Tutorials](/docs/learning-guide/tutorials/extend-the-editor/) | Tutorials to extend the **O3DE Editor** by creating a custom tool Gem in C++ or Python. |
