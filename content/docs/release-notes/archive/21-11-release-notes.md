@@ -332,7 +332,7 @@ Open 3D Engine Project Manager now has improvements which allow the support of G
 
   To work around this issue, run AssetProcessor to process project assets before launching Editor for the first time. After all assets are processed initially, Editor can be launched without manually running AssetProcessor.
 
-* If the user has previously used O3DE and an `o3de_manifest.json` file exists in their `/Users/(username)/.o3de` directory, when they go to build a project using the current installer version O3DE, it may fail with an error similar to the following:
+* If the user has previously used O3DE and an `o3de_manifest.json` file exists in their `/Users/(username)/.o3de` directory, when they go to build a project using the current installer version of O3DE, it may fail with an error similar to the following:
 
   ```cmd
   CMake Error at CMakeLists.txt:10 (find_package):
@@ -347,11 +347,11 @@ Open 3D Engine Project Manager now has improvements which allow the support of G
 
   To work around this issue, perform the following steps:
 
-    1. Go to the `Users/(username)/.o3de directory (this directory is hidden on some platforms by default) and delete the existing o3de_manifest.json file
-    1. Launch O3DE again to create a new one
-    1. Attempt the build again
+    1. Go to the `Users/(username)/.o3de directory (this directory is hidden on some platforms by default) and delete the existing `o3de_manifest.json` file.
+    1. Launch O3DE again to create a new one.
+    1. Attempt the build again.
 
-  At this point the build should succeed since the only reference is to the currently installed version of O3DE
+  At this point the build should succeed since the only reference is to the currently installed version of O3DE.
 
 
 ## Notes
