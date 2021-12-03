@@ -16,7 +16,7 @@ These Gems are only built and loaded for products that require them:
 
 * **Atom** - The real-time physically based renderer used by O3DE. In addition to rendering at runtime, Atom provides Editor components and asset processing tools. For more information on Atom, read the [Atom Guide](/docs/atom-guide).
 
-* **CameraFramework** - Components for placing and controlling cameras. Read the [Cameras documentation](/docs/user-guide/components/reference/camera/) for more information.
+* **CameraFramework** - Components for placing and controlling cameras. Read the [Cameras documentation](/docs/user-guide/components/reference/camera/camera) for more information.
 
 * **EMotionFX** - The EMotionFX Gem includes a suite of Editor and asset processing tools for artists and animators. It also brings support for processing animations from network traffic, and the ability to control animation states via C++ APIs.
 
