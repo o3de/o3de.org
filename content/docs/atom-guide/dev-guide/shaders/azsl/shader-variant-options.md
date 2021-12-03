@@ -7,9 +7,7 @@ weight: 100
 
 Shader variant options are shader constants that are only used in conditional statements that can be statically optimized. You can choose to compile them as static constants or as global variables.  
   
-Shader variant options are conceptually equivalent to [Specialization Constants](https://www.khronos.org/registry/vulkan/specs/1.1-khr-extensions/html/chap10.html#pipelines-specialization-constants) (external link) in Vulkan.  
-  
-The idea is easier to explain with some code. Consider the following AZSL code snippet, where a Shader Variant Option is being used to conditionally branch:  
+Consider the following AZSL code snippet, where a shader variant option is used in a conditional branch:  
 ```cpp
     if (o_useRed) {
         color = float3(1, 0, 0);
@@ -17,17 +15,14 @@ The idea is easier to explain with some code. Consider the following AZSL code s
         color = float3(0, 0, 1);
     }
 ```
-In the shader code above, the value of `o_useRed` is not known at compilation time, so `o_useRed` is compiled as a shader constant. The shader byte code branches at runtime depending on the runtime value of `o_useRed`.  In general, branching is slow and should be avoided.
+In the shader code above, the value of `o_useRed` is not known at compilation time, so `o_useRed` is compiled as a shader constant. The shader byte code branches at runtime depending on the runtime value of `o_useRed`.  In general, branching is slow and should be avoided.  
+
 In this scenario, if the value of `o_useRed` is defined as `true` at compilation time, then the compiler produces the following branch-less code.  
 ```cpp
-    // Because the developer chose o_useRed to be true at compilation time,
-    // the compiler will optimize and produce the following branch-less code.
     color = float3(1, 0, 0);
 ```
 If `o_useRed` is defined as `false` at compilation time, then the compiler produces the following branch-less code:  
 ```cpp
-    // Because the developer chose o_useRed to be false at compilation time,
-    // the compiler will optimize and produce the following branch-less code.
     color = float3(0, 0, 1);
 ```
 The example above produces three different versions of the compiled shader code. These are called *shader variants* (`ShaderVariantAsset`). The three shader variants produced in the example differ in two ways:

@@ -6,46 +6,49 @@ toc: true
 weight: 100
 ---
 
-Shaders for Atom Renderer are written in Amazon Shading Language (AZSL). AZSL is a superset of high-level shader language (HLSL). AZSL supports Vertex, Fragment and Compute shaders according to Shader Model 6.2. Ray-Tracing shaders are also supported according to Shader Model 6.3.
+Shaders in Atom Renderer are written in Amazon Shading Language (AZSL). AZSL is a superset of  [Microsoft's high-level shader language (HLSL)](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl). AZSL supports Vertex, Fragment and Compute shaders according to Shader Model 6.2. Ray-Tracing shaders are also supported according to Shader Model 6.3.
 
 Typically, you write shader code in a file with the `.azsl` extension, also known as an _AZSL source file_. You can also write shader code in a file with the `.azsli` extension, which is an include file that multiple AZSL source files can reference. Consider writing your shaders in `.azsli` files to reuse them in multiple AZSL source files and reduce code redundancy.  
 
 AZSL is defined on top of HLSL with the following differences:
 
 * [Declaration Of Shader Constants](#declaring-shader-constants)
-* [Shader Resource Groups](#ShaderResourceGroup)
+* [Shader Resource Groups](#shader-resource-groups)
 * [Shader Resource Group Semantics](srg-semantics)
 * [Root Constants](#root-constants)
-* [Shader variant options](#option)
+* [Shader variant options](#shader-variant-options)
 * [The special attribute \[\[pad_to(N)\]\]](#padton)
 
-The shader build pipeline allows for `.azsl` files to include other files and define C/C++ Macros. The `.azsl` files are always pre-processed by the **[C Pre-Processor (MCPP)](http://mcpp.sourceforge.net/)** before being transpiled into HLSL. In other words, if a raw `.azsl` file has `#include`, `#pragma` or `#define` directives it should be run through **MCPP** before being compiled with **AZSLc**, otherwise **AZSLc** will fail to compile such files.
+The shader build pipeline allows for `.azsl` files to include other files and define C/C++ Macros. The `.azsl` files are always pre-processed by the **[C Pre-Processor (MCPP)](http://mcpp.sourceforge.net/)** before being transpiled into HLSL. In other words, if a raw `.azsl` file has `#include`, `#pragma` or `#define` directives it should be run through MCPP before being compiled with **Amazon Shading Language Compiler (AZSLc)**, otherwise AZSLc will fail to compile such files.
 
-**Caveat**: **MCPP** doesn't support Macros with arithmetic expressions. Examples:  
+{{< note >}}  
+MCPP doesn't support C Macros with arithmetic expressions. Examples:  
 ```cpp
-    // Bad (Arithmetic Expression in C-Macros are not supported by MCPP)
+    // Bad (Arithmetic Expression in C Macros are not supported by MCPP)
     #define BAD_MACRO(x, y) ((x * 0.5) - (y * 2.0))
      
     // Good
     #define HEIGHT (7.2)
 ```
+{{< /note >}}  
 ## Declaring Shader Constants
-Also known as Shader Uniforms in other shader languages, like GLSL.
+Shader constants are also known as shader uniforms in other shader languages, like GLSL.
 
 AZSL allows the declaration of shader constants only in the following places:
 
-* [Shader Resource Groups](#ShaderResourceGroup).
-* [Root Constants](#root-constant).
+* [Shader Resource Groups](#shader-resource-groups)
+* [Root Constants](#root-constants)
 * `option` variables
-{{< note >}}
-You can also use `option` variables equivalently as Vulkan's Specialization Constants. In other words, You can define these constants statically at compilation time to avoid branching at runtime.
-{{< /note >}}
   
-**AZSLc** triggers a compilation error if an arbitrary `cbuffer` or any other type of resource is declared outside of the scopes mentioned above. The exception is `static` global variables, which shaders use internally, but aren't exposed to the application.
+AZSLc triggers a compilation error if an arbitrary `cbuffer` or any other type of resource is declared outside of the scopes mentioned above. The exception is `static` global variables, which shaders use internally, but aren't exposed to the application.
 
-## <a name="ShaderResourceGroup"></a>Shader Resource Groups
+{{< note >}}  
+You can also use `option` variables equivalently as Vulkan's Specialization Constants. In other words, You can define these constants statically at compilation time to avoid branching at runtime.  
+{{< /note >}}
 
-A *Shader Resource Group (SRG)* is a logical namespace to declare shader constants and resources. In AZSL the keyword to declare an SRG is `ShaderResourceGroup`. Shader resources are constants of the types: Shader Resource Views (SRV), Unordered Access Views (UAV), Constant Buffer Views (CBV), and Sampler States.
+## Shader Resource Groups
+
+A *Shader Resource Group (SRG)* is a logical namespace to declare shader constants and resources. In AZSL, the keyword to declare an SRG is `ShaderResourceGroup`. Shader resources are constants of the types: Shader Resource Views (SRV), Unordered Access Views (UAV), Constant Buffer Views (CBV), and Sampler States.
 
 When compiling shaders with the `--use-spaces` argument, each SRG takes over a whole register space (or descriptor set, as known in Vulkan). AZSL abstracts the register and register space assignment of resource descriptors with the `ShaderResourceGroupSemantic` keyword, which you must specify when declaring SRGs.
 
@@ -110,7 +113,9 @@ The following example demonstrates an SRG declaration. A *Shader Resource Group 
     };
 ```
 ### Scope
-Every SRG defines a scope and the SRG data must be qualified when accessed from out-of-SRG scope code.  
+Every SRG defines a scope. The SRG data must be qualified when accessed from outside of the SRG's scope in code.  
+
+**Example**:
 ```cpp
     float4 color = ExampleSRG::m_uniformColor;
     color *= ExampleSRG::m_texture.Sample(ExampleSRG::m_staticSampler, float2(0.5, 0.5));
@@ -122,6 +127,9 @@ A dynamic sampler declaration does not contain a body definition because they mu
 A static sampler declaration contains a body definition. You can declare a sampler and sampler-comparison by using AZSL's `Sampler` keyword, which conveniently encompasses HLSL's `SamplerState` and `SamplerComparisonState` keywords. AZSLc compiles sampler variables into the corresponding HLSL variables: `SamplerState`, or `SamplerComparisonState`, if it contains a `ComparisonFunc` definition..  
 
 The following examples demonstrate declarations for a dynamic sampler, a static sampler, and a static sampler comparison. They must be declared inside an SRG.
+
+**Example**:
+
 ```cpp
     // Dynamic sampler declaration
     Sampler m_dynamicSampler;
@@ -148,6 +156,9 @@ The following examples demonstrate declarations for a dynamic sampler, a static 
 ```
 ### Functions
 Functions can be declared in classes, global scopes, or inside SRGs. Defining functions inside SRGs is unique to AZSL.  
+
+**Example**:
+
 ```cpp
     ShaderResourceGroup PerObject : BindingPerObject
     {
@@ -215,6 +226,9 @@ ASZL adds the following extended rules for classes:
 
 ### Matrices
 AZSL follows the HLSL convention to use column major matrices by default. However, in O3DE runtime, the default convention is row major matrices. When declaring a matrix, you can specify the order by using the `row_major` or `column_major` keywords.  
+
+**Example**:
+
 ```cpp
     ShaderResourceGroupSemantic MatrixExample
     {
@@ -229,7 +243,10 @@ AZSL follows the HLSL convention to use column major matrices by default. Howeve
     };
 ```
 ### Arrays And Unbounded Arrays
-For array definitions, the rules and limitations are exactly the same as HLSL. The following examples demonstrate array declarations: 
+For array definitions, the rules and limitations are exactly the same as HLSL. .
+
+**Example**:
+
 ```cpp
     ShaderResourceGroup PerObject : BindingPerObject
     {
@@ -384,30 +401,29 @@ When AZSLc finds the first `partial ShaderResourceGroup` block, it will use it a
     }
 ```
 ## Root Constants
-AZSL supports the definition of shader constants that conform to the DX12 concept of Root Constants: https://docs.microsoft.com/en-us/windows/win32/direct3d12/using-constants-directly-in-the-root-signature.  
+AZSL supports the definition of shader constants that conform to [DirectX 12's concept for root constants](https://docs.microsoft.com/en-us/windows/win32/direct3d12/using-constants-directly-in-the-root-signature).  
   
-Root Constants, declared with the `rootconstant` keyword, will be transparently embedded into a `ConstantBuffer`. They are useful to define shader constants of frequent access. Because they are located in the root signature they can be read instantly without requiring additional levels of indirection.  
+Root constants are declared with the `rootconstant` keyword.  AZSLc transparently embeds root constants into a `ConstantBuffer`. They are useful to define shader constants that you frequently access. Because they are located in the root signature they can be read instantly without requiring additional levels of indirection.  
   
-Shader constants qualified as `rootconstant` are always declared globally. Examples:  
-```cpp
-    rootconstant float4x4 s_objectMatrix;
-    rootconstant uint s_materialIndex;
-```
-Root Constants should be used sparingly because the space to define root constants, the Root Signature, is shared with Root Descriptors and Descriptor Tables. In D3D12, the Root Signature is limited at 64 DWords (256 Bytes) worth of space that is shared among Root Constants, Root Descriptors and Descriptor Tables.  
-  
-## <a name="option"></a>Shader variant options
+Shader constants qualified as `rootconstant` are always declared globally.  
 
-Before describing how to use Shader variant options in a shader, you should read this: [AZSL: Design Principles And Purpose Of Shader variant options.](shader-variant-options)  
+**Example**:  
+```cpp
+rootconstant float4x4 s_objectMatrix;
+rootconstant uint s_materialIndex;
+```
+Consider using root constants sparingly due to limitations with root signatures, the space to define root constants. Root signatures are shared between root constants, root descriptors, and descriptor tables. In Direct3D 12, a root signature is limited to 64 DWords (256 bytes of space).  
   
-Shader variant options are declared as global variables with the `option` keyword. Their ultimate purpose is to avoid conditional branching, in favor of static execution, all for the sake of performance.  
+## Shader Variant Options
+
+Shader variant options are declared as global variables with the `option` keyword. Their ultimate purpose is to be used as statically defined flags. It is helpful to think of Shader variant options as compile time configurable C Macros.  
+By default, during shader asset compilation, all shader variant options are compiled as global shader constant flags that can be used for conditional branching. For the sake of performance, You can define the values of each shader variant option at compilation time, and thanks to shader compiler optimizations the conditional branches are removed in favor of static execution of some sections of the code.  
   
-Although the ultimate purpose is to avoid conditional branching at runtime, they can be used to conditionally branch at runtime and, in fact, it's the default behavior of the shader code to conditionally branch at runtime when a Shader Variant has not been compiled (not *baked*).  
+Shader variant options can be of type `bool`, `int`, or `enum`. They cannot be of type `float` and `struct`.  
   
-It is helpful to think of Shader variant options as compile time configurable C Macros.  
-  
-They can be of type `bool`, `int`, or `enum`. Other data types like `float` and `struct` options are not supported.  
-  
-An `int` option requires a range attribute to specify the minimum and maximum range of values.  
+`int` types require an attribute with the inclusive minimum and maximum range of values.  
+
+**Example**:
 ```cpp
     option bool o_useIBL;
     option bool o_useShadows = true;
@@ -423,46 +439,47 @@ An `int` option requires a range attribute to specify the minimum and maximum ra
     [[range(3, 16)]] // This integer option accepts values between 3 and 16 (both ends included).  
     option int o_numberOfTaps;
 ```
+For more information on shader variant options, refer to [AZSL: Design Principles And Purpose Of Shader variant options.](shader-variant-options).  
 Even though the Shader variant options are declared globally, they are actually encoded in a single array of bits as a member variable of one, and only one, SRG.  
 To learn more about how Shader variant options are encoded when compiled, please read: [Shader variant options & The Fallback Key.](shader-variants-fallback-key)  
   
-# <a name="padton"></a>The special attribute [[pad_to(N)]]
-In DX12, the layout, offset & sizes, of variables inside `struct` definitions changes whether a `struct` is being used as part of a `ConstantBuffer`, or as part of a `StructuredBuffer`.  
-Example:  
+# <a name="padton"></a>The special attribute \[\[pad_to(N)\]\]
+The `[[pad_to(N)]]` attribute pads the data with dummy variables to guarantee that the offset of the next variable starts with the desired alignment. The **N** argument is a single integral literal that must be a multiple of 4.
+
+In DX12, there can be alignment problems for variables inside `struct` definitions. The variable's layout, offset, and size changes depending on if the struct is part of a `ConstantBuffer` or a `StructuredBuffer`. To prevent this problem, you can use the `[[pad_to(N)]]` attribute to enforce data alignment.
+
+**Example**:  
 ```cpp
-    struct MyStruct
-    {
-         float m_data;
-         float4 m_arr[2];
-    };
-  
-For ConstantBuffer&lt;MyStruct&gt; case you'll get these offsets:  
-  
-    float m_data;                     ; Offset:    0
-    float4 m_arr[2];                  ; Offset:   16
-  
-For StructuredBuffer&lt;MyStruct&gt; case you'll get:  
-  
-    float m_data;                     ; Offset:    0
-    float4 m_arr[2];                  ; Offset:    4
+struct MyStruct
+{
+     float m_data;
+     float4 m_arr[2];
+};
 ```
-The [[pad_to(N)]] attribute is useful to pad the data with dummy variables until guaranteeing that the offset of the next variable starts with the desired alignment. The **N** argument is a single integral literal that must be a multiple of 4.  
-In the case posted above, `struct MyStruct`, using `[[pad_to(16)]]` can be useful to guarantee the same layout regardless of how it is used, as part of a `ConstantBuffer` or a `StructuredBuffer`:  
+For ConstantBuffer<MyStruct> case you'll get these offsets:  
+* `float m_data;` at offset: 0
+* `float4 m_arr[2];` at offset: 16
+  
+For StructuredBuffer<MyStruct> case you'll get:  
+* `float m_data;` at offset: 0
+* `float4 m_arr[2];` at offset: 4
+
+To resolve the example above, use `[[pad_to(N)]]` attributes to pad the data. This guarantees that `struct MyStruct` has the same layout, regardless of whether its a `ConstantBuffer` or `StructuredBuffer`.  
 ```cpp
-    struct MyStruct
-    {
-         float m_data;
-         [[pad_to(16)]]
-         float4 m_arr[2]; //Now, this member variable will always start at offset 16.
-    };
+struct MyStruct
+{
+     float m_data;
+     [[pad_to(16)]]
+     float4 m_arr[2]; //Now, this member variable will always start at offset 16.
+};
 ```
 In this example, **MyStruct** is forced to be of size 64 bytes:  
 ```cpp
-    struct MyStruct
-    {
-         float m_data;
-         [[pad_to(16)]]
-         float4 m_arr[2]; //Now, this member variable will always start at offset 16.
-         [[pad_to(64)]] // This guarantees the sizeof(MyStruct) to be 64.
-    };
+struct MyStruct
+{
+     float m_data;
+     [[pad_to(16)]]
+     float4 m_arr[2]; //Now, this member variable will always start at offset 16.
+     [[pad_to(64)]] // This guarantees the sizeof(MyStruct) to be 64.
+};
 ```
