@@ -332,6 +332,28 @@ Open 3D Engine Project Manager now has improvements which allow the support of G
 
   To work around this issue, run AssetProcessor to process project assets before launching Editor for the first time. After all assets are processed initially, Editor can be launched without manually running AssetProcessor.
 
+* If the user has previously used O3DE and an `o3de_manifest.json` file exists in their `/Users/(username)/.o3de` directory, when they go to build a project using the current installer version O3DE, it may fail with an error similar to the following:
+
+  ```cmd
+  CMake Error at CMakeLists.txt:10 (find_package):
+  By not providing "Findo3de.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "o3de", but
+  CMake did not find one.
+  Could not find a package configuration file provided by "o3de" with any of
+  the following names:
+  o3deConfig.cmake
+  o3de-config.cmake
+  ```
+
+  To work around this issue, perform the following steps:
+
+    1. Go to the `Users/(username)/.o3de directory (this directory is hidden on some platforms by default) and delete the existing o3de_manifest.json file
+    1. Launch O3DE again to create a new one
+    1. Attempt the build again
+
+  At this point the build should succeed since the only reference is to the currently installed version of O3DE
+
+
 ## Notes
 
 The current version of Open 3D Engine's source code is **2111.1**. Check out the [known issues](https://github.com/o3de/o3de/issues/1736) for 2111.1 (sources) and 21.11 (binaries).
