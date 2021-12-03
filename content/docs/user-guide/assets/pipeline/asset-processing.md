@@ -16,7 +16,8 @@ In O3DE, assets can be divided into two categories; *source* assets and *product
 
 ## Asset Pipeline overview
 
-**Asset Processor** launches when you start O3DE and runs as a background service while you work with O3DE. Asset Processor monitors a pre-configured set of [*scan directories*](scan-directories) for source assets. When Asset Processor detects a new or changed source asset, it determines what processing, if any, is required. It then queues a job to process the source asset. An **Asset Builder** for the source asset type generates a product asset. The runtime optimized product asset is stored in the **Asset Cache** for your project. The result is that your project's assets are constantly kept up to date. New and updated assets are ready to use as quickly as possible, and are hot reloaded in O3DE Editor and Launcher during runtime. The assets used in O3DE Editor are the same assets used by your deployment runtime.
+**Asset Processor** launches when you start O3DE Editor and runs as a background service while you work with O3DE. Asset Processor monitors a pre-configured set of [*scan directories*](scan-directories) for source assets. When Asset Processor detects a new or changed source asset, it determines what processing, if any, is required. It then queues a job to process the source asset. An **Asset Builder** for the source asset type generates a product asset. The runtime optimized product asset is stored in the **Asset Cache** for your project. The result is that your project's assets are constantly kept up to date. New and updated assets are ready to use as quickly as possible, and are hot reloaded in O3DE Editor and Launcher during runtime. The assets used in O3DE Editor are the same assets used by your deployment runtime.
+
 
 Below is a simple flowchart showing the process for a mesh file.
 
