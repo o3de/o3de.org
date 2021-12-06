@@ -6,7 +6,7 @@ weight: 100
 toc: true
 ---
 
-This tutorial demonstrates how to customize mesh asset processing for **Open 3D Engine**. You can use any mesh for this tutorial. The primary 3D scene format supported by O3DE is `.fbx`, so it's recommended to use a simple mesh asset saved to a `.fbx` file for this tutorial. If you don't have your own source asset for this tutorial, you can use one of the assets provided with O3DE.
+This tutorial demonstrates how to customize mesh asset processing for **Open 3D Engine**. You can use any mesh for this tutorial. The primary 3D scene format supported by O3DE is `.fbx`, so it's recommended to use a simple mesh asset saved to a `.fbx` file for this tutorial. If you don't have your own source asset, you can use one of the assets provided with O3DE.
 
 ## Preparation
 
@@ -24,7 +24,7 @@ When you placed your `.fbx` source asset in your project, Asset processor detect
 
     If your asset has already been processed, you might see a preview image of the asset, and a list of product assets below the `.fbx` source asset.
 
-1. **Right-click** the `.fbx` source asset and choose **Edit settings...** from the context menu to open Scene Settings.
+1. **Right-click** the `.fbx` source asset and choose **Edit settings...** from the context menu to open **Scene Settings**.
 
     ![ Open Scene Settings from Asset Browser. ](/images/learning-guide/tutorials/assets/meshes-edit-settings.png)
 
@@ -34,9 +34,9 @@ When you placed your `.fbx` source asset in your project, Asset processor detect
 
     In the image above, there is a single **Mesh group**. By default, all the meshes in a source asset are processed as a single mesh group. Each mesh group produces a set of product assets. You can create additional mesh groups for a source asset by choosing **Add another mesh**.
     
-    The **Name mesh** property contains the name of the source asset. All the product assets of this mesh group use this string as a prefix for their name. When there are multiple mesh groups, the product assets appear in Asset Browser beneath the source asset and are organized by mesh group name.
+    The **Name mesh** property contains the name of the source asset. All product assets of this mesh group use this string as a prefix for their name. When there are multiple mesh groups, the product assets appear in Asset Browser beneath the source asset and are organized by mesh group name.
 
-    The **Select meshes** property reads **All meshes selected**. You can choose the {{< icon browse-edit-select-files.svg >}} file select button to select the meshes to include in the mesh group.
+    The **Select meshes** property reads **All meshes selected**. You can choose the {{< icon browse-edit-select-files.svg >}} file select button to select which meshes to include in the mesh group.
 
     For this tutorial, you can use the default mesh group with all meshes selected.
 
