@@ -17,7 +17,7 @@ Learn the features, tools, and processes of **Open 3D Engine (O3DE)** with the h
 
 | Tutorial | Description
 | - | - |
-| [Mesh Assets](mesh-assets) | Use **Scene Settings** to process mesh assets. |
+| [Mesh Assets](assets/mesh-assets) | Use **Scene Settings** to process mesh assets. |
 
 ## Environments
 
