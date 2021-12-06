@@ -18,7 +18,7 @@ unsafe = true
 
 [params]
 font_awesome_version = "5.12.0"
-description = "Open 3D Engine (O3DE) is an Apache 2.0-licensed multi-platform 3D engine that enables developers and content creators to build AAA games, cinema-quality 3D worlds, and high-fidelity simulations <b>without any fees or commercial obligations</b>.<br><br><b>Try the Developer Preview today!</b>"
+description = "Open 3D Engine (O3DE) is a modular, open source, cross-platform 3D engine built to power anything from AAA games to cinema-quality 3D worlds to high-fidelity simulations. No fees or commercial obligations. Apache 2.0-licensed. Managed by The Linux Foundation."
 favicon = "favicon.ico"
 repositoryUrl = "https://github.com/o3de/o3de.org"
 contentDir = "/content/"
