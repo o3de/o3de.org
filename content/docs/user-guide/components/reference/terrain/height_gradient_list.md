@@ -28,5 +28,3 @@ TerrainExists \[out\] - Indicates whether gradient data exists for the given pos
 
 **Return**  
 None
-
-

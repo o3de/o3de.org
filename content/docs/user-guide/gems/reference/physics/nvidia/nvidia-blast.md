@@ -1,4 +1,5 @@
 ---
+linkTitle: NVIDIA Blast
 description: ' Use the NVIDIA Blast Gem to simulate destruction in your Open 3D Engine
   project. '
 title: NVIDIA Blast Gem
@@ -57,4 +58,3 @@ The NVIDIA Blast Gem provides the following:
    ```
    cmake --build <CMake build dir> --config profile --target <Project name> -- /m
    ```
-

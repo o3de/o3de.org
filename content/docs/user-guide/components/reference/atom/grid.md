@@ -1,5 +1,5 @@
 ---
-title: Grid component
+title: Grid Component
 linktitle: Grid
 description: 'Open 3D Engine (O3DE) Grid component reference.'
 toc: true

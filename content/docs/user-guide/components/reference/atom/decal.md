@@ -1,5 +1,5 @@
 ---
-title: Decal component
+title: Decal Component
 linktitle: Decal
 description: "Open 3D Engine (O3DE) Decal component reference."
 toc: true
@@ -38,4 +38,3 @@ Example of a decal with attenuation angle set to 1. More attenuation means less 
 The black scorch mark decal has a larger sort key than the orange dirt decal and thus is on top.
 
 ![Decal component sorting order example](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-sorting-example.png)
-

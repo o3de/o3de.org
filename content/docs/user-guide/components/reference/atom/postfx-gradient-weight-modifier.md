@@ -1,5 +1,5 @@
 ---
-title: PostFX Gradient Weight Modifier component
+title: PostFX Gradient Weight Modifier Component
 linktitle: PostFX Gradient Weight Modifier
 description: 'Open 3D Engine (O3DE) PostFX Gradient Weight Modifier component reference.'
 toc: true

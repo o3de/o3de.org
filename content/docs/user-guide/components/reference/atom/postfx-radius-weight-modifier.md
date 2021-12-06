@@ -1,5 +1,5 @@
 ---
-title: PostFX Radius Weight Modifier component
+title: PostFX Radius Weight Modifier Component
 linktitle: PostFX Radius Weight Modifier
 description: 'Open 3D Engine (O3DE) PostFx Radius Weight Modifier component reference.'
 toc: true

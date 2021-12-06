@@ -1,7 +1,7 @@
 ---
-description: ' Use the PhysX Shape Collider component to define where collision
-  detection and response occur in Open 3D Engine. '
-title: 'PhysX Shape Collider'
+linkTitle: PhysX Shape Collider
+description: Use the PhysX Shape Collider component to define where collision detection and response occur in Open 3D Engine (O3DE).
+title: PhysX Shape Collider Component
 ---
 
 

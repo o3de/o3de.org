@@ -1,5 +1,5 @@
 ---
-title: Mesh component
+title: Mesh Component
 linktitle: Mesh
 description: 'Open 3D Engine (O3DE) Mesh component reference.'
 toc: true

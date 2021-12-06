@@ -1,6 +1,7 @@
 ---
+linkTitle: Cloth
 description: ' The Open 3D Engine Cloth component. '
-title: Cloth component
+title: Cloth Component
 ---
 
 

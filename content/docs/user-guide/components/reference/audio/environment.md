@@ -1,5 +1,6 @@
 ---
-title: Audio Environment
+linkTitle: Audio Environment
+title: Audio Environment Component
 description: Use the Audio Environment component to set up a default environment for an entity in Open 3D Engine.
 toc: true
 ---
