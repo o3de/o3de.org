@@ -1,5 +1,6 @@
 ---
-title: Audio Trigger
+linkTitle: Audio Trigger
+title: Audio Trigger Component
 description: Use the Audio Trigger component to set up play and stop triggers in your game in O3DE.
 toc: true
 ---

@@ -106,11 +106,9 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| Fly Camera Input | Allows you to control the camera using mouse and key inputs. |
-| Look At | Forces an entity to always look at a given target. |
-| Random Timed Spawner) | Deprecated. |
+| [Fly Camera Input](./gameplay/fly-camera-input/) | Allows you to control the camera using mouse and key inputs. |
+| [Look At](./gameplay/look-at/) | Forces an entity to always look at a given target. |
 | [Simple State](/docs/user-guide/components/reference/gameplay/simple-state/) | Provides a simple state machine that allows you to activate and deactivate associated entities.|
-| Spawner | Deprecated. |
 | [Tag](./gameplay/tag/) | Allows you to apply one or more labels to an entity. |
 | [Input](./gameplay/input/) | Binds raw input to events in your game. |
 
@@ -209,11 +207,15 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| [Terrain Layer Spawner](/docs/user-guide/components/reference/terrain/layer_spawner) | Spawns a terrain region contained within configurable bounds, and allows prioritization of overlapping terrain layers. |
+| [Terrain Physics Collider](./terrain/terrain-physics-collider) | Provides terrain data to a physics collider in the form of a heightfield and surface to material mapping. |
+| [Terrain Layer Spawner](./terrain/layer_spawner) | Spawns a terrain region contained within configurable bounds, and allows prioritization of overlapping terrain layers. |
 | [Terrain Height Gradient List](./terrain/height_gradient_list) | Provides terrain height data from a list of gradients. |
 | [Terrain Surface Material List](./terrain/surface-material-list) | Defines mappings between a surface type and a render material. |
 | [Terrain Surface Gradient List](./terrain/surface-gradient-list) | Defines mappings between a gradient and a surface type on a terrain layer. |
-
+| [Terrain Macro Material](./terrain/terrain-macro-material) | Provides a macro level method of defining the appearance of a region of terrain. |
+| [Terrain World](./terrain/world) | Allows the bounds of the Terrain World and the height query resolution to be set. |
+| [Terrain World Debugger](./terrain/world-debugger) | Provides a means to display a wireframe or bounds representaion of the Terrain World. |
+| [Terrain World Renderer](./terrain/world-renderer) | Renders the terrain within the Terrain World bounds. |
 
 ### Test  
 

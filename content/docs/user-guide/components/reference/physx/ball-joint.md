@@ -1,6 +1,7 @@
 ---
+linkTitle: PhysX Ball Joint
 description: ' The Open 3D Engine PhysX Ball Joint component. '
-title: PhysX Ball Joint component
+title: PhysX Ball Joint Component
 ---
 
 

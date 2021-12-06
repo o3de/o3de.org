@@ -1,5 +1,5 @@
 ---
-title: Material component
+title: Material Component
 linktitle: Material
 description: 'Open 3D Engine (O3DE) Material component reference.'
 toc: true

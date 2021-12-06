@@ -1,7 +1,7 @@
 ---
-description: ' Use the PhysX Collider component to define where collision detection
-  and response occur in Open 3D Engine. '
-title: PhysX Collider
+linkTitle: PhysX Collider
+description: Use the PhysX Collider component to define where collision detection and response occur in Open 3D Engine (O3DE).
+title: PhysX Collider Component
 ---
 
 

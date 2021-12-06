@@ -353,8 +353,7 @@ To listen for changes on a client in our component, do the following:
 1. Create a callback method.
 
     ```c++
-    // create an event handler
-    AZ::Event<double>::Handler m_uptimeChanged;
+    void OnUpTimeChanged( double uptime );
     ```
 
 1. Assign it to the event handler.

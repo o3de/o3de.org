@@ -1,8 +1,9 @@
 ---
+linkTitle: UI Canvas on Mesh
 description: ' Use the UI Canvas on Mesh component in Open 3D Engine to place a UI canvas
   on a component entity in the 3D world that a player can interact with using ray
   casts. '
-title: UI Canvas on Mesh
+title: UI Canvas on Mesh Component
 ---
 
 

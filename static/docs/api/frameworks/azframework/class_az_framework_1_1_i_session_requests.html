@@ -60,126 +60,28 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab736609268fcf95b50912e6f4fb7f5d9"><td class="memItemLeft" align="right" valign="top"><a id="ab736609268fcf95b50912e6f4fb7f5d9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_framework_1_1_i_session_requests.html">ISessionRequests</a>, &quot;{D6C41A71-DD8D-47FE-8515-FAF90670AE2F}&quot;)</td></tr>
 <tr class="separator:ab736609268fcf95b50912e6f4fb7f5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0eb1af33ef9a469f402b8e5117c176d"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_i_session_requests.html#ad0eb1af33ef9a469f402b8e5117c176d">CreateSession</a> (const <a class="el" href="struct_az_framework_1_1_create_session_request.html">CreateSessionRequest</a> &amp;createSessionRequest)=0</td></tr>
+<tr class="memitem:ad0eb1af33ef9a469f402b8e5117c176d"><td class="memItemLeft" align="right" valign="top"><a id="ad0eb1af33ef9a469f402b8e5117c176d"></a>
+virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>CreateSession</b> (const <a class="el" href="struct_az_framework_1_1_create_session_request.html">CreateSessionRequest</a> &amp;createSessionRequest)=0</td></tr>
 <tr class="separator:ad0eb1af33ef9a469f402b8e5117c176d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fa79b92ee5732fccc96cfd93885f4f1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_az_framework_1_1_search_sessions_response.html">SearchSessionsResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_i_session_requests.html#a1fa79b92ee5732fccc96cfd93885f4f1">SearchSessions</a> (const <a class="el" href="struct_az_framework_1_1_search_sessions_request.html">SearchSessionsRequest</a> &amp;searchSessionsRequest) const =0</td></tr>
+<tr class="memitem:a1fa79b92ee5732fccc96cfd93885f4f1"><td class="memItemLeft" align="right" valign="top"><a id="a1fa79b92ee5732fccc96cfd93885f4f1"></a>
+virtual <a class="el" href="struct_az_framework_1_1_search_sessions_response.html">SearchSessionsResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SearchSessions</b> (const <a class="el" href="struct_az_framework_1_1_search_sessions_request.html">SearchSessionsRequest</a> &amp;searchSessionsRequest) const =0</td></tr>
 <tr class="separator:a1fa79b92ee5732fccc96cfd93885f4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0b810b0f2faf057b44e7fd9f26c04d4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_i_session_requests.html#af0b810b0f2faf057b44e7fd9f26c04d4">JoinSession</a> (const <a class="el" href="struct_az_framework_1_1_join_session_request.html">JoinSessionRequest</a> &amp;joinSessionRequest)=0</td></tr>
+<tr class="memitem:af0b810b0f2faf057b44e7fd9f26c04d4"><td class="memItemLeft" align="right" valign="top"><a id="af0b810b0f2faf057b44e7fd9f26c04d4"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>JoinSession</b> (const <a class="el" href="struct_az_framework_1_1_join_session_request.html">JoinSessionRequest</a> &amp;joinSessionRequest)=0</td></tr>
 <tr class="separator:af0b810b0f2faf057b44e7fd9f26c04d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64316c20d38b4d6f93c38199b85e8981"><td class="memItemLeft" align="right" valign="top"><a id="a64316c20d38b4d6f93c38199b85e8981"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_i_session_requests.html#a64316c20d38b4d6f93c38199b85e8981">LeaveSession</a> ()=0</td></tr>
-<tr class="memdesc:a64316c20d38b4d6f93c38199b85e8981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect player from session. <br /></td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>LeaveSession</b> ()=0</td></tr>
 <tr class="separator:a64316c20d38b4d6f93c38199b85e8981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_az_framework_1_1_i_session_requests.html">ISessionRequests</a> Pure virtual session interface class to abstract the details of session handling from application code. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad0eb1af33ef9a469f402b8e5117c176d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0eb1af33ef9a469f402b8e5117c176d">&#9670;&nbsp;</a></span>CreateSession()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual AZStd::string AzFramework::ISessionRequests::CreateSession </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_az_framework_1_1_create_session_request.html">CreateSessionRequest</a> &amp;&#160;</td>
-          <td class="paramname"><em>createSessionRequest</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create a session for players to find and join. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">createSessionRequest</td><td>The request of CreateSession operation </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The request id if session creation request succeeds; empty if it fails </dd></dl>
-
-</div>
-</div>
-<a id="af0b810b0f2faf057b44e7fd9f26c04d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0b810b0f2faf057b44e7fd9f26c04d4">&#9670;&nbsp;</a></span>JoinSession()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool AzFramework::ISessionRequests::JoinSession </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_az_framework_1_1_join_session_request.html">JoinSessionRequest</a> &amp;&#160;</td>
-          <td class="paramname"><em>joinSessionRequest</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Reserve an open player slot in a session, and perform connection from client to server. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">joinSessionRequest</td><td>The request of JoinSession operation </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if joining session succeeds; False otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a1fa79b92ee5732fccc96cfd93885f4f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fa79b92ee5732fccc96cfd93885f4f1">&#9670;&nbsp;</a></span>SearchSessions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="struct_az_framework_1_1_search_sessions_response.html">SearchSessionsResponse</a> AzFramework::ISessionRequests::SearchSessions </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_az_framework_1_1_search_sessions_request.html">SearchSessionsRequest</a> &amp;&#160;</td>
-          <td class="paramname"><em>searchSessionsRequest</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Retrieve all active sessions that match the given search criteria and sorted in specific order. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">searchSessionsRequest</td><td>The request of SearchSessions operation </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The response of SearchSessions operation </dd></dl>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Session/ISessionRequests.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 13 2021 14:19:04 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:14:58 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
