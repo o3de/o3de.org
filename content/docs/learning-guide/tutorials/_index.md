@@ -25,7 +25,7 @@ Do you have O3DE installed and you aren't sure where to start? How about creatin
 
 | Tutorial | Description
 | - | - |
-| [Mesh Assets](mesh-assets) | Use **Scene Settings** to process mesh assets. |
+| [Mesh Assets](assets/mesh-assets) | Use **Scene Settings** to process mesh assets. |
 
 ## Environments
 
