@@ -1,6 +1,6 @@
 ---
-linktitle: Shader variant options
-title: Shader variant options in Amazon Shading Language (AZSL)
+linktitle: Shader Variant Options
+title: Shader Variant Options in Amazon Shading Language (AZSL)
 description: Learn about Amazon Shading Language (AZSL) shader variant options for Atom Renderer. 
 weight: 100
 ---

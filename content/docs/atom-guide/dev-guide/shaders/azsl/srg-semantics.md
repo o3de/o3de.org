@@ -5,15 +5,15 @@ description: Learn about Amazon Shading Language (AZSL) shader resource group se
 weight: 100
 ---
 
-The `ShaderResourceGroupSemantic`, SRG Semantic, for short, defines the order in which descriptor bindings and descriptor sets (descriptor sets are also known as register spaces in HLSL) are emitted for each `ShaderResourceGroup`.  
+The Shader Resource Group Semantic (SRG Semantic), for short, defines the order in which descriptor bindings and descriptor sets are emitted for each SRG. In HLSL, descriptor sets are also known as _register spaces_. In AZSL, define SRGs by using the `ShaderResourceGroupSemantic` keyword.  
 ```cpp
-    ShaderResourceGroupSemantic <name>
-    {
-        FrequencyId = <0-based index>;
-        [ShaderVariantFallback = <number of bits>;] // (Optional)
-    }
+ShaderResourceGroupSemantic <name>
+{
+    FrequencyId = <0-based index>;
+    [ShaderVariantFallback = <number of bits>;] // Required only if using shader variant options.
+}
 ```
-An SRG semantic relates to the frequency of change of SRG data. The render pipeline has a predefined set of SRG semantics in [`<Engine Root>/Gems/Atom/Feature/Common/Assets/ShaderLib/Atom/Features/SrgSemantics.azsli`](https://github.com/o3de/o3de/blob/main/Gems/Atom/Feature/Common/Assets/ShaderLib/Atom/Features/SrgSemantics.azsli) 
+An SRG Semantic relates to the frequency of change of SRG data. The render pipeline has a predefined set of SRG semantics in [`<Engine Root>/Gems/Atom/Feature/Common/Assets/ShaderLib/Atom/Features/SrgSemantics.azsli`](https://github.com/o3de/o3de/blob/main/Gems/Atom/Feature/Common/Assets/ShaderLib/Atom/Features/SrgSemantics.azsli) 
   
 The table below outlines the various predefined SRG semantics and their change frequencies.
 | SRG semantic | Change frequency |
@@ -216,7 +216,7 @@ Note, for each register space, in this case, each SRG, all registers start at 0,
   
 ## ShaderVariantFallback: Defining Who Owns The Bit Array Of Options
 `ShaderVariantFallback` is an optional keyword that marks an SRG as the owner of the array of bits where all Shader Variants will be encoded.  
-Because there can only be one array of bits to encode the Shader variant options, only one SRG can bind to an SRG Semantic that uses the `ShaderVariantFallback` keyword.  
-If a shader makes no use of Shader variant options, then the `ShaderVariantFallback` is not required to be used.  
+Because there can only be one array of bits to encode the shader variant options, only one SRG can bind to an SRG Semantic that uses the `ShaderVariantFallback` keyword.  
+If a shader makes no use of shader variant options, then the `ShaderVariantFallback` is not required to be used.  
   
-For a deeper dive into Shader variant options encoding see: [Shader variant options & The Fallback Key](shader-variants-fallback-key).
+For a deeper dive into shader variant options encoding see: [Shader variant options & The Fallback Key](shader-variants-fallback-key).
