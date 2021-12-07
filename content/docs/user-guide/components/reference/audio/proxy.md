@@ -1,5 +1,6 @@
 ---
-title: Audio Proxy
+linkTitle: Audio Proxy
+title: Audio Proxy Component
 description: Use the Audio Proxy component in O3DE to provide a method of communication between multiple audio components.
 ---
 

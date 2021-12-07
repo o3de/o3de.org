@@ -1,7 +1,7 @@
 ---
-description: ' Use the PhysX Character Controller component to implement basic character
-  interactions in Open 3D Engine. '
-title: PhysX Character Controller
+linkTitle: PhysX Character Controller
+description: Use the PhysX Character Controller component to implement basic character interactions in Open 3D Engine (O3DE).
+title: PhysX Character Controller Component
 ---
 
 

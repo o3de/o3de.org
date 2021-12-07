@@ -1,5 +1,5 @@
 ---
-title: Exposure Control component
+title: Exposure Control Component
 linktitle: Exposure Control
 description: 'Open 3D Engine (O3DE) Exposure Control component reference.'
 toc: true

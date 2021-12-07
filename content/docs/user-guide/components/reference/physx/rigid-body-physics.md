@@ -1,6 +1,7 @@
 ---
+linkTitle: PhysX Rigid Body
 description: ' Learn more about the PhysX Rigid Body component in Open 3D Engine. '
-title: PhysX Rigid Body
+title: PhysX Rigid Body Component
 ---
 
 
