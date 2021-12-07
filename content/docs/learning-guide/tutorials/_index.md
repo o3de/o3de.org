@@ -13,6 +13,13 @@ Learn the features, tools, and processes of **Open 3D Engine (O3DE)** with the h
 | - | - |
 | [2D Navigation with Kythera AI](ai/navigation-2d) | Create an artificial intelligence (AI) agent that performs ground-based navigation and follows a visually scripted behavior tree. This tutorial uses the broad toolset provided by the [Kythera AI](/docs/user-guide/gems/reference/kythera-ai) Gem. |
 
+## Assets
+
+| Tutorial | Description |
+| - | - |
+| [Mesh assets](assts/mesh-assets) | Use Scene Settings to process mesh assets for O3DE. |
+| [PhysX Coliders](assets/physx-colliders) | Use Scene Settings to process PhysX collider assets for O3DE. |
+
 ## Environments
 
 | Tutorial | Description |
