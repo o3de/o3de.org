@@ -1,6 +1,7 @@
 ---
-title: Script Canvas and the Behavior Context
-description: Learn about the important relationship between Script Canvas and the behavior context in Open 3D Engine (O3DE).
+linktitle: Creating Nodes from the Behavior Context
+title: Creating Script Canvas Nodes from the Behavior Context
+description: Learn about the important relationship between Script Canvas and the behavior context and how to create new nodes using script binding in Open 3D Engine (O3DE).
 weight: 100
 ---
 

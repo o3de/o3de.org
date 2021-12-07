@@ -2,6 +2,7 @@
 linktitle: Troubleshooting
 title: Script Canvas Troubleshooting
 description: Use C++ macros for error management and troubleshooting in Open 3D Engine (O3DE).
+weight: 700
 ---
 
 Script Canvas provides a mechanism to detect and report errors. Errors in Script Canvas are generally caused by invalid conditions.
