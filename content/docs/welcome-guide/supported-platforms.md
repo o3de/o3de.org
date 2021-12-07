@@ -14,6 +14,7 @@ toc: true
 | --- | --- |
 | Microsoft Windows | <ul><li>[Windows prerequisites and configuration](requirements/#microsoft-windows)</li><li>[Installing O3DE for Windows](setup/installing-windows)</li><li>[Creating projects from the CLI on Windows](create/creating-projects-using-cli/creating-windows/)<sup>1</sup></li><li>[Building O3DE from source on Windows](setup/setup-from-github/building-windows/)</li></ul> |
 | Linux | <ul><li>[Linux prerequisites and configuration](requirements/#linux)</li><li>[Installing O3DE for Linux](setup/installing-linux)</li><li>[Creating projects from the CLI on Linux](create/creating-projects-using-cli/creating-linux/)<sup>1</sup></li><li>[Building O3DE from source on Linux](setup/setup-from-github/building-linux/)</li></ul> |
+| macOS | |
 
 <sup>1</sup> Platform-independent documentation on creating projects using **Project Manager** can be found [here](create/creating-projects-using-project-manager).
 
@@ -30,7 +31,8 @@ Support for developing on **macOS** is in an experimental stage. Documentation f
 | Microsoft Windows | <ul><li>[Creating a release layout for Windows](/docs/user-guide/packaging/windows-release-builds/)</li></ul> |
 | Linux | <ul><li>[Platform development support for Linux](/docs/user-guide/platforms/linux/)</li></ul> |
 | Android | <ul><li>[Platform development support for Android](/docs/user-guide/platforms/android/)</li></ul> |
+| iOS | |
 
 {{< note >}}
-Documentation for **macOS** and **iOS** as target platforms is expected at a later date.
+Documentation for **macOS** and **iOS** as target platforms will be added at a later date.
 {{< /note >}}
