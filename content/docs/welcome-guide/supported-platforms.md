@@ -18,7 +18,7 @@ toc: true
 
 <sup>1</sup> Platform-independent documentation on creating projects using **Project Manager** can be found [here](create/creating-projects-using-project-manager).
 
-For minimum hardware requirements for development on host platforms, refer to [System requirements](requirements).
+For minimum hardware requirements for development on host platforms, refer to [System Requirements](requirements).
 
 ### Target platforms
 
