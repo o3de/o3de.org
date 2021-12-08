@@ -27,7 +27,7 @@ Any changes to these fields will result in the Script Canvas editor being unable
 
 The data within the "details" field can be updated with the following fields:
 
-`name` The name of the node, argument or return type
+`name`: The name of the node, argument, or return type.
 
 `category` The category to place the node in, supports nested categories by using the / character (i.e. "Gameplay/Missions")
 
