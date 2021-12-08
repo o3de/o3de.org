@@ -10,17 +10,20 @@ guide_img: "/images/tools-ui/guide_img.png"
 primary: true
 ---
 
-Welcome to the **Open 3D Engine (O3DE)** Tools UI Developer's Guide! In this guide you will find guidelines around using the O3DE brand and UI style. Included is an introduction to component development and the custom Qt widget library for developers.
 
-If you are a looking to incorporate the O3DE logo into your project, please read the [Open 3D Branding Guidelines](/files/Open-3D-Branding-Guidelines-June-2021.pdf) PDF style guide to help stay aligned with our brand.
+Below you will find guidelines around using the **Open 3D Engine's (O3DE)** brand and UI style if you are looking for the O3DE logo to incorporate into your project, tools to develop the UI for your component development, or just make your life easier by checking out the custom Qt widget library for developers.
 
-You can also download a ZIP of our brand guidelines and logos: [O3DE Logo Pack.zip](/files/O3DE-Logo-Pack.zip)
+This page is constantly evolving with new updates for UI designs, patterns and assets that the contributors develop over time. This modular framework is called the **BlueJay Design System**. It contains all the components, patterns, and design elements that make up O3DE.
+
+If you have any questions regarding the BlueJay Design System or feel like something is incorrect or missing from it, you can [file an issue](https://github.com/o3de/sig-ui-ux/issues/new/choose) with the UI/UX Special Interest Group on GitHub. We also have a public roadmap that details all our planned major updates in the years to come.  
+
+Feel like having a chat? Check out our #SIG-UX-UI channel on Discord. The community is always happy to help!
 
 ## Tools UI Developer's Guide Contents
 
 | Topic | Description |
 | --- | --- |
-| [Introduction to O3DE UI development](ui-dev-intro/) | An introduction to the contents and purpose of this guide. |
+| [O3DE's Branding Guidelines](brand-guideline) | An overview of O3DE's branding guidelines, where you can download the logo assets, read about the recommended guidance for brand application, and review the details on our accepted brand colors.|
 | [O3DE Qt Control Gallery tool](uidev-control-gallery/) | A tool included with O3DE that demonstrates the custom Qt widget library in action. Also includes sample code related to each component. |
 | [O3DE UI component development guidelines](uidev-component-development-guidelines/) | An overview of O3DE UI component development and the custom Qt widget library. |
 | [O3DE UI component library](component-library/) | An introduction to each UI component (i.e. widget) in O3DE and guidelines for their usage. |
