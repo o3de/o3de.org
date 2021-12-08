@@ -15,17 +15,14 @@ Below you will find guidelines around using the **Open 3D Engine's (O3DE)** bran
 
 This page is constantly evolving with new updates for UI designs, patterns and assets that the contributors develop over time. This modular framework is called the **BlueJay Design System**. It contains all the components, patterns, and design elements that make up O3DE.
 
-If you have any questions regarding the BlueJay Design System or feel like something is incorrect or missing from it, you can [file an issue](https://github.com/o3de/sig-ui-ux/issues/new/choose) with the UI/UX Special Interest Group on GitHub. We also have a public roadmap that details all our planned major updates in the years to come.  
+If you have any questions regarding the BlueJay Design System or feel like something is incorrect or missing from it, you can [file an issue](https://github.com/o3de/sig-ui-ux/issues/new/choose) with the UI/UX Special Interest Group on GitHub.
 
-Feel like having a chat? Check out our #SIG-UX-UI channel on Discord. The community is always happy to help!
+Feel like having a chat? Check out our #SIG-UX-UI channel on [Discord](https://discord.com/invite/xNb2q4SJKJ). The community is always happy to help!
 
 ## Tools UI Developer's Guide Contents
 
-{{< image-width "/images/tools-ui/bjds-banner.png" "700" "A banner of the BlueJay Design System" >}}
+![A banner of the BlueJay Design System](/images/tools-ui/bjds-banner.png)
 
-<!-- ![A banner of the BlueJay Design System](/images/tools-ui/bjds-banner.png) -->
-
-<br>
 <br>
 
 | Topic | Description |

@@ -9,7 +9,7 @@ weight: 10
 
 Welcome to the brand guidelines page for **Open 3D Engine (O3DE)**. Here you will find the O3DE style guide, asset downloads, and any other resources we use in the design system for O3DE.
 
-If you feel like something is incorrect or missing here, you can [file an issue](https://github.com/o3de/sig-ui-ux/issues/new/choose) with the UI/UX Special Interest Group on GitHub. Feel like talking design? We welcome everyone to our open chat room on Discord at #SIG-UX-UI. Our community is always open to chat anything related to user experience and user interface!
+If you feel like something is incorrect or missing here, you can [file an issue](https://github.com/o3de/sig-ui-ux/issues/new/choose) with the UI/UX Special Interest Group on GitHub. Feel like talking design? We welcome everyone to our open chat room on [Discord](https://discord.com/invite/xNb2q4SJKJ) at #SIG-UX-UI. Our community is always open to chat anything related to user experience and user interface!
 
 ## Available resources
 
@@ -21,9 +21,8 @@ If you feel like something is incorrect or missing here, you can [file an issue]
 
 This is a PDF for O3DE's brand guidelines. It contains details on our primary and secondary logos, various other brand assets, and instructions for correct applications of the O3DE Logo. It also has a breakdown of our color palette if you are interested in developing marketing materials that showcase a product using O3DE.
 
-{{< image-width "/images/tools-ui/branding-guidelines/brand-guideline.png" "700" "The dos and don'ts of using the O3DE logo." >}}
+[{{< image-width "/images/tools-ui/branding-guidelines/brand-guideline.png" "700" "The dos and don'ts of using the O3DE logo." >}}](/files/Open-3D-Branding-Guidelines-June-2021.pdf)
 
-<br>
 <br>
 
 [Download O3DE Branding Guidelines PDF](/files/Open-3D-Branding-Guidelines-June-2021.pdf)
@@ -37,7 +36,6 @@ The pack file also also already includes the above O3DE brand guidelines.
 {{< image-width "/images/tools-ui/branding-guidelines/logo-files.png" "700" "A preview of the contents of the O3DE logo pack" >}}
 
 <br>
-<br>
 
 [Download O3DE Logo Pack ZIP](/files/O3DE-Logo-Pack.zip)
 
@@ -49,7 +47,6 @@ Download the logo assets and files for the **BlueJay Design System**.
 
 {{< image-width "/images/tools-ui/branding-guidelines/bjds-banner.png" "700" "A preview of the BlueJay Design Logo Pack" >}}
 
-<br>
 <br>
 
 [Download BlueJay Design System Logo Pack ZIP](todo)
