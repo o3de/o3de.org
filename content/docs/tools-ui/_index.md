@@ -21,9 +21,16 @@ Feel like having a chat? Check out our #SIG-UX-UI channel on Discord. The commun
 
 ## Tools UI Developer's Guide Contents
 
+{{< image-width "/images/tools-ui/bjds-banner.png" "700" "A banner of the BlueJay Design System" >}}
+
+<!-- ![A banner of the BlueJay Design System](/images/tools-ui/bjds-banner.png) -->
+
+<br>
+<br>
+
 | Topic | Description |
 | --- | --- |
-| [O3DE's Branding Guidelines](brand-guideline) | An overview of O3DE's branding guidelines, where you can download the logo assets, read about the recommended guidance for brand application, and review the details on our accepted brand colors.|
+| [O3DE's Branding Guidelines](branding-guidelines) | An overview of O3DE's branding guidelines, where you can download the logo assets, read about the recommended guidance for brand application, and review the details on our accepted brand colors.|
 | [O3DE Qt Control Gallery tool](uidev-control-gallery/) | A tool included with O3DE that demonstrates the custom Qt widget library in action. Also includes sample code related to each component. |
 | [O3DE UI component development guidelines](uidev-component-development-guidelines/) | An overview of O3DE UI component development and the custom Qt widget library. |
 | [O3DE UI component library](component-library/) | An introduction to each UI component (i.e. widget) in O3DE and guidelines for their usage. |
