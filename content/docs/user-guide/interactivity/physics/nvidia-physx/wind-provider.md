@@ -4,24 +4,26 @@ title: Create global or localized wind forces with PhysX
 weight: 500
 ---
 
-You can create global wind forces or wind forces contained within a collider volume with the **PhysX Force Region** component. Wind forces act on PhysX entities, such as **Cloth**, that can be affected by wind.
+You can create global wind forces or wind forces contained within a collider volume with the **PhysX Force Region** component. Wind forces act on entities with components that can be affected by wind. The following components can be affected by wind:
+- [**Cloth**](/docs/user-guide/components/reference/physx/cloth/)
 
+Note that the **PhysX Rigid Body** component is not affected by wind, but is affected by forces from a **PhysX Force Region** component.
+
+## Example wind provider setup
 1. Create an entity for the wind provider.
 
 1. Add a **Tag** component to the entity. The **Tag** component will specify whether the wind force is global or localized to a collider volume.
 
 1. Specify whether the wind provider will be global or localized. To determine what value to use for the tag component, from the **File** menu, choose **PhysX Configuration**. At the bottom of the **Global Configuration** tab there is a section labeled **Wind Configuration**.
 
-![PhysX Wind Configuration](/images/user-guide/physx/physx/ui-physx-wind-configuration.png)
+    ![PhysX Wind Configuration](/images/user-guide/physx/physx/ui-physx-wind-configuration.png)
 
-   **Wind Configuration** has properties for a **Global wind tag** and a **Local wind tag**. You many use the default values or set them as desired. These tags are used by the PhysX wind system to detect entities that provide wind data.
+    **Wind Configuration** has properties for a **Global wind tag** and a **Local wind tag**. You many use the default values or set them as desired. These tags are used by the PhysX wind system to detect entities that provide wind data.
 
-   For this example use the **Global wind tag** property value. In the **Tag** component of the entity, add a tag element and give it the value **global\_wind**.
-   
-    {{< note >}}
+    For this example use the **Global wind tag** property value. In the **Tag** component of the entity, add a tag element and give it the value **global\_wind**.
+{{< note >}}
 If you choose to use the **Local wind tag**, the wind will only affect entities that are inside the volume of the **PhysX Collider** you create in the next step.
 {{< /note >}}
-
 1. Add a **PhysX Collider** component. If you are using the **Local wind tag**, this collider will define the volume of the wind force. With the **Global wind tag**, the size and position of this collider does not matter because the wind will be global, however, the collider will provide a useful visualization for the global wind force.
 
 1. Set the **PhysX Collider** component's **Shape** property to **Box**.
@@ -42,8 +44,8 @@ If you choose to use the **Local wind tag**, the wind will only affect entities 
 
 1. Use the **Move** tool to place the cloth entity. If you are using the **Local wind tag**, you must place the cloth asset inside the **PhysX Collider** volume.
 
-![PhysX Wind entity setup](/images/user-guide/physx/physx/ui-physx-wind-cloth-entity.png)
+    ![PhysX Wind entity setup](/images/user-guide/physx/physx/ui-physx-wind-cloth-entity.png)
 
 1. Press **Control + G** to test the wind simulation.
 
-![PhysX Wind entity test](/images/user-guide/physx/physx/anim-wind-example.gif)
+    ![PhysX Wind entity test](/images/user-guide/physx/physx/anim-wind-example.gif)
