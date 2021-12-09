@@ -1,18 +1,17 @@
 ---
-linkTitle: PostFX
+linkTitle: Pong Game
 title: Create a Simple Pong Game with O3DE
 description: Videos to guide you through creating a basic Pong game in Open 3D Engine (O3DE).
-menu_uuid: Your First Project
 toc: true
 ---
 
-This topic contains video tutorials that will guide you through creating a Pong game in Open 3D Engine (O3DE), from creating a new project to defining gameplay state and user interface elements.
+This topic contains video tutorials that will guide you through creating a Pong game in **Open 3D Engine (O3DE)**, from creating a new project to defining gameplay state and user interface elements.
 
-## Video Tutorial Series: Create the Pong Game with Open 3D Engine (O3DE)
+## Video Tutorial Series: Create the Pong Game with O3DE
 
-Games, as conventional wisdom goes, started with Pong. Your experience with O3DE can start with Pong, too! Let AWS GameTech's technical trainer, Alex Damarjian, guide you through learning the basics of O3DE game development with this series, while letting you relive history with a modern game engine and tools.  
+Games, as conventional wisdom goes, started with Pong. Your experience with O3DE can start with Pong, too! Let AWS Game Tech's technical trainer, Alex Damarjian, guide you through learning the basics of O3DE game development with this series, while letting you relive history with a modern game engine and tools.  
 
-[Take me to the full playlist!](https://www.youtube.com/watch?v=kK0XnYFKw38&list=PLCQwFpnHSZQhhsr6iJqyeYqKe6dexnHh9)
+[Take me to the full playlist!](https://www.youtube.com/playlist?list=PLCQwFpnHSZQhhsr6iJqyeYqKe6dexnHh9)
 
 ### Pong Project and Level Creation
 
