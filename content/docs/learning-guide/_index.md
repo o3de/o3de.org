@@ -13,7 +13,7 @@ This guide contains video tutorials, written step-by-step tutorials, and sample 
 
 | Section | Description |
 | - | - |
-| [Create your first O3DE game: Pong](first-project/) | Start from a new O3DE project and build your first game: Pong! What's "Pong"? Two paddles square off, in a ball-based battle to land the highest score. This tutorial series will introduce you to basic game UI development, scripting, and controls in O3DE. |
+| [Create your first O3DE game: Pong](tutorials/first-project/) | Start from a new O3DE project and build your first game: Pong! What's "Pong"? Two paddles square off, in a ball-based battle to land the highest score. This tutorial series will introduce you to basic game UI development, scripting, and controls in O3DE. |
 | [Video Tutorials](#video-tutorials) | These video tutorials cover all the topics you need to get started, from an overview of O3DE, to the Gem system, building O3DE, creating projects, and O3DE's integrated renderer, Atom. |
 | [Tutorials](tutorials) | These written tutorials are grouped by concept and focus on specific features, tools, and processes. |
 | [Sample Documentation](samples) | These topics cover sample projects and sample Gems available for O3DE. |
