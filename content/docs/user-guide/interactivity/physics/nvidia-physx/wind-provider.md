@@ -18,7 +18,7 @@ Note that the **PhysX Rigid Body** component is not affected by wind, but is aff
 
     ![PhysX Wind Configuration](/images/user-guide/physx/physx/ui-physx-wind-configuration.png)
 
-    **Wind Configuration** has properties for a **Global wind tag** and a **Local wind tag**. You many use the default values or set them as desired. These tags are used by the PhysX wind system to detect entities that provide wind data.
+    **Wind Configuration** has properties for a **Global wind tag** and a **Local wind tag**. You may use the default values or set them as desired. These tags are used by the PhysX wind system to detect entities that provide wind data.
 
     For this example use the **Global wind tag** property value. In the **Tag** component of the entity, add a tag element and give it the value **global\_wind**.
 {{< note >}}
