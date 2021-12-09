@@ -21,7 +21,7 @@ If you feel like something is incorrect or missing here, you can [file an issue]
 
 This is a PDF for O3DE's brand guidelines. It contains details on our primary and secondary logos, various other brand assets, and instructions for correct applications of the O3DE Logo. It also has a breakdown of our color palette if you are interested in developing marketing materials that showcase a product using O3DE.
 
-[{{< image-width "/images/tools-ui/branding-guidelines/brand-guideline.png" "700" "The dos and don'ts of using the O3DE logo." >}}](/files/Open-3D-Branding-Guidelines-June-2021.pdf)
+[{{< image-width "/images/tools-ui/branding-guidelines/brand-guideline.png" "700" "The dos and don'ts of using the O3DE logo." >}}](/files/Open-3D-Branding-Guidelines-June-2021.pdf)  
 
 <br>
 
@@ -33,8 +33,9 @@ The O3DE Logo Pack contains all the essential files that a designer or developer
 
 The pack file also also already includes the above O3DE brand guidelines.
 
-{{< image-width "/images/tools-ui/branding-guidelines/logo-files.png" "700" "A preview of the contents of the O3DE logo pack" >}}
+{{< image-width "/images/tools-ui/branding-guidelines/logo-files.png" "700" "A preview of the contents of the O3DE logo pack" >}}  
 
+<br>
 <br>
 
 [Download O3DE Logo Pack ZIP](/files/O3DE-Logo-Pack.zip)
@@ -45,8 +46,8 @@ The pack file also also already includes the above O3DE brand guidelines.
 
 Download the logo assets and files for the **BlueJay Design System**.
 
-{{< image-width "/images/tools-ui/branding-guidelines/bjds-banner.png" "700" "A preview of the BlueJay Design Logo Pack" >}}
+[{{< image-width "/images/tools-ui/branding-guidelines/bjds-banner.png" "700" "A preview of the BlueJay Design Logo Pack" >}}](/files/BlueJay-Design-System-Logo-Pack.zip)  
 
 <br>
 
-[Download BlueJay Design System Logo Pack ZIP](todo)
+[Download BlueJay Design System Logo Pack ZIP](/files/BlueJay-Design-System-Logo-Pack.zip)
