@@ -132,7 +132,7 @@ If you want to create a kinematic entity that is animated through script, activa
 
 ## Decompose input meshes
 
-Assets that are composed of multiple meshes, or assets that have complex meshes, might require similarly complex PhysX collider assets. This is particularly true for kinematic and dynamic entities where triangle mesh colliders can't be used. In these scenarios, the input mesh can be decomposed into convex parts, and primitive colliders or convex colliders can be generated automatically fitted to each part, and processed as collider `.pxmesh` product assets.
+Assets that are composed of multiple meshes, or assets that have complex meshes, might require similarly complex PhysX collider assets. This is particularly true for kinematic and dynamic entities where triangle mesh colliders can't be used. In these scenarios, the input mesh can be decomposed into convex parts. Primitive colliders or convex colliders can be automatically generated and fitted to each part and processed as collider `.pxmesh` product assets.
 
 {{< note >}}
 Mesh decomposition doesn't alter the input mesh. Mesh decomposition is part of the process of generating and fitting collider assets. Mesh decomposition can only be used with primitive or convex colliders.
