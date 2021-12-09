@@ -7,6 +7,18 @@ weight: 200
 
 Learn the features, tools, and processes of **Open 3D Engine (O3DE)** with the help of step-by-step, guided tutorials.
 
+## Looking to get started?
+
+Do you have O3DE installed and you aren't sure where to start? How about creating the classic "Pong"? Follow this first project tutorial series and learn the basics of O3DE in the process.
+
+| Tutorial | Description |
+| - | - |
+| [Create your first O3DE game: Pong](first-project/) | Start from a new O3DE project and build your first game: Pong! What's "Pong"? Two paddles square off, in a ball-based battle to land the highest score. This tutorial series will introduce you to basic game UI development, scripting, and controls in O3DE. |
+
+[Create your first O3DE game: Pong](first-project/)
+
+---
+
 ## Artificial Intelligence
 
 | Tutorial | Description |
