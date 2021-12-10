@@ -1,6 +1,7 @@
 ---
+linkTitle: Non-uniform Scale
 description: ' Use the Non-uniform Scale component to scale an entity by different amounts along each axis. '
-title: Non-uniform Scale
+title: Non-uniform Scale Component
 ---
 
 The **Non-uniform Scale** component allows entities to be scaled by different amounts along each local axis. It can be added by clicking the **Add non-uniform scale** button on the [Transform](/docs/user-guide/components/reference/transform/) component.

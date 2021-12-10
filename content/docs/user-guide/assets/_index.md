@@ -12,6 +12,6 @@ Topics in this section cover the **Asset Pipeline** and asset processing, includ
 | --- | --- |
 | [Asset Pipeline](pipeline) | The Asset Pipeline is the end-to-end process that transforms source assets into runtime optimized product assets. |
 | **Asset Processor** | Asset Processor discovers source assets, manages asset process jobs, and maintains the **Asset Cache**. |
-| **Scene Settings** | Use Scene Settings to customize how meshes, actors, motions, and PhysX colliders are processed. |
+| [Scene Settings](scene-settings) | Use Scene Settings to customize how meshes, actors, motions, and PhysX colliders are processed. |
 | **Texture Settings** | Use Texture Settings to customize how source image assets are processed. |
 | [Python Asset Builder](builder) | With Python Asset Builder, you can create custom Asset Builders for known file types. |

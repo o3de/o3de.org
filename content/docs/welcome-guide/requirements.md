@@ -114,7 +114,7 @@ If the current CMake version was not returned because CMake cannot be found, loc
 
 ## macOS
 
-Support for developing on macOS is in an experimental stage. At a minimum, you need macOS Catalina, Intel x86_64, XCode 11, and a Metal-compatible video card that meets the hardware requirements above.
+Support for developing on macOS is in an experimental stage. At a minimum, you need macOS Big Sur, Intel x86_64, XCode 12.1+, and a Metal-compatible video card that meets the hardware requirements above.
 
 ## Linux
 

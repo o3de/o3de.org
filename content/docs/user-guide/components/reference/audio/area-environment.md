@@ -1,5 +1,6 @@
 ---
-title: Audio Area Environment
+linkTitle: Audio Area Environment
+title: Audio Area Environment Component
 description: Use the Audio Area Environment component in O3DE to apply an environment effect to sounds that an entity triggers.
 toc: true
 ---

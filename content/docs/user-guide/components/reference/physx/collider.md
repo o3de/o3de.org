@@ -1,7 +1,7 @@
 ---
-description: ' Use the PhysX Collider component to define where collision detection
-  and response occur in Open 3D Engine. '
-title: PhysX Collider
+linkTitle: PhysX Collider
+description: Use the PhysX Collider component to define where collision detection and response occur in Open 3D Engine (O3DE).
+title: PhysX Collider Component
 ---
 
 
@@ -73,7 +73,7 @@ Assign a physics asset to the collider. For more information, see [FBX Settings 
 Scale the collider shape independent of the entity.
 
 **Physics Materials from Asset**
-When the **Physics Asset** shape is selected, and **Physics Materials from Asset** is enabled, the physics materials for this collider are automatically set based on the Physics Materials from the mesh's PhysX asset (see [FBX Settings PhysX tab](/docs/user-guide/assets/fbx-settings/settings-physx-tab/)). If the physics material doesn't exist in the **Physics Material - Library** the default physics material from **PhysX Configuration** will be used. The physics materials cannot be edited while this option is enabled.
+When the **Physics Asset** shape is selected, and **Physics Materials from Asset** is enabled, the physics materials for this collider are automatically set based on the Physics Materials from the mesh's PhysX asset (see [FBX Settings PhysX tab](/docs/user-guide/assets/scene-settings/physx-tab/)). If the physics material doesn't exist in the **Physics Material - Library** the default physics material from **PhysX Configuration** will be used. The physics materials cannot be edited while this option is enabled.
 
 **Sphere shape**
 

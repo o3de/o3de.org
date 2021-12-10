@@ -1,11 +1,11 @@
 ---
-linkTitle: EMotionFX
-title: EMotionFX Animation Gem
-description: The EMotionFX Animation Gem provides Open 3D Engine's animation system for rigged actors including Animation Editor, a tool for creating animated behaviors, simulated objects, and colliders for rigged actors.
+linkTitle: EMotion FX Animation
+title: EMotion FX Animation Gem
+description: The EMotion FX Animation Gem provides Open 3D Engine's animation system for rigged actors including Animation Editor, a tool for creating animated behaviors, simulated objects, and colliders for rigged actors.
 toc: true
 ---
 
-Add the EmotionFX Animation Gem to your **Open 3D Engine (O3DE)** project to enable **Animation Editor**. Animation Editor provides an intuitive node-based system for controlling actor behavior with animation graphs. You can visually build hierarchal state machines and blend trees driven by parameters and events to animate rigged actors.
+Add the Emotion FX Animation Gem to your **Open 3D Engine (O3DE)** project to enable **Animation Editor**. Animation Editor provides an intuitive node-based system for controlling actor behavior with animation graphs. You can visually build hierarchal state machines and blend trees driven by parameters and events to animate rigged actors.
 
 Animation Editor includes tools for building the following:
 
