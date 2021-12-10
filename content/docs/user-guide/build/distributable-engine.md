@@ -1,6 +1,6 @@
 ---
-title: Create distributable Open 3D Engine builds
-linktitle: Engine and project distribution
+title: Create Distributable Open 3D Engine Builds
+linktitle: Engine and Project Distribution
 description: Learn the process for building a full bundle of libraries and executables that you can distribute to internal teams to use your customized version of Open 3D Engine (O3DE).
 weight: 200
 toc: true
@@ -10,7 +10,7 @@ Often, project developers are working on teams where engineers and others will b
 
 This topic guides you through the creation of an engine build to distribute internally as part of project development, which can be used by a project-dedicated team while keeping the engine-dedicated team's work separated and independent.
 
-The steps outlined in this section are appropriate for build engineers to set up CI systems which create and distribute new builds on a regular basis - or for developers who need to make regular one-off builds for smaller teams.
+The steps outlined in this section are appropriate for build engineers to set up continuous integration (CI) systems which create and distribute new builds on a regular basis - or for developers who need to make regular one-off builds for smaller teams.
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ These instructions use the following example paths:
 
 These instructions use the following example CMake cache values:
 
-* `LY_VERSION_ENGINE_NAME` - "MyO3DE"
+* `LY_VERSION_ENGINE_NAME`: "MyO3DE"
 
 {{< note >}}
 This example uses the Visual Studio generators and Windows `cmd` syntax for command-line instructions. For Linux users, change your CMake generator to `Ninja Multi-Config`, use a different build directory for CMake, and modify CLI syntax accordingly. Make sure that distributable engines on Linux systems are hosted on an `ext*`-format filesystem for performance reasons.
@@ -46,7 +46,7 @@ Creating a distributable build for project developers while keeping core engine 
 1. Creating the distributable build of the engine
 1. Providing the distributable build to project developers
 
-The exact process involved in the last step is left up to your in-house development practices, although we recommend using source control with good blob support for your build distribution. For teams using open source solutions we recommend [git LFS](https://git-lfs.github.com/).
+The exact process involved in the last step varies depending on your in-house development practices, although we recommend using source control with good blob support for your build distribution. For teams using open source solutions we recommend [git LFS](https://git-lfs.github.com/).
 
 When creating a new distributable build of the O3DE core tools, each step should be performed _every_ time a new build is created, to ensure that any changes to the engine which affect engine or project configuration are correctly picked up.
 
@@ -56,7 +56,7 @@ The first step in creating a distributable build is generating local binaries fr
 
 ### Build the `INSTALL` target
 
-Perform the following steps from the **O3DE source directory** (`C:\o3de-source` in this example):
+Perform the following steps from the O3DE source directory (`C:\o3de-source` in this example):
 
 1.  Generate the toolchain project files using a unique `LY_VERSION_ENGINE_NAME` CMake cache setting. This value is the name of the engine used by the O3DE project manager and registration system.
     
@@ -83,7 +83,7 @@ Run the following steps from the install directory:
 
 ### Register the engine
 
-The next step in creating a distributable build of the engine tools is to register the locally installed engine. These steps should be re-run every time you create a new build of the `INSTALL` target.
+The next step in creating a distributable build of the engine tools is to register the locally installed engine. You must re-run these steps every time you create a new build of the `INSTALL` target.
 
 Register the engine locally with the `o3de` script. Run the following command from your distributable build directory:
     
