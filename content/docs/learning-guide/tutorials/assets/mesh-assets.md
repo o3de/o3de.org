@@ -24,7 +24,8 @@ When you placed your `.fbx` source asset in your project, Asset processor detect
 
     If your asset has already been processed, you might see a preview image of the asset, and a list of product assets below the `.fbx` source asset.
 
-1. **Right-click** the `.fbx` source asset and choose **Edit settings...** from the context menu to open **Scene Settings**.
+1. **Right-click** the `.fbx` source asset and choose **Edit Settings...** from the context menu to open **Scene Settings**.
+
 
     ![ Open Scene Settings from Asset Browser. ](/images/learning-guide/tutorials/assets/meshes-edit-settings.png)
 
@@ -64,4 +65,5 @@ You can learn about the advanced settings properties of the Coordinate system ch
 
     When you drag the asset into the viewport, O3DE automatically creates an entity with a **Mesh** component that references the mesh product asset. If the source asset contains materials that have been processed, the materials are applied to the mesh by default.
 
-There are many options for customizing mesh processing, but there are limitations to the data that can be processed for meshes. Note that there are several product assets generated for the mesh listed below the source asset in Asset Browser. Each of these product assets contains some stream of data for the mesh. To learn more about the data that can be processed for a mesh and the limitations on the data that can be processed, refer to [Scene Format Support](/docs/user-guide/assets/scene-settings/scene-format-support) in the User Guide.
+There are many options for customizing mesh processing, but there are limitations to the data that can be processed for meshes. Note that there are several product assets generated for the mesh that are listed below the source asset in Asset Browser. Each of these product assets contains some stream of data for the mesh. To learn more about the data that can be processed for a mesh and the limitations on the data that can be processed, refer to [Scene Format Support](/docs/user-guide/assets/scene-settings/scene-format-support) in the User Guide.
+
