@@ -71,9 +71,9 @@ Perform the following steps from the O3DE source directory (`C:\o3de-source` in 
     cmake --build build/windows_vs2019 --target INSTALL --config profile
     ```
     
-    The binaries will be placed into the directory specified by the `CMAKE_INSTALL_PREFIX` CMake cache variable, or in an `install` subdirectory of the source code by default.
+    The binaries will be placed into a distributable install directory specified by the `CMAKE_INSTALL_PREFIX` CMake cache variable, or in an `install` subdirectory of the source code by default.
 
-Run the following steps from the install directory:
+Run the following steps from the distributable install directory:
 
 1. Install the version of Python and modules required by the engine.
    
@@ -85,7 +85,7 @@ Run the following steps from the install directory:
 
 The next step in creating a distributable build of the engine tools is to register the locally installed engine. You must re-run this registration step any time you make a change to `LY_VERSION_ENGINE_NAME`.
 
-Register the engine locally with the `o3de` script. Run the following command from your distributable build directory:
+Register the engine locally with the `o3de` script. Run the following command from your distributable install directory:
     
 ```cmd
 scripts\o3de.bat register --this-engine
@@ -103,7 +103,7 @@ At this point, you're ready to either create a new project for distribution or r
 
 ### Create a new project
 
-Run the following command from the local engine source directory:
+Run the following command from the distributable install directory:
    
 ```cmd
 scripts\o3de.bat create-project -pp W:\MyProject
