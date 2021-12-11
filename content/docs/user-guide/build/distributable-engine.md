@@ -183,7 +183,7 @@ From the project directory, run the following steps:
 At this point, the created `install` directory is your final set of distributables. It's up to your team to decide where to host the build, but we recommend a source control system that has good blob support.
 
 {{< important >}}
-The .gitignore rule automatically adds the following folders to ignore for git. If using another source control system, make sure the following subdirectories of your project are ignored and not checked in:
+The .gitignore rule automatically adds folders for git to ignore. The `.gitignore` file is located in the project root after project creation. If using another source control system, make sure the following subdirectories of your project are ignored and not checked in:
     
     ```
     \user
@@ -191,7 +191,7 @@ The .gitignore rule automatically adds the following folders to ignore for git. 
     \Cache
     ```
 
-These files are generated locally during builds, and checking them in may cause issues for developers.
+These files are generated locally during builds, and checking them in may cause issues for developers. Reference the `.gitignore` file in the project root to verify the list of directories and files to ignore.
 {{< /important >}}
 
 At this point, you're ready to have your team perform local setup for either engine development or project development.
