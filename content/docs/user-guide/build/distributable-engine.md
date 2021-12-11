@@ -83,7 +83,7 @@ Run the following steps from the install directory:
 
 ### Register the engine
 
-The next step in creating a distributable build of the engine tools is to register the locally installed engine. You must re-run these steps every time you create a new build of the `INSTALL` target.
+The next step in creating a distributable build of the engine tools is to register the locally installed engine. You must re-run this registration step any time you make a change to `LY_VERSION_ENGINE_NAME`.
 
 Register the engine locally with the `o3de` script. Run the following command from your distributable build directory:
     
