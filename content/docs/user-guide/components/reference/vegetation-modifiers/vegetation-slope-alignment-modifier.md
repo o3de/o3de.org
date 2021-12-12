@@ -1,23 +1,33 @@
 ---
-linkTitle: Vegetation Asset Weight Selector
-title: Vegetation Asset Weight Selector Component
-description: Create weight-based asset selection using gradients with the Vegetation Asset Weight Selector component in Open 3D Engine (O3DE).
-weight: 250
+title: Vegetation Slope Alignment Modifier Component
+linktitle: Vegetation Slope Alignment Modifier
+description: Use the Slope Alignment Modifier component to align the orientation of vegetation instances with the underlying terrain in Open 3D Engine (O3DE).
+weight: 500
 ---
 
-The **Vegetation Asset Weight Selector** component uses the values of a gradient to select assets from a vegetation asset list.  The assets can be sorted by weight prior to selection and the inbound gradient can be modified to affect the count and distribution of vegetation assets.
+Use the **Slope Alignment Modifier** component to align the orientation of vegetation or blocker instances with the underlying terrain.  Use gradients to control and vary vegetation alignment. By default, this component is configured to always completely align a vegetation instance to the slope of the terrain.  By setting the alignment coefficients to values less than `1`, instances will only partially align with terrain.
 
 ## Provider
 
 [Vegetation Gem](/docs/user-guide/gems/reference/environment/vegetation/)
 
-## Vegetation Asset Weight Selector properties
+## Dependencies
 
-![Vegetation Asset Weight Selector component properties](/images/user-guide/components/reference/vegetation/vegetation-asset-weight-selector-component.png)
+Add one of the following required components when using the Vegetation Slope Alignment Modifier component:
+- [**Vegetation Layer Blender**](./../vegetation/vegetation-layer-blender)
+- [**Vegetation Layer Blocker**](./../vegetation/vegetation-layer-blocker)
+- [**Vegetation Layer Blocker (Mesh)**](./../vegetation/vegetation-layer-blocker-mesh)
+- [**Vegetation Layer Spawner**](./../vegetation/layer-spawner)
+
+## Vegetation Slope Alignment Modifier properties
+
+![Vegetation Slope Alignment Modifier component properties](/images/user-guide/components/reference/vegetation-modifiers/vegetation-slope-alignment-modifier-component.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Sort By Weight** | Determines asset descriptor are sorted by weight before the gradient is used to select assets. | `Unsorted`, `Ascending`, or `Descending` | `Unsorted` |
+| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor parameters that are enabled can override this component's parameters. | Boolean | `Disabled` |
+| **Alignment Coefficient Min** | Sets the minimum value of a modified slope alignment. | Float: 0.0 - 1 | `1.0` |
+| **Alignment Coefficient Max** | Sets the maximum value of a modified slope alignment. | Float: 0.0 - 1 | `1.0` |
 | **Gradient** | Refer to [Gradient properties](#gradient-properties) below. |  |  |
 
 ### Gradient properties
