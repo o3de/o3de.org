@@ -1,23 +1,33 @@
 ---
-linkTitle: Vegetation Asset Weight Selector
-title: Vegetation Asset Weight Selector Component
-description: Create weight-based asset selection using gradients with the Vegetation Asset Weight Selector component in Open 3D Engine (O3DE).
-weight: 250
+title: Vegetation Scale Modifier Component
+linktitle: Vegetation Scale Modifier
+description: Add variation to your vegetation instances with the Vegetation Scale Modifier component in Open 3D Engine (O3DE).
+weight: 400
 ---
 
-The **Vegetation Asset Weight Selector** component uses the values of a gradient to select assets from a vegetation asset list.  The assets can be sorted by weight prior to selection and the inbound gradient can be modified to affect the count and distribution of vegetation assets.
+Add variation to the vegetation instances in your level with the **Vegetation Scale Modifier** component.  Use gradients to control how vegetation or blocker instances individually scale. By default, this component is configured to always scale the vegetation instance by the same value, `1`.  Change the values of **Range Min** or **Range Max** to values that are appropriate to the mesh instances you are modifying.
 
 ## Provider
 
 [Vegetation Gem](/docs/user-guide/gems/reference/environment/vegetation/)
 
-## Vegetation Asset Weight Selector properties
+## Dependencies
 
-![Vegetation Asset Weight Selector component properties](/images/user-guide/components/reference/vegetation/vegetation-asset-weight-selector-component.png)
+Add one of the following required components when using the Vegetation Scale Modifier component:
+- [**Vegetation Layer Blender**](./../vegetation/vegetation-layer-blender)
+- [**Vegetation Layer Blocker**](./../vegetation/vegetation-layer-blocker)
+- [**Vegetation Layer Blocker (Mesh)**](./../vegetation/vegetation-layer-blocker-mesh)
+- [**Vegetation Layer Spawner**](./../vegetation/layer-spawner)
+
+## Vegetation Scale Modifier properties
+
+![Vegetation Scale Modifier component properties](/images/user-guide/components/reference/vegetation-modifiers/vegetation-scale-modifier-component.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Sort By Weight** | Determines asset descriptor are sorted by weight before the gradient is used to select assets. | `Unsorted`, `Ascending`, or `Descending` | `Unsorted` |
+| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor parameters that are enabled can override this component's parameters. | Boolean | `Disabled` |
+| **Range Min** | Sets the minimum modified scale of the vegetation instance. | Float: 0.01 to Infinity | `1.0` |
+| **Range Max** | Sets the maximum modified scale of the vegetation instance. | Float: 0.01 to Infinity | `1.0` |
 | **Gradient** | Refer to [Gradient properties](#gradient-properties) below. |  |  |
 
 ### Gradient properties
