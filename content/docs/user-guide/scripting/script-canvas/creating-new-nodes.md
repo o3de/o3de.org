@@ -12,38 +12,58 @@ Script Canvas is an _extensible_ visual scripting system. There are four ways th
 * Behavior context binding
 * Custom nodes
 
-<!-- TODO: Write a sentence or two about each method for creating new nodes, defining what it involves and when to use it, along with any cautionary notes. Might be helpful to include a representative screenshot for each one. Then move the link for the documentation to the end of the paragraph, such as "For documentation, see: []()." -->
+## Functions
 
-### Functions
+One of the simplest ways to create a new node is by combining the functionality of several existing nodes into one, reusable function node. Use the Script Canvas Editor to create function nodes---there's no need to write any C++ code.
 
-You can create function nodes by combining a group of nodes into one, reusable function using the Script Canvas Editor, without needing to write any C++ code.
+![Script Canvas function node example](/images/user-guide/scripting/script-canvas/function-node-example.png)
 
-![Script Canvas function node example]()
+{{< note >}}
+Script Canvas functions are not available outside of the Script Canvas scripting system.
+{{< /note >}}
 
 Refer to the documentation on [Script Canvas functions](editor-reference/functions) for more information.
 
-### Script events
+## Script events
 
-You can create sender and receiver event nodes in Script Canvas with the help of the **Asset Editor**. An event is configured in Asset Editor by supplying the event name, parameters, and return value---similar to how you would define a function in any programming language. However, no C++ code is required.
+You can create new sender and receiver event nodes in Script Canvas with the help of the **Asset Editor**. Configure a script event in Asset Editor by supplying the event name, parameters, and return value---similar to how you would define a function in any programming language, but no C++ code is required.
 
-![Script event node example]()
+![Script event node example](/images/user-guide/scripting/script-canvas/script-event-node-example.png)
+
+{{< note >}}
+Script events are available to any O3DE scripting system, including Lua.
+{{< /note >}}
 
 Refer to the documentation on [Script events](/docs/user-guide/scripting/script-events/) for more information.
 
-### Behavior context binding
+## Behavior context binding
 
-To expose new C++ classes, methods, constants, data types, and events to Script Canvas, you can create script bindings to the behavior context.
+To expose new C++ classes, methods, constants, data types, and events to Script Canvas, you can create script bindings to the behavior context. This is the most common method used to create new nodes for O3DE Gems and components.
 
-![Example of node created from behavior context binding]()
+![Example of node created from behavior context binding](/images/user-guide/scripting/script-canvas/behavior-context-node-example.png)
 
-Refer to the documentation on [Creating Script Canvas nodes from the behavior context](programmer-guide/behavior-context) for more information.
+{{< note >}}
+Script bindings are available to any O3DE scripting system that uses the behavior context, such as Lua.
+{{< /note >}}
 
-### Custom nodes
+{{< note >}}
+No dependency on the Script Canvas Gem is required to create script bindings that reflect to the behavior context.
+{{< /note >}}
 
-For the most control and flexibility when creating new nodes, including the ability to add new functionality, you can use the highly customizable process known as _nodeables_. Nodeables use XML configuration, Jinja templates, and an automatic C++ code generation tool to create custom Script Canvas nodes.
+Refer to the documentation on [Creating Script Canvas nodes from the behavior context](programmer-guide/behavior-context) in the Script Canvas Programmer Guide for more information.
 
-![Example of node created from nodeables]()
+## Custom nodes
 
-<!-- Pro/con: If your Gem provides custom Script Canvas nodes, you must specify a dependency on the Script Canvas Gem. Functionality that you reflect through the behavior context requires no dependency on the Script Canvas Gem. -->
+For the most control and flexibility when creating new nodes, including the ability to add new functionality, you can use the highly customizable node implementation mechanism called _nodeables_. Nodeables use XML configuration, Jinja templates, and an automatic C++ code generation tool to create custom Script Canvas nodes.
 
-Refer to the documentation on [Creating custom nodes](programmer-guide/custom-nodes/) for more information.
+![Example of node created from nodeables](/images/user-guide/scripting/script-canvas/nodeable-node-example.png)
+
+{{< note >}}
+Nodeables are not available to other O3DE scripting systems, such as Lua.
+{{< /note >}}
+
+{{< note >}}
+Gems that use nodeables to provide custom Script Canvas nodes must specify a dependency on the Script Canvas Gem.
+{{< /note >}}
+
+Refer to the documentation on [Creating custom nodes](programmer-guide/custom-nodes/) in the Script Canvas Programmer Guide for more information.
