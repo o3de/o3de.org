@@ -54,7 +54,7 @@ Refer to the documentation on [Creating Script Canvas nodes from the behavior co
 
 ## Custom nodes
 
-For the most control and flexibility when creating new nodes, including the ability to add new functionality, you can use the highly customizable node implementation mechanism called _nodeables_. Nodeables use XML configuration, Jinja templates, and an automatic C++ code generation tool to create custom Script Canvas nodes.
+For the most control and flexibility when creating new nodes, including the ability to add new functionality, you can use the highly customizable node implementation mechanism called _nodeables_. Nodeables use XML configuration, Jinja templates, and an automatic C++ code generation tool to create custom Script Canvas nodes. Using this mechanism, programmers can write classes in C++ using an SDK that is guaranteed to generate a class interface that provides a useable node in the Script Canvas Editor, and a useable object at runtime.
 
 ![Example of node created from nodeables](/images/user-guide/scripting/script-canvas/nodeable-node-example.png)
 

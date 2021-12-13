@@ -26,7 +26,7 @@ You'll see the term _nodeable_ used throughout the O3DE source. A nodeable can r
 
 Prepare for code generation by creating an XML file that contains information about the node's class, input pins, output pins, and associated tooltip text. AzAutoGen uses this file to generate C++ code used by your node class when implementing your node's functionality.
 
-We'll use the following code, copied from the O3DE source for the **Timer** node<!-- , as an example to explain the important sections of this file -->.
+We'll use the following XML, copied from the O3DE source for the **Timer** node<!-- , as an example to explain the important sections of this file -->.
 
 File: `Gems/ScriptCanvas/Code/Include/ScriptCanvas/Libraries/Time/TimerNodeable.ScriptCanvasNodeable.xml`
 
@@ -56,7 +56,9 @@ File: `Gems/ScriptCanvas/Code/Include/ScriptCanvas/Libraries/Time/TimerNodeable.
 </ScriptCanvas>
 ```
 
-The `TimerNodeable` class itself implements a base class, called `BaseTimer`. In the following code, you can see some additional properties that describe member data for the class.
+The `TimerNodeable` class itself implements a base class, called `BaseTimer`. In the following XML, you can see the additional properties that describe member data for the class.
+
+File: `Gems/ScriptCanvas/Code/Include/ScriptCanvas/Internal/Nodeables/BaseTimer.ScriptCanvasNodeable.xml`
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -96,15 +98,15 @@ The `TimerNodeable` class itself implements a base class, called `BaseTimer`. In
 
 ## Step 2: Create the node class files {#create-the-node-class-files}
 
-The next step is to begin the implementation of the C++ functions that will be invoked by the Script Canvas node. These source files reference the auto-generated source for your node, and use the `ScriptCanvas::Nodeable` class as a base class.
+The next step is to implement the C++ functions that will be invoked by the Script Canvas node. These source files reference the auto-generated source for your node, and use the `ScriptCanvas::Nodeable` class as a base class.
 
-There are three critical parts that every Script Canvas node header file needs:
+There are three critical parts that every Script Canvas nodeable header file needs:
 
-1. It needs to derive from `ScriptCanvas::Nodeable`.
+1. It must derive from `ScriptCanvas::Nodeable`.
 1. It must contain the node definition macro `SCRIPTCANVAS_NODE`.
 1. It must include the generated header.
 
-An example showing the use of these requirements can be found in the following excerpt from the `BaseTimer` header for the Timer node:
+The following code fragment from the `BaseTimer` header for the Timer node demonstrates these requirements:
 
 File: `Gems/ScriptCanvas/Code/Include/ScriptCanvas/Internal/Nodeables/BaseTimer.h`
 
@@ -142,7 +144,7 @@ namespace ScriptCanvas
 
 Add the XML and class source files to your project's CMake.
 
-For example, for `TimerNodeable` we need to add the following lines:
+For example, in `TimerNodeable` we must add the following lines:
 
 ```cmake
 set(FILES
@@ -202,9 +204,9 @@ ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Header.jinja,$path/$fileprefix.gen
 ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Source.jinja,$path/$fileprefix.generated.cpp
 ```
 
-The precise place for this section will vary depending on how your Gem is configured. However, it is recommended that your Gem defines a `STATIC` library. This enables this code to be available to both EDITOR and RUNTIME.
+The precise place for this section will vary depending on how your Gem is configured. However, we recommend that your Gem define a `STATIC` library to make the code available to both editor and runtime projects.
 
-For example, here is the definition of a complete Gem's `CMakeLists.txt` that supports Script Canvas custom nodes:
+As an example, here is the definition of a complete Gem's `CMakeLists.txt` that supports Script Canvas custom nodes:
 
 ```cmake
 ly_add_target(
@@ -268,7 +270,7 @@ if(PAL_TRAIT_BUILD_HOST_TOOLS)
 endif()
 ```
 
-`MyGem.Static` defines two file lists. The first file list will hold all the files that are common between the runtime and editor Gem projects. The other file is `mygem_autogen_files.cmake`. This is used to tell the static library which AzAutoGen code generation templates should be used, which will generally be the following:
+`MyGem.Static` defines two file lists. The first file list, `mygem_common_files.cmake`, contains all the files that are common between the editor and runtime Gem projects. The other file list, `mygem_autogen_files.cmake`, informs the static library which AzAutoGen code generation templates to use, which will generally be the following:
 
 ```cmake
 set(FILES
@@ -277,9 +279,9 @@ set(FILES
 )
 ```
 
-The only time that will be different is if you create custom templates for your own purposes. For example, if you were to extend Script Canvas to do something beyond what it provides "out of the box", you could have your own set of templates to generate code in the syntax that you define (see AzAutoGen).
+The list of autogen templates might be different if you create custom templates for your own purposes. For example, if you were to extend Script Canvas to do something beyond what it provides "out of the box", you could have your own set of templates to generate code in the syntax that you define. For more information, refer to the documentation on [AzAutoGen](/docs/user-guide/programming/autogen/).
 
-The `mygem_common_files.cmake` file will contain all of your Gem's standard files. It is important to add your node files to the list, including the node's XML definition file, as shown in the preceding section, [Add source files to CMake](#add-source-files-to-cmake).
+It is important to add all of your node files to the `mygem_common_files.cmake` list, including the node's XML definition file. An example of this can be found in the preceding section, [Add source files to CMake](#add-source-files-to-cmake).
 
 Example:
 
