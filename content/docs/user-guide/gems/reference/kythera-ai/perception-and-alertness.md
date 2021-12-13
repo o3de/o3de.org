@@ -1,6 +1,6 @@
 ---
 linkTitle: Perception and Alertness
-title: Spatial Query System
+title: Perception and Alertness
 description: Overview of Kythera AI's Perception and Alertness systems
 weight: 1100
 toc: true
@@ -12,11 +12,11 @@ Kythera AI's **Perception** systems are responsible for receiving sensory input
 
 To perceive entities in the world, an agent has several stimulus systems that receive input from the world in different ways and pass this on to a central perception system that keeps track of them. There are five types of stimulus:
 
-*   **Visual** - Physical raycasts done in the world to determine line of sight to targets
-*   **Audio** - Sound events such as weapon fire, engine noise, and explosions, with a sound radius that will make them be picked up by any AI within that radius
-*   **Tactile** - Collision events such as being hit by a bullet or explosion, or colliding with an object
-*   **Group** - A pseudo-radio/communication stimulus where AIs notify other AIs in their perception group of a target
-*   **Unspecified** - A generic stimulus type that can be used for things like radars and scanners, where there is no obvious physical analog
+*   **Visual** - Physical raycasts done in the world to determine line of sight to targets.
+*   **Audio** - Sound events such as weapon fire, engine noise, and explosions, with a sound radius that will make them be picked up by any AI within that radius.
+*   **Tactile** - Collision events such as being hit by a bullet or explosion, or colliding with an object.
+*   **Group** - A pseudo-radio/communication stimulus where AIs notify other AIs in their perception group of a target.
+*   **Unspecified** - A generic stimulus type that can be used for things like radars and scanners, where there is no obvious physical analog.
 
 Once an entity is registered with the perception of an AI, it can fall into three different perceived levels:
 
@@ -26,11 +26,15 @@ Once an entity is registered with the perception of an AI, it can fall into thre
 
 Each entity has a Perceived level from 0.0 to 1.0, where 0.0 is not perceived at all and 1.0 is fully perceived. An entity's Perceived level increases every time a stimulus event occurs in one of the stimulus systems and is passed on to the Perception system.
 
-Each stimulus type is tracked independently for each perceived entity, with its own 0.0 to 1.0 range. The maximum of these values becomes the effective Perceived level for that entity. While each stimulus type is tracked independently, the score for each stimulus event is modified by the number of different stimulus types that have registered perception for that entity. So effectively, if an entity is being perceived through multiple stimulus typesf, the perceived levels for each stimulus will rise faster, simulating the multiple stimuli reinforcing each other.
+Each stimulus type is tracked independently for each perceived entity, with its own 0.0 to 1.0 range. The maximum of these values becomes the effective Perceived level for that entity. While each stimulus type is tracked independently, the score for each stimulus event is modified by the number of different stimulus types that have registered perception for that entity. So effectively, if an entity is being perceived through multiple stimulus types, the perceived levels for each stimulus will rise faster, simulating the multiple stimuli reinforcing each other.
 
 The Perceived level of each stimulus type decays each frame, so if the entity stops being perceived, its Perceived level will soon drop back down to 0.0. When all stimulus types have fallen to 0.0, the entity will be removed from perception.
 
-If an entity has a value less than 1.0 it is in the **partially perceived** state. If it reaches 1.0, it will switch to the **fully perceived** state, which is typically when we consider the entity as a valid target to attack (though this isn't required). If an entity is fully perceived but stops receiving more perception stimuli, it will go into a temporary **obscured** state, the length of which is determined by the profile of the AI doing the perception. It is still considered fully perceived so its effective perceived level will stay at 1.0 during this period. If it is not perceived again before the Obscured timer runs out, it will be considered a **memory target** and the perceived level of the entity will gradually drop back down to 0.0.
+### Partial and Full Perception
+
+If an entity has a value less than 1.0 it is in the **partially perceived** state. If it reaches 1.0, it will switch to the **fully perceived** state. For example, you might use this state to mark the entity as a valid attack target. If an entity is fully perceived but stops receiving more perception stimuli, it will go into a temporary **obscured** state, the length of which is determined by the profile of the AI doing the perception. It is still considered fully perceived so its effective perceived level will stay at 1.0 during this period. If it is not perceived again before the Obscured timer runs out, it will be considered a **memory target** and the perceived level of the entity will gradually drop back down to 0.0.
+
+### Memory targets
 
 When an entity is a memory target, perception information about the position of the entity is no longer updated, and it is remembered as being at the last perceived position. Also, while in this mode, each stimulus input will be multiplied by a configurable amount, which is intended to make it much faster than normal. This is to model the fact that the AI is already alerted to the target and is looking for it, so should perceive it much more quickly than in the case when it's not yet been fully perceived.
 
@@ -91,10 +95,10 @@ A brief description of each parameter is as follows:
 
 An AI agent has four levels of alertness:
 
-*   `Idle` - has not detected any targets
-*   `Suspicious` - has partially perceived a target, but not yet fully perceived
-*   `Alert` - a target is fully perceived
-*   `Cautious` - was previously Alert, but the target has been lost and is now a memory
+*   `Idle` - Has not detected any targets.
+*   `Suspicious` -Has partially perceived a target, but not yet fully perceived.
+*   `Alert` - A target is fully perceived.
+*   `Cautious` - Was previously Alert, but the target has been lost and is now in memory tracking.
 
 An agent's level of alertness is tied to whether it has any perceived targets or memory targets, and if so, what their visibility level is.
 
