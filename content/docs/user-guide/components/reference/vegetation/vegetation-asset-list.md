@@ -21,7 +21,7 @@ Use the **Vegetation Asset List** component to combine your vegetation assets in
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Source Type** | If set to `Embedded`, vegetation asset descriptors are defined in this component's interface.  If set to `External`, descriptors are defined in a Vegetation Descriptor List asset. | `Embedded` or `External` | `Embedded` |
-| **Embedded Assets** | A set of vegetation asset descriptors. |  |  |
+| **Embedded Assets** | An array of vegetation asset descriptors. |  |  |
 
 ### Asset properties
 
@@ -44,3 +44,19 @@ Use the **Vegetation Asset List** component to combine your vegetation assets in
 
 {{% /tab %}}
 {{< /tabs >}}
+
+## DescriptorListRequestBus
+
+Use the following request functions with the `DescriptorListRequestBus` EBus interface to communicate with Vegetation Asset List components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `AddDescriptor` | Adds a descriptor to an asset list. | Vegetation Descriptor | None | Yes |
+| `GetDescriptor` | Returns a vegetation descriptor from an asset list. | Descriptor Index: Integer | Vegetation Descriptor | Yes |
+| `GetDescriptorAssetPath` | Returns the **External Assets** source path for an asset list. |  | Path: String | Yes |
+| `GetDescriptorListSource` | Returns the **Source Type** of an asset list. Returns `0` for `Embedded` and `1` for `External` source types.| None | List Source Type: Integer | Yes |
+| `GetNumDescriptors` | Returns the number of vegetation descriptors in an asset list. | None | Descriptor Index: Integer | Yes |
+| `RemoveDescriptor` | Removes a vegetation descriptor from an asset list. | Descriptor Index: Integer | None | Yes |
+| `SetDescriptor` | Sets the configuration of a descriptor at a specific asset list index. | Descriptor Index: Integer, Vegetation Descriptor | None | Yes |
+| `SetDescriptorAssetPath` | Sets the **External Assets** source path of an asset list. | Path: String | None | Yes |
+| `SetDescriptorListSource` | Sets the **Source Type** of an asset list. `0` for `Embedded` and `1` for `External` source types. | List Source Type: Integer | None | Yes |
