@@ -33,5 +33,25 @@ Add one of the following required components when using the Vegetation Layer Blo
 | **Inherit Behavior** | Allow shapes, modifiers and filters of a parent entity to affect this vegetation layer. | Boolean | `Enabled` |
 | **Mesh Height Percent Min** | Sets the percentage of the mesh height (from the bottom up) used to determine the lower bound for intersection tests. | Float: 0.0 - 1.0 | `0.0` |
 | **Mesh Height Percent Max** | Sets the percentage of the mesh height (from the bottom up) used to determine the upper bound for intersection tests. | Float: 0.0 - 1.0 | `1.0` |
-| **Block When Invisible** | If `Disabled`, the blocker will only block vegetation if the mesh or actor component is visible. | Boolean | `Enabled` |
+| **Block When Invisible** | If `Disabled`, the blocker will only block vegetation if the Mesh or Actor component is visible. | Boolean | `Enabled` |
 | **Draw Debug Bounds** | Draw the mesh height bounds. | Boolean | `Disabled` |
+
+## MeshBlockerRequestBus
+
+Use the following request functions with the `MeshBlockerRequestBus` EBus interface to communicate with Vegetation Layer Blocker (Mesh) components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetAreaLayer` | Returns the **Layer Priority** of a mesh blocker. Returns `0` for `Background` and `1` for `Foreground`. | None | Layer Priority: Integer | Yes |
+| `GetAreaPriority` | Returns the **Sub Priority** of a mesh blocker. | None | Sub Priority: Integer | Yes |
+| `GetAreaProductCount` | Returns the number of vegetation instances spawned in a mesh blocker's vegetation area. | None  | Count: Integer | Yes |
+| `GetBlockWhenInvisible` | Returns the configuration of a mesh blocker's **Block When Invisible** property. | None | Boolean | Yes |
+| `GetInheritBehavior` | Returns the configuration of a mesh blocker's **Inherit Behavior** property. | None | Boolean | Yes |
+| `GetMeshHeightPercentMax` | Returns the **Mesh Height Percent Max** property of a mesh blocker. | None | Height Ratio: Float | Yes |
+| `GetMeshHeightPercentMin` | Returns the **Mesh Height Percent Min** property of a mesh blocker. | None | Height Ratio: Float | Yes |
+| `SetAreaLayer` | Sets the **Layer Priority** of a mesh blocker. Returns `0` for `Background` and `1` for `Foreground`. | Layer Priority: Integer | None | Yes |
+| `SetAreaPriority` | Sets the **Sub Priority** of a mesh blocker. | Sub Priority: Integer | None | Yes |
+| `SetBlockWhenInvisible` | Sets the configuration of a mesh blocker's **Block When Invisible** property. | Boolean | None | Yes |
+| `SetInheritBehavior` | Sets the configuration of a mesh blocker's **Inherit Behavior** property. | Boolean | None | Yes |
+| `SetMeshHeightPercentMax` | Sets the **Mesh Height Percent Max** property of a mesh blocker. | Height Ratio: Float | None | Yes |
+| `SetMeshHeightPercentMin` | Sets the **Mesh Height Percent Min** property of a mesh blocker. | Height Ratio: Float | None | Yes |

@@ -18,3 +18,12 @@ Use the **Vegetation Reference Shape** component to reference and reuse **Shape*
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Shape Entity Id** | Selects an entity with a valid Shape component, the bounds of the shape will be reused for this entity's components. | EntityId | None |
+
+## ReferenceShapeRequestBus
+
+Use the following request functions with the `ReferenceShapeRequestBus` EBus interface to communicate with Vegetation Reference Shape components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetShapeEntityId` | Returns the **Shape Entity Id** property of a Vegetation Reference Shape. | None | EntityId | Yes |
+| `SetShapeEntityId` | Sets the **Shape Entity Id** property of a Vegetation Reference Shape.  | EntityId | None | Yes |

@@ -28,3 +28,23 @@ Combine vegetation layers with the **Vegetation Layer Blender** component.
 | **Inherit Behavior** | Allow shapes, modifiers and filters of a parent entity to affect this vegetation layer. | Boolean | `Enabled` |
 | **Propagate Behavior** | Allow shapes, modifiers and filters of this vegetation layer to affect child entities. | Boolean | `Enabled` |
 | **Vegetation Areas** | An ordered list of vegetation layers. | Array: EntityId | None |
+
+## AreaBlenderRequestBus
+
+Use the following request functions with the `AreaBlenderRequestBus` EBus interface to communicate with Vegetation Layer Blender components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `AddAreaEntityId` | Adds a vegetation layer to a **Vegetation Areas** array. | EntityId | None | Yes |
+| `GetAreaEntityId` | Returns the EntityId of an entry in a **Vegetation Areas** array at the specified index. | Vegetation Areas Index: Integer | EntityId | Yes |
+| `GetAreaLayer` | Returns the **Layer Priority** of a layer blender. Returns `0` for `Background` and `1` for `Foreground`. | None | Layer Priority: Integer | Yes |
+| `GetAreaPriority` | Returns the **Sub Priority** of a layer blender. | None | Sub Priority: Integer | Yes |
+| `GetAreaProductCount` | Returns the number of vegetation instances spawned in a layer blender's vegetation area. |None  | Count: Integer | Yes |
+| `GetInheritBehavior` | Returns the configuration of a layer blender's **Inherit Behavior** property. | None | Boolean | Yes |
+| `GetNumAreas` | Returns the number of entries in a layer blender's **Vegetation Areas** array. | None | Count: Integer | Yes |
+| `GetPropagateBehavior` | Returns the configuration of a layer blender's **Propagate Behavior** property. | None | Boolean | Yes |
+| `RemoveAreaEntityId` | Removes a vegetation layer from the **Vegetation Areas** array of a layer blender. | Vegetation Areas Index: Integer | None | Yes |
+| `SetAreaLayer` | Sets the **Layer Priority** of layer blender. | Layer Priority: Integer | None | Yes |
+| `SetAreaPriority` | Sets the **Sub Priority** of a layer blender. | Sub Priority: Integer | None | Yes |
+| `SetInheritBehavior` | Sets the **Inherit Behavior** property of a layer blender. | Boolean | None | Yes |
+| `SetPropagateBehavior` | Sets the **Propagate Behavior** property of a layer blender. | Boolean | None | Yes |

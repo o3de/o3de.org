@@ -18,3 +18,15 @@ Use the **Vegetation Asset List Combiner** component to group multiple vegetatio
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Descriptor Providers** | An array of vegetation asset lists that will be combined by this component. | Array: Vegetation Asset List | None |
+
+## DescriptorListCombinerRequestBus
+
+Use the following request functions with the `DescriptorListCombinerRequestBus` EBus interface to communicate with Vegetation Asset List Combiner components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `AddDescriptorEntityId` | Adds an entity with a **Vegetation Asset List** component to an array of **Descriptor Providers**. | EntityId | None | Yes |
+| `GetDescriptorEntityId` | Returns the EntityId of a **Descriptor Provider** at the specified index. | Descriptor Providers Index: Integer | EntityId | Yes |
+| `GetNumDescriptors` | Returns the number of entries in a **Descriptor Providers** array. | None | Count: Integer | Yes |
+| `RemoveDescriptorEntityId` | Removes an entity from an array of **Descriptor Providers**. | EntityId | None | Yes |
+| `SetDescriptorEntityId` | Updates the EntityId of an entry in an array of **Descriptor Providers**. | Descriptor Providers Index: Integer, EntityId | None | Yes |
