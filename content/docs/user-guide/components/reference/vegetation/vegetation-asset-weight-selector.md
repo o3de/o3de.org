@@ -17,7 +17,7 @@ The **Vegetation Asset Weight Selector** component uses the values of a gradient
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Sort By Weight** | Determines asset descriptor are sorted by weight before the gradient is used to select assets. | `Unsorted`, `Ascending`, or `Descending` | `Unsorted` |
+| **Sort By Weight** | Determines if asset descriptors are sorted by weight before the gradient is used to select assets. | `Unsorted`, `Ascending`, or `Descending` | `Unsorted` |
 | **Gradient** | Refer to [Gradient properties](#gradient-properties) below. |  |  |
 
 ### Gradient properties
@@ -40,3 +40,13 @@ The **Vegetation Asset Weight Selector** component uses the values of a gradient
 | **Input Max** | Sets a maximum value for the inbound gradient. | Float: 0.0 - 1.0 | `1.0` |
 | **Output Min** | Sets a minimum value for the outbound gradient. | Float: 0.0 - 1.0 | `0.0` |
 | **Output Max** | Sets a maximum value for the outbound gradient. | Float: 0.0 - 1.0 | `1.0` |
+
+## DescriptorWeightSelectorRequestBus
+
+Use the following request functions with the `DescriptorWeightSelectorRequestBus` EBus interface to communicate with Vegetation Asset Weight Selector components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetGradientSampler` | Returns the gradient sampler object of a weight selector. | None | Gradient Sampler | Yes |
+| `GetSortBehavior` | Sets the configuration of a **Sort By Weight** parameter. Returns `0` for `Unsorted`, `1` for `Ascending`, and `2` for `Descending`. | None | Sort Behavior: Integer | Yes |
+| `SetSortBehavior` | Sets the configuration of a **Sort By Weight** parameter. `0` for `Unsorted`, `1` for `Ascending`, and `2` for `Descending`. | Sort Behavior: Integer | None | Yes |

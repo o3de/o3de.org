@@ -31,3 +31,17 @@ Add the following required components when using the Vegetation Layer Blocker co
 | **Layer Priority** | Defines a high level order that vegetation areas and blockers are applied. | `Background` or `Foreground` | `Foreground` |
 | **Sub Priority** | Defines the order that vegetation areas or blockers are applied within a layer. Larger numbers have a higher priority. | 0-10000 | `10000` |
 | **Inherit Behavior** | Allow shapes, modifiers and filters of a parent entity to affect this vegetation layer. | Boolean | `Enabled` |
+
+## BlockerRequestBus
+
+Use the following request functions with the `BlockerRequestBus` EBus interface to communicate with Vegetation Layer Blocker components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetAreaLayer` | Returns the **Layer Priority** of a blocker. Returns `0` for `Background` and `1` for `Foreground`. | None | Layer Priority: Integer | Yes |
+| `GetAreaPriority` | Returns the **Sub Priority** of a blocker. | None | Sub Priority: Integer | Yes |
+| `GetAreaProductCount` | Returns the number of vegetation instances spawned in a blocker's vegetation area. | None  | Count: Integer | Yes |
+| `GetInheritBehavior` | Returns the configuration of a blocker's **Inherit Behavior** property. | None | Boolean | Yes |
+| `SetAreaLayer` | Sets the **Layer Priority** of a blocker. Returns `0` for `Background` and `1` for `Foreground`. | Layer Priority: Integer | None | Yes |
+| `SetAreaPriority` | Sets the **Sub Priority** of a blocker. | Sub Priority: Integer | None | Yes |
+| `SetInheritBehavior` | Sets the configuration of a blocker's **Inherit Behavior** property. | Boolean | None | Yes |
