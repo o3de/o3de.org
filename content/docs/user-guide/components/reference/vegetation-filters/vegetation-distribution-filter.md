@@ -1,11 +1,11 @@
 ---
-title: Vegetation Scale Modifier Component
-linktitle: Vegetation Scale Modifier
-description: Add variation to your vegetation instances with the Vegetation Scale Modifier component in Open 3D Engine (O3DE).
-weight: 400
+title: Vegetation Distribution Filter Component
+linktitle: Vegetation Distribution Filter
+description: Control the distribution of vegetation instances using gradients with the Vegetation Distribution Filter component in your Open 3D Engine (O3DE) level.
+weight: 300
 ---
 
-Add variation to the vegetation instances in your level with the **Vegetation Scale Modifier** component.  Use gradients to control how vegetation or blocker instances individually scale. By default, this component is configured to scale the vegetation instance by the same value, `1`.  Change the values of **Range Min** or **Range Max** to values that are appropriate for the mesh instances you are modifying.
+Add the **Vegetation Distribution Filter** component to use gradients to control where vegetation or blocker instances are spawned in your vegetation area.
 
 ## Provider
 
@@ -13,21 +13,22 @@ Add variation to the vegetation instances in your level with the **Vegetation Sc
 
 ## Dependencies
 
-Add one of the following required components when using the Vegetation Scale Modifier component:
+Add one of the following required components when using the Vegetation Distribution Filter component:
 - [**Vegetation Layer Blender**](./../vegetation/vegetation-layer-blender)
 - [**Vegetation Layer Blocker**](./../vegetation/vegetation-layer-blocker)
 - [**Vegetation Layer Blocker (Mesh)**](./../vegetation/vegetation-layer-blocker-mesh)
 - [**Vegetation Layer Spawner**](./../vegetation/layer-spawner)
 
-## Vegetation Scale Modifier properties
+## Vegetation Distribution Filter properties
 
-![Vegetation Scale Modifier component properties](/images/user-guide/components/reference/vegetation-modifiers/vegetation-scale-modifier-component.png)
+![Vegetation Distribution Filter component properties](/images/user-guide/components/reference/vegetation-filters/vegetation-distribution-filter-component.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor parameters that are enabled can override this component's parameters. | Boolean | `Disabled` |
-| **Range Min** | Sets the minimum modified scale of the vegetation instance. | Float: 0.01 to Infinity | `1.0` |
-| **Range Max** | Sets the maximum modified scale of the vegetation instance. | Float: 0.01 to Infinity | `1.0` |
+| **Preview** | Displays the inbound gradient after **Threshold** properties are applied. | | |
+| **Filter Stage** | Defines if filters are applied before or after modifiers. | `PreProcess`, `PostProcess`, or `Default` | `Default` |
+| **Threshold Min** | Sets the minimum gradient value for a vegetation instance to be placed. | Float 0.0 - 1.0 | `0.1` |
+| **Threshold Max** | Sets the maximum gradient value for a vegetation instance to be placed. | Float 0.0 - 1.0 | `1.0` |
 | **Gradient** | Refer to [Gradient properties](#gradient-properties) below. |  |  |
 
 ### Gradient properties
