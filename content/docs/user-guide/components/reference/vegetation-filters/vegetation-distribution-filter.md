@@ -51,3 +51,15 @@ Add one of the following required components when using the Vegetation Distribut
 | **Input Max** | Sets a maximum value for the inbound gradient. | Float: 0.0 - 1.0 | `1.0` |
 | **Output Min** | Sets a minimum value for the outbound gradient. | Float: 0.0 - 1.0 | `0.0` |
 | **Output Max** | Sets a maximum value for the outbound gradient. | Float: 0.0 - 1.0 | `1.0` |
+
+## DistributionFilterRequestBus
+
+Use the following request functions with the `DistributionFilterRequestBus` EBus interface to communicate with Vegetation Distribution Filter components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetGradientSampler` | Returns the gradient sampler object of the slope alignment modifier. | None | Gradient Sampler | Yes |
+| `GetThresholdMax` | Returns the value of the **Threshold Max** property. | None | Float | Yes |
+| `GetThresholdMin` | Returns the value of the **Threshold Min** property. | None | Float | Yes |
+| `SetThresholdMax` | Sets the value of the **Threshold Max** property. | Float | None | Yes |
+| `SetThresholdMin` | Sets the value of the **Threshold Min** property. | Float | None | Yes |

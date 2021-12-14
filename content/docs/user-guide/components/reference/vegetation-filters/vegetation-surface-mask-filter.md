@@ -26,10 +26,27 @@ Add one of the following required components when using the Vegetation Surface M
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Filter Stage** | Defines if filters are applied before or after modifiers. | `PreProcess`, `PostProcess`, or `Default` | `Default` |
-| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor parameters that are enabled can override this component's parameters. | Boolean | `Disabled` |
-| **Inclusion - Surface Tags** | An array of surface tags that will spawn vegetation or blocker instances if the surface tag weight of the location is within the **Inclusion - Weight** parameters. | Array: Surface Tags | None |
+| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor properties that are enabled can override this component's properties. | Boolean | `Disabled` |
+| **Inclusion - Surface Tags** | An array of surface tags that will spawn vegetation or blocker instances if the surface tag weight of the location is within the **Inclusion - Weight** properties. | Array: Surface Tags | None |
 | **Inclusion - Weight Min** | Sets the minimum weight of an **Inclusion - Surface Tag** that allows vegetation to spawn. | Float: 0.0 - 1.0 | `0.1` |
 | **Inclusion - Weight Max** | Sets the maximum weight of an **Inclusion - Surface Tag** that allows vegetation to spawn. | Float: 0.0 - 1.0 | `1.0` |
-| **Exclusion - Surface Tags** | An array of surface tags that will not spawn vegetation or blocker instances if the surface tag weight of the location is within the **Exclusion - Weight** parameters. | Array: Surface Tags | None |
+| **Exclusion - Surface Tags** | An array of surface tags that will not spawn vegetation or blocker instances if the surface tag weight of the location is within the **Exclusion - Weight** properties. | Array: Surface Tags | None |
 | **Exclusion - Weight Min** | Sets the minimum weight of an **Exclusion - Surface Tag** that blocks vegetation. | Float: 0.0 - 1.0 | `0.1` |
 | **Exclusion - Weight Max** | Sets the maximum weight of an **Exclusion - Surface Tag** that blocks vegetation. | Float: 0.0 - 1.0 | `1.0` |
+
+## SurfaceMaskFilterRequestBus
+
+Use the following request functions with the `SurfaceMaskFilterRequestBus` EBus interface to communicate with Vegetation Surface Mask Filter components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `AddExclusiveTag` | Adds a surface tag to the **Exclusion - Surface Tags** array. | Surface Tag: String | None | Yes |
+| `AddInclusiveTag` | Adds a surface tag to the **Inclusion - Surface Tags** array. | Surface Tag: String | None | Yes |
+| `GetAllowOverrides` | Returns the configuration of the **Allow Per-Item Overrides** property. | None | Boolean | Yes |
+| `GetNumExclusiveTags` | Returns the number of surface tags in the **Exclusion - Surface Tags** array. | None | Count: Integer | Yes |
+| `GetNumInclusiveTags` | Returns the number of surface tags in the **Inclusion - Surface Tags** array. | None | Count: Integer | Yes |
+| `GetExclusiveTag` | Returns the surface tag at the specified index of the **Exclusion - Surface Tags** array. | Surface Tag Index: Integer | Surface Tag: String | Yes |
+| `GetInclusiveTag` | Returns the surface tag at the specified index of the **Inclusion - Surface Tags** array. | Surface Tag Index: Integer | Surface Tag: String | Yes |
+| `RemoveExclusiveTag` | Removes the surface tag at the specified index of the **Exclusion - Surface Tags** array. | Surface Tag Index: Integer | None | Yes |
+| `RemoveInclusiveTag` | Removes the surface tag at the specified index of the **Inclusion - Surface Tags** array. | Surface Tag Index: Integer | None | Yes |
+| `SetAllowOverrides` | Sets the configuration of the **Allow Per-Item Overrides** property. | Boolean | None | Yes |

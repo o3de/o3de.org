@@ -27,3 +27,12 @@ Add one of the following required components when using the Vegetation Shape Int
 |-|-|-|-|
 | **Filter Stage** | Defines if filters are applied before or after modifiers. | `PreProcess`, `PostProcess`, or `Default` | `Default` |
 | **Shape Entity Id** | Selects an entity with a shape component. Only instances within the shape will spawn. | EntityId | None |
+
+## ShapeIntersectionFilterRequestBus
+
+Use the following request functions with the `ShapeIntersectionFilterRequestBus` EBus interface to communicate with Vegetation Shape Intersection Filter components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetShapeEntityId` | Returns the **Shape Entity Id** property of a Shape Intersection Filter. | None | EntityId | Yes |
+| `SetShapeEntityId` | Sets the **Shape Entity Id** property of a Shape Intersection Filter.  | EntityId | None | Yes |

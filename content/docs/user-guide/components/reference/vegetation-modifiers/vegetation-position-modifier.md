@@ -25,7 +25,7 @@ Add one of the following required components when using the Vegetation Position 
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor parameters that are enabled can override this component's parameters. | Boolean | `Disabled` |
+| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor properties that are enabled can override this component's properties. | Boolean | `Disabled` |
 | **Auto Snap to Surface** | If `Enabled`, automatically snaps the modified vegetation instance position to the nearest valid surface tag.  Valid surface tags include those selected in the **Surface Tags To Snap To** property, as well as any surface tags already associated with the vegetation instance. | Boolean | `Enabled` |
 | **Surface Tags To Snap To** | An array of surface tags used to align the vegetation instance with the surface. | Array: Surface Tags | None |
 | **Position X - Range Min** | Sets the minimum modified position offset of the vegetation instance on the X-axis. | Float: -Infinity to Infinity | `-0.3` |
@@ -66,15 +66,15 @@ Use the following request functions with the `PositionModifierRequestBus` EBus i
 | Method Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
 | `AddTag` | Adds a surface tag to the **Surface Tags To Snap To** array. | Surface Tag: String | None | Yes |
-| `GetAllowOverrides` | Returns the configuration of the **Allow Per-Item Overrides** parameter. | None | Boolean | Yes |
-| `GetGradientSamplerX` | Returns the gradient sampler object of the **Position X** group parameters. | None | Gradient Sampler | Yes |
-| `GetGradientSamplerY` | Returns the gradient sampler object of the **Position Y** group parameters. | None | Gradient Sampler | Yes |
-| `GetGradientSamplerZ` | Returns the gradient sampler object of the **Position Z** group parameters. | None | Gradient Sampler | Yes |
+| `GetAllowOverrides` | Returns the configuration of the **Allow Per-Item Overrides** property. | None | Boolean | Yes |
+| `GetGradientSamplerX` | Returns the gradient sampler object of the **Position X** group properties. | None | Gradient Sampler | Yes |
+| `GetGradientSamplerY` | Returns the gradient sampler object of the **Position Y** group properties. | None | Gradient Sampler | Yes |
+| `GetGradientSamplerZ` | Returns the gradient sampler object of the **Position Z** group properties. | None | Gradient Sampler | Yes |
 | `GetNumTags` | Returns the number of surface tags in the **Surface Tags To Snap To** array. | None | Count: Integer | Yes |
-| `GetRangeMax` | Returns a Vector3 of **Range Max** parameters. | None | Vector3: (**Position X - Range Max**, **Position Y - Range Max**, **Position Z - Range Max**) | Yes |
-| `GetRangeMin` | Returns a Vector3 of **Range Min** parameters. | None | Vector3: (**Position X - Range Min**, **Position Y - Range Min**, **Position Z - Range Min**) | Yes |
+| `GetRangeMax` | Returns a Vector3 of **Range Max** properties. | None | Vector3: (**Position X - Range Max**, **Position Y - Range Max**, **Position Z - Range Max**) | Yes |
+| `GetRangeMin` | Returns a Vector3 of **Range Min** properties. | None | Vector3: (**Position X - Range Min**, **Position Y - Range Min**, **Position Z - Range Min**) | Yes |
 | `GetTag` | Returns the surface tag at the specified index of the **Surface Tags To Snap To** array. | Surface Tag Index: Integer | Surface Tag: String | Yes |
 | `RemoveTag` | Removes the surface tag at the specified index of the **Surface Tags To Snap To** array. | Surface Tag Index: Integer | None | Yes |
-| `SetAllowOverrides` | Sets the configuration of the **Allow Per-Item Overrides** parameter. | Boolean | None | Yes |
-| `SetRangeMax` | Sets the X, Y, and Z **Range Max** parameters. | Vector3: (**Position X - Range Max**, **Position Y - Range Max**, **Position Z - Range Max**) | None | Yes |
-| `SetRangeMin` | Sets the X, Y, and Z **Range Min** parameters. | Vector3: (**Position X - Range Min**, **Position Y - Range Min**, **Position Z - Range Min**) | None | Yes |
+| `SetAllowOverrides` | Sets the configuration of the **Allow Per-Item Overrides** property. | Boolean | None | Yes |
+| `SetRangeMax` | Sets the X, Y, and Z **Range Max** properties. | Vector3: (**Position X - Range Max**, **Position Y - Range Max**, **Position Z - Range Max**) | None | Yes |
+| `SetRangeMin` | Sets the X, Y, and Z **Range Min** properties. | Vector3: (**Position X - Range Min**, **Position Y - Range Min**, **Position Z - Range Min**) | None | Yes |
