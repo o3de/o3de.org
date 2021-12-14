@@ -58,3 +58,23 @@ Add one of the following required components when using the Vegetation Position 
 | **Input Max** | Sets a maximum value for the inbound gradient. | Float: 0.0 - 1.0 | `1.0` |
 | **Output Min** | Sets a minimum value for the outbound gradient. | Float: 0.0 - 1.0 | `0.0` |
 | **Output Max** | Sets a maximum value for the outbound gradient. | Float: 0.0 - 1.0 | `1.0` |
+
+## PositionModifierRequestBus
+
+Use the following request functions with the `PositionModifierRequestBus` EBus interface to communicate with Vegetation Position Modifier components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `AddTag` | Adds a surface tag to the **Surface Tags To Snap To** array. | Surface Tag: String | None | Yes |
+| `GetAllowOverrides` | Returns the configuration of the **Allow Per-Item Overrides** parameter. | None | Boolean | Yes |
+| `GetGradientSamplerX` | Returns the gradient sampler object of the **Position X** group parameters. | None | Gradient Sampler | Yes |
+| `GetGradientSamplerY` | Returns the gradient sampler object of the **Position Y** group parameters. | None | Gradient Sampler | Yes |
+| `GetGradientSamplerZ` | Returns the gradient sampler object of the **Position Z** group parameters. | None | Gradient Sampler | Yes |
+| `GetNumTags` | Returns the number of surface tags in the **Surface Tags To Snap To** array. | None | Count: Integer | Yes |
+| `GetRangeMax` | Returns a Vector3 of **Range Max** parameters. | None | Vector3: (**Position X - Range Max**, **Position Y - Range Max**, **Position Z - Range Max**) | Yes |
+| `GetRangeMin` | Returns a Vector3 of **Range Min** parameters. | None | Vector3: (**Position X - Range Min**, **Position Y - Range Min**, **Position Z - Range Min**) | Yes |
+| `GetTag` | Returns the surface tag at the specified index of the **Surface Tags To Snap To** array. | Surface Tag Index: Integer | Surface Tag: String | Yes |
+| `RemoveTag` | Removes the surface tag at the specified index of the **Surface Tags To Snap To** array. | Surface Tag Index: Integer | None | Yes |
+| `SetAllowOverrides` | Sets the configuration of the **Allow Per-Item Overrides** parameter. | Boolean | None | Yes |
+| `SetRangeMax` | Sets the X, Y, and Z **Range Max** parameters. | Vector3: (**Position X - Range Max**, **Position Y - Range Max**, **Position Z - Range Max**) | None | Yes |
+| `SetRangeMin` | Sets the X, Y, and Z **Range Min** parameters. | Vector3: (**Position X - Range Min**, **Position Y - Range Min**, **Position Z - Range Min**) | None | Yes |
