@@ -56,3 +56,19 @@ Add one of the following required components when using the Vegetation Rotation 
 | **Input Max** | Sets a maximum value for the inbound gradient. | Float: 0.0 - 1.0 | `1.0` |
 | **Output Min** | Sets a minimum value for the outbound gradient. | Float: 0.0 - 1.0 | `0.0` |
 | **Output Max** | Sets a maximum value for the outbound gradient. | Float: 0.0 - 1.0 | `1.0` |
+
+## RotationModifierRequestBus
+
+Use the following request functions with the `RotationModifierRequestBus` EBus interface to communicate with Vegetation Rotation Modifier components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetAllowOverrides` | Returns the configuration of the **Allow Per-Item Overrides** parameter. | None | Boolean | Yes |
+| `GetGradientSamplerX` | Returns the gradient sampler object of the **Rotation X** group parameters. | None | Gradient Sampler | Yes |
+| `GetGradientSamplerY` | Returns the gradient sampler object of the **Rotation Y** group parameters. | None | Gradient Sampler | Yes |
+| `GetGradientSamplerZ` | Returns the gradient sampler object of the **Rotation Z** group parameters. | None | Gradient Sampler | Yes |
+| `GetRangeMax` | Returns a Vector3 of **Range Max** parameters. | None | Vector3: (**Rotation X - Range Max**, **Rotation Y - Range Max**, **Rotation Z - Range Max**) | Yes |
+| `GetRangeMin` | Returns a Vector3 of **Range Min** parameters. | None | Vector3: (**Rotation X - Range Min**, **Rotation Y - Range Min**, **Rotation Z - Range Min**) | Yes |
+| `SetAllowOverrides` | Sets the configuration of the **Allow Per-Item Overrides** parameter. | Boolean | None | Yes |
+| `SetRangeMax` | Sets the X, Y, and Z **Range Max** parameters. | Vector3: (**Rotation X - Range Max**, **Rotation Y - Range Max**, **Rotation Z - Range Max**) | None | Yes |
+| `SetRangeMin` | Sets the X, Y, and Z **Range Min** parameters. | Vector3: (**Rotation X - Range Min**, **Rotation Y - Range Min**, **Rotation Z - Range Min**) | None | Yes |

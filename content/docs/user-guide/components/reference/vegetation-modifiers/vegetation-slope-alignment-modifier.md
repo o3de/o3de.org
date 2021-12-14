@@ -50,3 +50,17 @@ Add one of the following required components when using the Vegetation Slope Ali
 | **Input Max** | Sets a maximum value for the inbound gradient. | Float: 0.0 - 1.0 | `1.0` |
 | **Output Min** | Sets a minimum value for the outbound gradient. | Float: 0.0 - 1.0 | `0.0` |
 | **Output Max** | Sets a maximum value for the outbound gradient. | Float: 0.0 - 1.0 | `1.0` |
+
+## SlopeAlignmentModifierRequestBus
+
+Use the following request functions with the `SlopeAlignmentModifierRequestBus` EBus interface to communicate with Vegetation Slope Alignment Modifier components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetAllowOverrides` | Returns the configuration of the **Allow Per-Item Overrides** parameter. | None | Boolean | Yes |
+| `GetGradientSampler` | Returns the gradient sampler object of the slope alignment modifier. | None | Gradient Sampler | Yes |
+| `GetRangeMax` | Returns the value of the **Alignment Coefficient Max** parameter. | None | Float | Yes |
+| `GetRangeMin` | Returns the value of the **Alignment Coefficient Min** parameter. | None | Float | Yes |
+| `SetAllowOverrides` | Sets the configuration of the **Allow Per-Item Overrides** parameter. | Boolean | None | Yes |
+| `SetRangeMax` | Sets the  **Alignment Coefficient Max** parameter. | Float | None | Yes |
+| `SetRangeMin` | Sets the **Alignment Coefficient Min** parameter. | Float | None | Yes |

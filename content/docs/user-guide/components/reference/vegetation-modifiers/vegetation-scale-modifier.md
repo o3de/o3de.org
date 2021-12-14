@@ -50,3 +50,17 @@ Add one of the following required components when using the Vegetation Scale Mod
 | **Input Max** | Sets a maximum value for the inbound gradient. | Float: 0.0 - 1.0 | `1.0` |
 | **Output Min** | Sets a minimum value for the outbound gradient. | Float: 0.0 - 1.0 | `0.0` |
 | **Output Max** | Sets a maximum value for the outbound gradient. | Float: 0.0 - 1.0 | `1.0` |
+
+## ScaleModifierRequestBus
+
+Use the following request functions with the `ScaleModifierRequestBus` EBus interface to communicate with Vegetation Scale Modifier components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetAllowOverrides` | Returns the configuration of the **Allow Per-Item Overrides** parameter. | None | Boolean | Yes |
+| `GetGradientSampler` | Returns the gradient sampler object of the scale modifier. | None | Gradient Sampler | Yes |
+| `GetRangeMax` | Returns the value of the **Range Max** parameter. | None | Float | Yes |
+| `GetRangeMin` | Returns the value of the **Range Min** parameter. | None | Float | Yes |
+| `SetAllowOverrides` | Sets the configuration of the **Allow Per-Item Overrides** parameter. | Boolean | None | Yes |
+| `SetRangeMax` | Sets the  **Range Max** parameter. | Float | None | Yes |
+| `SetRangeMin` | Sets the **Range Min** parameter. | Float | None | Yes |
