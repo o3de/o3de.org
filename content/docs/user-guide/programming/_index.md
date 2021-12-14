@@ -7,6 +7,12 @@ weight: 600
 
 The *engine core* encompasses the source code, systems, and modules that underlie **Open 3D Engine (O3DE)** and its tools. All of these tools---**O3DE Editor**, **Asset Processor**, **Script Canvas**, and so on---work together to build an interactive 3D experience that uses modern rendering techniques and gameplay logic. Using these tools, you can take your design from an empty scene to a fully polished project that you can deploy and share. In this section, you'll gain a deeper understanding of each part of the engine core and learn how you can expand O3DE's toolkit.
 
+## Related topics
+
+| Topic | Description |
+| --- | --- |
+| [O3DE C++ Coding Standards](https://github.com/o3de/sig-core/blob/main/governance/Coding-Standards-and-Style-Guide.md) | If you're programming features to contibute to [o3de repository](https://github.com/o3de/o3de), follow the coding standards used throughout O3DE's C++ codebase. |
+
 ## Prerequisites
 
 * C++17
