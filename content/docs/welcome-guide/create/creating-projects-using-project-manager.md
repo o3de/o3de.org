@@ -14,7 +14,7 @@ This tutorial provides an introduction to project configuration and building in 
 
 At the end of the tutorial, you'll have a new O3DE project based on the default "standard" project template, ready to open in **O3DE Editor**.
 
-{{< youtube id="5VtWprJJBaw" title="O3DE Project Creation Using Project Manager" >}}
+{{< youtube-width id="5VtWprJJBaw" title="O3DE Project Creation Using Project Manager" >}}
 
 ## Prerequisites
 

@@ -29,7 +29,7 @@ Participation as a contributor requires a [GitHub account](https://github.com/si
 
 Don't want to read tiresome words, and prefer a snappy video to help you get started? Watch this video, instead!
 
-{{< youtube id="DGz9Clo6EKw" title="Contributing to O3DE Documentation" >}}
+{{< youtube-width id="DGz9Clo6EKw" title="Contributing to O3DE Documentation" >}}
 
 ## Technical information
 

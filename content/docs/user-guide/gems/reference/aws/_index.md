@@ -8,7 +8,7 @@ Amazon Web Services (AWS) is a cloud platform that offers an extensive and power
 
 For an overview of AWS Gems in **Open 3D Engine (O3DE)**, check out the video below. Then, read on to learn more about using AWS in your O3DE projects!
 
-{{< youtube id="EG0C9enezzo" title="AWS Gems in O3DE" >}}
+{{< youtube-width id="EG0C9enezzo" title="AWS Gems in O3DE" >}}
 
 ## Cloud-based resources
 

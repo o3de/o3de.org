@@ -129,3 +129,24 @@ Animated images are not currently accepted for contribution due to limitations o
 
 1. **Left-click** on the entity in **Perspective** to select it.
 1. **LMB+Drag** on the transform gizmo's **Z** axis to move the entity on the world **Z** axis.
+
+
+## Embedding Youtube videos with the `youtube-width` shortcode
+
+Embed Youtube videos in your page by using the `youtube-width` shortcode. The `youtube-width` shortcode is an extended version of Hugo's built-in [`youtube` shortcode](https://gohugo.io/content-management/shortcodes/#youtube) that allows you to control the size of the embedded video. 
+
+`youtube-width` takes three double-quoted parameters in order:
+
+1. id
+2. title
+3. width
+
+`youtube-width` example:
+
+```markdown
+{{</* youtube-width id="CQmjAxr7LZs" title="What is O3DE?" width="50%" */>}}
+```
+
+`youtube-width` example output:
+
+{{< youtube-width id="CQmjAxr7LZs" title="What is O3DE?" width="50%" >}}
