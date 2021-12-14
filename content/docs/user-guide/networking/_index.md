@@ -8,7 +8,7 @@ Open 3D Engine uses an abstracted interface layer, the `AzNetworking` framework,
 
 For a quick introduction to the O3DE network layer and Multiplayer Gem, watch the video below.
 
-{{< youtube id="FfrkHJJt_X0" title="O3DE - Networking Overview" >}}
+{{< youtube-width id="FfrkHJJt_X0" title="O3DE - Networking Overview" >}}
 
 ## Section topics
 
