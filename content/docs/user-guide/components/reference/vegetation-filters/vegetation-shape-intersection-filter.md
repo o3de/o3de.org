@@ -1,7 +1,7 @@
 ---
 title: Vegetation Shape Intersection Filter Component
 linktitle: Vegetation Shape Intersection Filter
-description: Use Vegetation Shape Intersection Filter component to spawn vegetation within the bounds of a Shape in your Open 3D Engine (O3DE) level.
+description: Use the Vegetation Shape Intersection Filter component to spawn vegetation within the bounds of a shape in your Open 3D Engine (O3DE) level.
 weight: 400
 ---
 

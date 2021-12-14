@@ -5,7 +5,7 @@ description: Organize vegetation assets into reusable asset lists with customize
 weight: 150
 ---
 
-Use the **Vegetation Asset List** component to combine your vegetation assets into reusable asset lists.  Configure *Vegetation Asset Descriptors*, asset-specific settings that are only used when the asset is spawned from this component.  Create Vegetation Descriptor Lists in the **Asset Editor** or define them in the component interface.
+Use the **Vegetation Asset List** component to combine your vegetation assets into reusable asset lists.  Configure *Vegetation Asset Descriptors*, asset-specific settings that are only used when the asset is spawned from this component's vegetation layer.  Create Vegetation Descriptor Lists in the **Asset Editor** or define them in the component interface.
 
 ## Provider
 

@@ -1,7 +1,7 @@
 ---
 title: Vegetation Slope Filter Component
 linktitle: Vegetation Slope Filter
-description: Use to distribute vegetation within terrain slope limits in your Open 3D Engine (O3DE) level.
+description: Use the Vegetation Slope Filter component to distribute vegetation within terrain slope limits in your Open 3D Engine (O3DE) level.
 weight: 500
 ---
 
