@@ -5,7 +5,7 @@ description: Use the Vegetation Distance Between Filter component to control the
 weight: 200
 ---
 
-Add the **Vegetation Distance Between Filter** component to control the distance between vegetation instances.
+Add the **Vegetation Distance Between Filter** component to set a minimum distance between vegetation instances.
 
 ## Provider
 

@@ -1,7 +1,7 @@
 ---
 title: Vegetation Altitude Filter Component
 linktitle: Vegetation Altitude Filter
-description: Use Vegetation Altitude Filter component to limit vegetation to a range of heights in your Open 3D Engine (O3DE) level.
+description: Use the Vegetation Altitude Filter component to limit vegetation to a range of heights in your Open 3D Engine (O3DE) level.
 weight: 100
 ---
 

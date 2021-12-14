@@ -58,7 +58,7 @@ Use the following request functions with the `DistributionFilterRequestBus` EBus
 
 | Method Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
-| `GetGradientSampler` | Returns the gradient sampler object of the slope alignment modifier. | None | Gradient Sampler | Yes |
+| `GetGradientSampler` | Returns the gradient sampler object of the distribution filter. | None | Gradient Sampler | Yes |
 | `GetThresholdMax` | Returns the value of the **Threshold Max** property. | None | Float | Yes |
 | `GetThresholdMin` | Returns the value of the **Threshold Min** property. | None | Float | Yes |
 | `SetThresholdMax` | Sets the value of the **Threshold Max** property. | Float | None | Yes |

@@ -26,8 +26,8 @@ Add one of the following required components when using the Vegetation Slope Ali
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor properties that are enabled can override this component's properties. | Boolean | `Disabled` |
-| **Alignment Coefficient Min** | Sets the minimum value of a modified slope alignment. | Float: 0.0 - 1 | `1.0` |
-| **Alignment Coefficient Max** | Sets the maximum value of a modified slope alignment. | Float: 0.0 - 1 | `1.0` |
+| **Alignment Coefficient Min** | Sets the minimum slope alignment coefficient. | Float: 0.0 - 1 | `1.0` |
+| **Alignment Coefficient Max** | Sets the maximum slope alignment coefficient. | Float: 0.0 - 1 | `1.0` |
 | **Gradient** | Refer to [Gradient properties](#gradient-properties) below. |  |  |
 
 ### Gradient properties
