@@ -43,9 +43,7 @@ or later is required.
 
 ### Microsoft Visual Studio
 
-+ [Microsoft Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) version **16.9.2** through version **16.11.x** are supported with O3DE.
-
-Microsoft offers **Visual Studio Community** free to individual developers. For more information and to download and install Visual Studio Community, visit the [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) portal.
++ [Microsoft Visual Studio 2019](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes) version **16.9.2** through version **16.11.x** are supported with O3DE. You can use any Microsoft Visual Studio license, including the Community edition.
 
 #### Visual Studio configuration
 
@@ -114,7 +112,7 @@ If the current CMake version was not returned because CMake cannot be found, loc
 
 ## macOS
 
-Support for developing on macOS is in an experimental stage. At a minimum, you need macOS Catalina, Intel x86_64, XCode 11, and a Metal-compatible video card that meets the hardware requirements above.
+Support for developing on macOS is in an experimental stage. At a minimum, you need macOS Big Sur, Intel x86_64, XCode 12.1+, and a Metal-compatible video card that meets the hardware requirements above.
 
 ## Linux
 
