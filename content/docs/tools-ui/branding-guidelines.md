@@ -11,11 +11,6 @@ Welcome to the brand guidelines page for **Open 3D Engine (O3DE)**. Here you wil
 
 If you feel like something is incorrect or missing here, you can [file an issue](https://github.com/o3de/sig-ui-ux/issues/new/choose) with the UI/UX Special Interest Group on GitHub. Feel like talking design? We welcome everyone to our open chat room on [Discord](https://discord.com/invite/xNb2q4SJKJ) at #SIG-UX-UI. Our community is always open to chat anything related to user experience and user interface!
 
-## Available resources
-
-- [O3DE Branding Guidelines PDF](#o3de-branding-guidelines)
-- [O3DE Logo Pack](#o3de-logo-pack)
-- [BlueJay Design System Logo Pack](#bluejay-design-system-logo-pack)
 
 ## O3DE Branding Guidelines
 
@@ -29,9 +24,9 @@ This is a PDF for O3DE's brand guidelines. It contains details on our primary an
 
 ## O3DE Logo Pack
 
-The O3DE Logo Pack contains all the essential files that a designer or developer needs for the O3DE logo in one convenient zip file. These brand assets all come with standard JPEGs, transparent backgrounds, and editable vectors for designers.
+The O3DE Logo Pack contains all the essential brand assets for the O3DE logo in one convenient zip file. These brand assets are available as JPEGs,  PNGs with transparent backgrounds, and SVG and EPS vector files.
 
-The pack file also also already includes the above O3DE brand guidelines.
+The O3DE Logo Pack also also includes the above O3DE brand guidelines PDF.
 
 {{< image-width "/images/tools-ui/branding-guidelines/logo-files.png" "700" "A preview of the contents of the O3DE logo pack" >}}  
 
