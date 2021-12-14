@@ -25,6 +25,21 @@ Add one of the following required components when using the Vegetation Distance 
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor parameters that are enabled can override this component's parameters. | Boolean | `Disabled` |
+| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor properties that are enabled can override this component's properties. | Boolean | `Disabled` |
 | **Bound Mode** | If set to `Radius`, **Radius Min** defines the minimum test radius between vegetation instances for the filter to allow placement of an instance.  If set to `Mesh Radius`, the radius of an attached **Mesh** component will define the test radius of the filter. | `Radius` or `Mesh Radius` | `Radius` |
 | **Radius Min** | Sets the minimum radius between vegetation instances. | Float: 0.0 to Infinity | `0.0` |
+
+## DistanceBetweenFilterRequestBus
+
+Use the following request functions with the `DistanceBetweenFilterRequestBus` EBus interface to communicate with Vegetation Distance Between Filter components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetAllowOverrides` | Returns the configuration of the **Allow Per-Item Overrides** property. | None | Boolean | Yes |
+| `GetBoundMode` | Returns the value of the **Bound Mode** property. Returns `0` for `Radius` and `1` for `Radius`. | None | Integer | Yes |
+| `GetRadiusMin` | Returns the value of the **Radius Min** property. | None | Float | Yes |
+| `GetShapeEntityId` | Returns the **Pin To Shape Entity Id** property of a distance between filter. | None | EntityId | Yes |
+| `SetAllowOverrides` | Sets the configuration of the **Allow Per-Item Overrides** property. | Boolean | None | Yes |
+| `SetBoundMode` | Sets the value of the **Bound Mode** property. `0` for `Radius` and `1` for `Radius`. | Integer | None | Yes |
+| `SetRadiusMin` | Sets the value of the **Radius Min** property. | Float | None | Yes |
+| `SetShapeEntityId` | Sets the **Pin To Shape Entity Id** property of a distance between filter.  | EntityId | None | Yes |

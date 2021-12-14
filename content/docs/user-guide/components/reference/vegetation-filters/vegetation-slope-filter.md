@@ -26,6 +26,19 @@ Add one of the following required components when using the Vegetation Slope Fil
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Filter Stage** | Defines if filters are applied before or after modifiers. | `PreProcess`, `PostProcess`, or `Default` | `Default` |
-| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor parameters that are enabled can override this component's parameters. | Boolean | `Disabled` |
+| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor properties that are enabled can override this component's properties. | Boolean | `Disabled` |
 | **Slope Min** | Sets the minimum terrain slope value for vegetation instances to spawn. | Float: 0.0 - 180.0 | `0.0` |
 | **Slope Max** | Sets the maximum terrain slope value for vegetation instances to spawn. | Float: 0.0 - 180.0 | `180.0` |
+
+## SurfaceSlopeFilterRequestBus
+
+Use the following request functions with the `SurfaceSlopeFilterRequestBus` EBus interface to communicate with Vegetation Slope Filter components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetAllowOverrides` | Returns the configuration of the **Allow Per-Item Overrides** property. | None | Boolean | Yes |
+| `GetAltitudeMax` | Returns the value of the **Slope Max** property. | None | Float | Yes |
+| `GetAltitudeMin` | Returns the value of the **Slope Min** property. | None | Float | Yes |
+| `SetAllowOverrides` | Sets the configuration of the **Allow Per-Item Overrides** property. | Boolean | None | Yes |
+| `SetAltitudeMax` | Sets the  **Slope Max** property. | Float | None | Yes |
+| `SetAltitudeMin` | Sets the **Slope Min** property. | Float | None | Yes |

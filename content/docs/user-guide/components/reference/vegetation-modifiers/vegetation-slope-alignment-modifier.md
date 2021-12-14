@@ -25,7 +25,7 @@ Add one of the following required components when using the Vegetation Slope Ali
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor parameters that are enabled can override this component's parameters. | Boolean | `Disabled` |
+| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor properties that are enabled can override this component's properties. | Boolean | `Disabled` |
 | **Alignment Coefficient Min** | Sets the minimum value of a modified slope alignment. | Float: 0.0 - 1 | `1.0` |
 | **Alignment Coefficient Max** | Sets the maximum value of a modified slope alignment. | Float: 0.0 - 1 | `1.0` |
 | **Gradient** | Refer to [Gradient properties](#gradient-properties) below. |  |  |
@@ -57,10 +57,10 @@ Use the following request functions with the `SlopeAlignmentModifierRequestBus` 
 
 | Method Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
-| `GetAllowOverrides` | Returns the configuration of the **Allow Per-Item Overrides** parameter. | None | Boolean | Yes |
+| `GetAllowOverrides` | Returns the configuration of the **Allow Per-Item Overrides** property. | None | Boolean | Yes |
 | `GetGradientSampler` | Returns the gradient sampler object of the slope alignment modifier. | None | Gradient Sampler | Yes |
-| `GetRangeMax` | Returns the value of the **Alignment Coefficient Max** parameter. | None | Float | Yes |
-| `GetRangeMin` | Returns the value of the **Alignment Coefficient Min** parameter. | None | Float | Yes |
-| `SetAllowOverrides` | Sets the configuration of the **Allow Per-Item Overrides** parameter. | Boolean | None | Yes |
-| `SetRangeMax` | Sets the  **Alignment Coefficient Max** parameter. | Float | None | Yes |
-| `SetRangeMin` | Sets the **Alignment Coefficient Min** parameter. | Float | None | Yes |
+| `GetRangeMax` | Returns the value of the **Alignment Coefficient Max** property. | None | Float | Yes |
+| `GetRangeMin` | Returns the value of the **Alignment Coefficient Min** property. | None | Float | Yes |
+| `SetAllowOverrides` | Sets the configuration of the **Allow Per-Item Overrides** property. | Boolean | None | Yes |
+| `SetRangeMax` | Sets the  **Alignment Coefficient Max** property. | Float | None | Yes |
+| `SetRangeMin` | Sets the **Alignment Coefficient Min** property. | Float | None | Yes |
