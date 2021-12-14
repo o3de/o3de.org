@@ -53,13 +53,13 @@ When you placed your `.fbx` source asset in your project, Asset processor detect
 
 1. Let's customize the scale of the asset. Set the **Scale** property to `5.0` to scale the asset to five times its size.
 
-{{< note >}}
+    {{< note >}}
 You can learn about the advanced settings properties of the Coordinate system change modifier, as well as the other available modifiers and their properties, in the [Scene Settings](/docs/user-guide/assets/scene-settings) topic of the **User Guide**.
-{{< /note >}}
+    {{< /note >}}
 
-7. Choose the **Update** button at the bottom-right of Scene Settings. This creates or updates the `.assetinfo` sidecar file and triggers Asset Processor to reprocess the asset.
+1. Choose the **Update** button at the bottom-right of Scene Settings. This creates or updates the `.assetinfo` sidecar file and triggers Asset Processor to reprocess the asset.
 
-8. **Left-click + drag** the source asset from Asset Browser into the viewport.
+1. **Left-click + drag** the source asset from Asset Browser into the viewport.
 
     {{< image-width "/images/learning-guide/tutorials/assets/meshes-finished.png" "800" "Drag the mesh asset into the viewport">}}
 
