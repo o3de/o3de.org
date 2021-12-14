@@ -25,7 +25,7 @@ Add one of the following required components when using the Vegetation Scale Mod
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor parameters that are enabled can override this component's parameters. | Boolean | `Disabled` |
+| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor properties that are enabled can override this component's properties. | Boolean | `Disabled` |
 | **Range Min** | Sets the minimum modified scale of the vegetation instance. | Float: 0.01 to Infinity | `1.0` |
 | **Range Max** | Sets the maximum modified scale of the vegetation instance. | Float: 0.01 to Infinity | `1.0` |
 | **Gradient** | Refer to [Gradient properties](#gradient-properties) below. |  |  |
@@ -57,10 +57,10 @@ Use the following request functions with the `ScaleModifierRequestBus` EBus inte
 
 | Method Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
-| `GetAllowOverrides` | Returns the configuration of the **Allow Per-Item Overrides** parameter. | None | Boolean | Yes |
+| `GetAllowOverrides` | Returns the configuration of the **Allow Per-Item Overrides** property. | None | Boolean | Yes |
 | `GetGradientSampler` | Returns the gradient sampler object of the scale modifier. | None | Gradient Sampler | Yes |
-| `GetRangeMax` | Returns the value of the **Range Max** parameter. | None | Float | Yes |
-| `GetRangeMin` | Returns the value of the **Range Min** parameter. | None | Float | Yes |
-| `SetAllowOverrides` | Sets the configuration of the **Allow Per-Item Overrides** parameter. | Boolean | None | Yes |
-| `SetRangeMax` | Sets the  **Range Max** parameter. | Float | None | Yes |
-| `SetRangeMin` | Sets the **Range Min** parameter. | Float | None | Yes |
+| `GetRangeMax` | Returns the value of the **Range Max** property. | None | Float | Yes |
+| `GetRangeMin` | Returns the value of the **Range Min** property. | None | Float | Yes |
+| `SetAllowOverrides` | Sets the configuration of the **Allow Per-Item Overrides** property. | Boolean | None | Yes |
+| `SetRangeMax` | Sets the  **Range Max** property. | Float | None | Yes |
+| `SetRangeMin` | Sets the **Range Min** property. | Float | None | Yes |

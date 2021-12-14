@@ -25,7 +25,7 @@ Add one of the following required components when using the Vegetation Rotation 
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor parameters that are enabled can override this component's parameters. | Boolean | `Disabled` |
+| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor properties that are enabled can override this component's properties. | Boolean | `Disabled` |
 | **Rotation X - Range Min** | Sets the minimum modified rotation of the vegetation instance on the X-axis. | Float: -Infinity to Infinity | `0.0` |
 | **Rotation X - Range Max** | Sets the maximum modified rotation of the vegetation instance on the X-axis. | Float: -Infinity to Infinity | `0.0` |
 | **Rotation X - Gradient** | Refer to [Gradient properties](#gradient-properties) below. |  |  |
@@ -63,12 +63,12 @@ Use the following request functions with the `RotationModifierRequestBus` EBus i
 
 | Method Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
-| `GetAllowOverrides` | Returns the configuration of the **Allow Per-Item Overrides** parameter. | None | Boolean | Yes |
-| `GetGradientSamplerX` | Returns the gradient sampler object of the **Rotation X** group parameters. | None | Gradient Sampler | Yes |
-| `GetGradientSamplerY` | Returns the gradient sampler object of the **Rotation Y** group parameters. | None | Gradient Sampler | Yes |
-| `GetGradientSamplerZ` | Returns the gradient sampler object of the **Rotation Z** group parameters. | None | Gradient Sampler | Yes |
-| `GetRangeMax` | Returns a Vector3 of **Range Max** parameters. | None | Vector3: (**Rotation X - Range Max**, **Rotation Y - Range Max**, **Rotation Z - Range Max**) | Yes |
-| `GetRangeMin` | Returns a Vector3 of **Range Min** parameters. | None | Vector3: (**Rotation X - Range Min**, **Rotation Y - Range Min**, **Rotation Z - Range Min**) | Yes |
-| `SetAllowOverrides` | Sets the configuration of the **Allow Per-Item Overrides** parameter. | Boolean | None | Yes |
-| `SetRangeMax` | Sets the X, Y, and Z **Range Max** parameters. | Vector3: (**Rotation X - Range Max**, **Rotation Y - Range Max**, **Rotation Z - Range Max**) | None | Yes |
-| `SetRangeMin` | Sets the X, Y, and Z **Range Min** parameters. | Vector3: (**Rotation X - Range Min**, **Rotation Y - Range Min**, **Rotation Z - Range Min**) | None | Yes |
+| `GetAllowOverrides` | Returns the configuration of the **Allow Per-Item Overrides** property. | None | Boolean | Yes |
+| `GetGradientSamplerX` | Returns the gradient sampler object of the **Rotation X** group properties. | None | Gradient Sampler | Yes |
+| `GetGradientSamplerY` | Returns the gradient sampler object of the **Rotation Y** group properties. | None | Gradient Sampler | Yes |
+| `GetGradientSamplerZ` | Returns the gradient sampler object of the **Rotation Z** group properties. | None | Gradient Sampler | Yes |
+| `GetRangeMax` | Returns a Vector3 of **Range Max** properties. | None | Vector3: (**Rotation X - Range Max**, **Rotation Y - Range Max**, **Rotation Z - Range Max**) | Yes |
+| `GetRangeMin` | Returns a Vector3 of **Range Min** properties. | None | Vector3: (**Rotation X - Range Min**, **Rotation Y - Range Min**, **Rotation Z - Range Min**) | Yes |
+| `SetAllowOverrides` | Sets the configuration of the **Allow Per-Item Overrides** property. | Boolean | None | Yes |
+| `SetRangeMax` | Sets the X, Y, and Z **Range Max** properties. | Vector3: (**Rotation X - Range Max**, **Rotation Y - Range Max**, **Rotation Z - Range Max**) | None | Yes |
+| `SetRangeMin` | Sets the X, Y, and Z **Range Min** properties. | Vector3: (**Rotation X - Range Min**, **Rotation Y - Range Min**, **Rotation Z - Range Min**) | None | Yes |

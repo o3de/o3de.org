@@ -26,7 +26,24 @@ Add one of the following required components when using the Vegetation Surface M
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Filter Stage** | Defines if filters are applied before or after modifiers. | `PreProcess`, `PostProcess`, or `Default` | `Default` |
-| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor parameters that are enabled can override this component's parameters. | Boolean | `Disabled` |
+| **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor properties that are enabled can override this component's properties. | Boolean | `Disabled` |
 | **Upper Distance Range** | Sets the maximum altitude difference between the vegetation instance and the **Depth Comparison Tags**. Positive values correspond to altitudes above the surface tags, negative values correspond to altitudes below the surface tags.  | Float: -Infinity to Infinity | `1000.0` |
 | **Lower Distance Range** | Sets the minimum altitude difference between the vegetation instance and the **Depth Comparison Tags**. Positive values correspond to altitudes above the surface tags, negative values correspond to altitudes below the surface tags. | Float: -Infinity to Infinity | `-1000.0` |
 | **Depth Comparison Tags** | An array of surface tags that provide the elevation data to query altitude. | Array: Surface Tags | None |
+
+## SurfaceMaskDepthFilterRequestBus
+
+Use the following request functions with the `SurfaceMaskDepthFilterRequestBus` EBus interface to communicate with Vegetation Surface Mask Depth Filter components in your game.
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `AddTag` | Adds a surface tag to the **Depth Comparison Tags** array. | Surface Tag: String | None | Yes |
+| `GetAllowOverrides` | Returns the configuration of the **Allow Per-Item Overrides** property. | None | Boolean | Yes |
+| `GetLowerDistance` | Returns the value of the **Lower Distance Range** property. | None | Float | Yes |
+| `GetNumTags` | Returns the number of surface tags in the **Depth Comparison Tags** array. | None | Count: Integer | Yes |
+| `GetTag` | Returns the surface tag at the specified index of the **Depth Comparison Tags** array. | Surface Tag Index: Integer | Surface Tag: String | Yes |
+| `GetUpperDistance` | Returns the value of the **Upper Distance Range** property. | None | Float | Yes |
+| `RemoveTag` | Removes the surface tag at the specified index of the **Depth Comparison Tags** array. | Surface Tag Index: Integer | None | Yes |
+| `SetAllowOverrides` | Sets the configuration of the **Allow Per-Item Overrides** property. | Boolean | None | Yes |
+| `SetLowerDistance` | Sets the value of the **Lower Distance Range** property. | Float | None | Yes |
+| `SetUpperDistance` | Sets the value of the **Upper Distance Range** property. | Float | None | Yes |

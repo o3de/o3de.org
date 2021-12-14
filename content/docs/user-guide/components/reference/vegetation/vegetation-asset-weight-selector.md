@@ -48,5 +48,5 @@ Use the following request functions with the `DescriptorWeightSelectorRequestBus
 | Method Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
 | `GetGradientSampler` | Returns the gradient sampler object of a weight selector. | None | Gradient Sampler | Yes |
-| `GetSortBehavior` | Sets the configuration of a **Sort By Weight** parameter. Returns `0` for `Unsorted`, `1` for `Ascending`, and `2` for `Descending`. | None | Sort Behavior: Integer | Yes |
-| `SetSortBehavior` | Sets the configuration of a **Sort By Weight** parameter. `0` for `Unsorted`, `1` for `Ascending`, and `2` for `Descending`. | Sort Behavior: Integer | None | Yes |
+| `GetSortBehavior` | Sets the configuration of a **Sort By Weight** property. Returns `0` for `Unsorted`, `1` for `Ascending`, and `2` for `Descending`. | None | Sort Behavior: Integer | Yes |
+| `SetSortBehavior` | Sets the configuration of a **Sort By Weight** property. `0` for `Unsorted`, `1` for `Ascending`, and `2` for `Descending`. | Sort Behavior: Integer | None | Yes |
