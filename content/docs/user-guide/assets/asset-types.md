@@ -23,9 +23,9 @@ Some source assets are simply copied to the **Asset Cache**, so the product asse
 | `.gradimagesettings` | Stores properties and values that define an image gradient. | `.gradimagesettings` |
 | `.inputbindings` | Binds input from keyboards, gamepads, touchscreens, and other devices to runtime events. | `.inputbindings` |
 | `.material` | Stores the properties and values, including texture assignments, that define the look of a surface for rendering. | `.azmaterial` |
+| `.physmaterial` | Stores properties and values that define the physical properties of a surface for simulation. | `.physmaterial` |
 | `.postFXLayerCategories` | A list of key value pairs that define layers for Post FX assignments. | `.postFXLayerCategories` |
 | `.prefab` | A spawnable asset container that can include entities and/or other prefabs. | `.spawnable` |
-| `.stl` | A simple mesh format used in computer aided design (CAD) and 3D printing. Unlike other 3D scene formats, `.stl` assets can only contain a simple model with limited vertex attributes. | `.azmodel`</br>`.azlod`</br>`.azbuffer`</br>`.pxmesh` |
-| `.physmaterial` | Stores properties and values that define the physical properties of a surface for simulation. | `.physmaterial` |
 | `.scriptcanvas` | A Script Canvas graph created with **Script Canvas Editor**, which is O3DE's visual scripting tool. | `.scriptcanvas_compiled`</br>`.scriptcanvas_fn_compiled`</br>`.luac` |
 | `.shader` | A program written in O3DE's shader language, **Amazon Shading Language (AZSL)**, that calculates the shading of a surface. Shader assets are compiled when processed and produce several intermediate files and product assets for each supported target platform. | `.azshader`</br>`.azshadervariant`</br>`.hlsl`</br>`.json`</br> |
+| `.stl` | A simple mesh format used in computer aided design (CAD) and 3D printing. Unlike other 3D scene formats, `.stl` assets can only contain a simple model with limited vertex attributes. | `.azmodel`</br>`.azlod`</br>`.azbuffer`</br>`.pxmesh` |
