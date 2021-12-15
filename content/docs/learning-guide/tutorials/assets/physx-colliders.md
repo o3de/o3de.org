@@ -80,7 +80,7 @@ You can follow this tutorial using any source asset that contains at least one m
 
     If your asset has already been processed, you might see a preview image of the asset and a list of product assets below the `.fbx` source asset.
 
-1. 1. To open Scene Settings, right-click the `.fbx` source asset, and then choose **Edit settings...** from the context menu.
+1. To open Scene Settings, right-click the `.fbx` source asset, and then choose **Edit settings...** from the context menu.
 
     ![ Open Scene Settings from Asset Browser. ](/images/learning-guide/tutorials/assets/meshes-edit-settings.png)
 
@@ -100,9 +100,9 @@ You can follow this tutorial using any source asset that contains at least one m
 To automatically assign meshes in the source asset to a PhysX mesh group, add the suffix `_phys` to the mesh node name in your DCC application. Any meshes that have `_phys` postfixed to their node name in the source asset are excluded from the default render mesh group and are automatically added to a single PhysX mesh group in Scene Settings.
     {{< /note >}}
 
-1. The customizations that you make in Scene Settings are stored in a *sidecar file* with a `.assetinfo` extension. When **Asset Processor** detects a `.assetinfo` file, it uses the settings in the file to process the related source asset. This sidecar file is treated as a source dependency for the asset. This means that if the `.assetinfo` file changes, the source asset is reprocessed, even if the source asset has not changed.
+1. Customize the PhysX mesh collider type by setting the **Export As** property to `Convex` so that you can create any type of entity (static, kinematic, or dynamic).
 
-    Customize the PhysX mesh collider type by setting the **Export As** property to `Convex` so that you can create any type of entity (static, kinematic, or dynamic).
+    The customizations that you make in Scene Settings are stored in a *sidecar file* with a `.assetinfo` extension. When **Asset Processor** detects a `.assetinfo` file, it uses the settings in the file to process the related source asset. This sidecar file is treated as a source dependency for the asset. This means that if the `.assetinfo` file changes, the source asset is reprocessed, even if the source asset has not changed.
 
 1. At the bottom right of Scene Settings, choose **Update**. This creates or updates the `.assetinfo` sidecar file and triggers Asset Processor to reprocess the asset.
 
@@ -122,7 +122,8 @@ To automatically assign meshes in the source asset to a PhysX mesh group, add th
 
     * For a dynamic entity, add a **PhysX Rigid Body** component. With the entity selected in the viewport, in **Entity Inspector**, choose **Add Component**, and then select **PhysX Rigid Body** from the component list. If you choose the {{< icon simulate-physics.svg >}} simulation button now, the entity drops with gravity.
 
-    * For a kinematic entity, add a PhysX Rigid Body component, like you would for a dynamic entity. Then, in the **PhysX Rigid Body** component, enable the **Kinematic** property.
+    * For a kinematic entity, add a **PhysX Rigid Body** component, like you would for a dynamic entity. Then, in the **PhysX Rigid Body** component, enable the **Kinematic** property.
+
     
     {{< caution >}}
 For a kinematic or dynamic entity, in the **Transform** component, make sure that the **Static** property is *not* enabled.
@@ -153,7 +154,8 @@ When you enable Decompose meshes for primitive colliders, the input mesh is deco
 
 ### Convex decomposition
 
-When you enable Decompose meshes for convex colliders, the input mesh is decomposed into convex parts. A convex hull is generated for each part and the convex hulls are process as a collider `.pxmesh` product asset. In the following image, the input mesh (left) is decomposed in to 6 parts and convex hulls are generated for each part (right). The convex colliders provide a fairly accurate representation of the render mesh which may be sufficient in many scenarios.
+When you enable Decompose meshes for convex colliders, the input mesh is decomposed into convex parts. A convex hull is generated for each part and the convex hulls are processed as a collider `.pxmesh` product asset. In the following image, the input mesh (left) is decomposed in to 6 parts and convex hulls are generated for each part (right). The convex colliders provide a fairly accurate representation of the render mesh which may be sufficient in many scenarios.
+
 
 {{< image-width "/images/learning-guide/tutorials/assets/convex-decompose.png" "700" "An example of mesh decomposition with convex collider assets." >}}
 
