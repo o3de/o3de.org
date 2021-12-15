@@ -151,7 +151,7 @@ Embed Youtube videos in your page by using the `youtube-width` shortcode. The `y
 
     Output:
 
-    {{< youtube-width id="CQmjAxr7LZs" title="What is O3DE?" width="50%" >}}
+    {{< youtube-width id="CQmjAxr7LZs" title="What is O3DE?" >}}
 
     <br>
 
