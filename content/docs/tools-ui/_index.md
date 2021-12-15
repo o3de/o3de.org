@@ -10,20 +10,18 @@ guide_img: "/images/tools-ui/guide_img.png"
 primary: true
 ---
 
+![A banner of the BlueJay Design System](/images/tools-ui/bjds-banner.png)
 
-Below you will find guidelines around using the **Open 3D Engine's (O3DE)** brand and UI style if you are looking for the O3DE logo to incorporate into your project, tools to develop the UI for your component development, or just make your life easier by checking out the custom Qt widget library for developers.
+The **BlueJay Design System** is the modular UI framework of **Open 3D Engine (O3DE)**. This guide provides information for developers on the framework and how to use it when developing components, tools, and extensions for **O3DE Editor**.
 
-This page is constantly evolving with new updates for UI designs, patterns and assets that the contributors develop over time. This modular framework is called the **BlueJay Design System**. It contains all the components, patterns, and design elements that make up O3DE.
+This guide includes guidelines and information on the custom Qt widget library, the Qt Control Gallery tool, and a gallery of UI icon assets for O3DE. This guide also provides O3DE brand guidelines and O3DE brand assets that you can incorporate into your own projects.
 
-If you have any questions regarding the BlueJay Design System or feel like something is incorrect or missing from it, you can [file an issue](https://github.com/o3de/sig-ui-ux/issues/new/choose) with the UI/UX Special Interest Group on GitHub.
+If you have any questions regarding the BlueJay Design System or have a suggestion to improve it, you can [file an issue](https://github.com/o3de/sig-ui-ux/issues/new/choose) with the UI/UX Special Interest Group on GitHub.
 
 Feel like having a chat? Check out our #SIG-UX-UI channel on [Discord](https://discord.com/invite/xNb2q4SJKJ). The community is always happy to help!
 
+
 ## Tools UI Developer's Guide Contents
-
-![A banner of the BlueJay Design System](/images/tools-ui/bjds-banner.png)
-
-<br>
 
 | Topic | Description |
 | --- | --- |
