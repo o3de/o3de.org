@@ -141,12 +141,26 @@ Embed Youtube videos in your page by using the `youtube-width` shortcode. The `y
 2. title
 3. width (using the default value (50%) is recommended)
 
-`youtube-width` example:
+### Examples 
 
-```markdown
-{{</* youtube-width id="CQmjAxr7LZs" title="What is O3DE?" width="50%" */>}}
-```
+1. `youtube-width` example without the `width` parameter:
 
-`youtube-width` example output:
+    ```markdown
+    {{</* youtube-width id="CQmjAxr7LZs" title="What is O3DE?" */>}}
+    ```
 
-{{< youtube-width id="CQmjAxr7LZs" title="What is O3DE?" width="50%" >}}
+    Output:
+
+    {{< youtube-width id="CQmjAxr7LZs" title="What is O3DE?" width="50%" >}}
+
+    <br>
+
+2. `youtube-width` example with the `width` parameter:
+
+    ```markdown
+    {{</* youtube-width id="CQmjAxr7LZs" title="What is O3DE?" width="100%" */>}}
+    ```
+
+    Output:
+
+    {{< youtube-width id="CQmjAxr7LZs" title="What is O3DE?" width="100%" >}}
