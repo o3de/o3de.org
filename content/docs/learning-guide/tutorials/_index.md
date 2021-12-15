@@ -28,6 +28,12 @@ Do you have O3DE installed and you aren't sure where to start? How about creatin
 | [Customize Mesh Asset Processing](assets/mesh-assets) | Use **Scene Settings** to process mesh assets for O3DE. |
 | [Process PhysX Collider Assets](assets/physx-colliders) | Use Scene Settings to process PhysX collider assets for O3DE. |
 
+## Assets
+
+| Tutorial | Description
+| - | - |
+| [Mesh Assets](assets/mesh-assets) | Use **Scene Settings** to process mesh assets. |
+
 ## Environments
 
 | Tutorial | Description |
