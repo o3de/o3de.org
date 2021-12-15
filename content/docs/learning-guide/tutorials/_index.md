@@ -19,7 +19,14 @@ Do you have O3DE installed and you aren't sure where to start? How about creatin
 
 | Tutorial | Description |
 | - | - |
-| [2D Navigation with Kythera AI](ai/navigation-2d) | Create an artificial intelligence (AI) agent that performs ground-based navigation and follows a visually scripted behavior tree. This tutorial uses the broad toolset provided by the [Kythera AI](/docs/user-guide/gems/reference/kythera-ai) Gem. |
+| [2D Navigation with Kythera AI](ai/navigation-2d) | Create an artificial intelligence (AI) agent that performs ground-based navigation and follows a visually scripted behavior tree. This tutorial uses the broad toolset that the [Kythera AI Gem](/docs/user-guide/gems/reference/kythera-ai) provides. |
+
+## Assets
+
+| Tutorial | Description |
+| - | - |
+| [Customize Mesh Asset Processing](assets/mesh-assets) | Use **Scene Settings** to process mesh assets for O3DE. |
+| [Process PhysX Collider Assets](assets/physx-colliders) | Use Scene Settings to process PhysX collider assets for O3DE. |
 
 ## Assets
 
