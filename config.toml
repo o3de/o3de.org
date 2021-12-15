@@ -35,7 +35,7 @@ icon = "fab fa-github"
 
 [[params.social]]
 name = "O3DE Discord Chat"
-url = "https://discord.gg/xNb2q4SJKJ"
+url = "https://discord.com/invite/o3de"
 icon = "fab fa-discord"
 
 [[params.social]]
