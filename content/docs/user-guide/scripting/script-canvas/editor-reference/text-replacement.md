@@ -7,7 +7,7 @@ weight: 500
 
 # Script Canvas - Text Replacement User Documentation
 
-Script Canvas' text replacement system allows all available nodes to be further customized. Method names, categories, argument names, tooltips can all be updated to improve their look once in a Script Canvas graph.
+Script Canvas' text replacement system allows all available nodes to be further customized. Method names, categories, argument names, and tooltips can all be updated to improve their look once in a Script Canvas graph.
 
 ## Rules for updating text
 
@@ -23,13 +23,13 @@ The .names files have certain fields that should not be modified, they are used 
 
 `typeid`
 
-Any changes to these fields will result in the Script Canvas editor being unable to find the desired text to update and will result in the translation data being ignored.
+Any changes to these fields will result in the Script Canvas Editor being unable to find the desired text to update and will result in the translation data being ignored.
 
 The data within the "details" field can be updated with the following fields:
 
-`name` The name of the node, argument or return type
+`name`: The name of the node, argument, or return type.
 
-`category` The category to place the node in, supports nested categories by using the / character (i.e. "Gameplay/Missions")
+`category`: The category in the Node Palette to place the node in. Supports nested categories by using the "/" character. Example: "Gameplay/Missions".
 
 `tooltip` Provides a tooltip to the element, this can be the node itself, or any of the node slots when the tooltip is added on a method or arguments
 
@@ -40,14 +40,13 @@ The data within the "details" field can be updated with the following fields:
 
 ### Example: Generating a translation file to replace text
 
-Open the Script Canvas editor
-Navigate or search for the desired node in the Node Palette
+Open the Script Canvas Editor. Navigate or search for the desired node in the Node Palette.
 
 We will use AWSGameLiftPlayer in this example
 
  ![Image 0](/images/user-guide/scripting/script-canvas/text-replacement-0.png)
 
-Right click on any of the nodes under AWSGameListPlayer
+Right click on any of the nodes under AWSGameLiftPlayer.
 
 ![Image 1](/images/user-guide/scripting/script-canvas/text-replacement-1.png)
 
@@ -55,7 +54,7 @@ And select "Generate Translation"
 
 This will open a file explorer window to an auto-generated file called: *AWSGameLiftPlayer.names*
 
-If you do not wish to make any changes to the auto-generated data, you can close the Script Canvas editor window and reopen it and you will see some changes have taken effect.
+If you do not wish to make any changes to the auto-generated data, you can close the Script Canvas Editor window and reopen it and you will see some changes have taken effect.
 
 ![Image 2](/images/user-guide/scripting/script-canvas/text-replacement-2.png)
 
@@ -63,14 +62,14 @@ All the names are now separated by a space and the naming follows the Script Can
 
 ### Changing the node category
 
-We have succesfully generated translation data for a node, but its category is still under "Other". To change this we will now edit the generated file *AWSGameLiftPlayer.names*
+We have succesfully generated translation data for a node, but its category is still under "Other". To change this we will now edit the generated file `AWSGameLiftPlayer.names`.
 
-To change the category, navigate to the outermost "details" object and add:
-"category": "AWS Game Lift"
+To change the category, navigate to the outermost `"details"` object and add:
+`"category": "AWS Game Lift"`.
 
-In addition, the name can be simplified to only "Player" to avoid the redundancy.
+In addition, the `"name"` can be simplified from `"AWS Game Lift Player"` to `"Player"`.
 
-```
+```json
 {
     "entries": [
         {
@@ -88,7 +87,7 @@ In addition, the name can be simplified to only "Player" to avoid the redundancy
     ]
 }
 ```
-After saving the changes to *AWSGameLiftPlayer.names*, close the Script Canvas editor and open it again.
+After saving the changes to `AWSGameLiftPlayer.names`, close the Script Canvas Editor and open it again.
 
 The nodes are now in the proper category with the given name:
 
@@ -113,7 +112,7 @@ Find and update any desired elements.
 * Use `Camel Case` syntax with spaces
 * Add the `tooltip` field to provide details and context
 * Use the `category` field to organize nodes
-* Review your changes by closing and reopening the Script Canvas editor
+* Review your changes by closing and reopening the Script Canvas Editor.
 * Watch for Asset Processor errors on .names files, ensure JSON syntax is correct
 * Commit .names files to source control, this will ensure they are tracked and changes are not overriden
 * Generating translation data will overwrite existing translation data, be careful not to lose work, when in doubt, use _Explore Translation Data_ first
@@ -123,9 +122,9 @@ Find and update any desired elements.
 
 ## Appendix 1
 
-Generated *AWSGameLiftPlayer.names*
+### Default generated `AWSGameLiftPlayer.names`
 
-```
+```json
 {
     "entries": [
         {
@@ -310,8 +309,9 @@ Generated *AWSGameLiftPlayer.names*
 }
 ```
 
-After modifications
-```
+### Modified `AWSGameLiftPlayer.names`
+
+```json
 {
     "entries": [
         {
