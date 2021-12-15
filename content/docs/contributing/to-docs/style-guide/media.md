@@ -135,11 +135,11 @@ Animated images are not currently accepted for contribution due to limitations o
 
 Embed Youtube videos in your page by using the `youtube-width` shortcode. The `youtube-width` shortcode is an extended version of Hugo's built-in [`youtube` shortcode](https://gohugo.io/content-management/shortcodes/#youtube) that allows you to control the size of the embedded video. 
 
-`youtube-width` takes three double-quoted parameters in order:
+`youtube-width` supports the following double-quoted parameters:
 
 1. id
 2. title
-3. width
+3. width (using the default value (50%) is recommended)
 
 `youtube-width` example:
 
