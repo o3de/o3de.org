@@ -16,7 +16,7 @@ Asset Processor uses *scan directories* to find assets that need to be processed
 
 ## Processing a mesh asset
 
-When you placed your `.fbx` source asset in your project, Asset processor detected the asset and processed it with a default set of rules for `.fbx` source assets. To customize the rules that process a mesh asset, follow the steps below:
+When you placed your `.fbx` source asset in your project, Asset Processor detected the asset and processed it with a default set of rules for `.fbx` source assets. To customize the rules that process a mesh asset, follow the steps below:
 
 1. In **O3DE Editor** locate your asset in **Asset Browser**. If you don't have an asset of your own, you can type `fbx` into the search field at the top of asset browser and use one of the provided `.fbx` files such as `sphere.fbx`.
 
@@ -43,7 +43,7 @@ When you placed your `.fbx` source asset in your project, Asset processor detect
 
 1. The customizations you make in Scene Settings are stored in a *sidecar file* with a `.assetinfo` extension. When Asset Processor detects a `.assetinfo` file, it uses the settings in the file to process the related source asset. This sidecar file is treated as a source dependency for the asset. This means that if the `.assetinfo` file is changed, the source asset will be reprocessed even if the source asset has not changed.
 
-    Let's add a modifier to customize how the asset is processed. Choose the **Add Modifier** button to view the mesh modifier list and select **Coordinate system change**
+    Let's add a modifier to customize how the asset is processed. Choose the **Add Modifier** button to view the mesh modifier list and select **Coordinate system change**.
 
     ![ Scene Settings meshes tab, adding mesh a modifier. ](/images/learning-guide/tutorials/assets/meshes-coordinate-system-change.png)
 
@@ -65,5 +65,6 @@ You can learn about the advanced settings properties of the Coordinate system ch
 
     When you drag the asset into the viewport, O3DE automatically creates an entity with a **Mesh** component that references the mesh product asset. If the source asset contains materials that have been processed, the materials are applied to the mesh by default.
 
-There are many options for customizing mesh processing, but there are limitations to the data that can be processed for meshes. Note that there are several product assets generated for the mesh that are listed below the source asset in Asset Browser. Each of these product assets contains some stream of data for the mesh. To learn more about the data that can be processed for a mesh and the limitations on the data that can be processed, refer to [Scene Format Support](/docs/user-guide/assets/scene-settings/scene-format-support) in the User Guide.
+There are many options for customizing mesh processing, but there are limitations to the data that can be processed for meshes. Note that there are several product assets generated for the mesh that are listed below the source asset in Asset Browser. Each of these product assets contains some stream of data for the mesh. To learn more about the data that can be processed for a mesh and the limitations on the data that can be processed, refer to [3D Scene Format Support](/docs/user-guide/assets/scene-settings/scene-format-support) in the User Guide.
+
 
