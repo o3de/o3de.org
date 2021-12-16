@@ -41,7 +41,7 @@ These icons are notable, as they are displayed within various O3DE systems such 
 
 #### Error / Failure Icon
 
-![O3DE Standard Error or Failure Icon](/static/images/tools-ui/overview/standard-icons/error-or-failure.png)
+![O3DE Standard Error or Failure Icon](/images/tools-ui/overview/standard-icons/error-or-failure.png)
 
 Indicates that a process has failed, or there is an error that requires immediate user action—that is, the user might be critically impacted, or in a potentially irreversible state.
 There might be an irregularity in the engine, a malfunctioning feature, or the user might have to confirm a destructive action.
@@ -52,7 +52,7 @@ We give two different labels for an issue: *Error* and *Failure*. There are a pl
 
 #### Warning Icon
 
-![O3DE Standard Warning Icon](/static/images/tools-ui/overview/standard-icons/warning.png)
+![O3DE Standard Warning Icon](/images/tools-ui/overview/standard-icons/warning.png)
 
 Indicates a situation which requires corrective action, to prevent a critical fault in the future, or if a non-critical error has occurred.
 There is hardly any impact to the user, but they should perform the preventive action for a streamlined workflow.
@@ -61,7 +61,7 @@ There is hardly any impact to the user, but they should perform the preventive a
 
 #### Success Icon
 
-![O3DE Standard Success Icon](/static/images/tools-ui/overview/standard-icons/success.png)
+![O3DE Standard Success Icon](/images/tools-ui/overview/standard-icons/success.png)
 
 Indicates successfully finished processes, completed tasks, or implies that no issues are present within the system.
 There is a need to provide feedback to a certain action, or that no immediate user action is required.
@@ -70,7 +70,7 @@ There is a need to provide feedback to a certain action, or that no immediate us
 
 #### Information Icon
 
-![O3DE Standard Information Icon](/static/images/tools-ui/overview/standard-icons/information.png)
+![O3DE Standard Information Icon](/images/tools-ui/overview/standard-icons/information.png)
 
 Indicates additional (non-critical) information is available, but doesn't need explicit action from the user.
 There is something that is ready to view, for system feedback, or to signify changes since the last interaction but don't require explicit action.
@@ -83,7 +83,7 @@ There is something that is ready to view, for system feedback, or to signify cha
 
 We use semantic colors to indicate purpose; these help users convey specific messages. For instance, green has positive connotations, so it's used to communicate success or confirmation.
 
-![O3DE Message Colors](/static/images/tools-ui/overview/colors.png)
+![O3DE Message Colors](/images/tools-ui/overview/colors.png)
 
 * * *
 
@@ -91,12 +91,12 @@ We use semantic colors to indicate purpose; these help users convey specific mes
 
 Toasts display messages that are used as non-disruptive notifications. That is, these messages can be displayed in the middle of a user's workflow, but should not hinder any actions. They should appear over page content, or above most elements on the bottom-right corner of the window.
 
-![Example of a floating toast in the O3DE Animation Editor](/static/images/tools-ui/toasts/floating-toast-message-in-animation-editor.png)
+![Example of a floating toast in the O3DE Animation Editor](/images/tools-ui/toasts/floating-toast-message-in-animation-editor.png)
 
 O3DE Toasts convey the message intent, and should correspond with an appropriate icon to provide a consistent experience for the users.
 
-![Floating Toasts - Messages](/static/images/tools-ui/toasts/floating-toasts-messages.png)
-![Floating Toasts - Decision Table](/static/images/tools-ui/toasts/floating-toasts-decision-table.png)
+![Floating Toasts - Messages](/images/tools-ui/toasts/floating-toasts-messages.png)
+![Floating Toasts - Decision Table](/images/tools-ui/toasts/floating-toasts-decision-table.png)
 
 #### General specification for Toasts
 
@@ -108,7 +108,7 @@ O3DE Toasts convey the message intent, and should correspond with an appropriate
 * The toast should appear above page content, and on a screen where overlay layers are appropriate.
 * This toast must not be used within a modal, consider using it within larger systems like Animation Editor, Material Editor, Viewport, etc.
 
-![Floating Toast, marked up](/static/images/tools-ui/toasts/floating-toasts-message-markup.png)
+![Floating Toast, marked up](/images/tools-ui/toasts/floating-toasts-message-markup.png)
 
 |||
 |--|--|
@@ -127,7 +127,7 @@ O3DE Toasts convey the message intent, and should correspond with an appropriate
 * The toast must have a fixed width, and should not expand to fit the content area.
 * It should not cover any page content, and multiple toasts must not be stacked horizontally.
 
-![Floating Toast Messages - Best Practices](/static/images/tools-ui/toasts/floating-toast-messages-best-practices.png)
+![Floating Toast Messages - Best Practices](/images/tools-ui/toasts/floating-toast-messages-best-practices.png)
 
 #### Toasts with links
 
@@ -137,14 +137,14 @@ It is possible that a toast will have a link in its subtitle text, ensure the fo
 * Unlike a standard toast, this message must persist and should not automatically disappear.
 * The link must point outside the system, and not to another part of the application.
 
-![Floating Toasts - Messages with Links](/static/images/tools-ui/toasts/floating-toasts-messages-with-links.png)
+![Floating Toasts - Messages with Links](/images/tools-ui/toasts/floating-toasts-messages-with-links.png)
 
 * * *
 
 ### Inline Notifications
 
 Inline Notifications, similar to Toasts, are non-disruptive; and are confined to a specific area within the interface. These are displayed when there is a need to display immediate feedback to the user. They are frequently used as an alternative to Toasts, in conjunction with Log Tables, and within Component Cards.
-![Inline Toast Messages](/static/images/tools-ui/inline-notifications/inline-toast-messages.png)
+![Inline Toast Messages](/images/tools-ui/inline-notifications/inline-toast-messages.png)
 
 #### General specification for Inline Notifications
 
@@ -155,7 +155,7 @@ Inline Notifications, similar to Toasts, are non-disruptive; and are confined to
 * It should only appear on screens which have more than one operational purpose. For instance, they must not appear inside Modal Dialogs, but can appear within Non-Modal Dialogs.
 * These messages must not be used in place of a log file.
 
-![Inline Toast - Markup](/static/images/tools-ui/inline-notifications/inline-toast-markup.png)
+![Inline Toast - Markup](/images/tools-ui/inline-notifications/inline-toast-markup.png)
 
 |||
 |---|---|
@@ -176,7 +176,7 @@ It is possible to have inline notifications with multiple lines, but ensure the 
 * Within the modal itself, provide clear guidance to the
 * Provide clear guidance to the user's next steps, and on how to resolve the issue.
 
-![Inline Toast - Multi-line](/static/images/tools-ui/inline-notifications/inline-toast-multiline.png)
+![Inline Toast - Multi-line](/images/tools-ui/inline-notifications/inline-toast-multiline.png)
 
 #### Inline Component Card messages
 
@@ -187,9 +187,9 @@ Inline messages in Component Cards are displayed within context, and should prov
 |Error / Failure |Informs the user of an error or critical failure, and optionally blocks them from proceeding until the issue has been resolved. |
 |Warning |Inform users of a non-critical error or unexpected result, or that an action was taken which is not desirable. |
 
-![Inline Error in Component Cards](/static/images/tools-ui/inline-notifications/inline-notifications-in-component-cards-decision-table.png)
+![Inline Error in Component Cards](/images/tools-ui/inline-notifications/inline-notifications-in-component-cards-decision-table.png)
 
-![Inline Error in Component Cards](/static/images/tools-ui/inline-notifications/inline-notifications-in-component-cards.png)
+![Inline Error in Component Cards](/images/tools-ui/inline-notifications/inline-notifications-in-component-cards.png)
 
 #### General specification for Inline Component Card messages
 
@@ -201,7 +201,7 @@ Inline messages in Component Cards are displayed within context, and should prov
 * The inline message should appear above the card content.
 * Because a component card can be minimized we also show state in the header with a gray caution pattern with the icon that is being used inside the component card.
 
-![Inline Messages in Component Cards - Markup](/static/images/tools-ui/inline-notifications/inline-messages-in-component-cards-markup.png)
+![Inline Messages in Component Cards - Markup](/images/tools-ui/inline-notifications/inline-messages-in-component-cards-markup.png)
 
 |||
 |---|---|
@@ -231,7 +231,7 @@ Inline messages in Component Cards are displayed within context, and should prov
 * The message must be descriptive, and should give the users explicit next steps.
 * Use inline notifications if your intention is to redirect the user's focus on the message, and to take it away from the current interface.
 
-![Inline Error with CTA](/static/images/tools-ui/inline-notifications/inline-error-with-cta.png)
+![Inline Error with CTA](/images/tools-ui/inline-notifications/inline-error-with-cta.png)
 
 * * *
 
@@ -241,7 +241,7 @@ Dialogs are used to inform users about specific tasks, and may include relevant 
 
 #### Structure of a Dialog
 
-![Dialog Structure](/static/images/tools-ui/dialogs/dialog-structure.png)
+![Dialog Structure](/images/tools-ui/dialogs/dialog-structure.png)
 
 1. **Header:** Includes a title, and the close button.
 2. **Close Button:** This will close the dialog, without resolving the issue.
@@ -272,44 +272,44 @@ Please note that note that having a secondary section (under the line break) is 
 
 ##### Dialog without Icon
 
-![O3DE Dialog without icon](/static/images/tools-ui/dialogs/dialog-without-icon.png)
+![O3DE Dialog without icon](/images/tools-ui/dialogs/dialog-without-icon.png)
 
 It is not essential for a dialog to include the Icon, however we recommend using this dialog variation as a non-modal.
 
 ##### Dialog with one Action
 
-![O3DE Dialogs with icons, primary](/static/images/tools-ui/dialogs/dialog-with-one-action-primary.png)
+![O3DE Dialogs with icons, primary](/images/tools-ui/dialogs/dialog-with-one-action-primary.png)
 
 Use the following variant if the user is either accepting/agreeing to something or if the dialog is purely informational.
 
-![O3DE Dialog with icons, secondary](/static/images/tools-ui/dialogs/dialog-with-one-action-secondary.png)
+![O3DE Dialog with icons, secondary](/images/tools-ui/dialogs/dialog-with-one-action-secondary.png)
 
 
 ##### Dialog with two Actions
 
 When using a dialog with two actions, the secondary button is on the right and the primary button is placed on the left.
 
-![O3DE Dialog with two actions](/static/images/tools-ui/dialogs/dialog-with-two-actions.png)
+![O3DE Dialog with two actions](/images/tools-ui/dialogs/dialog-with-two-actions.png)
 
 ##### Dialog with multiple Messages
 
 In certain situations, multiple error messages can be consolidated into a single dialog. Consider using this when a set of actions are occurring, and the user doesn't have to evaluate them on at a time. This will help to avoid bombarding the user with modal windows.
 
-![O3DE Dialog with a log of errors](/static/images/tools-ui/dialogs/dialog-with-multiple-messages-log.png)
+![O3DE Dialog with a log of errors](/images/tools-ui/dialogs/dialog-with-multiple-messages-log.png)
 
 Ideally, the dialog message should have a Body that consolidates its purpose. Provide a collapsible table, so they can view details if desired.
 
-![O3DE Dialog with a log of errors, closed state](/static/images/tools-ui/dialogs/dialog-with-multiple-messages-closed.png)
+![O3DE Dialog with a log of errors, closed state](/images/tools-ui/dialogs/dialog-with-multiple-messages-closed.png)
 
 When possible, link to log file(s) when adding additional details. This will allow users to resolve their issue(s), and will expedite their workflow.
 
-![O3DE Dialog with a log of errors, closed state](/static/images/tools-ui/dialogs/dialog-with-multiple-messages-open.png)
+![O3DE Dialog with a log of errors, closed state](/images/tools-ui/dialogs/dialog-with-multiple-messages-open.png)
 
 ##### Dialog with a long Message string
 
 In certain situations, the error shown in the dialog might need to be detailed. Consider using a dialog with a scrollbar, as shown in the image below.
 
-![O3DE Dialog with a long message](/static/images/tools-ui/dialogs/dialog-with-long-message.png)
+![O3DE Dialog with a long message](/images/tools-ui/dialogs/dialog-with-long-message.png)
 
 #### General specifications for Dialogs
 
@@ -349,7 +349,7 @@ Log Tables are used to convey a long stream of notification updates that have oc
 
 These logs are accompanied by a status indicator, which informs the user of items that require the user's attention. These are frequently used to signal errors or failures, warnings, or notification.
 
-![Event Log](/static/images/tools-ui/event-log/event-log.png)
+![Event Log](/images/tools-ui/event-log/event-log.png)
 
 A log table typically has two sections. First, a table which displays an error and a secondary box that allows users to click specific errors to get their full details. The information in the table gives the user enough context to understand errors. Second, a table which displays how users can recover from errors and fix them, or links which reference help and/or documentation.
 
@@ -357,15 +357,15 @@ A log table typically has two sections. First, a table which displays an error a
 
 Console Messages are displayed in color, and are represented with a prefix to help users differentiate between the messages.
 
-![Console Log decision table](/static/images/tools-ui/console-log/console-log-decision-table.png)
+![Console Log decision table](/images/tools-ui/console-log/console-log-decision-table.png)
 
-![Console Log message example](/static/images/tools-ui/console-log/console-log-messages.png)
+![Console Log message example](/images/tools-ui/console-log/console-log-messages.png)
 
 #### General specification for Console Logs
 
 In the Editor's Global Preferences, users can customize their preferred theme for the console background.
 
-![Console Log - Global Preferences](/static/images/tools-ui/console-log/global-preferences.png)
+![Console Log - Global Preferences](/images/tools-ui/console-log/global-preferences.png)
 
 There are two themes, "Light" and the default "Dark". The light theme uses a White (#FFF) background, and the dark theme uses a Black (#111) background.
 
@@ -377,7 +377,7 @@ The message colors have been specified for the Error / Failure and Warning state
 
 The message colors for the two states, Error/Failure and Warning have been defined below.
 
-![Console Log - Error and Warning examples](/static/images/tools-ui/console-log/console-log-state-colors.png)
+![Console Log - Error and Warning examples](/images/tools-ui/console-log/console-log-state-colors.png)
 
 #### Best practices for Console Logs
 
@@ -397,7 +397,7 @@ The message must appear only after the user interacts with the field. If they in
 
 #### Special usage of the Error/Failure icon
 
-![Input Validation Error or Failure](/static/images/tools-ui/text-input-validation/text-input-validation.png)
+![Input Validation Error or Failure](/images/tools-ui/text-input-validation/text-input-validation.png)
 
 As an exception, we utilize this icon to represent an error or failure within a text input validation message. The reason for this is to avoid confusion, as in certain use cases the original icon is situated next to a close icon. It is not required for an error input field to include the icon as some input fields are very small and iconography will take up space. However if your input field allows for the icon please consider using it.
 
@@ -411,7 +411,7 @@ A tooltip is a text label which appears when users hover over an element, in thi
 * The tooltip should not display rich information, such as images and formatted text.
 * Keep the tooltip displayed as long as the user continues to hover over the element. The tooltip will also appear anywhere over a red input field.
 
-![Text Input Validation Tooltips](/static/images/tools-ui/text-input-validation/text-input-validation-tooltips.png)
+![Text Input Validation Tooltips](/images/tools-ui/text-input-validation/text-input-validation-tooltips.png)
 
 * * *
 
