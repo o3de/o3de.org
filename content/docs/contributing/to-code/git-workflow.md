@@ -10,7 +10,7 @@ Looking to submit new or changed code to **Open 3D Engine (O3DE)**? Exciting! Fo
 
 ### GitHub Code Contribution Workflow
 
-The O3DE base repository is on GitHub at [{{< links/o3de-source >}}]({{< links/o3de-source >}}).
+The O3DE base repository is on GitHub at [https://{{< links/o3de-source >}}](https://{{< links/o3de-source >}}).
 
 ![GitHub code contribution workflow diagram](/images/contributing/to-code/code-git-workflow.png)
 
@@ -26,14 +26,14 @@ At a high level, the workflow is:
 
 ### Initial Git contribution workflow steps
 
-1. Create a fork of `{{< links/o3de-source >}}.git` into your own GitHub account. To do this, go to the O3DE public GitHub repo at [{{< links/o3de-source >}}]({{< links/o3de-source >}}) and create a fork by selecting the "Fork" button in the upper-right. This will clone the O3DE public repo into your repo, and may take a few minutes. The URL for your fork will be something like `https://github.com/<YOUR GITHUB NAME HERE>/o3de.git`.
+1. Create a fork of `https://{{< links/o3de-source >}}.git` into your own GitHub account. To do this, go to the O3DE public GitHub repo at [https://{{< links/o3de-source >}}](https://{{< links/o3de-source >}}) and create a fork by selecting the "Fork" button in the upper-right. This will clone the O3DE public repo into your repo, and may take a few minutes. The URL for your fork will be something like `https://github.com/<YOUR GITHUB NAME HERE>/o3de.git`.
 
 1. Now, clone your fork locally by opening GitBash (or a Git-enabled shell or utility). Change directories to the folder you want to clone the repo in and run: `git clone https://github.com/<YOUR GITHUB NAME HERE>/o3de.git`. You will now have the clone of your fork on your local desktop and can work with the files directly.
 
 1. However, to simplify this workflow, you must make some changes to your local Git configuration. In this case, you will be setting your fork's URL as the `origin` repo, and the O3DE public repo as your `upstream` repo, and updating the LFS URL. Run the following Git commands from **your locally cloned fork's path**:
 
     ```bash
-    git remote add upstream {{< links/o3de-source >}}.git
+    git remote add upstream https://{{< links/o3de-source >}}.git
     ```
 
     Confirm that `upstream` points to the O3DE public repo and that `origin` points to your fork:
@@ -47,8 +47,8 @@ At a high level, the workflow is:
     ```bash
     origin  https://github.com/<FORK>/o3de.git (fetch)
     origin  https://github.com/<FORK>/o3de.git (push)
-    upstream  {{< links/o3de-source >}}.git (fetch)
-    upstream  {{< links/o3de-source >}}.git (push)
+    upstream  https://{{< links/o3de-source >}}.git (fetch)
+    upstream  https://{{< links/o3de-source >}}.git (push)
     ```
 
     You can also configure upstream to target specific branches, as well.
