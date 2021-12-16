@@ -66,7 +66,7 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
 
 **To fork and clone O3DE on your PC from GitHub**
 
-1. Create a fork of the O3DE GitHub repo from [{{< links/o3de-source >}}]({{< links/o3de-source >}}). Alternatively, if you are working as a member of a team that has already created a fork, you can skip this step and use your team's existing fork.
+1. Create a fork of the O3DE GitHub repo from [https://{{< links/o3de-source >}}](https://{{< links/o3de-source >}}). Alternatively, if you are working as a member of a team that has already created a fork, you can skip this step and use your team's existing fork.
 
     ![Create a fork using the Fork button on the O3DE GitHub repo](/images/welcome-guide/setup-create-fork.png)
 
@@ -107,7 +107,7 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
 1. Add a remote to track the upstream repo. This will enable you to pull updates from the O3DE repo directly into your local clone.
 
     ```cmd
-    git remote add upstream {{< links/o3de-source >}}.git
+    git remote add upstream https://{{< links/o3de-source >}}.git
     ```
 
     Verify the upstream repository. You should see the URL for the fork as `origin`, and the URL for the original repository as `upstream`.
@@ -121,8 +121,8 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
     ```cmd
     origin  https://github.com/<FORK>/o3de.git (fetch)
     origin  https://github.com/<FORK>/o3de.git (push)
-    upstream        {{< links/o3de-source >}}.git (fetch)
-    upstream        {{< links/o3de-source >}}.git (push)
+    upstream        https://{{< links/o3de-source >}}.git (fetch)
+    upstream        https://{{< links/o3de-source >}}.git (push)
     ```
 
 1. (Optional) If you don't expect to make changes to these files, ignore this step. Otherwise, update the LFS URL to include your fork. This lets you push changes to files in the LFS. For complete instructions and the **DISTRIBUTION** to use, open the `.lfsconfig` file at the root of the repository.
