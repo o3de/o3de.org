@@ -76,7 +76,7 @@ Use CMake to build the Visual Studio project in the build directory of your O3DE
 1. Build the project launcher using the solution that you created in the project's `build/windows_vs2019` directory. The following example shows the `profile` build configuration.
 
     ```cmd
-    cmake --build build/windows_vs2019 --target MyProject.GameLauncher Editor --config profile -- /m
+    cmake --build build/windows_vs2019 --target MyProject.GameLauncher Editor --config profile -- -m
     ```
 
     {{< important >}}
@@ -85,7 +85,7 @@ When building the project for a pre-built SDK engine, even though you aren't bui
 
     When building the project for a source engine, you build the **Asset Processor** and Project Manager too, since they are dependencies of O3DE Editor.
 
-    The `/m` is a recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
+    The `-m` is a recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
 
 1. When the build is complete, you can find the project binaries in the project directory under `build/windows_vs2019/bin/profile`. To verify that the project is ready to use, run O3DE Editor by doing one of the following:
 

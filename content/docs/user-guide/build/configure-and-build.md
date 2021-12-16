@@ -160,13 +160,13 @@ Use the following command to build just the Editor and its tool dependencies:
 {{% tab name="Windows" %}}
 
 ```cmd
-cmake --build build/windows_vs2019 --target Editor --config profile -- /m
+cmake --build build/windows_vs2019 --target Editor --config profile -- -m
 ```
 
 * `--build` : Location of build directory, where to put the build output.
 * `--target` : Build target(s). More than one can be specified, separated by a space.
 * `--config` : The build configuration. Refer to the previous section on [Generated build configurations](#generated-build-configurations).
-* `/m` : A recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
+* `-m` : A recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
 
 In this example, build products are placed in the `build\windows_vs2019\bin\profile` directory.
 
@@ -195,7 +195,7 @@ Use the following command to build the project, Editor, and its tool dependencie
 {{% tab name="Windows" %}}
 
 ```cmd
-cmake --build build/windows_vs2019 --target <ProjectName>.GameLauncher Editor --config profile -- /m
+cmake --build build/windows_vs2019 --target <ProjectName>.GameLauncher Editor --config profile -- -m
 ```
 
 Refer to the previous section for an explanation of each parameter.
