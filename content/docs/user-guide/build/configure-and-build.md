@@ -31,7 +31,7 @@ O3DE has build support for the following platforms and toolchains:
 | Android | Android Clang/LLVM |
 
 {{< note >}}
-For additional platform-specific requirements and information, refer to [O3DE System Requirements](/docs/welcome-guide/requirements), the [CMake Settings Reference](/docs/user-guide/build/reference) and the relevant [platform overviews](/docs/user-guide/platforms/).
+For additional platform-specific requirements and information, refer to [O3DE System Requirements](/docs/welcome-guide/requirements), the [CMake Settings Reference](/docs/user-guide/build/reference), and the relevant [platform overviews](/docs/user-guide/platforms/).
 {{< /note >}}
 
 ## First project
