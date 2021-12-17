@@ -1,61 +1,43 @@
 ---
 linktitle: UI Messages
-title: Design Good O3DE UI Messages
+title: Design Guidelines for UI Messages in Open 3D Engine
 description: Learn about the design models and best practices for O3DE UI messages, including error messages and notifications.
 weight: 500
 toc: true
 ---
 
-Are you developing user interface (UI) components that extend **Open 3D Engine (O3DE)**? Learn how to craft meaningful and useful user interface (UI) messages that help your users by reviewing the principles and best practices in this topic. UI messages indicate the status of a component, such as error, failure, warning, information, and success messages.
+Are you developing user interface (UI) components that extend **Open 3D Engine (O3DE)**? Learn how to craft meaningful and useful user interface (UI) messages that help your users by reviewing the principles and best practices in this topic. UI messages indicate the status of a component, such as error, failure, warning, information, and success messages. This document covers various types of messaging including *Toast*, *Inline Notification*, *Dialog*, *Console Log*, *Event Log*, *Event Table*, *Component Card*, and *Text Input Validation*.
 
-This document covers various types of messaging including *Toast*, *Inline Notification*, *Dialog*, *Console Log*, *Event Log*, *Event Table*, *Component Card*, ** and *Text Input Validation*.
+Consistent styling in O3DE messages is crucial because it reduces the cognitive load on users to know how to resolve issues in future scenarios.
+ 
+## Prerequisites
 
-## Design and Deliver Good User Interface Messages for Open 3D Engine (O3DE)
+To aid in your learning, we recommend opening the **Qt Control Gallery**, a Qt widget library that demonstrates UI elements and allows you to program and preview additional elements. The QT Control Gallery is built when you build O3DE and is located in the engine's `build/<platform>/bin/<configuration>` directory.
 
-We believe that consistency in O3DE messages is crucial, as it reduces the cognitive load on how issues can be resolved for future scenarios.
+For more information, refer to [O3DE Qt Control Gallery Tool](/docs/tools-ui/uidev-control-gallery/)
 
-As a prerequisite, we recommend having access to the [**Qt Control Gallery**](https://o3de.org/docs/tools-ui/uidev-control-gallery/), a pre-built library which allows you to incorporate additional elements, to get started.
 
-**Jump to a specific section**:
+## Standard Icons
 
-* [Standard Icon Guidelines](#standard-icons)
-* [Message Color Guidelines](#message-colors)
-* [Toast Guidelines](#toasts)
-* [Inline Notification Guidelines](#inline-notifications)
-* [Dialog Guidelines](#dialogs)
-* [Log Table Guidelines](#log-tables)
-* [Console Log Guidelines](#console-logs)
-* [Text Input Validation](#text-input-validation)
-* [Tooltip Guidelines](#tooltips)
-* [Error Message Strings Best Practices](#error-message-strings-best-practices)
+The standard icons built into O3DE are the **Error**, **Warning**, **Success**, and **Information** icons. They communicate different severity levels of information to users.
 
-**Related Guide:** [**O3DE Qt Control Gallery Tool**](/docs/tools-ui/uidev-control-gallery/)
-
-* * *
-
-### Standard Icons
-
-The standard icons are the **Error**, **Warning**, **Success**, and **Information** icons that are a part of O3DE. They are an important way to communicate severity levels for information to users.
-
-These icons are notable, as they are displayed within various O3DE systems such as *Toast Messages*, *Dialogs*, and *Message Boxes*. They are also commonly displayed within *Event or Console Logs*, and *Component Cards*.
+These icons are displayed on various O3DE UI systems such as *Toast Messages*, *Dialogs*, and *Message Boxes*. They are also commonly displayed within *Event Logs*, *Console Logs*, and *Component Cards*.
 
 #### Error / Failure Icon
 
 ![O3DE Standard Error or Failure Icon](/images/tools-ui/overview/standard-icons/error-or-failure.png)
 
-Indicates that a process has failed, or there is an error that requires immediate user action—that is, the user might be critically impacted, or in a potentially irreversible state.
-There might be an irregularity in the engine, a malfunctioning feature, or the user might have to confirm a destructive action.
+Indicates that a process has failed, or there is an error that requires immediate user action---that is, the user might be critically impacted, or in a potentially irreversible state. Errors or failures may be an irregularity in the engine, a malfunctioning feature, or a request from the user to confirm a destructive action.
 
 *Used for: errors, failure, failed processes, emergencies, urgent alerts*
 
-We give two different labels for an issue: *Error* and *Failure*. There are a plurality of different definitions, the one we prefer is that an *Error* is the deviation from the actual and expected output, and a *Failure* is the inability of the system to perform a required function.
+In O3DE, we define two different terms to describe an issue: *Error* and *Failure*. An *Error* is the deviation from the actual and expected output. A *Failure* is the inability of the system to perform a required function.
 
 #### Warning Icon
 
 ![O3DE Standard Warning Icon](/images/tools-ui/overview/standard-icons/warning.png)
 
-Indicates a situation which requires corrective action, to prevent a critical fault in the future, or if a non-critical error has occurred.
-There is hardly any impact to the user, but they should perform the preventive action for a streamlined workflow.
+Indicates a situation that requires corrective action from the user to prevent a critical fault, or a situation in which a non-critical error has occurred. Warnings don't indicate immediate impact on the user, but they suggest that the user performs a preventive action for a streamlined workflow.
 
 *Used for: warnings, unavailability, caution, prevention, instability*
 
@@ -63,7 +45,7 @@ There is hardly any impact to the user, but they should perform the preventive a
 
 ![O3DE Standard Success Icon](/images/tools-ui/overview/standard-icons/success.png)
 
-Indicates successfully finished processes, completed tasks, or implies that no issues are present within the system.
+Indicates successfully finished processes and tasks, or implies that no issues are present within the system.
 There is a need to provide feedback to a certain action, or that no immediate user action is required.
 
 *Used for: success, completion, stability, active status, verification, progress indicator*
@@ -72,76 +54,83 @@ There is a need to provide feedback to a certain action, or that no immediate us
 
 ![O3DE Standard Information Icon](/images/tools-ui/overview/standard-icons/information.png)
 
-Indicates additional (non-critical) information is available, but doesn't need explicit action from the user.
-There is something that is ready to view, for system feedback, or to signify changes since the last interaction but don't require explicit action.
+Indicates additional (non-critical) information that doesn't require action from the user. This may be used to inform the user that something is ready to view, such as for system feedback or to signify changes since the last interaction.
 
 *Used for: information, guidance, exceptions*
 
-* * *
 
-### Message Colors
+## Message Colors
 
-We use semantic colors to indicate purpose; these help users convey specific messages. For instance, green has positive connotations, so it's used to communicate success or confirmation.
+In messages, semantic colors indicate the purpose of a message, which users can quickly recognize by the color. For instance, the color green has positive connotations, so it's used to communicate success or confirmation.
+
+- Error: `#FA2727`
+- Warning: `#FFAA22`
+- Success: `#58BC61`
+- Information: `#1E70EB`
+- Information icon: `#FFFFFF`
 
 ![O3DE Message Colors](/images/tools-ui/overview/colors.png)
 
 * * *
 
-### Toasts
+## Toasts
 
-Toasts display messages that are used as non-disruptive notifications. That is, these messages can be displayed in the middle of a user's workflow, but should not hinder any actions. They should appear over page content, or above most elements on the bottom-right corner of the window.
+In O3DE, *toast messages* are non-disruptive notifications. They can be displayed in the middle of a user's workflow without hindering the user's actions. They should appear over page content or above most elements on the bottom-right corner of the window.
 
+The following example demonstrates a toast that appears at the bottom-right corner of the **O3DE Animation Editor** window.
 ![Example of a floating toast in the O3DE Animation Editor](/images/tools-ui/toasts/floating-toast-message-in-animation-editor.png)
 
-O3DE Toasts convey the message intent, and should correspond with an appropriate icon to provide a consistent experience for the users.
+### Using standard icons
+Toasts convey the message's intent and must correspond with an appropriate icon to provide a consistent experience for the users. The following image shows toasts of different message intents: error/failure, warning, success, and information. 
 
 ![Floating Toasts - Messages](/images/tools-ui/toasts/floating-toasts-messages.png)
+
+
+Refer to the following table to determine what icon to use in your toast, depending on the message's use case. 
+
 ![Floating Toasts - Decision Table](/images/tools-ui/toasts/floating-toasts-decision-table.png)
 
-#### General specification for Toasts
+### General specification for toasts
 
-* Toasts must disappear after three seconds (or a maximum of five seconds), unless the message includes a link wherein the toast can persist on the screen until action is taken.
-* Multiple toasts should not be stacked, as this might block any user action.
-* Keep the messages clear and concise, a maximum of two lines.
+* Toasts are passive and non-disruptive messages. They shouldn't hinder the user's workflow.
+* Toasts must disappear after three seconds (or a maximum of five seconds). An exception is if the message includes a link that requires the user to take action for the toast to disappear.
+* Multiple toasts should not be stacked horizontally or vertically, as this may block the user's workflow.
 * The icon within a toast must be a standard icon: error/failure, warning, success, or information icon.
-* It must not contain a call-to-action button.
-* The toast should appear above page content, and on a screen where overlay layers are appropriate.
-* This toast must not be used within a modal, consider using it within larger systems like Animation Editor, Material Editor, Viewport, etc.
+* The toast must have a fixed width and should not expand to fit the content area.
+* Toasts must not contain a call-to-action button.
+* Toasts must appear above page content and on a screen where overlay layers are appropriate.
+* Toasts must not be used within a modal. Consider using them within larger systems like **O3DE Editor**, **Material Editor**, **Viewport**, and so on.
 
-![Floating Toast, marked up](/images/tools-ui/toasts/floating-toasts-message-markup.png)
-
-|||
-|--|--|
-| **Icon Size:** | 24x24px |
-| **Padding:** | 12px |
-| **Border Radius:** | 6px |
-| **Font:** | Open Sans |
-| **Weight:** | 400 |
-| **Line Height:** | 16px |
-
-#### Best practices for Toasts
-
-* Toasts are passive in nature, and should not hinder the user's workflow
-* Keep the messages clear and concise.
-* The toast must disappear after five seconds, unless the message contains a link.
-* The toast must have a fixed width, and should not expand to fit the content area.
-* It should not cover any page content, and multiple toasts must not be stacked horizontally.
 
 ![Floating Toast Messages - Best Practices](/images/tools-ui/toasts/floating-toast-messages-best-practices.png)
 
-#### Toasts with links
 
-It is possible that a toast will have a link in its subtitle text, ensure the following:
+### UI dimensions
 
-* Display a manual close button with the text.
-* Unlike a standard toast, this message must persist and should not automatically disappear.
-* The link must point outside the system, and not to another part of the application.
+| Property | Specification |
+|--|--|
+| Icon Size | 24x24px |
+| Padding | 12px |
+| Border Radius | 6px |
+| Font | Open Sans |
+| Weight | 400 |
+| Line Height | 16px |
+
+![Floating Toast, marked up](/images/tools-ui/toasts/floating-toasts-message-markup.png)
+
+
+### Toasts with links
+
+Toasts that contain links in the subtitle text must ensure the following:
+
+* Unlike a standard toast, a toast with a link must persist and should not automatically disappear.
+* The toast must display a manual close button.
+* The link must point outside the system and not to another part of the application.
 
 ![Floating Toasts - Messages with Links](/images/tools-ui/toasts/floating-toasts-messages-with-links.png)
 
-* * *
 
-### Inline Notifications
+## Inline Notifications
 
 Inline Notifications, similar to Toasts, are non-disruptive; and are confined to a specific area within the interface. These are displayed when there is a need to display immediate feedback to the user. They are frequently used as an alternative to Toasts, in conjunction with Log Tables, and within Component Cards.
 ![Inline Toast Messages](/images/tools-ui/inline-notifications/inline-toast-messages.png)
