@@ -6,7 +6,7 @@ weight: 500
 toc: true
 ---
 
-Are you developing user interface components for **Open 3D Engine (O3DE)**? Learn how to craft meaningful and useful error, failure, warning, information, and success messages which help your users, and not frustrate them, by reviewing the principles and best practices in this topic.
+Are you developing user interface (UI) components that extend **Open 3D Engine (O3DE)**? Learn how to craft meaningful and useful user interface (UI) messages that help your users by reviewing the principles and best practices in this topic. UI messages indicate the status of a component, such as error, failure, warning, information, and success messages.
 
 This document covers various types of messaging including *Toast*, *Inline Notification*, *Dialog*, *Console Log*, *Event Log*, *Event Table*, *Component Card*, ** and *Text Input Validation*.
 
