@@ -170,6 +170,7 @@ Refer to [blend shape](#blend_shape).
 A navigation mesh, or navmesh, defines the areas of an environment in which a character can move freely without obstructions such as trees, lavas, or other environmental barriers.
 
 ### nodeable
+Refers to either of the following Script Canvas concepts:
 * A Script Canvas node created as the result of **AzAutoGen** processing.
 * The mechanism by which a compiled Script Canvas graph can invoke C++ functions.
 
