@@ -23,7 +23,7 @@ The standard icons built into O3DE are the **Error**, **Warning**, **Success**, 
 
 These icons are displayed on various O3DE UI systems such as *Toast Messages*, *Dialogs*, and *Message Boxes*. They are also commonly displayed within *Event Logs*, *Console Logs*, and *Component Cards*.
 
-#### Error / Failure Icon
+### Error / Failure Icon
 
 ![O3DE Standard Error or Failure Icon](/images/tools-ui/overview/standard-icons/error-or-failure.png)
 
@@ -33,7 +33,7 @@ Indicates that a process has failed, or there is an error that requires immediat
 
 In O3DE, we define two different terms to describe an issue: *Error* and *Failure*. An *Error* is the deviation from the actual and expected output. A *Failure* is the inability of the system to perform a required function.
 
-#### Warning Icon
+### Warning Icon
 
 ![O3DE Standard Warning Icon](/images/tools-ui/overview/standard-icons/warning.png)
 
@@ -41,7 +41,8 @@ Indicates a situation that requires corrective action from the user to prevent a
 
 *Used for: warnings, unavailability, caution, prevention, instability*
 
-#### Success Icon
+
+### Success Icon
 
 ![O3DE Standard Success Icon](/images/tools-ui/overview/standard-icons/success.png)
 
@@ -50,7 +51,8 @@ There is a need to provide feedback to a certain action, or that no immediate us
 
 *Used for: success, completion, stability, active status, verification, progress indicator*
 
-#### Information Icon
+
+### Information Icon
 
 ![O3DE Standard Information Icon](/images/tools-ui/overview/standard-icons/information.png)
 
@@ -59,7 +61,7 @@ Indicates additional (non-critical) information that doesn't require action from
 *Used for: information, guidance, exceptions*
 
 
-## Message Colors
+## Message colors
 
 In messages, semantic colors indicate the purpose of a message, which users can quickly recognize by the color. For instance, the color green has positive connotations, so it's used to communicate success or confirmation.
 
@@ -71,7 +73,6 @@ In messages, semantic colors indicate the purpose of a message, which users can 
 
 ![O3DE Message Colors](/images/tools-ui/overview/colors.png)
 
-* * *
 
 ## Toasts
 
@@ -81,18 +82,21 @@ The following example demonstrates a toast that appears at the bottom-right corn
 ![Example of a floating toast in the O3DE Animation Editor](/images/tools-ui/toasts/floating-toast-message-in-animation-editor.png)
 
 ### Using standard icons
+
 Toasts convey the message's intent and must correspond with an appropriate icon to provide a consistent experience for the users. The following image shows toasts of different message intents: error/failure, warning, success, and information. 
-
-![Floating Toasts - Messages](/images/tools-ui/toasts/floating-toasts-messages.png)
-
 
 Refer to the following table to determine what icon to use in your toast, depending on the message's use case. 
 
 ![Floating Toasts - Decision Table](/images/tools-ui/toasts/floating-toasts-decision-table.png)
 
-### General specification for toasts
+#### Examples
+
+![Floating Toasts - Messages](/images/tools-ui/toasts/floating-toasts-messages.png)
+
+### Specifications
 
 * Toasts are passive and non-disruptive messages. They shouldn't hinder the user's workflow.
+* Toast messages must be clear and concise---a maximum of two lines.
 * Toasts must disappear after three seconds (or a maximum of five seconds). An exception is if the message includes a link that requires the user to take action for the toast to disappear.
 * Multiple toasts should not be stacked horizontally or vertically, as this may block the user's workflow.
 * The icon within a toast must be a standard icon: error/failure, warning, success, or information icon.
@@ -109,7 +113,7 @@ Refer to the following table to determine what icon to use in your toast, depend
 
 | Property | Specification |
 |--|--|
-| Icon Size | 24x24px |
+| Icon Size | 24 x 24px |
 | Padding | 12px |
 | Border Radius | 6px |
 | Font | Open Sans |
@@ -121,151 +125,145 @@ Refer to the following table to determine what icon to use in your toast, depend
 
 ### Toasts with links
 
-Toasts that contain links in the subtitle text must ensure the following:
+Toasts that contain links in the subtitle text must do the following:
 
-* Unlike a standard toast, a toast with a link must persist and should not automatically disappear.
-* The toast must display a manual close button.
-* The link must point outside the system and not to another part of the application.
+* Persistantly display and don't automatically disappear, unlike a standard toast.
+* Display a manual close button.
+* Point outside the system, not to another part of the application.
 
 ![Floating Toasts - Messages with Links](/images/tools-ui/toasts/floating-toasts-messages-with-links.png)
 
 
-## Inline Notifications
+## Inline notifications
 
-Inline Notifications, similar to Toasts, are non-disruptive; and are confined to a specific area within the interface. These are displayed when there is a need to display immediate feedback to the user. They are frequently used as an alternative to Toasts, in conjunction with Log Tables, and within Component Cards.
+Inline notifications are non-disruptive messages that are confined to a specific area within the interface. These are displayed when there is a need to display immediate feedback to the user. They are frequently used as an alternative to toasts, in conjunction with log tables, and within component cards.
+
 ![Inline Toast Messages](/images/tools-ui/inline-notifications/inline-toast-messages.png)
 
-#### General specification for Inline Notifications
+### Specifications
 
-* Inline notifications can persist until they are dismissed by the user, or until the issue is resolved.
-* Keep the messages clear and concise. We recommend one line. If absolutely necessary, an exception can be made.
-* They are initiated in response to user action during the user's workflow, or by the system (independent of user action).
-* The notification can contain a single call-to-action button which must be related to the message.
-* It should only appear on screens which have more than one operational purpose. For instance, they must not appear inside Modal Dialogs, but can appear within Non-Modal Dialogs.
-* These messages must not be used in place of a log file.
+* Inline notifications persistantly display until they are dismissed by the user, or until the issue is resolved.
+* Inline notification messages must be clear and concise---one line is recommended.
+* Inline notifications are initiated in response to user action during the user's workflow, or by the system (independent of user action).
+* Inline notifications can contain a single call-to-action button that's related to the message.
+* Inline notifications must appear appear only on screens that have more than one operational purpose. For instance, they can appear within non-modal dialogs, but cannot appear inside modal dialogs.
+* Inline notification messages must not be used in place of a log file.
+
+
+### UI dimensions
+
+| Property | Specification|
+|---|---|
+| Icon Size | 24 x 24px |
+| Padding | 10px |
+| Fill | Specific color opacity: 10% |
+| Border | Specific Color |
+| Font | Open Sans |
+| Weight | 400 |
+| Size | 12px |
+| Line Height | 20px |
 
 ![Inline Toast - Markup](/images/tools-ui/inline-notifications/inline-toast-markup.png)
 
-|||
-|---|---|
-| **Icon Size:** | 24x24px |
-| **Padding:** | 10px |
-| **Fill:** | *Specific Color* Opacity: 10% |
-| **Border:** | *Specific Color* |
-| **Font:** | Open Sans |
-| **Weight:** | 400 |
-| **Size:** | 12px |
-| **Line Height:** | 20px |
+### Best practices
 
-#### Multi-line Inline Notifications
-
-It is possible to have inline notifications with multiple lines, but ensure the following:
-
-* Use a bulleted list to present a list of issues, this will draw the user's focus onto the important information.
-* Within the modal itself, provide clear guidance to the
-* Provide clear guidance to the user's next steps, and on how to resolve the issue.
-
-![Inline Toast - Multi-line](/images/tools-ui/inline-notifications/inline-toast-multiline.png)
-
-#### Inline Component Card messages
-
-Inline messages in Component Cards are displayed within context, and should provide actions to highlight what the user should take to recover from the error or resolve the outstanding warning. Currently, we don't provide success or information messages for component cards. However these are patterns we are working on next.
-
-|Icon |Acceptable Usage |
-|--- |--- |
-|Error / Failure |Informs the user of an error or critical failure, and optionally blocks them from proceeding until the issue has been resolved. |
-|Warning |Inform users of a non-critical error or unexpected result, or that an action was taken which is not desirable. |
-
-![Inline Error in Component Cards](/images/tools-ui/inline-notifications/inline-notifications-in-component-cards-decision-table.png)
-
-![Inline Error in Component Cards](/images/tools-ui/inline-notifications/inline-notifications-in-component-cards.png)
-
-#### General specification for Inline Component Card messages
-
-* Inline messages must persist in the component cards.
-* Multiple inline messages should not be stacked, instead display the messages one after the other as the user resolves their errors.
-* Keep the messages clear and concise, a maximum of two lines.
-* The icon within the inline message must be a standard icon: error/failure or warning.
-* Dependent on the context, the component card should contain a call-to-action button.
-* The inline message should appear above the card content.
-* Because a component card can be minimized we also show state in the header with a gray caution pattern with the icon that is being used inside the component card.
-
-![Inline Messages in Component Cards - Markup](/images/tools-ui/inline-notifications/inline-messages-in-component-cards-markup.png)
-
-|||
-|---|---|
-| **Icon Size** | 24x24px |
-| **Padding** | 8px |
-| **Fill** | Warning Color Opacity: 10% |
-| **Border** | Warning color code |
-| **Font** | Open Sans |
-| **Weight** | 400 or 600 |
-| **Size** | 12px |
-| **Line Height** | 16px |
-
-#### Best practices for Inline Component Card Messages
-
-* Inline Messages should be placed at the top of the card content, and should not cover any of the content.
-* Only one inline message should be shown at a time.
-* Keep the message under two lines.
-* Be descriptive, and give users guidance on the steps to take to resolve their error.
-* Error or warning states can include a helper link. The link should linked outside of O3DE and not to other parts of the applications
-
-#### Best practices for Inline Notifications
-
-* Inline notifications must be placed at the top of the content.
-* Do not cover any content with the toast.
-* If there are multiple notifications only show them one at a time, sequentially and in order of priority, without blocking any user action.
-* The icon within the notification must be one of the standard icons.
-* The message must be descriptive, and should give the users explicit next steps.
-* Use inline notifications if your intention is to redirect the user's focus on the message, and to take it away from the current interface.
+* Place inline notifications at the top of the content.
+* Inline notifications must not cover any content. 
+* Do not stack multiple inline notifications. Instead, show them one at a time, sequentially and in order of priority, without blocking any user action.
+* The icon within the notification must be one of the following standard icons: error/failure or warning.
+* Messages must be descriptive and guide users with explicit next steps.
+* Use inline notifications to redirect the user's focus from the current interface and onto the message.
+* Messages can include a helper link that points outside of the system and not to another part of the application.
 
 ![Inline Error with CTA](/images/tools-ui/inline-notifications/inline-error-with-cta.png)
 
-* * *
+### Multiple line messages
 
-### Dialogs
+It's recommended that inline notification messages fit on one line. However, if they fit on multiple lines, ensure the following:
 
-Dialogs are used to inform users about specific tasks, and may include relevant information or request user input. A dialog is highly disruptive in nature, and must be used sparingly so as not to distract the user. It is prompted by the user's action, or also when the system needs input from the user or to give them critical information regarding their workflow.
+* Use a bulleted list to present a list of issues. A list is helpful to draw the user's attention to important information.
+* Within the non-modal dialog, guide the user towards their next steps and on how to resolve the issue.
 
-#### Structure of a Dialog
+![Inline Toast - Multi-line](/images/tools-ui/inline-notifications/inline-toast-multiline.png)
+
+
+## Inline notifications in component cards
+
+Inline messages in component cards are displayed to indicate an error/failure or warning status. Inline messages inform users on how to recover or resolve the issue.
+
+![Inline Error in Component Cards](/images/tools-ui/inline-notifications/inline-notifications-in-component-cards-decision-table.png)
+
+#### Examples 
+
+![Inline Error in Component Cards](/images/tools-ui/inline-notifications/inline-notifications-in-component-cards.png)
+
+### Specifications
+
+* Inline messages must persist in the component cards.
+* Avoid stacking multiple inline messages horizontally or vertically. Instead, display the messages one after the other as the user resolves each issue.
+* Keep the messages clear and concise---a maximum of two lines.
+* The icon within the inline message must be a standard icon: error/failure or warning.
+* Inline messages can contain a call-to-action button only when necessary.
+* The inline message must appear above the component card's content.
+* The component card's header has a gray caution pattern background and displays the icon. This indicates the status of the component card even when it's collapsed.
+
+### UI dimensions
+
+| Property | Specification |
+|---|---|
+| Icon size | 24 x 24px |
+| Padding | 8px |
+| Fill | Warning color opacity: 10% |
+| Border | Warning color code |
+| Font | Open Sans |
+| Weight | 400 or 600 |
+| Size | 12px |
+| Line weight | 16px |
+
+![Inline Messages in Component Cards - Markup](/images/tools-ui/inline-notifications/inline-messages-in-component-cards-markup.png)
+
+
+## Dialogs
+
+*Dialogs* inform users about specific tasks and can contain other relevant information or request user input. A dialog is highly disruptive to the user and must be used sparingly. Dialogs may be prompted by the user's action, or by the system to request input from the user or to give users critical information about their workflow.
+
+### Structure of a dialog
+
+1. **Header**: Contains a title and close button.
+2. **Close Button**: Closes the dialog without resolving the issue.
+3. **Icon**: One of the standard icons and has a size of 48 x 48px.
+4. **Body**: Contains information reagrding the user's task and how to resolve it. 
+5. **Actions**: The primary and/or secondary call-to-action buttons needed to resolve or exit the dialog task.
 
 ![Dialog Structure](/images/tools-ui/dialogs/dialog-structure.png)
 
-1. **Header:** Includes a title, and the close button.
-2. **Close Button:** This will close the dialog, without resolving the issue.
-3. **Icon:** Must be one of the standard icons. Its size must be 48x48px.
-4. **Body:** Contains the content and information to help user understand what is needed to complete the dialog's task.
-5. **Actions:** The primary and/or secondary call-to-action buttons needed to resolve or exit the dialog task.
+### Types of dialogs
 
-#### General specifications for Dialogs
+| Type | Usage |
+|--- |--- |
+| Modal | Displays critical information or requests necessary input from the user. |
+| Non-modal | Displays relevant information or requests non-critical input from the user that might not be needed to complete the user workflow. |
+
+![Modal and non-modal dialogs](/images/tools-ui/dialogs/modal-dialog-and-non-modal-dialog.png)
+
+### Specifications
 
 * Dialogs should not include the O3DE Logo Mark in the header.
-* There should only be one icon used within the window, and it should be one of the standard icons.
-* When using both primary and secondary call-to-actions, the primary must be on the left of the secondary button.
-* The buttons must be aligned to the bottom right corner of the window.
-* The header title should be brief and must describe the dialog's task or purpose.
-* The Title and Body must contain the relevant information to help users to complete the dialog's task.
+* The title in the dialog's header must briefly describe the dialog's task or purpose.
+* The title and body must contain relevant information to help users complete the dialog's task. Refer to the [Writing Messages](todo) for more details. 
+* A dialog must contain only one icon, which must be from the standard icons. 
+* The dialog's action(s) must have a primary button and may include a secondary button. 
+* Keep the button text actionable, and that the primary action is highlighted by this button.
 
-#### Types of Dialogs
+### Example dialogs
 
-|Type |Usage |
-|--- |--- |
-|Modal |Used to display critical information, or to request necessary user input. |
-|Non-modal |Used to display relevant information, or some user input that might not be needed to complete the user workflow. |
-
-All of our dialog boxes follow, mostly, the same pattern. Please adhere to the spacing guidelines with our modal window. We want to make sure the same spacing, icon size, and text sizes are standardized across all of our modal windows.
-Please note that note that having a secondary section (under the line break) is not standard and is a more advanced use case.
-
-#### Example dialogs
-
-##### Dialog without Icon
+#### Dialog without Icon
 
 ![O3DE Dialog without icon](/images/tools-ui/dialogs/dialog-without-icon.png)
 
 It is not essential for a dialog to include the Icon, however we recommend using this dialog variation as a non-modal.
 
-##### Dialog with one Action
+#### Dialog with one Action
 
 ![O3DE Dialogs with icons, primary](/images/tools-ui/dialogs/dialog-with-one-action-primary.png)
 
@@ -274,13 +272,13 @@ Use the following variant if the user is either accepting/agreeing to something 
 ![O3DE Dialog with icons, secondary](/images/tools-ui/dialogs/dialog-with-one-action-secondary.png)
 
 
-##### Dialog with two Actions
+#### Dialog with two Actions
 
 When using a dialog with two actions, the secondary button is on the right and the primary button is placed on the left.
 
 ![O3DE Dialog with two actions](/images/tools-ui/dialogs/dialog-with-two-actions.png)
 
-##### Dialog with multiple Messages
+#### Dialog with multiple Messages
 
 In certain situations, multiple error messages can be consolidated into a single dialog. Consider using this when a set of actions are occurring, and the user doesn't have to evaluate them on at a time. This will help to avoid bombarding the user with modal windows.
 
@@ -294,43 +292,18 @@ When possible, link to log file(s) when adding additional details. This will all
 
 ![O3DE Dialog with a log of errors, closed state](/images/tools-ui/dialogs/dialog-with-multiple-messages-open.png)
 
-##### Dialog with a long Message string
+#### Dialog with a long Message string
 
 In certain situations, the error shown in the dialog might need to be detailed. Consider using a dialog with a scrollbar, as shown in the image below.
 
 ![O3DE Dialog with a long message](/images/tools-ui/dialogs/dialog-with-long-message.png)
 
-#### General specifications for Dialogs
+### Best practices for Dialogs
 
-* Dialogs should not include the O3DE Logo Mark in the Header.
-* The Header title should be brief and must describe the dialog's task or purpose.
-* The Title and Body must contain the relevant information to help users to complete the dialog's task.
-* A standard icon must be used in a modal dialog, and is optional for a non-modal dialog.
-* The Action(s) must include at least one primary and/or secondary button.
-* Keep the button text actionable, and that the primary action is highlighted by this button.
-
-#### Best practices for Dialogs
-
-* Keep the wording on the buttons actionable: "Proceed", "Cancel", "OK", "Restart").
-  * Do not add a small sentence to the button text. Keep it short and simple.
-* In circumstances where you have an actionable button (Blue), it's recommended to have a secondary button to let the user back out of this action button (Cancel - Gray).
-* If the modal has a single button consider the following. Is the user accepting or agreeing to something? Do we want them to do something or do something for them?  If the answer is yes then it should be a blue Primary button. If the modal is purely informational, it's okay to us a gray secondary button.
-* In some circumstances, multiple message can be consolidated into a single modal window. Please consider this option when a set of actions is occurring and the user doesn't have to evaluate them one at a time. This will help avoid bombarding the users with modal windows.
-* Ideally having a simple sentence to consolidate the purpose of this modal, so users can understand what's going on. Then providing them access to a collapsible table so they dig into the details if desired. This might not always be available, and it would be more work to wire up, but when we can present info like that, it helps a ton with debugging.
-* Please consider linking to log file(s) when adding additional details. This will help user understand how to resolve these issue(s). Asking for users to pull these file out manually can be difficult and having them directly link to files will help expedite resolving their bugs.  
-* In some situations when the error being printed out is a large amount of text. Consider using an internal scrollbar. Some of our user use small monitors like laptop. A very large modal will appear off screen for laptops user and the action buttons will be hard to access.
-
-**When to use:**
-
-**DO**: use modals when the actions of a user must be stopped before proceeding to the next steps.
-
-**DO**: use modals as a part of a positive reinforcement of a workflow.
-
-**DO NOT**: use when the intention of the message is passive.
-
-**DO NOT**: use a modal as a apart of a repetitive normal workflow. This gets annoying to users.
-
-* * *
+* Use dialogs sparingly. Dialogs are disruptive and can annoy the user if used incorrectly or repeatedly.
+* Use modal dialogs to stop the user's workflow until they resolve the dialog. 
+* Use modal dialogs as a part of a positive reinforcement of a workflow.
+* Only use dialogs if the purpose of message is actionable. 
 
 ### Log Tables
 
