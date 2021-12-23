@@ -7,15 +7,15 @@ toc: true
 
 The **Terrain World Debugger** component allows a representation of the World Bounds to be shown. This visualization can be toggled on or off.
 
-## Provider ##
+## Provider
 
 [Terrain Gem](/docs/user-guide/gems/reference/environment/terrain)
 
-## Dependencies ##
+## Dependencies
 
 [Terrain World](/docs/user-guide/components/reference/terrain/world)
 
-## Properties ##
+## Properties
 
 ![Terrain World Debugger component interface.](/images/user-guide/components/reference/terrain/terrain-world-debugger-A.png)
 
