@@ -52,14 +52,14 @@ Use the following request functions with the `TerrainMacroMaterialRequestBus` EB
 
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
-| `GetTerrainMacroMaterialData` | Returns the `MacroMaterialData` structure assigned to the Terrain Macro Material component. | None | [MacroMaterialData](#macromaterialdata) | No |
+| `GetTerrainMacroMaterialData` | Returns the `MacroMaterialData` structure assigned to the Terrain Macro Material component. | None | [MacroMaterialData](#macromaterialdata) | Yes |
 
 
 ## TerrainMacroMaterialNotificationBus
 
 | Notification Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
-| `OnTerrainMacroMaterialCreated` | Notifies listeners when a new macro material has been created. | None | EntityId; [MacroMaterialData](#macromaterialdata) | No |
-| `OnTerrainMacroMaterialChanged` | Notifies listeners when a macro material has been changed. | None | EntityId; [MacroMaterialData](#macromaterialdata) | No |
-| `OnTerrainMacroMaterialDestroyed` | Notifies listeners when a Macro Material is removed. | None | EntityId | No |
-| `OnTerrainMacroMaterialRegionChanged` | Notifies listeners when the bounding area of the macro material changes. | None | EntityId; Old Region: Aabb; New Region: Aabb | No |
+| `OnTerrainMacroMaterialCreated` | Notifies listeners when a new macro material has been created. | None | EntityId; [MacroMaterialData](#macromaterialdata) | Yes |
+| `OnTerrainMacroMaterialChanged` | Notifies listeners when a macro material has been changed. | None | EntityId; [MacroMaterialData](#macromaterialdata) | Yes |
+| `OnTerrainMacroMaterialDestroyed` | Notifies listeners when a Macro Material is removed. | None | EntityId | Yes |
+| `OnTerrainMacroMaterialRegionChanged` | Notifies listeners when the bounding area of the macro material changes. | None | EntityId; Old Region: Aabb; New Region: Aabb | Yes |
