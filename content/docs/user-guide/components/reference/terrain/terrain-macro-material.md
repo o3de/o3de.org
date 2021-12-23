@@ -7,19 +7,21 @@ weight: 100
 
 The **Terrain Terrain Macro Material** component provides a method of defining a macro-level appearance of a region of terrain.
 
-## Usage ##
+## Usage
 
 You assign a color and a normal texture by dragging texture assets to the **Color Texture** or **Normal Texture** fields, or by clicking {{< icon "file-folder.svg" >}}. Once the textures are assigned, you can adjust the appearance by using the **Normal Flip X** and **Normal Flip Y** toggles, and adjust the strength of the normals by using the **Normal Factor** slider. You can configure the dimensions of the region by adjusting the [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape).
 
-## Provider ##
+## Provider
 
 [Terrain Gem](/docs/user-guide/gems/reference/environment/terrain)
 
-## Dependencies ##
+## Dependencies
 
 [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape)
 
-## Properties ##
+## Properties
+
+![Terrain Surface Materials List component properties](/images/user-guide/components/reference/terrain/terrain-macro-material-component.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
@@ -44,87 +46,20 @@ This structure is used when sending out information about the macro material set
 | **m_normalFlipY** | Whether or not the normal map should be flipped about the Y axis. | `bool` |
 | **m_normalFactor** | The strength of the normal map. | `float` |
 
-## TerrainMacroMaterialRequestBus  ##
+## TerrainMacroMaterialRequestBus 
 
-Use the following request functions with the `TerrainMacroMaterialRequestBus ` EBus interface to communicate with other components of your game.
+Use the following request functions with the `TerrainMacroMaterialRequestBus` EBus interface to communicate with Terrain Macro Material components of your game.
 
-### GetTerrainMacroMaterialData 
+| Request Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetTerrainMacroMaterialData` | Returns the `MacroMaterialData` structure assigned to the Terrain Macro Material component. | None | [MacroMaterialData](#macromaterialdata) | No |
 
-Retrieves the information assigned to the macro material.
 
-#### Parameters
+## TerrainMacroMaterialNotificationBus
 
-None
-
-#### Returns
-
-Type: [MacroMaterialData](#macromaterialdata)  
-The settings of this Macro Material.
-
-## TerrainMacroMaterialNotificationBus  ##
-
-The `TerrainMacroMaterialNotificationBus ` EBus interface provides the following notifications.
-
-### OnTerrainMacroMaterialCreated
-
-Called when a new macro material has been created.
-
-#### Parameters
-
-#### `MacroMaterialEntity`
-
-Type: `AZ::EntityId`  
-The id of the entity that owns the macro material.
-
-#### `MacroMaterial`
-
-Type: [MacroMaterialData](#macromaterialdata)   
-Information about the macro material
-
-### OnTerrainMacroMaterialChanged
-
-Called when a macro material has been changed.
-
-#### Parameters
-
-#### `MacroMaterialEntity`
-
-Type: `AZ::EntityId`  
-The id of the entity that owns the macro material.
-
-#### `MacroMaterial`
-
-Type: [MacroMaterialData](#macromaterialdata)  
-Information about the updated macro material.
-
-### OnTerrainMacroMaterialRegionChanged
-
-Called when the bounding area of the macro material changes.
-
-#### Parameters
-
-#### `MacroMaterialEntity`
-
-Type: `AZ::EntityId`  
-The id of the entity that owns the macro material.
-
-#### `oldRegion`
-
-Type: `AZ::Aabb`  
-The previous region bounding area.
-
-#### `newRegion`
-
-Type: `AZ::Aabb`  
-The new region bounding area.
-
-### OnTerrainMacroMaterialDestroyed
-
-Called when a Macro Material is destroyed.
-
-#### Parameters
-
-#### `MacroMaterialEntity`
-
-Type: `AZ::EntityId`  
-The id of the entity that owned the destroyed macro material.
+| Notification Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `OnTerrainMacroMaterialCreated` | Notifies listeners when a new macro material has been created. | None | EntityId; [MacroMaterialData](#macromaterialdata) | No |
+| `OnTerrainMacroMaterialChanged` | Notifies listeners when a macro material has been changed. | None | EntityId; [MacroMaterialData](#macromaterialdata) | No |
+| `OnTerrainMacroMaterialDestroyed` | Notifies listeners when a Macro Material is removed. | None | EntityId | No |
+| `OnTerrainMacroMaterialRegionChanged` | Notifies listeners when the bounding area of the macro material changes. | None | EntityId; Old Region: Aabb; New Region: Aabb | No |
