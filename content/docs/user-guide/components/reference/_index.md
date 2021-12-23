@@ -214,7 +214,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Terrain Surface Gradient List](./terrain/surface-gradient-list) | Defines mappings between a gradient and a surface type on a terrain layer. |
 | [Terrain Macro Material](./terrain/terrain-macro-material) | Provides a macro level method of defining the appearance of a region of terrain. |
 | [Terrain World](./terrain/world) | Allows the bounds of the Terrain World and the height query resolution to be set. |
-| [Terrain World Debugger](./terrain/world-debugger) | Provides a means to display a wireframe or bounds representaion of the Terrain World. |
+| [Terrain World Debugger](./terrain/world-debugger) | Provides a means to display a wireframe or bounds representation of the Terrain World. |
 | [Terrain World Renderer](./terrain/world-renderer) | Renders the terrain within the Terrain World bounds. |
 
 ### Test  
