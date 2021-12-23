@@ -54,7 +54,6 @@ Use the following request functions with the `TerrainMacroMaterialRequestBus` EB
 |-|-|-|-|-|
 | `GetTerrainMacroMaterialData` | Returns the `MacroMaterialData` structure assigned to the Terrain Macro Material component. | None | [MacroMaterialData](#macromaterialdata) | Yes |
 
-
 ## TerrainMacroMaterialNotificationBus
 
 | Notification Name | Description | Parameter | Return | Scriptable |
