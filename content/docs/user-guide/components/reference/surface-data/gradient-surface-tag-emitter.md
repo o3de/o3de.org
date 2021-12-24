@@ -4,6 +4,8 @@ title: Gradient Surface Tag Emitter Component
 description: Use the Gradient Surface Tag Emitter component to enable a gradient to emit surface tags in your Open 3D Engine (O3DE) level.
 ---
 
+Add the **Gradient Surface Tag Emitter** component to an entity to enable a gradient to emit surface tags.
+
 ## Provider
 
 [Surface Data Gem](/docs/user-guide/gems/reference/environment/surface-data)
