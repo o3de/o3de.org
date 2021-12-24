@@ -200,10 +200,10 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| Gradient Surface Tag Emitter | Enables a gradient to emit surface tags. |
-| Mesh Surface Tag Emitter | Enables a static mesh to emit surface tags. |
-| PhysX Collider Surface Tag Emitter | Enables a physics collider to emit surface tags. |
-| Shape Surface Tag Emitter | Enables a shape to emit surface tags. |
+| [Gradient Surface Tag Emitter](surface-data/gradient-surface-tag-emitter) | Enables a gradient to emit surface tags. |
+| [Mesh Surface Tag Emitter](surface-data/mesh-surface-tag-emitter) | Enables a static mesh to emit surface tags. |
+| [PhysX Collider Surface Tag Emitter](surface-data/physx-collider-surface-tag-emitter) | Enables a physics collider to emit surface tags. |
+| [Shape Surface Tag Emitter](surface-data/shape-surface-tag-emitter) | Enables a shape to emit surface tags. |
 
 ### Terrain  
 
