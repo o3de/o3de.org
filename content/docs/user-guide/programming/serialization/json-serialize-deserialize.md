@@ -1,7 +1,7 @@
 ---
-description: ' Serialize objects to JSON from the ALY; engine and load them back through
-  deserialization. '
-title: Serialize and deserialize JSON objects
+title: Serialize and Deserialize JSON Objects
+description: Serialize objects to JSON from the O3DE engine and load them back through deserialization.
+weight: 300
 ---
 
  Once a class has been [registered with a serialization context](/docs/user-guide/programming/serialization/register-objects/) objects of that class can be serialized and deserialized. Objects are serialized to JSON with the `AZ::JsonSerialization::Store()` function, and deserialized from JSON with `AZ::JsonSerialization::Load()`.

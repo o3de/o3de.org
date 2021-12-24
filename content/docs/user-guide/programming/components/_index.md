@@ -11,7 +11,7 @@ This guide provides engine and game programmers with examples and best practices
 
 + [Overview](./overview)
 + [Creating a Component](./create-component)
-+ [Reflecting a Component for Serialization and Editing](./reflection)
++ [Reflection Contexts](./reflection)
 + [Defining and Using Component Services](./services)
 + [Editor Components](./entity-system-pg-editor-components)
 + [Creating System Components](./system-wide)

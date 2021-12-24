@@ -1,6 +1,7 @@
 ---
-description: ' How JSON types convert to internal O3DE data types. '
-title: Data types in serialized JSON
+title: JSON Serialization of O3DE Data Types
+description: How JSON types convert to internal O3DE data types.
+weight: 400
 ---
 
 In addition to primitive C++ types that map directly to JSON types, O3DE supports serializing many `AZStd` library objects. JSON output and deserialized objects are entirely deterministic based on the appropriate C++ type. For some more information on how members are registered and how their types are determined through the reflection system, see [JSON serialization](json-serialize-deserialize/#serialization).

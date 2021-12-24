@@ -1,7 +1,6 @@
 ---
-description: ' Use the Open 3D Engine component serialization versioning system to validate
-  and update the serialized data of your components. '
 title: Versioning your Component Serialization
+description: Use the Open 3D Engine component serialization versioning system to validate and update the serialized data of your components.
 ---
 
 As requirements, code, and data representation change, you may need to modify your implementation of data reflection. However, changes to serialized data can result in incompatibilities. To manage compatibility, you can assign a version number increment to your serialized data structures. With this approach, you can perform validation during serialization to ensure that the data being read matches the format that the reflection system specifies. We recommend that you increase the version number of serialized data anytime there is a change to the reflected fields.
