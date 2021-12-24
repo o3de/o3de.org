@@ -4,6 +4,8 @@ title: Shape Surface Tag Emitter Component
 description: Use the Shape Surface Tag Emitter component to enable a shape to emit surface tags in your Open 3D Engine (O3DE) level.
 ---
 
+Add the **Shape Surface Tag Emitter** component to an entity to enable a shape to emit surface tags.
+
 ## Provider
 
 [Surface Data Gem](/docs/user-guide/gems/reference/environment/surface-data)
