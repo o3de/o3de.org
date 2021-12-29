@@ -305,132 +305,174 @@ In certain situations, the error shown in the dialog might need to be detailed. 
 * Use modal dialogs as a part of a positive reinforcement of a workflow.
 * Only use dialogs if the purpose of message is actionable. 
 
-### Log Tables
+## Log tables
 
-Log Tables are used to convey a long stream of notification updates that have occurred in succession. You can see this utilized within the Asset Processor.
-
-These logs are accompanied by a status indicator, which informs the user of items that require the user's attention. These are frequently used to signal errors or failures, warnings, or notification.
+Log tables are used to convey a long stream of notification updates that occurred in succession. Each item in the log table is accompanied by a status indicator, which informs the user of items that require the user's attention. These are frequently used to signal errors/failures, warnings, or notification. As an example, the following image shows a log table with status indicators next to each item in the **Asset Processor**.
 
 ![Event Log](/images/tools-ui/event-log/event-log.png)
 
-A log table typically has two sections. First, a table which displays an error and a secondary box that allows users to click specific errors to get their full details. The information in the table gives the user enough context to understand errors. Second, a table which displays how users can recover from errors and fix them, or links which reference help and/or documentation.
+A log table may contain two sections. In the first section, a table that displays an error will show a secondary box that allows users to expand on specific errors to get their full details. The importance of this section is it gives users enough information to understand the errors. The second section contains a table that displays how users can resolve errors or links to help documentation.
 
-### Console Logs
+## Console log
 
-Console Messages are displayed in color, and are represented with a prefix to help users differentiate between the messages.
+A console log is a log table that consists of console messages. Console messages are color-coded and prefixed with their status to help users differentiate between the messages.
+
+The following table shows the prefix and color for each use case:
 
 ![Console Log decision table](/images/tools-ui/console-log/console-log-decision-table.png)
 
+**Example**
+
 ![Console Log message example](/images/tools-ui/console-log/console-log-messages.png)
 
-#### General specification for Console Logs
+#### Specification
 
-In the Editor's Global Preferences, users can customize their preferred theme for the console background.
+- Console messages must follow the format:
+  
+  ```
+  [STATUS] (System Affected) - [# of Problems] - Problem. Ways to resolve the problem.
+  ```
+
+- Use the following colors for the text, depending on the console message's status and console log's theme:
+  - Dark theme: 
+    - **Error/Failure**: `#FA2727`
+    - **Warning**: `#FFAA22`
+  - Light theme: 
+    - **Error/Failure**: `#C80000`
+    - **Warning**: `#807000`
+
+  ![Console Log - Error and Warning examples](/images/tools-ui/console-log/console-log-state-colors.png)
+
+#### Best practice
+
+* Console messages should use plain text. Do not use rich text, such as icons and formatted text.
+* Console messages are considered passive and may not be seen by the users.
+* Multiple messages of the same status should appear in succession. For example, list all warnings, then list all errors/failures. 
+
+
+### Custom theme
+
+You can customize the theme of the console log to suit your preference. There are two themes, **Light** and the default **Dark**.
+- Light theme background color: `#FFFFFF`
+- Dark theme background color: `#111111`
 
 ![Console Log - Global Preferences](/images/tools-ui/console-log/global-preferences.png)
 
-There are two themes, "Light" and the default "Dark". The light theme uses a White (#FFF) background, and the dark theme uses a Black (#111) background.
+To customize the background: 
 
-Console messages should follow the format:
+1. In the Editor, open the **Edit** dropdown in the tools menu. 
 
-* \[STATUS\] (System Affected) - [# of Problems] - Problem. Ways to resolve the problem.
+2. Select **Editor Settings** > **Global Preferences...** to open the **Preferences** dialog.
 
-The message colors have been specified for the Error / Failure and Warning states.
+3. For **Console Background** under the **General Settings** group, select a theme option. 
 
-The message colors for the two states, Error/Failure and Warning have been defined below.
-
-![Console Log - Error and Warning examples](/images/tools-ui/console-log/console-log-state-colors.png)
-
-#### Best practices for Console Logs
-
-* Console messages should not include rich information, such as icons and formatted text.
-* These messages are considered passive, and might not be seen by the users.
-* Multiple messages of the same type should appear in succession.
-* Writing console message should  follow the following format
-  * \[STATUS\]\ (System Affected) - \[number of problems\] -  Problem. Ways to resolve problem
+4. Save your settings by clicking **OK**. 
 
 * * *
 
-### Text Input Validation
+## Text input validation
 
-Text input validation is the process where a system checks if the information provided by a user is correct. Effective messages help the user to understand the issue, and how to resolve it. Currently, we don't support success and information messages for input fields.
+Text input validation is the process in which a system checks if the user provides the correct information. For invalid text, effective notification messages help the user understand the issue and how to resolve it. 
 
-The message must appear only after the user interacts with the field. If they input incorrect data, inform the user on what has happened by displaying the appropriate icon, and then provide additional information with the use of a tool-tip on hover.
+The message must appear only after the user interacts with the field. If they input incorrect data, inform the user on what has happened by displaying the appropriate icon by the input field. In addition, provide further information in a tooltip, which appears when the user hovers over the input field. 
 
-#### Special usage of the Error/Failure icon
+**Example**
 
 ![Input Validation Error or Failure](/images/tools-ui/text-input-validation/text-input-validation.png)
 
-As an exception, we utilize this icon to represent an error or failure within a text input validation message. The reason for this is to avoid confusion, as in certain use cases the original icon is situated next to a close icon. It is not required for an error input field to include the icon as some input fields are very small and iconography will take up space. However if your input field allows for the icon please consider using it.
+### Error/failure icon
 
-* * *
+![Error/failure icon for text input validation](/images/tools-ui/text-input-validation/input-validation-error-or-failure.png)
+
+Use this icon to represent an error or failure within a text input validation message. You may exclude this icon for smaller input fields that don't have space icons. The error/failure icon for text input validation differs from the standard error/failure icon to avoid confusion when both icons are used.
+
 
 ### Tooltips
 
-A tooltip is a text label which appears when users hover over an element, in this case–the error or warning icon.
+For text input validation, tooltips appear when users hover over the icon or input field. 
+In this case, a tooltip contains information to help users resolve invalid input fields. 
+
+#### Specifications
 
 * Use the tooltip with the error or warning icon, not with any other element.
-* The tooltip should not display rich information, such as images and formatted text.
-* Keep the tooltip displayed as long as the user continues to hover over the element. The tooltip will also appear anywhere over a red input field.
+* The tooltip message must contain plain text. Don't include rich information, such as images and formatted text.
+* Display the tooltip as long as the user hovers over the element.
 
 ![Text Input Validation Tooltips](/images/tools-ui/text-input-validation/text-input-validation-tooltips.png)
 
-* * *
+## Guidelines for writing effective messages
 
-### Error Message Strings Best Practices
+In this section, you will learn how to write great error messages for O3DE. 
 
-In an ideal world, there should be no errors. The customer believes in this utopia, especially if they're using a common workflow. They'd prefer not to acknowledge the idea that the software their success depends on has issues, or that it might not support the way they want to do their work. If they did, they might never use your product!
+Why do we care about error messages? Shouldn't the user figure out why their code failed or their operation didn't work? Not at all. The customers expect a seamless experience without any errors. However, errors occur and error messages can ease and help customers overcome them.
 
-Great error messages can salve the sting of an unexpected error. Poor ones can lead to negative feedback, or worse: the customer abandons your product and your hard work. Great error messages are little works of respect for the user, telling them "yeah, something went wrong. But you know what? We know some things about what happened, and we'd like to try and help you a bit."
+Great error messages can salve the sting of an unexpected error. Poor ones can lead to negative feedback or cause the customer to abandon your product completely. An effective and helpful error message acknowledges the inconvinience on the user and reassures them with guidance to work around it.
 
-Let's look at a pair of examples for the same issue:
+Handling errors well and writing good error messages requires more effort, but produces the following worthwhile advantages: 
+
+* Reduces user frustration and improves productivity throughout the product's experience.
+* Leads users towards better behaviors in code and UI development and use.
+* More informative and actionable bug reports.
+* Better code and UI implementation overall.
+
+**Example**
+
+Consider the following pair of examples for the same issue.
+
+Bad example:
 
 ```error
-ERROR: Cannot complete operation. Maximum range value exceeded.``
+ERROR: Cannot complete operation. Maximum range value exceeded.
 ```
+
+Good example:
 
 ```error
-This operation requires positive integer values between 0 and 127. Please choose a value in this range before re-building the scene.
+This operation requires positive integer values between 0 and 127. Please choose a value in this range before rebuilding the scene.
 ```
 
-The first leads to annoying trial-and-error behavior. The second not only makes it immediately clear to the user what they did wrong, it provides useful preventative guidance about application state and encourages a useful but not-so-obvious practice: making sure all of the values you supplied to the widget are correct before building the scene. You've not only helped the user; you may have saved them future frustration! Additionally, bespoke and well-designed error messages implicitly communicate an emphasis on quality and user consideration.
+The first example is discouraged because it forces the user to figure out the problem through trial and error without providing any information that leads them towards the correct solution. The second example makes it immediately clear to the user what they did wrong and provides guidance on how to prevent the error next time. This error message helps the user and may save them from future frustration. Additionally, bespoke and well-designed error messages implicitly communicates consideration for the user. 
 
-Error messages, when done poorly, erode trust and increase frustration. Done well, they enable the user to continue work and provide implicit guidance around improved behaviors and code. Good error handling and messages can be a lot of work, but they pay solid dividends:
+Poor error messages erode trust and increase frustration. Great error messages enable the user to continue work and provide implicit guidance around improved practices. 
 
-* Reduced user friction and greater productivity across the product experience
-* Training better behaviors in code and UI development and use
-* Higher quality and more actionable bug reports
-* Better code and UI implementation overall!
 
-Let's look at how to write great error messages for O3DE!
+### Writing principles
 
-#### Error messaging principles
+The most common mistake when presenting errors to a user is displaying low-level errors and exceptions thrown by code directly to the user without editing them to make it user friendly. The most effective error messages are ones that any user and developer can understand. O3DE is tool for builders, so it's important that error messages can reach a wide audience.
 
-The most common mistake when presenting errors to a user is wrapping low-level errors and exceptions thrown directly by code and displaying them directly and unedited to the user. Often, this is a function of lazy coding, because very few developers enjoy writing code to filter through the details of a low-level error and massaging it into text that any user or developer can understand. It's enough to debug and unit test your own code, and you know what a `NaN` error means, right?
+The writing principles on this page will help you think strategically about developing good error messages and practice good development habits for code and UI.
 
-That might be true for some forms of software, but O3DE is a tool for builders. Bubbling up an error like `Handle not recognized` to the end user will not make you any friends. So, we need to think about the development of good error messages strategically, and build good code and UI dev practices and habits early.
+To start, we'll look at two categories of error message: error messages for code operations and error messages for application users (UI).
 
-To start, we'll look at two categories of error message: error messages for code operations, and error messages for application users (UI).
+#### Error messages for code operations
 
-#### Error messages in code
+Error messages first appear as code-level error descriptions. A poor error message simply passes this error message to the end-user in a dialog widget or console interface. Instead, you can improve the user's overall experience with your code by authoring your error messages that's suitable for all audiences, not just technical experts.
 
-Error messages often begin their life as code-level error descriptions. Many times, these get "passed through" to the end user in a dialog widget or console interface. Authoring your error messages well for all audiences, not just technical experts, can simplify your code with regards to the overall customer experience.
+The following points help you authore good error messages for code operations: 
 
-* Short messages are better than long ones, but don't skimp on any essential details. Make every word count! Use basic, proper English grammar. You want to be clear, not clever. More complex phrasing or the use of idioms can make it difficult for non-native English readers, and make localization more difficult.
-  * Consistently favor passive voice and past-tense. "An error occurred..." sounds less judgmental than "We found an error...". Additionally, the error occurred; it is not in the process of occurring.
-* Never, ever pass a low-level error's default description through to the end user. Gather some information programmatically, especially if the default error message would be inscrutable or useless by itself. Every little detail helps.
-* Format your error messages for readability and clarity. A little white space or a pair of quotation marks can go a long way in reducing user irritation.
-* Don't dump code. The reader can probably see the code in their IDE. It just takes up space and makes the message harder to scan.
-* Author your error message for the least technical context (within reason, of course). In most cases, this means a code error that gets raised up to the user interface. Choose the right words to represent that context and avoid "deep code" jargon whenever possible. For example, if an O3DE user sees a message like `STACKOVERFLOWEXCEPTION: SYSTEM STATE UNKNOWN," they will be reasonably alarmed, even if the error is raised from some simple secondary menu recursion code failing. A better choice might be "ERROR: A stack overflow error occurred when updating the menu element tree. Please report this error and restart the application." Consider adding a comment that this message should be rewritten for context if it can appear in the UI.
-  * Additionally, avoid "compiler-speak". Use the most viable, least specific terms that describe the error. Focus on the way the user perceives the error, not the compiler or the run-time. For example, saying "ERROR: The operation cannot complete due to unsafe type usage when unmarshalling thread context" is more confusing and concerning than "_ERROR: The operation cannot complete as the context cannot be determined. Check to see if any types used to recreate this work are unsafe._" This will make it easier for UI writers to craft an appropriate UI-level message, as well.
-* Signal next steps -- either taken by the system or for the user to take -- wherever viable. (See the above example.)
-* Hints to code definitions can be really helpful in some contexts: "Expected a type `HANDLE_T *` for the first parameter in `ProcessBlobSync()`. `HANDLE_T` is defined as a shared macro in common.h." Remember, though, that this will be inscrutable (and possibly terrifying!) if surfaced through a user interface.
-* If the error originates from a third-party library or other binary you don't control, be savvy. Avoid blaming the code, even passively. Just be clear: "_The operation could not complete due to a misconfiguration between O3DE and the CoolGraphicsV3 Gem. `<link>`Please report this issue on GitHub`</link>`._".
-* Write for the user interface or the IDE, not the command-line!
+* Be clear and concise. Short messages are better than long ones, but don't leave out any essential details. Make every word count! Use basic, proper English grammar. Avoid  complex phrasing or idioms.
 
-In simple terms, use empathy. If you were sitting at an IDE building or running this code for the first time, would YOU find this error message clear and helpful, or a bit opaque? Rewrite it until it meets your own "new developer experience" standards. This isn't trivial work, as a consistently poor experience with error messages can erode a user's trust in your code over time.
+  * Consistently use a passive voice and past-tense. For an example of passive voice, use "An error occurred...", instead of "We found an error...". This mitigates judgement in the tone of voice. Additionally, use past-tense, such as "occurred", because the error has already happened and is not in the process of occurring.
+  
+* Don't pass the default description of a low-level error to the end user. An effective error message may contain technical information transcribed for end-users of varying levels of knowledge. This is especially important if the default error message is inscrutable or useless by itself. Every little detail helps.
 
-And remember: it might not be an experienced developer who sees your error message!
+* Format your error messages for readability and clarity. For example, white space or a pair of quotation marks can clarify text and reduce user irritation.
+
+* Don't dump code into an error message. Code takes up space in the error message and makes the message harder to scan. Rather, the user can see the code in their integrated development environment (IDE).
+  
+* Write error messages with the least technical context and terminology possible. For example, errors that raise up to the user interface should concern the user's interaction and not problems at the code-level. Choose words that best fit that context and avoid deeper code-level jargon whenever possible. 
+    
+    For example, suppose a developer encounters an error with the user interface, such as a secondary menu failure. An unhelpful message may be `STACKOVERFLOWEXCEPTION: SYSTEM STATE UNKNOWN". This message is highly alarming to the user and does not help them understand the problem. A better message may be "ERROR: A stack overflow error occurred when updating the menu element tree. Please report this error and restart the application." Users may need additional context, so consider adding a comment that this message should be rewritten depending on the context if it can appear in the UI.
+
+  * Avoid "compiler-speak". Use the most viable and least specific terms that describe the error. Focus on the way the user perceives the error, not the compiler or the run-time. For example, a message with compiler jargon may be "ERROR: The operation cannot complete due to unsafe type usage when unmarshalling thread context". This is confusing and concerning to the user. A better message may be "ERROR: The operation cannot complete as the context cannot be determined. Check to see if any types used to recreate this work are unsafe." Also, this makes it easier for UI writers to craft an appropriate UI-level message.
+  
+* Signal next steps that the system takes or for the user to take wherever viable.
+
+* Provide hints to code definitions if the context of the message is appropriate. For example, "Expected a type HANDLE_T * for the first parameter in ProcessBlobSync(). HANDLE_T is defined as a shared macro in common.h." This message is appropriate to developers, but may be inscrutable on the UI-level.
+
+* Avoid judgement in the tone of the message, especially if the error originates from a third-party library or binary. Instead of blaming the code, state the problem clearly and objectively. For example, "The operation could not complete due to a misconfiguration between O3DE and the CoolGraphicsV3 Gem. Please report this issue on GitHub".
+  
+* Use an empathetic tone as though the error message appears in the user interface or the IDE, and not the command-line. To help you establish this tone, imagine that you are enountering this error for the first time as a new developer. Ask yourself whether or not you would find this error message clear and helpful, or opaque. Remember, it may not be an experienced developer who sees your error message.
 
 #### Error messages in UI
 
