@@ -476,31 +476,58 @@ The following points help you authore good error messages for code operations:
 
 #### Error messages in UI
 
-Writing useful, actionable error messages for end users working in a user interface is an art form. Too often, error messages are passed through from code and not prepared to be read by users who are NOT experienced developers, or even developers at all. Here are some rules to consider when improving error messages for UI users:
+Writing informative and actionable error messages for end users who are working in a UI is an art form. Too often, developers send error messages from the code directly to the user interface without writing a simplified and helpful message that all users can comprehend. This is important because not all users are experienced developers or developers at all.
+
+The following rules will help you write better messages in the UI:
 
 * Avoid jargon and technical terms unless the context is immediately apparent or if the terminology directly applies to the user's code or actions. Don't introduce new technical ideas that aren't covered in the immediate context. If it is a low-level error and some code or algorithm jargon is unavoidable, provide a clause or a sentence that clarifies it in more accessible terms.
-* Describe the error in terms of the action the user took. However, do not blame the user. This is a situation where you can use passive voice. For example:
-  * BAD: `You entered an incorrect value for Gradient Range.` (active voice)
-  * GOOD: `The Gradient Range input field requires a value between 0 and 63.` (passive voice)
-* Respect the user's cognitive focus and don't overwrite the error message or provide too much detail. As a simple rule of thumb, aim to keep error messages less than 200 characters if possible. Shorter is always better. However, some errors are thorny and may require detailed explication. Try to limit those; or, if the message reflects a composite or aggregated error, format it clearly and use your space to clarify the issues that occurred and any order or causality.
-* If the error is a common one, provide a link to a troubleshooting doc, if one exists. Even if they don't click the URL, they will be reassured that the problem is common enough to warrant documentation.
-* If the error requires a lot of detail to understand and resolve, request documentation for it.
+* Describe the error in terms of the action that the user took. Avoid a tone that blames the user. You can achieve this by using a passive voice, rather than an active voice. For example:
+  * BAD (active voice): "You entered an incorrect value for Gradient Range."
+  * GOOD (passive voice): "The Gradient Range input field requires a value between 0 and 63."
+* To respect the user's cognitive focus, don't overwrite the error message or provide too much detail. Aim to shorten error messages to less than 200 characters, if possible. Shorter is often better, but some errors may require detailed explanation --- try to limit the number of long error messages. 
+* If the message reflects a composite or aggregated error, format it clearly and clarify the issues that occurred and its causality.
+* If the error is common, provide a clickable link to a troubleshooting document, if one exists. Providing a link reassures the user that the problem is common and they can find help from a documentation.
+* If the error requires a lot of detail to understand and resolve, consider requesting a troubleshooting documentation for it. Don't try to fit all the information in the UI message.
 * Separate messaging from any essential technical details (such as a file name, path, or other programmatic data).
 
-### Error Message Guidelines
+
+### Error message guidelines
+
+Error messages commonly occur in low-level code, in APIs, and in the UI. Writing error messages at each levels can vary as they appear at different levels of technical context and for different user roles.
 
 Overall, observe these guidelines when writing error messages at any level:
 
-* Use this pattern: description of error; technical details (optional); next steps or links to further assistance (optional). Favor passive voice.
-* Be specific.
-* Don't use ALL CAPS. Please. Use proper English syntax.
-* Try to keep it under or around 200 characters in most cases. Use good judgment, and always optimize your words.
-* Use simple grammar; target an 8th grade reading level.
-* Avoid technical jargon in end user UI messages. Be careful with jargon in code-level error messages.
-* Focus on the end user's immediate needs, not your own.
-* Spellcheck your work!
+* Include the following elements in the error message: 
+  * Description of error
+  * Technical details (optional)
+  * Next steps or links to further assistance (optional)
+  
+* Use passive voice.
 
-Here's an example that employs these guidelines, in the context of a user failing to provide correct credentials to a service:
+* Be specific.
+
+* Don't use all uppercased text. 
+
+* Use proper U.S. English syntax.
+
+* Try to keep error message at a maximum of 200 characters. Short messages are better, but use your judgement when longer error messages are needed. Optimize your character space by simplifying sentences where possible.
+
+* Use simple grammar. Target a U.S. 8th grade reading level.
+
+* Avoid technical jargon in end user UI messages. Be considerate of the developer's understanding when using jargon in code-level error messages. Consider including a clause of sentence to explain jargon if helpful. 
+
+* Focus on the end user's immediate needs, not your own.
+
+* Reread your work to check for spelling or grammatical errors.
+
+
+#### Example
+
+The following examples demonstrate how to apply these guidelines in an error message. 
+
+**Example 1**
+
+Consider the context in which a user fails to provide correct credentials to a service.
 
 BAD:
 
@@ -514,15 +541,17 @@ REWRITTEN:
 Oops! The password you provided didn't match our records. Can you try again?
 ```
 
-Here's another example, this time for an error that flows from code to the end user:
+**Example 2**
 
-BAD (when exposed to devs or an end user):
+Consider an error that flows from low-level code to developers or other end users at the API level and UI level
+
+BAD (low-level code):
 
 ```error
 An error occurred at line 258, col 8 in arglebargle.cpp. Pointer returned null.
 ```
 
-REWRITTEN AT THE CODE-LEVEL:
+REWRITTEN (API level):
 
 ```error
 An error occurred when the operation received a null pointer. A null pointer is not allowed for the target data when calling RenderToTarget(handle, target, options).
@@ -533,20 +562,30 @@ Details:
 - Column: 8
 ```
 
-REWRITTEN FOR AN INTERFACE END USER:
+REWRITTEN (UI level):
 
 ```error
-Oh no! The target for rendering your scene was not defined. This is a serious error in our code. Please report it at <link>GITHUB-LINK-HERE</link> and provide any relevant details.
+Oh no! The target for rendering your scene was not defined. This is a serious error in our code. Please report it at <link to GitHub issues> and provide any relevant details.
 ```
 
-Notice how more details were provided for a specific audience, and formatted for clarity? The difference between the originating source error description and what the user finally sees is pretty striking. Always think about who might see your error message, and when.
+The examples above demonstrate how you can provide clear, informative, and actionable details, and adapt it for a specific audience. Always think about who might see your error message and when it might occur.
+
+
+### Best practices
+
+To summarize the key points when writing error messages: 
+
+* Above all else, aim for clarity. Ask yourself: "_If I got this message while doing my job and I was new to this product or code, what would help me move forward or avoid this error in the future?_" Never make the user guess. If you can get further details from the run-time or the existing code, do so, even if it seems tedious. Your extra effort will save your users countless hours in the future.
+
+* If you are working on developer-focused code (as opposed to UI code), provide detailed code comments around your error handling and messages. This will help UI error message writers better understand the context and create better end-user messages.
+
+* Use a natural, friendly voice. Write error messages with empathy, as though you were advising a fellow developer or a new user. It's okay to lead with "Sorry" or "Oops!" if you feel that the error might be in a really disruptive context. Consider localization before you employ sympathetic idioms. Don't assume the user's technical knowledge. Even terminology that seems standard for developers can feel unnatural and frustrating, especially to developers or users who are learning the product. Be aware of including "programmer" text, which makes the error feel arbitrary and cryptic, as though it's not intended for the user to see. Remember the purpose of an error message and write them with respect to that: an error is an issue we knew might occur and we're alerting you, the user, to help you out.
+
+* Avoid hard-coding error messages. Instead, store error message in data objects, such as a JSON file, a CSV, or a flat-text model of your own implementation. This acts as a "dictionary" file that you can refer to and access using a unique token or handle. This system makes it easier for developers to do code reviews and maintenance without risking build errors or regressions. It also allows for more straightforward and cheaper localization. Document your schema or format to help others understand and maintain it.
+
+* Ask a technical writer or UX expert to review your error messages. When receiving a review in a GitHub pull request (PR), call out your updated error strings and add comments to provide any relevent information. This improves collaboration between you and your reviewer and eases the process to get your updates approved.
+
+
+### More resources
 
 For more reading, check out [Jakob Nielsen's guidance on writing good error messages](https://www.instructionaldesign.org/bad_error_messages/).
-
-### Error Message Best Practices
-
-* Above all else, aim for clarity. Ask yourself: "_If I got this message while doing my job and I was new to this product or code, what would help me move forward or avoid this error in the future?_" Never make the user guess. If you can get further details from the run-time or the existing code, do so, even if it seems tedious. Your extra hour of coding will save your users countless hours in the future.
-* If you are working on developer-focused code (as opposed to user interface code), provide detailed code comments around your error handling and messages. This will help UI error message writers better understand the context and craft better end-user messages.
-* Use a natural, friendly voice. Write error messages with empathy, as though you were advising a fellow developer or a new user. It's okay to lead with "Sorry" or "Oops!" if you feel that the error might be in a really disruptive context, but likewise consider localization before you employ sympathetic idioms. All-too-typical "just the developer basics" error strings can feel unnatural and frustrating, especially to developers or users who are learning the product. Cold, severe "programmer" text makes the error feel arbitrary and cryptic, like the user shouldn't even be seeing it in the first place. Make the error feel like what it is: an issue we knew might occur, and that we're alerting you, the user, to help you out.
-* Avoid hard-coding error messages. Instead, put them in a common JSON (or other format, even a CSV or a flat-text model of your own implementation) "dictionary" file and refer to them based on a unique token or handle. This allows for easier review and maintenance without risking build errors or regressions. It also allows for much easier (and thus significantly cheaper) localization. Document your schema or format for others to easily understand and maintain it.
-* Get your error messages reviewed by a technical writer or UX expert! When you open your PR, call out your updated error strings (hopefully in a file specific to error strings, as suggested previously) and request review by someone with technical writing or user interface design experience.
