@@ -6,22 +6,24 @@ weight: 500
 toc: true
 ---
 
-Are you developing user interface (UI) components that extend **Open 3D Engine (O3DE)**? Learn how to craft meaningful and useful user interface (UI) messages that help your users by reviewing the principles and best practices in this topic. UI messages indicate the status of a component, such as error, failure, warning, information, and success messages. This document covers various types of messaging including *Toast*, *Inline Notification*, *Dialog*, *Console Log*, *Event Log*, *Event Table*, *Component Card*, and *Text Input Validation*.
+Are you developing user interface (UI) components that extend **Open 3D Engine (O3DE)**? Learn how to craft user interface (UI) messages that help your users by reviewing the principles and best practices in this page. *UI messages* indicate the status of a component such as error, failure, warning, information, and success messages. This document covers various types of UI messages including toast, inline notification, dialog, console log, event log, event table, component card, and text input validation.
 
-Consistent styling in O3DE messages is crucial because it reduces the cognitive load on users to know how to resolve issues in future scenarios.
+This page goes over how to style the various types of UI messages. 
+Consistent styling in O3DE's UI messages is crucial because it assists users on how to resolve issues they might encounter.
  
 ## Prerequisites
 
-To aid in your learning, we recommend opening the **Qt Control Gallery**, a Qt widget library that demonstrates UI elements and allows you to program and preview additional elements. The QT Control Gallery is built when you build O3DE and is located in the engine's `build/<platform>/bin/<configuration>` directory.
+To aid in your learning, it's recommended that you launch **Qt Control Gallery**, an application that contains UI elements from the Qt widget library and allows you to program and preview additional elements. The QT Control Gallery is built when you build O3DE and is located in the engine's `build/<platform>/bin/<configuration>` directory.
 
 For more information, refer to [O3DE Qt Control Gallery Tool](/docs/tools-ui/uidev-control-gallery/)
 
 
 ## Standard Icons
 
-The standard icons built into O3DE are the **Error**, **Warning**, **Success**, and **Information** icons. They communicate different severity levels of information to users.
+The standard icons that come with O3DE are the **Error**, **Warning**, **Success**, and **Information** icons. They communicate different severity levels of information to users.
 
-These icons are displayed on various O3DE UI systems such as *Toast Messages*, *Dialogs*, and *Message Boxes*. They are also commonly displayed within *Event Logs*, *Console Logs*, and *Component Cards*.
+These icons are displayed on various O3DE UI systems such as toast messages, dialogs, and message boxes. They are also commonly displayed within event logs, console logs, and component cards. You will learn more about these systems on this page. 
+
 
 ### Error / Failure Icon
 
