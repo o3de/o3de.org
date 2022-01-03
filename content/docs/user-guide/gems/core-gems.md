@@ -1,7 +1,8 @@
 ---
-description: An overview of Open 3D Engine Gems which offer common functionality core to games and simulations.
-title: Gems Providing Core Open 3D Engine Functionality
 linktitle: Core Gems
+title: Gems Providing Core Open 3D Engine Functionality
+description: An overview of Open 3D Engine Gems which offer common functionality core to games and simulations.
+weight: 300
 ---
 
 While Open 3D Engine's architecture and core frameworks provide the backbone and infrastructure to support game and simulation development, most features that are usually required for creating projects come in the form of extensions to the core through the Gem system. Not all of these Gems are used by released projects using the O3DE runtime - some are specific to the Editor, Asset Processor, or other O3DE tools.
