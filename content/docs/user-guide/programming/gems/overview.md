@@ -1,5 +1,5 @@
 ---
-title: Gem Module system in Open 3D System
+title: Gem Module System in Open 3D System
 description: An overview of the Open 3D Engine Gem system and module loader.
 linktitle: Overview
 weight: 100
