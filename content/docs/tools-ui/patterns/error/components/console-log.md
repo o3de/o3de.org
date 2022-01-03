@@ -17,7 +17,7 @@ For example, when you open your project in the **Open 3D Engine (O3DE) Editor**,
 
 ## Specification
 
-Review these specifications to create console messages:
+Console messages consist of the following specifications:
 
 - Console messages must follow the format:
   
@@ -30,7 +30,7 @@ Review these specifications to create console messages:
   - `<problem>`: Describe the problem.
   - `<ways to resolve the problem>`: Describe actionable steps the user can take to resolve or work around the problem.
 
-  For help on how to describe the problem and ways to resolve the problem, refer to[Guidelines for Writing Error Messages](/docs/tools-ui/patterns/error/guidelines.md).
+  For help on how to describe the problem and ways to resolve the problem, refer to [Guidelines for Writing Error Messages](/docs/tools-ui/patterns/error/guidelines.md).
 
 - Color-code and prefix console messages depending on the following use cases.
 
