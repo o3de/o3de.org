@@ -6,7 +6,9 @@ weight: 400
 toc: true
 ---
 
-Log tables are used to convey a long stream of notification updates that occurred in succession. Each item in the log table is accompanied by a status indicator, which informs the user of items that require the user's attention. These are frequently used to signal errors/failures, warnings, or notification. As an example, the following image shows a log table with status indicators next to each item in the **Asset Processor**.
+*Log tables* are used to convey a long stream of notification updates that occurred in succession. Each item in the log table is accompanied by a status indicator, which informs the user of items that require the user's attention. These are frequently used to signal errors/failures, warnings, or information. 
+
+For example, the following image shows a log table with status indicators next to each item in the **Asset Processor**.
 
 ![Event Log](/images/tools-ui/log-table/event-log.png)
 
