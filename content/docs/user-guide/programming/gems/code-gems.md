@@ -2,8 +2,7 @@
 linkTitle: Code Gems
 title: Code Gem Specifications
 description: An overview of Code Gems in Open 3D Engine.
-linktitle: Create an O3DE Code Gem
-weight: 200
+weight: 300
 ---
 
 **Open 3D Engine (O3DE)** code Gems contains code that let's you extend the O3DE Editor or integrate features and gameplay logic for your project. They can also contain assets that your code interacts with.
@@ -13,7 +12,7 @@ weight: 200
 Follow [Create an O3DE Gem](/docs/user-guide/programming/gems/creating) to create a Gem based on the **DefaultGem template**. Code and asset Gems have the same Gem directory structure and you can use the same command to create them. 
 
 
-## Gem Code
+## Gem code
 
 The code components of a Gem are located in the `Code` directory. The DefaultGem template provides the following boilerplate code for the Gem's source code in the `Code/Source` directory of your Gem.
 
