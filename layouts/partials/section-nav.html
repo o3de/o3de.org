@@ -1,6 +1,3 @@
-{{ $allSections  := site.Sections }} <!-- "blog" and "docs" -->
-{{ $docsSections := where $allSections "Section" "docs" }}
-
 <form id="search"
     action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}' method="get" class="align-items-center justify-content-center">
     <div class="search-input-view">
@@ -12,8 +9,27 @@
 
 <nav class="docs-nav" id="docs-nav">
   <ul>
-    {{ range $docsSections }}
-      {{ partial "section-nav-walk.html" . }}
+    {{ range .FirstSection.Pages }}
+      {{/* Only display pages inside the current /section/subsection/ e.g. /docs/welcome-guide/ or /docs/release-notes/ */}}
+      {{- if $.IsDescendant . -}}
+      <li>
+          <a href="{{ .RelPermalink }}"
+          class="docs-link{{ if .Pages }} has-children{{ end }}">
+          {{ .LinkTitle }}</a>
+          {{ if .Pages }}
+              <ul>
+                  {{ if and ( .IsSection ) (ge (len .Content) 1) }}
+                  <li>
+                      <a href="{{ .RelPermalink }}"
+                      class="docs-link">
+                      {{ .LinkTitle }}</a>
+                  </li>
+                  {{ end }}
+                  {{ partial "section-nav-walk.html" . }}
+              </ul>
+          {{ end }}
+      </li>
+      {{- end -}}
     {{ end }}
   </ul>
 </nav>
