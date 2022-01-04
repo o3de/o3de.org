@@ -4,7 +4,11 @@
   <head>
     <title>
       {{ block "title" . }}
-        {{ site.Title }}
+        {{if .IsHome -}}
+          {{ site.Title }}
+        {{- else -}}
+          {{ .Title }} - {{ site.Title }}
+        {{- end }}
       {{ end }}
     </title>
     {{ partial "css.html" . }}
