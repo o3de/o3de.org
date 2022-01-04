@@ -10,8 +10,13 @@
 <nav class="docs-nav" id="docs-nav">
   <ul>
     {{ range .FirstSection.Pages }}
-      {{/* Only display pages inside the current /section/subsection/ e.g. /docs/welcome-guide/ or /docs/release-notes/ */}}
-      {{- if $.IsDescendant . -}}
+      {{- if eq $ .FirstSection -}}
+      {{/* Display the main subsections on the docs page (for mobile) */}}
+      <li>
+          <a href="{{ .RelPermalink }}" class="docs-link">{{ .LinkTitle }}</a>
+      </li>
+      {{- else if $.IsDescendant . -}}
+      {{/* Only display pages inside the current subsection */}}
       <li>
           <a href="{{ .RelPermalink }}"
           class="docs-link{{ if .Pages }} has-children{{ end }}">

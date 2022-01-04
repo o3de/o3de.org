@@ -3,6 +3,11 @@
 {{ $allSections  := site.Sections }} <!-- "blog" and "docs" -->
 {{ $docsSections := where $allSections "Section" "docs" }}
 
+{{/* Include the top level navigation for mobile */}}
+<section class="hide-content docs-sidebar">
+  {{ partial "section-nav.html" . }}
+</section>
+
 <div class="container pt-3 px-5 pb-3">
   <div class="row flex">
     <div class="col-12 docs-content">
