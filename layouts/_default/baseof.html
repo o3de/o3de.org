@@ -18,12 +18,13 @@
   {{ partial "javascript.html" }}
     <body>
       {{ partial "navbar.html" . }}
-    <div id="search-results" style="display: none;" aria-hidden="true">
-      {{ partial "search-results.html" . }}
-    </div>
     <main id="primary">
-      {{ block "main" . }}
-      {{ end }}
+      {{ if eq  .Type "search" }}
+        {{ partial "search-results.html" . }}
+      {{ else }}
+        {{ block "main" . }}
+        {{ end }}
+      {{ end}}
     </main>
   </body>
 </html>
