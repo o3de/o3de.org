@@ -12,6 +12,7 @@ Inline notifications are non-disruptive messages that are confined to a specific
 
 ## Specifications
 
+Review these specifications when creating an inline notification:
 
 * Persistantly display inline notifications until the user dismisses them or until the issue is resolved.
 
@@ -21,7 +22,7 @@ Inline notifications are non-disruptive messages that are confined to a specific
 
 * Include an optional call-to-action button that's related to the message.
 
-- Use the error/failure or warning icon from the list of standard icons. Refer to [Standard Icons](/docs/tools-ui/patterns/error/overview.md#standard-icons).
+- Use one of the following icons from the list of [Standard icons](/docs/tools-ui/patterns/error/overview.md#standard-icons): error/failure or warning icon.
 
 * Display inline notifications only on screens that have more than one operational purpose. For instance, they can appear within non-modal dialogs, but cannot appear inside modal dialogs.
 
@@ -58,6 +59,7 @@ Inline notifications are non-disruptive messages that are confined to a specific
 
 ![Inline Error with CTA](/images/tools-ui/inline-notifications/inline-error-with-cta.png)
 
+
 ## Multiple line messages
 
 It's recommended that inline notification messages fit on one line. However, if they fit on multiple lines, ensure the following:
@@ -79,6 +81,7 @@ Inline notifications in component cards are displayed to indicate an error/failu
 * Persistantly display inline notifications in the component cards until the issue is resolved.
 
 * Avoid stacking multiple inline messages horizontally or vertically. Instead, display the messages one after the other as the user resolves each issue.
+
 * Write clear and concise messages. A maximum of two lines is recommended.
 
 * Use the error/failure or warning icon from the list of standard icons, depending on the following use cases. Refer to [Standard Icons](/docs/tools-ui/patterns/error/overview.md#standard-icons). 

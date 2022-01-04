@@ -17,7 +17,7 @@ For example, when you open your project in the **Open 3D Engine (O3DE) Editor**,
 
 ## Specification
 
-Console messages consist of the following specifications:
+Review these specifications when creating a console log:
 
 - Console messages must follow the format:
   

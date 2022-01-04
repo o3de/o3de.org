@@ -36,7 +36,7 @@ toc: true
 
 ## Specifications
 
-Dialogs consist of the following specifications:
+Review these specifications when creating a dialog:
 
 * Do not include the O3DE Logo Mark in the header of a dialog.
 
@@ -45,13 +45,14 @@ Dialogs consist of the following specifications:
 * Write relevant information to help users complete the dialog's task in the title and body of the dialog. Refer to [Guidelines for Writing Error Messages](/docs/tools-ui/patterns/error/guidelines.md).
 
 
-* Include only one icon, if any. The icon must be a standard icon.
+* Include only one icon, if any. Use one of the following icons from the list of [Standard icons](/docs/tools-ui/patterns/error/overview.md#standard-icons): error/failure, warning, success, or information icon.
 
 * Include a primary button and/or an optional secondary button for the dialog's actions. 
   
-  * Write an actionable text on the button such as "Cancel" or "Restart".
-  
-  * Color the background of the primary button blue and the secondary button gray. 
+  * Use the primary button for a primary action. Primary buttons are have a blue background, making it more distinct to the user. Write an actionable text on the primary button such as "Save", "Restart", or "Open". 
+
+* Use the secondary button for alternative options or passive actions such as "Cancel" or "OK".
+
 
 
 ## Best practices

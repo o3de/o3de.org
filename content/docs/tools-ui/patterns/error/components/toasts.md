@@ -24,16 +24,27 @@ Refer to the following table to determine what icon to use in your toast, depend
 
 ![Floating Toasts - Messages](/images/tools-ui/toasts/floating-toasts-messages.png)
 
+
 ## Specifications
 
+Review these specifications when creating a toast:
+
 * Toasts are passive and non-disruptive messages. They shouldn't hinder the user's workflow.
-* Toast messages must be clear and concise---a maximum of two lines.
+
+* Write clear and concise messages. Toasts can show only up to two lines. 
+
 * Toasts must disappear after three seconds (or a maximum of five seconds). An exception is if the message includes a link that requires the user to take action for the toast to disappear.
-* Multiple toasts should not be stacked horizontally or vertically, as this may block the user's workflow.
-* The icon within a toast must be a standard icon: error/failure, warning, success, or information icon.
+
+* Don't stack multiple toasts such that they are side-by-side vertically or horizontally, as this may block the user's workflow. Instead, display multiple toasts sequentially and in order of importance.
+
+* Use one of the following icons from the list of [Standard icons](/docs/tools-ui/patterns/error/overview.md#standard-icons): error/failure, warning, success, or information icon.
+
 * The toast must have a fixed width and should not expand to fit the content area.
-* Toasts must not contain a call-to-action button.
+
+* Toasts cannot contain a call-to-action button.
+
 * Toasts must appear above page content and on a screen where overlay layers are appropriate.
+
 * Toasts must not be used within a modal. Consider using them within larger systems like **O3DE Editor**, **Material Editor**, **Viewport**, and so on.
 
 
@@ -59,7 +70,9 @@ Refer to the following table to determine what icon to use in your toast, depend
 Toasts that contain links in the subtitle text must do the following:
 
 * Persistantly display and don't automatically disappear, unlike a standard toast.
+
 * Display a manual close button.
-* Point outside the system, not to another part of the application.
+
+* Point outside the system, not to another part of the application as this might disrupt the user's workflow. For example, you can link to an external web address: "Check out tutorials on how to create a material here, \<link\>."
 
 ![Floating Toasts - Messages with Links](/images/tools-ui/toasts/floating-toasts-messages-with-links.png)
