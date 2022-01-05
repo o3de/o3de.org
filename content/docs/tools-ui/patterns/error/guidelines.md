@@ -7,9 +7,7 @@ toc: true
 ---
 
 
-In this section, you will learn how to write great error messages for O3DE. 
-
-Why do we care about error messages? Shouldn't the user figure out why their code failed or their operation didn't work? Not at all. The customers expect a seamless experience without any errors. However, errors occur and error messages can ease and help customers overcome them.
+In this section, you will learn how to write great error messages for O3DE. Why are error messages so important? Shouldn't the user figure out why their code failed or their operation didn't work? Not at all. The users expect a seamless experience without any errors. Nevertheless, errors occur and error messages can ease and help users overcome them.
 
 Great error messages can salve the sting of an unexpected error. Poor ones can lead to negative feedback or cause the customer to abandon your product completely. An effective and helpful error message acknowledges the inconvinience on the user and reassures them with guidance to work around it.
 
