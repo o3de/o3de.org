@@ -2,6 +2,7 @@
 linkTitle: Fly Camera Input
 title: Fly Camera Input Component
 description: Use the Fly Camera Input component to add quickly add a controllable camera to your Open 3D Engine (O3DE) level.
+toc: true
 ---
 
 Use the **Fly Camera Input** component to quickly add a controllable camera to your level. The Fly Camera Input component receives inputs from a mouse and keyboard, gamepad, or touch device.  You can control the forward, backward, and lateral movement as well as the look direction of a camera component that is attached to the same entity as the Fly Camera Input component.  Mouse X and Y-axis movements control look direction. The keyboard keys `W`, `A`, `S`, and `D` control forward, left, backward, and right motion respectively.
