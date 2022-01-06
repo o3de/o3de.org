@@ -141,7 +141,7 @@ set(FILES
 
 #### Step 2: Register the test module
 
-The final CMakeLists.txt step is to register the module with CTest. For this, use helper function `ly_add_googletest()`
+The final `CMakeLists.txt` step is to register the module with CTest. For this, use helper function `ly_add_googletest()`
 
 To verify everything is set up correctly, run the [CMake configure command](/docs/user-guide/build/configure-and-build/) from the CMake CLI or CMake GUI. This will register everything you just added, and emit errors if anything was misconfigured.
 
