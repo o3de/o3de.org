@@ -33,7 +33,7 @@ cd <local_path_to>/o3de/build/<build_folder>
 ctest -C <build_configuration>
 ```
 
-You may not want to run the commands above without also filtering the set of tests which run. Without a filter the command will kick off every test, and likely result in multiple hours of test execution! If you ever want to stop CTest, send an interrupt signal by selecting the terminal and pressing `CTRL + C` . The most commonly used suites are Smoke and Main, which are required to run quickly. The following ctest command filters to only tests in these two suites:
+You may not want to run the commands above without also filtering the set of tests to run. Without a filter the command will run every test, and likely result in multiple hours of test execution! If you ever want to stop CTest, send an interrupt signal by selecting the terminal and pressing `CTRL + C` . The most commonly used suites are Smoke and Main, which are required to run quickly. The following ctest command filters to only tests in these two suites:
 
 ```shell
 cd <local_path_to>/o3de/build/<build_folder>
