@@ -1,5 +1,5 @@
 ---
-title: Settings Reference
+title: CMake Settings Reference
 description: The reference for Open 3D Engine-specific CMake settings.
 weight: 500
 ---
