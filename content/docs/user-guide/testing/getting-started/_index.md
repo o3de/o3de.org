@@ -26,7 +26,7 @@ In short, all tests in O3DE use CTest as a high level test coordinator. When exe
 
 ### Starting CTest
 
-CTest expects its working directory to be a CMake build directory, so be sure to first move into this directory:
+CTest expects its working directory to be a CMake build directory, so be sure to first navigate to this directory:
 
 ```shell
 cd <local_path_to>/o3de/build/<build_folder>
