@@ -207,7 +207,7 @@ Registering a Python-based test is simpler than registering a C++ test. However,
 
 #### Step 1: Register a PyTest Target
 
-Find the CMakeLists.txt that defines the system you are testing. It should exist at a path similar to `o3de/.../<MyModule>/CMakeLists.txt` . Note that it may instead be appropriate to register broader tests in a parent directory's CMakeLists.txt. If you are creating a test that is specific to a game project, you should register it in a CMakeLists.txt in that game project. When you find the right place for the test to be registered, add a line similar to:
+Find the `CMakeLists.txt` that defines the system you are testing. It should exist at a path similar to `o3de/.../<MyModule>/CMakeLists.txt`. Note that it may be appropriate to register broader tests in a parent directory's CMakeLists.txt instead. If you are creating a test that is specific to a game project, you should register it in a `CMakeLists.txt` in that game project. When you find the right place for the test to be registered, add a line similar to:
 
 ```
 ly_add_pytest(
