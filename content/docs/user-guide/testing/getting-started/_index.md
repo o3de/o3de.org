@@ -147,7 +147,7 @@ To verify everything is set up correctly, run the [CMake configure command](/doc
 
 #### Step 3: Write new tests
 
-Now that you have configured CMake to create a library from your tests, and registered this library with CTest, you are ready to write new tests. To simplify your module structure, create new test files inside `o3de/.../<MyModule>/tests/`
+Now that you have configured CMake to create a library from your tests, and registered this library with CTest, you are ready to write new tests. To simplify your module structure, create new test files inside `o3de/.../<MyModule>/tests/`.
 
 Tests are written using standard [GoogleTest](https://github.com/google/googletest/blob/main/docs/index.md) syntax, which helps you write small functions to test your code. To pull in everything from GoogleTest plus a few convienient tools, add the following statement to your file:
 
