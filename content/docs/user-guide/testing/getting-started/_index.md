@@ -189,23 +189,23 @@ While interpreted languages like Python can have low performance, these tests sh
 
 There are often two Python interpreter instances used during O3DE tests. This can complicate determining which will execute your code, so pay close attention to how the test is defined:
 
-- #1 Exists outside of the O3DE Editor
-  - Use in generic tests which launch applications and send external signals
+- Test exists outside of **O3DE Editor**
+  - Use in generic tests that launch applications and send external signals.
   - Helps and monitor for application crashes
-  - Test file names should start with `test_`
-  - Same Python interpreter that launches when you run `o3de/python/python.sh` or `o3de\python\python.cmd`
+  - Test file names should start with `test_`.
+  - Uses the same Python interpreter that launches when you run `o3de/python/python.sh` or `o3de\python\python.cmd`.
 
-- #2 Embedded inside the O3DE Editor
-  - Use in "EditorPythonBindings" tests which target workflows inside the editor
-  - Helps expose editor functionality to a test script
-  - Test file names should ***not*** include affixes such as `test_` or `_tests`
-  - PyTest is still initiated by the external python, to handle editor crashes
+- Test embedded inside O3DE Editor
+  - Use in `EditorPythonBindings` tests which target workflows inside O3DE Editor.
+  - Helps expose editor functionality to a test script.
+  - Test file names should ***not*** include affixes such as `test_` or `_tests`.
+  - PyTest is still initiated by the external Python interpreter instance, to handle Editor crashes.
 
-### Registering a new Python Test
+### Registering a new Python test
 
 Registering a Python-based test is simpler than registering a C++ test. However, it also requires you define the library that will be tested. The steps below assume you have already defined a production library. You can read more about defining production code in [Getting Started with the CMake Build System](/docs/user-guide/build/).
 
-#### Step 1: Register a PyTest Target
+#### Step 1: Register a PyTest target
 
 Find the `CMakeLists.txt` that defines the system you are testing. It should exist at a path similar to `o3de/.../<MyModule>/CMakeLists.txt`. Note that it may be appropriate to register broader tests in a parent directory's CMakeLists.txt instead. If you are creating a test that is specific to a game project, you should register it in a `CMakeLists.txt` in that game project. When you find the right place for the test to be registered, add a line similar to:
 
