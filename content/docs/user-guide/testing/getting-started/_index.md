@@ -203,7 +203,7 @@ There are often two Python interpreter instances used during O3DE tests. This ca
 
 ### Registering a new Python Test
 
-Registering a Python-based test is simpler than registering a C++ test. However it similarly requires you define the library that will be tested. The steps below assume you have already defined a production library. You can read more about defining production code in [Getting Started with the CMake Build System](/docs/user-guide/build/).
+Registering a Python-based test is simpler than registering a C++ test. However, it also requires you define the library that will be tested. The steps below assume you have already defined a production library. You can read more about defining production code in [Getting Started with the CMake Build System](/docs/user-guide/build/).
 
 #### Step 1: Register a PyTest Target
 
