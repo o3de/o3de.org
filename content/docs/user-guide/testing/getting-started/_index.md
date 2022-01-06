@@ -47,7 +47,7 @@ cd user/github/o3de/build/linux
 ctest -C profile -L "(SUITE_smoke|SUITE_main)"
 ```
 
-After running CTest, it will save test results to `.../<build_folder>/Testing/`.  If you prefer to see a summary of failures in your terminal, add the flag `--output-on-failure`
+After running CTest, results save to `.../<build_folder>/Testing/`.  If you prefer to see a summary of failures in your terminal, add the flag `--output-on-failure`.
 
 For more information on CTest usage, refer to its [online documentation](https://cmake.org/cmake/help/latest/manual/ctest.1.html).
 
