@@ -32,7 +32,7 @@ O3DE requires CMake {{< versions/cmake >}} or higher.
 | --- | --- |
 | [Configure and Build](configure-and-build) | The full details on how to configure and build O3DE core, Gems, and projects. |
 | [Create Distributable Open 3D Engine Builds](distributable-engine) | Instructions on how to separate engine developer and project developer workflows, by creating fixed binaries to distribute to project teams. |
-| [O3DE Packages](packages) | Learn about the Open 3D Engine package system that's used to ship binaries along with your Gem or project. |
+| [O3DE Packages](packages) | Learn about the O3DE package system that's used to ship binaries along with your Gem or project. |
 | [Troubleshooting](troubleshooting) | How to debug and troubleshoot CMake and build problems. |
 | [CMake Settings Reference](reference) | Reference for user-configurable CMake settings specific to O3DE. |
 
@@ -40,5 +40,5 @@ O3DE requires CMake {{< versions/cmake >}} or higher.
 
 | Topic | Description |
 |---|---|
-| [Windows Suppport](/docs/user-guide/platforms/windows) | Prerequisites for building on Windows 10. |
+| [Windows Support](/docs/user-guide/platforms/windows) | Prerequisites for building on Windows 10. |
 | [Linux Support](/docs/user-guide/platforms/linux) | Prerequisites for building on Linux. |
