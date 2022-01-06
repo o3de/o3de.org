@@ -41,7 +41,7 @@ These options are the user-supplied settings that are required to configure O3DE
 
 These options control the types of assets that are built, and where projects load assets from at runtime.
 
-* **`LY_ASSET_DEPLOY_TYPE`** - The *default* type of assets to be built by the [asset processor](/docs/user-guide/assets/pipeline/processor/). Valid platforms are:
+* **`LY_ASSET_DEPLOY_TYPE`** - The *default* type of assets to be built by [Asset Processor](/docs/user-guide/assets/asset-processor/). Valid platforms are:
   * `pc` - Windows PC
   * `linux` - Linux
   * `mac` - MacOS
