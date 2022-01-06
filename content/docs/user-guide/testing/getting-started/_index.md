@@ -124,7 +124,7 @@ endif()
 
 #### Step 0: Add a production build target
 
-Before configuring tests, you should first define the library which gets tested. This is defined in a CMakeLists.txt, which typically lives in the same directory as the code or in a parent directory. For more information on configuring this, please read more about adding library targets at [Getting Started with the CMake Build System](/docs/user-guide/build/). Note that you only need to define a library that will be built, and can start configuring and writing tests before you finish writing the production code.
+Before configuring tests, you should first define the library which gets tested. This is defined in a `CMakeLists.txt`, which typically lives in the same directory as the code or in a parent directory. For more information on configuring `CMakeLists.txt`, please read more about adding library targets at [Getting Started with the CMake Build System](/docs/user-guide/build/). Note that you only need to define a library that will be built; you can start configuring and writing tests before you finish writing the production code.
 
 #### Step 1: Add a test build target
 
