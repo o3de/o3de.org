@@ -70,7 +70,7 @@ When building production C++ code for O3DE features, that code gets built into a
 
 ### Registering new C++ tests
 
-While reading the upcoming steps, refer to the following CMakeLists.txt example:
+While reading the upcoming steps, refer to the following `CMakeLists.txt` example:
 
 ```
 # Preexisting module registration from Step 0
