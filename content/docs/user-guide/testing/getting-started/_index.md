@@ -225,7 +225,7 @@ To verify everything is set up correctly, run the [CMake configure command](/doc
 
 #### Step 2: Write new Python tests
 
-These tests primarily use standard [Python](https://docs.python.org/3/) code along with [PyTest](https://docs.pytest.org/). Depending on where your test is focused, it likely wants to include one of two automation libraries:
+These tests primarily use standard [Python](https://docs.python.org/3/) code along with [PyTest](https://docs.pytest.org/). Depending on where your test is focused, it should likely include one of two automation libraries:
 
 Internal tests of the O3DE Editor functionality should use [EditorPythonBindings](/docs/user-guide/testing/parallel-pattern/). This helps expose C++ interfaces of the Editor to Python. These tests almost always require the `TEST_SERIAL` flag.
 
