@@ -1,6 +1,6 @@
 ---
 linkTitle: Getting Started
-title: Getting Started with Test Automation in O3DE
+title: Getting Started with Test Automation
 description: Learn about the automated testing tools provided with the engine.
 toc: true
 weight: 500
