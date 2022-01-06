@@ -128,7 +128,7 @@ Before configuring tests, you should first define the library which gets tested.
 
 #### Step 1: Add a test build target
 
-Similar to the production target, the test target defines a library in a CMakeLists.txt configuration file. Start by finding the CMakeLists.txt for your module, which should already be created from Step 0. It should exist at a path similar to `o3de/.../<MyModule>/CMakeLists.txt`
+Similar to the production build target, the test target defines a library in a `CMakeLists.txt` configuration file. Start by finding the `CMakeLists.txt` for your module, which should already be created from Step 0. It should exist at a path similar to `o3de/.../<MyModule>/CMakeLists.txt`.
 
 Modify the CMakeLists.txt file to define your new test module, using the helper function `ly_add_target()`. Similar to the production build target, it is easiest to create another file which lists the C++ files used to compile the test library. The example above uses `dev/.../<MyModule>/mymodule_test_files.cmake`, which would have content similar to:
 
