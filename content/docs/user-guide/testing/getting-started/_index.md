@@ -10,7 +10,7 @@ This guide introduces the automated testing tools in O3DE and covers their basic
 
 ## Overview
 
-O3DE uses [CMake](https://cmake.org/cmake/help/latest/), a build system which includes [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html). CTest is a generic test runner tool which coordinates executing and reporting on tests. O3DE uses CTest to start all automated tests of the engine and tools. New projects using O3DE can also register and run their own tests through CTest, to test their unique game code or engine extensions. CTest can be executed on a developer's local machine to verify code health. It also gets executed in the O3DE Automated Review (AR) pipeline to help prevent bad merges. The sections below introduce the primary way of starting CTest, and describes how to register tests.
+O3DE uses [CMake](https://cmake.org/cmake/help/latest/), a build system that includes [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html). CTest is a generic test runner tool which coordinates executing and reporting on tests. O3DE uses CTest to start all automated tests of the engine and tools. New projects using O3DE can also register and run their own tests through CTest, to test their unique game code or engine extensions. CTest can be executed on a developer's local machine to verify code health. It also gets executed in the O3DE Automated Review (AR) pipeline to help prevent bad merges. The sections below introduce the primary way of starting CTest, and describes how to register tests.
 
 ![CMake and CTest workflow](/images/user-guide/testing/getting-started/cmake_ctest_workflow.png)
 
