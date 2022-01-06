@@ -55,7 +55,7 @@ For more information on CTest usage, refer to its [online documentation](https:/
 
 CTest registers entire modules of test code. These modules typically contain multiple individual tests of the same feature. Adding new tests has three major steps, with a prerequisite:
 
-0. Add a build target for the production code which tests will target
+0. Add a build target for the production code which tests will target.
 1. Add a build target for tests which need to be compiled (not required for Python)
 2. Register your test module in a CMakeLists.txt
 3. Add individual test functions into the test module
