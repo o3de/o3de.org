@@ -58,7 +58,7 @@ CTest registers entire modules of test code. These modules typically contain mul
 0. Add a build target for the production code which tests will target.
 1. Add a build target for tests which need to be compiled (not required for Python).
 2. Register your test module in a `CMakeLists.txt`.
-3. Add individual test functions into the test module
+3. Add individual test functions into the test module.
 
 Specific steps vary for different types of tests, discussed in later sections.
 
