@@ -227,6 +227,6 @@ To verify everything is set up correctly, run the [CMake configure command](/doc
 
 These tests primarily use standard [Python](https://docs.python.org/3/) code along with [PyTest](https://docs.pytest.org/). Depending on where your test is focused, it should likely include one of two automation libraries:
 
-Internal tests of the O3DE Editor functionality should use [EditorPythonBindings](/docs/user-guide/testing/parallel-pattern/). This helps expose C++ interfaces of the Editor to Python. These tests almost always require the `TEST_SERIAL` flag.
+Internal tests of O3DE Editor functionality should use [EditorPythonBindings](/docs/user-guide/testing/parallel-pattern/). This helps expose editor C++ interfaces to Python. These tests almost always require the `TEST_SERIAL` flag.
 
 External tests at the Operating System level often use the [LyTestTools](/docs/user-guide/testing/lytesttools/) module, which simplifies interacting with O3DE applications. Tests using these tools are discussed more at . These tests often use the `TEST_SERIAL` flag.
