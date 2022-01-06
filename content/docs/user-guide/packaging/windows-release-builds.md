@@ -95,7 +95,7 @@ To process your project's assets, do one of the following:
     1. Use **CMake** to invoke Visual Studio to build the Asset Processor tools and their dependencies. Specify the `MyProject.Assets` target.
 
         ```cmd
-        cmake --build build\windows_vs2019 --target MyProject.Assets --config profile -- /m
+        cmake --build build\windows_vs2019 --target MyProject.Assets --config profile -- -m
         ```
 
         First, this command builds the Asset Processor tools. Then, it runs Asset Processor Batch and processes the assets. You don't need to rerun Asset Processor or Asset Processor Batch unless you make changes in your project.
@@ -248,7 +248,7 @@ To set up and run Asset Bundler, do the following:
 1. In your `<engine>` directory, use CMake to invoke Visual Studio to build Asset Bundler.
 
     ```cmd
-    cmake --build build\windows_vs2019 --target AssetBundler --config profile -- /m
+    cmake --build build\windows_vs2019 --target AssetBundler --config profile -- -m
     ```
 
     This command contains the following options:
