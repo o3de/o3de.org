@@ -171,7 +171,7 @@ For more information on writing tests in C++, see [Using AzTest](/docs/user-guid
 
 ## GoogleBenchmark
 
-For performance benchmarks of small pieces of C++ code O3DE uses [GoogleBenchmark](https://github.com/google/benchmark/blob/main/docs/index.md), which is quite similar to GoogleTest. However how failure is defined is a major difference between a normal test and a benchmark. In most tests, pass/fail status is directly evaluated into a boolean state. Benchmarks instead create a subjective performance metric. These metrics are most valuable when periodically recorded, to help detect trends. The only objective failure during a benchmark occurs when the code fails to run or crashes.
+For performance benchmarks of small pieces of C++ code O3DE uses [GoogleBenchmark](https://github.com/google/benchmark/blob/main/docs/index.md), which is quite similar to GoogleTest. However, how failure is defined is a major difference between a normal test and a benchmark. In most tests, pass/fail status is directly evaluated to a boolean state. Benchmarks create a subjective performance metric instead. These metrics are most valuable when periodically recorded, to help detect trends. The only objective failure during a benchmark occurs when the code fails to run or crashes.
 
 The steps for configuring a GoogleBenchmark library are identical to the [steps above for GoogleTest libraries](#googletest), with a couple exceptions. The include statement is `#include <benchmark/benchmark.h>` and the cmake helper function is:
 
