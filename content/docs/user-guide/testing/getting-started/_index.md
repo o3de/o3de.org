@@ -6,7 +6,7 @@ toc: true
 weight: 500
 ---
 
-This guide introduces the automated testing tools in O3DE and covers their basic usage. More detailed information on each tool exists in their specific documentation pages.
+This guide introduces the automated testing tools in **Open 3D Engine (O3DE)** and covers their basic usage. More detailed information on each tool exists on their specific documentation pages.
 
 ## Overview
 
