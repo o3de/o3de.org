@@ -18,8 +18,7 @@ This guide includes guidelines and information on the custom Qt widget library, 
 
 If you have any questions regarding the BlueJay Design System or have a suggestion to improve it, you can [file an issue](https://github.com/o3de/sig-ui-ux/issues/new/choose) with the UI/UX Special Interest Group on GitHub.
 
-Feel like having a chat? Check out our #SIG-UX-UI channel on [Discord](https://discord.com/invite/xNb2q4SJKJ). The community is always happy to help!
-
+Feel like having a chat? Check out our #SIG-UX-UI channel on [Discord](https://{{< links/o3de-discord >}}). The community is always happy to help!
 
 ## Tools UI Developer's Guide Contents
 

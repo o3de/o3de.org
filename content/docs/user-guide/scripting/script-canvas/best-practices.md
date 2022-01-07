@@ -2,6 +2,7 @@
 linktitle: Best Practices
 title: Script Canvas Best Practices
 description: Learn about best practices when using Script Canvas in Open 3D Engine (O3DE).
+weight: 500
 ---
 
 Best practices for Script Canvas include using an event-driven approach and using custom nodes to simplify your graphs.

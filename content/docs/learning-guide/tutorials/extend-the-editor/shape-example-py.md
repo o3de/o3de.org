@@ -10,7 +10,7 @@ In this tutorial, you'll learn how to extend the **Open 3D Engine (O3DE) Editor*
 
 The **PyShapeExample** Gem, a sample Gem in the [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/py_gems/PyShapeExample), demonstrates the finished Gem that you create in this tutorial. You can reference the PyShapeExample Gem sample as you follow along this tutorial.
 
-By the end of this tutorial, you'll be able to extend the Editor by creating your own custom tools written in C++.
+By the end of this tutorial, you'll be able to extend the Editor by creating your own custom tools written in Python.
 
 The following image is a preview of the custom tool that you create.
 
@@ -112,6 +112,22 @@ You will write most of your tool's functionality and UI elements in the`PyShapeE
 ### Qt Resources
 
 The [Qt Resource System](https://doc.qt.io/qt-5/resources.html) allows Gems to store and load image files via a `.qrc` file. This eliminates the need to load image files from absolute paths, making it simpler for you to distribute your Gem. Later, you will store an image file to create an icon for your tool.
+
+## Dependent modules
+
+Import the following dependent modules in the `Editor\Scripts\pyshapeexample_dialog.py` file. The `PyShapeExampleDialog` class that you will create uses objects from these modules. 
+
+```py
+import azlmbr.bus as bus
+import azlmbr.components as components
+import azlmbr.editor as editor
+import azlmbr.entity as entity
+import azlmbr.math as math
+
+from PySide2.QtCore import Qt
+from PySide2.QtGui import QDoubleValidator
+from PySide2.QtWidgets import QCheckBox, QComboBox, QDialog, QFormLayout, QGridLayout, QGroupBox, QLabel,  QPushButton, QVBoxLayout, QWidget
+```
 
 ## Dialogs, Widgets, and layouts
 

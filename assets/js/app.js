@@ -57,39 +57,12 @@ $(function() {
 
 $(() => {
   $("#search").submit(function(event){
-    event.preventDefault();
-    $(".search-input-view").show();
-
-    let data =  $('#search-input').val()
-    if (data.length > 0) {
-      const idx = lunr(function () {
-        this.ref('id')
-        this.field('title', {
-          boost: 15
-        })
-        this.field('tags')
-        this.field('content', {
-          boost: 10
-        })
-    
-        for (const key in window.store) {
-          this.add({
-            id: key,
-            title: window.store[key].title,
-            tags: window.store[key].category,
-            content: window.store[key].content
-          })
-        }
-      })
-    
-      // Perform the search
-      const results = idx.search(data)
-      // Update the search title
-      $('#search-title').text('Search Results for ' + '"' + data + '"')
-      // Update the list with results
-      displayResults(results, window.store)
+    if($(".search-input-view").is(":hidden"))
+    {
+      event.preventDefault();
+      $(".search-input-view").show();
     }
-  })
+  });
 });
 
 // --- Downloads page
@@ -121,30 +94,6 @@ $(function() {
   // If it doesn't exist, this will just do nothing.
   $("#os-" + hash).trigger("click");
 });
-
-// Search 
-
-function displayResults (results, store) {
-  const resultsContainer = document.getElementById('search-results')
-  const mainContainer = document.getElementById('primary')
-  const searchResults = document.getElementById('results')
-  
-  if (results.length) {
-    let resultList = ''
-    // Iterate and build result list elements
-    for (const n in results) {
-      const item = store[results[n].ref]
-      resultList += '<li><p><a href="' + item.url + '">' + item.title + '</a></p>'
-      resultList += '<p>' + item.content.substring(0, 400) + '...</p></li>'
-    }
-    searchResults.innerHTML = resultList
-  } else {
-    searchResults.innerHTML = 'No results found.'
-  }
-
-  resultsContainer.style.display = "block"
-  mainContainer.style.display = "none"
-}
 
 // Docs navigation
 
