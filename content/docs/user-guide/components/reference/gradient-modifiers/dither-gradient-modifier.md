@@ -22,11 +22,10 @@ The **Dither Gradient Modifier** component applies an [ordered dithering](https:
 | **Preview Position** | Sets the world location of the preview.<br> <br>*This field is available only if there is no entity selected in **Pin Preview to Shape**.* | Vector3: -Infinity to Infinity | X:`0.0`, Y:`0.0`, Z:`0.0` |
 | **Preview Size** | Sets the dimensions of the preview. | Vector3: 0.0 to Infinity | X:`1.0`, Y:`1.0`, Z:`1.0` |
 | **Constrain to Shape** | If `Enabled`, the gradient preview will use the bounds of the entity selected in **Pin Preview to Shape**.<br> <br>*This field is available only if an entity is selected in **Pin Preview to Shape**.* | Boolean | `Disabled` |
-| **Pattern Offset** |  | Vector3: -Infinity to Infinity | X:`0.0`, Y:`0.0`, Z:`0.0` |
-| **Pattern Type** |  | `4x4` or `8x8` | `4x4` |
-| **Sample Settings** |  |  |  |
-| **Use System Points Per Unit** |  |  | `Enabled` |
-| **Points Per Unit** | <br> <br>*This field is available only if **Use System Points Per Unit** is set to `Disabled`.* |  | `1.0` |
+| **Pattern Offset** | Shifts the pattern's lookup indexes. | Vector3: -Infinity to Infinity | X:`0.0`, Y:`0.0`, Z:`0.0` |
+| **Pattern Type** | Sets the pattern of the dithering effect. | `4x4` or `8x8` | `4x4` |
+| **Sample Settings - Use System Points Per Unit** | If `Enabled`, **Points Per Unit** is set automatically to the sector's density divided by the sector's size. | Booelan | `Enabled` |
+| **Sample Settings - Points Per Unit** | Sets the value to scale the input position by before the gradient is sampled. | 0.001 to Infinity | `1.0` |
 | **Gradient** | Refer to [Gradient properties](#gradient-properties) below. | | |
 
 ### Gradient properties
