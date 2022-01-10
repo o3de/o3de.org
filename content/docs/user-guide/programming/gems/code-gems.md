@@ -5,7 +5,7 @@ description: An overview of Code Gems in Open 3D Engine.
 weight: 300
 ---
 
-**Open 3D Engine (O3DE)** code Gems contains code that let's you extend the O3DE Editor or integrate features and gameplay logic for your project. They can also contain assets that your code interacts with.
+Code Gems contain source code that can extend the **Open 3D Engine (O3DE)** Editor or integrate features and logic for your O3DE project. They can also contain assets that are required by the source code such as interface elements and assets that are used as tests and samples.
 
 ## Creating a Gem
 
@@ -30,7 +30,9 @@ For more information on modules and their responsibilities in O3DE, refer to [Ge
 
 ### `<Gem>SystemComponent.cpp`, `<Gem>SystemComponent.h`
 
-The `<Gem>SystemComponent` class is a global singleton class that's responsible for managing the Gem's code. The system components allows the component within the Gem Module to communicate with components from other Gems by connecting to their EBus. It also handles underlying tasks that govern the whole Gem such as initialization and shutdown, event handling, memory allocation, and connection to debuggers. The Gem Module registers the system component and the system component manages the Gem Module's life cycle: initialization, activativation, and deactivation. The system component activates when the Gem loads and deactivates when the Gem unloads.
+The `<Gem>SystemComponent` class is a global singleton class that's responsible for managing the Gem's code. The Gem Module registers the Gem System Component which manages the Gem Module's life cycle: initialization, activation, and deactivation. The Gem System Component activates when the Gem loads and deactivates when the Gem unloads.
+
+The Gem System Component allows the component within the Gem Module to communicate with components from other Gems by connecting to their EBus. It also handles initialization and shutdown, events, memory allocation, and debugger connections. 
 
 
 ### `<Gem>EditorModule.cpp`
