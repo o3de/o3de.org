@@ -33,7 +33,7 @@ Don't want to read tiresome words, and prefer a snappy video to help you get sta
 
 ## Technical information
 
-The o3de.org site uses the [Hugo static site generator](https://gohugo.io/). Documentation for O3DE uses [Goldmark](https://www.markdownguide.org/tools/hugo/), a CommonMark compliant Markdown processor. Contributing to O3DE documentation is easy, quick, and requires no prior experience with web development. The documentation source files are easy to read and require very few markdown elements. For information on setting up an environment so that you can contribute to O3DE documentation, see [O3DE documentation repository](./o3de-docs-repo-setup).
+The o3de.org site uses the [Hugo static site generator](https://gohugo.io/). Documentation for O3DE uses [Goldmark](https://www.markdownguide.org/tools/hugo/), a CommonMark compliant Markdown processor. Contributing to O3DE documentation is easy, quick, and requires no prior experience with web development. The documentation source files are easy to read and require very few markdown elements. For information on setting up an environment so that you can contribute to O3DE documentation, see [Set Up a Local O3DE Docs Repo](./o3de-docs-repo-setup).
 
 ## Begin with issues
 
@@ -71,7 +71,7 @@ Now that you are familiar with the O3DE docs, and have had some exposure to issu
 
 1. **Create a branch on your fork for the issue:** Contributions can't be submitted directly to the main O3DE documentation repository. You must fork the main repository, and submit pull requests to the main repository from your fork/branch.
 
-   It's good practice, and very helpful to contributors who might review your PRs, to create a new branch on your fork for each new issue. Having small branches containing only the changes required for the issue can expedite the PR review process and lend themselves to collaboration with other contributors. For large issues, consider breaking the work down into smaller issues, creating new branches for each smaller issue. The smaller the number of changes in your branch, the easier it will be to review and merge into main. For more information on creating a fork and branches, see the [O3DE documentation repository](./o3de-docs-repo-setup) topic in this guide.
+   It's good practice, and very helpful to contributors who might review your PRs, to create a new branch on your fork for each new issue. Having small branches containing only the changes required for the issue can expedite the PR review process and lend themselves to collaboration with other contributors. For large issues, consider breaking the work down into smaller issues, creating new branches for each smaller issue. The smaller the number of changes in your branch, the easier it will be to review and merge into main. For more information on creating a fork and branches, see the [Set Up a Local O3DE Docs Repo](./o3de-docs-repo-setup) topic in this guide.
 
 1. **Make changes:** The O3DE documentation is written in [CommonMark Markdown](https://commonmark.org/) and processed with [Goldmark](https://www.markdownguide.org/tools/hugo/). We recommend using an editor with robust Markdown support during your writing, so that you can get live previews and catch any linting errors. During your writing, follow our [Style Guide](./style-guide) to help your review go smoothly and quickly.
 
