@@ -5,7 +5,7 @@ description: Use the O3DE UI reflected property editor to automatically lay out 
 toc: true
 ---
 
-A **reflected property editor** automatically lays out controls for user-editable properties that are reflected using the edit context. It is frequently used as a content widget to populate [card](./uidev-card-component) components.
+A **reflected property editor** automatically lays out controls for user-editable properties that are reflected using the edit context. It is frequently used as a content widget to populate [card](./uidev-card-widget) components.
 
 ![component reflected property editor in card](/images/tools-ui/component-reflected-property-editor-in-card.png)
 
@@ -45,4 +45,4 @@ For details on the **card** API, see the following topics in the [O3DE UI Extens
 ## Related links
 
 For additional information related to the **reflected property editor** component, see the following topics:
-+  [Card Widget](./uidev-card-component)
++  [Card Widget](./uidev-card-widget)
