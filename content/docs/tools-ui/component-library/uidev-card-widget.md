@@ -30,7 +30,7 @@ Cards allow for a certain amount of customization. The basic layout of a card in
     (Optional) Cards can have their own unique icon related to their purpose. For the full list of icons, see [O3DE component icons](/docs/tools-ui/icon-assets/uidev-component-icons/).
    
     {{< note >}}
-Two icons are required for new widgets:
+Two icons are required for new components:
 
 + A 16 x 16 SVG with a background box for the perspective window.
 + An SVG for everywhere else in the editor, without a background box.
