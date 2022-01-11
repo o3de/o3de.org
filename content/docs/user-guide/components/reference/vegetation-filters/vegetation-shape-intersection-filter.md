@@ -1,11 +1,11 @@
 ---
 title: Vegetation Shape Intersection Filter Component
 linktitle: Vegetation Shape Intersection Filter
-description: Use the Vegetation Shape Intersection Filter component to spawn vegetation within the bounds of a shape in your Open 3D Engine (O3DE) level.
+description: Use the Vegetation Shape Intersection Filter component to contain vegetation instance placement within the bounds of a shape in your Open 3D Engine (O3DE) level.
 weight: 400
 ---
 
-Add the **Vegetation Shape Intersection Filter** component to spawn vegetation or blocker instances within the bounds of a **Shape** component.
+Add the **Vegetation Shape Intersection Filter** component to contain vegetation or blocker instance placement within the bounds of a **Shape** component.
 
 ## Provider
 
@@ -26,7 +26,7 @@ Add one of the following required components when using the Vegetation Shape Int
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Filter Stage** | Defines if filters are applied before or after modifiers. | `PreProcess`, `PostProcess`, or `Default` | `Default` |
-| **Shape Entity Id** | Selects an entity with a shape component. Only instances within the shape will spawn. | EntityId | None |
+| **Shape Entity Id** | Selects an entity with a shape component. Instances are placed only within the bounds of the shape. | EntityId | None |
 
 ## ShapeIntersectionFilterRequestBus
 

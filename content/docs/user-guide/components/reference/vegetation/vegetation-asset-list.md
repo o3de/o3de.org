@@ -53,7 +53,7 @@ Use the following request functions with the `DescriptorListRequestBus` EBus int
 |-|-|-|-|-|
 | `AddDescriptor` | Adds a descriptor to an asset list. | Vegetation Descriptor | None | Yes |
 | `GetDescriptor` | Returns a vegetation descriptor from an asset list. | Descriptor Index: Integer | Vegetation Descriptor | Yes |
-| `GetDescriptorAssetPath` | Returns the **External Assets** source path for an asset list. |  | Path: String | Yes |
+| `GetDescriptorAssetPath` | Returns the **External Assets** source path for an asset list. | None | Path: String | Yes |
 | `GetDescriptorListSource` | Returns the **Source Type** of an asset list. Returns `0` for `Embedded` and `1` for `External` source types.| None | List Source Type: Integer | Yes |
 | `GetNumDescriptors` | Returns the number of vegetation descriptors in an asset list. | None | Descriptor Index: Integer | Yes |
 | `RemoveDescriptor` | Removes a vegetation descriptor from an asset list. | Descriptor Index: Integer | None | Yes |

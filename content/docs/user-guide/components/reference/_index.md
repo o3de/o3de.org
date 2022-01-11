@@ -246,18 +246,17 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Vegetation Layer Blocker (Mesh)](vegetation/vegetation-layer-blocker-mesh) | Prevents vegetation from being placed in the mesh. |
 | [Vegetation Layer Debugger](vegetation/vegetation-layer-debugger) | Enables debug visualizers for vegetation layers. |
 | [Vegetation Layer Spawner](vegetation/layer-spawner) | Creates dynamic vegetation in a specified area. |
-| [Vegetation Reference Shape](vegetation/vegetation-reference-shape) | Enables the entity to reference and reuse shape entities. |
 
 ### Vegetation Filters  
 
 | Component | Description | 
 | - | - |
-| [Vegetation Altitude Filter](vegetation-filters/vegetation-altitude-filter) | Limits the placement of vegetation to be on surfaces within the specified height range. |
-| [Vegetation Distance Between Filter](vegetation-filters/vegetation-distance-between-filter) | Defines the minimum distance required between vegetation instances. |
-| [Vegetation Distribution Filter](vegetation-filters/vegetation-distribution-filter) | Limits the placement of vegetation to be within the specified value ranges. |
-| [Vegetation Shape Intersection Filter](vegetation-filters/vegetation-shape-intersection-filter) | Limits the placement of vegetation to be on surfaces that intersect the specified shape. |
-| [Vegetation Slope Filter](vegetation-filters/vegetation-slope-filter) | Limits the placement of vegetation to be only on surfaces within the specified surface angles. |
-| [Vegetation Surface Mask Depth Filter](vegetation-filters/vegetation-surface-mask-depth-filter) | Limits the placement of vegetation to be on surfaces within a specified depth between two surface tags. |
+| [Vegetation Altitude Filter](vegetation-filters/vegetation-altitude-filter) | Limits the placement of vegetation to surfaces within the specified height range. |
+| [Vegetation Distance Between Filter](vegetation-filters/vegetation-distance-between-filter) | Defines the minimum distance between vegetation instances. |
+| [Vegetation Distribution Filter](vegetation-filters/vegetation-distribution-filter) | Limits the placement of vegetation to a specified value range within a distribution defined by a gradient.  |
+| [Vegetation Shape Intersection Filter](vegetation-filters/vegetation-shape-intersection-filter) | Limits the placement of vegetation to surfaces that intersect the specified shape. |
+| [Vegetation Slope Filter](vegetation-filters/vegetation-slope-filter) | Limits the placement of vegetation to surfaces within the specified surface angle range. |
+| [Vegetation Surface Mask Depth Filter](vegetation-filters/vegetation-surface-mask-depth-filter) | Limits the placement of vegetation to surfaces within a specified depth range between two surface tags. |
 | [Vegetation Surface Mask Filter](vegetation-filters/vegetation-surface-mask-filter) | Filters out vegetation based on surface mask-to-tag mappings. |
 
 ### Vegetation Modifiers  
