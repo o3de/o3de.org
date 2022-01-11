@@ -38,7 +38,7 @@ When applying Gradient Surface Tag Emitter to an entity, the entity is required 
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Preview** | Displays a visual preview of the inbound gradient with **Surface Bounds** and **Threshold** properties applied. |  |  |
+| **Preview** | Displays a visual preview of the input gradient with **Surface Bounds** and **Threshold** properties applied. |  |  |
 | **Surface Bounds** | Optionally constrains the gradient to the bounds of an entity with a Shape component. | Shape Entity: EntityId | None |
 | **Threshold Min** | Sets the minimum value from the input gradient that allows tags to be applied. | 0.0 - 1.0 | `0.1` |
 | **Threshold Max** | Sets the maximum value from the input gradient that allows tags to be applied. | 0.0 - 1.0 | `1.0` |
