@@ -8,7 +8,7 @@ Add vegetation modifiers to create realistic variation between vegetation instan
 
 | Component | Description | 
 | - | - |
-| [Vegetation Position Modifier](vegetation-modifiers/vegetation-position-modifier) | Offsets the position of the vegetation. |
-| [Vegetation Rotation Modifier](vegetation-modifiers/vegetation-rotation-modifier) | Offsets the rotation of the vegetation. |
-| [Vegetation Scale Modifier](vegetation-modifiers/vegetation-scale-modifier) | Offsets the scale of the vegetation. |
-| [Vegetation Slope Alignment Modifier](vegetation-modifiers/vegetation-slope-alignment-modifier) | Offsets the orientation of the vegetation relative to a surface angle. |
+| [Vegetation Position Modifier](vegetation-position-modifier) | Offsets the position of the vegetation. |
+| [Vegetation Rotation Modifier](vegetation-rotation-modifier) | Offsets the rotation of the vegetation. |
+| [Vegetation Scale Modifier](vegetation-scale-modifier) | Offsets the scale of the vegetation. |
+| [Vegetation Slope Alignment Modifier](vegetation-slope-alignment-modifier) | Offsets the orientation of the vegetation relative to a surface angle. |
