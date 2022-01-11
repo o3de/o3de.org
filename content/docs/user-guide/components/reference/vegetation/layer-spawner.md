@@ -24,7 +24,7 @@ For information on how to use the Vegetation Layer Spawner, see [Dynamic vegetat
 ## Dependencies
 
 Add the following required components when using the Vegetation Layer Spawner component:
-- A [**Vegetation Reference Shape**](vegetation-reference-shape) component or one the following [**Shape**](./../shape/) components, [**Axis Aligned Box**](./../shape/axis-aligned-box-shape), [**Box**](./../shape/box-shape), [**Capsule**](./../shape/capsule-shape), [**Compound**](./../shape/compound-shape), [**Cylinder**](./../shape/cylinder-shape), [**Disk**](./../shape/disk-shape), [**Polygon Prism**](./../shape/polygon-prism-shape), [**Quad**](./../shape/quad-shape), [**Sphere**](./../shape/sphere-shape), or [**Tube**](./../shape/tube-shape),  to define the vegetation's spawn area.
+- One the following [**Shape**](./../shape/) components, [**Axis Aligned Box**](./../shape/axis-aligned-box-shape), [**Box**](./../shape/box-shape), [**Capsule**](./../shape/capsule-shape), [**Compound**](./../shape/compound-shape), [**Cylinder**](./../shape/cylinder-shape), [**Disk**](./../shape/disk-shape), [**Polygon Prism**](./../shape/polygon-prism-shape), [**Quad**](./../shape/quad-shape), [**Shape Reference**](./../shape/shape-reference), [**Sphere**](./../shape/sphere-shape), or [**Tube**](./../shape/tube-shape),  to define the vegetation's spawn area.
 - A [**Vegetation Asset List**](vegetation-asset-list)  or [**Vegetation Asset List Combiner**](vegetation-asset-list-combiner) component to list mesh assets, material assets, and other settings for the vegetation.
 
 ## Vegetation Layer Spawner properties
@@ -33,7 +33,7 @@ Add the following required components when using the Vegetation Layer Spawner co
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Override Preview Settings** | If `Enabled`, the **Preview Settings** properties determine the shape of the vegetation layer preview.  If `Disabled`, the bounds of the vegetation layer preview are set by the attached Shape or Vegetation Reference Shape component.  | Boolean | `Disabled` |
+| **Override Preview Settings** | If `Enabled`, the **Preview Settings** properties determine the shape of the vegetation layer preview.  If `Disabled`, the bounds of the vegetation layer preview are set by the attached Shape component.  | Boolean | `Disabled` |
 | **Pin Preview to Shape** | Sets an entity with a compatible shape component to use as the bounds of the vegetation layer preview if **Constrain to Shape** is `Enabled`.<br> <br>*This field is available only if **Override Preview Settings** is `Enabled`.* | EntityId | Current Entity |
 | **Preview Position** | Sets the world location of the vegetation layer preview.<br> <br>*This field is available only if **Override Preview Settings** is `Enabled` and there is no entity selected in **Pin Preview to Shape**.* | Vector3: -Infinity to Infinity | X:`0.0`, Y:`0.0`, Z:`0.0` |
 | **Preview Size** | Sets the dimensions of the vegetation layer preview if **Constrain to Shape** is `Disabled`.<br> <br>*This field is available only if **Override Preview Settings** is `Enabled`.* | Vector3: 0.0 to Infinity | X:`1.0`, Y:`1.0`, Z:`1.0` |
