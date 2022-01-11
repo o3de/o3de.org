@@ -5,7 +5,7 @@ description: Use the Vegetation Altitude Filter component to limit vegetation to
 weight: 100
 ---
 
-Add the **Vegetation Altitude Filter** component to limit spawning vegetation or blocker instances to a specific range of heights.
+Add the **Vegetation Altitude Filter** component to limit vegetation or blocker instance placement to a specific height range.
 
 ## Provider
 
@@ -28,8 +28,8 @@ Add one of the following required components when using the Vegetation Altitude 
 | **Filter Stage** | Defines if filters are applied before or after modifiers. | `PreProcess`, `PostProcess`, or `Default` | `Default` |
 | **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor properties that are enabled can override this component's properties. | Boolean | `Disabled` |
 | **Pin To Shape Entity Id** | If an entity with a **Shape** component is selected, the shape's bounds will override the **Altitude Min** and **Altitude Max** properties of this component. | EntityId | None |
-| **Altitude Min** | Sets the minimum altitude that vegetation instances will spawn at. | Float: -Infinity to Infinity | `0.0` |
-| **Altitude Max** | Sets the maximum altitude that vegetation instances will spawn at. | Float: -Infinity to Infinity | `128.0` |
+| **Altitude Min** | Sets the minimum altitude for vegetation instance placement. | Float: -Infinity to Infinity | `0.0` |
+| **Altitude Max** | Sets the maximum altitude for vegetation instance placement. | Float: -Infinity to Infinity | `128.0` |
 
 ## SurfaceAltitudeFilterRequestBus
 

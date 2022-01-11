@@ -22,7 +22,6 @@ Add the following required components when using the Vegetation Layer Blocker co
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Preview Settings** |  |  |  |
 | **Override Preview Settings** | If `Enabled`, the **Preview Settings** properties determine the shape of the blocker.  If `Disabled`, the bounds of the blocker are set by the attached Shape or Vegetation Reference Shape component.  | Boolean | `Disabled` |
 | **Pin Preview to Shape** | Sets an entity with a compatible shape component to use as the bounds of the blocker if **Constrain to Shape** is `Enabled`.<br> <br>*This field is available only if **Override Preview Settings** is `Enabled`.* | EntityId | Current Entity |
 | **Preview Position** | Sets the world location of the blocker.<br> <br>*This field is available only if **Override Preview Settings** is `Enabled` and there is no entity selected in **Pin Preview to Shape**.* | Vector3: -Infinity to Infinity | X:`0.0`, Y:`0.0`, Z:`0.0` |

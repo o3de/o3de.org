@@ -5,7 +5,7 @@ description: Limit the distribution of vegetation to the area surrounding surfac
 weight: 600
 ---
 
-Add the **Vegetation Surface Mask Depth Filter** component to limit vegetation or blocker instances to the areas surrounding specific surface tags.
+Add the **Vegetation Surface Mask Depth Filter** component to limit vegetation or blocker instance placement to the areas surrounding specific surface tags.
 
 ## Provider
 
