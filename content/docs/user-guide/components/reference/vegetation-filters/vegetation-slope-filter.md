@@ -5,7 +5,7 @@ description: Use the Vegetation Slope Filter component to distribute vegetation 
 weight: 500
 ---
 
-Add the **Vegetation Slope Filter** component to restrict vegetation or blocker instances to a range of terrain slope values.
+Add the **Vegetation Slope Filter** component to restrict vegetation or blocker instance placement to a range of terrain slope values.
 
 ## Provider
 
@@ -27,8 +27,8 @@ Add one of the following required components when using the Vegetation Slope Fil
 |-|-|-|-|
 | **Filter Stage** | Defines if filters are applied before or after modifiers. | `PreProcess`, `PostProcess`, or `Default` | `Default` |
 | **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor properties that are enabled can override this component's properties. | Boolean | `Disabled` |
-| **Slope Min** | Sets the minimum terrain slope value for vegetation instances to spawn. | Float: 0.0 - 180.0 | `0.0` |
-| **Slope Max** | Sets the maximum terrain slope value for vegetation instances to spawn. | Float: 0.0 - 180.0 | `180.0` |
+| **Slope Min** | Sets the minimum terrain slope value for vegetation instance placement. | Float: 0.0 - 180.0 | `0.0` |
+| **Slope Max** | Sets the maximum terrain slope value for vegetation instance placement. | Float: 0.0 - 180.0 | `180.0` |
 
 ## SurfaceSlopeFilterRequestBus
 
