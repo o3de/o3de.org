@@ -4,7 +4,7 @@ title: Levels Gradient Modifier Component
 description: Use the Levels Gradient Modifier component to modify inbound and outbound gradient values in Open 3D Engine (O3DE).
 ---
 
-The **Levels Gradient Modifier** component modify the high, mid, and low values of an incoming gradient.  It can also be used to clamp the minimum and maximum values of the outbound gradient.
+The **Levels Gradient Modifier** component modifies the high, mid, and low values of an incoming gradient.  It can also be used to clamp the minimum and maximum values of the outbound gradient.
 
 ## Provider
 
