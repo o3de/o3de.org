@@ -9,7 +9,7 @@ While Open 3D Engine's architecture and core frameworks provide the backbone and
 Even if a Gem only adds Editor or Asset Processor functionality, it should be included as part of your project's Gems. 
 
 {{< note >}}
-All projects require the O3DE Core (LmbrCentral) Gem to provide core Editor functionality.  O3DE Core (LmbrCentral) also provides many components for gameplay.  Read the [O3DE Core (LmbrCentral) documentation](./reference/o3de-core) for more information.
+All projects require the O3DE Core (LmbrCentral) Gem to provide core Editor functionality.  O3DE Core (LmbrCentral) also provides many components for gameplay.  Read the [O3DE Core (LmbrCentral) documentation](../reference/o3de-core) for more information.
 {{< /note >}}
 
 These Gems are only built and loaded for products that require them:

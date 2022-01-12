@@ -151,7 +151,7 @@ Create the files that you will use in this tutorial.
    + `FileF.cfg`
    + `do-not-add-me.txt`
 
-1. Process the assets on your project by running the [Asset Processor](/docs/user-guide/assets/pipeline/processor).
+1. Process the assets on your project by running [Asset Processor](/docs/user-guide/assets/asset-processor/).
 
 ### Create asset list files for the comparison operation 
 

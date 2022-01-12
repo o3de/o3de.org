@@ -110,10 +110,6 @@ If the current CMake version was not returned because CMake cannot be found, loc
 
 1. Verify that `cmake` is on the system path by opening a new command line window and running `cmake --version` again.
 
-## macOS
-
-Support for developing on macOS is in an experimental stage. At a minimum, you need macOS Big Sur, Intel x86_64, XCode 12.1+, and a Metal-compatible video card that meets the hardware requirements above.
-
 ## Linux
 
 The primary Linux distribution for using the O3DE Editor is Ubuntu {{< versions/ubuntu >}}. The following instructions describe how to retrieve and install the required software packages through Ubuntu's `apt-get` command-line utility.
@@ -222,3 +218,7 @@ The Ninja build system is an alternative to Linux's default Unix Makefiles. The 
 ```shell
 sudo apt-get install ninja-build
 ```
+
+## macOS
+
+Support for developing on macOS is in an experimental stage. At a minimum, you need macOS Big Sur, Intel x86_64, XCode {{< versions/xcode >}} or later, and a Metal-compatible video card that meets the hardware requirements above.
