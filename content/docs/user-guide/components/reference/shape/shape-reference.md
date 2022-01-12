@@ -22,7 +22,7 @@ Add the **Shape Reference** component to reference and re-use shape components i
 
 ## ReferenceShapeRequestBus
 
-Use the following request functions with the `ReferenceShapeRequestBus` EBus interface to communicate with Reference Shape components in your game.
+Use the following request functions with the `ReferenceShapeRequestBus` EBus interface to communicate with Shape Reference components in your game.
 
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
