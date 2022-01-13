@@ -108,7 +108,7 @@ This tutorial assumes you've built O3DE as a source engine by following the inst
 
 3. Build the **Asset Processor Batch** project in profile mode to process the assets.
     ```
-    cmake --build %O3DE_BUILD_ROOT%\windows --config profile --target AssetProcessorBatch -- /m /nologo
+    cmake --build %O3DE_BUILD_ROOT%\windows --target AssetProcessorBatch --config profile -- -m /nologo
     ```
     {{< note >}}
 This step only builds Asset Processor Batch and the necessary dependent modules.

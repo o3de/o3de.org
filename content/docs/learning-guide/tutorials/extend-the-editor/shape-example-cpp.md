@@ -112,6 +112,28 @@ You will write most of your tool's functionality and UI elements in the `ShapeEx
 
 The [Qt Resource System](https://doc.qt.io/qt-5/resources.html) allows Gems to store and load image files via a `.qrc` file. This eliminates the need to load image files from absolute paths, making it simpler for you to distribute your Gem. Later, you will store an image file to create an icon for your tool.
 
+## Dependent modules
+
+Import the following dependent modules in the `Code\Source\ShapeExampleWidget.cpp` file. The `ShapeExample` class that you will create uses objects from these modules.
+
+```cpp
+#include <AzCore/Component/TransformBus.h>
+#include <AzCore/Utils/Utils.h>
+#include <AzToolsFramework/API/EntityCompositionRequestBus.h>
+#include <AzToolsFramework/Component/EditorComponentAPIBus.h>
+#include <AzToolsFramework/Entity/EditorEntityAPIBus.h>
+#include <QComboBox>
+#include <QDoubleValidator>
+#include <QFormLayout>
+#include <QGridLayout>
+#include <QGroupBox>
+#include <QLabel>
+#include <QLineEdit>
+#include <QPushButton>
+#include <QVBoxLayout>
+#include <ShapeExampleWidget.h>
+```
+
 
 ## Widgets and layouts
 

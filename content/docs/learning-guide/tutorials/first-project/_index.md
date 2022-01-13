@@ -15,32 +15,32 @@ Games, as conventional wisdom goes, started with Pong. Your experience with O3DE
 
 ### Pong Project and Level Creation
 
-{{< youtube id="kK0XnYFKw38" title="O3DE - 001: Pong Project and Level Creation" >}}
+{{< youtube-width id="kK0XnYFKw38" title="O3DE - 001: Pong Project and Level Creation" >}}
 
 ### Creating the Game Start Menu
 
-{{< youtube id="ULsTwK-GEt8" title="O3DE - 002: Pong Creating a Start Menu" >}}
+{{< youtube-width id="ULsTwK-GEt8" title="O3DE - 002: Pong Creating a Start Menu" >}}
 
 ### Scripting the Game Start Menu
 
-{{< youtube id="6-353OtcTkM" title="O3DE - 003: Pong Scripting the Start Menu" >}}
+{{< youtube-width id="6-353OtcTkM" title="O3DE - 003: Pong Scripting the Start Menu" >}}
 
 ### Creating the Pong Level Assets
 
-{{< youtube id="1z5SOi-McPI" title="O3DE - 004: Pong Creating The Level Assets" >}}
+{{< youtube-width id="1z5SOi-McPI" title="O3DE - 004: Pong Creating The Level Assets" >}}
 
 ### Scripting Player (Paddle) Movement and Controls
 
-{{< youtube id="4zwZcVQskGg" title="O3DE - 005: Pong Scripting Paddle Movement" >}}
+{{< youtube-width id="4zwZcVQskGg" title="O3DE - 005: Pong Scripting Paddle Movement" >}}
 
 ### Implementing a Simple Game State Machine
 
-{{< youtube id="Z7hqAJnj4-g" title="O3DE - 006 Pong Simple State Machine" >}}
+{{< youtube-width id="Z7hqAJnj4-g" title="O3DE - 006 Pong Simple State Machine" >}}
 
 ### Scripting Ball Movement and Behaviors
 
-{{< youtube id="Z84zOz0DCMg" title="O3DE - 007: Pong Scripting Our Ball Movement" >}}
+{{< youtube-width id="Z84zOz0DCMg" title="O3DE - 007: Pong Scripting Our Ball Movement" >}}
 
 ### Creating the "Game Over" User Interface
 
-{{< youtube id="cqQNHGkyo94" title="O3DE - 008 Pong Creating The Game Over UI" >}}
+{{< youtube-width id="cqQNHGkyo94" title="O3DE - 008 Pong Creating The Game Over UI" >}}

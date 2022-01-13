@@ -293,7 +293,7 @@ Do | Don't
 ### Separate commands from output
 
 ```shell
-cmake --build <MyProject> --config profile --target Editor -- /m
+cmake --build <MyProject> --target Editor --config profile -- -m
 ```
 
 The output is similar to this:

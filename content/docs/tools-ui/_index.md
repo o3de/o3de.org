@@ -10,21 +10,26 @@ guide_img: "/images/tools-ui/guide_img.png"
 primary: true
 ---
 
-Welcome to the **Open 3D Engine (O3DE)** Tools UI Developer's Guide! In this guide you will find guidelines around using the O3DE brand and UI style. Included is an introduction to component development and the custom Qt widget library for developers.
+![A banner of the BlueJay Design System](/images/tools-ui/bjds-banner.png)
 
-If you are a looking to incorporate the O3DE logo into your project, please read the [Open 3D Branding Guidelines](/files/Open-3D-Branding-Guidelines-June-2021.pdf) PDF style guide to help stay aligned with our brand.
+The **BlueJay Design System** is the modular UI framework of **Open 3D Engine (O3DE)**. This guide provides information for developers on the framework and how to use it when developing components, tools, and extensions for **O3DE Editor**.
 
-You can also download a ZIP of our brand guidelines and logos: [O3DE Logo Pack.zip](/files/O3DE-Logo-Pack.zip)
+This guide includes guidelines and information on the custom Qt widget library, the Qt Control Gallery tool, and a gallery of UI icon assets for O3DE. This guide also provides O3DE brand guidelines and O3DE brand assets that you can incorporate into your own projects.
+
+If you have any questions regarding the BlueJay Design System or have a suggestion to improve it, you can [file an issue](https://github.com/o3de/sig-ui-ux/issues/new/choose) with the UI/UX Special Interest Group on GitHub.
+
+Feel like having a chat? Check out our #SIG-UX-UI channel on [Discord](https://{{< links/o3de-discord >}}). The community is always happy to help!
 
 ## Tools UI Developer's Guide Contents
 
 | Topic | Description |
 | --- | --- |
-| [Introduction to O3DE UI development](ui-dev-intro/) | An introduction to the contents and purpose of this guide. |
-| [O3DE Qt Control Gallery tool](uidev-control-gallery/) | A tool included with O3DE that demonstrates the custom Qt widget library in action. Also includes sample code related to each component. |
-| [O3DE UI component development guidelines](uidev-component-development-guidelines/) | An overview of O3DE UI component development and the custom Qt widget library. |
-| [O3DE UI component library](component-library/) | An introduction to each UI component (i.e. widget) in O3DE and guidelines for their usage. |
-| [O3DE UI icon assets](icon-assets/) | A library of icon assets used in the O3DE development environment. |
+| [O3DE's Branding Guidelines](branding-guidelines) | An overview of O3DE's branding guidelines, where you can download the logo assets, read about the recommended guidance for brand application, and review the details on our accepted brand colors.|
+| [O3DE UI Component Development Guidelines](uidev-component-development-guidelines/) | An overview of O3DE UI component development and the custom Qt widget library. |
+| [O3DE's Message Guidelines](ui-dev-messages) | Reference and best practices for O3DE's UI message components, where you can find specifications, examples, and best practices for different message types, including toasts and dialogs.|
+| [O3DE Qt Control Gallery Tool](uidev-control-gallery/) | A tool included with O3DE that demonstrates the custom Qt widget library in action. Also includes sample code related to each component. |
+| [O3DE UI Component Library](component-library/) | An introduction to each UI component in O3DE and guidelines for their usage. |
+| [O3DE UI Icon Assets](icon-assets/) | A library of icon assets used in the O3DE development environment. |
 
 ## Related topics
 

@@ -12,7 +12,7 @@ toc: true
 
 O3DE is open source. You can use the provided binaries and tools to build your own projects, or get the source code and extend it!
 
-Visit [O3DE on GitHub]({{< links/o3de-source >}}) to get the source code, then follow the [GitHub setup instructions](/docs/welcome-guide/setup/setup-from-github) to get started.
+Visit [O3DE on GitHub](https://{{< links/o3de-source >}}) to get the source code, then follow the [GitHub setup instructions](/docs/welcome-guide/setup/setup-from-github) to get started.
 
 ## Modular engine and components
 
