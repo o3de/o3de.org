@@ -22,7 +22,7 @@ When applying Gradient Transform Modifier to an entity, the entity is required t
 - [Disk Shape](../shape/disk-shape)
 - [Polygon Prism Shape](../shape/polygon-prism-shape)
 - [Quad Shape](../shape/quad-shape)
-- Shape Reference
+- [Shape Reference](../shape/shape-reference)
 - [Sphere Shape](../shape/sphere-shape)
 - [Tube Shape](../shape/tube-shape)
 
