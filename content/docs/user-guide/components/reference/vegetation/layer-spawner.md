@@ -24,8 +24,8 @@ For information on how to use the Vegetation Layer Spawner, see [Dynamic vegetat
 ## Dependencies
 
 Add the following required components when using the Vegetation Layer Spawner component:
-- One the following [**Shape**](./../shape/) components, [**Axis Aligned Box**](./../shape/axis-aligned-box-shape), [**Box**](./../shape/box-shape), [**Capsule**](./../shape/capsule-shape), [**Compound**](./../shape/compound-shape), [**Cylinder**](./../shape/cylinder-shape), [**Disk**](./../shape/disk-shape), [**Polygon Prism**](./../shape/polygon-prism-shape), [**Quad**](./../shape/quad-shape), [**Shape Reference**](./../shape/shape-reference), [**Sphere**](./../shape/sphere-shape), or [**Tube**](./../shape/tube-shape),  to define the vegetation's spawn area.
-- A [**Vegetation Asset List**](vegetation-asset-list)  or [**Vegetation Asset List Combiner**](vegetation-asset-list-combiner) component to list mesh assets, material assets, and other settings for the vegetation.
+- One of the following [**Shape**](./../shape/) components: [**Axis Aligned Box**](./../shape/axis-aligned-box-shape), [**Box**](./../shape/box-shape), [**Capsule**](./../shape/capsule-shape), [**Compound**](./../shape/compound-shape), [**Cylinder**](./../shape/cylinder-shape), [**Disk**](./../shape/disk-shape), [**Polygon Prism**](./../shape/polygon-prism-shape), [**Quad**](./../shape/quad-shape), [**Shape Reference**](./../shape/shape-reference), [**Sphere**](./../shape/sphere-shape), or [**Tube**](./../shape/tube-shape),  to define the vegetation's spawn area.
+- A [**Vegetation Asset List**](vegetation-asset-list) or [**Vegetation Asset List Combiner**](vegetation-asset-list-combiner) component to list mesh assets, material assets, and other settings for the vegetation.
 
 ## Vegetation Layer Spawner properties
 
