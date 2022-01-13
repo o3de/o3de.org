@@ -8,7 +8,7 @@ blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: "/images/blog/o3de-2111-release-blog-image.png"
 ---
 
-Learn about how Amazon Web Services developed the first-time user experience for Open 3D Engine (O3DE) from Bhanuja Sanghani, one of the UX designers contributing to O3DE.
+Learn about how Amazon Web Services developed the first-time user experience for Open 3D Engine (O3DE) from Bhanuja Sanghavi, one of the UX designers contributing to O3DE.
 
 ## Explore the Past, Present, & Future of O3DE's First-time User Experience
 
