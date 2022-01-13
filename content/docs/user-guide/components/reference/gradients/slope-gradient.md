@@ -1,8 +1,10 @@
 ---
 linktitle: Slope Gradient
 title: Slope Gradient Component
-description: ' Using Gradients components in Open 3D Engine (O3DE). '
+description: Use the Slope Gradient component to generate a gradient from a range of surface slopes in Open 3D Engine (O3DE).
 ---
+
+Add the **Slope Gradient** component to generate a normalized gradient from a slope range.  The output gradient may be optionally constrained by surface tags.
 
 ## Provider
 
@@ -33,3 +35,20 @@ description: ' Using Gradients components in Open 3D Engine (O3DE). '
 | **Falloff Midpoint** | Sets the midpoint of falloff values. | Float: 0.0 - 1.0 | `0.5` |
 | **Falloff Range** | Sets the range of falloff. | Float: 0.0 - 1.0 | `0.5` |
 | **Falloff Softness** | Sets the amount of smoothing applied to falloff values. | Float: 0.0 - 1.0 | `0.25` |
+
+## SurfaceSlopeGradientRequestBus
+
+Use the following request functions with the `SurfaceSlopeGradientRequestBus` EBus interface to communicate with Slope Gradient components in your game.
+
+| Request Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `AddTag` | Adds a surface tag to the **Surface Tags to track** array. | Surface Tag: String | None | Yes |
+| `GetNumTags` | Returns the number of tags in the **Surface Tags to track** array. | None | Count: Integer | Yes |
+| `GetRampType` | Returns the value of the **Ramp Type** property. | None | Ramp Type Index: Integer | Yes |
+| `GetSlopeMax` | Returns the value of the **Slope Max** property. | None | Float | Yes |
+| `GetSlopeMin` | Returns the value of the **Slope Min** property. | None | Float | Yes |
+| `GetTag` | Returns the surface tag at the specified index of the **Surface Tags to track** array. | Surface Tag Index: Integer | Surface Tag: String | Yes |
+| `RemoveTag` | Removes the surface tag at the specified index of the **Surface Tags to track** array. | Surface Tag Index: Integer | None | Yes |
+| `SetRampType` | Sets the value of the **Ramp Type** property. | Ramp Type Index: Integer | None | Yes |
+| `SetSlopeMax` | Sets the value of the **Slope Max** property. | Float | None | Yes |
+| `SetSlopeMin` | Sets the value of the **Slope Min** property. | Float | None | Yes |

@@ -1,8 +1,10 @@
 ---
 linktitle: Reference Gradient
 title: Reference Gradient Component
-description: ' Using Gradients components in Open 3D Engine (O3DE). '
+description: Use the Reference Gradient component to reference and re-use gradients in Open 3D Engine (O3DE).
 ---
+
+Add the **Reference Gradient** component to reference and re-use gradients in your **Open 3D Engine (O3DE)** level.
 
 ## Provider
 
@@ -47,4 +49,4 @@ Use the following request functions with the `ReferenceGradientRequestBus` EBus 
 
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
-| `GetGradientSampler` | Returns the gradient sampler object of the entity selected in **Gradient Entity Id** . | None | Gradient Sampler | Yes |
+| `GetGradientSampler` | Returns the gradient sampler object of the entity selected in **Gradient Entity Id**. | None | Gradient Sampler | Yes |

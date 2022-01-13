@@ -1,8 +1,10 @@
 ---
 linktitle: Image Gradient
 title: Image Gradient Component
-description: ' Using Gradients components in Open 3D Engine (O3DE). '
+description: Use the Image Gradient component to generate a gradient from an image in Open 3D Engine (O3DE).
 ---
+
+Add the **Image Gradient** component to generate a gradient from an image, with the option to tile the image horizontally or vertically.
 
 ## Provider
 

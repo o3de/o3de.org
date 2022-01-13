@@ -1,8 +1,10 @@
 ---
 linktitle: Perlin Noise Gradient
 title: Perlin Noise Gradient Component
-description: ' Using Gradients components in Open 3D Engine (O3DE). '
+description: Use the Perlin Noise Gradient component to generate a gradient from a perlin noise algorithm in Open 3D Engine (O3DE).
 ---
+
+Add the **Perlin Noise Gradient** component to generate a gradient with perlin noise.
 
 ## Provider
 
@@ -24,8 +26,6 @@ description: ' Using Gradients components in Open 3D Engine (O3DE). '
 | **Preview Position** | Sets the world location of the preview.<br> <br>*This field is available only if there is no entity selected in **Pin Preview to Shape**.* | Vector3: -Infinity to Infinity | X:`0.0`, Y:`0.0`, Z:`0.0` |
 | **Preview Size** | Sets the dimensions of the preview. | Vector3: 0.0 to Infinity | X:`1.0`, Y:`1.0`, Z:`1.0` |
 | **Constrain to Shape** | If `Enabled`, the gradient preview will use the bounds of the entity selected in **Pin Preview to Shape**.<br> <br>*This field is available only if an entity is selected in **Pin Preview to Shape**.* | Boolean | `Disabled` |
-| **Noise Type** | Sets the noise generation algorithm used to generate the gradient. | `Value`, `Value Fractal`, `Perlin`, `Perlin Fractal`, `Simplex`, `Simplex Fractal`, `Cellular`, `White Noise`, `Cubic`, or `Cubic Fractal` |
-`Perlin Fractal` |
 | **Random Seed** | Sets the seed value for the noise generation algorithm. Each value generates a distinct pattern of noise. | Integer: 1 to Infinity | `1` |
 | **Octaves** | Sets the number of recursions of pattern generation. | Integer: 0 - 16 | `1` |
 | **Amplitude** | Increases contrast between high and low gradient values. | Float: 0.0 to Infinity | `1.0` |

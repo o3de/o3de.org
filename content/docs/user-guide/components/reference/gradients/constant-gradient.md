@@ -1,8 +1,10 @@
 ---
 linktitle: Constant Gradient
 title: Constant Gradient Component
-description: ' Using Gradients components in Open 3D Engine (O3DE). '
+description: Use the Constant Gradient component to generate a gradient with the same value in Open 3D Engine (O3DE).
 ---
+
+Add the **Constant Gradient** component to create an output gradient with the same value.
 
 ## Provider
 

@@ -1,8 +1,10 @@
 ---
 linktitle: FastNoise Gradient
 title: FastNoise Gradient Component
-description: ' Using Gradients components in Open 3D Engine (O3DE). '
+description: Use the FastNoise Gradient component to generate a gradient with the FastNoise noise generation library in Open 3D Engine (O3DE).
 ---
+
+Add the **FastNoise Gradient** component to use one of the noise generation algorithms from the [FastNoise](https://github.com/Auburn/FastNoiseLite) library to generate a gradient.  The noise generation algorithm is set in the component's **Noise Type** property.
 
 ## Provider
 

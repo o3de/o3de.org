@@ -1,8 +1,10 @@
 ---
 linktitle: Shape Falloff Gradient
 title: Shape Falloff Gradient Component
-description: ' Using Gradients components in Open 3D Engine (O3DE). '
+description: Use the Shape Falloff Gradient component to generate a gradient of a shape with falloff in Open 3D Engine (O3DE).
 ---
+
+Add the **Shape Falloff Gradient** component to generate a gradient of a shape surrounded by a configurable falloff.
 
 ## Provider
 
@@ -21,3 +23,16 @@ description: ' Using Gradients components in Open 3D Engine (O3DE). '
 | **Constrain to Shape** | If `Enabled`, the gradient preview will use the bounds of the entity selected in **Pin Preview to Shape**.<br> <br>*This field is available only if an entity is selected in **Pin Preview to Shape**.* | Boolean | `Disabled` |
 | **Shape Entity Id** | Sets the shape that this component will generate a falloff gradient around. | EntityId | None |
 | **Falloff Width** | Sets the maximum distance (in meters) of the falloff. | Float: 0.0 - 100.0 | `1.0` |
+
+## ShapeAreaFalloffGradientRequestBus
+
+Use the following request functions with the `ShapeAreaFalloffGradientRequestBus` EBus interface to communicate with Shape Falloff Gradient components in your game.
+
+| Request Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetFalloffType` | Returns the value of the **Falloff Type** property. | None | Falloff Type Index: Integer | Yes |
+| `GetFalloffWidth` | Returns the value of the **Falloff Width** property. | None | Float | Yes |
+| `GetShapeEntityId` | Returns the value of the **Pin Preview to Shape** property. | None | EntityId | Yes |
+| `SetFalloffType` | Sets the value of the **Falloff Type** property. | Falloff Type Index: Integer | None | Yes |
+| `SetFalloffWidth` | Sets the value of the **Falloff Width** property. | Float | None | Yes |
+| `SetShapeEntityId` | Sets the value of the **Pin Preview to Shape** property. | EntityId | None | Yes |

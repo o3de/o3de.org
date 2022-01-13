@@ -1,8 +1,10 @@
 ---
 linktitle: Altitude Gradient
 title: Altitude Gradient Component
-description: ' Using Gradients components in Open 3D Engine (O3DE). '
+description: Use the Altitude Gradient component to generate a gradient from an altitude range in Open 3D Engine (O3DE).
 ---
+
+Add the **Altitude Gradient** component to generate a normalized gradient from an altitude range.  The output gradient may be optionally constrained by surface tags.
 
 ## Provider
 
