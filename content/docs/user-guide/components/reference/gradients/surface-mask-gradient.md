@@ -14,8 +14,7 @@ description: ' Using Gradients components in Open 3D Engine (O3DE). '
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Preview** | Displays the outbound gradient of this component after all properties are applied. | | |
-| **Preview Settings** |  |  |  |
+| **Preview** | Displays the output gradient of this component after all properties are applied. | | |
 | **Pin Preview to Shape** | Sets an entity with a compatible Shape component to use as the bounds of the preview if **Constrain to Shape** is `Enabled`. | EntityId | Current Entity |
 | **Preview Position** | Sets the world location of the preview.<br> <br>*This field is available only if there is no entity selected in **Pin Preview to Shape**.* | Vector3: -Infinity to Infinity | X:`0.0`, Y:`0.0`, Z:`0.0` |
 | **Preview Size** | Sets the dimensions of the preview. | Vector3: 0.0 to Infinity | X:`1.0`, Y:`1.0`, Z:`1.0` |
