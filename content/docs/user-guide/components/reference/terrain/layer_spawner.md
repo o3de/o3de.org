@@ -9,7 +9,7 @@ The **Terrain Layer Spawner** component spawns a terrain layer within given boun
 
 ## Usage 
 
-The priority is controlled by first assigning a layer, either **Foregound**(Highest priority) or **Background**, and then by using the **Priority** setting, with a higher number being a higher priority.  You can configure the dimensions of the layer by modifying the [**Axis Aligned Box Shape** component](/docs/user-guide/components/reference/shape/axis-aligned-box-shape) on the same entity. 
+The priority is controlled by first assigning a layer, either **Foregound**(Highest priority) or **Background**, and then by using the **Priority** setting, with a higher number being a higher priority.  You can configure the dimensions of the layer by modifying the [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape) component on the same entity. 
 
 ## Provider
 
@@ -17,7 +17,7 @@ The priority is controlled by first assigning a layer, either **Foregound**(High
 
 ## Dependencies
 
-The [Axis-Aligned Box Shape component](/docs/user-guide/components/reference/shape/axis-aligned-box-shape) is required for the Terrain Layer Spawner to operate.
+The [Axis-Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape) component is required for the Terrain Layer Spawner to operate.
 
 ## Properties
 

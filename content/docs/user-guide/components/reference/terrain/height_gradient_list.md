@@ -4,7 +4,7 @@ linktitle: Terrain Height Gradient List
 description: Use the Terrain Height Gradient List component in your Open 3D Engine (O3DE) level to convert gradients to height data.
 ---
 
-The **Terrain Height Gradient List** provides height data for the terrain system from a list of one or more gradients. The range of heights is adjusted by scaling the height of the [Axis Aligned Box Shape Component](/docs/user-guide/components/reference/shape/axis-aligned-box-shape) on the same entity.
+The **Terrain Height Gradient List** provides height data for the terrain system from a list of one or more gradients. The range of heights is adjusted by scaling the height of the [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape) component on the same entity.
 
 ## Provider
 
@@ -12,7 +12,7 @@ The **Terrain Height Gradient List** provides height data for the terrain system
 
 ## Dependencies
 
-[Axis Aligned Box Shape component](/docs/user-guide/components/reference/shape/axis-aligned-box-shape)
+[Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape)
 
 ## Terrain Height Gradient List properties
 
