@@ -1,9 +1,9 @@
 ---
-title: "Open 3D Foundation announces first major release of Open 3D Engine"
-description: "Simulation developers can now create 3D content with the new Linux editor and engine runtime, and a new Debian package and Windows installer provide a faster route to getting started with the engine."
+title: "Explore the Past, Present, & Future of O3DE's First-time User Experience"
+description: "Learn about how Amazon Web Services developed the first-time user experience for Open 3D Engine (O3DE) from Bhanuja Sanghavi, one of the UX designers contributing to O3DE."
 date: 2022-1-14
-slug: o3de-2111-announcement
-author: Bhanuja Snaghavi, Amazon Web Services
+slug: o3de-ftue-blog-post-1
+author: Bhanuja Sanghavi, Amazon Web Services
 blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: "/images/blog/o3de-2111-release-blog-image.png"
 ---
