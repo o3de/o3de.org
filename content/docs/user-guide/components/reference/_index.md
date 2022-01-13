@@ -120,12 +120,12 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | - | - |
 | [Dither Gradient Modifier](./gradient-modifiers/dither-gradient-modifier) | Applies ordered dithering to the input gradient. |
 | [Gradient Mixer](./gradient-modifiers/gradient-mixer) | Generates a new gradient by combining other gradients. |
-| [Gradient Transform Modifier](./gradient-modifiers/gradient-transform-modifier) | Transforms the entity's coordinates into a space that is relative to a shape. You can then apply other transform and sampling modifications using this altered coordinate space. |
+| [Gradient Transform Modifier](./gradient-modifiers/gradient-transform-modifier) | Creates a coordinate space for the gradient based on a **Shape** component. Modifiers for the input gradient are applied in this space. |
 | [Invert Gradient Modifier](./gradient-modifiers/invert-gradient-modifier) | Inverts a gradient's values. |
 | [Levels Gradient Modifier](./gradient-modifiers/levels-gradient-modifier) | Modifies an input gradient's signal using low/mid/high points and allows clamping of min/max output values. |
 | [Posterize Gradient Modifier](./gradient-modifiers/posterize-gradient-modifier) | Divides an input gradient's signal into a specified number of bands.|
-| [Smooth-Step Gradient Modifier](./gradient-modifiers/smooth-step-gradient-modifier) | Generates a gradient fall off, which creates a smoother input gradient. |
-| [Threshold Gradient Modifier](./gradient-modifiers/threshold-gradient-modifier) | Converts input gradient to be 0 if the value is below the threshold, and 1 if the value is above the threshold. |
+| [Smooth-Step Gradient Modifier](./gradient-modifiers/smooth-step-gradient-modifier) | Generates a gradient fall off that smooths the input gradient. |
+| [Threshold Gradient Modifier](./gradient-modifiers/threshold-gradient-modifier) | Applies a threshold value to an input gradient to generate an output gradient that has only two values. Input gradient values above the threshold are set to 1 and input values at or below the threshold are set to 0. |
 
 ### Gradients
 

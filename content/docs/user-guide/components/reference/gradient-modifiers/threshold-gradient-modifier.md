@@ -4,7 +4,7 @@ title: Threshold Gradient Modifier Component
 description: Use the Threshold Gradient Modifier component to convert a gradient's values to either `0` or `1` based on a threshold in Open 3D Engine (O3DE).
 ---
 
-The **Threshold Gradient Modifier** component evaluates an incoming gradient to only two values, `0` and `1`.  Gradient values above the threshold evaluate to `1`, gradient values below the threshold evaluate to `0`.
+The **Threshold Gradient Modifier** component applies a threshold value to an input gradient to generate an output gradient that has only two values. Input gradient values above the threshold are set to 1 and input values at or below the threshold are set to 0.
 
 ## Provider
 
@@ -20,8 +20,8 @@ The **Threshold Gradient Modifier** component evaluates an incoming gradient to 
 | **Pin Preview to Shape** | Sets an entity with a compatible Shape component to use as the bounds of the preview if **Constrain to Shape** is `Enabled`. | EntityId | Current Entity |
 | **Preview Position** | Sets the world location of the preview.<br> <br>*This field is available only if there is no entity selected in **Pin Preview to Shape**.* | Vector3: -Infinity to Infinity | X:`0.0`, Y:`0.0`, Z:`0.0` |
 | **Preview Size** | Sets the dimensions of the preview. | Vector3: 0.0 to Infinity | X:`1.0`, Y:`1.0`, Z:`1.0` |
-| **Constrain to Shape** | If `Enabled`, the gradient preview will use the bounds of the entity selected in **Pin Preview to Shape**.<br> <br>*This field is available only if an entity is selected in **Pin Preview to Shape**.* | Boolean | `Disabled` |
-| **Threshold** | Sets the value of the threshold, if a gradients value is less than the threshold, it will be evaluated as `0.0` instead.  Gradient values above the threshold will be evaluated as `1.0`. | Float: 0.0 - 1.0 | `0.5` |
+| **Constrain to Shape** | If `Enabled`, the gradient preview uses the bounds of the entity selected in **Pin Preview to Shape**.<br> <br>*This field is available only if an entity is selected in **Pin Preview to Shape**.* | Boolean | `Disabled` |
+| **Threshold** | Sets the value of the threshold. If an input gradient's value is less than or equal to the threshold value, it is set to `0.0`.  Input gradient values above the threshold are evaluated as `1.0`. | Float: 0.0 - 1.0 | `0.5` |
 | **Gradient** | Refer to [Gradient properties](#gradient-properties) below. | | |
 
 ### Gradient properties

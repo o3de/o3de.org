@@ -41,7 +41,7 @@ When applying Gradient Transform Modifier to an entity, the entity is required t
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Sample in 3D** | If `Enabled`, UVW mapping will be based on three-dimensional world space. | Boolean | `Disabled` |
+| **Sample in 3D** | If `Enabled`, UVW mapping is based on three-dimensional world space. | Boolean | `Disabled` |
 | **Allow Reference** | If `Enabled`, the bounds and transform provided by the attached **Shape** component are overridden by the entity selected in **Shape Reference**. | Boolean | `Disabled` |
 | **Shape Reference** | Sets an entity with a valid shape component to override the attached Shape component. | EntityId | None |
 | **Override Bounds** | If `Enabled`, the bounds of the gradient are set manually in **Bounds**. | Boolean | `Disabled` |
