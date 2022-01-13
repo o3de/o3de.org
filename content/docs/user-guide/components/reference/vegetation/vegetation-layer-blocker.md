@@ -14,7 +14,7 @@ Create an area where dynamic vegetation cannot spawn with the **Vegetation Layer
 ## Dependencies
 
 Add the following required components when using the Vegetation Layer Blocker component:
-- One of the following [**Shape**](./../shape/) components: [**Axis Aligned Box**](./../shape/axis-aligned-box-shape), [**Box**](./../shape/box-shape), [**Capsule**](./../shape/capsule-shape), [**Compound**](./../shape/compound-shape), [**Cylinder**](./../shape/cylinder-shape), [**Disk**](./../shape/disk-shape), [**Polygon Prism**](./../shape/polygon-prism-shape), [**Quad**](./../shape/quad-shape), [**Shape Reference**](./../shape/shape-reference), [**Sphere**](./../shape/sphere-shape), or [**Tube**](./../shape/tube-shape),  to define the blocker's area.
+- One of the following [Shape](./../shape/) components: [Axis Aligned Box](./../shape/axis-aligned-box-shape), [Box](./../shape/box-shape), [Capsule](./../shape/capsule-shape), [Compound](./../shape/compound-shape), [Cylinder](./../shape/cylinder-shape), [Disk](./../shape/disk-shape), [Polygon Prism](./../shape/polygon-prism-shape), [Quad](./../shape/quad-shape), [Shape Reference](./../shape/shape-reference), [Sphere](./../shape/sphere-shape), or [Tube](./../shape/tube-shape),  to define the blocker's area.
 
 ## Vegetation Layer Blocker properties
 

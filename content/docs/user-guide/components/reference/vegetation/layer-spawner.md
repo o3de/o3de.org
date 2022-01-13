@@ -11,9 +11,9 @@ With the Vegetation Layer Spawner component, you can do the following:
 - Create vegetation within a user-defined area at runtime.
 - Configure layer settings to determine the depth or relative ordering in which to apply vegetation layers.
 - Add [Vegetation Modifier](./../vegetation-modifiers/) and [Vegetation Filter](./../vegetation-filters/) components to add variation to placed vegetation.
-- Use the [**Vegetation Asset Weight Selector**](vegetation-asset-weight-selector) component to determine which vegetation assets to place at a given location.
+- Use the [Vegetation Asset Weight Selector](vegetation-asset-weight-selector) component to determine which vegetation assets to place at a given location.
 - Control the preview settings for attached components.
-Inherit behavior from a parent [**Vegetation Layer Blender**](vegetation-layer-blender) component.
+Inherit behavior from a parent [Vegetation Layer Blender](vegetation-layer-blender) component.
 
 For information on how to use the Vegetation Layer Spawner, see [Dynamic vegetation](/docs/user-guide/gems/reference/environment/vegetation/).
 
@@ -24,8 +24,8 @@ For information on how to use the Vegetation Layer Spawner, see [Dynamic vegetat
 ## Dependencies
 
 Add the following required components when using the Vegetation Layer Spawner component:
-- One of the following [**Shape**](./../shape/) components: [**Axis Aligned Box**](./../shape/axis-aligned-box-shape), [**Box**](./../shape/box-shape), [**Capsule**](./../shape/capsule-shape), [**Compound**](./../shape/compound-shape), [**Cylinder**](./../shape/cylinder-shape), [**Disk**](./../shape/disk-shape), [**Polygon Prism**](./../shape/polygon-prism-shape), [**Quad**](./../shape/quad-shape), [**Shape Reference**](./../shape/shape-reference), [**Sphere**](./../shape/sphere-shape), or [**Tube**](./../shape/tube-shape),  to define the vegetation's spawn area.
-- A [**Vegetation Asset List**](vegetation-asset-list) or [**Vegetation Asset List Combiner**](vegetation-asset-list-combiner) component to list mesh assets, material assets, and other settings for the vegetation.
+- One of the following [Shape](./../shape/) components: [Axis Aligned Box](./../shape/axis-aligned-box-shape), [Box](./../shape/box-shape), [Capsule](./../shape/capsule-shape), [Compound](./../shape/compound-shape), [Cylinder](./../shape/cylinder-shape), [Disk](./../shape/disk-shape), [Polygon Prism](./../shape/polygon-prism-shape), [Quad](./../shape/quad-shape), [Shape Reference](./../shape/shape-reference), [Sphere](./../shape/sphere-shape), or [Tube](./../shape/tube-shape),  to define the vegetation's spawn area.
+- A [Vegetation Asset List](vegetation-asset-list) or [Vegetation Asset List Combiner](vegetation-asset-list-combiner) component to list mesh assets, material assets, and other settings for the vegetation.
 
 ## Vegetation Layer Spawner properties
 
