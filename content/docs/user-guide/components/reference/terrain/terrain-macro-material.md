@@ -9,7 +9,7 @@ The **Terrain Terrain Macro Material** component provides a method of defining a
 
 ## Usage
 
-You assign a color and a normal texture by dragging texture assets to the **Color Texture** or **Normal Texture** fields, or by clicking {{< icon "file-folder.svg" >}}. Once the textures are assigned, you can adjust the appearance by using the **Normal Flip X** and **Normal Flip Y** toggles, and adjust the strength of the normals by using the **Normal Factor** slider. You can configure the dimensions of the region by adjusting the [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape).
+You assign a color and a normal texture by dragging texture assets to the **Color Texture** or **Normal Texture** fields, or by clicking {{< icon "file-folder.svg" >}}. Once the textures are assigned, you can adjust the appearance by using the **Normal Flip X** and **Normal Flip Y** toggles, and adjust the strength of the normals by using the **Normal Factor** slider. You can configure the dimensions of the region by adjusting the [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape) component.
 
 ## Provider
 

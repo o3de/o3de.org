@@ -5,7 +5,7 @@ description: 'Open 3D Engine (O3DE) Terrain Surface Materials List component ref
 weight: 100
 ---
 
-The **Terrain Surface Materials List** component defines mappings between surface types and render materials.  You can use this to change the appearance of a surface type within different areas of your game. When you assign a material to a surface type, all the visible surfaces of that type, within the bounds of the required [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape/), will adopt that material.
+The **Terrain Surface Materials List** component defines mappings between surface types and render materials.  You can use this to change the appearance of a surface type within different areas of your game. When you assign a material to a surface type, all the visible surfaces of that type, within the bounds of the required [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape/) component, will adopt that material.
 
 
 ## Usage
