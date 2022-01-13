@@ -14,7 +14,7 @@ Create an area around a mesh or actor where dynamic vegetation cannot spawn with
 ## Dependencies
 
 Add one of the following required components when using the Vegetation Layer Blocker (Mesh) component:
-- A [**Mesh**](./../atom/mesh/) component or an [**Actor**](./../animation/actor/) component, to define the blocker's area.
+- A [Mesh](./../atom/mesh/) component or an [Actor](./../animation/actor/) component, to define the blocker's area.
 
 ## Vegetation Layer Blocker (Mesh) properties
 
