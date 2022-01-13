@@ -69,18 +69,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleInputChannelEve
 <tr class="memitem:afaf2bdbb03244f79b07d1f0a3aebc0bc"><td class="memItemLeft" align="right" valign="top"><a id="afaf2bdbb03244f79b07d1f0a3aebc0bc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateViewport</b> (const AzFramework::ViewportControllerUpdateEvent &amp;event) override</td></tr>
 <tr class="separator:afaf2bdbb03244f79b07d1f0a3aebc0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a162fe98c387d937ef193a4f8df211e07"><td class="memItemLeft" align="right" valign="top"><a id="a162fe98c387d937ef193a4f8df211e07"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InterpolateToTransform</b> (const AZ::Transform &amp;worldFromLocal) override</td></tr>
-<tr class="separator:a162fe98c387d937ef193a4f8df211e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd197bcc0eac3edd21fb9f75068cc7fe"><td class="memItemLeft" align="right" valign="top"><a id="abd197bcc0eac3edd21fb9f75068cc7fe"></a>
-AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><b>GetReferenceFrame</b> () const override</td></tr>
-<tr class="separator:abd197bcc0eac3edd21fb9f75068cc7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b366b9dbcf71296fc8cb8c1bbfe776b"><td class="memItemLeft" align="right" valign="top"><a id="a3b366b9dbcf71296fc8cb8c1bbfe776b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetReferenceFrame</b> (const AZ::Transform &amp;worldFromLocal) override</td></tr>
-<tr class="separator:a3b366b9dbcf71296fc8cb8c1bbfe776b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0a87beae523228c85a57831cb5a00a4"><td class="memItemLeft" align="right" valign="top"><a id="ab0a87beae523228c85a57831cb5a00a4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearReferenceFrame</b> () override</td></tr>
-<tr class="separator:ab0a87beae523228c85a57831cb5a00a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a549c8ba41fb35dd179c23443807a0d04"><td class="memItemLeft" align="right" valign="top"><a id="a549c8ba41fb35dd179c23443807a0d04"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>InterpolateToTransform</b> (const AZ::Transform &amp;worldFromLocal) override</td></tr>
+<tr class="separator:a549c8ba41fb35dd179c23443807a0d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa92631c7a62c3d37e6e6f384c69c0e2d"><td class="memItemLeft" align="right" valign="top"><a id="aa92631c7a62c3d37e6e6f384c69c0e2d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInterpolating</b> () const override</td></tr>
+<tr class="separator:aa92631c7a62c3d37e6e6f384c69c0e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3097908e194a6e6db30de101dea3e5d7"><td class="memItemLeft" align="right" valign="top"><a id="a3097908e194a6e6db30de101dea3e5d7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartTrackingTransform</b> (const AZ::Transform &amp;worldFromLocal) override</td></tr>
+<tr class="separator:a3097908e194a6e6db30de101dea3e5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8e9ef5c2ef8cacf32827433f4599a7"><td class="memItemLeft" align="right" valign="top"><a id="a2d8e9ef5c2ef8cacf32827433f4599a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StopTrackingTransform</b> () override</td></tr>
+<tr class="separator:a2d8e9ef5c2ef8cacf32827433f4599a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a873db61dfb931ff69ebc24dbb161c085"><td class="memItemLeft" align="right" valign="top"><a id="a873db61dfb931ff69ebc24dbb161c085"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTrackingTransform</b> () const override</td></tr>
+<tr class="separator:a873db61dfb931ff69ebc24dbb161c085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A customizable camera controller that can be configured to run a varying set of CameraInput instances. The controller can also be animated from its current transform to a new translation and orientation. </p>
@@ -90,7 +93,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearReferenceFrame</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 13 2021 14:20:12 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 1 2021 13:15:53 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

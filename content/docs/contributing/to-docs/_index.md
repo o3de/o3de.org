@@ -22,7 +22,7 @@ Wondering where to start? The conveniently titled [Get Started](./get-started) t
 |---|---|
 | [Get Started](./get-started) | A high-level overview of the O3DE docs contribution process. |
 | [Work with Issues](./work-with-issues) | How to create and work with issues in the O3DE docs project. |
-| [Set up a Local O3DE Docs Repo](./o3de-docs-repo-setup) | A step-by-step guide to setting up and maintaining your O3DE docs repo. |
+| [Set Up a Local O3DE Docs Repo](./o3de-docs-repo-setup) | A step-by-step guide to setting up and maintaining your O3DE docs repo. |
 | [Docs Contribution Runbook](./git-workflow) | Get the Git commands for the basic workflow. |
 | [O3DE Docs Structure](./o3de-docs-structure) | Need guidance on navigating the repository? This map will help. |
 | [Submit a PR](./submit-a-pr) | Navigate the pitfalls of making submissions to O3DE docs. |

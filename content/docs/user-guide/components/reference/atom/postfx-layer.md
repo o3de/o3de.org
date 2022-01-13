@@ -1,5 +1,5 @@
 ---
-title: PostFX Layer component
+title: PostFX Layer Component
 linktitle: PostFX Layer
 description: 'Open 3D Engine (O3DE) PostFX Layer component reference.'
 toc: true

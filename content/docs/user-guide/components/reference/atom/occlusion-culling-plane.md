@@ -1,5 +1,5 @@
 ---
-title: Occlusion Culling Plane component
+title: Occlusion Culling Plane Component
 linktitle: Occlusion Culling Plane
 description: 'Open 3D Engine (O3DE) Occlusion Culling Plane component reference.'
 toc: true

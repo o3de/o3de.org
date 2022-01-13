@@ -6,7 +6,7 @@ weight: 400
 ---
 
 This guide will help you identify and resolve some common issues that you might encounter with the **Open 3D Engine (O3DE)** build system.
-Be aware that you might come across situations unique to your project or build that aren't addressed here. This reference is only for the most frequent build issues that aren't affected by a known bug, or can't easily be worked around. If you don't find your problem covered here, try searching our [forums](https://github.com/o3de/o3de/discussions) or asking in the [O3DE discord](https://discord.gg/xNb2q4SJKJ).
+Be aware that you might come across situations unique to your project or build that aren't addressed here. This reference is only for the most frequent build issues that aren't affected by a known bug, or can't easily be worked around. If you don't find your problem covered here, try searching [our forums](https://github.com/o3de/o3de/discussions) or asking in the [O3DE Discord](https://{{< links/o3de-discord >}}).
 
 If you believe your build problem is due to a bug in O3DE, check [existing bug reports](https://github.com/o3de/o3de/issues) and [file an issue](https://github.com/o3de/o3de/issues/new/choose) if you can!
 
@@ -69,7 +69,7 @@ Call Stack (most recent call first):
   CMakeLists.txt:43 (include)-- Configuring incomplete, errors occurred!
 ```
 
-**Remedy:** This issue is caused when the `LY_3RDPARTY_PATH` value passed to CMake ends in a `\` character. Do one of the following:
+**Remedy:** This issue is caused on Windows when the `LY_3RDPARTY_PATH` value passed to CMake ends in a `\` character. Do one of the following:
 
 * Change the value to remove the trailing `\`.
 * Change the format of your `LY_3RDPARTY_PATH` to use the platform-agnostic `/` path separator.

@@ -21,7 +21,7 @@ This tutorial uses the following project name and directories in the examples:
 - O3DE engine directory: `C:\o3de`
 - Atom Test project directory: `C:\AtomTest`
 - Atom Sample Viewer project directory: `C:\AtomSampleViewer`
-- Package directory (created earlier during [setup](/docs/welcome-guide/setup/setup-from-github/#create-a-packages-directory)): `C:\o3de-packages`
+- Package directory (created earlier during [setup](/docs/welcome-guide/setup/setup-from-github/)): `C:\o3de-packages`
 
 ## Clone project repos
 
@@ -103,7 +103,7 @@ You are all set up to explore Atom with the Atom Sample Viewer project! Check ou
 1. Use CMake to build the project launcher, O3DE Editor, and Asset Processor. The following command builds using the profile configuration. When specifying the Editor as a build target, the Asset Processor will be built too, since it is a dependency of the Editor.
 
     ```cmd
-    cmake --build "C:\AtomTest\build" --target AtomTest.GameLauncher Editor --config profile -- /m
+    cmake --build "C:\AtomTest\build" --target AtomTest.GameLauncher Editor --config profile -- -m
     ```
 
 2. When the project is done building, you can find the build files in the directory `C:\AtomTest\build\bin\profile`. From there, you can launch `Editor.exe`, `AssetProcessor.exe`, and other tools. 

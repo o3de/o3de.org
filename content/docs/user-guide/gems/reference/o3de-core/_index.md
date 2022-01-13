@@ -22,10 +22,6 @@ The O3DE Core (LmbrCentral) Gem contains required code and assets for running **
 
 * [Comment component](/docs/user-guide/components/reference/editor/comment)
 
-* Spawner components
-    * Spawner
-    * Random Timed Spawner
-
 * [Simple State component](/docs/user-guide/components/reference/gameplay/simple-state)
 
 * Asset Types

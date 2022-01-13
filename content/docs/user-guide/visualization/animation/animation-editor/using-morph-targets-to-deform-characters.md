@@ -13,7 +13,7 @@ In the **Animation Editor**, you can use morph targets with one of the following
 ## Prerequisites 
 
 To use morph targets in the **Animation Editor**, you must do the following:
-+ Prepare your asset for `.fbx` export. For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/).
++ Prepare your asset for `.fbx` export. For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/scene-settings/).
 + Create and animate morph targets on your character in your DCC tool (for example, Maya).
 + Export the character as an `.fbx` file.
 

@@ -1,6 +1,7 @@
 ---
+linkTitle: PhysX Hinge Joint
 description: ' Lean to use the Open 3D Engine PhysX Hinge Joint component. '
-title: PhysX Hinge Joint component
+title: PhysX Hinge Joint Component
 ---
 
 
