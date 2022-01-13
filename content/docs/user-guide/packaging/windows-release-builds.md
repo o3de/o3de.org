@@ -5,7 +5,7 @@ description: Learn how to create an Open 3D Engine (O3DE) project game release l
 toc: true
 ---
 
-This tutorial guides you through the process of creating an **Open 3D Engine (O3DE)** *project game release layout* for Windows PCs. A project game release layout is a directory structure that contains the **Game Launcher** and the bundled assets needed to run the Game Launcher outside of the developer environment. You create a project game release layout when you build your project for release, known as a *release build*.
+This tutorial guides you through the process of creating an **Open 3D Engine (O3DE)** *project game release layout* for Windows computers. A project game release layout is a directory structure that contains the **Game Launcher** and the bundled assets needed to run the Game Launcher outside of the developer environment. You create a project game release layout when you build your project for release, known as a *release build*.
 
 A release build requires *bundled content*, which includes cached product assets stored in package (`.pak`) files. Cached product assets are located in the project's `Cache\pc` directory. The Game Launcher loads the bundled content that makes up a project, such as its levels, objects, environments, and gameplay logic.
 
@@ -387,7 +387,7 @@ Run `GameLauncher.exe` from your project game release layout, which is located i
 
 ## Distribute your build
 
-To distribute your build to other Windows devices:
+To distribute your build to other Windows computers:
 
 1. Create a zip folder of the `<install>\bin\Windows\release\<build>` folder. 
 
@@ -404,7 +404,7 @@ To distribute your build to other Windows devices:
                 
 2. Distribute the zip folder in your preferred method such as through a file storage service. 
 
-3. To run the Game Launcher on the other Windows device, it must have [Microsoft Visual C++ (MSVC) Redistributable](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-160) installed.
+3. To run the Game Launcher on the other Windows computers, it must have [Microsoft Visual C++ (MSVC) Redistributable](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-160) installed.
 
 
 
