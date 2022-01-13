@@ -12,10 +12,16 @@ A release build requires *bundled content*, which includes cached product assets
 The instructions here guide you through the following steps:
 
 1. Set the starting level.
+
 1. Process your project's assets.
-1. (Optional) Bundle your project's assets.
+
 1. Create a project game release layout.
+
+1. (Optional) Bundle your project's assets.
+
 1. Run your project's Game Launcher from the project game release layout.
+
+1. Distribute your build.
 
 
 ## Prerequisites
@@ -368,7 +374,7 @@ Next, add your `game_pc.pak` and `engine_pc.pak` files to your project game rele
 1. Add your new bundles: `game_bundle_pc.pak` and `engine_bundle_pc.pak`.
 
 
-## Run the game launcher
+## Run the Game Launcher
 
 Now you're ready to run your project's Game Launcher.
 
@@ -378,12 +384,33 @@ Run `GameLauncher.exe` from your project game release layout, which is located i
 
 - `C:\MyProject\install\bin\Windows\release\Monolithic` -- For monolithic projects.
 
-Now you can distribute your project to other Windows devices. To run the Game Launcher, you must install the [Microsoft Visual C++ (MSVC) Redistributable](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-160).
+
+## Distribute your build
+
+To distribute your build to other Windows devices:
+
+1. Create a zip folder of the `<install>\bin\Windows\release\<build>` folder. 
+
+    The contents of the zip folder should look similar to this: 
+
+        Monolithic
+        |   DevTestProject.GameLauncher.exe
+        |   PhysXDevice64.dll
+        |   PhysXGpu_64.dll
+        |   
+        \---Cache
+            \---pc
+            engine.pak
+                
+2. Distribute the zip folder in your preferred method such as through a file storage service. 
+
+3. To run the Game Launcher on the other Windows device, it must have [Microsoft Visual C++ (MSVC) Redistributable](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-160) installed.
+
 
 
 ## Debugging
 
-To help you debug if you encounter issues while building a project for release, try the following techniques.
+To help you debug issues you may encounter while building a project for release, try the following techniques.
 
 ### Compile with optimizations disabled and debug symbols enabled
 
