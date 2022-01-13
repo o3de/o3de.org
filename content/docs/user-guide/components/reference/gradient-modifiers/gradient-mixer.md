@@ -4,7 +4,7 @@ title: Gradient Mixer Component
 description: Use the Gradient Mixer component to combine gradients with operations in Open 3D Engine (O3DE).
 ---
 
-The **Gradient Mixer** component generates a new gradient from the combination of other gradients.  Operations define how a gradients will be combined.
+The **Gradient Mixer** component generates a new gradient by blending a number of input gradient layers with iayer blending operations.
 
 ## Provider
 
@@ -20,7 +20,7 @@ The **Gradient Mixer** component generates a new gradient from the combination o
 | **Pin Preview to Shape** | Sets an entity with a compatible Shape component to use as the bounds of the preview if **Constrain to Shape** is `Enabled`. | EntityId | Current Entity |
 | **Preview Position** | Sets the world location of the preview.<br> <br>*This field is available only if there is no entity selected in **Pin Preview to Shape**.* | Vector3: -Infinity to Infinity | X:`0.0`, Y:`0.0`, Z:`0.0` |
 | **Preview Size** | Sets the dimensions of the preview. | Vector3: 0.0 to Infinity | X:`1.0`, Y:`1.0`, Z:`1.0` |
-| **Constrain to Shape** | If `Enabled`, the gradient preview will use the bounds of the entity selected in **Pin Preview to Shape**.<br> <br>*This field is available only if an entity is selected in **Pin Preview to Shape**.* | Boolean | `Disabled` |
+| **Constrain to Shape** | If `Enabled`, the gradient preview uses the bounds of the entity selected in **Pin Preview to Shape**.<br> <br>*This field is available only if an entity is selected in **Pin Preview to Shape**.* | Boolean | `Disabled` |
 | **Layers** | An array of gradients and gradient operations to evaluate.  Gradient operations are applied in the same order as this array. |  |  |
 | **Layers - Enabled** | Toggles the influnce of this gradient layer. | Boolean | `Enabled` |
 | **Layers - Operation** | Sets the function that is used to mix this gradient layer with the previous result. | `Initialize`, `Multiply`, `Linear Dodge (Add)`, `Subtract`, `Darken (Min)`, `Lighten (Max)`, `Average`, `Normal`, or `Overlay`. | `Initialize` |
