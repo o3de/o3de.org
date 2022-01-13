@@ -14,10 +14,10 @@ Add the **Vegetation Slope Filter** component to restrict vegetation or blocker 
 ## Dependencies
 
 Add one of the following required components when using the Vegetation Slope Filter component:
-- [**Vegetation Layer Blender**](./../vegetation/vegetation-layer-blender)
-- [**Vegetation Layer Blocker**](./../vegetation/vegetation-layer-blocker)
-- [**Vegetation Layer Blocker (Mesh)**](./../vegetation/vegetation-layer-blocker-mesh)
-- [**Vegetation Layer Spawner**](./../vegetation/layer-spawner)
+- [Vegetation Layer Blender](./../vegetation/vegetation-layer-blender)
+- [Vegetation Layer Blocker](./../vegetation/vegetation-layer-blocker)
+- [Vegetation Layer Blocker (Mesh)](./../vegetation/vegetation-layer-blocker-mesh)
+- [Vegetation Layer Spawner](./../vegetation/layer-spawner)
 
 ## Vegetation Slope Filter properties
 
