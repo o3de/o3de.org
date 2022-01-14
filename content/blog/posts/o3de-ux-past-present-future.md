@@ -13,9 +13,9 @@ Learn about how Amazon Web Services developed the first-time user experience for
 ## Explore the Past, Present, & Future of O3DE's First-time User Experience
 
 ​
-Hello, I'm Bhanuja! Since September 2020, I have had the opportunity to work as a User Experience (UX) Design Intern for Amazon on its game engine Lumberyard, the predecessor to Open 3D Engine (O3DE). Over the past year, I have worked closely with the UX, Engineering, and Product teams to research the engine's First-time User Experience (FTUE), as well as the subsequent designed solutions to improve the ease and efficiency with which users set up, learn, and build with O3DE.
+Hello, I'm Bhanuja! Since September 2020, I have had the opportunity to work as a User Experience (UX) Design Intern for Amazon on its game engine Lumberyard, the predecessor to Open 3D Engine (O3DE). Over the past year, I have worked closely with the UX, Engineering, and Product teams to research the engine's First-time User Experience (FTUE), as well as the solutions to improve the ease and efficiency with which users set up, learn, and create with O3DE.
 ​
-From the instant game developers and content creators install the engine for the first time to the moment they begin to dive deep into O3DE's distinctive feature set, the FTUE is essential for shaping the user's path and, eventually, their success in building with O3DE. I'll explain what I mean.
+From the instant that game developers and content creators install the engine for the first time to the moment they begin to dive deep into O3DE's distinctive feature set, the FTUE is essential for shaping the user's path and, eventually, their success in building with O3DE. I'll explain what I mean.
 ​
 
 ### Why does First-time User Experience Matter?
@@ -23,13 +23,15 @@ From the instant game developers and content creators install the engine for the
 ​
 As humans, we tend to make snap judgements; our brains have evolved to do so. Why? So we can piece together information into understandable groups, and to help us avoid making poor decisions.
 ​
-What does this have to do with the first-time user experience? Simply put, users take less than a second to form their first opinion of a product, with only a few more seconds to reinforce this first impression. This means FTUE is the comprehensive set of thoughts, insights, and feelings that users experience through their first interaction with a product.
+What does this have to do with the first-time user experience? Simply put, users take less than a second to form their first opinion of a product, with only a few more seconds to reinforce this first impression. FTUE *is* the comprehensive set of thoughts, insights, and feelings that users experience through their first interaction with a product.
 ​
-We interpret FTUE as beginning with the engine installation and project creation. An assessment of the engine's capability through its tools and workflows follows closely behind. Finally, the building of an initial game concept completes the FTUE. It is a make-or-break moment for new users, even more so than any other moment through the user journey.
+We interpret FTUE as beginning with the engine installation and project creation. An assessment of the engine's capability through its tools and workflows follows closely behind. Finally, the building of an initial game concept completes the FTUE. It is a make-or-break moment for new users, even more so than any other moment of the user's journey.
 ​
 As the UX team, we are responsible for creating experiences that are intuitive, correspond with user requirements, and are representative of countless user workflows. We are constantly researching and advocating for the needs of our users, so they have a smooth and delightful first-time experience. This allows users to quickly see the value of O3DE, increase their productivity, and unleash their creativity. Ultimately, this boosts the adoption rate at which users select O3DE to build their first game or simulation project.
 ​
+
 ### History of O3DE's First-time User Experience
+
 ​
 Before understanding the present design of O3DE, let's look back at Lumberyard and its first-time user journey.
 ​
@@ -92,9 +94,9 @@ With the initial redesign, we continued to make gradual changes—most notably, 
 ### What's Next?
 
 ​
-The outcome of all the conducted research has been a compilation of the major issues faced by new users when exploring the engine. It would previously take users almost four hours to simply install Lumberyard, create their first project, enable the suitable Gems, and build this project—and now, the process takes less than ten minutes with O3DE!
+The outcome of the research has been a compilation of major issues new users face exploring the engine. Previously, it took users almost four hours to install Lumberyard, create a project, enable suitable Gems, and build. The process now can take less than ten minutes with O3DE!
 ​
-With the growth of O3DE, we envision a great deal of community involvement to follow suit. We are focused on supporting the community through their first-time user journey. In order to maintain, monitor, and manage the navigation structure, we see a need to create a systematic approach for addressing the large number of user contributions that follow a rapidly growing community. Efforts to allow the creation and submission of users' Gems for the community to use and be creative with continue. We remain dedicated to investigating and improving the first-time user journey through the engine.
+But this is not an endeavor we are working on alone. This is a community-wide effort, and we need your help! What would you like to see when you're onboarding with O3DE? Share your issues, suggestions for improvement, and overall experiences in the [O3DE Discord](https://discord.gg/xNb2q4SJKJ) server! You can share your thoughts with the UX Design team and me directly on the ==SIG-UI-UX== channel.
 ​
 But this is not an endeavour we are working on alone. This is a community-wide effort. With that said, we still need your help! What would you like to see when you're onboarding with O3DE? Share your issues, improvement suggestions, and your overall experiences in the [O3DE Discord](https://discord.gg/xNb2q4SJKJ) server! You can share your thoughts with me and the rest of the UX Design team directly on our Discord's ==UI-UX SIG channel==.
 ​
