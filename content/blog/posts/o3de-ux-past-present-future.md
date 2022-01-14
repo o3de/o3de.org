@@ -78,7 +78,7 @@ The fundamental objective for the system's architecture was to allow users to be
 With the research findings in mind, we established a set of design principles. Our goal was to identify a design solution that aligns with these principles while addressing the needs of all users.
 ​
 **Discover, Find Search**
-Users must be provided with the ability to browse and search through the Gem system efficiently as they discover and find new Gems. We tailored the searchability of the Gem system for our users with the filter, sort, and search functions. This allows our users to make appropriate decisions through the Gem selection for their project.
+Users must be able to explore the Gem Catalog efficiently. We improved the searchability of the catalog with filter, sort, and search functions. This allows users to make appropriate decisions for their project during Gem selection.
 ​
 **Reinforce Clarity to Foster Learning**
 The design must give users constant feedback to help them recognise and recover from errors. By providing help and documentation at all steps, and by creating a clear informational hierarchy we can help reduce error and encourage user confidence.
@@ -95,6 +95,8 @@ With the initial redesign, we continued to make gradual changes—most notably, 
 
 ​
 The outcome of the research has been a compilation of major issues new users face exploring the engine. Previously, it took users almost four hours to install Lumberyard, create a project, enable suitable Gems, and build. The process now can take less than ten minutes with O3DE!
+
+With the growth of O3DE, we envision a great deal of community involvement to follow suit. We are focused on supporting the community through their first journey. In order to maintain, monitor, and manage the Gem Catalog's navigation structure, we see a need to create a systematic approach for addressing the large number of user contributions that accompany a rapidly growing community. Efforts to include community-submitted Gems in the Gem Catalog continue. We remain dedicated to examining and improving the First-time User Experience.
 ​
 But this is not an endeavor we are working on alone. This is a community-wide effort, and we need your help! What would you like to see when you're onboarding with O3DE? Share your issues, suggestions for improvement, and overall experiences in the [O3DE Discord](https://discord.gg/xNb2q4SJKJ) server! You can share your thoughts with the UX Design team and me directly on the ==SIG-UI-UX== channel.
 ​
