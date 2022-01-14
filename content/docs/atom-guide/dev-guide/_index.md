@@ -16,3 +16,4 @@ This section provides a deeper technical read into the systems and interfaces un
 | [Render Pipeline Interface (RPI)](rpi/_index.md) | The Render Pipeline Interface (RPI) contains the main interface for developers to program the render pipeline. |
 | [Passes](passes/_index.md) | The pass system transforms data from a scene into a final rendered output. |
 | [Rendering Hardware Interface (RHI)](rhi/_index.md) | The Rendering Hardware Interface (RHI) provides a low-level interface that abstracts platform-specific code. |
+| [Troubleshooting](troubleshoot.md) | A guide to troubleshoot graphics processing unit (GPU) crashes in Atom Renderer. |
