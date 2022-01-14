@@ -8,9 +8,16 @@ toc: true
 
 A *console log* displays a collection of *console messages*, which notify the user of errors or failures, warnings, and other information that occurred during an event. Console messages are color-coded and prefixed with their status to help users differentiate between the messages.
 
-#### Example
+**Example**
 
 For example, when you open your project in the **Open 3D Engine (O3DE) Editor**, the console log informs you of the statuses of the different systems and objects in your project. Warning messages are colored a variation of orange and prefixed with "\[Warning\]" and an error message is colored a variation of red and prefixed with "\[Error\]".
+
+| Topic | Description | 
+| - | - |
+| Console log | About the console log |
+| Console log 2 | About the console log |
+| Console log 3 | About the console log |
+
 
 
 ![Example of console log with console messages](/images/tools-ui/console-log/console-log-messages.png)
