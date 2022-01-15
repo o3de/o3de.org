@@ -96,7 +96,6 @@ O3DE has reflection contexts for different purposes, including the following:
 + [Serialization Context](serialization-context/) - Contains reflection data for serialization and construction of objects.
 + [Edit Context](edit-context) - Contains reflection data for visual editing of objects, as in O3DE Editor.
 + [Behavior Context](behavior-context) - Contains reflection for runtime manipulation of objects from Lua, [Script Canvas](/docs/user-guide/scripting/script-canvas/), or other external sources.
-<!-- TBD: Is this still a thing? + `NetworkContext` - Contains reflection for networking purposes, including marshaling, quantization, and extrapolation. -->
 
 {{< note >}}
 This topic covers only `SerializeContext` and `EditContext`.
