@@ -18,7 +18,7 @@ In the **Open 3D Engine (O3DE)** UI component library, you will find an explanat
 + [Breadcrumb Navigation](uidev-breadcrumbs-component)
 + [Browse edit](uidev-browse-edit-component)
 + [Button](uidev-button-component)
-+ [Card](uidev-card-component)
++ [Card](uidev-card-widget)
 + [Checkbox](uidev-checkbox-component)
 + [Combobox](uidev-combobox-component)
 + [Context menu](uidev-context-menu-component)

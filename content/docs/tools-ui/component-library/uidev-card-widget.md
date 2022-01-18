@@ -1,7 +1,7 @@
 ---
 linktitle: Card
-title: O3DE UI Card Component
-description: Use the O3DE UI card component as a container to organize component property settings and actions together.
+title: O3DE UI Card Widget
+description: Use the O3DE UI card widget as a container to organize component property settings and actions together.
 toc: true
 ---
 

@@ -25,12 +25,14 @@ If you can't find a component in the **Add Component** list, you may need to ena
 ## Components
 The components below are grouped by type as they appear in the O3DE Editor.
 
+<!--
 ### AI
 | Component | Description | 
 | - | - |
 | [Navigation](/docs/user-guide/components/reference/ai/navigation/) | Provides basic path-finding and path-following services to an entity. |
 | [Navigation Area](/docs/user-guide/components/reference/ai/nav-area/) | Configures the area used for navigation and pathfinding. |
 | [Navigation Seed](/docs/user-guide/components/reference/ai/nav-seed/) | Determines the reachable navigation nodes along the path.  |
+-->
 
 
 ### Animation
@@ -199,23 +201,23 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| Gradient Surface Tag Emitter | Enables a gradient to emit surface tags. |
-| Mesh Surface Tag Emitter | Enables a static mesh to emit surface tags. |
-| PhysX Collider Surface Tag Emitter | Enables a physics collider to emit surface tags. |
-| Shape Surface Tag Emitter | Enables a shape to emit surface tags. |
+| [Gradient Surface Tag Emitter](surface-data/gradient-surface-tag-emitter) | Enables a gradient to emit surface tags. |
+| [Mesh Surface Tag Emitter](surface-data/mesh-surface-tag-emitter) | Enables a static mesh to emit surface tags. |
+| [PhysX Collider Surface Tag Emitter](surface-data/physx-collider-surface-tag-emitter) | Enables a physics collider to emit surface tags. |
+| [Shape Surface Tag Emitter](surface-data/shape-surface-tag-emitter) | Enables a shape to emit surface tags. |
 
 ### Terrain  
 
 | Component | Description | 
 | - | - |
-| [Terrain Physics Collider](./terrain/terrain-physics-collider) | Provides terrain data to a physics collider in the form of a heightfield and surface to material mapping. |
+| [Terrain Physics Heightfield Collider](./terrain/terrain-physics-collider) | Provides terrain data to a physics collider in the form of a heightfield and surface to material mapping. |
 | [Terrain Layer Spawner](./terrain/layer_spawner) | Spawns a terrain region contained within configurable bounds, and allows prioritization of overlapping terrain layers. |
 | [Terrain Height Gradient List](./terrain/height_gradient_list) | Provides terrain height data from a list of gradients. |
-| [Terrain Surface Material List](./terrain/surface-material-list) | Defines mappings between a surface type and a render material. |
+| [Terrain Surface Materials List](./terrain/surface-material-list) | Defines mappings between a surface type and a render material. |
 | [Terrain Surface Gradient List](./terrain/surface-gradient-list) | Defines mappings between a gradient and a surface type on a terrain layer. |
 | [Terrain Macro Material](./terrain/terrain-macro-material) | Provides a macro level method of defining the appearance of a region of terrain. |
 | [Terrain World](./terrain/world) | Allows the bounds of the Terrain World and the height query resolution to be set. |
-| [Terrain World Debugger](./terrain/world-debugger) | Provides a means to display a wireframe or bounds representaion of the Terrain World. |
+| [Terrain World Debugger](./terrain/world-debugger) | Provides a means to display a wireframe or bounds representation of the Terrain World. |
 | [Terrain World Renderer](./terrain/world-renderer) | Renders the terrain within the Terrain World bounds. |
 
 ### Test  
@@ -237,32 +239,32 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | Component | Description | 
 | - | - |
 | Landscape Canvas | Provides a node-based Editor for authoring Dynamic Vegetation.  |
-| Vegetation Asset List | Provides a set of vegetation descriptors. |
-| Vegetation Asset List Combiner | Provides a list of vegetation descriptor providers. |
-| Vegetation Asset Weight Selector | Selects vegetation assets based on their weight. |
-| Vegetation Layer Blender | Combines a collection of vegetation areas and applies them in a specified order. |
-| Vegetation Layer Blocker | Defines an area in which dynamic vegetation cannot be placed. |
-| Vegetation Layer Blocker (Mesh) | Prevents vegetation from being placed in the mesh. |
-| Vegetation Layer Debugger | Enables debug visualizers for vegetation layers. |
-| [Vegetation Layer Spawner](/docs/user-guide/components/reference/vegetation/layer-spawner/) | Creates dynamic vegetation in a specified area. |
+| [Vegetation Asset List](vegetation/vegetation-asset-list) | Provides a set of vegetation descriptors. |
+| [Vegetation Asset List Combiner](vegetation/vegetation-asset-list-combiner) | Provides a list of vegetation descriptor providers. |
+| [Vegetation Asset Weight Selector](vegetation/vegetation-asset-weight-selector) | Selects vegetation assets based on their weight. |
+| [Vegetation Layer Blender](vegetation/vegetation-layer-blender) | Combines a collection of vegetation areas and applies them in a specified order. |
+| [Vegetation Layer Blocker](vegetation/vegetation-layer-blocker) | Defines an area in which dynamic vegetation cannot be placed. |
+| [Vegetation Layer Blocker (Mesh)](vegetation/vegetation-layer-blocker-mesh) | Prevents vegetation from being placed in the mesh. |
+| [Vegetation Layer Debugger](vegetation/vegetation-layer-debugger) | Enables debug visualizers for vegetation layers. |
+| [Vegetation Layer Spawner](vegetation/layer-spawner) | Creates dynamic vegetation in a specified area. |
 
 ### Vegetation Filters  
 
 | Component | Description | 
 | - | - |
-| Vegetation Altitude Filter | Limits the placement of vegetation to be on surfaces within the specified height range. |
-| Vegetation Distance Between Filter | Defines the minimum distance required between vegetation instances. |
-| Vegetation Distribution Filter | Limits the placement of vegetation to be within the specified value ranges. |
-| Vegetation Shape Intersection Filter | Limits the placement of vegetation to be on surfaces that intersect the specified shape. |
-| Vegetation Slope Filter | Limits the placement of vegetation to be only on surfaces within the specified surface angles. |
-| Vegetation Surface Mask Depth Filter | Limits the placement of vegetation to be on surfaces within a specified depth between two surface tags. |
-| Vegetation Surface Mask Filter | Filters out vegetation based on surface mask-to-tag mappings. |
+| [Vegetation Altitude Filter](vegetation-filters/vegetation-altitude-filter) | Limits the placement of vegetation to surfaces within the specified height range. |
+| [Vegetation Distance Between Filter](vegetation-filters/vegetation-distance-between-filter) | Defines the minimum distance between vegetation instances. |
+| [Vegetation Distribution Filter](vegetation-filters/vegetation-distribution-filter) | Limits the placement of vegetation to a specified value range within a distribution defined by a gradient.  |
+| [Vegetation Shape Intersection Filter](vegetation-filters/vegetation-shape-intersection-filter) | Limits the placement of vegetation to surfaces that intersect the specified shape. |
+| [Vegetation Slope Filter](vegetation-filters/vegetation-slope-filter) | Limits the placement of vegetation to surfaces within the specified surface angle range. |
+| [Vegetation Surface Mask Depth Filter](vegetation-filters/vegetation-surface-mask-depth-filter) | Limits the placement of vegetation to surfaces within a specified depth range between two surface tags. |
+| [Vegetation Surface Mask Filter](vegetation-filters/vegetation-surface-mask-filter) | Filters out vegetation based on surface mask-to-tag mappings. |
 
 ### Vegetation Modifiers  
 
 | Component | Description | 
 | - | - |
-| Vegetation Position Modifier | Offsets the position of the vegetation. |
-| Vegetation Rotation Modifier | Offsets the rotation of the vegetation. |
-| Vegetation Scale Modifier | Offsets the scale of the vegetation. |
-| Vegetation Slope Alignment Modifier | Offsets the orientation of the vegetation relative to a surface angle. |
+| [Vegetation Position Modifier](vegetation-modifiers/vegetation-position-modifier) | Offsets the position of the vegetation. |
+| [Vegetation Rotation Modifier](vegetation-modifiers/vegetation-rotation-modifier) | Offsets the rotation of the vegetation. |
+| [Vegetation Scale Modifier](vegetation-modifiers/vegetation-scale-modifier) | Offsets the scale of the vegetation. |
+| [Vegetation Slope Alignment Modifier](vegetation-modifiers/vegetation-slope-alignment-modifier) | Offsets the orientation of the vegetation relative to a surface angle. |

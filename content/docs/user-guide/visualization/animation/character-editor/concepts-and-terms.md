@@ -5,12 +5,6 @@ title: 'Animation Editor Concepts and Terms'
 
 The following concepts and terms are used in the **Animation Editor**:
 
-**Topics**
-+ [About Animation Graphs](#understanding-animation-graphs)
-+ [About Parameters](#animation-graph-parameters)
-+ [About Motion Sets](#understanding-motion-sets)
-+ [About State Machines](#understanding-state-machines)
-
 **Actor**
 A character with at least one bone is called an *actor*. An actor consists of a set of nodes in a hierarchy. Each node is a transformation (position, rotation, and scale) and can contain a mesh.
 Instances of actors are called *actor instances*. For example, one soldier that is instanced 100 times can create an army of the same character. You can animate actor instances separately, so that each instance behaves differently. Each actor instance has unique transformations, but shares the same hierarchy as the actor from which it was instanced.
@@ -47,9 +41,6 @@ Floats are numbers with decimals (for example 1.35 or 1.0.) Booleans and integer
 All time values and durations are in seconds. For example, you can set the transition time for 0.3 or 300 ms.
 
 ## About Animation Graphs 
-
-**Contents**
-+ [Animation Graph Nodes](#animation-graph-nodes)
 
 Animation graphs define the animation behavior for your game characters. Animation graphs contain the states that the character can have and define the transitions between these states. Each transition can have a set of conditions that define the logic behind the transitions.
 
@@ -130,10 +121,6 @@ In a blend tree, you can add other nodes from the following six categories
    + **Mirror Pose**
 
 ## About Parameters 
-
-**Contents**
-+ [Adding Parameters to an Animation Graph](#adding-parameters-to-an-animation-graph)
-+ [Adding a Parameter Node to a Blend Tree](#adding-a-parameter-node-to-your-blend-tree)
 
 When you create your animation graph, you can use parameters to control how your animations transition between different states.
 
