@@ -12,7 +12,7 @@ Like any O3DE [component](/docs/user-guide/programming/components/create-compone
 When you author system components, follow the best practices for component authoring. For example, your system components should use the following:
 
 * [The EBus system](/docs/user-guide/programming/ebus) to expose their interfaces.
-* [Reflection](/docs/user-guide/programming/components/reflection/) to serialize and edit settings.
+* [Reflection contexts](/docs/user-guide/programming/components/reflection/) to serialize and edit settings.
 * The [AZ::Component](/docs/api/frameworks/azcore/class_a_z_1_1_component.html) class to activate or deactivate the system component..
 
 {{< important >}}

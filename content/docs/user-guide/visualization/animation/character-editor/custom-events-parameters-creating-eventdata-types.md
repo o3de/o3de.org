@@ -40,7 +40,7 @@ You create objects deriving from the [`EMotionFX::EventData`](/docs/api/gems/emo
 
    For more information about the `Equal` function, see [More About the Equal Function](#char-animation-editor-custom-events-parameters-the-equal-function).
 
-1. Implement the `Reflect` method to reflect the type to the [Serialization Context](/docs/user-guide/programming/serialization/entity-system-reflection-serialization-context/) and [Edit Context](/docs/user-guide/programming/components/edit-context/) contexts.
+1. Implement the `Reflect` method to reflect the type to the [Serialization Context](/docs/user-guide/programming/components/reflection/serialization-context/) and [Edit Context](/docs/user-guide/programming/components/reflection/edit-context/) contexts.
 
    When you reflect the event to the edit context, add the `Creatable` attribute to `ClassElement`. This makes the `EventData` type visible in the Animation Editor's **Motion Events** tab so that users can select it.
 

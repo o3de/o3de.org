@@ -13,7 +13,7 @@ The SaveData gem uses the [Event Bus (EBus)](/docs/user-guide/programming/ebus/)
 
 When making requests to save or load data using the `SaveDataRequestBus`, keep the following points in mind:
 
-* The Save Data Gem is responsible only for saving and loading generic data buffers. Your game must serialize or deserialize data using a data format, such as JSON or XML. However, convenience functions are provided that save or load an object that has been reflected using an [`AZ::SerializeContext`](/docs/user-guide/programming/serialization/entity-system-reflection-serialization-context/).
+* The Save Data Gem is responsible only for saving and loading generic data buffers. Your game must serialize or deserialize data using a data format, such as JSON or XML. However, convenience functions are provided that save or load an object that has been reflected using a [serialization context](/docs/user-guide/programming/components/reflection/serialization-context/).
 
 * Each save data buffer must be uniquely identified by a string. On most operating systems and devices, this string is the name of the file to which the data buffer is written.
 

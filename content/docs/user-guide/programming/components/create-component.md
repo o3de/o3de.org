@@ -87,7 +87,7 @@ Reflect()
 static void Reflect(AZ::ReflectContext* context);
 ```
 
-For more information, see [Reflecting a Component for Serialization and Editing](/docs/user-guide/programming/components/reflection/).
+For more information, see [Reflecting a Component for Serialization and Editing](/docs/user-guide/programming/components/reflection/reflecting-for-serialization).
 
 Logical Services
 (Optional) Components can define any combination of logical services that they provide, depend on, require, or are incompatible with. To define these logical services, use the following functions:
