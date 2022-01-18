@@ -33,7 +33,7 @@ To prioritize the usage of one GPU over another, use `--forceAdapter=<device>` i
 --forceAdapter="NVIDIA GeForce GTX 1080"
 ```
 
-To select a non-default RHI backend, use `--rhi=<rhi>` in the CLI. This only applies to Windows computers where `D3D12` is the default selected backend. For example, `--rhi=vulkan` selects the Vulkan RHI.
+To select a non-default RHI backend, use `--rhi=<rhi>` in the CLI and replace `<rhi>` with `vulkan` or `dx12`. This only applies to Windows computers where `D3D12` is the default selected backend. For example, `--rhi=vulkan` selects the Vulkan RHI.
 
 **Example**
 
