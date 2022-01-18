@@ -48,7 +48,7 @@ The following table describes the settings for **Scene Configuration**.
 
 ## Editor Configuration 
 
-The following options relate to the **Debug Draw COM** (center of mass) option of the [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/) component.
+The following options relate to the **Debug Draw COM** (center of mass) option of the [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) component.
 
 ****
 
