@@ -12,11 +12,11 @@ To support multiple native build toolchains, **Open 3D Engine** (O3DE) uses the 
 {{< tabs >}}
 {{< tab name="Windows" codelang="cmd">}}cd <project-directory>
 cmake -B build/windows_vs2019 -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=<absolute-path-to-packages>
-cmake --build build/windows_vs2019 --config profile --target <ProjectName>.GameLauncher Editor -- /m
+cmake --build build/windows_vs2019 --target <ProjectName>.GameLauncher Editor --config profile -- -m
 {{< /tab >}}
 {{< tab name="Linux" codelang="bash">}}cd <project-directory>
 cmake -B build/linux -S . -G "Ninja Multi-Config" -DLY_3RDPARTY_PATH=<absolute-path-to-packages>
-cmake --build build/linux --config profile --target <ProjectName>.GameLauncher Editor
+cmake --build build/linux --target <ProjectName>.GameLauncher Editor --config profile
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -31,14 +31,14 @@ O3DE requires CMake {{< versions/cmake >}} or higher.
 | Topic | Description |
 | --- | --- |
 | [Configure and Build](configure-and-build) | The full details on how to configure and build O3DE core, Gems, and projects. |
-| [Packages](packages) | Learn about the Open 3D Engine package system that's used to ship binaries along with your Gem or project. |
-| [Create distributable builds for developers](distributable-engine) | Instructions on how to separate engine developer and project developer workflows, by creating fixed binaries to distribute to project teams. |
-| [CMake settings reference](reference) | Reference for user-configurable CMake settings specific to O3DE. |
+| [Create Distributable Open 3D Engine Builds](distributable-engine) | Instructions on how to separate engine developer and project developer workflows, by creating fixed binaries to distribute to project teams. |
+| [O3DE Packages](packages) | Learn about the O3DE package system that's used to ship binaries along with your Gem or project. |
 | [Troubleshooting](troubleshooting) | How to debug and troubleshoot CMake and build problems. |
+| [CMake Settings Reference](reference) | Reference for user-configurable CMake settings specific to O3DE. |
 
 ## Related topics
 
 | Topic | Description |
 |---|---|
-| [Windows suppport](/docs/user-guide/platforms/windows) | Prerequisites for building on Windows 10. |
-| [Linux support](/docs/user-guide/platforms/linux) | Prerequisites for building on Linux. |
+| [Windows Support](/docs/user-guide/platforms/windows) | Prerequisites for building on Windows 10. |
+| [Linux Support](/docs/user-guide/platforms/linux) | Prerequisites for building on Linux. |

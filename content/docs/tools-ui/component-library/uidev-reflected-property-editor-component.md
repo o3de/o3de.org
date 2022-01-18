@@ -5,7 +5,7 @@ description: Use the O3DE UI reflected property editor to automatically lay out 
 toc: true
 ---
 
-A **reflected property editor** automatically lays out controls for user-editable properties that are reflected using the edit context. It is frequently used as a content widget to populate [card](./uidev-card-component) components.
+A **reflected property editor** automatically lays out controls for user-editable properties that are reflected using the edit context. It is frequently used as a content widget to populate [card](./uidev-card-widget) components.
 
 ![component reflected property editor in card](/images/tools-ui/component-reflected-property-editor-in-card.png)
 
@@ -23,7 +23,7 @@ The following code shows how to add a simple **reflected property editor** to a 
 #include <AzCore/Serialization/EditContext.h>
 #include <AzQtComponents/Components/Widgets/Card.h>
 
-// Create a card component and set its title and header icon.
+// Create a card widget and set its title and header icon.
 AzQtComponents::Card* card = new AzQtComponents::Card(parent);
 card->setTitle(QStringLiteral("Card"));
 card->header()->setIcon(QIcon(QStringLiteral(":/Gallery/Grid-small.svg")));
@@ -45,4 +45,4 @@ For details on the **card** API, see the following topics in the [O3DE UI Extens
 ## Related links
 
 For additional information related to the **reflected property editor** component, see the following topics:
-+  [Card Component](./uidev-card-component)
++  [Card Widget](./uidev-card-widget)

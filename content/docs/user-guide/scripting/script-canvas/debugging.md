@@ -2,9 +2,10 @@
 linktitle: Debugging
 title: Script Canvas Debugging
 description: Debug your Script Canvas graphs in Open 3D Engine (O3DE).
+weight: 600
 ---
 
-Script Canvas supports live debugging of a Script Canvas graph running in-game. You can use **O3DE Editor** or non-editor tools like game launchers as debug targets.
+Script Canvas supports live debugging of a Script Canvas graph running in game. You can use **O3DE Editor** or non-editor tools (such as game launchers) as debug targets.
 
 **To open the Script Canvas debugger and choose a target**
 
