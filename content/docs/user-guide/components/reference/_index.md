@@ -60,7 +60,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Entity Reference](/docs/user-guide/components/reference/atom/entity-reference/) | Allows you to provide an entity with references to other entities. |
 | [Exposure Control](/docs/user-guide/components/reference/atom/exposure-control/) | Adjusts the amount of light the camera exposes in the scene. |
 | [Global Skylight (IBL)](/docs/user-guide/components/reference/atom/global-skylight-ibl/) | Creates an image-based global illumination effect that calculates light for a scene using an HDR skybox image. |
-| [Grid](/docs/user-guide/components/reference/atom/grid/) | Adds a customizeable grid to the scene. |
+| [Grid](/docs/user-guide/components/reference/atom/grid/) | Adds a customizable grid to the scene. |
 | [HDRi Skybox](/docs/user-guide/components/reference/atom/hdri-skybox/) | Creates a skybox in your scene using an HDR image. |
 | [Light](/docs/user-guide/components/reference/atom/light) | Simulates soft studio light by creating various types of punctual and area lights. |
 | [Look Modification](/docs/user-guide/components/reference/atom/look-modification/) | Configures a color grading look-up table (LUT). |
@@ -190,6 +190,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Disk Shape](/docs/user-guide/components/reference/shape/disk-shape/) | Generates disk geometry for areas and triggers. |
 | [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/) | Generates n-sided prism geometry for volumes and triggers. |
 | [Quad Shape](/docs/user-guide/components/reference/shape/quad-shape/) | Generates quad-plane geometry for areas and triggers. |
+| [Shape Reference](/docs/user-guide/components/reference/shape/shape-reference) | Enables entities to reference and reuse Shape components. |
 | [Sphere Shape](/docs/user-guide/components/reference/shape/sphere-shape/) | Generates sphere geometry for volumes and triggers. |
 | [Spline](/docs/user-guide/components/reference/shape/spline/) | Generates lines and curves for paths. |
 | [Tube Shape](/docs/user-guide/components/reference/shape/tube-shape/) | Generates tube geometry for volumes and triggers. |
