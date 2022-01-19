@@ -56,5 +56,5 @@ The NVIDIA Blast Gem provides the following:
 1. Build your project:
 
    ```
-   cmake --build <CMake build dir> --config profile --target <Project name> -- /m
+   cmake --build <CMake build dir> --target <Project name> --config profile -- -m
    ```

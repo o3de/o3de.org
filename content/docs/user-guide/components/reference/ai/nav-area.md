@@ -3,6 +3,7 @@ linkTitle: Navigation Area
 description: ' Use the Navigation Area component with the Polygon Prism Shape component
   to create navigation meshes in Open 3D Engine. '
 title: Navigation Area Component
+draft: True
 ---
 
 
