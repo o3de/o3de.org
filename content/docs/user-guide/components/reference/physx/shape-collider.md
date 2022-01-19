@@ -53,14 +53,14 @@ The PhysX Shape Collider component has some limitations compared to the PhysX Co
 | **In Scene Queries** | If enabled, this collider can be queried for raycasts, shapecasts, and overlap. | Boolean | `Enabled` |
 | **Library (Physics Materials)** | The physics material library of the project. | A `.physmaterial` library product asset. | The global project `.physmaterial` library. |
 | **Slots (Physics Materials)** | Choose a physics material for each material of this collider. Physics materials define physical properties for the surface such as dynamic and static friction, and density. A collider can have multiple physics materials assigned. | Physics material(s) from the assigned `.physmaterial` library | `<Default Physics Material>` |
-| **Tag** | Sets a tag for this collider. Tags can be used to quickly identify components in script or code. | String |  |
-| **Rest offset** | Sets the minimum distance between this collider and other colliders when this collider is at rest. PhysX bodies come to rest separated by the sum of their **Rest offset** values. The **Rest offset** value must be less than the **Contact offset** value. | Float: -Infinity to 50 | `0.0` |
-| **Contact offset** | Sets the distance from the collider where collisions are detected. PhysX bodies generate contacts when they are within the sum of their **Contact offset** values. The **Contact offset** value must be greater than the **Rest offset** value. | Float: 0 to 50 | `0.02` |
-| **Draw Collider** | Render the collider in the viewport. | Boolean | `On` |
+| **Tag** | Sets a tag for this collider. Tags can be used to quickly identify components in script or code. | String | None |
+| **Rest offset** | Sets the minimum distance between this collider and other colliders when this collider is at rest. PhysX bodies come to rest separated by the sum of their **Rest offset** values. The **Rest offset** value must be less than the **Contact offset** value. | Float: -Infinity to 50.0 | `0.0` |
+| **Contact offset** | Sets the distance from the collider where collisions are detected. PhysX bodies generate contacts when they are within the sum of their **Contact offset** values. The **Contact offset** value must be greater than the **Rest offset** value. | Float: 0 to 50.0 | `0.02` |
+| **Draw Collider** | Render the collider in the viewport. | Boolean | `Enabled` |
 
 ## Complex polygon prism shapes 
 
-The [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/) is automatically subdivided into convex portions, which means that polygon prisms can be used with dynamic rigid bodies or as triggers in PhysX. The subdivision is automatically updated if the vertices of the polygon prism are modified.
+The [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/) is automatically subdivided into convex portions, which means that polygon prisms can be used with dynamic rigid bodies or as triggers in PhysX simulations. The subdivision is automatically updated if the vertices of the polygon prism are modified.
 
 ![A complex polygon prism can't be converted to convex geometry.](/images/user-guide/components/reference/physx/physx-shape-collider-polyprism.png)
 
@@ -70,7 +70,7 @@ If the vertices are modified so that the polygon prism is no longer a simple pol
 
 ## Colliders as triggers 
 
-Triggers allow colliders to perform efficient overlap tests. Colliders marked as triggers won't have forces applied when they intersect with another collider. This is useful for detecting when something enters a certain area or when two objects overlap. Use Lua or **Script Canvas** to detect overlap.
+Triggers allow colliders to perform efficient overlap tests. Colliders marked as triggers won't be affected by forces when they intersect with another collider. This is useful for detecting when something enters a certain area or when two objects overlap. Use Lua or **Script Canvas** to detect overlap.
 
 {{< note >}}
 Because triggers don't perform contact resolution, the contact points between a trigger and another collider aren't available.
