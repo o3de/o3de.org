@@ -1,21 +1,26 @@
 ---
-
-
+title: "Introducing the BlueJay Design System for O3DE"
+description: "Learn about the new UX design model for Open 3D Engine (O3DE) from Lee Hung Nguyen, one of the UX designers contributing to O3DE."
+date: 2022-1-19
+slug: intro-to-bjds
+author: Lee Hung Nguyen, UX Designer in the SIG UI UX community
+blog_img: "/images/blog/announcement_thumbnail.jpg"
+full_img: "/images/blog/bjds-logo.jpg"
 ---
 
-## Introducing the BlueJay Design System (Shorter Version v2 – Blog Post)
+Learn about the new UX design system for Open 3D Engine (O3DE) tools from Lee Hung Nguyen, one of the UX designers contributing to O3DE.
 
-*Author: Lee Hung Nguyen, UX Designer in the SIG UI UX community
-*
-[Image: BlueJayDesignSystem-Logo.jpg]
-My name is Lee Hung Nguyen, and I am one of the UX Designers in the Special Interest Group for the UI UX community (SIG-UI-UX) that helps to contribute towards the Open 3D Engine (O3DE). 
+## Introducing the BlueJay Design System for O3DE
+
+![The O3DE Design System logo](/images/blog/bjds-logo.jpg)
+
+My name is Lee Hung Nguyen, and I am one of the UX Designers in the Special Interest Group for the UI UX community (SIG-UI-UX) that helps to contribute towards the Open 3D Engine (O3DE).
 
 Today, you'll be learning about the design system that the SIG UX UI community has been working on: **the BlueJay Design System (BJDS).**
 
-
 ### What is the BlueJay Design System?
 
-**The BlueJay Design System (BJDS) is a unified design and development system for designers and developers who want to extend the O3DE editor. It consists of** **a design library of reusable UI components and UX pattern guidelines. Ultimately, these guidelines will help define a more consistent, productive experience for all O3DE users when followed.**
+**The BlueJay Design System (BJDS) is a unified design and development system for designers and developers who want to extend the O3DE editor. It consists of a design library of reusable UI components and UX pattern guidelines. Ultimately, these guidelines will help define a more consistent, productive experience for all O3DE users when followed.**
 
 The main goal of BJDS is to help teams build high-quality and consistent digital experiences in O3DE. By utilizing reusable and modular UI components, we can align anyone contributing to the editor's expansion with faster and more consistent development workflows. As 3D engines generally have a high level of complexity for their use cases, we should prepare ourselves for the range of multiple workflows that come with it.
 
@@ -32,11 +37,13 @@ This caused inconsistent replications of the same functionality for our workflow
 So understandably some sort of unified framework for the cross-functional teams needed. This would help raise the quality bar of standards for consistency in O3DE. As the contributors lacked a central framework to align to, teams would just instinctively work on their own solo initiatives, further breeding inefficiencies. Something that is not ideal for a collaborative community.
 
 So to further ensure that the editor upheld these high quality of these standards, we developed some tenets that contributors should follow:
-[Image: Tenets-Diagram2.jpg]
-* ***Efficiency:* **User interactions and workflows should value efficiency and ease of use.
-* ***Accessibility*:** Accessibility options, such as color contrasts, fonts and icon legibility, interactions and scalability etc. are built into our the tool from the first step.
-* ***Familiarity:* **Align to our standards of the visual interfaces, tools, branding, and UI elements. No need to reinvent the wheel and confuse users.
-* ***Modularity:* **The key to each element of O3DE, including the interface design and component development.
+
+![Diagram showing the tenets of the O3DE design system](/images/blog/intro-to-bjds/tenets-diagram.jpg)
+
+* **Efficiency:** User interactions and workflows should value efficiency and ease of use.
+* **Accessibility:** Accessibility options, such as color contrasts, fonts and icon legibility, interactions and scalability etc. are built into our the tool from the first step.
+* **Familiarity:** Align to our standards of the visual interfaces, tools, branding, and UI elements. No need to reinvent the wheel and confuse users.
+* **Modularity:** The key to each element of O3DE, including the interface design and component development.
 
 These tenets were formed to be straightforward and easy to remember. We want to ensure that the BJDS tenets are flexible for the community to embrace, and to employ through their contributions to the engine.
 
@@ -44,38 +51,38 @@ These tenets were formed to be straightforward and easy to remember. We want to 
 
 **The BlueJay Design System** is made up of a set of standardized components and layouts to help accelerate the creation of new workflows for the editor. It also has [supporting documentation](https://o3de.org/docs/tools-ui/) on the O3DE Learn website, which details the following:
 
-
-#### **UI Components**
+#### UI Components
 
 UI components are the various individual widgets that make up the editor experience. The BJDS documentation outlines details like visual markup properties, rules around how to use them and guides when to use them in which scenario. Currently, with [20 UI components](https://o3de.org/docs/tools-ui/component-library/) detailed (and more coming), these include code samples and API references to integrate into your editor extension.
 
-If you are looking for information on key building blocks that O3DE uses, [UI Components](https://o3de.org/docs/tools-ui/component-library/) is the right place to read. It's the systematic reuse of these components that make up the visual and functional consistency across O3DE. 
-[Image: components-preview.jpg]
+If you are looking for information on key building blocks that O3DE uses, [UI Components](https://o3de.org/docs/tools-ui/component-library/) is the right place to read. It's the systematic reuse of these components that make up the visual and functional consistency across O3DE.
 
-#### **UX Patterns**
+![Preview @mdash; for the O3DE UI component guidelines](/images/blog/intro-to-bjds/ui-components-preview.jpg)
+
+#### UX Patterns
 
 UX Patterns are a series of best practice solutions that a designer or developer should follow when creating new workflows and components in the editor. Unlike UI Components, where it's mostly about the visual aesthetics and how it mechanically operates, UX Patterns is more about how a user interacts and behaves for a task with a goal in mind.
 
-For e.g., the anatomy of a component card and it's different types – can be found on the [UI Component > Card page](https://o3de.org/docs/tools-ui/component-library/uidev-card-component/), while the what contents go in the card, how a user interacts with it and how O3DE interacts with the card itself – can be found on the [UX Patterns > Component Card UX Patterns](https://o3de.org/docs/tools-ui/ux-patterns/component-card/overview/) page.
+For e.g., the anatomy of a component card and it's different types can be found on the [UI Component > Card page](https://o3de.org/docs/tools-ui/component-library/uidev-card-component/), while the what contents go in the card, how a user interacts with it and how O3DE interacts with the card itself can be found on the [UX Patterns > Component Card UX Patterns](https://o3de.org/docs/tools-ui/ux-patterns/component-card/overview/) page.
+
+![Preview image for the O3DE component card guidelines](/images/blog/intro-to-bjds/componentcard-ux-preview.jpg)
 
 Currently we have two UX Pattern pages on O3DE Learn: Component Card Properties and Writing UI Message guidelines. We plan to roll out more pages in the future coming months, so stay tuned.
 
-#### **O3DE Branding Guidelines**
+#### O3DE Branding Guidelines
 
 Our [brand guidelines section](https://o3de.org/docs/tools-ui/branding-guidelines/) includes information on how to apply the O3DE brand, and downloadable assets such as; a PDF style guide, logos files and fonts etc. These pages are especially important if you are looking to represent the O3DE logo in your product or marketing website. 
 
+![Preview image for the O3DE branding guidelines](/images/blog/intro-to-bjds/branding-guidelines-preview.jpg)
+
 If there's an asset that's missing that you're looking for, don't hesitate to [file a ticket](https://github.com/o3de/sig-ui-ux/issues/new/choose) and the community will help get the right asset you need. We are always happy to help!
-[Image: Screen Shot 2022-01-07 at 11.35.36 AM.png]
-[Image: Screen Shot 2022-01-07 at 11.36.29 AM.png]
-
-
-
 ### BlueJay Design System's Roadmap
 
-[Image: roadmap2.jpg]Above is our planned roadmap for 2021–2022. These timeframes are estimates based off our current SIG-UI-UX contributions rate. Times may vary; if we are able to gather more community support and help, items could be completed even sooner.
+![Diagram showing the tenets of the O3DE design system](/images/blog/intro-to-bjds/roadmap2.jpg)
+
+Above is our planned roadmap for 2021–2022. These timeframes are estimates based off our current SIG-UI-UX contributions rate. Times may vary; if we are able to gather more community support and help, items could be completed even sooner.
 
 For a full detailed breakdown on our roadmap, you can read our article here.
-
 
 #### Looking Forward
 
@@ -85,6 +92,6 @@ If you would like to help contribute towards the efforts here—by reviewing, wr
 
 You can see here that the BJDS has big dreams and ambitions. As a core, it's just a design system for an open source 3D Engine. But as an end goal, we want this to be much more than that. 
 
-****We want BlueJay to become the best design system that all 3D engines can also refer to in setting the quality benchmark for industry standards. **** ****
+**We want BlueJay to become the best design system that all 3D engines can also refer to in setting the quality benchmark for industry standards.**
 
 This is just the beginning. Let's do it together!
