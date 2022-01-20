@@ -30,7 +30,7 @@ The PhysX Shape Collider requires one of the following Shape components:
 Although the PhysX Shape Collider is similar to the [PhysX Collider](/docs/user-guide/components/reference/physx/collider/) component, you might prefer to use the PhysX Shape Collider in these scenarios:
 
 * The shape information defined by the Shape component is used elsewhere in code or script. For example, the shape defines another volume, such as an audio volume or fog volume, and you want to keep the collider geometry and volume synchronized.
-* You want to use a Shape component such as [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/) that is not provided by PhysX Collider.
+* You want to use a Shape component such as Polygon Prism Shape that is not provided by PhysX Collider.
 * You have existing Shape components and don't want to migrate them to use PhysX Collider components.
 
 ## Limitations
@@ -46,8 +46,8 @@ The PhysX Shape Collider component has some limitations compared to the PhysX Co
 
 | Property | Description | Value | Default |
 | - | - | - | - |
-| **Collision Layer** | Assigns the collider to a collision layer. Collision layers can be used to restrict physical interactions between PhysX objects. | Any collision layer defined the project [Collision Layers](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-layers/).  | `Default` |
-| **Collides With** | Assigns the collider to a collision group. Collision groups contain the collision layers that this collider can collide with. | Any collision group defined the project [Collision Groups](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-groups/). | `All` |
+| **Collision Layer** | Assigns the collider to a collision layer. Collision layers can be used to restrict physical interactions between PhysX objects. | Any collision layer defined in the project's [Collision Layers](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-layers/).  | `Default` |
+| **Collides With** | Assigns the collider to a collision group. Collision groups contain the collision layers that this collider can collide with. | Any collision group defined in the project's [Collision Groups](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-groups/). | `All` |
 | **Trigger** | If enabled, this collider functions as a trigger. A trigger performs a quick overlap test and does not apply forces or return contact point information. Use this to speed-up PhysX computations where a simple overlap test between colliders is sufficient. Triangle meshes are not supported as triggers. | Boolean | `Disabled` |
 | **Simulated** | If enabled, this collider is included in the physics simulation. | Boolean | `Enabled` |
 | **In Scene Queries** | If enabled, this collider can be queried for raycasts, shapecasts, and overlap. | Boolean | `Enabled` |
@@ -64,7 +64,7 @@ The [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-pr
 
 ![A complex polygon prism can't be converted to convex geometry.](/images/user-guide/components/reference/physx/physx-shape-collider-polyprism.png)
 
-If the vertices are modified so that the polygon prism is no longer a simple polygon, it isn't possible to subdivide the polygon prism into convex pieces. In the example image above, the polygon prism is self-intersecting. If the polygon prism can't be subdivided into convex pieces, an error will display in the Editor Console, as shown in the following example.
+If the vertices are modified so that the polygon prism is no longer a simple polygon, it isn't possible to subdivide the polygon prism into convex pieces. In the example image above, the polygon prism is self-intersecting. If the polygon prism can't be subdivided into convex pieces, an error will display in the **O3DE Editor Console**, as shown in the following example.
 
 ![A complex polygon prism console error.](/images/user-guide/components/reference/physx/physx-shape-collider-error.png)
 
