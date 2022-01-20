@@ -5,18 +5,8 @@ description: The Bloom component, which simulates real-world light bleeding (glo
 toc: true
 ---
 
-The **Bloom** component creates *bloom*, a post-processing effect that simulates real-world light bleeding, or glow. 
+The **Bloom** component creates *bloom*, a post-processing effect that simulates real-world light bleeding, or glow.
 
-<!--
-    All O3DE Docs must adhere to the standards outlined in the guides.
-    Style guide: https://o3de.org/docs/contributing/to-docs/style-guide/
-    Terminology guide: https://o3de.org/docs/contributing/to-docs/terminology/
--->
-
-<!--
-    Describe component in a short one paragraph overview.
-    Include reference images or an example.
--->
 
 ## Provider
 
