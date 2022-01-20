@@ -10,7 +10,7 @@ The Properties Table configures the **Lua Script** component's user interface in
 
 The properties inside the Properties Table are exposed to **O3DE Editor**. Properties outside the Properties Table are private and not displayed in the editor.
 
-The following example is a Properties table for an character controller.
+The following example is a Properties table for a character controller.
 
 ```lua
 -- Properties Table Example
