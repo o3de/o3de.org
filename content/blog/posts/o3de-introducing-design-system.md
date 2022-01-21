@@ -1,7 +1,7 @@
 ---
 title: "Introducing the BlueJay Design System for O3DE"
 description: "Learn about the new UX design model for Open 3D Engine (O3DE) from Lee Hung Nguyen, one of the UX designers contributing to O3DE."
-date: 2022-1-19
+date: 2022-01-19
 slug: intro-to-bjds
 author: Lee Hung Nguyen, UX Designer in the SIG UI UX community
 blog_img: "/images/blog/announcement_thumbnail.jpg"
