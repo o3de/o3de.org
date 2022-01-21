@@ -402,7 +402,6 @@ To distribute your build to other Windows computers:
                 
 1. Distribute the `.zip` file using your preferred method, such as a file storage service. 
 
-
 Now others can download and unpack the `.zip` file and run the Game Launcher on their Windows computers.
 
 {{< note >}}
