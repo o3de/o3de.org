@@ -5,7 +5,7 @@ date: 2022-1-14
 slug: o3de-ftue-blog-post-1
 author: Bhanuja Sanghavi, Amazon Web Services
 blog_img: "/images/blog/announcement_thumbnail.jpg"
-full_img: "/images/blog/o3de-2111-release-blog-image.png"
+full_img: "/images/blog/bjds-logo.jpg"
 ---
 
 Learn about how Amazon Web Services developed the first-time user experience for Open 3D Engine (O3DE) from Bhanuja Sanghavi, one of the UX designers contributing to O3DE.
@@ -49,7 +49,9 @@ In contrast to the User Journey Map above, the phases below note how a user work
 ​
 ![O3DE FTUE journey duration image](/images/blog/bjds-posts/o3de-ftue-journey-duration.png)
 ​
-### It's always Day 1!
+
+### It's always Day 1
+
 ​
 Throughout the past year, I have observed a "Day 1" mentality here at Amazon. With this perspective, we're able to make high quality, high velocity decisions while improving through constant experimentation. In a similar way, a user progressing through O3DE's Day 1 workflow is concentrated on making smart (and fast) considerations while experimenting with the engine.
 ​
