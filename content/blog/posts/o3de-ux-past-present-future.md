@@ -1,7 +1,7 @@
 ---
 title: "Explore the Past, Present, & Future of O3DE's First-time User Experience"
 description: "Learn about how Amazon Web Services developed the first-time user experience for Open 3D Engine (O3DE) from Bhanuja Sanghavi, one of the UX designers contributing to O3DE."
-date: 2022-1-14
+date: 2022-01-14
 slug: o3de-ftue-blog-post-1
 author: Bhanuja Sanghavi, Amazon Web Services
 blog_img: "/images/blog/announcement_thumbnail.jpg"
