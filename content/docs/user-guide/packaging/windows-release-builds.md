@@ -1,6 +1,6 @@
 ---
-linktTitle: "Project Game Release Layout (Windows)"
-title: "Creating a Project Game Release Layout for Windows"
+linktTitle: Project Game Release Layout (Windows)
+title: Creating a Project Game Release Layout for Windows
 description: Learn how to create an Open 3D Engine (O3DE) project game release layout for Windows.
 toc: true
 ---
@@ -389,9 +389,7 @@ Run `GameLauncher.exe` from your project game release layout, which is located i
 
 To distribute your build to other Windows computers:
 
-1. Create a zip folder of the `<install>\bin\Windows\release\<build>` folder. 
-
-    The contents of the zip folder should look similar to this: 
+1. Create a `.zip` file of the `<install>\bin\Windows\release\<build>` folder. The contents of the `.zip` file should look similar to this:
 
         Monolithic
         |   DevTestProject.GameLauncher.exe
@@ -402,15 +400,19 @@ To distribute your build to other Windows computers:
             \---pc
             engine.pak
                 
-2. Distribute the zip folder in your preferred method such as through a file storage service. 
+1. Distribute the `.zip` file using your preferred method, such as a file storage service. 
 
-3. To run the Game Launcher on the other Windows computers, it must have [Microsoft Visual C++ (MSVC) Redistributable](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-160) installed.
 
+Now others can download and unpack the `.zip` file and run the Game Launcher on their Windows computers.
+
+{{< note >}}
+To run the Game Launcher on the other Windows computers, they must have the [Microsoft Visual C++ (MSVC) Redistributable](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-160) installed.
+{{< /note >}}
 
 
 ## Debugging
 
-To help you debug issues you may encounter while building a project for release, try the following techniques.
+To help you debug any issues that you may encounter while building a project for release, try the following techniques.
 
 ### Compile with optimizations disabled and debug symbols enabled
 
