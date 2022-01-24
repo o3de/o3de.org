@@ -1,32 +1,31 @@
 ---
 title: Terrain Height Gradient List Component
 linktitle: Terrain Height Gradient List
-description: ' Open 3D Engine (O3DE) Terrain Height Gradient List reference. '
-weight: 100
+description: Use the Terrain Height Gradient List component in your Open 3D Engine (O3DE) level to convert gradients to height data.
 ---
 
-The **Terrain Height Gradient List** provides height data for the terrain system from a list of one or more gradients.
-The range of heights is adjusted by scaling the height of the [Axis Aligned Box Shape Component](/docs/user-guide/components/reference/shape/axis-aligned-box-shape) on the same entity.
+The **Terrain Height Gradient List** provides height data for the terrain system from a list of one or more gradients. The range of heights is adjusted by scaling the height of the [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape) component on the same entity.
 
-
-## Provider ##
+## Provider
 
 [Terrain Gem](/docs/user-guide/gems/reference/terrain)
 
-## TerrainAreaHeightRequestBus ##
+## Dependencies
 
-Use the following request functions with the `TerrainAreaHeightRequestBus` EBus interface to communicate with other components of your game.
+[Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape)
 
-### GetHeight
+## Terrain Height Gradient List properties
 
-Retrieves the height of the gradient at a given position. In the event of multiple gradients being defined, will return the highest point.
+![Terrain Height Gradient List component properties](/images/user-guide/components/reference/terrain/terrain-height-gradient-list-component.png)
 
-**Parameters**  
-InPosition - The position for which to retrieve the height. Type: AZ::Vector3  
-OutPosition \[out\] - InPosition with its Z value adjusted to the correct height. Type: AZ::Vector3  
-TerrainExists \[out\] - Indicates whether gradient data exists for the given position. Type: Boolean
+| Property | Description | Values | Default |
+|-|-|-|-|
+| **Gradient Entities** | An array of entities with a **Gradient** component. | Array: EntityId | None |
 
-**Return**  
-None
+## TerrainAreaHeightRequestBus
 
+Use the following request functions with the `TerrainAreaHeightRequestBus` EBus interface to communicate with Terrain Height Gradient List components of your game.
 
+| Request Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetHeight` | Returns a Vector3 of the Query Position with the Z-value updated to the terrain's height at the query position.  Also returns a boolean value indicating if terrain exists at the Query Position. | Query Position: Vector3 | Terrain Height: Vector3, Terrain Exists: Boolean | No |

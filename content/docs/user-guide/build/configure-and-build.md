@@ -23,16 +23,15 @@ You'll need to identify the following:
 
 O3DE has build support for the following platforms and toolchains:
 
-<!-- TODO: Add download links -->
 | Platform | Supported toolchains |
 | --- | --- |
 | Windows 64-bit | Visual Studio 2019 |
-| macOS, iOS | XCode 11 or later |
-| Android | Android Clang/LLVM |
 | Linux | Clang/LLVM |
+| macOS, iOS | XCode {{< versions/xcode >}} or later |
+| Android | Android Clang/LLVM |
 
 {{< note >}}
-For additional platform-specific information, refer to the [Settings Reference](./reference/) and the relevant [platform overviews](/docs/user-guide/platforms/).
+For additional platform-specific requirements and information, refer to [O3DE System Requirements](/docs/welcome-guide/requirements), the [CMake Settings Reference](/docs/user-guide/build/reference), and the relevant [platform overviews](/docs/user-guide/platforms/).
 {{< /note >}}
 
 ## First project
@@ -160,13 +159,13 @@ Use the following command to build just the Editor and its tool dependencies:
 {{% tab name="Windows" %}}
 
 ```cmd
-cmake --build build/windows_vs2019 --target Editor --config profile -- /m
+cmake --build build/windows_vs2019 --target Editor --config profile -- -m
 ```
 
 * `--build` : Location of build directory, where to put the build output.
 * `--target` : Build target(s). More than one can be specified, separated by a space.
 * `--config` : The build configuration. Refer to the previous section on [Generated build configurations](#generated-build-configurations).
-* `/m` : A recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
+* `-m` : A recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
 
 In this example, build products are placed in the `build\windows_vs2019\bin\profile` directory.
 
@@ -195,7 +194,7 @@ Use the following command to build the project, Editor, and its tool dependencie
 {{% tab name="Windows" %}}
 
 ```cmd
-cmake --build build/windows_vs2019 --target <ProjectName>.GameLauncher Editor --config profile -- /m
+cmake --build build/windows_vs2019 --target <ProjectName>.GameLauncher Editor --config profile -- -m
 ```
 
 Refer to the previous section for an explanation of each parameter.

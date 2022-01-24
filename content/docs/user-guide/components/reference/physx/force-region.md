@@ -1,7 +1,7 @@
 ---
-description: ' Use the PhysX Force Region component to specify a region that applies
-  physical force to entities. '
-title: PhysX Force Region
+linkTitle: PhysX Force Region
+description: ' Use the PhysX Force Region component to specify a region that applies physical force to entities. '
+title: PhysX Force Region Component
 ---
 
 

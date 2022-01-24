@@ -8,7 +8,7 @@ Open 3D Engine ships with a Multiplayer Gem that uses the [O3DE networking stack
 
 For a quick introduction of the O3DE Multiplayer Gem and networking, watch the video below.
 
-{{< youtube id="FfrkHJJt_X0" title="O3DE - Networking Overview" >}}
+{{< youtube-width id="FfrkHJJt_X0" title="O3DE - Networking Overview" >}}
 
 ## Section topics
 

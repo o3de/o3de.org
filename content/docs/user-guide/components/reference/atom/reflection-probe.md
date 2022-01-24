@@ -1,5 +1,5 @@
 ---
-title: Reflection Probe component
+title: Reflection Probe Component
 linktitle: Reflection Probe
 description: 'Open 3D Engine (O3DE) Reflection Probe component reference.'
 toc: true

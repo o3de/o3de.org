@@ -34,7 +34,7 @@ Developers can be confident in adopting core systems of O3DE for Windows that ha
 
 **Q3.**  Does the Open 3D Foundation hold an annual event for developers?
 
-Yes. In October 2021, the Open 3D Foundation held its inaugural O3DECon event, with 36 sessions hosted by members of the Foundation. With over 250 attendees, the event brought together game studios, simulation developers, 3D artists, spatial technology providers, and a wide range of other community members. The event will be held annually in October each year. In October 2021, we also kicked off the first O3DE game jam with the theme 'The World Outside' to encourage community members to build content. Check out game jam progress via [Twitter](https://twitter.com/o3dengine) and on our [Discord](https://discord.com/invite/xNb2q4SJKJ).
+Yes. In October 2021, the Open 3D Foundation held its inaugural O3DECon event, with 36 sessions hosted by members of the Foundation. With over 250 attendees, the event brought together game studios, simulation developers, 3D artists, spatial technology providers, and a wide range of other community members. The event will be held annually in October each year. In October 2021, we also kicked off the first O3DE game jam with the theme 'The World Outside' to encourage community members to build content. Check out game jam progress via [Twitter](https://twitter.com/o3dengine) and on our [Discord](https://{{< links/o3de-discord >}}).
 
 **Q4.** How can my organization support the O3DE project?
 

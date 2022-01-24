@@ -48,7 +48,7 @@ The following table describes the settings for **Scene Configuration**.
 
 ## Editor Configuration 
 
-The following options relate to the **Debug Draw COM** (center of mass) option of the [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/) component.
+The following options relate to the **Debug Draw COM** (center of mass) option of the [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) component.
 
 ****
 
@@ -75,5 +75,5 @@ The following table describes the settings for **Wind Configuration**. See [Crea
 
 | Property | Description |
 | --- | --- |
-| Global wind tag  |  Tag used by PhysX wind system to detect entities that provide wind data **global** to a collider volume.  |
+| Global wind tag  |  Tag used by PhysX wind system to detect entities that provide **global** wind data.  |
 | Local wind tag  |  Tag used by PhysX wind system to detect entities that provide wind data **localized** to a collider volume.  |

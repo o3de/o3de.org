@@ -46,9 +46,9 @@ Currently, O3DE supports skeletons created with LOD groups only.
 
 1. Create an actor with multiple LOD meshes by adding a suffix at the end of the name of each LOD mesh. See the following table for examples.
 
-   For more information, see [FBX soft naming conventions](/docs/user-guide/assets/fbx-settings/settings-soft-naming).
+   For more information, see [FBX soft naming conventions](/docs/user-guide/assets/scene-settings/meshes-tab).
 
-1. Follow the instructions in [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings) to export the meshes to FBX format so that you can use them in O3DE.
+1. Follow the instructions in [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/scene-settings) to export the meshes to FBX format so that you can use them in O3DE.
 
     **To use LOD groups to create actor LODs**
 
