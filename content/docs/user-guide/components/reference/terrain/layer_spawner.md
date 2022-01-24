@@ -1,20 +1,27 @@
 ---
 title: Terrain Layer Spawner Component
 linktitle: Terrain Layer Spawner
-description: ' Open 3D Engine (O3DE) Terrain Layer Spawner reference. '
+description: Open 3D Engine (O3DE) Terrain Layer Spawner reference.
 weight: 100
 ---
 
 The **Terrain Layer Spawner** component spawns a terrain layer within given bounds, and enables the ordering of multiple layers.  
-The priority is controlled by first assigning a layer, either **Foregound**(Highest priority) or **Background**, and then by using the **Priority** setting, with a higher number being a higher priority.  
-You can configure the dimensions of the layer by modifying the [Box component](/docs/user-guide/components/reference/shape/box-shape) on the same entity.
-The **Box component** is required for the **Layer Spawner** to operate.
 
-## Provider ##
+## Usage 
+
+The priority is controlled by first assigning a layer, either **Foregound**(Highest priority) or **Background**, and then by using the **Priority** setting, with a higher number being a higher priority.  You can configure the dimensions of the layer by modifying the [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape) component on the same entity. 
+
+## Provider
 
 [Terrain Gem](/docs/user-guide/gems/reference/environment/terrain)
 
-## Properties ##
+## Dependencies
+
+The [Axis-Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape) component is required for the Terrain Layer Spawner to operate.
+
+## Properties
+
+![Terrain Layer Spawner component properties](/images/user-guide/components/reference/terrain/terrain-layer-spawner-component.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
@@ -23,30 +30,11 @@ The **Box component** is required for the **Layer Spawner** to operate.
 | **Use Ground Plane** | Enable this setting to provide a default ground plane where no terrain is defined. | Boolean | `True` |
 
 
-## TerrainSpawnerRequestBus ##
+## TerrainSpawnerRequestBus
 
-Use the following request functions with the `TerrainSpawnerRequestBus` EBus interface to communicate with other components of your game.
+Use the following request functions with the `TerrainSpawnerRequestBus` EBus interface to communicate with Terrain Layer Spawner components of your game.
 
-### GetPriority 
-
-Retrieves the terrain layer priority.
-
-**Parameters**  
-Layer \[out\] - Index of the Layer Priority setting (Foreground is 0).
-Type: Unsigned Int  
-Priority \[out\] - Value of the Sub Priority setting. 
-Type: Unsigned Int
-
-**Return**
-None
-
-### GetUseGroundPlane 
-
-Retrieves the value of the Use Ground Plane setting.
-
-**Parameters**
-None
-
-**Return**
-Value of the setting .
-Type: Boolean
+| Request Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetPriority` | Returns the **Layer Priority** and **Sub Priority** of the Terrain Layer Spawner. | None | Layer Priority: Integer; Sub Priority: Integer | No |
+| `GetUseGroundPlane` | Returns the value of **Use Ground Plane**. | None | Boolean | No |
