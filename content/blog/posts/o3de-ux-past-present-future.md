@@ -75,7 +75,7 @@ Discoverability
 ​
 The fundamental objective for the system's architecture was to allow users to be aware of where they are, what they found, what is around, and what to expect. As a result, we conducted a card sort study where participants were asked to arrange a stack of virtual cards into distinct categories based on their understanding of Gems. We identified the key category for the faceted navigation to be *Features*, which would classify Gems on the basis of their distinctive attributes and functionalities.
 ​
-![Animated O3DE UX card sort GIF](/images/blog/bjds-posts/o3de-card-sort.gif)
+![Animated O3DE UX card sort GIF](/images/blog/bjds-posts/o3de-card-sort.jpg)
 ​
 With the research findings in mind, we established a set of design principles. Our goal was to identify a design solution that aligns with these principles while addressing the needs of all users.
 ​
