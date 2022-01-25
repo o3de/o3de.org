@@ -29,19 +29,19 @@ As the UX team, we are responsible for creating experiences that are intuitive, 
 
 Before understanding the present design of O3DE, let's look back at Lumberyard and its first-time user journey.
 
-![Image of Amazon Lumberyard's Project Configurator from v1.28](/images/blog/bjds-posts/project-configurator.png)
+![Image of Amazon Lumberyard's Project Configurator from v1.28](/images/blog/bjds-posts/01-ui-project-configurator.jpg)
 
 Lumberyard's first-time experience was reported as troublesome by existing users, and had disengaged many new users. During the initial stages, users were provided no assistance in their exploration and navigation of the Project Manager and Gem Catalog, or through the compilation of the build and resolution of errors.
 
 This is where I came into the picture. Along with three other interns, I had the opportunity to work on a month-long Game Jam to learn about Lumberyard. Since we had never used the engine before, we provided our objective feedback for its FTUE. I was able to collect the issues with a diary study and provide my findings to all the other stakeholders. From that diary study, we learned how first-time users used Lumberyard, what their major blockers were, and how these issues occurred. We then generated a list of areas for improvement based on these research findings. Through this initiative, we considered the goals and frustrations of users, and assessed the User Journey Map shaped by the most common FTUE workflows within the engine: *Installation*, *Project Setup*, *Team Setup*, *Engine Exploration*, and *Game Design + Development*.
 
-![O3DE FTUE journey map image](/images/blog/bjds-posts/o3de-ftue-journey-map.png)
+![O3DE FTUE journey map image](/images/blog/bjds-posts/02-ftue-journey-map.jpg)
 
 Generally, the total duration of a user's first-time journey differs between products. We recognise, for O3DE, that these workflows typically take longer than a day to explore. This journey can inevitably be split into *Day 1*, *Week 1,* and *Month 1* phases. With each phase, the user evaluates distinct aspects of the engine, such as Script Canvas or the Material Editor, for their project.
 
 In contrast to the User Journey Map above, the phases below note how a user works on the Game Design workflow in Week 1 as well as the Team Setup in Month 1. According to [Rev the Engine](https://youtu.be/oFeqw-0tsE4) user research, users typically begin their gameplay, actor, work, and look development before collaborating with their team.
 
-![O3DE FTUE journey duration image](/images/blog/bjds-posts/o3de-ftue-journey-duration.png)
+![O3DE FTUE journey duration image](/images/blog/bjds-posts/03-ftue-journey-duration.jpg)
 
 ### It's always Day 1
 
@@ -65,7 +65,7 @@ We found that it was difficult for new users to wrap their mind around the conce
 
 The fundamental objective for the system's architecture was to allow users to be aware of where they are, what they found, what is around, and what to expect. As a result, we conducted a card sort study where participants were asked to arrange a stack of virtual cards into distinct categories based on their understanding of Gems. We identified the key category for the faceted navigation to be *Features*, which would classify Gems on the basis of their distinctive attributes and functionalities.
 
-![O3DE UX card sort image](/images/blog/bjds-posts/o3de-card-sort.jpg)
+![O3DE UX card sort image](/images/blog/bjds-posts/04-card-sort-session.gif)
 
 With the research findings in mind, we established a set of design principles. Our goal was to identify a design solution that aligns with these principles while addressing the needs of all users.
 
@@ -80,7 +80,7 @@ Users must be able to make their own decisions if they are to feel encouraged to
 
 With the initial redesign, we continued to make gradual changes—most notably, the option to view the figurative "shopping cart" of Gems was introduced. Users could now see a list of all Gems they had added for activation. In addition, they could now view extensive information about Gems and were able to refine the list by the status of the Gem.
 
-![Animated O3DE FTUE gem catalog iteration GIF](/images/blog/bjds-posts/o3de-gem-catalog-iteration.gif)
+![Animated O3DE FTUE gem catalog iteration GIF](/images/blog/bjds-posts/05-launcher.gif)
 
 ### What's Next?
 
