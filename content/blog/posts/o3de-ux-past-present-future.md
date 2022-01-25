@@ -57,7 +57,7 @@ At this point, I worked with the UX team to redesign the Project Manager and Gem
 
 >"_One of our biggest problems is not knowing what Gems are given to us, when installing or upgrading the application._"&mdash;**O3DE Research Participant**
 
-We found that it was difficult for new users to wrap their mind around the concept of Gems and their use within projects. With 80 Gems native to O3DE, the typical usage varies over two patterns—users either retain the default configuration throughout their development process or they enable all Gems to shorten build and compilation time. It was important to establish an information hierarchy, because of the Gems' low ==findability== and ==discoverability==.
+We found that it was difficult for new users to wrap their mind around the concept of Gems and their use within projects. With 80 Gems native to O3DE, the typical usage varies over two patterns—users either retain the default configuration throughout their development process or they enable all Gems to shorten build and compilation time. It was important to establish an information hierarchy, because of the Gems' low **findability** and **discoverability**.
 
 **Findability**: The ease with which information can be found within a system.
 
@@ -69,13 +69,16 @@ The fundamental objective for the system's architecture was to allow users to be
 
 With the research findings in mind, we established a set of design principles. Our goal was to identify a design solution that aligns with these principles while addressing the needs of all users.
 
-**Discover, Find Search**
+#### Discover, Find Search
+
 Users must be able to explore the Gem Catalog efficiently. We improved the searchability of the catalog with filter, sort, and search functions. This allows users to make appropriate decisions for their project during Gem selection.
 
-**Reinforce Clarity to Foster Learning**
+#### Reinforce Clarity to Foster Learning
+
 The design must give users constant feedback to help them recognise and recover from errors. By providing help and documentation at all steps, and by creating a clear informational hierarchy we can help reduce error and encourage user confidence.
 
-**Autonomy to Encourage Contribution and Maintain Consistency and Standards**
+#### Autonomy to Encourage Contribution and Maintain Consistency and Standards
+
 Users must be able to make their own decisions if they are to feel encouraged to contribute to the engine. We must ensure a design system that helps users to build consistent experiences with ease.
 
 With the initial redesign, we continued to make gradual changes—most notably, the option to view the figurative "shopping cart" of Gems was introduced. Users could now see a list of all Gems they had added for activation. In addition, they could now view extensive information about Gems and were able to refine the list by the status of the Gem.
@@ -88,8 +91,8 @@ The outcome of the research has been a compilation of major issues new users fac
 
 With the growth of O3DE, we envision a great deal of community involvement to follow suit. We are focused on supporting the community through their first journey. In order to maintain, monitor, and manage the Gem Catalog's navigation structure, we see a need to create a systematic approach for addressing the large number of user contributions that accompany a rapidly growing community. Efforts to include community-submitted Gems in the Gem Catalog continue. We remain dedicated to examining and improving the First-time User Experience.
 
-But this is not an endeavor we are working on alone. This is a community-wide effort, and we need your help! What would you like to see when you're onboarding with O3DE? Share your issues, suggestions for improvement, and overall experiences in the [O3DE Discord](https://discord.gg/xNb2q4SJKJ) server! You can share your thoughts with the UX Design team and me directly on the ==SIG-UI-UX== channel.
+But this is not an endeavor we are working on alone. This is a community-wide effort, and we need your help! What would you like to see when you're onboarding with O3DE? Share your issues, suggestions for improvement, and overall experiences in the [O3DE Discord](https://discord.gg/xNb2q4SJKJ) server! You can share your thoughts with the UX Design team and me directly on the **SIG-UI-UX** channel.
 
-But this is not an endeavour we are working on alone. This is a community-wide effort. With that said, we still need your help! What would you like to see when you're onboarding with O3DE? Share your issues, improvement suggestions, and your overall experiences in the [O3DE Discord](https://discord.gg/xNb2q4SJKJ) server! You can share your thoughts with me and the rest of the UX Design team directly on our Discord's ==UI-UX SIG channel==.
+But this is not an endeavour we are working on alone. This is a community-wide effort. With that said, we still need your help! What would you like to see when you're onboarding with O3DE? Share your issues, improvement suggestions, and your overall experiences in the [O3DE Discord](https://discord.gg/xNb2q4SJKJ) server! You can share your thoughts with me and the rest of the UX Design team directly on our Discord's **UI-UX SIG channel**.
 
 I'm looking forward to hearing from all of you soon!
