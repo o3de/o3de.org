@@ -6,15 +6,15 @@ weight: 400
 toc: true
 ---
 
-Images created in third-party applications must be processed as runtime optimized product assets to be used in **Open 3D Engine (O3DE)**. O3DE can process many image formats including some formats that have special use cases such as look up tables (LUT) and image based lighting (IBL).
+Textures created in third-party applications must be processed as runtime optimized product assets to be used in **Open 3D Engine (O3DE)**. O3DE can process many image formats including some formats that have special use cases such as look up tables (LUT) and image based lighting (IBL).
 
-When image source assets are placed in a scan directory, **Asset Processor** detects the new or modified image files, determines the contents of the files, and then processes the data using basic default settings. However, image files might require specialized processing depending on their use case. With **Texture Settings**, you can customize how images are processed.
+When texture source assets are placed in a scan directory, **Asset Processor** detects the new or modified files, determines the contents of the files, and then processes them using basic default settings. However, textures might require specialized processing depending on their use case. With **Texture Settings**, you can customize how texture source files are processed.
 
-Texture Settings creates a `.assetinfo` sidecar file containing your custom processing options for an image source asset. The image source asset is not changed. When Asset Processor processes the image source asset, it uses the options in the `.assetinfo` file to generate product assets.
+Texture Settings creates a `.assetinfo` sidecar file containing your custom processing options for a texture source asset. The source asset is not changed. When Asset Processor processes the source asset, it uses the options in the `.assetinfo` file to generate product assets.
 
 ## Scene Settings topics
 
-The topics in this section provide general information about the Texture Settings interface and image product asset types that you can use to customize how image source assets are processed.
+The topics in this section provide general information about the Texture Settings interface and information about the image file types supported by Texture Settings.
 
 | Topic | Description |
 | - | - |
