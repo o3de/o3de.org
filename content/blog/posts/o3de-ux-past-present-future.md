@@ -35,7 +35,7 @@ Lumberyard's first-time experience was reported as troublesome by existing users
 
 This is where I came into the picture. Along with three other interns, I had the opportunity to work on a month-long Game Jam to learn about Lumberyard. Since we had never used the engine before, we provided our objective feedback for its FTUE. I was able to collect the issues with a diary study and provide my findings to all the other stakeholders. From that diary study, we learned how first-time users used Lumberyard, what their major blockers were, and how these issues occurred. We then generated a list of areas for improvement based on these research findings. Through this initiative, we considered the goals and frustrations of users, and assessed the User Journey Map shaped by the most common FTUE workflows within the engine: *Installation*, *Project Setup*, *Team Setup*, *Engine Exploration*, and *Game Design + Development*.
 
-{{< figure src="/images/blog/bjds-posts/02-ftue-journey-map.jpg" title="O3DE FTUE journey map image" >}}
+<img src="/images/blog/bjds-posts/02-ftue-journey-map.jpg" alt="drawing" width="600"/>
 
 Generally, the total duration of a user's first-time journey differs between products. We recognise, for O3DE, that these workflows typically take longer than a day to explore. This journey can inevitably be split into *Day 1*, *Week 1,* and *Month 1* phases. With each phase, the user evaluates distinct aspects of the engine, such as Script Canvas or the Material Editor, for their project.
 
