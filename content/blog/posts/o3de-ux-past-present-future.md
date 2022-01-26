@@ -9,7 +9,7 @@ blog_img: "/images/blog/announcement_thumbnail.jpg"
 
 _Learn about how Amazon Web Services developed the first-time user experience for Open 3D Engine (O3DE) from Bhanuja Sanghavi, one of the UX designers contributing to O3DE._
 
-## Explore the Past, Present, & Future of O3DE's First-time User Experience
+## Welcome to Open 3D Engine's New User Experience!
 
 Hello, I'm Bhanuja! Since September 2020, I have had the opportunity to work as a User Experience (UX) Design Intern for Amazon on its game engine Lumberyard, the predecessor to Open 3D Engine (O3DE). Over the past year, I have worked closely with the UX, Engineering, and Product teams to research the engine's First-time User Experience (FTUE), as well as the solutions to improve the ease and efficiency with which users set up, learn, and create with O3DE.
 
