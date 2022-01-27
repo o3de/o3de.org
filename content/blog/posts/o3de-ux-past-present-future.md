@@ -37,7 +37,7 @@ This is where I came into the picture. Along with three other interns, I had the
 
 {{< image-width "/images/blog/bjds-posts/02-ftue-journey-map.jpg" "800" "Full journey map for the O3DE FTUE" >}} 
 
-(*Open this image in a new browser tab to view it in full.*)
+(*Open this image in a new browser tab to view it in full, or [click this link](https://o3de.org/images/blog/bjds-posts/02-ftue-journey-map.jpg).*)
 
 Generally, the total duration of a user's first-time journey differs between products. We recognise, for O3DE, that these workflows typically take longer than a day to explore. This journey can inevitably be split into *Day 1*, *Week 1,* and *Month 1* phases. With each phase, the user evaluates distinct aspects of the engine, such as Script Canvas or the Material Editor, for their project.
 
