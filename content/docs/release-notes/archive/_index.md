@@ -11,7 +11,7 @@ Looking for older versions of release notes for **Open 3D Engine (O3DE)**? Look 
 
 | Version     |  Link                                           | Date of Release    |
 |-------------|-------------------------------------------------|--------------------|
-| 2111.2      | [2111.2 Release Notes](./2111-2-release-notes)  | 1/26/2022 |
+| 2111.2      | [2111.2 Release Notes](./2111-2-release-notes)  | 1/27/2022 |
 | 2111.1      | [2111.1 Release Notes](./21-11-release-notes)     | 12/2/2021          |
 | 2107.1      | [2107.1 Release Notes](./2107-1-release-notes)   | 7/6/2021           |
 
