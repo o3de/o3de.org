@@ -96,7 +96,7 @@ We suggest that you begin your learning path by browsing the following set of O3
 *  [Component Entity System](/docs/user-guide/components/)
 *  [Component Reference](/docs/user-guide/components/reference/)
 *  [Animation Editor](/docs/user-guide/visualization/animation/animation-editor/)
-*  [Scene Settings Tool](/docs/user-guide/assets/fbx-settings/)
+*  [Scene Settings Tool](/docs/user-guide/assets/scene-settings/)
 *  [Gem Library](/docs/user-guide/gems/)
 *  [Cinematics and the Track View Editor](/docs/user-guide/visualization/cinematics/)
 *  [Shaders and Materials](/docs/atom-guide/look-dev/)

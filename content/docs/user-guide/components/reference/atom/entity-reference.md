@@ -1,5 +1,5 @@
 ---
-title: Entity Reference component
+title: Entity Reference Component
 linktitle: Entity Reference
 description: 'Open 3D Engine (O3DE) Entity Reference component reference.'
 toc: true

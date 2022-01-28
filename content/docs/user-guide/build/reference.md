@@ -1,5 +1,5 @@
 ---
-title: Settings Reference
+title: CMake Settings Reference
 description: The reference for Open 3D Engine-specific CMake settings.
 weight: 500
 ---
@@ -41,11 +41,12 @@ These options are the user-supplied settings that are required to configure O3DE
 
 These options control the types of assets that are built, and where projects load assets from at runtime.
 
-* **`LY_ASSET_DEPLOY_TYPE`** - The *default* type of assets to be built by the [asset processor](/docs/user-guide/assets/pipeline/processor/). Valid platforms are:
+* **`LY_ASSET_DEPLOY_TYPE`** - The *default* type of assets to be built by [Asset Processor](/docs/user-guide/assets/asset-processor/). Valid platforms are:
   * `pc` - Windows PC
-  * `osx_gl` - MacOS
+  * `linux` - Linux
+  * `mac` - MacOS
   * `ios` - iOS and iPad OS
-  * `es3` - Android
+  * `android` - Android
   
   *Type*: `STRING`  
   *Default*: The asset type for the current host platform.
@@ -58,11 +59,14 @@ These options control the types of assets that are built, and where projects loa
   *Type*: `STRING`  
   *Default*: `LOOSE`
 
-* **`LY_OVERRIDE_PAK_FOLDER_ROOT`**  
-Controls where asset `.pak` files are loaded from. An empty string uses the predefined `paks` root.  
+* **`LY_ARCHIVE_FILE_SEARCH_MODE`**  
+Defines the default file search mode to locate non-Pak files within the Archive System
+  *  `0` = Search file system first, before searching within mounted `.pak` files.
+  *  `1` = Search mounted `.pak` files first, before searching file system.
+  *  `2` = Search only mounted `.pak` files.
 
   *Type*: `STRING`  
-  *Default*: Predefined `paks` root under your O3DE installation
+  *Default*: `0` = (debug/profile configurations), `2` = (release configuration)
 
 ### Package system settings
 

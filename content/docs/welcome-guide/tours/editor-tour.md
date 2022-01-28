@@ -10,7 +10,7 @@ toc: true
 
 You can learn the basics of navigating and customizing O3DE Editor from the quick video tutorial below, and a few additional tips by reading this topic.
 
-{{< youtube id="tFfiXhckd7g" title="O3DE Editor Tour" >}}
+{{< youtube-width id="tFfiXhckd7g" title="O3DE Editor Tour" >}}
 
 ## Launch O3DE Editor
 

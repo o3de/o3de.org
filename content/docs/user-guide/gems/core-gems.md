@@ -1,7 +1,8 @@
 ---
-description: An overview of Open 3D Engine Gems which offer common functionality core to games and simulations.
-title: Gems Providing Core Open 3D Engine Functionality
 linktitle: Core Gems
+title: Gems Providing Core Open 3D Engine Functionality
+description: An overview of Open 3D Engine Gems which offer common functionality core to games and simulations.
+weight: 300
 ---
 
 While Open 3D Engine's architecture and core frameworks provide the backbone and infrastructure to support game and simulation development, most features that are usually required for creating projects come in the form of extensions to the core through the Gem system. Not all of these Gems are used by released projects using the O3DE runtime - some are specific to the Editor, Asset Processor, or other O3DE tools.
@@ -9,14 +10,14 @@ While Open 3D Engine's architecture and core frameworks provide the backbone and
 Even if a Gem only adds Editor or Asset Processor functionality, it should be included as part of your project's Gems. 
 
 {{< note >}}
-All projects require the O3DE Core (LmbrCentral) Gem to provide core Editor functionality.  O3DE Core (LmbrCentral) also provides many components for gameplay.  Read the [O3DE Core (LmbrCentral) documentation](./reference/o3de-core) for more information.
+All projects require the O3DE Core (LmbrCentral) Gem to provide core Editor functionality.  O3DE Core (LmbrCentral) also provides many components for gameplay.  Read the [O3DE Core (LmbrCentral) documentation](../reference/o3de-core) for more information.
 {{< /note >}}
 
 These Gems are only built and loaded for products that require them:
 
 * **Atom** - The real-time physically based renderer used by O3DE. In addition to rendering at runtime, Atom provides Editor components and asset processing tools. For more information on Atom, read the [Atom Guide](/docs/atom-guide).
 
-* **CameraFramework** - Components for placing and controlling cameras. Read the [Cameras documentation](/docs/user-guide/visualization/cameras/) for more information.
+* **CameraFramework** - Components for placing and controlling cameras. Read the [Cameras documentation](/docs/user-guide/components/reference/camera/camera) for more information.
 
 * **EMotionFX** - The EMotionFX Gem includes a suite of Editor and asset processing tools for artists and animators. It also brings support for processing animations from network traffic, and the ability to control animation states via C++ APIs.
 

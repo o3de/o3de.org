@@ -1,5 +1,6 @@
 ---
-title: Audio Rtpc
+linkTitle: Audio RTPC
+title: Audio RTPC Component
 description: Use the Audio RTPC component to set values at runtime that produce real-time tweaking of sounds in Open 3D Engine.
 toc: true
 ---

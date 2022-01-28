@@ -1,5 +1,5 @@
 ---
-title: HDRi Skybox component
+title: HDRi Skybox Component
 linktitle: HDRi Skybox
 description: 'Open 3D Engine (O3DE) HDRi Skybox component reference.'
 toc: true

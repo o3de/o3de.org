@@ -12,19 +12,20 @@ primary: true
 
 ## Current Versions of Open 3D Engine
 
+**Latest version**: 2111.2
+
+* Release Notes: [O3DE 2111.2 Release Notes](./archive/2111-2-release-notes)
+
+**Note**: Source versions use the `XXXX.Y` numbering model. Binary releases use the `XX.XX` numbering model, where the decimal place is moved to the left by 2 values from the original source code version, and any values after 4 are truncated.
 ### Download the latest version
 
-| Version        | Binary download link          |  Date of Release   |
-|----------------|-------------------------------|--------------------|
-| 2107.1 (Developer Preview) | _COMING SOON!_         |  July 6, 2021      |
+| Version                            | Binary download link                             |  Date of Release   |
+|------------------------------------|--------------------------------------------------|--------------------|
+| 21.11 \[Windows\] (Stable) | [Download](https://o3debinaries.org/download/windows.html) | December 2, 2021   |
+| 21.11 \[Linux\] (Preview)  | [Download](https://o3debinaries.org/download/linux.html) | December 2, 2021   |
 
 ### Get the latest source code
 
-| Version         | Current branch                   |  Last updated      |
-|-----------------|----------------------------------|--------------------|
-| 2107.1 (Developer Preview) | [2107.1](https://github.com/o3de/o3de/tree/main) |  July 6, 2021      |
-
-### 2107.1 (Developer Preview) Release Information
-
-* [2107.1 Release Notes](archive/2107-1-release-notes)
-* [2107.1 Known Issues](https://github.com/o3de/o3de/issues/1736)
+| Version         | Current branch                                              | Last updated       |
+|-----------------|-------------------------------------------------------------|--------------------|
+| 2111.2 | [2111.2](https://github.com/o3de/o3de/tree/main) |  January 26, 2022  |

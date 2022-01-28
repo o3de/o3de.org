@@ -16,4 +16,4 @@ The instructions guide you through the following steps:
 
 At the end of the tutorial, you'll have a new O3DE project based on the default "standard" project template.
 
-{{< youtube id="SZC13S0YZZs" title="Creating O3DE Projects Using Command Line" >}}
+{{< youtube-width id="SZC13S0YZZs" title="Creating O3DE Projects Using Command Line" >}}

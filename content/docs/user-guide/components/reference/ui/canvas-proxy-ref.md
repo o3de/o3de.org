@@ -1,7 +1,8 @@
 ---
+linkTitle: UI Canvas Proxy Ref
 description: ' Use the UI Canvas Proxy Ref component in Open 3D Engine to place a UI canvas
   on a 3D mesh that a player can interact with. '
-title: UI Canvas Proxy Ref
+title: UI Canvas Proxy Ref Component
 ---
 
 

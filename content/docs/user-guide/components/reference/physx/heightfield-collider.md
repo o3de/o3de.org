@@ -1,6 +1,6 @@
 ---
 linkTitle: PhysX Heightfield Collider
-title: PhysX Heightfield Collider
+title: PhysX Heightfield Collider Component
 description: Use the PhysX Heightfield Collider component to create collision for heightfields such as terrain in Open 3D Engine (O3DE).
 toc: true
 ---

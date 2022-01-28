@@ -56,7 +56,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits Application, and Handler.</p>
+<p>Inherits Application, Handler, and Handler.</p>
 
 <p>Inherited by UnitTest::ToolsTestApplication.</p>
 <table class="memberdecls">
@@ -297,6 +297,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateAndAddEntityFro
 <tr class="memitem:a1b19e176e91b7267fe4e5d9643ee2c64"><td class="memItemLeft" align="right" valign="top"><a id="a1b19e176e91b7267fe4e5d9643ee2c64"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RunRedoSeparately</b> (<a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point.html">UndoSystem::URSequencePoint</a> *redoCommand) override</td></tr>
 <tr class="separator:a1b19e176e91b7267fe4e5d9643ee2c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c1b6eaf3c3da60955b7d52ad98250f"><td class="memItemLeft" align="right" valign="top"><a id="a22c1b6eaf3c3da60955b7d52ad98250f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabInstancePropagationBegin</b> () override</td></tr>
+<tr class="separator:a22c1b6eaf3c3da60955b7d52ad98250f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaae3c8f6eebaf1fd5c7e29f1c56d8220"><td class="memItemLeft" align="right" valign="top"><a id="aaae3c8f6eebaf1fd5c7e29f1c56d8220"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabInstancePropagationEnd</b> () override</td></tr>
+<tr class="separator:aaae3c8f6eebaf1fd5c7e29f1c56d8220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bea5898cb1eb09d5488b64e853d24ac"><td class="memItemLeft" align="right" valign="top"><a id="a2bea5898cb1eb09d5488b64e853d24ac"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateUndosForDirtyEntities</b> ()</td></tr>
 <tr class="separator:a2bea5898cb1eb09d5488b64e853d24ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -336,6 +342,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isInIsolationMode</
 <tr class="memitem:a827b25d1db276132addd402a0529e588"><td class="memItemLeft" align="right" valign="top"><a id="a827b25d1db276132addd402a0529e588"></a>
 EntityIdSet&#160;</td><td class="memItemRight" valign="bottom"><b>m_isolatedEntityIdSet</b></td></tr>
 <tr class="separator:a827b25d1db276132addd402a0529e588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedbb60a110eaadbe12ed093e070e4c15"><td class="memItemLeft" align="right" valign="top"><a id="aedbb60a110eaadbe12ed093e070e4c15"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_freezeSelectionUpdates</b> = false</td></tr>
+<tr class="separator:aedbb60a110eaadbe12ed093e070e4c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9bf6cc0d24456c9e2c4ab915ae06745"><td class="memItemLeft" align="right" valign="top"><a id="ad9bf6cc0d24456c9e2c4ab915ae06745"></a>
 <a class="el" href="class_az_tools_framework_1_1_editor_entity_a_p_i.html">EditorEntityAPI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_editorEntityAPI</b> = nullptr</td></tr>
 <tr class="separator:ad9bf6cc0d24456c9e2c4ab915ae06745"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -397,7 +406,7 @@ EntityIdSet&#160;</td><td class="memItemRight" valign="bottom"><b>m_isolatedEnti
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 13 2021 14:19:22 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 26 2022 14:01:11 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

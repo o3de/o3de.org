@@ -1,7 +1,7 @@
 ---
-linkTitle: In App Purchases
-title: In App Purchases Gem
-description: The In App Purchases Gem provides functionality for in app purchases in Open 3D Engine (O3DE) projects.
+linkTitle: In-App Purchases
+title: In-App Purchases Gem
+description: The In-App Purchases Gem provides functionality for in app purchases in Open 3D Engine (O3DE) projects.
 toc: true
 ---
 

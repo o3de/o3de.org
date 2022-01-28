@@ -1,5 +1,6 @@
 ---
-title: Audio Preload
+linkTitle: Audio Preload
+title: Audio Preload Component
 description: Use the Audio Area Environment component in Open 3D Engine to apply an environment effect to sounds that an entity triggers.
 toc: true
 ---

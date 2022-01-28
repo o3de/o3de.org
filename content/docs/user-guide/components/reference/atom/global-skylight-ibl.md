@@ -1,5 +1,5 @@
 ---
-title: Global Skylight (IBL) component
+title: Global Skylight (IBL) Component
 linktitle: Global Skylight (IBL)
 description: 'Open 3D Engine (O3DE) Global Skylight (IBL) component reference.'
 toc: true
