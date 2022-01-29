@@ -24,16 +24,8 @@ The following instructions assume that you have:
 * Met all hardware and software requirements listed in [O3DE System Requirements](/docs/welcome-guide/requirements).
 
 {{< note >}}
-If you set up O3DE from GitHub and chose the [source engine](/docs/user-guide/appendix/glossary#source-engine) build type, we recommend that you create your project using the command line interface (CLI). For more information, refer to [Creating Projects Using the CLI](../creating-projects-using-cli).
+If you set up O3DE from GitHub and chose the [source engine](/docs/user-guide/appendix/glossary#source-engine) build type, we recommend that you create your project using the command line interface (CLI) instructions in [Creating Projects Using the CLI](../creating-projects-using-cli).
 {{< /note >}}
-
-This tutorial uses the following project name and directories in the examples:
-
-| Directory | Description |
-| --- | --- |
-| `o3de-install` | O3DE engine install directory. |
-| `o3de-projects/MyProject` | New project name and location. |
-| `o3de-packages` | Package directory created earlier during setup on [Windows](/docs/welcome-guide/setup/setup-from-github/building-windows/#build-the-engine) or [Linux](/docs/welcome-guide/setup/setup-from-github/building-linux/#build-the-engine). |
 
 ## Launch Project Manager
 
@@ -67,26 +59,32 @@ If this is the first time you've used Project Manager to create a project, then 
 
     ![Or choose "New Project - Create New Project"](/images/welcome-guide/project-manager-menu-create-new-project.png)
 
-1. Under **Project name**, give your project a name, such as "MyProject".
+1. Under **Project name**, give your project a name. You can use up to 64 letters, numbers, underscores ('_'), or hyphens ('-'). Spaces are not allowed.
 
 1. If you want to change the project location, under **Project Location**, choose the folder icon, and then use the **Browse** dialog box to choose a new location. If needed, you can create a new project folder. The folder that you choose becomes the project root directory.
 
     ![Create a New Project - Project Details screen](/images/welcome-guide/project-manager-create-project.png)
 
-1. Under **Select a Project Template**, you can choose a project template with a pre-configured selection of Gems. You can also choose different Gems to enable for your project. This tutorial uses the default template and its pre-configured selection of common Gems.
+1. Under **Select a Project Template**, you can choose a project template with a pre-configured selection of Gems. You can modify the list of Gems enabled for your project by choosing the **Configure Gems** button. This tutorial uses the default template and its pre-configured selection of common Gems.
 
-1. Choose **Create Project** to create the project files in the root directory specified as the project location. This also registers your project in the O3DE manifest, located at `<user-folder>/.o3de/o3de_manifest.json`.
+1. Choose **Create Project** to create the project files in the project location you selected. This also registers your project in the O3DE manifest, located at `<user-folder>/.o3de/o3de_manifest.json`.
 
 ## Build the O3DE project
 
 You are now ready to build the project from Project Manager.
 
-1. Inside your project's icon box, choose **Build Project**.
+1. Inside your project's icon box, open the **Build Project** dropdown menu and choose **Build Now**.
 
     ![Choose Build Project](/images/welcome-guide/project-manager-build-project.png)
 
-    The project shouldn't take long to build. When the build completes, you can find the project binaries in your project directory under `build/<platform>/bin/profile`.
+1. After choosing **Yes** in the next dialog box to confirm that you are ready to build your project, the build will begin.
 
-1. To open your built project in the Editor, choose **Open Editor** from inside your project's icon box.
+    {{< note >}}
+The first build may take some time to complete if the required third-party packages need to be downloaded.
+    {{< /note >}}
+
+    When the build completes, you can find the project binaries in your project directory under `build/<platform>/bin/profile`.
+
+1. To open your built project in the Editor, move your pointer inside your project's icon box and choose **Open Editor**.
 
 For more information about project configuration and building, refer to the [Project Configuration](/docs/user-guide/project-config) and [Build](/docs/user-guide/build) sections of the User Guide.
