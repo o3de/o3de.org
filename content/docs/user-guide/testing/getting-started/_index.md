@@ -33,7 +33,7 @@ cd <local_path_to>/o3de/build/<build_folder>
 ctest -C <build_configuration>
 ```
 
-You may not want to run the commands above without also filtering the set of tests to run. Without a filter the command will run every test, and likely result in multiple hours of test execution! If you ever want to stop CTest, send an interrupt signal by selecting the terminal and pressing `CTRL + C` . The most commonly used suites are Smoke and Main, which are required to run quickly. The following ctest command filters to only tests in these two suites:
+You may not want to run the commands above without also filtering the set of tests to run. Without a filter the command will run every test, and likely result in multiple hours of test execution! If you ever want to stop CTest, send an interrupt signal by selecting the terminal and pressing `CTRL + C` . The most commonly used suites are Smoke and Main, which have requirements to execute fast. The following ctest command filters to only tests in these two suites:
 
 ```shell
 cd <local_path_to>/o3de/build/<build_folder>
@@ -155,7 +155,7 @@ Tests are written using standard [GoogleTest](https://github.com/google/googlete
 #include <AzTest/AzTest.h>
 ```
 
-To keep test functions legible at a glance, we recommend using the [Osherove Naming Convention](https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html) of `UnitOfWork_StateUnderTest_ExpectedBehavior`. This can be especially helpful when reading a report with many individual test case failures. In a short a C++ example:
+To keep test functions legible at a glance, we recommend using the [Osherove Naming Convention](https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html) of `UnitOfWork_StateUnderTest_ExpectedBehavior`. This can be especially helpful when reading a report with many individual test case failures. Note that while Google recommends [not using any underscores](http://google.github.io/googletest/faq.html#why-should-test-suite-names-and-test-names-not-contain-underscore), tests should function normally as long as test and fixture names never start or end with an underscore. In a short a C++ example:
 
 ```cpp
 TEST_F(Matrix4x4Tests, MatrixMultiply_InverseMatrix_ReturnIdentityMatrix)
@@ -171,7 +171,7 @@ For more information on writing tests in C++, see [Using AzTest](/docs/user-guid
 
 ## GoogleBenchmark
 
-For performance benchmarks of small pieces of C++ code O3DE uses [GoogleBenchmark](https://github.com/google/benchmark/blob/main/docs/index.md), which is quite similar to GoogleTest. However, how failure is defined is a major difference between a normal test and a benchmark. In most tests, pass/fail status is directly evaluated to a boolean state. Benchmarks create a subjective performance metric instead. These metrics are most valuable when periodically recorded, to help detect trends. The only objective failure during a benchmark occurs when the code fails to run or crashes.
+For performance benchmarks of small pieces of C++ code O3DE uses [GoogleBenchmark](https://github.com/google/benchmark/blob/main/docs/index.md), which is quite similar to GoogleTest. However, the definition of failure is a major difference between a normal test and a benchmark. In most tests a pass/fail status is directly evaluated to a boolean state, creating an objective report of success and failure. Benchmarks instead create a subjective performance metric. These metrics are most valuable when periodically recorded, to help detect trends over time. The only objective failure during a benchmark occurs when the code fails to run or crashes.
 
 The steps for configuring a GoogleBenchmark library are identical to the [steps above for GoogleTest libraries](#googletest), with a couple exceptions. The include statement is `#include <benchmark/benchmark.h>` and the cmake helper function is:
 
@@ -183,15 +183,15 @@ ly_add_googlebenchmark(
 
 ## PyTest
 
-Certain tests are easier to write in a scripting language like Python. The scope of these tests are typically at the [integration level](https://softwaretestingfundamentals.com/integration-testing/), verifying mid-to-high level functionality of workflows and overall system sanity. Additionally, any Python-based tools will prefer unit tests written in Python. For these tests O3DE uses [PyTest](https://docs.pytest.org/).
+Certain tests are easier to write in a scripting language like Python. The scope of these tests are typically at the [integration level](https://softwaretestingfundamentals.com/integration-testing/), verifying mid-to-high level functionality of workflows. This type of test helps verify system correctness similar to how an end-user will experience the software. Despite that positive aspect, these tests are typically slow and provide less specific failure information. Not all Python-based tests are integration tests: any Python-based tools will prefer unit tests written in Python. For all tests written in Python, O3DE uses [PyTest](https://docs.pytest.org/).
 
-While interpreted languages like Python can have low performance, these tests should not perform heavy computation in Python. Tests should instead focus on coordinating workflows: signalling events and then verifying a response. Leave heavy operations to the code targeted by a test.
+While interpreted languages like Python can have low performance, these tests should not perform heavy computation in Python. Tests should instead focus on coordinating workflows: signalling events and then verifying a response. Leave heavy operations to the code targeted by a test, and perform simple checks in Python test-code.
 
-There are often two Python interpreter instances used during O3DE tests. This can complicate determining which will execute your code, so pay close attention to how the test is defined:
+There are often two Python interpreter instances used during O3DE tests. This can complicate determining which interpreter executes your code, so pay close attention to how the test is defined:
 
 - Test exists outside of **O3DE Editor**
   - Use in generic tests that launch applications and send external signals.
-  - Helps and monitor for application crashes
+  - Helps monitor for application crashes.
   - Test file names should start with `test_`.
   - Uses the same Python interpreter that launches when you run `o3de/python/python.sh` or `o3de\python\python.cmd`.
 
@@ -199,11 +199,12 @@ There are often two Python interpreter instances used during O3DE tests. This ca
   - Use in `EditorPythonBindings` tests which target workflows inside O3DE Editor.
   - Helps expose editor functionality to a test script.
   - Test file names should ***not*** include affixes such as `test_` or `_tests`.
-  - PyTest is still initiated by the external Python interpreter instance, to handle Editor crashes.
+  - PyTest is not used inside the editor, and most PyTest functionality is not available
+    - PyTest is still initiated by the external Python interpreter instance, to handle Editor crashes.
 
 ### Registering a new Python test
 
-Registering a Python-based test is simpler than registering a C++ test. However, it also requires you define the library that will be tested. The steps below assume you have already defined a production library. You can read more about defining production code in [Getting Started with the CMake Build System](/docs/user-guide/build/).
+Registering a Python-based test is simpler than registering a C++ test. However it still requires defining a C++ library that will be tested, which is often already complete before designing integration tests. The steps below assume you have already defined a production library. You can read more about defining production code in [Getting Started with the CMake Build System](/docs/user-guide/build/).
 
 #### Step 1: Register a PyTest target
 
@@ -229,4 +230,4 @@ These tests primarily use standard [Python](https://docs.python.org/3/) code alo
 
 Internal tests of O3DE Editor functionality should use [EditorPythonBindings](/docs/user-guide/testing/parallel-pattern/). This helps expose editor C++ interfaces to Python. These tests almost always require the `TEST_SERIAL` flag.
 
-External tests at the Operating System level often use the [LyTestTools](/docs/user-guide/testing/lytesttools/) module, which simplifies interacting with O3DE applications. Tests using these tools are discussed more at . These tests often use the `TEST_SERIAL` flag.
+External tests at the Operating System level often use the [LyTestTools](/docs/user-guide/testing/lytesttools/) module, which simplifies interacting with O3DE applications. These tests often use the `TEST_SERIAL` flag.
