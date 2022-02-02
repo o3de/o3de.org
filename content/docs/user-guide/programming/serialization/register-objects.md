@@ -1,10 +1,11 @@
 ---
+linkTitle: Register Objects
 title: Register Objects for Serialization
-description: Register objects in the O3DE engine for JSON or XML serialization.
+description: Learn how to register objects in Open 3D Engine (O3DE) for JSON or XML serialization.
 weight: 100
 ---
 
- Serialization in O3DE is done by registering classes with a *serialization context*, which takes information about the provided class and uses reflection mechanisms to determine which class members to emit and their types. Serialization is controlled through the `AZ::SerializeContext` class, declared in `AZCore/Serialization/SerializeContext.h` as part of the `AzCore` library.
+Serialization in **Open 3D Engine (O3DE)** is done by registering classes with a *serialization context*. This context takes information about the provided class and uses reflection mechanisms to determine which class members to emit and their types. Serialization is controlled through the `AZ::SerializeContext` class, declared in `AZCore/Serialization/SerializeContext.h` as part of the `AzCore` library.
 
  Serialization requires access to an `AZ::ReflectContext` instance that can be safely cast to a `AZ::SerializeContext` object through the AzCore reflection system. There's a globally managed serialization context within the O3DE engine that you can retrieve through the `AZComponentApplicationBus`.
 
