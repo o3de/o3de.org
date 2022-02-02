@@ -1,10 +1,11 @@
 ---
+linkTitle: Serialize and Deserialize
 title: Serialize and Deserialize JSON Objects
-description: Serialize objects to JSON from the O3DE engine and load them back through deserialization.
+description: Learn how to serialize objects from Open 3D Engine (O3DE) to JSON, and how to load them back through deserialization.
 weight: 300
 ---
 
- Once a class has been [registered with a serialization context](/docs/user-guide/programming/serialization/register-objects/) objects of that class can be serialized and deserialized. Objects are serialized to JSON with the `AZ::JsonSerialization::Store()` function, and deserialized from JSON with `AZ::JsonSerialization::Load()`.
+After a class is [registered with a serialization context](/docs/user-guide/programming/serialization/register-objects/), you can serialize and deserialize objects of that class. Objects are serialized to JSON with the `AZ::JsonSerialization::Store()` function and deserialized from JSON with `AZ::JsonSerialization::Load()`.
 
  This article includes reference for these methods, examples of using serialization and deserialization, and how to interpret result codes from JSON the serializer. For information on how specific types are serialized, see [Data types in serialized JSON](/docs/user-guide/programming/serialization/json-data-types).
 

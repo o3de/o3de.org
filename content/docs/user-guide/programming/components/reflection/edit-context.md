@@ -1,6 +1,7 @@
 ---
-title: Edit Context
-description: Use the edit context to expose parameters for editing in Open 3D Engine's O3DE Editor.
+linkTitle: Edit Context
+title: Edit Context in O3DE
+description: Use the edit context to expose parameters for editing in O3DE Editor, the content creation environment for Open 3D Engine (O3DE).
 weight: 200
 ---
 

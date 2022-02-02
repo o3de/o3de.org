@@ -1,10 +1,11 @@
 ---
-title: Creating a Component
+linkTitle: Creating a Component
+title: Creating a Component in O3DE
 description: Learn how to create O3DE components in C++.
 weight: 200
 ---
 
-A component in O3DE is a simple class that inherits from O3DE's `AZ::Component`. A component's behavior is determined by its reflected data and the actions it takes when it is activated. This section shows you how to create O3DE components programmatically. For information about adding and customizing the components available in O3DE Editor, see [Working with component entities](/docs/user-guide/components/).
+A *component* in **Open 3D Engine (O3DE)** is a simple class that inherits from O3DE's `AZ::Component`. A component's behavior is determined by its reflected data and the actions that it takes when it is activated. This section shows you how to create O3DE components programmatically. For information about adding and customizing the components available in **O3DE Editor**, refer to the [Component Reference](/docs/user-guide/components/reference).
 
 ## Component Example 
 
@@ -87,7 +88,7 @@ Reflect()
 static void Reflect(AZ::ReflectContext* context);
 ```
 
-For more information, see [Reflecting a Component for Serialization and Editing](/docs/user-guide/programming/components/reflection/reflecting-for-serialization).
+For more information, refer to [Reflecting a Component for Serialization and Editing](/docs/user-guide/programming/components/reflection/reflecting-for-serialization).
 
 Logical Services
 (Optional) Components can define any combination of logical services that they provide, depend on, require, or are incompatible with. To define these logical services, use the following functions:
