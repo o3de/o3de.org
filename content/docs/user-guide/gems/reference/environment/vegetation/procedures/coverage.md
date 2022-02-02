@@ -20,7 +20,7 @@ After you create a vegetation patch, you can expand it so that your vegetation c
 
 1. Select the **BasicCoverage** entity.
 
-1. On the **Vegetation Reference Shape** component, for **Shape Entity Id**, select the **WorldBox** entity.
+1. On the **Shape Reference** component, for **Shape Entity Id**, select the **WorldBox** entity.
 
     ![Specify the WorldBox entity for the Vegetation Reference Shape component.](/images/user-guide/vegetation/dynamic/expanding-vegetation-coverage-2.png)
 
