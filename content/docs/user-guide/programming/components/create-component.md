@@ -1,7 +1,7 @@
 ---
 linkTitle: Creating a Component
 title: Creating a Component in O3DE
-description: Learn how to create O3DE components in C++.
+description: Learn how to create Open 3D Engine (O3DE) components in C++.
 weight: 200
 ---
 
