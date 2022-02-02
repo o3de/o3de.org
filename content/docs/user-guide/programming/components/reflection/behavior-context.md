@@ -1,10 +1,11 @@
 ---
-title: Behavior Context
-description: Use the behavior context to make runtime code accessible to scripting systems such as Script Canvas or Lua.
+linkTitle: Behavior Context
+title: Behavior Context in O3DE
+description: Use the behavior context in Open 3D Engine (O3DE) to make runtime code accessible to scripting systems such as Script Canvas and Lua.
 weight: 300
 ---
 
-The behavior context makes runtime code accessible to O3DE scripting systems such as Script Canvas or Lua. It provides script bindings that invoke runtime C++ methods, read constants, write properties, and create and handle EBus events. You can have multiple behavior contexts that are specialized for different purposes, and you can unreflect the behavior contexts to implement reloading.
+The behavior context makes runtime code accessible to **Open 3D Engine (O3DE)** scripting systems such as Script Canvas or Lua. It provides script bindings that invoke runtime C++ methods, read constants, write properties, and create and handle **Event Bus (Ebus)** events. You can have multiple behavior contexts that are specialized for different purposes, and you can unreflect the behavior contexts to implement reloading.
 
 Use the behavior context to bind the following C++ constructs for scripting:
 
@@ -17,14 +18,14 @@ Use the behavior context to bind the following C++ constructs for scripting:
 In addition, the behavior context supports the O3DE [EBus](/docs/user-guide/programming/ebus) and [AZ::Event](/docs/user-guide/programming/az-event) event systems:
 
 + [EBus](#ebus)
-  + [Events](#ebus-events)
-  + [Event Handlers](#ebus-event-handlers)
+  + [Events](#events)
+  + [Event Handlers](#event-handlers)
 
 ## Classes
 
-Reflects a C++ class or struct. You can provide an optional name. If you do not provide a name, the class name from `AzTypeInfo` is used. That name must be unique for the scope. Because the system uses `AzRTTI` to build the class hierarchy, you can use RTTI if you want to reflect base class functionality.
+Classes in the behavior context reflect a C++ class or struct. You can provide an optional name for a class. If you do not provide a name, the class name from `AzTypeInfo` is used. That name must be unique for the scope. Because the system uses `AzRTTI` to build the class hierarchy, you can use RTTI if you want to reflect base class functionality.
 
-Classes that are bound to the behavior context become objects that can be instantiated in a script environment. To reflect a class, you must provide the type that is reflected as a template argument to the class function.
+Classes that you bind to the behavior context become objects that can be instantiated in a script environment. To reflect a class, you must provide the type that is reflected as a template argument to the class function. For example:
 
 ```cpp
 if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
@@ -33,7 +34,7 @@ if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(con
 }
 ```
 
-The base class should also be specified, if applicable:
+You should also specify the base class, if applicable:
 
 ```cpp
 if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
@@ -42,24 +43,24 @@ if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(con
 }
 ```
 
-### Additional class information
+### Class builder functions
 
-+ **Allocator** - You can provide a custom allocator/ deallocator for your class. This allows you to override any existing allocation schema. If you do not provide a custom allocator, `aznew` is used (`AZ_CLASS_ALLOCATOR`).
-+ **Constructor** - Allows you to enumerate the class constructors that you want to reflect. You must pass all constructor arguments as template arguments.
-+ **Wrapping/WrappingMember** - Allows code to inform the system that it is a wrapper of another class. This is useful when you reflect smart pointers and string wrappers.
-+ **Userdata** - Allows you to provide a pointer to user data. The pointer is accessible from all callbacks (like a custom allocator) that you implement for the class.
-+ **Method** - Reflects a C++ class function. The first argument is the class pointer. This is the same usage as global methods.
-+ **Property** - Reflects class data. The first argument is the class pointer. This is the same usage as global properties.
-+ **Enum** - Enums are read-only `int` properties.
-+ **Constant** - Constants are read-only properties.
+* **Allocator** -- Allows you to provide a custom allocator/deallocator for your class to override any existing allocation schema. If you do not provide a custom allocator, `aznew` is used (`AZ_CLASS_ALLOCATOR`).
+* **Constructor** -- Allows you to enumerate the class constructors that you want to reflect. You must pass all constructor arguments as template arguments.
+* **Wrapping/WrappingMember** -- Allows code to inform the system that it is a wrapper of another class. This is useful when you reflect smart pointers and string wrappers.
+* **Userdata** -- Allows you to provide a pointer to user data. This pointer is accessible from all callbacks (like a custom allocator) that you implement for the class.
+* **Method** -- Reflects a C++ class function. The first argument is the class pointer. This is the same usage as global methods.
+* **Property** -- Reflects class data. The first argument is the class pointer. This is the same usage as global properties.
+* **Enum** -- Read-only `int` properties.
+* **Constant** -- Read-only properties.
 
 ### Attributes
 
-You can use the following, optional built-in attributes to decorate a class.
+You can optionally use the following built-in attributes to decorate a class.
 
 | Attribute | Description | Type | Values |
 | --- | --- | --- | --- |
-| **Category** | Used by the editor to categorize the object in a list. You can use the forward slash (`/`) separator to nest categories: <br> `Attribute(AZ::Script::Attributes::Category, "Gameplay/Triggers")` | `string` | |
+| **Category** | Used by the editor to categorize the object in a list. To nest categories, you can use the forward slash (`/`) separator. For example: <br> `Attribute(AZ::Script::Attributes::Category, "Gameplay/Triggers")` | `string` | |
 | **ExcludeFrom** | An optional flag that hides this object from editor lists, self-documentation, preview builds, or all of the above. This flag is primarily used for internal objects that are not intended to be accessible by script. | `AZ::Script::Attributes::ExcludeFlags` | `List`, <br> `Documentation`, <br> `Preview`, <br> `All` |
 | **Storage** | Specifies the owner of the memory storage for the reflected object. Possible values include the script system, runtime native code, and stored by value in the script system's virtual machine (VM). | `AZ::Script::Attributes::StorageType` | `ScriptOwn`, <br> `RuntimeOwn`, <br> `Value` |
 | **ConstructibleFromNil** | Specifies whether the class is constructed by default when nil is provided. | `bool` | `true`, <br> `false` |
@@ -91,7 +92,7 @@ local myClass = MyClass(10)
 
 ### Using nested classes
 
-To bind a nested class to the behavior context, you must do it from within a function on the nested class. C++ rules about nested class member access from outside scopes make this requirement necessary.
+To bind a nested class to the behavior context, you must do it from within a function on the nested class. This is necessary because of C++ rules about nested class member access from outside scopes.
 
 The following counterexample shows a _poorly_ formed nested class. The code does not work.
 
@@ -123,7 +124,7 @@ void Outer::Reflect(AZ::ReflectContext* context)
 }
 ```
 
-The following code shows a well formed nested class.
+The following code shows a well-formed nested class.
 
 ```cpp
 // Good nested class.
@@ -219,11 +220,11 @@ This approach is especially useful in Script Canvas so that users can understand
 
 ## Properties
 
-Use behavior context properties to expose global and class data to scripts. Each property must have a unique name for its scope. You can query and set property values using getter and setter methods. If you don't provide a setter method for a property, the property is read only. If you don't provide a getter method, the property is write only.
+Use behavior context properties to expose global and class data to scripts. Each property must have a unique name for its scope. You can query and set property values using getter and setter methods. If you don't provide a getter method for a property, the property is write only. If you don't provide a setter method, the property is read only.
 
 You can use global functions, member functions, or lambda expressions as property getters and setters.
 
-For convenience, O3DE provides macros that implement getter and setter functions as lambda expressions. Use `BehaviorValueProperty(&value)` to implement both a getter and setter method for a property. Or, you can implement getter and setter functions individually using `BehaviorValueGetter` and `BehaviorValueSetter`. The following table contains usage examples of each macro:
+For convenience, O3DE provides macros that implement getter and setter functions as lambda expressions. Use `BehaviorValueProperty(&value)` to implement both a getter and setter method for a property. Or, you can implement getter and setter functions individually using `BehaviorValueGetter` and `BehaviorValueSetter`. The following table contains usage examples for each macro:
 
 | Operation | Macro | Example |
 | --- | --- | --- |
@@ -231,7 +232,7 @@ For convenience, O3DE provides macros that implement getter and setter functions
 | Setter | BehaviorValueSetter |  <pre>->Property("WriteOnlyFlag", nullptr, BehaviorValueSetter(&MyClass::m_writeOnlyFlag))</pre> |
 | Both | BehaviorValueProperty |  <pre>->Property("ReadWriteFlag", BehaviorValueProperty(&MyClass::m_readWriteFlag))</pre> |
 
-In the following example, class member data `m_upperDistanceInMeters` is exposed as the read-write property `UpperDistanceInMeters`:
+The following example exposes class member data `m_upperDistanceInMeters` as the read-write property `UpperDistanceInMeters`:
 
 ```cpp
 behaviorContext->Class<SurfaceTagDistance>()
@@ -239,14 +240,14 @@ behaviorContext->Class<SurfaceTagDistance>()
     ->Property("UpperDistanceInMeters", BehaviorValueProperty(&SurfaceTagDistance::m_upperDistanceInMeters));
 ```
 
-To perform more complex operations other than simply getting or setting the value, you can implement your own getters and setters instead of using the property macros:
+To perform more complex operations than simply getting or setting the value, you can implement your own getters and setters instead of using the property macros:
 
 ```cpp
 behaviorContext->Property("SpawnerType", &Descriptor::GetSpawnerType, &Descriptor::SetSpawnerType);
 
 AZ::TypeId Descriptor::GetSpawnerType() const
 {
-    // do stuff, then...
+    // Do stuff, then...
     return m_spawnerType;
 }
 
@@ -259,20 +260,20 @@ void Descriptor::SetSpawnerType(const AZ::TypeId& spawnerType)
 
 ## Constants
 
-Constants are implemented in the behavior context as read-only [properties](#properties). The `BehaviorContext` class provides two helper functions to simplify the reflection of constants: `Constant` and `ConstantProperty`. These functions help define the getter function that's needed to enable scripts to read a constant's value. Note that to associate additional attributes to the reflected constant, you must use the `ConstantProperty` function.
+Constants are implemented in the behavior context as read-only [properties](#properties). To simplify the reflection of constants, the `BehaviorContext` class provides two helper functions: `Constant` and `ConstantProperty`. These functions help define the getter function that's needed to enable scripts to read a constant's value. Note that to associate additional attributes to the reflected constant, you must use the `ConstantProperty` function.
 
 ### `Constant` function
 
 Use the `Constant` helper function to define a getter for a C++ constant in the behavior context. You can use the behavior context macro `BehaviorConstant` to implement the lambda getter for you.
 
-For convenience, you can chain calls to `Constant` and many other behavior context functions together:
+For convenience, you can chain together calls to `Constant` and many other behavior context functions:
 
 ```cpp
 behaviorContext->Constant("SystemEntityId", BehaviorConstant(SystemEntityId))
                ->Constant("PI", BehaviorConstant(3.14f));
 ```
 
-To associate a constant with a class, invoke it on a `ClassBuilder` object that's returned by the `BehaviorContext::Class` function:
+To associate a constant with a class, invoke it on a `ClassBuilder` object that the `BehaviorContext::Class` function returns:
 
 ```cpp
 behaviorContext->Class<AxisWrapper>("AxisType")
@@ -286,11 +287,11 @@ behaviorContext->Class<AxisWrapper>("AxisType")
 
 An associated class that is reflected with a name acts as a kind of namespace for the constant. For example, to get the value for `XPositive` from the preceding example in Lua, you would use `AxisType.XPositive`.
 
-If a name is not specified for the associated class, no namespace prefix is needed.
+If no name is specified for the associated class, no namespace prefix is needed.
 
 ### `ConstantProperty` function
 
-The `ConstantProperty` function is similar to `Constant`, helping you to define a getter for a constant in the behavior context. Additionally, because it returns a `GlobalPropertyBuilder` object, you can use it to associate additional attributes to the reflected constant:
+The `ConstantProperty` function is similar to `Constant`, helping you define a getter for a constant in the behavior context. Additionally, because the function returns a `GlobalPropertyBuilder` object, you can use it to associate additional attributes with the reflected constant:
 
 ```cpp
 behaviorContext->ConstantProperty("DefaultMaterialAssignment", BehaviorConstant(DefaultMaterialAssignment))
@@ -301,13 +302,13 @@ behaviorContext->ConstantProperty("DefaultMaterialAssignment", BehaviorConstant(
 
 ## Enums
 
-Similar to constants, C++ enums are also implemented in the behavior context as read-only [properties](#properties). The `BehaviorContext` class provides two helper functions to simplify the reflection of enums: `Enum` and `EnumProperty`. These functions help define the getter function that's needed to enable scripts to read an enum's value. Note that to associate additional attributes to the reflected enum, you must use the `EnumProperty` function.
+Similar to constants, C++ enums are also implemented in the behavior context as read-only [properties](#properties). To simplify the reflection of enums, the `BehaviorContext` class provides two helper functions: `Enum` and `EnumProperty`. These functions help define the getter function that's needed to enable scripts to read an enum's value. Note that to associate additional attributes to the reflected enum, you must use the `EnumProperty` function.
 
 ### `Enum` function
 
 Use the `Enum` helper function to define a getter for a C++ enum in the behavior context. Since each enum value is itself a property, to reflect an entire enum into the behavior context, you must reflect each of its values.
 
-For convenience, you can chain calls to `Enum` and many other behavior context functions together:
+For convenience, you can chain together calls to `Enum` and many other behavior context functions:
 
 ```cpp
 enum class MyTypes
@@ -320,9 +321,9 @@ behaviorContext->Enum<aznumeric_cast<int>(MyTypes::One)>("MyTypes_One")
     ->Enum<aznumeric_cast<int>(MyTypes::Two)>("MyTypes_Two");
 ```
 
-When enum values are reflected in this way, care should be taken to give each value a unique name, since each property must have a unique name in the behavior context.
+When you reflect enum values in this way, take care to give each value a unique name, since each property must have a unique name in the behavior context.
 
-To associate an enum with a class, invoke it on a `ClassBuilder` object that's returned by the `BehaviorContext::Class` function:
+To associate an enum with a class, invoke it on a `ClassBuilder` object that the `BehaviorContext::Class` function returns:
 
 ```cpp
 behaviorContext->Class<PhotometricValue>("PhotometricUnit")
@@ -332,13 +333,13 @@ behaviorContext->Class<PhotometricValue>("PhotometricUnit")
     ->Enum<static_cast<int>(PhotometricUnit::Unknown>("Unknown");
 ```
 
-An associated class that is reflected with a name acts as a kind of namespace for the constant. For example, to get the value for `Lumen` from the preceding example in Lua, you would use `PhotometricUnit.Lumen`.
+An associated class that you reflect with a name acts as a kind of namespace for the constant. For example, to get the value for `Lumen` from the preceding example in Lua, you would use `PhotometricUnit.Lumen`.
 
-If a name is not specified for the associated class, no namespace prefix is needed.
+If no name is specified for the associated class, no namespace prefix is needed.
 
 ### `EnumProperty` function
 
-The `EnumProperty` function is similar to `Enum`, helping you to define a getter for an enum in the behavior context. Additionally, because it returns a `GlobalPropertyBuilder` object, you can use it to associate additional attributes to the reflected enum:
+The `EnumProperty` function is similar to `Enum`, helping you define a getter for an enum in the behavior context. Additionally, because the function returns a `GlobalPropertyBuilder` object, you can use it to associate additional attributes with the reflected enum:
 
 ```cpp
 behaviorContext->EnumProperty<static_cast<int>(FrameCaptureResult::None)>("FrameCaptureResult_None")
@@ -348,7 +349,7 @@ behaviorContext->EnumProperty<static_cast<int>(FrameCaptureResult::None)>("Frame
 
 ### `AZ_ENUM` utility macro
 
-O3DE `AzCore` provides a utility macro called `AZ_ENUM_DEFINE_REFLECT_UTILITIES` that works in conjunction with the `AZ_ENUM` macros to generate utility functions that can reflect _all_ values of an enum for you, saving you from the need to reflect each value individually. This might be useful for enums that are expected to change during the course of development, or that contain a large number of values. It requires the enum to be defined using either of the AZ_ENUM macros, including `AZ_ENUM`, `AZ_ENUM_WITH_UNDERLYING_TYPE`, `AZ_ENUM_CLASS`, or `AZ_ENUM_CLASS_WITH_UNDERLYING_TYPE`.
+O3DE `AzCore` provides a utility macro called `AZ_ENUM_DEFINE_REFLECT_UTILITIES`. This macro works in conjunction with the `AZ_ENUM` macros to generate utility functions that can reflect all values of an enum for you, so you don't need to reflect each value individually. This can be useful for enums that you expect to change during the course of development, or that contain a large number of values. To use this macro, you must define the enum using either of the `AZ_ENUM` macros, including `AZ_ENUM`, `AZ_ENUM_WITH_UNDERLYING_TYPE`, `AZ_ENUM_CLASS`, or `AZ_ENUM_CLASS_WITH_UNDERLYING_TYPE`.
 
 To use this macro, include `<AzCore/Preprocessor/EnumReflectUtils.h>` in the source where you wish to reflect the enum.
 
