@@ -40,9 +40,9 @@ Make the following edits to the `<ProjectName>.Static` target:
         ...
         BUILD_DEPENDENCIES
             PUBLIC
+                AZ::AzFramework
                 AZ::AzNetworking
                 Gem::Multiplayer
-                AZ::AzFramework
    ```
 
     {{< note >}}If `BUILD_DEPENDENCIES` does not contain a `PUBLIC` section, add it as seen above.{{< /note >}}
@@ -86,9 +86,9 @@ ly_add_target(
             Include
     BUILD_DEPENDENCIES
         PUBLIC
+            AZ::AzFramework
             AZ::AzNetworking
             Gem::Multiplayer
-            AZ::AzFramework
         PRIVATE
             ...
             Gem::Multiplayer.Static
