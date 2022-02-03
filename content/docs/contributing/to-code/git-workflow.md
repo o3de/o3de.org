@@ -22,7 +22,7 @@ At a high level, the workflow is:
 
 3. If there are no merge conflicts, automated review (AR) is triggered and the pull request is flagged for code review.
 
-4. If the pull requests passes code review, the SIG owner (or a delegate) will merge it into the `main` branch of the O3DE GitHub repo.
+4. If the pull requests passes code review, the SIG maintainer (or a delegate) will merge it into the `main` branch of the O3DE GitHub repo.
 
 ### Initial Git contribution workflow steps
 
@@ -128,10 +128,10 @@ We require DCO signing on all code commits. This requires that you have both you
 
     * Now, select **Create pull request**!
 
-4. The SIG owner (or a delegate) for the affected component reviews the pull request. At the same time, the automated review (AR) is triggered.
+4. The SIG maintainer/reviewer (or a delegate) for the affected component reviews the pull request. At the same time, the automated review (AR) is triggered.
 
     {{< note >}}
-The SIG owner will review the pull request and must approve the AR run before it can start. This is to required to prevent the pipeline from running malicious code. The AR build that is triggered on pull requests runs on the infrastructure owned by O3DE.
+The SIG maintainer/reviewer will review the pull request and must approve the AR run before it can start. This is to required to prevent the pipeline from running malicious code. The AR build that is triggered on pull requests runs on the infrastructure owned by O3DE.
     {{< /note >}}
 
 5. Once all review comments have been addressed, a SIG member will approve the pull request.
@@ -140,12 +140,12 @@ The SIG owner will review the pull request and must approve the AR run before it
 
     ![An O3DE contribution pull request in a green approved state.](/images/contributing/to-code/code-pr-accepted.png)
 
-    The SIG owner (or a delegate) can then merge your pull request into `o3de/main`, and you're done! Nice!
+    The SIG maintainer (or a delegate) can then merge your pull request into `o3de/main`, and you're done! Nice!
 
 ### Reviews and feedback on pull requests
 
-The SIG owner can request changes by providing feedback. You should engage with the comments and make any valid corrections or updates to your code contribution on the same branch. If the automated review (AR) fails, review the errors, make any necessary fixes, and update the pull request on the same branch.
+The SIG maintainer/reviewer can request changes by providing feedback. You should engage with the comments and make any valid corrections or updates to your code contribution on the same branch. If the automated review (AR) fails, review the errors, make any necessary fixes, and update the pull request on the same branch.
 
 ![An example of a failed AR check in a pull request.](/images/contributing/to-code/code-ar-failed.png)
 
-If you do not make the changes to pass the AR, or ignore the code review feedback, the SIG owner may reject the changes in the pull request by marking it closed.
+If you do not make the changes to pass the AR, or ignore the code review feedback, the SIG maintainer may reject the changes in the pull request by marking it closed.
