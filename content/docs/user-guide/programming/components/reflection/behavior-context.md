@@ -62,7 +62,7 @@ You can optionally use the following built-in attributes to decorate a class.
 | --- | --- | --- | --- |
 | **Category** | Used by the editor to categorize the object in a list. To nest categories, you can use the forward slash (`/`) separator. For example: <br> `Attribute(AZ::Script::Attributes::Category, "Gameplay/Triggers")` | `string` | |
 | **ExcludeFrom** | An optional flag that hides this object from editor lists, self-documentation, preview builds, or all of the above. This flag is primarily used for internal objects that are not intended to be accessible by script. | `AZ::Script::Attributes::ExcludeFlags` | `List`, <br> `Documentation`, <br> `Preview`, <br> `All` |
-| **Storage** | Specifies the owner of the memory storage for the reflected object. Possible values include the script system, runtime native code, and stored by value in the script system's virtual machine (VM). | `AZ::Script::Attributes::StorageType` | `ScriptOwn`, <br> `RuntimeOwn`, <br> `Value` |
+| **Storage** | Specifies the owner of the memory storage for the reflected object. An owner can be the script system (`ScriptOwn`), the native runtime code (`RuntimeOwn`), or the script system's virtual machine (`Value`). | `AZ::Script::Attributes::StorageType` | `ScriptOwn`, <br> `RuntimeOwn`, <br> `Value` |
 | **ConstructibleFromNil** | Specifies whether the class is constructed by default when nil is provided. | `bool` | `true`, <br> `false` |
 | **ClassNameOverride** | Provides a custom name for script reflection that is different from the behavior context name. | `string` | |
 | **Ignore** | Specifies whether the element is ignored during reflection. | `bool` | `true`, <br> `false` |
@@ -71,7 +71,7 @@ You can optionally use the following built-in attributes to decorate a class.
 
 ### Lua usage examples
 
-Classes reflected for scripting become objects that can be instanced in Lua:
+Classes reflected for scripting become objects that you can instance in Lua:
 
 ```lua
 local myObj = MyClass()
