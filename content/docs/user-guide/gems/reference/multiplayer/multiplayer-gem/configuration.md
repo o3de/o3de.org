@@ -33,7 +33,7 @@ Make the following edits to the `<ProjectName>.Static` target:
     ```
     {{< note >}}The `<projectname>_autogen_files.cmake` file might not exist at this time. We will create this file later in the [Adding AutoGen CMake file](#adding_autogen_file) section. For now we just want to create a reference to it in the `CMakeList.txt`{{< /note >}}
 
-1. In the `BUILD_DEPENDENCIES PUBLIC` section, add `AZ::AzNetworking` and `Gem::Multiplayer`.
+1. In the `BUILD_DEPENDENCIES PUBLIC` section, add `AZ::AzNetworking`, `Gem::Multiplayer`, and `AZ::AzFramework`.
    ```cmake
     ly_add_target(
         NAME <ProjectName>.Static STATIC
@@ -42,6 +42,7 @@ Make the following edits to the `<ProjectName>.Static` target:
             PUBLIC
                 AZ::AzNetworking
                 Gem::Multiplayer
+                AZ::AzFramework
    ```
 
     {{< note >}}If `BUILD_DEPENDENCIES` does not contain a `PUBLIC` section, add it as seen above.{{< /note >}}
@@ -87,6 +88,7 @@ ly_add_target(
         PUBLIC
             AZ::AzNetworking
             Gem::Multiplayer
+            AZ::AzFramework
         PRIVATE
             ...
             Gem::Multiplayer.Static
