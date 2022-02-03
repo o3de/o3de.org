@@ -1,7 +1,7 @@
 ---
 title: "Introducing the BlueJay Design System for O3DE"
 description: "Learn about the new UX design model for Open 3D Engine (O3DE) from Lee Hung Nguyen, one of the UX designers contributing to O3DE."
-date: 2022-01-19
+date: 2022-02-03
 slug: intro-to-bjds
 author: Lee Hung Nguyen, UX Designer in the SIG UI UX community
 blog_img: "/images/blog/announcement_thumbnail.jpg"
@@ -24,7 +24,7 @@ That's why a design system is essential to keep things consistent—to ensure th
 
 The best way to make sure that tools in the editor are consistent would be to develop a complete set of design standards intended to manage at scale using reusable components and patterns. But first, let's talk about the problems our users was facing based off some research I done with people in the community.
 
-My first port of call was to talk to some the larger partner teams that had already contributed a bunch of great extensions to the engine, but as well as individual solo contributors that use O3DE as a side hobby. We asked questions like; "What things that you have contributed to O3DE?" and "Why was this feature a need for you (and or your team)?". 
+My first port of call was to talk to some the larger partner teams that had already contributed a bunch of great extensions to the engine, but as well as individual solo contributors that use O3DE as a side hobby. We asked questions like; "What things that you have contributed to O3DE?" and "Why was this feature a need for you (and or your team)?".
 
 We discovered that a lot of our contributors were reinventing the wheel on problems that already had solutions. Not because they wanted to. It was because without any proper system in place to help guide the developers on how things should be done, this led to developers doing what felt best for them.
 
