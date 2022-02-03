@@ -364,15 +364,15 @@ AZ_ENUM_DEFINE_REFLECT_UTILITIES(TestEnum)
 TestEnumReflect(*behaviorContext);
 ```
 
-For additional context on how to use these macros, examine the test code in `Code\Framework\AzCore\Tests\EnumTests.cpp` or a Gem where they are used, such as `Gems\Atom\RHI\Code\Source\RHI.Reflect\RenderStates.cpp` and `Gems\Atom\RHI\Code\Include\Atom\RHI.Reflect\RenderStates.h`.
+For additional context on how to use these macros, examine the test code in `Code\Framework\AzCore\Tests\EnumTests.cpp` or in a Gem where they are used, such as `Gems\Atom\RHI\Code\Source\RHI.Reflect\RenderStates.cpp` or `Gems\Atom\RHI\Code\Include\Atom\RHI.Reflect\RenderStates.h`.
 
 ## EBus
 
-Enable scripts to send and receive events by binding EBus events and event handlers to the behavior context:
+To enable scripts to send and receive events, bind EBus events and event handlers to the behavior context.
 
 ### Events
 
-EBus provides a mechanism to broadcast an event to all handlers or send an event directly to handlers connected at a specific ID. When you bind an event, O3DE automatically reflects `Broadcast`, `Event`, `QueueBroadcast`, and `QueueEvent`, as needed for your EBus configuration.
+The EBus provides a mechanism to broadcast an event to all handlers or to send an event directly to handlers connected at a specific ID. When you bind an event, O3DE automatically reflects `Broadcast`, `Event`, `QueueBroadcast`, and `QueueEvent` as needed for your EBus configuration.
 
 ```cpp
 behaviorContext.EBus<TestBus>("TestBus")->
@@ -382,7 +382,7 @@ behaviorContext.EBus<TestBus>("TestBus")->
 ;
 ```
 
-Once compiled, the events can be used in Script Canvas and called in Lua:
+When compiled, you can use the events in Script Canvas and call them in Lua:
 
 ```lua
 local result = TestBus.Broadcast.GetSum1(1)
@@ -390,9 +390,9 @@ local result = TestBus.Broadcast.GetSum1(1)
 
 ### Event handlers
 
-An event handler reflects a class that you must implement to forward messages from the EBus to behavior context methods. You must create a class that can monitor the specified EBus and forward messages to the behavior context. This is a requirement because the behavior context cannot guarantee that there is a handler for each message. If a message expects a result, you must provide a default result in case the message is not handled by the behavior context user. Keep in mind that the system creates as many of these handlers as the behavior context requires. Handlers can also execute in different threads. As a result, you should avoid static storage for values that change. The best way to understand this is to examine the example that follows.
-
-Example:
+An event handler reflects a class that you must implement to forward messages from the EBus to behavior context methods. To implement the event handler, you must create a class that can monitor the specified EBus and forward messages to the behavior context.
+ 
+This is required because the behavior context cannot guarantee that there is a handler for each message. If a message expects a result, you must provide a default result in case the behavior context user does not handle the message. Keep in mind that the system creates as many of these handlers as the behavior context requires. Handlers can also execute in different threads. As a result, you should avoid static storage for values that change. For example:
 
 1. Given the following EBus:
 
