@@ -95,6 +95,4 @@ With the growth of O3DE, we envision a great deal of community involvement to fo
 
 But this is not an endeavor we are working on alone. This is a community-wide effort, and we need your help! What would you like to see when you're onboarding with O3DE? Share your issues, suggestions for improvement, and overall experiences in the [O3DE Discord](https://discord.gg/xNb2q4SJKJ) server! You can share your thoughts with the UX Design team and me directly on the **SIG-UI-UX** channel.
 
-But this is not an endeavour we are working on alone. This is a community-wide effort. With that said, we still need your help! What would you like to see when you're onboarding with O3DE? Share your issues, improvement suggestions, and your overall experiences in the [O3DE Discord](https://discord.gg/xNb2q4SJKJ) server! You can share your thoughts with me and the rest of the UX Design team directly on our Discord's **UI-UX SIG channel**.
-
 I'm looking forward to hearing from all of you soon!
