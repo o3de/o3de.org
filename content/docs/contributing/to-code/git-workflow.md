@@ -22,7 +22,7 @@ At a high level, the workflow is:
 
 3. If there are no merge conflicts, automated review (AR) is triggered and the pull request is flagged for code review.
 
-4. If the pull requests passes code review, the SIG maintainer (or a delegate) will merge it into the `main` branch of the O3DE GitHub repo.
+4. If the pull requests passes code review, the SIG maintainer (or a delegate) will merge it into the `development` branch of the O3DE GitHub repo.
 
 ### Initial Git contribution workflow steps
 
@@ -69,10 +69,10 @@ At a high level, the workflow is:
 
 1. Now, update your local repo by `git fetch`ing the branches currently active on the O3DE repo. You can get all working branches with `git fetch upstream --all`, or fetch a specific branch with `git fetch upstream <name-of-branch>`.
 
-1. Rebase the commit history to the last commit from the upstream `main` branch:
+1. Rebase the commit history to the last commit from the upstream `development` branch:
 
     ```bash
-    git rebase upstream/main
+    git rebase upstream/development
     ```
 
 1. Check out the branch you will be working on and **take your own branch from it** to perform your work.
@@ -116,10 +116,10 @@ We require DCO signing on all code commits. This requires that you have both you
 3. Submit a pull request from your fork to the O3DE code repo.
 
     * Navigate to your fork repo in GitHub, click the **Pull Requests** tab and click **New Pull Request**.
-    * On the **Compare** page, verify the base repo and branch point is set to `O3DE/main`. (This should be set by default.)
+    * On the **Compare** page, verify the base repo and branch point is set to `O3DE/development`. (This should be set by default.)
     * In the `head` drop down menu, select your fork repo and branch, and then select **Create Pull Request**.
 
-    ![Creating a pull request from your fork to o3de/main.](/images/contributing/to-code/code-pr-from-fork.png)
+    ![Creating a pull request from your fork to o3de/development.](/images/contributing/to-code/code-pr-from-fork.png)
 
     * Add a title and description for your pull request. Provide a clear scope of your changes in as few words as you can.
     * Add reviewers (Note: Required reviewers and other PR requirements will be finalized in a `CONTRIBUTING.md` file).
@@ -140,7 +140,7 @@ The SIG maintainer/reviewer will review the pull request and must approve the AR
 
     ![An O3DE contribution pull request in a green approved state.](/images/contributing/to-code/code-pr-accepted.png)
 
-    The SIG maintainer (or a delegate) can then merge your pull request into `o3de/main`, and you're done! Nice!
+    The SIG maintainer (or a delegate) can then merge your pull request into `o3de/development`, and you're done! Nice!
 
 ### Reviews and feedback on pull requests
 
