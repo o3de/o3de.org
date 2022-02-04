@@ -15,4 +15,5 @@ This section provides a deeper technical read into the systems and interfaces un
 | [Shader System](shaders/_index.md) | The shader system processes shaders written in AZSL (Amazon Shading Language) and builds them into shader assets that can be used in your project. |
 | [Render Pipeline Interface (RPI)](rpi/_index.md) | The Render Pipeline Interface (RPI) contains the main interface for developers to program the render pipeline. |
 | [Passes](passes/_index.md) | The pass system transforms data from a scene into a final rendered output. |
-| [Rendering Hardware Interface (RHI)](rhi/_index.md) | The Rendering Hardware Interface (RHI) provides a low-level interface that abstracts platform-specific code. |
+| [Render Hardware Interface (RHI)](rhi/_index.md) | The Render Hardware Interface (RHI) provides a low-level interface that abstracts platform-specific code. |
+| [Troubleshooting](troubleshoot.md) | A guide to troubleshoot graphics processing unit (GPU) crashes in Atom Renderer. |

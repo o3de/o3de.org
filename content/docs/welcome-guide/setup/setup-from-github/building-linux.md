@@ -103,7 +103,7 @@ To prepare to build the engine and projects, choose one of the following build t
 1. Use CMake to build the engine as an SDK, the same as if you installed the engine from an installer tool. The following example shows the `profile` build configuration.
 
     ```shell
-    cmake --build build/linux --target INSTALL --config profile -j <number of parallel build tasks>
+    cmake --build build/linux --target install --config profile -j <number of parallel build tasks>
     ```
 
     The `-j` is a recommended build tool optimization. It tells the Ninja build tool the number of parallel build tasks that will be executed simultaneously. We recommend that the 'number of parallel build tasks' matches the number of cores available on the Linux host machine.
@@ -111,7 +111,7 @@ To prepare to build the engine and projects, choose one of the following build t
     Example:
 
     ```shell
-    cmake --build build/linux --target INSTALL --config profile -j 8
+    cmake --build build/linux --target install --config profile -j 8
     ```
 
     The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `$HOME/o3de-install/bin/Linux/profile/Default`.
