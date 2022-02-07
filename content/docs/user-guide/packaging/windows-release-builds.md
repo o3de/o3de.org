@@ -1,21 +1,27 @@
 ---
-linktTitle: "Project Game Release Layout (Windows)"
-title: "Creating a Project Game Release Layout for Windows"
+linktTitle: Project Game Release Layout (Windows)
+title: Creating a Project Game Release Layout for Windows
 description: Learn how to create an Open 3D Engine (O3DE) project game release layout for Windows.
 toc: true
 ---
 
-This tutorial guides you through the process of creating an **Open 3D Engine (O3DE)** *project game release layout* for Windows PCs. A project game release layout is a directory structure that contains the **Game Launcher** and the bundled assets needed to run the Game Launcher outside of the developer environment. You create a project game release layout when you build your project for release, known as a *release build*.
+This tutorial guides you through the process of creating an **Open 3D Engine (O3DE)** *project game release layout* for Windows computers. A project game release layout is a directory structure that contains the **Game Launcher** and the bundled assets needed to run the Game Launcher outside of the developer environment. You create a project game release layout when you build your project for release, known as a *release build*.
 
 A release build requires *bundled content*, which includes cached product assets stored in package (`.pak`) files. Cached product assets are located in the project's `Cache\pc` directory. The Game Launcher loads the bundled content that makes up a project, such as its levels, objects, environments, and gameplay logic.
 
 The instructions here guide you through the following steps:
 
 1. Set the starting level.
+
 1. Process your project's assets.
-1. (Optional) Bundle your project's assets.
+
 1. Create a project game release layout.
+
+1. (Optional) Bundle your project's assets.
+
 1. Run your project's Game Launcher from the project game release layout.
+
+1. Distribute your build.
 
 
 ## Prerequisites
@@ -368,7 +374,7 @@ Next, add your `game_pc.pak` and `engine_pc.pak` files to your project game rele
 1. Add your new bundles: `game_bundle_pc.pak` and `engine_bundle_pc.pak`.
 
 
-## Run the game launcher
+## Run the Game Launcher
 
 Now you're ready to run your project's Game Launcher.
 
@@ -378,12 +384,34 @@ Run `GameLauncher.exe` from your project game release layout, which is located i
 
 - `C:\MyProject\install\bin\Windows\release\Monolithic` -- For monolithic projects.
 
-Now you can distribute your project to other Windows devices. To run the Game Launcher, you must install the [Microsoft Visual C++ (MSVC) Redistributable](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-160).
+
+## Distribute your build
+
+To distribute your build to other Windows computers:
+
+1. Create a `.zip` file of the `<install>\bin\Windows\release\<build>` folder. The contents of the `.zip` file should look similar to this:
+
+        Monolithic
+        |   DevTestProject.GameLauncher.exe
+        |   PhysXDevice64.dll
+        |   PhysXGpu_64.dll
+        |   
+        \---Cache
+            \---pc
+            engine.pak
+                
+1. Distribute the `.zip` file using your preferred method, such as a file storage service. 
+
+Now others can download and unpack the `.zip` file and run the Game Launcher on their Windows computers.
+
+{{< note >}}
+To run the Game Launcher on the other Windows computers, they must have the [Microsoft Visual C++ (MSVC) Redistributable](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-160) installed.
+{{< /note >}}
 
 
 ## Debugging
 
-To help you debug if you encounter issues while building a project for release, try the following techniques.
+To help you debug any issues that you may encounter while building a project for release, try the following techniques.
 
 ### Compile with optimizations disabled and debug symbols enabled
 

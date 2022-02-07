@@ -70,7 +70,7 @@ To search for sessions, call `AWSGameLiftClientManager::SearchSessions()` or `AW
 // Make synchronous call to search active game sessions on a specific fleet
 AWSGameLift::AWSGameLiftSearchSessionsRequest request;
 request.m_fleetId = "YourGameLiftFleetId";
-AzFramework::SearchSessionsResponse result;
+Multiplayer::SearchSessionsResponse result;
 AWSGameLift::AWSGameLiftSessionRequestBus::BroadcastResult(result, &AWSGameLift::AWSGameLiftSessionRequestBus::Events::SearchSessions, request);
 
 // Make asynchronous call to search active game sessions on a specific fleet and get response from notification
@@ -78,7 +78,7 @@ AWSGameLift::AWSGameLiftSearchSessionsRequest request;
 request.m_fleetId = "YourGameLiftFleetId";
 AWSGameLift::AWSGameLiftSessionAsyncRequestBus::Broadcast(&AWSGameLift::AWSGameLiftSessionAsyncRequestBus::Events::SearchSessionsAsync, request);
 
-void OnSearchSessionsAsyncComplete(const AzFramework::SearchSessionsResponse& searchSessionsResponse)
+void OnSearchSessionsAsyncComplete(const Multiplayer::SearchSessionsResponse& searchSessionsResponse)
 {
     ...
 }
@@ -141,7 +141,7 @@ As the default behavior, when the last player leaves the game session, the Multi
 You must notify Amazon GameLift service that your server process is ready to host game sessions, handle requests, and take connections.
 
 To send a notification that your server process is ready, complete any relevant initialization and then use `AWSGameLiftServerRequestBus::Events::NotifyGameLiftProcessReady()`.
-We recommend placing the call after connecting to `AzFramework::SessionNotificationBus` in the `YourProjectServerSystemComponent` activate step.
+We recommend placing the call after connecting to `Multiplayer::SessionNotificationBus` in the `YourProjectServerSystemComponent` activate step.
 
 ```cpp
 AWSGameLift::AWSGameLiftServerRequestBus::Broadcast(&AWSGameLift::AWSGameLiftServerRequestBus::Events::NotifyGameLiftProcessReady);
@@ -150,15 +150,15 @@ AWSGameLift::AWSGameLiftServerRequestBus::Broadcast(&AWSGameLift::AWSGameLiftSer
 
 ### Server notification APIs
 
-After the game session has been created, notifications are broadcast through `AzFramework::SessionNotificationBus`. You can program how your session responds to these notifications.
+After the game session has been created, notifications are broadcast through `Multiplayer::SessionNotificationBus`. You can program how your session responds to these notifications.
 
 
 ### `OnCreateSessionBegin`
 
-When the session begins to create on the server, the `AzFramework::SessionNotificationBus::Events::OnCreateSessionBegin()` notification is broadcasted on the server side. During this step, it's recommended to load the level on the server side. 
+When the session begins to create on the server, the `Multiplayer::SessionNotificationBus::Events::OnCreateSessionBegin()` notification is broadcasted on the server side. During this step, it's recommended to load the level on the server side. 
 
 ```cpp
-bool OnCreateSessionBegin(const AzFramework::SessionConfig& sessionConfig)
+bool OnCreateSessionBegin(const Multiplayer::SessionConfig& sessionConfig)
 {
     ...
 }
@@ -167,7 +167,7 @@ bool OnCreateSessionBegin(const AzFramework::SessionConfig& sessionConfig)
 
 ### `OnCreateSessionEnd`
 
-At the end of session creation process, the `AzFramework::SessionNotificationBus::Events::OnCreateSessionEnd()` notification is broadcasted on the server side to perform any follow-up operation after session is created and active.
+At the end of session creation process, the `Multiplayer::SessionNotificationBus::Events::OnCreateSessionEnd()` notification is broadcasted on the server side to perform any follow-up operation after session is created and active.
 
 ```cpp
 bool OnCreateSessionEnd()
@@ -179,7 +179,7 @@ bool OnCreateSessionEnd()
 
 ### `OnSessionHealthCheck`
 
-When your server process is ready and running, `AzFramework::SessionNotificationBus::Events::OnSessionHealthCheck` is called regularly to report a health status of your server process.
+When your server process is ready and running, `Multiplayer::SessionNotificationBus::Events::OnSessionHealthCheck` is called regularly to report a health status of your server process.
 
 You can customize the health check logic in `OnSessionHealthCheck`. For more information, refer to  [Report server process health](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-sdk-server-api.html#gamelift-sdk-server-health) in the Amazon GameLift documentation.
 
@@ -193,7 +193,7 @@ bool OnSessionHealthCheck()
 
 ### `OnDestroySessionBegin`
 
-When the session begins to terminate, the `AzFramework::SessionNotificationBus::Events::OnDestroySessionBegin` notification is broadcasted to perform cleanup operations. During this step, it's recommended to clean up level data on the server side.
+When the session begins to terminate, the `Multiplayer::SessionNotificationBus::Events::OnDestroySessionBegin` notification is broadcasted to perform cleanup operations. During this step, it's recommended to clean up level data on the server side.
 
 ```cpp
 bool OnDestroySessionBegin()
@@ -204,7 +204,7 @@ bool OnDestroySessionBegin()
 
 ### `OnDestroySessionEnd`
 
-After the session is terminated, the `AzFramework::SessionNotificationBus::Events::OnDestroySessionEnd` notification is broadcasted for any follow-up operations, like shutdown application process, etc.
+After the session is terminated, the `Multiplayer::SessionNotificationBus::Events::OnDestroySessionEnd` notification is broadcasted for any follow-up operations, like shutdown application process, etc.
 
 ```cpp
 bool OnDestroySessionEnd()

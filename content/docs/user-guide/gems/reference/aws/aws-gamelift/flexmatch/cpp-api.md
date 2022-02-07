@@ -145,7 +145,7 @@ Notifications will be sent from the matchmaking ticket tracking system when the 
 
 ### `OnMatchComplete`
 
-When the matchmaking request is completed, the `AzFramework::MatchmakingNotificationBus::Events::OnMatchComplete()` notification is broadcasted from the matchmaking ticket tracking system. Once the matchmaking ticket is completed, the player can join the game session that is hosting the match. 
+When the matchmaking request is completed, the `Multiplayer::MatchmakingNotificationBus::Events::OnMatchComplete()` notification is broadcasted from the matchmaking ticket tracking system. Once the matchmaking ticket is completed, the player can join the game session that is hosting the match. 
 
 ```cpp
 bool OnMatchComplete()
@@ -156,7 +156,7 @@ bool OnMatchComplete()
 
 ### `OnMatchError`
 
-When the matchmaking request is processed with error, the `AzFramework::MatchmakingNotificationBus::Events::OnMatchError()` notification is broadcasted from the matchmaking ticket tracking system. 
+When the matchmaking request is processed with error, the `Multiplayer::MatchmakingNotificationBus::Events::OnMatchError()` notification is broadcasted from the matchmaking ticket tracking system. 
 
 ```cpp
 bool OnMatchError()
@@ -167,7 +167,7 @@ bool OnMatchError()
 
 ### `OnMatchFailure`
 
-When the matchmaking request is failed to complete, the `AzFramework::MatchmakingNotificationBus::Events::OnMatchFailure()` notification is broadcasted from the matchmaking ticket tracking system. 
+When the matchmaking request is failed to complete, the `Multiplayer::MatchmakingNotificationBus::Events::OnMatchFailure()` notification is broadcasted from the matchmaking ticket tracking system. 
 ```cpp
 bool OnMatchFailure()
 {
@@ -177,7 +177,7 @@ bool OnMatchFailure()
 
 ### `OnMatchAcceptance`
 
-When match is found and pending on acceptance, the `AzFramework::MatchmakingNotificationBus::Events::OnMatchAcceptance()` notification is broadcasted from the matchmaking ticket tracking system.
+When match is found and pending on acceptance, the `Multiplayer::MatchmakingNotificationBus::Events::OnMatchAcceptance()` notification is broadcasted from the matchmaking ticket tracking system.
 
 ```cpp
 bool OnMatchAcceptance()
@@ -225,7 +225,7 @@ AWSGameLift::AWSGameLiftServerRequestBus::BroadcastResult(result, &AWSGameLift::
 
 ### `OnUpdateSessionBegin`
 
-At the beginning of session update process, `AzFramework::SessionNotificationBus::Events::OnUpdateSessionBegin` is invoked to perform any configuration or initialization to handle the session settings changing.
+At the beginning of session update process, `Multiplayer::SessionNotificationBus::Events::OnUpdateSessionBegin` is invoked to perform any configuration or initialization to handle the session settings changing.
 
 ```cpp
 bool OnUpdateSessionBegin(const SessionConfig& sessionConfig, const AZStd::string& updateReason)
@@ -236,7 +236,7 @@ bool OnUpdateSessionBegin(const SessionConfig& sessionConfig, const AZStd::strin
 
 ### `OnUpdateSessionEnd`
 
-At the end of session update process, `AzFramework::SessionNotificationBus::Events::OnUpdateSessionEnd` is invoked to perform any follow-up operations after session is updated.
+At the end of session update process, `Multiplayer::SessionNotificationBus::Events::OnUpdateSessionEnd` is invoked to perform any follow-up operations after session is updated.
 
 ```cpp
 bool OnUpdateSessionEnd()
