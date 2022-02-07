@@ -101,7 +101,7 @@ ly_add_target(
 ```
 <a id="adding_autogen_file"></a>
 ### Adding AutoGen CMake file
-Next, create a new file called `<projectname>_autogen_files.cmake` and make it a sibling of `CMakeList.txt`. Example: `<ProjectName>/Code/<projectname>_autogen_files.cmake`. The contents of this file add the source templates for [autocomponents](./autocomponents) to the project build.
+Next, create a new file called `<projectname>_autogen_files.cmake` and place it in the project's code folder. For example: `<ProjectName>/Code/<projectname>_autogen_files.cmake`. The contents of this file add the source templates for [autocomponents](./autocomponents) to the project build.
 
 ```cmake
 set(FILES
@@ -115,7 +115,7 @@ set(FILES
 
 ### Adding a temporary auto-component
 {{< note >}}
-There's currently a [bug](https://github.com/o3de/o3de/issues/4058) causing a build failure if multiplayer auto-components are enabled, but no auto-components are created. As a work-around, create a temporary auto-component.
+There's currently an [issue](https://github.com/o3de/o3de/issues/4058) causing a build failure if multiplayer auto-components are enabled, but no auto-components are created. As a work-around, create a temporary auto-component.
 {{< /note >}}
 1. Create a new folder under your project's `Code\Source\` directory called `AutoGen`. 
     {{< note >}}This AutoGen directory doesn't have to be temporary. All future multiplayer auto-components can live here.{{< /note >}}
@@ -144,7 +144,7 @@ There's currently a [bug](https://github.com/o3de/o3de/issues/4058) causing a bu
         Source/AutoGen/MyFirstNetworkComponent.AutoComponent.xml
     )
     ```
-{{< note >}}Feel free to delete this temporary auto-component, or use it as a starting point, once you're ready to build further multiplayer components. Find out more in general about multiplayer auto-components [here](/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/autocomponents/), or follow [this tutorial](/docs/learning-guide/tutorials/multiplayer/first-multiplayer-component/).{{< /note >}}
+{{< note >}}After completing the setup steps in this guide, you can delete the temporary auto-component and create a new auto-component, or use it as a starting point. There always needs to be at least 1 auto-component. Find out more in general about multiplayer auto-components [here](/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/autocomponents/), or follow [this tutorial](/docs/learning-guide/tutorials/multiplayer/first-multiplayer-component/).{{< /note >}}
 
 ## Module and System component setup
 
