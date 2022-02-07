@@ -64,7 +64,7 @@ Now that the basic requirements for spawning vegetation are met, we can create o
 
     ![On the Vegetation Layer Spawner, click Add Component and select Vegetation Asset List.](/images/user-guide/vegetation/dynamic/create-vegetation-layer-asset-list.png)
 
-9. 1. In the **Vegetation Asset List** component, change the **Instance Spawner** type to Prefab, and then next to **Prefab Asset**, click the {{< icon "file-folder.svg" >}} **folder** icon to browse for your asset.
+9. In the **Vegetation Asset List** component, change the **Instance Spawner** type to Prefab, and then next to **Prefab Asset**, click the {{< icon "file-folder.svg" >}} **folder** icon to browse for your asset.
 
     ![Click the Folder icon to select a Prefab Asset.](/images/user-guide/vegetation/dynamic/create-vegetation-layer-browse.png)
 
