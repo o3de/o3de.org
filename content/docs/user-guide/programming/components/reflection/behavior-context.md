@@ -30,7 +30,7 @@ Classes that you bind to the behavior context become objects that can be instant
 ```cpp
 if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
 {
-    behaviorcontext->Class<MyClass>();
+    behaviorContext->Class<MyClass>();
 }
 ```
 
@@ -39,7 +39,7 @@ You should also specify the base class, if applicable:
 ```cpp
 if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
 {
-    behaviorcontext->Class<MyClass, TheBaseClass>();
+    behaviorContext->Class<MyClass, TheBaseClass>();
 }
 ```
 
