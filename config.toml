@@ -28,6 +28,7 @@ sourceRepo = "https://github.com/o3de/o3de"
 [params.logos]
 navbar = "O3DE-Logo-REV-Mono.svg"
 og_image = "O3DE-Circle-Icon.png"
+docs_footer = "O3DE-Logo-Black-Mono.svg"
 
 [[params.social]]
 name = "O3DE GitHub Forums"
