@@ -1,5 +1,5 @@
 ---
-title: Hugo Shortcodes Used in Open 3D Engine Documentation
+title: Hugo Shortcodes Used in O3DE Documentation
 description: A list of the shortcodes used in Open 3D Engine (O3DE) documentation.
 linktitle: Shortcodes
 weight: 500

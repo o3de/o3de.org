@@ -1,12 +1,12 @@
 ---
-title: Submitting Media to Open 3D Engine Documentation
+title: Submitting Media to O3DE Documentation
 description: Guidelines for submitting media (images, video, audio, or assets) to Open 3D Engine (O3DE) documentation.
 linktitle: Media
 weight: 600
 toc: true
 ---
 
-There are two available methods to add images to documentation topics. You can use markdown syntax, or the `image-width` shortcode. If you are adding multiple images, very large images, or `.svg` diagrams, consider using the `image-width` shortcode to limit the width of images as the image scales to the width of the browser window.
+There are two available methods to add images to topics in **Open 3D Engine (O3DE)** documentation. You can use markdown syntax, or the `image-width` shortcode. If you are adding multiple images, very large images, or `.svg` diagrams, consider using the `image-width` shortcode to limit the width of images as the image scales to the width of the browser window.
 
 ## Adding images with markdown syntax
 

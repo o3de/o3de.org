@@ -1,5 +1,5 @@
 ---
-title: Writing Guidelines for Open 3D Engine Documentation
+title: Writing Guidelines for O3DE Documentation
 description: The language, writing, and copy standards used to edit all Open 3D Engine (O3DE) documentation for consistency and readability.
 linktitle: Writing
 weight: 100
