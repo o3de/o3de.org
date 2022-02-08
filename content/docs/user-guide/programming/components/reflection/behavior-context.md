@@ -45,29 +45,88 @@ if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(con
 
 ### Class builder functions
 
-* **Allocator** -- Allows you to provide a custom allocator/deallocator for your class to override any existing allocation schema. If you do not provide a custom allocator, `aznew` is used (`AZ_CLASS_ALLOCATOR`).
-* **Constructor** -- Allows you to enumerate the class constructors that you want to reflect. You must pass all constructor arguments as template arguments.
-* **Wrapping/WrappingMember** -- Allows code to inform the system that it is a wrapper of another class. This is useful when you reflect smart pointers and string wrappers.
-* **Userdata** -- Allows you to provide a pointer to user data. This pointer is accessible from all callbacks (like a custom allocator) that you implement for the class.
-* **Method** -- Reflects a C++ class function. The first argument is the class pointer. This is the same usage as global methods.
-* **Property** -- Reflects class data. The first argument is the class pointer. This is the same usage as global properties.
-* **Enum** -- Read-only `int` properties.
-* **Constant** -- Read-only properties.
+To provide additional configuration for the class binding, you can chain class builder functions after the behavior context `Class` function. The following builder functions are available:
+
+| Builder Function | Description |
+| --- | --- |
+| **Allocator** | Allows you to provide a custom allocator/deallocator for your class to override any existing allocation schema. If you do not provide a custom allocator, `aznew` is used (`AZ_CLASS_ALLOCATOR`). |
+| **Constant** | Read-only properties. Refer to the section on [constants](#constants) for more information about this builder function. |
+| **Constructor** | Allows you to enumerate the class constructors that you want to reflect. You must pass all constructor arguments as template arguments. |
+| **Enum** | Read-only `int` properties. Refer to the section on [enums](#enums) for more information about this builder function. |
+| **Method** | Reflects a C++ class method. The function can also reflect global methods. Refer to the section on [methods](#methods) for more information about this builder function. |
+| **Property** | Reflects class data. The function can also reflect global properties. Refer to the section on [properties](#properties) for more information about this builder function. |
+| **UserData** | Allows you to provide a pointer to user data. This pointer is accessible from all callbacks (like a custom allocator) that you implement for the class. |
+| **Wrapping <br> WrappingMember** | Signifies to the behavior context that the class is a wrapper of another class. This is useful when you reflect smart pointers and string wrappers. |
+
+#### C++ examples of class builder functions
+
+```cpp
+// Custom allocator and deallocator.
+void* ScriptClassAllocate(void* userData);
+void ScriptClassFree(void* obj, void* userData);
+
+// Reflect the custom allocator and deallocator for use with ScriptClass.
+behaviorContext->Class<ScriptClass>()
+    ->Allocator(&ScriptClassAllocate, &ScriptClassFree);
+
+// Reflect two constructors for BoxShapeConfig.
+behaviorContext->Class<BoxShapeConfig>()
+    ->Constructor()
+    ->Constructor<AZ::Vector3&>()
+    ->Property("Dimensions", BehaviorValueProperty(&BoxShapeConfig::m_dimensions));
+
+// Allow BehaviorEntity to be passed to functions expecting AZ::Entity*.
+behaviorContext->Class<BehaviorEntity>("Entity")
+    ->WrappingMember<AZ::Entity*>(&BehaviorEntity::GetRawEntityPtr);
+
+// Reflect a method, two properties, a constant, and an enum for ScriptClass.
+behaviorContext->Class<ScriptClass>()
+    ->Method("MemberFunc0", &ScriptClass::MemberFunc0)
+    ->Property("data", &ScriptClass::GetData, &ScriptClass::SetData)
+    ->Property("data1", BehaviorValueProperty(&ScriptClass::m_data1))
+    ->Constant("EPSILON", BehaviorConstant(0.001f))
+    ->Enum<ScriptClass::SC_ET_VALUE2>("SC_ET_VALUE2");
+```
+
+Refer to [ClassBuilder](/docs/api/frameworks/azcore/struct_a_z_1_1_behavior_context_1_1_class_builder.html) in the O3DE API Reference for additional information about these functions.
 
 ### Attributes
 
-You can optionally use the following built-in attributes to decorate a class.
+In addition to the builder functions, you can also use the following attributes to decorate a class.
 
 | Attribute | Description | Type | Values |
 | --- | --- | --- | --- |
 | **Category** | Used by the editor to categorize the object in a list. To nest categories, you can use the forward slash (`/`) separator. For example: <br> `Attribute(AZ::Script::Attributes::Category, "Gameplay/Triggers")` | `string` | |
-| **ExcludeFrom** | An optional flag that hides this object from editor lists, self-documentation, preview builds, or all of the above. This flag is primarily used for internal objects that are not intended to be accessible by script. | `AZ::Script::Attributes::ExcludeFlags` | `List`, <br> `Documentation`, <br> `Preview`, <br> `All` |
-| **Storage** | Specifies the owner of the memory storage for the reflected object. An owner can be the script system (`ScriptOwn`), the native runtime code (`RuntimeOwn`), or the script system's virtual machine (`Value`). | `AZ::Script::Attributes::StorageType` | `ScriptOwn`, <br> `RuntimeOwn`, <br> `Value` |
-| **ConstructibleFromNil** | Specifies whether the class is constructed by default when nil is provided. | `bool` | `true`, <br> `false` |
 | **ClassNameOverride** | Provides a custom name for script reflection that is different from the behavior context name. | `string` | |
-| **Ignore** | Specifies whether the element is ignored during reflection. | `bool` | `true`, <br> `false` |
+| **ConstructibleFromNil** | Specifies whether the class is constructed by default when nil is provided. | `bool` | `true`, <br> `false` |
+| **ConstructorOverride** | Provide a custom constructor to be called when created from Lua script. | function pointer | |
 | **Deprecated** | Marks a reflected class, method, EBus, or property as deprecated. | `bool` | `true`, <br> `false` |
+| **ExcludeFrom** | An optional flag that hides this object from editor lists, self-documentation, preview builds, or all of the above. This flag is primarily used for internal objects that are not intended to be accessible by script. | `AZ::Script::Attributes::ExcludeFlags` | `List`, <br> `Documentation`, <br> `Preview`, <br> `All` |
+| **Ignore** | Specifies whether the element is ignored during reflection. | `bool` | `true`, <br> `false` |
+| **Storage** | Specifies the owner of the memory storage for the reflected object. An owner can be the script system (`ScriptOwn`), the native runtime code (`RuntimeOwn`), or the script system's virtual machine (`Value`). | `AZ::Script::Attributes::StorageType` | `ScriptOwn`, <br> `RuntimeOwn`, <br> `Value` |
 | **ToolTip** | Used by the editor to display additional information in a tooltip. | `string` | |
+
+#### C++ examples of attributes
+
+```cpp
+behaviorContext->Class<AreaBlenderConfig>()
+    ->Attribute(AZ::Script::Attributes::Category, "Vegetation");
+
+behaviorContext->Class<BlastFamilyComponent>()
+    ->Attribute(AZ::Script::Attributes::Scope, AZ::Script::Attributes::ScopeFlags::Common);
+
+behaviorContext->Class<AZ::GameplayNotificationId>("GameplayNotificationId")
+    ->Attribute(AZ::Script::Attributes::Deprecated, true)
+    ->Constructor<AZ::EntityId, AZ::Crc32>()
+        ->Attribute(AZ::Script::Attributes::Storage, AZ::Script::Attributes::StorageType::Value)
+        ->Attribute(AZ::Script::Attributes::ConstructorOverride, &GameplayEventIdNonIntrusiveConstructor);
+
+behaviorContext->Class<MathUtils>("MathUtils")
+    ->Method("ConvertTransformToEulerRadians", &AZ::ConvertTransformToEulerRadians)
+        ->Attribute(AZ::Script::Attributes::ExcludeFrom, AZ::Script::Attributes::ExcludeFlags::All);
+```
+
+Refer to [`Code/Framework/AzCore/AzCore/Script/ScriptContextAttributes.h`](https://github.com/o3de/o3de/blob/main/Code/Framework/AzCore/AzCore/Script/ScriptContextAttributes.h) in the O3DE source for a complete list of script attributes.
 
 ### Lua usage examples
 
