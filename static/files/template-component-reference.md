@@ -33,32 +33,11 @@ toc: true
 
 ![<component name> interface](/images/<path-to-images>)
 
-### Base properties
-
-| Property | Description | Value | Default |
+| Property | Description | Value | default |
 | - | - | - | - |
 |   |   |   |   |
 |   |   |   |   |
 |   |   |   |   |
-
-<!-- 
-
-Possible values: 
-- Data types such as Integer, Float, Boolean, String. Specify minimum and maximum values, if relevent. 
-- Enumerated set of values such as `Sphere`, `Box`, and `Capsule`. Format using in-line code style. 
-- An O3DE object such as collision layers and collision groups. Provide context if necessary to help users identify the type of object. 
--->
-
-### Secondary properties
-
-<!-- Repeat this section as many times necessary. -->
-
-![<component name> interface, <component group name> ](/images/<path-to-images>)
-
-| Property | Description | Value | Default |
-| - | - | - | - |
-|  |  |  |  |
-|  |  |  |  |
 
 
 ## <Component feature>
@@ -68,7 +47,7 @@ Possible values:
 
 ## <EBus interface name>RequestBus
 
-<!-- (Example) Use the following request functions with the <Request EBus name> EBus interface to communicate with <components> in your game. -->
+<!-- (Optional) Example: "Use the following request functions with the <Request EBus name> EBus interface to communicate with <components> in your game." -->
 
 | Request Name | Description | Paramter | Return | Scriptable |
 | - | - | - | - | - |
@@ -78,7 +57,7 @@ Possible values:
 
 ## <EBus interface name>NotificationBus
 
-<!-- (Example) Use the following notification functions with the <Notification EBus name> EBus interface to communicate with <components> in your game. -->
+<!-- (Optional) Example: "Use the following notification functions with the <Notification EBus name> EBus interface to communicate with <components> in your game." -->
 
 | Request Name | Description | Paramter | Return | Scriptable |
 | - | - | - | - | - |
