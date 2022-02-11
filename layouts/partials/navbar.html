@@ -1,4 +1,5 @@
 {{ $home   := site.BaseURL }}
+{{ $docs   := site.Params.docsDir }}
 {{ $title  := site.Title }}
 {{ $logo   := site.Params.logos.navbar }}
 {{ $menu   := site.Menus.main }}
@@ -8,7 +9,7 @@
 <div class="main-navbar navbar navbar-dark navbar-docs sticky-top" role="navigation" aria-label="main navigation">
   <div class="container-fluid d-flex flex-row justify-content-between">
       <div class="navbar-brand">
-        <a class="navbar-item" href="{{ $home }}">
+        <a class="navbar-item" href="{{ $docs }}">
           {{ if $logo }}
           {{ $url := printf "img/logos/%s" $logo | relURL }}
             <img src="{{ $url }}" class="navbar-logo">
