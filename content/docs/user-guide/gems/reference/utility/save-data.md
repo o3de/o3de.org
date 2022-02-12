@@ -31,13 +31,13 @@ Save Data communications that deal with local user profiles depend on the local 
 
 * Data not associated with a local user ID is saved into a *global* container or directory unique to the application.
 
-For more information about the `SaveDataRequests` bus, see the commented source code in `\Gems\SaveData\Code\Include\SaveData\SaveDataRequestBus.h`.
+For more information about the `SaveDataRequests` bus, refer to the commented source code in `\Gems\SaveData\Code\Include\SaveData\SaveDataRequestBus.h`.
 
 ## Getting Save Data notifications
 
-All save and load operations performed by the Save Data are asynchronous. Therefore, you must either subscribe to receive Save Data notifications or supply a callback function that notifies you when a save or load operation completes. This action is always performed in the main thread.
+All save and load operations that Save Data performs are asynchronous. Therefore, you must either subscribe to receive Save Data notifications or supply a callback function that notifies you when a save or load operation completes. This action is always performed in the main thread.
 
-For more information about the `SaveDataNotifications` bus, see the commented source code in `\Gems\SaveData\Code\Include\SaveData\SaveDataNotificationBus.h`.
+For more information about the `SaveDataNotifications` bus, refer to the commented source code in `\Gems\SaveData\Code\Include\SaveData\SaveDataNotificationBus.h`.
 
 ## Save Data code example
 

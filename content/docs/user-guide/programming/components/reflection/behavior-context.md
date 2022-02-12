@@ -23,7 +23,7 @@ In addition, the behavior context supports the O3DE [EBus](/docs/user-guide/prog
 
 ## Classes
 
-Classes in the behavior context reflect a C++ class or struct. You can provide an optional name for a class. If you do not provide a name, the class name from `AzTypeInfo` is used. That name must be unique for the scope. Because the system uses `AzRTTI` to build the class hierarchy, you can use RTTI if you want to reflect base class functionality.
+Classes in the behavior context reflect a C++ class or struct. You can provide an optional name for a class. If you don't provide a name, the class name from `AzTypeInfo` is used. That name must be unique for the scope. Because the system uses `AzRTTI` to build the class hierarchy, you can use RTTI if you want to reflect base class functionality.
 
 Classes that you bind to the behavior context become objects that can be instantiated in a script environment. To reflect a class, you must provide the type that is reflected as a template argument to the class function. For example:
 
@@ -47,15 +47,15 @@ if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(con
 
 To provide additional configuration for the class binding, you can chain class builder functions after the behavior context `Class` function. The following builder functions are available:
 
-| Builder Function | Description |
+| Builder function | Description |
 | --- | --- |
-| **Allocator** | Allows you to provide a custom allocator/deallocator for your class to override any existing allocation schema. If you do not provide a custom allocator, `aznew` is used (`AZ_CLASS_ALLOCATOR`). |
-| **Constant** | Read-only properties. Refer to the section on [constants](#constants) for more information about this builder function. |
+| **Allocator** | Allows you to provide a custom allocator/deallocator for your class to override any existing allocation schema. If you don't provide a custom allocator, `aznew` is used (`AZ_CLASS_ALLOCATOR`). |
+| **Constant** | Read-only properties. For more information about this builder function, refer to the section on [constants](#constants). |
 | **Constructor** | Allows you to enumerate the class constructors that you want to reflect. You must pass all constructor arguments as template arguments. |
-| **Enum** | Read-only `int` properties. Refer to the section on [enums](#enums) for more information about this builder function. |
-| **Method** | Reflects a C++ class method. The function can also reflect global methods. Refer to the section on [methods](#methods) for more information about this builder function. |
-| **Property** | Reflects class data. The function can also reflect global properties. Refer to the section on [properties](#properties) for more information about this builder function. |
-| **UserData** | Allows you to provide a pointer to user data. This pointer is accessible from all callbacks (like a custom allocator) that you implement for the class. |
+| **Enum** | Read-only `int` properties. For more information about this builder function, refer to the section on [enums](#enums). |
+| **Method** | Reflects a C++ class method. Can also reflect global methods. For more information about this builder function, refer to the section on [methods](#methods). |
+| **Property** | Reflects class data. Can also reflect global properties. For more information about this builder function, refer to the section on [properties](#properties). |
+| **UserData** | Allows you to provide a pointer to user data. This pointer is accessible from all callbacks (such as a custom allocator) that you implement for the class. |
 | **Wrapping <br> WrappingMember** | Signifies to the behavior context that the class is a wrapper of another class. This is useful when you reflect smart pointers and string wrappers. |
 
 #### C++ examples of class builder functions
@@ -88,22 +88,22 @@ behaviorContext->Class<ScriptClass>()
     ->Enum<ScriptClass::SC_ET_VALUE2>("SC_ET_VALUE2");
 ```
 
-Refer to [ClassBuilder](/docs/api/frameworks/azcore/struct_a_z_1_1_behavior_context_1_1_class_builder.html) in the O3DE API Reference for additional information about these functions.
+For more information about these functions, refer to [ClassBuilder](/docs/api/frameworks/azcore/struct_a_z_1_1_behavior_context_1_1_class_builder.html) in the O3DE `AzCore` API Reference.
 
 ### Attributes
 
-In addition to the builder functions, you can also use the following attributes to decorate a class.
+In addition to the builder functions, you can also use the following attributes to decorate a class:
 
 | Attribute | Description | Type | Values |
 | --- | --- | --- | --- |
 | **Category** | Used by the editor to categorize the object in a list. To nest categories, you can use the forward slash (`/`) separator. For example: <br> `Attribute(AZ::Script::Attributes::Category, "Gameplay/Triggers")` | `string` | |
 | **ClassNameOverride** | Provides a custom name for script reflection that is different from the behavior context name. | `string` | |
-| **ConstructibleFromNil** | Specifies whether the class is constructed by default when nil is provided. | `bool` | `true`, <br> `false` |
-| **ConstructorOverride** | Provide a custom constructor to be called when created from Lua script. | function pointer | |
+| **ConstructibleFromNil** | Specifies whether to construct the class by default when nil is provided. | `bool` | `true`, <br> `false` |
+| **ConstructorOverride** | Provides a custom constructor to be called when created from Lua script. | function pointer | |
 | **Deprecated** | Marks a reflected class, method, EBus, or property as deprecated. | `bool` | `true`, <br> `false` |
-| **ExcludeFrom** | An optional flag that hides this object from editor lists, self-documentation, preview builds, or all of the above. This flag is primarily used for internal objects that are not intended to be accessible by script. | `AZ::Script::Attributes::ExcludeFlags` | `List`, <br> `Documentation`, <br> `Preview`, <br> `All` |
-| **Ignore** | Specifies whether the element is ignored during reflection. | `bool` | `true`, <br> `false` |
-| **Storage** | Specifies the owner of the memory storage for the reflected object. An owner can be the script system (`ScriptOwn`), the native runtime code (`RuntimeOwn`), or the script system's virtual machine (`Value`). | `AZ::Script::Attributes::StorageType` | `ScriptOwn`, <br> `RuntimeOwn`, <br> `Value` |
+| **ExcludeFrom** | Hides the object from editor lists, self-documentation, preview builds, or all of the above. Use this optional flag primarily for internal objects that aren't intended to be accessible by script. | `AZ::Script::Attributes::ExcludeFlags` | `List`, <br> `Documentation`, <br> `Preview`, <br> `All` |
+| **Ignore** | Specifies whether to ignore the element during reflection. | `bool` | `true`, <br> `false` |
+| **Storage** | Specifies the owner of the memory storage for the reflected object. The owner can be the script system (`ScriptOwn`), the native runtime code (`RuntimeOwn`), or the script system's virtual machine (`Value`). | `AZ::Script::Attributes::StorageType` | `ScriptOwn`, <br> `RuntimeOwn`, <br> `Value` |
 | **ToolTip** | Used by the editor to display additional information in a tooltip. | `string` | |
 
 #### C++ examples of attributes
@@ -126,7 +126,7 @@ behaviorContext->Class<MathUtils>("MathUtils")
         ->Attribute(AZ::Script::Attributes::ExcludeFrom, AZ::Script::Attributes::ExcludeFlags::All);
 ```
 
-Refer to [`Code/Framework/AzCore/AzCore/Script/ScriptContextAttributes.h`](https://github.com/o3de/o3de/blob/main/Code/Framework/AzCore/AzCore/Script/ScriptContextAttributes.h) in the O3DE source for a complete list of script attributes.
+For a complete list of script attributes, refer to [`Code/Framework/AzCore/AzCore/Script/ScriptContextAttributes.h`](https://github.com/o3de/o3de/blob/main/Code/Framework/AzCore/AzCore/Script/ScriptContextAttributes.h) in the O3DE source.
 
 ### Lua usage examples
 
@@ -299,7 +299,7 @@ behaviorContext->Class<SurfaceTagDistance>()
     ->Property("UpperDistanceInMeters", BehaviorValueProperty(&SurfaceTagDistance::m_upperDistanceInMeters));
 ```
 
-To perform more complex operations than simply getting or setting the value, you can implement your own getters and setters instead of using the property macros:
+To perform operations more complex than simply getting or setting the value, you can implement your own getters and setters instead of using the property macros:
 
 ```cpp
 behaviorContext->Property("SpawnerType", &Descriptor::GetSpawnerType, &Descriptor::SetSpawnerType);
@@ -408,9 +408,9 @@ behaviorContext->EnumProperty<static_cast<int>(FrameCaptureResult::None)>("Frame
 
 ### `AZ_ENUM` utility macro
 
-O3DE `AzCore` provides a utility macro called `AZ_ENUM_DEFINE_REFLECT_UTILITIES`. This macro works in conjunction with the `AZ_ENUM` macros to generate utility functions that can reflect all values of an enum for you, so you don't need to reflect each value individually. This can be useful for enums that you expect to change during the course of development, or that contain a large number of values. To use this macro, you must define the enum using either of the `AZ_ENUM` macros, including `AZ_ENUM`, `AZ_ENUM_WITH_UNDERLYING_TYPE`, `AZ_ENUM_CLASS`, or `AZ_ENUM_CLASS_WITH_UNDERLYING_TYPE`.
+O3DE `AzCore` provides a utility macro called `AZ_ENUM_DEFINE_REFLECT_UTILITIES`. This macro works in conjunction with the `AZ_ENUM` macros to generate utility functions that can reflect all values of an enum for you, so you don't need to reflect each value individually. This can be useful for enums that you expect to change during the course of development, or that contain a large number of values.
 
-To use this macro, include `<AzCore/Preprocessor/EnumReflectUtils.h>` in the source where you wish to reflect the enum.
+To use this macro, you must define the enum using either of the `AZ_ENUM` macros, including `AZ_ENUM`, `AZ_ENUM_WITH_UNDERLYING_TYPE`, `AZ_ENUM_CLASS`, or `AZ_ENUM_CLASS_WITH_UNDERLYING_TYPE`. You must also include `<AzCore/Preprocessor/EnumReflectUtils.h>` in the source where you wish to reflect the enum.
 
 ```cpp
 // Define the enum and its values.

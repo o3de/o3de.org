@@ -28,7 +28,7 @@ serializeContext->Class<EditorEntitySortComponent, EditorComponentBase>()
 
 Version converters operate directly on the serialized data.
 
-To facilitate the creation of version converters, O3DE provides helper functions and examples such as the following:
+To facilitate the creation of version converters, **Open 3D Engine (O3DE)** provides helper functions and examples such as the following:
 
 * To locate a specific element to manipulate, you can use the `AZ::Utils::FindDescendantElements` helper function.
 * To access serialized data and manipulate it, you can use the public functions in the `DataElementNode` class (`\dev\Code\Framework\AzCore\AzCore\Serialization\SerializeContext.h`).
@@ -91,7 +91,7 @@ If you need to emit a warning or error when a conversion fails (for example, for
 
 Slice data patches present a unique challenge to versioning your component data structures. Data patches cannot be upgraded by version converters because they do not contain all the information about a component class. Changing the serialization of a component without upgrading data patches that contain partial component data can lead to crashes, corrupted slice data, or invalid slice files that cannot be loaded or manipulated and must be rebuilt from scratch.
 
-In most cases, the solution is to use NameChange and TypeChange class builders alongside your version converters. This causes the serializer to update the data patch and apply basic type changes and field name changes. These builders can be chained together to upgrade across multiple version changes, and can also be written to skip versions entirely.
+In most cases, the solution is to use `NameChange` and `TypeChange` class builders alongside your version converters. This causes the serializer to update the data patch and to apply basic type changes and field name changes. You can chain these builders together to upgrade across multiple version changes. You can also write them to skip versions entirely.
 
 ### Class builder syntax
 
@@ -118,7 +118,7 @@ serializeContext->Class<ExampleClass>()
     ->NameChange(4, 5, "MyData", "Data");
 ```
 
-You can also change the serialized name of a struct or class member when reflecting a class to the serialize context. In the following example, we use a `NameChange` class builder to change the name from `"MyStructData"` in version `4`, to `"StructData"` in version `5`.
+You can also change the serialized name of a struct or class member when reflecting a class to the serialization context. In the following example, we use a `NameChange` class builder to change the name from `"MyStructData"` in version `4` to `"StructData"` in version `5`.
 
 ```cpp
 class ExampleClass
@@ -135,7 +135,7 @@ serializeContext->Class<ExampleClass>()
 
 ### TypeChange class builder examples
 
-In the following example, class member `m_data` has changed from an `int` in version `4` to a `float` in version `5`. We add a `TypeChange` class builder to the serialization context so that any data patches containing the serialized field name `"MyData"` will be applied using the new data type.
+In the following example, class member `m_data` has changed from an `int` in version `4` to a `float` in version `5`. We add a `TypeChange` class builder to the serialization context so that any data patches containing the serialized field name `"MyData"` are applied using the new data type.
 
 ```cpp
 // Serialization Context for Version 4:
@@ -206,9 +206,10 @@ class ExampleClass
 
 The following examples demonstrate more complex usage of class builders.
 
-**Example : Multiple Upgrades in One Version**
+**Example: Multiple upgrades in one version**
 
-Type changes take priority over name changes. You can apply both in the same version upgrade, but the type change is applied first. Therefore, always specify the *old* field name in the `TypeChange` when changing both a type and a name at the same time.
+Type changes take priority over name changes. You can apply both in the same version upgrade, but the type change is applied first. Therefore, when changing both a type and a name at the same time, always specify the *previous* field name in the `TypeChange`.
+
 In the following example, a `TypeChange` changes the type from `float` to `int`. It is immediately followed by a `NameChange` that changes the serialized name from `"FloatData"` to `"IntData"`.
 
 ```cpp
@@ -241,11 +242,11 @@ class ExampleClass
 };
 ```
 
-**Example : Version Skipping**
+**Example: Version skipping**
 
-A `TypeChange` can skip multiple versions. Skipping versions should be used only when intermediate type changes contain conversions that could lose data.
+A `TypeChange` can skip multiple versions. Avoid skipping versions unless intermediate type changes contain conversions that could lose data.
 
-In the following example, using `ExampleClass`, the member variable `m_data` changes from a `float` in version 1 to an `int` in version 2. Then in version 3, `m_data` changes back to a `float`. Multiple `TypeChange` class builders are used to avoid losing the floating point precision when upgrading older overrides to version 3, while still providing the ability to fix data patches written using version 2 of `ExampleClass`.
+In the following example, using `ExampleClass`, the member variable `m_data` changes from a `float` in version `1` to an `int` in version `2`. Then in version `3`, `m_data` changes back to a `float`. We use multiple `TypeChange` class builders to avoid losing the floating point precision when upgrading older overrides to version `3`, while still providing the ability to fix data patches written using version `2` of `ExampleClass`.
 
 ```cpp
 // Version 1 of ExampleClass:
@@ -292,7 +293,7 @@ class ExampleClass
 };
 ```
 
-We strongly recommend that you do not use this version skipping technique with the `NameChange` builder. Doing so will cause problems for any `TypeChange` builders used on the same field in between the skipped versions as they try to match the serialized field name.
+We strongly recommend against skipping versions with the `NameChange` builder. Doing so causes problems for any `TypeChange` builders used on the same field in between the skipped versions as they try to match the serialized field name.
 
 ## Deprecation
 

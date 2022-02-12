@@ -7,7 +7,7 @@ weight: 300
 
 After a class is [registered with a serialization context](/docs/user-guide/programming/serialization/register-objects/), you can serialize and deserialize objects of that class. Objects are serialized to JSON with the `AZ::JsonSerialization::Store()` function and deserialized from JSON with `AZ::JsonSerialization::Load()`.
 
- This article includes reference for these methods, examples of using serialization and deserialization, and how to interpret result codes from the JSON serializer. For information on how specific types are serialized, refer to [Data types in serialized JSON](/docs/user-guide/programming/serialization/json-data-types).
+This article includes reference for these methods, examples of using serialization and deserialization, and how to interpret result codes from the JSON serializer. For information on how specific types are serialized, refer to [JSON Serialization of O3DE Data Types](/docs/user-guide/programming/serialization/json-data-types).
 
 ## Serialization 
 

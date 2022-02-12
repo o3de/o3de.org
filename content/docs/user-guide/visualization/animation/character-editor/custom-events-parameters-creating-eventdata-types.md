@@ -44,7 +44,7 @@ For more information about the `Equal` function, refer to [More About the Equal 
 
 When you reflect the event to the edit context, add the `Creatable` attribute to `ClassElement`. This makes the `EventData` type visible in **Animation Editor** in the **Motion Events** tab so that users can select it.
 
-   The following code example reflects the `LeftFootEvent` to the serialize and edit contexts.
+The following code example reflects the `LeftFootEvent` to the serialization and edit contexts.
 
    ```
    ...
