@@ -1,7 +1,7 @@
 ---
 linkTitle: Hugo
 title: O3DE Documentation Contribution with Hugo
-description: Learn to work with Hugo, the static site generator for O3DE documentation
+description: Learn to work with Hugo, the static site generator for O3DE documentation.
 toc: true
 weight: 600
 ---
