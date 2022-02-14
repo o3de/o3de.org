@@ -97,7 +97,7 @@ We suggest that you begin your learning path by browsing the following set of O3
 *  [Component Reference](/docs/user-guide/components/reference/)
 *  [Animation Editor](/docs/user-guide/visualization/animation/animation-editor/)
 *  [Scene Settings Tool](/docs/user-guide/assets/scene-settings/)
-*  [Gem Library](/docs/user-guide/gems/overview)
+*  [Gem Library](/docs/user-guide/gems/overview/)
 *  [Cinematics and the Track View Editor](/docs/user-guide/visualization/cinematics/)
 *  [Shaders and Materials](/docs/atom-guide/look-dev/)
 
@@ -130,7 +130,7 @@ We suggest that you begin your learning path by browsing the following set of O3
 *  [Asset Pipeline](/docs/user-guide/assets/pipeline/)
 *  [Component Entity System](/docs/user-guide/components/)
 *  [Component Reference](/docs/user-guide/components/reference/)
-*  [Gem Library](/docs/user-guide/gems/overview)
+*  [Gem Library](/docs/user-guide/gems/overview/)
 *  [Script Canvas](/docs/user-guide/scripting/script-canvas/)
 *  [Lua Editor](/docs/user-guide/scripting/lua/)
 <!-- *  [AI Navigation](/docs/user-guide/interactivity/navigation-and-pathfinding/) -->
@@ -154,7 +154,7 @@ We suggest that your learning path looks like this:
 Here is a basic set of O3DE tools and technologies to focus on:
 *  [O3DE Editor](/docs/user-guide/editor/)
 *  [Programming Concepts](/docs/user-guide/programming/intro/)
-*  [Gems](/docs/user-guide/gems/overview)
+*  [Gems](/docs/user-guide/gems/overview/)
 *  [Component Entity System](/docs/user-guide/components/)
 *  [Component Reference](/docs/user-guide/components/reference/)
 *  [Programmer's Guide to Entities and Components](/docs/user-guide/programming/components/)
