@@ -26,7 +26,7 @@ Wondering where to start? The conveniently titled [Get Started](./get-started) t
 | [Docs Contribution Runbook](./git-workflow) | Get the Git commands for the basic workflow. |
 | [O3DE Docs Structure](./o3de-docs-structure) | Need guidance on navigating the repository? This map will help. |
 | [Submit a PR](./submit-a-pr) | Navigate the pitfalls of making submissions to O3DE docs. |
-| [Style Guide](./style-guide) | The fine details on how to consistently format and style docs for O3DE. |
+| [Style Guide](./style-guide/overview/) | The fine details on how to consistently format and style docs for O3DE. |
 | [Terminology](./terminology) | O3DE has many specialized terms, and a handful of terms that you shouldn't use. |
 | [Work with Hugo](./hugo) | Learn to work with Hugo, the static site generator for O3DE docs. |
 | [O3DE Documentation and Community Special Interest Group](https://github.com/o3de/sig-docs-community) | The hub of the O3DE Documentation and Community Special Interest Group (D&C SIG), the governing body for O3DE docs. |
