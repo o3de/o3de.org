@@ -1,11 +1,11 @@
 ---
 description: Learn how to create system components in Open 3D Engine.
-title: System-wide Components in Open 3D Engine
+title: System Components in Open 3D Engine
 linktitle: System Components
 weight: 600
 ---
 
-System components are similar to other components in Open 3D Engine's component entity framework. However, instead of creating game entity behavior, they control the behavior of the engine itself. System components are first-class elements of the game engine and are included at a deep level early in the initialization process. System components are registered onto the main [`Az::Module`](/docs/api/frameworks/azcore/class_a_z_1_1_module.html) class of a Gem, and are activated when the Gem is loaded, and deactivated when the Gem is unloaded.
+System components are similar to other components in the component entity framework of **Open 3D Engine (O3DE)**. However, instead of creating game entity behavior, they control the behavior of the engine itself. System components are first-class elements of the game engine and are included at a deep level early in the initialization process. System components are registered onto the main [`Az::Module`](/docs/api/frameworks/azcore/class_a_z_1_1_module.html) class of a Gem, activated when the Gem is loaded, and deactivated when the Gem is unloaded.
 
 Like any O3DE [component](/docs/user-guide/programming/components/create-component/), a system component can provide services and can depend on or require other system component services. O3DE provides precise control over the order of engine initialization and system dependencies.
 
