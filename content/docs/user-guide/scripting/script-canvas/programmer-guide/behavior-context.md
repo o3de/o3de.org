@@ -5,7 +5,7 @@ description: Learn about the important relationship between Script Canvas and th
 weight: 100
 ---
 
-The [behavior context](/docs/user-guide/programming/components/behavior-context) in **Open 3D Engine (O3DE)** is a reflection system that exposes C++ classes, methods, constants, data types, and the O3DE event mechanisms, providing the necessary bindings for scripting environments to invoke the code at runtime. Script Canvas uses the script bindings to automatically create new nodes in the Node Palette for use in your Script Canvas graphs. Using these new nodes, you can call the C++ methods, get and set properties, retrieve constants, broadcast and handle events, and pass your custom data types through the node's data pins.
+The [behavior context](/docs/user-guide/programming/components/reflection/behavior-context) in **Open 3D Engine (O3DE)** is a reflection system that exposes C++ classes, methods, constants, data types, and the O3DE event mechanisms, providing the necessary bindings for scripting environments to invoke the code at runtime. Script Canvas uses the script bindings to automatically create new nodes in the Node Palette for use in your Script Canvas graphs. Using these new nodes, you can call the C++ methods, get and set properties, retrieve constants, broadcast and handle events, and pass your custom data types through the node's data pins.
 
 In short, use the behavior context with Script Canvas to do the following:
 
@@ -423,4 +423,4 @@ Depending on the type of bus, you might have to specify an ID to connect to. For
 
 To get started creating new components in O3DE that integrate the behavior context, we recommend that you read the [Programmer's Guide to Component Development](/docs/user-guide/programming/components/).
 
-For a closer look at the behavior context system itself, refer to [Behavior Context In-Depth](/docs/user-guide/programming/components/behavior-context).
+For a closer look at the behavior context system itself, refer to [Behavior Context](/docs/user-guide/programming/components/reflection/behavior-context).

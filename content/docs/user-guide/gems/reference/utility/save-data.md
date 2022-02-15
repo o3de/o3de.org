@@ -5,19 +5,19 @@ description: The Save Data Gem provides an API to save runtime data in Open 3D E
 toc: true
 ---
 
-The Save Data Gem encapsulates all the functionality in **Open 3D Engine (O3DE)** for saving game and individual user data under a single platform-agnostic set of API operations.
+The **Save Data** Gem encapsulates all the functionality in **Open 3D Engine (O3DE)** for saving game and individual user data under a single platform-agnostic set of API operations.
 
-The SaveData gem uses the [Event Bus (EBus)](/docs/user-guide/programming/ebus/), O3DE's general-purpose communication system for dispatching notifications and receiving requests. To make requests related to saving or loading persistent user data, use the Save Data Gem's `SaveDataRequests` bus. To listen for notifications related to saving persistent user data, use the `SaveDataNotifications` bus.
+The Save Data Gem uses the [Event Bus (EBus)](/docs/user-guide/programming/ebus/), O3DE's general-purpose communication system for dispatching notifications and receiving requests. To make requests related to saving or loading persistent user data, use the Save Data Gem's `SaveDataRequests` bus. To listen for notifications related to saving persistent user data, use the `SaveDataNotifications` bus.
 
-## Making Requests to Save Data
+## Making requests to Save Data
 
 When making requests to save or load data using the `SaveDataRequestBus`, keep the following points in mind:
 
-* The Save Data Gem is responsible only for saving and loading generic data buffers. Your game must serialize or deserialize data using a data format, such as JSON or XML. However, convenience functions are provided that save or load an object that has been reflected using an [`AZ::SerializeContext`](/docs/user-guide/programming/serialization/entity-system-reflection-serialization-context/).
+* The Save Data Gem is responsible only for saving and loading generic data buffers. Your game must serialize or deserialize data using a data format, such as JSON or XML. However, the Gem provides convenience functions that save or load an object that has been reflected using a [serialization context](/docs/user-guide/programming/components/reflection/serialization-context/).
 
 * Each save data buffer must be uniquely identified by a string. On most operating systems and devices, this string is the name of the file to which the data buffer is written.
 
-### Saving Data for Local User IDs
+### Saving data for local user IDs
 
 Save Data communications that deal with local user profiles depend on the local user ID that uniquely identifies a user on the local device. When using local user IDs, keep in mind the following points:
 
@@ -31,17 +31,17 @@ Save Data communications that deal with local user profiles depend on the local 
 
 * Data not associated with a local user ID is saved into a *global* container or directory unique to the application.
 
-For more information about the `SaveDataRequests` bus, see the commented source code in `\Gems\SaveData\Code\Include\SaveData\SaveDataRequestBus.h`.
+For more information about the `SaveDataRequests` bus, refer to the commented source code in `\Gems\SaveData\Code\Include\SaveData\SaveDataRequestBus.h`.
 
-## Getting Save Data Notifications
+## Getting Save Data notifications
 
-All save and load operations performed by the Save Data are asynchronous. Therefore, you must either subscribe to receive Save Data notifications or supply a callback function that notifies you when a save or load operation completes. This action is always performed in the main thread.
+All save and load operations that Save Data performs are asynchronous. Therefore, you must either subscribe to receive Save Data notifications or supply a callback function that notifies you when a save or load operation completes. This action is always performed in the main thread.
 
-For more information about the `SaveDataNotifications` bus, see the commented source code in `\Gems\SaveData\Code\Include\SaveData\SaveDataNotificationBus.h`.
+For more information about the `SaveDataNotifications` bus, refer to the commented source code in `\Gems\SaveData\Code\Include\SaveData\SaveDataNotificationBus.h`.
 
-## Save Data Code Example
+## Save Data code example
 
-The following example code uses the SaveData gem to save and load buffers and objects to and from persistent storage.
+The following example code uses the Save Data Gem to save and load buffers and objects to and from persistent storage.
 
 ```c++
 const AZ::u64 testSaveDataSize = 9;
