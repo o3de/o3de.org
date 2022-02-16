@@ -55,4 +55,4 @@ Empathy is a creative's strength. When developing an error message, pause, and t
 |---	|---	|
 |Master/Slave	| The choice of an alternative depends on the technical context. Some alternatives to consider are: <ol><li> Client/Agent or Controller/Agent </li> <li>Primary/Secondary or Primary/Ancillary <li>Supervisor/Worker </li></ol>|
 
-For a complete list of forbidden words and their approved alternatives, read [Terms to avoid and their alternatives](/docs/contributing/to-docs/terminology/#terms-to-avoid-and-their-alternatives) in the O3DE Contributing guide. 
+For a complete list of forbidden words and their approved alternatives, read [Terms to avoid and their alternatives](/docs/contributing/to-docs/terminology#terms-to-avoid-and-their-alternatives) in the O3DE Contributing guide.
