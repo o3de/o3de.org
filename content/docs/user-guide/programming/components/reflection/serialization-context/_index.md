@@ -1,10 +1,11 @@
 ---
-description: ' Use the serialization context to provide persistence for C++ objects
-  or O3DE types in Open 3D Engine. '
-title: Serialization Context
+linkTitle: Serialization Context
+title: Serialization Context in O3DE
+description: Use the serialization context in Open 3D Engine (O3DE) to provide persistence for C++ objects or O3DE types.
+weight: 100
 ---
 
-You can use the serialization context \(`\dev\Code\Framework\AzCore\AzCore\Serialization\SerializeContext.*`\) to provide persistence for C++ objects or any O3DE type. To implement this, make an `AzTypeInfo` declaration or use `AZ_RTTI` (runtime type information), as in the following example:
+You can use the **Open 3D Engine (O3DE)** serialization context \(`\dev\Code\Framework\AzCore\AzCore\Serialization\SerializeContext.*`\) to provide persistence for C++ objects or any O3DE type. To implement this, make an `AzTypeInfo` declaration or use `AZ_RTTI` (runtime type information), as in the following example:
 
 ```
 class SerializedObject

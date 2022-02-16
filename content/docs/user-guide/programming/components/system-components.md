@@ -1,19 +1,19 @@
 ---
 description: Learn how to create system components in Open 3D Engine.
-title: System-wide Components in Open 3D Engine
+title: System Components in Open 3D Engine
 linktitle: System Components
 weight: 600
 ---
 
-System components are similar to other components in Open 3D Engine's component entity framework. However, instead of creating game entity behavior, they control the behavior of the engine itself. System components are first-class elements of the game engine and are included at a deep level early in the initialization process. System components are registered onto the main [`Az::Module`](/docs/api/frameworks/azcore/class_a_z_1_1_module.html) class of a Gem, and are activated when the Gem is loaded, and deactivated when the Gem is unloaded.
+System components are similar to other components in the component entity framework of **Open 3D Engine (O3DE)**. However, instead of creating game entity behavior, they control the behavior of the engine itself. System components are first-class elements of the game engine and are included at a deep level early in the initialization process. System components are registered onto the main [`Az::Module`](/docs/api/frameworks/azcore/class_a_z_1_1_module.html) class of a Gem, activated when the Gem is loaded, and deactivated when the Gem is unloaded.
 
 Like any O3DE [component](/docs/user-guide/programming/components/create-component/), a system component can provide services and can depend on or require other system component services. O3DE provides precise control over the order of engine initialization and system dependencies.
 
-When you author system components, follow the best practices for component authoring. For example, your system components should use the following:
+When you author system components, follow the [best practices for component authoring](/docs/user-guide/programming/components/entity-system-pg-components-ebuses-best-practices). For example, your system components should use:
 
 * [The EBus system](/docs/user-guide/programming/ebus) to expose their interfaces.
-* [Reflection](/docs/user-guide/programming/components/reflection/) to serialize and edit settings.
-* The [AZ::Component](/docs/api/frameworks/azcore/class_a_z_1_1_component.html) class to activate or deactivate the system component..
+* [Reflection contexts](/docs/user-guide/programming/components/reflection/) to serialize and edit settings.
+* The [AZ::Component](/docs/api/frameworks/azcore/class_a_z_1_1_component.html) class to activate or deactivate the system component.
 
 {{< important >}}
 Just like game components, system components often provide request and notification buses. However, because system components are global systems, they should not specify IDs for their buses like game components. Game developers should be able to call your system's EBuses without having to deal with or know about the system entity that contains all system components.

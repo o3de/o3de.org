@@ -9,7 +9,7 @@ A **reflected property editor** automatically lays out controls for user-editabl
 
 ![component reflected property editor in card](/images/tools-ui/component-reflected-property-editor-in-card.png)
 
-For more information about reflecting and the edit context, see the **O3DE User Guide** topic on [Reflecting a Component for Serialization and Editing](/docs/user-guide/programming/components/reflection/).
+For more information about reflecting and the edit context, refer to [Reflecting a Component for Serialization and Editing](/docs/user-guide/programming/components/reflection/reflecting-for-serialization) in the *O3DE User Guide*.
 
 ## Reflected property editor in a card
 

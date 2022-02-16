@@ -1,12 +1,11 @@
 ---
 linkTitle: Edit Context
-title: Edit Context
-description: Use the edit context to expose parameters for editing in Open 3D Engine's O3DE Editor.
-toc: true
-weight: 875
+title: Edit Context in O3DE
+description: Use the edit context to expose parameters for editing in O3DE Editor, the content creation environment for Open 3D Engine (O3DE).
+weight: 200
 ---
 
-The O3DE edit context is a utility context that relies on the [Serialization Context](/docs/user-guide/programming/serialization/entity-system-reflection-serialization-context/). You can use the edit context to expose parameters of serialized data for editing in O3DE Editor. However, the edit context is an abstract container for edit data. As such, it is not directly tied to any specific editor. Any editor can query the data in the edit context and implement its own visualization and editing controls.
+The O3DE edit context is a utility context that relies on the [serialization context](/docs/user-guide/programming/components/reflection/serialization-context/). You can use the edit context to expose parameters of serialized data for editing in **O3DE Editor**. However, the edit context is an abstract container for editable data. As such, it is not directly tied to any specific editor. Any editor can query the data in the edit context and implement its own visualization and editing controls.
 
 The following code shows an `EditContext` definition:
 
