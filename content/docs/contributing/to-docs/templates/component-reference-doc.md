@@ -229,7 +229,7 @@ For a component card with a simple set of properties, you only need one property
 
 * [Box Shape component](/docs/user-guide/components/reference/shape/box-shape/): A straightforward example where all properties are displayed at the first level in the component card's content hierarchy.
 
-* [Bloom component](/docs/user-guide/components/reference/atom/bloom/): Even though the Bloom component's properties contain dropdown lists, only one property table is needed. This is because the drop down lists are opened by default and are used to contain an array of values. Another exception is the **Overrides** dropdown list, which isn't used in the user's main workflow. So, only a description of the **Overrides-Enabled Override** property is sufficient. 
+* [Bloom component](/docs/user-guide/components/reference/atom/bloom/): Even though the Bloom component's properties contain dropdown lists, only one property table is needed. This is because the drop down lists are opened by default and are used to contain an array of values. Another exception is the **Overrides** dropdown list, which isn't used in the user's main workflow. So, a description of the **Overrides-Enabled Override** property is sufficient. 
 
 See `template-component-reference.md`:
 ```md

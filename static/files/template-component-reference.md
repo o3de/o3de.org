@@ -6,6 +6,8 @@ weight: 200 # (Optional) Example
 toc: true
 ---
 
+<!-- This is a template to create a component reference document. As you write this document, please refer to the writing guidelines: https://www.o3de.org/docs/contributing/to-docs/templates/component-reference-doc/-->
+
 <!-- Introduction - Describe the component and what it does. -->
 
 
