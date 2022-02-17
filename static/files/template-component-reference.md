@@ -1,8 +1,8 @@
 ---
-linkTitle: <Component Name>
-title: <Component Name> Component
-description: The <Component Name>, which does <function>, is provided by the <Gem name> in Open 3D Engine (O3DE). # Example
-weight: 200 # Example
+linkTitle: Component Name
+title: \[Component Name] Component
+description: The [component name], which does [function], is provided by the [Gem name] in Open 3D Engine (O3DE). # Example
+weight: 200 # (Optional) Example
 toc: true
 ---
 
@@ -16,7 +16,7 @@ toc: true
 
 ## Dependencies
 
-<!-- (Optional) List the component's depdencies -->
+<!-- (Optional) List the component's dependencies -->
 
 
 ## Use cases
@@ -31,7 +31,10 @@ toc: true
 
 ## Properties
 
-![<component name> interface](/images/<path-to-images>)
+<!-- This example is for a simple set of properties. 
+If you use this section, then delete the other Properties section. -->
+
+![[component name] interface](/images/<path-to-images>)
 
 | Property | Description | Value | default |
 | - | - | - | - |
@@ -40,26 +43,80 @@ toc: true
 |   |   |   |   |
 
 
-## <Component feature>
+## Properties
+
+<!-- This example is for a complex set of properties. 
+If you use this section, then delete the other Properties section. -->
+
+![[component name] interface](/images/<path-to-image>)
+
+
+### Base properties
+
+| Property | Description | Value | Default |
+| - | - | - | - |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+
+### [Property group] properties
+
+![[property group] interface](/images/<path-to-image>)
+
+| Property | Description | Value | Default |
+| - | - | - | - |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+
+### [Configuration] properties
+
+{{< tabs >}} 
+{{% tab name="[configuration 1] properties" %}}
+
+![[configuration 1] interface](/images/<path-to-image>)
+
+| Property | Description | Value | Default |
+| - | - | - | - |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+
+{{% /tab %}}
+{{% tab name="[configuration 2] properties" %}}  
+
+![[configuration 2] interface](/images/<path-to-image>)
+
+| Property | Description | Value | Default |
+| - | - | - | - |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+
+{{% /tab %}}
+{{< /tabs >}}
+
+
+## [Component feature]
 
 <!-- (Optional) Explain specific features of your component. Repeat this section for each additional topic, as needed. -->
 
 
-## <EBus interface name>RequestBus
+## [EBus interface name]RequestBus
 
-<!-- (Optional) Example: "Use the following request functions with the <Request EBus name> EBus interface to communicate with <components> in your game." -->
+<!-- (Optional) Example: "Use the following request functions with the <Request EBus name> EBus interface to communicate with <component name> in your game." -->
 
-| Request Name | Description | Paramter | Return | Scriptable |
+| Request Name | Description | Parameter | Return | Scriptable |
 | - | - | - | - | - |
 |   |   |   |   |   |
 |   |   |   |   |   |
 |   |   |   |   |   |
 
-## <EBus interface name>NotificationBus
+## [EBus interface name]NotificationBus
 
-<!-- (Optional) Example: "Use the following notification functions with the <Notification EBus name> EBus interface to communicate with <components> in your game." -->
+<!-- (Optional) Example: "Use the following notification functions with the <Notification EBus name> EBus interface to communicate with <component name> in your game." -->
 
-| Request Name | Description | Paramter | Return | Scriptable |
+| Request Name | Description | Parameter | Return | Scriptable |
 | - | - | - | - | - |
 |   |   |   |   |   |
 |   |   |   |   |   |
