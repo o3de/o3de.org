@@ -30,31 +30,14 @@ The following image shows the structure of project runtimes built with O3DE:
 
 ## Overview of the O3DE SDK
 
-O3DE is modular. It is constructed of a common *core* that all modules depend on, and then a plugin and extension system that adds more features.
+O3DE is modular&mdash;it's constructed of a common core that all modules depend on, with plugins and extension systems that add more features. These core modules are provided by the O3DE software development kit (SDK) and are the essential frameworks to extend the engine with new features.
 
-The following are the core modules:
-
-* [`AzCore`](https://o3de.org/docs/api/frameworks/azcore/) provides math, serialization, memory management, eventing and pub/sub interfaces, as well as the ability to load plugin modules. It provides the component-entity model and contains an implementation of C++ STL that includes memory alignment aware containers and other guarantees.
-
-* [`AzFramework`](https://o3de.org/docs/api/frameworks/azframework/) provides higher level structures. `AzFramework` also contains some additional code common to most, but not all applications.
-
-* [`AzGameFramework`](https://o3de.org/docs/api/frameworks/azgameframework/) contains core functions only used by runtime applications. It provides loop management, and a bootstrap sequence that is specific to runtime applications.
-
-* [`AzToolsFramework`](https://o3de.org/docs/api/frameworks/aztoolsframework/) contains core functions only used by tools. It provides UI components such as object pickers, property editors, source control integrations, and a bootstrap sequence that is specific to tools.
-
-* [`AzQtComponents`](https://o3de.org/docs/api/frameworks/azqtcomponents/) contains common UI widgets (scroll bars, buttons, dialogs, and so on) that provide a consistent look and feel between tool applications.
-
-The following image illustrates the dependency graph for the core modules of O3DE.
+The following image illustrates the dependency graph for O3DE's core modules: `AzCore`, `AzFramework`, `AzGameFramework`, `AzToolsFramework`, and `AZQtComponents`. High-level products, such as project runtimes, command line interface (CLI) tools, and graphical user interface (GUI) tools, all depend on the core modules.
 
 ![O3DE core module dependency graph](/images/welcome-guide/o3de-architecture-dependency-graph.svg)
 
-Some examples of the high-level products using these frameworks are:
+For more information on O3DE's engine core, refer to the [Programming Guide](/docs/user-guide/programming/). 
 
-* **Project runtimes** - End products created by developers using O3DE, such as games, dedicated server runtimes, and world simulations.
-
-* **CLI tools** - Tools invoked from the command-line interface without a GUI, such as the AZSL Compiler and the Asset Batch Processor.
-
-* **GUI tools** - Tools with a graphical UX used for developing O3DE projects, such as the O3DE Editor, O3DE Asset Processor, and the Atom Materials Editor.
 
 ### O3DE Directory Structure
 
