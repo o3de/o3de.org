@@ -12,7 +12,8 @@ With Project Manager, you can do the following:
 * Create a project, or add an existing project.
 * Build a project.
 * Open a project in **O3DE Editor**.
-* Add or remove [Gems](/docs/user-guide/appendix/glossary#gem) in a project from the **Gem Catalog**.
+* Add a [Gem](/docs/user-guide/appendix/glossary#gem) repo.
+* Add or remove Gems from a project using the **Gem Catalog**.
 * Configure the project icon.
 * Configure O3DE manifest settings, such as default locations for projects,  downloadable ("third-party") packages, and other O3DE objects on your computer.
 
@@ -98,8 +99,11 @@ The project context menu contains the following actions:
 | Action | Description |
 | - | - |
 | **Edit Project Settings** | Opens the project settings screen, from which you can change selected project settings and configure which Gems are enabled for your project. |
+| **Configure Gems** | Skips the project settings screen and opens the Configure Gems page for your project. |
 | **Build** | Builds the project. |
+| **Open CMake GUI** | Opens the GUI interface for the CMake program to your project directory. |
 | **Open Project folder** | Opens the project folder in a File Explorer window on your computer. |
+| **Create Editor desktop shortcut** | Creates a desktop shortcut that will open your project in **O3DE Editor**, skipping Project Manager. |
 | **Duplicate** | Creates a duplicate of the project (without the build folder) in a directory of your choosing. It also registers the new project in the O3DE manifest in your user folder. Note that the project display name of the duplicate project will be the same as the original. You can update the display name in Project Settings. |
 | **Remove from O3DE** | Removes the project from Project Manager and the O3DE manifest, but does not delete the project from disk. |
 | **Delete this Project** | Removes the project from Project Manager and the O3DE manifest _and deletes the project from disk_. |
@@ -109,24 +113,26 @@ The project context menu contains the following actions:
 The **Engine** tab contains settings from the engine manifest and the O3DE manifest. The default folder locations are editable on this screen.
 
 {{< note >}}
-The `.o3de` directory in your user folder is the default location for all of the default folders. If you have limited drive space in your user folder, consider changing some of these default folder locations&mdash;particularly the "3rd Party Software Folder," which will contain several GB of downloaded packages after creating your first project.
+The default location for all of the default folders is in your user folder. If you have limited drive space in your user folder, consider changing some of these default folder locations&mdash;particularly the "3rd Party Software Folder," which will contain several GB of downloaded packages after building your first project.
 {{< /note >}}
 
 ![Engine tab with default values](/images/user-guide/project-config/project-manager/engine-tab.png)
 
 The Engine tab contains the following O3DE settings:
 
-| Setting | Description |
-| - | - |
-| **Engine Version** | (Read-only) Displays the O3DE engine version read from the `engine.json` manifest of the engine associated with Project Manager when Project Manager was launched. |
-| **3rd Party Software Folder** | Defines the location of the downloadable packages used by O3DE and its components. |
-| **Default Projects Folder** | Defines the default folder for projects. New projects will be created in this folder unless a different path is specified during the new project workflow. |
-| **Default Gems Folder** | Defines the default folder for Gems. New Gems will be created in this folder unless a different path is specified when the Gem is created. |
-| **Default Project Templates Folder** | Defines the default folder for project templates. New project templates will be created in this folder unless a different path is specified when the project template is created. |
+| Setting | Description | Default |
+| - | - | - |
+| **Engine Name** | (Read-only) The name of the O3DE engine read from the `engine.json` manifest of the engine associated with Project Manager when Project Manager was launched. | |
+| **Engine Version** | (Read-only) The O3DE engine version read from the `engine.json` manifest of the engine associated with Project Manager when Project Manager was launched. | |
+| **Engine Folder** | (Read-only) The location of the O3DE engine associated with Project Manager when Project Manager was launched. Clicking on the folder icon opens the engine folder in a File Explorer window on your computer. | |
+| **3rd Party Software Folder** | Defines the location of the downloadable packages used by O3DE and its components. | `<user>/.o3de/3rdParty` |
+| **Default Projects Folder** | Defines the default folder for projects. New projects will be created in this folder unless a different path is specified during the new project workflow. | `<user>/O3DE/Projects` |
+| **Default Gems Folder** | Defines the default folder for Gems. New Gems will be created in this folder unless a different path is specified when the Gem is created. | `<user>/O3DE/Gems` |
+| **Default Project Templates Folder** | Defines the default folder for project templates. New project templates will be created in this folder unless a different path is specified when the project template is created. | `<user>/O3DE/Templates` |
 
 ### Project details
 
-The **Enter Project Details** screen is part of the new project workflow. On this screen, you can set the project's name and location on your computer. You can also choose the project template, which defines the initial set of Gems that are enabled in your new project. You can further refine the initial set of Gems using the **Configure Gems** button.
+The **Enter Project Details** screen is part of the "new project" workflow. On this screen, you can set the project's name and location on your computer. You can also choose the project template, which defines the initial set of Gems that are enabled in your new project. You can further refine the initial set of Gems using the **Configure Gems** button.
 
 ![Create a New Project - Project Details screen](/images/welcome-guide/project-manager-create-project.png)
 
@@ -144,7 +150,7 @@ The Edit Project Settings screen contains the following project settings:
 | **Project Location** | The project's location on your computer. If you select a different folder using the folder button, Project Manager will move your project to the new location and update the O3DE manifest with the new path. A project rebuild is required after moving your project in this way. |
 | **Project Preview** | The path to the project icon image. The filename will always be `preview.png`. If you select a different image using the folder button, Project Manager will copy the image to your project folder and rename it `preview.png`. |
 
-### Configure gems
+### Configure Gems
 
 The **Configure Gems** screen enables you to change the collection of Gems that are enabled in your project. You can open this screen during the new project workflow, from the **Enter Project Details** screen, or from the **Edit Project Settings** screen of an existing project. You can use the Gem Catalog in the **Configure Gems** screen to find and enable new Gems for your project. Refer to [Adding and Removing Gems in a Project](./add-remove-gems) for instructions on using Configure Gems.
 

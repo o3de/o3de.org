@@ -1,10 +1,10 @@
 ---
-description: ' Learn how to reflect O3DE components in C++. '
 title: Reflecting a Component for Serialization and Editing
-weight: 300
+description: Learn how to reflect Open 3D Engine (O3DE) components in C++.
+weight: 50
 ---
 
-Components use AZ reflection to describe the data they serialize and how content creators interact with them.
+**Open 3D Engine (O3DE)** components use AZ reflection to describe the data that they serialize and how content creators interact with them.
 
 The following example reflects a component for serialization and editing:
 
@@ -92,11 +92,10 @@ if (edit)
 }
 ```
 
-O3DE has reflection contexts for different purposes, including the following:
-+ [Serialization Context](/docs/user-guide/programming/serialization/entity-system-reflection-serialization-context/) - Contains reflection data for serialization and construction of objects.
-+ [Edit Context](/docs/user-guide/programming/components/edit-context/) - Contains reflection data for visual editing of objects, as in O3DE Editor.
-+ [Behavior Context](/docs/user-guide/programming/components/behavior-context/) - Contains reflection for runtime manipulation of objects from Lua, [Script Canvas](/docs/user-guide/scripting/script-canvas/), or other external sources.
-+ `NetworkContext` - Contains reflection for networking purposes, including marshaling, quantization, and extrapolation.
+O3DE provides the following reflection contexts:
+* [Serialization context](serialization-context/) -- Contains reflection data for serialization and construction of objects.
+* [Edit context](edit-context) -- Contains reflection data for visual editing of objects, as in O3DE Editor.
+* [Behavior context](behavior-context) -- Contains reflection data for runtime manipulation of objects from Lua, [Script Canvas](/docs/user-guide/scripting/script-canvas/), or other external sources.
 
 {{< note >}}
 This topic covers only `SerializeContext` and `EditContext`.

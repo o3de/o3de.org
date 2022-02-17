@@ -22,11 +22,13 @@ description = "Open 3D Engine (O3DE) is a modular, open source, cross-platform 3
 favicon = "favicon.ico"
 repositoryUrl = "https://github.com/o3de/o3de.org"
 contentDir = "/content/"
+docsDir = "/docs/"
 sourceRepo = "https://github.com/o3de/o3de"
 
 [params.logos]
 navbar = "O3DE-Logo-REV-Mono.svg"
 og_image = "O3DE-Circle-Icon.png"
+docs_footer = "O3DE-Logo-Black-Mono.svg"
 
 [[params.social]]
 name = "O3DE GitHub Forums"
