@@ -12,7 +12,7 @@ The workflow:
 
 1. [Determine if your document belongs in the O3DE Component Reference.](#does-my-document-belong-in-the-o3de-component-reference) 
 
-2. [Set up the repository and download the component reference document template.](#set-up-repository-and-download-component-template)
+2. [Set up the repository and download the component reference document template.](#setting-up-repository-and-downloading-component-template)
 
 3. [Follow the writing guidelines to help you fill in the template.](#writing-a-component-reference-document)
 
@@ -33,7 +33,7 @@ First, determine whether or not your document belongs in the [Component Referenc
 
 Supplemental information, such as using the component across different workflows, belongs in other documentation. That document can be organized in an appropriate section of the User Guide, such as the [Interactivity and Simulation](/docs/user-guide/interactivity/), [Scripting](/docs/user-guide/scripting/), [Networking](/docs/user-guide/networking/), or [Visualization](/docs/user-guide/visualization/) sections.
 
-## Set up repository and download component template
+## Setting up repository and downloading component template
 
 To contribute to O3DE documentation, you must complete the steps in [Set Up a Local O3DE Docs Repo](/docs/contributing/to-docs/o3de-docs-repo-setup/). You can do this before or after writing your component reference document. However, you must set this up to place your document and images in the right folder.
 
