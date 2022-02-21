@@ -60,6 +60,7 @@ To prepare to build the engine and projects, choose one of the following build t
     ```
 
     The `-m` is a recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
+    The `--config` sets the build configuration type: `profile`, `debug`, or `release`. For setting up O3DE, `profile` is recommended. Read more on [O3DE's build configurations](/docs/user-guide/build/configure-and-build.md#generated-build-configurations).
 
     The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `C:\o3de\build\windows_vs2019\bin\profile`.
 
@@ -101,6 +102,7 @@ To prepare to build the engine and projects, choose one of the following build t
     ```
 
     The `-m` is a recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
+    The `--config` sets the build configuration type: `profile`, `debug`, or `release`. For setting up O3DE, `profile` is recommended. Read more on [O3DE's build configurations](/docs/user-guide/build/configure-and-build.md#generated-build-configurations).
 
     The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `C:\o3de-install\bin\Windows\profile\Default`.
 
