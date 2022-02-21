@@ -32,7 +32,7 @@ Start by learning about the core modules that drive O3DE and its extended featur
 
 The following image illustrates the dependency graph for the core modules of O3DE.
 
-![O3DE core module dependency graph](/images/welcome-guide/o3de-architecture-dependency-graph.svg)
+![O3DE core module dependency graph](/images/user-guide/programming/o3de-architecture-dependency-graph.svg)
 
 Examples of high-level products that use these frameworks are:
 

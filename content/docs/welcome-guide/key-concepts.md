@@ -34,7 +34,7 @@ O3DE is modular&mdash;it's constructed of a common core that all modules depend 
 
 The following image illustrates the dependency graph for O3DE's core modules: `AzCore`, `AzFramework`, `AzGameFramework`, `AzToolsFramework`, and `AZQtComponents`. High-level products, such as project runtimes, command line interface (CLI) tools, and graphical user interface (GUI) tools, all depend on the core modules.
 
-![O3DE core module dependency graph](/images/welcome-guide/o3de-architecture-dependency-graph.svg)
+![O3DE core module dependency graph](/images/user-guide/programming/o3de-architecture-dependency-graph.svg)
 
 For more information on O3DE's engine core, refer to the [Programming Guide](/docs/user-guide/programming/). 
 
