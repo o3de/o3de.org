@@ -1,7 +1,7 @@
 ---
 description: Use the Open 3D Engine (O3DE) Automated Generator to generate resources from Jinja2 templates. 
-linktitle: AzAutoGen source generator
-title: Automate source generation from templates with AzAutoGen
+linktitle: AzAutoGen Source Generator
+title: Automate Source Generation from Templates with AzAutoGen
 weight: 200
 ---
 
@@ -11,15 +11,15 @@ In this topic you'll be introduced to the conceptual idea behind AzAutoGen, and 
 
 ## How AzAutoGen works
 
-AzAutoGen works off of two input sets, a collection of value and template files, and a series of mappings from values to templates. AzAutoGen outputs to a specified file, or a set of files which contain special substitutions where When AzAutoGen is invoked, it runs through the following steps:
+AzAutoGen works off of two input sets, a collection of value and template files, and a series of mappings from values to templates. AzAutoGen outputs to a specified file, or a set of files which contain special substitutions. When AzAutoGen is invoked, it runs through the following steps:
 
 1. Prune all input files without one of the extensions `.xml`, `.json`, or `.jinja`. Templates can be co-located with other code as a result, although this isn't recommended.
 1. Categorize the input files as source files (`.xml`, `.json`) and template files (`.jinja`).
 1. For each `input_map,template,output` tuple that makes up a rule, match the corresponding files into their appropriate sets. `template` must be a single file; Each input is run through this template to generate a corresponding file named according to the pattern in `output`. Each mapping argument allows for the following substitutions:
 
    * Within `input_map`, the following matching operators are supported.
-     * `*` - Sequence of any length
-     * `?` - Single-character squence
+     * `*` - Sequence of any length.
+     * `?` - Single-character sequence.
      * `[<sequence>]` - Matches any characters in `<sequence>`.
      * `[!<sequence>]` - Matches any characters _not_ in `<sequence>`.
    * Within `output`, the following tokens can be used to create unique file names for multiple inputs.
@@ -213,7 +213,6 @@ namespace {{ data.get('Name') }}
         }]
       }
     ]
-  }
 }
 ```
 

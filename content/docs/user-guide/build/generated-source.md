@@ -1,5 +1,6 @@
 ---
-title: Build generated source files for Open 3D Engine (O3DE)
+linktitle: Build Generated Source Files
+title: Build Generated Source Files for Open 3D Engine
 description: >-
     Learn how to create template files and their inputs using the Open 3D Engine AzAutoGen generator, and then tie them to build
     tasks in CMake for inclusion in your target.
