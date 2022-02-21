@@ -4,9 +4,7 @@ description: Learn about the requirements for creating a component to use with t
 weight: 200
 ---
 
-You can develop your own independent modules to distribute and build as **Open 3D Engine (O3DE)** Gems. A Gem is just a
-bundle of code and/or assets, a manifest file, a CMake build file, and an optional display icon for project configuration
-tools. This is all that's needed to ship a Gem.
+You can develop your own independent modules to distribute and build as **Open 3D Engine (O3DE)** Gems. A Gem is just a bundle of code and/or assets, a manifest file, a CMake build file, and an optional display icon for project configuration tools. This is all that's needed to ship a Gem.
 
 Although you can create a Gem manually by creating all of the files yourself, it's recommended to use the `o3de` tool located in the `<engine>/scripts` directory:
 
@@ -39,7 +37,7 @@ Each Gem has an `Assets` directory that can contain models, textures, scripts, a
 
 Gem code can be contained in any directory that is picked up by the `CMakeLists.txt` file of the Gem, although, by convention, Gems with only one source module use `Code` for the directory name.
 
-A Gem that contains code is known as a *Code Gem*. For more information on developing Code Gems, refer to [Programmer's Guide to Gem Development](/docs/user-guide/programming/gems/).
+A Gem that contains code is known as a *Code Gem*. For more information on developing Code Gems, refer to [Code Gem Specifications](/docs/user-guide/programming/gems/code-gems).
 
 ## Manifest file
 
