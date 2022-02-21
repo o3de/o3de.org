@@ -17,7 +17,7 @@ The following components are **compatible** with **Non-uniform Scale**:
 + **[Quad Shape](/docs/user-guide/components/reference/shape/quad-shape/)**
 + **[PhysX Collider](/docs/user-guide/components/reference/physx/collider/)** - Note that primitive colliders are replaced with convex approximations if they are non-uniformly scaled, which may slightly deteriorate performance. The level of detail of the convex approximation can be adjusted using the **Subdivision level** setting on the [PhysX Collider](/docs/user-guide/components/reference/physx/collider/) component.
 + **[PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/)**
-+ **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/)**
++ **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/)**
 + **[PhysX Force Region](/docs/user-guide/components/reference/physx/force-region/)**
 + **[Decal](/docs/user-guide/components/reference/atom/decal/)**
 + **Mesh**
@@ -37,14 +37,14 @@ The following components are **incompatible** with the **Non-uniform Scale** com
 + **[PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/)**
 + **[PhysX Character Controller](/docs/user-guide/components/reference/physx/character-controller/)**
 + **PhysX Character Gameplay**
-+ **[Blast Family](/docs/user-guide/components/reference/destruction/blast-family/)**
-+ **[Blast Family Mesh Data](/docs/user-guide/components/reference/destruction/blast-family-mesh-data/)**
 + **[Attachment](/docs/user-guide/components/reference/animation/attachment/)**
 + **[Actor](/docs/user-guide/components/reference/animation/actor/)**
 + **[Simple Motion](/docs/user-guide/components/reference/animation/simple-motion/)**
 + **Fly Camera Input**
 + **HDRi Skybox**
 + **Physical Sky**
+<!-- + **[Blast Family](/docs/user-guide/components/reference/destruction/blast-family/)** -->
+<!-- + **[Blast Family Mesh Data](/docs/user-guide/components/reference/destruction/blast-family-mesh-data/)** -->
 
 The following components are currently **incompatible** because they are not yet supported, but do not have fundamental reasons making compatibility difficult to add:
 + **Sequence**

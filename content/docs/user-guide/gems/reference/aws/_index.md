@@ -37,3 +37,4 @@ The following AWS Gems are available:
 | [AWS Core](aws-core/) | Provides the common mechanisms and essential configuration for all AWS feature Gems, including credential management, resource sharing, and handling of calls to AWS services. This Gem also includes platform extensions for the AWS SDK for C++. |
 | [AWS Client Auth](aws-client-auth/) | Provides OAuth sign-in authentication flows and fetches temporary AWS credentials using OpenID tokens. |
 | [AWS Metrics](aws-metrics/) | Reports and aggregates metrics data for real-time or batch analytics in AWS. |
+| [AWS GameLift](aws-gamelift/) | Provides a framework to extend the O3DE networking layer and Multiplayer Gem to work with Amazon GameLift.|

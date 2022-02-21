@@ -28,7 +28,7 @@ The following instructions assume that you have:
 
     ![O3DE welcome and options](/images/welcome-guide/installer-welcome.png)
 
-1. During installation, the installer downloads additional packages as needed. The process can take some time, depending on your internet connection speed. Note that additional windows might open and close during installation—for example, when installing the Python runtime in the engine's `python` directory.
+1. During installation, additional files will be downloaded and windows might open and close&mdash;for example, when installing the Python runtime in the engine's `python` directory.
 
     ![O3DE install progress](/images/welcome-guide/installer-install-progress.png)
 

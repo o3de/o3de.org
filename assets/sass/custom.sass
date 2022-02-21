@@ -914,17 +914,26 @@ $os-selector-mobile-height: 48px
   .intel-logo
     background-image: url('/img/logos/partnerLogos/intel.svg')
     width: 110px
-  
+
+  .microsoft-logo
+    background-image: url('/img/logos/partnerLogos/microsoft.svg')
+    margin-left: 32px
+    
+    @include media-breakpoint-down(sm)
+      margin: 0 16px
+
   .niantic-logo
     background-image: url('/img/logos/partnerLogos/niantic.svg')
-    width: 140px
+    width: 128px
+    margin: 0 -24px 0 0
+
+    @include media-breakpoint-down(sm)
+      margin: 0 16px
+      width: 160px
 
 
   .accelbyte-logo
     background-image: url('/img/logos/partnerLogos/accelbyte.svg')
-
-  .apocalypse-studios-logo
-    background-image: url('/img/logos/partnerLogos/apocalypse-studios.svg')
 
   .audiokinetic-logo
     background-image: url('/img/logos/partnerLogos/audiokinetic.svg')
@@ -938,9 +947,6 @@ $os-selector-mobile-height: 48px
 
   .futurewei-logo
     background-image: url('/img/logos/partnerLogos/futurewei.svg')
-
-  .gamepoch-logo
-    background-image: url('/img/logos/partnerLogos/gamepoch.svg')
     
   .genvid-logo
     background-image: url('/img/logos/partnerLogos/genvid.svg')
@@ -956,10 +962,6 @@ $os-selector-mobile-height: 48px
 
   .kythera-ai-logo
     background-image: url('/img/logos/partnerLogos/kythera-ai.svg')
-
-  .popcorn-fx-logo
-    background-image: url('/img/logos/partnerLogos/popcorn-fx.svg')
-    width: 128px
 
   .red-hat-logo
     background-image: url('/img/logos/partnerLogos/red-hat.svg')

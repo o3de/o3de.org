@@ -30,7 +30,7 @@ Review these specifications when creating a console log:
   - `<problem>`: Describe the problem.
   - `<ways to resolve the problem>`: Describe actionable steps the user can take to resolve or work around the problem.
 
-  For help on how to describe the problem and ways to resolve the problem, refer to [Guidelines for Writing Error Messages](/docs/tools-ui/patterns/error/guidelines.md).
+  For help on how to describe the problem and ways to resolve the problem, refer to [Guidelines for Writing Error Messages](../guidelines).
 
 - Color-code and prefix console messages depending on the following use cases.
 
