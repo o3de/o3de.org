@@ -14,7 +14,7 @@ O3DE uses [CMake](https://cmake.org/cmake/help/latest/), a build system that inc
 
 {{< important >}}
 All CTest tests are executed in the O3DE Automated Review (AR) pipeline to help prevent bad merges. New code submissions are required to have tests; Changes to existing code must not cause regressions. Make sure to run your tests locally before any code submission to the O3DE project.
-{{< important >}}
+{{< /important >}}
 
 The rest of this topic covers registering tests with CTest for testing O3DE code, and how to write these tests for various test runners.
 
