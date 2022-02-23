@@ -27,9 +27,9 @@ We encourage all vulnerabilities to be reported through the security@o3de.org ma
 If there is publicly disclosed security information, such as a report in the [National Vulnerability Database](https://nvd.nist.gov/) then GitHub issues can be used to communicate security vulnerabilities impacting O3DE.
 
 # Security Vulnerability Response
-When a security vulnerability is reported via security@o3de.org, a member of the SIG-Security response team should respond within 3 working days. Once the issue has been acknowledged, the SIG-Security response team will follow its [documented response process](https://github.com/o3de/sig-security) to ensure the reporter is updated and informed of current actions and next steps.
+When a security vulnerability is reported via security@o3de.org, a member of the SIG-Security response team should respond within 3 working days. Once the issue has been acknowledged, the SIG-Security response team will follow its [documented response process](https://github.com/o3de/sig-security/issues/14) to ensure the reporter is updated and informed of current actions and next steps.
 
-Any vulnerability information will treated as confidential and will be not shared outside of the security response process. Vulnerability information will not be publicly shared or disclosed without the consent of the reporter.
+Any vulnerability information will be treated as confidential and will be not shared outside the security response process. Vulnerability information will not be publicly shared or disclosed without the consent of the reporter.
 
 # Public Disclosure
-The public disclosure date of any security vulnerability will be negotiated between SIG-Security and the vulnerability reporter. The SIG aims to publicly disclose the issue as soon as possible, ideally once a mitigation as been identified. Disclosure time can range from almost immediately, for publicly known issues, to a few weeks depending on the complexity of issue and coordination required.
+The public disclosure date of any security vulnerability will be negotiated between SIG-Security and the vulnerability reporter. The SIG aims to publicly disclose the issue as soon as possible, ideally once a mitigation has been identified. Disclosure time can range from almost immediately, for publicly known issues, to a few weeks depending on the complexity of issue and coordination required.
