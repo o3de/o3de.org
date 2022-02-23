@@ -11,12 +11,12 @@ This page describes O3DE's Security and Disclosure Policies.
 O3DE values all contributions that help keep O3DE secure. [SIG-Security](https://github.com/o3de/sig-security) volunteers will thoroughly research and investigate all reported vulnerabilities. 
 
 # Report a Vulnerability
-We encourage all vulnerabilities to be reported through the security@o3de.org list. Vulnerability reports should follow the same information reporting format as [standard O3DE issues](https://github.com/o3de/o3de/blob/development/.github/ISSUE_TEMPLATE/bug_template.md) along with any security specific details.
+We encourage all vulnerabilities to be reported through the security@o3de.org mailing list. Vulnerability reports should follow the same information reporting format as [standard O3DE issues](https://github.com/o3de/o3de/blob/development/.github/ISSUE_TEMPLATE/bug_template.md) along with any security specific details.
 
 ## When Should I Report a Vulnerability?
 * You have discovered a potential security issue relating to O3DE. 
 * You have discovered or are aware of a security issue relating to an O3DE dependency that may impact O3DE.
-     * If the issues is in a product that O3DE depends upon, we strongly encourage you to engage with that project's vulnerability reporting mechanisms. 
+     * If the issues is in a product that O3DE depends upon, we strongly encourage you to also engage with that project's vulnerability reporting mechanisms. 
 
 ## When Should I NOT Report a Vulnerability?
 * You need help setting up or have issues relating to the use of security dependencies such as OpenSSL or TLS/DTLS 
@@ -24,7 +24,7 @@ We encourage all vulnerabilities to be reported through the security@o3de.org li
 * The issue is not related to security. Please report issue using the normal [O3DE issue reporting process](https://github.com/o3de/o3de/issues).
 
 ## Can I Report a Vulnerability via GitHub Issues?
-If there is public disclosed security information, such as a report in the [National Vulnerability Database](https://nvd.nist.gov/) then GitHub issues can be used to communicate security vulnerabilities impacting O3DE.
+If there is publicly disclosed security information, such as a report in the [National Vulnerability Database](https://nvd.nist.gov/) then GitHub issues can be used to communicate security vulnerabilities impacting O3DE.
 
 # Security Vulnerability Response
 When a security vulnerability is reported via security@o3de.org, a member of the SIG-Security response team should respond within 3 working days. Once the issue has been acknowledged, the SIG-Security response team will follow its [documented response process](https://github.com/o3de/sig-security) to ensure the reporter is updated and informed of current actions and next steps.
