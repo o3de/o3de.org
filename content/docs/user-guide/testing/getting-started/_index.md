@@ -161,7 +161,7 @@ set(FILES
 
 In `CMakeLists.txt`, register the module with CTest by using the helper function `ly_add_googletest()`.
 
-To verify everything is set up correctly, run the [CMake configure command](/docs/user-guide/build/configure-and-build/) from **CMake CLI** or **CMake GUI**. This registers everything you just added, and emits errors if anything is misconfigured.
+To verify everything is set up correctly, run the CMake configure command from **CMake CLI** or **CMake GUI** (refer to the [Configure and Build](/docs/user-guide/build/configure-and-build/) section). This registers everything you just added, and emits errors if anything is misconfigured.
 
 #### Step 3: Write new tests
 
