@@ -10,7 +10,7 @@ This guide introduces the automated testing tools in **Open 3D Engine (O3DE)** a
 
 ## Overview
 
-O3DE uses [CMake](https://cmake.org/cmake/help/latest/), a build system that includes [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html). CTest is a generic test runner tool which coordinates executing and reporting on tests, used by O3DE to start all automated testing. O3DE projects can also register their own tests through CTest, to test their unique game code or engine extensions. By running CTest locally, developers can verify code health before committing changes.
+O3DE uses [CMake](https://cmake.org/cmake/help/latest/), a build system that includes [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html). CTest is a generic test runner tool which coordinates executing and reporting on tests, used by O3DE to start all automated testing. O3DE projects can also register their own tests through CTest to test their unique game code or engine extensions. By running CTest locally, developers can verify code health before committing changes.
 
 {{< important >}}
 All CTest tests are executed in the O3DE Automated Review (AR) pipeline to help prevent bad merges. New code submissions are required to have tests; Changes to existing code must not cause regressions. Make sure to run your tests locally before any code submission to the O3DE project.
@@ -24,7 +24,7 @@ The rest of this topic covers registering tests with CTest for testing O3DE code
 
 CTest is similar to other test frameworks like GoogleTest, PyTest, JUnit, or NUnit; though it uses a higher-level generic interface. CTest registers each test as a string of command-line arguments, and reports on whether invoking those arguments succeeded (returned `0`) without hanging. CTest can also coordinate running tests in parallel processes. Unlike other test runners, CTest is programming language agnostic by interfacing with the OS shell. However this means a notable feature is absent from CTest: other test frameworks typically provide a lower-level interface which directly invokes functions inside a specific programming language. To provide this function-level execution, O3DE uses CTest to invoke lower-level test runners.
 
-O3DE provides wrapper code to help register tests for frameworks such as GoogleTest and PyTest into CTest. Along with the provided test-tools, these wrappers enable writing tests which can run on any operating system. XML files are generated to track the low-level results not reported to CTest, and artifacts are saved such as log output and crash dumps.
+O3DE provides wrapper code to help register tests for frameworks such as GoogleTest and PyTest into CTest. Along with the provided test-tools, these wrappers enable writing tests that can run on any operating system supported by the underlying frameworks. XML files are generated to track the low-level results not reported to CTest, and artifacts are saved such as log output and crash dumps.
 
 ![CTest calls other test runners](/images/user-guide/testing/getting-started/ctest_to_runners.png)
 
@@ -32,11 +32,11 @@ In short, all tests in O3DE use CTest as a high-level test coordinator. When exe
 
 ### Starting CTest
 
-CTest expects its working directory to be a CMake build directory, so be sure to first navigate a terminal to this directory. Then use `-C` to select a build configuration one you have already built locally:
+CTest expects its working directory to be a CMake build directory, so be sure to first navigate to this directory in a terminal. Then, use `-C` to select a build configuration, one that you've already built locally:
 
 * **Windows**:
     ```shell
-    cd <local_path_to>\\o3de\\build\\<build_folder>
+    cd <local_path_to>\o3de\build\<build_folder>
     ctest -C <build_configuration>
     ```
 
@@ -73,19 +73,18 @@ For more information on CTest usage, refer to its [online documentation](https:/
 
 CTest registers entire modules of test code, which typically contain multiple individual tests of the same feature. To add new tests, complete a prerequisite and three major steps:
 
-* **Prerequisite**: Add a build target for the production code which tests will target.
-
-1. Add a build target for tests which need to be compiled (not required for Python).
-2. Register your test module in a `CMakeLists.txt`.
-3. Add individual test functions into the test module
+1. **Prerequisite**: Add a build target for the production code that the tests will target.
+1. Add a build target for tests that need to be compiled (not required for Python).
+1. Register your test module in a `CMakeLists.txt`.
+1. Add individual test functions into the test module.
 
 Specific steps vary for different types of tests, discussed in later sections.
 
 ## GoogleTest
 
-For many tests, it's easier to write in the same language as the production code which the test targets. Since the majority of O3DE uses C++, the majority of its tests also use C++. O3DE's C++ tests are typically small [unit level](https://softwaretestingfundamentals.com/unit-testing/) tests of specific low-level functionality, which run extremely fast. O3DE uses [GoogleTest](https://github.com/google/googletest/blob/main/docs/index.md) along with utilities named [AzTest](/docs/user-guide/testing/aztest/aztest/). Part of AzTest is an execution wrapper named `AzTestRunner`. CTest calls `AzTestRunner` to load the C++ test library and the target library, and then execute any loaded GoogleTest tests.
+For many tests, it's easier to write in the same language as the production code that the test targets. Since the majority of O3DE uses C++, the majority of its tests also use C++. O3DE's C++ tests are typically small [unit level](https://softwaretestingfundamentals.com/unit-testing/) tests of specific low-level functionality, which run extremely fast. O3DE uses [GoogleTest](https://github.com/google/googletest/blob/main/docs/index.md) along with utilities named [AzTest](/docs/user-guide/testing/aztest/aztest/). Part of AzTest is an execution wrapper named `AzTestRunner`. CTest calls `AzTestRunner` to load the C++ test library and the target library, and then execute any loaded GoogleTest tests.
 
-C++ production code for an O3DE feature gets built into a library, which is later loaded into an application. When writing C++ tests for this code, the test-code should similarly be built into its own separate library. This test-library will then declare a dependency on loading the production library it tests. Building separate test-only libraries has the advantage of keeping production binaries lean and easy to ship, as well as free of extraneous ```#if defined``` blocks for test-only logic. This also ensures tests target the exact same interfaces which ship with the product.
+C++ production code for an O3DE feature gets built into a library, which is later loaded into an application. When writing C++ tests for this code, the test-code should similarly be built into its own separate library. This test-library then declares a dependency on loading the production library it tests. Building separate test-only libraries has the advantage of keeping production binaries lean and easy to ship, as well as free of extraneous ```#if defined``` blocks for test-only logic. This also ensures that tests target the exact same interfaces that ship with the product.
 
 ### Registering new C++ tests
 
@@ -111,8 +110,8 @@ ly_add_target(
 )
 
 # New test module registration from Step 1
-# this configures CMake to also build a library called MyModuleName.Tests.so (.dll on Windows)
-# the rest of CMake will refer to this freshly created module by its NAME ("MyModuleName.Tests")
+# This configures CMake to also build a library called `MyModuleName.Tests.so` (.dll on Windows)
+# The rest of CMake refers to this new module by its NAME ("MyModuleName.Tests")
 if(PAL_TRAIT_BUILD_SUPPORTS_TESTS)  # only create these test modules if the target platform supports testing
 
     ly_add_target(
@@ -143,13 +142,13 @@ endif()
 
 #### Prerequisite: Add a production build target
 
-Before configuring tests, you must first define the library that you want to test. If your tests target an existing feature, then this step is already completed and you simply need to find the correct file path. Target libraries are defined in a `CMakeLists.txt`, which typically lives in the same directory as the code or in a parent directory. For more information on configuring `CMakeLists.txt` files, please refer to [Getting Started with the CMake Build System](/docs/user-guide/build/). Note that you only need to define the production library that the tests target, not complete every feature in the production library. You can start configuring and writing tests before you finish working on the production code.
+Before configuring tests, you must first define the library that you want to test. If your tests target an existing feature, then this step is already completed and you simply need to find the correct file path. Target libraries are defined in a `CMakeLists.txt`, which typically lives in the same directory as the code or in a parent directory. For more information on configuring `CMakeLists.txt` files, please refer to the [Build section](/docs/user-guide/build/). Note that you only need to define the production library that the tests target, not every feature in the production library. You can configure and write tests before you finish the production code.
 
 #### Step 1: Add a test build target
 
-Similar to the production build target, the test target defines a library in a `CMakeLists.txt` configuration file. Start by finding the `CMakeLists.txt` which you created in the prerequisite step.  It should exist at a path similar to `o3de/.../<MyModule>/CMakeLists.txt`.
+Similar to the production build target, the test target defines a library in a `CMakeLists.txt` configuration file. Start by finding the `CMakeLists.txt` that you created in the prerequisite step.  It should exist at a path similar to `o3de/.../<MyModule>/CMakeLists.txt`.
 
-Modify the `CMakeLists.txt` file to define your new test module with `ly_add_target()`. Similar to the production build target, it's easiest to create another file that lists the C++ files used to compile the test library. The example above uses `dev/.../<MyModule>/mymodule_test_files.cmake`, which has content similar to the following:
+Modify the `CMakeLists.txt` file to define your new test module with `ly_add_target()`. Similar to the production build target, it's easiest to create another file that lists the C++ files used to compile the test library. The example above uses `o3de/.../<MyModule>/mymodule_test_files.cmake`, which has content similar to the following:
 
 ```
 set(FILES
@@ -168,20 +167,21 @@ To verify everything is set up correctly, run the [CMake configure command](/doc
 
 Now that you have configured CMake to create a test library and registered it with CTest, you are ready to write new tests. To simplify your module structure, create new test files inside `o3de/.../<MyModule>/tests/`.
 
-Tests are written using standard [GoogleTest](https://github.com/google/googletest/blob/main/docs/index.md) syntax, which helps you write small functions to test your code. To pull in everything from GoogleTest plus a few convienient tools, add the following statement to your file:
+Tests are written using standard [GoogleTest](https://github.com/google/googletest/blob/main/docs/index.md) syntax, which helps you write small functions to test your code. To pull in everything from GoogleTest plus a few convienient tools, add the following statement to your C++ test file:
 
 ```cpp
 #include <AzTest/AzTest.h>
 ```
 
-To keep test functions legible at a glance, we recommend using the [Osherove Naming Convention](https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html) of `UnitOfWork_StateUnderTest_ExpectedBehavior`. This can be especially helpful when reading a report with many individual test case failures. Note that while Google recommends [not using any underscores](http://google.github.io/googletest/faq.html#why-should-test-suite-names-and-test-names-not-contain-underscore), tests will function normally as long as test and fixture names never start or end with underscore.
+To keep test functions legible at a glance, we recommend using the [Osherove Naming Convention](https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html) of `UnitOfWork_StateUnderTest_ExpectedBehavior`. This can be especially helpful when reading a report with many individual test case failures. Note that while Google recommends [not using any underscores](http://google.github.io/googletest/faq.html#why-should-test-suite-names-and-test-names-not-contain-underscore), tests will function normally as long as test and fixture names never start or end with an underscore (`_`).
 
 A short example of C++ test structure:
 
 ```cpp
 TEST_F(Matrix4x4Tests, MatrixMultiply_InverseMatrix_ReturnIdentityMatrix)
 {
-    // (function under test would be called here)
+    // (Call the functions under test here.)
+    
     ASSERT_TRUE(someErrorState);
     EXPECT_TRUE(someResult);
     EXPECT_FALSE(secondaryProperty);
@@ -192,7 +192,7 @@ For more information on writing tests in C++, see [Using AzTest](/docs/user-guid
 
 ## GoogleBenchmark
 
-For performance benchmarks of small pieces of C++ code, O3DE uses [GoogleBenchmark](https://github.com/google/benchmark/blob/main/docs/index.md). GoogleBenchmark is similar to GoogleTest, but the main difference between a test and a benchmark is the definition of failure. In most tests a pass/fail status is directly evaluated to a boolean state, creating an objective report of success and failure. Instead, benchmarks create a subjective performance metric. These metrics are most valuable when periodically recorded, to help detect trends over time and across code changes. The only objective failure during a benchmark occurs when the code fails to run or crashes.
+For performance benchmarks of small pieces of C++ code, O3DE uses [GoogleBenchmark](https://github.com/google/benchmark/blob/main/docs/index.md). GoogleBenchmark is similar to GoogleTest, but the main difference between a test and a benchmark is the definition of _failure_. In most tests a pass/fail status is directly evaluated to a boolean state, creating an objective report of success and failure. Instead, benchmarks create a subjective performance metric. These metrics are most valuable when they are periodically recorded to help detect trends over time and across code changes. The only objective failure during a benchmark occurs when the code fails to run or crashes.
 
 To configure a GoogleBenchmark library, use the [steps above for GoogleTest libraries](#googletest), with the following exceptions:
 
@@ -206,17 +206,17 @@ To configure a GoogleBenchmark library, use the [steps above for GoogleTest libr
 
 ## PyTest
 
-Some tests are easier to write in a scripting language, and for these tests O3DE prefers Python with the [PyTest](https://docs.pytest.org/) library. The scope of these tests are often at the [integration level](https://softwaretestingfundamentals.com/integration-testing/) or higher. These tests help verify system correctness similar to how an end-user will experience the software. However despite that positive aspect, wide scope tests are typically slow and provide less specific failure information. The number of these tests must be limited. Whenever possible verify functionality with fast unit-scope tests, and write only a few broader integration or system-wide tests. Unit tests should be written in PyTest only when the library under test is written in Python. For fast unit-scope tests of C++ code, use GoogleTest instead of PyTest.
+Some tests are easier to write in a scripting language, and for these tests O3DE prefers Python with the [PyTest](https://docs.pytest.org/) library. The scope of these tests are often at the [integration level](https://softwaretestingfundamentals.com/integration-testing/) or higher. These tests help verify system correctness, similar to how an end-user experiences the software. Despite that positive aspect, wide scope tests are typically slow and provide less specific failure information. The number of these tests must be limited. Whenever possible verify functionality with fast unit-scope tests, and write only a few broader integration or system-wide tests. Unit tests should be written in PyTest only when the library under test is written in Python. For fast unit-scope tests of C++ code, use GoogleTest instead of PyTest.
 
 While interpreted languages like Python can have low performance, tests should not perform heavy computation in Python code. Instead, tests should coordinate workflows by signalling events and then verifying a response. Leave heavy operations for the code targeted by the test, and perform simple checks in the Python test-code.
 
-### Multiple Python Instances
+### Multiple Python instances
 
-Tests targeting O3DE can create multiple separate Python interpreter instances during execution, which each load different scripts. Most commonly, there are two instances: the _external interpreter_ and the _Editor interpreter_. The remainder of this section will help determine which environment your test should run in, and how to execute it there.
+During execution, tests targeting O3DE can create multiple separate Python interpreter instances, which each load different scripts. Most commonly, there are two instances: the _external interpreter_ and the _Editor interpreter_. The remainder of this section helps determine which environment your test should run in, and how to execute it there.
 
 #### Tests in the external interpreter
 
-The external interpreter runs outside of any active O3DE application. This is the same interpreter that launches when you run `o3de/python/python.sh` or `o3de\python\python.cmd`, and is best used for tests which involve the following:
+The external interpreter runs outside of any active O3DE application. This is the same interpreter that launches when you run `python/python.sh` or `python\python.cmd`, and is best used for tests that involve the following:
 
 * Generic tests that launch applications and send external signals, often with [LyTestTools](/docs/user-guide/testing/lytesttools/).
 * Monitoring application crashes.
@@ -225,12 +225,12 @@ To target PyTest in the external interpreter, by default your tests filenames sh
 
 #### Tests in the Editor interpreter
 
-The O3DE Editor internally manages a Python Interpreter, and exposes Editor-specific functionality through a Python bindings library. Although this environment isn't equivalent to launching `o3de/python/python.*`, it uses the same version of the Python interpreter. The Editor interpreter is best used for tests which involve the following:
+The **O3DE Editor** internally manages a Python Interpreter and exposes Editor-specific functionality through a Python bindings library. Although this environment isn't equivalent to launching `python/python.*`, it uses the same version of the Python interpreter. The Editor interpreter is best used for tests that involve the following:
 
 * Target specific functionality within the Editor, using [EditorPythonBindings and EditorTest](/docs/user-guide/testing/parallel-pattern/).
-* Rely on external crash-handling (editor crash causes a test script crash).
+* Rely on external crash-handling (an Editor crash will cause a test script crash).
 
-To integrate with the Editor interpreter, create a test which uses `EditorPythonBindings`. These tests **must not** be in a file starting with `test_` or `tests_`, to avoid accidentally registering as failing tests.
+To integrate with the Editor interpreter, create a test that uses `EditorPythonBindings`. These tests **must not** be in a file starting with `test_` or `tests_`, to avoid accidentally registering as failing tests.
 
 {{< note >}}
 PyTest is not used within the Editor interpreter, and as a consequence PyTest functionality is unavailable to tests which run in the Editor interpreter. Avoid dependencies on PyTest fixtures when designing these tests.
@@ -240,7 +240,7 @@ EditorTest still uses PyTest to manage tests, and additionally handles external 
 
 ### Registering a new Python test
 
-Registering a Python-based test is simpler than registering a C++ test. However, it still requires that you define the C++ library that you want to test, which is likely already completed before designing integration tests. The steps below assume the production library is already defined. You can read more about defining production code in [Getting Started with the CMake Build System](/docs/user-guide/build/).
+Registering a Python-based test is simpler than registering a C++ test. However, it still requires that you define the C++ library that you want to test, which you've likely already completed before designing integration tests. The steps below assume the production library is already defined. You can read more about defining production code in the [Build](/docs/user-guide/build/) section.
 
 #### Step 1: Register a PyTest target
 
@@ -248,7 +248,7 @@ Find the `CMakeLists.txt` that defines the system you are testing. The file shou
 
 * A test for a sub-module should exist at a child directory of its module.
 * A broad test integrating across multiple features should exist in a parent directory of the features.
-* A test which relies on code or assets in a game project must exist in that game project.
+* A test that relies on code or assets in a game project must exist in that game project.
   * This avoids the case where disabling the project breaks the still-registered tests.
 
 When you find the right `CMakeLists.txt` to register the test, add a line similar to the following:
@@ -269,9 +269,9 @@ To verify everything is set up correctly, run the [CMake configure command](/doc
 
 #### Step 2: Write new Python tests
 
-These tests use [Python 3](https://docs.python.org/3/) code along with [PyTest](https://docs.pytest.org/). Depending on the feature your test is focuses on, the test may include one of two automation libraries provided with O3DE:
+Python-based tests use [Python 3](https://docs.python.org/3/) code along with [PyTest](https://docs.pytest.org/). Depending on the feature your test is focused on, the test may include one of two automation libraries provided with O3DE:
 
 * [EditorPythonBindings](/docs/user-guide/testing/parallel-pattern/) for internal tests of the O3DE Editor functionality.
   * These tests always require the `TEST_SERIAL` CTest flag.
-* [LyTestTools](/docs/user-guide/testing/lytesttools/) module for external tests at the Operating System level.
+* [LyTestTools](/docs/user-guide/testing/lytesttools/) module for external tests at the operating system level.
   * These tests often use the `TEST_SERIAL` flag, unless they create no side-effects and disable heavy secondary features such as rendering.
