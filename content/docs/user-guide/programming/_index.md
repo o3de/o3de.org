@@ -73,4 +73,4 @@ Depending on the part of the engine that you want to develop, there are differen
 
 | Topic | Description |
 | --- | --- |
-| [O3DE C++ Coding Standards](https://github.com/o3de/sig-core/blob/main/governance/Coding-Standards-and-Style-Guide.md) | If you're programming features to contibute to [o3de repository](https://github.com/o3de/o3de), follow the coding standards used throughout O3DE's C++ codebase. |
+| [O3DE C++ Coding Standards](https://github.com/o3de/sig-core/blob/main/governance/Coding-Standards-and-Style-Guide.md) | If you're programming features to contribute to [o3de repository](https://{{< links/o3de-source >}}), follow the coding standards used throughout O3DE's C++ codebase. |
