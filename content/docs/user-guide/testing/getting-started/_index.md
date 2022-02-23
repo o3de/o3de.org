@@ -63,7 +63,7 @@ CTest can also run a subset of labeled test suites with the `-L` argument. These
     ctest -C profile -L "(SUITE_smoke|SUITE_main)"
     ```
 
-The Smoke and Main suites execute against pull requests in the AutomatedReview pipeline, and both are recommended for local verification. These suites are required to execute relatively fast, and must not intermittently fail.
+It's recommended that you verify your tests with the Main and Smoke suite on your local machine. These tests will be executed on your pull request (PR), as part of the Automated Review pipeline in the `o3de` repository's PR workflow. Both of these suites must execute relatively fast and must not intermittently fail, and are an easy way to prove your change did not break other features. 
 
 After running CTest, results save to `.../<build_folder>/Testing/`.  If you prefer to see full output of failures directly in your terminal, add the flag `--output-on-failure`.
 
@@ -233,9 +233,9 @@ The **O3DE Editor** internally manages a Python Interpreter and exposes Editor-s
 To integrate with the Editor interpreter, create a test that uses `EditorPythonBindings`. These tests **must not** be in a file starting with `test_` or `tests_`, to avoid accidentally registering as failing tests.
 
 {{< note >}}
-PyTest is not used within the Editor interpreter, and as a consequence PyTest functionality is unavailable to tests which run in the Editor interpreter. Avoid dependencies on PyTest fixtures when designing these tests.
+PyTest is not used within the Editor interpreter, and as a consequence PyTest functionality is unavailable to tests that run in the Editor interpreter. Avoid dependencies on PyTest fixtures when designing these tests.
 
-EditorTest still uses PyTest to manage tests, and additionally handles external crash monitoring, batching, and parallelism. If this tool does not meet your needs, please reach out with a [feature request](https://github.com/o3de/o3de.org/issues/new/choose) or start a discussion in [Discord](https://discord.gg/p3padwr58u) channel SIG-Testing!
+EditorTest still uses PyTest to manage tests, and additionally handles external crash monitoring, batching, and parallelism. If this tool does not meet your needs, please reach out with a [feature request](https://github.com/o3de/o3de.org/issues/new/choose) or start a discussion with the Testing Special Interest Group in the [Discord](https://discord.gg/p3padwr58u) channel sig-testing!
 {{< /note >}}
 
 ### Registering a new Python test
@@ -265,7 +265,7 @@ ly_add_pytest(
 )
 ```
 
-To verify everything is set up correctly, run the [CMake configure command](/docs/user-guide/build/configure-and-build/) from the CMake CLI or CMake GUI. This registers everything you just added and emits errors if anything was misconfigured.
+To verify everything is set up correctly, run the CMake configure command from **CMake CLI** or **CMake GUI** (refer to the [Configure and Build](/docs/user-guide/build/configure-and-build/) section). This registers everything you just added, and emits errors if anything is misconfigured.
 
 #### Step 2: Write new Python tests
 
