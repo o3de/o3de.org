@@ -24,7 +24,7 @@ The rest of this topic covers registering tests with CTest for testing O3DE code
 
 CTest is similar to other test frameworks like GoogleTest, PyTest, JUnit, or NUnit; though it uses a higher-level generic interface. CTest registers each test as a string of command-line arguments, and reports on whether invoking those arguments succeeded (returned `0`) without hanging. CTest can also coordinate running tests in parallel processes. Unlike other test runners, CTest is programming language agnostic by interfacing with the OS shell. However this means a notable feature is absent from CTest: other test frameworks typically provide a lower-level interface which directly invokes functions inside a specific programming language. To provide this function-level execution, O3DE uses CTest to invoke lower-level test runners.
 
-O3DE provides wrapper code to help register tests for frameworks such as GoogleTest and PyTest into CTest. Along with the provided test-tools, these wrappers enable writing tests that can run on any operating system supported by the underlying frameworks. XML files are generated to track the low-level results not reported to CTest, and artifacts are saved such as log output and crash dumps.
+O3DE provides wrapper code to help register tests for frameworks such as GoogleTest and PyTest into CTest. Along with the provided test-tools libraries, these wrappers enable writing tests that can run on any operating system supported by the underlying frameworks. XML files are generated to track the low-level results not reported to CTest, and artifacts are saved such as log output and crash dumps.
 
 ![CTest calls other test runners](/images/user-guide/testing/getting-started/ctest_to_runners.png)
 
@@ -32,10 +32,10 @@ In short, all tests in O3DE use CTest as a high-level test coordinator. When exe
 
 ### Starting CTest
 
-CTest expects its working directory to be a CMake build directory, so be sure to first navigate to this directory in a terminal. Then, use `-C` to select a build configuration, one that you've already built locally:
+CTest expects its working directory to be a CMake build directory, so be sure to first navigate to this directory in a terminal. This build directory should be the same directory configured by CMake. Then, use `-C` to select a build configuration that you've already built:
 
 * **Windows**:
-    ```shell
+    ```cmd
     cd <local_path_to>\o3de\build\<build_folder>
     ctest -C <build_configuration>
     ```
@@ -53,17 +53,18 @@ Without a filter the command will run every registered test, and likely result i
 CTest can also run a subset of labeled test suites with the `-L` argument. These test suites should be contained in parenthesis (`(..)`) and have their names separated with a `|` character. The following examples demonstrate this syntax for running the Main and Smoke suites for a `profile` build on Windows or Linux:
 
 * **Windows**:
-    ```shell
-    cd C:\o3de\build\vs_2019
+    ```cmd
+    cd C:\github\o3de\build\vs_2019
     ctest -C profile -L "(SUITE_smoke|SUITE_main)"
     ```
+
 * **Linux**:
     ```shell
     cd user/github/o3de/build/linux
     ctest -C profile -L "(SUITE_smoke|SUITE_main)"
     ```
 
-It's recommended that you verify your tests with the Main and Smoke suite on your local machine. These tests will be executed on your pull request (PR), as part of the Automated Review pipeline in the `o3de` repository's PR workflow. Both of these suites must execute relatively fast and must not intermittently fail, and are an easy way to prove your change did not break other features. 
+It's recommended that you verify your tests with the Main and Smoke suite on your local machine. These tests will be executed on any pull request (PR) opened against the `o3de` repository, as part of the Automated Review pipeline in the PR workflow. Both of these suites must execute relatively fast and must not intermittently fail, and are an easy way to prove your change did not break other features.
 
 After running CTest, results save to `.../<build_folder>/Testing/`.  If you prefer to see full output of failures directly in your terminal, add the flag `--output-on-failure`.
 
@@ -71,7 +72,7 @@ For more information on CTest usage, refer to its [online documentation](https:/
 
 ### Adding test modules to CTest
 
-CTest registers entire modules of test code, which typically contain multiple individual tests of the same feature. To add new tests, complete a prerequisite and three major steps:
+CTest registers entire modules of test code, which typically contain multiple individual tests of the same feature. To add new tests, complete one prerequisite and three steps:
 
 1. **Prerequisite**: Add a build target for the production code that the tests will target.
 1. Add a build target for tests that need to be compiled (not required for Python).
@@ -148,7 +149,7 @@ Before configuring tests, you must first define the library that you want to tes
 
 Similar to the production build target, the test target defines a library in a `CMakeLists.txt` configuration file. Start by finding the `CMakeLists.txt` that you created in the prerequisite step.  It should exist at a path similar to `o3de/.../<MyModule>/CMakeLists.txt`.
 
-Modify the `CMakeLists.txt` file to define your new test module with `ly_add_target()`. Similar to the production build target, it's easiest to create another `.cmake` file that lists the C++ files used to compile the test library. 
+Modify the `CMakeLists.txt` file to define your new test module with `ly_add_target()`. Similar to the production build target, it's easiest to create another `.cmake` file that lists the C++ files used to compile the test library.
 
 The example above uses `o3de/.../<MyModule>/mymodule_test_files.cmake`, which has content similar to the following:
 
@@ -163,7 +164,11 @@ set(FILES
 
 In `CMakeLists.txt`, register the module with CTest by using the helper function `ly_add_googletest()`.
 
-To verify everything is set up correctly, run the CMake configure command from **CMake CLI** or **CMake GUI** (refer to the [Configure and Build](/docs/user-guide/build/configure-and-build/) section). This registers everything you just added, and emits errors if anything is misconfigured.
+{{< important >}}
+GoogleTest modules should avoid using the `TEST_SERIAL` flag, which prevents tests from efficiently executing in parallel with other test modules. If the tests have dependencies which prevent them from executing in parallel, please start a discussion with the Testing Special Interest Group in the [Discord](https://discord.gg/p3padwr58u) channel sig-testing!
+{{< /important >}}
+
+To verify everything is set up correctly, run the CMake configure command from **CMake CLI** or **CMake GUI** (described in the [Configure and Build](/docs/user-guide/build/configure-and-build/) section). This registers everything you just added, and emits errors if anything is misconfigured.
 
 #### Step 3: Write new tests
 
@@ -175,11 +180,13 @@ Tests are written using standard [GoogleTest](https://github.com/google/googlete
 #include <AzTest/AzTest.h>
 ```
 
-To keep test functions legible at a glance, we recommend using the [Osherove Naming Convention](https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html) of `UnitOfWork_StateUnderTest_ExpectedBehavior`. This can be especially helpful when reading a report with many individual test case failures. Note that while Google recommends [not using any underscores](http://google.github.io/googletest/faq.html#why-should-test-suite-names-and-test-names-not-contain-underscore), tests will function normally as long as test and fixture names never start or end with an underscore (`_`).
+To keep test functions legible at a glance, we recommend using the [Osherove Naming Convention](https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html) of `UnitOfWork_StateUnderTest_ExpectedBehavior`. This helps when reading a report that includes many individual test case failures. One way to think of this pattern is to summarize the test into `WhatIsExecuted_UniqueSetupStep_MostImportantVerification` so a test failure can be understood based on the name, without always needing to investigate the code inside the test. If you are struggling to summarize the test, this may indicate the test is too complex. Try breaking breaking complex tests into multiple smaller tests. Note that while GoogleTest documentation recommends [not using any underscores](http://google.github.io/googletest/faq.html#why-should-test-suite-names-and-test-names-not-contain-underscore) in test names, tests will function normally as long as test and fixture names never start or end with an underscore (`_`).
 
 A short example of C++ test structure:
 
 ```cpp
+// The first parameter is a test fixture, which provides shared setup to multiple tests
+// The second parameter is the test name
 TEST_F(Matrix4x4Tests, MatrixMultiply_InverseMatrix_ReturnIdentityMatrix)
 {
     // (Call the functions under test here.)
@@ -267,7 +274,7 @@ ly_add_pytest(
 )
 ```
 
-To verify everything is set up correctly, run the CMake configure command from **CMake CLI** or **CMake GUI** (refer to the [Configure and Build](/docs/user-guide/build/configure-and-build/) section). This registers everything you just added, and emits errors if anything is misconfigured.
+To verify everything is set up correctly, run the CMake configure command from **CMake CLI** or **CMake GUI** (described in the [Configure and Build](/docs/user-guide/build/configure-and-build/) section). This registers everything you just added, and emits errors if anything is misconfigured.
 
 #### Step 2: Write new Python tests
 
