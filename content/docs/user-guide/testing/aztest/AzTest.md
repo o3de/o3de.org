@@ -84,4 +84,4 @@ AZ_UNIT_TEST_HOOK(new SharedTestEnvironment, new ModuleSpecificTestEnvironment)
 
 1. [GoogleTest Documentation](https://github.com/google/googletest)
 1. [Official CTest Documentation](https://cmake.org/cmake/help/latest/manual/ctest.1.html)
-1. [O3DE Test Onboarding](TODO)
+1. [O3DE Test Onboarding](/docs/user-guide/testing/getting-started)
