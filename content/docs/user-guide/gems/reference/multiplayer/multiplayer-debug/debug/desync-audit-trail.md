@@ -6,6 +6,8 @@ linkTitle: Desync Audit Trail
 
 The Multiplayer Audit Trail is a tool available with the Multiplayer Gem in Debug environments. It details all network desyncs that occur and categorizes network activity leading up to a desync to attempt to root cause the desync itself.
 
+![Audit Trail Overlay](/images/user-guide/gems/reference/multiplayer/audit_trail_default.png)
+
 The Audit Trail will capture a desync and the Input ID and Host Frame it occurred on. For each desync, it will list under it all captured activity leading up to the desync up to a CVAR defined limit.
 
 ## Configuration
@@ -24,6 +26,11 @@ Desyncs are the primary event captured by the Audit Trail. Consequently the Audi
 ### Input
 
 Network inputs detail actions that create delta in the networked state of the simulation. The audit trail lists all network inputs that were sent. In addition it also lists non default values for each member per network input. This allows the correlation of inputs to desynchronized data. This can help clarify what actions may have led to a desync.
+
+![Audit Trail Inputs](/images/user-guide/gems/reference/multiplayer/audit_trail_input.png)
+
+Here we can see Inputs that occurred on the Player entity relative to the desync including those that are processed locally. For the Host Frames in question, the actions were exclusively the Player moving via NetworkPlayerMovementComponent.
+
 ### Custom Event
 
 Custom Events are custom auditing events the developer can specify via macros.
@@ -42,3 +49,5 @@ Custom Events allow the developer to specify additional information they'd like 
     * For a variable of type T, T
 * A NetworkInput for commands starting with AZ_MPAUDIT_INPUT
     * This allows the binding of the macro usage to a specific HostFrame and Input ID for chronological categorization
+
+![Audit Trail Custom Events](/images/user-guide/gems/reference/multiplayer/audit_trail_event.png)
