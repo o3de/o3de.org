@@ -4,7 +4,9 @@ description: Analyze and Debug Multiplayer Desyncs
 linkTitle: Desync Audit Trail
 ---
 
-The Multiplayer Audit Trail is a tool available with the Multiplayer Gem in Debug environments. It details all network desyncs that occur and categorizes network activity leading up to a desync to attempt to root cause the desync itself.
+When the Client and Server disagree on the value of a networked variable, a desync occurs. Desyncs can be extremely difficult to debug which is where the Multiplayer Desync Audit Trail can help.
+
+The Multiplayer Desync Audit Trail is a tool available with the Multiplayer Gem in Debug environments. It details all network desyncs that occur and categorizes network activity leading up to a desync to attempt to root cause the desync itself.
 
 ![Audit Trail Overlay](/images/user-guide/gems/reference/multiplayer/audit_trail_default.png)
 
