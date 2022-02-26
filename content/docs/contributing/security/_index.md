@@ -6,12 +6,12 @@ weight: 100
 ---
 
 ## Open 3D Engine: Security
-This page describes O3DE's Security and Disclosure Policies. 
+This page describes the Security and Disclosure policies for **Open 3D Engine (O3DE)**.
 
 O3DE values all contributions that help keep O3DE secure. [SIG-Security](https://github.com/o3de/sig-security) volunteers will thoroughly research and investigate all reported vulnerabilities. 
 
 # Report a Vulnerability
-We encourage all vulnerabilities to be reported through the security@o3de.org mailing list. Vulnerability reports should follow the same information reporting format as [standard O3DE issues](https://github.com/o3de/o3de/blob/development/.github/ISSUE_TEMPLATE/bug_template.md) along with any security specific details.
+We encourage all vulnerabilities to be reported through the [security@o3de.org](mailto:security@o3de.org) mailing list. Vulnerability reports should follow the same information reporting format as [standard O3DE issues](https://github.com/o3de/o3de/blob/development/.github/ISSUE_TEMPLATE/bug_template.md) along with any security specific details.
 
 ## When Should I Report a Vulnerability?
 * You have discovered a potential security issue relating to O3DE. 
@@ -27,7 +27,7 @@ We encourage all vulnerabilities to be reported through the security@o3de.org ma
 If there is publicly disclosed security information, such as a report in the [National Vulnerability Database](https://nvd.nist.gov/) then GitHub issues can be used to communicate security vulnerabilities impacting O3DE.
 
 # Security Vulnerability Response
-When a security vulnerability is reported via security@o3de.org, a member of the SIG-Security response team should respond within 3 working days. Once the issue has been acknowledged, the SIG-Security response team will follow its [documented response process](https://github.com/o3de/sig-security/issues/14) to ensure the reporter is updated and informed of current actions and next steps.
+When a security vulnerability is reported via the [security mailing list](mailto:security@o3de.org), a member of the SIG-Security response team should respond within 3 working days. Once the issue has been acknowledged, the SIG-Security response team will follow its [documented response process](https://github.com/o3de/sig-security/issues/14) to ensure the reporter is updated and informed of current actions and next steps.
 
 Any vulnerability information will be treated as confidential and will be not shared outside the security response process. Vulnerability information will not be publicly shared or disclosed without the consent of the reporter.
 
