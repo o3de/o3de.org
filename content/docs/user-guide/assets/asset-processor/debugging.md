@@ -111,9 +111,9 @@ Use the procedure below to debug in either of the following scenarios:
 
 The next time that you modify your source file, `AssetBuilder.exe` builds that asset.
 
-{{< note >}}
+{{< tip >}}
 You can spawn multiple instances of `AssetBuilder.exe` and attach them to Visual Studio.
-{{< /note >}}
+{{< /tip >}}
 
 ## Clearing the Cache
 
