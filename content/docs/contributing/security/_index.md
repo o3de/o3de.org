@@ -19,7 +19,7 @@ We encourage all vulnerabilities to be reported through the [security@o3de.org](
      * If the issues is in a product that O3DE depends upon, we strongly encourage you to also engage with that project's vulnerability reporting mechanisms. 
 
 ## When Should I NOT Report a Vulnerability?
-* You need help setting up or have issues relating to the use of security dependencies such as OpenSSL or TLS/DTLS 
+* You need help setting up or have issues relating to the use of security dependencies such as OpenSSL or TLS/DTLS.
 * You need help applying a security related fix to your O3DE applications. 
 * The issue is not related to security. Please report issue using the normal [O3DE issue reporting process](https://github.com/o3de/o3de/issues).
 
