@@ -758,7 +758,7 @@ Now that we have created a data flow from the server to clients using network pr
     ```c++
     void MyFirstNetworkComponentController::OnActivate([[maybe_unused]] Multiplayer::EntityIsMigrating entityIsMigrating)
     {
-        if (!IsAutonomous()) // add me
+        if (!IsAutonomous())
         {
             AZ::TickBus::Handler::BusConnect();
         }
