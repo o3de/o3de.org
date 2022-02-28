@@ -321,7 +321,7 @@ You can have multiple paragraphs and block-level elements inside an admonition.
 {{< /note >}}
 
 {{< tip >}}
-While not essential information, tips draw attention to a shortcut or best practice related to the preceding content.
+Tips draw attention to a shortcut or best practice related to the preceding content.
 {{< /tip >}}
 
 {{< caution >}}

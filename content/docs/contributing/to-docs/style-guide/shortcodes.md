@@ -10,7 +10,7 @@ To enrich **Open 3D Engine (O3DE)** documentation pages with complex elements su
 
 ## Callout Boxes
 
-O3DE documentation supports three different call-out shortcodes: **Note** `{{</* note */>}}`, **Caution** `{{</* caution */>}}`, and **Important** `{{</* important */>}}`. To use a call-out shortcode, enclose the text that you want to display in the opening and closing shortcode brackets.
+O3DE documentation supports four different call-out shortcodes: **Note** `{{</* note */>}}`, **Tip** `{{</* tip */>}}`, **Caution** `{{</* caution */>}}`, and **Important** `{{</* important */>}}`. To use a call-out shortcode, enclose the text that you want to display in the opening and closing shortcode brackets.
 
 ### Note
 
@@ -29,6 +29,24 @@ The output is:
 {{< note >}}
 You can *still* use Markdown inside these call-outs.
 {{< /note >}}
+
+### Tip
+
+Use `{{</* tip */>}}` to draw attention to a shortcut or best practice. While the information should contain practical advice, it should _not_ be essential or critical information needed to complete a step or use a feature.
+
+For example:
+
+```markdown
+{{</* tip */>}}
+You can spawn multiple instances of `AssetBuilder.exe` and attach them to Visual Studio.
+{{</* /tip */>}}
+```
+
+The output is:
+
+{{< tip >}}
+You can spawn multiple instances of `AssetBuilder.exe` and attach them to Visual Studio.
+{{< /tip >}}
 
 ### Caution
 
