@@ -32,7 +32,7 @@ You can *still* use Markdown inside these call-outs.
 
 ### Tip
 
-Use `{{</* tip */>}}` to draw attention to a shortcut or best practice. While the information should contain practical advice, it should _not_ be essential or critical information needed to complete a step or use a feature.
+Use `{{</* tip */>}}` to draw attention to a shortcut or best practice. While the information should contain practical advice that's relevant to the preceding content, it should _not_ contain information that's essential or critical to completing a step or using a feature.
 
 For example:
 
