@@ -754,7 +754,7 @@ Now that we have created a data flow from the server to clients using network pr
     }
     ```
 
-1. Finally, add a check to `MyFirstNetworkComponentController::OnActivate` to ensure it is only connecting to the TickBus while it's executing on the server (e.g., is not the autonomous player client, which will also have a controller):
+1. Finally, add a check to `MyFirstNetworkComponentController::OnActivate` to ensure `MyFirstNetworkComponentController` is only connecting to the `TickBus` while it's executing on the server, not the autonomous player client:
     ```c++
     void MyFirstNetworkComponentController::OnActivate([[maybe_unused]] Multiplayer::EntityIsMigrating entityIsMigrating)
     {
