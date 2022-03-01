@@ -13,13 +13,14 @@ When you create a function, you define the input and output variables of that fu
 
 ## Creating a Script Canvas function
 
-Start creating a new function by choosing **File**, **New Function** in the Script Canvas Editor.
+Start creating a new function by choosing **File**, **New Script** in the Script Canvas Editor.
 
-![Choose File, New Function in the Script Canvas Editor to start a new Script Canvas function.](/images/user-guide/scripting/script-canvas/function-new.png)
+![Choose File, New Function in the Script Canvas Editor to start a new Script Canvas function.]![newScriptUserFunctionDoc](https://user-images.githubusercontent.com/98843754/156060968-937fd5f3-b171-4199-9a58-78e7310a8f97.png)
 
-Alternatively, you can create a new function using the function create button located in the upper right corner of the editor canvas.
+Alternatively, you can create a new script using the create button located in the upper right corner of the editor canvas.
 
-![Use the function create button as an alternate method for creating a new Script Canvas function.](/images/user-guide/scripting/script-canvas/function-quick-create.png)
+![Use the function create button as an alternate method for creating a new Script Canvas graph file.]![quickNewScriptUserFunctionDoc](https://user-images.githubusercontent.com/98843754/156061311-2a5fa42e-14d2-4412-9d90-def494303868.png)
+
 
 ### Function entry and exit points
 
@@ -70,19 +71,11 @@ The final function graph should look like this:
 
 ![After completing the steps in this example, you should end up with a linear interpolation function.](/images/user-guide/scripting/script-canvas/function-linear-interpolation.png)
 
-1. Start a new function using **File**, **New Function** or by using the function create button in the upper right corner of the canvas.
+1. Start a new function using **File**, **New Script** or by using the function create button in the upper right corner of the canvas.
 
-1. Create the following four variables in **Variable Manager**:
-   + **Start**
-   + **End**
-   + **Time**
-   + **Result**
+1. Click the left side **Create execution nodeling** button to make an input node on the canvas.
 
-1. Set the **scope** of *Start*, *End*, and *Time* to **In**. These are now your input parameters.
-
-1. Set the **scope** of *Result* to **Out**. This is now your return value.
-
-1. Place the **Subtract**, **Multiply**, and **Add** nodes onto your graph and connect them as shown in the previous image.
+1. Click the **+** button next to Add data input to add an input parameter to the execution nodeling. This will prompt you for a name and type of the new variable. Enter **Start** as the name and **Number** as the type. Repeat this twice more for **Time** and **End**
 
 1. Using [variable references](/docs/user-guide/scripting/script-canvas/editor-reference/variables/variable-references), do the following:
 
@@ -90,18 +83,23 @@ The final function graph should look like this:
 
    b. In the **Multiply** node, use the result of the subtraction and reference the *Time* variable, so that *(End - Start)* is multiplied by *Time*.
 
-   c. In the **Add** node, use the result of the multiplication and reference the *Start* variable, so that these two values are added together. Then add a reference to the *Result* variable in the result slot, so that the final value is stored in *Result*.
+   c. In the **Add** node, use the result of the multiplication and reference the *Start* variable, so that these two values are added together. 
 
-1. Create entry and exit points for your function.
+1. Create an exit point for your function.
 
-   a. **Right-click** the **Subtract** node's **In** slot, and on the context menu, choose **Expose**.
+   a. Click the left side **Create execution nodeling** button to make an input node on the canvas.
 
-   b. (Optional) Rename the entry point node to **In**, if you want to follow the naming convention for node input execution slots.
+   b. Click the **+** button next to Add data output to add an input parameter to the output execution nodeling. This will prompt you for a name and type of the new variable. Enter **Result** as the name and **Number** as the type.
 
-   c. **Right-click** the **Add** node's **Out** slot, and on the context menu, choose **Expose**. 
+   c. **Result** will appear in the list of variables under the Variable Manager. Drag it onto the canvas and select **Set Result** from the menu that appears.
+   
+   d. Drag the new setter node between the the **Add** node and the output execution nodeling.
 
-   d. (Optional) Rename the exit point node to **Out**, if you want to follow the naming convention for node output execution slots.
+1. Drag a connection from the **Add** node output to the **Result** node **In** connector. Drag the **Add** node's Result pin to the **Result** node's number value.
+
+1. Drag the **Result** node's out connector to the output execution nodeling's in connector. 
 
 1. Finally, use **File**, **Save** to save the function and name it **Interpolate**. The function is now ready to use in a Script Canvas graph:
 
    ![When a function is used in a Script Canvas graph, it appears as a node, using the function's filename as the node name.](/images/user-guide/scripting/script-canvas/function-linear-interpolation-node.png)
+  
