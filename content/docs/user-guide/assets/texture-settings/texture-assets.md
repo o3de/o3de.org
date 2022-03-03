@@ -6,7 +6,7 @@ weight: 200
 toc: true
 ---
 
-Textures are processed images that are most commonly mapped to meshes as part of a material to create a surface appearance. With physically based rendering (PBR) and image based lighting (IBL), they can also provide specific rendering data such as the diffuse and specular components of a high dynamic range cubemap, or the metallic component of a surface. Textures can be used to create UI elements, gradient textures can provide distribution and falloff areas for instanced assets such as vegetation, and heightmap textures can be used to generate 3D terrain.
+Textures are processed images that are most commonly mapped to meshes as part of a material to create a surface appearance. With physically based rendering (PBR) and image based lighting (IBL), they can also provide specific rendering data such as the diffuse and specular components of a high dynamic range cubemap, or the metallic component of a surface. Textures can be used to create UI elements. Gradient textures can provide distribution and falloff areas for instanced assets such as vegetation. Heightmap textures can be used to generate 3D terrain.
 
 Although textures most often contain an image, they can provide a convenient method to get other data into O3DE. If you have data that can be represented in the color and alpha channels of an image, it can be processed as a texture.
 
@@ -48,7 +48,7 @@ You can view the texture product assets by expanding the asset list of a texture
 Texture product assets can be generated for multiple platforms from a single texture source asset. However, various target platforms might have unique requirements or limitations. A mobile device, for example, might have a lower maximum texture resolution than a desktop computer. You can use the following general guidelines when creating texture source assets to get the best results and to ensure cross-platform compatibility:
 
 * **Use power of two resolutions.** Texture source asset resolutions should be a power of two such as 256, 512, 1024, or 2048.
-* **Use square aspect ratios.** Square aspect ratios (2048 by 2048) are preferred for most textures. Texture source assets with equirectangular resolutions (2048 by 1024) are required in some use cases such as when generating IBL cubemaps.
+* **Use square aspect ratios.** Square aspect ratios (2048 by 2048) are preferred for most textures. Texture source assets with equirectangular resolutions (2048 by 1024) are required in some use cases such as when IBL cubemaps are generated.
     {{< important >}}
 Though you can successfully process and use textures with arbitrary resolutions and aspect ratios, you should create textures with square aspect ratios and power of 2 resolutions to get the best performance from the available graphics hardware.   
     {{< /important >}}
