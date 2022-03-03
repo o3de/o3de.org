@@ -6,17 +6,17 @@ weight: 400
 toc: true
 ---
 
-Textures created in third-party applications must be processed as runtime optimized product assets to be used in **Open 3D Engine (O3DE)**. O3DE can process many image formats including some formats that have special use cases such as look up tables (LUT) and image based lighting (IBL).
+Texture source assets created in third-party applications must be processed to be used in **Open 3D Engine (O3DE)**. Many image formats are supported and texture processing presets are provided including some specialized use cases such as heightmaps, gradients, and image based lighting (IBL).
 
-When texture source assets are placed in a scan directory, **Asset Processor** detects the new or modified files, determines the contents of the files, and then processes them using basic default settings. However, textures might require specialized processing depending on their use case. With **Texture Settings**, you can customize how texture source files are processed.
+When texture source assets are placed in a scan directory, **Asset Processor** detects the new or modified files, determines the contents of the files, and then processes them using basic default settings. However, textures might require specialized processing depending on their use case. You can use naming conventions to automatically select a preset to process a texture, or customize how texture source files are processed with **Texture Settings**.
 
 Texture Settings creates a `.assetinfo` sidecar file containing your custom processing options for a texture source asset. The source asset is not changed. When Asset Processor processes the source asset, it uses the options in the `.assetinfo` file to generate product assets.
 
 ## Scene Settings topics
 
-The topics in this section provide general information about the Texture Settings interface and information about the image file types supported by Texture Settings.
+The topics in this section provide information about the image file types supported by Texture Settings and the Texture Settings user interface.
 
 | Topic | Description |
 | - | - |
-| [Interface](interface) | An overview of the Texture Settings interface. |
-| [Image format support](image-format-support) | In depth information on image types supported in O3DE. |
+| [Texture Asset Guidelines](texture-assets) | Information on image formats supported by O3DE and guidelines for creating texture source assets. |
+| [Texture Settings User Interface](interface) | An overview of the Texture Settings user interface. |
