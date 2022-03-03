@@ -6,7 +6,7 @@ weight: 200
 toc: true
 ---
 
-Textures are processed images that are most commonly mapped to meshes as part of a material to create a surface appearance. With physically based rendering (PBR) and image based lighting (IBL), they can also provide specific lighting and shading data for rendering. Textures can be used to create UI elements, gradient textures can provide distribution and falloff areas for instanced assets such as vegetation, and heightmap textures can be used to generate 3D terrain.
+Textures are processed images that are most commonly mapped to meshes as part of a material to create a surface appearance. With physically based rendering (PBR) and image based lighting (IBL), they can also provide specific rendering data such as the diffuse and specular components of a high dynamic range cubemap, or the metallic component of a surface. Textures can be used to create UI elements, gradient textures can provide distribution and falloff areas for instanced assets such as vegetation, and heightmap textures can be used to generate 3D terrain.
 
 Although textures most often contain an image, they can provide a convenient method to get other data into O3DE. If you have data that can be represented in the color and alpha channels of an image, it can be processed as a texture.
 
