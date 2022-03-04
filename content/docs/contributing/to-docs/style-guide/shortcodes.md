@@ -14,7 +14,7 @@ O3DE documentation supports four different call-out shortcodes: **Note** `{{</* 
 
 ### Note
 
-Use `{{</* note */>}}` to highlight a tip or a piece of information that is helpful to know.
+Use `{{</* note */>}}` to draw attention to a clarification or information that's of special interest to the reader. For shortcuts and best practices, consider using a `{{</* tip */>}}` instead.
 
 For example:
 
@@ -68,7 +68,7 @@ The call-out style only applies to the line directly above the tag.
 
 ### Important
 
-Use `{{</* important */>}}` to indicate information that is crucial to follow.
+Use `{{</* important */>}}` to indicate information that is critical to follow.
 
 For example:
 
@@ -86,14 +86,16 @@ Avoid multiple paragraphs in call-outs.
 
 ### Call-out boxes in lists
 
-You can use a call-out in a list:
+You can use a call-out in a list. Make sure to indent the first call-out shortcode, as explained in the following note:
 
 ```markdown
 1. Use the note shortcode in a list.
 1. A second item with an embedded note.
 
     {{</* note */>}}
-Warning, Caution, and Note shortcodes, embedded in lists, need to be indented to the level of the list item; four spaces for the first level, eight spaces for the second level, and so on. Lists that contain shortcodes should have newlines between each list item and before and after the shortcode. See [Common Shortcode Issues](#common-shortcode-issues).
+Warning, Caution, Tip, and Note shortcodes, when embedded in lists, need to be indented to the level of the list item; four spaces for the first level, eight spaces for the second level, and so on.
+
+Lists that contain shortcodes should have newlines between each list item and before and after the shortcode.
 {{</* /note */>}}
 
 1. A third item in a list
@@ -106,7 +108,9 @@ The output is:
 1. A second item with an embedded note
 
     {{< note >}}
-Warning, Caution, and Note shortcodes, embedded in lists, need to be indented to the level of the list item; four spaces for the first level, eight spaces for the second level, and so on. Lists that contain shortcodes should have newlines between each list item and before and after the shortcode. See [Common Shortcode Issues](#common-shortcode-issues).
+Warning, Caution, Tip, and Note shortcodes, when embedded in lists, need to be indented to the level of the list item; four spaces for the first level, eight spaces for the second level, and so on.
+
+Lists that contain shortcodes should have newlines between each list item and before and after the shortcode.
 {{< /note >}}
 
 1. A third item in a list
