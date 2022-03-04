@@ -43,9 +43,9 @@ title: Setting Up Simulated Object Colliders
 
 1.  In the **Skeleton Outliner**, select the joints where the simulated object colliders are attached.
 
-    **Tip**
-
-    In the render window, deselect the first icon (**Solid**) and select the second (**Wireframe**) to view the capsule colliders.
+    {{< tip >}}
+In the render window, deselect the first icon (**Solid**) and select the second (**Wireframe**) to view the capsule colliders.
+    {{< /tip >}}
 
     In the render window, the colliders appear purple. If you deselect the joint, the collider appears gray.
 
