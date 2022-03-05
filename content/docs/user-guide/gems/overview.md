@@ -45,22 +45,22 @@ O3DE comes bundled with standard O3DE Gems. Their source code is located in the 
 
 Gems provide modular features and assets to your project. You can add standard O3DE Gems, third-party Gems, or custom Gems.
 
-Depeneding on your project configuration, your project enables a set of Gems by default. The O3DE build system detects enabled Gems and sets them as dependencies for your project. You can find the list of Gems enabled in your project in the `enabled_gems.cmake` file in the `<project>/Code/` directory. 
+Depending on your project configuration, your project enables a set of Gems by default. The O3DE build system detects enabled Gems and sets them as dependencies for your project. You can find the list of Gems enabled in your project in the `enabled_gems.cmake` file in the `<project>/Code/` directory. 
 
 The following is a high-level overview for adding a Gem to a project: 
 
-1. Register the Gem, if it's not already. Standard Gems that are bundled with O3DE are already registered. However, you must register Gems from an external source. Refer to [Register Gems to a Project](/docs/user-guide/project-config/register-gems/).
+1. Register the Gem, if it's not already. Standard Gems that are bundled with O3DE are already registered. However, you must register Gems that you obtain from an external source. Refer to [Register Gems to a Project](/docs/user-guide/project-config/register-gems/).
 
-2. Add and remove Gems. You can add and remove registered Gems in your project. Refer to [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems/).
-
+1. Add and remove Gems. You can add and remove registered Gems in your project. Refer to [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems/).
 
 ### Creating custom Gems
 
 You can create an asset Gem or a code Gem. An asset Gem contains only a collection of assets. A code Gem contains code and assets to extend the Editor or develop features and gameplay logic for your project.
 
+The following recommended topics help you create an asset Gem or a code Gem:
 
-The following recommended topics help you create an asset Gem or a code Gem: 
+1. [Gem Module System in O3DE](/docs/user-guide/programming/gems/overview/): In this section, learn about Gem Modules, the Module Manager, and how O3DE loads and initializes Gems.
 
-  1. [Create an O3DE Gem](/docs/user-guide/programming/gems/creating/): Both asset and code Gems have the same directory structure and you can create them in the same way. This topic demonstrates how to create a Gem and what contents are contained in a Gem's directory structure. 
-   
-  2. [Programmer's Guide to Gem Development](/docs/user-guide/programming/gems/): Code Gems contain code with entry point functions that connect the Gem to O3DE. In this section, learn about Gem modules and component classes where you can integrate your features.
+1. [Create an O3DE Gem](/docs/user-guide/programming/gems/creating/): Both asset and code Gems have the same directory structure and you can create them in the same way. This topic demonstrates how to create a Gem and what contents are contained in a Gem's directory structure.
+
+1. [Code Gem Specifications](/docs/user-guide/programming/gems/code-gems/): Learn how to create a code Gem and gain an understanding of its critical components.

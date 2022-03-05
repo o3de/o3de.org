@@ -30,31 +30,14 @@ The following image shows the structure of project runtimes built with O3DE:
 
 ## Overview of the O3DE SDK
 
-O3DE is modular. It is constructed of a common *core* that all modules depend on, and then a plugin and extension system that adds more features.
+O3DE is modular&mdash;it's constructed of a common core that all modules depend on, with plugins and extension systems that add more features. These core modules are provided by the O3DE software development kit (SDK) and are the essential frameworks to extend the engine with new features.
 
-The following are the core modules:
+The following image illustrates the dependency graph for O3DE's core modules: `AzCore`, `AzFramework`, `AzGameFramework`, `AzToolsFramework`, and `AZQtComponents`. High-level products, such as project runtimes, command line interface (CLI) tools, and graphical user interface (GUI) tools, all depend on the core modules.
 
-* [`AzCore`](https://o3de.org/docs/api/frameworks/azcore/) provides math, serialization, memory management, eventing and pub/sub interfaces, as well as the ability to load plugin modules. It provides the component-entity model and contains an implementation of C++ STL that includes memory alignment aware containers and other guarantees.
+![O3DE core module dependency graph](/images/user-guide/programming/o3de-architecture-dependency-graph.svg)
 
-* [`AzFramework`](https://o3de.org/docs/api/frameworks/azframework/) provides higher level structures. `AzFramework` also contains some additional code common to most, but not all applications.
+For more information on O3DE's engine core, refer to the [Programming Guide](/docs/user-guide/programming/). 
 
-* [`AzGameFramework`](https://o3de.org/docs/api/frameworks/azgameframework/) contains core functions only used by runtime applications. It provides loop management, and a bootstrap sequence that is specific to runtime applications.
-
-* [`AzToolsFramework`](https://o3de.org/docs/api/frameworks/aztoolsframework/) contains core functions only used by tools. It provides UI components such as object pickers, property editors, source control integrations, and a bootstrap sequence that is specific to tools.
-
-* [`AzQtComponents`](https://o3de.org/docs/api/frameworks/azqtcomponents/) contains common UI widgets (scroll bars, buttons, dialogs, and so on) that provide a consistent look and feel between tool applications.
-
-The following image illustrates the dependency graph for the core modules of O3DE.
-
-![O3DE core module dependency graph](/images/welcome-guide/o3de-architecture-dependency-graph.svg)
-
-Some examples of the high-level products using these frameworks are:
-
-* **Project runtimes** - End products created by developers using O3DE, such as games, dedicated server runtimes, and world simulations.
-
-* **CLI tools** - Tools invoked from the command-line interface without a GUI, such as the AZSL Compiler and the Asset Batch Processor.
-
-* **GUI tools** - Tools with a graphical UX used for developing O3DE projects, such as the O3DE Editor, O3DE Asset Processor, and the Atom Materials Editor.
 
 ### O3DE Directory Structure
 
@@ -174,19 +157,16 @@ When you're preparing to ship, you'll need to package the assets that your proje
 
 Asset Bundler makes shipping the specific assets that are used for the release of your game more reliable and repeatable. Reliability is based on an underlying dependency system. If you make changes to your project and add, remove, or update assets, Asset Bundler uses the dependencies to automatically determine which assets to include. Repeatability is based on underlying configuration files that provide consistency each time you run Asset Bundler.
 
-## Scripting for O3DE
+## Scripting gameplay
 
 O3DE includes two scripting technologies for creating logic and behaviors: *Script Canvas* and *Lua*.
 
-**Script Canvas** is a general purpose, visual scripting environment. In the **Script Canvas Editor**, you lay out and connect graphical nodes that provide a visual representation of the logic flow. Script Canvas offers an approachable and easy-to-read environment to author behaviors using the same framework as Lua and C++. You can use Script Canvas to create scripts without needing to know how to code.
+- **Script Canvas** is a general purpose, visual scripting environment. In the **Script Canvas Editor**, you lay out and connect graphical nodes that provide a visual representation of the logic flow. Script Canvas offers an approachable and easy-to-read environment to author behaviors using the same framework as Lua and C++. You can use Script Canvas to create scripts without needing to know how to code.
 
-To enable Script Canvas for O3DE, you must enable the **Script Canvas Gem**.
+- **Lua** is a powerful, fast, lightweight, embeddable scripting language. Lua facilitates quick iteration in your project because you can run your changes immediately without needing to recompile your source code.
 
-Lua is a powerful, fast, lightweight, embeddable scripting language. Lua facilitates quick iteration in your project because you can run your changes immediately without needing to recompile your source code.
+Learn more about Script Canvas and Lua in [Scripting Gameplay in O3DE](/docs/user-guide/scripting/) . 
 
-O3DE's functionality is exposed to Script Canvas and Lua by the behavior context. The behavior context reflects runtime code and makes it accessible to scripts by providing bindings to C++ classes, methods, properties, constants, and enums. The behavior context also provides bindings for O3DE's EBus so you can dispatch and handle events through Script Canvas and Lua.
-
-Functionality for both Script Canvas and Lua is added to entities through components. You can have multiple script components and mix and match between Lua and Script Canvas within your entities. This approach enables you to create small, manageable modules of logic and behavior that can be reused throughout your projects.
 
 ## Available Release Runtimes
 

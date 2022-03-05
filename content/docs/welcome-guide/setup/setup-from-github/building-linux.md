@@ -60,6 +60,7 @@ To prepare to build the engine and projects, choose one of the following build t
     ```
 
     The `-j` is a recommended build tool optimization. It tells the Ninja build tool the number of parallel build tasks that will be executed simultaneously. The 'number of parallel build tasks' is recommended to match the number of cores available on the Linux host machine.
+    The `--config` sets the build configuration type: `profile`, `debug`, or `release`. For setting up O3DE, `profile` is recommended. Read more on [O3DE's build configurations](/docs/user-guide/build/configure-and-build.md#generated-build-configurations).
 
     Example:
 
@@ -107,6 +108,7 @@ To prepare to build the engine and projects, choose one of the following build t
     ```
 
     The `-j` is a recommended build tool optimization. It tells the Ninja build tool the number of parallel build tasks that will be executed simultaneously. We recommend that the 'number of parallel build tasks' matches the number of cores available on the Linux host machine.
+    The `--config` sets the build configuration type: `profile`, `debug`, or `release`. For setting up O3DE, `profile` is recommended. Read more on [O3DE's build configurations](/docs/user-guide/build/configure-and-build.md#generated-build-configurations).
 
     Example:
 

@@ -1,5 +1,5 @@
 ---
-title: Metadata Used in Open 3D Engine Documentation
+title: Metadata Used in O3DE Documentation
 description: A reference for the metadata fields used in Open 3D Engine (O3DE) documentation, including those required in the header.
 linktitle: Metadata
 weight: 400

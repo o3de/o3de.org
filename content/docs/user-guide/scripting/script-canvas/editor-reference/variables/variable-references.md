@@ -49,9 +49,9 @@ Do one of the following:
 
 1. Use the gear button next to the variable name field that appears and select a variable to reference.
 
-    {{< note >}}
+    {{< tip >}}
 Another way to create a variable reference is to drag a variable from the **Variable Manager** onto the data pin.
-    {{< /note >}}
+    {{< /tip >}}
 
 **To convert a variable node into a variable reference**
 

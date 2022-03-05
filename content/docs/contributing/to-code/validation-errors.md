@@ -1,13 +1,14 @@
 ---
-description: ' Details and instructions for using the validator tool. '
-title: How to Use the Validation Tool for Open 3D Engine Submissions
 linktitle: Validator Errors
+title: How to Use the Validation Tool for O3DE Submissions
+description: Details and instructions for using the validator tool.
+toc: true
 ---
 
-The Open 3D Engine Early Warning System is a tool for style checks and basic static analysis to find errors before building the engine and performing tests. It runs before the pipeline starts a build, attempting to quickly reject invalid changes before spending machine resources to build and test, and minimize human effort on reviewing changes.
+The **Open 3D Engine (O3DE)** Early Warning System is a tool for style checks and basic static analysis to find errors before building the engine and performing tests. It runs before the pipeline starts a build, attempting to quickly reject invalid changes before spending machine resources to build and test, and minimize human effort on reviewing changes.
 
 {{< note >}}
-The most likely reason you visited this page was to help work past a validation failure.  To find the relevant fix, first look at the standard output logs!
+The most likely reason you visited this page was to help work past a validation failure. To find the relevant fix, first look at the standard output logs!
 {{< /note >}}
 
 ## What file is failing? What rule is failing?

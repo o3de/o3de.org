@@ -1,11 +1,11 @@
 ---
 linkTitle: O3DE Docs Structure
-title: The Open 3D Engine (O3DE) Docs Structure 
+title: The O3DE Docs Structure 
 description: A guide to the Open 3D Engine (O3DE) documentation repository structure.
 weight: 400
 ---
 
-There are many folders and files in the O3DE docs directory structure. If you are a new contributor, it can be a puzzle to sort out where to find or place topics and images that you'd like to contribute. The structure is easier to navigate when you understand two key high-level directories.
+There are many folders and files in the **Open 3D Engine (O3DE)** docs directory structure. If you are a new contributor, it can be a puzzle to sort out where to find or place topics and images that you'd like to contribute. The structure is easier to navigate when you understand two key high-level directories.
 
 * `/content/docs/`: The root directory of the Markdown (`.md`) files that make up the documentation for the various O3DE guides.
 

@@ -54,9 +54,9 @@ In addition to the usual search capabilities, the **Find** feature can display t
 
 1. To go directly to the line in the code which a search result was found, double-click the line in the search results.
 
-{{< note >}}
+    {{< tip >}}
  For convenience, you can also dock or float the **Find Results** window.
-{{< /note >}}
+    {{< /tip >}}
 
 ## Perforce integration 
 

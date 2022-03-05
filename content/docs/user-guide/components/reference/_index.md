@@ -131,16 +131,16 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| Altitude Gradient | Generates a gradient based on height within a range. |
-| Constant Gradient | Returns a specified value as a gradient when sampled. |
-| FastNoise Gradient | Generates gradient values using [FastNoise](https://github.com/Auburn/FastNoiseLite), a noise generation library with a collection of real-time noise algorithms. |
-| Image Gradient | Generates a gradient by sampling an image asset. |
-| Perlin Noise Gradient | Generates a gradient by sampling a perlin noise generator. |
-| Random Noise Gradient | Generates a gradient by sampling a random noise generator.|
-| Reference Gradient | References another gradient. |
-| Shape Falloff Gradient | Generates a gradient based on the distance from a shape. |
-| Slope Gradient | Generates a gradient based on the surface angle. |
-| Surface Mask Gradient | Generates a gradient based on the underlying surface types. |
+| [Altitude Gradient](./gradients/altitude-gradient) | Generates a gradient based on height within a range. |
+| [Constant Gradient](./gradients/constant-gradient) | Returns a specified value as a gradient when sampled. |
+| [FastNoise Gradient](./gradients/fastnoise-gradient) | Generates gradient values using [FastNoise](https://github.com/Auburn/FastNoiseLite), a noise generation library with a collection of real-time noise algorithms. |
+| [Image Gradient](./gradients/image-gradient) | Generates a gradient by sampling an image asset. |
+| [Perlin Noise Gradient](./gradients/perlin-noise-gradient) | Generates a gradient by sampling a perlin noise generator. |
+| [Random Noise Gradient](./gradients/random-noise-gradient) | Generates a gradient by sampling a random noise generator.|
+| [Reference Gradient](./gradients/reference-gradient) | References another gradient. |
+| [Shape Falloff Gradient](./gradients/shape-falloff-gradient) | Generates a gradient based on the distance from a shape. |
+| [Slope Gradient](./gradients/slope-gradient) | Generates a gradient based on the surface angle. |
+| [Surface Mask Gradient](./gradients/surface-mask-gradient) | Generates a gradient based on the underlying surface types. |
 
 <!-- 
 ### Networking
