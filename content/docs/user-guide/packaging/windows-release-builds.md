@@ -197,14 +197,21 @@ Verify that your project is registered to your pre-built SDK engine by checking 
 
 ```cmd
 cd C:\o3de-install
-scripts\o3de.bat register --pp C:\o3de-projects\MyProject
+scripts\o3de.bat register --project-path C:\o3de-projects\MyProject
 ```
 
 #### Option 1: Non-monolithic
 
 A pre-built SDK engine supports non-monolithic projects by default. As detailed in [Prerequisites](#prerequisites), you should have already created a Visual Studio project for the engine and registered the engine.
 
-In your source engine, use CMake to invoke Visual Studio to append non-monolithic release artifacts to the pre-built SDK layout.
+1. Reconfigure your source engine with the `-D` option, `LY_PROJECTS`, pointing to your project's path.
+
+```cmd
+cd C:\o3de
+cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=C:\o3de-install -DLY_PROJECTS=C:\o3de-projects\MyProject
+```
+
+1. In your source engine, use CMake to invoke Visual Studio to append non-monolithic release artifacts to the pre-built SDK layout.
 
 ```cmd
 cd C:\o3de
@@ -219,14 +226,15 @@ The result is a project game release layout in the install directory that's loca
 
 #### Option 2: Monolithic
 
-1. Use CMake to create a Visual Studio project for an engine that supports monolithic projects. Specify a new CMake build directory (`build\windows_mono`) in your pre-built SDK engine directory, separate from your non-monolithic build directory. Specify a monolithic build by enabling the `-D` option to `LY_MONOLITHIC_GAME`.
+1. Use CMake to create a Visual Studio project for an engine that supports monolithic projects. Specify a new CMake build directory (`build\windows_mono`) in your pre-built SDK engine directory, separate from your non-monolithic build directory. Specify a monolithic build by enabling the `-D` option, `LY_MONOLITHIC_GAME`.
 
     ```cmd
     cd C:\o3de
-    cmake -B build\windows_mono -S . -DCMAKE_INSTALL_PREFIX=C:\o3de-install -DLY_VERSION_ENGINE_NAME=o3de-install -DLY_MONOLITHIC_GAME=1 
+    cmake -B build\windows_mono -S . -DCMAKE_INSTALL_PREFIX=C:\o3de-install -DLY_VERSION_ENGINE_NAME=o3de-install -DLY_MONOLITHIC_GAME=1 -DLY_PROJECTS=C:\o3de-projects\MyProject
     ```
+    - Include `-D` option, `LY_PROJECTS`, to point to your project's path.
 
-1. In your source engine, use CMake to invoke Visual Studio to append non-monolithic release artifacts to the pre-built SDK layout.
+2. In your source engine, use CMake to invoke Visual Studio to append non-monolithic release artifacts to the pre-built SDK layout.
 
     ```cmd
     cd C:\o3de
