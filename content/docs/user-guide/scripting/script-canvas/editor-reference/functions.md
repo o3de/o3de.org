@@ -15,11 +15,11 @@ When you create a function, you define the input and output variables of that fu
 
 Start creating a new function by choosing **File**, **New Script** in the Script Canvas Editor.
 
-![Choose File, New Function in the Script Canvas Editor to start a new Script Canvas function.]![newScriptUserFunctionDoc](https://user-images.githubusercontent.com/98843754/156060968-937fd5f3-b171-4199-9a58-78e7310a8f97.png)
+![Choose File, New Function in the Script Canvas Editor to start a new Script Canvas function.](/images/user-guide/scripting/script-canvas/function-new.png)
 
 Alternatively, you can create a new script using the create button located in the upper right corner of the editor canvas.
 
-![Use the function create button as an alternate method for creating a new Script Canvas graph file.]![quickNewScriptUserFunctionDoc](https://user-images.githubusercontent.com/98843754/156061311-2a5fa42e-14d2-4412-9d90-def494303868.png)
+![Use the function create button as an alternate method for creating a new Script Canvas graph file.](/images/user-guide/scripting/script-canvas/function-quick-create.png)
 
 
 ### Function entry and exit points
