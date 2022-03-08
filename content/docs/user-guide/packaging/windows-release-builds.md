@@ -8,6 +8,10 @@ weight: 200
 
 This tutorial guides you through the process of creating an **Open 3D Engine (O3DE)** *project game release layout* for Windows computers. A project game release layout is a directory structure that contains the **Game Launcher** and the bundled assets needed to run the Game Launcher outside of the developer environment. You create a project game release layout when you build your project for release, known as a *release build*.
 
+{{< important >}}
+In order to create a project game release layout, you must have O3DE set up from source, not just the installer. Refer to [Setting up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github/). 
+{{< /important >}}
+
 A release build requires *bundled content*, which includes cached product assets stored in package (`.pak`) files. Cached product assets are located in the project's `Cache\pc` directory. The Game Launcher loads the bundled content that makes up a project, such as its levels, objects, environments, and gameplay logic.
 
 The instructions here guide you through the following steps:
@@ -29,7 +33,7 @@ The instructions here guide you through the following steps:
 
 The following instructions assume that you have:
 
-- Set up O3DE on your computer as either a source engine or pre-built SDK engine. For help, refer to [Set up Open 3D Engine](/docs/welcome-guide/setup/).
+- Set up O3DE on your computer as either a source engine or pre-built SDK engine. For help, refer to [Setting up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github/building-windows/). If you only set up O3DE using the [installer](/docs/welcome-guide/setup/installing-windows/), you cannot create a project game release layout.
 
 - Created an O3DE project that contains at least one level. To build your project for release, you might need to resolve any errors in your project.
 
@@ -37,7 +41,7 @@ The following instructions assume that you have:
   
   - Your project -- If you're using a source engine, you must generate a Visual Studio project for your project. For help, refer to [Create a Visual Studio project](/docs/welcome-guide/create/creating-projects-using-cli/#create-a-visual-studio-project).
 
-  - Your engine -- If you're using a pre-built SDK engine, you must generate a Visual Studio project for your engine. For help, refer to the **Pre-built SDK engine** steps in [Setting up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github).
+  - Your engine -- If you're using a pre-built SDK engine, you must generate a Visual Studio project for your engine. For help, refer to the **Pre-built SDK engine** steps in [Setting up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github/building-windows/).
 
 - Registered your project to your engine.
 
