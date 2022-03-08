@@ -28,82 +28,72 @@ $(() => {
   })
 });
 
+// Lightbox behavior
+
+$(function() {
+  $("a.lightbox-trigger").click(function(e) {
+    var lightboxId = $(this).data("lightbox");
+    if(lightboxId)
+    {
+      var lightboxObject = $("#" + lightboxId);
+      if(lightboxObject.hasClass("lightbox-content"))
+      {
+        e.preventDefault();
+        lightboxObject.fadeIn(500);
+      }
+    }
+  });
+  
+  $(".lightbox-content").click(function(e) {
+    $(this).fadeOut(500);
+  });
+  
+  $(".lightbox-content iframe").click(function(e) {
+    e.preventDefault();
+  });
+});
 
 // nav bar search
 
 $(() => {
   $("#search").submit(function(event){
-    event.preventDefault();
-    $(".search-input-view").show();
-
-    let data =  $('#search-input').val()
-    if (data.length > 0) {
-      const idx = lunr(function () {
-        this.ref('id')
-        this.field('title', {
-          boost: 15
-        })
-        this.field('tags')
-        this.field('content', {
-          boost: 10
-        })
-    
-        for (const key in window.store) {
-          this.add({
-            id: key,
-            title: window.store[key].title,
-            tags: window.store[key].category,
-            content: window.store[key].content
-          })
-        }
-      })
-    
-      // Perform the search
-      const results = idx.search(data)
-      // Update the search title
-      $('#search-title').text('Search Results for ' + '"' + data + '"')
-      // Update the list with results
-      displayResults(results, window.store)
+    if($(".search-input-view").is(":hidden"))
+    {
+      event.preventDefault();
+      $(".search-input-view").show();
     }
-  })
+  });
 });
 
-// parse user agent on downloads page
-
+// --- Downloads page
+// Handle click to switch between download pages.
 $(function() {
-  const ua = $.ua.os.name;
-  $("#download-page-buttons a").each(function(){
-    if($(this).data('os') == ua) {
-      $(this).addClass("active-os-cta");
-      $(this).removeClass("btn-secondary");
+  $(".os-selector-button").click(function(event){
+    if($(this).hasClass("active"))
+    {
+      return;
     }
-  })
+
+    // Switch enabled button
+    $(".os-selector-button.active").removeClass("active");
+    $(this).addClass("active");
+
+    // Switch content
+    $(".os-content.active").removeClass("active");
+    $("#content-" + $(this).data("os")).addClass("active");
+  });
 });
 
+// Detect anchor in URL on load and select appropriate tab.
+// This uses the click to switch function, so it must be defined after it.
+$(function() {
+  // Retrieve the hash from the url.
+  var hash = $(location).attr('hash').replace( /#/, "" );
 
-// Search 
-
-function displayResults (results, store) {
-  const resultsContainer = document.getElementById('search-results')
-  const mainContainer = document.getElementById('primary')
-  const searchResults = document.getElementById('results')
-  
-  if (results.length) {
-    let resultList = ''
-    // Iterate and build result list elements
-    for (const n in results) {
-      const item = store[results[n].ref]
-      resultList += '<li><p><a href="' + item.url + '">' + item.title + '</a></p>'
-      resultList += '<p>' + item.content.substring(0, 400) + '...</p></li>'
-    }
-    searchResults.innerHTML = resultList
-  } else {
-    searchResults.innerHTML = 'No results found.'
-  }
-
-  resultsContainer.style.display = "block"
-  mainContainer.style.display = "none"
-}
+  // Try to click the appropriate button.
+  // If it doesn't exist, this will just do nothing.
+  $("#os-" + hash).trigger("click");
+});
 
 // Docs navigation
 
@@ -173,9 +163,55 @@ $(function() {
     }
 
     var dest = $(this).attr('href');
-    if(dest != "" && $(dest).length > 0)
+    if(dest != "" && dest.length > 1 && $(dest).length > 0)
     {
       $('html,body').animate({ scrollTop: $(dest).offset().top - scrollOffset }, 'slow');
     }
   });
+});
+
+// Homepage Hero Slideshow
+$(function()
+{
+  if($("#hero-slideshow").length > 0)
+  {
+    var slides = [];
+    var i = 0;
+    $("#hero-slideshow").find(".hero-slideshow-image").each(function()
+    {
+      slides[i] = $(this);
+      ++i;
+    });
+
+    var slidesNum = slides.length;
+    
+    function setupSlides(index)
+    {
+      if(index < 0 || index >= slidesNum)
+      {
+        return;
+      }
+
+      var previousActive = $(".hero-slideshow-image.active");
+      previousActive.addClass("fadeOut");
+      slides[index].addClass("active");
+      
+      setTimeout(function() {
+        previousActive.removeClass("fadeOut").removeClass("active");
+      }, 1000);
+
+      var nextIndex = index + 1;
+      if (nextIndex == slidesNum)
+      {
+        nextIndex = 0;
+      }
+
+      setTimeout(function() {
+        setupSlides(nextIndex);
+      }, 7000);
+    }
+
+    setupSlides(0);
+  }
+  
 });

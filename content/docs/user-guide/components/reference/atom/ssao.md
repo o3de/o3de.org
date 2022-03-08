@@ -1,5 +1,5 @@
 ---
-title: SSAO component
+title: SSAO Component
 linktitle: SSAO
 description: 'Open 3D Engine (O3DE) SSAO component reference.'
 toc: true

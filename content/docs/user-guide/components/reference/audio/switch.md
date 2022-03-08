@@ -1,5 +1,6 @@
 ---
-title: Audio Switch
+linkTitle: Audio Switch
+title: Audio Switch Component
 description: Use the Audio Switch component to set up a default switch and switch states for an entity in O3DE.
 toc: true
 ---

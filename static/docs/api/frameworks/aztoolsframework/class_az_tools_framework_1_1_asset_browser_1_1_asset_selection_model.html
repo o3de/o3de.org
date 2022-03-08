@@ -88,6 +88,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSelectedAssetIds</
 <tr class="memitem:a3bf3c097e05193c5608d702b86d76330"><td class="memItemLeft" align="right" valign="top"><a id="a3bf3c097e05193c5608d702b86d76330"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSelectedAssetId</b> (const AZ::Data::AssetId &amp;selectedAssetId)</td></tr>
 <tr class="separator:a3bf3c097e05193c5608d702b86d76330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab64f54314cd6fe5ea9f44fc2b8c959"><td class="memItemLeft" align="right" valign="top"><a id="a5ab64f54314cd6fe5ea9f44fc2b8c959"></a>
+const AZStd::vector&lt; AZStd::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSelectedFilePaths</b> () const</td></tr>
+<tr class="separator:a5ab64f54314cd6fe5ea9f44fc2b8c959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b47218a1f0ca8fd1a9a99be17399d8"><td class="memItemLeft" align="right" valign="top"><a id="a68b47218a1f0ca8fd1a9a99be17399d8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSelectedFilePaths</b> (const AZStd::vector&lt; AZStd::string &gt; &amp;selectedFilePaths)</td></tr>
+<tr class="separator:a68b47218a1f0ca8fd1a9a99be17399d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0418944004eb4b0c28c0ddc993acc95"><td class="memItemLeft" align="right" valign="top"><a id="af0418944004eb4b0c28c0ddc993acc95"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSelectedFilePath</b> (const AZStd::string &amp;selectedFilePath)</td></tr>
+<tr class="separator:af0418944004eb4b0c28c0ddc993acc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a311796721f8d0aaff2951f63774650e9"><td class="memItemLeft" align="right" valign="top"><a id="a311796721f8d0aaff2951f63774650e9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultDirectory</b> (AZStd::string_view defaultDirectory)</td></tr>
 <tr class="separator:a311796721f8d0aaff2951f63774650e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,6 +133,9 @@ static <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_
 <tr class="memitem:ad299ccbe2140206d1d7ea9b1aed89190"><td class="memItemLeft" align="right" valign="top"><a id="ad299ccbe2140206d1d7ea9b1aed89190"></a>
 static <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_selection_model.html">AssetSelectionModel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AssetGroupSelection</b> (const char *group, bool multiselect=false)</td></tr>
 <tr class="separator:ad299ccbe2140206d1d7ea9b1aed89190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a458148b3376ad359a44b030a78cad688"><td class="memItemLeft" align="right" valign="top"><a id="a458148b3376ad359a44b030a78cad688"></a>
+static <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_selection_model.html">AssetSelectionModel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SourceAssetTypeSelection</b> (const QString &amp;pattern, bool multiselect=false)</td></tr>
+<tr class="separator:a458148b3376ad359a44b030a78cad688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94070390dc4875a6b476b5bf70015192"><td class="memItemLeft" align="right" valign="top"><a id="a94070390dc4875a6b476b5bf70015192"></a>
 static <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_selection_model.html">AssetSelectionModel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EverythingSelection</b> (bool multiselect=false)</td></tr>
 <tr class="separator:a94070390dc4875a6b476b5bf70015192"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,7 +148,7 @@ static <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 13 2021 14:19:23 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 26 2022 14:01:11 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

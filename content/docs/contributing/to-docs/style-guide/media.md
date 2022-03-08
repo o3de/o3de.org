@@ -1,12 +1,12 @@
 ---
-title: Submitting Media to Open 3D Engine Documentation
+title: Submitting Media to O3DE Documentation
 description: Guidelines for submitting media (images, video, audio, or assets) to Open 3D Engine (O3DE) documentation.
 linktitle: Media
 weight: 600
 toc: true
 ---
 
-There are two available methods to add images to documentation topics. You can use markdown syntax, or the `image-width` shortcode. If you are adding multiple images, very large images, or `.svg` diagrams, consider using the `image-width` shortcode to limit the width of images as the image scales to the width of the browser window.
+There are two available methods to add images to topics in **Open 3D Engine (O3DE)** documentation. You can use markdown syntax, or the `image-width` shortcode. If you are adding multiple images, very large images, or `.svg` diagrams, consider using the `image-width` shortcode to limit the width of images as the image scales to the width of the browser window.
 
 ## Adding images with markdown syntax
 
@@ -129,3 +129,38 @@ Animated images are not currently accepted for contribution due to limitations o
 
 1. **Left-click** on the entity in **Perspective** to select it.
 1. **LMB+Drag** on the transform gizmo's **Z** axis to move the entity on the world **Z** axis.
+
+
+## Embedding Youtube videos with the `youtube-width` shortcode
+
+Embed Youtube videos in your page by using the `youtube-width` shortcode. The `youtube-width` shortcode is an extended version of Hugo's built-in [`youtube` shortcode](https://gohugo.io/content-management/shortcodes/#youtube) that allows you to control the size of the embedded video. 
+
+`youtube-width` supports the following double-quoted parameters:
+
+1. id
+2. title
+3. width (using the default value (50%) is recommended)
+
+**Examples** 
+
+1. `youtube-width` example without the `width` parameter uses the default value `width: 50%`:
+
+    ```markdown
+    {{</* youtube-width id="CQmjAxr7LZs" title="What is O3DE?" */>}}
+    ```
+
+    Output:
+
+    {{< youtube-width id="CQmjAxr7LZs" title="What is O3DE?" >}}
+
+    <br>
+
+2. `youtube-width` example with the `width` parameter:
+
+    ```markdown
+    {{</* youtube-width id="CQmjAxr7LZs" title="What is O3DE?" width="100%" */>}}
+    ```
+
+    Output:
+
+    {{< youtube-width id="CQmjAxr7LZs" title="What is O3DE?" width="100%" >}}

@@ -1,5 +1,6 @@
 ---
-title: Audio Listener
+linkTitle: Audio Listener
+title: Audio Listener Component
 description: Use the Audio Listener component to add a virtual microphone in the Open 3D Engine environment.
 toc: true
 ---

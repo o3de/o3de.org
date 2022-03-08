@@ -56,7 +56,7 @@ $(function() {
 
 <p><code>#include &lt;RenderViewportWidget.h&gt;</code></p>
 
-<p>Inherits QWidget, Handler, Handler, Handler, InputChannelEventListener, and Handler.</p>
+<p>Inherits QWidget, Handler, ViewportInteractionRequests, Handler, InputChannelEventListener, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -107,12 +107,12 @@ AzFramework::CameraState&#160;</td><td class="memItemRight" valign="bottom"><b>G
 <tr class="memitem:a687fa44a32be2167a8a05d71b6e229e0"><td class="memItemLeft" align="right" valign="top"><a id="a687fa44a32be2167a8a05d71b6e229e0"></a>
 AzFramework::ScreenPoint&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportWorldToScreen</b> (const AZ::Vector3 &amp;worldPosition) override</td></tr>
 <tr class="separator:a687fa44a32be2167a8a05d71b6e229e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb151fb28808129654fa232d000ca86f"><td class="memItemLeft" align="right" valign="top"><a id="adb151fb28808129654fa232d000ca86f"></a>
-AZStd::optional&lt; AZ::Vector3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportScreenToWorld</b> (const AzFramework::ScreenPoint &amp;screenPosition, float depth) override</td></tr>
-<tr class="separator:adb151fb28808129654fa232d000ca86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a132a929a35b1a5dc75f8e15cf68438f8"><td class="memItemLeft" align="right" valign="top"><a id="a132a929a35b1a5dc75f8e15cf68438f8"></a>
-AZStd::optional&lt; AzToolsFramework::ViewportInteraction::ProjectedViewportRay &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportScreenToWorldRay</b> (const AzFramework::ScreenPoint &amp;screenPosition) override</td></tr>
-<tr class="separator:a132a929a35b1a5dc75f8e15cf68438f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414a94d8cf70b1bf60e658030b19b5c1"><td class="memItemLeft" align="right" valign="top"><a id="a414a94d8cf70b1bf60e658030b19b5c1"></a>
+AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportScreenToWorld</b> (const AzFramework::ScreenPoint &amp;screenPosition) override</td></tr>
+<tr class="separator:a414a94d8cf70b1bf60e658030b19b5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8817f2dba695a19ed71edfc3f23ac64"><td class="memItemLeft" align="right" valign="top"><a id="ae8817f2dba695a19ed71edfc3f23ac64"></a>
+AzToolsFramework::ViewportInteraction::ProjectedViewportRay&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportScreenToWorldRay</b> (const AzFramework::ScreenPoint &amp;screenPosition) override</td></tr>
+<tr class="separator:ae8817f2dba695a19ed71edfc3f23ac64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37f9d9f93f69663b0026c56cadacd637"><td class="memItemLeft" align="right" valign="top"><a id="a37f9d9f93f69663b0026c56cadacd637"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceScalingFactor</b> () override</td></tr>
 <tr class="separator:a37f9d9f93f69663b0026c56cadacd637"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -416,7 +416,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>leaveEvent</b> (QEven
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 13 2021 14:20:12 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 26 2022 14:01:59 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

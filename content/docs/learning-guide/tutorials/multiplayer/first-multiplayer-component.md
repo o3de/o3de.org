@@ -353,8 +353,7 @@ To listen for changes on a client in our component, do the following:
 1. Create a callback method.
 
     ```c++
-    // create an event handler
-    AZ::Event<double>::Handler m_uptimeChanged;
+    void OnUpTimeChanged( double uptime );
     ```
 
 1. Assign it to the event handler.
@@ -711,6 +710,8 @@ Now that we have created a data flow from the server to clients using network pr
     The player prefab for MultiplayerSample project can be found at `<o3de-multiplayersample>\Prefabs\Player.prefab`.
     Do the following steps to modify `Player.prefab`:
 
+    ![Attaching Network Component to an Autonomous Entity](/images/user-guide/multiplayer/add_myfirstnetworkcomponent_to_player_prefab.png)
+
     1. Instantiate a player prefab in the level temporarily. (You can find the player prefab for MultiplayerSample project at `<o3de-multiplayersample>\Prefabs\Player.prefab`.)
 
     1. Modify the player prefab instance by adding `MyFirstNetworkComponent` to `player` entity.
@@ -733,13 +734,13 @@ Now that we have created a data flow from the server to clients using network pr
         void HandleSendConfirmUptime(AzNetworking::IConnection* invokingConnection, const double& UpTime) override {}
     ```
 
-1. Take note of this and provide your own implementation of `HandleSendConfirmUptime`:
+1. Take note of this and provide the following implementation of `HandleSendConfirmUptime`:
 
     ```c++
     void MyFirstNetworkComponentController::HandleSendConfirmUptime([[maybe_unused]] AzNetworking::IConnection* invokingConnection,
         const double& upTime)
     {
-        AZLOG("MyFirstNetworkComponent", "on server - client told us about %f", upTime);
+        AZ_Printf("MyFirstNetworkComponent", "on server - client told us about %f\n", upTime);
     }
     ```
 
@@ -748,12 +749,22 @@ Now that we have created a data flow from the server to clients using network pr
     ```c++
     void MyFirstNetworkComponent::OnUpTimeChanged(double uptime)
     {
-        AZLOG("MyFirstNetworkComponent", "client = %f", uptime);
+        AZ_Printf("MyFirstNetworkComponent", "client = %f\n", uptime);
         static_cast<MyFirstNetworkComponentController*>(GetController())->SendConfirmUptime(uptime);
     }
     ```
 
-    ![Attaching Network Component to an Autonomous Entity](/images/user-guide/multiplayer/add_myfirstnetworkcomponent_to_player_prefab.png)
+1. Finally, add a check to `MyFirstNetworkComponentController::OnActivate` to ensure `MyFirstNetworkComponentController` is only connecting to the `TickBus` while it's executing on the server, not the autonomous player client:
+    ```c++
+    void MyFirstNetworkComponentController::OnActivate([[maybe_unused]] Multiplayer::EntityIsMigrating entityIsMigrating)
+    {
+        if (!IsAutonomous())
+        {
+            AZ::TickBus::Handler::BusConnect();
+        }
+    }
+    ```
+
 
 1. Your component source code should be as follows for `\path\to\MultiplayerSample\Gem\Code\Source\Components\MyFirstNetworkComponent.h`:
 
@@ -841,7 +852,7 @@ Now that we have created a data flow from the server to clients using network pr
 
         void MyFirstNetworkComponent::OnUpTimeChanged(double uptime)
         {
-            AZLOG("MyFirstNetworkComponent", "client = %f", uptime);
+            AZ_Printf("MyFirstNetworkComponent", "client = %f\n", uptime);
             static_cast<MyFirstNetworkComponentController*>(GetController())->SendConfirmUptime(uptime);
         }
 
@@ -854,7 +865,10 @@ Now that we have created a data flow from the server to clients using network pr
 
         void MyFirstNetworkComponentController::OnActivate([[maybe_unused]] Multiplayer::EntityIsMigrating entityIsMigrating)
         {
-            AZ::TickBus::Handler::BusConnect();
+            if (!IsAutonomous())
+            {
+                AZ::TickBus::Handler::BusConnect();
+            }
         }
 
         void MyFirstNetworkComponentController::OnDeactivate([[maybe_unused]] Multiplayer::EntityIsMigrating entityIsMigrating)
@@ -865,13 +879,13 @@ Now that we have created a data flow from the server to clients using network pr
         void MyFirstNetworkComponentController::OnTick([[maybe_unused]] float deltaTime, AZ::ScriptTimePoint time)
         {
             ModifyUpTime() = time.GetSeconds();
-            AZLOG("MyFirstNetworkComponent", "server = %f", GetUpTime());
+            AZ_Printf("MyFirstNetworkComponent", "server = %f\n", GetUpTime());
         }
 
         void MyFirstNetworkComponentController::HandleSendConfirmUptime([[maybe_unused]] AzNetworking::IConnection* invokingConnection,
             const double& upTime)
         {
-            AZLOG("MyFirstNetworkComponent", "on server - client told us about %f", upTime);
+            AZ_Printf("MyFirstNetworkComponent", "on server - client told us about %f\n", upTime);
         }
     }
     ```
@@ -911,3 +925,7 @@ Now that we have created a data flow from the server to clients using network pr
     </RemoteProcedure>
     </Component>
     ```
+
+10. At this point you should be able to see the client and server logs being emitted in the editor console when running the game in Play Mode:
+
+    ![Console logs emitted while running game from editor with RPC](/images/user-guide/multiplayer/add_myfirstnetworkcomponent_run_game_with_rpc.png)

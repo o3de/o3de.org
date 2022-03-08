@@ -19,7 +19,7 @@ The Lua development environment in O3DE includes the **Lua Editor**. The debugge
 To build Lua Editor and GridHub separately, navigate to the directory where you build your project (or where you build the O3DE engine, if you build the engine separately) and run the following command, inserting the path to your build directory.
 
 ```cmd
-cmake --build <build-directory> --target LuaIDE GridHub --config profile -- /m
+cmake --build <build-directory> --target LuaIDE GridHub --config profile -- -m
 ```
 
 ## Learning Lua 
@@ -56,8 +56,6 @@ After you read through this tutorial on writing Lua scripts for the component en
 | [Camera Component](/docs/user-guide/components/reference/camera/camera) | Use the Camera component to allow an entity to be used as a camera. |
 | [Using Player Input](/docs/user-guide/interactivity/input/using-player-input) |  Work with the Input component in O3DE. |
 | [Input Component Event Bus Interface](/docs/user-guide/components/reference/gameplay/input-event-bus-interface) | Work with the Input component EBus (event bus). |
-| [Simple State Component](/docs/user-guide/components/reference/gameplay/simple-state) | Use the Simple State component to provide a simple state machine. |
-| [Tag Component](/docs/user-guide/components/reference/gameplay/tag) | Use the Tag component to apply labels to entities. |
 | [AWS Client Auth Scripting](/docs/user-guide/gems/reference/aws/aws-client-auth/scripting) | Examples of using the AWS Client Auth Gem with Script Canvas and Lua. |
 | [AWS Metrics Scripting](/docs/user-guide/gems/reference/aws/aws-metrics/scripting) | Examples of using Script Canvas or Lua with the AWS Metrics Gem to generate and submit metrics. |
 | [Gestures Gem](/docs/user-guide/gems/reference/input/gestures) | The Gestures Gem provides detection for common gesture-based input actions. |

@@ -61,6 +61,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:adc7dd0106848669c2fc3191e4b88a97a"><td class="memItemLeft" align="right" valign="top"><a id="adc7dd0106848669c2fc3191e4b88a97a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>OwnedEntitySet</b> = AZStd::unordered_set&lt; <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html">ConstNetworkEntityHandle</a> &gt;</td></tr>
+<tr class="separator:adc7dd0106848669c2fc3191e4b88a97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7561b77d83cdc5521adfe853119d95be"><td class="memItemLeft" align="right" valign="top"><a id="a7561b77d83cdc5521adfe853119d95be"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>EntityList</b> = AZStd::vector&lt; <a class="el" href="class_multiplayer_1_1_network_entity_handle.html">NetworkEntityHandle</a> &gt;</td></tr>
 <tr class="separator:a7561b77d83cdc5521adfe853119d95be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,12 +137,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a837079f042f200c274bfc3ba345289c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b9d2bb30895a67bc6538d7438b4deb3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a0b9d2bb30895a67bc6538d7438b4deb3">HandleLocalRpcMessage</a> (<a class="el" href="class_multiplayer_1_1_network_entity_rpc_message.html">NetworkEntityRpcMessage</a> &amp;message)=0</td></tr>
 <tr class="separator:a0b9d2bb30895a67bc6538d7438b4deb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc08d8e3450fbfc584c2cda23b92b033"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#afc08d8e3450fbfc584c2cda23b92b033">HandleEntitiesExitDomain</a> (const NetEntityIdSet &amp;entitiesNotInDomain)=0</td></tr>
-<tr class="separator:afc08d8e3450fbfc584c2cda23b92b033"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11c71566cad6c781587b28ad22154826"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a11c71566cad6c781587b28ad22154826">ForceAssumeAuthority</a> (const <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html">ConstNetworkEntityHandle</a> &amp;entityHandle)=0</td></tr>
-<tr class="separator:a11c71566cad6c781587b28ad22154826"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0d3a8a66c48f7e2d1a00e462a5a2c94"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#ae0d3a8a66c48f7e2d1a00e462a5a2c94">SetMigrateTimeoutTimeMs</a> (AZ::TimeMs timeoutTimeMs)=0</td></tr>
-<tr class="separator:ae0d3a8a66c48f7e2d1a00e462a5a2c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a500ead1043aabb9b0642bfcbcf669d9b"><td class="memItemLeft" align="right" valign="top"><a id="a500ead1043aabb9b0642bfcbcf669d9b"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a500ead1043aabb9b0642bfcbcf669d9b">DebugDraw</a> () const =0</td></tr>
 <tr class="memdesc:a500ead1043aabb9b0642bfcbcf669d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visualization of network entity manager state. <br /></td></tr>
@@ -498,38 +495,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a11c71566cad6c781587b28ad22154826"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11c71566cad6c781587b28ad22154826">&#9670;&nbsp;</a></span>ForceAssumeAuthority()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Multiplayer::INetworkEntityManager::ForceAssumeAuthority </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html">ConstNetworkEntityHandle</a> &amp;&#160;</td>
-          <td class="paramname"><em>entityHandle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Forcibly assumes authoritative control over the given entity. This should only be used in the event of the unexpected loss of the previous authority, any other usage could corrupt the simulation. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entityHandle</td><td>the entity to forcibly assume authoritative control over </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a1de6f5509975d51c8ab838e806f99dc6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1de6f5509975d51c8ab838e806f99dc6">&#9670;&nbsp;</a></span>GetEntity()</h2>
 
@@ -752,38 +717,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="afc08d8e3450fbfc584c2cda23b92b033"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc08d8e3450fbfc584c2cda23b92b033">&#9670;&nbsp;</a></span>HandleEntitiesExitDomain()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Multiplayer::INetworkEntityManager::HandleEntitiesExitDomain </td>
-          <td>(</td>
-          <td class="paramtype">const NetEntityIdSet &amp;&#160;</td>
-          <td class="paramname"><em>entitiesNotInDomain</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Handles a set of entities transitioning between entity domains. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entitiesNotInDomain</td><td>the set of entities that are no longer contained within our entity domain </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a0b9d2bb30895a67bc6538d7438b4deb3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b9d2bb30895a67bc6538d7438b4deb3">&#9670;&nbsp;</a></span>HandleLocalRpcMessage()</h2>
 
@@ -849,9 +782,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Configures the NetworkEntityManager. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Configures the NetworkEntityManager to operate as an authoritative host. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hostId</td><td>the hostId of this NetworkEntityManager (invalid for clients) </td></tr>
+    <tr><td class="paramname">hostId</td><td>the hostId of this NetworkEntityManager </td></tr>
     <tr><td class="paramname">entityDomain</td><td>the entity domain used to determine which entities this manager has authority over </td></tr>
   </table>
   </dd>
@@ -881,7 +814,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns whether or not the network entity manager has been initialized. </p><dl class="section return"><dt>Returns</dt><dd>boolean true if this network entity manager has been intialized </dd></dl>
+<p>Returns whether or not the network entity manager has been initialized to host. </p><dl class="section return"><dt>Returns</dt><dd>boolean true if this network entity manager has been intialized to host </dd></dl>
 
 </div>
 </div>
@@ -1080,38 +1013,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="ae0d3a8a66c48f7e2d1a00e462a5a2c94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0d3a8a66c48f7e2d1a00e462a5a2c94">&#9670;&nbsp;</a></span>SetMigrateTimeoutTimeMs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Multiplayer::INetworkEntityManager::SetMigrateTimeoutTimeMs </td>
-          <td>(</td>
-          <td class="paramtype">AZ::TimeMs&#160;</td>
-          <td class="paramname"><em>timeoutTimeMs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Overrides the default timeout time used during entity migrations. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">timeoutTimeMs</td><td>the timeout time to use in milliseconds </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ab1eea949f3bac155bd09502cf8f0c7a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1eea949f3bac155bd09502cf8f0c7a2">&#9670;&nbsp;</a></span>SetupNetEntity()</h2>
 
@@ -1168,7 +1069,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 13 2021 14:20:44 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 26 2022 14:02:27 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

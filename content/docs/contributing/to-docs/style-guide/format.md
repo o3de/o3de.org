@@ -1,12 +1,12 @@
 ---
-title: Formatting Documentation for Open 3D Engine
+title: Formatting O3DE Documentation
 description: A reference for all of the typesetting and formatting rules for the Open 3D Engine (O3DE) documentation.
 linktitle: Formatting
 weight: 200
 toc: true
 ---
 
-With Markdown, sometimes there are multiple methods to achieve the same result. For example, you can enclose words in underscores (`_`) or asterisks (`*`) to create italics. In these situations, it is best to use one method throughout the documentation. To keep both the documentation Markdown source files, and the O3DE documentation on-page presentation consistent, adhere to the following basic documentation standards.
+The **Open 3D Engine (O3DE)** documentation is written in Markdown syntax. With Markdown, sometimes there are multiple methods to achieve the same result. For example, you can enclose words in underscores (`_`) or asterisks (`*`) to create italics. In these situations, it is best to use one method throughout the documentation. To keep both the documentation Markdown source files, and the O3DE documentation on-page presentation consistent, adhere to the following basic documentation standards.
 
 ## Topic headings
 
@@ -293,7 +293,7 @@ Do | Don't
 ### Separate commands from output
 
 ```shell
-cmake --build <MyProject> --config profile --target Editor -- /m
+cmake --build <MyProject> --target Editor --config profile -- -m
 ```
 
 The output is similar to this:

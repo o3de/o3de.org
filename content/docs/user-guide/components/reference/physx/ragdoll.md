@@ -1,7 +1,7 @@
 ---
-description: ' Use the PhysX Ragdoll component to create a physical representation
-  of a character in the Open 3D Engine Animation Editor . '
-title: PhysX Ragdoll
+linkTitle: PhysX Ragdoll
+description: Use the PhysX Ragdoll component to create a physical representation of a character in the Open 3D Engine (O3DE) Animation Editor.
+title: PhysX Ragdoll Component
 ---
 
 

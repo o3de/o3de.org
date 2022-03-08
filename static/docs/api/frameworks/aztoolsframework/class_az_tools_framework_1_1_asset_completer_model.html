@@ -81,6 +81,9 @@ QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> (const Q
 <tr class="memitem:ac62332573bf996d02172d84b68fd0238"><td class="memItemLeft" align="right" valign="top"><a id="ac62332573bf996d02172d84b68fd0238"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFilter</b> (AZ::Data::AssetType filterType)</td></tr>
 <tr class="separator:ac62332573bf996d02172d84b68fd0238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44f57cdd263cb9b6e7abd83430b16251"><td class="memItemLeft" align="right" valign="top"><a id="a44f57cdd263cb9b6e7abd83430b16251"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFilter</b> (FilterConstType filter)</td></tr>
+<tr class="separator:a44f57cdd263cb9b6e7abd83430b16251"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c39a9d51c0451e0dbc7e60d290ad0a6"><td class="memItemLeft" align="right" valign="top"><a id="a9c39a9d51c0451e0dbc7e60d290ad0a6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshAssetList</b> ()</td></tr>
 <tr class="separator:a9c39a9d51c0451e0dbc7e60d290ad0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -96,6 +99,12 @@ const AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>G
 <tr class="memitem:a21d2a2c02723b0eb737e7736c4b3bb29"><td class="memItemLeft" align="right" valign="top"><a id="a21d2a2c02723b0eb737e7736c4b3bb29"></a>
 const AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetIdFromIndex</b> (const QModelIndex &amp;index)</td></tr>
 <tr class="separator:a21d2a2c02723b0eb737e7736c4b3bb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad075facaa2c21bb89afacbe486d7bef3"><td class="memItemLeft" align="right" valign="top"><a id="ad075facaa2c21bb89afacbe486d7bef3"></a>
+const AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetPathFromIndex</b> (const QModelIndex &amp;index)</td></tr>
+<tr class="separator:ad075facaa2c21bb89afacbe486d7bef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee2d918364707be1cb5b69943fbc6430"><td class="memItemLeft" align="right" valign="top"><a id="aee2d918364707be1cb5b69943fbc6430"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFetchEntryType</b> (AssetBrowserEntry::AssetEntryType entryType)</td></tr>
+<tr class="separator:aee2d918364707be1cb5b69943fbc6430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Model storing all the files that can be suggested in the Asset Autocompleter for PropertyAssetCtrl. </p>
@@ -105,7 +114,7 @@ const AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><b>Ge
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 13 2021 14:19:20 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 26 2022 14:01:09 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
