@@ -34,6 +34,7 @@ toc: true
 | [Primitive Assets](./assets/primitive-assets) | The Primitive Assets Gem provides primitive shape mesh objects with physics enabled. |
 | [Scene Processing](./assets/scene-processing) | The Scene Processing Gem provides FBX Settings, a tool you can use to specify the default settings for processing .fbx files for actors, meshes, motions, and PhysX. |
 | [Test Asset Builder](./assets/test-asset-builder) | The Test Asset Builder Gem is used to feature test Asset Processor. |
+| [Procedural Prefab](./assets/procedural-prefab) | procedural-prefab |
 
 ## Audio
 

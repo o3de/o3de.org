@@ -1,0 +1,134 @@
+---
+linkTitle: Procedural Prefab
+title: Prefab Builder Gem
+description: The Prefab Builder Gem provides an Asset Processor module for prefabs, which are complex assets built by combining smaller entities.
+toc: true
+---
+
+# Procedural Prefabs
+
+The Prefab system allows Editor designers author entity/component hierarchy templates in the O3DE Editor. These Authored Prefab templates are used to speed up content creation work flows. The Procedural Prefab feature compliments the Authored Prefabs by allowing technical content developers (such as technical artists) to write Python scripts to write out prefab templates from incoming source scene assets. Procedural prefabs perform the same features as prefabs authored in the Editor (aka authored prefabs) such as acting as a collection of entities and components that can be instantiated in the Editor.
+
+The Prefab gem provides these procedural prefab features:
+- Adds the Prefab Group scene pipeline rules
+- Enables the procedural prefab asset handling loading
+- Enables the default procedural prefab product logic (can be toggled off)
+- Adds some Editor content menus and save operations (can be toggled off)
+- A Python API to enable scene building scripts to create Prefab Group rules
+
+## Procedural Prefab System
+
+The Procedural Prefab system allows a content team to author prefab templates from DCC tools like Maya or Blender source scene assets such as FBX files. When the default procedural prefab toggle is active the Prefab gem will create a procedural prefab asset to approximate the static mesh nodes from the DCC tool. The content team can further refine the procedural prefab assets by writing Python scripts that customize the scene builder pipeline to produce procedural prefab assets. 
+
+The procedural prefab assets are read only in the Editor since they are meant to be changed in a DCC tool, not the Editor. When the Editor instantiates a procedural prefab asset in the scene, they are placed inside authored prefab templates (including the scene level since it is also a prefab template).
+
+The procedural prefab assets come from a new scene manifest rule container called a Prefab Group. The only way to create a scene manifest Prefab Group is through a Python script or a C++ scene builder. The Prefab gem provides a default C++ scene builder that generates a default Prefab Group for a source scene asset.
+
+This is an example of the usage where with a car scene from a DCC tool (i.e Maya, Blender) exports a car.fbx file.
+
+![Example DCC tool usage](/images/user-guide/assets/pipeline/mermaid-diagram-dcc-tool.png)
+
+## Prefab Groups
+
+The scene pipeline consists of a scene graph (a hierarchy of nodes with content like mesh and transform data) and a scene manifest (a list of groups and rules to describe the relationships of the scene graph nodes). The Mesh Group is an example of a scene manifest rule; it describes collections of mesh nodes to be used written out as a model. 
+
+The Prefab gem adds a new scene manifest container rule called the Prefab Group. A natural extension to the scene manifest is a rule to output a prefab product asset that describes entity-component trees backed by the source scene file. The Editor will be able to load this procedural prefab product asset to place into project scene levels.
+
+The Prefab Group has three fields: **name**, **id**, and **prefabDomData**. The name and id field are meant to give the group a human readable name and a unique group ID from other groups, respectively. The prefabDomData is a JSON document that describes the entities, components, and properties for a prefab template. It is possible to create a JSON document manually to define the prefabDomData field, but the PythonAssetBuilder defines a number of helper classes to access the scene graph, create Editor entities, and add mesh asset references in Python.
+
+## Prefab Asset Handling and Processing
+
+The Prefab gem handles the procedural prefab asset processing, loading, presentation, and handling. 
+
+The procedural prefabs are stored in the cache along with the rest of the product assets. When the scene builder is finished processing a source scene asset with a Prefab Group it will write out the procedural prefab product asset next to the source asset named the same as the Prefab Group’s name. 
+
+For example, for a source asset ```assets/scenery/house.fbx``` with a Prefab Group named *my_house* will end up in the cache as a ```assets/scenery/my_house.procprefab``` product asset.
+
+## Default Procedural Prefab Products
+
+A default procedural prefab is a prefab template that approximates a source scene asset. The logic creates a Mesh Group for each mesh node in the scene; this generates a 3D model product asset for each mesh node. The nodes in the scene that have mesh data become entities in a scene with a mesh component. The node hierarchy is assembled by the node parent structure inside the source scene asset.
+
+The Prefab gem will automatically create a default procedural prefab for each source scene asset (such as a STL or FBX file) if no scene manifest is discovered. More details on scene manifest settings file can be found at https://www.o3de.org/docs/user-guide/assets/scene-settings. 
+
+This feature can be turned off globally or handled in the Edit Settings inside the O3DE Editor. To globally turn off the default procedural prefab logic, create a settings registry entry to set "O3DE/Preferences/Prefabs/CreateDefaults" field to false.
+
+An example registry setting:
+```
+{
+  "O3DE": {
+    "Preferences": {
+      "Prefabs": {
+        "CreateDefaults": false
+      }
+    }
+  }
+}
+```
+
+## Procedural Prefab Editor Operations
+
+The Prefab gem adds some Editor operation user interface options such as context menus. These menu options give the user different ways to use the procedural prefabs inside an Editor’s scene.
+
+### Instantiate Procedural Prefab
+
+The most common way to use a procedural prefab is to right-click in the 3D scene view and choose the "Instantiate Procedural Prefab..." option. It is also possible to select this menu option in the Entity Outliner.
+
+![Instantiate Procedural Prefab...](/images/user-guide/assets/pipeline/eo_menu_option.png)
+
+Then "Pick Procedural Prefab" dialog will come up. The procedural prefab asset should be listed under the source scene asset file entry.
+
+![Pick Procedural Prefab](/Gems/Prefab/PrefabBuilder/docs/images/pick_prefab.png)
+
+The procedural prefab should show up inside the authored prefab.
+
+![Procedural Prefab in Entity Outliner](/images/user-guide/assets/pipeline/eo_withprocprefab.png)
+
+### Save Off Procedural Prefab
+
+The Editor can save out a procedural prefab asset as an authored prefab source file as well. This allows Editor users to tweak a procedural prefab asset. The users should know that the prefab will get no updates from the procedural prefab once been saved off to an authored prefab.
+
+The context menu item "Save as Prefab..." for the procedural prefab asset will prompt for a file name to save as an authored prefab.
+
+![Procedural Prefab in Entity Outliner](/images/user-guide/assets/pipeline/save_as_prefab.png)
+
+## Procedural Prefab Python Overview
+
+The Python Scene Builder (PSB) system allows a script developer some mechanisms to reassemble the source scene assets into any desired mesh and procedural prefab product assets. The mechanism to create procedural prefab assets is to update the scene manifest with a Prefab Group rule. The PSB scripts use script hooks via the 'azlmbr' Python module to hook into the “Update Manifest” scene building event. 
+
+The Python script can be associated with a source scene file by either manually adding a scene manifest file along with its source scene asset file or by using the Editor’s FBX Settings menu to assign a script. In order to manually adding a scene manifest file, a new blank text file would be added next to the source scene asset. This is an example of adding an asset info file next to a source asset scene file:
+
+```
+MyProject/scenes/foo.fbx
+MyProject/scenes/foo.fbx.assetinfo
+```
+
+In this example, the foo.fbx source asset scene file was exported from a DCC tool. The foo.fbx.assetinfo file was written out as a JSON text file to describe a script rule to use a PSB script to process the scene file.
+
+The contents of the foo.fbx.assetinfo file would look like this:
+```
+{
+    "values": [
+        {
+            "$type": "ScriptProcessorRule",
+            "scriptFilename": "MyProject/pipeline/process_chunks.py"
+        }
+    ]
+}
+```
+
+This will tell the scene builder (via the ScriptProcessingRule) to load the MyProject/pipeline/process_chunks.py script file to during the “Update Manifest” scene builder event.
+ 
+The other method for assigning a Python script to a source scene asset is to use the Editor’s Asset Browser to get the FBX Settings dialog. The user can use the Editor to assign a Python scene builder script to an FBX file in the Scene Settings dialog. For example, right-click on an FBX file from the Asset Browser and select the “Edit Settings...” menu option. This creates (overwrites) the scene manifest file (.assetinfo) for the FBX source scene asset. To unassign the script file, the “Reset Settings...” menu option will remove the scene manifest file.
+
+![Assign Python Scene Builder Script](/images/user-guide/assets/pipeline/assign_build_script.png)
+
+## Terminology
+
+- Prefab – A prefabricated description of an entity-component tree in a JSON document
+- Spawnable - A prefab asset that has been compiled into a spawnable prefab asset, content that can be loaded - dynamically while a game is running.
+Authored Prefab - A prefab that was created by a content creator via the O3DE Editor, and is tracked as a source asset.
+- Procedural Prefab - A prefab that is output from this new system, a prefab that only exists in the asset cache and is not hand authored.
+- Source Scene Asset – A file that describes the 3D data such as meshes, cameras, lights, and materials organized in a node hierarchy; example file extensions FBX, DAE, STP
+- Scene Manifest – a document paired with a Scene File to describe a rule set used to export product assets from a scene
+- Digital Content Creation Tool (DCC Tool) – this is a digital asset creation package such as Blender, Maya, or 3D Studio Max
+- Technical pipeline developers - people (such as Technical Artists and Tool Programmers) that are in charge of preparing assets for the O3DE engine to consume; they typically use Python scripts or even C++ code to extend the asset pipeline to transform and/or prepare custom assets
