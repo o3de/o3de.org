@@ -15,7 +15,7 @@ You can create global wind forces or localized wind forces contained within a co
 ## Create a wind provider entity
 
 {{< tip >}}
-Male sure you have the **NVIDIA Cloth** Gem enabled in your project so that you can easily test the results the wind provider entity.
+Make sure you have the **NVIDIA Cloth** Gem enabled in your project so that you can easily test the results the wind provider entity.
 {{< /tip >}} 
 
 1. Create an entity for the wind provider.
