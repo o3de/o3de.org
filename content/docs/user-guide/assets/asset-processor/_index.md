@@ -22,7 +22,7 @@ With Asset Processor, a **Launcher** can be run on a target platform without dep
 
 On a host platform, connections between Asset Processor and O3DE Editor are automatically maintained.
 
-When you launch software that requires an Asset Processor connection, such as the O3DE Editor or Launcher in a non-release configuration, the Asset Processor will automatically be launched. If the Asset Processor has been launched this way, it will automatically shut down when you close the Editor or Launcher.
+When you launch software that requires an Asset Processor connection, such as the O3DE Editor or Launcher in a non-release configuration, Asset Processor is automatically launched. If Asset Processor has been launched this way, it automatically shuts down when you close the Editor or Launcher.
 
 {{< note >}}
 Symbolic links are not supported when using Asset Processor. To ensure that Asset Processor works properly, follow these guidelines:
