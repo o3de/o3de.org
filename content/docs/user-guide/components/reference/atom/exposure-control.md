@@ -5,7 +5,7 @@ description: 'Open 3D Engine (O3DE) Exposure Control component reference.'
 toc: true
 ---
 
-The **Exposure Control** component adjusts the amount of light the camera exposes in the scene, which controls how bright the scene appears. You can set the exposure manually or automatically using **Eye Adaptation** mode.
+The **Exposure Control** component adjusts the amount of light the camera exposes in the scene, which controls how bright the scene appears. You can set the exposure manually, or use *Eye Adaptation* mode to automatically adjust exposure based on the scene's brightness levels. Eye Adaptation mode adjusts the lighting in the scene so that the average brightness is at a middle gray lightness level. On top of the automatic exposure, you can further adjust the exposure by increasing or decreasing the **Manual Compensation** property, or exposure stops.
 
 
 ## Provider ##
@@ -27,9 +27,9 @@ The **Exposure Control** component adjusts the amount of light the camera expose
 | Property | Description | Value | Default |
 | - | - | - | - |
 | **Enable** | Enables the exposure control properties. | Boolean | `Enabled`  |
-| **Control Type** | Specifies how to control the exposure value. When **Control Type** is `Manual Only`, only the **Manual Compensation** value defines the exposure value in the scene. The exposure value remains constant, despite changes in brightness in the scene that's captured by the camera. When **Control Type** is `Eye Adaptation`, The exposure of the scene is both defined by the **Manual Compensation** and automatically adjusted based on the brightness of the scene captured by the camera. | `Manual Only`, `Eye Adaptation` | `Manual Only` |
-| **Overrides - Enabled Override** | If enabled, all Exposure Control component properties will be set to the values specified in the Overrides property group. | Boolean | `Enabled` |
-| **Manual Compensation** | Sets the exposure compensation value. The exposure value unit is EV100 (an EV with 100 international standards organization (ISO)). When the manual compensation is lower, the exposure of the scene decreases, rendering the scene darker. A higher manual compensation renders the scene brighter. Manual Compensation is active in Manual Only and Eye Adaptation mode. | Float: -16.0 - 16.0 | `0.0` |
+| **Overrides - Enabled Override** | If enabled, you can override Exposure Control settings to have advanced PostFX looks and control. | Boolean | `Enabled` |
+| **Control Type** | Specifies how to control the exposure value. <br><br>When **Control Type** is `Manual Only`, only the **Manual Compensation** value defines the exposure value in the scene. The exposure value remains constant, despite changes in brightness in the scene that's captured by the camera. <br><br>When **Control Type** is `Eye Adaptation`, the scene's exposure automatically adjusts such that the average brightness is at a middle gray lightness level. Then, the exposure is further adjusted based on the **Manual Compensation**. | `Manual Only`, `Eye Adaptation` | `Manual Only` |
+| **Manual Compensation** | Sets the exposure compensation value in stops. A lower value leads to less exposure, rendering the scene darker. A higher value renders the scene brighter. | Float: -16.0 - 16.0 | `0.0` |
 | **Eye Adaptation** | See [Eye Adaptation properties](#eye-adaptation-properties).  |   |   |
 
 
@@ -39,8 +39,8 @@ The following set of properties are active when **Control Type** is set to `Eye 
 
 | Property | Description | Value | Default |
 | - | - | - | - |
-| **Minimum Exposure** | Minimum exposure value for the auto exposure. | Float: -16.0 - 16.0 | `-16.0` |
-| **Maximum Exposure** | Maximum exposure value for the auto exposure. | Float: -16.0 - 16.0 | `16.0` |
-| **Speed Up** |The speed at which auto exposure adapts to bright scenes. A higher value increases the speed. | Float: 0.01 - 10.0 | `3.0` |
-| **Speed Down** | The speed at which auto exposure adapts to dark scenes. A higher value increases the speed. | Float: 0.01 - 10.0 |  `1.0` |
-| **Enable Heatmap** | Provides information regarding the exposure values that the camera captures in the scene. It appears on top of the **Viewport**. You can move the camera to see the heatmap of other areas. Areas below the **Minimum Exposure** value are highlighted in blue, and areas above the **Maximum Exposure** value in red. | None | None |
+| **Minimum Exposure** | The minimum exposure value at which automatic exposure can automatically adjust to. | Float: -16.0 - 16.0 | `-16.0` |
+| **Maximum Exposure** | The maximum exposure value at which automatic exposure can automatically adjust to. | Float: -16.0 - 16.0 | `16.0` |
+| **Speed Up** |The speed at which automatic exposure adapts to brighter scenes. A higher value increases the speed. | Float: 0.01 - 10.0 | `3.0` |
+| **Speed Down** | The speed at which automatic exposure adapts to darker scenes. A higher value increases the speed. | Float: 0.01 - 10.0 |  `1.0` |
+| **Enable Heatmap** | Provides a histogram of the exposure values that the camera captures in the scene. It appears on top of the **Viewport**. You can move the camera to see the heatmap of other areas. Areas below the **Minimum Exposure** value are highlighted in blue, and areas above the **Maximum Exposure** value in red. The numbers on the heatmap represent stops. | None | None |
