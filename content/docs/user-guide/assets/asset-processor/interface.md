@@ -22,7 +22,6 @@ The Asset Processor UI has several tabs you can use to view the status of asset 
 * **D**: The project, engine root, and the port used by Asset Processor to communicate with other processes are displayed below the status line.
 * **E**:  The buttons on the left select the tab to display in the Asset Processor UI. Refer to [Asset Processor tabs](#asset-processor-tabs) below for more information.
 * **F**:  The information Asset Processer displays is dependent on the selected Asset Processor tab. Refer to [Asset Processor tabs](#asset-processor-tabs) below for more information.
-* **G**: Activate to display additional context details, if available.
 
 ## Asset Processor tabs
 
@@ -47,33 +46,44 @@ Jobs in the Asset Status list display the statuses below:
 * {{< icon "pending.svg" >}} **Pending** - The job has been created, but has not run.
 * {{< icon "processing.svg" >}} **Processing** - The job is in progress.
 * {{< icon "warning-yellow.svg" >}} **Completed - Warning** - The job has completed but has emitted a warning.
-* {{< icon "error.svg" >}} **Completed - Error** - The job has completed and has emitted an error.
-* {{< icon "valid.svg" >}} **Completed** - The job has completed successfully with no warnings or errors.
-* {{< icon "error.svg" >}} **Failed** - The job has failed and has emitted an error.
+* {{< icon "warning-yellow.svg" >}} **Completed - Error** - The job has completed and has emitted an error.
+* {{< icon "valid.svg" >}} **Completed** - The job has completed successfully with no warnings, errors, or failures.
+* {{< icon "error.svg" >}} **Failed** - The job has failed and has emitted a failure.
 
-It's possible for a job to emit a combination of warnings and errors.
+It's possible for a job to emit a combination of warnings, errors, and failures.
 
 Completed with warnings produces a valid product asset, but might have some data substituted. Suppose a job is processing a `.fbx` file that produces several mesh product assets, and that a `.assetinfo` sidecar file specifies to process the meshes with custom normals. If the meshes in the `.fbx` file do not have custom normals, the Asset Builder generates normals instead. Valid product assets are produced, but several warnings are emitted because custom normals could not be found for the mesh assets.
 
-Completed with errors produces a valid product asset, but has incomplete data. Errors happen when data required for the product asset is missing or cannot be produced. Using the example above, suppose the `.assetinfo` specifies tangents should be generated for the mesh product assets, but the Asset Builder fails to produce the tangents. The end result is a valid product asset that does not contain all the requested data.
+Completed with errors produces a product asset but it may not be valid for all use cases, such as having incomplete data. Errors happen when data required for the product asset is missing or cannot be produced. Using the example above, suppose the `.assetinfo` specifies tangents should be generated for the mesh product assets, but the Asset Builder fails to produce the tangents. The end result is a valid product asset that does not contain all the requested data.
 
-Failed with errors does not produce a product asset.
+Failed jobs do not produce a product asset.
+
+What is considered a log message, warning, error, and failure, and how the system handles these is up to each builder's author. Our guidance is:
+ * Print a log message for anything that will be useful as a bread crumb for tracking down problems later, for both the content creator or the builder author.
+ * Emit a warning if something is wrong but it can mostly be handled, and the output your builder can generate is reasonably close to what the content creator intended.
+ * Post an error if your builder encounters data it can't properly handle and you know the product asset you output won't be fully correct. When possible, this is prefered over a failure because the failure won't produce any product asset, so any references from other assets to this asset may break. For example, if a prefab references a mesh product asset from an FBX file, an update to the FBX causes the job to fail, then any edits to the prefab while this job is failing may lose the reference to the mesh.
+ * Post a failure if your builder encounters something it cannot happen and all processing should end, and the builder should not output anything. This is generally considered a last resort, and is most commonly seen when a builder crashes during processing.
 
 {{< note >}}
-The most common reason for failure is that the Asset Builder has crashed. When an Asset Builder crashes, Asset Processor logs the job failure with an error and continues processing assets from the jobs list. When Asset Processor is restarted, it attempts to reprocess any failed jobs. Alternatively, you can locate individual source assets in the Assets tab, **right-click** on the asset, and select **Reprocess File** to re-run the process job.
+The most common reason for failure is that the Asset Builder has crashed. When an Asset Builder crashes, Asset Processor logs the job failure with a failure and continues processing assets from the jobs list. When Asset Processor is restarted, it attempts to reprocess any failed jobs. If an asset has failed to process, we recommend you first examine why this failure occured, and inform your team, sharing any relevant artifacts such as log messages. Once you proceed to the next step, that information may be lost. Alternatively, you can locate individual source assets in the Assets tab, **right-click** on the asset, and select **Reprocess File** to re-run the process job.
 {{< /note >}}
 
-The circumstances that cause an Asset Builder to complete a job with warnings or errors, or fail with errors, are left to the implementation of the Asset Builder, but should follow the guidance above.
+The circumstances that cause an Asset Builder to complete a job with warnings, errors, or failures are left to the implementation of the Asset Builder, but should follow the guidance above.
 
 ### Filtering by keyword and status
 
 The Asset Status list can be filtered by entering keywords and regular expressions in the filter box. The regular expressions (regex) are standard `std::regex` in extended format. The `std::regex` rules apply.
 
-The example below searches for all files ending with .png. The asterisk (`*`) indicates any character 0 or more times.
+The example below searches for all files ending with .png. The asterisk (`*`) indicates any character 0 or more times. The period is escaped, because in a regex search `.` matches any non-newline character.
 
 ```
-*.png
+*\.png
 ```
+
+{{< note >}}
+It's easy to forget this is a regex based search. Searching for ".fbx" does not actually search for that exact string, it means search for any character followed by the characters fbx. ".FBX" would return results such as "MyFBXTexture.png", because it matches the given search condition, the '.' matches any character, including 'y' in this example.
+{{< /note >}}
+
 
 The example below uses regex to search for any files under an `Actors` subdirectory. The dot plus (`.+`) indicates any character 1 or more times.
 
@@ -96,7 +106,10 @@ You can perform actions on each row in the Asset Status table. **Right-click** o
 | Menu Item | Description |
 | - | - |
 | **Show in Asset Browser** | Highlights the asset in O3DE Editor’s Asset Browser, if O3DE Editor is open. |
+| **View Source Asset**  | Switches to the Asset Tab, and selects the Source Asset for this job. |
+| **View Product Asset...**  | A pop out menu showing all product assets created from this job. Selecting one will switch to the Asset Tab and select that Product Asset. |
 | **Open in Explorer** | Opens the asset in the system file browser. |
+| **Open**  | Attempts to open the Source Asset with your operating system's default interface for opening files of that type. |
 | **Copy**  | Copies the asset name. |
 | **Open log file** | Opens the most recent log file for the asset, if one exists. |
 | **Open folder with log file** | Opens the directory containing the log file for the asset. |
@@ -142,6 +155,8 @@ The Event Log Line Details table also features a context menu to copy details to
 
 In the Assets tab, the tabbed pane on the left displays either the **Source Assets** tree from the scan directories, or the **Product Assets** tree from the **Asset Cache**. You can browse either tree for specific assets, or use the search bar to find assets by name or ID. When an asset is selected, information about the asset is displayed on the right of the interface.
 
+The search in the Assets Tab is also a regex based search, like for the jobs tab. See the jobs section for details on regex searching.
+
 {{< note >}}
 The directory tree displayed in the tab is from the **Asset Database**, not the files on disk. It only displays assets that have been processed. Files on disk that are ignored by Asset Processer do not appear in the directory tree. 
 {{< /note >}}
@@ -161,12 +176,12 @@ When an asset is selected in the Source Assets list, information about the asset
 | Pane | Description |
 | - | - |
 | **Asset Information** | Detailed information about the selected asset including the name of the asset, the scan directory path, and the Universally Unique Identifier (UUID) associated with the asset. |
-| **Products** | The product assets that are produced from the source asset. |
-| **Outgoing Source Dependencies** | The list of source assets that require an output from this source asset. |
-| **Incoming Source Dependencies** | The list of source assets that must have completed their process jobs before this source asset can be processed. |
+| **Products** | The product assets that are produced from jobs that processed this source asset. |
+| **Outgoing Source Dependencies** | Any files that have been registered as a source dependency for any jobs that run on this source asset. |
+| **Incoming Source Dependencies** | The list of source assets that have one or more jobs that have marked this source asset as a source dependency, any modifications to this source asset will cause these jobs to run. |
 
 {{< note >}}
-Choose the {{< icon "open-in-internal-app.svg" >}} **Open** icon next to a product asset name to open that asset in the Product Assets tab.
+Choose the {{< icon "open-in-internal-app.svg" >}} **Go to** icon next to a product asset name to go to that asset in the Product Assets tab, or this icon next to a source asset name to go to that asset in the Source Assets tab.
 {{< /note >}}
 
 ### Product Assets
@@ -177,18 +192,11 @@ When an asset is selected in the Product Assets list, information about the asse
 
 | Pane | Description |
 | - | - |
-| **Asset Information** | Information for the product asset including the asset UUID, the last time the product was generated, the type of job that generated the asset, which platform the asset was produced for, and which source asset is the primary input for the product. |
-| **Outgoing Product Dependencies** | The list of product assets that depend on this product asset. |
-
-| **Outgoing Unmet Path Product Dependencies**<sup>1</sup> | The list of product assets that are hardcoded paths to be loaded by the O3DE runtime. |
-
-| **Incoming Product Dependencies** | The list of product assets that this product asset depends on. |
-
-| **Missing Product Dependencies** | Detect missing product dependencies. |
-
-{{< note >}}
-<sup>1</sup>Because these products aren’t necessarily generated by Asset Processor, they’re placed into a separate category of dependencies.
-{{< /note >}}
+| **Asset Information** | Information for the product asset including the asset ID, the last time the product was generated, the type of job that generated the asset, which platform the asset was produced for, and which source asset is the primary input for the product. |
+| **Outgoing Product Dependencies** | Dependencies that this asset has. This is the list of product assets that this asset references in some way. |
+| **Outgoing Unmet Path Product Dependencies** | Path based product dependencies that have not been resolved. In some cases these may be optional and expected, in other cases an unmet path product dependency could indicate a gap in your product dependency graph, which means your bundled release build may end up missing content if you do not resolve this gap. |
+| **Incoming Product Dependencies** | The list of product assets that reference this product asset as a product dependency. |
+| **Missing Product Dependencies** | A tool that examines the contents of this product asset, looks for references to other product assets, and will report any references that look like product dependencies that are not reported. See [Resolving Missing Assets](/docs/user-guide/packaging/asset-bundler/assets-resolving) for details. |
 
 ## Logs
 
@@ -198,10 +206,6 @@ The Logs tab displays logs for Asset Processor itself, not for process jobs. If 
 The Logs tab has a single pane with three default tabs that display **Debug**, **Messages**, or **Warnings/Errors Only**. You can also add custom tabs to display any combination of information.
 
 ![Asset Processor UI logs tab](/images/user-guide/assets/asset-processor/interface-logs.png)
-
-## Shaders
-
-This is a legacy mode that is not currently used by O3DE.
 
 ## Connections
 
