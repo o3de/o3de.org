@@ -77,10 +77,6 @@ The final function graph should look like this:
 
 1. Click the **+** button next to Add data input to add an input parameter to the execution nodeling. This will prompt you for a name and type of the new variable. Enter **Start** as the name and **Number** as the type. Repeat this twice more for **Time** and **End**
 
-1. In the Node Inspector expand the Math category.
-
-1. Drag an **Add**, **Subtract**, and **Multiply** node onto the canvas and arrange them similar to the image above.
-
 1. Using [variable references](/docs/user-guide/scripting/script-canvas/editor-reference/variables/variable-references), do the following:
 
    a. In the **Subtract** node, reference the *End* and *Start* variables, so that *Start* is subtracted from *End*.
