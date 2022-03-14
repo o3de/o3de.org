@@ -62,10 +62,10 @@ What is considered a log message, warning, error, and failure, and how the syste
  * Print a log message for anything that will be useful as a bread crumb for tracking down problems later, for both the content creator or the builder author.
  * Emit a warning if something is wrong but it can mostly be handled, and the output your builder can generate is reasonably close to what the content creator intended.
  * Post an error if your builder encounters data it can't properly handle and you know the product asset you output won't be fully correct. When possible, this is prefered over a failure because the failure won't produce any product asset, so any references from other assets to this asset may break. For example, if a prefab references a mesh product asset from an FBX file, an update to the FBX causes the job to fail, then any edits to the prefab while this job is failing may lose the reference to the mesh.
- * Post a failure if your builder encounters something it cannot happen and all processing should end, and the builder should not output anything. This is generally considered a last resort, and is most commonly seen when a builder crashes during processing.
+ * Post a failure if your builder encounters something it cannot handle and processing should end for that builder, and the builder should not output anything. This is generally considered a last resort, and is most commonly seen when a builder crashes during processing.
 
 {{< note >}}
-The most common reason for failure is that the Asset Builder has crashed. When an Asset Builder crashes, Asset Processor logs the job failure with a failure and continues processing assets from the jobs list. When Asset Processor is restarted, it attempts to reprocess any failed jobs. If an asset has failed to process, we recommend you first examine why this failure occured, and inform your team, sharing any relevant artifacts such as log messages. Once you proceed to the next step, that information may be lost. Alternatively, you can locate individual source assets in the Assets tab, **right-click** on the asset, and select **Reprocess File** to re-run the process job.
+The most common reason for failure is that the Asset Builder has crashed. When an Asset Builder crashes, Asset Processor logs the job as failed and continues processing assets from the jobs list. When Asset Processor is restarted, it attempts to reprocess any failed jobs. If an asset has failed to process, we recommend you first examine why this failure occured, and inform your team, sharing any relevant artifacts such as log messages. Once you proceed to the next step, that information may be lost. Alternatively, you can locate individual source assets in the Assets tab, **right-click** on the asset, and select **Reprocess File** to re-run the process job.
 {{< /note >}}
 
 The circumstances that cause an Asset Builder to complete a job with warnings, errors, or failures are left to the implementation of the Asset Builder, but should follow the guidance above.
@@ -74,10 +74,10 @@ The circumstances that cause an Asset Builder to complete a job with warnings, e
 
 The Asset Status list can be filtered by entering keywords and regular expressions in the filter box. The regular expressions (regex) are standard `std::regex` in extended format. The `std::regex` rules apply.
 
-The example below searches for all files ending with .png. The asterisk (`*`) indicates any character 0 or more times. The period is escaped, because in a regex search `.` matches any non-newline character.
+The example below searches for all files ending with .png. The period is escaped, because in a regex search `.` matches any non-newline character. The `$` indicates the match should be at the end of the string, so this won't match a file with multiple extensions that has .png in the middle, myImage.png.assetinfo wouldn't be matched, for example.
 
 ```
-*\.png
+\.png$
 ```
 
 {{< note >}}
