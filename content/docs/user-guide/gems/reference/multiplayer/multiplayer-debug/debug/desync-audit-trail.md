@@ -38,22 +38,20 @@ Network inputs detail actions that create deltas in the networked state of the s
 
 The above screenshot shows inputs that occurred on the client's player entity, relative to the desync including those that are processed locally. For the host frames in question, the actions were exclusively the player moving via `NetworkPlayerMovementComponent`.
 
-### Custom Event
+### Capturing custom events
 
-Custom Events are custom auditing events the developer can specify via macros.
+Custom events are custom auditing events the developer can specify via macros in their C++ source.
 
 | Property | Description |
 |---|---|---|
-| AZ_MPAUDIT_INPUT_REWINDABLE | Allows the developer to audit a RewindableObject's current local value in comparison to its last known server value |
-| AZ_MPAUDIT_INPUT_VALUE | Allows the developer to audit a non-networked value using the timing data of an input |
-| AZ_MPAUDIT_VALUE | Allows the developer to audit a non-networked value without any timing data (such as Input ID and Host Frame ID) |
+| `AZ_MPAUDIT_INPUT_REWINDABLE` | Allows the developer to audit a `RewindableObject` object's current local value in comparison to its last known server value. |
+| `AZ_MPAUDIT_INPUT_VALUE` | Allows the developer to audit a non-networked value using the timing data of an input. Timing data includes input ID and host frame. |
+| `AZ_MPAUDIT_VALUE` | Allows the developer to audit a non-networked value without any timing data. |
 
-Custom Events allow the developer to specify additional information they'd like to track. In order to use these macros, including "MultiplayerDebug.h" is required. The parameters the macros require are:
+Custom events allow the developer to specify additional information they'd like to track. In order to use these macros, including 1MultiplayerDebug.h1 is required. The parameters the macros require are:
+
 * The variable in question
-* The variable's underlying type
-    * For a RewindableObject<T>, T
-    * For a variable of type T, T
-* A NetworkInput for commands starting with AZ_MPAUDIT_INPUT
-    * This allows the binding of the macro usage to a specific HostFrame and Input ID for chronological categorization
+* The variable's underlying type. This should always be `T`, even for `RewindableObject<T>` values being captured.
+* A `NetworkInput` for commands starting with `AZ_MPAUDIT_INPUT`. This binds the macro usage to a specific host frame and input ID, giving the ability to categorize by event time.
 
 ![Audit Trail Custom Events](/images/user-guide/gems/reference/multiplayer/audit_trail_event.png)
