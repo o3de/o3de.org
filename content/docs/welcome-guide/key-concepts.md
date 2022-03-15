@@ -39,27 +39,35 @@ The following image illustrates the dependency graph for O3DE's core modules: `A
 For more information on O3DE's engine core, refer to the [Programming Guide](/docs/user-guide/programming/). 
 
 
-### O3DE Directory Structure
+## High-level O3DE directories
 
-There are two primary directories to be aware of with O3DE: The `o3de-packages` directory, and the `o3de` directory.
+There are two primary directories to be aware of with O3DE: The `o3de` directory, and the `.o3de` directory.
 
-* `o3de-packages` - A user-created directory that may live outside of the O3DE installation. Many O3DE features (both core features and those provided by Gems) use third-party libraries. For example, O3DE supports `.fbx` files through the Open Asset Import Library (assimp), the O3DE GUI Tools use Qt, and the physics system uses NVIDIA PhysX. The third-party libraries that are required to build these features for your project, along with all the other necessary third-party libraries, live in the `o3de-packages` directory you create. The location of this directory is set as part of the O3DE configuration process before build.
+### `o3de`
 
-* `o3de` - The `o3de` directory contains subdirectories that hold O3DE's core (including source code for `AzFramework`), various tools including **O3DE Editor**, and available Gems. You may also choose to keep your own project directories in the main `o3de` directory. In the `o3de` directory are several subdirectories to be aware of:
+{{< image-width "/images/welcome-guide/directory-o3de.png" "500" "The `o3de` source directory." >}}
 
-  {{< note >}}
-  This section describes the directory structure of the O3DE open source project, not the directories produced from a binary installer.
-  {{< /note >}}
-  
-  * `cmake` contains configuration, download and build scripts for O3DE.
+The `o3de` directory contains O3DE's core, various tools including **O3DE Editor**, and available Gems and templates. Depending on how you installed O3DE, there are three variations of directories: 
+- `o3de` -- if you cloned it from the `o3de` repository in GitHub.
+- `o3de-development` -- if you downloaded the `development` as a ZIP folder from the `o3de` repository in GitHub. 
+- `o3de/<version>` -- if you installed the O3DE binary by running the installer. 
 
-  * `Code` contains the C++ code and headers that used to build O3DE and provide its APIs. APIs are organized by libraries, each of which consists of a well-defined feature set. Library headers offer virtual interfaces that you'll provide implementations of to connect your code to the relevant O3DE system or feature.
+`o3de` and `o3de-development` contain all of the source code that makes up O3DE's core, whereas the installed version, `o3de/<version>`, contains pre-built binaries to run O3DE and its tools.
 
-  * `Code/Framework` contains the all of the source code and headers used by the core O3DE libaries such as `AzCore`, `AzFramework`, and `AzNetworking`.
+When you begin to work in O3DE, you'll need to learn more about O3DE subdirectories in the [Programming](/docs/user-guide/programming/#o3de-directories) section. 
 
-  * `Gems` contains the source and build files for the available Gems. Each Gem has its own subdirectory. When you create a new Gem, you add the code and build sources here, and then enable the Gem in your project configuration. It is possible for a Gem to contain other Gems. The Atom Gem, for example, contains several Gems providing various tools, libraries, interfaces, and utilities for Atom Renderer.
+### `.o3de`
 
-  * `Templates` contains the default templates for Gems and Projects.
+{{< image-width "/images/welcome-guide/directory-.o3de.png" "250" "The `.o3de` directory." >}}
+
+The `.o3de` directory contains the O3DE manifest and the default locations for third-party packages and user-created O3DE objects, such as Gems, projects, and templates. `.o3de` includes the following files and subdirectories:
+
+- `/o3de_manifest.json`: 
+- `/3rdParty`: The default directory for third-party libraries that are required to build some O3DE features. 
+- `/Gems`: The default directory for user-created Gems.
+- `/Projects` The default directory for user-created projects.
+- `/Templates`: The default directory for user-created templates.
+
 
 ## Working with Gems
 
