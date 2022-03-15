@@ -28,7 +28,7 @@ The Audit Trail tool is designed to capture desync events, but can also be confi
 
 ### Desync
 
-Desyncs are the primary event captured by the Audit Trail. Consequently the Audit Trail organizes all activity around Desyncs. On the client, desyncs generally include a delta map of variables and the values the client and server disagreed on
+Desyncs are the primary event captured by the Audit Trail. Consequently the Audit Trail organizes all activity around desyncs. On the client, desyncs generally include a delta map of variables and the values the client and server disagreed on. 
 
 ### Input
 
