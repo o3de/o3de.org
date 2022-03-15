@@ -19,7 +19,7 @@ For a quick introduction of the O3DE Multiplayer Gem and networking, watch the v
 | [Multiplayer Auto-components](./multiplayer-gem/autocomponents) | Automatically create components for use with the Multiplayer Gem using the AzAutoGen system. |
 | [Test Multiplayer Projects in the Editor](./multiplayer-gem/test-in-editor) | Automatically launch local servers or connect to a remote persistent server when working on a multiplayer project in the O3DE Editor. |
 | [Multiplayer Hierarchical Entities](./multiplayer-gem/hierarchy) | Group network entities into hierarchies that process their input together. |
-| [Spawning Multiplyaer Player Entities](./multiplayer-gem/spawning) | Spawn an Autonomous Entity for a connecting Player to control. |
+| [Spawning Multiplayer Player Entities](./multiplayer-gem/spawning) | Spawn an entity for a connecting player to control. |
 
 ## Related topics
 

@@ -4,32 +4,30 @@ description: A reference for spawning and registering network player entities
 linktitle: Spawning Players
 ---
 
-When a Player join a Multiplayer session, one of the first things that often occurs is spawning a networked entity for them to control. In order to do this, the Multiplayer Gem provides an interface to specify an entity for a Player and have the Gem mark it as Autonomous (as defined in (./overview)).
+When a player joins a multiplayer session, one of the first things that often occurs is spawning a networked entity for them to control. In order to do this, the **Multiplayer** Gem provides an interface to specify an *autonomous* entity for a player. (Refer to the definition of _autonomous role_ in the [Multiplayer Gem Overview](/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/overview#multiplayer-entity-roles).)
 
-*IMultiplayerSpawner* is an AZ::Interface<T> that provides a mechanism to tell the Multiplayer Gem what to spawn and where when a Player Joins. It also provides a hook to clean up when a Player Leaves. It is intended to implemented by games using the Multiplayer Gem. 
+*IMultiplayerSpawner* is an `AZ::Interface<T>` that provides a mechanism to tell the multiplayer gem what to spawn and where when a player joins a session. `IMultiplayerSpawner` also provides a hook to clean up when a player leaves. All multiplayer games should provide an implementation to handle the events delivered for player join/player leave events.
 
-### Player Join
+### Player join events
 
-* Player Join is defined as either
-    * A Client Host starting a session (as the host may need to spawn a player)
-    * A Client connecting to the session
+A player is defined as having *joined* a session when either:
+  * A client application begins hosting a session, in which case the host may need to spawn a new player entity.
+  * A client connects to an ongoing hosted session.
+  
+The `OnPlayerJoin` method of `IMultiplayerSpawner` provides a hook for when the server may want to spawn an autonomous player prefab on the behalf of a user. It takes both an identifier and custom data provided by the user, and the implementation is required to determine which prefab to spawn and its world location. For example, data provided with the connection could be used to select a specific character or team.
 
-OnPlayerJoin provides a hook for when the server may want to spawn an autonomous player prefab on the behalf of a user. It takes both userId and data provided by the user on connect in so that the implementation of OnPlayerJoin can make an informed decision on what to spawn and where. The data passed could be used to indicate a selected character or team for example. OnPlayerJoin is expected to return a NetworkEntityHandle meaning it is the caller's responsibility to instantiate a networked prefab for the user. Multiplayer Gem then takes the returned NetworkEntityHandle and both marks it as autonomous and associates it with the player's connection.
+`OnPlayerJoin` is expected to return a `NetworkEntityHandle`, making it the caller's responsibility to instantiate a networked prefab for the user. The Multiplayer Gem then takes the returned `NetworkEntityHandle` and both marks it as autonomous and associates it with the player's connection.
 
-### Player Leave
+### Player leave events
 
-* Player Leave is defined as a Client disconnecting from the session
+A player is having defined as *left* a session when a client disconnects from the server. Unlike with player connections, there is no special case for when a client stops hosting their own session - one of the steps should always be disconnecting *all* clients before shutting down the server.
 
-OnPlayerLeave provides a hook for when a client disconnects from a server so that the server can clean up any entities spawned on behalf of the client. OnPlayerLeave takes an Entity Handle to the prefab spawned by OnPlayerJoin and additionally takes the Replication Set for the connection in the event other associated entities need to be cleaned up. This allows, for example, removing a player and all of their deployed objects. 
+The `OnPlayerLeave` method of `IMultiplayerSpawner` provides a hook for when a client disconnects from a server so that the server can clean up any entities spawned on behalf of the client. `OnPlayerLeave` takes an entity handle to the prefab spawned by `OnPlayerJoin`, and additionally takes the replication set for the connection in the event other associated entities need to be cleaned up. For example, this allows removing not only player entity but also all of their deployed objects. 
 
-OnPlayerLeave also takes the disconnect reason which allows responding to different kinds of disconnects. For example, it may be undesirable to cleanup objects if a player times out if they can attempt to reconnect to the session.
+`OnPlayerLeave` also takes a disconnect reason which allows responding to different kinds of disconnects. For example, it may be undesirable to clean up objects if a player times out if they can attempt to reconnect to the session.
 
-### MultiplayerSample as an Example
+### Spawning examples in MultiplayerSample
 
-A practical example of an implementation is MultiplayerSampleSystemComponent in MultiplayerSample. MultiplayerSample implements a Round Robin style spawning system that gathers entities with NetworkPlayerSpawnerComponents. MultiplayerSampleSystemComponent then queries that system during OnPlayerJoin. OnPlayerLeave simply marks the entity passed in for removal. 
+A practical example of an implementation for a spawner is [`MultiplayerSampleSystemComponent`](https://github.com/o3de/o3de-multiplayersample/blob/development/Gem/Code/Source/MultiplayerSampleSystemComponent.cpp) in the  [MultiplayerSample project](https://github.com/o3de/o3de-multiplayersample/). MultiplayerSample implements a "round robin"-style spawning system that gathers entities with `NetworkPlayerSpawnerComponents`. `MultiplayerSampleSystemComponent` then queries that system during `OnPlayerJoin`. `OnPlayerLeave` simply marks the entity passed in for removal. 
 
-Here OnPlayerJoin and OnPlayerLeave are entry points into a larger component based spawning system.
-
-For more, see the following on GitHub:
-
-https://github.com/o3de/o3de-multiplayersample/blob/development/Gem/Code/Source/MultiplayerSampleSystemComponent.cpp
+For more information on the MultiplayerSample project, see the [MultiplayerSample README](https://github.com/o3de/o3de-multiplayersample/blob/development/README.md).
