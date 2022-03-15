@@ -30,13 +30,13 @@ The Audit Trail tool is designed to capture desync events, but can also be confi
 
 Desyncs are the primary event captured by the Audit Trail. Consequently the Audit Trail organizes all activity around desyncs. On the client, desyncs generally include a delta map of variables and the values the client and server disagreed on. 
 
-### Input
+### Input events
 
-Network inputs detail actions that create deltas in the networked state of the simulation. The audit trail lists all network inputs that were sent. In addition it also lists non default values for each member per network input. This allows the correlation of inputs to desynchronized data. This can help clarify what actions may have led to a desync.
+Network inputs detail actions that create deltas in the networked state of the simulation. The audit trail lists all network inputs that were sent. In addition it also lists non-default values for each member per network input. This allows the correlation of inputs to desynchronized data. By tracking client inputs and desyncs together, you can identify if player actions affect specific desyncs.
 
 ![Audit Trail Inputs](/images/user-guide/gems/reference/multiplayer/audit_trail_input.png)
 
-The above screenshot shows Inputs that occured on the Player entity relative to the desync including those that are processed locally. For the Host Frames in question, the actions were exclusively the Player moving via NetworkPlayerMovementComponent.
+The above screenshot shows inputs that occurred on the client's player entity, relative to the desync including those that are processed locally. For the host frames in question, the actions were exclusively the player moving via `NetworkPlayerMovementComponent`.
 
 ### Custom Event
 
