@@ -41,28 +41,34 @@ For more information on O3DE's engine core, refer to the [Programming Guide](/do
 
 ## High-level O3DE directories
 
-There are three primary directories to be aware of with O3DE: The O3DE engine directory, and the `O3DE` and `.o3de` directories in the user's home directory.
+There are three primary directories to be aware of with O3DE: The *O3DE engine directory*, and the `O3DE` and `.o3de` directories in the user's home directory.
 
 ### O3DE engine
 
-{{< image-width "/images/welcome-guide/directory-o3de.png" "500" "The O3DE engine directory." >}}
+{{< image-width "/images/welcome-guide/directory-o3de-engine.png" "500" "The O3DE engine directory." >}}
 
 The O3DE engine directory contains O3DE's core engine, various tools including **O3DE Editor**, and the core Gems and templates. The directory name depends on how you install O3DE, but here are some common variations: 
 - `o3de` -- if you cloned it from the `o3de` repository in GitHub.
-- `o3de-development` -- if you downloaded the `development` as a ZIP folder from the `o3de` repository in GitHub. 
+- `o3de-development` -- if you downloaded the `development` branch as a ZIP folder from the `o3de` repository in GitHub. 
 - `o3de/<version>` -- if you installed the O3DE binary by running the installer. 
 
 A source code directory, such as `o3de` or `o3de-development` in the preceding example, contains all of the source code that makes up O3DE's core, whereas an install directory, such as `o3de/<version>`, contains pre-built binaries to run O3DE and its tools.
 
 When you begin to work in O3DE, you'll need to learn more about O3DE subdirectories in the [Programming](/docs/user-guide/programming/#o3de-directories) section. 
 
+### `O3DE`
+
+{{< image-width "/images/welcome-guide/directory-o3de-engine.png" "500" "The O3DE engine directory." >}}
+
+The `O3DE` directory is located in the user's home directory. It contains the default locations for O3DE objects such as Gems, projects, and templates.
+
 ### `.o3de`
 
 {{< image-width "/images/welcome-guide/directory-.o3de.png" "250" "The `.o3de` directory." >}}
 
-The `.o3de` directory contains the O3DE manifest, the default location for third-party packages, and other user-specific directories. `.o3de` includes the following files and subdirectories:
+The `.o3de` directory is located in the user's home directory. It contains the O3DE manifest, the default location for third-party packages, and other user-specific directories. `.o3de` includes the following files and subdirectories:
 
-- `/o3de_manifest.json`: 
+- `/o3de_manifest.json`: The O3DE manifest informs O3DE of the registered engines, projects, and other external O3DE objects. 
 - `/3rdParty`: The default directory for third-party libraries that are required to build some O3DE features. 
 
 
