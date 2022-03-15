@@ -12,16 +12,6 @@ The Multiplayer Desync Audit Trail is a tool available with the multiplayer gem 
 
 The Audit Trail will capture a desync including the input ID and host frame it occurred on. For every desync, the UI will list all the captured activity leading to the desync. The depth of this history can be controlled by a cvar.
 
-## Configuration
-
-Various cvars can be modified to enable additional data capture. Enabling additional capture both adds a performance cost and density to the Audit Trail. If you require capturing a longer event history, consider increasing the value of `net_DebutAuditTrail_HistorySize`.
-
-| Property | Description | Type |
-|---|---|---|---|
-| `cl_EnableDesyncDebugging` | If true, enables output of desyncs to both standard logs and Audit Trail capture. | `bool` |
-| `cl_DesyncDebugging_AuditInputs` | If true, adds inputs to audit trail. | `bool` |
-| `net_DebutAuditTrail_HistorySize` | Maximum number of events the Audit Trail will aggregate. Raising this value is recommended if input or event auditing is enabled to compensate for increased event volume. | `int` |
-
 ## Auditing Categories
 
 The Audit Trail tool is designed to capture desync events, but can also be configured to capture *input events* and *custom events*.
@@ -32,7 +22,7 @@ Desyncs are the primary event captured by the Audit Trail. Consequently the Audi
 
 ### Input events
 
-Network inputs detail actions that create deltas in the networked state of the simulation. The audit trail lists all network inputs that were sent. In addition it also lists non-default values for each member per network input. This allows the correlation of inputs to desynchronized data. By tracking client inputs and desyncs together, you can identify if player actions affect specific desyncs.
+Network inputs detail actions that create deltas in the networked state of the simulation. The Audit Trail lists all network inputs that were sent. In addition it also lists non-default values for each member per network input. This allows the correlation of inputs to desynchronized data. By tracking client inputs and desyncs together, you can identify if player actions affect specific desyncs.
 
 ![Audit Trail Inputs](/images/user-guide/gems/reference/multiplayer/audit_trail_input.png)
 
@@ -54,4 +44,27 @@ Custom events allow the developer to specify additional information they'd like 
 * The variable's underlying type. This should always be `T`, even for `RewindableObject<T>` values being captured.
 * A `NetworkInput` for commands starting with `AZ_MPAUDIT_INPUT`. This binds the macro usage to a specific host frame and input ID, giving the ability to categorize by event time.
 
+```cpp
+Multiplayer::RewindableObject<AZ::Vector3> NetworkExampleComponent::GetVelocity()
+{
+    return m_velocity;
+}
+
+void NetworkExampleComponent::OnExampleEvent(Multiplayer::NetworkInput& input)
+{
+    // Pass the input, the RewindableObject and its templated type of Vector3
+    AZ_MPAUDIT_INPUT_REWINDABLE(input, GetVelocity(), AZ::Vector3);
+}
+```
+
 ![Audit Trail Custom Events](/images/user-guide/gems/reference/multiplayer/audit_trail_event.png)
+
+## Configuration
+
+Various cvars can be modified to enable additional data capture. Enabling additional capture both adds a performance cost and density to the Audit Trail. If you require capturing a longer event history, consider increasing the value of `net_DebutAuditTrail_HistorySize`.
+
+| Property | Description | Type |
+|---|---|---|---|
+| `cl_EnableDesyncDebugging` | If true, enables output of desyncs to both standard logs and Audit Trail capture. | `bool` |
+| `cl_DesyncDebugging_AuditInputs` | If true, adds inputs to Audit Trail. | `bool` |
+| `net_DebutAuditTrail_HistorySize` | Maximum number of events the Audit Trail will aggregate. Raising this value is recommended if input or event auditing is enabled to compensate for increased event volume. | `int` |
