@@ -43,6 +43,20 @@ Examples of high-level products that use these frameworks are:
 * **GUI tools**: Tools with a graphical user experience are used for developing O3DE projects, such as **O3DE Editor**, **Asset Processor**, and **Material Editor**.
 
 
+### O3DE directories
+
+If you're interested in developing O3DE, creating components and Gems, or programming in your project, it's helpful to be familiar with the subdirectories in O3DE's source. 
+
+  * `cmake`: Contains configuration, download, and build scripts for O3DE.
+
+  * `Code`: Contains the C++ code and headers that are used to build O3DE and provide its APIs. APIs are organized by libraries, each of which consists of a well-defined feature set. Library headers offer virtual interfaces that you can provide implementations of to connect your code to the relevant O3DE system or feature.
+
+  * `Code/Framework`: Contains all of the source code and headers used by O3DE's core modules.
+
+  * `Gems`: Contains the source and build files for the available Gems. Each Gem has its own subdirectory. When you create a new Gem, you add the code and build sources here, and then enable the Gem in your project configuration. It's possible for a Gem to contain other Gems. The Atom Gem, for example, contains several Gems providing various tools, libraries, interfaces, and utilities for Atom Renderer.
+
+  * `Templates` contains the default templates for Gems and projects.
+
 ## Learning paths
 
 Depending on the part of the engine that you want to develop, there are different learning tracks that you can follow. While each learning path may be unique to your case, the following topics can help get you started on some common development tasks:
