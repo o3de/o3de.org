@@ -45,7 +45,7 @@ Examples of high-level products that use these frameworks are:
 
 ### O3DE directories
 
-If you're interested in developing O3DE, creating components and Gems, or programming in your project, it's helpful to be familiar with the subdirectories in O3DE's source. 
+If you're interested in developing O3DE, creating components and Gems, or programming in your project, it's helpful to be familiar with the following subdirectories in O3DE's source:
 
   * `cmake`: Contains configuration, download, and build scripts for O3DE.
 
@@ -53,7 +53,7 @@ If you're interested in developing O3DE, creating components and Gems, or progra
 
   * `Code/Framework`: Contains all of the source code and headers used by O3DE's core modules.
 
-  * `Gems`: Contains the source and build files for the available Gems. Each Gem has its own subdirectory. When you create a new Gem, you add the code and build sources here, and then enable the Gem in your project configuration. It's possible for a Gem to contain other Gems. The Atom Gem, for example, contains several Gems providing various tools, libraries, interfaces, and utilities for Atom Renderer.
+  * `Gems`: Contains the source and build files for the core Gems. Each Gem has its own subdirectory. When you create a new Gem, you can add the code and build sources here, and then enable the Gem in your project configuration. It's possible for a Gem to contain other Gems. The Atom Gem, for example, contains several Gems providing various tools, libraries, interfaces, and utilities for Atom Renderer.
 
   * `Templates` contains the default templates for Gems and projects.
 
