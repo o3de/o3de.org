@@ -12,8 +12,9 @@ toc: true
 
 ![The Faster Scanning Mode settings in Asset Processor](/images/user-guide/assets/pipeline/asset-processor-interface-fast-scan.png)
 
-Faster Scanning Mode is on by default. To disable Faster Scanning Mode, do the following:
+Faster Scanning Mode is on by default for Asset Processor GUI, but off by default for Asset Processor Batch.
 
+To disable Faster Scanning Mode in the GUI, do the following:
 1. Choose the Tools tab in Asset Processor.
 1. Uncheck the **Faster Scanning Mode** option.
 
@@ -21,7 +22,7 @@ Faster Scanning Mode is on by default. To disable Faster Scanning Mode, do the f
 When Faster Scanning Mode is disabled, file hashes are used to check for updated source assets and source dependencies. This might significantly increase analysis time.
 {{< /note >}}
 
-You can use the command line option below to activate Faster Scanning Mode for **Asset Processor Batch**. 
+You can use the command line option below to activate Faster Scanning Mode for **Asset Processor Batch** and GUI. 
 
 ```cmd
 AssetProcessorBatch.exe --zeroAnalysisMode
