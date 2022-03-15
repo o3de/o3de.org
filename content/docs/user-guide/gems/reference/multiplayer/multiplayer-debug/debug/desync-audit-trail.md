@@ -18,9 +18,9 @@ Various cvars can be modified to enable additional data capture. Enabling additi
 
 | Property | Description | Type |
 |---|---|---|---|
-| cl_EnableDesyncDebugging | If true, enables output of Desyncs to standard logs AND Audit Trail capture. | `bool` |
-| cl_DesyncDebugging_AuditInputs | If true, adds Inputs to audit trail. | `bool` |
-| net_DebutAuditTrail_HistorySize | Maximum number of events the Audit Trail will aggregate. Raising this value is recommended if Input or Event Auditing is enabled to compensate for increased Event volume. | `int` |
+| `cl_EnableDesyncDebugging` | If true, enables output of desyncs to both standard logs and Audit Trail capture. | `bool` |
+| `cl_DesyncDebugging_AuditInputs` | If true, adds inputs to audit trail. | `bool` |
+| `net_DebutAuditTrail_HistorySize` | Maximum number of events the Audit Trail will aggregate. Raising this value is recommended if input or event auditing is enabled to compensate for increased event volume. | `int` |
 
 ## Auditing Categories
 ### Desync
