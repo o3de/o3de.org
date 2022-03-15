@@ -22,9 +22,11 @@ Scan folders can be added as registry settings. In most cases you'll use the ass
   "watch": "_path to watch folder_",
   "display": "_display name for scan folder_",
   "recursive": 0 or 1, // 1 will tell the Asset Processor to look in sub folders, recursively for additional source assets. 0 it will not.
-  "order": any number // The order this scan folder is handled compared to other scan folders. 
+  "order": any number // The order this scan folder is handled compared to other scan folders.
 }
 ```
+Scan folder order is used when two assets have the exact same relative path to the scan folder root. In these situations, the source asset in the scan folder with the higher priority will be used over the other one.
+
 
 You can use the exclusion system to block files matching patterns from asset processing. These exist under the registry path Amazon/AssetProcessor/Settings/ with a pattern that looks like:
 ```json
