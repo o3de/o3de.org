@@ -23,6 +23,9 @@ Various cvars can be modified to enable additional data capture. Enabling additi
 | `net_DebutAuditTrail_HistorySize` | Maximum number of events the Audit Trail will aggregate. Raising this value is recommended if input or event auditing is enabled to compensate for increased event volume. | `int` |
 
 ## Auditing Categories
+
+The Audit Trail tool is designed to capture desync events, but can also be configured to capture *input events* and *custom events*.
+
 ### Desync
 
 Desyncs are the primary event captured by the Audit Trail. Consequently the Audit Trail organizes all activity around Desyncs. On the client, desyncs generally include a delta map of variables and the values the client and server disagreed on
