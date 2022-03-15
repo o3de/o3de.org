@@ -52,7 +52,7 @@ The O3DE engine directory contains O3DE's core engine, various tools including *
 - `o3de-development` -- if you downloaded the `development` branch as a ZIP folder from the `o3de` repository in GitHub. 
 - `o3de/<version>` -- if you installed the O3DE binary by running the installer. 
 
-A source code directory, such as `o3de` or `o3de-development` in the preceding example, contains all of the source code that makes up O3DE's core, whereas an install directory, such as `o3de/<version>`, contains pre-built binaries to run O3DE and its tools.
+A *source code directory*, such as `o3de` or `o3de-development` in the preceding example, contains all of the source code that makes up O3DE's core, whereas an *install directory*, such as `o3de/<version>`, contains pre-built binaries to run O3DE and its tools.
 
 When you begin to work in O3DE, you'll need to learn more about O3DE subdirectories in the [Programming](/docs/user-guide/programming/#o3de-directories) section. 
 
