@@ -4,13 +4,13 @@ description: Analyze and Debug Multiplayer Desyncs
 linkTitle: Desync Audit Trail
 ---
 
-When the Client and Server disagree on the value of a networked variable, a desync occurs. Desyncs can be extremely difficult to debug which is where the Multiplayer Desync Audit Trail can help.
+When a client and server disagree on the value of a networked variable, a desync occurs. Desyncs can be extremely difficult to debug which is where the *Multiplayer Desync Audit Trail* can help.
 
-The Multiplayer Desync Audit Trail is a tool available with the Multiplayer Gem in Debug environments. It details all network desyncs that occur and categorizes network activity leading up to a desync to attempt to root cause the desync itself.
+The Multiplayer Desync Audit Trail is a tool available with the multiplayer gem for `debug`-configuration builds. It details all network desyncs that occur and categorizes network activity leading up to a desync, allowing you to root cause the desync itself.
 
 ![Audit Trail Overlay](/images/user-guide/gems/reference/multiplayer/audit_trail_default.png)
 
-The Audit Trail will capture a desync including the Input ID and Host Frame it occurred on. For every desync, the UI will list all the captured activity leading to the desync. The depth of this history can be controlled by a CVar.
+The Audit Trail will capture a desync including the input ID and host frame it occurred on. For every desync, the UI will list all the captured activity leading to the desync. The depth of this history can be controlled by a cvar.
 
 ## Configuration
 Various CVARs can be modified to enable additional data capture. Enabling additional capture both adds a performance cost and density to the Audit Trail. If you require capturing a longer event history, consider raising *net_DebutAuditTrail_HistorySize*.
