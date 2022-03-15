@@ -13,7 +13,8 @@ The Multiplayer Desync Audit Trail is a tool available with the multiplayer gem 
 The Audit Trail will capture a desync including the input ID and host frame it occurred on. For every desync, the UI will list all the captured activity leading to the desync. The depth of this history can be controlled by a cvar.
 
 ## Configuration
-Various CVARs can be modified to enable additional data capture. Enabling additional capture both adds a performance cost and density to the Audit Trail. If you require capturing a longer event history, consider raising *net_DebutAuditTrail_HistorySize*.
+
+Various cvars can be modified to enable additional data capture. Enabling additional capture both adds a performance cost and density to the Audit Trail. If you require capturing a longer event history, consider increasing the value of `net_DebutAuditTrail_HistorySize`.
 
 | Property | Description | Type |
 |---|---|---|---|
