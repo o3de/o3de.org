@@ -5,9 +5,7 @@ description:  Debug utilities for the Open 3D Engine Multiplayer Gem.
 toc: true
 ---
 
-Open 3D Engine ships with a Multiplayer Gem that uses the [O3DE networking stack](/docs/user-guide/networking/) to offer services used for multiplayer projects.
-
-The Multiplayer Gem also includes Debugging utilities to help diagnose multiplayer issues.
+**Open 3D Engine (O3DE)** ships with a multiplayer gem that uses the [O3DE networking stack](/docs/user-guide/networking/) to offer services and tools for creating multiplayer games. As part of these tools, the gem provides debugging utilities that help diagnose multiplayer issues.
 
 ## Section topics
 
