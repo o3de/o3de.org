@@ -41,7 +41,7 @@ In the `Cache` directory of your project, there are subdirectories for each plat
 
 If you delete or modify some files in your asset cache, the asset processor may not notice this because it assumes the only changes to the asset cache will be done by the asset processor. This includes deleting product asset files from your cache while the asset processor is not running.
 
-The Asset Cache is used during development, by default the Editor and game launchers in development builds will load assets from the asset cache. Release builds are intended to use [bundled assets.](/docs/user-guide/packaging/asset-bundler/)
+The Asset Cache is used during development, and by default the Editor and game launchers in development builds will load assets from the asset cache. Release builds are intended to use [bundled assets.](/docs/user-guide/packaging/asset-bundler/)
 
 {{< note >}}
 If you ever encounter an issue with the Asset Cache that you can't resolve, your project's `Cache` directory can be deleted. Asset Processor automatically rescans the directories, analyzes the source assets it finds, and runs new process jobs, rebuilding the entire Asset Cache.
