@@ -21,6 +21,8 @@ When Faster Scanning is disabled, the process is:
 1. The Asset Processor calls Create Jobs on every single source asset it tracks, for each builder that processes those source assets.
 1. If the fingerprint of the Create Jobs result for the source asset on that builder matches the last time it was run, then Process Job is skipped for that builder.
 
+With Faster Scanning enabled or disabled, if the fingerprint of the builder or the file have changed, the associated job will also run again. The builder fingerprint is modified by the builder author when they change the logic for the builder, and need all jobs using that builder to re-run. The file fingerprint checks if any of the source or job dependencies have changed, and will cause the job to re-run if those upstream files have been modified.
+
 {{< note >}}
 In either scanning mode, the Asset Processor does not check the cache for changes made while it was not running. Making modifications to files in the asset cache should be avoided, because those changes won't be properly tracked by the O3DE tools and can get overwritten at any time.
 {{< /note >}}
