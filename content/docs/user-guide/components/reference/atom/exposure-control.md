@@ -26,8 +26,8 @@ The **Exposure Control** component adjusts the amount of light the camera expose
 
 | Property | Description | Value | Default |
 | - | - | - | - |
-| **Enable** | Enables the exposure control properties. | Boolean | `Enabled`  |
-| **Overrides - Enabled Override** | If enabled, you can override Exposure Control settings to have advanced PostFX looks and control. | Boolean | `Enabled` |
+| **Enable** | If enabled, activates the exposure control post-processing effect. | Boolean | `Enabled`  |
+| **Overrides - Enabled Override** | If enabled, you can override Exposure Control settings to have more control over how the PostFX behaves and looks. | Boolean | `Enabled` |
 | **Control Type** | Specifies how to control the exposure value. <br><br>When **Control Type** is `Manual Only`, only the **Manual Compensation** value defines the exposure value in the scene. The exposure value remains constant, despite changes in brightness in the scene that's captured by the camera. <br><br>When **Control Type** is `Eye Adaptation`, the scene's exposure automatically adjusts such that the average brightness is at a middle gray lightness level. Then, the exposure is further adjusted based on the **Manual Compensation**. | `Manual Only`, `Eye Adaptation` | `Manual Only` |
 | **Manual Compensation** | Sets the exposure compensation value in stops. A lower value leads to less exposure, rendering the scene darker. A higher value renders the scene brighter. | Float: -16.0 - 16.0 | `0.0` |
 | **Eye Adaptation** | See [Eye Adaptation properties](#eye-adaptation-properties).  |   |   |
