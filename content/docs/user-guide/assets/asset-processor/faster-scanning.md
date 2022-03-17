@@ -6,7 +6,7 @@ weight: 400
 toc: true
 ---
 
-**Faster Scanning Mode** speeds up **Asset Processor’s** startup scan by using timestamps to track source asset changes before checking file hashes. This saves time when launching Asset Processor in all circumstances. You can switch scan modes at any time without restarting the Asset Processor, including during an asset scan. Asset Processor saves your preference between sessions.
+**Faster Scanning Mode** speeds up **Asset Processor’s** startup scan by using timestamps to track source asset changes before checking file hashes. This saves time when launching Asset Processor in all circumstances. You can switch scanning modes at any time without restarting Asset Processor, including during an asset scan. Asset Processor saves your preference between sessions.
 
 With Faster Scanning enabled, the process is:
 1. The Asset Processor compares the timestamp of the source asset's last modification time against the last time it processed that file. If the timestamp is identical, it skips processing that source asset.
