@@ -8,6 +8,103 @@ toc: true
 
 If you are having issues with **Asset Processor**, use the methods below to debug the issues.
 
+## Who normally needs to debug Asset Processor issues?
+
+* Content creators looking into problems with their content not behaving in-engine like they expect.
+* Technical artists, assistant content creators or working on expanding their team's pipeline with Python based automation.
+* Engineers assisting content creators or technical artists with debugging those issues.
+* Engineers working on an asset builder, either changing an existing one or making a new one.
+* Engineers working on packaging content for a bundled release build of a project, using the Asset Processor to discover a gap or other issue that was found during the bundling process.
+* Engineers working on the Asset Processor itself, including the logic for the Asset Processor to communicate with the Editor or launchers.
+
+## What kinds of problems need to be solved within the Asset Processor?
+
+* After changing a source asset, it takes too long for assets to finish processing.
+* The product assets don't behave like expected. They may be missing entirely, missing information, have incorrect information.
+* Finding and attempting to fix a warning, error, or failure that occured during asset processing for a particular job.
+* Asset packaging isn't working as expected, content is missing or content is being included in bundles that was not expected to be there.
+* Assistant while working on a builder to add a new feature, fix a bug, or create a new builder.
+* Different members of a team getting different results from asset processing, impacting the ability for the team to cooperate.
+
+## What are common Asset Processor related problems, and paths to address those problems?
+
+### Product Asset Thrash - Non Deterministic Product Assets
+
+#### Situation
+With no changes to the code for a builder, and no changes to a source asset, when that job is run multiple times, the contents of product assets end up different than the previous run.
+
+#### Effect
+More assets than expected will show up when attempting to generate Delta Asset Bundles to create content patches for your game, causing your players to download more content than necessary.
+
+#### Common Causes
+Extraneous information is included in the product asset, such as a timestamp. Logic in the builder is non-deterministic.
+
+#### Solutions
+In most cases this will require an engineer to make changes to the internal builder logic to stabilize the product output.
+
+#### Debugging
+Your team most likely encounter this issue when generating [Asset Bundles](/packaging/asset-bundler/), which is the primary system it impacts. The Asset Bundling process is generally done by an engineer, who will likely work backward from first finding a product asset in bundles that was not expected to be there, because no changes were done that should have resulted in a new product asset.
+
+This thrash will be introduced by the asset builder that created this product asset, so to identify the cause you'll want to look for this product asset in the Asset Processor's asset tab, or directly in the Asset Database using an external database browsing tool. From there you can find the job that created that product asset. Once you identify the job that created this product asset, you can then find the builder that produces that job, and go to the Process Jobs function for that builder, to find where it outputs the product asset. Working backward from here, you should be able to find the cause of the thrash by exploring the code. You can also try [debugging the Asset Builder](#DebugAssetBuilders) processing that job, to step through.
+
+To help identify the block of logic in the product asset that is thrashing, you may be able to use a standard file diffing tool using two generated product assets. You can quickly re-generate the product asset by right clicking it in the Asset Processor's asset tab and selecting reprocess source asset.
+
+### Product Asset Sub ID Thrash - Same product generates different Sub ID
+
+#### Situation
+With no changes to the code for a builder, and no changes to a source asset, when that job is run multiple times, the Sub IDs of product assets end up different than the previous run.
+
+#### Effect
+Assets are mostly referenced by asset ID, the UUID of the source asset with the Sub ID for that product asset. If this is not consistent and the Sub ID thrashes, then external references to this asset can end up incorrect, pointing at a different asset after a rebuild or pointing at no asset if no other products use that Sub ID.
+
+#### Example
+Here is an example with scene files and prefabs:
+1. Create a new FBX file named shapes_1.fbx with two meshes in it, a cube and a cylinder. Name the cube Mesh_A and the cylinder Mesh_B.
+1. Swap the names of these two meshes, so the cube is now named Mesh_B and the cylinder is named Mesh_A. Save this to a second FBX named shapes_2.fbx.
+1. Place shapes_1.fbx in your project, and rename it to shapes.fbx.
+1. Create a new prefab with an entity in it with a mesh component.
+1. Assign the cube Mesh_A from shapes.fbx to this component.
+1. Save and quit the Editor.
+1. Replace the shapes.fbx file in your project with shapes_2.fbx.
+1. Load the Editor.
+1. Load the prefab you saved earlier.
+1. Notice that the mesh on the entiyt component is still Mesh_A, but now visually looks like the cylinder.
+
+This happens because scene processing tracks the meshes by name, and by swapping the names between the meshes you've replaced which product assets are which. The prefab tracks the outgoing product asset reference via asset ID. When I tested this locally, my Mesh_A azmodel had the Product Asset ID {00431C65-528C-570B-8A52-5D43679BBFAC}:270123712, and Mesh_B has the asset ID {00431C65-528C-570B-8A52-5D43679BBFAC}:285065766. When I swapped the FBX files, the node within the file named Mesh_A still had that same first ID, but the geometry was a cylinder now, changing what it looked like in the prefab.
+
+Note that in this case, this behavior is 100% intentional. There is no bug in this example, but other times this thrash occurs it may be considered a bug.
+
+#### Common Causes
+
+##### Change to source asset causes Sub IDs to shift
+The most common place Sub ID thrash occurs is when the Sub ID generation is based on data within the source asset, and that data can change. For example, if a node name is hashed to generate the Sub ID for a product asset, then a content creator renaming that node in the source asset will cause the associated product asset to generate a new Sub ID.
+
+##### Non-deterministic Sub ID generation from builder
+Sometimes the logic for how a builder may not be fully deterministic. For example, if a builder just increments an integer to use as the Sub ID for each product it generates, then a source asset change that results in a change in the products to remove one, will result in the Sub IDs changing for all product assets after the removed product asset.
+
+##### Change in builder logic changes Sub ID generation
+There are times when a builder author needs to make a change to how the builder generates Sub IDs for product assets, resulting in all product assets output from that builder changing Sub IDs the next time they are processed.
+
+#### Solutions
+
+##### Stabilize Sub IDs while authoring a builder
+It is the responsibility of the person authoring a builder to define the rules for how Sub IDs are generated by that builder. When doing so, we recommend putting in effort to stabilize Sub ID generation as much as possible: Think about how the source asset can be modified, and how you can maintain continuity in product asset Sub ID generation based on those changes.
+
+##### Learning how Sub ID generation works for builders that process content you author
+This is preventing this problem more than it is a solution. Much of the content generated for O3DE projects is going to be referenced and used by other content. When you initially sit down to author your content, think about what the output should look like, and how it will be used. When you make changes to the source asset, also think about how that will effect the product assets generated, and how you can maintain continuity with other assets that reference that content. For example, if you're responsible for an FBX file that outputs multiple azmodel product assets, and you want to make a change to this FBX to remove or rename one of those product assets, first you need to look up all references to that model, so you can figure out how to update those. If several prefabs reference the model you are going to remove, then those prefabs may not function as expected, so you'll want to update those first to be ready for your change to the FBX file, so it won't break those prefabs.
+
+##### Fix the broken references - update the source asset
+Updating the source asset in a way that it will output a product asset with the same sub ID will fix any broken connections. This works best when the product asset was removed unintentionally, either the content creator was unaware the product asset was in use, or they made a change to the source asset not realizing it would cause this issue.
+
+##### Fix the broken references - update the content referencing the missing product asset
+If the removal of the product asset was intentional, or the source asset cannot safely be updated to restore the product asset, it may be necessary to instead update everything referencing the broken product asset. In this case you'll need to search for all broken references, and for each type or content or code referencing the missing product asset, update it within the relevant system to handle the removal of this product asset or change to the Sub ID.
+
+#### Debugging
+If content appears missing or broken, try opening the file that references broken content in a text editor or another editor that might show additional details. Search for the broken reference, it will either be an asset ID which is a combination UUID and Sub ID, or it will be a reference via relative path.
+
+If you can find the missing reference and it is an Asset ID reference, then you can use the UUID to determine the Source Asset. From here, you can look at the history of this Source Asset in your source control to see what changes may have come in, as well as who authored those changes. You can experiment by rolling back the file locally to see if the missing product asset shows up again.
+
+If you believe the issue is within the builder itself, and is not a content problem, then you can try [debugging the Asset Builder](#DebugAssetBuilders) to investigate how the product Sub IDs are generated and where this thrash is coming from.
 
 ## View Asset Processor Logs 
 
@@ -97,6 +194,7 @@ Use this tool to automatically attach the debugger to spawned child processes.
 1. In Visual Studio, start `AssetProcessor.exe`. Breakpoints in Asset Builders work as normal.
 
 ## Debug Asset Builders from Asset Processor 
+<a name="DebugAssetBuilders"></a>
 
 Use the procedure below to debug in either of the following scenarios:
 
