@@ -51,7 +51,7 @@ To prepare to build the engine and projects, choose one of the following build t
 
     * `LY_3RDPARTY_PATH` : The path to the downloadable package directory, also known as the "third-party path". Do not use trailing slashes when specifying the path to the packages directory.
 
-1. (Optional) Use CMake to build the source engine. This step is optional because in the "source engine" build model, the engine is built inside of every project. If you plan on working with projects, to avoid building the engine twice, consider waiting until you learn how to create and build a project, which we cover in our documentation on creating projects. The following command builds the engine without a project.
+1. (Optional) Use CMake to build the source engine. This step is optional because in the "source engine" build model, the engine is built inside of every project. If you plan on working with projects, to avoid building the engine twice, consider waiting until you learn how to create and build a project, which is covered in the [Project Creation](/docs/welcome-guide/create/) section. The following command builds the engine without a project.
 
     The following example shows the `profile` build configuration.
 
