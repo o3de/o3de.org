@@ -8,27 +8,27 @@ Components can optionally specify a list of services that they provide, are inco
 
 The following example shows a service specification.
 
-```
+```cpp
 static void GetProvidedServices(AZ::ComponentDescriptor::DependencyArrayType& provided)
 {
-      provided.push_back(AZ_CRC("ProvidedService"));
-      provided.push_back(AZ_CRC("AnotherProvidedService"));
+      provided.push_back(AZ_CRC_CE("ProvidedService"));
+      provided.push_back(AZ_CRC_CE("AnotherProvidedService"));
 }
 
 static void GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& required)
 {
-      required.push_back(AZ_CRC("RequiredService"));
-      required.push_back(AZ_CRC("AnotherRequiredService"));
+      required.push_back(AZ_CRC_CE("RequiredService"));
+      required.push_back(AZ_CRC_CE("AnotherRequiredService"));
 }
 
 static void GetIncompatibleServices(AZ::ComponentDescriptor::DependencyArrayType& incompatible)
 {
-      incompatible.push_back(AZ_CRC("IncompatibleService"));
+      incompatible.push_back(AZ_CRC_CE("IncompatibleService"));
 }
 
 static void GetDependentServices(AZ::ComponentDescriptor::DependencyArrayType& dependent)
 {
-      dependent.push_back(AZ_CRC("DependentOnService"));
+      dependent.push_back(AZ_CRC_CE("DependentOnService"));
 }
 ```
 
@@ -39,6 +39,7 @@ static void GetDependentServices(AZ::ComponentDescriptor::DependencyArrayType& d
 **DependentService** - Specifies a service on which the component depends but does not require. The component entity system guarantees that the components that provide dependent services are activated before the component itself is activated. For example, an audio component could depend on the `physics` component. If the entity has physics, the audio component can query the `physics` component for physical material information. However, the audio component does not require that physics be present.
 
 **IncompatibleService** - Specifies a service that cannot work with the component. Consider these examples:
+
 + An entity can have only one type of collider. Therefore, the `PrimitiveColliderService` specifies that the `MeshColliderService` is incompatible with it and vice versa.
 + The same effect can be achieved if two collider components already provide the `ColliderService` themselves and therefore specify the `ColliderService` as incompatible. Marking a component as incompatible with `ColliderService` ensures that no other component that has the same service is added to the entity.
 + The `IncompatibleService` specification is frequently used to specify that multiples of the same component cannot exist on an entity.

@@ -7,9 +7,18 @@ weight: 200
 
 A *component* in **Open 3D Engine (O3DE)** is a simple class that inherits from O3DE's `AZ::Component`. A component's behavior is determined by its reflected data and the actions that it takes when it is activated. This section shows you how to create O3DE components programmatically. For information about adding and customizing the components available in **O3DE Editor**, refer to the [Component Reference](/docs/user-guide/components/reference).
 
-## Component example
+While every component is unique, the following steps are commonly completed when creating a new component:
 
-Boilerplate code for a component class:
+1. Create the component class from boilerplate code, or from an existing component.
+1. Register the component in the parent Gem module.
+1. Implement the component class interface, using the `Init()`, `Activate()`, and `Deactivate()` functions.
+1. Reflect component data for serialization and editing.
+1. Reflect component data and methods for scripting.
+1. Define component services, such as the provided and required services.
+
+## Create your component class
+
+Start with the following boilerplate code for a typical runtime component class. For editor and system components, get their boilerplate code from [Editor Components](editor-components) and [System Components](system-components), respectively.
 
 ```cpp
 #include <AzCore/Component/Component.h>
@@ -18,7 +27,7 @@ class MyComponent
       : public AZ::Component
 {
 public:
-      AZ_COMPONENT(MyComponent, "{0C09F774-DECA-40C4-8B54-3A93033EC381}", AZ::Component);
+      AZ_COMPONENT(MyComponent, "{0C09F774-DECA-40C4-8B54-3A93033EC381}");
 
       // AZ::Component interface implementation.
       void Init() override          {}
@@ -36,24 +45,63 @@ public:
 };
 ```
 
-## Component members
+## Register the component
 
-The required and optional members that a component comprises are as follows:
+Registering a component enables the system's module manager to provide essential services to the component. Some of these services include loading system components in the proper order according to dependencies, and the association of type info with the various reflection contexts.
 
-* Inheritance from `AZ::Component`
+To register a component, you must add a component descriptor in the constructor of your Gem's `AZ::Module` implementation.
 
-    Every component must include `AZ::Component` somewhere in its inheritance ancestry. Noneditor components generally inherit directly from `AZ::Component`, as in the following example:
+1. Find your Gem's `AZ::Module` class that was created when you created the Gem. If you created the Gem from the default Gem template, look for the file in `<Gem>/Code/Source/MyGemModuleInterface.h`.
+
+1. Include your component's header in the class's implementation.
+
+    Example:
+
+    ```cpp
+    #include <MyComponent.h>
+    ```
+
+1. In the class constructor, add a call to your component's static `CreateDescriptor` function.
+
+    Example:
+
+    ```cpp
+    MyGemModuleInterface()
+    {
+        m_descriptors.insert(m_descriptors.end(), {
+            // ...
+            MyComponent::CreateDescriptor()
+        });
+    }
+    ```
+
+For more information about the Gem module system, refer to the overview in [Gem Module System](/docs/user-guide/programming/gems/overview).
+
+## Implement the component class interface
+
+To begin implementing the component interface, start with the following steps that walk through the required and optional members of a component class:
+
+1. Inherit from a component base class.
+
+    Every component must include `AZ::Component` somewhere in its inheritance ancestry. Non-editor components generally inherit directly from `AZ::Component`, as in the following example:
 
     ```cpp
     class MyComponent
         : public AZ::Component
     ```
 
-    You can also create your own component class hierarchies.
+    Editor components typically inherit from `EditorComponentBase`. These components enable you to have editor-specific functionality that is different than what's needed at runtime. You can implement editor functionality in the editor component, and runtime functionality in the runtime component counterpart. For more information and additional implementation requirements, refer to [Editor Components](./editor-components.md) later in this section.
 
-* `AZ_COMPONENT` macro
+    Example editor component class:
 
-    Every component must specify the `AZ_COMPONENT` macro in its class definition. The macro takes two arguments:
+    ```cpp
+    class MyEditorComponent
+        : public AzToolsFramework::Components::EditorComponentBase
+    ```
+
+    You can also create your own component class hierarchies to provide additional component types.
+
+1. Use the `AZ_COMPONENT` macro to define a unique UUID for your component. The macro takes two arguments:
 
     1. The component type name.
 
@@ -61,12 +109,12 @@ The required and optional members that a component comprises are as follows:
     A sample `AZ_COMPONENT` macro follows:
 
     ```cpp
-    AZ_COMPONENT(MyComponent, "{0C09F774-DECA-40C4-8B54-3A93033EC381}", AZ::Component);
+    AZ_COMPONENT(MyComponent, "{0C09F774-DECA-40C4-8B54-3A93033EC381}");
     ```
 
-* `AZ::Component` override functions
+1. Override the base class functions.
 
-    To define a component's behavior, you generally override three `AZ::Component` functions: `Init`, `Activate`, and `Deactivate`:
+    To define a component's behavior, override up to three `AZ::Component` functions: `Init`, `Activate`, and `Deactivate`:
 
     ```cpp
     void Init() override       {}
@@ -78,32 +126,34 @@ The required and optional members that a component comprises are as follows:
 
     * `Init()`
 
-        (Optional) Called only once for a given entity. It requires minimal construction or setup work, since the component may not be activated anytime soon. An important best practice is to minimize your component's CPU and memory overhead while the component is inactive.
+        (Optional) Called only once for a given entity to initialize the component's internal state. Although the Init() function initializes the component, the component is not active until the system calls the component's Activate() function. We recommend that you minimize the component's CPU and memory overhead when the component is inactive.
 
     * `Activate()`
 
-        (Required) Called when the owning entity is being activated. The system calls your component's `Activate()` function only if all dependent or required services are present. Your `Activate` function is always called after any components that it depends on. In addition, the component makeup of an entity never changes while the entity is active. Consequently, it is safe to cache pointers or references to other components on the entity when performance is critical.
+        (Required) Called when the owning entity is activated, provided that all services and components that the component depends on are present and active. The `Activate` function is always called _after_ any components that it depends on. To learn how to specify dependencies, refer to [Defining and Using Component Services](services). Typically in the `Activate()` function, a component performs setup procedures, connects to EBuses, and allocates resources or requests assets.
 
     * `Deactivate()`
 
-        (Required) Called when the owning entity is being deactivated. The order of deactivation is the reverse of activation, so your component is deactivated before the components it depends on. As a best practice, make sure your component returns to a minimal footprint when it is deactivated. In general, deactivation should be symmetric to activation.
+        (Required) Called when the owning entity is deactivated. The order of deactivation is the reverse of activation, so your component is deactivated before the components it depends on. As a best practice, make sure your component returns to a minimal footprint when it is deactivated. A component should release all resources and disconnect from all EBuses. In general, deactivation should be symmetric to activation.
 
-        Destruction does not necessarily follow deactivation. An entity can be deactivated and then activated again without being destroyed, so ensure that your components support this efficiently. However, when you do destroy your entity, O3DE ensures that your `Deactivate()` function is called first. Components must be authored with this in mind.
+        Destruction does not necessarily follow deactivation. An entity can be deactivated and reactivated without being destroyed, therefore you should ensure that your components support this efficiently. Eventually when an entity is destroyed, O3DE calls `Deactivate()` first. Take care to author components with this in mind.
 
-* Static `Reflect()` function
+1. Use the reflection context as needed in the static `Reflect()` function to make your component objects available to other parts of the system.
 
-    (Required) All components are AZ reflected classes. Because all components must be serializable and editable, they must contain a `Reflect()` function, as in the following example:
+    All components are AZ reflected classes. Because all components must be serializable and editable, they must contain a `Reflect()` function, as in the following example:
 
     ```cpp
     // Required Reflect function.
     static void Reflect(AZ::ReflectContext* context);
     ```
 
+    The `Reflect()` function is also where you can expose methods, properties, and events to scripting systems such as Script Canvas and Lua.
+
     For more information, refer to [Reflecting a Component for Serialization and Editing](reflection/reflecting-for-serialization).
 
-* Logical services
+1. Implement the component services functions to define provided, dependent, required, and incompatible services.
 
-    (Optional) Components can define any combination of logical services that they provide, depend on, require, or are incompatible with. To define these logical services, use the following functions:
+    To define these logical services, use the following functions:
 
     ```cpp
     // Optional functions for defining provided and dependent services.
@@ -113,4 +163,4 @@ The required and optional members that a component comprises are as follows:
     static void GetIncompatibleServices(AZ::ComponentDescriptor::DependencyArrayType& incompatible);
     ```
 
-    For more information about component services, refer to [Defining and Using Component Services](services).
+    For details on how to implement these component services, refer to [Defining and Using Component Services](services).
