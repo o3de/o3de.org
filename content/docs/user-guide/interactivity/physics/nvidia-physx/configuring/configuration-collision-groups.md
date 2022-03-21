@@ -8,7 +8,9 @@ toc: true
 
 Collision groups act as masks for collision layers. You can specify which collision layers are part of a collision group. A collision layer can be included in multiple collision groups. Each PhysX collider component can interact with one collision group. The collider can interact with any collider assigned to a collision layer included in the selected collision group.
 
+{{< important >}}
 Colliders interact if their collision layers are in each other's collision group. If one collision layer is not present in the other layer's collision group, the colliders don't interact.
+{{< /important >}}
 
 ## Create a collision group
 

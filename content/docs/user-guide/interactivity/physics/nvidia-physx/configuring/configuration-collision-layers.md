@@ -14,7 +14,7 @@ With collision layers, you can place related PhysX entities into categories. The
 * **Enemies** - Entities that move via script or AI that can deal damage to, and receive damage from, player controlled entities.
 * **Projectiles** - Entities that can deal damage.
 
-A project can have up to 64 PhysX collision layers. The layers that you define are specific to your project. When a **PhysX Collider** component is added to an entity, it is assigned a collision layer with index **\[0\]** called `Default`. This can't be changed. You can assign each collider component to one layer. An entity can have multiple collider components assigned to different layers.
+A project can have up to 64 PhysX collision layers. The layers that you define are specific to your project. When a **PhysX Collider** component is added to an entity, it is assigned a collision layer with index **\[0\]** called `Default`. You can assign each collider component to one layer. An entity can have multiple collider components assigned to different layers.
 
 ## Create a collision layer
 

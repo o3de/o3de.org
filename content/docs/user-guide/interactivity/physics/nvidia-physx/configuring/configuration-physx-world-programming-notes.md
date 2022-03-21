@@ -35,6 +35,6 @@ WorldRequestBus::EventResult(choose, AZ_CRC("AZPhysicalWorld"), &WorldRequests::
 If your game creates multiple worlds, it must manage the objects that are added into those worlds.
 {{< /note >}}
 
-## Step constants
+## Time step constants
 
 You can configure step constants for `Physics::WorldSettings` when `PhysXWorld` is created. For more information, see [PhysX System Global Configuration](./configuration-global/#system-configuration).
