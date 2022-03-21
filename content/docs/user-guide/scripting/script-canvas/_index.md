@@ -22,4 +22,4 @@ To use Script Canvas in your O3DE project, you must enable the [Script Canvas](/
 | [Programmer Guide](programmer-guide/) | Learn how to expose runtime code in Script Canvas using the behavior context, and how to create custom nodes ("nodeables") using AzAutoGen. |
 | [Best Practices](best-practices) | Get tips on best practices when using Script Canvas. |
 | [Debugging](debugging) | Learn how to use the Script Canvas Debugger. |
-| [Troubleshooting](troubleshooting) | Get tips and techniques for troubleshooting in Script Canvas. |
+
