@@ -8,16 +8,7 @@ toc: true
 
 If you are having issues with **Asset Processor**, use the methods below to debug the issues.
 
-## Who normally needs to debug Asset Processor issues?
-
-* Content creators looking into problems with their content not behaving in-engine like they expect.
-* Technical artists, assistant content creators or working on expanding their team's pipeline with Python based automation.
-* Engineers assisting content creators or technical artists with debugging those issues.
-* Engineers working on an asset builder, either changing an existing one or making a new one.
-* Engineers working on packaging content for a bundled release build of a project, using the Asset Processor to discover a gap or other issue that was found during the bundling process.
-* Engineers working on the Asset Processor itself, including the logic for the Asset Processor to communicate with the Editor or launchers.
-
-## What kinds of problems need to be solved within the Asset Processor?
+## What kinds of problems can be encountered within Asset Processing?
 
 * After changing a source asset, it takes too long for assets to finish processing.
 * The product assets don't behave like expected. They may be missing entirely, missing information, have incorrect information.
@@ -28,7 +19,7 @@ If you are having issues with **Asset Processor**, use the methods below to debu
 
 ## What are common Asset Processor related problems, and paths to address those problems?
 
-### Product Asset Thrash - Non Deterministic Product Assets
+### Non Deterministic Product Assets - Different Product Assets with No Source Changes
 
 #### Situation
 With no changes to the code for a builder, and no changes to a source asset, when that job is run multiple times, the contents of product assets end up different than the previous run.
@@ -43,19 +34,23 @@ Extraneous information is included in the product asset, such as a timestamp. Lo
 In most cases this will require an engineer to make changes to the internal builder logic to stabilize the product output.
 
 #### Debugging
-Your team most likely encounter this issue when generating [Asset Bundles](/packaging/asset-bundler/), which is the primary system it impacts. The Asset Bundling process is generally done by an engineer, who will likely work backward from first finding a product asset in bundles that was not expected to be there, because no changes were done that should have resulted in a new product asset.
+Your team most likely encounter this issue when generating [Asset Bundles](/packaging/asset-bundler/), which is the primary system non-deterministic Product Assets impacts. If a Product Asset shows up in a bundle that you didn't expect to be there because the Source Asset and associated Asset Builder did not change, then debugging tends to start by working backward from there.
 
-This thrash will be introduced by the asset builder that created this product asset, so to identify the cause you'll want to look for this product asset in the Asset Processor's asset tab, or directly in the Asset Database using an external database browsing tool. From there you can find the job that created that product asset. Once you identify the job that created this product asset, you can then find the builder that produces that job, and go to the Process Jobs function for that builder, to find where it outputs the product asset. Working backward from here, you should be able to find the cause of the thrash by exploring the code. You can also try [debugging the Asset Builder](#DebugAssetBuilders) processing that job, to step through.
+Non-deterministic behavior in Product Assets will be introduced by the asset builder that created this product asset, so to identify the cause you'll want to look for this product asset in the Asset Processor's asset tab, or directly in the Asset Database using an external database browsing tool. From there you can find the job that created that product asset. Once you identify the job that created this product asset, you can then find the builder that produces that job, and go to the Process Jobs function for that builder, to find where it outputs the product asset. Working backward from here, you should be able to find the cause of the Product Asset changing by exploring the code. You can also try [debugging the Asset Builder](#DebugAssetBuilders) processing that job, to step through.
 
-To help identify the block of logic in the product asset that is thrashing, you may be able to use a standard file diffing tool using two generated product assets. You can quickly re-generate the product asset by right clicking it in the Asset Processor's asset tab and selecting reprocess source asset.
+To help identify the block of logic in the Product Asset that is changing each time it is processed, you may be able to use a standard file diffing tool using two generated product assets. You can quickly re-generate the product asset by right clicking it in the Asset Processor's asset tab and selecting reprocess source asset.
 
-### Product Asset Sub ID Thrash - Same product generates different Sub ID
+Another debugging option is setting up automation to catch this early. If you have an automated system that processes assets for your project, you can expand this automation to also 
+
+### Same Product Asset generated with different Sub ID
 
 #### Situation
-With no changes to the code for a builder, and no changes to a source asset, when that job is run multiple times, the Sub IDs of product assets end up different than the previous run.
+The Sub ID for a Product Asset changes when it is not expected to change.
+
+In the worst case, the Sub ID is changing when no changes have been made to the Source Asset or builder that created the Product Asset. In other cases, a change to the Source Asset results in a Product Asset that has a different Sub ID than it did previously.
 
 #### Effect
-Assets are mostly referenced by asset ID, the UUID of the source asset with the Sub ID for that product asset. If this is not consistent and the Sub ID thrashes, then external references to this asset can end up incorrect, pointing at a different asset after a rebuild or pointing at no asset if no other products use that Sub ID.
+Assets are mostly referenced by asset ID, the UUID of the source asset with the Sub ID for that product asset. If this is not consistent and the Sub ID changes for a Product Asset when it should not change, then external references to this asset can end up incorrect, pointing at a different asset after a rebuild or pointing at no asset if no other products use that Sub ID.
 
 #### Example
 Here is an example with scene files and prefabs:
@@ -72,12 +67,12 @@ Here is an example with scene files and prefabs:
 
 This happens because scene processing tracks the meshes by name, and by swapping the names between the meshes you've replaced which product assets are which. The prefab tracks the outgoing product asset reference via asset ID. When I tested this locally, my Mesh_A azmodel had the Product Asset ID {00431C65-528C-570B-8A52-5D43679BBFAC}:270123712, and Mesh_B has the asset ID {00431C65-528C-570B-8A52-5D43679BBFAC}:285065766. When I swapped the FBX files, the node within the file named Mesh_A still had that same first ID, but the geometry was a cylinder now, changing what it looked like in the prefab.
 
-Note that in this case, this behavior is 100% intentional. There is no bug in this example, but other times this thrash occurs it may be considered a bug.
+Note that in this case, this behavior is 100% intentional. There is no code issue in this example. In this case, if this change was not intended by the FBX author, it is a content bug. The following sections will cover how to identify and correct issues like this.
 
 #### Common Causes
 
 ##### Change to source asset causes Sub IDs to shift
-The most common place Sub ID thrash occurs is when the Sub ID generation is based on data within the source asset, and that data can change. For example, if a node name is hashed to generate the Sub ID for a product asset, then a content creator renaming that node in the source asset will cause the associated product asset to generate a new Sub ID.
+The most common place Sub ID changes occurs is when the Sub ID generation is based on data within the source asset, and that data can change. For example, if a node name is hashed to generate the Sub ID for a product asset, then a content creator renaming that node in the source asset will cause the associated product asset to generate a new Sub ID.
 
 ##### Non-deterministic Sub ID generation from builder
 Sometimes the logic for how a builder may not be fully deterministic. For example, if a builder just increments an integer to use as the Sub ID for each product it generates, then a source asset change that results in a change in the products to remove one, will result in the Sub IDs changing for all product assets after the removed product asset.
@@ -90,8 +85,26 @@ There are times when a builder author needs to make a change to how the builder 
 ##### Stabilize Sub IDs while authoring a builder
 It is the responsibility of the person authoring a builder to define the rules for how Sub IDs are generated by that builder. When doing so, we recommend putting in effort to stabilize Sub ID generation as much as possible: Think about how the source asset can be modified, and how you can maintain continuity in product asset Sub ID generation based on those changes.
 
+Tips for stabilizing Sub IDs for Product Assets authoring a builder:
+* A randomly generated Sub ID is usually going to result in the Sub ID changing when not expected, even if the generation is semi-randomized. Randomly generated Sub IDs should be avoided.
+* Often times, the obvious first way to assign Sub ID for Product Assets is based on the ordered index of that information in the Source Asset. Often times this results in problems with Sub IDs changing, because changes in the Source Asset can result in the ordered list used to shuffle. For example if the content creator removes an entry and causes everything else to shuffle down an index.
+* Hashing the name of an object to use as a reference can work as long as content creators don't expect to rename these objects have have the Sub ID remain stable.
+   * Hashing the name of an object to use as the Sub ID can also be beneficial to content creators in that it allows them to replace content by creating new data with the same name to generate a Product Asset with the same ID.
+* Sometimes there may be a stable internal ID you can use, that content creators do not get direct control over. For example, there may be an internal node structure that generates unique internal IDs for nodes that content creators cannot change. This may be more stable in some ways to use to generate Sub IDs, but consider your content creator's workflows before committing to using this for Sub ID generation. There may be times a content creator specifically wants to make a new thing to replace something, and have the new Product Asset seamlessly be used everywhere the old one was. See the previous point about using object names for an example.
+
+
 ##### Learning how Sub ID generation works for builders that process content you author
-This is preventing this problem more than it is a solution. Much of the content generated for O3DE projects is going to be referenced and used by other content. When you initially sit down to author your content, think about what the output should look like, and how it will be used. When you make changes to the source asset, also think about how that will effect the product assets generated, and how you can maintain continuity with other assets that reference that content. For example, if you're responsible for an FBX file that outputs multiple azmodel product assets, and you want to make a change to this FBX to remove or rename one of those product assets, first you need to look up all references to that model, so you can figure out how to update those. If several prefabs reference the model you are going to remove, then those prefabs may not function as expected, so you'll want to update those first to be ready for your change to the FBX file, so it won't break those prefabs.
+As a content creator, learning how Sub IDs are generated for Product Assets created from the Source Assets you work on can prevent these problems in the first place.
+
+When a Sub ID changes for a Product Asset, it will cause all references to that Product Asset to break, because the Asset ID will no longer resolve to that asset.
+
+During initial content creation, especially for scene files like FBX, thinking through how you want that content referenced elsewhere can help keep the Sub ID for the Product Assets stable.
+
+If you need to make a change to the Source Asset, keep in mind how your changes will impact the Sub IDs of the Product Assets. If you do need to change the Product Assets, a good pattern to follow is
+1. Create a stub of the new Product Asset, or leave a stub for the old Product Asset.
+1. Find all references to the old Product Asset.
+1. Update those as necessary, working with other members on your team to do so.
+1. Once you're sure nothing is left referencing the old Product Asset, then make the final change to remove it from the Source Asset.
 
 ##### Fix the broken references - update the source asset
 Updating the source asset in a way that it will output a product asset with the same sub ID will fix any broken connections. This works best when the product asset was removed unintentionally, either the content creator was unaware the product asset was in use, or they made a change to the source asset not realizing it would cause this issue.
@@ -99,12 +112,19 @@ Updating the source asset in a way that it will output a product asset with the 
 ##### Fix the broken references - update the content referencing the missing product asset
 If the removal of the product asset was intentional, or the source asset cannot safely be updated to restore the product asset, it may be necessary to instead update everything referencing the broken product asset. In this case you'll need to search for all broken references, and for each type or content or code referencing the missing product asset, update it within the relevant system to handle the removal of this product asset or change to the Sub ID.
 
+For example, if an FBX file was updated to no longer generate a Product Asset, and an O3DE Prefab referenced this product asset via a mesh component on an entity, you can use the prefab editing workflow to fix this.
+1. Load the prefab to be edited.
+1. Find the component with the broken reference.
+1. Either change it to reference alternate content, or remove the component/entity.
+
 #### Debugging
 If content appears missing or broken, try opening the file that references broken content in a text editor or another editor that might show additional details. Search for the broken reference, it will either be an asset ID which is a combination UUID and Sub ID, or it will be a reference via relative path.
 
 If you can find the missing reference and it is an Asset ID reference, then you can use the UUID to determine the Source Asset. From here, you can look at the history of this Source Asset in your source control to see what changes may have come in, as well as who authored those changes. You can experiment by rolling back the file locally to see if the missing product asset shows up again.
 
-If you believe the issue is within the builder itself, and is not a content problem, then you can try [debugging the Asset Builder](#DebugAssetBuilders) to investigate how the product Sub IDs are generated and where this thrash is coming from.
+If you believe the issue is within the builder itself, and is not a content problem, then you can try [debugging the Asset Builder](#DebugAssetBuilders) to investigate how the product Sub IDs are generated and where the change in Sub IDs is coming from.
+
+If the builder is an O3DE builder, and not one that your team has created, you can create a ticket [here](https://github.com/o3de/o3de/issues) to get this looked at.
 
 ## View Asset Processor Logs 
 
