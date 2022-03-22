@@ -43,6 +43,7 @@ To help identify the block of logic in the Product Asset that is changing each t
 Another debugging option is setting up automation to catch this early. If you have an automated system that processes assets for your project, you can expand this automation to also 
 
 ### Same Product Asset generated with different Sub ID
+<a name="ProductAssetSubId"></a>
 
 #### Situation
 The Sub ID for a Product Asset changes when it is not expected to change.
@@ -208,14 +209,52 @@ A warning or error in an Asset Job is the Asset Builder author's way of informin
 
 A failure is an Asset Builder author's way of informing content authors that they were unable to process the Source Asset at all and cannot put out product assets.
 
-#### Example
+The builder author decides on a case by case basis what a warning, error, or failure is. There is guidance [here](interface/#jobs), with suggested patterns to follow.
 
-#### Common Causes
+#### Example - Warning
+```
+>	The name of the node 'Material.003' was invalid or conflicting and was updated to 'Material_003'.
+```
+This warning occured when an FBX file contained a material with an illegal character in its name, '.'. This is a warning because the system was able to safely substitute the character for another, legal character. No action needs to be taken, but if the content creator wanted to clear this warning, they would rename the mateiral in the FBX file. In this example, if you did decide to rename the material to clear the warning, be careful you don't introduce another problem by causing the [Sub ID of the Product Asset to change](#ProductAssetSubId).
+
+#### Example - Error
+```
+>	Element with class ID '{4C19E257-F929-524E-80E3-C910C5F3E2D9}' is not registered with the serializer!
+```
+
+This warning occured when a prefab file referenced a class that was no longer registered with the serializer. This is an error because this prefab will no longer behave the same way it behaved when it was authored, because there is no longer a C++ class that matches this serialization information. Because this is likely not intentional and could have side effects that effect the functionality of this prefab, this is an error instead of a warning. Because the prefab can still be processed in some other ways, it is an error instead of a failure. In this case a broken Product Asset is usually desired over no Product Asset at all, because it gives more options for debugging and correcting the situation.
+
+#### Example - Failure
+```
+>	Failed to import Asset Importer Scene. Error returned: FBX-Parser unexpected end of file
+```
+This failure occured because the file I attempted to process was a blank file with the FBX extension. There was no information for the Scene Builder to even attempt to create a Product Asset from, so it failed instead and output nothing.
 
 #### Solutions
+Most Warning, Error, and Failure messages will include enough information to help guide the steps to take in addressing the problem. If this is not enough information, the next step would be to look at other log messages for that job, to see if they contain relevant information.
+
+Usually clearing this will involve a change to the Source Asset. In some cases it may make more sense to change the Asset Builder to handle this data more correctly. If you're a content creator and you don't see a path you like in addressing the issue, talk to someone on your engineering team to see if the Asset Builder can be updated to better handle the Source Asset.
 
 #### Debugging
+The first step in debugging asset job warnings, errors, and failures is the [jobs tab](interface/#jobs) of the Asset Processor UI, or the log output of Asset Processor Batch. The logging from processing the job generally give guidance on why this situation is a problem and in many cases covers steps to take to correct it.
 
+The next debugging option is checking the documentation for that specific builder may provide guidance on creating assets that process cleanly. For example, if you are encountering an issue with FBX files and aren't sure what steps to take, the [3D Scene Format Support documentation](/assets/scene-settings/scene-format-support/) may have sone information to help address the issue.
+
+Another option would be to examine the source code for the builder itself, especially around the locations generating those messages. Step through why the builder is having issue with the data, and see if this either leads to a way to change the Source Asset to clear the issue, or a path to changing the builder itself to better handle the Source Asset.
+
+To help with that, it may be useful to [more directly debug the Asset Builder](#DebugAssetBuilders).
+
+### Slow Asset Processing Times
+Long asset processing times can be disruptive to a team's ability to iterate quickly on a project.
+
+#### Common Causes
+* Source asset quantity - A project with a lot of content will take a longer time to process.
+* Large or difficult to process source assets - In some cases, a single source asset may be an outlier, having a much longer processing time than most other content.
+* Deep job dependency web - A a large job dependency web can result in a change to one file causing many other files to need to reprocess. See (this documentation for more details)[/assets/pipeline/asset-dependencies-and-identifiers/].
+
+#### Solutions
+* Removing unused content from your project can save on overall asset processing time.
+* Targeted performance improvements at the Asset Builders that are taking the most overall time in asset processing can help.
 
 ## View Asset Processor Logs 
 
