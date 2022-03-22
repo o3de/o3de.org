@@ -160,6 +160,8 @@ The Asset Processor UI lets you right click a Source Asset in the asset tab and 
 ### Logic in Asset Builder persists between building assets
 
 #### Situation
+In some cases, due to information persisting during asset processing, you may get different Product Asset output from jobs based on the order Source Assets are processed. This is usually due to a bug within the Asset Builder that processed this content.
+
 The Asset Processor creates one or more Asset Builder executable based on configuration settings, and uses these to process assets, sending jobs to these Asset Builder executables to run with the individual Asset Builders. There is no system within the Asset Builder Executable to completely shut down and clear all Asset Builders, so it is possible for an Asset Builder to persist information across multiple sessions of processing jobs for a single Asset Builder Executable.
 
 #### Effect
@@ -193,6 +195,27 @@ If your team is seeing situations where some people encounter different asset pr
 Asset Processor, both the command line and graphical interfaces, support a command line flag that can help with investigating. The flag "--sortJobsByDBSourceName" will stabilize the order that jobs are run in. Using this while debugging will let you test different job processing orders by renaming assets to control the order they run. The Asset Processor also allows for regset values to be controlled via command line, using the --regset flag with the setting to set. Specifically, setting the regset value /Amazon/AssetProcessor/Settings/Jobs/maxJobs to 1 will restrict the Asset Processor to only launch a single Asset Builder Executable. Note that if you have many assets to process, this will result in a long asset processing time, so it's recommended that you set this after you've processed all jobs in a previous Asset Processor run with more max jobs. Once you are running Asset Processor with one max job, all assets will process in that session on the same builder, letting you specifically process assets in the order of your choosing.
 
 Attaching Visual Studio to a running Asset Builder can also help with debugging. Following [these instruction](#DebugAssetBuilders) will run Asset Processor with a single builder, so you can process multiple assets in order with Visual Studio connected to the Asset Builder Executable. At that point you can try manually re-processing assets using the right click menu of the Asset Tab, and track what data is persisting across multiple jobs on the same Asset Builder on the same Asset Builder Executable.
+
+### Fixing Warnings, Errors, and Failures for a specific asset
+
+#### Situation
+After an asset finishes processing, if the job completed it may still have a number of warnings or errors you may wish to address. In other cases, the job may not finish and may instead fail.
+
+You can see information about viewing Asset Job status in the Asset Processor [here](interface/#jobs).
+
+#### Effect
+A warning or error in an Asset Job is the Asset Builder author's way of informing content authors that they encountered an issue processing your asset, and may not have generated the Product Asset the content author expected.
+
+A failure is an Asset Builder author's way of informing content authors that they were unable to process the Source Asset at all and cannot put out product assets.
+
+#### Example
+
+#### Common Causes
+
+#### Solutions
+
+#### Debugging
+
 
 ## View Asset Processor Logs 
 
