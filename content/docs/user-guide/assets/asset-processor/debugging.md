@@ -126,6 +126,36 @@ If you believe the issue is within the builder itself, and is not a content prob
 
 If the builder is an O3DE builder, and not one that your team has created, you can create a ticket [here](https://github.com/o3de/o3de/issues) to get this looked at.
 
+### Logic Change in Builder with no Version Change
+
+#### Situation
+An engineer makes changes to the logic of an asset builder, but the engineer does not change the fingerprint or version of the builder.
+
+#### Common Issues
+Source Assets processed by this builder will not be automatically reprocessed with the latest changes.
+
+If an asset would fail to process due to the builder change, the engineer making the change might not notice until the builder change is pushed to the rest of the team, causing other people to be disrupted by the failing asset.
+
+If other content or logic requires the changes from processing the asset, other team members may run into problems using the Product Assets output by the older version of the builder with the other updated logic.
+
+#### Immediate Solution
+Change the version number of the builder reported in that builder's AssetBuilderSDK::AssetBuilderDesc.
+
+#### Long Term Solutions
+Create automated jobs that process all assets cleanly at some interval, to catch issues like this.
+
+One configuration that would catch issues would be:
+* Iterative Job - Processes assets after a code rebuild.
+* Clean Job - Cleans and processes all assets after a code build.
+* Compare the hashes of each Product Asset between builds and runs of these jobs. If any assets end up different in two back to back Clean Jobs but did not process in the Iterative Job, this usually means an asset builder was modified without changing its version.
+
+#### Debugging
+Debugging this issue is usually focused around discovery of the issue in the first place. Once it's identified as a problem, identifying which builder needs a version change and making that change is usually trivial.
+
+If some team members are experiencing issues with content, but not everyone on the team is having the problem, but that content has not changed recently, this is commonly the cause. Check if the builder for that content has been modified in source control recently, and if so, check if the version was changed. If not, then it's likely that the builder change without a version number change is causing a problem.
+
+The Asset Processor UI lets you right click a Source Asset in the asset tab and re-run all jobs on that asset. If doing so causes a change in Product Asset, it likely means a builder was changed without having the version updated. If you want to debug this back and force, it's recommended that you back up the old Product Asset(s) before reprocessing the Source Asset.
+
 ## View Asset Processor Logs 
 
 If Asset Processor isn't working as expected, use the information in the **Logs** tab to debug the issue. The Logs tab contains log information for Asset Processor and not for individual process jobs. To view logs for individual process jobs, refer to the **Event Log Details** pane in the **Jobs** tab of Asset Processor.
