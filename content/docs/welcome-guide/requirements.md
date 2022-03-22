@@ -202,6 +202,7 @@ O3DE also requires some additional library packages to be installed:
 * libsdl2-dev
 * zlib1g-dev
 * mesa-common-dev
+* libssl-dev
 
 You can download and install these packages through `apt-get`.
 
