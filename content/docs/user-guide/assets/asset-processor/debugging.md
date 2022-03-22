@@ -127,6 +127,7 @@ If you believe the issue is within the builder itself, and is not a content prob
 If the builder is an O3DE builder, and not one that your team has created, you can create a ticket [here](https://github.com/o3de/o3de/issues) to get this looked at.
 
 ### Logic Change in Builder with no Version Change
+<a name="NoVersionChange"></a>
 
 #### Situation
 An engineer makes changes to the logic of an asset builder, but the engineer does not change the fingerprint or version of the builder.
@@ -155,6 +156,43 @@ Debugging this issue is usually focused around discovery of the issue in the fir
 If some team members are experiencing issues with content, but not everyone on the team is having the problem, but that content has not changed recently, this is commonly the cause. Check if the builder for that content has been modified in source control recently, and if so, check if the version was changed. If not, then it's likely that the builder change without a version number change is causing a problem.
 
 The Asset Processor UI lets you right click a Source Asset in the asset tab and re-run all jobs on that asset. If doing so causes a change in Product Asset, it likely means a builder was changed without having the version updated. If you want to debug this back and force, it's recommended that you back up the old Product Asset(s) before reprocessing the Source Asset.
+
+### Logic in Asset Builder persists between building assets
+
+#### Situation
+The Asset Processor creates one or more Asset Builder executable based on configuration settings, and uses these to process assets, sending jobs to these Asset Builder executables to run with the individual Asset Builders. There is no system within the Asset Builder Executable to completely shut down and clear all Asset Builders, so it is possible for an Asset Builder to persist information across multiple sessions of processing jobs for a single Asset Builder Executable.
+
+#### Effect
+Stale data or logic running in an Asset Builder in an Asset Builder Executable can result in an Asset processing incorrectly.
+
+#### Cause
+The cause for this issue is when information is cached during one step in processing to make it easier to access at a later step.
+
+#### Example
+This example covers a situation we encountered this problem:
+* The Scene Builder processes scene files, such as FBX files, into a collection of product assets.
+* Each scene file has a scene manifest that contains additional processing rules.
+* Within the scene manifest, a Python script file can be marked to run during scene processing.
+* Early 2021, the Scene Builder on initial startup within each Asset Builder Executable would start with no set Python script.
+* On encountering a scene file that had a scene manifest with a Python script to run, the Scene Builder was storing this Python script to use later.
+* The Scene Builder unintentionally stored this data in a way that persisted across jobs.
+* For this example, FBX file NoPython.fbx does not have a Python script set to run in its Scene Manifest, but FBX WithPython.fbx does have a Python script set to run in its Scene Manifest.
+* If both jobs end up running on the same Asset Builder Executable, then if WithPython.fbx is processed by the Scene Builder on that Asset Builder before NoPython.fbx, the Python script to run was persisted in a way that it was run on NoPython.fbx.
+* The end result was NoPython.fbx was producing different output if it ran after WithPython.fbx on the same Asset Builder Executable as WithPython.fbx ran on over any other situation: Running before WithPython.fbx, running on a different Asset Builder Executable.
+
+#### Solutions
+The primary solution to this problem is to update the builder to not cache information in a way that it persists across jobs.
+
+Automated tests can help prevent this from cropping up. You can see a test that covers the example case above [here](https://github.com/o3de/o3de/blob/development/AutomatedTesting/Gem/PythonTests/assetpipeline/fbx_tests/pythonassetbuildertests.py#L50). This test is annotated with how it's setup and why.
+
+#### Debugging
+This issue is difficult to identify because it requires a very specific setup, as explained previously. We found this issue working backward from intermittent issues on automated asset processing jobs on the O3DE Jenkins servers.
+
+If your team is seeing situations where some people encounter different asset processing results than other team members, and you've already ruled out [a builder change without a version change](#NoVersionChange) as the source of the issue, then keep this in mind. Examine asset processing logs for the assets showing the issue, and check the asset processing order for cases where the issue occurs, compared against cases it does not occur. Specifically look for what other jobs ran on the same Asset Builder Executable, using the same Asset Builder on that executable.
+
+Asset Processor, both the command line and graphical interfaces, support a command line flag that can help with investigating. The flag "--sortJobsByDBSourceName" will stabilize the order that jobs are run in. Using this while debugging will let you test different job processing orders by renaming assets to control the order they run. The Asset Processor also allows for regset values to be controlled via command line, using the --regset flag with the setting to set. Specifically, setting the regset value /Amazon/AssetProcessor/Settings/Jobs/maxJobs to 1 will restrict the Asset Processor to only launch a single Asset Builder Executable. Note that if you have many assets to process, this will result in a long asset processing time, so it's recommended that you set this after you've processed all jobs in a previous Asset Processor run with more max jobs. Once you are running Asset Processor with one max job, all assets will process in that session on the same builder, letting you specifically process assets in the order of your choosing.
+
+Attaching Visual Studio to a running Asset Builder can also help with debugging. Following [these instruction](#DebugAssetBuilders) will run Asset Processor with a single builder, so you can process multiple assets in order with Visual Studio connected to the Asset Builder Executable. At that point you can try manually re-processing assets using the right click menu of the Asset Tab, and track what data is persisting across multiple jobs on the same Asset Builder on the same Asset Builder Executable.
 
 ## View Asset Processor Logs 
 
