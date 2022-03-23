@@ -6,7 +6,7 @@ weight: 500
 toc: true
 ---
 
-If you are having issues with **Asset Processor**, use the methods below to debug the issues.
+If you are having issues with **Asset Processor**, this page covers common problems, solutions, and debugging techniques.
 
 ## What kinds of problems can be encountered within Asset Processing?
 
@@ -34,13 +34,13 @@ Extraneous information is included in the product asset, such as a timestamp. Lo
 In most cases this will require an engineer to make changes to the internal builder logic to stabilize the product output.
 
 #### Debugging
-Your team most likely encounter this issue when generating [Asset Bundles](/packaging/asset-bundler/), which is the primary system non-deterministic Product Assets impacts. If a Product Asset shows up in a bundle that you didn't expect to be there because the Source Asset and associated Asset Builder did not change, then debugging tends to start by working backward from there.
+Your team will most likely encounter this issue when generating [Asset Bundles](/packaging/asset-bundler/), which is the primary system non-deterministic Product Assets impacts. If a Product Asset shows up in a bundle that you didn't expect to be there because the Source Asset and associated Asset Builder did not change, then debugging tends to start by working backward from there.
 
 Non-deterministic behavior in Product Assets will be introduced by the asset builder that created this product asset, so to identify the cause you'll want to look for this product asset in the Asset Processor's asset tab, or directly in the Asset Database using an external database browsing tool. From there you can find the job that created that product asset. Once you identify the job that created this product asset, you can then find the builder that produces that job, and go to the Process Jobs function for that builder, to find where it outputs the product asset. Working backward from here, you should be able to find the cause of the Product Asset changing by exploring the code. You can also try [debugging the Asset Builder](#DebugAssetBuilders) processing that job, to step through.
 
 To help identify the block of logic in the Product Asset that is changing each time it is processed, you may be able to use a standard file diffing tool using two generated product assets. You can quickly re-generate the product asset by right clicking it in the Asset Processor's asset tab and selecting reprocess source asset.
 
-Another debugging option is setting up automation to catch this early. If you have an automated system that processes assets for your project, you can expand this automation to also 
+Another debugging option is setting up automation to catch this early. If you have an automated system that processes assets for your project, you can expand this automation to also compare iterative asset processing to a clean cache asset process and the previous day's assets. Doing this will let you compare the hashes of Product Assets, and find any where the hash has changed when it should not have.
 
 ### Same Product Asset generated with different Sub ID
 <a name="ProductAssetSubId"></a>
@@ -61,12 +61,12 @@ Here is an example with scene files and prefabs:
 1. Create a new prefab with an entity in it with a mesh component.
 1. Assign the cube Mesh_A from shapes.fbx to this component.
 1. Save and quit the Editor.
-1. Replace the shapes.fbx file in your project with shapes_2.fbx.
+1. Replace the shapes.fbx file in your project with shapes_2.fbx, renaming shapes_2.fbx to shapes.fbx and saving it over the previous file.
 1. Load the Editor.
 1. Load the prefab you saved earlier.
-1. Notice that the mesh on the entiyt component is still Mesh_A, but now visually looks like the cylinder.
+1. Notice that the mesh on the entity component is still Mesh_A, but now visually looks like the cylinder.
 
-This happens because scene processing tracks the meshes by name, and by swapping the names between the meshes you've replaced which product assets are which. The prefab tracks the outgoing product asset reference via asset ID. When I tested this locally, my Mesh_A azmodel had the Product Asset ID {00431C65-528C-570B-8A52-5D43679BBFAC}:270123712, and Mesh_B has the asset ID {00431C65-528C-570B-8A52-5D43679BBFAC}:285065766. When I swapped the FBX files, the node within the file named Mesh_A still had that same first ID, but the geometry was a cylinder now, changing what it looked like in the prefab.
+This happens because scene processing generates Sub IDs based on the node's name. The prefab was tracking the outgoing asset reference via this ID, so the node name is functionally what is used to track references to individual Product Assets generated from the source FBX.
 
 Note that in this case, this behavior is 100% intentional. There is no code issue in this example. In this case, if this change was not intended by the FBX author, it is a content bug. The following sections will cover how to identify and correct issues like this.
 
@@ -86,10 +86,13 @@ There are times when a builder author needs to make a change to how the builder 
 ##### Stabilize Sub IDs while authoring a builder
 It is the responsibility of the person authoring a builder to define the rules for how Sub IDs are generated by that builder. When doing so, we recommend putting in effort to stabilize Sub ID generation as much as possible: Think about how the source asset can be modified, and how you can maintain continuity in product asset Sub ID generation based on those changes.
 
+The Asset Pipeline supports a Legacy Sub ID that can be used to remap old sub IDs to new sub IDs, when a builder author needs to change them.
+
 Tips for stabilizing Sub IDs for Product Assets authoring a builder:
 * A randomly generated Sub ID is usually going to result in the Sub ID changing when not expected, even if the generation is semi-randomized. Randomly generated Sub IDs should be avoided.
-* Often times, the obvious first way to assign Sub ID for Product Assets is based on the ordered index of that information in the Source Asset. Often times this results in problems with Sub IDs changing, because changes in the Source Asset can result in the ordered list used to shuffle. For example if the content creator removes an entry and causes everything else to shuffle down an index.
-* Hashing the name of an object to use as a reference can work as long as content creators don't expect to rename these objects have have the Sub ID remain stable.
+* Sometimes builder authors will assign Sub ID for Product Assets based on the ordered index of that information in the Source Asset. This can result in unstable Sub IDs, because changes in the Source Asset can result in the ordered list shuffling.
+   * For example if the content creator removes an entry and causes everything else to shuffle down an index.
+* Hashing the name of an object to use as a reference can work as long as content creators don't expect to rename these objects to have the Sub ID remain stable.
    * Hashing the name of an object to use as the Sub ID can also be beneficial to content creators in that it allows them to replace content by creating new data with the same name to generate a Product Asset with the same ID.
 * Sometimes there may be a stable internal ID you can use, that content creators do not get direct control over. For example, there may be an internal node structure that generates unique internal IDs for nodes that content creators cannot change. This may be more stable in some ways to use to generate Sub IDs, but consider your content creator's workflows before committing to using this for Sub ID generation. There may be times a content creator specifically wants to make a new thing to replace something, and have the new Product Asset seamlessly be used everywhere the old one was. See the previous point about using object names for an example.
 
@@ -156,23 +159,23 @@ Debugging this issue is usually focused around discovery of the issue in the fir
 
 If some team members are experiencing issues with content, but not everyone on the team is having the problem, but that content has not changed recently, this is commonly the cause. Check if the builder for that content has been modified in source control recently, and if so, check if the version was changed. If not, then it's likely that the builder change without a version number change is causing a problem.
 
-The Asset Processor UI lets you right click a Source Asset in the asset tab and re-run all jobs on that asset. If doing so causes a change in Product Asset, it likely means a builder was changed without having the version updated. If you want to debug this back and force, it's recommended that you back up the old Product Asset(s) before reprocessing the Source Asset.
+The Asset Processor UI lets you right click a Source Asset in the asset tab and re-run all jobs on that asset. If doing so causes a change in Product Asset, it likely means a builder was changed without having the version updated. If you want to debug this back and forth, it's recommended that you back up the old Product Asset(s) before reprocessing the Source Asset.
 
 ### Logic in Asset Builder persists between building assets
 
 #### Situation
 In some cases, due to information persisting during asset processing, you may get different Product Asset output from jobs based on the order Source Assets are processed. This is usually due to a bug within the Asset Builder that processed this content.
 
-The Asset Processor creates one or more Asset Builder executable based on configuration settings, and uses these to process assets, sending jobs to these Asset Builder executables to run with the individual Asset Builders. There is no system within the Asset Builder Executable to completely shut down and clear all Asset Builders, so it is possible for an Asset Builder to persist information across multiple sessions of processing jobs for a single Asset Builder Executable.
+The Asset Processor starts one or more Asset Builder executables based on configuration settings, and uses these to process assets, sending jobs to these Asset Builder executables to run with the individual Asset Builders. There is no system within the Asset Builder Executable to completely shut down and clear all Asset Builders, so it is possible for an Asset Builder to persist information across multiple sessions of processing jobs for a single Asset Builder Executable.
 
 #### Effect
-Stale data or logic running in an Asset Builder in an Asset Builder Executable can result in an Asset processing incorrectly.
+Stale data or logic in the Asset Builder Executable can result in an Asset processing incorrectly.
 
 #### Cause
 The cause for this issue is when information is cached during one step in processing to make it easier to access at a later step.
 
 #### Example
-This example covers a situation we encountered this problem:
+This example covers a situation where this problem was encountered:
 * The Scene Builder processes scene files, such as FBX files, into a collection of product assets.
 * Each scene file has a scene manifest that contains additional processing rules.
 * Within the scene manifest, a Python script file can be marked to run during scene processing.
@@ -189,7 +192,7 @@ The primary solution to this problem is to update the builder to not cache infor
 Automated tests can help prevent this from cropping up. You can see a test that covers the example case above [here](https://github.com/o3de/o3de/blob/development/AutomatedTesting/Gem/PythonTests/assetpipeline/fbx_tests/pythonassetbuildertests.py#L50). This test is annotated with how it's setup and why.
 
 #### Debugging
-This issue is difficult to identify because it requires a very specific setup, as explained previously. We found this issue working backward from intermittent issues on automated asset processing jobs on the O3DE Jenkins servers.
+This issue is difficult to identify because it requires a very specific setup, as explained previously. This issue was found by working backward from intermittent issues on automated asset processing jobs on the O3DE Jenkins servers.
 
 If your team is seeing situations where some people encounter different asset processing results than other team members, and you've already ruled out [a builder change without a version change](#NoVersionChange) as the source of the issue, then keep this in mind. Examine asset processing logs for the assets showing the issue, and check the asset processing order for cases where the issue occurs, compared against cases it does not occur. Specifically look for what other jobs ran on the same Asset Builder Executable, using the same Asset Builder on that executable.
 
@@ -228,7 +231,7 @@ This warning occured when a prefab file referenced a class that was no longer re
 ```
 >	Failed to import Asset Importer Scene. Error returned: FBX-Parser unexpected end of file
 ```
-This failure occured because the file I attempted to process was a blank file with the FBX extension. There was no information for the Scene Builder to even attempt to create a Product Asset from, so it failed instead and output nothing.
+This failure occured because the file processed was a blank file with the FBX extension. There was no information for the Scene Builder to even attempt to create a Product Asset from, so it failed instead and output nothing.
 
 #### Solutions
 Most Warning, Error, and Failure messages will include enough information to help guide the steps to take in addressing the problem. If this is not enough information, the next step would be to look at other log messages for that job, to see if they contain relevant information.
@@ -238,7 +241,7 @@ Usually clearing this will involve a change to the Source Asset. In some cases i
 #### Debugging
 The first step in debugging asset job warnings, errors, and failures is the [jobs tab](interface/#jobs) of the Asset Processor UI, or the log output of Asset Processor Batch. The logging from processing the job generally give guidance on why this situation is a problem and in many cases covers steps to take to correct it.
 
-The next debugging option is checking the documentation for that specific builder may provide guidance on creating assets that process cleanly. For example, if you are encountering an issue with FBX files and aren't sure what steps to take, the [3D Scene Format Support documentation](/assets/scene-settings/scene-format-support/) may have sone information to help address the issue.
+The next debugging option is checking the documentation for that specific builder, which may provide guidance on creating assets that process cleanly. For example, if you are encountering an issue with FBX files and aren't sure what steps to take, the [3D Scene Format Support documentation](/assets/scene-settings/scene-format-support/) may have sone information to help address the issue.
 
 Another option would be to examine the source code for the builder itself, especially around the locations generating those messages. Step through why the builder is having issue with the data, and see if this either leads to a way to change the Source Asset to clear the issue, or a path to changing the builder itself to better handle the Source Asset.
 
@@ -250,7 +253,7 @@ Long asset processing times can be disruptive to a team's ability to iterate qui
 #### Common Causes
 * Source asset quantity - A project with a lot of content will take a longer time to process.
 * Large or difficult to process source assets - In some cases, a single source asset may be an outlier, having a much longer processing time than most other content.
-* Deep job dependency web - A a large job dependency web can result in a change to one file causing many other files to need to reprocess. See (this documentation for more details)[/assets/pipeline/asset-dependencies-and-identifiers/].
+* Deep job dependency web - A large job dependency web can result in a change to one file causing many other files to need to reprocess. See (this documentation for more details)[/assets/pipeline/asset-dependencies-and-identifiers/].
 
 #### Solutions
 * Removing unused content from your project can save on overall asset processing time.
