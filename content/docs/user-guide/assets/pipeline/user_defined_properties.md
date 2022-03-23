@@ -29,15 +29,15 @@ Instead of using a soft naming format to discover LODs like ```lod_<n>```, an ar
 
 ### Mesh Tangent Modifier
 
-The content creates will be able to assign the tangent modifiers (such as the MikkT algorithm) that is applied per mesh node when the mesh is imported into the scene pipeline.
+The content creator will be able to assign the tangent modifiers (such as the MikkT algorithm) that is applied per mesh node when the mesh is imported into the scene pipeline.
 
 ### PhysX Collision Meshes
 
-PhysX collider product assets are used to simulate hit detection and triggers for a group of mesh nodes. Instead of using a soft naming rule with ```_phys``` to indicate the mesh node is a physics mesh, a new property name ```o3de.default.phyiscs.collision``` will be reserved so that the default construction of PhysX mesh selections can be authored in the DCC tool. The PhysX scene builder can be extended further to take in other physics related data such as ```o3de.default.phyiscs.name``` to name the PhysX group, ```o3de.default.phyiscs.material``` to assign the physics material for the group, and so on.
+PhysX collider product assets are used to simulate hit detection and triggers for a group of mesh nodes. Instead of using a soft naming rule with ```_phys``` to indicate the mesh node is a physics mesh, a new property name ```o3de.default.physics.collision``` will be reserved so that the default construction of PhysX mesh selections can be authored in the DCC tool. The PhysX scene builder can be extended further to take in other physics related data such as ```o3de.default.physics.name``` to name the PhysX group, ```o3de.default.physics.material``` to assign the physics material for the group, and so on.
 
 ### Coordinate System
 
-Each mesh group can be assigned a coordinate system modifier to attach to a node. It can also be used to rotate, translate, and scale the mesh group. For example, ```o3de.default.coordinate.scale = 1.25``` will assign a float value of “1.25” to the property key ```o3de.default.coordinate.scale``` to uniformly scale the mesh group by 25%.
+Each mesh group can be assigned a coordinate system modifier to attach to a node. It can also be used to rotate, translate, and scale the mesh group. For example, ```o3de.default.coordinate.scale = 1.25``` will assign a float value of “1.25” to the property key ```o3de.default.coordinate.scale``` to uniformly scale the mesh group up by 25%.
 
 ### Advanced Custom Component
 
@@ -82,7 +82,7 @@ if (materialAssetPath->empty())
 
 ### Python Access
 
-Python scripts uses callbacks to access the scene graph nodes to find user defined properties. The CustomPropertyData will come back as a Python dictionary for the script to enumerate to find the key-value pairs.
+Python scripts use callbacks to access the scene graph nodes to find user defined properties. The CustomPropertyData will come back as a Python dictionary for the script to enumerate to find the key-value pairs.
 
 Python code example:
 
@@ -115,9 +115,6 @@ def print_properties(scene):
 
 ## An example of car with LODs and a collision mesh
 
-This is an example of a Car.fbx file that was saved with UDP metadata for LOD and PhsyX metadata. The Asset Processor will request the Scene Builder to process the Car.fbx source scene asset. The Scene Builder (running in the Asset Builder) imports the scene and builds the scene graph with scene graph nodes with CustomPropertyData content. Latter on the default procedural prefab builder will read in the custom properties in order to build out LOD manifest rules and physics manifest rules. Latter on, these manifest rules will turn into LOD models and physic mesh product files.
+This is an example of a Car.fbx file that was saved with UDP metadata for LOD and PhsyX metadata. The Asset Processor will request the Scene Builder to process the Car.fbx source scene asset. The Scene Builder (running in the Asset Builder process) imports the scene and builds the scene graph with scene graph nodes with CustomPropertyData content. Later on, the default procedural prefab builder will read in the custom properties in order to build out LOD manifest rules and physics manifest rules. Finally, these manifest rules will turn into LOD models and physic mesh product files.
 
 ![Car FBX example with UDPs.](/images/user-guide/assets/pipeline/scene_api_udp.jpg)
-
-
-
