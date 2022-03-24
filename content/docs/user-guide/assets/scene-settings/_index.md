@@ -10,7 +10,14 @@ Meshes, actors, motions, and PhysX colliders created in third-party digital cont
 
 When source assets are placed in a scan directory, **Asset Processor** detects the new or modified files, determines the contents of the files, and then processes the data using basic default settings. However, 3D scene files can be complex and might contain data that's necessary for an artist, animator, or designer, but isn't necessary for a product asset. Data in the source asset might require special handling such as processing custom normals or a coordinate space change. With **Scene Settings**, you can specify the data in the source asset to process and customize how it's processed.
 
-Scene Settings creates a `.assetinfo` sidecar file containing your custom processing options for a source asset. The source asset is not changed. When Asset Processor processes the source asset, it uses the options in the `.assetinfo` file to generate product assets.
+Scene Settings can come from several places:
+* At a baseline, the engine has a default set of logic it will use when importing scene files when no specific setting exists.
+* A step above the baseline, there are some soft naming conventions in use that will override default settings. For example, a node with the suffix "_lod1" on it will be treated as a level of detail mesh.
+* The next priority for tracking scene import settings is the source asset info file, a file that sits next to the source scene file, with the same name but `.assetinfo` appended. For example, `myCharacter.fbx.assetinfo` would be the scene settings file for `myCharacter.fbx`.
+* Some jobs, usually from the [Python Asset Builder](/docs/user-guide/assets/builder/), can output a procedurally generated asset info file. Procedural asset info files take priority over user generated source asset info files. This is because the procedural system can read the source file as part of the generation and choose to include the source settings or skip them.
+* When the scene file is being processed, there is a point where Python scripts can be called to additionally modify the scene settings loaded in memory. This is highest priority because this same logic could read the current settings and choose which to preserve and which settings to override.
+
+The source Scene Settings tracked in the `.assetinfo` file is best edited with the [Scene Settings tool](/docs/user-guide/assets/scene-settings/interface) within the O3DE Editor.
 
 ## Scene Settings topics
 
