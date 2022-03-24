@@ -29,7 +29,7 @@ Instead of using a soft naming format to discover LODs like ```lod_<n>```, an ar
 
 ### Mesh Tangent Modifier
 
-The content creator will be able to assign the tangent modifiers (such as the MikkT algorithm) that is applied per mesh node when the mesh is imported into the scene pipeline.
+The content creator will be able to assign the tangent modifiers (such as the MikkT algorithm) that are applied per mesh node when the mesh is imported into the scene pipeline.
 
 ### PhysX Collision Meshes
 
