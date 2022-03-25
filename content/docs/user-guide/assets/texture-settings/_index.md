@@ -6,14 +6,11 @@ weight: 400
 toc: true
 ---
 
-Texture source assets created in third-party applications must be processed to be used in **Open 3D Engine (O3DE)**. Many image formats are supported and texture processing presets are provided including some specialized use cases such as heightmaps, gradients, and image based lighting (IBL).
-
-When texture source assets are placed in a scan directory, **Asset Processor** detects the new or modified files, determines the contents of the files, and then processes them using basic default settings. However, textures might require specialized processing depending on their use case. You can use naming conventions to automatically select a preset to process a texture, or customize how texture source files are processed with **Texture Settings**.
+ Texture source assets must be processed as optimized streaming images for use in **Open 3D Engine (O3DE)**. With **Texture Settings** you can specify how the texture source assets you create in third-party applications are processed. Several source image formats are supported, and there are many texture processing presets provided for various use cases. You can use naming conventions to automatically select a texture processing preset, and use the options provided by Texture Settings to view, troubleshoot, and fine-tune the texture processing results.
 
 Texture Settings creates a `.assetinfo` sidecar file containing your custom processing options for a texture source asset. The source asset is not changed. When Asset Processor processes the source asset, it uses the options in the `.assetinfo` file to generate product assets.
 
 ## Texture Settings topics
-
 
 The topics in this section provide information about the image file types supported by Texture Settings and the Texture Settings user interface.
 
@@ -21,3 +18,4 @@ The topics in this section provide information about the image file types suppor
 | - | - |
 | [Texture Asset Guidelines](texture-assets) | Information on image formats supported by O3DE and guidelines for creating texture source assets. |
 | [Texture Settings User Interface](interface) | An overview of the Texture Settings user interface. |
+| [Texture Presets](texture-presets) | Technical information including name conventions for texture settings presets. |
