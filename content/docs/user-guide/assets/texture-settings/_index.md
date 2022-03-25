@@ -12,7 +12,8 @@ When texture source assets are placed in a scan directory, **Asset Processor** d
 
 Texture Settings creates a `.assetinfo` sidecar file containing your custom processing options for a texture source asset. The source asset is not changed. When Asset Processor processes the source asset, it uses the options in the `.assetinfo` file to generate product assets.
 
-## Scene Settings topics
+## Texture Settings topics
+
 
 The topics in this section provide information about the image file types supported by Texture Settings and the Texture Settings user interface.
 

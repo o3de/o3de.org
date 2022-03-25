@@ -8,13 +8,13 @@ toc: true
 
 Textures are processed images that are most commonly mapped to meshes as part of a material to create a surface appearance. With physically based rendering (PBR) and image based lighting (IBL), they can also provide specific rendering data such as the diffuse and specular components of a high dynamic range cubemap, or the metallic component of a surface. Textures can be used to create UI elements. Gradient textures can provide distribution and falloff areas for instanced assets such as vegetation. Heightmap textures can be used to generate 3D terrain.
 
-Although textures most often contain an image, they can provide a convenient method to get other data into O3DE. If you have data that can be represented in the color and alpha channels of an image, it can be processed as a texture.
+Although textures most often contain an image, they can provide a convenient method to get other data into **Open 3D Engine (O3DE)**. If you have data that can be represented in the color and alpha channels of an image, it can be processed as a texture.
 
 This topic provides information about the various texture source and product assets, and general guidelines for creating textures for O3DE.
 
 ## Source assets
 
-A texture source asset can be any of the image formats supported by O3DE. Image formats provide varied support for color depths and channels, so it's important to use a format that satisfies the requirements of the texture's intended use.
+A _texture source asset_ can be any of the image formats supported by O3DE. Image formats provide varied support for color depths and channels, so it's important to use a format that satisfies the requirements of the texture's intended use.
 
 The following table lists the image formats supported by O3DE:
 
@@ -52,14 +52,14 @@ Texture product assets can be generated for multiple platforms from a single tex
     {{< important >}}
 Though you can successfully process and use textures with arbitrary resolutions and aspect ratios, you should create textures with square aspect ratios and power of 2 resolutions to get the best performance from the available graphics hardware.   
     {{< /important >}}
-* **Use a suitable resolution.** Use a resolution that suits the texture's use case. For example, a texture for a small background entity doesn't require a resolution as high as an interactive entity that appears close to the camera. Similarly, a UI texture might not need to be higher resolution than its on-screen dimensions.
+* **Use a suitable resolution.** Use a resolution that suits the texture's use case. For example, a texture for a small background entity doesn't require a resolution as high as an interactive entity that appears close to the camera. Similarly, a UI texture might not need to have a higher resolution than its on-screen dimensions.
 * **Use an appropriate image format.** Create texture source assets in a format appropriate for their use case. Using texture source assets that have channel counts and bit depths that closely match their intended use can minimize issues when processing textures.
 
 ## Cubemap texture guidelines
 
 Cubemaps are composed of six textures representing the sides, top, and bottom of a cube. Cubemaps are used to create quick environment reflections, skyboxes, and diffuse and specular texture components for IBL.
 
-Presets that generate environment cubemaps, such as the IBL presets, require specialized high dynamic range source assets that are commonly referred to as HDRIs. These source assets usually use the `.exr` file format and have the following attributes:
+Presets that generate environment cubemaps, such as the IBL presets, require specialized high dynamic range source assets that are commonly referred to as _HDRIs_. These source assets usually use the `.exr` file format and have the following attributes:
 
 * Equirectangular resolution (2048 by 1024 pixels, for example).
 * A 360 degree horizontal by 180 degree vertical projection of an environment.

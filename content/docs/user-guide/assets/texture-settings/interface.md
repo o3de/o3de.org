@@ -38,18 +38,22 @@ The texture preview section displays the processed texture product asset. This s
 | **Tiled Preview** | When enabled, a two by two tiled texture preview is displayed so that repeating textures can be checked for visible seams. |
 | **Preview Update** | The dropdown list {{< icon "caret-open.svg" >}} on the right, above the preview window, selects whether the preview should update automatically when a texture setting is changed or update manually. The texture preview updates automatically by default. When preview update is set to manual, **click** the {{< icon "refresh-active.svg" >}} refresh button to update the texture preview. |
 | **Preview Window** | The preview window displays the processed texture. Hold one of the following hotkeys to toggle the texture preview display.<br><br>**Shift** - Display the RGBA channels.<br>**Alt** - Display the Alpha channel.<br>**Space** - Display the full resolution texture. |
-| **Mipmap Level** | Centered below the Preview Window is the Mimap Level. The number of the currently displayed mipmap is shown. You can **click** the {{< icon "arrow_left-default.svg" >}} previous and {{< icon "arrow_right-default.svg" >}} next buttons to cycle trough the available mipmaps. |
+| **Mipmap Level** | Centered below the Preview Window is the Mimap Level. The number of the currently displayed mipmap is shown. You can **click** the {{< icon "arrow_left-default.svg" >}} previous and {{< icon "arrow_right-default.svg" >}} next buttons to cycle through the available mipmaps. |
+
 | **Resolution** | Displays the resolution of the selected mipmap level.  |
-| **Size** | Displays the filse size of the selected mipmap level. |
+| **Size** | Displays the file size of the selected mipmap level. |
+
 
 ### Texture settings
 
-The texture settings section contains presets for different texture types as well options and information for various target platforms.
+The texture settings section contains presets for different texture types as well as options and information for various target platforms.
+
 
 | Setting | Description |
 | - | - |
 | **Preset** | Provides a list of presets for various texture use cases. The selected preset specifies how the texture source asset is processed. Some presets require specialized texture source assets. Presets are defined in JSON formatted `.preset` files that are located in `/o3de/Gems/Atom/Asset/ImageProcessingAtom/Assets/config/`. You can create your own presets based on the specifications of existing presets.<br><br>Refer to the [Texture presets](#texture-presets) table for more information. |
-| **Information** | The {{< icon "info.svg" >}} information icon to the right of the **Presets** list, displays information about the selected preset, including the list of file masks that you can append to a texture file name to automatically select the preset. The file masks for each preset are specified in `/o3de/Gems/Atom/Asset/ImageProcessingAtom/Assets/config/ImageBuidler.settings`. You can edit this file to modify existing file masks or add strings for your own presets.<br><br>The automated preset selection can be overridden by choosing a different preset and saving the selection to a `.assetinfo` sidecar file. |
+| **Information** | The {{< icon "info.svg" >}} information icon, to the right of the **Presets** list, displays information about the selected preset, including the list of file masks that you can append to a texture file name to automatically select the preset. The file masks for each preset are specified in `/o3de/Gems/Atom/Asset/ImageProcessingAtom/Assets/config/ImageBuidler.settings`. You can edit this file to modify existing file masks or add strings for your own presets.<br><br>The automated preset selection can be overridden by choosing a different preset and saving the selection to a `.assetinfo` sidecar file. |
+
 | **Reset** | The {{< icon "refresh-active.svg" >}} reset icon resets changes that have been made in Texture Settings to the default preset values. |
 | **Use Max Res** | When enabled, the best quality version of the texture is used even on platforms with lower performance specs. It's recommended to enable **Use Max Res** for textures that contain text or other details that must be legible when the texture is close to the camera. |
 | **Platform** | In the **Platform** section, you can set the maximum resolution for the texture for various target platforms. The columns display the maximum resolution and the pixel format of the texture product asset on various target platforms.<br><br>The maximum resolution of the product assets for each target platform is displayed in the **Max Res** column. For some presets, a default maximum resolution for particular platforms might be specified in the `.preset` file. If no maximum resolution is specified for a platform, the default maximum resolution is the resolution of the texture source asset.<br><br>You can reduce the maximum resolution for a platform by editing the values in the **Res Limit** column. **Res Limit** values range from 0 - 5 with the following results:<br><br>**0** - Default maximum texture resolution is used. The default resolution is the resolution of the texture source asset, or the maximum resolution for the platform specified in the `.preset` file.<br>**1** - Texture resolution is reduced by 1/2. Memory consumption is reduced to 1/4 of full resolution.<br>**2** - Texture resolution is reduced by 1/4. Memory consumption is reduced to 1/16 of full resolution.<br>**3** - Texture resolution is reduced by 1/8. Memory consumption is reduced to 1/64 of full resolution.<br>**4** - Texture resolution is reduced by 1/16. Memory consumption is reduced to 1/256 of full resolution.<br>**5** - Texture resolution is reduced by 1/32. Memory consumption is reduced to 1/1024 of full resolution.<br><br>The **Format** column displays the pixel format of the texture product assets for each target platform. |
@@ -70,7 +74,8 @@ The mipmap settings section provides options for generating texture *mipmaps*. M
 | **Apply** | The **Apply** button saves the texture settings to a `.assetinfo` sidecar file. When the `.assetinfo` file is created or updated, the texture source asset is automatically processed. |
 | **Close** | The **Close** button closes the Texture Settings window. |
 
-### Texture presets
+## Texture presets
+
 
 The table below describes the available presets and their requirements.
 
@@ -87,7 +92,8 @@ The table below describes the available presets and their requirements.
 | GSI (Gradient Signal Image) | A color texture with alpha that contains a gradient of gradual changes in value. | An RGBA image. | Same as input pixel format. | `_gsi` |
 | GSI8 | A texture with a single 8-bit channel (red) that contains a gradient of gradual changes in value. | An image with a single channel or an RGB image. | R8 | `_gsi8` |
 | GSI16 | A texture with a single 16-bit channel (red) that contains a gradient of gradual changes in value. | An image with a single channel or an RGB image. | R16 | `_gsi16` |
-| GSI32 | A texture with a single 32-bit channel (red) that contains a gradient of gradual changes in value. | An image with a single channel or an RGB image.. | R32 | `_gsi32` |
+| GSI32 | A texture with a single 32-bit channel (red) that contains a gradient of gradual changes in value. | An image with a single channel or an RGB image. | R32 | `_gsi32` |
+
 | Gradient | A color texture with alpha that contains a gradient of gradual changes in value. | An RGBA image. | R8G8B8A8 | `_grad`<br>`_gradient` |
 | Greyscale | A linear greyscale texture. | A greyscale image with one channel. | Desktop: BC4<br>Mobile: ASTC_4x4 | `_mask`<br> |
 | IBLDiffuse | An HDR cubemap containing the color component for IBL. | An HDR spherical environment map or cubemap. | Windows: BC6UH<br>Linux: BC6UH<br>macOS: R9G9B9E5<br>iOS: R9G9B9E5<br>Android: R9G9B9E5 | `_ibldiffusecm` |
@@ -109,12 +115,16 @@ The table below describes the available presets and their requirements.
 | LayerMask | A color mask texture with 8-bit color channels and and additional 8-bits reserved. | An RGB image. If the image has an alpha channel, it is discarded when the image is processed. | R8G8B8X8 | `layers_rgbmask` |
 | Normals | A linear color texture that contains tangent space surface normals. | An RGB image with tangent space surface normals encoded in the RGB channels.  | Desktop: BC5s<br>Mobile: ASTC_4x4 | `_ddn`<br>`_n`<br>`_nm`<br>`_nor`<br>`_norm`<br>`_normal`<br>`_normalmap`<br>`_normals`<br>`_nrm`<br> |
 | NormalsWithSmoothness | A linear color texture that contains tangent space surface normals in the color channels and a smoothing or gloss value in the alpha channel. | An RGBA image with tangent space surface normals encoded in the RGB channels and gloss or smoothing values encoded in the alpha channel. | Desktop: BC5s<br>Mobile: ASTC_4x4 | `_ddna`<br>`_na`<br>`_nma`<br>`_normala`<br>`_nrma`<br> |
-| Opacity | A linear grayscale image containing opacity values. | A grayscale image with one channel. | Desktop: BC4<br>Mobile: ASTC_4x4 | `_blend`<br>`_mask`<br>`_msk`<br>`_o`<br>`_op`<br>`_opac`<br>`_opacity`<br>`_sss`<br>`_trans`<br> |
-| ReferenceImage | An uncompressed color reference texture with alpha. | An RGBA Image. | R8G8B8A8 | `_ref` |
+| Opacity | A linear greyscale image containing opacity values. | A greyscale image with one channel. | Desktop: BC4<br>Mobile: ASTC_4x4 | `_blend`<br>`_mask`<br>`_msk`<br>`_o`<br>`_op`<br>`_opac`<br>`_opacity`<br>`_sss`<br>`_trans`<br> |
+
+| ReferenceImage | An uncompressed color reference texture with alpha. | An RGBA image. | R8G8B8A8 | `_ref` |
+
 | ReferenceImage HDRLinear | An HDR linear color reference texture. | An RGB image with 16-bit channels. | Windows, Linux: BC6UH<br>macOS, iOS, Android: R9G9B9E5 | `_refhdr`  |
 | ReferenceImage HDRLinearUncompressed | An uncompressed HDR linear color reference texture. | An RGB image with 16-bit floating point channels. | R16G16B16A16F | `_refhdru` |
-| ReferenceImage Linear | An uncompressed linear color reference texture with alpha. | An RGBA Image. | R8G8B8A8 | `_reflinear` |
-| Reflectance | A linear grayscale image containing reflectance values. | A grayscale image with one channel. | Desktop: BC4<br>iOS: ASTC_6x6<br>Android: ASTC_4x4 | `_f0`<br>`_g`<br>`_gloss`<br>`_m`<br>`_metal`<br>`_metallic`<br>`_metalness`<br>`_mt`<br>`_mtl`<br>`_ref`<br> |
+| ReferenceImage Linear | An uncompressed linear color reference texture with alpha. | An RGBA image. | R8G8B8A8 | `_reflinear` |
+
+| Reflectance | A linear greyscale image containing reflectance values. | A greyscale image with one channel. | Desktop: BC4<br>iOS: ASTC_6x6<br>Android: ASTC_4x4 | `_f0`<br>`_g`<br>`_gloss`<br>`_m`<br>`_metal`<br>`_metallic`<br>`_metalness`<br>`_mt`<br>`_mtl`<br>`_ref`<br> |
+
 | Skybox | An HDR skybox cubemap with a minimum size of 256 by 256 pixels. | An HDR spherical environment map or cubemap. If the image has an alpha channel, it is discarded when the image is processed. | R9G9B9E5 | `_skyboxcm` |
 | UserInterface Compressed | A compressed color texture that contains a UI element with an 8-bit alpha channel. | An RGBA image. | Windows, Linux: R8G8B8A8<br>macOS: BC1<br>iOS: ASTC_6x6<br>Android: ASTC_4x4  | `_ui` |
 | UserInterface Lossless | An uncompressed linear color texture that contains a UI element with an 8-bit alpha channel. | An RGBA image. | R8G8B8A8 | `_ui` |
