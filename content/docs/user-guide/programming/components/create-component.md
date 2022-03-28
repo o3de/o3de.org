@@ -18,32 +18,59 @@ While every component is unique, the following steps are commonly completed when
 
 ## Create your component class
 
-Start with the following boilerplate code for a typical runtime component class. For editor and system components, get their boilerplate code from [Editor Components](editor-components) and [System Components](system-components), respectively.
+1. Start with the following boilerplate code for a typical runtime component class. For editor and system components, get their boilerplate code from [Editor Components](editor-components) and [System Components](system-components), respectively.
 
-```cpp
-#include <AzCore/Component/Component.h>
+    **MyComponent.h**
 
-class MyComponent
-      : public AZ::Component
-{
-public:
-      AZ_COMPONENT(MyComponent, "{0C09F774-DECA-40C4-8B54-3A93033EC381}");
+    ```cpp
+    #pragma once
 
-      // AZ::Component interface implementation.
-      void Init() override          {}
-      void Activate() override      {}
-      void Deactivate() override    {}
+    #include <AzCore/Component/Component.h>
 
-      // Required Reflect function.
-      static void Reflect(AZ::ReflectContext* context);
+    namespace MyGem
+    {
+        class MyComponent
+            : public AZ::Component
+        {
+        public:
+            AZ_COMPONENT(MyGem::MyComponent, "{NEW-GUID-HERE}");
 
-      // Optional functions for defining provided and dependent services.
-      static void GetProvidedServices(AZ::ComponentDescriptor::DependencyArrayType& provided);
-      static void GetDependentServices(AZ::ComponentDescriptor::DependencyArrayType& dependent);
-      static void GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& required);
-      static void GetIncompatibleServices(AZ::ComponentDescriptor::DependencyArrayType& incompatible);
-};
-```
+            // Required Reflect function.
+            static void Reflect(AZ::ReflectContext* context);
+
+            // Optional functions for defining provided and dependent services.
+            static void GetProvidedServices(AZ::ComponentDescriptor::DependencyArrayType& provided);
+            static void GetDependentServices(AZ::ComponentDescriptor::DependencyArrayType& dependent);
+            static void GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& required);
+            static void GetIncompatibleServices(AZ::ComponentDescriptor::DependencyArrayType& incompatible);
+
+        protected:
+            // AZ::Component interface implementation.
+            void Init() override          {}
+            void Activate() override      {}
+            void Deactivate() override    {}
+        };
+    } // namespace MyGem
+    ```
+
+    **MyComponent.cpp**
+
+    ```cpp
+    #include <MyComponent.h>
+
+    #include <AzCore/Serialization/SerializeContext.h>
+    #include <AzCore/Serialization/EditContext.h>
+
+    namespace MyGem
+    {
+        void MyComponent::Reflect(AZ::ReflectContext* context)
+        {
+            context; // TODO: Add reflection code.
+        }
+    } // namespace MyGem
+    ```
+
+1. Add these files to your Gem's CMake source file list, for example: `<Gem>/Code/mygem_files.cmake`.
 
 ## Register the component
 
@@ -103,21 +130,21 @@ To begin implementing the component interface, start with the following steps th
 
 1. Use the `AZ_COMPONENT` macro to define a unique UUID for your component. The macro takes two arguments:
 
-    1. The component type name.
+    1. The component type name. To help avoid name conflicts, we recommend that you use the namespace in any type of `AZ_RTTI` macros such as `AZ_COMPONENT`.
 
     1. A unique UUID. You may use any UUID generator to produce the value. Visual Studio provides this functionality through **Tools**, **Create GUID**. Use the **Registry Format** setting, and then copy and paste the value that is generated.
     A sample `AZ_COMPONENT` macro follows:
 
     ```cpp
-    AZ_COMPONENT(MyComponent, "{0C09F774-DECA-40C4-8B54-3A93033EC381}");
+    AZ_COMPONENT(MyGem::MyComponent, "{0C09F774-DECA-40C4-8B54-3A93033EC381}");
     ```
 
 1. Override the base class functions.
 
-    To define a component's behavior, override up to three `AZ::Component` functions: `Init`, `Activate`, and `Deactivate`:
+    To define a component's behavior, override three `AZ::Component` functions: `Init`, `Activate`, and `Deactivate`:
 
     ```cpp
-    void Init() override       {}
+    void Init() override       {} // optional
     void Activate() override   {}
     void Deactivate() override {}
     ```
