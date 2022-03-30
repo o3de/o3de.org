@@ -51,4 +51,4 @@ The following table provides information on the available texture processing pre
 | Reflectance | A linear greyscale image containing reflectance values. | A greyscale image with one channel. | Desktop: BC4<br>iOS: ASTC_6x6<br>Android: ASTC_4x4 | `_f0`<br>`_g`<br>`_gloss`<br>`_m`<br>`_metal`<br>`_metallic`<br>`_metalness`<br>`_mt`<br>`_mtl`<br>`_ref`<br> |
 | Skybox | An HDR skybox cubemap with a minimum size of 256 by 256 pixels. | An HDR spherical environment map or cubemap. If the image has an alpha channel, it is discarded when the image is processed. | R9G9B9E5 | `_skyboxcm` |
 | UserInterface Compressed | A compressed color texture that contains a UI element with an 8-bit alpha channel. | An RGBA image. | Windows, Linux: R8G8B8A8<br>macOS: BC1<br>iOS: ASTC_6x6<br>Android: ASTC_4x4  | `_ui` |
-| UserInterface Lossless | An uncompressed linear color texture that contains a UI element with an 8-bit alpha channel. | An RGBA image. | R8G8B8A8 | `_ui` |
+| UserInterface Lossless | An uncompressed linear color texture that contains a UI element with an 8-bit alpha channel. | An RGBA image. | R8G8B8A8 | `_uil` |

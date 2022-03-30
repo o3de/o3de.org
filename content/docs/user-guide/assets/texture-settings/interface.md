@@ -47,6 +47,7 @@ The texture preview section displays the processed texture product asset. This s
 
 The texture settings section contains presets for different texture types as well as options and information for various target platforms.
 
+![Texture Settings preset and resolution options.](/images/user-guide/assets/texture-settings/texture-settings-ui-02.png)
 
 | Setting | Description |
 | - | - |
@@ -57,6 +58,8 @@ The texture settings section contains presets for different texture types as wel
 | **Platform** | In the **Platform** section, you can set the maximum resolution for the texture for various target platforms. The columns display the maximum resolution and the pixel format of the texture product asset on various target platforms.<br><br>The maximum resolution of the product assets for each target platform is displayed in the **Max Res** column. For some presets, a default maximum resolution for particular platforms might be specified in the `.preset` file. If no maximum resolution is specified for a platform, the default maximum resolution is the resolution of the texture source asset.<br><br>You can reduce the maximum resolution for a platform by editing the values in the **Res Limit** column. **Res Limit** values range from 0 - 5 with the following results:<br><br>**0** - Default maximum texture resolution is used. The default resolution is the resolution of the texture source asset, or the maximum resolution for the platform specified in the `.preset` file.<br>**1** - Texture resolution is reduced by 1/2. Memory consumption is reduced to 1/4 of full resolution.<br>**2** - Texture resolution is reduced by 1/4. Memory consumption is reduced to 1/16 of full resolution.<br>**3** - Texture resolution is reduced by 1/8. Memory consumption is reduced to 1/64 of full resolution.<br>**4** - Texture resolution is reduced by 1/16. Memory consumption is reduced to 1/256 of full resolution.<br>**5** - Texture resolution is reduced by 1/32. Memory consumption is reduced to 1/1024 of full resolution.<br><br>The **Format** column displays the pixel format of the texture product assets for each target platform. |
 
 ### Mipmap settings
+
+![Texture Settings mipmap options.](/images/user-guide/assets/texture-settings/texture-settings-ui-03.png)
 
 The mipmap settings section provides options for generating texture *mipmaps*. Mipmaps are reduced versions of a texture that are used when a full resolution texture is not required, such as when an object is far from the camera, or on target platforms that have lower performance specs.
 
