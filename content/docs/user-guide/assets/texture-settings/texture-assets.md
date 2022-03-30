@@ -1,7 +1,7 @@
 ---
 linkTitle: Texture Assets
 title: Texture Asset Guidelines
-description: Information about image formats and general guidelines for processing textures with Texture settings in Open 3D Engine (O3DE).
+description: Information about image formats and general guidelines for processing textures with Texture Settings in Open 3D Engine (O3DE).
 weight: 200
 toc: true
 ---
@@ -18,7 +18,7 @@ A _texture source asset_ can be any of the image formats supported by O3DE. Imag
 
 The following table lists the image formats supported by O3DE:
 
-| **Format** | **Description** | **Max Color depth** | **Transparency** |
+| **Format** | **Description** | **Max color depth** | **Transparency** |
 | - | - | - | - |
 | `.bmp` | An uncompressed RGB image. | 8-bit gray<br>24-bit RGB | Not supported |
 | `.gif` | An image with an indexed color table (256 colors maximum) and support for transparency.  | 8-bit table | 1-bit mask |
@@ -62,10 +62,10 @@ Cubemaps are composed of six textures representing the sides, top, and bottom of
 Presets that generate environment cubemaps, such as the IBL presets, require specialized high dynamic range source assets that are commonly referred to as _HDRIs_. These source assets usually use the `.exr` file format and have the following attributes:
 
 * Equirectangular resolution (2048 by 1024 pixels, for example).
-* A 360 degree horizontal by 180 degree vertical projection of an environment.
+* A 360-degree horizontal by 180-degree vertical projection of an environment.
 * 16-bits or 32-bits per channel color depth. 
 
-The following example image shows a typical environment cubemap texture with a 360 degree by 180 degree projection and an equirectangular resolution.
+The following example image shows a typical environment cubemap texture with a 360-degree by 180-degree projection and an equirectangular resolution.
 
 {{< image-width "/images/user-guide/assets/texture-settings/hdri-example.png" "800" "An equirectangular image with a 360 degree by 180 degree environment projection known as an HDRI." >}}
 

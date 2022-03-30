@@ -1,5 +1,5 @@
 ---
-linkTitle: Interface
+linkTitle: User Interface
 title: Texture Settings User Interface
 description: Learn to navigate the Texture Settings interface to customize how image source assets are processed. 
 weight: 300
@@ -8,9 +8,9 @@ toc: true
 
 With **Texture Settings**, you can specify how texture source assets are processed for **Open 3D Engine (O3DE)**. Texture Settings operates on one texture source asset at a time. The options you choose in Texture Settings are saved in a JSON formatted `.assetinfo` sidecar file. **Asset Processor** reads the `.assetinfo` file and applies the options whenever the texture source asset is processed.
 
-## Using texture settings
+## Using Texture Settings
 
-To open Texture settings, do the following:
+To open Texture Settings, do the following:
 
 1. In **O3DE Editor**, in **Asset Browser**, select the texture source asset to modify. You can use the search bar at the top of Asset Browser to filter the asset list.
 
