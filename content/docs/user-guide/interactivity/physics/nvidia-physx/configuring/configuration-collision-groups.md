@@ -1,44 +1,49 @@
 ---
+linkTitle: Collision Groups
+title: PhysX Collision Groups
 description: ' Create collision groups for the PhysX system in Open 3D Engine. '
-title: Collision Groups
-weight: 300
+weight: 400
+toc: true
 ---
 
-Use collision groups to define the layers that a collider interacts with. A collision group is similar to a mask with specific bits set in which each bit corresponds to a collision layer.
+Collision groups act as masks for collision layers. You can specify which collision layers are part of a collision group. A collision layer can be included in multiple collision groups. Each PhysX collider component can interact with one collision group. The collider can interact with any collider assigned to a collision layer included in the selected collision group.
 
-Two colliders interact if their collision layers are in each other's collision group. If one collision layer is not present in the other layer's collision group, the colliders don't interact.
+{{< important >}}
+Colliders interact if their collision layers are in each other's collision group. If one collision layer is not present in the other layer's collision group, the colliders don't interact.
+{{< /important >}}
 
-**To create a collision group**
+## Create a collision group
 
-1. In O3DE Editor, choose **Tools**, **PhysX Configuration**.
+1. In O3DE Editor, from the **Tools** menu, choose **PhysX Configuration**.
 
-1. Click the **Collision Groups** tab. The layers that are configured on the **Layers** tab appear here as columns.
+1. Choose the **Collision Filtering** tab.
+
+1. Click the **Groups** button to view the collision groups list. The available collision layers appear as columns.
 
 1. Click **Add**, and then enter the name of the group into the text box.
 
-![Adding Collision Groups in the PhysX Configuration tool.](/images/user-guide/physx/physx-configuration-4.png)
+    ![Adding Collision Groups in the PhysX Configuration tool.](/images/user-guide/interactivity/physics/nvidia-physx/configuring/physx-configuration-4.png)
 
-1. Select or clear the check boxes to specify the layers to include in each collision group.
+1. Check the checkbox in the collision layer column to include the collision layer in the collision group. Clear the checkbox to exclude the collision layer from the collision group.
 
-1. Close the configuration tool. The configuration tool must be closed for changes to the groups to take effect.
+## Collision group assignment
 
-**To assign a collision group to a collider**
+1. In **O3DE Editor**, select an entity with a **PhysX Collider** component you'd like to assign a collision group.
 
-1. In the O3DE Editor viewport, select the entity that has the collider.
+1. In the **PhysX Collider** component, from the **Collides With** property, choose one of the available collision groups from the drop-down list.
 
-1. In the **Entity Inspector**, in the **PhysX Collider** component, for **Collides With**, choose one of the collision groups that you created from the drop-down list.
+    ![Choosing a collision group for the PhysX Collider component in the Entity Inspector.](/images/user-guide/interactivity/physics/nvidia-physx/configuring/physx-configuration-5.png)
 
-![Choosing a collision group for the PhysX Collider component in the Entity Inspector.](/images/user-guide/physx/physx-configuration-5.png)
+## Example collision group configuration 
 
-## Example Collision Group Configuration 
+The following example defines **Player**, **Enemy**, **Bullet**, and **Terrain** layers. These collision layers are categorized into the following collision groups:
 
-The following example defines **Player**, **Enemy**, **Bullet**, **Foliage**, and **Terrain** layers, and the following collision groups:
 + **PlayerBullet** - Collides with **Enemy** and **Terrain**.
 + **EnemyBullet** - Collides with **Player** and **Terrain**.
 + **TerrainCollision** - Collides with **Player**, **Enemy**, **Bullet**, and **Terrain**.
 + **PlayerCollision** - Collides with **Enemy**, **Bullet**, and **Terrain**.
 
-![An example collision group configuration.](/images/user-guide/physx/physx-configuration-6.png)
+![An example collision group configuration.](/images/user-guide/interactivity/physics/nvidia-physx/configuring/physx-configuration-6.png)
 
 A bullet fired by the player has the following layer and group:
 + Layer: **Bullet**
@@ -49,5 +54,5 @@ A bullet fired by the enemy has the following layer and group:
 + Group: **EnemyBullet**
 
 {{< note >}}
-You don't have to define an "enemy bullet" or a "player bullet" layer. Instead, you have a single **Bullet** layer and create separate collision groups to specify the objects that it collides with.
+You don't have to define an "enemy bullet" or a "player bullet" layer. Instead, define a single **Bullet** layer and create separate collision groups to specify the objects that it collides with.
 {{< /note >}}
