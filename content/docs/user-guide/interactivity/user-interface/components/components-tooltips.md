@@ -41,8 +41,13 @@ Select a tooltip trigger condition:
 + **On Press** - The tooltip appears when the interactive element is pressed and held, and disappears when the press is released. Note that the pointer might have moved elsewhere on the canvas by the time the release action has occurred.
 + **On Click** - The tooltip appears when a pointer click, which includes a press and a release, occurs on the interactive element. The tooltip disappears when the next pointer click occurs anywhere on the canvas. Note that if the pointer clicks on the same entity, the tooltip disappears, but then reappears after the specified **Delay time**.
 
+    {{< tip >}}
 On mobile devices, you might want to use **On Press** or **On Click** instead of **On Hover**.
+    {{< /tip >}}
+
+    {{< note >}}
 In all cases, the appearance of the tooltip is delayed by the amount of time specified in **Delay time**. Furthermore, in all cases, the tooltip will disappear after a fixed amount of time set by O3DE, regardless of other criteria specified in the trigger conditions.
+    {{< /note >}}
 
 **Auto position**
 

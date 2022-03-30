@@ -34,7 +34,7 @@ If Asset Processor isn't working as expected, use the information in the **Logs*
     * **Show errors** - Display logs that have errors.
     * **Show debug** - Display logs that have debug issues.
 
-    ![Create a log tab in Asset Processor.](/images/user-guide/asset_processor/create-logging-tab.png)
+    ![Create a log tab in Asset Processor](/images/user-guide/assets/asset-processor/create-logging-tab.png)
 
 1. Choose **OK**. Your log report appears as another tab in Asset Processor.
 
@@ -111,9 +111,9 @@ Use the procedure below to debug in either of the following scenarios:
 
 The next time that you modify your source file, `AssetBuilder.exe` builds that asset.
 
-{{< note >}}
+{{< tip >}}
 You can spawn multiple instances of `AssetBuilder.exe` and attach them to Visual Studio.
-{{< /note >}}
+{{< /tip >}}
 
 ## Clearing the Cache
 

@@ -20,6 +20,7 @@ For a quick introduction of the O3DE Multiplayer Gem and networking, watch the v
 | [Test Multiplayer Projects in the Editor](./multiplayer-gem/test-in-editor) | Automatically launch local servers or connect to a remote persistent server when working on a multiplayer project in the O3DE Editor. |
 | [Multiplayer Hierarchical Entities](./multiplayer-gem/hierarchy) | Group network entities into hierarchies that process their input together. |
 | [Spawning Multiplayer Player Entities](./multiplayer-gem/spawning) | Spawn an entity for a connecting player to control. |
+| [Debug multiplayer](multiplayer-debug/) | Debugging utilities for the multiplayer gem. |
 
 ## Related topics
 

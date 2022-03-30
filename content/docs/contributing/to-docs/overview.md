@@ -30,3 +30,4 @@ Wondering where to start? The conveniently titled [Get Started](./get-started) t
 | [Terminology](./terminology) | O3DE has many specialized terms, and a handful of terms that you shouldn't use. |
 | [Work with Hugo](./hugo) | Learn to work with Hugo, the static site generator for O3DE docs. |
 | [O3DE Documentation and Community Special Interest Group](https://github.com/o3de/sig-docs-community) | The hub of the O3DE Documentation and Community Special Interest Group (D&C SIG), the governing body for O3DE docs. |
+| [Templates for O3DE Documentation](templates/) | Download templates and follow supplemental guidelines for writing O3DE documentation. |

@@ -124,9 +124,9 @@ After you connect, you can pause a script by setting breakpoints.
 
 1. Press **F11** a few times to step through the code. Note how the contents of the **Stack**, **Lua Locals**, and **Watched Variables** windows change.
 
-{{< note >}}
+    {{< tip >}}
 For greater convenience, you can float or dock these windows.
-{{< /note >}}
+    {{< /tip >}}
 
 1. To detach from debugging, click **Debugging**.
 
