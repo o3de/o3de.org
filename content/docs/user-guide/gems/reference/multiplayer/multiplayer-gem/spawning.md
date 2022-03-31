@@ -6,7 +6,7 @@ linktitle: Spawning Players
 
 When a player joins a multiplayer session, one of the first things that often occurs is spawning a networked entity for them to control. In order to do this, the **Multiplayer** Gem provides an interface to specify an *autonomous* entity for a player. (Refer to the definition of _autonomous role_ in the [Multiplayer Gem Overview](/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/overview#multiplayer-entity-roles).)
 
-*IMultiplayerSpawner* is an `AZ::Interface<T>` that provides a mechanism to tell the multiplayer gem what to spawn and where when a player joins a session. `IMultiplayerSpawner` also provides a hook to clean up when a player leaves. All multiplayer games should provide an implementation to handle the events delivered for player join/player leave events.
+*IMultiplayerSpawner* is an [`AZ::Interface<T>`](/docs/user-guide/programming/az-interface) that provides a mechanism to tell the multiplayer gem what to spawn and where when a player joins a session. `IMultiplayerSpawner` also provides a hook to clean up when a player leaves. All multiplayer games should provide an implementation to handle the events delivered for player join and player leave events.
 
 ### Player join events
 
