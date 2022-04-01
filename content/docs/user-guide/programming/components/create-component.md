@@ -78,7 +78,7 @@ Registering a component enables the system's module manager to provide essential
 
 To register a component, you must add a component descriptor in the constructor of your Gem's `AZ::Module` implementation.
 
-1. Find your Gem's `AZ::Module` class that was created when you created the Gem. If you created the Gem from the default Gem template, look for the file in `<Gem>/Code/Source/MyGemModuleInterface.h`.
+1. Find your Gem's `AZ::Module` class. If you created the Gem from the default Gem template, look for the file in `<Gem>/Code/Source/MyGemModuleInterface.h`.
 
 1. Include your component's header in the class's implementation.
 
@@ -106,7 +106,7 @@ For more information about the Gem module system, refer to the overview in [Gem 
 
 ## Implement the component class interface
 
-To begin implementing the component interface, start with the following steps that walk through the required and optional members of a component class:
+To implement the component interface, start with the following steps that walk through the required and optional members of a component class:
 
 1. Inherit from a component base class.
 
