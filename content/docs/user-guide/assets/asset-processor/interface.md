@@ -155,7 +155,7 @@ The Event Log Line Details table also features a context menu to copy details to
 
 In the Assets tab, the tabbed pane on the left displays either the **Source Assets** tree from the scan directories, or the **Product Assets** tree from the **Asset Cache**. You can browse either tree for specific assets, or use the search bar to find assets by name or ID. When an asset is selected, information about the asset is displayed on the right of the interface.
 
-The search in the Assets Tab is also a regex based search, like for the jobs tab. See the jobs section for details on regex searching.
+The Assets Tab search is also a regex based search, like for the jobs tab. Refer to the previous section [filtering by keyword and status](#filtering-by-keyword-and-status) for more information.
 
 {{< note >}}
 The directory tree displayed in the tab is from the **Asset Database**, not the files on disk. It only displays assets that have been processed. Files on disk that are ignored by Asset Processer do not appear in the directory tree. 
@@ -178,7 +178,7 @@ When an asset is selected in the Source Assets list, information about the asset
 | **Asset Information** | Detailed information about the selected asset including the name of the asset, the scan directory path, and the Universally Unique Identifier (UUID) associated with the asset. |
 | **Products** | The product assets that are produced from jobs that processed this source asset. |
 | **Outgoing Source Dependencies** | Any files that have been registered as a source dependency for any jobs that run on this source asset. |
-| **Incoming Source Dependencies** | The list of source assets that have one or more jobs that have marked this source asset as a source dependency, any modifications to this source asset will cause these jobs to run. |
+| **Incoming Source Dependencies** | The list of source assets that have one or more jobs that have marked this source asset as a source dependency. Any modifications to this source asset will cause these jobs to run. |
 
 {{< note >}}
 Choose the {{< icon "open-in-internal-app.svg" >}} **Go to** icon next to a product asset name to go to that asset in the Product Assets tab, or this icon next to a source asset name to go to that asset in the Source Assets tab.
@@ -194,7 +194,7 @@ When an asset is selected in the Product Assets list, information about the asse
 | - | - |
 | **Asset Information** | Information for the product asset including the asset ID, the last time the product was generated, the type of job that generated the asset, which platform the asset was produced for, and which source asset is the primary input for the product. |
 | **Outgoing Product Dependencies** | Dependencies that this asset has. This is the list of product assets that this asset references in some way. |
-| **Outgoing Unmet Path Product Dependencies** | Path based product dependencies that have not been resolved. In some cases these may be optional and expected, in other cases an unmet path product dependency could indicate a gap in your product dependency graph, which means your bundled release build may end up missing content if you do not resolve this gap. |
+| **Outgoing Unmet Path Product Dependencies** | Path based product dependencies that have not been resolved. In some cases, these may be optional and expected. In other cases, an unmet path product dependency could indicate a gap in your product dependency graph. If you do not resolve this gap, the bundled release build might be missing content.  |
 | **Incoming Product Dependencies** | The list of product assets that reference this product asset as a product dependency. |
 | **Missing Product Dependencies** | A tool that examines the contents of this product asset, looks for references to other product assets, and will report any references that look like product dependencies that are not reported. See [Resolving Missing Assets](/docs/user-guide/packaging/asset-bundler/assets-resolving) for details. |
 
