@@ -82,7 +82,7 @@ If you want to relocate an asset manually without using this tool, or you want t
       * For example, if you use an Excel spreadsheet to manage game data, and this references the asset you wish to relocate, you will need to update that as well.
 1. For each reference, identify how the reference will need to be updated.
    * You may need to involve other team members to perform this action.
-      * For example if you wish to relocate an image referenced from an FBX file, you will need to update the original DCC file, such as the Maya file used to export that FBX.
+      * For example, if you wish to relocate an image referenced from an FBX file, you need to update the original DCC file, such as the Maya file used to export that FBX.
 1. You may find it easier to first copy the file to the new location so you can update the old and new references.
    * You may need to be cautious with this step to preserve file history in your source control tool.
 1. Now that all references to the file to move, rename, or delete have been gathered, you can update them to all reference the relocated/renamed source and/or product assets. If you are deleting, you'll need to update these references to handle the asset no longer existing.
