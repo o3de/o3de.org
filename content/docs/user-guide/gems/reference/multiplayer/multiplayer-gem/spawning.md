@@ -4,7 +4,7 @@ description: A reference for spawning and registering network player entities
 linktitle: Spawning Players
 ---
 
-When a player joins a multiplayer session, one of the first things that often occurs is spawning a networked entity for them to control. In order to do this, the **Multiplayer** Gem provides an interface to specify an *autonomous* entity for a player. (Refer to the definition of _autonomous role_ in the [Multiplayer Gem Overview](/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/overview#multiplayer-entity-roles).)
+In most scenarios, when a player joins a multiplayer session, a controllable networked entity must be spawned for the player. The **Multiplayer** Gem provides an interface to specify an *autonomous* entity for a player. Refer to the definition of *autonomous role* in the [Multiplayer Gem Overview](overview#multiplayer-entity-roles) for more information.
 
 *IMultiplayerSpawner* is an [`AZ::Interface<T>`](/docs/user-guide/programming/az-interface) that provides a mechanism to tell the multiplayer gem what to spawn and where when a player joins a session. `IMultiplayerSpawner` also provides a hook to clean up when a player leaves. All multiplayer games should provide an implementation to handle the events delivered for player join and player leave events.
 
@@ -22,7 +22,7 @@ The `OnPlayerJoin` method of `IMultiplayerSpawner` provides a hook for when the 
 
 A player is having defined as *left* a session when a client disconnects from the server. Unlike with player connections, there is no special case for when a client stops hosting their own session - one of the steps should always be disconnecting *all* clients before shutting down the server.
 
-The `OnPlayerLeave` method of `IMultiplayerSpawner` provides a hook for when a client disconnects from a server so that the server can clean up any entities spawned on behalf of the client. `OnPlayerLeave` takes an entity handle to the prefab spawned by `OnPlayerJoin`, and additionally takes the replication set for the connection in the event other associated entities need to be cleaned up. For example, this allows removing not only player entity but also all of their deployed objects. 
+The `OnPlayerLeave` method of `IMultiplayerSpawner` provides a hook so that when the client disconnects, the server can clean up any entities that were spawned for the client. `OnPlayerLeave` takes an entity handle to the prefab spawned by `OnPlayerJoin` so that the player entity can be removed. It also takes the replication set for the connection which allows the server to remove associated entities as well (for example, objects deployed by the leaving player).
 
 `OnPlayerLeave` also takes a disconnect reason which allows responding to different kinds of disconnects. For example, it may be undesirable to clean up objects if a player times out if they can attempt to reconnect to the session.
 
