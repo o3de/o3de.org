@@ -61,25 +61,24 @@ You can use the additional command line options below when you move or delete as
 | `--updateReferences` | This option is only available with the `--move` command. The option attempts to update files that reference the selected files. This is a simple find-and-replace of the absolute path and UUID/AssetId. References in binary assets are not updated. |
 | `--enablescm` | Source Control Management is disabled by default in Asset Processor Batch. This enables the source control plugin so that the command can checkout files for edit/move/delete as appropriate. |
 
-## Asset Processor Batch Relocation Limitations
-<a name="Limitations"></a>
+## Asset Processor Batch Relocation Limitations {#Limitations}
 The Asset Processor Batch relocation tool has a few limitations:
 * References in C++ to assets are not registered or known to this tool. If there is a hardcoded C++ load for the asset, that reference will break when the asset is relocated, and will need to be manually found and updated.
 * This tool supports Perforce integration, but no other source control integration. Git will sometimes be able to figure out on its own that a file was relocated, but it won't always. If you relocate an asset without using your source control's file relocation functionality, the new file won't easily map to the old file's history.
 * If there is a gap in the dependency graph, such as a builder not properly declaring a Product Dependency on the asset you are relocating, this tool will not know, and that unregistered asset reference will break with the relocation.
 * References to this file outside of O3DE will not be updated.
-   * Often the source asset is often downstream from a DCC tool. The asset relocation tool will not update references upstream like this.
+   * Often the source asset is downstream from a DCC tool. The asset relocation tool will not update references like this that are upstream.
       * For example, an FBX file is exported from Blender, and the original asset used to generate it is tracked via a blend file.
    * There may be other files external to O3DE that reference Source Assets.
       * For example, your team may make use of an Excel spreadsheet file to manage some game data, and have a process where that is exported. The asset relocator will not be aware of this and will not update these references.
 
 ## Moving, Renaming, and Deleting Assets Manually
 If you want to relocate an asset manually without using this tool, or you want to understand what this tool is doing internally, follow this process:
-1. Gather all references to both the Source Asset, and to all Product Assets generated from that Source Asset.
-   * This includes C++ references, which the relocation will not handle.
-   * This includes references from DCC tools.
+1. Gather all references to both the Source Asset, and to all Product Assets generated from that Source Asset. This includes the following:
+   * C++ references, which the relocation will not handle.
+   * References from DCC tools.
       * For example, if you want to relocate an image file, it may be referenced by relative path from a Blender .blend file that outputs an FBX file. If you update the FBX file without updating the Blender file, the next time the FBX is exported from Blender, it may include the old path that no longer resolves to the referenced image.
-   * This includes other references in other files that may be specific to your team and project.
+   * Other references in other files that may be specific to your team and project.
       * For example, if you use an Excel spreadsheet to manage game data, and this references the asset you wish to relocate, you will need to update that as well.
 1. For each reference, identify how the reference will need to be updated.
    * You may need to involve other team members to perform this action.
