@@ -8,4 +8,3 @@ weight: 500
 
 {{< placeholder >}}
 
-## Color Space Conversion Workflow
