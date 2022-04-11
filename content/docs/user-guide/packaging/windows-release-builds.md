@@ -33,15 +33,15 @@ The instructions here guide you through the following steps:
 
 The following instructions assume that you have:
 
-- Set up O3DE on your computer as either a source engine or pre-built SDK engine. For help, refer to [Setting up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github/building-windows/). If you only set up O3DE using the [installer](/docs/welcome-guide/setup/installing-windows/), you cannot create a project game release layout.
+- Set up O3DE on your computer as either a *source engine* or *pre-built SDK engine*. For help, refer to [Building for Windows](/docs/welcome-guide/setup/setup-from-github/building-windows). If you only set up O3DE using the [Windows installer](/docs/welcome-guide/setup/installing-windows), you cannot create a project game release layout.
 
 - Created an O3DE project that contains at least one level. To build your project for release, you might need to resolve any errors in your project.
 
 - Generated a Visual Studio project for either of the following:
   
-  - Your project -- If you're using a source engine, you must generate a Visual Studio project for your project. For help, refer to [Create a Visual Studio project](/docs/welcome-guide/create/creating-projects-using-cli/#create-a-visual-studio-project).
+  - Your project -- If you're using a source engine, you must generate a Visual Studio project for your project. For help, refer to [Create a Visual Studio project](/docs/welcome-guide/create/creating-projects-using-cli/creating-windows#create-a-visual-studio-project).
 
-  - Your engine -- If you're using a pre-built SDK engine, you must generate a Visual Studio project for your engine. For help, refer to the **Pre-built SDK engine** steps in [Setting up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github/building-windows/).
+  - Your engine -- If you're using a pre-built SDK engine, you must generate a Visual Studio project for your engine. For help, refer to the **Pre-built SDK engine** steps in [Building for Windows](/docs/welcome-guide/setup/setup-from-github/building-windows/).
 
 - Registered your project to your engine.
 
@@ -210,19 +210,19 @@ A pre-built SDK engine supports non-monolithic projects by default. As detailed 
 
 1. Reconfigure your source engine with the `-D` option, `LY_PROJECTS`, pointing to your project's path.
 
-```cmd
-cd C:\o3de
-cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=C:\o3de-install -DLY_PROJECTS=C:\o3de-projects\MyProject
-```
+    ```cmd
+    cd C:\o3de
+    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=C:\o3de-install -DLY_PROJECTS=C:\o3de-projects\MyProject
+    ```
 
 1. In your source engine, use CMake to invoke Visual Studio to append non-monolithic release artifacts to the pre-built SDK layout.
 
-```cmd
-cd C:\o3de
-cmake --build build\windows_vs2019 --target INSTALL --config release
-```
+    ```cmd
+    cd C:\o3de
+    cmake --build build\windows_vs2019 --target INSTALL --config release
+    ```
 
-You can specify a particular non-monolithic build by appending the option `-DLY_MONOLITHIC_GAME=0`. This command generates O3DE tools (such as Editor, Asset Processor, and Game Launcher) and dependent `.dll` files. It also bundles your project's product assets that are located in `<project>\Cache\pc` into an `engine.pak` file.
+    You can specify a particular non-monolithic build by appending the option `-DLY_MONOLITHIC_GAME=0`. This command generates O3DE tools (such as Editor, Asset Processor, and Game Launcher) and dependent `.dll` files. It also bundles your project's product assets that are located in `<project>\Cache\pc` into an `engine.pak` file.
 
 The result is a project game release layout in the install directory that's located at `<install>\bin\Windows\release\Default`. In your project game release layout, your `engine.pak` file is located in `Cache\pc`.
 
@@ -251,7 +251,6 @@ The result is a project game release layout in the install directory that's loca
 
 {{% /tab %}}
 {{< /tabs >}}
-
 
 ## (Optional) Bundle content
 

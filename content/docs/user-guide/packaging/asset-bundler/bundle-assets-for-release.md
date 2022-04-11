@@ -13,7 +13,23 @@ This topic is an introduction to using the **Asset Bundler** to bundle assets fo
 Build your project with the `release` configuration. This creates a *project game release layout*, which contains the application and files that you can distribute. Learn how to [create a project game release layout for Windows](/docs/user-guide/packaging/windows-release-builds).
 
 
-## Set up Asset Bundler
+## Bundling project assets
+
+This tutorial contains the following steps: 
+
+1. Set up Asset Bundler.
+1. Create the game assets bundle.
+1. Create the engine assets bundle.
+1. Add the bundles to the release layout.
+
+
+Throughout the steps, replace `<engine>` with either of the following:
+
+- `C:\MyProject` -- For a source engine.
+- `C:\o3de-install` -- For a pre-built SDK engine.
+
+
+### Set up Asset Bundler
 
 To set up and run Asset Bundler, do the following:
 
@@ -30,11 +46,11 @@ To set up and run Asset Bundler, do the following:
     - `--config profile` -- Sets the build configuration to profile, which enables optimization and allows debugging.
 
 
-1. Run `AssetBundler.exe` from the `<engine>\build\windows_vs2019\bin\profile` directory. This opens Asset Bundler with the GUI. (Alternatively, to use the CLI, run `AssetBundlerBatch.exe`.)
+1. Run `AssetBundler.exe` from the `<engine>\build\windows_vs2019\bin\profile` directory. This opens Asset Bundler with a graphical user interface (GUI). (Alternatively, to use the command line interface (CLI), run `AssetBundlerBatch.exe`.)
 
-Now you should have Asset Bundler open, which looks like this in the GUI:
+    Now you should have Asset Bundler open, which looks like this in the GUI:
 
-{{< image-width "/images/user-guide/packaging/windows-release-build/asset-bundler-default-gui.png" "1000" "An annotated image of O3DE editor's user interface." >}}
+    {{< image-width "/images/user-guide/packaging/windows-release-build/asset-bundler-default-gui.png" "1000" "An annotated image of O3DE editor's user interface." >}}
 
 <br></br>
 
@@ -43,19 +59,9 @@ There may be errors and warnings about "AssetBundler" and "AssetSeedManager" tha
 {{< /known-issue >}}
 
 
-## Bundle content
-
-As an introduction to the Asset Bundler tools, this section covers how to create two asset bundles that work together: one for game assets and one for engine assets. The game asset bundle contains your project's levels and all of the assets within them, such as objects, environments, materials, and so on. The engine assets bundle contains essential files needed to load and run the Game Launcher.
-
-In the following steps, replace `<engine>` with either of the following:
-
-- `C:\MyProject` -- For a source engine.
-- `C:\o3de-install` -- For a pre-built SDK engine.
-
-
 ### Create a bundle for game assets
 
-When bundling your game assets, it's only important to bundle assets that your game actually uses in its levels. There's no need to include assets in your project directory that are never loaded in your project. You can use Asset Bundler to generate a list of assets that your levels depend on. This helps ensure that your resulting package file is at an optimal size.
+The *game asset bundle* contains your project's levels and all of the assets within them, such as objects, environments, materials, and so on. When bundling your game assets, it's only important to bundle assets that your game actually uses in its levels. There's no need to include assets in your project directory that are never loaded in your project. You can use Asset Bundler to generate a list of assets that your levels depend on. This helps ensure that your resulting package file is at an optimal size.
 
 
 #### Create a new seed asset list
@@ -102,9 +108,10 @@ When bundling your game assets, it's only important to bundle assets that your g
 
 For Windows, when Asset Bundler saves your bundle, it appends `_pc` to the bundle's name. So you should now have an asset bundle, `game_pc.pak`.
 
+
 ### Create a bundle for engine assets
 
-Next, create a bundle for your project's engine assets.
+Next, create a bundle for your project's engine assets. The *engine asset bundle* contains essential files needed to load and run the Game Launcher.
 
 #### Generate an asset list from default seed lists
 
@@ -150,6 +157,13 @@ Next, add your `game_pc.pak` and `engine_pc.pak` files to your project game rele
 2. You may need to remove the `engine.pak` file that's automatically created when you create a project game release layout. You don't need it anymore because you created new bundles.
 
 3. Add your new bundles, `game_pc.pak` and `engine_pc.pak`, to this directory.
+
+Now you can run your project's Game Launcher and it will use your new bundles! 
+
+
+## Final notes
+
+In this tutorial, you learned how to bundle your projects assets, which is recommended for release builds as it can optimize your project before you distribute it. Managing assets into two bundles (game and engine assets) is one way to do it. In practice, your team may choose to manage your project assets into different sets of bundles.
 
 
 ## Related topics
