@@ -16,7 +16,7 @@ Looking for error logs or memory dumps? Refer to [Open 3D Engine Log Files](/doc
 
 ## Troubleshooting techniques
 
-The following are techniques you can use to help you debug any issues that you may encounter while building a project for release
+The following are techniques you can use to help you debug any issues that you may encounter while building a project for release.
 
 
 ### Compile with optimizations disabled and debug symbols enabled

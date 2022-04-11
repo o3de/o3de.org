@@ -5,12 +5,12 @@ description: Learn how to manage your assets and package them into asset bundles
 weight: 150
 ---
 
-This topic is an introduction to using the **Asset Bundler** to bundle assets for a distributable *project game release layout*. Managing project assets into bundles can help reduce the project's size on disk, optimize the project's runtime, and organize the assets to accommodate easy future asset releases. This topic can help you if you have a project that you're preparing to distribute for others to run or test, and you're interested in managing the project's assets before distributing it.
+This topic is an introduction to using the **Asset Bundler** to bundle assets for a distributable *project game release layout*. Managing project assets into bundles can help reduce the project's size on disk, optimize the project's runtime, and organize the assets to make future asset releases easier. When preparing to distribute your project, use the instructions in this topic to help you create an asset bundle.
 
 
 ## Prerequisites
 
-Build your project with the `release` configuration. This creates a *project game release layout*, which contains the application and files that you can distribute. Learn how to [create a project game release layout for Windows](\docs\user-guide\packaging\windows-release-builds).
+Build your project with the `release` configuration. This creates a *project game release layout*, which contains the application and files that you can distribute. Learn how to [create a project game release layout for Windows](/docs/user-guide/packaging/windows-release-builds).
 
 
 ## Set up Asset Bundler
@@ -156,4 +156,4 @@ Next, add your `game_pc.pak` and `engine_pc.pak` files to your project game rele
 
 | Topic | Description |
 | - | - |
-| [Creating a Project Game Release Layout for Windows](\docs\user-guide\packaging\windows-release-builds) | Learn how to create a project game release layout for Windows. |
+| [Creating a Project Game Release Layout for Windows](/docs/user-guide/packaging/windows-release-builds) | Learn how to create a project game release layout for Windows. |
