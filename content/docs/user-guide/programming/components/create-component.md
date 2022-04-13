@@ -9,7 +9,7 @@ A *component* in **Open 3D Engine (O3DE)** is a simple class that inherits from 
 
 While every component is unique, the following steps are commonly completed when creating a new component:
 
-1. Create the component class from boilerplate code, or from an existing component.
+1. Create the component class from the default component template, or from an existing component.
 1. Register the component in the parent Gem module.
 1. Implement the component class interface, using the `Init()`, `Activate()`, and `Deactivate()` functions.
 1. Reflect component data for serialization and editing.
