@@ -6,7 +6,13 @@ toc: true
 ---
 
 The **HDR Color Grading** component is a post-process effect that enables users to color grades scenes matching a desired look and feel. 
-To conserve on CPU performance, a LUT texture can be generated from the current color grading settings, then used within a **Look Modification** component
+This component uses a shader behind the scenes to perform the color grading logic on each pixel's frame. To reduce compute time, a Look-up (LUT) texture can be generated from the current color grading settings by clicking `Generate LUT` on the component. 
+![HDR Color Grading Generate LUT](/images/user-guide/components/reference/atom/post-processing-modifiers/hdr-color-grading-generate-lut-ui.png)
+
+The generated LUT texture can then be activated by clicking on the `Activate LUT` button on the component. 
+![HDR Color Grading Activate LUT](/images/user-guide/components/reference/atom/post-processing-modifiers/hdr-color-grading-activate-lut-ui.png)
+
+Upon activation, a **Look Modification** component is added to the current entity and subsequently the **HDR Color Grading** component is disabled. 
 
 ## Provider ##
 
