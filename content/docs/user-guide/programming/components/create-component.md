@@ -7,7 +7,7 @@ weight: 200
 
 A *component* in **Open 3D Engine (O3DE)** is a simple class that inherits from O3DE's `AZ::Component`. A component's behavior is determined by its reflected data and the actions that it takes when it is activated. This section shows you how to create O3DE components programmatically. For information about adding and customizing the components available in **O3DE Editor**, refer to the [Component Reference](/docs/user-guide/components/reference).
 
-While every component is unique, the following steps are commonly completed when creating a new component:
+While every component is unique, the typical steps for creating a new component include the following:
 
 1. Create the component class from the default component template, or from an existing component.
 1. Register the component in the parent Gem module.
