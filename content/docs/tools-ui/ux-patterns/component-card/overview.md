@@ -18,11 +18,11 @@ A *component card* groups together the related property settings of a certain fe
 
 - What repetitive actions are you requesting from your user to do and can this be simplified at all?
 
-- Have you set up the proper [default values]()?
+- Have you set up the proper [default values](#provide-good-default-settings)?
 
-- Are there any dependencies with your component? Refer to [Automatically add components](). 
+- Are there any dependencies with your component? Refer to [Automatically add components](#can-we-automatically-add-components). 
 
-- How will your component card [interact with the viewport]()?
+- How will your component card [interact with the viewport](#interacting-with-the-viewport)?
 
 - Does my component have buttons?
 
@@ -157,7 +157,7 @@ In O3DE, there are two levels of components: a *standard component* and a *level
 
 {{< image-width "/images/tools-ui/ux-patterns/component-card/overview/level-component-1.png" "400" "Example of a level component in the O3DE Editor (part 1)" >}}
 
-{{< image-width "/images/tools-ui/ux-patterns/component-card/overview/level-component-2.png" "400" "Example of a level component in the O3DE Editor (part 2)" >}}
+{{< image-width "/images/tools-ui/ux-patterns/component-card/overview/level-component-2.jpg" "400" "Example of a level component in the O3DE Editor (part 2)" >}}
 
 ### Things to avoid
 

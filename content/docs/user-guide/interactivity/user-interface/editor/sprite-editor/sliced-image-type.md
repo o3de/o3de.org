@@ -27,8 +27,9 @@ Slice resizing is useful for images with borders and corner details, such as but
 
 Using the [Sprite Editor](/docs/user-guide/interactivity/user-interface/editor/sprite-editor), you can manipulate where the sections are by dragging the dotted lines on the preview image.
 
-**Tip**
+{{< tip >}}
 You can see your changes in real time. To do this, before you open the **Sprite Editor**, change the **Image** component's **ImageType** property to **Sliced**.
+{{< /tip >}}
 
 ![Select Sliced as your ImageType.](/images/user-guide/interactivity/user-interface/editor/sprite-editor/ui-editor-sprite-editor-3.png)
 

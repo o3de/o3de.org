@@ -8,7 +8,7 @@ weight: 50
 
 The following example reflects a component for serialization and editing:
 
-```
+```cpp
 class MyComponent
     : public AZ::Component
 {
@@ -68,7 +68,7 @@ The preceding example adds five data members to `MyComponent`. The first four da
 
 It is common for fields to be reflected for serialization, but not for editing, when using advanced reflection features such as [change notification callbacks](#change-notification-callbacks). In these cases, components may conduct complex internal calculations based on user property changes. The result of these calculations must be serialized but not exposed for editing. In such a case, you reflect the field to `SerializeContext` but do not add an entry in `EditContext`. An example follows:
 
-```
+```cpp
 serialize->Class<MyComponent>()
     ->Version(1)
     ...
@@ -107,7 +107,7 @@ A component's `Reflect()` function is invoked automatically for all relevant con
 
 The following code dynamically casts the anonymous context provided to a serialize context, which is how components discern the type of context that `Reflect()` is being called for.
 
-```
+```cpp
 AZ::SerializeContext* serialize = azrtti_cast<AZ::SerializeContext*>(context);
 ```
 
@@ -115,7 +115,7 @@ AZ::SerializeContext* serialize = azrtti_cast<AZ::SerializeContext*>(context);
 
  Reflecting a class for serialization involves a [builder pattern](https://en.wikipedia.org/wiki/Builder_pattern) style markup in C++, as follows:
 
-```
+```cpp
 serialize->Class<TestAsset>()
          ->Version(1)
          ->Field("SomeFloat", &MyComponent::m_someFloatField)
@@ -127,8 +127,9 @@ serialize->Class<TestAsset>()
 
 The example specifies that `m_someFloatField`, `m_someStringField`, `m_things`, and `m_someEnumField` should all be serialized with the component. Field names must be unique and are not user facing.
 
-**Tip**
+{{< tip >}}
 We recommend that you keep field names simple for future proofing. If your component undergoes significant changes and you want to write a data converter to maintain backward data compatibility, you must reference the field names directly.
+{{< /tip >}}
 
 The preceding example reflects two primitive types-a float, and a string-as well as a container (vector) of some structure. AZ reflection, serialization, and editing natively support a wide variety of types:
 + Primitive types, including integers (signed and unsigned, all sizes), floats, and strings
@@ -147,7 +148,7 @@ When you run O3DE tools such as O3DE Editor, an `EditContext` and a `SerializeCo
 
 The following code demonstrates basic edit context reflection:
 
-```
+```cpp
 AZ::EditContext* edit = serialize->GetEditContext();
 if (edit)
 {
@@ -168,7 +169,7 @@ Although this example demonstrates the simplest usage, many features and options
 
 An example of binding a float to a slider follows:
 
-```
+```cpp
 ->DataElement(AZ::Edit::UIHandlers::Slider, &MyComponent::m_someFloatField, "Some Float", "This is a float that means X.")
       ->Attribute(AZ::Edit::Attributes::Min, 0.f)
       ->Attribute(AZ::Edit::Attributes::Max, 10.f)
@@ -206,7 +207,7 @@ Member functions
 
 Another commonly used feature of the edit context is its ability to bind a change notification callback:
 
-```
+```cpp
 ->DataElement(AZ::Edit::UIHandlers::Default, &MyComponent::m_someStringField, "Some String", "This is a string that means Y.")
     ->Attribute(AZ::Edit::Attributes::ChangeNotify, &MyComponent::OnStringFieldChanged)
 ```
@@ -215,7 +216,7 @@ The example binds a member function to be invoked when this property is changed,
 
 The following example causes the property grid to refresh values when `m_someStringField `is modified through the property grid. `AZ::Edit::PropertyRefreshLevels::ValuesOnly` signals the property grid to update the GUI with changes to the underlying data.
 
-```
+```cpp
 ->DataElement(AZ::Edit::UIHandlers::Default, &MyComponent::m_someStringField, "Some String", "This is a string that means Y.")
     ->Attribute(AZ::Edit::Attributes::ChangeNotify, &MyComponent::OnStringFieldChanged)
 ...
@@ -236,7 +237,7 @@ AZ::u32 MyComponent::OnStringFieldChanged()
 
 The following more complex example binds a list of strings as options for a combo box. The list of strings is attached to a string field *Property A*. Suppose you want to modify the options available in the combo box for Property A with the values from another *Property B*. In that case you can bind the combo box `AZ::Edit::Attributes::StringList` attribute to a member function that computes and returns the list of options. In the `AZ::Edit::Attributes::ChangeNotify` attribute for Property B, you tell the system to reevaluate attributes, which in turn reinvokes the function that computes the list of options.
 
-```
+```cpp
 ...
 
 bool m_enableAdvancedOptions;

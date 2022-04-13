@@ -15,19 +15,19 @@ Review these related pages on how style error messages specific to each type of 
 
 | Type | Description | 
 | - | - |
-| [Console Log](./components/console-log.md) |  |
-| [Dialogs](./components/dialogs.md) |  |
-| [Inline Notifications ](./components/inline-notifications.md) |  |
-| [Log Table](./components/log-table.md) |  |
-| [Text Input Validation](./components/text-input-validation.md) |  |
-| [Toasts](./components/toasts.md) |  |
+| [Console Log](./components/console-log) |  |
+| [Dialogs](./components/dialogs) |  |
+| [Inline Notifications ](./components/inline-notifications) |  |
+| [Log Table](./components/log-table) |  |
+| [Text Input Validation](./components/text-input-validation) |  |
+| [Toasts](./components/toasts) |  |
 
 
 ## Prerequisites
 
 To aid in your learning, it's recommended that you launch **Qt Control Gallery**, an application that contains UI elements from the Qt widget library and allows you to program and preview additional elements. The QT Control Gallery is built when you build O3DE and is located in the engine's `build/<platform>/bin/<configuration>` directory.
 
-For more information, refer to [O3DE Qt Control Gallery Tool](/docs/tools-ui/uidev-control-gallery/)
+For more information, refer to [O3DE Qt Control Gallery Tool](/docs/tools-ui/uidev-control-gallery).
 
 
 ## Standard icons
