@@ -480,7 +480,7 @@ Keep the following in mind when submitting videos in docs contributions:
 
 The are two additional options that are always enabled.
 
-1. `preload=auto` - Loads the video with the page.
+1. `preload="auto"` - Loads the video with the page.
 1. `controls` - Include player controls for the video.
 
 **Examples**
