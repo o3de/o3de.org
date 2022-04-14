@@ -40,7 +40,7 @@ If you choose to use the **Local wind tag**, the wind will only affect entities 
 
    ![PhysX Wind entity setup](/images/user-guide/physx/physx/ui-physx-wind-entity.png)
 
-1. To test the wind provider, add an entity with a **Cloth** mesh. There is an example slice asset you can drag into **Perspective** from **Asset Browser**. Navigate to `Gems\NvCloth\Assets\slices` in **Asset Browser**. Locate the `cloth_locked_corners_two.slice` and drag and drop the slice into **Perspective**.
+1. To test the wind provider, add an entity with a **Cloth** mesh. There is an example prefab asset you can drag into **Perspective** from **Asset Browser**. Navigate to `Gems\NvCloth\Assets\prefabs` in **Asset Browser**. Locate the `cloth_locked_corners_two.prefab` and drag and drop the prefab into **Perspective**.
 
 1. Use the **Move** tool to place the cloth entity. If you are using the **Local wind tag**, you must place the cloth asset inside the **PhysX Collider** volume.
 
