@@ -5,7 +5,7 @@ description: 'Open 3D Engine (O3DE) Entity Reference component reference.'
 toc: true
 ---
 
-The **Entity Reference** component allows tracking one or more entity IDs that can be conveniently accessed through script or C++ code during editor mode.
+The **Entity Reference** component allows you to track one or more entity IDs that you can conveniently access through script or C++ code during editor mode.
 
 ## Provider ##
 
@@ -18,12 +18,12 @@ The **Entity Reference** component allows tracking one or more entity IDs that c
 
 | Property | Description |
 | - | - |
-| **EntityIdReferences** | Contains a list of entities whose ids will be tracked |
+| **EntityIdReferences** | Contains a list of entities whose IDs will be tracked. |
 
 ## Usage ##
 
-During editor mode, call the EntityReferenceRequestBus to retrieve the list of entity being referenced by the component.
-This example uses the editor's python console to retrieve a list of entity ids.
+During editor mode, call the `EntityReferenceRequestBus` to retrieve the list of entities being referenced by the component.
+This example uses the O3DE's Python Console to retrieve a list of entity IDs.
 ```
 # entityId contains the Entity Reference component.
 entityIdReferences = azlmbr.entity.EntityReferenceRequestBus(azlmbr.bus.Event, 'GetEntityReferences', entityId)
