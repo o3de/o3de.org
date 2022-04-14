@@ -24,7 +24,7 @@ The **Entity Reference** component allows you to track one or more entity IDs th
 
 During editor mode, call the `EntityReferenceRequestBus` to retrieve the list of entities being referenced by the component.
 This example uses the O3DE's Python Console to retrieve a list of entity IDs.
-```
+```python
 # entityId contains the Entity Reference component.
 entityIdReferences = azlmbr.entity.EntityReferenceRequestBus(azlmbr.bus.Event, 'GetEntityReferences', entityId)
  
