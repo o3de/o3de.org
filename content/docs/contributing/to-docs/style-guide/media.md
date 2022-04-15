@@ -26,21 +26,21 @@ Image output:
 
 The `image-width` shortcode adds an image with alternate text and restricts the image's width. The `image-width` shortcode can ensure image sizes are consistent within a topic, and that large images don't scale overly large in wide browser windows. Use this method when adding `.svg` diagrams, very large images, and in topics with multiple images where consistent image widths are desirable.
 
-`image-width` takes three double-quoted parameters in order:
+`image-width` takes three double-quoted named parameters:
 
-1. image link
-1. width
-1. alternate text
+1. `src="/images/<image.png>"` - Image file path.
+1. `width="<200>"` - Scale the image by specifying a width in pixels.
+1. `alt="<image description>"` - A string describing the image.
 
 `image-width` example:
 
 ```markdown
-{{</* image-width "/images/welcome-guide/wg-welcome-page-color.png" "700" "The O3DE Welcome Guide splash image." */>}}
+{{</* image-width src="/images/welcome-guide/wg-welcome-page-color.png" width"700" alt="The O3DE Welcome Guide splash image." */>}}
 ```
 
 `image-width` example output:
 
-{{< image-width "/images/welcome-guide/wg-welcome-page-color.png" "700" "The O3DE Welcome Guide splash image." >}}
+{{< image-width src="/images/welcome-guide/wg-welcome-page-color.png" width="700" alt="The O3DE Welcome Guide splash image." >}}
 
 
 ## Alternate text

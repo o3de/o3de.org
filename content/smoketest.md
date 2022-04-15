@@ -1,7 +1,7 @@
 ---
 title: Docs smoke test page
 main_menu: false
-draft: true
+draft: false
 ---
 
 This page serves two purposes:
@@ -452,21 +452,21 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 
 The `image-width` shortcode adds an image with alternate text and restricts the image's width. The `image-width` shortcode can ensure image sizes are consistent within a topic, and that large images and `.svg` diagrams don't scale overly large in wide browser windows.
 
-`image-width` takes three double-quoted parameters in order:
+`image-width` takes three double-quoted named parameters:
 
-1. image link
-1. width
-1. alt text
+1. `src="/images/<image.png>"` - Image file path.
+1. `width="<200>"` - Scale the image by specifying a width in pixels.
+1. `alt="<image description>"` - A string describing the image.
 
 `image-width` example:
 
 ```markdown
-{{</* image-width "/images/welcome-guide/ui-editor-labeled.png" "700" "An annotated image of O3DE editor's user interface." */>}}
+{{</* image-width src="/images/welcome-guide/ui-editor-labeled.png" width="700" alt="An annotated image of O3DE editor's user interface." */>}}
 ```
 
 `image-width` example output:
 
-{{< image-width "/images/welcome-guide/ui-editor-labeled.png" "700" "An annotated image of O3DE editor's user interface." >}}
+{{< image-width src="/images/welcome-guide/ui-editor-labeled.png" width="700" alt="An annotated image of O3DE editor's user interface." >}}
 
 
 ## Embedding Youtube videos with the `youtube-width` shortcode
