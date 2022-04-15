@@ -5,7 +5,7 @@ description: 'Open 3D Engine (O3DE) HDR Color Grading component reference.'
 toc: true
 ---
 
-The **HDR Color Grading** component is a post-process effect that enables users to color grade scenes to match a desired look and feel. This component uses a shader behind the scenes to perform the color grading logic on each frame's pixel.x
+The **HDR Color Grading** component is a post-process effect that enables users to color grade scenes to match a desired look and feel. This component uses a shader behind the scenes to perform the color grading logic on each frame's pixel.
 
 To reduce compute time:
 1. Generate a look-up texture (LUT) from the current color grading settings by clicking the **Generate LUT** button on the component. 
