@@ -35,7 +35,7 @@ The `image-width` shortcode adds an image with alternate text and restricts the 
 `image-width` example:
 
 ```markdown
-{{</* image-width src="/images/welcome-guide/wg-welcome-page-color.png" width"700" alt="The O3DE Welcome Guide splash image." */>}}
+{{</* image-width src="/images/welcome-guide/wg-welcome-page-color.png" width="700" alt="The O3DE Welcome Guide splash image." */>}}
 ```
 
 `image-width` example output:
