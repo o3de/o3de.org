@@ -22,9 +22,9 @@ configuration options, such as tiling, scaling, and custom sampling types.
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Preview** | Displays the output gradient of this component after all properties are applied. | | |
-| **Pin Preview to Shape** | Sets an entity with a compatible Shape component to use as the bounds of the preview if **Constrain to Shape** is `Enabled`. | EntityId | Current Entity |
+| **Pin Preview to Shape** | Uses the bounding box of a compatible Shape component from the given entity to determine the world size of the preview. If **Constrain to Shape** is `Enabled`, the preview will constrain to the actual shape, not just the shape bounds. | EntityId | Current Entity |
 | **Preview Position** | Sets the world location of the preview.<br> <br>*This field is available only if there is no entity selected in **Pin Preview to Shape**.* | Vector3: -Infinity to Infinity | X:`0.0`, Y:`0.0`, Z:`0.0` |
-| **Preview Size** | Sets the dimensions of the preview.<br> <br>*This field is available only if an entity is selected in **Pin Preview to Shape** that has a valid shape component.* | Vector3: 0.0 to Infinity | X:`1.0`, Y:`1.0`, Z:`1.0` |
+| **Preview Size** | Sets the dimensions of the preview.<br> <br>*This field is available only if there is no entity selected in **Pin Preview to Shape**.* | Vector3: 0.0 to Infinity | X:`1.0`, Y:`1.0`, Z:`1.0` |
 | **Constrain to Shape** | If `Enabled`, the gradient preview uses the bounds of the entity selected in **Pin Preview to Shape**.<br> <br>*This field is available only if an entity is selected in **Pin Preview to Shape**.* | Boolean | `Disabled` |
 | **Tiling** | Sets the number of times to tile the image horizontally (X) and vertically (Y). | Vector2: 0.01 to Infinity | X: `1.0`, Y: `1.0` |
 | **Image Asset** | Sets the source **AZ::RPI::StreamingImageAsset** to generate this gradient's values. | **AZ::RPI::StreamingImageAsset** | None |
@@ -36,10 +36,10 @@ The **Advanced** group of properties has an in-line toggle switch that enables/d
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Channel To Use** | The channel component of the image to sample from.<br><br>The `Terrarium` option is for an image-based terrain file format as defined here: https://www.mapzen.com/blog/terrain-tile-service/ | `Red`, `Green`, `Blue`, `Alpha`, `Terrarium` | `Red` |
-| **Custom Scale** | Choose a scaling operation to be applied to all image data.<br><br>The `Auto` option will automatically scaled based on the min/max values in the image data. | `None`, `Auto`, `Manual` | `None` |
-| **Range Minimum** | The minimum value for each value of the image data to be scaled against.<br> <br>*This field is available only if the **Custom Scale** field is set to `Manual`.* | Float: `0.0` to `1.0`  | `0.0` |
-| **Range Maximum** | The maximum value for each value of the image data to be scaled against.<br> <br>*This field is available only if the **Custom Scale** field is set to `Manual`.* | Float: `0.0` to `1.0`  | `1.0` |
-| **Mip Index** | Specify which mip level index to sample from.<br><br>If you specify a mip level higher than the number of mip levels available in your image, then the lowest level mip index will be used. | Integer: `0` to `AZ::RHI::Limits::Image::MipCountMax` (15) | `0` |
+| **Custom Scale** | Choose a scaling operation to be applied to all image data.<br><br>The `Auto` option will automatically scale based on the min/max values in the image data. | `None`, `Auto`, `Manual` | `None` |
+| **Range Minimum** | The minimum value used to scale image data into the `0`-`1` range for the gradient. All image values at or below the minimum will be scaled to `0`.<br> <br>*This field is available only if the **Custom Scale** field is set to `Manual`.* | Float: `0.0` to `1.0`  | `0.0` |
+| **Range Maximum** | The maximum value used to scale image data into the `0`-`1` range for the gradient. All image values at or above the maximum will be scaled to `1`.<br> <br>*This field is available only if the **Custom Scale** field is set to `Manual`.* | Float: `0.0` to `1.0`  | `1.0` |
+| **Mip Index** | Specify which mip level index to sample from.<br><br>If you specify a mip level higher than the number of mip levels available in your image, then the highest existing mip index will be used. | Integer: `0` to `AZ::RHI::Limits::Image::MipCountMax` (15) | `0` |
 | **Sampling Type** | The sampling type to be used on the image data. | `Point`, `Bilinear` | `Point` |
 
 ### Sampling types
