@@ -16,7 +16,7 @@ The following image shows how to submit a metrics event and listen to the succes
 
 ![Script Canvas graph example of submitting a metrics event](/images/user-guide/gems/reference/aws/aws-metrics/scripting-submitting-metrics-event.png)
 
-{{< todo >}}
+{{< todo issue="https://github.com/o3de/o3de.org/issues/1551" >}}
 Break this image into smaller pieces and describe each one.
 {{< /todo >}}
 
