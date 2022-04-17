@@ -10,7 +10,14 @@ Meshes, actors, motions, and PhysX colliders created in third-party digital cont
 
 When source assets are placed in a scan directory, **Asset Processor** detects the new or modified files, determines the contents of the files, and then processes the data using basic default settings. However, 3D scene files can be complex and might contain data that's necessary for an artist, animator, or designer, but isn't necessary for a product asset. Data in the source asset might require special handling such as processing custom normals or a coordinate space change. With **Scene Settings**, you can specify the data in the source asset to process and customize how it's processed.
 
-Scene Settings creates a `.assetinfo` sidecar file containing your custom processing options for a source asset. The source asset is not changed. When Asset Processor processes the source asset, it uses the options in the `.assetinfo` file to generate product assets.
+Scene Settings can come from several places:
+* At its foundation, the engine has default logic it uses when processing scene files when no specific setting exists.
+* The next priority is soft naming conventions that override the default logic. For example, a node with the suffix `_lod1` is treated as a level of detail mesh.
+* The next priority is the source `.assetinfo` file. This sidecar file has the same name as the source asset file but `.assetinfo` appended. For example, `myCharacter.fbx.assetinfo` contains the the scene settings for `myCharacter.fbx`.
+* Some jobs, usually from the [Python Asset Builder](/docs/user-guide/assets/builder/), output a procedurally generated `.assetinfo` file. These files take priority over user generated `.assetinfo` files because the procedural system can read the source file as part of the generation and choose to include the source settings or skip them.
+* When the scene file is processed, there is a point where Python scripts can be called to modify the scene settings loaded in memory. This is highest priority because this same logic might read the current settings and choose which to preserve and which settings to override.
+
+The source Scene Settings tracked in the `.assetinfo` file is best edited with the [Scene Settings tool](/docs/user-guide/assets/scene-settings/interface) within the O3DE Editor.
 
 ## Scene Settings topics
 
