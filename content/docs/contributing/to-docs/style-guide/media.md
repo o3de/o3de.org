@@ -191,7 +191,7 @@ The are two additional options that are always enabled.
 
     Output:
 
-    {{< video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." autoplay="true" loop="true" width="250" poster="/images/contributing/to-docs/TestPoster.png"" >}}
+    {{< video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." autoplay="true" loop="true" width="250" poster="/images/contributing/to-docs/TestPoster.png" >}}
 
 
 ## Embedding Youtube videos with the `youtube-width` shortcode
