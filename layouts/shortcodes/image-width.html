@@ -1,5 +1,5 @@
-<!-- This shortcode adds an image with a maximum width specified in pixels and an alt text caption. Particularly useful for .svgs that can scale infinitely. When clicked, the full size image opens in the same tab.
+<!-- This shortcode adds an image with a maximum width specified in pixels and an alt text caption. Particularly useful for .svgs that can scale infinitely. When clicked, the full size image opens in a new tab.
 -->
-<a href={{ .Get 0 }}><img src={{ .Get 0 }} width={{ .Get 1 }} alt={{ .Get 2 }}></a>
+<a href={{ .Get 0 }} target="_blank"><img src={{ .Get 0 }} width={{ .Get 1 }} alt={{ .Get 2 }}></a>
 <br>
 <br>
