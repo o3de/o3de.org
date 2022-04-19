@@ -474,7 +474,7 @@ Keep the following in mind when submitting videos in docs contributions:
 1. `poster="/images/<image.png>"` - A static image that displays while the video loads or if the video fails to load. This image should be the same size and aspect ratio as the video. 
 1. `autoplay="true"` - The video plays as soon as it loads.
 1. `loop="true"` - The video plays in a loop.
-1. `width="<200>"` - Scale the video by specifying a width in pixels.
+1. `width="<video width>"` - Scale the video by specifying a width in pixels.
 1. `muted="true"` - Video is muted if an audio track exists.
 1. `type="video/<mp4 OR ogg OR webm>"` - Video type. MP4 is default.
 
