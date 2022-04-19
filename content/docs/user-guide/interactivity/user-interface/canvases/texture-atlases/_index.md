@@ -23,5 +23,3 @@ The principle advantages of texture atlases are the following:
 + Draw calls are significantly reduced.
 + Enhanced compression. Although source textures whose dimensions aren't multiples of four aren't compressed, texture atlases are always compressed.
 + Forced preloading of texture groups. When the canvas loads, it also loads its texture atlases.
-
-To see examples of texture atlases, open the **UITextureAtlasSample** level in the O3DE SamplesProject.

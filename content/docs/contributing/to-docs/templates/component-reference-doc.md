@@ -37,7 +37,7 @@ Supplemental information, such as using the component across different workflows
 
 To contribute to O3DE documentation, you must complete the steps in [Set Up a Local O3DE Docs Repo](/docs/contributing/to-docs/o3de-docs-repo-setup/). You can do this before or after writing your component reference document. However, you must set this up to place your document and images in the right folder.
 
-In a new tab, open the [component reference template](/files/template-component-reference.md) and save it to your local machine. Open the template in a text editor and refer to this page as you fill it out.
+In a new tab, navigate to the file [component reference template](https://raw.githubusercontent.com/o3de/sig-docs-community/main/doc-templates/component-reference.md) in the o3de/sig-docs-community repository and save it to your local machine. Open the template in a text editor and refer to this page as you fill it out.
 
 
 ## Writing a component reference document
@@ -52,7 +52,7 @@ Like all Markdown (`.md`) files in the O3DE Documentation, your component refere
 The `weight` parameter is optional. If omitted, the default behavior is alphabetical sorting of the title.
 {{< /note >}}
 
-See `template-component-reference.md`:
+See `component-reference.md`:
 ```yaml
 ---
 linkTitle: \[Component Name\]
@@ -79,7 +79,7 @@ Introduce the component and what it does.
 
 * The introduction is the first paragraph on the page, immediately after the metadata. It can be one to a few paragraphs, depending on the component's complexity.
 
-See `template-component-reference.md`:
+See `component-reference.md`:
 ```md
 
 <!-- Introduction - Describe the component and what it does. -->
@@ -98,7 +98,7 @@ Write the name of the Gem that provides this component and link to the correspon
 * Follow the [Links](/docs/contributing/to-docs/style-guide/format/#links) guideline for formatting the link.
 
 
-See `template-component-reference.md`:
+See `component-reference.md`:
 ```md
 ## Provider
 
@@ -122,7 +122,7 @@ If your component depends on other components to work, list the names of the dep
 
 * [Light component](/docs/user-guide/components/reference/atom/light/#dependencies): The Light component can depend on different Shape components. This example describes the varying dependency and its criteria.
 
-See `template-component-reference.md`:
+See `component-reference.md`:
 ```md
 ## Dependencies
 
@@ -146,7 +146,7 @@ Write the use cases for which a user may want to use this component. This sectio
 
 * [PhysX Shape Collider component](/docs/user-guide/components/reference/physx/shape-collider/#use-cases) - Clarifies when to use a PhysX Shape Collider component versus a PhysX Collider component. 
 
-See `template-component-reference.md`:
+See `component-reference.md`:
 ```md
 ## Use cases
 
@@ -173,7 +173,7 @@ Write about the limitations this component may have.
 * [HDRi Skybox Component](/docs/user-guide/components/reference/atom/hdri-skybox/)
 
 
-See `template-component-reference.md`:
+See `component-reference.md`:
 ```md
 
 ## Limitations
@@ -231,7 +231,7 @@ For a component card with a simple set of properties, you only need one property
 
 * [Bloom component](/docs/user-guide/components/reference/atom/bloom/): Even though the Bloom component's properties contain dropdown lists, only one property table is needed. This is because the drop down lists are opened by default and are used to contain an array of values. Another exception is the **Overrides** dropdown list, which isn't used in the user's main workflow. So, a description of the **Overrides-Enabled Override** property is sufficient. 
 
-See `template-component-reference.md`:
+See `component-reference.md`:
 ```md
 
 ## Properties
@@ -262,7 +262,7 @@ Another option is to separate the property tables into [tabs](/docs/contributing
 
 * [Camera Rig component](/docs/user-guide/components/reference/camera/camera-rig/): Contains addable property groups with multiple workflows in each. So, each property group is documented in separate property tables and each workflow is further separated into tabs. 
 
-See `template-component-reference.md`:
+See `component-reference.md`:
 ```md
 ## Properties
 
@@ -376,7 +376,7 @@ You can write additional sections to explain specific features about your compon
 
 * [Light component](/docs/user-guide/components/reference/atom/light#light-types): Contains a section that describes the different light types and their features. This section is located near the beginning of the page because it contains information that's necessary to understand the component's properties. 
 
-See `template-component-reference.md`:
+See `component-reference.md`:
 ```md
 
 ## <Component feature>
@@ -412,7 +412,7 @@ In the request or notification bus table, list the functions in rows and fill in
 * [Shape Reference component](/docs/user-guide/components/reference/shape/shape-reference/)
 
 
-See `template-component-reference.md`:
+See `component-reference.md`:
 ```md
 
 ## [EBus interface name]RequestBus

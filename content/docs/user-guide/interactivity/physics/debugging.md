@@ -14,6 +14,7 @@ You must first enable the [PhysX Debug](/docs/user-guide/gems/reference/physics/
 + [PhysX Debug Console Variables](#physx-debug-console-variables)
 + [Debugging with the ImGui Tool](#debugging-with-the-imgui-tool)
 + [Debug Options in the PhysX Configuration](#debug-options-in-the-physx-configuration)
++ [Enable additional checks and error reporting in PhysX SDK](#enable-additional-checks-and-error-reporting-in-physx-sdk)
 
 ## PhysX Debug Console Variables 
 
@@ -87,3 +88,15 @@ You must enable the [ImGui Gem](/docs/user-guide/gems/reference/debug/imgui) to 
 ## Debug Options in the PhysX Configuration 
 
 You can also specify debug settings in the **PhysX Configuration** tool. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger/).
+
+## Enable additional checks and error reporting in PhysX SDK
+
+You can make the profile configuration of O3DE use the **checked** version of the PhysX SDK library. PhysX will perform additional checks to detect invalid parameters, API race conditions and other incorrect uses of the API which might otherwise cause mysterious crashes or failures in simulation. The benefit of doing this is the same safety checks from the debug configuration are enabled without having to run O3DE in debug, where low framerates could impact the simulation.
+
+Using the checked version of PhysX has an impact on performance. Use it to detect errors in the simulation or to make sure that the scene is properly set up, but disable it when doing profiling or trying to identify performance bottlenecks.
+
+You can enable the checked version of PhysX by setting **LY_PHYSX_PROFILE_USE_CHECKED_LIBS** to **TRUE** during CMake configuration:
+
+```
+-DLY_PHYSX_PROFILE_USE_CHECKED_LIBS=TRUE
+```

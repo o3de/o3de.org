@@ -19,7 +19,7 @@ The NVIDIA Cloth Gem provides the following:
 
 * Cloth colliders that can be added to actors in **Animation Editor**.
 
-* Mesh and Actor example assets and slices located in: `\Gems\NvCloth\Assets\`.
+* Mesh and Actor example assets and prefabs located in: `\Gems\NvCloth\Assets\`.
 
 * A public C++ API that allows other systems and Gems to access cloth simulation functionality.
 
