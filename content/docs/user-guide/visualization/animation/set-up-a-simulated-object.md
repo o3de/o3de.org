@@ -45,7 +45,7 @@ The **Collision radius** is the distance in which the simulated object joint avo
 After you complete the next section, you can adjust the **Collider radius** to get your preferred results.
     {{< /tip >}}
 
-    ![View how the collider radius of each joint and how it moves with the animation of the actor.](/images/user-guide/actor-animation/simulated-objects-5.gif)
+    {{< video src="/images/user-guide/actor-animation/simulated-objects-5.mp4" info="View how the collider radius of each joint and how it moves with the animation of the actor." autoplay="true" loop="true" width="800" >}}
 
 1. To save your actor, click the save icon in the **Actor Manager**.
 
