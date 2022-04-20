@@ -173,4 +173,4 @@ In the following procedure, you use the blend tree node to build your blend tree
 
 1. In the **Parameters** pane, move the **speed** slide control to the right to make Jack walk. Move the slider further to the right to make Jack run.
 
-![Animate Jack the robot in the Animation Editor.](/images/user-guide/actor-animation/animationeditorquickstart/animation-editor-quick-start-jack-running.gif)
+{{< video src="/images/user-guide/actor-animation/animationeditorquickstart/animation-editor-quick-start-jack-running.mp4" info="Animate Jack the robot in the Animation Editor." autoplay="true" loop="true" width="300" >}}
