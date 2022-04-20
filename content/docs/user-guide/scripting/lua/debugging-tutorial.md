@@ -68,9 +68,9 @@ This tutorial shows you how to use O3DE Lua Editor to perform debugging operatio
 
     ![Launch Lua Editor from Lua Script component in O3DE Editor](/images/user-guide/scripting/lua/lua-component-open-in-lua-editor.png)
     
-## Connect to O3DE Editor with GridHub
+## Connect to O3DE Editor
 
-Connection is facilitated by **GridHub**, which is O3DE's central connection hub for debugging. GridHub starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to.  Because the debugging functionality is enabled through network sockets, you must connect Lua Editor to the target that is running the script before you can debug. In this tutorial, you connect to O3DE Editor.
+**TargetManagement** facilitates local connections between O3DE applications. TargetManagement starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to.  Because the debugging functionality is enabled through network sockets, you must connect Lua Editor to the target that is running the script before you can debug. In this tutorial, you connect to O3DE Editor.
 
 1. In the Lua Editor toolbar, choose **Target: None**, and then choose **Editor(*ID*)** to connect to O3DE Editor.
 
