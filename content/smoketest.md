@@ -474,7 +474,7 @@ Keep the following in mind when submitting videos in docs contributions:
 1. `poster="/images/<image.png>"` - A static image that displays while the video loads or if the video fails to load. This image should be the same size and aspect ratio as the video. 
 1. `autoplay="true"` - The video plays as soon as it loads.
 1. `loop="true"` - The video plays in a loop.
-1. `width="<200>"` - Scale the video by specifying a width in pixels.
+1. `width="<video width>"` - Scale the video by specifying a width in pixels.
 1. `muted="true"` - Video is muted if an audio track exists.
 1. `type="video/<mp4 OR ogg OR webm>"` - Video type. MP4 is default.
 
@@ -499,12 +499,12 @@ The are two additional options that are always enabled.
 2. Advanced `video` usage with optional parameters to enable autoplay, loop the video, scale the video to 250 pixels, and include a poster image.
 
     ```markdown
-      {{</* video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." autoplay="true" loop="true" width="250" poster="/images/poster.png" */>}}
+      {{</* video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." autoplay="true" loop="true" width="250" poster="/images/contributing/to-docs/TestPoster.png" */>}}
     ```
 
     Output:
 
-    {{< video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." autoplay="true" loop="true" width="250" poster="/images/poster.png" >}}
+    {{< video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." autoplay="true" loop="true" width="250" poster="/images/contributing/to-docs/TestPoster.png" >}}
 
 ## Embedding Youtube videos with the `youtube-width` shortcode
 
