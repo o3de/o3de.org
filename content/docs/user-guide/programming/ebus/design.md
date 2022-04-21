@@ -162,6 +162,44 @@ using BusIdType = AZ::EntityId;
 using BusIdOrderCompare = AZStd::greater<BusIdType>;
 ```
 
+## Multithreaded Dispatches
+EBuses can be configured for use in a multithreaded environment. Locking strategies are available for many common use cases.
+
+### Single-Threaded
+By default, an EBus is configured for single-threaded usage. Attempts to use it from multiple threads will result in asserts. This configuration is defined by setting the `MutexType` to `NullMutex`.
+```cpp
+// This EBus only supports single-threaded usage.
+using MutexType = NullMutex;
+```
+### Multi-Threaded With Blocking Dispatches
+To configure the EBus to allow for bus connects, disconnects, and event dispatches from multiple threads, set the MutexType to either `AZStd::mutex` or `AZStd::recursive_mutex`. Each operation on the EBus will lock the mutex to protect from multiple threads executing simultaneously. This configuration ensures that a bus handler cannot disconnect while it is in the middle of handling an event on a different thread. For simple multithreading cases, `AZStd::mutex` can be used. However, if the bus handler sends new events or connects / disconnects to a bus while handling an event on the same bus, `AZStd::recursive_mutex` should be chosen to ensure a single thread can't deadlock itself.
+```cpp
+// This EBus supports multi-threaded usage, though only one thread will execute at a time.
+using MutexType = AZStd::recursive_mutex;
+```
+
+### Shared Locks
+Inherit from `EBusSharedDispatchTraits` to configure the EBus so that it exclusively locks during bus connects and disconnects but uses a shared lock for event dispatches. Shared locks enable multiple concurrent event dispatches while still ensuring that bus connects / disconnects cannot occur during an event dispatch. This configuration is useful for an EBus that services requests from many threads and also has handlers that frequently connect and disconnect during the application lifetime. `EBusSharedDispatchTraits` sets the MutexType and the related LockGuard types to custom policies that enable concurrent event dispatches and ensure connects / disconnects only occur when no event dispatches are in progress.
+```cpp
+// This EBus supports concurrent multi-threaded event dispatches and protects
+// from connects / disconnects occuring during event dispatches.
+class MyBus : public AZ::EBusSharedDispatchTraits<MyBus>
+{
+    ...
+}
+```
+
+### Lockless Dispatches
+To configure the EBus so that it only locks during bus connects and disconnects, but not during event dispatches, set `LocklessDispatch` to true. The MutexType still needs to be set as well to configure the EBus as a multithreaded EBus and to guard against concurrent connects / disconnects. This is useful for an EBus that has handlers that only connect at startup and disconnect at shutdown, and never have handlers change connections status while the bus is in use. Lockless dispatches allow multiple events to execute concurrently with the least amount of event dispatch overhead.
+```cpp
+// Locking primitive to use for connects and disconnects.
+using MutexType = AZStd::recursive_mutex;
+
+// This EBus supports concurrent multi-threaded event dispatches but does not protect
+// from connects / disconnects occuring during event dispatches.
+static const bool LocklessDispatch = true;
+```
+
 ## Synchronous vs. Asynchronous
 
 EBus supports both synchronous and asynchronous (queued) messaging.
