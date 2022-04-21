@@ -228,21 +228,21 @@ image.
 
 The `image-width` shortcode adds an image with alternate text and restricts the image's width. The `image-width` shortcode can ensure image sizes are consistent within a topic, and that large images and `.svg` diagrams don't scale overly large in wide browser windows.
 
-`image-width` takes three double-quoted parameters in order:
+`image-width` takes three double-quoted named parameters:
 
-1. image link
-1. width
-1. alt text
+1. `src="/images/<image.png>"` - Image file path.
+1. `width="<image width>"` - Scale the image by specifying a width in pixels.
+1. `alt="<image description>"` - A string describing the image.
 
 `image-width` example:
 
 ```markdown
-{{</* image-width "/images/welcome-guide/ui-editor-labeled.png" "700" "An annotated image of O3DE editor's user interface." */>}}
+{{</* image-width src="/images/welcome-guide/wg-welcome-page-color.png" width="700" alt="The O3DE Welcome Guide splash image." */>}}
 ```
 
 `image-width` example output:
 
-{{< image-width "/images/welcome-guide/ui-editor-labeled.png" "700" "An annotated image of O3DE editor's user interface." >}}
+{{< image-width src="/images/welcome-guide/wg-welcome-page-color.png" width="700" alt="The O3DE Welcome Guide splash image." >}}
 
 An image can also be a link. This time the O3DE icon links to the O3DE website. Outer square brackets enclose
 the entire image tag, and the link target is in the parentheses at the end.
