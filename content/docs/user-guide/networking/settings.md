@@ -7,7 +7,7 @@ linktitle: Auto-packets
 ## Overview
 This page documents console variables (CVars) and settings for AzNetworking and Multiplayer behaviour.
 
-## Client Settings
+## Client settings
 | Setting                | Description                                                                                                                                                                            | Default   | Notes |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|-------|
 | cl_clientport          | The port to bind to for game traffic when connecting to a remote host, a value of 0 will select any available port                                                                     | 0         |       |
@@ -16,7 +16,15 @@ This page documents console variables (CVars) and settings for AzNetworking and 
 | cl_InputRateMs         | Rate at which to sample and process client inputs                                                                                                                                      | 33 ms     ||
 | cl_MaxRewindHistoryMs  | Maximum number of milliseconds to keep for server correction rewind and replay                                                                                                         | 2000 ms   |
 | cl_renderTickBlendBase | The base used for blending between network updates, 0.1 will be quite linear, 0.2 or 0.3 will \ slow down quicker and may be better suited to connections with highly variable latency | 0.15      ||
-### Debug Variables
+
+### Client to server connection settings
+| Setting                | Description                                                                                                                                                                            | Default   | Notes |
+|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|-------|
+| cl_ClientEntityReplicatorPendingRemovalTimeMs | How long should wait prior to removing an entity for the client through a change in the replication window, entity deletes are still immediate | 10000 ms | |
+| cl_DefaultNetworkEntityActivationTimeSliceMs | Max Ms to use to activate entities coming from the network, 0 means instantiate everything | 0 ms ||
+| cl_ClientMaxRemoteEntitiesPendingCreationCount | Maximum number of entities that we have sent to the client, but have not had a confirmation back from the client |4294967295||
+
+### Debug settings
 | Setting                        | Description                                                                                      | Default | Notes                   |
 |--------------------------------|--------------------------------------------------------------------------------------------------|---------|-------------------------|
 | cl_DebugHackTimeMultiplier     | Scalar value used to simulate clock hacking cheats for validating bank time system and anticheat | 1.0     | Non-release builds      |
@@ -24,7 +32,8 @@ This page documents console variables (CVars) and settings for AzNetworking and 
 | cl_DesyncDebugging_AuditInputs | If true, adds inputs to audit trail                                                              | False   | Non-release builds      |
 | cl_PredictiveStateHistorySize  | Controls how many inputs of predictive state should be retained for debugging desyncs            | 120     | Non-release builds only |
 
-## Server Settings
+
+## Server settings
 | Setting                 | Description                                                                          | Default | Notes |
 |-------------------------|--------------------------------------------------------------------------------------|---------|-------|
 | sv_map                  | The map the server should load                                                       | None    |       |
@@ -38,7 +47,14 @@ This page documents console variables (CVars) and settings for AzNetworking and 
 | sv_isTransient          | Whether a dedicated server shuts down if all existing connections disconnect         | True    ||
  | sv_serverSendRateMs     | Minimum number of milliseconds between each network update                           | 50 ms   || 
 
-### Replication Window Settings
+### Server to client connection settings
+| Setting                                                | Description                                                                                                                                    | Default    | Notes |
+|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|------------|-------|
+| sv_ClientEntityReplicatorPendingRemovalTimeMs          | How long should wait prior to removing an entity for the client through a change in the replication window, entity deletes are still immediate | 10000 ms   ||
+| sv_ClientMaxRemoteEntitiesPendingCreationCount         | Maximum number of entities that we have sent to the client, but have not had a confirmation back from the client                               | 4294967295 ||
+| sv_ClientMaxRemoteEntitiesPendingCreationCountPostInit | Maximum number of entities that we will send to clients after gameplay has begun                                                               | 4294967295 ||
+
+### Replication window settings
 | Setting                            | Description                                                                               | Default | Notes |
 |------------------------------------|-------------------------------------------------------------------------------------------|---------|-------|
 | sv_ReplicateServerProxies          | Enable sending of ServerProxy entities to clients                                         | true    ||
@@ -50,36 +66,48 @@ This page documents console variables (CVars) and settings for AzNetworking and 
 | sv_ClientReplicationWindowUpdateMs | Rate for replication window updates                                                       | 300 ms  ||               
 | sv_ClientAwarenessRadius           | The maximum distance entities can be from the client and still be relevant.               | 500.0   ||
 
-### Rewind Settings
+### Rewind settings
 | Setting                        | Description                                                                     | Default | Notes |
 |--------------------------------|---------------------------------------------------------------------------------|---------|-------|
 | sv_RewindVolumeExtrudeDistance | The amount to increase rewind volume checks to account for fast moving entities | 50      |       |
 
-### Editor Server Settings
-Settings to control how a server should be launched during the "play-in-editor" mode.
+### Editor server settings
+These Settings control how a server will be launched during the "play-in-editor" (CTRL+G) mode.
 
-| Setting               | Description                              | Default   | Notes |
-|-----------------------|------------------------------------------|-----------|-------|
-| editorsv_port         |                                          | 33450     |       | 
-| editorsv_serveraddr   | The address of the server to connect to. | LocalHost |       |
-| editorsv_process      |                                          | ""        |       |
-| editorsv_rhi_override |                                          | ""        | 
-| editorsv_enabled      |                                          | False     ||
-| editorsv_hidden       |                                          | False     || 
-| editorsv_launch       |                                          | True      ||
+| Setting               | Description                                                                                                                                                                                                                                                                                                        | Default   | Notes                                                                                                                                             |
+|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| editorsv_isDedicated | Whether to init as a server expecting data from an Editor. Do not modify unless you're sure of what you're doing. | False ||
+| editorsv_port         | The server port the Editor will connect to when entering play-mode.                                                                                                                                                                                                                                                | 33450     | Only valid when editorsv_enabled is true.                                                                                                         | 
+| editorsv_serveraddr   | The address of the server the Editor will connect to when entering play-mode.                                                                                                                                                                                                                                      | LocalHost | Only valid when editorsv_enabled is true.                                                                                                         |
+| editorsv_process      | The file path to your project’s ServerLauncher. If editorsv_enabled and editorsv_launch is true, the Editor will attempt to launch its own server when entering game mode. By default it looks for the ServerLauncher executaable inside the same folder where Editor lives; editorsv_process overrides that path. | ""        |                                                                                                                                                   |
+| editorsv_rhi_override | If editorsv_launch is true, the server will use the same render hardware interface (rhi) that the editor is using. For example, if the editor is using DX12, then the new server will be launched using DX12. Editorsv_rhi_override can be used to override the rhi.                                               | ""        | If you don't need to see the launched server's graphics then set editorsv_rhi_override=null, the null renderer.                                   |
+| editorsv_enabled      | If true the Editor will attempt to connect to a Multiplayer server upon entering game mode.                                                                                                                                                                                                                        | False     ||
+| editorsv_hidden       | If true the Editor will automatically launch a server upon entering game mode. Set editorsv_hidden to true if you want the launched server to be started as a background process without any visible window.                                                                                                       | False     |                                                                                                                                                   |  
+| editorsv_launch       | If true the Editor will automatically launch its own server upon entering game mode                                                                                                                                                                                                                                | True      | Only applies if editorsv_enabled is also true. If starting your own editor-server remember to set editorsv_isDedicated cvar to true on the server |
+| editorsv_connectionMessageFontSize | | 0.7 | |
 
-### Dual Settings
+
+### Dual client server settings
 These settings control behaviour on both the client and server.
 
-| Setting                                | Description                                                       | Default | Notes                |
-|----------------------------------------|-------------------------------------------------------------------|---------|----------------------|
-| bg_RewindDebugDraw                     | If true enables debug draw of rewind operations                   | False   | Requires Multiplayer |
-| bg_replicationWindowImmediateAddRemove | Update replication windows immediately on visibility Add/Removes. | True    | Requires Multiplayer |
-| bg_multiplayerDebugDraw                | Enables debug draw for the multiplayer gem                        | False   | Requires Multiplayer |
+| Setting                                             | Description                                                                            | Default | Notes |
+|-----------------------------------------------------|----------------------------------------------------------------------------------------|---------|-------|
+| bg_RewindDebugDraw                                  | If true enables debug draw of rewind operations                                        | False   |       |
+| bg_replicationWindowImmediateAddRemove              | Update replication windows immediately on visibility Add/Removes.                      | True    |       |
+| bg_multiplayerDebugDraw                             | Enables debug draw for the multiplayer gem                                             | False   |       |
+| bg_replicationWindowImmediateAddRemove              | Update replication windows immediately on visibility Add/Removes                       | True    |       |
+| bg_RewindPositionTolerance                          | Don't sync the physx entity if the square of delta position is less than this value    | 0001f   ||
+| bg_AssertNetBindOnDeactivationWithoutMarkForRemoval |                                                                                        | False   ||
+| bg_hierarchyEntityMaxLimit                          |                                                                                        | 16      || 
+| bg_DrawArticulatedHitVolumes                        | Enables debug draw of articulated hit volumes                                          | false   ||
+| bg_DrawDebugHitVolumeLifetime                       | The lifetime for hit volume draw-debug shapes                                          | 0.0     ||
+| bg_RewindOrientationTolerance                       | Don't sync the physx entity if the square of delta orientation is less than this value | 0.001   ||
 
-## AzNetwork Settings
-These settings control AzNetworking behavior.
 
+## Networking settings
+These settings control networking behavior.
+
+### AzNetworking layer
 | Setting                             | Description                                                                                                                        | Default         | Notes                |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|-----------------|----------------------|
 | net_maxPacketTrackTimeMs            | Maximum time to track any particular packetid before giving up                                                                     | 2000            |                      |
@@ -105,11 +133,23 @@ These settings control AzNetworking behavior.
 | net_UdpIgnoreWin10054               | If true, will ignore 10054 socket errors on windows                                                                                | True            |                      |
 | net_UdpRecvBufferSize               | Default UDP socket receive buffer size                                                                                             | 1 * 1024 * 1024 |                      |
 | net_UdpSendBufferSize               | Default UDP socket send buffer size                                                                                                | 1 * 1024 * 1024 |                      |
-| net_EntityReplicatorRecordsMax      | Number of allowed outstanding entity records.                                                                                      | 45              | Requires Multiplayer |
-| net_DefaultEntityMigrationTimeoutMs | Time to wait for a new authority to attach to an entity before we delete the entity                                                | 1000 ms         | Requires Multiplayer |
+
+### Multiplayer layer
+| Setting                            | Description                                                             | Default | Notes                    |
+|------------------------------------|-------------------------------------------------------------------------|---------|--------------------------|
+| net_EntityReplicatorRecordsMax     | Number of allowed outstanding entity records.                           | 45      | Requires Multiplayer Gem |
+| net_DefaultEntityMigrationTimeoutMs | Time to wait for a new authority to attach to an entity before we delete the entity | 1000 ms | Requires Multiplayer Gem |
+| net_EntityReplicatorRecordsMax     | Number of allowed outstanding entity records                            | 45      | Requires Multiplayer Gem |
+| net_DebugEntities_ShowBandwidth | Display bandwidth information                                           | False   ||
+| net_DebutAuditTrail_HistorySize | Size of audit history                                                   | 20      ||
+| net_DebugEntities_WarnAboveKbps || 10.f ||
+| net_DebugEntities_BelowWarningColor || Grey ||
+| net_DebugEntities_WarningColor | | Red ||
+| net_DebugEntities_ShowAboveKbps || 1.f ||
 
 
-### TLS/DTLS Certificate Settings
+
+### TLS/DTLS certificate settings
 | Setting                        | Description                                                                                                         | Default                     | Notes | 
 |--------------------------------|---------------------------------------------------------------------------------------------------------------------|-----------------------------|-------|
 | net_SslCertCiphers             | The cipher suite to use when using cert based key exchange                                                          | ECDHE-RSA-AES256-GCM-SHA384 ||
@@ -125,15 +165,15 @@ These settings control AzNetworking behavior.
 | net_SslValidateExpiry          | If enabled, expiration dates on the certificate will be checked for validity                                        | True                        ||
 | net_SslMaxCertDepth            | The maximum depth allowed for cert chaining validation                                                              | 3                           ||
 
-### Debug Settings
+### Debug settings
 | Setting                            | Description                                                | Default | Notes                | 
 |------------------------------------|------------------------------------------------------------|---------|----------------------|
 | net_DebugCheckNetworkEntityManager | Enables extra debug checks inside the NetworkEntityManager | False   | Requires Multiplayer |
 
-### Other Useful Settings
-The following settings can be passed as command line arguments to impact server performance
+### Other useful settings
+The following settings can be passed as command line arguments to control server performance.
 
-| Setting      | Description                                                                                                             |
-|--------------|-------------------------------------------------------------------------------------------------------------------------|
-| rhi          | Add `-rhi=null` to the server launcher args to turn on null renderer to avoid rendering costs.                          |
-| NullRenderer | Add `-NullRenderer` to the server launcher args to turn off RPI ticking to save on performance when using null renderer |
+| Setting      | Description                                                                                                              |
+|--------------|--------------------------------------------------------------------------------------------------------------------------|
+| rhi          | Add `-rhi=null` to the server launcher args to turn on null renderer to avoid rendering costs.                           |
+| NullRenderer | Add `-NullRenderer` to the server launcher args to turn off RPI ticking to save on performance when using null renderer. |
