@@ -114,7 +114,7 @@ In this section, you'll add a three second delay to the script, after which, the
 
 1. Add a **Delay** node from the **Timing** group to the graph canvas and connect it.
 
-    1. Connect the **On Spawn Completed** pin of the **Spawn** node to the **Start** pin of the delay node.
+    1. Connect the **On Spawn Completed** pin of the **Spawn** node to the **Start** pin of the **Delay** node.
 
     1. On the **Delay** node, set the **Start Time** property to `3` to create a three second delay.
 
@@ -122,7 +122,7 @@ In this section, you'll add a three second delay to the script, after which, the
 
     1. Connect the **Done** pin of the **Delay** node to the **Request Despawn** pin of the **Despawn** node.
 
-    1. On the **Despawn** node, **right-click** on the **SpawnTicket** pin and select **Convert to Reference** from the context menu. The property is automatically set to the **SpawnTicket** variable you created in step **3**. You can choose the settings icon in the SpawnTicketOut field to select a reference if necessary.
+    1. On the **Despawn** node, **right-click** on the **SpawnTicket** pin and select **Convert to Reference** from the context menu. The property is automatically set to the **SpawnTicket** variable you created in step **3**. You can choose the {{< icon settings.svg>}} settings icon in the **SpawnTicket** field to select a variable reference if necessary.
 
 1. Press **CTRL-S** to save the script. The following image displays the complete Script Canvas graph.
 
@@ -144,8 +144,8 @@ Now you'll add the script to the Spawner entity and test the script.
 
 ## Conclusion and next steps
 
-Congratulations! You've learned to spawn and despawn a prefab instance. These are critical concepts to working in O3DE. Here some ideas for building on what you've learned in this tutorial:
+Congratulations! You've learned to spawn and despawn a prefab instance. These are critical concepts to working in O3DE. Here are some ideas for building on what you've learned in this tutorial:
 
+* Can you randomize the delay before despawning the prefab instance?
 * See if you can work out how to spawn the prefab instance at a location of your choosing. Hint: Play with the transform properties on the **Spawn** Script Canvas node.
 * Can you spawn multiple prefab instances at different locations from a single Spawner entity?
-* Can you randomize the delay before despawning the prefab instance?
