@@ -2,7 +2,7 @@
 linkTitle: Debugger Configuration
 title: Debugger Configuration
 description: ' Configure debugging for the PhysX system in Open 3D Engine. '
-weight: 400
+weight: 600
 ---
 
 In **PhysX Configuration**, you can specify how to interact with **PhysX Visual Debugger (PVD)**. PhysX Visual Debugger is a third-party application that records your PhysX data from **O3DE Editor**. You can then review this data to see how your physics effects appear.

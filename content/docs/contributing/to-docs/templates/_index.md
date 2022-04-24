@@ -9,4 +9,4 @@ Download templates and follow supplemental guidelines for writing O3DE documenta
 
 | Topic | Description | Template | 
 | - | - | - |
-| [Writing an O3DE Component Reference Document](component-reference-doc) | Guidelines for writing an O3DE component reference document using the component reference document template.  | [`template-component-reference.md`](/files/template-component-reference.md) |
+| [Writing an O3DE Component Reference Document](component-reference-doc) | Guidelines for writing an O3DE component reference document using the component reference document template.  | [Component reference template](https://raw.githubusercontent.com/o3de/sig-docs-community/main/doc-templates/component-reference.md) |
