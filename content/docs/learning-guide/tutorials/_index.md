@@ -34,7 +34,7 @@ Do you have O3DE installed and you aren't sure where to start? How about creatin
 | Tutorial | Description |
 | - | - |
 | [Entity and Prefab Basics](entities-and-prefabs/entity-and-prefab-basics) | Learn the basics of creating and modifying entities and prefabs. |
-| [Spawn a Prefab](entities-and-prefabs/spawn-a-prefab.md) | Use **Script Canvas** to create a script that spawns and despawns a prefab. |
+| [Spawn and Despawn a Prefab](entities-and-prefabs/spawn-a-prefab.md) | Use **Script Canvas** to create a script that spawns and despawns a prefab. |
 
 ## Environments
 
