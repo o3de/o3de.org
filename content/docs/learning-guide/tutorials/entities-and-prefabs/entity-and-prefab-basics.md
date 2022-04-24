@@ -20,12 +20,12 @@ The sections in this topic demonstrate the basics of working with entities and p
 
 You can create an entity with either of the following methods:
 
-* In Entity Outliner or the viewport, **Right-Click** and choose **Create entity** from the context menu.
-* With Entity Outliner focused, press **Ctrl+Alt+N**.
+* In Entity Outliner or the viewport, **right-click** and choose **Create entity** from the context menu.
+* With Entity Outliner focused, press **CTRL+ALT+N**.
 
 ![Creating a new entity in Entity Outliner.](/images/learning-guide/tutorials/entities-and-prefabs/create-entity.png)
 
-You can create an entity with an asset as its basis by dragging an asset such as a `.azmodel` or a `.actor` from **Asset Browser** into Entity Outliner or the viewport. In the following video, a `.azmodel` is dragged into the viewport from Asset Browser, and a new entity with a **Mesh** component is created in the level.
+To create an entity with an asset as its basis, **drag** an asset such as a `.azmodel` or a `.actor` from **Asset Browser** into Entity Outliner or the viewport. In the following video, a `.azmodel` is dragged into the viewport from Asset Browser, and a new entity with a **Mesh** component is created in the level.
 
 {{< video src="/images/learning-guide/tutorials/entities-and-prefabs/create-entity.mp4" info="Drag and drop to create an entity." autoplay="true" loop="true" width="900" >}}
 
@@ -33,7 +33,7 @@ You can create an entity with an asset as its basis by dragging an asset such as
 
 Prefabs are saved to disk and allow you to easily reuse objects by instantiating them in a level or spawning them at runtime. Prefabs are created from entities with the following steps:
 
-1. In Entity Outliner, **Right-Click** on an entity and choose **Create Prefab...** from the context menu.
+1. In Entity Outliner, **right-click** on an entity and choose **Create Prefab...** from the context menu.
 1. In the **Save As** window, navigate to a directory within your project to save the prefab.
 1. Provide a name for the prefab file.
 1. Choose **Save** to save the prefab file to disk.
@@ -48,8 +48,8 @@ The prefab file is saved to disk and an instance of the prefab replaces the enti
 
 Complex prefabs might require multiple entities and prefab instances. You can create a prefab from a combination of entities and prefab instances with the following steps:
 
-1. Select the entities and prefab instances you want included in the new prefab. You can select multiple entities and prefab instances by holding **Shift** and clicking on each entity and prefab instance. Alternatively, you can **Click+Drag** a selection box around a group of entities and prefab instances in Entity Outliner or in the viewport.
-1. In Entity Outliner, **Right-Click** one of the selected entities or prefab instances and choose **Create Prefab...** from the context menu.
+1. Select the entities and prefab instances you want included in the new prefab. You can select multiple entities and prefab instances by holding **SHIFT** and clicking on each entity and prefab instance. Alternatively, you can **drag** a selection box around a group of entities and prefab instances in Entity Outliner or in the viewport.
+1. In Entity Outliner, **right-click** one of the selected entities or prefab instances and choose **Create Prefab...** from the context menu.
 1. In the **Save As** window, navigate to a directory within your project to save the prefab file.
 1. Provide a name for the prefab file.
 1. Choose **Save** to save the prefab file to disk.
@@ -62,13 +62,13 @@ In the following video, a prefab instance and an entity with a hierarchy are sel
 
 Prefabs can be added to a level or another prefab as a prefab instance. To instantiate a prefab, do the following:
 
-1. **Right-Click** in Entity Outliner or the viewport and choose **Instantiate Prefab...** from the context menu.
+1. **Right-click** in Entity Outliner or the viewport and choose **Instantiate Prefab...** from the context menu.
 1. In the **Pick Prefab** window, navigate to the prefab file you want to instantiate and select it.
 1. Choose **OK**.
 
 ![Instantiate a prefab in Entity Outliner.](/images/learning-guide/tutorials/entities-and-prefabs/instantiate-prefab.png)
 
-Alternatively, you can instance a prefab by dragging a prefab from Asset Browser into Entity Outliner or the viewport as demonstrated in the following video.
+Alternatively, you can **drag** a prefab from Asset Browser into Entity Outliner or the viewport to instantiate it, as demonstrated in the following video.
 
 {{< video src="/images/learning-guide/tutorials/entities-and-prefabs/prefab-instance.mp4" info="Drag and drop to instantiate a prefab." autoplay="true" loop="true" width="900" >}}
 
@@ -78,20 +78,20 @@ The name of a prefab instance is derived from the prefab file name. However, eac
 
 * **Click** the name of the entity or prefab instance in Entity Outliner to edit it.
 * Press **F2** to edit the name.
-* In Entity Outliner, **Right-Click** on the entity or prefab instance and choose **Rename** from the context menu.
+* In Entity Outliner, **right-click** on the entity or prefab instance and choose **Rename** from the context menu.
 * In Entity Inspector, edit the name field.
 
 ![Renaming a prefab.](/images/learning-guide/tutorials/entities-and-prefabs/rename-prefab.png)
 
 {{< note >}}
-Entities and prefab instances aren't required to have unique names. When you instantiate a prefab, or duplicate an entity or a prefab instance, the name of the instance or duplicate is the same as the source. Each entity and prefab instance has a unique Entity ID that is used by O3DE to identify specific entities and prefab instances. You can view an entity or prefab instance Entity ID in **Entity Inspector**.
+Entities and prefab instances aren't required to have unique names. When you instantiate a prefab, or duplicate an entity or a prefab instance, the name of the instance or duplicate is the same as the source. Each entity and prefab instance has a unique Entity ID that is used by O3DE to identify them. You can view an entity or prefab instance Entity ID in **Entity Inspector**.
 {{< /note >}}
 
 ## Saving entities and prefabs
 
 To save an entity, you must save the level that contains the entity (choose **Save** from the file menu or press **CTRL+S**). Alternatively, you can [create a prefab](#creating-entities-and-prefabs) from the entity.
 
-To save a prefab, in Entity Outliner or in the viewport, **Right-Click** on the prefab instance and choose **Save Prefab to file** from the context menu.
+To save a prefab, in Entity Outliner or in the viewport, **right-click** on the prefab instance and choose **Save Prefab to file** from the context menu.
 
 ![Saving a prefab.](/images/learning-guide/tutorials/entities-and-prefabs/save-prefab.png)
 
@@ -103,14 +103,14 @@ The **Save Prefab to file** option appears in the context menu only when the pre
 
 To focus the viewport on a particular entity or prefab instance, use either of the following methods:
 
-* **Right-Click** the entity or prefab instance, and choose **Find in viewport** from the context menu.
+* **Right-click** the entity or prefab instance, and choose **Find in viewport** from the context menu.
 * With an entity or prefab instance selected, press **Z**.
 
 {{< video src="/images/learning-guide/tutorials/entities-and-prefabs/find-in-viewport.mp4" info="Focus the viewport on a prefab instance." autoplay="true" loop="true" width="900" >}}
 
 ## Create entity and prefab hierarchies
 
-Entities and prefabs can have nested hierarchies. To create a hierarchy beneath an entity or within a prefab, drag an entity or prefab instance onto the root entity or prefab instance in Entity Outliner. As you drag a prefab or entity, a pale blue highlight marks where it will be placed in the hierarchy.
+Entities and prefabs can have nested hierarchies. To create a hierarchy beneath an entity or within a prefab, **drag** an entity or prefab instance onto the root entity or prefab instance in Entity Outliner. As you drag a prefab or entity, a pale blue highlight marks where it will be placed in the hierarchy.
 
 {{< note >}}
 Editing the hierarchy of a prefab requires that the prefab is open for edit in [Focus Mode](#edit-a-prefab).
@@ -139,8 +139,8 @@ To make changes to a prefab it must be open for editing by entering **Focus Mode
 
 Use any of the following methods to enter Focus Mode:
 
-* **Double-Click** the prefab instance in Entity Outliner or in the viewport.
-* **Right-Click** the prefab instance in Entity Outliner or in the viewport and choose **Open/Edit Prefab** from the context menu.
+* **Double-click** the prefab instance in Entity Outliner or in the viewport.
+* **Right-click** the prefab instance in Entity Outliner or in the viewport and choose **Open/Edit Prefab** from the context menu.
 * With the prefab instance selected, press **+**.
 
 ![Edit a prefab in focus mode.](/images/learning-guide/tutorials/entities-and-prefabs/edit-prefab.png)
@@ -163,8 +163,8 @@ When a prefab has unsaved changes, an **\*** appears next to the prefab file nam
 
 Use any of the following methods to exit Focus Mode:
 
-* **Double-Click** the prefab in Entity Outliner.
-* **Right-Click** the prefab in Entity Outliner and choose **Close Prefab** from the context menu.
+* **Double-click** the prefab in Entity Outliner.
+* **Right-click** the prefab in Entity Outliner and choose **Close Prefab** from the context menu.
 * Press **-**.
 * **Click** the **X** icon in the upper-right corner of the blue Focus Mode frame that surrounds the viewport.
 
@@ -176,12 +176,9 @@ You can edit a nested prefab by opening the nested prefab in Focus Mode. In the 
 
 ## Detach a prefab instance
 
-When a prefab instance is detached, its link to the prefab file is broken and the prefab instance is converted to an entity. The hierarchy of the prefab is maintained by the new entity. To detach a prefab instance, **Right-Click** the prefab instance and select **Detach Prefab...** from the context menu as demonstrated in the following video.
+When a prefab instance is detached, its link to the prefab file is broken and the prefab instance is converted to an entity. The hierarchy of the prefab is maintained by the new entity. To detach a prefab instance, **right-click** the prefab instance and select **Detach Prefab...** from the context menu as demonstrated in the following video.
 
 {{< video src="/images/learning-guide/tutorials/entities-and-prefabs/detach-prefab.mp4" info="Detach a prefab instance." autoplay="true" loop="true" width="450" >}}
-
-<br>
-<br>
 
 {{< note >}}
 A prefab instance cannot be detached when it is in Focus Mode.
@@ -191,12 +188,12 @@ A prefab instance cannot be detached when it is in Focus Mode.
 
 Selected entities and prefab instances can be duplicated with either of the following methods:
 
-* **Right-Click** a selected entity or prefab instance and choose **Duplicate** from the context menu.
+* **Right-click** a selected entity or prefab instance and choose **Duplicate** from the context menu.
 * With an entity or prefab instance selected, press **CTRL+D**.
 
 The duplicate appears below the source entity or prefab instance with a name that is identical to the source entity or prefab instance. Examining the duplicate in Entity Inspector shows the duplicate has a unique Entity ID.
 
-When multiple entities and prefabs are selected, as demonstrated in the following video, they all are duplicated along with their hierarchies.
+When multiple entities and prefabs are selected, they all are duplicated along with their hierarchies, as demonstrated in the following video.
 
 {{< video src="/images/learning-guide/tutorials/entities-and-prefabs/multiple-duplicates.mp4" info="Duplicating multiple entities and prefab instances." autoplay="true" loop="true" width="450" >}}
 
@@ -208,7 +205,7 @@ In the following video, nested entities and prefab instances are duplicated in p
 
 You can delete selected entities and prefab instances with either of the following methods:
 
-* **Right-Click** a selected entity or prefab instance and choose **Delete** from the context menu.
+* **Right-click** a selected entity or prefab instance and choose **Delete** from the context menu.
 * With an entity or prefab instance selected, press **DEL**.
 
 {{< note >}}
