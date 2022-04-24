@@ -213,4 +213,4 @@ Deleting a prefab instance has no effect on the base prefab. The prefab instance
 
 ## Conclusion and next steps
 
-Now that you understand the differences between an entities, prefabs, and prefab instances, and the basics of creating and working with them, you can try to put it into practice. Learn to [Spawn and Despawn a Prefab](spawn-a-prefab) in the next tutorial. 
+Now that you understand the differences between an entities, prefabs, and prefab instances, and the basics of creating and working with them, you can put it into practice. Learn to [Spawn and Despawn a Prefab](spawn-a-prefab) in the next tutorial. 
