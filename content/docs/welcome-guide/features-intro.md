@@ -1,18 +1,18 @@
 ---
 linktitle: Features
 title: Open 3D Engine Features
-description: ' Read about the high-level features provided with Open 3D Engine (O3DE). '
+description: Read about the high-level features provided with Open 3D Engine (O3DE).
 weight: 100
 toc: true
 ---
 
-Open 3D Engine (O3DE) is an open-source, cross-platform, real time 3D engine that you can use to create high performance interactive experiences, including games and simulations. O3DE has a physically based renderer and a suite of tools to build and process assets, simulate physics, and create animation and cinematics. The renderer and tools are all wrapped in a modular framework that you can modify and extend with your preferred development tools.
+**Open 3D Engine (O3DE)** is an open-source, cross-platform, real time 3D engine that you can use to create high performance interactive experiences, including games and simulations. O3DE has a physically-based renderer and a suite of tools to build and process assets, simulate physics, and create animation and cinematics. The renderer and tools are all wrapped in a modular framework that you can modify and extend with your preferred development tools.
 
 ## Open source
 
 O3DE is open source. You can use the provided binaries and tools to build your own projects, or get the source code and extend it!
 
-Visit [O3DE on GitHub]({{< links/o3de-source >}}) to get the source code, then follow the [GitHub setup instructions](/docs/welcome-guide/setup/setup-from-github) to get started.
+Visit [O3DE on GitHub](https://{{< links/o3de-source >}}) to get the source code, then follow the [GitHub setup instructions](/docs/welcome-guide/setup/setup-from-github) to get started.
 
 ## Modular engine and components
 
@@ -71,13 +71,13 @@ Read the [Atom Documentation](/docs/atom-guide) to find out more!
 
 ## Build logic with Script Canvas or Lua
 
-In O3DE, you can create run time logic and functionality visually with Script Canvas or program with Lua.
+In O3DE, you have *two* scripting environments available for creating runtime logic: a visual scripting tool called Script Canvas, and a more traditional scripting model, Lua.
 
-With Script Canvas, scripts are created as flow graphs by placing and connecting functional nodes in a visual editor, no programming required. Script Canvas allows you to experiment and iterate quickly, and provides an easy entry point to new developers.
+With Script Canvas, you can create scripts as flow graphs by placing and connecting functional nodes in a visual editor, no programming required. Script Canvas allows you to experiment and iterate quickly, and provides an easy yet powerful entry point to new developers.
 
-With Lua, O3DE provides a traditional script model, and the ability to use the editor of your choice.
+With Lua, O3DE supports a well-established scripting language and the ability to use the editor of your choice.
 
-You don't have to choose one or the other. You can use both Script Canvas and Lua in your projects and even within scripted entities.
+You don't have to choose one or the other. You can use both Script Canvas and Lua in your projects and even within the same entity.
 
 ## Physics simulations
 
@@ -87,9 +87,9 @@ O3DE provides support for a suite of industry standard physics solutions that yo
 
 * **NVIDIA Cloth:** Create clothing and fabrics that realistically react to animated entities and physical forces. NVIDIA Cloth has robust support for colliders, constraints, and per-vertex cloth data to compute highly resolving, layered cloth simulation.
 
-* **NVIDIA Blast:** Create dynamic destruction with multiple layers of fracturing and user defined vector and stress damage limits.
-
 * **AMD TressFX:** Create hair and fur using guide hairs and grooming data that realistically reacts to animated entities and physical forces.
+
+<!-- * **NVIDIA Blast:** Create dynamic destruction with multiple layers of fracturing and user defined vector and stress damage limits. -->
 
 ## Robust networking
 

@@ -1,9 +1,8 @@
 ---
 description: ' Manage your entities with the Entity Outliner in Open 3D Engine. '
 title: Working with Layers
+draft: true
 ---
-
-{{< preview-migrated >}}
 
 Use the O3DE layer system to organize level data into discrete files. The layer system segments level content so that members of a development team can work on different aspects of a level asynchronously.
 
@@ -26,10 +25,12 @@ When you create a layer, you can add entities to that layer. This helps you orga
 1. In O3DE Editor, choose **Tools**, **Entity Outliner**.
 
 1. In the **Entity Outliner**, right-click and choose **Create layer**.
-![\[Right-click in the Entity Outliner and choose Create layer.\]](/images/user-guide/component/entity_system/creating-layers.png)
+
+![Right-click in the Entity Outliner and choose Create layer.](/images/user-guide/component/entity_system/creating-layers.png)
 
 1. With the layer selected in the **Entity Outliner**, you can modify its properties in the **Entity Inspector**.
-![\[Select a layer in the Entity Outliner and then modify its properties in the Entity Inspector.\]](/images/user-guide/component/entity_system/modifying-layers-inspector.png)
+
+![Right-click in the Entity Outliner and choose Create layer.](/images/user-guide/component/entity_system/modifying-layers-inspector.png)
 ****
 
 
@@ -44,7 +45,8 @@ After you create a layer, you can modify it by adding entities, reorganizing its
 1. You can do the following in the context menu.
 
    Actions highlighted in yellow affect the selected layer. The other options are standard context menu actions that don't affect the selected layer.
-![\[Right-click a layer to expose its context menu.\]](/images/user-guide/component/entity_system/modifying-layers.png)
+
+   ![Right-click in the Entity Outliner and choose Create layer.](/images/user-guide/component/entity_system/modifying-layers.png)
 
    The following options in the context menu perform actions on the selected layer.
 ****
@@ -54,10 +56,11 @@ After you create a layer, you can modify it by adding entities, reorganizing its
 
 You can nest layers within other layers. This is useful if you want to organize the enitites in your level. This behavior is similar to creating hierarchies for parent and child entities.
 
-![\[A layer nested within another layer.\]](/images/user-guide/component/entity_system/layer-hierarchies.png)
+![Right-click in the Entity Outliner and choose Create layer.](/images/user-guide/component/entity_system/layer-hierarchies.png)
 
-**Note**
+{{< note >}}
 You can't make a layer a child of a non-layer entity and you can't save a layer in a slice.
+{{< /note >}}
 
 You can nest layers to break up your level into smaller, more workable sections. If you are creating a large level, for example, you might have a single vegetation layer. If you have just one vegetation layer, then only one environment artist could edit this layer at a time. To allow multiple artists to work on the vegetation layer at once, you can nest other layers within the vegetation layer and assign each nested layer to different artists. This helps build a well-organized hierarchy to keep the game's structure efficient.
 
@@ -80,11 +83,11 @@ O3DE layers are saved as `.layer` files in the `level_name/layers` directory. Th
 
 When a layer contains unsaved changes, an asterisk (\*) appears next to the layer name. After you save the level or the layer, the asterisk is removed.
 
-![\[Asterisk (*) next to a layer with unsaved information.\]](/images/shared/shared-saving-layers.png)
+![Right-click in the Entity Outliner and choose Create layer.](/images/shared/shared-saving-layers.png)
 
 Layer names at the same hierarchy level must be unique. Layers at the same hierarchy level with duplicate names display a warning (**\!**) and can't be saved until you rename them.
 
-![\[Layer at the same hierarchy level must have unique names.\]](/images/user-guide/component/entity_system/saving-layers-duplicate.png)
+![Right-click in the Entity Outliner and choose Create layer.](/images/user-guide/component/entity_system/saving-layers-duplicate.png)
 
 **To save your level and all layers**
 + In O3DE Editor, choose **File**, **Save** or press **Ctrl+S**.

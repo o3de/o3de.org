@@ -4,8 +4,6 @@ description: ' Some useful examples for the Python Editor Bindings gem, used to 
 title: Python Editor Bindings gem examples
 ---
 
-{{< preview-migrated >}}
-
  The Python Editor Bindings are driven by an API that connects through to the Editor's C++ implementation, using the O3DE event bus (Ebus) to send messages between scripts and the editor. This reference covers the use of the editor bindings API to perform tasks like interacting with components, entities, and and properties.
 
 **Contents**
@@ -236,8 +234,9 @@ editor.ToolsApplicationRequestBus(bus.Broadcast, 'CreateNewEntity', EntityId())
 
  The component system is used to add and removes components to existing entities with the `azlmbr.editor.EditorComponentAPIBus` bus.
 
-**Note**
- Components are not active when in editing mode. They only become active when the game is being played within the editor.
+{{< note >}}
+Components are not active when in editing mode. They only become active when the game is being played within the editor.
+{{< /note >}}
 
 ### Component type events 
 

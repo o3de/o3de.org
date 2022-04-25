@@ -1,5 +1,5 @@
 ---
-title: Settings Reference
+title: CMake Settings Reference
 description: The reference for Open 3D Engine-specific CMake settings.
 weight: 500
 ---
@@ -18,20 +18,20 @@ CMake options like `CMAKE_CXX_STANDARD` are set during configuration automatical
 
 These options are the user-supplied settings that are required to configure O3DE builds. Make sure that these values are set before running your first configure, and only change them later if necessary.
 
-* **`LY_3RDPARTY_PATH`** - The filesystem path to your package directory. Changing this value requires reconfiguration, and will prompt another install of packages. See [packages](./packages.md)] for more information.
+* **`LY_3RDPARTY_PATH`** - The filesystem path to your package directory. Changing this value requires reconfiguration, and will prompt another install of packages. See [packages](./packages/) for more information.
   
   *Type*: `PATH`
 
 ### Build configuration
 
-* **`LY_UNITY_BUILD`** - Controls the generation of [unity build](https://cmake.org/cmake/help/v3.20/prop_tgt/UNITY_BUILD.html) files. Unity builds speed up build times by taking multiple `.cpp` files and merging them together into a single compilation unit.
+* **`LY_UNITY_BUILD`** - Controls the generation of [unity build](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html) files. Unity builds speed up build times by taking multiple `.cpp` files and merging them together into a single compilation unit.
 
   {{< note >}}  
   Make sure that this option is turned `ON` if you experience slow build times for your projects, the O3DE engine, or O3DE tools. The impact is most dramatic for systems with lots of available RAM but fewer available cores or low disk throughput.
   {{< /note >}}  
 
   *Type*: `BOOL`  
-  *Default*: `OFF`
+  *Default*: `ON`
 * **`LY_MONOLITHIC_GAME`** - Controls project library linking. When this value is set to `ON`, it provides a compiler hint to use static libraries where possible. Some libraries, such as PhysX, are only available as shared libraries and can't be statically linked. Some platforms may disable static linking entirely.
 
   *Type*: `BOOL`  
@@ -41,13 +41,12 @@ These options are the user-supplied settings that are required to configure O3DE
 
 These options control the types of assets that are built, and where projects load assets from at runtime.
 
-* **`LY_ASSET_DEPLOY_TYPE`** - The *default* type of assets to be built by the [asset processor](/docs/user-guide/assets/pipeline/processor/). Valid platforms are:
+* **`LY_ASSET_DEPLOY_TYPE`** - The *default* type of assets to be built by [Asset Processor](/docs/user-guide/assets/asset-processor/). Valid platforms are:
   * `pc` - Windows PC
-  * `osx_gl` - MacOS
+  * `linux` - Linux
+  * `mac` - MacOS
   * `ios` - iOS and iPad OS
-  * `es3` - Android
-  
-  You can change the types of assets built by the Asset Processor, or build for multiple platforms, by [configuring the asset pipeline](/docs/user-guide/assets/pipeline/configuring).
+  * `android` - Android
   
   *Type*: `STRING`  
   *Default*: The asset type for the current host platform.
@@ -60,11 +59,14 @@ These options control the types of assets that are built, and where projects loa
   *Type*: `STRING`  
   *Default*: `LOOSE`
 
-* **`LY_OVERRIDE_PAK_FOLDER_ROOT`**  
-Controls where asset `.pak` files are loaded from. An empty string uses the predefined `paks` root.  
+* **`LY_ARCHIVE_FILE_SEARCH_MODE`**  
+Defines the default file search mode to locate non-Pak files within the Archive System
+  *  `0` = Search file system first, before searching within mounted `.pak` files.
+  *  `1` = Search mounted `.pak` files first, before searching file system.
+  *  `2` = Search only mounted `.pak` files.
 
   *Type*: `STRING`  
-  *Default*: Predefined `paks` root under your O3DE installation
+  *Default*: `0` = (debug/profile configurations), `2` = (release configuration)
 
 ### Package system settings
 
@@ -109,6 +111,17 @@ These settings control how the package download system functions.
 
   *Type*: Integer
   *Default*: 3
+
+### Build/Debugging Tools
+
+* **`LY_BUILD_WITH_ADDRESS_SANITIZER`** - Enables [Address Sanitizer](https://en.wikipedia.org/wiki/AddressSanitizer) (ASan).
+
+  {{< note >}}
+  Currently only supported for Windows and "Visual Studio" generators. Documentation can be found [here](https://docs.microsoft.com/en-us/cpp/sanitizers/asan?view=msvc-160)
+  {{< /note >}}
+
+  *Type*: `BOOL`
+  *Default*: `OFF`
 
 <!-- 
   TODO: Platform-specific settings - should they go here, on the platform pages, or somewhere else entirely (like in the reference appendix?)

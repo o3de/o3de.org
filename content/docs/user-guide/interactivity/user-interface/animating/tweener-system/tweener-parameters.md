@@ -1,12 +1,11 @@
 ---
-description: ' Learn how to modify Lua script parameters in the Scripted Entity Tweener
-  system for Open 3D Engine. '
+linkTitle: Tweener Parameters
+description: ' Learn how to modify Lua script parameters in the Scripted Entity Tweener system for Open 3D Engine. '
 title: Tweener Parameters
+weight: 400
 ---
 
-{{< preview-migrated >}}
-
-Scripted Entity Tweener parameters provide flexibility and allow you to customize your tweener animations. Use the parameters with a [timeline](/docs/user-guide/user-interface/animating/tweener-timeline.md) for a variety of possibilities.
+Scripted Entity Tweener parameters provide flexibility and allow you to customize your tweener animations. Use the parameters with a [timeline](./tweener-timeline) for a variety of possibilities.
 
 Use the following tweener parameters to customize your animation.
 
@@ -19,8 +18,8 @@ Shortcuts for the `x` and `y` values of a `UiTransform2dComponent`, which is aut
 **timeIntoTween**
 Specifies a tween to begin at a specified point (in seconds). For example, if the `duration` is set to `6`, and `timeIntoTween` is set to `3`, then the tween begins immediately at its halfway point and finishes in three more seconds.
 
-**easeMethod **
-Specifies the [easing type](/docs/user-guide/user-interface/animating/tweener-understanding-types.md) to apply to the tween.
+**easeMethod**
+Specifies the [easing type](concepts/tweener-understanding-types) to apply to the tween.
 + `ScriptedEntityTweenerEasingMethod_Linear`
 + `ScriptedEntityTweenerEasingMethod_Quad`
 + `ScriptedEntityTweenerEasingMethod_Cubic`

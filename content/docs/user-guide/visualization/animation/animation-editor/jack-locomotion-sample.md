@@ -5,8 +5,6 @@ description: ' Use the Simple Jack Locomotion sample level to learn how the O3DE
 title: Simple_JackLocomotion Sample
 ---
 
-{{< preview-migrated >}}
-
 This sample level showcases Jack the robot in a basic environment and demonstrates how the **Animation Editor** uses actors, motion sets, and animation graphs to control character behavior. Playable animations include idle, walk, run, and navigate.
 
 The Simple\_JackLocomotion sample level is located in the `\dev\SamplesProject\AnimationSamples` directory. The assets are located in the `\dev\SamplesProject\AnimationSamples\Simple_JackLocomotion` directory.
@@ -25,8 +23,8 @@ You can also use a controller connected to your computer:
 + To toggle the character aim on and off, press the right trigger.
 + To toggle the **LookAt** node on and off during the idle animation, press the left trigger.
 
-![\[Image NOT FOUND\]](/images/user-guide/actor-animation/animation-editor-jack-sample-01.png)
+![Screenshot of Jack running](/images/user-guide/actor-animation/animation-editor-jack-sample-01.png)
 
-![\[Image NOT FOUND\]](/images/user-guide/actor-animation/animation-editor-jack-sample-02.png)
+![Screenshot of Jack running](/images/user-guide/actor-animation/animation-editor-jack-sample-02.png)
 
-![\[Image NOT FOUND\]](/images/user-guide/actor-animation/animation-editor-jack-sample-03.png)
+![Screenshot of Jack running](/images/user-guide/actor-animation/animation-editor-jack-sample-03.png)

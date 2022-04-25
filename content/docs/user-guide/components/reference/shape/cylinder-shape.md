@@ -1,34 +1,39 @@
 ---
-title: Cylinder Shape component
-linktitle: Cylinder
+title: Cylinder Shape Component
+linktitle: Cylinder Shape
 description: ' Open 3D Engine (O3DE) Cylinder Shape component reference. '
 weight: 100
 ---
 
-{{< preview-migrated >}}
 
-The **Cylinder Shape** component creates a transparent cylinder that's oriented on the local Z axis. The dimensions of the cylinder can be edited with the **Height** and **Radius** properties. The Cylinder Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for spawners, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/_index.md).
 
-## Provider ##
+The **Cylinder Shape** component creates a transparent cylinder that's oriented on the local Z axis. The dimensions of the cylinder can be edited with the **Height** and **Radius** properties. The Cylinder Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for spawners, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/).
 
-[LmbrCentral Gem](/docs/user-guide/gems/reference/core/lmbr-central)
+## Provider
 
-## Properties ##
+[O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
+
+## Cylinder Shape properties
 
 ![Capsule Shape component properties](/images/user-guide/components/reference/shape/cylinder-shape-component-ui-01.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Visible** | Enable to always display the Shape component in the Perspective view, even when the entity is not selected. Disable to hide the Shape component when the entity is not selected. | Boolean | `Enabled` |
-| **Game View** | Enable to display the Shape component while in game mode in the editor. | Boolean | `Disabled` |
-| **Shape Color** | The color of the Shape component. | Eight bits per channel color: 0-255 | `255,255,199` |
-| **Height** | The height of the Cylinder Shape in meters. | 0 - Infinity | `1.0` |
-| **Radius** | The radius of the Cylinder Shape in meters. | 0 - Infinity | `0.5` |
+| **Visible** | Enable to always display the shape in the viewport, even when the entity is not selected. Disable to hide the shape when the entity is not selected. | Boolean | `Enabled` |
+| **Game View** | Enable to display the shape while in game mode. | Boolean | `Disabled` |
+| **Filled** | Enable to display the shape as filled.  Disable to display the shape as a wireframe. | Boolean | `Enabled` |
+| **Shape Color** | The color of the shape. | Eight bits per channel color: 0-255 | `255,255,199` |
+| **Height** | The height of the shape in meters. | 0.0 to Infinity | `1.0` |
+| **Radius** | The radius of the shape in meters. | 0.0 to Infinity | `0.5` |
 
-## CylinderShapeComponentRequestBus ##
+## CylinderShapeComponentRequestsBus
 
-Use the following request functions with the `CylinderShapeComponentRequestBus` EBus interface to communicate with other components of your game.
+Use the following request functions with the `CylinderShapeComponentRequestsBus` EBus interface to communicate with Cylinder Shape components in your game.
 
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
-| `GetCylinderConfiguration` | Returns the configuration of the cylinder shape. | None | `CylinderShapeConfiguration` object that contains the configuration for the cylinder shape. | Yes |
+| `GetCylinderConfiguration` | Returns the configuration of the cylinder shape. | None | `CylinderShapeConfig` object that contains the properties `Height` and `Radius`. | Yes |
+| `SetHeight` | Sets the **Height** of the cylinder shape. | Height: Float | None | Yes |
+| `SetRadius` | Sets the **Radius** of the cylinder shape. | Radius: Float | None | Yes |
+
+Refer to [Shape component Ebus interface](./#shape-component-ebus-interface) for a description of functions that are available to all Shape components.

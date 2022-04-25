@@ -1,5 +1,6 @@
 ---
-title: Audio Preload
+linkTitle: Audio Preload
+title: Audio Preload Component
 description: Use the Audio Area Environment component in Open 3D Engine to apply an environment effect to sounds that an entity triggers.
 toc: true
 ---
@@ -24,7 +25,7 @@ Default: Auto
 
 Use the following request functions with the EBus interface to communicate with other components of your game.
 
-For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus).
+For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus).
 
 
 **Load**

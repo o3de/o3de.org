@@ -3,8 +3,6 @@ description: ' Create custom events and parameters for use in Open 3D Engine''s 
 title: Creating Custom Motion Events and Parameters Using C++
 ---
 
-{{< preview-migrated >}}
-
 You can author custom event classes with custom parameters and reflect them to the edit context for use in Animation Editor. By creating predefined motion events with known parameters, you minimize the performance impact of complex parameters and reduce the risk of human error.
 
 In Animation Editor, users can perform the following tasks with the events and parameters that you create:
@@ -16,5 +14,5 @@ In Animation Editor, users can perform the following tasks with the events and p
 + Save the event and parameter information in an XML file that can be reloaded
 
 **Topics**
-+ [Creating Motion Events](/docs/user-guide/visualization/animation/character-editor/custom-events-parameters-creating-motion-events.md)
-+ [Creating EventData Types](/docs/user-guide/visualization/animation/character-editor/custom-events-parameters-creating-eventdata-types.md)
++ [Creating Motion Events](/docs/user-guide/visualization/animation/character-editor/custom-events-parameters-creating-motion-events/)
++ [Creating EventData Types](/docs/user-guide/visualization/animation/character-editor/custom-events-parameters-creating-eventdata-types/)

@@ -1,11 +1,11 @@
 ---
-linkTitle: In App Purchases
-title: In App Purchases Gem
-description: The In App Purchases Gem provides functionality for in app purchases in Open 3D Engine (O3DE) projects.
+linkTitle: In-App Purchases
+title: In-App Purchases Gem
+description: The In-App Purchases Gem provides functionality for in app purchases in Open 3D Engine (O3DE) projects.
 toc: true
 ---
 
-The In-App Purchases Gem provides functionality for in app purchases in an Open 3D Engine (O3DE) project. Platform-specific information is handled by the provided API, allowing you to use a single implementation of the In-App Purchases Gem for both Android and iOS.
+The In-App Purchases Gem provides functionality for in app purchases in an **Open 3D Engine (O3DE)** project. Platform-specific information is handled by the provided API, allowing you to use a single implementation of the In-App Purchases Gem for both Android and iOS.
 
 {{< note >}}
 For Android, you must install the Google Play billing library from the Android SDK Manager. You can find this option under the extras section.

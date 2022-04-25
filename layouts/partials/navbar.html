@@ -1,35 +1,72 @@
 {{ $home   := site.BaseURL }}
-{{ $here   := .RelPermalink }}
+{{ $docs   := site.Params.docsDir }}
 {{ $title  := site.Title }}
 {{ $logo   := site.Params.logos.navbar }}
 {{ $menu   := site.Menus.main }}
+{{ $isDocs := in .RelPermalink "/docs/" }}
 
-<div class="main-navbar navbar navbar-dark navbar-expand-lg sticky-top" role="navigation" aria-label="main navigation">
+{{ if $isDocs }}
+<div class="main-navbar navbar navbar-dark navbar-docs sticky-top" role="navigation" aria-label="main navigation">
   <div class="container-fluid d-flex flex-row justify-content-between">
       <div class="navbar-brand">
-        <a class="navbar-item" href="{{ $home }}">
+        <a class="navbar-item" href="{{ $docs }}">
           {{ if $logo }}
           {{ $url := printf "img/logos/%s" $logo | relURL }}
             <img src="{{ $url }}" class="navbar-logo">
           {{ else }}
-          {{ $title }}
+            {{ $title }}
           {{ end }}
+          <span class="subTitle">LEARN</span>
         </a>
       </div>
-  
-      <div class="d-flex flex-row align-items-center">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+
+      <div class="d-flex flex-row align-items-center navbar-docs">
+        <div id="main-nav" class="navbar-primary">
+          {{ partial "docs-menu-loop.html" . }}
+        </div>
+
+        <button class="navbar-toggler secondary-toggler" type="button" data-toggle="collapse" data-target="#secondary-nav" aria-controls="secondary-nav" aria-expanded="false" aria-label="Toggle secondary navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-    
-        <div class="collapse navbar-collapse" id="main-nav">
-          {{ partial "menu-loop.html" . }}
-        </div>  
-    
-        <div class="search">
-          {{ partial "search.html" . }}
+
+        <div class="collapse navbar-collapse navbar-secondary" id="secondary-nav">
+          {{ partial "docs-secondary-menu-loop.html" . }}
         </div>
-       
-      </div>  
+        
+        <div id="mobile-docs-toggler" class="mobile-docs-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </div>
+      </div>
   </div> 
 </div>
+{{ else }}
+  <div class="main-navbar navbar navbar-dark navbar-expand-lg sticky-top" role="navigation" aria-label="main navigation">
+    <div class="container-fluid d-flex flex-row justify-content-between">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="{{ $home }}">
+            {{ if $logo }}
+            {{ $url := printf "img/logos/%s" $logo | relURL }}
+              <img src="{{ $url }}" class="navbar-logo">
+            {{ else }}
+            {{ $title }}
+            {{ end }}
+          </a>
+        </div>
+
+        <div class="d-flex flex-row align-items-center">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="main-nav">
+            {{ partial "menu-loop.html" . }}
+          </div>  
+      
+          <div class="search">
+            {{ partial "search.html" . }}
+          </div>
+        
+        </div>  
+    </div> 
+  </div>
+{{ end }}

@@ -3,11 +3,9 @@ description: ' Learn more about the user interface for the animation graph. '
 title: Anim Graph Interface
 ---
 
-{{< preview-migrated >}}
-
 Use the animation graph to create nodes and specify parameter and values for each node.
 
-![\[Animation graph user interface for the Animation Editor.\]](/images/user-guide/actor-animation/animation-editor-animation-graph-user-interface.png)
+![Animation graph user interface for the Animation Editor.](/images/user-guide/actor-animation/animation-editor-animation-graph-user-interface.png)
 
 On the animation graph, you can do the following:
 

@@ -1,30 +1,38 @@
 ---
-description: ' Use the PhysX Force Region component to specify a region that applies
-  physical force to entities. '
-title: PhysX Force Region
+linkTitle: PhysX Force Region
+description: ' Use the PhysX Force Region component to specify a region that applies physical force to entities. '
+title: PhysX Force Region Component
 ---
 
-{{< preview-migrated >}}
+
 
 You can use the **PhysX Force Region** component to specify a region that applies physical force to entities. For each physics simulation frame, the component applies force to entities that are in the region's bounds. You can use this component to simulate effects such as simulating gravity, slowing down, or deflecting an entity to another direction.
 
 To create a force region, you must do the following:
-+ Enable the [PhysX](/docs/user-guide/gems/reference/physx/) gem for your game project
++ Enable the [PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/) gem for your game project
 + Add a **[PhysX Collider](/docs/user-guide/components/reference/physx/collider/)** component to the same entity
 + For the **PhysX Collider** component, you must select the **Trigger** property for the force region to work
 
 The **PhysX Collider** component's shape, size, and orientation represent the region that applies force to incoming entities.
 
-**Note**
+{{< note >}}
 For the **Shape** property, if you select **PhysicsAsset**, you must select a **PxMesh** asset file. If the asset isn't a convex mesh (for example, it's a triangle mesh), the collider won't work as a trigger for collisions.
+{{< /note >}}
 
 **Topics**
-+ [PhysX Force Region Component Properties](#physx-terrain-component-properties)
-+ [Creating a Force Region](#creating-physx-force-region)
+- [PhysX Force Region Component Properties](#physx-force-region-component-properties)
+  - [Force Types](#force-types)
+    - [Linear Damping](#linear-damping)
+    - [Local Space](#local-space)
+    - [Point](#point)
+    - [Simple Drag](#simple-drag)
+    - [Spline Follow](#spline-follow)
+    - [World Space](#world-space)
+- [Creating a Force Region](#creating-a-force-region)
 
 ## PhysX Force Region Component Properties 
 
-![\[Force Region component properties.\]](/images/user-guide/component/physx/ui-physx-force-region-component-properties.png)
+![Force Region component properties.](/images/user-guide/component/physx/ui-physx-force-region-component-properties.png)
 
 
 | Property | Description |
@@ -38,12 +46,15 @@ For the **Shape** property, if you select **PhysicsAsset**, you must select a **
 You can add multiple force types to the component. When an entity enters the force region, the entity moves according to the net value of the forces that you specify.
 
 **Contents**
-+ [Linear Damping](#linear-damping-force)
-+ [Local Space](#local-space-force)
-+ [Point](#point-force)
-+ [Simple Drag](#simple-drag-force)
-+ [Spline Follow](#spline-follow-force)
-+ [World Space](#world-space-force)
+- [PhysX Force Region Component Properties](#physx-force-region-component-properties)
+  - [Force Types](#force-types)
+    - [Linear Damping](#linear-damping)
+    - [Local Space](#local-space)
+    - [Point](#point)
+    - [Simple Drag](#simple-drag)
+    - [Spline Follow](#spline-follow)
+    - [World Space](#world-space)
+- [Creating a Force Region](#creating-a-force-region)
 
 #### Linear Damping 
 
@@ -86,10 +97,10 @@ Applies a force that simulates air resistance. **Simple Drag** always applies fo
 
 Applies a force to make entities follow a spline. The force uses a proportional-derivative (PD) controller that simulates a spring moving along a spline. For example, you can create a force that simulates a water slide.
 
-**Note**
+{{< note >}}
 For the force region entity, if you change the **Scale** property of the **Transform** component, the scaling must be uniform so that the x, y, and z scale values match. If scaling isn't uniform, the spline doesn't correctly reflect the path of the force.
 The end of the spline must be outside the force region so that entities can exit after following the spline.
-
+{{< /note >}}
 
 | Property | Description |
 | --- | --- |
@@ -102,8 +113,9 @@ The end of the spline must be outside the force region so that entities can exit
 
 Applies a force in world space. World space force doesn't take into account an entity's orientation. For example, you can create a force that simulates gravity.
 
-**Note**
+{{< note >}}
 You can define the direction for world space so that it always applies force in the direction that you want, regardless of the colliding entity.
+{{< /note >}}
 
 
 | Property | Description |
@@ -111,10 +123,13 @@ You can define the direction for world space so that it always applies force in 
 |  **Direction** |  The direction of the force in world space.  |
 |  **Magnitude**  |  The amount of force to apply.  Specify a negative value to apply the force in the opposite direction.  |
 
-**Note**
+{{< note >}}
 When you select a force type, remember the following:
+
 For **Simple Drag**, you can't define the direction of force. **Simple Drag** always works in the opposite direction of the entity's movement. In contrast, you can define a direction of force using **World Space**, which always acts in the direction that you specify, regardless of the direction of the moving entity.
+
 To determine how much force to apply, **Linear Damping** takes into account the colliding entity's velocity and mass but not its shape. In contrast, **Simple Drag** takes into account the colliding entity's velocity, cross-section area, and the **Region Density** of the force region.
+{{< /note >}}
 
 ## Creating a Force Region 
 
@@ -122,7 +137,7 @@ You can create a force region so that force applies to another entity that enter
 
 **To create a PhysX Force Region component**
 
-1. In O3DE Editor, create an entity. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md).
+1. In O3DE Editor, create an entity.
 
 1. Enter a name for the entity, such as *ForceRegion*.
 
@@ -145,22 +160,27 @@ You can create a force region so that force applies to another entity that enter
    1. For **Magnitude**, enter a value such as **20**.
 
       Blue arrows appear on the entity that indicate the direction of the force.
-![\[Direction of the PhysX Force Region.\]](/images/user-guide/component/physx/force-region-component-local-force.png)
+
+![Direction of the PhysX Force Region.](/images/user-guide/component/physx/force-region-component-local-force.png)
 
 1. To collide an entity with the force region, create a dynamic entity named *Sphere* and attach the **PhysX Collider** and **PhysX Rigid Body Physics** components. These components enable the entity to interact with other PhysX entities.
 
 1. (Optional) Add a **Mesh** component and, for **Mesh asset**, select a mesh asset, such as a `primitive_sphere.cgf`.
 
 1. Select and drag the **Sphere** entity so that it's above the force region.
-![\[An entity entering the force region.\]](/images/user-guide/component/physx/force-region-component-local-force-2.png)
+
+![An entity entering the force region.](/images/user-guide/component/physx/force-region-component-local-force-2.png)
 
 1. After you create your dynamic entity, press **Ctrl**+**G** to enter gameplay mode.
 **Example**
 
    The sphere falls and collides with the force region. The force region applies force and pushes the sphere in the opposite direction.
-![\[PhysX Force Region component animation.\]](/images/user-guide/component/physx/animation-force-region-component.gif)
+
+   ![PhysX Force Region component animation.](/images/user-guide/component/physx/animation-force-region-component.gif)
 
 1. To leave gameplay mode, press **Esc**.
-**Note**
+
+{{< note >}}
 To display PhysX debug visualizations, see [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging/).
 For more information about using PhysX components, see [Simulating physics behavior with the PhysX system](/docs/user-guide/interactivity/physics/nvidia-physx/).
+{{< /note >}}

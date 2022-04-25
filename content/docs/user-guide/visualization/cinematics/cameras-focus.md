@@ -3,8 +3,6 @@ description: ' Set the camera focus for cinematic sequences in Open 3D Engine. '
 title: Animating Depth of Field
 ---
 
-{{< preview-migrated >}}
-
 Camera focus, or depth of field (DoF), is used to add realism to scenes, which simulates the way a real-world camera works. You can use a broad DoF to focus on the entire scene, or use a shallow DoF to have sharp focus only on objects that are a specific distance from the camera.
 
 See the following guidelines and best practices when setting up camera focus:
@@ -21,7 +19,8 @@ DoF is rendered only for a single view pane layout (the default) in the viewport
 1. In O3DE Editor, right-click the **Perspective** title bar in the viewport and choose **Configure Layout**
 
 1. In the **Layout Configuration** dialog box, select the single view pane and then click **OK**.
-![\[Create animation tracks for a Camera component in the timeline for a sequence.\]](/images/shared/cinematics-cameras-focus-layout-configuration.png)
+
+![Create animation tracks for a Camera component in the timeline for a sequence.](/images/shared/cinematics-cameras-focus-layout-configuration.png)
 
 1. Right-click the **Perspective** title bar again and choose **Sequence Camera**.
 
@@ -35,4 +34,4 @@ DoF is rendered only for a single view pane layout (the default) in the viewport
 
 You can add as many keys as you want, and use the ****Curve Editor**** to further adjust DoF settings to change over time.
 
-For more information, see [Using Animation Curves](/docs/user-guide/visualization/cinematics/track-view/editor-animation-curves.md).
+For more information, see [Using Animation Curves](/docs/user-guide/visualization/cinematics/track-view/editor-animation-curves/).

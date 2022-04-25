@@ -1,21 +1,31 @@
 ---
-description: ' Configure settings for the PhysX system in Open 3D Engine. '
+linkTitle: PhysX Configuration
 title: Configuring the PhysX System
+description: 'Configure settings for the PhysX system in Open 3D Engine. '
 weight: 100
 ---
 
-{{< preview-migrated >}}
+The PhysX system can be configured for each project. With the **PhysX Configuration** tool, you can do the following:
 
-The [PhysX](/docs/user-guide/gems/reference/physx/) gem can be configured for each project for your game. Your settings are saved in your project's `project_name\Registry\physxsystemconfiguration.setreg` file. If you use a version control system, include this file.
+* Set the global frequency of PhysX simulations.
+* Specify a physics material library for the project and a default physics material.
+* Set the global PhysX gravity constant.
+* Enable continuous collision detection (CCD) to improve collision results.
+* Set the minimum bounce threshold for collisions.
+* Configure debug draw visualization properties.
+* Set tags for global and local wind forces.
+* Create collision layers and groups.
+* Configure the visual debugger.
 
-To configure PhysX settings, use the **PhysX Configuration** tool.
+In O3DE Editor, from the **Tools** menu, choose **PhysX Configuration** to open the PhysX Configuration tool. Changes made to the PhysX configuration settings are automatically saved in your project's `<project_name>\Registry\physxsystemconfiguration.setreg` file. If you are using source control, be sure to include this file.
 
-**To open the PhysX Configuration tool**
-+ In O3DE Editor, choose **Tools**, **PhysX Configuration**.
+The topics in this section provide information on the settings available in the PhysX Configuration tool.
 
-**Topics**
-+ [Global Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-global.md)
-+ [Collision Layers](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-collision-layers.md)
-+ [Collision Groups](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-collision-groups.md)
-+ [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-debugger.md)
-+ [PhysX World Programming Notes](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-physx-world-programming-notes.md)
+| Topic | Description |
+| - | - |
+| [Global Configuration](configuration-global) | Learn about global PhysX settings including simulation frequency, physics materials, collision settings, debug visualization options, and wind tags. |
+| [Collision Layers](configuration-collision-layers) | Create collision layers to organize PhysX entities into categories. |
+| [Collision Groups](configuration-collision-groups) | Create collision groups to define which collision layers interact with each other. |
+| [Create Layers and Groups in Code](configuration-collision-layer-and-group-programming) | Create and access collision groups and layers programmatically. |
+| [Debugger Configuration](configuration-debugger) | Configure the PhysX Visual Debugger (PVD). |
+| [PhysX World Programming Notes](configuration-physx-world-programming-notes) | Use *PhysX worlds* for simultaneous discrete simulations that create the illusion of a single large simulation. |

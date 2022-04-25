@@ -1,6 +1,6 @@
 # Open 3D Engine Website & Documentation
 
-This repository contains the website and documentation for Open 3D Engine (O3DE). During preview, the site and documentation are under heavy development - so don't be surprised if information is missing or sometimes breaks. If you would like to visit our official website in preview, please contact us directly for the information.
+This repository contains the website and documentation for **Open 3D Engine (O3DE)**. During preview, the site and documentation are under heavy development - so don't be surprised if information is missing or sometimes breaks. If you would like to visit our official website in preview, please contact us directly for the information.
 
 If you would like to build a local version of the site, all it takes is cloning this repo, following the local instructions, and under a minute for a build.
 
@@ -28,7 +28,7 @@ You can download this repository or clone it onto your local machine. Cloning th
 
 1. To install **npm**, following the instructions in the [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) documentation. Installing npm also installs **nodejs**. 
 
-2. To install **bootstrap**, run the following command in a terminal or shell: `npm install bootstrap`.
+2. To install **bootstrap**, run the following command in a terminal or shell in the root of your o3de.org clone: `npm install bootstrap`.
 
     *Note: `npm` is only one way to install bootstrap. You can use other package managers to install bootstrap, such as [yarn](https://yarnpkg.com/package/bootstrap).*
 

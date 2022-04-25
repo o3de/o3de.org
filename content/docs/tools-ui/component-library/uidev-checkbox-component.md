@@ -5,13 +5,11 @@ description: Learn how to use O3DE UI checkboxes in O3DE Gems and tools.
 toc: true
 ---
 
-{{< preview-migrated >}}
-
 Use checkboxes to enable users to select from a list of choices, when users can select any number of choices (including zero, one, or several). Each checkbox is independent of all other checkboxes in the list, so checking one box doesn't uncheck the others.
 
-![\[component checkbox style\]](/images/tools-ui/component-checkbox-style.png)
+![component checkbox style](/images/tools-ui/component-checkbox-style.png)
 
-## Usage guidelines<a name="checkbox-usage"></a>
+## Usage guidelines
 
 Follow these guidelines as you design your UI with checkboxes:
 
@@ -27,17 +25,17 @@ Avoid these design choices when using checkboxes:
 + Don't order checkboxes horizontally.
 + Don't trigger an event upon selection of a radio button, such as spawning a popover, popup, new page, or new window.
 
-## Basic checkbox<a name="checkbox-basic"></a>
+## Basic checkbox
 
-![\[component checkbox basic\]](/images/tools-ui/component-checkbox-basic.png)
+![component checkbox basic](/images/tools-ui/component-checkbox-basic.png)
 
 Set up and control checkboxes in Qt Designer or in code.
 
 Note that to set the "partially checked" state in tri-state checkboxes, you must use code.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <QCheckBox>
 
 QCheckBox* checkBox = new QCheckBox(parent);
@@ -60,7 +58,7 @@ checkBox->setCheckState(Qt::PartiallyChecked);
 checkBox->setEnabled(false);
 ```
 
-## C++ API reference<a name="checkbox-api-ref"></a>
+## C++ API reference
 
 For details on the **checkbox** API, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::CheckBox](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_check_box.html)
@@ -68,7 +66,7 @@ For details on the **checkbox** API, see the following topic in the [O3DE UI Ext
 Relevant Qt documentation includes the following topics:
 +  [QCheckBox Class](https://doc.qt.io/qt-5/qcheckbox.html)
 
-## Related links<a name="checkbox-related-links"></a>
+## Related links
 
 For additional information related to the **checkbox** component, see the following topics:
-+  [Toggle switch](uidev-toggle-switch-component.md)
++  [Toggle switch](./uidev-toggle-switch-component)

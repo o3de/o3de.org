@@ -5,8 +5,6 @@ toc: false
 weight: 110
 ---
 
-{{< preview-new >}}
-
 ## Overview
 Atom is a modular, data-driven, and multi-threaded rendering engine. With Atom, you can create content using the latest rendering technology. Atom supports modern rendering pipelines such as Forward+ and Deferred rendering. Its rendering pipeline is fully data driven, enabling developers to modify or replace key components with minimal code change. Atom’s multi-threading support allows rendering features to run parallel on both the CPU and GPU, taking advantage of all computing resources. Atom is built on multiple industry-standard 3D graphics APIs and features a modular design that makes it easy to expand support for additional platforms. 
 
@@ -33,7 +31,7 @@ The RPI is the data-driven layer that makes the rendering pipeline customizable.
 In Atom, shaders are written in the Amazon Shading Language (AZSL), an extended version of HLSL. Shaders are compiled by the AZSL compiler. Then, materials reference these shaders, which ultimately describes how to render a mesh. For more information on shaders and materials, see [Shader System](dev-guide/shaders) and [Material System](dev-guide/materials).
 
 **Features**  
-As a part of the renderer, Atom provides built-in graphics features. Most graphics features are implemented using Feature Processor interfaces, which are defined in the RPI. For example, the RPI defines the Mesh Feature Processor, which implements static and dynamic meshes. Other features (like physically based rendering) live outside of feature processors and are instead implemented through passes and shaders. Atom integrates many features into Open 3D Engine (O3DE) through the Atom Gem, introducing components such as lighting, camera, and mesh. For more information on the features, see [Features and Feature Processors](features).
+As a part of the renderer, Atom provides built-in graphics features. Most graphics features are implemented using Feature Processor interfaces, which are defined in the RPI. For example, the RPI defines the Mesh Feature Processor, which implements static and dynamic meshes. Other features (like physically based rendering) live outside of feature processors and are instead implemented through passes and shaders. Atom integrates many features into **Open 3D Engine (O3DE)** through the Atom Gem, introducing components such as lighting, camera, and mesh. For more information on the features, see [Features and Feature Processors](features).
 
 ![Atom Architecture](/images/atom-guide/what-is-atom/atom-architecture.png)
 

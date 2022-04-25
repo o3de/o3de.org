@@ -2,15 +2,16 @@
 description: ' Use the Project Settings Tool to modify project settings for mobile device games in
   Open 3D Engine. '
 title: Modifying Project Settings for Mobile Device Games
+draft: true
 ---
-
-{{< preview-migrated >}}
 
 Use the **Project Settings Tool** (PST) to make streamlined changes to project settings across all mobile platforms. The **Project Settings Tool** shows properties from all of the project settings files so that you can edit and save changes at once.
 
-**Note**
+{{< note >}}
 Before you can use the **Project Settings Tool**, you must have O3DE Editor installed, and an active project created and set as the default project.
+
 Currently, only Android and iOS are supported for platform-specific configuration.
+{{< /note >}}
 
 **Topics**
 + [Settings Files](#mobile-project-settings-tool-settings-files)
@@ -41,13 +42,13 @@ You can use the **Project Settings Tool** to set settings related to the current
 
 1. If you haven't saved your changes, and you want to reload the settings back to the way they are on disk (in your settings files), choose **Reload**.
 
-![\[The Project Settings Tool interface with Base Settings and Platform Settings.\]](/images/user-guide/mobile/mobile-project-settings-tool-ui.png)
+![The Project Settings Tool interface with Base Settings and Platform Settings.](/images/user-guide/mobile/mobile-project-settings-tool-ui.png)
 
 ### Image Previews 
 
 For image settings such as **Icons** and **Splashscreens**, the **Project Settings Tool** displays image previews using the image to be used for each dpi or size.
 
-![\[The Project Settings Tool displays image previews for image settings, such as for Splashscreens and Icons.\]](/images/user-guide/mobile/mobile-project-settings-tool-using-imagepreview.png)
+![The Project Settings Tool displays image previews for image settings, such as for Splashscreens and Icons.](/images/user-guide/mobile/mobile-project-settings-tool-using-imagepreview.png)
 
 ### Validation 
 
@@ -55,7 +56,7 @@ The **Project Settings Tool** validates settings as you enter values and provide
 
 A red outline appears around the setting to indicate an invalid value. You can also pause on the setting to view the error message that describes the reason that the field is invalid.
 
-![\[The Project Settings Tool displays a red outline and an error message for incompatible inputs on settings.\]](/images/user-guide/mobile/mobile-project-settings-tool-using-validation.png)
+![The Project Settings Tool displays a red outline and an error message for incompatible inputs on settings.](/images/user-guide/mobile/mobile-project-settings-tool-using-validation.png)
 
 ### Linked Properties 
 
@@ -70,28 +71,32 @@ You can link similar properties to each other. When you link properties to one a
 1. You can enable or disable any link. To enable a link, click the icon. All properties that it links to are updated with the current value.
 
    When a property's link is enabled and linked to a valid property, the link icon appears intact and has an orange outline.
-![\[The Bundle Identifier property is linked to the Android Package Name.\]](/images/user-guide/mobile/mobile-project-settings-tool-using-linked-properties-1.png)
+
+   ![The Bundle Identifier property is linked to the Android Package Name.](/images/user-guide/mobile/mobile-project-settings-tool-using-linked-properties-1.png)
 
    When a property's link is broken or disabled, the link icon appears broken and without an orange outline.
-![\[The Package Name property is linked to the iOS Bundle Identifier.\]](/images/user-guide/mobile/mobile-project-settings-tool-using-linked-properties-2.png)
+
+   ![The Package Name property is linked to the iOS Bundle Identifier.](/images/user-guide/mobile/mobile-project-settings-tool-using-linked-properties-2.png)
 
 1. To disable a link, click the icon again.
 
-**Note**
+{{< note >}}
 Some properties are always linked and can't be disabled, such as **Base Settings - Project Name** and **iOS - Bundle Name**. This ensures accuracy for properties that are required to have the same values across platforms. If the **Project Settings Tool** finds discrepancies between settings files for the always-linked properties, the `project.json` values take precedence.
+{{< /note >}}
 
 ### Reconfiguring the Project 
 
 After you make changes and save, the **Project Settings Tool** prompts you to reconfigure your project.
 
-![\["For new settings to be applied the project must be reconfigured. Would you like to run configure now?"\]](/images/user-guide/mobile/mobile-project-settings-tool-using-reconfigure.png)
+!["For new settings to be applied the project must be reconfigured. Would you like to run configure now?"](/images/user-guide/mobile/mobile-project-settings-tool-using-reconfigure.png)
 
 If you choose to run the `configure` command, the output appears at the bottom of the window. When the results display "Reconfiguration Finished," you can use the **Deployment Tool** to deploy to your device with the new changes.
 
-**Note**
+{{< note >}}
 If you want to deploy your changes immediately, choose **Yes**. O3DE Editor doesn't automatically run the `configure` command and will not prompt you to do so later.
+{{< /note >}}
 
-![\[The Project Settings Tool displays a successful configure and shows "Reconfiguration Finished."\]](/images/user-guide/mobile/mobile-project-settings-tool-using-reconfigure-result.png)
+![The Project Settings Tool displays a successful configure and shows "Reconfiguration Finished."](/images/user-guide/mobile/mobile-project-settings-tool-using-reconfigure-result.png)
 
 ## Properties 
 
@@ -168,6 +173,6 @@ On iOS devices, override images are stored in the `project_root\Gem\Resources\pl
 **Example**
 The following image shows the default iOS icons and splashscreens. When you choose an override for one of these images, it overwrites the currently selected one. The overwrite is completed when you choose **Save**. This change can't be undone.
 
-![\[Default iOS icons.\]](/images/user-guide/mobile/mobile-project-settings-tool-properties-ios-override-icons.png)
+![Default iOS icons.](/images/user-guide/mobile/mobile-project-settings-tool-properties-ios-override-icons.png)
 
-![\[Default iOS splashscreens.\]](/images/user-guide/mobile/mobile-project-settings-tool-properties-ios-override-splashscreens.png)
+![Default iOS splashscreens.](/images/user-guide/mobile/mobile-project-settings-tool-properties-ios-override-splashscreens.png)

@@ -1,12 +1,12 @@
 ---
-description: ' Programming notes for PhysX worlds in Open 3D Engine. '
-title: PhysX World Programming Notes
-weight: 500
+linkTitle: PhysX Worlds
+title: Programming PhysX Worlds
+description: ' Programming notes for PhysX worlds in Open 3D Engine (O3DE). '
+weight: 700
+toc: true
 ---
 
-{{< preview-migrated >}}
-
-For physics objects to be simulated, they must exist inside a world. Multiple worlds can have uses like the following:
+For PhysX objects to be simulated, they must exist inside a world. Multiple worlds can have uses like the following:
 + To simulate the result of an action in the first world. For example, the second world might show what a tower of blocks might look like five seconds from now if it were knocked over in the first world.
 + To simulate a subset of objects that you don't want to interact with the rest of the world. For example, you could simulate the movement of objects attached to a player's belt.
 + To overcome hardware or software limits on a single large world. By tiling the single world into multiple smaller worlds and moving objects among them, you can create the illusion of a single large world.
@@ -31,9 +31,10 @@ RayCastHit choose;
 WorldRequestBus::EventResult(choose, AZ_CRC("AZPhysicalWorld"), &WorldRequests::RayCast, request);
 ```
 
-**Note**
+{{< note >}}
 If your game creates multiple worlds, it must manage the objects that are added into those worlds.
+{{< /note >}}
 
-## Step Constants
+## Time step constants
 
-You can configure step constants for `Physics::WorldSettings` when `PhysXWorld` is created. For more information, see [World Configuration](/docs/userguide/nvidia/physx/configuration-global#physx-configuration-global-world).
+You can configure step constants for `Physics::WorldSettings` when `PhysXWorld` is created. For more information, see [PhysX System Global Configuration](./configuration-global/#system-configuration).

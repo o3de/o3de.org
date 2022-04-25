@@ -1,9 +1,10 @@
 ---
+linkTitle: Non-uniform Scale
 description: ' Use the Non-uniform Scale component to scale an entity by different amounts along each axis. '
-title: Non-uniform Scale
+title: Non-uniform Scale Component
 ---
 
-The **Non-uniform Scale** component allows entities to be scaled by different amounts along each local axis. It can be added by clicking the **Add non-uniform scale** button on the [Transform](/docs/user-guide/components/reference/transform.md) component.
+The **Non-uniform Scale** component allows entities to be scaled by different amounts along each local axis. It can be added by clicking the **Add non-uniform scale** button on the [Transform](/docs/user-guide/components/reference/transform/) component.
 
 The **Non-uniform Scale** component is incompatible with certain other components which cannot be non-uniformly scaled without fundamentally changing their character. For example, it is incompatible with [Sphere Shape](/docs/user-guide/components/reference/shape/sphere-shape/) component because non-uniformly scaling a sphere would result in an ellipsoid and break the characteristic symmetry of the sphere.
 
@@ -16,9 +17,9 @@ The following components are **compatible** with **Non-uniform Scale**:
 + **[Quad Shape](/docs/user-guide/components/reference/shape/quad-shape/)**
 + **[PhysX Collider](/docs/user-guide/components/reference/physx/collider/)** - Note that primitive colliders are replaced with convex approximations if they are non-uniformly scaled, which may slightly deteriorate performance. The level of detail of the convex approximation can be adjusted using the **Subdivision level** setting on the [PhysX Collider](/docs/user-guide/components/reference/physx/collider/) component.
 + **[PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/)**
-+ **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/)**
++ **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/)**
 + **[PhysX Force Region](/docs/user-guide/components/reference/physx/force-region/)**
-+ **[Decal](/docs/user-guide/components/reference/atom/decal.md)**
++ **[Decal](/docs/user-guide/components/reference/atom/decal/)**
 + **Mesh**
 
 ## Incompatible components
@@ -29,21 +30,21 @@ The following components are **incompatible** with the **Non-uniform Scale** com
 + **[Disk Shape](/docs/user-guide/components/reference/shape/disk-shape/)**
 + **[Sphere Shape](/docs/user-guide/components/reference/shape/sphere-shape/)**
 + **[Tube Shape](/docs/user-guide/components/reference/shape/tube-shape/)**
-+ **[Cloth](/docs/user-guide/components/reference/cloth.md)**
++ **Cloth**
 + **[PhysX Ball Joint](/docs/user-guide/components/reference/physx/ball-joint/)**
 + **[PhysX Fixed Joint](/docs/user-guide/components/reference/physx/fixed-joint/)**
 + **[PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/)**
 + **[PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/)**
 + **[PhysX Character Controller](/docs/user-guide/components/reference/physx/character-controller/)**
 + **PhysX Character Gameplay**
-+ **[Blast Family](/docs/user-guide/components/reference/destruction/blast-family/)**
-+ **[Blast Family Mesh Data](/docs/user-guide/components/reference/destruction/blast-family-mesh-data/)**
 + **[Attachment](/docs/user-guide/components/reference/animation/attachment/)**
 + **[Actor](/docs/user-guide/components/reference/animation/actor/)**
 + **[Simple Motion](/docs/user-guide/components/reference/animation/simple-motion/)**
 + **Fly Camera Input**
 + **HDRi Skybox**
 + **Physical Sky**
+<!-- + **[Blast Family](/docs/user-guide/components/reference/destruction/blast-family/)** -->
+<!-- + **[Blast Family Mesh Data](/docs/user-guide/components/reference/destruction/blast-family-mesh-data/)** -->
 
 The following components are currently **incompatible** because they are not yet supported, but do not have fundamental reasons making compatibility difficult to add:
 + **Sequence**
@@ -56,7 +57,7 @@ The following components are currently **incompatible** because they are not yet
 ## EBus Request Bus Interface
 **NonUniformScaleRequestBus** is the request bus for the **Non-uniform Scale** component.
 
-For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
+For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
 
 Use the following request functions with the EBus interface to communicate with other components.
 
@@ -84,7 +85,7 @@ None
 
 ### RegisterScaleChangedEvent
 
-Registers a handler for the **[AZ::Event](/docs/user-guide/engine/az-event.md)** raised when the entity's non-uniform scale is changed.
+Registers a handler for the **[AZ::Event](/docs/user-guide/programming/az-event/)** raised when the entity's non-uniform scale is changed.
 
 **Parameters**
 Handler for non-uniform scale change events.

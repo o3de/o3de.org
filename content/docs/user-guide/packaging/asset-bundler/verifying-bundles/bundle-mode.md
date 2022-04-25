@@ -5,8 +5,6 @@ title: Using Bundle Mode to Test Bundles
 weight: 300
 ---
 
-{{< preview-migrated >}}
-
 Bundle mode is a process that lets you enable asset loading to prioritize bundles over loose cache assets. After you build the seed lists for packaging your game, you can use bundle mode and the `sys_report_files_not_found_in_paks` console variable to test your packaging rules. Bundle mode makes it easy for you to load and report on issues in all the bundles \(game `.pak` files\) from a location that you specify without creating a release build.
 
 Using bundle mode involves two key tasks:
@@ -43,7 +41,7 @@ If you use the `sys_report_files_not_found_in_paks` console variable with the la
 
 Enabling the console variable before running the editor or launcher ensures that all missing assets are reported. To ensure that the console variable is always active when you run the editor or launcher, modify `editor.cfg` and `autoexec.cfg` in your project directory.
 
-You can also enable the console variable at runtime by using the console (**\~**) or remote console. For information about the remote console, see [Universal Remote Console](/docs/user-guide/engine/remote-console.md).
+You can also enable the console variable at runtime by using the console (**\~**) or remote console.
 
 ## Bundle Mode Commands
 
@@ -66,12 +64,14 @@ The following procedure shows how bundle mode works. In the example, game mode i
    The `1` argument specifies that missing files are reported as log entries rather than warnings or errors.
 
 1. Enter game mode. A list of Missing from bundle errors displays.
-![\[Missing from bundle errors in the console window.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-1.png)
+
+![Missing from bundle errors in the console window.](/images/user-guide/assetbundler/asset-bundler-bundle-mode-1.png)
 
 1. Enter the command `loadbundles` to load bundles for the level.
-![\[Using the loadbundles command.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-2.png)
 
-   There are fewer errors, but some assets are still missing. The [Asset Validation Gem](/docs/user-guide/packaging/asset-bundler/asset-validation-gem.md) seed-related commands can help find the missing assets.
+![Using the loadbundles command.](/images/user-guide/assetbundler/asset-bundler-bundle-mode-2.png)
+
+   There are fewer errors, but some assets are still missing. The [Asset Validation Gem](/docs/user-guide/gems/reference/assets/asset-validation) seed-related commands can help find the missing assets.
 
 1. Use the Asset Validation gem `addseedpath` command to add a likely missing bundle.
 
@@ -80,16 +80,18 @@ The following procedure shows how bundle mode works. In the example, game mode i
    ```
 
 1. Enter the `listknownassets` command.
-![\[Listing known assets in the console.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-3.png)
+
+![Listing known assets in the console.](/images/user-guide/assetbundler/asset-bundler-bundle-mode-3.png)
 
 1. Examine the output. In the following example, the output shows missing button assets.
-![\[Identifying missing assets in the output.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-4.png)
+
+![Identifying missing assets in the output.](/images/user-guide/assetbundler/asset-bundler-bundle-mode-4.png)
 
    In the case of the button assets, the bundle was packaged a while ago and must be repackaged. However, other assets are also still missing.
 
 1. Add the missing assets to the seed list for the level.
 
-1. Run the [bundling commands](/docs/user-guide/packaging/asset-bundler/command-line-reference.md) for the level.
+1. Run the [bundling commands](/docs/user-guide/packaging/asset-bundler/command-line-reference/) for the level.
 
 1. Drop the bundles into the `Bundles` directory.
 
@@ -140,6 +142,7 @@ The following procedure shows how bundle mode works. In the example, game mode i
    ```
 
 1. Enter the `loadbundles` command to reload the bundles, and then enter game mode.
-![\[All loaded assets are now in bundles.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-5.png)
+
+![All loaded assets are now in bundles.](/images/user-guide/assetbundler/asset-bundler-bundle-mode-5.png)
 
    All the assets loaded when game mode was entered are now in bundles.

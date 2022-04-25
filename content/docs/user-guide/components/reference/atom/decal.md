@@ -1,25 +1,40 @@
 ---
-title: Decal component
+title: Decal Component
 linktitle: Decal
-description: ' Open 3D Engine (O3DE) Decal component reference. '
-weight: 100
+description: "Open 3D Engine (O3DE) Decal component reference."
+toc: true
 ---
 
-{{< preview-migrated >}}
+The **Decal** component enables an entity to project a material onto a mesh. A large number of overlapping decals can be applied to a single mesh.
 
-The **Decal** component enables an entity to project a material onto a mesh. The decal is projected along the positive Z axis of the entity in local space (denoted by a red X). The decal can be projected onto any mesh from any entity that penetrates the bounding box of the entity that contains the Decal component. The decal can be resized by adjusting the Scale property of the Transform of the entity that contains the Decal component.
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
-## Base properties ##
 
-![Decal component base properties](/images/user-guide/components/reference/atom/decal-component-ui-01.png)
+## Properties
 
+
+![Decal component UI](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-ui-01.png)
+ 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Attenuation Angle** | The effect on the opacity of the decal material, in relation to the angle between the decal and the projection surface . With the default value of 1.0, the decal becomes more transparent as the angle between the decal and the projection surface increases. A value of 0.0 makes the decal opacity uniform regardless of the angle between the decal and the projection surface. | 0.0 - 1.0 | `1.0` |
-| **Opacity** | The opacity of the decal. A value of 0.0 is transparent. A value of 1.0 is opaque. | 0.0 - 1.0 | `1.0` |
-| **Sort Key** | The sorting order for the decal. Decals with larger Sort Key values appear on top of decals with smaller Sort Key values. | 0 - Infinity | `16` |
-| **Material** | The material to project as a decal. | .material file |  |
+| **Attenuation Angle** | Controls how much the angle between surface and the decal projection affects the decal opacity. Higher values make the decal more transparent as the angle increases so that the decal doesn't appear to wrap around the surface.  | `0.0` to `1.0` | `1.0` |
+| **Opacity** | Determines how transparent the decal is. | `0.0` to `1.0` | `1.0` |
+| **Sort Key** | Sets the sort order for the decal. When multiple decals are projected onto a surface, decals with higher values display on top. | `0` to `255` | `16` |
+| **Material** | The material that the decal will use. |  |  |
+
+## Examples
+
+Example of a decal with attenuation angle set to 0. Less attenuation means more wrapping around objects.
+
+![Decal component attenuation angle 0 example](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-attenuation-angle-0.png)
+
+Example of a decal with attenuation angle set to 1. More attenuation means less wrapping around objects.
+
+![Decal component attenuation angle 1 example](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-attenuation-angle-1.png)
+
+The black scorch mark decal has a larger sort key than the orange dirt decal and thus is on top.
+
+![Decal component sorting order example](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-sorting-example.png)

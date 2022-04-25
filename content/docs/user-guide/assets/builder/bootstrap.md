@@ -1,19 +1,17 @@
 ---
-description: ' Learn to create or modify a bootstrap file for a Python Asset Builder. '
-title: Create or modify a bootstrap script
-weight: 200
+linkTitle: Bootstrap
+title: Bootstrap a Python Asset Builder
+description: Add a Python Asset Builder to a bootstrap.py script.
+weight: 100
 ---
 
-{{< preview-migrated >}}
+To make a **Python Asset Builder** script available to the **Asset Pipeline**, you must add a `bootstrap.py` file to the path or modify an existing `bootstrap.py` file. Placing the Python Asset Builder script and the `bootstrap.py` file in one of the following script locations is recommended:
 
-To make your Python Asset Builder script available to the asset processing system, you must add a `bootstrap.py` file to the path or modify an existing `bootstrap.py` file. We recommend you use a location that is relative to where your Python Asset Builder scripts will be stored, such as one of the following:
 + In your project: `Editor\Scripts\bootstrap.py`
 + In a Gem: `Editor\Scripts\bootstrap.py`
 
-To add your Python Asset Builder, import it in the `bootstrap.py` file.
+To add your Python Asset Builder, import it in the `bootstrap.py` file. The example below assumes that the Python Asset Builder is named `my_py_asset_builder.py`, and that it's in the same directory as the `bootstrap.py` file.
 
+```python
+import my_py_asset_builder
 ```
-import asset_builder_my_asset_type
-```
-
-The above example assumes that the Python Asset Builder is named `asset_builder_my_asset_type.py`, and that it's in the same directory as the `bootstrap.py` file.

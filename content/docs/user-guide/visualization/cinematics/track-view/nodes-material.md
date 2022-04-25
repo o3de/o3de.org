@@ -4,14 +4,11 @@ description: ' Use material nodes in O3DE Editor''s <guilabel>Track View</guilab
 title: Material Node
 ---
 
-{{< preview-migrated >}}
-
 **Material** nodes help you animate commonly used material properties that you would normally set in the **Material Editor**. You can add **Material** nodes through a sequence or from the **Director** node.
 
-**Note**
+{{< note >}}
 The name of the **Material** node must be the full path of the material that you want to animate, as shown in the **Material Editor**.
-
-
+{{< /note >}}
 
 A recommended workflow is to select the material inside the **Material Editor** that you want to animate.
 
@@ -22,7 +19,8 @@ A recommended workflow is to select the material inside the **Material Editor** 
 1. Navigate to the material that you want to animate.
 
 1. Right-click the selected material and choose **Copy Path to Clipboard**. If the material is in a material group, select the group and copy the group name to the clipboard.
-![\[Copy the material name path in the Material Editor.\]](/images/user-guide/cinematics/cinematics-track-view-nodes-material-4.png)
+
+![Copy the material name path in the Material Editor.](/images/user-guide/cinematics/cinematics-track-view-nodes-material-4.png)
 
 1. Choose **Tools**, **Track View**.
 

@@ -1,10 +1,9 @@
 ---
+linkTitle: Transform
 description: ' Use the Transform component to move, rotate, and scale an entity in
   Open 3D Engine. '
-title: Transform
+title: Transform Component
 ---
-
-{{< preview-migrated >}}
 
 The **Transform** component controls the translation, rotation, and scale information of an entity in the 3D world. When you create an entity in O3DE Editor, the **Transform** component is automatically added. The translation is the coordinate location (x, y, and z axes) of the entity. The rotation is the degree in which the entity is rotated around its center. The uniform scale is the dimension of the entity in comparison to its original size, applied uniformly in each direction.
 
@@ -28,7 +27,7 @@ The local position (relative to the parent) in meters.
 The local rotation (relative to the parent) in degrees.
 
 **Uniform Scale**
-The local scale, with a single value applied uniformly in each direction. Click on the **Add non-uniform scale** button to add a [Non-uniform Scale](/docs/user-guide/components/reference/non-uniform-scale.md) component, which allows different scale values to be used on each axis of an entity.
+The local scale, with a single value applied uniformly in each direction. Click on the **Add non-uniform scale** button to add a [Non-uniform Scale](/docs/user-guide/components/reference/non-uniform-scale) component, which allows different scale values to be used on each axis of an entity.
 
 **Parent activation**
 Configures transform behavior when the parent entity activates.
@@ -40,7 +39,7 @@ Entities that can't be moved at run time. Some systems in O3DE treat static enti
 
 **TransformBus** is the request bus for the **Transform** component. An entity's transform is the translation, rotation, and scale information.
 
-For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
+For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
 
 Use the following request functions with the EBus interface to communicate with other components of your game.
 
@@ -491,7 +490,7 @@ Boolean
 
 **TransformNotificationBus** is the notification bus for the **Transform** component. Use the following notification functions with the EBus interface to communicate with other components of your game.
 
-For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
+For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
 
 ### OnTransformChanged 
 

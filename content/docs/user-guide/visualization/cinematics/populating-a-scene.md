@@ -4,14 +4,11 @@ description: ' Create scenes in a track view sequence in the <guilabel>Track Vie
 title: Populating a Scene
 ---
 
-{{< preview-migrated >}}
-
 Cinematic scenes, also known as sequences, consist of multiple nodes, tracks, and track events. When you create a sequence, the sequence name is always the top (parent) node in the node browser.
 
-For more information, see [Using the Track View Editor](/docs/user-guide/visualization/cinematics/track-view/editor.md).
+For more information, see [Using the Track View Editor](track-view/).
 
 **Topics**
-+ [Setting Sequence Properties](/docs/user-guide/visualization/cinematics/sequence-props.md)
-+ [Working with Slices and Sequences](/docs/userguide/working-with-slices-cinematic-sequences.md)
-+ [Adding Component Entities](/docs/user-guide/visualization/cinematics/adding-component-entities.md)
-+ [Moving a Component Entity in a Sequence](/docs/user-guide/visualization/cinematics/moving-a-component-entity.md)
++ [Setting Sequence Properties](/docs/user-guide/visualization/cinematics/sequence-props)
++ [Adding Component Entities](/docs/user-guide/visualization/cinematics/adding-component-entities)
++ [Moving a Component Entity in a Sequence](/docs/user-guide/visualization/cinematics/moving-a-component-entity)

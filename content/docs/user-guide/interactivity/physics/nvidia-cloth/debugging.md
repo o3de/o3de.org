@@ -4,9 +4,7 @@ title: Cloth visual debugger
 weight: 500
 ---
 
-{{< preview-migrated >}}
-
-![\[Debug visualization of the NVIDIA Cloth component\]](/images/user-guide/physx/cloth/ui-cloth-component-debug.png)
+![Debug visualization of the NVIDIA Cloth component](/images/user-guide/physx/cloth/ui-cloth-component-debug.png)
 
 To enable debug cloth visualization, use the following console variables (CVARs) in the editor console.
 

@@ -72,7 +72,7 @@ Kythera AI can filter which physics objects are considered when generating a nav
 
 ## Generate a navmesh
 
-To generate or regenerate navmeshes, choose the **Regenerate Navmesh** button on the Kythera toolbar (![Regenerate navmesh icon](/images/user-guide/gems/kythera-ai/toolbar-regenerate-navmesh.png)), or with the console command `kyt_Generate`.
+To generate or regenerate navmeshes, choose the **Regenerate Navmesh** button on the Kythera toolbar (![Regenerate navmesh icon](/images/user-guide/gems/kythera-ai/toolbar-generate-navmesh.png)), or with the console command `kyt_Generate`.
 
 ## Save a navmesh
 
@@ -95,4 +95,3 @@ Agents are assigned a navmesh to use in the global `Profiles.xml` file. 
 ```
 
 If a navmesh name or type is not specified in an agent's profile, the values of `DefaultNavMeshName` and/or `DefaultNavMeshType` from `NavMesh.xml` are used.
-

@@ -1,5 +1,6 @@
 ---
-title: Audio Environment
+linkTitle: Audio Environment
+title: Audio Environment Component
 description: Use the Audio Environment component to set up a default environment for an entity in Open 3D Engine.
 toc: true
 ---
@@ -19,7 +20,7 @@ Enter the name of the audio environment to use by default when setting amounts.
 
 Use the following request functions with the EBus interface to communicate with other components of your game.
 
-For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
+For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
 
 ### SetAmount
 

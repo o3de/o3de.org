@@ -5,8 +5,6 @@ weight: 200
 toc: true
 ---
 
-{{< preview-new >}}
-
 The AWS Client Auth Gem supports several preconfigured third-party authentication providers. You can also add support for a custom provider.
 
 To configure an authentication provider, you must do the following.
@@ -30,7 +28,7 @@ Use the app ID that you obtained when you enabled your account as the value for 
 
 If you are using Google, you must also use the app secret you were given for your account as the value for `ClientSecret`.
 
-When deploying the CDK application, be sure to use the CDK constant that corresponds to your selected provider. Refer to the CDK application deployment step in [Setting Up Client Auth](./setup.md) for details.
+When deploying the CDK application, be sure to use the CDK constant that corresponds to your selected provider. Refer to the CDK application deployment step in [Setting Up Client Auth](./setup/) for details.
 
 These settings and those in the resource mapping file are read once during activation of `AWSClientAuthSystemComponent`.
 
@@ -79,7 +77,7 @@ To use a custom authentication provider with the AWS Client Auth Gem, you must h
 
     b. Add the same App Client ID to `supported_login_providers` in `cognito_identity_pool.py`.
 
-    c. Synth and deploy the AWS Client Auth stack. For help with these commands, see [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application.md) in the AWS Core Gem documentation.
+    c. Synth and deploy the AWS Client Auth stack. For help with these commands, see [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application/) in the AWS Core Gem documentation.
 
 1. Implement your C++ custom provider.
 

@@ -3,7 +3,7 @@ description: ' Work with the Input component EBus (event bus) in Open 3D Engine.
 title: Input Component EBus Interface
 ---
 
-{{< preview-migrated >}}
+
 
 Input subcomponents are objects that have the same lifetime as components and must override `Activate` and `Deactivate`.
 
@@ -14,15 +14,13 @@ void Activate(const AZ::InputEventNotificationId& channelId) override;
 void Deactivate(const AZ::InputEventNotificationId& channelId) override;
 ```
 
-You can use the `GameplayNotificationBus` to work with the `InputSubComponent`. For more information, see [GameplayNotifications](/docs/userguide/components/entity-system-gameplay-bus#component-entity-system-gameplay-bus-gameplaynotifications).
-
-You can find example Lua scripts and code in the `Gems\StartingPointInput\Assets\Scripts\Input` directory.
+You can use the `GameplayNotificationBus` to work with the `InputSubComponent`. You can find example Lua scripts and code in the `Gems\StartingPointInput\Assets\Scripts\Input` directory.
 
 ## Input Event Notification Bus 
 
 Use the following notification functions with the event notification bus interface to communicate with other components of your game.
 
-For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
+For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
 
 ###  
 
@@ -72,7 +70,7 @@ return held
 
 Use the following functions with the input request bus interface to communicate with other components of your game.
 
-For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
+For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
 
 
 ****

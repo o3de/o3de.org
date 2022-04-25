@@ -10,8 +10,6 @@ const navbarBurger = () => {
 }
 
 $(() => {
-  // console.log("Welcome to the CNCF's Hugo + Netlify starter");
-
   navbarBurger();
 });
 
@@ -30,139 +28,190 @@ $(() => {
   })
 });
 
+// Lightbox behavior
+
+$(function() {
+  $("a.lightbox-trigger").click(function(e) {
+    var lightboxId = $(this).data("lightbox");
+    if(lightboxId)
+    {
+      var lightboxObject = $("#" + lightboxId);
+      if(lightboxObject.hasClass("lightbox-content"))
+      {
+        e.preventDefault();
+        lightboxObject.fadeIn(500);
+      }
+    }
+  });
+  
+  $(".lightbox-content").click(function(e) {
+    $(this).fadeOut(500);
+  });
+  
+  $(".lightbox-content iframe").click(function(e) {
+    e.preventDefault();
+  });
+});
 
 // nav bar search
 
 $(() => {
-  $("#search").click(function(event){
-    event.preventDefault();
-    console.log("SEARCH ICON CLICKED");
-    $(".search-input-view").show();
+  $("#search").submit(function(event){
+    if($(".search-input-view").is(":hidden"))
+    {
+      event.preventDefault();
+      $(".search-input-view").show();
+    }
+  });
+});
 
-    let data =  $('#search-input').val()
-    console.log("DATA FROM SEARCH INPUT: ", data, "    data length: ", data.length, "    data length check: ", data.length>0);
-    if (data.length > 0) {
-      console.log("IN IF CASE");
-    
-      const idx = lunr(function () {
-        this.ref('id')
-        this.field('title', {
-          boost: 15
-        })
-        this.field('tags')
-        this.field('content', {
-          boost: 10
-        })
-    
-        for (const key in window.store) {
-          this.add({
-            id: key,
-            title: window.store[key].title,
-            tags: window.store[key].category,
-            content: window.store[key].content
-          })
-        }
+// --- Downloads page
+// Handle click to switch between download pages.
+$(function() {
+  $(".os-selector-button").click(function(event){
+    if($(this).hasClass("active"))
+    {
+      return;
+    }
+
+    // Switch enabled button
+    $(".os-selector-button.active").removeClass("active");
+    $(this).addClass("active");
+
+    // Switch content
+    $(".os-content.active").removeClass("active");
+    $("#content-" + $(this).data("os")).addClass("active");
+  });
+});
+
+// Detect anchor in URL on load and select appropriate tab.
+// This uses the click to switch function, so it must be defined after it.
+$(function() {
+  // Retrieve the hash from the url.
+  var hash = $(location).attr('hash').replace( /#/, "" );
+
+  // Try to click the appropriate button.
+  // If it doesn't exist, this will just do nothing.
+  $("#os-" + hash).trigger("click");
+});
+
+// Docs navigation
+
+$(function() {
+  $("#docs-nav a.has-children").click(function(e){
+    e.preventDefault();
+    $(this).toggleClass("open");
+    $(this).siblings('ul').each(function()
+    {
+      $(this).slideToggle(300);
+    });
+  })
+});
+
+$(function() {
+  const url = window.location.pathname;
+  $("#docs-nav a").each(function(){
+    if($(this).attr("href") == url) {
+      $(this).addClass("currentPage");
+      $(this).parentsUntil("#docs-nav", "ul").each(function(){
+        $(this).addClass("currentAncestor");
+        $(this).siblings('a').each(function()
+        {
+          $(this).addClass("currentAncestor").addClass("open");
+        });
+        $(this).parent('li').addClass("currentAncestorCategory");
       })
+    }
+  })
+});
+
+$(function() {
+  $("body").append("<div id=\"docs-mobile-menu-overlay\" class=\"docs-mobile-menu-overlay\"></div>");
+
+  $("#docs-mobile-menu-overlay").click(function(){
+    $("body").removeClass("docs-mobile-menu-open");
+    $(this).removeClass("show");
+    setTimeout(function(){ $(this).hide(); }, 300);
+  });
+
+  $("#mobile-docs-toggler").click(function(){
+    var overlay = $("#docs-mobile-menu-overlay");
+    if(overlay.hasClass("show"))
+    {
+      $("body").removeClass("docs-mobile-menu-open");
+      overlay.removeClass("show");
+      setTimeout(function(){ overlay.hide(); }, 300);
+    }
+    else
+    {
+      $("body").addClass("docs-mobile-menu-open");
+      overlay.show();
+      setTimeout(function(){ overlay.addClass("show"); }, 10);
+    }
+  });
+});
+
+// Detect anchor links, add correct offset and scroll behavior.
+$(function() {
+  var scrollOffset = $(".main-navbar").height() + 32;
+
+  $("a[href^=\\#]").click(function(e) {
+    // Don't apply behavior to tabs
+    if($(this).data("toggle") == "tab")
+    {
+      return;
+    }
+
+    var dest = $(this).attr('href');
+    if(dest != "" && dest.length > 1 && $(dest).length > 0)
+    {
+      $('html,body').animate({ scrollTop: $(dest).offset().top - scrollOffset }, 'slow');
+    }
+  });
+});
+
+// Homepage Hero Slideshow
+$(function()
+{
+  if($("#hero-slideshow").length > 0)
+  {
+    var slides = [];
+    var i = 0;
+    $("#hero-slideshow").find(".hero-slideshow-image").each(function()
+    {
+      slides[i] = $(this);
+      ++i;
+    });
+
+    var slidesNum = slides.length;
     
-      // Perform the search
-      const results = idx.search(data)
-      // Update the list with results
-      displayResults(results, window.store)
+    function setupSlides(index)
+    {
+      if(index < 0 || index >= slidesNum)
+      {
+        return;
+      }
+
+      var previousActive = $(".hero-slideshow-image.active");
+      previousActive.addClass("fadeOut");
+      slides[index].addClass("active");
+      
+      setTimeout(function() {
+        previousActive.removeClass("fadeOut").removeClass("active");
+      }, 1000);
+
+      var nextIndex = index + 1;
+      if (nextIndex == slidesNum)
+      {
+        nextIndex = 0;
+      }
+
+      setTimeout(function() {
+        setupSlides(nextIndex);
+      }, 7000);
     }
-  })
-});
 
-
-//active links on docs 
-
-$(function() {
-  const url = window.location.href;
-  $("#accordionExample .card a").each(function(){
-       if($(this).attr("href") == url || $(this).attr("href") == '' ) {
-        $(this).addClass("currentPage");
-        $(this).parents().addClass("currentLi");
-        $(this).closest(".card-body").parent().addClass("show");
-       }
-  })
-  $('.currentLi').children().addClass("show");
-  $('.currentLi').children('i').removeClass("fa-chevron-right");
-  $('.currentLi').children('i').addClass("fa-chevron-down");
-
-  $('.docs-sidebar').animate({
-    //scrollTop: ($('.currentPage').first().offset().top - 75)
-  },500);
-});
-
-
-// parse user agent on downloads page
-
-$(function() {
-  console.log($.ua.os.name); 
-  const ua = $.ua.os.name;
-  $("#download-page-buttons a").each(function(){
-    if($(this).data('os') == ua) {
-      $(this).addClass("active-os-cta");
-      $(this).removeClass("btn-secondary");
-    }
-  })
-});
-
-
-// Search 
-
-
-function displayResults (results, store) {
-  const resultsContainer = document.getElementById('search-results')
-  const mainContainer = document.getElementById('primary')
-  const searchResults = document.getElementById('results')
-  if (results.length) {
-    let resultList = ''
-    // Iterate and build result list elements
-    for (const n in results) {
-      const item = store[results[n].ref]
-      resultList += '<li><p><a href="' + item.url + '">' + item.title + '</a></p>'
-      resultList += '<p>' + item.content.substring(0, 400) + '...</p></li>'
-    }
-    searchResults.innerHTML = resultList
-  } else {
-    searchResults.innerHTML = 'No results found.'
+    setupSlides(0);
   }
-
-  resultsContainer.style.display = "block"
-  mainContainer.style.display = "none"
-}
-
-// Get the query parameter(s)
-// const params = new URLSearchParams(window.location.search)
-// const query = params.get('query')
-
-// Perform a search if there is a query
-// if (query) {
-//   // Retain the search input in the form when displaying results
-//   document.getElementById('search-input').setAttribute('value', query)
-
-//   const idx = lunr(function () {
-//     this.ref('id')
-//     this.field('title', {
-//       boost: 15
-//     })
-//     this.field('tags')
-//     this.field('content', {
-//       boost: 10
-//     })
-
-//     for (const key in window.store) {
-//       this.add({
-//         id: key,
-//         title: window.store[key].title,
-//         tags: window.store[key].category,
-//         content: window.store[key].content
-//       })
-//     }
-//   })
-
-//   // Perform the search
-//   const results = idx.search(query)
-//   // Update the list with results
-//   displayResults(results, window.store)
-// }
+  
+});

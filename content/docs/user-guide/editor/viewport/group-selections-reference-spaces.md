@@ -4,8 +4,6 @@ title: Using Group Selections and Reference Spaces
 weight: 250
 ---
 
-{{< preview-migrated >}}
-
 In the viewport, you can select multiple entities. This is called a group selection. You can use the following shortcuts for group selection.
 
 | Shortcut | Description |
@@ -50,9 +48,9 @@ In the following example, three entities are selected. Because there is no commo
 
    ![Manipulate child entities from a parent entity in O3DE.](/images/user-guide/viewportinteractionmodel/viewport-selection-model-9.gif)
 
-1. Press and hold **Alt** while modifying a group of selected entities. This enables you to control changes to the entities in local space. You can quickly iterate and modify your entities and view the changes in the viewport.
+1. Press and hold **Alt** while modifying a group of selected entities. This modifies the entities in the local space (the manipulator influence is _individual_ rather than the default _group_). You can iterate and modify your entities and view the changes in the viewport.
 
-   In the following example, you can press and hold **Alt** during translation. This moves each entity in their own local space.
+   In the following example, you can press and hold **Alt** during translation. This moves each entity in their own local space (_individual_ manipulator influence).
 
    ![Modify each entity in their own local space during translation in O3DE.](/images/user-guide/viewportinteractionmodel/viewport-selection-model-10.gif)
 
@@ -62,8 +60,8 @@ In the following example, three entities are selected. Because there is no commo
 
    ![Modify child entities from different parents in O3DE.](/images/user-guide/viewportinteractionmodel/viewport-selection-model-11.gif)
 
-1. Press and release **Alt** to dynamically change the reference space.
+1. Press and release **Alt** to dynamically change the manipulator influence.
 
-   In the following example, the manipulator changes the scale for the selected entities, switching from world to local space.
+   In the following example, the manipulator changes the scale for the selected entities, switching from group influence to individual influence.
 
-   ![Switch from world to local space while modifying entities in O3DE.](/images/user-guide/viewportinteractionmodel/viewport-selection-model-12.gif)
+   ![Switch group influence to individual influence while modifying entities in O3DE.](/images/user-guide/viewportinteractionmodel/viewport-selection-model-12.gif)

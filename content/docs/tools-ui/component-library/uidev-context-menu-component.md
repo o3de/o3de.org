@@ -5,13 +5,11 @@ description: Use the O3DE UI context menu component to display a popup menu with
 toc: true
 ---
 
-{{< preview-migrated >}}
-
 A context menu (also called contextual or pop-up menu) appears upon user interaction, such as a right-click mouse operation. Use a context menu to offer users a limited set of choices that are related to the current state, or context, of the component to which the menu belongs. Typically, the available choices are actions related to the selected object.
 
-![\[component context menu style\]](/images/tools-ui/component-context-menu-style.png)
+![component context menu style](/images/tools-ui/component-context-menu-style.png)
 
-## Usage guidelines<a name="context-menu-usage"></a>
+## Usage guidelines
 
 Follow these guidelines as you design your UI with context menus:
 
@@ -28,15 +26,15 @@ Follow these guidelines as you design your UI with context menus:
 Avoid these design choices when using context menus:
 + Don't set a default item in a context menu. If a user opens the menu and closes it without selecting anything, no action should occur.
 
-## Basic context menu<a name="context-menu-basic"></a>
+## Basic context menu
 
-![\[component context menu basic\]](/images/tools-ui/component-context-menu-basic.png)
+![component context menu basic](/images/tools-ui/component-context-menu-basic.png)
 
 Context menus are based on the `QMenu` Qt widget. You can create one in Qt Designer or in your code. You can also modify them in code at runtime.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <QMenu>
 
 // Create the menu.
@@ -71,7 +69,7 @@ auto disabledAction = menu->addAction(QStringLiteral("Disabled"));
 disabledAction->setEnabled(false);
 ```
 
-## C++ API reference<a name="context-menu-api-ref"></a>
+## C++ API reference
 
 For details on the **menu** API used for styling of context menus, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::Menu](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_menu.html)

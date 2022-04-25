@@ -4,8 +4,6 @@ description: ' Use custom state machines to control motions in the Animation Edi
 title: Customizing State Machine Routing with Sparse Motion Sets
 ---
 
-{{< preview-migrated >}}
-
 You might run into a case where you have different characters that don't have the exact same motions as the character for which you created the animation graph. Instead of duplicating large parts or creating new animation graphs for different characters, you can share the same animation graph for all your characters.
 
 You can allow or deny transitions and routes to motion states in a state machine, based on the existence of the given motion entry.
@@ -25,7 +23,7 @@ A *sparse motion set* is when the motion entries do not have a motion file assig
 
 When you choose an unassigned motion entry on a motion state in a state machine, the motion shows a red border around the node. If the motion state is activated, the character goes to a bind pose. In the following example, the character's animation graph does not transition from idle to jump because the **Jump** node is using a sparse motion set; no motion file is assigned. The character remains in the **Idle** node.
 
-![\[You can specify an unassigned motion entry to a sparse motion set.\]](/images/user-guide/actor-animation/animation-editor-sparse-motion-sets.png)
+![You can specify an unassigned motion entry to a sparse motion set.](/images/user-guide/actor-animation/animation-editor-sparse-motion-sets.png)
 
 ## Hierarchical Motion Sets and Overwriting Motion Entries 
 
@@ -77,7 +75,9 @@ You can configure the state machine to avoid motion states that are unassigned. 
 1. For **Motion**, select the **Jump** state.
 
 1. For **Test Function**, select **Is Motion Assigned?**.
-![\[Add motion conditions so that some motion states are unassigned.\]](/images/user-guide/actor-animation/animation-editor-motion-condition.png)
+
+![Add motion conditions so that some motion states are unassigned.](/images/user-guide/actor-animation/animation-editor-motion-condition.png)
 
    Because the **Zombie** motion set does not have a motion file assigned for `Jump`, the character can't transition from the idle to jump state. The condition's traffic light appears red and blocks the transition. This lets you control whether a character is allowed to go to specific motion state or not.
-![\[Customize state machines based on motion sets.\]](/images/user-guide/actor-animation/animation-editor-sparse-motion-sets-02.png)
+
+   ![Customize state machines based on motion sets.](/images/user-guide/actor-animation/animation-editor-sparse-motion-sets-02.png)

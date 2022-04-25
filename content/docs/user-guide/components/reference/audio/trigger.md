@@ -1,5 +1,6 @@
 ---
-title: Audio Trigger
+linkTitle: Audio Trigger
+title: Audio Trigger Component
 description: Use the Audio Trigger component to set up play and stop triggers in your game in O3DE.
 toc: true
 ---
@@ -30,7 +31,7 @@ Select this option to run upon component activation the audio **'play'** trigger
 
 Use the following request functions with the EBus interface to communicate with other components of your game.
 
-For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus).
+For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus).
 
 ### Play
 
@@ -114,7 +115,7 @@ Yes
 
 Use the following response functions with the EBus interface to communicate with other components of your game.
 
-For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
+For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
 
 ### OnTriggerFinished
 

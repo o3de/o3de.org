@@ -4,8 +4,6 @@ title: Matching the Transform
 weight: 400
 ---
 
-{{< preview-migrated >}}
-
 Instead of manually copying values from one entity's position to another, you can use the ditto feature to share an entity's transform data from one entity to another. This feature enables you to duplicate the same transform data for your entities. For example, to make your child entities face the same direction, you can select the entities and use the ditto feature to apply the change to the entities at once.
 
 **To match a transform using the ditto feature**
@@ -34,9 +32,9 @@ You can use the ditto feature for a group of entities. This makes it easier for 
 
 ## Ditto a Group Selection to Local Space 
 
-You can ditto a group of entities to local space so that you can modify entities in local space in relation to another entity.
+You can ditto a group of entities using individual influence (**Alt**) so that you can modify entities in their own local space in relation to another entity.
 
-**To ditto a group selection to local space**
+**To ditto a group selection to individual influence**
 
 1. In the viewport, select a group of entities.
 

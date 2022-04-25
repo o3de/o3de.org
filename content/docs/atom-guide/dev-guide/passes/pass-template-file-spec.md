@@ -6,8 +6,6 @@ toc: true
 weight: 1100
 ---
 
-{{< preview-new >}}
-
 This section goes over the elements of a PassTemplate (`*.pass`) file. Note that each element has an equivalent in the C++ [PassTemplate API](/docs/api/gems/atom/class_a_z_1_1_r_p_i_1_1_pass_template.html).
 
 At the top of the `.pass` file is the JSON serialization header. It contains the elements `Type`, `Version`, `ClassName` and `ClassData`. `ClassName` is set to "PassAsset", meaning that the serialized class is a [`PassAsset`](/docs/api/gems/atom/class_a_z_1_1_r_p_i_1_1_pass_asset.html), and `ClassData` contains the PassTemplate itself. 

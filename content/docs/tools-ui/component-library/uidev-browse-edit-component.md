@@ -5,66 +5,71 @@ description: Use the O3DE UI browse edit component to enable users to choose one
 toc: true
 ---
 
-{{< preview-migrated >}}
-
 The **browse edit** component is one of several types of input boxes offered by the Qt and O3DE UI libraries. Use the browse edit component to enable users to choose one or more values from a selection window. Typical uses include selecting a file from a directory, or one or more items from a list - for example: choosing motions from a collection of animation assets. The selection window is opened using either a button along the right edge, or a double-click in the input box. Chosen values can be cleared using the clear button, if this button has been enabled.
 
-**Note**
-Use a dropdown [combo box](uidev-combobox-component.md) instead if there is a predefined list of items to select, and a user only needs to select one value from the list.
+{{< note >}}
+Use a dropdown [combo box](/docs/tools-ui/component-library/uidev-combobox-component) instead if there is a predefined list of items to select, and a user only needs to select one value from the list.
+{{< /note >}}
 
-## Anatomy of the browse edit widget<a name="browse-edit-anatomy"></a>
+## Anatomy of the browse edit widget
 
- **Browse edit** widgets have several customization options. Standard features including the following elements:
+**Browse edit** widgets have several customization options. Standard features including the following elements:
 
-![\[component browse edit anatomy\]](/images/tools-ui/component-browse-edit-anatomy.png)
+![component browse edit anatomy](/images/tools-ui/component-browse-edit-anatomy.png)
 
 1.  **Label**
 
-   While not technically part of the widget, you should give input boxes a label in the UI layout.
+    While not technically part of the widget, you should give input boxes a label in the UI layout.
 
 1.  **Placeholder text**
 
-   (Optional) Hint text that you set using `setPlaceholderText()` appears here when the widget text is empty.
+    (Optional) Hint text that you set using `setPlaceholderText()` appears here when the widget text is empty.
 
 1.  **Input box**
 
-   Text that you set using `setText()` appears here. Users can double-click here to open the selection window that you have connected to the `BrowseEdit::attachedButtonTriggered` signal. Single click actions do nothing here, unless the read-only attribute has not been set to `true`.
-**Note**
-Generally when using the **browse edit** component, you set the input box to be read only. If you want to allow users to edit the value directly from the input box, use the [line edit](uidev-line-edit-component.md) component instead, with a detached button next to it.
+    Text that you set using `setText()` appears here. Users can double-click here to open the selection window that you have connected to the `BrowseEdit::attachedButtonTriggered` signal. Single click actions do nothing here, unless the read-only attribute has not been set to `true`.
+
+    {{< note >}}
+Generally when using the **browse edit** component, you set the input box to be read only. If you want to allow users to edit the value directly from the input box, use the [line edit](/docs/tools-ui/component-library/uidev-line-edit-component) component instead, with a detached button next to it.
+{{< /note >}}
 
 1.  **Attached button**
 
-   (Optional) The **browse edit** input box has an attached button. The default button uses a folder icon, but you can specify a different icon. To specify what happens when users press the button, connect to the `BrowseEdit::attachedButtonTriggered` signal.
-**Note**
+    (Optional) The **browse edit** input box has an attached button. The default button uses a folder icon, but you can specify a different icon. To specify what happens when users press the button, connect to the `BrowseEdit::attachedButtonTriggered` signal.
+    
+    {{< note >}}
 When using a custom icon not provided by O3DE, the icon should be a multiple of 16 x 16 and should only be in SVG format.
+{{< /note >}}
 
 1.  **Tooltip**
 
-   (Optional) If you set tooltip text for the widget, it will appear near where the user hovers.
-![\[component browse edit anatomy clear\]](/images/tools-ui/component-browse-edit-anatomy-clear.png)
+    (Optional) If you set tooltip text for the widget, it will appear near where the user hovers.
+
+    ![component browse edit anatomy clear](/images/tools-ui/component-browse-edit-anatomy-clear.png)
 
 1.  **Clear button**
 
-   (Optional) If you enable the clear button for the widget, it will appear when the input box is not empty. When users choose the clear button, the input box returns to an empty value.
-![\[component browse edit anatomy error state\]](/images/tools-ui/component-browse-edit-anatomy-error-state.png)
+    (Optional) If you enable the clear button for the widget, it will appear when the input box is not empty. When users choose the clear button, the input box returns to an empty value.
+
+    ![component browse edit anatomy error state](/images/tools-ui/component-browse-edit-anatomy-error-state.png)
 
 1.  **Error state indicator**
 
-   (Optional) If you set a validator for the input box, and validation fails, an error state indicator icon appears at the end of the input box, before the clear button.
+    (Optional) If you set a validator for the input box, and validation fails, an error state indicator icon appears at the end of the input box, before the clear button.
 
 1.  **Error tooltip**
 
-   (Optional) When an error state exists, if an error tooltip has been set for the widget, it will appear near where the user hovers. This tooltip appears in place of the normal tooltip text while an error state exists. If you set a validator for the input box, it is highly recommended that you also set an error tooltip.
+    (Optional) When an error state exists, if an error tooltip has been set for the widget, it will appear near where the user hovers. This tooltip appears in place of the normal tooltip text while an error state exists. If you set a validator for the input box, it is highly recommended that you also set an error tooltip.
 
-## Basic browse edit<a name="browse-edit-basic"></a>
+## Basic browse edit
 
-![\[component browse edit basic\]](/images/tools-ui/component-browse-edit-basic.png)
+![component browse edit basic](/images/tools-ui/component-browse-edit-basic.png)
 
 A simple example of this component includes the browse edit widget and an attached button handler. In this example, we enable the user to pick a file from the file browser, and have chosen to enable the clear button.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <AzQtComponents/Components/Widgets/BrowseEdit.h>
 #include <QFileDialog>
 
@@ -90,18 +95,19 @@ connect(browseEdit, &AzQtComponents::BrowseEdit::attachedButtonTriggered, this, 
 // Then add browseEdit to a UI layout as needed.
 ```
 
-## Browse edit with custom icon and placeholder text<a name="browse-edit-icon-and-placeholder"></a>
+## Browse edit with custom icon and placeholder text
 
-![\[component browse edit icon and placeholder\]](/images/tools-ui/component-browse-edit-icon-and-placeholder.png)
+![component browse edit icon and placeholder](/images/tools-ui/component-browse-edit-icon-and-placeholder.png)
 
 The following example shows how to replace the default button icon with your own, and how to add placeholder text that appears when the value is empty.
 
-**Note**
+{{< note >}}
 When using a custom icon not provided by O3DE, the icon should be a multiple of 16 x 16 and should only be in SVG format.
+{{< /note >}}
 
- **Example**
+### Example
 
-```
+```cpp
 #include <AzQtComponents/Components/Widgets/BrowseEdit.h>
 #include <QInputDialog>
 
@@ -125,17 +131,17 @@ connect(browseEdit, &AzQtComponents::BrowseEdit::attachedButtonTriggered, this, 
 });
 ```
 
-## Browse edit with tooltips and validator<a name="browse-edit-tooltips-and-validator"></a>
+## Browse edit with tooltips and validator
 
-![\[component browse edit error state\]](/images/tools-ui/component-browse-edit-error-state.png)
+![component browse edit error state](/images/tools-ui/component-browse-edit-error-state.png)
 
 In the following example, both a standard tooltip and an error tooltip have been defined. The standard tooltip appears when a mouse hovers over the widget. The error tooltip appears when a mouse hovers over the widget while an error state exists.
 
 Error states occur when a validator has been set and its validation has failed.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <AzQtComponents/Components/Widgets/BrowseEdit.h>
 #include <QInputDialog>
 #include <QRegExpValidator>
@@ -171,28 +177,28 @@ connect(browseEdit, &AzQtComponents::BrowseEdit::attachedButtonTriggered, this, 
 });
 ```
 
-## Disabled browse edit<a name="browse-edit-disabled"></a>
+## Disabled browse edit
 
-![\[component browse edit disabled\]](/images/tools-ui/component-browse-edit-disabled.png)
+![component browse edit disabled](/images/tools-ui/component-browse-edit-disabled.png)
 
 In the following example, the widget and its features have been disabled in code.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <AzQtComponents/Components/Widgets/BrowseEdit.h>
 
 // Disable the widget.
 browseEdit->setEnabled(false);
 ```
 
-## C++ API reference<a name="browse-edit-api-ref"></a>
+## C++ API reference
 
 For details on the **browse edit** API, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::BrowseEdit](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_browse_edit.html)
 
-## Related links<a name="browse-edit-related-links"></a>
+## Related links
 
 For components related to the **browse edit** component, see the following topics:
-+  [Line edit](uidev-line-edit-component.md)
-+  [Number edit spinbox](uidev-spinbox-component.md)
++  [Line edit](./uidev-line-edit-component)
++  [Spinbox](./uidev-spinbox-component)

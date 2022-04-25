@@ -4,12 +4,11 @@ title: Using Pivot Mode
 weight: 500
 ---
 
-{{< preview-migrated >}}
-
 You can use pivot mode to use the default pivot or the entity's center as the manipulator point of reference. This feature is useful if you want to modify multiple entities using a central point of reference.
 
-**Note**
+{{< note >}}
 Currently, this is a global toggle and doesn't support mixed use cases, such as using the center of an entity to snap it to the pivot of another entity.
+{{< /note >}}
 
 **To use pivot mode**
 

@@ -4,8 +4,6 @@ description: ' Use the Screen Fader node to fade the screen in and out in a Open
 title: Screen Fader Node
 ---
 
-{{< preview-migrated >}}
-
 Use the **Screen Fader** node to fade the screen in and out in a scene.
 
 **To add a Screen Fader node in the Track View**

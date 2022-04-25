@@ -5,16 +5,14 @@ weight: 350
 toc: true
 ---
 
-{{< preview-new >}}
-
 The resource mapping tool helps manage and configure your resource mappings files.
 
 ## Prerequisites
 
 Resource mapping tool uses boto3 to interact with backend AWS services. Before using the tool you will need to do the following:
 
-1. Set up your AWS credentials. For help, see [Configuring AWS Credentials](./configuring-credentials.md).
-1. Set AWS Core [Project Settings](./getting-started.md#project-settings) to configure the AWS profile name (if using profiles).
+1. Set up your AWS credentials. For help, see [Configuring AWS Credentials](./configuring-credentials/).
+1. Set AWS Core [Project Settings](./getting-started/#project-settings) to configure the AWS profile name (if using profiles).
 
 ## Launching the tool from the Editor
 
@@ -84,6 +82,13 @@ You can add or import resources individually, or import them from an AWS CloudFo
 
 You have two options for which Python runtime to use - your own, or the one included with O3DE.
 
+### Tool Arguments
+* `--binaries-path` **[Optional]** Path to QT Binaries necessary for PySide, required if launching tool with engine python environment.
+* `--config-path`   **[Optional]** Path to resource mapping config directory, if not provided tool will use current directory.
+* `--debug`         **[Optional]** Execute on debug mode to enable DEBUG logging level.
+* `--log-path`      **[Optional]** Path to resource mapping tool logging directory, if not provided tool will store logging under tool source code directory.
+* `--profile`       **[Optional]** Named AWS profile to use for querying AWS resources, if not provided tool will use `default` aws profile.
+
 ### Option 1: Set up your own Python virtual environment
 
 This project is set up like a standard Python project. The initialization process also creates a `virtualenv` virtual environment within this project, stored under the `.venv` directory. To create the `virtualenv`, you must have a `python3` executable (or `python` for Windows) in your path with access to the `venv` package. If for any reason the automatic creation of the `virtualenv` fails, you can create the `virtualenv` manually.
@@ -132,7 +137,7 @@ python resource_mapping_tool.py
 
 ### Option 2: Use the Python distribution from O3DE
 
-This option requires a build of your project and the O3DE Editor. Refer to the instructions in `README.md` located in `<ENGINE_ROOT>\Gems\AWSCore\Code\Tools\ResourceMappingTool` for details.
+This option requires a build of your project and the O3DE Editor. Refer to the instructions in `README/` located in `<ENGINE_ROOT>\Gems\AWSCore\Code\Tools\ResourceMappingTool` for details.
 
 Open a command prompt and change the directory to the engine root.
 
@@ -154,4 +159,15 @@ python\python.cmd Gems\AWSCore\Code\Tools\ResourceMappingTool\resource_mapping_t
 
 ## Troubleshooting
 
-For help troubleshooting, check the resource mapping tool logs that are generated in `<ENGINE_ROOT>\Gems\AWSCore\Code\Tools\ResourceMappingTool\resource_mapping_tool.log`.
+### Check the logs
+Check the resource mapping tool logs `resource_mapping_tool.log` that are generated in `--log-path` you provided while launching tool. If `--log-path` is not provided, log file is generated in tool source code directory.
+
+If launching tool from Editor, log file is generated in `<project-directory>/user/logs/resource_mapping_tool.log`
+
+### Unable to call a resource
+Check the [resource mapping file](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-files/) is configured correctly. Ensure the lookup name is defined as expected and it maps to the expected attributes. 
+
+Errors of the form ```Cannot determine region from the url``` in the logs indicate the wrong region or account has been set for the resource.
+* Double check that the resource's mapping entry has the correct region and account information, if overriding the global region and account attributes.
+* Double check that the resource's mapping entry has the correct resource type and name.
+* Ensure the mapping file sets the required global attributes for region and version. Ensure they are set to the expected values.

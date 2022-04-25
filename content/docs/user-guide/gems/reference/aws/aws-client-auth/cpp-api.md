@@ -6,9 +6,7 @@ toc: true
 weight: 400
 ---
 
-{{< preview-new >}}
-
-The AWS Client Auth Gem provides a C++ API for making client authorization and user management requests and handling notifications using the O3DE EBus. For more information about using the EBus system, refer to the [EBus](/docs/user-guide/engine/ebus) documentation.
+The AWS Client Auth Gem provides a C++ API for making client authorization and user management requests and handling notifications using the O3DE EBus. For more information about using the EBus system, refer to the [EBus](/docs/user-guide/programming/ebus) documentation.
 
 ## C++ API Reference
 

@@ -1,10 +1,11 @@
 ---
+linkTitle: UI Canvas Proxy Ref
 description: ' Use the UI Canvas Proxy Ref component in Open 3D Engine to place a UI canvas
   on a 3D mesh that a player can interact with. '
-title: UI Canvas Proxy Ref
+title: UI Canvas Proxy Ref Component
 ---
 
-{{< preview-migrated >}}
+
 
 With the UI Canvas Proxy Ref component, you can associate a component entity in a level with another component entity that is managing a UI canvas. Use this component in conjunction with the [**UI Canvas on Mesh**](/docs/user-guide/components/reference/ui/canvas-on-mesh/) component if you want to place a UI canvas on a 3D mesh that a player can interact with in several places in the 3D world.
 
@@ -14,7 +15,7 @@ To see an example of using the **UI Canvas Proxy Ref** component, open the **UiI
 
 The following picture shows three entities that share the same loaded canvas. The curved plane entity has a **UI Canvas Asset Ref** component and the egg and the sphere both have **UI Canvas Proxy Ref** components:
 
-![\[Image NOT FOUND\]](/images/user-guide/component/ui_canvas/component-ui-canvas-proxy-ref-screenshot.png)
+![Three entities with shared canvas](/images/user-guide/component/ui_canvas/component-ui-canvas-proxy-ref-screenshot.png)
 
 ## UI Canvas Proxy Ref Component Properties 
 

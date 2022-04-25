@@ -1,16 +1,17 @@
 ---
+linkTitle: Attachment
 description: ' Use the Attachment component to attach an entity''s bone to a bone
   on the skeleton of another entity in Open 3D Engine. '
-title: Attachment
+title: Attachment Component
 ---
 
-{{< preview-migrated >}}
+
 
 The **Attachment** component lets an entity attach to a bone on the skeleton of another entity.
 
 ## Attachment Component Properties 
 
-![\[Attachment component properties.\]](/images/user-guide/component/attachment-component-properties.png)
+![Attachment component properties.](/images/user-guide/component/attachment-component-properties.png)
 
 The **Attachment** component has the following properties.
 
@@ -31,7 +32,7 @@ The **Attachment** component has the following properties.
 
 Use the following request functions with the event bus (EBus) interface to communicate with other components of your game.
 
-For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
+For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
 
 
 ****
@@ -46,7 +47,7 @@ For more information, see [Working with the Event Bus (EBus) system](/docs/user-
 
 Use the following notification functions with the EBus interface to communicate with other components of your game.
 
-For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
+For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
 
 
 ****

@@ -7,4 +7,3 @@ weight: 300
 
 {{< placeholder >}}
 
-This topic is about  how to import textures with the Atom Renderer. 

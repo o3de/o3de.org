@@ -1,7 +1,6 @@
 {{ $title := site.Title }}
 {{ $desc  := site.Params.description | markdownify }}
-{{ $source := site.Params.sourceRepo }}
-<div class="scalable home-hero d-flex align-items-center">
+<div class="scalable home-hero d-flex flex-column align-items-center justify-content-around">
   <div class="container hero-inner">
     <div class="row">
       <div class="col col-12 col-md-7 pb-4 pt-4">
@@ -19,9 +18,10 @@
           {{ end }}
 
           <p class="buttons">
-            <a href="/download" class="mt-4 btn btn-lg text-white download-cta">Fork O3DE from GitHub</a>
+            <a href="/download" class="mt-4 btn btn-lg text-white download-cta">Download O3DE</a>
           </p>
         </div>
       </div>
     </div>
+    <p class="home-hero-copyright">COPYRIGHT &copy APOCALYPSE STUDIOS INC. USED BY O3DE WITH PERMISSION</p>
 </div>

@@ -6,15 +6,17 @@ weight: 400
 toc: true
 ---
 
-This guide will help you identify and resolve some common issues that you might encounter when setting up Open 3D Engine (O3DE) on your computer. Be aware that you might come across situations unique to your system or project that aren't addressed here. This reference is only for the most frequent setup issues that aren't affected by a known bug, or can't easily be worked around. If you don't find your problem covered here, try searching [our forums](https://github.com/o3de/o3de/discussions) or asking in the [O3DE discord](https://discord.gg/xNb2q4SJKJ).
+This guide will help you identify and resolve some common issues that you might encounter when setting up **Open 3D Engine (O3DE)** on your computer. Be aware that you might come across situations unique to your system or project that aren't addressed here. This reference is only for the most frequent setup issues that aren't affected by a known bug, or can't easily be worked around. If you don't find your problem covered here, try searching [our forums](https://github.com/o3de/o3de/discussions) or asking in the [O3DE Discord](https://{{< links/o3de-discord >}}).
 
 If you believe your setup problem is due to a bug in O3DE, check [existing bug reports](https://github.com/o3de/o3de/issues) and [file an issue](https://github.com/o3de/o3de/issues/new/choose) if you can!
+
+Looking for error logs or memory dumps? Refer to [Open 3D Engine Log Files](/docs/user-guide/appendix/log-files) for locations.
 
 ## CMake not found on the PATH
 
 **Issue:** Running a tool from the command line in the O3DE engine directory (such as `get_python.bat`) reports that CMake was not found on the PATH and LY_CMAKE_PATH is not defined.
 
-**Remedy:** Install CMake, if it isn't installed. If it is already installed, the path to the CMake binaries might not be defined in your operating system. In both cases, refer to the software prerequisites section of the [O3DE System Requirements](/docs/welcome-guide/setup/requirements/#software-prerequisites) for instructions on how to install and configure CMake.
+**Remedy:** Install CMake, if not installed. If it is already installed, the path to the CMake binaries might not be defined in your operating system. Refer to the [CMake](../requirements/#cmake) section of the O3DE System Requirements topic for instructions on how to install and configure CMake.
 
 After installing CMake or defining its path on your computer, open a new command line window before attempting to run the tool again.
 
@@ -80,12 +82,13 @@ python\get_python.bat
 
 ## More troubleshooting help
 
-There are additional troubleshooting pages in other sections of the O3DE documentation:
+For more troubleshooting help, refer to these other O3DE troubleshooting pages:
 
-* [Open 3D Engine Build Troubleshooting](/docs/user-guide/build/troubleshooting)
+* [Troubleshooting O3DE Project Configuration](/docs/user-guide/project-config/troubleshooting)
+* [Build Troubleshooting in Open 3D Engine](/docs/user-guide/build/troubleshooting)
 
 As a reminder, you can also try searching for your issue or asking for help in these locations:
 
 * [O3DE forums](https://github.com/o3de/o3de/discussions)
-* [O3DE discord](https://discord.gg/xNb2q4SJKJ)
+* [O3DE Discord](https://{{< links/o3de-discord >}})
 * [Existing bug reports](https://github.com/o3de/o3de/issues)

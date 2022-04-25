@@ -4,8 +4,6 @@ description: ' Create sequences for animations using the <guilabel>Track View</g
 title: Track View Editor Toolbars
 ---
 
-{{< preview-migrated >}}
-
 See the following main sections of the Track View:
 
 1. **Main toolbar** - Tools to create and modify sequences and the tracks in a sequence. The main toolbar includes the **Sequence/Node**, **View**, **Play**, **Keys**, and **Tracks** toolbars. To add or remove toolbars, right-click the main toolbar and select your preferred options.
@@ -18,9 +16,10 @@ See the following main sections of the Track View:
 
 1. ****Curve Editor**** - Pane for controlling keys and their interpolation for all sequence nodes. The ****Curve Editor**** provides more control over easing in or out of curves, setting some curves to be linear, and so on, depending on your animation requirements.
 
-   For more information, see [Using Animation Curves](/docs/user-guide/visualization/cinematics/track-view/editor-animation-curves.md).
+   For more information, see [Using Animation Curves](/docs/user-guide/visualization/cinematics/track-view/editor-animation-curves/).
 
-**Note**
+    {{< note >}}
 You can pause over buttons in the Track View to view their descriptions.
+{{< /note >}}
 
-![\[Track View toolbar.\]](/images/user-guide/cinematics/cinematics-trackview-editor.png)
+![Track View toolbar.](/images/user-guide/cinematics/cinematics-trackview-editor.png)

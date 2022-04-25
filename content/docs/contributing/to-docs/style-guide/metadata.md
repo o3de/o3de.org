@@ -1,12 +1,12 @@
 ---
-title: Metadata Used in Open 3D Engine Documentation
+title: Metadata Used in O3DE Documentation
 description: A reference for the metadata fields used in Open 3D Engine (O3DE) documentation, including those required in the header.
 linktitle: Metadata
 weight: 400
 toc: true
 ---
 
-Each Markdown file in Open 3D Engine (O3DE) documentation must begin with Hugo front matter (metadata) that provides information about the content. For all the available variables, refer to [Front Matter](https://gohugo.io/content-management/front-matter/) in the Hugo Content Management Guide. In O3DE docs, there are five commonly used front matter variables, as follows:
+Each Markdown file in **Open 3D Engine (O3DE)** documentation must begin with Hugo front matter (metadata) that provides information about the content. For all the available variables, refer to [Front Matter](https://gohugo.io/content-management/front-matter/) in the Hugo Content Management Guide. In O3DE docs, there are five commonly used front matter variables, as follows:
 
 ```yaml
 ---

@@ -1,35 +1,38 @@
 ---
 title: Component Reference
-linktitle: Component Reference
-description: ' Open 3D Engine (O3DE) component reference index. '
+linkTitle: Component Reference
+description: Open 3D Engine (O3DE) component reference index.
 weight: 100
 toc: true
 ---
 
-{{< preview-new >}}
+Components add functionality to entities in **Open 3D Engine (O3DE)**. An entity can contain any number or combination of components. Some components allow only one instance per entity, and some depend on other components to function.
 
-Components add functionality to entities. An entity can contain any number or combination of components. Some components allow only one instance per entity, and some depend on other components to function.
+Components are provided by Gems. To make a component available in **O3DE Editor**, you must add the Gem that provides the component. Though components might belong to the same type, they might not be provided by the same Gem. You can find out which Gem provides a component in the reference topic for the component.
 
-Components are provided by Gems. To make a component available in the O3DE Editor, you must add the Gem that provides it. If you configure the Gems available to your project, you must rebuild your project. Though components might belong to the same type, they might not be provided by the same Gem. Each component lists the Gem that provides it on its reference page.
+## Add a component to an entity
 
-## Adding components to an entity
-In the O3DE Editor, you can add components to an entity. To add a component:
-1. In the **Entity Outliner** panel, select an entity. This will show the entity's details in the **Entity Inspector** panel. 
-2. In the Entiy Inspector panel, select **Add Component** and choose a component to add to this entity. 
+To add a component to an entity in O3DE Editor:
+
+1. In **Entity Outliner** or **Perspective**, click an entity to select it. This will show the entity's details in **Entity Inspector**. 
+1. In Entity Inspector, choose **Add Component**.
+1. Select a component from the component list to add to the entity. 
 
 {{< note >}}
-If a component you are looking for does not appear in the **Add Component** list, you may need to enable the Gem that provides that component.
+If you can't find a component in the **Add Component** list, you may need to enable the Gem that provides the component and rebuild your project.
 {{< /note >}}
 
 ## Components
 The components below are grouped by type as they appear in the O3DE Editor.
 
+<!--
 ### AI
 | Component | Description | 
 | - | - |
 | [Navigation](/docs/user-guide/components/reference/ai/navigation/) | Provides basic path-finding and path-following services to an entity. |
 | [Navigation Area](/docs/user-guide/components/reference/ai/nav-area/) | Configures the area used for navigation and pathfinding. |
 | [Navigation Seed](/docs/user-guide/components/reference/ai/nav-seed/) | Determines the reachable navigation nodes along the path.  |
+-->
 
 
 ### Animation
@@ -46,29 +49,28 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| Bloom | Simulates real-world light bleeding, or glow. |
-| Decal (Atom) | Projects a texture material in a single direction onto mesh surfaces. |
-| Deferred Fog | Creates a screen space fog effect that can ben used as scene fog or layered / ground fog with an optional cloud noise turbulence. |
-| Depth of Field | Simulates the lens effects of real world cameras that focus on a specific area. |
-| Diffuse Probe Grid | Creates a volume of light probes that provides diffuse global illumination in a specified area. |
-| Directional Light | Casts light from an infinitely distant point in a single direction, similar to sunlight, and supports shadow casting. |
-| Display Mapper | Configures tone mapping and color grading for the scene. |
-| Entity Reference | Allows you to provide an entity with references to other entities. |
-| Exposure Control | Adjusts the amount of light the camera exposes in the scene. |
-| Global Skylight (IBL) | Creates an image-based global illumination effect that calculates lighting for a scene using an HDR skybox image. |
-| Grid | Adds a customizeable grid to the scene. |
-| HDRi Skybox | Creates a skybox in your scene using an HDR image. |
+| [Bloom](/docs/user-guide/components/reference/atom/bloom/) | Simulates real-world light bleeding, or glow. |
+| [Decal (Atom)](/docs/user-guide/components/reference/atom/decal/) | Projects a texture material in a single direction onto mesh surfaces. |
+| [Deferred Fog](/docs/user-guide/components/reference/atom/deferred-fog/) | Creates a screen space fog effect that can ben used as scene fog or layered / ground fog with an optional cloud noise turbulence. |
+| [Depth of Field](/docs/user-guide/components/reference/atom/depth-of-field/) | Simulates the lens effects of real world cameras that focus on a specific area. |
+| [Diffuse Global Illumination](/docs/user-guide/components/reference/atom/diffuse-gi/) | Controls the quality level of global illumination that **Diffuse Probe Grid** components provide.  | 
+| [Diffuse Probe Grid](/docs/user-guide/components/reference/atom/diffuse-probe-grid/) | Creates a volume of light probes that provide diffuse global illumination within the specified area. |
+| [Directional Light](/docs/user-guide/components/reference/atom/directional-light/) | Casts light from an infinitely distant point towards a single direction, similar to sunlight. |
+| [Display Mapper](/docs/user-guide/components/reference/atom/display-mapper/) | Configures tone mapping and color grading for the scene. |
+| [Entity Reference](/docs/user-guide/components/reference/atom/entity-reference/) | Allows you to provide an entity with references to other entities. |
+| [Exposure Control](/docs/user-guide/components/reference/atom/exposure-control/) | Adjusts the amount of light the camera exposes in the scene. |
+| [Global Skylight (IBL)](/docs/user-guide/components/reference/atom/global-skylight-ibl/) | Creates an image-based global illumination effect that calculates light for a scene using an HDR skybox image. |
+| [Grid](/docs/user-guide/components/reference/atom/grid/) | Adds a customizable grid to the scene. |
+| [HDRi Skybox](/docs/user-guide/components/reference/atom/hdri-skybox/) | Creates a skybox in your scene using an HDR image. |
 | [Light](/docs/user-guide/components/reference/atom/light) | Simulates soft studio light by creating various types of punctual and area lights. |
-| Look Modification | Configures a color grading look-up table (LUT). |
-| Material | Adds a material on the object's mesh. |
-| Mesh | Specifies a model to render. |
-| Occlusion Culling Plane | Creates an occluder that when put between the camera and a mesh, can block the mesh from being rendered. |
-| Physical Sky | Adjusts the physical environment of the scene, such as the sky, sun, and fog. |
-| PostFX Gradient Weight Modifier | Modifies the Post FX's weight based on another entity's gradient signal. |
-| PostFX Shape Weight Modifier | Controls how Post FX components, such as Depth of Field and Exposure Control, are applied in a scene.|
-| Radius Weight Modifier | Modifies the weight of a Post FX component based on the camera's distance to the center. |
-| Reflection Probe | Provides specular reflections for the environment around a probe, or a capture point. |
-| SSAO | Uses the screen space ambient occlusion technique to approximate indirect lighting in a scene. |
+| [Look Modification](/docs/user-guide/components/reference/atom/look-modification/) | Configures a color grading look-up table (LUT). |
+| [Material](/docs/user-guide/components/reference/atom/material/) | Adds a material on the object's mesh. |
+| [Mesh](/docs/user-guide/components/reference/atom/mesh/) | Specifies a model to render. |
+| [Occlusion Culling Plane](/docs/user-guide/components/reference/atom/occlusion-culling-plane/) | Creates an occluder that when put between the camera and a mesh, can block the mesh from being rendered. |
+| [Physical Sky](/docs/user-guide/components/reference/atom/physical-sky/) | Adjusts the physical environment of the scene, such as the sky, sun, and fog. |
+| [Post-processing Modifiers](/docs/user-guide/components/reference/atom/post-processing-modifiers/) | A collection of components that define layers, volumes, areas, and weights for post-processing effects (PostFX). |
+| [Reflection Probe](/docs/user-guide/components/reference/atom/reflection-probe/) | Creates specular reflections in the environment around a probe (capture point). |
+| [SSAO](/docs/user-guide/components/reference/atom/ssao/) | Approximates indirect lighting in a scene by using the screen space ambient occlusion technique. |
 
 ### Audio
 | Component | Description | 
@@ -91,11 +93,11 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Camera](/docs/user-guide/components/reference/camera/camera/) | Allows an entity to be used as a camera. |
 | [Camera Rig](/docs/user-guide/components/reference/camera/camera-rig/) | Manages the behaviors that drive a camera entity. |
 
-### Destruction
+<!--### Destruction
 | Component | Description | 
 | - | - |
 | [Blast Family](/docs/user-guide/components/reference/destruction/blast-family/) | Enables destruction simulation using the [NVIDIA Blast library](https://developer.nvidia.com/blast). |
-| [Blast Family Mesh Data](/docs/user-guide/components/reference/destruction/blast-family-mesh-data/) | Sets the mesh and material assets for NVIDIA Blast entities. |
+| [Blast Family Mesh Data](/docs/user-guide/components/reference/destruction/blast-family-mesh-data/) | Sets the mesh and material assets for NVIDIA Blast entities. | Hiding until blast tools are fixed, and blast docs are updated.-->
 
 ### Editor
 | Component | Description | 
@@ -106,11 +108,9 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| Fly Camera Input | Allows you to control the camera using mouse and key inputs. |
-| Look At | Forces an entity to always look at a given target. |
-| Random Timed Spawner) | Deprecated. |
+| [Fly Camera Input](./gameplay/fly-camera-input/) | Allows you to control the camera using mouse and key inputs. |
+| [Look At](./gameplay/look-at/) | Forces an entity to always look at a given target. |
 | [Simple State](/docs/user-guide/components/reference/gameplay/simple-state/) | Provides a simple state machine that allows you to activate and deactivate associated entities.|
-| Spawner | Deprecated. |
 | [Tag](./gameplay/tag/) | Allows you to apply one or more labels to an entity. |
 | [Input](./gameplay/input/) | Binds raw input to events in your game. |
 
@@ -118,36 +118,36 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| Dither Gradient Modifier | Applies ordered dithering to the input gradient. |
-| Gradient Mixer | Generates a new gradient by combining other gradients. |
-| Gradient Transform Modifier | Transforms the entity's coordinates into a space that is relative to a shape. You can then apply other transform and sampling modifications using this altered coordinate space. |
-| Invert Gradient Modifier | Inverts a gradient's values. |
-| Levels Gradient Modifier | Modifies an input gradient's signal using low/mid/high points and allows clamping of min/max output values. |
-| Posterize Gradient Modifier | Divides an input gradient's signal into a specified number of bands.|
-| Smooth-Step Gradient Modifier | Generates a gradient fall off, which creates a smoother input gradient. |
-| Threshold Gradient Modifier | Converts input gradient to be 0 if the value is below the threshold, and 1 if the value is above the threshold. |
+| [Dither Gradient Modifier](./gradient-modifiers/dither-gradient-modifier) | Applies ordered dithering to the input gradient. |
+| [Gradient Mixer](./gradient-modifiers/gradient-mixer) | Generates a new gradient by combining other gradients. |
+| [Gradient Transform Modifier](./gradient-modifiers/gradient-transform-modifier) | Creates a coordinate space for the gradient based on a **Shape** component. Modifiers for the input gradient are applied in this space. |
+| [Invert Gradient Modifier](./gradient-modifiers/invert-gradient-modifier) | Inverts a gradient's values. |
+| [Levels Gradient Modifier](./gradient-modifiers/levels-gradient-modifier) | Modifies an input gradient's signal using low/mid/high points and allows clamping of min/max output values. |
+| [Posterize Gradient Modifier](./gradient-modifiers/posterize-gradient-modifier) | Divides an input gradient's signal into a specified number of bands.|
+| [Smooth-Step Gradient Modifier](./gradient-modifiers/smooth-step-gradient-modifier) | Generates a gradient fall off that smooths the input gradient. |
+| [Threshold Gradient Modifier](./gradient-modifiers/threshold-gradient-modifier) | Applies a threshold value to an input gradient to generate an output gradient that has only two values. Input gradient values above the threshold are set to 1 and input values at or below the threshold are set to 0. |
 
 ### Gradients
 
 | Component | Description | 
 | - | - |
-| Altitude Gradient | Generates a gradient based on height within a range. |
-| Constant Gradient | Returns a specified value as a gradient when sampled. |
-| FastNoise Gradient | Generates gradient values using [FastNoise](https://github.com/Auburn/FastNoiseLite), a noise generation library with a collection of real-time noise algorithms. |
-| Image Gradient | Generates a gradient by sampling an image asset. |
-| Perlin Noise Gradient | Generates a gradient by sampling a perlin noise generator. |
-| Random Noise Gradient | Generates a gradient by sampling a random noise generator.|
-| Reference Gradient | References another gradient. |
-| Shape Falloff Gradient | Generates a gradient based on the distance from a shape. |
-| Slope Gradient | Generates a gradient based on the surface angle. |
-| Surface Mask Gradient | Generates a gradient based on the underlying surface types. |
+| [Altitude Gradient](./gradients/altitude-gradient) | Generates a gradient based on height within a range. |
+| [Constant Gradient](./gradients/constant-gradient) | Returns a specified value as a gradient when sampled. |
+| [FastNoise Gradient](./gradients/fastnoise-gradient) | Generates gradient values using [FastNoise](https://github.com/Auburn/FastNoiseLite), a noise generation library with a collection of real-time noise algorithms. |
+| [Image Gradient](./gradients/image-gradient) | Generates a gradient by sampling an image asset. |
+| [Perlin Noise Gradient](./gradients/perlin-noise-gradient) | Generates a gradient by sampling a perlin noise generator. |
+| [Random Noise Gradient](./gradients/random-noise-gradient) | Generates a gradient by sampling a random noise generator.|
+| [Reference Gradient](./gradients/reference-gradient) | References another gradient. |
+| [Shape Falloff Gradient](./gradients/shape-falloff-gradient) | Generates a gradient based on the distance from a shape. |
+| [Slope Gradient](./gradients/slope-gradient) | Generates a gradient based on the surface angle. |
+| [Surface Mask Gradient](./gradients/surface-mask-gradient) | Generates a gradient based on the underlying surface types. |
 
+<!-- 
 ### Networking
 
 | Component | Description | 
 | - | - |
-| [Anim Graph Net Sync](/docs/user-guide/components/reference/networking/animgraph-netsync/) | The **AnimGraph** component, which adds an animation graph and motion set to a character, does not automatically synchronize its parameters across the network. The **Anim Graph Net Sync** component provides an authoritative way of replicating these parameters. |
-| Network Binding |  |
+-->
 
 ### Non-uniform Scale
 
@@ -162,13 +162,14 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Cloth](/docs/user-guide/components/reference/physx/cloth/) | Simulates the behavior of cloth by treating the vertices of a mesh as cloth particles with physical properties. |
 | [PhysX Ball Joint](/docs/user-guide/components/reference/physx/ball-joint/) | Simulates a dynamic ball joint that constrains an entity to the joint with freedom to rotate around the y- and z-axes of the joint.|
 | [PhysX Character Controller](/docs/user-guide/components/reference/physx/character-controller/) | Implements basic character interactions with the physical world. |
-| PhysX Character Gameplay | Configures general character properties in the gameplay, such as the character's gravitational strength. |
+| [PhysX Character Gameplay](/docs/user-guide/components/reference/physx/character-gameplay/) | Configures general character properties in the gameplay, such as the character's gravitational strength. |
 | [PhysX Collider](./physx/collider/) | Allows you to specify primitive shapes or PhysX mesh assets to calculate collisions between entities. |
 | [PhysX Fixed Joint](/docs/user-guide/components/reference/physx/fixed-joint/) | Creates a dynamic fixed joint that constrains an entity to the joint with no degree of freedom in any axis. |
 | [PhysX Force Region](/docs/user-guide/components/reference/physx/force-region/) | Applies a physical force on objects that are within the specified region. |
+  [PhysX Heightfield Collider](/docs/user-guide/components/reference/physx/heightfield-collider/) | Creates a geometric collider based on the Axis-Aligned Box component. |
 | [PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/) | Creates a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.|
 | [PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/) | Simulates ragdoll physics by creating a hierarchy of rigid bodies connected by joints. |
-| [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/) | Defines the entity as a rigid object that is solid and can move and collide with other PhysX entities. |
+| [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) | Defines the entity as a rigid object that is solid and can move and collide with other PhysX entities. |
 | [PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/) | Creates a geometric collider based on the **Shape** component. |
 
 ### Scripting
@@ -189,6 +190,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Disk Shape](/docs/user-guide/components/reference/shape/disk-shape/) | Generates disk geometry for areas and triggers. |
 | [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/) | Generates n-sided prism geometry for volumes and triggers. |
 | [Quad Shape](/docs/user-guide/components/reference/shape/quad-shape/) | Generates quad-plane geometry for areas and triggers. |
+| [Shape Reference](/docs/user-guide/components/reference/shape/shape-reference) | Enables entities to reference and reuse Shape components. |
 | [Sphere Shape](/docs/user-guide/components/reference/shape/sphere-shape/) | Generates sphere geometry for volumes and triggers. |
 | [Spline](/docs/user-guide/components/reference/shape/spline/) | Generates lines and curves for paths. |
 | [Tube Shape](/docs/user-guide/components/reference/shape/tube-shape/) | Generates tube geometry for volumes and triggers. |
@@ -199,11 +201,24 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| Gradient Surface Tag Emitter | Enables a gradient to emit surface tags. |
-| Mesh Surface Tag Emitter | Enables a static mesh to emit surface tags. |
-| PhysX Collider Surface Tag Emitter | Enables a physics collider to emit surface tags. |
-| Shape Surface Tag Emitter | Enables a shape to emit surface tags. |
+| [Gradient Surface Tag Emitter](surface-data/gradient-surface-tag-emitter) | Enables a gradient to emit surface tags. |
+| [Mesh Surface Tag Emitter](surface-data/mesh-surface-tag-emitter) | Enables a static mesh to emit surface tags. |
+| [PhysX Collider Surface Tag Emitter](surface-data/physx-collider-surface-tag-emitter) | Enables a physics collider to emit surface tags. |
+| [Shape Surface Tag Emitter](surface-data/shape-surface-tag-emitter) | Enables a shape to emit surface tags. |
 
+### Terrain  
+
+| Component | Description | 
+| - | - |
+| [Terrain Physics Heightfield Collider](./terrain/terrain-physics-collider) | Provides terrain data to a physics collider in the form of a heightfield and surface to material mapping. |
+| [Terrain Layer Spawner](./terrain/layer_spawner) | Spawns a terrain region contained within configurable bounds, and allows prioritization of overlapping terrain layers. |
+| [Terrain Height Gradient List](./terrain/height_gradient_list) | Provides terrain height data from a list of gradients. |
+| [Terrain Surface Materials List](./terrain/surface-material-list) | Defines mappings between a surface type and a render material. |
+| [Terrain Surface Gradient List](./terrain/surface-gradient-list) | Defines mappings between a gradient and a surface type on a terrain layer. |
+| [Terrain Macro Material](./terrain/terrain-macro-material) | Provides a macro level method of defining the appearance of a region of terrain. |
+| [Terrain World](./terrain/world) | Allows the bounds of the Terrain World and the height query resolution to be set. |
+| [Terrain World Debugger](./terrain/world-debugger) | Provides a means to display a wireframe or bounds representation of the Terrain World. |
+| [Terrain World Renderer](./terrain/world-renderer) | Renders the terrain within the Terrain World bounds. |
 
 ### Test  
 
@@ -224,33 +239,32 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | Component | Description | 
 | - | - |
 | Landscape Canvas | Provides a node-based Editor for authoring Dynamic Vegetation.  |
-| Vegetation Asset List | Provides a set of vegetation descriptors. |
-| Vegetation Asset List Combiner | Provides a list of vegetation descriptor providers. |
-| Vegetation Asset Weight Selector | Selects vegetation assets based on their weight. |
-| Vegetation Layer Blender | Combines a collection of vegetation areas and applies them in a specified order. |
-| Vegetation Layer Blocker | Defines an area in which dynamic vegetation cannot be placed. |
-| Vegetation Layer Blocker (Mesh) | Prevents vegetation from being placed in the mesh. |
-| Vegetation Layer Debugger | Enables debug visualizers for vegetation layers. |
-| [Vegetation Layer Spawner](/docs/user-guide/components/reference/vegetation/layer-spawner/) | Creates dynamic vegetation in a specified area. |
-| Vegetation Reference Shape | Enables the entity to reference and reuse shape entities. |
+| [Vegetation Asset List](vegetation/vegetation-asset-list) | Provides a set of vegetation descriptors. |
+| [Vegetation Asset List Combiner](vegetation/vegetation-asset-list-combiner) | Provides a list of vegetation descriptor providers. |
+| [Vegetation Asset Weight Selector](vegetation/vegetation-asset-weight-selector) | Selects vegetation assets based on their weight. |
+| [Vegetation Layer Blender](vegetation/vegetation-layer-blender) | Combines a collection of vegetation areas and applies them in a specified order. |
+| [Vegetation Layer Blocker](vegetation/vegetation-layer-blocker) | Defines an area in which dynamic vegetation cannot be placed. |
+| [Vegetation Layer Blocker (Mesh)](vegetation/vegetation-layer-blocker-mesh) | Prevents vegetation from being placed in the mesh. |
+| [Vegetation Layer Debugger](vegetation/vegetation-layer-debugger) | Enables debug visualizers for vegetation layers. |
+| [Vegetation Layer Spawner](vegetation/layer-spawner) | Creates dynamic vegetation in a specified area. |
 
 ### Vegetation Filters  
 
 | Component | Description | 
 | - | - |
-| Vegetation Altitude Filter | Limits the placement of vegetation to be on surfaces within the specified height range. |
-| Vegetation Distance Between Filter | Defines the minimum distance required between vegetation instances. |
-| Vegetation Distribution Filter | Limits the placement of vegetation to be within the specified value ranges. |
-| Vegetation Shape Intersection Filter | Limits the placement of vegetation to be on surfaces that intersect the specified shape. |
-| Vegetation Slope Filter | Limits the placement of vegetation to be only on surfaces within the specified surface angles. |
-| Vegetation Surface Mask Depth Filter | Limits the placement of vegetation to be on surfaces within a specified depth between two surface tags. |
-| Vegetation Surface Mask Filter | Filters out vegetation based on surface mask-to-tag mappings. |
+| [Vegetation Altitude Filter](vegetation-filters/vegetation-altitude-filter) | Limits the placement of vegetation to surfaces within the specified height range. |
+| [Vegetation Distance Between Filter](vegetation-filters/vegetation-distance-between-filter) | Defines the minimum distance between vegetation instances. |
+| [Vegetation Distribution Filter](vegetation-filters/vegetation-distribution-filter) | Limits the placement of vegetation to a specified value range within a distribution defined by a gradient.  |
+| [Vegetation Shape Intersection Filter](vegetation-filters/vegetation-shape-intersection-filter) | Limits the placement of vegetation to surfaces that intersect the specified shape. |
+| [Vegetation Slope Filter](vegetation-filters/vegetation-slope-filter) | Limits the placement of vegetation to surfaces within the specified surface angle range. |
+| [Vegetation Surface Mask Depth Filter](vegetation-filters/vegetation-surface-mask-depth-filter) | Limits the placement of vegetation to surfaces within a specified depth range between two surface tags. |
+| [Vegetation Surface Mask Filter](vegetation-filters/vegetation-surface-mask-filter) | Filters out vegetation based on surface mask-to-tag mappings. |
 
 ### Vegetation Modifiers  
 
 | Component | Description | 
 | - | - |
-| Vegetation Position Modifier | Offsets the position of the vegetation. |
-| Vegetation Rotation Modifier | Offsets the rotation of the vegetation. |
-| Vegetation Scale Modifier | Offsets the scale of the vegetation. |
-| Vegetation Slope Alignment Modifier | Offsets the orientation of the vegetation relative to a surface angle. |
+| [Vegetation Position Modifier](vegetation-modifiers/vegetation-position-modifier) | Offsets the position of the vegetation. |
+| [Vegetation Rotation Modifier](vegetation-modifiers/vegetation-rotation-modifier) | Offsets the rotation of the vegetation. |
+| [Vegetation Scale Modifier](vegetation-modifiers/vegetation-scale-modifier) | Offsets the scale of the vegetation. |
+| [Vegetation Slope Alignment Modifier](vegetation-modifiers/vegetation-slope-alignment-modifier) | Offsets the orientation of the vegetation relative to a surface angle. |

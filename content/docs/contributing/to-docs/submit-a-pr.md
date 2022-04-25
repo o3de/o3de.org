@@ -6,9 +6,7 @@ weight: 450
 toc: true
 ---
 
-{{< preview-new >}}
-
-When you make an edit or create a new topic in the Open 3D Engine (O3DE) docs, you need to submit a pull request (PR) for review before the changes can be merged into `o3de.org:main`. The current list of active PRs is here [O3DE repository pull requests (PRs)](https://github.com/o3de/o3de.org/pulls). PRs allow peer contributors to review contributions for several potential issues, including the following:
+When you make an edit or create a new topic in the **Open 3D Engine (O3DE)** docs, you need to submit a pull request (PR) for review before the changes can be merged into `o3de.org:main`. The current list of active PRs is here [O3DE repository pull requests (PRs)](https://github.com/o3de/o3de.org/pulls). PRs allow peer contributors to review contributions for several potential issues, including the following:
 
 * Technical accuracy
 * Spelling
@@ -31,10 +29,9 @@ Before submitting a PR, ensure your contributions meet the guidelines below:
 Despite only having five steps, the PR process can take some time depending on the availability of reviewers and the length and technical depth of the submitted changes. You can help keep PRs moving by quickly responding to feedback and review requests. The PR process is summarized below.
 
 1. Commit your changes to a branch on your fork.
-2. Create a PR against `o3de.org:main` from your branch.
-3. Request reviewers for your PR.
-4. Respond to feedback from reviewers.
-5. When the PR receives two approvals, plus a technical review approval for highly technical topics, it can be merged.
+1. Create a PR against `o3de.org:main` from your branch.
+1. Respond to feedback from reviewers.
+1. When the PR receives two approvals, plus any additional required approval such as copyedit or technical review, it can be merged.
 
 {{< important >}}
 **Never** merge your own PRs. PRs require two approvals, and may require an additional approval from a technical reviewer. The last reviewer to approve the PR should merge it into `o3de.org:main`.
@@ -43,6 +40,10 @@ Despite only having five steps, the PR process can take some time depending on t
 ### Commit your changes
 
 The first step in the PR process is to commit your changes to a branch on your fork. You must add a DCO sign-off to all of your commits, otherwise your PRs will not be reviewed or merged. DCO stands for [*Developer Certificate of Origin (DCO)*](https://github.com/apps/dco). The DCO sign-off is your certification that your contribution is your own original work, or that you otherwise have the right to submit the work. DCO sign-off is easy to do, and just as easy to forget.
+
+{{< important >}}
+If you use the GitHub web UI to make your commit, you must add a `Signed-off-by:` line to your commit message or the DCO check will fail. For GitHub accounts created prior to July 18, 2017, use `username@users.noreply.github.com` as the email address. For accounts created after that date, use your GitHub-provided no-reply email address. The new no-reply email address is a seven-digit ID number and your username in the form of `ID+username@users.noreply.github.com` which can be found in the email tab of your GitHub account settings. For more information about setting your commit email address, refer to the [Setting your commit email address instructions](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-email-preferences/setting-your-commit-email-address).
+{{< /important >}}
 
 For an introductory tutorial on Git, refer to [A tutorial introduction to Git](https://git-scm.com/docs/gittutorial).
 
@@ -67,16 +68,6 @@ PRs are created in the GitHub web interface from your branch. Go to your fork on
 If you go to the main o3de.org repo on GitHub and refer to [O3DE repository pull requests (PRs)](https://github.com/o3de/o3de.org/pulls), your new PR appears at the top of the list.
 
 For more information on creating a pull request, refer to [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
-### Request reviewers
-
-PRs require two reviewer approvals to be merged into main. Highly technical topics require an additional review by an O3DE code contributor for technical accuracy. You should request at least two, but no more than five reviewers for your PRs. Keep in mind that this is a community project, and that interested contributors can add themselves as reviewers to any PR.
-
-"But who do I ask to review my PRs?" you are probably wondering. If you are new to the project, you might not know any other contributors. You can look through the PR list and try to find reviewers who seem responsive, but a better solution is to visit the O3DE Discord and ask for suggestions and volunteers for reviewers. It's a great way to meet new people and introduce yourself to other contributors.
-
-To add reviewers to your PR, find the section named **Reviewers** in the column to the right of your PR. Choose the **gear button** to open the list of potential reviewers, and search for the names of reviewers you'd like to add. Click the reviewer's name to select them and add them to your PR's reviewer list.
-
-For more information on requesting reviewers, refer to [Requesting a pull request review](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/requesting-a-pull-request-review).
 
 ### Respond to feedback
 

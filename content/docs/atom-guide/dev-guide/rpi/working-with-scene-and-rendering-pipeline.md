@@ -6,8 +6,6 @@ toc: false
 weight: 300
 ---
 
-{{< preview-new >}}
-
 The Atom RPI can handle complex rendering use cases (for example, applications with many viewports) by using scenes and render pipelines. A **scene** in RPI contains feature processors, which handle the data to be rendered. A **render pipeline** defines how the scene is rendered. As a starting point, you need at least one scene and one render pipeline to begin rendering data. Additional scenes and render pipelines can be added for more complex rendering. 
 
 Each scene is independent of other scenes. A scene can have one or many render pipelines. When a render pipeline is added to a scene, it defines one way to render the scene. Additional render pipelines can be added to define more ways to render the scene. 
@@ -46,7 +44,7 @@ RPI::RPISystemInterface::Get()->RegisterScene(m_scene2);
 ```
 
 {{< note >}}
- Atom's built-in feature processors are included in the Atom Gem. Their spource files (.cpp) can be found in the folder Gems/Atom/Feature/Common/Code/Source/\<feature-processor>/.
+ Atom's built-in feature processors are included in the Atom Gem. Their source files (.cpp) can be found in the folder Gems/Atom/Feature/Common/Code/Source/\<feature-processor>/.
 {{< /note >}}
 
 {{< note >}}

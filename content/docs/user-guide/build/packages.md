@@ -4,10 +4,8 @@ description: Integrate dependencies as packages into Open 3D Engine (O3DE) Gems 
 weight: 300
 ---
 
-Open 3D Engine (O3DE) offers a packaging system to allow for shipping pre-compiled libraries or other external sources. With the
-packaging system, you can more easily add external binaries as dependencies for your Gem or project without having to maintain them in source control. If you
-plan to add a static dependency that can't be shipped as source code, the packaging system offers consistency checks and target generation in
-addition to the fetching of resources.
+**Open 3D Engine (O3DE)** offers a packaging system to allow for shipping pre-compiled libraries or other external sources. With the
+packaging system, you can more easily add external binaries as dependencies for your Gem or project without having to maintain them in source control. If you plan to add a static dependency that can't be shipped as source code, the packaging system offers consistency checks and target generation in addition to the fetching of resources.
 
 {{< note >}}
 The CMake files that define the package system are located at `cmake/3rdParty.cmake` and `cmake/3rdPartyPackages.cmake` in the O3DE source.
@@ -15,8 +13,7 @@ The CMake files that define the package system are located at `cmake/3rdParty.cm
 
 ## Overview
 
-The O3DE package system is used to deliver source and binary dependencies from external sources. These dependencies
-are needed by Gems, projects, and even the O3DE engine itself. The dependency system correctly detects dependencies and version requirements, making sure that you have the packages needed on your system at compile-time.
+The O3DE package system is used to deliver source and binary dependencies from external sources. These dependencies are needed by Gems, projects, and even the O3DE engine itself. The dependency system correctly detects dependencies and version requirements, making sure that you have the packages needed on your system at compile-time.
 
 The dependency system runs through the following steps when invoked:
 
@@ -25,12 +22,14 @@ The dependency system runs through the following steps when invoked:
 1. The build system loads the available package sources. This is a semi-colon (`;`) separated list of package sources that are stored in the `LY_PACKAGE_SERVER_URLS` CMake cache value. If the `LY_PACKAGE_SERVER_URLS` environment variable is set, it's _prepended_ to the cached value.
 
 1. For each package:
+ 
    1. The next source in `LY_PACKAGE_SERVER_URLS` is checked. If a matching package is found in the source, the package is downloaded to `LY_PACKAGE_DOWNLOAD_CACHE_LOCATION`.
-   2. The package tarball is downloaded from the source, and checked against the checksum contained in the requesting CMake file. If there's a checksum mismatch,
-      the tarball is deleted and the next available package source is checked for the package.
-   3. The package is extracted into `LY_PACKAGE_UNPACK_LOCATION/<full-package-name>`. By default `LY_PACKAGE_UNPACK_LOCATION` is `LY_3RDPARTY_PATH/packages`.
-   4. Each individual file in the package is checked against a checksum file contained in the package. If a checksum fails,
-      the package tarball and unpacked contents are deleted and the next source is checked for the package.
+    
+   1. The package tarball is downloaded from the source, and checked against the checksum contained in the requesting CMake file. If there's a checksum mismatch, the tarball is deleted and the next available package source is checked for the package.
+   
+   1. The package is extracted into `LY_PACKAGE_UNPACK_LOCATION/<full-package-name>`. By default `LY_PACKAGE_UNPACK_LOCATION` is `LY_3RDPARTY_PATH/packages`.
+   
+   1. Each individual file in the package is checked against a checksum file contained in the package. If a checksum fails, the package tarball and unpacked contents are deleted and the next source is checked for the package.
 
 You can also add Python module requirements so that `pip` is used to automatically to retrieve packages that are required by tools or other libraries.
 
@@ -48,7 +47,7 @@ To create a package for consumption by O3DE, you need to provide the following:
 * A manifest describing the package (`PackageInfo.json`).
 * A `LICENSE` file contained the software license for the package.
 * Checksums for each file in the package (`SHA256SUMS`).
-* A CMake file run when then package is used in a another CMake file (`Find<Package>.cmake`).
+* A CMake file run when then package is used in another CMake file (`Find<Package>.cmake`).
 
 Packages must be distributed as tarfiles compressed with XZ or LZMA (`.tar.xz`).
 
@@ -161,9 +160,7 @@ af173c7e6c28551679f6676cd923731b514f02c8a29980cb54987be8479a251e *cityhash/src/c
 
 ## Add a Package as a Dependency
 
-When a package is uploaded to a source that's available from `LY_PACKAGE_SERVER_URLS`, you need to register the package with the build system
-in the [Gem build file](/docs/user-guide/gems/development/build) or Project build file. Package registration is done with the
-`ly_associate_package` function.
+When a package is uploaded to a source that's available from `LY_PACKAGE_SERVER_URLS`, you need to register the package with the build system in the Gem or Project build file. Package registration is done with the `ly_associate_package` function.
 
 For a Gem that would use the `example-0.1` package using `ly_associate_package`, this would look like the following:
 
@@ -185,29 +182,23 @@ CMake functions used in this example:
 
 ## Pip Integration
 
-For Gems, projects, or packages that rely on Python modules or tools from [PyPi](https://pypi.org/) or another `pip` repository, the O3DE build
-system offers the functions `update_pip_requirements` and `ly_pip_install_local_package_editable`.
+For Gems, projects, or packages that rely on Python modules or tools from [PyPi](https://pypi.org/) or another `pip` repository, the O3DE build system offers the functions `update_pip_requirements` and `ly_pip_install_local_package_editable`.
 
 * `update_pip_requirements`: Processes a `requirements.txt` file, and associates the requirements with a name in the O3DE build system.
-* `ly_pip_install_local_package_editable`: Creates a symbolic link from a Python module in a non-standard location to a path
-  inside of the user's "local" `pip` Site-Packages directory, allowing the system Python to behave as if the module is installed.
-  If the linked Python module has any requirements, you **must** call `update_pip_requirements` before this function to ensure
-  that Python dependencies are correctly tracked.
+* `ly_pip_install_local_package_editable`: Creates a symbolic link from a Python module in a non-standard location to a path inside of the user's "local" `pip` Site-Packages directory, allowing the system Python to behave as if the module is installed.  If the linked Python module has any requirements, you **must** call `update_pip_requirements` before this function to ensure that Python dependencies are correctly tracked.
 
 {{< important >}}
 You can't declare another source for `pip` to download your Python modules from for those listed in `requirements.txt`. If your Python dependencies are hosted on a service other than PyPi, manually configure the O3DE Python install's `pip` to use the appropriate CDN.
 {{< /important >}}
 
-For example, say that your Gem contains a Python module called `example-py`, with a setup file at `example-py/setup.py`.
-To give O3DE access to this module, the CMake file for this Gem would require the following snippet:
+For example, say that your Gem contains a Python module called `example-py`, with a setup file at `example-py/setup.py`.  To give O3DE access to this module, the CMake file for this Gem would require the following snippet:
 
 ```cmake
 update_pip_requirements(${CMAKE_CURRENT_LIST_DIR}/requirements.txt <ExamplePyGem>)
 ly_pip_install_local_package_editable(${CMAKE_CURRENT_LIST_DIR}/<example-py> <ExamplePyGem>)
 ```
 
-The `<ExamplePyGem>` can be any unique identifier for the Python module, but is conventionally the name of the Gem followed by
-`Gem`.
+The `<ExamplePyGem>` can be any unique identifier for the Python module, but is conventionally the name of the Gem followed by `Gem`.
 
 Changing the `requirements.txt` file or the identifier used for the module will re-run the registration.
 

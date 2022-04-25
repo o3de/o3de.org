@@ -5,9 +5,7 @@ description: Browse the library of icon assets used in the Open 3D Engine develo
 weight: 400
 ---
 
-{{< preview-migrated >}}
-
-Browse the library of icons used in the Open 3D Engine (O3DE) development environment in the following pages.
+Browse the library of icons used in the **Open 3D Engine (O3DE)** development environment in the following pages.
 
 If you're looking for O3DE branding logos, you can download those here: [O3DE Logo Pack.zip](/files/O3DE-Logo-Pack.zip)
 

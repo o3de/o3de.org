@@ -5,8 +5,6 @@ title: Default dependencies for O3DE projects
 weight: 600
 ---
 
-{{< preview-migrated >}}
-
  Throughout your O3DE project you'll use assets across multiple levels, or find those that need to be included whether or not they're a strict dependency. To handle these use cases, O3DE supports *default dependency files* which define assets that are always required when bundling your project. Default dependencies are also used by Gems to make sure their own critical assets are always included.
 
  Default dependencies give you a convenient way to list assets that should be bundled as part of your whole project, and can be applied when generating any asset list by using `--addDefaultSeedListFiles`. When you use this argument as part of an asset bundler command, it picks up the default dependencies for the O3DE engine, included gems, and your project.
@@ -24,9 +22,11 @@ weight: 600
 | Gems | Gems\\gem\_name\\Assets\\gem\_name\_Dependencies.xml | The required dependencies for the named gem. When creating a new gem, include any resources that are required regardless of whether they're used explicitly within a project here. Never edit the default dependency file for a gem which you aren't writing or customizing. |
 | Project | project\_name\\project\_name\_Dependencies.xml | Project-wide dependencies. This is the default dependency file that you'll be editing most frequently, and should include things like game-wide audio, configuration information for pre-loading resources at launch time, or other assets that must always be included with your project. When you create a new project, the dependency file is created from the ProjectTemplates\\DefaultTemplate\\$\{ProjectName\}\\$\{ProjectName\}\_Dependencies.xml template. |
 
-**Important**
- These files are **not** seed lists, and can't be manipulated with commands that modify seed lists. Default dependencies are built by the Asset Processor to create seed lists in the cache. These seed lists are then picked up by the Asset Bundler when you use the `--addDefaultSeedListFiles` flag.
+{{< important >}}
+These files are **not** seed lists, and can't be manipulated with commands that modify seed lists. Default dependencies are built by the Asset Processor to create seed lists in the cache. These seed lists are then picked up by the Asset Bundler when you use the `--addDefaultSeedListFiles` flag.
+ 
 Another important consequence of this is that every time you change a default dependencies file, it must be built by the Asset Processor to generate an updated seed list for the Asset Bundler.
+{{< /important >}}
 
 ## Default dependencies file format 
 

@@ -4,8 +4,6 @@ description: ' Use the Entity Inspector to add components to entities and modify
 title: Entity Inspector
 ---
 
-{{< preview-migrated >}}
-
 The **Entity Inspector** manages all the components for each entity. Select an entity in the **Entity Outliner** or the viewport to see the attached components in the **Entity Inspector**.
 
 **To open the Entity Inspector**
@@ -34,5 +32,6 @@ Use the **Entity Inspector** to do the following:
 * Pin an entity's inspector
 * Create your own help topic for your custom component
 
-**Note**
+{{< note >}}
 For a list and descriptions of available components, see [Component Reference](/docs/user-guide/components/reference). You can also click the **Help** icon in the header of each component to open a help topic.
+{{< /note >}}

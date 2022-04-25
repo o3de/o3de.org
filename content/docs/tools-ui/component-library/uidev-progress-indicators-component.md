@@ -5,13 +5,11 @@ description: Learn about the O3DE UI progress indicators, including the spinner 
 toc: true
 ---
 
-{{< preview-migrated >}}
-
 Use progress and status indicators to communicate to users that the O3DE application is working on a process, and what the result of that process is when it's finished. Indicators should be employed when there's a chance the user could be left wondering whether or not a process is working or hung.
 
-![\[component progress indicators style\]](/images/tools-ui/component-progress-indicators-style.png)
+![component progress indicators style](/images/tools-ui/component-progress-indicators-style.png)
 
-## Usage guidelines<a name="progress-indicators-usage"></a>
+## Usage guidelines
 
 Follow these guidelines as you design your UI with progress indicators:
 
@@ -21,15 +19,16 @@ Follow these guidelines as you design your UI with progress indicators:
 
 1.  Progress indicators are animated to reinforce that an activity is occurring.
 
-**Note**
+{{< note >}}
 See additional usage guidelines in the following sections, which apply to specific types of progress indicators.
+{{< /note >}}
 
 Avoid these design choices when using progress indicators:
 + Don't use more than one progress indicator at a time.
 
-## Basic progress bar<a name="progress-bar-basic"></a>
+## Basic progress bar
 
-![\[component progress bar determinate\]](/images/tools-ui/component-progress-bar-determinate.png)
+![component progress bar determinate](/images/tools-ui/component-progress-bar-determinate.png)
 
 Display determinate progress as a linear progress bar, to show a process or a task that has a definite start and end. In this scenario, the system is aware of how many steps are taken, and a likelihood of time for completion.
 
@@ -45,9 +44,9 @@ Additional usage guidelines for progress bars include the following:
 
 The following example demonstrates the initialization of a simple progress bar. Refer to the Qt documentation on [QProgressBar](https://doc.qt.io/qt-5/qprogressbar.html) to learn additional features.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <QProgressBar>
 
 // Create the progress bar.
@@ -64,9 +63,9 @@ progressBar->setTextVisible(false);
 // Note that it can also be set from the .ui file, or from Qt Designer or Creator.
 ```
 
-## Basic progress spinner<a name="progress-spinner-basic"></a>
+## Basic progress spinner
 
-![\[component progress spinner basic\]](/images/tools-ui/component-progress-spinner-basic.gif)
+![component progress spinner basic](/images/tools-ui/component-progress-spinner-basic.gif)
 
 Use spinners when it's unclear when the process will finish.
 
@@ -74,9 +73,9 @@ Additional usage guidelines for spinners include the following:
 
 1.  Display spinners in the context of windows, panels, lists, or inline with other elements.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <AzQtComponents/Components/StyledBusyLabel.h>
 
 // Create the spinner.
@@ -89,7 +88,7 @@ spinner->SetBusyIconSize(18);
 spinner->SetIsBusy(true);
 ```
 
-## C++ API reference<a name="progress-indicators-api-ref"></a>
+## C++ API reference
 
 For details on the **progress indicator** API's, see the following topics in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::ProgressBar](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_progress_bar.html)

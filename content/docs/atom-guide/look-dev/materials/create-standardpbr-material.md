@@ -4,8 +4,6 @@ description: "This tutorial walks you through how to create a StandardPBR materi
 toc: false
 ---
 
-{{< preview-new >}}
-
 This tutorial walks you through how to create a StandardPBR material in Atom. The StandardPBR material type allows you to create an artist-friendly, full-featured physically based rendering (PBR) material.
 
 This tutorial covers the following concepts:
@@ -44,8 +42,8 @@ We rename the following files to properly apply a filemask. (For the sake of cla
 
 ## Create material with Material Editor
 To create a material using the Material Editor:
-1. Open the Material Editor. If you are in the Open 3D Engine Editor, go to *Tools > Material Editor*, or press *M*. Otherwise, you can open the Material Editor as a standalone application from `<build_folder>/bin/profile/MaterialEditor.exe`.
-   
+1. Open the Material Editor. If you are in the Open 3D Engine Editor, go to *Tools > Material Editor*, or press *M*. Otherwise, you can open the Material Editor as a standalone application from `<build_folder>/bin/profile/MaterialEditor.exe` or `<install>/bin/<platform>/profile/Default/MaterialEditor.exe`.
+
 2. Create a new StandardPBR material by choosing **File** > **New** > **Standard PBR**. This opens the file browser and prompts you to save the new file. In the **Inspector** tab, you can verify that the material type is `StandardPBR` by checking the `Material Type` property in the `Details` property group. 
 
     {{< note >}} 

@@ -4,8 +4,6 @@ description: ' Use EventData types to create custom parameters for motion events
 title: Creating EventData Types
 ---
 
-{{< preview-migrated >}}
-
 You create objects deriving from the [`EMotionFX::EventData`](/docs/api/gems/emotionfx/) interface to attach an arbitrary number of data objects to a single event.
 
 **To create an EventData type**
@@ -40,13 +38,13 @@ You create objects deriving from the [`EMotionFX::EventData`](/docs/api/gems/emo
    }
    ```
 
-   For more information about the `Equal` function, see [More About the Equal Function](#char-animation-editor-custom-events-parameters-the-equal-function).
+For more information about the `Equal` function, refer to [More About the Equal Function](#more-about-the-equal-function).
 
-1. Implement the `Reflect` method to reflect the type to the [Serialization Context](/docs/user-guide/engine/serialization/entity-system-reflection-serialization-context.md) and [Edit Context](/docs/user-guide/components/development/edit-context/) contexts.
+1. Implement the `Reflect` method to reflect the type to the [serialization context](/docs/user-guide/programming/components/reflection/serialization-context/) and [edit context](/docs/user-guide/programming/components/reflection/edit-context/).
 
-   When you reflect the event to the edit context, add the `Creatable` attribute to `ClassElement`. This makes the `EventData` type visible in the Animation Editor's **Motion Events** tab so that users can select it.
+When you reflect the event to the edit context, add the `Creatable` attribute to `ClassElement`. This makes the `EventData` type visible in **Animation Editor** in the **Motion Events** tab so that users can select it.
 
-   The following code example reflects the `LeftFootEvent` to the serialize and edit contexts.
+The following code example reflects the `LeftFootEvent` to the serialization and edit contexts.
 
    ```
    ...

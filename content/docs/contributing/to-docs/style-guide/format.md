@@ -1,12 +1,12 @@
 ---
-title: Formatting Documentation for Open 3D Engine
+title: Formatting O3DE Documentation
 description: A reference for all of the typesetting and formatting rules for the Open 3D Engine (O3DE) documentation.
 linktitle: Formatting
 weight: 200
 toc: true
 ---
 
-With Markdown, sometimes there are multiple methods to achieve the same result. For example, you can enclose words in underscores (`_`) or asterisks (`*`) to create italics. In these situations, it is best to use one method throughout the documentation. To keep both the documentation Markdown source files, and the O3DE documentation on-page presentation consistent, adhere to the following basic documentation standards.
+The **Open 3D Engine (O3DE)** documentation is written in Markdown syntax. With Markdown, sometimes there are multiple methods to achieve the same result. For example, you can enclose words in underscores (`_`) or asterisks (`*`) to create italics. In these situations, it is best to use one method throughout the documentation. To keep both the documentation Markdown source files, and the O3DE documentation on-page presentation consistent, adhere to the following basic documentation standards.
 
 ## Topic headings
 
@@ -20,9 +20,9 @@ Example:
 
 ```markdown
 ---
-linkTitle: "Page Title"
-title: "An O3DE Documentation Page Title"
-description: A topic about an O3DE feature
+linkTitle: Page Title
+title: An O3DE Documentation Page Title
+description: A topic about an Open 3D Engine feature.
 weight: 100
 toc: true
 ---
@@ -44,6 +44,76 @@ toc: true
 {{< note >}}
 A table of contents for the page is automatically generated in the right gutter using the on-page headings if the `toc` Front Matter variable is set to `true`.
 {{< /note >}}
+
+## Links
+
+Write links without the file extension *.md*.
+
+| Relative link | Result |
+| - | - |
+| `[...](./)` | Returns to the current directory's index page. |
+| `[...](page-linked-from-index)` | Links from the index page to a page in the index's directory. |
+| `[...](./page-linked-from-non-index)` | Links from any page to a page in the same directory. |
+| `[...](forward-directory-linked-from-index/)` | Links from the index page to a subdirectory of the index. |
+| `[...](./forward-directory-linked-from-non-index/)` | Links from any page to a subdirectory of the current page. |
+| `[...](../)` | Returns to the index of the previous directory. |
+| `[...](../link-to-page-in-previous-directory)` | Links from any page to a page in the previous directory. |
+
+## Tables
+
+Table example:
+
+```markdown
+| Default column| Right-aligned column | Center-aligned column | Left-aligned column |
+| - | -: | :-: | :- |
+| Row | entry | entry | entry |
+| Row | entry | entry | entry |
+| Row with missing entry | entry | | entry |
+```
+
+Table result:
+
+| Default column| Right-aligned column | Center-aligned column | Left-aligned column |
+| - | -: | :-: | :- |
+| Row | entry | entry | entry |
+| Row | entry | entry | entry |
+| Row with missing entry | entry | | entry |
+
+## Tabs
+
+Tabs example:
+
+
+```
+{{</* tabs name="name-for-this-group-of-tabs" */>}}
+{{%/* tab name="First tab" */%}}
+
+First tab's content.
+
+{{%/* /tab */%}}
+{{%/* tab name="Second tab" */%}}
+
+Second tab's content.
+
+{{%/* /tab */%}}
+{{</* /tabs */>}}
+```
+
+
+Tabs result:
+
+{{< tabs name="tabs-example" >}}
+{{% tab name="First tab" %}}
+
+First tab's content.
+
+{{% /tab %}}
+{{% tab name="Second tab" %}}
+
+Second tab's content.
+
+{{% /tab %}}
+{{< /tabs >}}
 
 ## Text format
 
@@ -183,8 +253,7 @@ When the quote is a complete sentence, place the punctuation inside the quote.
 
 ### Code style for filenames, directories, and paths
 
-All paths should be platform agnostic and use `/` path separators. When using relative paths, give the reader context to understand
-what the path is relative to.
+All paths should be platform agnostic and use `/` path separators. When using relative paths, give the reader context to understand what the path is relative to.
 
 Do | Don't
 :--| :-----
@@ -224,7 +293,7 @@ Do | Don't
 ### Separate commands from output
 
 ```shell
-cmake --build <MyProject> --config profile --target Editor -- /m
+cmake --build <MyProject> --target Editor --config profile -- -m
 ```
 
 The output is similar to this:
@@ -295,9 +364,9 @@ Nested list example:
 ```markdown
 1. Step one
 1. Step two
-  * Item one
-  * Item two
-  * Item three
+    * Item one
+    * Item two
+    * Item three
 1. Step three
 ```
 
@@ -305,9 +374,9 @@ Nested list result:
 
 1. Step one
 1. Step two
-  * Item one
-  * Item two
-  * Item three
+    * Item one
+    * Item two
+    * Item three
 1. Step three
 
 ### Definition lists

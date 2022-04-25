@@ -5,8 +5,6 @@ description: Introduction to the Open 3D Engine (O3DE) AWS Client Auth Gem.
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **AWS Client Auth** Gem lets authenticated or anonymous users access AWS services when running your game or simulation. It provides authentication options using any of the following supported identity providers:
 
 * Amazon Cognito user pool
@@ -55,4 +53,4 @@ To enable the AWS Client Auth Gem, do the following:
 
 1. Build your project using Project Manager, Visual Studio, or CMake.
 
-1. To configure AWS Client Auth for your project, follow the instructions in [Setting Up the AWS Client Auth Gem](./setup.md).
+1. To configure AWS Client Auth for your project, follow the instructions in [Setting Up the AWS Client Auth Gem](./setup/).

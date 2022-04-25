@@ -1,18 +1,16 @@
 ---
 linktitle: 2107.1 Release Notes
 title: Release Notes for Open 3D Engine 2107.1 (Developer Preview)
-description: Find out what's was delivered in O3DE 2107.1 (Developer Preview).
-weight: 101
+description: Find out what was delivered in O3DE 2107.1 (Developer Preview).
+weight: 200
 toc: true
-menu_uuid: releasenotes
-guide_img: "/images/release-notes/guide_img.svg"
 ---
 
-The current version of Open 3D Engine is 2107.1 (Developer Preview). Check out the [known issues](https://github.com/o3de/o3de/issues/1736) here.
+These are the release notes for **Open 3D Engine 2107.1 (Developer Preview)**, released on 2021-07-06. Check out the [known issues](https://github.com/o3de/o3de/issues/1736).
 
 ## Highlights
 
-The [Open 3D Foundation](https://o3de.foundation) is very excited to bring you this initial Developer Preview release, kicking off what we hope is a long and illustrious community effort to develop a 3D rendering platform that can evolve as fast as modern gaming and simulation has. If it looks a bit familiar to AWS Lumberyard developers, well, they're right: O3DE builds off the effort Amazon Web Services poured into that engine.
+The [Open 3D Foundation](https://o3d.foundation) is very excited to bring you this initial Developer Preview release, kicking off what we hope is a long and illustrious community effort to develop a 3D rendering platform that can evolve as fast as modern gaming and simulation has. If it looks a bit familiar to AWS Lumberyard developers, well, they're right: O3DE builds off the effort Amazon Web Services poured into that engine.
 
 Note that this release is a Developer Preview and is incomplete for many major development workflows. Initially, this release primarily supports engine and tools developers, and as the O3DE community builds it out, more features will be added.
 
@@ -132,4 +130,4 @@ There's a lot of additional updates we're bringing to you with this initial rele
 
 ## Known Issues
 
-* [The current list of Known Issues in release 2107.1](https://github.com/o3de/o3de/issues/1736). Help the community out and grab one&mdash;--or a few! Or just comment on them and provide us with your thoughts.
+* [The current list of Known Issues in release 2107.1](https://github.com/o3de/o3de/issues/1736). Help the community out and grab one&mdash;or a few! Or just comment on them and provide us with your thoughts.

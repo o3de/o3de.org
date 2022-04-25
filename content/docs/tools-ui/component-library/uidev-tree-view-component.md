@@ -5,8 +5,6 @@ description: Learn how to use the O3DE UI tree view component to give users a fi
 toc: true
 ---
 
-{{< preview-migrated >}}
-
 With the **tree view** component, users can navigate file system directories or a list of hierarchical data in O3DE. Each item, such as a node or a branch, can have sub-items. Items can be expanded to reveal sub-items.
 
 The **tree view** component is often used in the following scenarios:
@@ -15,23 +13,23 @@ The **tree view** component is often used in the following scenarios:
 
 Example from O3DE **Asset Browser**:
 
-![\[component tree view example\]](/images/tools-ui/component-tree-view-example.png)
+![component tree view example](/images/tools-ui/component-tree-view-example.png)
 
-## Usage guidelines<a name="tree-view-usage"></a>
+## Usage guidelines
 
 Follow these guidelines as you design your UI with tree views:
 
 1.  When the tree hierarchy is anticipated to be deep, such as a tree view used in file directories, it is suggested to add a file path to help users know where they are in the path.
 
-## Basic tree view<a name="tree-view-basic"></a>
+## Basic tree view
 
-![\[component tree view basic\]](/images/tools-ui/component-tree-view-basic.png)
+![component tree view basic](/images/tools-ui/component-tree-view-basic.png)
 
 Create a simple tree view, with support for showing branch lines.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <AzQtComponents/Components/Widgets/TreeView.h>
 #include <QTreeView>
 
@@ -48,7 +46,7 @@ treeView->setItemDelegate(new AzQtComponents::BranchDelegate());
 AzQtComponents::TreeView::setBranchLinesEnabled(treeView, true);
 ```
 
-## C++ API reference<a name="tree-view-api-ref"></a>
+## C++ API reference
 
 For details on the **tree view** API, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::TreeView](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_tree_view.html)

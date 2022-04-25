@@ -4,8 +4,6 @@ description: ' Capture image frames in Open 3D Engine with render output, a capt
 title: Capturing Image Frames
 ---
 
-{{< preview-migrated >}}
-
 You can capture image frames using render output, a capture track, or console variables.
 
 **Topics**
@@ -27,8 +25,9 @@ You can use the **Render Output** tool in the Track View to capture image frames
 
 1. Click **Start** to start the capture.
 
-**Note**
+    {{< note >}}
 You may need to adjust the aspect ratio for captured image frames.
+{{< /note >}}
 
 **To change the aspect ratio for image frame captures**
 
@@ -56,7 +55,7 @@ You can capture image frames when a sequence is played in game mode.
 
 ## Capturing Image Frames with Console Variables 
 
-Capture image frames with the following console variables. For more information, see [Using the Console Window](/docs/user-guide/editor/console.md).
+Capture image frames with the following console variables. For more information, see [Using the Console Window](/docs/user-guide/editor/console/).
 
 
 **Capture Image Frames Console Variables**

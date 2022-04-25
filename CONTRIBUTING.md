@@ -2,7 +2,7 @@
 
 **First off, thanks for taking the time to contribute!**
 
-The following is a set of guidelines for contributing to Open 3D Engine (O3DE) documentation, hosted at [o3de.org](http://o3de.org/).
+The following is a set of guidelines for contributing to **Open 3D Engine (O3DE)** documentation, hosted at [o3de.org](http://o3de.org/).
 These are just guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 ## Before you get started
@@ -14,7 +14,7 @@ O3DE Code of Conduct Committee at &lt;conduct@o3de.org&gt;.
 
 ### Documentation and Site Decisions
 
-The [O3DE SIG Docs Mailing List](https://lists.o3de.org/g/sig-docs) is the discussion group for doc releases, suggested site improvements, and improving the doc contribution experience. If you plan to be a regular contributor, join this group to stay informed and involved.
+The [O3DE SIG Docs Mailing List](https://lists.o3de.org/g/sig-docs-community) is the discussion group for doc releases, suggested site improvements, and improving the doc contribution experience. If you plan to be a regular contributor, join this group to stay informed and involved.
 
 ### Style Guides and Templates
 

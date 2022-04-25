@@ -6,7 +6,7 @@ draft: true
 
 This page serves two purposes:
 
-- Demonstrate how the Kubernetes documentation uses Markdown
+- Demonstrate how the **Open 3D Engine (O3DE)** documentation uses Markdown.
 - Provide a "smoke test" document we can use to test HTML, CSS, and template
   changes that affect the overall documentation.
 
@@ -36,13 +36,6 @@ This is in an H6 section.
 Inline elements show up within the text of paragraph, list item, admonition, or
 other block-level element.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
-
 ### Inline text styles
 
 - **bold**
@@ -58,11 +51,9 @@ culpa qui officia deserunt mollit anim id est laborum.
 
 ## Lists
 
-Markdown doesn't have strict rules about how to process lists. When we moved
-from Jekyll to Hugo, we broke some lists. To fix them, keep the following in
-mind:
+Markdown doesn't have strict rules about how to process lists. Keep the following in mind.
 
-- Make sure you indent sub-list items **2 spaces**.
+- Make sure you indent sub-list items **two spaces**.
 
 - To end a list and start another, you need a HTML comment block on a new line
   between the lists, flush with the left-hand border. The first list won't end
@@ -182,7 +173,7 @@ this is a code block created by back-ticks
 
 The back-tick method has some advantages.
 
-- It works nearly every time
+- It works nearly every time.
 - It is more compact when viewing the source code.
 - It allows you to specify what language the code block is in, for syntax
   highlighting.
@@ -196,12 +187,12 @@ grouping of back-ticks:
 ls -l
 ```
 
-Common languages used in Kubernetes documentation code blocks include:
+Common languages used in O3DE documentation code blocks include:
 
 - `bash` / `shell` (both work the same)
-- `go`
+- `cpp`
+- `python`
 - `json`
-- `yaml`
 - `xml`
 - `none` (disables syntax highlighting for the block)
 
@@ -219,11 +210,11 @@ source for this page).
 ## Links
 
 To format a link, put the link text inside square brackets, followed by the
-link target in parentheses. [Link to Kubernetes.io](https://kubernetes.io/) or
-[Relative link to Kubernetes.io](/)
+link target in parentheses. [Link to O3DE Docs](https://www.o3de.org/docs/) or
+[Relative link to O3DE.org](/)
 
 You can also use HTML, but it is not preferred.
-<a href="https://kubernetes.io/">Link to Kubernetes.io</a>
+<a href="https://www.o3de.org">Link to O3DE.org</a>
 
 ## Images
 
@@ -232,26 +223,35 @@ character. The square brackets contain the image's alt text. Try to always use
 alt text so that people using screen readers can get some benefit from the
 image.
 
-![pencil icon](/images/pencil.png)
+![O3DE icon](/img/logos/O3DE-Circle-LogoMark-REV-MONO.svg)
 
-To specify extended attributes, such as width, title, caption, etc, use the
-<a href="https://gohugo.io/content-management/shortcodes/#figure">figure shortcode</a>,
-which is preferred to using a HTML `<img>` tag. Also, if you need the image to
-also be a hyperlink, use the `link` attribute, rather than wrapping the whole
-figure in Markdown link syntax as shown below.
 
-{{< figure src="/images/pencil.png" title="Pencil icon" caption="Image used to illustrate the figure shortcode" width="200px" >}}
+The `image-width` shortcode adds an image with alternate text and restricts the image's width. The `image-width` shortcode can ensure image sizes are consistent within a topic, and that large images and `.svg` diagrams don't scale overly large in wide browser windows.
 
-Even if you choose not to use the figure shortcode, an image can also be a link. This
-time the pencil icon links to the Kubernetes website. Outer square brackets enclose
+`image-width` takes three double-quoted named parameters:
+
+1. `src="/images/<image.png>"` - Image file path.
+1. `width="<image width>"` - Scale the image by specifying a width in pixels.
+1. `alt="<image description>"` - A string describing the image.
+
+`image-width` example:
+
+```markdown
+{{</* image-width src="/images/welcome-guide/wg-welcome-page-color.png" width="700" alt="The O3DE Welcome Guide splash image." */>}}
+```
+
+`image-width` example output:
+
+{{< image-width src="/images/welcome-guide/wg-welcome-page-color.png" width="700" alt="The O3DE Welcome Guide splash image." >}}
+
+An image can also be a link. This time the O3DE icon links to the O3DE website. Outer square brackets enclose
 the entire image tag, and the link target is in the parentheses at the end.
 
-[![pencil icon](/images/pencil.png)](https://kubernetes.io)
+[![O3DE icon](/img/logos/O3DE-Circle-LogoMark-REV-MONO.svg)](https://o3de.org)
 
 You can also use HTML for images, but it is not preferred.
 
-<img src="/images/pencil.png" alt="pencil icon" />
-
+<img src="/img/logos/O3DE-Circle-LogoMark-REV-MONO.svg" alt="O3DE icon" />
 
 ## Tables
 
@@ -320,6 +320,10 @@ You can have multiple paragraphs and block-level elements inside an admonition.
 | | |
 {{< /note >}}
 
+{{< tip >}}
+Tips draw attention to a shortcut or best practice related to the preceding content.
+{{< /tip >}}
+
 {{< caution >}}
 The reader should proceed with caution.
 {{< /caution >}}
@@ -327,10 +331,6 @@ The reader should proceed with caution.
 {{< important >}}
 Important information the reader must heed.
 {{< /important >}}
-
-{{< preview-new >}}
-
-{{< preview-migrated >}}
 
 {{< todo issue="https://github.com/o3de/o3de.org/issues/432" >}}
 Indicates a section needs work, followed by a description of the task and a link to the issue in GitHub.
@@ -341,9 +341,201 @@ Indicates a section needs work, followed by a description of the task and a link
 Indicates a section needs work, followed by a description of the task and a prompt for someone to create a GitHub issue for this task.
 {{< /todo >}}   
 
+{{< known-issue >}}
+Indicates a known issue with the process described in the docs. 
+{{< /known-issue >}}
+
+{{< known-issue link="https://github.com/o3de/o3de/pull/4856">}}
+Indicates a known issue with the process described in the docs and provides a link to an issue, PR, or discussion that provides information about this issue.
+{{< /known-issue >}}
+
+The `feature-in-progress` shortcode provides a note for a feature that is in active development with links to open Issues and PRs. It takes three double quote enclosed parameters in order:
+
+1. Feature name.
+1. Link to issues. Provide query filtered to open issues with titles that contain the feature name.
+1. Link to pull requests. Provide query filtered to open pull requests with titles that contain the feature name.
+
+Example usage:
+
+```markdown
+{{</* feature-in-progress "O3DE Editor" "https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+in%3Atitle+editor" "https://github.com/o3de/o3de/pulls?q=is%3Apr+is%3Aopen+in%3Atitle+editor" */>}}
+```
+
+Example output:
+
+{{< feature-in-progress "O3DE Editor" "https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+in%3Atitle+editor" "https://github.com/o3de/o3de/pulls?q=is%3Apr+is%3Aopen+in%3Atitle+editor" >}}
+
 ## Includes
 
 To add shortcodes to includes.
 
+### Inline Icons
 
+You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files are located in `/static/images/icons`.
 
+| Name | Image |
+| - | - |
+| add.svg | {{< icon "add.svg" >}} |
+| align-bottom.svg | {{< icon "align-bottom.svg" >}} |
+| align-left.svg | {{< icon "align-left.svg" >}} |
+| align-right.svg | {{< icon "align-right.svg" >}} |
+| align-top.svg | {{< icon "align-top.svg" >}} |
+| animation-editor.svg | {{< icon "animation-editor.svg" >}} |
+| asset-editor.svg | {{< icon "asset-editor.svg" >}} |
+| asset-processor.svg | {{< icon "asset-processor.svg" >}} |
+| audio-editor.svg | {{< icon "audio-editor.svg" >}} |
+| browse-edit-select-files.svg | {{< icon "browse-edit-select-files.svg" >}} |
+| camera.svg | {{< icon "camera.svg" >}} |
+| caret-closed.svg | {{< icon "caret-closed.svg" >}} |
+| caret-open.svg | {{< icon "caret-open.svg" >}} |
+| comment.svg | {{< icon "comment.svg" >}} |
+| debug.svg | {{< icon "debug.svg" >}} |
+| default-document.svg | {{< icon "default-document.svg" >}} |
+| delete.svg | {{< icon "delete.svg" >}} |
+| entity.svg | {{< icon "entity.svg" >}} |
+| entity-editoronly.svg | {{< icon "entity-editoronly.svg" >}} |
+| entity-notactive.svg | {{< icon "entity-notactive.svg" >}} |
+| entity-outliner-dot.svg | {{< icon "entity-outliner-dot.svg" >}} |
+| error.svg | {{< icon "error.svg" >}} |
+| file-folder.svg | {{< icon "file-folder.svg" >}} |
+| filter.svg | {{< icon "filter.svg" >}} |
+| grid.svg | {{< icon "grid.svg" >}} |
+| group.svg | {{< icon "group.svg" >}} |
+| help.svg | {{< icon "help.svg" >}} |
+| help2.svg | {{< icon "help2.svg" >}} |
+| helpers.svg | {{< icon "helpers.svg" >}} |
+| information.svg | {{< icon "information.svg" >}} |
+| landscape-canvas-editor.svg | {{< icon "landscape-canvas-editor.svg" >}} |
+| layer.svg | {{< icon "layer.svg" >}} |
+| level.svg | {{< icon "level.svg" >}} |
+| list-view.svg | {{< icon "list-view.svg" >}} |
+| local.svg | {{< icon "local.svg" >}} |
+| locked.svg | {{< icon "locked.svg" >}} |
+| lua-editor.svg | {{< icon "lua-editor.svg" >}} |
+| material-editor.svg | {{< icon "material-editor.svg" >}} |
+| menu.svg | {{< icon "menu.svg" >}} |
+| more.svg | {{< icon "more.svg" >}} |
+| move.svg | {{< icon "move.svg" >}} |
+| open-in-internal-app.svg | {{< icon "open-in-internal-app.svg" >}}
+| parent.svg | {{< icon "parent.svg" >}} |
+| pending.svg | {{< icon "pending.svg" >}} |
+| picker.svg | {{< icon "picker.svg" >}} |
+| pin-button.svg | {{< icon "pin-button.svg" >}} |
+| play.svg | {{< icon "play.svg" >}} |
+| prefab.svg | {{< icon "prefab.svg" >}} |
+| prefab-edit.svg | {{< icon "prefab-edit.svg" >}} |
+| processing.svg | {{< icon "processing.svg" >}} |
+| resolution.svg | {{< icon "resolution.svg" >}} |
+| rotate.svg | {{< icon "rotate.svg" >}} |
+| scale.svg | {{< icon "scale.svg" >}} |
+| script-canvas-editor.svg | {{< icon "script-canvas-editor.svg" >}} |
+| select-object.svg | {{< icon "select-object.svg" >}} |
+| settings.svg | {{< icon "settings.svg" >}} |
+| shadow.svg | {{< icon "shadow.svg" >}} |
+| simulate-physics.svg | {{< icon "simulate-physics.svg" >}} |
+| sort-a-to-z.svg | {{< icon "sort-a-to-z.svg" >}} |
+| sort-manually.svg | {{< icon "sort-manually.svg" >}} |
+| sort-z-to-a.svg | {{< icon "sort-z-to-a.svg" >}} |
+| tone-mapping.svg | {{< icon "tone-mapping.svg" >}} |
+| trackview-editor.svg | {{< icon "trackview-editor.svg" >}} |
+| ui-editor.svg | {{< icon "ui-editor.svg" >}} |
+| ungroup.svg | {{< icon "ungroup.svg" >}} |
+| unlocked.svg | {{< icon "unlocked.svg" >}} |
+| valid.svg | {{< icon "valid.svg" >}} |
+| visibility-off.svg | {{< icon "visibility-off.svg" >}} |
+| visibility-on.svg | {{< icon "visibility-on.svg" >}} |
+| warning-yellow.svg | {{< icon "warning-yellow.svg" >}} |
+| world.svg | {{< icon "world.svg" >}} |
+
+## Embedding videos with the `video` shortcode
+
+Videos in the `/images/` directory can be embedded in topics with the `video` shortcode. Use this method to include animations in topics rather than animated `.gifs`.
+
+Keep the following in mind when submitting videos in docs contributions:
+
+* `.mp4` is the preferred video format. `.ogg` and `.webm` are also supported by the shortcode, but aren't as well supported by various browsers.
+* Videos must be placed in the `/static/images/` directory structure using the same conventions as images.
+* Videos should be smaller than 512 KB and must not exceed 1 MB in size.
+* Ensure text in the video is legible if required.
+* Ensure the video resolution is no larger than necessary.
+* Crop and frame the subject of the video appropriately.
+* Videos shouldn't include audio unless required by the example.
+* Though a poster image is not required, it is recommended.
+
+**Parameters**
+
+`video` **requires** the following named parameters:
+
+1. `src="/images/<video.mp4>"` - Video file path.
+1. `info="<video description>"` - A string describing the video.
+
+`video` supports the following **optional** named parameters:
+
+1. `poster="/images/<image.png>"` - A static image that displays while the video loads or if the video fails to load. This image should be the same size and aspect ratio as the video. 
+1. `autoplay="true"` - The video plays as soon as it loads.
+1. `loop="true"` - The video plays in a loop.
+1. `width="<video width>"` - Scale the video by specifying a width in pixels.
+1. `muted="true"` - Video is muted if an audio track exists.
+1. `type="video/<mp4 OR ogg OR webm>"` - Video type. MP4 is default.
+
+The are two additional options that are always enabled.
+
+1. `preload="auto"` - Loads the video with the page.
+1. `controls` - Include player controls for the video.
+
+**Examples**
+
+1. Basic `video` usage with only the required parameters.
+
+    ```markdown
+      {{</* video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." */>}}
+    ```
+    Output:
+
+    {{< video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." >}}
+
+<br>
+
+2. Advanced `video` usage with optional parameters to enable autoplay, loop the video, scale the video to 250 pixels, and include a poster image.
+
+    ```markdown
+      {{</* video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." autoplay="true" loop="true" width="250" poster="/images/contributing/to-docs/TestPoster.png" */>}}
+    ```
+
+    Output:
+
+    {{< video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." autoplay="true" loop="true" width="250" poster="/images/contributing/to-docs/TestPoster.png" >}}
+
+## Embedding Youtube videos with the `youtube-width` shortcode
+
+Embed Youtube videos in your page by using the `youtube-width` shortcode. The `youtube-width` shortcode is an extended version of Hugo's built-in [`youtube` shortcode](https://gohugo.io/content-management/shortcodes/#youtube) that allows you to control the size of the embedded video. 
+
+`youtube-width` supports the following double-quoted parameters:
+
+1. id
+2. title
+3. width (using the default value (50%) is recommended)
+
+**Examples** 
+
+1. `youtube-width` example without the `width` parameter uses the default value `width: 50%`:
+
+    ```markdown
+    {{</* youtube-width id="CQmjAxr7LZs" title="What is O3DE?" */>}}
+    ```
+
+    Output:
+
+    {{< youtube-width id="CQmjAxr7LZs" title="What is O3DE?" >}}
+
+    <br>
+
+2. `youtube-width` example with the `width` parameter:
+
+    ```markdown
+    {{</* youtube-width id="CQmjAxr7LZs" title="What is O3DE?" width="100%" */>}}
+    ```
+
+    Output:
+
+    {{< youtube-width id="CQmjAxr7LZs" title="What is O3DE?" width="100%" >}}

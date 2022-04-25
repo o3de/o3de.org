@@ -10,9 +10,9 @@ The **Material Editor** is a standalone application that allows artists to view,
 To get started, launch the Material Editor and create or edit a material. 
 
 #### Launch the Material Editor
-You can launch the Material Editor from the Open 3D Engine (O3DE) Editor, or as a standalone application:   
+You can launch the Material Editor from the **Open 3D Engine (O3DE)** Editor, or as a standalone application:   
 
-- From the Open 3D Engine (O3DE) Editor, you can launch Material Editor in two ways.
+- From the O3DE Editor, you can launch Material Editor in two ways.
   
   - Select **Main Menu > Tools > Material Editor**.
   
@@ -35,11 +35,7 @@ You can create a new material or edit an existing material from the File menu in
  
   2. Then, right-click the `.material` file to open the context menu.
   
-  3. Finally, choose one of the following options from the context menu:
-  
-     - **Create a Child Material...** to create a new material based on the material highlighted.
-  
-     - **Open Parent Material** to open the selected material. 
+  3. Choose **Open in Material Editor...** to open the material in the Material Editor.
 
 ![Material Editor](/images/atom-guide/materials/material-editor.jpg)
 
@@ -53,18 +49,17 @@ At the top of the Material Editor are the following menus: File, Edit, View, and
 The File menu contains options to manage the Material Editor and material files.
 | Menu item | Hotkey | Function |
 | - | - | - |
-| New |  | Create a new material. Choose a material type from the list to create a new material of that type. |
+| New | `Ctrl+N` | Create a new material. Choose a material type from the list to create a new material of that type. |
 | Open... | `Ctrl+O` | Open an existing material.|
-| Open Recent |  | Open an existing material you recently worked with. |
 | Save | `Ctrl+S` | Save the edits in the active material tab. |
-| Save As... | `F12`, `Ctrl+Shift+S` | Save the edits in the active material tab to the specified folder and file name.  |
+| Save As... |  | Save the edits in the active material tab to the specified folder and file name.  |
 | Save As Child... |  | Save a new child material of the current material.  |
 | Save All |  | Save the edits in all open material tabs. |
-| Close | `Ctrl+W` | Close the active material tab. |
-| Close All | `Ctrl+Alt+W` | Close all of the open material tabs. |
-| Close Others | `Ctrl+Alt+P` | Close all of the material tabs except the active one. |
+| Close | `Ctrl+F4` | Close the active material tab. |
+| Close All |  | Close all of the open material tabs. |
+| Close Others |  | Close all of the material tabs except the active one. |
 | Run Python... |  | Opens a folder to select a Python script to run. |
-| Exit | `Ctrl+Q` | Close the Material Editor. |
+| Exit |  | Close the Material Editor. |
 
 ### Edit Menu
 The Edit menu contains options that are useful while editing materials. 
@@ -72,29 +67,28 @@ The Edit menu contains options that are useful while editing materials.
 | Menu item | Hotkey | Function |
 | - | - | - |
 | Undo | `Ctrl+Z` | Undo the most recent action.  |
-| Redo | `Ctrl+Shift+Z` | Redo the most recent action that was undone.  |
+| Redo | `Ctrl+Y` | Redo the most recent action that was undone.  |
 
 ### View Menu
 The view menu lets you open or close panels and switch to different tabs in the Material Editor.
 
 | Menu item | Function |
 | - | - |
+| Previous Tab `Ctrl+Shift+Tab`| Switches to the previously opened tab. |
+| Next Tab `Ctrl+Tab`| Switches to the next opened tab. |
 | Asset Browser | Toggles the Asset Browser panel. |
 | Inspector | Toggles the Inspector panel. |
-| Console | Toggles the Console panel. |
-| Python Terminal | Toggles the Python Terminal panel. |
-| Performance Monitor | Toggles the Performance Monitor panel. |
 | Viewport Settings | Toggles the Viewport Settings panel. |
-| Previous Tab | Switches to the previously opened tab. |
-| Next Tab | Switches to the next opened tab. |
+| Performance Monitor | Toggles the Performance Monitor panel. |
+| Python Terminal | Toggles the Python Terminal panel. |
 
 ### Help Menu
 The Help menu provides support and resources for the Material Editor.
 
 | Menu item | Hotkey | Function |
 | - | - | - |
-| Material Editor Help | `F1` | Launches a web browser to the Material Editor documentation.|
-| About Material Editor |  | Displays information about the Material Editor. |
+| Help... |  | Launches the Material Editor Help window and displays a list of controls in the Material Editor. |
+| About... |  | Displays information about the Material Editor. |
 
 
 ## Viewport
@@ -158,10 +152,11 @@ The General property group contains basic properties that are required by the Vi
 
 | Property | Description |
 | - | - |
-| **Enable Grid** | Show or hide the ground plane. (This property is also accessible in the Viewport Toolbar.) |  |  |
-| **Enable Shadow Catcher** | Show or hide shadow effects. (This property is also accessible in the Viewport Toolbar.) |  |  |
-| **Enable Alternate Skybox** | Toggle to display the alternate skybox image if one is specified by the **Skybox Image Asset (Alt)** property in the lighting preset.  |  |  |
-| **Field of View** | Adjust the camera's field of view. |  |  |
+| **Enable Grid** | Show or hide the ground plane. (This property is also accessible in the Viewport Toolbar.) |
+| **Enable Shadow Catcher** | Show or hide shadow effects. (This property is also accessible in the Viewport Toolbar.) |
+| **Enable Alternate Skybox** | Toggle to display the alternate skybox image if one is specified by the **Skybox Image Asset (Alt)** property in the lighting preset.  |
+| **Field of View** | Adjust the camera's field of view. |
+| **Display Mapper Type** | Configure tone mapping and color grading |
 
 ### Model
 The Model property group allows you to manage the list of available model presets, and configure their properties. Model presets are useful for previewing materials on a variety of surfaces. Atom includes a collection of basic models, and you can create additional presets with custom models. Model presets are stored in JSON files (`*.modelpreset.azasset`) and can be configured in the Viewport Settings. 

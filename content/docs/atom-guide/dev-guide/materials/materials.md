@@ -6,8 +6,6 @@ toc: false
 weight: 100
 ---
 
-{{< preview-new >}}
-
 **Materials** contain data that control how model surfaces appear in a 3D environment. All materials have a **material type**, which classifies materials that share the same properties such as hard surfaces, cloth, or skin. Materials inherit properties either directly from the material type, or from other materials. 
 
 Materials and material types are stored as data items in JSON files. The Atom Material Builder converts the data files into material assets. The material assets are then consumed by the application and applied to a mesh's surface. 
@@ -17,7 +15,7 @@ Materials and material types are stored as data items in JSON files. The Atom Ma
 
 A full list of material types in Atom is listed in [Material Types in Atom](#material-types-in-atom).
 
-For more information on PBR, see [Physically-based Rendering (PBR)](/docs/atom-guide/look-dev/materials/pbr/) and [Working with StandardPBR materials](./material-build-pipeline.md). 
+For more information on PBR, see [Physically-based Rendering (PBR)](/docs/atom-guide/look-dev/materials/pbr/)<!-- and [Working with StandardPBR materials](./material-build-pipeline)DRAFT TOPIC-->. 
 
 
 ## Materials
@@ -91,4 +89,4 @@ Material and material type files produce **Material Assets** and **Material Type
 
 A material type file (`*.materialtype`) produces a Material Type Asset (`*.azmaterialtype`) in the cache. It contains property layout information, a list of shaders to use, and possibly functors for special processing.
 
-A material file (`*.material`) produces a Material Asset (`*.azmaterial`) in the cache. Every Material Asset references a single Material Type Asset. It contains the inherited tree of material property values and compresses it into a single list. Material Assets can be referenced by Model Assets and/or assigned to a model using a Material Component in the Open 3D Engine (O3DE). Material Assets can create any number of material instances at runtime for the renderer to use. You can change the property values of a material instance without impacting other instances of the same material.  Unlike a Material Asset, a material instance only exists in memory and not on disk. 
+A material file (`*.material`) produces a Material Asset (`*.azmaterial`) in the cache. Every Material Asset references a single Material Type Asset. It contains the inherited tree of material property values and compresses it into a single list. Material Assets can be referenced by Model Assets and/or assigned to a model using a Material Component in the **Open 3D Engine (O3DE)**. Material Assets can create any number of material instances at runtime for the renderer to use. You can change the property values of a material instance without impacting other instances of the same material.  Unlike a Material Asset, a material instance only exists in memory and not on disk. 

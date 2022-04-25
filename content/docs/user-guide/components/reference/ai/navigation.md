@@ -1,26 +1,22 @@
 ---
+linkTitle: Navigation
 description: ' Use the Navigation component to enable an entity to find and follow
   paths in Open 3D Engine. '
-title: Navigation
+title: Navigation Component
+draft: True
 ---
 
-{{< preview-migrated >}}
+
 
 The **Navigation** component provides path-finding and path-following functionality for AI movement, typically on a navigation mesh.
 
-![\[AI can use navigation to move along a path, typically on a navigation mesh.\]](/images/user-guide/component/component-navigation-path.png)
-
-**Topics**
-+ [Navigation Component Properties](#component-navigation-properties)
-+ [NavigationComponentRequestBus EBus Interface](#component-navigation-ebusrequest)
-+ [NavigationComponentNotificationBus EBus Interface](#component-navigation-ebusnotification)
-+ [Navigation Pathing Cvars](#component-navigation-cvars)
+![AI can use navigation to move along a path, typically on a navigation mesh.](/images/user-guide/component/component-navigation-path.png)
 
 ## Navigation Component Properties 
 
 The **Navigation** component has the following properties:
 
-![\[Navigation component properties\]](/images/user-guide/component/component-navigation-properties.png)
+![Navigation component properties](/images/user-guide/component/component-navigation-properties.png)
 
 **Agent Type**
 Specifies this AI's entity type for navigation purposes. Defining the agent type determines which [navigation area](/docs/user-guide/components/reference/ai/nav-area/) the entity follows in a scenario where there are different navigation meshes for larger vehicles and smaller humanoid bots. These agent types are defined in the `Scripts\AI\Navigation.xml` file of your project.
@@ -57,7 +53,7 @@ Default value: `false`
 
 Use the following request functions with the `NavigationComponentRequestBus` event bus (EBus) interface to communicate with other components of your game.
 
-For more information about using the EBus interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
+For more information about using the EBus interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
 
 ### FindPath 
 
@@ -167,7 +163,7 @@ Yes
 
 Use the following notification functions with the `NavigationComponentNotificationBus` event bus (EBus) interface to communicate with other components of your game.
 
-For more information about using the EBus interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
+For more information about using the EBus interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
 
 ### OnSearchingForPath 
 

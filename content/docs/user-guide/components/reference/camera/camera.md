@@ -1,52 +1,73 @@
 ---
-description: ' Use the Camera component to allow an entity to be used as a camera
-  in Open 3D Engine. '
-title: Camera
+linkTitle: Camera
+title: Camera Component
+description: ' Use the Camera component to allow an entity to be used as a camera in Open 3D Engine (O3DE). '
 ---
 
-{{< preview-migrated >}}
+The **Camera** component adds a camera to an entity.
 
-The **Camera** component allows an entity to be used as a camera. To use the **Camera** component, you must first add a Camera Framework gem to your project. For information, see [Camera Framework Gem](/docs/user-guide/gems/reference/camera/).
+## Provider ##
 
-## Camera Component Properties 
+[Camera Gem](/docs/user-guide/gems/reference/rendering/camera)
 
-![\[Camera component properties in the Entity Inspector.\]](/images/user-guide/component/component-camera-properties.png)
+## Camera properties 
 
-The **Camera** component has the following properties:
+![Camera component properties in the Entity Inspector.](/images/user-guide/components/reference/camera/camera-component.png)
+
+| Property | Description | Values | Default |
+|-|-|-|-|
+| **Be this camera** | Choose the **Be this camera** button to activate the camera's view in the viewport.  For more information, see [Changing the Camera View](/docs/user-guide/editor/camera-space/). |||
+| **Orthographic** | If set to enabled, this camera will use an orthographic projection instead of a perspective projection. Objects will appear the same size, regardless of their distance from the camera. | Boolean | `Disabled` |
+| **Field of view** | Vertical field of view in degrees. | 0.0 - 180.0 | `75` |
+| **Near clip distance** | Distance to the near clip plane of the view frustum in meters. Must be less than **Far clip distance**. | 0.001 to Infinity | `0.2` |
+| **Far clip distance** | Distance to the near far plane of the view frustum in meters. Must be greater than **Near clip distance**. | 0.001 to Infinity | `1024` |
+| **Make active camera on activation** | If set to enabled, this camera will become the active render camera when the component activates. | Boolean | `Enabled` |
+| **Debug - Frustrum length**| Length of the frustum shape as a percentage of the **Far clip distance**. | 0.01 - 100.0 | `1.0` |
+| **Debug - Frustrum color** | Color of the frustum shape. | Eight bits per channel color: 0-255 | `255,255,0` |
+
+## CameraRequestBus
+
+| Request Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetFarClipDistance` | Returns the **Far clip distance** of the camera in meters. | None | Far Clip Distance: Float | Yes |
+| `GetFov` | Returns the **Field of view** of the camera in degrees. | None | FOV: Float | Yes |
+| `GetFovDegrees` | Returns the **Field of view** of the camera in degrees. | None | FOV: Float | Yes |
+| `GetFovRadians` | Returns the **Field of view** of the camera in radians. | None | FOV: Float | Yes |
+| `GetNearClipDistance` | Returns the **Near clip distance** of the camera in meters. | None | Near Clip Distance: Float | Yes |
+| `GetOrthographicHalfWidth` | Returns the orthographic half-width of the camera. | None | Half-Width: Float | Yes |
+| `IsActiveView` | Returns `True` if the camera is the current active view. | None | Boolean | Yes |
+| `IsOrthographic` | Returns `True` if the camera is set to use an orthographic perspective. | None | Boolean | Yes |
+| `MakeActiveView` | Sets the camera to be the active view. | None | None | Yes |
+| `SetFarClipDistance` | Sets the **Far clip distance** of the camera in meters. | Far Clip Distance: Float | None | Yes |
+| `SetFov` | Sets the **Field of view** of the camera in degrees. | FOV: Float | None | Yes |
+| `SetFovDegrees` | Sets the **Field of view** of the camera in degrees. | FOV: Float | None | Yes |
+| `SetFovRadians` | Sets the **Field of view** of the camera in radians. | FOV: Float | None | Yes |
+| `SetNearClipDistance` | Sets the **Near clip distance** of the camera in meters. | Near Clip Distance: Float | None | Yes |
+| `SetOrthographic` | If `True`, sets the camera to use an orthographic perspective. | Boolean | None | Yes |
+| `SetOrthographicHalfWidth` | Sets the orthographic half-width of the camera. | Half-Width: Float | None | Yes |
 
 
-****
+## CameraNotificationBus
 
-| Name | Description |
-| --- | --- |
-|  **Field of view**  |  Vertical field of view in degrees. Valid values: `0` to `180`  Default value: `75`  |
-|  **Near clip distance**  |  Distance to the near clip plane of the view frustum in meters. Default value: `0.2`  |
-|  **Far clip distance**  |  Distance to the near far plane of the view frustum in meters. Default value: `1024`  |
-|  **Be this camera**  |  Editor uses the selected camera as its view. For more information, see [Changing the Camera View](/docs/user-guide/editor/camera-space/).  |
-| Frustum length |  Length of the frustum shape. Default value: `1.0` percent  |
-|  **Frustum color**  |  Color of the frustum shape. Default value: `255`, `255`, `0`  |
+| Request Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `OnActiveViewChanged` | Notifies listeners that a new camera has been made the active view. | None | EntityId | Yes |
+| `OnCameraAdded` | Notifies listeners that a new camera is active in the level. | None | EntityId | Yes |
+| `OnCameraRemoved` | Notifies listeners that a camera has been deactivated in the level. | None | EntityId | Yes |
 
-## EBus Request Bus Interface 
+## CameraSystemRequestBus
 
-Use the following request functions with the event bus (EBus) interface, `CameraRequestBus`, to communicate with other components of your game.
+| Request Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetActiveCamera` | Returns the EntityId of the active camera. | None | EntityId | Yes |
 
-For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
+For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
 
+## Example Lua script
 
-****
+The following is an example of Lua script using the `CameraRequestBus`.
 
-| Request Name | Description |
-| --- | --- |
-|  `GetFov`  |  Gets the current field of view.  |
-|  `SetFov`  |  Sets the current field of view.  |
-|  `GetNearClipDistance`  |  Gets the current near clip distance.  |
-|  `SetNearClipDistance`  |  Sets the current near clip distance.  |
-|  `GetFarClipDistance`  |  Gets the current far clip distance.  |
-|  `SetFarClipDistance`  |  Sets the current far clip distance.  |
-
-The following is an example of script using the **Request Bus Interface**.
-
-```
+```lua
 local camerasample =
 {
     Properties =
@@ -63,6 +84,6 @@ end
 return camerasample
 ```
 
-## Creating Camera Entity from View 
+## Create camera entity from view 
 
 You can create a static camera view from a specific entity by right-clicking an entity in the viewport and choosing **Create camera entity from view**. This places a new entity with a camera component at the same point. You can adjust the view of the camera by modifying its transform component.

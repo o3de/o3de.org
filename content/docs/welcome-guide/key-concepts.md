@@ -6,7 +6,7 @@ weight: 200
 toc: true
 ---
 
-Open 3D Engine (O3DE) provides a complete, end-to-end environment for developing and packaging graphically intensive games, simulations, and applications on a wide variety of platforms. Because it's a large development environment with so many different features and tools, O3DE can be intimidating at first. This topic covers the various parts of O3DE at a high level, and the common ways you can work with it depending on your role as a developer, designer, or artist.
+**Open 3D Engine (O3DE)** provides a complete, end-to-end environment for developing and packaging graphically intensive games, simulations, and applications on a wide variety of platforms. Because it's a large development environment with so many different features and tools, O3DE can be intimidating at first. This topic covers the various parts of O3DE at a high level, and the common ways you can work with it depending on your role as a developer, designer, or artist.
 
 O3DE consists of tools, editors, and systems that help you build your project. At its core, it provides the following:
 
@@ -30,61 +30,57 @@ The following image shows the structure of project runtimes built with O3DE:
 
 ## Overview of the O3DE SDK
 
-O3DE is modular. It is constructed of a common *core* that all modules depend on, and then a plugin and extension system that adds more features.
+O3DE is modular&mdash;it's constructed of a common core that all modules depend on, with plugins and extension systems that add more features. These core modules are provided by the O3DE software development kit (SDK) and are the essential frameworks to extend the engine with new features.
 
-The following are the core modules:
+The following image illustrates the dependency graph for O3DE's core modules: `AzCore`, `AzFramework`, `AzGameFramework`, `AzToolsFramework`, and `AZQtComponents`. High-level products, such as project runtimes, command line interface (CLI) tools, and graphical user interface (GUI) tools, all depend on the core modules.
 
-* [`AzCore`](https://o3de.org/docs/api/frameworks/azcore/) provides math, serialization, memory management, eventing and pub/sub interfaces, as well as the ability to load plugin modules. It provides the component-entity model and contains an implementation of C++ STL that includes memory alignment aware containers and other guarantees.
+![O3DE core module dependency graph](/images/user-guide/programming/o3de-architecture-dependency-graph.svg)
 
-* [`AzFramework`](https://o3de.org/docs/api/frameworks/azframework/) provides higher level structures. `AzFramework` also contains some additional code common to most, but not all applications.
+For more information on O3DE's engine core, refer to the [Programming Guide](/docs/user-guide/programming/). 
 
-* [`AzGameFramework`](https://o3de.org/docs/api/frameworks/azgameframework/) contains core functions only used by runtime applications. It provides loop management, and a bootstrap sequence that is specific to runtime applications.
 
-* [`AzToolsFramework`](https://o3de.org/docs/api/frameworks/aztoolsframework/) contains core functions only used by tools. It provides UI components such as object pickers, property editors, source control integrations, and a bootstrap sequence that is specific to tools.
+## High-level O3DE directories
 
-* [`AzQtComponents`](https://o3de.org/docs/api/frameworks/azqtcomponents/) contains common UI widgets (scroll bars, buttons, dialogs, and so on) that provide a consistent look and feel between tool applications.
+There are three primary directories to be aware of with O3DE: The *O3DE engine directory*, and the `O3DE` and `.o3de` directories in the user's home directory.
 
-The following image illustrates the dependency graph for the core modules of O3DE.
+### O3DE engine
 
-![O3DE core module dependency graph](/images/welcome-guide/o3de-architecture-dependency-graph.svg)
+{{< image-width "/images/welcome-guide/directory-o3de-engine.png" "650" "The O3DE engine directory." >}}
 
-Some examples of the high-level products using these frameworks are:
+The O3DE engine directory contains O3DE's core engine, various tools including **O3DE Editor**, and the core Gems and templates. The directory name depends on how you install O3DE, but here are some common variations: 
+- `o3de` -- if you cloned it from the `o3de` repository in GitHub.
+- `o3de-development` -- if you downloaded the `development` branch as a ZIP folder from the `o3de` repository in GitHub. 
+- `o3de/<version>` -- if you installed the O3DE binary by running the installer. 
 
-* **Project runtimes** - End products created by developers using O3DE, such as games, dedicated server runtimes, and world simulations.
+A *source code directory*, such as `o3de` or `o3de-development` in the preceding example, contains all of the source code that makes up O3DE's core, whereas an *install directory*, such as `o3de/<version>`, contains pre-built binaries to run O3DE and its tools.
 
-* **CLI tools** - Tools invoked from the command-line interface without a GUI, such as the AZSL Compiler and the Asset Batch Processor.
+When you begin to work in O3DE, you'll need to learn more about O3DE subdirectories in the [Programming](/docs/user-guide/programming/#o3de-directories) section. 
 
-* **GUI tools** - Tools with a graphical UX used for developing O3DE projects, such as the O3DE Editor, O3DE Asset Processor, and the Atom Materials Editor.
+### `O3DE`
 
-### O3DE Directory Structure
+{{< image-width "/images/welcome-guide/directory-o3de.png" "500" "The O3DE directory in user's home directory." >}}
 
-There are two primary directories to be aware of with O3DE: The `o3de-packages` directory, and the `o3de` directory.
+The `O3DE` directory is located in the user's home directory. It contains the default locations for O3DE objects such as Gems, projects, and templates.
 
-* `o3de-packages` - A user-created directory that may live outside of the O3DE installation. Many O3DE features (both core features and those provided by Gems) use third-party libraries. For example, O3DE supports `.fbx` files through the Open Asset Import Library (assimp), the O3DE GUI Tools use Qt, and the physics system uses NVIDIA PhysX. The third-party libraries that are required to build these features for your project, along with all the other necessary third-party libraries, live in the `o3de-packages` directory you create. The location of this directory is set as part of the O3DE configuration process before build.
+### `.o3de`
 
-* `o3de` - The `o3de` directory contains subdirectories that hold O3DE's core (including source code for `AzFramework`), various tools including **O3DE Editor**, and available Gems. You may also choose to keep your own project directories in the main `o3de` directory. In the `o3de` directory are several subdirectories to be aware of:
+{{< image-width "/images/welcome-guide/directory-.o3de.png" "500" "The `.o3de` directory in user's home directory." >}}
 
-  {{< note >}}
-  This section describes the directory structure of the O3DE open source project, not the directories produced from a binary installer.
-  {{< /note >}}
-  
-  * `cmake` contains configuration, download and build scripts for O3DE.
+The `.o3de` directory is located in the user's home directory. It contains the O3DE manifest, the default location for third-party packages, and other user-specific directories. `.o3de` includes the following files and subdirectories:
 
-  * `Code` contains the C++ code and headers that used to build O3DE and provide its APIs. APIs are organized by libraries, each of which consists of a well-defined feature set. Library headers offer virtual interfaces that you'll provide implementations of to connect your code to the relevant O3DE system or feature.
+- `/o3de_manifest.json`: The O3DE manifest informs O3DE of the registered engines, projects, and other external O3DE objects. 
+- `/3rdParty`: The default directory for third-party libraries that are required to build some O3DE features. 
 
-  * `Code/Framework` contains the all of the source code and headers used by the core O3DE libaries such as `AzCore`, `AzFramework`, and `AzNetworking`.
-
-  * `Gems` contains the source and build files for the available Gems. Each Gem has its own subdirectory. When you create a new Gem, you add the code and build sources here, and then enable the Gem in your project configuration. It is possible for a Gem to contain other Gems. The Atom Gem, for example, contains several Gems providing various tools, libraries, interfaces, and utilities for Atom Renderer.
-
-  * `Templates` contains the default templates for Gems and Projects.
 
 ## Working with Gems
 
 O3DE is a sandbox of different bits, provided by Gems, that you can combine in your project. You only need to include the Gems that provide the features and functionality that your project requires. When you need to change or extend the behavior of something, you can work with only the Gem that contains the functionality that you want to change. This modular approach allows the community to provide packaged features and assets to extend O3DE, and even provide alternate solutions for entire systems. Suppose you'd like to use a an unsupported file format, an alternate scripting language, or that you need a version of a system that has some cutting-edge experimental features. You can use solutions that O3DE users have provided via their own Gems, or you can create a Gem that provides that support and share it with other O3DE users. By focusing on modularity, you can safely experiment with different feature changes without risking progress and unintended regression on your project. Asset collections, code samples, components, libraries, tools, and even entire game projects can be distributed as Gems.
 
-You enable Gems when you create and configure your project. You can enable additional Gems and disable unused Gems at any time by updating your project configuration. Some Gems are core systems and are required for all O3DE projects. Other Gems are extensions for existing Gems and require their dependencies to be enabled for your project. Enabled Gems are detected and built automatically when you build your project.
+You enable Gems when you create and configure your project. You can enable additional Gems and disable unused Gems at any time by updating your project configuration. Some Gems are core systems and are required for all O3DE projects. Other Gems are extensions for existing Gems and require their dependencies to be enabled for your project. Enabled Gems are detected and built automatically when you build your project. Refer to the [Gems Reference](/docs/user-guide/gems/reference/) for a complete list of Gems available in O3DE. To use them in your project, follow [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems/).
 
-You can create your own Gems and easily reuse and distribute your own code and assets. To get a better idea of what goes into creating a Gem, have a look at the `/o3de/Gems` directory and examine the included Gems. The process for creating your own Gem is very similar to creating a project.
+You can create your own Gems and easily reuse and distribute your own code and assets. To get a better idea of what goes into creating a Gem, have a look at the `/o3de/Gems` directory and examine the included Gems. The process for creating your own Gem is very similar to creating a project. Learn to develop Gems in the [Programmer's Guide to Gem Development](/docs/user-guide/programming/gems/).
+
+
 
 ## The EBus Messaging System
 
@@ -108,7 +104,7 @@ EBuses have many advantages over traditional polling methods:
 
 With EBusses, you can:
 
-* Make direct gobal function calls.
+* Make direct global function calls.
 * Dispatch processing to multiple handlers.
 * Queue all calls, acting like a command buffer.
 * Use as an addressable mailbox.
@@ -121,9 +117,9 @@ Likewise, to expose functionality from your own gems and provide data to another
 
 Inside of your Gem code, you also manage the connection and disconnection of your implemented handler for the EBus. EBus is just a list of handlers that calls all the functors (function pointers) registered with it.
 
-For singleton handlers where you only need one interface to communicate across DLLs, consider using [AZ::Interface](/docs/user-guide/engine/az-interface) and [AZ:Event](/docs/user-guide/engine/az-event) directly, without EBus.
+For singleton handlers where you only need one interface to communicate across DLLs, consider using [AZ::Interface](/docs/user-guide/programming/az-interface) and [AZ:Event](/docs/user-guide/programming/az-event) directly, without EBus.
 
-For details on using EBus, see [Working with the Event Bus (EBus) System](/docs/user-guide/engine/ebus)
+For details on using EBus, see [Working with the Event Bus (EBus) System](/docs/user-guide/programming/ebus)
 
 ## The Component Entity system
 
@@ -172,19 +168,16 @@ When you're preparing to ship, you'll need to package the assets that your proje
 
 Asset Bundler makes shipping the specific assets that are used for the release of your game more reliable and repeatable. Reliability is based on an underlying dependency system. If you make changes to your project and add, remove, or update assets, Asset Bundler uses the dependencies to automatically determine which assets to include. Repeatability is based on underlying configuration files that provide consistency each time you run Asset Bundler.
 
-## Scripting for O3DE
+## Scripting gameplay
 
 O3DE includes two scripting technologies for creating logic and behaviors: *Script Canvas* and *Lua*.
 
-**Script Canvas** is a visual scripting environment. In the Script Canvas editor, you create, connect, and rearrange graphical nodes that provide a visual representation of the logic flow. Script Canvas offers an approachable and easy-to-read environment to author behaviors using the same framework as Lua and C++. You can use Script Canvas to create scripts without needing to know how to code.
+- **Script Canvas** is a general purpose, visual scripting environment. In the **Script Canvas Editor**, you lay out and connect graphical nodes that provide a visual representation of the logic flow. Script Canvas offers an approachable and easy-to-read environment to author behaviors using the same framework as Lua and C++. You can use Script Canvas to create scripts without needing to know how to code.
 
-To enable Script Canvas for O3DE, you must enable the **Script Canvas Gem**.
+- **Lua** is a powerful, fast, lightweight, embeddable scripting language. Lua facilitates quick iteration in your project because you can run your changes immediately without needing to recompile your source code.
 
-Lua is a powerful, fast, lightweight, embeddable scripting language. Lua facilitates quick iteration in your project because you can run your changes immediately without needing to recompile your source code.
+Learn more about Script Canvas and Lua in [Scripting Gameplay in O3DE](/docs/user-guide/scripting/) . 
 
-O3DE's functionality is exposed to Script Canvas and Lua by the behavior context. The behavior context reflects runtime code and makes it accessible to scripts by providing bindings to C++ classes, methods, properties, constants, and enums. The behavior context also provides bindings for O3DE's EBus so you can dispatch and handle events through Script Canvas and Lua.
-
-Functionality for both Script Canvas and Lua is added to entities through components. You can have multiple script components and mix and match between Lua and Script Canvas within your entities. This approach enables you to create small, manageable modules of logic and behavior that can be reused throughout your projects.
 
 ## Available Release Runtimes
 

@@ -6,8 +6,6 @@ title: Concepts and Terms
 weight: 700
 ---
 
-{{< preview-migrated >}}
-
 The following terms and concepts relate to the O3DE Asset Bundler:
 
 **Asset ID**
@@ -23,8 +21,7 @@ An asset bundle consists of product assets grouped together in a single compress
 An asset list contains information for product assets. This file is generated using the Asset Bundler. The information includes a fingerprint for each asset in the list. The fingerprint includes a modification time and file hash. An asset list can be generated from seed lists, individual seeds, or by using comparison operations on other asset lists. Asset list files have the file extension `.assetlist`. See also **Seed** and **Seed List**.
 
 **Builder**
-An asset builder is a C++ module that is used to transform source assets into product assets. For example, a builder that handles textures might also transform a source asset PNG file to a product asset DDS file. Builders emit metadata about source and product assets, such as dependencies.
-For more information, see [Creating a Custom Asset Builder](/docs/user-guide/tutorials/assets/custom-builder.md).
+An asset builder is a C++ module that is used to transform source assets into product assets. For example, a builder that handles textures might also transform a source asset PNG file to a product asset DDS file. Builders emit metadata about source and product assets, such as dependencies. For more information, see [Creating a Custom Asset Builder](/docs/user-guide/assets/builder).
 
 **Copy Job**
 A copy job is an asset processing task that copies a source asset to the cache without modifying it. There are two ways that copy jobs occur:
@@ -77,4 +74,4 @@ Source assets are associated with a gem, and source GUIDs are unique within a ge
 Some of the O3DE tool operations take relative paths as inputs. There are two types of relative paths:
 + Cache-relative paths - Tells various systems where to find pre-processed assets in your asset cache. Each O3DE tool that uses cache-relative paths will be relative to a different subdirectory of the asset cache. For example, a cache-relative path from the absolute path `C:\O3DE\dev\Cache\SamplesProject\pc\samplesproject\levels\samples\advanced_rinlocomotion\level.pak` that does not include the platform and project would be `levels\samples\advanced_rinlocomotion\level.pak`.
 + Engine-root-relative paths - Specifies files located in directories under `C:\O3DE\dev\`. For example, an engine-root-relative path lets you represent the location `C:\O3DE\dev\SamplesProject\textures\UIEditor_Sample\ButtonNormal.tif` as `SamplesProject\textures\UIEditor_Sample\ButtonNormal.tif`.
-For more information, see [Asset IDs and File Paths](/docs/user-guide/assets/pipeline/developers.md).
+For more information, see [Asset IDs and File Paths](/docs/user-guide/assets/pipeline/developers/).

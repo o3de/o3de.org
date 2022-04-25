@@ -1,241 +1,148 @@
 ---
-description: ' Use the PhysX Collider component to define where collision detection
-  and response occur in Open 3D Engine. '
-title: PhysX Collider
+linkTitle: PhysX Collider
+title: PhysX Collider Component
+description: The PhysX Collider component adds a PhysX collider to an entity so that the entity can be included in PhysX simulation.
+toc: true
 ---
 
-{{< preview-migrated >}}
+The **PhysX Collider** component adds a PhysX collider to an entity so that the entity can be included in PhysX simulation. The collider can be defined by a mesh you create, automatically generated convex meshes, shapes that have been automatically fit to a decomposed mesh, or a simple shape primitive selected in the the PhysX Collider component. The PhysX Collider component can also define a trigger area or a force region.
 
-Performance demands in games and real-time applications require physics simulations to be solved in fractions of a second. The PhysX Collider component allows you to specify primitive shapes or PhysX mesh assets to calculate collisions between entities, ensuring fast physics simulation. A simple entity such as a crate might have a single PhysX Collider component, while more complex entities, such as vehicles, might require multiple PhysX Collider components.
+{{< note >}}
+The PhysX Collider component attached to an entity by itself creates a *static* (non-moving) entity. Add a [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) component with a PhysX Collider component to create a *dynamic* or a *kinematic* entity. Dynamic entities have simulated movement in response to collisions and forces. Kinematic entities aren't affected by collisions or forces, but are driven by scripted movement. For information about the various PhysX collider types and how to process them, refer to [Process PhysX Collider Assets](/docs/learning-guide/tutorials/assets/physx-colliders/).
+{{< /note >}}
 
-**Note**
-The PhysX Collider component attached to an entity by itself creates a static (non-moving) entity, such as a wall or a mountain. To create a dynamic (moving) entity, you also need to add a **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/)** component. The **PhysX Rigid Body Physics** component requires either a primitive collider or convex mesh collider. Triangle mesh physics assets work only with static entities.
+## Provider
 
-The PhysX Collider component requires the [PhysX](/docs/user-guide/gems/reference/physx/) gem enabled in your project.
+[PhysX Gem](/docs/user-guide/gems/reference/physics/nvidia/physx/)
 
-For more information, see [Simulating physics behavior with the PhysX system](/docs/user-guide/interactivity/physics/nvidia-physx/).
+## Properties 
 
-**Topics**
-+ [PhysX Collider properties](#component-physx-collider-properties)
-+ [Static PhysX entities](#static-physx-entities)
-+ [Primitive colliders](#primitive-colliders)
-+ [Physics asset colliders](#physics-asset-colliders)
-+ [Collider component mode](#colliders-component-mode)
-+ [Colliders as triggers](#colliders-as-triggers)
+![PhysX Collider component interface.](/images/user-guide/components/reference/physx/physx-collider-ui-01.png)
 
-## PhysX Collider properties 
+### Base properties
 
-![\[PhysX Collider component interface.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A.png)
+| Property | Description | Value | Default |
+| - | - | - | - |
+| **Collision Layer** | Assigns the collider to a collision layer. Collision layers can be used to restrict physical interactions between PhysX objects. | Any collision layer defined in the project's [Collision Layers](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-layers/).  | `Default` |
+| **Collides With** | Assigns the collider to a collision group. Collision groups contain the collision layers that this collider can collide with. | Any collision group defined in the project's [Collision Groups](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-groups/). | `All` |
+| **Trigger** | If enabled, this collider functions as a trigger. Triggers perform quick overlap tests with other colliders. Triggers don't apply forces or return contact point information. Use this to speed up PhysX computations in which a simple overlap test between colliders is sufficient. Triangle meshes are not supported as triggers. | Boolean | `Disabled` |
+| **Simulated** | If enabled, this collider is included in the physics simulation. | Boolean | `Enabled` |
+| **In Scene Queries** | If enabled, this collider can be queried for raycasts, shapecasts, and overlap. | Boolean | `Enabled` |
+| **Offset** | Sets the collider's local offset position relative to the entity. | Vector3: -Infinity to Infinity | X: `0.0`, Y: `0.0`, Z: `0.0` |
+| **Rotation** | Sets a local rotation for the collider around the **Offset** of the PhysX collider component. | Vector3: -180.0 to 180.0 | X: `0.0`, Y: `0.0`, Z: `0.0` |
+| **Library (Physics Materials)** | The physics material library of the project. | A `.physmaterial` library product asset. | The global project `.physmaterial` library. |
+| **Slots (Physics Materials)** | Choose a physics material for each material of this collider. Physics materials define physical properties for the surface such as dynamic and static friction, and density. A collider can have multiple physics materials assigned. | Physics material(s) from the assigned `.physmaterial` library | `<Default Physics Material>` |
+| **Tag** | Sets a tag for this collider. Tags can be used to quickly identify components in script or code. | String | None |
+| **Rest offset** | Sets the minimum distance between this collider and other colliders. Although this property applies to all colliders, it is particularly important for dynamic colliders. Dynamic colliders are at rest when the forces affecting them drop below the **Sleep threshold** of their rigid body component. When a dynamic collider comes to rest while in contact with any other collider, the colliders are separated by the sum of their **Rest offset** values. **Rest offset** values that are too large might make dynamic entities appear to float. Negative **Rest offset** values might make dynamic entities appear to intersect. You might need to adjust this value in scenarios where the collider does not closely match the render mesh of the entity. The **Rest offset** value must be less than the **Contact offset** value. | Float: -Infinity to 50.0 | `0.0` |
+| **Contact offset** | Sets the distance from the collider where collisions are detected. PhysX bodies generate contacts when they are within the sum of their **Contact offset** values. The **Contact offset** value must be greater than the **Rest offset** value. | Float: 0.0 to 50.0 | `0.02` |
+| **Shape** | Sets the collider for the collider component. A collider can be a primitive shape or a physics asset. Primitive shape colliders are not meshes. They are defined by simple dimension parameters that describe a box, sphere, or capsule. Primitive shape colliders are high performance, but they may not accurately represent the surface of the mesh provided by a **Mesh** component. Physics asset colliders are based on meshes that are processed by **Asset Processor**. Physics asset colliders can more accurately represent the shape of the mesh provided by a Mesh component, but incur a higher performance cost over primitive shapes. This property is set automatically if a `.pxmesh` product asset exists for the associated mesh or actor asset. For information on processing collider assets, refer to [Process PhysX Collider Assets](/docs/learning-guide/tutorials/assets/physx-colliders/). | `PhysicsAsset`, `Sphere`, `Box`, `Capsule` | `PhysicsAsset` |
+| **Draw Collider** | If enabled, the collider is displayed in the viewport. | Boolean | `Enabled` |
+| **Edit** | Enter collider component edit mode to adjust properties of the collider with manipulators in the viewport. |  |  |
 
-****Collision Layer****
-The collision layer that's assigned to the collider. For more information, see [Collision Layers](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-layers/).
+### PhysicsAsset shape properties
 
-****Collides With****
-The collision group containing the layers that this collider collides with. For more information, see [Collision Groups](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-groups/).
+![PhysX Collider component interface, Physics Asset.](/images/user-guide/components/reference/physx/physx-collider-ui-02.png)
 
-****Trigger****
-Set this collider as a trigger. A trigger performs a quick overlap test and does not apply forces or return contact point information. Use this to speed-up PhysX computations where a simple overlap between colliders is sufficient.
-Triangle meshes are not supported as triggers.
-Trigger Area components cannot be used with PhysX Collider.
+| Property | Description | Value | Default |
+| - | - | - | - |
+| **PhysX Mesh** | Assigns a `.pxmesh` collider product asset for this collider. For more information on creating PhysX mesh asset colliders, refer to [Process PhysX Collider Assets](/docs/learning-guide/tutorials/assets/physx-colliders/). | Product asset `.pxmesh` PhysX mesh. |  |
+| **Asset Scale** | Scales the collider shape independent of the entity. | Vector3: 0.0 to Infinity | X: `1.0`, Y: `1.0`, Z: `1.0` |
+| **Physics Materials from Asset** | If enabled, the physics materials for this collider are automatically set based on the Physics Materials from the mesh's PhysX asset. If the physics material doesn't exist in the **Physics Materials - Library**, the default physics material is applied. Physics material assignments cannot be edited while this option is enabled. | Boolean | `Enabled`|
 
-****Simulated****
-When enabled, this shape collider will be part of the physics simulation.
+### Sphere shape properties
 
-****In Scene Queries****
-When enabled, this shape collider can be queried for raycasts, shapecasts and overlap.
+![PhysX Collider component interface, Sphere.](/images/user-guide/components/reference/physx/physx-collider-ui-03.png)
 
-****Offset****
-Local offset position of the collider, relative to the entity.
+| Property | Description | Value | Default |
+| - | - | - | - |
+| **Radius** | Radius multiplier of the sphere collider. The size of the sphere primitive is the **Radius** value multiplied by the largest value in the **Scale** property in the entity's [Transform](/docs/user-guide/components/reference/transform/) component. | Float: 0.0 to Infinity | `0.5` |
 
-****Rotation****
-Local rotation of the collider about the **Offset** of the PhysX collider component.
+### Box shape properties
 
-****Library (Physics Materials)****
-The physics material library of the project.
+![PhysX Collider component interface, Box.](/images/user-guide/components/reference/physx/physx-collider-ui-04.png)
 
-****Slots (Physics Materials)****
-Choose a physics material for each material of this collider. A collider can have multiple materials assigned. For more information, see [Physics materials](/docs/user-guide/interactivity/physics/nvidia-physx/materials/).
+| Property | Description | Value | Default |
+| - | - | - | - |
+| **Dimensions** | Width, depth, and height of the box collider. | Vector3: 0.0 to Infinity | X: `1.0`, Y: `1.0`, Z: `1.0` |
 
-****Tag****
-Set a tag for this collider. Tags can be used to quickly identify components in script or code.
+### Capsule shape properties
 
-****Rest offset****
-PhysX bodies come to rest separated by the sum of their rest offset values. The **Rest offset** value must be less than the **Contact offset** value. Valid values rage from **-Infinity** to **50**.
+![PhysX Collider component interface, Box.](/images/user-guide/components/reference/physx/physx-collider-ui-05.png)
 
-****Contact offset****
-PhysX bodies generate contacts when they are within the sum of their contact offset values. The **Contact offset** value must be greater than the **Rest offset** value. Valid values rage from **0** to **50**.
+| Property | Description | Value | Default |
+| - | - | - | - |
+| **Height** | Height of the capsule collider. The **Height** value of the capsule must be at least twice the **Radius** value. For example, if the **Radius** of the capsule is `5.0`, the minimum **Height** is `10.0`. | Float: 0.0 to Infinity | `1.0` |
+| **Radius** | Radius of the capsule collider. The **Radius** value of the capsule must be no greater than half the **Height** value. For example, if the **Height** of the capsule is `10.0`, the maximum **Radius** is `5.0`. | Float: 0.0 to Infinity | `0.25` |
 
-****Shape****
-Shape of the collider. A collider can be a primitive shape or a physics asset.
-To use a primitive shape, choose **Box**, **Sphere**, or **Capsule**. For more information, see [Primitive colliders](#primitive-colliders).
-To use a physics asset, choose **Physics Asset**. For more information, see [Physics asset colliders](#physics-asset-colliders).
+## Collider component mode
 
-****Physics Asset shape****
+In collider component mode, you can edit colliders with manipulators in the viewport. To enter collider component mode, choose the **Edit** button at the bottom of the PhysX Collider component properties in the **Entity Inspector**.
 
-![\[PhysX Collider component interface, Physics Asset.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A-0.png)
+### Sub component modes
 
-**PhysX Mesh**
-Assign a physics asset to the collider. For more information, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export/).
-
-**Asset Scale**
-Scale the collider shape independent of the entity.
-
-**Physics Materials from Asset**
-When the **Physics Asset** shape is selected, and **Physics Materials from Asset** is enabled, the physics materials for this collider are automatically set based on the Physics Materials from the mesh's PhysX asset (see [FBX Settings PhysX tab](/docs/user-guide/assets/fbx-settings/settings-physx-tab/)). If the physics material doesn't exist in the **Physics Material - Library** the default physics material from **PhysX Configuration** will be used. The physics materials cannot be edited while this option is enabled.
-
-****Sphere shape****
-
-![\[PhysX Collider component interface, Sphere.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A-1.png)
-
-**Radius**
-Radius multiplier of the sphere collider. The size of the sphere primitive is the **Radius** multiplied by the largest value in the **Scale** property in the **[Transform](/docs/user-guide/components/reference/transform/)** component.
-
-****Box shape****
-
-![\[PhysX Collider component interface, Box.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A-2.png)
-
-**Dimensions**
-Width, depth, and height of the box collider.
-
-****Capsule shape****
-
-![\[PhysX Collider component interface, Capsule.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A-3.png)
-
-**Height**
-Height of the capsule primitive shape. The height property of the capsule must be at least twice the radius property. For example, if the radius of the capsule is **5.0**, the minimum height is **10.0**.
-
-**Radius**
-Radius of the capsule primitive shape. The radius property of the capsule must be no greater than half the height property. For example, if the height of the capsule is **10.0**, the maximum radius is **5.0**.
-
-****Draw Collider****
-Render the collider in the viewport. Enabled by default.
-
-****Edit****
-Enable collider component mode to edit properties of the collider in the viewport using manipulators.
-
-## Static PhysX entities 
-
-A PhysX entity that is static can interact with other entities, but doesn't move.
-
-**To create a static PhysX entity**
-
-1. Create an entity. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md).
-
-1. In the **Entity Inspector**, choose **Add Component** and then select **[Mesh](/docs/userguide/components/static-mesh.md)** component.
-
-1. In the **Mesh** component, choose a mesh asset for the **Mesh asset** property.
-
-1. In the **Entity Inspector**, choose **Add Component** and then select **PhysX Collider** component.
-
-1. In the **PhysX Collider** component, set the **Shape** to **Box**, and edit the **Dimensions** property so the box encloses the mesh asset.
-
-1. Press **Control+G** to enter play mode. Because your entity does not have a **PhysX Rigid Body** component, it is static and does not move.
-![\[PhysX Collider component example entity that is static.\]](/images/user-guide/component/physx/physx/ui-physx-collider-B.png)
-**Tip**
-On the **[Transform](/docs/user-guide/components/reference/transform/)** component, enable the **Static** property. This enables optimizations for static entities.
-
-## Primitive colliders 
-
-When you add the **PhysX Collider** component to an entity, you can specify the following basic collider shapes.
-+ **Sphere**
-+ **Box**
-+ **Capsule**
-
-These primitive shapes don't have an underlying mesh. Because they are defined by dimensions rather than a mesh, they are high-performance colliders and should be used when possible.
-
-## Physics asset colliders 
-
-Physics asset colliders are meshes that are created in a modeling application, or are convex meshes that are automatically generated by the FBX exporter. Because physics asset colliders are more complex than shapes, they are less efficient. Physics asset colliders should be used in cases where collision detection that more closely resembles the complex shape of the visible mesh is required. To generate PhysX collider mesh assets for your project, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export/).
-
-**Note**
-To define a mesh collider that has varying properties:
-Use a third-party content creation tool to define a mesh collider and use the FBX exporter to convert the mesh collider for your project. Mesh colliders created this way can only be added to static entities.
-Alternatively, attach multiple **PhysX Collider** components to the entity, and specify different PhysX collider shapes and properties for each component.
-
-**To create a mesh collider**
-
-1. Create an entity. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md).
-
-1. In the **Entity Inspector**, choose **Add Component** and then select **[Mesh](/docs/userguide/components/static-mesh.md)**.
-
-1. In the **Mesh** component, choose a mesh asset for the **Mesh asset** property.
-
-1. In the **Entity Inspector**, choose **Add Component** and then select **PhysX Collider**.
-**Note**
-If the asset specified for the **Mesh** component contains a PhysX collider mesh asset, the **PhysX Collider** automatically sets its **Shape** property to **Physics Asset**, and its **PhysX Mesh** property to the PhysX collider mesh asset. If the asset specified for the **Mesh** component contains more than one PhysX collider mesh asset, the first PhysX collider mesh asset found is assigned to the **PhysX Mesh** property.
-
-1. In the **PhysX Collider** properties, ensure that the **Shape** property has **Physics Asset** selected.
-
-1. For **PhysX Mesh**, ensure that the desired PhysX collider mesh asset is selected. Click the **...** button to the right of **PhysX Mesh** to change the mesh asset.
-![\[PhysX Collider component properties for asset and PhysX collision mesh.\]](/images/user-guide/component/physx/physx/ui-physx-collider-C.png)
-**Note**
-To generate PhysX collider mesh assets for your project, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export/).
-**Example**
-
-   Instead of a primitive shape, the entity has a PhysX collider mesh asset specified for the **PhysX Collider** component.
-![\[PhysX Collider component with a custom PhysX collider mesh asset to create a custom collider shape.\]](/images/user-guide/component/physx/physx/ui-physx-collider-D.png)
-
-**Note**
-To make an entity dynamic, in the **Entity Inspector**, choose **Add Component** and then select **PhysX Rigid Body Physics** component.
-Only primitive shapes and convex meshes can be used for dynamic colliders. If you assign a triangle mesh, the collider won't work. For dynamic objects, be sure to disable the **Static** property of the **Transform** component of your entity.
-
-## Collider component mode 
-
-In collider component mode, you edit colliders with manipulators in the viewport. To enter collider component mode, choose the **Edit** button at the bottom of the PhysX Collider component properties in the **Entity Inspector**.
-
-**Sub component modes**
 There are three editing modes available in collider component mode.
-+ **Resize** mode, which is unique to each collider type, scales the collider.
 
-   The manipulator displayed in the viewport in resize mode is dependent on the collider shape. For primitive colliders, the resize manipulator handles are represented as black squares. For **Physics Asset** colliders, the resize manipulator is represented as a familiar scale manipulator.
-+ **Offset** mode translates the collider relative to its entity transform.
-+ **Rotation** mode rotates the collider about the component's **Offset**.
+| Mode | Description |
+| - | - |
+| **Resize** |  Scales the collider. The manipulator displayed in the viewport in resize mode is dependent on the collider shape. For primitive colliders, the resize manipulator handles are represented as black squares. For **Physics Asset** colliders, the resize manipulator is represented as a familiar scale manipulator. |
+| **Offset** | Translates the collider relative to its entity transform. |
+| **Rotation** | Rotates the collider around the component's **Offset**. |
 
-**Resize (Sphere Shape)**
-**Sphere** resize mode has one linear manipulator that controls the **Radius** property.
+### Resize (Sphere Shape)
 
-![\[PhysX Collider component mode sphere resize manipulator\]](/images/user-guide/component/physx/physx/ui-physx-collider-E.png)
+Sphere resize mode has one linear manipulator that controls the **Radius** property.
 
-**Resize (Box Shape)**
-**Box** resize mode has six linear manipulators, one on each side of the box. The manipulators control the width, depth, and height **Dimensions** property.
+![PhysX Collider component mode sphere resize manipulator](/images/user-guide/components/reference/physx/physx-collider-resize-sphere.png)
 
-![\[PhysX Collider component mode box resize manipulator\]](/images/user-guide/component/physx/physx/ui-physx-collider-G.png)
+### Resize (Box Shape)
 
-**Resize (Capsule Shape)**
-**Capsule** resize mode has two linear manipulators. The manipulator at the top of the capsule controls the **Height** property. The manipulator on the side controls the **Radius** property.
+Box resize mode has six linear manipulators, one on each side of the box. The manipulators control the width, depth, and height **Dimensions** property.
 
-![\[PhysX Collider component mode capsule resize manipulator\]](/images/user-guide/component/physx/physx/ui-physx-collider-F.png)
+![PhysX Collider component mode box resize manipulator](/images/user-guide/components/reference/physx/physx-collider-resize-box.png)
 
-**Resize (Physics Asset Shape)**
-**Physics Asset** resize mode has a three axis scale manipulator.
+### Resize (Capsule Shape)
 
-![\[PhysX Collider component mode Physics Asset resize manipulator\]](/images/user-guide/component/physx/physx/ui-physx-collider-H.png)
+Capsule resize mode has two linear manipulators. The manipulator at the top of the capsule controls the **Height** property. The manipulator on the side controls the **Radius** property.
 
-**Offset**
-Offset mode has a three axis translate manipulator.
+![PhysX Collider component mode capsule resize manipulator](/images/user-guide/components/reference/physx/physx-collider-resize-capsule.png)
 
-![\[PhysX Collider component mode offset manipulator\]](/images/user-guide/component/physx/physx/ui-physx-collider-I.png)
+### Resize (Physics Asset Shape)
 
-**Rotation**
-Rotation mode has a three axis rotate manipulator.
+Physics Asset resize mode has a three-axis scale manipulator.
 
-![\[PhysX Collider component mode rotate manipulator\]](/images/user-guide/component/physx/physx/ui-physx-collider-J.png)
+![PhysX Collider component mode physics asset resize manipulator](/images/user-guide/components/reference/physx/physx-collider-resize-physicsasset.png)
 
-**Collider component mode hotkeys**
-These navigation hotkeys are available in collider component mode.
-+ **1** - Resize mode.
-+ **2** - Offset mode.
-+ **3** - Rotation mode.
-+ **Control + Mouse Wheel Up** - Next mode.
-+ **Control + Mouse Wheel Down** - Previous mode.
-+ **R** - Reset current mode. This is effectively an undo operation. You can step through the Resize, Offset, and Rotation modes and press R to reset changes to the current mode.
-+ **Escape** - Exit component mode.
+### Offset
 
-## Colliders as triggers 
+Offset mode has a three-axis translate manipulator.
 
-Triggers allow colliders to perform efficient overlap tests. Colliders marked as triggers won't have forces applied when they intersect with another collider. This is useful for detecting when something enters a certain area or when two objects overlap. Use Lua or Script Canvas to detect overlap.
+![PhysX Collider component mode offset manipulator](/images/user-guide/components/reference/physx/physx-collider-offset-mode.png)
 
-**Note**
+### Rotation
+
+Rotation mode has a three-axis rotate manipulator.
+
+![PhysX Collider component mode rotate manipulator](/images/user-guide/components/reference/physx/physx-collider-rotate-mode.png)
+
+### Collider component mode hotkeys
+
+The following navigation hotkeys are available in collider component mode.
+
+| Hotkey | Action |
+| - | - |
+| **1** | Resize mode. |
+| **2** | Offset mode. |
+| **3** | Rotation mode. |
+| **CTRL + Mouse Wheel Up** | Next mode. |
+| **CTRL + Mouse Wheel Down** | Previous mode. |
+| **R** | Reset current mode. This is effectively an undo operation. You can step through the Resize, Offset, and Rotation modes and press **R** to reset changes to the current mode. |
+| **ESC** | Exit component mode. |
+
+## Colliders as triggers
+
+Triggers allow colliders to perform efficient overlap tests. Colliders marked as triggers won't be affected by forces when they intersect with another collider. This is useful for detecting when something enters a certain area or when two objects overlap. Use Lua or Script Canvas to detect overlap.
+
+{{< note >}}
 Because triggers don't perform contact resolution, the contact points between a trigger and another collider aren't available.
 Triangle meshes are not supported as triggers.
-Trigger Area components cannot be used with PhysX Collider.
+{{< /note >}}

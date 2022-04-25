@@ -1,14 +1,12 @@
 ---
 linkTitle: Docs Repo Setup
-title: Setup a Local O3DE Docs Repo
+title: Set Up a Local O3DE Docs Repo
 description: A guide to working with the Open 3D Engine (O3DE) documentation repository.
 weight: 300
 toc: true
 ---
 
-{{< preview-new >}}
-
-In this topic, you'll learn to create your own fork of the Open 3D Engine (O3DE) documentation and get a handful of tips on creating and maintaining branches to ensure your pull request (PR) submissions go smoothly.
+In this topic, you'll learn to create your own fork of the **Open 3D Engine (O3DE)** documentation and get a handful of tips on creating and maintaining branches to ensure your pull request (PR) submissions go smoothly.
 
 ## Prerequisites
 

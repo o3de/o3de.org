@@ -3,9 +3,8 @@ description: ' Use visual debugging on destruction simulations in Open 3D Engine
   Blast. '
 title: NVIDIA Blast visual debugger
 weight: 700
+draft: true
 ---
-
-{{< preview-migrated >}}
 
 
  To use the visual debugger for NVIDIA Blast, enable the `BLAST_DEBUG` console variable.
@@ -24,4 +23,4 @@ weight: 700
 
 In the below example, as the rabbit drops, the bonds between the fractured chunks are shown as green lines. On impact, the bonds change to orange as they weaken and red when they break.
 
-![\[Debug visualization for NVIDIA Blast.\]](/images/user-guide/physx/blast/anim-nvidia-blast-debug.gif)
+![Debug visualization for NVIDIA Blast.](/images/user-guide/physx/blast/anim-nvidia-blast-debug.gif)

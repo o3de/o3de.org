@@ -5,8 +5,6 @@ description: Introduction to the Open 3D Engine (O3DE) AWS Metrics Gem.
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **AWS Metrics** Gem provides an extensible, out-of-the-box instrumentation and analytics solution for O3DE developers. It builds an analytics pipeline using the AWS Core Gem, and connects you to AWS services that support common metrics operations on your analytics data, including:
 
 * Ingestion
@@ -25,4 +23,4 @@ To enable the AWS Metrics Gem, do the following:
 
 1. Build your project using Project Manager, Visual Studio, or CMake.
 
-1. To configure AWS Metrics for your project, follow the instructions in [Setting Up the AWS Metrics Gem](./setup.md).
+1. To configure AWS Metrics for your project, follow the instructions in [Setting Up the AWS Metrics Gem](./setup/).
