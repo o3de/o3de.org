@@ -6,7 +6,7 @@ weight: 500
 toc: true
 ---
 
-With the **PhysX Force Region** component, you can create global wind forces or localized wind forces contained within a collider volume. Wind forces act on entities with components that are affected by wind, such as [Cloth components](/docs/user-guide/components/reference/physx/cloth/). Make sure that you have the **NVIDIA Cloth** Gem enabled in your project so that you can easily test the results of the wind provider entity.
+With the **PhysX Force Region** component, you can create global wind forces or localized wind forces contained within a collider volume. Wind forces act on entities with components that are affected by wind, such as [Cloth components](/docs/user-guide/components/reference/physx/cloth/). For this tutorial, make sure that you have the **NVIDIA Cloth** Gem enabled in your project so that you can easily test the results of the wind provider entity.
 
 {{< note >}}
 Wind can't affect **PhysX Rigid Body** components. However, forces from a PhysX Force Region component can affect them.
@@ -14,17 +14,19 @@ Wind can't affect **PhysX Rigid Body** components. However, forces from a PhysX 
 
 ## Create a wind provider entity
 
+In this section, you'll set up an entity for the wind provider.
+
 1. Create an entity for the wind provider.
 
 1. Add a **Tag** component to the entity. The Tag component specifies whether the wind force is global or localized.
 
-1. Specify whether the wind provider is global or localized by adding a tag value. To determine what value to use for the Tag component, from the **Tools** menu, choose **PhysX Configuration**. At the bottom of the **Global Configuration** tab, there is a section labeled **Wind Configuration**.
+1. Add a tag value to specify the wind type. To determine what value to use for the Tag component, from the **Tools** menu, choose **PhysX Configuration**. At the bottom of the **Global Configuration** tab, there is a section labeled **Wind Configuration**.
 
     ![PhysX Wind Configuration tags](/images/user-guide/interactivity/physics/nvidia-physx/physx-wind-configuration-tags.png)
 
     **Wind Configuration** includes the **Global wind tag** and **Local wind tag** properties. You can use the default values or set them as desired. The PhysX system uses these tags to identify entities that provide wind forces.
 
-    For this example, use the **Global wind tag** property value. In the Tag component of the entity, click the {{< icon "add.svg" >}} **Add** button to add a tag element. Give it the value `global_wind`.
+    For this example, use the **Global wind tag** property value. In the Tag component of the entity, choose the {{< icon "add.svg" >}} **Add** button to add a tag element. Give it the value `global_wind`.
 
     {{< note >}}
     If you choose to use the **Local wind tag** property, the wind force affects only entities that are inside the volume of the **PhysX Collider** component that you add in the next step.
@@ -32,7 +34,9 @@ Wind can't affect **PhysX Rigid Body** components. However, forces from a PhysX 
 
 ## Define the force region with a PhysX Collider
 
-1. Add a PhysX Collider component to the wind provider entity. If you are using the **Local wind tag** property, this collider defines the volume that contains the wind force. With the **Global wind tag** property, the size and position of this collider aren't critical because the wind force is global. However, the collider provides a useful visualization for the global wind force.
+In this section, you'll add a box shaped collider to the wind provider entity.
+
+1. Add a **PhysX Collider** component to the wind provider entity. If you are using the **Local wind tag** property, this collider defines the volume that contains the wind force. With the **Global wind tag** property, the size and position of this collider aren't critical because the wind force is global. However, the collider provides a useful visualization for the global wind force.
 
 1. Set the PhysX Collider component's **Shape** property to `Box`.
 
@@ -40,13 +44,15 @@ Wind can't affect **PhysX Rigid Body** components. However, forces from a PhysX 
 
 ## Create a PhysX Force Region
 
-1. Add a PhysX Force Region component to the entity. This component creates the wind force. To configure the 
+In this section, you'll set up a **PhysX Force Region** that generates a wind force.
 
-    1. In the PhysX Force Region component, click the {{< icon "add.svg" >}} **Add** button to add a new force.
+1. Add a PhysX Force Region component to the entity. This component creates the wind force. To configure the component, do the following:
 
-    1. In the PhysX Force Region component, in the **Direction** property's **Y** component, set a value of `10.0` to create a direction for the wind force.
+    1. Choose the {{< icon "add.svg" >}} **Add** button to add a new force.
 
-    1. In the PhysX Force Region component, in the **Magnitude** property, set a value of `50.0` to create magnitude for the wind force.
+    1. In the **Direction** property's **Y** component, set a value of `10.0` to create a direction for the wind force.
+
+    1. In the **Magnitude** property, set a value of `50.0` to create magnitude for the wind force.
 
 The PhysX collider box displays cones representing the wind force direction.
 
@@ -54,7 +60,7 @@ The PhysX collider box displays cones representing the wind force direction.
 
 ## Add a Cloth entity
 
-1. To test the wind provider, add an entity with an NVIDIA Cloth mesh. In **Asset Browser**, navigate to `Gems\NvCloth\Assets\prefabs\Cloth`, locate the `cloth_locked_corners_two.prefab` entity, and then drag and drop it into the viewport.
+1. To test the wind provider, add an entity with an NVIDIA Cloth mesh. In **Asset Browser**, navigate to `Gems\NvCloth\Assets\prefabs\Cloth`, locate the `cloth_locked_corners_two.prefab` entity, and then **drag** it into the viewport.
 
 1. Use the Move tool to place the cloth entity. If you are using the **Local wind tag** property, you must place the cloth asset inside the PhysX Collider volume of the wind provider entity.
 
