@@ -74,12 +74,12 @@ The name of a prefab instance is derived from the prefab file name. However, eac
 * **Click** the name of the entity or prefab instance in Entity Outliner to edit it.
 * Press **F2** to edit the name.
 * In Entity Outliner, **right-click** on the entity or prefab instance and choose **Rename** from the context menu.
-* In Entity Inspector, edit the name field.
+* In **Entity Inspector**, edit the name field.
 
 ![Renaming a prefab.](/images/learning-guide/tutorials/entities-and-prefabs/rename-prefab.png)
 
 {{< note >}}
-Entities and prefab instances aren't required to have unique names. When you instantiate a prefab, or duplicate an entity or a prefab instance, the name of the instance or duplicate is the same as the source. Each entity and prefab instance has a unique Entity ID that is used by O3DE to identify them. You can view an entity or prefab instance Entity ID in **Entity Inspector**.
+Entities and prefab instances aren't required to have unique names. When you instantiate a prefab, or duplicate an entity or a prefab instance, the name of the instance or duplicate is the same as the source. Each entity and prefab instance has a unique Entity ID that is used by O3DE to identify them. You can view an entity or prefab instance Entity ID in Entity Inspector.
 {{< /note >}}
 
 ## Saving entities and prefabs

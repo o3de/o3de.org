@@ -32,11 +32,11 @@ In this section, you'll create an entity that runs the script that spawns the pr
 
     {{< image-width "/images/learning-guide/tutorials/entities-and-prefabs/viewport-helpers.png" "900" "Placing an entity in the camera frustum." >}}
 
-1. Add a **Script Canvas** component to the Spawner entity. In **Entity Inspector**, choose **Add Component** and select **Script Canvas** from the component list.
+1. Add a **Script Canvas** component to the Spawner entity. In **Entity Inspector**, choose **Add Component** and select Script Canvas from the component list.
 
 1. Press **CTRL+S** to save the level with the Spawner entity.
 
-1. In the new **Script Canvas** component, click the {{< icon open-in-internal-app.svg >}} open application icon to open Script Canvas Editor.
+1. In the new Script Canvas component, click the {{< icon open-in-internal-app.svg >}} open application icon to open Script Canvas Editor.
 
     ![Open Script Canvas Editor from the Script Canvas component.](/images/learning-guide/tutorials/entities-and-prefabs/open-script-canvas-editor.png)
 
@@ -50,63 +50,63 @@ In this section, you'll create a script that spawns a prefab. You'll learn the b
 
     1. In **Variable Manager**, choose **Create Variable**, and select **SpawnableScriptAssetRef** from the variable type list.
     
-    1. Give the **SpawnableScriptAssetRef** variable a name. In **Node Inspector**, enter `PrefabRef` in the name field.
+    1. Give the SpawnableScriptAssetRef variable a name. In **Node Inspector**, enter `PrefabRef` in the name field.
     
     1. Add the prefab you want to spawn to the variable. In Node Inspector, choose the {{< icon file-folder.svg >}} file icon and select the prefab you want to spawn for the **asset** property.
 
     ![Setting up a SpawnableScriptAssetRef variable.](/images/learning-guide/tutorials/entities-and-prefabs/prefabref-variable.png)
 
-1. An **EntitySpawnTicket** variable that holds information about the spawned prefab instance is also needed. Create an **EntitySpawnTicket** variable with the following steps:
+1. An **EntitySpawnTicket** variable that holds information about the spawned prefab instance is also needed. Create an EntitySpawnTicket variable with the following steps:
 
-    1. In Variable Manager, choose **Create Variable**, and select **EntitySpawnTicket** from the variable type list. 
+    1. In Variable Manager, choose **Create Variable**, and select EntitySpawnTicket from the variable type list. 
 
-    1. Give the **EntitySpawnTicket** variable a name. In Node Inspector, enter `SpawnTicket` in the name field.
+    1. Give the EntitySpawnTicket variable a name. In Node Inspector, enter `SpawnTicket` in the name field.
 
-1. For this script you'll use **On Graph Start** for the entry point so that the script logic runs immediately when the Spawner entity is activated. In the **Node Palette**, expand the **Timing** group. **Drag** an **On Graph Start** node into the graph canvas.
+1. For this script you'll use **On Graph Start** for the entry point so that the script logic runs immediately when the Spawner entity is activated. In the **Node Palette**, expand the **Timing** group. **Drag** an On Graph Start node into the graph canvas.
 
     {{< video src="/images/learning-guide/tutorials/entities-and-prefabs/add-on-graph-start.mp4" info="Detach a prefab instance." autoplay="true" loop="true" >}}
 
-1. Add a **Create Spawn Ticket** node to the graph canvas. Use the search field at the top of the Node Palette to filter the node list. **Drag** a **Create Spawn Ticket** node into the graph canvas to the left of the **On Graph Start** node.
+1. Add a **Create Spawn Ticket** node to the graph canvas. Use the search field at the top of the Node Palette to filter the node list. **Drag** a Create Spawn Ticket node into the graph canvas to the left of the On Graph Start node.
 
     {{< note >}}You can also **right-click** in the graph canvas to access the node list.
     {{< /note >}}
 
-1. Connect the nodes. **Drag** from the **Out** pin on the **On Graph Start** node to the **Create Ticket** pin on the **Create Spawn Ticket** node to connect the nodes.
+1. Connect the nodes. **Drag** from the **Out** pin on the On Graph Start node to the **Create Ticket** pin on the Create Spawn Ticket node to connect the nodes.
 
     {{< video src="/images/learning-guide/tutorials/entities-and-prefabs/connect-nodes.mp4" info="Click and drag to connect Script Canvas nodes." autoplay="true" loop="true" >}}
 
-1. Add the prefab reference to the **Create Spawn Ticket** node. On the **Create Spawn Ticket** node, **right-click** on the **Prefab** property and select **Convert to Reference** from the context menu. The property is automatically set to the **PrefabRef** variable you created in step **2**. You can choose the {{< icon settings.svg>}} settings icon in the **Prefab** filed to select a variable reference if necessary.
+1. Add the prefab reference to the Create Spawn Ticket node. On the Create Spawn Ticket node, **right-click** on the **Prefab** property and select **Convert to Reference** from the context menu. The property is automatically set to the **PrefabRef** variable you created in step **2**. You can choose the {{< icon settings.svg>}} settings icon in the **Prefab** field to select a variable reference if necessary.
 
     ![Set the prefab reference on a Create Spawn Ticket Script Canvas Node.](/images/learning-guide/tutorials/entities-and-prefabs/set-prefab-reference.png)
 
-1. Add a **Spawn** node from the **Prefab/Spawning** node group to the graph canvas and connect it to the **Create Spawn Ticket** node.
+1. Add a **Spawn** node from the **Prefab/Spawning** node group to the graph canvas and connect it to the Create Spawn Ticket node.
 
-    1. Connect the **Ticket Created** pin from the **Create Spawn Ticket** node to the **Request Spawn** pin of the **Spawn** node.
+    1. Connect the **Ticket Created** pin from the Create Spawn Ticket node to the **Request Spawn** pin of the Spawn node.
     
-    1. Connect the **SpawnTicket** pin from the **Create Spawn Ticket** node to the **SpawnTicket** pin of the **Spawn** node.
+    1. Connect the **SpawnTicket** pin from the Create Spawn Ticket node to the **SpawnTicket** pin of the Spawn node.
 
     {{< image-width "/images/learning-guide/tutorials/entities-and-prefabs/connect-spawn-node.png" "900" "Connect the Spawn node to the Create Pawn Ticket node.">}}
 
-1. In addition to spawning prefab instances, the **Spawn** node also needs to populate the SpawnTicket variable with data. On the **Spawn** node, **right-click** on the **SpawnTicketOut** pin and select **Convert to Reference** from the context menu. The property is automatically set to the **SpawnTicket** variable you created in step **3**. You can choose the {{< icon settings.svg>}} settings icon in the **SpawnTicketOut** field to select a variable reference if necessary.
+1. In addition to spawning prefab instances, the Spawn node also needs to populate the SpawnTicket variable with data. On the Spawn node, **right-click** on the **SpawnTicketOut** pin and select **Convert to Reference** from the context menu. The property is automatically set to the **SpawnTicket** variable you created in step **3**. You can choose the {{< icon settings.svg>}} settings icon in the **SpawnTicketOut** field to select a variable reference if necessary.
 
     ![Set the prefab reference on a Create Spawn Ticket Script Canvas Node.](/images/learning-guide/tutorials/entities-and-prefabs/spawn-ticket-out-ref.png)
 
-1. The **SpawnTicket** variable must be reset when the Spawner entity is deactivated. Add an **On Entity Deactivated** event response to clear the **SpawnTicket** variable with the following steps:
+1. The **SpawnTicket** variable must be reset when the Spawner entity is deactivated. Add an **On Entity Deactivated** node to clear the **SpawnTicket** variable with the following steps:
 
-    1. Add an **On Entity Deactivated** node below the existing node chain.
+    1. Add an On Entity Deactivated node below the existing node chain.
 
-        {{< note >}}The **On Entity Deactivated** event node is placed inside of a **Game Entity** container node.
+        {{< note >}}The On Entity Deactivated event node is placed inside of a **Game Entity** container node.
         {{< /note >}} 
 
-    1. Connect the **Out** pin of the **On Graph Start** node to the **Connect** pin of the **Game Entity** node.
+    1. Connect the **Out** pin of the On Graph Start node to the **Connect** pin of the Game Entity node.
 
-    1. **Drag** the **SpawnTicket** variable from **Variable Manager** into the graph next to the **Game Entity** node. When you drop the variable into the graph, select **Set SpawnTicket** from the context menu.
+    1. **Drag** the **SpawnTicket** variable from Variable Manager into the graph next to the Game Entity node. When you drop the variable into the graph, select **Set SpawnTicket** from the context menu.
 
-    1. Connect the **Timer** pin of the **On Entity Deactivated** node to the **In** pin of the **Set SpawnTicket** node.
+    1. Connect the **Timer** pin of the On Entity Deactivated node to the **In** pin of the Set SpawnTicket node.
 
         {{< video src="/images/learning-guide/tutorials/entities-and-prefabs/add-set-spawn-ticket.mp4" info="Click and drag to connect Script Canvas nodes." autoplay="true" loop="true" width="900" >}}
 
-The script you've created thus far spawns a prefab instance at the Spawner entity's location when the Spawner entity is activated. You can save the script (**CTRL-S**), add it to the Spawner entity's **Script Canvas** node, and press **CTRL-G** to test the script. In the final steps of the tutorial you'll learn how to despawn a prefab.
+The script you've created thus far spawns a prefab instance at the Spawner entity's location when the Spawner entity is activated. You can save the script (**CTRL-S**), add it to the Spawner entity's Script Canvas node, and press **CTRL-G** to test the script. In the final steps of the tutorial you'll learn how to despawn a prefab.
 
 ## Delay and despawn
 
@@ -114,15 +114,15 @@ In this section, you'll add a three second delay to the script, after which, the
 
 1. Add a **Delay** node from the **Timing** group to the graph canvas and connect it.
 
-    1. Connect the **On Spawn Completed** pin of the **Spawn** node to the **Start** pin of the **Delay** node.
+    1. Connect the **On Spawn Completed** pin of the Spawn node to the **Start** pin of the Delay node.
 
-    1. On the **Delay** node, set the **Start Time** property to `3` to create a three second delay.
+    1. On the Delay node, set the **Start Time** property to `3` to create a three second delay.
 
 1. Add a **Despawn** node from the **Prefab/Spawning** group to the graph canvas and connect it.
 
-    1. Connect the **Done** pin of the **Delay** node to the **Request Despawn** pin of the **Despawn** node.
+    1. Connect the **Done** pin of the Delay node to the **Request Despawn** pin of the Despawn node.
 
-    1. On the **Despawn** node, **right-click** on the **SpawnTicket** pin and select **Convert to Reference** from the context menu. The property is automatically set to the **SpawnTicket** variable you created in step **3**. You can choose the {{< icon settings.svg>}} settings icon in the **SpawnTicket** field to select a variable reference if necessary.
+    1. On the Despawn node, **right-click** on the **SpawnTicket** pin and select **Convert to Reference** from the context menu. The property is automatically set to the **SpawnTicket** variable you created in step **3**. You can choose the {{< icon settings.svg>}} settings icon in the **SpawnTicket** field to select a variable reference if necessary.
 
 1. Press **CTRL-S** to save the script. The following image displays the complete Script Canvas graph.
 
@@ -134,7 +134,7 @@ Now you'll add the script to the Spawner entity and test the script.
 
 1. In O3DE Editor, select the Spawner entity.
 
-1. In Entity Inspector, In the **Script Canvas** component, choose the {{< icon browse-edit-select-files.svg >}} file browser icon and select the `spawn-despawn-prefab.scriptcanvas` file you created.
+1. In Entity Inspector, In the Script Canvas component, choose the {{< icon browse-edit-select-files.svg >}} file browser icon and select the `spawn-despawn-prefab.scriptcanvas` file you created.
 
     ![Set the script canvas file property](/images/learning-guide/tutorials/entities-and-prefabs/set-script-canvas-source.png)
 
