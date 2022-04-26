@@ -9,6 +9,11 @@ The **Deferred Fog** component creates a screen space fog effect that can be use
 
 Cloud turbulence is implemented by ray marching along the fog layer and combining two moving noise octaves, creating a "cloudy" fog look. You can configure each octave by scaling the UV coordinates of the noise texture and defining the velocity of the texture's movement. You can also specify the amount of blend between the two octaves.
 
+{{< note >}}
+At this time, Deferred Fog does not interact with lighting.
+{{< /note >}}
+
+
 ![Example of fog layer with turbulence](/images/user-guide/components/reference/atom/deferred-fog/basic-example.png)
 
 ## Provider ##
