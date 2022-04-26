@@ -4,7 +4,7 @@ title: Entities and Prefabs
 description: Learn to create and work with entities and prefabs, the building blocks of Open 3D Engine (O3DE).
 ---
 
-Entities and prefabs provide the foundation for building projects in **Open 3D Engine (O3DE)**. The topics in this section explain how to create. modify, and use entities and prefabs in your projects.
+Entities and prefabs provide the foundation for building projects in **Open 3D Engine (O3DE)**. The topics in this section explain how to create, modify, and use entities and prefabs in your projects.
 
 | Tutorial | Description |
 | - | - |

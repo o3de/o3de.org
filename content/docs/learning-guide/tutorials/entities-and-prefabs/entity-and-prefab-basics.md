@@ -6,9 +6,9 @@ weight: 200
 toc: true
 ---
 
-Entities and prefabs provide the foundation for building projects in **Open 3D Engine (O3DE)**. An entity is a collection of any combination of components, entities, and prefab instances that define an object. The only required component for an entity is a **Transform** component that places the entity in the level. An entity is an abstract concept, though, and only exists within the context of a level or a prefab. Saving an entity to disk requires saving the level that contains it, or creating a prefab from the entity.
+Entities and prefabs provide the foundation for building projects in **Open 3D Engine (O3DE)**. An entity is a collection of any combination of components that define an object. The only required component for an entity is a **Transform** component that places the entity in the level. An entity is an abstract concept, though, and only exists within the context of a level or a prefab. Saving an entity to disk requires saving the level that contains it, or creating a prefab from the entity.
 
-A prefab is a container that can have one or more child entities or prefab instances. Prefabs are files saved to disk that are instantiated or spawned at runtime. It's important to understand, that prefabs that exist in a level are *instances* of a prefab. Changes made to a prefab file automatically propagate to the instances of that prefab.
+A prefab is a container that can have one or more child entities or prefab instances. Prefabs are files saved to disk that are instantiated during edit-time or spawned at runtime. It's important to understand, that prefabs that exist in a level are *instances* of a prefab. Changes made to a prefab that has been opened in **O3DE Editor** automatically propagate to the instances of that prefab.
 
 The entities and prefab instances placed in a level are shown in **Entity Outliner**. Entities are indicated by a {{< icon "entity.svg" >}} white cube icon. Prefab instances are indicated by a {{< icon "prefab.svg" >}} blue container icon. Prefab instances also display the prefab file name in parentheses.
 
@@ -34,11 +34,11 @@ To create an entity with an asset as its basis, **drag** an asset such as a `.az
 Prefabs are saved to disk and allow you to easily reuse objects by instantiating them in a level or spawning them at runtime. Prefabs are created from entities with the following steps:
 
 1. In Entity Outliner, **right-click** on an entity and choose **Create Prefab...** from the context menu.
-1. In the **Save As…** window, navigate to your project’s `Prefabs` directory, supply a name for the prefab, and choose **Save**.
+1. In the **Save As…** window, choose a directory in your project, such as the `Prefabs` directory, supply a name for the prefab, and choose **Save**.
 
 ![Creating a prefab from an entity in Entity Outliner.](/images/learning-guide/tutorials/entities-and-prefabs/create-prefab.png)
 
-The prefab file is saved to disk and an instance of the prefab replaces the entity in **O3DE Editor**. The prefab instance displays the name of the instance on the left next to the {{< icon "prefab.svg" >}} prefab icon. The name of the prefab file is displayed on the right in parenthesis. In the following image, notice that the level itself is a type of prefab.
+The prefab file is saved to disk and an instance of the prefab replaces the entity in **O3DE Editor**. The prefab instance displays the name of the instance on the left next to the {{< icon "prefab.svg" >}} prefab icon. The name of the prefab file is displayed on the right in parenthesis. In the following image, notice that the level itself is a prefab.
 
 ![A new prefab instance in Entity Outliner.](/images/learning-guide/tutorials/entities-and-prefabs/prefab-instanced.png)
 
@@ -48,7 +48,7 @@ Complex prefabs might require multiple entities and prefab instances. You can cr
 
 1. Select the entities and prefab instances you want included in the new prefab. You can select multiple entities and prefab instances by holding **SHIFT** and clicking on each entity and prefab instance. Alternatively, you can **drag** a selection box around a group of entities and prefab instances in Entity Outliner or in the viewport.
 1. In Entity Outliner, **right-click** one of the selected entities or prefab instances and choose **Create Prefab...** from the context menu.
-1. In the **Save As…** window, navigate to your project’s `Prefabs` directory, supply a name for the prefab, and choose **Save**.
+1. In the **Save As…** window, choose a directory in your project, such as the `Prefabs` directory, supply a name for the prefab, and choose **Save**.
 
 In the following video, a prefab instance and an entity with a hierarchy are selected for a new prefab. When the new prefab instance is opened in [Focus Mode](#edit-a-prefab), it displays that the hierarchy is maintained in the new prefab.
 
@@ -208,7 +208,7 @@ When an entity or a prefab instance is deleted from a level, you must save the l
 
 When an entity or prefab instance is deleted from a prefab, you must [save the prefab](#saving-entities-and-prefabs) to commit the change.
 
-Deleting a prefab instance has no effect on the base prefab. The prefab instance is removed, but the `.prefab` file on disk is not changed. 
+Deleting a prefab instance has no effect on the prefab file that created the prefab instance. The prefab instance is removed, but the `.prefab` file on disk is not changed. 
 {{< /note >}}
 
 ## Conclusion and next steps

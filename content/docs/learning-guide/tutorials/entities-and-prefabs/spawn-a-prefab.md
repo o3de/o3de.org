@@ -32,9 +32,9 @@ In this section, you'll create an entity that runs the script that spawns the pr
 
     {{< image-width "/images/learning-guide/tutorials/entities-and-prefabs/viewport-helpers.png" "900" "Placing an entity in the camera frustum." >}}
 
-1. Add a **Script Canvas** component to the Spawner entity. In **Entity Inspector**, choose **Add Component** and select Script Canvas from the component list.
+1. Add a **Script Canvas** component to the spawner entity. In **Entity Inspector**, choose **Add Component** and select Script Canvas from the component list.
 
-1. Press **CTRL+S** to save the level with the Spawner entity.
+1. Press **CTRL+S** to save the level with the spawner entity.
 
 1. In the new Script Canvas component, click the {{< icon open-in-internal-app.svg >}} open application icon to open Script Canvas Editor.
 
@@ -62,7 +62,7 @@ In this section, you'll create a script that spawns a prefab. You'll learn the b
 
     1. Give the EntitySpawnTicket variable a name. In Node Inspector, enter `SpawnTicket` in the name field.
 
-1. For this script you'll use **On Graph Start** for the entry point so that the script logic runs immediately when the Spawner entity is activated. In the **Node Palette**, expand the **Timing** group. **Drag** an On Graph Start node into the graph canvas.
+1. For this script you'll use **On Graph Start** for the entry point so that the script logic runs immediately when the spawner entity is activated. In the **Node Palette**, expand the **Timing** group. **Drag** an On Graph Start node into the graph canvas.
 
     {{< video src="/images/learning-guide/tutorials/entities-and-prefabs/add-on-graph-start.mp4" info="Detach a prefab instance." autoplay="true" loop="true" >}}
 
@@ -91,7 +91,7 @@ In this section, you'll create a script that spawns a prefab. You'll learn the b
 
     ![Set the prefab reference on a Create Spawn Ticket Script Canvas Node.](/images/learning-guide/tutorials/entities-and-prefabs/spawn-ticket-out-ref.png)
 
-1. The **SpawnTicket** variable must be reset when the Spawner entity is deactivated. Add an **On Entity Deactivated** node to clear the **SpawnTicket** variable with the following steps:
+1. The **SpawnTicket** variable must be reset when the spawner entity is deactivated. Add an **On Entity Deactivated** node to clear the **SpawnTicket** variable with the following steps:
 
     1. Add an On Entity Deactivated node below the existing node chain.
 
@@ -106,7 +106,7 @@ In this section, you'll create a script that spawns a prefab. You'll learn the b
 
         {{< video src="/images/learning-guide/tutorials/entities-and-prefabs/add-set-spawn-ticket.mp4" info="Click and drag to connect Script Canvas nodes." autoplay="true" loop="true" width="900" >}}
 
-The script you've created thus far spawns a prefab instance at the Spawner entity's location when the Spawner entity is activated. You can save the script (**CTRL-S**), add it to the Spawner entity's Script Canvas node, and press **CTRL-G** to test the script. In the final steps of the tutorial you'll learn how to despawn a prefab.
+The script you've created thus far spawns a prefab instance at the spawner entity's location when the spawner entity is activated. You can save the script (**CTRL-S**), add it to the spawner entity's Script Canvas node, and press **CTRL-G** to test the script. In the final steps of the tutorial you'll learn how to despawn a prefab.
 
 ## Delay and despawn
 
@@ -130,9 +130,9 @@ In this section, you'll add a three second delay to the script, after which, the
 
 ## Test the results
 
-Now you'll add the script to the Spawner entity and test the script.
+Now you'll add the script to the spawner entity and test the script.
 
-1. In O3DE Editor, select the Spawner entity.
+1. In O3DE Editor, select the spawner entity.
 
 1. In Entity Inspector, In the Script Canvas component, choose the {{< icon browse-edit-select-files.svg >}} file browser icon and select the `spawn-despawn-prefab.scriptcanvas` file you created.
 
@@ -148,4 +148,4 @@ Congratulations! You've learned to spawn and despawn a prefab instance. These ar
 
 * Can you randomize the delay before despawning the prefab instance?
 * See if you can work out how to spawn the prefab instance at a location of your choosing. Hint: Play with the transform properties on the **Spawn** Script Canvas node.
-* Can you spawn multiple prefab instances at different locations from a single Spawner entity?
+* Can you spawn multiple prefab instances at different locations from a single spawner entity?
