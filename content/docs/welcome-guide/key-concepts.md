@@ -194,4 +194,4 @@ The Client is the binary application that would be shipped to customers or end u
 
 ### Dedicated server runtime
 
-The *dedicated server runtime* is meant to be run in an environment where it provides a shared session to many clients. Dedicated runtimes don't have rendering or audio capabilities enabled. Insted, they load simulations and provide synchronization between them. The most common example of a dedicated runtime is a multiplayer game server.
+The *dedicated server runtime* is meant to be run in an environment where it provides a shared session to many clients. Dedicated runtimes don't have rendering or audio capabilities enabled. Instead, they load simulations and provide synchronization between them. The most common example of a dedicated runtime is a multiplayer game server.
