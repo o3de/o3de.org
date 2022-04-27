@@ -128,7 +128,7 @@ To implement the component interface, start with the following steps that walk t
 
     You can also create your own component class hierarchies to provide additional component types.
 
-1. Use the `AZ_COMPONENT` macro to define a unique UUID for your component. The macro takes two arguments:
+1. Use the `AZ_COMPONENT` macro to define a universally unique identifier (UUID) for your component. The macro takes two arguments:
 
     1. The component type name. To help avoid name conflicts, we recommend that you use the namespace in any type of `AZ_RTTI` macros such as `AZ_COMPONENT`.
 
