@@ -157,7 +157,7 @@ To implement the component interface, start with the following steps that walk t
 
     * `Activate()`
 
-        (Required) Called when the owning entity is activated, provided that all services and components that the component depends on are present and active. The `Activate` function is always called _after_ any components that it depends on. For information about how to specify dependencies, refer to [Defining and Using Component Services](services). Typically in the `Activate()` function, a component performs setup procedures, connects to EBuses, and allocates resources or requests assets.
+        (Required) Called when the owning entity is activated, provided that all services and components that the component depends on are present and active. The `Activate` function is always called _after_ any components that it depends on. For information about how to specify dependencies, refer to [Defining and Using Component Services](services). Typically in the `Activate()` function, a component performs setup procedures, connects to Event Buses (EBuses), and allocates resources or requests assets.
 
     * `Deactivate()`
 
