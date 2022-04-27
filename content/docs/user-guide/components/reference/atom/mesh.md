@@ -28,21 +28,21 @@ The **Model (Mesh)** component specifies a model to render in the scene. Model a
 
 
 ### Lod Type
-Determines how Lods will be selected during rendering.
+LodType determines how Lods will be selected during rendering.
 
 {{< tabs name="lod-type-ui" >}}
 {{% tab name="Default" %}}
 
 ![lod-type-default](/images/user-guide/components/reference/atom/model-mesh/lod-type-ui/model-mesh-default.png)
 
-Uses the default method for automatically selecting the lod. Leaving Lod Type set to default ensures that if the default method is changed in the future, the component will automatically use the new default. O3DE ships using the Screen Coverage method by default.
+LodType: Default uses the default method for automatically selecting the lod. Leaving Lod Type set to default ensures that if the default method is changed in the future, the component will automatically use the new default. O3DE ships using the Screen Coverage method by default.
 
 {{% /tab %}}
 {{% tab name="Screen Coverage" %}}
 
 ![lod-type-screen-coverage](/images/user-guide/components/reference/atom/model-mesh/lod-type-ui/model-mesh-screen-coverage.png)
 
-Determines which lod should be rendered based on the approximate proportion of the screen the lod will take up.
+LodType: Screen Coverage determines which lod should be rendered based on the approximate proportion of the screen the lod will take up.
 
 | Property | Description | Values | Default |
 |-|-|-|-|
@@ -54,7 +54,7 @@ Determines which lod should be rendered based on the approximate proportion of t
 
 ![lod-type-specific-lod](/images/user-guide/components/reference/atom/model-mesh/lod-type-ui/model-mesh-specific-lod.png)
 
-Overrides the lod to be rendered instead of calculating the lod automatically.
+LodType: Specific Lod overrides the lod to be rendered instead of calculating the lod automatically.
 
 | Property | Description | Values | Default |
 |-|-|-|-|
