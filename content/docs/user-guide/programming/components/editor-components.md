@@ -12,7 +12,7 @@ Some components in O3DE have separate `editor` and `runtime` versions. The edito
 {{< important >}}
 Editor components are not required. An editor component is necessary only if one of the following is true:
 
-* Your component must be fully active at edit time. Edit time refers to standard editing mode; runtime components are used for the **AI/Physics** mode and gameplay (**Ctrl+G**).
+* Your component must be fully active at _edit time_, which refers to standard editing mode. Runtime components are used for the **AI/Physics** mode and gameplay (**Ctrl+G**).
 * You must add special tools functionality to your component that requires that you compile only into your editor binaries.
 * Your component provides functionality only in the editor and does not export a runtime component (for example, if your component manages selection logic).
 {{< /important >}}
