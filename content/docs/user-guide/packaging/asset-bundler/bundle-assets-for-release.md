@@ -68,29 +68,35 @@ The *game asset bundle* contains your project's levels and all of the assets wit
 
 1. In the Asset Bundler GUI, on the **Seeds** tab, in the **Seed List file** panel, click **Create new Seed List file**. For this example, you can name the file `GameSeedList`.
 
-2. Select the `GameSeedList` file from **Seed List files**. This should highlight the whole row, not enable the check box.
+1. Select the `GameSeedList` file from **Seed List files**. This should highlight the whole row, not enable the check box.
 
-3. In the **Product Assets** panel, click **+ Add Asset**, which opens the **Add Seed Asset** dialog.
+1. In the **Product Assets** panel, click **+ Add Asset**, which opens the **Add Seed Asset** dialog.
 
-4. In the list of platforms, select the **pc** check box.
+1. In the list of platforms, select the **pc** check box.
 
-5. Click **Browse...** to open File Explorer, and browse to the `levels` folder.
+1. Click **Browse...** to open File Explorer, and browse to the `levels` folder
 
-6. In the **Add Seed Asset** dialog, click **Add Seed**.
+1. Select your level `.spawnable` file and press **Open**.
 
-7. In the Asset Bundler GUI, in the **Product Assets** panel, verify that your seed list has the level assets.
+1. In the **Add Seed Asset** dialog, click **Add Seed**.
+
+1. In the Asset Bundler GUI, in the **Product Assets** panel, verify that your seed list has the level assets.
+
+1. Select the checkbox for your new seed list file and select **Save** in the main **File** menu.
 
 #### Generate an asset list
 
-1. In the Asset Bundler GUI, select your new seed list file from the list.
+1. In the Asset Bundler GUI, select the checkbox for your new seed list file from the list.
 
-1. Click **Generate Asset Lists**, which opens the **Generate Asset List files** dialog.
+1. Click **Generate Asset Lists**, which opens the **Generate Asset List Files** dialog.
 
 1. In the list of platforms, select the **pc** check box.
 
 1. Click **Browse...**, which opens File Explorer.
 
 1. In File Explorer, enter a name for your asset list, and then click **Save**. For this example, use the name `game.assetlist`.
+
+1. Press **Create New File** in the **Generate Asset List Files** dialog.
 
 1. In the Asset Bundler GUI, navigate to the **Asset Lists** tab to verify the assets in `game.assetlist`. The assets are listed in the **Asset List** panel.
 
@@ -100,9 +106,9 @@ The *game asset bundle* contains your project's levels and all of the assets wit
 
 1. Click **Generate Bundle**, which opens the **Generate Bundles** dialog. 
 
-1. Click **Browse...**, which opens File Explorer. You can leave the other default options as is.
+1. Select an Output Bundle Name by clicking the **Browse...** button next to the Output Bundle Name field, which opens File Explorer. You can leave the other default options as is.
 
-1. In File Explorer, enter a name for your package file, and then click **Save**. For this example, use the name `game.pak`.
+1. In File Explorer, enter a name for your package file, and then click **Open**. For this example, use the name `game.pak`.
 
 1. Leave the other default options as is and click **Generate Bundles**.
 
@@ -135,9 +141,9 @@ Next, create a bundle for your project's engine assets. The *engine asset bundle
 
 1. Click **Generate Bundle**, which opens the **Generate Bundles** dialog.
 
-1. Click **Browse...**, which opens File Explorer.
+1. Select an Output Bundle Name by clicking the **Browse...** button next to the Output Bundle Name field, which opens File Explorer. 
 
-1. In File Explorer, enter a name for your package file, and then click **Save**. For this example, use the name `engine.pak`.
+1. In File Explorer, enter a name for your package file, and then click **Open**. For this example, use the name `engine.pak`.
 
 1. Leave the other default options as is and click **Generate Bundles**.
 
