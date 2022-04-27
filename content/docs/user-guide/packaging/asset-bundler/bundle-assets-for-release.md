@@ -74,7 +74,7 @@ The *game asset bundle* contains your project's levels and all of the assets wit
 
 1. In the list of platforms, select the **pc** check box.
 
-1. Click **Browse...** to open File Explorer, and browse to the `levels` folder
+1. Click **Browse...** to open File Explorer, and browse to the `levels` folder.
 
 1. Select your level `.spawnable` file and press **Open**.
 
