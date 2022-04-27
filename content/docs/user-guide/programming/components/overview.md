@@ -5,9 +5,9 @@ description: Learn how Open 3D Engine (O3DE) components fit into the Entity-Comp
 weight: 100
 ---
 
-**Open 3D Engine (O3DE)** is a an *entity-component system (ECS)* engine, meaning that rather than using a polymorphism system where objects derive from one another ("is-a" relationships), it uses composition ("has-a" relationships). A common example from polymorphism is "a car *is a* vehicle", where in a system based on composition you would say "a car *has the components of a vehicle*." Using this method makes it much easier to extend objects, design for reuse, and keep base implementations as flexible as possible for performance and ease of use.
+**Open 3D Engine (O3DE)** is a an *entity-component system (ECS)* engine. This means that rather than using a polymorphism system where objects derive from one another ("is-a" relationships), it instead uses composition ("has-a" relationships). A common polymorphism example is "a car *is a* vehicle", whereas a composition example is "a car *has the components of a vehicle*." Using composition makes it much easier to extend objects, design for reuse, and keep base implementations as flexible as possible for performance and ease of use.
 
-Entities have no functionality by themselves; they are essentially an ID and a container for components. An entity can contain any number or combination of components. Some components allow only one instance per entity, and some depend on other components to function.
+Entities have no functionality by themselves; rather, they are essentially an ID and a container for components. An entity can contain any number or combination of components. Some components allow only one instance per entity, and some depend on other components to function.
 
 The Gems that come with O3DE include a variety of components that implement core engine functionality. Within **O3DE Editor**, these components can be found in categories such as Animation, Atom, and Gameplay. As an O3DE developer, you can create new components, either to extend the functionality of existing Gems, or to implement the features of your own Gems. In this section, you will learn how to create a component.
 
@@ -17,11 +17,11 @@ All O3DE components derive from the `AZ::Component` class. In addition, O3DE def
 
 #### Standard components
 
-Standard components can implement functionality in both editor and runtime environments. In some contexts they are referred to as "runtime components" or "game components", to help differentiate them from the specialized "editor" and "system" components.
+Standard components can implement functionality in both editor and runtime environments. In some contexts, they are referred to as "runtime components" or "game components" to help differentiate them from the specialized "editor" and "system" components.
 
 #### Editor components
 
-*Editor components* provide specific functionality to meet the needs of an editor environment. They are only active while you are using an editor in edit mode. They are often paired with a runtime component counterpart that can represent the editor component at runtime, providing related but simpler or leaner functionality in the runtime environment. The editor component class includes a method that you can override to facilitate creating a runtime component from an editor component for the entity it belongs to. For more information about editor components, refer to [Editor Components](editor-components).
+*Editor components* provide specific functionality to meet the needs of an editor environment. They are active only while you are using an editor in edit mode. They are often paired with a runtime component counterpart that can represent the editor component at runtime, providing related but simpler or leaner functionality in the runtime environment. The editor component class includes a method that you can override to facilitate creating a runtime component from an editor component for the entity it belongs to. For more information about editor components, refer to [Editor Components](editor-components).
 
 #### System components
 

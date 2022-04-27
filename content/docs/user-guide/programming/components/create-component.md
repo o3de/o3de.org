@@ -157,13 +157,13 @@ To implement the component interface, start with the following steps that walk t
 
     * `Activate()`
 
-        (Required) Called when the owning entity is activated, provided that all services and components that the component depends on are present and active. The `Activate` function is always called _after_ any components that it depends on. To learn how to specify dependencies, refer to [Defining and Using Component Services](services). Typically in the `Activate()` function, a component performs setup procedures, connects to EBuses, and allocates resources or requests assets.
+        (Required) Called when the owning entity is activated, provided that all services and components that the component depends on are present and active. The `Activate` function is always called _after_ any components that it depends on. For information about how to specify dependencies, refer to [Defining and Using Component Services](services). Typically in the `Activate()` function, a component performs setup procedures, connects to EBuses, and allocates resources or requests assets.
 
     * `Deactivate()`
 
         (Required) Called when the owning entity is deactivated. The order of deactivation is the reverse of activation, so your component is deactivated before the components it depends on. As a best practice, make sure your component returns to a minimal footprint when it is deactivated. A component should release all resources and disconnect from all EBuses. In general, deactivation should be symmetric to activation.
 
-        Destruction does not necessarily follow deactivation. An entity can be deactivated and reactivated without being destroyed, therefore you should ensure that your components support this efficiently. Eventually when an entity is destroyed, O3DE calls `Deactivate()` first. Take care to author components with this in mind.
+        Destruction does not necessarily follow deactivation. An entity can be deactivated and reactivated without being destroyed, therefore you should ensure that your components support this behavior efficiently. Eventually when an entity is destroyed, O3DE calls `Deactivate()` first. Take care to author components with this in mind.
 
 1. Use the reflection context as needed in the static `Reflect()` function to make your component objects available to other parts of the system.
 
