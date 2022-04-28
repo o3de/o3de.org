@@ -1,10 +1,10 @@
 ---
 linkTitle: PhysX
-title: Creating simulations with NVIDIA PhysX
+title: Creating Simulations with NVIDIA PhysX
 description: Learn to use PhysX to create simulations in Open 3D Engine (O3DE).
 ---
 
-Physics simulations in **Open 3D Engine (O3DE)** are created with NVIDIA's PhysX system. The tutorials in this section demonstrate how to use PhysX to add dynamic physics simulations in your projects. 
+Create physics simulations in **Open 3D Engine (O3DE)** with NVIDIA's PhysX system. The tutorials in this section demonstrate how to use PhysX to add dynamic physics simulations in your projects. 
 
 | Topic | Description |
 | - | - |

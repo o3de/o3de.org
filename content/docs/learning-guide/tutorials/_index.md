@@ -51,7 +51,7 @@ Extend **O3DE Editor** by creating a custom tool Gem. A tool is a dockable widge
 
 ## PhysX
 
-Physics simulations in **Open 3D Engine (O3DE)** are created with NVIDIA's PhysX system. The tutorials in this section demonstrate how to use PhysX to add dynamic physics simulations in your projects.
+Create physics simulations in O3DE with NVIDIA's PhysX system. The tutorials in this section demonstrate how to use PhysX to add dynamic physics simulations in your projects.
 
 | Topic | Description |
 | - | - |

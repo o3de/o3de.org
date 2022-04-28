@@ -60,10 +60,11 @@ In this section, you'll set up a **PhysX Force Region** that generates a wind fo
 
     The PhysX collider box displays cones representing the wind force direction.
 
-    {{< image-width src="/images/learning-guide/tutorials/physx/wind-force-region-setup.png" width="900" alt="Setting up a PhysX collider for a force region." >}}
+    {{< image-width src="/images/learning-guide/tutorials/physx/wind-force-region-setup.png" width="900" alt="Setting up a PhysX Force Region component" >}}
 
 ## Add a Cloth prefab
 
+In this section, you'll add a cloth prefab for testing.
 1. To test the wind provider, add prefab with an NVIDIA Cloth mesh. In **Asset Browser**, navigate to `Gems\NvCloth\Assets\prefabs\Cloth`, locate the `cloth_locked_edge.prefab`, and then **drag** it into the viewport.
 
 1. Use the **Move** tool to place the cloth prefab. If you are using the **Local wind tag** property, you must place the cloth asset inside the PhysX Collider volume of the wind provider entity.
@@ -90,14 +91,14 @@ Finally, you can test the simulation. With the **cloth_locked_edge** prefab open
 
 1. At the top of the Cloth component, enable the **Simulate in editor** toggle. As the simulation begins, the cloth object might flip and stretch wildly, but it quickly settles into a breezy wind simulation.
 
-1. With the toggle enabled, the wind simulation plays while in editor mode and you can adjust the simulation by modifying the various properties of the Cloth component. Try adjusting the following properties in the Cloth component:
+1. The wind simulation plays while in editor mode. You can adjust the simulation by modifying the various properties of the Cloth component. Try adjusting the following properties in the Cloth component:
 
     * **Air drag coefficeint**
     * **Air lift coefficeint**
     * **Air Density**
 
-    {{< image-width src="/images/learning-guide/tutorials/physx/cloth-simulate-in-editor.png" width="450" alt="Simulating Cloth in editor." >}}
+    {{< image-width src="/images/learning-guide/tutorials/physx/cloth-simulate-in-editor.png" width="450" alt="Simulating cloth in editor." >}}
 
-The following video shows the results of the above Cloth component settings.
+The following video shows the results of using the Cloth component settings shown in the preceding image.
 
 {{< video src="/images/learning-guide/tutorials/physx/wind-simulation-result.mp4" autoplay="true" loop="true" info="Wind simulation in editor." >}}
