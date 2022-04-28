@@ -1,111 +1,65 @@
 ---
-title: "Setting Up Atom Projects"
-description: "Set up Atom projects using the Open 3D Engine"
+linkTitle: "Setup"
+title: "Setting up Atom Renderer"
+description: "Get started with Atom Renderer with an Open 3D Engine project or AtomSampleViewer, Atom's standalone application."
 toc: true
 weight: 200
 ---
 
-Get to know the Atom Renderer and its features by setting up an Atom project with the Open 3D Engine. This tutorial covers how to set up two Atom projects: **Atom Test** and **Atom Sample Viewer**.
+Get started with **Atom Renderer** through **Open 3D Engine (O3DE)** by creating a new *O3DE project* or building **Atom Sample Viewer**, Atom's standalone application. 
 
-- **Atom Test**: This project contains a collection of levels that demonstrates Atom's features in the O3DE Editor.
-- **Atom Sample Viewer**: This project is a standalone application that is intended for developers and engineers who want to test out Atom's individual features. Although you will not run the O3DE Editor, O3DE is still required to build this project.
+## O3DE Project
 
-## Prerequisites
-Before setting up the Atom projects, you must have the O3DE engine installed on your computer. Follow the instructions in the [Setup](/docs/welcome-guide/setup) section of the Get Started Guide to set up O3DE.
+Creating an O3DE project provides you the full suite of tools, including **O3DE Editor**, **Material Editor**, and a collection of Gems essential to building a simulation or game. This is a great way to test out Atom's features among other objects and mechanics in a level. 
+
+![Default level prefab](/images/learning-guide/tutorials/environments/create-a-level-C.png)
+
+### Setup 
+
+Atom is built into O3DE via the **Atom Gem**, a core Gem that's enabled by default. Visit the Get Started guide for information on setting up O3DE and creating projects:
+- [Setting up O3DE](/docs/welcome-guide/setup/)
+- [Creating a project](/docs/welcome-guide/create/)
+
+After your project's set up, check out the following pages to explore Atom's features via the O3DE Editor:
+- [Create a Level](/docs/learning-guide/tutorials/environments/create-a-level/): An introduction to your first level. Whenever you create a level in your project, the default environment consists of many Atom components. 
+- [Component Reference - Atom](/docs/user-guide/components/reference/#atom): The full list of Atom components provided by the Atom Gem. 
 
 
-## Setting up the Atom projects
+## Atom Sample Viewer
 
-This tutorial uses the following project name and directories in the examples:
+Atom Sample Viewer is a good place to start if you're interested in evaluating Atom's features in a controlled environment. It's a standalone application, meaning you don't need to open it with O3DE Editor. Rather, it showcases samples that demonstrate each feature individually with parameters you can tweak and configure. 
 
-- O3DE engine directory: `C:\o3de`
-- Atom Test project directory: `C:\AtomTest`
-- Atom Sample Viewer project directory: `C:\AtomSampleViewer`
-- Package directory (created earlier during [setup](/docs/welcome-guide/setup/setup-from-github/)): `C:\o3de-packages`
+Check out the [`o3de-atom-sampleviewer`](https://github.com/o3de/o3de-atom-sampleviewer) repository in GitHub.
 
-## Clone project repos
+![An example of Atom Sample Viewer, a standalone application. This image showcases the Shadow sample.](/images/atom-guide/atom-sample-viewer/shadow.png)
 
-To get a local copy of the Atom projects, you must clone their repository from GitHub. For best practice, clone the repo into a directory outside of the O3DE repository. 
 
-Atom Test
-: 
+### Setup
+
+The following steps can help you set up Atom Sample Viewer:
+
+1. In a command line window, clone the [`o3de-atom-sampleviewer`](https://github.com/o3de/o3de-atom-sampleviewer) repository onto your local machine.
+
     ```cmd
-    git clone https://github.com/o3de/o3de-atomtest.git C:\AtomTest
+    git clone https://github.com/o3de/o3de-atom-sampleviewer.git
     ```
 
-Atom Sample Viewer
-: 
+2. Update the local repository by pulling the the latest changes, if any.
+
     ```cmd    
-    git clone https://github.com/o3de/o3de-atom-sampleviewer.git C:\AtomSampleViewer
-    ```
-
-## Update the local project repos
-
-The community is continuing to update the Atom project repositories. This step ensures your local copy has the latest updates from the Atom repositories. 
-
-In a command line window, navigate to the directory of the Atom repository and pull the latest changes from `origin/main` into your branch. 
-
-Atom Test
-: 
-    ```cmd
-    cd C:\AtomTest
     git pull origin main
     ```
 
-Atom Sample Viewer
-: 
-    ```cmd    
-    cd C:\AtomSampleViewer
-    git pull origin main
-    ```
-
-
-## Generate CMake project
-
-Use CMake to generate a Visual Studio solution, which is used in the next step to build the Atom project. 
-
-Atom Test
-: 
-    ```cmd
-    cmake -B "C:\AtomTest\build" -S "C:\AtomTest" -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages
-    ```
-
-Atom Sample Viewer
-: 
-    ```cmd    
-    cmake -B "C:\AtomSampleViewer\build" -S "C:\AtomSampleViewer" -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages
-    ```
-
-## Register project to O3DE
-*This step is for the Atom Test project only.* 
-
-Register the Atom Test project to add it to the list of known projects in the O3DE manifest, located at `<user-directory>/.o3de/o3de_manifest.json`. 
-
-Atom Test
-: 
-    ```cmd
-    C:\o3de\scripts\o3de.bat register --project-path C:\AtomTest
-    ```
-
-## Build and run
-
-**Atom Sample Viewer**  
-
-1. Open the solution file `AtomSampleViewer.sln` in Visual Studio.
-2. In the **Solution Explorer** panel, navigate to the project `AtomSampleViewer/Standalone/AtomSampleViewerStandalone`. Right-click it and choose **Build**. 
-3. When the project is done building, you can find the build files in the directory `C:/AtomSampleViewer/build/bin/profile`. From there, you can launch `AtomSampleViewerStandalone.exe`.
-
-You are all set up to explore Atom with the Atom Sample Viewer project! Check out the [Atom Sample Viewer](atom-sample-viewer/) section to learn about the graphics samples provided.
-
-
-**Atom Test**  
-
-1. Use CMake to build the project launcher, O3DE Editor, and Asset Processor. The following command builds using the profile configuration. When specifying the Editor as a build target, the Asset Processor will be built too, since it is a dependency of the Editor.
+3. Use CMake to generate a Visual Studio solution, which is used in the next step to build the Atom project. 
 
     ```cmd
-    cmake --build "C:\AtomTest\build" --target AtomTest.GameLauncher Editor --config profile -- -m
+    cmake -B build/windows_vs2019 -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:/o3de-packages
     ```
 
-2. When the project is done building, you can find the build files in the directory `C:\AtomTest\build\bin\profile`. From there, you can launch `Editor.exe`, `AssetProcessor.exe`, and other tools. 
+4. Use CMake to build Atom Sample Viewer Standalone. The following command builds using the `profile` configuration.
 
-You are all set up to explore Atom with the Atom Test project! Check out the [Atom Gem's component reference](/docs/user-guide/components/reference/atom/) in the O3DE User Guide to learn how to use the components in the Atom Test project. 
+    ```cmd
+    cmake --build build/windows_vs2019 --target AtomSampleViewerStandalone --config profile -- -m
+    ```
+
+When the project is done building, you can find the build files in the directory `C:/o3de-atom-sampleviewer/build/bin/profile`. From there, you can launch `AtomSampleViewerStandalone.exe`.
