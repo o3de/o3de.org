@@ -47,4 +47,4 @@ After you set up the simulated object, create an anim graph to view the simulati
 
     In the next procedure, you create another collider attached to the actor's skeleton. This prevents the tassel from moving into the actor's body.
 
-    ![Animate the actor and the simulated object.](/images/user-guide/actor-animation/simulated-objects-13.gif)
+    {{< video src="/images/user-guide/actor-animation/simulated-objects-13.mp4" info="Animate the actor and the simulated object." autoplay="true" loop="true" width="500" >}}

@@ -58,13 +58,13 @@ An array of material functors. Each one reads material property values, performs
 
 * **args**: An object containing key/value pairs of all the arguments to send to this functor. The attributes vary depending on functor type. For 'Lua' functors, there is a single 'file' argument that references the Lua file. 
 
-{{< todo >}}
+{{< todo issue="https://github.com/o3de/o3de.org/issues/1549" >}}
 Need a list of available functor types and their expected arguments. 
 {{< /todo >}}
 
 ### **uvNameMap** *(optional)*
 This array lists default identifiers for mesh UV streams. 
 
-{{< todo >}}
+{{< todo issue="https://github.com/o3de/o3de.org/issues/1548" >}}
 Need a document about UV streams. 
 {{< /todo >}}
