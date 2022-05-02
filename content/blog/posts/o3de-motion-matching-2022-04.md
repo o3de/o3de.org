@@ -17,7 +17,7 @@ We brought motion matching to O3DE's animation system EMotion FX as a blend tree
 
 ## Motion Database
 
-What we need to animate a character using motion matching is a large library of character animations that includes animations such as walking slowly, running fast, narrow and wide turns, accelerating and decelerating and many more. A large variety of movements are required so that there will be a piece of animation for every situation. Kristjan Zadziuk and his team ([GDC 2016 Talk, Animation Bootcamp: Motion Matching](https://www.youtube.com/watch?v=_Bd2T7uP9VA)) gave this some structure and worked out a set of 'dance cards'. These dance cards describe paths actors move along in a motion capture studio. These are used to capture the full range of motions for best visual results without too many variations and redundant data that will decrease the algorithm's performance.
+To animate a character using motion matching, we need a large library of character animations such as walking slowly, running fast, narrow and wide turns, accelerating and decelerating, and many more. A large variety of movements are required so that there is a piece of animation for every situation. Kristjan Zadziuk and his team ([GDC 2016 Talk, Animation Bootcamp: Motion Matching](https://www.youtube.com/watch?v=_Bd2T7uP9VA)) gave this some structure and worked out a set of *dance cards*. These dance cards describe paths actors move along in a motion capture studio that capture the full range of motions for best visual results. They also minimize variations and redundant data that decrease the algorithm's performance.
 
 ## Motion Features
 
