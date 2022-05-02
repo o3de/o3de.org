@@ -155,7 +155,7 @@ We talked about how the algorithm ensures that the animation is smooth but did n
 
 {{< image-width src="/images/blog/motion-matching/script-canvas-graph.png" width="100%" alt="Script Canvas Graph for motion matching character control." >}}
 
-For an interactive game, we can use the gamepad's joystick position as a target to generate a desired future trajectory. By creating an exponential curve starting at the current character position going towards the character facing direction and then bend the curve towards the joystick's target position. This process is called trajectory prediction.
+For an interactive game, we can use the gamepad's joystick position as a target to generate a desired future trajectory by creating an exponential curve starting at the current character position going towards the character facing direction, and then bend the curve towards the joystick's target position. This process is called trajectory prediction.
 
 {{< video src="/images/blog/motion-matching/trajectory-prediction.mp4" autoplay="true" loop="true" width="100%" info="Gamepad controlled character using motion matching." >}}
 <br>
