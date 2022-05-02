@@ -104,7 +104,7 @@ if (Is it time to search for a new best matching frame?) // We might e.g. do thi
 
 The core question the algorithm tries to answer is: Where do we jump and transition to? The algorithm tries to find the best time in the motion database that matches the current character pose including its movements and the user input. To compare the frame candidates with each other, we use a cost function.
 
-The feature schema defines what the cost function looks like. Every feature added to the feature schema adds up to the cost. The bigger the discrepancy between the current velocity and the one from the frame candidate, the higher the penalty to the cost and the less likely the candidate is a good one to take.
+The feature schema defines what the cost function looks like. Every feature added to the feature schema adds to the cost. The bigger the discrepancy between the current velocity and the one from the frame candidate, the higher the penalty to the cost and the less likely the candidate is a good one to take.
 
 This makes motion matching an optimization problem where the frame with the minimum cost is the most preferred candidate to transition to.
 
