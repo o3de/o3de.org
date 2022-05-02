@@ -54,7 +54,7 @@ The more features selected by the user, the bigger the chances are that the sear
 
 We store the extracted feature values in a giant block of data, the feature matrix. The feature matrix is a NxM matrix that stores the extracted feature values for all frames in our motion database based upon a given feature schema. The feature schema defines the order of the columns and values. It is then used to identify values and find their location inside the matrix.
 
-A 3D position feature storing XYZ values e.g. will use three columns in the feature matrix. Every component of a feature is linked to a column index, so for example, the left foot position Y value might be at column index 6. The group of values or columns that belong to a given feature is what we call a feature block. The accumulated number of dimensions for all features in the schema (while the number of dimensions might vary per feature) form the number of columns of the feature matrix.
+A 3D position feature storing XYZ values, for example, will use three columns in the feature matrix. Every component of a feature is linked to a column index, so for example, the left foot position Y value might be at column index 6. The group of values or columns that belong to a given feature is what we call a feature block. The accumulated number of dimensions for all features in the schema (while the number of dimensions might vary per feature) form the number of columns of the feature matrix.
 
 Each row represents the features of a single frame of the motion database. As the data is commonly accessed on a per-frame basis, it is stored in row-major order for cache efficiency.
 
