@@ -25,7 +25,7 @@ A smooth animation is the result of continuity. Sudden changes in position or ve
 
 In order to find the best possible transition and synthesize smooth animations, we need data that we call *features* to help us. A feature is a property extracted from the animation data that is used by the motion matching algorithm to find a good match for a transition. Examples of features are the position of the feet joints, the linear or angular velocity of the knee joints, or the trajectory history and future trajectory of the root joint. We can also encode environment sensations like obstacle positions and height, the location of the sword of an enemy character, or a football's position and velocity.
 
-Their purpose is to describe the key characteristics of the pose and the animation and sometimes even enhance the actual key-frame data (the local-space joint transforms) by e.g. taking the time domain into account and calculating the velocity or acceleration, or a whole trajectory to describe where the given joint came from to reach the frame and the path it moves along in the near future.
+Their purpose is to describe the key characteristics of the pose and the animation and sometimes even enhance the actual key-frame data (the local-space joint transforms) by, for example, taking the time domain into account and calculating the velocity or acceleration, or a whole trajectory to describe where the given joint came from to reach the frame and the path it moves along in the near future.
 
 | Position Feature | Velocity Feature | Trajectory Feature |
 | :------------- |:-------------| :-----|
