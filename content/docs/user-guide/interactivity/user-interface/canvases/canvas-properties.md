@@ -15,7 +15,33 @@ The following properties define how a canvas is rendered:
 + **Draw order** - The value of this property determines the order that this canvas draws relative to other canvases. Higher numbers draw on top of lower numbers. When canvases have the same draw order, O3DE draws them in the order that they are loaded.
 + **Is pixel aligned** - Selected by default. This property makes textures look sharper by rounding the position of the elements' corners to the nearest exact pixel. For example, if the position of a corner of an element rectangle is at 123.45, 678.90, then it is rounded to 123.00, 679.00.
 + **Is text pixel aligned** - Selected by default. This property makes text look crisper by rounding text positions down to the nearest pixel. An exception to this rule occurs when fonts have been scaled down, in which case the text position is rounded to the nearest pixel. If the property is not checked, the text position is not rounded. You might consider unchecking this property if, for example, a text element will animate or move.
-+ **Render to texture** - Cleared by default. When this property is selected, the canvas is drawn to a texture rather than to the screen. When you select this property, you are prompted to enter a **Render target name** for the texture. You can enter any name, but the convention is to prefix the name with the **$** symbol to distinguish it from texture assets.
++ **Render to texture** - Cleared by default. When this property is set, the canvas is drawn to a texture rather than to the screen. When you select this property, you are prompted to select an **Attachment Image Asset** for the texture. To generate a new attachment image asset, create a new file with the .attimage extension.
+
+The example below represents the contents of an attachment image source file.
+
+```json
+{
+    "Type": "JsonSerialization",
+    "Version": 1,
+    "ClassName": "AttachmentImageAsset",
+    "ClassData": {
+        "m_imageDescriptor": {
+            "BindFlags": [
+                "ShaderRead",
+                "ShaderWrite",
+                "Color"
+            ],
+            "Size": {
+                "Width": 1280,
+                "Height": 720
+            },
+            "Format": 19
+        },
+        "Name": "$UiCanvasTexture",
+        "IsUniqueName": true
+    }
+}
+```
 
 ## Input Properties 
 
