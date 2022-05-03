@@ -5,7 +5,7 @@ linktitle: Network-settings
 ---
 
 ## Overview
-This page documents console variables (CVars) and settings for AzNetworking and Multiplayer behaviour.
+This page documents console variables (CVars) and settings for AzNetworking and Multiplayer behavior.
 
 ## Client settings
 | Setting                | Description                                                                                                                                                                             | Default   | Notes |
