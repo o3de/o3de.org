@@ -58,7 +58,7 @@ A 3D position feature storing XYZ values, for example, will use three columns in
 
 Each row represents the features of a single frame of the motion database. As the data is commonly accessed on a per-frame basis, it is stored in row-major order for cache efficiency.
 
-> Memory usage: A motion capture database holding 1 hour of animation data together with a sample rate of 30 Hz to extract features, resulting in 108,000 frames, using the default feature schema having 59 features, will result in a feature matrix holding ~6.4 million values and use ~24.3 MB of memory.
+> Memory usage: A motion capture database holding 1 hour of animation data together with a sample rate of 30 Hz to extract features will generate 108,000 frames. Using the default feature schema, comprising of 59 features, will result in a feature matrix holding ~6.4 million values and use ~24.3 MB of memory.
 
 ## The motion matching algorithm
 
