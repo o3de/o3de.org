@@ -5,7 +5,7 @@ linktitle: Network Settings
 ---
 
 ## Overview
-This page documents console variables (CVars) and settings for AzNetworking and Multiplayer behavior.
+This page documents [console variables](/docs/user-guide/appendix/cvars) and settings for AzNetworking and Multiplayer behavior.
 
 ## Client settings
 | Setting                | Description                                                                                                                                                                             | Default   | Notes |
@@ -34,18 +34,18 @@ This page documents console variables (CVars) and settings for AzNetworking and 
 
 
 ## Server settings
-| Setting                 | Description                                                                          | Default | Notes |
-|-------------------------|--------------------------------------------------------------------------------------|---------|-------|
-| sv_map                  | The map the server should load.                                                      | None    |       |
-| sv_port                 | The port that this multiplayer gem will bind to for game traffic.                    | 33450   |       |
-| sv_portRange            | The range of ports the host will incrementally attempt to bind to when initializing. | 999     |       |
-| sv_protocol             | This flag controls whether we use TCP or UDP for game networking.                    | Udp     ||
-| sv_DedicatedCPUPercent  | Target CPU usage when running as a dedicated server.                                 | 0       |       |
-| sv_DedicatedCPUVariance | How much the CPU can vary from `sv_DedicateCPU`.                                     | 10      |       |
-| sv_DedicatedMaxRate     | Maximum update rate when running as a dedicated server.                              | 30      |       |
-| sv_isDedicated          | Whether the host command creates an independent or client hosted server.             | True    |       |
-| sv_isTransient          | Whether a dedicated server shuts down if all existing connections disconnect.        | True    ||
-| sv_serverSendRateMs     | Minimum number of milliseconds between each network update.                          | 50 ms   || 
+| Setting                 | Description                                                                     | Default | Notes                |
+|-------------------------|---------------------------------------------------------------------------------|---------|----------------------|
+| sv_map                  | The map the server should load.                                                 | None    |                      |
+| sv_port                 | The port that Multiplayer Gem will bind to for game traffic.                    | 33450   |                      |
+| sv_portRange            | The range of ports the host will incrementally attempt to bind to when initializing. | 999     |                      |
+| sv_protocol             | This flag controls whether we use TCP or UDP for game networking.               | Udp     ||
+| sv_DedicatedCPUPercent  | Target CPU usage when running as a dedicated server.                            | 0       | Disabled by default. |
+| sv_DedicatedCPUVariance | How much the CPU can vary from `sv_DedicatedCPUPercent`.                        | 10      |                      |
+| sv_DedicatedMaxRate     | Maximum update rate when running as a dedicated server.                         | 30      |                      |
+| sv_isDedicated          | Whether the host command creates an independent or client hosted server.        | True    |                      |
+| sv_isTransient          | Whether a dedicated server shuts down if all existing connections disconnect.   | True    ||
+| sv_serverSendRateMs     | Minimum number of milliseconds between each network update.                     | 50 ms   || 
 
 ### Server to client connection settings
 | Setting                                                | Description                                                                                                                                     | Default    | Notes |
@@ -166,9 +166,9 @@ These settings control networking behavior.
 | net_SslMaxCertDepth            | The maximum depth allowed for cert chaining validation.                                                              | 3                           ||
 
 ### Debug settings
-| Setting                            | Description                                                 | Default | Notes                | 
-|------------------------------------|-------------------------------------------------------------|---------|----------------------|
-| net_DebugCheckNetworkEntityManager | Enables extra debug checks inside the NetworkEntityManager. | False   | Requires Multiplayer |
+| Setting                            | Description                                                 | Default | Notes                    | 
+|------------------------------------|-------------------------------------------------------------|---------|--------------------------|
+| net_DebugCheckNetworkEntityManager | Enables extra debug checks inside the NetworkEntityManager. | False   | Requires Multiplayer Gem |
 
 ### Other useful settings
 The following settings can be passed as command line arguments to control server performance.
