@@ -32,7 +32,7 @@ Their purpose is to describe the key characteristics of the pose and the animati
 | Matches joint positions | Matches joint velocities | Matches the trajectory history and future trajectory |
 | {{< image-width src="/images/blog/motion-matching/feature-position.png" width="100%" alt="Position Feature." >}} | {{< image-width src="/images/blog/motion-matching/feature-velocity.png" width="100%" alt="Velocity Feature." >}}  | {{< image-width src="/images/blog/motion-matching/feature-trajectory.png" width="100%" alt="Trajectory Feature." >}}  |
 
-For example, the interactive character in a game might walk in a different direction than in the pre-recorded animation which makes it impossible for us to work with world-space velocities. Features are extracted and stored relative to a given joint, in most cases the motion extraction or root joint, and thus are in model-space. This makes the search algorithm invariant to the character location and orientation and the extracted features, e.g. a joint position or velocity translate and rotate along with the character.
+For example, the interactive character in a game might walk in a different direction than in the pre-recorded animation, which makes it impossible for us to work with world-space velocities. Features are extracted and stored relative to a given joint, in most cases the motion extraction or root joint, and thus are in model-space. This makes the search algorithm invariant to the character location and orientation and the extracted features, e.g. a joint position or velocity translate and rotate along with the character.
 
 Features are responsible for each of the following:
 
