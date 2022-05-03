@@ -9,7 +9,7 @@ toc: true
 With the **PhysX Force Region** component, you can create global wind forces or localized wind forces contained within a collider volume. Wind forces act on entities with components that are affected by wind, such as [Cloth components](/docs/user-guide/components/reference/physx/cloth/). For this tutorial, make sure that you have the **NVIDIA Cloth** Gem enabled in your project so that you can easily test the results of the wind provider entity.
 
 {{< note >}}
-Wind can't affect **PhysX Rigid Body** components. However, forces from a PhysX Force Region component can affect them.
+Wind forces only affect components that support it, such as **Cloth** compopnents. Wind forces can't affect **PhysX Rigid Body** components.
 {{< /note >}}
 
 ## Create a wind provider entity
@@ -94,8 +94,8 @@ Finally, you can test the simulation. With the **cloth_locked_edge** prefab open
 
 1. The wind simulation plays while in editor mode. You can adjust the simulation by modifying the various properties of the Cloth component. Try adjusting the following properties in the Cloth component:
 
-    * **Air drag coefficeint**
-    * **Air lift coefficeint**
+    * **Air drag coefficient**
+    * **Air lift coefficient**
     * **Air Density**
 
     {{< image-width src="/images/learning-guide/tutorials/physx/cloth-simulate-in-editor.png" width="450" alt="Simulating cloth in editor." >}}
