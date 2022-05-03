@@ -23,7 +23,7 @@ There are three parts to the Asset Cache: the **Asset Database**, the **Asset Ca
 
 The Asset Database is only used by Asset Processor. The Asset Database is a development time database containing details about assets, jobs, **Asset Builders**, and scan directories. It contains all the information Asset Processor requires to determine which assets have been processed, and which assets need to be processed.
 
-With the information in the Asset Database, Asset Processor can be closed when it has not finished processing all assets. Next time it is launched, the Asset Processor will use this information to figure out what assets it has already been processed. 
+With the information in the Asset Database, Asset Processor can be closed when it has not finished processing all assets. Next time it is launched, the Asset Processor will use this information to figure out what assets it has already processed.
 
 ### Asset Catalog
 
