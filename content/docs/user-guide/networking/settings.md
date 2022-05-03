@@ -1,7 +1,7 @@
 ---
 title: Networking And Multiplayer Settings
 description: A reference for console variables and other settings that can be used on clients and servers to configure networking and multiplayer.
-linktitle: Network-settings
+linktitle: Network Settings
 ---
 
 ## Overview
@@ -15,12 +15,12 @@ This page documents console variables (CVars) and settings for AzNetworking and 
 | cl_serverport          | The port of the remote host to connect to for game traffic.                                                                                                                             | 33450     | 
 | cl_InputRateMs         | Rate at which to sample and process client inputs.                                                                                                                                      | 33 ms     ||
 | cl_MaxRewindHistoryMs  | Maximum number of milliseconds to keep for server correction rewind and replay.                                                                                                         | 2000 ms   |
-| cl_renderTickBlendBase | The base used for blending between network updates, 0.1 will be quite linear, 0.2 or 0.3 will \ slow down quicker and may be better suited to connections with highly variable latency. | 0.15      ||
+| cl_renderTickBlendBase | The base used for blending between network updates, 0.1 will be quite linear, 0.2 or 0.3 will slow down quicker and may be better suited to connections with highly variable latency. | 0.15      ||
 
 ### Client to server connection settings
 | Setting                                        | Description                                                                                                                                     | Default    | Notes |
 |------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|------------|-------|
-| cl_ClientEntityReplicatorPendingRemovalTimeMs  | How long should wait prior to removing an entity for the client through a change in the replication window, entity deletes are still immediate. | 10000 ms   |       |
+| cl_ClientEntityReplicatorPendingRemovalTimeMs  | How long to wait prior to removing an entity for the client through a change in the replication window, entity deletes are still immediate. | 10000 ms   |       |
 | cl_DefaultNetworkEntityActivationTimeSliceMs   | Max Ms to use to activate entities coming from the network, 0 means instantiate everything.                                                     | 0 ms       ||
 | cl_ClientMaxRemoteEntitiesPendingCreationCount | Maximum number of entities that we have sent to the client, but have not had a confirmation back from the client.                               | 4294967295 ||
 
@@ -50,7 +50,7 @@ This page documents console variables (CVars) and settings for AzNetworking and 
 ### Server to client connection settings
 | Setting                                                | Description                                                                                                                                     | Default    | Notes |
 |--------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|------------|-------|
-| sv_ClientEntityReplicatorPendingRemovalTimeMs          | How long should wait prior to removing an entity for the client through a change in the replication window, entity deletes are still immediate. | 10000 ms   ||
+| sv_ClientEntityReplicatorPendingRemovalTimeMs          | How long to wait prior to removing an entity for the client through a change in the replication window, entity deletes are still immediate. | 10000 ms   ||
 | sv_ClientMaxRemoteEntitiesPendingCreationCount         | Maximum number of entities that we have sent to the client, but have not had a confirmation back from the client.                               | 4294967295 ||
 | sv_ClientMaxRemoteEntitiesPendingCreationCountPostInit | Maximum number of entities that we will send to clients after gameplay has begun.                                                               | 4294967295 ||
 
@@ -72,7 +72,7 @@ This page documents console variables (CVars) and settings for AzNetworking and 
 | sv_RewindVolumeExtrudeDistance | The amount to increase rewind volume checks to account for fast moving entities. | 50      |       |
 
 ### Editor server settings
-These Settings control how a server will be launched during the "play-in-editor" (CTRL+G) mode.
+These settings control how a server will be launched during the "play-in-editor" (CTRL+G) mode.
 
 | Setting                            | Description                                                                                                                                                                                                                                                                                                              | Default   | Notes                                                                                                                                            |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -94,14 +94,14 @@ These settings control behavior on both the client and server.
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------|---------|-------|
 | bg_RewindDebugDraw                                  | If true enables debug draw of rewind operations.                                        | False   |       |
 | bg_replicationWindowImmediateAddRemove              | Update replication windows immediately on visibility Add/Removes.                       | True    |       |
-| bg_multiplayerDebugDraw                             | Enables debug draw for the multiplayer gem.                                             | False   |       |
+| bg_multiplayerDebugDraw                             | Enables debug draw for the Multiplayer Gem.                                             | False   |       |
 | bg_replicationWindowImmediateAddRemove              | Update replication windows immediately on visibility Add/Removes.                       | True    |       |
-| bg_RewindPositionTolerance                          | Don't sync the physx entity if the square of delta position is less than this value.    | 0001f   ||
+| bg_RewindPositionTolerance                          | Don't sync the NVIDIA PhysX entity if the square of delta position is less than this value.    | 0.001  ||
 | bg_AssertNetBindOnDeactivationWithoutMarkForRemoval |                                                                                         | False   ||
 | bg_hierarchyEntityMaxLimit                          |                                                                                         | 16      || 
 | bg_DrawArticulatedHitVolumes                        | Enables debug draw of articulated hit volumes.                                          | False   ||
 | bg_DrawDebugHitVolumeLifetime                       | The lifetime for hit volume draw-debug shapes.                                          | 0.0     ||
-| bg_RewindOrientationTolerance                       | Don't sync the physx entity if the square of delta orientation is less than this value. | 0.001   ||
+| bg_RewindOrientationTolerance                       | Don't sync the NVIDIA PhysX entity if the square of delta orientation is less than this value. | 0.001   ||
 
 
 ## Networking settings
@@ -110,20 +110,20 @@ These settings control networking behavior.
 ### AzNetworking layer
 | Setting                             | Description                                                                                                                         | Default         | Notes                |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-----------------|----------------------|
-| net_maxPacketTrackTimeMs            | Maximum time to track any particular packetid before giving up.                                                                     | 2000            |                      |
+| net_maxPacketTrackTimeMs            | Maximum time to track any particular packet ID before giving up.                                                                     | 2000            |                      |
 | net_rttIncreaseOnPacketLoss         | Scalar amount to increase round trip time estimates by on packet loss.                                                              | 1.2             |                      |
-| net_TcpCompressor                   | TCP compressor to use. \ WARN: similar to encryption this needs to be set once and only once before creating the network interfac.  | None            |                      |
-| net_TcpUseEncryption                | Enable encryption on Tcp based connections.                                                                                         | False           |                      |
+| net_TcpCompressor                   | TCP compressor to use. WARNING: Similar to encryption this needs to be set once and only once before creating the network interface.  | None            |                      |
+| net_TcpUseEncryption                | Enable encryption on TCP-based connections.                                                                                         | False           |                      |
 | net_UseDtlsCookies                  | Enables DTLS cookie exchange during the connection handshake.                                                                       | False           |                      |
 | net_UdpMaxUnackedPacketCount        | Maximum packets to receive before forcing a heartbeat packet for acking.                                                            | 10              |                      |
 | net_UdpFragmentTimeoutMs            | Milliseconds to retain chunks of incomplete unreliable fragmented packets before timing them out.                                   | 5000 ms         |                      |
-| net_UdpCompressor                   | UDP compressor to use. \ WARN: similar to encryption this needs to be set once and only once before creating the network interface. | None            |                      |
+| net_UdpCompressor                   | UDP compressor to use. WARNING: Similar to encryption this needs to be set once and only once before creating the network interface. | None            |                      |
 | net_MinPacketTimeoutMs              | Minimum time to wait before timing out an unacked packet.                                                                           | 200 ms          |                      |
-| net_UdpDefaultTimeoutMs             | Time in milliseconds before we timeout an idle Udp connection.                                                                      | 10 * 1000 ms    |                      |
+| net_UdpDefaultTimeoutMs             | Time in milliseconds before we timeout an idle UDP connection.                                                                      | 10 * 1000 ms    |                      |
 | net_UdpPacketTimeSliceMs            | The number of milliseconds to allow for packet processing.                                                                          | 8 ms            |                      |
-| net_UdpTimeoutConnections           | Should code hold timeout Udp connections.                                                                                           | True            |                      |
-| net_UdpUseEncryption                | Enable encryption on Udp based connections.                                                                                         | False           |                      |
-| net_RttFudgeScalar                  | Scalar value to multiply computed Rtt by to determine an optimal packet timeout threshold.                                          | 2.0             |                      |
+| net_UdpTimeoutConnections           | Should code hold timeout UDP connections.                                                                                           | True            |                      |
+| net_UdpUseEncryption                | Enable encryption on UDP-based connections.                                                                                         | False           |                      |
+| net_RttFudgeScalar                  | Scalar value to multiply computed RTT by to determine an optimal packet timeout threshold.                                          | 2.0             |                      |
 | net_MaxTimeoutsPerFrame             | Maximum number of packet timeouts to allow to process in a single frame.                                                            | 1000            |                      |
 | net_FragmentedHeaderOverhead        | A fudge overhead value to take out of fragmented packet payloads.                                                                   | 32              |                      |
 | net_SslInflationOverhead            | A SSL fudge overhead value to take out of fragmented packet payloads.                                                               | 32              |                      |
@@ -157,7 +157,7 @@ These settings control networking behavior.
 | net_SslExternalContextPassword | The password required for the EXTERNAL (server to client) private certificate.                                       | ""                          ||
 | net_SslExternalPrivateKeyFile  | The filename of the EXTERNAL (server to client) private key file in PEM format.                                      | ""                          ||
 | net_SslInternalCertificateFile | The filename of the INTERNAL (server to server only) certificate chain in PEM format.                                | ""                          ||
-| net_SslInternalContextPassword | "The password required for the INTERNAL (server to server only) private certificate.                                 | ""                          ||
+| net_SslInternalContextPassword | The password required for the INTERNAL (server to server only) private certificate.                                 | ""                          ||
 | net_SslInternalPrivateKeyFile  | The filename of the INTERNAL (server to server only) private key file in PEM format.                                 | ""                          ||
 | net_RotateCookieTimer          | Number of milliseconds to wait before generating a new DTLS cookie for handshaking.                                  | 50 ms                       ||
 | net_SslAllowSelfSigned         | If enabled, self-signed certs will not cause a validation error if they are otherwise considered trusted.            | True                        ||
