@@ -46,7 +46,7 @@ There is no set of features that result in the highest quality animation in all 
 
 The schema defines which features are extracted from the motion database while the actual extracted data is stored in the feature matrix. Along with the feature type, settings like the joint to extract the data from, a debug visualization color, how the residual is calculated, or a custom feature can be specified.
 
-The more features selected by the user, the bigger the chances are that the searched and matched pose hits the expected result but the slower the algorithm will be and the more memory it will use. The key is to use crucial and independent elements that define a pose and its movement without being too strict on the wrong end. The root trajectory along with the left and right foot positions and velocities have been proven to be a good start here.
+The more features selected by the user, the bigger the chances are that the searched and matched pose hits the expected result, but the slower the algorithm will be and the more memory it will use. The key is to use crucial and independent elements that define a pose and its movement without being too strict. The root trajectory along with the left and right foot positions and velocities have been proven to be a good start here.
 
 {{< image-width src="/images/blog/motion-matching/feature-matrix.png" width="100%" alt="The motion matching feature matrix." >}}
 
