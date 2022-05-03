@@ -79,7 +79,7 @@ The name of a prefab instance is derived from the prefab file name. However, eac
 ![Renaming a prefab.](/images/learning-guide/tutorials/entities-and-prefabs/rename-prefab.png)
 
 {{< note >}}
-Entities and prefab instances aren't required to have unique names. When you instantiate a prefab, or duplicate an entity or a prefab instance, the name of the instance or duplicate is the same as the source. Each entity and prefab instance has a unique Entity ID that is used by O3DE to identify them. You can view an entity or prefab instance Entity ID in Entity Inspector.
+Entities and prefab instances aren't required to have unique names. When you instantiate a prefab, or duplicate an entity or a prefab instance, the name of the instance or duplicate is the same as the source. Each entity and prefab instance has a unique Entity ID that is used by O3DE to identify them.
 {{< /note >}}
 
 ## Saving entities and prefabs
@@ -208,7 +208,7 @@ When an entity or a prefab instance is deleted from a level, you must save the l
 
 When an entity or prefab instance is deleted from a prefab, you must [save the prefab](#saving-entities-and-prefabs) to commit the change.
 
-Deleting a prefab instance has no effect on the prefab file that created the prefab instance. The prefab instance is removed, but the `.prefab` file on disk is not changed. 
+Deleting a prefab instance has no effect on the prefab file that has been used to create the prefab instance. The prefab instance is removed, but the `.prefab` file on disk is not changed. 
 {{< /note >}}
 
 ## Conclusion and next steps
