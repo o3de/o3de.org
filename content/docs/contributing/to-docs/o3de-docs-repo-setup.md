@@ -181,7 +181,7 @@ Now you can test your setup by running a local Hugo server and viewing the O3DE 
     hugo server --port 44541 --bind=0.0.0.0 --watch=false
     ```
 
-    {{ /note }}
+    {{< /note >}}
 
 ## Create a branch
 
