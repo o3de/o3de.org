@@ -75,7 +75,7 @@ For more information on working with forks, refer to [Working with forks](https:
 1. Set the upstream for your clone to the main O3DE docs repo.
 
     ```shell
-    git remote add upstream https://github.com/o3de/o3de.org
+    git remote add upstream https://github.com/o3de/o3de.org.git
     ```
 
 1. Disallow pushing to the main O3DE docs repo from your clone.
