@@ -71,7 +71,7 @@ The Open 3D Foundation and the broader Open 3D Engine community reserve the righ
 
 Good question! That's really up to the community alongside our established Code of Conduct and Community Tenets. Not sure? Join the O3DE Discord or one of the SIGs, and vet your idea with our members.
 
-Here's some basic Do's and Don'ts to help you focus your work and avoid rejection.
+Here are some basic "Dos and Don'ts" to help you focus your work and avoid rejection.
 
 ### Do
 
