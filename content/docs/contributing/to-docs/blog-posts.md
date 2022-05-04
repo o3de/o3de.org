@@ -28,7 +28,7 @@ Blog posts are submitted through the same process as the [docs contribution work
 1. Fork the https://github.com/o3de/o3de.org repo.
 1. Clone your fork to your local machine. Set `upstream` to o3de.org and `origin` to your fork.
 1. Create a branch for submission. This branch should contain _only_ the necessary content additions for your blog post.
-1. Open your editor of choice and create a draft post using Markdown under thr `/content/blog/posts` folder. Give it a clear, unique filename in all lowercase, with no spaces. (Use a hyphen `-` as a replacement for spaces. Please do not use any other non-alphanumeric characters.)
+1. Open your editor of choice and create a draft post using Markdown under the `/content/blog/posts` folder. Give it a clear, unique filename in all lowercase, with no spaces. (Use a hyphen `-` as a replacement for spaces. Please do not use any other non-alphanumeric characters.)
 1. Make sure that your blog post has the following metadata at the top:
 
     ```metadata
