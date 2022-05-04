@@ -61,7 +61,7 @@ Blog posts are submitted through the same process as the [docs contribution work
 1. Commit your changes to your branch. **Ensure your commit(s) are DCO signed!**
 1. Push your branch to your fork (`origin`). Go to your fork on GitHub and create a pull request from your fork/branch to `o3de/o3de.org` against the `main` branch.
 1. Go to your pull request at https://github.com/o3de/o3de.org/pulls and ensure that all checks have passed. If they haven't, fix up your pull request and resubmit it.
-1. Go into the [O3DE Discord](https://discord.gg/o3de) and share your pull request for review, or send an email to the [O3DE Documentation & Community SIG](https://lists.o3de.org/g/sig-docs-community) mailing list. Someone will review it and provide feedback or an okay. For blog posts, we go through the regular pull request review process and have an additional requirement that a relevant SIG, the TSC, or the O3DE marketing committee approve the blog post.
+1. Go into the [O3DE Discord](https://discord.gg/o3de) and share your pull request for review, or send an email to the [O3DE Documentation & Community SIG](https://lists.o3de.org/g/sig-docs-community) mailing list. Someone will review it and provide feedback or an okay. For blog posts, we go through the regular pull request review process with an additional requirement that a relevant SIG, the TSC, or the O3DE marketing committee approve the blog post.
  
 {{< note >}}
 The Open 3D Foundation and the broader Open 3D Engine community reserve the right to not publish any blog post that does not meet our standards. We also reserve the right to remove any currently published blog post.
