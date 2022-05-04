@@ -93,7 +93,7 @@ Here are some basic "Dos and Don'ts" to help you focus your work and avoid rejec
 
 * Get personal. Do not use the O3DE blog to call out any individuals in a negative way.
 
-* Get political. Politics pervade every part of life, and we all have different backgrounds, ideologies, and reactions to the way in which culture and society shapes itself. The O3DE blog isn't the place for it, unless you are running a community-approved political initiative and have the blessings of the Linux Foundation.
+* Get political. Politics pervade every part of life, and we all have different backgrounds, ideologies, and reactions to the way in which society shapes itself. The O3DE blog isn't the place for it&mdash;unless you are running a community-approved political initiative and have the blessings of the Linux Foundation.
 
 * Attack or criticize other products, platforms, or companies directly. Showing perf data between O3DE and a similar product/feature pairing is one thing; however, slagging on a similar product or another company is another. The latter will not be tolerated, regardless of how strongly you feel on the subject.
 
