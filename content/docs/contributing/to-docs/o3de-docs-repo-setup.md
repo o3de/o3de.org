@@ -174,7 +174,7 @@ Now you can test your setup by running a local Hugo server and viewing the O3DE 
     hugo server --port 44541 --bind=0.0.0.0
     ```
 
-    {{ note }}
+    {{< note >}}
     If you use the **macOS** platform for docs development, you must run Hugo with the `--watch=false` switch enabled. For example:
 
     ```bash
