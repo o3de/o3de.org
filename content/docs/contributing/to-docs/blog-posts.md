@@ -56,7 +56,7 @@ Blog posts are submitted through the same process as the [docs contribution work
     ```
 
     {{ note }}
-    Blog posting is automated and that the `date` field determines when the blog will first become visible if your pull request is accepted and merged.
+    Blog posting is automated and the `date` field determines when the blog will first become visible if your pull request is accepted and merged.
     {{ /note }}
 1. Commit your changes to your branch. **Ensure your commit(s) are DCO signed!**
 1. Push your branch to your fork (`origin`). Go to your fork on GitHub and create a pull request from your fork/branch to `o3de/o3de.org` against the `main` branch.
