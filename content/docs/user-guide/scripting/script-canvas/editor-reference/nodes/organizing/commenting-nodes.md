@@ -11,11 +11,9 @@ You can add comments to your script to describe how it works.
 
 A **Comment** node is a floating block of text that you can move in the **Script Canvas Editor** canvas.
 
-**To add a Comment node to your script**
+**To add a Comment to your script**
 
-1. In the Script Canvas Editor, do one of the following:
-    + In the **Node Palette**, choose **Utilities** and then choose and drag the **Comment** node to your script.
-    + **Right-click** your script and choose **Add Comment**.
+1. In the Script Canvas Editor, **Right-click** your script and choose **Add Comment**, **Note**.
 
 1. Double-click the node and then enter a description.
 
@@ -23,7 +21,7 @@ A **Comment** node is a floating block of text that you can move in the **Script
 
 1. To delete a **Comment** node, do one of the following:
     + Select the node and press **Delete**.
-    + **Right-click** the node and choose **Delete Node**.
+    + **Right-click** the node and choose **Delete**.
 
 ## Adding block comment nodes
 
@@ -32,8 +30,6 @@ The **Block Comment** node is similar to the **Comment** node, except that you c
 **To add a Block Comment node to your script**
 
 1. In the Script Canvas Editor, do one of the following:
-    + In the **Node Palette**, click **Utilities** and then drag the **Block Comment** node to your script.
-    + **Right-click** the canvas and choose **Create Block Comment**.
     + If you have a group of nodes together, **right-click** the canvas and choose **Create Block Comment for Selection**.
 
 1. For the **Block Comment** node, double-click the header, and then enter a description.

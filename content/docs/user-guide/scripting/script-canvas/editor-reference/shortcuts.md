@@ -11,7 +11,7 @@ The **Script Canvas Editor** includes the following keyboard and mouse shortcuts
 
 | Key Combination | Action | Description |
 | --- | --- | --- |
-| Arrow Keys | Scroll graph | Scrolls the graph left, right, up, or down. |
+| Arrow Keys | Scroll graph | Scrolls the graph left, right, up, or down. You must have focus in the graph canvas, either by clicking on a node or clicking anywhere inside the canvas. |
 | Ctrl+C | Copy | Copies the selected nodes and their connections to the clipboard. |
 | Ctrl+V | Paste | Pastes copied nodes and their connections from the clipboard into the active graph. |
 | Ctrl+D | Duplicate | Duplicates the selected nodes in the active graph. This is the equivalent of using Ctrl+C and Ctrl+V. |
