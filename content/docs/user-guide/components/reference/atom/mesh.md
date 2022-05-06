@@ -23,27 +23,27 @@ The **Mesh** component specifies a model to render in the scene. Model assets ar
 | **Exclude from reflection cubemaps** | If enabled, the model will not be visible in baked reflection probe cubemaps. | Boolean | `Disabled` |
 | **Use Forward Pass IBL Specular** | Renders image-based lighting (IBL) specular reflections in the forward pass, by using only the most influential probe (based on the position of the entity) and the global IBL cubemap. It can reduce rendering costs, but is only recommended for static objects that are affected by at most one reflection probe. | Boolean | `Disabled` |
 | **Use ray tracing** | Includes this model in ray tracing calculations. | Boolean | `Enabled` |
-| **LOD Type** | Refer to [LOD Type](#lod-type) below. | `Default`, `Screen Coverage`, `Specific LOD` | `Default` |Default (Highest) |
-| **Add Material Component** | Button to add a [Material Component](/docs/user-guide/components/reference/atom/material/) to the entity | | |
-| **Model Stats** | Displays mesh count, vertex count, and triangle count for each LOD in the model | | |
+| **LOD Type** | Refer to [LOD Type](#lod-type) below. | `Default`, `Screen Coverage`, `Specific LOD` | `Default` |
+| **Add Material Component** | Button to add a [Material Component](/docs/user-guide/components/reference/atom/material/) to the entity. | | |
+| **Model Stats** | Displays mesh count, vertex count, and triangle count for each LOD in the model. | | |
 
 
 ### LOD Type
-LOD Type determines how level of detail (LOD) will be selected during rendering.
+**LOD Type** determines how the level of detail (LOD) is selected during rendering.
 
 {{< tabs name="lod-type-ui" >}}
 {{% tab name="Default" %}}
 
 ![lod-type-default](/images/user-guide/components/reference/atom/mesh/lod-type-ui/mesh-default.png)
 
-LOD Type: `Default` uses the configured *default method* for automatically selecting the LOD. O3DE ships using the Screen Coverage method as the default method. If the *default method* is changed in the future, the component automatically uses the new default.
+**LOD Type**: `Default` uses the configured *default method* for automatically selecting the LOD. O3DE ships using the Screen Coverage method as the default method. If the *default method* is changed in the future, the component automatically uses the new default.
 
 {{% /tab %}}
 {{% tab name="Screen Coverage" %}}
 
 ![lod-type-screen-coverage](/images/user-guide/components/reference/atom/mesh/lod-type-ui/mesh-screen-coverage.png)
 
-LOD Type: `Screen Coverage` determines which LOD should be rendered based on the approximate proportion of the screen that the LOD will cover.
+**LOD Type**: `Screen Coverage` determines which LOD to render based on the approximate proportion of the screen that the LOD covers.
 
 | Property | Description | Values | Default |
 |-|-|-|-|
@@ -55,11 +55,11 @@ LOD Type: `Screen Coverage` determines which LOD should be rendered based on the
 
 ![lod-type-specific-lod](/images/user-guide/components/reference/atom/mesh/lod-type-ui/mesh-specific-lod.png)
 
-LOD Type: `Specific LOD` specifies the LOD to render, overriding the automatic LOD calculations.
+**LOD Type**: `Specific LOD` specifies the LOD to render, overriding the automatic LOD calculations.
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **LOD Configuration - LOD Override** | Sets the specific LOD to render. | LOD 0 (Highest Detail) to LOD *n*, where *n* is the lowest detail LOD | Highest |
+| **LOD Configuration - LOD Override** | Sets the specific LOD to render. The number of LODs depends on how many LODs the asset has. | LOD 0 (Highest Detail) to LOD *n*, where *n* is the lowest detail LOD | LOD 0 (Highest Detail) |
 
 {{% /tab %}}
 {{< /tabs >}}
