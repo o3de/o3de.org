@@ -18,59 +18,82 @@ While every component is unique, the typical steps for creating a new component 
 
 ## Create your component class
 
-1. Start with the following boilerplate code for a typical runtime component class. For editor and system components, get their boilerplate code from [Editor Components](editor-components) and [System Components](system-components), respectively.
+Use the `o3de` CLI script in the O3DE `scripts` directory to create a common runtime component from the default component template. For editor and system components, you can find their boilerplate code in [Editor Components](editor-components) and [System Components](system-components), respectively.
 
-    **MyComponent.h**
+1. Use the `create-from-template` command to create the component in the destination directory.
 
-    ```cpp
-    #pragma once
+    {{< tabs name="Create component from template" >}}
+    {{% tab name="Windows" %}}
 
-    #include <AzCore/Component/Component.h>
+Format:
 
-    namespace MyGem
-    {
-        class MyComponent
-            : public AZ::Component
-        {
-        public:
-            AZ_COMPONENT(MyGem::MyComponent, "{NEW-GUID-HERE}");
+```cmd
+scripts\o3de.bat create-from-template -dp <destination-dir> -dn <component-name> -tn DefaultComponent -r ${GemName} <gem-name>
+```
 
-            // Required Reflect function.
-            static void Reflect(AZ::ReflectContext* context);
+The template appends the word "Component" to the component name you provide.
 
-            // Optional functions for defining provided and dependent services.
-            static void GetProvidedServices(AZ::ComponentDescriptor::DependencyArrayType& provided);
-            static void GetDependentServices(AZ::ComponentDescriptor::DependencyArrayType& dependent);
-            static void GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& required);
-            static void GetIncompatibleServices(AZ::ComponentDescriptor::DependencyArrayType& incompatible);
+Supply the component's namespace as the replacement value for the `${GemName}` placeholder variable. In many cases, this namespace is the same as the Gem name.
 
-        protected:
-            // AZ::Component interface implementation.
-            void Init() override          {}
-            void Activate() override      {}
-            void Deactivate() override    {}
-        };
-    } // namespace MyGem
-    ```
+For example, to create a component called `MyTestComponent` in the `MyGem` namespace, do the following:
 
-    **MyComponent.cpp**
+```cmd
+scripts\o3de.bat create-from-template -dp MyCode -dn MyTest -tn DefaultComponent -r ${GemName} MyGem
+```
 
-    ```cpp
-    #include <MyComponent.h>
+To create the component in an existing directory, such as the `Code` directory of a Gem that's in progress, add the `-f` option to the `create-from-template` command to force the creation of the component files there.
 
-    #include <AzCore/Serialization/SerializeContext.h>
-    #include <AzCore/Serialization/EditContext.h>
+For example, to create a component called `MyTestComponent` in the `MyGem` namespace in the Gem's `Code` directory, do the following:
 
-    namespace MyGem
-    {
-        void MyComponent::Reflect(AZ::ReflectContext* context)
-        {
-            context; // TODO: Add reflection code.
-        }
-    } // namespace MyGem
-    ```
+```cmd
+scripts\o3de.bat create-from-template -dp C:\Gems\MyGem\Code -dn MyTest -tn DefaultComponent -r ${GemName} MyGem -f
+```
 
-1. Add these files to your Gem's CMake source file list, for example: `<Gem>/Code/mygem_files.cmake`.
+    {{% /tab %}}
+    {{% tab name="Linux" %}}
+
+Format:
+
+```bash
+scripts/o3de.sh create-from-template -dp <destination-dir> -dn <component-name> -tn DefaultComponent -r ${GemName} <gem-name>
+```
+
+The template appends the word "Component" to the component name you provide.
+
+Supply the component's namespace as the replacement value for the `${GemName}` placeholder variable. In many cases, this namespace is the same as the Gem name.
+
+For example, to create a component called `MyTestComponent` in the `MyGem` namespace, do the following:
+
+```bash
+scripts/o3de.sh create-from-template -dp MyCode -dn MyTest -tn DefaultComponent -r ${GemName} MyGem
+```
+
+To create the component in an existing directory, such as the `Code` directory of a Gem that's in progress, add the `-f` option to the `create-from-template` command to force the creation of the component files there.
+
+For example, to create a component called `MyTestComponent` in the `MyGem` namespace in the Gem's `Code` directory, do the following:
+
+```bash
+scripts/o3de.sh create-from-template -dp Gems/MyGem/Code -dn MyTest -tn DefaultComponent -r ${GemName} MyGem -f
+```
+
+    {{% /tab %}}
+    {{< /tabs >}}
+
+1. The default component template produces three source files. If you did not create these files in the desired source directory, move them there now:
+
+    * `Include/<gem-name>/<component-name>Interface.h`
+    * `Source/<component-name>Component.cpp`
+    * `Source/<component-name>Component.h`
+
+    Typically, the bus interface header is placed in a Gem's public include directory: `Code/Include/<gem-name>`. The two component source files go into a Gem's `Code/Source` directory.
+
+    {{< note >}}
+If you decide to put the interface header in a different directory than `Include/<gem-name>`, you will need to adjust its include path in the component header.
+    {{< /note >}}
+
+1. Add the interface header to your Gem's API CMake source file list, for example: `<Gem>/Code/mygem_api_files.cmake`.
+
+1. Add the two component files to your Gem's private CMake source file list, for example: `<Gem>/Code/mygem_private_files.cmake`.
 
 ## Register the component
 
