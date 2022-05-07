@@ -5,7 +5,7 @@ description: Learn how to create editor components in Open 3D Engine.
 weight: 500
 ---
 
-Some components in O3DE have separate `editor` and `runtime` versions. The editor version is active in the editor. The runtime version is used for running the level in game or in the editor by pressing **Ctrl+G** or clicking **AI/Physics** below the viewport. O3DE uses editor components to maintain a clean separation between tools-specific code and data on one hand, and leaner runtime component data on the other. In general, runtime game components do not require editor counterparts. Components rarely need to be fully active at edit time. The light and mesh components are exceptions because they must behave the same at edit time as at run time.
+Some components in **Open 3D Engine (O3DE)** have separate `editor` and `runtime` versions. The editor version is active in the editor. The runtime version is used for running the level in game or in the editor by pressing **Ctrl+G** or clicking **AI/Physics** below the viewport. O3DE uses editor components to maintain a clean separation between tools-specific code and data on one hand, and leaner runtime component data on the other. In general, runtime game components do not require editor counterparts. Components rarely need to be fully active at edit time. The light and mesh components are exceptions because they must behave the same at edit time as at run time.
 
 `EditContext` reflection is fully supported in runtime components. Edit time is the only time when editor components are active. At run time, when O3DE processes a level or dynamic slice, it uses the runtime equivalents of editor components. Using the `EditContext` from a runtime component is usually sufficient to provide a rich editing experience.
 
@@ -66,7 +66,7 @@ public:
 };
 ```
 
-## Editor Component and Runtime Component Differences
+## Editor component and runtime component differences
 
 The code for editor components is similar to the code for runtime components. The following sections list the key differences. It is safe to assume that editor component code is the same as it is for runtime component code other than the differences listed. For more information, see [Creating a Component](/docs/user-guide/programming/components/create-component/).
 
@@ -120,7 +120,7 @@ void DisplayEntityViewport(const AzFramework::ViewportInfo& viewportInfo, AzFram
 | viewportInfo | Determines information such as camera position. |
 | debugDisplay | Contains the interface for debug draw or display commands. |
 
-### The BuildGameEntity Method
+### The BuildGameEntity method
 
 The `BuildGameEntity` method from `EditorComponentBase.h` facilitates the translation of an editor component into a runtime component. Override this method as follows.
 
