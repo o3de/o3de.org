@@ -11,7 +11,7 @@ While every component is unique, the typical steps for creating a new component 
 
 1. Create the component class from the default component template, or from an existing component.
 1. Register the component in the parent Gem module.
-1. Implement the component class interface, using the `Init()`, `Activate()`, and `Deactivate()` functions.
+1. Implement the component class interface using the `Init()`, `Activate()`, and `Deactivate()` functions.
 1. Reflect component data for serialization and editing.
 1. Reflect component data and methods for scripting.
 1. Define component services, such as the provided and required services.
@@ -88,12 +88,12 @@ scripts/o3de.sh create-from-template -dp Gems/MyGem/Code -dn MyTest -tn DefaultC
     Typically, the bus interface header is placed in a Gem's public include directory: `Code/Include/<gem-name>`. The two component source files go into a Gem's `Code/Source` directory.
 
     {{< note >}}
-If you decide to put the interface header in a different directory than `Include/<gem-name>`, you will need to adjust its include path in the component header.
+If you decide to put the interface header in a different directory than `Include/<gem-name>`, you must adjust its include path in the component header.
     {{< /note >}}
 
-1. Add the interface header to your Gem's API CMake source file list, for example: `<Gem>/Code/mygem_api_files.cmake`.
+1. Add the interface header to your Gem's API CMake source file list. For example: `<Gem>/Code/mygem_api_files.cmake`.
 
-1. Add the two component files to your Gem's private CMake source file list, for example: `<Gem>/Code/mygem_private_files.cmake`.
+1. Add the two component files to your Gem's private CMake source file list. For example: `<Gem>/Code/mygem_private_files.cmake`.
 
 ## Register the component
 
@@ -140,7 +140,7 @@ To implement the component interface, start with the following steps that walk t
         : public AZ::Component
     ```
 
-    Editor components typically inherit from `EditorComponentBase`. These components enable you to have editor-specific functionality that is different than what's needed at runtime. You can implement editor functionality in the editor component, and runtime functionality in the runtime component counterpart. For more information and additional implementation requirements, refer to [Editor Components](./editor-components.md) later in this section.
+    Editor components typically inherit from `EditorComponentBase`. These components enable you to have editor-specific functionality that is different than what's needed at runtime. You can implement editor functionality in the editor component, and runtime functionality in the runtime component counterpart. For more information and additional implementation requirements, refer to [Editor Components](./editor-components.md).
 
     Example editor component class:
 
@@ -153,9 +153,9 @@ To implement the component interface, start with the following steps that walk t
 
 1. Use the `AZ_COMPONENT` macro to define a universally unique identifier (UUID) for your component. The macro takes two arguments:
 
-    1. The component type name. To help avoid name conflicts, we recommend that you use the namespace in any type of `AZ_RTTI` macros such as `AZ_COMPONENT`.
+    * The component type name. To help avoid name conflicts, we recommend that you use the namespace in any type of `AZ_RTTI` macros such as `AZ_COMPONENT`.
 
-    1. A unique UUID. You may use any UUID generator to produce the value. Visual Studio provides this functionality through **Tools**, **Create GUID**. Use the **Registry Format** setting, and then copy and paste the value that is generated.
+    * A unique UUID. You may use any UUID generator to produce the value. Visual Studio provides this functionality through **Tools**, **Create GUID**. Use the **Registry Format** setting, and then copy and paste the value that is generated.
     A sample `AZ_COMPONENT` macro follows:
 
     ```cpp
@@ -176,11 +176,11 @@ To implement the component interface, start with the following steps that walk t
 
     * `Init()`
 
-        (Optional) Called only once for a given entity to initialize the component's internal state. Although the Init() function initializes the component, the component is not active until the system calls the component's Activate() function. We recommend that you minimize the component's CPU and memory overhead when the component is inactive.
+        (Optional) Called only once for a given entity to initialize the component's internal state. Although the `Init()` function initializes the component, the component is not active until the system calls the component's `Activate()` function. We recommend that you minimize the component's CPU and memory overhead when the component is inactive.
 
     * `Activate()`
 
-        (Required) Called when the owning entity is activated, provided that all services and components that the component depends on are present and active. The `Activate` function is always called _after_ any components that it depends on. For information about how to specify dependencies, refer to [Defining and Using Component Services](services). Typically in the `Activate()` function, a component performs setup procedures, connects to Event Buses (EBuses), and allocates resources or requests assets.
+        (Required) Called when the owning entity is activated, provided that all services and components that the component depends on are present and active. The `Activate()` function is always called _after_ any components that it depends on. For information about how to specify dependencies, refer to [Defining and Using Component Services](services). Typically in the `Activate()` function, a component performs setup procedures, connects to **Event Buses (EBuses)**, and allocates resources or requests assets.
 
     * `Deactivate()`
 

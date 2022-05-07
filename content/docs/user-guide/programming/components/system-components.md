@@ -19,7 +19,7 @@ When you author system components, follow the [best practices for component auth
 Just like game components, system components often provide request and notification buses. However, because system components are global systems, they should not specify IDs for their buses like game components. Game developers should be able to call your system's EBuses without having to deal with or know about the system entity that contains all system components.
 {{< /important >}}
 
-For an example of a Gem which provides system components, the `HttpRequestor` Gem that O3DE ships with has an implementation of a system component referenced throughout this topic. The Gem source is located at `Gems/HttpRequestor/Code` in the O3DE source.
+For an example of a Gem that provides system components, the `HttpRequestor` Gem that O3DE ships with has an implementation of a system component referenced throughout this topic. The Gem source is located at `Gems/HttpRequestor/Code` in the O3DE source.
 
 ## Creating a system component in a Gem
 

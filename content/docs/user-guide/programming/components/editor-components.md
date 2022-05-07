@@ -17,7 +17,7 @@ Editor components are not required. An editor component is necessary only if one
 * Your component provides functionality only in the editor and does not export a runtime component (for example, if your component manages selection logic).
 {{< /important >}}
 
-## Sample Editor Component
+## Sample editor component
 
 The following code shows a sample editor component.
 
@@ -70,7 +70,7 @@ public:
 
 The code for editor components is similar to the code for runtime components. The following sections list the key differences. It is safe to assume that editor component code is the same as it is for runtime component code other than the differences listed. For more information, see [Creating a Component](/docs/user-guide/programming/components/create-component/).
 
-### Base Classes
+### Base classes
 
 All editor components include the `AzToolsFramework::Components::EditorComponentBase` class somewhere in their inheritance ancestry. If a component must display edit-time visualization, it must be a handler on the `AzFramework::EntityDebugDisplayEventBus` bus, as in the following example.
 
@@ -105,7 +105,7 @@ Some O3DE editor components specify `AzToolsFramework::Components::EditorCompone
 AZ_COMPONENT(EditorMannequinComponent, "{C5E08FE6-E1FC-4080-A053-2C65A667FE82}", AzToolsFramework::Components::EditorComponentBase);
 ```
 
-### The DisplayEntityViewport Method
+### The DisplayEntityViewport method
 
 To draw debug visuals in the viewport for a specific entity, implement the `DisplayEntityViewport` method of the `AzFramework::EntityDebugDisplayEventBus` interface. Use this location for custom primitive edit-time visualization code.
 

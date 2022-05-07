@@ -231,10 +231,10 @@ AZ::u32 MyComponent::OnStringFieldChanged()
 
 `AZ::Edit::PropertyRefreshLevels::ValuesOnly` is one of the following refresh modes that you can use:
 
-+ `AttributesAndValues` - Reevaluates attributes of the properties displayed in the UI and refreshes their values. Because attributes can be bound to data members, member functions, global functions, or static variables, it's sometimes necessary to ask the property grid to reevaluate them. Doing so might include reinvoking bound functions.
-+ `EntireTree` - Refreshes the entire tree that is displayed in the UI.
-+ `None` - Specifies that the properties that are displayed in the UI should not be refreshed.
-+ `ValuesOnly` - Refreshes only the values of the properties that are displayed in the UI. The property grid updates the GUI to reflect changes to underlying data that might have occurred in the change callback.
++ `AttributesAndValues` -- Reevaluates attributes of the properties displayed in the UI and refreshes their values. Because attributes can be bound to data members, member functions, global functions, or static variables, it's sometimes necessary to ask the property grid to reevaluate them. Doing so might include reinvoking bound functions.
++ `EntireTree` -- Refreshes the entire tree that is displayed in the UI.
++ `None` -- Specifies that the properties that are displayed in the UI should not be refreshed.
++ `ValuesOnly` -- Refreshes only the values of the properties that are displayed in the UI. The property grid updates the GUI to reflect changes to underlying data that might have occurred in the change callback.
 
 The following more complex example binds a list of strings as options for a combo box. The list of strings is attached to a string field *Property A*. Suppose you want to modify the options available in the combo box for Property A with the values from another *Property B*. In that case you can bind the combo box `AZ::Edit::Attributes::StringList` attribute to a member function that computes and returns the list of options. In the `AZ::Edit::Attributes::ChangeNotify` attribute for Property B, you tell the system to reevaluate attributes, which in turn reinvokes the function that computes the list of options.
 

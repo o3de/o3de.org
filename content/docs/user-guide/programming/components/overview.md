@@ -5,11 +5,11 @@ description: Learn how Open 3D Engine (O3DE) components fit into the Entity-Comp
 weight: 100
 ---
 
-**Open 3D Engine (O3DE)** is a an *entity-component system (ECS)* engine. This means that rather than using a polymorphism system where objects derive from one another ("is-a" relationships), it instead uses composition ("has-a" relationships). A common polymorphism example is "a car *is a* vehicle", whereas a composition example is "a car *has the components of a vehicle*." Using composition makes it much easier to extend objects, design for reuse, and keep base implementations as flexible as possible for performance and ease of use.
+**Open 3D Engine (O3DE)** is an *entity-component system (ECS)* engine. This means that rather than using a polymorphism system where objects derive from one another ("is-a" relationships), it instead uses composition ("has-a" relationships). A common polymorphism example is "a car *is a* vehicle", whereas a composition example is "a car *has the components of a* vehicle". Using composition makes it much easier to extend objects, design for reuse, and keep base implementations as flexible as possible for performance and ease of use.
 
 Entities have no functionality by themselves; rather, they are essentially an ID and a container for components. An entity can contain any number or combination of components. Some components allow only one instance per entity, and some depend on other components to function.
 
-The Gems that come with O3DE include a variety of components that implement core engine functionality. Within **O3DE Editor**, these components can be found in categories such as Animation, Atom, and Gameplay. As an O3DE developer, you can create new components, either to extend the functionality of existing Gems, or to implement the features of your own Gems. In this section, you will learn how to create a component.
+The Gems that come with O3DE include a variety of components that implement core engine functionality. Within **O3DE Editor**, you can find these components in categories such as Animation, Atom, and Gameplay. As an O3DE developer, you can create new components, either to extend the functionality of existing Gems, or to implement the features of your own Gems. This section shows you how to create a component.
 
 ### Types of components
 
@@ -17,7 +17,7 @@ All O3DE components derive from the `AZ::Component` class. In addition, O3DE def
 
 #### Standard components
 
-Standard components can implement functionality in both editor and runtime environments. In some contexts, they are referred to as "runtime components" or "game components" to help differentiate them from the specialized "editor" and "system" components.
+*Standard components* can implement functionality in both editor and runtime environments. In some contexts, they are referred to as "runtime components" or "game components" to help differentiate them from the specialized "editor" and "system" components.
 
 #### Editor components
 
@@ -29,7 +29,7 @@ Standard components can implement functionality in both editor and runtime envir
 
 ### Communication between components
 
-In O3DE, you use the EBus messaging system to communicate between components instead of holding references to other entities or their components.
+In O3DE, you use the **Event Bus (EBus)** messaging system to communicate between components instead of holding references to other entities or their components.
 
 ### Component dependencies
 
@@ -43,6 +43,6 @@ The component lifecycle is straightforward. After initialization, component acti
 
 * **`Init()`** -- (Optional) An `Init()` function is called once for each entity that owns the component. It allows a component to initialize its internal state. Although the `Init()` function initializes the component, the component is not active until the system calls the component's `Activate()` function.
 * **`Activate()`** -- (Required) When an entity is activated, it calls `Activate()` on all of its components, provided that all services and components that the component depends on are present and active. To learn how to specify these dependencies, refer to [Defining and Using Component Services](services). Typically in the `Activate()` function, a component performs setup procedures, connects to EBuses, and allocates resources or requests assets.
-* **`Deactivate()`** -- (Required) When an entity is deactivated, it calls `Deactivate()` on all of its components. In the Deactivate() function, a component should release all resources and disconnect from all EBuses. The order of deactivation is the reverse of activation, so your component is deactivated before the components it depends on. Components should be completely dormant after deactivation, and they should be in more or less the same state that they are in after `Init()` is called.
+* **`Deactivate()`** -- (Required) When an entity is deactivated, it calls `Deactivate()` on all of its components. In the `Deactivate()` function, a component should release all resources and disconnect from all EBuses. The order of deactivation is the reverse of activation, so your component is deactivated before the components it depends on. Components should be completely dormant after deactivation, and they should be in more or less the same state that they are in after `Init()` is called.
 
 The remaining API operations of a component should be established by the EBus that it implements.
