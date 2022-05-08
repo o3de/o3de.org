@@ -2,7 +2,6 @@
 linkTitle: UI Spawner
 description: ' Use the Open 3D Engine UI Spawner component to spawn a runtime dynamic slice at an entity''s location with an optional offset. '
 title: UI Spawner Component
-weight: 800
 ---
 
 Use the **UISpawner** component to spawn a runtime dynamic [slice](/docs/user-guide/interactivity/user-interface/slices) \(\*.`dynamicslice`\) at an entity's location with an optional offset. In combination with scripting, you can use the **UISpawner** component to spawn any dynamic slice at any time and to spawn multiple instances of the same dynamic slice.

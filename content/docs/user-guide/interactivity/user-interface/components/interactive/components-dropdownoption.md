@@ -24,7 +24,7 @@ See [Properties](properties) to edit the common interactive component settings.
 
 **Elements, Owning Dropdown**
 
-Select an element from the list that has the **DropdWown** component. This is the element to be modified when this option is selected.
+Select an element from the list that has the **Dropdown** component. This is the element to be modified when this option is selected.
 
 **Elements, Text Element**
 

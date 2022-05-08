@@ -2,7 +2,6 @@
 linkTitle: UI Fader
 description: Use the Fader component to adjust the transparency of an element and its children.
 title: UI Fader Component
-weight: 200
 ---
 
 You can use a **Fader** component to simultaneously adjust the transparency of an element and its children.
