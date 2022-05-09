@@ -5,7 +5,7 @@ title: UI Elements
 weight: 500
 ---
 
-UI elements are entities that you can attach multiple components to. You can start with an empty element and add components to it, such as a button, image, slider, text, and so on. Or you can add an pre-fabricated (prefab) UI element, such as a scroll box, which is an element with components already attached.
+UI elements are entities that you can attach multiple components to. You can start with an empty element and add components to it, such as a button, image, slider, text, and so on. Or you can add a pre-fabricated (prefab) UI element, such as a scroll box, which is an element with components already attached.
 
 ![UI element properties](/images/user-guide/interactivity/user-interface/elements/ui-editor-elements.png)
 
