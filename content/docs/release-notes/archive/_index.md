@@ -18,5 +18,5 @@ Looking for older versions of release notes for **Open 3D Engine (O3DE)**? Look 
 {{< note >}}
 With version 22.05.0, the versioning release scheme changed. Binary installers now share a version with source, and the friendly name has been removed.
 
-For earlier releases: Source versions use the `XXXX.Y` numbering model. Binary releases use `XX.XX FriendlyName` names, where the decimal place is moved to the left by 2 values from the original source code version.
+For earlier releases: Source versions use the `XXXX.Y` numbering model. Binary releases use `XX.XX FriendlyName` names, where the decimal place is moved to the left by two values from the original source code version.
 {{< /note >}}
