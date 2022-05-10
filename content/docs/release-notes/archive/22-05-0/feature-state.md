@@ -5,7 +5,7 @@ description: Snapshot of the Open 3D Engine (O3DE) feature status grid for the 2
 toc: true
 ---
 
-The **Open 3D Engine (O3DE)** feature grid is a record of the state of each feature system within O3DE, and its current state of support. The feature grids contained on this page were generated for the 22.05.0 release. For an up to date feature grid, see the [o3de/community feature grid](https://o3de.github.io/community/features/form.html).
+The **Open 3D Engine (O3DE)** feature grid is a record of the state of each feature system within O3DE and its current state of support. The feature grids contained on this page were generated for the 22.05.0 release. For an up-to-date feature grid, see the [o3de/community feature grid](https://o3de.github.io/community/features/form.html).
 
 Features are reported via each individual O3DE Special Interest Group (SIG). For more information about each SIG and their responsibilities, see the [o3de/community repository](https://github.com/o3de/community/) on GitHub.
  
@@ -70,7 +70,7 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 | Project versioning | 🟡 Active | 🔵 In-Design | ⭕ Not Required | 🔵 In Progress | 🔵 In Progress | Windows Linux  |
 | Template Management | 🟠 Planned | ❌ None | ⭕ Not Required | ❌ Unproven | ❌ Unsupported | Windows Linux  |
 | Gem Creation Wizard | 🟠 Planned | ❌ None | ⭕ Not Required | ❌ Unproven | ❌ Unsupported | Windows Linux  |
-| Remote Gems Improvements (URI vs URL) | 🟠 Planned | ❌ None | ⭕ Not Required | ❌ Unproven | ❌ Unsupported | Windows Linux  |
+| Remote Gems Improvements (URI vs. URL) | 🟠 Planned | ❌ None | ⭕ Not Required | ❌ Unproven | ❌ Unsupported | Windows Linux  |
 | Remote Gems (Initial) | 🟢 Complete | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🔵 In Progress | Windows Linux  |
 
 ### Scripting 
@@ -170,7 +170,7 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 | Input system | 🟢 Complete | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | All  |
 | Logging and tracing | 🟢 Complete | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🟡 Needs Optimization | All  |
 | Profiling | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🟠 Volatile | 🔵 In Progress | Windows  |
-| Opimised standard library | 🟡 Active | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🔵 In Progress | All  |
+| Optimised standard library | 🟡 Active | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🔵 In Progress | All  |
 
 ### Physics API (minimal, non-backend specific) 
 
@@ -308,7 +308,7 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 
 | Module | Feature | Functional | Content | Code/API | Performance | Platform |
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Wwyse Integration | 🟢 Complete | 🟡 Partial | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | |
+| Wwise Integration | 🟢 Complete | 🟡 Partial | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | |
 
 ## SIG-Network 
 
@@ -344,7 +344,6 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 | Netbound entity support [NetBindComponent] | 🟢 Complete | || || |
 | Entity replication support | 🟢 Complete | || || |
 | Network Prefab Spawning | 🟡 Active | || || |:w
-
 | Networked Animation | ❌ Unscheduled | || || |
 | Network Audio Support | ❌ Unscheduled | || || |
 | Network Simulation (Physics) | 🟢 Complete | || || |
