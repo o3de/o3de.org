@@ -66,7 +66,7 @@ Depending on your role as an artist, designer, engineer, and the scope of the pr
 
 ### Artist
 
-While much of your work as an artist might involve using tools outside O3DE, the tools O3DE provides bring all of your assets together into worlds and actors for people to visualize, interact with, experience. You might work closely with a designer or double as a designer yourself. There is some overlap between the tools and functionality artists and designers use.
+While much of your work as an artist might involve using tools outside O3DE, the tools O3DE provides bring all of your assets together into worlds and actors for people to visualize, interact with, and experience. You might work closely with a designer or double as a designer yourself. There is some overlap between the tools and functionality artists and designers use.
 
 As an example, let's consider the workflow for setting up an actor in your project.
 
@@ -80,7 +80,7 @@ As an example, let's consider the workflow for setting up an actor in your proje
 
 1.  When you've built and previewed the animations and are ready to try them out in a runtime environment, you can switch over to O3DE Editor.
 
-1.  In the O3DE Editor, you create or open an existing test level.
+1.  In O3DE Editor, you create or open an existing test level.
 
 1.  To see your animated character, you need an entity with:
 
@@ -93,7 +93,6 @@ We suggest that you begin your learning path by browsing the following set of O3
 
 *  [O3DE Editor](/docs/user-guide/editor/)
 *  [Asset Pipeline](/docs/user-guide/assets/pipeline/)
-*  [Component Entity System](/docs/user-guide/components/)
 *  [Component Reference](/docs/user-guide/components/reference/)
 *  [Animation Editor](/docs/user-guide/visualization/animation/animation-editor/)
 *  [Scene Settings Tool](/docs/user-guide/assets/scene-settings/)
@@ -128,13 +127,11 @@ We suggest that you begin your learning path by browsing the following set of O3
 
 *  [O3DE Editor](/docs/user-guide/editor/)
 *  [Asset Pipeline](/docs/user-guide/assets/pipeline/)
-*  [Component Entity System](/docs/user-guide/components/)
 *  [Component Reference](/docs/user-guide/components/reference/)
 *  [Gem Library](/docs/user-guide/gems/overview/)
+*  [Player Input / Asset Editor](/docs/user-guide/interactivity/input/using-player-input/)
 *  [Script Canvas](/docs/user-guide/scripting/script-canvas/)
 *  [Lua Editor](/docs/user-guide/scripting/lua/)
-<!-- *  [AI Navigation](/docs/user-guide/interactivity/navigation-and-pathfinding/) -->
-<!-- 7/9/2021 - The AI Navigation page is in progress -->
 *  [Audio Controls Editor](/docs/user-guide/interactivity/audio/)
 *  [Animation Editor](/docs/user-guide/visualization/animation/animation-editor/)
 *  [UI Editor](/docs/user-guide/interactivity/user-interface/editor/)
@@ -153,12 +150,9 @@ We suggest that your learning path looks like this:
 
 Here is a basic set of O3DE tools and technologies to focus on:
 *  [O3DE Editor](/docs/user-guide/editor/)
-*  [Programming Concepts](/docs/user-guide/programming/intro/)
+*  [Programming Guide](/docs/user-guide/programming/)
 *  [Gems](/docs/user-guide/gems/overview/)
-*  [Component Entity System](/docs/user-guide/components/)
 *  [Component Reference](/docs/user-guide/components/reference/)
-*  [Programmer's Guide to Entities and Components](/docs/user-guide/programming/components/)
 *  [Animation Editor](/docs/user-guide/visualization/animation/animation-editor/)
 *  [Script Canvas](/docs/user-guide/scripting/script-canvas/)
 *  [Lua Editor](/docs/user-guide/scripting/lua/)
-

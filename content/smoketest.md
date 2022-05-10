@@ -381,6 +381,8 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 | align-right.svg | {{< icon "align-right.svg" >}} |
 | align-top.svg | {{< icon "align-top.svg" >}} |
 | animation-editor.svg | {{< icon "animation-editor.svg" >}} |
+| arrow_left-default.svg | {{< icon "arrow_left-default.svg" >}} |
+| arrow_right-default.svg | {{< icon "arrow_right-default.svg" >}} |
 | asset-editor.svg | {{< icon "asset-editor.svg" >}} |
 | asset-processor.svg | {{< icon "asset-processor.svg" >}} |
 | audio-editor.svg | {{< icon "audio-editor.svg" >}} |
@@ -404,6 +406,7 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 | help.svg | {{< icon "help.svg" >}} |
 | help2.svg | {{< icon "help2.svg" >}} |
 | helpers.svg | {{< icon "helpers.svg" >}} |
+| info.svg | {{< icon "info.svg" >}} |
 | information.svg | {{< icon "information.svg" >}} |
 | landscape-canvas-editor.svg | {{< icon "landscape-canvas-editor.svg" >}} |
 | layer.svg | {{< icon "layer.svg" >}} |
@@ -425,6 +428,7 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 | prefab.svg | {{< icon "prefab.svg" >}} |
 | prefab-edit.svg | {{< icon "prefab-edit.svg" >}} |
 | processing.svg | {{< icon "processing.svg" >}} |
+| refresh-active.svg | {{< icon "refresh-active.svg" >}} |
 | resolution.svg | {{< icon "resolution.svg" >}} |
 | rotate.svg | {{< icon "rotate.svg" >}} |
 | scale.svg | {{< icon "scale.svg" >}} |

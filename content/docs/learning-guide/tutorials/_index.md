@@ -57,6 +57,14 @@ Extend **O3DE Editor** by creating a custom tool Gem. A tool is a dockable widge
 | - | - |
 | [Your First Network Component](multiplayer/first-multiplayer-component) | Create multiplayer components with C++ in this introduction to network components. |
 
+## PhysX
+
+Create physics simulations in O3DE with NVIDIA's PhysX system. The tutorials in this section demonstrate how to use PhysX to add dynamic physics simulations in your projects.
+
+| Topic | Description |
+| - | - |
+| [Create Wind Forces](physx/wind-provider) | Simulate a wind force with a **PhysX Force Region** and NVIDIA Cloth. |
+
 ## PostFX
 
 | Tutorial | Description |
