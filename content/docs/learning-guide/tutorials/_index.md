@@ -28,12 +28,6 @@ Do you have O3DE installed and you aren't sure where to start? How about creatin
 | [Customize Mesh Asset Processing](assets/mesh-assets) | Use **Scene Settings** to process mesh assets for O3DE. |
 | [Process PhysX Collider Assets](assets/physx-colliders) | Use Scene Settings to process PhysX collider assets for O3DE. |
 
-## Assets
-
-| Tutorial | Description
-| - | - |
-| [Mesh Assets](assets/mesh-assets) | Use **Scene Settings** to process mesh assets. |
-
 ## Environments
 
 | Tutorial | Description |
@@ -54,6 +48,14 @@ Extend **O3DE Editor** by creating a custom tool Gem. A tool is a dockable widge
 | Tutorial | Description |
 | - | - |
 | [Your First Network Component](multiplayer/first-multiplayer-component) | Create multiplayer components with C++ in this introduction to network components. |
+
+## PhysX
+
+Create physics simulations in O3DE with NVIDIA's PhysX system. The tutorials in this section demonstrate how to use PhysX to add dynamic physics simulations in your projects.
+
+| Topic | Description |
+| - | - |
+| [Create Wind Forces](physx/wind-provider) | Simulate a wind force with a **PhysX Force Region** and NVIDIA Cloth. |
 
 ## PostFX
 
