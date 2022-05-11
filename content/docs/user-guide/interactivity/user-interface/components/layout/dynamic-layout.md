@@ -5,7 +5,7 @@ title: UI Dynamic Layout Component
 weight: 550
 ---
 
-To use the **DynamicLayout** component, you place it on an element that also has a [**LayoutColumn**](components-layout-column), [**LayoutRow**](components-layout-row), or [**LayoutGrid**](components-layout-grid) component. With the **DynamicLayout** component, you can change the number of children of the layout element at run time.
+With the **DynamicLayout** component, you can change the number of children of the layout element at run time. To use the **DynamicLayout** component, you place it on an element that also has a [**LayoutColumn**](components-layout-column), [**LayoutRow**](components-layout-row), or [**LayoutGrid**](components-layout-grid) component.
 
 The layout element (1) dynamically resizes to fit its child elements. The first child (2) of the layout element acts as the prototype element. At run time, the UI system clones the prototype element to achieve the specified number of children in the layout.
 

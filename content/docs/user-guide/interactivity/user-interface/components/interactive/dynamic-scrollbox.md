@@ -5,7 +5,7 @@ title: UI Dynamic Scroll Box Component
 weight: 185
 ---
 
-To use the **DynamicScrollBox** component, you place it on an element that also has a **ScrollBox** component. With the **DynamicScrollBox** component, you can change the number of children of the scroll box's element at run time.
+With the **DynamicScrollBox** component, you can change the number of children of the scroll box's element at run time. To use the **DynamicScrollBox** component, you place it on an element that also has a **ScrollBox** component.
 
 The content element dynamically resizes to fit its child elements. The first child of the content element acts as the prototype element. At run time, the UI system clones the prototype element to achieve the specified number of children in the layout.
 
