@@ -21,7 +21,7 @@ Creating an O3DE project provides you the full suite of O3DE tools, including **
 
 ### Setup 
 
-1. Follow the instructions in[Project Creation](/docs/welcome-guide/create/) in the Get Started guide. After creating an O3DE project, you have access to Atom via the **Atom Gem**. This is a core Gem that's built into O3DE and enabled in your project by default.
+1. Follow the instructions in [Project Creation](/docs/welcome-guide/create/) in the Get Started guide. After creating an O3DE project, you have access to Atom via the **Atom Gem**. This is a core Gem that's built into O3DE and enabled in your project by default.
 
 2. After you set up your project, check out the following pages to explore Atom's features via the O3DE Editor:
    - [Create a Level](/docs/learning-guide/tutorials/environments/create-a-level/): An introduction to your first level. Whenever you create a level in your project, the default environment consists of many Atom components. 
@@ -31,8 +31,6 @@ Creating an O3DE project provides you the full suite of O3DE tools, including **
 ## Atom Sample Viewer
 
 Atom Sample Viewer is a good place to start if you're interested in evaluating Atom's features in a controlled environment. It's a standalone application, so you don't need to open it with O3DE Editor. It showcases samples that demonstrate each feature individually with parameters you can tweak and configure. 
-
-To use the Atom Sample Viewer, get a local copy from the [`o3de-atom-sampleviewer`](https://github.com/o3de/o3de-atom-sampleviewer) repository in GitHub.
 
 ![An image of the Shadow sample in the Atom Sample Viewer.](/images/atom-guide/atom-sample-viewer/shadow.png)
 
