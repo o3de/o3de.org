@@ -35,11 +35,15 @@ The PhysX Collider component attached to an entity by itself creates a *static* 
 | **Tag** | Sets a tag for this collider. Tags can be used to quickly identify components in script or code. | String | None |
 | **Rest offset** | Sets the minimum distance between this collider and other colliders. Although this property applies to all colliders, it is particularly important for dynamic colliders. Dynamic colliders are at rest when the forces affecting them drop below the **Sleep threshold** of their rigid body component. When a dynamic collider comes to rest while in contact with any other collider, the colliders are separated by the sum of their **Rest offset** values. **Rest offset** values that are too large might make dynamic entities appear to float. Negative **Rest offset** values might make dynamic entities appear to intersect. You might need to adjust this value in scenarios where the collider does not closely match the render mesh of the entity. The **Rest offset** value must be less than the **Contact offset** value. | Float: -Infinity to 50.0 | `0.0` |
 | **Contact offset** | Sets the distance from the collider where collisions are detected. PhysX bodies generate contacts when they are within the sum of their **Contact offset** values. The **Contact offset** value must be greater than the **Rest offset** value. | Float: 0.0 to 50.0 | `0.02` |
-| **Shape** | Sets the collider for the collider component. A collider can be a primitive shape or a physics asset. Primitive shape colliders are not meshes. They are defined by simple dimension parameters that describe a box, sphere, or capsule. Primitive shape colliders are high performance, but they may not accurately represent the surface of the mesh provided by a **Mesh** component. Physics asset colliders are based on meshes that are processed by **Asset Processor**. Physics asset colliders can more accurately represent the shape of the mesh provided by a Mesh component, but incur a higher performance cost over primitive shapes. This property is set automatically if a `.pxmesh` product asset exists for the associated mesh or actor asset. For information on processing collider assets, refer to [Process PhysX Collider Assets](/docs/learning-guide/tutorials/assets/physx-colliders/). | `PhysicsAsset`, `Sphere`, `Box`, `Capsule` | `PhysicsAsset` |
+| **Shape** | See [Shape properties](#shape-properties) | `PhysicsAsset`, `Sphere`, `Box`, `Capsule` | `PhysicsAsset` |
 | **Draw Collider** | If enabled, the collider is displayed in the viewport. | Boolean | `Enabled` |
 | **Edit** | Enter collider component edit mode to adjust properties of the collider with manipulators in the viewport. |  |  |
 
-### PhysicsAsset shape properties
+### Shape properties
+Sets the collider for the collider component. A collider can be a primitive shape or a physics asset. Primitive shape colliders are not meshes. They are defined by simple dimension parameters that describe a box, sphere, or capsule. Primitive shape colliders are high performance, but they may not accurately represent the surface of the mesh provided by a **Mesh** component. Physics asset colliders are based on meshes that are processed by **Asset Processor**. Physics asset colliders can more accurately represent the shape of the mesh provided by a Mesh component, but incur a higher performance cost over primitive shapes. This property is set automatically if a `.pxmesh` product asset exists for the associated mesh or actor asset. For information on processing collider assets, refer to [Process PhysX Collider Assets](/docs/learning-guide/tutorials/assets/physx-colliders/).
+
+{{< tabs name="shape-ui" >}}
+{{% tab name="PhysicsAsset" %}}
 
 ![PhysX Collider component interface, Physics Asset.](/images/user-guide/components/reference/physx/physx-collider-ui-02.png)
 
@@ -49,7 +53,8 @@ The PhysX Collider component attached to an entity by itself creates a *static* 
 | **Asset Scale** | Scales the collider shape independent of the entity. | Vector3: 0.0 to Infinity | X: `1.0`, Y: `1.0`, Z: `1.0` |
 | **Physics Materials from Asset** | If enabled, the physics materials for this collider are automatically set based on the Physics Materials from the mesh's PhysX asset. If the physics material doesn't exist in the **Physics Materials - Library**, the default physics material is applied. Physics material assignments cannot be edited while this option is enabled. | Boolean | `Enabled`|
 
-### Sphere shape properties
+{{% /tab %}}
+{{% tab name="Sphere" %}}
 
 ![PhysX Collider component interface, Sphere.](/images/user-guide/components/reference/physx/physx-collider-ui-03.png)
 
@@ -57,7 +62,8 @@ The PhysX Collider component attached to an entity by itself creates a *static* 
 | - | - | - | - |
 | **Radius** | Radius multiplier of the sphere collider. The size of the sphere primitive is the **Radius** value multiplied by the largest value in the **Scale** property in the entity's [Transform](/docs/user-guide/components/reference/transform/) component. | Float: 0.0 to Infinity | `0.5` |
 
-### Box shape properties
+{{% /tab %}}
+{{% tab name="Box" %}}
 
 ![PhysX Collider component interface, Box.](/images/user-guide/components/reference/physx/physx-collider-ui-04.png)
 
@@ -65,7 +71,8 @@ The PhysX Collider component attached to an entity by itself creates a *static* 
 | - | - | - | - |
 | **Dimensions** | Width, depth, and height of the box collider. | Vector3: 0.0 to Infinity | X: `1.0`, Y: `1.0`, Z: `1.0` |
 
-### Capsule shape properties
+{{% /tab %}}
+{{% tab name="Capsule" %}}
 
 ![PhysX Collider component interface, Box.](/images/user-guide/components/reference/physx/physx-collider-ui-05.png)
 
@@ -73,6 +80,9 @@ The PhysX Collider component attached to an entity by itself creates a *static* 
 | - | - | - | - |
 | **Height** | Height of the capsule collider. The **Height** value of the capsule must be at least twice the **Radius** value. For example, if the **Radius** of the capsule is `5.0`, the minimum **Height** is `10.0`. | Float: 0.0 to Infinity | `1.0` |
 | **Radius** | Radius of the capsule collider. The **Radius** value of the capsule must be no greater than half the **Height** value. For example, if the **Height** of the capsule is `10.0`, the maximum **Radius** is `5.0`. | Float: 0.0 to Infinity | `0.25` |
+
+{{% /tab %}}
+{{< /tabs >}}
 
 ## Collider component mode
 

@@ -258,7 +258,7 @@ Another option is to separate the property tables into [tabs](/docs/contributing
 
 **Examples**:
 
-* [PhysX Collider component](/docs/user-guide/components/reference/physx/collider/): Contains several configurations, which depend on the **Shape** property. Each configuration affect what properties are available, so they are documented in different property tables. 
+* [PhysX Collider component](/docs/user-guide/components/reference/physx/collider/): Contains several configurations, which depend on the **Shape** property. Each configuration affect what properties are available, so they are documented in different property tables separated into tabs. 
 
 * [Camera Rig component](/docs/user-guide/components/reference/camera/camera-rig/): Contains addable property groups with multiple workflows in each. So, each property group is documented in separate property tables and each workflow is further separated into tabs. 
 
