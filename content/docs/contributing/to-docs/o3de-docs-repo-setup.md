@@ -146,14 +146,13 @@ Hugo is the static site builder that O3DE documentation uses. When you have Hugo
 
 1. Get the **extended** Hugo binary. For Hugo installation, refer to [Install Hugo](https://gohugo.io/getting-started/installing/). The extended binary is required for some of the features that the O3DE documentation site uses.
 
-2. You need to add the Node.js bootstrap package. Bootstrap contains some modules that are used to style the O3DE documentation site. Get Node.js here [Download Node.js](https://nodejs.org/en/download/) and run the installer.
+1. To install **npm**, follow the instructions in the [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) documentation. Installing npm also installs **Node.js**.
 
-3. In the terminal `cd` to the root of your o3de.org clone.
-
-4. Use `npm` to install bootstrap with the command below:
+1. To install dependencies, run the following command from the `o3de.org` repository:
 
     ```shell
-    npm install bootstrap
+    cd <path-to-repo>/o3de.org
+    npm install
     ```
 
 ### Run a Hugo server
@@ -175,12 +174,11 @@ Now you can test your setup by running a local Hugo server and viewing the O3DE 
     ```
 
     {{< note >}}
-    If you use the **macOS** platform for docs development, you must run Hugo with the `--watch=false` switch enabled. For example:
+If you use the **macOS** platform for docs development, you must run Hugo with the `--watch=false` switch enabled. For example:
 
-    ```bash
-    hugo server --port 44541 --bind=0.0.0.0 --watch=false
-    ```
-
+```bash
+hugo server --port 44541 --bind=0.0.0.0 --watch=false
+```
     {{< /note >}}
 
 ## Create a branch
@@ -204,7 +202,7 @@ As a general rule follow, the steps in [Sync your clone](#sync-your-clone) befor
     ```
 
     {{< note >}}
-    When naming branches, we recommend a short dash separated name that clearly denotes the contents of the branch. For example, `camera-follow-tutorial`.
+When naming branches, we recommend a short dash separated name that clearly denotes the contents of the branch. For example, `camera-follow-tutorial`.
     {{< /note >}}
 
 1. Switch to your new branch.

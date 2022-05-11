@@ -26,12 +26,12 @@ You can download this repository or clone it onto your local machine. Cloning th
    
     *Note: You must install the **extended version** of Hugo.*
 
-2. To install **npm**, follow the instructions in the [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) documentation.
+2. To install **npm**, follow the instructions in the [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) documentation. Installing npm also installs **Node.js**.
 
 3. To install dependencies, run the following command from the `o3de.org` repository:
 
     ```shell
-    cd <path-to-repo>\o3de.org
+    cd <path-to-repo>/o3de.org
     npm install
     ```
 
@@ -40,7 +40,7 @@ You can download this repository or clone it onto your local machine. Cloning th
 1. Open a terminal or shell and navigate to the `o3de.org` repository.
    
     ```shell
-    cd <path-to-repo>\o3de.org
+    cd <path-to-repo>/o3de.org
     ```
    
 2. Run the command `hugo serve`. 
@@ -92,7 +92,7 @@ For a complete list of required dependencies, see `package.json`.
 
 ### Steps to fix
 
-1. Open a shell or terminal and navigate to `o3de.org` repository: `cd <path-to-o3de.org>`
+1. Open a shell or terminal and navigate to `o3de.org` repository: `cd <path-to-repo>/o3de.org`
 
 2. Verify that the required dependencies have been installed by running the command, `npm list`. This outputs the list of dependencies and indicates whether or not they've been installed.
 
