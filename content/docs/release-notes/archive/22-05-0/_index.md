@@ -1,7 +1,7 @@
 ---
-linkTitle: 22.05.0 Release notes
-sectionPageTitle: Release notes
-title: Release notes for Open 3D Engine 22.05.0
+linkTitle: 22.05.0 Release Notes
+sectionPageTitle: Release Notes
+title: Release Notes for Open 3D Engine 22.05.0
 description: Full release notes for Open 3D Engine (O3DE) version 22.05.0.
 weight: 897
 toc: true
@@ -13,7 +13,7 @@ toc: true
 
 First of all: Open 3D Engine has a new logo! Our [branding guidelines](https://www.o3de.org/docs/tools-ui/branding-guidelines/) have been updated.
 
-This release also sees the introduction of User Defined Properties (UDP), a way to read metadata from source assets into the Asset processor. UDP can be assigned in content creation tools to store custom properties about hierarchy nodes such as mesh, light, animation nodes, etc., to power asset generation workflows for O3DE. For more information, read our [blog post on UDP](https://docs.o3de.org/blog/posts/blog-udp/).
+This release also sees the introduction of User Defined Properties (UDP), a way to read metadata from source assets into the Asset Processor. UDP can be assigned in content creation tools to store custom properties about hierarchy nodes such as mesh, light, animation nodes, etc., to power asset generation workflows for O3DE. For more information, read our [blog post on UDP](https://docs.o3de.org/blog/posts/blog-udp/).
 
 We've also included an experimental Gem in this release for motion matching. Motion matching is a data-driven animation technique that synthesizes motions based on existing animation data and the current actor and input contexts. The example Gem includes a character prefab, controllable using a gamepad. Find more details on the supported features and how things work internally in the [Motion Matching Gem code](https://github.com/o3de/o3de/tree/development/Gems/MotionMatching) in our GitHub repository.
 
@@ -78,7 +78,7 @@ The following is a list of other features and fixes of note included in 22.05.0.
 * **EMFX (Character)**
     * OpenGL Render Plugin is now deprecated and replaced by EMFX Atom Viewport.
  
-## Known Issues
+## Known issues
  
 * **EMFX (Character)**
     * If you have saved a layout in the old viewport, it will load the old OpenGL viewport. A workaround is to delete the OpenGL widget and add a new Atom viewport widget, then save the layout.  Alternatively, you can recreate the same layout from the default layout.
