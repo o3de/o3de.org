@@ -23,7 +23,7 @@ Creating an O3DE project provides you the full suite of O3DE tools, including **
 
 1. Follow the instructions in [Project Creation](/docs/welcome-guide/create/) in the Get Started guide. After creating an O3DE project, you have access to Atom via the **Atom Gem**. This is a core Gem that's built into O3DE and enabled in your project by default.
 
-2. After you set up your project, check out the following pages to explore Atom's features via the O3DE Editor:
+1. After you set up your project, check out the following pages to explore Atom's features via O3DE Editor:
    - [Create a Level](/docs/learning-guide/tutorials/environments/create-a-level/): An introduction to your first level. Whenever you create a level in your project, the default environment consists of many Atom components. 
    - [Component Reference -- Atom](/docs/user-guide/components/reference/#atom): The full list of Atom components that the Atom Gem provides. 
 
