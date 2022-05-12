@@ -91,7 +91,7 @@ The `ScriptEvents_Broadcast.lua` example script implements a handler for a broad
 
 ```lua
 -- ScriptEvents_Broadcast.lua
-            function ScriptTrace(txt)
+function ScriptTrace(txt)
     Debug.Log(txt)
 end
 
