@@ -93,7 +93,9 @@ The following is a list of other features and fixes of note included in 22.05.0.
 
     In rare situations, on Linux Ubuntu 20.04.4 LTS, it might not be possible to launch O3DE Editor, Project Manager, Asset Processor, or other executables from the file explorer, and an error is displayed.
 
-    **Workaround:** Use the command line to launch the executable from its directory, for example `sudo ./o3de`. Refer to [issue 9502](https://github.com/o3de/o3de/issues/9502) for more infrormation.
+    Workaround: Use the command line to launch the executable from its directory, for example `sudo ./o3de`. Refer to this [FOSTips article](https://fostips.com/double-click-run-elf-ubuntu/) for other possible solutions.
+    
+    Refer to [issue 9502](https://github.com/o3de/o3de/issues/9502) for more information.
 
 * **Networking**
     * Network entity hierarchies are limited to hierarchies with a maximum of 16 entities.
