@@ -3,6 +3,7 @@ linktitle: Tutorials
 title: Open 3D Engine (O3DE) Tutorials
 description: Learn Open 3D Engine (O3DE) with the help of step-by-step, guided tutorials.
 weight: 200
+toc: true
 ---
 
 Learn the features, tools, and processes of **Open 3D Engine (O3DE)** with the help of step-by-step, guided tutorials.
@@ -28,13 +29,20 @@ Do you have O3DE installed and you aren't sure where to start? How about creatin
 | [Customize Mesh Asset Processing](assets/mesh-assets) | Use **Scene Settings** to process mesh assets for O3DE. |
 | [Process PhysX Collider Assets](assets/physx-colliders) | Use Scene Settings to process PhysX collider assets for O3DE. |
 
+## Entities and prefabs
+
+| Tutorial | Description |
+| - | - |
+| [Entity and Prefab Basics](entities-and-prefabs/entity-and-prefab-basics) | Learn the basics of creating and modifying entities and prefabs. |
+| [Spawn and Despawn a Prefab](entities-and-prefabs/spawn-a-prefab.md) | Use **Script Canvas** to create a script that spawns and despawns a prefab. |
+
 ## Environments
 
 | Tutorial | Description |
 | - | - |
 | [Create a Level](environments/create-a-level) | Create a level for O3DE. |
 
-## Extend the Editor
+## Extend O3DE Editor
 
 Extend **O3DE Editor** by creating a custom tool Gem. A tool is a dockable widget or dialog window that implements functionality in the Editor. You can create custom tools in C++ or Python.
 
