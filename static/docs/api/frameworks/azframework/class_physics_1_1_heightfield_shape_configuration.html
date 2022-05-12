@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">2205.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -82,9 +82,9 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCachedNativeHeig
 <tr class="memitem:a2e68b5caadf77b7c397c72c2d002e646"><td class="memItemLeft" align="right" valign="top"><a id="a2e68b5caadf77b7c397c72c2d002e646"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCachedNativeHeightfield</b> (void *cachedNativeHeightfield)</td></tr>
 <tr class="separator:a2e68b5caadf77b7c397c72c2d002e646"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affb06b6040b33563b2208b0d1adaad62"><td class="memItemLeft" align="right" valign="top"><a id="affb06b6040b33563b2208b0d1adaad62"></a>
-AZ::Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>GetGridResolution</b> () const</td></tr>
-<tr class="separator:affb06b6040b33563b2208b0d1adaad62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa13e8ddca4e48bd471f821e61e4cd3d5"><td class="memItemLeft" align="right" valign="top"><a id="aa13e8ddca4e48bd471f821e61e4cd3d5"></a>
+const AZ::Vector2 &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGridResolution</b> () const</td></tr>
+<tr class="separator:aa13e8ddca4e48bd471f821e61e4cd3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5e14742a3f3e79adf94411eb53033f7"><td class="memItemLeft" align="right" valign="top"><a id="aa5e14742a3f3e79adf94411eb53033f7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGridResolution</b> (const AZ::Vector2 &amp;gridSpacing)</td></tr>
 <tr class="separator:aa5e14742a3f3e79adf94411eb53033f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,6 +103,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNumRows</b> (int32
 <tr class="memitem:a9bb9c916195a37679914e56320c784d2"><td class="memItemLeft" align="right" valign="top"><a id="a9bb9c916195a37679914e56320c784d2"></a>
 const AZStd::vector&lt; <a class="el" href="struct_physics_1_1_height_material_point.html">Physics::HeightMaterialPoint</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSamples</b> () const</td></tr>
 <tr class="separator:a9bb9c916195a37679914e56320c784d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6dd6ba2651a8102f7f177d6f1824a68"><td class="memItemLeft" align="right" valign="top"><a id="ab6dd6ba2651a8102f7f177d6f1824a68"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ModifySample</b> (int32_t row, int32_t column, const <a class="el" href="struct_physics_1_1_height_material_point.html">Physics::HeightMaterialPoint</a> &amp;point)</td></tr>
+<tr class="separator:ab6dd6ba2651a8102f7f177d6f1824a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a390f40750f2238e6fcd2671dbe24f1cb"><td class="memItemLeft" align="right" valign="top"><a id="a390f40750f2238e6fcd2671dbe24f1cb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSamples</b> (const AZStd::vector&lt; <a class="el" href="struct_physics_1_1_height_material_point.html">Physics::HeightMaterialPoint</a> &gt; &amp;samples)</td></tr>
 <tr class="separator:a390f40750f2238e6fcd2671dbe24f1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,7 +152,7 @@ AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>m_scale</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:24 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 5 2022 15:18:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
