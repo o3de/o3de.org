@@ -90,7 +90,8 @@ The following is a list of other features and fixes of note included in 22.05.0.
     * [Linux]: Closing Editor while Asset Processor is still running will result in a crash upon relaunching Editor.
 
 * **Linux Ubuntu 20.04.4 LTS**
-     In rare situations, on Linux Ubuntu 20.04.4 LTS, it might not be possible to launch O3DE Editor, Project Manager, Asset Processor, or other executables from the file explorer, and an error is displayed.
+
+    In rare situations, on Linux Ubuntu 20.04.4 LTS, it might not be possible to launch O3DE Editor, Project Manager, Asset Processor, or other executables from the file explorer, and an error is displayed.
 
     **Workaround:** Use the command line to launch the executable from its directory, for example `sudo ./o3de`. Refer to [issue 9502](https://github.com/o3de/o3de/issues/9502) for more infrormation.
 
