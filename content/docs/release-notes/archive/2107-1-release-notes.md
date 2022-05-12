@@ -2,7 +2,7 @@
 linktitle: 2107.1 Release Notes
 title: Release Notes for Open 3D Engine 2107.1 (Developer Preview)
 description: Find out what was delivered in O3DE 2107.1 (Developer Preview).
-weight: 200
+weight: 900
 toc: true
 ---
 
