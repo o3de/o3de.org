@@ -11,7 +11,7 @@ toc: true
 
 ## Highlights for 22.05.0
 
-First of all: Open 3D Engine has a new logo! Our [branding guidelines](https://www.o3de.org/docs/tools-ui/branding-guidelines/) have been updated.
+First of all: Open 3D Engine has a new logo!
 
 This release also sees the introduction of User Defined Properties (UDP), a way to read metadata from source assets into the Asset Processor. UDP can be assigned in content creation tools to store custom properties about hierarchy nodes such as mesh, light, animation nodes, etc., to power asset generation workflows for O3DE. For more information, read our [blog post on UDP](https://docs.o3de.org/blog/posts/blog-udp/).
 
