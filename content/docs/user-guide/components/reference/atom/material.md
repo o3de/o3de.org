@@ -1,7 +1,7 @@
 ---
 title: Material Component
 linktitle: Material
-description: 'Open 3D Engine (O3DE) Material Component reference.'
+description: 'Open 3D Engine (O3DE) Material component reference.'
 toc: true
 ---
 
@@ -43,37 +43,37 @@ This request bus supplies the interface for interacting with the Material Compon
 
 | Method Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
-| 'GetOriginalMaterialAssignments' | Returns a map of available material slots and their default assignments | None | Unmodified Material Slot Layout :MaterialAssignmentMap | Yes |
-| 'FindMaterialAssignmentId' | Searches for and returns the MaterialAssignmentId matching the LOD index and label substring. Use LOD index of -1 for default and model materials. If no matching material is found the default material will be returned. | LOD Index :Integer, Label :String | Material Assignment Slot ID :MaterialAssignmentId | Yes |
-| 'GetActiveMaterialAssetId' | Return the acid ID of the active material applied to a material slot. It will be the material override if one exists. Otherwise, it will be the default material | Material Assignment Slot ID :MaterialAssignmentId | Material Asset ID :AssetId | Yes |
-| 'GetDefaultMaterialAssetId' | Return the default material asset for a material slot | Material Assignment Slot ID :MaterialAssignmentId | Material Asset ID :AssetId | Yes |
-| GetMaterialSlotLabel' | Return the unique display name for a material slot | Material Assignment Slot ID :MaterialAssignmentId | Label :String | Yes |
-| 'SetMaterialOverrides' | Replace all material and property override data for a material slot | Material Overrides :MaterialAssignmentMap | None | Yes |
-| 'GetMaterialOverrides' | Return all material and property override data for a material slot | None | Material Overrides :MaterialAssignmentMap | Yes |
+| 'GetOriginalMaterialAssignments' | Returns a map of available material slots and their default assignments | None | Unmodified Material Slot Layout: MaterialAssignmentMap | Yes |
+| 'FindMaterialAssignmentId' | Searches for and returns the MaterialAssignmentId matching the LOD index and label substring. Use LOD index of -1 for default and model materials. If no matching material is found the default material will be returned. | LOD Index: Integer, Label: String | Material Assignment Slot ID: MaterialAssignmentId | Yes |
+| 'GetActiveMaterialAssetId' | Return the acid ID of the active material applied to a material slot. It will be the material override if one exists. Otherwise, it will be the default material | Material Assignment Slot ID: MaterialAssignmentId | Material Asset ID: AssetId | Yes |
+| 'GetDefaultMaterialAssetId' | Return the default material asset for a material slot | Material Assignment Slot ID: MaterialAssignmentId | Material Asset ID: AssetId | Yes |
+| GetMaterialSlotLabel' | Return the unique display name for a material slot | Material Assignment Slot ID: MaterialAssignmentId | Label: String | Yes |
+| 'SetMaterialOverrides' | Replace all material and property override data for a material slot | Material Overrides: MaterialAssignmentMap | None | Yes |
+| 'GetMaterialOverrides' | Return all material and property override data for a material slot | None | Material Overrides: MaterialAssignmentMap | Yes |
 | 'ClearAllMaterialOverrides' | Erase all material and property overrides | None | None | Yes |
 | 'ClearModelMaterialOverrides' | Clear non-LOD material overrides | None | None | Yes |
 | 'ClearLodMaterialOverrides' | Clear LOD material overrides | None | None | Yes |
 | 'ClearIncompatibleMaterialOverrides' | Clear residual materials that don't correspond to available material slots | None | None | Yes |
 | 'ClearInvalidMaterialOverrides' | Clear any material overrides that reference missing assets | None | None | Yes |
 | 'RepairInvalidMaterialOverrides' | Repair materials that reference missing assets by assigning the default asset for each slot | None | None | Yes |
-| 'ApplyAutomaticPropertyUpdates' | Repair material property overrides that reference missing properties by auto-renaming them where possible | None | Number of properties updated :Integer | Yes |
-| 'SetDefaultMaterialOverride' | Convenience function for assigning a material override to the default material slot | Material Asset ID :AssetId | None | Yes |
-| 'GetDefaultMaterialOverride' | Convenience function for returning the material override assigned to the default material slot | None | Material Asset ID :AssetId | Yes |
+| 'ApplyAutomaticPropertyUpdates' | Repair material property overrides that reference missing properties by auto-renaming them where possible | None | Number of properties updated: Integer | Yes |
+| 'SetDefaultMaterialOverride' | Convenience function for assigning a material override to the default material slot | Material Asset ID: AssetId | None | Yes |
+| 'GetDefaultMaterialOverride' | Convenience function for returning the material override assigned to the default material slot | None | Material Asset ID: AssetId | Yes |
 | 'ClearDefaultMaterialOverride' | Convenience function for clearing the material override assigned to the default material slot | None | None | Yes |
-| 'SetMaterialOverride' | Set material override | Material Assignment Slot ID :MaterialAssignmentId, Material Asset ID :AssetId | None | Yes |
-| 'GetMaterialOverride' | Get material override | Material Assignment Slot ID :MaterialAssignmentId | Material Asset ID :AssetId | Yes |
-| 'ClearMaterialOverride' | Clear material override | Material Assignment Slot ID :MaterialAssignmentId | None | Yes |
-| 'SetPropertyOverride' | Set a material property override value wrapped by an AZStd::any | Material Assignment Slot ID :MaterialAssignmentId, Property Name :String, Property Value :AZStd::any | None | Yes |
-| 'GetPropertyOverride' | Get a material property override value wrapped by an AZStd::any | Material Assignment Slot ID :MaterialAssignmentId, Property Name :String | Property Value :AZStd::any | Yes |
-| 'ClearPropertyOverride' | Clear a property override for a material slot | Material Assignment Slot ID :MaterialAssignmentId, Property Name :String | None | Yes |
-| 'ClearPropertyOverrides | Clear property overrides for a material slot | Material Assignment Slot ID :MaterialAssignmentId | None | Yes |
+| 'SetMaterialOverride' | Set material override | Material Assignment Slot ID: MaterialAssignmentId, Material Asset ID: AssetId | None | Yes |
+| 'GetMaterialOverride' | Get material override | Material Assignment Slot ID: MaterialAssignmentId | Material Asset ID: AssetId | Yes |
+| 'ClearMaterialOverride' | Clear material override | Material Assignment Slot ID: MaterialAssignmentId | None | Yes |
+| 'SetPropertyOverride' | Set a material property override value wrapped by an AZStd::any | Material Assignment Slot ID: MaterialAssignmentId, Property Name: String, Property Value: AZStd::any | None | Yes |
+| 'GetPropertyOverride' | Get a material property override value wrapped by an AZStd::any | Material Assignment Slot ID: MaterialAssignmentId, Property Name: String | Property Value: AZStd::any | Yes |
+| 'ClearPropertyOverride' | Clear a property override for a material slot | Material Assignment Slot ID: MaterialAssignmentId, Property Name: String | None | Yes |
+| 'ClearPropertyOverrides | Clear property overrides for a material slot | Material Assignment Slot ID: MaterialAssignmentId | None | Yes |
 | 'ClearAllPropertyOverrides' | Clear all property overrides | None | None | Yes |
-| 'SetPropertyOverrides' | Set property overrides for a material slot | Material Assignment Slot ID :MaterialAssignmentId , Material Properties :MaterialPropertyOverrideMap | None | Yes |
-| 'GetPropertyOverrides' | Get property overrides for a material slot | Material Assignment Slot ID :MaterialAssignmentId | Material Properties :MaterialPropertyOverrideMap | Yes |
-| 'SetModelUvOverrides' | Set model UV overrides for a material slot | Material Assignment Slot ID :MaterialAssignmentId , Material Model UV Overrides :MaterialModelUvOverrideMap | None | Yes |
-| 'GetModelUvOverrides' | Get model UV overrides for a material slot | Material Assignment Slot ID :MaterialAssignmentId | Material Model UV Overrides :MaterialModelUvOverrideMap | Yes |
-| 'SetPropertyOverrideT | Template convenience function wrapping SetPropertyOverride for type safe behavior context bindings | Material Assignment Slot ID :MaterialAssignmentId, property name :String, Property Value :T | None | Yes |
-| 'GetPropertyOverrideT | Template convenience function wrapping GetPropertyOverride for type safe behavior context bindings | Material Assignment Slot ID :MaterialAssignmentId, property name :String | Property Value :T | Yes |
+| 'SetPropertyOverrides' | Set property overrides for a material slot | Material Assignment Slot ID: MaterialAssignmentId , Material Properties: MaterialPropertyOverrideMap | None | Yes |
+| 'GetPropertyOverrides' | Get property overrides for a material slot | Material Assignment Slot ID: MaterialAssignmentId | Material Properties: MaterialPropertyOverrideMap | Yes |
+| 'SetModelUvOverrides' | Set model UV overrides for a material slot | Material Assignment Slot ID: MaterialAssignmentId , Material Model UV Overrides: MaterialModelUvOverrideMap | None | Yes |
+| 'GetModelUvOverrides' | Get model UV overrides for a material slot | Material Assignment Slot ID: MaterialAssignmentId | Material Model UV Overrides: MaterialModelUvOverrideMap | Yes |
+| 'SetPropertyOverrideT | Template convenience function wrapping SetPropertyOverride for type safe behavior context bindings | Material Assignment Slot ID: MaterialAssignmentId, property name: String, Property Value: T | None | Yes |
+| 'GetPropertyOverrideT | Template convenience function wrapping GetPropertyOverride for type safe behavior context bindings | Material Assignment Slot ID: MaterialAssignmentId, property name: String | Property Value: T | Yes |
 
 ## MaterialComponentNotificationBus
 These notifications are sent in relation to Material Component state changes during editing and runtime.
@@ -81,18 +81,18 @@ These notifications are sent in relation to Material Component state changes dur
 | Method Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
 | 'OnMaterialsEdited' | This notification is intended for edit time. It should be sent whenever the Material Component configuration is altered outside changing property values using the Entity Inspector. The notification is used to synchronize modified materials and Material Instance Inspectors. | None | None | No |
-| 'OnMaterialsUpdated' | This notification is sent by the Material Component whenever material instances are recreated or destroyed as a result of properties being assigned or removed. The notification is queued and only sent once per frame if there were any changes. Anything concerned with material instances, like [Mesh Component](/docs/user-guide/components/reference/atom/mesh/) and [Actor Component](/docs/user-guide/components/reference/animation/actor/), must listen for this notification to assign the correct material instances to their draw packets. | Material Overrides :MaterialAssignmentMap | None | No |
-| 'OnMaterialInstanceCreated' | This notification is sent whenever an individual material instance is created by the Material Component. Unique material instances will only be created if the Material Component configuration specifies property overrides that customizes the behavior of a given material. | Material Override :MaterialAssignment | None | No |
+| 'OnMaterialsUpdated' | This notification is sent by the Material Component whenever material instances are recreated or destroyed as a result of properties being assigned or removed. The notification is queued and only sent once per frame if there were any changes. Anything concerned with material instances, like [Mesh Component](/docs/user-guide/components/reference/atom/mesh/) and [Actor Component](/docs/user-guide/components/reference/animation/actor/), must listen for this notification to assign the correct material instances to their draw packets. | Material Overrides: MaterialAssignmentMap | None | No |
+| 'OnMaterialInstanceCreated' | This notification is sent whenever an individual material instance is created by the Material Component. Unique material instances will only be created if the Material Component configuration specifies property overrides that customizes the behavior of a given material. | Material Override: MaterialAssignment | None | No |
 
 ## MaterialReceiverRequestBus
 A "material receiver" is any component that accepts material assignments, overrides, and property changes from the Material Component. Implementing this bus enables the editor Material Component to enumerate all of the available material slots and their default values to dynamically populate its UI.
 
 | Method Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
-| 'FindMaterialAssignmentId' | Searches for and returns the MaterialAssignmentId matching the LOD index and label substring. Use LOD index of -1 for default and model materials. If no matching material is found the default material will be returned. | LOD Index :Integer, Label :String | Material Assignment Slot ID :MaterialAssignmentId | Yes |
-| 'GetMaterialAssignments' | Returns a map of available material slots and their default assignments | None | Unmodified Material Slot Layout :MaterialAssignmentMap | Yes |
-| 'GetModelMaterialSlots' | Returns a map containing details about the available material slots like a stable ID and label name. [Mesh Component](/docs/user-guide/components/reference/atom/mesh/) and [Actor Component](/docs/user-guide/components/reference/animation/actor/) extract this data from model assets but the same data could be provided by any other rendering components. | None | Material Slot Layout :ModelMaterialSlotMap | No |
-| 'GetModelUvNames' | Returns a map of available UV channel names that can be remapped per material using the Material Component. | None | Model UV Channel Names :AZStd::unordered_set<AZ::Name> | Yes |
+| 'FindMaterialAssignmentId' | Searches for and returns the MaterialAssignmentId matching the LOD index and label substring. Use LOD index of -1 for default and model materials. If no matching material is found the default material will be returned. | LOD Index: Integer, Label: String | Material Assignment Slot ID: MaterialAssignmentId | Yes |
+| 'GetMaterialAssignments' | Returns a map of available material slots and their default assignments | None | Unmodified Material Slot Layout: MaterialAssignmentMap | Yes |
+| 'GetModelMaterialSlots' | Returns a map containing details about the available material slots like a stable ID and label name. [Mesh Component](/docs/user-guide/components/reference/atom/mesh/) and [Actor Component](/docs/user-guide/components/reference/animation/actor/) extract this data from model assets but the same data could be provided by any other rendering components. | None | Material Slot Layout: ModelMaterialSlotMap | No |
+| 'GetModelUvNames' | Returns a map of available UV channel names that can be remapped per material using the Material Component. | None | Model UV Channel Names: AZStd::unordered_set<AZ::Name> | Yes |
 
 ## MaterialReceiverNotificationBus
 This notification bus is used to inform the Material Component and its editor equivalent of changes in the layout and default values of available material slots. Notifications received from this bus inform the editor Material Component that UI changes need to occur. 
