@@ -237,12 +237,12 @@ The `image-width` shortcode adds an image with alternate text and restricts the 
 `image-width` example:
 
 ```markdown
-{{</* image-width src="/images/welcome-guide/wg-welcome-page-color.png" width="700" alt="The O3DE Welcome Guide splash image." */>}}
+{{</* image-width src="/images/welcome-guide/guide_img.png" width="700" alt="The O3DE Welcome Guide splash image." */>}}
 ```
 
 `image-width` example output:
 
-{{< image-width src="/images/welcome-guide/wg-welcome-page-color.png" width="700" alt="The O3DE Welcome Guide splash image." >}}
+{{< image-width src="/images/welcome-guide/guide_img.png" width="700" alt="The O3DE Welcome Guide splash image." >}}
 
 An image can also be a link. This time the O3DE icon links to the O3DE website. Outer square brackets enclose
 the entire image tag, and the link target is in the parentheses at the end.
