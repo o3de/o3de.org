@@ -43,10 +43,10 @@ You can download this repository or clone it onto your local machine. Cloning th
     cd <path-to-repo>/o3de.org
     ```
    
-2. Run the command `hugo serve`. 
+2. Run the command `hugo server`. 
       
     ```shell
-    $ hugo serve
+    $ hugo server
     Start building sites …
 
                       |  EN
@@ -78,7 +78,7 @@ You can now view the O3DE website on your local machine! Find the O3DE documenta
 
 ### Issue
 
-Running `hugo serve` outputs the following error:
+Running `hugo server` outputs the following error:
 
 ```cmd
 Error: Error building site: TOCSS: failed to transform "blah.sass" (text/x-sass): SCSS processing failed: file "stdin", line 26, col 1: File to import not found or unreadable: bootstrap/scss/functions.
