@@ -5,7 +5,7 @@ description: 'Open 3D Engine (O3DE) Grid component reference.'
 toc: true
 ---
 
-The **Grid** component renders a wireframe grid. It is primarily used in tools to set a frame of reference and visualize relative sizes and distance between objects.
+The **Grid** component renders a wireframe grid. It is primarily used in scene-building workflows to set a frame of reference and visualize relative sizes and distances between objects.
 
 ## Provider ##
 
