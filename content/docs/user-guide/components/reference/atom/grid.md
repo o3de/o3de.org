@@ -23,7 +23,7 @@ The Grid component has simple properties for changing its size and appearance.
 | **Axis Color** | The color used for drawing grid lines for the main axis. | (0-255, 0-255, 0-255) | (0, 0, 255) |
 | **Primary Grid Spacing** | The distance between grid lines drawn in the primary color. | 0.1 to Infinity | 1.0 |
 | **Primary Color** | The color used for drawing primary grid lines. | (0-255, 0-255, 0-255) | (64, 64, 64) |
-| **Secondary Grid Spacing** | The distance between grid lines drawn in the secondary color. | Float | 0.25 |
+| **Secondary Grid Spacing** | The distance between grid lines drawn in the secondary color. | 0.1 to Infinity | 0.25 |
 | **Secondary Color** | The color used for drawing secondary grid lines. | Color | 0.5, 0.5, 0.5, 1.0 |
 
 ## GridComponentRequestBus
