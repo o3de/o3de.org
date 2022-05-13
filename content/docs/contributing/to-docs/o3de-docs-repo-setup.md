@@ -164,7 +164,7 @@ Now you can test your setup by running a local Hugo server and viewing the O3DE 
 1. Start the server.
 
     ```cmd
-    $ hugo serve
+    $ hugo server
     Start building sites …
 
                     |  EN
