@@ -163,11 +163,32 @@ Now you can test your setup by running a local Hugo server and viewing the O3DE 
 
 1. Start the server.
 
-    ```shell
-    hugo server
+    ```cmd
+    $ hugo serve
+    Start building sites …
+
+                    |  EN
+    -------------------+--------
+    Pages            |   902
+    Paginator pages  |     0
+    Non-page files   |     0
+    Static files     | 17173
+    Processed images |     0
+    Aliases          |     0
+    Sitemaps         |     1
+    Cleaned          |     0
+
+    Built in 10394 ms
+    Watching for changes in C:\O3DE\o3de.org\{assets,content,layouts,package.json,static}
+    Watching for config changes in C:\O3DE\o3de.org\config.toml
+    Environment: "development"
+    Serving pages from memory
+    Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+    Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+    Press Ctrl+C to stop
     ```
 
-1. The above command starts a server on `localhost` using an available port (usually `1333`). The command prints the address and port in the console. You can view your server in a web browser. The server will continue to run as long as the terminal that is running the server remains open. If you need to view the site over a network connection, you can use the command below to specify a server and port.
+1. The above command starts a server on `localhost` using an available port (usually `1313`). The command prints the address and port in the console. You can view your server in a web browser. The server will continue to run as long as the terminal that is running the server remains open. If you need to view the site over a network connection, you can use the command below to specify a server and port.
 
     ```shell
     hugo server --port 44541 --bind=0.0.0.0
