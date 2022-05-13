@@ -13,7 +13,7 @@ The **Grid** component renders a wireframe grid. It is primarily used in scene-b
 
 
 ## Grid Component Properties
-The component has a simple configuration for changing its size and appearance.
+The Grid component has simple properties for changing its size and appearance.
 
 ![grid-component-base-properties](/images/user-guide/components/reference/atom/grid/grid-base-properties-ui.png)
 
