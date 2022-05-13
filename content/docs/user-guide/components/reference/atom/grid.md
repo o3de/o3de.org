@@ -41,7 +41,7 @@ The Grid component has simple properties for changing its size and appearance.
 | 'GetSecondarySpacing' | Gets spacing between secondary grid lines. | None | Spacing: Float | Yes |
 | 'GetAxisColor' | Gets the color of the grid axis lines. | None | Line Color: Color | Yes |
 | 'GetPrimaryColor' | Gets the color of primary grid lines. | None | Line Color: Color | Yes |
-| 'GetSecondaryColor' | Gets the color of secondary gridlines | None | Line Color :Color | Yes |
+| 'GetSecondaryColor' | Gets the color of secondary gridlines. | None | Line Color: Color | Yes |
 
 ## GridComponentNotificationBus
 
