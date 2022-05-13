@@ -39,16 +39,12 @@ Note the variables created for providers, tokens, and credentials.
 
 ![Scripting password sign in with the Amazon Cognito user pool](/images/user-guide/gems/reference/aws/aws-client-auth/scripting-password-sign-in.png)
 
-{{< todo >}}
-Break this image into smaller pieces and describe each one.
-{{< /todo >}}
-
 ### Login with Amazon device sign-in flow
 
 ![Scripting LWA device sign in](/images/user-guide/gems/reference/aws/aws-client-auth/scripting-lwa-device-sign-in.png)
 
-{{< todo >}}
-Break this image into smaller pieces and describe each one.
+{{< todo issue="https://github.com/o3de/o3de.org/issues/1550" >}}
+Break these images into smaller pieces and describe each one.
 {{< /todo >}}
 
 ## Lua

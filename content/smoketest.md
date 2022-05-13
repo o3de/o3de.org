@@ -228,21 +228,21 @@ image.
 
 The `image-width` shortcode adds an image with alternate text and restricts the image's width. The `image-width` shortcode can ensure image sizes are consistent within a topic, and that large images and `.svg` diagrams don't scale overly large in wide browser windows.
 
-`image-width` takes three double-quoted parameters in order:
+`image-width` takes three double-quoted named parameters:
 
-1. image link
-1. width
-1. alt text
+1. `src="/images/<image.png>"` - Image file path.
+1. `width="<image width>"` - Scale the image by specifying a width in pixels.
+1. `alt="<image description>"` - A string describing the image.
 
 `image-width` example:
 
 ```markdown
-{{</* image-width "/images/welcome-guide/ui-editor-labeled.png" "700" "An annotated image of O3DE editor's user interface." */>}}
+{{</* image-width src="/images/welcome-guide/guide_img.png" width="700" alt="The O3DE Welcome Guide splash image." */>}}
 ```
 
 `image-width` example output:
 
-{{< image-width "/images/welcome-guide/ui-editor-labeled.png" "700" "An annotated image of O3DE editor's user interface." >}}
+{{< image-width src="/images/welcome-guide/guide_img.png" width="700" alt="The O3DE Welcome Guide splash image." >}}
 
 An image can also be a link. This time the O3DE icon links to the O3DE website. Outer square brackets enclose
 the entire image tag, and the link target is in the parentheses at the end.
@@ -381,6 +381,8 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 | align-right.svg | {{< icon "align-right.svg" >}} |
 | align-top.svg | {{< icon "align-top.svg" >}} |
 | animation-editor.svg | {{< icon "animation-editor.svg" >}} |
+| arrow_left-default.svg | {{< icon "arrow_left-default.svg" >}} |
+| arrow_right-default.svg | {{< icon "arrow_right-default.svg" >}} |
 | asset-editor.svg | {{< icon "asset-editor.svg" >}} |
 | asset-processor.svg | {{< icon "asset-processor.svg" >}} |
 | audio-editor.svg | {{< icon "audio-editor.svg" >}} |
@@ -404,6 +406,7 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 | help.svg | {{< icon "help.svg" >}} |
 | help2.svg | {{< icon "help2.svg" >}} |
 | helpers.svg | {{< icon "helpers.svg" >}} |
+| info.svg | {{< icon "info.svg" >}} |
 | information.svg | {{< icon "information.svg" >}} |
 | landscape-canvas-editor.svg | {{< icon "landscape-canvas-editor.svg" >}} |
 | layer.svg | {{< icon "layer.svg" >}} |
@@ -425,6 +428,7 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 | prefab.svg | {{< icon "prefab.svg" >}} |
 | prefab-edit.svg | {{< icon "prefab-edit.svg" >}} |
 | processing.svg | {{< icon "processing.svg" >}} |
+| refresh-active.svg | {{< icon "refresh-active.svg" >}} |
 | resolution.svg | {{< icon "resolution.svg" >}} |
 | rotate.svg | {{< icon "rotate.svg" >}} |
 | scale.svg | {{< icon "scale.svg" >}} |
@@ -474,7 +478,7 @@ Keep the following in mind when submitting videos in docs contributions:
 1. `poster="/images/<image.png>"` - A static image that displays while the video loads or if the video fails to load. This image should be the same size and aspect ratio as the video. 
 1. `autoplay="true"` - The video plays as soon as it loads.
 1. `loop="true"` - The video plays in a loop.
-1. `width="<200>"` - Scale the video by specifying a width in pixels.
+1. `width="<video width>"` - Scale the video by specifying a width in pixels.
 1. `muted="true"` - Video is muted if an audio track exists.
 1. `type="video/<mp4 OR ogg OR webm>"` - Video type. MP4 is default.
 
@@ -499,12 +503,12 @@ The are two additional options that are always enabled.
 2. Advanced `video` usage with optional parameters to enable autoplay, loop the video, scale the video to 250 pixels, and include a poster image.
 
     ```markdown
-      {{</* video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." autoplay="true" loop="true" width="250" poster="/images/poster.png" */>}}
+      {{</* video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." autoplay="true" loop="true" width="250" poster="/images/contributing/to-docs/TestPoster.png" */>}}
     ```
 
     Output:
 
-    {{< video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." autoplay="true" loop="true" width="250" poster="/images/poster.png" >}}
+    {{< video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." autoplay="true" loop="true" width="250" poster="/images/contributing/to-docs/TestPoster.png" >}}
 
 ## Embedding Youtube videos with the `youtube-width` shortcode
 
