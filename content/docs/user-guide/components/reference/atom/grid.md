@@ -19,7 +19,7 @@ The Grid component has simple properties for changing its size and appearance.
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Grid Size** | The total grid size in meters. | Float | 32.0 |
+| **Grid Size** | The total grid size in meters. | 0.0 - 1,000,000 | 32.0 |
 | **Axis Color** | The color used for drawing grid lines for the main axis. | Color | 0.0, 0.0, 1.0, 1.0 |
 | **Primary Grid Spacing** | The distance between grid lines drawn in the primary color. | Float | 1.0 |
 | **Primary Color** | The color used for drawing primary grid lines. | Color | 0.25, 0.25, 0.25, 1.0 |
