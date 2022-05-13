@@ -32,7 +32,7 @@ The Grid component has simple properties for changing its size and appearance.
 |-|-|-|-|-|
 | 'SetSize' | Sets the size of the entire grid. | Size: Float | None | Yes |
 | 'SetPrimarySpacing' | Sets spacing between primary grid lines. | Spacing: Float | None | Yes |
-| 'SetSecondarySpacing' | Sets spacing between secondary grid lines | Spacing :Float | None | Yes |
+| 'SetSecondarySpacing' | Sets spacing between secondary grid lines. | Spacing: Float | None | Yes |
 | 'SetAxisColor' | Sets the color of the grid axis lines | Line Color :Color | None | Yes |
 | 'SetPrimaryColor' | Sets the color of primary grid lines | Line Color :Color | None | Yes |
 | 'SetSecondaryColor' | Sets the color of secondary gridlines | Line Color :Color | None | Yes |
