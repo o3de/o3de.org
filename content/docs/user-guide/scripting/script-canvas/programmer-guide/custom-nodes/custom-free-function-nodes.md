@@ -94,7 +94,7 @@ For example, HelloWorldFunctions.ScriptCanvasFunction.xml
 <?xml version="1.0" encoding="utf-8"?>
 <ScriptCanvas>
     <Library
-        Include="Include/HelloWorldFunctions.h"
+        Include="HelloWorldFunctions.h"
         Namespace="MyGem::HelloWorldFunctions"
         Category="Hello World">
 
@@ -216,7 +216,7 @@ namespace MyGem
 <?xml version="1.0" encoding="utf-8"?>
 <ScriptCanvas>
     <Library
-        Include="Include/HelloWorldFunctions.h"
+        Include="HelloWorldFunctions.h"
         Namespace="MyGem::HelloWorldFunctions"
         Category="Hello World">
 
@@ -262,8 +262,8 @@ Verbose usage
 ```xml
 <Function Name="IsPositive" Branch="Boolean" BranchWithValue="True">
     <Parameter Name="Input" DefaultValue="1" Description="The input of positive check function."/>
-	  <Out Name="Input is Positive" Description="The out slot for true branch"/>
-	  <Out Name="Input is not Positive" Description="The out slot for false branch"/>
+    <Out Name="Input is Positive" Description="The out slot for true branch"/>
+    <Out Name="Input is not Positive" Description="The out slot for false branch"/>
 </Function>
 ```
 
@@ -291,8 +291,8 @@ Verbose usage
 <Function Name="Sum" Branch="IsPositive" BranchWithValue="True">
     <Parameter Name="Input A" DefaultValue="1" Description="The input A of sum function."/>
     <Parameter Name="Input B" DefaultValue="1" Description="The input B of sum function."/>
-	<Out Name="Sum Is Positive" Description="The out slot for sum result is positive branch"/>
-	<Out Name="Sum Is not Positive" Description="The out slot for sum result is non-Positive branch"/>
+    <Out Name="Sum Is Positive" Description="The out slot for sum result is positive branch"/>
+    <Out Name="Sum Is not Positive" Description="The out slot for sum result is non-Positive branch"/>
 </Function>
 ```
 
