@@ -226,7 +226,8 @@ namespace MyGem
 ```
 
 The basic node will look like following
-![Basic Sum](/images/user-guide/scripting/script-canvas/basic-sum.png)
+
+![Basic Sum](/images/user-guide/scripting/script-canvas/basic-sum.PNG)
 
 ### Verbose usage
 For the same `Sum` function, we can provide more details in XML
@@ -238,7 +239,8 @@ For the same `Sum` function, we can provide more details in XML
 ```
 
 The verbose node will look like following
-![Verbose Sum](/images/user-guide/scripting/script-canvas/verbose-sum.png)
+
+![Verbose Sum](/images/user-guide/scripting/script-canvas/verbose-sum.PNG)
 
 ### Branch boolean function result
 In general, node will only have single `Out` execution slot. But we can create branch on node based on function result.
@@ -253,7 +255,8 @@ Basic usage
 ```xml
 <Function Name="IsPositive" Branch="Boolean" BranchWithValue="True"/>
 ```
-![Basic IsPositive](/images/user-guide/scripting/script-canvas/basic-ispositive.png)
+
+![Basic IsPositive](/images/user-guide/scripting/script-canvas/basic-ispositive.PNG)
 
 Verbose usage
 ```xml
@@ -263,7 +266,8 @@ Verbose usage
 	  <Out Name="Input is not Positive" Description="The out slot for false branch"/>
 </Function>
 ```
-![Verbose IsPositive](/images/user-guide/scripting/script-canvas/verbose-ispositive.png)
+
+![Verbose IsPositive](/images/user-guide/scripting/script-canvas/verbose-ispositive.PNG)
 
 ### Branch non-boolean function result
 We can also create branch even function result is not boolean, but it has to be coupled with a helper function,
@@ -279,7 +283,8 @@ Basic usage
 
 <Function Name="Sum" Branch="IsPositive" BranchWithValue="True"/>
 ```
-![Basic Sum IsPositive](/images/user-guide/scripting/script-canvas/basic-sum-ispositive.png)
+
+![Basic Sum IsPositive](/images/user-guide/scripting/script-canvas/basic-sum-ispositive.PNG)
 
 Verbose usage
 ```xml
@@ -290,7 +295,8 @@ Verbose usage
 	<Out Name="Sum Is not Positive" Description="The out slot for sum result is non-Positive branch"/>
 </Function>
 ```
-![Verbose Sum IsPositive](/images/user-guide/scripting/script-canvas/verbose-sum-ispositive.png)
+
+![Verbose Sum IsPositive](/images/user-guide/scripting/script-canvas/verbose-sum-ispositive.PNG)
 
 {{< note >}}
 For further node name, tooltip and category customization, please refer to [Text Replacement](/docs/user-guide/scripting/script-canvas/editor-reference/text-replacement/)
