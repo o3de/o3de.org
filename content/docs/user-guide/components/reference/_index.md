@@ -64,7 +64,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [HDRi Skybox](/docs/user-guide/components/reference/atom/hdri-skybox/) | Creates a skybox in your scene using an HDR image. |
 | [Light](/docs/user-guide/components/reference/atom/light) | Simulates soft studio light by creating various types of punctual and area lights. |
 | [Look Modification](/docs/user-guide/components/reference/atom/look-modification/) | Configures a color grading look-up table (LUT). |
-| [Material](/docs/user-guide/components/reference/atom/material/) | Adds a material on the object's mesh. |
+| [Material](/docs/user-guide/components/reference/atom/material/) | Manage and customize materials applied to models, actors, and compatible components. |
 | [Mesh](/docs/user-guide/components/reference/atom/mesh/) | Specifies a model to render. |
 | [Occlusion Culling Plane](/docs/user-guide/components/reference/atom/occlusion-culling-plane/) | Creates an occluder that when put between the camera and a mesh, can block the mesh from being rendered. |
 | [Physical Sky](/docs/user-guide/components/reference/atom/physical-sky/) | Adjusts the physical environment of the scene, such as the sky, sun, and fog. |
