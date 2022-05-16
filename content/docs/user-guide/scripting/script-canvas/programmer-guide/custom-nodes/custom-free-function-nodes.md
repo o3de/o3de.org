@@ -9,21 +9,24 @@ weight: 200
 This topic guides you how to create custom Script Canvas Free Function Nodes step by step.
 
 ### Prerequisite: Adding support for custom free function nodes to a Gem
-In your Gem's `CMakeLists.txt`, add a section for `AUTOGEN_RULES`.
+In your Gem's `CMakeLists.txt`, add a section for `AUTOGEN_RULES` and declare `Gem::ScriptCanvas.Extensions` as build dependency.
 
-Example:
+The precise place for this section will vary depending on how your Gem is configured. 
+However, we recommend that your Gem define a `STATIC` library to make the code available to both editor and runtime projects.
 
-```
-AUTOGEN_RULES
-    *.ScriptCanvasFunction.xml,ScriptCanvasFunction_Header.jinja,AutoGenFunctionRegistry.generated.h
-    *.ScriptCanvasFunction.xml,ScriptCanvasFunction_Source.jinja,AutoGenFunctionRegistry.generated.cpp
-```
-
-The precise place for this section will vary depending on how your Gem is configured. However, we recommend that your Gem define a `STATIC` library to make the code available to both editor and runtime projects.
-
-As an example, here is the definition of a complete Gem's `CMakeLists.txt` that supports Script Canvas custom nodes:
+As an example, here is partial definition of Gem's `CMakeLists.txt` that supports Script Canvas custom nodes with following required changes:
+1. `Gem::ScriptCanvas.Extensions` must be declared as `BUILD_DEPENDENCIES` of `STATIC` library
+2. Add `AUTOGEN_RULES` section for custom free function under `STATIC` library
+   ```cmake
+   AUTOGEN_RULES
+       *.ScriptCanvasFunction.xml,ScriptCanvasFunction_Header.jinja,AutoGenFunctionRegistry.generated.h
+       *.ScriptCanvasFunction.xml,ScriptCanvasFunction_Source.jinja,AutoGenFunctionRegistry.generated.cpp
+   ```
+3. `STATIC` library must be declared as `BUILD_DEPENDENCIES` of Gem runtime module 
 
 ```cmake
+...
+
 ly_add_target(
     NAME MyGem.Static STATIC
     NAMESPACE Gem
@@ -60,11 +63,13 @@ ly_add_target(
             AZ::AzCore
             Gem::MyGem.Static
 )
+
+...
 ```
 
 `MyGem.Static` includes two .cmake file lists. 
 * We include the common files and the platform specific files which are set in `mygem_files.cmake`.
-* We include AzAutoGen Script Canvas Nodeable required templates which are set in `mygem_autogen_files.cmake` (We recommend to keep this file separately for clear scope)
+* We include AzAutoGen ScriptCanvas free function required templates which are set in `mygem_autogen_files.cmake` (We recommend to keep this file separately for clear scope)
 
 As an example:
 ```cmake
@@ -170,7 +175,7 @@ In our example, it is named `MyGemSystemComponent.cpp` by default.
 
 1. Include auto-generated registry header file, and invoke `REGISTER_SCRIPTCANVAS_AUTOGEN` with sanitized Gem target name. 
     {{< note >}}
-    Auto-generated registry header file should be the same name declared under`AUTOGEN_RULES` in your Gem's `CMakeLists.txt`. In our example, it is `AutoGenFunctionRegistry.generated.h`.
+    Auto-generated registry header file should be the same name declared under `AUTOGEN_RULES` in your Gem's `CMakeLists.txt`. In our example, it is `AutoGenFunctionRegistry.generated.h`.
     {{< /note >}}
     {{< note >}}
     Sanitized Gem target name should contain letters and numbers only. In our example, it is `MyGemStatic` which refers to `MyGem.Static` target.

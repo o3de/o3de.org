@@ -12,22 +12,24 @@ A nodeable can refer to both the node that appears in the Node Palette as a resu
 and the mechanism by which a compiled Script Canvas graph can invoke C++ functions.
 
 ## Prerequisite: Adding support for custom nodeable nodes to a Gem
+In your Gem's `CMakeLists.txt`, add a section for `AUTOGEN_RULES` and declare `Gem::ScriptCanvas` as build dependency.
 
-In your Gem's `CMakeLists.txt`, add a section for `AUTOGEN_RULES`.
+The precise place for this section will vary depending on how your Gem is configured. 
+However, we recommend that your Gem define a `STATIC` library to make the code available to both editor and runtime projects.
 
-Example:
-
-```
-AUTOGEN_RULES
-*.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Header.jinja,$path/$fileprefix.generated.h
-*.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Source.jinja,$path/$fileprefix.generated.cpp
-```
-
-The precise place for this section will vary depending on how your Gem is configured. However, we recommend that your Gem define a `STATIC` library to make the code available to both editor and runtime projects.
-
-As an example, here is the definition of a complete Gem's `CMakeLists.txt` that supports Script Canvas custom nodes:
+As an example, here is partial definition of Gem's `CMakeLists.txt` that supports Script Canvas custom nodes with following required changes:
+1. `Gem::ScriptCanvas` must be declared as `BUILD_DEPENDENCIES` of `STATIC` library
+2. Add `AUTOGEN_RULES` section for custom free function under `STATIC` library
+   ```cmake
+   AUTOGEN_RULES
+       *.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Header.jinja,$path/$fileprefix.generated.h
+       *.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Source.jinja,$path/$fileprefix.generated.cpp
+   ```
+3. `STATIC` library must be declared as `BUILD_DEPENDENCIES` of Gem runtime module
 
 ```cmake
+...
+
 ly_add_target(
     NAME MyGem.Static STATIC
     NAMESPACE Gem
@@ -64,11 +66,13 @@ ly_add_target(
             AZ::AzCore
             Gem::MyGem.Static
 )
+
+...
 ```
 
 `MyGem.Static` includes two .cmake file lists. 
 * We include the common files and the platform specific files which are set in `mygem_files.cmake`.
-* We include AzAutoGen Script Canvas Nodeable required templates which are set in `mygem_autogen_files.cmake` (We recommend to keep this file separately for clear scope)
+* We include AzAutoGen ScriptCanvas nodeable required templates which are set in `mygem_autogen_files.cmake` (We recommend to keep this file separately for clear scope)
 
 As an example:
 ```cmake
