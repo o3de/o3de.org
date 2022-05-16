@@ -18,8 +18,6 @@ You need to set up a few things before you proceed:
 
 * Sign up for a GitHub account here [Join GitHub](https://github.com/join?ref_cta=Sign+up).
 
-* Create SSH keys for GitHub. For more information, refer to [Connecting to GitHub with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).
-
 * Install an editor for making changes to Markdown (`.md`) files. You can use any editor, but we do recommend one that supports Markdown linting. VS Code is commonly used by contributors and you can get it here [Microsoft VS Code](https://code.visualstudio.com/download).
 
 ## What the fork?
@@ -52,14 +50,14 @@ For more information on working with forks, refer to [Working with forks](https:
 
 *Cloning* is the process of creating a local copy of a repo. To create a clone of your fork, in a terminal, perform the steps below:
 
-1. Get the URL for your clone. On the page for your fork, Choose **Code > Clone > SSH** and copy the URL.
+1. Get the URL for your clone. On the page for your fork, Choose **Code > Clone > HTTPS** and copy the URL.
 
 1. Open a terminal and navigate to a root directory where you'd like to place your local repository.
 
 1. In the terminal, run the command below, inserting the URL you copied in Step 2:
 
     ```shell
-    git clone <the SSH URL you copied in step 2> 
+    git clone <the URL you copied in step 1> 
     ```
 
 ### Set the upstream for your clone
