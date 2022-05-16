@@ -146,14 +146,13 @@ Hugo is the static site builder that O3DE documentation uses. When you have Hugo
 
 1. Get the **extended** Hugo binary. For Hugo installation, refer to [Install Hugo](https://gohugo.io/getting-started/installing/). The extended binary is required for some of the features that the O3DE documentation site uses.
 
-2. You need to add the Node.js bootstrap package. Bootstrap contains some modules that are used to style the O3DE documentation site. Get Node.js here [Download Node.js](https://nodejs.org/en/download/) and run the installer.
+1. To install **npm**, follow the instructions in the [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) documentation. Installing npm also installs **Node.js**.
 
-3. In the terminal `cd` to the root of your o3de.org clone.
-
-4. Use `npm` to install bootstrap with the command below:
+1. To install dependencies, run the following command from the `o3de.org` repository:
 
     ```shell
-    npm install bootstrap
+    cd <path-to-repo>/o3de.org
+    npm install
     ```
 
 ### Run a Hugo server
@@ -164,23 +163,43 @@ Now you can test your setup by running a local Hugo server and viewing the O3DE 
 
 1. Start the server.
 
-    ```shell
-    hugo server
+    ```cmd
+    $ hugo server
+    Start building sites …
+
+                    |  EN
+    -------------------+--------
+    Pages            |   902
+    Paginator pages  |     0
+    Non-page files   |     0
+    Static files     | 17173
+    Processed images |     0
+    Aliases          |     0
+    Sitemaps         |     1
+    Cleaned          |     0
+
+    Built in 10394 ms
+    Watching for changes in C:\O3DE\o3de.org\{assets,content,layouts,package.json,static}
+    Watching for config changes in C:\O3DE\o3de.org\config.toml
+    Environment: "development"
+    Serving pages from memory
+    Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+    Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+    Press Ctrl+C to stop
     ```
 
-1. The above command starts a server on `localhost` using an available port (usually `1333`). The command prints the address and port in the console. You can view your server in a web browser. The server will continue to run as long as the terminal that is running the server remains open. If you need to view the site over a network connection, you can use the command below to specify a server and port.
+1. The above command starts a server on `localhost` using an available port (usually `1313`). The command prints the address and port in the console. You can view your server in a web browser. The server will continue to run as long as the terminal that is running the server remains open. If you need to view the site over a network connection, you can use the command below to specify a server and port.
 
     ```shell
     hugo server --port 44541 --bind=0.0.0.0
     ```
 
     {{< note >}}
-    If you use the **macOS** platform for docs development, you must run Hugo with the `--watch=false` switch enabled. For example:
+If you use the **macOS** platform for docs development, you must run Hugo with the `--watch=false` switch enabled. For example:
 
-    ```bash
-    hugo server --port 44541 --bind=0.0.0.0 --watch=false
-    ```
-
+```bash
+hugo server --port 44541 --bind=0.0.0.0 --watch=false
+```
     {{< /note >}}
 
 ## Create a branch
@@ -204,7 +223,7 @@ As a general rule follow, the steps in [Sync your clone](#sync-your-clone) befor
     ```
 
     {{< note >}}
-    When naming branches, we recommend a short dash separated name that clearly denotes the contents of the branch. For example, `camera-follow-tutorial`.
+When naming branches, we recommend a short dash separated name that clearly denotes the contents of the branch. For example, `camera-follow-tutorial`.
     {{< /note >}}
 
 1. Switch to your new branch.
