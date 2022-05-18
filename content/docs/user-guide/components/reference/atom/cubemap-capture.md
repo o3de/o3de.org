@@ -1,18 +1,18 @@
 ---
 title: CubeMap Capture Component
 linktitle: CubeMap Capture
-description: 'Open 3D Engine (O3DE) Mesh component reference.'
+description: Captures a Specular IBL or Diffuse IBL cubemap at the entity location.
 toc: true
 ---
 
 The **CubeMap Capture** component allows a Specular IBL or Diffuse IBL cubemap to be captured at a specific location in the scene.  The resulting cubemap can be used with the **Global Skylight (IBL)** and **Reflection Probe** components.
 
-## Provider ##
+## Provider
 
 [Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
-## CubeMap Capture Component properties
+## Properties
 
 ![cubemap-capture-component-base-properties](/images/user-guide/components/reference/atom/cubemap-capture/cubemap-capture-base-properties-ui.png)
 
@@ -22,4 +22,4 @@ The **CubeMap Capture** component allows a Specular IBL or Diffuse IBL cubemap t
 | **Capture Type** | Specifies the type of cubemap to be generated. | `Specular IBL`, `Diffuse IBL` | `Specular IBL` |
 | **Specular IBL CubeMap Quality** | Specifies the quality level of the Specular IBL cubemap.  Only visible when **Capture Type** is set to Specular IBL. | `Very Low`, `Low`, `Medium`, `High`, `Very High` | `Medium` |
 | **CubeMap Path** | Displays the output cubemap path and file name.  This is a read-only field for information purposes only.
-| **Exposure** | Specifies the exposure to use when generating the cubemap. | -16.0 to 16.0 | `0.0` |
+| **Exposure** | Specifies the exposure to use when generating the cubemap. | `-16.0` to `16.0` | `0.0` |
