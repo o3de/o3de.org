@@ -7,7 +7,7 @@ weight: 897
 toc: true
 ---
 
-**Open 3D Engine (O3DE)** version 22.05.0 represents the project's first major release of 2022. This release has seen 1,417 code submissions that contain bug fixes, quality of life improvements, and feature additions. Starting with this release, our release notes will include a [feature grid](./feature-state/) representing the current state of development for each feature in O3DE.
+**Open 3D Engine (O3DE)** version 22.05.0 represents the project's first major release of 2022. This release has seen 1,469 code submissions that contain bug fixes, quality of life improvements, and feature additions. Starting with this release, our release notes will include a [feature grid](./feature-state/) representing the current state of development for each feature in O3DE.
 
 ## Highlights for 22.05.0
 

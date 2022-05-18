@@ -165,7 +165,7 @@ set(FILES
 In `CMakeLists.txt`, register the module with CTest by using the helper function `ly_add_googletest()`.
 
 {{< important >}}
-GoogleTest modules should avoid using the `TEST_SERIAL` flag, which prevents tests from efficiently executing in parallel with other test modules. If the tests have dependencies which prevent them from executing in parallel, please start a discussion with the Testing Special Interest Group in the [Discord](https://discord.gg/p3padwr58u) channel sig-testing!
+GoogleTest modules should avoid using the `TEST_SERIAL` flag, which prevents tests from efficiently executing in parallel with other test modules. If the tests have dependencies which prevent them from executing in parallel, please start a discussion with the Testing Special Interest Group in the [O3DE Discord](https://{{< links/o3de-discord >}}) channel sig-testing!
 {{< /important >}}
 
 To verify everything is set up correctly, run the CMake configure command from **CMake CLI** or **CMake GUI** (described in the [Configure and Build](/docs/user-guide/build/configure-and-build/) section). This registers everything you just added, and emits errors if anything is misconfigured.
@@ -244,7 +244,7 @@ To integrate with the Editor interpreter, create a test that uses `EditorPythonB
 {{< note >}}
 PyTest is not used within the Editor interpreter, and as a consequence PyTest functionality is unavailable to tests that run in the Editor interpreter. Avoid dependencies on PyTest fixtures when designing these tests.
 
-EditorTest still uses PyTest to manage tests, and additionally handles external crash monitoring, batching, and parallelism. If this tool does not meet your needs, please reach out with a [feature request](https://github.com/o3de/o3de.org/issues/new/choose) or start a discussion with the Testing Special Interest Group in the [Discord](https://discord.gg/p3padwr58u) channel sig-testing!
+EditorTest still uses PyTest to manage tests, and additionally handles external crash monitoring, batching, and parallelism. If this tool does not meet your needs, please reach out with a [feature request](https://github.com/o3de/o3de.org/issues/new/choose) or start a discussion with the Testing Special Interest Group in the [O3DE Discord](https://{{< links/o3de-discord >}}) channel sig-testing!
 {{< /note >}}
 
 ### Registering a new Python test

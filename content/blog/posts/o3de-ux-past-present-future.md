@@ -93,6 +93,6 @@ The outcome of the research has been a compilation of major issues new users fac
 
 With the growth of O3DE, we envision a great deal of community involvement to follow suit. We are focused on supporting the community through their first journey. In order to maintain, monitor, and manage the Gem Catalog's navigation structure, we see a need to create a systematic approach for addressing the large number of user contributions that accompany a rapidly growing community. Efforts to include community-submitted Gems in the Gem Catalog continue. We remain dedicated to examining and improving the First-time User Experience.
 
-But this is not an endeavor we are working on alone. This is a community-wide effort, and we need your help! What would you like to see when you're onboarding with O3DE? Share your issues, suggestions for improvement, and overall experiences in the [O3DE Discord](https://discord.gg/xNb2q4SJKJ) server! You can share your thoughts with the UX Design team and me directly on the **SIG-UI-UX** channel.
+But this is not an endeavor we are working on alone. This is a community-wide effort, and we need your help! What would you like to see when you're onboarding with O3DE? Share your issues, suggestions for improvement, and overall experiences in the [O3DE Discord](https://{{< links/o3de-discord >}}) server! You can share your thoughts with the UX Design team and me directly on the **SIG-UI-UX** channel.
 
 I'm looking forward to hearing from all of you soon!
