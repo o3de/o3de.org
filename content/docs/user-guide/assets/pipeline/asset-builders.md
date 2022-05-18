@@ -38,3 +38,32 @@ Process Job generates the product asset and product dependencies. The Asset Buil
 `ProcessJobResponse` places the product assets in a temp directory. Asset Processor moves the product assets to the **Asset Cache** and populates the **Asset Database** and **Asset Catalog** with information it uses to track the product assets, product dependencies, and the jobs that produced them.
 
 Process Job is multithreaded. Several Asset Builders can run multiple process jobs simultaneously.
+
+
+### Settings
+You can run Asset Builder in debug mode when develop new features for a builder or to debug issues in the asset pipeline. In debug mode, Asset Builder creates a test job or processes jobs for specified files.
+
+> You must start Asset Processor before you can enter a -debug command.
+
+To debug Asset Processor using Asset Builder:
+* Navigate to the build folder directory, for example `build\windows_vs2019\bin\profile`
+* In a command line prompt, enter the following command to get a list of possible options: `AssetBuilder.exe -help`
+
+Refer to the [debugging guide](/docs/user-guide/assets/asset-processor/debugging.md#DebugAssetBuilders) for more details.
+
+| Setting            | Description                                                                                                                                                                                                   |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| help               | Print this help information.                                                                                                                                                                                  |   
+| task               | The task to run.                                                                                                                                                                                              |
+| project-name       | Name of the current project.                                                                                                                                                                                  |
+| project-cache-path | Full path to the project cache folder.                                                                                                                                                                        |
+| module             | For resident mode, the path to the builder dll folder, otherwise the full path to a single builder dll to use.                                                                                                |
+| port               | Optional, port number to use to connect to the Asset Processor.                                                                                                                                               |
+| id                 | UUID string that identifies the builder.  Only used for resident mode when the Asset Processor directly starts up the AssetBuilder.                                                                           |
+| input              | For non-resident mode, full path to the file containing the serialized job request.                                                                                                                           |
+| output             | For non-resident mode, full path to the file to write the job response to.                                                                                                                                    |
+| debug              | Debug mode for the create and process job of the specified file. <br/>Debug mode optionally uses `-input`, `-output`, `-module`, `-port` and `-gameroot`. For example: `-debug Objects\Tutorials\shapes.fbx`. |                                                                                                                                  
+| debug_create       | Debug mode for the create job of the specified file.                                                                                                                                                          |
+| debug_process      | Debug mode for the process job of the specified file.                                                                                                                                                         |
+| tags               | Additional tags to add to the debug platform for job processing. One tag can be supplied per option.                                                                                                          |
+| platform           | Platform to use for debugging. ex: pc                                                                                                                                                                         |

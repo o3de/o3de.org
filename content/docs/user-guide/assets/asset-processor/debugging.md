@@ -347,7 +347,7 @@ You must start Asset Processor before you can enter a `-debug` command.
 
 1. In a terminal, navigate to `<build>/bin/<config>/`.
 
-1. Enter the command below to get a list of possible options.
+1. Enter the command below to get a list of possible options. See [Asset Builder Settings](/docs/user-guide/assets/pipeline/asset-builders#Settings) for further information.
 
    ```cmd
    AssetBuilder.exe -help
