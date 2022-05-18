@@ -17,7 +17,7 @@ The following instructions assume that you have:
 1.  Steps are performed in a Windows host machine.
 2.  Android Studio and Android SDK are installed
 3.  JDK development kit is installed and on the system path
-4.  Gradle is installed and on the system path
+4.  Gradle is installed and on the system path (maximum version supported: 7.0.2)
 5.  CMake {{< versions/cmake >}} or newer is installed and on the system path
 6.  Ninja build system is installed and on the system path
 7.  Git is installed
