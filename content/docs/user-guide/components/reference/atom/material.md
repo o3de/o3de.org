@@ -5,7 +5,7 @@ description: 'Open 3D Engine (O3DE) Material component reference.'
 toc: true
 ---
 
-Use the **Material** component to inspect, customize, and override materials and properties used by other compatible components. Currently, only the [Mesh component](/docs/user-guide/components/reference/atom/mesh/) and the [Actor component](/docs/user-guide/components/reference/animation/actor/) support the Material component. However, any component can support the Material component by implementing the required buses and services. The Material component uses material assets, which you can create and configure using the Material Editor. Another way that material assets are produced is by the Asset Processor and the Model Asset Builder. This exports the materials defined within a source model, like an FBX file.
+Use the **Material** component to inspect, customize, and override materials and properties on entities with compatible render components. Currently, only the [Mesh component](/docs/user-guide/components/reference/atom/mesh/) and the [Actor component](/docs/user-guide/components/reference/animation/actor/) support the Material component. However, any component can support the Material component by implementing the required buses and services. The Material component uses material assets, which you can create and configure using the Material Editor. Another way that material assets are produced is by the Asset Processor and the Model Asset Builder. This exports the materials defined within a source model, like an FBX file.
 
 ## Provider ##
 
