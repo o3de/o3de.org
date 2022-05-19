@@ -13,7 +13,7 @@ The **Material** component is used to inspect, customize, and otherwise override
 
 
 ## Material Component Properties
-The default configuration for the Material Component only has the default material slot. The rest of the model and LOD material slots are added and configured based on data provided by the component connecting to the Material Component via the MaterialReceiverRequestBus. For example, the [Mesh Component](/docs/user-guide/components/reference/atom/mesh/) implements MaterialReceiverRequestBus in terms of its model assets and sends notifications whenever assets change. If that model asset requires 5 unique materials the editor component UI will be populated with 5 model material slots. If the model asset contains 3 LODs then the Material Component UI will contain 3 LOD material groups with their own material slots.
+By default, the Material component contains only the **Default Material** property. The Material component reveals other property groups, **Model Materials** and **LOD Materials**, via `MaterialReceiverRequestBus`. For example, the Mesh component implements `MaterialReceiverRequestBus` to describe materials required by its model asset. The Mesh component sends notifications via `MaterialReceiverNotificationBus` whenever material requirements change. If that model asset requires five unique materials, then the **Model Materials** property group displays five model material slots. Furthermore, if the model asset contains three LODs, then the **LOD Materials** property group shows three LOD material groups with their own material slots.
 
 | Description | Screenshot |
 |-|-|
