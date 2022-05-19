@@ -15,7 +15,7 @@ and the mechanism by which a compiled Script Canvas graph can invoke C++ functio
 In your Gem's `CMakeLists.txt`, add a section for `AUTOGEN_RULES` and declare `Gem::ScriptCanvas` as build dependency.
 
 The precise place for this section will vary depending on how your Gem is configured. 
-However, we recommend that your Gem define a `STATIC` library to make the code available to both editor and runtime projects.
+However, we recommend that your Gem define a `STATIC` library to make the code available to both runtime and editor projects.
 
 As an example, here is partial definition of Gem's `CMakeLists.txt` that supports Script Canvas custom nodes with following required changes:
 1. `Gem::ScriptCanvas` must be declared as `BUILD_DEPENDENCIES` of `STATIC` library
@@ -25,7 +25,24 @@ As an example, here is partial definition of Gem's `CMakeLists.txt` that support
        *.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Header.jinja,$path/$fileprefix.generated.h
        *.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Source.jinja,$path/$fileprefix.generated.cpp
    ```
-3. `STATIC` library must be declared as `BUILD_DEPENDENCIES` of Gem runtime module
+3. `STATIC` library must be declared directly/indirectly as `BUILD_DEPENDENCIES` of Gem runtime/editor module 
+4. `MyGem.Static` includes two .cmake file lists. 
+   * We include the common files and the platform specific files which are set in `mygem_files.cmake`.
+   * We include AzAutoGen ScriptCanvas free function required templates which are set in `mygem_autogen_files.cmake` (We recommend to keep this file separately for clear scope)
+
+   As an example:
+   ```cmake
+   set(FILES
+       ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvas_Macros.jinja
+       ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvas_Nodeable_Macros.jinja
+       ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasNodeable_Header.jinja
+       ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasNodeable_Source.jinja
+   )
+   ```
+
+   The list of autogen templates might be different if you create custom templates for your own purposes. 
+   For example, if you were to extend Script Canvas to do something beyond what it provides "out of the box", you could have your own set of templates to generate code in the syntax that you define.
+   For more information, refer to the documentation on [AzAutoGen](/docs/user-guide/programming/autogen/).
 
 ```cmake
 ...
@@ -35,7 +52,7 @@ ly_add_target(
     NAMESPACE Gem
     FILES_CMAKE
         mygem_files.cmake
-        mygem_autogen_files.cmake
+        mygem_autogen_files.cmake                                                                             # 4
     INCLUDE_DIRECTORIES
         PRIVATE
             Source
@@ -45,8 +62,8 @@ ly_add_target(
         PUBLIC
             AZ::AzCore
             AZ::AzFramework
-            Gem::ScriptCanvas
-    AUTOGEN_RULES
+            Gem::ScriptCanvas                                                                                 # 1
+    AUTOGEN_RULES                                                                                             # 2
         *.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Header.jinja,$path/$fileprefix.generated.h
         *.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Source.jinja,$path/$fileprefix.generated.cpp
 )
@@ -64,29 +81,11 @@ ly_add_target(
     BUILD_DEPENDENCIES
         PRIVATE
             AZ::AzCore
-            Gem::MyGem.Static
+            Gem::MyGem.Static                                                                                 # 3
 )
 
 ...
 ```
-
-`MyGem.Static` includes two .cmake file lists. 
-* We include the common files and the platform specific files which are set in `mygem_files.cmake`.
-* We include AzAutoGen ScriptCanvas nodeable required templates which are set in `mygem_autogen_files.cmake` (We recommend to keep this file separately for clear scope)
-
-As an example:
-```cmake
-set(FILES
-    ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvas_Macros.jinja
-    ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvas_Nodeable_Macros.jinja
-    ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasNodeable_Header.jinja
-    ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasNodeable_Source.jinja
-)
-```
-
-The list of autogen templates might be different if you create custom templates for your own purposes. 
-For example, if you were to extend Script Canvas to do something beyond what it provides "out of the box", you could have your own set of templates to generate code in the syntax that you define.
-For more information, refer to the documentation on [AzAutoGen](/docs/user-guide/programming/autogen/).
 
 
 ## Step 1: Create an XML file for code generation {#create-an-xml-file}

@@ -8,11 +8,16 @@ weight: 200
 ## Instructions
 This topic guides you how to create custom Script Canvas Free Function Nodes step by step.
 
+{{< note >}}
+The [ScriptCanvasPhysics](https://github.com/o3de/o3de/tree/development/Gems/ScriptCanvasPhysics) Gem demonstrates the finished Gem that creates custom free function nodes in ScriptCanvas.
+You can reference the ScriptCanvasPhysics Gem as you follow along this tutorial.
+{{< /note >}}
+
 ### Prerequisite: Adding support for custom free function nodes to a Gem
 In your Gem's `CMakeLists.txt`, add a section for `AUTOGEN_RULES` and declare `Gem::ScriptCanvas.Extensions` as build dependency.
 
 The precise place for this section will vary depending on how your Gem is configured. 
-However, we recommend that your Gem define a `STATIC` library to make the code available to both editor and runtime projects.
+However, we recommend that your Gem define a `STATIC` library to make the code available to both runtime and editor projects.
 
 As an example, here is partial definition of Gem's `CMakeLists.txt` that supports Script Canvas custom nodes with following required changes:
 1. `Gem::ScriptCanvas.Extensions` must be declared as `BUILD_DEPENDENCIES` of `STATIC` library
@@ -22,7 +27,23 @@ As an example, here is partial definition of Gem's `CMakeLists.txt` that support
        *.ScriptCanvasFunction.xml,ScriptCanvasFunction_Header.jinja,AutoGenFunctionRegistry.generated.h
        *.ScriptCanvasFunction.xml,ScriptCanvasFunction_Source.jinja,AutoGenFunctionRegistry.generated.cpp
    ```
-3. `STATIC` library must be declared as `BUILD_DEPENDENCIES` of Gem runtime module 
+3. `STATIC` library must be declared directly/indirectly as `BUILD_DEPENDENCIES` of Gem runtime/editor module 
+4. `MyGem.Static` includes two .cmake file lists. 
+   * We include the common files and the platform specific files which are set in `mygem_files.cmake`.
+   * We include AzAutoGen ScriptCanvas free function required templates which are set in `mygem_autogen_files.cmake` (We recommend to keep this file separately for clear scope)
+
+   As an example:
+   ```cmake
+   set(FILES
+       ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvas_Macros.jinja
+       ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasFunction_Header.jinja
+       ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasFunction_Source.jinja
+   )
+   ```
+
+   The list of autogen templates might be different if you create custom templates for your own purposes. 
+   For example, if you were to extend Script Canvas to do something beyond what it provides "out of the box", you could have your own set of templates to generate code in the syntax that you define.
+   For more information, refer to the documentation on [AzAutoGen](/docs/user-guide/programming/autogen/).
 
 ```cmake
 ...
@@ -32,7 +53,7 @@ ly_add_target(
     NAMESPACE Gem
     FILES_CMAKE
         mygem_files.cmake
-        mygem_autogen_files.cmake
+        mygem_autogen_files.cmake                                                                             # 4
     INCLUDE_DIRECTORIES
         PRIVATE
             Source
@@ -42,8 +63,8 @@ ly_add_target(
         PUBLIC
             AZ::AzCore
             AZ::AzFramework
-            Gem::ScriptCanvas.Extensions
-    AUTOGEN_RULES
+            Gem::ScriptCanvas.Extensions                                                                      # 1
+    AUTOGEN_RULES                                                                                             # 2
         *.ScriptCanvasFunction.xml,ScriptCanvasFunction_Header.jinja,AutoGenFunctionRegistry.generated.h
         *.ScriptCanvasFunction.xml,ScriptCanvasFunction_Source.jinja,AutoGenFunctionRegistry.generated.cpp
 )
@@ -61,36 +82,19 @@ ly_add_target(
     BUILD_DEPENDENCIES
         PRIVATE
             AZ::AzCore
-            Gem::MyGem.Static
+            Gem::MyGem.Static                                                                                 # 3
 )
 
 ...
 ```
 
-`MyGem.Static` includes two .cmake file lists. 
-* We include the common files and the platform specific files which are set in `mygem_files.cmake`.
-* We include AzAutoGen ScriptCanvas free function required templates which are set in `mygem_autogen_files.cmake` (We recommend to keep this file separately for clear scope)
-
-As an example:
-```cmake
-set(FILES
-    ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvas_Macros.jinja
-    ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasFunction_Header.jinja
-    ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasFunction_Source.jinja
-)
-```
-
-The list of autogen templates might be different if you create custom templates for your own purposes. 
-For example, if you were to extend Script Canvas to do something beyond what it provides "out of the box", you could have your own set of templates to generate code in the syntax that you define.
-For more information, refer to the documentation on [AzAutoGen](/docs/user-guide/programming/autogen/).
-
 
 ### Step 1: Create an XML file for code generation {#create-an-xml-file}
 Prepare for code generation by creating an XML file that contains information about:
 1. **(Required)** The header file of functions.
-2. **(Required)** The function name of each function.
-3. **(Recommended)** The namespace of functions, which is used to distinguish duplicate function name.
-4. **(Optional)** The category of functions, if not presented, will use `Global Methods` instead
+2. **(Recommended)** The namespace of functions, which is used to distinguish duplicate function name.
+3. **(Optional)** The category of functions, if not presented, will use `Global Methods` instead
+4. **(Required)** The function name of each function.
 
 AzAutoGen uses this file to generate C++ code for function registration and reflection.
 
@@ -99,13 +103,13 @@ For example, HelloWorldFunctions.ScriptCanvasFunction.xml
 <?xml version="1.0" encoding="utf-8"?>
 <ScriptCanvas>
     <Library
-        Include="HelloWorldFunctions.h"
-        Namespace="MyGem::HelloWorldFunctions"
-        Category="Hello World">
+        Include="HelloWorldFunctions.h"                   # 1
+        Namespace="MyGem::HelloWorldFunctions"            # 2
+        Category="Hello World">                           # 3
 
-        <Function Name="HelloWorld"/>
+        <Function Name="HelloWorld"/>                     # 4
       
-        <Function Name="HelloWorldTo"/>
+        <Function Name="HelloWorldTo"/>                   # 4
     </Library>
 </ScriptCanvas>
 ```
@@ -113,7 +117,7 @@ For example, HelloWorldFunctions.ScriptCanvasFunction.xml
 ### Step 2: Create the function source files {#create-the-function-source-files}
 The next step is to implement the C++ functions that will be invoked by the Script Canvas node.
 
-There are two critical parts need to keep in mind:
+There are two requirements need to keep in mind:
 1. The namespace of functions should match with `Namespace` provided in XML file.
 2. The function name should match with specific one provided in XML file. (function overload is not supported)
 
@@ -168,9 +172,9 @@ set(FILES
 ```
 
 ### Step 4: Reflect the new node {#reflect-the-new-node}
-The final step is to reflect the new node, this step is only required once per Gem.
+The final step is to register and reflect the new node, this step is only required once per Gem.
 
-To do this, you need to add required registration function in your Gem [System Component](/docs/user-guide/programming/components/system-components/)
+To do this, you need to modify Gem [System Component](/docs/user-guide/programming/components/system-components/).
 In our example, it is named `MyGemSystemComponent.cpp` by default.
 
 1. Include auto-generated registry header file, and invoke `REGISTER_SCRIPTCANVAS_AUTOGEN` with sanitized Gem target name. 
