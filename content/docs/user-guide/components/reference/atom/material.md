@@ -17,7 +17,7 @@ The default configuration for the Material Component only has the default materi
 
 | Description | Screenshot |
 |-|-|
-| Basic | ![material-component-base-properties](/images/user-guide/components/reference/atom/material/material-base-properties-ui.png) |
+| Default | ![material-component-base-properties](/images/user-guide/components/reference/atom/material/material-base-properties-ui.png) |
 | Simple | ![material-component-slot-properties](/images/user-guide/components/reference/atom/material/material-slot-properties-ui.png) |
 | Complex | ![material-component-extended-slot-properties](/images/user-guide/components/reference/atom/material/material-extended-slot-properties-ui.png) |
 
