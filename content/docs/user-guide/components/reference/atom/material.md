@@ -43,7 +43,7 @@ This request bus supplies the interface for interacting with the Material Compon
 
 | Method Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
-| 'GetOriginalMaterialAssignments' | Returns a map of available material slots and their default assignments | None | Unmodified Material Slot Layout: MaterialAssignmentMap | Yes |
+| 'GetOriginalMaterialAssignments' | Returns a map of available material slots and their default assignments. | None | Unmodified Material Slot Layout: MaterialAssignmentMap | Yes |
 | 'FindMaterialAssignmentId' | Searches for and returns the MaterialAssignmentId matching the LOD index and label substring. Use LOD index of -1 for default and model materials. If no matching material is found the default material will be returned. | LOD Index: Integer, Label: String | Material Assignment Slot ID: MaterialAssignmentId | Yes |
 | 'GetActiveMaterialAssetId' | Return the acid ID of the active material applied to a material slot. It will be the material override if one exists. Otherwise, it will be the default material | Material Assignment Slot ID: MaterialAssignmentId | Material Asset ID: AssetId | Yes |
 | 'GetDefaultMaterialAssetId' | Return the default material asset for a material slot | Material Assignment Slot ID: MaterialAssignmentId | Material Asset ID: AssetId | Yes |
