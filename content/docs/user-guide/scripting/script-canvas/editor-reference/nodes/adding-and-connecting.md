@@ -1,6 +1,6 @@
 ---
 linktitle: Adding and Connecting Nodes
-title: Adding and Connecting Script Canvas Nodes
+title: Adding and Connecting Nodes in Script Canvas
 description: Learn how to add and connect Script Canvas nodes in Open 3D Engine.
 weight: 100
 ---

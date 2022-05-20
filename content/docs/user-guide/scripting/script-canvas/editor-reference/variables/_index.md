@@ -92,7 +92,7 @@ Do one of the following:
 
     ![Drag a variable from the Script Canvas Variable Manager to the canvas to create an on-value-changed node.](/images/user-guide/scripting/script-canvas/variable-manager-create-on-value-changed.gif)
 
-* Create a new **OnVariableValueChanged** event node in your graph and set the **Source** field to a variable using the field's gear button. For help adding a node to a graph, refer to [Adding and Connecting Script Canvas Nodes](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/adding-and-connecting).
+* Create a new **OnVariableValueChanged** event node in your graph and set the **Source** field to a variable using the field's gear button. For help adding a node to a graph, refer to [Adding and Connecting Nodes in Script Canvas](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/adding-and-connecting).
 
     ![Set the Source field of an OnVariableValueChanged event node using the field's gear button.](/images/user-guide/scripting/script-canvas/variable-manager-create-on-value-changed-node.png)
 

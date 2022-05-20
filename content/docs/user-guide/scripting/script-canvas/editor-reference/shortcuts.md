@@ -25,7 +25,7 @@ The **Script Canvas Editor** includes the following keyboard and mouse shortcuts
 | Shift+Up Arrow | Align top | Aligns all the selected nodes along a top edge. |
 | Shift+Down Arrow | Align bottom | Aligns all the selected nodes along a bottom edge. |
 | Ctrl+Alt+M | Add comment | Adds a new comment using the properties from the default comment preset. For information about presets, see [Creating Comment and Group Presets](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/organizing/creating-comment-and-group-presets). Note that NVIDIA's GeForce Experience overlay uses a default setting for turning on/off the microphone that interferes with this hotkey. |
-| Ctrl+Shift+G | Group selection | Groups the selected nodes on the graph using the properties from the default node group preset. For information about presets, see [Creating Comment and Group Presets](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/organizing/creating-comment-and-group-presets). |
+| Ctrl+Alt+O | Make group | Creates a new group using the properties from the default node group preset. Any selected nodes become part of the new group, and are enclosed within the group border. For information about presets, see [Creating Comment and Group Presets](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/organizing/creating-comment-and-group-presets). |
 | Ctrl+Shift+H | Ungroup | Ungroups the currently selected group. |
 | Ctrl+Number_Key | Create bookmark | Creates a bookmark out of the current view and assigns it to the specified number key. If you choose a number that is already assigned to a bookmark or a bookmark-enabled group, you are prompted to reassign the existing bookmark. For more information about bookmarks, see [Adding Bookmarks in Script Canvas](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/organizing/adding-bookmarks). For information about enabling groups as bookmarks, see [Grouping Nodes](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/organizing/grouping-nodes). |
 | Number_Key | Jump to bookmark | Jumps to the bookmark location associated with the key that is pressed. |
@@ -35,8 +35,8 @@ The **Script Canvas Editor** includes the following keyboard and mouse shortcuts
 | Ctrl+Shift+Down Arrow | Show entire graph | Centers the entire graph into the current display. Zooms out as much as possible to display all nodes. |
 | Ctrl+Shift+Left Arrow | Show start of chain | Centers the view on the nodes that do not have any input connections, and are connected to the selected node through their output connections. |
 | Ctrl+Shift+Right Arrow | Show end of chain | Centers the view on the nodes that do not have any output connections, and are connected to the selected node through their input connections. |
-| Ctrl+K, Ctrl+C | Comment out selected nodes | Comments out the current selection of nodes and turns them gray. Commented out nodes are not run at runtime, but still exist at edit time. |
-| Ctrl+K, Ctrl+U | Uncomment selected nodes | Uncomments the selected nodes. |
+| Ctrl+K, Ctrl+C | Disable selected nodes | Disables the selected nodes. When a node is disabled, its color changes to gray. Disabled nodes remain visible in the Editor, but are not run at runtime. |
+| Ctrl+K, Ctrl+U | Enable selected nodes | Enables the selected nodes. |
 
 {{< note >}}
 If a keyboard shortcut doesn't appear to work for you, another process running in the background might have bound that key combination.

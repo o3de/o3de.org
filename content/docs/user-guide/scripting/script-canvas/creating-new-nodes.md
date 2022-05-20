@@ -5,7 +5,7 @@ description: Learn about the different ways to create new Script Canvas nodes in
 weight: 300
 ---
 
-Script Canvas is an _extensible_ visual scripting system. You can create new nodes in Script Canvas in the following four ways, listed in relative order of complexity:
+Script Canvas is an _extensible_ visual scripting system. You can create new nodes in Script Canvas in the following four ways, listed in ascending order of complexity:
 
 * Script Canvas functions
 * Script events
