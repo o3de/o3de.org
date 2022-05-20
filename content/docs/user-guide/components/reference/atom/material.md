@@ -32,7 +32,7 @@ By default, the Material component contains only the **Default Material** proper
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Generate/Manage Source Materials...** | This button opens the "Generate/Manage Source Materials" dialog. | | |
+| **Generate/Manage Source Materials...** | This button opens the **Generate/Manage Source Materials** dialog. | | |
 | **Default Material** | The default material applies to the entire model, except for parts where a higher priority model or LOD material is assigned. | Material Asset | None |
 | **Model Materials** | Materials that are assigned to these slots are applied to every part of the model with the same material slot name, unless a higher priority LOD material is assigned. | Container of material assets | Empty |
 | **Enable LOD Materials** | When this flag is enabled, materials can be customized per LOD. | Boolean | `Disabled` |
