@@ -5,7 +5,7 @@ description: Captures a Specular IBL or Diffuse IBL cubemap at the entity locati
 toc: true
 ---
 
-The **CubeMap Capture** component allows a Specular IBL or Diffuse IBL cubemap to be captured at a specific location in the scene.  The resulting cubemap can be used with the **Global Skylight (IBL)** and **Reflection Probe** components.
+The **CubeMap Capture** component captures a Specular IBL or Diffuse IBL cubemap at a specific location in the scene. You can use the resulting cubemap with the **Global Skylight (IBL)** and **Reflection Probe** components.
 
 ## Provider
 
