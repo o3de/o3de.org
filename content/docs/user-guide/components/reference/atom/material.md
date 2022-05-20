@@ -39,7 +39,7 @@ By default, the Material component contains only the **Default Material** proper
 | **LOD Materials** | Materials assigned to LOD material slots will override model and default material assignments for the given LOD. If you are changing the default material or model materials and not seeing those changes applied then verify that there is no LOD material taking higher priority or disable them completely. | Container of material assets organized by LOD | Empty |
 
 ## MaterialComponentRequestBus
-This request bus supplies the interface for interacting with the Material Component. Many of the functions relate to inspecting or customizing material asset and property overrides. All of the functions are available in the editor, gameplay, and simulation. Many of them may be more useful for extending Material Component related tools and scripts. 
+This request bus supplies the interface for interacting with the Material component. It contains many of the functions that relate to inspecting or customizing material asset and property overrides. All of the functions are available in the editor, gameplay, and simulation. Many of them may be more useful for extending Material component related tools and scripts. 
 
 | Method Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
