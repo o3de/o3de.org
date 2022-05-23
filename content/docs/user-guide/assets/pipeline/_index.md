@@ -14,6 +14,7 @@ The **Open 3D Engine (O3DE)** Asset Pipeline is the end-to-end process that gene
 | [Source Assets](source-assets) |  Source assets can have custom processing options and are automatically processed in various scenarios. |
 | [Scan Directories](scan-directories) | Scan directories are monitored for new and updated source assets. |
 | [Asset Builders](asset-builders) | Asset Builders provide information for process jobs and generate product assets. |
+| [Intermediate Assets](intermediate-assets) | Intermediate assets allow builders to be chained together and re-used. |
 | [Asset Dependencies and Identifiers](asset-dependencies-and-identifiers) | Asset dependencies and identifiers ensure that asset references can be met when assets are processed, loaded, and packaged. |
 | [Asset Cache](asset-cache) | The Asset Cache stores the runtime optimized product assets and the information **Asset Processor** needs to track assets and keep them up to date. |
 | [Scene API: User Defined Properties](user_defined_properties.md) | A mechanism to use custom properties set in source scene files in the scene builder pipeline. |
