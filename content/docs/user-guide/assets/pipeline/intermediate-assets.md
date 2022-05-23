@@ -8,6 +8,12 @@ toc: true
 
 Intermediate assets allow builders to be chained together and add discrete steps for asset processing which increase builder reusability.
 
+## How intermediate assets work
+
+When **Asset Processor** completes a job, it inspects the output flags and copies any outputs marked with the IntermediateAsset flag into a new `<Cache>/Intermediate Assets` directory.  This is a scan directory that Asset Processor monitors for files to process like any other scan directory.  When an intermediate asset is copied to the directory, it's scanned by Asset Processor and is sent to any matching builders, just like a source asset.
+
+For more technical details on how intermediate assets work, refer to: https://github.com/o3de/sig-content/blob/main/rfcs/rfc-46-intermediate-asset-products.md
+
 ### How to use it
 
 * In the CreateJobs function of your builder, create a `JobDescriptor` with the platform identifier set to `AssetBuilderSDK::CommonPlatformName` and add it to the `response.m_createJobOutputs`.  This indicates the job is meant to be run on all platforms.  Be sure not to create one per platform as usual, you only need 1 JobDescriptor per job, regardless of the active platforms.
