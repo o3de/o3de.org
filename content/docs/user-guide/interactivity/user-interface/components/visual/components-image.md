@@ -13,7 +13,7 @@ You can use an **Image** component to add a color tint or texture to an element.
 | --- | --- |
 | SpriteType |  Select one of the following:   |
 | Sprite path |  Click the browse (**…**) icon and select a suitable file. Click the open-in (arrow) icon next to **Sprite path** to open the [Sprite Editor](/docs/user-guide/interactivity/user-interface/editor/sprite-editor).  |
-| Render target name |  Enter a name of a render target and press **Enter**. |
+| Render target |  Click on the folder icon to select an attachment image asset. |
 | Index |  The sprite sheet image index that the component will render.  |
 | Color |  Click the color swatch to select a different color.  Displays only if the **SpriteType** is **Sprite/Texture asset** and the image has been configured as a sprite sheet using the [Sprite Editor](/docs/user-guide/interactivity/user-interface/editor/sprite-editor).  |
 | Alpha |  Use the slider to choose an alpha value between **0** and **1**.  |
