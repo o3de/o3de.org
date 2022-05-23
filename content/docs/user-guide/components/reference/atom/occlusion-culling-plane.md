@@ -20,5 +20,5 @@ The **Occlusion Culling Plane** component adds a plane, known as an **Occluder**
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Show Visualization** | Displays the occlusion culling plane in the scene as a green plane for debugging.  |  |  |
-| **Transparent Visualization** | Displays the visualization as a semi-transparent plane.  |  |  |
+| **Show Visualization** | Displays the occlusion culling plane in the scene as a green plane for debugging.  | Boolean | `Enabled` |
+| **Transparent Visualization** | Displays the visualization as a semi-transparent plane.  | Boolean |  `Disabled` |
