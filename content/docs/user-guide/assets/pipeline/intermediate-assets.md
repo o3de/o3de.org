@@ -21,7 +21,7 @@ For more technical details on how intermediate assets work, refer to: https://gi
 
 That's all that's required to output an intermediate asset to be consumed by another builder.  Builders can be chained together like this for as many processing steps as required.
 
-##### Limitations
+## Limitations
  * An output must be either an intermediate or a product asset, not both.  If you want to output both, you'll need to create 2 separate jobs in CreateJobs.
  * Product assets cannot output for the Common platform
  * Intermediate assets must output for the Common platform
