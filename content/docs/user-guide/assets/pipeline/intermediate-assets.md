@@ -1,7 +1,7 @@
 ---
 linkTitle: Intermediate Assets
 title: Intermediate Assets
-description: In Open 3D Engine (O3DE), The intermediate assets feature allows builders to be chained together to allow more discrete steps when processing assets and increase builder re-usability.
+description: In Open 3D Engine (O3DE), intermediate assets allow builders to be chained together and add discrete steps for asset processing which increase builder reusability.
 weight: 600
 toc: true
 ---
