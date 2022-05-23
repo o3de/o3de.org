@@ -23,8 +23,8 @@ That's all that's required to output an intermediate asset to be consumed by ano
 
 ## Limitations
  * An output must be either an intermediate or a product asset, not both.  If you want to output both, you'll need to create 2 separate jobs in CreateJobs.
- * Product assets cannot output for the Common platform
- * Intermediate assets must output for the Common platform
- * Due to the above limitations, if you want to output both types of products, your ProcessJob code will need to be careful to output ProductAssets for non-common platform jobs and IntermediateAssets for common platform jobs.
+ * Product assets cannot output for the Common platform.
+ * Intermediate assets must output for the Common platform.
+ * Due to the above limitations, when outputting both types of products, the ProcessJob function will be run multiple times per file and must take care to output the correct type for the current job request.
 
 If you want to output platform-specific intermediates, the recommended method is to output all your intermediates with platform prefixes on the name, and then output an additional manifest file which simply references all the other outputs. For example you might make a job which outputs `pc_myshader.bin`, `mac_myshader.bin`, and `myshader.shadermanifest`. You could then create another builder to consume these using `*.shadermanifest` as the input pattern.
