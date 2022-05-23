@@ -29,9 +29,3 @@ That's all that's required to output an intermediate asset to be consumed by ano
 
 
 If you want to output platform-specific intermediates, the recommended method is to output all your intermediates with platform prefixes on the name, and then output an additional manifest file which simply references all the other outputs.  For example you might make a job which outputs `pc_myshader.bin`, `mac_myshader.bin`, and `myshader.shadermanifest`.  You could then create another builder to consume these using `*.shadermanifest` as the input pattern.
-
-### How it works
-
-When the Asset Processor finishes running a job, it inspects the output flags and copies any outputs marked with the IntermediateAsset flag into a new `<Cache>/Intermediate Assets` folder.  This is actually a scanfolder, which means the Asset Processor will monitor files here like any other scanfolder for sources to process.  When an intermediate is copied into here, it runs through the Asset Processor as usual and is sent to any matching builders, the same as a normal source file would.
-
-For more technical details on how it works under the hood, see here: https://github.com/o3de/sig-content/blob/main/rfcs/rfc-46-intermediate-asset-products.md
