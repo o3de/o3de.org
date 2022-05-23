@@ -6,9 +6,7 @@ weight: 600
 toc: true
 ---
 
-### What it is
-
-The intermediate assets feature allows builders to be chained together to allow more discrete steps when processing assets and increase builder re-usability.
+Intermediate assets allow builders to be chained together and add discrete steps for asset processing which increase builder reusability.
 
 ### How to use it
 
