@@ -14,7 +14,7 @@ When **Asset Processor** completes a job, it inspects the output flags and copie
 
 For more technical details on how intermediate assets work, refer to: https://github.com/o3de/sig-content/blob/main/rfcs/rfc-46-intermediate-asset-products.md
 
-### How to use it
+## Using intermediate assets
 
 * In the CreateJobs function of your builder, create a `JobDescriptor` with the platform identifier set to `AssetBuilderSDK::CommonPlatformName` and add it to the `response.m_createJobOutputs`.  This indicates the job is meant to be run on all platforms.  Be sure not to create one per platform as usual, you only need 1 JobDescriptor per job, regardless of the active platforms.
 * In the ProcessJob function, process the file and output the result as usual.  Create a JobProduct and set `m_outputFlags = AssetBuilderSDK::ProductOutputFlags::IntermediateAsset`.  Add it to the response: `response.m_outputProducts.push_back(jobProduct)`.
