@@ -5,7 +5,7 @@ description: 'Open 3D Engine (O3DE) Occlusion Culling Plane component reference.
 toc: true
 ---
 
-The **Occlusion Culling Plane** component adds a plane, or an occluder, that when put between the camera and a mesh, can block the mesh from being rendered. Occlusion culling is a render culling technique that reduces the number of non-visible objects sent to the renderer. The occlusion culling technique determines whether to render an object or not by testing if the object is fully behind an occluder.
+The **Occlusion Culling Plane** component adds a plane, known as an **Occluder**, that will prevent a mesh from rendering when the occluder is between the camera and the mesh. Occlusion culling is a rendering technique that reduces the number of non-visible objects sent to the renderer. An object is visible when it is on-screen and not fully behind an occlusion culling plane.
 
 
 ## Provider ##
@@ -15,6 +15,10 @@ The **Occlusion Culling Plane** component adds a plane, or an occluder, that whe
 
 ## Properties
 
-{{< todo issue=https://github.com/o3de/o3de.org/issues/717 >}}
-Add properties.
-{{< /todo >}}
+
+![occlusion-culling-plane-component-base-properties](/images/user-guide/components/reference/atom/occlusion-culling-plane/occlusion-culling-plane-base-properties-ui.png)
+
+| Property | Description | Values | Default |
+|-|-|-|-|
+| **Show Visualization** | Displays the occlusion culling plane in the scene as a green plane for debugging.  | Boolean | `Enabled` |
+| **Transparent Visualization** | Displays the visualization as a semi-transparent plane.  | Boolean |  `Disabled` |
