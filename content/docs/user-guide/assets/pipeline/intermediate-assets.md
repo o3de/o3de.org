@@ -17,7 +17,7 @@ For more technical details on how intermediate assets work, refer to: https://gi
 ## Using intermediate assets
 
 * In the CreateJobs function of your builder, create a `JobDescriptor` with the platform identifier set to `AssetBuilderSDK::CommonPlatformName` and add it to the `response.m_createJobOutputs`.  This indicates the job is meant to be run on all platforms. Only one JobDescriptor is required per job, regardless of the active platforms.
-* In the ProcessJob function, process the file and output the result as usual.  Create a JobProduct and set `m_outputFlags = AssetBuilderSDK::ProductOutputFlags::IntermediateAsset`.  Add it to the response: `response.m_outputProducts.push_back(jobProduct)`.
+* In the ProcessJob function, process the file and output the result. Create a JobProduct and set `m_outputFlags = AssetBuilderSDK::ProductOutputFlags::IntermediateAsset`.  Add it to the response: `response.m_outputProducts.push_back(jobProduct)`.
 
 That's all that's required to output an intermediate asset to be consumed by another builder.  Builders can be chained together like this for as many processing steps as required.
 
