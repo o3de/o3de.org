@@ -66,4 +66,4 @@ Refer to the [debugging guide](/docs/user-guide/assets/asset-processor/debugging
 | debug_create       | Debug mode for the create job of the specified file.                                                                                                                                                          |
 | debug_process      | Debug mode for the process job of the specified file.                                                                                                                                                         |
 | tags               | Additional tags to add to the debug platform for job processing. One tag can be supplied per option.                                                                                                          |
-| platform           | Platform to use for debugging. ex: pc                                                                                                                                                                         |
+| platform           | Platform to use for debugging, for example, `pc` |
