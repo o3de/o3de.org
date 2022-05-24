@@ -41,6 +41,10 @@ For example, to create a component called `MyTestComponent` in the `MyGem` names
 scripts\o3de.bat create-from-template -dp MyCode -dn MyTest -tn DefaultComponent -r ${GemName} MyGem
 ```
 
+{{< note >}}
+When using the replace parameter in Windows PowerShell, you must use a single quote around any `$` replacement variables. Example: `-r '${GemName}' MyGem`.
+{{< /note >}}
+
 To create the component in an existing directory, such as the `Code` directory of a Gem that's in progress, add the `-f` option to the `create-from-template` command to force the creation of the component files there.
 
 For example, to create a component called `MyTestComponent` in the `MyGem` namespace in the Gem's `Code` directory, do the following:

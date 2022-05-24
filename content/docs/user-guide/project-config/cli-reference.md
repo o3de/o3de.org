@@ -276,10 +276,14 @@ o3de.bat create-template --source-path SOURCE_PATH --template-path TEMPLATE_PATH
 
 - **`-r [REPLACE [REPLACE ...]], --replace [REPLACE [REPLACE ...]]`**
 
-  Add A to B replacement pairs. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces `${User}` with `MyUsername`, and `${id}` with `1723905`. Note: \<TemplateName\> is the last component of the TEMPLATE_PATH. The following replacement pairs already exist: `${Name}` to \<TemplateName\>, `${NameLower}` to \<templatename\>, `${NameUpper}` to \<TEMPLATENAME\>.
+  Add A to B replacement pairs. For example: `--replace ${User} MyUsername ${id} 1723905`. This replaces `${User}` with `MyUsername`, and `${id}` with `1723905`. Note: \<TemplateName\> is the last component of the TEMPLATE_PATH. The following replacement pairs already exist: `${Name}` to \<TemplateName\>, `${NameLower}` to \<templatename\>, `${NameUpper}` to \<TEMPLATENAME\>.
+
+  {{< note >}}
+When using the replace parameter in Windows PowerShell, you must use a single quote around any `$` replacement variables. Example: `--replace '${User}' MyUsername`.
+  {{< /note >}}
 
 - **`-f, --force`**
-         
+
   Forces the new template directory to override the existing one, if one exists. 
 
 
@@ -367,7 +371,11 @@ o3de.bat create-from-template --destination-path DESTINATION_PATH --template-pat
 
 - **`-r [REPLACE [REPLACE ...]], --replace [REPLACE [REPLACE ...]]`**
 
-  Add A to B replacement pairs. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces `${User}` with `MyUsername`, and `${id}` with `1723905`. Note: \<DestinationName\> is the last component of the DESTINATION_PATH. The following replacement pairs already exist: `${Name}` to \<DestinationName\>, `${NameLower}` to \<destinationname\>, `${NameUpper}` to \<DESTINATIONNAME\>.
+  Add A to B replacement pairs. For example: `--replace ${User} MyUsername ${id} 1723905`. This replaces `${User}` with `MyUsername`, and `${id}` with `1723905`. Note: \<DestinationName\> is the last component of the DESTINATION_PATH. The following replacement pairs already exist: `${Name}` to \<DestinationName\>, `${NameLower}` to \<destinationname\>, `${NameUpper}` to \<DESTINATIONNAME\>.
+
+  {{< note >}}
+When using the replace parameter in Windows PowerShell, you must use a single quote around any `$` replacement variables. Example: `--replace '${User}' MyUsername`.
+  {{< /note >}}
 
 - **`-f, --force`**
 
