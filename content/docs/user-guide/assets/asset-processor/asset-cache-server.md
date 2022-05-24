@@ -26,7 +26,7 @@ The team will need to create a shared folder that all the team members will be a
 
 The design of the ACS mode is to have one machine contributing to the asset cache in the remote folder and other **Asset Processor** clients running retrieve the cached product asset archive files.
 
-To enable the **Asset Processor** in ACS mode as a server, a .setreg file will have these settings:
+To enable the **Asset Processor** in ACS mode as a server, a .setreg file needs these settings:
 ```
 {
   "Amazon": {
