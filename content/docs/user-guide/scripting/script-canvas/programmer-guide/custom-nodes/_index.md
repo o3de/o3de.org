@@ -1,7 +1,7 @@
 ---
 linktitle: Creating Custom Nodes
-title: Creating custom Nodes in Script Canvas
-description: Learn how to create custom Script Canvas Nodes in Open 3D Engine (O3DE).
+title: Creating Custom Nodes in Script Canvas
+description: Learn how to create custom Script Canvas nodes in Open 3D Engine (O3DE).
 weight: 200
 ---
 
