@@ -15,7 +15,7 @@ The **Asset Server Cache** (ACS) mode lets the **Asset Processor** fetch pre-pro
 The **Asset Cache Server** (ACS) mode has three steps to set up the system so that developers can use it.
 
 {{< note >}}
-The next sections of instructions assume the root folder to be `T:/o3de` but it can be in any folder or it can run on Linux.
+The next sections assume the root folder to be `T:/o3de` but it can be in any folder or it can run on Linux.
 {{< /note >}}
 
 ## Create the Transfer Folder
