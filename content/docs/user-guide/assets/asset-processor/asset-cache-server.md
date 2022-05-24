@@ -57,7 +57,7 @@ The setting key `/AssetProcessor/Settings/Server/ACS FBX Glob={}` object specifi
 
 ## Run the Other Asset Processors in ACS in Client Mode
 
-To run the **Asset Processor** in ACS mode as a client the machine will access to the remote folder, enable the cache system in client mode, and specify the asset file types to pull from the remote server.
+To run the **Asset Processor** in ACS mode as a client the machine will need access to the remote folder, enable the cache system in client mode, and specify the asset file types to pull from the remote server.
 
 ```
 {
