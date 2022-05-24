@@ -52,7 +52,7 @@ The setting key `/AssetProcessor/Settings/Server/enableCacheServer=true` enables
 
 The setting key `/AssetProcessor/Settings/Server/cacheServerAddress=<remote_shared_path>` points to a remote folder that the server and all clients can read and write from, respectively. The transfer folder should already be set up before launching the **Asset Processor**.
 
-The setting key `/AssetProcessor/Settings/Server/ACS FBX Glob={}` object specifies that the FBX source assets as a file type to cache. There can be a number of entries specified in the settings registry where the entry’s title needs to start with the letters ACS such as "ACS Our Textures" and "ACS Audio Files". The "glob" pattern can be used to capture files by extension or some basic matching pattern. It is important to flag the entry with "checkServer" to true to enable the entry for caching.
+The setting key `/AssetProcessor/Settings/Server/ACS FBX Glob={}` object specifies FBX source assets as a file type to cache. There can be a number of entries specified in the settings registry where the entry’s title needs to start with the letters ACS such as "ACS Our Textures" and "ACS Audio Files". The "glob" pattern can be used to capture files by extension or some basic matching pattern. It is important to flag the entry with "checkServer" to true to enable the entry for caching.
 
 
 ## Run the Other Asset Processors in ACS in Client Mode
