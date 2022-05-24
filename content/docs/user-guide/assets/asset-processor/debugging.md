@@ -13,7 +13,7 @@ Some of the most common problems we've seen with Asset Processor include:
 * Asset processing takes too long after changes are made to a source asset.
 * The product assets don't behave like expected. They may have incorrect information, be missing information, or be missing entirely.
 * Unexpected warnings or errors.
-* Asset packaging isn't working as expected, content is missing or content is being included in bundles that was not expected to be there.
+* Asset packaging isn't working as expected. Content is missing or content is being included in bundles that was not expected to be there.
 * Different members of a team getting different results from asset processing, impacting the ability for the team to cooperate.
 
 ## Non-deterministic product assets
