@@ -7,7 +7,7 @@ toc: true
 
 A **Reflection Probe** applies specular reflections to meshes that are inside the volume of the probe.  The reflections are stored as a cubemap, using the entity position of the Reflection Probe as the capture point when it is baked.  
 
-Each Reflection Probe consists of two volumes: an Outer volume, specified using a Box shape component, and an Inner volume.  The Outer volume defines the total area affected by the probe and is subject to **blending** with other overlapping probe volumes and the [Global IBL](/docs/user-guide/components/reference/atom/global-skylight-ibl) specular cubemap.  The Inner volume defines the area that renders exclusively with the probe cubemap, meaning there is no blending from other probes or Global IBL.  Note that the smallest volume is used if multiple probe Inner volumes overlap.
+Each Reflection Probe consists of two volumes: an outer volume, specified using a Box shape component, and an inner volume.  The outer volume defines the total area affected by the probe and is subject to **blending** with other overlapping probe volumes and the [Global IBL](/docs/user-guide/components/reference/atom/global-skylight-ibl) specular cubemap.  The inner volume defines the area that renders exclusively with the probe cubemap, meaning there is no blending from other probes or Global IBL.  Note that the smallest volume is used if multiple probe inner volumes overlap.
 
 
 ## Provider
