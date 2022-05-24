@@ -46,7 +46,7 @@ To enable the **Asset Processor** in ACS mode as a server, a .setreg file needs 
 }
 ```
 
-This will enable the cache server mode for an Asset Process where it will write out the cached archive files to `T:/o3de/cache_folder` for all FBX files.
+This will enable the cache server mode for an Asset Processor where it will write out the cached archive files to `T:/o3de/cache_folder` for all FBX files.
 
 The setting key `/AssetProcessor/Settings/Server/enableCacheServer=true` enables the **Asset Processor** to run in "server mode". In this mode, the **Asset Processor** will detect source asset changes, process the product assets, archive the product files (in a ZIP archive), and save out the archive files in the remote folder.
 
