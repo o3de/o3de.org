@@ -1,5 +1,5 @@
 ---
-linkTitle: Asset Processor Settings
+linkTitle: Settings
 title: Asset Processor Settings
 description: Commandline settings for AssetProcessor and AssetBuilder
 weight: 900
