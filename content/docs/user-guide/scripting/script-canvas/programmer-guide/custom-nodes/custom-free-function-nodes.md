@@ -24,8 +24,8 @@ As an example, here is partial definition of Gem's `CMakeLists.txt` that support
 2. Add `AUTOGEN_RULES` section for custom free function under `STATIC` library
    ```cmake
    AUTOGEN_RULES
-       *.ScriptCanvasFunction.xml,ScriptCanvasFunction_Header.jinja,AutoGenFunctionRegistry.generated.h
-       *.ScriptCanvasFunction.xml,ScriptCanvasFunction_Source.jinja,AutoGenFunctionRegistry.generated.cpp
+       *.ScriptCanvasFunction.xml,ScriptCanvasFunctionRegistry_Header.jinja,AutoGenFunctionRegistry.generated.h
+       *.ScriptCanvasFunction.xml,ScriptCanvasFunctionRegistry_Source.jinja,AutoGenFunctionRegistry.generated.cpp
    ```
 3. `STATIC` library must be declared directly/indirectly as `BUILD_DEPENDENCIES` of Gem runtime/editor module 
 4. `MyGem.Static` includes two .cmake file lists. 
@@ -36,8 +36,8 @@ As an example, here is partial definition of Gem's `CMakeLists.txt` that support
    ```cmake
    set(FILES
        ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvas_Macros.jinja
-       ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasFunction_Header.jinja
-       ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasFunction_Source.jinja
+       ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasFunctionRegistry_Header.jinja
+       ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasFunctionRegistry_Source.jinja
    )
    ```
 
@@ -65,8 +65,8 @@ ly_add_target(
             AZ::AzFramework
             Gem::ScriptCanvas.Extensions                                                                      # 1
     AUTOGEN_RULES                                                                                             # 2
-        *.ScriptCanvasFunction.xml,ScriptCanvasFunction_Header.jinja,AutoGenFunctionRegistry.generated.h
-        *.ScriptCanvasFunction.xml,ScriptCanvasFunction_Source.jinja,AutoGenFunctionRegistry.generated.cpp
+        *.ScriptCanvasFunction.xml,ScriptCanvasFunctionRegistry_Header.jinja,AutoGenFunctionRegistry.generated.h
+        *.ScriptCanvasFunction.xml,ScriptCanvasFunctionRegistry_Source.jinja,AutoGenFunctionRegistry.generated.cpp
 )
 
 ly_add_target(
@@ -177,7 +177,7 @@ The final step is to register and reflect the new node, this step is only requir
 To do this, you need to modify Gem [System Component](/docs/user-guide/programming/components/system-components/).
 In our example, it is named `MyGemSystemComponent.cpp` by default.
 
-1. Include auto-generated registry header file, and invoke `REGISTER_SCRIPTCANVAS_AUTOGEN` with sanitized Gem target name. 
+1. Include auto-generated registry header file, and invoke `REGISTER_SCRIPTCANVAS_AUTOGEN_FUNCTION` with sanitized Gem target name. 
     {{< note >}}
     Auto-generated registry header file should be the same name declared under `AUTOGEN_RULES` in your Gem's `CMakeLists.txt`. In our example, it is `AutoGenFunctionRegistry.generated.h`.
     {{< /note >}}
@@ -190,7 +190,7 @@ In our example, it is named `MyGemSystemComponent.cpp` by default.
     ```cpp
     #include <AutoGenFunctionRegistry.generated.h>
     
-    REGISTER_SCRIPTCANVAS_AUTOGEN(MyGemStatic)
+    REGISTER_SCRIPTCANVAS_AUTOGEN_FUNCTION(MyGemStatic)
     ...
     ```
 
