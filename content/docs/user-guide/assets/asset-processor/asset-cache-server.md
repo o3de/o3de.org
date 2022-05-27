@@ -78,11 +78,11 @@ To run Asset Processor in ACS mode as a client, the client machine needs access 
 }
 ```
 
-The setting key `/AssetProcessor/Settings/Server/enableCacheServer=false` enables the **Asset Processor** to run in `client mode`. In this mode, the **Asset Processor** will read the source asset changes, check the remote folder for the product archives, and process the asset if it was not found. It is possible to have a hybrid of remote and local source assets since end users will add new assets locally before submitting them to a remote source asset repository.
+The setting key `/AssetProcessor/Settings/Server/enableCacheServer=false` enables Asset Processor to run in `client mode`. In this mode, Asset Processor reads the source asset changes, checks the remote directory for the product archives, and processes the asset if it's not found. It's possible to have a hybrid of remote and local source assets since team members will add new assets locally before submitting them to a remote source asset repository.
 
-The cache server address and ACS specifier blocks should match the **Asset Cache Server**.
+The cache server address and ACS specifier blocks should match the ACS server.
 
-## Configuring an ACS Block
+## Configuring an ACS block
 
 The asset caching system is configured using opt-in patterns. There are many types of files that process faster than copying an archived file from a remote folder. The most common way to cache the products of a source asset file is using a `"glob"` wild card pattern like `"*.png"` and `"*.wav"` scan patterns. Another way is to add a regular expression to match the source assets that would take a long time to process using `"pattern"` such as `"\/assets\/rock_[\w]*\.asset"` to cache all the rock asset files.
 
