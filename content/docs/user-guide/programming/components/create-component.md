@@ -28,8 +28,12 @@ Use the `o3de` CLI script in the O3DE `scripts` directory to create a common run
 Format:
 
 ```cmd
-scripts\o3de.bat create-from-template -dp <destination-dir> -dn <component-name> -tn DefaultComponent -r ${GemName} <gem-name>
+scripts\o3de.bat create-from-template -dp <destination-dir> -dn <component-name> -tn DefaultComponent -kr -r ${GemName} <gem-name>
 ```
+
+{{< tip >}}
+If you would like to keep the default license, include the `-kl` parameter.
+{{< /tip >}}
 
 The template appends the word "Component" to the component name you provide.
 
@@ -38,7 +42,7 @@ Supply the component's namespace as the replacement value for the `${GemName}` p
 For example, to create a component called `MyTestComponent` in the `MyGem` namespace, do the following:
 
 ```cmd
-scripts\o3de.bat create-from-template -dp MyCode -dn MyTest -tn DefaultComponent -r ${GemName} MyGem
+scripts\o3de.bat create-from-template -dp MyCode -dn MyTest -tn DefaultComponent -kr -r ${GemName} MyGem
 ```
 
 {{< note >}}
@@ -50,7 +54,7 @@ To create the component in an existing directory, such as the `Code` directory o
 For example, to create a component called `MyTestComponent` in the `MyGem` namespace in the Gem's `Code` directory, do the following:
 
 ```cmd
-scripts\o3de.bat create-from-template -dp C:\Gems\MyGem\Code -dn MyTest -tn DefaultComponent -r ${GemName} MyGem -f
+scripts\o3de.bat create-from-template -dp C:\Gems\MyGem\Code -dn MyTest -tn DefaultComponent -kr -r ${GemName} MyGem -f
 ```
 
     {{% /tab %}}
@@ -59,8 +63,12 @@ scripts\o3de.bat create-from-template -dp C:\Gems\MyGem\Code -dn MyTest -tn Defa
 Format:
 
 ```bash
-scripts/o3de.sh create-from-template -dp <destination-dir> -dn <component-name> -tn DefaultComponent -r ${GemName} <gem-name>
+scripts/o3de.sh create-from-template -dp <destination-dir> -dn <component-name> -tn DefaultComponent -kr -r ${GemName} <gem-name>
 ```
+
+{{< tip >}}
+If you would like to keep the default license, include the `-kl` parameter.
+{{< /tip >}}
 
 The template appends the word "Component" to the component name you provide.
 
@@ -69,7 +77,7 @@ Supply the component's namespace as the replacement value for the `${GemName}` p
 For example, to create a component called `MyTestComponent` in the `MyGem` namespace, do the following:
 
 ```bash
-scripts/o3de.sh create-from-template -dp MyCode -dn MyTest -tn DefaultComponent -r ${GemName} MyGem
+scripts/o3de.sh create-from-template -dp MyCode -dn MyTest -tn DefaultComponent -kr -r ${GemName} MyGem
 ```
 
 To create the component in an existing directory, such as the `Code` directory of a Gem that's in progress, add the `-f` option to the `create-from-template` command to force the creation of the component files there.
@@ -77,7 +85,7 @@ To create the component in an existing directory, such as the `Code` directory o
 For example, to create a component called `MyTestComponent` in the `MyGem` namespace in the Gem's `Code` directory, do the following:
 
 ```bash
-scripts/o3de.sh create-from-template -dp Gems/MyGem/Code -dn MyTest -tn DefaultComponent -r ${GemName} MyGem -f
+scripts/o3de.sh create-from-template -dp Gems/MyGem/Code -dn MyTest -tn DefaultComponent -kr -r ${GemName} MyGem -f
 ```
 
     {{% /tab %}}
