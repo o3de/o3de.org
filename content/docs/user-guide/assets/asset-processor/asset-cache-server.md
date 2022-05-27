@@ -8,7 +8,7 @@ toc: true
 
 **Asset Cache Server (ACS)** mode allows **Asset Processor** to cache product asset files to a remote directory so that they can be shared across a team.
 
-The **Asset Server Cache** (ACS) mode lets the **Asset Processor** fetch pre-processed products of a job from an asset server cache instead of processing it locally. It does this by using a shared folder where the **Asset Processor** writes out product asset archive ZIP files for a processed source asset job. The other **Asset Processor** clients retrieve these ZIP files and unzip the product assets instead of processing the source asset from scratch.
+ACS mode lets Asset Processor fetch preprocessed products of a job from an asset server cache instead of processing it locally. It does this by using a shared directory where Asset Processor writes out product asset archive ZIP files for a processed source asset job. Asset Processor clients retrieve these ZIP files and unzip the product assets instead of processing the source asset from scratch.
 
 # Setting Up Asset Processor in Asset Cache Server Mode
 
