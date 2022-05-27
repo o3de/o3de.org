@@ -18,9 +18,9 @@ Setting up ACS mode so that developers can use it has three parts; setting up an
 The next sections assume the root folder to be `T:/o3de` but it can be in any folder or it can run on Linux.
 {{< /note >}}
 
-## Create the Transfer Folder
+## Create the transfer directory
 
-The team will need to create a shared folder that all the team members will be able to access over the network. The tech should work between Windows and Linux, but the cacheServerAddress string only accepts a single string such as `T:/o3de/Transfer/Cache` that all the clients are meant to read from. It is possible to be clever about having an **Asset Processor** in ACS mode write to one configured `cacheServerAddress` string via Windows and having another ACS retrieve from a Samba link on Linux; but that will be a challenge the team will need to solve.
+The team needs to create a shared directory that all the team members can access over the network. ACS should work between Windows and Linux, but the `cacheServerAddress` string only accepts a single string such as `T:/o3de/Transfer/Cache` that all the clients are meant to read from. It's possible to have an Asset Processor in ACS mode write to one configured `cacheServerAddress` string via Windows and have another ACS retrieve from a Samba link on Linux. Your team's IT manager can provide a solution for this scenario.
 
 ## Run the Asset Processor in ACS in Server Mode
 
