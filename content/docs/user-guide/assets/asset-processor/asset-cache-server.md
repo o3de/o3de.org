@@ -22,11 +22,11 @@ The next sections assume the root folder to be `T:/o3de` but it can be in any fo
 
 The team needs to create a shared directory that all the team members can access over the network. ACS should work between Windows and Linux, but the `cacheServerAddress` string only accepts a single string such as `T:/o3de/Transfer/Cache` that all the clients are meant to read from. It's possible to have an Asset Processor in ACS mode write to one configured `cacheServerAddress` string via Windows and have another ACS retrieve from a Samba link on Linux. Your team's IT manager can provide a solution for this scenario.
 
-## Run the Asset Processor in ACS in Server Mode
+## Run Asset Processor in ACS mode as a server
 
-The design of the ACS mode is to have one machine contributing to the asset cache in the remote folder and other **Asset Processor** clients running retrieve the cached product asset archive files.
+The design of ACS mode is to have one machine contributing to the asset cache in the remote directory and other Asset Processor clients retrieve the cached product asset archive files.
 
-To enable the **Asset Processor** in ACS mode as a server, a .setreg file needs these settings:
+To enable Asset Processor in ACS mode as a server, a `.setreg` file needs these settings:
 ```
 {
   "Amazon": {
