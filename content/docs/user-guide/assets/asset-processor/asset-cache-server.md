@@ -96,7 +96,7 @@ The asset caching system is configured using opt-in patterns. There are many typ
 }
 ```
 
-This ACS (**Asset Cache Server**) block allows users to configure the types of source assets that should be cached in the remote folder. The block is placed in the JSON path `/AssetProcessor/Settings/Server` object. The title must start with the prefix "ACS" to designate the object as a configuration block. The next part is either `"glob"` or `"pattern"` followed by the correct text for a wild card pattern or a regular expression; these are used to tag source assets that need to be cached. 
+This ACS block allows users to configure the types of source assets that should be cached in the remote folder. The block is placed in the JSON path `/AssetProcessor/Settings/Server` object. The title must start with the prefix `"ACS "` to designate the object as a configuration block. The next part is either `"glob"` or `"pattern"` followed by the correct text for a wild card pattern or a regular expression; these are used to tag source assets that need to be cached.
 
 {{< note >}}
 The block should only be set to `"glob"` or `"pattern"`, not both.
