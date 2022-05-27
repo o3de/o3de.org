@@ -46,13 +46,13 @@ To enable Asset Processor in ACS mode as a server, a `.setreg` file needs these 
 }
 ```
 
-This will enable the cache server mode for an Asset Processor where it will write out the cached archive files to `T:/o3de/cache_folder` for all FBX files.
+The previous example enables ACS mode for Asset Processor so that it writes the cached archive files to `T:/o3de/cache_folder` for all FBX files.
 
-The setting key `/AssetProcessor/Settings/Server/enableCacheServer=true` enables the **Asset Processor** to run in "server mode". In this mode, the **Asset Processor** will detect source asset changes, process the product assets, archive the product files (in a ZIP archive), and save out the archive files in the remote folder.
+The setting key `/AssetProcessor/Settings/Server/enableCacheServer=true` enables Asset Processor to run in server mode. In server mode, Asset Processor detects source asset changes, processes the product assets, archives them (in a ZIP archive), and saves out the archive files in the remote directory.
 
-The setting key `/AssetProcessor/Settings/Server/cacheServerAddress=<remote_shared_path>` points to a remote folder that the server and all clients can read and write from, respectively. The transfer folder should already be set up before launching the **Asset Processor**.
+The setting key `/AssetProcessor/Settings/Server/cacheServerAddress=<remote_shared_path>` points to a remote directory that the server and all clients can read from and write to. The transfer directory should be set up before launching Asset Processor.
 
-The setting key `/AssetProcessor/Settings/Server/ACS FBX Glob={}` object specifies FBX source assets as a file type to cache. There can be a number of entries specified in the settings registry where the entry’s title needs to start with the letters ACS such as "ACS Our Textures" and "ACS Audio Files". The "glob" pattern can be used to capture files by extension or some basic matching pattern. It is important to flag the entry with "checkServer" to true to enable the entry for caching.
+The setting key `/AssetProcessor/Settings/Server/ACS FBX Glob={}` object specifies FBX source assets as a file type to cache. There can be a number of entries specified in the settings registry where the entry’s title needs to start with the letters ACS such as "ACS Our Textures" and "ACS Audio Files". The "glob" pattern can be used to capture files by extension or some basic matching pattern. It's important to flag the entry with `"checkServer": true` to enable the entry for caching.
 
 
 ## Run the Other Asset Processors in ACS in Client Mode
