@@ -10,9 +10,9 @@ toc: true
 
 ACS mode lets Asset Processor fetch preprocessed products of a job from an asset server cache instead of processing it locally. It does this by using a shared directory where Asset Processor writes out product asset archive ZIP files for a processed source asset job. Asset Processor clients retrieve these ZIP files and unzip the product assets instead of processing the source asset from scratch.
 
-# Setting Up Asset Processor in Asset Cache Server Mode
+# Setting up Asset Processor in ACS mode
 
-The **Asset Cache Server** (ACS) mode has three steps to set up the system so that developers can use it.
+Setting up ACS mode so that developers can use it has three parts; setting up an ACS server, setting up ACS clients, and configuring an ACS block.
 
 {{< note >}}
 The next sections assume the root folder to be `T:/o3de` but it can be in any folder or it can run on Linux.
