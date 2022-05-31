@@ -70,5 +70,5 @@ You must also add one of the following components:
 
 
 ## Related links
-+ [Using Multiple Skin Attachments for an Actor](/docs/user-guide/components/reference/animation/actor-multiple-skin)
-+ [Setting Up Actor Entities](/docs/user-guide/components/reference/animation/actor-component-entity-setup)
++ [Using Multiple Skin Attachments for an Actor](/docs/user-guide/visualization/animation/actor-multiple-skin)
++ [Setting Up Actor Entities](/docs/user-guide/visualization/animation/actor-component-entity-setup)
