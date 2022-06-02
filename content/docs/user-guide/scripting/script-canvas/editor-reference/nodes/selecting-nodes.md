@@ -1,8 +1,8 @@
 ---
 linktitle: Selecting Nodes
-title: Selecting Script Canvas Nodes Using Hot Keys
+title: Selecting Nodes in Script Canvas
 description: Learn how to select Script Canvas nodes in Open 3D Engine using hotkeys.
-weight: 700
+weight: 300
 ---
 
 Use the following hot key combinations to select groups of nodes.
