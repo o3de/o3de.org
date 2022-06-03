@@ -134,6 +134,6 @@ C:\game\bin\server.exe --engine-path=C:\game --project-path=C:\game\process1 --p
 
 ---
 
-Previous topic: [AWS GameLift Gem C++ API](cpp-api/)
+Previous topic: [FlexMatch Scripting](flexmatch/scripting/)
 
 Next topic: [AWS GameLift Gem Local Testing](local-testing/)
