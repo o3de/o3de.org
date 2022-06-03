@@ -14,21 +14,19 @@ You might wish to a create custom node in the following scenarios:
 * When you need control over the node's topology.
 * When you want to reflect your own C++ free functions. 
 
-To make the process of creating a custom node easier, Script Canvas uses a templated, automatic code generation system called [AzAutoGen](/docs/user-guide/programming/autogen/)
-to significantly reduce the amount of "boilerplate code" you need to write just to get a node up and running, allowing the developer to immediately focus on the functionality of the new node,
-since the code required for the node to show up in the [Node Palette](/docs/user-guide/scripting/script-canvas/get-started/concepts-and-terms/#node-palette) is already there.
+To make the process of creating a custom node easier, Script Canvas uses a templated, automatic code generation system called [AzAutoGen](/docs/user-guide/programming/autogen/) to significantly reduce the amount of "boilerplate code" you need to write just to get a node up and running. Using AzAutoGen allows the developer to immediately focus on the functionality of the new node, since the code required for the node to show up in the [Node Palette](/docs/user-guide/scripting/script-canvas/get-started/concepts-and-terms/#node-palette) is already there.
 
 The following four steps are required to create a custom node:
 
 1. Create a code generation XML file.
-2. Create the C++ files for your node.
-3. Add these files to CMake.
-4. Register your new node.
+1. Create the C++ files for your node.
+1. Add these files to CMake.
+1. Register your new node.
 
 ## Related information
 
 For a better understanding of creating custom nodes, we recommend reading following
-- [Nodes](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/_index/)
+- [Nodes](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/)
 - [Text Replacement](/docs/user-guide/scripting/script-canvas/editor-reference/text-replacement/)
 - [AzAutoGen](/docs/user-guide/programming/autogen/)
 

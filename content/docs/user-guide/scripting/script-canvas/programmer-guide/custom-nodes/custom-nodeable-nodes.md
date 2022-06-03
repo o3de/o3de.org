@@ -11,30 +11,33 @@ You'll see the term _nodeable_ used throughout the O3DE source.
 A nodeable can refer to both the node that appears in the Node Palette as a result of the AzAutoGen processing,
 and the mechanism by which a compiled Script Canvas graph can invoke C++ functions.
 
-## Prerequisite: Adding support for custom nodeable nodes to a Gem
-In your Gem's `CMakeLists.txt`, add a section for `AUTOGEN_RULES` and declare `Gem::ScriptCanvas` as build dependency.
+## Step 1: Adding support for custom nodeable nodes to a Gem
+{{< note >}}
+This step is only required once for the first time custom nodeable node creation.
+{{< /note >}}
+
+In your Gem's `Code/CMakeLists.txt`, add a section for `AUTOGEN_RULES` and declare `Gem::ScriptCanvas` as a build dependency.
 
 The precise place for this section will vary depending on how your Gem is configured. 
 However, we recommend that your Gem define a `STATIC` library to make the code available to both runtime and editor projects.
 
-As an example, here is partial definition of Gem's `CMakeLists.txt` that supports Script Canvas custom nodes with following required changes:
+As an example, here is partial definition of StartingPointInput Gem's `Code/CMakeLists.txt` that supports Script Canvas custom nodes with following required changes:
 1. `Gem::ScriptCanvas` must be declared as `BUILD_DEPENDENCIES` of `STATIC` library
-2. Add `AUTOGEN_RULES` section for custom free function under `STATIC` library
+1. Add `AUTOGEN_RULES` section for custom free function under `STATIC` library
    ```cmake
    AUTOGEN_RULES
        *.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Header.jinja,$path/$fileprefix.generated.h
        *.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Source.jinja,$path/$fileprefix.generated.cpp
    ```
-3. `STATIC` library must be declared directly/indirectly as `BUILD_DEPENDENCIES` of Gem runtime/editor module 
-4. `MyGem.Static` includes two .cmake file lists. 
-   * We include the common files and the platform specific files which are set in `mygem_files.cmake`.
-   * We include AzAutoGen ScriptCanvas free function required templates which are set in `mygem_autogen_files.cmake` (We recommend to keep this file separately for clear scope)
+1. `STATIC` library must be declared directly as `BUILD_DEPENDENCIES` of Gem runtime module (and it should be included as part of editor module build dependencies hierarchy)
+1. `StartingPointInput.Static` includes two .cmake file lists. 
+   * We include the common files and the platform specific files which are set in `startingpointinput_files.cmake`.
+   * We include AzAutoGen ScriptCanvas free function required templates which are set in `startingpointinput_autogen_files.cmake` (We recommend to keep this file separately for clear scope)
 
-   As an example:
+   Example contents of `startingpointinput_autogen_files.cmake`:
    ```cmake
    set(FILES
-       ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvas_Macros.jinja
-       ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvas_Nodeable_Macros.jinja
+       ...
        ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasNodeable_Header.jinja
        ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasNodeable_Source.jinja
    )
@@ -46,49 +49,42 @@ As an example, here is partial definition of Gem's `CMakeLists.txt` that support
 
 ```cmake
 ...
-
 ly_add_target(
-    NAME MyGem.Static STATIC
+    NAME StartingPointInput.Static STATIC
     NAMESPACE Gem
     FILES_CMAKE
-        mygem_files.cmake
-        mygem_autogen_files.cmake                                                                             # 4
-    INCLUDE_DIRECTORIES
-        PRIVATE
-            Source
-        PUBLIC
-            Include
+        startingpointinput_files.cmake
+        startingpointinput_autogen_files.cmake                                                                # 4
+    ...
     BUILD_DEPENDENCIES
         PUBLIC
             AZ::AzCore
             AZ::AzFramework
+            CryCommon
             Gem::ScriptCanvas                                                                                 # 1
     AUTOGEN_RULES                                                                                             # 2
+        ...
         *.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Header.jinja,$path/$fileprefix.generated.h
         *.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Source.jinja,$path/$fileprefix.generated.cpp
 )
 
 ly_add_target(
-    NAME MyGem ${PAL_TRAIT_MONOLITHIC_DRIVEN_MODULE_TYPE}
+    NAME StartingPointInput ${PAL_TRAIT_MONOLITHIC_DRIVEN_MODULE_TYPE}
     NAMESPACE Gem
     FILES_CMAKE
-        mygem_shared_files.cmake
-    INCLUDE_DIRECTORIES
-        PRIVATE
-            Source
-        PUBLIC
-            Include
+        startingpointinput_shared_files.cmake
+    ...
     BUILD_DEPENDENCIES
         PRIVATE
-            AZ::AzCore
-            Gem::MyGem.Static                                                                                 # 3
+            AZ::AzFramework
+            Gem::StartingPointInput.Static                                                                    # 3
 )
 
 ...
 ```
 
 
-## Step 1: Create an XML file for code generation {#create-an-xml-file}
+## Step 2: Create an XML file for code generation {#create-an-xml-file}
 
 Prepare for code generation by creating an XML file that contains information about the node's class, input pins, output pins, and associated tooltip text. AzAutoGen uses this file to generate C++ code used by your node class when implementing your node's functionality.
 
@@ -162,7 +158,7 @@ File: `Gems/ScriptCanvas/Code/Include/ScriptCanvas/Internal/Nodeables/BaseTimer.
 </ScriptCanvas>
 ```
 
-## Step 2: Create the node class files {#create-the-node-class-files}
+## Step 3: Create the node class files {#create-the-node-class-files}
 
 The next step is to implement the C++ functions that will be invoked by the Script Canvas node. These source files reference the auto-generated source for your node, and use the `ScriptCanvas::Nodeable` class as a base class.
 
@@ -206,9 +202,9 @@ namespace ScriptCanvas
 }
 ```
 
-## Step 3: Add source files to CMake {#add-source-files-to-cmake}
+## Step 4: Add source files to CMake {#add-source-files-to-cmake}
 
-Add the XML and class source files to one of Gem's .cmake files, for example `mygem_files.cmake`.
+Add the XML and class source files to one of Gem's .cmake files.
 
 For example, in `TimerNodeable` we must add the following lines:
 
@@ -222,7 +218,7 @@ set(FILES
 )
 ```
 
-## Step 4: Reflect the new node {#reflect-the-new-node}
+## Step 5: Reflect the new node {#reflect-the-new-node}
 
 The final step is to reflect the new node. To do this, add your custom node to a Script Canvas node library. You can use one of the existing node libraries, or create your own.
 

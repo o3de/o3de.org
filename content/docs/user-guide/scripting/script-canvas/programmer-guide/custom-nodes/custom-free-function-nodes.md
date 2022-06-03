@@ -13,26 +13,30 @@ The [ScriptCanvasPhysics](https://github.com/o3de/o3de/tree/development/Gems/Scr
 You can reference the ScriptCanvasPhysics Gem as you follow along this tutorial.
 {{< /note >}}
 
-### Prerequisite: Adding support for custom free function nodes to a Gem
-In your Gem's `CMakeLists.txt`, add a section for `AUTOGEN_RULES` and declare `Gem::ScriptCanvas.Extensions` as build dependency.
+### Step 1: Adding support for custom free function nodes to a Gem
+{{< note >}}
+This step is only required once for the first time custom free function node creation.
+{{< /note >}}
+
+In your Gem's `Code/CMakeLists.txt`, add a section for `AUTOGEN_RULES` and declare `Gem::ScriptCanvas.Extensions` as a build dependency.
 
 The precise place for this section will vary depending on how your Gem is configured. 
 However, we recommend that your Gem define a `STATIC` library to make the code available to both runtime and editor projects.
 
-As an example, here is partial definition of Gem's `CMakeLists.txt` that supports Script Canvas custom nodes with following required changes:
+As an example, here is partial definition of Gem's `Code/CMakeLists.txt` that supports Script Canvas custom nodes with following required changes:
 1. `Gem::ScriptCanvas.Extensions` must be declared as `BUILD_DEPENDENCIES` of `STATIC` library
-2. Add `AUTOGEN_RULES` section for custom free function under `STATIC` library
+1. Add `AUTOGEN_RULES` section for custom free function under `STATIC` library
    ```cmake
    AUTOGEN_RULES
        *.ScriptCanvasFunction.xml,ScriptCanvasFunctionRegistry_Header.jinja,AutoGenFunctionRegistry.generated.h
        *.ScriptCanvasFunction.xml,ScriptCanvasFunctionRegistry_Source.jinja,AutoGenFunctionRegistry.generated.cpp
    ```
-3. `STATIC` library must be declared directly/indirectly as `BUILD_DEPENDENCIES` of Gem runtime/editor module 
-4. `MyGem.Static` includes two .cmake file lists. 
+1. `STATIC` library must be declared directly as `BUILD_DEPENDENCIES` of Gem runtime module (and it should be included as part of editor module build dependencies hierarchy)
+1. `MyGem.Static` includes two .cmake file lists. 
    * We include the common files and the platform specific files which are set in `mygem_files.cmake`.
    * We include AzAutoGen ScriptCanvas free function required templates which are set in `mygem_autogen_files.cmake` (We recommend to keep this file separately for clear scope)
 
-   As an example:
+   Example contents of `mygem_autogen_files.cmake`:
    ```cmake
    set(FILES
        ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvas_Macros.jinja
@@ -89,12 +93,12 @@ ly_add_target(
 ```
 
 
-### Step 1: Create an XML file for code generation {#create-an-xml-file}
+### Step 2: Create an XML file for code generation {#create-an-xml-file}
 Prepare for code generation by creating an XML file that contains information about:
 1. **(Required)** The header file of functions.
-2. **(Recommended)** The namespace of functions, which is used to distinguish duplicate function name.
-3. **(Optional)** The category of functions, if not presented, will use `Global Methods` instead
-4. **(Required)** The function name of each function.
+1. **(Recommended)** The namespace of functions, which is used to distinguish duplicate function name.
+1. **(Optional)** The category of functions, if not presented, will use `Global Methods` instead
+1. **(Required)** The function name of each function.
 
 AzAutoGen uses this file to generate C++ code for function registration and reflection.
 
@@ -114,7 +118,7 @@ For example, HelloWorldFunctions.ScriptCanvasFunction.xml
 </ScriptCanvas>
 ```
 
-### Step 2: Create the function source files {#create-the-function-source-files}
+### Step 3: Create the function source files {#create-the-function-source-files}
 The next step is to implement the C++ functions that will be invoked by the Script Canvas node.
 
 There are two requirements need to keep in mind:
@@ -158,7 +162,7 @@ namespace MyGem
 }
 ```
 
-### Step 3: Add source files to CMake {#add-source-files-to-cmake}
+### Step 4: Add source files to CMake {#add-source-files-to-cmake}
 Add the XML and function source files to one of Gem's .cmake files, for example `mygem_files.cmake`.
 
 ```cmake
@@ -171,15 +175,19 @@ set(FILES
 )
 ```
 
-### Step 4: Reflect the new node {#reflect-the-new-node}
-The final step is to register and reflect the new node, this step is only required once per Gem.
+### Step 5: Reflect the new node {#reflect-the-new-node}
+{{< note >}}
+This step is only required once for the first time custom free function node creation.
+{{< /note >}}
+
+The final step is to register and reflect the new node.
 
 To do this, you need to modify Gem [System Component](/docs/user-guide/programming/components/system-components/).
 In our example, it is named `MyGemSystemComponent.cpp` by default.
 
 1. Include auto-generated registry header file, and invoke `REGISTER_SCRIPTCANVAS_AUTOGEN_FUNCTION` with sanitized Gem target name. 
     {{< note >}}
-    Auto-generated registry header file should be the same name declared under `AUTOGEN_RULES` in your Gem's `CMakeLists.txt`. In our example, it is `AutoGenFunctionRegistry.generated.h`.
+    Auto-generated registry header file should be the same name declared under `AUTOGEN_RULES` in your Gem's `Code/CMakeLists.txt`. In our example, it is `AutoGenFunctionRegistry.generated.h`.
     {{< /note >}}
     {{< note >}}
     Sanitized Gem target name should contain letters and numbers only. In our example, it is `MyGemStatic` which refers to `MyGem.Static` target.
@@ -194,7 +202,7 @@ In our example, it is named `MyGemSystemComponent.cpp` by default.
     ...
     ```
 
-2. Reflect auto-generated registry through Gem system component Reflect function.
+1. Reflect auto-generated registry through Gem system component Reflect function.
 
     For example, in `MyGemSystemComponent.cpp`
 
