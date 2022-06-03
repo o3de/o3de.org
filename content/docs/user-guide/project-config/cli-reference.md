@@ -301,11 +301,11 @@ When using the replace parameter in Windows PowerShell, you must use a single qu
 
 - **`-kr, --keep-restricted-in-template`**
 
-  If included, creates the restricted platforms in the template folder. If false, creates the restricted files in the restricted folder located at TEMPLATE_RESTRICTED_PATH. By default, this parameter is false.
+  If included, creates the restricted platforms in the template folder. By default, creates the restricted files in the restricted folder located at TEMPLATE_RESTRICTED_PATH.
 
 - **`-kl, --keep-license-text`**
 
-  If included, keeps all of the lines of license text, starting at {BEGIN_LICENSE} and ending at {END_LICENSE}. If false, the license text isn't included.
+  If included, keeps all of the lines of license text, starting at {BEGIN_LICENSE} and ending at {END_LICENSE}. By default, the license text isn't included.
 
 - **`-r [REPLACE [REPLACE ...]], --replace [REPLACE [REPLACE ...]]`**
 
