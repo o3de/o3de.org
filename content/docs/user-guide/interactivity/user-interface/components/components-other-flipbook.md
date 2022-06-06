@@ -2,7 +2,6 @@
 linkTitle: UI Flipbook Animation
 description: ' Add the Flipbook Animation component to an element to create simple image-based animations in Open 3D Engine. '
 title: UI Flipbook Animation Component
-weight: 300
 ---
 
 You can use the **FlipbookAnimation** component to create simple image-based animations by animating the frames or cells of a [sprite sheet](/docs/user-guide/interactivity/user-interface/editor/sprite-editor/sprite-sheets).
