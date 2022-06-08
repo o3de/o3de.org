@@ -65,34 +65,34 @@ You must create a separate installation folder to copy over the required assets,
 
     if cat /etc/system-release | grep -qFe 'Amazon Linux release 2'
     then
-    sudo yum update -y
-    sudo yum groupinstall 'Development Tools' -y
-    sudo yum install python3 -y
-    
-    echo 'Update outdated make package'
-    mkdir make && cd make
-    wget http://ftp.gnu.org/gnu/make/make-4.2.1.tar.gz
-    tar zxvf make-4.2.1.tar.gz
-    mkdir make-4.2.1-build make-4.2.1-install
-    cd make-4.2.1-build
-    /local/game/make/make-4.2.1/configure --prefix='/local/game/make/gmake-4.2.1-install'
-    make -j 8
-    make -j 8 install
-    export PATH=/local/game/make/gmake-4.2.1-install/bin:$PATH
-    sudo ln -sf /local/game/make/gmake-4.2.1-install/bin/make /local/game/make/gmake-4.2.1-install/bin/gmake
-    cd /local/game/
-    
-    echo 'Installing missing libs for AL2'
-    mkdir glibc && cd glibc
-    wget http://mirror.rit.edu/gnu/libc/glibc-2.29.tar.gz
-    tar zxvf glibc-2.29.tar.gz
-    mkdir glibc-2.29-build glibc-2.29-install
-    cd glibc-2.29-build
-    /local/game/glibc/glibc-2.29/configure --prefix='/local/game/glibc/glibc-2.29-install'
-    make -j 8
-    make -j 8 install
-    sudo ln -sf /local/game/glibc/glibc-2.29-install/lib/libm.so.6 /local/game/lib64/libm.so.6
-    cd /local/game/
+        sudo yum update -y
+        sudo yum groupinstall 'Development Tools' -y
+        sudo yum install python3 -y
+
+        echo 'Update outdated make package'
+        mkdir make && cd make
+        wget http://ftp.gnu.org/gnu/make/make-4.2.1.tar.gz
+        tar zxvf make-4.2.1.tar.gz
+        mkdir make-4.2.1-build make-4.2.1-install
+        cd make-4.2.1-build
+        /local/game/make/make-4.2.1/configure --prefix='/local/game/make/gmake-4.2.1-install'
+        make -j 8
+        make -j 8 install
+        export PATH=/local/game/make/gmake-4.2.1-install/bin:$PATH
+        sudo ln -sf /local/game/make/gmake-4.2.1-install/bin/make /local/game/make/gmake-4.2.1-install/bin/gmake
+        cd /local/game/
+
+        echo 'Installing missing libs for AL2'
+        mkdir glibc && cd glibc
+        wget http://mirror.rit.edu/gnu/libc/glibc-2.29.tar.gz
+        tar zxvf glibc-2.29.tar.gz
+        mkdir glibc-2.29-build glibc-2.29-install
+        cd glibc-2.29-build
+        /local/game/glibc/glibc-2.29/configure --prefix='/local/game/glibc/glibc-2.29-install'
+        make -j 8
+        make -j 8 install
+        sudo ln -sf /local/game/glibc/glibc-2.29-install/lib/libm.so.6 /local/game/lib64/libm.so.6
+        cd /local/game/
     fi
         
     echo 'Install Success'
