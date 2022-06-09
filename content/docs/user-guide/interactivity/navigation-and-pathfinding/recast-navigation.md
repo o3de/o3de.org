@@ -30,15 +30,17 @@ You can create a navigation mesh by using **Recast Navigation Mesh** component a
 
 ## Visualizing the Navigation Mesh
 
-You can visualize the navigation area to confirm that the navigation mesh has been configured correctly. Here is an example from AutomatedTesting project's Navigation Sample level with visualization turned off.
+Visualize the navigation area to confirm that the navigation mesh has been configured correctly. Here is an example from AutomatedTesting project's Navigation Sample level with visualization turned off.
 
 ![Without Debug Draw](/images/user-guide/interactivity/navigation/recast-without-debugdraw.png)
 
-You can enable visualization with the following steps.
+Enable visualization with the following steps.
 
 1. In **O3DE Editor**, select the entity in the viewport or **Entity Outliner** with a **Recast Navigation Mesh** component.
 
 1. In Entity Inspector, find the **Recast Navigation Mesh** component, and then enable **Debug Draw** property.
+
+1. Alternatively, enable visualization for all navigation meshes using CVar `cl_navmesh_debug`.
 
 1. Enter the game mode with **CTRL+G** or using the main menu with Game -> Play Game.
 
@@ -91,7 +93,7 @@ Here are the steps to update a navigation mesh from Script Canvas.
 
 ## Finding Paths
 
-You can find paths between entities or positions within a given navigation mesh by using a **Detour Navigation** component.
+Find paths between entities or positions within a given navigation mesh by using a **Detour Navigation** component.
 
 1. In **O3DE Editor**, create an entity.
 
