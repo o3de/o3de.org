@@ -21,6 +21,7 @@ toc: true
 | Gem | Description |
 | - | - |
 | [Kythera AI](./kythera-ai/) | The Kythera AI Gem provides support for Kythera AI features in Open 3D Engine (O3DE), and includes a demo project, levels, and assets that demonstrate the features of Kythera AI. |
+| [Recast Navigation](./physics/nvidia/recast-navigation) | The Recast Navigation Gem provides support for building navigation meshes and calculating walkable paths within those navigation meshes. It uses open source library [Recast Navigation](https://github.com/recastnavigation/recastnavigation). An example of its use can be found in AutomatedTesting project in Navigation Sample level. |
 
 
 ## Assets
