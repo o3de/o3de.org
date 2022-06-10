@@ -4,7 +4,7 @@ title: Finding Paths using Recast Navigation Gem in Open 3D Engine
 description: Instructions for setting up and configuring navigation mesh using Open 3D Engine (O3DE).
 ---
 
-You can create a navigation mesh by using **Recast Navigation Mesh** component and its dependencies, and then use **Detour Navigation** component to find path between two entities or two points within the navigation area.
+You can create a navigation mesh by using **Recast Navigation Mesh** component and its dependencies, and then use **Detour Navigation** component to find a path between two entities or two points within the navigation area.
 
 ## Creating a navigation mesh
 
