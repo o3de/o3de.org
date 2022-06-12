@@ -11,7 +11,7 @@ The **Simple State** component provides a simple state machine. Each state is re
 
 [O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
 
-## Simple State properties 
+## Simple State properties
 
 ![Simple State component properties](/images/user-guide/components/reference/gameplay/simple-state-component.png)
 
@@ -43,4 +43,4 @@ The **Simple State** component provides a simple state machine. Each state is re
 |-|-|-|-|-|
 | `OnStateChanged` | Notifies listeners that the state has changed. | None | Old State: String, New State: String | Yes |
 
-For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
+For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
