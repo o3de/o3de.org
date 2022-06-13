@@ -11,15 +11,16 @@ Create script events using the **Asset Editor** tool in **O3DE Editor**.
 
 1. In O3DE Editor, choose **Tools**, **Asset Editor**.
 
-    ![Choose Tools, Asset Editor.](/images/user-guide/scripting/script-events/creating-1.png)
+    ![Choose Tools, Asset Editor.](https://user-images.githubusercontent.com/67029859/173423382-d8a6bf55-cb23-4441-ab70-a1f3b5169d06.jpg)
 
 1. In the **Asset Editor**, choose **File**, **New**, **Script Events**.
 
-    ![Choose File, New, Script Events in the Asset Editor.](/images/user-guide/scripting/script-events/creating-2.png)
+    ![Choose File, New, Script Events in the Asset Editor.](https://user-images.githubusercontent.com/67029859/173423538-9b8043a6-28a5-47b8-b51a-60674dfa10c9.jpg)
 
 1. In the **Asset Editor**, enter the information that defines the script event. For a description of each field, see the [Script event properties](#script-event-properties) tables that follow.
 
-    ![Creating a script event in the Asset Editor.](/images/user-guide/scripting/script-events/creating-3.png)
+    ![Creating a script event in the Asset Editor.](https://user-images.githubusercontent.com/67029859/173423726-b84d901f-57f5-44fd-ae95-af232f2b764d.jpeg)
+
 
 1. Choose **File**, **Save**, or press **Ctrl+S**.
 
