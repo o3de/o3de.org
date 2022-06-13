@@ -34,12 +34,13 @@ You can specify the following values:
 + `3` - Toggles the proximity based collider visualization. This value applies only to mesh colliders. See [Physics asset colliders](/docs/user-guide/components/reference/physx/collider/#physics-asset-colliders).
 + `0` - Disables debug visualizations.
 
-Toggles a visual culling box frame.
 
 **Example**
 
+Toggles a visual culling box frame.
+
 ```
-physx_CullingBox 1
+physx_CullingBox
 ```
 
 Adjusts the culling box size to **100**. Enter **0** to disable culling.
@@ -77,12 +78,10 @@ You must enable the [ImGui Gem](/docs/user-guide/gems/reference/debug/imgui) to 
 1. Press the **Home** key to open the **ImGui** tool. The **PhysX Debug** menu appears under the **Perspective** viewport.
 
 1. Click **PhysX Debug**.
-**Example**
 
 ![PhysX Debug menu in gameplay mode.](/images/user-guide/physx/physx-debugger-imgui-tool.png)
 
-1. You can make the following changes.
-****
+You can make the following changes.
 
 
 ## Debug Options in the PhysX Configuration 
