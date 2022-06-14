@@ -16,4 +16,4 @@ This Gem includes the following features:
 * Find paths between entities or positions within a navigation mesh
 * Visualize the navigation mesh
 
-For more information, see [Using Recast Navigation Gem](/docs/user-guide/interactivity/ai/recast-navigation).
+For more information, see [Using Recast Navigation Gem](/docs/user-guide/interactivity/navigation-and-pathfinding/recast-navigation).
