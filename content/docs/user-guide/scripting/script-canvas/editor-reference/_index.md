@@ -14,4 +14,4 @@ The **Script Canvas Editor** provides a visual scripting environment for creatin
 | [Variables and the Variable Manager](/docs/user-guide/scripting/script-canvas/editor-reference/variables/) | Learn about using variables in Script Canvas and the **Variable Manager**. |
 | [Functions](/docs/user-guide/scripting/script-canvas/editor-reference/functions) | Learn how to create reusable functions that can be inserted into other in Script Canvas graphs as nodes. |
 | [Text Replacement](/docs/user-guide/scripting/script-canvas/editor-reference/text-replacement) | Learn how to change the text for node names, titles, categories, tooltips, and more. |
-| [Interpreter](/docs/user-guid/scripting/script-canvas/editor-reference/interpreter.md) | Using the Script Canvas Interpreter. |
+| [Interpreter](/docs/user-guide/scripting/script-canvas/editor-reference/interpreter.md) | Using the Script Canvas Interpreter. |
