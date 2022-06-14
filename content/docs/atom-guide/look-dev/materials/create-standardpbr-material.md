@@ -16,9 +16,9 @@ This tutorial covers the following concepts:
 A material can have multiple textures, such as base color, normal map, and roughness. These textures contain different data that are combined to create the overall look of the material. You can design the textures for a material using external tools, such as [Substance Designer](https://www.adobe.com/products/substance3d-designer.html) and [Materialize](http://boundingboxsoftware.com/materialize/). In this tutorial, we use ready-made materials from [Poly Haven](https://polyhaven.com/). 
 
 ### Download texture files
-Download the [castle brick material](https://polyhaven.com/a/castle_brick_02_red) in any resolution from Poly Haven. To download the required maps, click the hamburger button next to the **Download** button, then choose an extension to use and click the button for that extension next to the AO, Diffuse, Displacement, Normal, and Rough maps.  Save the files to disk if they do not download automatically.
+Download the [castle brick material](https://polyhaven.com/a/castle_brick_02_red) in any resolution from Poly Haven. To download all the required maps, click the hamburger button next to the **Download** button, then click buttons with any of the file extensions next to AO, Diffuse, Displacement, Normal, and Rough.
 
-After downloading, move the maps to the folder `<project-folder>/Materials/PolyHaven/`.
+After downloading, move and extract the zip file to the folder `<project-folder>/Materials/PolyHaven/`.
 
 We use the following files as our input textures:
 -  castle_brick_02_red_ao_1k (ambient occlusion)
