@@ -13,7 +13,7 @@ Physically based rendering (PBR) is rendering in a photorealistic way by simulat
 
 ## PBR Shading Model
 
-The fundamental materials used in Atom are based on PBR shading models. The PBR shading model is composed of properties that describe how a material interacts in the physical world. At the basic level, the PBR shading model requires the following properties: base color, metallic, roughness, and specular reflectivity. These properties are enough to define materials such as wood, metal, concrete, and other raw materials. However, materials can become much more complex with properties such as clear coating, subsurface scattering, and more. For example, varnished wood is made from a basic wood material type with an additional clear coating on top.  
+The core material types provided by Atom are based on PBR shading models. The PBR shading model is composed of properties that describe how a material interacts in the physical world. At the basic level, the PBR shading model requires the following properties: base color, metallic, roughness, and specular reflectivity. These properties are enough to define materials such as wood, metal, concrete, and other raw materials. However, materials can become much more complex with properties such as clear coat, subsurface scattering, and more. For example, varnished wood is made from a basic wood material type with an additional clear coat layer on top.  
 
 The following list of properties are used to define PBR materials in Atom. An overview of which properties are included in which material type is shown in the [Properties in PBR Material Types](#properties-in-pbr-material-types) table. 
 
@@ -29,9 +29,10 @@ The following list of properties are used to define PBR materials in Atom. An ov
 | Normal | A texture mapping technique that simulates bumpiness on a surface. Similar to bump maps. |
 | UVs | Texture coordinates that describe how a texture maps to a surface. |
 | Clear Coat | A thin translucent layer on top of the surface. |
+| Detail Layer | Additional base color and normal texture maps that mix with the main surface to provide small-scale details. |
 | Subsurface Scattering | A mechanism that simulates how light that penetrates translucent surfaces is scattered and absorbed before exiting the surface at a different location. |
 | Irradiance | Describes how a surface interacts with the global illumination (GI) system's diffuse lighting environment. It does not affect the appearance of the material itself. |
-| Parallax | Improves the apparent bumpiness on a surface by displacing texture coordinates, giving an illusion of depth. Also known as displacement mapping. |
+| Displacement | Uses a displacement map to describes bumps or offsets in the surface. Various techniques such as parallax occlusion mapping use this information to give the appearance of depth to the surface. |
 
 ### Base Color
 
