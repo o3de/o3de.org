@@ -16,10 +16,30 @@ class MyClass
 public:
     MyClass()
     {
-        m_triggerId = ...;
-        AudioTriggerNotificationBus::Handler::BusConnect(m_triggerId);
+        TAudioControlID triggerId = ...;
+        AudioTriggerNotificationBus::Handler::BusConnect(TriggerNotificationIdType{ this });
  
         // execute the m_triggerId ...
+        if (auto audioSystem = AZ::Interface<IAudioSystem>::Get();
+            audioSystem != nullptr)
+        {
+            // Example 1: via raw Audio Request
+            Audio::ObjectRequest::ExecuteTrigger execTrigger;
+            execTrigger.m_triggerId = triggerId;
+            execTrigger.m_owner = this;
+            audioSystem->PushRequest(AZStd::move(execTrigger));
+
+            // Example 2: via AudioProxy
+            IAudioProxy* proxy = audioSystem->GetAudioProxy();
+            if (proxy)
+            {
+                // The second parameter is the "owner" override, which matches
+                // what Id is connected to on the notification bus.
+                proxy->Initialize("Example Sound", this);
+                proxy->ExecuteTrigger(triggerId);
+                proxy->Release();
+            }
+        }
     }
  
     ~MyClass()
@@ -28,12 +48,13 @@ public:
     }
  
 protected:
-    void ReportDurationInfo(TAudioEventID eventId, float duration, float estimatedDuration) override
+    void ReportDurationInfo(
+        TAudioControlID triggerId,
+        TAudioEventID eventId,
+        float duration,
+        float estimatedDuration) override
     {
         // ...
     }
- 
-private:
-    TAudioControlID m_triggerId;
 };
 ```
