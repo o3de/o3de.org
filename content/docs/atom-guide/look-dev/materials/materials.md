@@ -59,33 +59,9 @@ A node graph based tool for authoring material types is in development, but unti
 For more information, see [Material Type Authoring Guide](/docs/atom-guide/dev-guide/materials/material-type-authoring-guide/).  
 
 ## Atom PBR Material Types
-**Physically based rendering (PBR)** is a rendering technique that simulates realistic interaction between materials and light. Atom supports PBR and features PBR material types such as StandardPBR, EnhancedPBR, and other variations. These follow industry standard workflows using metallic and roughness properties. Atom's material system is also capable of rendering non-photo-realistic techniques and special effects through alternate material types. We provide built-in material types focused on PBR rendering, but users can author their own material types to suit their needs.
+**Physically based rendering (PBR)** is a rendering technique that simulates realistic interaction between materials and light. Atom provides several core material types based on industry standard workflows using metallic and roughness properties. Atom's material system is also capable of rendering non-photo-realistic techniques and special effects through alternate material types; users can author their own material types to suit their needs.
 
-For more information on PBR, see [Physically-based Rendering (PBR)](/docs/atom-guide/look-dev/materials/pbr/)<!-- and [Working with StandardPBR materials](./material-build-pipeline)DRAFT TOPIC-->. 
-
-The following core material types are included in Atom: 
-
-- **StandardPBR**  
-    A full-featured PBR material type, but adopts certain feature limitations in order to improve performance. It is meant to provide as much functionality as possible with a limited number of render targets. 
-    
-    This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/StandardPBR.materialtype`.
-
-- **EnhancedPBR**  
-    An enhanced version of StandardPBR that includes additional features, but comes at a higher performance cost. It supports more advanced features that require additional render targets (g-buffers). 
-
-    This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/EnhancedPBR.materialtype`. 
-
-- **BasePBR**  
-    A simplified alternative to StandardPBR that is limited to only the most common PBR features such as base color, metallic, roughness, and normal. This is especially helpful for testing and debugging, by eliminating some features from StandardPBR that add considerable complexity.
-
-    This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/BasePBR.materialtype`. 
-    
-- **StandardMultilayerPBR**  
-    Can combine up to three layers of StandardPBR, blended together. Especially useful for breaking up repeated patterns on large surfaces.
-
-    This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/StandardMultilayerPBR.materialtype`. 
-    
-- More types are available or may be added beyond those listed above, especially for specialized use cases like skin and eyes. To find the full list of available material types check the "[Gems/Atom/Feature/Common/Assets/Materials/Types](https://github.com/o3de/o3de/tree/development/Gems/Atom/Feature/Common/Assets/Materials/Types)" folder.
+For more information on the available PBR material types, see [Physically-based Rendering (PBR)](/docs/atom-guide/look-dev/materials/pbr/)<!-- and [Working with StandardPBR materials](./material-build-pipeline)DRAFT TOPIC-->. 
 
 ## Material Assets and Material Type Assets
 Material and material type files produce **Material Assets** and **Material Type Assets** in the cache, respectively. The runtime loads these asset files and uses them to render models. 

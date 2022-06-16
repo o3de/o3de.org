@@ -6,14 +6,40 @@ toc: true
 weight: 200
 ---  
 
-Physically based rendering (PBR) is rendering in a photorealistic way by simulating the physics of real-world lighting models. The following sections describe the basic concepts underlying PBR and how they relate to PBR material types in Atom.
+Physically based rendering (PBR) is rendering in a photorealistic way by simulating the physics of real-world lighting models. The following sections describe how the concepts of PBR rendering and represented in Atom's core material types.
 
 {{< todo issue="https://github.com/o3de/o3de.org/issues/688" >}}
 {{< /todo >}}
 
+## Core PBR Material Types
+
+The following core material types are included in Atom: 
+
+- **StandardPBR**  
+    A full-featured PBR material type, but adopts certain feature limitations in order to improve performance. It is meant to provide as much functionality as possible with a limited number of render targets. 
+    
+    This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/StandardPBR.materialtype`.
+
+- **EnhancedPBR**  
+    An enhanced version of StandardPBR that includes additional features, but comes at a higher performance cost. It supports more advanced features that require additional render targets (g-buffers). 
+
+    This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/EnhancedPBR.materialtype`. 
+
+- **BasePBR**  
+    A simplified alternative to StandardPBR that is limited to only the most common PBR features such as base color, metallic, roughness, and normal. This is especially helpful for testing and debugging, by eliminating some features from StandardPBR that add considerable complexity.
+
+    This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/BasePBR.materialtype`. 
+    
+- **StandardMultilayerPBR**  
+    Can combine up to three layers of StandardPBR, blended together. Especially useful for breaking up repeated patterns on large surfaces.
+
+    This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/StandardMultilayerPBR.materialtype`. 
+    
+- More types are available or may be added beyond those listed above, especially for specialized use cases like skin and eyes. To find the full list of available material types check the "[Gems/Atom/Feature/Common/Assets/Materials/Types](https://github.com/o3de/o3de/tree/development/Gems/Atom/Feature/Common/Assets/Materials/Types)" folder.
+
 ## PBR Shading Model
 
-The core material types provided by Atom are based on PBR shading models. The PBR shading model is composed of properties that describe how a material interacts in the physical world. At the basic level, the PBR shading model requires the following properties: base color, metallic, roughness, and specular reflectivity. These properties are enough to define materials such as wood, metal, concrete, and other raw materials. However, materials can become much more complex with properties such as clear coat, subsurface scattering, and more. For example, varnished wood is made from a basic wood material type with an additional clear coat layer on top.  
+The PBR shading model is composed of properties that describe how a material interacts in the physical world. At the basic level, the PBR shading model requires the following properties: base color, metallic, roughness, and specular reflectivity. These properties are enough to define materials such as wood, metal, concrete, and other raw materials. However, materials can become much more complex with properties such as clear coat, subsurface scattering, and more. For example, varnished wood is made from a basic wood material type with an additional clear coat layer on top.  
 
 The following list of properties are used to define PBR materials in Atom. An overview of which properties are included in which material type is shown in the [Properties in PBR Material Types](#properties-in-pbr-material-types) table. 
 
@@ -32,7 +58,8 @@ The following list of properties are used to define PBR materials in Atom. An ov
 | Detail Layer | Additional base color and normal texture maps that mix with the main surface to provide small-scale details. |
 | Subsurface Scattering | A mechanism that simulates how light that penetrates translucent surfaces is scattered and absorbed before exiting the surface at a different location. |
 | Irradiance | Describes how a surface interacts with the global illumination (GI) system's diffuse lighting environment. It does not affect the appearance of the material itself. |
-| Displacement | Uses a displacement map to describes bumps or offsets in the surface. Various techniques such as parallax occlusion mapping use this information to give the appearance of depth to the surface. |
+| Displacement/Parallax | Uses a displacement map to describes bumps or offsets in the surface. Various techniques such as parallax occlusion mapping use this information to give the appearance of depth to the surface. |
+| Anisotropic Response | Controls direction-dependent lighting, making reflections appear elongated across tiny grooves in the surface. |
 
 ### Base Color
 
@@ -66,22 +93,23 @@ You can take multi-scattering into account in your materials by toggling `Multis
 
 ## Properties in Material Types
 
-The following table lists which properties are included in which PBR material types.
-| Property | StandardPBR | EnhancedPBR | StandardMultilayerPBR |
-| -- | -- | -- | -- |
-| Base Color  | X | X | X |  
-| Metallic  | X | X | X |  
-| Roughness  | X | X | X |  
-| Specular Reflectivity F0  | X | X | X |  
-| Emissive  | X | X | X |  
-| Occlusion | X | X | X |  
-| Opacity  | X | X |  |  
-| Normal  | X | X | X |  
-| UVs  | X | X | X |  
-| Clear Coat  | X | X | X |  
-| Subsurface Scattering  | X | X |  |  
-| Irradiance | X | X | X |  
-| Parallax | X | X |  |  
-| Anistropic Material Response |  | X |  |
-| Detail Layer | X | X |  |
-| Detail Layer UV | X | X |  |
+The following table lists which properties are included in which core PBR material types. 
+
+| Property                  | StandardPBR | EnhancedPBR | BasePBR | StandardMultilayerPBR |
+| --                        | --          | --          | --      | --                    |
+| Base Color                | X           | X           | X       | X                     |  
+| Metallic                  | X           | X           | X       | X                     |  
+| Roughness                 | X           | X           | X       | X                     |  
+| Specular Reflectivity F0  | X           | X           | X       | X                     |  
+| Emissive                  | X           | X           |         | X                     |  
+| Occlusion                 | X           | X           |         | X                     |  
+| Opacity                   | X           | X           |         |                       |  
+| Normal                    | X           | X           | X       | X                     |  
+| UVs                       | X           | X           | X       | X                     |  
+| Clear Coat                | X           | X           |         | X                     |  
+| Subsurface Scattering     |             | X           |         |                       |  
+| Irradiance                | X           | X           | X       | X                     |  
+| Displacement/Parallax     | X           | X           |         | X                     |  
+| Anistropic Response       |             | X           |         |                       |
+| Detail Layer              |             | X           |         |                       |
+| Detail Layer UV           |             | X           |         |                       |
