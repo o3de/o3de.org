@@ -87,7 +87,7 @@ You must enable the [ImGui Gem](/docs/user-guide/gems/reference/debug/imgui) to 
 
 ## Debug Options in the PhysX Configuration 
 
-You can also specify debug settings in the **PhysX Configuration** tool. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger/).
+You can also specify debug settings in the **PhysX Configuration** tool. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger/).  
 
 ## Enable additional checks and error reporting in PhysX SDK
 
