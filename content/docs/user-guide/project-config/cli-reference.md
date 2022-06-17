@@ -200,29 +200,56 @@ o3de.bat set-global-project -pp PROJECT_PATH -o <USER_DIRECTORY>\.o3de\Registry\
 
 ## `create-template`
 
-Creates a template out of the specified source path.
+Creates a template out of the specified source path and registers the template in the O3DE manifest. Users can then create custom source content from this template using the `create-from-template` command.
 
 ### Format
 
 ``` cmd
-create-template [-h] -sp SOURCE_PATH [-tp TEMPLATE_PATH]
+create-template [-h] [-v] -sp SOURCE_PATH [-tp TEMPLATE_PATH]
                 [-srp SOURCE_RESTRICTED_PATH | -srn SOURCE_RESTRICTED_NAME]
                 [-trp TEMPLATE_RESTRICTED_PATH | -trn TEMPLATE_RESTRICTED_NAME]
                 [-sn SOURCE_NAME]
                 [-srprp SOURCE_RESTRICTED_PLATFORM_RELATIVE_PATH]
                 [-trprp TEMPLATE_RESTRICTED_PLATFORM_RELATIVE_PATH]
-                [-kr] [-kl] [-r [REPLACE [REPLACE ...]]] [-f]
+                [-kr] [-kl] [-r [REPLACE [REPLACE ...]]]
+                [-f] [--no-register]
 ```
 
 ### Usage
 
-Creates a template from the source folder and saves the template in the specified path.
+Creates a template named `StandardGem` from the source folder and saves it in the `default_templates_folder` specified in the O3DE manifest. Also registers the template in the O3DE manifest.
 
 ```cmd
-o3de.bat create-template --source-path SOURCE_PATH --template-path TEMPLATE_PATH
+o3de.bat create-template -sp C:\MyGems\StandardGem
 ```
 
-{{< todo issue="https://github.com/o3de/o3de.org/issues/806">}} Add more usage examples. {{< /todo >}}
+Creates a template named `StandardGem` from the source folder and saves it in `C:\MyTemplates`, without registering the template.
+
+```cmd
+o3de.bat create-template -sp C:\MyGems\StandardGem -tp C:\MyTemplates\StandardGem --no-register
+```
+
+Creates a template named `StandardGem` from the source folder and saves it in the default templates folder. Additionally, it replaces any part of a file or path in the source folder containing the word `Standard` with the placeholder name `${Name}`, and any appearance of the word `Standard` in the source file content with `${SanitizedCppName}`.
+
+```cmd
+o3de.bat create-template -sp C:\MyGems\TestGem -tp StandardGem -sn Standard
+```
+
+Creates a template named `StandardComponent` from the source folder and saves it in the default templates folder. Additionally, it does the following:
+
+* Replaces any part of a file or path in the source folder containing the word `Standard` with the placeholder name `${Name}`.
+* Replaces any appearance of the word `Standard` in the source file content with `${SanitizedCppName}`.
+* Replaces any appearance of the word `MyGem` with `${GemName}`. This particular example is useful when creating a template where the Gem name serves as a C++ namespace.
+* Replaces the UUID `cd2c4950-7ee3-49b9-b356-51a3b6bb2373` with `${Random_Uuid}`. When the `create-from-template` command encounters `${Random_Uuid}` in a template, it replaces this placeholder with a randomly-generated UUID.
+* Keeps all licensing text in the source files that begins with `{BEGIN_LICENSE}` and ends with `{END_LICENSE}`.
+
+```cmd
+o3de.bat create-template -sp C:\MyComponent -tp StandardComponent -sn Standard -kl -r MyGem ${GemName} cd2c4950-7ee3-49b9-b356-51a3b6bb2373 ${Random_Uuid}
+```
+
+{{< note >}}
+When using the replace parameter in Windows PowerShell, you must use a single quote around any `$` replacement variables. For example: `-r MyGem '${GemName}'`.
+{{< /note >}}
 
 ### Optional parameters
   
@@ -230,13 +257,17 @@ o3de.bat create-template --source-path SOURCE_PATH --template-path TEMPLATE_PATH
 
   Shows the help message.
 
+- **`-v`**
+
+  If specified, provides additional logging verbosity.
+
 - **`-sp SOURCE_PATH, --source-path SOURCE_PATH`**
 
   The path to the source folder that you want to use as a template.
 
 - **`-tp TEMPLATE_PATH, --template-path TEMPLATE_PATH`**
 
-  The path to an existing template that you want to create a new template from. The path can be absolute or relative to the default template's path.
+  The path where you want to create the template. The path can be absolute or relative to the `default_templates_folder` specified in the O3DE manifest. If not supplied, the template path is set to the default template path concatenated with `SOURCE_NAME`. If `SOURCE_NAME` is not specified, the last component of `SOURCE_PATH` is used in its place.
 
 - **`-srp SOURCE_RESTRICTED_PATH, --source-restricted-path SOURCE_RESTRICTED_PATH`**
 
@@ -256,7 +287,9 @@ o3de.bat create-template --source-path SOURCE_PATH --template-path TEMPLATE_PATH
 
 - **`-sn SOURCE_NAME, --source-name SOURCE_NAME`**
 
-  Substitutes any file and path entries that match the source name--`${Name}` and `${SanitizedCppName}`--in the source-path directory. An example of path substitution: `--source-name Foo<source-path>/Code/Include/FooBus.h` -> `<source-path>/Code/Include/${Name}Bus.h`. An example of file content substitution: `class FooRequests` -> `class ${SanitizedCppName}Requests`.
+  Substitutes any file and path entries that match `SOURCE_NAME` with `${Name}`, and any file content that matches `SOURCE_NAME` with `${SanitizedCppName}`.
+  
+  An example of substitution: `--source-name Foo` replaces the source file `FooBus.h` -> `${Name}Bus.h`, and the source content `class FooRequests` -> `class ${SanitizedCppName}Requests`.
 
 - **`-srprp SOURCE_RESTRICTED_PLATFORM_RELATIVE_PATH, --source-restricted-platform-relative-path SOURCE_RESTRICTED_PLATFORM_RELATIVE_PATH`**
 
@@ -268,19 +301,27 @@ o3de.bat create-template --source-path SOURCE_PATH --template-path TEMPLATE_PATH
 
 - **`-kr, --keep-restricted-in-template`**
 
-  If true, creates the restricted platforms in the template folder. If false, creates the restricted files in the restricted folder located at TEMPLATE_RESTRICTED_PATH. By default, this parameter is false.
+  If included, creates the restricted platforms in the template folder. By default, creates the restricted files in the restricted folder located at TEMPLATE_RESTRICTED_PATH.
 
 - **`-kl, --keep-license-text`**
 
-  If true, keeps the license text (located in the `template.json` file) in the new template's `template.json` file. If false, the license text isn't included. By default, this parameter is false. The license text is all of the lines of text, starting at {BEGIN_LICENSE} and ending at {END_LICENSE}.
+  If included, keeps all of the lines of license text, starting at {BEGIN_LICENSE} and ending at {END_LICENSE}. By default, the license text isn't included.
 
 - **`-r [REPLACE [REPLACE ...]], --replace [REPLACE [REPLACE ...]]`**
 
-  Add A to B replacement pairs. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces `${User}` with `MyUsername`, and `${id}` with `1723905`. Note: \<TemplateName\> is the last component of the TEMPLATE_PATH. The following replacement pairs already exist: `${Name}` to \<TemplateName\>, `${NameLower}` to \<templatename\>, `${NameUpper}` to \<TEMPLATENAME\>.
+  Add A to B replacement pairs. For example: `-r MyUsername ${User} 1723905 ${id}`. This replaces `MyUsername` with `${User}`, and `1723905` with `${id}`.
+
+  {{< note >}}
+When using the replace parameter in Windows PowerShell, you must use a single quote around any `$` replacement variables. For example: `-r MyUsername '${User}'`.
+  {{< /note >}}
 
 - **`-f, --force`**
-         
-  Forces the new template directory to override the existing one, if one exists. 
+
+  Forces the new template directory to override the existing one, if one exists.
+
+- **`--no-register`**
+
+  Prevents registration of the template path in the O3DE manifest.
 
 
 <!-------------------------------------------------------------->
@@ -292,7 +333,7 @@ Creates an instance of a generic template based on the specified template.
 ### Format
 
 ```cmd
-create-from-template [-h] -dp DESTINATION_PATH
+create-from-template [-h] [-v] -dp DESTINATION_PATH
                                     (-tp TEMPLATE_PATH | -tn TEMPLATE_NAME)
                                     [-dn DESTINATION_NAME]
                                     [-drp DESTINATION_RESTRICTED_PATH | -drn DESTINATION_RESTRICTED_NAME]
@@ -300,15 +341,33 @@ create-from-template [-h] -dp DESTINATION_PATH
                                     [-drprp DESTINATION_RESTRICTED_PLATFORM_RELATIVE_PATH]
                                     [-trprp TEMPLATE_RESTRICTED_PLATFORM_RELATIVE_PATH]
                                     [-kr] [-kl] [-r [REPLACE [REPLACE ...]]]
-                                    [-f]
+                                    [-f] [--no-register]
 ```
 
 ### Usage
 
-Instantiates a template based on the specified template and saves it in the specified path.
+Instantiates an object based on the template that is located in the specified template path and saves it in the specified destination path.
 
 ```cmd
-o3de.bat create-from-template --destination-path DESTINATION_PATH --template-path TEMPLATE_PATH
+o3de.bat create-from-template -dp DESTINATION_PATH -tp TEMPLATE_PATH
+```
+
+Instantiates an object based on the template named `DefaultComponent` and saves it in the directory `NewComponent` in the current path. Additionally, it replaces all occurrences of `${GemName}` in the template with `MyGem`.
+
+```cmd
+o3de.bat create-from-template -dp NewComponent -dn MyTest -tn DefaultComponent -kr -r ${GemName} MyGem
+```
+
+{{< note >}}
+When using the replace parameter in Windows PowerShell, you must use a single quote around any `$` replacement variables. Example: `-r '${GemName}' MyGem`.
+{{< /note >}}
+
+To create the component in an existing directory, such as the `Code` directory of a Gem that's in progress, add the `-f` option to the `create-from-template` command to force the creation of the component files there.
+
+For example, to create a component called `MyTestComponent` in the `MyGem` namespace in the Gem's `Code` directory, do the following:
+
+```cmd
+scripts\o3de.bat create-from-template -dp C:\Gems\MyGem\Code -dn MyTest -tn DefaultComponent -kr -r ${GemName} MyGem -f
 ```
 
 ### Optional parameters
@@ -316,6 +375,10 @@ o3de.bat create-from-template --destination-path DESTINATION_PATH --template-pat
 - **`-h, --help`**
 
   Shows the help message.
+
+- **`-v`**
+
+  If specified, provides additional logging verbosity.
 
 - **`-dp DESTINATION_PATH, --destination-path DESTINATION_PATH`**
 
@@ -359,19 +422,27 @@ o3de.bat create-from-template --destination-path DESTINATION_PATH --template-pat
 
 - **`-kr, --keep-restricted-in-instance`**
 
-  If true, creates the restricted platforms in the new template folder. If false, creates the restricted files in the restricted folder located at TEMPLATE_RESTRICTED_PATH. By default, this parameter is false.
+  If specified, creates the restricted platforms in the new template folder. If not specified, creates the restricted files in the restricted folder located at TEMPLATE_RESTRICTED_PATH.
 
 - **`-kl, --keep-license-text`**
 
-  If true, keeps the license text (located in the template's `template.json` file) in the new template's `template.json` file. If false, the license text isn't included. By default, this parameter is false. The license text is all of the lines of text, starting at {BEGIN_LICENSE} and ending at {END_LICENSE}.
+  If specified, keeps all license text found in the template files. If not specified, the license text isn't included. License text includes all of the lines of text starting on a line containing {BEGIN_LICENSE} and ending on the line containing {END_LICENSE}.
 
 - **`-r [REPLACE [REPLACE ...]], --replace [REPLACE [REPLACE ...]]`**
 
-  Add A to B replacement pairs. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces `${User}` with `MyUsername`, and `${id}` with `1723905`. Note: \<DestinationName\> is the last component of the DESTINATION_PATH. The following replacement pairs already exist: `${Name}` to \<DestinationName\>, `${NameLower}` to \<destinationname\>, `${NameUpper}` to \<DESTINATIONNAME\>.
+  Add A to B replacement pairs. For example: `-r ${User} MyUsername ${id} 1723905`. This replaces `${User}` with `MyUsername`, and `${id}` with `1723905`. Note: \<DestinationName\> is the last component of the DESTINATION_PATH. The following replacement pairs already exist: `${Name}` to \<DestinationName\>, `${NameLower}` to \<destinationname\>, `${NameUpper}` to \<DESTINATIONNAME\>.
+
+  {{< note >}}
+When using the replace parameter in Windows PowerShell, you must use a single quote around any `$` replacement variables. For example: `-r '${User}' MyUsername`.
+  {{< /note >}}
 
 - **`-f, --force`**
 
-  Overwrites the instantiated template directory, even if it already exists.
+  Overwrites files in the destination directory if they already exist.
+
+- **`--no-register`**
+
+  Prevents registration of the project in the O3DE manifest.
 
 
 <!-------------------------------------------------------------->
@@ -1205,7 +1276,7 @@ o3de.bat register-show --repos
 
 - **`-v, --verbose`**
 
-  If verbose > 0, outputs the contents of the specified files.
+  If specified, outputs the contents of the listed files.
 
 - **`-pp PROJECT_PATH, --project-path PROJECT_PATH`**
 

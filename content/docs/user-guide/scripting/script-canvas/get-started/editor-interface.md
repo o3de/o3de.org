@@ -46,4 +46,4 @@ View and modify your saved bookmarks. You can use bookmarks to save locations on
 
 ### Comments
 
-You can create floating blocks of text on the Script Canvas Editor canvas. For more information, see [Commenting Nodes in Script Canvas](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/organizing/commenting-nodes).
+You can create floating blocks of text on the Script Canvas Editor canvas. For more information, see [Adding Comments in Script Canvas](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/organizing/commenting-nodes).

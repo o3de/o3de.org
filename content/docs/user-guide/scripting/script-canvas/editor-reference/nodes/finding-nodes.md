@@ -1,13 +1,13 @@
 ---
-linktitle: Navigating Graphs
-title: Navigating Graphs in Script Canvas
-description: Learn how to navigate Script Canvas graphs in Open 3D Engine to visit all nodes.
-weight: 600
+linktitle: Finding Nodes
+title: Finding Nodes in Script Canvas
+description: Learn how to find all nodes of a certain type in a Script Canvas graph in Open 3D Engine.
+weight: 200
 ---
 
-If you want to visit all nodes of the same type on a graph - for example, to check their configuration - use the following procedure.
+If you want to find all nodes of the same type on a graph - for example, to check their configuration - use the following procedure.
 
-**To cycle through instances of the same node**
+**To find all instances of a node**
 
 1. In the **Node Palette** search box, enter the name of the node.
 
