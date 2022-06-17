@@ -2,10 +2,10 @@
 linktitle: Interpreter
 title: Script Canvas Interpreter
 description: Learn how to use the Script Canvas Interpreter embedded in the Script Canvas Editor in the Open 3D Engine (O3DE).
-weight: 100
+weight: 600
 ---
 
-Script Canvas offers an interpreter interface that can be placed in almost any situation in the engine or the editor. The Script Canvas Editor itself makes use of it in the tools window.
+Script Canvas offers an interpreter interface that can be placed in almost any situation in the engine or the editor. You can open the Script Canvas Interpreter from the **Tools** menu in Script Canvas Editor.
 
 ![Script Canvas Interpreter Widget](/images/user-guide/scripting/script-canvas/script-canvas-interpreter-widget.png)
 
