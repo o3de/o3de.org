@@ -84,7 +84,7 @@ It is common practice to "factor-out" property group definitions into separage J
       - Enum
     * **enumValues**: A list of names defining the possible values for an "Enum" type property.
     * **enumIsUv**: Set to `true` for an "Enum" type property to use the UV names from [`uvNameMap`](#uvnamemap) as the possible enum values.
-    * **defaultValue**: The default value to use for this property. If no default is provided, then the default will be false, 0, or empty according to the data type.
+    * **defaultValue**: The default value to use for this property. The value must be specified using the appropriate data type according to its standard JSON serialization, see [JSON Serialization of O3DE Data Types](/docs/user-guide/programming/serialization/json-data-types). If no default is provided, then the default will be false, 0, or empty according to the data type.
     * **min**: The minimum value for this property, used to configure the range of sliders or similar UI widgets.
     * **max**: The maximum value for this property, used to configure the range of sliders or similar UI widgets.
     * **softMin**: Similar to `min`, but the user can manually entry a smaller value.
