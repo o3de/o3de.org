@@ -440,6 +440,31 @@ Example JSON:
 #### HandleSubsurfaceScatteringParameters
 This is a specialized functor for a standardized set of properties for controlling subsurface scattering and light transmission features. See Skin.materialtype for example usage.
 
+Example JSON:
+```json
+    {
+        "type": "HandleSubsurfaceScatteringParameters",
+        "args": {
+            "mode": "subsurfaceScattering.transmissionMode",
+            "scale": "subsurfaceScattering.transmissionScale",
+            "power": "subsurfaceScattering.transmissionPower",
+            "distortion": "subsurfaceScattering.transmissionDistortion",
+            "attenuation": "subsurfaceScattering.transmissionAttenuation",
+            "shrinkFactor": "subsurfaceScattering.shrinkFactor",
+            "transmissionNdLBias": "subsurfaceScattering.transmissionNdLBias",
+            "distanceAttenuation": "subsurfaceScattering.distanceAttenuation",
+            "tintColor": "subsurfaceScattering.transmissionTint",
+            "thickness": "subsurfaceScattering.thickness",
+            "enabled": "subsurfaceScattering.enableSubsurfaceScattering",
+            "scatterDistanceColor": "subsurfaceScattering.scatterColor",
+            "scatterDistanceIntensity": "subsurfaceScattering.scatterDistance",
+            "scatterDistanceShaderInput": "m_scatterDistance",
+            "parametersShaderInput": "m_transmissionParams",
+            "tintThickenssShaderInput": "m_transmissionTintThickness"
+        }
+    },
+```
+
 #### OverrideDrawList (deprecated)
 This functor was used to override a shader's draw list name before the Lua functor type was available. Use a Lua functor with the SetDrawListTagOverride() function instead.
 
