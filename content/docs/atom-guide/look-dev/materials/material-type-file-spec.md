@@ -16,7 +16,7 @@ Indicates the current version number of the material type. Any materials created
 Provides backward compatibility for .material files that reference an older version of this .materialtype. This section includes a list of update steps that can update material data from one version to the next. Whenever the author makes a layout-breaking change to the material type such as renaming a property, they can increment the `version` number (see above) and provide a new version update description here. Then any system that loads the old .material file can automatically upgrade it to be compatible with the latest material type.
 
 {{< note >}}
-To upgrade the .material source file to match the latest version of the material type, simply open it in the Material Editor and then save.
+To upgrade the *.material* source file to match the latest version of the material type, simply open it in the Material Editor and then save.
 {{< /note >}}
 
 * **toVersion**
@@ -55,7 +55,7 @@ A list of actions to perform when applying this update. Each action will first h
 ## **propertyLayout**
 This section defines the set of properties that will be available in the Material Editor, and what shader inputs or shader options they will connect to. Properties are organized into groups, and each group can contain other groups, forming a hierarchy. The Material Editor's property inspector will organize the properties into group panels accordingly.
 
-It is common practice to "factor-out" property group definitions into separage JSON files using the $import feature so the group can be reused in multiple .materialtype files.
+It is common practice to "factor-out" property group definitions into separage JSON files using the $import feature so the group can be reused in multiple *.materialtype* files.
 
 * **propertyGroups**: the top-level list of property groups. Each group contains the following:
   * **name**: An identifier for this group. The value must be formatted in C-style, and unique among sibling groups. 
@@ -82,15 +82,15 @@ It is common practice to "factor-out" property group definitions into separage J
       - Color
       - Image
       - Enum
-    * **enumValues**: A list of names defining the possible values for an "Enum" type property.
-    * **enumIsUv**: Set to `true` for an "Enum" type property to use the UV names from [`uvNameMap`](#uvnamemap) as the possible enum values.
+    * **enumValues**: A list of names defining the possible values for an `Enum` type property.
+    * **enumIsUv**: Set to `true` for an `Enum` type property to use the UV names from [`uvNameMap`](#uvnamemap) as the possible enum values.
     * **defaultValue**: The default value to use for this property. The value must be specified using the appropriate data type according to its standard JSON serialization, see [JSON Serialization of O3DE Data Types](/docs/user-guide/programming/serialization/json-data-types). If no default is provided, then the default will be false, 0, or empty according to the data type.
     * **min**: The minimum value for this property, used to configure the range of sliders or similar UI widgets.
     * **max**: The maximum value for this property, used to configure the range of sliders or similar UI widgets.
     * **softMin**: Similar to `min`, but the user can manually entry a smaller value.
     * **softMax**: Similar to `max`, but the user can manually entry a larger value.
     * **step**: Indicates the size of the increment to use for sliders or similar UI widgets.
-    * **vectorLabels**: Provide a list of labels to use for the elements of a "Vector" type property. By default the labels are "X", "Y", "Z", "W".
+    * **vectorLabels**: Provide a list of labels to use for the elements of a `Vector` type property. By default the labels are "X", "Y", "Z", "W".
     * **connection**: Defines connections for passing the property value to a shader. Each connection defines a connection `type`, a `name`, and optionally a `shaderIndex`. The connection is optional, if omitted the property can be connected to shaders by a material functor.
       * **type**: Which type of connection to make:
         - ShaderInput - Connect to a shader constant or shader image in the SRG_PerMaterial ShaderResourceGroup.
@@ -282,7 +282,7 @@ An older version of the material type file format organized the property layout 
 An older version of the material type file format organized the property layout with separate `groups` and `properties` sections. This imposed several limitations like restricting property grouping to only one level and making it difficult to factor out reuasable property groups. This has been replaced by `propertyGroups` (above) which can support any number of group levels with properties and groups defined in the same place. The engine will still load the old format but any new material type files should use the new format.
 
 ## **shaders**  
-An array of references to shader files (*.shader*) to be used to render materials of this type. By default, all shaders are enabled, but they may be disabled using [`functors`](#functors).
+An array of references to shader files (`*.shader`) to be used to render materials of this type. By default, all shaders are enabled, but they may be disabled using [`functors`](#functors).
 
 Each shader item includes the following values. 
 
@@ -317,7 +317,7 @@ An array of material functors. Each one reads material property values, performs
 Several core functor types are provided with the engine, listed here. 
 
 {{< note >}}
-Additional functor types can be added by other gems or game projects. Try searching the code base for "RegisterMaterialFunctor" to discover what others might be available.
+Additional functor types can be added by other gems or game projects. Try searching the source code for "RegisterMaterialFunctor" to discover what others might be available.
 {{< /note >}}
 
 #### Lua
@@ -349,14 +349,14 @@ Example JSON:
 
 #### UseTexture
 
-Sets a "use texture" shader option to false if a "use texture" property is false, or if an `Image` type property has no image bound.
+Sets a use-texture *shader option* to false if a use-texture *property* is false, or if an `Image` type property has no image bound.
 
 Arguments:
 * **textureProperty**: The name of an `Image` type property.
 * **useTextureProperty**: The name of a `bool` type property. This property will also be hidden if the texture property is null.
 * **dependentProperties**: (optional) A list of other properties that are irrelevant when no texture is being used. These will be hidden or disabled when the texture is null or unused.
 * **shaderTags**: (optional) If provided, the shader option will only be set on this list of shaders. See **tags** in the [Shaders](#shaders) section.
-* **shaderOption**: The name of the "use texture" shader option to set.
+* **shaderOption**: The name of the use-texture shader option to set.
 
 Example JSON:
 ```json
@@ -438,7 +438,7 @@ Example JSON:
 ```
 
 #### HandleSubsurfaceScatteringParameters
-This is a specialized functor for a standardized set of properties for controlling subsurface scattering and light transmission features. See Skin.materialtype for example usage.
+This is a specialized functor for a standardized set of properties for controlling subsurface scattering and light transmission features. See `Gems/Atom/Feature/Common/Assets/Materials/Types/Skin.materialtype` for example usage.
 
 Example JSON:
 ```json
@@ -466,12 +466,12 @@ Example JSON:
 ```
 
 #### OverrideDrawList (deprecated)
-This functor was used to override a shader's draw list name before the Lua functor type was available. Use a Lua functor with the SetDrawListTagOverride() function instead.
+This functor was used to override a shader's draw list name before the Lua functor type was available. Use a Lua functor with the `SetDrawListTagOverride` function instead.
 
 ### **uvNameMap**
 This maps default identifiers for mesh UV streams. When loading meshes, the runtime will try to match UV streams from the incoming geometry using these names. 
 
-For each entry, the key must match the semantic used for a float2 vertex input. The value should be a user-friendly name that is consistent with the intended purpose of the stream, and consistent with the names of similar streams in other material types. By default, all core material types in O3DE use the names "Tiled" (meaning tiling is expected so overlaping hulls is acceptable) and "Unwrapped" (meaning this is used for lightmaps and similar, so hulls should not overlap in the UV space).
+For each entry, the key must match the semantic used for a `float2` vertex input. The value should be a user-friendly name that is consistent with the intended purpose of the stream, and consistent with the names of similar streams in other material types. By default, all core material types in O3DE use the names "Tiled" (meaning tiling is expected so overlaping hulls is acceptable) and "Unwrapped" (meaning this is used for lightmaps and similar, so hulls should not overlap in the UV space).
 
 #### **Example**
 ```json

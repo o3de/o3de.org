@@ -6,7 +6,7 @@ toc: true
 weight: 200
 ---  
 
-Physically based rendering (PBR) is rendering in a photorealistic way by simulating the physics of real-world lighting models. The following sections describe how the concepts of PBR rendering and represented in Atom's core material types.
+*Physically based rendering (PBR)* is rendering in a photorealistic way by simulating the physics of real-world lighting models. The following sections describe how the concepts of PBR rendering and represented in Atom's core material types.
 
 {{< todo issue="https://github.com/o3de/o3de.org/issues/688" >}}
 {{< /todo >}}
@@ -16,7 +16,7 @@ Physically based rendering (PBR) is rendering in a photorealistic way by simulat
 The following core material types are included in Atom: 
 
 - **StandardPBR**  
-    A full-featured PBR material type, but adopts certain feature limitations in order to improve performance. It is meant to provide as much functionality as possible with a limited number of render targets. 
+    A full-featured PBR material type, but adopts certain feature limitations in order to improve performance. It provides as much functionality as possible with a limited number of render targets. 
     
     This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/StandardPBR.materialtype`.
 
@@ -26,7 +26,7 @@ The following core material types are included in Atom:
     This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/EnhancedPBR.materialtype`. 
 
 - **BasePBR**  
-    A simplified alternative to StandardPBR that is limited to only the most common PBR features such as base color, metallic, roughness, and normal. This is especially helpful for testing and debugging, by eliminating some features from StandardPBR that add considerable complexity.
+    A simplified alternative to StandardPBR that is limited to only the most common PBR features such as *base color*, *metallic*, *roughness*, and *normal*. This is especially helpful for testing and debugging, by eliminating some features from StandardPBR that add considerable complexity.
 
     This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/BasePBR.materialtype`. 
     
@@ -35,11 +35,11 @@ The following core material types are included in Atom:
 
     This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/StandardMultilayerPBR.materialtype`. 
     
-- More types are available or may be added beyond those listed above, especially for specialized use cases like skin and eyes. To find the full list of available material types check the "[Gems/Atom/Feature/Common/Assets/Materials/Types](https://github.com/o3de/o3de/tree/development/Gems/Atom/Feature/Common/Assets/Materials/Types)" folder.
+- More types are available or may be added beyond those listed above, especially for specialized use cases like skin and eyes. To find the full list of available material types check the `Gems/Atom/Feature/Common/Assets/Materials/Types` folder.
 
 ## PBR Shading Model
 
-The PBR shading model is composed of properties that describe how a material interacts in the physical world. At the basic level, the PBR shading model requires the following properties: base color, metallic, roughness, and specular reflectivity. These properties are enough to define materials such as wood, metal, concrete, and other raw materials. However, materials can become much more complex with properties such as clear coat, subsurface scattering, and more. For example, varnished wood is made from a basic wood material type with an additional clear coat layer on top.  
+The PBR shading model is composed of properties that describe how a material interacts in the physical world. At the basic level, the PBR shading model requires the following properties: *base color*, *metallic*, *roughness*, and *specular reflectivity*. These properties are enough to define materials such as wood, metal, concrete, and other raw materials. However, materials can become much more complex with properties such as *clear coat*, *subsurface scattering*, and more. For example, varnished wood is made from a basic wood material type with an additional clear coat layer on top.  
 
 The following list of properties are used to define PBR materials in Atom. An overview of which properties are included in which material type is shown in the [Properties in PBR Material Types](#properties-in-pbr-material-types) table. 
 

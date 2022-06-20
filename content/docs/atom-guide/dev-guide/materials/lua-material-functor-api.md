@@ -15,9 +15,9 @@ The material functor may execute in an implicit name context, where certain pref
 The material system expects the the following functions to be defined at the global scope in the lua script.
 
 * **GetMaterialPropertyDependencies()**: Returns a list of all material properties that may be read by the functor. Errors will be reported for properties that are accessed without reporting the dependency.
-* **GetShaderOptionDependencies()**: Returns a list of all shader options that may be set by the functor. Errors will be reported for options that are accessed without reporting the dependency. (Note that the `Material::SetSystemShaderOption` function in the C++ API may only be called on shader options that are _not_ declared as dependencies or otherwised used by the material type).
-* **Process(context)**: This is the main function that runs when the material is _used for rendering_. It runs when the material is first initialized or whenever relevant material property values are changed. The `context` object provides access to the API for accessing the _material properties and shader(s)_.
-* **ProcessEditor(context)**: This is the main function that runs when the material is _being edited in tools_. It runs when the material is first initialized or whenever relevant material property values are changed. The `context` object provides access to the API for accessing _material properties and their metadata_.
+* **GetShaderOptionDependencies()**: Returns a list of all shader options that may be set by the functor. Errors will be reported for options that are accessed without reporting the dependency. (Note that the `Material::SetSystemShaderOption` function in the C++ API may only be called on shader options that are *not* declared as dependencies or otherwised used by the material type).
+* **Process(context)**: This is the main function that runs when the material is *used for rendering*. It runs when the material is first initialized or whenever relevant material property values are changed. The `context` object provides access to the API for accessing the *material properties and shader(s)*.
+* **ProcessEditor(context)**: This is the main function that runs when the material is *being edited in tools*. It runs when the material is first initialized or whenever relevant material property values are changed. The `context` object provides access to the API for accessing *material properties and their metadata*.
 
 **Example**:
 ```lua
@@ -78,7 +78,7 @@ These functions are available in the `context` object that is passed to the `Pro
   * **GetMaterialPropertyValue_Vector4**(`string`): returns a `Vector4` type. See [Lua Math Library](/docs/user-guide/scripting/lua/math-library/).
   * **GetMaterialPropertyValue_Color**(`string`): returns a `Color` type. See [Lua Math Library](/docs/user-guide/scripting/lua/math-library/).
   * **GetMaterialPropertyValue_Image**(`string`): returns a generic pointer `userdata` type if an image is available, or `nil` otherwise.
-* **HasMaterialProperty**(`string`): returns a boolean whether a property with the given name exists. Note the material property does not have to be listed in [GetMaterialPropertyDependencies](#main-functions) because this functions is just checking availability, not _reading values_.
+* **HasMaterialProperty**(`string`): returns a boolean whether a property with the given name exists. Note the material property does not have to be listed in [GetMaterialPropertyDependencies](#main-functions) because this functions is just checking availability, not *reading values*.
 * Each **SetShaderConstant_** function takes a `string` shader input name and value to set. You must use the version that matches the data type of the shader input.
   * **SetShaderConstant_bool**(`string`, `boolean`)
   * **SetShaderConstant_int**(`string`, `number`)
@@ -114,7 +114,7 @@ These functions are available in the `context` object that is passed to the `Pro
   * **GetMaterialPropertyValue_Vector4**(`string`): returns a `Vector4` type. See [Lua Math Library](/docs/user-guide/scripting/lua/math-library/).
   * **GetMaterialPropertyValue_Color**(`string`): returns a `Color` type. See [Lua Math Library](/docs/user-guide/scripting/lua/math-library/).
   * **GetMaterialPropertyValue_Image**(`string`): returns a generic pointer `userdata` type if an image is available, or `nil` otherwise.
-* Each **SetMaterialProperty** function takes a `string` property name and sets some aspect of the property's editor metadata. See corresponding items in [Property Layout in Material Type File Specification](/docs/atom-guide/look-dev/materials/material-type-file-spec/#propertylayout). Note the material property does not have to be listed in [GetMaterialPropertyDependencies](#main-functions) because these functions are just setting metadata, not _reading values_.
+* Each **SetMaterialProperty** function takes a `string` property name and sets some aspect of the property's editor metadata. See corresponding items in [Property Layout in Material Type File Specification](/docs/atom-guide/look-dev/materials/material-type-file-spec/#propertylayout). Note the material property does not have to be listed in [GetMaterialPropertyDependencies](#main-functions) because these functions are just setting metadata, not *reading values*.
   * **SetMaterialPropertyVisibility**(`string`, [`MaterialPropertyVisibility`](#materialpropertyvisibility))
   * **SetMaterialPropertyDescription**(`string`, `string`)
   * **SetMaterialPropertyMinValue_int**(`string`, `number`)
