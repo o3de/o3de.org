@@ -14,7 +14,7 @@ Physics materials define how a PhysX collider reacts to collisions through prope
 + [Assign a physics material](#assign-a-physics-material)
   + [Assign physics materials per face](#assign-physics-materials-per-face)
 
-## Physics material properties 
+## Physics material properties
 
 ![Physics material interface.](/images/user-guide/physx/physx/ui-physx-material-A.png)
 
@@ -63,7 +63,7 @@ When materials collide, the **Friction combine** and **Restitution combine** def
 4. **Maximum**
 {{< /note >}}
 
-## Create a physics material 
+## Create a physics material
 
 Physics materials define the physical properties of PhysX colliders. To create physics materials, you first create a physics material library.
 
@@ -87,7 +87,7 @@ You can add additional physics materials to the library by repeating the precedi
 
 1. Choose **Save As** from the **File** menu in the Asset Editor to save the library and physics material.
 
-## Assign a physics material library 
+## Assign a physics material library
 
 Your project has the physics material library set in **PhysX Configuration**. To change the physics material library, choose **PhysX Configuration** from the **Tools** menu. In the **Global Configuration** tab, click the button to the right of **Physics Material Library** to change the library.
 
@@ -99,7 +99,7 @@ You can specify the paremeter of the **Default Physics Material** in **PhysX Con
 
 ![PhysX Configuration, default physics material.](/images/user-guide/physx/physx/ui-physx-material-E.png)
 
-## Assign a physics material 
+## Assign a physics material
 
 Physics materials can be assigned to entire PhysX colliders, or on a per-face basis if the PhysX mesh is a triangle mesh.
 
@@ -107,11 +107,11 @@ When the **Physics Asset** shape is selected in **PhysX Collider** component, an
 
 ![PhysX Collider, setting the physics materials.](/images/user-guide/physx/physx/ui-physx-material-F.png)
 
-### Assign physics materials per face 
+### Assign physics materials per face
 
 Static entities that have PhysX triangle mesh assets can have physics materials assigned per face. You define material placement by assigning materials to the faces of the triangle collision mesh in a content creation application. These materials are listed in both FBX Settings PhysX group and PhysX Collider component, where each material is assigned a physics material.
 
-For more information on creating PhysX mesh assets, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export/).
+For more information on creating PhysX mesh assets, see [FBX Settings PhysX tab](/docs/user-guide/assets/scene-settings/physx-tab/).
 
 In the example below, the PhysX mesh asset was authored with six materials in the content creation application: *Yellow*, *Red*, *Blue*, *Teal*, *Green* and *Orange*. In FBX Settings, under PhysX tab, a physics material can be assigned to each material.
 

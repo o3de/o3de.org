@@ -10,13 +10,13 @@ Use the **Tag** component to apply one or more labels, or *tags*, to an entity. 
 
 [O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
 
-## Tag properties 
+## Tag properties
 
 ![Tag component properties](/images/user-guide/components/reference/gameplay/tag-component.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Tags** | An array of tags that are added to the entity. | Array: Tag | None | 
+| **Tags** | An array of tags that are added to the entity. | Array: Tag | None |
 
 ## TagHelper
 
@@ -52,4 +52,4 @@ Use the **Tag** component to apply one or more labels, or *tags*, to an entity. 
 | `OnEntityTagAdded` | Notifies listeners when a specific tag is added to any entity. | Tag: Crc32 | Tagged Entity: EntityId | Yes |
 | `OnEntityTagRemoved` | Notifies listeners when a specific tag is removed from any entity. | Tag: Crc32 | Untagged Entity: EntityId | Yes |
 
-For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
+For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).

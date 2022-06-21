@@ -33,4 +33,4 @@ Use the **Look-At** component to force an entity to face another entity or posit
 |-|-|-|-|-|
 | `OnTargetChanged` | Notifies listeners when the **Target** entity of the Look-At component changes. | None | Target Entity: EntityId | Yes |
 
-For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
+For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).

@@ -19,8 +19,6 @@ The **Play speed** property is always set to `0.0`. This is because the Track Vi
 When you add the **Simple Motion** component to a track view sequence, the **Preview in Editor** property is automatically enabled.
 {{< /note >}}
 
-The following procedure uses [Starter Game](/docs/userguide/samples/levels/starter-game/).
-
 **To add the Simple Motion component in the Track View editor**
 
 1. In O3DE Editor, right-click in the viewport and choose **Create entity**.
@@ -29,7 +27,7 @@ The following procedure uses [Starter Game](/docs/userguide/samples/levels/start
 
 1. In the **Entity Inspector**, click **Add Component**, and then choose the **Simple Motion** component.
 
-1. Add the **[Actor](/docs/user-guide/components/animation/actor/)** component.
+1. Add the **[Actor](/docs/user-guide/components/reference/animation/actor/)** component.
 
 1. In the **Actor** component, for **Actor asset**, specify an actor file. For example, you can specify the `Jack.fbx` file.
 **Example**
@@ -57,7 +55,7 @@ The following procedure uses [Starter Game](/docs/userguide/samples/levels/start
    1. For **Motion**, click the folder icon and specify the motion file, such as `jack_idle_to_walk.motion`.
 
    1. Specify the parameters that you want, such as the **Start Time** and **End Time**.
-   
+
         {{< note >}}
 You can set the **Loop** parameter so that motion continues to play as long as the track view sequence is set.
 {{< /note >}}
@@ -77,7 +75,7 @@ You can set the **Loop** parameter so that motion continues to play as long as t
 When you update properties in the Track View, the original values for the entity properties are overwritten and are not restored. For example, if you set the **Start time** to `3.0` in the Track View, this updates the **Simple Motion** component properties in the **Entity Inspector**. If you want to reuse an entity with a **Simple Motion** component after a track view sequence is completed, update the **Play speed** parameter; the **Play speed** parameter always resets to zero in the Track View. You can also avoid this issue by not reusing entities in this way.
 {{< /note >}}
 
-## Blending Motions in the Track View Editor 
+## Blending Motions in the Track View Editor
 
 The **Simple Motion** component supports two motions at a time for blending: the currently playing motion and the previously played motion. For example, you can blend two motions so that your actor smoothly transitions between a walk motion to a run motion.
 

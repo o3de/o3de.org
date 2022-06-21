@@ -30,7 +30,7 @@ For the **Shape** property, if you select **PhysicsAsset**, you must select a **
     - [World Space](#world-space)
 - [Creating a Force Region](#creating-a-force-region)
 
-## PhysX Force Region Component Properties 
+## PhysX Force Region Component Properties
 
 ![Force Region component properties.](/images/user-guide/component/physx/ui-physx-force-region-component-properties.png)
 
@@ -41,7 +41,7 @@ For the **Shape** property, if you select **PhysicsAsset**, you must select a **
 | Debug Forces | A debug arrow draws in gameplay mode. The debug arrow indicates the direction of the net force for each entity inside the force region. |
 | Forces |  Specifies the force types that act in the force region. You can add multiple force types for the same component.  |
 
-### Force Types 
+### Force Types
 
 You can add multiple force types to the component. When an entity enters the force region, the entity moves according to the net value of the forces that you specify.
 
@@ -56,7 +56,7 @@ You can add multiple force types to the component. When an entity enters the for
     - [World Space](#world-space)
 - [Creating a Force Region](#creating-a-force-region)
 
-#### Linear Damping 
+#### Linear Damping
 
 Applies a force in the opposite direction to an entity's velocity. For example, you can create a force that simulates a swamp or mud.
 
@@ -65,7 +65,7 @@ Applies a force in the opposite direction to an entity's velocity. For example, 
 | --- | --- |
 | Damping |  The amount of damping to apply. You can't specify negative values. Specify higher values to apply more damping. Specify `0` for no damping.  |
 
-#### Local Space 
+#### Local Space
 
 Applies a force in local space, relative to the force region's orientation. For example, you can create a force that simulates a hair dryer or a vacuum cleaner.
 
@@ -75,7 +75,7 @@ Applies a force in local space, relative to the force region's orientation. For 
 | Direction |  The direction of the force in the local space of the force region.   You can specify a value from `-1000000` to `1000000`, but O3DE Editor normalizes the value to a range of -`1` and `1`.   |
 |  **Magnitude**  |  The amount of force to apply.  Specify a negative value to apply the force in the opposite direction.  |
 
-#### Point 
+#### Point
 
 Applies a force relative to the center of force region. The magnitude determines if the force is inward or outward. For example, you can create a force that simulates an explosion or a black hole.
 
@@ -84,7 +84,7 @@ Applies a force relative to the center of force region. The magnitude determines
 | --- | --- |
 | Magnitude |  The amount of force to apply. Specify a positive value for an outward force and a negative value for an inward force.  |
 
-#### Simple Drag 
+#### Simple Drag
 
 Applies a force that simulates air resistance. **Simple Drag** always applies force in the opposite direction of colliding entities. Larger and faster entities experience more drag. Entities are approximated as spheres.
 
@@ -93,7 +93,7 @@ Applies a force that simulates air resistance. **Simple Drag** always applies fo
 | --- | --- |
 |  **Region Density** | The density of the volume. Specify higher values to increase the drag force.  You can specify only positive values.   |
 
-#### Spline Follow 
+#### Spline Follow
 
 Applies a force to make entities follow a spline. The force uses a proportional-derivative (PD) controller that simulates a spring moving along a spline. For example, you can create a force that simulates a water slide.
 
@@ -109,7 +109,7 @@ The end of the spline must be outside the force region so that entities can exit
 |  **Target Speed** |  The speed that the entity attempts to reach as it travels through the nodes of the spline. Specify a negative value to apply the force in the opposite direction.  |
 |  **Lookahead**  |  The distance, in meters, that entities look ahead in their path to reach a node on the spline.  The **Lookahead** value determines how far ahead entities look for the next node to steer towards. At each physics simulation frame, the entity in the spline changes its direction to realign itself to the identified node. If spline nodes are close together, you can specify a smaller **Lookahead** value so that entities can detect the next node. If nodes are far apart, you can specify a higher **Lookahead** value so that entities can detect the next node.   |
 
-#### World Space 
+#### World Space
 
 Applies a force in world space. World space force doesn't take into account an entity's orientation. For example, you can create a force that simulates gravity.
 
@@ -131,7 +131,7 @@ For **Simple Drag**, you can't define the direction of force. **Simple Drag** al
 To determine how much force to apply, **Linear Damping** takes into account the colliding entity's velocity and mass but not its shape. In contrast, **Simple Drag** takes into account the colliding entity's velocity, cross-section area, and the **Region Density** of the force region.
 {{< /note >}}
 
-## Creating a Force Region 
+## Creating a Force Region
 
 You can create a force region so that force applies to another entity that enters the region.
 
@@ -161,7 +161,7 @@ You can create a force region so that force applies to another entity that enter
 
       Blue arrows appear on the entity that indicate the direction of the force.
 
-![Direction of the PhysX Force Region.](/images/user-guide/component/physx/force-region-component-local-force.png)
+      ![Direction of the PhysX Force Region.](/images/user-guide/component/physx/force-region-component-local-force.png)
 
 1. To collide an entity with the force region, create a dynamic entity named *Sphere* and attach the **PhysX Collider** and **PhysX Rigid Body Physics** components. These components enable the entity to interact with other PhysX entities.
 
@@ -169,7 +169,7 @@ You can create a force region so that force applies to another entity that enter
 
 1. Select and drag the **Sphere** entity so that it's above the force region.
 
-![An entity entering the force region.](/images/user-guide/component/physx/force-region-component-local-force-2.png)
+    ![An entity entering the force region.](/images/user-guide/component/physx/force-region-component-local-force-2.png)
 
 1. After you create your dynamic entity, press **Ctrl**+**G** to enter gameplay mode.
 **Example**
