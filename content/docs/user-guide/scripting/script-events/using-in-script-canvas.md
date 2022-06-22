@@ -10,7 +10,7 @@ Script Canvas scans for and detects script event assets, so after you define a s
 
 Script event assets appear by default in the **Script Events** category in the **Script Canvas Editor** **Node Palette**.
 
-![The Script Events category in the Script Canvas Node Palette.](/images/user-guide/scripting/script-events/using-in-script-canvas-1.png)
+![The Script Events category in the Script Canvas Node Palette.](/images/user-guide/scripting/script-events/using-in-script-canvas-1.jpeg)
 
 {{< note >}}
 To change the name of the category, open the script event's asset definition in the Asset Editor and edit the `Category` property.
@@ -26,7 +26,7 @@ You can send an event by adding a **Send** *method\_name* node to a Script Canva
 
 1. In the context menu, choose **Send** *method\_name*.
 
-    ![Choose Send method_name in the context menu.](/images/user-guide/scripting/script-events/using-in-script-canvas-2.png)
+    ![Choose Send method_name in the context menu.](/images/user-guide/scripting/script-events/using-in-script-canvas-2.jpeg)
 
     A method send node is added to the graph.
 
@@ -44,7 +44,7 @@ You can handle an event by adding a **Receive** *method\_name* node to a Script 
 
 1. In the context menu, choose **Receive** *method\_name*.
 
-    ![Choose Receive method_name in the context menu.](/images/user-guide/scripting/script-events/using-in-script-canvas-4.png)
+    ![Choose Receive method_name in the context menu.](/images/user-guide/scripting/script-events/using-in-script-canvas-4.jpeg)
 
     An event handler method node is added to the graph.
 
