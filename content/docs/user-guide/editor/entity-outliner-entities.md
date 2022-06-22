@@ -4,7 +4,7 @@ title: Working with Entities
 toc: true
 ---
 
-## Reordering Entities 
+## Reordering Entities
 
 When you create entities or instantiate prefabs, they appear at the bottom of the list in the **Entity Outliner**.
 
@@ -22,7 +22,7 @@ When you create entities or instantiate prefabs, they appear at the bottom of th
 
    ![Drag and drop to parent an entity.](/images/user-guide/component/entity_system/component-entity-outliner-parenting-drag-drop.png)
 
-## Hiding and Showing Entities 
+## Hiding and Showing Entities
 
 You can hide entities so that they don't appear in the viewport, so that the viewport shows only the entities that you want. If you hide a parent entity, all children entities are also hidden. You can also hide child entities within a parent entity.
 
@@ -46,7 +46,7 @@ You can lock entities so that they can't be selected in the viewport, so that yo
 
 1. To unlock the entity, click the lock icon again.
 
-## Search and Filter for Entities 
+## Search and Filter for Entities
 
 For levels that have many entities, you can search and filter for the entities that you want. Enter text in the search filter box to find specific entities.
 
