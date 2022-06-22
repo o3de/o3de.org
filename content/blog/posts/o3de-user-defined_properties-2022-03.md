@@ -18,18 +18,18 @@ The import logic stores string keys mapped to a variety of value types. In the d
 By default, the UDP metadata performs no scene building actions, rather the UDP metadata is stored in the scene graph node when it is imported into O3DE. In response, scene building logic can be updated to respond to the keyed values to update the scene manifest rules. The scene manifest rules are used to create LOD models, flag collision meshes, and assign materials. The scene building logic can be written in either C++ or Python in order to update the scene manifest.
 
 {{< note >}}
-The "o3de." prefix will be reserved for O3DE engine processing logic.
+The "o3de_" prefix will be reserved for O3DE engine processing logic.
 {{< /note >}}
 
 ## Assigning Materials in the DCC Tool
 
-The ```o3de.default.material``` scene property was added to the Prefab gem in order to assign a material asset while assembling a default procedural prefab. The Prefab gem constructs a default prefab for a scene graph, it looks for the UDP ```o3de.default.material``` in a mesh data node to define an O3DE render material for that mesh group inside the prefab. This allows artists to assign O3DE render materials back in the DCC tool. Each time the source scene file is exported, this reference is maintained through the scene pipeline.
+The ```o3de_default_material``` scene property was added to the Prefab gem in order to assign a material asset while assembling a default procedural prefab. The Prefab gem constructs a default prefab for a scene graph, it looks for the UDP ```o3de_default_material``` in a mesh data node to define an O3DE render material for that mesh group inside the prefab. This allows artists to assign O3DE render materials back in the DCC tool. Each time the source scene file is exported, this reference is maintained through the scene pipeline.
 
 ![Blender with UDP metadata for material](/images/blog/udp-intro/blender_def_mat.png)
 
 ## What’s Next?
 
-There are many more features that can be developed with the UDP metadata feature. The engine can remove the soft node naming convention for both LODs (via ```_lod<n>```) and collision mesh assignment (via ```_phys```); instead they could be replaced with ```o3de.default.lod``` and ```o3de.default.physics.collision```, respectively.
+There are many more features that can be developed with the UDP metadata feature. The engine can remove the soft node naming convention for both LODs (via ```_lod<n>```) and collision mesh assignment (via ```_phys```); instead they could be replaced with ```o3de_default_lod``` and ```o3de_default_physics_collision```, respectively.
 
 Game teams can start adding their own unique project user defined property metadata keys to assign game statistics to meshes, occlusion meshes, and attachment points. The game team would update a scene builder’s logic to access and process with those new metadata keys and values.
 
