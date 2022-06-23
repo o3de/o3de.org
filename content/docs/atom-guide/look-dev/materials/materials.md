@@ -50,7 +50,7 @@ A **material type** is a data item that includes everything that's needed to des
 - Scripts that describe how to consume the material properties
 - Metadata for the Material Editor to use when displaying material properties
 
-Material type files (`*.materialtype`) are in JSON format and are authored directly. This will link together several other files as well, to form a complete material type definition. These additional files include *.shader*, *.azsl*, and *.lua* files.
+Material type files (`*.materialtype`) are in JSON format and are authored directly. This file links together several other files to form a complete material type definition, such as `*.shader`, `*.azsl`, and `*.lua` files.
 
 {{< note >}}
 A node graph based tool for authoring material types is in development, but until that's available material types are authored directly.
