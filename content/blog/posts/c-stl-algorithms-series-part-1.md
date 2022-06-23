@@ -8,7 +8,6 @@ full_img: ""
 ---
 ## C++ STL Algorithms Series - Part 1
 
-## Topic
 
 An introduction to why you might want to start using the `<algorithm>` and `<numeric>` header more in your code.
 
