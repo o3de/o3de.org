@@ -59,7 +59,7 @@ A node graph based tool for authoring material types is in development, but unti
 For more information, see [Material Type Authoring Guide](/docs/atom-guide/dev-guide/materials/material-type-authoring-guide/).  
 
 ## Atom PBR Material Types
-*Physically based rendering (PBR)* is a rendering technique that simulates realistic interaction between materials and light. Atom provides several core material types based on industry standard workflows using metallic and roughness properties. Atom's material system is also capable of rendering non-photo-realistic techniques and special effects through alternate material types; users can author their own material types to suit their needs.
+*Physically based rendering (PBR)* is a rendering technique that simulates realistic interaction between materials and light. Atom provides several core material types based on industry standard workflows using metallic and roughness properties. Atom's material system is also capable of rendering non-photo-realistic techniques and special effects through alternate material types. Users can author their own material types to suit their needs.
 
 For more information on the available PBR material types, see [Physically-based Rendering (PBR)](/docs/atom-guide/look-dev/materials/pbr/)<!-- and [Working with StandardPBR materials](./material-build-pipeline)DRAFT TOPIC-->. 
 
