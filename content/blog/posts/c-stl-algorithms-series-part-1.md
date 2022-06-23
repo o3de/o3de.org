@@ -52,7 +52,6 @@ That being said the benefits largely outweigh the costs and with C++20 and the a
 
 ## Further Reading
 
-
 If you watch one talk about C++ in your lifetime it should probably be this one:
 
 > [C++ Seasoning](https://youtu.be/W2tWOdzgXHA) by Sean Parent
@@ -62,7 +61,5 @@ In upcoming posts we’ll have more recommendations that go into much greater de
 ## To be continued...
 
 Next time we’ll explore a few more concrete examples to show where algorithms can really come into their own and include additional references for more information.
-
-Author: Tom Hulton-Harrop
 
 _Disclaimer: The views expressed here are those of the individual author and do not represent those of Game Engine and Developer Services or Amazon._
