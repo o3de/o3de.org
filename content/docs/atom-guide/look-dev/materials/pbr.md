@@ -16,7 +16,7 @@ weight: 200
 The following core material types are included in Atom: 
 
 - **StandardPBR**  
-    A full-featured PBR material type, but adopts certain feature limitations in order to improve performance. It provides as much functionality as possible with a limited number of render targets. 
+    A full-featured PBR material type that provides as much functionality as possible with a limited number of render targets. 
     
     This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/StandardPBR.materialtype`.
 
@@ -26,16 +26,16 @@ The following core material types are included in Atom:
     This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/EnhancedPBR.materialtype`. 
 
 - **BasePBR**  
-    A simplified alternative to StandardPBR that is limited to only the most common PBR features such as *base color*, *metallic*, *roughness*, and *normal*. This is especially helpful for testing and debugging, by eliminating some features from StandardPBR that add considerable complexity.
+    A simplified alternative to StandardPBR that is limited to only the most common PBR features such as *base color*, *metallic*, *roughness*, and *normal*. This is especially helpful for testing and debugging, because it eliminates some features from StandardPBR that add considerable complexity.
 
     This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/BasePBR.materialtype`. 
     
 - **StandardMultilayerPBR**  
-    Can combine up to three layers of StandardPBR, blended together. Especially useful for breaking up repeated patterns on large surfaces.
+    Combines up to three layers of StandardPBR, blended together. This is especially useful for breaking up repeated patterns on large surfaces.
 
     This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/StandardMultilayerPBR.materialtype`. 
     
-- More types are available or may be added beyond those listed above, especially for specialized use cases like skin and eyes. To find the full list of available material types check the `Gems/Atom/Feature/Common/Assets/Materials/Types` folder.
+More types are available or may be added beyond those listed above, especially for specialized use cases like skin and eyes. To find the full list of available material types check the `Gems/Atom/Feature/Common/Assets/Materials/Types` folder.
 
 ## PBR Shading Model
 
