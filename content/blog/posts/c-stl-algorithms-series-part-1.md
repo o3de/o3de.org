@@ -6,7 +6,7 @@ author: Tom Hulton-Harrop
 blog_img: ""
 full_img: ""
 ---
-# Item 1: C++ STL Algorithms Series - Part 1
+## C++ STL Algorithms Series - Part 1
 
 ## Topic
 
