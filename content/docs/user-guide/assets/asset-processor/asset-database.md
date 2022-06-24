@@ -114,7 +114,7 @@ bool AssetDatabaseConnection::GetSourcesBySourceNameScanFolderId(QString exactSo
 }
 ```
 
-### Updating the Database Structure {#UpdateDatabase}
+### Updating the database structure {#UpdateDatabase}
 {{< important >}}
 Changes to the Asset Database structure should only be done with careful configuration.
 
