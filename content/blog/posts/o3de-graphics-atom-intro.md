@@ -1,6 +1,6 @@
 ---
 title: Exploring the world of graphics via Atom, O3DE’s renderer
-date: 2022-07-06
+date: 2022-07-13
 slug: graphics-atom-intro
 author: Judy Ng
 blog_img: ""
