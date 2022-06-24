@@ -6,13 +6,7 @@ toc: true
 
 Lua material functors allow custom logic for processing material properties. They can read property values, set shader inputs and shader options, configure render states, adjust material property visibility in the editor, and more.
 
-For general information on the Lua programming language, see [Learning Lua](docs/user-guide/scripting/lua/#learning-lua).
-
-{{< note >}}
-*Lua material functors* are distinct from *[Lua gameplay scripts](docs/user-guide/scripting/lua/)*. While they both use the Lua language, the APIs and programming environment are mostly separate. Features like EBuses, the Properties Table, and Entity integration are exclusive to gameplay scripts, and are not available to Lua material functors. The [Lua Math Library](/docs/user-guide/scripting/lua/math-library/) is the only part of the API that is common to both systems.
-{{< /note >}}
-
-## Name Context
+## Name context
 
 The material functor may execute in an implicit name context, where certain prefixes are attached to the names that appear in the script. This allows the same lua script to be used in different contexts, for example in one material type it might exist in a group with the name "metallic" and in another the group might be called "metalness". In both cases, the groups have properties "texture" and "factor". The functor will reference the properties as simply "texture" or "factor" and the system will automatically prepend the appropriate name context internally. Material properties, shader inputs (constants or images), and shader options each potentially have a separate name context. Search "prefix" in the [Material Type File Specification](/docs/atom-guide/look-dev/materials/material-type-file-spec/) for details about how the name context may be specified.
 
