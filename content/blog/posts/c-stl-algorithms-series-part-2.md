@@ -1,6 +1,6 @@
 ---
 title: "C++ STL Algorithms Series - Part 2"
-date: 2022-07-27
+date: 2022-08-03
 slug: c-stl-algorithms-series-part-2
 author: Tom Hulton-Harrop
 blog_img: ""
@@ -66,4 +66,4 @@ Next time we’ll look at another algorithm staple - `transform`.
 
 Author: Tom Hulton-Harrop
 
-_Disclaimer: The views expressed here are those of the individual author and do not represent those of Game Engine and Developer Services or Amazon._
+_Disclaimer: The views expressed here are those of the individual author and do not represent those of the Open 3D Foundation, Open 3D Engine or individual's respective company._
