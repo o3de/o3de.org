@@ -1,5 +1,5 @@
 ---
-linktitle: Overview
+linktitle: System Overview
 title: "Material System Overview"
 description: "Materials contain data that control how model surfaces appear in a 3D environment."
 toc: false
@@ -63,12 +63,13 @@ A node graph based tool for authoring material types is in development. Until th
 
 For more information on the available PBR material types, see [Physically-based Rendering (PBR)](/docs/atom-guide/look-dev/materials/pbr/)<!-- and [Working with StandardPBR materials](./material-build-pipeline)DRAFT TOPIC-->. 
 
-## Material Assets and Material Type Assets
-Material and material type files produce **Material Assets** and **Material Type Assets** in the cache, respectively. The runtime loads these asset files and uses them to render models. 
+## Material Asset Processing
 
-A material type file (`*.materialtype`) produces a Material Type Asset (`*.azmaterialtype`) in the cache. It contains property layout information, a list of shaders to use, and possibly functors for special processing.
+The Asset Processor loads material and material type source files and saves corresponding product files in the cache. The runtime loads these files and uses them to render models. See [Asset Processing](docs/user-guide/assets/pipeline/asset-processing/) for background information on this topic.
 
-A material file (`*.material`) produces a Material Asset (`*.azmaterial`) in the cache. Every Material Asset references a single Material Type Asset. It contains the inherited tree of material property values, compressed it into a single list. Material Assets can be referenced by Model Assets and/or assigned to a model using a Material Component in the **Open 3D Engine (O3DE)**. 
+A material type source file (`*.materialtype`) produces a Material Type Asset (`*.azmaterialtype`) in the cache. It contains property layout information, a list of shaders to use, and possibly functors for special processing.
+
+A material source file (`*.material`) produces a Material Asset (`*.azmaterial`) in the cache. Every Material Asset references a single Material Type Asset. It contains the inherited tree of material property values, compressed it into a single list. Material Assets can be referenced by Model Assets and/or assigned to a model using a Material Component in the **Open 3D Engine (O3DE)**. 
 
 Other source files can produce Material Assets as well. For example, *.fbx* files which are commonly used to store models created using 3D modeling software may also contain material data. O3DE's Scene Builder will process these files to produce both Model Assets (`.azmodel`) and Material Assets (`.azmaterial`). Note that these Material Assets do not have a corresponding .material file in the source folder, but can still be used by the Mesh Component and/or Material Components for rendering.
 
