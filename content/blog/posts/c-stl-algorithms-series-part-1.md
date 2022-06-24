@@ -1,6 +1,6 @@
 ---
 title: "C++ STL Algorithms Series - Part 1"
-date: 2022-07-13
+date: 2022-07-20
 slug: c-stl-algorithms-series-part-1
 author: Tom Hulton-Harrop
 blog_img: ""
@@ -62,4 +62,4 @@ In upcoming posts we’ll have more recommendations that go into much greater de
 
 Next time we’ll explore a few more concrete examples to show where algorithms can really come into their own and include additional references for more information.
 
-_Disclaimer: The views expressed here are those of the individual author and do not represent those of Game Engine and Developer Services or Amazon._
+_Disclaimer: The views expressed here are those of the individual author and do not represent those of the Open 3D Foundation, Open 3D Engine or individual's respective company._
