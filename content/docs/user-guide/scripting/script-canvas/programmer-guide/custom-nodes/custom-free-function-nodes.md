@@ -318,3 +318,105 @@ Verbose usage
 {{< note >}}
 For further node name, tooltip and category customization, please refer to [Text Replacement](/docs/user-guide/scripting/script-canvas/editor-reference/text-replacement/)
 {{< /note >}}
+
+## Migration Instructions for Generic Function Node
+This topic guides you how to migrate from Generic Function Node step by step. 
+
+### Step 1: Locate Generic Function Node usage
+In your Gem, you should be able to locate Generic Function Node code by searching following three macros:
+```cpp
+SCRIPT_CANVAS_GENERIC_FUNCTION_NODE(NODE_NAME, CATEGORY, UUID, DESCRIPTION, ...)
+SCRIPT_CANVAS_GENERIC_FUNCTION_NODE_WITH_DEFAULTS(NODE_NAME, DEFAULT_FUNC, CATEGORY, UUID, DESCRIPTION, ...)
+SCRIPT_CANVAS_GENERIC_FUNCTION_MULTI_RESULTS_NODE(NODE_NAME, CATEGORY, UUID, DESCRIPTION, ...)
+```
+
+Generic Function Node is deprecated and will not be supported in short future, for backward compatibility, we still support them so that existing Script Canvas Graph was created with Generic Function Node can still work.
+But we recommend you to prepare the migration as early as possible, as existing Graph will break once we remove Generic Function Node.
+
+{{< note >}}
+The migrate process assumes the node signature and behavior stay the same. If replacement node signature and behavior are different, you should upgrade Graph manually.
+{{< /note >}}
+
+### Step 2: Create replacement Custom Free Function Node
+For detailed instructions how to create Custom Free Function Node, you can refer to above topics.
+
+As an example, here is part of migration we have done for ```Math/Matrix3x3``` nodes:
+1. For ```SCRIPT_CANVAS_GENERIC_FUNCTION_NODE(NODE_NAME, CATEGORY, UUID, DESCRIPTION, ...)``` use case
+   ```cpp
+   AZ_INLINE Data::Vector3Type GetRow(const Data::Matrix3x3Type& source, Data::NumberType row) { ... }
+   SCRIPT_CANVAS_GENERIC_FUNCTION_NODE(GetRow, k_categoryName, "{C4E00343-3642-4B09-8CFA-2D2F1CA6D595}", "returns vector from matrix corresponding to the Row index", "Source", "Row");
+   ```
+   Replacement function and ScriptCanvasFunction.xml content
+   ```cpp
+   Data::Vector3Type GetRow(const Data::Matrix3x3Type& source, Data::NumberType row);
+   ```
+   ```xml
+   <Function Name="GetRow">
+       <Parameter Name="Source"/>
+       <Parameter Name="Row"/>
+   </Function>
+   ```
+
+1. For ```SCRIPT_CANVAS_GENERIC_FUNCTION_NODE_WITH_DEFAULTS(NODE_NAME, DEFAULT_FUNC, CATEGORY, UUID, DESCRIPTION, ...)``` use case
+   ```cpp
+   AZ_INLINE Data::BooleanType IsClose(const Data::Matrix3x3Type& lhs, const Data::Matrix3x3Type& rhs, const Data::NumberType tolerance) { ... }
+   SCRIPT_CANVAS_GENERIC_FUNCTION_NODE_WITH_DEFAULTS(IsClose, MathNodeUtilities::DefaultToleranceSIMD<2>, k_categoryName, "{020C2517-F02F-4D7E-9FE9-B6E91E0D6D3F}", "returns true if each element of both Matrix are equal within some tolerance", "A", "B", "Tolerance");
+   ```
+   Replacement function and ScriptCanvasFunction.xml content
+   ```cpp
+   Data::BooleanType IsClose(const Data::Matrix3x3Type& lhs, const Data::Matrix3x3Type& rhs, const Data::NumberType tolerance);
+   ```
+   ```xml
+   <Function Name="IsClose">
+       <Parameter Name="A"/>
+       <Parameter Name="B"/>
+       <Parameter Name="Tolerance" DefaultValue="0.01"/>
+   </Function>
+   ```
+
+1. For ```SCRIPT_CANVAS_GENERIC_FUNCTION_MULTI_RESULTS_NODE(NODE_NAME, CATEGORY, UUID, DESCRIPTION, ...)``` use case
+   ```cpp
+   AZ_INLINE std::tuple<Data::Vector3Type, Data::Vector3Type, Data::Vector3Type> GetRows(const Data::Matrix3x3Type& source) { ... }
+   SCRIPT_CANVAS_GENERIC_FUNCTION_MULTI_RESULTS_NODE(GetRows, k_categoryName, "{DDF76F4C-0C79-4856-B577-7DBA092CE59B}", "returns all rows from matrix", "Source", "Row1", "Row2", "Row3");
+   ```
+   Replacement function and ScriptCanvasFunction.xml content
+   ```cpp
+   AZStd::tuple<Data::Vector3Type, Data::Vector3Type, Data::Vector3Type> GetRows(const Data::Matrix3x3Type& source);
+   ```
+   ```xml
+   <Function Name="GetRows">
+       <Parameter Name="Source"/>
+   </Function>
+   ```
+
+### Step 3: Create replacement Custom Free Function Node
+Update Generic Function Node macros by providing replacement node identifier, and replacement node identifier comes from ScriptCanvasFunction.xml. We use Namespace and Function Name to guarantee the uniqueness.
+
+As an example, in [Matrix3x3.ScriptCanvasFunction.xml](https://github.com/o3de/o3de/blob/development/Gems/ScriptCanvas/Code/Include/ScriptCanvas/Libraries/Math/Matrix3x3.ScriptCanvasFunction.xml)
+* Namespace: ```ScriptCanvas::Matrix3x3Functions```
+* Function Name: ```GetRow```, ```GetRows```, ```IsClose```
+```xml
+<ScriptCanvas>
+    <Library
+        Include="Include/ScriptCanvas/Libraries/Math/Matrix3x3.h"
+        Namespace="ScriptCanvas::Matrix3x3Functions"
+        Category="Math/Matrix3x3">
+...
+        <Function Name="GetRow">
+        <Function Name="GetRows">
+        <Function Name="IsClose">
+...          
+    <Library/>  
+<ScriptCanvas/>
+```
+Sanitized replacement node identifiers are: ```ScriptCanvas_Matrix3x3Functions_GetRow```, ```ScriptCanvas_Matrix3x3Functions_GetRows```, ```ScriptCanvas_Matrix3x3Functions_IsClose```
+```cpp
+SCRIPT_CANVAS_GENERIC_FUNCTION_REPLACEMENT(GetRow, k_categoryName, "{C4E00343-3642-4B09-8CFA-2D2F1CA6D595}", "ScriptCanvas_Matrix3x3Functions_GetRow");
+SCRIPT_CANVAS_GENERIC_FUNCTION_REPLACEMENT(GetRows, k_categoryName, "{DDF76F4C-0C79-4856-B577-7DBA092CE59B}", "ScriptCanvas_Matrix3x3Functions_GetRows");
+SCRIPT_CANVAS_GENERIC_FUNCTION_REPLACEMENT(IsClose, k_categoryName, "{020C2517-F02F-4D7E-9FE9-B6E91E0D6D3F}", "ScriptCanvas_Matrix3x3Functions_IsClose");
+```
+
+### Step 4: Upgrade existing out of date Graph
+At this point, system gets all required information to do the replacement and there are two ways to upgrade Graph:
+1. Batch Processing - For convenience you can use the version explorer tool found in the ScriptCanvas Editor ```Tools / Upgrade Graphs```. You can select multiple source Graphs in the tool and upgrade them to the latest version, and it will save them in the new format, or report errors if for some reason it could not.
+1. Single Processing - You can open specific Graph in the ScriptCanvas Editor, Graph will be automated upgraded, and you should be able to save it with new format.
