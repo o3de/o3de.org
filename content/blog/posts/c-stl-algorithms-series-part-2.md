@@ -16,7 +16,7 @@ Continuing from the previous entry in this series, we’re going to keep explori
 
 It’s all too easy to come up with trivial examples for algorithms that don’t reflect the type of problems we have to solve everyday. With that in mind, this example (though a little contrived) might be something we actually want to calculate in O3DE.
 
-Suppose we have a collection of Aabbs and we’d like to find the union of all of them. We might need this to find the total extents of our scene or perhaps the area taken up by a players base. Here’s the normal imperative version to start:
+Suppose we have a collection of axis aligned bounding boxes (AABBs) and we’d like to find the union of all of them. We might need this to find the total extents of our scene or perhaps the area taken up by a players base. Here’s the normal imperative version to start:
 
 ```c++
 AZStd::vector<AZ::Aabb> aabbs { /* a bunch of Aabbs */ };
