@@ -1,6 +1,6 @@
 ---
 title: "C++ STL Algorithms Series - Part 3"
-date: 2022-08-10
+date: 2022-08-17
 slug: c-stl-algorithms-series-part-3
 author: Tom Hulton-Harrop
 blog_img: ""
@@ -69,6 +69,4 @@ The animations will be painful to watch for any seasoned game developer but the 
 
 To wrap up this series (for the time being at least) we’ll close with a look at where the use of algorithms can lead to problems and what we can do to avoid falling into this trap.
 
-Author: Tom Hulton-Harrop
-
-_Disclaimer: The views expressed here are those of the individual author and do not represent those of Game Engine and Developer Services or Amazon._
+_Disclaimer: The views expressed here are those of the individual author and do not represent those of the Open 3D Foundation, Open 3D Engine or individual's respective company._
