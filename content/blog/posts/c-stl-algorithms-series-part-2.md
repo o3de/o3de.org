@@ -64,6 +64,4 @@ The talk does a fantastic job of introducing a whole host of algorithms and how 
 
 Next time we’ll look at another algorithm staple - `transform`.
 
-Author: Tom Hulton-Harrop
-
 _Disclaimer: The views expressed here are those of the individual author and do not represent those of the Open 3D Foundation, Open 3D Engine or individual's respective company._
