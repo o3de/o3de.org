@@ -6,7 +6,7 @@ toc: false
 weight: 100
 ---
 
-**Materials** contain data that control how model surfaces appear in a 3D environment. All materials have a **material type**, which classifies materials that share the same properties and shader code such as hard surfaces, cloth, or skin. Materials inherit properties either directly from the material type, or from other *parent* materials, and each .material file only needs to store property values that differ from its parent.
+**Materials** contain data that control how model surfaces appear in a 3D environment. All materials have a **material type**, which classifies materials that share the same properties and shader code such as hard surfaces, cloth, or skin. Materials inherit properties either directly from the material type or from other *parent* materials. Each `.material` file only needs to store property values that differ from its parent.
 
 <!-- SVG file edited using https://app.diagrams.net/ -->
 ![Material Files Diagram](/images/atom-guide/materials/material-file-diagram.svg)

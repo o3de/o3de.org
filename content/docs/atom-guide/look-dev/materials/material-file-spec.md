@@ -15,13 +15,14 @@ Provides a description or comment from the material's author.
 The path to the material type. Materials must reference a material type which provides the list of available properties and the shaders to use for rendering. The path must be relative to the asset root or to the material file.
 
 ### **materialTypeVersion** (*optional*)  
-Indicates the version number of the material type that was used to create this material. This can be used by the material type version update feature to support backward compatibility with older versions of the material type. (See [Material Type Specification](material-type-file-spec)'s [`version`](material-type-file-spec/#version) and [`versionUpdates`](material-type-file-spec/#versionupdates)).
+Indicates the version number of the material type that was used to create this material. This can be used by the material type version update feature to support backward compatibility with older versions of the material type. (See [`version`](material-type-file-spec/#version) and [`versionUpdates`](material-type-file-spec/#versionupdates)) in the Material Type File Specification.
 
 ### **parentMaterial** (*optional*)  
-The path to the parent material file. If specified, the material inherits the properties of another parent material. The parent material must have the same material type as the material. The path must be relative to the asset root or to the material file. If not specified, the material inherits default values directly from the materialType. 
+The path to the parent material file. If specified, the material inherits the properties of another parent material. The parent material must have the same material type as the material. The path must be relative to the asset root or to the material file. If not specified, the material inherits default values directly from the material type.
+. 
 
 ### **propertyValues**
-Lists the names and values to set for material properties. Any properties that aren't specified here will inherit the value from the parent material if available or from the material type's default value. The JSON data type used for the values should match the property's data type as specified in the .materialtype file. However, some data type conversion is supported (i.e. "1" can be used to set a float property to "1.0", etc.).
+Lists the names and values to set for material properties. Any properties that aren't specified here will inherit the value from the parent material if available or from the material type's default value. The JSON data type used for the values should match the property's data type as specified in the `.materialtype` file. However, some data type conversion is supported (for example, "1" can be used to set a float property to "1.0").
 
 Image properties must have a path to the source image file. The path must be relative to the asset root or to the material file.
 
@@ -32,13 +33,13 @@ All other property types must be specified according to their standard JSON seri
 The example below demonstrates how to set a property of each possible data type.
 
 ### **properties** (deprecated)
-An older version of the material file format organized properties by group in nested JSON objects. This has been replaced by `propertyValues` (above) which uses a flat list of property IDs. The engine will still load the old format but any new material files should use the new format.
+An older version of the material file format organized properties by group in nested JSON objects. This is replaced by `propertyValues` (above), which uses a flat list of property identifiers. The engine can still load the old format, but new material files must use the new format.
 
 ## Example
 
 ```json
 {
-    "description":  "This example uses a pretend material type, parent, and properties that don't actually exist.",
+    "description":  "This is an example only. The material type, parent, and properties don't exist.",
     "materialType": "Materials/Types/Example.materialtype",
     "materialTypeVersion": 6,
     "parentMaterial":  "Materials/ExampleParent.material",
