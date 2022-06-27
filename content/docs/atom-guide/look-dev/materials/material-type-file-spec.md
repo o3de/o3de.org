@@ -292,7 +292,7 @@ Each shader item includes the following values.
 * **tag**: A unique name for this shader item that can be used to reference the shader from other places in the material type definition, like in material functors. It must be a C-Style identifier.
 * **options**: Set the initial value for any options in this shader, using a list of key/value pairs.
 
-#### **Example**  
+#### Example
 In this example, we reference the ShadowMap and DepthPass shaders. 
 ```JSON
 "shaders": [

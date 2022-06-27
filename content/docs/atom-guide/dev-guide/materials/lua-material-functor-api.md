@@ -20,19 +20,19 @@ The material functor may execute in an implicit name context, where certain pref
 
 The material system expects the the following functions to be defined at the global scope in the lua script.
 
-#### **Process(`context`)**
+#### Process(`context`)
 
 This is the main function that runs when the material is *used for rendering*. It runs when the material is first initialized or whenever relevant material property values are changed. The `context` object provides access to the API for accessing the *material properties and shader(s)*.
 
-#### **ProcessEditor(`context`)**
+#### ProcessEditor(`context`)
 
 This is the main function that runs when the material is *being edited in tools*. It runs when the material is first initialized or whenever relevant material property values are changed. The `context` object provides access to the API for accessing *material properties and their metadata*.
 
-#### **GetMaterialPropertyDependencies()**
+#### GetMaterialPropertyDependencies()
 
 Returns a list of all material properties that may be read by the functor. Errors will be reported for properties that are accessed without reporting the dependency.
 
-#### **GetShaderOptionDependencies()**
+#### GetShaderOptionDependencies()
 
 Returns a list of all shader options that may be set by the functor. Errors will be reported for options that are accessed without reporting the dependency. (Note that the `Material::SetSystemShaderOption` function in the C++ API may only be called on shader options that are *not* declared as dependencies or otherwised used by the material type).
 
@@ -85,7 +85,7 @@ These functions are available in the global scope.
 
 These functions are available in the `context` object that is passed to the `Process` function.
 
-### **GetMaterialPropertyValue\_**
+### GetMaterialPropertyValue\_
 
 Each **GetMaterialPropertyValue\_** function takes a `string` property name and returns a value of the appropriate type. You must use the version that matches the data type of the material property. The material property must be listed in [GetMaterialPropertyDependencies](#main-functions).
 
@@ -100,11 +100,11 @@ Each **GetMaterialPropertyValue\_** function takes a `string` property name and 
   * **GetMaterialPropertyValue_Color**(`string`): Returns a `Color` type. See [Lua Math Library](/docs/user-guide/scripting/lua/math-library/).
   * **GetMaterialPropertyValue_Image**(`string`): Returns a generic pointer `userdata` type if an image is available, or `nil` otherwise.
 
-### **HasMaterialProperty(`string`)**
+### HasMaterialProperty(`string`)
 
 Returns a boolean whether a property with the given name exists. Note the material property does not have to be listed in [GetMaterialPropertyDependencies](#main-functions) because this functions is just checking availability, not *reading values*.
 
-### **SetShaderConstant\_**
+### SetShaderConstant\_
 
 Each **SetShaderConstant\_** function takes a `string` shader input name and value to set. You must use the version that matches the data type of the shader input.
 
@@ -119,7 +119,7 @@ Each **SetShaderConstant\_** function takes a `string` shader input name and val
   * **SetShaderConstant_Matrix3x3**(`string`, `Matrix3x3`)
   * **SetShaderConstant_Matrix4x4**(`string`, `Matrix4x4`)
 
-### **SetShaderOptionValue\_**
+### SetShaderOptionValue\_
 
 Each **SetShaderOptionValue\_** function takes a `string` shader option name and value to set. The value will be applied to all shaders in the material type that have an option with the given name. You must use the version that matches the data type of the shader option. The shader option must be listed in [GetShaderOptionDependencies](#main-functions).
 
@@ -127,19 +127,19 @@ Each **SetShaderOptionValue\_** function takes a `string` shader option name and
   * **SetShaderOptionValue_uint**(`string`, `number`)
   * **SetShaderOptionValue_enum**(`string`, `number`)
 
-### **GetShaderCount()**
+### GetShaderCount()
 
 Returns the number of shaders in the material type.
 
-### **GetShader**(`number`)
+### GetShader(`number`)
 
 Returns a [`ShaderItem`](#shaderitem-functions) at a given index, or a dummy [`ShaderItem`](#shaderitem-functions) if the index is out of bounds. See [ShaderItem functions](#shader-functions). 
 
-### **GetShaderByTag**(`string`)
+### GetShaderByTag(`string`)
 
 Returns a [`ShaderItem`](#shaderitem-functions) that has a given tag name, or a dummy [`ShaderItem`](#shaderitem-functions) if the name is not found. See [ShaderItem functions](#shader-functions) and [Shader tags in the Material Type File Specification](/docs/atom-guide/look-dev/materials/material-type-file-spec/#shaders). 
 
-### **HasShaderWithTag**(`string`)
+### HasShaderWithTag(`string`)
 
  Returns a `boolean` whether a shader with the given tag name exists. See [Shader tags in the Material Type File Specification](/docs/atom-guide/look-dev/materials/material-type-file-spec/#shaders).
 
@@ -147,7 +147,7 @@ Returns a [`ShaderItem`](#shaderitem-functions) that has a given tag name, or a 
 
 These functions are available in the `context` object that is passed to the `ProcessEditor` function.
 
-### **GetMaterialPropertyValue\_**
+### GetMaterialPropertyValue\_
 
 Each **GetMaterialPropertyValue\_** function takes a `string` property name and Returns a value of the appropriate type. You must use the version that matches the data type of the material property. The material property must be listed in [GetMaterialPropertyDependencies](#main-functions).
 
@@ -162,7 +162,7 @@ Each **GetMaterialPropertyValue\_** function takes a `string` property name and 
   * **GetMaterialPropertyValue_Color**(`string`): Returns a `Color` type. See [Lua Math Library](/docs/user-guide/scripting/lua/math-library/).
   * **GetMaterialPropertyValue_Image**(`string`): Returns a generic pointer `userdata` type if an image is available, or `nil` otherwise.
 
-### **SetMaterialProperty**
+### SetMaterialProperty
 
 Each **SetMaterialProperty** function takes a `string` property name and sets some aspect of the property's editor metadata. See corresponding items in [Property Layout in Material Type File Specification](/docs/atom-guide/look-dev/materials/material-type-file-spec/#propertylayout). Note the material property does not have to be listed in [GetMaterialPropertyDependencies](#main-functions) because these functions are just setting metadata, not *reading values*.
 
@@ -185,19 +185,19 @@ Each **SetMaterialProperty** function takes a `string` property name and sets so
 
 ShaderItem is a lua `userdata` item with the following functions:
 
-### **GetRenderStatesOverride()**
+### GetRenderStatesOverride()
 
 Returns a [`RenderStates`](#renderstates-functions) object that can be used to set overrides for any available render state.
 
-### **SetEnabled(boolean)**
+### SetEnabled(boolean)
 
 Sets whether the shader should be enabled or not.
 
-### **SetDrawListTagOverride**(`string`)
+### SetDrawListTagOverride(`string`)
 
 Overrides the draw list tag name that the shader will use. Set to empty string to clear the override and restore the value from the *.shader* file. See `DrawList` in the [Shader File Specification](/docs/atom-guide/look-dev/shaders/shader-file-spec/)
 
-### **SetShaderOptionValue\_**
+### SetShaderOptionValue\_
 
 Each **SetShaderOptionValue\_** function takes a `string` shader option name and value to update one of this shader's options. You must use the version that matches the data type of the shader option. The shader option must be listed in [GetShaderOptionDependencies](#main-functions).
   * **SetShaderOptionValue_bool**(`string`, `boolean`)
@@ -208,7 +208,7 @@ Each **SetShaderOptionValue\_** function takes a `string` shader option name and
 
 `RenderStates` is a lua `userdata` item with the following functions. For each render state there is a **Set** function for setting an override value and a **Clear** function for clearing the override and restoring the default value. Most of these functions are just light wrappers over lower level render APIs.
 
-### **Multisample State** functions
+### Multisample State functions
 
   * **SetMultisampleCustomPosition**(`number` multisampleCustomLocationIndex, `number` x, `number` y)
   * ClearMultisampleCustomPosition
@@ -219,7 +219,7 @@ Each **SetShaderOptionValue\_** function takes a `string` shader option name and
   * **SetMultisampleQuality**(`number`)
   * ClearMultisampleQuality
 
-### **Raster State** functions
+### Raster State functions
 
   * **SetFillMode**([`FillMode`](#fillmode))
   * ClearFillMode
@@ -240,7 +240,7 @@ Each **SetShaderOptionValue\_** function takes a `string` shader option name and
   * **SetForcedSampleCount**(`number`)
   * ClearForcedSampleCount
 
-### **Blend State** functions
+### Blend State functions
 
   * **SetAlphaToCoverageEnabled**(`boolean`)
   * ClearAlphaToCoverageEnabled
@@ -263,7 +263,7 @@ Each **SetShaderOptionValue\_** function takes a `string` shader option name and
   * **SetBlendAlphaOp**([`BlendOp`](#blendop))
   * ClearBlendAlphaOp
 
-### **Depth/Stencil State** functions
+### Depth/Stencil State functions
   * **SetDepthEnabled**(`boolean`)
   * ClearDepthEnabled
   * **SetDepthWriteMask**([`DepthWriteMask`](#depthwritemask))
