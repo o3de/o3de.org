@@ -83,10 +83,10 @@ It's common practice to "factor-out" property group definitions into separate JS
     * **enumValues**: A list of names defining the possible values for an `Enum` type property.
     * **enumIsUv**: If `true`, and `type` is set to `Enum`, this uses the UV names from [`uvNameMap`](#uvnamemap) as the possible enum values.
     * **defaultValue**: The default value to use for this property. The value must be specified using the appropriate data type according to its standard JSON serialization (see [JSON Serialization of O3DE Data Types](/docs/user-guide/programming/serialization/json-data-types)). If no default is provided, then the default will be `false`, `0`, or empty according to the data type.
-    * **min**: The minimum value for this property, used to configure the range of sliders or similar UI widgets.
-    * **max**: The maximum value for this property, used to configure the range of sliders or similar UI widgets.
-    * **softMin**: Similar to `min`, but the user can manually entry a smaller value.
-    * **softMax**: Similar to `max`, but the user can manually entry a larger value.
+    * **min**: The minimum value of the property that a user can configure using a slider or similar UI widget.
+    * **max**: The maximum value of the property that a user can configure using a slider or similar UI widget. 
+    * **softMin**: The minimum value of the property that a user can configure using a slider or similar UI widget. However, a user can type in a smaller value manually.
+    * **softMax**: The maximum value of the property that a user can configure using a slider or similar UI widget. However, a user can type in a larger value manually.
     * **step**: Indicates the size of the increment to use for sliders or similar UI widgets.
     * **vectorLabels**: Provide a list of labels to use for the elements of a `Vector` type property. By default the labels are "X", "Y", "Z", "W".
     * **connection**: Defines connections for passing the property value to a shader. Each connection defines a connection `type`, a `name`, and optionally a `shaderIndex`. The connection is optional, if omitted the property can be connected to shaders by a material functor.
