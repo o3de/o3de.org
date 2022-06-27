@@ -12,7 +12,7 @@ Material files (`*.material`) are written in JSON format and contain the followi
 Provides a description or comment from the material's author.
 
 ### **materialType**
-The path to the material type. Materials must reference a material type which provides the list of available properties and the shaders to use for rendering. The path must be relative to the asset root or to the material file.
+The path to the material type. Materials must reference a material type, which provides the list of available properties and the shaders to use for rendering. The path must be relative to the asset root or to the material file.
 
 ### **materialTypeVersion** (*optional*)  
 Indicates the version number of the material type that was used to create this material. This can be used by the material type version update feature to support backward compatibility with older versions of the material type. (See [`version`](material-type-file-spec/#version) and [`versionUpdates`](material-type-file-spec/#versionupdates)) in the Material Type File Specification.
