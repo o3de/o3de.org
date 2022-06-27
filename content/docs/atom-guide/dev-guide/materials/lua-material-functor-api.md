@@ -127,6 +127,10 @@ Each **SetShaderOptionValue\_** function takes a `string` shader option name and
   * **SetShaderOptionValue_uint**(`string`, `number`)
   * **SetShaderOptionValue_enum**(`string`, `number`)
 
+{{< note >}}
+There are similar [SetShaderOptionValue\_](#setshaderoptionvalue_-1) functions in the `ShaderItem` object that operate on a single shader.
+{{< /note >}}
+
 ### GetShaderCount()
 
 Returns the number of shaders in the material type.
@@ -203,6 +207,10 @@ Each **SetShaderOptionValue\_** function takes a `string` shader option name and
   * **SetShaderOptionValue_bool**(`string`, `boolean`)
   * **SetShaderOptionValue_uint**(`string`, `number`)
   * **SetShaderOptionValue_enum**(`string`, `number`)
+
+{{< note >}}
+There are similar [SetShaderOptionValue\_](#setshaderoptionvalue_) functions in `Process(context)` that operate on a single shader.
+{{< /note >}}
 
 ## RenderStates functions
 

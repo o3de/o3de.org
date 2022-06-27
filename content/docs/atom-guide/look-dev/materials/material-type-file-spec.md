@@ -15,10 +15,6 @@ Indicates the current version number of the material type. Any materials created
 ## **versionUpdates**  
 Provides backward compatibility for `.material` files that reference an older version of this `.materialtype`. This section includes a list of update steps that can update material data from one version to the next. Whenever the author makes a change to the material type that would break existing materials (such as renaming a property) they can increment the `version` number (see above) and provide a new version update description here. Then, any system that loads the old .material file can automatically upgrade it to be compatible with the latest material type.
 
-{{< note >}}
-To upgrade the `.material` source file to match the latest version of the material type, simply open it in the **Material Editor** and then save.
-{{< /note >}}
-
 * **toVersion**: Indicates the material type version when these changes were introduced. The update step will be applied to any material with a [`materialTypeVersion`](material-file-spec/#materialtypeversion-optional) number less than this value.
 
 * **actions**: A list of actions to perform when applying this update. Each action will first have an `op` parameter to indicate what operation to perform. Additional parameters must be specificed depending on which operation is used. Available actions and their required parameters are listed:
@@ -26,6 +22,10 @@ To upgrade the `.material` source file to match the latest version of the materi
 |---------------|-------------|----------------------|-------------|--------------------|
 | rename        | from        | old property name    | to          | new property name  |
 | setValue      | name        | property name to set | value       | new property value, must be of the appropriate type for the given property |
+
+{{< note >}}
+To upgrade the `.material` source file to match the latest version of the material type, simply open it in the **Material Editor** and then save.
+{{< /note >}}
 
 #### Example
 
