@@ -273,7 +273,7 @@ It is common practice to "factor-out" property group definitions into separage J
 ```
 
 ## **version** (deprecated)
-This version number is no longer used and has been replaced by [`version`](#version).
+This version number in the `propertyLayout` section is no longer used and has been replaced by the [`version`](#version) number above.
 
 ## **groups** (deprecated)
 An older version of the material type file format organized the property layout with separate `groups` and `properties` sections. This imposed several limitations like restricting property grouping to only one level and making it difficult to factor out reuasable property groups. This has been replaced by `propertyGroups` (above) which can support any number of group levels with properties and groups defined in the same place. The engine will still load the old format but any new material type files should use the new format.
