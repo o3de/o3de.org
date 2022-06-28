@@ -35,7 +35,7 @@ The combination of the Script Canvas and behavior context archictectures include
 ## Example: Static functions
 
 {{< note >}}
-Recommend to refer to [Custom Free Function Nodes](/custom-nodes/custom-free-function-nodes/) for light overhead approach.
+Refer to [Custom Free Function Nodes](/docs/user-guide/scripting/script-canvas/programmer-guide/custom-nodes/custom-free-function-nodes/) for an approach with a lighter overhead.
 {{< /note >}}
 
 To demonstrate how C++ code can become a Script Canvas node, this example uses the behavior context to reflect a few simple, static math library functions.
