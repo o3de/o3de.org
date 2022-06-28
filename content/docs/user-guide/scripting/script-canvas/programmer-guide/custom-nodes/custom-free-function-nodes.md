@@ -393,7 +393,7 @@ Replace each generic function node macro with the `SCRIPT_CANVAS_GENERIC_FUNCTIO
 
 As an example, in [Matrix3x3.ScriptCanvasFunction.xml](https://github.com/o3de/o3de/blob/development/Gems/ScriptCanvas/Code/Include/ScriptCanvas/Libraries/Math/Matrix3x3.ScriptCanvasFunction.xml)
 * Namespace: `ScriptCanvas::Matrix3x3Functions`
-* Function Name: GetRow`, `GetRows`, `IsClose`
+* Function Name: `GetRow`, `GetRows`, `IsClose`
 ```xml
 <ScriptCanvas>
     <Library
