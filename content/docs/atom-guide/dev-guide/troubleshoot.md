@@ -68,8 +68,8 @@ You can enable validation in your RHI device to output additional debugging info
 
 ## DRED logs (Windows DirectX Only)
 
-When a TDR (Timeout Delay Recovery) crash occurs while using the DX12 backend specifically, [Device Removed Extended Data](https://microsoft.github.io/DirectX-Specs/d3d/DeviceRemovedExtendedData.html) (aka "DRED") breadcrumbs
-are written to a timestamped log file in `.o3de/Logs/DRED/`. This log contains all events, draws, barriers, and dispatches leading up to a crash, as well as commands that failed to complete.
+When a Timeout Detection and Recovery (TDR) crash occurs while using the DirectX12 backend, [Device Removed Extended Data](https://microsoft.github.io/DirectX-Specs/d3d/DeviceRemovedExtendedData.html) (DRED) breadcrumbs
+are written to a timestamped log file in `.o3de/Logs/DRED/`. This log contains all of the events, draws, barriers, and dispatches that led up to a crash, as well as commands that failed to complete.
 The offending command that likely caused the device removal will be visible after the `===ERROR START===` and before the `===ERROR END===` lines in the log. 
 
 **Example**
