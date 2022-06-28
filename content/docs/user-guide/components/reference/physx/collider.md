@@ -115,7 +115,7 @@ Capsule resize mode has two linear manipulators. The manipulator at the top of t
 
 ![PhysX Collider component mode capsule resize manipulator](/images/user-guide/components/reference/physx/physx-collider-resize-capsule.png)
 
-### Offset (Physics Asset Shape)
+### Offset
 
 Offset mode has a three-axis translate manipulator.
 
