@@ -121,7 +121,7 @@ Offset mode has a three-axis translate manipulator.
 
 ![PhysX Collider component mode offset manipulator](/images/user-guide/components/reference/physx/physx-collider-offset-mode.png)
 
-### Rotation (Physics Asset Shape)
+### Rotation
 
 Rotation mode has a three-axis rotate manipulator.
 
