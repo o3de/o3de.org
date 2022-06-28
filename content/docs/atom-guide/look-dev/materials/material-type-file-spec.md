@@ -13,7 +13,7 @@ Provides a description or comment from the material type's author.
 Indicates the current version number of the material type. Any materials created with this material type will save this value in their [`materialTypeVersion`](material-file-spec/#materialtypeversion-optional) field.
 
 ## **versionUpdates**  
-Provides backward compatibility for `.material` files that reference an older version of this `.materialtype`. This section includes a list of update steps that can update material data from one version to the next. Whenever the author makes a change to the material type that would break existing materials (such as renaming a property) they can increment the `version` number (see above) and provide a new version update description here. Then, any system that loads the old .material file can automatically upgrade it to be compatible with the latest material type.
+Provides backward compatibility for `.material` files that reference an older version of this `.materialtype`. This section includes a list of update steps that can update material data from one version to the next. Whenever the author makes a change to the material type that would break existing materials (such as renaming a property) they can increment the `version` number (see above) and provide a new version update description here. Then, any system that loads the old `.material` file can automatically upgrade it to be compatible with the latest material type.
 
 * **toVersion**: Indicates the material type version when these changes were introduced. The update step will be applied to any material with a [`materialTypeVersion`](material-file-spec/#materialtypeversion-optional) number less than this value.
 
@@ -474,7 +474,7 @@ This is a specialized functor for a standardized set of properties for controlli
 Replaced by the use of a Lua functor with the `SetDrawListTagOverride` function. 
 
 {{< note >}}
-Before deprecation, this functor was used to override a shader's draw list name before the Lua functor type was available. 
+Before the Lua functor type was available, this functor was used to override a shader's draw list name. 
 {{< /note >}}
 
 ## **uvNameMap**

@@ -14,7 +14,11 @@ For general information on the Lua programming language, see [Learning Lua](docs
 
 ## Name context
 
-The material functor may execute in an implicit name context, where certain prefixes are attached to the names that appear in the script. This allows the same Lua script to be used in different contexts. For example, one material type might have a group named "metallic", and another material type has a group named "metalness". In both cases, the groups have the properties `texture` and `factor`. The Lua functor will reference the properties as simply "texture" or "factor" and the system will automatically prepend the appropriate name context internally. Material properties, shader inputs (constants or images), and shader options each potentially have a separate name context. For details about how the name context may be specified, search "prefix" in the [Material Type File Specification](/docs/atom-guide/look-dev/materials/material-type-file-spec/) .
+The material functor may execute in an implicit name context, where certain prefixes are attached to the names that appear in the script. This allows the same Lua script to be used in different contexts. 
+
+For example, one material type might have a group named "metallic", and another material type has a group named "metalness". In both cases, the groups have the properties `texture` and `factor`. The Lua functor will reference the properties as simply "texture" or "factor" and the system will automatically prepend the appropriate name context internally. Material properties, shader inputs (constants or images), and shader options each potentially have a separate name context. 
+
+For details about how the name context may be specified, search "prefix" in the [Material Type File Specification](/docs/atom-guide/look-dev/materials/material-type-file-spec/) .
 
 ## Main functions
 
@@ -137,11 +141,11 @@ Returns the number of shaders in the material type.
 
 ### GetShader(`number`)
 
-Returns a [`ShaderItem`](#shaderitem-functions) at a given index, or a dummy [`ShaderItem`](#shaderitem-functions) if the index is out of bounds. See [ShaderItem functions](#shader-functions). 
+Returns a `ShaderItem` at a given index, or a dummy `ShaderItem` if the index is out of bounds. See [ShaderItem functions](#shaderitem-functions). 
 
 ### GetShaderByTag(`string`)
 
-Returns a [`ShaderItem`](#shaderitem-functions) that has a given tag name, or a dummy [`ShaderItem`](#shaderitem-functions) if the name is not found. See [ShaderItem functions](#shader-functions) and [Shader tags in the Material Type File Specification](/docs/atom-guide/look-dev/materials/material-type-file-spec/#shaders). 
+Returns a `ShaderItem` that has a given tag name, or a dummy `ShaderItem` if the name is not found. See [ShaderItem functions](#shaderitem-functions) and [Shader tags in the Material Type File Specification](/docs/atom-guide/look-dev/materials/material-type-file-spec/#shaders). 
 
 ### HasShaderWithTag(`string`)
 
@@ -199,7 +203,7 @@ Sets whether the shader should be enabled or not.
 
 ### SetDrawListTagOverride(`string`)
 
-Overrides the draw list tag name that the shader will use. Set to empty string to clear the override and restore the value from the *.shader* file. See `DrawList` in the [Shader File Specification](/docs/atom-guide/look-dev/shaders/shader-file-spec/)
+Overrides the draw list tag name that the shader will use. Set to empty string to clear the override and restore the value from the *.shader* file. See `DrawList` in the [Shader File Specification](/docs/atom-guide/look-dev/shaders/shader-file-spec/).
 
 ### SetShaderOptionValue\_
 
