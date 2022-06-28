@@ -50,7 +50,7 @@ Sets the collider for the collider component. A collider can be a primitive shap
 | - | - | - | - |
 | **PhysX Mesh** | Assigns a `.pxmesh` collider product asset for this collider. For more information on creating PhysX mesh asset colliders, refer to [Process PhysX Collider Assets](/docs/learning-guide/tutorials/assets/physx-colliders/). | Product asset `.pxmesh` PhysX mesh. |  |
 | **Asset Scale** | Scales the collider shape independent of the entity. | Vector3: 0.0 to Infinity | X: `1.0`, Y: `1.0`, Z: `1.0` |
-| **Physics Materials from Asset** | If enabled, the physics materials for this collider are automatically set based on the Physics Materials from the mesh's PhysX asset. <!--If the physics material doesn't exist in the **Physics Materials - Library**, the default physics material is applied.--> Physics material assignments cannot be edited while this option is enabled. | Boolean | `Enabled`|
+| **Physics Materials from Asset** | If enabled, the physics materials for this collider are automatically set based on the Physics Materials from the mesh's PhysX asset. Physics material assignments cannot be edited while this option is enabled. | Boolean | `Enabled`|
 
 {{% /tab %}}
 {{% tab name="Sphere" %}}
