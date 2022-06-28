@@ -26,7 +26,7 @@ AZSLc is just the first compiler in the chain, that generates HLSL code. There a
     - **Name**: The name of the shader entry point function, which was defined in the AZSL source file (`.azsl`). 
     - **Type**: The type of shader function. The supported types are “Vertex”, “Fragment”, and “Compute”. 
   
-- **DrawLists**: The name of the draw list where DrawItems that are using this shader should be queued for rendering. This name must match the draw list name in one or more passes (`*.pass` file) to be rendered.
+- **DrawList**: The name of the draw list where DrawItems that are using this shader should be queued for rendering. This name must match the draw list name in one or more passes (`*.pass` file) to be rendered.
 
 {{< note >}}
 This is a high level breakdown of the available elements in the shader asset file. The most reliable way to know the full specification is to inspect `ShaderSourceData::Reflect()` in `Gems\Atom\Code\Source\RPI.Edit\Shader\ShaderSourceData.cpp`. 
