@@ -78,6 +78,7 @@ $o3de-mediumblue: #4B8DEF
 $o3de-lightblue: #A5C6F7
 $o3de-blue-highlight: #94D2FF
 $o3de-green: #58BD61
+$o3de-purple: #652d90
 
 // layouts/section-nav.html typography
 
@@ -439,7 +440,7 @@ code
 // banner
 a.top-banner
   color: $o3de-white
-  background-color: #652d90
+  background-color: $o3de-purple
   display: block
   padding: 10px 0
   transition: .2s ease
@@ -449,7 +450,7 @@ a.top-banner
 
 
   &:hover 
-    background-color: darken(#652d90, 10%)
+    background-color: darken($o3de-purple, 10%)
 
   .container
     position: relative
@@ -504,7 +505,7 @@ a.top-banner
 
 
       &:hover
-        border-color: $o3de-blue-highlight
+        border-color: $o3de-purple
 
 
 
