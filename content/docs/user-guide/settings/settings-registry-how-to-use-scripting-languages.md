@@ -12,9 +12,9 @@ weight: 400
 
 Settings Registry Exposed Script Functions
 ===
-The Settings Registry is bound to Lumberyard scripting languages via reflection to the Behavior Context
+The Settings Registry is bound to O3DE scripting languages via reflection to the Behavior Context
 
-The following table list the Settings Registry API exposed to Scripting.
+The following table details the Settings Registry API exposed to scripting languages.
 The code that actually performs the reflection to the BehaviorContext can be found in the [SettingsRegistryScriptUtils](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryScriptUtils.cpp#L377-L390)
 
 | API Name | Arguments | Description | Type |
@@ -147,8 +147,8 @@ if __name__ == '__main__':
 Example: Accessing the Settings Registry in Lua
 ===============================================
 
-The settings registry is also available through in Lua via the Behavior Context bindings as well.
-Below is an example of using the accessing the settings registry to access the frame capture settings in lua
+The settings registry is available in Lua via the Behavior Context bindings.
+Below is an example of using the settings registry to access the frame capture settings in lua
 
 **Lua - Settings Registry**
 

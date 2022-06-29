@@ -15,7 +15,8 @@ weight: 400
 Setting Registry Dump API
 ===
 
-Often times there is a need to be able to store the Settings Registry or a section of a the Settings Registry to disk for later access, or a need to store the Settings Registry within a string within an application for further processing.
+Often times there is a need to be able to store the Settings Registry or a section of the Settings Registry to disk for later access.
+Or there is a need to store the Settings Registry in a string within a running application for further processing.
 
 This page will provide an example of how to dump portions of the Settings Registry to disk at a specific key, while either maintaining the ancestor JSON key hierarchy or having the saved hierarchy not contain any ancestor key hierarchy.
 
@@ -39,15 +40,15 @@ struct DumperSettings
     AZStd::function<bool(AZStd::string_view path)> m_includeFilter;
 };
 
-//! Dumps supplied settings registry from the path specified by key if it exist the the AZ::IO::GenericStream
-//! key is a JSON pointer path to dumping settings recursively from
-//! stream is an AZ::IO::GenericStream that supports writing
-//! dumperSettings are used to determine how to format the dumped output
+//! Dumps the supplied settings registry at the path specified by key if it exist to the AZ::IO::GenericStream
+//! @param key is a JSON pointer path to dumping settings recursively from
+//! @param stream is an AZ::IO::GenericStream that supports writing
+//! @param dumperSettings are used to determine how to format the dumped output
 bool DumpSettingsRegistryToStream(SettingsRegistryInterface& registry, AZStd::string_view key,
     AZ::IO::GenericStream& stream, const DumperSettings& dumperSettings);
 ```
 
-Now some important facts to know about using the Settings Registry Merge Utils DumpSettingsRegistryToStream is that the settings a **dumped relative to the "key"** **parameter**.
+Now some important facts to know about using the Settings Registry Merge Utils DumpSettingsRegistryToStream is that the settings are **dumped relative to the "key"** **parameter**.
 
 To better explain, a sample in-memory settings registry instance is provided as follows
 
@@ -114,7 +115,7 @@ Results in:
 }
 ```
 
-As can be seen, the ancestor objects of "Amazon", "Editor" and "Preferences" aren't written to dumped text data.
+As can be seen, the ancestor objects of "Amazon", "Editor" and "Preferences" aren't output to the dumped text data.
 If the desire is to write out the ancestor JSON objects to the Editor Preference settings, then the "m\_jsonPointerPrefix" variable can be set in the DumperSettings
 
 <a id="dump-preferences-with-key-and-anchor"></a>
@@ -220,7 +221,7 @@ By using an include filter, the hierarchy of JSON keys on the way to the Editor 
 <a id="saving-preferences-to-file"></a>
 ### Example: Saving the Editor Preferences section of the Setting Registry to a file
 
-The following example below is how to use the SettingsRegistryMergeUtils DumpSettingsRegistryToStream function to save the Editor Preferences to a file the User local registry location(<root>/User/Registry)
+The example below is how to use the SettingsRegistryMergeUtils DumpSettingsRegistryToStream function to save the Editor Preferences to a file the User local registry location(<root>/User/Registry)
 
 **Dumping the Editor Preferences to a file** Expand source
 

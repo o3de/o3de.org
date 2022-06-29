@@ -159,24 +159,24 @@ The following files are used illustrate the difference between a \*.setreg and a
 
 # Setting up a Settings Registry
 
-The simplest way to create a settings registry is to create an instance of the AZ::SettingsRegistryImpl class.
-That by defaults creates an empty settings registry that can be used locally by a particular library or class.
+The simplest way to create a settings registry is to create an instance of the `AZ::SettingsRegistryImpl` class.
+That by creates an empty settings registry that can be used locally by a library or gem.
 
 Now the method to creating a global settings involves creation of an AZ::ComponentApplication(or a class derived from it).
 Creating an instance of the AZ::ComponentApplication creates a AZ::SettingsRegistryImpl instance that gets registry with an AZ::Interface that is accessible via the name of "AZ::SettingsRegistry".
 
 Next it scans the global user ~/.o3de/Registry folder and populates it's contents into the Settings Registry.
-The global user registry folder is also merged a second again after all the settings registry paths are merged(Engine, Gems, Project,) to make sure the user settings overrides all other settings except for command line settings.
+The global user registry folder is also merged a second time after all the settings registry paths are merged(Engine, Gems, Project,) to make sure the user settings overrides all other settings except for command line settings.
 Next any --regset/-regremove options specified on the command line are read and merged into the Settings Registry
 The ComponentApplication then request that the settings registry populates runtime file paths based on the bootstrap settings.
 The runtime file paths are all located under the json path of "/O3DE/Runtime/FilePaths"
 There are a couple of Utility functions to help with retrieving important paths and the project name
 
-*   AZ::Utils::GetEnginePath() - Retrieves the absolute path to the engine root
-*   AZ::Utils::GetProjectPath() - Retrieves the absolute path to the project root
-*   AZ::Utils::GetProjectName() - Retreives the name of the project as specified in the `<ProjectRoot>/project.json` file
-*   AZ::Utils::GetExecutableDirectory() - Retrieves the absolute path to the directory containing the executable
-*   AZ::Utils::GetO3deManifestDirectory() - Retrieves the absolute path .o3de directory inside the user home: `~/.o3de`
+*   AZ::Utils::GetEnginePath() - Queries the absolute path to the engine root
+*   AZ::Utils::GetProjectPath() - Queries the absolute path to the project root
+*   AZ::Utils::GetProjectName() - Queires the name of the project as specified in the `<ProjectRoot>/project.json` file
+*   AZ::Utils::GetExecutableDirectory() - Queries the absolute path to the directory containing the executable
+*   AZ::Utils::GetO3deManifestDirectory() - Queries the absolute path .o3de directory inside the user home: `~/.o3de`
 
 
 <a id="SettingsRegistryCreation"></a>
@@ -189,9 +189,9 @@ To clarify, default construction of an AZ::ComponentApplication is enough to cre
 ### Default .setreg/.setregpatch search locations
 ---
 
-The ComponentApplication global SettingsRegistry by  attempts to load settings registry files within the following paths by default.
+The ComponentApplication global SettingsRegistry attempts to load settings registry files within the following paths by default.
 
-1.  The `~/.o3de/Registry` folder is then scanned for global user settings.
+1.  The `~/.o3de/Registry` folder is scanned for global user settings.
     It is located in the user home directory.
     Normally this is `C:\Users\<user>\.o3de\Registry` on Windows, `/home/<user>/.o3de/Registry` on Linux and `/Users/<user>/.o3de/Registry` on Mac
 2.  The Command Line allows setting a value within the Settings Registry via
@@ -201,7 +201,7 @@ The ComponentApplication global SettingsRegistry by  attempts to load settings r
     4.  The registry can be dumped using a supplied json pointer path via the "--regdump" switch to stdout.
     5.  Finally the entire Settings Registry can be dumped to stdout is supported by using the "--regdumpall" switch.
         More Information can be found in the [Command Option API](#CommandLineAPI)
-3.  The `<EngineRoot>/Registry` folder is search are searched for settings first.
+3.  The `<EngineRoot>/Registry` folder is searched for settings.
 4.  Next each gem's `<GemRoot>/Registry` folder is searched for settings.
 5.  A registry folder within the Project path is searched for settings next: `<ProjectRoot>/Registry`
 6.  Afterwards the global user setting registry located at `~/.o3de/Registry` is merged again to make sure the global user settings override any engine, gem or project settings
@@ -219,7 +219,7 @@ The Project's GameLauncher and ServerLauncher applications have an additional se
 ### AssetProcessor SettingsRegistryBuilder
 ---
 
-The AssetProcessor contains a builder for aggregating all of the settings from the following locations as well as the command line that was supplied to the invocation of the AssetProcessor into a `bootstrap.game.<config>.<platform>.setreg` file
+The AssetProcessor contains a builder for aggregating all of the settings from the following locations as well as the command line that was supplied to the invocation of the AssetProcessor into a `bootstrap.game.<config>.setreg` file
 
 The settings are loaded in the following order and merged into a single local Settings Registry which is then serialized out to the bootstrap.game.\*.setreg files
 
@@ -232,19 +232,25 @@ The settings are loaded in the following order and merged into a single local Se
 
 For example on android the following files will be output to the project's asset cache android folder
 
-*   bootstrap.game.debug.android.setreg
-*   bootstrap.game.profile.android.setreg
-*   bootstrap.game.release.android.setreg
+*   bootstrap.game.debug.setreg
+*   bootstrap.game.profile.setreg
+*   bootstrap.game.release.setreg
 
 
 When loading applications in non-monolithic mode, the `<ExeDirectory>/Registry` is searched for a cmake\_dependencies.\*.setreg which contains the list of gems to load. For non-host platforms such as Android or iOS where the files are deployed according to a specific layout, the `<ProjectCachePlatformRoot>/Registry` is searched as well. This is explained in more detail below in the Loading Gems section.
+
+---
+**NOTE**: Stale Settings Troubleshooting
+
+If the GameLauncher or ServerLauncher application is launched before the Asset Processor has the opportunity to update the `bootstrap.game.<config>.setreg` file, then  up-to-date settings might not load until until the next run of the launchers.
+---
 
 <a id="GemExistence"></a>
 ### Gems may exist outside of `<EngineRoot>/Gems` folder
 
 The list of gem root folder paths are populated via CMake when it generates the build files for a platform.
 
-Since CMake knows where the CMakeLists.txt for each gem it is processing is located, it is able generate a .setreg file with a list of gems that have been built for particular CMake target.
+Since CMake knows the CMakeLists.txt location for each gem, it's able generate a .setreg file with a list of gems for each CMake targets that sets a "Gem Variant" to load. This done by using the `ly_set_gem_variant_to_load` command.
 This list includes the filename of the gem and the relative path to the gem directory based on the source directory supplied to CMake during configuration.
 
 The big benefit of this is that if a gem is added outside of the `<EngineRoot>` location using the cmake [add\_subdirectory](https://cmake.org/cmake/help/v3.18/command/add_subdirectory.html) command, the settings registry will still be able to load any .setreg files within the `<GemRoot>/Registry` directory.
@@ -368,15 +374,16 @@ if (settingsRegistry)
 ### [Visitor Based API](#visitor-based-api)
 ---
 
-The visitor API is the preferred API for querying objects. It supports recursively visiting the JSON object and array children starting at a specified json pointer.
+The visitor API is the allows querying settings objects. It supports recursively visiting the JSON object and array children starting at a specified json pointer.
 
-A Visitor for the settings registry must implement the `AZ::SettingsRegistryInterface::Visitor` class.
+A visitor for the settings registry must implement the `AZ::SettingsRegistryInterface::Visitor` class.
 
 An instance of that class can be supplied to the `AZ::SettingsRegistryInterface::Visit()` method.
 
-The visitor is recommended when serializing in/out complex objects. It has the benefit that isn't tied the SerializeContext, therefore the same logic could be used to read objects from the SettingsRegistry using the generic JSON facilities available within other programming languages such as Python, JavaScript, C#, etc...
+The visitor is recommended when serializing in/out complex objects that don't have any SerializeContext reflection.
+Since it isn't tied to the SerializeContext the same logic could be used to read objects from the SettingsRegistry using the JSON facilities available within other programming languages such as Python, JavaScript, C#, etc...
 
-The visitor method allows for processing of each field in a manner that isn't available in the SerializeContext.
+The visitor API allows for processing of each child field which isn't available when using the `GetObject` API.
 
 It is also provides type flexibility when it comes with dealing with the json data. Visitor API: [https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L185-L194](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L185-L194)
 
@@ -416,7 +423,7 @@ auto GemSettingsVisitor = [&settingsRegistry, &gemInfoList]
     }
 };
 
-// Viist the "/O3DE/Gems" setting object to query the data for all active gems
+// Visit the "/O3DE/Gems" setting object to query the data for all active gems
 AZ::SettingsRegistryVisitorUtils::VisitObject(settingsRegistry, GemSettingsVisitor,
     AZ::SettingsRegistryMergeUtils::ActiveGemsRootKey);
 
@@ -508,7 +515,7 @@ The Settings Registry `SettingsRegistryInterface::Set` function can be used to s
 
 The Supported types are `bool`, `AZ::s64/AZ::u64`, `double`, `AZStd::string_view`
 
-The following code snippet shows how to add several directoriesto the Settings Registry as well as plain arithmetic vlaue
+The following code snippet shows how to add several directories to the Settings Registry as well as plain arithmetic values
 
 ```c++
 // Executable folder - corresponds to the @exefolder@ alias
@@ -605,23 +612,23 @@ AZ::SettingsRegistryInterface::NotifyCallback assetCacheChangedCB =
     // ...
     registry.Set("/O3DE/Runtime/FilePaths/CacheRootFolder", "/home/testuser/TestCache");
 }
- // When the assetChangedHandler scope ends, will unregister itself with the Settings Registry Notifier event
- // If the handler is desired to persist, it can be stored in a member variable to extend it's lifetime
+ // When the assetChangedHandler scope ends, it will unregister from the Settings Registry Notifier event
+ // If the handler is desired to persist, it can be stored in a member variable to extend its lifetime
 
 ```
 
 ## Merge API
 -----------------
 
-The most complex part of the Settings Registry is the merging API. There three primary types of input that can be supplied to the Settings Registry for merging.
+The most complex part of the Settings Registry is the merging API. There are three primary types of input that can be supplied to the Settings Registry for merging.
 
 1.  Input with the syntax \<JSONPointerPath>=\<value>. It is treated as if command line parameters are being merged
 2.  An in-memory json document
 3.  A path to a file/folder containing .setreg/setregpatch files.
 
-The order in which settings are merged to the registry is important. Keys root at the same location that merged later have precedence over keys seen earlier.
+The order in which settings are merged to the registry is important. Keys that are merged later have precedence over keys seen merged earlier.
 
-i.e If there is "file1.setreg" that has the content at key "/O3DE/AzFramework/MyArray"
+i.e If there is "streamer.setreg" that has the content at key "/O3DE/AzFramework/MyArray"
 
 ```json
 {
@@ -645,7 +652,7 @@ i.e If there is "file1.setreg" that has the content at key "/O3DE/AzFramework/My
 
 ```
 
-and a "file1.a.setreg" that is merged later with the same "/O3DE/AzFramework/MyArray" key
+and a "streamer.editor.setreg" that is merged later with the same "/O3DE/AzFramework/MyArray" key
 
 ```json
 {
@@ -680,11 +687,11 @@ The settings registry will contain the following keys and values
 "/O3DE/AzFramework/MyObject/AssetKey" = "{80CCDA30-1F70-4982-ADE9-62D3DEE332D4}"
 ```
 
-The values that are associated with the json array underneath the "/O3DE/AzFramework/MyArray" key are from the merger of the "file1.setreg" file has been replaced with the values of the "file1.a.setreg" file
+The values that are associated with the json array underneath the "/O3DE/AzFramework/MyArray" key are from the merger of the "streamer.setreg" file has been updated with the values of the "streamer.editor.setreg" file
 
 Here are the functions available on the Settings registry for merging json data Merge API: [https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L311-L375](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L311-L375)
 
-Merging a folder of containing .setreg/setregpatch files into the settings registry is more involved than directly merging a specific .setreg/.setregpatch file or merging a json document. It involves supplying a list of tags known as "Specializations "to the Settings Registry which will be explained in the next secntion
+Merging a folder of containing .setreg/setregpatch files into the settings registry is more involved than directly merging a specific .setreg/.setregpatch file or merging a json document. It involves supplying a list of tags known as "Specializations" to the Settings Registry which will be explained in the next section
 
 ### [Merging settings registry files within both the executable directory and the asset cache root directory](#merging-settings-registry-files-within-both-the-executable-directory-and-the-asset-cache-root-directory)
 
@@ -749,8 +756,8 @@ The Settings Registry Merge Utilities also provide a set of helper functions for
 <a id="setting-registry-specializations-folder-merging"></a>
 # Setting Registry Specializations - Folder Merging
 
-Specializations are set of tags that can be used to filter which .setreg/setregpatch files to load within a particular folder. The tags are part of a filename that \*.setreg files are allowed to contain. Not all tags within the tag set are required to be matched as part of the filename, but any parts of the filename which do not match a tag in the Specializations object results in a failed match. The specification of a setreg file is as follows:  
-\<filename stem> [.\<tag1>\] \[.\<tag2>\] ... \[.\<tagN>\] ".setreg"  
+Specializations are set of tags that can be used to filter which .setreg/setregpatch files to load within a particular folder. The tags are part of a filename that \*.setreg files are allowed to contain. Not all tags within the tag set are required to be matched as part of the filename, but any parts of the filename which do not match a tag in the Specializations object results in a failed match. The specification of a setreg file is as follows:
+\<filename stem> [.\<tag1>\] \[.\<tag2>\] ... \[.\<tagN>\] ".setreg"
 Therefore a settings registry file with the name of "bootstrap.game.windows.profile.setreg", has a filename of "bootstrap" and tags of "game", "windows and "profile". In order to load the preceding file using the `AZ::SettingsRegistry::MergeSettingsFolder` function a Specializations object with the tags of "game", "windows" and "profile" stored within it are needed. That Specializations object can have additional tags added to it and it would still be able to load the "bootstrap.game.windows.profile.setreg file.
 
 The Specializations object can be thought of as an allowlist of ".\<tag>." values that can be part of the settings registry file name.
@@ -785,8 +792,18 @@ A table detailing which types of files will be loaded using the example speciali
 An alternative to using the Specialization system of the `AZ::SettingsRegistryInterface::MergeSettingsFolder` function is to load each file through the `AZ::SettingsRegistryInterface::MergeSettingsFile` function
 
 1.  Use AZ::IO::SystemFile::FindFiles to search for .setreg/.setregpatch files.
-2.  Then pass each file to AZ::SettingsRegistryInterface::MergeSettingsFile
+1.  To gather files .setreg/.setregpatch files for the specific OS platform, a second call to AZ::IO::SystemFile::FindFiles can be performed by appending the directory of `"Platform" / AZ_TRAIT_OS_PLATFORM_CODENAME` to the folder being searched.
+i.e `<ExeDirectory>/Registry/Platform/Windows`
+1.  Then pass each file to AZ::SettingsRegistryInterface::MergeSettingsFile
 
+<a id="merging-pal-folders"></a>
+### Merging Platform Abstraction Layer(PAL) folders
+---
+
+The `AZ::SettingsRegistry::MergeSettingsFolder` allows users to supply an optional platform name to indicate an OS platform folder to search for .setreg/.setegpatch files.
+This allows merging of platform specific settings by supplying the `platform` parameter.
+This parameter should be set to an empty string if platform specific settings are not desired to be loaded.
+For loading platform specific settings for the current OS the [AZ_TRAIT_OS_PLATFORM_CODENAME](https://github.com/o3de/o3de/blob/37b1216015567fb7faa49fe7e3f6f7a73379e06a/Code/Framework/AzCore/Platform/Linux/AzCore/AzCore_Traits_Linux.h#L41) define should be used which expands to the current platform.
 
 ## Adding Specializations via the Command Line
 ---
@@ -964,12 +981,12 @@ Editor.exe --regdump="/Amazon/AzCore/Bootstrap"
 ## Automatically loading the list of gem build dependencies for an Application
 ---
 
-Part of the Engine Initialization and Configuration work that uses the settings registry was to support using CMake to output a list of "tag" build dependencies for a CMake Target that should load through the O3DE module system.
+CMake is used to output a list of tagged .setreg files(`cmake_dependencies.<target>.setreg`), which contain the build dependencies of a CMake Target that should load through the O3DE module system.
 This is used to automatically load gems based on the build dependencies of a CMake Target.
 
-With these changes, listing the gem modules to load through the Game.xml/Editor.xml file is no longer used
+The use of Game.xml and Editor.xml in earlier versions has been deprecated and replaced with the mechanic described above.
 
-The following illustrates how to generate a settings registry(.setreg) file that contains a list of gem build dependencies for a VoxelEditor CMake Target.
+The following illustrates how to generate a settings registry(.setreg) file that contains a list of gem build dependencies for a *hypothetical* VoxelEditor CMake Target.
 
 First the CMakeLists.txt for the VoxelEditor feature is modified to add the following
 
@@ -1023,6 +1040,8 @@ if(PAL_TRAIT_BUILD_HOST_TOOLS)
     ly_create_alias(NAME Atom_AtomBridge.Tools    NAMESPACE Gem TARGETS Gem::Atom_AtomBridge.Editor)
 endif()
 ```
+
+Configuring CMake then generates the following setreg file for the user underneath their executable directory "Registry" folder.
 
 <a id="cmake-dependencies-voxel-editor"></a>
 ### cmake\_dependencies.voxeleditor.setreg (Voxel Editor)
@@ -1128,7 +1147,7 @@ ly_add_target(
 )
 
 # if enabled, AtomTest gem is used by the Client and Server Launchers as well as Tools
-# But it it isn't needed in Buildes
+# But it it isn't needed in Builders
 ly_create_alias(NAME AtomTest.Clients NAMESPACE Gem TARGETS Gem::AtomTest)
 ly_create_alias(NAME AtomTest.Servers NAMESPACE Gem TARGETS Gem::AtomTest)
 ly_create_alias(NAME AtomTest.Tools   NAMESPACE Gem TARGETS Gem::AtomTest)
@@ -1152,8 +1171,6 @@ At CMake generate time the following settings registry files will be generated w
 ```
 
 The generated project .setreg files has the format of "cmake\_dependencies.\<ProjectNameLower>.\<CMakeTargetNameLower>.setreg"
-
-The reason the Project Name is part of the cmake\_dependencies.\*.setreg filename
 
 The reason why the project name is part of the generated "cmake\_dependencies.\*.setreg" file is that O3DE currently allows configuring multiple projects at once, yet each of those projects would use the same applications for tools.
 
@@ -1218,8 +1235,8 @@ The following are example of using the o3de python script commands to add and re
 ---
 
 As part of the cmake project generation step, it generates a cmake\_dependencies.\*.setreg file that contains a list of gems to load.
-Until now, no steps have been provided from being preventing applications from automatically loading those list of gems.
-To prevent autoloading of a specific gem an JSON boolean value fo  \`false\` could set at the in JSON pointer format for the gem using the path of `"/O3DE/Gems/${GemName}/${TargetModule}/AutoLoad"`.
+Until now, no steps have been provided to prevent applications from automatically loading that list of gems.
+To prevent autoloading of a specific gem a JSON boolean value of \`false\` could set at the in JSON pointer format for the gem using the path of `"/O3DE/Gems/${GemName}/${TargetModule}/AutoLoad"`.
 
 For example a \*.setreg placed in the `"<project-root>/Registry/"` folder which sets the `"/O3DE/Gems/${GemName}/${TargetModule}/AutoLoad=false"` value.
 
@@ -1382,8 +1399,8 @@ Below is an example of converting the `AssetProcessorPlatformConfig.ini` and the
 ## MSVC Debugging
 ---
 
-The Settings Registry maintain is settings in a `rapidjson::Document` that is member that is part of the `AZ::SettingsRegistryImpl`.
+The Settings Registry maintain it settings in a `rapidjson::Document` that is member variable in `AZ::SettingsRegistryImpl`.
 
-The rapidjson 3rdParty provides a Native Visualizer file for the MSVC debugger which makes it easy to recurse through `rapidjson::Value` and `rapidjson::Document` instances. This natvis file is part of AzCore, so nothing needs to be done to visualize these fields in Visual Studio
+The rapidjson 3rdParty provides a Native Visualizer(.natvis) file for the MSVC debugger which makes it easy to recurse through `rapidjson::Value` and `rapidjson::Document` instances. This natvis file is part of AzCore, so nothing needs to be done to visualize these fields in Visual Studio
 
 Expanding the `AZ::SettingsRegistryImpl::m_settings` provides a view of the values within the Settings Registry. This allows for drilling down to a particular json entry within the Settings Registry to determine whether the entry exist and if so its value.

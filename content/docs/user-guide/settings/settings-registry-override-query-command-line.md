@@ -15,7 +15,7 @@ weight: 400
 Overriding the Settings Registry via the "--regset" option
 ===
 
-Any value within the Settings Registry can be overridden by specifying the json pointer path and the new value to set by using the "--regset" option
+Any value within the Settings Registry can be overridden by specifying the json pointer path and the new value to set by using the "--regset" option.
 
 The following illustrates how to override the Game Project for the Editor using the Settings Registry
 
@@ -32,14 +32,14 @@ Retrieving the Command Line Parameters used to launch an Application from the Se
 As part of the ComponentApplication initialization, the command line that was used to launch the application is parsed into optional and positional arguments and then stored within the Settings Registry.  
 Positional parameters are arguments without any "option"(or key) associated with them.
 
-Optional parameters have an "option" name associated with them such as "--project-path /path/to/project/root".  
+Optional parameters have an "option" name associated with them such as "--project-path /path/to/project/root".
 The option in this case is "project-path" and the value is "/path/to/project/root".  
-The can be multiple values associated with a single option. Therefore all of the values are stored within an "array"
+There can be multiple values associated with a single option. So all of the values are stored within an array.
 
 Command Line positional parameters are stored underneath the JSON pointer of `"/O3DE/Runtime/CommandLine/MiscValues"`  
 Command Line optional parameters are stored underneath the JSON pointer of `"/O3DE/Runtime/CommandLine/Switches"`
 
-  
+
 <a id="settings-registry-command-line-marshaling-api"></a>
 Settings Registry - Command Line Marshaling API
 ---------------------------------------------------------------------------------------------------
@@ -57,7 +57,7 @@ bool GetCommandLineFromRegistry(SettingsRegistryInterface& registry, AZ::Command
 ```
 
 Reference: [SettingsRegistryMergeUtils.h](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L265-L271)
-  
+
 
 <a id="example-query-command-line-values"></a>
 Example - Retrieving all command line values stored within the Settings Registry
