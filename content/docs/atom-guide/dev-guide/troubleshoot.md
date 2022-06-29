@@ -64,3 +64,24 @@ You can enable validation in your RHI device to output additional debugging info
 - `--rhi-device-validation="enable"`: Enables basic driver validation.
 - `--rhi-device-validation="verbose"`: Enables basic driver validation and additional reporting.
 - `--rhi-device-validation="gpu"`: Enables GPU-based validation (GBV). This validation mode runs slower, but catches issues that the `enable` and `verbose` modes may not catch. Note that this mode may produce false positives.
+
+
+## DRED logs (Windows DirectX Only)
+
+When a Timeout Detection and Recovery (TDR) crash occurs while using the DirectX12 backend, [Device Removed Extended Data](https://microsoft.github.io/DirectX-Specs/d3d/DeviceRemovedExtendedData.html) (DRED) breadcrumbs
+are written to a timestamped log file in `.o3de/Logs/DRED/`. This log contains all of the events, draws, barriers, and dispatches that led up to a crash, as well as commands that failed to complete.
+The offending command that likely caused the device removal will be visible after the `===ERROR START===` and before the `===ERROR END===` lines in the log. 
+
+**Example**
+
+An example of a log with DRED breadcrumbs that's displayed in the Windows LogViewer.
+
+<img src="/images/atom-guide/dev-guide/dred_log_sample.png" alt="DRED Log Sample" style="max-width: 800px"/>
+
+The red lines demarcate the region containing the offending command. Depending on how much work was in-flight on the GPU at the time of the crash, the error region may be larger or smaller. In this example, the offending command was a single `DRAWINSTANCED` command, issued within the `FullsceenShadowPass`.
+
+{{< note >}}
+The log above contains labeled events with pass names because the engine was compiled with the `-DLY_PIX_ENABLED` CMake configuration flag. For information about integrating [Microsoft's PIX Event Runtime for Windows](https://devblogs.microsoft.com/pix/winpixeventruntime/), please follow the directions in the O3DE Wiki page, [CPU& GPU Debugging and Profiling Tools](https://github.com/o3de/o3de/wiki/CPU-&-GPU-Debugging-and-Profiling-Tools#pix-cpu--gpu-profiling).
+
+For more details about the operation of DRED, consult the DirectX specification on [`WriteBufferImmediate`](https://microsoft.github.io/DirectX-Specs/d3d/D3D12WriteBufferImmediate.html) and [DRED](https://microsoft.github.io/DirectX-Specs/d3d/DeviceRemovedExtendedData.html).
+{{< /note >}}

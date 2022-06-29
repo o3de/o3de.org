@@ -12,6 +12,7 @@ Find these common **Open 3D Engine (O3DE)** log files in the following locations
 | **CMake** build logs | `<BUILD_DIR>/CMakeFiles/CMakeOutput.log` <br> `<BUILD_DIR>/CMakeFiles/CMakeProjectBuildError.log` |
 | **O3DE Editor** logs and dumps <br> (also used by other O3DE applications) | When project-path is set: `<PROJECT_ROOT>/user/log` <br> When project-path is not set: `<ENGINE_ROOT>/user/log` |
 | **Project Manager** logs | `<USER>/.o3de/Logs/O3DE.log` |
+| **DirectX12 Device Removed Reports** logs | `<USER>/.o3de/Logs/DRED/DRED_<TIMESTAMP>.log` |
 
 {{< note >}}
 Event logs with the `.azel` extension can be read using the TraceViewer script: `<ENGINE_ROOT>/Tools/EventLogTools/TraceViewer.py`.
