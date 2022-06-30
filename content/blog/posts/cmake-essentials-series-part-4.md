@@ -6,8 +6,6 @@ author: Tom Hulton-Harrop
 blog_img: ""
 full_img: ""
 ---
-# CMake Essentials Series - Part 4
-
 ## Topic
 
 In this last installment we’ll cover the necessary commands to install a library for use in other projects.
