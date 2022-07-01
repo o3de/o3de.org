@@ -3,11 +3,9 @@ title: "CMake Essentials Series - Part 3"
 date: 2022-10-12
 slug: cmake-essentials-series-part-3
 author: Tom Hulton-Harrop
-blog_img: ""
+blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: ""
 ---
-# CMake Essentials Series - Part 3
-
 ## Topic
 
 How to integrate larger third-party dependencies into your CMake projects and reuse them across multiple projects.
