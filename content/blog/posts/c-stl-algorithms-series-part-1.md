@@ -3,11 +3,9 @@ title: "C++ STL Algorithms Series - Part 1"
 date: 2022-07-20
 slug: c-stl-algorithms-series-part-1
 author: Tom Hulton-Harrop
-blog_img: ""
+blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: ""
 ---
-## C++ STL Algorithms Series - Part 1
-
 An introduction to why you might want to start using the `<algorithm>` and `<numeric>` header more in your code.
 
 ## Motivation
