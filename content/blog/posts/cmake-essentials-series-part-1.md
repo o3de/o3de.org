@@ -7,7 +7,7 @@ blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: ""
 ---
 
-This series aims to give an overview of some of the most useful functionality in CMake and how to apply it.
+This series aims to give an overview of some of the most useful functionality in CMake and how to apply it in O3DE.
 
 ## Motivation
 
