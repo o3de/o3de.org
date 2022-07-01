@@ -58,7 +58,7 @@ The first line (`#1`) will run the CMake configure step to generate host build f
 
 ## Deliberation
 
-This might seem like mildly more work than opening Visual Studio and creating a project from there, but the massive advantage to this approach is you’ve now created a completely portable C++ program you can build from source on any operating system that supports CMake (most do!). You can easily share this with someone else to quickly build a demo application and even better, with only a few more commands it’s possible to start integrating third-party libraries (no more searching through include paths and linker settings in Visual Studio configuration windows).
+This might seem like mildly more work than opening Visual Studio and creating a project from there, but the massive advantage to this approach is you’ve now created a completely portable C++ program you can build from source on any operating system that supports CMake (most do!). You can easily share this with someone else to quickly build a demo application and even better, with only a few more commands it’s possible to start integrating third-party libraries. (No more searching through include paths and linker settings in Visual Studio configuration windows.)
 
 ## Further Reading
 
