@@ -32,7 +32,17 @@ target_link_libraries(${PROJECT_NAME} PRIVATE EasyIterator) #7
 ...
 ```
 
-First we need to bring the CMake `FetchContent` module into our `CMakeLists.txt` file (`#1`). We then declare the library we'd like to use with `FetchContent_Declare` (`#2`). We give the dependency a name (`#3`) and point it to the git repo of the library we'd like to use (`#4`) (`GIT_REPOSITORY` is only one of many options such as `SOURCE_DIR` for a local path). Finally it's good practice to pin the version of the library to a specific commit (or a tag if one exists) so subsequent upstream changes don't break us immediately. `FetchContent_MakeAvailable` (`#6`) then does quite a lot of work behind the scenes but essentially just makes the targets available to be used by our application. The last thing we need to do is just link against the dependency (`#7`). The great thing about this is so long as the project we're depending on has been setup correctly, there's no need to touch include or library paths, everything is handled upstream and isn't our concern.  
+First we need to bring the CMake `FetchContent` module into our `CMakeLists.txt` file (`#1`).
+
+We then declare the library we'd like to use with `FetchContent_Declare` (`#2`).
+
+We give the dependency a name (`#3`) and point it to the git repo of the library we'd like to use (`#4`) (`GIT_REPOSITORY` is only one of many options such as `SOURCE_DIR` for a local path).
+
+Finally it's good practice to pin the version of the library to a specific commit (or a tag if one exists) (`#5`) so subsequent upstream changes don't break us immediately.
+
+`FetchContent_MakeAvailable` (`#6`) then does quite a lot of work behind the scenes but essentially just makes the targets available to be used by our application.
+
+The last thing we need to do is just link against the dependency (`#7`). The great thing about this is that as long as the project we're depending on has been set up correctly, there's no need to touch include or library paths, everything is handled upstream and isn't our concern.  
   
 With that we can write an improved 'Hello, \<planet\>' program that outputs the index at each iteration
 
