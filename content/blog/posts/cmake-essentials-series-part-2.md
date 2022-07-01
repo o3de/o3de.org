@@ -71,6 +71,6 @@ for (auto [index, planet] : easy_iterator::enumerate(planets)) {
 
 The CMake [`FetchContent` docs](https://cmake.org/cmake/help/latest/module/FetchContent.html) aren't a bad place to start for more information.  
   
-There's also another intro CMake video titled ['CMake for Dummies'](https://youtu.be/7W4Q-XLnMaA) (_the video quality isn't the best but does a great job covering the basics of using CMake_). 
+There's also another intro CMake video titled ['CMake for Dummies'](https://youtu.be/7W4Q-XLnMaA). (_The video quality isn't the best but it does a great job covering the basics of using CMake_.)
   
 _Disclaimer: The views expressed here are those of the individual author and do not represent those of the Open 3D Foundation, Open 3D Engine or individual's respective company._
