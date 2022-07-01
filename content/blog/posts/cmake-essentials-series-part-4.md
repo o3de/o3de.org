@@ -85,7 +85,7 @@ There’s also a lot more information on the repo mentioned last week with plent
 
 * [CMake Examples](https://github.com/pr0g/cmake-examples)
 
-There’s also a little set of CMake install helpers available here that take some of the boilerplate out of installing a new library
+There’s also a little set of CMake install helpers available here that take some of the boilerplate out of installing a new library:
 
 * [CMake Helpers](https://github.com/pr0g/cmake-helpers)
 
