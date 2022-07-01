@@ -3,11 +3,9 @@ title: "C++ STL Algorithms Series - Part 4"
 date: 2022-08-31
 slug: c-stl-algorithms-series-part-4
 author: Tom Hulton-Harrop
-blog_img: ""
+blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: ""
 ---
-## C++ STL Algorithms Series - Part 4
-
 ## Topic
 
 This week we’ll be looking at where algorithms can lead us into trouble and how we can avoid falling into these traps. (_This article is a little longer than usual, normal programming will resume next week_).
