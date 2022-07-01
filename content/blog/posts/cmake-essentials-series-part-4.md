@@ -81,7 +81,7 @@ To learn more about installing I recommend watching this excellent talk by Craig
 
 * [Deep CMake for Library Authors](https://youtu.be/m0DwB4OvDXk)
 
-There’s also a lot more information on the repo mentioned last week with plenty of examples
+There’s also a lot more information on the repo mentioned last week with plenty of examples:
 
 * [CMake Examples](https://github.com/pr0g/cmake-examples)
 
