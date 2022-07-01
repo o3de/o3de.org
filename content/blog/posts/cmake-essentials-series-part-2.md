@@ -65,7 +65,7 @@ for (auto [index, planet] : easy_iterator::enumerate(planets)) {
 
 ## Deliberation
 
-`FetchContent` is fantastic for small simple libraries that are fast to build. The dependency is built directly along with our application (the dependencies actually wind up in `build/_deps`). For larger dependencies we might want to build them separately first at an earlier stage and then bring them in with the `find_package` command (more on this next time...). `FetchContent` also only works with projects that build using CMake (though the vast majority now do and even those that don't often have community maintained CMake versions (check out [bgfx.cmake](https://github.com/bkaradzic/bgfx.cmake) as an example).
+`FetchContent` is fantastic for small, simple libraries that are fast to build. The dependency is built directly along with our application. (The dependencies actually wind up in `build/_deps`.) For larger dependencies we might want to build them separately first at an earlier stage and then bring them in with the `find_package` command (more on this next time...). `FetchContent` also only works with projects that build using CMake, although the vast majority now do and even those that don't often have community maintained CMake versions. Check out [bgfx.cmake](https://github.com/bkaradzic/bgfx.cmake) as an example.
 
 ## Further Reading
 
