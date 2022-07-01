@@ -54,7 +54,7 @@ Applications of `accumulate` and `transform` (look out for this in an upcoming a
 
 ## Further Reading
 
-If you’re getting more interested in algorithms the next must-watch talk is
+If you’re getting more interested in algorithms the next must-watch talk is:
 
 > [Algorithm Intuition](https://youtu.be/48gV1SNm3WA) by Conor Hoekstra
 
