@@ -32,9 +32,17 @@ target_sources(${PROJECT_NAME} PRIVATE main.cpp) # 4
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17) # 5
 ```
 
-First we set the CMake version (`#1`). This line always has to come first in a top-level CMakeLists.txt file (`3.15` is a safe bet but feel free to pick a newer version). Next is the `project` command (`#2`), this should immediately follow `cmake_minimum_required` (`LANGUAGES` is optional but good practice). We then create the target to build (`#3`), in this case an executable (`${PROJECT_NAME}` maps to `cmake-essentials-part1`, the name set in the `project` command). Following that we set the sources to be built (`#4`). As with all* `target_` commands me must specify the scope of the items - here we use `PRIVATE` as these files are not going to be relied on by some downstream dependency. Finally we set the C++ version (`#5`), which again is not strictly required but good practice (note we’re not touching compiler flags here, CMake will handle this for us).
+First we set the CMake version (`#1`). This line always has to come first in a top-level CMakeLists.txt file (`3.15` is a safe bet but feel free to pick a newer version).
 
-*technically not _all,_ but it’s now best practice to always provide this even if legacy commands do work without it.
+Next is the `project` command (`#2`), this should immediately follow `cmake_minimum_required` (`LANGUAGES` is optional but good practice).
+
+We then create the target to build (`#3`), in this case an executable (`${PROJECT_NAME}` maps to `cmake-essentials-part1`, the name set in the `project` command).
+
+Following that we set the sources to be built (`#4`). As with all<sup>1</sup> `target_` commands we must specify the scope of the items - here we use `PRIVATE` as these files are not going to be relied on by some downstream dependency.
+
+Finally we set the C++ version (`#5`), which again is not strictly required but good practice (note we’re not touching compiler flags here, CMake will handle this for us).
+
+<sup>1</sup> Technically not _all_ target commands require scope, but it’s best practice to always provide this even if legacy commands work without it.
 
 `main.cpp` should look familiar:
 
