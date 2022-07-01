@@ -3,11 +3,9 @@ title: "C++ STL Algorithms Series - Part 2"
 date: 2022-08-03
 slug: c-stl-algorithms-series-part-2
 author: Tom Hulton-Harrop
-blog_img: ""
+blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: ""
 ---
-## C++ STL Algorithms Series - Part 2
-
 ## Topic
 
 Continuing from the previous entry in this series, we’re going to keep exploring some of the use-cases of `<algorithm>/<numeric>` in our day to day work.
