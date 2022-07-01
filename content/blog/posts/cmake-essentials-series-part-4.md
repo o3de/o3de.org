@@ -41,7 +41,9 @@ target_include_directories(
            $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)      #5
 ```
 
-Next we setup the include paths for the library (`#4`). Notice we use a generator expression (perhaps the topic of another ly-goodreads sometime in the future) to configure where to look for the includes. This is either as an imported target (`#5`) being used after install or part of the normal build (distinguished by `BUILD_INTERFACE` and `INSTALL_INTERFACE`).
+Next we setup the include paths for the library (`#4`). Notice we use a generator expression (perhaps the topic of another blog post sometime in the future) to configure where to look for the includes. 
+
+This is either as an imported target (`#5`) being used after install or part of the normal build (distinguished by `BUILD_INTERFACE` and `INSTALL_INTERFACE`).
 
 ```cmake
 install( #6
