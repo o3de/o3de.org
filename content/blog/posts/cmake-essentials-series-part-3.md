@@ -26,7 +26,13 @@ Suppose we would like to download, build and install Google Test for a little pr
 > cmake --build build --target install #4
 ```
 
-First we simply clone the Google Test repo and then navigate to that folder (`#1` and `#2`). We then run the CMake configure command (`#3`) and provide an install folder with `-DCMAKE_INSTALL_PREFIX` (otherwise it’d end up in `C:\Program Files` on Windows or `usr/local/lib` and `usr/local/include` on Linux/macOS). On Windows we also need to provide `-Dgtest_force_shared_crt` when building Google Test to ensure it links to the C runtime dynamically, otherwise you’ll get lots of link errors (this is just a Google Test quirk). Finally we build and then install the library (`#4`) which will copy the relevant files to the `gtest-install` folder.
+First, we simply clone the Google Test repo and then navigate to that folder (`#1` and `#2`). 
+
+We then run the CMake configure command (`#3`) and provide an install folder with `-DCMAKE_INSTALL_PREFIX` (otherwise it’d end up in `C:\Program Files` on Windows or `usr/local/lib` and `usr/local/include` on Linux/macOS). 
+
+On Windows, we also need to provide `-Dgtest_force_shared_crt` when building Google Test to ensure it links to the C runtime dynamically, otherwise you’ll get lots of link errors (this is just a Google Test quirk). 
+
+Finally, we build and then install the library (`#4`) which will copy the relevant files to the `gtest-install` folder.
 
 If we want to then use Google Test in a sample app, we can bring it in using `find_package` in our `CMakeLists.txt`. We’ll make a new folder at the same level as `googletest/` called `testing` and add this file:
 
