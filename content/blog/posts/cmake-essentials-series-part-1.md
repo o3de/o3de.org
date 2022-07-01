@@ -6,7 +6,6 @@ author: Tom Hulton-Harrop
 blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: ""
 ---
-## Topic
 
 This series aims to give an overview of some of the most useful functionality in CMake and how to apply it.
 
