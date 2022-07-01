@@ -45,7 +45,9 @@ add_executable(${PROJECT_NAME} main.cpp)
 target_link_libraries(${PROJECT_NAME} PRIVATE GTest::gtest) #2
 ```
 
-`find_package` (`#1`) will attempt to bring in the Google Test library as an imported target. `CONFIG` lets CMake know we’re using a config file (as opposed to a module file in the form `FindXXX.cmake`) and the `REQUIRED` keyword will terminate the configure step early if Google Test cannot be found. We use the `GTest` namespace when linking (`#2`) to indicate Google Test is an imported target. Our `main.cpp` is as follows:
+`find_package` (`#1`) will attempt to bring in the Google Test library as an imported target. `CONFIG` lets CMake know we’re using a config file (as opposed to a module file in the form `FindXXX.cmake`) and the `REQUIRED` keyword will terminate the configure step early if Google Test cannot be found. 
+
+We use the `GTest` namespace when linking (`#2`) to indicate Google Test is an imported target. Our `main.cpp` is as follows:
 
 ```c++
 #include "gtest/gtest.h"
