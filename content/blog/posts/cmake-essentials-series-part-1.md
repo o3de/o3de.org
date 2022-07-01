@@ -61,7 +61,9 @@ With that setup, the last thing to do is to run CMake.
 > cmake --build build # 2
 ```
 
-The first line (`#1`) will run the CMake configure step to generate host build files (on Windows this will likely default to Visual Studio and can be specified with `-G`). The following line (`#2`) will invoke whatever build system the configure step generated and leave your application in the `build` folder (with Visual Studio this will be `build/Debug/cmake-essentials-part1.exe`).
+The first line (`#1`) will run the CMake configure step to generate host build files. On Windows this will likely default to Visual Studio and can be specified with `-G`.
+
+The following line (`#2`) will invoke whatever build system the configure step generated and leave your application in the `build` folder. With Visual Studio this will be `build/Debug/cmake-essentials-part1.exe`.
 
 ## Deliberation
 
