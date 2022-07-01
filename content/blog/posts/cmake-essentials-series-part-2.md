@@ -16,7 +16,7 @@ Dependency management in C++ has always been difficult. Without any sort of pack
 
 ## Example
 
-The killer feature that makes dependency management a breeze is `FetchContent`. Let's pick-up where we left off in the last part by adding some useful functionality to our 'Hello, World!' application. Suppose we'd like to make use of an iterator library but don't want to have to copy it into our source tree and manually configure it to build ourselves. This is how we'd achieve it with `FetchContent` (new code follows the `project` command from [before](/display/lmbr/Item+10%3A+CMake+Essentials+Series+-+Part+%231)).
+The killer feature that makes dependency management a breeze is `FetchContent`. Let's pick up where we left off in the last part by adding some useful functionality to our 'Hello, World!' application. Suppose we'd like to make use of an iterator library but don't want to have to copy it into our source tree and manually configure it to build ourselves. This is how we'd achieve it with `FetchContent` (new code follows the `project` command from [Part 1](/blog/posts/cmake-essentials-series-part-1)).
 
 ```cmake
 ...
