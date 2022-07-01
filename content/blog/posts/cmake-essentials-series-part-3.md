@@ -70,7 +70,7 @@ When configuring our project, all we need to do is tell CMake where to find the 
 
 ## Deliberation
 
-The great benefit of installing libraries and using `find_package` is that first, we can share that library across multiple projects and second, we do not need to rebuild our dependencies each time we rebuild our code. For a library like Google Test we’re rarely going to be making changes to it so installing it and keeping it separate can have a huge benefit in terms of iteration time. This whole process can be automated through the use of `ExternalProject_Add` which removes some of the manual steps like cloning and building, though it’s doing the exact same thing under the hood.
+The great benefit of installing libraries and using `find_package` is that first, we can share that library across multiple projects and second, we do not need to rebuild our dependencies each time we rebuild our code. For a library like Google Test we’re rarely going to be making changes to it, so installing it and keeping it separate can have a huge benefit in terms of iteration time. This whole process can be automated through the use of `ExternalProject_Add` which removes some of the manual steps like cloning and building, though it’s doing the exact same thing under the hood.
 
 ## Further Reading
 
