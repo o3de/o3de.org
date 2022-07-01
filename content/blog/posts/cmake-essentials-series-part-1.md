@@ -3,11 +3,9 @@ title: "CMake Essentials Series - Part 1"
 date: 2022-09-14
 slug: cmake-essentials-series-part-1
 author: Tom Hulton-Harrop
-blog_img: ""
+blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: ""
 ---
-## CMake Essentials Series - Part 1
-
 ## Topic
 
 This series aims to give an overview of some of the most useful functionality in CMake and how to apply it.
