@@ -11,7 +11,7 @@ This series aims to give an overview of some of the most useful functionality in
 
 ## Motivation
 
-CMake is the most widely used build system in the C++ community and understanding how best to use it unlocks a whole host of possibilities when it comes to C++ development. Project setup becomes a breeze and integration with open source projects is made much simpler.
+CMake is the most widely used build system in the C++ community and understanding how best to use it unlocks a whole host of possibilities when it comes to C++ development in O3DE. Project setup becomes a breeze and integration with open source projects is made much simpler.
 
 ## Example
 
