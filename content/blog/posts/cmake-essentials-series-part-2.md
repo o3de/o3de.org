@@ -44,7 +44,7 @@ Finally it's good practice to pin the version of the library to a specific commi
 
 The last thing we need to do is just link against the dependency (`#7`). The great thing about this is that as long as the project we're depending on has been set up correctly, there's no need to touch include or library paths, everything is handled upstream and isn't our concern.  
   
-With that we can write an improved 'Hello, \<planet\>' program that outputs the index at each iteration
+With that we can write an improved 'Hello, \<planet\>' program that outputs the index at each iteration.
 
 ```c++
 #include <easy_iterator.h>
