@@ -6,8 +6,6 @@ author: Tom Hulton-Harrop
 blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: ""
 ---
-## Topic
-
 How to quickly integrate third party libraries with your CMake projects.
 
 ## Motivation
