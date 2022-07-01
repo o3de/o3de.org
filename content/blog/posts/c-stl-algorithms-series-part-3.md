@@ -3,12 +3,9 @@ title: "C++ STL Algorithms Series - Part 3"
 date: 2022-08-17
 slug: c-stl-algorithms-series-part-3
 author: Tom Hulton-Harrop
-blog_img: ""
+blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: ""
 ---
-## C++ STL Algorithms Series - Part 3
-
-## Topic
 
 The more familiar we become with algorithms the more places begin to emerge where they can be utilized. This time we’ll introduce `transform` and see how it can be used to solve a familiar problem.
 
@@ -62,8 +59,6 @@ The `algorithm` version is a little noisier than the `for` loop but gains functi
 For a whirlwind tour of even more algorithms check out this talk by Jonathan Boccara:
 
 > [105 STL Algorithms in Less Than an Hour](https://youtu.be/2olsGf6JIkU) by Jonathan Boccara
-
-The animations will be painful to watch for any seasoned game developer but the overview is fantastic and a helpful reminder of what all the algorithms are.
 
 ## To be continued...
 
