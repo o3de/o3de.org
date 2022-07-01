@@ -78,7 +78,7 @@ I got super into CMake a little while ago and wanted to better understand topics
 
 * [CMake Examples](https://github.com/pr0g/cmake-examples)
 
-There's also this little demo application which uses `ExternalProject_Add` to download and configure SDL, bgfx and Dear ImGui (see the `third-party/` folder)
+There's also this little demo application which uses `ExternalProject_Add` to download and configure SDL, bgfx, and Dear ImGui (see the `third-party/` folder):
 
 * [SDL-bgfx-ImGui Starter](https://github.com/pr0g/sdl-bgfx-imgui-starter)
 
