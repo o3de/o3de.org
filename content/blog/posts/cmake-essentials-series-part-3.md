@@ -74,7 +74,7 @@ The great benefit of installing libraries and using `find_package` is that first
 
 ## Further Reading
 
-I got super into CMake a little while ago and wanted to better understand topics such as installing so created a little GitHub repo with a number of simple projects to help people better learn and understand CMake. It might help some people who are just getting to grips with CMake.
+I got super into CMake a little while ago and wanted to better understand topics such as installing. So I created a little GitHub repo with a number of simple projects to help people better learn and understand CMake. It might help some people who are just getting to grips with CMake.
 
 * [CMake Examples](https://github.com/pr0g/cmake-examples)
 
