@@ -70,7 +70,7 @@ This might seem like mildly more work than opening Visual Studio and creating a 
 
 ## Further Reading
 
-One of the most widely recommended talks on CMake is an excellent presentation by Daniel Pfeifer titled 'Effective CMake'
+One of the most widely recommended talks on CMake is an excellent presentation by Daniel Pfeifer titled 'Effective CMake':
 
 > [C++ Now 2017: Daniel Pfeifer “Effective CMake"](https://youtu.be/bsXLMQ6WgIk) by Daniel Pfeifer
 
