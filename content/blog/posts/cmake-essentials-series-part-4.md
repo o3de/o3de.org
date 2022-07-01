@@ -61,7 +61,11 @@ install(
     DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME})
 ```
 
-The last three steps are the illusive `install` commands. We begin by specifying the target to install (`#6`). We set the export name (which does not need to match the target name but often does) which is the name CMake looks for when we use `find_package`. We also specify where the built library file should be installed (`${CMAKE_INSTALL_LIBDIR}` is provided by `GNUInstallDirs`). We next have to install (copy) the export file to the install location (`#7`). It’s good practice to set a namespace at this point so clients must use `calculator::calculator` to identify it as an imported target and we must also set the location of where the export file should be installed. The final invocation of `install` (`#8`) just copies the interface/header files to the expected location.
+The last three steps are the illusive `install` commands. We begin by specifying the target to install (`#6`). We set the export name (which does not need to match the target name but often does) which is the name CMake looks for when we use `find_package`. We also specify where the built library file should be installed (`${CMAKE_INSTALL_LIBDIR}` is provided by `GNUInstallDirs`). 
+
+We next have to install (copy) the export file to the install location (`#7`). It’s good practice to set a namespace at this point so clients must use `calculator::calculator` to identify it as an imported target and we must also set the location of where the export file should be installed. 
+
+The final invocation of `install` (`#8`) just copies the interface/header files to the expected location.
 
 With that all setup, it’s possible to now configure and then run `cmake --build build --target install` to build and then install the library. To set a custom install location remember to provide `-DCMAKE_INSTALL_PREFIX=<path>` to the CMake configure command.
 
