@@ -6,7 +6,6 @@ author: Tom Hulton-Harrop
 blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: ""
 ---
-## Topic
 
 How to integrate larger third-party dependencies into your CMake projects and reuse them across multiple projects.
 
