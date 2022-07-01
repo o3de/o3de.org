@@ -77,7 +77,7 @@ Hopefully this tour of CMake and some of its lesser known features has been usef
 
 ## Further Reading
 
-To learn more about installing I recommend watching this excellent talk by Craig Scott
+To learn more about installing I recommend watching this excellent talk by Craig Scott:
 
 * [Deep CMake for Library Authors](https://youtu.be/m0DwB4OvDXk)
 
