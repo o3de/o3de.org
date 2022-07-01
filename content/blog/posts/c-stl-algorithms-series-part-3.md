@@ -6,7 +6,6 @@ author: Tom Hulton-Harrop
 blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: ""
 ---
-## Topic
 
 The more familiar we become with algorithms the more places begin to emerge where they can be utilized. This time we’ll introduce `transform` and see how it can be used to solve a familiar problem.
 
