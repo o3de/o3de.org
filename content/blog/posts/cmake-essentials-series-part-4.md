@@ -6,7 +6,6 @@ author: Tom Hulton-Harrop
 blog_img: ""
 full_img: ""
 ---
-## Topic
 
 In this last installment we’ll cover the necessary commands to install a library for use in other projects.
 
