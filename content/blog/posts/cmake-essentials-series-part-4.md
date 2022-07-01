@@ -32,7 +32,7 @@ Instead of creating an executable/application we create a library (`#1`) and add
 include(GNUInstallDirs) #3
 ```
 
-We then have to bring in some standard install location paths to ensure installing is portable, these are made available by include `GNUInstallDirs` (`#3`)
+We then have to bring in some standard install location paths to ensure installation is portable, these are made available by include `GNUInstallDirs` (`#3`).
 
 ```cmake
 target_include_directories(
