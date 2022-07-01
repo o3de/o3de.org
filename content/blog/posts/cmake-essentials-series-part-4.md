@@ -73,7 +73,7 @@ With that all setup, it’s possible to now configure and then run `cmake --buil
 
 Installing isn’t likely something you’ll use often but having an understanding of what the commands do can make reading existing `CMakeLists.txt` files much easier. There’s a lot we didn’t cover, there are more advanced topics around things like versioning and custom export/config files but this should have given you enough information to get started.
 
-Hopefully this tour of CMake and some of its lesser known features has been useful. The content might not be useful today but will no doubt only become more relevant in future. If there are any questions or follow-ups about things that weren’t covered please get in touch.
+Hopefully this tour of CMake and some of its lesser known features has been useful. The content might not be useful today but will no doubt only become more relevant in future. If there are any questions or follow-ups about things that weren’t covered please get in touch on the O3DE Discord.
 
 ## Further Reading
 
