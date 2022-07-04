@@ -30,7 +30,10 @@ The PhysX Heightfield Collider component attached to an entity with an **Axis-Al
 | Tag |  Set a tag for this heightfield collider. Tags can be used to quickly identify components in script or code. | String | |
 | Rest offset |  PhysX bodies come to rest separated by the sum of their rest offset values. The **Rest offset** value must be less than the **Contact offset** value. | -Infinity to `50.0` | `0.0` |
 | Contact offset | PhysX bodies generate contacts when they are within the sum of their contact offset values. The **Contact offset** value must be greater than the **Rest offset** value. | `0.0` to `50.0` | `0.02` |
-| Draw collider |  Render this heightfield collider in the viewport. Enabled by default. | Boolean | `Disabled` |
+| Draw collider |  Render this heightfield collider in the viewport. Disabled by default. | Boolean | `Disabled` |
+| Use Baked Heightfield |  Selects between a dynamically generated heightfield or a prebaked one. A prebaked one will remain unchanged at game time even if the heightfield provider changes its data. A dynamic one will change with heightfield provider changes. Disabled by default. | Boolean | `Disabled` |
+| Baked Heightfield Relative Path |  Read-only field displaying the path to the generated baked heightfield asset. | String | |
+| Bake Heightfield | Requests the heightfield asset to be re-baked. | - | - |
 
 ## Colliders as triggers 
 
