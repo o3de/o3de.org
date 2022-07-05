@@ -307,7 +307,7 @@ The getter method of querying objects from the SerializeContext is safe to use, 
 
 The SettingsRegistryInterface GetObject interface will remain stable, but no assumptions should be made on how Objects are serialized under the hood.
 
-Getter API: [https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L224-L260](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L224-L260)
+[Getter API](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L224-L260):
 
 <a id="query-api-builtin-json-types"></a>
 ### Example of query API for builtin Settings types(`bool`, `AZ::s64`, `AZ::u64` `double`, `(fixed_)string`)
@@ -383,11 +383,10 @@ An instance of that class can be supplied to the `AZ::SettingsRegistryInterface:
 The visitor is recommended when serializing in/out complex objects that don't have any SerializeContext reflection.
 Since it isn't tied to the SerializeContext the same logic could be used to read objects from the SettingsRegistry using the JSON facilities available within other programming languages such as Python, JavaScript, C#, etc...
 
-The visitor API allows for processing of each child field which isn't available when using the `GetObject` API.
+The visitor API allows for processing of each child field which isn't available when using the `GetObject` API.  
+It is also provides type flexibility when it comes with dealing with the json data.
 
-It is also provides type flexibility when it comes with dealing with the json data. Visitor API: [https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L185-L194](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L185-L194)
-
-Example of Visitor Based API
+Example of [Visitor Based API](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L185-L194)
 
 <a id="querying-active-gem-info-o3degems"></a>
 ### Querying active gem info which is populated underneath the settings object at "/O3DE/Gems"
@@ -429,7 +428,7 @@ AZ::SettingsRegistryVisitorUtils::VisitObject(settingsRegistry, GemSettingsVisit
 
 ```
 
-There is also a set of utility classes and utility functions to help reduce the boilerplate with all the direct children fields of a json object. These classes and functions are located in the SettingsRegistryVisitorUtils.h file Visitor Utils API [https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryVisitorUtils.h](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryVisitorUtils.h)
+There is also a set of utility classes and functions to help reduce the boilerplate with all the direct children fields of a json object. These classes and functions are located in the SettingsRegistryVisitorUtils.h file which describe the [Visitor Utils API](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryVisitorUtils.h#L16-L82)
 
 For example given an JSON array as follows
 
@@ -505,7 +504,7 @@ AZ::SettingsRegistryVisitorUtils::VisitObject(*settingsRegistry, AppendObjectFie
 
 The Settings Registry allows setting values of json keys to the individual JSON types (objects, arrays, strings, bools, numbers) without the need to json documents through the .setreg
 
-The API to set values within the settings registry is the same API as for query values using the Get\*() functions. Any type that has been reflected to the SerializeContext or is either the types of either `bool`, `int64_t`, `double`, `AZStd::string_view` can be stored within the settings registry Value Setter API: [https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L262-L309](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L262-L309)
+The API to set values within the settings registry is the same API as for query values using the Get\*() functions. Any type that has been reflected to the SerializeContext or is either the types of either `bool`, `int64_t`, `double`, `AZStd::string_view` can be stored within the settings registry [Value Setter API](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L262-L309):
 
 <a id="store-builtin-settings-type-to-the-settings-registry"></a>
 ### Store a builtin Settings type to the Settings Registry(bool, AZ::s64/AZ::u64, double, string\_view)
@@ -583,7 +582,7 @@ if (settingsRegistry)
 
 The SettingsRegistry also has support for notifying users when a key at a JSON pointer within the SettingsRegistry has been modified.
 
-The SettingsRegistryInterface::RegisterNotifier function allows users to registry a callback with the SettingsRegistry that is invoked when the value of a json key is set within the SettingsRegistry Notifier API: [https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L196-L204](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L196-L204)
+The SettingsRegistryInterface::RegisterNotifier function allows users to registry a callback with the SettingsRegistry that is invoked when the value of a json key is set within the [SettingsRegistry Notifier API](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L196-L222):
 
 An example of using the Register Notifier function to listen for a change in a value is as follows
 
@@ -689,9 +688,9 @@ The settings registry will contain the following keys and values
 
 The values that are associated with the json array underneath the "/O3DE/AzFramework/MyArray" key are from the merger of the "streamer.setreg" file has been updated with the values of the "streamer.editor.setreg" file
 
-Here are the functions available on the Settings registry for merging json data Merge API: [https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L311-L375](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L311-L375)
+The merge API for the Settings Registry is linked at: [Settings Registry Merge API](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L311-L375)
 
-Merging a folder of containing .setreg/setregpatch files into the settings registry is more involved than directly merging a specific .setreg/.setregpatch file or merging a json document. It involves supplying a list of tags known as "Specializations" to the Settings Registry which will be explained in the next section
+Merging a specific .setreg/.setregpatch file or merging a json document requires only specifying the file name or json content.  Merging a folder of containing .setreg/setregpatch files requires the not only the folder name, but also specifying a list of tags known as "Specializations" to the Merge API which will be explained in a later section.
 
 ### [Merging settings registry files within both the executable directory and the asset cache root directory](#merging-settings-registry-files-within-both-the-executable-directory-and-the-asset-cache-root-directory)
 
@@ -703,7 +702,8 @@ SettingsRegistryInterface::Specializations specializations{"automatedtesting", "
 AZ::IO::FixedMaxPath mergePath = Internal::GetExecutableDirectory();
 if (!mergePath.empty())
 {
-    registry.MergeSettingsFolder((mergePath / SettingsRegistryInterface::RegistryFolder).Native(), specializations, AZ_TRAIT_OS_PLATFORM_CODENAME);
+    registry.MergeSettingsFolder((mergePath / SettingsRegistryInterface::RegistryFolder).Native(),
+        specializations, AZ_TRAIT_OS_PLATFORM_CODENAME);
 }
 
 // Look within the Cache Root directory for target build dependency .setreg files
@@ -730,27 +730,26 @@ The Settings Registry Merge Utilities also contains a function for dumping JSON 
 ## Settings Registry Merge Utils Merge API
 ---
 
-Merge to Settings Registry API : [https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L133-L263](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L133-L263)
+[Merge to Settings Registry API](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L133-L263)
 
 
 ## Settings Registry Merge Utils Specialization API
 ---
 
-Query Specialization Tag API: [https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L125-L131](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L125-L131)
+[Query Specialization Tag API](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L125-L131)
 
 
 ## Settings Registry Merge Utils Value Dumper API
 ---
 
-Settings Registry Section Dumping API: [https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L276-L304](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L276-L304)
+[Settings Registry Section Dumping API](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L276-L304)
 
 
-## Settings Registry Manifest Visit Utils API
+## Settings Registry O3DE Manifest Visit Utils API
 ---
 
-The Settings Registry Merge Utilities also provide a set of helper functions for visting the set of active gems as well as recursively visiting the O3DE manifest "external\_subdirectories" locations to determine the set of all registered gems with O3DE
-
-[https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L349-L40](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L349-L40)
+The Settings Registry Merge Utilities also provide a set of helper functions for visting the set of active gems as well as recursively visiting the O3DE manifest "external\_subdirectories" locations to determine the set of all registered gems with O3DE.  
+[O3DE Manifest Utils API](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L349-L404)
 
 
 <a id="setting-registry-specializations-folder-merging"></a>
@@ -851,13 +850,13 @@ Ex. Merging Hardware Settings
 | Platform/Android/hardware\_settings.mobile.setreg |
 | a\_hardware\_settings.core\_count\_16.mobile.setreg |
 
-The specialization tags will be checked against each of "specializations" that are part of the settings registry file name in the [SettingsRegistryImpl::ExtractFileDescription](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryImpl.h#L113) function.
+The specialization tags will be checked against each of "specializations" that are part of the settings registry file name in the [SettingsRegistryImpl::ExtractFileDescription](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryImpl.h#L113) function.
 
 The part of the filename that is a specialization in a \*.setreg(patch) file is the section after the first \<dot> character and before the extension.
 
 So "\<filename stem>.**\<tag1>**.**\<tag2>**.**\<tag3>**.setreg" is an example of a Settings Registry file that with 3 tags: "tag1", "tag2", "tag3".
 
-Each of tag of a \*.setreg file must match a tag supplied to the specialization structure that gets passed in to the [SettingsRegistryInterface::MergeSettingsFolder](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L374-L375) function.
+Each of tag of a \*.setreg file must match a tag supplied to the specialization structure that gets passed in to the [SettingsRegistryInterface::MergeSettingsFolder](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L357-L375) function.
 
 In this case with the hardware settings will be loaded from the following files highlighted in **bold** when the "specializations" parameter contains \["**core\_count\_16**", "**mobile**"\]
 
@@ -884,7 +883,7 @@ Specifically the following files have been selected
 
 The order in which the settings registry files get loaded will now be explained.
 
-The [SettingsRegistryImpl::IsLessThan()](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryImpl.cpp#L1027-L1028) function is used to sort the list of settings registry files based on the following rules
+The [SettingsRegistryImpl::IsLessThan](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryImpl.h#L110-L112) function is used to sort the list of settings registry files based on the following rules
 
 1.  The "\<filename stem>.\<tag1>.\<tag2>...\<tagN>.setreg" files would be sorted based on the lexigraphical order of the "\<filename>" portion of the setreg file.
 2.  Next for pairs of settings registry files with the same "\<filename>", the one with the fewest amount of tags would be sorted in ascending numerical order.
@@ -1319,7 +1318,7 @@ The logic for loading the list of gems is among two files.
 
 First the SettingsRegistryMergeUtils.cpp.
 
-It contains the [MergeSettingsToRegistry_TargetBuildDependencyRegistry](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L216-L220) function which is responsible for loading the "cmake\_dependencies.\<tag1>.\<tag2>.setreg" files containting the list of gems to load based on the values in its "specialization" tag structure
+It contains the [MergeSettingsToRegistry_TargetBuildDependencyRegistry](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L216-L220) function which is responsible for loading the "cmake\_dependencies.\<tag1>.\<tag2>.setreg" files containting the list of gems to load based on the values in its "specialization" tag structure
 The list of gem moudles to load are stored in the Setting Registry for later
 
 ```c++
@@ -1330,7 +1329,7 @@ void MergeSettingsToRegistry_TargetBuildDependencyRegistry(SettingsRegistryInter
 
 Next the ComponentApplication.cpp is responsible for loading the gems
 
-It is the [LoadDynamicModule](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Component/ComponentApplication.h#L297-L299) function. which reads the Settings Registry for all array keys  at the paths of "/O3DE/Gems/${GemName}/Modules" and aggregates that into a list of gems to load
+It is the [LoadDynamicModule](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Component/ComponentApplication.h#L297-L299) function. which reads the Settings Registry for all array keys  at the paths of "/O3DE/Gems/${GemName}/Modules" and aggregates that into a list of gems to load
 
 ```c++
 void ComponentApplication::LoadDynamicModules()
