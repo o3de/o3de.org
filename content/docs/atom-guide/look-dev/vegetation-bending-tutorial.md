@@ -15,7 +15,7 @@ This tutorial covers the following concepts:
 - Adding editable properties for your material type
 - Adding shader options
 - Adding passes to your material type
-- Using the ImGui to debug passes
+- Using the Pass Tree Visualizer to debug passes
 
 The VegetationBending materialtype allows materials to bend and sway, simulating how wind affects vegetation. It allows for detail bending with slight movement of branches and leaves, as well as movement of the entire object. 
 
@@ -33,7 +33,7 @@ Next, perform the following steps to get started on making the vegetation bendin
 3. Move the rest of the downloaded files to 
    `{your-path-to-o3de}\o3de\Gems\Atom\Feature\Common\Assets\Materials\Types`.
 
-These template files duplicate important parts of the `StandardPBR` files. When you create your own material types in the future, you can duplicate `StandardPBR` files and work from there.
+These template files were created by duplicating important parts of the `StandardPBR` files and then modifying them. When you create your own material types in the future, you can similalry duplicate `StandardPBR` files and work from there.
 
 As a high-level overview, `.materialtype` references the shader files we will use on the material of this material type. The `.shader` files define which types of shaders, such as vertex and pixel shaders, should be used and references the actual shader code in `.azsl` files. They also specify the `DrawList`, which is what layer the results should be drawn on. Often, `.azsl` files will just include `.azsli` files, which are also written in the Amazon shading language (AZSL), but are separate so multiple `.azsl` files can include the `.azsli` files. 
 
@@ -60,7 +60,7 @@ To start off, let's edit the vertex shader to render our shader ball at an offse
    ```hlsl
    OUT.m_position.x += 5;
    ```
-   This will adjust the position in the positive x direction by 5 units. You may wonder why we are editing `m_position` instead of `m_worldPosition`; `m_position` is the position of this vertex relative to the origin of the material, whereas `m_worldPosition` is the position of this vertex relative to the origin of the level (or world). Try out editing the other dimensions and `m_position` and `m_worldPosition` and see what they do!
+   This will adjust the position in the positive x direction by 5 units. You may wonder why we are editing `m_position` instead of `m_worldPosition`; `m_position` is the position of this vertex relative to the origin of the model, whereas `m_worldPosition` is the position of this vertex relative to the origin of the level (or world). Try out editing the other dimensions and `m_position` and `m_worldPosition` and see what they do!
 4. Make sure the **Editor** is open, if it is not already open.
 5. Save your file with **CTRL-S** and the **Asset Processor** should automatically detect changes and process the file. You can open the **Asset Processor** and check when the file is done processing. 
    {{< note >}}
@@ -111,7 +111,7 @@ For now, we have just been moving the ball an offset of `5` units. However, we m
 3. Open `o3de\Gems\Atom\Feature\Common\Assets\Materials\Types\VegetationBending_Common.azsli`.
    - This file is included in every pass of the vegetation bending material type. There are many included files to other *shader resource groups* (SRGs) and other functions in this file that are necessary for all passes.
 4. Look for `ShaderResourceGroup MaterialSRG : SRG_PerMaterial`. 
-5. Here, we will initialize the variables that we reference as the *connection name* in `VegetationBendingPropertyGroup.json`, which should be `m_xOffset` and `m_yOffset`. So, in `MaterialSRG`, add 
+5. Here, we will define the variables that we reference as the *connection name* in `VegetationBendingPropertyGroup.json`, which should be `m_xOffset` and `m_yOffset`. So, in `MaterialSRG`, add 
 
    ```
    float m_xOffset;
@@ -126,6 +126,7 @@ For now, we have just been moving the ball an offset of `5` units. However, we m
       "$import": "MaterialInputs/VegetationBendingPropertyGroup.json"
    }
    ```
+   Note that you can also place the `json` properties immediately in this `.materialtype` file, without having to import another `.json` file. 
 
 Great, now we have parameters, but let's actually use the parameters in the code and view them.
 1. Open `o3de\Gems\Atom\Feature\Common\Assets\Materials\Types\VegetationBending_ForwardPass.azsli`. 
@@ -182,7 +183,7 @@ Our tree mesh that we just added has colored vertices; however, not every mesh t
    ```
    float4 m_optional_color : COLOR0;
    ```
-   If the material's vertices are colored, `m_optional_color` will be set at runtime if it's available. Then, if `m_optional_color` is available, a soft naming convention will set `o_color_isBound` to true, which we can use later to determine if we want to perform the bending or not.
+   If the material's vertices are colored, `m_optional_color` will be set at runtime if it's available. Then, if `m_optional_color` is available, a soft naming convention will set `o_color_isBound` to true, which we can use later to determine if we want to perform the bending or not. Note that this is a very specific sub-feature of shader options, and the soft naming convention is not an example of normal shader option usage. 
    
    All of the fields are indicated by [HLSL semantics](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-semantics#vertex-shader-semantics). The engine processes the semantics and updates the fields accordingly.
 4. Inside the function `VegetationBending_ForwardPassVS`, encase the offset code with a conditional using the option boolean:
@@ -218,7 +219,8 @@ Let's add some textures to make our tree look more realistic! For the tree, we n
 6. Save your leaf material. Now, we need to repeat with the branch and the trunk. Instead of making whole new materials, we can make the leaf material the parent of the branch and trunk materials so the properties stay constant for all 3.
    1. In the **Asset Browser**, **right-click** `aspen_leaf.material`. Select **Create Child Material...** and save it in the same `Assets` folder as `aspen_bark_01.material`. Find **Base Color** in the **Inspector** and choose `aspen_bark_01.tif`.
    2. In the **Asset Browser**, **right-click** `aspen_leaf.material`. Select **Create Child Material...** and save it in the same `Assets` folder as `aspen_bark_02.material`. Find **Base Color** in the **Inspector** and choose `aspen_bark_02.tif`.
-   > Notice how the other properties are the same as the leaf's! If you edit the parent material's properties after creating these children material, it will automatically update the children materials' property values.
+
+   Notice how the other properties are the same as the leaf's! If you edit the parent material's properties after creating these children material, it will automatically update the children materials' property values. This will be important later when we adjust the bending properties so all parts of the tree remain in sync while bending.
 7. Save all 3 materials and exit the **Material Editor**. In the **Editor**, click on the tree entity (`Tree`).
 8. In the **Entity Inspector** on the right, find the **Material** component. Click the **X** to delete the **Default Material**. Under **Model Materials** > **AM_Aspen_Bark_01**, select `aspen_bark_01.material`. For **AM_Aspen_Bark_02**, select `aspen_bark_02.material`. For **AM_Aspen_Leaf**, select `aspen_leaf.material`.
 
@@ -653,7 +655,7 @@ Now that we have the previous time set up, we can actually use it in the vertex 
    ```
 3. Take a look at the pixel shader to see how the motion vector is calculated! There is no need to edit the pixel shader.
 
-Amazing, we have added everything we need to add for motion vectors! However, if you open the **Editor** and just view the tree, you'll see that there is no difference. We can, however, observe that the motion vector pass works by using [**ImGui**](../../user-guide/interactivity/physics/debugging/#debugging-with-the-imgui-tool).
+Amazing, we have added everything we need to add for motion vectors! However, if you open the **Editor** and just view the tree, you'll see that there is no difference. We can, however, observe that the motion vector pass works by using the **pass tree visualizer**.
 1. Open the **Editor** and press **CTRL-G** to enter gameplay mode.
 2. Press the **Home** key on your keyboard. This brings up the toolbar at the top.
 3. Select **Atom Tools** > **Pass Viewer**.
