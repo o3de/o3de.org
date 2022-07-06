@@ -7,11 +7,11 @@ weight: 500
 
 # Script Canvas - Text Replacement User Documentation
 
-Script Canvas' text replacement system allows all available nodes to be further customized. Method names, categories, argument names, and tooltips can all be updated to improve their look once in a Script Canvas graph.
+**Script Canvas** has a text replacement system that allows all available nodes to be further customized. Method names, categories, argument names, and tooltips can all be updated to improve their look once in a Script Canvas graph.
 
 ## Rules for updating text
 
-The .names files have certain fields that should not be modified, they are used by the system to create a key into a database of text fields. 
+The `.names` files have certain fields that should not be modified, they are used by the system to create a key into a database of text fields. 
 
 **The following fields should NOT be changed**:
 
