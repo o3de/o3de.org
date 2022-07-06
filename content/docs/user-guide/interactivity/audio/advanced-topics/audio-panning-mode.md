@@ -18,8 +18,7 @@ To set the speaker panning mode, send a request in C++ to the audio system.
 ```cpp
 using namespace Audio;
 
-PanningMode panningMode = PanningMode::Speakers; // or
-PanningMode::Headphones
+PanningMode panningMode = PanningMode::Speakers; // or PanningMode::Headphones
 
 SAudioRequest request;
 
