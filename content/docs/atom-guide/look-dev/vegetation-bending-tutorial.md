@@ -38,7 +38,7 @@ Next, perform the following steps to get started on making the vegetation bendin
 
 These template files were created by duplicating important parts of the `StandardPBR` files and then modifying them. When you create your own material types in the future, you can similalry duplicate `StandardPBR` files and work from there.
 
-As a high-level overview, [`.materialtype`](./get-started-materialtypes-and-shaders.md/#4-author-material-type-data-materialtype) references the shader files we will use on the material of this material type. The [`.shader`](./get-started-materialtypes-and-shaders.md/#3-author-shader-asset-data-shader) files define which types of shaders, such as vertex and pixel shaders, should be used and references the actual shader code in [`.azsl`](./get-started-materialtypes-and-shaders.md/#2-author-azsl-shader-code-azsl) files. They also specify the `DrawList`, which controls which pass should run that shader. Often, `.azsl` files will just include `.azsli` files, which are also written in the Amazon shading language (AZSL), but are separate so multiple `.azsl` files can include the `.azsli` files. 
+As a high-level overview, [`.materialtype`](../dev-guide/materials/materials/#material-types) references the shader files we will use on the material of this material type. The [`.shader`](./shaders/shader-file-spec.md) files define which types of shaders, such as vertex and pixel shaders, should be used and references the actual shader code in [`.azsl`](../dev-guide/shaders/azsl/) files. They also specify the `DrawList`, which controls which pass should run that shader. Often, `.azsl` files will just include `.azsli` files, which are also written in the Amazon shading language (AZSL), but are separate so multiple `.azsl` files can include the `.azsli` files. 
 
 ## Add a material with the VegetationBending material type
 Before we begin editing any files, we want to ensure we can make a material using our material type in the **Editor**.
@@ -644,6 +644,10 @@ However, we don't have an vertex shader input that gives us the previous positio
    ```
 
 Great, now we have included the motion vector shader, so we have to go in and edit the vertex shader. Before that, however, we need to have a way to get the previous frame's time to use in our bending calculations. The `SceneSrg` has the current frame's time (`m_time`), but it doesn't contain the previous frame's time. Let's add the previous time in the `SceneSrg`.
+
+{{< note >}}
+We will be making some minor changes to the core engine here. This is generally not a best practice because there may be version updates, but we do this as a proof of concept for now. Additionally, the way that we will define the "previous time" also only works for the common case of a single pipeline with a single scene, but again this works for our proof of concept in this tutorial.
+{{< /note >}}
 
 1. Open `Gems/Atom/RPI/Assets/ShaderLib/Atom/RPI/ShaderResourceGroups/DefaultSceneSrg.azsli`. This is where the `m_time` variable is declared.
 2. Declare the previous time by adding `m_prevTime`:
