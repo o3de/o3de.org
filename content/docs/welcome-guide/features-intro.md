@@ -60,8 +60,7 @@ Some of Atom's features include:
 
 * High resolution reflection cubemaps.
 
-* Pipeline interface abstraction allowing for platform-independent creation of forward+, deferred, or hybrid
-renderers via a pass system.
+* Pipeline interface abstraction allowing for platform-independent creation of Forward+, Deferred, or hybrid renderers via a pass system. Supports Forward+ by default.
 
 * Support for parallax correction, mixed reflections per render pass, and runtime editing and visualization for lighting artists.
 

@@ -78,6 +78,7 @@ $o3de-mediumblue: #4B8DEF
 $o3de-lightblue: #A5C6F7
 $o3de-blue-highlight: #94D2FF
 $o3de-green: #58BD61
+$o3de-purple: #652d90
 
 // layouts/section-nav.html typography
 
@@ -437,52 +438,43 @@ code
 // layouts/partials/hero.html
 
 // banner
-
 a.top-banner
   color: $o3de-white
-  background-color: $o3de-blue
+  background-color: $o3de-purple
   display: block
   padding: 10px 0
   transition: .2s ease
   box-shadow: 0 0 10px rgba(0,0,0,.3)
   position: relative
   z-index: 1
-  
+
+
   &:hover 
-    background-color: darken(#1E71EB, 10%)
+    background-color: darken($o3de-purple, 10%)
 
   .container
     position: relative
-    
+
     @include media-breakpoint-down(lg)
       max-width: 100%
 
     .banner-logo
+      background-image: url('/images/events/o3dcon_2022_1.png')
       background-size: 100% auto
-      background-repeat: no-repeat
-      background-position: 50% 50%
       float: left
+      width: 182px
+      height: 42px
       margin-right: 12px
-
-      &.o3decon
-        background-image: url('/img/logos/O3DECon_Logo-White.svg')
-        width: 182px
-        height: 42px
-      
-      &.o3dejam
-        background-image: url('/img/logos/O3DEJam_Logo-REV-COLOR.svg')
-        width: 220px
-        height: 40px
 
       @include media-breakpoint-down(sm)
         display: none
-    
+
     .mobile-only
       display: none
 
       @include media-breakpoint-down(sm)
         display: inline
-    
+
     .desktop-only
       display: inline
 
@@ -501,19 +493,19 @@ a.top-banner
       top: 50%
       transform: translate(0, -50%)
       background: #fff
-      color: $o3de-blue
+      color: #652d90
       font-weight: 600
       padding: 3px 8px
       font-size: .9rem
       border-radius: 4px
       transition: .2s ease
       border: 2px solid $o3de-white
-      
+
       @include media-breakpoint-down(sm)
-        
-      
+
+
       &:hover
-        border-color: $o3de-blue-highlight
+        border-color: $o3de-purple
 
 
 
