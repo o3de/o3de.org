@@ -5,7 +5,7 @@ description: Use the Multi-Position Audio component to play sounds at multiple l
 toc: true
 ---
 
-The Audio Multi-Position Component helps to create sounds that emanate
+The Multi-Position Audio Component helps to create sounds that emanate
 from multiple locations. For example a sound that covers an area, like
 a river, should use this component. Any sounds that have multiple
 instances should also use this component, as it does help to reduce
@@ -19,7 +19,7 @@ resources.
 
 | Name | Description | Default |
 |------|-------------|---------|
-| Entity References | a list of entities whose world positions will be used as the sound's multiple positions. | `<Empty>` |
+| Entity References | A list of entities whose world positions will be used as the sound's multiple positions. | `<Empty>` |
 | Behavior Type | A drop-down selection, the options are 'Separate' or 'Blended'. Separate means that the sound positions will be treated as if they were individual point source sounds. Blended means the positions will be treated as if they are one sound covering an area. | Separate |
 
 ## EBuses
