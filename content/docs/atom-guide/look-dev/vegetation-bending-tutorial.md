@@ -34,7 +34,7 @@ Next, perform the following steps to get started on making the vegetation bendin
    `{your-project-path}\Materials\Types\`.
 4. Open `{your-project-path}\Materials\Types\VegetationBending.materialtype`. Under `propertyLayout` > `propertyGroups`, you'll see there are many entries with `{your-path-to-o3de}`. Replace `{your-path-to-o3de}` with your appropriate path to the engine.
    - For example, `C:/o3de/Gems/Atom/Feature/Common/Assets/Materials/Types/MaterialInputs/BaseColorPropertyGroup.json`.
-   - We are using absolute paths here because, for now, there is no relative functionality for paths into the engine but we need to include some of the engine's property groups.
+   - Currently we cannot import property groups across gems, so we are hard coding the absolute path, even though it is not portable, as a proof of concept. There is a GHI to enable importing across gems at [o3de#10623](https://github.com/o3de/o3de/issues/10623).
 
 These template files were created by duplicating important parts of the `StandardPBR` files and then modifying them. When you create your own material types in the future, you can similalry duplicate `StandardPBR` files and work from there.
 
@@ -167,12 +167,12 @@ In order to test the code that we are about to write, we need an appropriate mes
 7. Again in the mesh component, click **Add Material Component**, click the file icon next to *Default Material* and select your material that you made earlier (`my_material`).
 
 Now, we have a tree (at an offset)! This tree is important because it uses vertex colors that we will be using to determine how the tree should bend.
-> Note on vertex colors: You can use a DCC tool to color the vertices to match the type of bending you want to do on each part of the tree: 
-> - Red vertex color: smaller movement with high frequency of random sinusoidal noise.
-> - Green vertex color: delays the start of the movement for variations with high frequency of random sinusoidal noise.
-> - Blue vertex color: larger movement and bending with low frequency of sinusoidal noise. 
-> 
-> In the case of our tree, the trunk's vertices are colored blue and leaves are colored red.
+
+Note on vertex colors: You can use a DCC tool to color the vertices to match the type of bending you want to do on each part of the tree: 
+- Red vertex color: smaller movement with high frequency of random sinusoidal noise.
+- Green vertex color: delays the start of the movement for variations with high frequency of random sinusoidal noise.
+- Blue vertex color: larger movement and bending with low frequency of sinusoidal noise. 
+In the case of our tree, the trunk's vertices are colored blue and leaves are colored red.
 
 ### Add a shader option
 Our tree mesh that we just added has colored vertices; however, not every mesh that you want to use your material type on may have colored vertices. Therefore, we want to add a [*shader option*](../dev-guide/shaders/azsl/#shader-variant-options) that allows the vertex shader to handle both of these cases. We also want to add the reference to the colors so we can use them in the code.
@@ -646,7 +646,7 @@ However, we don't have an vertex shader input that gives us the previous positio
 Great, now we have included the motion vector shader, so we have to go in and edit the vertex shader. Before that, however, we need to have a way to get the previous frame's time to use in our bending calculations. The `SceneSrg` has the current frame's time (`m_time`), but it doesn't contain the previous frame's time. Let's add the previous time in the `SceneSrg`.
 
 {{< note >}}
-We will be making some minor changes to the core engine here. This is generally not a best practice because there may be version updates, but we do this as a proof of concept for now. Additionally, the way that we will define the "previous time" also only works for the common case of a single pipeline with a single scene, but again this works for our proof of concept in this tutorial.
+We will be making some minor changes to the core engine here. This is generally not a best practice because there may be version updates, but we do this as a proof of concept for now. Additionally, the way that we will define the "previous time" also only works for the common case of a single pipeline with a single scene. For example, if you have two render pipelines that are part of the same scene, and both update in the same simulation frame, but one pipeline was last updated the previous simulation frame, and the other was last updated 3 simulation frames ago, they would have two different previous times, but would both be referring to the same SceneSrg. However, again this still works as a proof of concept in this tutorial.
 {{< /note >}}
 
 1. Open `Gems/Atom/RPI/Assets/ShaderLib/Atom/RPI/ShaderResourceGroups/DefaultSceneSrg.azsli`. This is where the `m_time` variable is declared.
