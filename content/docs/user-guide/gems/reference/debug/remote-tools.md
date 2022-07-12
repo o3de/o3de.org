@@ -5,7 +5,7 @@ description: The Remote Tools Gem provides an API for O3DE applications to conne
 toc: true
 ---
 
-The **Remote Tools Gem** provides AzNetworking based connectivity features to allow for O3DE applications to connect to each other to enable debugging. An example of this would be the Editor connecting to the Lua IDE to debug lua script.
+The **Remote Tools Gem** provides AzNetworking based connectivity features to allow for O3DE applications to connect to each other to enable debugging. An example of this would be O3DE Editor connecting to Lua IDE to debug Lua scripts.
 
 The **Remote Tools Gem** works by implementing the IRemoteTools interface in AzFramework. Given the Gem is intended for debug purposes, this registration is compiled out for RELEASE builds.
 
