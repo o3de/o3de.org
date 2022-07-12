@@ -10,7 +10,7 @@ The **Remote Tools Gem** provides AzNetworking based connectivity features to al
 The **Remote Tools Gem** works by implementing the IRemoteTools interface in AzFramework. Given the Gem is intended for debug purposes, this registration is compiled out for RELEASE builds.
 
 {{< note >}}
-**Remote Tools Gem** behavior, which includes Lua IDE debugging, is disabled in Release builds.
+**Remote Tools Gem** behavior, which includes Lua IDE debugging, is disabled in release builds.
 {{< /note >}}
 
 ## IRemoteTools API
