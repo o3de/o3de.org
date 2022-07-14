@@ -20,7 +20,7 @@ While every component is unique, the typical steps for creating a new component 
 
 Use the `o3de` CLI script in the O3DE `scripts` directory to create a common runtime component from the default component template. For editor and system components, you can find their boilerplate code in [Editor Components](editor-components) and [System Components](system-components), respectively.
 
-1. Use the `create-from-template` command to create the component in the destination directory.
+1. Use the [`create-from-template`](/docs/user-guide/project-config/cli-reference/#create-from-template) command to create the component in the destination directory.
 
     {{< tabs name="Create component from template" >}}
     {{% tab name="Windows" %}}
