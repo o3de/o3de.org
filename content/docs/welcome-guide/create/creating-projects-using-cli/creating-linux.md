@@ -15,7 +15,7 @@ The following instructions assume that you have:
 * Set up O3DE on your computer. For help, refer to [Set up Open 3D Engine](/docs/welcome-guide/setup).
 * Registered the O3DE engine in the O3DE manifest. If you set up O3DE from GitHub, you must manually register the engine. For help, refer to [Register the engine](/docs/welcome-guide/setup/setup-from-github/building-linux/#register-the-engine).
 
-This tutorial uses the following project name and directories in the examples. (Depending on how you set up O3DE, you might not have all of these directories, or you might have used different directory names.)
+This tutorial uses the following project name and directories in the examples. Depending on how you set up O3DE, you might not have all of these directories, or you might have used different directory names.
 
 | Directory | Description |
 | --- | --- |
