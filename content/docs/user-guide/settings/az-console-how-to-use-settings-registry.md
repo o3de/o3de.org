@@ -1,6 +1,6 @@
 ---
 description: Describes how to execute AZ Console Commands using the Settings Registry
-title: Using AZ::Conosle to access the Settings Registry
+title: Using AZ::Console to access the Settings Registry
 linktitle: Using AZ::Conosle to access the Settings Registry
 weight: 400
 ---
