@@ -7,7 +7,7 @@ weight: 300
 
 
 # Summary
-The *Settings Registry* is a way of providing settings and configuration for **Open 3D Engine (O3DE)** applications.
+The *Settings Registry* is a way to provide settings and configuration for **Open 3D Engine (O3DE)** applications.
 It gathers those those settings from JSON documents with the extension of .setreg/.setregpatch.
 Settings
 
