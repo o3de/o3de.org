@@ -45,7 +45,10 @@ These files already include all of the properties that we will need. If you are 
 - `m_columnCount` - property for number of columns animation in the flipbook
 - `o_enableDebugFrame` - property to toggle wheter to enable debugging on a single frame of the animation
 - `m_debugFrame` - property for the frame number to debug.
-Most of these properties are defined in the `MaterialSrg` in `SixPointLighting_Common.azsli`, but the option booleans are defined elsewhere. `o_enableDepthTexture` and `o_enableDebugFrame` are defined at the bottom of `SixPointLighting_Common.azsli` and `o_sixPointTexturePackMode` is defined in the *Material Parameters* of `SixPointLighting_ForwardPass.azsl`. Throughout the tutorial, when we use these properties, we will discuss them further, so don't worry if some of these properties don't make sense right now!
+
+Most of these properties are defined in the `MaterialSrg` in `SixPointLighting_Common.azsli`, but the option booleans are defined elsewhere. `o_enableDepthTexture` and `o_enableDebugFrame` are defined at the bottom of `SixPointLighting_Common.azsli` and `o_sixPointTexturePackMode` is defined in the *Material Parameters* of `SixPointLighting_ForwardPass.azsl`. 
+
+Throughout the tutorial, when we use these properties, we will discuss them further, so don't worry if some of these properties don't make sense right now!
 
 ## Write lua functor to toggle visibility in the Material Editor
 For six point lighting to work, we need textures that use color channels to indicate the illuminated parts of the texture if light came from a corresponding direction. For example, red parts in the texture could indicate that lighting from the left should affect those parts, whereas blue could indicate lighting from the top. Thus, green parts could mean that lighting from both the left and top should be applied.
@@ -92,7 +95,7 @@ In `SixPointLightingPropertyGroup.json` you'll see that we already have four pro
    
 Open up the **Material Editor** and make a new material with the six point lighting type. Observe how when you switch between the texture pack modes, the options change! Add in the textures and choose your texture pack mode. Also, adjust the opacity properties: set **Opacity Mode** to `Blended`, **Alpha Source** to `Split`, add alpha texture, and set both the **Factor** and **Alpha affects specular** to `1.0`. Additionally, be sure to set the center of the **UVs** to `(0.0, 0.0)` and enable **Double-sided**. 
 
-When you return the **Editor**, make an entity with **Mesh** and **Material** components. Choose a plane for the **Mesh** and the material you just created for the material. As of now, it should just display the whole alpha texture with all the frames.
+When you return to the **Editor**, make an entity with **Mesh** and **Material** components. Choose a plane for the **Mesh** and the material you just created for the material. As of now, it should just display the whole alpha texture with all the frames.
 
 ## Add animation
 Let's add the animation! Our textures contain all the frames of the animation so we just need to programatically iterate through the frames to have the animation appear.
@@ -151,13 +154,13 @@ For our surface, we need to add properties that define the six directions:
    ```
    The first six floats define the light value if light came in from that direction on one particular pixel. For example, if we were looking at a pixel at the top of the texture and light came from the top, the `top` float would be around `255.0`, the max value in the RGB scale. Consequently, a pixel at the bottom of the texture that is covered would probably have the `top` float as `0.0` because there shouldn't be any lighting around there. 
 
-   The `tangent` and `bitangent` propeties are needed to determine the direction of the lighting.
+   The `tangent` and `bitangent` properties are needed to determine the direction of the lighting.
 
 ## Edit the pixel shader
 Now let's integrate the surface, initalize the values, and prepare for our custom lighting.
 
 1. Open `EvaluateSixPointSurface.azsli`, which contains the `EvaluateSixPointSurface` function that we call in `SixPointLighting_ForwardPass.azsl`. `EvaluateSixPointSurface` is very similar to `EvaluateStandardSurface`, but many of the properties' definitions are simplified for our case. We have two main changes to make: use the correct UV for our current frame and initialize all the new properties that we added to our six point surface.
-2. Find the *Base Color* section. Here we are using the base color's UV to find the base color, but we want to use the current frame's. Replace the initalization for `sampledColor` with a new initalization using `sixPointUv`:
+2. Find the *Base Color* section. Here we are using the base color's UV to find the base color, but we want to use the current frame's. Replace the initalization for `sampledColor` with a new initialization using `sixPointUv`:
    ```hlsl
    float2 baseColorUv = uv[MaterialSrg::m_baseColorMapUvIndex];
    float2 sixPointUv = GetUvForCurrentFrame(baseColorUv);
