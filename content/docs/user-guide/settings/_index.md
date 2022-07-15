@@ -25,7 +25,7 @@ The JSON pointer path would be `"/O3DE/CustomSetting"`
 
 Users can merge and modify settings to the Settings Registry from the filesystem through [JSON Patch](https://tools.ietf.org/html/rfc6902) or the [JSON Merge Patch](https://tools.ietf.org/html/rfc7386) format files.
 
-The Settings Registry can also be interacted with through [command line parameters](./settings-registry-override-query-command-line.md), the [AZ::Console system](./settings-registry-how-to-use-scripting-languages.md) or through [Scripting(Lua, ScriptCanvas, Python)](./settings-registry-how-to-use-scripting-languages.md).
+You can also interact with the Settings Registry through [command line parameters](./settings-registry-override-query-command-line.md), the [AZ::Console system](./settings-registry-how-to-use-scripting-languages.md) or through [Scripting(Lua, ScriptCanvas, Python)](./settings-registry-how-to-use-scripting-languages.md).
 
 
 | Topic | Explanation |
