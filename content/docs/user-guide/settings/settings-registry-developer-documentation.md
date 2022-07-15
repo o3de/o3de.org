@@ -242,7 +242,7 @@ When loading applications in non-monolithic mode, the `<ExeDirectory>/Registry` 
 ---
 **NOTE**: Stale Settings Troubleshooting
 
-If the GameLauncher or ServerLauncher application is launched before the Asset Processor has the opportunity to update the `bootstrap.game.<config>.setreg` file, then  up-to-date settings might not load until until the next run of the launchers.
+If the GameLauncher or ServerLauncher application is launched before the Asset Processor has the opportunity to update the `bootstrap.game.<config>.setreg` file, then up-to-date settings might not be available until the next run of the Launchers.
 ---
 
 <a id="GemExistence"></a>
