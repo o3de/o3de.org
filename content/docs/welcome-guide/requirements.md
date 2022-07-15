@@ -159,32 +159,6 @@ CXX="/usr/bin/clang++-12"
 
 In addition to the minimum hardware requirements for video cards for O3DE, Linux requires that the latest drivers for the video card are installed and enabled. Refer to the video card manufacturer's support page for instructions on how to do this.
 
-### Python 3.7 dependency on libffi
-
-O3DE's local python package, Python 3.7, depends on an earlier version of [libffi](https://sourceware.org/libffi/), which Ubuntu {{< versions/ubuntu >}} does not support. You will need to manually install an older version of libffi onto Ubuntu {{< versions/ubuntu >}} in order for O3DE's Python package to run properly. The steps below demonstrate how to create a temp folder under `/tmp` to download and manually install the specific debian package for libffi.
-
-```shell
-pushd /tmp
-
-LIBFFI_PACKAGE_NAME=libffi6_3.2.1-8_amd64.deb
-LIBFFI_PACKAGE_URL=http://mirrors.kernel.org/ubuntu/pool/main/libf/libffi/
-
-curl --location $LIBFFI_PACKAGE_URL/$LIBFFI_PACKAGE_NAME -o $LIBFFI_PACKAGE_NAME
-
-sudo apt install ./$LIBFFI_PACKAGE_NAME
-
-popd
-```
-
-{{< note >}}
-To download the debian package for libffi, you must install [Curl](https://curl.se):
-
-```shell
-sudo apt-get install curl
-```
-
-{{< /note >}}
-
 ### Additional library dependencies
 
 O3DE also requires some additional library packages to be installed:
