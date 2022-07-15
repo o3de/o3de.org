@@ -124,7 +124,7 @@ Let's add the animation! Our textures contain all the frames of the animation so
    1. Find `ForwardPassPS_Common`. 
    2. Find where our surface is defined: `Surface surface`.
    3. Right below it, you'll see a section for *Alpha & Clip*. The `alpha` value is the first place we want to adjust the pixel shader because we want to use our own opacity map, and we want to use the current frame's UV. Replace the line of code defining `alpha` with
-   ```
+   ```hlsl
    float2 baseColorUv = IN.m_uv[MaterialSrg::m_baseColorMapUvIndex];
    float2 sixPointUv = GetUvForCurrentFrame(baseColorUv);
 
@@ -227,7 +227,7 @@ Let's add our custom lighting:
       }
       ```
    3. Now that we have the helper function, we can use `GetDiffuseLighting` to call the function and apply the results:
-      ```
+      ```hlsl
       float3 GetDiffuseLighting(Surface surface, LightingData lightingData, float3 lightIntensity, float3 dirToLight)
       {
          float lightMap = ComputeLightMap(dirToLight, surface);
@@ -244,7 +244,7 @@ Great, now all the custom surface and lighting is now done! In the **Editor**, l
 While the bulk of the custom lighting is done, the 2D nature of the flipbook only required us to edit the forward pass. However, we can also edit the depth pass to use the optional depth map and edit the outputted depth in the pixel shader.
 1. Open `SixPointLighting_DepthPass_WithPS.azsl`. 
 2. At the bottom of the `MainPS` function, get the depth offset from the depth map and adjust the depth accordingly:
-   ```
+   ```hlsl
    float2 sixPointUv = GetUvForCurrentFrame(IN.m_uv[0]);
    float alpha = MaterialSrg::m_opacityMap.Sample(MaterialSrg::m_sampler, sixPointUv).r;
    if(o_enableDepthTexture)
