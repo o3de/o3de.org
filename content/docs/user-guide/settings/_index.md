@@ -13,7 +13,7 @@ Settings
 
 ## Technical Details
 The Settings Registry allows users to query and set settings anywhere within O3DE applications by using [JSON Pointer syntax](https://tools.ietf.org/html/rfc6901).
-For example to query a setting from a JSON document containing the following
+For example, to query a setting from a JSON document that contains the following:
 ```JSON
 {
     "O3DE": {
