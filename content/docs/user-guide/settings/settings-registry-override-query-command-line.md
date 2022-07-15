@@ -12,7 +12,7 @@ weight: 400
     1. [Example - Retrieving all command line values stored within the Settings Registry](#example-query-command-line-values)
 
 <a id="overwriting-settings-registry-regset"></a>
-Overriding the Settings Registry via the "--regset" option
+Overriding the Settings Registry using the "--regset" option
 ===
 
 Any value within the Settings Registry can be overridden by specifying the json pointer path and the new value to set by using the "--regset" option.

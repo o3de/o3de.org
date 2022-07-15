@@ -15,15 +15,15 @@ weight: 400
 Setting Registry Dump API
 ===
 
-Often times there is a need to be able to store the Settings Registry or a section of the Settings Registry to disk for later access.
-Or there is a need to store the Settings Registry in a string within a running application for further processing.
+You'll often need to store the Settings Registry or a section of the Settings Registry to disk for later access.
+Sometimes, you'll need to store the Settings Registry in a string within a running application for further processing.
 
-This page will provide an example of how to dump portions of the Settings Registry to disk at a specific key, while either maintaining the ancestor JSON key hierarchy or having the saved hierarchy not contain any ancestor key hierarchy.
+This page provides an example of how to dump portions of the Settings Registry to disk at a specific key, while either maintaining the ancestor JSON key hierarchy, or having the saved hierarchy not contain any ancestor key hierarchy.
 
 SettingsRegistryMergeUtils DumpSettingsRegistryToStream function
 ------------------------------------------------------------------
 
-The SettingsRegistryMergeUtils contains a DumpSettingsRegistryToStream function which can be used to store a section of the Settings Registry to an class that implements the AZ::IO::GenericStream interface
+The SettingsRegistryMergeUtils contains a DumpSettingsRegistryToStream function, which you can use to store a section of the Settings Registry to a class that implements the AZ::IO::GenericStream interface
 
 **Settings Registry Merge Utils Dump API**
 
@@ -50,7 +50,7 @@ bool DumpSettingsRegistryToStream(SettingsRegistryInterface& registry, AZStd::st
 
 Now some important facts to know about using the Settings Registry Merge Utils DumpSettingsRegistryToStream is that the settings are **dumped relative to the "key"** **parameter**.
 
-To better explain, a sample in-memory settings registry instance is provided as follows
+To better explain, a sample in-memory settings registry instance is provided, as follows:
 
 **Settings Registry View**
 
@@ -115,8 +115,8 @@ Results in:
 }
 ```
 
-As can be seen, the ancestor objects of "Amazon", "Editor" and "Preferences" aren't output to the dumped text data.
-If the desire is to write out the ancestor JSON objects to the Editor Preference settings, then the "m\_jsonPointerPrefix" variable can be set in the DumperSettings
+This shows that the ancestor objects of "Amazon", "Editor", and "Preferences" aren't output to the dumped text data.
+If the objective is to write out the ancestor JSON objects to the Editor Preference settings, then set the "m\_jsonPointerPrefix" variable in the DumperSettings.
 
 <a id="dump-preferences-with-key-and-anchor"></a>
 ### Example: Storing Editor Preferences using a key of `"/Amazon/Editor/Preferences"` and Anchor of `"Amazon/Editor/Preferences"`
@@ -133,7 +133,7 @@ AZStd::string stringBuffer;
 AZ::IO::ByteContainerStream stringStream(&stringBuffer);
 if (!AZ::SettingsRegistryMergeUtils::DumpSettingsRegistryToStream(*registry, "/Amazon/Editor/Preferences", stringStream, dumperSettings))
 {
-    AZ_Warning("SEditorSettings", false, R"(Unable to dump the Editor Preferences settings to from the settings registry)");
+    AZ_Warning("SEditorSettings", false, R"(Unable to dump the Editor Preferences settings to from the Settings Registry)");
     return;
 }
 ```
@@ -163,7 +163,7 @@ Results in:
 }
 ```
 
-An alternative way of writing the ancestor objects of a settings that is anchored to a specified key is to dump the entire root of the Settings Registry and use an include filter to filter out the other objects
+Another way to write the ancestor objects of a setting that is anchored to a specified key is to dump the entire root of the Settings Registry, and use an include filter to filter out the other objects.
 
 <a id="dump-preferences-with-key-and-include-filter"></a>
 ### Example: Storing Editor Preferences using a key of `""` and an include filter which maintains any JSON objects whose JSON pointer is a prefix of `"/Amazon/Editor/Preferences"`
@@ -185,7 +185,7 @@ AZStd::string stringBuffer;
 AZ::IO::ByteContainerStream stringStream(&stringBuffer);
 if (!AZ::SettingsRegistryMergeUtils::DumpSettingsRegistryToStream(*registry, "", stringStream, dumperSettings))
 {
-    AZ_Warning("SEditorSettings", false, R"(Unable to dump the Editor Preferences settings to from the settings registry)");
+    AZ_Warning("SEditorSettings", false, R"(Unable to dump the Editor Preferences settings to from the Settings Registry)");
     return;
 }
 
@@ -221,7 +221,7 @@ By using an include filter, the hierarchy of JSON keys on the way to the Editor 
 <a id="saving-preferences-to-file"></a>
 ### Example: Saving the Editor Preferences section of the Setting Registry to a file
 
-The example below is how to use the SettingsRegistryMergeUtils DumpSettingsRegistryToStream function to save the Editor Preferences to a file the User local registry location(<root>/User/Registry)
+The following example shows how to use the SettingsRegistryMergeUtils DumpSettingsRegistryToStream function to save the Editor Preferences to a file the User local registry location(<project-root>/User/Registry).
 
 **Dumping the Editor Preferences to a file** Expand source
 
@@ -242,7 +242,7 @@ if (auto registry = AZ::SettingsRegistry::Get(); registry != nullptr)
     AZ::IO::ByteContainerStream stringStream(&stringBuffer);
     if (!AZ::SettingsRegistryMergeUtils::DumpSettingsRegistryToStream(*registry, "", stringStream, dumperSettings))
     {
-        AZ_Warning("SEditorSettings", false, R"(Unable to dump the Editor Preferences settings to from the settings registry)");
+        AZ_Warning("SEditorSettings", false, R"(Unable to dump the Editor Preferences settings to from the Settings Registry)");
         return;
     }
 }
@@ -250,7 +250,7 @@ if (auto registry = AZ::SettingsRegistry::Get(); registry != nullptr)
 //! Resolve path to editorpreferences.setreg
 auto fileIo = AZ::IO::FileIOBase::GetInstance();
 AZ::IO::FixedMaxPath editorPreferencesFilePath = "user/Registry/editorpreferences.setreg";
-if (fileIo == nullptr || !fileIo->ResolvePath(editorPreferencesFilePath, "@devroot@/user/Registry/editorpreferences.setreg"))
+if (fileIo == nullptr || !fileIo->ResolvePath(editorPreferencesFilePath, "@projectroot@/user/Registry/editorpreferences.setreg"))
 {
     AZ_Warning("SEditorSettings", false, R"(Unable to resolve path "%s" to the Editor Preferences registry file\n)",
         editorPreferencesFilePath.c_str());

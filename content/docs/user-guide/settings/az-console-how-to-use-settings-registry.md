@@ -1,15 +1,15 @@
 ---
-description: Describes how to execute AZ Console Commands using the Settings Registry
+description: Describes how to run AZ Console Commands using the Settings Registry
 title: Using AZ::Console to access the Settings Registry
-linktitle: Using AZ::Conosle to access the Settings Registry
+linktitle: Using AZ::Console to access the Settings Registry
 weight: 400
 ---
 
 Preamble
 ========
 
-The AZ::Console has been extended with support for the Settings Registry to allow invoking console commands via setting a JSON value underneath a specific key in the Settings Registry.  
-The AZ::Console hooks into the Settings Registry Notification System as well as the JSON Patch Reporting system in order to detect changes to Settings Registry keys underneath the following objects:
+The AZ::Console has been extended with support for the Settings Registry to allow you to initiate console commands by setting a JSON value underneath a specific key in the Settings Registry.  
+The AZ::Console hooks into the Settings Registry Notification System and also the JSON Patch Reporting system to detect changes to Settings Registry keys underneath the following objects:
  1. `/O3DE/Autoexec/ConsoleCommands`
  2. `/Amazon/AzCore/Runtime/ConsoleCommands`
 
@@ -20,7 +20,7 @@ The AZ::Console hooks into the Settings Registry Notification System as well as 
 `/Amazon/AzCore/Runtime/ConsoleCommands` - Console commands underneath this object are NOT merged to the `bootstrap.game.<config>.setreg` and will not run in the launcher.
 
 ### Note: Launcher Settings file loading(GameLauncher/ServerLauncher)
-In the launchers the settings registry files can only reliably load only the [bootstrap.game.\<config>.setreg](https://github.com/o3de/o3de/blob/6b62d1131116c074831902cb6e8d30271d673288/Code/Framework/AzGameFramework/AzGameFramework/Application/GameApplication.cpp#L90-L99) file in all build configurations and host platforms combinations.  
+In the Launcher applications, the settings registry files can reliably load only the [bootstrap.game.<config>.setreg](https://github.com/o3de/o3de/blob/6b62d1131116c074831902cb6e8d30271d673288/Code/Framework/AzGameFramework/AzGameFramework/Application/GameApplication.cpp#L90-L99) file in all build configurations and host platforms combinations.  
 
 
 Running Console Commands from a file
@@ -73,7 +73,7 @@ The `/Amazon/AzCore/Runtime/ConsoleComamnds` settings will not as they are [excl
                     "testFloat": 1.0,
                     "testDouble": 2,
                     "testString": "Stable",
-                    "ConsoleSettingsRegistryFixture.testClassFunc": "Foo Bar Baz"
+                    "ConsoleSettingsRegistryFixture.testClassFunc": "Argument1 Argument2 Argument3"
                 }
             }
         }
@@ -112,7 +112,7 @@ Settings Registry Patch file with Console Commands(\*.setregpatch)
 **Executing Console Commands from a config or Settings Registry file**
 ----------------------------------------------------------------------
 
-Config files, as well Settings Registry files with the preceding content, can be executed using a single ExecuteConfigFile function in the AZ Console
+You can run config files, in addition to Settings Registry files with the preceding content, by using a single ExecuteConfigFile function in the AZ Console.
 
 **Executing Console Commands**
 
@@ -122,11 +122,11 @@ auto console = AZ::Interface<AZ::IConsole>::Get();
 console.ExecuteConfigFile(<path to [user.cfg|user.setreg|user.setregpatch]>);
 ```
 
-Order in which ConsoleCommands are executed from a single file
+The order in which Console commands are run from a single file.
 
-Console commands within a specific config or settings registry file are executed in the order they appear in those files from top to bottom.
+Console commands within a specific config or Settings Registry file are run in the order that they appear in those files, from top to bottom.
 
-Here is an example of executing three console commands using the JSON Merge Patch syntax
+Here is an example of running three console commands by using the JSON Merge Patch syntax:
 
 **Ordering snippet**
 
@@ -144,12 +144,12 @@ Here is an example of executing three console commands using the JSON Merge Patc
 }
 ```
 
-Those commands would execute in order that were seen in the JSON file(testInit → testBool → testChar)
+Those commands would run in the order that they appear  in the JSON file(testInit → testBool → testChar).
 
 Running Console Commands via updating a value within the Settings Registry
 ==========================================================================
 
-Running console commands can also be done via modifying keys within the Settings Registry, that are under the "/O3DE/Autoexec/ConsoleCommands" JSON object
+You can also run Console commands by modifying keys within the Settings Registry that are under the "/O3DE/Autoexec/ConsoleCommands" JSON object.
 
 **Using the Settings Registry to modify the `t_scale` CVar**
 -------------------------------------------------------------
@@ -165,50 +165,50 @@ auto SettingsRegistry = AZ::SettingsRegistry::Get();
 settingsRegistry->Set(tScaleCVar, "0.5");
 ```
 
-Timing of when Console Commands are invoked
+Timing of when Console commands are invoked
 ===========================================
 
 The ComponentApplication loads .setreg(patch) files before any Gem Modules are loaded or activated in [ComponentApplication::Create](https://github.com/o3de/o3de/blob/6d5a045386e20bc0d587007a65cf32f5b33baadd/Code/Framework/AzCore/AzCore/Component/ComponentApplication.cpp#L615-L622).  
-The ComponentApplication also supports executing the "user.cfg" in the asset cache after Gem Modules are loaded, but before they activate. This can be seen in [ComponentApplication::CreateCommon](https://github.com/o3de/o3de/blob/6d5a045386e20bc0d587007a65cf32f5b33baadd/Code/Framework/AzCore/AzCore/Component/ComponentApplication.cpp#L679-L689).
+The ComponentApplication also supports running the "user.cfg" in the asset cache after Gem Modules are loaded, but before they activate. You can see this in [ComponentApplication::CreateCommon](https://github.com/o3de/o3de/blob/6d5a045386e20bc0d587007a65cf32f5b33baadd/Code/Framework/AzCore/AzCore/Component/ComponentApplication.cpp#L679-L689).
 
-Any console commands that cannot execute immediately, will be added to a [deferred console command queue](https://github.com/o3de/o3de/blob/6d5a045386e20bc0d587007a65cf32f5b33baadd/Code/Framework/AzCore/AzCore/Console/Console.cpp#L612-L628).  
-Later on when gems are loaded, any "deferred console commands" will attempt to be [dispatched again at that point](https://github.com/o3de/o3de/blob/6d5a045386e20bc0d587007a65cf32f5b33baadd/Code/Framework/AzCore/AzCore/Module/Module.h#L113).  
+Any console commands that cannot run immediately will be added to a [deferred console command queue](https://github.com/o3de/o3de/blob/6d5a045386e20bc0d587007a65cf32f5b33baadd/Code/Framework/AzCore/AzCore/Console/Console.cpp#L612-L628).  
+When Gems are eventually loaded, any "deferred console commands" will attempt to be [dispatched again at that point](https://github.com/o3de/o3de/blob/6d5a045386e20bc0d587007a65cf32f5b33baadd/Code/Framework/AzCore/AzCore/Module/Module.h#L113).  
 Any commands that succeed are removed from the queue, while failed commands remain in the [queue](https://github.com/o3de/o3de/blob/6d5a045386e20bc0d587007a65cf32f5b33baadd/Code/Framework/AzCore/AzCore/Console/Console.cpp#L177-L186).
 
-This guarantees that console commands that are still invoked even if the gems that define them are loaded afterwards.
+This guarantees that Console commands are still invoked even if the Gems that define them are loaded afterwards.
 Reference: [https://github.com/o3de/o3de/issues/2062](https://github.com/o3de/o3de/issues/2062)
 
-### Info: Console Commands that are deferred might not execute in the same order as it would have in relation to immediate console commands
+### Info: Console commands that are deferred might not run in the same order as they would have in relation to immediate Console commands
 ---
-For example if given a cfg file that contains the following console commands.
+For example, if a .cfg file contains the following console commands.
 ```ini
 immediateCommand1 42
 deferredCommand2 35
 immediateCommand3 28
 ```
 
-Due to the  `deferredCommand2` not able to execute immediately, it will ultimately be executed after all the immediate commands including the `immediateCommand3`.
+Because the  `deferredCommand2` cannot run immediately, it will ultimately run after all of the immediate commands, including the `immediateCommand3`.
 
 
 
 Additional Info
 ===============
 
-## Console Command Lifecycle
+## Console command lifecycle
 ---
-While not directly related to the Settings registry being able execute console commands, the following information will explain when the Application can potentially run console commands in relation to other Application lifecycle events
+While not directly related to the Settings Registry being able to run Console commands, the following information describes when the application can potentially run Console commands in relation to other application lifecycle events.
 1. Create the Settings Registry.
 1. Create the AZ Console.
-1. Merge all Settings Registry files(.setreg/.setregpatch) to the registry -> Will attempt to invoke any console commands underneath the monitored Settings Registry Console Command keys at this point.  
-   Any commands that cannot execute are added to the AZ Console deferred command queue
+1. Merge all Settings Registry files(.setreg/.setregpatch) to the registry -> Attempts to invoke any console commands underneath the monitored Settings Registry Console Command keys at this point.  
+   Any commands that cannot run are added to the AZ Console deferred command queue.
 1. Load Dynamic Modules(gem modules) -> Sends the "GemsLoaded" lifecycle event.
-   For each loaded gem, deferred commands attempt to [execute](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Module/Module.h#L99-L114) and any that succeed are removed from the deferred command queue
-1. Attempt to execute console commands in the user.cfg from the Projects asset cache folder(usually `<project-root>/Cache/<platform>`).
-1. Execute console commands specified on the command line -> specified using command option notation [`-<console command name> <args>`].  
+   For each loaded Gem, deferred commands attempt to [execute](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Module/Module.h#L99-L114) and any that succeed are removed from the deferred command queue
+1. Attempts to run console commands in the user.cfg from the Projects asset cache folder(usually `<project-root>/Cache/<platform>`).
+1. Run console commands specified on the command line -> specified using command option notation [`-<console command name> <args>`].  
 Such as `-loadlevel <levelname>`.
 1. Activate System Components in Gems.
 
 
 ## Accessing the Settings Registry from the AZ Console
 
-There is a counterpart page that details how to use the AZ::Console to modify values within the Settings Registry located at [Settings Registry How To - Use the Settings Registry with the AZ Console](./settings-registry-how-to-use-az-console.md)
+There is a counterpart page that describes how to use the AZ::Console to modify values within the Settings Registry located at [Settings Registry How To - Use the Settings Registry with the AZ Console](./settings-registry-how-to-use-az-console.md)

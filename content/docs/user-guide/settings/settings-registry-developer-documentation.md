@@ -677,7 +677,7 @@ and a "streamer.editor.setreg" that is merged later with the same "/O3DE/AzFrame
 
 The settings registry will contain the following keys and values
 
-```json
+```ini
 "/O3DE/AzFramework/MyArray/0" = true
 "/O3DE/AzFramework/MyArray/1" = false
 "/O3DE/AzFramework/MyArray/2" = 75

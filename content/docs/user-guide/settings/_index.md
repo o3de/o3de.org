@@ -30,12 +30,12 @@ You can also interact with the Settings Registry through [command line parameter
 
 | Topic | Explanation |
 | - | - |
-| [Settings Registry Developer Guide](./settings-registry-developer-documentation.md) | Provides a Deep-Dive on the Settings Registry feature. Examples on using the Settings Registry are provided in a multiples scenarios. The interaction between the CMake Build Generation system, the Settings Registry and the Gem Module System are expanded upon. |
-| [AZ Console - Executing Commands using Settings Registry](./az-console-how-to-use-settings-registry.md) | Details how to execute console commands using the Settings Registry |
+| [Settings Registry Developer Guide](./settings-registry-developer-documentation.md) | Provides detailed information about the Settings Registry feature. Examples for using the Settings Registry are provided in a multiples scenarios. The interaction between the CMake Build Generation system, the Settings Registry and the Gem Module System are described in detail. |
+| [AZ Console - Executing Commands using Settings Registry](./az-console-how-to-use-settings-registry.md) | Details how to run console commands using the Settings Registry |
 | [Accessing the Settings Registry via the AZ Console](./settings-registry-how-to-use-az-console.md) | Provides the list of AZ Console commands that can modify the Console |
 | [Accessing the Settings Registry via Scripting](./settings-registry-how-to-use-scripting-languages) | Describes the Settings Registry Scripting API. Examples are provided for Python and Lua |
 | [Accessing Command Line Arguments using the Settings Registry](./settings-registry-override-query-command-line) | Describes how to access the command line supplied to the application using the Settings Registry |
-| [Dumping the Settings Registry](./settings-registry-how-to-dump-settings-registry) | How-To Guide that explains how the Settings Registry can be output to stream |
+| [Dumping the Settings Registry](./settings-registry-how-to-dump-settings-registry) | Provides a how-to guide that explains how to output the Settings Registry to an IO stream |
 
 
 
