@@ -26,13 +26,13 @@ In the Launcher applications, the settings registry files can reliably load only
 Running Console Commands from a file
 ====================================
 
-The AZ::Console supports running console commands from a via the AZ::IConsole::ExecuteConfigFile() function.
-That function is able to load console commands from:
+The AZ::Console supports running Console commands from by using the AZ::IConsole::ExecuteConfigFile() function.
+That function is able to load Console commands from:
 1. Windows INI Style files(\*.cfg)
-2. JSON Merge Patch files(\*.setreg) - Can be mostly authored as normal json files
+2. JSON Merge Patch files(\*.setreg) - Can be authored as normal JSON files
 3. JSON Patch files(\*.setregpatch)
 
-Config file with Console Commands(\*.cfg)
+Config file with Console commands(\*.cfg)
 -----------------------------------------
 
 **user.cfg**
@@ -52,13 +52,13 @@ LoadLevel path/to/level.spawnable
 bg_ConnectToAssetProcessor false
 ```
 
-Settings Registry Merge Patch file with Console Commands(\*.setreg)
+Settings Registry Merge Patch file with Console commands(\*.setreg)
 -------------------------------------------------------------------
 
 **user.setreg**
 
 The settings underneath the "/O3DE/Autoexec/ConsoleCommands" object will be added to the aggregate `bootstrap.game.\<config>.setreg` created by the Settings Registry Builder as part of the AssetProcessor.
-The `/Amazon/AzCore/Runtime/ConsoleComamnds` settings will not as they are [excluded](https://github.com/o3de/o3de/blob/e878b06166dc4953b8c6c79b745375a1db7c341f/Registry/setregbuilder.assetprocessor.setreg#L22) in AssetProcessor settings.
+The `/Amazon/AzCore/Runtime/ConsoleComamnds` settings will not be added, because they are [excluded](https://github.com/o3de/o3de/blob/e878b06166dc4953b8c6c79b745375a1db7c341f/Registry/setregbuilder.assetprocessor.setreg#L22) in AssetProcessor settings.
 
 ```json
 {
