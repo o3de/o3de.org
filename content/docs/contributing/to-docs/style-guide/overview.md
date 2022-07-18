@@ -2,7 +2,7 @@
 linkTitle: Overview
 title: O3DE Documentation Contribution Style Guide
 description: Style guide for contributors to the Open 3D Engine (O3DE) documentation project.
-weight: 50
+weight: 100
 toc: true
 ---
 
@@ -21,6 +21,7 @@ What are the ideal traits for O3DE docs?
 
 ## What's in the guide?
 
+- [Quick Reference](./quick-reference) - A quick reference of common style guide rules.
 * [Writing guidelines](./guidance) - Guidance on our documentation style, tone, and how to write in an accessible manner.
 * [Formatting](./format) - Specific rules regarding formatting and typesetting our documentation, such as how to format executable names, file paths, and code blocks. Covers the features available in the variant of Markdown that the O3DE docs site uses.
 * [Front matter metadata](./metadata) - Details on the available (and required) Hugo front matter metadata to use in the [YAML](https://yaml.org/) headers of Markdown files.

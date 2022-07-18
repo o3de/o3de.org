@@ -2,7 +2,7 @@
 title: Submitting Media to O3DE Documentation
 description: Guidelines for submitting media (images, video, audio, or assets) to Open 3D Engine (O3DE) documentation.
 linktitle: Media
-weight: 600
+weight: 700
 toc: true
 ---
 
@@ -69,7 +69,7 @@ In order to standardize presentation, and to keep the O3DE documentation reposit
   1. Save the edited image and include it with your PR.
 
     {{< important >}}
-    Be sure to thoroughly examine all images for PII before adding them to a pull request!
+  Be sure to thoroughly examine all images for PII before adding them to a pull request!
     {{< /important >}}
 
 ## Screenshots
