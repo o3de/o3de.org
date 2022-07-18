@@ -142,6 +142,19 @@ Write links without the file extension *.md*.
 | `[...](../)` | Returns to the index of the previous directory. |
 | `[...](../link-to-page-in-previous-directory)` | Links from any page to a page in the previous directory. |
 
+### Quotes and punctuation placement
+
+When the quote is contained within a sentence, place the punctuation outside the quote.
+
+Do | Don't
+:--| :-----
+... assets that are "game-ready". | ... assets that are "game-ready."
+... process called "rigging". | ... process called "rigging."
+
+When the quote is a complete sentence, place the punctuation inside the quote.
+
+> "Focus is a matter of deciding what things you're not going to do." - John Carmack
+
 
 ## Information structure
 
@@ -308,7 +321,7 @@ A *prefab* is a collection of entities ... | A "prefab" is a collection of entit
 
 Properly format trademark titles and terminology according to its use from the source. Provide a link to the source's relevant material."
 
-## Applications, Tools, Gems, and components
+## Applications, tools, Gems, and components
 
 ### Bold applications and tools
 
@@ -425,16 +438,3 @@ Use angle brackets for placeholders. Use the text within the brackets to tell th
 git push origin <your-branch-name>
 ```
 
-
-## Quotes and punctuation placement
-
-When the quote is contained within a sentence, place the punctuation outside the quote.
-
-Do | Don't
-:--| :-----
-... assets that are "game-ready". | ... assets that are "game-ready."
-... process called "rigging". | ... process called "rigging."
-
-When the quote is a complete sentence, place the punctuation inside the quote.
-
-> "Focus is a matter of deciding what things you're not going to do." - John Carmack
