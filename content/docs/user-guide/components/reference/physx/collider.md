@@ -142,8 +142,8 @@ The following navigation hotkeys are available in collider component mode.
 | **1** | Offset mode. |
 | **2** | Rotation mode. |
 | **3** | Resize mode. |
-| **CTRL + Mouse Wheel Down** | Next mode. |
-| **CTRL + Mouse Wheel Up** | Previous mode. |
+| **Ctrl + Mouse Wheel Down** | Next mode. |
+| **Ctrl + Mouse Wheel Up** | Previous mode. |
 | **R** | Reset current mode. This is effectively an undo operation. You can step through the Resize, Offset, and Rotation modes and press **R** to reset changes to the current mode. |
 | **ESC** | Exit component mode. |
 

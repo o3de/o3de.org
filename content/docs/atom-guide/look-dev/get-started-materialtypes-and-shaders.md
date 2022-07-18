@@ -405,12 +405,12 @@ At this point, all of our files should compile successfully. Now, you are going 
 
 To create a new material using **Material Editor**: 
 1. Launch **Material Editor** from the directory for your build config such as `<build>/bin/profile/` or `<install>/bin/<platform>/profile/Default`.  
-2. From the **File** menu in **Material Editor**, select **New**, or press **Control + N** to create a new material.
+2. From the **File** menu in **Material Editor**, select **New**, or press **Ctrl+N** to create a new material.
 3. In the **Create New Material** dialog, select **MyUnlitColor** in the **Material Type** list.
 4. Choose the folder icon below **Select Material Filename**. Ensure the file browser has your project's `Materials` directory selected and name the material `MyUnlitColor.material`. Choose **OK** to close both the file browser and the **Create New Material** dialog.
 5. The new material is automatically selected in **Asset Browser** and its settings group and color property are available in **Material Editor's** **Inspector**.
 6. Change the material color by specifying a comma separated list of RGB values in the **Color** property field, or choose the color swatch to open the color picker.
-7. Save changes to the material by choosing **Save** from the **File** menu or by pressing **Control + S**. 
+7. Save changes to the material by choosing **Save** from the **File** menu or by pressing **Ctrl+S**. 
 
 ![Creating a material from MyUnlitColor material type](/images/atom-guide/get-started/unlit-color-material.jpg)
 

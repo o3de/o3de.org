@@ -95,9 +95,10 @@ O3DE has familiar viewport interaction models based on first-person PC games and
 
 The camera controls above are game-centric. If you prefer to use camera controls closer to those you would find in a DCC application such as Maya, use these hotkeys.
 
-* **ALT + left mouse + drag** - Orbit view.
-* **ALT + right mouse + drag** - Dolly view.
-* **ALT + right mouse + drag** - Track view.
+* **Alt + left mouse + drag** - Orbit view.
+* **Alt + right mouse + drag** - Dolly view.
+* **Alt + right mouse + drag** - Track view.
+
 
 ## Movement preferences
 

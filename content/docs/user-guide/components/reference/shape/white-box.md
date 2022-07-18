@@ -121,7 +121,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 1. Hover over a polygon.
 
-1. Hold **Ctrl** + **Left Mouse Button**.
+1. Hold **Ctrl + Left Mouse Button**.
 
 1. Drag the polygon along its normal.
 
@@ -131,7 +131,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 1. Hover over an edge.
 
-1. Hold **Ctrl** + **Left Mouse Button**.
+1. Hold **Ctrl + Left Mouse Button**.
 
 1. Drag the edge.
 
@@ -143,7 +143,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 1. Hover over one of the polygon's vertices.
 
-1. Hold **Ctrl** + **Left Mouse Button**.
+1. Hold **Ctrl + Left Mouse Button**.
 
 1. Drag the vertex toward or away from the center of the selected polygon to scale.
 
@@ -173,7 +173,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 ### Show edge
 
-1. Hold **Ctrl** + **Shift** to show edges.
+1. Hold **Ctrl + Shift** to show edges.
 
 1. Select an edge to unhide it.
 
@@ -189,6 +189,6 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 ### Show vertex
 
-1. Hold **Ctrl** + **Shift** to show hidden vertices.
+1. Hold **Ctrl + Shift** to show hidden vertices.
 
 1. Select a vertex to unhide it.
