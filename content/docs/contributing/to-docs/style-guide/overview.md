@@ -22,10 +22,10 @@ What are the ideal traits for O3DE docs?
 ## What's in the guide?
 
 - [Quick Reference](./quick-reference) - A quick reference of common style guide rules.
-* [Writing guidelines](./guidance) - Guidance on our documentation style, tone, and how to write in an accessible manner.
-* [Formatting](./format) - Specific rules regarding formatting and typesetting our documentation, such as how to format executable names, file paths, and code blocks. Covers the features available in the variant of Markdown that the O3DE docs site uses.
-* [Front matter metadata](./metadata) - Details on the available (and required) Hugo front matter metadata to use in the [YAML](https://yaml.org/) headers of Markdown files.
+* [Writing Guidelines](./guidance) - Guidance on our documentation style, tone, and how to write in an accessible manner.
+* [Formatting Guidelines](./format) - Specific rules regarding formatting and typesetting our documentation, such as how to format executable names, file paths, and code blocks. Covers the features available in the variant of Markdown that the O3DE docs site uses.
+* [Metadata](./metadata) - Details on the available (and required) Hugo front matter metadata to use in the [YAML](https://yaml.org/) headers of Markdown files.
 * [Shortcodes](./shortcodes) - The Hugo shortcodes that we use for the O3DE docs. Includes call-out boxes, version numbers, static paths that O3DE uses, and other useful tidbits.
-* [Submitting media](./media) - Guidelines for submitting media (images, video, audio, or assets) to the docs.
+* [Submitting Media](./media) - Guidelines for submitting media (images, video, audio, or assets) to the docs.
 
 This guide isn't meant to be an extensive introduction to either [Markdown](https://www.markdownguide.org/) or the [Hugo site generator](https://gohugo.io/). If you're learning Hugo, refer to [Work with Hugo](/docs/contributing/to-docs/hugo).

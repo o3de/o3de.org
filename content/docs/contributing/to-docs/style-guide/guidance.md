@@ -12,7 +12,7 @@ The **Open 3D Engine (O3DE)** documentation project serves a global audience. Th
 
 Documentation is written in U.S. English. Use simple and precise words, wherever possible. Write short and complete sentences. Break up information into smaller bodies of text. 
 
-- **Precise words**: Whenever possible, use precise words with only one definition, or the primary definition of words from . For example, use "once" only when referring to the number of times that an action is performed. Don't use "once" to mark a point in time, like in "Once the download completes."
+- **Precise words**: Whenever possible, use precise words with only one definition, or the primary definition of words from a respectable U.S. English dictionary. For example, use "once" only when referring to the number of times that an action is performed. Don't use "once" to mark a point in time, like in "Once the download completes."
 
 - **Short and complete sentences**: Break up long sentences with multiple clauses into several short sentences to improve readability. Sentences must have a subject, verb, and object, and punctuation at the end.
 
@@ -31,15 +31,15 @@ Documentation is written in U.S. English. Use simple and precise words, wherever
     | Verb | ... rendering the scene. |
     | Adjective | ... the rendering path. |
 
-- **-ed words**: Be cautious with words that end in *-ed*. Words that end in *-ed* can also be ambiguous. Use determiner phrases such as *that is* to clarify the usage of words that end in *-ed*. Take the word "rendered", for example.
+- **-ed words**: Be cautious with words that end in *-ed*. Words that end in *-ed* can also be ambiguous. Use determiner phrases such as *that is* to clarify the usage of words that end in *-ed*. Take the word "based", for example.
 
     | Do | Don't |
     | :--| :-- |
-    | Atom is a renderer that is based on ... | Atom is a renderer based on ... |
+    | Atom is a renderer *that is* based on ... | Atom is a renderer based on ... |
 
 - **Helpful words**: Use optional words and phrases to clarify, such as *the*, *that*, *a*, *an*, *because*, *after*, *although*, and *might*.
 
-- **Commas**: Use commas to make sentences easier to read and comprehend. Use the serial or "Oxford" comma in lists.
+- **Commas**: Use commas to make sentences easier to read and comprehend. Use the serial or "Oxford" comma in lists. In the following example, observe that a comma appears between the last item in the list and the preceding item.
 
     **Example**: "**Asset Processor** checks for new files, detects changed files, and uses asset manifest files to process game-ready assets."
 
@@ -51,7 +51,7 @@ Use [active voice](https://writing.wisc.edu/handbook/style/ccs_activevoice/) and
 
 Refer to the user as "you"; don't use "we".
 
-## Acronyms, abbreviations, and latin phrases
+## Acronyms, abbreviations, and Latin phrases
 
 When you use acronyms, introduce them in their expanded form followed by the acronym in parentheses. Subsequent on-page references can be by acronym only.
 
