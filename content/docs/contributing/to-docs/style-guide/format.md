@@ -128,7 +128,7 @@ Syntax highlighting in the code block should conform to the [contrast guidelines
 When writing code blocks, make sure to include a language identifier. For C++ code blocks, use the `cpp` identifier.
 
 
-## Links
+### Links
 
 Write links without the file extension *.md*.
 
@@ -142,136 +142,6 @@ Write links without the file extension *.md*.
 | `[...](../)` | Returns to the index of the previous directory. |
 | `[...](../link-to-page-in-previous-directory)` | Links from any page to a page in the previous directory. |
 
-
-## Terminology
-
-### Italicize new term introductions and definitions
-
-Do | Don't
-:--| :-----
-... to create *image based lighting (IBL)*. | ... to create **image based lighting (IBL)**.
-A *prefab* is a collection of entities ... | A "prefab" is a collection of entities ...
-
-### Trademark
-
-Properly format trademark titles and terminology according to its use from the source. Provide a link to the source's relevant material."
-
-## Applications, Tools, Gems, and components
-
-### Applications and tools
-
-For the first on-page reference to applications and tools, use **bold** text. Use unformatted text for subsequent references. 
-
-For tools that are provided as scripts, instead use `code style` for the name of the script, followed by the type of script in unformatted text. Do this for all instances throughout the page.
-
-Type | Example
-:--| :-- 
-Application | **O3DE Editor** is the primary development environment for .... Open O3DE Editor by launching it from...
-Tool | The `o3de` Python script allows you to... To use the `o3de` Python script... | 
-
-### Gems and components
-
-For the first on-page reference to Gems and components, use **bold** text. Use unformatted text for subsequent references.  
-
-**Additional rules**  
-: - For Gems, capitalize and **bold** both the name of the Gem and "Gem" itself. 
-  - For components, capitalize and **bold** the name of the component; lowercase and use unformatted text for "component" itself. 
-
-Type | Example
-:--| :-- 
-Gem | The **Multiplayer Gem** provides... Use the Multiplayer Gem to...
-Components | The **Material** component adds... Also, you can use the Material component to...
-
-
-## User interface, inputs, and hotkeys
-
-Users interact with O3DE through various user interface (UI) elements, inputs, and hotkeys. They're often included in tasks and tutorials, instructing users to perform an action.
-
-For UI elements, inputs, and hotkeys, use **bold** text. Do this for all instances throughout the page. 
-
-**Additional rules**  
-: For formatting keys: abbreviate key names, remove spaces, and use sentence-casing. 
-
-Type | Example | Avoid
-:--| :-- | :--
-UI element | Choose **Edit**. | Click "Edit".
-UI element | .. the **Play** button. | ... the Play button.
-Input | Press **Enter**. | Press "Enter".
-Input | .. **right-click** the asset name ... | ... right-click the asset name ...
-Hotkey | Hold **Ctrl+Shift** ... | Hold `Control + Shift` ...
-
-
-## Code, Commands, and APIs
-
-### Code style for inline code and commands
-
-Do | Don't
-:--| :-----
-... set `enable_memory_tracking = True`. | ... set **enable_memory_tracking** = "True".
-... enter the command `dump_vars`. | ... enter the command dump_vars.
-
-### Code style for programming objects
-
-Do | Don't
-:--| :-----
-... value of the `sys_maxfps` field. | ... value of the "sys_maxfps" field.
-... use the `WorldRequestBus`. | ... use the "WorldRequestBus".
-... in `AZ::Data::AssetData` derived classes. | ... in **AZ::Data::AssetData** derived classes.
-
-### Bold property names, and code style their values
-
-Do | Don't
-:--| :-----
-Set the **Color** property to `255,0,0`. | Set the Color property to "255,0,0".
-For **Intensity Mode**, select `Candela`. | For `Intensity Mode`, select Candela.
-Valid **Mass** values range from `0` to `Infinity`. | Valid Mass values range from `0` to Infinity.
-
-### Don't include the command prompt
-
-Do | Don't
-:--| :-----
-`cmake --build ...` | `C:\> cmake --build ...`
-
-### Separate commands from output
-
-```shell
-cmake --build <MyProject> --target Editor --config profile -- -m
-```
-
-The output is similar to this:
-
-```console
-Microsoft (R) Build Engine version 16.9.0+57a23d249 for .NET Framework
-Copyright (C) Microsoft Corporation. All rights reserved.
-
-  Checking Build System
-  Building Custom Rule D:/O3DE/Code/Framework/AzCore/CMakeLists.txt
-  unity_16_cxx.cxx
-  unity_20_cxx.cxx
-  unity_19_cxx.cxx
-  unity_24_cxx.cxx
-  unity_23_cxx.cxx
-```
-
-## Files, directories, and paths
-
-### Code style for filenames, directories, and paths
-
-All paths should be platform agnostic and use `/` path separators. When using relative paths, give the reader context to understand what the path is relative to.
-
-Do | Don't
-:--| :-----
-Open the project's `bootstrap.cfg` file. | Open the project's bootstrap.cfg file.
-... in the `/<project>/levels` directory. | ... in the /\<project\>/levels directory.
-Open the `/<project>/game.cfg` file. | Open the /\<project\>/game.cfg file.
-
-### Mark placeholders with angle brackets
-
-Use angle brackets for placeholders. Use the text within the brackets to tell the reader what a placeholder represents. For example:
-
-```shell
-git push origin <your-branch-name>
-```
 
 ## Information structure
 
@@ -423,6 +293,137 @@ First Term
 Second Term
 : This is one definition of the second term.
 : This is another definition of the second term.
+
+
+## Terminology
+
+### Italicize new terms
+
+Do | Don't
+:--| :-----
+... to create *image based lighting (IBL)*. | ... to create **image based lighting (IBL)**.
+A *prefab* is a collection of entities ... | A "prefab" is a collection of entities ...
+
+### Trademark
+
+Properly format trademark titles and terminology according to its use from the source. Provide a link to the source's relevant material."
+
+## Applications, Tools, Gems, and components
+
+### Bold applications and tools
+
+For the first on-page reference to applications and tools, use **bold** text. Use unformatted text for subsequent references. 
+
+For tools that are provided as scripts, instead use `code style` for the name of the script, followed by the type of script in unformatted text. Do this for all instances throughout the page.
+
+Type | Example
+:--| :-- 
+Application | **O3DE Editor** is the primary development environment for .... Open O3DE Editor by launching it from...
+Tool | The `o3de` Python script allows you to... To use the `o3de` Python script... | 
+
+### Bold Gems and components
+
+For the first on-page reference to Gems and components, use **bold** text. Use unformatted text for subsequent references.  
+
+**Additional rules**  
+: - For Gems, capitalize and **bold** both the name of the Gem and "Gem" itself. 
+  - For components, capitalize and **bold** the name of the component; lowercase and use unformatted text for "component" itself. 
+
+Type | Example
+:--| :-- 
+Gem | The **Multiplayer Gem** provides... Use the Multiplayer Gem to...
+Components | The **Material** component adds... Also, you can use the Material component to...
+
+
+## User interface, inputs, and hotkeys
+
+Users interact with O3DE through various user interface (UI) elements, inputs, and hotkeys. They're often included in tasks and tutorials, instructing users to perform an action.
+
+For UI elements, inputs, and hotkeys, use **bold** text. Do this for all instances throughout the page. 
+
+**Additional rules**  
+: For formatting keys: abbreviate key names, remove spaces, and use sentence-casing. 
+
+Type | Example | Avoid
+:--| :-- | :--
+UI element | Choose **Edit**. | Click "Edit".
+UI element | .. the **Play** button. | ... the Play button.
+Input | Press **Enter**. | Press "Enter".
+Input | .. **right-click** the asset name ... | ... right-click the asset name ...
+Hotkey | Hold **Ctrl+Shift** ... | Hold `Control + Shift` ...
+
+
+## Code, Commands, and APIs
+
+### Code style for inline code and commands
+
+Do | Don't
+:--| :-----
+... set `enable_memory_tracking = True`. | ... set **enable_memory_tracking** = "True".
+... enter the command `dump_vars`. | ... enter the command dump_vars.
+
+### Code style for programming objects
+
+Do | Don't
+:--| :-----
+... value of the `sys_maxfps` field. | ... value of the "sys_maxfps" field.
+... use the `WorldRequestBus`. | ... use the "WorldRequestBus".
+... in `AZ::Data::AssetData` derived classes. | ... in **AZ::Data::AssetData** derived classes.
+
+### Bold property names, and code style their values
+
+Do | Don't
+:--| :-----
+Set the **Color** property to `255,0,0`. | Set the Color property to "255,0,0".
+For **Intensity Mode**, select `Candela`. | For `Intensity Mode`, select Candela.
+Valid **Mass** values range from `0` to `Infinity`. | Valid Mass values range from `0` to Infinity.
+
+### Don't include the command prompt
+
+Do | Don't
+:--| :-----
+`cmake --build ...` | `C:\> cmake --build ...`
+
+### Separate commands from output
+
+```shell
+cmake --build <MyProject> --target Editor --config profile -- -m
+```
+
+The output is similar to this:
+
+```console
+Microsoft (R) Build Engine version 16.9.0+57a23d249 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Checking Build System
+  Building Custom Rule D:/O3DE/Code/Framework/AzCore/CMakeLists.txt
+  unity_16_cxx.cxx
+  unity_20_cxx.cxx
+  unity_19_cxx.cxx
+  unity_24_cxx.cxx
+  unity_23_cxx.cxx
+```
+
+## Files, directories, and paths
+
+### Code style for filenames, directories, and paths
+
+All paths should be platform agnostic and use `/` path separators. When using relative paths, give the reader context to understand what the path is relative to.
+
+Do | Don't
+:--| :-----
+Open the project's `bootstrap.cfg` file. | Open the project's bootstrap.cfg file.
+... in the `/<project>/levels` directory. | ... in the /\<project\>/levels directory.
+Open the `/<project>/game.cfg` file. | Open the /\<project\>/game.cfg file.
+
+### Mark placeholders with angle brackets
+
+Use angle brackets for placeholders. Use the text within the brackets to tell the reader what a placeholder represents. For example:
+
+```shell
+git push origin <your-branch-name>
+```
 
 
 ## Quotes and punctuation placement
