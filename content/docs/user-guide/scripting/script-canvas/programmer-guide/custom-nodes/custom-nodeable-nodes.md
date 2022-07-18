@@ -93,17 +93,18 @@ ly_add_target(
 ## Step 2: Create an XML file for code generation {#create-an-xml-file}
 
 Prepare for code generation by creating an XML file that contains information about the node's class, input pins, output pins, and associated tooltip text. AzAutoGen uses this file to generate C++ code used by your node class when implementing your node's functionality.
+The file includes the following XML attributes:
 1. **(Required)** The name of custom nodeable class.
 1. **(Recommended)** The namespace of functions, which should match with the outer namespace of custom nodeable class.
-1. **(Required)** The full qualified name of custom nodeable class, including namespace name.
-1. **(Required)** The sanitized nodeable node name, which will be presented in Script Canvas editor.
+1. **(Required)** The fully qualified name of custom nodeable class, including namespace name.
+1. **(Required)** The sanitized nodeable node name, which will be presented in Script Canvas Editor.
 1. **(Optional)** The category of functions, if not presented, will use `Nodes` instead.
 1. It defines the latent execution output slot for custom nodeable node.
 1. It defines the execution input and output slot for custom nodeable node.
 
 We'll use the following XML, copied from the O3DE source for the **Input Handler** node<!-- , as an example to explain the important sections of this file -->.
 
-File: [TimerNodeable.ScriptCanvasNodeable.xml](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/Source/InputHandlerNodeable.ScriptCanvasNodeable.xml)
+File: [InputHandlerNodeable.ScriptCanvasNodeable.xml](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/Source/InputHandlerNodeable.ScriptCanvasNodeable.xml)
 
 ```xml
 <ScriptCanvas Include="Source/InputHandlerNodeable.h" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -172,7 +173,7 @@ Add the XML and class source files to one of Gem's .cmake files.
 
 For example, in `InputHandlerNodeable` we must add the following lines:
 
-File: [InputHandlerNodeable.h](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/Source/InputHandlerNodeable.h)
+File: [startingpointinput_files.cmake](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/startingpointinput_files.cmake)
 ```cmake
 set(FILES
     ...
@@ -188,28 +189,29 @@ set(FILES
 This step is only required once for the first time nodeable node creation.
 {{< /note >}}
 
-The final step is to register and reflect the new node. To do this, you need to modify Gem [Module](/docs/user-guide/programming/gems/overview/) and [System Component](/docs/user-guide/programming/components/system-components/). Use the **StartingPointInput** Gem from the O3DE source as a reference:
+The final step is to register and reflect the new node. To do this, you need to modify your Gem's [Gem module](/docs/user-guide/programming/gems/overview/) and [system component](/docs/user-guide/programming/components/system-components/). Use the **StartingPointInput** Gem from the O3DE source as a reference:
 
-1. Include auto-generated registry header file, and invoke `REGISTER_SCRIPTCANVAS_AUTOGEN_NODEABLE` with sanitized Gem target name. 
+1. In your Gem's system component, include the auto-generated registry header file, and invoke `REGISTER_SCRIPTCANVAS_AUTOGEN_NODEABLE` with the sanitized Gem target name.
     {{< note >}}
-    Auto-generated registry header file should be the same name declared under `AUTOGEN_RULES` in your Gem's `Code/CMakeLists.txt`. In **StartingPointInput** example, it is `AutoGenNodeableRegistry.generated.h`.
+    Use the same auto-generated registry header file that you declared in Step 1 under `AUTOGEN_RULES` in your Gem's `Code/CMakeLists.txt`. In the **StartingPointInput** example, it is `AutoGenNodeableRegistry.generated.h`.
     {{< /note >}}
     {{< note >}}
-    Sanitized Gem target name should contain letters and numbers only. In **StartingPointInput** example, it is `StartingPointInputStatic` which refers to `StartingPointInput.Static` target.
+    The sanitized Gem target name should contain letters and numbers only. In the **StartingPointInput** example, it is `StartingPointInputStatic` which refers to the `StartingPointInput.Static` target.
     {{< /note >}}
    
-    For example, in `StartingPointInputGem.cpp`
+    For example, in [`StartingPointInputGem.cpp`](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/Source/StartingPointInputGem.cpp):
   
     ```cpp
-    #include <AutoGenFunctionRegistry.generated.h>
+    #include <AutoGenNodeableRegistry.generated.h>
+    ...
     
-    REGISTER_SCRIPTCANVAS_AUTOGEN_FUNCTION(MyGemStatic)
+    REGISTER_SCRIPTCANVAS_AUTOGEN_NODEABLE(StartingPointInputStatic);
     ...
     ```
 
-1. Reflect and initialize auto-generated registry through Gem system component Reflect function.
+1. Also in your Gem's system component, reflect and initialize the auto-generated registry in the component's Reflect function:
 
-    For example, in `StartingPointInputGem.cpp`
+    For example, in [`StartingPointInputGem.cpp`](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/Source/StartingPointInputGem.cpp):
 
     ```cpp
     void StartingPointInputSystemComponent::Reflect(AZ::ReflectContext* context)
@@ -226,9 +228,9 @@ The final step is to register and reflect the new node. To do this, you need to 
     }   
     ```
 
-1. Insert auto-generated nodeable descriptors in Gem module.
+1. Finally, insert the auto-generated nodeable descriptors in the Gem module.
 
-    For example, in `StartingPointInputGem.cpp`
+    For example, in [`StartingPointInputGem.cpp`](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/Source/StartingPointInputGem.cpp):
     ```cpp
     StartingPointInputModule() : AZ::Module()
     {
@@ -238,12 +240,13 @@ The final step is to register and reflect the new node. To do this, you need to 
     }
     ```
 
-## Advanced ScriptCanvasNodeable.xml Usage
-This topic explores additional features we support in nodeable XML file.
+## Advanced ScriptCanvasNodeable.xml usage
+This topic explores additional features that we support in the nodeable XML file.
 
 ### Base and derived nodeable node
-If you have basic shared logic across multiple nodeable node, we do support create base and derived nodeable node.
-We'll use the following XML, copied from the O3DE source for the **Time Delay** node.
+If you have shared logic across multiple nodeable nodes, you can create a base node and multiple derived nodes.
+
+The following example uses the O3DE source for the **Time Delay** node:
 
 File: [TimeDelayNodeable.ScriptCanvasNodeable.xml](https://github.com/o3de/o3de/blob/development/Gems/ScriptCanvas/Code/Include/ScriptCanvas/Libraries/Time/TimeDelayNodeable.ScriptCanvasNodeable.xml)
 ```xml
@@ -267,7 +270,8 @@ File: [TimeDelayNodeable.ScriptCanvasNodeable.xml](https://github.com/o3de/o3de/
 </ScriptCanvas>
 ```
 
-The `TimeDelayNodeable` class itself implements a base class, called `BaseTimer`. In the following XML, you can see the base class defines shared properties
+The `TimeDelayNodeable` class implements a base class, called `BaseTimer`. In the following base class XML, you can see that the base class defines the shared properties, "Units" and "TickOrder":
+File: [BaseTimer.ScriptCanvasNodeable.xml](https://github.com/o3de/o3de/blob/development/Gems/ScriptCanvas/Code/Include/ScriptCanvas/Internal/Nodeables/BaseTimer.ScriptCanvasNodeable.xml)
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -298,5 +302,5 @@ The `TimeDelayNodeable` class itself implements a base class, called `BaseTimer`
 ```
 
 {{< note >}}
-For further node name, tooltip and category customization, please refer to [Text Replacement](/docs/user-guide/scripting/script-canvas/editor-reference/text-replacement/)
+For further node name, tooltip, and category customization, please refer to [Text Replacement](/docs/user-guide/scripting/script-canvas/editor-reference/text-replacement/).
 {{< /note >}}
