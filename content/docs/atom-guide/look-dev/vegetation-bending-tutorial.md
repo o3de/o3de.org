@@ -421,15 +421,7 @@ First, let's add a function that our multiple vertex shaders can call to avoid r
       float4 adjustedWorldPosition = float4(worldPosition);
       if (o_color_isBound) 
       {
-         // Overall wind
-         float4 currentBending = SetUpWindBending(currentTime, worldPosition);
-
-         // Detail bending
-         float3 currentOutPosition = DetailBending(position, normal, color, currentTime, worldPosition, currentBending.w);
-
-         currentOutPosition = MainBending(currentOutPosition, currentBending);
-
-         adjustedWorldPosition = mul(objectToWorld, float4(currentOutPosition, 1.0));
+         // We will add function calls here.
       }
       return adjustedWorldPosition;
    }
@@ -462,7 +454,6 @@ First, let's add a function that our multiple vertex shaders can call to avoid r
 Now, let's begin editing the code to add wind. 
 
 1. Open `{your-project-path}\Materials\Types\VegetationBending_Common.azsli`.
-   - Because we need to have the bending be done on all passes, we can add the code in the common `.azsli` file to avoid repeat code. The functions we write will be called by the vertex shaders.
 2. At the bottom, add the following code:
 
    ```hlsl
@@ -494,7 +485,7 @@ Now, let's begin editing the code to add wind.
    {{< note >}}
    This function could potentially be run once per-object on the CPU with the results updated each frame in the ObjectSrg instead of being run once per-vertex on the GPU. It's a tradeoff between doing the computation once per frame per vegetation object + an extra SRG compile per frame per vegetation object vs. re-doing the computation on the GPU per frame per vegetation object per vertex. It's content specific, with the redundant GPU cost increasing as vertex density increases, and also depends on if the GPU is the bottleneck, and whether or not the vertex shader is the bottleneck, and also if the vertex shader is bandwidth bound or ALU bound. 
    {{< /note >}}
-3. Now, let's call the function in our `ProceessBending` function. Inside the conditional, add a call to our wind function:
+3. Now, let's call the function in our `ProcessBending` function. Inside the conditional, add a call to our wind function:
    
    ```hlsl
    if (o_color_isBound) 
@@ -542,7 +533,7 @@ Using the wind bending constants that we just calculated, we can now determine t
       return objectSpacePosition + movement;
    }
    ```
-3. Call the detail bending function in our `ProceessBending` function. Inside the conditional, add the call:
+3. Call the detail bending function in our `ProcessBending` function. Inside the conditional, add the call:
    
    ```hlsl
    if (o_color_isBound) 
