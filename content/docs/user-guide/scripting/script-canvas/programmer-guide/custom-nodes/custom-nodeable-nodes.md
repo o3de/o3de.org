@@ -28,6 +28,8 @@ As an example, here is partial definition of StartingPointInput Gem's `Code/CMak
    AUTOGEN_RULES
        *.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Header.jinja,$path/$fileprefix.generated.h
        *.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Source.jinja,$path/$fileprefix.generated.cpp
+       *.ScriptCanvasNodeable.xml,ScriptCanvasNodeableRegistry_Header.jinja,AutoGenNodeableRegistry.generated.h
+       *.ScriptCanvasNodeable.xml,ScriptCanvasNodeableRegistry_Source.jinja,AutoGenNodeableRegistry.generated.cpp
    ```
 1. `STATIC` library must be declared directly as `BUILD_DEPENDENCIES` of Gem runtime module (and it should be included as part of editor module build dependencies hierarchy)
 1. `StartingPointInput.Static` includes two .cmake file lists. 
@@ -40,6 +42,8 @@ As an example, here is partial definition of StartingPointInput Gem's `Code/CMak
        ...
        ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasNodeable_Header.jinja
        ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasNodeable_Source.jinja
+       ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasNodeableRegistry_Header.jinja
+       ${LY_ROOT_FOLDER}/Gems/ScriptCanvas/Code/Include/ScriptCanvas/AutoGen/ScriptCanvasNodeableRegistry_Source.jinja
    )
    ```
 
@@ -66,6 +70,8 @@ ly_add_target(
         ...
         *.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Header.jinja,$path/$fileprefix.generated.h
         *.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Source.jinja,$path/$fileprefix.generated.cpp
+        *.ScriptCanvasNodeable.xml,ScriptCanvasNodeableRegistry_Header.jinja,AutoGenNodeableRegistry.generated.h
+        *.ScriptCanvasNodeable.xml,ScriptCanvasNodeableRegistry_Source.jinja,AutoGenNodeableRegistry.generated.cpp
 )
 
 ly_add_target(
@@ -87,73 +93,40 @@ ly_add_target(
 ## Step 2: Create an XML file for code generation {#create-an-xml-file}
 
 Prepare for code generation by creating an XML file that contains information about the node's class, input pins, output pins, and associated tooltip text. AzAutoGen uses this file to generate C++ code used by your node class when implementing your node's functionality.
+The file includes the following XML attributes:
+1. **(Required)** The name of custom nodeable class.
+1. **(Recommended)** The namespace of functions, which should match with the outer namespace of custom nodeable class.
+1. **(Required)** The fully qualified name of custom nodeable class, including namespace name.
+1. **(Required)** The sanitized nodeable node name, which will be presented in Script Canvas Editor.
+1. **(Optional)** The category of functions, if not presented, will use `Nodes` instead.
+1. It defines the latent execution output slot for custom nodeable node.
+1. It defines the execution input and output slot for custom nodeable node.
 
-We'll use the following XML, copied from the O3DE source for the **Timer** node<!-- , as an example to explain the important sections of this file -->.
+We'll use the following XML, copied from the O3DE source for the **Input Handler** node<!-- , as an example to explain the important sections of this file -->.
 
-File: `Gems/ScriptCanvas/Code/Include/ScriptCanvas/Libraries/Time/TimerNodeable.ScriptCanvasNodeable.xml`
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-
-<ScriptCanvas Include="Include/ScriptCanvas/Libraries/Time/TimerNodeable.h" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <Class Name="TimerNodeable"
-           QualifiedName="Nodeables::Time::TimerNodeable"
-           PreferredClassName="Timer"
-           Base="ScriptCanvas::Nodeable"
-           Icon="Icons/ScriptCanvas/Placeholder.png"
-           Category="Timing"
-           GeneratePropertyFriend="True"
-           Namespace="ScriptCanvas"
-           Description="While active, will signal the output at the given interval.">
-
-      <Input Name="Start" Description="Starts the timer"/>
-      <Input Name="Stop" Description="Stops the timer"/>
-
-      <Output Name="On Tick" Description="Signaled at each tick while the timer is in operation.">
-        <Parameter Name="Milliseconds" Type="Data::NumberType" Description="The amount of time that has elapsed since the timer started in milliseconds."/>
-        <Parameter Name="Seconds" Type="Data::NumberType" Description="The amount of time that has elapsed since the timer started in seconds."/>
-      </Output>
-
-    </Class>
-</ScriptCanvas>
-```
-
-The `TimerNodeable` class itself implements a base class, called `BaseTimer`. In the following XML, you can see the additional properties that describe member data for the class.
-
-File: `Gems/ScriptCanvas/Code/Include/ScriptCanvas/Internal/Nodeables/BaseTimer.ScriptCanvasNodeable.xml`
+File: [InputHandlerNodeable.ScriptCanvasNodeable.xml](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/Source/InputHandlerNodeable.ScriptCanvasNodeable.xml)
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
+<ScriptCanvas Include="Source/InputHandlerNodeable.h" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Class Name="InputHandlerNodeable"                                                                                  # 1
+        Namespace="StartingPointInput"                                                                                  # 2
+        QualifiedName="StartingPointInput::InputHandlerNodeable"                                                        # 3
+        PreferredClassName="Input Handler"                                                                              # 4
+        Category="Input"                                                                                                # 5
+        Description="Handle processed input events found in input binding assets">
 
-<ScriptCanvas Include="Include/ScriptCanvas/Internal/Nodeables/BaseTimer.h" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <Class Name="BaseTimer"
-         QualifiedName="ScriptCanvas::Nodeables::Time::BaseTimer"
-         PreferredClassName="BaseTimer"
-           Uuid="{64814C82-DAE5-9B04-B375-5E47D51ECD26}"
-           Base="ScriptCanvas::Nodeable"
-           Icon="Icons/ScriptCanvas/Placeholder.png"
-           Category="Utilities"
-           Version="0"
-           EntryPoint="true"
-           GeneratePropertyFriend="False"
-           Description="Provides a basic interaciton layer for all time based nodes for users(handles swapping between ticks and seconds).">
-
-      <Property Name="m_timeUnits" Type="int" DefaultValue="0" Serialize="true">
-        <PropertyData Name="Units"
-                      Description="Units to represent the time in."
-                      Serialize="true"
-                      UIHandler="AZ::Edit::UIHandlers::ComboBox">
-          <EditAttribute Key="AZ::Edit::Attributes::GenericValueList" Value="&amp;BaseTimer::GetTimeUnitList"/>
-          <EditAttribute Key="AZ::Edit::Attributes::PostChangeNotify" Value="&amp;BaseTimer::OnTimeUnitsChanged"/>
-        </PropertyData>
-      </Property>
-
-      <Property Name="m_tickOrder" Type="int" DefaultValue="static_cast&lt;int&gt;(AZ::TICK_DEFAULT)" Serialize="true">
-        <PropertyData Name="TickOrder"
-                      Description="When the tick for this time update should be handled."
-                      />
-      </Property>
-
+        <Output Name="Pressed" Description="Signaled when the input event begins." >                                    # 6
+            <Parameter Name="value" Type="float"/>
+        </Output>
+        <Output Name="Held" Description="Signaled while the input event is active." >                                   # 6
+            <Parameter Name="value" Type="float"/>
+        </Output>
+        <Output Name="Released" Description="Signaled when the input event ends." >                                     # 6
+            <Parameter Name="value" Type="float"/>
+        </Output>
+        <Input Name="Connect Event" Description="Connect to input event name as defined in an input binding asset.">    # 7
+            <Parameter Name="Event Name" Type="AZStd::string" Description="Event name as defined in an input binding asset. Example 'Fireball'."/>
+        </Input>/>
     </Class>
 </ScriptCanvas>
 ```
@@ -168,37 +141,29 @@ There are three critical parts that every Script Canvas nodeable header file nee
 1. It must contain the node definition macro `SCRIPTCANVAS_NODE`.
 1. It must include the generated header.
 
-The following code fragment from the `BaseTimer` header for the Timer node demonstrates these requirements:
+The following code fragment from the `InputHandlerNodeable` header for the **Input Handler** node demonstrates these requirements:
 
-File: `Gems/ScriptCanvas/Code/Include/ScriptCanvas/Internal/Nodeables/BaseTimer.h`
+File: [InputHandlerNodeable.h](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/Source/InputHandlerNodeable.h)
 
 ```cpp
-#include <AzCore/Component/TickBus.h>
-
-#include <Include/ScriptCanvas/Internal/Nodeables/BaseTimer.generated.h> // (3)
-
-#include <ScriptCanvas/CodeGen/NodeableCodegen.h>
-#include <ScriptCanvas/Core/Node.h>
 #include <ScriptCanvas/Core/Nodeable.h>
+#include <ScriptCanvas/Core/NodeableNode.h>
+#include <ScriptCanvas/CodeGen/NodeableCodegen.h>
+#include <StartingPointInput/InputEventNotificationBus.h>
 
-namespace ScriptCanvas
+#include <Source/InputHandlerNodeable.generated.h>                                                   // (3)
+
+namespace StartingPointInput
 {
-    namespace Nodeables
+    //////////////////////////////////////////////////////////////////////////
+    /// Input handles raw input from any source and outputs Pressed, Held, and Released input events
+    class InputHandlerNodeable
+        : public ScriptCanvas::Nodeable                                                              // (1)
+        , protected InputEventNotificationBus::Handler
     {
-        namespace Time
-        {
-            class BaseTimer
-                : public ScriptCanvas::Nodeable         // (1)
-                , public NodePropertyInterfaceListener
-                , public AZ::TickBus::Handler
-                , public AZ::SystemTickBus::Handler
-            {
-                SCRIPTCANVAS_NODE(BaseTimer)            // (2)
-
-                [...]
-            }
-        }
-    }
+        SCRIPTCANVAS_NODE(InputHandlerNodeable)                                                      // (2)
+        ...
+    };
 }
 ```
 
@@ -206,50 +171,136 @@ namespace ScriptCanvas
 
 Add the XML and class source files to one of Gem's .cmake files.
 
-For example, in `TimerNodeable` we must add the following lines:
+For example, in `InputHandlerNodeable` we must add the following lines:
 
+File: [startingpointinput_files.cmake](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/startingpointinput_files.cmake)
 ```cmake
 set(FILES
     ...
-    Include/ScriptCanvas/Libraries/Time/TimerNodeable.h
-    Include/ScriptCanvas/Libraries/Time/TimerNodeable.cpp
-    Include/ScriptCanvas/Libraries/Time/TimerNodeable.ScriptCanvasNodeable.xml
+    Source/InputHandlerNodeable.h
+    Source/InputHandlerNodeable.cpp
+    Source/InputHandlerNodeable.ScriptCanvasNodeable.xml
     ...
 )
 ```
 
 ## Step 5: Reflect the new node {#reflect-the-new-node}
+{{< note >}}
+This step is only required once for the first time nodeable node creation.
+{{< /note >}}
 
-The final step is to reflect the new node. To do this, add your custom node to a Script Canvas node library. You can use one of the existing node libraries, or create your own.
+The final step is to register and reflect the new node. To do this, you need to modify your Gem's [Gem module](/docs/user-guide/programming/gems/overview/) and [system component](/docs/user-guide/programming/components/system-components/). Use the **StartingPointInput** Gem from the O3DE source as a reference:
 
-For an example on how to create your own library, use the **StartingPointInput** Gem from the O3DE source as a reference:
+1. In your Gem's system component, include the auto-generated registry header file, and invoke `REGISTER_SCRIPTCANVAS_AUTOGEN_NODEABLE` with the sanitized Gem target name.
+    {{< note >}}
+    Use the same auto-generated registry header file that you declared in Step 1 under `AUTOGEN_RULES` in your Gem's `Code/CMakeLists.txt`. In the **StartingPointInput** example, it is `AutoGenNodeableRegistry.generated.h`.
+    {{< /note >}}
+    {{< note >}}
+    The sanitized Gem target name should contain letters and numbers only. In the **StartingPointInput** example, it is `StartingPointInputStatic` which refers to the `StartingPointInput.Static` target.
+    {{< /note >}}
+   
+    For example, in [`StartingPointInputGem.cpp`](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/Source/StartingPointInputGem.cpp):
+  
+    ```cpp
+    #include <AutoGenNodeableRegistry.generated.h>
+    ...
+    
+    REGISTER_SCRIPTCANVAS_AUTOGEN_NODEABLE(StartingPointInputStatic);
+    ...
+    ```
 
-`Gems/StartingPointInput/Code/Source/InputLibrary.h`
-`Gems/StartingPointInput/Code/Source/InputLibrary.cpp`
+1. Also in your Gem's system component, reflect and initialize the auto-generated registry in the component's Reflect function:
 
-Libraries help with node organization, but their primary function is to ensure all nodes are pulled in and reflected at the appropriate time.
-
-In the **Timer** nodeable example, the node is added to the Script Canvas Gem's **Time** library in: `Gems/ScriptCanvas/Code/Include/ScriptCanvas/Libraries/Time/Time.cpp`.
-
-In this library, there are two places where we need to reference the nodeable:
-
-1. In `InitNodeRegistry`, we call the templated `AddNodeToRegistry` function using the node class.
+    For example, in [`StartingPointInputGem.cpp`](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/Source/StartingPointInputGem.cpp):
 
     ```cpp
-    void Time::InitNodeRegistry(NodeRegistry& nodeRegistry)
+    void StartingPointInputSystemComponent::Reflect(AZ::ReflectContext* context)
     {
-        AddNodeToRegistry<Time, ScriptCanvas::Nodes::TimerNodeableNode>(nodeRegistry);
+        REFLECT_SCRIPTCANVAS_AUTOGEN(StartingPointInputStatic, context);
+        ...
+    }
+    ```
+   
+    ```cpp
+    void StartingPointInputSystemComponent::Init()
+    {
+        INIT_SCRIPTCANVAS_AUTOGEN(StartingPointInputStatic);
+    }   
+    ```
+
+1. Finally, insert the auto-generated nodeable descriptors in the Gem module.
+
+    For example, in [`StartingPointInputGem.cpp`](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/Source/StartingPointInputGem.cpp):
+    ```cpp
+    StartingPointInputModule() : AZ::Module()
+    {
+        ...
+        AZStd::vector<AZ::ComponentDescriptor*> autogenDescriptors(GET_SCRIPTCANVAS_AUTOGEN_COMPONENT_DESCRIPTORS(StartingPointInputStatic));
+        m_descriptors.insert(m_descriptors.end(), autogenDescriptors.begin(), autogenDescriptors.end());
     }
     ```
 
-1. In `GetComponentDescriptors`, we add a function pointer to the `AZStd::vector` return value that points to the node's `CreateDescriptor` function.
+## Advanced ScriptCanvasNodeable.xml usage
+This topic explores additional features that we support in the nodeable XML file.
 
-    ```cpp
-    AZStd::vector<AZ::ComponentDescriptor*> Time::GetComponentDescriptors()
-    {
-        return AZStd::vector<AZ::ComponentDescriptor*>({
-            ...
-            ScriptCanvas::Nodes::TimerNodeableNode::CreateDescriptor(),
-        });
-    }
-    ```
+### Base and derived nodeable node
+If you have shared logic across multiple nodeable nodes, you can create a base node and multiple derived nodes.
+
+The following example uses the O3DE source for the **Time Delay** node:
+
+File: [TimeDelayNodeable.ScriptCanvasNodeable.xml](https://github.com/o3de/o3de/blob/development/Gems/ScriptCanvas/Code/Include/ScriptCanvas/Libraries/Time/TimeDelayNodeable.ScriptCanvasNodeable.xml)
+```xml
+<ScriptCanvas Include="Include/ScriptCanvas/Libraries/Time/TimeDelayNodeable.h" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Class Name="TimeDelayNodeable"
+        QualifiedName="Nodeables::Time::TimeDelayNodeable"
+        PreferredClassName="Time Delay"
+        Base="Nodeables::Time::BaseTimer"    # Declare base class as Nodeables::Time::BaseTimer
+        Category="Timing"
+        Namespace="ScriptCanvas"
+        Description="Delays all incoming execution for the specified number of ticks">
+
+        <Input Name="Start" Description="">
+            <Parameter Name="Delay" Type="Data::NumberType" DefaultValue="0.0" Description="The amount of time to delay before the Done is signalled."/>
+        </Input>
+
+        <Output Name="Done" Description="Signaled after waiting for the specified amount of times."/>
+
+        <PropertyInterface Property="m_timeUnitsInterface" Name="Units" Type="Input" Description="Units to represent the time in."/>
+    </Class>
+</ScriptCanvas>
+```
+
+The `TimeDelayNodeable` class implements a base class, called `BaseTimer`. In the following base class XML, you can see that the base class defines the shared properties, "Units" and "TickOrder":
+File: [BaseTimer.ScriptCanvasNodeable.xml](https://github.com/o3de/o3de/blob/development/Gems/ScriptCanvas/Code/Include/ScriptCanvas/Internal/Nodeables/BaseTimer.ScriptCanvasNodeable.xml)
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScriptCanvas Include="Include/ScriptCanvas/Internal/Nodeables/BaseTimer.h" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Class Name="BaseTimer"
+        QualifiedName="ScriptCanvas::Nodeables::Time::BaseTimer"
+        PreferredClassName="BaseTimer"
+        Uuid="{64814C82-DAE5-9B04-B375-5E47D51ECD26}"
+        BaseClass="True"    # Declare this nodeable as a base class, so it won't be reflected as a node
+        Category="Timing"
+        Description="Provides a basic interaciton layer for all time based nodes for users(handles swapping between ticks and seconds).">
+
+        <Property Name="m_timeUnits" Type="int" DefaultValue="0" Serialize="true">
+            <PropertyData Name="Units"
+                Description="Units to represent the time in."
+                Serialize="true"
+                UIHandler="AZ::Edit::UIHandlers::ComboBox">
+                <EditAttribute Key="AZ::Edit::Attributes::GenericValueList" Value="&amp;BaseTimer::GetTimeUnitList"/>
+                <EditAttribute Key="AZ::Edit::Attributes::PostChangeNotify" Value="&amp;BaseTimer::OnTimeUnitsChanged"/>
+            </PropertyData>
+        </Property>
+
+        <Property Name="m_tickOrder" Type="int" DefaultValue="static_cast&lt;int&gt;(AZ::TICK_DEFAULT)" Serialize="true">
+            <PropertyData Name="TickOrder" Description="When the tick for this time update should be handled."/>
+        </Property>
+    </Class>
+</ScriptCanvas>
+```
+
+{{< note >}}
+For further node name, tooltip, and category customization, please refer to [Text Replacement](/docs/user-guide/scripting/script-canvas/editor-reference/text-replacement/).
+{{< /note >}}
