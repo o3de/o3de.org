@@ -28,16 +28,16 @@ In May, O3DE announced its [latest release](https://t.co/CuVOjb9Agx), focused on
 **Join Us at O3DCon**
 On October 17-19, the Open 3D Foundation will host [O3Dcon](https://bit.ly/O3DCon), its flagship conference, bringing together technology leaders, indie developers, and academia to share ideas and best practices, discuss hot topics and foster the future of 3D development across a variety of industries and disciplines. For those interested in sponsoring this event, please contact sponsorships@linuxfoundation.org. 
  
-Anyone interested in the O3D Engine is invited to get involved and connect with the community on [Discord.com/invite/o3de](Discord.com/invite/o3de) and [GitHub.com/o3de](https://github.com/o3de). 
+Anyone interested in the O3D Engine is invited to get involved and connect with the community on Discord.com/invite/o3de and GitHub.com/o3de. 
  
 **About the Open 3D Engine (O3DE) project**
-O3D Engine is the flagship project managed by the Open 3D (O3D) Foundation. The open-source project is a modular, cross-platform 3D engine built to power anything from AAA games to cinema-quality 3D worlds to high-fidelity simulations. The code is hosted on GitHub under the Apache 2.0 license. To learn more, please visit [o3de.org](o3de.org).
+O3D Engine is the flagship project managed by the Open 3D (O3D) Foundation. The open-source project is a modular, cross-platform 3D engine built to power anything from AAA games to cinema-quality 3D worlds to high-fidelity simulations. The code is hosted on GitHub under the Apache 2.0 license. To learn more, please visit o3de.org.
  
 **About the Open 3D Foundation**
-Established in July 2021, the mission of the Open 3D Foundation (O3DF) is to make an open-source, fully-featured, high-fidelity, real-time 3D engine for building games and simulations, available to every industry. The Open 3D Foundation is home to the O3D Engine project. To learn more, please visit [o3d.foundation](o3d.foundation).
+Established in July 2021, the mission of the Open 3D Foundation (O3DF) is to make an open-source, fully-featured, high-fidelity, real-time 3D engine for building games and simulations, available to every industry. The Open 3D Foundation is home to the O3D Engine project. To learn more, please visit o3d.foundation.
  
 **About the Linux Foundation**
-Founded in 2000, the Linux Foundation is supported by more than 1,000 members and is the world’s leading home for collaboration on open source software, open standards, open data, and open hardware. Linux Foundation’s projects are critical to the world’s infrastructure including Linux, Kubernetes, Node.js, and more. The Linux Foundation’s methodology focuses on leveraging best practices and addressing the needs of contributors, users and solution providers to create sustainable models for open collaboration. For more information, please visit us at [linuxfoundation.org](linuxfoundation.org).
+Founded in 2000, the Linux Foundation is supported by more than 1,000 members and is the world’s leading home for collaboration on open source software, open standards, open data, and open hardware. Linux Foundation’s projects are critical to the world’s infrastructure including Linux, Kubernetes, Node.js, and more. The Linux Foundation’s methodology focuses on leveraging best practices and addressing the needs of contributors, users and solution providers to create sustainable models for open collaboration. For more information, please visit us at linuxfoundation.org.
  
 **Media Inquiries:**
 pr@o3d.foundation
