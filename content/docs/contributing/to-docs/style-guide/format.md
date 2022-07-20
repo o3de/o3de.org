@@ -6,7 +6,9 @@ weight: 300
 toc: true
 ---
 
-The **Open 3D Engine (O3DE)** documentation is written in **Markdown syntax**. With Markdown, sometimes there are multiple methods to achieve the same result. For example, you can enclose words in underscores (`_`) or asterisks (`*`) to create italics. In these situations, it is best to use one method throughout the documentation. To keep both the documentation Markdown source files, and the O3DE documentation on-page presentation consistent, adhere to the following basic documentation standards.
+The **Open 3D Engine (O3DE)** documentation is written in **Goldmark Markdown syntax**. [Goldmark](https://github.com/yuin/goldmark) is a Markdown parser, which Hugo uses. 
+
+With Markdown, sometimes there are multiple methods to achieve the same result. For example, you can enclose words in underscores (`_`) or asterisks (`*`) to create italics. In these situations, it is best to use one method throughout the documentation. To keep both the documentation Markdown source files, and the O3DE documentation on-page presentation consistent, adhere to the following basic documentation standards.
 
 ## Topic headings
 
@@ -24,7 +26,6 @@ linkTitle: Page Title
 title: An O3DE Documentation Page Title
 description: A topic about an Open 3D Engine feature.
 weight: 100
-toc: true
 ---
 
 ## H2 for the first section title (Sentence title capitalization)
@@ -40,11 +41,6 @@ toc: true
 #### H4 for sub-section of a sub-section title (Sentence title capitalization)
 
 ```
-
-{{< note >}}
-A table of contents for the page is automatically generated in the right gutter using the on-page headings if the `toc` Front Matter variable is set to `true`.
-{{< /note >}}
-
 
 
 ## Text format
@@ -130,6 +126,8 @@ When writing code blocks, make sure to include a language identifier. For C++ co
 
 ### Links
 
+#### Relative and absolute links
+
 Write links without the file extension *.md*.
 
 | Relative link | Result |
@@ -141,6 +139,20 @@ Write links without the file extension *.md*.
 | `[...](./forward-directory-linked-from-non-index/)` | Links from any page to a subdirectory of the current page. |
 | `[...](../)` | Returns to the index of the previous directory. |
 | `[...](../link-to-page-in-previous-directory)` | Links from any page to a page in the previous directory. |
+| `[...](link#subheading)` | Link to a subheading within a topic. |
+| **Absolute link** | **Result** |
+| `[...](docs/guide/link-to-page)` | Link to a page in the documentation. |
+
+
+#### External links
+
+Use external links cautiously and sparingly. Only link to sites that are trustworthy and respectable. Avoid adding unnecessary links.
+
+For a third-party product, you must provide an external link to the source. Only do this for the first on-page instance, or when it's most relevant.
+
+For supplemental information, you may not need to use an external link. Providing a brief explanation may suffice and is preferred because it keeps the user's focus on the current topic.
+
+
 
 ### Quotes and punctuation placement
 
@@ -286,6 +298,8 @@ Nested list result:
 #### Definition lists
 
 Use definition lists for content that lists a pair of terms and their definitions. For example, a glossary.
+
+Use `:` to delineate each definition in the list.
   
 Definition list example:
 
@@ -319,7 +333,7 @@ A *prefab* is a collection of entities ... | A "prefab" is a collection of entit
 
 ### Trademark
 
-Properly format trademark titles and terminology according to its use from the source. Provide a link to the source's relevant material."
+Properly format trademark titles and terminology according to its use from the source. Provide a link to the source's relevant material.
 
 ## Applications, tools, Gems, and components
 
@@ -339,8 +353,8 @@ Tool | The `o3de` Python script allows you to... To use the `o3de` Python script
 For the first on-page reference to Gems and components, use **bold** text. Use unformatted text for subsequent references.  
 
 **Additional rules**  
-: - For Gems, capitalize and **bold** both the name of the Gem and "Gem" itself. 
-  - For components, capitalize and **bold** the name of the component; lowercase and use unformatted text for "component" itself. 
+: - For Gems, capitalize and **bold** both the name of the Gem and the word "Gem". 
+  - For components, capitalize and **bold** the name of the component. Use lowercase and unformatted text for the word "component". 
 
 Type | Example
 :--| :-- 
@@ -366,7 +380,7 @@ Input | .. **right-click** the asset name ... | ... right-click the asset name .
 Hotkey | Hold **Ctrl+Shift** ... | Hold `Control + Shift` ...
 
 
-## Code, Commands, and APIs
+## Code, commands, and APIs
 
 ### Code style for inline code and commands
 

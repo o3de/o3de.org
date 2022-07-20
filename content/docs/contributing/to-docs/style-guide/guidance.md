@@ -12,7 +12,7 @@ The **Open 3D Engine (O3DE)** documentation project serves a global audience. Th
 
 Documentation is written in U.S. English. Use simple and precise words, wherever possible. Write short and complete sentences. Break up information into smaller bodies of text. 
 
-- **Precise words**: Whenever possible, use precise words with only one definition, or the primary definition of words from a respectable U.S. English dictionary. For example, use "once" only when referring to the number of times that an action is performed. Don't use "once" to mark a point in time, like in "Once the download completes."
+- **Precise words**: Whenever possible, use precise words that have one definition, or use words based on their the primary definition. For example, use "once" only when referring to the number of times that an action is performed. Don't use "once" to mark a point in time, like in "Once the download completes."
 
 - **Short and complete sentences**: Break up long sentences with multiple clauses into several short sentences to improve readability. Sentences must have a subject, verb, and object, and punctuation at the end.
 
