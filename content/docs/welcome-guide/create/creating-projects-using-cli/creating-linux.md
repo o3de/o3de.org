@@ -15,7 +15,7 @@ The following instructions assume that you have:
 * Set up O3DE on your computer. For help, refer to [Set up Open 3D Engine](/docs/welcome-guide/setup).
 * Registered the O3DE engine in the O3DE manifest. If you set up O3DE from GitHub, you must manually register the engine. For help, refer to [Register the engine](/docs/welcome-guide/setup/setup-from-github/building-linux/#register-the-engine).
 
-This tutorial uses the following project name and directories in the examples. (Depending on how you set up O3DE, you might not have all of these directories.)
+This tutorial uses the following project name and directories in the examples. Depending on how you set up O3DE, you might not have all of these directories, or you might have used different directory names.
 
 | Directory | Description |
 | --- | --- |
@@ -30,25 +30,47 @@ To start a project based on the standard template, complete the following steps.
 
 1. Open a terminal window and change to your O3DE engine directory by doing one of the following:
 
-    * If you set up your engine as a [source engine](/docs/welcome-guide/setup/setup-from-github/building-linux/#build-the-engine), use the engine source directory.
+    * If you set up your engine as a [source engine](/docs/welcome-guide/setup/setup-from-github/building-linux/#build-the-engine), use the engine source directory. Example:
 
         ```shell
         cd $HOME/o3de
         ```
 
-    * If you installed O3DE or built your engine as an [SDK engine](/docs/welcome-guide/setup/setup-from-github/building-linux/#build-the-engine) using the `INSTALL` target, use the installed engine directory.
+    * If you installed O3DE or built your engine as an [SDK engine](/docs/welcome-guide/setup/setup-from-github/building-linux/#build-the-engine) using the `INSTALL` target, use the installed engine directory. Example:
 
         ```shell
         cd $HOME/o3de-install
         ```
 
-1. To create a new external project, use the `o3de` script in the `scripts` subdirectory. The `create-project` command, used with the `project-path` and no other options, creates a new project using the **standard** template (the default project template). This command also registers the engine to the project in the project's `project.json` manifest.
+1. To create a new external project, use the `o3de` script in the `scripts` subdirectory. The `create-project` command, used with the `project-path` and no other options, creates a new project using the **standard** template (the default project template).
 
     ```shell
     scripts/o3de.sh create-project --project-path $HOME/o3de-projects/MyProject
     ```
 
-    Additionally, this command registers the project, adding it to the list of known projects in the O3DE manifest located in `$HOME/.o3de/o3de_manifest.json`, and making **Project Manager** aware of your project.
+    When creating a project, this command also makes two important registrations:
+
+    * It associates your project with an engine by registering the engine in the project's `project.json` manifest, using the engine's registered name. You can find this manifest in the project's root directory. The registration for an engine named "o3de" looks like the following example:
+
+        ```json
+        "engine": "o3de",
+        ```
+
+        {{< note >}}
+If you change the engine's registered name, or wish to use a different engine with the project, you will need to update this manifest entry.
+        {{< /note >}}
+
+    * It registers the project in the O3DE manifest, adding it to the list of known projects, and making **Project Manager** aware of your project. The O3DE manifest is located in `$HOME/.o3de/o3de_manifest.json`. The registration for a project located in `/home/username/o3de-projects/MyProject` looks like the following example:
+
+        ```json
+        "projects": [
+            "/home/username/o3de-projects/MyProject"
+        ],
+        ```
+
+        {{< note >}}
+If you move the project, you will need to update this manifest entry.
+        {{< /note >}}
 
 ## Create a Linux build project
 
@@ -85,7 +107,7 @@ When building the project for a pre-built SDK engine, even though you aren't bui
 
     When building the project for a source engine, you build the **Asset Processor** and Project Manager too, since they are dependencies of O3DE Editor.
 
-    The `-j` is a recommended build tool optimization. It tells the Ninja build tool the number of parallel build tasks that will be executed simultaneously. The 'number of parallel build tasks' is recommended to match the number of cores available on the Linux host machine.
+    The `-j` is a recommended build tool optimization. It tells the Ninja build tool the number of parallel build tasks that will be executed simultaneously. The value for 'number of parallel build tasks' is recommended to match the number of cores available on the Linux host machine.
 
     Example:
 
