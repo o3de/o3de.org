@@ -72,23 +72,23 @@ The Edit menu contains options that are useful while editing materials.
 ### View Menu
 The view menu lets you open or close panels and switch to different tabs in the Material Editor.
 
-| Menu item | Function |
-| - | - |
-| Previous Tab **Ctrl+Shift+Tab**| Switches to the previously opened tab. |
-| Next Tab **Ctrl+Tab**| Switches to the next opened tab. |
-| Asset Browser | Toggles the Asset Browser panel. |
-| Inspector | Toggles the Inspector panel. |
-| Viewport Settings | Toggles the Viewport Settings panel. |
-| Performance Monitor | Toggles the Performance Monitor panel. |
-| Python Terminal | Toggles the Python Terminal panel. |
+| Menu item | Hotkey | Function |
+| - | - | - |
+| Previous Tab | **Ctrl+Shift+Tab** | Switches to the previously opened tab. |
+| Next Tab | **Ctrl+Tab** | Switches to the next opened tab. |
+| Asset Browser | | Toggles the Asset Browser panel. |
+| Inspector | | Toggles the Inspector panel. |
+| Viewport Settings | | Toggles the Viewport Settings panel. |
+| Performance Monitor | | Toggles the Performance Monitor panel. |
+| Python Terminal | | Toggles the Python Terminal panel. |
 
 ### Help Menu
 The Help menu provides support and resources for the Material Editor.
 
-| Menu item | Hotkey | Function |
-| - | - | - |
-| Help... |  | Launches the Material Editor Help window and displays a list of controls in the Material Editor. |
-| About... |  | Displays information about the Material Editor. |
+| Menu item | Function |
+| - | - |
+| Help...  | Launches the Material Editor Help window and displays a list of controls in the Material Editor. |
+| About... | Displays information about the Material Editor. |
 
 
 ## Viewport
@@ -111,9 +111,9 @@ These controls adjust the camera view.
 | Control | Action |
 | - | - |
 | **LMB+Drag**, **RMB+Drag** | Tumble the camera around a pivot or point of interest. |
-| `MMB Scroll` | Dolly the camera toward or away from a pivot or point of interest. |
+| **MMB Scroll** | Dolly the camera toward or away from a pivot or point of interest. |
 | **MMB+Drag** | Track the camera left, right, up, and down in the direction of mouse movement. |
-| `Z` | Reset camera view. |
+| **Z** | Reset camera view. |
 
 #### Model and Lighting Controls
 These controls adjust the model and lighting within the current camera view. 
