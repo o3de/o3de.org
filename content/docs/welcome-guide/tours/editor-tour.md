@@ -88,7 +88,7 @@ O3DE has familiar viewport interaction models based on first-person PC games and
 *  **E** - Move up.
 *  **Z** - Focus on selected.
 *  **RMB+Drag** - Rotate view, known as *mouselook* in most games.
-*  **MouseWheelo Up/Down** - Zoom view.
+*  **MouseWheel Up/Down** - Zoom view.
 *  **MMB+Drag** - Pan view.
 *  **LMB** - Select entity.
 *  **LMB+Drag** - Area select entities.
