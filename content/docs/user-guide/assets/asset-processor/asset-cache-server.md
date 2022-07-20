@@ -55,7 +55,7 @@ The table shows the active asset patterns that will be cached when the asset is 
  4. a text box to enter the pattern to match source assets
  5. a button to remove the pattern
  
-The enable flag allows a user to toggle the row to disabled to force the local client Asset Processor to process the matching assets locally. Most of the time the client users will have all patterns enabled.
+The enable flag allows a user to toggle the row to disabled to force the local client Asset Processor to process the matching assets. Most of the time the client users will have all patterns enabled.
 
 The `Name` is a label to explain what source assets are being matched. If the name matches the name of an asset builder, the source assets that use the asset builder will cache the product archives.
 
