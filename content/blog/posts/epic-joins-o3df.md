@@ -31,7 +31,7 @@ On October 17-19, the Open 3D Foundation will host [O3Dcon](https://bit.ly/O3DCo
 Anyone interested in the O3D Engine is invited to get involved and connect with the community on Discord.com/invite/o3de and GitHub.com/o3de. 
  
 **About the Open 3D Engine (O3DE) project**
-O3D Engine is the flagship project managed by the Open 3D (O3D) Foundation. The open-source project is a modular, cross-platform 3D engine built to power anything from AAA games to cinema-quality 3D worlds to high-fidelity simulations. The code is hosted on GitHub under the Apache 2.0 license. To learn more, please visit o3de.org.
+O3D Engine is the flagship project managed by the Open 3D (O3D) Foundation. The open-source project is a modular, cross-platform 3D engine built to power anything from AAA games to cinema-quality 3D worlds to high-fidelity simulations. The code is hosted on GitHub under the Apache 2.0 license. To learn more, please visit [o3de.org](o3de.org).
  
 **About the Open 3D Foundation**
 Established in July 2021, the mission of the Open 3D Foundation (O3DF) is to make an open-source, fully-featured, high-fidelity, real-time 3D engine for building games and simulations, available to every industry. The Open 3D Foundation is home to the O3D Engine project. To learn more, please visit o3d.foundation.
