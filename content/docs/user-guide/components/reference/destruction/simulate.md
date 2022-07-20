@@ -91,8 +91,8 @@ Because the blast asset has been exported from Houdini with **Static root** disa
 
 1. Click and drag on the **Z** axis of the move gizmo to move the entity several units above the terrain.
 
-1.  Press **Control + P** to view simulation. The entity drops and shatters when it collides with the terrain.
+1.  Press **Ctrl+P** to view simulation. The entity drops and shatters when it collides with the terrain.
 
-1.  Press **Control + P** to end the simulation.
+1.  Press **Ctrl+P** to end the simulation.
 
 ![Add the blast slice asset to the Blast Family Mesh Data component.](/images/user-guide/physx/blast/anim-nvidia-blast-view-simulation.gif)

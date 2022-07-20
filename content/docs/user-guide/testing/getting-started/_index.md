@@ -47,7 +47,7 @@ CTest expects its working directory to be a CMake build directory, so be sure to
     ```
 
 {{< caution >}}
-Without a filter the command will run every registered test, and likely result in multiple hours of test execution! If you ever want to stop CTest, send an interrupt signal by selecting the terminal and pressing `CTRL+C`.
+Without a filter the command will run every registered test, and likely result in multiple hours of test execution! If you ever want to stop CTest, send an interrupt signal by selecting the terminal and pressing **Ctrl+C**.
 {{< /caution >}}
 
 CTest can also run a subset of labeled test suites with the `-L` argument. These test suites should be contained in parenthesis (`(..)`) and have their names separated with a `|` character. The following examples demonstrate this syntax for running the Main and Smoke suites for a `profile` build on Windows or Linux:
