@@ -1,18 +1,18 @@
 ---
 linkTitle: Custom Lighting Tutorial with Flipbook Animation
 title: Custom Lighting Tutorial with Flipbook Animation
-description: A tutorial for custom lighting using a flipbook animation with 6-point lighting in the Atom renderer of the Open 3D Engine (O3DE).
+description: A tutorial for custom lighting using a flipbook animation with six-point lighting in the Atom renderer of the Open 3D Engine (O3DE).
 weight: 300
 toc: true
 ---
 In this tutorial, we cover how to make your own material type that uses a custom surface with custom lighting. In this case, we will be using a flipbook animation with 6-point lighting. This material type is especially useful for use on effects such as smoke and clouds, since we want to animate movement while still capturing correct lighting. However, traditional lighting methods would not work because it is a 2D texture. Therefore, to apply the correct lighting, we will need a custom material type that uses custom lighting. We follow [this technique](https://realtimevfx.com/t/smoke-lighting-and-texture-re-usability-in-skull-bones/5339) to use six points (top, bottom, left, right, front, and back) and determine which points of the six should be used to compute a lightmap. 
 
 This tutorial covers the following concepts:
-- Editing your own material type
+- Edit your own material type
 - Toggle property visibility in the **Material Editor** with lua
-- Changing the UV for animation
-- Making a custom surface
-- Adding custom lighting
+- Change the UV for animation
+- Make a custom surface
+- Add custom lighting
 
 ## Prerequisites
 Ensure you have [installed the engine](../../welcome-guide/setup/), [set up a project](../../welcome-guide/create/), and [launched the editor](../../welcome-guide/tours/editor-tour).
@@ -29,6 +29,11 @@ Do the following steps to get started on making the six point lighting material 
 5. Open `{your-project-path}\Materials\Types\SixPointLighting.materialtype`. Under `propertyLayout` > `propertyGroups`, you'll see there are many entries with `{your-path-to-o3de}`. Replace `{your-path-to-o3de}` with your appropriate path to the engine.
    - For example, `C:/o3de/Gems/Atom/Feature/Common/Assets/Materials/Types/MaterialInputs/BaseColorPropertyGroup.json`.
    - Currently we cannot import property groups across gems, so we are hard coding the absolute path, even though it is not portable, as a proof of concept. There is a GHI to enable importing across gems at [o3de#10623](https://github.com/o3de/o3de/issues/10623).
+6. We also need to download some assets to actually test the animation and lighting! Visit this [this Github repo](), and download the following textures:
+   - rightlefttop
+   - bottombackfront
+   - alpha
+7. Move the three assets to `{your-project-path}\Materials`.
 
 These template files have everything set up so that we can get started to create our own custom surface and lighting. They were created by duplicating important parts of the `StandardPBR` files and then modifying them. Most of the changes made were to strip out unnecessary parts from `StandardPBR`'s files. When you create your own material types in the future, you can similarly duplicate `StandardPBR` files and work from there.
 
@@ -36,8 +41,8 @@ These files already include all of the properties that we will need. If you are 
 - `o_sixPointTexturePackMode` - property option to choose which texture pack mode to use
 - `m_topLeftRightBottomMap` - property to hold texture defining the top, left, right, bottom light map
 - `m_frontBackMap` - property to hold texture defining the front, back light map
-- `m_leftRightTopMap;` - property to hold texture defining the left, right, top light map
-- `m_frontBackBottomMap` - property to hold texture defining the front, back, bottom light map
+- `m_rightLeftTopMap;` - property to hold texture defining the right, left, top light map
+- `m_bottomBackFrontMap` - property to hold texture defining the bottom, back, front light map
 - `o_enableDepthTexture` - property for whether or not to use a depth texture
 - `m_depthMap` - property to hold depth texture map
 - `m_depthScale` - property for the scale of the depth texture
@@ -63,39 +68,49 @@ However, because we are using six points and there are only up to four channels 
    2. Second texture:
       - Front : Red
       - Back : Green
-2. LeftRightTop_FrontBackBottom option
+2. RightLeftTop_BottomBackFront option
    1. First texture:
-      - Left : Red 
-      - Right : Green
+      - Right : Red 
+      - Left : Green
       - Top : Blue
    2. Second texture:
-      - Front : Red
+      - Bottom : Red
       - Back : Green
-      - Bottom : Blue
+      - Front : Blue
 
 In `SixPointLightingPropertyGroup.json` you'll see that we already have four properties for the set of two textures for both options. They are also already defined in `SixPointLighting_Common.azsli`. However, we want to provide a `.lua` script to our material type so that if you select one option from the dropdown for *Texture Pack Mode*, only the corresponding properties show up.
 
-1. Open `SixPointLighting_TexturePackEnum.lua`. You'll see that there are two functions `GetMaterialPropertyDependencies()` and `ProcessEditor()`. `GetMaterialPropertyDependencies()` is how we get the value of a property of a material. We can then use its value in `ProcessEditor()` to enable and disable visibility of the textures as we want.
+1. Open `SixPointLighting_TexturePackEnum.lua`. You'll see that there are two functions `GetMaterialPropertyDependencies()` and `ProcessEditor()`. `GetMaterialPropertyDependencies()` is how we get the value of a property of a material. We can then use its value in `ProcessEditor()` to enable and disable visibility of the properties in the **Material Editor** as we want.
 2. Following how `sixPointLighting.TLRB`'s visibility is enabled and disabled, enable and disable the other texture options as appropriate:
    ```hlsl
    if(texturePackMode == TexturePackMode_TpLftRtBt_FrBck) then
-      -- TpLftRtBt is the first texture, FrBck is the second. Disable LftRtTp and FrBckBt.
+      -- TopLeftRightBack is the first texture, FrontBack is the second. Disable RightLeftTop and BottomBackFront.
       context:SetMaterialPropertyVisibility("sixPointLighting.TLRB", MaterialPropertyVisibility_Enabled)
       context:SetMaterialPropertyVisibility("sixPointLighting.FB", MaterialPropertyVisibility_Enabled)
-      context:SetMaterialPropertyVisibility("sixPointLighting.LRT", MaterialPropertyVisibility_Hidden)
-      context:SetMaterialPropertyVisibility("sixPointLighting.FBB", MaterialPropertyVisibility_Hidden)
-   elseif(texturePackMode == TexturePackMode_LftRtTp_FrBckBt) then
-      -- LftRtTp is the first texture, FrBckBt is the second. Disable TpLftRtBt and FrBck.
+      context:SetMaterialPropertyVisibility("sixPointLighting.RLT", MaterialPropertyVisibility_Hidden)
+      context:SetMaterialPropertyVisibility("sixPointLighting.BBF", MaterialPropertyVisibility_Hidden)
+   elseif(texturePackMode == TexturePackMode_RtLftTp_BtBckFr) then
+      -- RightLeftTop is the first texture, BottomBackFront is the second. Disable TopLeftRightBack and FrontBack.
       context:SetMaterialPropertyVisibility("sixPointLighting.TLRB", MaterialPropertyVisibility_Hidden)
       context:SetMaterialPropertyVisibility("sixPointLighting.FB", MaterialPropertyVisibility_Hidden)
-      context:SetMaterialPropertyVisibility("sixPointLighting.LRT", MaterialPropertyVisibility_Enabled)
-      context:SetMaterialPropertyVisibility("sixPointLighting.FBB", MaterialPropertyVisibility_Enabled)
+      context:SetMaterialPropertyVisibility("sixPointLighting.RLT", MaterialPropertyVisibility_Enabled)
+      context:SetMaterialPropertyVisibility("sixPointLighting.BBF", MaterialPropertyVisibility_Enabled)
    end
    ```
-   
-Open up the **Material Editor** and make a new material with the six point lighting type. Observe how when you switch between the texture pack modes, the options change! Add in the textures and choose your texture pack mode. Also, adjust the opacity properties: set **Opacity Mode** to `Blended`, **Alpha Source** to `Split`, add alpha texture, and set both the **Factor** and **Alpha affects specular** to `1.0`. Additionally, be sure to set the center of the **UVs** to `(0.0, 0.0)` and enable **Double-sided**. 
+In order to see the **Material Editor** changes take place, we need to make a six point lighting material.
 
-When you return to the **Editor**, make an entity with **Mesh** and **Material** components. Choose a plane for the **Mesh** and the material you just created for the material. As of now, it should just display the whole alpha texture with all the frames.
+## Make a six point lighting material
+Let's make a material using our six point lighting material type.
+1. Open up the **Material Editor** and make a new material with the six point lighting type.
+2. Find the **Six Point Lighting** properties in the **Inspector** on the right.
+3. Notice how the default **Texture Pack Mode** is `TpLftRtBt_FrBck`. The two properties below that correspond to this texture pack mode, and the properties for the other texture pack mode are hidden! Select `RtLftTp_BtBckFr` and observe how the properties change. Now, select `rightlefttop` for the **Right Left Top** property, and `bottombackfront` for the **Bottom Back Front** property. 
+4. Under **Base Color** > **Texture**, choose `alpha`. Then, disable **Use Texture**.
+5. Under **Opacity** > **Opacity Mode**, choose `Blended`. For **Alpha Source**, select `Packed`. This means that the opacity map will use the alpha channel packed into the base color texture. Ensure that both the opacity **Factor** and **Alpha affects specular** is `1.0`.
+6. Set **UVs** > **Center** to be `0.0` for both **U** and **V**. 
+7. Enable **General Settings** > **Double-sided**. This allows for rendering of the back-side of the material.
+8. In the **Editor**, make an entity with **Mesh** and **Material** components. Choose a plane for the **Mesh** and the material you just created for the material.
+
+As of now, it should just display the whole alpha texture with all the frames.
 
 ## Add animation
 Let's add the animation! Our textures contain all the frames of the animation so we just need to programatically iterate through the frames to have the animation appear.
@@ -170,7 +185,7 @@ Now let's integrate the surface, initalize the values, and prepare for our custo
 3. Find the *Specular* section. This is where we will initialize our new properties we added to our custom surface. 
 4. Recall that we had six properties for the six directions of light that we are supporting, but that we have two options for lightmaps. We will need to handle both options and set the properties accordingly:
    ```hlsl
-   if(o_sixPointTexutrePackMode == SixPointTexturePackMode::TpLftRtBt_FrBck)
+   if(o_sixPointTexturePackMode == SixPointTexturePackMode::TpLftRtBt_FrBck)
    {
       float4 topLeftRightBottom = MaterialSrg::m_topLeftRightBottomMap.Sample(MaterialSrg::m_sampler, sixPointUv);
       float4 frontBack = MaterialSrg::m_frontBackMap.Sample(MaterialSrg::m_sampler, sixPointUv);
@@ -183,14 +198,14 @@ Now let's integrate the surface, initalize the values, and prepare for our custo
    }
    else
    {
-      float4 leftRightTop = MaterialSrg::m_leftRightTopMap.Sample(MaterialSrg::m_sampler, sixPointUv);
-      float4 frontBackBottom = MaterialSrg::m_frontBackBottomMap.Sample(MaterialSrg::m_sampler, sixPointUv);
-      surface.left = leftRightTop.r;
-      surface.right = leftRightTop.g;
-      surface.top = leftRightTop.b;
-      surface.frontside = frontBackBottom.r;
-      surface.backside = frontBackBottom.g;
-      surface.bottom = frontBackBottom.b;
+      float4 rightLeftTop = MaterialSrg::m_rightLeftTopMap.Sample(MaterialSrg::m_sampler, sixPointUv);
+      float4 bottomBackFront = MaterialSrg::m_bottomBackFrontMap.Sample(MaterialSrg::m_sampler, sixPointUv);
+      surface.right = rightLeftTop.r;
+      surface.left = rightLeftTop.g;
+      surface.top = rightLeftTop.b;
+      surface.bottom = bottomBackFront.r;
+      surface.backside = bottomBackFront.g;
+      surface.frontside = bottomBackFront.b;
    }
    ```
 5. Initalize the `tangent` and `bitangent` properties that we also defined in our surface right after:
@@ -222,9 +237,9 @@ Let's add our custom lighting:
       float ComputeLightMap(const float3 dirToLightWS, const Surface surface)
       {
          float3 dirToLightTS = WorldSpaceToTangent(dirToLightWS, surface.normal, surface.tangent, surface.bitangent);
-         float hMap = (dirToLightTS.x > 0.0f) ? (surface.top) : (surface.left);   // Picks the correct horizontal side.
-         float vMap = (dirToLightTS.y > 0.0f) ? (surface.bottom) : (surface.right);   // Picks the correct vertical side.
-         float dMap = (dirToLightTS.z > 0.0f) ? (surface.frontside) : (surface.backside);   // Picks the correct Front/back side.
+         float hMap = (dirToLightTS.x > 0.0f) ? (surface.right) : (surface.left);   // Picks the correct horizontal side.
+         float vMap = (dirToLightTS.y > 0.0f) ? (surface.bottom) : (surface.top);   // Picks the correct vertical side.
+         float dMap = (dirToLightTS.z > 0.0f) ? (surface.frontside) : (surface.backside);  // Picks the correct front/back side
          float lightMap = hMap*dirToLightTS.x*dirToLightTS.x + vMap*dirToLightTS.y*dirToLightTS.y + dMap*dirToLightTS.z*dirToLightTS.z; // Pythagoras!
          return lightMap;
       }
