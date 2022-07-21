@@ -6,7 +6,7 @@ weight: 300
 toc: true
 ---
 
-The **Open 3D Engine (O3DE)** documentation is written in **Goldmark Markdown syntax**. [Goldmark](https://github.com/yuin/goldmark) is a Markdown parser, which Hugo uses. 
+The **Open 3D Engine (O3DE)** documentation is written in **Goldmark Markdown syntax**. [Goldmark](https://github.com/yuin/goldmark) is the Markdown parser used by [Hugo](https://gohugo.io/), the site builder used for o3de.org.
 
 With Markdown, sometimes there are multiple methods to achieve the same result. For example, you can enclose words in underscores (`_`) or asterisks (`*`) to create italics. In these situations, it is best to use one method throughout the documentation. To keep both the documentation Markdown source files, and the O3DE documentation on-page presentation consistent, adhere to the following basic documentation standards.
 
@@ -18,7 +18,7 @@ Section titles should be an H2 (`##`) heading, and use sentence case for the sec
 
 Subsection titles should start with an H3 (`###`) heading, and use sentence case for the subsection title.
 
-Example:
+**Example**:
 
 ```markdown
 ---
@@ -51,13 +51,13 @@ There can be multiple methods to achieve the same result in Markdown. Adhere to 
 
 To bold text, enclose the text in double asterisks (`**`).
 
-Bold example:
+**Example**:
 
 ```markdown
 This is **bold** text.
 ```
 
-Bold result:
+**Result**:
 
 This is **bold** text.
 
@@ -65,13 +65,13 @@ This is **bold** text.
 
 To italicize text, enclose the text in a single asterisk (`*`).
 
-Italic example:
+**Example**:
 
 ```markdown
 This is *italic* text.
 ```
 
-Italic result:
+**Result**:
 
 This is *italic* text.
 
@@ -79,13 +79,13 @@ This is *italic* text.
 
 To format text as inline code, enclose the text in a single backtick (`` ` ``).
 
-Inline code example:
+**Example**:
 
 ```markdown
 This is `code` text.
 ```
 
-Inline code result:
+**Result**:
 
 This is `code` text.
 
@@ -93,7 +93,10 @@ This is `code` text.
 
 Use code blocks for multi-line code. Some languages are supported for syntax highlighting. The language is specified after the opening back-ticks (` ``` `) of the code block.
 
-Code block example:
+When writing code blocks, make sure to include a language identifier. For C++ code blocks, use the `cpp` identifier. See Hugo's [List of Chroma Highlighting Languages](https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages)
+ for additional language identifiers.
+
+**Example**:
 
 ````none
 ```python
@@ -106,7 +109,7 @@ def on_process_job(args):
 ```
 ````
 
-Code block result:
+**Result**:
 
 ```python
 # Use the 'request' find the type of job via 'jobKey' to determine what to do
@@ -121,14 +124,12 @@ def on_process_job(args):
 Syntax highlighting in the code block should conform to the [contrast guidelines.](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0&showtechniques=141%2C143#contrast-minimum)
 {{< /note >}}
 
-When writing code blocks, make sure to include a language identifier. For C++ code blocks, use the `cpp` identifier.
-
 
 ### Links
 
 #### Relative and absolute links
 
-Write links without the file extension *.md*.
+Write links without the file extension `.md`.
 
 | Relative link | Result |
 | - | - |
@@ -141,7 +142,7 @@ Write links without the file extension *.md*.
 | `[...](../link-to-page-in-previous-directory)` | Links from any page to a page in the previous directory. |
 | `[...](link#subheading)` | Link to a subheading within a topic. |
 | **Absolute link** | **Result** |
-| `[...](docs/guide/link-to-page)` | Link to a page in the documentation. |
+| `[...](/docs/guide/link-to-page)` | Link to a page in the documentation. |
 
 
 #### External links
@@ -150,7 +151,7 @@ Use external links cautiously and sparingly. Only link to sites that are trustwo
 
 For a third-party product, you must provide an external link to the source. Only do this for the first on-page instance, or when it's most relevant.
 
-For supplemental information, you may not need to use an external link. Providing a brief explanation may suffice and is preferred because it keeps the user's focus on the current topic.
+For supplemental information, consider whether an external link is needed at all. Providing a brief explanation may suffice and is preferred because it keeps the user's focus on the current topic.
 
 
 
@@ -158,21 +159,20 @@ For supplemental information, you may not need to use an external link. Providin
 
 When the quote is contained within a sentence, place the punctuation outside the quote.
 
-Do | Don't
-:--| :-----
-... assets that are "game-ready". | ... assets that are "game-ready."
-... process called "rigging". | ... process called "rigging."
-
 When the quote is a complete sentence, place the punctuation inside the quote.
 
-> "Focus is a matter of deciding what things you're not going to do." - John Carmack
+Type | Example
+:--| :-----
+Quote is within a sentence | ... assets that are "game-ready"**.**
+Quote is a complete sentence | _"Focus is a matter of deciding what things you're not going to do **.** "_ <br>- John Carmack
+
 
 
 ## Information structure
 
 ### Tables
 
-Table example:
+**Example**:
 
 ```markdown
 | Default column| Right-aligned column | Center-aligned column | Left-aligned column |
@@ -182,7 +182,7 @@ Table example:
 | Row with missing entry | entry | | entry |
 ```
 
-Table result:
+**Result**:
 
 | Default column| Right-aligned column | Center-aligned column | Left-aligned column |
 | - | -: | :-: | :- |
@@ -192,7 +192,7 @@ Table result:
 
 ### Tabs
 
-Tabs example:
+**Example**:
 
 
 ```
@@ -211,7 +211,7 @@ Second tab's content.
 ```
 
 
-Tabs result:
+**Result**:
 
 {{< tabs name="tabs-example" >}}
 {{% tab name="First tab" %}}
@@ -229,15 +229,13 @@ Second tab's content.
 
 ### Lists
 
-Use ordered lists when the order of the items is significant, such as a procedure of sequential steps. Use unordered lists if the order of the items is arbitrary, such as a list of assets.
-
 If the list is longer than four items, or if the list contains call-out shortcode or an image, add newlines between each list element to improve readability.
 
 #### Ordered lists
 
-Use `1.` to delineate items in ordered lists. Goldmark automatically numbers the items in the list. Ordered lists are used for procedures.
+Use ordered lists when the order of the items is significant, such as a procedure of sequential steps. For ease, you can use `1.` to delineate all items in ordered lists. Goldmark automatically numbers the items in the list. 
 
-Ordered list example:
+**Example**:
 
 ```markdown
 1. Step one
@@ -246,7 +244,7 @@ Ordered list example:
 1. Step four
 ```
 
-Ordered list result:
+**Result**:
 
 1. Step one
 1. Step two
@@ -255,9 +253,11 @@ Ordered list result:
 
 #### Unordered lists
 
-Use `*` to delineate items in unordered lists.
+Use unordered lists if the order of the items is arbitrary, such as a list of assets. 
 
-Unordered list example:
+You can use `*` or `-` to delineate items in unordered lists. Whatever you use, be consistent throughout the whole list.
+
+**Example**:
 
 ```markdown
 * Item one
@@ -265,7 +265,7 @@ Unordered list example:
 * Item three
 ```
 
-Unordered list result:
+**Result**:
 
 * Item one
 * Item two
@@ -273,27 +273,44 @@ Unordered list result:
 
 #### Nested lists
 
-Indent four spaces to nest a list. Nested lists are often used for sub-steps or requirements lists in a procedure.
+Nested lists are often used for sub-steps or requirements lists in a procedure. Indent four spaces to nest a list.
 
-Nested list example:
+For code blocks within a step, indent the code block once more past the step's indentation.
 
-```markdown
+For shortcodes within a step, similarly indent the opening and closing shortcode brackets once more past the step's indentation. However, be cautious not to indent the enclosed text because it leads to a code block within the shortcode.
+
+**Example**:
+
+````markdown
 1. Step one
 1. Step two
     * Item one
     * Item two
     * Item three
-1. Step three
-```
-
-Nested list result:
+1. Code example
+    ```
+    A line of code or command
+    ```
+1. Callout example
+    {{</* note */>}}
+  A callout box.
+    {{</* /note */>}}
+````
+**Result**:
 
 1. Step one
 1. Step two
     * Item one
     * Item two
     * Item three
-1. Step three
+1. Code example
+    ```
+    A line of code or command
+    ```
+1. Callout example
+    {{< note >}}
+  A callout box.
+    {{< /note >}}
 
 #### Definition lists
 
@@ -301,18 +318,18 @@ Use definition lists for content that lists a pair of terms and their definition
 
 Use `:` to delineate each definition in the list.
   
-Definition list example:
+**Example**:
 
 ```markdown
-First Term
+First Term  
 : This is the definition of the first term.
 
-Second Term
+Second Term  
 : This is one definition of the second term.
 : This is another definition of the second term.
 ```
 
-Definition list result:
+**Result**:
 
 First Term
 : This is the definition of the first term.
@@ -333,7 +350,7 @@ A *prefab* is a collection of entities ... | A "prefab" is a collection of entit
 
 ### Trademark
 
-Properly format trademark titles and terminology according to its use from the source. Provide a link to the source's relevant material.
+Properly format trademark titles and terminology according to its use from the source. Provide a link to the source's relevant material for the first on-page instance, or when it's most relevant.
 
 ## Applications, tools, Gems, and components
 
@@ -446,7 +463,9 @@ Open the `/<project>/game.cfg` file. | Open the /\<project\>/game.cfg file.
 
 ### Mark placeholders with angle brackets
 
-Use angle brackets for placeholders. Use the text within the brackets to tell the reader what a placeholder represents. For example:
+Use angle brackets for placeholders. Use the text within the brackets to tell the reader what a placeholder represents.
+
+**Example**:
 
 ```shell
 git push origin <your-branch-name>

@@ -12,7 +12,7 @@ The **Open 3D Engine (O3DE)** documentation project serves a global audience. Th
 
 Documentation is written in U.S. English. Use simple and precise words, wherever possible. Write short and complete sentences. Break up information into smaller bodies of text. 
 
-- **Precise words**: Whenever possible, use precise words that have one definition, or use words based on their the primary definition. For example, use "once" only when referring to the number of times that an action is performed. Don't use "once" to mark a point in time, like in "Once the download completes."
+- **Precise words**: Whenever possible, use precise words that have one definition, or use words based on their primary definition. For example, use "once" only when referring to the number of times that an action is performed. Don't use "once" to mark a point in time, like in "Once the download completes."
 
 - **Short and complete sentences**: Break up long sentences with multiple clauses into several short sentences to improve readability. Sentences must have a subject, verb, and object, and punctuation at the end.
 
@@ -49,7 +49,9 @@ Documentation is written in U.S. English. Use simple and precise words, wherever
 
 Use [active voice](https://writing.wisc.edu/handbook/style/ccs_activevoice/) and present-tense verbs wherever possible. Speak simply, respectfully, and professionally.
 
-Refer to the user as "you"; don't use "we".
+Refer to the user as "you". 
+
+Refer to the O3DE software, O3DE community, or the O3D Foundation as "we". For example, you might say "We recommend...". 
 
 ## Acronyms, abbreviations, and Latin phrases
 

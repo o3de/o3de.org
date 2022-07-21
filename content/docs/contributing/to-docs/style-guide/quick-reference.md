@@ -11,7 +11,7 @@ Follow the O3DE Docs Style Guide in your documentation. This ensures that the do
 | **Language** |  |
 | --- | --- |
 | [Write for accessibility](guidance#write-for-accessibility) | Documentation is written in U.S. English. Use simple and precise words, wherever possible. Write short and complete sentences. Break up information into smaller bodies of text. |
-| [Voice and tone](guidance#voice-and-tone) | Use [active voice](https://writing.wisc.edu/handbook/style/ccs_activevoice/) and present-tense verbs wherever possible. Speak simply, respectfully, and professionally.  <br><br>Refer to the user as "you"; don't use "we". |
+| [Voice and tone](guidance#voice-and-tone) | Use [active voice](https://writing.wisc.edu/handbook/style/ccs_activevoice/) and present-tense verbs wherever possible. Speak simply, respectfully, and professionally.  <br><br>Refer to the user as "you". Refer to the O3DE software, O3DE community, or the O3D Foundation as "we". |
 | [O3DE terminology](../terminology#o3de-specific-terms) | Use O3DE-specific terms as defined by the O3DE Documentation Terminology and Usage. Update the terminology if you introduce new terms. |
 | [Standard domain and industry terminology](../terminology#standard-domain-and-industry-terminology) | Use terminology that is standard in the domain or industry. If there's ambiguity, then write context to make sure the reader understands the meaning. |
 | [Terms to avoid](../terminology#terms-to-avoid-and-their-alternatives) | Aim for inclusivity in your choice of words. |
@@ -20,7 +20,7 @@ Follow the O3DE Docs Style Guide in your documentation. This ensures that the do
 | **Formatting** |
 | [Hugo](../hugo) and [Markdown](format) | Documentation is written in Markdown (``) files and built by [Hugo](https://gohugo.io/), a static site generator. It's primarily formatted using [Markdown syntax](https://www.markdownguide.org/basic-syntax/), with support for in-line HTML. Additional content formatting includes images, videos, and callout boxes. Callout boxes are implemented through [shortcodes](shortcodes). |
 | [Metadata](metadata) | Documentation must comply with metadata requirements, including *linktitle*, *title*, and *description*. Use *weight* to override the default alphabetical sort order. |
-| [Topic headings](format.md#topic-headings) | Section titles must use H2 (`##`) headings. Subsection titles follow as H3 (`###`) and H4 (`####`) headings. Topic headings must use sentence case. The H1(`#`) heading is reserved for the for the page title which is specified in the topic metadata.  |
+| [Topic headings](format.md#topic-headings) | Section titles must use H2 (`##`) headings. Subsection titles follow as H3 (`###`) and H4 (`####`) headings. Topic headings must use sentence case. The H1(`#`) heading is reserved for the page title which is specified in the topic metadata.  |
 | [User interface, inputs, and hotkeys](format#user-interface-inputs-and-hotkeys) | Bold all instances. |
 | [Files, directories, and paths](format#files-directories-and-paths) | Use `code-style` formatting. Provide context on what the path is relative to. When applicable, link to the file in the [o3de repository](https://github.com/o3de/o3de).  |
 | [Applications, tools, Gems, and components](format/#applications-tools-gems-and-components) | Bold only the first on-page appearance. Subsequent appearances on the same page remain unformatted.  |
