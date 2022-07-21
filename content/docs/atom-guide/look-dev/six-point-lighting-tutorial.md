@@ -256,7 +256,7 @@ Let's add our custom lighting:
       }
       ```
 
-Great, now all the custom surface and lighting is now done! In the **Editor**, look at how your material has lighting now. Try moving around the lighting around your material to see the different effects. For example, try moving the light to point to the top of your material and see how the lighting responds accordingly!
+Great, now all the custom surface and lighting is now done! In the **Editor**, look at how your material has lighting now. Try adding more entities with a **Directional Light** component around your material to see the different effects. For example, try moving the light to point to the top of your material and see how the lighting responds accordingly! Also, adjust the **Intensity** of the light in the **Directional Light** component as needed to make your cloud look more realistic. 
 
 ## Add depth
 While the bulk of the custom lighting is done, the 2D nature of the flipbook only required us to edit the forward pass. However, we can also edit the depth pass to use the optional depth map and edit the outputted depth in the pixel shader.
