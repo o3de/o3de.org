@@ -619,13 +619,13 @@ Amazing, our tree now sways and reacts to wind! Try to place multiple trees and 
 ### Add motion vectors
 Because our tree is moving, we can add a *motion vector pass* so we can choose to add motion blur or other effects. For example, we have a partially implemented [Temporal Anti-Aliasing (TAA)](../features/taa.md) feature which uses the motion vectors. 
 
-If you take a look at the `MeshMotionVectorVegetationBending.azsli` file, you can see that the vertex shader looks similar to the other vertex shaders we have seen, but there's a new output `OUT.m_worldPosPrev`. This is the position of the vector in the last time frame. The pixel shader uses both the previous vector position and the current one to calculate the motion vector. 
+If you take a look at the `MeshMotionVectorVegetationBending.azsl` file, you can see that the vertex shader looks similar to the other vertex shaders we have seen, but there's a new output `OUT.m_worldPosPrev`. This is the position of the vector in the last time frame. The pixel shader uses both the previous vector position and the current one to calculate the motion vector. 
 
 However, we don't have an vertex shader input that gives us the previous position. Therefore, in the vertex shader, we want to calculate the bending for not only the current time as we have been, but also for the previous time frame.
 
-1. Download the three files in the `MeshMotionVectorVegetationBending` folder and move it to `{your-project-path}\Materials\Types`.
+1. Download the two files in the `MeshMotionVectorVegetationBending` folder and move it to `{your-project-path}\Materials\Types`.
 2. The `MeshMotionVectorVegetationBending` files already contain all the previous steps that we have done, like adding the shader option and calling the bending functions. 
-3. Open `VegetationBending.materialtype`. Add the bottom of the `shaders` list, add the motion vector pass:
+3. Open `VegetationBending.materialtype`. At the bottom of the `shaders` list, add the motion vector pass:
    
    ```
    {
@@ -634,62 +634,10 @@ However, we don't have an vertex shader input that gives us the previous positio
    }
    ```
 
-Great, now we have included the motion vector shader, so we have to go in and edit the vertex shader. Before that, however, we need to have a way to get the previous frame's time to use in our bending calculations. The `SceneSrg` has the current frame's time (`m_time`), but it doesn't contain the previous frame's time. Let's add the previous time in the `SceneSrg`.
+Great, now we have included the motion vector shader, so we have to go in and edit the vertex shader.
 
-{{< note >}}
-We will be making some minor changes to the core engine here. This is generally not a best practice because there may be version updates, but we do this as a proof of concept for now. Additionally, the way that we will define the "previous time" also only works for the common case of a single pipeline with a single scene. For example, if you have two render pipelines that are part of the same scene, and both update in the same simulation frame, but one pipeline was last updated the previous simulation frame, and the other was last updated 3 simulation frames ago, they would have two different previous times, but would both be referring to the same SceneSrg. However, again this still works as a proof of concept in this tutorial.
-{{< /note >}}
-
-1. Open `Gems/Atom/RPI/Assets/ShaderLib/Atom/RPI/ShaderResourceGroups/DefaultSceneSrg.azsli`. This is where the `m_time` variable is declared.
-2. Declare the previous time by adding `m_prevTime`:
-   
-   ```hlsl
-   partial ShaderResourceGroup SceneSrg
-   {
-      float m_time; // number of seconds since the application started
-      float m_prevTime; // previous frame's time
-   }
-   ```
-   This allows us to use `m_prevTime` with the `SceneSrg`, but we need to actually set and update the `m_prevTime` value.
-3. Open `Gems/Atom/RPI/Code/Include/Atom/RPI.Public/Scene.h`. In the `Scene` class under the `private` instance fields, find the declaration for `m_simulationTime`. Similarly, add the previous simulation time declarations:
-   
-   ```cpp
-   RHI::ShaderInputConstantIndex m_timeInputIndex;
-   float m_simulationTime;
-   RHI::ShaderInputConstantIndex m_prevTimeInputIndex;
-   float m_prevSimulationTime;
-   ```
-4. Open `Gems/Atom/RPI/Code/Source/RPI.Public/Scene.cpp`. There are a few places we need to add code to to update the previous time.
-   1. In `Scene::CreateScene()`, define `m_prevTimeInputIndex` that we just declared in the `.h` file: 
-   
-      ```cpp
-      scene->m_timeInputIndex = scene->m_srg->FindShaderInputConstantIndex(Name{ "m_time" });
-      scene->m_prevTimeInputIndex= scene->m_srg->FindShaderInputConstantIndex(Name{ "m_prevTime" });
-      ```
-      This gives us the reference to the `SceneSrg`'s `m_prevTime` field that we need to update.
-   2. In `Scene::Simulate()`, right before `m_simulationTime` is updated, set `m_prevSimulationTime` to `m_simulationTime`, which as this point should be the previous frame's time:
-   
-      ```
-      m_prevSimulationTime = m_simulationTime;
-      m_simulationTime = simulationTime;
-      ```
-   3. In `Scene::PrepareSceneSrg()`, set the value of `SceneSrg`'s `m_prevTime` using the index:
-   
-      ```cpp
-      if (m_timeInputIndex.IsValid())
-      {
-         m_srg->SetConstant(m_timeInputIndex, m_simulationTime);
-      }
-
-      if (m_prevTimeInputIndex.IsValid()) {
-         m_srg->SetConstant(m_prevTimeInputIndex, m_prevSimulationTime);
-      }
-      ```
-
-Now that we have the previous time set up, we can actually use it in the vertex shader for our motion vector shader.
-
-1. Open `MeshMotionVectorVegetationBending.azsli`.
-2. We want to perform bending on the vertex at the `IN.m_position` but at the previous frame time, with the previous world position. Call our `ProcessBending` function again, but with the appropriate time and world position:
+1. Open `MeshMotionVectorVegetationBending.azsl`.
+2. We want to perform bending on the vertex at the `IN.m_position` but at the previous frame time, with the previous world position. We can use `SceneSrg::m_prevTime` to get the previous frame time. Call our `ProcessBending` function again, but with the appropriate time and world position:
    ```
    float currentTime = SceneSrg::m_time;
    worldPosition = ProcessBending(currentTime, IN.m_position, IN.m_normal, IN.m_optional_color, worldPosition, objectToWorld);
@@ -704,9 +652,7 @@ Amazing, we have added everything we need to add for motion vectors! However, if
 3. Select **Atom Tools** > **Pass Viewer**.
 4. In the pop-up **PassTree View**, enable **Preview Attachment** and **Show Pass Attachments**.
 5. In the **PassTree**, find *MotionVectorPass* > *MeshMotionVectorPass* and select the line with `CameraMotion`. 
-6. Ensure you are viewing your tree. Note that you probably won't see much except black on the bottom left preview, because the motion vectors are very small because our tree only moves minimally. However, if you move the camera around or translate the tree quickly, you may see some motion vectors pop up. 
-   
-   You can also open `MeshMotionVectorVegetationBending.azsli` and scale `OUT.m_motion` in the pixel shader to ensure that the motion vectors' directions are working properly.
+6. Ensure you are viewing your tree. Note that you probably won't see much except black on the bottom left preview, because the motion vectors are very small because our tree only moves minimally. However, if you move the camera around or translate the tree quickly, you may see some motion vectors pop up. You can also open `MeshMotionVectorVegetationBending.azsl` and scale `OUT.m_motion` in the pixel shader to ensure that the motion vectors' directions are working properly.
 
 This video shows the motion vectors when `OUT.m_motion` is scaled by `10000.0`.
 {{< video src="/images/atom-guide/vegetation-bending-tutorial/motionvectortree.mp4" autoplay="true" loop="true" muted="true" width="100%" info="Video of tree motion vector." >}}
