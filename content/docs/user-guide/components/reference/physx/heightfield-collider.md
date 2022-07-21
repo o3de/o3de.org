@@ -42,3 +42,12 @@ Triggers allow colliders to perform efficient overlap tests. Colliders marked as
 {{< note >}}
 Because triggers don't perform contact resolution, the contact points between a trigger and another collider aren't available.
 {{< /note >}}
+
+## Console variables
+
+There are following console variables available for PhysX Heightfield Collider:
+
+| Name | Description | Values | Default |
+| - | - | - | - |
+| physx_heightfieldDebugDrawDistance | Distance for PhysX Heightfields debug visualization | Float | 50.0 |
+| physx_heightfieldDebugDrawBoundingBox | Draw the bounding box used for heightfield debug visualization | Boolean | False |
