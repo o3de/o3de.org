@@ -22,29 +22,7 @@ Use the following request functions with the EBus interface to communicate with 
 
 For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
 
-### SetAmount
-
-Sets the amount of environmental **'send'** to apply to the default environment, if set.
-
-**Parameters**
-`amount` - Float value of the amount to set
-
-**Return**
-None
-
-**Scriptable**
-Yes
-
-### SetEnvironmentAmount
-
-Sets the amount of environmental **'send'** to apply to the specified environment.
-
-**Parameters**
-`environmentName` - Name of ATL Environment to set an amount on
-`amount` - Float value of the amount to set
-
-**Return**
-None
-
-**Scriptable**
-Yes
+| Name | Description | Parameters | Return | Scriptable |
+|------|-------------|------------|--------|------------|
+| SetAmount | Sets the amount of environmental **'send'** to apply to the default environment, if set. | `amount` - Float value of the amount to set | None | Yes |
+| SetEnvironmentAmount | Sets the amount of environmental **'send'** to apply to the specified environment. | `environmentName` - Name of ATL Environment to set an amount on; `amount` - Float value of the amount to set | None | Yes |
