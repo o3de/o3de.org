@@ -73,7 +73,7 @@ If the Remote Folder is set to an invalid folder location, then an error dialog 
 
 # Asset Cache Server: Settings Details
 
-The settings for the Asset Cache Server are held in `.setreg` files inside the project. For example the `o3de/AutomatedTesting/Registry/editorpreferences.setreg` stores the settings for the Editor.
+The settings for the Asset Cache Server are held in `.setreg` files inside the project. The default settings for the Asset Cache Server for the AutomatedTesting project are stored in the `o3de/AutomatedTesting/Registry/asset_cache_server_settings.setreg` file.
 
 This file stores a JSON document where there is a `/AssetProcessor/Settings/Server` key includes at least two keys `assetCacheServerMode` and `cacheServerAddress` to set the Asset Cache Server mode. It can also contain any number of `ACS ` keys to manage the asset patterns to cache.
 
