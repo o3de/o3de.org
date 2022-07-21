@@ -21,14 +21,14 @@ The VegetationBending materialtype allows materials to bend and sway, simulating
 
 We reference LINK HERE this branch for the code in this tutorial. There, you can find the template code to use to follow this tutorial, the final code, and the assets we are using.
 
-As we go along, you may wish to reference the[Material Types and Shaders guide](./get-started-materialtypes-and-shaders), which gives higher-level explanations of the mechanisms we are using.
+As we go along, you may wish to reference the[Material Types and Shaders guide](../../../atom-guide/look-dev/get-started-materialtypes-and-shaders), which gives higher-level explanations of the mechanisms we are using.
 
 ## Get started
-Before you can create your material type, ensure you have [installed the engine](../../welcome-guide/setup/), [set up a project](../../welcome-guide/create/), and [launched the editor](../../welcome-guide/tours/editor-tour).
+Before you can create your material type, ensure you have [installed the engine](../../../welcome-guide/setup/), [set up a project](../../../welcome-guide/create/), and [launched the editor](../../../welcome-guide/tours/editor-tour).
 
 Next, perform the following steps to get started on making the vegetation bending material type.
 1. Download the template files from [here](). Download all of them EXCEPT the `MeshMotionVectorVegetationBending` folder.
-   - You'll notice that there are a couple key files and file extensions that we need to make our custom material type. More details can be found in [this guide](./get-started-materialtypes-and-shaders/#1-set-up-the-files), but this tutorial will explain each file as we go along.
+   - You'll notice that there are a couple key files and file extensions that we need to make our custom material type. More details can be found in [this guide](../../../atom-guide/look-dev/get-started-materialtypes-and-shaders/#1-set-up-the-files), but this tutorial will explain each file as we go along.
 2. Move `VegetationBendingPropertyGroup.json` to `{your-project-path}\Materials\Types\MaterialInputs\`. Create the folders as needed!
 3. Move the rest of the downloaded files to 
    `{your-project-path}\Materials\Types\`.
@@ -38,7 +38,7 @@ Next, perform the following steps to get started on making the vegetation bendin
 
 These template files were created by duplicating important parts of the `StandardPBR` files and then modifying them. When you create your own material types in the future, you can similalry duplicate `StandardPBR` files and work from there.
 
-As a high-level overview, [`.materialtype`](../dev-guide/materials/materials/#material-types) references the shader files we will use on the material of this material type. The [`.shader`](./shaders/shader-file-spec.md) files define which types of shaders, such as vertex and pixel shaders, should be used and references the actual shader code in [`.azsl`](../dev-guide/shaders/azsl/) files. They also specify the `DrawList`, which controls which pass should run that shader. Often, `.azsl` files will just include `.azsli` files, which are also written in the Amazon shading language (AZSL), but are separate so multiple `.azsl` files can include the `.azsli` files. 
+As a high-level overview, [`.materialtype`](../../../atom-guide/dev-guide/materials/materials/#material-types) references the shader files we will use on the material of this material type. The [`.shader`](../../../atom-guide/look-dev/shaders/shader-file-spec.md) files define which types of shaders, such as vertex and pixel shaders, should be used and references the actual shader code in [`.azsl`](../../../atom-guide/dev-guide/shaders/azsl/) files. They also specify the `DrawList`, which controls which pass should run that shader. Often, `.azsl` files will just include `.azsli` files, which are also written in the Amazon shading language (AZSL), but are separate so multiple `.azsl` files can include the `.azsli` files. 
 
 ## Add a material with the VegetationBending material type
 Before we begin editing any files, we want to ensure we can make a material using our material type in the **Editor**.
@@ -76,7 +76,7 @@ To start off, let's edit the vertex shader to render our shader ball at an offse
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/offset.png" width="100%" alt="Forward pass offset." >}}
 
 The main texture of our shader ball seems to be showing up at an offset as we intended, but a grey outline is still at the origin of the object. This is because we only edited the forward pass, but have yet to edit the *depth pass*. All the passes we go through are referenced in `VegetationBending.materialtype`.
-More information about passes can be found [here](../dev-guide/passes/), but keep in mind that different passes render different parts of the material, and some passes' outputs are used as inputs to other passes.
+More information about passes can be found [here](../../../atom-guide/dev-guide/passes/), but keep in mind that different passes render different parts of the material, and some passes' outputs are used as inputs to other passes.
 
 Let's repeat the above steps but with the depth pass:
 1. Open `{your-project-path}\Materials\Types\VegetationBending_DepthPass.azsli`.
@@ -175,7 +175,7 @@ Note on vertex colors: You can use a DCC tool to color the vertices to match the
 In the case of our tree, the trunk's vertices are colored blue and leaves are colored red.
 
 ### Add a shader option
-Our tree mesh that we just added has colored vertices; however, not every mesh that you want to use your material type on may have colored vertices. Therefore, we want to add a [*shader option*](../dev-guide/shaders/azsl/#shader-variant-options) that allows the vertex shader to handle both of these cases. We also want to add the reference to the colors so we can use them in the code.
+Our tree mesh that we just added has colored vertices; however, not every mesh that you want to use your material type on may have colored vertices. Therefore, we want to add a [*shader option*](../../../atom-guide/dev-guide/shaders/azsl/#shader-variant-options) that allows the vertex shader to handle both of these cases. We also want to add the reference to the colors so we can use them in the code.
 
 1. Open `{your-project-path}\Materials\Types\VegetationBending_Common.azsli`.
 2. At the bottom of the file, add:
@@ -219,7 +219,7 @@ Let's add some textures to make our tree look more realistic! For the tree, we n
 3. Open the **Editor**, and then the **Material Editor** by hitting **M**.
 4. Choose **File** > **New** and, in the pop-up, choose **VegetationBending**, name the material `aspen_leaf.material`, and save it in the `Materials`.
 5. On the right side in the **Inspector**, find **Base Color** and click on the file icon next to *Texture*. Choose `aspen_leaf_basecolora.tif`.
-   - The suffix `_basecolora` tells the engine to process the texture with a specific [*preset*](../../user-guide/assets/texture-settings/texture-presets). Appending a suffix to the name of a texture tells the engine to use the corresponding preset.
+   - The suffix `_basecolora` tells the engine to process the texture with a specific [*preset*](../../../user-guide/assets/texture-settings/texture-presets). Appending a suffix to the name of a texture tells the engine to use the corresponding preset.
 6. Find **Opacity** and, for **Opacity Mode**, select `Cutout`. We need to set this to `Cutout` because the leaf texture has transparent parts.
 7. Under **General Settings**, enable **Double-sided**. This renders both sides of meshes.
 6. Save your leaf material. Now, we need to repeat with the branch and the trunk. Instead of making whole new materials, we can make the leaf material the parent of the branch and trunk materials so the properties stay constant for all 3.
@@ -617,7 +617,7 @@ Amazing, our tree now sways and reacts to wind! Try to place multiple trees and 
 {{< video src="/images/atom-guide/vegetation-bending-tutorial/tree3.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of trees swaying." >}}
 
 ### Add motion vectors
-Because our tree is moving, we can add a *motion vector pass* so we can choose to add motion blur or other effects. For example, we have a partially implemented [Temporal Anti-Aliasing (TAA)](../features/taa.md) feature which uses the motion vectors. 
+Because our tree is moving, we can add a *motion vector pass* so we can choose to add motion blur or other effects. For example, we have a partially implemented [Temporal Anti-Aliasing (TAA)](../../../atom-guide/features/taa.md) feature which uses the motion vectors. 
 
 If you take a look at the `MeshMotionVectorVegetationBending.azsl` file, you can see that the vertex shader looks similar to the other vertex shaders we have seen, but there's a new output `OUT.m_worldPosPrev`. This is the position of the vector in the last time frame. The pixel shader uses both the previous vector position and the current one to calculate the motion vector. 
 
