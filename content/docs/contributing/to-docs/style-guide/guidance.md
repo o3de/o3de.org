@@ -71,9 +71,11 @@ Acronyms that don't need to be spelled out:
 | versus, compared to | vs. |
 
 
-## Idioms, slang, colloquialisms, jokes, or jargon
+## Idioms, slang, colloquialisms, or jargon
 
 Don't use idioms, slang, colloquialisms, or jargon. There are many words and phrases commonly used and understood by native speakers of U.S. English that may be difficult to translate.
+
+Similarly, avoid jokes.
 
 | Type | Definition | Avoid |
 | :--| :-- | :-- |
