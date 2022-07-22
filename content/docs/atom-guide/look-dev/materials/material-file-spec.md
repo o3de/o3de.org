@@ -21,18 +21,18 @@ Indicates the version number of the material type that was used to create this m
 The path to the parent material file. If specified, the material inherits the properties of another parent material. The parent material must have the same material type as the material. The path must be relative to the asset root or to the material file. If not specified, the material inherits default values directly from the material type.
 
 ### **propertyValues**
-Lists the names and values to set for material properties. Any properties that aren't specified here will inherit the value from the parent material if available or from the material type's default value. The JSON data type used for the values should match the property's data type as specified in the `.materialtype` file. However, some data type conversion is supported (for example, "1" can be used to set a float property to "1.0").
+Lists the names and values to set for material properties. Any properties that aren't specified here will inherit the value from the parent material if available or from the material type's default value. The JSON data type used for the values should match the property's data type as specified in the `.materialtype` file. However, some data type conversion is supported; for example, "1" can be used to set a float property to "1.0".
 
 Image properties must have a path to the source image file. The path must be relative to the asset root or to the material file.
 
 Enum properties must use one of the available enum values as specified by the property definition in the `.materialtype` file.
 
-All other property types must be specified according to their standard JSON serialization, see [JSON Serialization of O3DE Data Types](/docs/user-guide/programming/serialization/json-data-types).
+All other property types must be specified according to their standard JSON serialization. See [JSON Serialization of O3DE Data Types](/docs/user-guide/programming/serialization/json-data-types).
 
-The example below demonstrates how to set a property of each possible data type.
+The following example demonstrates how to set a property of each possible data type.
 
 ### **properties** (deprecated)
-An older version of the material file format organized properties by group in nested JSON objects. This is replaced by `propertyValues` (above), which uses a flat list of property identifiers. The engine can still load the old format, but new material files must use the new format.
+An older version of the material file format organized properties by group in nested JSON objects. This is replaced by `propertyValues` (shown previously), which uses a flat list of property identifiers. The engine can still load the old format, but new material files must use the new format.
 
 ## Example
 

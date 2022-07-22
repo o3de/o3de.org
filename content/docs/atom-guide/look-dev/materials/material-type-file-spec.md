@@ -13,18 +13,18 @@ Provides a description or comment from the material type's author.
 Indicates the current version number of the material type. Any materials created with this material type will save this value in their [`materialTypeVersion`](material-file-spec/#materialtypeversion-optional) field.
 
 ## **versionUpdates**  
-Provides backward compatibility for `.material` files that reference an older version of this `.materialtype`. This section includes a list of update steps that can update material data from one version to the next. Whenever the author makes a change to the material type that would break existing materials (such as renaming a property) they can increment the `version` number (see above) and provide a new version update description here. Then, any system that loads the old `.material` file can automatically upgrade it to be compatible with the latest material type.
+Provides backward compatibility for `.material` files that reference an older version of this `.materialtype`. This section includes a list of update steps that can update material data from one version to the next. Whenever the author makes a change to the material type that would break existing materials, such as renaming a property, they can increment the `version` number (previously discussed) and provide a new version update description here. Then, any system that loads the old `.material` file can automatically upgrade it to be compatible with the latest material type.
 
 * **toVersion**: Indicates the material type version when these changes were introduced. The update step will be applied to any material with a [`materialTypeVersion`](material-file-spec/#materialtypeversion-optional) number less than this value.
 
-* **actions**: A list of actions to perform when applying this update. Each action will first have an `op` parameter to indicate what operation to perform. Additional parameters must be specificed depending on which operation is used. Available actions and their required parameters are listed:
+* **actions**: A list of actions to perform when applying this update. Each action will first have an `op` parameter to indicate what operation to perform. Additional parameters must be specified depending on which operation is used. Available actions and their required parameters are listed as follows:
 | op            | Parameter 1 | Description          | Parameter 2 | Description        |
 |---------------|-------------|----------------------|-------------|--------------------|
 | rename        | from        | old property name    | to          | new property name  |
 | setValue      | name        | property name to set | value       | new property value, must be of the appropriate type for the given property |
 
 {{< note >}}
-To upgrade the `.material` source file to match the latest version of the material type, simply open it in the **Material Editor** and then save.
+To upgrade the `.material` source file to match the latest version of the material type, open it in the **Material Editor** and then save it.
 {{< /note >}}
 
 #### Example
@@ -65,7 +65,7 @@ It's common practice to "factor-out" property group definitions into separate JS
     * **name**: An identifier for this property. The value must be formatted in C-style and be unique among sibling properties. 
     * **displayName**: The given name of this property that will appear in the Material Editor. 
     * **description**: The given description of this property that will appear as tooltips in the Material Editor.
-    * **visibility**: The initial visibility for this property. Default is Enabled. Possible values are:
+    * **visibility**: The initial visibility for this property. This is enabled by default. Possible values are:
       - Enabled
       - Disabled
       - Hidden
@@ -88,7 +88,7 @@ It's common practice to "factor-out" property group definitions into separate JS
     * **softMin**: The minimum value of the property that a user can configure using a slider or similar UI widget. However, a user can type in a smaller value manually. May be used in combination with `max`, `softMax`, or neither.
     * **softMax**: The maximum value of the property that a user can configure using a slider or similar UI widget. However, a user can type in a larger value manually. May be used in combination with `min`, `softMin`, or neither. 
     * **step**: Indicates the size of the increment to use for sliders or similar UI widgets.
-    * **vectorLabels**: Provide a list of labels to use for the elements of a `Vector` type property. By default the labels are "X", "Y", "Z", "W".
+    * **vectorLabels**: Provide a list of labels to use for the elements of a `Vector` type property. By default, the labels are "X", "Y", "Z", "W".
     * **connection**: Defines connections for passing the property value to a shader. Each connection defines a connection `type`, a `name`, and optionally a `shaderIndex`. The connection is optional, if omitted the property can be connected to shaders by a material functor.
       * **type**: Which type of connection to make:
         - ShaderInput - Connect to a shader constant or shader image in the SRG_PerMaterial ShaderResourceGroup.
@@ -96,7 +96,7 @@ It's common practice to "factor-out" property group definitions into separate JS
       * **name**: The name of the shader input or shader option to connect to.
       * **shaderIndex**: The index of which shader in the [`shaders`](#shaders) list to connect to. By default, it connects to every shader that has an option with this name.
   * **propertyGroups**: Other property groups can be nested inside this one.
-  * **functors**: List of material functors for custom processing of the properties in this group and sub-groups. All property references, shader input names, and shader option names can assume the local scope of this property group. For example, if this group is called "baseColor" and has a property "textureMap", then the functor can reference the property as simply "texture", and the system will automatically interpret this as "baseColor.texture". Similarly, `shaderInputsPrefix` and `shaderOptionsPrefix` will be applied automatically. For example if `shaderInputsPrefix` is "baseColor_" and the shader has a texture input called "baseColor_tex", then the functor can reference the texture input as simply "tex", and the system will automatically turn this into "baseColor_tex". For more information about material functors see the [`functors`](#functors) section below.
+  * **functors**: List of material functors for custom processing of the properties in this group and sub-groups. All property references, shader input names, and shader option names can assume the local scope of this property group. For example, if this group is called "baseColor" and has a property "textureMap", then the functor can reference the property as simply "texture", and the system will automatically interpret this as "baseColor.texture". Similarly, `shaderInputsPrefix` and `shaderOptionsPrefix` will be applied automatically. For example, if `shaderInputsPrefix` is "baseColor_" and the shader has a texture input called "baseColor_tex", then the functor can reference the texture input as simply "tex", and the system will automatically turn this into "baseColor_tex". For more information about material functors, see the following [`functors`](#functors) section.
 
 #### Example
 
@@ -271,20 +271,20 @@ It's common practice to "factor-out" property group definitions into separate JS
 ```
 
 ## **version** (deprecated)
-This version number in the `propertyLayout` section is no longer used and has been replaced by the [`version`](#version) number above.
+This version number in the `propertyLayout` section is no longer used and has been replaced by the previously shown [`version`](#version) number.
 
 ## **groups** (deprecated)
-This is replaced by `propertyGroups` (in [propertyLayout](#propertylayout)), which can support any number of group levels with properties and groups defined in the same place. The engine can still load the old format but any new material type files should use the new format.
+This is replaced by `propertyGroups` (in [propertyLayout](#propertylayout)), which can support any number of group levels with properties and groups defined in the same place. The engine can still load the old format, however any new material type files should use the new format.
 
 {{< note >}}
-An older version of the material type file format organized propertyLayout with separate `groups` and `properties` sections. This imposed several limitations like restricting property grouping to only one level and making it difficult to factor out reusable property groups.
+An older version of the material type file format organized `propertyLayout` with separate `groups` and `properties` sections. This imposed several limitations, such as restricting property grouping to only one level. This made it difficult to factor out reusable property groups.
 {{< /note >}}
 
 ## **properties** (deprecated)
 This is replaced by `propertyGroups`. Similar to [**groups (deprecated)**](#groups-deprecated).
 
 ## **shaders**  
-An array of references to shader files (`*.shader`) to be used to render materials of this type. By default, all shaders are enabled, but they may be disabled using [`functors`](#functors).
+An array of references to shader files (`*.shader`) to be used to render materials of this type. By default, all shaders are enabled, but they can be disabled using [`functors`](#functors).
 
 Each shader item includes the following values. 
 
@@ -333,9 +333,9 @@ See [Lua Material Functor API](/docs/atom-guide/dev-guide/materials/lua-material
 
 Arguments:
 * **file**: The path to a `.lua` file that contains material functor code. The path must be relative to the asset root or to the material type file.
-* **propertyNamePrefix**: Any property names appearing in the functor will automatically prepend this value. Note this is only intended for use with functors defined at the top level of the material type; the functors within property groups will get their prefixes from the property group.
-* **srgNamePrefix**: Any ShaderResourceGroup field names appearing in the functor will automatically prepend this value. Note this is only intended for use with functors defined at the top level of the material type; the functors within property groups will get their prefixes from the property group.
-* **optionsNamePrefix**: Any shader option names appearing in the functor will automatically prepend this value. Note this is only intended for use with functors defined at the top level of the material type; the functors within property groups will get their prefixes from the property group.
+* **propertyNamePrefix**: Any property names appearing in the functor will automatically prepend this value. Note this is intended only for use with functors defined at the top level of the material type. The functors within property groups will get their prefixes from the property group.
+* **srgNamePrefix**: Any ShaderResourceGroup field names appearing in the functor will automatically prepend this value. Note this is intended only for use with functors defined at the top level of the material type. The functors within property groups will get their prefixes from the property group.
+* **optionsNamePrefix**: Any shader option names appearing in the functor will automatically prepend this value. Note this is intended only for use with functors defined at the top level of the material type. The functors within property groups will get their prefixes from the property group.
 
 #### Example
 ```json
@@ -360,7 +360,7 @@ Arguments:
 * **textureProperty**: The name of an `Image` type property.
 * **useTextureProperty**: The name of a `bool` type property. This property is hidden if the texture property is null.
 * **dependentProperties**: (optional) A list of other properties that are irrelevant when no texture is being used. These will be hidden or disabled when the texture is null or unused.
-* **shaderTags**: (optional) If provided, the shader option will only be set on this list of shaders. See **tags** in the [Shaders](#shaders) section.
+* **shaderTags**: (optional) If provided, the shader option will be set only on this list of shaders. See **tags** in the [Shaders](#shaders) section.
 * **shaderOption**: The name of the use-texture shader option to set.
 
 #### Example
@@ -392,7 +392,7 @@ Arguments:
 * **translateYProperty**: The name of a `float` type property. Controls the Y-translation.
 * **rotateDegreesProperty**: The name of a `float` type property. Controls the amount of rotation in degrees.
 * **float3x3ShaderInput**: The name of a `float3x3` shader constant for the final transform matrix.
-* **float3x3InverseShaderInput**: (optional) The name of a `float3x3` shader constant for an inverse of the final transform matrix. This may be needed by some shaders, for example ones that use a parallax mapping effect.
+* **float3x3InverseShaderInput**: (optional) The name of a `float3x3` shader constant for an inverse of the final transform matrix. Some shaders may require this; for example, ones that use a parallax mapping effect.
 
 #### Example
 ```json
@@ -480,7 +480,7 @@ Before the Lua functor type was available, this functor was used to override a s
 ## **uvNameMap**
 This maps default identifiers to mesh UV streams. When loading meshes, the runtime tries to match UV streams from the incoming geometry using these names. 
 
-For each entry, the key must match the semantic used for a `float2` vertex input. The value should be a user-friendly name that is consistent with the intended purpose of the stream, and consistent with the names of similar streams in other material types. By default, all core material types in O3DE use the names "Tiled" (meaning tiling is expected so overlaping hulls is acceptable) and "Unwrapped" (meaning this is used for lightmaps and similar, so hulls should not overlap in the UV space).
+For each entry, the key must match the semantic used for a `float2` vertex input. The value should be a user-friendly name that is consistent with the intended purpose of the stream, and consistent with the names of similar streams in other material types. By default, all core material types in O3DE use the names _Tiled_ and _Unwrapped_. Tiled means that tiling is expected, so overlapping hulls is acceptable. Unwrapped means that this is used for lightmaps and similar, so hulls should not overlap in the UV space.
 
 #### Example
 ```json
