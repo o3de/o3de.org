@@ -15,7 +15,7 @@ Provides a description or comment from the material's author.
 The path to the material type. Materials must reference a material type, which provides the list of available properties and the shaders to use for rendering. The path must be relative to the asset root or to the material file.
 
 ### **materialTypeVersion** (*optional*)  
-Indicates the version number of the material type that was used to create this material. This can be used by the material type version update feature to support backward compatibility with older versions of the material type. (See [`version`](material-type-file-spec/#version) and [`versionUpdates`](material-type-file-spec/#versionupdates)) in the Material Type File Specification.
+Indicates the version number of the material type that was used to create this material. The material type version update feature can use this to support backward compatibility with older versions of the material type. (See [`version`](material-type-file-spec/#version) and [`versionUpdates`](material-type-file-spec/#versionupdates)) in the Material Type File Specification.
 
 ### **parentMaterial** (*optional*)  
 The path to the parent material file. If specified, the material inherits the properties of another parent material. The parent material must have the same material type as the material. The path must be relative to the asset root or to the material file. If not specified, the material inherits default values directly from the material type.
