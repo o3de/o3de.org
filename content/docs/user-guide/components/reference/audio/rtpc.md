@@ -7,7 +7,7 @@ toc: true
 
 The **Audio RTPC** component provides basic [Real-Time Parameter Control (RTPC)](/docs/user-guide/interactivity/audio/atl-default-controls) functionality. An RTPC is a named variable that the audio system can interpret in many different ways. It allows game developers to set the value from the game at run time to produce real-time tweaking of sounds.
 
-![Audio Environment component](/images/user-guide/component/audio/component-audio-rtpc1.png)
+![Audio Rtpc component](/images/user-guide/component/audio/component-audio-rtpc1.png)
 
 ## Audio RTPC Component Properties
 
