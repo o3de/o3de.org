@@ -17,8 +17,8 @@ When you make an edit or create a new topic in the **Open 3D Engine (O3DE)** doc
 Before submitting a PR, ensure your contributions meet the guidelines below:
 
 * Files in the PR are placed in the proper directories. Refer to [O3DE Docs Structure](/docs/contributing/to-docs/o3de-docs-structure).
-* Contributions adhere to the O3DE Documentation style. Refer to [O3DE Documentation Contribution Style Guide](/docs/contributing/to-docs/style-guide).
-* Contributions use O3DE terms correctly. Refer to [O3DE Documentation Terminology](/docs/contributing/to-docs/style-guide).
+* Contributions adhere to the O3DE Documentation style. Refer to [O3DE Documentation Contribution Style Guide](/docs/contributing/to-docs/style-guide/overview).
+* Contributions use O3DE terms correctly. Refer to [O3DE Documentation Terminology](/docs/contributing/to-docs/terminology).
 * All commits in the PR have a proper *DCO sign-off*. Refer to [Commit your changes](#commit-your-changes) below.
 
 * The PR only contains commits and changes you want reviewed for the PR.
