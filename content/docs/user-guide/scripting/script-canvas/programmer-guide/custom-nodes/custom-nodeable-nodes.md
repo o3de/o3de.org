@@ -184,61 +184,30 @@ set(FILES
 )
 ```
 
-## Step 5: Reflect the new node {#reflect-the-new-node}
+## Step 5: Register the new node {#register-the-new-node}
 {{< note >}}
 This step is only required once for the first time nodeable node creation.
 {{< /note >}}
 
-The final step is to register and reflect the new node. To do this, you need to modify your Gem's [Gem module](/docs/user-guide/programming/gems/overview/) and [system component](/docs/user-guide/programming/components/system-components/). Use the **StartingPointInput** Gem from the O3DE source as a reference:
+The final step is to register new node. To do this, you need to modify your Gem's [Gem module](/docs/user-guide/programming/gems/overview/) or [system component](/docs/user-guide/programming/components/system-components/). Use the **StartingPointInput** Gem from the O3DE source as a reference:
 
-1. In your Gem's system component, include the auto-generated registry header file, and invoke `REGISTER_SCRIPTCANVAS_AUTOGEN_NODEABLE` with the sanitized Gem target name.
-    {{< note >}}
-    Use the same auto-generated registry header file that you declared in Step 1 under `AUTOGEN_RULES` in your Gem's `Code/CMakeLists.txt`. In the **StartingPointInput** example, it is `AutoGenNodeableRegistry.generated.h`.
-    {{< /note >}}
-    {{< note >}}
-    The sanitized Gem target name should contain letters and numbers only. In the **StartingPointInput** example, it is `StartingPointInputStatic` which refers to the `StartingPointInput.Static` target.
-    {{< /note >}}
-   
-    For example, in [`StartingPointInputGem.cpp`](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/Source/StartingPointInputGem.cpp):
-  
-    ```cpp
-    #include <AutoGenNodeableRegistry.generated.h>
-    ...
-    
-    REGISTER_SCRIPTCANVAS_AUTOGEN_NODEABLE(StartingPointInputStatic);
-    ...
-    ```
+In your Gem's module or system component, include the auto-generated registry header file, and invoke `REGISTER_SCRIPTCANVAS_AUTOGEN_NODEABLE` with the sanitized Gem target name.
+{{< note >}}
+Use the same auto-generated registry header file that you declared in Step 1 under `AUTOGEN_RULES` in your Gem's `Code/CMakeLists.txt`. In the **StartingPointInput** example, it is `AutoGenNodeableRegistry.generated.h`.
+{{< /note >}}
+{{< note >}}
+The sanitized Gem target name should contain letters and numbers only. In the **StartingPointInput** example, it is `StartingPointInputStatic` which refers to the `StartingPointInput.Static` target.
+{{< /note >}}
 
-1. Also in your Gem's system component, reflect and initialize the auto-generated registry in the component's Reflect function:
+For example, in [`StartingPointInputGem.cpp`](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/Source/StartingPointInputGem.cpp):
 
-    For example, in [`StartingPointInputGem.cpp`](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/Source/StartingPointInputGem.cpp):
+```cpp
+#include <AutoGenNodeableRegistry.generated.h>
+...
 
-    ```cpp
-    void StartingPointInputSystemComponent::Reflect(AZ::ReflectContext* context)
-    {
-        REFLECT_SCRIPTCANVAS_AUTOGEN(StartingPointInputStatic, context);
-        ...
-    }
-    ```
-   
-    ```cpp
-    void StartingPointInputSystemComponent::Init()
-    {
-        INIT_SCRIPTCANVAS_AUTOGEN(StartingPointInputStatic);
-    }   
-    ```
-
-1. Finally, insert the auto-generated nodeable descriptors in the Gem module.
-
-    For example, in [`StartingPointInputGem.cpp`](https://github.com/o3de/o3de/blob/development/Gems/StartingPointInput/Code/Source/StartingPointInputGem.cpp):
-    ```cpp
-    StartingPointInputModule() : AZ::Module()
-    {
-        ...
-        AZStd::vector<AZ::ComponentDescriptor*> autogenDescriptors(GET_SCRIPTCANVAS_AUTOGEN_COMPONENT_DESCRIPTORS(StartingPointInputStatic));
-        m_descriptors.insert(m_descriptors.end(), autogenDescriptors.begin(), autogenDescriptors.end());
-    }
-    ```
+REGISTER_SCRIPTCANVAS_AUTOGEN_NODEABLE(StartingPointInputStatic);
+...
+```
 
 ## Advanced ScriptCanvasNodeable.xml usage
 This topic explores additional features that we support in the nodeable XML file.
