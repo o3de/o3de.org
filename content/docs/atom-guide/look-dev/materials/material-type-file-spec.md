@@ -65,7 +65,7 @@ It's common practice to "factor-out" property group definitions into separate JS
     * **name**: An identifier for this property. The value must be formatted in C-style and be unique among sibling properties. 
     * **displayName**: The given name of this property that will appear in the Material Editor. 
     * **description**: The given description of this property that will appear as tooltips in the Material Editor.
-    * **visibility**: The initial visibility for this property. This is enabled by default. Possible values are:
+    * **visibility**: The initial visibility for this property. By default, this is `Enabled`. Possible values are:
       - Enabled
       - Disabled
       - Hidden
