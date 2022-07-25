@@ -21,5 +21,4 @@ Welcome to the Atom Documentation! Atom Renderer is the graphics engine powering
 | [Features](/docs/atom-guide/features/) |  Learn about graphics features and rendering techniques that Atom provides.  |
 | [Look Development](look-dev/) | Learn about materials, the Material Editor, textures, shaders, and color in Atom. |
 | [Developer Guide](dev-guide/) | Learn about Atom's render pipeline, the Material-, Shader-, and Pass Systems, and AZSL shader programming. |
-| [Tutorials](../learning-guide/tutorials/rendering/) | Tutorials to get started on creating custom additions and changes. |
 | [Glossary](glossary/) | A collection of terminology used in the Atom Documentation. |

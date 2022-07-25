@@ -12,4 +12,6 @@ Atom Gem is enabled in **Open 3D Engine (O3DE)** by default; for more informatio
 
 | Tutorial | Description |
 | - | - |
+| [Create a StandardPBR material](create-standardpbr-material/) | This tutorial walks you through creating your first StandardPBR material using the Material Editor. | 
+| [Material Types and Shaders](get-started-materialtypes-and-shaders/) | A beginner-level tutorial introducing material types and shaders in Atom. Learn how to create a custom material type with a simple AZSL shader. | 
 | [Vegetation Bending Custom Material Type](vegetation-bending-tutorial) | Use the **Atom Renderer** to create a custom material type with custom vertex shaders for vegetation bending. |

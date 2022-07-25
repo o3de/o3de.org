@@ -14,4 +14,4 @@ This section contains the information about creative tools and concepts for look
 | [Textures](textures/) | Learn about how textures are supported and processed in Atom. |
 | [Shading](shaders/) | Learn about shading in Atom. |
 | [Color Management](color-management/) | Learn about the color space conversion workflow used in Atom. |
-| [Material Types and Shaders](get-started-materialtypes-and-shaders/) | A beginner-level tutorial introducing material types and shaders in Atom. Learn how to create a custom material type with a simple AZSL shader. | 
+| [Tutorials](../learning-guide/tutorials/rendering/) | Tutorials to get started on creating custom additions and changes. |
