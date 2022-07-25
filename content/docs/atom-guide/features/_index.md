@@ -148,6 +148,12 @@ Screen Space Ambient Occlusion (SSAO)
 *Related to: [SSAO component](/docs/user-guide/components/reference/atom/ssao/)* 
 
 
+Chromatic Aberration   
+: A post-processing effect that simulates a lens that focuses different wavelengths of light at different points, creating fringes of color around edges in the image.
+
+*Related to: [Chromatic Aberration component](/docs/user-guide/components/reference/atom/chromatic-aberration/)* 
+
+
 ## Rendering
 Motion Vectors   
 : Calculations that describe the motion of an object at a specific time. Motion vectors are implemented using passes that calculate movement, in two parts: camera motion and object motion. The camera motion pass records clip space motion caused by camera movement. The object motion pass records clip space motion caused by both camera movement and object transformation. Motion vectors are necessary to compute effects such as motion blur and temporal anti-aliasing (TAA).
