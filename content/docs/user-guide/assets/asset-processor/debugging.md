@@ -122,3 +122,107 @@ If you're a game artist and you're having issues running Asset Processor, the is
 {{< note >}}
 If you're an engineer making new BuilderSDK-based builders, we recommend that you don't delete your cache.
 {{< /note >}}
+
+
+## Debugging the Scene Pipeline
+
+### Situation 
+
+The scene pipeline imports source scene assets into a scene graph that contains the scene nodes like meshes and materials. The scene manifest adds processing rules that scene builders use to output scene product assets like models, collision meshes, and animations. It can be frustrating to determine what the scene pipeline found in the source scene file, how it decomposes the scene into a scene graph, and what scene manifest rules it used to generate product assets.
+
+### Effect
+
+The frustration can lead to the scene author to tweak minor data in the original source scene (i.e. the Blender file) and re-exporting to attempt to resolve strange errors from the O3DE scene pipeline. The scene pipeline does many processing steps so it can be confusing to determine which the scene node data (e.g. Transform Data, Mesh Data) were discovered and the rules used to import the scene nodes. The scene pipeline events can be overridden by either Python scripts or C++ code to modify the scene manifest rules. This can lead to confusion of what rules were used to generate the product assets.
+
+### Example
+
+As source scene assets become more complex, teams will eventually need to debug strange output from the scene pipeline.
+
+The team may encounter:
+ - Render models not aligning with collision meshes
+ - Materials end up with unexpected settings or textures
+ - Finding extra models in the scene
+ - User defined properties not showing up with the correct values
+ - Unexpected groupings of meshe nodes stored in a render model
+
+### Common Causes
+
+#### AssImp issues
+
+The scene pipeline uses the AssImp library to import source scene files into a scene graph. The scene graph is the in-memory representation of the source scene file in the pipeline. It is possible that the source scene file looks different in the scene graph due to how the AssImp library imports the file.
+
+#### Missing user defined properties
+The user defined properties that can be stored in a source scene file can be imported with unexpected results such as missing keys or changed values. There could be a mismatch in what the AssImp library will import, an option to export custom properties might have been missed, or the scene pipeline might now support the exact value types from the source scene file.
+
+For more information, refer to [Scene API: User Defined Properties](docs/user-guide/assets/pipeline/scene-api-udp/).
+
+#### Wrong scene manifest rules used
+A technical content creator (such as a Technical Artist) that is authoring or debugging a script might find some unexpected results for some source scene assets. The Python scripts output print() commands in the asset’s log files, but this may not be enough to determine what the script is affecting. The “debug output” flag is another good way to determine what is happening in the affected scripted pipeline.
+
+### Solutions
+
+#### Enable the Debug Output Feature
+The “debug output” flag is a good feature/flag to use to see what the scene pipeline produced for the scene graph and scene manifest. The scene graph is considered as immutable after the source scene is imported from the AssImp library. The scene manifest can be updated during the scene pipeline events. 
+
+{{< note >}}
+When enabled, builders that support it will output debug information as product assets. Used primarily with scene files.
+{{< /note >}}
+
+The flag can be set at the command line or in the Asset Processor GUI application. To use the command line option:
+
+```cmd
+<path to asset processor>/AssetProcessor.exe --debugOutput
+```
+
+The command line flag can be applied to the batch version of the Asset Processor as well.
+
+```cmd
+<path to asset processor>/AssetProcessorBatch.exe --debugOutput
+```
+
+For example:
+
+```cmd
+D:\o3de\build\bin\profile\AssetProcessor.exe --debugOutput
+```
+
+The debug output flag can be set in the Asset Processor GUI using the Tools | Debug Output check box. When this check box is active, debug output files will be found in the cache folder for the scene files.
+
+
+![Asset Processor UI Debug Output](/images/user-guide/assets/asset-processor/debug_output.png)
+
+{{< note >}}
+After turning on the debug output flag, the asset needs to be reprocessed to output the debug files.
+{{< /note >}}
+
+#### Debug Output: Scene Graph
+
+The scene graph debug output files are stored next to the default `.azmodel` file. For example, for a source file in `D:\o3de\my_project\assets\test.fbx` for the PC platform, the Cache folder should have (at least) these files:
+
+```cmd
+D:\o3de\my_project\Cache\pc\assets\test.azmodel
+D:\o3de\my_project\Cache\pc\assets\test.dbgsg
+D:\o3de\my_project\Cache\pc\assets\test.dbgsg.xml
+```
+
+The `.dbgsg` and `.dbgsg.xml` files are the debug scene graph files where the former is a flat list of debug information per node and the latter is an XML representation of the debug information of the nodes in the file.
+
+The debug output lists the node name, the node path, and the node type. The name is the text label the author assigned to the node. The node path is the dotted notation that leads to the node from the root node. The node type stores specific data for that node such as mesh data, transform data, or custom property data. 
+
+The Mesh Data stores information about the mesh such as the count of positions, normals, face list, and face material IDs. The Transform Data stores information about the matrix translation, scale, and rotation. The Material Data stores information such as its name and physical base rendering properties. The Custom Property Data stores the user defined properties in key-value pairs.
+
+#### Debug Output: Scene Manifest
+
+The scene pipeline logic can be altered using Python scripts or C++ code to update the scene manifest. To determine how the logic affected the scene manifest rules a team can turn on the debug output flag and find the 1.assetinfo.dbg1 file in the Cache folder.
+
+For example:
+
+```cmd
+D:\o3de\my_project\Cache\pc\assets\test.azmodel
+D:\o3de\my_project\Cache\pc\assets\test.assetinfo.dbg
+```
+
+The `.assetinfo.dbg` file is a file representation of the scene manifest that was in memory when the scene builder processed the scene graph. Each rule starts with the `“$type”` key and lists the rule by both GUID and name such as `"{07B356B7-3635-40B5-878A-FAC4EFD5AD86} MeshGroup"`. 
+
+The MeshGroup is an example of a rule where it creates an `.azmodel` product file named (via "name"), includes the mesh node paths in the "selectedNodes" array, and excludes the node paths in the "unselectedNodes" array.
+
