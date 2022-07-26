@@ -661,23 +661,24 @@ This video shows the motion vectors when `OUT.m_motion` is scaled by `10000.0`.
 
 The pass tree visualizer tool is also helpful with debugging shaders and passes, so you can see the output of certain steps of different passes when you select them in the **PassTree**.
 
-### Download the AtomTutorial Gem sample
+## Download the AtomTutorial Gem sample
 Now that you've completed this tutorial, you can compare your results to our working version of the vegetation bending material type in the **AtomTutorials** gem in the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). You can either download and place the [final working vegetation bending files]() in your project, or you can download the gem and add it to the engine.
 
 If you'd like to download and enable the **AtomTutorials** gem, do the following:
 1. Download or clone the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). 
-2. [Register the **AtomTutorials** gem to the engine](/docs/user-guide/project-config/register-gems). In the command line interface, `cd` into the engine. Then, run
+1. Open `VegetationBending.materialtype` and replace all the instances of `{your-path-to-o3de}` with your absolute path to O3DE. 
+1. [Register the **AtomTutorials** gem to the engine](/docs/user-guide/project-config/register-gems). In the command line interface, `cd` into the engine. Then, run
    ```
    scripts\o3de register -gp {your-path-to-sample-code-gems}\atom_gems\AtomTutorials -espp {your-project-path}
    ```
    For example, `scripts\o3de register -gp C:\sample-code-gems\atom_gems\AtomTutorials -espp C:\MyProject`
-3. Now, [add the gem into your project](/docs/user-guide/project-config/add-remove-gems). 
+1. Now, [add the gem into your project](/docs/user-guide/project-config/add-remove-gems). 
    1. Open the **Project Manager**, which should be located in your project's `bin/windows/bin/profile/o3de.exe`.
-   2. In the menu, find your project, click on the three bars, and select **Configure Gems...**.
-   3. In the **Gem Catalog**, search for **AtomTutorials** and enable the gem.
-   4. Click **Save** in the bottom right.
-4. Re-build your project by clicking **Build Project**, or on the three bars again and selecting **Build**. 
-5. Open the **Editor** and [add a tree](vegetation-bending-tutorial/#add-a-tree) and [make vegetation bending materials](vegetation-bending-tutorial/#create-materials-for-the-tree)! 
+   1. In the menu, find your project, click on the three bars, and select **Configure Gems...**.
+   1. In the **Gem Catalog**, search for **AtomTutorials** and enable the gem.
+   1. Click **Save** in the bottom right.
+1. Re-build your project by clicking **Build Project**, or on the three bars again and selecting **Build**. 
+1. Open the **Editor** and [add a tree](vegetation-bending-tutorial/#add-a-tree) and [make vegetation bending materials](vegetation-bending-tutorial/#create-materials-for-the-tree)! 
 
 {{< note >}}
 If you have both your version of the vegetation bending material type and our version, there may be naming duplication errors as specified in the **Asset Processor**. You can either rename one version or move it away from the project folders temporarily while checking out one version or the other. 
