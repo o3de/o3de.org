@@ -1,6 +1,6 @@
 ---
-linkTitle: Material Type Tutorial with Vegetation Bending
-title: Material Type Tutorial with Vegetation Bending
+linkTitle: Vertex Deformation for Vegetation Bending Tutorial
+title: Vertex Deformation for Vegetation Bending Tutorial
 description: A tutorial for add vegetation bending with the Atom rendered in the Open 3D Engine (O3DE).
 toc: true
 ---
@@ -18,7 +18,7 @@ This tutorial covers the following concepts:
 
 The VegetationBending materialtype allows materials to bend and sway, simulating how wind affects vegetation. It allows for detail bending with slight movement of branches and leaves, as well as movement of the entire object. 
 
-We reference LINK HERE this branch for the code in this tutorial. There, you can find the template code to use to follow this tutorial, the final code, and the assets we are using.
+The code in this tutorial can be found in the [AtomTutorials Gem](). There, you can find the template code to use to follow this tutorial, the final code, and the assets we are using.
 
 As we go along, you may wish to reference the[Material Types and Shaders guide](get-started-materialtypes-and-shaders), which gives higher-level explanations of the mechanisms we are using.
 
@@ -660,5 +660,27 @@ This video shows the motion vectors when `OUT.m_motion` is scaled by `10000.0`.
 {{< video src="/images/atom-guide/vegetation-bending-tutorial/motionvectortree.mp4" autoplay="true" loop="true" muted="true" width="100%" info="Video of tree motion vector." >}}
 
 The pass tree visualizer tool is also helpful with debugging shaders and passes, so you can see the output of certain steps of different passes when you select them in the **PassTree**.
+
+### Download the AtomTutorial Gem sample
+Now that you've completed this tutorial, you can compare your results to our working version of the vegetation bending material type in the **AtomTutorials** gem in the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). You can either download and place the [final working vegetation bending files]() in your project, or you can download the gem and add it to the engine.
+
+If you'd like to download and enable the **AtomTutorials** gem, do the following:
+1. Download or clone the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). 
+2. [Register the **AtomTutorials** gem to the engine](/docs/user-guide/project-config/register-gems). In the command line interface, `cd` into the engine. Then, run
+   ```
+   scripts\o3de register -gp {your-path-to-sample-code-gems}\atom_gems\AtomTutorials -espp {your-project-path}
+   ```
+   For example, `scripts\o3de register -gp C:\sample-code-gems\atom_gems\AtomTutorials -espp C:\MyProject`
+3. Now, [add the gem into your project](/docs/user-guide/project-config/add-remove-gems). 
+   1. Open the **Project Manager**, which should be located in your project's `bin/windows/bin/profile/o3de.exe`.
+   2. In the menu, find your project, click on the three bars, and select **Configure Gems...**.
+   3. In the **Gem Catalog**, search for **AtomTutorials** and enable the gem.
+   4. Click **Save** in the bottom right.
+4. Re-build your project by clicking **Build Project**, or on the three bars again and selecting **Build**. 
+5. Open the **Editor** and [add a tree](vegetation-bending-tutorial/#add-a-tree) and [make vegetation bending materials](vegetation-bending-tutorial/#create-materials-for-the-tree)! 
+
+{{< note >}}
+If you have both your version of the vegetation bending material type and our version, there may be naming duplication errors as specified in the **Asset Processor**. You can either rename one version or move it away from the project folders temporarily while checking out one version or the other. 
+{{< /note >}}
 
 Congratulations! You are now done with this tutorial.
