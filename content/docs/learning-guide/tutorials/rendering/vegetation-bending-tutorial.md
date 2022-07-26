@@ -71,9 +71,6 @@ To start off, let's edit the vertex shader to render our shader ball at an offse
    If you can't find the **Asset Processor**, click the arrow on the bottom right of your taskbar, and then click on the icon of two arrows in a circle.
    {{< /note >}}
 1. Once the **Asset Processor** is done processing the changes, you should see in the **Editor** that your material looks different!
-   {{< note >}}
-   The Editor viewport will not update unless the Editor window is in focus.
-   {{< /note >}}
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/offset.png" width="100%" alt="Forward pass offset." >}}
 
@@ -673,7 +670,7 @@ If you'd like to download and enable the **AtomTutorials** gem, do the following
    ```
    For example, `scripts\o3de register -gp C:\sample-code-gems\atom_gems\AtomTutorials -espp C:\MyProject`
 1. Now, [add the gem into your project](/docs/user-guide/project-config/add-remove-gems). 
-   1. Open the **Project Manager**, which should be located in your project's `bin/windows/bin/profile/o3de.exe`.
+   1. Open the **Project Manager**, which should be located in your project's `build/windows/bin/profile/o3de.exe`.
    1. In the menu, find your project, click on the three bars, and select **Configure Gems...**.
    1. In the **Gem Catalog**, search for **AtomTutorials** and enable the gem.
    1. Click **Save** in the bottom right.
