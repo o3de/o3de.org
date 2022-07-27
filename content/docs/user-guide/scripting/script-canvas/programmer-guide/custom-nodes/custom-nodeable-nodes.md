@@ -189,7 +189,7 @@ set(FILES
 This step is only required once for the first time nodeable node creation.
 {{< /note >}}
 
-The final step is to register new node. To do this, you need to modify your Gem's [Gem module](/docs/user-guide/programming/gems/overview/) or [system component](/docs/user-guide/programming/components/system-components/). Use the **StartingPointInput** Gem from the O3DE source as a reference:
+The final step is to register the new node. To do this, you need to modify your Gem's [Gem module](/docs/user-guide/programming/gems/overview/) or [system component](/docs/user-guide/programming/components/system-components/). Use the **StartingPointInput** Gem from the O3DE source as a reference:
 
 In your Gem's module or system component, include the auto-generated registry header file, and invoke `REGISTER_SCRIPTCANVAS_AUTOGEN_NODEABLE` with the sanitized Gem target name.
 {{< note >}}
