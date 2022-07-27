@@ -16,11 +16,14 @@ The following properties define how a canvas is rendered:
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Draw order** | The value of this property determines the order that this canvas draws relative to other canvases. Higher numbers draw on top of lower numbers. When canvases have the same draw order, O3DE draws them in the order that they are loaded. | Int | `0` |
-| **Is pixel aligned** | Makes textures look sharper by rounding the position of the elements' corners to the nearest exact pixel. For example, if the position of a corner of an element rectangle is at (123.45, 678.90), then it is rounded to (123.00, 679.00). | Boolean | `True` |
-| **Is text pixel aligned** | Makes text look crisper by rounding text positions down to the nearest pixel. An exception to this rule occurs when fonts have been scaled down, in which case the text position is rounded to the nearest pixel. If the property is not checked, the text position is not rounded. You might consider disabling this property if, for example, a text element will animate or move. | Boolean | `True` |
-| **Render to texture** | Cleared by default. When this property is set, the canvas is drawn to a texture rather than to the screen. When you select this property, you are prompted to select an **Attachment Image Asset** for the texture. To generate a new attachment image asset, create a new file with the .attimage extension. | Boolean | `False` |
+| **Is pixel aligned** | Makes textures look sharper by rounding the position of the elements' corners to the nearest exact pixel. For example, if the position of a corner of an element rectangle is at (123.45, 678.90), then it is rounded to (123.00, 679.00). | Boolean | `Enabled` |
+| **Is text pixel aligned** | Makes text look crisper by rounding text positions down to the nearest pixel. An exception to this rule occurs when fonts have been scaled down, in which case the text position is rounded to the nearest pixel. If the property is not checked, the text position is not rounded. You might consider disabling this property if, for example, a text element will animate or move. | Boolean | `Enabled` |
+| **Render to texture** | If enabled, the canvas is drawn to a material's **Base Color** texture rather than to the screen. You must select an Attachment Image asset to use for the texture in the **Render Target** property. For more information, refer to [Placing UI Canvases in the 3D World](/docs/user-guide/interactivity/user-interface/canvases/placing-canvases-3d). | Boolean | `Disabled` |
+| **Render Target** | Selects the Attachment Image asset to render this canvas to. To generate an Attachment Image asset, create a new source file with the `.attimage` extension, refer to the example `.attimage` source file below. <br> <br>*This property is available only if **Render to texture** is set to `Enabled`.* | Attachment Image asset | None |
 
-The example below represents the contents of an attachment image source file.
+### Attachment Image assets
+
+This example represents the contents of an Attachment Image's `.attimage` source file.
 
 ```json
 {
@@ -45,6 +48,12 @@ The example below represents the contents of an attachment image source file.
     }
 }
 ```
+
+For more detail about the AttachmentImageAsset class, refer to the following references:
+
+- [AttachmentImageAsset class reference](/docs/api/gems/atom/class_a_z_1_1_r_p_i_1_1_attachment_image_asset.html)
+- [ImageDescriptor struct reference](/docs/api/gems/atom/struct_a_z_1_1_r_h_i_1_1_image_descriptor.html)
+- [DXGI Format enum definitions](https://github.com/o3de/o3de/blob/38261d08007a1ad14135cf790cb855ccca4d8595/Gems/Atom/Asset/ImageProcessingAtom/Code/Source/Processing/AzDXGIFormat.h)
 
 ## Input Properties 
 
