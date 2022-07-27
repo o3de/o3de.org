@@ -10,7 +10,6 @@ An **Asset Builder** is a bundle of code that **Asset Processor** runs to genera
 
 {{< note >}}
 The Open Asset Import Library supports [many scene formats](https://github.com/assimp/assimp/blob/master/doc/Fileformats.md). You can experiment with additional formats by editing `o3de/Registry/sceneassetimporter.setreg` and adding format extensions to the `"SupportedFileTypeExtensions"` list.
-
 {{< /note >}}
 
 ## Anatomy of an Asset Builder
@@ -43,13 +42,14 @@ Process Job is multithreaded. Several Asset Builders can run multiple process jo
 ### Settings
 You can run Asset Builder in debug mode when develop new features for a builder or to debug issues in the asset pipeline. In debug mode, Asset Builder creates a test job or processes jobs for specified files.
 
-> You must start Asset Processor before you can enter a -debug command.
+{{< note >}}
+You must start Asset Processor before you can enter a -debug command for AssetBuilder.
+{{< /note >}}
 
 To debug Asset Processor using Asset Builder:
 * Navigate to the build folder directory, for example `build\windows_vs2019\bin\profile`
-* In a command line prompt, enter the following command to get a list of possible options: `AssetBuilder.exe -help`
-
-Refer to the [debugging guide](/docs/user-guide/assets/asset-processor/debugging.md#DebugAssetBuilders) for more details.
+* In a command line prompt, enter the following command to get a list of possible options: `AssetBuilder -help`
+* Or use the settings below to aid with debugging the AssetBuilder, for example `AssetBuilder.exe --debug C:\o3de\o3de\Assets\Editor\Materials\ShaderList.xml --platform pc --tags dx12 --project-name AutomatedTesting --project-cache-path C:\o3de\o3de\AutomatedTesting\Cache`
 
 | Setting            | Description                                                                                                                                                                                                   |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -67,3 +67,5 @@ Refer to the [debugging guide](/docs/user-guide/assets/asset-processor/debugging
 | debug_process      | Debug mode for the process job of the specified file.                                                                                                                                                         |
 | tags               | Additional tags to add to the debug platform for job processing. One tag can be supplied per option.                                                                                                          |
 | platform           | Platform to use for debugging, for example, `pc` |
+
+Refer to the [debugging guide](/docs/user-guide/assets/asset-processor/debugging.md#DebugAssetBuilders) for more details.
