@@ -54,3 +54,19 @@ The final optimization step is to select all of the gradients in your chain and 
 | **Input Max** | Sets a maximum value for the input gradient. | Float: 0.0 - 1.0 | `1.0` |
 | **Output Min** | Sets a minimum value for the output gradient. | Float: 0.0 - 1.0 | `0.0` |
 | **Output Max** | Sets a maximum value for the output gradient. | Float: 0.0 - 1.0 | `1.0` |
+
+## GradientBakerRequestBus
+
+Use the following request functions with the `GradientBakerRequestBus` EBus interface to communicate with the **Gradient Baker** component.
+
+| Request Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `BakeImage` | Bake the image to the output path. | None | None | Yes |
+| `GetInputBounds` | Returns AZ::EntityId of the input bounds to sample from. | None | AZ::EntityId | Yes |
+| `SetInputBounds` | Sets the AZ::EntityId for the input bounds to sample from. | AZ::EntityId | None | Yes |
+| `GetOutputResolution` | Returns the output resolution for the baked image. | None | AZ::Vector2 | Yes |
+| `SetOutputResolution` | Sets the output resolution for the baked image. | AZ::Vector2 | None | Yes |
+| `GetOutputFormat` | Returns the output format for the baked image. | None | GradientSignal::OutputFormat | Yes |
+| `SetOutputFormat` | Sets the output format for the baked image. | GradientSignal::OutputFormat | None | Yes |
+| `GetOutputImagePath` | Returns the path that the output image will be baked to. | None | AZ::IO::Path | Yes |
+| `SetOutputImagePath` | Sets the path that the output image will be baked to. | AZ::IO::Path | None | Yes |
