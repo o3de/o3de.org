@@ -69,6 +69,11 @@ O3DE specific terms are defined in the table below, with guidance for documentat
 | **UI Editor** | *\<none\>* | A tool for constructing run-time user interfaces. Always capitalize both "UI" and "Editor", as this is a tool name, and a proper noun. Use bold text for the first on-page reference. |
 | **Viewport Camera Selector** | *\<none\>* | A tool for selecting the active Perspective camera. Always capitalize "Viewport", "Camera", and "Selector", as this is a tool name, and a proper noun. Use bold text for the first on-page reference. |
 
+## Standard domain and industry terminology
+
+Use standard and common domain and industry terminology. If there's ambiguity, then use context to make sure the reader understands the meaning.
+
+
 ## Terms to avoid and their alternatives
 
 * **master** -- Use "main", "controller", or another term that indicates the object's primary role or behavior instead.

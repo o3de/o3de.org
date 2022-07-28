@@ -24,7 +24,7 @@ The following instructions assume that you have:
 * Met all hardware and software requirements listed in [O3DE System Requirements](/docs/welcome-guide/requirements).
 
 {{< note >}}
-If you set up O3DE from GitHub and chose the [source engine](/docs/user-guide/appendix/glossary#source-engine) build type, we recommend that you create your project using the command line interface (CLI) instructions in [Creating Projects Using the CLI](../creating-projects-using-cli).
+If you set up O3DE from GitHub and chose the [source engine](/docs/user-guide/appendix/glossary#source-engine) build type, you need to create a project from the command line and build it before you'll have a version of **Project Manager** that will work with your new project. Follow the instructions in [Creating Projects Using the CLI](../creating-projects-using-cli) to create a project for your source engine.
 {{< /note >}}
 
 ## Launch Project Manager

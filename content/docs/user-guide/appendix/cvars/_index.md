@@ -2,14 +2,12 @@
 title: CVARs
 ---
 
-Console variables (CVARs) can be used to set various editor and runtime options in O3DE.
-
-O3DE ships with many in-built CVARs including extensive [debugging CVARs](./debugging).
+Console variables (CVARs) can be used to set various editor and runtime options in O3DE. O3DE ships with many built-in CVARs. 
 
 ## Working with CVARs
 You can define your own CVARs in code using the [CVAR macro functions](/docs/user-guide/programming/az-console/#console-variables-cvars).
 
-You can invoke CVARs in the Editor via the [console](/docs/user-guide/editor/console/) or in a launcher using the [debug viewport console](/docs/user-guide/appendix/cvars/debugging/#using-console-debug-views)
+You can invoke CVARs in the Editor via the [console](/docs/user-guide/editor/console/).
 
 You can also pass CVARs on the command line when launching O3DE binaries via `--{cvar name} {value}` or `--{cvar name}={value}`. For example, `ServerLauncher.exe --sv_somebool=true`.
 

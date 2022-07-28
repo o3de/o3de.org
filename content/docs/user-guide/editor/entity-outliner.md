@@ -15,5 +15,5 @@ The **Entity Outliner** shows all the entities and prefabs in the level. You can
 
    You can select multiple entities by doing one of the following in the **Entity Outliner**:
 
-   * Use **CTRL** + **Left Mouse Click** to select multiple entities one at a time to be part of a multi-selection.
-   * Use **Shift** + **Left Mouse Click** to select a range of entities.
+   * Use **Ctrl + Left Mouse Button** to select multiple entities one at a time to be part of a multi-selection.
+   * Use **Shift + Left Mouse Button** to select a range of entities.

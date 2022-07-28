@@ -79,6 +79,6 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
 
 ## View the Cloth Simulation
 
-In O3DE Editor, press Ctrl+G or press the **Play** button to run your project.
+In O3DE Editor, press **Ctrl+G** or press the **Play** button to run your project.
 
 ![Open 3D Engine cloth simulation with the NVIDIA Cloth gem.](/images/user-guide/physx/cloth/anim-actor-cloth.gif)

@@ -7,6 +7,8 @@ toc: true
 
 The **Audio Switch** component provides basic [Audio Translation Layer (ATL)](/docs/user-guide/interactivity/audio/audio-translation-layer) switch functionality. With switches (and switch states), you can specify the state of an entity. The audio middleware interprets states, modifies the behavior of sounds, and plays the appropriate sounds.
 
+![Audio Switch component](/images/user-guide/component/audio/component-audio-switch1.png)
+
 ## Audio Switch Properties
 
 The Audio Switch component has the following properties:
@@ -23,29 +25,7 @@ Use the following request functions with the EBus interface to communicate with 
 
 For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus).
 
-### SetState
-
-Sets the specified state of the default switch.
-
-**Parameters**
-`stateName` - Name of the state to set
-
-**Return**
-None
-
-**Scriptable**
-Yes
-
-### SetSwitchState
-
-Sets a specified switch to a specified state.
-
-**Parameters**
-`switchName` - Name of the switch to set
-`stateName` - Name of the state to set
-
-**Return**
-None
-
-**Scriptable**
-Yes
+| Name | Description | Parameters | Return | Scriptable |
+|------|-------------|------------|--------|------------|
+| SetState | Sets the specified state of the default switch. | `stateName` - Name of the state to set  | None | Yes |
+| SetSwitchState | Sets a specified switch to a specified state. | `switchName` - Name of the switch to set; `stateName` - Name of the state to set | None | Yes |

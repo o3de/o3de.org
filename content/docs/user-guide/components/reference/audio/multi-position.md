@@ -11,42 +11,23 @@ a river, should use this component. Any sounds that have multiple
 instances should also use this component, as it does help to reduce
 resources.
 
-## Editor
-
 ![The Multi-Position Audio component pane in the O3DE Editor.](/images/user-guide/component/audio/multi-position-component.png)
 
-## Properties
+## Multi-Position Audio Properties
 
 | Name | Description | Default |
 |------|-------------|---------|
 | Entity References | A list of entities whose world positions will be used as the sound's multiple positions. | `<Empty>` |
 | Behavior Type | A drop-down selection, the options are 'Separate' or 'Blended'. Separate means that the sound positions will be treated as if they were individual point source sounds. Blended means the positions will be treated as if they are one sound covering an area. | Separate |
 
-## EBuses
+## EBus Request Bus Interface
 
-### Request Bus Interface
+Use the following request functions with the EBus interface to communicate with other components of your game.
 
-| | |
-|--|--|
-| Name | `AddEntity` |
-| Description | Adds an Entity to the list, whose position will be used in the multi-position audio. |
-| Parameters | `entityId EntityId` |
-| Return | None|
-| Scriptable | Yes |
+For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
 
-| | |
-|--|--|
-| Name | `RemoveEntity` |
-| Description | Removes an Entity from the list, and its position will be removed from the multi-position audio. |
-| Parameters | `entityId EntityId` |
-| Return | None|
-| Scriptable | Yes |
-
-| | |
-|--|--|
-| Name | `SetBehaviorType` |
-| Description | Sets the Behavior Type of the  multi-position audio to either be `Blended` or `Separate`. |
-| Parameters | `Audio::MultipositionBehaviorType enum` |
-| Return | None |
-| Scriptable | Yes |
-| Lua enum bindings | `MultiPositionBehaviorType_Separate`, `MultiPositionBehaviorType_Blended` |
+| Name | Description | Parameters | Return | Scriptable | Lua enum bindings |
+|------|-------------|------------|--------|------------|-------------------|
+| AddEntity | Adds an Entity to the list, whose position will be used in the multi-position audio. | `entityId` - EntityId | None | Yes | `N/A` |
+| RemoveEntity | Removes an Entity from the list, and its position will be removed from the multi-position audio. | `entityId` - EntityId | None | Yes | `N/A` |
+| SetBehaviorType | Sets the Behavior Type of the  multi-position audio to either be `Blended` or `Separate`. | `Audio::MultipositionBehaviorType` - enum | None | Yes | `MultiPositionBehaviorType_Separate`, `MultiPositionBehaviorType_Blended` |
