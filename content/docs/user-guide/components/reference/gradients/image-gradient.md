@@ -27,7 +27,7 @@ configuration options, such as tiling, scaling, and custom sampling types.
 | **Preview Size** | Sets the dimensions of the preview.<br> <br>*This field is available only if there is no entity selected in **Pin Preview to Shape**.* | Vector3: 0.0 to Infinity | X:`1.0`, Y:`1.0`, Z:`1.0` |
 | **Constrain to Shape** | If `Enabled`, the gradient preview uses the bounds of the entity selected in **Pin Preview to Shape**.<br> <br>*This field is available only if an entity is selected in **Pin Preview to Shape**.* | Boolean | `Disabled` |
 | **Tiling** | Sets the number of times to tile the image horizontally (X) and vertically (Y). | Vector2: 0.01 to Infinity | X: `1.0`, Y: `1.0` |
-| **Image Asset** | Sets the source image to generate this gradient's values. | `.streamingimage` | None |
+| **Image Asset** | Sets the source image to generate this gradient's values.<br><br>**NOTE:** The **Image Gradient** currently only supports a subset of all available pixel formats. Most of the uncompressed formats are supported, as well as the `BC1` compressed format. For a full list of supported formats, see `AZ::RPI::IsImageDataPixelAPISupported` | `.streamingimage` | None |
 
 ### Advanced properties
 
