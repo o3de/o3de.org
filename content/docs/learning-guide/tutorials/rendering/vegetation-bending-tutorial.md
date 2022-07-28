@@ -660,7 +660,7 @@ This video shows the motion vectors when `OUT.m_motion` is scaled by `10000.0`.
 The pass tree visualizer tool is also helpful with debugging shaders and passes, so you can see the output of certain steps of different passes when you select them in the **PassTree**.
 
 ## Download the AtomTutorial Gem sample
-Now that you've completed this tutorial, you can compare your results to our working version of the vegetation bending material type in the **AtomTutorials** gem in the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). You can either download and place the [final working vegetation bending files]() in your project, or you can download the gem and add it to the engine.
+Now that you've completed this tutorial, you can compare your results to our working version of the vegetation bending material type in the **AtomTutorials** gem in the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). You can either download and place the [final working vegetation bending files](https://github.com/o3de/sample-code-gems/tree/main/atom_gems/AtomTutorials/Assets/VegetationBending) in your project, or you can download the gem and add it to the engine.
 
 If you'd like to download and enable the **AtomTutorials** gem, do the following:
 1. Download or clone the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). 
