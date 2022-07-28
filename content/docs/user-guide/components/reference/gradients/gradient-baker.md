@@ -18,7 +18,7 @@ Clicking the **Bake image** button on the **Gradient Baker** component will then
 
 ![Complex chain with gradient baker](/images/user-guide/components/reference/gradients/gradient-baker-single-image-gradient.png)
 
-The final optimization step is to select all of the gradients in your chain and mark them as **Editor only**. This will prevent them from being loaded/computed at runtime. You can optionally mark the **Gradient Baker** as **Editor only** as well, but it will have no effect because there is no runtime component for it anyways.
+The final optimization step is to select all of the gradients in your chain and mark them as **Editor only**. This will prevent them from being loaded/computed at runtime. You can optionally mark the **Gradient Baker** as **Editor only** as well, but it will have no effect because there is no runtime component for it.
 
 ![Mark gradient/gradient generators Editor only to disable at runtime](/images/user-guide/components/reference/gradients/gradient-baker-editor-only.png)
 
