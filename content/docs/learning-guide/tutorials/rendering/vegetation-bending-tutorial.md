@@ -18,7 +18,7 @@ This tutorial covers the following concepts:
 
 The VegetationBending materialtype allows materials to bend and sway, simulating how wind affects vegetation. It allows for detail bending with slight movement of branches and leaves, as well as movement of the entire object. 
 
-The code in this tutorial can be found in the [AtomTutorials Gem (LINK TBD)](). There, you can find the template code to use to follow this tutorial, the final code, and the assets we are using.
+The code in this tutorial can be found in the [AtomTutorials Gem](https://github.com/o3de/sample-code-gems/tree/main/atom_gems/AtomTutorials). There, you can find the template code to use to follow this tutorial, the final code, and the assets we are using.
 
 As we go along, you may wish to reference the[Material Types and Shaders guide](get-started-materialtypes-and-shaders), which gives higher-level explanations of the mechanisms we are using.
 
@@ -26,7 +26,7 @@ As we go along, you may wish to reference the[Material Types and Shaders guide](
 Before you can create your material type, ensure you have [installed the engine](/docs/welcome-guide/setup/), [set up a project](/docs/welcome-guide/create/), and [launched the editor](/docs/welcome-guide/tours/editor-tour).
 
 Next, perform the following steps to get started on making the vegetation bending material type.
-1. Download the template files from [here (LINK TBD)]().
+1. Download the template files from [here](https://github.com/o3de/sample-code-gems/tree/main/atom_gems/AtomTutorials/Templates/VegetationBending).
    * You'll notice that there are a couple key files and file extensions that we need to make our custom material type. More details can be found in [this guide](get-started-materialtypes-and-shaders/#1-set-up-the-files), but this tutorial will explain each file as we go along.
 1. Move `VegetationBendingPropertyGroup.json` to `{your-project-path}\Materials\Types\MaterialInputs\`. Create the folders as needed!
 1. Move the rest of the downloaded files to 
@@ -157,7 +157,7 @@ Now that we've edited our vertex shader, let's take the next step and prepare to
 ### Add a tree
 In order to test the code that we are about to write, we need an appropriate mesh!
 
-1. Download `tree.fbx` from here.
+1. Download `tree.fbx` from [here](https://github.com/o3de/sample-code-gems/blob/main/atom_gems/AtomTutorials/Assets/VegetationBending/Objects/tree.fbx).
 1. Place `tree.fbx` in `{your_project_path}\Objects`. Make the `Objects` folder as needed.
 1. Open the **Editor** to your project and level. 
 1. On the left in the **Entity Outliner**, **right-click** and select **Create entity**. **Right-click** the new entity in the **Entity Outliner**, and rename the entity to `Tree`.
@@ -213,7 +213,7 @@ Now that we have our tree and tested the shader options, let's delete the previo
 ### Create materials for the tree
 Let's add some textures to make our tree look more realistic! For the tree, we need 3 materials: one for the trunk, one for the branches, and one for the leaves.
 
-1. Download the 3 textures from here.
+1. Download the 3 `.tif` textures from [here](https://github.com/o3de/sample-code-gems/tree/main/atom_gems/AtomTutorials/Assets/VegetationBending/Objects).
 1. Place the textures in `{your_project_path}/Objects`.
 1. Open the **Editor**, and then the **Material Editor** by hitting **M**.
 1. Choose **File** > **New** and, in the pop-up, choose **VegetationBending**, name the material `aspen_leaf.material`, and save it in the `Materials`.
