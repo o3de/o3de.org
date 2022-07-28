@@ -175,44 +175,29 @@ set(FILES
 )
 ```
 
-### Step 5: Reflect the new node {#reflect-the-new-node}
+### Step 5: Register the new node {#register-the-new-node}
 {{< note >}}
 This step is only required once for the first time custom free function node creation.
 {{< /note >}}
 
-The final step is to register and reflect the new node.
+The final step is to register the new node. To do this, you need to modify your Gem's [Gem module](/docs/user-guide/programming/gems/overview/) or [system component](/docs/user-guide/programming/components/system-components/).
 
-To do this, you need to modify Gem [System Component](/docs/user-guide/programming/components/system-components/).
-In our example, it is named `MyGemSystemComponent.cpp` by default.
-
-1. Include auto-generated registry header file, and invoke `REGISTER_SCRIPTCANVAS_AUTOGEN_FUNCTION` with sanitized Gem target name. 
-    {{< note >}}
-    Auto-generated registry header file should be the same name declared under `AUTOGEN_RULES` in your Gem's `Code/CMakeLists.txt`. In our example, it is `AutoGenFunctionRegistry.generated.h`.
-    {{< /note >}}
-    {{< note >}}
-    Sanitized Gem target name should contain letters and numbers only. In our example, it is `MyGemStatic` which refers to `MyGem.Static` target.
-    {{< /note >}}
+In your Gem's module or system component, include the auto-generated registry header file, and invoke `REGISTER_SCRIPTCANVAS_AUTOGEN_FUNCTION` with the sanitized Gem target name.
+{{< note >}}
+Use the same auto-generated registry header file that you declared in Step 1 under `AUTOGEN_RULES` in your Gem's `Code/CMakeLists.txt`. In our example, it is `AutoGenFunctionRegistry.generated.h`.
+{{< /note >}}
+{{< note >}}
+The sanitized Gem target name should contain letters and numbers only. In our example, it is `MyGemStatic` which refers to the `MyGem.Static` target.
+{{< /note >}}
    
-    For example, in `MyGemSystemComponent.cpp`
-  
-    ```cpp
-    #include <AutoGenFunctionRegistry.generated.h>
-    
-    REGISTER_SCRIPTCANVAS_AUTOGEN_FUNCTION(MyGemStatic)
-    ...
-    ```
+For example, in `MyGemSystemComponent.cpp`
 
-1. Reflect auto-generated registry through Gem system component Reflect function.
+```cpp
+#include <AutoGenFunctionRegistry.generated.h>
 
-    For example, in `MyGemSystemComponent.cpp`
-
-    ```cpp
-    void MyGemSystemComponent::Reflect(AZ::ReflectContext* context)
-    {
-        ScriptCanvas::AutoGenRegistry::Reflect(context);
-        ...
-    }
-    ```
+REGISTER_SCRIPTCANVAS_AUTOGEN_FUNCTION(MyGemStatic)
+...
+```
 
 ## Advanced ScriptCanvasFunction.xml Usage
 This topic explores additional features we support in function XML file.
