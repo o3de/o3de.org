@@ -34,7 +34,7 @@ The final optimization step is to select all of the gradients in your chain and 
 | **Input Bounds** | An entity with a shape component for where to sample the data from. | EntityId | None |
 | **Resolution** | The resolution of the output baked image. | Vector2: 1 to Infinity | X:`512`, Y:`512` |
 | **Output Format** | The output format of the output baked image. | `R8`, `R16`, `R32` | `R32` |
-| **Output Path** | File path where the output image will be baked. | AZ::IO::Path | None |
+| **Output Path** | File path where the output image will be baked.<br><br>**NOTE:** By default, the initial output path will have a `_gsi` suffix. This is because the **Image Gradient** that will consume the output image only supports a subset of available pixel formats. The `_gsi` suffix will make sure the Asset Processor uses a supported format. You can omit the `_gsi` suffix if your output image is configured to use a supported format. For more information about this limitation, please refer to the [Image Gradient documentation](/docs/user-guide/components/reference/gradients/image-gradient/#image-gradient-properties) | AZ::IO::Path | None |
 
 ### Gradient properties
 
