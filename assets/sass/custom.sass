@@ -1513,7 +1513,7 @@ nav.docs-nav
         &:hover
           color: $o3de-blue-highlight
       
-      a.currentPage:not(.has-children)
+      a.currentPage
         background: rgba(221, 221, 221, .3)
         border-radius: 3px
         color: $o3de-blue
@@ -1527,7 +1527,7 @@ nav.docs-nav
         &:hover
           color: $o3de-blue-highlight
 
-      a.has-children::after
+      a.has-children-icon::after
         content: ''
         width: 10px
         height: 10px
@@ -1546,7 +1546,7 @@ nav.docs-nav
       a.has-children:hover::after
         border-color: $o3de-blue-highlight
       
-      a.has-children.open::after
+      a.has-children-icon.open::after
         transform: rotate(45deg) translate(-3px, -3px)
 
       ul
