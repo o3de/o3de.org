@@ -6,9 +6,7 @@ description: Use the Gradient Baker component to bake a complex node graph of gr
 
 Use the **Gradient Baker** component to bake a complex node graph of gradients down to a single static image. You can then use a single [Image Gradient](/docs/user-guide/components/reference/gradients/image-gradient/) at runtime, instead of having the entire node graph computed every time, to optimize performance.
 
-For example, take this complex gradient chain with a generator and multiple gradient modifiers.
-
-![Complex chain without gradient baker](/images/user-guide/components/reference/gradients/gradient-baker-chain-without-baker.png)
+For example, suppose you have a complex gradient chain with a generator and multiple gradient modifiers.
 
 You can create a **Gradient Baker** and connect its input gradient to the output of the gradient chain you'd like to bake. The **Gradient Baker** also needs an input bounds for where to sample the data. With both of those connected, the graph would look like this.
 
