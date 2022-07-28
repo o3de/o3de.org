@@ -18,7 +18,7 @@ This tutorial covers the following concepts:
 
 The VegetationBending materialtype allows materials to bend and sway, simulating how wind affects vegetation. It allows for detail bending with slight movement of branches and leaves, as well as movement of the entire object. 
 
-The code in this tutorial can be found in the [AtomTutorials Gem](). There, you can find the template code to use to follow this tutorial, the final code, and the assets we are using.
+The code in this tutorial can be found in the [AtomTutorials Gem (LINK TBD)](). There, you can find the template code to use to follow this tutorial, the final code, and the assets we are using.
 
 As we go along, you may wish to reference the[Material Types and Shaders guide](get-started-materialtypes-and-shaders), which gives higher-level explanations of the mechanisms we are using.
 
@@ -26,7 +26,7 @@ As we go along, you may wish to reference the[Material Types and Shaders guide](
 Before you can create your material type, ensure you have [installed the engine](/docs/welcome-guide/setup/), [set up a project](/docs/welcome-guide/create/), and [launched the editor](/docs/welcome-guide/tours/editor-tour).
 
 Next, perform the following steps to get started on making the vegetation bending material type.
-1. Download the template files from [here](). Download all of them EXCEPT the `MeshMotionVectorVegetationBending` folder.
+1. Download the template files from [here (LINK TBD)]().
    * You'll notice that there are a couple key files and file extensions that we need to make our custom material type. More details can be found in [this guide](get-started-materialtypes-and-shaders/#1-set-up-the-files), but this tutorial will explain each file as we go along.
 1. Move `VegetationBendingPropertyGroup.json` to `{your-project-path}\Materials\Types\MaterialInputs\`. Create the folders as needed!
 1. Move the rest of the downloaded files to 
@@ -415,7 +415,7 @@ First, let's add a function that our multiple vertex shaders can call to avoid r
 1. Open `{your-project-path}\Materials\Types\VegetationBending_Common.azsli`.
 1. At the bottom, add the following code: 
    ```hlsl
-   float4 ProcessBending(float currentTime, float3 objectSpacePosition, float3 normal, float4 color, float4 worldPosition, float4x4 objectToWorld) 
+   float4 ProcessBending(float currentTime, float3 objectSpacePosition, float3 normal, float4 detailBendingParams, float4 worldPosition, float4x4 objectToWorld) 
    {
       float4 adjustedWorldPosition = float4(worldPosition);
       if (o_color_isBound) 
@@ -464,17 +464,15 @@ Now, let's begin editing the code to add wind.
       float2 frequency = float2(MaterialSrg::m_windBendingFrequency, MaterialSrg::m_windBendingFrequency * 1.125);
       // Using the world position to modify the phase makes it so different trees near each other are at similar but not equal points in the animation, 
       // so they appear to be reacting to the same wind but at different times as the wind moves through the vegetation.
-      float2 phase = float2(worldPosition.x * 0.08, worldPosition.y * 0.08);
+      float2 phase = worldPosition.xy * 0.08;
 
-      float2 addBending = float2(sin(currentTime * frequency.x + phase.x) * amplitude.x, sin(currentTime * frequency.y + phase.y) * amplitude.y);
+      float2 bendAmount = sin(currentTime * frequency + phase) * amplitude;
 
       float4 result;
-      result.x = addBending.x + wind.x;
-      result.y = addBending.y + wind.y;
-      result.z = sqrt(wind.x * wind.x + wind.y * wind.y);
-      result *= bendingStrength * 0.08;
-      float2 totalBending = addBending + wind;
-      result.w = sqrt(totalBending.x * totalBending.x + totalBending.y * totalBending.y) * 0.3;
+      result.xy = bendAmount + wind;
+      result.z = length(wind);
+      result.w = 0.3 * length(result.xy);
+      result.xyz *= bendingStrength * 0.08;
 
       return result;
    }
@@ -504,13 +502,13 @@ Using the wind bending constants that we just calculated, we can now determine t
 1. Open `{your-project-path}\Materials\Types\VegetationBending_Common.azsli`.
 1. At the bottom, add the following code:
    
-   ```
-   float3 DetailBending(float3 objectSpacePosition, float3 normal, float4 color, float currentTime, float4 worldPosition, float bendLength)
+   ```hlsl
+   float3 DetailBending(float3 objectSpacePosition, float3 normal, float4 detailBendingParams, float currentTime, float4 worldPosition, float bendLength)
    {
       // The information from the vertex colors about how to bend this vertex.
-      float edgeInfo = color.x;
-      float branchPhase = color.y;
-      float branchBendAmount = color.z;
+      float edgeInfo = detailBendingParams.x;
+      float branchPhase = detailBendingParams.y;
+      float branchBendAmount = detailBendingParams.z;
 
       // Phases (object, vertex, branch)
       float objPhase = dot(worldPosition.xyz, 2.0); 
@@ -541,7 +539,7 @@ Using the wind bending constants that we just calculated, we can now determine t
       float4 currentBending = SetUpWindBending(currentTime, worldPosition);
 
       // Detail bending
-      float3 currentOutPosition = DetailBending(objectSpacePosition, normal, color, currentTime, worldPosition, currentBending.w);
+      float3 currentOutPosition = DetailBending(objectSpacePosition, normal, detailBendingParams, currentTime, worldPosition, currentBending.w);
    }
 
    return adjustedWorldPosition;
@@ -549,14 +547,14 @@ Using the wind bending constants that we just calculated, we can now determine t
    Note that `currentBending.w` is passed in to the detail bending function. This is the overall bending length we want according to the wind strength and direction. 
 1. Now, we need to set the actual vertex shader outputs to use the output from the detail bending function. We need to set the world position so the code following the conditional can update the positions correctly. 
    
-   ```
+   ```hlsl
    if (o_color_isBound) 
    {
       // Overall wind
       float4 currentBending = SetUpWindBending(currentTime, worldPosition);
 
       // Detail bending
-      float3 currentOutPosition = DetailBending(position, normal, color, currentTime, worldPosition, currentBending.w);
+      float3 currentOutPosition = DetailBending(position, normal, detailBendingParams, currentTime, worldPosition, currentBending.w);
 
       adjustedWorldPosition = mul(objectToWorld, float4(currentOutPosition, 1.0));
    }
@@ -573,7 +571,7 @@ The leaves are moving now, but the tree doesn't sway yet. We will now add main b
 1. Open `{your-project-path}\Materials\Types\VegetationBending_Common.azsli`.
 1. At the bottom, add the following code:
    
-   ```
+   ```hlsl
    float3 MainBending(float3 objectSpacePosition, float4 bending)
    {
       float windX = bending.x;
@@ -596,8 +594,9 @@ The leaves are moving now, but the tree doesn't sway yet. We will now add main b
    Using the current position of the vertex (after it has been changed from the detail bending) and the bending determined by the wind, we can bend the tree as a whole.
 1. Add a call to our detail bending function under the wind function call in our `ProcessBending` function:
    
-   ```
-   if (o_color_isBound) {
+   ```hlsl
+   if (o_color_isBound)
+   {
       // Overall wind
       float4 currentBending = SetUpWindBending(currentTime, worldPosition);
 
@@ -622,22 +621,24 @@ If you take a look at the `MeshMotionVectorVegetationBending.azsl` file, you can
 
 However, we don't have a vertex shader input that gives us the previous position. Therefore, in the vertex shader, we want to calculate the bending for not only the current time as we have been, but also for the previous time frame.
 
-1. Download the two files in the `MeshMotionVectorVegetationBending` folder and move it to `{your-project-path}\Materials\Types`.
-1. The `MeshMotionVectorVegetationBending` files already contain all the previous steps that we have done, like adding the shader option and calling the bending functions. 
+Let's add the motion vector shader and then edit its vertex shader:
+
 1. Open `VegetationBending.materialtype`. At the bottom of the `shaders` list, add the motion vector pass:
    
-   ```
+   ```json
    {
       "file": "./MeshMotionVectorVegetationBending.shader",
       "tag": "MeshMotionVector"
    }
    ```
-
-Great, now we have included the motion vector shader, so we have to go in and edit the vertex shader.
-
 1. Open `MeshMotionVectorVegetationBending.azsl`.
-1. We want to perform bending on the vertex at the `IN.m_position` but at the previous frame time, with the previous world position. We can use `SceneSrg::m_prevTime` to get the previous frame time. Call our `ProcessBending` function again, but with the appropriate time and world position:
+1. Add the call to `ProcessBending`, just as we did in the previous steps with the other shaders. Under the declaration for `float4 prevWorldPosition`, but above `OUT.m_worldPos`, add:
+   ```hlsl
+   float currentTime = SceneSrg::m_time;
+   worldPosition = ProcessBending(currentTime, IN.m_position, IN.m_normal, IN.m_optional_color, worldPosition, objectToWorld);
    ```
+1. Now, for our motion vectors to work we need to find the previous world position. We want to perform bending on the vertex at the `IN.m_position` but at the previous frame time, with the previous world position. We can use `SceneSrg::m_prevTime` to get the previous frame time. Call our `ProcessBending` function again, but with the appropriate time and world position:
+   ```hlsl
    float currentTime = SceneSrg::m_time;
    worldPosition = ProcessBending(currentTime, IN.m_position, IN.m_normal, IN.m_optional_color, worldPosition, objectToWorld);
    float prevTime = SceneSrg::m_prevTime;
@@ -651,7 +652,7 @@ Amazing, we have added everything we need to add for motion vectors! However, if
 1. Select **Atom Tools** > **Pass Viewer**.
 1. In the pop-up **PassTree View**, enable **Preview Attachment** and **Show Pass Attachments**.
 1. In the **PassTree**, find *MotionVectorPass* > *MeshMotionVectorPass* and select the line with `CameraMotion`. 
-1. Ensure you are viewing your tree. Note that you probably won't see much except black on the bottom left preview, because the motion vectors are very small because our tree only moves minimally. However, if you move the camera around or translate the tree quickly, you may see some motion vectors pop up. You can also open `MeshMotionVectorVegetationBending.azsl` and scale `OUT.m_motion` in the pixel shader to ensure that the motion vectors' directions are working properly.
+1. Ensure you are viewing your tree. Note that you probably won't see much except black on the bottom left preview, because the motion vectors are very small since our tree only moves minimally. However, if you move the camera around or translate the tree quickly, you may see some motion vectors pop up. You can also open `MeshMotionVectorVegetationBending.azsl` and scale `OUT.m_motion` in the pixel shader to ensure that the motion vectors' directions are working properly.
 
 This video shows the motion vectors when `OUT.m_motion` is scaled by `10000.0`.
 {{< video src="/images/atom-guide/vegetation-bending-tutorial/motionvectortree.mp4" autoplay="true" loop="true" muted="true" width="100%" info="Video of tree motion vector." >}}
