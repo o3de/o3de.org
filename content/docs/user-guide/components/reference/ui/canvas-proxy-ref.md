@@ -27,3 +27,17 @@ The following picture shows three entities that share the same loaded canvas. Th
 ![Three entities with shared canvas](/images/user-guide/component/ui_canvas/component-ui-canvas-proxy-ref-screenshot.png)
 
 For more information, refer to [Placing UI Canvases in the 3D World](/docs/user-guide/interactivity/user-interface/canvases/placing-canvases-3d).
+
+## UiCanvasProxyRefBus
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `SetCanvasRefEntity` | Sets a target entity with a UI canvas to associate with the current entity. | Target Entity: EntityId, Current Entity: EntityId | None | Yes |
+
+## UiCanvasRefNotificationBus
+
+| Method Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `OnCanvasRefChanged` | Notifies listeners that the canvas reference has changed. | None | Old reference: EntityId, New Reference: EntityId | Yes |
+
+For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
