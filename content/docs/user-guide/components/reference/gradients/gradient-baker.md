@@ -28,8 +28,6 @@ The final optimization step is to select all of the gradients in your chain and 
 
 ## Gradient Baker properties
 
-![Gradient Baker component properties](/images/user-guide/components/reference/gradients/gradient-baker-component.png)
-
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Preview** | Displays the gradient image that will be baked out of this component after all properties are applied. | | |
