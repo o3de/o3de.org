@@ -14,7 +14,7 @@ This tutorial covers the following concepts:
 * Add custom lighting
 
 ## Prerequisites
-Ensure you have [installed the engine](../../welcome-guide/setup/), [set up a project](../../welcome-guide/create/), and [launched the editor](../../welcome-guide/tours/editor-tour).
+Ensure you have [installed the engine](/docs/welcome-guide/setup/), [set up a project](/docs/welcome-guide/create/), and [launched the editor](/docs/welcome-guide/tours/editor-tour).
 
 Before starting this tutorial, be sure to complete the [material type tutorial](). Specifically, be familiar with working with material types and editing shaders.
 
@@ -54,6 +54,10 @@ These files already include all of the properties that we will need. If you are 
 Most of these properties are defined in the `MaterialSrg` in `SixPointLighting_Common.azsli`, but the option booleans are defined elsewhere. `o_enableDepthTexture` and `o_enableDebugFrame` are defined at the bottom of `SixPointLighting_Common.azsli` and `o_sixPointTexturePackMode` is defined in the *Material Parameters* of `SixPointLighting_ForwardPass.azsl`. 
 
 Throughout the tutorial, when we use these properties, we will discuss them further, so don't worry if some of these properties don't make sense right now!
+
+{{< note >}}
+Everything involving `depth`, including the depth pass and the three properties, won't be used in this tutorial because we lack a depth map texture. However, `SixPointLighting_DepthPass_WithPS.azsl` in the final files does provide the code for adjusting the depth, so you can take a look at that if you are interested in how we would adjust the depth pixel shader.
+{{< \note >}}
 
 ## Write lua functor to toggle visibility in the Material Editor
 For six-point lighting to work, we need textures that use color channels to indicate the illuminated parts of the texture if light came from a corresponding direction. For example, red parts in the texture could indicate that lighting from the left should affect those parts, whereas blue could indicate lighting from the top. Thus, magenta (red + blue) parts could mean that lighting from both the left and top should be applied.
@@ -267,22 +271,6 @@ Let's add our custom lighting:
 Great, now all the custom surface and lighting is now done! In the **Editor**, look at how your material has lighting now. Try adding more entities with a **Directional Light** component around your material to see the different effects. For example, try moving the light to point to the top of your material and see how the lighting responds accordingly! Also, adjust the **Intensity** of the light in the **Directional Light** component as needed to make your cloud look more realistic. Your material will also respond to other light types and multiple lights at the same time.
 
 {{< video src="/images/atom-guide/six-point-lighting/final.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of the final lighting." >}}
-
-## Add depth
-While the bulk of the custom lighting is done, the 2D nature of the flipbook only required us to edit the forward pass. However, we can also edit the depth pass to use the optional depth map and edit the outputted depth in the pixel shader.
-1. Open `SixPointLighting_DepthPass_WithPS.azsl`. 
-1. At the bottom of the `MainPS` function, get the depth offset from the depth map and adjust the depth accordingly:
-   ```hlsl
-   float2 sixPointUv = GetUvForCurrentFrame(IN.m_uv[0]);
-   float alpha = MaterialSrg::m_opacityMap.Sample(MaterialSrg::m_sampler, sixPointUv).r;
-   if(o_enableDepthTexture)
-   {
-      float depthOffset = MaterialSrg::m_depthMap.Sample(MaterialSrg::m_sampler, sixPointUv).r;
-      OUT.m_depth += depthOffset;
-   }
-
-   return OUT;
-   ```
 
 ## Download the AtomTutorial Gem sample
 Now that you've completed this tutorial, you can compare your results to our working version of six-point lighting in the **AtomTutorials** gem in the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). You can either download and place the [final working six point lighting files]() in your project, or you can [download the gem and add it to the engine]() if you haven't already in the [vertex deformation tutorial](). 
