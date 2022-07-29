@@ -204,7 +204,7 @@ Our tree mesh that we just added has colored vertices; however, not every mesh t
    }
    ```
 1. Repeat steps 3 and 4 with the depth pass in `{your-project-path}\Materials\Types\VegetationBending_DepthPass.azsli`. Note that the depth pass' vertex shader input struct is `VSInput`.
-1. Save both files and open your level in the **Editor** from the previous steps. You should see that the tree entity is offset, but the shader ball is not!
+1. Save both files and open your level in the **Editor** from the previous steps. You should see that the tree entity is offset, but the shader ball (which doesn't have a vertex color stream) is not!
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/optionoffset.png" width="100%" alt="Option offset added." >}}
 
@@ -213,6 +213,8 @@ Now that we have our tree and tested the shader options, let's delete the previo
 * The code added to adjust the position in the vertex shaders of both the forward pass and depth pass
 * The `m_xOffset` and `m_yOffset` variable declarations in the `VegetationBending_Common.azsli` file in the `MaterialSrg`
 * The `xOffset` and `yOffset` properties in the `.json` file, but keep the rest of the file and its connection in `VegetationBending.materialtype`; we will need it for later!
+
+Make sure you are keeping the declarations for `m_optional_color` and `o_color_isBound`.
 
 ### Create materials for the tree
 Let's add some textures to make our tree look more realistic! For the tree, we need 3 materials: one for the trunk, one for the branches, and one for the leaves.
@@ -226,10 +228,10 @@ Let's add some textures to make our tree look more realistic! For the tree, we n
 1. Find **Opacity** and, for **Opacity Mode**, select `Cutout`. We need to set this to `Cutout` because the leaf texture has transparent parts.
 1. Under **General Settings**, enable **Double-sided**. This renders both sides of meshes.
 1. Save your leaf material. Now, we need to repeat with the branch and the trunk. Instead of making whole new materials, we can make the leaf material the parent of the branch and trunk materials so the properties stay constant for all 3.
-   1. In the **Asset Browser**, **right-click** `aspen_leaf.material`. Select **Create Child Material...** and save it in the same `Materials` folder as `aspen_bark_01.material`. Find **Base Color** in the **Inspector** and choose `aspen_bark_01_basecolor.tif`.
-   1. In the **Asset Browser**, **right-click** `aspen_leaf.material`. Select **Create Child Material...** and save it in the same `Materials` folder as `aspen_bark_02.material`. Find **Base Color** in the **Inspector** and choose `aspen_bark_02_basecolor.tif`.
+   1. In the **Asset Browser** of the **Material Editor**, **right-click** `aspen_leaf.material`. Select **Create Child Material...** and save it in the same `Materials` folder as `aspen_bark_01.material`. Find **Base Color** in the **Inspector** and choose `aspen_bark_01_basecolor.tif`.
+   1. In the **Asset Browser** of the **Material Editor**, **right-click** `aspen_leaf.material`. Select **Create Child Material...** and save it in the same `Materials` folder as `aspen_bark_02.material`. Find **Base Color** in the **Inspector** and choose `aspen_bark_02_basecolor.tif`.
 
-   Notice how the other properties are the same as the leaf's! If you edit the parent material's properties after creating these children material, it will automatically update the children materials' property values. This will be important later when we adjust the bending properties so all parts of the tree remain in sync while bending.
+   Notice how the other properties are the same as the leaf's! If you edit the parent material's properties after creating these child materials, it will automatically update the child materials' property values. This will be important later when we adjust the bending properties so all parts of the tree remain in sync while bending.
 1. Save all 3 materials and exit the **Material Editor**. In the **Editor**, click on the tree entity (`Tree`).
 1. In the **Entity Inspector** on the right, find the **Material** component. Click the **X** to delete the **Default Material**. Under **Model Materials** > **AM_Aspen_Bark_01**, select `aspen_bark_01.material`. For **AM_Aspen_Bark_02**, select `aspen_bark_02.material`. For **AM_Aspen_Leaf**, select `aspen_leaf.material`.
 
