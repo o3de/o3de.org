@@ -187,7 +187,7 @@ Our tree mesh that we just added has colored vertices; however, not every mesh t
    option bool o_color_isBound;
    ```
    We place this variable in the common file because we will be using it in all the passes.
-1. Open `{your-project-path}\Materials\Types\VegetationBending_ForwardPass.azsli`. Inside `struct VSInput`, add another field:
+1. Open `{your-project-path}\Materials\Types\VegetationBending_ForwardPass.azsli`. Inside `struct VegetationVSInput`, add another field:
 
    ```
    float4 m_optional_color : COLOR0;
@@ -203,7 +203,7 @@ Our tree mesh that we just added has colored vertices; however, not every mesh t
       worldPosition.y += MaterialSrg::m_yOffset;
    }
    ```
-1. Repeat steps 3 and 4 with the depth pass in `{your-project-path}\Materials\Types\VegetationBending_DepthPass.azsli`.
+1. Repeat steps 3 and 4 with the depth pass in `{your-project-path}\Materials\Types\VegetationBending_DepthPass.azsli`. Note that the depth pass' vertex shader input struct is `VSInput`.
 1. Save both files and open your level in the **Editor** from the previous steps. You should see that the tree entity is offset, but the shader ball is not!
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/optionoffset.png" width="100%" alt="Option offset added." >}}
