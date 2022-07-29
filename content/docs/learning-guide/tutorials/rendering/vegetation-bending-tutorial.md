@@ -11,6 +11,7 @@ This tutorial covers the following concepts:
 * Making your own material type
 * Creating materials in the **Material Editor**
 * Editing vertex shaders
+* Optional vertex streams
 * Adding editable properties for your material type
 * Adding shader options
 * Adding passes to your material type
@@ -33,19 +34,20 @@ Next, perform the following steps to get started on making the vegetation bendin
    `{your-project-path}\Materials\Types\`.
 1. Open `{your-project-path}\Materials\Types\VegetationBending.materialtype`. Under `propertyLayout` > `propertyGroups`, you'll see there are many entries with `{your-path-to-o3de}`. Replace `{your-path-to-o3de}` with your appropriate path to the engine.
    * For example, `C:/o3de/Gems/Atom/Feature/Common/Assets/Materials/Types/MaterialInputs/BaseColorPropertyGroup.json`.
-   * Currently we cannot import property groups across gems, so we are hard coding the absolute path, even though it is not portable, as a proof of concept. There is a GHI to enable importing across gems at [o3de#10623](https://github.com/o3de/o3de/issues/10623).
+   * Currently we cannot import property groups across gems, so we are hard coding the absolute path as a proof of concept, even though it is not portable. There is a GHI to enable importing across gems at [o3de#10623](https://github.com/o3de/o3de/issues/10623).
+1. Run the **Editor**, and the assets should automatically process. At this point, none of them should fail. If `VegetationBending.materialtype` fails to process, check that you used the correct paths in step 4.
 
 These template files were created by duplicating important parts of the `StandardPBR` files and then modifying them. When you create your own material types in the future, you can similalry duplicate `StandardPBR` files and work from there.
 
-As a high-level overview, [`.materialtype`](/docs/atom-guide/dev-guide/materials/materials/#material-types) references the shader files we will use on the material of this material type. The [`.shader`](/docs/atom-guide/look-dev/shaders/shader-file-spec.md) files define which types of shaders, such as vertex and pixel shaders, should be used and references the actual shader code in [`.azsl`](/docs/atom-guide/dev-guide/shaders/azsl/) files. They also specify the `DrawList`, which controls which pass should run that shader. Often, `.azsl` files will include `.azsli` files, which are also written in the Amazon shading language (AZSL), but are separate so multiple `.azsl` files can include the `.azsli` files. 
+As a high-level overview, [`.materialtype`](/docs/atom-guide/dev-guide/materials/materials/#material-types) references the shader files we will use on the material of this material type. The [`.shader`](/docs/atom-guide/look-dev/shaders/shader-file-spec.md) files define which types of shaders, such as vertex and pixel shaders, should be used and references the actual shader code in [`.azsl`](/docs/atom-guide/dev-guide/shaders/azsl/) files. They also specify the `DrawList`, which controls which pass should run that shader. Often, `.azsl` files will include `.azsli` files, which are also written in the Amazon shading language (AZSL), but are separate so multiple `.azsl` files can reuse the shader code from the `.azsli` files. 
 
 ## Add a material with the VegetationBending material type
 Before we begin editing any files, we want to ensure we can make a material using our material type in the **Editor**.
  1. Launch the **Editor**, and open the **Material Editor** by pressing **M** on the keyboard or choosing **Tools** > **Material Editor**.
- 1. Create a new material by choosing **File** > **New**. Then, in the pop-up, select **VegetationBending** and give the material a name, such as `my_material`. Save it in your project's `Materials` folder.
+ 1. Create a new material by choosing **File** > **New**. Then in the dropdown under **Select Type**, choose `VegetationBending` and give the material a name, such as `my_material`. Save it in your project's `Materials` folder.
  1. Save your material by hitting **CTRL-S**, and close the **Material Editor**.
  1. Back in the **Editor**, click on the *shader ball* that is already included in the default level. 
- 1. On the right side, look for the **Mesh** component and click **Add Material Component**.
+ 1. In the **[Entity Inspector](/docs/user-guide/editor/entity-inspector)**, look for the **Mesh** component and click **Add Material Component**.
  1. In the material component, find the file icon next to *Default Material*, click it, and select the VegetationBending material that you just created.
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/materialeditor.png" width="100%" alt="Material added." >}}
