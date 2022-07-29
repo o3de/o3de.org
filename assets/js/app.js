@@ -102,15 +102,18 @@ $(function() {
   $("#docs-nav a").each(function(){
     if($(this).attr("href") == url) {
       $(this).addClass("currentPage");
+
+      // Apply attributes to the parent pages/sections for styling.
       $(this).parentsUntil("#docs-nav", "ul").each(function(){
         $(this).addClass("currentAncestor");
         $(this).siblings('a').each(function()
         {
-          $(this).addClass("currentAncestor").addClass("open");
-          
-        });
-        $(this).parent('li').addClass("currentAncestorCategory");
+          $(this).addClass("currentAncestor").addClass("open");          
+        });                  
+        $(this).parent('li').addClass("currentAncestorCategory");    
       })
+      $(this).parent('li').addClass("currentAncestorCategory");    
+      
     }
   })
 });
