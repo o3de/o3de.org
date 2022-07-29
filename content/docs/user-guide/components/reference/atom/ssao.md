@@ -5,7 +5,7 @@ description: 'Open 3D Engine (O3DE) SSAO component reference.'
 toc: true
 ---
 
-The **SSAO** (screen-space ambient occlusion) component approximates the occlusion of indirect lighting in a scene by using the depth buffer to approximate occlusion. This occlusion is sometimes referred to as contact-shadows. 
+The **SSAO** (screen-space ambient occlusion) component approximates the occlusion of light in a scene using the depth buffer. This occlusion is sometimes referred to as contact-shadows. 
 
 {{< image-width "/images/user-guide/components/reference/atom/ssao-bistro.png" "700" "Image of SSAO applied to the Bistro scene" >}}
 
