@@ -7,7 +7,7 @@ toc: true
 
 The **SSAO** component approximates the occlusion of indirect lighting in a scene by using the *screen space ambient occlusion* technique. This occlusion is sometimes referred to as contact-shadows. 
 
-{{< image-width src="/images/user-guide/components/reference/atom/ssao-bistro.png" width="700" alt="Image of SSAO applied to the Bistro scene" >}}
+{{< image-width "/images/user-guide/components/reference/atom/ssao-bistro.png" "700" "Image of SSAO applied to the Bistro scene" >}}
 
 ## Properties
 
