@@ -44,7 +44,6 @@ See the following tips for working in the **Curve Editor**:
 + To zoom in or out, scroll the mouse wheel
 + To pan the view, click and drag the middle mouse wheel
 + To select multiple spline keys, click and drag to select the keys
-+
 
 **To adjust a spline key**
 
@@ -55,7 +54,6 @@ See the following tips for working in the **Curve Editor**:
   1. Do one of the following:
      + Drag the spline key to a different point on the timeline.
      + Use the toolbar buttons to select a preset: auto, zero, step, or linear.
-+
 
 **To edit multiple elements at once**
 
