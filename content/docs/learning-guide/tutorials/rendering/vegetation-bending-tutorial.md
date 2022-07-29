@@ -222,7 +222,7 @@ Let's add some textures to make our tree look more realistic! For the tree, we n
 1. Download the 3 `.tif` textures from [here](https://github.com/o3de/sample-code-gems/tree/main/atom_gems/AtomTutorials/Assets/VegetationBending/Objects).
 1. Place the textures in `{your_project_path}/Objects`.
 1. Open the **Editor**, and then the **Material Editor** by hitting **M**.
-1. Choose **File** > **New** and, in the pop-up, choose **VegetationBending**, name the material `aspen_leaf.material`, and save it in the `Materials`.
+1. Choose **File** > **New** and, in the pop-up, choose **VegetationBending**, name the material `aspen_leaf.material`, and save it in the `Materials` folder.
 1. On the right side in the **Inspector**, find **Base Color** and click on the file icon next to *Texture*. Choose `aspen_leaf_basecolora.tif`.
    * The suffix `_basecolora` tells the engine to process the texture with a specific [*preset*](/docs/user-guide/assets/texture-settings/texture-presets). Appending a suffix to the name of a texture tells the engine to use the corresponding preset. In this case, we are using the `_basecolora` preset because this texture has the base color in the rgb channels and the opacity in the alpha channel.
 1. Find **Opacity** and, for **Opacity Mode**, select `Cutout`. We need to set this to `Cutout` because the leaf texture has transparent parts.
@@ -411,6 +411,7 @@ The "DetailBend" parameters are specfically used for detail bending, but the "Wi
     float m_windDirX;
     float m_windDirY;
     float m_bendingStrength;
+    float m_windBendingFrequency;
     ```
 1. Open the **Editor**, then open the **Material Editor**, and choose to edit the leaf material (`aspen_leaf.material`). Make sure you select the leaf material because that is the parent material of the other parts of the tree.
 1. On the right, scroll down to **Vegetation Bending** and ensure that the 6 properties we just added are there.
