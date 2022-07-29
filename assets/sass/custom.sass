@@ -1526,6 +1526,12 @@ nav.docs-nav
         color: $o3de-blue
         &:hover
           color: $o3de-blue-highlight
+        
+      a.currentAncestor.has-children::after
+        border-color: $o3de-blue
+
+      a.has-children:hover::after
+        border-color: $o3de-blue-highlight    
 
       a.has-children-icon      
         padding: 15px
@@ -1542,16 +1548,28 @@ nav.docs-nav
           transform: rotate(-45deg)
           border: 2px solid #333
           border-left: 0
-          border-top: 0
+          border-top: 0    
+        &:hover::after
+          border-color: $o3de-blue-highlight
         
-      a.currentAncestor.has-children::after
-        border-color: $o3de-blue
-
-      a.has-children:hover::after
-        border-color: $o3de-blue-highlight
+      a.has-children-icon.open
+        &:after
+          transform: rotate(45deg) translate(-3px, -3px)
+        &:hover::after
+          border-color: $o3de-blue-highlight
       
-      a.has-children-icon.open::after
-        transform: rotate(45deg) translate(-3px, -3px)
+      a.has-children-icon.currentPage
+        &:after
+          border-color: $o3de-blue
+        &:hover::after
+          border-color: $o3de-blue-highlight
+
+      a.has-children-icon.currentAncestor
+        &:after
+          border-color: $o3de-blue          
+        &:hover::after
+          border-color: $o3de-blue-highlight
+
 
       ul
         display: none

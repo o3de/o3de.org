@@ -116,7 +116,6 @@ $(function() {
 });
 
 // Applies to the current page in the docs-nav.
-
 $(function() {
   $("#docs-nav a.currentPage").each(function(e){
 
@@ -129,7 +128,8 @@ $(function() {
     }
     $(this).siblings('.has-children-icon').each(function()
     {
-      $(this).addClass("open");      
+      $(this).addClass("open");
+      $(this).addClass("currentPage");
     });
   })
 });
