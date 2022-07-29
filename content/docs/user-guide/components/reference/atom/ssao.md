@@ -15,7 +15,7 @@ The **SSAO** (screen-space ambient occlusion) component approximates the occlusi
 
 | Property | Description |
 |-|-|
-| **Enable SSAO** | Whether SSAO should be enabled or not. |
+| **Enable SSAO** | Whether SSAO should be enabled or not (note that SSAO is enabled by default - even if there is no SSAO component in the level - and an SSAO component must be added and this value set to false in order to disable SSAO). |
 | **SSAO Strength** | The strength of the SSAO effect - the higher this value the darker the SSAO will appear. |
 | **Sampling Radius** | The sampling radius of the SSAO effect in screen UV space - decrease/increase this value to have a more local/global SSAO effect. |
 | **Enable Blur** | Whether a blur is applied to the computed SSAO buffer. Enabling with result in a smoother looking SSAO image. |
