@@ -11,9 +11,8 @@ This tutorial covers the following concepts:
 * Making your own material type
 * Creating materials in the **Material Editor**
 * Editing vertex shaders
-* Optional vertex streams
 * Adding editable properties for your material type
-* Adding shader options
+* Using optional vertex streams
 * Adding passes to your material type
 * Using the Pass Tree Visualizer to debug passes
 
@@ -60,6 +59,9 @@ Now we are ready to edit our shader to change how the engine renders our materia
 ### Render the material at an offset
 To start off, let's edit the vertex shader to render our shader ball at an offset.
 1. Open `{your-project-path}\Materials\Types\VegetationBending_ForwardPass.azsli`. Recall that `.azsli` files contain shader code. This file contains the vertex and pixel shader code for the *forward pass* of the vegetation bending material type.
+   {{< note >}}
+   There is also a `VegetationBending_ForwardPass.azsl` file. Make sure you are opening the `.azsli` file.
+   {{< /note >}}
 1. Find the function `VegetationBending_ForwardPassVS`.
 1. Towards the end of the function, right before `OUT.m_worldPosition = worldPosition.xyz;`, add: 
    
@@ -88,7 +90,7 @@ Let's repeat the above steps but with the depth pass:
    ```
    worldPosition.x += 5.0;
    ```
-1. Save your file and check our the **Editor**. The shader ball should now be completely rendered at an offset! 
+1. Save your file and look at the **Editor**. The shader ball should now be completely rendered at an offset! 
    * Note that the shadow is still in the original position. We'll be correcting this later on in the tutorial when we add a custom shadowmap with pixel shader. For brevity, we are not covering the vertex-only shadowmap shader in the tutorial and instead using the StandardPBR one. After finishing this tutorial, see if you can add and adjust the vertex-only shadow (used for opaque materials that don't have alpha-cutout) yourself!
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/fulloffset.png" width="100%" alt="Completed offset added." >}}
@@ -97,7 +99,7 @@ Let's repeat the above steps but with the depth pass:
 For now, we have just been moving the ball an offset of `5` units. However, we may want an easy way to change the offset in the **Editor** instead of having to change the code. We can do this with adjustable parameters in the **Material Editor**.
 
 1. Open `{your-project-path}\Materials\Types\MaterialInputs\VegetationBendingPropertyGroup.json`.
-1. Under `properties`, you'll see that there is already a property, `xOffset`, written there for you. Following `xOffset` as a guide, add another property `yOffset`. The code should end up looking something like this:
+1. Under `properties`, you'll see that there is already a property, `xOffset`, written there for you. Following `xOffset` as a guide, add another property `yOffset`. Don't forget to add a comma after the brackets surrounding the `xOffset` property, so that the file is valid `json`. The code should end up looking something like this:
    
    ``` json
    {
@@ -130,7 +132,7 @@ For now, we have just been moving the ball an offset of `5` units. However, we m
    ```
    {
       "$import": "MaterialInputs/VegetationBendingPropertyGroup.json"
-   }
+   },
    ```
    Note that you can also place the `json` properties directly in this `.materialtype` file, without having to import another `.json` file. 
 
@@ -162,8 +164,8 @@ In order to test the code that we are about to write, we need an appropriate mes
 1. Download `tree.fbx` from [here](https://github.com/o3de/sample-code-gems/blob/main/atom_gems/AtomTutorials/Assets/VegetationBending/Objects/tree.fbx).
 1. Place `tree.fbx` in `{your_project_path}\Objects`. Make the `Objects` folder as needed.
 1. Open the **Editor** to your project and level. 
-1. On the left in the **Entity Outliner**, **right-click** and select **Create entity**. **Right-click** the new entity in the **Entity Outliner**, and rename the entity to `Tree`.
-1. On the right, in the **Entity Inspector** click **Add Component** and select **Mesh**.
+1. In the **Entity Outliner**, **right-click** and select **Create entity**. **Right-click** the new entity in the **Entity Outliner**, and rename the entity to `Tree`.
+1. In the **Entity Inspector**, click **Add Component** and select **Mesh**.
 1. In the mesh component, click the file icon next to **Model Asset** select `tree.fbx` in your project's `Objects` folder.
 1. Again in the mesh component, click **Add Material Component**, click the file icon next to *Default Material* and select your material that you made earlier (`my_material`).
 
