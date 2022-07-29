@@ -15,7 +15,7 @@ If you want to find all nodes of the same type on a graph - for example, to chec
 
 1. To scroll to the right, starting at the leftmost node occurrence, press **F8**. The relevant nodes are highlighted with an orange glow.
 
-1. To scroll to the left, starting at the rightmost node occurence, press **F7**.
+1. To scroll to the left, starting at the rightmost node occurrence, press **F7**.
 
 1. To return to the beginning or end of the cycle, press **F7** or **F8** again.
 
