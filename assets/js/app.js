@@ -145,8 +145,6 @@ $(function() {
 
 // A helper function to show the list of children in the docs-nav.
 function showChildren(e) {
-  $(e).toggleClass("open");
-
   $(e).siblings('ul').each(function()
   {
     $(this).slideToggle(300);
