@@ -26,11 +26,10 @@ As we go along, you may wish to reference the[Material Types and Shaders guide](
 Before you can create your material type, ensure you have [installed the engine](/docs/welcome-guide/setup/), [set up a project](/docs/welcome-guide/create/), and [launched the editor](/docs/welcome-guide/tours/editor-tour).
 
 Next, perform the following steps to get started on making the vegetation bending material type.
-1. Download the template files from [here](https://github.com/o3de/sample-code-gems/tree/main/atom_gems/AtomTutorials/Templates/VegetationBending).
+1. Download or clone the Sample Code Gems repository from [here](https://github.com/o3de/sample-code-gems).
+1. The template files that we will be using for this tutorial are in `atom_gems/AtomTutorials/Templates/VegetationBending`. Move all the files in that folder to `{your-project-path}\Materials\Types\`.
    * You'll notice that there are a couple key files and file extensions that we need to make our custom material type. More details can be found in [this guide](get-started-materialtypes-and-shaders/#1-set-up-the-files), but this tutorial will explain each file as we go along.
-1. Move `VegetationBendingPropertyGroup.json` to `{your-project-path}\Materials\Types\MaterialInputs\`. Create the folders as needed!
-1. Move the rest of the downloaded files to 
-   `{your-project-path}\Materials\Types\`.
+1. Move all the files in `atom_gems/AtomTutorials/Assets/VegetationBending/Objects/` to `{your_project_path}\Objects`. Make the `Objects` folder as needed.
 1. Open `{your-project-path}\Materials\Types\VegetationBending.materialtype`. Under `propertyLayout` > `propertyGroups`, you'll see there are many entries with `{your-path-to-o3de}`. Replace `{your-path-to-o3de}` with your appropriate path to the engine.
    * For example, `C:/o3de/Gems/Atom/Feature/Common/Assets/Materials/Types/MaterialInputs/BaseColorPropertyGroup.json`.
    * Currently we cannot import property groups across gems, so we are hard coding the absolute path as a proof of concept, even though it is not portable. There is a GHI to enable importing across gems at [o3de#10623](https://github.com/o3de/o3de/issues/10623).
@@ -42,16 +41,17 @@ As a high-level overview, [`.materialtype`](/docs/atom-guide/dev-guide/materials
 
 ## Add a material with the VegetationBending material type
 Before we begin editing any files, we want to ensure we can make a material using our material type in the **Editor**.
- 1. Launch the **Editor**, and open the **Material Editor** by pressing **M** on the keyboard or choosing **Tools** > **Material Editor**.
- 1. Create a new material by choosing **File** > **New**. Then in the dropdown under **Select Type**, choose `VegetationBending` and give the material a name, such as `my_material`. Save it in your project's `Materials` folder.
+ 1. Launch the **Editor**, and open the **Material Editor** by pressing **M** on the keyboard or choosing **Tools** > **Material Editor**. Give the **Material Editor** a few seconds to open.
+ 1. Create a new material by choosing **File** > **New**. Then in the dropdown under **Select Type**, choose `VegetationBending` and give the material a name, such as `my_material`. Save it somewhere in your project folder, such as in your project's `Materials` folder.
+   {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/materialeditor.png" width="100%" alt="Material added." >}}
  1. Save your material by hitting **CTRL-S**, and close the **Material Editor**.
  1. Back in the **Editor**, click on the *shader ball* that is already included in the default level. 
  1. In the **[Entity Inspector](/docs/user-guide/editor/entity-inspector)**, look for the **Mesh** component and click **Add Material Component**.
  1. In the material component, find the file icon next to *Default Material*, click it, and select the VegetationBending material that you just created.
 
-{{< image-width src="/images/atom-guide/vegetation-bending-tutorial/materialeditor.png" width="100%" alt="Material added." >}}
-
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/material.png" width="100%" alt="Material added." >}}
+
+Great, we just created a material with our custom material type!
 
 ## Edit the vertex shader
 Now we are ready to edit our shader to change how the engine renders our material type. 
@@ -161,12 +161,10 @@ Now that we've edited our vertex shader, let's take the next step and prepare to
 ### Add a tree
 In order to test the code that we are about to write, we need an appropriate mesh!
 
-1. Download `tree.fbx` from [here](https://github.com/o3de/sample-code-gems/blob/main/atom_gems/AtomTutorials/Assets/VegetationBending/Objects/tree.fbx).
-1. Place `tree.fbx` in `{your_project_path}\Objects`. Make the `Objects` folder as needed.
 1. Open the **Editor** to your project and level. 
 1. In the **Entity Outliner**, **right-click** and select **Create entity**. **Right-click** the new entity in the **Entity Outliner**, and rename the entity to `Tree`.
 1. In the **Entity Inspector**, click **Add Component** and select **Mesh**.
-1. In the mesh component, click the file icon next to **Model Asset** select `tree.fbx` in your project's `Objects` folder.
+1. In the mesh component, under **Model Asset**, type `tree.fbx` or click the file button to find `tree.fbx` in your project's `Objects` folder.
 1. Again in the mesh component, click **Add Material Component**, click the file icon next to *Default Material* and select your material that you made earlier (`my_material`).
 
 Now, we have a tree (at an offset)! This tree is important because it uses vertex colors that we will be using to determine how the tree should bend.
@@ -203,7 +201,7 @@ Our tree mesh that we just added has colored vertices; however, not every mesh t
       worldPosition.y += MaterialSrg::m_yOffset;
    }
    ```
-1. Repeat steps 3 and 4 with the depth pass in `{your-project-path}\Materials\Types\VegetationBending_DepthPass.azsli`. Note that the depth pass' vertex shader input struct is `VSInput`.
+1. Repeat steps 3 and 4 with the depth pass in `{your-project-path}\Materials\Types\VegetationBending_DepthPass.azsli`.
 1. Save both files and open your level in the **Editor** from the previous steps. You should see that the tree entity is offset, but the shader ball (which doesn't have a vertex color stream) is not!
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/optionoffset.png" width="100%" alt="Option offset added." >}}
@@ -212,24 +210,22 @@ Our tree mesh that we just added has colored vertices; however, not every mesh t
 Now that we have our tree and tested the shader options, let's delete the previous offset code so that we can start fresh with vegetation bending. That is, delete the following:
 * The code added to adjust the position in the vertex shaders of both the forward pass and depth pass
 * The `m_xOffset` and `m_yOffset` variable declarations in the `VegetationBending_Common.azsli` file in the `MaterialSrg`
-* The `xOffset` and `yOffset` properties in the `.json` file, but keep the rest of the file and its connection in `VegetationBending.materialtype`; we will need it for later!
+* The `xOffset` and `yOffset` properties in the `VegetationBendingPropertyGroup.json` file, but keep the rest of the file and its connection in `VegetationBending.materialtype`; we will need it for later!
 
 Make sure you are keeping the declarations for `m_optional_color` and `o_color_isBound`.
 
 ### Create materials for the tree
 Let's add some textures to make our tree look more realistic! For the tree, we need 3 materials: one for the trunk, one for the branches, and one for the leaves.
 
-1. Download the 3 `.tif` textures from [here](https://github.com/o3de/sample-code-gems/tree/main/atom_gems/AtomTutorials/Assets/VegetationBending/Objects).
-1. Place the textures in `{your_project_path}/Objects`.
 1. Open the **Editor**, and then the **Material Editor** by hitting **M**.
-1. Choose **File** > **New** and, in the pop-up, choose **VegetationBending**, name the material `aspen_leaf.material`, and save it in the `Materials` folder.
+1. Choose **File** > **New** and, in the pop-up, choose **VegetationBending**, name the material `aspen_leaf.material`, and save it in the same folder you saved your previous material in, such as the `Materials` folder.
 1. On the right side in the **Inspector**, find **Base Color** and click on the file icon next to *Texture*. Choose `aspen_leaf_basecolora.tif`.
    * The suffix `_basecolora` tells the engine to process the texture with a specific [*preset*](/docs/user-guide/assets/texture-settings/texture-presets). Appending a suffix to the name of a texture tells the engine to use the corresponding preset. In this case, we are using the `_basecolora` preset because this texture has the base color in the rgb channels and the opacity in the alpha channel.
 1. Find **Opacity** and, for **Opacity Mode**, select `Cutout`. We need to set this to `Cutout` because the leaf texture has transparent parts.
 1. Under **General Settings**, enable **Double-sided**. This renders both sides of meshes.
 1. Save your leaf material. Now, we need to repeat with the branch and the trunk. Instead of making whole new materials, we can make the leaf material the parent of the branch and trunk materials so the properties stay constant for all 3.
-   1. In the **Asset Browser** of the **Material Editor**, **right-click** `aspen_leaf.material`. Select **Create Child Material...** and save it in the same `Materials` folder as `aspen_bark_01.material`. Find **Base Color** in the **Inspector** and choose `aspen_bark_01_basecolor.tif`.
-   1. In the **Asset Browser** of the **Material Editor**, **right-click** `aspen_leaf.material`. Select **Create Child Material...** and save it in the same `Materials` folder as `aspen_bark_02.material`. Find **Base Color** in the **Inspector** and choose `aspen_bark_02_basecolor.tif`.
+   1. In the **Asset Browser** of the **Material Editor**, **right-click** `aspen_leaf.material`. Select **Create Child Material...** and save it as `aspen_bark_01.material` in the same folder as `aspen_leaf.material`. Find **Base Color** in the **Inspector** and choose `aspen_bark_01_basecolor.tif`.
+   1. In the **Asset Browser** of the **Material Editor**, **right-click** `aspen_leaf.material`. Select **Create Child Material...** and save it as `aspen_bark_02.material` in the same folder as `aspen_leaf.material`. Find **Base Color** in the **Inspector** and choose `aspen_bark_02_basecolor.tif`.
 
    Notice how the other properties are the same as the leaf's! If you edit the parent material's properties after creating these child materials, it will automatically update the child materials' property values. This will be important later when we adjust the bending properties so all parts of the tree remain in sync while bending.
 1. Save all 3 materials and exit the **Material Editor**. In the **Editor**, click on the tree entity (`Tree`).
@@ -288,15 +284,15 @@ Note that the following bending functions are derived from [Vegetation Procedura
 
 ### Add vegetation bending parameters
 We need several parameters to determine how we want our materials to bend:
-* DetailBendFrequency - The frequency of the detail bending.
-* DetailBendLeafAmplitude - The amplitude in which leaves can bend.
-* DetailBendBranchAmplitude - The amplitude in which branches can bend.
+* DetailBendingFrequency - The frequency of the detail bending.
+* DetailBendingLeafAmplitude - The amplitude in which leaves can bend.
+* DetailBendingBranchAmplitude - The amplitude in which branches can bend.
 * WindX -The amount of wind in the x direction.
 * WindY - The amount of wind in the y direction.
 * WindBendingStrength - The amount in which the vegetation bends as a result of the wind.
 * WindBendingFrequency - The frequency that the object sways back and forth caused by the wind.
 
-The "DetailBend" parameters are specfically used for detail bending, but the "Wind" parameters are used for all parts of the bending.
+The "DetailBending" parameters are specfically used for detail bending, but the "Wind" parameters are used for all parts of the bending.
 
 1. Open `{your-project-path}\Materials\Types\MaterialInputs\VegetationBendingPropertyGroup.json`.
 1. Delete the `xOffset` and `yOffset` properties that we added previously if you haven't already, and add these six:
@@ -405,11 +401,11 @@ The "DetailBend" parameters are specfically used for detail bending, but the "Wi
 1. Delete the previous offset variables if you haven't already, and declare the bending property variables in `MaterialSrg`:
    
    ```hlsl
-    float m_detailFreq;
-    float m_detailLeafAmp;
-    float m_detailBranchAmp;
-    float m_windDirX;
-    float m_windDirY;
+    float m_detailFrequency;
+    float m_detailLeafAmplitude;
+    float m_detailBranchAmplitude;
+    float m_windX;
+    float m_windY;
     float m_bendingStrength;
     float m_windBendingFrequency;
     ```
@@ -671,6 +667,7 @@ Now that you've completed this tutorial, you can compare your results to our wor
 
 If you'd like to download and enable the **AtomTutorials** gem, do the following:
 1. Download or clone the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). 
+   * If you followed this tutorial, you already downloaded or cloned this repository, but probably moved the `Object` files out of the repository. You can move the files back or re-download/clone the repository.
 1. Open `VegetationBending.materialtype` and replace all the instances of `{your-path-to-o3de}` with your absolute path to O3DE. 
 1. [Register the **AtomTutorials** gem to the engine](/docs/user-guide/project-config/register-gems). In the command line interface, `cd` into the engine. Then, run
    ```
