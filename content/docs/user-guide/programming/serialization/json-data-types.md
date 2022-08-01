@@ -117,12 +117,26 @@ The serialization of map types \(`AZStd::map`, `AZStd::unordered_map`, `AZStd::u
 
 Other internal types supported by JSON serialization are *UUID* and *color*.
 
+### Uuid
+
 `AZ::Uuid` are mapped to JSON strings by `AZ::Uuid::ToString()`, and strings are converted back to UUIDs from `AZ::Uuid::CreateString()`.
 
-Color types are serialized to JSON arrays containing 3 float values for RGB colors, and 4 values for RGBA. JSON arrays of 3 or 4 values can be deserialized directly back to RGB or RGBA, but JSON objects can also be deserialized to colors. For an object to be deserialized to a color, it must have exactly one key of the following names, with an equivalent value type.
+### Color
 
+Color values can be represented as JSON in several ways, giving users flexibility to use whichever approach best suits their needs.
 
-**Color deserialization from JSON objects**
+#### Color deserialization from arrays
+
+Color types are serialized to JSON arrays containing 3 float values for RGB colors, and 4 values for RGBA. JSON arrays of 3 or 4 values can be deserialized directly back to RGB or RGBA.
+
+| Key | Value type | Example |
+| --- | --- | --- |
+| RGB | Array of 3 floating point elements. | \[1.0, 0.3, 0.2\] |
+| RGBA | Array of 4 floating point elements. | \[1.0, 0.3, 0.2, 0.8\] |
+
+#### Color deserialization from JSON objects
+
+JSON objects can also be deserialized to colors, allowing for other common encodings of the color value. For an object to be deserialized to a color, it must have exactly one key of the following names, with an equivalent value type.
 
 | Key | Value type | Example |
 | --- | --- | --- |
