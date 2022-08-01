@@ -13,7 +13,7 @@ You can use any material on an entity to display a texture rendered by a UI canv
 
 If the canvas is not interactable, step 8 of the following procedure is not required.
 
-1. [Create a UI canvas](/docs/user-guide/interactivity/user-interface/canvases) in [**UI Editor**](http://localhost:1313/docs/user-guide/interactivity/user-interface/editor/). 
+1. [Create a UI canvas](/docs/user-guide/interactivity/user-interface/canvases) in [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/). 
 
 1. In the [canvas properties](/docs/user-guide/interactivity/user-interface/canvases/canvas-properties), enable the **Render to texture** property.  
 
@@ -35,6 +35,6 @@ You must create a unique Attachment Image asset for each entity, assign that ass
 
 ## Example entity component configuration
 
-The following image shows an entity that is configured to display a non-interactable canvas on it's mesh.
+The following image shows an entity that is configured to display a non-interactable canvas on its mesh.
 
 ![Entity Inspector with components that have been configured](/images/user-guide/interactivity/user-interface/canvases/ui-editor-placing-canvases-3d.png)

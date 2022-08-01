@@ -16,7 +16,7 @@ Use UI Canvas Asset Ref nodes to reference the canvas in Script Canvas.
 
 If you want to place a UI canvas on a 3D mesh that a user can interact with, use this component in conjunction with the [**UI Canvas on Mesh**](/docs/user-guide/components/reference/ui/canvas-on-mesh) component. For more information about, refer to [Placing UI Canvases in the 3D World](/docs/user-guide/interactivity/user-interface/canvases/placing-canvases-3d).
 
-## Provider ##
+## Provider
 
 [LyShine Gem](/docs/user-guide/gems/reference/ui/lyshine)
 
@@ -28,7 +28,7 @@ If you want to place a UI canvas on a 3D mesh that a user can interact with, use
 |-|-|-|-|
 | **Canvas pathname** | Selects the canvas asset to load. | `.uicanvas` | None |
 | **Load automatically** | If enabled, the canvas will automatically load in an enabled state when this component activates.  | Boolean | `Disabled` |
-| **Load in disabled state** | If enabled, the canvas automatically load, but in a disabled state. The canvas must be enabled before it is visible. <br> <br>*This property is available only if **Load automatically** is set to `Enabled`.* | Boolean | `Disabled` |
+| **Load in disabled state** | If enabled, the canvas will automatically load, but in a disabled state. The canvas must be enabled before it is visible. <br> <br>*This property is available only if **Load automatically** is set to `Enabled`.* | Boolean | `Disabled` |
 
 ## UiCanvasRefBus
 

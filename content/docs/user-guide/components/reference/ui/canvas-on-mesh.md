@@ -16,7 +16,7 @@ For simple cases that do not require unique instances of the same `.uicanvas` as
 
 For more information about how to use the UI Canvas on Mesh component, refer to [Placing UI Canvases in the 3D World](/docs/user-guide/interactivity/user-interface/canvases/placing-canvases-3d).
 
-## Provider ##
+## Provider
 
 [LyShine Gem](/docs/user-guide/gems/reference/ui/lyshine/)
 
