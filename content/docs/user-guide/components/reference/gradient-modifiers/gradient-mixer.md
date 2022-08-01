@@ -23,8 +23,8 @@ The **Gradient Mixer** component generates a new gradient by blending a number o
 | **Constrain to Shape** | If `Enabled`, the gradient preview only displays the gradient that lies within the shape of the entity selected in **Pin Preview to Shape**.<br> <br>*This field is available only if an entity is selected in **Pin Preview to Shape**.* | Boolean | `Disabled` |
 | **Layers** | An array of gradients and gradient operations to evaluate.  Gradient operations are applied in the same order as this array. |  |  |
 | **Layers - Enabled** | Toggles the influence of this gradient layer. | Boolean | `Enabled` |
-| **Layers - Operation** | Sets the function that is used to mix this gradient layer with the result of all previous layers. Refer to [gradient mixing operations](#gradient-mixing-operations) below for more information. | `Initialize`, `Multiply`, `Linear Dodge (Add)`, `Subtract`, `Darken (Min)`, `Lighten (Max)`, `Average`, `Normal`, or `Overlay`. | `Initialize` |
-| **Layers - Gradient** | Refer to [Gradient properties](#gradient-properties) below. | | |
+| **Layers - Operation** | Sets the function that is used to mix this gradient layer with the result of all previous layers. Refer to the [gradient mixing operations](#gradient-mixing-operations) section that follows for more information. | `Initialize`, `Multiply`, `Linear Dodge (Add)`, `Subtract`, `Darken (Min)`, `Lighten (Max)`, `Average`, `Normal`, or `Overlay`. | `Initialize` |
+| **Layers - Gradient** | Refer to the [Gradient properties](#gradient-properties) section that follows. | | |
 
 ### Gradient properties
 
