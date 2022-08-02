@@ -74,12 +74,12 @@ To start off, let's edit the vertex shader to render our shader ball at an offse
    Make sure you are opening the `.azsli` file. There is also a `VegetationBending_ForwardPass.azsl` file.
    {{< /note >}}
 1. Find the function `VegetationBending_ForwardPassVS`.
-1. Towards the end of the function, right before `OUT.m_worldPosition = worldPosition.xyz;`, add: 
+1. Towards the end of the function, right before `OUT.m_worldPosition = worldPosition.xyz;`, add the following. This adjusts the object's position in the positive x direction by `5` units.
    
    ```hlsl
    worldPosition.x += 5.0;
    ```
-   This will adjust the position in the positive x direction by `5` units. You may wonder why we are editing `worldPosition` instead of `m_position`; `m_position` is the position of this vertex relative to the origin of the model, whereas `m_worldPosition` is the position of this vertex relative to the origin of the level (or world). Try out editing the other dimensions and `m_position` and `worldPosition` and see what they do!
+   You may wonder why we are editing `worldPosition` instead of `m_position`; `m_position` is the position of this vertex relative to the origin of the model, whereas `worldPosition` is the position of this vertex relative to the origin of the level (or world). Try editing the other dimensions of  `m_position` and `worldPosition` and see what they do!
 1. Make sure the **Editor** is open, if it is not already open.
 1. Save your file with **Ctrl-S** and the **Asset Processor** should automatically detect changes and process the file. You can open the Asset Processor and check when the file is done processing. 
    {{< note >}}
@@ -102,7 +102,8 @@ Let's repeat the above steps for the depth pass:
    worldPosition.x += 5.0;
    ```
 1. Save your file and look at the Editor. The shader ball should now be completely rendered at an offset! 
-   * Note that the shadow is still in the original position. We'll be correcting this later on in the tutorial when we add a custom shadowmap with pixel shader. For brevity, we are not covering the vertex-only shadowmap shader in the tutorial and instead using the StandardPBR one. After finishing this tutorial, see if you can add and adjust the vertex-only shadow (used for opaque materials that don't have alpha-cutout) yourself!
+   
+   Note that the shadow is still in the original position. This is because we are not covering the vertex-only shadowmap shader in the tutorial and instead using the StandardPBR one for brevity. We will be adding a custom shadowmap with pixel shader later on in the tutorial. However, after finishing this tutorial, see if you can add and adjust the vertex-only shadow (used for opaque materials that don't have alpha-cutout) yourself! 
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/fulloffset.png" width="100%" alt="The shader ball in the Editor, after the offset is applied to both forward and depth pass." >}}
 
@@ -137,8 +138,8 @@ For now, we specified in the code to move the ball at an offset of `5` units. Ho
    float m_xOffset;
    float m_yOffset;
    ```
-1. Now, we need to include the properties in the `.materialtype` file. Open `VegetationBending.materialtype`, and take a look at the list of `propertyLayout` > `propertyGroups`. These are all editable properties for a material in the Material Editor. 
-   * If you look at the Material Editor and open a material of type VegetationBending, you can see that the adjustments to the material you can make on the right follow the properties described in all of these `.json` files.
+1. Now, we need to include the properties in the `.materialtype` file. Open `VegetationBending.materialtype`, and look at the `propertyLayout` > `propertyGroups`, which contains a list of JSON files. The JSON files define the material's properties, and listing them here allows the properties to be adjustable in the Material Editor. 
+   If you look at the Material Editor and open a material of type VegetationBending, you can see that the adjustable properties of the material match the properties defined in the JSON files.
 1. Add a property group entry at the top of the list for vegetation bending.
 
    ```
