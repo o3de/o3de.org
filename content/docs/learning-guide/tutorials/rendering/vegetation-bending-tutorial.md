@@ -220,24 +220,29 @@ Congrats! Now you have taken the first step to writing your own custom shaders.
 Now that we've edited our vertex shader, let's take the next step and prepare to add vegetation bending by adding an appropriate model.
 
 ### Add a tree
-In order to test the code that we are about to write, we need an appropriate mesh!
+The next step is to add a model, which we'll add vegetation bending to later. With the model, we can also test the code that we'll write in the later steps. 
 
 1. Open the **Editor** to your project and level. 
-1. In the **Entity Outliner**, **right-click** and select **Create entity**. **Right-click** the new entity in the **Entity Outliner**, and rename the entity to `Tree`.
-1. In the **Entity Inspector**, click **Add Component** and select **Mesh**.
-1. In the mesh component, under **Model Asset**, type `tree.fbx` or click the file button to find `tree.fbx` in your project's `Objects` folder.
-1. Again in the mesh component, click **Add Material Component**, click the file icon next to *Default Material* and select your material that you made earlier (`my_material`).
+1. Create a new entity and rename it to `Tree`. For help, refer to the [Entity and Prefab Basics](/docs/learning-guide/tutorials/entities-and-prefabs/entity-and-prefab-basics/) page.
+1. Add a **Mesh** component to the entity. In the **Entity Inspector**, click **Add Component** and select **Mesh**.
+1. Add the `tree.fbx` model to the entity. In the Mesh component, for the **Model Asset** property, search for and select `tree.fbx`. 
+1. Still in the Mesh component, click **Add Material Component**. 
+
+1. In the added **Material** component, for the **Default Material** property, click {{< icon "file-folder.svg" >}} and select the material  that you made earlier (`my_material`).
 
 We have a tree (at an offset)! This tree is important because it uses vertex colors that we will be using to determine how the tree should bend.
 
-Note on vertex colors: You can use a DCC tool to color the vertices to match the type of bending you want to do on each part of the tree: 
-* Red vertex color: smaller movement with high frequency of random sinusoidal noise.
-* Green vertex color: delays the start of the movement for variations with high frequency of random sinusoidal noise.
-* Blue vertex color: larger movement and bending with low frequency of sinusoidal noise. 
-In the case of our tree, the trunk's vertices are colored blue and leaves are colored red.
+{{< note >}}
+You can color the vertices on each part of the tree by using a digital content creation (DCC) tool. The vertex colors indicate the type of bending as follows:
+* **Red**: Smaller movement with a high frequency of random sinusoidal noise.
+* **Green**: Delays the start of the movement for variations with high frequency of random sinusoidal noise.
+* **Blue**: Larger movement and bending with low frequency of sinusoidal noise. 
+
+In the case of our tree, the trunk's vertices are blue and the leaves are red.
+{{< /note >}}
 
 ### Add a shader option
-Our tree mesh that we just added has colored vertices; however, not every mesh that you want to apply your material type to may have colored vertices. Therefore, we want to add a [*shader option*](/docs/atom-guide/dev-guide/shaders/azsl/#shader-variant-options) that allows the vertex shader to handle both of these cases. We also want to add the reference to the colors so we can use them in the code.
+Our tree mesh already has colored vertices; however, other meshes may not have colored vertices. Adding a _shader option_ allows the vertex shader to handle both of these cases. 
 
 1. Open `VegetationBending_Common.azsli`.
 
@@ -246,7 +251,7 @@ Our tree mesh that we just added has colored vertices; however, not every mesh t
    ```
    option bool o_color_isBound;
    ```
-   We place this variable in the common file because we will be using it in all the passes.
+   We place this variable in the common file so we can use it in all the passes.
    
 1. Open `VegetationBending_ForwardPass.azsli`. Inside `struct VegetationVSInput`, add another field:
 
@@ -260,7 +265,7 @@ Our tree mesh that we just added has colored vertices; however, not every mesh t
    All of the fields are indicated by [HLSL semantics](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-semantics#vertex-shader-semantics). The engine processes the semantics and updates the fields accordingly.
    {{< /note >}}
 
-1. Inside the function `VegetationBending_ForwardPassVS`, encase the offset code with a conditional using the option boolean:
+1. Inside the function `VegetationBending_ForwardPassVS`, encase the offset code with an `if`-condition by using the boolean shader option:
 
    ```
    if (o_color_isBound) {
@@ -271,20 +276,24 @@ Our tree mesh that we just added has colored vertices; however, not every mesh t
 
 1. Repeat steps 3 and 4 with the depth pass in `VegetationBending_DepthPass.azsli`.
 
-1. Save both files and open your level in the **Editor** from the previous steps. You should see that the tree entity is offset, but the shader ball (which doesn't have a vertex color stream) is not!
+1. Save both files and open your level in the **Editor** from the previous steps. 
+
+You should see that the tree entity is offset, but the shader ball is not! That's because the shader ball doesn't have a vertex color stream.
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/optionoffset.png" width="100%" alt="The tree and the shader ball in the Editor, with only the tree offset from adding the shader option." >}}
 
 ### Delete previous offset code
-Now that we have our tree and tested the shader options, let's delete the previous offset code so that we can start fresh with vegetation bending. That is, delete the following:
-* The code added to adjust the position in the vertex shaders of both the forward pass and depth pass
-* The `m_xOffset` and `m_yOffset` variable declarations in the `VegetationBending_Common.azsli` file in the `MaterialSrg`
-* The `xOffset` and `yOffset` properties in the `VegetationBendingPropertyGroup.json` file, but keep the rest of the file and its connection in `VegetationBending.materialtype`; we will need it for later!
+Let's delete the previous offset code so that we can implement vegetation bending. 
 
-Make sure you are keeping the declarations for `m_optional_color` and `o_color_isBound`.
+Delete the following: 
+* The code added to adjust the position in the vertex shaders of both the forward pass and depth pass.
+* The `m_xOffset` and `m_yOffset` variable declarations in the `MaterialSrg`, in the `VegetationBending_Common.azsli` file.
+* The `xOffset` and `yOffset` properties in the `VegetationBendingPropertyGroup.json` file. However,  keep the rest of the file and its connection in `VegetationBending.materialtype`.
+
+Make sure to keep the declarations for `m_optional_color` and `o_color_isBound`.
 
 ### Create materials for the tree
-Let's add some textures to make our tree look more realistic! For the tree, we need 3 materials: one for the trunk, one for the branches, and one for the leaves.
+Let's add some textures to make our tree look more realistic! For the tree, we need 3 materials: for the trunk, the branches, and the leaves.
 
 1. Open the Editor, and then the **Material Editor**.
 
