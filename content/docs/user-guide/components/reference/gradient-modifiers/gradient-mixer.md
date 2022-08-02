@@ -23,7 +23,7 @@ The **Gradient Mixer** component generates a new gradient by blending a number o
 | **Constrain to Shape** | If `Enabled`, the gradient preview only displays the gradient that lies within the shape of the entity selected in **Pin Preview to Shape**.<br> <br>*This field is available only if an entity is selected in **Pin Preview to Shape**.* | Boolean | `Disabled` |
 | **Layers** | An array of gradients and gradient operations to evaluate.  Gradient operations are applied in the same order as this array. |  |  |
 | **Layers - Enabled** | Toggles the influence of this gradient layer. | Boolean | `Enabled` |
-| **Layers - Operation** | Sets the function that is used to mix this gradient layer with the result of all previous layers. Refer to the [gradient mixing operations](#gradient-mixing-operations) section that follows for more information. | `Initialize`, `Multiply`, `Linear Dodge (Add)`, `Subtract`, `Darken (Min)`, `Lighten (Max)`, `Average`, `Normal`, or `Overlay`. | `Initialize` |
+| **Layers - Operation** | Sets the function that is used to mix this gradient layer with the result of all previous layers. Refer to the [Gradient mixing operations](#gradient-mixing-operations) section that follows for more information. | `Initialize`, `Multiply`, `Linear Dodge (Add)`, `Subtract`, `Darken (Min)`, `Lighten (Max)`, `Average`, `Normal`, or `Overlay`. | `Initialize` |
 | **Layers - Gradient** | Refer to the [Gradient properties](#gradient-properties) section that follows. | | |
 
 ### Gradient properties
@@ -41,11 +41,11 @@ The **Gradient Mixer** component generates a new gradient by blending a number o
 | **Scale** | Sets the scale of the input gradient. | Vector3: 0.0001 to Infinity | X:`1.0`, Y:`1.0`, Z:`1.0` |
 | **Rotate** | Sets the rotation of the input gradient. | Vector3: -Infinity to Infinity | X:`0.0`, Y:`0.0`, Z:`0.0` |
 | **Enable Levels** | If `Enabled`, the input and output values of the input gradient may be modified by the following properties. | Boolean | `Disabled` |
-| **Input Mid** | Remaps the midpoint of values greater than `0` and less than `1` in the input gradient. | Float: 0.0 - 1.0 | `1.0` |
+| **Input Mid** | Remaps the midpoint of values greater than `0` and less than `1` in the input gradient. An **Input Mid** value of `0.5` will result in a darker output gradient.  An **Input Mid** value of `2.0` will result in a output lighter gradient.| Float: 0.0 - 10.0 | `1.0` |
 | **Input Min** | Remaps the input gradient so that it lies between **Input Min** and **Input Max**.  All output gradient values less than or equal to **Input Min** are set to `0`. | Float: 0.0 - 1.0 | `0.0` |
-| **Input Max** | Remaps the input gradient so that it lies between **Input Min** and **Input Max**.  All output gradient values less than or equal to **Input Max** are set to `1`. | Float: 0.0 - 1.0 | `1.0` |
-| **Output Min** | Sets a minimum value for the output gradient. | Float: 0.0 - 1.0 | `0.0` |
-| **Output Max** | Sets a maximum value for the output gradient. | Float: 0.0 - 1.0 | `1.0` |
+| **Input Max** | Remaps the input gradient so that it lies between **Input Min** and **Input Max**.  All output gradient values greater than or equal to **Input Max** are set to `1`. | Float: 0.0 - 1.0 | `1.0` |
+| **Output Min** | Sets a minimum value for the output gradient. Remaps the input gradient so that it lies between **Output Min** and **Output Max**. | Float: 0.0 - 1.0 | `0.0` |
+| **Output Max** | Sets a maximum value for the output gradient. Remaps the input gradient so that it lies between **Output Min** and **Output Max**. | Float: 0.0 - 1.0 | `1.0` |
 
 ## Gradient mixing operations
 
