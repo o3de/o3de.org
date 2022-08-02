@@ -52,3 +52,5 @@ You should always add the PhysX Rigid Body component to the top level of an enti
 | **Maximum angular velocity** | Clamps angular velocity to the specified value. This is useful in scenarios where the rigid body rotates at an unrealistically fast angular velocity. | Float: 0.0 to Infinity | `100.0` |
 | **Include non-simulated shapes in Mass** | If enabled, non-simulated shapes are included in the mass, center of mass, and inertia calculations. | Boolean | `Disabled` |
 | **Debug draw COM** | If enabled, the center of mass for this rigid body is displayed. | Boolean | `Disabled` |
+| **Solver Position Iterations** | Number of iterations used when computing the body's position update. Higher values may increase simulation fidelity, but will increase computational cost. | Integer: 1 to 255 | `4` |
+| **Solver Velocity Iterations** | Number of iterations used when computing the body's velocity update. Higher values may increase simulation fidelity, but will increase computational cost.| Integer: 1 to 255 | `1` |
