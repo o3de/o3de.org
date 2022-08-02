@@ -53,11 +53,10 @@ As a high-level overview:
 
 ## Add a material with the VegetationBending material type
 Before we begin editing any files, we want to ensure we can make a material using our material type in the **Editor**.
- 1. Launch the **Editor**, and open the **Material Editor** by pressing **M** on the keyboard or choosing **Tools** > **Material Editor**. Give the **Material Editor** a few seconds to open.
- 1. Create a new material by choosing **File** > **New**. Then in the dropdown under **Select Type**, choose `VegetationBending` and give the material a name, such as `my_material`. Save it somewhere in your project folder, such as in your project's `Materials` folder.
-   {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/materialeditor.png" width="100%" alt="Material added." >}}
- 1. Save your material by hitting **CTRL-S**, and close the **Material Editor**.
- 1. Back in the **Editor**, select the *shader ball* that is already included in the default level. The **Entity Inspector** should now show the properties of the shader ball object. 
+ 1. Launch the Editor, and open the **Material Editor**. For information on how to do this, see the [Material Editor](/docs/atom-guide/look-dev/materials/material-editor) page.
+ 1. Create a new material by choosing **File** > **New**. Then in the **Select Type** drop down, choose **VegetationBending** and give the material a name, such as `my_material`. Choose the file location to be somewhere in your project folder, such as in your project's `Materials` folder.
+ 1. Save your material by hitting **Ctrl-S**. Then, close the Material Editor.
+ 1. Back in the Editor, select the *shader ball* that is already included in the default level. The **Entity Inspector** should now show the properties of the shader ball object. 
  1. In the Entity Inspector, look for the **Mesh** component of the shader ball and click **Add Material Component**.
  1. In the Material component of the shader ball, click the file icon next to *Default Material*. Then, select the VegetationBending material, named `my_material`, that you just created.
 
@@ -84,7 +83,7 @@ To start off, let's edit the vertex shader to render our shader ball at an offse
 1. Make sure the **Editor** is open, if it is not already open.
 1. Save your file with **Ctrl-S** and the **Asset Processor** should automatically detect changes and process the file. You can open the Asset Processor and check when the file is done processing. 
    {{< note >}}
-   If you can't find the **Asset Processor**, navigate to the Windows taskbar at the bottom right, and click on {{< icon "asset-processor.svg" >}}.
+   If you can't find the Asset Processor, navigate to the Windows taskbar at the bottom right, and click on {{< icon "asset-processor.svg" >}}.
    {{< /note >}}
 1. When the Asset Processor is done processing the changes, you should see in the Editor that your material looks different!
 
@@ -102,13 +101,13 @@ Let's repeat the above steps for the depth pass:
    ```
    worldPosition.x += 5.0;
    ```
-1. Save your file and look at the **Editor**. The shader ball should now be completely rendered at an offset! 
+1. Save your file and look at the Editor. The shader ball should now be completely rendered at an offset! 
    * Note that the shadow is still in the original position. We'll be correcting this later on in the tutorial when we add a custom shadowmap with pixel shader. For brevity, we are not covering the vertex-only shadowmap shader in the tutorial and instead using the StandardPBR one. After finishing this tutorial, see if you can add and adjust the vertex-only shadow (used for opaque materials that don't have alpha-cutout) yourself!
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/fulloffset.png" width="100%" alt="The shader ball in the Editor, after the offset is applied to both forward and depth pass." >}}
 
 ### Add material property parameters
-For now, we specified in the code to move the ball at an offset of `5` units. However, we may want an easier way to change the offset in the **Editor**, instead of having to change the code. We can do this with _adjustable properties_ in the **Material Editor**.
+For now, we specified in the code to move the ball at an offset of `5` units. However, we may want an easier way to change the offset in the Editor, instead of having to change the code. We can do this with _adjustable properties_ in the **Material Editor**.
 
 1. Open `{your-project-path}\Materials\Types\MaterialInputs\VegetationBendingPropertyGroup.json` in a text editor.
 1. Under `properties`, notice that the `xOffset` property is already written there for you. Following `xOffset` as a guide, add another property, `yOffset`. Don't forget to add a comma after the brackets surrounding the `xOffset` property, so that the file is valid JSON. The code should end up looking something like this:
@@ -138,8 +137,8 @@ For now, we specified in the code to move the ball at an offset of `5` units. Ho
    float m_xOffset;
    float m_yOffset;
    ```
-1. Now, we need to include the properties in the `.materialtype` file. Open `VegetationBending.materialtype`, and take a look at the list of `propertyLayout` > `propertyGroups`. These are all editable properties for a material in the **Material Editor**. 
-   * If you look at the **Material Editor** and open a material of type VegetationBending, you can see that the adjustments to the material you can make on the right follow the properties described in all of these `.json` files.
+1. Now, we need to include the properties in the `.materialtype` file. Open `VegetationBending.materialtype`, and take a look at the list of `propertyLayout` > `propertyGroups`. These are all editable properties for a material in the Material Editor. 
+   * If you look at the Material Editor and open a material of type VegetationBending, you can see that the adjustments to the material you can make on the right follow the properties described in all of these `.json` files.
 1. Add a property group entry at the top of the list for vegetation bending.
 
    ```
@@ -149,7 +148,7 @@ For now, we specified in the code to move the ball at an offset of `5` units. Ho
    ```
    Alternatively, you can place the properties directly in this `.materialtype` file, without having to import another `.json` file. See **propertyLayout** in the [Material Type File Specification](/docs/atom-guide/look-dev/materials/material-type-file-spec/#propertylayout).
 
-Great, now we have parameters. Now let's use the parameters in the code and view them.
+Great, now we have properties. Now let's use the properties in the code and view them.
 1. Open `{your-project-path}\Materials\Types\VegetationBending_ForwardPass.azsli` in a text editor.
 1. We can reference the x offset parameter by using `MaterialSrg::m_xOffset`. So,  replace `worldPosition.x += 5.0` with the following, and do the same for the y offset: 
 
@@ -230,18 +229,18 @@ Make sure you are keeping the declarations for `m_optional_color` and `o_color_i
 ### Create materials for the tree
 Let's add some textures to make our tree look more realistic! For the tree, we need 3 materials: one for the trunk, one for the branches, and one for the leaves.
 
-1. Open the **Editor**, and then the **Material Editor** by hitting **M**.
+1. Open the Editor, and then the **Material Editor**.
 1. Choose **File** > **New** and, in the pop-up, choose **VegetationBending**, name the material `aspen_leaf.material`, and save it in the same folder you saved your previous material in, such as the `Materials` folder.
 1. On the right side in the **Inspector**, find **Base Color** and click on the file icon next to *Texture*. Choose `aspen_leaf_basecolora.tif`.
    * The suffix `_basecolora` tells the engine to process the texture with a specific [*preset*](/docs/user-guide/assets/texture-settings/texture-presets). Appending a suffix to the name of a texture tells the engine to use the corresponding preset. In this case, we are using the `_basecolora` preset because this texture has the base color in the rgb channels and the opacity in the alpha channel.
 1. Find **Opacity** and, for **Opacity Mode**, select `Cutout`. We need to set this to `Cutout` because the leaf texture has transparent parts.
 1. Under **General Settings**, enable **Double-sided**. This renders both sides of meshes.
 1. Save your leaf material. Now, we need to repeat with the branch and the trunk. Instead of making whole new materials, we can make the leaf material the parent of the branch and trunk materials so the properties stay constant for all 3.
-   1. In the **Asset Browser** of the **Material Editor**, **right-click** `aspen_leaf.material`. Select **Create Child Material...** and save it as `aspen_bark_01.material` in the same folder as `aspen_leaf.material`. Find **Base Color** in the **Inspector** and choose `aspen_bark_01_basecolor.tif`.
-   1. In the **Asset Browser** of the **Material Editor**, **right-click** `aspen_leaf.material`. Select **Create Child Material...** and save it as `aspen_bark_02.material` in the same folder as `aspen_leaf.material`. Find **Base Color** in the **Inspector** and choose `aspen_bark_02_basecolor.tif`.
+   1. In the **Asset Browser** of the Material Editor, **right-click** `aspen_leaf.material`. Select **Create Child Material...** and save it as `aspen_bark_01.material` in the same folder as `aspen_leaf.material`. Find **Base Color** in the **Inspector** and choose `aspen_bark_01_basecolor.tif`.
+   1. In the **Asset Browser** of the Material Editor, **right-click** `aspen_leaf.material`. Select **Create Child Material...** and save it as `aspen_bark_02.material` in the same folder as `aspen_leaf.material`. Find **Base Color** in the **Inspector** and choose `aspen_bark_02_basecolor.tif`.
 
    Notice how the other properties are the same as the leaf's! If you edit the parent material's properties after creating these child materials, it will automatically update the child materials' property values. This will be important later when we adjust the bending properties so all parts of the tree remain in sync while bending.
-1. Save all 3 materials and exit the **Material Editor**. In the **Editor**, click on the tree entity (`Tree`).
+1. Save all 3 materials and exit the Material Editor. In the **Editor**, click on the tree entity (`Tree`).
 1. In the **Entity Inspector** on the right, find the **Material** component. Click the **X** to delete the **Default Material**. Under **Model Materials** > **AM_Aspen_Bark_01**, select `aspen_bark_01.material`. For **AM_Aspen_Bark_02**, select `aspen_bark_02.material`. For **AM_Aspen_Leaf**, select `aspen_leaf.material`.
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/greytree.png" width="100%" alt="Tree added." >}}
@@ -663,7 +662,7 @@ Let's add the motion vector shader and then edit its vertex shader:
 1. Take a look at the pixel shader to see how the motion vector is calculated! There is no need to edit the pixel shader.
 
 Amazing, we have added everything we need to add for motion vectors! However, if you open the **Editor** and just view the tree, you'll see that there is no difference. We can, however, observe that the motion vector pass works by using the **pass tree visualizer**.
-1. Open the **Editor** and press **CTRL-G** to enter gameplay mode.
+1. Open the Editor and press **Ctrl-G** to enter gameplay mode.
 1. Press the **Home** key on your keyboard. This brings up the toolbar at the top.
 1. Select **Atom Tools** > **Pass Viewer**.
 1. In the pop-up **PassTree View**, enable **Preview Attachment** and **Show Pass Attachments**.
