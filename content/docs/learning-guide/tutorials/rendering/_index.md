@@ -2,13 +2,12 @@
 linkTitle: Rendering
 title: Rendering in Open 3D Engine
 description: Open 3D Engine performs rendering using the Atom gem.
-menu_uuid: Rendering
 toc: true
 ---
 
-This section contains tutorials on making custom additions and changes to the Atom renderer. 
+This section contains tutorials on making custom additions and changes to the **Atom Renderer** in **Open 3D Engine (O3DE)**.
 
-Atom Gem is enabled in **Open 3D Engine (O3DE)** by default; for more information, refer to [Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/).
+**Atom Gem** is enabled in O3DE by default. For more information, refer to [Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/).
 
 | Tutorial | Description |
 | - | - |

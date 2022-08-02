@@ -14,30 +14,42 @@ This tutorial covers the following concepts:
 * Adding editable properties for your material type
 * Using optional vertex streams
 * Adding passes to your material type
-* Using the Pass Tree Visualizer to debug passes
+* Using the **Pass Tree Visualizer** to debug passes
 
-The VegetationBending materialtype allows materials to bend and sway, simulating how wind affects vegetation. It allows for detail bending with slight movement of branches and leaves, as well as movement of the entire object. 
+The **VegetationBending** material type allows materials to bend and sway, simulating how wind affects vegetation. It allows for detail bending with slight movement of branches and leaves, as well as movement of the entire object. 
 
-The code in this tutorial can be found in the [AtomTutorials Gem](https://github.com/o3de/sample-code-gems/tree/main/atom_gems/AtomTutorials). There, you can find the template code to use to follow this tutorial, the final code, and the assets we are using.
+The code in this tutorial can be found in the [**Atom Tutorials Gem**](https://github.com/o3de/sample-code-gems/tree/main/atom_gems/AtomTutorials) in the `o3de/samples-code-gems` repository. There, you can find the template code and assets needed for this tutorial, as well as the final code.
 
-As we go along, you may wish to reference the[Material Types and Shaders guide](get-started-materialtypes-and-shaders), which gives higher-level explanations of the mechanisms we are using.
+As we go along, you can reference the [Material Types and Shaders](get-started-materialtypes-and-shaders) tutorial, which gives higher-level explanations of the mechanisms used in this tutorial.
 
 ## Get started
 Before you can create your material type, ensure you have [installed the engine](/docs/welcome-guide/setup/), [set up a project](/docs/welcome-guide/create/), and [launched the editor](/docs/welcome-guide/tours/editor-tour).
 
 Next, perform the following steps to get started on making the vegetation bending material type.
-1. Download or clone the Sample Code Gems repository from [here](https://github.com/o3de/sample-code-gems).
-1. The template files that we will be using for this tutorial are in `atom_gems/AtomTutorials/Templates/VegetationBending`. Move all the files in that folder to `{your-project-path}\Materials\Types\`.
-   * You'll notice that there are a couple key files and file extensions that we need to make our custom material type. More details can be found in [this guide](get-started-materialtypes-and-shaders/#1-set-up-the-files), but this tutorial will explain each file as we go along.
+1. Download or clone the `o3de/sample-code-gems` repository from [GitHub](https://github.com/o3de/sample-code-gems).
+1. The template files for this tutorial are in `atom_gems/AtomTutorials/Templates/VegetationBending/`. Move all of the files to `{your-project-path}\Materials\Types\`.
+   {{< note >}}
+   Notice that there are a couple of significant files and file extensions that you need to make your custom material type. This tutorial will explain each file as you go along. You can also find more details in the [Material Types and Shaders](get-started-materialtypes-and-shaders) tutorial. 
+   {{< /note >}}
 1. Move all the files in `atom_gems/AtomTutorials/Assets/VegetationBending/Objects/` to `{your_project_path}\Objects`. Make the `Objects` folder as needed.
-1. Open `{your-project-path}\Materials\Types\VegetationBending.materialtype`. Under `propertyLayout` > `propertyGroups`, you'll see there are many entries with `{your-path-to-o3de}`. Replace `{your-path-to-o3de}` with your appropriate path to the engine.
-   * For example, `C:/o3de/Gems/Atom/Feature/Common/Assets/Materials/Types/MaterialInputs/BaseColorPropertyGroup.json`.
-   * Currently we cannot import property groups across gems, so we are hard coding the absolute path as a proof of concept, even though it is not portable. There is a GHI to enable importing across gems at [o3de#10623](https://github.com/o3de/o3de/issues/10623).
-1. Run the **Editor**, and the assets should automatically process. At this point, none of them should fail. If `VegetationBending.materialtype` fails to process, check that you used the correct paths in step 4.
+1. Open `{your-project-path}\Materials\Types\VegetationBending.materialtype` in a text editor. 
+1. Under `propertyLayout` > `propertyGroups`, notice that there are many entries with `{your-path-to-o3de}`. Replace `{your-path-to-o3de}` with the appropriate path to your engine.  
+
+   For example, the resulting path might look like: `C:/o3de/Gems/Atom/Feature/Common/Assets/Materials/Types/MaterialInputs/BaseColorPropertyGroup.json`.
+   
+   {{< note >}}
+   Currently, O3DE cannot import property groups across Gems. So, you must hard code the absolute path as a proof of concept, even though hard-coding is not recommended as it restricts portability. 
+   
+   There is a [GitHub issue](https://github.com/o3de/o3de/issues/10623) to enable importing across Gems.
+   {{< /note >}}
+1. Open the **Editor**, and the assets should automatically process. You can check their status in the **Asset Processor**. If `VegetationBending.materialtype` fails to process, check that you used the correct paths in step 5.
 
 These template files were created by duplicating important parts of the `StandardPBR` files and then modifying them. When you create your own material types in the future, you can similalry duplicate `StandardPBR` files and work from there.
 
-As a high-level overview, [`.materialtype`](/docs/atom-guide/dev-guide/materials/materials/#material-types) references the shader files we will use on the material of this material type. The [`.shader`](/docs/atom-guide/look-dev/shaders/shader-file-spec.md) files define which types of shaders, such as vertex and pixel shaders, should be used and references the actual shader code in [`.azsl`](/docs/atom-guide/dev-guide/shaders/azsl/) files. They also specify the `DrawList`, which controls which pass should run that shader. Often, `.azsl` files will include `.azsli` files, which are also written in the Amazon shading language (AZSL), but are separate so multiple `.azsl` files can reuse the shader code from the `.azsli` files. 
+As a high-level overview:
+- The [`.materialtype`](/docs/atom-guide/dev-guide/materials/materials/#material-types) file references the shader files you will use on the material of this material type. 
+- The [`.shader`](/docs/atom-guide/look-dev/shaders/shader-file-spec.md) files define which types of shaders, such as vertex and pixel shaders, should be used, and references the actual shader code in [`.azsl`](/docs/atom-guide/dev-guide/shaders/azsl/) files. They also specify the `DrawList`, which controls which pass should run that shader. 
+- Often, `.azsl` files will include `.azsli` files, which are also written in the Amazon Shading Language (AZSL). These files are separate so multiple `.azsl` files can reuse the shader code from the `.azsli` files. 
 
 ## Add a material with the VegetationBending material type
 Before we begin editing any files, we want to ensure we can make a material using our material type in the **Editor**.
@@ -45,11 +57,11 @@ Before we begin editing any files, we want to ensure we can make a material usin
  1. Create a new material by choosing **File** > **New**. Then in the dropdown under **Select Type**, choose `VegetationBending` and give the material a name, such as `my_material`. Save it somewhere in your project folder, such as in your project's `Materials` folder.
    {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/materialeditor.png" width="100%" alt="Material added." >}}
  1. Save your material by hitting **CTRL-S**, and close the **Material Editor**.
- 1. Back in the **Editor**, click on the *shader ball* that is already included in the default level. 
- 1. In the **[Entity Inspector](/docs/user-guide/editor/entity-inspector)**, look for the **Mesh** component and click **Add Material Component**.
- 1. In the material component, find the file icon next to *Default Material*, click it, and select the VegetationBending material that you just created.
+ 1. Back in the **Editor**, select the *shader ball* that is already included in the default level. The **Entity Inspector** should now show the properties of the shader ball object. 
+ 1. In the Entity Inspector, look for the **Mesh** component of the shader ball and click **Add Material Component**.
+ 1. In the Material component of the shader ball, click the file icon next to *Default Material*. Then, select the VegetationBending material, named `my_material`, that you just created.
 
-{{< image-width src="/images/atom-guide/vegetation-bending-tutorial/material.png" width="100%" alt="Material added." >}}
+{{< image-width src="/images/atom-guide/vegetation-bending-tutorial/material.png" width="100%" alt="Adding a VegetationBending material to an object's Material component in the O3DE Editor." >}}
 
 Great, we just created a material with our custom material type!
 
@@ -58,9 +70,9 @@ Now we are ready to edit our shader to change how the engine renders our materia
 
 ### Render the material at an offset
 To start off, let's edit the vertex shader to render our shader ball at an offset.
-1. Open `{your-project-path}\Materials\Types\VegetationBending_ForwardPass.azsli`. Recall that `.azsli` files contain shader code. This file contains the vertex and pixel shader code for the *forward pass* of the vegetation bending material type.
+1. Open `{your-project-path}\Materials\Types\VegetationBending_ForwardPass.azsli`. Recall that `.azsli` files contain shader code. This file contains the vertex and pixel shader code for the *forward pass* of the VegetationBending material type.
    {{< note >}}
-   There is also a `VegetationBending_ForwardPass.azsl` file. Make sure you are opening the `.azsli` file.
+   Make sure you are opening the `.azsli` file. There is also a `VegetationBending_ForwardPass.azsl` file.
    {{< /note >}}
 1. Find the function `VegetationBending_ForwardPassVS`.
 1. Towards the end of the function, right before `OUT.m_worldPosition = worldPosition.xyz;`, add: 
@@ -70,18 +82,18 @@ To start off, let's edit the vertex shader to render our shader ball at an offse
    ```
    This will adjust the position in the positive x direction by `5` units. You may wonder why we are editing `worldPosition` instead of `m_position`; `m_position` is the position of this vertex relative to the origin of the model, whereas `m_worldPosition` is the position of this vertex relative to the origin of the level (or world). Try out editing the other dimensions and `m_position` and `worldPosition` and see what they do!
 1. Make sure the **Editor** is open, if it is not already open.
-1. Save your file with **CTRL-S** and the **Asset Processor** should automatically detect changes and process the file. You can open the **Asset Processor** and check when the file is done processing. 
+1. Save your file with **Ctrl-S** and the **Asset Processor** should automatically detect changes and process the file. You can open the Asset Processor and check when the file is done processing. 
    {{< note >}}
-   If you can't find the **Asset Processor**, click the arrow on the bottom right of your taskbar, and then click on the icon of two arrows in a circle.
+   If you can't find the **Asset Processor**, navigate to the Windows taskbar at the bottom right, and click on {{< icon "asset-processor.svg" >}}.
    {{< /note >}}
-1. Once the **Asset Processor** is done processing the changes, you should see in the **Editor** that your material looks different!
+1. When the Asset Processor is done processing the changes, you should see in the Editor that your material looks different!
 
-{{< image-width src="/images/atom-guide/vegetation-bending-tutorial/offset.png" width="100%" alt="Forward pass offset." >}}
+{{< image-width src="/images/atom-guide/vegetation-bending-tutorial/offset.png" width="100%" alt="The shader ball in the Editor, with the offset applied to the forward pass." >}}
 
-The main texture of our shader ball seems to be showing up at an offset as we intended, but a grey outline is still at the origin of the object. This is because we only edited the forward pass, but have yet to edit the *depth pass*. All the passes we go through are referenced in `VegetationBending.materialtype`.
-More information about passes can be found [here](/docs/atom-guide/dev-guide/passes/), but keep in mind that different passes render different parts of the material, and some passes' outputs are used as inputs to other passes.
+The main texture of our shader ball shows up at an offset as intended, but a grey outline is still at the origin of the object. This is because we only edited the forward pass, and have yet to edit the *depth pass*. All the passes we go through are referenced in `VegetationBending.materialtype`.
+Keep in mind that different passes render different parts of the material, and some passes' outputs are used as inputs to other passes. You can find more information about passes in the [Passes](/docs/atom-guide/dev-guide/passes/) section.
 
-Let's repeat the above steps but with the depth pass:
+Let's repeat the above steps for the depth pass:
 1. Open `{your-project-path}\Materials\Types\VegetationBending_DepthPass.azsli`.
    * Make sure you are not editing the `VegetationBending_DepthPass_WithPS.azsli` file.
 1. Find the function `DepthPassVS`.
@@ -93,13 +105,13 @@ Let's repeat the above steps but with the depth pass:
 1. Save your file and look at the **Editor**. The shader ball should now be completely rendered at an offset! 
    * Note that the shadow is still in the original position. We'll be correcting this later on in the tutorial when we add a custom shadowmap with pixel shader. For brevity, we are not covering the vertex-only shadowmap shader in the tutorial and instead using the StandardPBR one. After finishing this tutorial, see if you can add and adjust the vertex-only shadow (used for opaque materials that don't have alpha-cutout) yourself!
 
-{{< image-width src="/images/atom-guide/vegetation-bending-tutorial/fulloffset.png" width="100%" alt="Completed offset added." >}}
+{{< image-width src="/images/atom-guide/vegetation-bending-tutorial/fulloffset.png" width="100%" alt="The shader ball in the Editor, after the offset is applied to both forward and depth pass." >}}
 
 ### Add material property parameters
-For now, we have just been moving the ball an offset of `5` units. However, we may want an easy way to change the offset in the **Editor** instead of having to change the code. We can do this with adjustable parameters in the **Material Editor**.
+For now, we specified in the code to move the ball at an offset of `5` units. However, we may want an easier way to change the offset in the **Editor**, instead of having to change the code. We can do this with _adjustable properties_ in the **Material Editor**.
 
-1. Open `{your-project-path}\Materials\Types\MaterialInputs\VegetationBendingPropertyGroup.json`.
-1. Under `properties`, you'll see that there is already a property, `xOffset`, written there for you. Following `xOffset` as a guide, add another property `yOffset`. Don't forget to add a comma after the brackets surrounding the `xOffset` property, so that the file is valid `json`. The code should end up looking something like this:
+1. Open `{your-project-path}\Materials\Types\MaterialInputs\VegetationBendingPropertyGroup.json` in a text editor.
+1. Under `properties`, notice that the `xOffset` property is already written there for you. Following `xOffset` as a guide, add another property, `yOffset`. Don't forget to add a comma after the brackets surrounding the `xOffset` property, so that the file is valid JSON. The code should end up looking something like this:
    
    ``` json
    {
@@ -116,10 +128,11 @@ For now, we have just been moving the ball an offset of `5` units. However, we m
       }
     }
     ```
-1. Open `{your-project-path}\Materials\Types\VegetationBending_Common.azsli`.
-   * This file is included in every pass of the vegetation bending material type. There are many included files to other *shader resource groups* (SRGs) and other functions in this file that are necessary for all passes.
-1. Look for `ShaderResourceGroup MaterialSRG : SRG_PerMaterial`. 
-1. Here, we will define the variables that we reference as the *connection name* in `VegetationBendingPropertyGroup.json`, which should be `m_xOffset` and `m_yOffset`. So, in `MaterialSRG`, add 
+1. Open `{your-project-path}\Materials\Types\VegetationBending_Common.azsli` in a text editor.
+   This file is included in every pass of the VegetationBending material type. It includes many files to other Shader Resource Groups (SRGs) and other functions that are necessary for all passes.
+1. Look for the SRG definition: `ShaderResourceGroup MaterialSRG : SRG_PerMaterial`. Here, we define the variables that we reference as the *connection name* in `VegetationBendingPropertyGroup.json`, which should be `m_xOffset` and `m_yOffset`. 
+
+   So, in `MaterialSRG`, add the following: 
 
    ```
    float m_xOffset;
@@ -127,29 +140,29 @@ For now, we have just been moving the ball an offset of `5` units. However, we m
    ```
 1. Now, we need to include the properties in the `.materialtype` file. Open `VegetationBending.materialtype`, and take a look at the list of `propertyLayout` > `propertyGroups`. These are all editable properties for a material in the **Material Editor**. 
    * If you look at the **Material Editor** and open a material of type VegetationBending, you can see that the adjustments to the material you can make on the right follow the properties described in all of these `.json` files.
-1. Add a property group entry at the top of the list for vegetation bending. Add:
+1. Add a property group entry at the top of the list for vegetation bending.
 
    ```
    {
       "$import": "MaterialInputs/VegetationBendingPropertyGroup.json"
    },
    ```
-   Note that you can also place the `json` properties directly in this `.materialtype` file, without having to import another `.json` file. 
+   Alternatively, you can place the properties directly in this `.materialtype` file, without having to import another `.json` file. See **propertyLayout** in the [Material Type File Specification](/docs/atom-guide/look-dev/materials/material-type-file-spec/#propertylayout).
 
-Great, now we have parameters, but let's actually use the parameters in the code and view them.
-1. Open `{your-project-path}\Materials\Types\VegetationBending_ForwardPass.azsli`. 
-1. We can reference the x offset parameter by using `MaterialSrg::m_xOffset`. So, where you previously put `worldPosition.x += 5.0`, replace it and add the y offset: 
+Great, now we have parameters. Now let's use the parameters in the code and view them.
+1. Open `{your-project-path}\Materials\Types\VegetationBending_ForwardPass.azsli` in a text editor.
+1. We can reference the x offset parameter by using `MaterialSrg::m_xOffset`. So,  replace `worldPosition.x += 5.0` with the following, and do the same for the y offset: 
 
    ```
    worldPosition.x += MaterialSrg::m_xOffset;
    worldPosition.y += MaterialSrg::m_yOffset;
    ```
-   Recall that we added the parameters into the material shader resource group, so that's how we can reference them with MaterialSrg.
-1. Repeat with the depth pass.
-1. Save your files and open the **Material Editor**.
-1. Select the material you made with the VegetationBending material type previously (`my_material`), and find **Vegetation Bending** in the **Inspector** on the right. Adjust the x and y offsets as you see fit!
-1. Save and return to the **Editor**.
-1. Observe how the offset matches your inputs from the **Material Editor**!
+   Recall that we defined the parameters in the material SRG in `VegetationBending_Common.azsli`. That's how we are able to reference them with `MaterialSrg` here.
+1. Repeat step 2 for the depth pass, `VegetationBending_DepthPass.azsli`.
+1. Save your files and open the Material Editor.
+1. Select the VegetationBending material that you made previously, (`my_material`), and find **Vegetation Bending** in the **Inspector** on the right. Adjust the x and y offsets as you see fit!
+1. Save and return to the Editor.
+1. Observe how the offset matches your inputs from the Material Editor!
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/parameteroffset.png" width="100%" alt="Parameter offset added." >}}
 

@@ -75,4 +75,6 @@ Create physics simulations in O3DE with NVIDIA's PhysX system. The tutorials in 
 
 | Tutorial | Description |
 | - | - |
-| [Vegetation Bending Custom Material Type](rendering/vegetation-bending-tutorial) | Use the **Atom Renderer** to create a custom material type with custom vertex shaders for vegetation bending. |
+| [Create a StandardPBR material](rendering/create-standardpbr-material) | This tutorial walks you through creating your first StandardPBR material using the Material Editor. |
+| [Material Types and Shaders](rendering/get-started-materialtypes-and-shaders) | A beginner-level tutorial introducing material types and shaders in Atom. Learn how to create a custom material type with a simple AZSL shader. |
+| [Vertex Deformation for Vegetation Bending Tutorial](rendering/vegetation-bending-tutorial) | Use the **Atom Renderer** to create a custom material type with custom vertex shaders for vegetation bending. |
