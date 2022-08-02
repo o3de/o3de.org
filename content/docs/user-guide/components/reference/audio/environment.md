@@ -11,10 +11,9 @@ The **Audio Environment** component provides access to features of the [Audio Tr
 
 ## Audio Environment Properties
 
-The **Audio Environment** component has the following property:
-
-**Default Environment**
-Enter the name of the audio environment to use by default when setting amounts.
+| Name | Description | Default |
+|------|-------------|---------|
+| Default Environment | Enter the name of the audio environment to use by default when setting amounts. | `<Empty>` |
 
 ## EBus Request Bus Interface
 
