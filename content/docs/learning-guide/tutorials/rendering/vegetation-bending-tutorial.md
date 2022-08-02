@@ -49,9 +49,9 @@ As a high-level overview:
 - The [`.shader`](/docs/atom-guide/look-dev/shaders/shader-file-spec.md) files define which types of shaders, such as vertex and pixel shaders, should be used, and references the actual shader code in [`.azsl`](/docs/atom-guide/dev-guide/shaders/azsl/) files. They also specify the `DrawList`, which controls which pass should run that shader. 
 - Often, `.azsl` files will include `.azsli` files, which are also written in the Amazon Shading Language (AZSL). These files are separate so multiple `.azsl` files can reuse the shader code from the `.azsli` files. 
 
-{{< note > }}
+{{< note >}}
 These template files were created by duplicating important parts of the `StandardPBR` files and then modifying them. When you create your own material types in the future, you can similarly duplicate `StandardPBR` files and work from there.
-{{< /note > }}
+{{< /note >}}
 
 ## Add a material with the VegetationBending material type
 Before we begin editing any files, we want to ensure we can make a material using our material type in the **Editor**.
