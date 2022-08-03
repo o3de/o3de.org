@@ -756,9 +756,9 @@ Amazing, your tree now sways and reacts to wind! Try to place multiple trees and
 {{< video src="/images/learning-guide/tutorials/rendering/vegetation-bending-tutorial/tree3.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Three trees in the Editor, all swaying at a different pace with detail bending." >}}
 
 ### Add motion vectors
-Because your tree is moving, you should add a *motion vector pass* so you can choose to add motion blur or other effects. For example, we have a [Temporal Anti-Aliasing (TAA)](/docs/atom-guide/features/taa.md) feature which uses the motion vectors.
+Since your tree moves, you can add cool effects by using a *motion vector pass*. Motion vectors are used by effects such as motion blur and [Temporal Anti-Aliasing (TAA)](/docs/atom-guide/features/taa.md).
 
-If you take a look at the `MeshMotionVectorVegetationBending.azsl` file, you can see that the vertex shader looks similar to the other vertex shaders you have seen, but there's a new output `OUT.m_worldPosPrev`. This is the position of the vector in the last time frame. The pixel shader uses both the previous vector position and the current one to calculate the motion vector. 
+If you look at the `MeshMotionVectorVegetationBending.azsl` file, the vertex shader looks similar to the other vertex shaders, but there's a new output. `OUT.m_worldPosPrev` is the position of the vector in the previous frame. The pixel shader uses both the previous vector position and the current one to calculate the motion vector. 
 
 However, there isn't a vertex shader input that gives us the previous position. Therefore, in the vertex shader, you will calculate the bending for not only the current time as you have been, but also for the previous time frame.
 
@@ -775,25 +775,27 @@ Let's add the motion vector shader and then edit its vertex shader:
 
 1. Open `MeshMotionVectorVegetationBending.azsl`.
 
-1. Add the call to `ProcessBending`, just as you did in the previous steps with the other shaders. Under the declaration for `float4 prevWorldPosition`, but above `OUT.m_worldPos`, add:
+1. For motion vectors to work, you need to perform bending at the current frame time and the previous frame time.
+ 
+   Under the `float4 prevWorldPosition` declaration, above `OUT.m_worldPos`, add the following:
+
+   1. Call the `ProcessBending` function and pass in the current time and world position. This is similar to the calls you made in the earlier shaders.
+   
+   1. Call `ProcessBending` again, but this time, pass in the previous frame time and previous world position. Use `SceneSrg::m_prevTime` to get the previous frame time.
 
    ```glsl
    float currentTime = SceneSrg::m_time;
    worldPosition = ProcessBending(currentTime, IN.m_position, IN.m_normal, IN.m_optional_color, worldPosition, objectToWorld);
-   ```
-
-1. For motion vectors to work you need to find the previous world position. You will want to perform bending on the vertex at the `IN.m_position` but at the previous frame time, with the previous world position. You can use `SceneSrg::m_prevTime` to get the previous frame time. Call your `ProcessBending` function again, but with the appropriate time and world position:
-
-   ```glsl
-   float currentTime = SceneSrg::m_time;
-   worldPosition = ProcessBending(currentTime, IN.m_position, IN.m_normal, IN.m_optional_color, worldPosition, objectToWorld);
+   
    float prevTime = SceneSrg::m_prevTime;
    prevWorldPosition = ProcessBending(prevTime, IN.m_position, IN.m_normal, IN.m_optional_color, prevWorldPosition, prevObjectToWorld);
    ```
 
 1. Take a look at the pixel shader to see how the motion vector is calculated! There is no need to edit the pixel shader.
 
-Amazing, you have added everything you need to add for motion vectors! However, if you open the **Editor** and just view the tree, you'll see that there is no difference. You can, however, observe that the motion vector pass works by using the **pass tree visualizer**.
+Amazing, you have added everything you need to add for motion vectors! However, if you open the **Editor** and just view the tree, you'll see that there is no difference. To observe that the motion vector pass works, you can use the **Pass Tree Visualizer**.
+#### Debugging with the Pass Tree Visualizer
+
 1. Open the Editor and press **Ctrl-G** to enter gameplay mode.
 
 1. Press the **Home** key on your keyboard. This brings up the toolbar at the top.
@@ -804,14 +806,20 @@ Amazing, you have added everything you need to add for motion vectors! However, 
 
 1. In the **PassTree**, find *MotionVectorPass* > *MeshMotionVectorPass* and select the line with `CameraMotion`. 
 
-1. Ensure you are viewing your tree. You probably won't see much except black on the bottom left preview, because the motion vectors are very small since the tree only moves minimally. 
+1. Ensure you are viewing your tree. 
+   
+   {{< note >}}
+   You may only see black on the bottom left preview, because the motion vectors are small, meaning the tree moves minimally. 
 
-   However, if you move the camera around or translate the tree quickly, you may see some motion vectors pop up. You can also open `MeshMotionVectorVegetationBending.azsl` and scale `OUT.m_motion` in the pixel shader to ensure that the motion vectors' directions are working properly.
+   To better see the motion vectors, you can move the camera around or translate the tree quickly. You can also open `MeshMotionVectorVegetationBending.azsl` and scale `OUT.m_motion` in the pixel shader to ensure that the motion vectors' directions are working properly.
+   {{< /note >}}
 
 This video shows the motion vectors when `OUT.m_motion` is scaled by `10000.0`.
 {{< video src="/images/learning-guide/tutorials/rendering/vegetation-bending-tutorial/motionvectortree.mp4" autoplay="true" loop="true" muted="true" width="100%" info="Three trees in the Editor swaying with detail bending, with the motion vector visualizer on the bottom right indicating the direction of movement." >}}
 
-The pass tree visualizer tool is also helpful with debugging shaders and passes, so you can see the output of certain steps of different passes when you select them in the **PassTree**.
+{{< tip >}}
+The Pass Tree Visualizer tool is also helpful for debugging shaders and passes. It allows you to see the output of certain steps of different passes when you select them in the **PassTree**.
+{{< /tip >}}
 
 ## Download the AtomTutorial Gem sample
 Now that you've completed this tutorial, you can compare your results to our working version of the vegetation bending material type in the **AtomTutorials Gem** in the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). You can either download and place the [final working vegetation bending files](https://github.com/o3de/sample-code-gems/tree/main/atom_gems/AtomTutorials/Assets/VegetationBending) in your project, or you can download the Gem and add it to the engine.
