@@ -232,18 +232,18 @@ You can edit a connection with the steps below.
     
 ## Builders
 
-Placeholder for Builders tab description 
+In the Builders view, the left pane lists all registered builders recognized by the Asset Processor. You can click on the builder in the list to retrieve the builder's information on the right pane.
+
+The right pane shows the type, fingerprint, version number, Universally Unique Identifier (UUID) of the builder in the header. The bottom of the right pane consists three stacked tabs showing patterns, details, and metrics of the builder respectively.
 
 ![Asset Processor UI builders tab](/images/user-guide/assets/asset-processor/interface-builders-patterns.png)
 
-
-
-| Pane | Description |
+| Item Name | Description |
 | - | - |
-| **Builder Information** | placeholder |
-| **Patterns** | placeholder |
-| **Details** | placeholder |
-| **Metrics** | placeholder |
+| **Header** | The builder's type, (analysis) fingerprint, version, Bus ID (builder UUID) is shown in this section. Builder Type can be either Internal or External. Internal builders are created and run inside Asset Processor, while external builders are located within Gems and are run inside an AssetBuilder application. |
+| **Patterns** | All the file patterns that this builder wants to work on. Patterns can be defined by regular expressions (RegEx) or wildcards. If a file matches a pattern of the builder, it will become a source asset tracked by Asset Processor. When such source asset changes, Asset Processor will call the builder's CreateJobs function with this asset as an argument. |
+| **Details** | This tab is currently empty and is reserved to show detailed information about this builder in the future. |
+| **Metrics** | This tab shows the accumulation duration that the builder takes to process all source assets it wants to work on. You can expand the tree to see the composition of the duration. The tabular tree is sortable by name, job count, total duration, or average duration. |
 
 ## Tools
 
