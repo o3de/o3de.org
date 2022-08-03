@@ -5,22 +5,22 @@ description: A tutorial for adding vegetation bending by creating custom a mater
 toc: true
 ---
 
-In this tutorial, we cover how to make your own material type and how to edit vertex shaders to achieve a vegetation bending effect. While we use vegetation bending as an example, the primary goal of this tutorial is to familiarize yourself with how to use and create custom material types and vertex shaders. 
+In this tutorial, you will learn how to make your own material type and how to edit vertex shaders to achieve a vegetation bending effect. While we use vegetation bending as an example, the primary goal of this tutorial is to familiarize yourself with how to use and create custom material types and vertex shaders. 
 
 This tutorial covers the following concepts:
-* Making your own material type
-* Creating materials in the **Material Editor**
-* Editing vertex shaders
-* Adding editable properties for your material type
-* Using optional vertex streams
-* Adding passes to your material type
+* Creating *materials* in the **Material Editor**
+* Creating a custom *material type*
+  * Adding *adjustable properties* for your material type
+  * Adding *passes* to your material type
+* Editing *vertex shaders*
+  * Using *optional vertex streams*
 * Using the **Pass Tree Visualizer** to debug passes
 
 The **VegetationBending** material type allows materials to bend and sway, simulating how wind affects vegetation. It allows for detail bending with slight movement of branches and leaves, as well as movement of the entire object. 
 
 The code in this tutorial can be found in the [**Atom Tutorials Gem**](https://github.com/o3de/sample-code-gems/tree/main/atom_gems/AtomTutorials) in the `o3de/samples-code-gems` repository. There, you can find the template code and assets needed for this tutorial, as well as the final code.
 
-As we go along, you can reference the [Material Types and Shaders](get-started-materialtypes-and-shaders) tutorial, which gives higher-level explanations of the mechanisms used in this tutorial.
+As you go along, you can reference the [Material Types and Shaders](get-started-materialtypes-and-shaders) tutorial, which gives higher-level explanations of the mechanisms used in this tutorial.
 
 ## Get started
 Before you can create your material type, ensure you have [installed the engine](/docs/welcome-guide/setup/), [set up a project](/docs/welcome-guide/create/), and [launched the editor](/docs/welcome-guide/tours/editor-tour).
@@ -60,7 +60,7 @@ These template files were created by duplicating important parts of the `Standar
 {{< /tip >}}
 
 ## Add a material with the VegetationBending material type
-Before we begin editing any files, we want to ensure we can make a material using our material type in the **Editor**.
+Before you begin editing any files, make a material using your material type in the **Editor**.
 
  1. Launch the Editor, and open the **Material Editor**. For information on how to do this, see the [Material Editor](/docs/atom-guide/look-dev/materials/material-editor) page.
 
@@ -76,13 +76,13 @@ Before we begin editing any files, we want to ensure we can make a material usin
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/material.png" width="100%" alt="Adding a VegetationBending material to an object's Material component in the O3DE Editor." >}}
 
-Great, we just created a material with our custom material type!
+Great, you just created a material with your custom material type!
 
 ## Edit the vertex shader
-Now we are ready to edit our shader to change how the engine renders our material type. 
+Now you are ready to edit your shader to change how the engine renders your material type. 
 
 ### Render the material at an offset
-To start off, let's edit the vertex shader to render our shader ball at an offset.
+To start off, you will edit the vertex shader to render a shader ball at an offset.
 1. Open `{your-project-path}\Materials\Types\VegetationBending_ForwardPass.azsli`. Recall that `.azsli` files contain shader code. This file contains the vertex and pixel shader code for the *forward pass* of the VegetationBending material type.
 
    {{< caution >}}
@@ -97,7 +97,7 @@ To start off, let's edit the vertex shader to render our shader ball at an offse
    worldPosition.x += 5.0;
    ```
    {{< tip >}}
-   You may wonder why we are editing `worldPosition` instead of `m_position`; `m_position` is the position of this vertex relative to the origin of the model, whereas `worldPosition` is the position of this vertex relative to the origin of the level (or world). Try editing the other dimensions of  `m_position` and `worldPosition` and see what they do!
+   You may wonder why you are editing `worldPosition` instead of `m_position`; `m_position` is the position of this vertex relative to the origin of the model, whereas `worldPosition` is the position of this vertex relative to the origin of the level (or world). Try editing the other dimensions of  `m_position` and `worldPosition` and see what they do!
    {{< /tip >}}
 
 1. Make sure the **Editor** is open, if it is not already open.
@@ -112,10 +112,10 @@ To start off, let's edit the vertex shader to render our shader ball at an offse
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/offset.png" width="100%" alt="The shader ball in the Editor, with the offset applied to the forward pass." >}}
 
-The main texture of our shader ball shows up at an offset as intended, but a grey outline is still at the origin of the object. This is because we only edited the forward pass, and have yet to edit the *depth pass*. All the passes we go through are referenced in `VegetationBending.materialtype`.
+The main texture of the shader ball shows up at an offset as intended, but a grey outline is still at the origin of the object. This is because you only edited the forward pass, and have yet to edit the *depth pass*. All the passes this material goes through are referenced in `VegetationBending.materialtype`.
 Keep in mind that different passes render different parts of the material, and some passes' outputs are used as inputs to other passes. You can find more information about passes in the [Passes](/docs/atom-guide/dev-guide/passes/) section.
 
-Let's repeat the above steps for the depth pass:
+Repeat the above steps for the depth pass:
 1. Open `VegetationBending_DepthPass.azsli`.
 
    {{< caution >}}
@@ -133,13 +133,13 @@ Let's repeat the above steps for the depth pass:
 1. Save your file and look at the Editor. The shader ball should now be completely rendered at an offset! 
    
    {{< note >}}
-   Note that the shadow is still in the original position. This is because we are not covering the vertex-only shadowmap shader in the tutorial and instead using the StandardPBR one for brevity. We will be adding a custom shadowmap with pixel shader later on in the tutorial. However, after finishing this tutorial, see if you can add and adjust the vertex-only shadow (used for opaque materials that don't have alpha-cutout) yourself! 
+   Note that the shadow is still in the original position. This is because this tutorial doesn't cover the vertex-only shadowmap shader and instead using the StandardPBR one for brevity. You will be adding a custom shadowmap with pixel shader later on in the tutorial. However, after finishing this tutorial, see if you can add and adjust the vertex-only shadow (used for opaque materials that don't have alpha-cutout) yourself! 
    {{< /note >}}
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/fulloffset.png" width="100%" alt="The shader ball in the Editor, after the offset is applied to both forward and depth pass." >}}
 
 ### Add material properties
-For now, we specified in the code to move the ball at an offset of `5` units. However, we may want an easier way to change the offset in the Editor, instead of having to change the code. We can do this with _adjustable properties_ in the **Material Editor**.
+For now, the code specifies to move the ball at an offset of `5` units. However, you may want an easier way to change the offset in the Editor, instead of having to change the code. You can do this with _adjustable properties_ in the **Material Editor**.
 
 1. Open `{your-project-path}\Materials\Types\MaterialInputs\VegetationBendingPropertyGroup.json` in a text editor.
 
@@ -167,7 +167,7 @@ For now, we specified in the code to move the ball at an offset of `5` units. Ho
 
 1. Open `{your-project-path}\Materials\Types\VegetationBending_Common.azsli` in a text editor. This file is included in every pass of the VegetationBending material type. It includes many files to other Shader Resource Groups (SRGs) and other functions that are necessary for all passes.
 
-1. Look for the SRG definition: `ShaderResourceGroup MaterialSRG : SRG_PerMaterial`. Here, we define the variables that we reference as the *connection name* in `VegetationBendingPropertyGroup.json`, which should be `m_xOffset` and `m_yOffset`. 
+1. Look for the SRG definition: `ShaderResourceGroup MaterialSRG : SRG_PerMaterial`. Here, you will define the variables that the *connection name* in `VegetationBendingPropertyGroup.json` references, which should be `m_xOffset` and `m_yOffset`. 
 
    So, in `MaterialSRG`, add the following: 
 
@@ -176,7 +176,7 @@ For now, we specified in the code to move the ball at an offset of `5` units. Ho
    float m_yOffset;
    ```
 
-1. We need to include the properties in the `.materialtype` file. Open `VegetationBending.materialtype`, and look at the `propertyLayout` > `propertyGroups`, which contains a list of JSON files. The JSON files define the material's properties, and listing them here allows the properties to be adjustable in the Material Editor. 
+1. You will need to include the properties in the `.materialtype` file. Open `VegetationBending.materialtype`, and look at the `propertyLayout` > `propertyGroups`, which contains a list of JSON files. The JSON files define the material's properties, and listing them here allows the properties to be adjustable in the Material Editor. 
    If you look at the Material Editor and open a material of type VegetationBending, you can see that the adjustable properties of the material match the properties defined in the JSON files.
 1. Add a property group entry at the top of the list for vegetation bending.
 
@@ -189,17 +189,17 @@ For now, we specified in the code to move the ball at an offset of `5` units. Ho
    Alternatively, you can place the properties directly in this `.materialtype` file, without having to import another `.json` file. See **propertyLayout** in the [Material Type File Specification](/docs/atom-guide/look-dev/materials/material-type-file-spec/#propertylayout).
    {{< /note >}}
 
-Great, now that we have properties, let's use the properties in the code and view them.
+Great, now that you have included the properties, you can use the properties in the code and view them.
 1. Open `VegetationBending_ForwardPass.azsli` in a text editor.
 
-1. We can reference the x offset parameter by using `MaterialSrg::m_xOffset`. So,  replace `worldPosition.x += 5.0` with the following, and do the same for the y offset: 
+1. You can reference the x offset parameter by using `MaterialSrg::m_xOffset`. So,  replace `worldPosition.x += 5.0` with the following, and do the same for the y offset: 
 
    ```
    worldPosition.x += MaterialSrg::m_xOffset;
    worldPosition.y += MaterialSrg::m_yOffset;
    ```
    {{< tip >}}
-   Recall that we defined the properties in the material SRG in `VegetationBending_Common.azsli`. That's how we are able to reference them with `MaterialSrg` here.
+   Recall that you defined the properties in the material SRG in `VegetationBending_Common.azsli`. That's how you can reference them with `MaterialSrg` here.
    {{< /tip >}}
 
 1. Repeat step 2 for the depth pass, `VegetationBending_DepthPass.azsli`.
@@ -217,10 +217,10 @@ Great, now that we have properties, let's use the properties in the code and vie
 Congrats! Now you have taken the first step to writing your own custom shaders.
 
 ## Prepare to add vegetation bending
-Before we dive into writing code for vegetation bending, we will add a tree model and material, introduce a shader option, and add a few more passes.
+Before you dive into writing code for vegetation bending, you will add a tree model and material, introduce an optional vertex stream, and add a few more passes.
 
 ### Add a tree
-The next step is to add a model, which we'll add vegetation bending to later. With the model, we can also test the code that we'll write in the later steps. 
+The next step is to add a model, which you'll add vegetation bending to later. With the model, you can also test the code that you'll write in the later steps. 
 
 1. Open the **Editor** to your project and level. 
 1. Create a new entity and rename it to `Tree`. For help, refer to the [Entity and Prefab Basics](/docs/learning-guide/tutorials/entities-and-prefabs/entity-and-prefab-basics/) page.
@@ -230,7 +230,7 @@ The next step is to add a model, which we'll add vegetation bending to later. Wi
 
 1. In the added **Material** component, for the **Default Material** property, click {{< icon "file-folder.svg" >}} and select the material  that you made earlier (`my_material`).
 
-Now, we have a tree (at an offset)! This tree is important because it uses _vertex colors_ that we will use in the shader code to determine how the tree should bend.
+Now, you have a tree (at an offset)! This tree is important because it uses _vertex colors_ in the _vertex stream_ that you will use in the shader code to determine how the tree should bend. A vertex stream is data stored in the vertex of a model, and a vertex color is the color stored in that vertex. 
 
 {{< note >}}
 You can color the vertices on each part of the tree by using a digital content creation (DCC) tool. The vertex colors indicate the type of bending as follows:
@@ -238,18 +238,17 @@ You can color the vertices on each part of the tree by using a digital content c
 * **Green**: Delays the start of the movement for variations with high frequency of random sinusoidal noise.
 * **Blue**: Larger movement and bending with low frequency of sinusoidal noise. 
 
-In the case of our tree, the trunk's vertices are blue and the leaves are red.
+In the case of the tree model, the trunk's vertices are blue and the leaves are red.
 {{< /note >}}
 
-### Add a shader option
-Our tree mesh already has colored vertices; however, other meshes may not have colored vertices. Adding a _shader option_ allows the vertex shader to handle both of these cases. 
+### Use an optional vertex stream
+You will add a shader input that takes the vertex stream so you can use the colors to do the appropriate bending. The tree mesh already has colored vertices; however, other meshes may not have colored vertices. Adding a _shader option_ allows the vertex shader to handle both of these cases.
 
-1. In the `VegetationBending_Common.azsli` file, at the bottom, define a boolean shader option:
+1. In the `VegetationBending_Common.azsli` file, at the bottom, define a boolean shader option. You can place this variable in the common file so you can use it in all the passes.
 
    ```
    option bool o_color_isBound;
    ```
-   We place this variable in the common file so we can use it in all the passes.
    
 1. In the `VegetationBending_ForwardPass.azsli` file, inside `struct VegetationVSInput`, add the following field. 
 
@@ -258,7 +257,7 @@ Our tree mesh already has colored vertices; however, other meshes may not have c
    ```
 
    {{< note >}}
-   For a mesh with colored vertices, `m_optional_color` gets set at runtime, if it's available. Then, a soft name convention sets `o_color_isBound` to `true`, which we can use to determine if we want to perform the bending or not. This soft name convention is a very specific sub-feature of shader options that are set based on the presence or absence of an optional vertex stream, as opposed to shader options set based on material properties.
+   For a mesh with colored vertices, `m_optional_color` gets set at runtime, if it's available. Then, a soft name convention sets `o_color_isBound` to `true`, which you can use to determine if the material should perform the bending or not. This soft name convention is a very specific sub-feature of shader options that are set based on the presence or absence of an optional vertex stream, as opposed to shader options set based on material properties.
    
    All of the fields are indicated by [HLSL semantics](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-semantics#vertex-shader-semantics). The engine processes the semantics and updates the fields accordingly.
    {{< /note >}}
@@ -281,7 +280,7 @@ You should see that the tree entity is offset, but the shader ball is not! That'
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/optionoffset.png" width="100%" alt="The tree and the shader ball in the Editor, with only the tree offset from adding the shader option." >}}
 
 ### Delete previous offset code
-Let's delete the previous offset code so that we can implement vegetation bending. 
+Delete the previous offset code so that you can implement vegetation bending. 
 
 Delete the following: 
 * The code added to adjust the position in the vertex shaders of both the forward pass and depth pass.
@@ -291,7 +290,7 @@ Delete the following:
 Make sure to keep the declarations for `m_optional_color` and `o_color_isBound`.
 
 ### Create materials for the tree
-Let's add some textures to make our tree look more realistic! For the tree, we need 3 materials: for the trunk, the branches, and the leaves.
+Add some textures to make your tree look more realistic! For the tree, you need 3 materials: for the trunk, the branches, and the leaves.
 
 1. Open the Editor, and then the **Material Editor**.
 
@@ -300,10 +299,10 @@ Let's add some textures to make our tree look more realistic! For the tree, we n
 1. Set the base color texture of the material. In the **Inspector**, under the **Base Color** > **Texture** property, click {{< icon "file-folder.svg" >}} and choose `aspen_leaf_basecolora.tif`.
 
    {{< note >}}
-   The suffix `_basecolora` tells the engine to process the texture with a specific [*preset*](/docs/user-guide/assets/texture-settings/texture-presets). Appending a suffix to the name of a texture tells the engine to use the corresponding preset. In this case, we are using the `_basecolora` preset because this texture has the base color in the rgb channels and the opacity in the alpha channel.
+   The suffix `_basecolora` tells the engine to process the texture with a specific [*preset*](/docs/user-guide/assets/texture-settings/texture-presets). Appending a suffix to the name of a texture tells the engine to use the corresponding preset. In this case, you'll use the `_basecolora` preset because this texture has the base color in the rgb channels and the opacity in the alpha channel.
    {{< /note >}}
 
-1. Set the opacity mode. For the **Opacity** > **Opacity Mode** property, select `Cutout`. We need to set this to `Cutout` because the leaf texture has transparent parts.
+1. Set the opacity mode. For the **Opacity** > **Opacity Mode** property, select `Cutout`. You need to set this to `Cutout` because the leaf texture has transparent parts.
 
 1. Under **General Settings**, enable **Double-sided**. This renders both sides of the material.
 
@@ -314,30 +313,30 @@ Let's add some textures to make our tree look more realistic! For the tree, we n
    1. Repeat the above step for `aspen_bark_02.material`. Make it a child of `aspen_leaf.material` and set **Base Color** as `aspen_bark_02_basecolor.tif`.
 
    {{< note >}}
-   Notice how the other properties are the same as the leaf's! If you edit the parent material's properties after creating these child materials, it will automatically update the child materials' property values. This will be important later when we adjust the bending properties so all parts of the tree remain in sync while bending.
+   Notice how the other properties are the same as the leaf's! If you edit the parent material's properties after creating these child materials, it will automatically update the child materials' property values. This will be important later when you adjust the bending properties so all parts of the tree remain in sync while bending.
    {{< /note >}}
 
 1. Save all 3 materials and exit the Material Editor. In the **Editor**, select the tree entity (`Tree`).
 
-1. Add the materials we just made to the Material component. In the **Entity Inspector**, find the **Material** component. Click the **X** to delete the **Default Material**. For the **Model Materials** property, map the following materials:
+1. Add the materials you just made to the Material component. In the **Entity Inspector**, find the **Material** component. Click the **X** to delete the **Default Material**. For the **Model Materials** property, map the following materials:
    * **AM_Aspen_Bark_01**: `aspen_bark_01.material`
    * **AM_Aspen_Bark_02**: `aspen_bark_02.material`
    * **AM_Aspen_Leaf**: `aspen_leaf.material`
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/greytree.png" width="100%" alt="The tree in the Editor with new materials but with grey areas." >}}
 
-Great, the tree looks better! However, notice that there are still grey areas around the leaves -- look familiar? Recall that there was a grey area when we edited the forward pass, but not the depth pass. We need to add more passes! 
+Great, the tree looks better! However, notice that there are still grey areas around the leaves -- look familiar? Recall that there was a grey area when you edited the forward pass, but not the depth pass. You will need to add more passes! 
 
 ### Add depth pass and shadowmap pass with pixel shaders
-The depth pass that we use right now is for opaque objects. It doesn't use a pixel shader, so the depth pass doesn't know which pixels are supposed to be transparent, even though we already specified that our materials have `Cutout` opacity. So, we need to use a depth pass with a pixel shader (PS)! We also need a shadowmap pass with a pixel shader for the tree's shadow to appear correctly as well.
+The depth pass that you use right now is for opaque objects. It doesn't use a pixel shader, so the depth pass doesn't know which pixels are supposed to be transparent, even though you already specified that the materials have `Cutout` opacity. So, you will need to use a depth pass with a pixel shader (PS)! You will also need a shadowmap pass with a pixel shader for the tree's shadow to appear correctly as well.
 
-1. There were also template files included for `DepthPass_WithPS` and `Shadowmap_WithPS`. These files don't need to be edited for now, but we need to add connections to them to ensure our material type will use these ones. They already include the shader option we just added.
+1. There were also template files included for `DepthPass_WithPS` and `Shadowmap_WithPS`. These files don't need to be edited for now, but you need to add connections to them to ensure your material type will use these shaders. They already include the vertex color input you just added.
 
 1. Open `VegetationBending.materialtype`.
 
-1. Find `shaders`, a list of the `.shader` files that our material type can use. Notice that each shader file is referenced with a tag. The tag allows us to reference the shader easily.
+1. Find `shaders`, a list of the `.shader` files that your material type can use. Notice that each shader file is referenced with a tag. The tag allows us to reference the shader easily.
 
-1. Under the shader with `"tag": "Shadowmap"`,  add a new entry for our shadowmap with PS:
+1. Under the shader with `"tag": "Shadowmap"`,  add a new entry for the shadowmap with PS:
 
    ```json
    {
@@ -346,7 +345,7 @@ The depth pass that we use right now is for opaque objects. It doesn't use a pix
    },
    ```
 
-1. Similarly, under the shader with `"tag": "DepthPass"`,  add a new entry for our depth map with PS:
+1. Similarly, under the shader with `"tag": "DepthPass"`,  add a new entry for the depth map with PS:
 
    ```json
    {
@@ -357,7 +356,7 @@ The depth pass that we use right now is for opaque objects. It doesn't use a pix
 
 1. Save the file.
    
-We've added the appropriate shaders to the list of shaders for our material type. However, you may notice that just adding to the list of shaders doesn't change our tree. We need to give the engine instructions for which shader to use for different materials. This is where `.lua` material functors come in. 
+You've added the appropriate shaders to the list of shaders for your material type. However, you may notice that just adding to the list of shaders doesn't change the tree. You will need to give the engine instructions for which shader to use for different materials. This is where `.lua` material functors come in. 
 
 1. Open `VegetationBending_ShaderEnable.lua`.
 
@@ -383,12 +382,12 @@ We've added the appropriate shaders to the list of shaders for our material type
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/treeallpasses.png" width="100%" alt="The tree properly rendered in the Editor with all appropriate passes added." >}}
 
 ## Add vegetation bending
-Great, now we can start adding the code for vegetation bending! We first need to set up the wind constants. Then, we will determine the detail bending, which is the slight movement that you generally see in leaves and at the end of branches. Finally, we will add main bending, which is the overall swaying of the tree.
+Great, now you can start adding the code for vegetation bending! You first need to set up the wind constants. Then, you will determine the detail bending, which is the slight movement that you generally see in leaves and at the end of branches. Finally, you will add main bending, which is the overall swaying of the tree.
 
 Note that the following bending functions are derived from [Vegetation Procedural Animation and Shading in Crysis](https://developer.nvidia.com/gpugems/gpugems3/part-iii-rendering/chapter-16-vegetation-procedural-animation-and-shading-crysis) in GPU Gems 3.
 
 ### Add vegetation bending properties
-We need several properties to determine how we want our materials to bend:
+You need several properties to determine how the materials should bend:
 * `DetailBendingFrequency` - The frequency of the detail bending.
 * `DetailBendingLeafAmplitude` - The amplitude in which leaves can bend.
 * `DetailBendingBranchAmplitude` - The amplitude in which branches can bend.
@@ -401,7 +400,7 @@ The `DetailBending`- properties are specifically used for detail bending, while 
 
 1. Open `VegetationBendingPropertyGroup.json`.
 
-1. Delete the `xOffset` and `yOffset` properties that we added previously, if you haven't already. Add these seven:
+1. Delete the `xOffset` and `yOffset` properties that you added previously, if you haven't already. Add these seven:
 
    ```json
    {
@@ -521,12 +520,12 @@ The `DetailBending`- properties are specifically used for detail bending, while 
 
 1. Open the **Editor**, then open the **Material Editor**, and choose to edit the leaf material (`aspen_leaf.material`). Make sure you select the leaf material because that is the parent material of the other parts of the tree.
 
-1. On the right, scroll down to **Vegetation Bending** and ensure that the 6 properties we just added are there.
+1. On the right, scroll down to **Vegetation Bending** and ensure that the 6 properties you just added are there.
 
 1. Adjust the properties! Make sure you adjust all of them so that you can see bending in the later steps.
 
 ### Add process bending function
-First, let's add a function that our multiple vertex shaders can call to avoid repeat code. We will be writing more functions for different parts of the bending and calling them all from this function. 
+First, let's add a function that your multiple vertex shaders can call to avoid repeat code. You will be writing more functions for different parts of the bending and calling them all from this function. 
 1. Open `VegetationBending_Common.azsli`.
 
 1. At the bottom, add a function to return the world position of the vertex after applying bending. The parameters given to this function are all helpful for determining bending.
@@ -537,17 +536,17 @@ First, let's add a function that our multiple vertex shaders can call to avoid r
       float4 adjustedWorldPosition = float4(worldPosition);
       if (o_color_isBound) 
       {
-         // We will add function calls here.
+         // You will add function calls here.
       }
       return adjustedWorldPosition;
    }
    ```
 
    {{< note >}}
-   Notice how, like before, we are using a conditional with `o_color_isBound` to ensure that we only perform bending on proper meshes.
+   Notice how, like before, you are using a conditional with `o_color_isBound` to ensure that only meshes with vertex streams perform bending.
    {{< /note >}}
 
-1. Call the `ProcessBending` function in our vertex shaders. Open `VegetationBending_ForwardPass.azsli` and find the vertex shader (`VegetationBending_ForwardPassVS`). Add a call to our function above `OUT.m_worldPosition = worldPosition.xyz`. Most of the parameters to pass in are inputs to our vertex shader or values we have calculated already, and we can get the time from the property `m_time` the *scene shader resource group* (`SceneSrg`), which gives us the number of seconds since the start of the application.
+1. Call the `ProcessBending` function in your vertex shaders. Open `VegetationBending_ForwardPass.azsli` and find the vertex shader (`VegetationBending_ForwardPassVS`). Add a call to your function above `OUT.m_worldPosition = worldPosition.xyz`. Most of the parameters to pass in are inputs to your vertex shader or values you have calculated already, and you can get the time from the property `m_time` the *scene shader resource group* (`SceneSrg`), which gives us the number of seconds since the start of the application.
    
    ```hlsl
    float currentTime = SceneSrg::m_time;
@@ -559,7 +558,7 @@ First, let's add a function that our multiple vertex shaders can call to avoid r
    return OUT;
    ``` 
    {{< note >}}
-   We need the code to be above the two `OUT` lines because we will edit `worldPosition` and then will need to adjust the `OUT` variables accordingly.
+   The code needs to be above the two `OUT` lines because you will edit `worldPosition`, which adjusts the `OUT` variables accordingly.
    {{< /note >}}
   
 1. Repeat steps 2-3 with the depth pass in `VegetationBending_DepthPass.azsli` and the depth pass with PS in `VegetationBending_DepthPass_WithPS.azsli`.
@@ -575,7 +574,7 @@ Let's begin editing the code to add wind.
 
 1. At the bottom, add a function to calculate the amplitude, frequency, and phase of the wind according to the time and world position of the vertex. The wind's phase uses the `worldPosition` to mimic how wind affects nearby objects similarly, but faraway objects differently. This is because in real life, faraway objects may not be affected by the same breeze. 
 
-  Later, we'll use this function to calculate the appropriate movement of the vertex.
+  Later, you'll use this function to calculate the appropriate movement of the vertex.
 
    ```hlsl
    float4 SetUpWindBending(float currentTime, float4 worldPosition) 
@@ -606,7 +605,7 @@ Let's begin editing the code to add wind.
    The choice is content specific, with the redundant GPU cost increasing as vertex density increases. The choice also depends on if the GPU is the bottleneck, if the vertex shader is the bottleneck, and if the vertex shader is bandwidth bound or arithmetic logic unit (ALU) bound. 
    {{< /note >}}
 
-1. Call the function in our `ProcessBending` function. Inside the conditional, add a call to our wind function:
+1. Call the function in your `ProcessBending` function. Inside the conditional, add a call to your wind function:
    
    ```hlsl
    if (o_color_isBound) 
@@ -618,10 +617,10 @@ Let's begin editing the code to add wind.
    return adjustedWorldPosition;
    ```
 
-Great, now we have our wind bending function set up! Note that this doesn't enact any changes on our tree just yet, and the tree should be rendered as normal.
+Great, now you have your wind bending function set up! Note that this doesn't enact any changes on the tree just yet, and the tree should be rendered as normal.
 
 ### Add detail bending
-Using the wind bending constants that we just calculated, we can now determine the bending of the leaves.
+Using the wind bending constants that you just calculated, you can now determine the bending of the leaves.
 
 1. Open `VegetationBending_Common.azsli`.
 
@@ -656,7 +655,7 @@ Using the wind bending constants that we just calculated, we can now determine t
    }
    ```
 
-1. Call the detail bending function in our `ProcessBending` function. Inside the conditional, add the call:
+1. Call the detail bending function in your `ProcessBending` function. Inside the conditional, add the call:
    
    ```hlsl
    if (o_color_isBound) 
@@ -675,7 +674,7 @@ Using the wind bending constants that we just calculated, we can now determine t
    The `currentBending.w` parameter that's passed into the `DetailBending` function controls the overall bending length according to the wind's strength and direction. 
    {{< /note >}}
 
-1. We need to set the actual vertex shader outputs to use the output from the detail bending function. Set the world position so the code following the conditional can update the positions correctly. 
+1. You will need to set the actual vertex shader outputs to use the output from the detail bending function. Set the world position so the code following the conditional can update the positions correctly. 
    
    ```hlsl
    if (o_color_isBound) 
@@ -696,11 +695,11 @@ Using the wind bending constants that we just calculated, we can now determine t
 {{< video src="/images/atom-guide/vegetation-bending-tutorial/detailbendingtree.mp4" autoplay="true" loop="true" width="100%" muted="true" info="The tree in the Editor with detail bending applied, moving the leaves slightly." >}}
 
 ### Add main bending
-The leaves are moving now, but the tree doesn't sway yet. We will now add main bending, the overall sway and movement that the whole tree experiences.
+The leaves are moving now, but the tree doesn't sway yet. You will now add main bending, the overall sway and movement that the whole tree experiences.
 
 1. Open `VegetationBending_Common.azsli`.
 
-1. At the bottom, add a function to make the tree sway. Using the current position of the vertex (after it has been changed from the detail bending) and the bending determined by the wind, we can bend the tree as a whole.
+1. At the bottom, add a function to make the tree sway. Using the current position of the vertex (after it has been changed from the detail bending) and the bending determined by the wind, you can bend the tree as a whole.
    
    ```hlsl
    float3 MainBending(float3 objectSpacePosition, float4 bending)
@@ -723,7 +722,7 @@ The leaves are moving now, but the tree doesn't sway yet. We will now add main b
    }
    ```
 
-1. Add a call to our detail bending function under the wind function call in our `ProcessBending` function:
+1. Add a call to your detail bending function under the wind function call in your `ProcessBending` function:
    
    ```hlsl
    if (o_color_isBound)
@@ -742,16 +741,16 @@ The leaves are moving now, but the tree doesn't sway yet. We will now add main b
 
 1. Open the **Editor** and you should see your tree swaying with the leaves still bending. If you don't, try opening the **Material Editor** and increasing the wind properties.
 
-Amazing, our tree now sways and reacts to wind! Try to place multiple trees and observe how the trees sway differently when close together versus farther away. Also, add some lighting to make the trees pop!
+Amazing, your tree now sways and reacts to wind! Try to place multiple trees and observe how the trees sway differently when close together versus farther away. Also, add some lighting to make the trees pop!
 
 {{< video src="/images/atom-guide/vegetation-bending-tutorial/tree3.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Three trees in the Editor, all swaying at a different pace with detail bending." >}}
 
 ### Add motion vectors
-Because our tree is moving, we should add a *motion vector pass* so we can choose to add motion blur or other effects. For example, we have a [Temporal Anti-Aliasing (TAA)](/docs/atom-guide/features/taa.md) feature which uses the motion vectors.
+Because your tree is moving, you should add a *motion vector pass* so you can choose to add motion blur or other effects. For example, we have a [Temporal Anti-Aliasing (TAA)](/docs/atom-guide/features/taa.md) feature which uses the motion vectors.
 
-If you take a look at the `MeshMotionVectorVegetationBending.azsl` file, you can see that the vertex shader looks similar to the other vertex shaders we have seen, but there's a new output `OUT.m_worldPosPrev`. This is the position of the vector in the last time frame. The pixel shader uses both the previous vector position and the current one to calculate the motion vector. 
+If you take a look at the `MeshMotionVectorVegetationBending.azsl` file, you can see that the vertex shader looks similar to the other vertex shaders you have seen, but there's a new output `OUT.m_worldPosPrev`. This is the position of the vector in the last time frame. The pixel shader uses both the previous vector position and the current one to calculate the motion vector. 
 
-However, we don't have a vertex shader input that gives us the previous position. Therefore, in the vertex shader, we want to calculate the bending for not only the current time as we have been, but also for the previous time frame.
+However, there isn't a vertex shader input that gives us the previous position. Therefore, in the vertex shader, you will calculate the bending for not only the current time as you have been, but also for the previous time frame.
 
 Let's add the motion vector shader and then edit its vertex shader:
 
@@ -766,14 +765,14 @@ Let's add the motion vector shader and then edit its vertex shader:
 
 1. Open `MeshMotionVectorVegetationBending.azsl`.
 
-1. Add the call to `ProcessBending`, just as we did in the previous steps with the other shaders. Under the declaration for `float4 prevWorldPosition`, but above `OUT.m_worldPos`, add:
+1. Add the call to `ProcessBending`, just as you did in the previous steps with the other shaders. Under the declaration for `float4 prevWorldPosition`, but above `OUT.m_worldPos`, add:
 
    ```hlsl
    float currentTime = SceneSrg::m_time;
    worldPosition = ProcessBending(currentTime, IN.m_position, IN.m_normal, IN.m_optional_color, worldPosition, objectToWorld);
    ```
 
-1. For our motion vectors to work we need to find the previous world position. We want to perform bending on the vertex at the `IN.m_position` but at the previous frame time, with the previous world position. We can use `SceneSrg::m_prevTime` to get the previous frame time. Call our `ProcessBending` function again, but with the appropriate time and world position:
+1. For motion vectors to work you need to find the previous world position. You will want to perform bending on the vertex at the `IN.m_position` but at the previous frame time, with the previous world position. You can use `SceneSrg::m_prevTime` to get the previous frame time. Call your `ProcessBending` function again, but with the appropriate time and world position:
 
    ```hlsl
    float currentTime = SceneSrg::m_time;
@@ -784,7 +783,7 @@ Let's add the motion vector shader and then edit its vertex shader:
 
 1. Take a look at the pixel shader to see how the motion vector is calculated! There is no need to edit the pixel shader.
 
-Amazing, we have added everything we need to add for motion vectors! However, if you open the **Editor** and just view the tree, you'll see that there is no difference. We can, however, observe that the motion vector pass works by using the **pass tree visualizer**.
+Amazing, you have added everything you need to add for motion vectors! However, if you open the **Editor** and just view the tree, you'll see that there is no difference. You can, however, observe that the motion vector pass works by using the **pass tree visualizer**.
 1. Open the Editor and press **Ctrl-G** to enter gameplay mode.
 
 1. Press the **Home** key on your keyboard. This brings up the toolbar at the top.
@@ -795,7 +794,7 @@ Amazing, we have added everything we need to add for motion vectors! However, if
 
 1. In the **PassTree**, find *MotionVectorPass* > *MeshMotionVectorPass* and select the line with `CameraMotion`. 
 
-1. Ensure you are viewing your tree. You probably won't see much except black on the bottom left preview, because the motion vectors are very small since our tree only moves minimally. 
+1. Ensure you are viewing your tree. You probably won't see much except black on the bottom left preview, because the motion vectors are very small since the tree only moves minimally. 
 
    However, if you move the camera around or translate the tree quickly, you may see some motion vectors pop up. You can also open `MeshMotionVectorVegetationBending.azsl` and scale `OUT.m_motion` in the pixel shader to ensure that the motion vectors' directions are working properly.
 
