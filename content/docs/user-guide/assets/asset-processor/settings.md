@@ -20,7 +20,7 @@ When manually launching Asset Processor or Asset Processor Batch you can set the
 |--------------------|---------------------------------------------------------------------|-------------------------------------------------------------|
 | project-name       | Name of the current project.                                        | The project name associated with the passed `project-path`. |
 | project-cache-path | Full path to the project cache folder.                              | The cache path associated with the passed `project-path`.   |
-| project-path       | Supplies the path to the project that the AP should use (required). |                                                             |                                  
+| project-path       | Supplies the path to the project that the Asset Processor should use (required). |                                                             |
 | engine-path        | Supplies the engine path to the engine.                             | The engine path associated with the passed `project-path`.  |
 
 
