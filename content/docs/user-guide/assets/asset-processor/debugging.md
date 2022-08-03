@@ -10,10 +10,10 @@ If you are having issues with **Asset Processor**, this page covers common probl
 
 Some of the most common problems we've seen with Asset Processor include:
 
-* After changing a source asset, it takes too long for assets to finish processing.
-* The product assets don't behave like expected. They may be missing entirely, missing information, have incorrect information.
+* Asset processing takes too long after changes are made to a source asset.
+* The product assets don't behave like expected. They may have incorrect information, be missing information, or be missing entirely.
 * Unexpected warnings or errors.
-* Asset packaging isn't working as expected, content is missing or content is being included in bundles that was not expected to be there.
+* Asset packaging isn't working as expected. Content is missing or content is being included in bundles that was not expected to be there.
 * Different members of a team getting different results from asset processing, impacting the ability for the team to cooperate.
 
 ## Non-deterministic product assets
@@ -347,7 +347,7 @@ You must start Asset Processor before you can enter a `-debug` command.
 
 1. In a terminal, navigate to `<build>/bin/<config>/`.
 
-1. Enter the command below to get a list of possible options.
+1. Enter the command below to get a list of possible options. See [Asset Builder Settings](/docs/user-guide/assets/pipeline/asset-builders#Settings) for further information.
 
    ```cmd
    AssetBuilder.exe -help
