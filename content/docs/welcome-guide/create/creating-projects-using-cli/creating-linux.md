@@ -15,15 +15,6 @@ The following instructions assume that you have:
 * Set up O3DE on your computer. For help, refer to [Set up Open 3D Engine](/docs/welcome-guide/setup).
 * Registered the O3DE engine in the O3DE manifest. If you set up O3DE from GitHub, you must manually register the engine. For help, refer to [Register the engine](/docs/welcome-guide/setup/setup-from-github/building-linux/#register-the-engine).
 
-This tutorial uses the following project name and directories in the examples. Depending on how you set up O3DE, you might not have all of these directories, or you might have used different directory names.
-
-| Directory | Description |
-| --- | --- |
-| `o3de` | O3DE engine source. |
-| `o3de-install` | Installed O3DE engine, containing pre-built SDK engine binaries. |
-| `o3de-projects/MyProject` | New project name and location. |
-| `o3de-packages` | Package directory, created earlier during [setup](/docs/welcome-guide/setup/setup-from-github/building-linux/#build-the-engine). |
-
 ## Create a new O3DE project
 
 To start a project based on the standard template, complete the following steps.
@@ -42,10 +33,10 @@ To start a project based on the standard template, complete the following steps.
         cd $HOME/o3de-install
         ```
 
-1. To create a new external project, use the `o3de` script in the `scripts` subdirectory. The `create-project` command, used with the `project-path` and no other options, creates a new project using the **standard** template (the default project template).
+1. To create a new project, use the `o3de` script in the `scripts` subdirectory with the `create-project` command. Supply an absolute or relative path to the directory where you want to create your new project using the `--project-path` argument. The last component of the path will become the project name, unless you override it with the `--project-name` argument. The script will create a new project using the **standard** template (the default project template).
 
     ```shell
-    scripts/o3de.sh create-project --project-path $HOME/o3de-projects/MyProject
+    scripts/o3de.sh create-project --project-path $HOME/O3DE/Projects/MyProject
     ```
 
     When creating a project, this command also makes two important registrations:
@@ -60,11 +51,11 @@ To start a project based on the standard template, complete the following steps.
 If you change the engine's registered name, or wish to use a different engine with the project, you will need to update this manifest entry.
         {{< /note >}}
 
-    * It registers the project in the O3DE manifest, adding it to the list of known projects, and making **Project Manager** aware of your project. The O3DE manifest is located in `$HOME/.o3de/o3de_manifest.json`. The registration for a project located in `/home/username/o3de-projects/MyProject` looks like the following example:
+    * It registers the project in the O3DE manifest, adding it to the list of known projects, and making **Project Manager** aware of your project. The O3DE manifest is located in `$HOME/.o3de/o3de_manifest.json`. The registration for a project located in `/home/myusername/O3DE/projects/MyProject` looks like the following example:
 
         ```json
         "projects": [
-            "/home/username/o3de-projects/MyProject"
+            "/home/myusername/O3DE/projects/MyProject"
         ],
         ```
 
@@ -76,20 +67,22 @@ If you move the project, you will need to update this manifest entry.
 
 Use **CMake** to create the Linux build project for your O3DE project.
 
-1. Create the Linux build project in your new project directory. Supply the build directory, the Ninja Multi-Config generator, the path to the packages directory, and any other project options. Paths can be absolute or relative.
+1. Create the Linux build project in your new project directory. Supply the build directory, the project source directory, the Ninja Multi-Config generator, and any other project options. Paths can be absolute or relative. Example:
 
     ```shell
-    cd $HOME/o3de-projects/MyProject
-    cmake -B build/linux -S . -G "Ninja Multi-Config" -DLY_3RDPARTY_PATH=$HOME/o3de-packages
+    cd $HOME/O3DE/Projects/MyProject
+    cmake -B build/linux -S . -G "Ninja Multi-Config"
     ```
+
+    {{< note >}}
+CMake uses the downloadable packages directory that is defined in your O3DE manifest with `default_third_party_folder`. You can specify a different directory to use by including the `-DLY_3RDPARTY_PATH` argument. For example, if you created the package directory in `$HOME/o3de-packages`, include the argument `-DLY_3RDPARTY_PATH=$HOME/o3de-packages` in your cmake command.
+
+Do not use trailing slashes when specifying the path to the packages directory.
+    {{< /note >}}
 
     {{< note >}}
 CMake [unity builds](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html) are on by default. This is a CMake feature that can greatly improve build times by merging source files into single compilation units. If you encounter a build error, disabling unity builds might help debug the problem. To disable unity builds, run the previous `cmake` command with the `-DLY_UNITY_BUILD=OFF` argument to regenerate your project files.
     {{< /note >}}
-
-    {{< caution >}}
-Do not use trailing slashes when specifying the path to the packages directory.
-    {{< /caution >}}
 
 ## Build the O3DE project
 
@@ -130,7 +123,7 @@ If your project build directory is outside the project path, you must include th
     * If you installed O3DE or built your engine as an [SDK engine](/docs/welcome-guide/setup/setup-from-github/building-linux/#build-the-engine) using the `INSTALL` target, run the Editor from the installed engine's build directory. (If you don't supply the project path, **Project Manager** launches instead.) The project path can be absolute or relative to the engine directory.
 
         ```shell
-        $HOME/o3de-install/bin/Linux/profile/Default/Editor --project-path $HOME/o3de-projects/MyProject
+        $HOME/o3de-install/bin/Linux/profile/Default/Editor --project-path $HOME/O3DE/Projects/MyProject
         ```
 
         {{< important >}}
