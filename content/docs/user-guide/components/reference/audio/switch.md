@@ -13,8 +13,8 @@ The **Audio Switch** component provides basic [Audio Translation Layer (ATL)](/d
 
 | Name | Description | Default |
 |------|-------------|---------|
-| Default Switch | Enter the name of the audio switch to use by default. You can associate any audio switch with the entity. | `<Empty>` |
-| Default State | Enter the name of the audio switch state to use by default. Use the [Audio Controls Editor](/docs/user-guide/interactivity/audio/audio-controls-editor) to assign the state to the switch. When this component is activated, the default switch is set to the default state. | `<Empty>` |
+| **Default Switch** | Enter the name of the audio switch to use by default. You can associate any audio switch with the entity. | `<Empty>` |
+| **Default State** | Enter the name of the audio switch state to use by default. Use the [Audio Controls Editor](/docs/user-guide/interactivity/audio/audio-controls-editor) to assign the state to the switch. When this component is activated, the **Default Switch** is set to the **Default State**. | `<Empty>` |
 
 ## EBus Request Bus Interface
 
