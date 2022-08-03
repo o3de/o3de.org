@@ -397,11 +397,11 @@ We need several parameters to determine how we want our materials to bend:
 * WindBendingStrength - The amount in which the vegetation bends as a result of the wind.
 * WindBendingFrequency - The frequency that the object sways back and forth caused by the wind.
 
-The "DetailBending" parameters are specfically used for detail bending, but the "Wind" parameters are used for all parts of the bending.
+The `DetailBending`- parameters are specifically used for detail bending, while the `Wind`- parameters are used for all parts of the bending.
 
 1. Open `VegetationBendingPropertyGroup.json`.
 
-1. Delete the `xOffset` and `yOffset` properties that we added previously if you haven't already, and add these seven:
+1. Delete the `xOffset` and `yOffset` properties that we added previously, if you haven't already. Add these seven:
 
    ```json
    {
@@ -573,7 +573,9 @@ Let's begin editing the code to add wind.
 
 1. Open `VegetationBending_Common.azsli`.
 
-1. At the bottom, add a function to calculate the amplitude, frequency, and phase of the wind according to the time and world position of the vertex. The phase should take into account the `worldPosition` because we want to mimic how wind should affect nearby objects similarly but faraway objects differently. Faraway objects may not be affected by the same "breeze". This function will then later be used to calculate the appropriate movement of the vertex.
+1. At the bottom, add a function to calculate the amplitude, frequency, and phase of the wind according to the time and world position of the vertex. The wind's phase uses the `worldPosition` to mimic how wind affects nearby objects similarly, but faraway objects differently. This is because in real life, faraway objects may not be affected by the same breeze. 
+
+  Later, we'll use this function to calculate the appropriate movement of the vertex.
 
    ```hlsl
    float4 SetUpWindBending(float currentTime, float4 worldPosition) 
@@ -668,7 +670,7 @@ Using the wind bending constants that we just calculated, we can now determine t
    ```
 
    {{< note >}}
-   Note that `currentBending.w` is passed in to the detail bending function. This is the overall bending length we want according to the wind strength and direction. 
+   The `currentBending.w` parameter that's passed into the `DetailBending` function controls the overall bending length according to the wind's strength and direction. 
    {{< /note >}}
 
 1. We need to set the actual vertex shader outputs to use the output from the detail bending function. Set the world position so the code following the conditional can update the positions correctly. 
@@ -813,17 +815,9 @@ If you'd like to download and enable the **AtomTutorials Gem**, do the following
 
    For example, `scripts\o3de register -gp C:\sample-code-gems\atom_gems\AtomTutorials -espp C:\MyProject`
 
-1. [Add the Gem into your project](/docs/user-guide/project-config/add-remove-gems). 
+1. Add the **AtomTutorials** Gem to you project. Follow the instructions in [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems). 
 
-   1. Open the **Project Manager**, which should be located in your project's `build/windows/bin/profile/o3de.exe`.
-
-   1. In the menu, find your project, click on the three bars, and select **Configure Gems...**.
-
-   1. In the **Gem Catalog**, search for **AtomTutorials** and enable the Gem.
-
-   1. Click **Save** in the bottom right.
-
-1. Re-build your project by clicking **Build Project**, or on the three bars again and selecting **Build**. 
+1. Re-build your project by clicking **Build Project**, or by clicking {{< icon "menu.svg" >}} and selecting **Build**. 
 
 1. Open the **Editor** and [add a tree](vegetation-bending-tutorial/#add-a-tree) and [make vegetation bending materials](vegetation-bending-tutorial/#create-materials-for-the-tree)! 
 
