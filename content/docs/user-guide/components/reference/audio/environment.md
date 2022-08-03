@@ -13,7 +13,7 @@ The **Audio Environment** component provides access to features of the [Audio Tr
 
 | Name | Description | Default |
 |------|-------------|---------|
-| Default Environment | Enter the name of the audio environment to use by default when setting amounts. | `<Empty>` |
+| **Default Environment** | Enter the name of the audio environment to use by default when setting amounts. | `<Empty>` |
 
 ## EBus Request Bus Interface
 
@@ -23,5 +23,5 @@ For more information about using the Event Bus (EBus) interface, see [Working wi
 
 | Name | Description | Parameters | Return | Scriptable |
 |------|-------------|------------|--------|------------|
-| SetAmount | Sets the amount of environmental **'send'** to apply to the default environment, if set. | `amount` - Float value of the amount to set | None | Yes |
-| SetEnvironmentAmount | Sets the amount of environmental **'send'** to apply to the specified environment. | `environmentName` - Name of ATL Environment to set an amount on; `amount` - Float value of the amount to set | None | Yes |
+| **SetAmount** | Sets the amount of environmental **'send'** to apply to the default environment, if set. | `amount` - Float value of the amount to set | None | Yes |
+| **SetEnvironmentAmount** | Sets the amount of environmental **'send'** to apply to the specified environment. | `environmentName` - Name of ATL Environment to set an amount on; `amount` - Float value of the amount to set | None | Yes |
