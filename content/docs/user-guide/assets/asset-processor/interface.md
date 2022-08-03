@@ -157,8 +157,6 @@ In the Assets tab, the tabbed pane on the left displays either the **Source Asse
 
 The Assets Tab search is also a regex based search, like for the jobs tab. Refer to the previous section [filtering by keyword and status](#filtering-by-keyword-and-status) for more information.
 
-The Assets Tab search is also a regex based search, like for the jobs tab. Refer to the previous section [filtering by keyword and status](#filtering-by-keyword-and-status) for more information.
-
 {{< note >}}
 The directory tree displayed in the tab is from the **Asset Database**, not the files on disk. It only displays assets that have been processed. Files on disk that are ignored by Asset Processer do not appear in the directory tree. 
 {{< /note >}}
