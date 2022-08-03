@@ -626,7 +626,7 @@ Let's begin editing the code to add wind.
    Your choice may depend on how much content you have, since the redundant GPU cost increases as vertex density increases. Your choice may also depend on whether the GPU or the vertex shader is the bottleneck, or if the vertex shader is bandwidth bound or arithmetic logic unit (ALU) bound. 
    {{< /note >}}
 
-2. Call the function in your `ProcessBending` function. Inside the conditional, add a call to your wind function:
+1. Call the `SetUpWindBending` function in the `ProcessBending` function, inside the conditional.
    
    ```glsl
    if (o_color_isBound) 
@@ -682,7 +682,7 @@ Using the wind bending constants that you just calculated, you can now determine
    
    * Set and return the adjusted world position, so the actual vertex shader output uses the output from the `DetailBending` function. 
    
-   ```hlsl
+   ```glsl
    if (o_color_isBound) 
    {
       // Overall wind
