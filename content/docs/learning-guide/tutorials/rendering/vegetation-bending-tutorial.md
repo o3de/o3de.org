@@ -645,7 +645,7 @@ Using the wind bending constants that you just calculated, you can now determine
 
 1. Open `VegetationBending_Common.azsli`.
 
-1. Above your `ProcessBending` function, add a function that calculates the amount of movement and returns the resulting position for a vertex.
+1. Add a `DetailBending` function that calculates the amount of movement and returns the resulting position for a vertex. Place this above the `ProcessBending` function.
    
    ```glsl
    float3 DetailBending(float3 objectSpacePosition, float3 normal, float4 detailBendingParams, float currentTime, float4 worldPosition, float bendLength)
@@ -676,28 +676,13 @@ Using the wind bending constants that you just calculated, you can now determine
    }
    ```
 
-1. Call the detail bending function in your `ProcessBending` function. Inside the conditional, add the call:
+1. In the `ProcessBending` function, inside the conditional:
+
+   * Call the `DetailBending` function.
    
-   ```glsl
-   if (o_color_isBound) 
-   {
-      // Overall wind
-      float4 currentBending = SetUpWindBending(currentTime, worldPosition);
-
-      // Detail bending
-      float3 currentOutPosition = DetailBending(objectSpacePosition, normal, detailBendingParams, currentTime, worldPosition, currentBending.w);
-   }
-
-   return adjustedWorldPosition;
-   ```
-
-   {{< note >}}
-   The `currentBending.w` parameter that's passed into the `DetailBending` function controls the overall bending length according to the wind's strength and direction. 
-   {{< /note >}}
-
-1. You will need to set the actual vertex shader outputs to use the output from the detail bending function. Set the world position so the code following the conditional can update the positions correctly. 
+   * Set and return the adjusted world position, so the actual vertex shader output uses the output from the `DetailBending` function. 
    
-   ```glsl
+   ```hlsl
    if (o_color_isBound) 
    {
       // Overall wind
@@ -711,12 +696,16 @@ Using the wind bending constants that you just calculated, you can now determine
 
    return adjustedWorldPosition;
    ```
-1. Open the Editor and you should see your tree's leaves bending slightly. If you don't, try opening the Material Editor and increasing all the properties. 
+   
+   {{< note >}}
+   The `currentBending.w` parameter that's passed into the `DetailBending` function controls the overall bending length according to the wind's strength and direction. 
+   {{< /note >}}
+1. Open the Editor. You should see that your tree's leaves bend slightly. If you don't, try increasing all the properties in the Material Editor.
 
 {{< video src="/images/learning-guide/tutorials/rendering/vegetation-bending-tutorial/detailbendingtree.mp4" autoplay="true" loop="true" width="100%" muted="true" info="The tree in the Editor with detail bending applied, moving the leaves slightly." >}}
 
 ### Add main bending
-The leaves are moving now, but the tree doesn't sway yet. You will now add main bending, the overall sway and movement that the whole tree experiences.
+The leaves move now, but the tree doesn't sway yet. In this step, you will add main bending, the overall sway and movement that the whole tree experiences.
 
 1. Open `VegetationBending_Common.azsli`.
 
@@ -743,7 +732,7 @@ The leaves are moving now, but the tree doesn't sway yet. You will now add main 
    }
    ```
 
-1. Add a call to your main bending function under the detail bending function call in your `ProcessBending` function:
+1. Call the `MainBending` function after the call to the `DetailBending` function, in the `ProcessBending` function.
    
    ```glsl
    if (o_color_isBound)
@@ -760,7 +749,7 @@ The leaves are moving now, but the tree doesn't sway yet. You will now add main 
    }
    ```
 
-1. Open the **Editor** and you should see your tree swaying with the leaves still bending. If you don't, try opening the **Material Editor** and increasing the wind properties.
+1. Open the **Editor**. You should see that your tree sways and the leaves still bend. If you don't, try increasing the wind properties in the Material Editor.
 
 Amazing, your tree now sways and reacts to wind! Try to place multiple trees and observe how the trees sway differently when close together versus farther away. Also, add some lighting to make the trees pop!
 
