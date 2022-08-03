@@ -138,7 +138,7 @@ Let's repeat the above steps for the depth pass:
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/fulloffset.png" width="100%" alt="The shader ball in the Editor, after the offset is applied to both forward and depth pass." >}}
 
-### Add material property parameters
+### Add material properties
 For now, we specified in the code to move the ball at an offset of `5` units. However, we may want an easier way to change the offset in the Editor, instead of having to change the code. We can do this with _adjustable properties_ in the **Material Editor**.
 
 1. Open `{your-project-path}\Materials\Types\MaterialInputs\VegetationBendingPropertyGroup.json` in a text editor.
@@ -199,7 +199,7 @@ Great, now that we have properties, let's use the properties in the code and vie
    worldPosition.y += MaterialSrg::m_yOffset;
    ```
    {{< tip >}}
-   Recall that we defined the parameters in the material SRG in `VegetationBending_Common.azsli`. That's how we are able to reference them with `MaterialSrg` here.
+   Recall that we defined the properties in the material SRG in `VegetationBending_Common.azsli`. That's how we are able to reference them with `MaterialSrg` here.
    {{< /tip >}}
 
 1. Repeat step 2 for the depth pass, `VegetationBending_DepthPass.azsli`.
@@ -387,17 +387,17 @@ Great, now we can start adding the code for vegetation bending! We first need to
 
 Note that the following bending functions are derived from [Vegetation Procedural Animation and Shading in Crysis](https://developer.nvidia.com/gpugems/gpugems3/part-iii-rendering/chapter-16-vegetation-procedural-animation-and-shading-crysis) in GPU Gems 3.
 
-### Add vegetation bending parameters
-We need several parameters to determine how we want our materials to bend:
-* DetailBendingFrequency - The frequency of the detail bending.
-* DetailBendingLeafAmplitude - The amplitude in which leaves can bend.
-* DetailBendingBranchAmplitude - The amplitude in which branches can bend.
-* WindX -The amount of wind in the x direction.
-* WindY - The amount of wind in the y direction.
-* WindBendingStrength - The amount in which the vegetation bends as a result of the wind.
-* WindBendingFrequency - The frequency that the object sways back and forth caused by the wind.
+### Add vegetation bending properties
+We need several properties to determine how we want our materials to bend:
+* `DetailBendingFrequency` - The frequency of the detail bending.
+* `DetailBendingLeafAmplitude` - The amplitude in which leaves can bend.
+* `DetailBendingBranchAmplitude` - The amplitude in which branches can bend.
+* `WindX` -The amount of wind in the x direction.
+* `WindY` - The amount of wind in the y direction.
+* `WindBendingStrength` - The amount in which the vegetation bends as a result of the wind.
+* `WindBendingFrequency` - The frequency that the object sways back and forth caused by the wind.
 
-The `DetailBending`- parameters are specifically used for detail bending, while the `Wind`- parameters are used for all parts of the bending.
+The `DetailBending`- properties are specifically used for detail bending, while the `Wind`- properties are used for all parts of the bending.
 
 1. Open `VegetationBendingPropertyGroup.json`.
 
@@ -523,7 +523,7 @@ The `DetailBending`- parameters are specifically used for detail bending, while 
 
 1. On the right, scroll down to **Vegetation Bending** and ensure that the 6 properties we just added are there.
 
-1. Adjust the parameters! Make sure you adjust all of them so that you can see bending in the later steps.
+1. Adjust the properties! Make sure you adjust all of them so that you can see bending in the later steps.
 
 ### Add process bending function
 First, let's add a function that our multiple vertex shaders can call to avoid repeat code. We will be writing more functions for different parts of the bending and calling them all from this function. 
@@ -601,7 +601,9 @@ Let's begin editing the code to add wind.
    ```
 
    {{< note >}}
-   This function could potentially be run once per-object on the CPU with the results updated each frame in the ObjectSrg instead of being run once per-vertex on the GPU. It's a tradeoff between doing the computation once per frame per vegetation object + an extra SRG compile per frame per vegetation object vs. re-doing the computation on the GPU per frame per vegetation object per vertex. It's content specific, with the redundant GPU cost increasing as vertex density increases, and also depends on if the GPU is the bottleneck, and whether or not the vertex shader is the bottleneck, and also if the vertex shader is bandwidth bound or ALU bound. 
+   This function could potentially be run once per-object on the CPU with the results updated each frame in the ObjectSrg instead of being run once per-vertex on the GPU. It's a tradeoff between doing the computation with an extra SRG compile once per frame per vegetation object versus re-doing the computation on the GPU per frame per vegetation object per vertex.
+   
+   The choice is content specific, with the redundant GPU cost increasing as vertex density increases. The choice also depends on if the GPU is the bottleneck, if the vertex shader is the bottleneck, and if the vertex shader is bandwidth bound or arithmetic logic unit (ALU) bound. 
    {{< /note >}}
 
 1. Call the function in our `ProcessBending` function. Inside the conditional, add a call to our wind function:
@@ -689,7 +691,7 @@ Using the wind bending constants that we just calculated, we can now determine t
 
    return adjustedWorldPosition;
    ```
-1. Open the Editor and you should see your tree's leaves bending slightly. If you don't, try opening the Material Editor and increasing all the parameters. 
+1. Open the Editor and you should see your tree's leaves bending slightly. If you don't, try opening the Material Editor and increasing all the properties. 
 
 {{< video src="/images/atom-guide/vegetation-bending-tutorial/detailbendingtree.mp4" autoplay="true" loop="true" width="100%" muted="true" info="The tree in the Editor with detail bending applied, moving the leaves slightly." >}}
 
@@ -738,7 +740,7 @@ The leaves are moving now, but the tree doesn't sway yet. We will now add main b
    }
    ```
 
-1. Open the **Editor** and you should see your tree swaying with the leaves still bending. If you don't, try opening the **Material Editor** and increasing the wind parameters.
+1. Open the **Editor** and you should see your tree swaying with the leaves still bending. If you don't, try opening the **Material Editor** and increasing the wind properties.
 
 Amazing, our tree now sways and reacts to wind! Try to place multiple trees and observe how the trees sway differently when close together versus farther away. Also, add some lighting to make the trees pop!
 
@@ -784,11 +786,18 @@ Let's add the motion vector shader and then edit its vertex shader:
 
 Amazing, we have added everything we need to add for motion vectors! However, if you open the **Editor** and just view the tree, you'll see that there is no difference. We can, however, observe that the motion vector pass works by using the **pass tree visualizer**.
 1. Open the Editor and press **Ctrl-G** to enter gameplay mode.
+
 1. Press the **Home** key on your keyboard. This brings up the toolbar at the top.
+
 1. Select **Atom Tools** > **Pass Viewer**.
+
 1. In the pop-up **PassTree View**, enable **Preview Attachment** and **Show Pass Attachments**.
+
 1. In the **PassTree**, find *MotionVectorPass* > *MeshMotionVectorPass* and select the line with `CameraMotion`. 
-1. Ensure you are viewing your tree. Note that you probably won't see much except black on the bottom left preview, because the motion vectors are very small since our tree only moves minimally. However, if you move the camera around or translate the tree quickly, you may see some motion vectors pop up. You can also open `MeshMotionVectorVegetationBending.azsl` and scale `OUT.m_motion` in the pixel shader to ensure that the motion vectors' directions are working properly.
+
+1. Ensure you are viewing your tree. You probably won't see much except black on the bottom left preview, because the motion vectors are very small since our tree only moves minimally. 
+
+   However, if you move the camera around or translate the tree quickly, you may see some motion vectors pop up. You can also open `MeshMotionVectorVegetationBending.azsl` and scale `OUT.m_motion` in the pixel shader to ensure that the motion vectors' directions are working properly.
 
 This video shows the motion vectors when `OUT.m_motion` is scaled by `10000.0`.
 {{< video src="/images/atom-guide/vegetation-bending-tutorial/motionvectortree.mp4" autoplay="true" loop="true" muted="true" width="100%" info="Three trees in the Editor swaying with detail bending, with the motion vector visualizer on the bottom right indicating the direction of movement." >}}
@@ -813,9 +822,9 @@ If you'd like to download and enable the **AtomTutorials Gem**, do the following
    scripts\o3de register -gp {your-path-to-sample-code-gems}\atom_gems\AtomTutorials -espp {your-project-path}
    ```
 
-   For example, `scripts\o3de register -gp C:\sample-code-gems\atom_gems\AtomTutorials -espp C:\MyProject`
+   For example, `scripts\o3de register -gp C:\sample-code-gems\atom_gems\AtomTutorials -espp C:\MyProject`.
 
-1. Add the **AtomTutorials** Gem to you project. Follow the instructions in [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems). 
+1. Add the **AtomTutorials** Gem to your project. Follow the instructions in [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems). 
 
 1. Re-build your project by clicking **Build Project**, or by clicking {{< icon "menu.svg" >}} and selecting **Build**. 
 
