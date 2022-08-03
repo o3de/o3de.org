@@ -286,6 +286,7 @@ Delete the following:
 * The code added to adjust the position in the vertex shaders of both the forward pass and depth pass.
 * The `m_xOffset` and `m_yOffset` variable declarations in the `MaterialSrg`, in the `VegetationBending_Common.azsli` file.
 * The `xOffset` and `yOffset` properties in the `VegetationBendingPropertyGroup.json` file. However,  keep the rest of the file and its connection in `VegetationBending.materialtype`.
+* In the Editor, `my_material` from the **Default Material** in the **Material** component for both the tree and the shader ball.
 
 Make sure to keep the declarations for `m_optional_color` and `o_color_isBound`.
 
@@ -302,7 +303,7 @@ Add some textures to make your tree look more realistic! For the tree, you need 
    The suffix `_basecolora` tells the engine to process the texture with a specific [*preset*](/docs/user-guide/assets/texture-settings/texture-presets). Appending a suffix to the name of a texture tells the engine to use the corresponding preset. In this case, you'll use the `_basecolora` preset because this texture has the base color in the rgb channels and the opacity in the alpha channel.
    {{< /note >}}
 
-1. Set the opacity mode. For the **Opacity** > **Opacity Mode** property, select `Cutout`. You need to set this to `Cutout` because the leaf texture has transparent parts.
+1. Set the opacity mode. For the **Opacity** > **Opacity Mode** property, select `Cutout`. You need to set this to `Cutout` because the leaf texture has transparent parts. Ensure the **Alpha Source** is `Packed`. You can choose to adjust the **Factor** as you wish.
 
 1. Under **General Settings**, enable **Double-sided**. This renders both sides of the material.
 
@@ -318,7 +319,7 @@ Add some textures to make your tree look more realistic! For the tree, you need 
 
 1. Save all 3 materials and exit the Material Editor. In the **Editor**, select the tree entity (`Tree`).
 
-1. Add the materials you just made to the Material component. In the **Entity Inspector**, find the **Material** component. Click the **X** to delete the **Default Material**. For the **Model Materials** property, map the following materials:
+1. Add the materials you just made to the Material component. In the **Entity Inspector**, find the **Material** component. For the **Model Materials** property, map the following materials:
    * **AM_Aspen_Bark_01**: `aspen_bark_01.material`
    * **AM_Aspen_Bark_02**: `aspen_bark_02.material`
    * **AM_Aspen_Leaf**: `aspen_leaf.material`
@@ -351,7 +352,7 @@ The depth pass that you use right now is for opaque objects. It doesn't use a pi
    {
       "file": "./VegetationBending_DepthPass_WithPS.shader",
       "tag": "DepthPass_WithPS"
-   },
+   }
    ```
 
 1. Save the file.
@@ -520,7 +521,7 @@ The `DetailBending`- properties are specifically used for detail bending, while 
 
 1. Open the **Editor**, then open the **Material Editor**, and choose to edit the leaf material (`aspen_leaf.material`). Make sure you select the leaf material because that is the parent material of the other parts of the tree.
 
-1. On the right, scroll down to **Vegetation Bending** and ensure that the 6 properties you just added are there.
+1. In the Material Editor **Inspector**, find **Vegetation Bending** and ensure that the 6 properties you just added are there.
 
 1. Adjust the properties! Make sure you adjust all of them so that you can see bending in the later steps.
 
@@ -572,7 +573,7 @@ Let's begin editing the code to add wind.
 
 1. Open `VegetationBending_Common.azsli`.
 
-1. At the bottom, add a function to calculate the amplitude, frequency, and phase of the wind according to the time and world position of the vertex. The wind's phase uses the `worldPosition` to mimic how wind affects nearby objects similarly, but faraway objects differently. This is because in real life, faraway objects may not be affected by the same breeze. 
+1. Above your `ProcessBending` function, add a function to calculate the amplitude, frequency, and phase of the wind according to the time and world position of the vertex. The wind's phase uses the `worldPosition` to mimic how wind affects nearby objects similarly, but faraway objects differently. This is because in real life, faraway objects may not be affected by the same breeze. 
 
   Later, you'll use this function to calculate the appropriate movement of the vertex.
 
@@ -624,7 +625,7 @@ Using the wind bending constants that you just calculated, you can now determine
 
 1. Open `VegetationBending_Common.azsli`.
 
-1. At the bottom, add a function that calculates the amount of movement and returns the resulting position for a vertex.
+1. Above your `ProcessBending` function, add a function that calculates the amount of movement and returns the resulting position for a vertex.
    
    ```hlsl
    float3 DetailBending(float3 objectSpacePosition, float3 normal, float4 detailBendingParams, float currentTime, float4 worldPosition, float bendLength)
@@ -699,7 +700,7 @@ The leaves are moving now, but the tree doesn't sway yet. You will now add main 
 
 1. Open `VegetationBending_Common.azsli`.
 
-1. At the bottom, add a function to make the tree sway. Using the current position of the vertex (after it has been changed from the detail bending) and the bending determined by the wind, you can bend the tree as a whole.
+1. Above your `ProcessBending` function, add a function to make the tree sway. Using the current position of the vertex (after it has been changed from the detail bending) and the bending determined by the wind, you can bend the tree as a whole.
    
    ```hlsl
    float3 MainBending(float3 objectSpacePosition, float4 bending)
@@ -722,7 +723,7 @@ The leaves are moving now, but the tree doesn't sway yet. You will now add main 
    }
    ```
 
-1. Add a call to your detail bending function under the wind function call in your `ProcessBending` function:
+1. Add a call to your main bending function under the detail bending function call in your `ProcessBending` function:
    
    ```hlsl
    if (o_color_isBound)
