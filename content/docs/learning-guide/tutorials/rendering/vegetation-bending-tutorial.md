@@ -544,10 +544,10 @@ The `DetailBending`- properties are specifically used for detail bending, while 
    * **Wind bending frequency** - `0.7`
 
 ### Add process bending function
-First, let's add a function that your multiple vertex shaders can call to avoid repeat code. You will be writing more functions for different parts of the bending and calling them all from this function. 
+First, add a function to handle process bending, which your multiple vertex shaders can call. Later, you will write more functions for different parts of the bending and call them from this function. 
 1. Open `VegetationBending_Common.azsli`.
 
-1. At the bottom, add a function to return the world position of the vertex after applying bending. The parameters given to this function are all helpful for determining bending.
+1. At the bottom, add a function that will apply bending, and then return the world position of the vertex. The parameters given to this function are helpful to determine bending.
 
    ```hlsl
    float4 ProcessBending(float currentTime, float3 objectSpacePosition, float3 normal, float4 detailBendingParams, float4 worldPosition, float4x4 objectToWorld) 
@@ -562,10 +562,16 @@ First, let's add a function that your multiple vertex shaders can call to avoid 
    ```
 
    {{< note >}}
-   Notice how, like before, you are using a conditional with `o_color_isBound` to ensure that only meshes with vertex streams perform bending.
+   Like before, notice how you use a conditional with `o_color_isBound` to ensure that only meshes with vertex streams perform bending.
    {{< /note >}}
 
-1. Call the `ProcessBending` function in your vertex shaders. Open `VegetationBending_ForwardPass.azsli` and find the vertex shader (`VegetationBending_ForwardPassVS`). Add a call to your function above `OUT.m_worldPosition = worldPosition.xyz`. Most of the parameters to pass in are inputs to your vertex shader or values you have calculated already, and you can get the time from the property `m_time` the *scene shader resource group* (`SceneSrg`), which gives us the number of seconds since the start of the application.
+1. Call the `ProcessBending` function in your vertex shaders.
+
+   1. Open `VegetationBending_ForwardPass.azsli` and find the vertex shader, `VegetationBending_ForwardPassVS`. 
+   
+   1. Above `OUT.m_worldPosition = worldPosition.xyz`, call the `ProcessBending` function. 
+   
+      The parameters to pass in are inputs to your vertex shader, values you have calculated already, and `m_time`, the number of seconds since the start of the application. `m_time` is provided by the *scene Shader Resource Group* (`SceneSrg`).
    
    ```hlsl
    float currentTime = SceneSrg::m_time;
@@ -577,7 +583,7 @@ First, let's add a function that your multiple vertex shaders can call to avoid 
    return OUT;
    ``` 
    {{< note >}}
-   The code needs to be above the two `OUT` lines because you will edit `worldPosition`, which adjusts the `OUT` variables accordingly.
+   The code must be above the two `OUT` lines because it updates the `worldPosition`, which adjusts the `OUT` variables accordingly.
    {{< /note >}}
   
 1. Repeat steps 2-3 with the depth pass in `VegetationBending_DepthPass.azsli` and the depth pass with PS in `VegetationBending_DepthPass_WithPS.azsli`.
