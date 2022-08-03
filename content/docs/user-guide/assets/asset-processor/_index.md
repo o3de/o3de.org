@@ -43,3 +43,4 @@ Symbolic links are not supported when using Asset Processor. To ensure that Asse
 | [Faster Scanning](faster-scanning) | Learn how Asset processor determines when assets should be processed and how to set Asset Processor's scanning mode. |
 | [Debugging](debugging) | Learn several methods you can use to debug Asset Processor issues. |
 | [Move Assets](move-assets) | Learn how to move assets to new directory locations in O3DE while maintaining internal references. |
+| [Settings](settings) | Learn how to use advance settings to control Asset Processor and Asset Processor Batch. |
