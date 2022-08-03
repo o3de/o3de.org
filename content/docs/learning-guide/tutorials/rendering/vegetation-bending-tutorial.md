@@ -334,7 +334,7 @@ Great, the tree looks better! However, notice that there are still grey areas ar
 ### Add depth pass and shadowmap pass with pixel shaders
 The depth pass that you use right now is for opaque objects. It doesn't use a pixel shader, so the depth pass doesn't know which pixels are supposed to be transparent, even though you already specified that the materials have `Cutout` opacity. So, you will need to use a depth pass with a pixel shader (PS)! You will also need a shadowmap pass with a pixel shader for the tree's shadow to appear correctly as well.
 
-1. There were also template files included for `DepthPass_WithPS` and `Shadowmap_WithPS`. These files don't need to be edited for now, but you need to add connections to them to ensure your material type will use these shaders. They already include the vertex color input you just added.
+The Vegetation Bending templates in the Atom Tutorials Gem also includes `DepthPass_WithPS` and `Shadowmap_WithPS`. These files don't need to be edited now, but in this step, you will add connections to them to ensure your material type uses them. (They already include the vertex color input you just added.)
 
 1. Open `VegetationBending.materialtype`.
 
@@ -364,7 +364,9 @@ You've added the appropriate shaders to the list of shaders for your material ty
 
 1. Open `VegetationBending_ShaderEnable.lua`.
 
-1. Look through the file, and observe how it enables the pixel shader versions of the depth and shadowmap passes if `OpacityMode_Cutout` is used or if parallax with pixel depth offset is enabled. There is no need to edit anything in the `.lua` file for now.
+1. In the file, observe how it enables the pixel shader versions of the depth and shadowmap passes (`depthPassWithPS` and `shadowMapWithPS`) if parallax with pixel depth offset is enabled, or if `OpacityMode_Cutout` is used.
+   
+   There is no need to edit anything in this file for now.
 
 1. Open `VegetationBending.materialtype`.
 
@@ -530,9 +532,16 @@ The `DetailBending`- properties are specifically used for detail bending, while 
 
 1. Open the leaf material (`aspen_leaf.material`) in the **Material Editor**. Make sure you select the leaf material because that is the parent material of the other parts of the tree.
 
-1. In the Material Editor **Inspector**, find **Vegetation Bending** and ensure that the 6 properties you just added are there.
+1. In the **Inspector**, scroll to the **Vegetation Bending** property group. Ensure that the seven properties you just added are there.
 
-1. Adjust the properties! Make sure you adjust all of them so that you can see bending in the later steps.
+1. Adjust the properties! You can adjust them to the following to ensure you can see bending later:
+   * **Detail bending frequency** - `0.3`
+   * **Detail bending leaf amplitude** - `0.3`
+   * **Detail bending branch amplitude** - `0.3`
+   * **Wind direction x** - `0.5`
+   * **Wind direction y** - `0.5`
+   * **Bending strength** - `4.0`
+   * **Wind bending frequency** - `0.7`
 
 ### Add process bending function
 First, let's add a function that your multiple vertex shaders can call to avoid repeat code. You will be writing more functions for different parts of the bending and calling them all from this function. 
