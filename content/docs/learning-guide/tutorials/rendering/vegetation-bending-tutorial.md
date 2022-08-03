@@ -295,7 +295,7 @@ Add some textures to make your tree look more realistic! For the tree, you need 
 
 1. Open the Editor, and then the **Material Editor**.
 
-1. Create a new material of the **VegetationBending** material type named `aspen_leaf.material`, and save it in the same folder you saved your previous material in, such as the `Materials` folder.
+1. Create a new material of the **VegetationBending** material type named `aspen_leaf.material`. Save it in the same folder where you saved your previous material in, such as the `Materials` folder.
 
 1. Set the base color texture of the material. In the **Inspector**, under the **Base Color** > **Texture** property, click {{< icon "file-folder.svg" >}} and choose `aspen_leaf_basecolora.tif`.
 
@@ -307,9 +307,12 @@ Add some textures to make your tree look more realistic! For the tree, you need 
 
 1. Under **General Settings**, enable **Double-sided**. This renders both sides of the material.
 
-1. Save your leaf material. Repeat with the branch and the trunk, but instead of making whole new materials, make the leaf material the parent of the branch and trunk materials so the properties stay constant for all 3.
+1. Save your `aspen_leaf.material` material. 
+2. Repeat the above steps for the branch and the trunk materials, but don't make new materials. Instead, make the branch and trunk materials be children of the leaf material. This allows the material properties to stay constant for all three.
 
-   1. In the **Asset Browser** of the Material Editor, **right-click** `aspen_leaf.material`. Select **Create Child Material...** and save it as `aspen_bark_01.material` in the same folder as `aspen_leaf.material`. Find **Base Color** in the **Inspector** and choose `aspen_bark_01_basecolor.tif`.
+   1. In the **Asset Browser** of the Material Editor, **right-click** `aspen_leaf.material`. 
+      - Select **Create Child Material...** and save it as `aspen_bark_01.material` in the same folder as `aspen_leaf.material`. 
+      - Find **Base Color** in the **Inspector** and choose `aspen_bark_01_basecolor.tif`.
 
    1. Repeat the above step for `aspen_bark_02.material`. Make it a child of `aspen_leaf.material` and set **Base Color** as `aspen_bark_02_basecolor.tif`.
 
@@ -357,7 +360,7 @@ The depth pass that you use right now is for opaque objects. It doesn't use a pi
 
 1. Save the file.
    
-You've added the appropriate shaders to the list of shaders for your material type. However, you may notice that just adding to the list of shaders doesn't change the tree. You will need to give the engine instructions for which shader to use for different materials. This is where `.lua` material functors come in. 
+You've added the appropriate shaders to the list of shaders for your material type. However, you may notice that only adding to the list of shaders doesn't change the tree. You will need to give the engine instructions for which shader to use for different materials. This is where Lua material functors come in. 
 
 1. Open `VegetationBending_ShaderEnable.lua`.
 
@@ -365,7 +368,7 @@ You've added the appropriate shaders to the list of shaders for your material ty
 
 1. Open `VegetationBending.materialtype`.
 
-1. Include the `.lua` file so the engine can process it and determine which shaders to use. After the list for `"shaders"` and before `"uvNameMap"`, add:
+1. Create a functor and include the `VegetationBending_ShaderEnable.lua` file. This allows the engine to process it and determine which shaders to use. 
 
    ```json
       "functors": [
@@ -378,14 +381,20 @@ You've added the appropriate shaders to the list of shaders for your material ty
       ],
    ```
 
-1. Save the file, allow the **Asset Processor** to process the changes, and open the **Editor** again. Observe how the tree now looks pretty realistic! 
+1. Save the file, allow the **Asset Processor** to process the changes, and open the **Editor** again. 
+
+Observe how the tree looks more realistic! 
 
 {{< image-width src="/images/atom-guide/vegetation-bending-tutorial/treeallpasses.png" width="100%" alt="The tree properly rendered in the Editor with all appropriate passes added." >}}
 
 ## Add vegetation bending
-Great, now you can start adding the code for vegetation bending! You first need to set up the wind constants. Then, you will determine the detail bending, which is the slight movement that you generally see in leaves and at the end of branches. Finally, you will add main bending, which is the overall swaying of the tree.
+Great, now you can start adding the code for vegetation bending! 
 
-Note that the following bending functions are derived from [Vegetation Procedural Animation and Shading in Crysis](https://developer.nvidia.com/gpugems/gpugems3/part-iii-rendering/chapter-16-vegetation-procedural-animation-and-shading-crysis) in GPU Gems 3.
+First, you need to set up the wind constants. Then, you will determine the detail bending, which is the slight movement that you see in leaves and at the end of branches. Finally, you will add main bending, which is the overall swaying of the tree.
+
+{{< note >}}
+The following bending functions are derived from [Vegetation Procedural Animation and Shading in Crysis](https://developer.nvidia.com/gpugems/gpugems3/part-iii-rendering/chapter-16-vegetation-procedural-animation-and-shading-crysis) in NVIDIA GPU Gems 3.
+{{< /note >}}
 
 ### Add vegetation bending properties
 You need several properties to determine how the materials should bend:
@@ -519,7 +528,7 @@ The `DetailBending`- properties are specifically used for detail bending, while 
     float m_windBendingFrequency;
     ```
 
-1. Open the **Editor**, then open the **Material Editor**, and choose to edit the leaf material (`aspen_leaf.material`). Make sure you select the leaf material because that is the parent material of the other parts of the tree.
+1. Open the leaf material (`aspen_leaf.material`) in the **Material Editor**. Make sure you select the leaf material because that is the parent material of the other parts of the tree.
 
 1. In the Material Editor **Inspector**, find **Vegetation Bending** and ensure that the 6 properties you just added are there.
 
