@@ -11,10 +11,9 @@ The **Audio RTPC** component provides basic [Real-Time Parameter Control (RTPC)]
 
 ## Audio RTPC Component Properties
 
-The **Audio RTPC** component has the following property:
-
-**Default Rtpc**
-Enter the name of the audio RTPC to use by default. You can associate any RTPC name with the entity, typically one that is meant to affect a particular trigger.
+| Name | Description | Default |
+|------|-------------|---------|
+| **Default Rtpc** | Enter the name of the audio RTPC to use by default. You can associate any RTPC name with the entity, typically one that is meant to affect a particular trigger. | `<Empty>` |
 
 ## EBus Request Bus Interface
 
@@ -24,5 +23,5 @@ For more information about using the Event Bus (EBus) interface, see [Working wi
 
 | Name | Description | Parameters | Return | Scriptable |
 |------|-------------|------------|--------|------------|
-| SetValue | Sets the value of the default RTPC. | `value` - Float value of the RTPC | None | Yes |
-| SetRtpcValue | Sets the value of the specified RTPC. | `rtpcName` - Name of the RTPC to set; `value` - Float value to set | None | Yes |
+| **SetValue** | Sets the value of the default RTPC. | `value` - Float value of the RTPC | None | Yes |
+| **SetRtpcValue** | Sets the value of the specified RTPC. | `rtpcName` - Name of the RTPC to set; `value` - Float value to set | None | Yes |
