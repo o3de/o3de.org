@@ -8,7 +8,7 @@ toc: true
 
 The Asset Processor and Asset Processor Batch expose a number of commandline settings that can be used when manually launching.
 
-For example, if you wanted to launch AssetProcessor manual on Windows but delay launch to attach a debugger:
+For example, if you want to manually launch Asset Processor on Windows but delay launch to attach a debugger:
 ```
 AssetProcessor --project-path="C:/o3de/o3de/AutomatedTesting" --engine-path="C:/o3de/o3de" --waitOnLaunch
 ```
