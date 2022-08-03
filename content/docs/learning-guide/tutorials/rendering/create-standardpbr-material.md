@@ -66,4 +66,4 @@ The downloaded normal map is flipped. To flip it back, enable the `Flip Y Channe
 
 You've successfully created a new StandardPBR material! The following figure shows the property settings and the expected material.
 
-![Creating a StandardPBR material using the Material Editor](/images/atom-guide/architecture/materials/create-standardpbr-material.png)
+![Creating a StandardPBR material using the Material Editor](/images/learning-guide/tutorials/rendering/create-standardpbr-material.png)

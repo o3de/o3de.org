@@ -412,7 +412,7 @@ To create a new material using **Material Editor**:
 6. Change the material color by specifying a comma separated list of RGB values in the **Color** property field, or choose the color swatch to open the color picker.
 7. Save changes to the material by choosing **Save** from the **File** menu or by pressing **Ctrl+S**. 
 
-![Creating a material from MyUnlitColor material type](/images/atom-guide/get-started/unlit-color-material.jpg)
+![Creating a material from MyUnlitColor material type](/images/learning-guide/tutorials/rendering/unlit-color-material.jpg)
 
 That's it! You created an AZSL shader, a new material type, and a material. 
 
