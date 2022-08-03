@@ -1,7 +1,7 @@
 ---
 linkTitle: Vertex Deformation for Vegetation Bending Tutorial
 title: Vertex Deformation for Vegetation Bending Tutorial
-description: A tutorial for add vegetation bending with the Atom rendered in the Open 3D Engine (O3DE).
+description: A tutorial for adding vegetation bending by creating custom a material type and authoring shaders with the Atom Renderer in the Open 3D Engine (O3DE).
 toc: true
 ---
 

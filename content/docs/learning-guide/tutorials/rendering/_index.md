@@ -1,7 +1,7 @@
 ---
 linkTitle: Rendering
 title: Rendering in Open 3D Engine
-description: Open 3D Engine performs rendering using the Atom gem.
+description: A collection of rendering tutorials using Atom Renderer in Open 3D Engine (O3DE).
 toc: true
 ---
 
