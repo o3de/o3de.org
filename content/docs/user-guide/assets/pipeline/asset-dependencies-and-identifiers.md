@@ -14,6 +14,22 @@ Source dependencies are a process time concept. This means that this dependency 
 
 A source dependency triggers **Asset Processor** to rerun the job process step whenever the file declared as a source dependency changes. For example, image files declare a source dependency on the `.preset` file containing the preset information used to process the image, so if the preset changes the image will be reprocessed and use the new preset settings.
 
+### Declaring source dependencies
+
+In the Job Creation step of asset processing, a JobDescriptor is created to describe the work to be done to process a source asset.
+
+One of the fields on the CreateJobsResponse is m_sourceFileDependencyList, a vector of SourceFileDependency objects. A SourceFileDependency should be populated with enough information for the Asset Processor to track this dependency, so that it can re-run this job if the declared dependency is changed.
+
+A SourceFileDependency can be created with a path, or the UUID of a source asset. When possible, using a UUID is better because it will be stable in more circumstances.
+
+Source dependencies do not have to be on other source assets, and can be on other source files. In these cases, a UUID will not be available, because it's not generated for non-asset files.'
+
+If a path must be used, it can be an absolute path or relative, and can make use of wildcards. If a path needs to be used instead of a UUID, absolute paths can be more stable than relative paths here because this data is specific to the local machine, so pathing differences across machines won't matter. Relative paths cannot include directory change markers across root drives, so if a source asset is in a scan folder on one drive root (such as C:/Projects/MyGame/Assets) and a source dependency is in a folder on another drive root (such as E:/Gems/SomeGem/Assets), a relative path will not be usable.
+
+If the source dependency is a source asset, it must be in a scan directory. Read more about [scan directories here.](/docs/user-guide/assets/pipeline/scan-directories/)
+
+If the source dependency is not a source asset and is instead a non-asset file, it can be in other locations outside of scan directories.
+
 ## Job dependencies
 
 Job dependencies are a process time concept.
@@ -28,9 +44,19 @@ Jobs can generate multiple product assets, but a job might not need all product 
 
 A material, for example, has a job dependency on a shader. The shader job generates multiple product assets including assets that contain shader logic and a shader configuration. The material job dependency only needs the configuration from the shader, not the logic. The material job runs when the shader configuration is changed, not when the shader logic is changed.
 
+### Declaring job dependencies
+
+One of the fields on the JobDescriptor is m_jobDependencyList, a vector of JobDependency objects. The Job Dependency is populated with the same information as a SourceFileDependency to identify what file to track, as well as information to identify the associated job to use as a dependency, the type of job dependency, and the optional list of product sub IDs.
+
+Like with source dependencies, the source file for a job dependency can be declared in a few different ways. UUIDs are the most stable way to track these dependencies.
+
+If a path must be used to the source asset, it can be an absolute path or relative, and can make use of wildcards. If a path needs to be used instead of a UUID, absolute paths can be more stable than relative paths here because this data is specific to the local machine, so pathing differences across machines won't matter. Relative paths cannot include directory change markers across root drives, so if a source asset is in a scan folder on one drive root (such as C:/Projects/MyGame/Assets) and a source dependency is in a folder on another drive root (such as E:/Gems/SomeGem/Assets), a relative path will not be usable.
+
+Source assets, used as the target of a job dependency, must be in scan directories. Read more about [scan directories here.](/docs/user-guide/assets/pipeline/scan-directories/)
+
 ## Product dependencies
 
-Product dependencies are a packaging and runtime concept. This means these dependencies are not used during processing of assets, but they are declared there.
+Product dependencies are a packaging and runtime concept, declared at process time. This means these dependencies are not used during processing of assets, but they are declared there.
 
 Product dependencies contain data on the relationships between product assets. Product dependencies are used during runtime loading and asset bundling.
 
