@@ -21,7 +21,7 @@ The Asset Processor UI has several tabs you can use to view the status of asset 
 * **C**: Choose the {{< icon "help2.svg" >}} help icon to visit this documentation.
 * **D**: The project, engine root, and the port used by Asset Processor to communicate with other processes are displayed below the status line.
 * **E**:  The buttons on the left select the tab to display in the Asset Processor UI. Refer to [Asset Processor tabs](#asset-processor-tabs) below for more information.
-* **F**:  The information Asset Processer displays is dependent on the selected Asset Processor tab. Refer to [Asset Processor tabs](#asset-processor-tabs) below for more information.
+* **F**:  The information Asset Processor displays is dependent on the selected Asset Processor tab. Refer to [Asset Processor tabs](#asset-processor-tabs) below for more information.
 
 ## Asset Processor tabs
 
@@ -61,11 +61,11 @@ Failed jobs do not produce a product asset.
 What is considered a log message, warning, error, and failure, and how the system handles these is up to each builder's author. Our guidance is:
  * Print a log message for anything that will be useful as a bread crumb for tracking down problems later, for both the content creator or the builder author.
  * Emit a warning if something is wrong but it can mostly be handled, and the output your builder can generate is reasonably close to what the content creator intended.
- * Post an error if your builder encounters data it can't properly handle and you know the product asset you output won't be fully correct. When possible, this is prefered over a failure because the failure won't produce any product asset, so any references from other assets to this asset may break. For example, if a prefab references a mesh product asset from an FBX file, an update to the FBX causes the job to fail, then any edits to the prefab while this job is failing may lose the reference to the mesh.
+ * Post an error if your builder encounters data it can't properly handle and you know the product asset you output won't be fully correct. When possible, this is preferred over a failure because the failure won't produce any product asset, so any references from other assets to this asset may break. For example, if a prefab references a mesh product asset from an FBX file, an update to the FBX causes the job to fail, then any edits to the prefab while this job is failing may lose the reference to the mesh.
  * Post a failure if your builder encounters something it cannot handle and processing should end for that builder, and the builder should not output anything. This is generally considered a last resort, and is most commonly seen when a builder crashes during processing.
 
 {{< note >}}
-The most common reason for failure is that the Asset Builder has crashed. When an Asset Builder crashes, Asset Processor logs the job as failed and continues processing assets from the jobs list. When Asset Processor is restarted, it attempts to reprocess any failed jobs. If an asset has failed to process, we recommend you first examine why this failure occured, and inform your team, sharing any relevant artifacts such as log messages. Once you proceed to the next step, that information may be lost. Alternatively, you can locate individual source assets in the Assets tab, **right-click** on the asset, and select **Reprocess File** to re-run the process job.
+The most common reason for failure is that the Asset Builder has crashed. When an Asset Builder crashes, Asset Processor logs the job as failed and continues processing assets from the jobs list. When Asset Processor is restarted, it attempts to reprocess any failed jobs. If an asset has failed to process, we recommend you first examine why this failure occurred, and inform your team, sharing any relevant artifacts such as log messages. Once you proceed to the next step, that information may be lost. Alternatively, you can locate individual source assets in the Assets tab, **right-click** on the asset, and select **Reprocess File** to re-run the process job.
 {{< /note >}}
 
 The circumstances that cause an Asset Builder to complete a job with warnings, errors, or failures are left to the implementation of the Asset Builder, but should follow the guidance above.
@@ -158,7 +158,7 @@ In the Assets tab, the tabbed pane on the left displays either the **Source Asse
 The Assets Tab search is also a regex based search, like for the jobs tab. Refer to the previous section [filtering by keyword and status](#filtering-by-keyword-and-status) for more information.
 
 {{< note >}}
-The directory tree displayed in the tab is from the **Asset Database**, not the files on disk. It only displays assets that have been processed. Files on disk that are ignored by Asset Processer do not appear in the directory tree. 
+The directory tree displayed in the tab is from the **Asset Database**, not the files on disk. It only displays assets that have been processed. Files on disk that are ignored by Asset Processor do not appear in the directory tree. 
 {{< /note >}}
 
 You can browse source assets in the scan directories to view IDs and dependency information for each asset. You can also browse product assets in the Asset Cache and view IDs, last process time, job key, deployment platform, and dependency information for each asset. A search bar is available in both tabs to filter the list of assets that are displayed. Search matches partial file names, and regex is supported.
