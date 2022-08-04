@@ -822,24 +822,28 @@ The Pass Tree Visualizer tool is also helpful for debugging shaders and passes. 
 {{< /tip >}}
 
 ## Download the AtomTutorial Gem sample
-Now that you've completed this tutorial, you can compare your results to our working version of the vegetation bending material type in the **AtomTutorials Gem** in the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). You can either download and place the [final working vegetation bending files](https://github.com/o3de/sample-code-gems/tree/main/atom_gems/AtomTutorials/Assets/VegetationBending) in your project, or you can download the Gem and add it to the engine.
+Now that you've completed this tutorial, you can compare your results to our working version of the VegetationBending material type in the **AtomTutorials Gem** in the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). You can either download and place the [final working vegetation bending files](https://github.com/o3de/sample-code-gems/tree/main/atom_gems/AtomTutorials/Assets/VegetationBending) in your project, or you can download the Gem and add it to the engine.
 
-If you'd like to download and enable the **AtomTutorials Gem**, do the following:
+To download and enable the **AtomTutorials Gem**, do the following:
 1. Download or clone the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). 
 
    {{< note >}}
-   If you followed this tutorial, you already downloaded or cloned this repository, but probably moved the `Object` files out of the repository. You can move the files back or re-download/clone the repository.
+   If you followed this tutorial, then you already downloaded or cloned this repository and may have moved the files in `Assets/VegetationBending/Objects/` out of the repository. You can move the files back in, or re-download or clone the repository.
    {{< /note >}}
 
 1. Open `VegetationBending.materialtype` and replace all the instances of `{your-path-to-o3de}` with your absolute path to O3DE. 
 
-1. [Register the **AtomTutorials Gem** to the engine](/docs/user-guide/project-config/register-gems). In the command line interface, `cd` into the engine. Then, run
+1. Register the **AtomTutorials Gem** to your project. In the command line interface, run the following command:
 
    ```
+   cd {path-to-o3de-engine}
    scripts\o3de register -gp {your-path-to-sample-code-gems}\atom_gems\AtomTutorials -espp {your-project-path}
    ```
 
-   For example, `scripts\o3de register -gp C:\sample-code-gems\atom_gems\AtomTutorials -espp C:\MyProject`.
+   For example, with paths:
+   ```
+   scripts\o3de register -gp C:\sample-code-gems\atom_gems\AtomTutorials -espp C:\MyProject
+   ```
 
 1. Add the **AtomTutorials** Gem to your project. Follow the instructions in [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems). 
 
