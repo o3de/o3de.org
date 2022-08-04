@@ -241,7 +241,7 @@ The right pane shows the type, fingerprint, version number, Universally Unique I
 
 | Item Name | Description |
 | - | - |
-| **Header** | The asset builder's type, (analysis) fingerprint, version, Bus ID (builder UUID) is shown in this section. Builder Type can be either Internal or External. Internal builders are created and run inside Asset Processor, while external builders are located within Gems and are run inside an AssetBuilder application. |
+| **Header** | The Asset Builder's type, (analysis) fingerprint, version, Bus ID (builder UUID) is shown in this section. Builder Type can be either Internal or External. Internal builders are created and run inside Asset Processor, while external builders are located within Gems and are run inside an AssetBuilder application. |
 | **Patterns** | All the file patterns that this builder wants to work on. Patterns can be defined by regular expressions (RegEx) or wildcards. If a file matches a pattern of the builder, it will become a source asset tracked by Asset Processor. When a source asset changes, Asset Processor will call the builder's CreateJobs function with this asset as an argument. |
 | **Details** | This tab is currently empty and is reserved to show detailed information about this builder in the future. |
 | **Metrics** | This tab shows the accumulation duration that the builder takes to process all source assets it wants to work on. You can expand the tree to see the composition of the duration. The tabular tree is sortable by name, job count, total duration, or average duration. |
