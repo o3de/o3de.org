@@ -23,7 +23,7 @@ The code in this tutorial can be found in the [**Atom Tutorials Gem**](https://g
 As you go along, you can reference the [Material Types and Shaders](get-started-materialtypes-and-shaders) tutorial, which gives higher-level explanations of the mechanisms used in this tutorial.
 
 ## Get started
-Before you can create your material type, ensure you have [installed the engine](/docs/welcome-guide/setup/), [set up a project](/docs/welcome-guide/create/), and [launched the editor](/docs/welcome-guide/tours/editor-tour).
+Before you can create your material type, ensure you have [installed the engine](/docs/welcome-guide/setup/), [set up a project](/docs/welcome-guide/create/), and [launched the Editor](/docs/welcome-guide/tours/editor-tour).
 
 Perform the following steps to get started on making the vegetation bending material type.
 1. Download or clone the `o3de/sample-code-gems` repository from [GitHub](https://github.com/o3de/sample-code-gems).
@@ -42,11 +42,11 @@ Perform the following steps to get started on making the vegetation bending mate
 
    For example, the resulting path might look like: `C:/o3de/Gems/Atom/Feature/Common/Assets/Materials/Types/MaterialInputs/BaseColorPropertyGroup.json`.
    
-   {{< note >}}
+   {{< known-issue >}}
    Currently, O3DE cannot import property groups across Gems. So, you must hard code the absolute path as a proof of concept, even though hard-coding is not recommended as it restricts portability. 
    
    There is a [GitHub issue](https://github.com/o3de/o3de/issues/10623) to enable importing across Gems.
-   {{< /note >}}
+   {{< /known-issue>}}
 
 1. Open the **Editor**, and the assets should automatically process. You can check their status in the **Asset Processor**. If `VegetationBending.materialtype` fails to process, check that you used the correct paths in step 5.
 
@@ -66,7 +66,7 @@ Before you begin editing any files, make a material using your material type in 
 
  1. Create a new material by choosing **File** > **New**. Then in the **Select Type** drop down, choose **VegetationBending** and give the material a name, such as `my_material`. Choose the file location to be somewhere in your project folder, such as in your project's `Materials` folder.
 
- 1. Save your material by hitting **Ctrl-S**. Then, close the Material Editor.
+ 1. Save your material by pressing **Ctrl-S**. Then, close the Material Editor.
 
  1. Back in the Editor, select the *shader ball* that is already included in the default level. The **Entity Inspector** should now show the properties of the shader ball object. 
 
@@ -76,7 +76,7 @@ Before you begin editing any files, make a material using your material type in 
 
 {{< image-width src="/images/learning-guide/tutorials/rendering/vegetation-bending-tutorial/material.png" width="100%" alt="Adding a VegetationBending material to an object's Material component in the O3DE Editor." >}}
 
-Great, you just created a material with your custom material type!
+Great, you created a material with your custom material type!
 
 ## Edit the vertex shader
 Now you are ready to edit your shader to change how the engine renders your material type. 
