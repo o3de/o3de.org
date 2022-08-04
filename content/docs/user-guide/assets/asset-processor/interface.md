@@ -199,10 +199,10 @@ When an asset is selected in the Product Assets tree, information about the asse
 
 | Pane | Description |
 | - | - |
-| **Asset Information** | Information for the product asset including the asset ID, the last time the product was generated, the job key of the job that generated the asset, which platform the asset was produced for, and which source asset is the primary input for the product. |
+| **Asset Information** | Information for the product asset including the asset ID, the last time the product was generated, the job that generated the asset (job key), which platform the asset was produced for, and which source asset is the primary input for the product. |
 | **Outgoing Product Dependencies** | Product assets that this asset depends on are listed here (outgoing dependency). Items in this list can be expanded recursively to show the outgoing dependencies of those items. |
 | **Outgoing Unmet Path Product Dependencies** | Path based product dependencies that have not been resolved. In some cases, these may be optional and expected. In other cases, an unmet path product dependency could indicate a gap in your product dependency graph. If you do not resolve this gap, the bundled release build might be missing content.  |
-| **Incoming Product Dependencies** | Product assets that depends on this asset are listed here (incoming dependency). Items in this list can be expanded recursively to show the incoming dependencies of those items. |
+| **Incoming Product Dependencies** | Product assets that depend on this asset are listed here (incoming dependency). Items in this list can be expanded recursively to show the incoming dependencies of those items. |
 | **Missing Product Dependencies** | A tool that examines the contents of this product asset, looks for references to other product assets, and will report any references that look like product dependencies that are not reported. See [Resolving Missing Assets](/docs/user-guide/packaging/asset-bundler/assets-resolving) for details. |
 
 ## Logs
@@ -241,8 +241,8 @@ The right pane shows the type, fingerprint, version number, Universally Unique I
 
 | Item Name | Description |
 | - | - |
-| **Header** | The builder's type, (analysis) fingerprint, version, Bus ID (builder UUID) is shown in this section. Builder Type can be either Internal or External. Internal builders are created and run inside Asset Processor, while external builders are located within Gems and are run inside an AssetBuilder application. |
-| **Patterns** | All the file patterns that this builder wants to work on. Patterns can be defined by regular expressions (RegEx) or wildcards. If a file matches a pattern of the builder, it will become a source asset tracked by Asset Processor. When such source asset changes, Asset Processor will call the builder's CreateJobs function with this asset as an argument. |
+| **Header** | The asset builder's type, (analysis) fingerprint, version, Bus ID (builder UUID) is shown in this section. Builder Type can be either Internal or External. Internal builders are created and run inside Asset Processor, while external builders are located within Gems and are run inside an AssetBuilder application. |
+| **Patterns** | All the file patterns that this builder wants to work on. Patterns can be defined by regular expressions (RegEx) or wildcards. If a file matches a pattern of the builder, it will become a source asset tracked by Asset Processor. When a source asset changes, Asset Processor will call the builder's CreateJobs function with this asset as an argument. |
 | **Details** | This tab is currently empty and is reserved to show detailed information about this builder in the future. |
 | **Metrics** | This tab shows the accumulation duration that the builder takes to process all source assets it wants to work on. You can expand the tree to see the composition of the duration. The tabular tree is sortable by name, job count, total duration, or average duration. |
 
