@@ -69,7 +69,7 @@ Product assets should never reference other product assets with absolute path be
 
 If the processing of one job requires loading the output product asset of another job, then a job dependency should be declared against that job, and when possible the specific product should be defined in this dependency.
 
-When setting up asset references, be aware that the source asset with the outgoing reference to a product asset may be on two different drive roots, so relative paths may not be possible between the source asset and the referenced product asset.
+When setting up asset references, the source asset with the outgoing reference and the product asset it references maybe be on two different drive roots, so relative paths may not be possible between the source asset and the referenced product asset.
 
 Read more about [job dependencies here.](/docs/user-guide/assets/pipeline/asset-dependencies-and-identifiers/#job-dependencies)
 
