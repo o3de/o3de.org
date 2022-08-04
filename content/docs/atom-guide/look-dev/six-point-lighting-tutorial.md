@@ -57,7 +57,7 @@ Throughout the tutorial, when we use these properties, we will discuss them furt
 
 {{< note >}}
 Everything involving `depth`, including the depth pass and the three properties, won't be used in this tutorial because we lack a depth map texture. However, `SixPointLighting_DepthPass_WithPS.azsl` in the final files does provide the code for adjusting the depth, so you can take a look at that if you are interested in how we would adjust the depth pixel shader.
-{{< \note >}}
+{{< /note >}}
 
 ## Write lua functor to toggle visibility in the Material Editor
 For six-point lighting to work, we need textures that use color channels to indicate the illuminated parts of the texture if light came from a corresponding direction. For example, red parts in the texture could indicate that lighting from the left should affect those parts, whereas blue could indicate lighting from the top. Thus, magenta (red + blue) parts could mean that lighting from both the left and top should be applied.
