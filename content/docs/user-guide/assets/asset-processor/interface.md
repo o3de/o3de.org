@@ -185,6 +185,9 @@ Choose the {{< icon "open-in-internal-app.svg" >}} **Go to** icon next to a prod
 {{< /note >}}
 
 ### Intermediate Assets
+Intermediate Assets are product assets that are monitored by Asset Processor as Source Assets. It allows you to chain builders together and add discrete steps for asset processing. Similar to the source assets pane, the search and the Intermediate Assets tree is on the left. The right side of the pane shows details of the selected Intermediate Asset, including the outcome of the Intermediate Asset, which could be a Product Asset or another Intermediate Asset. You can retrieve more information from [Intermediate Assets documentation](docs/user-guide/assets/pipeline/intermediate-assets).
+
+![Asset Processor UI assets tab - intermediate assets](/images/user-guide/assets/asset-processor/interface-assets-intermediate.png)
 
 ### Product Assets
 
@@ -256,5 +259,7 @@ When Debug Output is enabled, builders that support it will output debug informa
 Initiating a full scan checks all of the scan directories and processes any source assets that need to be processed. You can initiate a full scan to attempt to reprocess jobs that might have failed due to an Asset Builder crash.
 
 ## Shared Cache
+You can configure Asset Cache Server (ACS) settings in Shared Cache view. Asset Cache Server is a way to share cached Product Assets across the team. When Asset Cache Server is enabled, Asset Processor can retrieve preprocessed Product Assets from an asset cache server, saving its processing time. You can set the Asset Cache Server mode, select the remote folder, and manage asset patterns in this view. 
 
+For more information about the Asset Cache Server mode, refer to [Asset Cache Server documentation](asset-cache-server).
 ![Asset Processor UI shared cache tab](/images/user-guide/assets/asset-processor/interface-sharedcache.png)
