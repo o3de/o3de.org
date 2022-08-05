@@ -1,50 +1,44 @@
 ---
-title: Debug Render Component
-linktitle: Debug Render Component
-description: 'Open 3D Engine (O3DE) debug rendering level component reference.'
+title: Debug Rendering Component
+linktitle: Debug Rendering Component
+description: 'Use the Debug Rendering level component with Atom Renderer in Open 3D Engine (O3DE) '
 toc: true
 ---
 
-**Note**: This is a level component, and as such must be added to the level instead of an entity.
+The **Debug Rendering Level Component** is used to visualize rendering information about the scene, such as material properties like albedo and roughness or lighting factors like direct/indirect and diffuse/specular.
+This is a level component and must be added to the level, not an entity.
+
+
+## Provider ##
+
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
+
+
+## Properties
 
 {{< image-width "/images/user-guide/components/reference/atom/debug-rendering/debug-rendering-component.jpg" "500" "Debug Render Component" >}}
 
 
-## Debug Visualization Properties
+## Base Properties
 
-The **Debug Rendering Level Component** is used to visualize rendering information about the scene, such as material properties like albedo and roughness or lighting factors like direct/indirect and diffuse/specular.
-
-| Property | Description |
-|-|-|
-| **Enable Render Debugging** | Whether to utilize render debugging or not. If set to false, properties in this component have no effect. |
-| **Debug View Mode** | Specifies what debug information is displayed in the viewport (for example material albedo, metalness, roughness...). Note that the options "Albedo" and "BaseColor" differ in that BaseColor will display the color used for metal reflectance, whereas Albedo for metals will be zero/black. |
-| **Lighting Type** | Whether to display Diffuse Lighting, Specular Lighting, or both. |
-| **Lighting Source** | Whether to display Direct Lighting, Indirect Lighting, both, or use a debug directional light as the only light source (see the next section). |
-
-Screeshot with **Debug View Mode = Albedo**
-
-{{< image-width "/images/user-guide/components/reference/atom/debug-rendering/albedo.jpg" "1500" "Screeshot with Debug View Mode set to Albedo" >}}
+| Property | Description | Default Value |
+|-|-|-|
+| **Enable Render Debugging** | Whether to utilize render debugging or not. If set to false, properties in this component have no effect. | Off |
+| **Debug View Mode** | Specifies what debug information is displayed in the viewport (for example material albedo, metalness, roughness...). Note that the options "Albedo" and "BaseColor" differ in that BaseColor will display the color used for metal reflectance, whereas Albedo for metals will be zero/black. | None |
+| **Lighting Type** | Whether to display Diffuse Lighting, Specular Lighting, or both. | Diffuse + Specular |
+| **Lighting Source** | Whether to display Direct Lighting, Indirect Lighting, both, or use a debug directional light as the only light source (see the next section). | Direct + Indirect |
 
 
-Screenshot with **Lighting Type = Diffuse** and **Lighting Source = Indirect** (i.e. the scene will only apply indirect diffuse lighting)
-
-{{< image-width "/images/user-guide/components/reference/atom/debug-rendering/indirect-diffuse.jpg" "1500" "Screeshot with Lighting Type set to Diffuse and Lighting Source set to Indirect" >}}
-
-
-## Debug Light Properties
+## Lighting Properties
 
 Sometimes it can be difficult to judge whether normals on objects are correct just by outputting them as color to the screen. The Debug Render Component provides the option to disable all lighting in the scene except for a single directional light (this light doesn't cast shadows). By using and rotating this light, users can more carefully inspect the normals and other material properties of an object in the scene.
 
-| Property | Description |
-|-|-|
-| **Debug Light Azimuth** | The azimuth in degreees used to determine the position of the debug directional light (changing this rotates the light around the up vector). |
-| **Debug Light Elevation** | Determines the elevation in degrees used to determine the position of the debug directional light (change this to move the directional light up/down). |
-| **Debug Light Color** | The color of the debug directional light. |
-| **Debug Light Intensity** | The intensity of the debug directional light. |
-
-Screenshot using the **Debug Light**
-
-{{< image-width "/images/user-guide/components/reference/atom/debug-rendering/debug-light.jpg" "1500" "Screenshot using the Debug Light" >}}
+| Property | Description | Default Value |
+|-|-|-|
+| **Debug Light Azimuth** | The azimuth in degreees used to determine the position of the debug directional light (changing this rotates the light around the up vector). | 0.0 |
+| **Debug Light Elevation** | Determines the elevation in degrees used to determine the position of the debug directional light (change this to move the directional light up/down). | 60.0 |
+| **Debug Light Color** | The color of the debug directional light. | White |
+| **Debug Light Intensity** | The intensity of the debug directional light. | 2.0 |
 
 
 ## Material Override Properties
@@ -53,20 +47,16 @@ The Debug Render Component allows users to override material values for all mate
 
 Values that can be overriden are Base Color, Roughness and Metallic. Normals maps and detail normal maps cannot be overriden but they can be disabled (if both are disabled then materials in the scene will use vertex normals only).
 
-| Property | Description |
-|-|-|
-| **Override Base Color** | Whether to override the base color for all materials in the scene to the value specified below. |
-| **Base Color Value** | The value used to override base color on all materials in the scene. For example you can set this to red to see what your scene would look like if it were entirely red. |
-| **Override Roughness** | Whether to override the roughness for all materials in the scene to the value specified below. |
-| **Roughness Value** | The value used to override roughness on all materials in the scene. For example you can set this to zero if you want to visualize a very glossy and reflective scene. |
-| **Override Metallic** | Whether to override the metallic for all materials in the scene to the value specified below. |
-| **Metallic Value** | The value used to override metallic on all materials in the scene. For example you can set this one to make all materials in your scene metals. |
-| **Enable Normal Maps** | Whether to enable/disable normal maps on all materials in the scene (note that disabling normal maps will also disable detail normal maps, and thus only the vertex normal will be used in shading calculations). |
-| **Enable Detail Normal Maps** | Whether to enable/disable detail normal maps on all materials in the scene (note that not all materials provide or support detail normal maps, therefore those materials will be unaffected by this option). |
-
-Screenshot overriding **Base Color** to **Grey (R:128, G:128, B:128)**
-
-{{< image-width "/images/user-guide/components/reference/atom/debug-rendering/color-override.jpg" "1500" "Screenshot overriding the base color in the scene to grey" >}}
+| Property | Description | Default Value |
+|-|-|-|
+| **Override Base Color** | Whether to override the base color for all materials in the scene to the value specified below. | Off |
+| **Base Color Value** | The value used to override base color on all materials in the scene. For example you can set this to red to see what your scene would look like if it were entirely red. | RGB (128, 128, 128) |
+| **Override Roughness** | Whether to override the roughness for all materials in the scene to the value specified below. | Off |
+| **Roughness Value** | The value used to override roughness on all materials in the scene. For example you can set this to zero if you want to visualize a very glossy and reflective scene. | 1.0 |
+| **Override Metallic** | Whether to override the metallic for all materials in the scene to the value specified below. | Off |
+| **Metallic Value** | The value used to override metallic on all materials in the scene. For example you can set this one to make all materials in your scene metals. | 0.0 |
+| **Enable Normal Maps** | Whether to enable/disable normal maps on all materials in the scene (note that disabling normal maps will also disable detail normal maps, and thus only the vertex normal will be used in shading calculations). | On |
+| **Enable Detail Normal Maps** | Whether to enable/disable detail normal maps on all materials in the scene (note that not all materials provide or support detail normal maps, therefore those materials will be unaffected by this option). | On |
 
 
 ## Custom Debug Properties
@@ -78,6 +68,24 @@ When writing shaders, it can be useful to have immediate access to a tweakable v
 The custom debug float and boolean properties are exposed to shaders via the SceneSrg.azsli and Debug.azsli files.
 
 
-## Provider ##
+## Examples
 
-[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
+Example with **Debug View Mode** set to `Albedo`:
+
+{{< image-width "/images/user-guide/components/reference/atom/debug-rendering/albedo.jpg" "1500" "Screeshot with Debug View Mode set to Albedo" >}}
+
+
+Example of debug lighting, with **Lighting Type** set to `Diffuse` and **Lighting Source** set to `Indirect`:
+
+{{< image-width "/images/user-guide/components/reference/atom/debug-rendering/indirect-diffuse.jpg" "1500" "Screeshot with Lighting Type set to Diffuse and Lighting Source set to Indirect" >}}
+
+
+Example of debug lighting:
+
+{{< image-width "/images/user-guide/components/reference/atom/debug-rendering/debug-light.jpg" "1500" "Screenshot using the Debug Light" >}}
+
+
+Example of debug materials, with **Override Base Color** set to grey (R: `128`, G: `128`, B: `128`):
+
+{{< image-width "/images/user-guide/components/reference/atom/debug-rendering/color-override.jpg" "1500" "Screenshot overriding the base color in the scene to grey" >}}
+
