@@ -3,7 +3,7 @@ title: "C++ STL Algorithms Series - Part 2"
 date: 2022-08-03
 slug: c-stl-algorithms-series-part-2
 author: Tom Hulton-Harrop
-blog_img: "/images/blog/announcement_thumbnail.jpg"
+blog_img: "/images/blog/dev-series.JPG"
 full_img: ""
 ---
 ## Topic
@@ -63,3 +63,10 @@ The talk does a fantastic job of introducing a whole host of algorithms and how 
 Next time we’ll look at another algorithm staple - `transform`.
 
 _Disclaimer: The views expressed here are those of the individual author and do not represent those of the Open 3D Foundation, Open 3D Engine or individual's respective company._
+
+### Check out the other parts of the series:
+
+* [C++ STL Algorithms Series - Part 1](/blog/posts/c-stl-algorithms-series-part-1/)
+* [C++ STL Algorithms Series - Part 2](/blog/posts/c-stl-algorithms-series-part-2/)
+* [C++ STL Algorithms Series - Part 3](/blog/posts/c-stl-algorithms-series-part-3/)
+* [C++ STL Algorithms Series - Part 4](/blog/posts/c-stl-algorithms-series-part-4/)
