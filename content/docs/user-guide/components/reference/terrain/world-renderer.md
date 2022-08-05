@@ -23,7 +23,7 @@ has a much greater impact on total triangle count than the total rendering dista
 These settings impact how far detail materials render, how they fade out, and how they blend with each other. Most of these settings have little impact on performance, however a larger
 render distance here will require more surface data points to be queried as you move around the world and also take more memory.
 #### Clipmap Configuration
-Turning on clipmaps causes all the material blending to be baked into textures for a substantial gain in performance, but also comes with a substantial increase in memory cost.
+Clipmaps are a stack of baked textures centered at the view and covering different distances at different resolutions. Detail materials and macro materials are baked into 2 sets of clipmaps which will take their place when the terrain is rendered. Using clipmaps will have a substantial gain in performance at the cost of texture memory. Clipmap configuration can be used to find a balance between the performance gain and the memory cost.
 
 ## Provider
 

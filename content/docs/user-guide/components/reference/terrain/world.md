@@ -15,7 +15,7 @@ You must add this component to the *Level* entity, the parent of all entities in
 
 The **Min Height** and **Max Height** bounds should be set to as small a range as possible for the most accurate height values. For instance, the terrain renderer uses 16 bit height values, which provides 65536 possible distinct heights. If the difference between the min and max height is 1km, that's a resolution of about 1.5cm.
 
-**Height Query Resolution** and **Surface Data Query Resolution** are a synchronization points for terrain height used by different terrain systems like physics and rendering. The effectively create grids across the world - one for height, and one for surface data. All height and surface data providers will be queried at this grid resolution regardless of the resolution of the data in providers. Ideally, source data in providers with quantized data (like image gradients) will match the query resolution used.
+**Height Query Resolution** and **Surface Data Query Resolution** are synchronization points for terrain height and surface data used by different terrain systems like physics and rendering. They effectively create grids across the world - one for height, and one for surface data. All height and surface data providers will be queried at this grid resolution regardless of the resolution of the data in providers. Ideally, source data in providers with quantized data (like image gradients) will match the query resolution used.
 
 For example, if a heightmap with 10 texels/m is used with a terrain that has a 1m height query resolution, 9/10 of the texels will be ignored. If the heightmap has 1 texel/m with a 1 m height query resolution, then all of the texels will be used.
 
