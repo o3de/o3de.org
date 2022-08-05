@@ -3,7 +3,7 @@ title: "C++ STL Algorithms Series - Part 1"
 date: 2022-07-20
 slug: c-stl-algorithms-series-part-1
 author: Tom Hulton-Harrop
-blog_img: "/images/blog/announcement_thumbnail.jpg"
+blog_img: "/images/blog/dev-series.JPG"
 full_img: ""
 ---
 An introduction to why you might want to start using the `<algorithm>` and `<numeric>` header more in your code.
@@ -61,3 +61,10 @@ In upcoming posts we’ll have more recommendations that go into much greater de
 Next time we’ll explore a few more concrete examples to show where algorithms can really come into their own and include additional references for more information.
 
 _Disclaimer: The views expressed here are those of the individual author and do not represent those of the Open 3D Foundation, Open 3D Engine or individual's respective company._
+
+### Check out the other parts of the series:
+
+* [C++ STL Algorithms Series - Part 1](/blog/posts/c-stl-algorithms-series-part-1/)
+* [C++ STL Algorithms Series - Part 2](/blog/posts/c-stl-algorithms-series-part-2/)
+* [C++ STL Algorithms Series - Part 3](/blog/posts/c-stl-algorithms-series-part-3/)
+* [C++ STL Algorithms Series - Part 4](/blog/posts/c-stl-algorithms-series-part-4/)
