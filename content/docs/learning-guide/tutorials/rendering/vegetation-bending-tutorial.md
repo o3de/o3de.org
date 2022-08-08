@@ -23,9 +23,9 @@ The code in this tutorial can be found in the [**Atom Tutorials Gem**](https://g
 As you go along, you can reference the [Material Types and Shaders](get-started-materialtypes-and-shaders) tutorial, which gives higher-level explanations of the mechanisms used in this tutorial.
 
 ## Get started
-Before you can create your material type, ensure you have [installed the engine](/docs/welcome-guide/setup/), [set up a project](/docs/welcome-guide/create/), and [launched the Editor](/docs/welcome-guide/tours/editor-tour).
 
-Perform the following steps to get started on making the vegetation bending material type.
+Vegetation bending is done through a material that uses vertex shaders to create the effect. Begin by setting up a vegetation bending material type with the following steps:
+ 
 1. Download or clone the `o3de/sample-code-gems` repository from [GitHub](https://github.com/o3de/sample-code-gems).
 
 1. The template files for this tutorial are in `atom_gems/AtomTutorials/Templates/VegetationBending/`. Move all of the files to `{your-project-path}\Materials\Types\`.
@@ -50,7 +50,8 @@ Perform the following steps to get started on making the vegetation bending mate
 
 1. Open the **Editor**, and the assets should automatically process. You can check their status in the **Asset Processor**. If `VegetationBending.materialtype` fails to process, check that you used the correct paths in step 5.
 
-As a high-level overview:
+The following list is an overview of the files required for a material:
+``
 - The [`.materialtype`](/docs/atom-guide/dev-guide/materials/materials/#material-types) file references the shader files you will use on the material of this material type. 
 - The [`.shader`](/docs/atom-guide/look-dev/shaders/shader-file-spec.md) files define which types of shaders, such as vertex and pixel shaders, should be used, and references the actual shader code in [`.azsl`](/docs/atom-guide/dev-guide/shaders/azsl/) files. They also specify the `DrawList`, which controls which pass should run that shader. 
 - Often, `.azsl` files will include `.azsli` files, which are also written in the Amazon Shading Language (AZSL). These files are separate so multiple `.azsl` files can reuse the shader code from the `.azsli` files. 
@@ -62,7 +63,6 @@ These template files were created by duplicating important parts of the `Standar
 ## Add a material with the VegetationBending material type
 Before you begin editing any files, make a material using your material type in the **Editor**.
 
- 1. Launch the Editor, and open the **Material Editor**. For information on how to do this, see the [Material Editor](/docs/atom-guide/look-dev/materials/material-editor) page.
 
  1. Create a new material by choosing **File** > **New**. Then in the **Select Type** drop down, choose **VegetationBending** and give the material a name, such as `my_material`. Choose the file location to be somewhere in your project folder, such as in your project's `Materials` folder.
 
