@@ -1,5 +1,5 @@
 ---
-linkTitle: Vertex Deformation for Vegetation Bending Tutorial
+linkTitle: Vertex Deformation
 title: Vertex Deformation for Vegetation Bending Tutorial
 description: A tutorial for adding vegetation bending by creating custom a material type and authoring shaders with the Atom Renderer in the Open 3D Engine (O3DE).
 toc: true
@@ -22,17 +22,13 @@ The code in this tutorial can be found in the [**Atom Tutorials Gem**](https://g
 
 As you go along, you can reference the [Material Types and Shaders](get-started-materialtypes-and-shaders) tutorial, which gives higher-level explanations of the mechanisms used in this tutorial.
 
-## Get started
+## Create a material type
 
 Vegetation bending is done through a material that uses vertex shaders to create the effect. Begin by setting up a vegetation bending material type with the following steps:
  
 1. Download or clone the `o3de/sample-code-gems` repository from [GitHub](https://github.com/o3de/sample-code-gems).
 
 1. The template files for this tutorial are in `atom_gems/AtomTutorials/Templates/VegetationBending/`. Move all of the files to `{your-project-path}\Materials\Types\`.
-
-   {{< tip >}}
-   Notice that there are a couple of significant files and file extensions that you need to make your custom material type. This tutorial will explain each file as you go along. You can also find more details in the [Material Types and Shaders](get-started-materialtypes-and-shaders) tutorial. 
-   {{< /tip >}}
 
 1. Move all the files in `atom_gems/AtomTutorials/Assets/VegetationBending/Objects/` to `{your_project_path}\Objects`. Make the `Objects` folder as needed.
 
