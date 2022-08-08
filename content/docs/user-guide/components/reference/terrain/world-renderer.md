@@ -43,7 +43,7 @@ Clipmaps are a stack of baked textures centered at the view and covering differe
 | Mesh render distance | The distance from the camera that terrain meshes will render in meters. | 1.0 to 100000.0 | 4096.0 |
 | First LOD distance | The distance from the camera that the first LOD renders to. Subsequent LODs will be at double the distance from the previous LOD. | 1.0 to 10000.0 | 128.0 |
 | Continuous LOD (CLOD) | Enables the use of continuous level of detail, which smoothly blends geometry between terrain LODs. | Boolean | true |
-| CLOD Distance | Distance in meters over which the first LOD will blend into the next LOD. Subsequent LOD blend distances will double with each LOD for a consistent visual appearance. | 0.0 to 1000.0 | 16.0
+| CLOD Distance | Distance in meters over which the first LOD will blend into the next LOD. Subsequent LOD blend distances will double with each LOD for a consistent visual appearance. <br><br>  {{< note >}} Generally this should be less than about 25% of **First LOD distance**. If set too low, seams may appear in the terrain. {{< /note >}} | 0.0 to 1000.0 | 16.0 |
 | |
 | **Detail Material Configuration** |
 | Height based texture blending | When turned on, detail materials will use the height texture to aid with blending. | Boolean | False |
