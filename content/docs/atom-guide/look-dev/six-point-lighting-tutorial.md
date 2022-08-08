@@ -4,7 +4,7 @@ title: Custom Lighting Tutorial with Flipbook Animation
 description: A tutorial for custom lighting using a flipbook animation with six-point lighting in the Atom renderer of the Open 3D Engine (O3DE).
 toc: true
 ---
-In this tutorial, we cover how to make your own material type that uses a custom surface with custom lighting. In this case, we will be using a flipbook animation with six-point lighting. This material type is especially useful for use on effects such as smoke and clouds, since we want to animate movement while still capturing correct lighting. However, traditional lighting methods would not work because it is a 2D texture. Therefore, to apply the correct lighting, we will need a custom material type that uses custom lighting. We follow [this technique](https://realtimevfx.com/t/smoke-lighting-and-texture-re-usability-in-skull-bones/5339) to use six tangent lightmaps (top, bottom, left, right, front, and back) to approximate how a texel should be lit from any given direction. 
+This tutorial covers how to make your own material type that uses a custom surface with custom lighting. In this case, we use a flipbook animation with six-point lighting. This material type is especially useful for effects such as smoke and clouds, since we want to animate movement while still capturing correct lighting. However, traditional lighting methods would not work because it is a 2D texture. Therefore, to apply the correct lighting, we will need a custom material type that uses custom lighting. We follow [this technique](https://realtimevfx.com/t/smoke-lighting-and-texture-re-usability-in-skull-bones/5339) to use six tangent lightmaps (top, bottom, left, right, front, and back) to approximate how a texel should be lit from any given direction. 
 
 This tutorial covers the following concepts:
 * Edit your own material type
@@ -14,28 +14,33 @@ This tutorial covers the following concepts:
 * Add custom lighting
 
 ## Prerequisites
-Ensure you have [installed the engine](/docs/welcome-guide/setup/), [set up a project](/docs/welcome-guide/create/), and [launched the editor](/docs/welcome-guide/tours/editor-tour).
-
 Before starting this tutorial, be sure to complete the [material type tutorial](). Specifically, be familiar with working with material types and editing shaders.
 
-## Get started
+## Make a material type
 Do the following steps to get started on making the six-point lighting material type.
+
 1. Download the template files from [here]().
-1. Move `SixPointLightingPropertyGroup.json` to `{your-project-path}\Materials\Types\MaterialInputs\`. Create new folders as needed!
-1. Move `EvaluateSixPointSurface.azsli` to `{your-project-path}\Materials\Types\MaterialFunctions\`
-1. Move the rest of the downloaded files to 
-   `{your-project-path}\Materials\Types\`.
-1. Open `{your-project-path}\Materials\Types\SixPointLighting.materialtype`. Under `propertyLayout` > `propertyGroups`, you'll see there are many entries with `{your-path-to-o3de}`. Replace `{your-path-to-o3de}` with your appropriate path to the engine.
+
+2. Move `SixPointLightingPropertyGroup.json` to `{your-project-path}\Materials\Types\MaterialInputs\`. Create new folders as needed!
+
+3. Move `EvaluateSixPointSurface.azsli` to `{your-project-path}\Materials\Types\MaterialFunctions\`
+   
+4. Move the rest of the downloaded files to `{your-project-path}\Materials\Types\`.
+
+5. Open `{your-project-path}\Materials\Types\SixPointLighting.materialtype`. Under `propertyLayout` > `propertyGroups`, you'll see there are many entries with `{your-path-to-o3de}`. Replace `{your-path-to-o3de}` with your appropriate path to the engine.
+   
    * For example, `C:/o3de/Gems/Atom/Feature/Common/Assets/Materials/Types/MaterialInputs/BaseColorPropertyGroup.json`.
    * Currently we cannot import property groups across gems, so we are hard coding the absolute path, even though it is not portable, as a proof of concept. There is a GHI to enable importing across gems at [o3de#10623](https://github.com/o3de/o3de/issues/10623).
-1. We also need to download some assets to actually test the animation and lighting! Download the following textures from [here]():
+
+6. We also need to download some assets to actually test the animation and lighting! Download the following textures from [here]():
    * SmokeBall01_6Way_BBF_8x8.png
    * SmokeBall01_6Way_RLT_8x8.png
    * SmokeBall01_ColorCC_8x8.png
   These textures are provided from [this Github repository (Unity-URP-SmokeLighting)](https://github.com/peeweek/Unity-URP-SmokeLighting/tree/main/Assets/VFX/SmokeLighting/Textures/2D) and distributed under the MIT license.
+
 1. Move the three assets to `{your-project-path}\Materials`.
 
-These template files have everything set up so that we can get started to create our own custom surface and lighting. They were created by duplicating important parts of the `StandardPBR` files and then modifying them. Most of the changes made were to strip out unnecessary parts from `StandardPBR`'s files. When you create your own material types in the future, you can similarly duplicate `StandardPBR` files and work from there.
+These template files have everything set up so that we can get started with creating our own custom surface and lighting. They were created by duplicating important parts of the `StandardPBR` files and then modifying them. Most of the changes made were to strip out unnecessary parts from `StandardPBR`'s files. When you create your own material types in the future, you can similarly duplicate `StandardPBR` files and work from there.
 
 These files already include all of the properties that we will need. If you are unsure how to add or use properties, reference [this step](). The properties we will need are:
 * `o_sixPointTexturePackMode` - property option to choose which texture pack mode to use
@@ -51,9 +56,9 @@ These files already include all of the properties that we will need. If you are 
 * `o_enableDebugFrame` - property to toggle wheter to enable debugging on a single frame of the animation
 * `m_debugFrame` - property for the frame number to debug.
 
-Most of these properties are defined in the `MaterialSrg` in `SixPointLighting_Common.azsli`, but the option booleans are defined elsewhere. `o_enableDepthTexture` and `o_enableDebugFrame` are defined at the bottom of `SixPointLighting_Common.azsli` and `o_sixPointTexturePackMode` is defined in the *Material Parameters* of `SixPointLighting_ForwardPass.azsl`. 
+`o_enableDepthTexture` and `o_enableDebugFrame` are defined at the bottom of `SixPointLighting_Common.azsli` and `o_sixPointTexturePackMode` is defined in the *Material Parameters* of `SixPointLighting_ForwardPass.azsl`. The rest of the properties are defined in the `MaterialSrg` in `SixPointLighting_Common.azsli`.
 
-Throughout the tutorial, when we use these properties, we will discuss them further, so don't worry if some of these properties don't make sense right now!
+These properties will be explained in greater depth throughout the tutorial.
 
 {{< note >}}
 Everything involving `depth`, including the depth pass and the three properties, won't be used in this tutorial because we lack a depth map texture. However, `SixPointLighting_DepthPass_WithPS.azsl` in the final files does provide the code for adjusting the depth, so you can take a look at that if you are interested in how we would adjust the depth pixel shader.
@@ -106,13 +111,20 @@ In order to see the **Material Editor** changes take place, we need to make a si
 ## Make a six-point lighting material
 Let's make a material using our six-point lighting material type.
 1. Open up the **Material Editor** and make a new material with the six-point lighting type.
-1. Find the **Six Point Lighting** properties in the **Inspector** on the right.
-1. Notice how the default **Texture Pack Mode** is `TpLftRtBt_FrBck`. The two properties below that correspond to this texture pack mode, and the properties for the other texture pack mode are hidden! Select `RtLftTp_BtBckFr` and observe how the properties change. Now, select `SmokeBall01_6Way_RLT_8x8.png` for the **Right Left Top** property, and `SmokeBall01_6Way_BBF_8x8.png` for the **Bottom Back Front** property. 
-1. Under **Base Color** > **Texture**, choose `SmokeBall01_ColorCC_8x8.png`. Then, disable **Use Texture**. We are disabling this texture because we don't actually want to use the texture for our base color, but instead only use the alpha channel as shown in the next step. 
-1. Under **Opacity** > **Opacity Mode**, choose `Blended`. For **Alpha Source**, select `Packed`. This means that the opacity map will use the alpha channel packed into the base color texture. Ensure that both the opacity **Factor** and **Alpha affects specular** is `1.0`.
-1. Set **UVs** > **Center** to be `0.0` for both **U** and **V**. 
-1. Enable **General Settings** > **Double-sided**. This allows for rendering of the back-side of the material.
-1. In the **Editor**, make an entity with **Mesh** and **Material** components. Choose a plane for the **Mesh** (`o3de/Gems/Atom/Tools/MaterialEditor/Assets/MaterialEditor/ViewportModels/Plane_1x1.fbx`) and the material you just created for the material.
+   
+2. Find the **Six Point Lighting** properties in the **Inspector** on the right.
+   
+3. Notice how the default **Texture Pack Mode** is `TpLftRtBt_FrBck`. The two properties below that correspond to this texture pack mode, and the properties for the other texture pack mode are hidden! Select `RtLftTp_BtBckFr` and observe how the properties change. Now, select `SmokeBall01_6Way_RLT_8x8.png` for the **Right Left Top** property, and `SmokeBall01_6Way_BBF_8x8.png` for the **Bottom Back Front** property. 
+   
+4. Under **Base Color** > **Texture**, choose `SmokeBall01_ColorCC_8x8.png`. Then, disable **Use Texture**. We are disabling this texture because we don't actually want to use the texture for our base color, but instead only use the alpha channel as shown in the next step. 
+   
+5. Under **Opacity** > **Opacity Mode**, choose `Blended`. For **Alpha Source**, select `Packed`. This means that the opacity map will use the alpha channel packed into the base color texture. Ensure that both the opacity **Factor** and **Alpha affects specular** is `1.0`.
+   
+6. Set **UVs** > **Center** to be `0.0` for both **U** and **V**. 
+   
+7. Enable **General Settings** > **Double-sided**. This allows for rendering of the back-side of the material.
+   
+8. In the **Editor**, make an entity with **Mesh** and **Material** components. Choose a plane for the **Mesh** (`o3de/Gems/Atom/Tools/MaterialEditor/Assets/MaterialEditor/ViewportModels/Plane_1x1.fbx`) and the material you just created for the material.
 
 {{< image-width src="/images/atom-guide/six-point-lighting/material.png" width="100%" alt="Material added." >}}
 
@@ -124,7 +136,8 @@ As of now, the entity should just display the whole alpha texture with all the f
 Let's add the animation! Our textures contain all the frames of the animation so we just need to programatically iterate through the frames to have the animation appear.
 
 1. We want to get the position of the correct frame in the texture map accorrding to the time. Open `SixPointLighting_Common.azsli`.
-1. At the bottom, add the following function and option booleans:
+   
+2. At the bottom, add the following function and option booleans:
    ```hlsl
    float2 GetUvForCurrentFrame(float2 baseUv)
    {
@@ -146,10 +159,11 @@ Let's add the animation! Our textures contain all the frames of the animation so
       return sixPointUv;
    }
    ```
-1. Let's see the animation in action! Open `SixPointLighting_ForwardPass.azsl`.
+
+3. Let's see the animation in action! Open `SixPointLighting_ForwardPass.azsl`.
    1. Find `ForwardPassPS_Common`. 
-   1. Find where our surface is defined: `Surface surface`.
-   1. Right below it, you'll see a section for *Alpha & Clip*. The `alpha` value is the first place we want to adjust the pixel shader because we want to use our own opacity map, and we want to use the current frame's UV. Replace the line of code defining `alpha` with
+   2. Find where our surface is defined: `Surface surface`.
+   3. Right below it, you'll see a section for *Alpha & Clip*. The `alpha` value is the first place we want to adjust the pixel shader because we want to use our own opacity map, and we want to use the current frame's UV. Replace the line of code defining `alpha` with
    ```hlsl
    float2 baseColorUv = IN.m_uv[MaterialSrg::m_baseColorMapUvIndex];
    float2 sixPointUv = GetUvForCurrentFrame(baseColorUv);
@@ -166,7 +180,8 @@ For six-point lighting to work, we will need to add a few parameters to make our
 
 For our surface, we need to add properties that define the six directions:
 1. Open `SixPointSurface.azsli`.
-1. Inside the `Surface` class, under the list of `BasePbrSurfaceData`, add:
+   
+2. Inside the `Surface` class, under the list of `BasePbrSurfaceData`, add:
    ```hlsl
    float top;
    float left;
@@ -268,7 +283,7 @@ Let's add our custom lighting:
       }
       ```
 
-Great, now all the custom surface and lighting is now done! In the **Editor**, look at how your material has lighting now. Try adding more entities with a **Directional Light** component around your material to see the different effects. For example, try moving the light to point to the top of your material and see how the lighting responds accordingly! Also, adjust the **Intensity** of the light in the **Directional Light** component as needed to make your cloud look more realistic. Your material will also respond to other light types and multiple lights at the same time.
+Great, now all the custom surface and lighting is now done! Your material should now have lighting in the **Editor**. Try adding more entities with a **Directional Light** component around your material to see the different effects. For example, try moving the light to point to the top of your material and see how the lighting responds accordingly! Also, adjust the **Intensity** of the light in the **Directional Light** component as needed to make your cloud look more realistic. Your material will also respond to other light types and multiple lights at the same time.
 
 {{< video src="/images/atom-guide/six-point-lighting/final.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of the final lighting." >}}
 
