@@ -38,8 +38,10 @@ Do the following steps to get started on making the six-point lighting material 
    For example, `C:/o3de/Gems/Atom/Feature/Common/Assets/Materials/Types/MaterialInputs/BaseColorPropertyGroup.json`.
 
    {{< known-issue >}}
-   Currently we cannot import property groups across gems, so we are hard coding the absolute path, even though it is not portable, as a proof of concept. There is a GHI to enable importing across gems at [o3de#10623](https://github.com/o3de/o3de/issues/10623).
-   {{< /known-issue >}}
+   Currently, O3DE cannot import property groups across Gems. So, you must hard code the absolute path as a proof of concept, even though hard-coding is not recommended as it restricts portability. 
+
+   There is a [GitHub issue](https://github.com/o3de/o3de/issues/10623) to enable importing across Gems.
+   {{< /known-issue>}}
 
 These files already include all of the properties that you will need. If you are unsure how to add or use properties, reference [this step](). The properties you will need are:
 * `o_sixPointTexturePackMode` - property option to choose which texture pack mode to use
@@ -61,7 +63,7 @@ These files already include all of the properties that you will need. If you are
 Everything involving `depth`, including the depth pass and the three properties, won't be used in this tutorial because we lack a depth map texture. However, `SixPointLighting_DepthPass_WithPS.azsl` in the final files does provide the code for adjusting the depth, so you can take a look at that if you are interested in how we would adjust the depth pixel shader.
 {{< /note >}}
 
-## Write lua functor to toggle visibility in the Material Editor
+## Write Lua functor to toggle visibility in the Material Editor
 The six-point lighting material type allows for six tangent lightmaps that correspond to six colors from the textures. However, each texture can only contain up to four channels (red, green, blue, alpha), so the technique requires two textures. The channels used for each texture can be up to the artist, but this material type in this tutorial will provide support for two options:
 1. TopLeftRightBottom_FrontBack option
    1. First texture:
@@ -111,10 +113,11 @@ In order to see the Material Editor changes take place, make a six-point lightin
    
 3. Notice how the default **Texture Pack Mode** is `TpLftRtBt_FrBck`. The two properties below that correspond to this texture pack mode, and the properties for the other texture pack mode are hidden. 
 
-4. Select `RtLftTp_BtBckFr` and observe how the properties change.
+4. Select `RtLftTp_BtBckFr` for the **Texture Pack Mode** and observe how the properties change.
 
 5. Set the following properties accordingly:
     * **Six Point Lighting**
+      * **Texture Pack Mode**: `RtLftTp_Bt_BckFr`
       * **Right Left Top**: `SmokeBall01_6Way_RLT_8x8.png`
       * **Bottom Back Front**: `SmokeBall01_6Way_BBF_8x8.png`
       * **Rows in Flipbook**: `8.0`
@@ -300,6 +303,7 @@ As discussed earlier, you will make a light map that uses the lighting direction
    Specular lighting simulates the bright spot on a shiny object that most brightly reflects light into the camera. In the six-point lighting case, you do not need any specular lighting because 1) specular lighting can't effectively be applied on the 2D textures and 2) the use cases do not require it, as you are mainly using this technique for clouds and non-shiny objects.
 
    1. Edit the `GetSpecularLighting()` function to not return any specular lighting.
+   
       ```glsl
       float3 GetSpecularLighting(Surface surface, LightingData lightingData, const float3 lightIntensity, const float3 dirToLight)
       {
@@ -341,10 +345,10 @@ As discussed earlier, you will make a light map that uses the lighting direction
 
 Great, the directional lighting is done! Your material should now have lighting in the **Editor**. Try adding more entities with a **Directional Light** component around your material to see the different effects. For example, try moving the light to point to the top of your material and see how the lighting responds accordingly! Also, adjust the **Intensity** of the light in the **Directional Light** component as needed to make your cloud look more realistic. Your material will also respond to other light types and multiple lights at the same time.
 
-{{< video src="/images/atom-guide/six-point-lighting/final.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of the final lighting." >}}
+{{< video src="/images/atom-guide/six-point-lighting/directional-lighting.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of changing direction of the light applied onto the six-point lighting cloud." >}}
 
 ### Add image-based lighting
-You will also add IBL to the six-point lighting material type. On 3D objects, IBL works by sending raycasts from the normal at each pixel on the material to the sky box. The raycasts take the color of the sky box and reflect that color on the material.
+You may notice that the shadows in the cloud are mostly grey, which doesn't reflect the environment well. If you turn off all lighting and rotate the material, the six-point lighting material changes colors unnaturally. This is because the template files include the standard IBL method from StandardPBR. Therefore, you will also customize IBL in the six-point lighting material type. On 3D objects, IBL works by sending raycasts from the normal at each pixel on the material to the sky box. The raycasts take the color of the sky box and reflect that color on the material.
 
 The six-point lighting material can't use this method because the raycasts would all be sent from the normal of the plane. Therefore, instead of using normals, you can use the six directions to approximate the IBL.
 
@@ -419,13 +423,17 @@ For each pixel, you will essentially perform six raycasts in each of the directi
    For example, at the top of a texture, `surface.top` would be very intense (around `255.0`), but `surface.bottom` would be very mild (around `0.0`). Therefore, at the top of the texture the `bottomSample` would essentially have no effect on the color. 
    {{< /tip >}}
 
-1. Open the Editor and turn off any directional lights. You should see the colors on your material reflect those of the skybox.
+5. Open the Editor and turn off any lights. You should see the colors on your material reflect those of the skybox (blue at the top and orange at the bottom).
 
-((ADD VIDEO HERE))
+   {{< video src="/images/atom-guide/six-point-lighting/ibl.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of rotating the six-point lighting material to see how IBL affects the " >}}
 
-Awesome, you added IBL lighting!
+6. Turn on the lights again and observe how IBL works with the directional lighting!
+
+   {{< video src="/images/atom-guide/six-point-lighting/final.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of changing direction of the light applied onto the six-point lighting cloud." >}}
+
+Awesome, you added custom directional lighting and IBL!
 
 ## Download the AtomTutorial Gem sample
-Now that you've completed this tutorial, you can compare your results to our working version of six-point lighting in the **AtomTutorials**Gem in the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). You can either download and place the [final working six point lighting files]() in your project, or you can [download the Gem and add it to the engine]() if you haven't already in the [vertex deformation tutorial](). 
+Now that you've completed this tutorial, you can compare your results to our working version of six-point lighting in the **AtomTutorials** Gem in the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). You can either download and place the [final working six point lighting files]() in your project, or you can [download the Gem and add it to the engine]() if you haven't already in the [vertex deformation tutorial](). 
 
 Congratulations, you are now done with this tutorial! 
