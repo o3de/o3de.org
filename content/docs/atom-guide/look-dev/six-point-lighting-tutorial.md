@@ -86,7 +86,7 @@ In `SixPointLightingPropertyGroup.json`, there is already four properties for th
 
 1. Open `SixPointLighting_TexturePackEnum.lua`. Notice the two functions `GetMaterialPropertyDependencies()` and `ProcessEditor()`. `GetMaterialPropertyDependencies()` gets the value of a property of a material. `ProcessEditor()` can then use the property values to enable and disable visibility of the properties in the Material Editor.
 2. Following how `sixPointLighting.TLRB`'s visibility is enabled and disabled, enable and disable the other texture options as appropriate:
-   ```glsl
+   ```lua
    if(texturePackMode == TexturePackMode_TpLftRtBt_FrBck) then
       -- TopLeftRightBack is the first texture, FrontBack is the second. Disable RightLeftTop and BottomBackFront.
       context:SetMaterialPropertyVisibility("sixPointLighting.TLRB", MaterialPropertyVisibility_Enabled)
@@ -105,7 +105,7 @@ In `SixPointLightingPropertyGroup.json`, there is already four properties for th
 ## Make a six-point lighting material
 In order to see the Material Editor changes take place, make a six-point lighting material.
 
-1. Open up the **Material Editor**, and make a new material with the six-point lighting material type.
+1. Open the **Material Editor**, and make a new material with the six-point lighting material type.
    
 2. Find the **Six Point Lighting** properties in the **Inspector**.
    
@@ -184,17 +184,21 @@ The next step is to add animation to the material. The textures contain all the 
    {{< /note >}}
 
 3. Open `SixPointLighting_ForwardPass.azsl` to make some final edits to see the animation in action.
+   
    1. Find `ForwardPassPS_Common`. 
+   
    2. Find where your surface is defined: `Surface surface`.
+   
    3. Right below it, find a section for *Alpha & Clip*. Edit the `alpha` value to use the opacity map and use the current frame's UV:
-   ```hlsl
+   
+   ```glsl
    float2 baseColorUv = IN.m_uv[MaterialSrg::m_baseColorMapUvIndex];
    float2 sixPointUv = GetUvForCurrentFrame(baseColorUv);
 
    float alpha = GetAlphaInputAndClip(MaterialSrg::m_baseColorMap, MaterialSrg::m_opacityMap, sixPointUv, sixPointUv, MaterialSrg::m_sampler, MaterialSrg::m_opacityFactor, o_opacity_source);
    ``` 
 
-1. Open the **Editor** again and look at the animation! You haven't applied any custom lighting just yet, so you should just see the animation of the base color with the alpha texture.
+4. Open the **Editor** again and look at the animation! You haven't applied any custom lighting just yet, so you should just see the animation of the base color with the alpha texture.
 
 {{< video src="/images/atom-guide/six-point-lighting/animation.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of the animation." >}}
 
@@ -291,12 +295,12 @@ As discussed earlier, you will make a light map that uses the lighting direction
 
       The six-point lighting `ForwardPassPS_Common` shader uses the default `ApplyDirectLighting()` function, which will iterate over the lights that apply to this object and invoke these custom `GetDiffuseLighting()` and `GetSpecularLighting()` functions for each light.
 
-2. Start off simply with `GetSpecularLighting()`.
+2. Start off editing the lighting simply with `GetSpecularLighting()`.
    
    Specular lighting simulates the bright spot on a shiny object that most brightly reflects light into the camera. In the six-point lighting case, you do not need any specular lighting because 1) specular lighting can't effectively be applied on the 2D textures and 2) the use cases do not require it, as you are mainly using this technique for clouds and non-shiny objects.
 
    1. Edit the `GetSpecularLighting()` function to not return any specular lighting.
-      ```hlsl
+      ```glsl
       float3 GetSpecularLighting(Surface surface, LightingData lightingData, const float3 lightIntensity, const float3 dirToLight)
       {
          return float3(0.0f, 0.0f, 0.0f);
@@ -311,7 +315,7 @@ As discussed earlier, you will make a light map that uses the lighting direction
       
       First, convert the direction of the light to tangent space. Then, choose the correct horizontal, vertical, and depth side according to the light direction. Finally, find the overall intensity of the light. 
 
-      ```hlsl
+      ```glsl
       float ComputeLightMap(const float3 dirToLightWS, const Surface surface)
       {
          float3 dirToLightTS = WorldSpaceToTangent(dirToLightWS, surface.normal, surface.tangent, surface.bitangent);
@@ -324,7 +328,7 @@ As discussed earlier, you will make a light map that uses the lighting direction
       ```
 
    2. Use `GetDiffuseLighting()` to call the function and apply the results:
-      ```hlsl
+      ```glsl
       float3 GetDiffuseLighting(Surface surface, LightingData lightingData, float3 lightIntensity, float3 dirToLight)
       {
          float lightMap = ComputeLightMap(dirToLight, surface);
@@ -409,11 +413,11 @@ For each pixel, you will essentially perform six raycasts in each of the directi
    }
    ```
 
-   {{ tip }}
+   {{< tip >}}
    Multiplying the sampled color by the surface property is the key to making this lighting approximation work. Recall that the surface property gives us the intensity of the light on a texel if light were to come from that respective direction. Therefore, multipling the sampled color by the intensity scales the color value appropriately.
 
    For example, at the top of a texture, `surface.top` would be very intense (around `255.0`), but `surface.bottom` would be very mild (around `0.0`). Therefore, at the top of the texture the `bottomSample` would essentially have no effect on the color. 
-   {{ /tip }}
+   {{< /tip >}}
 
 1. Open the Editor and turn off any directional lights. You should see the colors on your material reflect those of the skybox.
 
