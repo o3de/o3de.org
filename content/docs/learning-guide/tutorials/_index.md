@@ -70,3 +70,11 @@ Create physics simulations in O3DE with NVIDIA's PhysX system. The tutorials in 
 | Tutorial | Description |
 | - | - |
 | [PostFX Shape Weight Modifier](postfx/use-postfx-shape-weight-modifier) | Use a **PostFX Shape Weight Modifier** component to modify exposure control in O3DE. This example demonstrates how to modify post-processing effects (PostFX) at runtime. |
+
+## Rendering
+
+| Tutorial | Description |
+| - | - |
+| [Create a StandardPBR material](rendering/create-standardpbr-material) | This tutorial walks you through creating your first StandardPBR material using the Material Editor. |
+| [Material Types and Shaders](rendering/get-started-materialtypes-and-shaders) | A beginner-level tutorial introducing material types and shaders in Atom. Learn how to create a custom material type with a simple AZSL shader. |
+| [Vertex Deformation for Vegetation Bending Tutorial](rendering/vegetation-bending-tutorial) | Use the **Atom Renderer** to create a custom material type with custom vertex shaders for vegetation bending. |
