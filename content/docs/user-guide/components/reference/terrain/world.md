@@ -29,11 +29,11 @@ You must add this component to the *Level* entity, the parent of all entities in
 
 ## Usage 
 
-The **Min Height** and **Max Height** bounds should be set to as small a range as possible for the most accurate height values. For instance, the terrain renderer uses 16-bit height values, which provides 65536 possible distinct heights. If the difference between the min and max height is 1 km, that's a resolution of about 1.5 cm.
+We recommend that you set the **Min Height** and **Max Height** bounds to as small of a range as possible,  to achieve more accurate height values . The terrain renderer uses 16-bit height values, which provides 65536 possible distinct heights. So, if the difference between the min and max height is 1 km, then the resolution is about 1.5 cm. 
 
-**Height Query Resolution** and **Surface Data Query Resolution** are synchronization points for terrain height and surface data used by different terrain systems like physics and rendering. They effectively create grids across the world - one for height, and one for surface data. All height and surface data providers will be queried at this grid resolution regardless of the resolution of the data in providers. Ideally, source data in providers with quantized data (like image gradients) will match the query resolution used.
+**Height Query Resolution** and **Surface Data Query Resolution** are used to define consistent spacing, centered at the origin, for terrain height and surface queries across the entire world. Different systems that use terrain data, such as physics and rendering, can also use these conceptual grids to make implementation decisions about how to best use the terrain data. The input data to the terrain system can be authored or generated at any resolution, but the terrain system will by default query the input data only at points aligned to the grid. This creates a consistent view of the input data. Since the input data will normally only be used at these resolutions, we recommend that input gradients that have quantized source data, like images, match the appropriate query resolution.
 
-For example, if a heightmap with 10 texels/m is used with a terrain that has a 1m height query resolution, 9/10 of the texels will be ignored. If the heightmap has 1 texel/m with a 1 m height query resolution, then all of the texels will be used.
+For example, if a terrain uses a heightmap image with 10 texels/meter with a 1 meter height query resolution, then 9 out of 10 of the texels are ignored. If the heightmap image has 1 texel/meter with a 1 meter height query resolution, then all of the texels are used.
 
 For physics, **Height Query Resolution** controls the density of the underlying height field collider. For rendering, this determines the triangle density of the closest level of detail.
 **Surface Data Query Resolution** affects the density of detail materials for detail material blending.
