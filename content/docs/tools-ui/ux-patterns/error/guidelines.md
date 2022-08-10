@@ -9,7 +9,7 @@ toc: true
 
 In this section, you will learn how to write great error messages for O3DE. Why are error messages so important? Shouldn't the user figure out why their code failed or their operation didn't work? Not at all. The users expect a seamless experience without any errors. Nevertheless, errors occur and error messages can ease and help users overcome them.
 
-Great error messages can salve the sting of an unexpected error. Poor ones can lead to negative feedback or cause the customer to abandon your product completely. An effective and helpful error message acknowledges the inconvinience on the user and reassures them with guidance to work around it.
+Great error messages can salve the sting of an unexpected error. Poor ones can lead to negative feedback or cause the customer to abandon your product completely. An effective and helpful error message acknowledges the inconvenience on the user and reassures them with guidance to work around it.
 
 Handling errors well and writing good error messages requires more effort, but produces the following worthwhile advantages: 
 
@@ -41,7 +41,7 @@ Poor error messages erode trust and increase frustration. Great error messages e
 
 ## Writing principles
 
-The most common mistake when presenting errors to a user is displaying low-level errors and exceptions thrown by code directly to the user without editing them to make it user friendly. The most effective error messages are ones that any user and developer can understand. O3DE is tool for builders, so it's important that error messages can reach a wide audience.
+The most common mistake when presenting errors to a user is displaying low-level errors and exceptions thrown by code directly to the user without editing them to make it user friendly. The most effective error messages are ones that any user and developer can understand. O3DE is a tool for builders, so it's important that error messages can reach a wide audience.
 
 The writing principles on this page will help you think strategically about developing good error messages and practice good development habits for code and UI.
 
@@ -51,7 +51,7 @@ To start, we'll look at two categories of error message: error messages for code
 
 Error messages first appear as code-level error descriptions. A poor error message simply passes this error message to the end-user in a dialog widget or console interface. Instead, you can improve the user's overall experience with your code by authoring your error messages that's suitable for all audiences, not just technical experts.
 
-The following points help you authore good error messages for code operations: 
+The following points help you author good error messages for code operations: 
 
 * Be clear and concise. Short messages are better than long ones, but don't leave out any essential details. Make every word count! Use basic, proper English grammar. Avoid  complex phrasing or idioms.
 
@@ -75,7 +75,7 @@ The following points help you authore good error messages for code operations:
 
 * Avoid judgement in the tone of the message, especially if the error originates from a third-party library or binary. Instead of blaming the code, state the problem clearly and objectively. For example, "The operation could not complete due to a misconfiguration between O3DE and the CoolGraphicsV3 Gem. Please report this issue on GitHub".
   
-* Use an empathetic tone as though the error message appears in the user interface or the IDE, and not the command-line. To help you establish this tone, imagine that you are enountering this error for the first time as a new developer. Ask yourself whether or not you would find this error message clear and helpful, or opaque. Remember, it may not be an experienced developer who sees your error message.
+* Use an empathetic tone as though the error message appears in the user interface or the IDE, and not the command-line. To help you establish this tone, imagine that you are encountering this error for the first time as a new developer. Ask yourself whether or not you would find this error message clear and helpful, or opaque. Remember, it may not be an experienced developer who sees your error message.
 
 ### Error messages in UI
 
@@ -186,7 +186,7 @@ To summarize the key points when writing error messages:
 
 * Avoid hard-coding error messages. Instead, store error message in data objects, such as a JSON file, a CSV, or a flat-text model of your own implementation. This acts as a "dictionary" file that you can refer to and access using a unique token or handle. This system makes it easier for developers to do code reviews and maintenance without risking build errors or regressions. It also allows for more straightforward and cheaper localization. Document your schema or format to help others understand and maintain it.
 
-* Ask a technical writer or UX expert to review your error messages. When receiving a review in a GitHub pull request (PR), call out your updated error strings and add comments to provide any relevent information. This improves collaboration between you and your reviewer and eases the process to get your updates approved.
+* Ask a technical writer or UX expert to review your error messages. When receiving a review in a GitHub pull request (PR), call out your updated error strings and add comments to provide any relevant information. This improves collaboration between you and your reviewer and eases the process to get your updates approved.
 
 
 ## More resources
