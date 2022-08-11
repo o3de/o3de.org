@@ -146,11 +146,11 @@ Now that the six-point lighting material type properties are exposed to the Mate
    
 6.  In the **Editor**, make an entity with **Mesh** and **Material** components. Choose a plane for the **Mesh** (`o3de/Gems/Atom/Tools/MaterialEditor/Assets/MaterialEditor/ViewportModels/Plane_1x1.fbx`) and the material you just created for the material.
 
-{{< image-width src="/images/atom-guide/six-point-lighting/material.png" width="100%" alt="Material added." >}}
+{{< image-width src="/images/learning-guide/tutorials/rendering/six-point-lighting/material.png" width="100%" alt="Material added." >}}
 
 As of now, the entity should just display the whole alpha texture with all the frames.
 
-{{< image-width src="/images/atom-guide/six-point-lighting/all-frames.png" width="100%" alt="All frames of the six-point lighting animation texture." >}}
+{{< image-width src="/images/learning-guide/tutorials/rendering/six-point-lighting/all-frames.png" width="100%" alt="All frames of the six-point lighting animation texture." >}}
 
 ## Add animation
 The next step is to add animation to the material. The textures contain all the frames of the animation so you will programmatically iterate through the frames.
@@ -204,7 +204,7 @@ The next step is to add animation to the material. The textures contain all the 
 
 4. Open the **Editor** again and look at the animation! You haven't applied any custom lighting just yet, so you should just see the animation of the base color with the alpha texture.
 
-{{< video src="/images/atom-guide/six-point-lighting/animation.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of the animation of the cloud." >}}
+{{< video src="/images/learning-guide/tutorials/rendering/six-point-lighting/animation.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of the animation of the cloud." >}}
 
 ## Make a custom surface
 For six-point lighting to work, you must add a few material properties to your custom surface.  A *surface* is made of properties that define the look and feel of the material, and how it interacts with lighting. For example, the `metallic` property defines how metallic something looks, and the `albedo` property indicates how much light the material reflects.
@@ -352,7 +352,7 @@ As discussed earlier, you will make a light map that uses the lighting direction
 
 Great, the directional lighting is done! Your material should now have lighting in the **Editor**. Try adding more entities with a **Directional Light** component around your material to see the different effects. For example, try moving the light to point to the top of your material and see how the lighting responds accordingly! Also, adjust the **Intensity** of the light in the **Directional Light** component as needed to make your cloud look more realistic. Your material will also respond to other light types and multiple lights at the same time.
 
-{{< video src="/images/atom-guide/six-point-lighting/directional-lighting.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of changing direction of the light applied onto the six-point lighting cloud." >}}
+{{< video src="/images/learning-guide/tutorials/rendering/six-point-lighting/directional-lighting.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of changing direction of the light applied onto the six-point lighting cloud." >}}
 
 ### Add image-based lighting
 You may notice that the shadows in the cloud are mostly grey, which doesn't reflect the environment well. If you turn off all lighting and rotate the material, the six-point lighting material changes colors unnaturally. Therefore, you will also customize IBL in the six-point lighting material type. 
@@ -432,11 +432,11 @@ Note that a proper depth map would give proper normals so the 3D IBL method may 
 
 5. Open the Editor and turn off any lights. You should see the colors on your material reflect those of the skybox (blue at the top and orange at the bottom).
 
-   {{< video src="/images/atom-guide/six-point-lighting/ibl.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of rotating the six-point lighting material to see how IBL affects the " >}}
+   {{< video src="/images/learning-guide/tutorials/rendering/six-point-lighting/ibl.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of rotating the six-point lighting material to see how IBL affects the " >}}
 
 6. Turn on the lights again and observe how IBL works with the directional lighting!
 
-   {{< video src="/images/atom-guide/six-point-lighting/final.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of changing direction of the light applied onto the six-point lighting cloud." >}}
+   {{< video src="/images/learning-guide/tutorials/rendering/six-point-lighting/final.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of changing direction of the light applied onto the six-point lighting cloud." >}}
 
 Awesome, you added custom directional lighting and IBL!
 
