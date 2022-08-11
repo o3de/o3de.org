@@ -1,5 +1,5 @@
 ---
-linkTitle: Custom Lighting Tutorial with Flipbook Animation
+linkTitle: Custom Lighting
 title: Custom Lighting Tutorial with Flipbook Animation
 description: A tutorial for custom lighting using a flipbook animation with six-point lighting in the Atom renderer of the Open 3D Engine (O3DE).
 toc: true
@@ -8,7 +8,9 @@ This tutorial covers how to make a six-point lighting material type by writing c
 
 Volumetric effects such as smoke and clouds can be represented with animated textures. To render these texture effects and approximate a three dimensional volume, you will need a custom material type. The technique in this tutorial approximates how each texture should be lit from any given direction by using six tangent lightmaps that represent the top, bottom, left, right, front, and back of a plume of smoke.
 
-The six-point lighting material type uses textures that color the illuminated parts of the texture if light came from a corresponding direction. For example, red texels could indicate that lighting from the left should light up those particular texels, whereas blue texels could indicate which texel should be lit up by lighting from the top. Thus, magenta (red + blue) texels could mean that lighting from both the left and top should be applied to those texels. This information can then be used to form the six tangent lightmaps and apply lighting on the material accordingly.
+The six-point lighting material type uses textures that color the illuminated parts of the texture if light came from a corresponding direction. For example, the picture below shows a plume of smoke with lighting coming from the left, which corresponds to the green texels in the lightmap. Red texels indicate which texels of the smoke should be lit up by lighting from the right. Thus, yellow (green + red) texels mean that lighting from both the left and right should be applied to those texels. This information can then be used to form the six tangent lightmaps and apply lighting on the material accordingly.
+
+{{< image-width src="/images/learning-guide/tutorials/rendering/six-point-lighting/spl-comparison.png" width="50%" alt="Picture of a frame of a light map on the left with a picture of the cloud on right with lighting coming from the left." >}}
 
 This tutorial covers the following concepts:
 * Edit your own material type
@@ -45,7 +47,7 @@ The six-point lighting material type contains the following properties. You will
 | `o_sixPointTexturePackMode` | Indicates which texture pack mode to use. | Shader option |
 | `m_topLeftRightBottomMap` | Defines the top-left-right-bottom light map. | Texture |
 | `m_frontBackMap` | Defines the front-back light map. | Texture |
-| `m_rightLeftTopMap` | Defines the righ-left-top light map. | Texture |
+| `m_rightLeftTopMap` | Defines the right-left-top light map. | Texture |
 | `m_bottomBackFrontMap` | Defines the bottom-back-front light map. | Texture |
 | `o_enableDepthTexture` | Toggles whether or not to use a depth texture. | Boolean Shader option |
 | `m_depthMap` | A depth texture map. | Texture |
