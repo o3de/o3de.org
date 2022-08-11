@@ -25,17 +25,17 @@ Follow these steps to make the six-point lighting material type.
 
 1. Download or clone the [`o3de/sample-code-gems`](https://github.com/o3de/sample-code-gems) repository from GitHub.
 
-2.  Move all of the files in `atom_gems/AtomTutorials/Templates/SixPointLighting/` to `{your-project-path}/Materials/Types`. Make the folders as needed. These template files have everything set up for you to get started with creating your own custom surface and lighting.
+1.  Move all of the files in `atom_gems/AtomTutorials/Templates/SixPointLighting/` to `{your-project-path}/Materials/Types`. Make the folders as needed. These template files have everything set up for you to get started with creating your own custom surface and lighting.
    
-3. Move all the files in `atom_gems/AtomTutorials/Assets/SixPointLighting/Objects/` to `{your-project-path}/Objects`. 
+1. Move all the files in `atom_gems/AtomTutorials/Assets/SixPointLighting/Objects/` to `{your-project-path}/Objects`. 
    
    {{< note >}}
    These textures are provided by [peeweek/Unity-URP-SmokeLighting](https://github.com/peeweek/Unity-URP-SmokeLighting/tree/main/Assets/VFX/SmokeLighting/Textures/2D) on GitHub and distributed under the MIT license.
    {{< /note >}}
 
-4. Open `{your-project-path}\Materials\Types\SixPointLighting.materialtype` in a text editor. 
+1. Open `{your-project-path}\Materials\Types\SixPointLighting.materialtype` in a text editor. 
 
-5. Under `propertyLayout` > `propertyGroups`, replace all instances of `{your-path-to-o3de}` with the appropriate path to your engine.
+1. Under `propertyLayout` > `propertyGroups`, replace all instances of `{your-path-to-o3de}` with the appropriate path to your engine.
    
    For example, `C:/o3de/Gems/Atom/Feature/Common/Assets/Materials/Types/MaterialInputs/BaseColorPropertyGroup.json`.
 
@@ -87,7 +87,7 @@ In `SixPointLightingPropertyGroup.json`, there is already four properties for th
 
 1. Open `SixPointLighting_TexturePackEnum.lua`. Notice the two functions `GetMaterialPropertyDependencies()` and `ProcessEditor()`. `GetMaterialPropertyDependencies()` gets the value of a property of a material. `ProcessEditor()` can then use the property values to enable and disable visibility of the properties in the Material Editor.
 
-2. Following how `sixPointLighting.TLRB`'s visibility is enabled and disabled, enable and disable the other texture options as appropriate:
+1. Following how `sixPointLighting.TLRB`'s visibility is enabled and disabled, enable and disable the other texture options as appropriate:
 
    ```lua
    if(texturePackMode == TexturePackMode_TpLftRtBt_FrBck) then
@@ -110,13 +110,13 @@ Now that the six-point lighting material type properties are exposed to the Mate
 
 1. Open the **Material Editor**, and make a new material with the six-point lighting material type.
    
-2. Find the **Six Point Lighting** properties in the **Inspector**.
+1. Find the **Six Point Lighting** properties in the **Inspector**.
    
-3. Notice how the default **Texture Pack Mode** is `TpLftRtBt_FrBck`. The two properties below that correspond to this texture pack mode, and the properties for the other texture pack mode are hidden. 
+1. Notice how the default **Texture Pack Mode** is `TpLftRtBt_FrBck`. The two properties below that correspond to this texture pack mode, and the properties for the other texture pack mode are hidden. 
 
-4. Select `RtLftTp_BtBckFr` for the **Texture Pack Mode** and observe how the properties change.
+1. Select `RtLftTp_BtBckFr` for the **Texture Pack Mode** and observe how the properties change.
 
-5. Set the following properties accordingly:
+1. Set the following properties accordingly:
     * **Six Point Lighting**
       * **Texture Pack Mode**: `RtLftTp_BtBckFr`
       * **Right Left Top**: `SmokeBall01_6Way_RLT_8x8.png`
@@ -146,7 +146,7 @@ Now that the six-point lighting material type properties are exposed to the Mate
          Enabling this setting allows for rendering of the back side of the material.
          {{< /note >}}
    
-6.  In the **Editor**, make an entity with **Mesh** and **Material** components. Choose a plane for the **Mesh** (`o3de/Gems/Atom/Tools/MaterialEditor/Assets/MaterialEditor/ViewportModels/Plane_1x1.fbx`) and the material you just created for the material.
+1.  In the **Editor**, make an entity with **Mesh** and **Material** components. Choose a plane for the **Mesh** (`o3de/Gems/Atom/Tools/MaterialEditor/Assets/MaterialEditor/ViewportModels/Plane_1x1.fbx`) and the material you just created for the material.
 
 {{< image-width src="/images/learning-guide/tutorials/rendering/six-point-lighting/material.png" width="100%" alt="Material added." >}}
 
@@ -159,7 +159,7 @@ The next step is to add animation to the material. The textures contain all the 
 
 1. Open `SixPointLighting_Common.azsli`.
    
-2. At the bottom, add a function to get the position of the correct frame in the texture map according to the time.
+1. At the bottom, add a function to get the position of the correct frame in the texture map according to the time.
 
    ```glsl
    float2 GetUvForCurrentFrame(float2 baseUv)
@@ -189,13 +189,13 @@ The next step is to add animation to the material. The textures contain all the 
    The condition, `if(o_enableDebugFrame)`, occurs if you enabled debugging for a specific frame, which can be set via the **Material Editor**. If enabled, this function uses the specified frame instead of the current frame. This functionality can help ensure that lighting is correctly applied in a specific frame.  
    {{< /note >}}
 
-3. Open `SixPointLighting_ForwardPass.azsl` to make some final edits to see the animation in action.
+1. Open `SixPointLighting_ForwardPass.azsl` to make some final edits to see the animation in action.
    
    1. Find `ForwardPassPS_Common`. 
    
-   2. Find where your surface is defined: `Surface surface`.
+   1. Find where your surface is defined: `Surface surface`.
    
-   3. Right below it, find a section for *Alpha & Clip*. Edit the `alpha` value to use the opacity map and use the current frame's UV:
+   1. Right below it, find a section for *Alpha & Clip*. Edit the `alpha` value to use the opacity map and use the current frame's UV:
    
    ```glsl
    float2 baseColorUv = IN.m_uv[MaterialSrg::m_baseColorMapUvIndex];
@@ -204,7 +204,7 @@ The next step is to add animation to the material. The textures contain all the 
    float alpha = GetAlphaInputAndClip(MaterialSrg::m_baseColorMap, MaterialSrg::m_opacityMap, sixPointUv, sixPointUv, MaterialSrg::m_sampler, MaterialSrg::m_opacityFactor, o_opacity_source);
    ``` 
 
-4. Open the **Editor** again and look at the animation! You haven't applied any custom lighting just yet, so you should just see the animation of the base color with the alpha texture.
+1. Open the **Editor** again and look at the animation! You haven't applied any custom lighting just yet, so you should just see the animation of the base color with the alpha texture.
 
 {{< video src="/images/learning-guide/tutorials/rendering/six-point-lighting/animation.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of the animation of the cloud." >}}
 
@@ -213,13 +213,13 @@ For six-point lighting to work, you must add a few material properties to your c
 
 For this custom surface, you must add properties for six directions, tangent, and bitangent.
 
-The six directional floats define the light value if light came in from that direction on one particular texel. For example, if you were looking at a texel that should reflect most light coming from above (based on the pre-calculated evaluation when the texture was baked in a tool such as EmberGen or Houdini), the `top` float would be around `255.0`, the max value in the RGB scale. Consequently, a texel that is mostly occluded from light coming from above would have the `top` float closer to `0.0`.
+The six directional floats define the light intensity that each direction of a texel receives. For example, if a texel should reflect most of the light coming from above, then the top float would be around 255.0 (the max value in the RGB scale). Consequently, for a texel that is mostly occluded from light coming from above, the top float should be closer to 0.0. The texel's directional lighting intensity is an artistic choice, and may be based on a pre-calculated evaluation when baking a texture using a digital content creation (DCC) tool.
 
 The `tangent` and `bitangent` properties are needed to transform the world space lighting direction into tangent space before looking up the light contribution from the textures.
    
 1. Open `SixPointSurface.azsli`.
    
-2. Inside the `Surface` class, under the list of `BasePbrSurfaceData`, define properties for the six directions, `tangent`, and `bitangent`.
+1. Inside the `Surface` class, under the list of `BasePbrSurfaceData`, define properties for the six directions, `tangent`, and `bitangent`.
    
 
    ```glsl
@@ -242,13 +242,13 @@ Now, in the pixel shader, you will integrate the surface and initalize the value
 
   At runtime, this function is called in `SixPointLighting_ForwardPass.azsl`.
    
-2. Get the UV for the current frame of the animation.
+1. Get the UV for the current frame of the animation.
    
    1. Find the *Base Color* section.
    
-   2. Get the current frame's UV by calling the function you wrote earlier, `GetUvForCurrentFrame()`.
+   1. Get the current frame's UV by calling the function you wrote earlier, `GetUvForCurrentFrame()`.
    
-   3. Replace the `baseColorUv` parameter with `sixPointUv` in the call to `GetBaseColorInput()`.
+   1. Replace the `baseColorUv` parameter with `sixPointUv` in the call to `GetBaseColorInput()`.
    ```glsl
    float2 baseColorUv = uv[MaterialSrg::m_baseColorMapUvIndex];
    float2 sixPointUv = GetUvForCurrentFrame(baseColorUv);
@@ -256,11 +256,11 @@ Now, in the pixel shader, you will integrate the surface and initalize the value
    float3 baseColor = BlendBaseColor(sampledColor, MaterialSrg::m_baseColor.rgb, MaterialSrg::m_baseColorFactor, o_baseColorTextureBlendMode, o_baseColor_useTexture);
    ```
 
-3. Initialize the six-point surface properties.
+1. Initialize the six-point surface properties.
    
    1. Find the *Specular* section.
    
-   2. Set the six directional surface properties you added with the material inputs, according to the texture pack mode. You will need to handle both texture pack mode options and set the properties accordingly:
+   1. Set the six directional surface properties you added with the material inputs, according to the texture pack mode. You will need to handle both texture pack mode options and set the properties accordingly:
    
    ```glsl
    if(o_sixPointTexturePackMode == SixPointTexturePackMode::TpLftRtBt_FrBck)
@@ -287,7 +287,7 @@ Now, in the pixel shader, you will integrate the surface and initalize the value
    }
    ```
 
-4. Initalize the `tangent` and `bitangent` surface properties right after:
+1. Initalize the `tangent` and `bitangent` surface properties right after:
    ```glsl
    surface.tangent = tangents[0];
    surface.bitangent = bitangents[0];
@@ -302,25 +302,14 @@ As discussed earlier, you will make a light map that uses the lighting direction
 1. Open `SixPointLighting.azsli`.
    
    1. Notice the `#include <SixPointSurface.azsli>` line at the top. This is how you can reference the surface in the following functions.
+   
+   1. Notice the `GetSpecularLighting()` function, which returns `(0.0, 0.0, 0.0)`. _Specular lighting_ simulates the bright spot on a shiny object that reflects light into the camera. For six-point lighting, you don't need specular lighting because it doesn't effectively apply to 2D textures. Also, smoke and cloud effects are non-shiny objects and don't need specular lighting. 
 
-   2. Notice the functions `GetDiffuseLighting()` and `GetSpecularLighting()`. You will edit these to achieve the desired effects. 
+   1. Notice the function `GetDiffuseLighting()`. You will edit this to achieve the desired effects. 
 
       The six-point lighting `ForwardPassPS_Common` shader uses the default `ApplyDirectLighting()` function, which will iterate over the lights that apply to this object and invoke these custom `GetDiffuseLighting()` and `GetSpecularLighting()` functions for each light.
 
-2. Start off editing the lighting simply with `GetSpecularLighting()`.
-   
-   Specular lighting simulates the bright spot on a shiny object that most brightly reflects light into the camera. In the six-point lighting case, you do not need any specular lighting because 1) specular lighting can't effectively be applied on the 2D textures and 2) the use cases do not require it, as you are mainly using this technique for clouds and non-shiny objects.
-
-   1. Edit the `GetSpecularLighting()` function to not return any specular lighting.
-   
-      ```glsl
-      float3 GetSpecularLighting(Surface surface, LightingData lightingData, const float3 lightIntensity, const float3 dirToLight)
-      {
-         return float3(0.0f, 0.0f, 0.0f);
-      }
-      ```
-
-3. Edit `GetDiffuseLighting()` and write a helper function. 
+1. Edit `GetDiffuseLighting()` and write a helper function. 
    
    Diffuse lighting simulates how light from an incoming direction scatters. Six-point lighting should use diffuse lighting, since the shaders should take light's direction and apply it to figure out the light map.
 
@@ -340,7 +329,8 @@ As discussed earlier, you will make a light map that uses the lighting direction
       }
       ```
 
-   2. In `GetDiffuseLighting()`, call the `ComputeLightMap()` function and apply the results:
+   1. In `GetDiffuseLighting()`, call the `ComputeLightMap()` function and apply the results:
+   
       ```glsl
       float3 GetDiffuseLighting(Surface surface, LightingData lightingData, float3 lightIntensity, float3 dirToLight)
       {
@@ -375,7 +365,7 @@ Note that a proper depth map would give proper normals so the 3D IBL method may 
    Note that there is no specular IBL. Similarly to directional lighting, IBL should not have any specular lighting for the six-point lighting material type.
    {{< /note >}}
    
-2. Above `GetIblDiffuse()`, add a helper function (`GetIblSample()`) that converts a `direction` from tangent space to world space and uses the resulting vector to sample the sky box.
+1. Above `GetIblDiffuse()`, add a helper function (`GetIblSample()`) that converts a `direction` from tangent space to world space and uses the resulting vector to sample the sky box.
 
    ```glsl
    float3 GetIblSample(Surface surface, float3 direction) 
@@ -388,7 +378,7 @@ Note that a proper depth map would give proper normals so the 3D IBL method may 
    }
    ```
 
-3. Delete the code currently in `GetIblDiffuse()` and make calls to your helper function for each of the six directions in tangent space.
+1. Delete the code currently in `GetIblDiffuse()` and make calls to your helper function for each of the six directions in tangent space.
    
    ```glsl
    float3 rightSample = GetIblSample(surface, float3(1.0f, 0.0f, 0.0f));
@@ -403,7 +393,7 @@ Note that a proper depth map would give proper normals so the 3D IBL method may 
    `topSample` uses the vector `{0.0, -1.0, 0.0}` because O3DE uses the DirectX convention where, on a 2D plane, the top left vector is `{0.0, 0.0}` and the bottom left vector is `{0.0, 1.0}`. Therefore, the vector `{0.0, -1.0, 0.0}` points towards the top. 
    {{< /note >}}
 
-4. Calculate the overall color by summing together all the sampled colors and returning the appropriate color.
+1. Calculate the overall color by summing together all the sampled colors and returning the appropriate color.
 
    ```glsl
    float3 GetIblDiffuse(Surface surface, float3 diffuseResponse)
@@ -432,11 +422,11 @@ Note that a proper depth map would give proper normals so the 3D IBL method may 
    For example, consider a texture where the `surface.top` is intense (around `255.0`), and the `surface.bottom` is mild (around `0.0`). As a result, at the top of the texture, the `bottomSample` has no effect on the color. 
    {{< /tip >}}
 
-5. Open the Editor and turn off any lights. You should see the colors on your material reflect those of the skybox (blue at the top and orange at the bottom).
+1. Open the Editor and turn off any lights. You should see the colors on your material reflect those of the skybox (blue at the top and orange at the bottom).
 
    {{< video src="/images/learning-guide/tutorials/rendering/six-point-lighting/ibl.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of rotating the six-point lighting material to see how IBL affects the " >}}
 
-6. Turn on the lights again and observe how IBL works with the directional lighting!
+1. Turn on the lights again and observe how IBL works with the directional lighting!
 
    {{< video src="/images/learning-guide/tutorials/rendering/six-point-lighting/final.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of changing direction of the light applied onto the six-point lighting cloud." >}}
 
