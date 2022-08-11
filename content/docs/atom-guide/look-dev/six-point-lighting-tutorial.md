@@ -4,24 +4,30 @@ title: Custom Lighting Tutorial with Flipbook Animation
 description: A tutorial for custom lighting using a flipbook animation with six-point lighting in the Atom renderer of the Open 3D Engine (O3DE).
 toc: true
 ---
-This tutorial covers how to make a material type that uses a custom surface with custom lighting, specifically for a flipbook animation with six-point lighting. This material type is especially useful for effects such as smoke and clouds to animate movement while still capturing correct lighting. Traditional 3D lighting methods do not work on 2D textures so, to apply the correct lighting, you will need a custom material type that uses custom lighting. We follow [this technique](https://realtimevfx.com/t/smoke-lighting-and-texture-re-usability-in-skull-bones/5339) to use six tangent lightmaps (top, bottom, left, right, front, and back) to approximate how a texel should be lit from any given direction. 
+This tutorial covers how to make a six-point lighting material type by writing custom shaders to apply lighting to an animated 2D object, creating a cloud/smoke effect.
+
+Traditional 3D lighting methods do not work on 2D textures so, to apply the correct lighting, you will need a material type that uses a custom surface with custom lighting. We follow [this technique](https://realtimevfx.com/t/smoke-lighting-and-texture-re-usability-in-skull-bones/5339) to use six tangent lightmaps (top, bottom, left, right, front, and back) to approximate how a texel should be lit from any given direction. 
 
 The six-point lighting material type uses textures that color the illuminated parts of the texture if light came from a corresponding direction. For example, red texels could indicate that lighting from the left should light up those particular texels, whereas blue texels could indicate which texel should be lit up by lighting from the top. Thus, magenta (red + blue) texels could mean that lighting from both the left and top should be applied to those texels. This information can then be used to form the six tangent lightmaps and apply lighting on the material accordingly.
+
+{{< image-width src="/images/atom-guide/six-point-lighting/all-frames.png" width="100%" alt="All frames of the texture." >}}
 
 This tutorial covers the following concepts:
 * Edit your own material type
 * Toggle property visibility in the **Material Editor** with Lua
-* Change the UV for animation
-* Make a custom surface
-* Add custom lighting
+* Animate materials
+* Edit pixel shaders 
+   * Add custom surface
+   * Add custom lighting
 
-## Prerequisites
-Before starting this tutorial, be sure to complete the [vertex deformation tutorial](). Specifically, be familiar with working with material types and editing shaders.
+{{< important >}}
+For simplicity in this tutorial, we will refer to "how much a texel should be lit up from lighting in that direction" as the "texel's directional intensity."
+{{< /important >}}
 
 ## Make a material type
 Follow these steps to make the six-point lighting material type.
 
-1. Download or clone the `o3de/sample-code-gems` repository from [GitHub]().
+1. Download or clone the [`o3de/sample-code-gems`](https://github.com/o3de/sample-code-gems) repository from GitHub.
 
 2.  Move all of the files in `atom_gems/AtomTutorials/Templates/SixPointLighting/` to `{your-project-path}/Materials/Types`. Make the folders as needed. These template files have everything set up for you to get started with creating your own custom surface and lighting.
    
@@ -43,43 +49,45 @@ Follow these steps to make the six-point lighting material type.
    There is a [GitHub issue](https://github.com/o3de/o3de/issues/10623) to enable importing across Gems.
    {{< /known-issue>}}
 
-These files already include all of the properties that you will need. If you are unsure how to add or use properties, reference [this step](). The properties you will need are:
-* `o_sixPointTexturePackMode` - property option to choose which texture pack mode to use
-* `m_topLeftRightBottomMap` - property to hold texture defining the top, left, right, bottom light map
-* `m_frontBackMap` - property to hold texture defining the front, back light map
-* `m_rightLeftTopMap;` - property to hold texture defining the right, left, top light map
-* `m_bottomBackFrontMap` - property to hold texture defining the bottom, back, front light map
-* `o_enableDepthTexture` - property for whether or not to use a depth texture
-* `m_depthMap` - property to hold depth texture map
-* `m_depthScale` - property for the scale of the depth texture
-* `m_rowCount` - property for number of rows of animation in the flipbook
-* `m_columnCount` - property for number of columns animation in the flipbook
-* `o_enableDebugFrame` - property to toggle wheter to enable debugging on a single frame of the animation
-* `m_debugFrame` - property for the frame number to debug.
-
-`o_enableDepthTexture` and `o_enableDebugFrame` are defined at the bottom of `SixPointLighting_Common.azsli` and `o_sixPointTexturePackMode` is defined in the *Material Parameters* of `SixPointLighting_ForwardPass.azsl`. The rest of the properties are defined in the `MaterialSrg` in `SixPointLighting_Common.azsli`.
+### Six-point lighting material type properties
+The six-point lighting material type contains the following properties. You will use these properties throughout the tutorial. They are defined in the files `SixPointLighting_Common.azsli` and `SixPointLighting_ForwardPass.azsl`. 
+| Property | Description | Type |
+| :-- | :-- | :-- |
+| `o_sixPointTexturePackMode` | Indicates which texture pack mode to use. | Shader option |
+| `m_topLeftRightBottomMap` | Defines the top-left-right-bottom light map. | Texture |
+| `m_frontBackMap` | Defines the front-back light map. | Texture |
+| `m_rightLeftTopMap;` | Defines the righ-left-top light map. | Texture |
+| `m_bottomBackFrontMap` | Defines the bottom-back-front light map. | Texture |
+| `o_enableDepthTexture` | Toggles whether or not to use a depth texture. | Boolean Shader option |
+| `m_depthMap` | A depth texture map. | Texture |
+| `m_depthScale` | Scales the depth texture. | Float |
+| `m_rowCount` | The number of rows in the flipbook animation. | Int |
+| `m_columnCount` | The number of columns in the flipbook animation | Int |
+| `o_enableDebugFrame` | If enabled, activates debugging on a single frame of the animation. | Boolean Shader option |
+| `m_debugFrame` |The frame number to debug, when `o_enabledDebugFrame` is enabled. | Int |
 
 {{< note >}}
 Everything involving `depth`, including the depth pass and the three properties, won't be used in this tutorial because we lack a depth map texture. However, `SixPointLighting_DepthPass_WithPS.azsl` in the final files does provide the code for adjusting the depth, so you can take a look at that if you are interested in how we would adjust the depth pixel shader.
 {{< /note >}}
 
 ## Write Lua functor to toggle visibility in the Material Editor
-The six-point lighting material type allows for six tangent lightmaps that correspond to six colors from the textures. However, each texture can only contain up to four channels (red, green, blue, alpha), so the technique requires two textures. The channels used for each texture can be up to the artist, but this material type in this tutorial will provide support for two options:
-1. TopLeftRightBottom_FrontBack option
-   1. First texture:
+The six-point lighting material type allows for six tangent lightmaps that correspond to six colors from the textures. However, each texture can only contain up to four channels (red, green, blue, alpha), so the technique requires two textures. The channels used for each texture can be up to the artist, but this material type in this tutorial will provide support for two options for the color-channel-to-direction mapping. The mapping will later be used for determining the appropriate lighting.
+
+* TopLeftRightBottom_FrontBack option
+   * First texture:
       * Top : Red 
       * Left : Green
       * Right : Blue
       * Bottom : Alpha
-   2. Second texture:
+   * Second texture:
       * Front : Red
       * Back : Green
-2. RightLeftTop_BottomBackFront option
-   1. First texture:
+* RightLeftTop_BottomBackFront option
+   * First texture:
       * Right : Red 
       * Left : Green
       * Top : Blue
-   2. Second texture:
+   * Second texture:
       * Bottom : Red
       * Back : Green
       * Front : Blue
@@ -87,7 +95,9 @@ The six-point lighting material type allows for six tangent lightmaps that corre
 In `SixPointLightingPropertyGroup.json`, there is already four properties for the set of two textures for both options. They are also already defined in `SixPointLighting_Common.azsli`. However, you will want to provide a `.lua` script to the material type so that if you select one option from the dropdown for *Texture Pack Mode* in the **Material Editor**, only the corresponding properties show up.
 
 1. Open `SixPointLighting_TexturePackEnum.lua`. Notice the two functions `GetMaterialPropertyDependencies()` and `ProcessEditor()`. `GetMaterialPropertyDependencies()` gets the value of a property of a material. `ProcessEditor()` can then use the property values to enable and disable visibility of the properties in the Material Editor.
+
 2. Following how `sixPointLighting.TLRB`'s visibility is enabled and disabled, enable and disable the other texture options as appropriate:
+
    ```lua
    if(texturePackMode == TexturePackMode_TpLftRtBt_FrBck) then
       -- TopLeftRightBack is the first texture, FrontBack is the second. Disable RightLeftTop and BottomBackFront.
@@ -117,7 +127,7 @@ Now that the six-point lighting material type properties are exposed to the Mate
 
 5. Set the following properties accordingly:
     * **Six Point Lighting**
-      * **Texture Pack Mode**: `RtLftTp_Bt_BckFr`
+      * **Texture Pack Mode**: `RtLftTp_BtBckFr`
       * **Right Left Top**: `SmokeBall01_6Way_RLT_8x8.png`
       * **Bottom Back Front**: `SmokeBall01_6Way_BBF_8x8.png`
       * **Rows in Flipbook**: `8.0`
@@ -126,13 +136,13 @@ Now that the six-point lighting material type properties are exposed to the Mate
       * **Texture**: `SmokeBall01_ColorCC_8x8.png`
       * **Use Texture**: Disabled
          {{< note >}}
-         Using the texture as the base color will discolor how the material looks, but the texture's alpha channel will be used for the opacity.
+         You don't want to use the texture as the base color because it will discolor the material. However, setting the base color texture property is necessary to use the texture's alpha channel for the opacity.
          {{< /note >}}
     * **Opacity**
       * **Opacity Mode**: `Blended`
       * **Alpha Source**: `Packed`
          {{< note >}}
-         A `Packed` alpha source means the material will use the alpha channel packed into the base color texture.
+         A `Packed` alpha source means the material will use the alpha channel from the base color texture.
          {{< /note >}}
       * **Factor**: `1.0`
       * **Alpha affects specular**: `1.0`
@@ -151,7 +161,7 @@ Now that the six-point lighting material type properties are exposed to the Mate
 
 As of now, the entity should just display the whole alpha texture with all the frames.
 
-{{< image-width src="/images/atom-guide/six-point-lighting/all-frames.png" width="100%" alt="All frames of the texture." >}}
+{{< image-width src="/images/atom-guide/six-point-lighting/all-frames.png" width="100%" alt="All frames of the six-point lighting animation texture." >}}
 
 ## Add animation
 The next step is to add animation to the material. The textures contain all the frames of the animation so you will programmatically iterate through the frames.
@@ -159,6 +169,7 @@ The next step is to add animation to the material. The textures contain all the 
 1. Open `SixPointLighting_Common.azsli`.
    
 2. At the bottom, add a function to get the position of the correct frame in the texture map according to the time.
+
    ```glsl
    float2 GetUvForCurrentFrame(float2 baseUv)
    {
@@ -182,6 +193,7 @@ The next step is to add animation to the material. The textures contain all the 
       return sixPointUv;
    }
    ```
+
    {{< note >}}
    The condition, `if(o_enableDebugFrame)`, occurs if you enabled debugging for a specific frame, which can be set via the **Material Editor**. If enabled, this function uses the specified frame instead of the current frame. This functionality can help ensure that lighting is correctly applied in a specific frame.  
    {{< /note >}}
@@ -203,7 +215,7 @@ The next step is to add animation to the material. The textures contain all the 
 
 4. Open the **Editor** again and look at the animation! You haven't applied any custom lighting just yet, so you should just see the animation of the base color with the alpha texture.
 
-{{< video src="/images/atom-guide/six-point-lighting/animation.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of the animation." >}}
+{{< video src="/images/atom-guide/six-point-lighting/animation.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of the animation of the cloud." >}}
 
 ## Make a custom surface
 For six-point lighting to work, you must add a few material properties to your custom surface.  A *surface* is made of properties that define the look and feel of the material, and how it interacts with lighting. For example, the `metallic` property defines how metallic something looks, and the `albedo` property indicates how much light the material reflects.
@@ -258,6 +270,7 @@ Now, in the pixel shader, you will integrate the surface and initalize the value
    1. Find the *Specular* section.
    
    2. Set the six directional surface properties you added with the material inputs, according to the texture pack mode. You will need to handle both texture pack mode options and set the properties accordingly:
+   
    ```glsl
    if(o_sixPointTexturePackMode == SixPointTexturePackMode::TpLftRtBt_FrBck)
    {
@@ -293,7 +306,7 @@ Now, in the pixel shader, you will integrate the surface and initalize the value
 Now that you have set up the six-point surface, you can use the new surface properties to apply custom lighting. You will make two types of lighting: directional lighting and image-based lighting (IBL). _Directional lighting_ is a light source that comes from a single direction. _IBL_ simulates omni-directional reflective, ambient-like, lighting from the environment around the entity.
 
 ### Add custom directional lighting
-As discussed earlier, you will make a light map that uses the lighting direction to determine which combination of the six sides should be lit up. Then, you can take the intensity of the light and how much the texel should be lit up from lighting in that direction to compute the overall lighting on that particular texel.
+As discussed earlier, you will make a light map that uses the lighting direction to determine which combination of the six sides to light up. Then, you will use the brightness with the texel's direction-respective lighting intensity to compute the overall lighting on that particular texel.
 
 1. Open `SixPointLighting.azsli`.
    
@@ -353,15 +366,15 @@ Great, the directional lighting is done! Your material should now have lighting 
 {{< video src="/images/atom-guide/six-point-lighting/directional-lighting.mp4" autoplay="true" loop="true" width="100%" muted="true" info="Video of changing direction of the light applied onto the six-point lighting cloud." >}}
 
 ### Add image-based lighting
-You may notice that the shadows in the cloud are mostly grey, which doesn't reflect the environment well. If you turn off all lighting and rotate the material, the six-point lighting material changes colors unnaturally. This is because the template files include the standard IBL method from StandardPBR. Therefore, you will also customize IBL in the six-point lighting material type. On 3D objects, IBL works by sending raycasts from the normal at each pixel on the material to the sky box. The raycasts take the color of the sky box and reflect that color on the material.
+You may notice that the shadows in the cloud are mostly grey, which doesn't reflect the environment well. If you turn off all lighting and rotate the material, the six-point lighting material changes colors unnaturally. Therefore, you will also customize IBL in the six-point lighting material type. 
 
-The six-point lighting material can't use this method because the raycasts would all be sent from the normal of the plane. Therefore, instead of using normals, you can use the six directions to approximate the IBL.
+On 3D objects, IBL works by sending raycasts from the normal at each pixel on the material to the sky box. The raycasts take the color of the sky box and reflect that color on the material. Since the six-point lighting material is a 2D object, you can't use this method; all of the raycasts would send from the normal of the plane. Therefore, instead of using normals, you can use the six directions to approximate the IBL.
 
 {{< note >}}
 Note that a proper depth map would give proper normals so the 3D IBL method may work. However, since this tutorial doesn't cover depth, we provide this approximation method via custom IBL. 
 {{< /note >}}
 
- For each pixel, you will perform a raycast in six directions. This gets the colors of the sky box at each direction. Then, you will multiply those colors by how much the texel should light up in the corresponding directions. Finally, add those together to get the overall IBL. 
+ For each pixel, you will perform a raycast in six directions. This gets the colors of the sky box at each direction. Then, you will multiply those colors by texel's lighting intensity from the corresponding directions. Finally, add those together to get the overall IBL. 
 
 1. Open `SixPointLighting.azsli`.
 
@@ -439,6 +452,6 @@ Note that a proper depth map would give proper normals so the 3D IBL method may 
 Awesome, you added custom directional lighting and IBL!
 
 ## Download the AtomTutorial Gem sample
-Now that you've completed this tutorial, you can compare your results to our working version of six-point lighting in the **AtomTutorials** Gem in the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). You can either download and place the [final working six point lighting files]() in your project, or you can [download the Gem and add it to the engine]() if you haven't already in the [vertex deformation tutorial](). 
+Now that you've completed this tutorial, you can compare your results to our working version of six-point lighting in the **AtomTutorials** Gem in the [o3de/sample-code-gems repository](https://github.com/o3de/sample-code-gems). You can either download the final six point lighting files from the repository in [atom_gems/AtomTutorials/Assets/SixPointLighting/](https://github.com/o3de/sample-code-gems/tree/main/atom_gems/AtomTutorials/Assets/SixPointLighting) and place them in your project, or you can download the Gem and add it to the engine (see [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems/)).
 
 Congratulations, you are now done with this tutorial! 
