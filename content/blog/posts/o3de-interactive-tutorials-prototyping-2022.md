@@ -1,10 +1,10 @@
 ---
 title: "Advance Prototyping of the InteractiveTutorials Gem for O3DE"
 description: ""
-date: 2022-08-10
-slug: ""
+date: 2022-09-07
+slug: "interactive-tutorials-prototyping"
 author: Madeleine Song
-blog_img: "/images/blog/interactive-tutorials-prototyping/interactive-tutorials.png"
+blog_img: "/images/blog/interactive-tutorials-prototyping/interactive-tutorials-blog.png"
 full_img: "/images/blog/interactive-tutorials-prototyping/interactive-tutorials.png"
 ---
 Hi! I’m Madeleine, an Amazon intern working on Open 3D Engine (O3DE). My summer project focused on advanced prototyping of the InteractiveTutorials gem. This prototype teaches users how to work with Open 3D Engine, right in O3DE Editor. As users work through tutorials, the tool highlights the parts of the interface used at each step. So far, I've added several features and scoped out future improvements, including automating tutorials and making them easier to navigate.
