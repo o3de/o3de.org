@@ -303,7 +303,7 @@ As discussed earlier, you will make a light map that uses the lighting direction
    
    1. Notice the `#include <SixPointSurface.azsli>` line at the top. This is how you can reference the surface in the following functions.
    
-   1. Notice the `GetSpecularLighting()` function, which returns `(0.0, 0.0, 0.0)`. _Specular lighting_ simulates the bright spot on a shiny object that reflects light into the camera. For six-point lighting, you don't need specular lighting because it doesn't effectively apply to 2D textures. Also, smoke and cloud effects are non-shiny objects and don't need specular lighting. 
+   1. Notice the `GetSpecularLighting()` function, which returns `float3(0.0f, 0.0f, 0.0f)`. _Specular lighting_ simulates the bright spot on a shiny object that reflects light into the camera. For six-point lighting, you don't need specular lighting because it doesn't effectively apply to 2D textures. Also, smoke and cloud effects are non-shiny objects and don't need specular lighting. 
 
    1. Notice the function `GetDiffuseLighting()`. You will edit this to achieve the desired effects. 
 
