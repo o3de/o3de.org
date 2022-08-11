@@ -24,9 +24,6 @@ You must add this component to the *Level* entity, the parent of all entities in
 ![Terrain World Renderer component interface.](/images/user-guide/components/reference/terrain/terrain-world-renderer-A.png)
 
 ### Mesh Configuration properties
-These properties control the mesh density and blending of terrain LODs (level of detail). They have a very direct impact on vertex performance. 
-The density of the first terrain LOD is set by the query resolution in the [Terrain World](/docs/user-guide/components/reference/terrain/world) component. The **First LOD distance** controls how far to render at this density.
-Each subsequent LOD renders twice the distance with half the resolution until it meets the **Mesh render distance** . This means that **First LOD distance** impacts the total triangle count more than the total rendering distance.
 
 | Property | Description | Values | Default |
 | - | - | - | - |
@@ -36,7 +33,6 @@ Each subsequent LOD renders twice the distance with half the resolution until it
 | **CLOD Distance** | Distance in meters over which the first LOD blends into the next LOD. Subsequent LODs blend over double the distance of the previous LOD. This creates a consistent visual appearance. <br><br>  We recommend this value is less than about 25% of **First LOD distance**. If set too low, then seams may appear in the terrain. | 0.0 to 1000.0 | 16.0 |
 
 ### Detail Configuration
-These settings impact how far detail materials render, how they fade out, and how they blend with each other. Most of these settings have little impact on performance. However, a larger render distance requires more surface data points to be queried as you move around the world, and it also uses more memory.
 
 | Property | Description | Values | Default |
 | - | - | - | - |
@@ -46,8 +42,6 @@ These settings impact how far detail materials render, how they fade out, and ho
 | **Detail material scale** | The scale that all detail materials render at. | 0.0001 to 10000.0 | 1.0 |
 
 ### Clipmap Configuration
-
-_Clipmaps_ are a stack of textures that are centered at the view, and replace the direct use of terrain detail and macro materials. The expensive detail material blending operations are done once and saved to the clipmap, instead of being done for every pixel on every frame. They cover different distances, and all are the same resolution. This allows areas near the view to have the most texture detail. Using clipmaps improves performance, but at the cost of texture memory. You can adjust the clipmap configuration to find a balance between the performance gain and the memory cost.
 
 | Property | Description | Values | Default |
 | - | - | - | - |
@@ -59,3 +53,14 @@ _Clipmaps_ are a stack of textures that are centered at the view, and replace th
 | **Detail clipmap scale base** | The scale base between two adjacent clipmap layers of detail materials. For example, 3 means that the (n+1)<sup>th</sup> clipmap covers 3<sup>2</sup> = 9 times the area that's covered by the n<sup>th</sup> clipmap. | 1.1 to 10.0 | 2.0
 | **Macro clipmap margin size: texels** | The margin of the clipmap beyond the visible data. Increasing the margins results in less frequent clipmap updates, but also results in lower resolution clipmaps when rendering closer to the camera. | 1 to 16 | 4
 | **Detail clipmap margin size: texels** | The margin of the clipmap beyond the visible data. Increasing the margins results in less frequent clipmap updates, but also results in lower resolution clipmaps when rendering closer to the camera. | 1 to 16 | 4
+
+
+## Usage
+
+Mesh Configuration properties control the mesh density and blending of terrain LODs (level of detail). They have a very direct impact on vertex performance. 
+The density of the first terrain LOD is set by the query resolution in the [Terrain World](/docs/user-guide/components/reference/terrain/world) component. The **First LOD distance** controls how far to render at this density.
+Each subsequent LOD renders twice the distance with half the resolution until it meets the **Mesh render distance**. This means that **First LOD distance** impacts the total triangle count more than the total rendering distance.
+
+Detail Configuration properties impact how far detail materials render, how they fade out, and how they blend with each other. Most of these settings have little impact on performance. However, a larger render distance requires more surface data points to be queried as you move around the world, and it also uses more memory.
+
+_Clipmaps_ are a stack of textures that are centered at the view, and replace the direct use of terrain detail and macro materials. The expensive detail material blending operations are done once and saved to the clipmap, instead of being done for every pixel on every frame. They cover different distances, and all are the same resolution. This allows areas near the view to have the most texture detail. Using clipmaps improves performance, but at the cost of texture memory. You can adjust the clipmap configuration to find a balance between the performance gain and the memory cost.
