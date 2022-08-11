@@ -297,7 +297,7 @@ Now, in the pixel shader, you will integrate the surface and initalize the value
 Now that you have set up the six-point surface, you can use the new surface properties to apply custom lighting. You will make two types of lighting: directional lighting and image-based lighting (IBL). _Directional lighting_ is a light source that comes from a single direction. _IBL_ simulates omni-directional reflective, ambient-like, lighting from the environment around the entity.
 
 ### Add custom directional lighting
-As discussed earlier, you will make a light map that uses the lighting direction to determine which combination of the six sides to light up. Then, you will use the brightness with the texel's direction-respective lighting intensity to compute the overall lighting on that particular texel.
+As discussed earlier, you will make a light map that uses the lighting direction to determine which combination of the six sides to light up. Then, you will use the brightness with the texel's directional lighting intensity to compute the overall lighting on that particular texel.
 
 1. Open `SixPointLighting.azsli`.
    
@@ -365,7 +365,7 @@ On 3D objects, IBL works by sending raycasts from the normal at each pixel on th
 Note that a proper depth map would give proper normals so the 3D IBL method may work. However, since this tutorial doesn't cover depth, we provide this approximation method via custom IBL. 
 {{< /note >}}
 
- For each pixel, you will perform a raycast in six directions. This gets the colors of the sky box at each direction. Then, you will multiply those colors by texel's lighting intensity from the corresponding directions. Finally, add those together to get the overall IBL. 
+ For each pixel, you will perform a raycast in six directions. This gets the colors of the sky box at each direction. Then, you will multiply those colors by the texel's directional lighting intensity, respectively. Finally, add those together to get the overall IBL. 
 
 1. Open `SixPointLighting.azsli`.
 
