@@ -26,7 +26,7 @@ The core Script Canvas code is built as a static library that is linked into the
 
 When you use the behavior context, you do not need to write any code specific to Script Canvas. However, it is important that the way in which your code is reflected to the behavior context remains intuitive and practical in a visual scripting environment.
 
-The combination of the Script Canvas and behavior context archictectures includes the following benefits:
+The combination of the Script Canvas and behavior context architectures includes the following benefits:
 
 + Support for the AZ::Event and EBus event systems enable your scripts to use decoupled, event-driven programming paradigms.
 + Script Canvas can use functionality exposed through the behavior context from any Gem, enabling any Gem to enhance Script Canvas.

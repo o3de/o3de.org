@@ -17,9 +17,9 @@ draft: true
 
 1. Press the **F3** key to set the view to wireframe.
 
-1. Press **Control + P** to run the simulation and view the debugger.
+1. Press **Ctrl+P** to run the simulation and view the debugger.
 
-1. Press **Control + P** to exit the simulation.
+1. Press **Ctrl+P** to exit the simulation.
 
 In the below example, as the rabbit drops, the bonds between the fractured chunks are shown as green lines. On impact, the bonds change to orange as they weaken and red when they break.
 

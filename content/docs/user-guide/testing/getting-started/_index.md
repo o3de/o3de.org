@@ -47,7 +47,7 @@ CTest expects its working directory to be a CMake build directory, so be sure to
     ```
 
 {{< caution >}}
-Without a filter the command will run every registered test, and likely result in multiple hours of test execution! If you ever want to stop CTest, send an interrupt signal by selecting the terminal and pressing `CTRL+C`.
+Without a filter the command will run every registered test, and likely result in multiple hours of test execution! If you ever want to stop CTest, send an interrupt signal by selecting the terminal and pressing **Ctrl+C**.
 {{< /caution >}}
 
 CTest can also run a subset of labeled test suites with the `-L` argument. These test suites should be contained in parenthesis (`(..)`) and have their names separated with a `|` character. The following examples demonstrate this syntax for running the Main and Smoke suites for a `profile` build on Windows or Linux:
@@ -174,13 +174,13 @@ To verify everything is set up correctly, run the CMake configure command from *
 
 Now that you have configured CMake to create a test library and registered it with CTest, you are ready to write new tests. To simplify your module structure, create new test files inside `o3de/.../<MyModule>/tests/`.
 
-Tests are written using standard [GoogleTest](https://github.com/google/googletest/blob/main/docs/index.md) syntax, which helps you write small functions to test your code. To pull in everything from GoogleTest plus a few convienient tools, add the following statement to your C++ test file:
+Tests are written using standard [GoogleTest](https://github.com/google/googletest/blob/main/docs/index.md) syntax, which helps you write small functions to test your code. To pull in everything from GoogleTest plus a few convenient tools, add the following statement to your C++ test file:
 
 ```cpp
 #include <AzTest/AzTest.h>
 ```
 
-To keep test functions legible at a glance, we recommend using the [Osherove Naming Convention](https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html) of `UnitOfWork_StateUnderTest_ExpectedBehavior`. This helps when reading a report that includes many individual test case failures. One way to think of this pattern is to summarize the test into `WhatIsExecuted_UniqueSetupStep_MostImportantVerification` so a test failure can be understood based on the name, without always needing to investigate the code inside the test. If you are struggling to summarize the test, this may indicate the test is too complex. Try breaking breaking complex tests into multiple smaller tests. Note that while GoogleTest documentation recommends [not using any underscores](http://google.github.io/googletest/faq.html#why-should-test-suite-names-and-test-names-not-contain-underscore) in test names, tests will function normally as long as test and fixture names never start or end with an underscore (`_`).
+To keep test functions legible at a glance, we recommend using the [Osherove Naming Convention](https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html) of `UnitOfWork_StateUnderTest_ExpectedBehavior`. This helps when reading a report that includes many individual test case failures. One way to think of this pattern is to summarize the test into `WhatIsExecuted_UniqueSetupStep_MostImportantVerification` so a test failure can be understood based on the name, without always needing to investigate the code inside the test. If you are struggling to summarize the test, this may indicate the test is too complex. Try breaking complex tests into multiple smaller tests. Note that while GoogleTest documentation recommends [not using any underscores](http://google.github.io/googletest/faq.html#why-should-test-suite-names-and-test-names-not-contain-underscore) in test names, tests will function normally as long as test and fixture names never start or end with an underscore (`_`).
 
 A short example of C++ test structure:
 

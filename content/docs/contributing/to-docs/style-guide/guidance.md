@@ -2,59 +2,84 @@
 title: Writing Guidelines for O3DE Documentation
 description: The language, writing, and copy standards used to edit all Open 3D Engine (O3DE) documentation for consistency and readability.
 linktitle: Writing
-weight: 100
+weight: 200
 toc: true
 ---
 
 The **Open 3D Engine (O3DE)** documentation project serves a global audience. These guidelines help make your writing accessible to everyone.
 
-* Use U.S. English for accessibility.
-* Whenever possible, use precise words with only one definition, or the primary definition of words from . For example, use "once" only when referring to the number of times that an action is performed. Don't use "once" to mark a point in time, like in "Once the download completes."
-* Use standard and common domain and industry terminology. If there's ambiguity, then use context to make sure the reader understands the meaning.
+## Write for accessibility
 
-   {{< note >}}
-   For O3DE-specific term usage and syntax, and for the current list of words to avoid, read the [O3DE terminology](/docs/contributing/to-docs/terminology) topic.
-   {{< /note >}}
+Documentation is written in U.S. English. Use simple and precise words wherever possible. Write short and complete sentences. Break up information into smaller bodies of text. 
 
-* Be consistent in usage of terms.
-* When you use acronyms, introduce them in their expanded form followed by the acronym in parentheses. For example: *Open 3D Engine (O3DE)*. Subsequent on-page references can be by acronym only.
-* Prefer to use [active voice](https://writing.wisc.edu/handbook/style/ccs_activevoice/), especially for instructions and technical processes. Writing friendly guides and tutorials might necessitate the use of passive voice from time to time to match the guide tone.
-* Keep sentences short.
-* Use complete sentences.
-* Consider whether information can be more clearly represented in a list or a table.
-* Keep adjectives and adverbs close to the words they modify.
+- **Precise words**: Whenever possible, use precise words that have one definition, or use words based on their primary definition. For example, use "once" only when referring to the number of times that an action is performed. Don't use "once" to mark a point in time, like in "Once the download completes."
 
-    Do | Don't
-    :--| :-----
-    First, select the entity. | Select the entity first.
-    ... to quickly build proxy geometry. | ... to build proxy geometry quickly.
+- **Short and complete sentences**: Break up long sentences with multiple clauses into several short sentences to improve readability. Sentences must have a subject, verb, and object, and punctuation at the end.
 
-* Avoid words that end in *-ing* when possible. Words that end in *-ing* can be verbs, adjectives, or gerunds, and can be ambiguous for ESL readers. If you must use a word that ends in *-ing*,  add a determiner such as *the* before or after the word to clarify whether the word is a verb or an adjective. Take the word "rendering", for example. "Rendering" can be used in many contexts and can cause confusion:
+- **Adjectives and adverbs**: Keep adjectives and adverbs close to the words they modify.
 
-    Usage | Example
-    :--| :--
-    Noun | ... view the rendering.
-    Verb | ... rendering the scene.
-    Adjective | ... the rendering path.
+    | Do | Don't |
+    | :--| :----- |
+    | First, select the entity. | Select the entity first. |
+    | ... to quickly build proxy geometry. | ... to build proxy geometry quickly. |
 
-* Watch for words that end in *-ed*. Words that end in *-ed* can also be ambiguous. Use determiner phrases such as *that is* to clarify the usage of words that end in *-ed*. Take the word "rendered", for example.
+- **-ing words**: Be cautious with words that end in *-ing*. Words that end in *-ing* can be verbs, adjectives, or gerunds, and can be ambiguous for ESL readers. If you must use a word that ends in *-ing*,  add a determiner such as *the* before or after the word to clarify whether the word is a verb or an adjective. Take the word "rendering", for example. "Rendering" can be used in many contexts and can cause confusion:
 
-    Do | Don't
-    :--| :--
-    Atom is a renderer that is based on ... | Atom is a renderer based on ...
+    | Usage | Example |
+    | :--| :-- |
+    | Noun | ... view the rendering. |
+    | Verb | ... rendering the scene. |
+    | Adjective | ... the rendering path. |
 
-* Don't use idioms, slang, colloquialisms, or jargon. There are many words and phrases commonly used and understood by native speakers of U.S. English that may be difficult to translate. Here are some examples.
+- **-ed words**: Be cautious with words that end in *-ed*. Words that end in *-ed* can also be ambiguous. Use determiner phrases such as *that is* to clarify the usage of words that end in *-ed*. Take the word "based", for example.
 
-    Type | Definition | Example
-    :--| :-- | :--
-    Idiom | A phrase established to have a meaning that is not discernible from the individual words. | Forward+ rendering provides *the best of both worlds*.
-    Slang | Informal and nonstandard vocabulary. | *Chill* for a bit, while the O3DE project compiles.
-    Colloquialism | Ordinary and familiar conversational words and phrases, especially those that might be specific to a region. | ... On Create will execute the function *ASAP*.
-    Jargon | Specialized terms used in a particular field that are difficult for others to understand. | ... entering the *vertical-slice* phase of development.
+    | Do | Don't |
+    | :--| :-- |
+    | Atom is a renderer *that is* based on ... | Atom is a renderer based on ... |
 
-* Use optional words and phrases to clarify, such as *the*, *that*, *a*, *an*, *because*, *after*, *although*, and *might*.
-* Use commas to make sentences easier to read and comprehend. Use the serial or "Oxford" comma in lists. For example:
+- **Helpful words**: Use optional words and phrases to clarify, such as *the*, *that*, *a*, *an*, *because*, *after*, *although*, and *might*.
 
-    "**Asset Processor** checks for new files, detects changed files, and uses asset manifest files to process game-ready assets."
+- **Commas**: Use commas to make sentences easier to read and comprehend. Use the serial or "Oxford" comma in lists. In the following example, observe that a comma appears between the last item in the list and the preceding item.
 
-* Avoid Latin phrases such as *etc.*, *vs.*, *i.e.*, and *e.g.*.
+    **Example**: "**Asset Processor** checks for new files, detects changed files, and uses asset manifest files to process game-ready assets."
+
+
+
+## Voice and tone
+
+Use [active voice](https://writing.wisc.edu/handbook/style/ccs_activevoice/) and present-tense verbs wherever possible. Write simply, respectfully, and professionally.
+
+Refer to the user as "you". 
+
+Refer to the O3DE software, O3DE community, or O3D Foundation as "we". For example, you might say "We recommend...". 
+
+## Acronyms, abbreviations, and Latin phrases
+
+When you use acronyms, introduce them in their expanded form followed by the acronym in parentheses. Subsequent on-page references can be by acronym only.
+
+Don't abbreviate common words or Latin phrases; use the complete word or a similar one.
+
+**Exceptions**
+Acronyms that don't need to be spelled out:
+- Common file formats (Examples: JSON, PDF, JPEG, PNG)
+- Other common technical terms (Examples: URL, ID)
+
+| Do | Don't |
+| :-- | :-- |
+| Welcome to Open 3D Engine (O3DE)! | Welcome to O3DE! |
+| For example, Example: | e.g., Ex: |
+| versus, compared to | vs. |
+
+
+## Idioms, slang, colloquialisms, or jargon
+
+Don't use idioms, slang, colloquialisms, or jargon. There are many words and phrases commonly used and understood by native speakers of U.S. English that may be difficult to translate.
+
+Similarly, avoid jokes.
+
+| Type | Definition | Avoid |
+| :--| :-- | :-- |
+| Idiom | A phrase established to have a meaning that is not discernible from the individual words. | Forward+ rendering provides *the best of both worlds*.
+| Slang | Informal and nonstandard vocabulary. | *Chill* for a bit, while the O3DE project compiles.
+| Colloquialism | Ordinary and familiar conversational words and phrases, especially those that might be specific to a region. | ... On Create will execute the function *ASAP*.
+| Jargon | Specialized terms used in a particular field that are difficult for others to understand. | ... entering the *vertical-slice* phase of development.

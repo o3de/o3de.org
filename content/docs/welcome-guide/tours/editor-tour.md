@@ -87,17 +87,18 @@ O3DE has familiar viewport interaction models based on first-person PC games and
 *  **Q** - Move down.
 *  **E** - Move up.
 *  **Z** - Focus on selected.
-*  **Right mouse + drag** - Rotate view, known as *mouselook* in most games.
-*  **Mouse wheel scroll** - Zoom view.
-*  **Middle mouse + drag** - Pan view.
-*  **Left mouse** - Select entity.
-*  **Left mouse + drag** - Area select entities.
+*  **RMB+Drag** - Rotate view, known as *mouselook* in most games.
+*  **MouseWheel Up/Down** - Zoom view.
+*  **MMB+Drag** - Pan view.
+*  **LMB** - Select entity.
+*  **LMB+Drag** - Area select entities.
 
 The camera controls above are game-centric. If you prefer to use camera controls closer to those you would find in a DCC application such as Maya, use these hotkeys.
 
-* **ALT + left mouse + drag** - Orbit view.
-* **ALT + right mouse + drag** - Dolly view.
-* **ALT + right mouse + drag** - Track view.
+* **Alt+LMB+Drag** - Orbit view.
+* **Alt+RMB+Drag** - Dolly view.
+* **Alt+MMB+Drag** - Track view.
+
 
 ## Movement preferences
 

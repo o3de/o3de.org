@@ -34,7 +34,7 @@ In this section, you'll create an entity that runs the script that spawns the pr
 
 1. Add a **Script Canvas** component to the spawner entity. In **Entity Inspector**, choose **Add Component** and select Script Canvas from the component list.
 
-1. Press **CTRL+S** to save the level with the spawner entity.
+1. Press **Ctrl+S** to save the level with the spawner entity.
 
 1. In the new Script Canvas component, click the {{< icon open-in-internal-app.svg >}} open application icon to open Script Canvas Editor.
 
@@ -89,7 +89,7 @@ In this section, you'll create a script that spawns a prefab. You'll learn the b
 
     ![Set the prefab reference on a Create Spawn Ticket Script Canvas Node.](/images/learning-guide/tutorials/entities-and-prefabs/spawn-ticket-out-ref.png)
 
-1. Press **CTRL+S** to save the script. In the **Save As** window, name the file `spawn-despawn-prefab.scriptcanvas` and choose **Save**.
+1. Press **Ctrl+S** to save the script. In the **Save As** window, name the file `spawn-despawn-prefab.scriptcanvas` and choose **Save**.
 
 The script you've created thus far spawns a prefab instance at the spawner entity's location when the spawner entity is activated. You can add the script to the spawner entity's Script Canvas node, and press **CTRL-G** to test the script. In the final steps of the tutorial you'll learn how to despawn a prefab.
 
@@ -123,7 +123,7 @@ Now you'll add the script to the spawner entity and test the script.
 
     ![Set the script canvas file property](/images/learning-guide/tutorials/entities-and-prefabs/set-script-canvas-source.png)
 
-1. Press **CTRL+G** to run the level and test the script.
+1. Press **Ctrl+G** to run the level and test the script.
 
     {{< video src="/images/learning-guide/tutorials/entities-and-prefabs/spawn-despawn-finished.mp4" info="Click and drag to connect Script Canvas nodes." autoplay="true" loop="true" >}}
 
