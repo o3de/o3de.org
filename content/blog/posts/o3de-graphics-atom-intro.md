@@ -3,7 +3,7 @@ title: Exploring the world of graphics via Atom, O3DE’s renderer
 date: 2022-07-13
 slug: graphics-atom-intro
 author: Judy Ng
-blog_img: ""
+blog_img: "/images/blog/graphics-atom-intro/atom-graphics-intro-thumbnail.png"
 full_img: ""
 ---
 Hello all! I'm Judy, an intern at Amazon working on the Open 3D Engine (O3DE), specifically the Atom renderer. I interned with Amazon in the summer of 2021, focused on contributing to Atom, and have returned to Amazon as an intern again this summer! So far, I’ve learned graphics fundamentals and applied that knowledge to write a custom shader and make my own material type. Here are some details about my journey learning about graphics and Atom.
