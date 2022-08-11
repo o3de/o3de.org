@@ -10,8 +10,6 @@ Traditional 3D lighting methods do not work on 2D textures so, to apply the corr
 
 The six-point lighting material type uses textures that color the illuminated parts of the texture if light came from a corresponding direction. For example, red texels could indicate that lighting from the left should light up those particular texels, whereas blue texels could indicate which texel should be lit up by lighting from the top. Thus, magenta (red + blue) texels could mean that lighting from both the left and top should be applied to those texels. This information can then be used to form the six tangent lightmaps and apply lighting on the material accordingly.
 
-{{< image-width src="/images/atom-guide/six-point-lighting/all-frames.png" width="100%" alt="All frames of the texture." >}}
-
 This tutorial covers the following concepts:
 * Edit your own material type
 * Toggle property visibility in the **Material Editor** with Lua
@@ -19,10 +17,6 @@ This tutorial covers the following concepts:
 * Edit pixel shaders 
    * Add custom surface
    * Add custom lighting
-
-{{< important >}}
-For simplicity in this tutorial, we will refer to "how much a texel should be lit up from lighting in that direction" as the "texel's directional intensity."
-{{< /important >}}
 
 ## Make a material type
 Follow these steps to make the six-point lighting material type.
@@ -56,7 +50,7 @@ The six-point lighting material type contains the following properties. You will
 | `o_sixPointTexturePackMode` | Indicates which texture pack mode to use. | Shader option |
 | `m_topLeftRightBottomMap` | Defines the top-left-right-bottom light map. | Texture |
 | `m_frontBackMap` | Defines the front-back light map. | Texture |
-| `m_rightLeftTopMap;` | Defines the righ-left-top light map. | Texture |
+| `m_rightLeftTopMap` | Defines the righ-left-top light map. | Texture |
 | `m_bottomBackFrontMap` | Defines the bottom-back-front light map. | Texture |
 | `o_enableDepthTexture` | Toggles whether or not to use a depth texture. | Boolean Shader option |
 | `m_depthMap` | A depth texture map. | Texture |
