@@ -6,7 +6,7 @@ toc: true
 ---
 This tutorial covers how to make a six-point lighting material type by writing custom shaders to apply lighting to an animated 2D object, creating a cloud/smoke effect.
 
-Traditional 3D lighting methods do not work on 2D textures so, to apply the correct lighting, you will need a material type that uses a custom surface with custom lighting. We follow [this technique](https://realtimevfx.com/t/smoke-lighting-and-texture-re-usability-in-skull-bones/5339) to use six tangent lightmaps (top, bottom, left, right, front, and back) to approximate how a texel should be lit from any given direction. 
+Volumetric effects such as smoke and clouds can be represented with animated textures. To render these texture effects and approximate a three dimensional volume, you will need a custom material type. The technique in this tutorial approximates how each texture should be lit from any given direction by using six tangent lightmaps that represent the top, bottom, left, right, front, and back of a plume of smoke.
 
 The six-point lighting material type uses textures that color the illuminated parts of the texture if light came from a corresponding direction. For example, red texels could indicate that lighting from the left should light up those particular texels, whereas blue texels could indicate which texel should be lit up by lighting from the top. Thus, magenta (red + blue) texels could mean that lighting from both the left and top should be applied to those texels. This information can then be used to form the six tangent lightmaps and apply lighting on the material accordingly.
 
@@ -37,11 +37,6 @@ Follow these steps to make the six-point lighting material type.
    
    For example, `C:/o3de/Gems/Atom/Feature/Common/Assets/Materials/Types/MaterialInputs/BaseColorPropertyGroup.json`.
 
-   {{< known-issue >}}
-   Currently, O3DE cannot import property groups across Gems. So, you must hard code the absolute path as a proof of concept, even though hard-coding is not recommended as it restricts portability. 
-
-   There is a [GitHub issue](https://github.com/o3de/o3de/issues/10623) to enable importing across Gems.
-   {{< /known-issue>}}
 
 ### Six-point lighting material type properties
 The six-point lighting material type contains the following properties. You will use these properties throughout the tutorial. They are defined in the files `SixPointLighting_Common.azsli` and `SixPointLighting_ForwardPass.azsl`. 
