@@ -23,8 +23,6 @@ At the time, another limitation of InteractiveTutorials was that it used a modul
 
 Although the content of InteractiveTutorials is detailed and concise, there was no way for users to definitively conclude whether or not they had correctly followed the instructions. Automating the result of a tutorial would be helpful both for new users unfamiliar with the editor and for returning users who knew what they wanted but didn't want to have to click 'Next' 20 times to get the result. I decided to try automating the PhysX Rigid Bodies Tutorial. Rigid bodies are dynamic solid objects that simulate reactions to collisions. The goal of the tutorial was to create a simulation with collisions by by adding components and colliders to an existing prefab. 
 
-![The PhysX Rigid Bodies Tutorial](/images/blog/interactive-tutorials-prototyping/interactive-tutorials-ei-highlighted.png)
-
 My first move was to create a 'Simulate This Step' button which, when clicked, would produce changes in the editor corresponding to those described in the tutorial up to that point. I went digging in the AutomatedTesting project for scripts. Some scripts, like those to create an entity and enter game mode, were easy to simulate, but other parts were quite difficult. The 21 written steps of the tutorial also didn't each correspond to a runnable script. I identified 8 discrete parts of the tutorial, some comprising of several steps. Each discrete part could run whether or not the other parts had been run.
 
 ![First conception of the simulation of steps](/images/blog/interactive-tutorials-prototyping/interactivetutorials_stepordering_1.png)
@@ -35,7 +33,7 @@ When I began working on creating functions for each 'part', however, I soon real
 
 This was a problem because I couldn’t be certain of the state of the dice prefab in step two. In some scenarios, knowing which sub-steps have been simulated is not possible without creating giant if-statements and many near-identical state variables, but this solution is both inefficient and not applicable to other tutorials.
 
-I risked creating duplicate entities or potentially breaking the tutorial by trying to edit entities which didn't yet exist when the 'simulate' option was selection. I knew I could solve the problem by condensing the tutorial into three giant steps, but that seemed inefficient and also unhelpful for the user. I decided to create a 'simulate last step' option which displayed the completed result of the tutorial as a reference for the user.
+I risked creating duplicate entities or potentially breaking the tutorial by trying to edit entities which didn't yet exist when the 'simulate' option was selected. I knew I could solve the problem by condensing the tutorial into three giant steps, but that seemed inefficient and also unhelpful for the user. I decided to create a 'simulate last step' option which displayed the completed result of the tutorial as a reference for the user.
 
 Finally, as part of my stretch goal, I worked on improving the highlights UI using Qt. My focus was to improve the visibility of small widgets. I came up with 3 new highlighting options, depending on the size of the widget and the color of the background. First, the content of the widget itself could be shaded either blue or red. Also, the parent widget could also be highlighted. Finally, I explored adding a blinking / pulsing effect.
 
