@@ -11,7 +11,7 @@ Hi! I’m Madeleine, an Amazon intern working on Open 3D Engine (O3DE). My summe
 
 ### Learning Through Doing
 
-The InteractiveTutorials gem is written in Python, which I have some experience with from university. However, I didn't have any experience with Qt, the library that InteractiveTutorials uses for UI widgets. Also, part of my project also involved pulling scripts from the O3DE codebase to use in InteractiveTutorials. I wasn't familiar with C++ and my previous experience with Python was tightly bounded along the lines of classroom projects, which are much easier to complete than the open-ended challenge of understanding and improving a large existing repository.
+The InteractiveTutorials gem is written in Python, which I have some experience with from university and previous work at a startup. However, I didn't have any experience with Qt, the library that InteractiveTutorials uses for UI widgets. Also, part of my project also involved pulling scripts from the O3DE codebase to use in InteractiveTutorials. I wasn't familiar with C++ and my previous experience with Python was tightly bounded along the constraints of classroom projects, which are much easier to complete than the open-ended challenge of understanding and improving a large existing repository.
 
 My first project was an automated stepcounter. Formerly, the current step index within each tutorial was manually written at the end of each step. This could be tedious in tutorials with 20+ steps, such as the PhysX Rigid Bodies Tutorial, and steps could easily be miscounted. Keeping track of the current step index, I added a label which printed the current step relative to the total number of steps in the tutorial. 
 
