@@ -425,6 +425,7 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 | picker.svg | {{< icon "picker.svg" >}} |
 | pin-button.svg | {{< icon "pin-button.svg" >}} |
 | play.svg | {{< icon "play.svg" >}} |
+| popout-overlay.svg | {{< icon "popout-overlay.svg" >}} |
 | prefab.svg | {{< icon "prefab.svg" >}} |
 | prefab-edit.svg | {{< icon "prefab-edit.svg" >}} |
 | processing.svg | {{< icon "processing.svg" >}} |
