@@ -6,7 +6,7 @@ Born out of a desire to make their own games, indie game developers Jacob Dodenh
 
 **_“First and foremost, our studio is focusing on crafting experiences that we enjoy as developers. In our commitment to creating games we enjoy, we believe our players will enjoy them too. Secondly, we're keeping our players in mind with everything we do.”_**
 
-!(CCI%20Blog%20Image.png)
+![Chaotic Creations Interactive Developers, Jacob Dodenhoff and Phoenix Cook](https://github.com/uoduckswtd1/o3de.org/blob/main/content/blog/posts/CCI%20Blog%20Image.png)
 
 **Can you share your experience in open source, and with 3D and game development?**
 
