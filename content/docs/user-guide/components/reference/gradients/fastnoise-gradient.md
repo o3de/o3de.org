@@ -10,7 +10,7 @@ Add the **FastNoise Gradient** component to use one of the noise generation algo
 
 | Noise Type | Description | Example Gradient |
 | - | - | - |
-| `Value` | Generates interpolated values directly from XYZ-coordinates to produce a zoomed-out version of `White Noise`. | ![FastNoise value noise type example](/images/user-guide/components/reference/gradients/fastnoise-value.png) |
+| `Value` | Generates a `White Noise` gradient  based on interpolated values from XYZ-coordinates. | ![FastNoise value noise type example](/images/user-guide/components/reference/gradients/fastnoise-value.png) |
 | `Value Fractal` | Results from the `Value` algorithm are run through a fractal function. | ![FastNoise value noise type example](/images/user-guide/components/reference/gradients/fastnoise-value-fractal.png) |
 | `Perlin` | Generates values from the Perlin noise algorithm, a noise algorithm where visual features are all of similar size. | ![FastNoise value noise type example](/images/user-guide/components/reference/gradients/fastnoise-perlin.png) |
 | `Perlin Fractal` | Results from the `Perlin` noise algorithm are run through a fractal function. | ![FastNoise value noise type example](/images/user-guide/components/reference/gradients/fastnoise-perlin-fractal.png) |
@@ -44,7 +44,7 @@ Not all combinations of **Noise Type** and noise property settings have the same
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Generate Random Seed** | Sets the **Random Seed** property below to a random value. | | |
-| **Preview** | Displays the output gradient of this component after all properties are applied. Click the previewer icon in the top-left of the preview image to show a larger preview of the gradient in a dockable window. Click the previewer icon in the top-left of the preview image to show a larger preview of the gradient in a dockable window. | | |
+| **Preview** | Displays the output gradient of this component after all properties are applied. Click the previewer icon in the top-left of the preview image to show a larger preview of the gradient in a dockable window. | | |
 | **Pin Preview to Shape** | Sets an entity with a compatible Shape component to use as the bounds of the preview if **Constrain to Shape** is `Enabled`. | EntityId | Current Entity |
 | **Preview Position** | Sets the world location of the preview.<br> <br>*This field is available only if there is no entity selected in **Pin Preview to Shape**.* | Vector3: -Infinity to Infinity | X:`0.0`, Y:`0.0`, Z:`0.0` |
 | **Preview Size** | Sets the dimensions of the preview. | Vector3: 0.0 to Infinity | X:`1.0`, Y:`1.0`, Z:`1.0` |
