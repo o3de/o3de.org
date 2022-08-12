@@ -21,10 +21,10 @@ You must add this component to the *Level* entity, the parent of all entities in
 
 | Property | Description | Values | Default |
 | - | - | - | - |
-| Min Height | The minimum value for the height of terrain. The **min** value must be less than the **max** value.| -65536.0 to 65536.0 | 0.0 |
-| Max Height | The maximum value for the worlds bounds. The **max** value must be greater than the **min** value. | -65536.0 to 65536.0 | 1024.0 |
-| Height Query Resolution (m) | The distance between each height sample position, in meters. | 0.1 to Infinity | 1.0 |
-| Surface Data Query Resolution (m) | The distance between each surface data sample position, in meters. | 0.1 to Infinity | 1.0 |
+| Min Height | The minimum value for the height of terrain. The **Min Height** value must be less than the **max Height** value. | -65536.0 - 65536.0 | `0.0` |
+| Max Height | The maximum value for the worlds bounds. The **Max Height** value must be greater than the **Min Height** value. | -65536.0 - 65536.0 | `1024.0` |
+| Height Query Resolution (m) | The distance between each height sample position, in meters. | 0.1 to Infinity | `1.0` |
+| Surface Data Query Resolution (m) | The distance between each surface data sample position, in meters. | 0.1 to Infinity | `1.0` |
 
 
 ## Usage 
