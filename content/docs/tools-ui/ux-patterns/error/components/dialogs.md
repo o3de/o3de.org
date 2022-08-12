@@ -17,7 +17,7 @@ toc: true
 
 3. **Icon**: A standard icon and has a size of 48 x 48px. Refer to [Standard Icons](../overview#standard-icons). 
 
-4. **Body**: Contains information regrding the user's task and how to resolve it. 
+4. **Body**: Contains information regarding the user's task and how to resolve it. 
 
 5. **Actions**: The primary and optional secondary call-to-action buttons that resolve or exit the dialog.
 
@@ -49,7 +49,7 @@ Review these specifications when creating a dialog:
 
 * Include a primary button and/or an optional secondary button for the dialog's actions. 
   
-  * Use the primary button for a primary action. Primary buttons are have a blue background, making it more distinct to the user. Write an actionable text on the primary button such as "Save", "Restart", or "Open". 
+  * Use the primary button for a primary action. Primary buttons have a blue background, making it more distinct to the user. Write an actionable text on the primary button such as "Save", "Restart", or "Open". 
 
 * Use the secondary button for alternative options or passive actions such as "Cancel" or "OK".
 
