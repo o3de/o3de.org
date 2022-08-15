@@ -21,7 +21,7 @@ By default, the Asset Processor monitors the following scan directories:
 
 1. **Intermediate Assets** - The root directory for intermediate assets which are output by other sources.  These files should be treated like the **Asset Cache**, they are generated files which should not be modified, and do not need to be tracked by source control.
 
-Additional scan directories can be added with registery keys. In most cases it's better to use Gems as a way to store source assets in additional locations instead of adding scan folders by registry key.
+Additional scan directories can be added with registry keys. In most cases it's better to use Gems as a way to store source assets in additional locations instead of adding scan folders by registry key.
 
 ## Scan directory locations
 
