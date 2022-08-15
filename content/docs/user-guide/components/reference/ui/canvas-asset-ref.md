@@ -8,7 +8,7 @@ With the **UI Canvas Asset Ref** component, you can associate a UI canvas with a
 
 ## Usage
 
-In the **Canvas pathname** property field, enter the name of a `.uicanvas` asset in your project, then select the canvas to associate with this component from the dropdown list that automatically populates.  Alternatively, click the {{< icon browse-edit-select-files.svg >}} button and choose a `.uicanvas` asset from the file browser.
+In the **Canvas pathname** property field, enter the name of a `.uicanvas` asset in your project. Then, select the canvas to associate with this component from the dropdown list that automatically populates.  Alternatively, click the {{< icon browse-edit-select-files.svg >}} button and choose a `.uicanvas` asset from the file browser.
 
 After you select a UI canvas you can set additional properties to load automatically and choose whether to load it in an enabled or disabled state.
 
