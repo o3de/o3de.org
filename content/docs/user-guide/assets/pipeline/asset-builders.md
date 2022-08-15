@@ -13,7 +13,7 @@ The Open Asset Import Library supports [many scene formats](https://github.com/a
 
 {{< /note >}}
 
-## Anatomy of an Asset Builder
+## Anatomy of an asset builder
 
 Asset Builders have three core components: a **Descriptor** for the builder, and handlers for **Create Jobs** and **Process Job** requests.
 
@@ -23,7 +23,7 @@ The Descriptor provides Asset Processor the information required to identify the
 
 The Asset Builder UUID is also used to create the sub ID for product assets it generates. The sub ID of the product asset must match the current UUID of its Asset Builder. Changing the UUID of an Asset Builder triggers all source assets that have been previously processed by the Asset Builder to be reprocessed.
 
-### Create Jobs
+### Create jobs
 
 Create Jobs generates asset processing jobs for Asset Processor. When Asset Processor detects a new or updated source asset and determines the appropriate Asset Builder to process the source asset, it sends a `CreateJobsRequest` that contains information about the source asset, including its path, to the Asset Builder. The Asset Builder responds with a `CreateJobsResponse` that contains `JobDescriptor` structures, and source and job dependencies. For example, if the `CreateJobsRequest` is for a material to be processed, the Asset Builder includes a dependency on the referenced shader source asset in the `CreateJobsResponse`, ensuring the shader is processed before the material.
 
@@ -31,7 +31,7 @@ Create Jobs generates asset processing jobs for Asset Processor. When Asset Proc
 Create Jobs is a single threaded process. There might be instances where you implement an Asset Builder that does specialized processing for a source asset type that is also supported by other Asset Builders. You might need to examine the source asset to determine if the specialized Asset Builder should process the source asset. In these instances, examining the asset as part of Process Job, and exiting the process early depending on the result, can offer better performance because Process Job is multithreaded. 
 {{< /note >}}
 
-### Process Job
+### Process job
 
 Process Job generates the product asset and product dependencies. The Asset Builder receives a `ProcessJobRequest` from Asset Processor containing info on the source asset to process. The Asset Builder responds with a `ProcessJobResponse`. The function of `ProcessJobResponse` is to process the source asset and return information about the product assets it creates, including sub IDs and product dependencies.
 
@@ -39,13 +39,11 @@ Process Job generates the product asset and product dependencies. The Asset Buil
 
 Process Job is multithreaded. Several Asset Builders can run multiple process jobs simultaneously.
 
-## Asset Builder Tips and Tricks
-
-### Loading Other Files
+## Loading other files
 
 Sometimes, when authoring a builder, it may be necessary to load other files besides the primary source file to finish this process. Here are some scenarios that this can come up, and best practices for handling them.
 
-#### Understanding File Locations for Asset Processing
+### Understanding file locations
 
 Files relevant to asset processing can exist in three core locations:
 1. The Asset Cache is where all product assets exist.
@@ -53,19 +51,18 @@ Files relevant to asset processing can exist in three core locations:
 1. Source files (not assets) can be on any drive in any location.
 
 Scan directories tend to be one of two core locations. There are other locations, but these are the primary ones. Read more about [scan directories here:](/docs/user-guide/assets/pipeline/scan-directories/)
-1. The asset folder for the current project.
-1. The asset folder for each gem enabled for the project.
+1. The root folder for the current project.
+1. The `Assets` folder for each Gem enabled for the project.
 
 Individual Gems, the O3DE project in use, and the engine itself can all be installed to different drives.
 
-If you have source assets referencing each other, the safest way to reference one source asset from another is with that asset's UUID, because it will be stable across drives. Read more about [asset identifiers here.](/docs/user-guide/assets/pipeline/asset-dependencies-and-identifiers/#asset-identifiers) Relative paths between source assets may not function as expected, if those source assets are in scan folders across different root directories, there may not be a way to build that reference. Also, different members of a team may install their project, engine, and gems differently than each other, making relative paths in source assets not stable for the team.
+If you have source assets referencing each other, the safest way to reference one source asset from another is with that asset's UUID, because it will be stable across drives. Read more about [asset identifiers here.](/docs/user-guide/assets/pipeline/asset-dependencies-and-identifiers/#asset-identifiers) Relative paths between source assets may not function as expected. If those source assets are in scan folders across different root directories, there may not be a way to build that reference. Also, different members of a team may install their project, engine, and Gems differently than each other, making relative paths in source assets not stable for the team.
 
-The asset cache is more stable, relative paths between two product assets won't change unless the source asset that generating them is moved, or the associated builder is updated to change how it outputs product assets. Even still, it's recommended to have product assets reference each other with asset ID and not relative path, because asset IDs are more stable long term than relative paths.
+The asset cache is more stable. Relative paths between two product assets won't change unless the source asset that generates them is moved, or the associated builder is updated to change how it outputs product assets. Still, it's recommended to have product assets reference each other with asset ID and not relative path, because asset IDs are more stable than relative paths.
 
 Product assets should never reference other product assets with absolute path because this will result in the hash of the contents of product assets being unique per machine that generates product assets. When authoring a builder, the complete lifecycle of asset management for a project should be kept in mind. Keeping product assets stable across machines will ensure that the gathering modified assets step of generating a patch for a live game is accurate. You can read more about [asset bundling here.](docs/user-guide/packaging/asset-bundler/overview/)
 
-
-#### Loading Product Assets in Process Job
+### Load product assets in process job
 
 If the processing of one job requires loading the output product asset of another job, then a job dependency should be declared against that job, and when possible the specific product should be defined in this dependency.
 
@@ -73,7 +70,7 @@ When setting up asset references, the source asset with the outgoing reference a
 
 Read more about [job dependencies here.](/docs/user-guide/assets/pipeline/asset-dependencies-and-identifiers/#job-dependencies)
 
-#### Loading Product Assets in Create Jobs
+### Load product assets in create jobs
 
 It's not recommended to load the product asset of one job during the create jobs step of another job. This is because there aren't straightforward workflows to accomplish this.
 
@@ -85,7 +82,7 @@ Read more about [intermediate assets here.](/docs/user-guide/assets/pipeline/int
 
 This is an uncommon situation, so we're looking for use cases to help guide improvements to be made in this area. If you have a need to load a product asset during the create jobs step of asset processing, please create [a ticket](https://github.com/o3de/o3de/issues) or reach out in the [O3DE Discord](https://{{< links/o3de-discord >}})
 
-#### Loading Other Source Assets or non-asset files
+### Load other source assets or non-asset files
 
 Sometimes processing a source asset, either the create jobs or process job steps, requires loading a second source asset or source file. In this situation, a source dependency should be used.
 
