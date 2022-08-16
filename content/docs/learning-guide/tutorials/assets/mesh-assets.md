@@ -59,9 +59,9 @@ You can learn about the advanced settings properties of the Coordinate system ch
 
 1. Choose the **Update** button at the bottom-right of Scene Settings. This creates or updates the `.assetinfo` sidecar file and triggers Asset Processor to reprocess the asset.
 
-1. **Left-click + drag** the source asset from Asset Browser into the viewport.
+1. Drag the `.azmodel` product asset from Asset Browser into the viewport.
 
-    {{< image-width "/images/learning-guide/tutorials/assets/meshes-finished.png" "800" "Drag the mesh asset into the viewport">}}
+    {{< image-width "/images/learning-guide/tutorials/assets/meshes-finished.png" "800" "Drag the mesh product asset into the viewport">}}
 
     When you drag the asset into the viewport, O3DE automatically creates an entity with a **Mesh** component that references the mesh product asset. If the source asset contains materials that have been processed, the materials are applied to the mesh by default.
 

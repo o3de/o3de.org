@@ -29,7 +29,7 @@ In either scanning mode, the Asset Processor does not check the cache for change
 
 ## Choose a scanning mode
 
-![The Faster Scanning Mode settings in Asset Processor](/images/user-guide/assets/pipeline/asset-processor-interface-fast-scan.png)
+![The Faster Scanning Mode settings in Asset Processor](/images/user-guide/assets/asset-processor/interface-fast-scan.png)
 
 Faster Scanning Mode is enabled by default for Asset Processor GUI but disabled by default for Asset Processor Batch.
 
@@ -41,7 +41,7 @@ To disable Faster Scanning Mode in the GUI, do the following:
 When Faster Scanning Mode is disabled, file hashes are used to check for updated source assets and source dependencies. This will significantly increase analysis time.
 {{< /note >}}
 
-You can use the command line option below to activate Faster Scanning Mode for **Asset Processor Batch** and GUI. 
+You can use the command line option below to activate Faster Scanning Mode for **Asset Processor Batch**.
 
 ```cmd
 AssetProcessorBatch.exe --zeroAnalysisMode
@@ -69,7 +69,7 @@ When analyzing source assets, Asset Processor performs a series of low cost chec
 
 ## Full Scan
 
-You can perform a **Full Scan**, even when Faster Scanning Mode is active. A Full Scan performs the analysis actions in the table below. Actions with a **Low** cost estimate contribute to less than 1% of the total scan time. 
+You can perform a **Full Scan**, even when Faster Scanning Mode is active. A Full Scan performs the analysis actions in the table below. Actions with a **Low** cost estimate contribute to less than 1% of the total scan time.
 
 | Cost | Analysis |
 | - | - |
@@ -80,7 +80,7 @@ You can perform a **Full Scan**, even when Faster Scanning Mode is active. A Ful
 | High | Check the **Asset Cache** and ensure that every product asset previously generated for the source asset is still present. |
 | Very High | Send a **Create Jobs** request to the registered Asset Builders so that they can spawn jobs for the job queue. |
 
-A source asset found during the scan can be excluded from reanalysis if it meets all of the criteria below: 
+A source asset found during the scan can be excluded from reanalysis if it meets all of the criteria below:
 
 * The source asset hasn’t changed on disk (its timestamp matches the timestamp in the Asset Database).
 * The source assets's dependencies haven’t changed on disk (the source dependency timestamps match the timestamps in the Asset Database).
@@ -92,7 +92,7 @@ A source asset found during the scan can be excluded from reanalysis if it meets
 
 ## Perform a full scan
 
-A full scan checks the Asset Cache for product assets and rebuilds the appropriate source assets. To start a full scan, follow the steps below: 
+A full scan checks the Asset Cache for product assets and rebuilds the appropriate source assets. To start a full scan, follow the steps below:
 
 1. Choose the Tools tab in Asset Processor.
 1. Choose Start Scan.

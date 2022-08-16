@@ -20,7 +20,7 @@ A recommended workflow is to select the material inside the **Material Editor** 
 
 1. Right-click the selected material and choose **Copy Path to Clipboard**. If the material is in a material group, select the group and copy the group name to the clipboard.
 
-![Copy the material name path in the Material Editor.](/images/user-guide/cinematics/cinematics-track-view-nodes-material-4.png)
+    ![Copy the material name path in the Material Editor.](/images/user-guide/cinematics/cinematics-track-view-nodes-material-4.png)
 
 1. Choose **Tools**, **Track View**.
 

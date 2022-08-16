@@ -13,7 +13,7 @@ Select the surface type tag using the **SurfaceTag** drop-down menu, then assign
 
 ## Provider
 
-[Terrain Gem](/docs/user-guide/gems/reference/terrain)
+[Terrain Gem](/docs/user-guide/gems/reference/environment/terrain)
 
 ## Properties
 

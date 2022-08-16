@@ -3,6 +3,7 @@
 This repository contains the website and documentation for **Open 3D Engine (O3DE)**. During preview, the site and documentation are under heavy development - so don't be surprised if information is missing or sometimes breaks. If you would like to visit our official website in preview, please contact us directly for the information.
 
 If you would like to build a local version of the site, all it takes is cloning this repo, following the local instructions, and under a minute for a build.
+For more information, refer to [Contributing to O3DE Documentation](https://www.o3de.org/docs/contributing/to-docs/overview/) 
 
 Otherwise, documentation is browsable in this repository at `content/docs`. API documentation is stored in this repository at `static/docs/api`, generated using the default Doxygen HTML templates. You can browse the API references without needing to install Hugo, NodeJS, or build the website.
 
@@ -21,51 +22,80 @@ You can download this repository or clone it onto your local machine. Cloning th
   1. Open a terminal or shell in the directory where you want this repository to be in. 
   2. Run the command `git clone https://github.com/o3de/o3de.org.git`.
 
-### Setup Hugo, npm, and bootstrap
+### Setup Hugo, npm, and dependencies
 1. To install **Hugo (extended version)**, follow the instructions for your machine in the [Hugo documentation](https://gohugo.io/getting-started/installing). 
    
     *Note: You must install the **extended version** of Hugo.*
 
-1. To install **npm**, following the instructions in the [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) documentation. Installing npm also installs **nodejs**. 
+2. To install **npm**, follow the instructions in the [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) documentation. Installing npm also installs **Node.js**.
 
-2. To install **bootstrap**, run the following command in a terminal or shell in the root of your o3de.org clone: `npm install bootstrap`.
+3. To install dependencies, run the following command from the `o3de.org` repository:
 
-    *Note: `npm` is only one way to install bootstrap. You can use other package managers to install bootstrap, such as [yarn](https://yarnpkg.com/package/bootstrap).*
+    ```shell
+    cd <path-to-repo>/o3de.org
+    npm install
+    ```
+
 
 ### Build the site
 1. Open a terminal or shell and navigate to the `o3de.org` repository.
    
-```shell
-$ cd <path-to-repo>\o3de.org
-```
+    ```shell
+    cd <path-to-repo>/o3de.org
+    ```
    
-2. Run the command `hugo serve`. 
-   
-```shell
-$ hugo serve
-Start building sites …
+2. Run the command `hugo server`. 
+      
+    ```shell
+    $ hugo server
+    Start building sites …
 
-                   |  EN
--------------------+--------
-  Pages            |   902
-  Paginator pages  |     0
-  Non-page files   |     0
-  Static files     | 17173
-  Processed images |     0
-  Aliases          |     0
-  Sitemaps         |     1
-  Cleaned          |     0
+                      |  EN
+    -------------------+--------
+      Pages            |   902
+      Paginator pages  |     0
+      Non-page files   |     0
+      Static files     | 17173
+      Processed images |     0
+      Aliases          |     0
+      Sitemaps         |     1
+      Cleaned          |     0
 
-Built in 10394 ms
-Watching for changes in C:\O3DE\o3de.org\{assets,content,layouts,package.json,static}
-Watching for config changes in C:\O3DE\o3de.org\config.toml
-Environment: "development"
-Serving pages from memory
-Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Press Ctrl+C to stop
-```
+    Built in 10394 ms
+    Watching for changes in C:\O3DE\o3de.org\{assets,content,layouts,package.json,static}
+    Watching for config changes in C:\O3DE\o3de.org\config.toml
+    Environment: "development"
+    Serving pages from memory
+    Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+    Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+    Press Ctrl+C to stop
+    ```
 
 3. To view a local build of the O3DE website, open a web browser and go to http://localhost:1313/.
 
 You can now view the O3DE website on your local machine! Find the O3DE documentation under the **Learn** section of the O3DE website.
+
+## Troubleshooting
+
+### Issue
+
+Running `hugo server` outputs the following error:
+
+```cmd
+Error: Error building site: TOCSS: failed to transform "blah.sass" (text/x-sass): SCSS processing failed: file "stdin", line 26, col 1: File to import not found or unreadable: bootstrap/scss/functions.
+```
+
+### Description
+
+This indicates that your local `o3de.org` repository may be missing bootstrap, or that the wrong version is installed. Similar errors may indicate that other dependent packages are missing.
+
+For a complete list of required dependencies, see `package.json`.
+
+### Steps to fix
+
+1. Open a shell or terminal and navigate to `o3de.org` repository: `cd <path-to-repo>/o3de.org`
+
+2. Verify that the required dependencies have been installed by running the command, `npm list`. This outputs the list of dependencies and indicates whether or not they've been installed.
+
+3. Install missing dependencies. You can install all of the dependencies by running the command, `npm install`. Or, you can install a specific dependency. For example: `npm install bootstrap@4.6.1`
+

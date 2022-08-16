@@ -8,7 +8,7 @@ The **Terrain Height Gradient List** provides height data for the terrain system
 
 ## Provider
 
-[Terrain Gem](/docs/user-guide/gems/reference/terrain)
+[Terrain Gem](/docs/user-guide/gems/reference/environment/terrain)
 
 ## Dependencies
 

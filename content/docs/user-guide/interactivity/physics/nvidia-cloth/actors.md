@@ -27,9 +27,9 @@ A **Motion set** and **Anim graph** based on the actor's skeleton. Keyframe anim
 Sample **Actor** component cloth assets are located in the **NVIDIA Cloth** gem directory, which is located at `/dev/Gems/NvCloth/Assets/Objects/cloth/Chicken/`.
 {{< /note >}}
 
-For information on exporting actor assets, see [FBX Settings actor export](/docs/user-guide/assets/fbx-settings/actor-export/).
+For information on exporting actor assets, see [FBX Settings actor export](/docs/user-guide/assets/scene-settings/actors-tab/).
 
-## Add Cloth to Actor components 
+## Add Cloth to Actor components
 
 Create cloth by adding the **Cloth** component to an entity that has an **Actor** component, and then setting the properties of the **Cloth** component.
 
@@ -73,12 +73,12 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
 
    1. You can use the **Motion constraints** properties **Max Distance** and **Scale** to blend between cloth simulation and keyframe animation.
 
-## Add cloth colliders to an actor 
+## Add cloth colliders to an actor
 
  You can add cloth colliders to an actor to prevent the cloth form penetrating the actor's mesh during simulation. Cloth colliders are added to actors in **Animation Editor**. For information on adding cloth colliders to an actor, see [Add Cloth Colliders to actors](/docs/user-guide/visualization/animation/character-editor/cloth-colliders/).
 
-## View the Cloth Simulation 
+## View the Cloth Simulation
 
-In O3DE Editor, press Ctrl+G or press the **Play** button to run your project.
+In O3DE Editor, press **Ctrl+G** or press the **Play** button to run your project.
 
 ![Open 3D Engine cloth simulation with the NVIDIA Cloth gem.](/images/user-guide/physx/cloth/anim-actor-cloth.gif)

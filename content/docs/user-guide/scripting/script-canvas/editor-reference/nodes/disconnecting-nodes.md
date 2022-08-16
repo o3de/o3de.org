@@ -2,7 +2,7 @@
 linktitle: Disconnecting Nodes
 title: Disconnecting Nodes in Script Canvas
 description: Learn how to disconnect Script Canvas nodes in Open 3D Engine.
-weight: 300
+weight: 150
 ---
 
 Script Canvas offers several ways to delete connections between nodes.

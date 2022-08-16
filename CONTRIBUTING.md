@@ -18,7 +18,7 @@ The [O3DE SIG Docs Mailing List](https://lists.o3de.org/g/sig-docs-community) is
 
 ### Style Guides and Templates
 
-Before submitting a pull request to create new content, please review the [O3DE style guide](https://o3de.org/docs/contributing/to-docs/style-guide/).
+Before submitting a pull request to create new content, please review the [O3DE style guide](https://o3de.org/docs/contributing/to-docs/style-guide/overview/).
 
 ## Contributing to Documentation
 
@@ -27,7 +27,7 @@ Before submitting a pull request to create new content, please review the [O3DE 
 o3de.org uses GitHub Issues to track documentation issues and requests. If you see a documentation issue, submit an issue using the following steps:
 
 1. Check the [o3de.org issues list](https://github.com/o3de/o3de.org/issues) to see if your issue is already reported.
-2. Use the [included template for every new issue](https://github.com/o3de/o3de.org/issues/new).  When you create a bug report, include as many details as possible. If you have a suggestion for a fix already, submit it as a pull request!
+2. Use the [included template for every new issue](https://github.com/o3de/o3de.org/issues/new/choose).  When you create a bug report, include as many details as possible. If you have a suggestion for a fix already, submit it as a pull request!
 
 Note that code issues should be filed against the main O3DE repository, while documentation issues should go in the o3de.org repository.
 
@@ -35,4 +35,4 @@ Note that code issues should be filed against the main O3DE repository, while do
 
 If you're fixing an issue in the existing documentation, you should submit a PR against the master branch. Follow [these instructions to create a documentation pull request against the o3de.org repository](https://o3de.org/docs/contributing/to-docs/submit-a-pr/).
 
-For more information, see [contributing to O3DE documentation](https://o3de.org/docs/contributing/to-docs/).
+For more information, see [contributing to O3DE documentation](https://o3de.org/docs/contributing/to-docs/overview/).

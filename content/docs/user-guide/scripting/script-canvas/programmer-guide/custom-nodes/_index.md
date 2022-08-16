@@ -5,9 +5,7 @@ description: Learn how to create custom Script Canvas nodes in Open 3D Engine (O
 weight: 200
 ---
 
-## Feature overview
-Creating custom nodes in Script Canvas offers you maximum control and flexibility with the functionality of the node. 
-You might wish to a create custom node in the following scenarios:
+Creating custom nodes in Script Canvas offers you maximum control and flexibility with the functionality of the node. You might wish to create a custom node in the following scenarios:
 
 * When your node has state, time, or latent results.
 * When creating complex nodes.

@@ -20,7 +20,7 @@ Take only the bits your project needs! O3DE is composed of *Gems*, which are mod
 
 O3DE supports Gems with precompiled binaries and libraries. Adding or removing precompiled Gems does not require you to recompile O3DE. Upgrading to new engine versions only requires that you recompile projects.
 
-For more information, see [the O3DE Gems documentation](/docs/user-guide/gems).
+For more information, see [the O3DE Gems documentation](/docs/user-guide/gems/overview).
 
 ## Build with familiar tools
 
@@ -60,8 +60,7 @@ Some of Atom's features include:
 
 * High resolution reflection cubemaps.
 
-* Pipeline interface abstraction allowing for platform-independent creation of forward+, deferred, or hybrid
-renderers via a pass system.
+* Pipeline interface abstraction allowing for platform-independent creation of Forward+, Deferred, or hybrid renderers via a pass system. Supports Forward+ by default.
 
 * Support for parallax correction, mixed reflections per render pass, and runtime editing and visualization for lighting artists.
 
@@ -69,7 +68,7 @@ renderers via a pass system.
 
 Read the [Atom Documentation](/docs/atom-guide) to find out more!
 
-## Build logic with Script Canvas or Lua
+## Build runtime logic with Script Canvas or Lua
 
 In O3DE, you have *two* scripting environments available for creating runtime logic: a visual scripting tool called Script Canvas, and a more traditional scripting model, Lua.
 
@@ -149,7 +148,7 @@ All of Open 3D Engine is backed with a high performance math library, designed t
 
 * Libraries use optimal SIMD code for x64 SSE and ARM Neon platforms, and fallback scalar code where optimizations aren't available.
 
-* SIMD-accelerated trigonometric functions that operate faster than equivalent scaler operations and are capable of performing multiple trigonometric calculations in a single call.
+* SIMD-accelerated trigonometric functions that operate faster than equivalent scalar operations and are capable of performing multiple trigonometric calculations in a single call.
 
 ## Simplified project management
 

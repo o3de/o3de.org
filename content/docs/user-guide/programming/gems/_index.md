@@ -17,4 +17,4 @@ weight: 120
 
 | Topic | Description |
 |---|---|
-| [Gems in Open 3D Engine](/docs/user-guide/gems/) | Learn about the Gems that extend O3DE. |
+| [Gems in Open 3D Engine](/docs/user-guide/gems/overview) | Learn about the Gems that extend O3DE. |

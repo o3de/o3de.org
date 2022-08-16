@@ -28,3 +28,4 @@ For a quick introduction of the O3DE Multiplayer Gem and networking, watch the v
 |---|---|
 | [Multiplayer Gem API reference](/docs/api/gems/multiplayer/) | The complete C++ API reference for the O3DE Multiplayer Gem. |
 | [The O3DE AzNetworking Framework](/docs/user-guide/networking/) | Documentation for the core networking library of O3DE. |
+| [Your First Network Component](/docs/learning-guide/tutorials/multiplayer/first-multiplayer-component/) | Tutorial for creating a network-enabled component. |

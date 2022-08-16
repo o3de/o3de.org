@@ -16,4 +16,9 @@ The instructions guide you through the following steps:
 
 At the end of the tutorial, you'll have a new O3DE project based on the default "standard" project template.
 
+Topic | Description
+:-- | :--
+[Creating Projects on Windows](creating-windows.md) | Learn how to use the command line interface (CLI) on Windows to create and build new O3DE projects from the default project template.
+[Create Projects on Linux](creating-linux.md) | Learn how to use the command line interface (CLI) on Linux to create and build new O3DE projects from the default project template.
+
 {{< youtube-width id="SZC13S0YZZs" title="Creating O3DE Projects Using Command Line" >}}
