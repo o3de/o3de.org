@@ -56,9 +56,66 @@ Scan directories tend to be one of two core locations. There are other locations
 
 Individual Gems, the O3DE project in use, and the engine itself can all be installed to different drives.
 
-If you have source assets referencing each other, the safest way to reference one source asset from another is with that asset's UUID, because it will be stable across drives. Read more about [asset identifiers here.](/docs/user-guide/assets/pipeline/asset-dependencies-and-identifiers/#asset-identifiers) Relative paths between source assets may not function as expected. If those source assets are in scan folders across different root directories, there may not be a way to build that reference. Also, different members of a team may install their project, engine, and Gems differently than each other, making relative paths in source assets not stable for the team.
+#### Types of files in asset processing
 
-The asset cache is more stable. Relative paths between two product assets won't change unless the source asset that generates them is moved, or the associated builder is updated to change how it outputs product assets. Still, it's recommended to have product assets reference each other with asset ID and not relative path, because asset IDs are more stable than relative paths.
+* Source assets
+   * Source assets are files that exist in scan directories for an O3DE project, that match an Asset Builder's registered pattern, and result in a job being created when create jobs is called with the source asset for the Asset Builder.
+   * Read more about [source assets here.](/docs/user-guide/assets/pipeline/source-assets/)
+* Non-asset source files
+   * Non-asset source files are files that may or may not be in a scan directory, that are loaded and referenced when processing a source asset.
+   * The difference between a source asset and a non-asset source file is either:
+      * The file is not in a scan directory,
+      * The file does not match a file pattern for any asset builder descriptor, or
+      * The file does not generate a job when create jobs is called for the file for matching asset builders
+* Product assets
+   * Product assets are the run-time ready output of an asset processing job.
+* Intermediate assets
+   * Intermediate assets are source assets that are generated as a product of an asset processing job.
+   * Read more about [intermediate assets here.](/docs/user-guide/assets/pipeline/intermediate-assets/)
+
+#### References from source assets and non-asset source files to other files
+
+Source assets and non-asset source files can reference each other in many different ways, and each case may require unique handling at the time of authoring an asset builder.
+
+Source assets and non-asset source files may have these references:
+* source assets by UUID
+* source assets by a path
+* non-asset source files in a scan directory by a path
+* non-asset source files outside a scan directory by a path
+* product assets by asset ID
+* product assets by a path
+
+Path references from source asset and non-asset source files may be defined in these ways:
+* Relative to a scan directory
+* Relative to the asset with the reference
+* Absolute
+* Relative to a directory that may be difficult to infer from the contents or location of the source asset
+
+Source assets come in two forms, relative to how these references work:
+* A format that the builder author can modify and control.
+  * Example: A custom format defined for O3DE, like prefab files.
+* A format that the builder author has no control over.
+  * Example: A format defined outside of O3DE, like FBX files.
+
+When authoring a builder, if the format of the source asset is something the author has control over, then it's useful to manage how the source asset references other files.
+* When referencing a source asset or product asset, it's preferred to reference by UUID or Asset ID, because these will be more stable than a path. Read more about [asset identifiers here.](/docs/user-guide/assets/pipeline/asset-dependencies-and-identifiers/#asset-identifiers)
+
+Resolving paths to find the file on disk is often done within the asset builder. When dealing with path references from the source asset to other files, keep these things in mind:
+* The referenced asset may not be on the same drive as the asset with the reference. This includes scan directories, which can be on different drives. This means relative paths may not be resolvable.
+* Some operating systems have case sensitive paths, some do not. When resolving paths in an asset builder, it's important to do so in a way that will be stable across operating systems.
+* File locations relative to scan directories, and in the asset cache will be stable for all members of a team, but scan directories themselves, and files outside scan directories may not have the same paths for all team members.
+* Path resolving logic should be consistent, and predictable. Content creators will want to understand how paths are resolved when processing assets, so they can better manage their content.
+
+#### References from product assets to other files
+
+Product assets should only have these references:
+* Product assets by asset ID
+* Product assets by a relative path from the asset with the reference
+* Product assets by a relative path, to a specific root in the asset cache, usually the cache root for the platform
+* Non-product file in the project directory, expected at a specific location
+  * This kind of reference is not common, but there are cases where it may be necessary to reference a file outside the asset folder that will be in the shipped final product.
+
+While it's technically possible to reference files in other ways in product assets, it may end up causing problems later. The development version of a project, running the Editor or game launcher connected to the Asset Processor is what a team will be most used to interacting with. However, when preparing to deliver a project to end customers, with packaged and bundled content, the layout of the project and placement of assets will be different. References from product assets to other files that worked during development may not work in release builds of projects. For example, if a product asset references a source asset, that source asset likely won't be on the end user's machine in the packaged release build.
 
 Product assets should never reference other product assets with absolute path because this will result in the hash of the contents of product assets being unique per machine that generates product assets. When authoring a builder, the complete lifecycle of asset management for a project should be kept in mind. Keeping product assets stable across machines will ensure that the gathering modified assets step of generating a patch for a live game is accurate. You can read more about [asset bundling here.](docs/user-guide/packaging/asset-bundler/overview/)
 

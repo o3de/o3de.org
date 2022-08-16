@@ -31,7 +31,7 @@ The engine, the project, and individual Gems can be installed in any location ac
 
 Scan directories provide the entry point for [asset builders](docs/user-guide/assets/pipeline/asset-builders/) to read files as source assets, for generating product assets into the asset cache.
 
-A file in a scan directory is only a source asset if there is a builder that recognizes it, and creates a job that generates a product asset. Files in scan directories that Asset Processor doesn't recognize, such as license files, are ignored by Asset Processor. Ignored files aren't copied to the **Asset Cache**, and won't appear in **Asset Browser** in O3DE Editor.
+A file being in a scan directory does not automatically become a source asset. Source assets are files in scan directories that have had jobs created for them. Otherwise, these files are called non-asset source files. A non-asset source file will not have a UUID to identify it, and can only be referenced by path.
 
 ## Referencing files in scan directories
 
