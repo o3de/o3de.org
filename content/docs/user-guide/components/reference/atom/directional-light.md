@@ -23,7 +23,13 @@ The **Directional Light** component casts light from an infinitely distant point
 | **Intensity mode** | Allows specifying light values in lux or Ev100. Lux is a linear light value while EV100 is logarithmic (similar to camera stops). | `Lux` or `Ev100` | `Ev100` |
 | **Intensity** | Intensity of the light in the photometric unit set by **Intensity Mode**. | Any number for `EV100`, any positive number for `Lux` | `4.0` |
 | **Angular diameter** | The angular diameter of the light source in degrees. This is used to make sure specular highlights from directional lights don't completely disappear on mirror smooth surfaces. The angular diameter of the sun as viewed from earth is about 0.5°. | 0.0 - 5.0 | `0.5` |
-| **Shadow** |
+| **Shadow** | Refer to [Shadow properties](#shadow-properties) below. | | |
+| **Global Illumination** | Refer to [Global Illumination properties](#global-illumination-properties) below. | | |
+
+### Shadow properties
+
+| Property | Description | Values | Default |
+| - | - | - | - |
 | **Camera** | The entity of the camera the shadows will be visible from. Used to calculate the view frustums for shadow cascades. | Entity Id | None |
 | **Shadow far clip** | The distance to the far clip plane of the shadow. This is the maximum distance from the light source that shadows can cast. | 0 to Infinity | `100.0` |
 | **Shadowmap size** | The texture width and height of each shadow map cascade. | `256`, `512`, `1024`, `2048` | `1024` |
@@ -43,6 +49,10 @@ The **Directional Light** component casts light from an infinitely distant point
 | **Fullscreen Blur** | If enabled, a full-screen blur will be applied to the shadows. | Boolean | Enabled |
 | **Fullscreen Blur Strength** | Affects how strong the fullscreen shadow blur is. | 0 - 0.95 | `0.67` |
 | **Fullscreen Blur Sharpness** | Affects how sharp the fullscreen shadow blur appears around edges. | 0 - 400 | `50` |
-| **Global Illumination** |
+
+### Global Illumination properties
+
+| Property | Description | Values | Default |
+| - | - | - | - |
 | **Affects GI** | If enabled, this light affects diffuse global illumination. | Boolean | Enabled |
 | **Factor** | Multiplier on the amount of contribution to diffuse global illumination. | 0.0 - 2.0 | `1.0` |
