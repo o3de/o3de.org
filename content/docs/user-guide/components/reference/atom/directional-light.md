@@ -19,7 +19,7 @@ The **Directional Light** component casts light from an infinitely distant point
 
 | Property | Description | Values | Default |
 | - | - | - | - |
-| **Color** | The color of the light. The color acts as a mask or gel on perfectly white light source. For instance, a 1000 lux light with a white color will actually be 1000 lux, but a 1000 lux light with an 18% gray color will only be 180 lux. | Color | White |
+| **Color** | The color of the light. The color acts as a mask or gel on a perfectly white light source. For instance, a 1000 lux light with a white color will actually be 1000 lux, but a 1000 lux light with an 18% gray color will only be 180 lux. | Color | `255, 255, 255` |
 | **Intensity mode** | Allows specifying light values in lux or Ev100. Lux is a linear light value while EV100 is logarithmic (similar to camera stops). | `Lux` or `Ev100` | `Ev100` |
 | **Intensity** | Intensity of the light in the photometric unit set by **Intensity Mode**. | Any number for `EV100`, any positive number for `Lux` | `4.0` |
 | **Angular diameter** | The angular diameter of the light source in degrees. This is used to make sure specular highlights from directional lights don't completely disappear on mirror smooth surfaces. The angular diameter of the sun as viewed from earth is about 0.5°. | 0.0 - 5.0 | `0.5` |
