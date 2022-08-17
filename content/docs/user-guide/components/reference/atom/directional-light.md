@@ -48,7 +48,7 @@ The **Directional Light** component casts light from an infinitely distant point
 | **Blend between cascades** | If enabled, shadow cascades blend smoothly with each other. | Boolean | Disabled |
 | **Fullscreen Blur** | If enabled, a full-screen blur is applied to the shadows. | Boolean | Enabled |
 | **Fullscreen Blur Strength** | Sets the strength of the fullscreen shadow blur. | 0 - 0.95 | `0.67` |
-| **Fullscreen Blur Sharpness** | Affects how sharp the fullscreen shadow blur appears around edges. | 0 - 400 | `50` |
+| **Fullscreen Blur Sharpness** | Sets the sharpness of the fullscreen shadow blur around edges. | 0 - 400 | `50` |
 
 ### Global Illumination properties
 
