@@ -20,7 +20,7 @@ Multiplayer projects can be [run in Editor](./test-in-editor.md) using Ctrl-G. S
 2. Press the `HOME` key to enable the debug menu.
 3. Select the `Host` option.
 4. Select a level to load to begin hosting.
-4. Use the `Launch Local Client` option to automatically launch a client connected to the server.
+5. Use the `Launch Local Client` option to automatically launch a client connected to the server.
 
 ## Running Server and Client Launchers and configuring via console 
 
@@ -30,7 +30,7 @@ You can manually launch the executables for Client and Server and configure them
 2. In `ServerLauncher` press `~` to open the command line.
 3. Run the command `host` to begin hosting.
 4. Run the command `LoadLevel <path to level>` to load a level.
-5. In `ClientLauncher` press `~` to pen the command line.
+5. In `ClientLauncher` press `~` to open the command line.
 6. Run the command `connect <IP Address>` to connect to the server. If running locally, `connect` will default to localhost.
 
 ## Running Server and Client Launchers and configuring via cvar file
