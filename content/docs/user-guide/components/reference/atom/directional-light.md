@@ -55,4 +55,4 @@ The **Directional Light** component casts light from an infinitely distant point
 | Property | Description | Values | Default |
 | - | - | - | - |
 | **Affects GI** | If enabled, this light affects diffuse global illumination. | Boolean | Enabled |
-| **Factor** | Multiplier on the amount of contribution to diffuse global illumination. | 0.0 - 2.0 | `1.0` |
+| **Factor** | Multiplies this light's contribution to diffuse global illumination. | 0.0 - 2.0 | `1.0` |
