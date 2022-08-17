@@ -30,7 +30,7 @@ The **Directional Light** component casts light from an infinitely distant point
 
 | Property | Description | Values | Default |
 | - | - | - | - |
-| **Camera** | The entity of the camera the shadows will be visible from. Used to calculate the view frustums for shadow cascades. | Entity Id | None |
+| **Camera** | The entity of the camera the shadows will be visible from. Used to calculate the view frustums for shadow cascades. | EntityId | None |
 | **Shadow far clip** | The distance to the far clip plane of the shadow. This is the maximum distance from the light source that shadows can cast. | 0 to Infinity | `100.0` |
 | **Shadowmap size** | The texture width and height of each shadow map cascade. | `256`, `512`, `1024`, `2048` | `1024` |
 | **Cascade count** | The number of shadow cascades. | 1 - 4 | `4` |
