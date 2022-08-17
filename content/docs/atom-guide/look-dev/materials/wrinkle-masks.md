@@ -1,29 +1,29 @@
 ---
-linktitle: Wrinkle Masks
+linktitle: Wrinkle Masks for Skin Materials
 title: "Wrinkle Mask Workflow"
 description: "Learn about how to drive the blending between wrinkle maps with morph targets."
 toc: true
 weight: 200
 ---  
 
-This document describes the workflow for driving the blending of different wrinkle layers in the [Skin Material Type](atom-guide/look-dev/materials/skin.md) using morph targets. It can be seen in action in the [Old World teaser](https://www.youtube.com/watch?v=ebr8t_mz8p8) that came out with O3DE's launch. Following this workflow will allow for the automatic blending between wrinkle layers driven by the active morph targets of the actor component.
+This document describes the workflow for driving the blending of different wrinkle layers in the [Skin Material Type](https://github.com/o3de/o3de/blob/development/Gems/Atom/Feature/Common/Assets/Materials/Types/Skin.materialtype) using morph targets. It can be seen in action in the [Old World teaser](https://www.youtube.com/watch?v=ebr8t_mz8p8) that came out with O3DE's launch. Following this workflow will allow for the automatic blending between wrinkle layers driven by the active morph targets of the actor component.
 
 {{< important >}}
 This workflow represents a minimum viable product for animating wrinkle masks. There are a number of aspects that could use feedback on how to improve, such as how the normal maps and blend masks are blended, and the potential need for corrective blend masks. If you are using this feature, please reach out to [sig-graphics-audio on Discord](https://discord.com/channels/805939474655346758/816043793576886273) with your suggestions!
 {{< /important >}}
 
 ## Folder Structure and Naming Conventions
-In the folder that <mycharacter>.fbx is in, add a <mycharacter>_wrinklemasks folder. Using this exact naming convention, the Asset Processor will associate any wrinkle masks in the wrinkle mask folder with morph targets from the .fbx.
+In the folder that `<mycharacter>.fbx` is in, add a `<mycharacter>_wrinklemasks` folder. Using this exact naming convention, the Asset Processor will associate any wrinkle masks in the wrinkle mask folder with morph targets from the .fbx.
 
-![Folder Naming Convention](/images/atom-guide/materials/skin/wrinkle-mask-folder-naming-convention.jpg)
+![Folder Naming Convention](/images/atom-guide/materials/skin/wrinkle-mask-folder-naming-convention.png)
 
-In the <mycharacter>_wrinklemasks folder add one blend mask for each morph target that activates the wrinkle layers. If the morph target does not activate any wrinkle layers at all, it does not need a mask. The name of each mask must match the name of the morph target/blend shape/shape key in the fbx. If you rename the blend shape in the fbx, you must rename the wrinkle mask. Each mask is an independent file, and there is no limitation on how many wrinkle masks you can add to a character, although there will be at most 16 active at any one time.
+In the `<mycharacter>_wrinklemasks` folder add one blend mask for each morph target that activates the wrinkle layers. If the morph target does not activate any wrinkle layers at all, it does not need a mask. The name of each mask must match the name of the morph target/blend shape/shape key in the fbx. If you rename the blend shape in the fbx, you must rename the wrinkle mask. Each mask is an independent file, and there is no limitation on how many wrinkle masks you can add to a character, although there will be at most 16 active at any one time.
 
-![Wrinkle Mask File Naming Convention](/images/atom-guide/materials/skin/wrinkle-mask-file-naming-convention.jpg)
+![Wrinkle Mask File Naming Convention](/images/atom-guide/materials/skin/wrinkle-mask-file-naming-convention.png)
 
 Here you can see that the wrinkle mask file names above match the morph target (shape key in Blender) names below, ending with _wrinklemask.tif.
 
-![Shape Key Names in Blender](/images/atom-guide/materials/skin/shape-key-names-in-blender.jpg)
+![Shape Key Names in Blender](/images/atom-guide/materials/skin/shape-key-names-in-blender.png)
 
 At present, the masks cannot be shared, so even if you have two morph targets that would use the same mask, you'll have to duplicate the mask texture. The morph targets do not all have to have masks. The morph targets will still function without a mask, they just won't drive the wrinkle layers.
 
@@ -38,7 +38,7 @@ The bit depth and resolution of the textures should not impact the functionality
 ## Mask Blending
 It is possible for multiple overlapping morph targets to be active at once. In this case, the contribution of each mask will be summed.
 
-As an example, let's say that for the left_eyebrow_raised morph target, the portion of the forehead directly above the left eyebrow is fully wrinkled using wrinkle layer 1. This means that portion of the mask will be bright red, indicating that the first wrinkle layer should be used for the normal. For the portion of the mask that covers the center of the forehead, the mask might be a darker, mid-range red that indicates that the middle of the forehead is only halfway to fully wrinkled when the left eyebrow is raised.
+As an example, let's say that for the left_eyebrow_raised morph target, the portion of the forehead directly above the left eyebrow is fully wrinkled using the first wrinkle layer. This means that portion of the mask will be bright red, indicating that the first wrinkle layer should be used for the normal. For the portion of the mask that covers the center of the forehead, the mask might be a darker, mid-range red that indicates that the middle of the forehead is only halfway to fully wrinkled when the left eyebrow is raised.
 
 The right_eybrow_raised mask might be a mirror or nearly-mirror image of the left mask, with the center of the forehead also halfway wrinkled. But if both the left eyebrow and right eyebrow are fully raised at the same time, the overlapping values in the center of the forehead from the two masks will be added together, resulting in the center of the forehead being fully wrinkled using the first wrinkle layer.
 
