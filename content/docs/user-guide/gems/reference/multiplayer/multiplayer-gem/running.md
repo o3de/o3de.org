@@ -54,4 +54,6 @@ connect
 4. Run the server using `MultiplayerSample.ServerLauncher.exe --console-command-file=launch_server.cfg`
 5. Run the client using `MultiplayerSample.ClientLauncher.exe --console-command-file=launch_client.cfg`
 
-It is necessary to run the Server first so the Client has a host to connect to. These can be run either from command line in your build directory or by setting command line arguments in your preferred execution method.
+It is necessary to run the Server first so the Client has a host to connect to. 
+
+The commands above can be run either from command line in your build directory or by setting command line arguments in your preferred execution method.
