@@ -40,6 +40,7 @@ Do you have O3DE installed and you aren't sure where to start? How about creatin
 | Tutorial | Description |
 | - | - |
 | [Create a Level](environments/create-a-level) | Create a level for O3DE. |
+| [Constructing Terrain](environments/constructing-terrain) | Construct terrain in your new level |
 
 ## Extend the Editor
 

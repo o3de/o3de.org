@@ -10,3 +10,4 @@ This section contains step-by-step tutorials related to level and environment de
 | Tutorial | Description |
 | - | - |
 | [Create a Level](create-a-level) | Create a new level for O3DE. |
+| [Constructing Terrain](constructing-terrain) | Construct terrain in your new level |
