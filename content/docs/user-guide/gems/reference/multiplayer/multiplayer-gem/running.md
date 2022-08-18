@@ -10,7 +10,7 @@ Running projects using the Open 3D Engine Multiplayer Gem requires build steps f
 * Build your project's `GameLauncher` and `ServerLauncher` targets.
 * Use run the game either in standalone mode, using the ImGui options to host, or via the in editor testing approach.
 
-## In Editor Testing
+## Testing in the Editor
 
 Multiplayer projects can be [run in Editor](./test-in-editor.md) using Ctrl-G. See the accompanying documentation for more detail. 
 
@@ -22,7 +22,9 @@ Multiplayer projects can be [run in Editor](./test-in-editor.md) using Ctrl-G. S
 4. Select a level to load to begin hosting.
 5. Use the `Launch Local Client` option to automatically launch a client connected to the server.
 
-## Running Server and Client Launchers and configuring via console 
+## Running Server and Client launchers in Standalone
+
+### Manual configuration via the application's console 
 
 You can manually launch the executables for Client and Server and configure them using the application's console command line.
 
@@ -31,9 +33,9 @@ You can manually launch the executables for Client and Server and configure them
 3. Run the command `host` to begin hosting.
 4. Run the command `LoadLevel <path to level>` to load a level.
 5. In `ClientLauncher` press `~` to open the command line.
-6. Run the command `connect <IP Address>` to connect to the server. If running locally, `connect` will default to localhost.
+6. Run the command `connect <IP Address:Port>` to connect to the server. If running locally, `connect` will default to localhost.
 
-## Running Server and Client Launchers and configuring via cvar file
+### Using pre-defined config files
 
 You can manually launch the executables for Client and Server and pass a pre-defined configuration file to each for them to execute on launch. Commands in these cfgs files are executed in listed order.
 
@@ -45,7 +47,7 @@ LoadLevel <path to Level>
 ```
 3. Open `launch_client.cfg` and edit it to look like the following:
 ```
-connect <IP Address>
+connect <IP Address:Port>
 ```
 You can alternatively do the following for testing against localhost server running on the default port.
 ```
