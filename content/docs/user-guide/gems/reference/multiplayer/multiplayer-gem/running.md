@@ -47,7 +47,7 @@ LoadLevel <path to Level>
 ```
 connect <IP Address>
 ```
-You can alternatively do the following for testing locally:
+You can alternatively do the following for testing against localhost server running on the default port.
 ```
 connect
 ```
