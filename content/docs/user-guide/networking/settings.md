@@ -134,6 +134,7 @@ These settings control networking behavior.
 | net_UdpRecvBufferSize               | Default UDP socket receive buffer size.                                                                                             | 1 * 1024 * 1024 |                      |
 | net_UdpSendBufferSize               | Default UDP socket send buffer size.                                                                                                | 1 * 1024 * 1024 |                      |
 | net_validateSerializedTypes         | Causes an Assert when a TypeValidatingSerializer serialization attempt results in a type or variable name mismatch. | False   | Increases bandwidth utilization to support mismatch detection.   |
+
 ### Multiplayer layer
 | Setting                             | Description                                                                          | Default | Notes                    |
 |-------------------------------------|--------------------------------------------------------------------------------------|---------|--------------------------|
