@@ -5,7 +5,7 @@ weight: 300
 description: An overview and reference for data serializers used by the Open 3D Engine networking stack.
 ---
 
-Open 3D Engine has support for a variety of Serializers for visiting an object hierarchy and performing operations upon that hierarchy, typically reading from or writing data to the object hierarchy for reasons of persistence or network transmission.
+Open 3D Engine supports a variety of Serializers for visiting an object hierarchy and performing operations upon that hierarchy, typically reading from or writing data to the object hierarchy for reasons of persistence or network transmission.
 
 This section describes the ISerializer interface and various Serializer implementations included in AzNetworking. It also describes Serializers that function as wrappers that can be used to supplement other Serializer types.
 
@@ -44,3 +44,28 @@ An output serializer that tracks if any delta is actually serialized. TrackChang
 ### TypeValidatingSerializer 
 
 TypeValidatingSerializer is a debug serializer that wraps other ISerializer types to supplement the wrapped type serializer with type and name information for serialized values. These values can then be checked to ensure data consistency. TypeValidatingSerializer will assert when a mismatch is detected to help aid debugging. Its functionality is gated by the cvar `net_validateSerializedTypes` as described in [Settings](../settings). TypeValidatingSerializer adds a bandwidth cost when `net_validateSerializedTypes` is enabled in order to serialize type and name information.
+
+## Authoring a Serialization for an object model
+
+Since Serializers follow the ISerializer interface, a serialization function can be authored to accept any Serializer by using the ISerializer type. 
+
+As an example, consider the following struct and its Serialize method:
+```cpp
+    struct PlayerState
+    {
+        PlayerNameString m_playerName;
+        uint32_t m_score = 0;          // coins collected
+        uint8_t m_remainingShield = 0; // % of shield left, max of ~200% allowed for buffs
+        bool operator!=(const PlayerState& rhs) const;
+        bool Serialize(AzNetworking::ISerializer& serializer);
+    };
+
+    inline bool PlayerState::Serialize(AzNetworking::ISerializer& serializer)
+    {
+        return serializer.Serialize(m_playerName, "playerName")
+            && serializer.Serialize(m_score, "score")
+            && serializer.Serialize(m_remainingShield, "remainingShield");
+    }
+```
+
+PlayerState's Serialize can be used to both serialize for network transport via NetworkInputSerializer and back into a PlayerState via NetworkOutputSerializer. In fact, any type implementing ISerializer could be used as a parameter to PlayerState's Serialize method.
