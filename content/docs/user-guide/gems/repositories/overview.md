@@ -102,7 +102,7 @@ The `gem.json` file for your Gem(s) will need to be modified to include the `ori
 | --- | --- |
 | origin_uri | The URI for the `.zip` file containing the Gem archive - this is a direct link to download the Gem `.zip` archive. |
 | repo_uri | The URI for the Gem Repository |
-| last_updated | The date this file or Gem was last updated in YYYY-MM-DD format |
+| last_updated | The date this file or Gem was last updated in YYYY-MM-DD, YYYY-MM-DD HH:MM:SS or YYYY-MM-DDTHH:MM:SS format |
 | sha256 | The SHA256 digest of the `.zip` archive pointed to by the `origin_uri` field - for testing you can omit this field, but it is highly recommended you include it. |
 
 ## Creating a Gem Repository  
@@ -149,7 +149,7 @@ The `gem.json` file for your Gem(s) will need to be modified to include the `ori
         ],
         "icon_path": "preview.png",
         "requirements": "",
-        "documentation_url": "https://o3de.org/docs/user-guide/gems/reference/gameplay/achievements/",
+        "documentation_url": "https://o3de.org/docs",
         "dependencies": []
     }
     ```
