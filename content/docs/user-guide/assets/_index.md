@@ -11,6 +11,7 @@ Topics in this section cover the **Asset Pipeline** and asset processing, includ
 | Topic Area | Description |
 | --- | --- |
 | [Asset Pipeline](pipeline) | The Asset Pipeline is the end-to-end process that transforms source assets into runtime optimized product assets. |
+| [Scene Pipeline](scene-pipeline) | The Scene Pipeline facilitates the conversion from source scene assets that loads, converts, and export assets containing scene engine data.  |
 | [Asset Processor](asset-processor) | Asset Processor discovers source assets, manages asset process jobs, and maintains the **Asset Cache**. |
 | [Scene Settings](scene-settings) | Use Scene Settings to customize how meshes, actors, motions, and PhysX colliders are processed. |
 | [Texture Settings](texture-settings) | Use Texture Settings to customize how source image assets are processed. |
