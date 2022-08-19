@@ -30,6 +30,46 @@ SceneCore
 
 SceneCore is the central library for the Asset Importer framework. It provides the storage for a graph (SceneGraph) that contains the in-memory representation of the imported data and a dictionary (SceneManifest) that contains the groups and rules that guide the exporting process. It also contains various utilities to make it easier to work with the graph and manifest. Lastly it contains a collection of interfaces that provide the a common "language" for the import and export process to talk. Some of these interfaces are mandatory, such as the IManifestObject, in order for base functionality to be implemented. Others are optional, but advisable to implement as they make code reusable. As an example, if custom mesh data is loaded, it's advisable to have the data container implement the IMesh interface so the UI knows when to present the mesh to the user as a selectable option and for an exporter to know how to interpret the data. Of course if this isn't desired, not implementing the IMesh interface will disable this functionality, but the new data can still be made available in the graph.
 
+// This function is now bound to the CallProcessorBinder, so it will be called as soon as exporting starts. It is a good point 
+    // at which to look at the available groups and see if there are groups that need to log the scene graph.
+    AZ::SceneAPI::Events::ProcessingResult ExportTrackingProcessor::PrepareForExport(AZ::SceneAPI::Events::PreExportEventContext& context)
+    {
+        // Before doing any work, the manifest must be searched for instructions about what needs to be done. The instructions 
+        // are in the form of groups and rules. In this example, we use this opportunity to log the scene graphs that are 
+        // listed in every logging group.
+        //
+        // In this example, the manifest is cached for later use. This is typically not recommended because multiple builders can
+        // be running at the same time, resulting in callbacks from multiple exports that are in flight. In general, you should
+        // pass in any required information as a member of the context.
+        m_manifest = &context.GetScene().GetManifest();
+        
+        // The manifest is a flat list of IManifestObjects and relies on AZ_RTTI to determine its content. Content can be retrieved
+        // through an index-based approach or an iterator approach. The index-based approach tends to be easier to understand but
+        // it also requires you to work with more code. The iterator has more complex syntax and can produce more complicated compile 
+        // errors, but it has several utilities that make it more concise to work with and often makes code that better communicates 
+        // intention. To provide examples of both cases, the index-based approach is used below, and the iterator approach is used in 
+        // the ContextCallback function.
+        size_t count = m_manifest->GetEntryCount();
+        for (size_t i = 0; i < count; ++i)
+        {
+            AZStd::shared_ptr<const AZ::SceneAPI::DataTypes::IManifestObject> entry = m_manifest->GetValue(i);
+
+            // The azrtti_cast is a run-time type-aware cast that will return a nullptr if the provided type
+            // can't be cast to the target class. That principle is used here to filter for LoggingGroups only.
+            const LoggingGroup* group = azrtti_cast<const LoggingGroup*>(entry.get());
+            if (group)
+            {
+                if (group->DoesLogGraph())
+                {
+                    // For every group, write out the graph information, starting at the node the user selected.
+                    LogGraph(context.GetScene().GetGraph(), group->GetGraphLogRoot());
+                }
+            }
+        }
+
+        return AZ::SceneAPI::Events::ProcessingResult::Success;
+    }
+
 ## Groups
 
 ## Rules
