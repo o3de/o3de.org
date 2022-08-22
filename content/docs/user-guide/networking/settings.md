@@ -5,9 +5,41 @@ linktitle: Network Settings
 ---
 
 ## Overview
-This page documents [console variables](/docs/user-guide/appendix/cvars) and settings for AzNetworking and Multiplayer behavior.
+## Overview
+This page documents [console variables](/docs/user-guide/appendix/cvars) and other settings that control Networking and Multiplayer behavior.
+
+## Networking commands
+These are special console commands that control the flow of networked and multiplayer games. 
+
+| Setting                | Description                                                                                | Default | Notes |
+|------------------------|--------------------------------------------------------------------------------------------|---------|-------|
+| host                   | Opens a multiplayer connection as a host for other clients to connect to.                  |||                                                                      ||
+| connect                | Opens a multiplayer connection to a host                                                   |||
+| disconnect             | Disconnects any open multiplayer connections                                               ||| 
+| LoadLevel              | Unloads the current level and loads a new one with the given asset name.                   ||| 
+| sv_launch_local_client | Launches a local client and connects to this host server (only works if currently hosting. |||
+
+These commands can be executed dynamically via the console command line or placed within a console command configuration file, usually with the `.cfg` suffix. Commands will be
+executed in order.
+
+For a networked game or simulation, a typical server configuration file should contain:
+
+```
+host
+LoadLevel <path to Level>
+```
+
+And the client's configuration file should contain:
+
+```
+connect
+```
+
+Commands in configuration files can be passed to launchers using the `console-command-file` option, for example `MultiplayerSample.ServerLauncher.exe --console-command-file=launch_server.cfg`.
 
 ## Client settings
+The following CVars control client behaviour.
+
 | Setting                | Description                                                                                                                                                                             | Default   | Notes |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|-------|
 | cl_clientport          | The port to bind to for game traffic when connecting to a remote host, a value of 0 will select any available port.                                                                     | 0         |       |
@@ -34,6 +66,8 @@ This page documents [console variables](/docs/user-guide/appendix/cvars) and set
 
 
 ## Server settings
+The following CVars control server behaviour.
+
 | Setting                 | Description                                                                     | Default | Notes                |
 |-------------------------|---------------------------------------------------------------------------------|---------|----------------------|
 | sv_map                  | The map the server should load.                                                 | None    |                      |
