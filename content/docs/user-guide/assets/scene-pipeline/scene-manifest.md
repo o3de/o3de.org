@@ -10,6 +10,8 @@ The ```SceneManifest``` contains instructions on what to do with the ```SceneGra
 
 ![Scene pipeline.](/images/user-guide/assets/scene-pipeline/scene-pipe-scene-settings.png)
 
+The Meshes, Actors, and PhysX tabs are dynamically determined using the scene manifest groups.
+
 ## Scene manifest groups and rules
 
 Groups represent the instigator of a set of actions, such as converting and writing to O3DE data. While groups are not particularly tied to a specific file format and can result in multiple products or none at all, they usually revolve around a single type. For example, the MeshGroup works on static meshes and produces primarily render products asset files. Groups aim to contain the minimum amount of configuration options needed for them to do their work. Practically this means that they should always produce valid products, though valid in this case means that the products do not cause crashes, not necessarily valid in that they represent the source data exactly.
