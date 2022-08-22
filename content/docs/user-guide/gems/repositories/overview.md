@@ -1,40 +1,38 @@
 ---
 linkTitle: Overview
 title: Gem Repository Overview
-description: Gems Repositories provide a way to share additional Gems.
+description: Gems repositories provide a way to share Gems in Open 3D Engine (O3DE).
 weight: 100
 toc: true
 ---
 
 
-Gem Repositories provide a way to discover, acquire and share Gems outside those that come with the default Open 3D Engine.  While most Gem Repositories are hosted online, they can also exist locally on a hard drive which is useful for testing.
+Gem repositories provide a way to discover, acquire, and share Gems that are not included with **Open 3D Engine (O3DE)**.  Gem repositories are generally hosted online, but you can also add them to your project from a local hard drive which is helpful for testing.
 
 
-## Adding an Existing Gem Repository  
+## Add a Gem repository in Project Manager
 
-### From the Project Manager Gem Repositories Page
+You can add Gem repositories from the **Gem Repositories** page in Project Manager.
+1. Press the **Add Repository** button. In the dialogue box that opens you can supply the URL or local path for a Gem repository. 
+1. If you have a URL for an online Gem repository, copy and paste it into the `Repository Path` field and press the **Add** button.
+1. Alternately, if you want to add a Gem repository from your local hard drive, press the folder button to open the `Browse` dialog box, select the folder with the Gem repository, press the **Select Folder** button, and finally press the **Add** button.
 
-Gem Repositories can be added from the Gem Repositories page in the Project Manager.
-1. Press the `Add Repository` button. A dialog will open asking for a `Repository URL` or `Local Path`. 
-1. If you have a URL for an online Gem Repository, copy + paste it into the `Repository Path` field and press `Add`.
-1. Alternately, if you want to add a Gem Repository on your local hard drive, press the folder button to open the `Browse` dialog, select the Gem Repository folder and press `Add`.
+A new entry will be added to the list of Gem repositories, and the Gems provided by the Gem repository will be available to download and add to your projects.
 
-A new entry will be added to the list of Gem Repositories and the Gems provided by the Gem Repository will be available to download and add to your projects.
+## Add a Gem repository with the o3de command line tool
 
-### From the o3de command line tool
-
-Gem Repositories can also be added using the `o3de` CLI tool using the following command:
+You can use the `o3de` CLI tool to add Gem repositories with the following command:
 ```
-scripts\o3de.bat register -ru <Repository URL>
+scripts\o3de.bat register -ru <Gem repository URL>
 ```
 
-## Anatomy of a Gem Repository  
+## Anatomy of a Gem repository  
 
-A Gem Repository contains a `repo.json` file which provides the metadata for the repository including a list of URIs for the Gems it provides.
+A Gem repository contains a `repo.json` file which contains the metadata for the repository, including a list of URIs for the Gems it provides.
 
 ### Folder structure
 
-The recommended folder structure is to put the `repo.json` file at the root of your Gem Repository and the `gem.json` files for the Gems it provides in subfolders.  
+The recommended folder structure is to put the `repo.json` file at the root of your Gem repository and the `gem.json` files for each Gem it provides in subfolders.  
 ```
 /
    repo.json
@@ -44,14 +42,14 @@ The recommended folder structure is to put the `repo.json` file at the root of y
        gem.json
 ```
 
-Alternately, if you are certain you will only ever have one gem in the repository, it's OK to put the `gem.json` in the root folder.
+If you are confident you will only ever have one Gem in the repository, it's acceptable to put the `gem.json` in the root folder.
 
 {{< note >}}
-One of the most convenient ways to host a Gem Repository online is to place the `repo.json` file inside your existing GitHub repository where your Gem's source code is.
+One of the most convenient ways to host a Gem Repository online is to place the `repo.json` file inside the GitHub repository where your Gem's source code is.
 {{< /note >}}
 
 ### Format of a repo.json file
-The `repo.json` file provides the metadata for the Gem Repository and list of Gems.
+The `repo.json` file contains the metadata for the Gem Repository and a list of Gems.
 
 ```
 {
@@ -67,11 +65,11 @@ The `repo.json` file provides the metadata for the Gem Repository and list of Ge
 }
 ```
 
-In the future, the format of the `repo.json` file will be expanded to support projects, templates and additional Gem Repositories.
+In the future, the format of the `repo.json` file may be expanded to support projects, templates, and additional Gem repositories.
 
 ### Format of gem.json files 
 
-The `gem.json` file for your Gem(s) will need to be modified to include the `origin_uri`, `repo_uri`, `last_updated` and `sha256` fields.
+The `gem.json` file for your Gems will need to be modified to include the `origin_uri`, `repo_uri`, `last_updated`, and `sha256` fields.
 ```
 {
     "gem_name": "TestGem",
@@ -100,22 +98,20 @@ The `gem.json` file for your Gem(s) will need to be modified to include the `ori
 ```
 | Field | Description |
 | --- | --- |
-| origin_uri | The URI for the `.zip` file containing the Gem archive - this is a direct link to download the Gem `.zip` archive. |
-| repo_uri | The URI for the Gem Repository |
-| last_updated | The date this file or Gem was last updated in YYYY-MM-DD, YYYY-MM-DD HH:MM:SS or YYYY-MM-DDTHH:MM:SS format |
-| sha256 | The SHA256 digest of the `.zip` archive pointed to by the `origin_uri` field - for testing you can omit this field, but it is highly recommended you include it. |
+| origin_uri | The URI for the `.zip` file containing the Gem archive.  This is a direct link to download the Gem's `.zip` archive. |
+| repo_uri | The URI for the Gem repository. |
+| last_updated | The date this file or Gem was last updated in `YYYY-MM-DD`, `YYYY-MM-DD HH:MM:SS`, or `YYYY-MM-DDTHH:MM:SS` format. |
+| sha256 | The SHA-256 digest of the `.zip` archive that the `origin_uri` field points to.  You can omit this field for testing, but we highly recommend including it. |
 
-## Creating a Gem Repository  
+## Creating a Gem repository using a template 
 
-### Using a Template
-
-1. Create a new gem repo using `o3de.bat`.  This example uses a localhost URL as the repository URI for testing.
+1. Create a new Gem repository using `o3de.bat`.  The following example uses a localhost URL as the repository URI for testing.
 
     ```
-    scripts\o3de.bat create-from-template -tp Templates\GemRepo -dp <repo path on disk> -r ${RepoURI} http://localhost:8080/
+    scripts\o3de.bat create-from-template -tp Templates\GemRepo -dp <repository path on disk> -r ${RepoURI} http://localhost:8080/
     ```
 
-1. Open the `repo.json` file in a text editor and update all the fields except the gem's list - we'll update that when adding a gem to the repository in the next step.
+1. Open the `repo.json` file in a text editor and update all the fields except the Gems list.  In the next step, you will update that when adding a Gem to the repository.
     ```
     {
         "repo_name":"RepositoryName",
@@ -129,8 +125,8 @@ The `gem.json` file for your Gem(s) will need to be modified to include the `ori
     }
     ```
 
-### Add a Gem to the Gem Repository
-1.  Make a folder inside your Gem Repository for the Gem.  In this example we'll assume the gem is named "RemoteExample" and make a folder named "RemoteExampleV1" and place a `gem.json` in there that looks like this:
+### Add a Gem to the Gem repository
+1.  Make a folder inside your Gem repository for the Gem.  In this example, the gem is named `RemoteExample`. Make a folder named `RemoteExampleV1` and create a `gem.json` file in the folder that looks like this:
     ```
     {
         "gem_name": "RemoteExample",
@@ -154,20 +150,20 @@ The `gem.json` file for your Gem(s) will need to be modified to include the `ori
     }
     ```
 
-    The `origin_uri` points to the location of the gem `.zip` archive that will be downloaded
+    The `origin_uri` points to the location of the Gem's `.zip` archive that will be downloaded.
 
-1. Create a Gem, or take an existing Gem, zip up the **contents** (not the folder itself) and name the archive `RemoteExampleV1.zip` and place it in the "RemoteExampleV1" folder. 
+1. Create a Gem, or take an existing Gem, zip up the Gem's contents, not the folder itself, and place the `.zip` in the "RemoteExampleV1" folder, and name it `RemoteExampleV1.zip`.
 {{< note >}}
 When creating an archive of your Gem, zip up the contents of the Gem folder, not the folder itself, so that when extracted, the `gem.json` file will be at the root, and not inside a subfolder named `RemoteExampleV1` 
 {{< /note >}}
-1. Generate the sha256 for your Gem .zip archive and add that value to the "sha256" field in the `gem.json` file that is outside the .zip.  On Windows, you can use the `certutil` program to generate the SHA256 value like this:
+1. Generate the SHA-256 for your Gem's `.zip` archive and add that value to the `sha256` field of the `gem.json` file located outside the `.zip`.  On Windows, you can use the `certutil` program to generate the SHA-256 value like this:
 {{< note >}}
-It is possible to leave out the sha256 field for testing, but discouraged
+It is possible, but not recommended, to leave out the SHA-256 field for testing.
 {{< /note >}}
     ```
     certutil -hashfile C:/path/to/gem.zip SHA256
     ```
-1. Update your repo.json file and add the URL for the gem folder.  In this example we'll use the localhost URL for testing.
+1. Update your `repo.json` file and add the URL for the Gem folder.  This example uses the localhost URL for testing.
     ```
     {
         ...
@@ -178,18 +174,18 @@ It is possible to leave out the sha256 field for testing, but discouraged
     ```
 
 
-### Testing your local Gem Repository
+### Testing your local Gem repository
 
-To test your Gem Repository before you upload it to a server, you can host a local server using Python or register the folder path to your Gem Repository, but if you register the folder path, you'll need to modify the URIs to use absolute paths like `file://c/path/to/gem` instead of `http://localhost:8080/gem`
+To test your Gem repository before you upload it to a server, you can host a local server using Python or register the folder path to your Gem repository. If you register the folder path, you'll need to modify the URIs to use absolute paths like `file://c/path/to/gem` instead of `http://localhost:8080/gem`.
 
-1. Use Python to host a local server for testing
+1. Use Python to host a local server for testing.
     ```
     cd path/to/gem/repository 
     
     # start a local python server on 8080
     python -m http.server 8080
     ```
-1. Open up the Project Manager and add your Gem Repository, when prompted use the URL for your local server which should be "http://localhost:8080/"
+1. Open up Project Manager and add your Gem repository.  When prompted, use the URL for your local server, which should be `http://localhost:8080/`.
 {{< note >}}
-Adding the Gem Repository may fail if you leave out the trailing slash in the URL.
+Adding the Gem repository may fail if you leave out the trailing slash in the URL.
 {{< /note >}}

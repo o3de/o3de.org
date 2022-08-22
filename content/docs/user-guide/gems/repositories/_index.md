@@ -1,6 +1,6 @@
 ---
 linktitle: Gem Repositories
 title: Gem Repositories 
-description: An overview of Gem Repositories which offer a way to share gems.
+description: Gems repositories provide a way to share Gems in Open 3D Engine (O3DE).
 weight: 200
 ---
