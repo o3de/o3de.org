@@ -14,3 +14,11 @@ The scene pipeline is a specialized asset builder that imports source scene file
 | [Scene Graph](scene-graph) | Describes the scene graph nodes, hierarchial data, and mechanism of iteration. |
 | [Scene Manifest](scene-manifest) | Contains instructions on what to do with the SceneGraph content. |
 | [Scene Builder](scene-builder) | Asset builders that are designed to manage and export parts of the scene graph. |
+
+![Scene pipeline.](/images/user-guide/assets/scene-pipeline/scene-pipeline-flow.png)
+
+The key:
+
+* The yellow outlined shapes are asset builder events
+* The blue outlined shapes are scene builder events using BindCall()
+* The green outlined shapes are scene builder events via the Behavior Component

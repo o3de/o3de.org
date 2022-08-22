@@ -1,6 +1,6 @@
 ---
 linkTitle: Scene API
-title: Scene Pipeline SceneAPI
+title: SceneAPI
 description: The API to execute logic inside the scene pipeline.
 weight: 400
 toc: true
