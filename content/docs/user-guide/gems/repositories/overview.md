@@ -156,14 +156,17 @@ The `gem.json` file for your Gem(s) will need to be modified to include the `ori
 
     The `origin_uri` points to the location of the gem `.zip` archive that will be downloaded
 
-1. Create a Gem, or take an existing Gem, zip up the contents and place it in the "RemoteExampleV1" folder, and name it `RemoteExampleV1.zip`
+1. Create a Gem, or take an existing Gem, zip up the **contents** (not the folder itself) and name the archive `RemoteExampleV1.zip` and place it in the "RemoteExampleV1" folder. 
+{{< note >}}
+When creating an archive of your Gem, zip up the contents of the Gem folder, not the folder itself, so that when extracted, the `gem.json` file will be at the root, and not inside a subfolder named `RemoteExampleV1` 
+{{< /note >}}
 1. Generate the sha256 for your Gem .zip archive and add that value to the "sha256" field in the `gem.json` file that is outside the .zip.  On Windows, you can use the `certutil` program to generate the SHA256 value like this:
+{{< note >}}
+It is possible to leave out the sha256 field for testing, but discouraged
+{{< /note >}}
     ```
     certutil -hashfile C:/path/to/gem.zip SHA256
     ```
-    {{< note >}}
-    It is possible to leave out the sha256 field for testing, but discouraged
-    {{< /note >}}
 1. Update your repo.json file and add the URL for the gem folder.  In this example we'll use the localhost URL for testing.
     ```
     {
@@ -173,6 +176,7 @@ The `gem.json` file for your Gem(s) will need to be modified to include the `ori
         ]
     }
     ```
+
 
 ### Testing your local Gem Repository
 
@@ -186,6 +190,6 @@ To test your Gem Repository before you upload it to a server, you can host a loc
     python -m http.server 8080
     ```
 1. Open up the Project Manager and add your Gem Repository, when prompted use the URL for your local server which should be "http://localhost:8080/"
-    {{< note >}}
-    Adding the Gem Repository may fail if you leave out the trailing slash in the URL.
-    {{< /note >}}
+{{< note >}}
+Adding the Gem Repository may fail if you leave out the trailing slash in the URL.
+{{< /note >}}
