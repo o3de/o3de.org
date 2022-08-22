@@ -17,6 +17,8 @@ The Open Asset Import Library supports [many scene formats](https://github.com/a
 
 Asset Builders have three core components: a **Descriptor** for the builder, and handlers for **Create Jobs** and **Process Job** requests.
 
+![Simple Job](/images/user-guide/assets/pipeline/asset_builders/asset_builder_basics.png)
+
 ### Descriptor
 
 The Descriptor provides Asset Processor the information required to identify the Asset Builder and also declares which source file types the Asset Builder can process. The Descriptor contains the file patterns of the supported source assets, a Universally Unique Identifier (UUID), and a version number. Asset Processor uses the Descriptor to filter source assets to the appropriate Asset Builder.
@@ -41,22 +43,26 @@ Process Job is multithreaded. Several Asset Builders can run multiple process jo
 
 ## Loading other files
 
-Sometimes, when authoring a builder, it may be necessary to load other files besides the primary source file to finish this process. Here are some scenarios that this can come up, and best practices for handling them.
+Sometimes, when authoring a builder, it may be necessary to load other files besides the primary source file to finish a given process. Here are some scenarios that this can come up, and best practices for handling them.
 
 ### Understanding file locations
 
-Files relevant to asset processing can exist in three core locations:
+![File Locations](/images/user-guide/assets/pipeline/asset_builders/asset_builder_file_locations.png)
+
+Files relevant to asset processing can exist in these locations:
 1. The Asset Cache is where all product assets exist.
 1. Scan directories are the only place source assets can exist.
 1. Source files (not assets) can be on any drive in any location.
 
-Scan directories tend to be one of two core locations. There are other locations, but these are the primary ones. Read more about [scan directories here:](/docs/user-guide/assets/pipeline/scan-directories/)
-1. The root folder for the current project.
+Scan directories are mostly these locations. Scan directories can be elsewhere, but these are the primary ones. Read more about [scan directories here:](/docs/user-guide/assets/pipeline/scan-directories/)
+1. The current project's directory.
 1. The `Assets` folder for each Gem enabled for the project.
 
 Individual Gems, the O3DE project in use, and the engine itself can all be installed to different drives.
 
 #### Types of files in asset processing
+
+![All files in asset processing](/images/user-guide/assets/pipeline/asset_builders/asset_builder_all_dependencies.png)
 
 * Source assets
    * Source assets are files that exist in scan directories for an O3DE project, that match an Asset Builder's registered pattern, and result in a job being created when create jobs is called with the source asset for the Asset Builder.
@@ -74,6 +80,8 @@ Individual Gems, the O3DE project in use, and the engine itself can all be insta
    * Read more about [intermediate assets here.](/docs/user-guide/assets/pipeline/intermediate-assets/)
 
 #### References from source assets and non-asset source files to other files
+
+![Source asset references](/images/user-guide/assets/pipeline/asset_builders/source_asset_references.png)
 
 Source assets and non-asset source files can reference each other in many different ways, and each case may require unique handling at the time of authoring an asset builder.
 
@@ -108,6 +116,8 @@ Resolving paths to find the file on disk is often done within the asset builder.
 
 #### References from product assets to other files
 
+![Product asset references](/images/user-guide/assets/pipeline/asset_builders/product_asset_references.png)
+
 Product assets should only have these references:
 * Product assets by asset ID
 * Product assets by a relative path from the asset with the reference
@@ -137,7 +147,7 @@ If that isn't possible, then intermediate assets can provide a path to manage th
 
 Read more about [intermediate assets here.](/docs/user-guide/assets/pipeline/intermediate-assets/) Read more about [job dependencies here.](/docs/user-guide/assets/pipeline/asset-dependencies-and-identifiers/#job-dependencies)
 
-This is an uncommon situation, so we're looking for use cases to help guide improvements to be made in this area. If you have a need to load a product asset during the create jobs step of asset processing, please create [a ticket](https://github.com/o3de/o3de/issues) or reach out in the [O3DE Discord](https://{{< links/o3de-discord >}})
+If you have a need to load a product asset during the create jobs step of asset processing, its recommended you discuss your use case with the O3DE community. Please create [a ticket](https://github.com/o3de/o3de/issues) or reach out in the [O3DE Discord](https://{{< links/o3de-discord >}})
 
 ### Load other source assets or non-asset files
 
