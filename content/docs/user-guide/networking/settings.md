@@ -6,18 +6,18 @@ linktitle: Network Settings
 
 ## Overview
 ## Overview
-This page documents [console variables](/docs/user-guide/appendix/cvars) and other settings that control Networking and Multiplayer behavior.
+This page documents [console variables](/docs/user-guide/appendix/cvars) and other settings that can control Networking and Multiplayer behavior.
 
 ## Networking commands
-These are special console commands that control the flow of networked and multiplayer games. 
+These are console commands that control the flow of networked and multiplayer games, or will be required to for a networked game or a simulation.
 
-| Setting                | Description                                                                                | Default | Notes |
-|------------------------|--------------------------------------------------------------------------------------------|---------|-------|
-| host                   | Opens a multiplayer connection as a host for other clients to connect to.                  |||                                                                      ||
-| connect                | Opens a multiplayer connection to a host                                                   |||
-| disconnect             | Disconnects any open multiplayer connections                                               ||| 
-| LoadLevel              | Unloads the current level and loads a new one with the given asset name.                   ||| 
-| sv_launch_local_client | Launches a local client and connects to this host server (only works if currently hosting. |||
+| Setting                | Description                                                                                | Notes                                                                                                                                      |
+|------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| host                   | Opens a multiplayer connection as a host for other clients to connect to.                  ||                                                                      ||
+| connect                | Opens a multiplayer connection to a host                                                   | Takes an optional ip address and port, separated by ':'. <br/>Otherwise uses default address (`cl_serveraddr`) and port (`cl_serverport`). |
+| disconnect             | Disconnects any open multiplayer connections                                               || 
+| LoadLevel              | Unloads the current level and loads a new one with the given asset name.                   | Not specific to network or multiplayer.                                                                                                    |                                                                                         |                                                                                         | 
+| sv_launch_local_client | Launches a local client and connects to this host server (only works if currently hosting. |                                                                                                                                            |
 
 These commands can be executed dynamically via the console command line or placed within a console command configuration file, usually with the `.cfg` suffix. Commands will be
 executed in order.
@@ -38,7 +38,7 @@ connect
 Commands in configuration files can be passed to launchers using the `console-command-file` option, for example `MultiplayerSample.ServerLauncher.exe --console-command-file=launch_server.cfg`.
 
 ## Client settings
-The following CVars control client behaviour.
+The following CVars control client behavior.
 
 | Setting                | Description                                                                                                                                                                             | Default   | Notes |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|-------|
@@ -66,7 +66,7 @@ The following CVars control client behaviour.
 
 
 ## Server settings
-The following CVars control server behaviour.
+The following CVars control server behavior.
 
 | Setting                 | Description                                                                     | Default | Notes                |
 |-------------------------|---------------------------------------------------------------------------------|---------|----------------------|
