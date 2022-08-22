@@ -34,9 +34,7 @@ The ```SceneGraph``` is guaranteed to have at least one node. By default, this i
 
 ## Internal layout
 
-{{< note >}}
-ADD GRAPH
-{{< /note >}}
+![Scene graph layout](/images/user-guide/assets/scene-pipeline/scene-graph-layout.png)
 
 The ```SceneGraph``` uses a parent-child-sibling approach to storing the hierarchy, rather than the more common parent-child storage. In this approach the parent doesn't have a variable sized array to store all the children, instead a single node has a link to its parent, its child and its first sibling. In this context siblings are nodes that that are on the same level and share a common parent. Siblings would be children in a parent-child tree and conceptually are the same as the children of a parent node. The parent-child-sibling approach guarantees a fixed size for all nodes and helps significantly reduce the number of memory allocations required when adding new nodes. In a parent-child tree all nodes will individually allocate memory to hold the children, usually allocating a little more memory to avoid resizing too often (vectors are commonly used in this situation) which results in each node allocating memory as soon as it gets at least one child. In contrast the parent-child-sibling tree has nodes of a fixed size so no additional memory needs to be allocated. As a result, a single array of nodes is sufficient, which would only need to allocate memory when the array needs to be resized for additional nodes. Because the nodes are stored in the same array they also exhibit better memory locality while the individual children array of a parent-child tree could be highly spread out in a worst-case scenario. The downside can be that siblings don't live close together in memory as they would in the traditional parent-child approach, which can lead to many jumps in memory when traversing over the graph. However, when the ```SceneGraph``` is used with scene files the hierarchy usually doesn't change after loading, avoiding this problem to a large degree.
 
