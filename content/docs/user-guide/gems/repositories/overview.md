@@ -103,6 +103,9 @@ The `gem.json` file for your Gems will need to be modified to include the `origi
 | last_updated | The date this file or Gem was last updated in `YYYY-MM-DD`, `YYYY-MM-DD HH:MM:SS`, or `YYYY-MM-DDTHH:MM:SS` format. |
 | sha256 | The SHA-256 digest of the `.zip` archive that the `origin_uri` field points to.  You can omit this field for testing, but we highly recommend including it. |
 
+{{< note >}}
+For a full description of `gem.json` fields and examples see the [`gem.json` manifest documentation](/docs/user-guide/programming/gems/manifest/).
+{{< /note >}}
 ## Creating a Gem repository using a template 
 
 1. Create a new Gem repository using `o3de.bat`.  The following example uses a localhost URL as the repository URI for testing.
