@@ -25,8 +25,8 @@ To customize a node in a `.names` file, you can update any of the following fiel
 | --- | --- |
 | `name` | The name of the node, argument, or return type. |
 | `category` | The category in the Node Palette to place the node in. Supports nested categories by using the "/" character. Example: "Gameplay/Missions". |
-| `tooltip` | Provides a tooltip to the element, this can be the node itself, or any of the node slots when the tooltip is added on a method or arguments. |
-| `subtitle` | This can be used on the entry details object, it allows overriding the node's subtitle. |
+| `tooltip` | Provides a tooltip to the element. This can be the node itself, or any of the node slots when the tooltip is added on a method or argument. |
+| `subtitle` | This can be used on the entry details object. It overrides the node's subtitle. |
 
 {{< important >}}
 Some fields in a `.names` file should _not_ be modified. They are used by the system to create a key into a database of text fields.
@@ -61,16 +61,16 @@ Any changes to these fields will result in the Script Canvas Editor being unable
 
     ![Image 2](/images/user-guide/scripting/script-canvas/text-replacement-2.png)
 
-    In this example, all of the names are now separated by a space, and the naming follows the Script Canvas naming convention to use Camel Case.
+    In this example, all of the names are now separated by a space, and the naming follows the Script Canvas naming convention to use camel case.
 
 ### Example: Changing the node category
 
-We have succesfully generated translation data for a node, but its category is still under "Other". To change this, edit the generated file `AWSGameLiftPlayer.names`.
+You've successfully generated translation data for a node, but its category is still under "Other". To change this, edit the generated file `AWSGameLiftPlayer.names`.
 
 1. Navigate within the file to the outermost `details` field and add
 `"category": "AWS Game Lift"`.
 
-1. In addition, let's simplify the `name` from `"AWS Game Lift Player"` to `"Player"`.
+1. In addition, simplify the `name` from `"AWS Game Lift Player"` to `"Player"`.
 
     ```json
     {
@@ -99,7 +99,7 @@ We have succesfully generated translation data for a node, but its category is s
 
 ### Example: Updating translation files
 
-In this scenario, we do not need to generate a new translation file, instead we just need to edit it.
+In this scenario, you don't need to generate a new translation file. Instead you only need to edit it.
 
 1. Right-click on any of the nodes under AWSGameLiftPlayer.
 
@@ -118,14 +118,14 @@ In this scenario, we do not need to generate a new translation file, instead we 
 Use the following text replacement best practices when working with `.names` files.
 
 * Do not modify the `base`, `context`, `variant`, or `typeid` fields.
-* Use `Camel Case` syntax with spaces.
+* Use camel case syntax with spaces.
 * Add the `tooltip` field to provide details and context.
 * Use the `category` field to organize nodes.
 * Review your changes by closing and reopening the Script Canvas Editor.
 * Watch for Asset Processor errors on `.names` files. These can be caused by errors in the JSON syntax.
 * Commit `.names` files to source control; this will ensure they are tracked and changes are not overriden.
 * Generating translation data will overwrite existing translation data. Be careful not to lose work. When in doubt, use the **Explore Translation Data** menu action first.
-* Different kinds of nodes will produce different kinds of `.names` files. Some `.names` files will define a single node; others will define many nodes within a single file.
+* Different kinds of nodes produce different kinds of `.names` files. Some `.names` files define a single node; others define many nodes within a single file.
 
 ## Appendix
 
