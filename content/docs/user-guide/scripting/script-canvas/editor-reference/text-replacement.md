@@ -11,7 +11,7 @@ weight: 500
 
 When Script Canvas nodes are created, the developer can provide identifying and clarifying details such as the node's name, their category in the **Node Palette**, the names of their arguments and return values, and their tooltips. However, all of these details can be overridden using text replacement files.
 
-Text replacement files use a JSON format and a file extension of `.names`. You can find all the text replacement files that were generated for the nodes that are included with O3DE in the directory `Gems/ScriptCanvas/Assets/TranslationAssets`.
+Text replacement files use a JSON format and a file extension of `.names`. You can find all the text replacement files that were generated for the nodes and included with O3DE in the directory `[Gems/ScriptCanvas/Assets/TranslationAssets](https://github.com/o3de/o3de/tree/development/Gems/ScriptCanvas/Assets/TranslationAssets)`.
 
 You can generate or update `.names` files for new or existing nodes using **Script Canvas Editor**, as shown in the following sections.
 
