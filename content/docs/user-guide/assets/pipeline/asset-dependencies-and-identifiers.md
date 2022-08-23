@@ -72,6 +72,10 @@ When a product asset is loaded at runtime, the product dependencies specify othe
 
 Product dependencies can also be marked as required or optional. If a required product dependency is not available, the runtime load process or the bundling process fails. If an optional product dependency is not available, the runtime load process or bundling process can proceed.
 
+### Declaring product dependencies
+
+One of the fields on the `JobProduct` is `m_dependencies`, a vector of `ProductDependency` objects. When creating the `JobProduct` in the asset builder, this field can be populated with information about product dependencies the job product has.
+
 ## Asset identifiers
 
 Source assets are identified by a Universally Unique Identifier (UUID). This is also referenced as a Globally Unique Identifier (GUID) in some parts of O3DE. The source asset UUID is generated based on the file name and scan directory relative path. This ensures the source asset UUID is identical on any host platform machine for the project.

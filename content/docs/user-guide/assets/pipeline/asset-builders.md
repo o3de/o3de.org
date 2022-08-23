@@ -120,6 +120,7 @@ Resolving paths to find the file on disk is often done within the asset builder.
 
 Product assets should only have these references:
 * Product assets by asset ID
+  * This is the prefered way to reference other product assets, references by path should be avoided when possible
 * Product assets by a relative path from the asset with the reference
 * Product assets by a relative path, to a specific root in the asset cache, usually the cache root for the platform
 * Non-product file in the project directory, expected at a specific location
