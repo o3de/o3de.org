@@ -8,7 +8,7 @@ Running projects using the Open 3D Engine Multiplayer Gem requires build steps f
 
 * Ensure your project is [properly configured](./configuration.md)
 * Build your project's `GameLauncher` and `ServerLauncher` targets.
-* Use run the game either in standalone mode, using the ImGui options to host, or via the in editor testing approach.
+* Run the game either in standalone mode using the ImGui options to host, or via the in editor testing approach.
 
 ## Testing in the Editor
 
