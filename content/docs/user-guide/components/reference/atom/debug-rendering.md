@@ -65,7 +65,7 @@ When debugging shaders, it can be useful to have immediate access to tweakable v
 The custom debug float and boolean properties are exposed to shaders via the [SceneSrg.azsli](https://github.com/o3de/o3de/blob/development/Gems/Atom/Feature/Common/Assets/ShaderResourceGroups/SceneSrg.azsli) and [Debug.azsli](https://github.com/o3de/o3de/blob/development/Gems/Atom/Feature/Common/Assets/ShaderLib/Atom/Features/Debug.azsli) files.
 
 {{< important >}}
-When submitting your shader code, you must delete any usage of these variables from your shaders. These values are strictly used to facilitate local debugging and aren't meant for any other use. If you don't delete these variable in your shader code before you submit, another shader author may experience unwanted side effects when using these values.
+These variables are only meant to help you debug your shaders locally. For best practice, when you are done debugging, we recommend that you delete any usage of these variables. It's especially important to delete them if you are contributing shader code either to the source repo or your team's own repo. If you don't, another shader author may experience unwanted side effects when using the same variables.
 {{< /important >}}
 
 
