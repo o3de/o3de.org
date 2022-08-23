@@ -88,21 +88,21 @@ public:
 
 The scene builder components are registered in the ```AZ::Module``` class. The SceneBuilderExampleModule is the entry point for gems. To extend the SceneAPI loading, generating, and exporting components must be registered here. The SceneAPI libraries require specialized initialization. As early as possible, be sure to repeat the following two lines for any SceneAPI you want to use. Omitting these calls or making them too late can cause problems such as missing EBus events.
 
-## AZ::SceneAPI::SceneCore::LoadingComponent
+## LoadingComponent
 
 The LoadingComponent events are emitted when the scene pipeline is importing a source scene asset file such as `.fbx` or `.stl` files. If the scene builder wants to modify the scene graph, then it should register a LoadingComponent component to hook into the `PreImport`, 'Import', or 'PostImport' events. The SceneGraph is populated during the import events so by PostImport the contents of the SceneGraph are fixed.
 
-The LoadingComponent event contexts:
+The AZ::SceneAPI::SceneCore::LoadingComponent event contexts:
 
 * PreImportEventContext -- Signals an import of the scene graph is about to happen
 * ImportEventContext -- Signals that the scene is ready to import the scene graph from source data; can change the Scene
 * PostImportEventContext -- Signals that an import has completed and the data should be ready to use (if there were no errors); the Scene is immutable
 
-## AZ::SceneAPI::SceneCore::GenerationComponent
+## GenerationComponent
 
 The the scene is loaded via the LoadingComponent components, the GenerationComponent events are emitted when the scene pipeline wants scene builders to modify node contents or add nodes to the SceneGraph. The mutable Scene object is sent to each GenerationComponent event.
 
-The LoadingComponent event contexts:
+The AZ::SceneAPI::SceneCore::GenerationComponent event contexts:
 
 * PreGenerateEventContext -- Signals the scene generation step is about to happen
 * GenerateEventContext -- Signals that new data such as procedurally generated objects should be added to the Scene
@@ -111,27 +111,27 @@ The LoadingComponent event contexts:
 * GenerateSimplificationEventContext -- Signals that data simplification / complexity reduction should be run
 * PostGenerateEventContext -- Signals that the generation step is complete
 
-## AZ::SceneAPI::SceneCore::ExportComponent
+## ExportComponent
 
 During the exporting phase, the scene graph is inspected by various scene builders, and game-ready product assets are written to disk. This is done with ExportingComponent components. All the events that the ExportingComponent components respond to receive an immutable SceneGraph object, so they also cannot modify the SceneGraph. This means that the only place where the graph is writable is during the import and generation events.
 
-The ExportComponent event contexts:
+The AZ::SceneAPI::SceneCore::ExportComponent event contexts:
 
 * PreExportEventContext -- Signals an export of the contained scene is about to happen.
 * ExportEventContext -- Signals the scene that the contained scene needs to be exported to the specified directory.
 * PostExportEventContext -- Signals that an export has completed and written (if successful) to the specified directory.
 
-## AZ::SceneAPI::SceneCore::BehaviorComponent
+## BehaviorComponent
 
-Behavior components are small logic units that exist as long as the scene pipeline is initialized and active. These components can react to various events that happen to a scene and make appropriate changes, additions or removals. The main use of the behavior components is to modify the rules and groups in the scene manifest so that export components can be modified, indirectly.
+AZ::SceneAPI::SceneCore::BehaviorComponent components are small logic units that exist as long as the scene pipeline is initialized and active. These components can react to various events that happen to a scene and make appropriate changes, additions or removals. The main use of the behavior components is to modify the rules and groups in the scene manifest so that export components can be modified, indirectly.
 
 The BehaviorComponent is handled a bit different than the other scene pipeline component types since it does not use the BindCall() method and participates in both the Editor and the Asset Processor. The behavior component is designed to activate the ManifestMetaInfoBus and/or the ManifestMetaInfoBus depending on the scene product asset uses.
 
-## AZ::SceneAPI::Events::AssetImportRequestBus
+## AssetImportRequestBus
 
 This bus handles the scene pipeline events that modify the scene manifest. 
 
-The AssetImportRequestBus events:
+The AZ::SceneAPI::Events::AssetImportRequestBus events:
 
 * GetGeneratedManifestExtension -- Gets the file extension for the generated manifest
 * PrepareForAssetLoading -- Before asset loading starts this is called to allow for any required initialization
@@ -143,11 +143,11 @@ The ``RequestingApplication`` input argument refers to the type of application t
 
 The ``ManifestAction`` input argument refers to the behavior type the application is requesting from the component. The ``ConstructDefault`` value is typically used in the O3DE Editor to generate default scene manifest entries for a source scene. The ``Update`` value is used to indicate the behavior component should generate scene manifest groups and rules based on the existing scene graph.
 
-## AZ::SceneAPI::Events::ManifestMetaInfoBus
+## ManifestMetaInfoBus
 
 The ManifestMetaInfoBus is used to gather and manage UX elements in the scene manifest for a source asset scene file. For example, it used in the Editor to fetch the names of the tabs of the group types and the rules the group can manage for the Scene Settings dialog.
 
-The ManifestMetaInfoBus events:
+The AZ::SceneAPI::Events::ManifestMetaInfoBus events:
 
 * GetCategoryAssignments -- Gets a list of all the categories and the class identifiers that are listed for that category.
 * GetIconPath -- Gets the path to the icon associated with the given group or rule.
