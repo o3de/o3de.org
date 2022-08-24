@@ -6,7 +6,7 @@
                 {{.LinkTitle}}
         </a>
         
-        <a class="{{ if .Pages }} has-children-icon{{ end }}"> </a>
+        {{ if .Pages }}<a class="has-children-icon"> </a>{{ end }}
         {{ if .Pages }}
             <ul>
                 {{ partial "section-nav-walk.html" . }}
