@@ -6,7 +6,7 @@ weight: 400
 toc: true
 ---
 
-The **Vegetation Gem** provides tools for procedurally populating landscapes and environments. These tools comprise of system and editor components that automate the placement of static objects using a data-driven approach. You can use these tools to replace or compliment manually painting, editing, and saving every instance in your level. 
+The **Vegetation Gem** provides tools for procedurally populating landscapes and environments. These tools comprise of system and editor components that use a data-driven approach to automatically select, place, and manage vegetation objects dynamically at runtime. You can use these tools to replace or compliment manually placing, editing, and saving every instance in your level. 
 
 Many features of the dynamic vegetation system rely on other Gems and components to supply data about the environment, such as surfaces, images, and gradient signals, to direct where and how vegetation appears. 
 
@@ -16,22 +16,13 @@ Many features of the dynamic vegetation system rely on other Gems and components
 - [Gradient Signal Gem]()
 - [FastNoise Gem]() (optional)
 
-The Surface Data Gem allows a surface, like terrain or meshes, to emit signals or tags that communicate its surface type. For example, with a Vegetation Surface Mask Filter component, you can choose which vegetation to grow on a particular surface by using an inclusion and exclusion list. You can also recapture the tags as a gradient signal by using the Surface Mask Gradient component.
+The Surface Data Gem allows a surface, like terrain or meshes, to emit signals or tags that communicate its surface type. For example, with a Vegetation Surface Mask Filter component, you can choose which types of vegetation can be placed on a particular surface by using an inclusion and exclusion list. You can also recapture the tags as a gradient signal by using the Surface Mask Gradient component.
 
 The Gradient Signal Gem provides components that direct data to the vegetation system, controlling the appearance of dynamic vegetation. Using gradient signals with vegetation modifiers or filters, such as Position Modifier and Distribution Filter components, produce realistic, random expressions of vegetation in the world.
 
 ## Provides
 
-Source code: [`/Gems/docs/user-guide/components/reference/Vegetation/`](https://github.com/o3de/o3de/tree/development/Gems//docs/user-guide/components/reference/Vegetation/Code)
-
-API: [Vegetation Gem API Reference](https://www.o3de.org/docs/api/gems//docs/user-guide/components/reference/vegetation/index.html)
-
-System components:
-- [Vegetation Area System](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-area-system-component)
-- [Vegetation Instance System](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-instance-system-component)
-
-Editor components:
-
+Entity components:
 - [Vegetation Asset List](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-asset-list)
 - [Vegetation Asset List Combiner](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-asset-list-combiner)
 - [Vegetation Asset Weight Selector](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-asset-weight-selector)
@@ -51,6 +42,18 @@ Editor components:
 - [Vegetation Slope Filter](/docs/user-guide/components/reference/vegetation-filters/vegetation-slope-filter)
 - [Vegetation Surface Mask Depth Filter](/docs/user-guide/components/reference/vegetation-filters/vegetation-surface-mask-depth-filter)
 - [Vegetation Surface Mask Filter](/docs/user-guide/components/reference/vegetation-filters/vegetation-surface-mask-filter)
+
+Level components:
+- Vegetation System Settings component
+- Vegetation Debugger component
+
+System components:
+- [Vegetation Area System](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-area-system-component)
+- [Vegetation Instance System](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-instance-system-component)
+
+API: [Vegetation Gem API Reference](https://www.o3de.org/docs/api/gems//docs/user-guide/components/reference/vegetation/index.html)
+
+Source code: [`/Gems/docs/user-guide/components/reference/Vegetation/`](https://github.com/o3de/o3de/tree/development/Gems//docs/user-guide/components/reference/Vegetation/Code)
 
 ## Vegetation Areas
 
@@ -73,7 +76,7 @@ They contain a unique ID, transform, other attributes, and a reference to the so
 
 In O3DE Editor, vegetation instances appear within a vegetation area. They-re procedurally generated based on the vegetation behaviors that you can add to the vegetation area. 
 
-## Descriptors
+## Vegetation descriptors
 
 *Vegetation descriptors* are structures that specify all of the common details needed to represent a type of vegetation. It includes data for mesh and material assets, the type of vegetation render node that should be created, the affects of wind and physics, and many advanced parameters that can be enabled to override behavior of most of the included filters and modifiers. **Vegetation Descriptors** can be created in the **Vegetation Asset List** component or through the Asset Editor by creating and editing **Vegetation Descriptor List Assets**.
 
@@ -120,7 +123,7 @@ In O3DE Editor, vegetation instances appear within a vegetation area. They-re pr
 | Surface Mask Filter |     |     |     |
 |     | **Override Mode** | Controls how overrides are considered by the surface mask filter component<br><br>Disable - Overrides are completely ignored<br><br>Replace - Overrides replace those specified in the component<br><br>Extend - Overrides are added to the specified in the component. |     |
 |     | **Inclusion Tags** | A set of surface tags that dictate where vegetation can be placed. | SurfaceTagVector |
-|     | **Exclusion Tags** | A set of surface tags that dictate where vegetation can not be placed. | SurfaceTagVector |
+|     | **Exclusion Tags** | A set of surface tags that dictate where vegetation will not be placed. | SurfaceTagVector |
 | Surface Mask Depth Filter |     |     |     |
 |     | **Surface Tags** | A set of surface tags used for depth comparisons. | SurfaceTagVector |
 |     | **Upper Distance Range (m)** | A range used for vertical distance comparisons against the closest point with matching surface tags. | Float |
@@ -135,10 +138,10 @@ File: [`/Gems/Vegetation/Code/Source/Descriptor.cpp`](https://github.com/o3de/o3
 
 | Request Name | Description | Parameters | Return |
 | --- | --- | --- | --- |
-| `GetLayer` |     | None | Float |
-| `GetPriority` | Gets the combined layer and area priority value as a single combined global priority. | None | Float |
+| `GetLayer` | Gets the *layer*, or macro priority value of the vegetation area. `GetLayer` and `GetPriority` are useful to identify a vegetation area when multiple overlap. | None | Float |
+| `GetPriority` | Gets the micro priority value within a layer. `GetLayer` and `GetPriority` are useful to identify a vegetation area when multiple overlap. | None | Float |
 | `GetEncompassingAabb` | Gets the axis-aligned bounding box for the entire vegetation area. | None | AZ::Aabb |
-| `GetProductCount` | Gets the number of currently spawned instances in the vegetation area. | None | AZ::u32 |
+| `GetProductCount` | Gets the number of instances currently spawned by this vegetation area. | None | AZ::u32 |
 | `GetChangeIndex` | Gets an incrementing number that represents the number of times the Blocker area refreshed since creation. | None | AZ::u32 |
 
 File: [`/Gems/Vegetation/Code/Include/Vegetation/Ebuses/AreaInfoBus.h`](https://github.com/o3de/o3de/blob/0121a0675b53104cfe1d9f6d87bf9b8ac59a4382/Gems/Vegetation/Code/Include/Vegetation/Ebuses/AreaInfoBus.h)
@@ -147,7 +150,7 @@ File: [`/Gems/Vegetation/Code/Include/Vegetation/Ebuses/AreaInfoBus.h`](https://
 
 | Request Name | Description | Parameters | Return |
 | --- | --- | --- | --- |
-| `PrepareToClaim` | Runs any pre-claim checks or logic that is not needed per point. | EntityIdStack& stackIds | Bool |
+| `PrepareToClaim` | Runs any pre-claim checks or logic, independent of position. | EntityIdStack& stackIds | Bool |
 | `ClaimPositions` | Processes a set of points for planting vegetation or performing other operations. | EntityIdStack& stackIds, ClaimContext& context | None |
 | `UnclaimPosition` | Handles clean up whenever the system releases a claimed point. | const ClaimHandle handle | None |
 
