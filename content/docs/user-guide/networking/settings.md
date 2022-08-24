@@ -18,8 +18,7 @@ The following [console functor](/docs/user-guide/programming/az-console/#console
 | LoadLevel              | Unloads the current level and loads a new one with the given asset name.  | *(Required)* Path to a level file.                                              | Command is not specific to network or multiplayer but used for all games and simulations.                                                                                         | 
 | sv_launch_local_client | Launches a local client and connects to this host server.                 |                                                                                 | Only works if currently hosting. |
 
-These console commands can be executed dynamically via the [console command line](/docs/user-guide/editor/console/) or placed within a console command configuration file, usually with the `.cfg` suffix. Commands will be
-executed in order written.
+These console commands can be executed dynamically via the [console command line](/docs/user-guide/editor/console/) or placed within a console command configuration file, usually with the `.cfg` suffix. Commands will be executed in the order written.
 
 For a networked game or simulation, a typical server configuration file should contain:
 
