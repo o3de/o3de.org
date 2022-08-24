@@ -37,7 +37,7 @@ connect
 Commands in configuration files can be passed to launchers using the `console-command-file` option, for example `MultiplayerSample.ServerLauncher.exe --console-command-file=launch_server.cfg`.
 
 ## Client settings
-The following [console variables](http://localhost:1313/docs/user-guide/appendix/cvars/) control client behavior.
+The following [console variables](/docs/user-guide/appendix/cvars/) control client behavior.
 
 | Setting                | Description                                                                                                                                                                             | Default   | Notes |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|-------|
