@@ -8,15 +8,15 @@ linktitle: Network Settings
 This page documents [console variables](/docs/user-guide/appendix/cvars/) and other settings that can control Networking and Multiplayer behavior.
 
 ## Networking commands
-The following [console functor](/docs/user-guide/programming/az-console/#console-functors-cfuncs) commands control the flow of networked and multiplayer games, or will be required to for a networked game or a simulation.
+The following [console functor](/docs/user-guide/programming/az-console/#console-functors-cfuncs) commands should be used to control the connection of clients to servers for networked games or simulations. 
 
-| Setting                | Description                                                               | Parameters                                                                      | Notes                                                                                    |
-|------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| host                   | Opens a multiplayer connection as a host for other clients to connect to. |                                                                                 |                                                                                          |
-| connect                | Opens a multiplayer connection to a host.                                 | *(Optional)* IP address and port, separated by ':'. For example, `0.0.0.0:1234`. | Defaults to `cl_serveraddr`:`cl_serverport`.                                             |
-| disconnect             | Disconnects any open multiplayer connections.                             |                                                                                 |                                                                                          |
-| LoadLevel              | Unloads the current level and loads a new one with the given asset name.  | *(Required)* Path to a level file.                                              | Command is not specific to network or multiplayer but used for all games and simulations.                                                                                         | 
-| sv_launch_local_client | Launches a local client and connects to this host server.                 |                                                                                 | Only works if currently hosting. |
+| Setting                | Description                                                                                                                                | Parameters                                                                       | Notes                                                                                     |
+|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| host                   | Opens a multiplayer connection as a host for other clients to connect to.                                                                  |                                                                                  |                                                                                           |
+| connect                | Opens a multiplayer connection to a host.                                                                                                  | *(Optional)* IP address and port, separated by ':'. For example, `0.0.0.0:1234`. | Defaults to `cl_serveraddr`:`cl_serverport`.                                              |
+| disconnect             | Disconnects any open multiplayer connections.                                                                                              |                                                                                  |                                                                                           |
+| LoadLevel              | Unloads the current level and loads a new one with the given asset name. <br> Used to setup the initial level for the game or simiulation. | *(Required)* Path to a level file.                                               | Command is not specific to network or multiplayer but used for all games and simulations. | 
+| sv_launch_local_client | Launches a local client and connects to this host server.                                                                                  |                                                                                  | Only works if currently hosting.                                                          |
 
 These console commands can be executed dynamically via the [console command line](/docs/user-guide/editor/console/) or placed within a console command configuration file, usually with the `.cfg` suffix. Commands will be executed in the order written.
 
@@ -33,7 +33,7 @@ And the client's configuration file should contain:
 connect
 ```
 
-Commands in configuration files can be passed to launchers using the `console-command-file` option, for example `MultiplayerSample.ServerLauncher.exe --console-command-file=launch_server.cfg`.
+Console commands in configuration files can be passed to client and server launchers using the `console-command-file` option, for example `MultiplayerSample.ServerLauncher.exe --console-command-file=launch_server.cfg`.
 
 ## Client settings
 The following [console variables](/docs/user-guide/appendix/cvars/) control client behavior.
