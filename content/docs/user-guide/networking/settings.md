@@ -65,7 +65,7 @@ The following [console variables](/docs/user-guide/appendix/cvars/) control clie
 
 
 ## Server settings
-The following [console variables](http://localhost:1313/docs/user-guide/appendix/cvars/) control server behavior.
+The following [console variables](/docs/user-guide/appendix/cvars/) control server behavior.
 
 | Setting                 | Description                                                                     | Default | Notes                |
 |-------------------------|---------------------------------------------------------------------------------|---------|----------------------|
