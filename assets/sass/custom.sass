@@ -1534,12 +1534,9 @@ nav.docs-nav
         border-color: $o3de-blue-highlight    
 
       a.has-children-icon  
-        display: inline-block
-        height: 50%
-        padding: 10px
         position: absolute  
         right: 0px
-        top: 0px
+        top: 8px
         &:after
           position: absolute  
           right: 5px
@@ -1557,7 +1554,7 @@ nav.docs-nav
         
       a.has-children-icon.open
         &:after
-          transform: rotate(45deg)
+          transform: rotate(45deg) translate(-3px, -3px)
         &:hover::after
           border-color: $o3de-blue-highlight
       
