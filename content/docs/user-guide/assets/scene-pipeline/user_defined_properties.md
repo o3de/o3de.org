@@ -1,5 +1,5 @@
 ---
-title: "Scene API: User Defined Properties"
+title: "User Defined Properties"
 date: 2022-03-08
 slug: scene-api-udp
 author: Allen Jackson
