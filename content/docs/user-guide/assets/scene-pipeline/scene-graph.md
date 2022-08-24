@@ -42,7 +42,9 @@ The common memory overhead associated with the parent-child-sibling approach is 
 
 ## Querying and navigating
 
-### Index based
+There are few ways that the ```SceneGraph``` can be traversed based on the custom logic needed to make product assets. 
+
+### Index based traversal
 
 The most direct way to work with the ```SceneGraph``` is to use the index-based API, which is based around querying for an index and using the index to get information about the node. Getting an index can be done through "Find" to search for an index by name or simply by calling "GetRoot" to get the root index and walking down the hierarchy. Information about the node can be obtained through several index-based functions such as "GetNodeName", "HasNodeContent" or "IsNodeEndPoint". Navigating to the next node in the hierarchy can be done by calling "GetNodeParent", "GetNodeChild" or "GetNodeSibling". Always make sure to check if the returned index is valid by calling "IsValid()" on it to determine if the end of a chain has been reached.
 
@@ -69,7 +71,7 @@ while (current.IsValid())
 }
 ```
 
-### Iterator based
+### Iterator based traversal
 
 Besides index based access, the content of the ```SceneGraph``` can be accessed through iterators which behave much like iterators from common containers such as AZStd::vector or AZStd::unordered_map. To reduce the number of functions to deal with, the begin and end iterator are combined into a "view". Besides reducing the number of functions, views also allow the use of ranged for-loops without the need for additional wrapper classes. For convenience all the iterators that are part of the ```SceneGraph``` provide utility functions in the form of ```Make<iterator>View``` to easily construct views.
 Non-hierarchical
@@ -105,7 +107,7 @@ for (auto& iterator : view)
 }
 ```
 
-### Hierarchical
+### Hierarchical based traversal
 
 The ```SceneGraph``` provides hierarchical iteration through tree iterators:
 

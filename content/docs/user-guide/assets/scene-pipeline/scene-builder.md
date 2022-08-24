@@ -136,7 +136,7 @@ The AZ::SceneAPI::Events::AssetImportRequestBus events:
 * GetGeneratedManifestExtension -- Gets the file extension for the generated manifest
 * PrepareForAssetLoading -- Before asset loading starts this is called to allow for any required initialization
 * LoadAsset -- Starts the loading of the asset at the given path in the given scene
-* FinalizeAssetLoading -- Can be used to do any work to complete loading such as adjusting the loaded content in the the SceneGraph
+* FinalizeAssetLoading -- Can be used to do any work to complete loading such as adjusting the loaded content in the SceneGraph
 * UpdateManifest -- After all loading has completed, this call can be used to adjust the manifest.
 
 The ``RequestingApplication`` input argument refers to the type of application that sent the event such as the O3DE Editor or the O3DE Asset Processor.
@@ -151,11 +151,13 @@ The AZ::SceneAPI::Events::ManifestMetaInfoBus events:
 
 * GetCategoryAssignments -- Gets a list of all the categories and the class identifiers that are listed for that category.
 * GetIconPath -- Gets the path to the icon associated with the given group or rule.
-* GetAvailableModifiers -- Gets a list of a the modifiers (such as rules for groups) that the target accepts.
+* GetAvailableModifiers -- Gets a list of modifiers (such as rules for groups) that the target accepts.
 * InitializeObject -- Initialized the given manifest group or rule based on the scene.
 * ObjectUpdated -- Called when an existing group or rule is updated.
 
 ## The scene logging example
+
+[Scene logging example gem](https://github.com/o3de/o3de/tree/development/Gems/SceneLoggingExample)
 
 The Scene Logging Example demonstrates how to extend the SceneAPI by adding additional logging to the pipeline. The SceneAPI is a collection of libraries that handle loading scene files and converting content to data that the Open 3D Engine and its editor can load.
 
