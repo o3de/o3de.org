@@ -7,7 +7,9 @@ description: An overview and reference for data serializers used by the Open 3D 
 
 Open 3D Engine supports a variety of Serializers for visiting an object hierarchy and performing operations upon that hierarchy, typically reading from or writing data to the object hierarchy for reasons of persistence or network transmission.
 
-This section describes the ISerializer interface and various Serializer implementations included in AzNetworking. It also describes Serializers that function as wrappers that can be used to supplement other Serializer types.
+AzNetworking and Multiplayer both have Serialization usage integrated by default for the purposes of performantly serializing network communication via packets and RPCs. Consequently serialization directly relates to bandwidth utilization for network communication. For cases when a bespoke serializer may be desired, AzNetworking and Multiplayer's default usage of Serialization provide good examples of serializer usage.
+
+This section describes the various Serializer implementations included in AzNetworking and how to author a serialization function for an object model. It also describes Serializers that function as wrappers that can be used to supplement other Serializer types.
 
 ## ISerializer
 
@@ -44,6 +46,8 @@ An output serializer that tracks if any delta is actually serialized. TrackChang
 ### TypeValidatingSerializer 
 
 TypeValidatingSerializer is a debug serializer that wraps other ISerializer types to supplement the wrapped type serializer with type and name information for serialized values. These values can then be checked to ensure data consistency. TypeValidatingSerializer will assert when a mismatch is detected to help aid debugging. Its functionality is gated by the cvar `net_validateSerializedTypes` as described in [Settings](../settings). TypeValidatingSerializer adds a bandwidth cost when `net_validateSerializedTypes` is enabled in order to serialize type and name information.
+
+The Multiplayer Gem [makes use of TypeValidatingSerializer by default](https://github.com/o3de/o3de/blob/main/Gems/Multiplayer/Code/Include/Multiplayer/IMultiplayer.h) for non-Release builds.
 
 ## Authoring a Serialization for an object model
 
