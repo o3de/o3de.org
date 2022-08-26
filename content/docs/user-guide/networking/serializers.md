@@ -33,7 +33,7 @@ This section describes the various serializer implementations that are included 
 
 ### HashSerializer 
 
-HashSerializer generates a 32 bit integer hash for a serializable object. These hashes can be used to compare serialization results which can be useful to detect desyncs.
+`HashSerializer` generates a 32 bit integer hash for a serializable object. These hashes can be used to compare serialization results which can be useful to detect desyncs.
 
 ### StringifySerializer
 
