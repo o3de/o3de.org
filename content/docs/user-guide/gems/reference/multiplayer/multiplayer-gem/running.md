@@ -16,7 +16,7 @@ Multiplayer projects can be [run in Editor](./test-in-editor.md) using Ctrl-G. S
 
 ## Running locally using ImGui Options
 
-1. Launch your `ServerLauncher` either from Visual Studios or from your build directory.
+1. Launch your `ServerLauncher` either from Visual Studio or from your build directory.
 2. Press the `HOME` key to enable the debug menu.
 3. Select the `Host` option.
 4. Select a level to load to begin hosting.
