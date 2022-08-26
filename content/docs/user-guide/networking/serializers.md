@@ -72,4 +72,4 @@ As an example, consider the following struct and its `Serialize` method:
     }
 ```
 
-PlayerState's Serialize can be used to both serialize for network transport via NetworkInputSerializer and back into a PlayerState via NetworkOutputSerializer. In fact, any type implementing ISerializer could be used as a parameter to PlayerState's Serialize method.
+`PlayerState's` `Serialize` function can be used to both serialize data for network transport using `NetworkInputSerializer` and deserialize data back into a `PlayerState` using `NetworkOutputSerializer`. In fact, any type implementing `ISerializer` could be used as a parameter to `PlayerState's` `Serialize` method.
