@@ -28,7 +28,7 @@ Multiplayer projects can be [run in Editor](./test-in-editor.md) using Ctrl-G. S
 
 You can manually launch the executables for Client and Server and configure them using the application's console command line.
 
-1. Launch both `ClientLauncher` and `ServerLauncher`
+1. Launch both `ClientLauncher` and `ServerLauncher`.
 2. In `ServerLauncher` press `~` to open the command line.
 3. Run the command `host` to begin hosting.
 4. Run the command `LoadLevel <path to level>` to load a level.
