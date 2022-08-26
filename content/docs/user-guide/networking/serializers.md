@@ -25,7 +25,7 @@ This section describes the various serializer implementations that are included 
 
 ### NetworkOutputSerializer 
 
-NetworkOutputSerializer reads object model data from a bytestream. It's generally used to deserialize data to an object that was received via packet that was previously serialized by NetworkInputSerializer. 
+`NetworkOutputSerializer` reads object model data from a bytestream. It's generally used to deserialize data to an object that was received in a packet that was previously serialized by `NetworkInputSerializer`. 
 
 ### DeltaSerializer 
 
