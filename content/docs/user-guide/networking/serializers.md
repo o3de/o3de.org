@@ -21,7 +21,7 @@ This section describes the various serializer implementations that are included 
 
 ### NetworkInputSerializer 
 
-NetworkInputSerializer writes object model data into a bytestream. It's generally used to serialize data for transport via packets in AzNetworking.
+`NetworkInputSerializer` writes object model data into a bytestream. It's generally used to serialize data for transport using packets in `AzNetworking`.
 
 ### NetworkOutputSerializer 
 
