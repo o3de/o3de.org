@@ -13,7 +13,7 @@ This section describes the various serializer implementations that are included 
 
 ## ISerializer
 
-[ISerializer](https://github.com/o3de/o3de/blob/main/Code/Framework/AzNetworking/AzNetworking/Serialization/ISerializer.h) describes an interface all AzNetworking Serializers implement. It describes methods for the serialization of base data types in addition to template machinery to handle serialization of object types.
+[AzNetworking::ISerializer](https://github.com/o3de/o3de/blob/main/Code/Framework/AzNetworking/AzNetworking/Serialization/ISerializer.h) describes an interface that all `AzNetworking` serializers implement. It describes methods for the serialization of base data types in addition to template machinery to handle serialization of object types.
 
 ## Included Serializers
 
