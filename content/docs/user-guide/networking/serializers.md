@@ -9,7 +9,7 @@ Open 3D Engine supports a variety of serializers that visit an object hierarchy 
 
 Both `AzNetworking` and the **Multiplayer Gem** use serialization for performant network communication through packets and RPCs. Consequently, serialization directly relates to bandwidth utilization in network communication. For cases when a bespoke serializer is desirable, `AzNetworking` and the Multiplayer Gem provide good examples of how to use a serializer.
 
-This section describes the various Serializer implementations included in AzNetworking and how to author a serialization function for an object model. It also describes Serializers that function as wrappers that can be used to supplement other Serializer types.
+This section describes the various serializer implementations that are included in `AzNetworking`, and how to author a serialization function for an object model. It also describes serializers that function as wrappers that can be used to supplement other serializer types.
 
 ## ISerializer
 
