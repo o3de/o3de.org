@@ -90,7 +90,7 @@ To enable or disable a pass in the render pipeline:
 1. In the render pipeline's `.pass` file, find the pass that you want to enable or disable in the `PassRequests` list. 
 2. Set the `Enabled` property to true or false.
    
-When you enable or disable a pass, the pass system automatically updates the connections in the pass hierarchy. This requires that you've set up fallback connections. For more information, refer to [PassTemplate File Specification](content/docs/atom-guide/dev-guide/passes/pass-template-file-spec/)
+When you enable or disable a pass, the pass system automatically updates the connections in the pass hierarchy. This requires that you've set up fallback connections. For more information, refer to [PassTemplate File Specification](/docs/atom-guide/dev-guide/passes/pass-template-file-spec/)
 
 For example, in the `PassRequests` section of the `MainPipeline.pass`, disable `DeferredFogPass` in the render pipeline by setting `Enabled` to false.
 ```JSON
