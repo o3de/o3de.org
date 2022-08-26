@@ -24,7 +24,7 @@ Multiplayer projects can be [run in Editor](./test-in-editor.md) using Ctrl-G. S
 
 ## Running Server and Client launchers in Standalone
 
-### Manual configuration via the application's console 
+### Manual configuration using the application's console 
 
 You can manually launch the executables for Client and Server and configure them using the application's console command line.
 
