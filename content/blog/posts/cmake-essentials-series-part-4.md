@@ -1,9 +1,9 @@
 ---
 title: "CMake Essentials Series - Part 4"
-date: 2022-10-26
+date: 2022-11-16
 slug: cmake-essentials-series-part-4
 author: Tom Hulton-Harrop
-blog_img: ""
+blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: ""
 ---
 

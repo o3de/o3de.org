@@ -11,13 +11,10 @@ The **Audio Switch** component provides basic [Audio Translation Layer (ATL)](/d
 
 ## Audio Switch Properties
 
-The Audio Switch component has the following properties:
-
-**Default Switch**
-Enter the name of the audio switch to use by default. You can associate any audio switch with the entity.
-
-**Default State**
-Enter the name of the audio switch state to use by default. Use the [Audio Controls Editor](/docs/user-guide/interactivity/audio/audio-controls-editor) to assign the state to the switch. When this component is activated, the default switch is set to the default state.
+| Name | Description | Default |
+|------|-------------|---------|
+| **Default Switch** | Enter the name of the audio switch to use by default. You can associate any audio switch with the entity. | `<Empty>` |
+| **Default State** | Enter the name of the audio switch state to use by default. Use the [Audio Controls Editor](/docs/user-guide/interactivity/audio/audio-controls-editor) to assign the state to the switch. When this component is activated, the **Default Switch** is set to the **Default State**. | `<Empty>` |
 
 ## EBus Request Bus Interface
 
@@ -27,5 +24,5 @@ For more information about using the Event Bus (EBus) interface, see [Working wi
 
 | Name | Description | Parameters | Return | Scriptable |
 |------|-------------|------------|--------|------------|
-| SetState | Sets the specified state of the default switch. | `stateName` - Name of the state to set  | None | Yes |
-| SetSwitchState | Sets a specified switch to a specified state. | `switchName` - Name of the switch to set; `stateName` - Name of the state to set | None | Yes |
+| **SetState** | Sets the specified state of the default switch. | `stateName` - Name of the state to set  | None | Yes |
+| **SetSwitchState** | Sets a specified switch to a specified state. | `switchName` - Name of the switch to set; `stateName` - Name of the state to set | None | Yes |
