@@ -17,7 +17,7 @@ This section describes the various serializer implementations that are included 
 
 ## Included serializers
 
-AzNetworking provides several implementations of ISerializer.
+`AzNetworking` provides several implementations of `ISerializer`.
 
 ### NetworkInputSerializer 
 
