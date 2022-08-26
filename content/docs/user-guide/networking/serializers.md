@@ -5,7 +5,7 @@ weight: 300
 description: An overview and reference for data serializers used by the Open 3D Engine networking stack.
 ---
 
-Open 3D Engine supports a variety of Serializers for visiting an object hierarchy and performing operations upon that hierarchy, typically reading from or writing data to the object hierarchy for reasons of persistence or network transmission.
+Open 3D Engine supports a variety of serializers that visit an object hierarchy and perform operations upon that hierarchy, typically reading data from or writing data to the object hierarchy for the purpose of persistence or network transmission.
 
 AzNetworking and Multiplayer both have Serialization usage integrated by default for the purposes of performantly serializing network communication via packets and RPCs. Consequently serialization directly relates to bandwidth utilization for network communication. For cases when a bespoke serializer may be desired, AzNetworking and Multiplayer's default usage of Serialization provide good examples of serializer usage.
 
