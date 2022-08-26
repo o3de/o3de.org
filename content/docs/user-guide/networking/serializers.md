@@ -53,7 +53,7 @@ The Multiplayer Gem uses `TypeValidatingSerializer` in non-release builds. To se
 
 Because serializers implement the `ISerializer` interface, you can use this interface when authoring new serialization functions so that they can accept any serializer of this type.
 
-As an example, consider the following struct and its Serialize method:
+As an example, consider the following struct and its `Serialize` method:
 ```cpp
     struct PlayerState
     {
