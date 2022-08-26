@@ -29,7 +29,7 @@ This section describes the various serializer implementations that are included 
 
 ### DeltaSerializer 
 
-DeltaSerializer encodes information used by DeltaSerializer to create and apply serialization deltas. An example usage is serialization of network inputs. Network inputs are generally close in value so they are serialized relative to each other using the DeltaSerializer.
+`DeltaSerializer` encodes information used by `DeltaSerializer` to create and apply serialization deltas. An example usage is serialization of network inputs. Network inputs are generally close in value so they are serialized relative to each other using the `DeltaSerializer`.
 
 ### HashSerializer 
 
