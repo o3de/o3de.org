@@ -51,7 +51,7 @@ The Multiplayer Gem uses `TypeValidatingSerializer` in non-release builds. To se
 
 ## Authoring a serialization for an object model
 
-Since Serializers follow the ISerializer interface, a serialization function can be authored to accept any Serializer by using the ISerializer type. 
+Because serializers implement the `ISerializer` interface, you can use this interface when authoring new serialization functions so that they can accept any serializer of this type.
 
 As an example, consider the following struct and its Serialize method:
 ```cpp
