@@ -47,7 +47,7 @@ An output serializer that tracks if any delta is actually serialized. TrackChang
 
 TypeValidatingSerializer is a debug serializer that wraps other ISerializer types to supplement the wrapped type serializer with type and name information for serialized values. These values can then be checked to ensure data consistency. TypeValidatingSerializer will assert when a mismatch is detected to help aid debugging. Its functionality is gated by the cvar `net_validateSerializedTypes` as described in [Settings](../settings). TypeValidatingSerializer adds a bandwidth cost when `net_validateSerializedTypes` is enabled in order to serialize type and name information.
 
-The Multiplayer Gem [makes use of TypeValidatingSerializer by default](https://github.com/o3de/o3de/blob/main/Gems/Multiplayer/Code/Include/Multiplayer/IMultiplayer.h) for non-Release builds.
+The Multiplayer Gem uses `TypeValidatingSerializer` in non-release builds. To see the implementation, refer to [IMultiplayer.h](https://github.com/o3de/o3de/blob/main/Gems/Multiplayer/Code/Include/Multiplayer/IMultiplayer.h).
 
 ## Authoring a Serialization for an object model
 
