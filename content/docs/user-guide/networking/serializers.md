@@ -49,7 +49,7 @@ TypeValidatingSerializer is a debug serializer that wraps other ISerializer type
 
 The Multiplayer Gem uses `TypeValidatingSerializer` in non-release builds. To see the implementation, refer to [IMultiplayer.h](https://github.com/o3de/o3de/blob/main/Gems/Multiplayer/Code/Include/Multiplayer/IMultiplayer.h).
 
-## Authoring a Serialization for an object model
+## Authoring a serialization for an object model
 
 Since Serializers follow the ISerializer interface, a serialization function can be authored to accept any Serializer by using the ISerializer type. 
 
