@@ -37,7 +37,7 @@ This section describes the various serializer implementations that are included 
 
 ### StringifySerializer
 
-StringifySerializer writes object model data into a map of string keys and string values. It can be used to generate a human readable map of an object model.
+`StringifySerializer` writes object model data into a map of string keys and string values. It can be used to generate a human readable map of an object model.
 
 ### TrackChangedSerializer 
 
