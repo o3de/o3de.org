@@ -41,7 +41,7 @@ This section describes the various serializer implementations that are included 
 
 ### TrackChangedSerializer 
 
-An output serializer that tracks if any delta is actually serialized. TrackChangedSerializer can wrap other ISerializer types to supplement the wrapped type serializer with its tracking functionality. The tracking it performs comes at a slight memory and performance cost.
+TrackChangedSerializer is an output serializer that tracks if any delta is actually serialized. It can wrap other `ISerializer` types to supplement the wrapped type serializer with its tracking functionality. The tracking it performs comes with a slight memory and performance cost.
 
 ### TypeValidatingSerializer 
 
