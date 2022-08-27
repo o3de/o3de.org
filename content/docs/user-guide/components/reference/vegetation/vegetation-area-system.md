@@ -1,15 +1,15 @@
 ---
 linkTitle: Vegetation Area System
 title: Vegetation Area System Component
-description: The Vegetation Area System component handles the placement and removal of vegetation instances based on its configured rules in Open 3D Engine (O3DE).
+description: The Vegetation Area System component handles the placement and removal of vegetation instances based on its configured rules in **Open 3D Engine (O3DE)**.
 ---
 
 The **Vegetation Area System** component handles the placement and removal of vegetation instances throughout your world, based on its configured rules.
 
-Learn about how the Vegetation Area System component works within the vegetation system in [Technical details](#technical-details) below.
+For more information about how the Vegetation Area System component works within the vegetation system, see the [Technical details](#technical-details) section in this topic.
 
 {{< note >}}
-This is a system component that exists when you interact with the vegetation system via the Vegetation Gem. Generally, this system is already set up and you don't need to do anything further to manage vegetation in your world.
+This is a system component that exists when you interact with the vegetation system through the Vegetation Gem. Generally, this system is already set up and you don't need to do anything further to manage vegetation in your world.
 {{< /note >}}
 
 ## Provider
@@ -24,9 +24,9 @@ This is a system component that exists when you interact with the vegetation sys
 
 | Property | Description | Values | Default |
 | --- | --- | --- | --- |
-| **View Area Grid Size** | The number of sectors (per-side) of a managed grid in a scrolling view centered around the camera | 1 to 128 | 13  |
-| **Sector Point Density** | The number of equally spaced vegetation instance grid placement points (per-side) within a sector | 1 to 64 | 20 |
-| **Sector Size In Meters** | The size in meters per-side of each sector. | 1 to 1024 | 16 |
+| **View Area Grid Size** | The number of sectors, for each side, of a managed grid in a scrolling view centered around the camera | 1 to 128 | 13  |
+| **Sector Point Density** | The number of equally spaced vegetation instance grid placement points, for each side, within a sector | 1 to 64 | 20 |
+| **Sector Size In Meters** | The size in meters, for each side, of each sector. | 1 to 1024 | 16 |
 | **Thread Processing Interval** | The delay in milliseconds between processing queued thread tasks. | 0 to 5000 | 500 |
 | **Sector Search Padding** | Increases the search radius for surrounding sectors when enumerating through vegetation instances. | 0 to 2 | 0 |
 | **Sector Point Snap Mode** | Controls whether vegetation placement points are located at the corner or the center of the cell. | `Corner`, `Center` | `Center` |
