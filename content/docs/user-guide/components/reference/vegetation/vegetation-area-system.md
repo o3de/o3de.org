@@ -29,7 +29,7 @@ This is a system component that exists when you interact with the vegetation sys
 | **Sector Size In Meters** | The size in meters, for each side, of each sector. | 1 to 1024 | 16 |
 | **Thread Processing Interval** | The delay in milliseconds between processing queued thread tasks. | 0 to 5000 | 500 |
 | **Sector Search Padding** | Increases the search radius for surrounding sectors when enumerating through vegetation instances. | 0 to 2 | 0 |
-| **Sector Point Snap Mode** | Controls whether vegetation placement points are located at the corner or the center of the cell. | `Corner`, `Center` | `Center` |
+| **Sector Point Snap Mode** | Controls whether vegetation placement points are located at the corner or the center of the cell. | `Corner`, `Center` | `Corner` |
 
 ## AreaSystemRequestBus
 
@@ -39,15 +39,15 @@ File: [`Gem/sVegetation/Code/Include/Vegetation/Ebuses/AreaSystemRequestBus.h`](
 | --- | --- | --- | --- | --- |
 | `RegisterArea` | Adds a Vegetation Area entity to the system for processing. | `AZ::EntityId`, `AZ::u32`, `AZ::Aabb&` | None | No  |
 | `UnregisterArea` | Removes a Vegetation Area entity from the system. | `AZ::EntityId` | None | No  |
-| `RefreshArea` | Queues a Vegetation Area to update its data within the system and mark regions of sectors dirty for reprocessing. | `AZ::EntityId`, `AZ::u32`, `AZ::u32`, `AZ::Aabb&` | None | No  |
+| `RefreshArea` | Queues a Vegetation Area to update its data within the system and marks regions of sectors dirty for reprocessing. | `AZ::EntityId`, `AZ::u32`, `AZ::u32`, `AZ::Aabb&` | None | No  |
 | `RefreshAllAreas` | Updates the cached data for all registered areas and causes the entire system to repopulate. | None | None | No  |
 | `ClearAllAreas` | Forces all cached data and instances in every sector to be removed, and causes the entire system to repopulate. | None | None | No  |
 | `MuteArea` | Tells the Vegetation Area System to ignore the specified area when refilling sectors because it's managed elsewhere. This is the case with areas controlled by Vegetation Layer Blenders. | `AZ::EntityId` | None | No  |
 | `UnmuteArea` | Re-enables direct processing of a Vegetation Area that was previously muted. | `AZ::EntityId` | None | No  |
 | `EnumerateInstancesInOverlappingSectors` | Visits all instances contained within every vegetation sector that overlaps the given bounds, until the callback function decides otherwise. Additionally, the sector boundary is located by the **Sector Search Padding** value in the Area System component's configuration. | `AZ::Aabb&`, `AreaSystemEnumerateCallback` | None |  No |
 | `EnumerateInstancesInAabb` | Invokes a callback function for every Vegetation Instance that intersects the specified bounds | `AZ::Aabb&`, `AreaSystemEnumerateCallback` | None | No  |
-| `GetInstanceCountInAabb` | Gets the current number of instances contained within the axis-aligned bounding box (AABB). | `AZ::Aabb&` | `AZStd::size_t` |     |
-| `GetInstancesInAabb` | Get the list of instances contained within the AABB. | `AZ::Aabb&` | `AZStd::vector<Vegetation::InstanceData>` |  |
+| `GetInstanceCountInAabb` | Gets the current number of instances contained within the axis-aligned bounding box (AABB). | `AZ::Aabb&` | `AZStd::size_t` | Yes |
+| `GetInstancesInAabb` | Get the list of instances contained within the AABB. | `AZ::Aabb&` | `AZStd::vector<Vegetation::InstanceData>` | Yes |
 
 
 ## Technical details
