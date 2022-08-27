@@ -16,8 +16,9 @@ All Settings Registry Console commands are prefixed with `sr_`, which stands for
 | `sr_regset` \<key> \<value> | Adds or modifies value at the specified key entry in the Settings Registry with the value argument. Multiple keys and values can be specified. |
 | `sr_regremove` \<key> | Removes each key along with its value from the Settings Registry. Multiple keys can be specified. |
 | `sr_regdump` \<key> | Dumps each key value from the Settings Registry to the console output window. If multiple keys are specified, their values are separated by newlines. |
-| `sr_regdumpall` | Dump the entire Settings Registry to the console output window. The Console Output window has a limit of 4,096 characters (4KB) that can be output from any single entry. If the Settings Registry is large and the output from `sr_regdumpall` exceeds 4KB, the full output is sent to stdout. |
+| `sr_regdumpall` | Dump the entire Settings Registry to the console output window. |
 | `sr_regset_file` \<file path> \<anchor path> | Merges the Settings Registry file at the specified anchor path in the Settings Registry. The anchor path parameter merges the loaded settings under a specific settings object, for example, `"/O3DE/Settings"`. |
+| `sr_dump_origin` \<key> | Outputs the filepath responsible for the latest modification of each key in the Settings Registry.  If the key was was last updated in C++ or Script, then a value of "\<in-memory>" is output.  Multiple keys can be specified.  |
 
 ## Examples
 
@@ -56,13 +57,36 @@ The following Console command examples output the values of specified keys to th
 
 ### Use the `sr_regdumpall` command to output the entire Settings Registry
 
-The following Console command outputs the entire Settings Registry to the Console. If the Settings Registry is larger than 4KB, the output is directed to stdout.
+The following Console command outputs the entire Settings Registry to the Console.
 
 | Command | Result |
 | --- | --- |
 | `sr_regdumpall` | This outputs the complete Settings Registry to the Console. |
 
 ![](/images/user-guide/settings/settings-registry-how-to-console-regdumpall.png)
+
+### Use the `sr_dump_origin` command to output the filepath that last modified a key
+
+The following Console command outputs the filepath responsible for the latest modification of each key to the Console.  The following code block shows an example of merging 2 JSON files in order and querying the file origin of `"/Your/Custom/Setting1"`.
+
+**file1.setreg**
+```json
+{
+    "Your": { "Custom": { "Setting1": "initialValue"} }
+}
+```
+
+**file2.setreg**
+```json
+{
+    "Your": { "Custom": { "Setting1": "overrideValue"} }
+}
+```
+
+| Command | Result |
+| --- | --- |
+| `sr_dump_origin /Your/Custom/Setting1` | This outputs the last file which modified "/Your/Custom/Setting1" key to the Console.  From the example the value is `file2.setreg` |
+
 
 ### Use the `sr_regset_file` command to merge a Settings Registry file
 
