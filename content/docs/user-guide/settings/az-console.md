@@ -1,7 +1,7 @@
 ---
 title: Access the Settings Registry with Console Commands
 linktitle: Console Commands
-description: Learn how to access the Settings Registry using AZ Console Commands in OPen 3D Engine (O3DE).
+description: Learn how to access the Settings Registry using AZ Console Commands in Open 3D Engine (O3DE).
 weight: 400
 ---
 
