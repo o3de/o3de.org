@@ -9,7 +9,7 @@ The Vegetation Instance System component manages and processes requests to creat
 For information about how the Vegetation Instance System component works within the vegetation system, see the [Technical details](#technical-details) section in this topic.
 
 {{< note >}} 
-This is a system component that exists when you interact with the vegetation system through the Vegetation Gem. Generally, this system is already set up and you don't need to do anything further to manage vegetation in your world.
+This is a system component, meaning it already exists when you add the vegetation system through the Vegetation Gem. You can configure vegetation instance properties per level, through the **Vegetation System Settings** level component.
 {{< /note >}}
 
 ## Provider
