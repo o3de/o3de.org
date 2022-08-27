@@ -19,7 +19,7 @@ The screen-space ambient occlusion (**SSAO**) component approximates the occlusi
 
 {{< image-width "/images/user-guide/components/reference/atom/ssao-component.jpg" "500" "SSAO Component Properties" >}}
 
-| Property | Description | Values | Default
+| Property | Description | Values | Default |
 |-|-|-|-|
 | **Enable SSAO** | If enabled, activates SSAO. By default, SSAO is activated, even if the level does not contain an SSAO component. To deactivate SSAO, add the SSAO component and disable this property. | Boolean | Enabled |
 | **SSAO Strength** | The strength of the SSAO effect. The higher this value, the darker the SSAO appears. | 0.0 - 2.0 | 1.0 |
