@@ -69,5 +69,5 @@ When a vegetation area claims a point, no other vegetation areas can use it.
 A sector completes its processing when either there are no more available points or all vegetation areas are already processed.
 
 For example, the **Vegetation Layer Spawner** component analyzes each point and determines if the point can be claimed based on its configuration, shape, and other filters. 
-If all is successful the Vegetation Layer Spawner will request to create a static object, or *vegetation instance*, at that location. 
+If all is successful, the Vegetation Layer Spawner will request to create an object, or *vegetation instance*, at that location. 
 These instance creation and destruction requests are sent to the **Vegetation Instance System** component.
