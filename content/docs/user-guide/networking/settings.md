@@ -5,9 +5,39 @@ linktitle: Network Settings
 ---
 
 ## Overview
-This page documents [console variables](/docs/user-guide/appendix/cvars) and settings for AzNetworking and Multiplayer behavior.
+This page documents [console variables](/docs/user-guide/appendix/cvars/) and other settings that can control Networking and Multiplayer behavior.
+
+## Networking commands
+The following [console functor](/docs/user-guide/programming/az-console/#console-functors-cfuncs) commands should be used to control the connection of clients to servers for networked games or simulations. 
+
+| Setting                | Description                                                                                                                                | Parameters                                                                       | Notes                                                                                     |
+|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| host                   | Opens a multiplayer connection as a host for other clients to connect to.                                                                  |                                                                                  |                                                                                           |
+| connect                | Opens a multiplayer connection to a host.                                                                                                  | *(Optional)* IP address and port, separated by ':'. For example, `0.0.0.0:1234`. | Defaults to `cl_serveraddr`:`cl_serverport`.                                              |
+| disconnect             | Disconnects any open multiplayer connections.                                                                                              |                                                                                  |                                                                                           |
+| LoadLevel              | Unloads the current level and loads a new one with the given asset name. <br> Used to setup the initial level for the game or simiulation. | *(Required)* Path to a level file.                                               | Command is not specific to network or multiplayer but used for all games and simulations. | 
+| sv_launch_local_client | Launches a local client and connects to this host server.                                                                                  |                                                                                  | Only works if currently hosting.                                                          |
+
+These console commands can be executed dynamically via the [console command line](/docs/user-guide/editor/console/) or placed within a console command configuration file, usually with the `.cfg` suffix. Commands will be executed in the order written.
+
+For a networked game or simulation, a typical server configuration file should contain:
+
+```
+host
+LoadLevel <path to Level>
+```
+
+And the client's configuration file should contain:
+
+```
+connect
+```
+
+Console commands in configuration files can be passed to client and server launchers using the `console-command-file` option, for example `MultiplayerSample.ServerLauncher.exe --console-command-file=launch_server.cfg`.
 
 ## Client settings
+The following [console variables](/docs/user-guide/appendix/cvars/) control client behavior.
+
 | Setting                | Description                                                                                                                                                                             | Default   | Notes |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|-------|
 | cl_clientport          | The port to bind to for game traffic when connecting to a remote host, a value of 0 will select any available port.                                                                     | 0         |       |
@@ -34,6 +64,8 @@ This page documents [console variables](/docs/user-guide/appendix/cvars) and set
 
 
 ## Server settings
+The following [console variables](/docs/user-guide/appendix/cvars/) control server behavior.
+
 | Setting                 | Description                                                                     | Default | Notes                |
 |-------------------------|---------------------------------------------------------------------------------|---------|----------------------|
 | sv_map                  | The map the server should load.                                                 | None    |                      |
@@ -133,6 +165,7 @@ These settings control networking behavior.
 | net_UdpIgnoreWin10054               | If true, will ignore 10054 socket errors on windows.                                                                                | True            |                      |
 | net_UdpRecvBufferSize               | Default UDP socket receive buffer size.                                                                                             | 1 * 1024 * 1024 |                      |
 | net_UdpSendBufferSize               | Default UDP socket send buffer size.                                                                                                | 1 * 1024 * 1024 |                      |
+| net_validateSerializedTypes         | Causes an Assert when an attempt at `TypeValidatingSerializer` serialization results in a type or variable name mismatch. | False   | Increases bandwidth utilization to support mismatch detection.   |
 
 ### Multiplayer layer
 | Setting                             | Description                                                                          | Default | Notes                    |
