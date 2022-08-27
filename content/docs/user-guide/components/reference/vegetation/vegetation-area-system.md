@@ -9,7 +9,7 @@ The **Vegetation Area System** component handles the placement and removal of ve
 For more information about how the Vegetation Area System component works within the vegetation system, see the [Technical details](#technical-details) section in this topic.
 
 {{< note >}}
-is is a system component, meaning it already exists when you add the vegetation system through the Vegetation Gem. You can configure vegetation area properties per level, through the **Vegetation System Settings** level component.
+This is a system component, meaning it already exists when you add the vegetation system through the Vegetation Gem. You can configure vegetation area properties per level, through the **Vegetation System Settings** level component.
 {{< /note >}}
 
 ## Provider
