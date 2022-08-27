@@ -1,31 +1,15 @@
 ---
-description: Describes how to dump an in-memory Settings Registry using in C++
-title: 'Output Settings Registry to Stream'
-linktitle: 'Output Settings Registry to Stream'
-weight: 400
+title: Output the Settings Registry to a Stream with C++
+linkTitle: Output the Settings Registry
+description: Learn how to dump an in-memory Settings Registry to stream using in C++ in Open 3D Engine (O3DE).
+weight: 600
 ---
 
-- [Setting Registry Dump API](#setting-registry-dump-api)
-    - [SettingsRegistryMergeUtils DumpSettingsRegistryToStream() function](#settingsregistrymergeutils-dumpsettingsregistrytostream-function)
-        - [Example: Storing Editor Preferences using a key of "/Amazon/Editor/Preferences"](#dump-preferences-with-key)
-        - [Example: Storing Editor Preferences using a key of "/Amazon/Editor/Preferences" with an Anchor of "Amazon/Editor/Preferences"](#dump-preferences-with-key-and-anchor)
-        - [Example: Storing Editor Preferences using a key of "" and an include filter which maintains any JSON objects whose JSON pointer is a prefix of "/Amazon/Editor/Preferences"](#dump-preferences-with-key-and-include-filter)
-        - [Example: Saving the Editor Preferences section of the Setting Registry to a file](#saving-preferences-to-file)
+You might need to store the Settings Registry or a section of the Settings Registry to disk for later access. Sometimes, you might need to store the Settings Registry in a string within a running application for further processing. This topic provides examples of how to dump portions of the Settings Registry to disk at a specific key, while either maintaining the ancestor JSON key hierarchy, or excluding any ancestor key hierarchy.
 
-Setting Registry Dump API
-===
+## Use the `DumpSettingsRegistryToStream` function
 
-You'll often need to store the Settings Registry or a section of the Settings Registry to disk for later access.
-Sometimes, you'll need to store the Settings Registry in a string within a running application for further processing.
-
-This page provides an example of how to dump portions of the Settings Registry to disk at a specific key, while either maintaining the ancestor JSON key hierarchy, or having the saved hierarchy not contain any ancestor key hierarchy.
-
-SettingsRegistryMergeUtils DumpSettingsRegistryToStream function
-------------------------------------------------------------------
-
-The SettingsRegistryMergeUtils contains a DumpSettingsRegistryToStream function, which you can use to store a section of the Settings Registry to a class that implements the AZ::IO::GenericStream interface
-
-**Settings Registry Merge Utils Dump API**
+In this example, the `SettingsRegistryMergeUtils::DumpSettingsRegistryToStream` function is used to store a section of the Settings Registry to a class that implements the `AZ::IO::GenericStream` interface.
 
 ```c++
 //! Structure for configuring how values should be dumped from the Settings Registry
@@ -48,9 +32,11 @@ bool DumpSettingsRegistryToStream(SettingsRegistryInterface& registry, AZStd::st
     AZ::IO::GenericStream& stream, const DumperSettings& dumperSettings);
 ```
 
-Now some important facts to know about using the Settings Registry Merge Utils DumpSettingsRegistryToStream is that the settings are **dumped relative to the "key"** **parameter**.
+{{< important >}}
+The results of `DumpSettingsRegistryToStream` are dumped relative to the `key` parameter.
+{{< /important >}}
 
-To better explain, a sample in-memory settings registry instance is provided, as follows:
+To better explain, consider the following sample in-memory Settings Registry instance:
 
 **Settings Registry View**
 
@@ -79,10 +65,7 @@ To better explain, a sample in-memory settings registry instance is provided, as
 }
 ```
 
-<a id="dump-preferences-with-key"></a>
-### Example: Storing Editor Preferences using a key of `"/Amazon/Editor/Preferences"`
-
-Invoking the `SettingsRegistryMergeUtils::DumpSettingsRegistryToStream` function with a key parameter of `"/Amazon/Editor/Preferences"` as follows
+Invoking the `SettingsRegistryMergeUtils::DumpSettingsRegistryToStream` function with a key parameter of `"/Amazon/Editor/Preferences"` as follows:
 
 ```c++
 AZ::SettingsRegistryMergeUtils::DumperSettings dumperSettings;
@@ -101,8 +84,6 @@ if (!AZ::SettingsRegistryMergeUtils::DumpSettingsRegistryToStream(*registry, "/A
 
 Results in:
 
-**Dumping with a key of "/Amazon/Editor/Preferences"**
-
 ```json
 {
     "EnablePrefabSystemUi": false,
@@ -115,13 +96,11 @@ Results in:
 }
 ```
 
-This shows that the ancestor objects of "Amazon", "Editor", and "Preferences" aren't output to the dumped text data.
-If the objective is to write out the ancestor JSON objects to the Editor Preference settings, then set the "m\_jsonPointerPrefix" variable in the DumperSettings.
+This shows that the ancestor objects of "Amazon", "Editor", and "Preferences" aren't output to the dumped text data. If you need to write out the ancestor JSON objects to the Editor Preference settings, then set the `m_jsonPointerPrefix` variable in the `DumperSettings`.
 
-<a id="dump-preferences-with-key-and-anchor"></a>
-### Example: Storing Editor Preferences using a key of `"/Amazon/Editor/Preferences"` and Anchor of `"Amazon/Editor/Preferences"`
+## Storing Editor Preferences using a key and an anchor
 
-Invoking the `SettingsRegistryMergeUtils::DumpSettingsRegistryToStream` function with a key parameter of "/Amazon/Editor/Preferences" As well setting the JSON Pointer Prefix parameter in the DumperSettings to "/Amazon/Editor/Preferences"
+The following example invokes the `SettingsRegistryMergeUtils::DumpSettingsRegistryToStream` function with a key parameter of "/Amazon/Editor/Preferences" and sets the JSON pointer prefix parameter in the `DumperSettings` to "/Amazon/Editor/Preferences":
 
 ```c++
 AZ::SettingsRegistryMergeUtils::DumperSettings dumperSettings;
@@ -138,9 +117,7 @@ if (!AZ::SettingsRegistryMergeUtils::DumpSettingsRegistryToStream(*registry, "/A
 }
 ```
 
-Results in:
-
-**Dumping with a key of "/Amazon/Editor/Preferences" with that same anchor**
+The preceding example generates the following result:
 
 ```json
 {
@@ -163,12 +140,9 @@ Results in:
 }
 ```
 
-Another way to write the ancestor objects of a setting that is anchored to a specified key is to dump the entire root of the Settings Registry, and use an include filter to filter out the other objects.
+## Storing Editor Preferences using the root key and a filter
 
-<a id="dump-preferences-with-key-and-include-filter"></a>
-### Example: Storing Editor Preferences using a key of `""` and an include filter which maintains any JSON objects whose JSON pointer is a prefix of `"/Amazon/Editor/Preferences"`
-
-Invoking the `SettingsRegistryMergeUtils::DumpSettingsRegistryToStream` function with a key parameter of "" and an include filter as follows
+Dumping the entire root of the Settings Registry with an include filter writes the ancestor objects of a setting that is anchored to a specified key. The following example invokes the `SettingsRegistryMergeUtils::DumpSettingsRegistryToStream` function with a key parameter of "" (the root) and an includes a filter that maintains any JSON objects that have a JSON pointer with the `"/Amazon/Editor/Preferences"` prefix:
 
 ```c++
 AZ::SettingsRegistryMergeUtils::DumperSettings dumperSettings;
@@ -191,9 +165,7 @@ if (!AZ::SettingsRegistryMergeUtils::DumpSettingsRegistryToStream(*registry, "",
 
 ```
 
-Results in:
-
-**Dumping with a key of "" and include filter**
+The preceding example generates the following result:
 
 ```json
 {
@@ -216,14 +188,11 @@ Results in:
 }
 ```
 
-By using an include filter, the hierarchy of JSON keys on the way to the Editor Preferences section are maintained and dumped into the output string
+By using an include filter, the hierarchy of JSON keys on the way to the Editor Preferences section are maintained and dumped into the output string.
 
-<a id="saving-preferences-to-file"></a>
-### Example: Saving the Editor Preferences section of the Setting Registry to a file
+## Saving a section of the Settings Registry to a file
 
-The following example shows how to use the SettingsRegistryMergeUtils DumpSettingsRegistryToStream function to save the Editor Preferences to a file the User local registry location(<project-root>/User/Registry).
-
-**Dumping the Editor Preferences to a file** Expand source
+The following example shows how to use the `SettingsRegistryMergeUtils::DumpSettingsRegistryToStream` function to save the Editor Preferences to a file the User local registry location (`<project-root>/User/Registry`):
 
 ```c++
 //! Recurses over the entire Settings Registry to the Editor Preferences settings
