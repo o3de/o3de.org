@@ -87,6 +87,7 @@ The following Console command outputs the filepath responsible for the latest mo
 | --- | --- |
 | `sr_dump_origin /Your/Custom/Setting1` | This outputs the last file which modified "/Your/Custom/Setting1" key to the Console.  From the example the value is `file2.setreg` |
 
+![](/images/user-guide/settings/dump-file-origin.png)
 
 ### Use the `sr_regset_file` command to merge a Settings Registry file
 
@@ -103,3 +104,5 @@ The following Console command merges a Settings Registry file to the Settings Re
 | --- | --- |
 | `sr_regset_file <engine-root>/engine.json` | Merges the `engine.json` file to the Settings Registry anchor to root key of "". |
 | `sr_regset_file <engine-root>/engine.json /O3DE/EngineSettings` | Merges the `engine.json` file to the Settings Registry anchored to object of "/O3DE/EngineSettings". |
+
+![](/images/user-guide/settings/merge-regset-file.png)
