@@ -1,33 +1,15 @@
 ---
-description: ' Some useful examples for the Python Editor Bindings gem, used to automate
-  actions in the O3DE Editor. '
-title: Python Editor Bindings gem examples
+title: Python Editor Bindings Gem Examples
+description: Some useful examples for the Python Editor Bindings Gem, used to automate actions in the O3DE Editor.
 ---
 
- The Python Editor Bindings are driven by an API that connects through to the Editor's C++ implementation, using the O3DE event bus (Ebus) to send messages between scripts and the editor. This reference covers the use of the editor bindings API to perform tasks like interacting with components, entities, and and properties.
+ The Python Editor Bindings Gem provides an API that defines a connection to the Editor's C++ implementation, using the O3DE event bus (Ebus) to send messages between Python scripts and the Editor. This reference covers the use of the bindings API to perform tasks like interacting with components, entities, and properties.
 
-**Contents**
-+ [Level management](#editor-automation-examples-levels)
-+ [Editor timing](#editor-automation-examples-timing)
-+ [Entitites](#editor-automation-examples-entities)
-  + [Entity IDs](#editor-automation-examples-entities-ids)
-  + [Entity operations and Ebus interfaces](#editor-automation-examples-entities-ebus)
-  + [Entity search](#editor-automation-examples-entities-search)
-  + [Entity notifications](#editor-automation-examples-entities-notifications)
-+ [Component management](#editor-automation-examples-components)
-  + [Component type events](#editor-autiomation-api-reference-components-type)
-  + [Component usage events](#editor-atuomation-api-reference-components-usage)
-  + [Component control events](#editor-atuomation-api-reference-components-control)
-+ [Component property events](#editor-atuomation-api-reference-components-properties)
-+ [Editing properties](#editor-automation-examples-properties-editing)
-  + [Property containers](#editor-automation-examples-properties-editing-containers)
-+ [Asset management](#editor-automation-examples-assets)
+## Level management
 
-## Level management 
+Use these functions to load, create, and save levels. In order to use other binding APIs, a level needs to be loaded in O3DE Editor.
 
-Use these functions to load, create, and save levels. In order to use other editor binding APIs, a level needs to be loaded in the editor.
-
-```
+```python
 # opens a level with a user prompt
 azlmbr.legacy.general.open_level(strLevelName)
 
@@ -35,40 +17,40 @@ azlmbr.legacy.general.open_level(strLevelName)
 azlmbr.legacy.general.open_level_no_prompt(strLevelName)
 
 # creates a level with the parameters of 'levelName', 'resolution', 'unitSize' and 'bUseTerrain'
-azlmbr.legacy.general.create_level(levelName, resolution, unitSize,bUseTerrain)
+azlmbr.legacy.general.create_level(levelName, resolution, unitSize, bUseTerrain)
 
 # same as create_level() but no prompts
-azlmbr.legacy.general.create_level_no_prompt(levelName, resolution, unitSize,bUseTerrain)
+azlmbr.legacy.general.create_level_no_prompt(levelName, resolution, unitSize, bUseTerrain)
 
 # saves the current level
 azlmbr.legacy.general.save_level()
 ```
 
-## Editor timing 
+## Editor timing
 
- Occasionally a script will need to introduce a delay in actions to be performed in the editor while another action completes, such as loading a level. Rather than use the built-in Python delay methods, use these editor binding APIs.
+ Occasionally a script will need to introduce a delay in actions to be performed in the Editor while another action completes, such as loading a level. Rather than use the built-in Python delay methods, use these Editor binding APIs.
 
-```
+```python
 # enables/disables idle processing for the Editor
 azlmbr.legacy.general.idle_enable(boolValue)
 
 # Returns whether or not idle processing is enabled for the Editor
 azlmbr.legacy.general.is_idle_enabled()
 
-# waits idling for a given seconds
+# idles for specified number of seconds
 azlmbr.legacy.general.idle_wait(floatSeconds)
 ```
 
-## Entitites 
+## Entitites
 
- The API allows you to add and remove entities to the root entity of a level, retrieve and compare entity IDs, and search for entities.
+ The API enables you to add and remove entities to the root entity of a level, retrieve and compare entity IDs, and search for entities.
 
-### Entity IDs 
+### Entity IDs
 
- The `azlmbr.entity.EntityId` class is used to refer to entity instances, properties, and the entity tree.
+ Use the `azlmbr.entity.EntityId` class to refer to entity instances, properties, and the entity tree.
 
-```
-# returnsTrue if the entity ID is valid
+```python
+# returns True if the entity ID is valid
 entityId.IsValid()
 
 # returns string representation of an entity ID
@@ -78,26 +60,26 @@ entityId.ToString()
 entityId.Equal(otherEntityId)
 ```
 
-### Entity operations and Ebus interfaces 
+### Entity operations and Ebus interfaces
 
  There are three main EBus interfaces used to manage Editor entities:
 +  `azlmbr.editor.ToolsApplicationRequestBus`: Used to create and delete Editor entities
-+  `azlmbr.editor.EditorEntityInfoRequestBus`: Used to access Entity values
-+  `azlmbr.editor.EditorEntityAPIBus`: Used to mutate Entity values
++  `azlmbr.editor.EditorEntityInfoRequestBus`: Used to access entity values
++  `azlmbr.editor.EditorEntityAPIBus`: Used to mutate entity values
 
 **Example usage**:
 
-```
-# Create a new Entity at the root level
+```python
+# Create a new entity at the root level
 rootEntityId = azlmbr.editor.ToolsApplicationRequestBus(azlmbr.bus.Broadcast, 'CreateNewEntity', EntityId())
 
-# Create a new Entity parented to the parent Entity
+# Create a new entity parented to the parent entity
 childEntityId = azlmbr.editor.ToolsApplicationRequestBus(azlmbr.bus.Broadcast, 'CreateNewEntity', rootEntityId)
 
 # Delete the entity
 azlmbr.editor.ToolsApplicationRequestBus(azlmbr.bus.Broadcast, 'DeleteEntityById', childEntityId)
 
-# Delete the root Entity we created and all its children
+# Delete the root entity we created and all its children
 azlmbr.editor.ToolsApplicationRequestBus(azlmbr.bus.Broadcast, 'DeleteEntityAndAllDescendants', rootEntityId)
 
 # Get current name
@@ -106,36 +88,36 @@ name = azlmbr.editor.EditorEntityInfoRequestBus(azlmbr.bus.Event, 'GetName', ent
 # Set a new name
 azlmbr.editor.EditorEntityAPIBus(azlmbr.bus.Event, 'SetName', entityId, "MyName")
 
-# get the parent ID of this EntityID
+# Get the parent ID of this entity ID
 getId = azlmbr.editor.EditorEntityInfoRequestBus(azlmbr.bus.Event, 'GetParent', childId);
 ```
 
-### Entity search 
+### Entity search
 
  The entity search API is based around setting up filters using `azlmbr.entity.SearchFilter` to set up the search parameters, and then conduct the search over the Ebus represented by `azlmbr.entity.SearchBus`.
 
 **`azlmbr.entity.SearchFilter` usage**:
 
-```
+```python
 searchFilter = azlmbr.entity.SearchFilter()
-searchFilter.names = [] # List of names (matches if any match); can contain wildcards in the name.
-searchFilter.names_case_sensitive = False # Determines if the name matching should be case sensitive.
-searchFilter.components = {} # Dictionary keyed on component type IDs (matches if anymatch).
-searchFilter.components_match_all = False # Determines if the filter should match all component type ids (AND).
+searchFilter.names = [] # List of names (matches if any match); can contain wildcards in the name
+searchFilter.names_case_sensitive = False # Determines if the name matching should be case-sensitive
+searchFilter.components = {} # Dictionary keyed on component type IDs (matches if any match)
+searchFilter.components_match_all = False # Determines if the filter should match all component type IDs
 searchFilter.roots = [] # Specifies the entity IDs that act as roots of the search
-searchFilter.names_are_root_based = False # Determines if the names are relative to the root or should be searched in children too.
+searchFilter.names_are_root_based = False # Determines if the names are relative to the root or should be searched in children too
 ```
 
 **`azlmbr.entity.SearchBus` usage**:
 
-```
+```python
 # The SearchBus interface
 busType = azlmbr.bus.Broadcast
 
-# Iterates through all entities in the current level, and returns a list ofthe ones that match the conditions
+# Iterates through all entities in the current level, and returns a list of the ones that match the conditions
 entityIdList = azlmbr.entity.SearchBus(busType, 'SearchEntities', searchFilter)
 
-# Returns a list of all editor entities at the root level in the current level
+# Returns a list of all Editor entities at the root level in the current level
 entityIdList = azlmbr.entity.SearchBus(busType, 'GetRootEditorEntities', searchFilter)
 ```
 
@@ -145,7 +127,7 @@ entityIdList = azlmbr.entity.SearchBus(busType, 'GetRootEditorEntities', searchF
 
 **Example usage**:
 
-```
+```python
 import azlmbr.bus as bus
 import azlmbr.entity as entity
 
@@ -155,7 +137,7 @@ searchFilter.names = ['TestName']
 # Search by name
 entityIdList = entity.SearchBus(bus.Broadcast, 'SearchEntities', searchFilter)
 
-# Search by name path (DAG)
+# Search by name path (a directed acyclic graph (DAG))
 searchFilter = entity.SearchFilter()
 searchFilter.names = ['TestParent|TestChild']
 entityIdList = entity.SearchBus(bus.Broadcast, 'SearchEntities', searchFilter)
@@ -168,7 +150,7 @@ entityIdList = entity.SearchBus(bus.Broadcast, 'SearchEntities', searchFilter)
 
 **Force search to start from root entities**:
 
-```
+```python
 import azlmbr.bus as bus
 import azlmbr.entity as entity
 
@@ -179,19 +161,19 @@ searchFilter.roots = [rootId]
 searchFilter.names_are_root_based = False  # default
 entityIdList = entity.SearchBus(bus.Broadcast, 'SearchEntities', searchFilter)
 
-# Filter with roots using the names, only get the kids realtive from the root nodes
+# Filter with roots using the names, only get the children relative from the root nodes
 searchFilter = entity.SearchFilter()
 searchFilter.names = ["TestParent|TestChild"]
 searchFilter.roots = [rootId]
-searchFilter.names_are_root_based = True # search from roots for these names
+searchFilter.names_are_root_based = True # Search from roots for these names
 entityIdList = entity.SearchBus(bus.Broadcast, 'SearchEntities', searchFilter)
 ```
 
-### Entity notifications 
+### Entity notifications
 
- You can capture editor entity events using the `EditorEntityContextNotificationBus` handler. Callbacks can be assigned to entity management event names: `OnEditorEntityCreated` and `OnEditorEntityDeleted` where the callback will be called with a tuple of data coming from the events.
+ You can capture Editor entity events using the `EditorEntityContextNotificationBus` handler. Callbacks can be assigned to entity management event names: `OnEditorEntityCreated` and `OnEditorEntityDeleted` where the callback will be called with a tuple of data coming from the events.
 
-```
+```python
 # The events
 "OnEditorEntityCreated" # returns when an entity is created in the Editor
 "OnEditorEntityDeleted" # returns when an entity is destroyed in the Editor
@@ -199,13 +181,13 @@ entityIdList = entity.SearchBus(bus.Broadcast, 'SearchEntities', searchFilter)
 
 **Example usage**:
 
-```
+```python
 # assumes a level has been opened or created
 import azlmbr.bus as bus
 import azlmbr.editor as editor
 from azlmbr.entity import EntityId
 
-createdEntityIds = [] # to capture created entites
+createdEntityIds = [] # to capture created entities
 
 def onEditorEntityCreated(parameters):
     global createdEntityIds
@@ -222,35 +204,35 @@ def onEditorEntityDeleted(parameters):
 
 # Listen for notifications when entities are created/deleted
 handler = editor.EditorEntityContextNotificationBusHandler()
-handler.connect() # connects to a Singleton bus handler
+handler.connect() # connects to a singleton bus handler
 handler.add_callback('OnEditorEntityCreated', onEditorEntityCreated)
 handler.add_callback('OnEditorEntityDeleted', onEditorEntityDeleted)
 
-# Create new Editor Entity
+# Create new Editor entity
 editor.ToolsApplicationRequestBus(bus.Broadcast, 'CreateNewEntity', EntityId())
 ```
 
-## Component management 
+## Component management
 
- The component system is used to add and removes components to existing entities with the `azlmbr.editor.EditorComponentAPIBus` bus.
+ Use the component system to add and remove components to existing entities with the `azlmbr.editor.EditorComponentAPIBus` bus.
 
 {{< note >}}
-Components are not active when in editing mode. They only become active when the game is being played within the editor.
+Components are not active when in editing mode. They only become active when the game is being played within the Editor.
 {{< /note >}}
 
-### Component type events 
+### Component type events
 
  The API requires IDs to create, use, or control component instances. To get a component IDs, use the following Ebus events:
 
-```
+```python
 # azlmbr.editor.EditorComponentAPIBus Broadcast events
 
-# Finds the component ids from their type names
+# Finds the component IDs from their type names
 # input: list of strings of type names
 # output: (list of component type IDs)
 'FindComponentTypeIds'
 
-# Finds the component names from their type ids
+# Finds the component names from their type IDs
 # input: list of component type IDs
 # output: (list of strings) of type names
 'FindComponentTypeNames'
@@ -263,7 +245,7 @@ Components are not active when in editing mode. They only become active when the
 
 **Example usage**:
 
-```
+```python
 import azlmbr.bus as bus
 
 # Generate list of component type names
@@ -276,22 +258,22 @@ typeIdList = azlmbr.editor.EditorComponentAPIBus(bus.Broadcast, 'FindComponentTy
 typeNameList = azlmbr.editor.EditorComponentAPIBus(bus.Broadcast, 'FindComponentTypeNames', typeIdsList)
 ```
 
-### Component usage events 
+### Component usage events
 
  The API can add components to an existing entity, test for component existence, counts components by type, and enumerate the components on an entity.
 
-```
+```python
 # azlmbr.editor.EditorComponentAPIBus Broadcast events
 
-# Add Components of the given types to an Entity.
+# Add components of the given types to an entity.
 # input: entity ID
 # input: list of component type IDs
 # output: (Outcome<list of component IDs>)
 'AddComponentsOfType'
 
-# Tests a component of type can be found on Entity
+# Tests a component of type can be found on entity
 # input: component type ID
-# output: (bool) True if a Component of type provided can be found on Entity, False otherwise
+# output: (bool) True if a component of type provided can be found on entity, False otherwise
 'HasComponentOfType'
 
 # Count components of type provided on the entity
@@ -300,14 +282,14 @@ typeNameList = azlmbr.editor.EditorComponentAPIBus(bus.Broadcast, 'FindComponent
 # output: (number) of component instances on an entity
 'CountComponentsOfType'
 
-# Get Component of type from Entity
+# Get component of type from entity
 # Only returns first component of type if found (early out).
 # input: entity ID
 # input: component type ID
 # output: (Outcome<component ID>)
 'GetComponentOfType'
 
-# Get all Components of type from Entity
+# Get all components of type from entity
 # Returns list of component IDs, or an empty list if components could not be found
 # input: entity ID
 # input: component type ID
@@ -317,7 +299,7 @@ typeNameList = azlmbr.editor.EditorComponentAPIBus(bus.Broadcast, 'FindComponent
 
 **Example usage:**
 
-```
+```python
 import azlmbr.bus as bus
 
 # adding a Mesh component
@@ -329,7 +311,7 @@ if (meshComponentOutcome.IsSuccess()):
 meshComponents = meshComponentOutcome.GetValue()
 meshComponent = meshComponents[0]
 
-# test for a mesh component exists on the enity
+# test for a Mesh component exists on the enity
 hasComponent = azlmbr.editor.EditorComponentAPIBus(bus.Broadcast, 'HasComponentOfType', entityId, meshComponentTypeId)
 
 if (hasComponent):
@@ -341,7 +323,7 @@ commentsCount = azlmbr.editor.EditorComponentAPIBus(bus.Broadcast, 'CountCompone
 if(commentsCount == 1):
     print("Entity has one Mesh component")
 
-# returns the first mesh component ID, if any
+# returns the first Mesh component ID, if any
 meshSingleComponentOutcome = azlmbr.editor.EditorComponentAPIBus(bus.Broadcast, 'GetComponentOfType', entityId, meshComponentTypeId)
 
 if (meshSingleComponentOutcome.IsSuccess()):
@@ -358,11 +340,11 @@ if (meshMultipleComponentOutcome.IsSuccess()):
 firstMeshComponentId = meshMultipleComponentOutcome.GetValue()[0]
 ```
 
-### Component control events 
+### Component control events
 
  The API offers events to validate, enable or disable, and remove components.
 
-```
+```python
 # azlmbr.editor.EditorComponentAPIBus Broadcast events
 
 # Verifies a component instance is valid
@@ -375,17 +357,17 @@ firstMeshComponentId = meshMultipleComponentOutcome.GetValue()[0]
 # output: (bool) Returns True if the component is active
 'IsComponentEnabled'
 
-# Enable Components on an Entity using a list of component IDs
+# Enable Components on an entity using a list of component IDs
 # input: list of component type IDs
 # output: (bool) Returns True if the operation was successful, False otherwise
 'EnableComponents'
 
-# Disable Components on an Entity using a list of component IDs
+# Disable Components on an entity using a list of component IDs
 # input: list of component type IDs
 # output: (bool) Returns True if the operation was successful, False otherwise
 'DisableComponents'
 
-# Remove components from an Entity using a list of component IDs
+# Remove components from an entity using a list of component IDs
 # input: list of component type IDs
 # output: (bool) Returns True if the operation was successful, False otherwise
 'RemoveComponents'
@@ -393,7 +375,7 @@ firstMeshComponentId = meshMultipleComponentOutcome.GetValue()[0]
 
 **Example usage**:
 
-```
+```python
 import azlmbr.bus as bus
 
 # test a component is valid
@@ -406,29 +388,29 @@ isEnabled = azlmbr.editor.EditorComponentAPIBus(bus.Broadcast, 'IsComponentEnabl
 if (isEnabled is True):
     print("Mesh component is enabled.")
 
-# enable this mesh component
+# enable this Mesh component
 isEnabled = azlmbr.editor.EditorComponentAPIBus(bus.Broadcast, 'EnableComponents', [meshComponent])
 if (isEnabled is True):
     print("Mesh component set to enabled.")
 
-# disable this mesh component
+# disable this Mesh component
 didDisable = azlmbr.editor.EditorComponentAPIBus(bus.Broadcast, 'DisableComponents', [meshComponent])
 if (didDisable is True):
     print("Mesh component set to disabled.")
 
-# remove only this mesh component
+# remove only this Mesh component
 didRemove = azlmbr.editor.EditorComponentAPIBus(bus.Broadcast, 'RemoveComponents', [meshComponent])
 if (didRemove is True):
     print("Mesh component has been removed.")
 ```
 
-## Component property events 
+## Component property events
 
  Component properties can be accessed and modified using a string that indicates a direct path to a property value. The pipe character `|` is used as the separator between the property path elements.
 
  The `azlmbr.editor.EditorComponentAPIBus` bus is used to access or modify component property values.
 
-```
+```python
 # azlmbr.editor.EditorComponentAPIBus Broadcast events
 
 # Get value of a property on a component
@@ -452,7 +434,7 @@ if (didRemove is True):
 
 **Example usage:**
 
-```
+```python
 import azlmbr.bus as bus
 
 # Get current value of the mesh asset property of the MeshComponentRenderNode
@@ -479,13 +461,13 @@ for path in propertyPaths:
     print ('ComponentId path has {}'.format(path))
 ```
 
-## Editing properties 
+## Editing properties
 
-To access this API a script needs access to a property tree editor instance. This object accesses the properties on a component, in the style of the property editing view inside of the editor. Properties are accessed starting from the root of the component, and follow the chain of labels until a property value is encountered.
+To access this API a script needs access to a property tree editor instance. This object accesses the properties on a component, in the style of the property editing view inside of the Editor. Properties are accessed starting from the root of the component, and follow the chain of labels until a property value is encountered.
 
  A common way to create a property tree editor instance is during content creation when a component is created via the `EditorComponentAPIBus.AddComponentsOfType` event.
 
-```
+```python
 componentOutcome = editor.EditorComponentAPIBus(bus.Broadcast, 'AddComponentsOfType', entityId, typeIdsList)
 if (!componentOutcome.IsSuccess()):
     raise Exception('FAILURE FATAL: AddComponentsOfType')
@@ -498,12 +480,12 @@ if(pteObj.IsSuccess()):
 
 `azlmbr.property.PropertyTreeEditor` API:
 
-```
+```python
 # type: azlmbr.property.PropertyTreeEditor
 #  - method: build_paths_list() -> string List
 #            Get a complete list of all property paths in the tree.
 #  - method: build_paths_list_with_types() -> string List
-#            Get a complete list of all property paths in the tree with (typename)s.
+#            Get a complete list of all property paths in the tree with (typenames).
 #  - method: set_visible_enforcement() -> string List
 #            Limits the properties using the visibility flags such as ShowChildrenOnly.
 #  - method: has_attribute(str: path, str: attribute) -> bool
@@ -532,15 +514,15 @@ if(pteObj.IsSuccess()):
 #            Retrieves an item value from a container.
 ```
 
-### Property containers 
+### Property containers
 
- The Editor automaton API exposes a number of special methods to handle container component property types. If the property tree editor points to a component that has container properties these methods give access to the items in the container.
+ The Editor automation API exposes a number of special methods to handle container component property types. If the property tree editor points to a component that has container properties these methods give access to the items in the container.
 
  To determine if the property is a container type use the `azlmbr.PropertyTreeEditor.is_container()` method.
 
 **Example usage**:
 
-```
+```python
 # the path to the 'Extended Tags' property
 tagListPropertyPath = 'm_template|Extended Tags'
 
@@ -587,30 +569,30 @@ if(outcome.IsSuccess()):
    print('removed an item')
 ```
 
-## Asset management 
+## Asset management
 
- The editor automation API exposes a few methods to manage assets via the `azlmbr.asset.AssetCatalogRequestBus` bus.
+ The Editor automation API exposes a few methods to manage assets via the `azlmbr.asset.AssetCatalogRequestBus` bus.
 
-```
+```python
 # type: azlmbr.asset.AssetId
 #   - method: IsValid()
 
-# Retrieves an asset-root-relative path by Id.
-# input: asset Id (azlmbr.asset.AssetId)
+# Retrieves an asset-root-relative path by ID.
+# input: asset ID (azlmbr.asset.AssetId)
 # output: (string) relative file path if it's in the catalog, otherwise an empty string
 'GetAssetPathById'
 
-# Retrieves an asset Id given a full or asset-root-relative path.
-# input: asset path (string) asset full or asset-root relative path
-# input: typeToRegister (azlmbr.math.Uuid) if autoRegisterIfNotFound is setand the asset isn't already registered, it will be registered as this type
+# Retrieves an asset ID given a full or asset root-relative path.
+# input: asset path (string) asset full or asset root-relative path
+# input: typeToRegister (azlmbr.math.Uuid) if autoRegisterIfNotFound is set and the asset isn't already registered, it will be registered as this type
 # input: autoRegisterIfNotFound (bool) registers the asset if not already in the catalog
-# output: (azlmbr.asset.AssetId) valid AssetId if it's in the registry, otherwise an empty AssetId
+# output: (azlmbr.asset.AssetId) valid asset ID if it's in the registry, otherwise an empty AssetId
 'GetAssetIdByPath'
 ```
 
 **Example usage**:
 
-```
+```python
 import azlmbr.bus as bus
 import azlmbr.math
 

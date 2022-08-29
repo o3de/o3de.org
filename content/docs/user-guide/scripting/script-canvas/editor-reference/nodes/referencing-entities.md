@@ -1,10 +1,10 @@
 ---
 title: Referencing Entities
 description: Learn how to reference entities as targets from Script Canvas nodes.
-weight: 200
+weight: 600
 ---
 
-Nodes can contain an entity property. These properties tell the node which entity to affect. By default, many nodes reference **Self**, the entity to which the [Script Canvas](/docs/user-guide/components/reference/scripting/script-canvas/) component attaches the current script. You can reference a specific entity other than Self.
+Nodes can contain an entity property. These properties tell the node which entity to affect. By default, many nodes reference **Self**, the entity that contains the [Script Canvas](/docs/user-guide/components/reference/scripting/script-canvas/) component that specifies the script that contains the node. Alternatively, you can reference a different entity other than Self.
 
 ## Referencing entities from a node
 
@@ -18,4 +18,4 @@ Nodes can contain an entity property. These properties tell the node which entit
 
 1. To clear the entity, position your pointer over the entity property and then click the **x** icon.
 
-1. To reset a property back to self, right-double-click the entity property and choose **Set to Self**.
+1. To reset a property back to self, right-click the entity property and choose **Reset Value**.

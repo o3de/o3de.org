@@ -5,7 +5,7 @@ description: The Game State Samples Gem provides a set of sample game states (bu
 toc: true
 ---
 
-The Game State Samples gem uses the [GameState Gem](/docs/user-guide/gems/reference/gameplay/game-state) to provide a set of sample game states that control the high-level flow of a game.
+The Game State Samples Gem uses the [GameState Gem](/docs/user-guide/gems/reference/gameplay/game-state) to provide a set of sample game states that control the high-level flow of a game.
 
 ## Game States Included
 

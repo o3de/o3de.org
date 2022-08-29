@@ -13,6 +13,6 @@ You can also specify your own icon.
 
 1. Choose **Set custom icon**.
 
-!['Set custom icon' menu item](/images/user-guide/component/entity_system/component-working-customize.png)
+   !['Set custom icon' menu item](/images/user-guide/component/entity_system/component-working-customize.png)
 
 1. Select an icon from your game project directory.

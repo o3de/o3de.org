@@ -28,6 +28,8 @@ Jobs can generate multiple product assets, but a job might not need all product 
 
 A material, for example, has a job dependency on a shader. The shader job generates multiple product assets including assets that contain shader logic and a shader configuration. The material job dependency only needs the configuration from the shader, not the logic. The material job runs when the shader configuration is changed, not when the shader logic is changed.
 
+In some cases, a builder requires the output of another builder in order to process the asset it is working on.  If the other builder only outputs a single product, a regular job dependency works just fine.  Sometimes, however, the other builder outputs many products, some of which might not be updated every time the builder runs.  This can result in Asset Processor doing unnecessary work to rebuild dependent assets when their dependencies haven't actually changed.  For these cases, builders can specify the exact set of products they depend on by providing a list of SubIds in the AssetBuilderSDK::JobDependency::m_productSubIds field.  When a builder provides a list of specific products to depend on, Asset Processor will only trigger the dependency when the hash of the contents of any of the specified products changes.
+
 ## Product dependencies
 
 Product dependencies are a packaging and runtime concept. This means these dependencies are not used during processing of assets, but they are declared there.

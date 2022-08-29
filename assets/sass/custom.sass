@@ -71,13 +71,14 @@ $font-family-headers: "Open Sans"
 $o3de-black: #000
 $o3de-white: #fff
 $o3de-lightgray: #ddd
-$o3de-blue: #1E71EB
-$o3de-darkblue: #011C46
+$o3de-blue: #1E70EB
+$o3de-darkblue: #0F3876
 $o3de-docsblue: #2A4875
-$o3de-mediumblue: #054CBA
-$o3de-lightblue: #D2EDFF
+$o3de-mediumblue: #4B8DEF
+$o3de-lightblue: #A5C6F7
 $o3de-blue-highlight: #94D2FF
 $o3de-green: #58BD61
+$o3de-purple: #652d90
 
 // layouts/section-nav.html typography
 
@@ -329,13 +330,13 @@ code
       background-color: $o3de-lightgray
 
 .navbar-dark .navbar-nav .nav-link.active
-  color: #1E70EB
+  color: $o3de-lightgray
 
 .navbar-docs .navbar-nav .nav-link.active
-  color: $o3de-blue-highlight
+  color: $o3de-lightgray
 
 .navbar-dark .navbar-nav li.active div
-  background-color: #1E70EB
+  background-color: $o3de-lightgray
   padding-bottom: 4px
   position: absolute
   width: 100%
@@ -437,52 +438,44 @@ code
 // layouts/partials/hero.html
 
 // banner
-
 a.top-banner
   color: $o3de-white
-  background-color: $o3de-blue
+  background-color: $o3de-purple
   display: block
   padding: 10px 0
   transition: .2s ease
   box-shadow: 0 0 10px rgba(0,0,0,.3)
   position: relative
   z-index: 1
-  
+
+
   &:hover 
-    background-color: darken(#1E71EB, 10%)
+    background-color: darken($o3de-purple, 10%)
 
   .container
     position: relative
-    
+
     @include media-breakpoint-down(lg)
       max-width: 100%
 
     .banner-logo
+      background-image: url('/images/events/o3d_monochrome_con_logo.svg')
       background-size: 100% auto
-      background-repeat: no-repeat
-      background-position: 50% 50%
       float: left
+      width: 182px
+      height: 42px
       margin-right: 12px
-
-      &.o3decon
-        background-image: url('/img/logos/O3DECon_Logo-White.svg')
-        width: 182px
-        height: 42px
-      
-      &.o3dejam
-        background-image: url('/img/logos/O3DEJam_Logo-REV-COLOR.svg')
-        width: 220px
-        height: 40px
+      margin-top: -2px
 
       @include media-breakpoint-down(sm)
         display: none
-    
+
     .mobile-only
       display: none
 
       @include media-breakpoint-down(sm)
         display: inline
-    
+
     .desktop-only
       display: inline
 
@@ -501,19 +494,19 @@ a.top-banner
       top: 50%
       transform: translate(0, -50%)
       background: #fff
-      color: $o3de-blue
+      color: #652d90
       font-weight: 600
       padding: 3px 8px
       font-size: .9rem
       border-radius: 4px
       transition: .2s ease
       border: 2px solid $o3de-white
-      
+
       @include media-breakpoint-down(sm)
-        
-      
+
+
       &:hover
-        border-color: $o3de-blue-highlight
+        border-color: $o3de-purple
 
 
 
@@ -908,12 +901,23 @@ $os-selector-mobile-height: 48px
     width: 96px
     margin-right: 24px
 
+  .epicgames-logo
+    background-image: url('/img/logos/partnerLogos/epicgames.svg')
+    width: 64px
+  
   .huawei-logo
     background-image: url('/img/logos/partnerLogos/huawei.svg')
 
   .intel-logo
     background-image: url('/img/logos/partnerLogos/intel.svg')
     width: 110px
+
+  .lightspeedstudios-logo
+    background-image: url('/img/logos/partnerLogos/lightspeedstudios.png')
+    background-size: 120% auto
+    margin:  0 0 0 16px
+    width: 200px
+    padding: 0
 
   .microsoft-logo
     background-image: url('/img/logos/partnerLogos/microsoft.svg')
@@ -931,10 +935,6 @@ $os-selector-mobile-height: 48px
       margin: 0 16px
       width: 160px
 
-
-  .accelbyte-logo
-    background-image: url('/img/logos/partnerLogos/accelbyte.svg')
-
   .audiokinetic-logo
     background-image: url('/img/logos/partnerLogos/audiokinetic.svg')
 
@@ -950,12 +950,12 @@ $os-selector-mobile-height: 48px
     
   .genvid-logo
     background-image: url('/img/logos/partnerLogos/genvid.svg')
+    
+  .gamepoch-logo
+    background-image: url('/img/logos/partnerLogos/gamepoch.jpeg')
 
   .hadean-logo
     background-image: url('/img/logos/partnerLogos/hadean.svg')
-
-  .here-logo
-    background-image: url('/img/logos/partnerLogos/here.svg')
 
   .kitbash3D-logo
     background-image: url('/img/logos/partnerLogos/kitbash3D.svg')
@@ -974,10 +974,6 @@ $os-selector-mobile-height: 48px
     width: 96px
     margin-right: 32px
 
-  .tlm-partners-logo
-    background-image: url('/img/logos/partnerLogos/tlm-partners.svg')
-    width: 96px
-
   .igda-logo
     background-image: url('/img/logos/partnerLogos/igda.svg')
     width: 120px
@@ -988,6 +984,7 @@ $os-selector-mobile-height: 48px
   .rit-logo
     background-image: url('/img/logos/partnerLogos/rit.svg')
     width: 96px
+
 
 // layouts/partials/home/partners.html carousel
 
@@ -1014,7 +1011,7 @@ $os-selector-mobile-height: 48px
       height: 420px
     
     @include media-breakpoint-down(xs)
-      height: 650px
+      height: 660px
 
   
   .partner-denomination
@@ -1184,7 +1181,7 @@ $os-selector-mobile-height: 48px
     color: $o3de-blue-highlight
 
     &:hover, &:active
-      color: $o3de-blue-highlight
+      color: $o3de-mediumblue   
       text-decoration: none
 
 // layouts/social-buttons.html 

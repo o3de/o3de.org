@@ -1,84 +1,58 @@
 ---
-linktitle: Commenting Nodes
-title: Commenting Nodes in Script Canvas
-description: Use the Open 3D Engine Script Canvas Editor to add comments to your script.
+linktitle: Adding Comments
+title: Adding Comments in Script Canvas
+description: Add comments to describe how your Script Canvas graphs work in Open 3D Engine (O3DE).
 weight: 200
 ---
 
 You can add comments to your script to describe how it works.
 
-## Adding comment nodes
+## Adding comments
 
-A **Comment** node is a floating block of text that you can move in the **Script Canvas Editor** canvas.
+A **Comment** node in Script Canvas is a floating block of text that you can position in your graph canvas.
 
 **To add a Comment node to your script**
 
-1. In the Script Canvas Editor, do one of the following:
-    + In the **Node Palette**, choose **Utilities** and then choose and drag the **Comment** node to your script.
-    + **Right-click** your script and choose **Add Comment**.
+1. In the Script Canvas Editor, **right-click** in the canvas and choose **Add Comment**, **Note**.
 
-1. Double-click the node and then enter a description.
+1. Type your comment and press **Enter**.
 
-    ![Use the Comment node to add useful notes about your script.](/images/user-guide/scripting/script-canvas/nodes-commenting.png)
+    ![Use the comment feature to add useful notes about your script.](/images/user-guide/scripting/script-canvas/nodes-commenting.png)
 
-1. To delete a **Comment** node, do one of the following:
+**To edit a Comment node**
+
+1. Double-click the Comment node.
+
+1. Update the description and press **Enter**.
+
+**To delete a Comment node**
+
+1. To delete a Comment node, do one of the following:
     + Select the node and press **Delete**.
-    + **Right-click** the node and choose **Delete Node**.
+    + **Right-click** the node and choose **Delete**.
 
-## Adding block comment nodes
+{{< tip >}}
+Script Canvas includes a preset Comment node style called "Note". To create new presets that use different colors or font characteristics, refer to [Creating Comment and Group Presets](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/organizing/creating-comment-and-group-presets).
+{{< /tip >}}
 
-The **Block Comment** node is similar to the **Comment** node, except that you can also use block comments to contain other nodes and organize your script into sections. You can add other nodes to the **Block Comment** node to tag a specific region or add colors to organize the different parts of your script.
+## Customizing comments
 
-**To add a Block Comment node to your script**
+You can change the color and font settings on Comment nodes. Font settings apply to the entire text in the Comment.
 
-1. In the Script Canvas Editor, do one of the following:
-    + In the **Node Palette**, click **Utilities** and then drag the **Block Comment** node to your script.
-    + **Right-click** the canvas and choose **Create Block Comment**.
-    + If you have a group of nodes together, **right-click** the canvas and choose **Create Block Comment for Selection**.
+**To change the font setting for an individual Comment node**
 
-1. For the **Block Comment** node, double-click the header, and then enter a description.
-
-1. Drag the corners of the node to resize it.
-
-1. Drag your nodes into the **Block Comment** node or expand the **Block Comment** node to contain them.
-**Example**
-
-    The following **Block Comment** node contains other nodes as a group.
-
-    ![Use the Block Comment node to organize the nodes in your script.](/images/user-guide/scripting/script-canvas/nodes-commenting-block.png)
-
-1. To move your nodes together, drag the **Block Comment** node header. All nodes inside the **Block Comment** node move together.
-
-1. To delete the node, do one of the following:
-    + Select the **Block Comment** node header and press **Delete**.
-    + **Right-click** the header for the **Block Comment** node and choose **Delete Node**.
-
-    {{< note >}}
-Nodes inside the **Block Comment** node are not deleted.
-    {{< /note >}}
-
-## Changing comment node font settings
-
-You can change the font settings in comment nodes to label and organize your script. Font settings apply to the entire comment. You cannot specify individual sections of the comment.
-
-**To change the font settings for comment nodes**
-
-1. In the Script Canvas Editor, choose **View**, **Node Inspector**.
-
-1. Do one of the following:
-    + For a **Comment** node, select the node.
-    + For a **Block Comment** node, select the header.
+1. Select the Comment node.
 
 1. In the **Node Inspector**, you can make the following changes:
 
-    ![Use the Node Inspector to change font settings for comment nodes.](/images/user-guide/scripting/script-canvas/nodes-commenting-block-font-settings.png)
+    ![Use the Node Inspector to change font settings for comment nodes.](/images/user-guide/scripting/script-canvas/nodes-commenting-settings.png)
 
     + **Comment** - Type the comment for the node.
-    + **Font Color** - Type a value or use the **Color Picker** to select a color.
-    + **Font Family** - Type a font family name, such as Arial.
-    + **Pixel Size** - Specify the font size.
-    + **Weight** - Specify the font weight, such as bold.
-    + **Style** - Specify the font style, such as italics.
-    + **Vertical Alignment** - Specify the vertical alignment of the comment, such as bottom.
-    + **Horizontal Alignment** - Specify the horizontal alignment of the comment, such as center.
-    + **For Block Comment Frame** - Type a value or use the **Color Picker** to select a color.
+    + **Background Color** - Type an RGB value or use the **Color Picker** to select a background color for the node.
+    + **Font Color** - Type an RGB value or use the **Color Picker** to select a color for the text in the node.
+    + **Font Family** - Type a font family name that is installed on your system, such as Arial. To use the default font family, type `default`.
+    + **Pixel Size** - Specify the font size. The default is `16`.
+    + **Weight** - Choose a font weight, such as bold. The default is `Normal`.
+    + **Style** - Choose a font style, such as italics. The default is `Normal`.
+    + **Vertical Alignment** - Specify the vertical alignment of the text in the Comment, such as bottom. The default is `Top`.
+    + **Horizontal Alignment** - Specify the horizontal alignment of the text in the Comment, such as center. The default is `Left`.

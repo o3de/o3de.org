@@ -1,0 +1,25 @@
+<!--    The video shortcode enables the embedding of videos hosted in the repo into markdown.
+
+        The shortcode supports MP4 by default, but can support OGG or WEBM by providing a "type" argument.
+        MP4 is preferred as OGG and WEBM are not as broadly supported by browsers.
+
+        src="/images/video.mp4" - Video file path (required).
+        info="Video description." - A string describing the video (required).
+        poster="/images/image.png" - A static image that displays while the video loads or if the video fails to load (optional). 
+        autoplay="true" - The video plays as soon as it loads (optional).
+        loop="true" - Video plays in a loop (optional).
+        width="200" - Scale the video by specifying a width in pixels (optional).
+        muted="true" - Video is muted if an audio track exists (optional).
+        type="video/mp4" - Video type. MP4 is default (optional).
+-->
+
+<video class="video-shortcode"  {{ if .Get "autoplay" }}{{ "autoplay" }}{{ end }}
+                                {{ if .Get "loop" }}{{ "loop" }}{{ end }}
+                                {{ if .Get "width" }}width="{{ .Get "width" }}"{{ end }}
+                                {{ if .Get "muted"}}{{ "muted" }}{{ end }}
+                                {{ if .Get "type"}}type="{{ .Get "type" }}"{{ else }}type="video/mp4"{{ end }}
+                                {{ if .Get "poster"}}poster="{{ .Get "poster" }}"{{ end }}
+                                preload="auto" controls>
+    <source src="{{ .Get "src" }}">
+    {{ .Get "info" }}
+</video>

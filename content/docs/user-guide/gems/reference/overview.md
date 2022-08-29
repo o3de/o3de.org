@@ -63,7 +63,6 @@ toc: true
 
 | Gem | Description |
 | - | - |
-| [Asset Memory Analyzer](./debug/asset-memory-analyzer) | The Asset Memory Analyzer Gem provides tools to profile asset memory usage in Open 3D Engine through ImGUI (Immediate Mode Graphical User Interface). |
 | [Crash Reporting](./debug/crash-reporting) | The Crash Reporting Gem provides support for external crash reporting for Open 3D Engine projects. |
 | [Debug Draw](./debug/debug-draw) | The Debug Draw Gem provides Editor and runtime debug visualization features for Open 3D Engine. |
 | [Immediate Mode GUI (IMGUI)](./debug/imgui) | The Immediate Mode GUI Gem provides the 3rdParty library IMGUI which can be used to create run time immediate mode overlays for debugging and profiling information in Open 3D Engine. |

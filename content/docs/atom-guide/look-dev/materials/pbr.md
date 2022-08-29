@@ -41,7 +41,7 @@ More types are available or may be added beyond those listed above, especially f
 
 The PBR shading model is composed of properties that describe how a material interacts in the physical world. At the basic level, the PBR shading model requires the following properties: *base color*, *metallic*, *roughness*, and *specular reflectivity*. These properties are enough to define materials such as wood, metal, concrete, and other raw materials. However, materials can become much more complex with properties such as *clear coat*, *subsurface scattering*, and more. For example, varnished wood is made from a basic wood material type with an additional clear coat layer on top.  
 
-The following list of properties are used to define PBR materials in Atom. An overview of which properties are included in which material type is shown in the [Properties in PBR Material Types](#properties-in-pbr-material-types) table. 
+The following list of properties are used to define PBR materials in Atom. An overview of which properties are included in which material type is shown in the [Properties in PBR Material Types](#properties-in-material-types) table. 
 
 | Property | Definition |
 | - | - |

@@ -14,7 +14,7 @@ Inline notifications are non-disruptive messages that are confined to a specific
 
 Review these specifications when creating an inline notification:
 
-* Persistantly display inline notifications until the user dismisses them or until the issue is resolved.
+* Persistently display inline notifications until the user dismisses them or until the issue is resolved.
 
 * Write clear and concise messages. One line is recommended.
 
@@ -78,7 +78,7 @@ Inline notifications in component cards are displayed to indicate an error/failu
 
 ### Specifications
 
-* Persistantly display inline notifications in the component cards until the issue is resolved.
+* Persistently display inline notifications in the component cards until the issue is resolved.
 
 * Avoid stacking multiple inline messages horizontally or vertically. Instead, display the messages one after the other as the user resolves each issue.
 

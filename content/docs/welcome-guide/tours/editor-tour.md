@@ -1,6 +1,6 @@
 ---
 linkTitle: Editor Tour
-title: Introduction to the O3DE Editor
+title: Introduction to O3DE Editor
 description: An overview of O3DE Editor, Open 3D Engine's primary creation tool, and a quick introduction to navigation.
 weight: 300
 toc: true
@@ -14,9 +14,9 @@ You can learn the basics of navigating and customizing O3DE Editor from the quic
 
 ## Launch O3DE Editor
 
-O3DE Editor can be launched by running `Editor.exe` from your O3DE installation's `/bin/<platform>/<config>/Default` directory. You will be greeted by **Project Manager** which will allow you to choose or create a project. When you choose a project, O3DE Editor launches, and you're given the option to create a new level or load an existing level. Levels aren't just environments. Levels are complex assets with many files that represent a section of your project. In general, levels are stored in named subdirectories of the project's `Levels` directory.
+O3DE Editor can be launched by opening the shortcut placed on your desktop during installation, or by launching the `Editor.exe` application from your O3DE build or installation directory (example: `o3de/<version>/bin/Windows/profile/Default`). You're greeted by **Project Manager** which allows you to choose or create a project. When you choose a project, O3DE Editor launches, and you're given the option to create a new level or load an existing level. Levels aren't just environments. Levels are complex assets with many files that represent a section of your project. In general, levels are stored in named subdirectories of the project's `Levels` directory.
 
-## The O3DE Editor default layout
+## O3DE Editor default layout
 
 The default layout of O3DE Editor contains the most commonly used tools in a configuration, similar to other content creation applications. The core workflow of O3DE is to create and place entities in a level, so the default layout contains a menu bar, toolbars, panes, and tool tabs focused on entity creation and placement.
 
@@ -32,7 +32,7 @@ You can customize the layout through drag and drop, and save to a custom layout 
 
    * **Edit** - Edit menu items include actions for working with selections such as duplicate, delete, hide and show selection, and working with selection transforms.
 
-   * **Game** - Game menu items include actions for running the project, enabling in editor simulation, enabling and refreshing audio, and debugging.
+   * **Game** - Game menu items include actions for running the project, enabling in-editor simulation, enabling and refreshing audio, and debugging.
 
    * **Tools** - Tools menu items provide access to all of O3DE's tools and editors.
 
@@ -42,7 +42,7 @@ You can customize the layout through drag and drop, and save to a custom layout 
 
    * **Help** - Help menu items provide links to O3DE community and documentation resources.
 
-   The Tool Bar provides easy access to various editor tools and features. On the left are buttons to open various O3DE tools and editors, on the right are controls to run your project or activate simulation in editor. The Tool Bar is docked at the top of the editor by default, but you can also dock it vertically on the edges of the editor. To customize the toolbar, right-click anywhere on the toolbar and select **Customize** from the context menu. You can choose which toolbars to include, and add commands to the toolbar.
+   The Tool Bar provides easy access to various editor tools and features. On the left are buttons to open various O3DE tools and editors, on the right are controls to run your project or activate in-editor simulation. The Tool Bar is docked at the top of the editor by default, but you can also dock it vertically on the edges of the editor. To customize the toolbar, right-click anywhere on the toolbar and select **Customize** from the context menu. You can choose which toolbars to include, and add commands to the toolbar.
 
 * **B:** On the left side of O3DE Editor, **Entity Outliner** displays a list of entities and prefabs in the current level. Right-click in Entity Outliner to open the context menu to create entities and instantiate prefabs. When an entity or prefab is selected in Entity Outliner, the context menu also has options to duplicate or delete entities, find selected entities and prefabs, organize the list, and open the properties for the selected entity or prefab.
 
@@ -56,7 +56,7 @@ You can customize the layout through drag and drop, and save to a custom layout 
 
    Right-click in the title bar of Perspective to open the perspective menu. From the perspective menu, you can toggle visibility for various helpers such as the construction plane, icons, bounds, and guides. You can also select an aspect ratio, view through various cameras placed in the level, create new cameras from the current view, and split Perspective into multiple views.
 
-   On the right side of the Perspective title bar, are several icons to select cameras, set camera movement speed, set information display, enable view icons, set aspect ratio, and set grid snapping options.
+   On the right side of the Perspective title bar are several icons to select cameras, set camera movement speed, set information display, enable view icons, set aspect ratio, and set grid snapping options.
 
    Right-click in the viewport of Perspective to open the context menu to create entities and prefabs. Much of the context menu functionality in Perspective is shared with the context menu functionality of Entity Outliner.
 
@@ -87,17 +87,18 @@ O3DE has familiar viewport interaction models based on first-person PC games and
 *  **Q** - Move down.
 *  **E** - Move up.
 *  **Z** - Focus on selected.
-*  **Right mouse + drag** - Rotate view, known as *mouselook* in most games.
-*  **Mouse wheel scroll** - Zoom view.
-*  **Middle mouse + drag** - Pan view.
-*  **Left mouse** - Select entity.
-*  **Left mouse + drag** - Area select entities.
+*  **RMB+Drag** - Rotate view, known as *mouselook* in most games.
+*  **MouseWheel Up/Down** - Zoom view.
+*  **MMB+Drag** - Pan view.
+*  **LMB** - Select entity.
+*  **LMB+Drag** - Area select entities.
 
 The camera controls above are game-centric. If you prefer to use camera controls closer to those you would find in a DCC application such as Maya, use these hotkeys.
 
-* **ALT + left mouse + drag** - Orbit view.
-* **ALT + right mouse + drag** - Dolly view.
-* **ALT + right mouse + drag** - Track view.
+* **Alt+LMB+Drag** - Orbit view.
+* **Alt+RMB+Drag** - Dolly view.
+* **Alt+MMB+Drag** - Track view.
+
 
 ## Movement preferences
 
@@ -115,4 +116,7 @@ Enter a floating point value in the **Speed** property to set movement speed. Yo
 
 ## Save Perspective locations<a name="save-perspective-locations"></a>
 
-As you build a level, you might find that it's helpful to have preset **Perspective** views saved for later use. You can save the current editor camera view, assigning it to a **[Function]** key. To save a **Perspective** location, press **[Control + Function(1-12)]** To set the **Perspective** view to a saved location, press **[Shift + Function(1-12)]**.
+As you build a level, you might find that it's helpful to have preset **Perspective** views saved for later use. You can save the current editor camera view, assigning it to a **[Function]** key:
+
+* To save a Perspective *location*, press **[Control + Function(1-12)]**.
+* To set the Perspective *view* to a saved location, press **[Shift + Function(1-12)]**.

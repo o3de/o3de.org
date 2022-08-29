@@ -6,7 +6,7 @@ weight: 600
 toc: true
 ---
 
-In O3DE, *toasts* are non-disruptive notifications that are displayed ovre most elements in a page on the bottom-right corner of the window. They are non-distruptive because they can be displayed in the middle of a user's workflow without hindering the user's actions.
+In O3DE, *toasts* are non-disruptive notifications that are displayed over most elements in a page on the bottom-right corner of the window. They are non-distruptive because they can be displayed in the middle of a user's workflow without hindering the user's actions.
 
 The following example demonstrates a toast that appears at the bottom-right corner of the **O3DE Animation Editor** window.
 
@@ -69,7 +69,7 @@ Review these specifications when creating a toast:
 
 Toasts that contain links in the subtitle text must do the following:
 
-* Persistantly display and don't automatically disappear, unlike a standard toast.
+* Persistently display and don't automatically disappear, unlike a standard toast.
 
 * Display a manual close button.
 

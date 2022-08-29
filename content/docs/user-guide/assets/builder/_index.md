@@ -12,13 +12,13 @@ To use Python Asset Builder, you must enable the [Python Asset Builder Gem](/doc
 
 ## Python Asset Builder implementation
 
-Python Asset Builders follow the same design pattern and function of [Asset Builders](../asset-builders). A Python Asset Builder takes a source asset and produces runtime optimized product assets that are stored in the **Asset Cache**. Python Asset Builders have three parts:
+Python Asset Builders follow the same design pattern and function of [Asset Builders](../pipeline/asset-builders). A Python Asset Builder takes a source asset and produces runtime optimized product assets that are stored in the **Asset Cache**. Python Asset Builders have three parts:
 
 * **Descriptor** is a class that provides **Asset Processor** with the builder's ID and file patterns for asset types it can process.
-* **Create Jobs** provides a `CreateJobsRequest` handler that produces a `CreateJobsResponse`. The response contains information that Asset Processor uses to queue job processes for the Python Asset Builder. 
+* **Create Jobs** provides a `CreateJobsRequest` handler that produces a `CreateJobsResponse`. The response contains information that Asset Processor uses to queue job processes for the Python Asset Builder.
 * **Process Job** provides a `ProcessJobRequest` handler that produces a `ProcessJobResponse` and generates product assets. The response contains information that Asset Processor needs to place the product assets in the Asset Cache and information used to track the product assets and their product dependencies.
 
-## Writing a Python Asset Builder 
+## Writing a Python Asset Builder
 
 There are four steps to create a Python Asset Builder:
 

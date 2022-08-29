@@ -7,7 +7,9 @@ weight: 100
 
 ## Interaction Modes 
 
-The **UI Editor** toolbar features interaction modes. The selected interaction mode determines how you can interact with the UI elements in your canvas.Interaction modes
+The **UI Editor** toolbar features interaction modes. The selected interaction mode determines how you can interact with the UI elements in your canvas.
+
+**Interaction modes**
 
 **Select**
 Select elements in your canvas. In this mode, selecting is the only action that you can use on your UI elements.
@@ -17,7 +19,7 @@ Select and move UI elements. Moving a UI element modifies its offset. In the **M
 You can move UI elements in the following ways:
 + Select an element and drag it to a new position.
 + Select a particular axis (X, Y, or Z) on the axis gizmo and drag the element by only one axis at a time.
-+ Nudge your selected elemented using keyboard arrows.
++ Nudge your selected element using keyboard arrows.
 + Select multiple elements and align them using the [Alignment Tool](#alignment-tool).
 
 **Rotate**
@@ -39,7 +41,7 @@ The alignment tool is a set of buttons on the **UI Editor**'s toolbar.
 The alignment tools are enabled when your interaction mode is **Move** or **Anchor** and you have selected two or more movable elements.
 
 {{< note >}}
-One type of element that you can't moved is one that a parent layout element controls.
+One type of element that you can't move is one that a parent layout element controls.
 {{< /note >}}
 
 With these tools, you can align elements by lining up their:

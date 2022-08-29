@@ -6,7 +6,6 @@ toc: true
 
 This section dives into the RHI samples demonstrated in the Atom Sample Viewer. 
 
-{{< placeholder >}}
 {{< todo issue="https://github.com/o3de/o3de.org/issues/687" >}}
 {{< /todo >}}
 

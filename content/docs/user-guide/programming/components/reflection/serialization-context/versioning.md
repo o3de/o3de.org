@@ -31,8 +31,8 @@ Version converters operate directly on the serialized data.
 To facilitate the creation of version converters, **Open 3D Engine (O3DE)** provides helper functions and examples such as the following:
 
 * To locate a specific element to manipulate, you can use the `AZ::Utils::FindDescendantElements` helper function.
-* To access serialized data and manipulate it, you can use the public functions in the `DataElementNode` class (`\dev\Code\Framework\AzCore\AzCore\Serialization\SerializeContext.h`).
-* For version converter examples, see the AZ core serialization unit test in the `dev\Code\Framework\AzCore\Tests\Serialization.cpp` file.
+* To access serialized data and manipulate it, you can use the public functions in the `DataElementNode` class (`Code/Framework/AzCore/AzCore/Serialization/SerializeContext.h`).
+* For version converter examples, see the AZ core serialization unit test in the `Code/Framework/AzCore/Tests/Serialization.cpp` file.
 
 A version conversion operation that replaces a container might follow this common pattern:
 

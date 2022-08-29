@@ -9,13 +9,13 @@ toc: true
 The **AWS GameLift** Gem provides the following features:
 
 **Amazon GameLift integration**
-- A framework to extend the O3DE networking layer and to let the **Multiplayer** Gem work with Amazon's dedicated server solution, [Amazon GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-intro.html). The AWS GameLift Gem provides integrations with both the [GameLift Server SDK](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-supported.html#gamelift-supported-servers) and the AWS SDK client (to call the GameLift service itself). 
+- A framework to extend the O3DE networking layer and to let the **Multiplayer** Gem work with Amazon's dedicated server solution, [Amazon GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-intro.html). The AWS GameLift Gem provides integrations with both the [GameLift Server SDK](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-supported.html#gamelift-supported-servers) and the AWS SDK client (to call the GameLift service itself).
 
 **Build and package management**
 - Instructions to package and optionally upload the dedicated server build.
-- A sample [AWS Cloud Development Kit (AWS CDK)](https://docs.aws.amazon.com/cdk/latest/guide/home.html) application. You can deploy the AWS CDK application to set up basic GameLift resources, or modify the application to meet your needs by adding or updating the deployed resources. 
+- A sample [AWS Cloud Development Kit (AWS CDK)](https://docs.aws.amazon.com/cdk/latest/guide/home.html) application. You can deploy the AWS CDK application to set up basic GameLift resources, or modify the application to meet your needs by adding or updating the deployed resources.
 
-## Release highlights 
+## Release highlights
 
 - Support for CreateSession (on fleet/on queue), SearchSessions, JoinSession, and LeaveSession through GameLift.
 - Support for FlexMatch including backfill through GameLift.
@@ -25,10 +25,10 @@ The **AWS GameLift** Gem provides the following features:
 
 ## Related information
 
-For a better understanding of the AWS GameLift Gem topics in this guide, we recommend reviewing the following: 
+For a better understanding of the AWS GameLift Gem topics in this guide, we recommend reviewing the following:
 - [What Is Amazon GameLift? (Amazon GameLift Developer Guide)](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-intro.html)
 - [FlexMatch](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-intro.html)
-- [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/multiplayer/)
+- [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/)
 - [Networking](/docs/user-guide/networking/)
 
 
@@ -46,4 +46,3 @@ For a better understanding of the AWS GameLift Gem topics in this guide, we reco
 | [AWS GameLift Gem Build Packaging for Linux](build-packaging-for-linux/) | Learn how to package your Linux dedicated server builds so that you can install and run them on GameLift. |
 | [AWS GameLift Gem Resource Management](resource-management/) | Learn about the sample AWS CDK application that you can use to model and deploy GameLift resources. |
 | AWS GameLift Gem Multiplayer Sample | Coming soon! |
-

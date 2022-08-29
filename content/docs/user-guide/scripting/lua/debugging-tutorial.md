@@ -58,13 +58,11 @@ This tutorial shows you how to use O3DE Lua Editor to perform debugging operatio
 
 1. In **Entity Inspector**, choose **Add Component**, and then choose **Scripting**, **Lua Script**.
 
-1. In **Entity Inspector**, locate the **Lua Script** component, and then choose the **Pick Lua Script** button next to the empty **Script** field.
+1. In **Entity Inspector**, locate the **Lua Script** component, and then click {{< icon "browse-edit-select-files.svg" >}} to open a file browser.
 
-    ![Open the Pick Lua Script window from the Lua Script component](/images/user-guide/scripting/lua/lua-component-pick-lua-script.png)
-    
 1. In the **Pick Lua Script** window, select `ConstantRotation.lua` and choose **OK**.
 
-1. In the **Lua Script** component, choose the **Open in Lua Editor** button to launch Lua Editor.
+1. In the **Lua Script** component, click {{< icon "open-in-internal-app.svg" >}} to launch Lua Editor.
 
     ![Launch Lua Editor from Lua Script component in O3DE Editor](/images/user-guide/scripting/lua/lua-component-open-in-lua-editor.png)
     
