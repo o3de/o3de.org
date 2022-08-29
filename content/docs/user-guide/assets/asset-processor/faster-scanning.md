@@ -6,7 +6,7 @@ weight: 400
 toc: true
 ---
 
-**Faster Scanning Mode** speeds up **Asset Processor’s** startup scan by using timestamps to track source asset changes before checking file hashes. This saves time when launching Asset Processor in all circumstances. You can switch scanning modes at any time without restarting Asset Processor, including during an asset scan. Asset Processor saves your preference between sessions.
+**Faster Scanning Mode** speeds up **Asset Processor's** startup scan by using timestamps to track source asset changes before checking file hashes. This saves time when launching Asset Processor in all circumstances. You can switch scanning modes at any time without restarting Asset Processor, including during an asset scan. Asset Processor saves your preference between sessions.
 
 When Faster Scanning is enabled:
 1. The Asset Processor compares the timestamp of the source asset's last modification time against the last time it processed that file. If the timestamps are identical, it skips processing that source asset.
@@ -82,8 +82,8 @@ You can perform a **Full Scan**, even when Faster Scanning Mode is active. A Ful
 
 A source asset found during the scan can be excluded from reanalysis if it meets all of the criteria below:
 
-* The source asset hasn’t changed on disk (its timestamp matches the timestamp in the Asset Database).
-* The source assets's dependencies haven’t changed on disk (the source dependency timestamps match the timestamps in the Asset Database).
+* The source asset hasn't changed on disk (its timestamp matches the timestamp in the Asset Database).
+* The source assets's dependencies haven't changed on disk (the source dependency timestamps match the timestamps in the Asset Database).
 * The most recent process jobs for the source asset succeeded without errors or warnings.
 * The version and fingerprint of the Asset Builders that processed the source asset have not changed.
 * There are no new Asset Builders that may process the source file.
@@ -98,7 +98,7 @@ A full scan checks the Asset Cache for product assets and rebuilds the appropria
 1. Choose Start Scan.
 
 {{< note >}}
-If you are having issues with the Asset Cache, performing a full scan might resolve the issues. If a full scan does not repair the Asset Cache, you can rebuild the entire Asset Cache by deleting the `Cache` directory in your project. If you’re an engineer making BuilderSDK-based Asset Builders, deleting the cache is not recommended.
+If you are having issues with the Asset Cache, performing a full scan might resolve the issues. If a full scan does not repair the Asset Cache, you can rebuild the entire Asset Cache by deleting the `Cache` directory in your project. If you're an engineer making BuilderSDK-based Asset Builders, deleting the cache is not recommended.
 {{< /note >}}
 
 Deleting the Asset Cache to work around or solve a problem should be treated as a last resort solution. The issue might not be resolved after the cache is rebuilt. Even if it is, you might lose more time deleting and rebuilding the cache than it requires to fix the root problem. Instead, it is recommended that you document the issue and share that information with your team.  Wait until a pipeline engineer can investigate the problem before deleting the cache.

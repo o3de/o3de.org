@@ -28,4 +28,3 @@ For a quick introduction to the O3DE network layer and Multiplayer Gem, watch th
 | [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/) | The O3DE Multiplayer Gem offers code extensions and components to synchronize O3DE components and entities across a network, giving you tools to make a multiplayer game. |
 | [Multiplayer Compression Gem](/docs/user-guide/gems/reference/multiplayer/multiplayer-compression) | An example Gem showing how to implement network compression. |
 | [Your First Network Component](/docs/learning-guide/tutorials/multiplayer/first-multiplayer-component/) | Tutorial for creating a network-enabled component. |
-

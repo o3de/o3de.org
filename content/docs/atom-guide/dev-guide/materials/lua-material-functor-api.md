@@ -106,7 +106,7 @@ Each **GetMaterialPropertyValue\_** function takes a `string` property name and 
 
 ### HasMaterialProperty(`string`)
 
-Returns a boolean whether a property with the given name exists. Note the material property does not have to be listed in [GetMaterialPropertyDependencies](#main-functions) because this functions is just checking availability, not *reading values*.
+Returns a boolean whether a property with the given name exists. Note the material property does not have to be listed in [GetMaterialPropertyDependencies](#main-functions) because this function is checking availability only, not *reading values*.
 
 ### SetShaderConstant\_
 

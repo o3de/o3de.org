@@ -141,7 +141,7 @@ If you believe the issue is within the builder itself, and is not a content prob
 
 If the builder is an O3DE builder, and not one that your team has created, you can create a ticket [here](https://github.com/o3de/o3de/issues) to get this looked at.
 
-## Logic change in an asset builder with no version change {#NoVersionChange}
+## Logic Change in Builder with no Version Change {#NoVersionChange}
 
 ### Situation
 
@@ -160,8 +160,6 @@ If other content or logic requires the changes from processing the asset, other 
 Change the version number of the builder reported in that builder's `AssetBuilderSDK::AssetBuilderDesc`. After you do this and rebuild the Asset Processor, all assets using this builder will be reprocessed.
 
 ### Long term solutions
-
-Create automated jobs that process all assets cleanly at some interval, to catch issues like this.
 
 One configuration that would catch issues would be:
 
@@ -324,13 +322,13 @@ For more information, refer to [Scene API: User Defined Properties](/docs/user-g
 
 #### Wrong scene manifest rules used
 
-A technical content creator (such as a Technical Artist) who is authoring or debugging a script might find some unexpected results for some source scene assets. Python scripts can add output commands in the asset’s log files using `print()`, but this may not be enough to determine what the script is affecting. The debug output flag is another good way to determine what is happening in the affected scripted pipeline.
+A technical content creator (such as a Technical Artist) who is authoring or debugging a script might find some unexpected results for some source scene assets. Python scripts can add output commands in the asset's log files using `print()`, but this may not be enough to determine what the script is affecting. The debug output flag is another good way to determine what is happening in the affected scripted pipeline.
 
 ### Solutions
 
 #### Enable the debug output feature
 
-The “debug output” flag is a feature flag that can be used to see what the scene pipeline produced for the scene graph and scene manifest. The scene graph is considered immutable after the source scene is imported from the AssImp library. The scene manifest can be updated during the scene pipeline events.
+The "debug output" flag is a feature flag that can be used to see what the scene pipeline produced for the scene graph and scene manifest. The scene graph is considered immutable after the source scene is imported from the AssImp library. The scene manifest can be updated during the scene pipeline events.
 
 {{< note >}}
 When enabled, AssetBuilders that support debug output will provide debug information as product assets. This is used primarily with scene files.
@@ -500,6 +498,7 @@ You can spawn multiple instances of `AssetBuilder.exe` and attach them to Visual
 {{< /tip >}}
 
 ## Clearing the cache
+
 
 If you're a game artist and you're having issues running Asset Processor, the issues might be due to a corrupt cache. You might solve the issues by deleting your project's `Cache` directory. Restart Asset Processor to reprocess the source assets and rebuild the Asset Cache.
 

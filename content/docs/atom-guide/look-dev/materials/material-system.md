@@ -2,7 +2,6 @@
 linktitle: System Overview
 title: "Material System Overview"
 description: "Materials contain data that control how model surfaces appear in a 3D environment."
-toc: false
 weight: 100
 ---
 
@@ -76,4 +75,5 @@ Other source files can produce Material Assets as well. For example, *.fbx* file
 Material Assets can create any number of material instances at runtime for the renderer to use. Using a Material component, you can change the property values of a material instance without impacting other instances of the same material. Unlike a Material Asset, a material instance only exists in memory and not on disk. 
 
 <!-- SVG file edited using https://app.diagrams.net/ -->
+
 ![Material Assets Diagram](/images/atom-guide/materials/material-asset-diagram.svg)
