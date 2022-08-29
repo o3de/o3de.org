@@ -17,8 +17,8 @@ For a quick introduction to the O3DE network layer and Multiplayer Gem, watch th
 | [Packet structure](./packets)            | Information on the packet structure used for TCP and UDP packets by `Az::Networking`, and how to manage fragmented UDP packets. |
 | [Auto-packets](./autopackets)            | Information on how packets sent and received via `Az::Networking` can be generated via XML.                                     |
 | [UDP Encryption with DTLS](./encryption) | How to use the Open 3D Engine support for secure UDP connections over *Datagram Transport Layer Security (DTLS)*.               |
+| [Serialization](./serializers) | Information on serialization and the available serializer types. |
 | [Network Settings](./settings)           | Settings to control the behavior of Networking. Multiplayer, Clients and Servers.                                               |
-
 
 ## Related topics
 
