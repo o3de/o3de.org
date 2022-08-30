@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">2205.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -59,10 +59,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a80161d9ad2d533e00bc105b3cf3ee704"><td class="memItemLeft" align="right" valign="top"><a id="a80161d9ad2d533e00bc105b3cf3ee704"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_name_dictionary.html">NameDictionary</a>, <a class="el" href="class_a_z_1_1_o_s_allocator.html">AZ::OSAllocator</a>, 0)</td></tr>
+<tr class="separator:a80161d9ad2d533e00bc105b3cf3ee704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5552f4bc1a7a823122ec6a8abba1aef9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_name.html">Name</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_name_dictionary.html#a5552f4bc1a7a823122ec6a8abba1aef9">MakeName</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name)</td></tr>
 <tr class="separator:a5552f4bc1a7a823122ec6a8abba1aef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6094d8a36e434a9112756990042cd689"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_name.html">Name</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_name_dictionary.html#a6094d8a36e434a9112756990042cd689">FindName</a> (Name::Hash hash) const</td></tr>
 <tr class="separator:a6094d8a36e434a9112756990042cd689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ace7ae3ec5ac8a314953231bd334c86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_name_dictionary.html#a3ace7ae3ec5ac8a314953231bd334c86">LoadDeferredNames</a> (<a class="el" href="class_a_z_1_1_name.html">Name</a> *deferredHead)</td></tr>
+<tr class="separator:a3ace7ae3ec5ac8a314953231bd334c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -72,9 +77,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> ()<
 <tr class="memitem:ab8a2a9ff5a2ce1c8c58bc0885cd39cc3"><td class="memItemLeft" align="right" valign="top"><a id="ab8a2a9ff5a2ce1c8c58bc0885cd39cc3"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Destroy</b> ()</td></tr>
 <tr class="separator:ab8a2a9ff5a2ce1c8c58bc0885cd39cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc85af152f0a6d24155d2de3b6207483"><td class="memItemLeft" align="right" valign="top"><a id="abc85af152f0a6d24155d2de3b6207483"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReady</b> ()</td></tr>
-<tr class="separator:abc85af152f0a6d24155d2de3b6207483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ecc1c5f81352938e5c649a0d09cfdc"><td class="memItemLeft" align="right" valign="top"><a id="a17ecc1c5f81352938e5c649a0d09cfdc"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReady</b> (bool tryCreate=true)</td></tr>
+<tr class="separator:a17ecc1c5f81352938e5c649a0d09cfdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65baac451c05963bbb2920ca0b870e81"><td class="memItemLeft" align="right" valign="top"><a id="a65baac451c05963bbb2920ca0b870e81"></a>
 static <a class="el" href="class_a_z_1_1_name_dictionary.html">NameDictionary</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> ()</td></tr>
 <tr class="separator:a65baac451c05963bbb2920ca0b870e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,6 +124,25 @@ template&lt;typename T &gt; </td></tr>
 
 </div>
 </div>
+<a id="a3ace7ae3ec5ac8a314953231bd334c86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ace7ae3ec5ac8a314953231bd334c86">&#9670;&nbsp;</a></span>LoadDeferredNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::NameDictionary::LoadDeferredNames </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_name.html">Name</a> *&#160;</td>
+          <td class="paramname"><em>deferredHead</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Loads a list of names, starting at a given list head, and ensures they're all created and linked into our list of deferred load names. </p>
+
+</div>
+</div>
 <a id="a5552f4bc1a7a823122ec6a8abba1aef9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5552f4bc1a7a823122ec6a8abba1aef9">&#9670;&nbsp;</a></span>MakeName()</h2>
 
@@ -151,7 +175,7 @@ template&lt;typename T &gt; </td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:44 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 5 2022 15:17:17 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

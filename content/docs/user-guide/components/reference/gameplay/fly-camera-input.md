@@ -8,7 +8,7 @@ Use the **Fly Camera Input** component to quickly add a controllable camera to y
 
 ## Provider
 
-[Atom Bridge Gem](https://o3de.org/docs/user-guide/gems/reference/rendering/atom/atom-ly-integration/)
+[Atom Bridge Gem](/docs/user-guide/gems/reference/rendering/atom/atom-o3de-integration/)
 
 ## Dependencies ##
 
@@ -34,4 +34,4 @@ Use the **Fly Camera Input** component to quickly add a controllable camera to y
 | `GetIsEnabled` | Returns `True`, if the fly camera is active. | None | Boolean | Yes |
 | `SetIsEnabled` | If `True`, sets the fly camera as active.  If `False`, deactivates the fly camera. | Boolean | None | Yes |
 
-For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
+For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).

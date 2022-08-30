@@ -106,7 +106,7 @@ To automatically assign meshes in the source asset to a PhysX mesh group, add th
 
 1. At the bottom right of Scene Settings, choose **Update**. This creates or updates the `.assetinfo` sidecar file and triggers Asset Processor to reprocess the asset.
 
-1. Left-click the source asset in Asset Browser and drag it into the viewport.
+1. Drag the `.azmodel` product asset from Asset Browser into the viewport.
 
     {{< image-width "/images/learning-guide/tutorials/assets/physx-entity.png" "800" "Drag the mesh asset into the viewport.">}}
 
@@ -148,15 +148,15 @@ Enabling Decompose Meshes reveals many options that you can use to fine-tune mes
 
 ### Primitive decomposition
 
-When you enable Decompose meshes for primitive colliders, the input mesh is decomposed into convex parts. The best fitting primitive shapes are automatically selected and transformed to encompass each part and the primitives are processed as a collider `.pxmesh` product asset. In the following image, the input mesh (left) is decomposed into six parts, and a primitive collider is automatically fitted to each part (right). Most parts are fitted with box primitive colliders, but one part, near the bottom of the asset, has a capsule primitive collider.
+When you enable Decompose meshes for primitive colliders, the input mesh is decomposed into convex parts. The best fitting primitive shapes are automatically selected and transformed to encompass each part and the primitives are processed as a collider `.pxmesh` product asset. In the following image, the input mesh (left) is decomposed into four parts, and a primitive collider is automatically fitted to each part (right). The parts are fitted with box primitive colliders.
 
 {{< image-width "/images/learning-guide/tutorials/assets/primitive-decompose.png" "700" "An example of mesh decomposition with primitive collider assets." >}}
 
 ### Convex decomposition
 
-When you enable Decompose meshes for convex colliders, the input mesh is decomposed into convex parts. A convex hull is generated for each part and the convex hulls are processed as a collider `.pxmesh` product asset. In the following image, the input mesh (left) is decomposed in to 6 parts and convex hulls are generated for each part (right). The convex colliders provide a fairly accurate representation of the render mesh which may be sufficient in many scenarios.
+When you enable Decompose meshes for convex colliders, the input mesh is decomposed into convex parts. A convex hull is generated for each part and the convex hulls are processed as a collider `.pxmesh` product asset. In the following image, the input mesh (left) is decomposed in to four parts and convex hulls are generated for each part (right). The convex colliders provide a fairly accurate representation of the render mesh which may be sufficient in many scenarios.
 
 
 {{< image-width "/images/learning-guide/tutorials/assets/convex-decompose.png" "700" "An example of mesh decomposition with convex collider assets." >}}
 
-In both of the previous images, the generated collider asset provides a more accurate representation of the render mesh than a single primitive or convex collider can. For example, notice that in both results, the collider surface doesn't block the hole in the middle of the logo, unlike in the earlier image of the convex collider asset type.
+In general, collider assets generated with decomposed meshes provide a more accurate representation of the render mesh than a single primitive or convex collider can. For example, notice that in both of the preceding results, the collider surface doesn't block the hole in the middle of the logo, unlike in the first example image of the convex collider asset type.

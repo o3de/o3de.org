@@ -20,7 +20,9 @@ toc: true
 
 With Asset Processor, a **Launcher** can be run on a target platform without deploying assets to that platform. Instead, the assets are accessed from the Asset Cache on a connected host platform. Asset Processor communicates through a USB connection with mobile target platforms using proxy requests.
 
-On a host platform, connections between Asset Processor and O3DE Editor are automatically maintained. Asset Processor automatically restarts if you retrieve a new version or modify any of the data files that it needs to operate.
+On a host platform, connections between Asset Processor and O3DE Editor are automatically maintained.
+
+When you launch software that requires an Asset Processor connection, such as the O3DE Editor or Launcher in a non-release configuration, Asset Processor is automatically launched. If Asset Processor has been launched this way, it automatically shuts down when you close the Editor or Launcher.
 
 {{< note >}}
 Symbolic links are not supported when using Asset Processor. To ensure that Asset Processor works properly, follow these guidelines:
@@ -41,3 +43,4 @@ Symbolic links are not supported when using Asset Processor. To ensure that Asse
 | [Faster Scanning](faster-scanning) | Learn how Asset processor determines when assets should be processed and how to set Asset Processor's scanning mode. |
 | [Debugging](debugging) | Learn several methods you can use to debug Asset Processor issues. |
 | [Move Assets](move-assets) | Learn how to move assets to new directory locations in O3DE while maintaining internal references. |
+| [Settings](settings) | Learn how to use advance settings to control Asset Processor and Asset Processor Batch. |

@@ -1,126 +1,133 @@
 ---
-linkTitle: Text Replacement
+linkTitle: Node Text Replacement
 title: Script Canvas Node Text Replacement
 description: Learn how to customize the text on Script Canvas nodes in Open 3D Engine (O3DE).
 weight: 500
 ---
 
-# Script Canvas - Text Replacement User Documentation
+**Script Canvas** has a text replacement system that allows all available nodes to be further customized. Method names, categories, argument names, and tooltips can all be updated to improve their wording in a Script Canvas graph.
 
-Script Canvas' text replacement system allows all available nodes to be further customized. Method names, categories, argument names, and tooltips can all be updated to improve their look once in a Script Canvas graph.
+## How it works
+
+When Script Canvas nodes are created, the developer can provide identifying and clarifying details such as the node's name, their category in the **Node Palette**, the names of their arguments and return values, and their tooltips. However, all of these details can be overridden using text replacement files.
+
+Text replacement files use a JSON format and a file extension of `.names`. You can find all the text replacement files that were generated for the nodes and included with O3DE in the directory `[Gems/ScriptCanvas/Assets/TranslationAssets](https://github.com/o3de/o3de/tree/development/Gems/ScriptCanvas/Assets/TranslationAssets)`.
+
+You can generate or update `.names` files for new or existing nodes using **Script Canvas Editor**, as shown in the following sections.
+
+**Asset Processor** processes all the `.names` files for Script Canvas Editor to use in the Node Palette and when drawing the nodes in a graph.
 
 ## Rules for updating text
 
-The .names files have certain fields that should not be modified, they are used by the system to create a key into a database of text fields. 
+To customize a node in a `.names` file, you can update any of the following fields contained within any `details` field:
+
+| Field | Description |
+| --- | --- |
+| `name` | The name of the node, argument, or return type. |
+| `category` | The category in the Node Palette to place the node in. Supports nested categories by using the "/" character. Example: "Gameplay/Missions". |
+| `tooltip` | Provides a tooltip to the element. This can be the node itself, or any of the node slots when the tooltip is added on a method or argument. |
+| `subtitle` | This can be used on the entry details object. It overrides the node's subtitle. |
+
+{{< important >}}
+Some fields in a `.names` file should _not_ be modified. They are used by the system to create a key into a database of text fields.
+{{< /important >}}
 
 **The following fields should NOT be changed**:
 
-`base`
-
-`context`
-
-`variant`
-
-`typeid`
+* `base`
+* `context`
+* `variant`
+* `typeid`
 
 Any changes to these fields will result in the Script Canvas Editor being unable to find the desired text to update and will result in the translation data being ignored.
-
-The data within the "details" field can be updated with the following fields:
-
-`name`: The name of the node, argument, or return type.
-
-`category`: The category in the Node Palette to place the node in. Supports nested categories by using the "/" character. Example: "Gameplay/Missions".
-
-`tooltip` Provides a tooltip to the element, this can be the node itself, or any of the node slots when the tooltip is added on a method or arguments
-
-`subtitle` This can be used on the entry details object, it allows overriding the node's subtitle
-
 
 ## Getting started
 
 ### Example: Generating a translation file to replace text
 
-Open the Script Canvas Editor. Navigate or search for the desired node in the Node Palette.
+1. Open Script Canvas Editor.
 
-We will use AWSGameLiftPlayer in this example
+1. Navigate or search for the desired node in the Node Palette. We will use AWSGameLiftPlayer in this example.
 
- ![Image 0](/images/user-guide/scripting/script-canvas/text-replacement-0.png)
+    ![AWSGameLiftPlayer cateogry displayed in the Node Palette](/images/user-guide/scripting/script-canvas/text-replacement-0.png)
 
-Right click on any of the nodes under AWSGameLiftPlayer.
+1. Right-click on any of the nodes under AWSGameLiftPlayer.
 
-![Image 1](/images/user-guide/scripting/script-canvas/text-replacement-1.png)
+    ![Context menu displayed after right-clicking an AWSGameLiftPlayer node](/images/user-guide/scripting/script-canvas/text-replacement-1.png)
 
-And select "Generate Translation"
+1. Choose **Generate Translation**. This will open a File Explorer window to an auto-generated file named `AWSGameLiftPlayer.names`.
 
-This will open a file explorer window to an auto-generated file called: *AWSGameLiftPlayer.names*
+    If you do not wish to make any changes to the auto-generated data, you can close the Script Canvas Editor window and reopen it. Any changes from generating or editing the `.names` file will appear.
 
-If you do not wish to make any changes to the auto-generated data, you can close the Script Canvas Editor window and reopen it and you will see some changes have taken effect.
+    ![Nodes names in AWS Game Lift Player category displayed with spaces](/images/user-guide/scripting/script-canvas/text-replacement-2.png)
 
-![Image 2](/images/user-guide/scripting/script-canvas/text-replacement-2.png)
+    In this example, all of the names are now separated by a space, and the naming follows the Script Canvas naming convention to use camel case.
 
-All the names are now separated by a space and the naming follows the Script Canvas naming convention to use Camel Case.
+### Example: Changing the node category
 
-### Changing the node category
+You've successfully generated translation data for a node, but its category is still under "Other". To change this, edit the generated file `AWSGameLiftPlayer.names`.
 
-We have succesfully generated translation data for a node, but its category is still under "Other". To change this we will now edit the generated file `AWSGameLiftPlayer.names`.
-
-To change the category, navigate to the outermost `"details"` object and add:
+1. Navigate within the file to the outermost `details` field and add
 `"category": "AWS Game Lift"`.
 
-In addition, the `"name"` can be simplified from `"AWS Game Lift Player"` to `"Player"`.
+1. In addition, simplify the `name` from `"AWS Game Lift Player"` to `"Player"`.
 
-```json
-{
-    "entries": [
-        {
-            "base": "AWSGameLiftPlayer",
-            "context": "BehaviorClass",
-            "variant": "",
-            "details": {
-                "category": "AWS Game Lift",
-                "name": "Player"
-            },
-            "methods": [
-                ... STRIPPED FOR SIZE ... (See Appendix 1 for complete file before/after)
-            ]
-        }
-    ]
-}
-```
-After saving the changes to `AWSGameLiftPlayer.names`, close the Script Canvas Editor and open it again.
+    ```json
+    {
+        "entries": [
+            {
+                "base": "AWSGameLiftPlayer",
+                "context": "BehaviorClass",
+                "variant": "",
+                "details": {
+                    "category": "AWS Game Lift",
+                    "name": "Player"
+                },
+                "methods": [
+                    ... STRIPPED FOR SIZE ... (See Appendix 1 for complete file before/after)
+                ]
+            }
+        ]
+    }
+    ```
 
-The nodes are now in the proper category with the given name:
+1. After saving the changes to `AWSGameLiftPlayer.names`, close Script Canvas Editor and open it again.
 
-![Image 3](/images/user-guide/scripting/script-canvas/text-replacement-3.png)
+    The nodes are now in the proper category with the given name:
 
+    ![Node palette with Player nodes placed in AWS Game Lift category](/images/user-guide/scripting/script-canvas/text-replacement-3.png)
 
-## Example: Updating translation files
+### Example: Updating translation files
 
-In this case, we do not need to generate a new translation file, instead we just need to edit it.
+In this scenario, you don't need to generate a new translation file. Instead you only need to edit it.
 
-![Image 2](/images/user-guide/scripting/script-canvas/text-replacement-1.png)
+1. Right-click on any of the nodes under AWSGameLiftPlayer.
 
-Select _"Explore Translation Data"_ it will open a file explorer on the file that contains the relevant translation data, in this case, *AWSGameLiftPlayer.names*.
+    ![Context menu displayed after right-clicking an AWSGameLiftPlayer node](/images/user-guide/scripting/script-canvas/text-replacement-1.png)
 
-Open the file in your preferred text editor.
+1. Choose **Explore Translation Data** in the context menu. It will open a File Explorer window on the file that contains the relevant translation data. In this example, the file is `AWSGameLiftPlayer.names`.
 
-Find and update any desired elements. 
+1. Open the file in your preferred text editor.
 
-## Best Practices
+1. Find and update any desired elements.
 
-* Do not modify the `base`, `context`, `variant` or `typeid` fields
-* Use `Camel Case` syntax with spaces
-* Add the `tooltip` field to provide details and context
-* Use the `category` field to organize nodes
+1. Save your changes to `AWSGameLiftPlayer.names`, close Script Canvas Editor, and open it again. You should see your updates to the node(s).
+
+## Best practices
+
+Use the following text replacement best practices when working with `.names` files.
+
+* Do not modify the `base`, `context`, `variant`, or `typeid` fields.
+* Use camel case syntax with spaces.
+* Add the `tooltip` field to provide details and context.
+* Use the `category` field to organize nodes.
 * Review your changes by closing and reopening the Script Canvas Editor.
-* Watch for Asset Processor errors on .names files, ensure JSON syntax is correct
-* Commit .names files to source control, this will ensure they are tracked and changes are not overriden
-* Generating translation data will overwrite existing translation data, be careful not to lose work, when in doubt, use _Explore Translation Data_ first
-* Different kinds of nodes will produce different kinds files, some will have one file for one node, others will have many nodes within a single file. 
+* Watch for Asset Processor errors on `.names` files. These can be caused by errors in the JSON syntax.
+* Commit `.names` files to source control; this will ensure they are tracked and changes are not overriden.
+* Generating translation data will overwrite existing translation data. Be careful not to lose work. When in doubt, use the **Explore Translation Data** menu action first.
+* Different kinds of nodes produce different kinds of `.names` files. Some `.names` files define a single node; others define many nodes within a single file.
 
-
-
-## Appendix 1
+## Appendix
 
 ### Default generated `AWSGameLiftPlayer.names`
 
@@ -340,8 +347,7 @@ Find and update any desired elements.
                         {
                             "typeid": "{3F80885A-9011-5172-8D94-87108B31D950}",
                             "details": {
-                                "name": "Latency In Ms",
-                                "tooltip
+                                "name": "Latency In Ms"
                             }
                         }
                     ]

@@ -18,6 +18,8 @@ A job dependency requires the product asset of another process job before this p
 
 Required job dependencies cause the process job to fail if the required product asset is not available, however, job dependencies can be marked optional. Optional job dependencies make use of the requested product asset if it exists, but can complete without the requested product asset.
 
+In some cases, a builder requires the output of another builder in order to process the asset it is working on.  If the other builder only outputs a single product, a regular job dependency works just fine.  Sometimes, however, the other builder outputs many products, some of which might not be updated every time the builder runs.  This can result in Asset Processor doing unnecessary work to rebuild dependent assets when their dependencies haven't actually changed.  For these cases, builders can specify the exact set of products they depend on by providing a list of SubIds in the AssetBuilderSDK::JobDependency::m_productSubIds field.  When a builder provides a list of specific products to depend on, Asset Processor will only trigger the dependency when the hash of the contents of any of the specified products changes.
+
 ## Product dependencies
 
 Product dependencies are a runtime concept.

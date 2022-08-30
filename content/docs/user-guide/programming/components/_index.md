@@ -5,7 +5,7 @@ description: Learn how to create and reflect components in C++ using the O3DE Co
 weight: 140
 ---
 
-This guide provides engine and game programmers with examples and best practices for creating and reflecting custom O3DE components in C++. For information on using the component entity system in O3DE Editor, see [Entity Inspector](/docs/user-guide/editor/entity-inspector).
+This section provides engine and game programmers with examples and best practices for creating and reflecting custom **Open 3D Engine (O3DE)** components in C++. For information about using the component entity system in **O3DE Editor**, refer to [Entity Inspector](/docs/user-guide/editor/entity-inspector).
 
 ## Topics
 

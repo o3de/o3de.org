@@ -108,6 +108,5 @@ Ptr<Pass> myPass4 = PassSystemInterface::Get()->CreatePassFromRequest(&myPassReq
 ```
 
 #### Customized Pass Instantiation
-{{< todo >}}
-
+{{< todo issue="https://github.com/o3de/o3de.org/issues/1547">}}
 {{< /todo >}}

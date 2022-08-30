@@ -11,9 +11,6 @@ You can use the following console commands and console variables to display debu
 
 Displays canvas data for enabled or loaded canvases.
 
-
-****
-
 | Value | Description |
 | --- | --- |
 | 0 | Off. |
@@ -26,9 +23,6 @@ The following example displays data for five loaded UI canvases.
 
 The following table describes each column.
 
-
-****
-
 | **Column** | **Description** |
 | --- | --- |
 | NN | The index number of the canvas in the list. The canvases are listed in the order that they're drawn in. |
@@ -36,11 +30,11 @@ The following table describes each column.
 | En | Whether the canvas is enabled. |
 | Po | Whether the canvas accepts positional inputs (for example, mouse input). |
 | Na | Whether the canvas has navigation enabled. |
-| DO | The draw order, which is used to sort the list of loaded canvases. |
+| DrawOrder | The draw order, which is used to sort the list of loaded canvases. |
 | nElem | The number of UI elements in the canvas. |
 | nEnab | The number of enabled UI elements in the canvas. If a parent isn't enabled, the element isn't counted. |
 | nRend | The number of enabled renderable elements in the canvas (how many images, text and particle effects are being rendered). |
-| nRCtrl | The number of enabled "render control" elements in THE canvas (masks and faders). |
+| nRCtl | The number of enabled "render control" elements in the canvas (masks and faders). |
 | nImg | The number of enabled UI elements with UiImageComponents. |
 | nText | The number of enabled UI elements with UiTextComponents. |
 | nMask | The number of enabled UI elements with UiMaskComponents. |
@@ -55,8 +49,6 @@ The following table describes each column.
 Displays the number of draw calls used to render UI canvases. This variable is useful for performance tuning and debugging.
 
 
-****
-
 | Value | Description |
 | --- | --- |
 | 0 | Turns off the display. |
@@ -68,13 +60,10 @@ The following example data shows draw call information for four UI canvases.
 
 The following table describes each column.
 
-
-****
-
 | Column | Description |
 | --- | --- |
 | NN | The index number of the canvas in the list. The canvases are listed in the order that they're drawn in. |
-| Name | The leaf canvas name. |
+| Canvas name | The leaf canvas name. |
 | nDraw | The number of draw calls. |
 | nPrim | The number of primitives (for example, images and text strings). |
 | nTris | The number of triangles rendered for the UI. |

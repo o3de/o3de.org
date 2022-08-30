@@ -4,15 +4,17 @@
         {{ $isHere := in $here .RelPermalink }}
         <li>
             <a href="{{ .RelPermalink }}"
-            class="docs-link{{ if .Pages }} has-children{{ end }}">
-            {{ .LinkTitle }}</a>
+            class="docs-link{{ if .Pages }} has-children{{ end }}"> 
+                {{.LinkTitle}} 
+            </a>
             {{ if .Pages }}
                 <ul>
                     {{ if and ( .IsSection ) (ge (len .Content) 1) }}
                     <li>
                         <a href="{{ .RelPermalink }}"
-                        class="docs-link">
-                        {{ .LinkTitle }}</a>
+                        class="docs-link">                        
+                            {{ if .Params.sectionPageTitle }} {{.Params.sectionPageTitle}} {{else}} {{.LinkTitle}} {{end}}
+                        </a>
                     </li>
                     {{ end }}
                     {{ partial "section-nav-walk.html" . }}

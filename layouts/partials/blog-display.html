@@ -1,6 +1,6 @@
 <!-- displays 3 blog posts and links to blogs, for homepage & community page -->
 
-{{ $posts := where site.RegularPages "Section" "blog" | first 3 }}
+{{ $posts := where site.RegularPages "Section" "blog" | first 30 }}
   <div class="row">
       <div class="col mx-auto mt-4 mb-3">
           <h2>Blog</h2>
@@ -15,7 +15,7 @@
         <div class="row">
           <div class="col-md-4 card-image" style="background-image: url('{{ .Param "blog_img" }}')">
           </div>
-          <div class="col col-md-8">
+          <div class="col col-md-8" style="height: 325px;">
             <div class="card-body">
               <h5 class="card-title mt-0"> {{ .Title }}</h5>
               <p class="card-text">{{ .Summary }}</p>

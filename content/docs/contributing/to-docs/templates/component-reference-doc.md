@@ -257,8 +257,9 @@ For a component card with a complex set of properties, you may need multiple pro
 Another option is to separate the property tables into [tabs](/docs/contributing/to-docs/style-guide/format/#tabs) on your document. When content is in tabs, only the active tab displays content, while the rest is hidden. Because of this behavior, tabs are recommended if the sets of properties define configurations for different workflows that the user may or may not choose. 
 
 **Examples**:
+* [Light component](/docs/user-guide/components/reference/atom/light/): Contains several configurations that don't have a 1-1 relationship with the **Light type** property. Some propery groups are available for more than one light type, so they are documented in different property tables. Each property table specifies which light types support those properties.
 
-* [PhysX Collider component](/docs/user-guide/components/reference/physx/collider/): Contains several configurations, which depend on the **Shape** property. Each configuration affect what properties are available, so they are documented in different property tables. 
+* [PhysX Collider component](/docs/user-guide/components/reference/physx/collider/): Contains several configurations, which depend on the **Shape** property. Each configuration affect what properties are available, so they are documented in different property tables separated into tabs. 
 
 * [Camera Rig component](/docs/user-guide/components/reference/camera/camera-rig/): Contains addable property groups with multiple workflows in each. So, each property group is documented in separate property tables and each workflow is further separated into tabs. 
 

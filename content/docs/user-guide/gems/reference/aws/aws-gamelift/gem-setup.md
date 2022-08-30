@@ -18,8 +18,8 @@ The lifetime of a session involves the following phases:
    1. Create a new session with the desired settings.  
    2. Wait for the players to request to join the session.  
    3. Reserve the players who want to join.  
-   4. Destroy the session when the condition is met. For example, when the last player leaves the session. 
-    
+   4. Destroy the session when the condition is met. For example, when the last player leaves the session.
+
 
 ## 2. Enable the AWS GameLift Gem
 
@@ -29,13 +29,13 @@ The lifetime of a session involves the following phases:
 The AWS GameLift Gem depends on the following Gems:
 
 - [AWS Core Gem](/docs/user-guide/gems/reference/aws/aws-core): Provides the framework to use AWS services in O3DE.
-- [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/multiplayer/): Provides multiplayer functionality, like connection and hosting, by extending the networking framework.
-  
+- [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/): Provides multiplayer functionality, like connection and hosting, by extending the networking framework.
+
 
 ### Enable the AWS GameLift Gem and its dependencies
 
 To enable the AWS GameLift Gem in your project:
-1. Open the **Project Manager**. 
+1. Open the **Project Manager**.
 2. Open the menu under your project and choose **Edit Project Settings...**.
 3. Choose **Configure Gems**.
 4. Enable the AWS GameLift Gem and the dependent Gems.
@@ -59,7 +59,7 @@ You must include the AWS GameLift Gem static library in your project's CMake bui
                 Gem::AWSGameLift.Server.Static
     )
     ```
-   
+
 2. **(Required)** To ensure that the Amazon GameLift Server SDK gets initialized correctly, you must indicate that the `AWSGameLiftServerService` is required for your project server system component.
 
    ```cpp
@@ -95,7 +95,7 @@ To support the optional FlexMatch feature, check [FlexMatch Integration](flexmat
 
 ## 4. Set up AWS credentials
 
-To work with AWS resources in O3DE you must set up AWS credentials for your users. 
+To work with AWS resources in O3DE you must set up AWS credentials for your users.
 
 For more details on configuring your AWS credentials in O3DE, refer to [Configuring AWS Credentials](/docs/user-guide/gems/reference/aws/aws-core/configuring-credentials/).
 
@@ -103,11 +103,11 @@ Please check [IAM policy examples for GameLift](https://docs.aws.amazon.com/game
 
 To use the FlexMatch feature for matchmaking and backfill, please check [Setting up FlexMatch](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-setting-up.html) for the required permissions.
 
-{{< note >}} 
+{{< note >}}
 This step is only required for developers who perform remote tests and infrastructure builds against the GameLift service.
 
-Alternatively, you can test your server's GameLift integration locally using GameLift Local, which does not require AWS credentials. With support for client override, you can test against GameLift Local. For more information, refer to [AWS GameLift Gem Local Testing](/docs/user-guide/gems/reference/aws/aws-gamelift/local-testing/). 
-{{< /note >}} 
+Alternatively, you can test your server's GameLift integration locally using GameLift Local, which does not require AWS credentials. With support for client override, you can test against GameLift Local. For more information, refer to [AWS GameLift Gem Local Testing](/docs/user-guide/gems/reference/aws/aws-gamelift/local-testing/).
+{{< /note >}}
 
 
 ## 5. Set up the AWS CLI and AWS CDK

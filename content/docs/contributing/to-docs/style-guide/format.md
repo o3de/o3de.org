@@ -2,11 +2,13 @@
 title: Formatting O3DE Documentation
 description: A reference for all of the typesetting and formatting rules for the Open 3D Engine (O3DE) documentation.
 linktitle: Formatting
-weight: 200
+weight: 300
 toc: true
 ---
 
-The **Open 3D Engine (O3DE)** documentation is written in Markdown syntax. With Markdown, sometimes there are multiple methods to achieve the same result. For example, you can enclose words in underscores (`_`) or asterisks (`*`) to create italics. In these situations, it is best to use one method throughout the documentation. To keep both the documentation Markdown source files, and the O3DE documentation on-page presentation consistent, adhere to the following basic documentation standards.
+The **Open 3D Engine (O3DE)** documentation is written in **Goldmark Markdown syntax**. [Goldmark](https://github.com/yuin/goldmark) is the Markdown parser used by [Hugo](https://gohugo.io/), the site builder used for o3de.org.
+
+With Markdown, sometimes there are multiple methods to achieve the same result. For example, you can enclose words in underscores (`_`) or asterisks (`*`) to create italics. In these situations, it is best to use one method throughout the documentation. To keep both the documentation Markdown source files, and the O3DE documentation on-page presentation consistent, adhere to the following basic documentation standards.
 
 ## Topic headings
 
@@ -16,7 +18,7 @@ Section titles should be an H2 (`##`) heading, and use sentence case for the sec
 
 Subsection titles should start with an H3 (`###`) heading, and use sentence case for the subsection title.
 
-Example:
+**Example**:
 
 ```markdown
 ---
@@ -24,7 +26,6 @@ linkTitle: Page Title
 title: An O3DE Documentation Page Title
 description: A topic about an Open 3D Engine feature.
 weight: 100
-toc: true
 ---
 
 ## H2 for the first section title (Sentence title capitalization)
@@ -41,13 +42,94 @@ toc: true
 
 ```
 
+
+## Text format
+
+There can be multiple methods to achieve the same result in Markdown. Adhere to the following standards to make both the Markdown source files and the on-page documentation much easier for readers to parse at a glance. Consistency in the Markdown source format also aids automation efforts for documentation.
+
+### Bold text
+
+To bold text, enclose the text in double asterisks (`**`).
+
+**Example**:
+
+```markdown
+This is **bold** text.
+```
+
+**Result**:
+
+This is **bold** text.
+
+### Italic text
+
+To italicize text, enclose the text in a single asterisk (`*`).
+
+**Example**:
+
+```markdown
+This is *italic* text.
+```
+
+**Result**:
+
+This is *italic* text.
+
+### Inline code
+
+To format text as inline code, enclose the text in a single backtick (`` ` ``).
+
+**Example**:
+
+```markdown
+This is `code` text.
+```
+
+**Result**:
+
+This is `code` text.
+
+### Code block
+
+Use code blocks for multi-line code. Some languages are supported for syntax highlighting. The language is specified after the opening back-ticks (` ``` `) of the code block.
+
+When writing code blocks, make sure to include a language identifier. For C++ code blocks, use the `cpp` identifier. See Hugo's [List of Chroma Highlighting Languages](https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages)
+ for additional language identifiers.
+
+**Example**:
+
+````none
+```python
+# Use the 'request' find the type of job via 'jobKey' to determine what to do
+def on_process_job(args):
+    try:
+        # Get request information
+        request = args[0]
+         ...
+```
+````
+
+**Result**:
+
+```python
+# Use the 'request' find the type of job via 'jobKey' to determine what to do
+def on_process_job(args):
+    try:
+        # Get request information
+        request = args[0]
+         ...
+```
+
 {{< note >}}
-A table of contents for the page is automatically generated in the right gutter using the on-page headings if the `toc` Front Matter variable is set to `true`.
+Syntax highlighting in the code block should conform to the [contrast guidelines.](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0&showtechniques=141%2C143#contrast-minimum)
 {{< /note >}}
 
-## Links
 
-Write links without the file extension *.md*.
+### Links
+
+#### Relative and absolute links
+
+Write links without the file extension `.md`.
 
 | Relative link | Result |
 | - | - |
@@ -58,10 +140,39 @@ Write links without the file extension *.md*.
 | `[...](./forward-directory-linked-from-non-index/)` | Links from any page to a subdirectory of the current page. |
 | `[...](../)` | Returns to the index of the previous directory. |
 | `[...](../link-to-page-in-previous-directory)` | Links from any page to a page in the previous directory. |
+| `[...](link#subheading)` | Link to a subheading within a topic. |
+| **Absolute link** | **Result** |
+| `[...](/docs/guide/link-to-page)` | Link to a page in the documentation. |
 
-## Tables
 
-Table example:
+#### External links
+
+Use external links cautiously and sparingly. Only link to sites that are trustworthy and respectable. Avoid adding unnecessary links.
+
+For a third-party product, you must provide an external link to the source. Only do this for the first on-page instance, or when it's most relevant.
+
+For supplemental information, consider whether an external link is needed at all. Providing a brief explanation may suffice and is preferred because it keeps the user's focus on the current topic.
+
+
+
+### Quotes and punctuation placement
+
+When the quote is contained within a sentence, place the punctuation outside the quote.
+
+When the quote is a complete sentence, place the punctuation inside the quote.
+
+Type | Example
+:--| :-----
+Quote is within a sentence | ... assets that are "game-ready"**.**
+Quote is a complete sentence | _"Focus is a matter of deciding what things you're not going to do **.** "_ <br>- John Carmack
+
+
+
+## Information structure
+
+### Tables
+
+**Example**:
 
 ```markdown
 | Default column| Right-aligned column | Center-aligned column | Left-aligned column |
@@ -71,7 +182,7 @@ Table example:
 | Row with missing entry | entry | | entry |
 ```
 
-Table result:
+**Result**:
 
 | Default column| Right-aligned column | Center-aligned column | Left-aligned column |
 | - | -: | :-: | :- |
@@ -79,9 +190,9 @@ Table result:
 | Row | entry | entry | entry |
 | Row with missing entry | entry | | entry |
 
-## Tabs
+### Tabs
 
-Tabs example:
+**Example**:
 
 
 ```
@@ -100,7 +211,7 @@ Second tab's content.
 ```
 
 
-Tabs result:
+**Result**:
 
 {{< tabs name="tabs-example" >}}
 {{% tab name="First tab" %}}
@@ -115,151 +226,178 @@ Second tab's content.
 {{% /tab %}}
 {{< /tabs >}}
 
-## Text format
 
-There can be multiple methods to achieve the same result in Markdown. Adhere to the following standards to make both the Markdown source files and the on-page documentation much easier for readers to parse at a glance. Consistency in the Markdown source format also aids automation efforts for documentation.
+### Lists
 
-### Bold text
+If the list is longer than four items, or if the list contains call-out shortcode or an image, add newlines between each list element to improve readability.
 
-To bold text, enclose the text in double asterisks (`**`).
+#### Ordered lists
 
-Bold example:
+Use ordered lists when the order of the items is significant, such as a procedure of sequential steps. For ease, you can use `1.` to delineate all items in ordered lists. Goldmark automatically numbers the items in the list. 
 
-```markdown
-This is **bold** text.
-```
-
-Bold result:
-
-This is **bold** text.
-
-### Italic text
-
-To italicize text, enclose the text in a single asterisk (`*`).
-
-Italic example:
+**Example**:
 
 ```markdown
-This is *italic* text.
+1. Step one
+1. Step two
+1. Step three
+1. Step four
 ```
 
-Italic result:
+**Result**:
 
-This is *italic* text.
+1. Step one
+1. Step two
+1. Step three
+1. Step four
 
-### Inline code
+#### Unordered lists
 
-To format text as inline code, enclose the text in a single backtick (`` ` ``).
+Use unordered lists if the order of the items is arbitrary, such as a list of assets. 
 
-Inline code example:
+You can use `*` or `-` to delineate items in unordered lists. Whatever you use, be consistent throughout the whole list.
+
+**Example**:
 
 ```markdown
-This is `code` text.
+* Item one
+* Item two
+* Item three
 ```
 
-Inline code result:
+**Result**:
 
-This is `code` text.
+* Item one
+* Item two
+* Item three
 
-### Code block
+#### Nested lists
 
-Use code blocks for multi-line code. Some languages are supported for syntax highlighting. The language is specified after the opening back-ticks (` ``` `) of the code block.
+Nested lists are often used for sub-steps or requirements lists in a procedure. Indent four spaces to nest a list.
 
-Code block example:
+For code blocks within a step, indent the code block once more past the step's indentation.
 
-````none
-```python
-# Use the 'request' find the type of job via 'jobKey' to determine what to do
-def on_process_job(args):
-    try:
-        # Get request information
-        request = args[0]
-         ...
-```
+For shortcodes within a step, similarly indent the opening and closing shortcode brackets once more past the step's indentation. However, be cautious not to indent the enclosed text because it leads to a code block within the shortcode.
+
+**Example**:
+
+````markdown
+1. Step one
+1. Step two
+    * Item one
+    * Item two
+    * Item three
+1. Code example
+    ```
+    A line of code or command
+    ```
+1. Callout example
+    {{</* note */>}}
+  A callout box.
+    {{</* /note */>}}
 ````
+**Result**:
 
-Code block result:
+1. Step one
+1. Step two
+    * Item one
+    * Item two
+    * Item three
+1. Code example
+    ```
+    A line of code or command
+    ```
+1. Callout example
+    {{< note >}}
+  A callout box.
+    {{< /note >}}
 
-```python
-# Use the 'request' find the type of job via 'jobKey' to determine what to do
-def on_process_job(args):
-    try:
-        # Get request information
-        request = args[0]
-         ...
+#### Definition lists
+
+Use definition lists for content that lists a pair of terms and their definitions. For example, a glossary.
+
+Use `:` to delineate each definition in the list.
+  
+**Example**:
+
+```markdown
+First Term  
+: This is the definition of the first term.
+
+Second Term  
+: This is one definition of the second term.
+: This is another definition of the second term.
 ```
 
-{{< note >}}
-Syntax highlighting in the code block should conform to the [contrast guidelines.](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0&showtechniques=141%2C143#contrast-minimum)
-{{< /note >}}
+**Result**:
 
-When writing code blocks, make sure to include a language identifier. For C++ code blocks, use the `cpp` identifier.
+First Term
+: This is the definition of the first term.
 
-### Mark placeholders with angle brackets
+Second Term
+: This is one definition of the second term.
+: This is another definition of the second term.
 
-Use angle brackets for placeholders. Use the text within the brackets to tell the reader what a placeholder represents. For example:
 
-```shell
-git push origin <your-branch-name>
-```
+## Terminology
 
-### Bold user interface elements
-
-Do | Don't
-:--| :-----
-Choose **Edit**. | Click "Edit".
-.. the **Play** button. | ... the Play button.
-
-### Bold input combinations
-
-Do | Don't
-:--| :-----
-Press **Enter**. | Press "Enter".
-.. **right-click** the asset name ... | ... right-click the asset name ...
-Hold **CTRL+SHIFT** ... | Hold `Control + Shift` ...
-
-### Bold proper application names
-
-For the first introduction of an application name on a page, use **bold** text. Subsequent references to the application on the page should not be bold.
-
-Example:
-
-**O3DE Editor** is the primary development environment for .... Open O3DE Editor by launching it from...
-
-Do | Don't
-:--| :-----
-Open **Material Editor**. | Open the Material Editor.
-In **Asset Processor**, right-click... | In "Asset Processor", right-click...
-
-### Italicize new term introductions and definitions
+### Italicize new terms
 
 Do | Don't
 :--| :-----
 ... to create *image based lighting (IBL)*. | ... to create **image based lighting (IBL)**.
 A *prefab* is a collection of entities ... | A "prefab" is a collection of entities ...
 
-### Quotes and punctuation placement
+### Trademark
 
-When the quote is contained within a sentence, place the punctuation outside the quote.
+Properly format trademark titles and terminology according to its use from the source. Provide a link to the source's relevant material for the first on-page instance, or when it's most relevant.
 
-Do | Don't
-:--| :-----
-... assets that are "game-ready". | ... assets that are "game-ready."
-... process called "rigging". | ... process called "rigging."
+## Applications, tools, Gems, and components
 
-When the quote is a complete sentence, place the punctuation inside the quote.
+### Bold applications and tools
 
-> "Focus is a matter of deciding what things you're not going to do." - John Carmack
+For the first on-page reference to applications and tools, use **bold** text. Use unformatted text for subsequent references. 
 
-### Code style for filenames, directories, and paths
+For tools that are provided as scripts, instead use `code style` for the name of the script, followed by the type of script in unformatted text. Do this for all instances throughout the page.
 
-All paths should be platform agnostic and use `/` path separators. When using relative paths, give the reader context to understand what the path is relative to.
+Type | Example
+:--| :-- 
+Application | **O3DE Editor** is the primary development environment for .... Open O3DE Editor by launching it from...
+Tool | The `o3de` Python script allows you to... To use the `o3de` Python script... | 
 
-Do | Don't
-:--| :-----
-Open the project's `bootstrap.cfg` file. | Open the project's bootstrap.cfg file.
-... in the `/<project>/levels` directory. | ... in the /\<project\>/levels directory.
-Open the `/<project>/game.cfg` file. | Open the /\<project\>/game.cfg file.
+### Bold Gems and components
+
+For the first on-page reference to Gems and components, use **bold** text. Use unformatted text for subsequent references.  
+
+**Additional rules**  
+: - For Gems, capitalize and **bold** both the name of the Gem and the word "Gem". 
+  - For components, capitalize and **bold** the name of the component. Use lowercase and unformatted text for the word "component". 
+
+Type | Example
+:--| :-- 
+Gem | The **Multiplayer Gem** provides... Use the Multiplayer Gem to...
+Components | The **Material** component adds... Also, you can use the Material component to...
+
+
+## User interface, inputs, and hotkeys
+
+Users interact with O3DE through various user interface (UI) elements, inputs, and hotkeys. They're often included in tasks and tutorials, instructing users to perform an action.
+
+For UI elements, inputs, and hotkeys, use **bold** text. Do this for all instances throughout the page. 
+
+**Additional rules**  
+: For formatting keys: abbreviate key names, remove spaces, and use sentence-casing. 
+
+Type | Example | Avoid
+:--| :-- | :--
+UI element | Choose **Edit**. | Click "Edit".
+UI element | .. the **Play** button. | ... the Play button.
+Input | Press **Enter**. | Press "Enter".
+Input | .. **right-click** the asset name ... | ... right-click the asset name ...
+Hotkey | Hold **Ctrl+Shift** ... | Hold `Control + Shift` ...
+
+
+## Code, commands, and APIs
 
 ### Code style for inline code and commands
 
@@ -268,7 +406,7 @@ Do | Don't
 ... set `enable_memory_tracking = True`. | ... set **enable_memory_tracking** = "True".
 ... enter the command `dump_vars`. | ... enter the command dump_vars.
 
-### Code style for variable names, API objects, namespaces, and so on
+### Code style for programming objects
 
 Do | Don't
 :--| :-----
@@ -276,7 +414,7 @@ Do | Don't
 ... use the `WorldRequestBus`. | ... use the "WorldRequestBus".
 ... in `AZ::Data::AssetData` derived classes. | ... in **AZ::Data::AssetData** derived classes.
 
-### Bold property names, and inline code their values
+### Bold property names, and code style their values
 
 Do | Don't
 :--| :-----
@@ -311,94 +449,25 @@ Copyright (C) Microsoft Corporation. All rights reserved.
   unity_23_cxx.cxx
 ```
 
-## Lists
+## Files, directories, and paths
 
-Use ordered lists when the order of the items is significant, such as a procedure of sequential steps. Use unordered lists if the order of the items is arbitrary, such as a list of assets.
+### Code style for filenames, directories, and paths
 
-If the list is longer than four items, or if the list contains call-out shortcode or an image, add newlines between each list element to improve readability.
+All paths should be platform agnostic and use `/` path separators. When using relative paths, give the reader context to understand what the path is relative to.
 
-### Ordered lists
+Do | Don't
+:--| :-----
+Open the project's `bootstrap.cfg` file. | Open the project's bootstrap.cfg file.
+... in the `/<project>/levels` directory. | ... in the /\<project\>/levels directory.
+Open the `/<project>/game.cfg` file. | Open the /\<project\>/game.cfg file.
 
-Use `1.` to delineate items in ordered lists. Goldmark automatically numbers the items in the list. Ordered lists are used for procedures.
+### Mark placeholders with angle brackets
 
-Ordered list example:
+Use angle brackets for placeholders. Use the text within the brackets to tell the reader what a placeholder represents.
 
-```markdown
-1. Step one
-1. Step two
-1. Step three
-1. Step four
+**Example**:
+
+```shell
+git push origin <your-branch-name>
 ```
 
-Ordered list result:
-
-1. Step one
-1. Step two
-1. Step three
-1. Step four
-
-### Unordered lists
-
-Use `*` to delineate items in unordered lists.
-
-Unordered list example:
-
-```markdown
-* Item one
-* Item two
-* Item three
-```
-
-Unordered list result:
-
-* Item one
-* Item two
-* Item three
-
-### Nested lists
-
-Indent four spaces to nest a list. Nested lists are often used for sub-steps or requirements lists in a procedure.
-
-Nested list example:
-
-```markdown
-1. Step one
-1. Step two
-    * Item one
-    * Item two
-    * Item three
-1. Step three
-```
-
-Nested list result:
-
-1. Step one
-1. Step two
-    * Item one
-    * Item two
-    * Item three
-1. Step three
-
-### Definition lists
-
-Use definition lists for content that lists a pair of terms and their definitions. For example, a glossary.
-  
-Definition list example:
-
-```markdown
-First Term
-: This is the definition of the first term.
-
-Second Term
-: This is one definition of the second term.
-: This is another definition of the second term.
-```
-
-Definition list result:
-
-First Term
-: This is the definition of the first term.
-
-Second Term
-: This is one definition of the second term.
-: This is another definition of the second term.

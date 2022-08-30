@@ -16,9 +16,9 @@ You can create cloth assets for entities with **Mesh** components in the content
 Sample **Mesh** component cloth assets are located in the **NVIDIA Cloth** gem directory, which is located at `/dev/Gems/NvCloth/Assets/Objects/cloth/Environment/`.
 {{< /note >}}
 
-For information on exporting mesh assets, see [FBX Settings mesh export](/docs/user-guide/assets/fbx-settings/mesh-export/).
+For information on exporting mesh assets, see [FBX Settings mesh export](/docs/user-guide/assets/scene-settings/meshes-tab/).
 
-## Add Cloth to Mesh components 
+## Add Cloth to Mesh components
 
 Create cloth by adding the **Cloth** component to an entity that has a **Mesh** component, and then setting the properties of the **Cloth** component.
 
@@ -58,7 +58,7 @@ Create cloth by adding the **Cloth** component to an entity that has a **Mesh** 
 
    1. Adjust cloth properties to obtain the desired cloth behavior. For more information, see [Cloth Component](/docs/user-guide/components/reference/physx/cloth/).
 
-## View the Cloth Simulation 
+## View the Cloth Simulation
 
 In O3DE Editor, press Ctrl+G or press the **Play** button to run your project.
 

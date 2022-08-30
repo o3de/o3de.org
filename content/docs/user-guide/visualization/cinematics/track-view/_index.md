@@ -28,7 +28,7 @@ After you create a sequence, you can add properties to it. Any part of the seque
 
 **To add a node to a sequence**
 
-1. In the Track View, right-click the sequence or the node browser and select **Add *Name* Node**.
+1. In the Track View, right-click the sequence or the node browser and select **Add *<Name\>* Node**.
 
 1. Select the node to update its properties.
 

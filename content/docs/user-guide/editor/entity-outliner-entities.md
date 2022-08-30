@@ -4,9 +4,9 @@ title: Working with Entities
 toc: true
 ---
 
-## Reordering Entities 
+## Reordering Entities
 
-When you create entities or instantiate slices, they appear at the bottom of the list in the **Entity Outliner**.
+When you create entities or instantiate prefabs, they appear at the bottom of the list in the **Entity Outliner**.
 
 **To reorder entities in the Entity Outliner**
 
@@ -22,7 +22,7 @@ When you create entities or instantiate slices, they appear at the bottom of the
 
    ![Drag and drop to parent an entity.](/images/user-guide/component/entity_system/component-entity-outliner-parenting-drag-drop.png)
 
-## Hiding and Showing Entities 
+## Hiding and Showing Entities
 
 You can hide entities so that they don't appear in the viewport, so that the viewport shows only the entities that you want. If you hide a parent entity, all children entities are also hidden. You can also hide child entities within a parent entity.
 
@@ -46,7 +46,7 @@ You can lock entities so that they can't be selected in the viewport, so that yo
 
 1. To unlock the entity, click the lock icon again.
 
-## Search and Filter for Entities 
+## Search and Filter for Entities
 
 For levels that have many entities, you can search and filter for the entities that you want. Enter text in the search filter box to find specific entities.
 
@@ -82,20 +82,16 @@ You can also sort entities so that they appear in the order that you want in the
    + **Sort: A to Z**- Sort entities alphabetically, in ascending order.
    + **Sort: Z to A** - Sort entities, in descending order.
    + **Scroll to Selected** - When you select an entity in the viewport, the **Entity Outliner** scrolls to that entity. If you select multiple entities, the **Entity Outliner** scrolls to the last selected entity.
-   + **Expand to Selected** - When you select an entity in the viewport, the **Entity Outliner** expands the hierarchy to show any child entities.
+   + **Expand Selected** - When you select an entity in the viewport, the **Entity Outliner** expands the hierarchy to show any child entities.
 
 You can also select an entity in the **Entity Outliner** to find it in the viewport or in reverse. This feature helps you find the entities that you want, especially in large levels.
 
-**To locate an entity or slice**
+**To locate an entity or prefab**
 
 1. In the **Entity Outliner**, right-click an entity and choose **Find in viewport**. The viewport navigates to the corresponding entity.
 
-   ![Find slices or entities in the viewport from the Entity Outliner.](/images/shared/shared-search-find-in-outliner.png)
+   ![Find prefabs or entities in the viewport from the Entity Outliner.](/images/shared/shared-search-find-in-outliner.png)
 
-1. In the **Entity Outliner**, right-click the slice or slice entity and choose **Find slice in Asset Browser**. The **Asset Browser** navigates to the corresponding slice.
-
-   ![Find entities or slices in the Asset Browser from the Entity Outliner.](/images/shared/shared-component-entity-outliner-search-find-in-asset-browser.png)
-
-1. In the viewport, right-click a slice or entity and choose **Find in Entity Outliner**. The **Entity Outliner** navigates to the corresponding item.
+2. In the viewport, right-click a prefab or entity and choose **Find in Entity Outliner**. The **Entity Outliner** navigates to the corresponding item.
 
    ![Find entities in the Entity Outliner from the viewport.](/images/shared/shared-viewport-search-find-in-outliner.png)
