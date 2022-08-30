@@ -49,17 +49,17 @@ Any changes to these fields will result in the Script Canvas Editor being unable
 
 1. Navigate or search for the desired node in the Node Palette. We will use AWSGameLiftPlayer in this example.
 
-    ![Image 0](/images/user-guide/scripting/script-canvas/text-replacement-0.png)
+    ![AWSGameLiftPlayer cateogry displayed in the Node Palette](/images/user-guide/scripting/script-canvas/text-replacement-0.png)
 
 1. Right-click on any of the nodes under AWSGameLiftPlayer.
 
-    ![Image 1](/images/user-guide/scripting/script-canvas/text-replacement-1.png)
+    ![Context menu displayed after right-clicking an AWSGameLiftPlayer node](/images/user-guide/scripting/script-canvas/text-replacement-1.png)
 
 1. Choose **Generate Translation**. This will open a File Explorer window to an auto-generated file named `AWSGameLiftPlayer.names`.
 
     If you do not wish to make any changes to the auto-generated data, you can close the Script Canvas Editor window and reopen it. Any changes from generating or editing the `.names` file will appear.
 
-    ![Image 2](/images/user-guide/scripting/script-canvas/text-replacement-2.png)
+    ![Nodes names in AWS Game Lift Player category displayed with spaces](/images/user-guide/scripting/script-canvas/text-replacement-2.png)
 
     In this example, all of the names are now separated by a space, and the naming follows the Script Canvas naming convention to use camel case.
 
@@ -95,7 +95,7 @@ You've successfully generated translation data for a node, but its category is s
 
     The nodes are now in the proper category with the given name:
 
-    ![Image 3](/images/user-guide/scripting/script-canvas/text-replacement-3.png)
+    ![Node palette with Player nodes placed in AWS Game Lift category](/images/user-guide/scripting/script-canvas/text-replacement-3.png)
 
 ### Example: Updating translation files
 
@@ -103,7 +103,7 @@ In this scenario, you don't need to generate a new translation file. Instead you
 
 1. Right-click on any of the nodes under AWSGameLiftPlayer.
 
-    ![Image 2](/images/user-guide/scripting/script-canvas/text-replacement-1.png)
+    ![Context menu displayed after right-clicking an AWSGameLiftPlayer node](/images/user-guide/scripting/script-canvas/text-replacement-1.png)
 
 1. Choose **Explore Translation Data** in the context menu. It will open a File Explorer window on the file that contains the relevant translation data. In this example, the file is `AWSGameLiftPlayer.names`.
 
