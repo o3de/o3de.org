@@ -18,6 +18,7 @@ The path to the material type. Materials must reference a material type, which p
 
 Indicates the version number of the material type that was used to create this material. The material type version update feature can use this to support backward compatibility with older versions of the material type. See [`version`](material-type-file-spec/#version) and [`versionUpdates`](material-type-file-spec/#versionupdates) in the Material Type File Specification.
 
+
 ### **parentMaterial** (*optional*)  
 The path to the parent material file. If specified, the material inherits the properties of another parent material. The parent material must have the same material type as the material. The path must be relative to the asset root or to the material file. If not specified, the material inherits default values directly from the material type.
 

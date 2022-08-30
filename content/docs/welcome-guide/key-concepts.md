@@ -11,13 +11,9 @@ toc: true
 O3DE consists of tools, editors, and systems that help you build your project. At its core, it provides the following:
 
 * Core modules that provide math, memory management, serialization, event messaging, and more.
-
 * Authoring tools such as the Editor and related applications for placing objects in a level, adding components, and scripting logic.
-
 * A plugin and extension system for adding more features.
-
 * Asset pipeline tools for converting, optimizing, and bundling assets.
-
 * A build system to build and package a shippable launcher.
 
 O3DE is comprised of sub-modules, called *Gems*. As you develop a project, you can add features and functionality by including Gems that supply those features and functions. Gems might include anything from assets such as materials, textures, and models, to development tools such as Script Canvas (a visual script editor), to entire runtime systems such as the Atom renderer, AI, and Physics.
@@ -178,7 +174,6 @@ O3DE includes two scripting technologies for creating logic and behaviors: *Scri
 - **Lua** is a powerful, fast, lightweight, embeddable scripting language. Lua facilitates quick iteration in your project because you can run your changes immediately without needing to recompile your source code.
 
 Learn more about Script Canvas and Lua in [Scripting Gameplay in O3DE](/docs/user-guide/scripting/).
-
 
 ## Release runtimes
 
