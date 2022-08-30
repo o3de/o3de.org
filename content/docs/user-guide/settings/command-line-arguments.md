@@ -12,7 +12,7 @@ You can the edit the Settings Registry in Open 3D Engine (O3DE) with command lin
 Most commonly, command line arguments are used to set values in the Settings Registry. Any Settings Registry value can be overridden by specifying the JSON pointer path and the new value to set with the `--regset` option. In the following example, when **O3DE Editor** is launched, the project path is overridden and set to `AutomatedTesting`:
 
 ```bash
-${CMAKE_BINARY_DIR}/bin/profile/Editor.exe --regset="/Amazon/AzCore/Bootstrap/project-path=AutomatedTesting"
+${CMAKE_BINARY_DIR}/bin/profile/Editor.exe --regset="/Amazon/AzCore/Bootstrap/project_path=AutomatedTesting"
 ```
 
 ## Command line support
@@ -37,11 +37,11 @@ The following are the command line options supported by the Settings Registry
 
 | Command Line Option | Description |
 | --- | --- |
-| `--regset=<JSON pointer path>=<value>` | Sets a value within the Settings Registry at the specified JSON pointer path. `--regset` is evaluated in left-to-right order inline with other `--regset` and `--regremove` options. |
-| `--regremove=<JSON pointer path>` | Removes a value form  the Settings Registry at the specified JSON pointer path. `--reremove` is evaluated in left-to-right order inline with other `--regremove` and `--regset` options. |
-| `--regdump=<JSON pointer path>` | Recursively dumps a value from the Settings Registry from the specified JSON pointer path to stdout. |
+| `--regset="<JSON pointer path>=<value>"` | Sets a value within the Settings Registry at the specified JSON pointer path. `--regset` is evaluated in left-to-right order inline with other `--regset` and `--regremove` options. |
+| `--regremove="<JSON pointer path>"` | Removes a value form  the Settings Registry at the specified JSON pointer path. `--regremove` is evaluated in left-to-right order inline with other `--regremove` and `--regset` options. |
+| `--regdump="<JSON pointer path>"` | Recursively dumps a value from the Settings Registry from the specified JSON pointer path to stdout. |
 | `--regdumpall` | Dumps the entire JSON document from the Settings Registry to stdout. This is equivalent to passing in the command line of `--regdump=""`. |
-| `--regset-file=<file-path>::<JSON anchor path>` | Merges a JSON formatted file into the Settings Registry. Files can be merged under the root ("") key by omitting the JSON anchor path (for example, `--regset-file="Registry/bootstrap.setreg`). Optionally a [JSON pointer path](https://datatracker.ietf.org/doc/html/rfc6901#section-5) can be supplied after the filepath, separated by two colons (`::`). The anchor path represents the JSON object where the settings are anchored.<br><br>**Example:** Merge a JSON file under the "/O3DE/Bootstrap" key<br>`--regset-file="Registry/bootstrap.setregpatch::/O3DE/Bootstrap"`<br>If the file path ends with `.setregpatch`, the file is merged using JSON Patch, otherwise the JSON Merge Patch algorithm is used.<br><br>{{< note >}}This can command supports merging any JSON formatted file. The file extension is only important in determining if the JSON Patch algorithm will be used in the `.setregpatch` case.{{< /note >}} |
+| `--regset-file="<file-path>::<JSON anchor path>"` | Merges a JSON formatted file into the Settings Registry. Files can be merged under the root ("") key by omitting the JSON anchor path (for example, `--regset-file="Registry/bootstrap.setreg"`). Optionally a [JSON pointer path](https://datatracker.ietf.org/doc/html/rfc6901#section-5) can be supplied after the filepath, separated by two colons (`::`). The anchor path represents the JSON object where the settings are anchored.<br><br>**Example:** Merge a JSON file under the "/O3DE/Bootstrap" key<br>`--regset-file="Registry/bootstrap.setregpatch::/O3DE/Bootstrap"`<br>If the file path ends with `.setregpatch`, the file is merged using JSON Patch, otherwise the JSON Merge Patch algorithm is used.<br><br>{{< note >}}This can command supports merging any JSON formatted file. The file extension is only important in determining if the JSON Patch algorithm will be used in the `.setregpatch` case.{{< /note >}} |
 
 ### Command line evaluation
 
@@ -53,8 +53,10 @@ This is relevant when the same options have been supplied on the command line mu
 | `Editor.exe --regset="/My/Setting/value=false" --regset="/My/Setting/value=true"`| The "/My/Setting/value" field will be set to `true` as the last option wins. |
 | `Editor.exe --regset="/My/Setting/value=false" --regremove="/My/Setting/value"`| The Settings Registry will not have a "/My/Setting/value" field due to `--regremove` as the last option. |
 | `Editor.exe --regremove="/My/Setting/value" --regset="/My/Setting/value=true"`| The Settings Registry will have a "/My/Setting/value" field that is set to `true` due to `--regset` as the last option. |
+| `Editor.exe --regdump="/My/Setting" --regdump="/Your/Setting"`| The values of the "/My/Setting" field and the "/Your/Setting" field will both be output. |
 
-## Command line argument types
+
+## Command line storage
 
 The command line that launched the application is parsed into *optional* and *positional* arguments and then they are stored in the Settings Registry as part of `ComponentApplication` initialization.
 

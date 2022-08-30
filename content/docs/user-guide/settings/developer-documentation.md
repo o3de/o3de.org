@@ -146,7 +146,7 @@ For example, on Android the following files are output to the project's asset ca
 When applications load in non-monolithic mode, the `<ExeDirectory>/Registry` is searched for a `cmake_dependencies.*.setreg` that contains the list of Gems to load. For non-host platforms such as Android or iOS where the files are deployed according to a specific layout, the `<ProjectCachePlatformRoot>/Registry` is searched as well. This is explained in more detail below in the [Loading Gems](#loading-gems) section.
 
 {{< note >}}
-If the GameLauncher or ServerLauncher application is launched before the Asset Processor has the opportunity to update the `bootstrap.game.<config>.setreg` file, then up-to-date settings might not be available until the next run of the Launcher application.
+If the GameLauncher or ServerLauncher application is launched before the Asset Processor Settings Registry Builder updates the `bootstrap.game.<config>.setreg` file, then up-to-date settings might not be available until the next run of the Launcher application.
 {{< /note >}}
 
 ### Gems outside of `<EngineRoot>/Gems`
@@ -204,7 +204,7 @@ Specializations are set of tags that can be used to filter which `.setreg` and `
 
 `<filename stem>.<tag1>.<tag2>...<tagN>.setreg`
 
-A settings registry file with the name of `bootstrap.game.windows.profile.setreg`, has a filename of "bootstrap" and tags of "game", "windows", and "profile". In order to merge the file using the `AZ::SettingsRegistry::MergeSettingsFolder` function, a specializations object with the tags of "game", "windows" and "profile" is needed. That specializations object can have additional tags added to it and i can still merge the `bootstrap.game.windows.profile.setreg` file.
+A settings registry file with the name of `bootstrap.game.windows.profile.setreg`, has a filename of "bootstrap" and tags of "game", "windows", and "profile".  In order to merge the file using the `AZ::SettingsRegistry::MergeSettingsFolder` function, a specializations object with the tags of "game", "windows" and "profile" is needed.  The specializations object can have additional tags than those listed.  As long as it contains the "game", windows" and "profile" tags, the `bootstrap.game.windows.profile.setreg` file will be merged.
 
 The specializations object can be thought of as an allowlist of `.<tag>` values that can be part of the settings registry file name.
 
@@ -310,63 +310,13 @@ The following table explains the order the example files are merged:
 
 ## Command line support
 
-The are several command line options you can use to query and modify the Settings Registry through a JSON pointer path. This functionality is available in any application that creates a global settings registry through `AZ::ComponentApplication`.
+The are several command line options you can use to query, create, modify and merge .setreg files to the Settings Registry.
+The command line options are detailed in the [Command Line Arguments](./command-line-arguments) document.
 
-The following applications support Settings Registry command line options:
+| Topic | Description |
+| - | - |
+| [Command Line Arguments](./command-line-arguments) | Learn how to modify the Settings Registry through the command line. |
 
-* **MaterialEditor**
-* **AssetProcessor**
-* **AssetProcessorBatch**
-* **AssetBuilder**
-* **AssetBundler**
-* **Editor**
-* **${project}.GameLauncher**
-* **${project}.ServerLauncher**
-* **SerializeContextTools**
-* **SharedManagementConsole**
-* **PythonBindingsExample**
-
-The following are the command line options supported by the Settings Registry
-
-| Command Line Option | Description |
-| --- | --- |
-| `--regset=<JSON pointer path>=<value>` | Sets a value within the Settings Registry at the specified JSON pointer path. `--regset` is evaluated in left-to-right order inline with other `--regset` and `--regremove` options. |
-| `--regremove=<JSON pointer path>` | Removes a value form  the Settings Registry at the specified JSON pointer path. `--reremove` is evaluated in left-to-right order inline with other `--regremove` and `--regset` options. |
-| `--regdump=<JSON pointer path>` | Recursively dumps a value from the Settings Registry from the specified JSON pointer path to stdout. |
-| `--regdumpall` | Dumps the entire JSON document from the Settings Registry to stdout. This is equivalent to passing in the command line of `--regdump=""`. |
-| `--regset-file=<file-path>::<JSON anchor path>` | Merges a JSON formatted file into the Settings Registry. Files can be merged under the root ("") key by omitting the JSON anchor path (for example, `--regset-file="Registry/bootstrap.setreg`). Optionally a [JSON pointer path](https://datatracker.ietf.org/doc/html/rfc6901#section-5) can be supplied after the filepath, separated by two colons (`::`). The anchor path represents the JSON object where the settings are anchored.<br><br>**Example:** Merge a JSON file under the "/O3DE/Bootstrap" key<br>`--regset-file="Registry/bootstrap.setregpatch::/O3DE/Bootstrap"`<br>If the file path ends with `.setregpatch`, the file is merged using JSON Patch, otherwise the JSON Merge Patch algorithm is used.<br><br>{{< note >}}This can command supports merging any JSON formatted file. The file extension is only important in determining if the JSON Patch algorithm will be used in the `.setregpatch` case.{{< /note >}} |
-
-### Command line evaluation
-
-The `--regset`, `--regset-file` and `--regremove` options are evaluated in left-to-right order.
-This is relevant when the same options have been supplied on the command line multiple times or when a setting is both removed and set.
-
-| Command line options | Evaluation Result |
-| --- | --- |
-| `Editor.exe --regset="/My/Setting/value=false" --regset="/My/Setting/value=true"`| The "/My/Setting/value" field will be set to `true` as the last option wins. |
-| `Editor.exe --regset="/My/Setting/value=false" --regremove="/My/Setting/value"`| The Settings Registry will not have a "/My/Setting/value" field due to `--regremove` as the last option. |
-| `Editor.exe --regremove="/My/Setting/value" --regset="/My/Setting/value=true"`| The Settings Registry will have a "/My/Setting/value" field that is set to `true` due to `--regset` as the last option. |
-
-### Using `--regset`
-
-The Project Path can be read from any `.setrreg` file or from the command line via the "/Amazon/AzCore/Bootstrap/project\_path" entry. It's preferable set on a per user basis using the global user registry location in the user's `~/.o3de/Registry` directory.
-
-After the Settings Registry merges in the settings registry files from the user's global registry, it then checks the command line for all `--regset` options and merges each `<JSON pointer path, value>` pair into the Settings Registry as in the following example:
-
-```bash
-# Override the Project via "project_path" value in the Settings Registry
-# The SerializeContextTools will load up the Gems needed to run the project located at <EngineRoot>/AutomatedTesting
-SerializeContextTools.exe --regset="/Amazon/AzCore/Bootstrap/project_path=AutomatedTesting" convert -files=AutomatedTesting/project.physicsconfiguration -ext=physics.setreg
-```
-
-### Using `--regdump`
-
-You can specify the `--regdump` option without a JSON pointer path to dump the entire Settings Registry to stdout. In the following example, the JSON pointer path "/Amazon/AzCore/Bootstrap" recursively dumps the Settings Registry keys and values beneath "/Amazon/AzCore/Bootstrap".
-
-```bash
-# Dumps all the values underneath the "/Amazon/AzCore/Bootstrap" to stdout
-Editor.exe --regdump="/Amazon/AzCore/Bootstrap"
-```
 
 ## Convert `.ini` files to JSON
 

@@ -1,5 +1,5 @@
 ---
-title: Settings Registry Script API 
+title: Settings Registry Script API
 linkTitle: Script API
 description: Learn how the Settings Registry Script API exposes the Settings registry to Lua, Python, and Script Canvas in Open 3D Engine (O3DE).
 weight: 300
@@ -132,7 +132,7 @@ def test_settings_registry():
         print(f"Successfully merged setreg file '{ExampleTestFileSetreg}' to local settings registry")
         registryVal = localSettingsRegistry.GetString('/AutomatedTesting/ScriptingTestArray/3')
         if registryVal:
-        print(f"Settings Registry contains '/AutomatedTesting/ScriptingTestArray/3'='{registryVal.value()}' merged from the {ExampleTestFileSetreg}")
+            print(f"Settings Registry contains '/AutomatedTesting/ScriptingTestArray/3'='{registryVal.value()}' merged from the {ExampleTestFileSetreg}")
 
     # Add the 'folder' to the Settings Registry so that only non-specialized .setreg
     # and .setreg files which contains only a 'folder' tag are merged into the Setting Registry

@@ -7,12 +7,12 @@ weight: 500
 
 [AZ::Console](/docs/user-guide/programming/az-console/) allows you to initiate Console commands by setting a JSON value under a specific key in the Settings Registry. The Console hooks into the Settings Registry Notification system and also the JSON Patch reporting system to detect changes to Settings Registry keys underneath the following objects:
 
-* `/O3DE/Autoexec/ConsoleCommands` - Console commands under this object are merged into `bootstrap.game.<config>.setreg` by the Settings Registry builder and are available to run in Launcher applications.  
+* `/O3DE/Autoexec/ConsoleCommands` - Console commands under this object are merged into `bootstrap.game.<config>.setreg` by the Settings Registry builder and are available to run in Launcher applications.
 * `/Amazon/AzCore/Runtime/ConsoleCommands` - Console commands under this object are *not* merged to the `bootstrap.game.<config>.setreg` and will *not* run in Launcher applications.
 
 {{< note >}}
 In Launcher applications, Settings Registry files can reliably load only the [bootstrap.game.<config>.setreg](https://github.com/o3de/o3de/blob/6b62d1131116c074831902cb6e8d30271d673288/Code/Framework/AzGameFramework/AzGameFramework/Application/GameApplication.cpp#L90-L99) file in all build configuration and host platform combinations.
-{{< /note >}}  
+{{< /note >}}
 
 ## Run Console commands from a file
 
@@ -138,7 +138,7 @@ You can also run Console commands by modifying keys within the Settings Registry
 //! The AZ::IConsole::ConsoleAutoexecCommandKey variable is set to the Settings Registry Console commands root key:
 //! "/O3DE/Autoexec/ConsoleCommands"
 using FixedValueString = AZ::SettingsRegistryInterface::FixedValueString;
-constexpr auto tScaleCVar = FixedValueString(AZ::IConsole::ConsoleRootCommandKey) + "/t_scale;
+constexpr auto tScaleCVar = FixedValueString(AZ::IConsole::ConsoleRootCommandKey) + "/t_scale";
 auto SettingsRegistry = AZ::SettingsRegistry::Get();
 settingsRegistry->Set(tScaleCVar, "0.5");
 ```

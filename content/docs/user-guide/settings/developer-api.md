@@ -7,7 +7,7 @@ weight: 800
 
 Details the available set of APIs provided by the Settings Registry.  Examples are provided for the ability to query settings, using both the query and visitor APIs. How to define and update settings using the setter APIs.
 
-Settings can be merged from files or in-memory JSON documents using the merge API.  Finally notifications of when settings have been modified or removed is available using the notification API
+Settings can be merged from files or in-memory JSON documents using the merge API.  Finally, notifications of when settings have been modified or removed is available using the notification API.
 
 ### Query API
 
@@ -81,8 +81,7 @@ The following example demonstrates using the visitor API to gather active gem in
 
 ```c++
 // Queries the settings registry to get the list active gems targets and source paths
-auto GemSettingsVisitor = [&settingsRegistry, &gemInfoList]
-(const AZ::SettingsRegistryInterface::VisitArgs& gemVisitArgs)
+auto GemSettingsVisitor = [&settingsRegistry, &gemInfoList](const AZ::SettingsRegistryInterface::VisitArgs& gemVisitArgs)
 {
     auto FindGemInfoByName = [&gemVisitArgs](const GemInfo& gemInfo)
     {

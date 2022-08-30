@@ -228,7 +228,7 @@ ly_enable_gems(PROJECT_NAME AtomTest GEM_FILE ${pal_dir}/enabled_gems.cmake)
 
 ### Explicit Gem activation
 
-As mentioned in the [Loading gems](#loading-gems) section, the building of Gems is determined by the name of the Gems in the `enabled_gems.cmake` file. This file should not be manually modified. Instead use the `o3de.py` `enable-gem` and `disable gem` commands or **Project Manager** to add or remove Gems. This section explains how to enable and disable a Gem for building, as well as how to turn off autoloading of Gems using the Settings Registry.
+As mentioned in the [Loading gems](#loading-gems) section, the building of Gems is determined by the name of the Gems in the `enabled_gems.cmake` file. This file should not be manually modified. Instead use the `o3de.py` `enable-gem` and `disable-gem` commands or **Project Manager** to add or remove Gems. This section explains how to enable and disable a Gem for building, as well as how to turn off autoloading of Gems using the Settings Registry.
 
 The following example demonstrates using the `o3de.py` Python script commands to add and remove explicit Gem activation for a Gem named "Sponza" in the AutomatedTesting project:
 
