@@ -7,16 +7,16 @@ weight: 800
 
 Details the available set of APIs provided by the Settings Registry.  Examples are provided for the ability to query settings, using both the query and visitor APIs. How to define and update settings using the setter APIs.
 
-Settings can be merged from files or in-memory JSON documents using the merge API.  Finally, notifications of when settings have been modified or removed is available using the notification API.
+Settings can be merged from files or in-memory JSON documents using the merge API.  Finally, notifications of when settings have been modified or removed are available using the notification API.
 
 ### Query API
 
-The [query API](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L224-L260) supports directly querying the types of `bool`, `int64_t`, `double`, `AZStd::string`, `AZStd::fixed_string` and any object reflected to the `SerializeContext`. The getter method of querying objects from the `SerializeContext` is safe to use, but it should be seen as an implementation detail of the Settings Registry. The `SettingsRegistryInterface::GetObject` interface will remain stable, but no assumptions should be made on how objects are serialized.
+The [query API](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L224-L260) supports directly querying the types of `bool`, `int64_t`, `double`, `AZStd::string`, `AZStd::fixed_string`, and any object reflected to the `SerializeContext`. The getter method of querying objects from the `SerializeContext` is safe to use, but it should be respected as an implementation detail of the Settings Registry. The `SettingsRegistryInterface::GetObject` interface will remain stable, but no assumptions should be made on how objects are serialized.
 
 The following example demonstrates the query API for builtin settings types (`bool`, `AZ::s64`, `AZ::u64` `double`, `(fixed_)string`):
 
 ```c++
-// Setting FileIOBase alias based on values within the settings registry
+// Setting FileIOBase alias based on values within the Settings Registry
 using FixedValueString = AZ::SettingsRegistryInterface::FixedValueString
 if (FixedValueString pathAlias;
      m_settingsRegistry->Get(pathAlias, AZ::SettingsRegistryMergeUtils::FilePathKey_CacheRootFolder))
@@ -39,7 +39,7 @@ if (AZ::s64 intValue;
 
 #### Load C++ class objects with the query API
 
-In order to load C++ Class Objects using the Settings Registry, the type itself must be reflected to the Serialize Context in order to use the query API. Instead of calling the `SettingsRegistryInterface::Get` method for querying builtin JSON types, the `SettingsRegistry::GetObject` function is used.
+To load C++ class objects using the Settings Registry, the type itself must be reflected to the `SerializeContext` to use the query API. Instead of calling the `SettingsRegistryInterface::Get` method for querying built-in JSON types, the `SettingsRegistry::GetObject` function is used.
 
 The following example shows how to use the `SettingsRegistryInterface::GetObject` function to load the SettingsRegistry into an `AzPhysics::SceneConfiguration`.
 
@@ -73,14 +73,14 @@ if (settingsRegistry)
 
 ### Visitor API
 
-The [visitor API](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L185-L194) supports recursively visiting the JSON object and array children starting at a specified JSON pointer. The visitor API allows for processing of each child field which isn't available when using the `GetObject` API. It also provides type flexibility when dealing with the JSON data. A visitor for the settings registry must implement the `AZ::SettingsRegistryInterface::Visitor` class. An instance of that class can be supplied to the `AZ::SettingsRegistryInterface::Visit()` method.
+The [visitor API](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h#L185-L194) supports recursively visiting the JSON object and array children starting at a specified JSON pointer. The visitor API allows for processing each child field which isn't available when using the `GetObject` API. It also provides type flexibility when dealing with JSON data. A visitor for the Settings Registry must implement the `AZ::SettingsRegistryInterface::Visitor` class. An instance of that class can be supplied to the `AZ::SettingsRegistryInterface::Visit()` method.
 
 The visitor is recommended when serializing in/out complex objects that don't have any `SerializeContext` reflection. Since it isn't tied to the `SerializeContext`, the same logic could be used to read objects from the Settings Registry using the JSON facilities available within other programming languages such as Python, JavaScript, or C#.
 
-The following example demonstrates using the visitor API to gather active gem info which is populated under the settings object at "/O3DE/Gems".  This is done by the [GetGemsInfo](https://github.com/o3de/o3de/blob/adb37ad54d69bcef23c5b7f70c77e669f8202194/Code/Framework/AzFramework/AzFramework/Gem/GemInfo.cpp#L27-L64) function.
+The following example demonstrates using the visitor API to gather active gem info populated under the settings object at "/O3DE/Gems".  This is done by the [GetGemsInfo](https://github.com/o3de/o3de/blob/adb37ad54d69bcef23c5b7f70c77e669f8202194/Code/Framework/AzFramework/AzFramework/Gem/GemInfo.cpp#L27-L64) function.
 
 ```c++
-// Queries the settings registry to get the list active gems targets and source paths
+// Queries the Settings Registry to get the list active gems targets and source paths
 auto GemSettingsVisitor = [&settingsRegistry, &gemInfoList](const AZ::SettingsRegistryInterface::VisitArgs& gemVisitArgs)
 {
     auto FindGemInfoByName = [&gemVisitArgs](const GemInfo& gemInfo)
@@ -176,7 +176,7 @@ You can use the helper visitor callback function, as in the following example:
 
 ```c++
 AZStd::unordered_map<AZStd::string, int> fieldToIntMap;
-auto AppendObjectFields = [&fieldToIntMap](const AZ::SettingsRegistryInterface::VisitArgs& vistArgs)
+auto AppendObjectFields = [&fieldToIntMap](const AZ::SettingsRegistryInterface::VisitArgs& visitArgs)
 {
     if (int value{}; registry.Get(value, visitArgs.m_jsonKeyPath))
     {
@@ -239,7 +239,7 @@ void SceneConfiguration::Reflect(AZ::ReflectContext* context)
     }
 }
 
-// ... Later on the SceneConfiguration class can be stored into the SettingsRegistry
+// ... Later, the SceneConfiguration class can be stored in the Settings Registry
 AzPhysics::SceneConfiguration sceneConfig;
 sceneConfig.m_sceneName = "PhysX Scene 1";
 bool configurationStored = false;
@@ -276,7 +276,7 @@ AZ::SettingsRegistryInterface::NotifyCallback assetCacheChangedCB =
 
 {
     // The SettingsRegistryInterface::RegisterNotifier function returns an AZ event handler that needs to be stored for as long
-    // as desired to received the notification events
+    // as desired to receive the notification events
     AZ::SettingsRegistryInterface::NotifyEventHandler assetChangedHandler = registry.RegisterNotifier(AZStd::move(assetCacheChangedCB));
     // ...
     registry.Set("/O3DE/Runtime/FilePaths/CacheRootFolder", "/home/testuser/TestCache");
@@ -355,11 +355,11 @@ If the preceding `streamer.editor.setreg` is merged, the settings registry conta
 
 The values that are associated with the JSON array underneath the "/O3DE/AzFramework/MyArray" key from the merger of the `streamer.setreg` file have been updated with the values of the `streamer.editor.setreg` file.
 
-### Merge settings registry files from directories
+### Merge Settings Registry files from directories
 
-Merging a specific `.setreg` or `.setregpatch` file or merging a JSON document requires only specifying the file name or JSON content. Merging a directory containing `.setreg` or `.setregpatch` files requires the not only the directory name, but also specifying a list of tags known as *specializations* to the merge API.
+Merging a specific `.setreg` or `.setregpatch` file or merging a JSON document requires only specifying the file name or JSON content. Merging a directory containing `.setreg` or `.setregpatch` files requires not only the directory name but also specifying a list of tags known as *specializations* to the merge API.
 
-The following example contains the specializations of "automatedtesting", "automatedtesting\_gamelauncher", "game" and the current build configuration tag as part of it's name (debug, profile, release):
+The following example contains the specializations of `automatedtesting`, `automatedtesting_gamelauncher`, `game` and the current build configuration tag as part of its name (debug, profile, release):
 
 ```c++
 SettingsRegistryInterface::Specializations specializations{"automatedtesting", "automatedtesting_gamelauncher", "game", AZ_BUILD_CONFIGURATION_TYPE };
@@ -387,7 +387,7 @@ The details of specializations are explained in the following sections on Auxili
 
 The Settings Registry merge utilities are a set of functions located in `AzCore/Settings/SettingsRegistryMergeUtils.h` which contains implementation of merging of common files, directory locations, and the command line. It also contains functions for querying and setting a specialization within the Settings Registry underneath the key of "/Amazon/AzCore/Settings/Specializations". Specializations can be used for filtering which `*.setreg` files to merge when `SettingsInterface::MergeSettingsFolder` is invoked.
 
-The Settings Registry Merge Utilities also contains a function for dumping JSON value at a specific JSON pointer path to an `AZ::IO::GenericStream`.
+The Settings Registry Merge Utilities also contains a function for dumping JSON values at a specific JSON pointer path to an `AZ::IO::GenericStream`.
 
 The following list provides links to the various auxiliary APIs in `AzCore/Settings/SettingsRegistryMergeUtils.h`:
 
@@ -397,4 +397,4 @@ The following list provides links to the various auxiliary APIs in `AzCore/Setti
 
 ## O3DE Manifest utils API
 
-The Settings Registry Merge Utilities also provides the [O3DE Manifest Utils API](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L349-L404) which is a set of helper functions for visiting the set of active Gems as well as recursively visiting the O3DE manifest "external\_subdirectories" to determine the set of all registered Gems.
+The Settings Registry Merge Utilities also provides the [O3DE Manifest Utils API](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L349-L404), which is a collection of helper functions for visiting the set of active Gems as well as recursively visiting the O3DE manifest "external_subdirectories" to determine the set of all registered Gems.

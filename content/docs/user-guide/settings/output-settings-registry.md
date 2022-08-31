@@ -1,11 +1,11 @@
 ---
 title: Output the Settings Registry to a Stream with C++
 linkTitle: Output the Settings Registry
-description: Learn how to dump an in-memory Settings Registry to stream using in C++ in Open 3D Engine (O3DE).
+description: Learn how to dump an in-memory Settings Registry to stream using C++ in Open 3D Engine (O3DE).
 weight: 600
 ---
 
-You might need to store the Settings Registry or a section of the Settings Registry to disk for later access. Sometimes, you might need to store the Settings Registry in a string within a running application for further processing. This topic provides examples of how to dump portions of the Settings Registry to disk at a specific key, while either maintaining the ancestor JSON key hierarchy, or excluding any ancestor key hierarchy.
+You might need to store the Settings Registry or a section of the Settings Registry to disk for later access. Sometimes, you might need to store the Settings Registry in a string within a running application for further processing. This topic provides examples of how to dump portions of the Settings Registry to disk at a specific key while either maintaining the ancestor JSON key hierarchy or excluding any ancestor key hierarchy.
 
 ## Use the `DumpSettingsRegistryToStream` function
 
@@ -17,14 +17,14 @@ struct DumperSettings
 {
     //! Determines if a PrettyWriter should be used when dumping the Settings Registry
     bool m_prettifyOutput{};
-    //! Include filter which is used to indicate which paths of the Settings Registry
+    //! Include filter that is used to indicate which paths of the Settings Registry
     //! should be traversed.
-    //! If the include filter is empty then all paths underneath the JSON pointer path are included
-    //! otherwise the include filter invoked and if it returns true does it proceed with traversal continues down the path
+    //! If the include filter is empty, then all paths underneath the JSON pointer path are included
+    //! Otherwise, the include filter is invoked, and if it returns true, traversal continues down the path
     AZStd::function<bool(AZStd::string_view path)> m_includeFilter;
 };
 
-//! Dumps the supplied settings registry at the path specified by key if it exist to the AZ::IO::GenericStream
+//! Dumps the supplied Settings Registry at the path specified by key if it exist to the AZ::IO::GenericStream
 //! @param key is a JSON pointer path to dumping settings recursively from
 //! @param stream is an AZ::IO::GenericStream that supports writing
 //! @param dumperSettings are used to determine how to format the dumped output
@@ -76,7 +76,7 @@ AZStd::string stringBuffer;
 AZ::IO::ByteContainerStream stringStream(&stringBuffer);
 if (!AZ::SettingsRegistryMergeUtils::DumpSettingsRegistryToStream(*registry, "/Amazon/Editor/Preferences", stringStream, dumperSettings))
 {
-    AZ_Warning("SEditorSettings", false, R"(Unable to dump the Editor Preferences settings to from the settings registry)");
+    AZ_Warning("SEditorSettings", false, R"(Unable to dump the Editor Preferences settings to from the Settings Registry)");
     return;
 }
 
@@ -96,7 +96,7 @@ Results in:
 }
 ```
 
-This shows that the ancestor objects of "Amazon", "Editor", and "Preferences" aren't output to the dumped text data. If you need to write out the ancestor JSON objects to the Editor Preference settings, then set the `m_jsonPointerPrefix` variable in the `DumperSettings`.
+This shows that the ancestor objects of "Amazon", "Editor", and "Preferences" don't output to the dumped text data. If you need to write out ancestor JSON objects to the Editor Preference settings, set the `m_jsonPointerPrefix` variable in the `DumperSettings`.
 
 ## Storing Editor Preferences using a key and an anchor
 
@@ -142,7 +142,7 @@ The preceding example generates the following result:
 
 ## Storing Editor Preferences using the root key and a filter
 
-Dumping the entire root of the Settings Registry with an include filter writes the ancestor objects of a setting that is anchored to a specified key. The following example invokes the `SettingsRegistryMergeUtils::DumpSettingsRegistryToStream` function with a key parameter of "" (the root) and an includes a filter that maintains any JSON objects that have a JSON pointer with the `"/Amazon/Editor/Preferences"` prefix:
+Dumping the entire root of the Settings Registry with an include filter writes the ancestor objects of a setting that is anchored to a specified key. The following example invokes the `SettingsRegistryMergeUtils::DumpSettingsRegistryToStream` function with a key parameter of "" (the root) and includes a filter that maintains any JSON objects that have a JSON pointer with the `"/Amazon/Editor/Preferences"` prefix:
 
 ```c++
 AZ::SettingsRegistryMergeUtils::DumperSettings dumperSettings;
@@ -196,7 +196,7 @@ The following example shows how to use the `SettingsRegistryMergeUtils::DumpSett
 
 ```c++
 //! Recurses over the entire Settings Registry to the Editor Preferences settings
-//! The dumper settings is supplied an include filter to only they keys on the way to the editor preferences key of "/Amazon/Editor/Preferences"
+//! The dumper settings is supplied an include filter to only the keys on the way to the editor preferences key of "/Amazon/Editor/Preferences"
 //! as well as all settings below the"/Amazon/Editor/Preferences"
 AZ::SettingsRegistryMergeUtils::DumperSettings dumperSettings;
 dumperSettings.m_prettifyOutput = true;

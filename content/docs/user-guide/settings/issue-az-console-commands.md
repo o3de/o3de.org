@@ -11,7 +11,7 @@ weight: 500
 * `/Amazon/AzCore/Runtime/ConsoleCommands` - Console commands under this object are *not* merged to the `bootstrap.game.<config>.setreg` and will *not* run in Launcher applications.
 
 {{< note >}}
-In Launcher applications, Settings Registry files can reliably load only the [bootstrap.game.<config>.setreg](https://github.com/o3de/o3de/blob/6b62d1131116c074831902cb6e8d30271d673288/Code/Framework/AzGameFramework/AzGameFramework/Application/GameApplication.cpp#L90-L99) file in all build configuration and host platform combinations.
+In Launcher applications, Settings Registry files can only reliably load the [bootstrap.game.<config>.setreg](https://github.com/o3de/o3de/blob/6b62d1131116c074831902cb6e8d30271d673288/Code/Framework/AzGameFramework/AzGameFramework/Application/GameApplication.cpp#L90-L99) file in all build configuration and host platform combinations.
 {{< /note >}}
 
 ## Run Console commands from a file
@@ -24,7 +24,7 @@ You can run Console commands from files by using the `AZ::IConsole::ExecuteConfi
 
 ### Config file with Console commands(`.cfg`)
 
-The following example demonstrates adding commands to a Windows style `.cfg` file:
+The following example demonstrates adding commands to a Windows-style `.cfg` file:
 
 **user.cfg**
 
@@ -45,7 +45,7 @@ bg_ConnectToAssetProcessor false
 
 ### Settings Registry file with Console commands (`.setreg`)
 
-The settings underneath the "/O3DE/Autoexec/ConsoleCommands" object will be added to the aggregate `bootstrap.game.\<config>.setreg` created by the Settings Registry builder when **Asset Processor** processes the `user.setreg` file. The `/Amazon/AzCore/Runtime/ConsoleComamnds` settings will not be added, because they are [excluded](https://github.com/o3de/o3de/blob/e878b06166dc4953b8c6c79b745375a1db7c341f/Registry/setregbuilder.assetprocessor.setreg#L22) in Asset Processor settings.
+The settings underneath the "/O3DE/Autoexec/ConsoleCommands" object will be added to the aggregate `bootstrap.game.\<config>.setreg` created by the Settings Registry builder when **Asset Processor** processes the `user.setreg` file. The `/Amazon/AzCore/Runtime/ConsoleComamnds` settings will not be added because they are [excluded](https://github.com/o3de/o3de/blob/e878b06166dc4953b8c6c79b745375a1db7c341f/Registry/setregbuilder.assetprocessor.setreg#L22) in Asset Processor settings.
 
 **user.setreg**
 
@@ -170,7 +170,7 @@ While not directly related to the Settings Registry being able to run Console co
 1. Create the Settings Registry.
 1. Create the AZ Console.
 1. Merge all Settings Registry files (`.setreg`/`.setregpatch`) to the registry and attempt to invoke any Console commands underneath the monitored Settings Registry Console Command keys. Any commands that cannot run are added to the AZ Console deferred command queue.
-1. Load Dynamic Modules (Gem modules) . Sends the `GemsLoaded` lifecycle event. For each loaded Gem, deferred commands attempt to [execute](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Module/Module.h#L99-L114). Any that succeed are removed from the deferred command queue.
+1. Load Dynamic Modules (Gem modules). Sends the `GemsLoaded` lifecycle event. For each loaded Gem, deferred commands attempt to [execute](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Module/Module.h#L99-L114). Any that succeed are removed from the deferred command queue.
 1. Attempt to run Console commands in the `user.cfg` from the Projects asset cache folder (usually `<project-root>/Cache/<platform>`).
 1. Run Console commands specified on the command line. Specified using command option notation `-<console command name> <args>`). For example, `-loadlevel <levelname>`.
 1. Activate System Components in Gems.

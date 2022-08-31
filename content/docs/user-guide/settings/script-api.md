@@ -1,25 +1,25 @@
 ---
 title: Settings Registry Script API
 linkTitle: Script API
-description: Learn how the Settings Registry Script API exposes the Settings registry to Lua, Python, and Script Canvas in Open 3D Engine (O3DE).
+description: Learn how the Settings Registry Script API exposes the Settings Registry to Lua, Python, and Script Canvas in Open 3D Engine (O3DE).
 weight: 300
 ---
 
-The Settings Registry is bound to Open 3D Engine (O3DE) script languages via reflection to the Behavior Context. The code that performs the reflection to the Behavior Context can be found in [SettingsRegistryScriptUtils](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryScriptUtils.cpp#L377-L390).
+The Settings Registry is bound to Open 3D Engine (O3DE) script languages via reflection to the Behavior Context. The code that performs the reflection to the Behavior Context is found in [SettingsRegistryScriptUtils](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryScriptUtils.cpp#L377-L390).
 
 ## API details
 
-The following tables detail the Settings Registry API classes, properties, and methods that are exposed to script languages.
+The following tables detail the Settings Registry API classes, properties, and methods exposed to script languages.
 
 | Name | <div style="width:300px">Description</div> | Type | Arguments | Return |
 | :-- | :-- | :-- | :-- | :-- |
 | `SettingsRegistryInterface` | Abstract class that provides access to the Settings Registry `<key, value>` setting, querying, and removal functions. | Class | NA | NA |
 | `g_SettingsRegistry` | Global Property that provides access to the Global Settings Registry. | Property | NA | NA |
 | `SettingsRegistry` | Function that creates a new Settings Registry object. | Method | None | SettingsRegistryInterface |
-| `MergeSetting` | Merges the supplied JSON document into the Settings Registry. Uses the [JSON Merge Patch](https://tools.ietf.org/html/rfc7386#section-1) format by default. | Method | <ul><li>String `json_data` - JSON string document to merge to Settings Registry.</li><li>Enum `format` - Format of the JSON file being merged. By default this is JsonMergePatch. Specify `settingsregistry.JsonPatch` or `settingsregistry.JsonMergePatch`(default).</li></ul> | Boolean |
-| `MergeSettingFile` | Merges the supplied `.setreg` file into the Settings Registry at the specified JSON Pointer. Uses the [JSON Merge Patch](https://tools.ietf.org/html/rfc7386#section-1) format by default. | Method | <ul><li>String `file_path` - Path to `.setreg` file to merge into Settings Registry.</li><li>String `json_root_key` - JSON Pointer where merged JSON content should be rooted.</li><li>Enum `format` - Format of the JSON file being merged. By default this is JsonMergePatch. Specify `settingsregistry.JsonPatch` or `settingsregistry.JsonMergePatch`(default).</li></ul> | Boolean |
-| `MergeSettingFolder` | Enumerates the `.setreg` files within the specified directory and merges them into the Settings Registry. Uses the [JSON Merge Patch](https://tools.ietf.org/html/rfc7386#section-1) format.<br><br>Specializations are tags that are checked against the text between each pair of dots(*.*) within the `.setreg` filename. For example, the filename `cmake_dependencies.automatedtesting.automatedtesting_gamelauncher.setreg` contains two tags *automatedtesting* and *automatedtesting\_gamelauncher*. Each tag of the filename must match the tags specified in the specialization list.<br><br>Check the [MergeSettingFolder specialization table](#mergesettingfolder-specialization-table) below for more information.<br><br>Returns `True` if the supplied folder was merged. Whether each specific file was merged successfully is not part of the return result. | Method | <ul><li>String `folder_path` - Directory containing `.setreg` files to merge into Settings Registry.</li><li>List `specializations` - List of tags to filter `.setreg` files.</li><li>String `platform` - OS Platform folder name to walk when locating for `.setreg` files.</li></ul> | Boolean |
-| `DumpSettings` | Dumps the JSON value specified at the JSON Pointer if found within the Settings Registry. The result of the dumped value is store in the `outputString` argument.<br><br>To dump the entire Settings Registry a `json_pointer` of empty string ("") must be provided.<br><br>Returns `True` if the JSON value at the JSON Pointer was dumped successfully. | Method | <ul><li>String `json_pointer` - JSON Pointer whose JSON value should be dumped.</li><li>String `outputString` - Output variable that is populated with dumped JSON value content if successful.</li></ul> | Boolean |
+| `MergeSetting` | Merges the supplied JSON document into the Settings Registry. Uses the [JSON Merge Patch](https://tools.ietf.org/html/rfc7386#section-1) format by default. | Method | <ul><li>String `json_data` - JSON string document to merge to Settings Registry.</li><li>Enum `format` - Format of the JSON file being merged, by default, this is JsonMergePatch. Specify `settingsregistry.JsonPatch` or `settingsregistry.JsonMergePatch`(default).</li></ul> | Boolean |
+| `MergeSettingFile` | Merges the supplied `.setreg` file into the Settings Registry at the specified JSON Pointer. Uses the [JSON Merge Patch](https://tools.ietf.org/html/rfc7386#section-1) format by default. | Method | <ul><li>String `file_path` - Path to `.setreg` file to merge into Settings Registry.</li><li>String `json_root_key` - JSON Pointer where merged JSON content should be rooted.</li><li>Enum `format` - Format of the JSON file being merged, by default, this is JsonMergePatch. Specify `settingsregistry.JsonPatch` or `settingsregistry.JsonMergePatch`(default).</li></ul> | Boolean |
+| `MergeSettingFolder` | Enumerates the `.setreg` files within the specified directory and merges them into the Settings Registry. Uses the [JSON Merge Patch](https://tools.ietf.org/html/rfc7386#section-1) format.<br><br>Specializations are tags that are checked against the text between each pair of dots(*.*) within the `.setreg` filename. For example, the filename `cmake_dependencies.automatedtesting.automatedtesting_gamelauncher.setreg` contains two tags *automatedtesting* and *automatedtesting_gamelauncher*. Each tag of the filename must match the tags specified in the specialization list.<br><br>Check the [MergeSettingFolder specialization table](#mergesettingfolder-specialization-table) below for more information.<br><br>Returns `True` if the supplied folder was merged. Whether each specific file was merged successfully is not part of the return result. | Method | <ul><li>String `folder_path` - Directory containing `.setreg` files to merge into Settings Registry.</li><li>List `specializations` - List of tags to filter `.setreg` files.</li><li>String `platform` - OS Platform folder name to walk when searching for `.setreg` files.</li></ul> | Boolean |
+| `DumpSettings` | Dumps the JSON value specified at the JSON Pointer if found within the Settings Registry. The result of the dumped value is stored in the `outputString` argument.<br><br>To dump the entire Settings Registry, a `json_pointer` with an empty string ("") must be provided.<br><br>Returns `True` if the JSON value at the JSON Pointer was dumped successfully. | Method | <ul><li>String `json_pointer` - JSON Pointer whose JSON value should be dumped.</li><li>String `outputString` - Output variable that is populated with dumped JSON value content if successful.</li></ul> | Boolean |
 | `GetBool` | Queries the Settings Registry for a boolean value at the provided JSON Pointer. If a boolean is found its value is stored in the `boolValue` argument.<br><br>The return value of `GetBool` indicates that a boolean key at the specific JSON Pointer was found. If the return value is `True`, then the actual value of the boolean is stored in `boolValue`. | Method | <ul><li>String `json_pointer` - JSON Pointer to lookup for the boolean value.</li><li>Boolean `boolValue` - Output variable which is set with the boolean result if successful.</li></ul> | Boolean |
 | `SetBool` | Sets the JSON Pointer in the Settings Registry to the specified boolean value. | Method | <ul><li>String `json_pointer` - JSON Pointer to JSON key where the boolean value will be set.</li><li>Boolean `boolValue` - Boolean value to set at the JSON Pointer.</li></ul> | Boolean |
 | `GetInt` | Queries the Settings Registry for an integer value at the provided JSON Pointer. If an integer is found, its value is stored in the `intValue` argument. | Method | <ul><li>String `json_pointer` - JSON Pointer to lookup for integer value.</li><li>Integer `intValue` - Output variable which is set with the integer result if successful.</li></ul> | Boolean |
@@ -44,7 +44,7 @@ The following table illustrates when a `.setreg` file will be merged by the `Mer
 
 ## Examples
 
-The settings registry can be accessed through O3DE's supported script languages, Lua and Python.
+The Settings Registry can be accessed through O3DE's supported script languages, Lua and Python.
 
 ### Python example
 
@@ -64,7 +64,7 @@ def test_settings_registry():
         if dumpedSettings:
             print("Full Settings Registry dumped successfully\n{}", dumpedSettings.value())
 
-    # Making a script local settings registry
+    # Making a script local Settings Registry
     localSettingsRegistry = SettingsRegistry.SettingsRegistry()
     localSettingsRegistry.MergeSettings('''
     {
@@ -125,21 +125,21 @@ def test_settings_registry():
         ]''', SettingsRegistry.JsonPatch)
 
     if jsonPatchMerged:
-        print("JSON in JSON Patch format has been merged successfully to the local settings registry")
+        print("JSON in JSON Patch format has been merged successfully to the local Settings Registry")
 
-    # Below is how the the MergeSettingsFile and MergeSettingsFolder could be used
+    # Example usage of `MergeSettingsFile` and `MergeSettingsFolder`
     if localSettingsRegistry.MergeSettingsFile(ExampleTestFileSetreg):
-        print(f"Successfully merged setreg file '{ExampleTestFileSetreg}' to local settings registry")
+        print(f"Successfully merged setreg file '{ExampleTestFileSetreg}' to local Settings Registry")
         registryVal = localSettingsRegistry.GetString('/AutomatedTesting/ScriptingTestArray/3')
         if registryVal:
             print(f"Settings Registry contains '/AutomatedTesting/ScriptingTestArray/3'='{registryVal.value()}' merged from the {ExampleTestFileSetreg}")
 
     # Add the 'folder' to the Settings Registry so that only non-specialized .setreg
-    # and .setreg files which contains only a 'folder' tag are merged into the Setting Registry
+    # and .setreg files that only contain a 'folder' tag are merged into the Setting Registry
     filetags = SettingsRegistry.Specializations()
     filetags.Append('folder')
     if localSettingsRegistry.MergeSettingsFolder(ExampleTestFolderSetreg, filetags):
-        print(f"Successfully merged setreg folder '{ExampleTestFolderSetreg}' to local settings registry")
+        print(f"Successfully merged setreg folder '{ExampleTestFolderSetreg}' to local Settings Registry")
         registryVal = localSettingsRegistry.GetBool('/AutomatedTesting/Settings/IsFolder')
         if registryVal:
             print(f"Settings Registry contains '/AutomatedTesting/Settings/IsFolder'='{registryVal.value()}' merged from the {ExampleTestFolderSetreg} folder")

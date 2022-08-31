@@ -1,11 +1,11 @@
 ---
 linkTitle: Gem loading and the Settings Registry
 title: Settings Registry Gem Loading
-description: Learn how the Settings Registry is used to load and configure gems.
+description: Learn how the Settings Registry is used to load and configure Gems.
 weight: 900
 ---
 
-The Settings Registry is linked with the CMake in order to faciliate the automatic loading of *Gem modules* based on the set of active gems within a project.  When CMake is configured for a project it generates a set of `cmake_dependencies.<project-name>.<target>.setreg` files which is used to list the names of Gems that are active. It contains any shared Gem modules filenames, which is load the Gems shared libraries into the O3DE application associated with the CMake Target.
+The Settings Registry is linked with the CMake in order to facilitate the automatic loading of *Gem modules* based on the set of active Gems within a project.  When CMake is configured for a project, it generates a set of `cmake_dependencies.<project-name>.<target>.setreg` files which are used to list the names of Gems that are active. It contains any shared Gem modules filenames, which load the Gems shared libraries into the O3DE application associated with the CMake Target.
 
 
 ## Loading Gems
@@ -13,18 +13,18 @@ The Settings Registry is linked with the CMake in order to faciliate the automat
 CMake is used to output a list of tagged `.setreg` files (`cmake_dependencies.<target>.setreg`), which contain the build dependencies of a CMake Target that loads through the O3DE module system.
 This is used to automatically load Gems based on the build dependencies of a CMake Target. This section demonstrates how to generate a `.setreg` file that contains a list of Gem build dependencies.
 
-The following is the `CMakeLists.txt` for for a *hypothetical* voxel editor feature:
+The following is the `CMakeLists.txt` for a *hypothetical* voxel editor feature:
 
 **CMakeLists.txt (Voxel Editor)**
 
 ```cmake
-# Associate the VoxelEditor CMake target with ".Tools" variant of gems to load.
+# Associate the VoxelEditor CMake target with the ".Tools" variant of Gems to load.
 # This will generate a "cmake_dependencies.voxeleditor.setreg" file that contains the path to the shared
-# libraries that will need to be loaded by the VoxelEditor, as well as the list paths to the gem source directory
+# libraries that will need to be loaded by the VoxelEditor, as well as the list paths to the Gem source directory
 ly_set_gem_variant_to_load(TARGETS VoxelEditor VARIANTS Tools)
 
 # Adds the VoxelEditor target as a C preprocessor define so that it can be used as a Settings Registry
-# specialization in order to look up the generated .setreg which contains the dependencies
+# specialization to look up the generated .setreg, which contains the dependencies
 # specified for the target.
 set_source_files_properties(
     Source/VoxelEditorApplication.cpp
@@ -33,7 +33,7 @@ set_source_files_properties(
 )
 ```
 
-Running the CMake command generates a solution and a `cmake_dependencies.voxeleditor.setreg`. It recurses through the list of Gems "RUNTIME\_DEPENDENCIES" and looks for a "GEM\_MODULE" target property to determine the list of required Gems.
+Running the CMake command generates a solution and a `cmake_dependencies.voxeleditor.setreg`. It recurses through the list of the Gem's `RUNTIME_DEPENDENCIES` and looks for a `GEM_MODULE` target property to determine the list of required Gems.
 
 For example, the following is how the Atom Bridge Gem is configured in CMake:
 
@@ -64,7 +64,7 @@ endif()
 
 Configuring CMake for the voxel editor generates the following `.setreg` file in the executable directory `Registry` directory:
 
-**cmake\_dependencies.voxeleditor.setreg (Voxel Editor)**
+**cmake_dependencies.voxeleditor.setreg (Voxel Editor)**
 ```json
 {
     "O3DE": {
@@ -130,8 +130,8 @@ You then add a Settings Registry specialization that is used to load the `cmake_
         : Application(argc, argv)
         , QApplication(*argc, *argv)
     {
-        // The settings registry has been created at this point, so add the CMake target "voxeleditor"
-        // as a specialization into the settings registry
+        // The Settings Registry has been created at this point, so add the CMake target "voxeleditor"
+        // as a specialization into the Settings Registry
         AZ::SettingsRegistryMergeUtils::MergeSettingsToRegistry_AddBuildSystemTargetSpecialization(
             *AZ::SettingsRegistry::Get(), GetBuildTargetName());
     }
@@ -158,8 +158,8 @@ ly_add_target(
             Gem::Atom_LyIntegration.Static
 )
 
-# if enabled, AtomTest gem is used by the Client and Server Launchers as well as Tools
-# But it it isn't needed in Builders
+# if enabled, AtomTest Gem is used by the Client and Server Launchers as well as Tools
+# But it isn't needed in Builders
 ly_create_alias(NAME AtomTest.Clients NAMESPACE Gem TARGETS Gem::AtomTest)
 ly_create_alias(NAME AtomTest.Servers NAMESPACE Gem TARGETS Gem::AtomTest)
 ly_create_alias(NAME AtomTest.Tools   NAMESPACE Gem TARGETS Gem::AtomTest)
@@ -167,13 +167,13 @@ ly_create_alias(NAME AtomTest.Tools   NAMESPACE Gem TARGETS Gem::AtomTest)
 ################################################################################
 # Gem dependencies
 ################################################################################
-# The GameLauncher uses "Clients" gem variants:
+# The GameLauncher uses "Clients" Gem variants:
 ly_enable_gems(PROJECT_NAME AtomTest GEM_FILE enabled_gems.cmake)
 ```
 
 The `ly_enable_gems` function adds build and load dependencies to the AtomTest project.
 
-During CMake generation, the settings registry files are generated in the `<CMakeBuildDir>/bin/$<CONFIG>` directory based on the `ly_enable_gems` functions. For example, configuring CMake for Windows with only the AtomTest project enabled generates the following `.setreg` files:
+During CMake generation, the Settings Registry files are generated in the `<CMakeBuildDir>/bin/$<CONFIG>` directory based on the `ly_enable_gems` functions. For example, configuring CMake for Windows with only the AtomTest project enabled generates the following `.setreg` files:
 
 ```
 <CMakeBuildDir>\bin\profile\Registry\cmake_dependencies.atomtest.editor.setreg
@@ -182,7 +182,7 @@ During CMake generation, the settings registry files are generated in the `<CMak
 ...
 ```
 
-The generated project `.setreg` files are formatted as `cmake_dependencies.<ProjectNameLower>.<CMakeTargetNameLower>.setreg`. The project name is part of the generated `cmake_dependencies.*.setreg` file name because O3DE allows configuring multiple projects at once. The same applications, such as O3DE Editor and Asset Processor, are used for each game project, but the applications need to load a different set of Gems based on the active game project, so the project name is added as part of the CMake build dependencies settings registry files.
+The generated project `.setreg` files are formatted as `cmake_dependencies.<ProjectNameLower>.<CMakeTargetNameLower>.setreg`. The project name is part of the generated `cmake_dependencies.*.setreg` file name because O3DE allows configuring multiple projects at once. The same applications, such as O3DE Editor and Asset Processor, are used for each game project, but the applications need to load a different set of Gems based on the active game project, so the project name is added as part of the CMake build dependencies Settings Registry files.
 
 For example, if CMake is configured with the value of `-DLY_PROJECTS="./AutomatedTesting;D:/o3de/AtomSampleViewer"`, the following `.setreg` files are generated:
 
@@ -213,31 +213,31 @@ add_subdirectory(<AbsolutePathToMoleculeGem> <AbsolutePathToMoleculeGem>) # This
 add_subdirectory(../<RelativePathToElectronGem> ../<RelativePathToElectronGem>)
 ```
 
-### Platform specific Gem loading
+### Platform-specific Gem loading
 
-Gems can be built and loaded on a per platform basis by calling the `ly_enable_gems` function multiple times for a given variant with Platform Abstraction Layer (PAL) paths.
+Gems can be built and loaded on a per-platform basis by calling the `ly_enable_gems` function multiple times for a given variant with Platform Abstraction Layer (PAL) paths.
 CMake supports several Platform Abstraction variables that can be used to include specific enabled Gems based on the current platform (Windows, Linux, Android, and so on).
 
-The following example demonstrates how to specify general and platform specific Gem dependencies together:
+The following example demonstrates how to specify general and platform-specific Gem dependencies together:
 
 ```cmake
 o3de_pal_dir(pal_dir ${CMAKE_CURRENT_LIST_DIR}/Platform/${PAL_PLATFORM_NAME} "${gem_restricted_path}" "${gem_path}" "${gem_parent_relative_path}")
-# Read a platform specific cmake file that contains the names of gems to activate
+# Read a platform-specific CMake file that contains the names of Gems to activate
 ly_enable_gems(PROJECT_NAME AtomTest GEM_FILE ${pal_dir}/enabled_gems.cmake)
 ```
 
 ### Explicit Gem activation
 
-As mentioned in the [Loading gems](#loading-gems) section, the building of Gems is determined by the name of the Gems in the `enabled_gems.cmake` file. This file should not be manually modified. Instead use the `o3de.py` `enable-gem` and `disable-gem` commands or **Project Manager** to add or remove Gems. This section explains how to enable and disable a Gem for building, as well as how to turn off autoloading of Gems using the Settings Registry.
+As mentioned in [Loading gems](#loading-gems), Gem builds are determined by the list of Gems in the `enabled_gems.cmake` file. This file should not be manually modified. Instead, use the `o3de.py`, `enable-gem`, and `disable-gem` commands or **Project Manager** to add or remove Gems. This section explains how to enable and disable a Gem for building, as well as how to turn off autoloading of Gems using the Settings Registry.
 
 The following example demonstrates using the `o3de.py` Python script commands to add and remove explicit Gem activation for a Gem named "Sponza" in the AutomatedTesting project:
 
 ```bash
-# The following command adds explicit activation of the "Sponza" gem within the AutomatedTesting project
-# It will modify the enabled_gems.cmake file and conditionally the project.json file if the gem being activated is registered with the global o3de_manifest.json
+# The following command adds explicit activation of the Sponza Gem within the AutomatedTesting project
+# It will modify the enabled_gems.cmake file and conditionally the project.json file if the Gem being activated is registered with the global o3de_manifest.json
 [engine-root]> scripts\o3de.bat enable-gem --gem-name Sponza --project-path AutomatedTesting
-# The following command removes explicit activation of the "Sponza" gem within the AutomatedTesting project
-# It will modify the enabled_gems.cmake file and conditionally the project.json file if the gem being activated is registered with the global o3de_manifest.json
+# The following command removes explicit activation of the Sponza Gem within the AutomatedTesting project
+# It will modify the enabled_gems.cmake file and conditionally the project.json file if the Gem being activated is registered with the global o3de_manifest.json
 [engine-root]> scripts\o3de.bat disable-gem --gem-name Sponza --project-path AutomatedTesting
 ```
 
@@ -245,9 +245,9 @@ The following example demonstrates using the `o3de.py` Python script commands to
 
 During the CMake project generation step, a `cmake_dependencies.*.setreg` file that contains a list of Gems to load is generated. To prevent autoloading of a specific Gem, set a JSON boolean value of `false` at the in JSON pointer format for the Gem using the path of `"/O3DE/Gems/${GemName}/${TargetModule}/AutoLoad"`. For example, you can add a `.setreg` file in the `"<project-root>/Registry/"` directory that sets the `"/O3DE/Gems/${GemName}/${TargetModule}/AutoLoad=false"` value.
 
-The following is a snippet of the generated `cmake_dependencies.automatedtesting.assetproccessor.setreg` that is generated when O3DE is configured with for the AUtomated Testing project (`-DLY_PROJECTS=AutomatedTesting`).
+The following is a snippet of the generated `cmake_dependencies.automatedtesting.assetproccessor.setreg` that is generated when O3DE is configured with for the Automated Testing project (`-DLY_PROJECTS=AutomatedTesting`).
 
-**cmake\_dependencies.automatedtesting.assetproccessor.setreg**
+**cmake_dependencies.automatedtesting.assetproccessor.setreg**
 
 ```json
 
@@ -272,7 +272,7 @@ The following is a snippet of the generated `cmake_dependencies.automatedtesting
 
 The ChatPlay Client and QtForPython Tools modules can be disabled from autoloading on a *per user* basis by placing a `.setreg` file either in the `<project_root>/User/Registry` (per project override) or in the `~/.o3de/Registry` global user override as in the following example:
 
-**gem\_autoload.setreg**
+**gem_autoload.setreg**
 
 ```json
 {
@@ -299,19 +299,19 @@ To disable Gem autoloading at the *platform* level, a `.setreg` file, such as th
 
 ### Load Gems in C++
 
-You can manually load Gems in an application through C++ if needed. `SettingsRegistryMergeUtils.cpp` contains a function, [MergeSettingsToRegistry_TargetBuildDependencyRegistry](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L216-L220), that loads the `cmake_dependencies.<tag1>.<tag2>.setreg` files that the list of Gems to load. Gems are loaded based on the values in the "specialization" tag structure. The list of Gem modules are stored in the Setting Registry.
+You can manually load Gems in an application through C++ if needed. `SettingsRegistryMergeUtils.cpp` contains a function, [MergeSettingsToRegistry_TargetBuildDependencyRegistry](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Settings/SettingsRegistryMergeUtils.h#L216-L220), that loads the `cmake_dependencies.<tag1>.<tag2>.setreg` files that contains the list of Gems to load. Gems are loaded based on the values in the "specialization" tag structure. The list of Gem modules is stored in the Setting Registry.
 
 ```c++
 void MergeSettingsToRegistry_TargetBuildDependencyRegistry(SettingsRegistryInterface& registry, const AZStd::string_view platform,
     const SettingsRegistryInterface::Specializations& specializations, AZStd::vector<char>* scratchBuffer);
 ```
 
-`ComponentApplication.cpp` is responsible for loading the required Gems through the [LoadDynamicModule](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Component/ComponentApplication.h#L297-L299) function which reads the Settings Registry for all array keys at the paths of `/O3DE/Gems/${GemName}/Modules` and aggregates that into a list of Gems to load.
+`ComponentApplication.cpp` is responsible for loading the required Gems through the [LoadDynamicModule](https://github.com/o3de/o3de/blob/02846cf44347cbf4fae0faacc4a2ba74284908ff/Code/Framework/AzCore/AzCore/Component/ComponentApplication.h#L297-L299) function, which reads the Settings Registry for all array keys at the paths of `/O3DE/Gems/${GemName}/Modules` and aggregates them into a list of Gems to load.
 
 ```c++
 void ComponentApplication::LoadDynamicModules()
 {
-    // Queries the settings registry to get the list of gem modules to load
+    // Queries the Settings Registry to get the list of Gem modules to load
     struct GemModuleLoadData
     {
         AZ::OSString m_gemName;

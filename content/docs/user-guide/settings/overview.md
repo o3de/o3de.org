@@ -7,7 +7,7 @@ weight: 100
 
 With the Settings Registry, you can provide settings and configurations for **Open 3D Engine (O3DE)** applications and tools.
 
-Settings are stored in JSON files with `.setreg` and `.setregpatch` extensions. You can define, query, and change O3DE application settings by using [JSON Pointer syntax](https://tools.ietf.org/html/rfc6901). For example, in the following example the JSON Pointer path is `"/O3DE/CustomSetting"`:
+Settings are stored in JSON files with `.setreg` and `.setregpatch` extensions. You can define, query, and change O3DE application settings using [JSON Pointer syntax](https://tools.ietf.org/html/rfc6901). In the following example, the JSON Pointer path is `"/O3DE/CustomSetting"`:
 
 ```JSON
 {
