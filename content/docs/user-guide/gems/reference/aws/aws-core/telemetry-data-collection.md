@@ -30,11 +30,10 @@ Registry setting:
 
 ```json
 {
-    "Amazon"
-    {
-        "Telemetry": {
-            "SendAWSUsageMetric": true
-        }
+  "Amazon": {
+    "Telemetry": {
+      "SendAWSUsageMetric": true
     }
+  }
 }
 ```

@@ -6,7 +6,7 @@ toc: true
 weight: 900
 ---
 
-The AWS GameLift Gem provides a sample CDK application that can be used to model and deploy the following Amazon GameLift resources:
+The AWS GameLift Gem provides a sample [CloudFormation Development Kit](https://aws.amazon.com/cdk/)(CDK) application that can be used to model and deploy the following Amazon GameLift resources:
 
 *   A list of [GameLift fleets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html) to host game servers.
 *   (Optional) A list of [GameLift builds](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html) used for GameLift fleet generation.
@@ -17,7 +17,7 @@ The AWS GameLift Gem provides a sample CDK application that can be used to model
 
 To deploy the CDK application, you must have the following:
 
-- [AWS CLI](https://aws.amazon.com/cli/) and [AWS Cloud Development Kit](https://aws.amazon.com/cdk/) (CDK) installed on your local machine. 
+- [AWS CLI](https://aws.amazon.com/cli/) and [AWS CloudFormation Development Kit](https://aws.amazon.com/cdk/) installed on your local machine. 
 - Your AWS credentials set up. For instructions on setting up AWS credentials, refer to [Configuring AWS Credentials for O3DE](/docs/user-guide/gems/reference/aws/aws-core/configuring-credentials/).
 
 ## Setup
@@ -267,13 +267,13 @@ To update the existing AWS CDK application, re-run the same commands that you us
 
 ## Destroy the AWS CDK application
 
-To destroy all of the AWS resources that the AWS CDK application (which uses an existing GameLift build) deployed, run the following AWS CLI command:
+To destroy all the AWS resources that the CDK application deployed, run the following AWS CLI command:
 
 ```cmd
 $ cdk destroy
 ```
 
-If you have any of the optional feature enabled, you can destroy the CDK application with all the optional features enabled by providing the corresponding context variables and the `--all` argument. The following command destroys the CDK application with all the optional features enabled:
+If you have any of the optional features enabled, you can destroy the CDK application with all the optional features enabled by providing the corresponding context variables and the `--all` argument. The following command destroys the CDK application with all the optional features enabled:
 
 ```cmd
 $ cdk -c upload-with-support-stack=true -c create_game_session_queue=true -c flex_match=true --all

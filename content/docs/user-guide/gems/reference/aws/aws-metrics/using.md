@@ -9,7 +9,7 @@ Once the AWS Metrics resources have been deployed, you can use features such as 
 
 ## Using real-time analytics
 
-After deploying the CDK application, an **Amazon CloudWatch** dashboard is created automatically to show the operational health metrics and sample metrics (TotalLogin) defined in the CDK application.
+After deploying the CloudFormation Development Kit (CDK) application, an **Amazon CloudWatch** dashboard is created automatically to show the operational health metrics and sample metrics (TotalLogin) defined in the CDK application.
 
 To start the real-time analytics, go to the **Amazon Kinesis** console or use the AWS CLI [`start-application`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kinesisanalytics/start-application.html) command to start the **Kinesis Data Analytics** application.
 

@@ -13,9 +13,9 @@ To get started using AWS Gems with AWS services in your O3DE project, complete t
 
     a. Confirm you have credentials using the command `aws configure list`.
 
-1. Install the [AWS Cloud Development Kit (CDK)](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html#getting_started_install).
+1. Install the [AWS Cloud Development Kit (CDK)](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install).
 
-    a. Confirm the CDK is setup using the command `cdk --version`.
+    a. Confirm the CDK is set up using the command `cdk --version`.
 
 1. **Build** your O3DE project with the AWS Core Gem (and other AWS Gems you need) enabled.
 
@@ -46,12 +46,11 @@ Example registry settings file:
 
 ```json
 {
-    "Amazon":
-    {
-        "AWSCore": {
-            "ProfileName": "testprofile",
-            "ResourceMappingConfigFileName": "default_aws_resource_mappings.json"
-        }
+  "Amazon": {
+    "AWSCore": {
+      "ProfileName": "testprofile",
+      "ResourceMappingConfigFileName": "default_aws_resource_mappings.json"
     }
+  }
 }
 ```

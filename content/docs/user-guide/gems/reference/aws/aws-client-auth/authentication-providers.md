@@ -28,7 +28,7 @@ Use the app ID that you obtained when you enabled your account as the value for 
 
 If you are using Google, you must also use the app secret you were given for your account as the value for `ClientSecret`.
 
-When deploying the CDK application, be sure to use the CDK constant that corresponds to your selected provider. Refer to the CDK application deployment step in [Setting Up Client Auth](./setup/) for details.
+When deploying the optional CloudFormation Development Kit (CDK) application, be sure to use the CDK constant that corresponds to your selected provider. Refer to the CDK application deployment step in [Setting Up Client Auth](./setup/) for details.
 
 These settings and those in the resource mapping file are read once during activation of `AWSClientAuthSystemComponent`.
 
@@ -87,6 +87,6 @@ To use a custom authentication provider with the AWS Client Auth Gem, you must h
 
     c. In the `AuthenticationProviderManager::CreateAuthenticationProviderObject` method, add support for the above.
 
-    d. Authorization will work if the Amazon Cognito setting above is setup correctly.
+    d. Authorization will work if the Amazon Cognito setting above is set up correctly.
 
 Refer to the [AWS Client Auth](/docs/api/gems/awsclientauth) API Reference for more information.

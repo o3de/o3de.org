@@ -5,21 +5,28 @@ weight: 200
 toc: true
 ---
 
-The [Cloud Development Kit](https://docs.aws.amazon.com/cdk/latest/guide/home.html) (CDK) is a software development framework from AWS for defining cloud infrastructure for your project and provisioning it through **AWS CloudFormation**.
+The [Cloud Development Kit](https://docs.aws.amazon.com/cdk/v2/guide/home.html) (CDK) is a software development framework from AWS for defining cloud infrastructure for your project and provisioning it through **AWS CloudFormation**.
+
+{{< note >}}
+The AWS Gems have been updated to support CDK v2, the new long term CDK version. CDK v1 entered maintenance on June 1, 2022, and will now receive only critical bug fixes and security patches. 
+
+For those still using the CDK v1, a legacy snapshot of the sample applications are available in a `cdkv1` folder inside each Gem. See the [CDK migration Guide](https://docs.aws.amazon.com/cdk/v2/guide/migrating-v2.html) for advice about how to migrate legacy CDK applications to the CDK v2. 
+{{< /note >}}
 
 The AWS Core Gem includes an optional Python CDK application that provides two stacks:
 
 1. A core stack to use as the basis for a project's CDK application.
-1. An example stack with example resources that can be connected to **ScriptBehavior** samples in Core.
+2. An example stack with example resources that can be connected to **ScriptBehavior** samples in Core.
 
 The Python project is set up like a standard Python project. The initialization process uses virtual environments, created with `virtualenv` and stored under the `.venv` directory.
 
 To create the virtual environment, you must have a `python3` executable (or `python` for Windows) in your path with access to the `venv` package. If the automatic creation of the `virtualenv` fails, you can create the `virtualenv` manually.
 
+
 ## Prerequisites
 
 * AWS credentials configured. Refer to the steps shown in [Configuring AWS Credentials](./configuring-credentials/).
-* [AWS Cloud Development Kit](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html#getting_started_install) (CDK) installed.
+* [AWS Cloud Development Kit](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install) (CDK) installed.
 * O3DE project built.
 
 ## Working with the CDK application
@@ -80,13 +87,13 @@ pip3 install -r requirements.txt
 | `O3DE_AWS_DEPLOY_ACCOUNT` | The account to deploy stacks into, will default to CDK_DEFAULT_ACCOUNT. |
 | `O3DE_AWS_PROJECT_NAME` | The name of the O3DE project that stacks should be deployed for, will default to AWS-PROJECT. |
 
-See [Environments](https://docs.aws.amazon.com/cdk/latest/guide/environments.html) in the AWS CDK Developer Guide for more information including how to pass parameters to use for environment variables.
+See [Environments](https://docs.aws.amazon.com/cdk/v2/guide/environments.html) in the AWS CDK Developer Guide for more information including how to pass parameters to use for environment variables.
 
 ### 3. Bootstrap the environment
 
-The AWS environment needs to be bootstrapped because this CDK application uses assets in a local directory that contains handler code for the AWS Lambda functions.
+An AWS environment is a combination of an AWS account and region and must be bootstrapped to provision common CDK resources used for deployment. This only needs to happen once.
 
-Use the CDK `bootstrap` command to bootstrap one or more AWS environments.
+Use the CDK `bootstrap` command to bootstrap one or more AWS environments. 
 
 ```cmd
 cdk bootstrap aws://ACCOUNT-NUMBER-1/REGION-1 aws://ACCOUNT-NUMBER-2/REGION-2 ...
@@ -98,7 +105,7 @@ For example:
 cdk bootstrap aws://123456789012/us-east-1
 ```
 
-See [Bootstrapping](https://docs.aws.amazon.com/cdk/latest/guide/bootstrapping.html) in the AWS CDK Developer Guide for more information about the bootstrap provisioning process.
+For more information about the bootstrap provisioning process, see the [Bootstrapping](hhttps://docs.aws.amazon.com/cdk/v2/guide/bootstrapping.html) section of the AWS CDK Developer Guide.
 
 ### 4. Synthesize the project
 
@@ -124,7 +131,7 @@ The deploy command displays progress information as your stack is deployed.
 
 | Command | Description |
 | --- | --- |
-| `cdk ls` | List all stacks in the app.
+| `cdk ls` | List all stacks in the app. |
 | `cdk synth` | Emits the synthesized CloudFormation template. |
 | `cdk deploy` | Deploy this stack to your default AWS account/region. |
 | `cdk diff` | Compare deployed stack with current state. |
@@ -132,4 +139,4 @@ The deploy command displays progress information as your stack is deployed.
 
 ## Troubleshooting
 
-For help troubleshooting, see [Troubleshooting Common AWS CDK Issues](https://docs.aws.amazon.com/cdk/latest/guide/troubleshooting.html) in the AWS CDK Developer Guide.
+For help troubleshooting, see [Troubleshooting Common AWS CDK Issues](https://docs.aws.amazon.com/cdk/v2/guide/troubleshooting.html) in the AWS CDK Developer Guide.
