@@ -71,7 +71,7 @@ After the install completes, you might be prompted to restart your system.
 
 ### Microsoft Visual Studio C++ Redistributable
 
-You will also need the [Visual C++ Redistributable for Visual Studio 2019](https://visualstudio.microsoft.com/downloads/#other-family).
+You will also need the latest version of [Visual C++ Redistributable for Visual Studio](https://visualstudio.microsoft.com/downloads/#other-family), if it was not installed by the **Desktop development with C++** workload for Visual Studio. 
 
 After installing the C++ redistributable, you might be prompted to restart your system.
 
