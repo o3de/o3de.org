@@ -11,7 +11,7 @@ weight: 500
 * `/Amazon/AzCore/Runtime/ConsoleCommands` - Console commands under this object are *not* merged to the `bootstrap.game.<config>.setreg` and will *not* run in Launcher applications.
 
 {{< note >}}
-In Launcher applications, Settings Registry files can only reliably load the [bootstrap.game.<config>.setreg](https://github.com/o3de/o3de/blob/6b62d1131116c074831902cb6e8d30271d673288/Code/Framework/AzGameFramework/AzGameFramework/Application/GameApplication.cpp#L90-L99) file in all build configuration and host platform combinations.
+In Launcher applications, Settings Registry files can only reliably load the [`bootstrap.game.<config>.setreg`](https://github.com/o3de/o3de/blob/6b62d1131116c074831902cb6e8d30271d673288/Code/Framework/AzGameFramework/AzGameFramework/Application/GameApplication.cpp#L90-L99) file in all build configuration and host platform combinations.
 {{< /note >}}
 
 ## Run Console commands from a file
@@ -45,7 +45,7 @@ bg_ConnectToAssetProcessor false
 
 ### Settings Registry file with Console commands (`.setreg`)
 
-The settings underneath the "/O3DE/Autoexec/ConsoleCommands" object will be added to the aggregate `bootstrap.game.\<config>.setreg` created by the Settings Registry builder when **Asset Processor** processes the `user.setreg` file. The `/Amazon/AzCore/Runtime/ConsoleComamnds` settings will not be added because they are [excluded](https://github.com/o3de/o3de/blob/e878b06166dc4953b8c6c79b745375a1db7c341f/Registry/setregbuilder.assetprocessor.setreg#L22) in Asset Processor settings.
+The settings underneath the "/O3DE/Autoexec/ConsoleCommands" object will be added to the aggregate `bootstrap.game.<config>.setreg` created by the Settings Registry builder when **Asset Processor** processes the `user.setreg` file. The `/Amazon/AzCore/Runtime/ConsoleCommands` settings will not be added because they are [excluded](https://github.com/o3de/o3de/blob/e878b06166dc4953b8c6c79b745375a1db7c341f/Registry/setregbuilder.assetprocessor.setreg#L22) in Asset Processor settings.
 
 **user.setreg**
 
