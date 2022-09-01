@@ -50,6 +50,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | Component | Description | 
 | - | - |
 | [Bloom](/docs/user-guide/components/reference/atom/bloom/) | Simulates real-world light bleeding, or glow. |
+| [Chromatic Aberration](/docs/user-guide/components/reference/atom/chromatic-aberration) | Simulates a lens effect that focuses wavelengths of light to different points. |
 | [CubeMap Capture](/docs/user-guide/components/reference/atom/cubemap-capture/) | Captures a Specular IBL or Diffuse IBL cubemap at the entity position. |
 | [Debug Rendering](/docs/user-guide/components/reference/atom/debug-rendering/) | Level component used to visually inspect and debug the scene. |
 | [Decal (Atom)](/docs/user-guide/components/reference/atom/decal/) | Projects a texture material in a single direction onto mesh surfaces. |
