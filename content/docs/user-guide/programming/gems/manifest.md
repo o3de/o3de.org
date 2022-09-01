@@ -34,7 +34,7 @@ The `gem.json` manifest provides data about a Gem. Each Gem must have a `gem.jso
 
 ### ScriptCanvas `Tool` Gem `gem.json` Manifest
 ScriptCanvas is a `Tool` type gem that comes with the engine and provides Editor and game functionality.
-```
+```json
 {
     "gem_name": "ScriptCanvas",
     "display_name": "Script Canvas",
@@ -65,7 +65,7 @@ ScriptCanvas is a `Tool` type gem that comes with the engine and provides Editor
 
 ### AudioEngineWwise `Code` Gem `gem.json` Manifest
 AudioEngineWwise is a `Code` type gem that comes with the engine that requires an external application be installed in order to use it.
-```
+```json
 {
     "gem_name": "AudioEngineWwise",
     "display_name": "Wwise Audio Engine",
@@ -94,7 +94,7 @@ AudioEngineWwise is a `Code` type gem that comes with the engine that requires a
 
 ### DevTextures `Asset` Gem `gem.json` Manifest
 DevTextures is an `Asset` type gem that comes with the engine and provides general purpose texture assets useful for prototypes and preproduction.
-```
+```json
 {
     "gem_name": "DevTextures",
     "display_name": "Dev Textures",
