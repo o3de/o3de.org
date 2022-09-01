@@ -12,7 +12,7 @@ Gem repositories provide a way to discover, acquire, and share Gems that are not
 
 ## Add a Gem repository in Project Manager
 
-You can add Gem repositories from the **Gem Repositories** page in Project Manager which you can accessed from the **Engine** tab, or from the **Gem Catalog** right panel menu.
+You can add Gem repositories from the **Gem Repositories** page in Project Manager which you can access from the **Engine** tab, or from the **Gem Catalog** right panel menu.
 1. Press the **Add Repository** button. In the dialogue box that opens you can supply the URL or local path for a Gem repository. 
 1. If you have a URL for an online Gem repository, copy and paste it into the `Repository Path` field and press the **Add** button.
 1. Alternatively, if you want to add a Gem repository from your local hard drive, press the folder button to open the `Browse` dialog box, select the folder with the Gem repository, press the **Select Folder** button, and finally press the **Add** button.
@@ -160,12 +160,12 @@ For a full description of `gem.json` fields and examples see the [`gem.json` man
 When creating an archive of your Gem, zip up the contents of the Gem folder, not the folder itself, so that when extracted, the `gem.json` file will be at the root, and not inside a subfolder named `RemoteExampleV1` 
 {{< /tip >}}
 1. Generate the SHA-256 for your Gem's `.zip` archive and add that value to the `sha256` field of the `gem.json` file located outside the `.zip`.  On Windows, you can use the `certutil` program to generate the SHA-256 value like this:
-{{< note >}}
-It is possible, but not recommended, to leave out the SHA-256 field for testing.
-{{< /note >}}
     ```
     certutil -hashfile C:/path/to/gem.zip SHA256
     ```
+    {{< note >}}
+It is possible, but not recommended, to leave out the SHA-256 field for testing.
+{{< /note >}}
 1. Update your `repo.json` file and add the URL for the Gem folder.  This example uses the localhost URL for testing.
     ```json
     {
