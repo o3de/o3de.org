@@ -59,13 +59,11 @@ You can add joints to the ragdoll at any time.
 
    ![Icons in the Skeleton Outliner show how joints are related to the ragdoll, ragdoll colliders, and hit detection colliders](/images/user-guide/actor-animation/ragdoll-skeleton-outliner-joint-icons.png)
 
-1. In the **OpenGL Render window**, use the render options to show or hide the ragdoll colliders (rendered in orange), ragdoll joint limits, and the hit detection colliders (rendered in blue).
+1. In the **Atom Render Window**, use the render options dropdown, represented by the <span style="background-color:rgba(68, 68, 68, 255)">![Use the render options in the Atom Render Window to show or hide ragdoll colliders and joint limits and hit detection colliders](/images/user-guide/actor-animation/ragdoll-skeleton-render-options.svg)</span> icon, to show or hide the ragdoll colliders (rendered in orange), ragdoll joint limits, and the hit detection colliders (rendered in blue).
 
     {{< note >}}
 If your ragdoll colliders and hit detection colliders are the same size, you may need to hide the colliders that you are not working on.
 {{< /note >}}
-
-![Use the render options in the OpenGL Render window to show or hide ragdoll colliders and joint limits and hit detection colliders](/images/user-guide/actor-animation/ragdoll-skeleton-opengl-render-window-render-options.png)
 
 1. On the **Ragdoll** tab, you can view and modify the ragdoll properties for the selected joint. For example, the rigid body mass, sleeping threshold, and colliders.
 
@@ -105,7 +103,7 @@ The following image shows joint limits that are set up correctly.
 
 **To create a joint limit**
 
-1. In the **Animation Editor**, in the **OpenGL Render Window**, adjust the child local rotation so that the red axis points along the bone.
+1. In the **Animation Editor**, in the **Atom Render Window**, adjust the child local rotation so that the red axis points along the bone.
 
 1. Adjust the parent local rotation so that the red axis appears inside the swing cone.
 
