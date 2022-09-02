@@ -28,7 +28,7 @@ Complete the following set up steps to use the AWS Metrics Gem in your project:
 
 ### 1. Enable the AWS Metrics Gem
 
-If you haven't already added and built the **AWS Metrics Gem** in your project, follow the steps to [add the gem](/docs/user-guide/project-config/add-remove-gems/) to your current project.
+If you haven't already added and built the **AWS Metrics Gem** in your project, follow the steps to [add the Gem](/docs/user-guide/project-config/add-remove-gems/) to your current project.
 
 ### 2. Deploy the CDK application
 
