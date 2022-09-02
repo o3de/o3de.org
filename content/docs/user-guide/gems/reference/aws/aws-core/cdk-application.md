@@ -105,7 +105,7 @@ For example:
 cdk bootstrap aws://123456789012/us-east-1
 ```
 
-For more information about the bootstrap provisioning process, see the [Bootstrapping](hhttps://docs.aws.amazon.com/cdk/v2/guide/bootstrapping.html) section of the AWS CDK Developer Guide.
+For more information about the bootstrap provisioning process, see the [Bootstrapping](https://docs.aws.amazon.com/cdk/v2/guide/bootstrapping.html) section of the AWS CDK Developer Guide.
 
 ### 4. Synthesize the project
 
