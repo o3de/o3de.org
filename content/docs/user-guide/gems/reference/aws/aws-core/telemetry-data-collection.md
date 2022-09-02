@@ -22,7 +22,7 @@ Data collected is subject to the [AWS Privacy Policy](https://aws.amazon.com/pri
 
 ## Opting Out
 
-You can opt-out via the Editor preferences found at **Edit** -> **Editor Settings** -> **Global Preferences** -> **AWS**.
+You can opt out via the Editor preferences found at **Edit** -> **Editor Settings** -> **Global Preferences** -> **AWS**.
 
 Or, you can modify the Editor Registry setting file under `{YOUR-PROJECT}/user/Registry/editorpreferences.setreg` and restart the Editor.
 
