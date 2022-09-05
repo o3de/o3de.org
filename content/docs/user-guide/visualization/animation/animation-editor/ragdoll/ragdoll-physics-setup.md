@@ -9,8 +9,8 @@ There is currently no automatic way to prevent the physics geometry **PhysX Char
 
 When you set up a ragdoll, you do the following:
 + [Define joints for the ragdoll.](#step-1-define-joints-for-the-ragdoll)
-+ [Add ragdoll colliders.](#step-2-add-ragdoll-colliders)
-+ [Create joint limits.](#step-3-create-a-joint-limit)
++ [Set up ragdoll colliders.](#step-2-set-up-ragdoll-colliders)
++ [Create joint limits.](#step-3-create-joint-limits)
 
 In addition, your actor must have a motion extraction node. Your ragdoll must have a root node that is a direct child of the motion extraction node. For example, the Rin character uses `root` for its motion extraction node. For the ragdoll root node, the Rin character uses `'C_pelvis_JNT`, which is a child node of `root`.
 
@@ -82,9 +82,9 @@ Joints in the ragdoll can be selected using the **Skeleton Outliner** or by clic
 
 | Mode | Icon | Description
 | - | - | - |
-| **Offset** | ![](/images/user-guide/actor-animation/ragdoll-viewport-ui-collider-translation.svg) | Activates manipulators allowing the position of the collider relative to its joint to be modified. This mode will be available if the joint has at least one ragdoll collider. |
-| **Rotation** | ![](/images/user-guide/actor-animation/ragdoll-viewport-ui-collider-rotation.svg) | Activates manipulators allowing the rotation of the collider relative to its joint to be modified. This mode will be available if the joint has at least one ragdoll collider. |
-| **Dimensions** | ![](/images/user-guide/actor-animation/ragdoll-viewport-ui-collider-dimensions.svg) | Activates manipulators allowing the **Height** and **Radius** of a **Capsule** collider to be modified. This mode will be available if the joint has at least one ragdoll collider and its first collider has **Capsule** geometry. |
+| **Offset** | ![Viewport UI ragdoll collider translation icon](/images/user-guide/actor-animation/ragdoll-viewport-ui-collider-translation.svg) | Activates manipulators allowing the position of the collider relative to its joint to be modified. This mode will be available if the joint has at least one ragdoll collider. |
+| **Rotation** | ![Viewport UI ragdoll collider rotation icon](/images/user-guide/actor-animation/ragdoll-viewport-ui-collider-rotation.svg) | Activates manipulators allowing the rotation of the collider relative to its joint to be modified. This mode will be available if the joint has at least one ragdoll collider. |
+| **Dimensions** | ![Viewport UI ragdoll collider dimensions icon](/images/user-guide/actor-animation/ragdoll-viewport-ui-collider-dimensions.svg) | Activates manipulators allowing the **Height** and **Radius** of a **Capsule** collider to be modified. This mode will be available if the joint has at least one ragdoll collider and its first collider has **Capsule** geometry. |
 
 {{< note >}}
 Currently, if a joint has more than one ragdoll collider, manipulators only support editing the first collider.
@@ -108,7 +108,7 @@ Choose **File**, **Save Selected Actors**. This saves the ragdoll data to the `.
 
 **Avoiding self-collision**
 
-The ragdoll automatically suppresses collisions between joints that are adjacent in the skeleton. This means that adjacent colliders can overlap, but a pair of colliders that are not adjacent should not intersect. If the pair of colliders intersects, they'll collide when the ragdoll is simulated. This leads to unstable behaviour, because the colliding bodies are trying to separate, while the joints are trying to keep them together. If two joints which are not adjacent in the hierarchy have overlapping colliders, the colliders will be rendered in red, as shown below.
+The ragdoll automatically suppresses collisions between joints that are adjacent in the skeleton. This means that adjacent colliders can overlap, but a pair of colliders that are not adjacent should not intersect. If the pair of colliders intersects, they'll collide when the ragdoll is simulated. This leads to unstable behaviour, because the colliding bodies are trying to separate, while the joints are trying to keep the ragdoll together. If two joints which are not adjacent in the hierarchy have overlapping colliders, the colliders will be rendered in red, as shown below.
 
 ![Example of ragdoll self-collision](/images/user-guide/actor-animation/ragdoll-self-collision-example.png)
 
@@ -116,18 +116,30 @@ To resolve the overlap, you can resize the colliders or use [collision filtering
 
 ## Step 3: Create Joint Limits
 
-Joint limits are enabled for every joint in your ragdoll. This allows you to edit the joints and ensure they're set up correctly.
+Joint limits allow the range of motion of joints to be restricted to avoid unrealistic poses. For example, a human character's knee joint will appear unnatural if it extends past the position where the leg becomes straight. In **PhysX**, joint limits are separated into two parts, **Swing Limits** and **Twist Limits**. To understand these two limits, consider an elbow joint as a concrete example. The elbow creates a joint between two body parts, the upper arm (referred to below as the parent) and the forearm (child). 
 
-The following image shows joint limits that are set up correctly.
+The **Twist Limit** describes rotations around an axis rigidly attached to the child. That axis can be orientated arbitarily relative to the child during the setup of the joint limit, but it is usually easiest to visualize if it points directly along the child (from the elbow to the wrist in the example). If you imagine holding your arm out straight in front of you, you can rotate around the forearm so that your palm is face up or face down, but it is uncomfortable to rotate much further in either direction, i.e. there is a limit to how much you can twist around that axis. If you were holding a pen between your fingers at right angles to your palm, then the pen would describe a fan shape as you rotate your forearm.
 
-![Example that shows joint limits that are set up correctly](/images/user-guide/actor-animation/ragdoll-collider-joint-limits-example.png)
+The **Swing Limit** describes how the axis attached to the child can move relative to the parent. Continuing with the elbow example, if you consider holding your upper arm still, you can bend your elbow so that your hand touches your shoulder, or extend it so that the arm is straight. There is also a range of motion to the left or right (think about arm wrestling). Overall, you can imagine a cone rigidly attached to the upper arm which describes the full range of possible orientations for the forearm. Note that because the range of motion of the forearm is not symmetrical (you can bend your elbow more in some directions than in others), the cone needs to be rotated relative to the direction of the upper arm. 
 
-**To create a joint limit**
+Putting all this together, there are several parameters which can be configured for each joint limit:
++ The axis attached to the child body of the joint, which is rendered as a long arrow. It is usually easiest to align this to point along the child body, and joint limits will automatically be configured that way when they are first created. 
++ The orientation of the **Swing Limit**, which is rendered as a cone, relative to the parent body.
++ The angular extents of the **Swing Limit** cone.
++ The minimum and maximum values for the **Twist Limit**, which is rendered as a fan shape.
 
-1. In the **Animation Editor**, in the **Atom Render Window**, adjust the child local rotation so that the red axis points along the bone.
+If a single joint is selected, these parameters can be modified using manipulators accessible through a **Viewport UI Cluster** at the top left of the **Atom Render Window** (below the collider cluster if it is available). Different manipulator modes can be selected by clicking on the following icons in the **Viewport UI Cluster**.
 
-1. Adjust the parent local rotation so that the red axis appears inside the swing cone.
+| Mode | Icon | Description
+| - | - | - |
+| **Parent local rotation** | | Activates manipulators allowing the rotation of the joint parent frame to be modified. This allows the cone for the swing limit cone and the arc for the twist limit to be orientated relative to the frame of the joint's parent. |
+| **Child local rotation** | | Activates manipulators allowing the rotation of the joint child frame to be modified. This allows the axis which moves around inside the joint limit to be orientated relative to the joint's frame. |
+| **Swing Limit** | ![Viewport UI ragdoll joint swing limits icon](/images/user-guide/actor-animation/ragdoll-viewport-ui-joints-swing-limits.svg) | Activates manipulators allowing the size of the swing limits in the Y and Z directions to be modified. |
+| **Twist Limit** | ![Viewport UI ragdoll joint twist limits icon](/images/user-guide/actor-animation/ragdoll-viewport-ui-joints-twist-limits.svg) | Activates manipulators allowing the mininum and maximum twist limits to be modified. |
+| **Joint Limit Automatic Fit** | | Computes an optimal joint limit based on sampling poses from a loaded **Motion Set**. In order to use this feature, you will need to load a **Motion Set** in the [**Motion Sets** panel](/docs/user-guide/visualization/animation/animation-editor/motion-set-user-interface/) |  
 
-1. Adjust the twist limit value so that the line appears inside the wedge.
+The joint limit configuration can also be adjusted using the property editor.
 
-![Example that shows the line for the twist limit value in the wedge](/images/user-guide/actor-animation/ragdoll-joint-limit-twist-limit-value.png)
+If the current pose for the **Actor** causes the **Swing Limit** or **Twist Limit** to be violated, that limit will be rendered in red.
+
+
