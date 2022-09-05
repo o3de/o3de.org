@@ -12,11 +12,13 @@ When you set up a ragdoll, you do the following:
 + [Add ragdoll colliders.](#step-2-add-ragdoll-colliders)
 + [Create joint limits.](#step-3-create-a-joint-limit)
 
-In addition, your actor must have a motion extraction node that is a root node. Your ragdoll must have a root node that is a direct parent of the motion extraction node. For example, the Rin character uses `root` for its motion extraction node. For the ragdoll root node, the Rin character uses `'C_pelvis_JNT`, which is a child node of `root`.
+In addition, your actor must have a motion extraction node. Your ragdoll must have a root node that is a direct child of the motion extraction node. For example, the Rin character uses `root` for its motion extraction node. For the ragdoll root node, the Rin character uses `'C_pelvis_JNT`, which is a child node of `root`.
+
+While working on ragdoll setup, it can be useful to show or hide certain elements in the **Atom Render Window**. You can use the render options dropdown, represented by the ![Use the render options in the Atom Render Window to show or hide elements such as ragdoll colliders, joint limits and hit detection colliders](/images/user-guide/actor-animation/ragdoll-skeleton-render-options.svg) icon, to show or hide the **Ragdoll Colliders** (rendered in orange), **Ragdoll Joint Limits**, **Hit Detection Colliders** (rendered in blue), **Cloth Colliders** (rendered in purple), **Line Skeleton**, and other elements.
 
 ## Step 1: Define Joints for the Ragdoll 
 
-Do the following to select the joints for your ragdoll.
+Do the following to select the joints for your ragdoll. Usually you will want to include significantly fewer joints in the ragdoll than are present in the animation skeleton, as simulating small joints such as finger bones typically creates little benefit and incurs performance costs.
 
 **To select joints for the ragdoll**
 
@@ -26,12 +28,15 @@ Do the following to select the joints for your ragdoll.
 
 1. Choose **File**, **Open Actor** and select your actor.
 
-1. In the **Skeleton Outliner**, multi-select the joints that you want to include in your ragdoll.
+1. In the **Skeleton Outliner**, multi-select the joints that you want to include in your ragdoll. You can also select individual joints by left clicking on the **Line Skeleton** view in the **Atom Render Window**.
 
 1. Right-click one of the selected joints and then choose **Ragdoll**, **Add to ragdoll**.
 
     {{< note >}}
 You can add joints to the ragdoll at any time.
+{{< /note >}}
+    {{< note >}}
+If a joint is added to the ragdoll, all of its ancestors are automatically added as well. This can be useful as a quick way to add a complete hierarchy just by adding a few end effectors, e.g. joints in the hands, feet and head. Similarly if a joint is removed from the ragdoll, all of its descendants are also removed.
 {{< /note >}}
 
 ![Add a selected joint to the ragdoll in the Skeleton Outliner in the Animation Editor](/images/user-guide/actor-animation/ragdoll-skeleton-outliner-add-to-ragdoll.png)
@@ -44,13 +49,14 @@ You can add joints to the ragdoll at any time.
    + A joint is part of the ragdoll
    + A joint holds ragdoll colliders
    + A joint holds hit detection colliders
+   + A joint holds cloth colliders
 
    ![Icons in the Skeleton Outliner show how joints are related to the ragdoll, ragdoll colliders, and hit detection colliders](/images/user-guide/actor-animation/ragdoll-skeleton-outliner-joint-icons.png)
 
-1. In the **Atom Render Window**, use the render options dropdown, represented by the <span style="background-color:rgba(68, 68, 68, 255)">![Use the render options in the Atom Render Window to show or hide ragdoll colliders and joint limits and hit detection colliders](/images/user-guide/actor-animation/ragdoll-skeleton-render-options.svg)</span> icon, to show or hide the ragdoll colliders (rendered in orange), ragdoll joint limits, and the hit detection colliders (rendered in blue).
+1. In the **Atom Render Window**, use the render options dropdown, represented by the <span style="background-color:rgba(68, 68, 68, 255)">![Use the render options in the Atom Render Window to show or hide ragdoll colliders and joint limits and hit detection colliders](/images/user-guide/actor-animation/ragdoll-skeleton-render-options.svg)</span> icon, to show or hide the ragdoll colliders (rendered in orange), ragdoll joint limits, hit detection colliders (rendered in blue), and cloth colliders (rendered in purple).
 
     {{< note >}}
-If your ragdoll colliders and hit detection colliders are the same size, you may need to hide the colliders that you are not working on.
+If your ragdoll colliders, hit detection colliders, or cloth colliders are the same size, you may need to hide the colliders that you are not working on.
 {{< /note >}}
 
 1. On the **Ragdoll** tab, you can view and modify the ragdoll properties for the selected joint. For example, the rigid body mass, sleeping threshold, and colliders.
@@ -59,11 +65,13 @@ If your ragdoll colliders and hit detection colliders are the same size, you may
 
 ## Step 2: Add Ragdoll Colliders 
 
-The ragdoll automatically suppresses collisions between joints that are adjacent in the skeleton. This means that adjacent colliders can overlap, but a pair of colliders that are not adjacent should not intersect. If the pair of colliders intersects, they'll collide when the ragdoll is simulated.
+The ragdoll automatically suppresses collisions between joints that are adjacent in the skeleton. This means that adjacent colliders can overlap, but a pair of colliders that are not adjacent should not intersect. If the pair of colliders intersects, they'll collide when the ragdoll is simulated. This leads to unstable behaviour, because the colliding bodies are trying to separate, while the joints are trying to keep them together.
 
 In the following example, the collider for the second spine joint (highlighted) can intersect with the first or third spine joint. The first and third spine joints, however, should not intersect.
 
 ![Example that shows how the collider for the second spine joint intersects with the first or third spine joint](/images/user-guide/actor-animation/ragdoll-collider-spine-joints-example.png)
+
+If two joints which are not adjacent in the hierarchy have overlapping colliders, the colliders will be rendered in red. To resolve the overlap, you can resize the colliders or set the collision filters on them so that they do not collide with each other.
 
 **To add a ragdoll collider**
 
