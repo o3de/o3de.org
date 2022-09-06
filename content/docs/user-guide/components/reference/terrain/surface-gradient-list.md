@@ -27,7 +27,7 @@ You select a gradient either by dragging an entity containing a gradient compone
 |-|-|-|-|
 | **Gradient to Surface Mappings** | An array of gradient entities and surface tags to map together. |  |  |
 | **GradientEntity** | The gradient entity to assign to this layer. | Gradient Entity | None |
-| **Surface Tag** | Sets the surface type that this gradient represents. | Surface Tag | None |
+| **Surface Tag** | Sets the surface type that this gradient represents. | Surface Tag | (unassigned) |
 
 
 ## TerrainAreaSurfaceRequestBus

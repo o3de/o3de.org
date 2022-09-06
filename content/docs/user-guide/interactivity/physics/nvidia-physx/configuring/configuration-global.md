@@ -65,7 +65,7 @@ The joint hierarchy options apply to PhysX joints only. They do not apply to act
 
 ## Wind configuration 
 
-The following table describes the settings for **Wind Configuration**. See [Create global or localized wind forces with PhysX](/docs/user-guide/interactivity/physics/nvidia-physx/wind-provider/) for more details.
+The following table describes the settings for **Wind Configuration**. For more information, refer to [Create Wind Forces](/docs/learning-guide/tutorials/physx/wind-provider).
 
 | Property | Description |
 | --- | --- |

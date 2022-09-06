@@ -2,7 +2,6 @@
 linktitle: System Overview
 title: "Material System Overview"
 description: "Materials contain data that control how model surfaces appear in a 3D environment."
-toc: false
 weight: 100
 ---
 
@@ -52,7 +51,7 @@ A **material type** is a data item that includes everything that's needed to des
 
 Material type files (`*.materialtype`) are in JSON format and are authored directly. This file links together several other files to form a complete material type definition, such as `*.shader`, `*.azsl`, and `*.lua` files.
 
-For more information, see [Material Type Authoring Guide](/docs/atom-guide/dev-guide/materials/material-type-authoring-guide/).  
+For more information, see [Material Type File Specification](./material-type-file-spec).  
 
 {{< note >}}
 A node graph based tool for authoring material types is in development. Until that's available, material type are authored directly.
@@ -65,7 +64,7 @@ For more information on the available PBR material types, see [Physically-based 
 
 ## Material Asset Processing
 
-The Asset Processor loads material and material type source files and saves corresponding product files in the cache. The runtime loads these files and uses them to render models. See [Asset Processing](docs/user-guide/assets/pipeline/asset-processing/) for background information on this topic.
+The Asset Processor loads material and material type source files and saves corresponding product files in the cache. The runtime loads these files and uses them to render models. See [Asset Processing](/docs/user-guide/assets/pipeline/asset-processing/) for background information on this topic.
 
 A material type source file (`*.materialtype`) produces a Material Type Asset (`*.azmaterialtype`) in the cache. It contains property layout information, a list of shaders to use, and possibly functors for special processing.
 
@@ -76,5 +75,5 @@ Other source files can produce Material Assets as well. For example, *.fbx* file
 Material Assets can create any number of material instances at runtime for the renderer to use. Using a Material component, you can change the property values of a material instance without impacting other instances of the same material. Unlike a Material Asset, a material instance only exists in memory and not on disk. 
 
 <!-- SVG file edited using https://app.diagrams.net/ -->
-![Material Assets Diagram](/images/atom-guide/materials/material-asset-diagram.svg)
 
+![Material Assets Diagram](/images/atom-guide/materials/material-asset-diagram.svg)

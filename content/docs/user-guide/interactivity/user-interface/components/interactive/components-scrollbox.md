@@ -24,11 +24,11 @@ You can add a prebuilt **ScrollBox** element from the slice library. When you do
 **To add a ScrollBox element from the slice library**
 + In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor), choose **New**, **Element from Slice Library**, **Scrollbox**.
 
-The element named **ScrollBox** (1) has the **ScrollBox** component (2) applied to it. You can add an image to the **ScrollBox** element's **Image** component (3), which acts as the visual frame for the scroll box. Because the mask element and its child elements are drawn in front of the scroll box element, you see only the edges of the image on the **ScrollBox** component. To increase or decrease the viewable area of this image, adjust the offsets in the mask element's [**Transform2D**](/docs/user-guide/interactivity/user-interface/components/transform/anchors) component.
+The element named **ScrollBox** (1) has the **ScrollBox** component (2) applied to it. You can add an image to the **ScrollBox** element's **Image** component (3), which acts as the visual frame for the scroll box. Because the mask element and its child elements are drawn in front of the scroll box element, you see only the edges of the image on the **ScrollBox** component. To increase or decrease the viewable area of this image, adjust the offsets in the mask element's [**Transform2D**](/docs/user-guide/interactivity/user-interface/components/transform2d) component.
 
 ![ScrollBox component properties](/images/user-guide/interactivity/user-interface/components/interactive/ui-editor-components-scrollbox.jpg)
 
-The element named **Mask** has a [**Mask**](../other/components-mask) component applied to it, which acts as the viewport through which you can see the content. To specify a custom mask, you can add an image to the **Mask** element's **Image** component. The contents are drawn to the visible area of the mask; the transparent area of the mask hides content.
+The element named **Mask** has a [**Mask**](../components-mask) component applied to it, which acts as the viewport through which you can see the content. To specify a custom mask, you can add an image to the **Mask** element's **Image** component. The contents are drawn to the visible area of the mask; the transparent area of the mask hides content.
 
 **To edit a scroll box component**
 

@@ -17,9 +17,9 @@ You should always add the PhysX Rigid Body component to the top level of an enti
 
 ## Provider
 
-[PhysX Gem](/docs/user-guide/gems/reference/physx/)
+[PhysX Gem](/docs/user-guide/gems/reference/physics/nvidia/physx/)
 
-## Properties 
+## Properties
 
 ![PhysX Rigid Body component interface.](/images/user-guide/components/reference/physx/physx-rigid-body-ui-01.png)
 

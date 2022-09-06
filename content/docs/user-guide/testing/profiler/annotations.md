@@ -7,9 +7,9 @@ title: Creating and Using Annotations
 In Profiler, annotations are a convenient way of highlighting per-frame log information from the data captured from your application. After you learn how annotations are used in Profiler, you can modify your application so that they appear in Profiler.
 
 **Topics**
-+ [Using Annotations](#profiler-annotations-using)
-+ [Creating Annotations](#profiler-annotations-creating)
-+ [Viewing Annotations in Trace Messages Profiler](#profiler-annotations-creating-trace-messages-profiler)
++ [Using Annotations](#using-annotations)
++ [Creating Annotations](#creating-annotations)
++ [Viewing Annotations in Trace Messages Profiler](#viewing-annotations-in-trace-messages-profiler)
 
 ## Using Annotations 
 
@@ -23,7 +23,7 @@ Annotations in the O3DE Profiler tool flag frames in your captured data that hav
 
 ![Configure Annotations dialog box](/images/user-guide/profiler-annotations-using-configure-dialog.png)
 
-   The **Configure Annotations** dialog box contains a list of available annotations and their display colors. For information on creating annotations for your application, see [ Creating Annotations](#profiler-annotations-creating).
+   The **Configure Annotations** dialog box contains a list of available annotations and their display colors. For information on creating annotations for your application, see [ Creating Annotations](#creating-annotations).
 
 1. When you select an annotation in the dialog box, a marker and line of the same color appears in the channel display. Note that you might have to scroll horizontally to find the marker.
 

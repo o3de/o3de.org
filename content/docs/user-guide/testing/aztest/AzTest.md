@@ -9,7 +9,7 @@ The Google Test and Google Mock frameworks are fully accessible through AzTest. 
 
 ## CTest
 
-CTest is as a test executor tool which is also a part of CMake. Tests are registered and initiated by CTest, which then calls AzTestRunner. AzTestRunner helps start a module of GoogleTest tests inside a library or executable. CTest will run a dll via AzTestRunner in order to perform the tests once they are registered. For more information about using CTest in O3DE, refer to the [O3DE Test Onboarding](TODO) document.
+CTest is as a test executor tool which is also a part of CMake. Tests are registered and initiated by CTest, which then calls AzTestRunner. AzTestRunner helps start a module of GoogleTest tests inside a library or executable. CTest will run a dll via AzTestRunner in order to perform the tests once they are registered. For more information about using CTest in O3DE, refer to [O3DE Test Onboarding](/docs/user-guide/testing/getting-started/).
 
 ## Test Hooks
 

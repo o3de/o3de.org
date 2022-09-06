@@ -23,13 +23,14 @@ The PhysX Shape Collider requires one of the following Shape components:
 * [Capsule Shape](/docs/user-guide/components/reference/shape/capsule-shape/)
 * [Cylinder Shape](/docs/user-guide/components/reference/shape/cylinder-shape/)
 * [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/)
+* [Quad Shape](/docs/user-guide/components/reference/shape/quad-shape/)
 * [Sphere Shape](/docs/user-guide/components/reference/shape/sphere-shape/)
 
 ## Use cases
 
 Although the PhysX Shape Collider is similar to the [PhysX Collider](/docs/user-guide/components/reference/physx/collider/) component, you might prefer to use the PhysX Shape Collider in these scenarios:
 
-* The shape information defined by the Shape component is used elsewhere in code or script. For example, the shape defines another volume, such as an audio volume or fog volume, and you want to keep the collider geometry and volume synchronized.
+* The shape information defined by the Shape component is used elsewhere in code or script. For example, the shape defines another volume, such as an audio volume, and you want to keep the collider geometry and volume synchronized.
 * You want to use a Shape component such as Polygon Prism Shape that is not provided by PhysX Collider.
 * You have existing Shape components and don't want to migrate them to use PhysX Collider components.
 
@@ -48,11 +49,10 @@ The PhysX Shape Collider component has some limitations compared to the PhysX Co
 | - | - | - | - |
 | **Collision Layer** | Assigns the collider to a collision layer. Collision layers can be used to restrict physical interactions between PhysX objects. | Any collision layer defined in the project's [Collision Layers](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-layers/).  | `Default` |
 | **Collides With** | Assigns the collider to a collision group. Collision groups contain the collision layers that this collider can collide with. | Any collision group defined in the project's [Collision Groups](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-groups/). | `All` |
-| **Trigger** | If enabled, this collider functions as a trigger. Triggers perform quick overlap tests with other colliders. Triggers don't apply forces or return contact point information. Use this to speed up PhysX computations in which a simple overlap test between colliders is sufficient. Triangle meshes are not supported as triggers. | Boolean | `Disabled` |
+| **Trigger** | If enabled, this collider functions as a trigger. Triggers perform quick overlap tests with other colliders. Triggers don't apply forces or return contact point information. Use this to speed up PhysX computations in which a simple overlap test between colliders is sufficient. Triangle meshes and **Quad Shapes** are not supported as triggers. | Boolean | `Disabled` |
 | **Simulated** | If enabled, this collider is included in the physics simulation. | Boolean | `Enabled` |
 | **In Scene Queries** | If enabled, this collider can be queried for raycasts, shapecasts, and overlap. | Boolean | `Enabled` |
-| **Library (Physics Materials)** | The physics material library of the project. | A `.physmaterial` library product asset. | The global project `.physmaterial` library. |
-| **Slots (Physics Materials)** | Choose a physics material for each material of this collider. Physics materials define physical properties for the surface such as dynamic and static friction, and density. A collider can have multiple physics materials assigned. | Physics material(s) from the assigned `.physmaterial` library | `<Default Physics Material>` |
+| **Physics Materials** | Choose a physics material for each material of this collider. Physics materials define physical properties for the surface such as dynamic and static friction, and density. A collider can have multiple physics materials assigned. | A `.physxmaterial` asset assigned. | `(default)` |
 | **Tag** | Sets a tag for this collider. Tags can be used to quickly identify components in script or code. | String | None |
 | **Rest offset** | Sets the minimum distance between this collider and other colliders. Although this property applies to all colliders, it is particularly important for dynamic colliders. Dynamic colliders are at rest when the forces affecting them drop below the **Sleep threshold** of their rigid body component. When a dynamic collider comes to rest while in contact with any other collider, the colliders are separated by the sum of their **Rest offset** values. **Rest offset** values that are too large might make dynamic entities appear to float. Negative **Rest offset** values might make dynamic entities appear to intersect. You might need to adjust this value in scenarios where the collider does not closely match the render mesh of the entity. The **Rest offset** value must be less than the **Contact offset** value. | Float: -Infinity to 50.0 | `0.0` |
 | **Contact offset** | Sets the distance from the collider where collisions are detected. PhysX bodies generate contacts when they are within the sum of their **Contact offset** values. The **Contact offset** value must be greater than the **Rest offset** value. | Float: 0.0 to 50.0 | `0.02` |
@@ -64,7 +64,7 @@ The [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-pr
 
 ![A complex polygon prism can't be converted to convex geometry.](/images/user-guide/components/reference/physx/physx-shape-collider-polyprism.png)
 
-If the vertices are modified so that the polygon prism is no longer a simple polygon, it isn't possible to subdivide the polygon prism into convex pieces. In the example image above, the polygon prism is self-intersecting. If the polygon prism can't be subdivided into convex pieces, an error will display in the **O3DE Editor Console**, as shown in the following example.
+If the vertices are modified so that the polygon prism is no longer a simple polygon, it isn't possible to subdivide the polygon prism into convex pieces. If the polygon prism can't be subdivided into convex pieces, an error will display in the **O3DE Editor Console**, as shown in the following example.
 
 ![A complex polygon prism console error.](/images/user-guide/components/reference/physx/physx-shape-collider-error.png)
 
@@ -74,5 +74,5 @@ Triggers allow colliders to perform efficient overlap tests. Colliders marked as
 
 {{< note >}}
 Because triggers don't perform contact resolution, the contact points between a trigger and another collider aren't available.
-Triangle meshes are not supported as triggers.
+Triangle meshes and **Quad Shapes** are not supported as triggers.
 {{< /note >}}

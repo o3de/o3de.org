@@ -23,4 +23,4 @@ Animation Editor includes tools for building the following:
 
 Animation Editor uses  `.actor` and `.motion` files generated from `.fbx` assets.
 
-For more information, see [Create and animate characters](/docs/user-guide/visualization/animation/char-intro).
+For more information, refer to the [Animation overview](/docs/user-guide/visualization/animation/).

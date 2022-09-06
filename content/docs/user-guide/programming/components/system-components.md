@@ -1,7 +1,7 @@
 ---
-description: Learn how to create system components in Open 3D Engine.
-title: System Components in Open 3D Engine
 linktitle: System Components
+title: System Components in O3DE
+description: Learn how to create system components in Open 3D Engine.
 weight: 600
 ---
 
@@ -19,11 +19,11 @@ When you author system components, follow the [best practices for component auth
 Just like game components, system components often provide request and notification buses. However, because system components are global systems, they should not specify IDs for their buses like game components. Game developers should be able to call your system's EBuses without having to deal with or know about the system entity that contains all system components.
 {{< /important >}}
 
-For an example of a Gem which provides system components, the `HttpRequestor` Gem that O3DE ships with has an implementation of a system component referenced throughout this topic. The Gem source is located at `Gems/HttpRequestor/Code` in the O3DE source.
+For an example of a Gem that provides system components, the `HttpRequestor` Gem that O3DE ships with has an implementation of a system component referenced throughout this topic. The Gem source is located at `Gems/HttpRequestor/Code` in the O3DE source.
 
-## Creating a System Component in a Gem
+## Creating a system component in a Gem
 
-O3DE enables the creation of custom system components through Gems and AZ modules. Gems are a specialization of AZ modules. For more information, see [the O3DE Gem and Module System](/docs/user-guide/programming/gems/overview). Most O3DE games organize their game code in one or more Gems. These Gems can contain system components that integrate with the game engine as well as components for use on game entities.
+O3DE enables the creation of custom system components through Gems and AZ modules. Gems are a specialization of [AZ modules](/docs/user-guide/programming/gems/overview). Most O3DE games organize their game code in one or more Gems. These Gems can contain system components that integrate with the game engine in addition to runtime and editor components for use with game entities.
 
 When you create a system component as part of a Gem, follow these requirements:
 
@@ -31,7 +31,7 @@ When you create a system component as part of a Gem, follow these requirements:
 * The `<GemName>Bus.h` file goes under the `Code/Include/<GemName>` directory.
 * The component source files go under the `Code/Source` directory.
 
-## Making a Component a System Component
+## Making a component a system component
 
 After you create the code for your component, add it to your project's system entity to make it a system component.
 
@@ -40,8 +40,6 @@ After you create the code for your component, add it to your project's system en
    The following example is from `HttpRequestorModule.cpp`.
 
    ```cpp
-   ...
-   #include "HttpRequestor_precompiled.h"
    #include "HttpRequestorSystemComponent.h"
    #include <AzCore/Module/Module.h>
 

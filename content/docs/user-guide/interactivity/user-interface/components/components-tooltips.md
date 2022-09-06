@@ -1,5 +1,5 @@
 ---
-linkTitle: UI Tooltip and Tooltip Display
+linkTitle: Tooltip Components
 description: ' Use tooltip components to give an element a tool tip when hovering over it, and configure its display properties in O3DE''s UI Editor. '
 title: UI Tooltip and Tooltip Display Components
 weight: 600

@@ -2,7 +2,7 @@
 title: Submitting Media to O3DE Documentation
 description: Guidelines for submitting media (images, video, audio, or assets) to Open 3D Engine (O3DE) documentation.
 linktitle: Media
-weight: 600
+weight: 700
 toc: true
 ---
 
@@ -26,21 +26,21 @@ Image output:
 
 The `image-width` shortcode adds an image with alternate text and restricts the image's width. The `image-width` shortcode can ensure image sizes are consistent within a topic, and that large images don't scale overly large in wide browser windows. Use this method when adding `.svg` diagrams, very large images, and in topics with multiple images where consistent image widths are desirable.
 
-`image-width` takes three double-quoted parameters in order:
+`image-width` takes three double-quoted named parameters:
 
-1. image link
-1. width
-1. alternate text
+1. `src="/images/<image.png>"` - Image file path.
+1. `width="<image width>"` - Scale the image by specifying a width in pixels.
+1. `alt="<image description>"` - A string describing the image.
 
 `image-width` example:
 
 ```markdown
-{{</* image-width "/images/welcome-guide/wg-welcome-page-color.png" "700" "The O3DE Welcome Guide splash image." */>}}
+{{</* image-width src="/images/welcome-guide/guide_img.png" width="700" alt="The O3DE Welcome Guide splash image." */>}}
 ```
 
 `image-width` example output:
 
-{{< image-width "/images/welcome-guide/wg-welcome-page-color.png" "700" "The O3DE Welcome Guide splash image." >}}
+{{< image-width src="/images/welcome-guide/guide_img.png" width="700" alt="The O3DE Welcome Guide splash image." >}}
 
 
 ## Alternate text
@@ -69,7 +69,7 @@ In order to standardize presentation, and to keep the O3DE documentation reposit
   1. Save the edited image and include it with your PR.
 
     {{< important >}}
-    Be sure to thoroughly examine all images for PII before adding them to a pull request!
+  Be sure to thoroughly examine all images for PII before adding them to a pull request!
     {{< /important >}}
 
 ## Screenshots
@@ -78,6 +78,7 @@ Screenshots are images of various O3DE user interfaces, or the interfaces of oth
 
 * Use the PNG format (`.png`) for all screenshots.
 * Take interface screenshots at HD resolution (1920x1080).
+* Ensure the image resolution has an even number of pixels in both width and height.
 * Don't use aggressive compression for interface screenshots. Heavily compressed files may make text and UI elements less legible.
 * Screenshots should not exceed 512 KB in size.
 * Use the default interface scale for screenshots.
@@ -123,12 +124,76 @@ Artful images are used for artistic or marketing purposes, such as images that d
 
 ## Animated images
 
-Animated images are not currently accepted for contribution due to limitations on repository size. If you must demonstrate steps, use a horizontal two to four panel annotated image strip that demonstrates the start, action, and result of the process. See the example below:
+Due to limitations on repository size, animated `.gif` images are not accepted in contributions. If you must include an animated image in a topic, you may use an `.mp4` video. However, if the animation demonstrates a sequence of steps, you might alternatively consider an image strip rather than a video.
+
+### Image strips
+
+To demonstrate steps, consider using horizontal two to four panel annotated image strip that demonstrates the start, action, and result of the process. See the example below:
 
 {{< image-width "/images/contributing/to-docs/image-strip-example.png" "700" "An image strip example with two panels." >}}
 
 1. **Left-click** on the entity in **Perspective** to select it.
 1. **LMB+Drag** on the transform gizmo's **Z** axis to move the entity on the world **Z** axis.
+
+### Embedding videos with the `video` shortcode
+
+Videos in the `/images/` directory can be embedded in topics with the `video` shortcode. Use this method to include animations in topics rather than animated `.gifs`.
+
+Keep the following in mind when submitting videos in docs contributions:
+
+* `.mp4` is the preferred video format. `.ogg` and `.webm` are also supported by the shortcode, but aren't as well supported by various browsers.
+* Videos must be placed in the `/static/images/` directory structure using the same conventions as images.
+* Videos should be smaller than 512 KB and must not exceed 1 MB in size.
+* Ensure text in the video is legible if required.
+* Ensure the video resolution is no larger than necessary.
+* Ensure the video resolution has an even number of pixels in both width and height.
+* Crop and frame the subject of the video appropriately.
+* Videos shouldn't include audio unless required by the example.
+* Though a poster image is not required, it is recommended.
+
+**Parameters**
+
+`video` **requires** the following named parameters:
+
+1. `src="/images/<video.mp4>"` - Video file path.
+1. `info="<video description>"` - A string describing the video.
+
+`video` supports the following **optional** named parameters:
+
+1. `poster="/images/<image.png>"` - A static image that displays while the video loads or if the video fails to load. This image should be the same size and aspect ratio as the video. 
+1. `autoplay="true"` - The video plays as soon as it loads.
+1. `loop="true"` - The video plays in a loop.
+1. `width="<video width>"` - Scale the video by specifying a width in pixels.
+1. `muted="true"` - Video is muted if an audio track exists.
+1. `type="video/<mp4 OR ogg OR webm>"` - Video type. MP4 is default.
+
+The are two additional options that are always enabled.
+
+1. `preload="auto"` - Loads the video with the page.
+1. `controls` - Include player controls for the video.
+
+**Examples**
+
+1. Basic `video` usage with only the required parameters.
+
+    ```markdown
+      {{</* video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." */>}}
+    ```
+    Output:
+
+    {{< video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." >}}
+
+<br>
+
+2. Advanced `video` usage with optional parameters to enable autoplay, loop the video, scale the video to 250 pixels, and include a poster image.
+
+    ```markdown
+      {{</* video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." autoplay="true" loop="true" width="250" poster="/images/contributing/to-docs/TestPoster.png" */>}}
+    ```
+
+    Output:
+
+    {{< video src="/images/contributing/to-docs/TestVideo.mp4" info="This is a test video." autoplay="true" loop="true" width="250" poster="/images/contributing/to-docs/TestPoster.png" >}}
 
 
 ## Embedding Youtube videos with the `youtube-width` shortcode

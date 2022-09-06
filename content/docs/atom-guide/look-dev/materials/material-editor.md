@@ -49,13 +49,13 @@ At the top of the Material Editor are the following menus: File, Edit, View, and
 The File menu contains options to manage the Material Editor and material files.
 | Menu item | Hotkey | Function |
 | - | - | - |
-| New | `Ctrl+N` | Create a new material. Choose a material type from the list to create a new material of that type. |
-| Open... | `Ctrl+O` | Open an existing material.|
-| Save | `Ctrl+S` | Save the edits in the active material tab. |
+| New | **Ctrl+N** | Create a new material. Choose a material type from the list to create a new material of that type. |
+| Open... | **Ctrl+O** | Open an existing material.|
+| Save | **Ctrl+S** | Save the edits in the active material tab. |
 | Save As... |  | Save the edits in the active material tab to the specified folder and file name.  |
 | Save As Child... |  | Save a new child material of the current material.  |
 | Save All |  | Save the edits in all open material tabs. |
-| Close | `Ctrl+F4` | Close the active material tab. |
+| Close | **Ctrl+F4** | Close the active material tab. |
 | Close All |  | Close all of the open material tabs. |
 | Close Others |  | Close all of the material tabs except the active one. |
 | Run Python... |  | Opens a folder to select a Python script to run. |
@@ -66,29 +66,29 @@ The Edit menu contains options that are useful while editing materials.
 
 | Menu item | Hotkey | Function |
 | - | - | - |
-| Undo | `Ctrl+Z` | Undo the most recent action.  |
-| Redo | `Ctrl+Y` | Redo the most recent action that was undone.  |
+| Undo | **Ctrl+Z** | Undo the most recent action.  |
+| Redo | **Ctrl+Y** | Redo the most recent action that was undone.  |
 
 ### View Menu
 The view menu lets you open or close panels and switch to different tabs in the Material Editor.
 
-| Menu item | Function |
-| - | - |
-| Previous Tab `Ctrl+Shift+Tab`| Switches to the previously opened tab. |
-| Next Tab `Ctrl+Tab`| Switches to the next opened tab. |
-| Asset Browser | Toggles the Asset Browser panel. |
-| Inspector | Toggles the Inspector panel. |
-| Viewport Settings | Toggles the Viewport Settings panel. |
-| Performance Monitor | Toggles the Performance Monitor panel. |
-| Python Terminal | Toggles the Python Terminal panel. |
+| Menu item | Hotkey | Function |
+| - | - | - |
+| Previous Tab | **Ctrl+Shift+Tab** | Switches to the previously opened tab. |
+| Next Tab | **Ctrl+Tab** | Switches to the next opened tab. |
+| Asset Browser | | Toggles the Asset Browser panel. |
+| Inspector | | Toggles the Inspector panel. |
+| Viewport Settings | | Toggles the Viewport Settings panel. |
+| Performance Monitor | | Toggles the Performance Monitor panel. |
+| Python Terminal | | Toggles the Python Terminal panel. |
 
 ### Help Menu
 The Help menu provides support and resources for the Material Editor.
 
-| Menu item | Hotkey | Function |
-| - | - | - |
-| Help... |  | Launches the Material Editor Help window and displays a list of controls in the Material Editor. |
-| About... |  | Displays information about the Material Editor. |
+| Menu item | Function |
+| - | - |
+| Help...  | Launches the Material Editor Help window and displays a list of controls in the Material Editor. |
+| About... | Displays information about the Material Editor. |
 
 
 ## Viewport
@@ -110,25 +110,25 @@ You can view your material in the Viewport in different perspectives by moving t
 These controls adjust the camera view.
 | Control | Action |
 | - | - |
-| `LMB+Drag`, `RMB+Drag` | Tumble the camera around a pivot or point of interest. |
-| `MMB Scroll` | Dolly the camera toward or away from a pivot or point of interest. |
-| `MMB+Drag` | Track the camera left, right, up, and down in the direction of mouse movement. |
-| `Z` | Reset camera view. |
+| **LMB+Drag**, **RMB+Drag** | Tumble the camera around a pivot or point of interest. |
+| **MMB Scroll** | Dolly the camera toward or away from a pivot or point of interest. |
+| **MMB+Drag** | Track the camera left, right, up, and down in the direction of mouse movement. |
+| **Z** | Reset camera view. |
 
 #### Model and Lighting Controls
 These controls adjust the model and lighting within the current camera view. 
 | Control | Action |
 | - | - |
-| `Ctrl+LMB+Drag` | Tumble the model. |
-| `Shift+LMB+Drag` | Rotate the lighting environment horizontally around the model. |
+| **Ctrl+LMB+Drag** | Tumble the model. |
+| **Shift+LMB+Drag** | Rotate the lighting environment horizontally around the model. |
 
 #### Industry-standard Controls
 Industry-standard controls to orbit, zoom, and pan in the Viewport. 
 | Control | Action |
 | - | - |
-| `Alt+LMB+Drag` | Tumble the camera around a pivot or point of interest. |
-| `Alt+RMB+Drag` | Dolly the camera toward or away from a pivot or point of interest. |
-| `Alt+MMB+Drag` | Track the camera left, right, up, and down in the direction of mouse movement. |
+| **Alt+LMB+Drag** | Tumble the camera around a pivot or point of interest. |
+| **Alt+RMB+Drag** | Dolly the camera toward or away from a pivot or point of interest. |
+| **Alt+MMB+Drag** | Track the camera left, right, up, and down in the direction of mouse movement. |
 
 ## Viewport Toolbar
 The Viewport Toolbar contains the following set of functions to configure the Viewport:

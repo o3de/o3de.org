@@ -58,19 +58,21 @@ This tutorial shows you how to use O3DE Lua Editor to perform debugging operatio
 
 1. In **Entity Inspector**, choose **Add Component**, and then choose **Scripting**, **Lua Script**.
 
-1. In **Entity Inspector**, locate the **Lua Script** component, and then choose the **Pick Lua Script** button next to the empty **Script** field.
+1. In **Entity Inspector**, locate the **Lua Script** component, and then click {{< icon "browse-edit-select-files.svg" >}} to open a file browser.
 
-    ![Open the Pick Lua Script window from the Lua Script component](/images/user-guide/scripting/lua/lua-component-pick-lua-script.png)
-    
 1. In the **Pick Lua Script** window, select `ConstantRotation.lua` and choose **OK**.
 
-1. In the **Lua Script** component, choose the **Open in Lua Editor** button to launch Lua Editor.
+1. In the **Lua Script** component, click {{< icon "open-in-internal-app.svg" >}} to launch Lua Editor.
 
     ![Launch Lua Editor from Lua Script component in O3DE Editor](/images/user-guide/scripting/lua/lua-component-open-in-lua-editor.png)
     
 ## Connect to O3DE Editor
 
-**TargetManagement** facilitates local connections between O3DE applications. TargetManagement starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to.  Because the debugging functionality is enabled through network sockets, you must connect Lua Editor to the target that is running the script before you can debug. In this tutorial, you connect to O3DE Editor.
+The **Remote Tools Gem** facilitates local connections between O3DE applications. The Remote Tools Gem starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to.  Because the debugging functionality is enabled through network sockets, you must connect Lua Editor to the target that is running the script before you can debug. In this tutorial, you connect to O3DE Editor.
+
+{{< note >}}
+**Remote Tools Gem** behavior is disabled in release builds.
+{{< /note >}}
 
 1. In the Lua Editor toolbar, choose **Target: None**, and then choose **Editor(*ID*)** to connect to O3DE Editor.
 
@@ -89,10 +91,6 @@ You may need to expand the Lua Editor window to see the buttons on the Lua Edito
     ![Lua Editor connected to O3DE Editor](/images/user-guide/scripting/lua/lua-editor-debugger-connected-icon.png)
 
     Click **Classes** in the **Class Reference** to show the available Lua libraries. You can do the same for **EBuses** and **Globals**.
-    
-    {{< note >}}
-You may need to switch focus to O3DE Editor before Class Reference will populate.
-{{< /note >}}
     
     ![Classes Reference](/images/user-guide/scripting/lua/lua-editor-debugger-class-reference-pane.png)
     

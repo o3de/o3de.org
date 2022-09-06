@@ -31,14 +31,14 @@ class MyComponent
 
 void MyComponent::Reflect(AZ::ReflectContext* context)
 {
-    AZ::SerializeContext* serialize = azrtti_cast<AZ::SerializeContext*>(context);
-    if (serialize)
+    AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(context);
+    if (serializeContext)
     {
         // Reflect the class fields that you want to serialize.
         // In this example, m_runtimeStateNoSerialize is not reflected for serialization.
         // Base classes with serialized data should be listed as additional template
         // arguments to the Class< T, ... >() function.
-        serialize->Class<MyComponent, AZ::Component>()
+        serializeContext->Class<MyComponent, AZ::Component>()
             ->Version(1)
             ->Field("SomeFloat", &MyComponent::m_someFloatField)
             ->Field("SomeString", &MyComponent::m_someStringField)
@@ -46,10 +46,10 @@ void MyComponent::Reflect(AZ::ReflectContext* context)
             ->Field("SomeEnum", &MyComponent::m_someEnumField)
             ;
 
-        AZ::EditContext* edit = serialize->GetEditContext();
-        if (edit)
+        AZ::EditContext* editContext = serializeContext->GetEditContext();
+        if (editContext)
         {
-            edit->Class<MyComponent>("My Component", "The World's Most Clever Component")
+            editContext->Class<MyComponent>("My Component", "The World's Most Clever Component")
                 ->ClassElement(AZ::Edit::ClassElements::EditorData, "")
                       ->Attribute(AZ::Edit::Attributes::AppearsInAddComponentMenu, AZ_CRC("Game"))
                 ->DataElement(AZ::Edit::UIHandlers::Default, &MyComponent::m_someFloatField, "Some Float", "This is a float that means X.")
@@ -69,7 +69,7 @@ The preceding example adds five data members to `MyComponent`. The first four da
 It is common for fields to be reflected for serialization, but not for editing, when using advanced reflection features such as [change notification callbacks](#change-notification-callbacks). In these cases, components may conduct complex internal calculations based on user property changes. The result of these calculations must be serialized but not exposed for editing. In such a case, you reflect the field to `SerializeContext` but do not add an entry in `EditContext`. An example follows:
 
 ```cpp
-serialize->Class<MyComponent>()
+serializeContext->Class<MyComponent>()
     ->Version(1)
     ...
     ->Field("SomeFloat", &MyComponent::m_someFloatField)
@@ -79,10 +79,10 @@ serialize->Class<MyComponent>()
 
 ...
 
-AZ::EditContext* edit = serialize->GetEditContext();
-if (edit)
+AZ::EditContext* editContext = serializeContext->GetEditContext();
+if (editContext)
 {
-    edit->Class<MyComponent>("My Component", "The World's Most Clever Component")
+    editContext->Class<MyComponent>("My Component", "The World's Most Clever Component")
         ->ClassElement(AZ::Edit::ClassElements::EditorData, "")
             ->Attribute(AZ::Edit::Attributes::AppearsInAddComponentMenu, AZ_CRC("Game"))
         ->DataElement(AZ::Edit::UIHandlers::Default, &MyComponent::m_someFloatField, "Some Float", "This is a float that means X.")
@@ -108,7 +108,7 @@ A component's `Reflect()` function is invoked automatically for all relevant con
 The following code dynamically casts the anonymous context provided to a serialize context, which is how components discern the type of context that `Reflect()` is being called for.
 
 ```cpp
-AZ::SerializeContext* serialize = azrtti_cast<AZ::SerializeContext*>(context);
+AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(context);
 ```
 
 ## Serialization
@@ -116,7 +116,7 @@ AZ::SerializeContext* serialize = azrtti_cast<AZ::SerializeContext*>(context);
  Reflecting a class for serialization involves a [builder pattern](https://en.wikipedia.org/wiki/Builder_pattern) style markup in C++, as follows:
 
 ```cpp
-serialize->Class<TestAsset>()
+serializeContext->Class<TestAsset>()
          ->Version(1)
          ->Field("SomeFloat", &MyComponent::m_someFloatField)
          ->Field("SomeString", &MyComponent::m_someStringField)
@@ -149,10 +149,10 @@ When you run O3DE tools such as O3DE Editor, an `EditContext` and a `SerializeCo
 The following code demonstrates basic edit context reflection:
 
 ```cpp
-AZ::EditContext* edit = serialize->GetEditContext();
-if (edit)
+AZ::EditContext* editContext = serializeContext->GetEditContext();
+if (editContext)
 {
-    edit->Class<TestAsset>("My Component", "The World's Most Clever Component")
+    editContext->Class<TestAsset>("My Component", "The World's Most Clever Component")
         ->ClassElement(AZ::Edit::ClassElements::EditorData, "")
              ->Attribute(AZ::Edit::Attributes::AppearsInAddComponentMenu, AZ_CRC("Game"))
         ->DataElement(AZ::Edit::UIHandlers::Default, &MyComponent::m_someFloatField, "Some Float", "This is a float that means X.")
@@ -203,7 +203,7 @@ Static or global functions
 Member functions
 `Attribute(AZ::Edit::Attributes::ChangeNotify, &MyComponent::SomeMemberFunction)`
 
-## Change Notification Callbacks {#change-notification-callbacks}
+## Change Notification Callbacks
 
 Another commonly used feature of the edit context is its ability to bind a change notification callback:
 
@@ -214,7 +214,7 @@ Another commonly used feature of the edit context is its ability to bind a chang
 
 The example binds a member function to be invoked when this property is changed, which allows the component to conduct other logic. The `AZ::Edit::Attributes::ChangeNotify` attribute also looks for an optional returned value that tells the property system if it needs to refresh aspects of its state. For example, if your change callback modifies other internal data that affects the property system, you can request a value refresh. If your callback modifies data that requires attributes be reevaluated (and any bound functions be reinvoked), you can request a refresh of attributes and values. Finally, if your callback conducts work that requires a full refresh (this is not typical), you can refresh the entire state.
 
-The following example causes the property grid to refresh values when `m_someStringField `is modified through the property grid. `AZ::Edit::PropertyRefreshLevels::ValuesOnly` signals the property grid to update the GUI with changes to the underlying data.
+The following example causes the property grid to refresh values when `m_someStringField` is modified through the property grid. `AZ::Edit::PropertyRefreshLevels::ValuesOnly` signals the property grid to update the GUI with changes to the underlying data.
 
 ```cpp
 ->DataElement(AZ::Edit::UIHandlers::Default, &MyComponent::m_someStringField, "Some String", "This is a string that means Y.")
@@ -229,11 +229,12 @@ AZ::u32 MyComponent::OnStringFieldChanged()
 }
 ```
 
-`AZ::Edit::PropertyRefreshLevels::ValuesOnly` is one of the following refresh modes that you can use \(`\dev\Code\Framework\AzCore\AzCore\Serialization\EditContextConstants.inl`\):
-+ `AttributesAndValues` - Reevaluates attributes of the properties displayed in the UI and refreshes their values. Because attributes can be bound to data members, member functions, global functions, or static variables, it's sometimes necessary to ask the property grid to reevaluate them. Doing so might include reinvoking bound functions.
-+  `EntireTree` - Refreshes the entire tree that is displayed in the UI.
-+  `None` - Specifies that the properties that are displayed in the UI should not be refreshed.
-+ `ValuesOnly` - Refreshes only the values of the properties that are displayed in the UI. The property grid updates the GUI to reflect changes to underlying data that might have occurred in the change callback.
+`AZ::Edit::PropertyRefreshLevels::ValuesOnly` is one of the following refresh modes that you can use:
+
++ `AttributesAndValues` -- Reevaluates attributes of the properties displayed in the UI and refreshes their values. Because attributes can be bound to data members, member functions, global functions, or static variables, it's sometimes necessary to ask the property grid to reevaluate them. Doing so might include reinvoking bound functions.
++ `EntireTree` -- Refreshes the entire tree that is displayed in the UI.
++ `None` -- Specifies that the properties that are displayed in the UI should not be refreshed.
++ `ValuesOnly` -- Refreshes only the values of the properties that are displayed in the UI. The property grid updates the GUI to reflect changes to underlying data that might have occurred in the change callback.
 
 The following more complex example binds a list of strings as options for a combo box. The list of strings is attached to a string field *Property A*. Suppose you want to modify the options available in the combo box for Property A with the values from another *Property B*. In that case you can bind the combo box `AZ::Edit::Attributes::StringList` attribute to a member function that computes and returns the list of options. In the `AZ::Edit::Attributes::ChangeNotify` attribute for Property B, you tell the system to reevaluate attributes, which in turn reinvokes the function that computes the list of options.
 
