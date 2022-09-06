@@ -6,7 +6,7 @@ weight: 400
 toc: true
 ---
 
-The **Vegetation Gem** provides tools for procedurally populating landscapes and environments. These tools comprise of system and editor components that use a data-driven approach to automatically select, place, and manage vegetation objects dynamically at runtime. You can use these tools to replace or compliment manually placing, editing, and saving every instance in your level. 
+The **Vegetation Gem** provides tools for procedurally populating landscapes and environments. These tools are comprised of system and editor components that use a data-driven approach to automatically select, place, and manage vegetation objects dynamically at runtime. You can use these tools to replace or compliment manually placing, editing, and saving every instance in your level. 
 
 Many features of the dynamic vegetation system rely on other Gems and components to supply data about the environment, such as surfaces, images, and gradient signals, to direct where and how vegetation appears. 
 
@@ -63,27 +63,27 @@ They can examine and take action on points in the world, like placing or prevent
 
 In O3DE Editor, vegetation areas are referred to as *vegetation layers*.
 You can add vegetation behaviors to vegetation layers using components that describe, select, reject, or mutate potential vegetation instances. 
-These are called vegetation descriptor providers, selectors, filters, and modifiers respectively. 
-Each has an interface that extends the system with new features. 
-The Vegetation Gem contains several versions of each type that each has a unique purpose and effect on generated vegetation instances. 
+These behaviors are called, respectively, vegetation descriptor providers, selectors, filters, and modifiers. 
+Each behavior has an interface that extends the system with new features. 
+The Vegetation Gem contains several versions of each type, and each type has a unique purpose and effect on generated vegetation instances. 
 These components expose controls that allow rapid, rule-based, procedural population of any arbitrarily sized part of the world with decorative content. 
 Depending on its configuration, a single Vegetation Layer can act as a small patch of flowers or intelligently blanket the entire world with a convincing variety and groupings of plants and objects.
 
 ## Vegetation instances
 
-*Vegetation instances* are the objects placed throughout the world. They're created using vegetation descriptors. 
-They contain a unique ID, transform, other attributes, and a reference to the source vegetation descriptor.
+*Vegetation instances* are the objects placed throughout the world. When you create them, you configure their information using vegetation descriptors. 
+These include a unique ID, transform, other attributes, and a reference to the source vegetation descriptor.
 
-In O3DE Editor, vegetation instances appear within a vegetation area. They-re procedurally generated based on the vegetation behaviors that you can add to the vegetation area. 
+In O3DE Editor, vegetation instances appear within a vegetation area. They're procedurally generated based on the vegetation behaviors that you can add to the vegetation area. 
 
 ## Vegetation descriptors
 
-*Vegetation descriptors* are structures that specify all of the common details needed to represent a type of vegetation. It includes data for mesh and material assets, the type of vegetation render node that should be created, the affects of wind and physics, and many advanced parameters that can be enabled to override behavior of most of the included filters and modifiers. **Vegetation Descriptors** can be created in the **Vegetation Asset List** component or through the Asset Editor by creating and editing **Vegetation Descriptor List Assets**.
+*Vegetation descriptors* are structures that specify all of the common details needed to represent a type of vegetation. It includes data for mesh and material assets, the type of vegetation render node that should be created, the affects of wind and physics, and many advanced parameters that you can enable to override behavior of most of the included filters and modifiers. You can create **Vegetation Descriptors** in the **Vegetation Asset List** component or through the Asset Editor by creating and editing **Vegetation Descriptor List Assets**.
 
 | Group Name | Parameter Name | Description | Type |
 | --- | --- | --- | --- |
 |     | **Weight** | Weight is used during the spawning and selection process as a multiplier that changes the likelihood of one descriptor being chosen over another. | Float |
-|     | **Advanced** | When enabled, displays all the subsequent advanced settings which are normally hidden to save real estate. | Bool |
+|     | **Advanced** | When enabled, displays all the subsequent advanced settings that are normally hidden to save real estate. | Bool |
 | Position |     | Settings for controlling per instance overrides to the position modifier component. |     |
 |     | **Position Override Enabled** | When enabled, the position modifier component can use the per instance override values specified in the descriptor instead of the component configuration. | Bool |
 |     | **Position Min X** | Override value for the minimum position offset on the X axis. | Float |
@@ -110,7 +110,7 @@ In O3DE Editor, vegetation instances appear within a vegetation area. They-re pr
 |     | **Altitude Filter Max** | Override value for the maximum altitude accepted by the filter. | Float |
 | Distance Between Filter (Radius) |     | Settings for controlling per instance overrides for the distance between filter component. |     |
 |     | **Distance Between Filter Override Enabled** | When enabled, the distance between filter component can use the per instance override values specified in the descriptor instead of the component configuration. | Bool |
-|     | **Bound Mode** | When performing distance checks between two instances, this setting determines whether the radius of the mesh asset is used vs a manually entered radius<br><br>Radius<br><br>MeshRadius. |     |
+|     | **Bound Mode** | When performing distance checks between two instances, this setting determines whether the radius of the mesh asset is used, as opposed to a manually-entered radius<br><br>Radius<br><br>MeshRadius. |     |
 |     | **Radius Min** | User defined radius for distance checks. | Float |
 | Surface Slope Alignment |     |     |     |
 |     | **Surface Slope Alignment Override Enabled** | When enabled, the slope alignment modifier component can use the per instance override values specified in the descriptor instead of the component configuration. | Bool |
@@ -121,7 +121,7 @@ In O3DE Editor, vegetation instances appear within a vegetation area. They-re pr
 |     | **Slope Filter Min** | Override minimum slope accepted by filter. | Float |
 |     | **Slope Filter Max** | Override maximum slope accepted by filter. | Float |
 | Surface Mask Filter |     |     |     |
-|     | **Override Mode** | Controls how overrides are considered by the surface mask filter component<br><br>Disable - Overrides are completely ignored<br><br>Replace - Overrides replace those specified in the component<br><br>Extend - Overrides are added to the specified in the component. |     |
+|     | **Override Mode** | Controls how overrides are considered by the surface mask filter component<br><br>Disable - Overrides are completely ignored<br><br>Replace - Overrides replace those specified in the component<br><br>Extend - Overrides are added to those specified in the component. |     |
 |     | **Inclusion Tags** | A set of surface tags that dictate where vegetation can be placed. | SurfaceTagVector |
 |     | **Exclusion Tags** | A set of surface tags that dictate where vegetation will not be placed. | SurfaceTagVector |
 | Surface Mask Depth Filter |     |     |     |
@@ -138,8 +138,8 @@ File: [`/Gems/Vegetation/Code/Source/Descriptor.cpp`](https://github.com/o3de/o3
 
 | Request Name | Description | Parameters | Return |
 | --- | --- | --- | --- |
-| `GetLayer` | Gets the *layer*, or macro priority value of the vegetation area. `GetLayer` and `GetPriority` are useful to identify a vegetation area when multiple overlap. | None | Float |
-| `GetPriority` | Gets the micro priority value within a layer. `GetLayer` and `GetPriority` are useful to identify a vegetation area when multiple overlap. | None | Float |
+| `GetLayer` | Gets the *layer*, or macro priority value of the vegetation area. `GetLayer` and `GetPriority` are useful to identify a vegetation area when there is multiple overlap. | None | Float |
+| `GetPriority` | Gets the micro priority value within a layer. `GetLayer` and `GetPriority` are useful to identify a vegetation area when there is multiple overlap. | None | Float |
 | `GetEncompassingAabb` | Gets the axis-aligned bounding box for the entire vegetation area. | None | AZ::Aabb |
 | `GetProductCount` | Gets the number of instances currently spawned by this vegetation area. | None | AZ::u32 |
 | `GetChangeIndex` | Gets an incrementing number that represents the number of times the Blocker area refreshed since creation. | None | AZ::u32 |
@@ -152,7 +152,7 @@ File: [`/Gems/Vegetation/Code/Include/Vegetation/Ebuses/AreaInfoBus.h`](https://
 | --- | --- | --- | --- |
 | `PrepareToClaim` | Runs any pre-claim checks or logic, independent of position. | EntityIdStack& stackIds | Bool |
 | `ClaimPositions` | Processes a set of points for planting vegetation or performing other operations. | EntityIdStack& stackIds, ClaimContext& context | None |
-| `UnclaimPosition` | Handles clean up whenever the system releases a claimed point. | const ClaimHandle handle | None |
+| `UnclaimPosition` | Handles clean-up whenever the system releases a claimed point. | const ClaimHandle handle | None |
 
 File: [`/Gems/Vegetation/Code/Include/Vegetation/Ebuses/AreaRequestBus.h`](https://github.com/o3de/o3de/blob/0fb9727c67c9ad7885b4af538860920f5ba53bfa/Gems/Vegetation/Code/Include/Vegetation/Ebuses/AreaRequestBus.h)
 
@@ -194,7 +194,7 @@ File: [`/Gems/Vegetation/Code/Include/Vegetation/Ebuses/ModifierRequestBus.h`](h
 
 Vegetation areas use *vegetation filters* to evaluate every vegetation instance data and decide whether any activity should occur. 
 Vegetation Layer Spawners use filters to determine whether to create vegetation instances. 
-They can optionally evaluate filters before or after vegetation modifiers execute. 
+They can optionally evaluate filters before or after vegetation modifiers run. 
 Evaluating filters before modifiers performs better because it skips unnecessary processing, but it yields less accurate results when position changes occur. 
 Evaluating filters after modifiers is accurate because it evaluates the final version of the instance data.
 
