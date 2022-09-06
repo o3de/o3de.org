@@ -284,7 +284,7 @@ If everything works correctly, the test run will show the following results:
 
 ```
 ============================================ test session starts ========================================
-platform win32 -- Python 3.7.10, pytest-5.3.2, py-1.9.0, pluggy-0.13.1
+platform win32 -- Python 3.10.5, pytest-6.2.5, py-1.11.0, pluggy-0.13.1
 rootdir: <O3DE root dir>
 plugins: mock-2.0.0, timeout-1.3.4, ly-test-tools-1.0.0
 collected 2 items
