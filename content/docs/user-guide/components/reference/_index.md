@@ -45,12 +45,13 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Simple Motion](/docs/user-guide/components/reference/animation/simple-motion/) | Assigns a single motion to the associated Actor. This is a simpler alterative to the Anim Graph component.  |
 
 
-### Atom
+### Atom Renderer
 
 | Component | Description | 
 | - | - |
 | [Bloom](/docs/user-guide/components/reference/atom/bloom/) | Simulates real-world light bleeding, or glow. |
 | [CubeMap Capture](/docs/user-guide/components/reference/atom/cubemap-capture/) | Captures a Specular IBL or Diffuse IBL cubemap at the entity position. |
+| [Debug Rendering](/docs/user-guide/components/reference/atom/debug-rendering/) | Level component used to visually inspect and debug the scene. |
 | [Decal (Atom)](/docs/user-guide/components/reference/atom/decal/) | Projects a texture material in a single direction onto mesh surfaces. |
 | [Deferred Fog](/docs/user-guide/components/reference/atom/deferred-fog/) | Creates a screen space fog effect that can ben used as scene fog or layered / ground fog with an optional cloud noise turbulence. |
 | [Depth of Field](/docs/user-guide/components/reference/atom/depth-of-field/) | Simulates the lens effects of real world cameras that focus on a specific area. |
@@ -65,7 +66,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [HDRi Skybox](/docs/user-guide/components/reference/atom/hdri-skybox/) | Creates a skybox in your scene using an HDR image. |
 | [Light](/docs/user-guide/components/reference/atom/light) | Simulates soft studio light by creating various types of punctual and area lights. |
 | [Look Modification](/docs/user-guide/components/reference/atom/look-modification/) | Configures a color grading look-up table (LUT). |
-| [Material](/docs/user-guide/components/reference/atom/material/) | Adds a material on the object's mesh. |
+| [Material](/docs/user-guide/components/reference/atom/material/) | Manage and customize materials that are applied to models, actors, and other compatible components. |
 | [Mesh](/docs/user-guide/components/reference/atom/mesh/) | Specifies a model to render. |
 | [Occlusion Culling Plane](/docs/user-guide/components/reference/atom/occlusion-culling-plane/) | Creates an occluder that when put between the camera and a mesh, can block the mesh from being rendered. |
 | [Physical Sky](/docs/user-guide/components/reference/atom/physical-sky/) | Adjusts the physical environment of the scene, such as the sky, sun, and fog. |

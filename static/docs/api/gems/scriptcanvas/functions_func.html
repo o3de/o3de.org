@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">2111.2</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -123,6 +123,9 @@ $(function() {
 <li>CreateNodeOnEntity()
 : <a class="el" href="class_script_canvas_1_1_system_requests.html#a68ef501a32b1e81d873cea080629941e">ScriptCanvas::SystemRequests</a>
 </li>
+<li>CreateScriptCanvasAsset()
+: <a class="el" href="class_script_canvas_editor_1_1_document_context_requests.html#af59b2111f6caf3133572c2a3ff9fea62">ScriptCanvasEditor::DocumentContextRequests</a>
+</li>
 </ul>
 
 
@@ -186,6 +189,9 @@ $(function() {
 <li>GetEditorEntityId()
 : <a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_requests.html#a03f604477a68b4a82d96b110f5ad357c">ScriptCanvasEditor::EditorScriptCanvasRequests</a>
 </li>
+<li>GetFileInfo()
+: <a class="el" href="class_script_canvas_editor_1_1_document_context_requests.html#a81dc658eb80da7c61bdb2cd86a4bbc69">ScriptCanvasEditor::DocumentContextRequests</a>
+</li>
 <li>GetGraph()
 : <a class="el" href="class_script_canvas_1_1_graph_requests.html#a56a76dabebebcfd6bf2a68751ba6541c">ScriptCanvas::GraphRequests</a>
 </li>
@@ -196,12 +202,18 @@ $(function() {
 : <a class="el" href="class_script_canvas_1_1_graph.html#a132dbcd9fbb592cc3ca71326846aa3ee">ScriptCanvas::Graph</a>
 , <a class="el" href="class_script_canvas_1_1_graph_requests.html#a5db4c2284ccfff7ca7b8e3354fc29480">ScriptCanvas::GraphRequests</a>
 </li>
+<li>GetInstance()
+: <a class="el" href="class_graph_canvas_1_1_sub_scene_requests.html#a07964994df8d8016243af2df9b433bfa">GraphCanvas::SubSceneRequests</a>
+</li>
 <li>GetItems()
 : <a class="el" href="class_script_canvas_1_1_graph_requests.html#ad0ed5e9aaa6224e9e510a5b8fe863027">ScriptCanvas::GraphRequests</a>
 </li>
 <li>GetName()
 : <a class="el" href="class_script_canvas_1_1_variable_requests.html#a80bfc2949d38d22c5f2769ae7c1ac005">ScriptCanvas::VariableRequests</a>
 , <a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_requests.html#acb1aa31c2319ec279d40e29870614b72">ScriptCanvasEditor::EditorScriptCanvasRequests</a>
+</li>
+<li>GetReference()
+: <a class="el" href="class_graph_canvas_1_1_sub_scene_requests.html#ac04a46e5e27d50dcd98c04e1479edf96">GraphCanvas::SubSceneRequests</a>
 </li>
 <li>GetRuntimeEntityId()
 : <a class="el" href="class_script_canvas_1_1_graph_requests.html#a3147b4e2f65159af0462283354422020">ScriptCanvas::GraphRequests</a>
@@ -258,6 +270,13 @@ $(function() {
 </li>
 <li>IsNoOp()
 : <a class="el" href="class_script_canvas_1_1_nodes_1_1_logic_1_1_any.html#a4dc39e7d60986c554dcb06c8b8a1f3ed">ScriptCanvas::Nodes::Logic::Any</a>
+</li>
+</ul>
+
+
+<h3><a id="index_l"></a>- l -</h3><ul>
+<li>LoadScriptCanvasAsset()
+: <a class="el" href="class_script_canvas_editor_1_1_document_context_requests.html#a44a3407404487dfbbc824d9bfb43832d">ScriptCanvasEditor::DocumentContextRequests</a>
 </li>
 </ul>
 
@@ -329,7 +348,7 @@ $(function() {
 : <a class="el" href="class_script_canvas_1_1_endpoint_notifications.html#aef39a8660e6216072f771d595689b58d">ScriptCanvas::EndpointNotifications</a>
 </li>
 <li>OnGraphCanvasNodeCreated()
-: <a class="el" href="class_script_canvas_editor_1_1_editor_graph.html#a06db48409c8f1000c15b273c6b977371">ScriptCanvasEditor::EditorGraph</a>
+: <a class="el" href="class_script_canvas_editor_1_1_graph.html#ae89cfe8eab983d6bd7c45d8e3c49daee">ScriptCanvasEditor::Graph</a>
 </li>
 <li>OnGraphSet()
 : <a class="el" href="class_script_canvas_1_1_node.html#a54cb0feb89e5d6a408c113a0daf59f1b">ScriptCanvas::Node</a>
@@ -384,6 +403,15 @@ $(function() {
 <li>OnPreConnectionRemoved()
 : <a class="el" href="class_script_canvas_1_1_graph_notifications.html#a8f28001609866096cfb8a0bc0e2dc8d0">ScriptCanvas::GraphNotifications</a>
 </li>
+<li>OnScriptCanvasAssetReady()
+: <a class="el" href="class_script_canvas_editor_1_1_document_context_notifications.html#aefdeafd484c6e8c675ea4d23e6b8732c">ScriptCanvasEditor::DocumentContextNotifications</a>
+</li>
+<li>OnScriptCanvasAssetReloaded()
+: <a class="el" href="class_script_canvas_editor_1_1_document_context_notifications.html#a03d3a7151aae0b99cd4ff83d7e0803de">ScriptCanvasEditor::DocumentContextNotifications</a>
+</li>
+<li>OnScriptCanvasAssetUnloaded()
+: <a class="el" href="class_script_canvas_editor_1_1_document_context_notifications.html#a69a50d05e6c7f0e343d50e36a3f527b1">ScriptCanvasEditor::DocumentContextNotifications</a>
+</li>
 <li>OnSlotAdded()
 : <a class="el" href="class_script_canvas_1_1_node_notifications.html#a2f7a9f36df05a17fe8f0934d54ba6d47">ScriptCanvas::NodeNotifications</a>
 </li>
@@ -415,6 +443,9 @@ $(function() {
 
 
 <h3><a id="index_r"></a>- r -</h3><ul>
+<li>RegisterScriptCanvasAsset()
+: <a class="el" href="class_script_canvas_editor_1_1_document_context_requests.html#ac4b8cbaf9c6c014949adcb03ad5e0556">ScriptCanvasEditor::DocumentContextRequests</a>
+</li>
 <li>RemoveConnection()
 : <a class="el" href="class_script_canvas_1_1_graph_requests.html#a7159cc4101b2c143c6b23d7b8016d2f8">ScriptCanvas::GraphRequests</a>
 </li>
@@ -450,6 +481,9 @@ $(function() {
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>SaveScriptCanvasAsset()
+: <a class="el" href="class_script_canvas_editor_1_1_document_context_requests.html#abf594686a3617372e430ef2b8248df2f">ScriptCanvasEditor::DocumentContextRequests</a>
+</li>
 <li>SCRIPT_CANVAS_UNIT_TEST_EQUALITY_OVERLOAD_DECLARATIONS()
 : <a class="el" href="class_script_canvas_1_1_unit_testing_1_1_bus_traits.html#a55ca9b73e0c476ea064034efdf14df2f">ScriptCanvas::UnitTesting::BusTraits</a>
 </li>
@@ -474,6 +508,13 @@ $(function() {
 </ul>
 
 
+<h3><a id="index_u"></a>- u -</h3><ul>
+<li>UnregisterScriptCanvasAsset()
+: <a class="el" href="class_script_canvas_editor_1_1_document_context_requests.html#aac0d8d7431a8b842bdc57e4210e4d666">ScriptCanvasEditor::DocumentContextRequests</a>
+</li>
+</ul>
+
+
 <h3><a id="index_v"></a>- v -</h3><ul>
 <li>ValidateGraph()
 : <a class="el" href="class_script_canvas_1_1_status_requests.html#aed570f2d325e74633df5738fd7e2d0f6">ScriptCanvas::StatusRequests</a>
@@ -485,7 +526,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:20:25 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 7 2022 12:05:09 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

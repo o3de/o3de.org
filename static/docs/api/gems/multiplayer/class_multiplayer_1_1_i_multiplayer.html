@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Multiplayer Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">2111.2</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -105,6 +105,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a57a0b76e27edc11a1c889477d071a2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd397b4df8ab87352fd9597a9d2c8df6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html">INetworkEntityManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#afd397b4df8ab87352fd9597a9d2c8df6">GetNetworkEntityManager</a> ()=0</td></tr>
 <tr class="separator:afd397b4df8ab87352fd9597a9d2c8df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6a35a25510858bab117d19f0c85e01"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a8c6a35a25510858bab117d19f0c85e01">SetFilterEntityManager</a> (<a class="el" href="class_multiplayer_1_1_i_filter_entity_manager.html">IFilterEntityManager</a> *entityFilter)=0</td></tr>
+<tr class="separator:a8c6a35a25510858bab117d19f0c85e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa314d3205cd760ac85e0b4b435ecb36"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_multiplayer_1_1_i_filter_entity_manager.html">IFilterEntityManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#aaa314d3205cd760ac85e0b4b435ecb36">GetFilterEntityManager</a> ()=0</td></tr>
+<tr class="separator:aaa314d3205cd760ac85e0b4b435ecb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96a0d1d0df0dd3088468239064faef17"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a96a0d1d0df0dd3088468239064faef17">RegisterPlayerIdentifierForRejoin</a> (uint64_t temporaryUserIdentifier, NetEntityId controlledEntityId)=0</td></tr>
 <tr class="separator:a96a0d1d0df0dd3088468239064faef17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87028dc8b5cc3d800029d1abf4df4754"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a87028dc8b5cc3d800029d1abf4df4754">CompleteClientMigration</a> (uint64_t temporaryUserIdentifier, AzNetworking::ConnectionId connectionId, const HostId &amp;publicHostId, ClientInputId migratedClientInputId)=0</td></tr>
@@ -593,6 +597,32 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aaa314d3205cd760ac85e0b4b435ecb36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa314d3205cd760ac85e0b4b435ecb36">&#9670;&nbsp;</a></span>GetFilterEntityManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_multiplayer_1_1_i_filter_entity_manager.html">IFilterEntityManager</a>* Multiplayer::IMultiplayer::GetFilterEntityManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a pointer to the user-defined filtering manager of entities. </p><dl class="section return"><dt>Returns</dt><dd>pointer to the filtered entity manager, or nullptr if not set </dd></dl>
+
+</div>
+</div>
 <a id="afd397b4df8ab87352fd9597a9d2c8df6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd397b4df8ab87352fd9597a9d2c8df6">&#9670;&nbsp;</a></span>GetNetworkEntityManager()</h2>
 
@@ -911,6 +941,38 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8c6a35a25510858bab117d19f0c85e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c6a35a25510858bab117d19f0c85e01">&#9670;&nbsp;</a></span>SetFilterEntityManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Multiplayer::IMultiplayer::SetFilterEntityManager </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_multiplayer_1_1_i_filter_entity_manager.html">IFilterEntityManager</a> *&#160;</td>
+          <td class="paramname"><em>entityFilter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets user-defined filtering manager for entities. This allows selectively choosing which entities to replicate on a per client connection. See <a class="el" href="class_multiplayer_1_1_i_filter_entity_manager.html" title="IFilterEntityManager provides an interface for filtering entities out from replication down to client...">IFilterEntityManager</a> for details. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityFilter</td><td>non-owning pointer, the caller is responsible for memory management. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5c129c7a72f19f9ecb775076c78cbbc5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c129c7a72f19f9ecb775076c78cbbc5">&#9670;&nbsp;</a></span>SetShouldSpawnNetworkEntities()</h2>
 
@@ -1025,7 +1087,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:20:03 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 7 2022 12:04:53 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

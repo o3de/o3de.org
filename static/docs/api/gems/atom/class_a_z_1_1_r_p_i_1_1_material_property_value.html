@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">2111.2</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -54,8 +54,6 @@ $(function() {
 <div class="title">AZ::RPI::MaterialPropertyValue Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;MaterialPropertyValue.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -104,16 +102,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a75a09e31a953688a2a91e314a468beba"><td class="memItemLeft" align="right" valign="top"><a id="a75a09e31a953688a2a91e314a468beba"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MaterialPropertyValue</b> (const AZStd::string &amp;value)</td></tr>
 <tr class="separator:a75a09e31a953688a2a91e314a468beba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefbad6ce563802ae19001a6ba75d9567"><td class="memItemLeft" align="right" valign="top"><a id="aefbad6ce563802ae19001a6ba75d9567"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialPropertyValue</b> (const Name &amp;value)</td></tr>
-<tr class="separator:aefbad6ce563802ae19001a6ba75d9567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca8d97862f6ca12a1cedcaa06cc1bb51"><td class="memItemLeft" align="right" valign="top"><a id="aca8d97862f6ca12a1cedcaa06cc1bb51"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#aca8d97862f6ca12a1cedcaa06cc1bb51">MaterialPropertyValue</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> &amp;value)</td></tr>
 <tr class="memdesc:aca8d97862f6ca12a1cedcaa06cc1bb51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor. <br /></td></tr>
 <tr class="separator:aca8d97862f6ca12a1cedcaa06cc1bb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a38f58b4562ac361b67bad6678c966a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a3a38f58b4562ac361b67bad6678c966a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#a3a38f58b4562ac361b67bad6678c966a">operator=</a> (const T &amp;value)</td></tr>
-<tr class="separator:a3a38f58b4562ac361b67bad6678c966a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb9635e54039f40bfe41e81955d9134"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:adeb9635e54039f40bfe41e81955d9134"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#adeb9635e54039f40bfe41e81955d9134">operator=</a> (const T &amp;value)</td></tr>
+<tr class="separator:adeb9635e54039f40bfe41e81955d9134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab928a5ad63dadd7116190228cff93abc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab928a5ad63dadd7116190228cff93abc"><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#ab928a5ad63dadd7116190228cff93abc">GetValue</a> () const</td></tr>
 <tr class="separator:ab928a5ad63dadd7116190228cff93abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,9 +144,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (R
 static AZStd::any&#160;</td><td class="memItemRight" valign="bottom"><b>ToAny</b> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> &amp;value)</td></tr>
 <tr class="separator:a4fefdafc1ac303ce241b89e60326d142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is a variant data type that represents the value of a material property. For convenience, it supports all the types necessary for <em>both</em> the runtime data (<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a>) as well as .material file data (<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html" title="This is a simple data structure for serializing in/out material source files.">MaterialSourceData</a>). For example, Instance&lt;Image&gt; is exclusive to the runtime data and AZStd::string is primarily for image file paths in .material files. Most other data types are relevant in both contexts. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aea35fa01df8c344102aa819a9e2e78c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea35fa01df8c344102aa819a9e2e78c7">&#9670;&nbsp;</a></span>ValueType</h2>
 
@@ -163,7 +156,7 @@ static AZStd::any&#160;</td><td class="memItemRight" valign="bottom"><b>ToAny</b
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Variant type definition. AZStd::monostate is used as default and invalid value. Specially, image type is stored in different type under different contexts: Data::Instance&lt;Image&gt; is used in <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> at runtime Data::Asset&lt;ImageAsset&gt; is used in <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a>, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> AZStd::string is used in <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html">MaterialTypeSourceData</a>, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html" title="This is a simple data structure for serializing in/out material source files.">MaterialSourceData</a> These are included in one <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> type for convenience, rather than having to maintain three separate classes that are very similar </p>
+<p>Variant type definition. AZStd::monostate is used as default and invalid value. Specially, image type is stored in different type under different contexts: Data::Instance&lt;Image&gt; is used in <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> at runtime Data::Asset&lt;ImageAsset&gt; is used in <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a>, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> AZStd::string is used in <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html" title="This is a simple data structure for serializing in/out material type source files.">MaterialTypeSourceData</a>, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html" title="This is a simple data structure for serializing in/out material source files.">MaterialSourceData</a> These are included in one <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> type for convenience, rather than having to maintain three separate classes that are very similar </p>
 
 </div>
 </div>
@@ -219,12 +212,12 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get actual value from the variant. The type will be restricted as in <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#a3a38f58b4562ac361b67bad6678c966a">operator=()</a>. </p>
+<p>Get actual value from the variant. The type will be restricted as in <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#adeb9635e54039f40bfe41e81955d9134">operator=()</a>. </p>
 
 </div>
 </div>
-<a id="a3a38f58b4562ac361b67bad6678c966a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a38f58b4562ac361b67bad6678c966a">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="adeb9635e54039f40bfe41e81955d9134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeb9635e54039f40bfe41e81955d9134">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +228,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a>&amp; AZ::RPI::MaterialPropertyValue::operator= </td>
+          <td class="memname">void AZ::RPI::MaterialPropertyValue::operator= </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
@@ -258,7 +251,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 7 2022 12:04:29 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

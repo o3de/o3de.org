@@ -21,6 +21,7 @@ toc: true
 | Gem | Description |
 | - | - |
 | [Kythera AI](./kythera-ai/) | The Kythera AI Gem provides support for Kythera AI features in Open 3D Engine (O3DE), and includes a demo project, levels, and assets that demonstrate the features of Kythera AI. |
+| [Recast Navigation](./ai/recast/recast-navigation) | The Recast Navigation Gem provides support for building navigation meshes and calculating walkable paths within those navigation meshes. It uses open source library [Recast Navigation](https://github.com/recastnavigation/recastnavigation). An example of its use can be found in AutomatedTesting project in Navigation Sample level. |
 
 
 ## Assets
@@ -65,6 +66,7 @@ toc: true
 | [Crash Reporting](./debug/crash-reporting) | The Crash Reporting Gem provides support for external crash reporting for Open 3D Engine projects. |
 | [Debug Draw](./debug/debug-draw) | The Debug Draw Gem provides Editor and runtime debug visualization features for Open 3D Engine. |
 | [Immediate Mode GUI (IMGUI)](./debug/imgui) | The Immediate Mode GUI Gem provides the 3rdParty library IMGUI which can be used to create run time immediate mode overlays for debugging and profiling information in Open 3D Engine. |
+| [Remote Tools](./debug/remote-tools) | The Remote Tools Gem facilitates connections between Open 3D Engine applications for debugging purposes. |
 <!-- | [Automated Launcher Testing](./debug/automated-launcher-testing) | The Automated Launcher Testing Gem manages automated Open 3D Engine (O3DE) launcher tests. | -->
 
 ## Design

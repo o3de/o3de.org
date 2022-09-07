@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">2111.2</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -117,8 +117,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_descriptor_redirector.html">FileDescriptorRedirector</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o.html">FileIO</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html">FileIOBase</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class for file <a class="el" href="namespace_a_z_1_1_i_o.html" title="PathView implementation.">IO</a> stack classes.  <a href="class_a_z_1_1_i_o_1_1_file_i_o_base.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_events.html">FileIOEvents</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_stream.html">FileIOStream</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,6 +152,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_mock_file_i_o_base.html">MockFileIOBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1_path_reflection.html">PathReflection</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,15 +213,18 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>CompressionBus</b> =
 <tr class="memitem:a159b0f1c6410bc618eb0b036c4eede61"><td class="memItemLeft" align="right" valign="top"><a id="a159b0f1c6410bc618eb0b036c4eede61"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>HandleType</b> = AZ::u32</td></tr>
 <tr class="separator:a159b0f1c6410bc618eb0b036c4eede61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba1a8f7b32d8c8323b8d4d19513bf3c"><td class="memItemLeft" align="right" valign="top"><a id="a6ba1a8f7b32d8c8323b8d4d19513bf3c"></a>
+typedef <a class="el" href="class_a_z_1_1_e_bus.html">AZ::EBus</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o.html">FileIO</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FileIOBus</b></td></tr>
+<tr class="separator:a6ba1a8f7b32d8c8323b8d4d19513bf3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4beb228ef59f65a1d2780cfb552fef"><td class="memItemLeft" align="right" valign="top"><a id="aae4beb228ef59f65a1d2780cfb552fef"></a>
+typedef <a class="el" href="class_a_z_1_1_e_bus.html">AZ::EBus</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_events.html">FileIOEvents</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FileIOEventBus</b></td></tr>
+<tr class="separator:aae4beb228ef59f65a1d2780cfb552fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a499713f4ed97c0ea3d259ee31baa83fc"><td class="memItemLeft" align="right" valign="top"><a id="a499713f4ed97c0ea3d259ee31baa83fc"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>SizeType</b> = AZ::u64</td></tr>
 <tr class="separator:a499713f4ed97c0ea3d259ee31baa83fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fa18a4995ca540690159359559f31f0"><td class="memItemLeft" align="right" valign="top"><a id="a0fa18a4995ca540690159359559f31f0"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>OffsetType</b> = AZ::s64</td></tr>
 <tr class="separator:a0fa18a4995ca540690159359559f31f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedd1bfe2f7b6276616c9fc52c4742096"><td class="memItemLeft" align="right" valign="top"><a id="aedd1bfe2f7b6276616c9fc52c4742096"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>FileRequestPtr</b> = <a class="el" href="class_a_z_std_1_1intrusive__ptr.html">AZStd::intrusive_ptr</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_external_file_request.html">ExternalFileRequest</a> &gt;</td></tr>
-<tr class="separator:aedd1bfe2f7b6276616c9fc52c4742096"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77ac8b4aa8397ec4a2fdf123442b8bbc"><td class="memItemLeft" align="right" valign="top"><a id="a77ac8b4aa8397ec4a2fdf123442b8bbc"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_i_o.html#a77ac8b4aa8397ec4a2fdf123442b8bbc">FixedMaxPathString</a> = <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">AZStd::basic_fixed_string</a>&lt; char, <a class="el" href="namespace_a_z_1_1_i_o.html#ae164229bbf1f88cf7a2bbfb660f444c6">MaxPathLength</a>, <a class="el" href="struct_a_z_std_1_1char__traits.html">AZStd::char_traits</a>&lt; char &gt; &gt;</td></tr>
 <tr class="memdesc:a77ac8b4aa8397ec4a2fdf123442b8bbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path aliases. <br /></td></tr>
@@ -225,6 +234,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nam
 <tr class="memitem:a198892b6faf7fa4d0f833f433df08f94"><td class="memItemLeft" align="right" valign="top"><a id="a198892b6faf7fa4d0f833f433df08f94"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>FixedMaxPath</b> = <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</a>&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#a77ac8b4aa8397ec4a2fdf123442b8bbc">FixedMaxPathString</a> &gt;</td></tr>
 <tr class="separator:a198892b6faf7fa4d0f833f433df08f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b2b96c9fcec296c21df20087de2796"><td class="memItemLeft" align="right" valign="top"><a id="a19b2b96c9fcec296c21df20087de2796"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>FileRequestPtr</b> = <a class="el" href="class_a_z_std_1_1intrusive__ptr.html">AZStd::intrusive_ptr</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_external_file_request.html">ExternalFileRequest</a> &gt;</td></tr>
+<tr class="separator:a19b2b96c9fcec296c21df20087de2796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab038c13aa7ebc6b7575524fccea940d6"><td class="memItemLeft" align="right" valign="top"><a id="ab038c13aa7ebc6b7575524fccea940d6"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>TimedAverageWindowDuration</b> = <a class="el" href="class_a_z_std_1_1chrono_1_1duration.html">AZStd::chrono::microseconds</a></td></tr>
 <tr class="separator:ab038c13aa7ebc6b7575524fccea940d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,14 +351,14 @@ template&lt;typename StringType &gt; </td></tr>
 template&lt;typename StringType &gt; </td></tr>
 <tr class="memitem:a27ed5fa9dffb3e2c996b44a896855516"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</a>&lt; StringType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator/</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</a>&lt; StringType &gt; &amp;lhs, const typename <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</a>&lt; StringType &gt;::value_type *rhs)</td></tr>
 <tr class="separator:a27ed5fa9dffb3e2c996b44a896855516"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cde8572c1de105551861c47b1028653"><td class="memTemplParams" colspan="2"><a id="a9cde8572c1de105551861c47b1028653"></a>
-template&lt;typename PathType &gt; </td></tr>
-<tr class="memitem:a9cde8572c1de105551861c47b1028653"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; PathType &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; PathType &gt; &amp;rhs)</td></tr>
-<tr class="separator:a9cde8572c1de105551861c47b1028653"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f40065dc7fbcabab11e3f950410359d"><td class="memTemplParams" colspan="2"><a id="a2f40065dc7fbcabab11e3f950410359d"></a>
-template&lt;typename PathType &gt; </td></tr>
-<tr class="memitem:a2f40065dc7fbcabab11e3f950410359d"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; PathType &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; PathType &gt; &amp;rhs)</td></tr>
-<tr class="separator:a2f40065dc7fbcabab11e3f950410359d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac77387f252da5d357e2dd06eb4efb1e4"><td class="memTemplParams" colspan="2"><a id="ac77387f252da5d357e2dd06eb4efb1e4"></a>
+template&lt;typename PathType1 &gt; </td></tr>
+<tr class="memitem:ac77387f252da5d357e2dd06eb4efb1e4"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; PathType1 &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; PathType1 &gt; &amp;rhs)</td></tr>
+<tr class="separator:ac77387f252da5d357e2dd06eb4efb1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45390ec0495b7a78549bbdf0b345e048"><td class="memTemplParams" colspan="2"><a id="a45390ec0495b7a78549bbdf0b345e048"></a>
+template&lt;typename PathType1 &gt; </td></tr>
+<tr class="memitem:a45390ec0495b7a78549bbdf0b345e048"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; PathType1 &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; PathType1 &gt; &amp;rhs)</td></tr>
+<tr class="separator:a45390ec0495b7a78549bbdf0b345e048"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c5c693551b2ed0307414cf2c9b1ca91"><td class="memItemLeft" align="right" valign="top"><a id="a3c5c693551b2ed0307414cf2c9b1ca91"></a>
 template void&#160;</td><td class="memItemRight" valign="bottom"><b>swap&lt; AZStd::string &gt;</b> (<a class="el" href="namespace_a_z_1_1_i_o.html#a6d21ec0564733f951fd53d1af2152e23">Path</a> &amp;lhs, <a class="el" href="namespace_a_z_1_1_i_o.html#a6d21ec0564733f951fd53d1af2152e23">Path</a> &amp;rhs) noexcept</td></tr>
 <tr class="separator:a3c5c693551b2ed0307414cf2c9b1ca91"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,27 +389,32 @@ template <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</a
 <tr class="memitem:a44d5710a09b84e0f91db151dc456f315"><td class="memItemLeft" align="right" valign="top"><a id="a44d5710a09b84e0f91db151dc456f315"></a>
 template <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</a>&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#a77ac8b4aa8397ec4a2fdf123442b8bbc">FixedMaxPathString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/&lt;FixedMaxPathString &gt;</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</a>&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#a77ac8b4aa8397ec4a2fdf123442b8bbc">FixedMaxPathString</a> &gt; &amp;lhs, const typename <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</a>&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#a77ac8b4aa8397ec4a2fdf123442b8bbc">FixedMaxPathString</a> &gt;::value_type *rhs)</td></tr>
 <tr class="separator:a44d5710a09b84e0f91db151dc456f315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2f43569ee1ca421f32b625a653ed520"><td class="memItemLeft" align="right" valign="top"><a id="ab2f43569ee1ca421f32b625a653ed520"></a>
-template bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==&lt;const PathView &gt;</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a> &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a> &gt; &amp;rhs)</td></tr>
-<tr class="separator:ab2f43569ee1ca421f32b625a653ed520"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a4d678db18148176e7d1cb84044bb63"><td class="memItemLeft" align="right" valign="top"><a id="a2a4d678db18148176e7d1cb84044bb63"></a>
-template bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==&lt;const Path &gt;</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; const <a class="el" href="namespace_a_z_1_1_i_o.html#a6d21ec0564733f951fd53d1af2152e23">Path</a> &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; const <a class="el" href="namespace_a_z_1_1_i_o.html#a6d21ec0564733f951fd53d1af2152e23">Path</a> &gt; &amp;rhs)</td></tr>
-<tr class="separator:a2a4d678db18148176e7d1cb84044bb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a654a81ce285c2b40b0b0ed9c46275e60"><td class="memItemLeft" align="right" valign="top"><a id="a654a81ce285c2b40b0b0ed9c46275e60"></a>
-template bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==&lt;const FixedMaxPath &gt;</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; const <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">FixedMaxPath</a> &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; const <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">FixedMaxPath</a> &gt; &amp;rhs)</td></tr>
-<tr class="separator:a654a81ce285c2b40b0b0ed9c46275e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7827f65e26e659536fd14c3ebeef7a7"><td class="memItemLeft" align="right" valign="top"><a id="ad7827f65e26e659536fd14c3ebeef7a7"></a>
-template bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=&lt;const PathView &gt;</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a> &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a> &gt; &amp;rhs)</td></tr>
-<tr class="separator:ad7827f65e26e659536fd14c3ebeef7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1690ac4ae06fd04f5706b28c8add6e98"><td class="memItemLeft" align="right" valign="top"><a id="a1690ac4ae06fd04f5706b28c8add6e98"></a>
-template bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=&lt;const Path &gt;</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; const <a class="el" href="namespace_a_z_1_1_i_o.html#a6d21ec0564733f951fd53d1af2152e23">Path</a> &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; const <a class="el" href="namespace_a_z_1_1_i_o.html#a6d21ec0564733f951fd53d1af2152e23">Path</a> &gt; &amp;rhs)</td></tr>
-<tr class="separator:a1690ac4ae06fd04f5706b28c8add6e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6233b5309435e0e5435e42ed5c10d873"><td class="memItemLeft" align="right" valign="top"><a id="a6233b5309435e0e5435e42ed5c10d873"></a>
-template bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=&lt;const FixedMaxPath &gt;</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; const <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">FixedMaxPath</a> &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; const <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">FixedMaxPath</a> &gt; &amp;rhs)</td></tr>
-<tr class="separator:a6233b5309435e0e5435e42ed5c10d873"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af33393a130913340bf76ae9e09db9839"><td class="memItemLeft" align="right" valign="top"><a id="af33393a130913340bf76ae9e09db9839"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PathReflect</b> (<a class="el" href="class_a_z_1_1_reflect_context.html">AZ::ReflectContext</a> *context)</td></tr>
-<tr class="separator:af33393a130913340bf76ae9e09db9839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab933c7a8a7ee50cb8c46d756a6836817"><td class="memItemLeft" align="right" valign="top"><a id="ab933c7a8a7ee50cb8c46d756a6836817"></a>
+template bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==&lt;PathView &gt;</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a> &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a> &gt; &amp;rhs)</td></tr>
+<tr class="separator:ab933c7a8a7ee50cb8c46d756a6836817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae498451d5e6ab4ceff5218cbdcda4c59"><td class="memItemLeft" align="right" valign="top"><a id="ae498451d5e6ab4ceff5218cbdcda4c59"></a>
+template bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==&lt;Path &gt;</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#a6d21ec0564733f951fd53d1af2152e23">Path</a> &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#a6d21ec0564733f951fd53d1af2152e23">Path</a> &gt; &amp;rhs)</td></tr>
+<tr class="separator:ae498451d5e6ab4ceff5218cbdcda4c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd91311e86c727a5ae9f4d0c3da465d"><td class="memItemLeft" align="right" valign="top"><a id="a1cd91311e86c727a5ae9f4d0c3da465d"></a>
+template bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==&lt;FixedMaxPath &gt;</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">FixedMaxPath</a> &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">FixedMaxPath</a> &gt; &amp;rhs)</td></tr>
+<tr class="separator:a1cd91311e86c727a5ae9f4d0c3da465d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b6a88b32b38a0ba06d4850a4edd0939"><td class="memItemLeft" align="right" valign="top"><a id="a9b6a88b32b38a0ba06d4850a4edd0939"></a>
+template bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=&lt;PathView &gt;</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a> &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a> &gt; &amp;rhs)</td></tr>
+<tr class="separator:a9b6a88b32b38a0ba06d4850a4edd0939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a553fae42fbe8e206925feb290ec6fe8e"><td class="memItemLeft" align="right" valign="top"><a id="a553fae42fbe8e206925feb290ec6fe8e"></a>
+template bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=&lt;Path &gt;</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#a6d21ec0564733f951fd53d1af2152e23">Path</a> &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#a6d21ec0564733f951fd53d1af2152e23">Path</a> &gt; &amp;rhs)</td></tr>
+<tr class="separator:a553fae42fbe8e206925feb290ec6fe8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4432f9c1f407202a721852da5fb299d0"><td class="memItemLeft" align="right" valign="top"><a id="a4432f9c1f407202a721852da5fb299d0"></a>
+template bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=&lt;FixedMaxPath &gt;</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">FixedMaxPath</a> &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">FixedMaxPath</a> &gt; &amp;rhs)</td></tr>
+<tr class="separator:a4432f9c1f407202a721852da5fb299d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cde8572c1de105551861c47b1028653"><td class="memTemplParams" colspan="2"><a id="a9cde8572c1de105551861c47b1028653"></a>
+template&lt;typename PathType &gt; </td></tr>
+<tr class="memitem:a9cde8572c1de105551861c47b1028653"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; PathType &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; PathType &gt; &amp;rhs)</td></tr>
+<tr class="separator:a9cde8572c1de105551861c47b1028653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f40065dc7fbcabab11e3f950410359d"><td class="memTemplParams" colspan="2"><a id="a2f40065dc7fbcabab11e3f950410359d"></a>
+template&lt;typename PathType &gt; </td></tr>
+<tr class="memitem:a2f40065dc7fbcabab11e3f950410359d"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; PathType &gt; &amp;lhs, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; PathType &gt; &amp;rhs)</td></tr>
+<tr class="separator:a2f40065dc7fbcabab11e3f950410359d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e81ebe13fa91377a50f18271bd9ff68"><td class="memItemLeft" align="right" valign="top"><a id="a0e81ebe13fa91377a50f18271bd9ff68"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_file_request_handle.html">FileRequestHandle</a> &amp;lhs, const <a class="el" href="class_a_z_std_1_1intrusive__ptr.html">FileRequestPtr</a> &amp;rhs)</td></tr>
 <tr class="separator:a0e81ebe13fa91377a50f18271bd9ff68"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -648,7 +665,7 @@ template&lt;typename StringType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:17:21 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 7 2022 12:02:48 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -90,7 +90,8 @@ The `generate_android_project.py` script contains the following arguments:
 | `--gradle-plugin-version` | The version of the Android Gradle plugin to specify for the build. | `4.2.0` | The minimum supported version is `4.2.0` (default). For details, refer to [https://developer.android.com/studio/releases/gradle-plugin?buildsystem=ndk-build](https://developer.android.com/studio/releases/gradle-plugin?buildsystem=ndk-build). <br><br>Currently, only `4.2.0` is supported. This script can be updated to support future versions. |
 | `--android-ndk-version` | The specific NDK value to base the build on`.` | `21.4.7075529` | The values are based on the NDK's full revision number:<br>-   `16.1.4479499`    <br>-   `17.2.4988734`    <br>-   `18.1.5063045`    <br>-   `19.2.5345600`    <br>-   `20.0.5594570`    <br>-   `20.1.5948944`    <br>-   `21.0.6113669`    <br>-   `21.1.6352462`    <br>-   `21.2.6472646`    <br>-   `21.3.6528147`    <br>-   `21.4.7075529`    <br>-   `22.0.7026061`    <br>-   `22.1.7171670`    <br><br>You can also use the `*` wildcard to select the most recent version. For example, `21.*` selects the most recent version of NDK21. |
 | `--android-native-api-level` | The API level that the NDK supports, for native CMake Android support. | The API Level set by the `--android-sdk-platform` parameter | - The minimum API Level for the NDK is `24`. |
-| `--include-apk-assets` | (Optional) Includes the game assets in the APK. | `False` | If this option is set to `True`, you must have the assets built for Android (refer to the [Android Assets](#android-assets) section.) |
+| `--enable-unity-build` | (Optional) Compiles source code with unity build. | Unity build disabled. |      |
+| `--include-apk-assets` | (Optional) Includes the game assets in the APK. | Assets not included in the APK. |      |
 | `--asset-mode` | Configures how to include assets in the APK. Asset Mode values can be `VFS`, `PAK`, or `LOOSE`. | `LOOSE` | - `LOOSE` (default): Unpacks and stores assets as individual files that are contained within the asset cache. <br>- `PAK`: Packs the assets into PAK files. <br>- `VFS`: References assets remotely from the target device through the Virtual File System. |
 | `--asset-type` | The type of assets to include in the APK | `android` | In the future, this argument will be deprecated and will only support `android` type assets. |
 | `--gradle-install-path` | If the Gradle command is not in the PATH environment, or if you want to specify an alternate Gradle folder, this argument allows you to override the installed version of Gradle to use for the project generation. | The path to Gradle that's installed in the PATH environment. | - The minimum version of Gradle is `6.7.1`, which is compatible with the minimum version of the Android Gradle plugin, `4.2.0`. <br>- If you don't specify this argument and Gradle is not installed in the PATH environment, an error will occur. |
@@ -100,7 +101,7 @@ The `generate_android_project.py` script contains the following arguments:
 | `--signconfig-store-password` | A required password for the Android JKS KeyStore file, if specified by `--signconfig-store-file`.| None | - Required if you specify a JKS using `--signconfig-store-file`. |
 | `--signconfig-key-alias` | A required alias of the signing key in an Android JKS KeyStore file, if specified by `--signconfig-store-file`. | None | - Required if you specify a JKS using `--signconfig-store-file`. |
 | `--signconfig-key-password` | A required password to use the signing key in an Android JKS KeyStore file, if specified by `--signconfig-store-file`. | None | - Required if you specify a JKS using `--signconfig-store-file`. |
-| `--overwrite-existing` | (Optional) Overwrites existing scripts in the target build folder if they already exist. | `False` |     |
+| `--overwrite-existing` | (Optional) Overwrites existing scripts in the target build folder if they already exist. | Does not overwrite. |     |
 
 
 ## Android Deployment Script
@@ -114,7 +115,9 @@ The `deploy_android.py` script contains the following arguments:
 | `-c`, `--configuration` | The build configuration of the built binaries to deploy from. |     |     |
 | `--device-id-filter` | A comma separated list of connected Android device IDs to filter the deployment to. | All connected Android devices. | Only used when multiple devices are connected and you want to filter which devices will be the target for the deployment. |
 | `-t`, `--deployment-type` | The type (`APK`, `ASSETS`, or `BOTH`) to deploy:<br/><br/>**`APK`**<br/>Deploys only the APK without any external assets (refer to the `--include-apk-assets` option in `generate_android_project.py`). Any assets that're already included in the APK will be deployed as well. <br/><br/>**`ASSETS`**<br/>Deploys only the assets for the APK. This option is only valid if you didn't set `--include-apk-assets` during the project generation.<br><br>**`BOTH`**<br> Deploys both the APK and assets, regardless of the `--include-apk-assets` option. | `BOTH` | Deploying the APK and assets separately can optimize different workflows. For example, developers who update only the code should use `APK` to make their deployments more efficient (provided that the assets are deployed at least initially). In another example, technical artists who only update the assets should use `ASSETS` (provided that `--include-apk-assets` was not set during project generation).|
-| `--clean` | Cleans the target Android device by uninstalling any pre-existing projects before deploying. |     |     |
+| `--clean` | Cleans the target Android device by uninstalling any pre-existing projects before deploying. |     | Uninstalling the project also deletes all the assets deployed as well. |
+| `--kill-adb-server` |  Option to kill adb server at the end of deployment. |     |     |
+| `--debug` | Option to enable debug messages. |     |     |
 
 
 

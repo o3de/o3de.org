@@ -5,6 +5,7 @@ linktitle: Network Settings
 ---
 
 ## Overview
+
 This page documents [console variables](/docs/user-guide/appendix/cvars/) and other settings that can control Networking and Multiplayer behavior.
 
 ## Networking commands
@@ -64,6 +65,7 @@ The following [console variables](/docs/user-guide/appendix/cvars/) control clie
 
 
 ## Server settings
+
 The following [console variables](/docs/user-guide/appendix/cvars/) control server behavior.
 
 | Setting                 | Description                                                                     | Default | Notes                |

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">2111.2</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,7 +46,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
@@ -64,15 +63,6 @@ $(function() {
 
 <p>Inherits EBusTraits.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html">ProcessAsyncParams</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A parameter group struct that can optionally be passed to the various Process*Async API functions.  <a href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html">TerrainJobContext</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A JobContext used to run jobs spawned by calls to the various Process*Async functions.  <a href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a407f7ef9a7a21f522b9d9cf215fdd6a8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> { <b>BILINEAR</b>, 
@@ -84,23 +74,15 @@ Public Types</h2></td></tr>
 <tr class="memitem:a71eae1926b7f51c8d8fc98ef30ded49a"><td class="memItemLeft" align="right" valign="top"><a id="a71eae1926b7f51c8d8fc98ef30ded49a"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>MutexType</b> = AZStd::recursive_mutex</td></tr>
 <tr class="separator:a71eae1926b7f51c8d8fc98ef30ded49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7aa23d4fe3fdad80dec78545aead50ab"><td class="memItemLeft" align="right" valign="top">typedef AZStd::function&lt; void(AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html">TerrainJobContext</a> &gt;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a7aa23d4fe3fdad80dec78545aead50ab">ProcessAsyncCompleteCallback</a></td></tr>
-<tr class="separator:a7aa23d4fe3fdad80dec78545aead50ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab2face40bb0656fd6e544e85926651f1"><td class="memItemLeft" align="right" valign="top"><a id="ab2face40bb0656fd6e544e85926651f1"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetTerrainHeightQueryResolution</b> () const =0</td></tr>
-<tr class="separator:ab2face40bb0656fd6e544e85926651f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a837fefa0cd94517b28c49b111f3adee0"><td class="memItemLeft" align="right" valign="top"><a id="a837fefa0cd94517b28c49b111f3adee0"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTerrainHeightQueryResolution</b> (float queryResolution)=0</td></tr>
-<tr class="separator:a837fefa0cd94517b28c49b111f3adee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae40a685d1662bdcd119a116239e0d5bd"><td class="memItemLeft" align="right" valign="top"><a id="ae40a685d1662bdcd119a116239e0d5bd"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetTerrainSurfaceDataQueryResolution</b> () const =0</td></tr>
-<tr class="separator:ae40a685d1662bdcd119a116239e0d5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a128c0288e95723dc99e364d0cb6cba54"><td class="memItemLeft" align="right" valign="top"><a id="a128c0288e95723dc99e364d0cb6cba54"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTerrainSurfaceDataQueryResolution</b> (float queryResolution)=0</td></tr>
-<tr class="separator:a128c0288e95723dc99e364d0cb6cba54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f26b122d7130dd9bda3222e68c86ca"><td class="memItemLeft" align="right" valign="top"><a id="a40f26b122d7130dd9bda3222e68c86ca"></a>
+virtual AZ::Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>GetTerrainHeightQueryResolution</b> () const =0</td></tr>
+<tr class="separator:a40f26b122d7130dd9bda3222e68c86ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48aed2d937be68c4f0e4d83f31431251"><td class="memItemLeft" align="right" valign="top"><a id="a48aed2d937be68c4f0e4d83f31431251"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTerrainHeightQueryResolution</b> (AZ::Vector2 queryResolution)=0</td></tr>
+<tr class="separator:a48aed2d937be68c4f0e4d83f31431251"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8066aa2ae36f003142b9e2eb002a09e"><td class="memItemLeft" align="right" valign="top"><a id="ad8066aa2ae36f003142b9e2eb002a09e"></a>
 virtual AZ::Aabb&#160;</td><td class="memItemRight" valign="bottom"><b>GetTerrainAabb</b> () const =0</td></tr>
 <tr class="separator:ad8066aa2ae36f003142b9e2eb002a09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,85 +139,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfacePoi
 <tr class="memitem:a766e0efa4da0f20b2ea0a37378b2ede9"><td class="memItemLeft" align="right" valign="top"><a id="a766e0efa4da0f20b2ea0a37378b2ede9"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfacePointFromFloats</b> (float x, float y, <a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_point.html">SurfaceData::SurfacePoint</a> &amp;outSurfacePoint, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, bool *terrainExistsPtr=nullptr) const =0</td></tr>
 <tr class="separator:a766e0efa4da0f20b2ea0a37378b2ede9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7dfe0c81aeb95239eef0bda46ced762"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#ac7dfe0c81aeb95239eef0bda46ced762">ProcessHeightsFromList</a> (const AZStd::span&lt; const AZ::Vector3 &gt; &amp;inPositions, SurfacePointListFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>) const =0</td></tr>
-<tr class="separator:ac7dfe0c81aeb95239eef0bda46ced762"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2661e33bda2725da42844a31d12f752b"><td class="memItemLeft" align="right" valign="top"><a id="a2661e33bda2725da42844a31d12f752b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessNormalsFromList</b> (const AZStd::span&lt; const AZ::Vector3 &gt; &amp;inPositions, SurfacePointListFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>) const =0</td></tr>
-<tr class="separator:a2661e33bda2725da42844a31d12f752b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bfec7d34cd036078abc36c04b3caba0"><td class="memItemLeft" align="right" valign="top"><a id="a3bfec7d34cd036078abc36c04b3caba0"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessSurfaceWeightsFromList</b> (const AZStd::span&lt; const AZ::Vector3 &gt; &amp;inPositions, SurfacePointListFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>) const =0</td></tr>
-<tr class="separator:a3bfec7d34cd036078abc36c04b3caba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7449728e6d000e11c23bf76b5dc23d0a"><td class="memItemLeft" align="right" valign="top"><a id="a7449728e6d000e11c23bf76b5dc23d0a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessSurfacePointsFromList</b> (const AZStd::span&lt; const AZ::Vector3 &gt; &amp;inPositions, SurfacePointListFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>) const =0</td></tr>
-<tr class="separator:a7449728e6d000e11c23bf76b5dc23d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18805c31158fe2543258c69a425c652a"><td class="memItemLeft" align="right" valign="top"><a id="a18805c31158fe2543258c69a425c652a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessHeightsFromListOfVector2</b> (const AZStd::span&lt; const AZ::Vector2 &gt; &amp;inPositions, SurfacePointListFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>) const =0</td></tr>
-<tr class="separator:a18805c31158fe2543258c69a425c652a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c41afc27dfafeb5db67fee7e72f455f"><td class="memItemLeft" align="right" valign="top"><a id="a3c41afc27dfafeb5db67fee7e72f455f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessNormalsFromListOfVector2</b> (const AZStd::span&lt; const AZ::Vector2 &gt; &amp;inPositions, SurfacePointListFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>) const =0</td></tr>
-<tr class="separator:a3c41afc27dfafeb5db67fee7e72f455f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34e744b5a66f4a26e5dc0b49aece5883"><td class="memItemLeft" align="right" valign="top"><a id="a34e744b5a66f4a26e5dc0b49aece5883"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessSurfaceWeightsFromListOfVector2</b> (const AZStd::span&lt; const AZ::Vector2 &gt; &amp;inPositions, SurfacePointListFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>) const =0</td></tr>
-<tr class="separator:a34e744b5a66f4a26e5dc0b49aece5883"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52f486d4ce2d46c9cedb59e32d50d58e"><td class="memItemLeft" align="right" valign="top"><a id="a52f486d4ce2d46c9cedb59e32d50d58e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessSurfacePointsFromListOfVector2</b> (const AZStd::span&lt; const AZ::Vector2 &gt; &amp;inPositions, SurfacePointListFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>) const =0</td></tr>
-<tr class="separator:a52f486d4ce2d46c9cedb59e32d50d58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3070f0d5874239a9f1f6955a30016b4f"><td class="memItemLeft" align="right" valign="top">virtual AZStd::pair&lt; size_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a3070f0d5874239a9f1f6955a30016b4f">GetNumSamplesFromRegion</a> (const AZ::Aabb &amp;inRegion, const AZ::Vector2 &amp;stepSize, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> samplerType) const =0</td></tr>
-<tr class="separator:a3070f0d5874239a9f1f6955a30016b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafee7f8c5cbe42f6ac35af3ba638654e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#aafee7f8c5cbe42f6ac35af3ba638654e">ProcessHeightsFromRegion</a> (const AZ::Aabb &amp;inRegion, const AZ::Vector2 &amp;stepSize, SurfacePointRegionFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>) const =0</td></tr>
-<tr class="separator:aafee7f8c5cbe42f6ac35af3ba638654e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad44efbd10600fd539167c92b8c3c875e"><td class="memItemLeft" align="right" valign="top"><a id="ad44efbd10600fd539167c92b8c3c875e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessNormalsFromRegion</b> (const AZ::Aabb &amp;inRegion, const AZ::Vector2 &amp;stepSize, SurfacePointRegionFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>) const =0</td></tr>
-<tr class="separator:ad44efbd10600fd539167c92b8c3c875e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b31a853908601f9b47ec772c300839e"><td class="memItemLeft" align="right" valign="top"><a id="a6b31a853908601f9b47ec772c300839e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessSurfaceWeightsFromRegion</b> (const AZ::Aabb &amp;inRegion, const AZ::Vector2 &amp;stepSize, SurfacePointRegionFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>) const =0</td></tr>
-<tr class="separator:a6b31a853908601f9b47ec772c300839e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a339d7b962b3dc330661f521fa201a12a"><td class="memItemLeft" align="right" valign="top"><a id="a339d7b962b3dc330661f521fa201a12a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessSurfacePointsFromRegion</b> (const AZ::Aabb &amp;inRegion, const AZ::Vector2 &amp;stepSize, SurfacePointRegionFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>) const =0</td></tr>
-<tr class="separator:a339d7b962b3dc330661f521fa201a12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14017acf65893fe35c7990df3fd22c1e"><td class="memItemLeft" align="right" valign="top"><a id="a14017acf65893fe35c7990df3fd22c1e"></a>
-virtual <a class="el" href="namespace_az_framework.html#a1a3f4ee1f65bca5c5030b67d2ca8cb0c">EntityContextId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a14017acf65893fe35c7990df3fd22c1e">GetTerrainRaycastEntityContextId</a> () const =0</td></tr>
-<tr class="memdesc:a14017acf65893fe35c7990df3fd22c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the terrain raycast entity context id. <br /></td></tr>
-<tr class="separator:a14017acf65893fe35c7990df3fd22c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d3f4e151d9284a912650bf79848c116"><td class="memItemLeft" align="right" valign="top"><a id="a8d3f4e151d9284a912650bf79848c116"></a>
-virtual <a class="el" href="struct_az_framework_1_1_render_geometry_1_1_ray_result.html">RenderGeometry::RayResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a8d3f4e151d9284a912650bf79848c116">GetClosestIntersection</a> (const <a class="el" href="struct_az_framework_1_1_render_geometry_1_1_ray_request.html">RenderGeometry::RayRequest</a> &amp;ray) const =0</td></tr>
-<tr class="memdesc:a8d3f4e151d9284a912650bf79848c116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a ray, return the closest intersection with terrain. <br /></td></tr>
-<tr class="separator:a8d3f4e151d9284a912650bf79848c116"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af15437ef1b0568c736f24029ac6d3a4b"><td class="memItemLeft" align="right" valign="top">virtual AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html">TerrainJobContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#af15437ef1b0568c736f24029ac6d3a4b">ProcessHeightsFromListAsync</a> (const AZStd::span&lt; const AZ::Vector3 &gt; &amp;inPositions, SurfacePointListFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, AZStd::shared_ptr&lt; <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html">ProcessAsyncParams</a> &gt; params=nullptr) const =0</td></tr>
-<tr class="separator:af15437ef1b0568c736f24029ac6d3a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f706bb87d2c1f18820a14b226323766"><td class="memItemLeft" align="right" valign="top"><a id="a6f706bb87d2c1f18820a14b226323766"></a>
-virtual AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html">TerrainJobContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessNormalsFromListAsync</b> (const AZStd::span&lt; const AZ::Vector3 &gt; &amp;inPositions, SurfacePointListFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, AZStd::shared_ptr&lt; <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html">ProcessAsyncParams</a> &gt; params=nullptr) const =0</td></tr>
-<tr class="separator:a6f706bb87d2c1f18820a14b226323766"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5e45af48547ee68b3495516abc91fb7"><td class="memItemLeft" align="right" valign="top"><a id="aa5e45af48547ee68b3495516abc91fb7"></a>
-virtual AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html">TerrainJobContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessSurfaceWeightsFromListAsync</b> (const AZStd::span&lt; const AZ::Vector3 &gt; &amp;inPositions, SurfacePointListFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, AZStd::shared_ptr&lt; <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html">ProcessAsyncParams</a> &gt; params=nullptr) const =0</td></tr>
-<tr class="separator:aa5e45af48547ee68b3495516abc91fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e6c1a94bad4c7733b56b265f25438fd"><td class="memItemLeft" align="right" valign="top"><a id="a9e6c1a94bad4c7733b56b265f25438fd"></a>
-virtual AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html">TerrainJobContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessSurfacePointsFromListAsync</b> (const AZStd::span&lt; const AZ::Vector3 &gt; &amp;inPositions, SurfacePointListFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, AZStd::shared_ptr&lt; <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html">ProcessAsyncParams</a> &gt; params=nullptr) const =0</td></tr>
-<tr class="separator:a9e6c1a94bad4c7733b56b265f25438fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a541f8b9e712cbeaf4dab01f4fa483a54"><td class="memItemLeft" align="right" valign="top"><a id="a541f8b9e712cbeaf4dab01f4fa483a54"></a>
-virtual AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html">TerrainJobContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessHeightsFromListOfVector2Async</b> (const AZStd::span&lt; const AZ::Vector2 &gt; &amp;inPositions, SurfacePointListFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, AZStd::shared_ptr&lt; <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html">ProcessAsyncParams</a> &gt; params=nullptr) const =0</td></tr>
-<tr class="separator:a541f8b9e712cbeaf4dab01f4fa483a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28d8ab6f81f4f57ab835d1ee43d1861a"><td class="memItemLeft" align="right" valign="top"><a id="a28d8ab6f81f4f57ab835d1ee43d1861a"></a>
-virtual AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html">TerrainJobContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessNormalsFromListOfVector2Async</b> (const AZStd::span&lt; const AZ::Vector2 &gt; &amp;inPositions, SurfacePointListFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, AZStd::shared_ptr&lt; <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html">ProcessAsyncParams</a> &gt; params=nullptr) const =0</td></tr>
-<tr class="separator:a28d8ab6f81f4f57ab835d1ee43d1861a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0a6d6c0f90c7b850a12f40079d5a216"><td class="memItemLeft" align="right" valign="top"><a id="af0a6d6c0f90c7b850a12f40079d5a216"></a>
-virtual AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html">TerrainJobContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessSurfaceWeightsFromListOfVector2Async</b> (const AZStd::span&lt; const AZ::Vector2 &gt; &amp;inPositions, SurfacePointListFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, AZStd::shared_ptr&lt; <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html">ProcessAsyncParams</a> &gt; params=nullptr) const =0</td></tr>
-<tr class="separator:af0a6d6c0f90c7b850a12f40079d5a216"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a920c10971e23ad51ee69504d1acfe0d3"><td class="memItemLeft" align="right" valign="top"><a id="a920c10971e23ad51ee69504d1acfe0d3"></a>
-virtual AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html">TerrainJobContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessSurfacePointsFromListOfVector2Async</b> (const AZStd::span&lt; const AZ::Vector2 &gt; &amp;inPositions, SurfacePointListFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, AZStd::shared_ptr&lt; <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html">ProcessAsyncParams</a> &gt; params=nullptr) const =0</td></tr>
-<tr class="separator:a920c10971e23ad51ee69504d1acfe0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55fe48d74135661b8774ebaf74885689"><td class="memItemLeft" align="right" valign="top"><a id="a55fe48d74135661b8774ebaf74885689"></a>
-virtual AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html">TerrainJobContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessHeightsFromRegionAsync</b> (const AZ::Aabb &amp;inRegion, const AZ::Vector2 &amp;stepSize, SurfacePointRegionFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, AZStd::shared_ptr&lt; <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html">ProcessAsyncParams</a> &gt; params=nullptr) const =0</td></tr>
-<tr class="separator:a55fe48d74135661b8774ebaf74885689"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6fc18b23f1c99f0875a25bb652a1684"><td class="memItemLeft" align="right" valign="top"><a id="aa6fc18b23f1c99f0875a25bb652a1684"></a>
-virtual AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html">TerrainJobContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessNormalsFromRegionAsync</b> (const AZ::Aabb &amp;inRegion, const AZ::Vector2 &amp;stepSize, SurfacePointRegionFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, AZStd::shared_ptr&lt; <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html">ProcessAsyncParams</a> &gt; params=nullptr) const =0</td></tr>
-<tr class="separator:aa6fc18b23f1c99f0875a25bb652a1684"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66eaf2cbb39d7361d86525e202c765ee"><td class="memItemLeft" align="right" valign="top"><a id="a66eaf2cbb39d7361d86525e202c765ee"></a>
-virtual AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html">TerrainJobContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessSurfaceWeightsFromRegionAsync</b> (const AZ::Aabb &amp;inRegion, const AZ::Vector2 &amp;stepSize, SurfacePointRegionFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, AZStd::shared_ptr&lt; <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html">ProcessAsyncParams</a> &gt; params=nullptr) const =0</td></tr>
-<tr class="separator:a66eaf2cbb39d7361d86525e202c765ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafa8739e86b79ab6975249111c47acf6"><td class="memItemLeft" align="right" valign="top"><a id="aafa8739e86b79ab6975249111c47acf6"></a>
-virtual AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html">TerrainJobContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessSurfacePointsFromRegionAsync</b> (const AZ::Aabb &amp;inRegion, const AZ::Vector2 &amp;stepSize, SurfacePointRegionFillCallback perPositionCallback, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampleFilter=<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a>, AZStd::shared_ptr&lt; <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html">ProcessAsyncParams</a> &gt; params=nullptr) const =0</td></tr>
-<tr class="separator:aafa8739e86b79ab6975249111c47acf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -260,23 +163,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Shared interface for terrain system implementations. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a7aa23d4fe3fdad80dec78545aead50ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7aa23d4fe3fdad80dec78545aead50ab">&#9670;&nbsp;</a></span>ProcessAsyncCompleteCallback</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef AZStd::function&lt;void(AZStd::shared_ptr&lt;<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html">TerrainJobContext</a>&gt;)&gt; <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a7aa23d4fe3fdad80dec78545aead50ab">AzFramework::Terrain::TerrainDataRequests::ProcessAsyncCompleteCallback</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Alias for an optional callback function to invoke when the various Process*Async functions complete. The <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html" title="A JobContext used to run jobs spawned by calls to the various Process*Async functions.">TerrainJobContext</a>, returned from the original Process*Async function call, is passed as a param to the callback function so it can be queried to see if the job was cancelled or completed normally. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a407f7ef9a7a21f522b9d9cf215fdd6a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a407f7ef9a7a21f522b9d9cf215fdd6a8">&#9670;&nbsp;</a></span>Sampler</h2>
 
@@ -517,49 +404,6 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a3070f0d5874239a9f1f6955a30016b4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3070f0d5874239a9f1f6955a30016b4f">&#9670;&nbsp;</a></span>GetNumSamplesFromRegion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual AZStd::pair&lt;size_t, size_t&gt; AzFramework::Terrain::TerrainDataRequests::GetNumSamplesFromRegion </td>
-          <td>(</td>
-          <td class="paramtype">const AZ::Aabb &amp;&#160;</td>
-          <td class="paramname"><em>inRegion</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZ::Vector2 &amp;&#160;</td>
-          <td class="paramname"><em>stepSize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a>&#160;</td>
-          <td class="paramname"><em>samplerType</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns the number of samples for a given region and step size. The first and second elements of the pair correspond to the X and Y sample counts respectively. </p>
-
-</div>
-</div>
 <a id="a72e6d37729eab9efc741bee254a3b2bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72e6d37729eab9efc741bee254a3b2bd">&#9670;&nbsp;</a></span>GetSurfacePoint()</h2>
 
@@ -658,154 +502,13 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="ac7dfe0c81aeb95239eef0bda46ced762"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7dfe0c81aeb95239eef0bda46ced762">&#9670;&nbsp;</a></span>ProcessHeightsFromList()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AzFramework::Terrain::TerrainDataRequests::ProcessHeightsFromList </td>
-          <td>(</td>
-          <td class="paramtype">const AZStd::span&lt; const AZ::Vector3 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>inPositions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SurfacePointListFillCallback&#160;</td>
-          <td class="paramname"><em>perPositionCallback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a>&#160;</td>
-          <td class="paramname"><em>sampleFilter</em> = <code><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Given a list of XY coordinates, call the provided callback function with surface data corresponding to each XY coordinate in the list. </p>
-
-</div>
-</div>
-<a id="af15437ef1b0568c736f24029ac6d3a4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af15437ef1b0568c736f24029ac6d3a4b">&#9670;&nbsp;</a></span>ProcessHeightsFromListAsync()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual AZStd::shared_ptr&lt;<a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_terrain_job_context.html">TerrainJobContext</a>&gt; AzFramework::Terrain::TerrainDataRequests::ProcessHeightsFromListAsync </td>
-          <td>(</td>
-          <td class="paramtype">const AZStd::span&lt; const AZ::Vector3 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>inPositions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SurfacePointListFillCallback&#160;</td>
-          <td class="paramname"><em>perPositionCallback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a>&#160;</td>
-          <td class="paramname"><em>sampleFilter</em> = <code><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AZStd::shared_ptr&lt; <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html">ProcessAsyncParams</a> &gt;&#160;</td>
-          <td class="paramname"><em>params</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Asynchronous versions of the various 'Process*' API functions declared above. It's the responsibility of the caller to ensure all callbacks are threadsafe. </p>
-
-</div>
-</div>
-<a id="aafee7f8c5cbe42f6ac35af3ba638654e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafee7f8c5cbe42f6ac35af3ba638654e">&#9670;&nbsp;</a></span>ProcessHeightsFromRegion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AzFramework::Terrain::TerrainDataRequests::ProcessHeightsFromRegion </td>
-          <td>(</td>
-          <td class="paramtype">const AZ::Aabb &amp;&#160;</td>
-          <td class="paramname"><em>inRegion</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZ::Vector2 &amp;&#160;</td>
-          <td class="paramname"><em>stepSize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SurfacePointRegionFillCallback&#160;</td>
-          <td class="paramname"><em>perPositionCallback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a>&#160;</td>
-          <td class="paramname"><em>sampleFilter</em> = <code><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8a5b39c8b553c821e7cddc6da64b5bd2ee">Sampler::DEFAULT</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Given a region(aabb) and a step size, call the provided callback function with surface data corresponding to the coordinates in the region. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Terrain/TerrainDataRequestBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:18:04 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 7 2022 12:03:23 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

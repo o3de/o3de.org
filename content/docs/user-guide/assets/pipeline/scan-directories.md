@@ -19,6 +19,8 @@ Asset processor monitors the following scan directories:
 
 1. **Engine & Editor** - The root directory and subdirectories of the engine and editor contain assets that are generally labeled critical and are required to run **O3DE Editor** and **Launcher**.
 
+1. **Intermediate Assets** - The root directory for intermediate assets which are output by other sources.  These files should be treated like the **Asset Cache**, they are generated files which should not be modified, and do not need to be tracked by source control.
+
 {{< note >}}
 Files in scan directories that Asset Processor doesn't recognize, such as license files, are ignored by Asset Processor. Ignored files aren't copied to the **Asset Cache**, and won't appear in **Asset Browser** in O3DE Editor.
 {{< /note >}}

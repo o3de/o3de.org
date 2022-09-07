@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">2111.2</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -49,11 +49,11 @@ $(function() {
 </li>
 <li>GarbageCollect()
 : <a class="el" href="class_a_z_1_1_allocator_manager.html#a7470aeb79adbcec8dd69b269b91dbe36">AZ::AllocatorManager</a>
-, <a class="el" href="class_a_z_1_1_best_fit_external_map_schema.html#a09b67ec9bd7463aebeb77c3f3b8217c2">AZ::BestFitExternalMapSchema</a>
+, <a class="el" href="class_a_z_1_1_best_fit_external_map_schema.html#adb0c80e1e28b5e18da21fe5584424ebb">AZ::BestFitExternalMapSchema</a>
 , <a class="el" href="class_a_z_1_1_child_allocator_schema.html#a22b28b08e02fa751e9c672696a73ffbe">AZ::ChildAllocatorSchema&lt; ParentAllocator &gt;</a>
 , <a class="el" href="class_a_z_1_1_heap_schema.html#ab45993844dc73a9653fdef9cc4001710">AZ::HeapSchema</a>
 , <a class="el" href="class_a_z_1_1_hpha_schema.html#af7a4ba57bfde139f3960d939f6b4e092">AZ::HphaSchema</a>
-, <a class="el" href="class_a_z_1_1_i_allocator_schema.html#a658931300e37c3b156173907f54f9b33">AZ::IAllocatorSchema</a>
+, <a class="el" href="class_a_z_1_1_i_allocator_allocate.html#afb5bdf55f07eff5debf51703b4ea021d">AZ::IAllocatorAllocate</a>
 , <a class="el" href="class_a_z_1_1_malloc_schema.html#aa68983dc999819627b104be20a9734bc">AZ::MallocSchema</a>
 , <a class="el" href="class_a_z_1_1_overrun_detection_schema.html#ad0d400ef04e2f1791e3b7b7e8af22ed1">AZ::OverrunDetectionSchema</a>
 , <a class="el" href="class_a_z_1_1_pool_schema.html#a476150e8d9676e624810235680010963">AZ::PoolSchema</a>
@@ -95,7 +95,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_interface.html#a39327bbc100e05276cedfefbafa97d44">AZ::Interface&lt; T &gt;</a>
 , <a class="el" href="class_a_z_1_1_script_time_point.html#a4ecdd4d135f6934b2a1d099586541782">AZ::ScriptTimePoint</a>
 , <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a972d3ecf69b09b6d5d44209f11547f5c">AZ::SettingsRegistryImpl</a>
-, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#a1b02656f7c5dbdb407d34fabd84f66ef">AZ::SettingsRegistryInterface</a>
+, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#aa952537e6581b37466fb2af477b0cde1">AZ::SettingsRegistryInterface</a>
 </li>
 <li>get_allocator()
 : <a class="el" href="class_a_z_std_1_1basic__string.html#a30f3ca84958aeafc38adb9e4df1b47f4">AZStd::basic_string&lt; Element, Traits, Allocator &gt;</a>
@@ -121,9 +121,6 @@ $(function() {
 </li>
 <li>GetActivityRef()
 : <a class="el" href="class_a_z_1_1_android_1_1_android_env.html#a1cf02ab804e360ef193c22e7e13a494d">AZ::Android::AndroidEnv</a>
-</li>
-<li>GetAdditionalInfo()
-: <a class="el" href="class_a_z_1_1_dom_1_1_visitor_error.html#a557213a2633effee4a795ea586ffc2f6">AZ::Dom::VisitorError</a>
 </li>
 <li>GetAddressByDistance()
 : <a class="el" href="class_a_z_1_1_bezier_spline.html#a9c357de5b3f47005b6dab24d8ebb6e5f">AZ::BezierSpline</a>
@@ -151,6 +148,9 @@ $(function() {
 </li>
 <li>GetAllMetadataEntities()
 : <a class="el" href="class_a_z_1_1_slice_component.html#a593cf8d1a85ad503eaa73ae2c93d2f3b">AZ::SliceComponent</a>
+</li>
+<li>GetAllocationSource()
+: <a class="el" href="class_a_z_1_1_i_allocator.html#a40a0bb675ebe399ac9715d8a5af68a61">AZ::IAllocator</a>
 </li>
 <li>GetAllProductDependencies()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset_catalog_requests.html#ae6ceb42b2240c60286fe81af93458c66">AZ::Data::AssetCatalogRequests</a>
@@ -310,14 +310,10 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unordered__set_3_01_k_00_01_h_00_01_e_2bd44a77c01ff0d9c224f0ed77c62657.html#a4e18de9900b3ce90c2b466196e5e19ba">AZ::SerializeGenericTypeInfo&lt; AZStd::unordered_set&lt; K, H, E, A &gt; &gt;::GenericClassUnorderedSet</a>
 , <a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_a_z_1_1u8_00_01_a_01_4_01_4_1_1_generic_class_byte_stream.html#a4936922857e25f0a744c83f89321414d">AZ::SerializeGenericTypeInfo&lt; AZStd::vector&lt; AZ::u8, A &gt; &gt;::GenericClassByteStream</a>
 , <a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_t_00_01_a_01_4_01_4_1_1_generic_class_info_vector.html#a0f9302b9865d82c9946518ef46463927">AZ::SerializeGenericTypeInfo&lt; AZStd::vector&lt; T, A &gt; &gt;::GenericClassInfoVector</a>
-, <a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_configurable_stack_3_01_stack_base_type_01_4_01_4f130e718390b1d14ec8663040bfab315.html#a91ae86640b8eea4e1aa6ac0c741c5646">AZ::SerializeGenericTypeInfo&lt; ConfigurableStack&lt; StackBaseType &gt; &gt;::GenericConfigurableStackInfo</a>
 , <a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_data_1_1_asset_3_01_t_01_4_01_4_1_1_generic_class_generic_asset.html#aa7fd6e792216570043e15fcf8abfd47b">AZ::SerializeGenericTypeInfo&lt; Data::Asset&lt; T &gt; &gt;::GenericClassGenericAsset</a>
 </li>
 <li>GetClassTypeId()
 : <a class="el" href="struct_a_z_1_1_serialize_generic_type_info.html#ab518e99824e0b3639dd77825303f1992">AZ::SerializeGenericTypeInfo&lt; ValueType &gt;</a>
-</li>
-<li>GetCode()
-: <a class="el" href="class_a_z_1_1_dom_1_1_visitor_error.html#a2c2fef842f629ee41546222adf218614">AZ::Dom::VisitorError</a>
 </li>
 <li>GetColumn()
 : <a class="el" href="class_a_z_1_1_matrix3x3.html#accdbeb98583fa32b045a0940e09b48b5">AZ::Matrix3x3</a>
@@ -389,6 +385,7 @@ $(function() {
 </li>
 <li>GetData()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset.html#a0f876cd3d7b779cd9e1cd6974bbd1389">AZ::Data::Asset&lt; T &gt;</a>
+, <a class="el" href="struct_a_z_1_1_debug_1_1_driller_d_o_m_parser_1_1_node.html#a82e24d757fae0eea993ed7b85073a6ed">AZ::Debug::DrillerDOMParser::Node</a>
 , <a class="el" href="class_a_z_1_1_serialize_context_1_1_data_element_node.html#a9fdf020efb88e3ec478c32a0f9572ab6">AZ::SerializeContext::DataElementNode</a>
 </li>
 <li>GetDataFlags()
@@ -406,6 +403,9 @@ $(function() {
 </li>
 <li>GetDataPatch()
 : <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html#a24381da80b61624141d58d7ba5134b9f">AZ::SliceComponent::SliceInstance</a>
+</li>
+<li>GetDataRequired()
+: <a class="el" href="struct_a_z_1_1_debug_1_1_driller_d_o_m_parser_1_1_node.html#a189a0f912ee95168c9b7dbc3fc453c9b">AZ::Debug::DrillerDOMParser::Node</a>
 </li>
 <li>GetDebugConfig()
 : <a class="el" href="class_a_z_1_1_best_fit_external_map_allocator.html#a29e87f80a13b0eed05f199a79d51f0c1">AZ::BestFitExternalMapAllocator</a>
@@ -429,7 +429,6 @@ $(function() {
 </li>
 <li>GetDeferredHead()
 : <a class="el" href="class_a_z_1_1_console_functor_base.html#ab90b805170d565aa4ea108cb6cb26069">AZ::ConsoleFunctorBase</a>
-, <a class="el" href="class_a_z_1_1_name.html#a9706e6072d12cd1427e0720a8958d4b6">AZ::Name</a>
 </li>
 <li>GetDeltaTimeInSeconds()
 : <a class="el" href="class_a_z_1_1_debug_1_1_timer.html#a3cabe4987d7de1d93418171c5a9c5b89">AZ::Debug::Timer</a>
@@ -506,7 +505,7 @@ $(function() {
 </li>
 <li>GetElapsedTimeMs()
 : <a class="el" href="class_a_z_1_1_i_time.html#a1c224a9213fab2fa5b59c60e2c7867b1">AZ::ITime</a>
-, <a class="el" href="class_a_z_1_1_time_system.html#aacafef5bc422327d4fa8ce540c13dd6a">AZ::TimeSystem</a>
+, <a class="el" href="class_a_z_1_1_time_system_component.html#aceb01900f98ed468ec39a501051194eb">AZ::TimeSystemComponent</a>
 </li>
 <li>GetElapsedTimeUs()
 : <a class="el" href="class_a_z_1_1_i_time.html#acdcc3cf793ba8937bf5bc3d1920bc101">AZ::ITime</a>
@@ -576,9 +575,6 @@ $(function() {
 </li>
 <li>GetEntityRestoreInfo()
 : <a class="el" href="class_a_z_1_1_slice_component.html#a79ed7dc8e451e53e28001785e4fb0774">AZ::SliceComponent</a>
-</li>
-<li>GetEntitySpawnTicketId()
-: <a class="el" href="class_a_z_1_1_entity.html#a722377727eee6c27e3620552be55578a">AZ::Entity</a>
 </li>
 <li>GetError()
 : <a class="el" href="class_a_z_1_1_outcome.html#ac28dfca6bea71d2f3a51d4f22f8cec14">AZ::Outcome&lt; ValueT, ErrorT &gt;</a>
@@ -659,7 +655,6 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unordered__set_3_01_k_00_01_h_00_01_e_2bd44a77c01ff0d9c224f0ed77c62657.html#a9d022e3a78c227f9a42fa538ea8a83fb">AZ::SerializeGenericTypeInfo&lt; AZStd::unordered_set&lt; K, H, E, A &gt; &gt;::GenericClassUnorderedSet</a>
 , <a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_a_z_1_1u8_00_01_a_01_4_01_4_1_1_generic_class_byte_stream.html#a0fb158cd6d279df6c26aa679506620cd">AZ::SerializeGenericTypeInfo&lt; AZStd::vector&lt; AZ::u8, A &gt; &gt;::GenericClassByteStream</a>
 , <a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_t_00_01_a_01_4_01_4_1_1_generic_class_info_vector.html#ab7a57bb056b6c3d3a3f6d054b5ec812f">AZ::SerializeGenericTypeInfo&lt; AZStd::vector&lt; T, A &gt; &gt;::GenericClassInfoVector</a>
-, <a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_configurable_stack_3_01_stack_base_type_01_4_01_4f130e718390b1d14ec8663040bfab315.html#ac1f53e0f1c00910a39b9cbd44b7aec4a">AZ::SerializeGenericTypeInfo&lt; ConfigurableStack&lt; StackBaseType &gt; &gt;::GenericConfigurableStackInfo</a>
 , <a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_data_1_1_asset_3_01_t_01_4_01_4_1_1_generic_class_generic_asset.html#a459441a0de9ecf62fe6c4ef73284d39d">AZ::SerializeGenericTypeInfo&lt; Data::Asset&lt; T &gt; &gt;::GenericClassGenericAsset</a>
 </li>
 <li>GetGroup()
@@ -693,6 +688,7 @@ $(function() {
 <li>GetId()
 : <a class="el" href="class_a_z_1_1_component.html#ab1cabfdba04540b717cebd833cb4fa25">AZ::Component</a>
 , <a class="el" href="class_a_z_1_1_data_1_1_asset.html#ad94f02ee0531d6734c23faf582f65f81">AZ::Data::Asset&lt; T &gt;</a>
+, <a class="el" href="class_a_z_1_1_debug_1_1_driller.html#ade8dea0416737606a8698455fdc38691">AZ::Debug::Driller</a>
 , <a class="el" href="class_a_z_1_1_entity.html#a7ef8899081408ae18c47aef329370567">AZ::Entity</a>
 , <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html#a72528e014b2a20cdb4f873665ed83b04">AZ::SliceComponent::SliceInstance</a>
 </li>
@@ -708,8 +704,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_statistics_1_1_statistical_profiler_proxy_system_component.html#a0caeedbb656a0f42d66cdfde519250d0">AZ::Statistics::StatisticalProfilerProxySystemComponent</a>
 </li>
 <li>GetInstance()
-: <a class="el" href="class_a_z_1_1_behavior_interface_proxy.html#ae05e010a187905719b32c4670fce654c">AZ::BehaviorInterfaceProxy&lt; T &gt;</a>
-, <a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html#a61c34abf1e7ccbb3c407e6d9ba76e2dc">AZ::IO::FileIOBase</a>
+: <a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html#a61c34abf1e7ccbb3c407e6d9ba76e2dc">AZ::IO::FileIOBase</a>
 , <a class="el" href="class_a_z_1_1_sfmt.html#a62accda63831f6f1652fa887190985c6">AZ::Sfmt</a>
 </li>
 <li>GetInstanceEntityAncestry()
@@ -726,9 +721,6 @@ $(function() {
 </li>
 <li>GetInstantiatedEntityCount()
 : <a class="el" href="class_a_z_1_1_slice_component.html#a86c9d0d41e893520fffeee88b2c5f020">AZ::SliceComponent</a>
-</li>
-<li>GetInterpreterVersion()
-: <a class="el" href="class_a_z_1_1_script_data_context.html#a7ba56d7f1bbb1e1a225d7db3f233fd31">AZ::ScriptDataContext</a>
 </li>
 <li>GetIntervalMs()
 : <a class="el" href="class_a_z_1_1_scheduled_event.html#ab2cef2c40c56b02686281f9da60716e9">AZ::ScheduledEvent</a>
@@ -760,9 +752,6 @@ $(function() {
 <li>GetJsonRegistrationContext()
 : <a class="el" href="class_a_z_1_1_component_application.html#a4a42bf6ca1892a0cd4f3b2db59b26b73">AZ::ComponentApplication</a>
 , <a class="el" href="class_a_z_1_1_component_application_requests.html#ac77d75c12146eff9f868d6071342360c">AZ::ComponentApplicationRequests</a>
-</li>
-<li>GetLastSimulationTickTime()
-: <a class="el" href="class_a_z_1_1_i_time.html#aa24d861da1dcec527bf78420aafbccc9">AZ::ITime</a>
 </li>
 <li>GetLastVertex()
 : <a class="el" href="class_a_z_1_1_vertex_container.html#ad8aa75eb64a99a799ec6d8a2289c26bd">AZ::VertexContainer&lt; Vertex &gt;</a>
@@ -878,11 +867,10 @@ $(function() {
 </li>
 <li>GetMaxAllocationSize()
 : <a class="el" href="class_a_z_1_1_best_fit_external_map_allocator.html#a609f70ee4ff2bb7c6e724ef48f2050c0">AZ::BestFitExternalMapAllocator</a>
-, <a class="el" href="class_a_z_1_1_best_fit_external_map_schema.html#a4941b0726e01547e78e3cd6e2ac6acf2">AZ::BestFitExternalMapSchema</a>
 , <a class="el" href="class_a_z_1_1_child_allocator_schema.html#a9eb952c248962db66a24f382b8786f42">AZ::ChildAllocatorSchema&lt; ParentAllocator &gt;</a>
 , <a class="el" href="class_a_z_1_1_heap_schema.html#aef82faddba43fe6029d8334acdfd9c1e">AZ::HeapSchema</a>
 , <a class="el" href="class_a_z_1_1_hpha_schema.html#a9d3e1dfc5b52335500e76040b7a94a90">AZ::HphaSchema</a>
-, <a class="el" href="class_a_z_1_1_i_allocator_schema.html#adb07df6bb47d5cdcc908a3d980ce4023">AZ::IAllocatorSchema</a>
+, <a class="el" href="class_a_z_1_1_i_allocator_allocate.html#ae5fc4daeb87c07a4f02015f5f41146a4">AZ::IAllocatorAllocate</a>
 , <a class="el" href="class_a_z_1_1_malloc_schema.html#a7cae2415fa755d2ac608bab8367cb38d">AZ::MallocSchema</a>
 , <a class="el" href="class_a_z_1_1_o_s_allocator.html#a5d35b57d58b60b74e2c2fabcdf8504a6">AZ::OSAllocator</a>
 , <a class="el" href="class_a_z_1_1_overrun_detection_schema.html#a686ec42993e26e7670220de0a2769994">AZ::OverrunDetectionSchema</a>
@@ -891,11 +879,10 @@ $(function() {
 </li>
 <li>GetMaxContiguousAllocationSize()
 : <a class="el" href="class_a_z_1_1_best_fit_external_map_allocator.html#a0bb1e04c643aea159130f048339fe57d">AZ::BestFitExternalMapAllocator</a>
-, <a class="el" href="class_a_z_1_1_best_fit_external_map_schema.html#ab9ab98aa802203a891ebafb362a254b3">AZ::BestFitExternalMapSchema</a>
 , <a class="el" href="class_a_z_1_1_child_allocator_schema.html#aa3b812df63b717b64bd61ea76220a085">AZ::ChildAllocatorSchema&lt; ParentAllocator &gt;</a>
 , <a class="el" href="class_a_z_1_1_heap_schema.html#a7dd764ae2d8ddd261cb56894d68597ed">AZ::HeapSchema</a>
 , <a class="el" href="class_a_z_1_1_hpha_schema.html#a564af7eaddba2f8d0ee770f3c8193d13">AZ::HphaSchema</a>
-, <a class="el" href="class_a_z_1_1_i_allocator_schema.html#a4a83d041cda92e3455229527676b4331">AZ::IAllocatorSchema</a>
+, <a class="el" href="class_a_z_1_1_i_allocator_allocate.html#a74e2629ad6931521ed41f4eb029f4be1">AZ::IAllocatorAllocate</a>
 , <a class="el" href="class_a_z_1_1_malloc_schema.html#a95deecf1871cb727779c051a3ac9f6a6">AZ::MallocSchema</a>
 , <a class="el" href="class_a_z_1_1_o_s_allocator.html#a7af5d96cf765100b6530c88ece265af9">AZ::OSAllocator</a>
 , <a class="el" href="class_a_z_1_1_overrun_detection_schema.html#aec2507d0767e8cfa74c42551bf865003">AZ::OverrunDetectionSchema</a>
@@ -956,6 +943,9 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_component_descriptor.html#a4fbbdcaa6e6d0d069a4e6ef047188f32">AZ::ComponentDescriptor</a>
 , <a class="el" href="class_a_z_1_1_component_descriptor_helper.html#a402e3c0a7b00c174bec67c1e1a535ed8">AZ::ComponentDescriptorHelper&lt; ComponentClass &gt;</a>
 , <a class="el" href="class_a_z_1_1_console_functor_base.html#a23fadffcffe35516e2b9f9c38afdb6b7">AZ::ConsoleFunctorBase</a>
+, <a class="el" href="class_a_z_1_1_debug_1_1_driller.html#ae39821a04fccf874f1179ea34d2c6d71">AZ::Debug::Driller</a>
+, <a class="el" href="class_a_z_1_1_debug_1_1_memory_driller.html#a17e5473c5f290a96cca2a41c86be48d0">AZ::Debug::MemoryDriller</a>
+, <a class="el" href="class_a_z_1_1_debug_1_1_trace_messages_driller.html#a319673223637990c401e5a07da129d45">AZ::Debug::TraceMessagesDriller</a>
 , <a class="el" href="class_a_z_1_1_e_bus.html#a6b2b5ba3bd36cdb87cbb690ccf4fcee4">AZ::EBus&lt; Interface, BusTraits &gt;</a>
 , <a class="el" href="class_a_z_1_1_entity.html#a8388415f6139403ef3381ceefd8ba417">AZ::Entity</a>
 , <a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#a131ad194ec56f0e692aac827c36bee7a">AZ::IO::StreamStackEntry</a>
@@ -989,9 +979,6 @@ $(function() {
 </li>
 <li>GetNext()
 : <a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#af5ae15f3430b3bd4d24cd152d20cf962">AZ::IO::StreamStackEntry</a>
-</li>
-<li>GetNodeValue()
-: <a class="el" href="class_a_z_1_1_dom_1_1_value.html#aebd0999eef63b6fe652389813d6483dd">AZ::Dom::Value</a>
 </li>
 <li>GetNonUniformScale()
 : <a class="el" href="class_a_z_1_1_polygon_prism.html#ad197fa4b10f09bd3a7af630d19e3c40b">AZ::PolygonPrism</a>
@@ -1082,12 +1069,18 @@ $(function() {
 <li>GetOrCreateContext()
 : <a class="el" href="class_a_z_1_1_e_bus.html#a07aa45a280e52a2bf3e80da52c2642ee">AZ::EBus&lt; Interface, BusTraits &gt;</a>
 </li>
+<li>GetOriginalAllocationSource()
+: <a class="el" href="class_a_z_1_1_i_allocator.html#a74658c63bce1638fb1fd5c1b8fff9369">AZ::IAllocator</a>
+</li>
 <li>GetOrthogonalized()
 : <a class="el" href="class_a_z_1_1_matrix3x3.html#a7706f3f4c7b13dffa8436c8d114b2e30">AZ::Matrix3x3</a>
 , <a class="el" href="class_a_z_1_1_matrix3x4.html#ab3cf8bbe6ccf1ae62d4aad7298e0a420">AZ::Matrix3x4</a>
 </li>
 <li>GetOrthogonalVector()
 : <a class="el" href="class_a_z_1_1_vector3.html#ad43257434527264748ebfd982dfadf8f">AZ::Vector3</a>
+</li>
+<li>GetOverrideAllocatorSource()
+: <a class="el" href="class_a_z_1_1_allocator_manager.html#a624c67f04216846b8dfafbc1351c975f">AZ::AllocatorManager</a>
 </li>
 <li>GetOwnsScheduledEvent()
 : <a class="el" href="class_a_z_1_1_scheduled_event_handle.html#a0da73ae956ca81bcff28590b0fdd7221">AZ::ScheduledEventHandle</a>
@@ -1157,7 +1150,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_plane.html#a48620bab7620d1514d1d160731597a1a">AZ::Plane</a>
 </li>
 <li>GetPolarDecomposition()
-: <a class="el" href="class_a_z_1_1_matrix3x3.html#af53d19fc0ec644baaf8b6689fe914242">AZ::Matrix3x3</a>
+: <a class="el" href="class_a_z_1_1_matrix3x3.html#a8ec55665bee011821e6c3f530bde63ee">AZ::Matrix3x3</a>
 </li>
 <li>GetPosition()
 : <a class="el" href="class_a_z_1_1_bezier_spline.html#a3b9f5e3561e62e3dd9e8018a9f2fc7f6">AZ::BezierSpline</a>
@@ -1169,7 +1162,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_i_o_1_1_streamer_context.html#af1218f8e3bc1c6d95927163a4923eab6">AZ::IO::StreamerContext</a>
 </li>
 <li>GetPriority()
-: <a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html#a530eae8b2ec1f3e1f29f4239f4ea37b4">AZ::SettingsRegistryInterface::Specializations</a>
+: <a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html#a38e585341ed6d7927b8c22548d304ed4">AZ::SettingsRegistryInterface::Specializations</a>
 </li>
 <li>GetProcessSignature()
 : <a class="el" href="class_a_z_1_1_entity.html#a5d1ad5a5167c0b88a21f69d0ad49afb0">AZ::Entity</a>
@@ -1194,21 +1187,12 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_user_settings_component.html#aaa19782ea5f34040497987fec9f0eca3">AZ::UserSettingsComponent</a>
 </li>
 <li>GetRandom()
-: <a class="el" href="class_a_z_1_1_better_pseudo_random___unix_like.html#ad140fe6bcf397a76043ed65ef49f08cc">AZ::BetterPseudoRandom_UnixLike</a>
+: <a class="el" href="class_a_z_1_1_better_pseudo_random___unix_like.html#a67b4fdb82d5ce17c2174aac9262798ce">AZ::BetterPseudoRandom_UnixLike</a>
 , <a class="el" href="class_a_z_1_1_better_pseudo_random___windows.html#afd0a5ca6365f53705bca068fc499ed0a">AZ::BetterPseudoRandom_Windows</a>
 </li>
 <li>GetReadRequestResult()
 : <a class="el" href="class_a_z_1_1_i_o_1_1_i_streamer.html#a53b2bd2d1ab820bfff9834fc7acd36b8">AZ::IO::IStreamer</a>
 , <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html#a384297730e74e681360bed63ae1a3c7f">AZ::IO::Streamer</a>
-</li>
-<li>GetRealElapsedTimeMs()
-: <a class="el" href="class_a_z_1_1_i_time.html#a81f3a2b72488ab8e246e6f3806bc6b06">AZ::ITime</a>
-</li>
-<li>GetRealElapsedTimeUs()
-: <a class="el" href="class_a_z_1_1_i_time.html#a2550dc0efef8e31c41e815d3905ce527">AZ::ITime</a>
-</li>
-<li>GetRealTickDeltaTimeUs()
-: <a class="el" href="class_a_z_1_1_i_time.html#aba062a3aaac98b55e582531be6beaddd">AZ::ITime</a>
 </li>
 <li>GetReciprocal()
 : <a class="el" href="class_a_z_1_1_vector2.html#ac9b5fa6f0f747a4fe4d0197c8b648cac">AZ::Vector2</a>
@@ -1285,7 +1269,10 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_scheduled_event_handle.html#a9d4db28f1ee965bf565640b89248632d">AZ::ScheduledEventHandle</a>
 </li>
 <li>GetSchema()
-: <a class="el" href="class_a_z_1_1_i_allocator.html#a75e04d13ba690652f1ce94e591bea243">AZ::IAllocator</a>
+: <a class="el" href="class_a_z_1_1_allocator_base.html#a768a085abadeff74e31e03b696a13da9">AZ::AllocatorBase</a>
+, <a class="el" href="class_a_z_1_1_i_allocator.html#a31b4adc37ee7c6402213394c427d9287">AZ::IAllocator</a>
+, <a class="el" href="class_a_z_1_1_simple_schema_allocator.html#aa50ef41e0ec3bb537fe9a7936e1b403e">AZ::SimpleSchemaAllocator&lt; Schema, DescriptorType, ProfileAllocations, ReportOutOfMemory &gt;</a>
+, <a class="el" href="class_a_z_1_1_system_allocator.html#a8f85c2f674f09982c7ee79f8e76c6406">AZ::SystemAllocator</a>
 </li>
 <li>GetSeconds()
 : <a class="el" href="class_a_z_1_1_script_time_point.html#ad95fb0da7ccc14c15ce8200d4950eff4">AZ::ScriptTimePoint</a>
@@ -1315,23 +1302,8 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_component_application.html#a173b47d27d1ef573074623ae72281bde">AZ::ComponentApplication</a>
 , <a class="el" href="class_a_z_1_1_component_application_requests.html#a49f2246d7cdf45d88747408c2d7ac66e">AZ::ComponentApplicationRequests</a>
 </li>
-<li>GetShortestEquivalent()
-: <a class="el" href="class_a_z_1_1_quaternion.html#ae63dec10330004620c00a7346ed50bca">AZ::Quaternion</a>
-</li>
 <li>GetSimdValue()
 : <a class="el" href="class_a_z_1_1_plane.html#ace43d26d772586756f0b0a9b68123e11">AZ::Plane</a>
-</li>
-<li>GetSimulationTickDeltaOverride()
-: <a class="el" href="class_a_z_1_1_i_time.html#a49eb2de1cd4b1d3e77647d72debd5d73">AZ::ITime</a>
-</li>
-<li>GetSimulationTickDeltaTimeUs()
-: <a class="el" href="class_a_z_1_1_i_time.html#af71d1cbee515f505325b5027df6f6ef7">AZ::ITime</a>
-</li>
-<li>GetSimulationTickRate()
-: <a class="el" href="class_a_z_1_1_i_time.html#a5059b1cfb8da7e72bbec6f4241111b95">AZ::ITime</a>
-</li>
-<li>GetSimulationTickScale()
-: <a class="el" href="class_a_z_1_1_i_time.html#a5d4f2b5bd913d0a480d1936227f70227">AZ::ITime</a>
 </li>
 <li>GetSin()
 : <a class="el" href="class_a_z_1_1_vector2.html#aeeecf95b11c8866ce7e9569ec8dec0bb">AZ::Vector2</a>
@@ -1361,6 +1333,9 @@ $(function() {
 <li>GetSlices()
 : <a class="el" href="class_a_z_1_1_slice_component.html#ac40357e3b9a3d126fde1d5a5774dfdcd">AZ::SliceComponent</a>
 </li>
+<li>GetSpawnTicketId()
+: <a class="el" href="class_a_z_1_1_entity.html#a269916f323bcca646bbe79d559976ea4">AZ::Entity</a>
+</li>
 <li>GetSpecialization()
 : <a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html#a35bba665a2232919cd1dae6d75b69b13">AZ::SettingsRegistryInterface::Specializations</a>
 </li>
@@ -1387,7 +1362,6 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unordered__set_3_01_k_00_01_h_00_01_e_2bd44a77c01ff0d9c224f0ed77c62657.html#a521dd9da4f1f717cdeea49a51f762453">AZ::SerializeGenericTypeInfo&lt; AZStd::unordered_set&lt; K, H, E, A &gt; &gt;::GenericClassUnorderedSet</a>
 , <a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_a_z_1_1u8_00_01_a_01_4_01_4_1_1_generic_class_byte_stream.html#a802f8a6ef8a45196b46a968521bfa987">AZ::SerializeGenericTypeInfo&lt; AZStd::vector&lt; AZ::u8, A &gt; &gt;::GenericClassByteStream</a>
 , <a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_t_00_01_a_01_4_01_4_1_1_generic_class_info_vector.html#adff135c43ffd9fd1e181371ba7f20ce3">AZ::SerializeGenericTypeInfo&lt; AZStd::vector&lt; T, A &gt; &gt;::GenericClassInfoVector</a>
-, <a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_configurable_stack_3_01_stack_base_type_01_4_01_4f130e718390b1d14ec8663040bfab315.html#a01628acbce770e226a2612355f90be5e">AZ::SerializeGenericTypeInfo&lt; ConfigurableStack&lt; StackBaseType &gt; &gt;::GenericConfigurableStackInfo</a>
 , <a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_data_1_1_asset_3_01_t_01_4_01_4_1_1_generic_class_generic_asset.html#a660f77d195496146c120da322c822981">AZ::SerializeGenericTypeInfo&lt; Data::Asset&lt; T &gt; &gt;::GenericClassGenericAsset</a>
 </li>
 <li>GetSplineLength()
@@ -1426,14 +1400,28 @@ $(function() {
 <li>GetStreamInfoForSave()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset_catalog.html#a11cb21ed413fea9c1ab8055210e58eba">AZ::Data::AssetCatalog</a>
 </li>
-<li>GetStringLength()
-: <a class="el" href="class_a_z_1_1_dom_1_1_path.html#af1912926573b80f1b1b2d7e8ef435ba9">AZ::Dom::Path</a>
-</li>
 <li>GetStringView()
 : <a class="el" href="class_a_z_1_1_name.html#ac0af10fd13fa136938ae748f4152f03f">AZ::Name</a>
 </li>
+<li>GetSubAllocator()
+: <a class="el" href="class_a_z_1_1_best_fit_external_map_allocator.html#afb0320b47b79c868b2736aa2a53647e5">AZ::BestFitExternalMapAllocator</a>
+, <a class="el" href="class_a_z_1_1_child_allocator_schema.html#a3f2f87fccf550efce017492026c7ecc0">AZ::ChildAllocatorSchema&lt; ParentAllocator &gt;</a>
+, <a class="el" href="class_a_z_1_1_heap_schema.html#a4efe1da715a298adb4192751597e98a4">AZ::HeapSchema</a>
+, <a class="el" href="class_a_z_1_1_hpha_schema.html#a9e35236b9a49cc79f034bf6dc9a57e41">AZ::HphaSchema</a>
+, <a class="el" href="class_a_z_1_1_i_allocator_allocate.html#aa9550227a230df7201d0cf1ef9cdc0fc">AZ::IAllocatorAllocate</a>
+, <a class="el" href="class_a_z_1_1_malloc_schema.html#aa2e6472af9cee7cf0079af55689389f6">AZ::MallocSchema</a>
+, <a class="el" href="class_a_z_1_1_o_s_allocator.html#a7354c445950917a274697dfddf8cb850">AZ::OSAllocator</a>
+, <a class="el" href="class_a_z_1_1_overrun_detection_schema.html#a71e62461ba8d9862a18e5cdacebd175d">AZ::OverrunDetectionSchema</a>
+, <a class="el" href="class_a_z_1_1_pool_schema.html#a1b3d3e042023a41388d15a58326f9316">AZ::PoolSchema</a>
+, <a class="el" href="class_a_z_1_1_simple_schema_allocator.html#ab27207b9c451abc54a00893bbff89219">AZ::SimpleSchemaAllocator&lt; Schema, DescriptorType, ProfileAllocations, ReportOutOfMemory &gt;</a>
+, <a class="el" href="class_a_z_1_1_system_allocator.html#a7603f586fcaa4df20d7cccee94e7ca7a">AZ::SystemAllocator</a>
+, <a class="el" href="class_a_z_1_1_thread_pool_schema.html#af9cc5d6121b2113570d0ebb56c2fb5df">AZ::ThreadPoolSchema</a>
+</li>
 <li>GetSwitchValue()
 : <a class="el" href="class_a_z_1_1_command_line.html#a489ea7dcc3c3ba0d13b6be2235c57dc4">AZ::CommandLine</a>
+</li>
+<li>GetTag()
+: <a class="el" href="struct_a_z_1_1_debug_1_1_driller_d_o_m_parser_1_1_node.html#aeaadfb83732456f22be7615766c07fb0">AZ::Debug::DrillerDOMParser::Node</a>
 </li>
 <li>GetTangent()
 : <a class="el" href="class_a_z_1_1_bezier_spline.html#a59e7b9b0436bd093c3ca82599f9d6eca">AZ::BezierSpline</a>
@@ -1462,7 +1450,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_plane.html#aa8bd98a4c5a8a86a5bccc379ec283034">AZ::Plane</a>
 </li>
 <li>GetTransformedAabb()
-: <a class="el" href="class_a_z_1_1_aabb.html#af7181459b514caecd41ce4423db26a7e">AZ::Aabb</a>
+: <a class="el" href="class_a_z_1_1_aabb.html#a17fa039fa4d114d6cb5d3b3672188d2e">AZ::Aabb</a>
 </li>
 <li>GetTransformedObb()
 : <a class="el" href="class_a_z_1_1_aabb.html#adbe526bc805594c169e335391d0d5fe5">AZ::Aabb</a>
@@ -1493,7 +1481,7 @@ $(function() {
 <li>GetUnAllocatedMemory()
 : <a class="el" href="class_a_z_1_1_child_allocator_schema.html#abc7ebdb60041609f7278bee8431ed4b8">AZ::ChildAllocatorSchema&lt; ParentAllocator &gt;</a>
 , <a class="el" href="class_a_z_1_1_hpha_schema.html#af06239a923f88f9d293fe95a631d01eb">AZ::HphaSchema</a>
-, <a class="el" href="class_a_z_1_1_i_allocator_schema.html#ab9293af0b203445c69974aad18760eb5">AZ::IAllocatorSchema</a>
+, <a class="el" href="class_a_z_1_1_i_allocator_allocate.html#a74867750b0dc972aea01368d3cce8f66">AZ::IAllocatorAllocate</a>
 , <a class="el" href="class_a_z_1_1_simple_schema_allocator.html#ae9982c273a9734fed17a9208d52e4348">AZ::SimpleSchemaAllocator&lt; Schema, DescriptorType, ProfileAllocations, ReportOutOfMemory &gt;</a>
 , <a class="el" href="class_a_z_1_1_system_allocator.html#a04c54dee2e80871a4c7bb912ad1e178a">AZ::SystemAllocator</a>
 </li>
@@ -1530,11 +1518,6 @@ $(function() {
 <li>GetVertices()
 : <a class="el" href="class_a_z_1_1_spline.html#a152fa0bbfa2b3b807adbcb3507d14d9a">AZ::Spline</a>
 , <a class="el" href="class_a_z_1_1_vertex_container.html#a3ed7d35de37a7e2ccfa784a58ab117e4">AZ::VertexContainer&lt; Vertex &gt;</a>
-</li>
-<li>GetVisitorFlags()
-: <a class="el" href="class_a_z_1_1_dom_1_1_json_1_1_rapid_json_value_writer.html#aab3123666ca27340314c47f8a33a7d22">AZ::Dom::Json::RapidJsonValueWriter</a>
-, <a class="el" href="class_a_z_1_1_dom_1_1_value_writer.html#a454f8b3aeaf407c8c84f5eae2fe42da5">AZ::Dom::ValueWriter</a>
-, <a class="el" href="class_a_z_1_1_dom_1_1_visitor.html#adc09f786432a0c83dd5a537f54a56587">AZ::Dom::Visitor</a>
 </li>
 <li>GetWarningCount()
 : <a class="el" href="class_a_z_1_1_serialize_context_1_1_error_handler.html#ae21fbe83fbddcfcf48aea1061c6d4d20">AZ::SerializeContext::ErrorHandler</a>
@@ -1578,11 +1561,16 @@ $(function() {
 <li>GroupElementToggle()
 : <a class="el" href="class_a_z_1_1_edit_context_1_1_class_builder.html#ae87e94fae3da1a6c19921832503be6ff">AZ::EditContext::ClassBuilder</a>
 </li>
+<li>GroupName()
+: <a class="el" href="class_a_z_1_1_debug_1_1_driller.html#a239cfc09fece0202bb4804797b906f97">AZ::Debug::Driller</a>
+, <a class="el" href="class_a_z_1_1_debug_1_1_memory_driller.html#aea12066b0c1ef1e0e44dec8e29a863d6">AZ::Debug::MemoryDriller</a>
+, <a class="el" href="class_a_z_1_1_debug_1_1_trace_messages_driller.html#a0b1aa6aa6ae159c6aac60b4f79b348e9">AZ::Debug::TraceMessagesDriller</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:17:56 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 7 2022 12:03:16 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

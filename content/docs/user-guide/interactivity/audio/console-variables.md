@@ -10,7 +10,6 @@ The following console variables can be used with the O3DE audio system.
 | --- | --- |
 | **s_ATLMemorySize** | Specifies in KB the size of the memory pool to be used by the audio translation layer (ATL). <br> Default values: PC = `8192`, Mac = `8192`, Linux = `8192`, iOS = `8192`, Android = `4096` |
 | **s_AudioEventPoolSize** | Sets the number of preallocated audio events. <br> Default values: PC = `512`, Mac = `512`, iOS = `128`, Android = `128` |
-| **s_AudioLoggingOptions** | Toggles the logging of audio-related messages. Flags can be combined. <br> Values: `a` = Errors, `b` = Warnings, `c` = Comments <br> Default: `ab` (Errors and Warnings) |
 | **s_AudioObjectsDebugFilter** | Filters debug drawing to only audio objects whose name matches a string. <br> Default: "" (all) <br> Example: `s_AudioObjectsDebugFilter=weapon_axe` |
 | **s_AudioObjectPoolSize** | Sets the number of preallocated audio objects and corresponding audio proxies. <br> Default values: PC = `1024`, Mac = `2048`, iOS = `256`, Android = `256` |
 | **s_AudioProxiesInitType** | Can override on a global scale. If set, it determines whether AudioProxies initialize synchronously or asynchronously. This is a performance variable, as asynchronously initializing AudioProxies has a greatly reduced impact on the calling thread. When set to initialize asynchronously, audio playback is delayed. <br> Values: `0` = AudioProxy-specific initialization; `1` = Initialize synchronously; `2` = Initialize asynchronously <br> Default: `0` (all platforms) |

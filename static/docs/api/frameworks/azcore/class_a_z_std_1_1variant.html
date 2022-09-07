@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">2111.2</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -68,19 +68,19 @@ template&lt;class T , enable_if_t&lt;!is_same&lt; remove_cvref_t&lt; T &gt;, var
 <tr class="separator:ae93bab0bd78e967c22f096f0262d196a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1ed33cf09685aeae8a53d67ca58443c"><td class="memTemplParams" colspan="2"><a id="ad1ed33cf09685aeae8a53d67ca58443c"></a>
 template&lt;class T , class... Args, size_t Index = find_type::find_exactly_one_alternative_v&lt;T, Types...&gt;, enable_if_t&lt; is_constructible&lt; T, Args... &gt;::value, int &gt;  = 0&gt; </td></tr>
-<tr class="memitem:ad1ed33cf09685aeae8a53d67ca58443c"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>variant</b> (in_place_type_t&lt; T &gt;, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:ad1ed33cf09685aeae8a53d67ca58443c"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>variant</b> (<a class="el" href="struct_a_z_std_1_1in__place__type__t.html">in_place_type_t</a>&lt; T &gt;, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:ad1ed33cf09685aeae8a53d67ca58443c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6612fb7deb17e613ecf5afa50174f14"><td class="memTemplParams" colspan="2"><a id="ad6612fb7deb17e613ecf5afa50174f14"></a>
 template&lt;class T , class U , class... Args, size_t Index = find_type::find_exactly_one_alternative_v&lt;T, Types...&gt;, enable_if_t&lt; is_constructible&lt; T, std::initializer_list&lt; U &gt; &amp;, Args... &gt;::value, int &gt;  = 0&gt; </td></tr>
-<tr class="memitem:ad6612fb7deb17e613ecf5afa50174f14"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>variant</b> (in_place_type_t&lt; T &gt;, std::initializer_list&lt; U &gt; il, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:ad6612fb7deb17e613ecf5afa50174f14"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>variant</b> (<a class="el" href="struct_a_z_std_1_1in__place__type__t.html">in_place_type_t</a>&lt; T &gt;, std::initializer_list&lt; U &gt; il, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:ad6612fb7deb17e613ecf5afa50174f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cf1dcd889d3c7c3018e803a4fb3cd3f"><td class="memTemplParams" colspan="2"><a id="a6cf1dcd889d3c7c3018e803a4fb3cd3f"></a>
 template&lt;size_t Index, class... Args, class  = enable_if_t&lt;(Index &lt; variant_size_v&lt;variant&gt;), int&gt;, class Alternative  = variant_alternative_t&lt;Index, variant&gt;, enable_if_t&lt; is_constructible&lt; Alternative, Args... &gt;::value, int &gt;  = 0&gt; </td></tr>
-<tr class="memitem:a6cf1dcd889d3c7c3018e803a4fb3cd3f"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>variant</b> (in_place_index_t&lt; Index &gt;, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:a6cf1dcd889d3c7c3018e803a4fb3cd3f"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>variant</b> (<a class="el" href="struct_a_z_std_1_1in__place__index__t.html">in_place_index_t</a>&lt; Index &gt;, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a6cf1dcd889d3c7c3018e803a4fb3cd3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2037bb20504ae5d94cf3b461a43393f"><td class="memTemplParams" colspan="2"><a id="af2037bb20504ae5d94cf3b461a43393f"></a>
 template&lt;size_t Index, class U , class... Args, enable_if_t&lt;(Index&lt; variant_size&lt; variant &gt;::value), int &gt;  = 0, class Alternative  = variant_alternative_t&lt;Index, variant&gt;, enable_if_t&lt; is_constructible&lt; Alternative, std::initializer_list&lt; U &gt; &amp;, Args... &gt;::value, int &gt;  = 0&gt; </td></tr>
-<tr class="memitem:af2037bb20504ae5d94cf3b461a43393f"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>variant</b> (in_place_index_t&lt; Index &gt;, std::initializer_list&lt; U &gt; il, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:af2037bb20504ae5d94cf3b461a43393f"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>variant</b> (<a class="el" href="struct_a_z_std_1_1in__place__index__t.html">in_place_index_t</a>&lt; Index &gt;, std::initializer_list&lt; U &gt; il, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:af2037bb20504ae5d94cf3b461a43393f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d27497dd4a9762cd642444dec27e72c"><td class="memItemLeft" align="right" valign="top"><a id="a4d27497dd4a9762cd642444dec27e72c"></a>
 <a class="el" href="class_a_z_std_1_1variant.html">variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1variant.html">variant</a> &amp;)=default</td></tr>
@@ -163,7 +163,7 @@ template&lt;class... Types&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:17:55 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 7 2022 12:03:15 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

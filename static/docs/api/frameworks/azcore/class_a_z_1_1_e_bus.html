@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">2111.2</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -103,9 +103,9 @@ Public Types</h2></td></tr>
 <tr class="separator:ac737ef71aa55f9b60b444b3a74bf8dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa112a6fb72520a6fca64241037bd542a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_e_bus.html#aa112a6fb72520a6fca64241037bd542a">RouterProcessingState</a> = typename RouterPolicy::EventProcessingState</td></tr>
 <tr class="separator:aa112a6fb72520a6fca64241037bd542a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f7d4d10d361364e6444bf051c40b87"><td class="memTemplParams" colspan="2">template&lt;typename DispatchMutex &gt; </td></tr>
-<tr class="memitem:a19f7d4d10d361364e6444bf051c40b87"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_e_bus.html#a19f7d4d10d361364e6444bf051c40b87">DispatchLockGuardTemplate</a> = typename ImplTraits::template DispatchLockGuard&lt; DispatchMutex &gt;</td></tr>
-<tr class="separator:a19f7d4d10d361364e6444bf051c40b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ea0ebf8c58166430ada72e44c68d1a"><td class="memTemplParams" colspan="2">template&lt;typename DispatchMutex &gt; </td></tr>
+<tr class="memitem:a90ea0ebf8c58166430ada72e44c68d1a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_e_bus.html#a90ea0ebf8c58166430ada72e44c68d1a">DispatchLockGuard</a> = typename ImplTraits::template <a class="el" href="class_a_z_1_1_e_bus.html#a90ea0ebf8c58166430ada72e44c68d1a">DispatchLockGuard</a>&lt; DispatchMutex &gt;</td></tr>
+<tr class="separator:a90ea0ebf8c58166430ada72e44c68d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a164a5d2fadc7ba7ddb623719f10232ff"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_e_bus.html#a164a5d2fadc7ba7ddb623719f10232ff">StoragePolicy</a> = typename Traits::template <a class="el" href="class_a_z_1_1_e_bus.html#a164a5d2fadc7ba7ddb623719f10232ff">StoragePolicy</a>&lt; Context &gt;</td></tr>
 <tr class="separator:a164a5d2fadc7ba7ddb623719f10232ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a25fd37f12aef9dc73f026d8150f59f"><td class="memItemLeft" align="right" valign="top"><a id="a6a25fd37f12aef9dc73f026d8150f59f"></a>
@@ -124,8 +124,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ae660e0fb2adc517c243c512caf4e5bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a470da8f1eddf6e2ad5aa30f7dcdabf"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_a_z_1_1_e_bus.html#a05e43aa6518f7a6373206f5da779ded6">BusIdType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_e_bus.html#a1a470da8f1eddf6e2ad5aa30f7dcdabf">GetCurrentBusId</a> ()</td></tr>
 <tr class="separator:a1a470da8f1eddf6e2ad5aa30f7dcdabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab666800ef63443fc37e2179b32f7a59e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_e_bus.html#ab666800ef63443fc37e2179b32f7a59e">HasReentrantEBusUseThisThread</a> (const <a class="el" href="class_a_z_1_1_e_bus.html#a05e43aa6518f7a6373206f5da779ded6">BusIdType</a> *busId=<a class="el" href="class_a_z_1_1_e_bus.html#a1a470da8f1eddf6e2ad5aa30f7dcdabf">GetCurrentBusId</a>())</td></tr>
-<tr class="separator:ab666800ef63443fc37e2179b32f7a59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b2b5ba3bd36cdb87cbb690ccf4fcee4"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_e_bus.html#a6b2b5ba3bd36cdb87cbb690ccf4fcee4">GetName</a> ()</td></tr>
 <tr class="separator:a6b2b5ba3bd36cdb87cbb690ccf4fcee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9522c24e0e1d49fbbc37a9e8ea475d5c"><td class="memItemLeft" align="right" valign="top">static Context *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_e_bus.html#a9522c24e0e1d49fbbc37a9e8ea475d5c">GetContext</a> (bool trackCallstack=true)</td></tr>
@@ -336,8 +334,8 @@ template&lt;class Interface , class BusTraits  = Interface&gt; </div>
 
 </div>
 </div>
-<a id="a19f7d4d10d361364e6444bf051c40b87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19f7d4d10d361364e6444bf051c40b87">&#9670;&nbsp;</a></span>DispatchLockGuardTemplate</h2>
+<a id="a90ea0ebf8c58166430ada72e44c68d1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90ea0ebf8c58166430ada72e44c68d1a">&#9670;&nbsp;</a></span>DispatchLockGuard</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,7 +345,7 @@ template&lt;class Interface , class BusTraits  = Interface&gt; </div>
 template&lt;typename DispatchMutex &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="class_a_z_1_1_e_bus.html">AZ::EBus</a>&lt; <a class="el" href="class_a_z_1_1_interface.html">Interface</a>, BusTraits &gt;::<a class="el" href="class_a_z_1_1_e_bus.html#a19f7d4d10d361364e6444bf051c40b87">DispatchLockGuardTemplate</a> =  typename ImplTraits::template DispatchLockGuard&lt;DispatchMutex&gt;</td>
+          <td class="memname">using <a class="el" href="class_a_z_1_1_e_bus.html">AZ::EBus</a>&lt; <a class="el" href="class_a_z_1_1_interface.html">Interface</a>, BusTraits &gt;::<a class="el" href="class_a_z_1_1_e_bus.html#a90ea0ebf8c58166430ada72e44c68d1a">DispatchLockGuard</a> =  typename ImplTraits::template <a class="el" href="class_a_z_1_1_e_bus.html#a90ea0ebf8c58166430ada72e44c68d1a">DispatchLockGuard</a>&lt;DispatchMutex&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -817,41 +815,6 @@ template&lt;class Interface , class Traits &gt; </div>
 
 </div>
 </div>
-<a id="ab666800ef63443fc37e2179b32f7a59e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab666800ef63443fc37e2179b32f7a59e">&#9670;&nbsp;</a></span>HasReentrantEBusUseThisThread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Interface , class Traits &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_a_z_1_1_e_bus.html">AZ::EBus</a>&lt; <a class="el" href="class_a_z_1_1_interface.html">Interface</a>, <a class="el" href="class_a_z_1_1_e_bus.html#a3db969336347a43aaca9d2c9c45ed3c9">Traits</a> &gt;::HasReentrantEBusUseThisThread </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_a_z_1_1_e_bus.html#a05e43aa6518f7a6373206f5da779ded6">BusIdType</a> *&#160;</td>
-          <td class="paramname"><em>busId</em> = <code><a class="el" href="class_a_z_1_1_e_bus.html#a1a470da8f1eddf6e2ad5aa30f7dcdabf">GetCurrentBusId</a>()</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Checks to see if an <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> with a given Bus ID appears twice in the callstack. This can be used to detect infinite recursive loops and other reentrancy problems. This method only checks <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> and ID, not the specific <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> event, so two different nested event calls on the same <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> and ID will still return true. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">busId</td><td>The bus ID to check for reentrancy on this thread. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> has been called more than once on this thread's callstack, false if not. </dd></dl>
-
-</div>
-</div>
 <a id="a3f8002f85a570382d5431bf83a058a05"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f8002f85a570382d5431bf83a058a05">&#9670;&nbsp;</a></span>IsInDispatchThisThread()</h2>
 
@@ -936,11 +899,11 @@ template&lt;class Interface , class BusTraits  = Interface&gt; </div>
 <li>Code/Framework/AzCore/AzCore/EBus/<a class="el" href="_e_bus_8h.html">EBus.h</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="astruct_a_z_std_1_1less_html"><div class="ttname"><a href="struct_a_z_std_1_1less.html">AZStd::less</a></div><div class="ttdef"><b>Definition:</b> TypeInfo.h:31</div></div>
-<div class="ttc" id="aclass_a_z_1_1_e_bus_html_a1a659a565576b6becda464cce6d8adb1"><div class="ttname"><a href="class_a_z_1_1_e_bus.html#a1a659a565576b6becda464cce6d8adb1">AZ::EBus::BusIdOrderCompare</a></div><div class="ttdeci">typename ImplTraits::BusIdOrderCompare BusIdOrderCompare</div><div class="ttdef"><b>Definition:</b> EBus.h:424</div></div>
+<div class="ttc" id="astruct_a_z_std_1_1less_html"><div class="ttname"><a href="struct_a_z_std_1_1less.html">AZStd::less</a></div><div class="ttdef"><b>Definition:</b> TypeInfo.h:30</div></div>
+<div class="ttc" id="aclass_a_z_1_1_e_bus_html_a1a659a565576b6becda464cce6d8adb1"><div class="ttname"><a href="class_a_z_1_1_e_bus.html#a1a659a565576b6becda464cce6d8adb1">AZ::EBus::BusIdOrderCompare</a></div><div class="ttdeci">typename ImplTraits::BusIdOrderCompare BusIdOrderCompare</div><div class="ttdef"><b>Definition:</b> EBus.h:419</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:17:15 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 7 2022 12:02:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
