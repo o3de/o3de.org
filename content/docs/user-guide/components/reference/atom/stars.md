@@ -7,11 +7,11 @@ toc: true
 
 The **Stars** component provides physically-based animated resolution-independant distant stars.
 
-Stars are rendered as billboards containing a white center that fades out to the star color on the edges.  The billboards are projected onto the far plane, and the brightness of each changes over time so they "twinkle". The orientation of the entire star field is controlled by the **Transform** component of the entity the Stars Component is on, so you can easily rotate the star field to simulate the rotation of the earth.
+Stars are rendered as billboards that have a white center that fades out to the star color on the edges. The billboards are projected onto the far plane, and the brightness of each star changes over time to create a "twinkle" effect. The orientation of the entire star field is controlled by the **Transform** component of the entity that contains the **Stars** component so that you can rotate the star field to simulate the rotation of the earth.
 
-![A](/images/user-guide/components/reference/atom/stars/stars.png)
+![An example of the star field that this component generates](/images/user-guide/components/reference/atom/stars/stars.png)
 
-## Provider ##
+## Provider
 
 [Stars Gem](/docs/user-guide/gems/reference/rendering/stars/)
 
@@ -21,14 +21,14 @@ Stars are rendered as billboards containing a white center that fades out to the
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Exposure** | Specifies the exposure to use when rendering the stars in the scene so you can control how bright the stars are. | `0.0` to `32.0` | `1.0` |
-| **Radius Factor** | Specifies the factor to multiply every star width and height by so you can set the size of stars. | `0.0` to `64.0`  | `7.0`  |
-| **Twinkle Rate** | Specifies how frequently stars twinkle. | `0.0` to `10.0` | `0.5` |
+| **Exposure** | Specifies the exposure to use when rendering the stars in the scene so you can control how bright the stars are. | `0.0` - `32.0` | `1.0` |
+| **Radius Factor** | Specifies the factor to multiply every star width and height by so you can set the size of stars. | `0.0` - `64.0`  | `7.0`  |
 | **Stars Asset** | The Stars binary data file to use for every star position, color and brightness. |  | `default.stars` |
+| **Twinkle Rate** | Specifies how frequently stars twinkle. | `0.0` - `10.0` | `0.5` |
 
-## .stars binary data file format ##
+## .stars binary data file format
 
-Currently, the engine does not include a converter for making binary `.stars` data files from text ones, but you can use the `default.stars` asset that comes with the engine.  To create your own custom star field asset you will need to generate a binary file with the following data:
+The engine includes a `default.stars` asset that you can use to create a star field.  To create your own custom star field asset, you need to generate a binary `.stars` file with the following data:
 
 | Field | Description | Type | Value |
 | - | - | - | - |
@@ -40,8 +40,8 @@ Currently, the engine does not include a converter for making binary `.stars` da
 The `Star` binary type is a structure in the following format:
 | Field | Description | Type |
 | - | - | - | 
-| Ascension | Right Ascension in degrees (0.0 .. 24.0) | `float` | 
-| Declination | Declination in degrees (-90.0 .. 90.0)| `float` | 
+| Ascension | Right Ascension in degrees (0.0 - 24.0) | `float` | 
+| Declination | Declination in degrees (-90.0 - 90.0)| `float` | 
 | Red | Red amount | `uint8_t` | 
 | Green | Green amount | `uint8_t` | 
 | Blue | Blue amount | `uint8_t` | 
