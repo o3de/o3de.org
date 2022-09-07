@@ -146,6 +146,7 @@ toc: true
 | [Camera](./rendering/camera) | The Camera Gem provides a basic camera component that defines a frustum for runtime rendering. |
 | [Camera Framework](./rendering/camera-framework) | The Camera Framework Gem provides a base for implementing more complex camera systems. |
 | [PBR Reference Materials](./rendering/pbr-reference-materials) | The PBR Reference Materials Gem provides physically based reference materials for Open 3D Engine (O3DE) projects. |
+| [Stars](./rendering/stars) | The Stars Gem provides physically-based animated resolution-independent distant stars. |
 | [Starting Point Camera](./rendering/starting-point-camera) | The Starting Point Camera Gem provides the behaviors used with the Camera Framework Gem to define a camera rig. |
 | [Video Playback Framework](./rendering/video-playback-framework) | The Video Playback Framework Gem provides the interface to play back video. |
 

@@ -72,6 +72,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Post-processing Modifiers](/docs/user-guide/components/reference/atom/post-processing-modifiers/) | A collection of components that define layers, volumes, areas, and weights for post-processing effects (PostFX). |
 | [Reflection Probe](/docs/user-guide/components/reference/atom/reflection-probe/) | Creates specular reflections in the environment around a probe (capture point). |
 | [SSAO](/docs/user-guide/components/reference/atom/ssao/) | Approximates indirect lighting in a scene by using the screen space ambient occlusion technique. |
+| [Stars](/docs/user-guide/components/reference/atom/stars/) | Provides physically-based animated resolution-independent distant stars. |
 
 ### Audio
 | Component | Description | 
