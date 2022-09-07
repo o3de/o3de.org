@@ -25,6 +25,15 @@ BUILD_DEPENDENCIES
             3rdParty::AWSNativeSDK::Core
 ```
 
+If you need to ensure the HttpRequestor Gem is enabled before its use in a component, add a requirement in the component's `GetRequiredServices` method:
+
+```
+void AutomatedTestingSystemComponent::GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& required)
+{
+   ...
+   required.push_back(AZ_CRC_CE("HttpRequestorService"));
+}   
+```
 ## C\+\+ API
 
 {{< note >}}
@@ -55,13 +64,13 @@ Each add request method requires the URI, a method and a callback.
 
 #### Parameters
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| URI | `AZStd::String` | The fully qualified web address, in the following format: `scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]`  | 
-| method | `Aws::Http::HttpMethod` | The method type. The following values are supported: `HTTP_GET`, `HTTP_POST`, `HTTP_DELETE`, `HTTP_PUT`, `HTTP_HEAD`, and `HTTP_PATCH`. | 
-| callback | [see below](#json-request-callback) | This function is called when the HTTP request is completed. The response body and code are present in the callback. | 
-| headers | `HttpRequestor::Headers` | The list of header fields for the HTTP request. | 
-| body | `AZStd::String` | Optional body to send with the request. | 
+| Parameter | Type                                | Description                                                                                                                             | 
+|-----------|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| URI       | `AZStd::String`                     | The fully qualified web address, in the following format: `scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]`            | 
+| method    | `Aws::Http::HttpMethod`             | The method type. The following values are supported: `HTTP_GET`, `HTTP_POST`, `HTTP_DELETE`, `HTTP_PUT`, `HTTP_HEAD`, and `HTTP_PATCH`. | 
+| callback  | [see below](#json-request-callback) | This function is called when the HTTP request is completed. The response body and code are present in the callback.                     | 
+| headers   | `HttpRequestor::Headers`            | The list of header fields for the HTTP request.                                                                                         | 
+| body      | `AZStd::String`                     | Optional body to send with the request.                                                                                                 | 
 
 Return: No return value.
 
@@ -75,10 +84,10 @@ void Callback(const Aws::Utils::Json::JsonValue& json, Aws::Http::HttpResponseCo
 
 #### Parameters
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| json | `Aws::Utils::Json::JsonValue` | The JSON object. The life span of this object is valid only during the scope of the callback. | 
-| responseCode | `Aws::Http::HttpResponseCode` | The HTTP response code. | 
+| Parameter    | Type                          | Description                                                                                   | 
+|--------------|-------------------------------|-----------------------------------------------------------------------------------------------|
+| json         | `Aws::Utils::Json::JsonValue` | The JSON object. The life span of this object is valid only during the scope of the callback. | 
+| responseCode | `Aws::Http::HttpResponseCode` | The HTTP response code.                                                                       | 
 
 #### Returns
 `void`
@@ -105,13 +114,13 @@ Each add text request method requires the URI, a method and a callback.
 
 #### Parameters
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| URI | `AZStd::String` | The fully qualified web address, in the following format: `scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]` | 
-| method | `Aws::Http::HttpMethod` | The method type. The following values are supported: `HTTP_GET`, `HTTP_POST`, `HTTP_DELETE`, `HTTP_PUT`, `HTTP_HEAD`, and `HTTP_PATCH`. | 
-| callback | [see below](#text-request-callback) | This function is called when the HTTP request is completed. The response body and code are present in the callback. | 
-| headers | `HttpRequestor::Headers` | The list of header fields for the HTTP request. | 
-| body | `AZStd::String` | Optional body to send with the request. | 
+| Parameter | Type                                | Description                                                                                                                             | 
+|-----------|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| URI       | `AZStd::String`                     | The fully qualified web address, in the following format: `scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]`            | 
+| method    | `Aws::Http::HttpMethod`             | The method type. The following values are supported: `HTTP_GET`, `HTTP_POST`, `HTTP_DELETE`, `HTTP_PUT`, `HTTP_HEAD`, and `HTTP_PATCH`. | 
+| callback  | [see below](#text-request-callback) | This function is called when the HTTP request is completed. The response body and code are present in the callback.                     | 
+| headers   | `HttpRequestor::Headers`            | The list of header fields for the HTTP request.                                                                                         | 
+| body      | `AZStd::String`                     | Optional body to send with the request.                                                                                                 | 
 
 #### Returns
 `void`
@@ -126,10 +135,10 @@ void Callback(const AZStd::string& response, Aws::Http::HttpResponseCode respons
 
 #### Parameters
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| response | AZStd::string& | The text returned from the server. The life span of this object is valid only during the scope of the callback. | 
-| responseCode | Aws::Http::HttpResponseCode | The HTTP response code. | 
+| Parameter    | Type                        | Description                                                                                                     | 
+|--------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------|
+| response     | AZStd::string&              | The text returned from the server. The life span of this object is valid only during the scope of the callback. | 
+| responseCode | Aws::Http::HttpResponseCode | The HTTP response code.                                                                                         | 
 
 #### Returns
 `void`
@@ -151,11 +160,11 @@ HttpRequestor::HttpRequestorRequestBus::Broadcast(
     {
         if (responseCode == Aws::Http::HttpResponseCode::OK)
         {
-            AZ_Printf("HttpRequest Demo",  "Call succeed with %s %d", data.WriteCompact().c_str(), responseCode);
+            AZ_Printf("HttpRequestExample",  "Call succeed with %s %d", data.WriteCompact().c_str(), responseCode);
         }
         else
         {
-            AZ_Printf("HttpRequestDemo", "Request Failed!");
+            AZ_Printf("HttpRequestExample", "Request Failed!");
         }
     });
 ```
