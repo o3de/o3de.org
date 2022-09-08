@@ -27,7 +27,7 @@ BUILD_DEPENDENCIES
 
 If you need to ensure the HttpRequestor Gem is enabled before its use in a component, add a requirement in the component's `GetRequiredServices` method:
 
-```
+```cpp
 void AutomatedTestingSystemComponent::GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& required)
 {
    ...
