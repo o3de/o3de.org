@@ -132,11 +132,11 @@ If a single joint is selected, these parameters can be modified using manipulato
 
 | Mode | Icon | Description
 | - | - | - |
-| **Parent local rotation** | | Activates manipulators allowing the rotation of the joint parent frame to be modified. This allows the cone for the swing limit cone and the arc for the twist limit to be orientated relative to the frame of the joint's parent. |
-| **Child local rotation** | | Activates manipulators allowing the rotation of the joint child frame to be modified. This allows the axis which moves around inside the joint limit to be orientated relative to the joint's frame. |
+| **Parent local rotation** | ![Viewport UI ragdoll joint parent local rotation icon](/images/user-guide/actor-animation/ragdoll-viewport-ui-joints-parent-frame.svg) | Activates manipulators allowing the rotation of the joint parent frame to be modified. This allows the cone for the swing limit cone and the arc for the twist limit to be orientated relative to the frame of the joint's parent. |
+| **Child local rotation** | ![Viewport UI ragdoll joint child local rotation icon](/images/user-guide/actor-animation/ragdoll-viewport-ui-joints-child-frame.svg) | Activates manipulators allowing the rotation of the joint child frame to be modified. This allows the axis which moves around inside the joint limit to be orientated relative to the joint's frame. |
 | **Swing Limit** | ![Viewport UI ragdoll joint swing limits icon](/images/user-guide/actor-animation/ragdoll-viewport-ui-joints-swing-limits.svg) | Activates manipulators allowing the size of the swing limits in the Y and Z directions to be modified. |
 | **Twist Limit** | ![Viewport UI ragdoll joint twist limits icon](/images/user-guide/actor-animation/ragdoll-viewport-ui-joints-twist-limits.svg) | Activates manipulators allowing the mininum and maximum twist limits to be modified. |
-| **Joint Limit Automatic Fit** | | Computes an optimal joint limit based on sampling poses from a loaded **Motion Set**. In order to use this feature, you will need to load a **Motion Set** in the [**Motion Sets** panel](/docs/user-guide/visualization/animation/animation-editor/motion-set-user-interface/). |  
+| **Joint Limit Automatic Fit** | ![Viewport UI ragdoll joint automatic fit icon](/images/user-guide/actor-animation/ragdoll-viewport-ui-joints-auto-fit.svg) | Computes an optimal joint limit based on sampling poses from a loaded **Motion Set**. In order to use this feature, you will need to load a **Motion Set** in the [**Motion Sets**](/docs/user-guide/visualization/animation/animation-editor/motion-set-user-interface/) panel. |  
 
 The joint limit configuration can also be adjusted using the property editor.
 
