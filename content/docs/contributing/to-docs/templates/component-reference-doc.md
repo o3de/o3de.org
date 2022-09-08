@@ -89,7 +89,7 @@ See `component-reference.md`:
 
 ### Provider
 
-Write the name of the Gem that provides this component and link to the corresponding [Gem reference document](/docs/user-guide/gems/reference/overview/).
+Write the name of the Gem that provides this component and link to the corresponding [Gem reference document](/docs/user-guide/gems/reference/).
 
 **Specifications**:
 
