@@ -1,9 +1,10 @@
 ---
 description: ' Simulating a ragdoll in the Open 3D Engine Editor. '
 title: Simulating a Ragdoll in the Editor
+weight: 300
 ---
 
-Once you've created your ragdoll and animation graph, you can simulate the ragdoll in game mode in O3DE Editor.
+Once you've created your ragdoll and animation graph, you can simulate the ragdoll in game mode in **O3DE Editor**.
 
 **To simulate your ragdoll**
 
@@ -29,13 +30,13 @@ Once you've created your ragdoll and animation graph, you can simulate the ragdo
 
    1. In the **Pick EMotion FX Motion Set** window, select your motion set and then click **OK**.
 
-   ![Select a motion set from the Pick EMotion FX Motion Set window in the Animation Editor](/images/user-guide/actor-animation/ragdoll-simulation-pick-motion-set.png)
+      ![Select a motion set from the Pick EMotion FX Motion Set window in the Animation Editor](/images/user-guide/actor-animation/ragdoll-simulation-pick-motion-set.png)
 
    1. In the **Anim Graph** component, for **Anim graph**, click the browse (**...**) button.
 
    1. In the **Pick EMotion FX Anim Graph** window, select your animation graph and then click **OK**.
 
-   ![Select an animation graph from the Pick EMotion FX Anim Graph window in the Animation Editor](/images/user-guide/actor-animation/ragdoll-simulation-pick-animation-graph.png)
+      ![Select an animation graph from the Pick EMotion FX Anim Graph window in the Animation Editor](/images/user-guide/actor-animation/ragdoll-simulation-pick-animation-graph.png)
 
 1. Click **Add Component**, **PhysX Ragdoll**.
 

@@ -1,18 +1,19 @@
 ---
 description: ' Setting up a ragdoll in the Open 3D Engine Animation Editor. '
 title: Setting up a Ragdoll
+weight: 100
 ---
 
 {{< important >}}
 There is currently no automatic way to prevent the physics geometry **PhysX Character Controller** component from colliding with the **PhysX Ragdoll** component, which can lead to unexpected behavior for the ragdoll. Collisions can be avoided by using [collision filtering](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-layers/) or by disabling the physics on the **PhysX Character Controller** component when the ragdoll is activated.
 {{< /important >}}
 
-When you set up a ragdoll, you do the following:
+To set up a ragdoll, do the following:
 + [Define joints for the ragdoll.](#step-1-define-joints-for-the-ragdoll)
 + [Set up ragdoll colliders.](#step-2-set-up-ragdoll-colliders)
 + [Create joint limits.](#step-3-create-joint-limits)
 
-In addition, your actor must have a motion extraction node. Your ragdoll must have a root node that is a direct child of the motion extraction node. For example, the Rin character uses `root` for its motion extraction node. For the ragdoll root node, the Rin character uses `'C_pelvis_JNT`, which is a child node of `root`.
+In addition, your actor must have a motion extraction node. Your ragdoll must have a root node that is a direct child of the motion extraction node. For example, the Rin character uses `root` for its motion extraction node. For the ragdoll root node, the Rin character uses `C_pelvis_JNT`, which is a child node of `root`.
 
 While working on ragdoll setup, it can be useful to show or hide certain elements in the **Atom Render Window**. You can use the render options dropdown, represented by the ![Use the render options in the Atom Render Window to show or hide elements such as ragdoll colliders, joint limits and hit detection colliders](/images/user-guide/actor-animation/ragdoll-skeleton-render-options.svg) icon, to show or hide the **Ragdoll Colliders** (rendered in orange), **Ragdoll Joint Limits**, **Hit Detection Colliders** (rendered in blue), **Cloth Colliders** (rendered in purple), **Line Skeleton**, and other elements.
 
@@ -41,7 +42,7 @@ If a joint is added to the ragdoll, all of its ancestors are automatically added
 
     ![Add a selected joint to the ragdoll in the Skeleton Outliner in the Animation Editor](/images/user-guide/actor-animation/ragdoll-skeleton-outliner-add-to-ragdoll.png)
 
-1. Click the filter icon next to the search text box, and select **Ragdoll joints and colliders**. This shows only the joints in the ragdoll and not the full animation skeleton.
+1. Click the filter {{< icon "filter.svg" >}} icon next to the search text box, and select **Ragdoll joints and colliders**. This shows only the joints in the ragdoll and not the full animation skeleton.
 
     ![Use the Ragdoll joints and colliders filter to show only joints in the ragdoll in the Animation Editor](/images/user-guide/actor-animation/ragdoll-skeleton-outliner-ragdoll-joints-colliders-filter.png)
 
@@ -61,13 +62,13 @@ If your ragdoll colliders, hit detection colliders, or cloth colliders are the s
 
 1. On the **Ragdoll** tab, you can view and modify the ragdoll properties for the selected joint. For example, the rigid body mass, sleeping threshold, and colliders.
 
-![View and modify ragdoll properties for a selected joint on the Ragdoll tab in the Animation Editor](/images/user-guide/actor-animation/ragdoll-skeleton-ragdoll-tab-properties.png)
+    ![View and modify ragdoll properties for a selected joint on the Ragdoll tab in the Animation Editor](/images/user-guide/actor-animation/ragdoll-skeleton-ragdoll-tab-properties.png)
 
 ## Step 2: Set up Ragdoll Colliders 
 
 **Adding and removing ragdoll colliders**
 
-Each joint in the ragdoll can have 0, 1 or multiple ragdoll colliders, which affect how the ragdoll collides with other physical objects. Box, sphere and capsule geometries are supported. By default, when a joint is added to the ragdoll, it is automatically created with a 
+Each joint in the ragdoll can have 0, 1, or multiple ragdoll colliders, which affect how the ragdoll collides with other physical objects. Box, sphere, and capsule geometries are supported. By default, when a joint is added to the ragdoll, it is automatically created with a 
 capsule collider which roughly approximates the shape of the parts of the actor mesh most heavily influenced by that joint. If a different geometry would work better, you can delete the default collider and add another as described below.
 
 ![Deleting a ragdoll collider](/images/user-guide/actor-animation/ragdoll-remove-collider.png)
@@ -136,7 +137,7 @@ If a single joint is selected, these parameters can be modified using manipulato
 | **Child local rotation** | | Activates manipulators allowing the rotation of the joint child frame to be modified. This allows the axis which moves around inside the joint limit to be orientated relative to the joint's frame. |
 | **Swing Limit** | ![Viewport UI ragdoll joint swing limits icon](/images/user-guide/actor-animation/ragdoll-viewport-ui-joints-swing-limits.svg) | Activates manipulators allowing the size of the swing limits in the Y and Z directions to be modified. |
 | **Twist Limit** | ![Viewport UI ragdoll joint twist limits icon](/images/user-guide/actor-animation/ragdoll-viewport-ui-joints-twist-limits.svg) | Activates manipulators allowing the mininum and maximum twist limits to be modified. |
-| **Joint Limit Automatic Fit** | | Computes an optimal joint limit based on sampling poses from a loaded **Motion Set**. In order to use this feature, you will need to load a **Motion Set** in the [**Motion Sets** panel](/docs/user-guide/visualization/animation/animation-editor/motion-set-user-interface/) |  
+| **Joint Limit Automatic Fit** | | Computes an optimal joint limit based on sampling poses from a loaded **Motion Set**. In order to use this feature, you will need to load a **Motion Set** in the [**Motion Sets** panel](/docs/user-guide/visualization/animation/animation-editor/motion-set-user-interface/). |  
 
 The joint limit configuration can also be adjusted using the property editor.
 
