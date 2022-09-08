@@ -35,10 +35,10 @@ Do the following to select the joints for your ragdoll. Usually you will want to
 
     {{< note >}}
 You can add joints to the ragdoll at any time.
-{{< /note >}}
+    {{< /note >}}
     {{< note >}}
 If a joint is added to the ragdoll, all of its ancestors are automatically added as well. This can be useful as a quick way to add a complete hierarchy just by adding a few end effectors, e.g. joints in the hands, feet and head. Similarly if a joint is removed from the ragdoll, all of its descendants are also removed.
-{{< /note >}}
+    {{< /note >}}
 
     ![Add a selected joint to the ragdoll in the Skeleton Outliner in the Animation Editor](/images/user-guide/actor-animation/ragdoll-skeleton-outliner-add-to-ragdoll.png)
 
@@ -68,8 +68,7 @@ If your ragdoll colliders, hit detection colliders, or cloth colliders are the s
 
 **Adding and removing ragdoll colliders**
 
-Each joint in the ragdoll can have 0, 1, or multiple ragdoll colliders, which affect how the ragdoll collides with other physical objects. Box, sphere, and capsule geometries are supported. By default, when a joint is added to the ragdoll, it is automatically created with a 
-capsule collider which roughly approximates the shape of the parts of the actor mesh most heavily influenced by that joint. If a different geometry would work better, you can delete the default collider and add another as described below.
+Each joint in the ragdoll can have 0, 1, or multiple ragdoll colliders, which affect how the ragdoll collides with other physical objects. Box, sphere, and capsule geometries are supported. By default, when a joint is added to the ragdoll, it is automatically created with a capsule collider which roughly approximates the shape of the parts of the actor mesh most heavily influenced by that joint. If a different geometry would work better, you can delete the default collider and add another as described below.
 
 ![Deleting a ragdoll collider](/images/user-guide/actor-animation/ragdoll-remove-collider.png)
 
@@ -109,7 +108,7 @@ Choose **File**, **Save Selected Actors**. This saves the ragdoll data to the `.
 
 **Avoiding self-collision**
 
-The ragdoll automatically suppresses collisions between joints that are adjacent in the skeleton. This means that adjacent colliders can overlap, but a pair of colliders that are not adjacent should not intersect. If the pair of colliders intersects, they'll collide when the ragdoll is simulated. This leads to unstable behaviour, because the colliding bodies are trying to separate, while the joints are trying to keep the ragdoll together. If two joints which are not adjacent in the hierarchy have overlapping colliders, the colliders will be rendered in red, as shown below.
+The ragdoll automatically suppresses collisions between joints that are adjacent in the skeleton. This means that adjacent colliders can overlap, but a pair of colliders that are not adjacent should not intersect. If the pair of colliders intersects, they'll collide when the ragdoll is simulated. This leads to unstable behavior, because the colliding bodies are trying to separate, while the joints are trying to keep the ragdoll together. If two joints which are not adjacent in the hierarchy have overlapping colliders, the colliders will be rendered in red, as shown below.
 
 ![Example of ragdoll self-collision](/images/user-guide/actor-animation/ragdoll-self-collision-example.png)
 

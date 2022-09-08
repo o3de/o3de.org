@@ -5,6 +5,7 @@ weight: 200
 ---
 
 When you create an animation graph to control the ragdoll simulation of your character, you do the following:
+
 + Prepare the actor asset.
 + Adjust the animation graph to enable the ragdoll.
 + Preview.
