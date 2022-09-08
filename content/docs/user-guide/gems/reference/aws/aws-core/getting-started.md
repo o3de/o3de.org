@@ -15,11 +15,11 @@ To get started using AWS Gems with AWS services in your O3DE project, complete t
 
 3. Install the [AWS Cloud Development Kit (CDK)](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install).
 
-    a. Confirm the CDK is set up using the command `cdk --version`.
+    a. Confirm the AWS CDK is set up using the command `cdk --version`.
 
 4. **Build** your O3DE project with the AWS Core Gem (and other AWS Gems you need) enabled.
 
-5. Deploy the **CDK applications** for the AWS Gems you have enabled. See [Deploying the CDK Application](./cdk-application/) for instructions.
+5. Deploy the **AWS CDK applications** for the AWS Gems you have enabled. See [Deploying the AWS CDK Application](./cdk-application/) for instructions.
 
 6. Configure a [resource mapping file](./resource-mapping-files/) using the [Resource Mapping Tool](./resource-mapping-tool/).
 

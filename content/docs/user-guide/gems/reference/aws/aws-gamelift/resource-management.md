@@ -1,12 +1,12 @@
 ---
 linkTitle: Resource Management
 title: AWS GameLift Gem Resource Management
-description: "Learn about the sample CDK application with the AWS GameLift Gem in O3DE"
+description: "Learn about the sample AWS CDK application with the AWS GameLift Gem in O3DE"
 toc: true
 weight: 900
 ---
 
-The AWS GameLift Gem provides a sample [CloudFormation Development Kit](https://aws.amazon.com/cdk/)(CDK) application that can be used to model and deploy the following Amazon GameLift resources:
+The AWS GameLift Gem provides a sample [AWS Cloud Development Kit](https://aws.amazon.com/cdk/)(AWS CDK) application that can be used to model and deploy the following Amazon GameLift resources:
 
 *   A list of [GameLift fleets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html) to host game servers.
 *   (Optional) A list of [GameLift builds](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html) used for GameLift fleet generation.
@@ -15,9 +15,9 @@ The AWS GameLift Gem provides a sample [CloudFormation Development Kit](https://
 
 ## Prerequisites
 
-To deploy the CDK application, you must have the following:
+To deploy the AWS CDK application, you must have the following:
 
-- [AWS CLI](https://aws.amazon.com/cli/) and [AWS CloudFormation Development Kit](https://aws.amazon.com/cdk/) installed on your local machine. 
+- [AWS CLI](https://aws.amazon.com/cli/) and [AWS Cloud Development Kit](https://aws.amazon.com/cdk/) installed on your local machine. 
 - Your AWS credentials set up. For instructions on setting up AWS credentials, refer to [Configuring AWS Credentials for O3DE](/docs/user-guide/gems/reference/aws/aws-core/configuring-credentials/).
 
 ## Setup
@@ -213,12 +213,12 @@ $ cdk synth -c upload-with-support-stack=true --all
 ```
 
 
-When this optional feature is enabled, an additional CloudFormation stack will be deployed. The additional stack contains the AWS resources that are required to support the build upload and creation. The `--all` argument tells the CDK application to synthesize all the available stacks.
+When this optional feature is enabled, an additional AWS CloudFormation stack will be deployed. The additional stack contains the AWS resources that are required to support the build upload and creation. The `--all` argument tells the AWS CDK application to synthesize all the available stacks.
 
 
 #### Create game session queue
 
-It is recommended you create the optional game session queue using this CDK application by providing the `create_game_session_queue` context variable when synthesizing stack(s). The following example command synthesizes the application with this optional features enabled:
+It is recommended you create the optional game session queue using this AWS CDK application by providing the `create_game_session_queue` context variable when synthesizing stack(s). The following example command synthesizes the application with this optional features enabled:
 
 ```cmd
 $ cdk synth -c create_game_session_queue=true
@@ -227,7 +227,7 @@ $ cdk synth -c create_game_session_queue=true
 
 #### Create FlexMatch resources
 
-You can also create matchmaking configuration and matchmaking rule set using this CDK application by providing the `flex_match` context variable when synthesizing stack(s). The following example command synthesizes the application with this optional features enabled:
+You can also create matchmaking configuration and matchmaking rule set using this AWS CDK application by providing the `flex_match` context variable when synthesizing stack(s). The following example command synthesizes the application with this optional features enabled:
 
 ```cmd
 $ cdk synth -c flex_match=true
@@ -253,7 +253,7 @@ Similar to using the `synth` command, if you want the AWS CDK application to upl
 $ cdk deploy -c upload-with-support-stack=true --all
 ```
 
-To deploy this CDK application with optional features enabled, you must provide the corresponding context variables when deploying stack(s). The following example command deploys the application with all the optional features enabled:
+To deploy this AWS CDK application with optional features enabled, you must provide the corresponding context variables when deploying stack(s). The following example command deploys the application with all the optional features enabled:
 
 ```cmd
 $ cdk deploy -c upload-with-support-stack=true -c create_game_session_queue=true -c flex_match=true --all
@@ -267,13 +267,13 @@ To update the existing AWS CDK application, re-run the same commands that you us
 
 ## Destroy the AWS CDK application
 
-To destroy all the AWS resources that the CDK application deployed, run the following AWS CLI command:
+To destroy all the AWS resources that the AWS CDK application deployed, run the following AWS CLI command:
 
 ```cmd
 $ cdk destroy
 ```
 
-If you have any of the optional features enabled, you can destroy the CDK application with all the optional features enabled by providing the corresponding context variables and the `--all` argument. The following command destroys the CDK application with all the optional features enabled:
+If you have any of the optional features enabled, you can destroy the AWS CDK application with all the optional features enabled by providing the corresponding context variables and the `--all` argument. The following command destroys the AWS CDK application with all the optional features enabled:
 
 ```cmd
 $ cdk -c upload-with-support-stack=true -c create_game_session_queue=true -c flex_match=true --all
