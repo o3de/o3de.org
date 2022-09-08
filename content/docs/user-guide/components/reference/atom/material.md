@@ -84,7 +84,7 @@ These notifications are sent in relation to Material Component state changes dur
 | 'OnMaterialInstanceCreated' | This notification is sent whenever an individual material instance is created by the Material Component. Unique material instances will only be created if the Material Component configuration specifies property overrides that customizes the behavior of a given material. | Material Override: MaterialAssignment | None | No |
 
 ## MaterialConsumerRequestBus
-A "material consumer" is any component that accepts material and property changes from the Material Component. Implementing this bus provides the Material Component with details about available material slots, default material assets, labels, and other information. This is used to populate the the Material Component UI.
+A "material consumer" is any component that accepts material and property changes from the Material Component. Implementing this bus provides the Material Component with details about available material slots, default material assets, labels, and other information. This is used to populate the Material Component UI.
 
 | Method Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
