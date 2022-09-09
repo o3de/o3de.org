@@ -62,7 +62,7 @@ Examine the animation as it plays. If the skeleton has a root bone (a green line
 
 {{< video src="/images/learning-guide/tutorials/animation/jack-run-root-motion.mp4" info="Example run cycle with root motion." autoplay="true" loop="true" poster="/images/learning-guide/tutorials/animation/jack-run-poster.png" >}}
 
-If you animation resembles the preceding movie, but the actor snaps back to the origin after each time the animation cycle plays, you can move on to the [Enable root motion](#enable-root-motion) section. If the root bone remains at the origin as the actor moves, the source scene files might not have a root bone, and the motion has been applied to another bone such as the pelvis. You'll need to generate root motion for the animation.
+If your animation resembles the preceding movie but the actor snaps back to the origin after each animation cycle, you can move on to the [Enable root motion](#enable-root-motion) section. If the root bone remains at the origin as the actor moves, the source scene files might not have a root bone, and the motion has been applied to another bone such as the pelvis. You'll need to generate root motion for the animation.
 
 For the best result, edit the source scene files in your digital content creation application (Blender or Maya, for example) and add a root bone with animation. Alternatively, if the actor has motion applied to a different bone such as the pelvis, you can try to extract the root motion automatically.
 
@@ -88,18 +88,18 @@ A source scene file might contain more than one motion. You'll need to add a Roo
 
 1. By default, the bone's translation is extracted. You can choose to ignore the X or Y axis translation, and extract rotations by setting the properties in the modifier.
 
-1. With the modifier configured, choose **Update** to save your custom processing rule. The animation is automatically processed by Asset Processor. Close the output window and exit scene settings.
+1. With the modifier configured, choose **Update** to save your custom processing rule. The animation is automatically processed by Asset Processor. Close the output window and exit Scene Settings.
 
-When the motion is processed, the root motion is extracted and applied to the root bone in the motion product asset. You can verify if the root motion extraction was successful by repeating the previous steps in the [Generate data driven root motion](#generate-data-driven-root-motion) section.
+When the motion is processed, the root motion is extracted and applied to the root bone in the motion product asset. You can verify if the root motion extraction was successful by repeating the steps in the [Generate data driven root motion](#generate-data-driven-root-motion) section.
 
 The following table provides additional detail on the options provided by the Root motion extraction modifier:
 
 | Option | Description |
 | - | - |
-| **Sample Joint** | The bone root motion is extracted from. Usually this is the hip or pelvis (or some relative bone for actors that aren't bipeds). |
+| **Sample Joint** | The bone that root motion is extracted from. Usually this is the hip or pelvis (or some relative bone for actors that aren't bipeds). |
 | **Ignore X-Axis transition** | When enabled, X-axis translations aren't extracted. The X translation of the root motion is set to `0.0`. |
 | **Ignore Y-Axis transition** | When enabled, Y-axis translations aren't extracted. The Y translation of the root motion is set to `0.0`. |
-| **Rotation extraction** | When enabled, rotations are extracted for the root motion. |
+| **Rotation extraction** | When enabled, rotations are also extracted for the root motion. |
 | **Smoothing method** | Select a smoothing method you want to apply to the motion data. Smoothing the data reduces any drastic position or rotation changes. |
 | **Smooth position** | When enabled, translations of the root motion animation data are smoothed. |
 | **Smooth rotation** | When enabled, rotations of the root motion animation data are smoothed. |
@@ -107,7 +107,7 @@ The following table provides additional detail on the options provided by the Ro
 
 ## Enable root motion
 
-Once you have root motion applied to the actor's root bone, you must enable root motion for the actor. Follow these steps to enable root motion for the actor:
+Once you have root motion applied to the actor's root bone, you must enable root motion for the actor by following these steps:
 
 1. In Animation Editor, press **Ctrl + O** to open the actor. Select an actor from the file window.
 
