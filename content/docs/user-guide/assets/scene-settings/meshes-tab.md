@@ -103,7 +103,7 @@ You can add `_lod0`, `_lod1`, `_lod2`, `_lod3`, `_lod4`, and `_lod5` as suffixes
 
 The Material modifier helps automatically manage the contents of the `.material` file that corresponds to the mesh group when mesh assets are updated.
 
-A material is a combination of shaders and properties that define the surface of a mesh. Materials contain shader and texture assignments, settings for shader properties such as smoothness, opacity, emissive color, and if necessary, a physics material assignment that defines physical surface properties such as friction.
+A material is a combination of shaders and properties that define the surface of a mesh. Materials contain shader and texture assignments, settings for shader properties such as smoothness, opacity or emissive color.
 
 | Property | Description |
 | - | - |

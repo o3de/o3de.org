@@ -22,15 +22,6 @@ The following table describes the **System Configuration** settings.
 | **Shapecast Buffer Size** | Maximum number of hits that can be returned from a shapecast query.  The default is `32`. |
 | **Overlap Query Buffer Size** | Maximum number of hits that can be returned from an overlap query.  The default is `32`. |
 
-## Physics materials 
-
-The following table describes the settings for **Physics Materials**.
-
-| Property | Description |
-| - | - |
-| **Default Physics Material** | The properties of the default physics material for this project. Refer to [Physics material properties](/docs/user-guide/interactivity/physics/nvidia-physx/materials/#physics-material-properties) for a detailed description of physics material properties. |
-| **Physics Material Library** | The physics material library for this project. |
-
 ## Scene configuration 
 
 The following table describes the settings for **Scene Configuration**.
