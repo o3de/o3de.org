@@ -12,7 +12,7 @@ An **Asset Builder** is a bundle of code that **Asset Processor** runs to genera
 The Open Asset Import Library supports [many scene formats](https://github.com/assimp/assimp/blob/master/doc/Fileformats.md). You can experiment with additional formats by editing `o3de/Registry/sceneassetimporter.setreg` and adding format extensions to the `"SupportedFileTypeExtensions"` list.
 {{< /note >}}
 
-## Anatomy of an asset builder
+## Anatomy of an Asset Builder
 
 Asset Builders have three core components: a **Descriptor** for the builder, and handlers for **Create Jobs** and **Process Job** requests.
 
@@ -24,7 +24,7 @@ The Descriptor provides Asset Processor the information required to identify the
 
 The Asset Builder UUID is also used to create the sub ID for product assets it generates. The sub ID of the product asset must match the current UUID of its Asset Builder. Changing the UUID of an Asset Builder triggers all source assets that have been previously processed by the Asset Builder to be reprocessed.
 
-### Create jobs
+### Create Jobs
 
 Create Jobs generates asset processing jobs for Asset Processor. When Asset Processor detects a new or updated source asset and determines the appropriate Asset Builder to process the source asset, it sends a `CreateJobsRequest` that contains information about the source asset, including its path, to the Asset Builder. The Asset Builder responds with a `CreateJobsResponse` that contains `JobDescriptor` structures, and source and job dependencies. For example, if the `CreateJobsRequest` is for a material to be processed, the Asset Builder includes a dependency on the referenced shader source asset in the `CreateJobsResponse`, ensuring the shader is processed before the material.
 
@@ -32,7 +32,7 @@ Create Jobs generates asset processing jobs for Asset Processor. When Asset Proc
 Create Jobs is a single threaded process. There might be instances where you implement an Asset Builder that does specialized processing for a source asset type that is also supported by other Asset Builders. You might need to examine the source asset to determine if the specialized Asset Builder should process the source asset. In these instances, examining the asset as part of Process Job, and exiting the process early depending on the result, can offer better performance because Process Job is multithreaded. 
 {{< /note >}}
 
-### Process job
+### Process Job
 
 Process Job generates the product asset and product dependencies. The Asset Builder receives a `ProcessJobRequest` from Asset Processor containing info on the source asset to process. The Asset Builder responds with a `ProcessJobResponse`. The function of `ProcessJobResponse` is to process the source asset and return information about the product assets it creates, including sub IDs and product dependencies.
 
@@ -73,7 +73,7 @@ To debug with Asset Builder:
 
 ## Loading other files
 
-Sometimes, when authoring a builder, it may be necessary to load other files besides the primary source file to finish a given process. Here are some scenarios that this can come up, and best practices for handling them.
+Sometimes, when authoring a builder, it may be necessary to load other files besides the primary source file to finish a given process.
 
 ### Understanding file locations
 
@@ -84,18 +84,18 @@ Files relevant to asset processing can exist in these locations:
 1. Scan directories are the only place source assets can exist.
 1. Source files (not assets) can be on any drive in any location.
 
-Scan directories are mostly these locations. Scan directories can be elsewhere, but these are the primary ones. Read more about [scan directories here:](/docs/user-guide/assets/pipeline/scan-directories/)
+[Scan directories](/docs/user-guide/assets/pipeline/scan-directories/) are monitored by Asset Processor for new and updated source assets. Scan directories can be user defined, however, the primary scan directories are in the following locations:
 1. The current project's directory.
 1. The `Assets` folder for each Gem enabled for the project.
 
-Individual Gems, the O3DE project in use, and the engine itself can all be installed to different drives.
+Individual Gems, the active O3DE project, and the engine itself can all be installed to different drives.
 
 #### Types of files in asset processing
 
 ![All files in asset processing](/images/user-guide/assets/pipeline/asset_builders/asset_builder_all_dependencies.png)
 
 * Source assets
-   * Source assets are files that exist in scan directories for an O3DE project, that match an Asset Builder's registered pattern, and result in a job being created when create jobs is called with the source asset for the Asset Builder.
+   * Source assets are files that exist in scan directories for an O3DE project, that match an Asset Builder's registered pattern, and result in a job being created when Create Jobs is called with the source asset for the Asset Builder.
    * Read more about [source assets here.](/docs/user-guide/assets/pipeline/source-assets/)
 * Non-asset source files
    * Non-asset source files are files that may or may not be in a scan directory, that are loaded and referenced when processing a source asset.
@@ -103,17 +103,17 @@ Individual Gems, the O3DE project in use, and the engine itself can all be insta
       * The file is not in a scan directory,
       * The file does not match a file pattern for any asset builder descriptor, or
       * The file does not generate a job when create jobs is called for the file for matching asset builders
-* Product assets
-   * Product assets are the run-time ready output of an asset processing job.
 * Intermediate assets
    * Intermediate assets are source assets that are generated as a product of an asset processing job.
    * Read more about [intermediate assets here.](/docs/user-guide/assets/pipeline/intermediate-assets/)
+* Product assets
+   * Product assets are the runtime ready output of an asset processing job.
 
-#### References from source assets and non-asset source files to other files
+### References from source assets and non-asset source files to other files
 
 ![Source asset references](/images/user-guide/assets/pipeline/asset_builders/source_asset_references.png)
 
-Source assets and non-asset source files can reference each other in many different ways, and each case may require unique handling at the time of authoring an asset builder.
+Source assets and non-asset source files can reference each other in many different ways, and each case might require unique handling at the time of authoring an asset builder.
 
 Source assets and non-asset source files may have these references:
 * source assets by UUID
@@ -144,7 +144,7 @@ Resolving paths to find the file on disk is often done within the asset builder.
 * File locations relative to scan directories, and in the asset cache will be stable for all members of a team, but scan directories themselves, and files outside scan directories may not have the same paths for all team members.
 * Path resolving logic should be consistent, and predictable. Content creators will want to understand how paths are resolved when processing assets, so they can better manage their content.
 
-#### References from product assets to other files
+### References from product assets to other files
 
 ![Product asset references](/images/user-guide/assets/pipeline/asset_builders/product_asset_references.png)
 
