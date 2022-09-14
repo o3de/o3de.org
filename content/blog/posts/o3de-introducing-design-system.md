@@ -59,7 +59,7 @@ If you are looking for information on key building blocks that O3DE uses, [UI Co
 
 UX Patterns are a series of best practice solutions that a designer or developer should follow when creating new workflows and components in the Editor. Unlike UI Components, which is mostly about the visual aesthetics and how it mechanically operates, UX Patterns is more about how a user interacts and behaves for a task with a goal in mind.
 
-For example, the anatomy of a component card and it's different types can be found in the [UI Component > Card](https://o3de.org/docs/tools-ui/component-library/uidev-card-widget/) page. What contents go in the card, how a user interacts with it and how O3DE interacts with the card itself can be found in the [UX Patterns > Component Card UX Patterns](https://o3de.org/docs/tools-ui/ux-patterns/component-card/overview/) page.
+For example, the anatomy of a component card and it's different types can be found in the [UI Component > Card](https://o3de.org/docs/tools-ui/component-library/uidev-card-widget/) page. What contents go in the card, how a user interacts with it and how O3DE interacts with the card itself can be found in the [UX Patterns > Component Card UX Patterns](https://o3de.org/docs/tools-ui/ux-patterns/component-card/) page.
 
 ![Preview image for the O3DE component card guidelines](/images/blog/intro-to-bjds/componentcard-ux-preview.jpg)
 

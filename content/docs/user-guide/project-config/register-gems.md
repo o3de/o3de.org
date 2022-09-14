@@ -6,7 +6,7 @@ toc: true
 weight: 140
 ---
 
-**Open 3D Engine (O3DE)** includes many Gems that extend features and add assets to your project. For a full list, refer to the [Gem Reference](/docs/user-guide/gems/overview). These Gems have already been registered to the engine and are ready to be added to a project.
+**Open 3D Engine (O3DE)** includes many Gems that extend features and add assets to your project. For a full list, refer to the [Gem Reference](/docs/user-guide/gems/). These Gems have already been registered to the engine and are ready to be added to a project.
 
 You can also register *external* Gems from a source outside of O3DE so that they too can be used in your project. Registering a Gem enables your project to find the Gem. Gem folders can be located anywhere on your computer.
 
