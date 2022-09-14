@@ -30,8 +30,8 @@ O3DE comes bundled with standard O3DE Gems. Their source code is located in the 
 | Topic | Description |
 | --- | --- |
 | [Gem Reference](./reference/) | The complete reference to all Gems available in O3DE. |
-| [Core O3DE Gems](./core-gems) | Learn about the core Gems that are required for most projects in O3DE. |
 | [Gem Repositories](./repositories/) | Learn how to share Gems by creating and hosting a Gem repository. |
+| [Core O3DE Gems](./core-gems) | Learn about the core Gems that are required for most projects in O3DE. |
 
 
 ## Related topics

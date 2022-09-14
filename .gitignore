@@ -12,3 +12,7 @@ yarn.lock
 # IDE / editor files
 .vscode
 .DS_Store
+
+# Vale linter https://vale.sh/
+.vale.ini
+/styles/
