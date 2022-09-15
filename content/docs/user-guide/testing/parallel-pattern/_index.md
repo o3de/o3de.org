@@ -405,7 +405,7 @@ Be careful when placing a test in a batch, parallel, or shared pool! All tests s
 
 Due to the lack of support for setup, teardown, or test wrapping in batch, parallel, and shared tests, avoid placing any tests that rely on this support into a shared pool. 
 
-An examples of a test which could be batched, but not run in parallel, is a physics test that makes a modification to the project wide material library at the start and restores to the default setting when finishing. By changing the state of a resource shared between O3DE Editor instances (in disk storage), it could cause parallel tests to fail.
+An example of a test which could be batched, but not run in parallel, is a physics test that makes a modification to the project wide physics configuration at the start and restores to the default setting when finishing. By changing the state of a resource shared between O3DE Editor instances (in disk storage), it could cause parallel tests to fail.
 
 In general, tests that require interacting with I/O may have these problems. As a general rule, it's better to make your test do changes in memory rather than on disk.
 

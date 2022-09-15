@@ -220,6 +220,6 @@ The results of scene queries are described using `AzPhysics::SceneQueryHit` obje
 | `m_bodyHandle` | Handle to the `AzPhysics::SimulatedBody` which was hit. |
 | `m_entityId` | The Entity Id of the body which was hit. |
 | `m_shape` | The shape on the body which was hit. |
-| `m_material` | The material on the shape (or face) which was hit. |
+| `m_physicsMaterialId` | The phsyics material id on the shape (or face) which was hit. |
 | `m_position` | The position of the hit in world space (only valid for raycast and shapecast queries). |
 | `m_normal` | The [normal](https://en.wikipedia.org/wiki/Normal_(geometry)) in world space of the hit surface. (only valid for raycast and shapecast queries). |
