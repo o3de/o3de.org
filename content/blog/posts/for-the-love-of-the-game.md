@@ -1,12 +1,20 @@
+
 ---
 title: "For the Love of the Game: In Search of Best-of-Breed 3D Creation Tools"
-date: 2022-08-11
+date: 2022-09-16
+slug: for-the-love-of-the-game
+author: Nicole Huesman
+blog_img: "/images/blog/announcement_thumbnail.jpg"
+blog_img: "/images/blog/announcement_thumbnail.jpg"
+
 ---
-Born out of a desire to make their own games, indie game developers Jacob Dodenhoff and Phoenix Cook forged [Chaotic Creations Interactive](https://www.chaoticcreationsinteractive.com/) (CCI), a small game development studio in the mid-west of the United States. Their studio reflects who they are and what they value: the players, and the commitments they make to them. Since the birth of CCI, they’ve been exploring game engines and they discovered the [Open 3D Engine](https://www.o3de.org/) in July 2021 when it was announced. In this blog, they share their experiences and offer insight to newcomers who may be interested in taking the Open 3D Engine for a spin.
+## For the Love of the Game: In Search of Best-of-Breed 3D Creation Tools
+
+Born out of a desire to make their own games, indie game developers Jacob Dodenhoff and Phoenix Cook forged [Chaotic Creations Interactive](https://www.chaoticcreationsinteractive.com/) (CCI), a **small game development studio** in the mid-west of the United States. Their studio reflects who they are and what they value: the players, and the commitments they make to them. Since the birth of CCI, they’ve been exploring game engines and they discovered the [Open 3D Engine](https://www.o3de.org/) in July 2021 when it was announced. In this blog, they share their experiences and offer insight to newcomers who may be interested in taking the Open 3D Engine for a spin.
+
+![CCI-indie-developers](/static/images/blog/CCI/CCI-blog-image.png)
 
 **_“First and foremost, our studio is focusing on crafting experiences that we enjoy as developers. In our commitment to creating games we enjoy, we believe our players will enjoy them too. Secondly, we're keeping our players in mind with everything we do.”_**
-
-![Chaotic Creations Interactive Developers, Jacob Dodenhoff and Phoenix Cook](https://github.com/uoduckswtd1/o3de.org/blob/main/content/blog/posts/CCI%20Blog%20Image.png)
 
 **Can you share your experience in open source, and with 3D and game development?**
 
