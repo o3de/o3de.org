@@ -23,14 +23,14 @@ The [Gradient Signal Gem](/docs/user-guide/gems/reference/utility/gradient-signa
 ## Provides
 
 Entity components:
-- [Vegetation Asset List](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-asset-list)
-- [Vegetation Asset List Combiner](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-asset-list-combiner)
-- [Vegetation Asset Weight Selector](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-asset-weight-selector)
-- [Vegetation Layer Blender](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-layer-blender)
-- [Vegetation Layer Blocker](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-layer-blocker)
-- [Vegetation Layer Blocker (Mesh)](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-layer-blocker-mesh)
-- [Vegetation Layer Debugger](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-layer-debugger)
-- [Vegetation Layer Spawner](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/layer-spawner)
+- [Vegetation Asset List](/docs/user-guide/components/reference/vegetation/vegetation-asset-list)
+- [Vegetation Asset List Combiner](/docs/user-guide/components/reference/vegetation/vegetation-asset-list-combiner)
+- [Vegetation Asset Weight Selector](/docs/user-guide/components/reference/vegetation/vegetation-asset-weight-selector)
+- [Vegetation Layer Blender](/docs/user-guide/components/reference/vegetation/vegetation-layer-blender)
+- [Vegetation Layer Blocker](/docs/user-guide/components/reference/vegetation/vegetation-layer-blocker)
+- [Vegetation Layer Blocker (Mesh)](/docs/user-guide/components/reference/vegetation/vegetation-layer-blocker-mesh)
+- [Vegetation Layer Debugger](/docs/user-guide/components/reference/vegetation/vegetation-layer-debugger)
+- [Vegetation Layer Spawner](/docs/user-guide/components/reference/vegetation/layer-spawner)
 - [Vegetation Position Modifier](/docs/user-guide/components/reference/vegetation-modifiers/vegetation-position-modifier)
 - [Vegetation Rotation Modifier](/docs/user-guide/components/reference/vegetation-modifiers/vegetation-rotation-modifier)
 - [Vegetation Scale Modifier](/docs/user-guide/components/reference/vegetation-modifiers/vegetation-scale-modifier)
@@ -48,12 +48,12 @@ Level components:
 - Vegetation Debugger component
 
 System components:
-- [Vegetation Area System](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-area-system-component)
-- [Vegetation Instance System](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-instance-system-component)
+- [Vegetation Area System](/docs/user-guide/components/reference/vegetation/vegetation-area-system)
+- [Vegetation Instance System](/docs/user-guide/components/reference/vegetation/vegetation-instance-system)
 
-API: [Vegetation Gem API Reference](https://www.o3de.org/docs/api/gems//docs/user-guide/components/reference/vegetation/index.html)
+API: [Vegetation Gem API Reference](https://www.o3de.org/docs/api/gems/vegetation/index.html)
 
-Source code: [`/Gems/docs/user-guide/components/reference/Vegetation/`](https://github.com/o3de/o3de/tree/development/Gems//docs/user-guide/components/reference/Vegetation/Code)
+Source code: [`/Gems/docs/user-guide/components/reference/Vegetation/`](https://github.com/o3de/o3de/tree/development/Gems/Vegetation/Code)
 
 ## Vegetation Areas
 
@@ -78,7 +78,7 @@ In O3DE Editor, vegetation instances appear within a vegetation area. They're pr
 
 ## Vegetation descriptors
 
-*Vegetation descriptors* are structures that specify all of the common details needed to represent a type of vegetation. It includes data for mesh and material assets, the type of vegetation instances it creates, and many advanced parameters that can be enabled to override behavior of most filters and modifiers. Create **Vegetation Descriptors** in the [Vegetation Asset List](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-asset-list) component or through **Asset Editor**.
+*Vegetation descriptors* are structures that specify all of the common details needed to represent a type of vegetation. It includes data for mesh and material assets, the type of vegetation instances it creates, and many advanced parameters that can be enabled to override behavior of most filters and modifiers. Create **Vegetation Descriptors** in the [Vegetation Asset List](/docs/user-guide/components/reference/vegetation/vegetation-asset-list) component or through **Asset Editor**.
 
 | Group Name | Parameter Name | Description | Type |
 | --- | --- | --- | --- |
@@ -104,8 +104,8 @@ In O3DE Editor, vegetation instances appear within a vegetation area. They're pr
 |     | **Scale Override Enabled** | When enabled, the [Scale Modifier](/docs/user-guide/components/reference/vegetation-modifiers/vegetation-scale-modifier) component can use the per-instance override values specified in the descriptor instead of the component configuration. | Bool |
 |     | **Scale Min** | Override value for the minimum scale multiplier. | Float |
 |     | **Scale Max** | Override value for the maximum scale multiplier. | Float |
-| Altitude Filter |     | Settings for controlling per-instance overrides for the [Altitude Filter](/docs/user-guide/components/reference/vegetation-modifiers/vegetation-altitude-filter) component. |     |
-|     | **Altitude Filter Override Enabled** | When enabled, the [Altitude Filter](/docs/user-guide/components/reference/vegetation-modifiers/vegetation-altitude-filter) component can use the per-instance override values specified in the descriptor instead of the component configuration. | Bool |
+| Altitude Filter |     | Settings for controlling per-instance overrides for the [Altitude Filter](/docs/user-guide/components/reference/vegetation-filters/vegetation-altitude-filter) component. |     |
+|     | **Altitude Filter Override Enabled** | When enabled, the [Altitude Filter](/docs/user-guide/components/reference/vegetation-filters/vegetation-altitude-filter) component can use the per-instance override values specified in the descriptor instead of the component configuration. | Bool |
 |     | **Altitude Filter Min** | Override value for the minimum altitude accepted by the filter. | Float |
 |     | **Altitude Filter Max** | Override value for the maximum altitude accepted by the filter. | Float |
 | **Distance Between Filter (Radius)** |     | Settings for controlling per-instance overrides for the [Distance Between Filter](/docs/user-guide/components/reference/vegetation-filters/vegetation-distance-between-filter) component. |     |
@@ -159,7 +159,7 @@ File: [`/Gems/Vegetation/Code/Include/Vegetation/Ebuses/AreaRequestBus.h`](https
 
 ### Vegetation::DescriptorProviderRequestBus
 
-*Vegetation descriptor providers* supply [Vegetation Layer Spawners](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/layer-spawner) and [Blenders](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-layer-blender) with a list of vegetation descriptors from defined sources. 
+*Vegetation descriptor providers* supply [Vegetation Layer Spawners](/docs/user-guide/components/reference/vegetation/layer-spawner) and [Blenders](/docs/user-guide/components/reference/vegetation/vegetation-layer-blender) with a list of vegetation descriptors from defined sources. 
 The Vegetation Gem comes with components that can either provide descriptors from a list that's defined directly in the component, reference a list of descriptors from externally created assets, or combine multiple descriptor lists together.
 
 | Request Name | Description | Parameters | Return |
@@ -170,7 +170,7 @@ File: [`/Gems/Vegetation/Code/Include/Vegetation/Ebuses/DescriptorProviderReques
 
 ### Vegetation::DescriptorSelectorRequestBus
 
-A [Vegetation Layer Spawner](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/layer-spawner) component can use *vegetation descriptor selectors* when a vegetation descriptor provider offers multiple options. There is one selector, [Vegetation Asset Weight Selector](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/vegetation-asset-weight-selector)component, which chooses based on the selection weight field of a vegetation descriptor.
+A [Vegetation Layer Spawner](/docs/user-guide/components/reference/vegetation/layer-spawner) component can use *vegetation descriptor selectors* when a vegetation descriptor provider offers multiple options. There is one selector, [Vegetation Asset Weight Selector](/docs/user-guide/components/reference/vegetation/vegetation-asset-weight-selector)component, which chooses based on the selection weight field of a vegetation descriptor.
 
 | Request Name | Description | Parameters | Return|
 | --- | --- | --- | ---  |
@@ -193,7 +193,7 @@ File: [`/Gems/Vegetation/Code/Include/Vegetation/Ebuses/ModifierRequestBus.h`](h
 ### Vegetation::FilterRequestBus
 
 Vegetation areas use *vegetation filters* to evaluate every vegetation instance data and decide whether any activity should occur. 
-[Vegetation Layer Spawners](/docs/user-guide/components/reference/docs/user-guide/components/reference/vegetation/layer-spawner) use filters to determine whether to create vegetation instances. 
+[Vegetation Layer Spawners](/docs/user-guide/components/reference/vegetation/layer-spawner) use filters to determine whether to create vegetation instances. 
 They can optionally evaluate filters before or after vegetation modifiers run. 
 Evaluating filters before modifiers performs better because it skips unnecessary processing, but it yields less accurate results when position changes occur. 
 Evaluating filters after modifiers is accurate because it evaluates the final version of the instance data.
