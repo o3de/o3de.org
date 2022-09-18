@@ -9,18 +9,22 @@ weight: 200
 
 Script Canvas Node Definition files are XML files that AzAutoGen uses to generate the necessary C++ code for registering nodes, defining their topology and reducing the amount of "boilerplate" code that would otherwise be necessary. This reference guide covers all the available XML tags and attributesa needed to create Script Canvas nodes.
 
+---
+
 ### ScriptCanvas
 
 The __ScriptCanvas__ tag is the top-level description of the node. It is used to produce the C++ class that represents the node and to configure its serialization & editor properties.
 
 | __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
 | ---------- | ------------| ------------| ------------|
-| __Include__   | Required |  The name of the Script Canvas Node  |
+| __Include__   | Required |  The name of the Script Canvas Node  | `Include="Include/ScriptCanvas/Internal/Nodeables/BaseTimer.h"` |
+| __xmlns:xsi__ | Recommended | Indicates that the elements and data types used in the schema come from the `"http://www.w3.org/2001/XMLSchema"` namespace. It also specifies that the elements and data types that come from it should be prefixed with xs: | `xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"` |
 
+----
 
 ### Class
 
-The Class attribute is used to define the Node's O3DE configuration, many of these attributes configure O3DE's serialization properties.
+The __Class__ element is used to define the Node's O3DE configuration, many of these attributes configure O3DE's serialization properties.
 
 | __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
 | ---------- | ------------| ------------|------------|
