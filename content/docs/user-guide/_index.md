@@ -26,7 +26,7 @@ Read about [the features provided by Open 3D Engine](/docs/welcome-guide/feature
 | [Packaging](packaging/) | Learn how to package your O3DE-based product for release. |
 | [Programming](programming/) |  Learn about core engine programming concepts in O3DE. |
 | [Project Configuration](project-config/) | Learn how to configure and customize your O3DE project. |
-| [Scripting Gameplay](scripting/) | Learn about Script Canvas, O3DE's visual scripting solution, and Lua to create logic and behaviors in your project. |
+| [Scripting](scripting/) | Learn about Script Canvas, O3DE's visual scripting solution, and Lua to create logic and behaviors in your project. |
 | [Testing](testing/) | Learn how to test your O3DE components and project. |
 | [Visualization](visualization/) | Learn about Atom-based visualization components in O3DE. |
 
