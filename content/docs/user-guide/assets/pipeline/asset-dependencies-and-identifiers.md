@@ -8,11 +8,33 @@ toc: true
 
 Both source and product assets might have dependencies. Source asset and job dependencies are inputs to the **Asset Pipeline** and asset processing jobs. Product dependencies are outputs from the Asset Pipeline and are used to load and package product assets. Asset identifiers help ensure both types of asset dependencies are met.
 
+There are four parts of asset processing relevant to source and job dependencies: The source asset being processed, the create jobs and process job steps, and finally the product assets that are produced from the job.
+
+![Simple Job](/images/user-guide/assets/pipeline/asset_dependencies/simple_job.png)
+
 ## Source dependencies
 
 Source dependencies are a process time concept. This means that this dependency type is used when processing assets for your project, source dependencies are not used at runtime.
 
 A source dependency triggers **Asset Processor** to rerun the job process step whenever the file declared as a source dependency changes. For example, image files declare a source dependency on the `.preset` file containing the preset information used to process the image, so if the preset changes the image will be reprocessed and use the new preset settings.
+
+![Source Dependency Job](/images/user-guide/assets/pipeline/asset_dependencies/source_dependency.png)
+
+### Declaring source dependencies
+
+In the Job Creation step of asset processing, a `JobDescriptor` is created to describe the work to be done to process a source asset.
+
+One of the fields on the `CreateJobsResponse` is `m_sourceFileDependencyList`, a vector of `SourceFileDependency` objects. A `SourceFileDependency` should be populated with enough information for the Asset Processor to track this dependency, so that it can re-run this job if the declared dependency is changed.
+
+A `SourceFileDependency` can be created with a path, or the UUID of a source asset. When possible, using a UUID is better because it will be stable in more circumstances.
+
+Source dependencies do not have to be on other source assets, and can be on other source files. In these cases, a UUID will not be available, because it's not generated for non-asset files.'
+
+If a path must be used, it can be an absolute path or relative, and can make use of wildcards. If a path needs to be used instead of a UUID, absolute paths can be more stable than relative paths here because this data is specific to the local machine, so pathing differences across machines won't matter. Relative paths cannot include directory change markers across root drives, so if a source asset is in a scan folder on one drive root (such as `C:/Projects/MyGame/Assets`) and a source dependency is in a folder on another drive root (such as `E:/Gems/SomeGem/Assets`), a relative path will not be usable.
+
+If the source dependency is a source asset, it must be in a scan directory. Read more about [scan directories here.](/docs/user-guide/assets/pipeline/scan-directories/)
+
+If the source dependency is not a source asset and is instead a non-asset file, it can be in other locations outside of scan directories.
 
 ## Job dependencies
 
@@ -28,19 +50,35 @@ Jobs can generate multiple product assets, but a job might not need all product 
 
 A material, for example, has a job dependency on a shader. The shader job generates multiple product assets including assets that contain shader logic and a shader configuration. The material job dependency only needs the configuration from the shader, not the logic. The material job runs when the shader configuration is changed, not when the shader logic is changed.
 
+![Job Dependency Job](/images/user-guide/assets/pipeline/asset_dependencies/job_dependency.png)
+
+### Declaring job dependencies
+
+One of the fields on the `JobDescriptor` is `m_jobDependencyList`, a vector of `JobDependency` objects. The Job Dependency is populated with the same information as a `SourceFileDependency` to identify what file to track, as well as information to identify the associated job to use as a dependency, the type of job dependency, and the optional list of product sub IDs.
+
+Like with source dependencies, the source file for a job dependency can be declared in a few different ways. UUIDs are the most stable way to track these dependencies.
+
+If a path to the source asset must be used, it can be an absolute path or relative, and can make use of wildcards. If a path needs to be used instead of a UUID, absolute paths can be more stable than relative paths here because this data is specific to the local machine, so pathing differences across machines won't matter. Relative paths cannot include directory change markers across root drives, so if a source asset is in a scan folder on one drive root (such as `C:/Projects/MyGame/Assets`) and a source dependency is in a folder on another drive root (such as `E:/Gems/SomeGem/Assets`), a relative path will not be usable.
+
+Source assets, used as the target of a job dependency, must be in scan directories. Read more about [scan directories here.](/docs/user-guide/assets/pipeline/scan-directories/)
+
 In some cases, a builder requires the output of another builder in order to process the asset it is working on.  If the other builder only outputs a single product, a regular job dependency works just fine.  Sometimes, however, the other builder outputs many products, some of which might not be updated every time the builder runs.  This can result in Asset Processor doing unnecessary work to rebuild dependent assets when their dependencies haven't actually changed.  For these cases, builders can specify the exact set of products they depend on by providing a list of SubIds in the AssetBuilderSDK::JobDependency::m_productSubIds field.  When a builder provides a list of specific products to depend on, Asset Processor will only trigger the dependency when the hash of the contents of any of the specified products changes.
 
 In some cases, a builder requires the output of another builder in order to process the asset it is working on.  If the other builder only outputs a single product, a regular job dependency works just fine.  Sometimes, however, the other builder outputs many products, some of which might not be updated every time the builder runs.  This can result in Asset Processor doing unnecessary work to rebuild dependent assets when their dependencies haven't actually changed.  For these cases, builders can specify the exact set of products they depend on by providing a list of SubIds in the AssetBuilderSDK::JobDependency::m_productSubIds field.  When a builder provides a list of specific products to depend on, Asset Processor will only trigger the dependency when the hash of the contents of any of the specified products changes.
 
 ## Product dependencies
 
-Product dependencies are a packaging and runtime concept. This means these dependencies are not used during processing of assets, but they are declared there.
+Product dependencies are a packaging and runtime concept, declared at process time. This means these dependencies are not used during processing of assets, but they are declared there.
 
 Product dependencies contain data on the relationships between product assets. Product dependencies are used during runtime loading and asset bundling.
 
 When a product asset is loaded at runtime, the product dependencies specify other product assets that must be loaded for this product asset to function. Similarly, when bundling assets, the product dependencies specify additional product assets required by the assets being bundled. An easy to understand example is a level prefab. All the meshes, shaders, materials, audio files, and scripts used by entities and prefabs that are placed in the level are dependencies of the level prefab. When you load or bundle a level prefab, the chain of asset dependencies specifies all the product assets required by the level prefab, as well as the product assets referenced by those dependencies, and so on, until all the product dependencies are met.
 
 Product dependencies can also be marked as required or optional. If a required product dependency is not available, the runtime load process or the bundling process fails. If an optional product dependency is not available, the runtime load process or bundling process can proceed.
+
+### Declaring product dependencies
+
+One of the fields on the `JobProduct` is `m_dependencies`, a vector of `ProductDependency` objects. When creating the `JobProduct` in the asset builder, this field can be populated with information about product dependencies the job product has.
 
 ## Asset identifiers
 
