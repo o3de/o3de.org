@@ -1,18 +1,15 @@
-
 ---
 title: "For the Love of the Game: In Search of Best-of-Breed 3D Creation Tools"
-date: 2022-09-16
+date: 2022-09-21
 slug: for-the-love-of-the-game
 author: Nicole Huesman
 blog_img: "/images/blog/announcement_thumbnail.jpg"
-blog_img: "/images/blog/announcement_thumbnail.jpg"
-
 ---
 ## For the Love of the Game: In Search of Best-of-Breed 3D Creation Tools
 
-Born out of a desire to make their own games, indie game developers Jacob Dodenhoff and Phoenix Cook forged [Chaotic Creations Interactive](https://www.chaoticcreationsinteractive.com/) (CCI), a **small game development studio** in the mid-west of the United States. Their studio reflects who they are and what they value: the players, and the commitments they make to them. Since the birth of CCI, they’ve been exploring game engines and they discovered the [Open 3D Engine](https://www.o3de.org/) in July 2021 when it was announced. In this blog, they share their experiences and offer insight to newcomers who may be interested in taking the Open 3D Engine for a spin. 
+Born out of a desire to make their own games, indie game developers Jacob Dodenhoff and Phoenix Cook forged [Chaotic Creations Interactive](https://www.chaoticcreationsinteractive.com/) (CCI), a **small game development studio** in the mid-west of the United States. Their studio reflects who they are and what they value: the players, and the commitments they make to them. Since the birth of CCI, they’ve been exploring game engines and they discovered the [Open 3D Engine](/) in July 2021 when it was announced. In this blog, they share their experiences and offer insight to newcomers who may be interested in taking the Open 3D Engine for a spin. 
 
-![CCI-indie-developers](/static/images/blog/CCI/CCI-blog-image.png)
+{{< image-width src="/images/blog/cci/cci-blog-image.png" width="100%" alt="CCI-indie-developers" >}}
 
 **_“First and foremost, our studio is focusing on crafting experiences that we enjoy as developers. In our commitment to creating games we enjoy, we believe our players will enjoy them too. Secondly, we're keeping our players in mind with everything we do.”_**
 
@@ -36,7 +33,7 @@ And then, you said you found it more intuitive to pick it up from scratch than y
 
 **Jacob:**  Yeah. We’d been using the Unreal Engine for prototyping, and we sat down a few months ago to look at licensing and all of the different aspects of it. We ended up creating a chart of many of the major engines, including O3DE and another open-source engine called [Flax](https://flaxengine.com/), and scoring them across a few different categories. It turns out, O3DE came out on top for us by almost 10 points above any of the other engines.
 
-Onboarding in O3DE, on a scale of 1-5, was a five because we found that the [documentation](https://www.o3de.org/docs/) was great, better than anything else we’d experienced. When using other engines, I couldn’t find the answers I was looking for in the documentation, so I’d try to find the answers in a YouTube video or a forum that explained what we were looking for. In O3DE, everything is explained in the documentation. We can also hop into [Discord](http://discord.com/invite/o3de) and talk with the people who are developing the engine and can give us the answers we’re looking for on the spot, maybe that day or the next day. So, the onboarding for O3DE, and the community, have been amazing.
+Onboarding in O3DE, on a scale of 1-5, was a five because we found that the [documentation](/docs/) was great, better than anything else we’d experienced. When using other engines, I couldn’t find the answers I was looking for in the documentation, so I’d try to find the answers in a YouTube video or a forum that explained what we were looking for. In O3DE, everything is explained in the documentation. We can also hop into [Discord](http://discord.com/invite/o3de) and talk with the people who are developing the engine and can give us the answers we’re looking for on the spot, maybe that day or the next day. So, the onboarding for O3DE, and the community, have been amazing.
 
 We plan to finish our prototype in Unreal Engine and then transfer it to O3DE.
 
@@ -76,11 +73,11 @@ It's really nice to know that if you need a feature, there may be somebody who's
 
 **To enable some capabilities in the Engine requires the user to change a few lines of code in the code file. How do you feel about the process of installing and/or adding gems, and how could it be improved?**
 
-**Jacob:**  While neither of us have direct, hands-on experience with adding gems and capabilities specifically in O3DE that aren’t built into the Engine, we've done similar things in other engines and programs, so going into a file and changing a few lines of code isn’t a problem. We’ve also read the documentation for how to enable capabilities in O3DE that aren’t already built in, such as [PopcornFX](https://www.popcornfx.com/plugin-o3de/) and [networking](https://docs.o3de.org/docs/user-guide/networking/), and it seems pretty straightforward and simple to do. It’s also pretty typical for programs and software that are relatively new and still being developed, so for us, that's not a problem. Integrating these capabilities into the Engine would obviously save time, but it's not a huge deal.
+**Jacob:**  While neither of us have direct, hands-on experience with adding gems and capabilities specifically in O3DE that aren’t built into the Engine, we've done similar things in other engines and programs, so going into a file and changing a few lines of code isn’t a problem. We’ve also read the documentation for how to enable capabilities in O3DE that aren’t already built in, such as [PopcornFX](https://www.popcornfx.com/plugin-o3de/) and [networking](/docs/user-guide/networking/), and it seems pretty straightforward and simple to do. It’s also pretty typical for programs and software that are relatively new and still being developed, so for us, that's not a problem. Integrating these capabilities into the Engine would obviously save time, but it's not a huge deal.
 
 **We’ve heard about some great upsides that O3DE offers. Is there anything you found that could be enhanced?**
 
-**Phoenix:**  I was working on some player stuff based on the [PhysX](https://www.o3de.org/docs/user-guide/interactivity/physics/) player controller in O3DE, and
+**Phoenix:**  I was working on some player stuff based on the [PhysX](/docs/user-guide/interactivity/physics/) player controller in O3DE, and
 
 I ran into some issues. The PhysX player controller is more cinematic than I would want—it’s not really directly physics-based, despite the name—and I wanted to do something more in that space, but couldn't really find the resources to do that.
 
@@ -92,7 +89,7 @@ I ran into some issues. The PhysX player controller is more cinematic than I wou
 
 **For newcomers who are getting started with O3DE, are there any suggestions or recommendations you might have for them?**
 
-**Jacob:**  My first recommendation would be to pull up the [documentation](https://www.o3de.org/docs/) and get started because, like we said, the onboarding is smooth and easy to understand. If you have questions, it's easy to go into [Discord](http://discord.com/invite/o3de) and ask.
+**Jacob:**  My first recommendation would be to pull up the [documentation](/docs/) and get started because, like we said, the onboarding is smooth and easy to understand. If you have questions, it's easy to go into [Discord](http://discord.com/invite/o3de) and ask.
 
 **Phoenix:** If you're looking at O3DE, my guess is that you're already familiar in some regards with other engines, and a lot of that carries over. In my experience, going between Unity and Unreal Engine is not smooth, but going from either Unity or Unreal Engine to O3DE is very, very smooth because there are a lot of shared philosophies between them.
 
