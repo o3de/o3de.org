@@ -25,7 +25,7 @@ The "o3de_" prefix will be reserved for O3DE engine processing logic.
 
 The ```o3de_default_material``` scene property was added to the Prefab gem in order to assign a material asset while assembling a default procedural prefab. The Prefab gem constructs a default prefab for a scene graph, it looks for the UDP ```o3de_default_material``` in a mesh data node to define an O3DE render material for that mesh group inside the prefab. This allows artists to assign O3DE render materials back in the DCC tool. Each time the source scene file is exported, this reference is maintained through the scene pipeline.
 
-![Blender with UDP metadata for material](/images/blog/udp-intro/blender_def_mat.png)
+{{< image-width src="/images/blog/udp-intro/blender_def_mat.png" width="100%" alt="Blender with UDP metadata for material" >}}
 
 ## What’s Next?
 
