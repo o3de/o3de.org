@@ -32,8 +32,6 @@ This will prevent SDK resources attempting to contact the AWS EC2 Instance Metad
 
 Requests to AWS EC2 IMDS will fail on non EC2 compute leading to delays and wasted network resources.
 
-You can [set environment variables](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html#envvars-set) locally in the session as follows:
-
 ```
 # macOS / Linux
 export AWS_EC2_METADATA_DISABLED=true
@@ -44,6 +42,10 @@ setx AWS_EC2_METADATA_DISABLED true
 # Windows (for just this session)
 set AWS_EC2_METADATA_DISABLED=true
 ```
+
+See the AWS guide on [How to set environment variables](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html#envvars-set) for more details.
+
+
 
 ## Project settings
 
