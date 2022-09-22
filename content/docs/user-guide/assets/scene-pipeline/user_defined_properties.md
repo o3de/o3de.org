@@ -15,7 +15,7 @@ The CustomPropertyData can be accessed by scene builders using either the Python
 
 ## Assigning Materials in Default Procedural Prefab using UDPs
 
-The default procedural prefab scene builder inside the Prefab game has an example of how UDP metadata can be used to customized the scene pipeline. The Prefab gem constructs a default prefab for a scene graph, it looks for the UDP ```o3de_default_material``` in a mesh data node to define an O3DE render material for that mesh group inside the prefab. This allows artists to assign O3DE render materials back in the DCC tool. Each time the source scene file (i.e. FBX) is exported, this reference is maintained through the scene pipeline.
+The default procedural prefab scene builder inside the Prefab game has an example of how UDP metadata can be used to customize the scene pipeline. The Prefab gem constructs a default prefab for a scene graph, it looks for the UDP ```o3de_default_material``` in a mesh data node to define an O3DE render material for that mesh group inside the prefab. This allows artists to assign O3DE render materials back in the DCC tool. Each time the source scene file (i.e. FBX) is exported, this reference is maintained through the scene pipeline.
 
 ## UDP Access in Scene Pipeline
 
