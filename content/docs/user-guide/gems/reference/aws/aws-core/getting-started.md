@@ -10,11 +10,9 @@ To get started using AWS Gems with AWS services in your O3DE project, complete t
 1. [Create an AWS account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) if you don't have one.
 
 1. Configure **AWS credentials** following the instructions in [Configuring AWS Credentials for O3DE](./configuring-credentials/).
-
     a. Confirm you have credentials using the command `aws configure list`.
 
 1. Install the [AWS Cloud Development Kit (CDK)](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html#getting_started_install).
-
     a. Confirm the CDK is setup using the command `cdk --version`.
 
 1. **Build** your O3DE project with the AWS Core Gem (and other AWS Gems you need) enabled.
@@ -26,6 +24,26 @@ To get started using AWS Gems with AWS services in your O3DE project, complete t
 1. Associate the resource mapping file with the project. See the next section entitled [Project Settings](#project-settings).
 
 You should now be able to utilize AWS functions in Lua script, Script Canvas, or C++ to communicate with your AWS resources. See [Scripting with AWS Core](./scripting/) for scripting examples.
+
+## Prevent calls to AWS EC2 Instance Metadate Service
+
+The Gem uses uses the [AWS C++ SDK](https://github.com/aws/aws-sdk-cpp) to call AWS resources. Its recommended that you turn off the [AWS_EC2_METADATA_DISABLED](https://github.com/aws/aws-sdk-cpp/blob/main/aws-cpp-sdk-core/source/client/ClientConfiguration.cpp#L104) environment variable. 
+This will prevent SDK resources attempting to contact the AWS EC2 Instance Metadate Service (IMDS), which may occur to retrieve configuration, region and credential information. 
+
+Requests to AWS EC2 IMDS will fail on non EC2 compute leading to delays and wasted network resources.
+
+You can [set environment variables](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html#envvars-set) locally in the session as follows:
+
+```
+# macOS / Linux
+export AWS_EC2_METADATA_DISABLED=true
+
+# Windows (for all sessions)
+setx AWS_EC2_METADATA_DISABLED true
+
+# Windows (for just this session)
+set AWS_EC2_METADATA_DISABLED=true
+```
 
 ## Project settings
 
