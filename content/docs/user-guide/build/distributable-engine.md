@@ -224,3 +224,21 @@ Engine developers will work on O3DE source code and create new distributable bui
 Project developers will work on project-specific source code or use O3DE creative tools to add project content. To enable their workflows, project developers are required to _only_ pull a project from its hosted location.
 
 Whenever working on their project, project developers should launch the tools that were checked in as the distibutable engine build. These tools are located in the project's `install\bin\Windows\profile\Default` subdirectory.
+
+### License file generation
+
+License attribution files can be generated during the project development process to properly attribute any code or packages that were imported (often called the NOTICES file). To scan project directories for licenses, project developers can run a script located in the engine's `scripts\license_scanner` subdirectory.
+
+In this example, with the engine, project, and `C:\o3de-source\3rdParty` as your 3rd Party packages folder, run the following script in the engine source folder
+   ```cmd
+   python\python.cmd scripts\license_scanner\license_scanner.py ^
+     --config-file scripts\license_scanner\scanner_config.json ^
+     --license-file-path build\windows_vs2019\NOTICES.txt ^
+     --package-file-path build\windows_vs2019\spdx-packages.json ^
+     --scan-path C:\o3de-source W:\MyProject C:\o3de-source\3rdParty
+   ```
+This will scan the engine, project, and `C:\o3de-source\3rdParty` folders for license files using a default configuration in the `scanner_config.json` file, then generate a `NOTICES.txt` in the build output folder. In addition, if a `PackageInfo.json` file is detected in `C:\o3de-source\3rdParty` for each package, the script will add its package license manifest to a summerized file called `spdx-packages.json`.
+
+{{< note >}}
+The scanner script will perform filename scans based on the configuration of the `scanner_config.json` file, but it is not guarenteed to find all license files, nor catch recurisve dependancies. To ensure there is sufficent attribution in your project, we recommend tools such as Scancode Toolkit: https://github.com/nexB/scancode-toolkit and Fossology https://www.fossology.org/ to further validate your dependancies.
+{{< /note >}}
