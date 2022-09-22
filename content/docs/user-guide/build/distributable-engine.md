@@ -237,7 +237,7 @@ In this example, with the engine, project, and `C:\o3de-source\3rdParty` as your
      --package-file-path build\windows_vs2019\spdx-packages.json ^
      --scan-path C:\o3de-source W:\MyProject C:\o3de-source\3rdParty
    ```
-This will scan the engine, project, and `C:\o3de-source\3rdParty` folders for license files using a default configuration in the `scanner_config.json` file, then generate a `NOTICES.txt` in the build output folder. In addition, if a `PackageInfo.json` file is detected in `C:\o3de-source\3rdParty` for each package, the script will add its package license manifest to a summerized file called `spdx-packages.json`.
+This will scan the engine, project, and `C:\o3de-source\3rdParty` folders for license files using a default configuration in the `scanner_config.json` file, then generate a `NOTICES.txt` in the build output folder. In addition, if a `PackageInfo.json` file is detected in `C:\o3de-source\3rdParty`, the script will scan the file and add a package license manifest for each package to a summary file called `spdx-packages.json`.
 
 {{< note >}}
 The scanner script will perform filename scans based on the configuration of the `scanner_config.json` file, but it is not guarenteed to find all license files, nor catch recurisve dependancies. To ensure there is sufficent attribution in your project, we recommend tools such as Scancode Toolkit: https://github.com/nexB/scancode-toolkit and Fossology https://www.fossology.org/ to further validate your dependancies.
