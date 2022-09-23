@@ -25,12 +25,12 @@ To get started using AWS Gems with AWS services in your O3DE project, complete t
 
 You should now be able to utilize AWS functions in Lua script, Script Canvas, or C++ to communicate with your AWS resources. See [Scripting with AWS Core](./scripting/) for scripting examples.
 
-## Prevent calls to AWS EC2 Instance Metadate Service
+## Prevent calls to Amazon EC2 Instance Metadate Service
 
-The Gem uses uses the [AWS C++ SDK](https://github.com/aws/aws-sdk-cpp) to call AWS resources. Its recommended that you turn off the [AWS_EC2_METADATA_DISABLED](https://github.com/aws/aws-sdk-cpp/blob/main/aws-cpp-sdk-core/source/client/ClientConfiguration.cpp#L104) environment variable. 
-This will prevent SDK resources attempting to contact the AWS EC2 Instance Metadate Service (IMDS), which may occur to retrieve configuration, region and credential information. 
+The Gem uses the [AWS C++ SDK](https://github.com/aws/aws-sdk-cpp) to call AWS resources. Its recommended that you turn off the [AWS_EC2_METADATA_DISABLED](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html) environment variable. 
+This will prevent SDK resources from attempting to contact the Amazon EC2 Instance Metadate Service (IMDS), which may occur to retrieve configuration, region and credential information. 
 
-Requests to AWS EC2 IMDS will fail on non EC2 compute leading to delays and wasted network resources.
+Requests to Amazon EC2 IMDS will fail on non Amazon EC2 compute leading to delays and wasted network resources.
 
 ```
 # macOS / Linux
@@ -42,10 +42,6 @@ setx AWS_EC2_METADATA_DISABLED true
 # Windows (for just this session)
 set AWS_EC2_METADATA_DISABLED=true
 ```
-
-See the AWS guide on [How to set environment variables](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html#envvars-set) for more details.
-
-
 
 ## Project settings
 
