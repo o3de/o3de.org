@@ -41,7 +41,7 @@ void AutomatedTestingSystemComponent::GetRequiredServices(AZ::ComponentDescripto
 
 The HttpRequestor Gem uses the [AWS C++ SDK](https://github.com/aws/aws-sdk-cpp) to provide the Http(s) client. You don't need to provide AWS credentials or account information to use this Gem.
 
-However, if you are not running on AWS EC2 compute its recommended that you turn off the [AWS_EC2_METADATA_DISABLED](https://github.com/aws/aws-sdk-cpp/blob/main/aws-cpp-sdk-core/source/client/ClientConfiguration.cpp#L104) environment variable. This will prevent any reach out the AWS EC2 Instance Metadate Service (IMDS), which may occur to retrieve configuration, region and credential information. Requests to EC2 IMDS will fail on non EC2 compute leading to delays and wasted network resources.
+However, if your project is not running on Amazon EC2 compute, it's recommended that you turn off the [AWS_EC2_METADATA_DISABLED](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html) environment variable. This will prevent any calls to the Amazon EC2 Instance Metadata Service (IMDS) from attempting to retrieve configuration, region, and credential information. Requests to IMDS will fail if you are not using EC2, leading to delays and wasted network resources.
 
 ```
 set AWS_EC2_METADATA_DISABLED=true
