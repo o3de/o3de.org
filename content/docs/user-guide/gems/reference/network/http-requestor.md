@@ -37,7 +37,7 @@ void AutomatedTestingSystemComponent::GetRequiredServices(AZ::ComponentDescripto
 }
 ```
 
-### Turn off AWS EC2 Instance Metadata Service calls
+### Turn off Amazon EC2 Instance Metadata Service calls
 
 The HttpRequestor Gem uses the [AWS C++ SDK](https://github.com/aws/aws-sdk-cpp) to provide the Http(s) client. You don't need to provide AWS credentials or account information to use this Gem.
 
