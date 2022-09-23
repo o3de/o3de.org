@@ -134,7 +134,7 @@ The `deploy` command displays progress information as your stack is deployed.
 | `cdk synth` | Emits the synthesized AWS CloudFormation template.    |
 | `cdk deploy` | Deploy this stack to your default AWS account/region. |
 | `cdk diff` | Compare deployed stack with current state.            |
-| `cdk docs` | Open CDK documentation.                               |
+| `cdk docs` | Open AWS CDK documentation.                           |
 
 ## Troubleshooting
 
