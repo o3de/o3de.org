@@ -10,7 +10,7 @@ The [AWS Cloud Development Kit](https://docs.aws.amazon.com/cdk/v2/guide/home.ht
 {{< note >}}
 The AWS Gems have been updated to support AWS CDK v2,the new long term AWS CDK version. AWS CDK v1 entered maintenance on June 1, 2022, and will now receive only critical bug fixes and security patches. 
 
-For those still using the AWS CDK v1, a legacy snapshot of the sample applications are available in a `cdkv1` folder inside each Gem. See the [CDK migration Guide](https://docs.aws.amazon.com/cdk/v2/guide/migrating-v2.html) for advice about how to migrate legacy CDK applications to the CDK v2. 
+For those still using the AWS CDK v1, a legacy snapshot of the sample applications are available in a `cdkv1` folder inside each Gem. See the [AWS CDK Migration Guide](https://docs.aws.amazon.com/cdk/v2/guide/migrating-v2.html) for advice about how to migrate legacy AWS CDK applications to the AWS CDK v2. 
 {{< /note >}}
 
 The AWS Core Gem includes an optional Python AWS CDK application that provides two stacks:
