@@ -39,7 +39,7 @@ void AutomatedTestingSystemComponent::GetRequiredServices(AZ::ComponentDescripto
 
 ### Turn off AWS EC2 Instance Metadata Service calls
 
-The HttpRequestor gem uses the [AWS C++ SDK](https://github.com/aws/aws-sdk-cpp) under-the-hood to provide the Http(s) client. The code is configured to not require any AWS credentials or account information.
+The HttpRequestor Gem uses the [AWS C++ SDK](https://github.com/aws/aws-sdk-cpp) to provide the Http(s) client. You don't need to provide AWS credentials or account information to use this Gem.
 
 However, if you are not running on AWS EC2 compute its recommended that you turn off the [AWS_EC2_METADATA_DISABLED](https://github.com/aws/aws-sdk-cpp/blob/main/aws-cpp-sdk-core/source/client/ClientConfiguration.cpp#L104) environment variable. This will prevent any reach out the AWS EC2 Instance Metadate Service (IMDS), which may occur to retrieve configuration, region and credential information. Requests to EC2 IMDS will fail on non EC2 compute leading to delays and wasted network resources.
 
