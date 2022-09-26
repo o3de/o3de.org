@@ -10,6 +10,7 @@ To get started using AWS Gems with AWS services in your O3DE project, complete t
 1. [Create an AWS account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) if you don't have one.
 
 1. Configure **AWS credentials** following the instructions in [Configuring AWS Credentials for O3DE](./configuring-credentials/).
+
     a. Confirm you have credentials using the command `aws configure list`.
 
 1. Install the [AWS Cloud Development Kit (CDK)](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html#getting_started_install).
