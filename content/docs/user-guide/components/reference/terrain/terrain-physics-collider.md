@@ -25,9 +25,10 @@ You can assign which materials are assigned to surfaces, by selecting a surface 
 
 | Property | Description | Values | Default |
 |-|-|-|-|
+| **Default Surface Physics Material** | Selects a physics material to be used by unmapped surfaces by default. | Material: Physics Material | (default) |
 | **Surface to Material Mappings** | An array of surface tags and physics materials to map together. |  |  |
-| **Surface Tag** | Selects a surface tag to map to a phsyics material. | Surface:  Surface Tag | None |
-| **Material ID** | Selects a physics material to apply to the surface. | Material: Physics Material | None |
+| **Surface Tag** | Selects a surface tag to map to a phsyics material. | Surface:  Surface Tag | (unassigned) |
+| **Material Asset** | Selects a physics material to apply to the surface. | Material: Physics Material | (default) |
 
 ## HeightfieldProviderRequestsBus
 
