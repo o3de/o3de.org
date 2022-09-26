@@ -29,8 +29,8 @@ You should now be able to utilize AWS functions in Lua script, Script Canvas, or
 
 ## Prevent calls to Amazon EC2 Instance Metadata Service
 
-The Gem uses the [AWS C++ SDK](https://github.com/aws/aws-sdk-cpp) to call AWS resources. Its recommended that you turn off the [AWS_EC2_METADATA_DISABLED](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html) environment variable. 
-This will prevent SDK resources from attempting to contact the Amazon EC2 Instance Metadate Service (IMDS), which may occur to retrieve configuration, region and credential information. 
+AWS Gems use the [AWS C++ SDK](https://github.com/aws/aws-sdk-cpp) to call AWS resources. Unless your project is running on Amazon EC2 compute, it's recommended that you turn off the [AWS_EC2_METADATA_DISABLED](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html) environment variable. 
+Turning this setting off will prevent SDK resources from needlessly attempting to contact the Amazon EC2 Instance Metadata Service (IMDS) for configuration, region, and credential information, which can result in delays and wasted network resources.
 
 Requests to Amazon EC2 IMDS will fail on non Amazon EC2 compute leading to delays and wasted network resources.
 
