@@ -11,7 +11,7 @@ The HTTPRequestor Gem provides functionality to make asynchronous HTTP/HTTPS req
 This feature is currently supported only on Windows, it could be expanded to other platforms.
 {{< /note >}}
 
-## Getting Started
+## Getting started
 
 To use the HttpRequestor Gem, it must be enabled in the project. For more information refer to [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems/).
 
@@ -24,6 +24,29 @@ BUILD_DEPENDENCIES
             Gem::HttpRequestor
             3rdParty::AWSNativeSDK::Core
 ```
+
+### Create a dependency on the Gem
+
+If you need to ensure the HttpRequestor Gem is enabled before its use in a component, add a requirement in your component's `GetRequiredServices` method. For example:
+
+```cpp
+void AutomatedTestingSystemComponent::GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& required)
+{
+   ...
+   required.push_back(AZ_CRC_CE("HttpRequestorService"));
+}
+```
+
+### Turn off Amazon EC2 Instance Metadata Service calls
+
+The HttpRequestor Gem uses the [AWS C++ SDK](https://github.com/aws/aws-sdk-cpp) to provide the Http(s) client. You don't need to provide AWS credentials or account information to use this Gem.
+
+However, if your project is not running on Amazon EC2 compute, it's recommended that you turn off the [AWS_EC2_METADATA_DISABLED](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html) environment variable. This will prevent any calls to the Amazon EC2 Instance Metadata Service (IMDS) from attempting to retrieve configuration, region, and credential information. Requests to IMDS will fail if you are not using EC2, leading to delays and wasted network resources.
+
+```
+set AWS_EC2_METADATA_DISABLED=true
+```
+
 
 ## C\+\+ API
 
@@ -151,11 +174,11 @@ HttpRequestor::HttpRequestorRequestBus::Broadcast(
     {
         if (responseCode == Aws::Http::HttpResponseCode::OK)
         {
-            AZ_Printf("HttpRequest Demo",  "Call succeed with %s %d", data.WriteCompact().c_str(), responseCode);
+            AZ_Printf("HttpRequestExample",  "Call succeed with %s %d", data.WriteCompact().c_str(), responseCode);
         }
         else
         {
-            AZ_Printf("HttpRequestDemo", "Request Failed!");
+            AZ_Printf("HttpRequestExample", "Request Failed!");
         }
     });
 ```
