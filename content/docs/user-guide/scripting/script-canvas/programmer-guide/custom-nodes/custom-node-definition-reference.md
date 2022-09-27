@@ -1,13 +1,11 @@
 ---
-linktitle: Script Canvas Node Definition Reference
+linktitle: Node Definition Reference
 title: Script Canvas Node Definition Reference
-description: Reference guide on all the available parameters when defining Script Canvas nodes
-weight: 200
+description: Reference guide on all the XML elements available when defining node definition files that create Script Canvas nodes using autogen.
+weight: 250
 ---
 
-## Introduction
-
-Script Canvas Node Definition files are XML files that AzAutoGen uses to generate the necessary C++ code for registering nodes, defining their topology and reducing the amount of "boilerplate" code that would otherwise be necessary. This reference guide covers all the available XML tags and attributesa needed to create Script Canvas nodes.
+_Script Canvas Node Definition files_ are XML files that [AzAutoGen](/docs/user-guide/programming/autogen/) uses to generate the necessary C++ code for registering nodes, defining their topology, and reducing the amount of "boilerplate" code that would otherwise be necessary. This reference guide covers all the available XML tags and attributes needed to create Script Canvas nodes.
 
 ---
 
@@ -18,21 +16,21 @@ The __ScriptCanvas__ tag is the top-level description of the node. It is used to
 | __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
 | ---------- | ------------| ------------| ------------|
 | __Include__   | Required |  The name of the Script Canvas Node  | `Include="Include/ScriptCanvas/Internal/Nodeables/BaseTimer.h"` |
-| __xmlns:xsi__ | Recommended | Indicates that the elements and data types used in the schema come from the `"http://www.w3.org/2001/XMLSchema"` namespace. It also specifies that the elements and data types that come from it should be prefixed with xs: | `xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"` |
+| __xmlns:xsi__ | Recommended | Indicates that the elements and data types used in the schema come from the `"http://www.w3.org/2001/XMLSchema"` namespace. It also specifies that the elements and data types that come from it should be prefixed with `xsi:`. | `xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"` |
 
 ----
 
 ### Class
 
-The __Class__ element is used to define the Node's O3DE configuration, many of these attributes configure O3DE's serialization properties.
+The __Class__ tag is used to define the node's appearance within O3DE. Many of these attributes control the node's serialization..
 
 | __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
 | ---------- | ------------| ------------|------------|
 | __Name__   | Required |  The name of the Script Canvas Node  | `Name="My Node"` |
-| __QualifiedName__  | Required |  Fully qualified name, includes all namespaces, (e.g. ScriptCanvas::Nodes::MyNode) | `QualifiedName="ScriptCanvas::Nodes::MyNode"` |
+| __QualifiedName__  | Required |  Fully qualified name, includes all namespaces. For example, `ScriptCanvas::Nodes::MyNode`. | `QualifiedName="ScriptCanvas::Nodes::MyNode"` |
 | __Description__ | Recommended | Describes the node and its functionality, this is displayed as a tooltip on the node | `Description="An example node"` |
-| __Category__ | Recommended | Category will define where this node will be places on the Node Palette, you can nest categories by separating with the / character (e.g. "My Nodes/Math") | `Category="Math/Linear Algebra"` |
-| __PreferredClassName__ | Optional | In some cases it may be desirable to override the node's class name in the editor, this field does not change functionality, only the node's class name used in the __EditContext__ | `PreferredClassName="A Different Name"`|
+| __Category__ | Recommended | Category defines where this node will appear on the Node Palette. You can nest categories by separating with the `/` character. | `Category="Math/Linear Algebra"` |
+| __PreferredClassName__ | Optional | In some cases it may be desirable to override the node's class name in the Script Canvas Editor. This field doesn't change the node's functionality, only the class name used in the __EditContext__. | `PreferredClassName="A Different Name"`|
 | __Uuid__ | Optional | Allows you to provide a specific Universal Identifier, this is generally generated but in some situations it may be desirable to provide a specific UUID.  | `Uuid="{EE36A690-7C33-445F-B9E8-BD045D6ACC1D}"` |
 | __Icon__ | Unused | Currently unused, would provide a path for displaying a custom icon associated with a node | `Icon="Icons/ScriptCanvas/Checkpoint.png"` |
 | __Version__ | Optional | As with any serialized class in O3DE, nodes may provide a version, this creates a mechanism for addressing code changes that may invalidate data | `Version="2"` |
@@ -41,9 +39,9 @@ The __Class__ element is used to define the Node's O3DE configuration, many of t
 | __Deprecated__ | Optional | Marks this node as deprecated, deprecated nodes will not be displayed in the Node Palette, but may still appear in existing Script Canvas graphs | `Deprecated="This node has been deprecated"`|
 | __DeprecationUUID__ | Optional | When specified, this UUID is used to replace this deprecated node with the node of the provided UUID, this allows graphs to be updated automatically | `DeprecationUUID="{D3629902-02E9-AE59-0424-F366D342B433}"` |
 | __Base__ | Optional | In some cases it may be desireable to specify the base class, for example when a node derives from a different node | `Base="ScriptCanvas::Nodes::Internal::BaseTimerNode"` |
-| __GraphEntryPoint__ | Optional | When True, this node may be used by Script Canvas as the place where execution will begin | `GraphEntryPoint="True"` |
-| __EditAttributes__ | Optional | Allows the ability to provide __EditContext__ attributes in the node's serialization, use the @ character to separate the key/value and separate multiple attributes with a semi colon; | `EditAttributes="AZ::Script::Attributes::ExcludeFrom@AZ::Script::Attributes::ExcludeFlags::All;` `ScriptCanvas::Attributes::Node::TitlePaletteOverride@StringNodeTitlePalette"` |
-| __DynamicSlotOrdering__ | Optional | Should be used when the order of slots may change at edit time | `DynamicSlotOrdering="True"` |
+| __GraphEntryPoint__ | Optional | When enabled, Script Canvas may use this node as the entry point to begin running. | `GraphEntryPoint="True"` |
+| __EditAttributes__ | Optional | Provides __EditContext__ attributes in the node's serialization. Use the `@` character to separate the key/value. Separate multiple attributes with a semi colon (`;`). | `EditAttributes="AZ::Script::Attributes::ExcludeFrom@AZ::Script::Attributes::ExcludeFlags::All;` `ScriptCanvas::Attributes::Node::TitlePaletteOverride@StringNodeTitlePalette"` |
+| __DynamicSlotOrdering__ | Optional | Enable this when the order of slots may change at edit time. By default, this is disabled. | `DynamicSlotOrdering="True"` |
 ----
          
 
@@ -60,12 +58,12 @@ The __Class__ element is used to define the Node's O3DE configuration, many of t
         Version="2"
         GraphEntryPoint="True"
         Description="Starts executing the graph when the entity that owns the graph is fully activated.">
-
-</Class>
+    </Class>
+</ScriptCanvas>
 ```
 
 
-## Execution
+## Execution slot elements
 
 ### <a name="input"></a>Input
 
@@ -93,7 +91,7 @@ The __Output__ tag is used to configure execution exit slots on a node. Visually
 | __Name__ | Required | The name for this input slot | `Name="My Node"` |
 | __Description__ | Optional | Describes this input slot, it is displayed as a tooltip in the editor | `Description="Useful node"`|
 | __DisplayGroup__ | Optional | Allows slots to be grouped visually | `DisplayGroup="Tests"` |
-| __Latent__| Optional | This only applies if the __Output__ attribute is provided, it signals that the __Output__ slot may not execute immediately and may take more than one frame | `Output="Done" Latent="true"` |
+| __Latent__| Optional | This only applies if the __Input__ tag's __Output__ attribute is provided. It signals that the __Output__ slot may not execute immediately and may take more than one frame. | `Output="Done" Latent="true"` |
 ----
 
 ### Examples
@@ -103,7 +101,7 @@ The __Output__ tag is used to configure execution exit slots on a node. Visually
 <Input Name="Stop " Output="Stopped" Latent="true" Description="Use this to stop this operation"/>
 ```
 
-## Data
+## Data slot elements
 
 ### Parameter
 
@@ -114,7 +112,7 @@ The __Parameter__ tag can be specified within the __Input__ tag, it is used to d
 | __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
 | ---------- | ------------| ------------| ------------| 
 | __Name__ | Required | The name for this data input slot | `Name="Operand A"` |
-| __Type__ | Required | This is the C++ type of the property. It must be a type exposed to the O3DE serialization context. If the type contains special characters (e.g. `AZStd::vector<int>`) you must use the HTML Entity Codes (e.g. `AZStd::vector&lt;int&gt;`) | `Type="float"` |
+| __Type__ | Required | This is the C++ type of the property. It must be a type that's exposed to the O3DE serialization context. If the type contains special characters, you must use the HTML Entity Codes (for example, update `AZStd::vector<int>` to `AZStd::vector&lt;int&gt;`). | `Type="float"` |
 | __Description__ | Optional | Describes this data input slot, it is displayed as a tooltip when hovering over the slot | `Description="Result of this mathematical operation"`|
 
 ### Examples
@@ -131,8 +129,8 @@ The __Parameter__ tag can be specified within the __Input__ tag, it is used to d
 
 | __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
 | ---------- | ------------| ------------| ------------| 
-| __Name__ | Required | The name of the property, this is the name that will of the slot on the node and also the name of the property in C++. The name may be overriden using  [PropertyData](#propertydata) | `Name="m_timeUnit"` |
-| __Type__ | Required | This is the C++ type of the property. It must be a type exposed to the O3DE serialization context. If the type contains special characters (e.g. `AZStd::vector<int>`) you must use the HTML Entity Codes (e.g. `AZStd::vector&lt;int&gt;`) | `Type="float"` |
+| __Name__ | Required | The name of the property. This is the name that will appear in the slot on the node, and is also the name of the property in C++. The name may be overridden using [PropertyData](#propertydata). | `Name="m_timeUnit"` |
+| __Type__ | Required | This is the C++ type of the property. It must be a type that's exposed to the O3DE serialization context. If the type contains special characters, you must use the HTML Entity Codes (for example, update `AZStd::vector<int>` to `AZStd::vector&lt;int&gt;`). | `Type="float"` |
 | __DefaultValue__ | Optional | Allows you to provide the default value for the property | `DefaultValue="1000.0"`|
 | __UIHandler__ | Optional | Allows the user to override the property's default UI Handler in the Node Inspector | `UIHandler="AZ::Edit::UIHandlers::ComboBox"`|
 | __DisplayGroup__ | Optional | Allows slots to be grouped visually | `DisplayGroup="Tests"` |
@@ -180,7 +178,7 @@ __Parameter__ is used by the [Input](#input) and [Output](#output) elements, the
 | __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
 | ---------- | ------------| ------------| ------------| 
 | __Name__ | | | | 
-| __Type__ | Required | This is the C++ type of the property. It must be a type exposed to the O3DE serialization context. If the type contains special characters (e.g. `AZStd::vector<int>`) you must use the HTML Entity Codes (e.g. `AZStd::vector&lt;int&gt;`) | `Type="float"` |
+| __Type__ | Required | This is the C++ type of the property. It must be a type that's exposed to the O3DE serialization context. If the type contains special characters, you must use the HTML Entity Codes (for example, update `AZStd::vector<int>` to `AZStd::vector&lt;int&gt;`). | `Type="float"` |
 | __Description__ | Optional | Displayed as a tooltip when hovering over the slot | `Description="The radius of the circle"`|
 | __DefaultValue__ | Optional | Allows you to provide the default value for the property | `DefaultValue="1000.0"`|
 | __DisplayGroup__ | Optional | Allows slots to be grouped visually | `DisplayGroup="Tests"` |
@@ -188,12 +186,12 @@ __Parameter__ is used by the [Input](#input) and [Output](#output) elements, the
 
 ### Return
 
-__Return__ is used by the [Input](#input) element, represents and output data slots on the node. You can think of it as the return value in a function (i.e. `int Foo() { return 42; }`)
+__Return__ is used by the [Input](#input) tag, represents and output data slots on the node. You can think of it as the return value in a function, such as `int Foo() { return 42; }`.
 
 | __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
 | ---------- | ------------| ------------| ------------| 
 | __Name__ | Required | The name will be used as the data output slot's name | `Name="Return Value"` | 
-| __Type__ | Required | This is the C++ type of the property. It must be a type exposed to the O3DE serialization context. If the type contains special characters (e.g. `AZStd::vector<int>`) you must use the HTML Entity Codes (e.g. `AZStd::vector&lt;int&gt;`) | `Type="float"` |
+| __Type__ | Required | This is the C++ type of the property. It must be a type that's exposed to the O3DE serialization context. If the type contains special characters, you must use the HTML Entity Codes (for example, update `AZStd::vector<int>` to `AZStd::vector&lt;int&gt;`). | `Type="float"` |
 | __Description__ | Optional | Displayed as a tooltip when hovering over the slot | `Description="The radius of the circle"`|
 | __DefaultValue__ | Optional | Allows you to provide the default value for the property | `DefaultValue="1000.0"`|
 | __DisplayGroup__ | Optional | Allows slots to be grouped visually | `DisplayGroup="Tests"` |
@@ -239,9 +237,13 @@ void CreateSpawnTicketNodeable::CreateTicket(const AzFramework::Scripts::Spawnab
 ```
 ----
 
-## Functions
+## Free function elements
 
-Functions are a way to expose C++ functions directly into the Behavior Context. This results in a way quick and easy way to create libraries of functions that are available for use in Script Canvas.
+[Script Canvas Free Function Nodes](./custom-free-function-nodes) expose C++ functions directly into the Behavior Context. This provides a quick and easy way to create libraries of functions that are available for use in Script Canvas.
+
+Use the following elements when defining Free Function Nodes:
+
+### Function
 
 | __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
 | ---------- | ------------| ------------| ------------| 
@@ -284,17 +286,16 @@ __NOTE:__ There may only be 2 __Out__ elements for branching functions, if more 
     <Out Name="Is Negative"/>
 </Function>
 ```
-----
 
-## Library
+### Library
 
-Library is used to create a collection of functions
+Create a collection of functions using the `Library` element.
 
 | __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
 | ---------- | ------------| ------------| ------------| 
 | __Include__ | Required | The relative path to the C++ include file that will contain the library function declarations | `Include="Include/ScriptCanvas/Libraries/Math/Color.h"` |
 | __Namespace__ | Required | The namespace that holds the C++ functions in this library | `Namespace="ScriptCanvas::ColorFunctions"` |
-| __Category__ | Recommended | Category will define where this node will be places on the Node Palette, you can nest categories by separating with the / character (e.g. "My Nodes/Math") | `Category="Math/Color"` |
+| __Category__ | Recommended | Category defines where this node will appear in the Node Palette. You can nest categories by separating with the `/` character. | `Category="Math/Color"` |
 
 
 ```xml
@@ -310,9 +311,9 @@ Library is used to create a collection of functions
 
 ## <a href="#grammar"></a> Grammar
 
-The Script Canvas Grammar nodes are nodes that have a direct translation into the backend's execution format, currently this is the Lua language. It is not generally required to create new grammar nodes if the Script Canvas Nodeable format is sufficient, but in some situations it may be desired to extend the Script Canvas grammar.
+Grammar nodes are nodes that have a direct translation into the backend's execution format, which is Lua. You do not need to create new grammar nodes if the Script Canvas Nodeable format is sufficient. However, in some situations it might be desirable to extend the Script Canvas grammar.
 
-There are many shared elements and attributes between the Grammar nodes and the node definitions, this part of the guide will cover the differences.
+There are many shared elements and attributes between the grammar nodes and the node definitions. This section will cover the differences.
 
 ### In
 
@@ -334,7 +335,7 @@ Specifies an execution exit slot
 
 ### SerializedProperty
 
-A C++ member variable that needs to be serializEd
+A C++ member variable that needs to be serialized
 
 | __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
 | ---------- | ------------| ------------| ------------| 
@@ -362,7 +363,7 @@ Allows providing __EditContext__ attributes to an existing __Property__ or __Ser
 
 ### EditAttribute
 
-__EditProperty__ may also use [EditAttribute](#editattribute)
+__EditProperty__ may also use [EditAttribute](#editattribute) data.
 
 ### DynamicDataSlot
 
