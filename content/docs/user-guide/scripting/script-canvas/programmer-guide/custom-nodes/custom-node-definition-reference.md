@@ -372,7 +372,7 @@ __EditProperty__ may also use [EditAttribute](#editattribute) data.
 | __Name__ | Required | The name of the data slot | `Name="Format"` |
 | __Description__ | Optional | Displayed as a tooltip when hovering over the slot | `Description="The radius of the circle"`|
 | __ConnectionType__ | Required | `ScriptCanvas::ConnectionType::Input` or `ScriptCanvas::ConnectionType::Output` | `ConnectionType="ScriptCanvas::ConnectionType::Input"` |
-| DynamicType | Required | `Value`, `Container`, or `Any` | `DynamicType="ScriptCanvas::DynamicDataType::Container"` | 
+| __DynamicType__ | Required | `Value`, `Container`, or `Any` | `DynamicType="ScriptCanvas::DynamicDataType::Container"` | 
 
 
 ```xml
