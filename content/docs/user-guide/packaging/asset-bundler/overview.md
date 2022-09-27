@@ -13,7 +13,6 @@ The Asset Bundler is a command-line tool, `AssetBundlerBatch.exe`, and a set of 
 
 To use the Asset Bundler, your game project must meet the following criteria:
 + The assets that you are bundling have been processed by [Asset Processor](/docs/user-guide/assets/asset-processor/).
-+ You have Visual Studio 2019 (any edition) installed and configured for C++ development.
 
 ## Why use the Asset Bundler? 
 

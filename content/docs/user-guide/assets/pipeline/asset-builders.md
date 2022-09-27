@@ -48,7 +48,7 @@ You must start Asset Processor before you can enter a -debug command for AssetBu
 
 To debug with Asset Builder:
 * Use the instructions for setting Asset Processor to just use a single Asset Builder processor: 
-* Navigate to the build folder directory, for example `build\windows_vs2019\bin\profile`
+* Navigate to the build folder directory, for example `build\windows\bin\profile`
 * In a command line prompt, enter the following command to get a list of possible options: `AssetBuilder -help`
 * Or use the settings below to aid with debugging the AssetBuilder, for example `AssetBuilder.exe --debug C:\o3de\o3de\Assets\Editor\Materials\ShaderList.xml --platform pc --tags dx12 --project-name AutomatedTesting --project-cache-path C:\o3de\o3de\AutomatedTesting\Cache`
 

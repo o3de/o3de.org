@@ -36,7 +36,7 @@ To enable the NVIDIA Cloth Gem, do the following:
 1. Configure the build:
 
    ```
-   cmake -B <CMake build dir> -S . -G "Visual Studio 16 2019" 
+   cmake -B <CMake build dir> -S . -G "Visual Studio 16" 
    ```
 
 1. Build your project:

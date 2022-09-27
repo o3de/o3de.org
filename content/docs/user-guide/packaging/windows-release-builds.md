@@ -92,7 +92,7 @@ To process your project's assets, do one of the following:
 
 - **Run Asset Processor.** Do this if you already built Asset Processor and prefer to use a GUI.
 
-    1. Run `AssetProcessor.exe` from the `<engine>/build/windows_vs2019/bin/profile` directory.
+    1. Run `AssetProcessor.exe` from the `<engine>/build/windows/bin/profile` directory.
 
         {{< image-width "/images/user-guide/packaging/windows-release-build/asset-processor.png" "700" "An image of O3DE Asset Processor." >}}
 
@@ -100,7 +100,7 @@ To process your project's assets, do one of the following:
 
 - **Run Asset Processor Batch.** Do this if you already built Asset Processor and prefer to use a CLI.
 
-    1. Run `AssetProcessorBatch.exe` from the `<engine>\build\windows_vs2019\bin\profile` directory.
+    1. Run `AssetProcessorBatch.exe` from the `<engine>\build\windows\bin\profile` directory.
 
         {{< image-width "/images/user-guide/packaging/windows-release-build/asset-processor-batch.png" "700" "An image of O3DE Asset Processor Batch." >}}
 
@@ -111,7 +111,7 @@ To process your project's assets, do one of the following:
     1. Use **CMake** to invoke Visual Studio to build the Asset Processor tools and their dependencies. Specify the `MyProject.Assets` target.
 
         ```cmd
-        cmake --build build\windows_vs2019 --target MyProject.Assets --config profile -- -m
+        cmake --build build\windows --target MyProject.Assets --config profile -- -m
         ```
 
         First, this command builds the Asset Processor tools. Then, it runs Asset Processor Batch and processes the assets. You don't need to rerun Asset Processor or Asset Processor Batch unless you make changes in your project.
@@ -139,7 +139,7 @@ The final output of a monolithic build might contain some `.dll` files. This can
 
 In this step, you use CMake to build either a non-monolithic or a monolithic project for release. This handles several tasks:
 
-1. Creates an *install directory* that contains the project game release layout. By default, the install directory is located in your project's directory (for example, `C:\MyProject\install`). Alternatively, you can set the install directory to another location by setting `CMAKE_INSTALL_PREFIX` in the `CMakeCache.txt` file in the `<project>\build\<build>` directory (for example, `C:\MyProject\build\windows_vs2019\CMakeCache.txt`).
+1. Creates an *install directory* that contains the project game release layout. By default, the install directory is located in your project's directory (for example, `C:\MyProject\install`). Alternatively, you can set the install directory to another location by setting `CMAKE_INSTALL_PREFIX` in the `CMakeCache.txt` file in the `<project>\build\<build>` directory (for example, `C:\MyProject\build\windows\CMakeCache.txt`).
 
 1. Bundles your game content by packaging all of the product assets in the `<project>\Cache\pc` directory into an `engine.pak` file.
 
@@ -162,7 +162,7 @@ To build your non-monolithic project for release, use CMake to invoke Visual Stu
 
 ```cmd
 cd C:\MyProject
-cmake --build build\windows_vs2019 --target INSTALL --config release 
+cmake --build build\windows --target INSTALL --config release 
 ```
 
 You can specify a particular non-monolithic build by appending the option `-DLY_MONOLITHIC_GAME=0`. This command generates O3DE tools (such as Editor, Asset Processor, and Game Launcher) and dependent `.dll` files. It also bundles your project's product assets that are located in `<project>\Cache\pc` into an `engine.pak` file.
@@ -212,14 +212,14 @@ A pre-built SDK engine supports non-monolithic projects by default. As detailed 
 
     ```cmd
     cd C:\o3de
-    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=C:\o3de-install -DLY_PROJECTS=C:\o3de-projects\MyProject
+    cmake -B build/windows -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=C:\o3de-install -DLY_PROJECTS=C:\o3de-projects\MyProject
     ```
 
 1. In your source engine, use CMake to invoke Visual Studio to append non-monolithic release artifacts to the pre-built SDK layout.
 
     ```cmd
     cd C:\o3de
-    cmake --build build\windows_vs2019 --target INSTALL --config release
+    cmake --build build/windows --target INSTALL --config release
     ```
 
     You can specify a particular non-monolithic build by appending the option `-DLY_MONOLITHIC_GAME=0`. This command generates O3DE tools (such as Editor, Asset Processor, and Game Launcher) and dependent `.dll` files. It also bundles your project's product assets that are located in `<project>\Cache\pc` into an `engine.pak` file.

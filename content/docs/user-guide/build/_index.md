@@ -11,8 +11,8 @@ To support multiple native build toolchains, **Open 3D Engine** (O3DE) uses the 
 
 {{< tabs >}}
 {{< tab name="Windows" codelang="cmd">}}cd <project-directory>
-cmake -B build/windows_vs2019 -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=<absolute-path-to-packages>
-cmake --build build/windows_vs2019 --target <ProjectName>.GameLauncher Editor --config profile -- -m
+cmake -B build/windows -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=<absolute-path-to-packages>
+cmake --build build/windows --target <ProjectName>.GameLauncher Editor --config profile -- -m
 {{< /tab >}}
 {{< tab name="Linux" codelang="bash">}}cd <project-directory>
 cmake -B build/linux -S . -G "Ninja Multi-Config" -DLY_3RDPARTY_PATH=<absolute-path-to-packages>
