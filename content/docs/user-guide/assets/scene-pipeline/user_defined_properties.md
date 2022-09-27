@@ -1,5 +1,5 @@
 ---
-title: "Scene API: User Defined Properties"
+title: "User Defined Properties"
 date: 2022-03-08
 slug: scene-api-udp
 author: Allen Jackson
@@ -15,33 +15,7 @@ The CustomPropertyData can be accessed by scene builders using either the Python
 
 ## Assigning Materials in Default Procedural Prefab using UDPs
 
-The default procedural prefab scene builder inside the Prefab game has an example of how UDP metadata can be used to customized the scene pipeline. The Prefab gem constructs a default prefab for a scene graph, it looks for the UDP ```o3de.default.material``` in a mesh data node to define an O3DE render material for that mesh group inside the prefab. This allows artists to assign O3DE render materials back in the DCC tool. Each time the source scene file (i.e. FBX) is exported, this reference is maintained through the scene pipeline.
-
-## Future Use Cases of UDP metadata
-
-There are many use cases for UDP metadata in both the O3DE engine and for content teams in the future. For any soft naming rule such as naming nodes with a ```_lod0``` to indicate level of detail (LOD), a user defined property key can be used instead.
-
-These are a few features that will be managed using user defined properties in the future.
-
-### Level of Detail
-
-Instead of using a soft naming format to discover LODs like ```lod_<n>```, an artist will be able to add a property named ```o3de.default.lod``` and assign it a number from 0 (zero – highest level of detail) to 4 (four – lowest level of detail) to a mesh node. This will make it possible to group mesh nodes per LOD in the DCC tool.
-
-### Mesh Tangent Modifier
-
-The content creator will be able to assign the tangent modifiers (such as the MikkT algorithm) that are applied per mesh node when the mesh is imported into the scene pipeline.
-
-### PhysX Collision Meshes
-
-PhysX collider product assets are used to simulate hit detection and triggers for a group of mesh nodes. Instead of using a soft naming rule with ```_phys``` to indicate the mesh node is a physics mesh, a new property name ```o3de.default.physics.collision``` will be reserved so that the default construction of PhysX mesh selections can be authored in the DCC tool. The PhysX scene builder can be extended further to take in other physics related data such as ```o3de.default.physics.name``` to name the PhysX group, ```o3de.default.physics.material``` to assign the physics material for the group, and so on.
-
-### Coordinate System
-
-Each mesh group can be assigned a coordinate system modifier to attach to a node. It can also be used to rotate, translate, and scale the mesh group. For example, ```o3de.default.coordinate.scale = 1.25``` will assign a float value of “1.25” to the property key ```o3de.default.coordinate.scale``` to uniformly scale the mesh group up by 25%.
-
-### Advanced Custom Component
-
-Presently the default procedural prefab will assemble an entity with a mesh component and an optional material component for each mesh data node if finds in the scene graph. In the future we plan to add a ```o3de.entity.component``` property to take in a string value. This will be used in conjunction with an event bus to allow custom scene builders to add a custom component with the entity as well. This will allow content teams to add editor components that describe custom project data such as hit points or trigger event name or anything that a game team wants to assign with a mesh node from a DCC tool.
+The default procedural prefab scene builder inside the Prefab game has an example of how UDP metadata can be used to customize the scene pipeline. The Prefab gem constructs a default prefab for a scene graph, it looks for the UDP ```o3de_default_material``` in a mesh data node to define an O3DE render material for that mesh group inside the prefab. This allows artists to assign O3DE render materials back in the DCC tool. Each time the source scene file (i.e. FBX) is exported, this reference is maintained through the scene pipeline.
 
 ## UDP Access in Scene Pipeline
 
@@ -60,7 +34,7 @@ if (!customPropertyData)
     return false;
 }
 
-const auto propertyMaterialPathIterator = customPropertyData->GetPropertyMap().find("o3de.default.material");
+const auto propertyMaterialPathIterator = customPropertyData->GetPropertyMap().find("o3de_default_material");
 if (propertyMaterialPathIterator == customPropertyData->GetPropertyMap().end())
 {
     return false;
@@ -113,7 +87,7 @@ def print_properties(scene):
             node = azlmbr.scene.graph.NodeIndex()
 ```
 
-## An example of car with LODs and a collision mesh
+### An example of car with LODs and a collision mesh
 
 This is an example of a Car.fbx file that was saved with UDP metadata for LOD and PhsyX metadata. The Asset Processor will request the Scene Builder to process the Car.fbx source scene asset. The Scene Builder (running in the Asset Builder process) imports the scene and builds the scene graph with scene graph nodes with CustomPropertyData content. Later on, the default procedural prefab builder will read in the custom properties in order to build out LOD manifest rules and physics manifest rules. Finally, these manifest rules will turn into LOD models and physic mesh product files.
 
