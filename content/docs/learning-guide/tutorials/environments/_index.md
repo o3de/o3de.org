@@ -9,4 +9,4 @@ This section contains step-by-step tutorials related to level and environment de
 | Tutorial | Description |
 | - | - |
 | [Create a Level](create-a-level) | Create a new level for O3DE. |
-| [Generate Terrain](generate-terrain) | Learn to generate terrain from image gradients with entities or **Landscape Canvas**. |
+| [Create Terrain from Images](create-terrain-from-images) | Learn to create terrain from images with entities or **Landscape Canvas**. |

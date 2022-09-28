@@ -41,7 +41,7 @@ Do you have O3DE installed and you aren't sure where to start? How about creatin
 | Tutorial | Description |
 | - | - |
 | [Create a Level](environments/create-a-level) | Create a level for O3DE. |
-| [Generate Terrain](environments/generate-terrain) | Learn to generate terrain from image gradients with entities or **Landscape Canvas**. |
+| [Create Terrain from Images](environments/create-terrain-from-images) | Learn to create terrain from images with entities or **Landscape Canvas**. |
 
 ## Extend O3DE Editor
 
