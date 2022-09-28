@@ -263,7 +263,7 @@ You may notice that both your bundled assets are smaller than the default `engin
 ## License file generation
 License attribution files can be generated during the project development process to properly attribute any code or packages that were imported (often called the NOTICES file). To scan project directories for licenses, you can run a script located in the engine's scripts\license_scanner subdirectory.
 
-Refer to the instructions in [Distributable Engine](content/docs/user-guide/build/distributable-engine.md#license-file-generation) for more to details. Generally, you will copy the generated file to the root of your game release layout to properly attribute your dependencies.
+Refer to the instructions in [Distributable Engine](content/docs/user-guide/build/distributable-engine.md#license-file-generation) for more details. Generally, you will copy the generated file to the root of your game release layout to properly attribute your dependencies.
 
 ## Run the Game Launcher
 
