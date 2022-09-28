@@ -68,7 +68,7 @@ For this tutorial, you'll set the world size of the heightmap image so that one 
 
 5. In the viewport camera settings in the upper-right of the viewport {{< icon "camera.svg" >}} set the **Camera Speed** to an appropriate value for the size of the terrain. `100.0` is a good reference point for large terrains.
 
-These suggestions are meant to help you view the entire terrain while you build it in O3DE Editor. In Launcher applications, these settings should be should be tuned for an appropriate balance of performance and quality.
+These suggestions are meant to help you view the entire terrain while you build it in O3DE Editor. In Launcher applications, these settings should be tuned for an appropriate balance of performance and quality.
 {{< /important >}}
 
 ## Terrain setup
