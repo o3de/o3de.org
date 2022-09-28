@@ -20,13 +20,16 @@ In a heightmap, dark values are low elevation areas and light values are high el
 
 * 16-bit color depths are recommended. 8-bit images may not provide enough gradient steps to represent elevation, and 32-bit images might be unnecessarily large. 16-bit images can provide up to 65,536 elevation steps.
 
-* For the best result, prefer to use power of two resolutions (for example, 256, 512, 1024, and so on). The default **Heigh Query Resolution** for terrain in O3DE is 1.0 meters. This means a 1024 x 1024 heightmap represents just over one square kilometer of terrain. The **Height Query Resolution** can be changed in the **Terrain World** level component.
-
 * Use `.png` or `.tif` formats for 16-bit heightmap images.
 
 * Use `.tif` format for 32-bit heightmap images.
 
 * Postfix the heightmap file name with `_gsi` so that the heightmap is automatically processed by Asset Processor as a GSI (`LevelOneTerrainHeight_gsi.png`, for example). If you don't use the `_gsi` postfix, you can use [Texture Settings](/docs/user-guide/assets/texture-settings/) to configure the heightmap source asset to be processed as a GSI.
+
+{{< tip >}}
+The default **Heigh Query Resolution** for terrain in O3DE is 1.0 meters. This means a 1000 x 1000 heightmap represents one square kilometer of terrain. The **Height Query Resolution** can be changed in the **Terrain World** level component.
+{{< /tip >}}
+
 
 ## Enable the terrain system
 
@@ -57,7 +60,7 @@ For this tutorial, you'll set the world size of the heightmap image so that one 
 
     i. Set the **First LOD distance** property to `256`. This sets the terrain's highest LOD display to a distance of 256 meters from the camera.
 
-    ii. Set the **CLOD Distance** property to `32`. This sets the blend distance between LODs to 32 meters. Larger values make the LOD transitions smoother, but the value should be less than 1/4 the **First LOD distance** value to ensure that there is enough distance blend each LOD.
+    ii. Set the **CLOD Distance** property to `32`. This sets the blend distance between LODs to 32 meters. Larger values make the LOD transitions smoother, but the value should be less than 1/4 the **First LOD distance** value to ensure that there is enough distance to blend each LOD.
 
 3. In the Camera entity, in the **Camera** component, set the **Far clip distance** property to a value that is greater than the resolution of the heightmap.
 
@@ -91,7 +94,7 @@ In this section, you'll create a terrain spawner entity and a gradient entity. T
 4. To generate terrain that is the same resolution as the heightmap, in the **Axis Aligned Box Shape** component, set the value of the **Dimensions:** **X** and **Y** properties to the resolution (in pixels) of the heightmap. The **Dimensions: Z** property can be used to scale the elevation. Enter a value for the **Dimensions: Z** property that roughly represents the maximum desired elevation in meters.
 
     {{< tip >}}
-If the dimensions of the **Axis Aligned Box Shape** component are smaller (in world units) than the heightmap (in pixels), the resulting terrain will have a lower fidelity than the input heightmap. This might result in missing elevation data that causes unexpected smooth areas or areas of sharp change. You'll get the best results from a 1:1 mapping of heightmap pixels to terrain world units. This means that when the **Height Query Resolution** is set to 1 meter (the default), the box size in meters should be the same as the heightmap pixel resolution.
+For the best results, the dimensions of the **Axis Aligned Box Shape** should be set to the heightmap pixel size multiplied by the **Height Query Resolution**. This ensures that there is exactly one heightmap pixel for each world unit used by the terrain system. When the **Height Query Resolution** is set to 1 meter (the default), the box size in meters should be exactly the same as the heightmap pixel resolution. If the box dimensions are too small, some heightmap pixels won't get used, which can cause unexpected smooth areas or areas of excessively sharp elevation changes.
     {{< /tip >}}
 
 5. The default minimum terrain elevation is 0, so the bottom of the box shape needs to be at least at 0 on the world Z axis, otherwise, the lower elevation values will be clipped. In the Terrain Spawner entity, in the **Transform** component, set the **Translate: Z** property to a value that is half of the value you used for the **Dimensions: Z** property in the previous step. For example, if you entered `100.0` in the previous step, use `50.0` for the **Translate: Z** property to move the entity up so that the bottom of the box is at 0 on the world Z axis.
@@ -196,9 +199,9 @@ The following properties are closely related and might require special attention
 
 There are two types of materials that are needed for terrain, the *macro material* and *detail materials*.
 
-The macro material is a basic material that applies to the entire terrain. It supports a simple color texture and a normal texture. These textures provide low fidelity color and normal information across the entire terrain that is blended with detail materials. The macro material is the only material displayed on lowest terrain LOD (furthest from the camera).
+The macro material is a basic material that applies to the entire terrain. It supports a simple color texture and a normal texture. These textures provide low fidelity color and normal information across the entire terrain that is blended with detail materials. The macro material is the only material displayed at distances from the camera farther than the **Detail material render distance**.
 
-Detail materials are standard materials that you can create with [Material Editor](/docs/atom-guide/look-dev/materials/material-editor/). They are assigned to the terrain through surface tag names that are generated by gradients, similar to how this tutorial used an image gradient to create elevation. This allows you to assign many materials across a large terrain surface and blend between them. Detail materials are displayed on the highest terrain LODs (closest to the camera).
+Detail materials are standard materials that you can create with [Material Editor](/docs/atom-guide/look-dev/materials/material-editor/). They are assigned to the terrain through surface tag names that are generated by gradients, similar to how this tutorial used an image gradient to create elevation. This allows you to assign many materials across a large terrain surface and blend between them. Detail materials are displayed on the terrain within the **Detail material render distance** from the camera..
 
 This blending of detail materials with the macro material enables you to use small, high fidelity, tiled detail materials by creating variations in color and lighting across the terrain. In the following example, the grass on the left is a detail material that is not blended with the macro material. The grass on the right is the same detail material, but it has been blended over a low fidelity macro material. Notice the variations in color and lighting that create a less uniform and much more natural appearance:
 
