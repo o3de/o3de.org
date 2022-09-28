@@ -6,73 +6,97 @@ weight: 100
 toc: true
 ---
 
-*Root motion* is animation that is applied to the root bone of an actor's skeleton hierarchy that moves the actor entity. This tutorial explains what root motion is, how to extract and generate root motion, and how to enable it for an actor in a data driven solution.
+*Root motion* is animation that moves an actor entity. This tutorial explains what root motion is in detail, and how to enable it for an actor.
 
-For this tutorial you'll need an actor asset with animation that has been processed for your project by **Asset Processor**. The animation should move the actor off the origin, such as a walk or run cycle.
+For this tutorial, you'll need an actor asset with animation that has been processed by [Asset Processor](/docs/user-guide/assets/asset-processor/). The animation should move the actor off the scene origin. That is, the animation should move the actor in a direction, such as a walk cycle that moves the actor forward in space.
 
-## Root motion methods
+## What is root motion?
 
-Root motion can be *code driven* or *data driven*. This tutorial focuses on data driven root motion, but it's helpful to understand both methods.
+An actor entity usually has many components (meshes, a skeleton, colliders, and so on) that need to move together. If an actor jumps, the actor's collision capsule needs to have the same jump movement applied so that it moves with the skeleton and meshes. This movement, that moves all of the actor's components, is the *root motion*.
+
+Root motion can be *code driven* or *data driven*, The focus of this tutorial is data driven root motion, but it's helpful to understand both methods.
 
 ### Code driven
 
-With a code driven method, the actor's animation cycles happen in place because the root of the skeletal hierarchy isn't animated. The following movie demonstrates a forward run cycle that doesn't have root motion:
+For code driven root motion, the actor's animation cycles happen in place and any movement off the scene origin is provided by code (such as a script). The actor runs, walks, or jumps in place and the script provides the appropriate directional movement.
+
+The following movie demonstrates a forward run cycle created for code driven root motion:
 
 {{< video src="/images/learning-guide/tutorials/animation/jack-run-no-root-motion.mp4" info="Example run cycle without root motion." autoplay="true" loop="true" poster="/images/learning-guide/tutorials/animation/jack-run-poster.png" >}}
 
-When a forward input event is received, the code driven root motion method plays the preceding forward run cycle, and moves the actor entity forward through an event handler that's most often implemented in script. Code driven root motion might be preferable in scenarios where precise actor movement for play mechanics is more critical than visual performance.
+Notice that the actor runs in place. At runtime, when a forward input event is received, the script plays the preceding forward run cycle and moves the actor entity forward based on the result of some expression or function.
 
 ### Data driven
 
-With data driven root motion, the animation cycle has root motion data applied. The root motion is usually created by an animator and baked into the animation cycle. The following movie demonstrates a forward run cycle with root motion:
+For data driven root motion, motion data is provided that moves the actor off the scene origin. The data is usually keyframe animation provided by an animator. The following movie demonstrates a forward run cycle created for data driven root motion:
 
 {{< video src="/images/learning-guide/tutorials/animation/jack-run-root-motion.mp4" info="Example run cycle with root motion." autoplay="true" loop="true" poster="/images/learning-guide/tutorials/animation/jack-run-poster.png" >}}
-<br>
+
+Notice that the actor is moving forward as it runs. At runtime, when a forward input event is received, the forward run cycle plays. The animation data from the root of the actor's skeleton drives the forward movement of the actor entity.
+
 {{< note >}}
-The preceding example movies display the actor's bones as green lines. The green line that extends from the actor's pelvis to the ground plane is the root bone of the skeleton that the root motion is applied to.
+The preceding example movies display the actor's bones as green lines. The green line that extends from the ground plane to the actor's pelvis is the root bone of the skeleton. In an ideal scenario, actor assets should have this root bone, and any animation that moves the actor off of the scene origin should be applied to this root bone.
 {{< /note >}}
 
-When a forward input event is received, the data driven solution plays the forward run cycle. The animation data from the root of the actor's skeleton drives the movement of the actor entity. Data driven root motion can give animators more control over the actor's performance.
+### Which should you use?
 
-### Which method should you use?
+Whether you use code driven or data driven root motion depends on your project's needs.
 
-Which method you use depends on your project's needs. When using a [PhysX Character Controller](/docs/user-guide/components/reference/physx/character-controller) component, the root motion is usually data driven. You can opt to use the code driven method with a PhysX Character Controller component by not applying root motion to the actor entity.
+Code driven root motion might be preferable in scenarios where precise actor movement for play mechanics is more critical than visual performance. Platform games and fighting games, for example, usually require accurate actor movement. Ensuring an actor moves a precise distance in response to an input might be far more important than ensuring actor's movement relative to animation is visually accurate.
 
-The following tutorial focuses on the data driven method and shows you how to generate root motion if your animation doesn't have root motion baked in. You'll also learn how to enable root motion in **Animation Editor**.
+Data driven root motion can give animators more control over the actor's performance. Adventure games and first person games that strive for realism and immersion often require the actor's movement express some game condition or emotion. In these scenarios, the actor's movement relative to animation might prioritize visual accuracy.
 
-## Generate data driven root motion
+The remainder of this tutorial focuses on data driven root motion. You'll learn how to determine if an actor is properly set up for data driven root motion, how to extract root motion if necessary, and how to enable root motion in [Animation Editor](/docs/user-guide/visualization/animation/animation-editor/user-interface).
 
-The *data* referred to in data driven root motion is keyframe animation applied to the root bone of an actor's skeleton. The best case scenario is that the source scene files have a root bone that is placed at the origin and connected to the actor's pelvis (or a relative bone on an actor that isn't a biped), and that motion is keyed on the root bone. It's possible, though, that the source scene files don't have a root bone at the origin, but instead have motion applied to another bone such as the pelvis.
+## Root motion set up
 
-To determine if the actor has a root bone with motion baked into the animation, do the following:
+The data in data driven root motion is usually keyframe animation applied to the root bone of an actor's skeleton by an animator. In an ideal scenario, the actor and animation source scene files follow these rules:
+
+* The skeleton has a root bone placed at the scene origin.
+* The root bone is connected to the actor's pelvis bone (or some relative bone on an actor that isn't a biped).
+* Any motion that moves the actor off the scene origin is keyframed on the root bone.
+
+### Check actor set up
+
+To determine if the actor has a root bone with animation, do the following:
 
 1. In **O3DE Editor**, from the **Tools** menu, choose **Animation Editor**.
 
-1. In Animation Editor, press **Ctrl + O** to open the actor. Select an actor from the file window.
+2. In Animation Editor, press **Ctrl + O** to open the actor. Select an actor from the file window.
 
-1. Choose the {{< icon "visibility-on.svg" >}} **Visibility** button above the viewport, and select **Line skeleton** from the list to display the actor's skeleton as green lines.
+3. Choose the {{< icon "visibility-on.svg" >}} **Visibility** button above the viewport, and select **Line skeleton** from the list to display the actor's skeleton as green lines.
 
-1. In the **Motion Sets** tab, in the **Motion Set** group, choose the {{< icon "file-folder.svg" >}} **Folder** button to add a motion. Select a motion from the file window.
+4. In the **Motion Sets** tab, in the **Motion Set** group, choose the {{< icon "file-folder.svg" >}} **Folder** button to add a motion. Select a motion from the file window.
 
-1. Choose the motion you just added to the Motion Set to enable it.
+5. Choose the motion you just added to the Motion Set to enable it.
 
-1. In the **Time View** tab, click the {{< icon "play.svg" >}} **Play** button to play the animation.
+6. In the **Time View** tab, click the {{< icon "play.svg" >}} **Play** button to play the animation.
 
-Examine the animation as it plays. If the skeleton has a root bone (a green line extending to the ground) that moves with the actor, then the actor has root motion. The following movie shows a run cycle on an actor that has a root bone with motion baked in. Notice the green line that represents the root bone extends to the ground and moves with the actor:
+Examine the animation as it plays. If the skeleton has a root bone (a green line extending from the ground plane to the actor's pelvis) that moves with the actor, then the actor has a root bone with animation. In the following example, notice the green line that represents the root bone extends from the ground and moves with the actor:
 
 {{< video src="/images/learning-guide/tutorials/animation/jack-run-root-motion.mp4" info="Example run cycle with root motion." autoplay="true" loop="true" poster="/images/learning-guide/tutorials/animation/jack-run-poster.png" >}}
 
-If your animation resembles the preceding movie but the actor snaps back to the origin after each animation cycle, you can move on to the [Enable root motion](#enable-root-motion) section. If the root bone remains at the origin as the actor moves, the source scene files might not have a root bone, and the motion has been applied to another bone such as the pelvis. You'll need to generate root motion for the animation.
+The following table contains the possible results from the preceding steps and provides a course of action for each result:
 
-For the best result, edit the source scene files in your digital content creation application (Blender or Maya, for example) and add a root bone with animation. Alternatively, if the actor has motion applied to a different bone such as the pelvis, you can try to extract the root motion automatically.
+| Result | Next Step |
+| --- | --- |
+| The actor animates in place. | This actor might not have a root bone and doesn't have animation data for root motion. You can either:<ul><li>add a root bone and animation to the source scene files in an animation application</li><li>use code driven root motion instead</li></ul> |
+| The actor moves off the scene origin, but one end of the green line that represents the root bone remains at the scene origin. | This actor doesn't have a root bone. The animation data is applied to another bone (such as the pelvis). You can either:<ul><li>add a root bone and animation to the source scene files in an animation application</li><li>attempt to [extract root motion](#root-motion-extraction) as explained in the next section</li></ul> |
+| The actor moves off the scene origin, the root joint moves with the actor, and the actor snaps back to the scene origin when the animation cycle completes. | The actor has a root bone with animation data. You can move on to the [Enable root motion](#enable-root-motion) section. |
+
+{{< important >}}
+For the best result, edit the source scene files in your digital content creation application (Blender or Maya, for example) and add a root bone with animation.
+{{< /important >}}
 
 ### Root motion extraction
 
-You can extract root motion from an animation by customizing how the animation is processed with the [Scene Settings](/docs/user-guide/assets/scene-settings/) tool. To create a custom processing rule with a **Root motion extraction** modifier, do the following:
+If your source scene files have animation that moves the actor off the scene origin, but the root bone doesn't move with the actor, it's likely that the source scene files don't have a root bone and that animation has bee applied to another bone such as the pelvis bone. You can try to extract the animation from the pelvis so it can be applied to the actor as root motion.
+
+To extract root motion from an animation you must customize how the animation is processed with the [Scene Settings](/docs/user-guide/assets/scene-settings/) tool. To create a custom processing rule with a **Root motion extraction** modifier, do the following:
 
 1. In O3DE Editor in **Asset Browser** locate the `.fbx` file containing the animation you want to extract the root motion from.
 
-1. In Asset Browser, right-click the animation file and choose **Edit settings...** from the context menu.
+1. In Asset Browser, double-click the animation file and choose **Edit settings...** from the context menu.
 
 1. In Scene Settings, select the **Motions** tab.
 
@@ -123,6 +147,6 @@ Once you have root motion applied to the actor's root bone, you must enable root
 
 1. Press **Ctrl + S** to save the actor.
 
-If root motion is successfully enabled, you'll see the character repeat the animation cycle without popping back to the origin. This means the root movement of the actor is driven by animation data.
+If root motion is successfully enabled, you'll see the actor repeat the animation cycle without popping back to the scene origin. This means the root movement of the actor is driven by animation data.
 
 {{< video src="/images/learning-guide/tutorials/animation/enable-root-motion.mp4" info="Example run cycle with root motion." autoplay="true" loop="true" poster="/images/learning-guide/tutorials/animation/enable-root-motion-poster.png" >}}
