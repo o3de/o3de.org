@@ -64,7 +64,12 @@ Perform the following steps from the O3DE source directory (`C:\o3de-source` in 
     cmake -B build/windows -G "Visual Studio 16" --config profile -DLY_VERSION_ENGINE_NAME="MyO3DE"
     ```
 
+    {{< note >}}
+Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](./configure-and-build/#configuring-projects).
+    {{< /note >}}
+
     The **profile** configuration is recommended for distributed builds, as it provides additional logging and engine introspection capabilities useful during project development at minimal performance cost. **debug** builds are primarily useful during engine development.
+
 1.  Build the `INSTALL` target.
     
     ```cmd
@@ -73,7 +78,7 @@ Perform the following steps from the O3DE source directory (`C:\o3de-source` in 
     
     The binaries will be placed into a distributable install directory specified by the `CMAKE_INSTALL_PREFIX` CMake cache variable, or in an `install` subdirectory of the source code by default.
 
-Run the following steps from the distributable install directory:
+Run the following step from the distributable install directory:
 
 1. Install the version of Python and modules required by the engine.
    

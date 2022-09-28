@@ -54,7 +54,14 @@ To configure an O3DE project using CMake, you'll need the following information:
 
 * The locations of the build source and output directories.
 * The generator you want to use to create the native project files.
-* The location of the downloadable packages, also known as the third-party libraries.
+
+    | Platform / Build System | Generator |
+    | --- | --- |
+    | Windows / Visual Studio 2019 | `Visual Studio 16` |
+    | Windows / Visual Studio 2022 | `Visual Studio 17` |
+    | Linux / Ninja | `Ninja Multi-Config` |
+
+* The location of the downloadable packages, also known as the third-party libraries. The default location is `<user>/.o3de/3rdParty` for Windows, and `$HOME/.o3de/3rdParty` for Linux.
 
 ### Configure with the CMake CLI
 

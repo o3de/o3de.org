@@ -179,6 +179,10 @@ The result is a project game release layout in the install directory that's loca
     cmake -B build\windows_mono -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_MONOLITHIC_GAME=1
     ```
 
+    {{< note >}}
+Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](/docs/user-guide/build/configure-and-build/#configuring-projects).
+    {{< /note >}}
+
 1. To build your monolithic project for release, use CMake to invoke Visual Studio builder. Specify the `INSTALL` target and `release` configuration.
 
     ```cmd
@@ -214,6 +218,10 @@ A pre-built SDK engine supports non-monolithic projects by default. As detailed 
     cd C:\o3de
     cmake -B build/windows -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=C:\o3de-install -DLY_PROJECTS=C:\o3de-projects\MyProject
     ```
+
+    {{< note >}}
+Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](/docs/user-guide/build/configure-and-build/#configuring-projects).
+    {{< /note >}}
 
 1. In your source engine, use CMake to invoke Visual Studio to append non-monolithic release artifacts to the pre-built SDK layout.
 

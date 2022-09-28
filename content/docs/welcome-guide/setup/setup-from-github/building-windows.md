@@ -47,9 +47,9 @@ To prepare to build the engine and projects, choose one of the following build t
     cmake -B build/windows -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages
     ```
 
-    The preceding command specifies several noteworthy custom definitions (`-D`). All are optional but recommended in this example.
+    * Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](/docs/user-guide/build/configure-and-build/#configuring-projects) in the User Guide.
 
-    * `LY_3RDPARTY_PATH` : The path to the downloadable package directory, also known as the "third-party path". Do not use trailing slashes when specifying the path to the packages directory.
+    * `LY_3RDPARTY_PATH` is an optional custom definition. (Custom definitions are prefixed with `-D`.) Use it to specify the path to the downloadable package directory, also known as the "third-party path". Do not use trailing slashes when specifying the path to the packages directory.
 
 1. (Optional) Use CMake to build the source engine. This step is optional because in the "source engine" build model, the engine is built inside of every project. If you plan on working with projects, to avoid building the engine twice, consider waiting until you learn how to create and build a project, which is covered in the [Project Creation](/docs/welcome-guide/create/) section. The following command builds the engine without a project.
 
@@ -88,6 +88,8 @@ To prepare to build the engine and projects, choose one of the following build t
     ```cmd
     cmake -B build/windows -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=C:\o3de-install
     ```
+
+    * Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](/docs/user-guide/build/configure-and-build/#configuring-projects) in the User Guide.
 
     The preceding command specifies several noteworthy custom definitions (`-D`). All are optional but recommended in this example.
 

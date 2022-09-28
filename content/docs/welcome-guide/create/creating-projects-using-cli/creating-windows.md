@@ -75,6 +75,10 @@ Use **CMake** to create the Visual Studio project for your O3DE project.
     ```
 
     {{< note >}}
+Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](/docs/user-guide/build/configure-and-build/#configuring-projects) in the User Guide.
+    {{< /note >}}
+
+    {{< note >}}
 CMake uses the downloadable packages directory that is defined in your O3DE manifest with `default_third_party_folder`. You can specify a different directory to use by including the `-DLY_3RDPARTY_PATH` argument. For example, if you created the package directory in `C:\o3de-packages`, include the argument `-DLY_3RDPARTY_PATH=C:\o3de-packages`.
 
 Do not use trailing slashes when specifying the path to the packages directory.
