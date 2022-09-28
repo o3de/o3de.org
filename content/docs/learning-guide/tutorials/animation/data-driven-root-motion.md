@@ -90,7 +90,7 @@ For the best result, edit the source scene files in your digital content creatio
 
 ### Root motion extraction
 
-If your source scene files have animation that moves the actor off the scene origin, but the root bone doesn't move with the actor, it's likely that the source scene files don't have a root bone and that animation has bee applied to another bone such as the pelvis bone. You can try to extract the animation from the pelvis so it can be applied to the actor as root motion.
+If your source scene files have animation that moves the actor off the scene origin, but the root bone doesn't move with the actor, it's likely that the source scene files don't have a root bone and that animation has been applied to another bone such as the pelvis bone. You can try to extract the animation from the pelvis so it can be applied to the actor as root motion.
 
 To extract root motion from an animation you must customize how the animation is processed with the [Scene Settings](/docs/user-guide/assets/scene-settings/) tool. To create a custom processing rule with a **Root motion extraction** modifier, do the following:
 
