@@ -68,11 +68,15 @@ This tutorial shows you how to use O3DE Lua Editor to perform debugging operatio
     
 ## Connect to O3DE Editor
 
-The **Remote Tools Gem** facilitates local connections between O3DE applications. The Remote Tools Gem starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to.  Because the debugging functionality is enabled through network sockets, you must connect Lua Editor to the target that is running the script before you can debug. In this tutorial, you connect to O3DE Editor.
+The [**Remote Tools Gem**](docs/user-guide/gems/reference/debug/remote-tools) facilitates local connections between O3DE applications. 
 
 {{< note >}}
+The **Remote Tools Gem** must be [enabled in your project](/docs/user-guide/project-config/add-remove-gems/#enabling-or-disabling-gems) for debugging to work.
+
 **Remote Tools Gem** behavior is disabled in release builds.
 {{< /note >}}
+
+The Remote Tools Gem starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to.  Because the debugging functionality is enabled through network sockets, you must connect Lua Editor to the target that is running the script before you can debug. In this tutorial, you connect to O3DE Editor.
 
 1. In the Lua Editor toolbar, choose **Target: None**, and then choose **Editor(*ID*)** to connect to O3DE Editor.
 
