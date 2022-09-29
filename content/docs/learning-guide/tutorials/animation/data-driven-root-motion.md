@@ -62,15 +62,15 @@ To determine if the actor has a root bone with animation, do the following:
 
 1. In **O3DE Editor**, from the **Tools** menu, choose **Animation Editor**.
 
-2. In Animation Editor, press **Ctrl + O** to open the actor. Select an actor from the file window.
+1. In Animation Editor, press **Ctrl + O** to open the actor. Select an actor from the file window.
 
-3. Choose the {{< icon "visibility-on.svg" >}} **Visibility** button above the viewport, and select **Line skeleton** from the list to display the actor's skeleton as green lines.
+1. Choose the {{< icon "visibility-on.svg" >}} **Visibility** button above the viewport, and select **Line skeleton** from the list to display the actor's skeleton as green lines.
 
-4. In the **Motion Sets** tab, in the **Motion Set** group, choose the {{< icon "file-folder.svg" >}} **Folder** button to add a motion. Select a motion from the file window.
+1. In the **Motion Sets** tab, in the **Motion Set** group, choose the {{< icon "file-folder.svg" >}} **Folder** button to add a motion. Select a motion from the file window.
 
-5. Choose the motion you just added to the Motion Set to enable it.
+1. Click the motion you just added to the Motion Set to select it.
 
-6. In the **Time View** tab, click the {{< icon "play.svg" >}} **Play** button to play the animation.
+1. In the **Time View** tab, click the {{< icon "play.svg" >}} **Play** button to play the animation.
 
 Examine the animation as it plays. If the skeleton has a root bone (a green line extending from the ground plane to the actor's pelvis) that moves with the actor, then the actor has a root bone with animation. In the following example, notice the green line that represents the root bone extends from the ground and moves with the actor:
 
