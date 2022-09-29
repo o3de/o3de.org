@@ -1,7 +1,7 @@
 ---
 linkTitle: Vegetation
-title: Vegetation Gem
-description: The Vegetation Gem provides tools to place natural-looking vegetation in Open 3D Engine.
+title: Vegetation
+description: Procedurally place vegetation throughout your world in Open 3D Engine (O3DE).
 weight: 100
 toc: true
 ---

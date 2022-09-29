@@ -1,6 +1,5 @@
 ---
 linkTitle: 22.05.0 Release Notes
-sectionPageTitle: Release Notes
 title: Release Notes for Open 3D Engine 22.05.0
 description: Full release notes for Open 3D Engine (O3DE) version 22.05.0.
 weight: 897
