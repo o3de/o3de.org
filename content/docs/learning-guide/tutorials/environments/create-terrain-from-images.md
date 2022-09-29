@@ -54,7 +54,7 @@ There are many properties available in the terrain level components that configu
 {{< important >}}
 For this tutorial, you'll set the world size of the heightmap image so that one pixel is equal to one meter. The rendering distances might need to be adjusted to make the entire terrain visible if the heightmap image is larger than the default terrain rendering distance of 4096 meters or the default camera view distance of 1024 meters.
 
-1. In the Terrain World Renderer level component, set the **Mesh render distance** to a value that is greater than the resolution of the heightmap, so that the entire terrain will be visible.
+1. In the **Terrain World Renderer** level component, set the **Mesh render distance** to a value that is greater than the resolution of the heightmap, so that the entire terrain will be visible.
 
 2. If the heightmap is larger than 256 x 256, do the following:
 
@@ -85,7 +85,7 @@ In this section, you'll create a terrain spawner entity and a gradient entity. T
 
 ### Create a terrain spawner entity
 
-1. Create a new entity (hotkey **Ctrl+Alt+N**). Name the entity `Terrain Spawner`.
+1. Create a new entity (hotkey **Ctrl + Alt + N**). Name the entity `Terrain Spawner`.
 
 2. With the entity selected, in Entity Inspector, add a **Terrain Layer Spawner** component. This component enables the entity to generate terrain.
 
@@ -109,11 +109,11 @@ Once you have set the dimensions of the box shape, you can hide it by disabling 
 
 ### Create a terrain gradient entity
 
-1. With the Terrain Spawner entity selected, create a new child entity (hotkey **Ctrl+Alt+N**). Name the new entity `Terrain Gradient`.
+1. With the Terrain Spawner entity selected, create a new child entity (hotkey **Ctrl + Alt + N**). Name the new entity `Terrain Gradient`.
 
 2. Add an **Image Gradient** component to the Terrain Gradient entity. You'll use the **Image Gradient** component to add and configure the heightmap for the terrain.
 
-3. The **Image Gradient** component displays a warning about missing a required component. Choose **Add Required Component** and select **Gradient Transform Modifier** from the list. The **Gradient Transform Modifier** component can be used to transform the **Image Gradient** in world space.
+3. The **Image Gradient** component displays a warning about missing a required component. Choose **Add Required Component** and select **Gradient Transform Modifier** from the list. The **Gradient Transform Modifier** component can be used to transform the gradient in world space.
 
 4. The **Gradient Transform Modifier** component displays a warning about missing a required component. Choose **Add Required Component** and select **Shape Reference** from the list. In a later step, you'll add a reference to the **Axis Aligned Box Shape** component in the Terrain Spawner entity to ensure the terrain bounds and the gradient bounds are identical.
 
@@ -131,7 +131,7 @@ Changing the **Sampling Type** property in the **Image Gradient** component from
 
 8. In the **Gradient Transform Modifier** component, set the **Wrapping Type** property to either `Clamp To Zero` or `Clamp To Edge`. Leaving this property set to `Unbounded` night create artifacts at the edges of the terrain.
 
-9. **Save** the level (hotkey **Ctrl+S**).
+9. **Save** the level (hotkey **Ctrl + S**).
 
 {{< note >}}
 Before continuing to the next section, be sure to learn about terrain setup with Landscape Canvas by selecting the tab at the top of this section.
@@ -149,7 +149,7 @@ In this section, you'll create terrain based on a heightmap with Landscape Canva
 
 2. In O3DE Editor, from the **Tools** menu, select **Landscape Canvas**.
 
-3. In Landscape Canvas, from the **File** menu, choose **New Asset** (hotkey **Ctrl+N**). Notice that a new graph named Entity1 appears in the Landscape Canvas view. In O3DE Editor, a corresponding entity is created that contains a **Landscape Canvas** component. As you work in Landscape Canvas, additional entities are created and added as children of Entity1. You can rename the entities created by Landscape Canvas.
+3. In Landscape Canvas, from the **File** menu, choose **New Asset** (hotkey **Ctrl + N**). Notice that a new graph named Entity1 appears in the Landscape Canvas view. In O3DE Editor, a corresponding entity is created that contains a **Landscape Canvas** component. As you work in Landscape Canvas, additional entities are created and added as children of Entity1. You can rename the entities created by Landscape Canvas.
 
 4. In Landscape Canvas, in the **Node Palette**, expand the **Terrain** node list, and drag a **Terrain Layer Spawner** node into the graph. Notice that in O3DE Editor, a new child entity named Entity2 is created with the necessary components for a terrain spawner. Also notice that the components are displayed in **Node Inspector** in Landscape Canvas.
 
@@ -171,7 +171,7 @@ In this section, you'll create terrain based on a heightmap with Landscape Canva
 
     {{< image-width src="/images/learning-guide/tutorials/environments/landscape-canvas-terrain-spawner-image-gradient.png" width="650" alt="The configured image gradient node and terrain network in Landscape Canvas." >}}
 
-8. **Save** the level (hotkey **Ctrl+S**).
+8. **Save** the level (hotkey **Ctrl + S**).
 
 {{% /tab %}}
 
@@ -253,7 +253,7 @@ Surface tag names are strings that you can use to refer to parts of the terrain 
 
 5. Repeat steps 3 and 4 for each detail material you want to apply to the surface.
 
-6. Save the surface tag name list to your project's assets directory (hotkey **Ctrl+S**).
+6. Save the surface tag name list to your project's assets directory (hotkey **Ctrl + S**).
 
 #### Create gradient entities for each detail material
 
@@ -265,7 +265,7 @@ This process is the same as creating a gradient entity for a heightmap. Each gra
 Other gradient types can be used, but image gradients offer the most control and are used in many scenarios when creating terrain.
     {{< /tip >}}
 
-* A **Gradient Transform Modifier** that places the gradient in the level. The default settings are fine for this tutorial.
+* A **Gradient Transform Modifier** component that places the gradient in the level. The default settings are fine for this tutorial.
 
 * A shape component. Most often, this is a **Shape Reference** component that references the **Axis Aligned Box Shape** component in the Terrain Spawner entity.
 
