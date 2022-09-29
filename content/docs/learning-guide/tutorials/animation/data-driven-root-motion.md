@@ -82,7 +82,7 @@ The following table contains the possible results from the preceding steps and p
 | --- | --- |
 | The actor animates in place. | This actor might not have a root bone and doesn't have animation data for root motion. You can either:<ul><li>add a root bone and animation to the source scene files in an animation application</li><li>use code driven root motion instead</li></ul> |
 | The actor moves off the scene origin, but one end of the green line that represents the root bone remains at the scene origin. | This actor doesn't have a root bone. The animation data is applied to another bone (such as the pelvis). You can either:<ul><li>add a root bone and animation to the source scene files in an animation application</li><li>attempt to [extract root motion](#root-motion-extraction) as explained in the next section</li></ul> |
-| The actor moves off the scene origin, the root joint moves with the actor, and the actor snaps back to the scene origin when the animation cycle completes. | The actor has a root bone with animation data. You can move on to the [Enable root motion](#enable-root-motion) section. |
+| The actor moves off the scene origin, the root bone moves with the actor, and the actor snaps back to the scene origin when the animation cycle completes. | The actor has a root bone with animation data. You can move on to the [Enable root motion](#enable-root-motion) section. |
 
 {{< important >}}
 For the best result, edit the source scene files in your digital content creation application (Blender or Maya, for example) and add a root bone with animation.
