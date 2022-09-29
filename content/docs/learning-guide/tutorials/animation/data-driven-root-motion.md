@@ -96,7 +96,7 @@ To extract root motion from an animation you must customize how the animation is
 
 1. In O3DE Editor in **Asset Browser** locate the `.fbx` file containing the animation you want to extract the root motion from.
 
-1. In Asset Browser, double-click the animation file and choose **Edit settings...** from the context menu.
+1. In Asset Browser, right-click the animation file and choose **Edit settings...** from the context menu.
 
 1. In Scene Settings, select the **Motions** tab.
 
