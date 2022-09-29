@@ -17,21 +17,22 @@ Auto-packets are defined in XML files, placed in the `Code\Source\Autogen` direc
 The top-level element of an auto-packet definition is a `PacketGroup`. Packet groups associate different types of individual packet definitions together. Packets defined as part of a packet group are placed into the same namespace.
 
 | Property | Description | Type |
-|---|---|---|---|
-| Name | The namespace for generated auto-packets. | A valid C++ namespace identifier |
-| PacketStart | The value to start sequencing packet type identifiers for this packet group at. To avoid conflicts with the core AzNetworking framework, use `CorePackets::PacketType::Max`. | `const int32` |
+|---|---|---|
+| Name | The namespace for generated auto-packets. | A valid C++ namespace identifier. |
+| PacketStart | The value at which to start sequencing packet type identifiers for this packet group. To avoid conflicts with the core AzNetworking framework, use `CorePackets::PacketType::Max`. | `const int32` |
 
 ### Packet attributes
 
 The `Packet` tag defines a new packet.
 
 | Property | Description | Type |
-|---|---|---|---|
-| Name | The class name of the generated autopacket. | A valid C++ class identifier. |
-| Desc | The description of the generated autopacket. | `string` |
-| HandshakePacket | If the packet is part of a connection handshake. | `bool` |
+|---|---|---|
+| Name | The class name of the generated auto-packet. | A valid C++ class identifier. |
+| Desc | The description of the generated auto-packet. | `string` |
+| HandshakePacket | If enabled, the packet is part of a connection handshake. | `bool` |
+
 {{< note >}}
-Packets with `HandshakePacket ` set as true will only be processed if the user-implemented `IsHandshakeComplete` function for the packet returns `false`.
+Packets with `HandshakePacket` set as true are processed only if the user-implemented `IsHandshakeComplete` function for the packet returns `false`.
 {{< /note >}}
 
 ### Member attributes
@@ -50,7 +51,7 @@ The `Member` tag defines data on the packet. This is the primary mechanism for d
 
 ### Include
 
-The `Include` tag is used to generate the `#includes` of the C++ code. Use an `Include` tag for each header that your generated classes will use.
+AzAutoGen uses the `Include` tag to generate the `#includes` of the C++ code. Use an `Include` tag for each header that your generated classes will use
 
 | Property | Description | Type |
 |---|---|---|---|
