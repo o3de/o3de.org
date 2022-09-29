@@ -3,6 +3,7 @@ linktitle: Validator Errors
 title: How to Use the Validation Tool for O3DE Submissions
 description: Details and instructions for using the validator tool.
 toc: true
+weight: 300
 ---
 
 The **Open 3D Engine (O3DE)** Early Warning System is a tool for style checks and basic static analysis to find errors before building the engine and performing tests. It runs before the pipeline starts a build, attempting to quickly reject invalid changes before spending machine resources to build and test, and minimize human effort on reviewing changes.

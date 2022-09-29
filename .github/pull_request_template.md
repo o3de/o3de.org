@@ -15,6 +15,6 @@
 
 * [ ] **Descriptive active voice** - Do descriptive sentences have a clear *subject* and *action verb*?
 * [ ] **Answer the question at hand** - Does the documentation answer a *what*, *why*, *how*, or *where* type of question?
-* [ ] **Consistency** - Does the content consistently follow the [style guide](https://o3de.org/docs/contributing/to-docs/style-guide/)?
+* [ ] **Consistency** - Does the content consistently follow the [Style Guide](https://o3de.org/docs/contributing/to-docs/style-guide/quick-reference)?
 * [ ] **Help the user** - Does the documentation show the user something *meaningful*?
 
