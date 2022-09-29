@@ -22,7 +22,7 @@ Review these specifications when creating an inline notification:
 
 * Include an optional call-to-action button that's related to the message.
 
-- Use one of the following icons from the list of [Standard icons](../overview#standard-icons): error/failure or warning icon.
+- Use one of the following icons from the list of [Standard icons](../#standard-icons): error/failure or warning icon.
 
 * Display inline notifications only on screens that have more than one operational purpose. For instance, they can appear within non-modal dialogs, but cannot appear inside modal dialogs.
 
@@ -84,7 +84,7 @@ Inline notifications in component cards are displayed to indicate an error/failu
 
 * Write clear and concise messages. A maximum of two lines is recommended.
 
-* Use the error/failure or warning icon from the list of standard icons, depending on the following use cases. Refer to [Standard Icons](../overview#standard-icons). 
+* Use the error/failure or warning icon from the list of standard icons, depending on the following use cases. Refer to [Standard Icons](../#standard-icons). 
 
     ![Inline Error in Component Cards](/images/tools-ui/inline-notifications/inline-notifications-in-component-cards-decision-table.png)
 

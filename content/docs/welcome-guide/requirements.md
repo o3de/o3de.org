@@ -44,6 +44,7 @@ or later is required.
 ### Microsoft Visual Studio
 
 + [Microsoft Visual Studio 2019](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes) version **16.9.2** through version **16.11.x** are supported with O3DE. You can use any Microsoft Visual Studio license, including the Community edition.
++ **(Development/22.10 release branch)** [Microsoft Visual Studio 2022](https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes) version **17.3** through version **17.3.x** are supported with O3DE. You can use any Microsoft Visual Studio license, including the Community edition. **A minimum of CMake 3.21.7 or above is required to build with Visual Studio 2022**.
 
 #### Visual Studio configuration
 
@@ -70,7 +71,7 @@ After the install completes, you might be prompted to restart your system.
 
 ### Microsoft Visual Studio C++ Redistributable
 
-You will also need the [Visual C++ Redistributable for Visual Studio 2019](https://visualstudio.microsoft.com/downloads/#other-family).
+You will also need the latest version of [Visual C++ Redistributable for Visual Studio](https://visualstudio.microsoft.com/downloads/#other-family), if it was not installed by the **Desktop development with C++** workload for Visual Studio. 
 
 After installing the C++ redistributable, you might be prompted to restart your system.
 

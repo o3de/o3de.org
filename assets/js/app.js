@@ -98,32 +98,62 @@ $(function() {
 // Docs navigation
 
 $(function() {
-  $("#docs-nav a.has-children").click(function(e){
-    e.preventDefault();
-    $(this).toggleClass("open");
-    $(this).siblings('ul').each(function()
-    {
-      $(this).slideToggle(300);
-    });
-  })
-});
-
-$(function() {
   const url = window.location.pathname;
   $("#docs-nav a").each(function(){
     if($(this).attr("href") == url) {
       $(this).addClass("currentPage");
+
+      // Apply attributes to the parent pages/sections for styling.
       $(this).parentsUntil("#docs-nav", "ul").each(function(){
         $(this).addClass("currentAncestor");
         $(this).siblings('a').each(function()
         {
-          $(this).addClass("currentAncestor").addClass("open");
-        });
-        $(this).parent('li').addClass("currentAncestorCategory");
+          $(this).addClass("currentAncestor").addClass("open");          
+        });                  
+        $(this).parent('li').addClass("currentAncestorCategory");    
       })
+      $(this).parent('li').addClass("currentAncestorCategory");    
+      
     }
   })
 });
+
+// Applies to the current page in the docs-nav.
+$(function() {
+  $("#docs-nav a.currentPage").each(function(e){
+
+    // Show children pages/sections in the docs-nav, if any.
+    if ($(this).hasClass('has-children')){
+      console.log("yes has children");
+
+      $(this).addClass("open");
+      showChildren(this);
+    }
+    $(this).siblings('.has-children-icon').each(function()
+    {
+      $(this).addClass("open");
+      $(this).addClass("currentPage");
+    });
+  })
+});
+
+// For sections in the docs-nav, this applies to the drop-down icon's click event.
+$(function() {
+  $("#docs-nav a.has-children-icon").click(function(e){
+    console.log("has-children-icon triggered");
+    $(this).toggleClass("open");
+    showChildren(this);
+  })
+});
+
+// A helper function to show the list of children in the docs-nav.
+function showChildren(e) {
+  $(e).siblings('ul').each(function()
+  {
+    $(this).slideToggle(300);
+  });
+}
+
 
 $(function() {
   $("body").append("<div id=\"docs-mobile-menu-overlay\" class=\"docs-mobile-menu-overlay\"></div>");
