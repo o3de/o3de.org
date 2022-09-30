@@ -58,7 +58,7 @@ For this tutorial, you'll set the world size of the heightmap image so that one 
 
 2. If the heightmap is larger than 256 x 256, do the following:
 
-    i. Set the **First LOD distance** property to `256`. This sets the terrain's highest LOD display to a distance of 256 meters from the camera.
+    i. Set the **First LOD distance** property to `256`. This sets the terrain's highest level of detail (LOD) display to a distance of 256 meters from the camera.
 
     ii. Set the **CLOD Distance** property to `32`. This sets the blend distance between LODs to 32 meters. Larger values make the LOD transitions smoother, but the value should be less than 1/4 the **First LOD distance** value to ensure that there is enough distance to blend each LOD.
 
