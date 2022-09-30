@@ -213,4 +213,4 @@ CMake functions used in this example:
 ## License file generation
 License attribution files can be generated during the project development process to properly attribute any 3p packages that were imported (often called the NOTICES file). To scan 3p package directories for licenses, you can run a script located in the engine's scripts\license_scanner subdirectory. This script will look for the `PackageInfo.json` file in order to create a summary file of all package licenses with SPDX tags for easy reference. 
 
-Refer to the instructions in [Distributable Engine](content/docs/user-guide/build/distributable-engine.md#license-file-generation) for more details.
+Refer to the instructions in [Engine and Project Distribution](./distributable-engine#license-file-generation) for more details.
