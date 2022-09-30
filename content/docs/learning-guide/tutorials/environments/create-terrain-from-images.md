@@ -73,7 +73,7 @@ These suggestions are meant to help you view the entire terrain while you build 
 
 ## Terrain setup
 
-Generating terrain requires multiple entities that reference each other. You can set up the entities and references manually, or you can use [Landscape Canvas](/docs/user-guide/gems/reference/environment/landscape-canvas) to place and connect nodes in a visual graph that generates terrain. The advantage of using Landscape Canvas is that it provides an artist-friendly node graph interface for creating and configuring terrain entities in the level, as well as providing a visual representation of the relationships between those entities and components
+Generating terrain requires multiple entities that reference each other. You can set up the entities and references manually, or you can use [Landscape Canvas](/docs/user-guide/gems/reference/environment/landscape-canvas) to place and connect nodes in a visual graph that generates terrain. The advantage of using Landscape Canvas is that it provides an artist-friendly node graph interface for creating and configuring terrain entities in the level, as well as providing a visual representation of the relationships between those entities and components.
 
 It's helpful to understand how the various gradient and terrain components work together, so it's recommended that you work through both versions of the tutorial in the tabs below.
 
