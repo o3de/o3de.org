@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">2210.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -116,14 +116,18 @@ const AZ::Vector3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <tr class="separator:a9b4930a233a80bc0087e51f55c45d0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12b4c9e2a9be6a4cbde3a5c1a49b0688"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_viewport_input_behavior_controller.html#a12b4c9e2a9be6a4cbde3a5c1a49b0688">SetObjectPosition</a> (const AZ::Vector3 &amp;objectPosition) override</td></tr>
 <tr class="separator:a12b4c9e2a9be6a4cbde3a5c1a49b0688"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cebc9c9b1501353b1dbce6e0fd3c073"><td class="memItemLeft" align="right" valign="top"><a id="a6cebc9c9b1501353b1dbce6e0fd3c073"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_viewport_input_behavior_controller.html#a6cebc9c9b1501353b1dbce6e0fd3c073">GetDistanceToObject</a> () const override</td></tr>
-<tr class="memdesc:a6cebc9c9b1501353b1dbce6e0fd3c073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get distance between camera and its object. <br /></td></tr>
-<tr class="separator:a6cebc9c9b1501353b1dbce6e0fd3c073"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf3474a172796657d5d91051c0a5bcda"><td class="memItemLeft" align="right" valign="top"><a id="abf3474a172796657d5d91051c0a5bcda"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_viewport_input_behavior_controller.html#abf3474a172796657d5d91051c0a5bcda">GetRadius</a> () const override</td></tr>
-<tr class="memdesc:abf3474a172796657d5d91051c0a5bcda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get bounding sphere radius of the active object. <br /></td></tr>
-<tr class="separator:abf3474a172796657d5d91051c0a5bcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace273684f665ea173e9f71774741cd16"><td class="memItemLeft" align="right" valign="top"><a id="ace273684f665ea173e9f71774741cd16"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_viewport_input_behavior_controller.html#ace273684f665ea173e9f71774741cd16">GetObjectRadiusMin</a> () const override</td></tr>
+<tr class="memdesc:ace273684f665ea173e9f71774741cd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum radius of the object entity bounding box. <br /></td></tr>
+<tr class="separator:ace273684f665ea173e9f71774741cd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde79cec3584cb62ce1b7ff1fc2adcba"><td class="memItemLeft" align="right" valign="top"><a id="abde79cec3584cb62ce1b7ff1fc2adcba"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_viewport_input_behavior_controller.html#abde79cec3584cb62ce1b7ff1fc2adcba">GetObjectRadius</a> () const override</td></tr>
+<tr class="memdesc:abde79cec3584cb62ce1b7ff1fc2adcba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the radius of the object entity bounding box. <br /></td></tr>
+<tr class="separator:abde79cec3584cb62ce1b7ff1fc2adcba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d8eb8affaa19adddd510ee7f0d8e113"><td class="memItemLeft" align="right" valign="top"><a id="a8d8eb8affaa19adddd510ee7f0d8e113"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_viewport_input_behavior_controller.html#a8d8eb8affaa19adddd510ee7f0d8e113">GetObjectDistance</a> () const override</td></tr>
+<tr class="memdesc:a8d8eb8affaa19adddd510ee7f0d8e113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get distance between camera and its object. <br /></td></tr>
+<tr class="separator:a8d8eb8affaa19adddd510ee7f0d8e113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2a9ad50707b1716a92e6cdd0145d457"><td class="memItemLeft" align="right" valign="top"><a id="ad2a9ad50707b1716a92e6cdd0145d457"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_viewport_input_behavior_controller.html#ad2a9ad50707b1716a92e6cdd0145d457">Reset</a> () override</td></tr>
 <tr class="memdesc:ad2a9ad50707b1716a92e6cdd0145d457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset camera to default position and rotation. <br /></td></tr>
@@ -218,7 +222,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateViewport</b> (c
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 30 2022 10:04:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

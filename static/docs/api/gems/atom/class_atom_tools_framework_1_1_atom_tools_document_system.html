@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">2210.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -117,9 +117,27 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveDocumentAsChild</
 <tr class="memitem:afe17f0fbc5f86a3b303ed20e624080b8"><td class="memItemLeft" align="right" valign="top"><a id="afe17f0fbc5f86a3b303ed20e624080b8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveAllDocuments</b> () override</td></tr>
 <tr class="separator:afe17f0fbc5f86a3b303ed20e624080b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c061a50fcc119fa29f96f9c6121a5be"><td class="memItemLeft" align="right" valign="top"><a id="a8c061a50fcc119fa29f96f9c6121a5be"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveAllModifiedDocuments</b> () override</td></tr>
+<tr class="separator:a8c061a50fcc119fa29f96f9c6121a5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02b03950a19157593f37425085cbf51a"><td class="memItemLeft" align="right" valign="top"><a id="a02b03950a19157593f37425085cbf51a"></a>
 AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetDocumentCount</b> () const override</td></tr>
 <tr class="separator:a02b03950a19157593f37425085cbf51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92eaf8f72b96e41346a4e22eb144e0f0"><td class="memItemLeft" align="right" valign="top"><a id="a92eaf8f72b96e41346a4e22eb144e0f0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDocumentOpen</b> (const AZ::Uuid &amp;documentId) const override</td></tr>
+<tr class="separator:a92eaf8f72b96e41346a4e22eb144e0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb0cb234d32e90d9cff3b214ca069b21"><td class="memItemLeft" align="right" valign="top"><a id="acb0cb234d32e90d9cff3b214ca069b21"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRecentFilePath</b> (const AZStd::string &amp;absolutePath) override</td></tr>
+<tr class="separator:acb0cb234d32e90d9cff3b214ca069b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac986e5fb73d6e4eeacd0bafb9890e9ad"><td class="memItemLeft" align="right" valign="top"><a id="ac986e5fb73d6e4eeacd0bafb9890e9ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearRecentFilePaths</b> () override</td></tr>
+<tr class="separator:ac986e5fb73d6e4eeacd0bafb9890e9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b33339a0e4ee53d187ef2ab3a5951f"><td class="memItemLeft" align="right" valign="top"><a id="a81b33339a0e4ee53d187ef2ab3a5951f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRecentFilePaths</b> (const AZStd::vector&lt; AZStd::string &gt; &amp;absolutePaths) override</td></tr>
+<tr class="separator:a81b33339a0e4ee53d187ef2ab3a5951f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff0962c0ff032bdcdff841bb448428a3"><td class="memItemLeft" align="right" valign="top"><a id="aff0962c0ff032bdcdff841bb448428a3"></a>
+const AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRecentFilePaths</b> () const override</td></tr>
+<tr class="separator:aff0962c0ff032bdcdff841bb448428a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -135,7 +153,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 30 2022 10:04:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine GradientSignal Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">2210.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -58,7 +58,7 @@ $(function() {
 
 <p><code>#include &lt;SurfaceMaskGradientComponent.h&gt;</code></p>
 
-<p>Inherits Component, Handler, and Handler.</p>
+<p>Inherits Component, Handler, Handler, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -113,6 +113,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveTag</b> (int ta
 <tr class="memitem:ab4dc994c5ef2f5d00976d1c91935a78d"><td class="memItemLeft" align="right" valign="top"><a id="ab4dc994c5ef2f5d00976d1c91935a78d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddTag</b> (AZStd::string tag) override</td></tr>
 <tr class="separator:ab4dc994c5ef2f5d00976d1c91935a78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab536d4d3212255d05f4862167382345"><td class="memItemLeft" align="right" valign="top"><a id="aab536d4d3212255d05f4862167382345"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSurfaceChanged</b> (const AZ::EntityId &amp;entityId, const AZ::Aabb &amp;oldBounds, const AZ::Aabb &amp;newBounds, const SurfaceData::SurfaceTagSet &amp;changedSurfaceTags) override</td></tr>
+<tr class="separator:aab536d4d3212255d05f4862167382345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -129,7 +132,7 @@ template&lt;typename , typename &gt; </td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:47 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 30 2022 10:04:49 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

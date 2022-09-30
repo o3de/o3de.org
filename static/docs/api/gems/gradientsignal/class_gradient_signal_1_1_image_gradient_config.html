@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine GradientSignal Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">2210.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -65,12 +65,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac29cd1e67df2834df66b3925e4e87073"><td class="memItemLeft" align="right" valign="top"><a id="ac29cd1e67df2834df66b3925e4e87073"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_gradient_signal_1_1_image_gradient_config.html">ImageGradientConfig</a>, &quot;{1BDB5DA4-A4A8-452B-BE6D-6BD451D4E7CD}&quot;, AZ::ComponentConfig)</td></tr>
 <tr class="separator:ac29cd1e67df2834df66b3925e4e87073"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a410d9a7ecc7a858209489f8e25e5c91f"><td class="memItemLeft" align="right" valign="top"><a id="a410d9a7ecc7a858209489f8e25e5c91f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAdvancedModeReadOnly</b> () const</td></tr>
-<tr class="separator:a410d9a7ecc7a858209489f8e25e5c91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad570f729204852c899cc89cd1c52a0e4"><td class="memItemLeft" align="right" valign="top"><a id="ad570f729204852c899cc89cd1c52a0e4"></a>
-AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetManualScaleVisibility</b> () const</td></tr>
-<tr class="separator:ad570f729204852c899cc89cd1c52a0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af190df0c8db0319a21ff1dd1b110fc4c"><td class="memItemLeft" align="right" valign="top"><a id="af190df0c8db0319a21ff1dd1b110fc4c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetManualScaleVisibility</b> () const</td></tr>
+<tr class="separator:af190df0c8db0319a21ff1dd1b110fc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13276ed91b87e65954d8ce2f9af7ee7"><td class="memItemLeft" align="right" valign="top"><a id="ac13276ed91b87e65954d8ce2f9af7ee7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsImageAssetReadOnly</b> () const</td></tr>
+<tr class="separator:ac13276ed91b87e65954d8ce2f9af7ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959674eab43b109d58bef7c7ab8f1a10"><td class="memItemLeft" align="right" valign="top"><a id="a959674eab43b109d58bef7c7ab8f1a10"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>AreImageOptionsReadOnly</b> () const</td></tr>
+<tr class="separator:a959674eab43b109d58bef7c7ab8f1a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef5b7449d0c609dbbb11a891a066c90e"><td class="memItemLeft" align="right" valign="top"><a id="aef5b7449d0c609dbbb11a891a066c90e"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageAssetPropertyName</b> () const</td></tr>
+<tr class="separator:aef5b7449d0c609dbbb11a891a066c90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a2b74b732f55e9ac96d4798d7f8399"><td class="memItemLeft" align="right" valign="top"><a id="a10a2b74b732f55e9ac96d4798d7f8399"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetImageAssetPropertyName</b> (const AZStd::string &amp;imageAssetPropertyName)</td></tr>
+<tr class="separator:a10a2b74b732f55e9ac96d4798d7f8399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -81,22 +90,24 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a19685182d3aad159ab64c67727a0098a"><td class="memItemLeft" align="right" valign="top"><a id="a19685182d3aad159ab64c67727a0098a"></a>
-AZ::Data::Asset&lt; AZ::RPI::StreamingImageAsset &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_imageAsset</b> = { AZ::Data::AssetLoadBehavior::QueueLoad }</td></tr>
+AZ::Data::Asset&lt; AZ::RPI::StreamingImageAsset &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gradient_signal_1_1_image_gradient_config.html#a19685182d3aad159ab64c67727a0098a">m_imageAsset</a> = { AZ::Data::AssetLoadBehavior::QueueLoad }</td></tr>
+<tr class="memdesc:a19685182d3aad159ab64c67727a0098a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The image asset used for the image gradient. <br /></td></tr>
 <tr class="separator:a19685182d3aad159ab64c67727a0098a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04c591cda48a1ac96a7f88c240f76762"><td class="memItemLeft" align="right" valign="top"><a id="a04c591cda48a1ac96a7f88c240f76762"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_tilingX</b> = 1.0f</td></tr>
-<tr class="separator:a04c591cda48a1ac96a7f88c240f76762"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a0ad4ac94697c07cd220f19ec86abac"><td class="memItemLeft" align="right" valign="top"><a id="a6a0ad4ac94697c07cd220f19ec86abac"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_tilingY</b> = 1.0f</td></tr>
-<tr class="separator:a6a0ad4ac94697c07cd220f19ec86abac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39a376b777d123bdab21d5b5ad2ebbe3"><td class="memItemLeft" align="right" valign="top"><a id="a39a376b777d123bdab21d5b5ad2ebbe3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_advancedMode</b> = false</td></tr>
-<tr class="separator:a39a376b777d123bdab21d5b5ad2ebbe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af88df7b166610eed0d85a27d7389f54b"><td class="memItemLeft" align="right" valign="top"><a id="af88df7b166610eed0d85a27d7389f54b"></a>
+AZ::Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gradient_signal_1_1_image_gradient_config.html#af88df7b166610eed0d85a27d7389f54b">m_tiling</a> = AZ::Vector2::CreateOne()</td></tr>
+<tr class="memdesc:af88df7b166610eed0d85a27d7389f54b"><td class="mdescLeft">&#160;</td><td class="mdescRight">How often the image should repeat within its shape bounds. <br /></td></tr>
+<tr class="separator:af88df7b166610eed0d85a27d7389f54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84fa468cff6904f9329ebee6dab86923"><td class="memItemLeft" align="right" valign="top"><a id="a84fa468cff6904f9329ebee6dab86923"></a>
-ChannelToUse&#160;</td><td class="memItemRight" valign="bottom"><b>m_channelToUse</b> = ChannelToUse::Red</td></tr>
+ChannelToUse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gradient_signal_1_1_image_gradient_config.html#a84fa468cff6904f9329ebee6dab86923">m_channelToUse</a> = ChannelToUse::Red</td></tr>
+<tr class="memdesc:a84fa468cff6904f9329ebee6dab86923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which color channel to use from the image. <br /></td></tr>
 <tr class="separator:a84fa468cff6904f9329ebee6dab86923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ecb58d0133e93f5fd404a0c802bead"><td class="memItemLeft" align="right" valign="top"><a id="a45ecb58d0133e93f5fd404a0c802bead"></a>
+AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gradient_signal_1_1_image_gradient_config.html#a45ecb58d0133e93f5fd404a0c802bead">m_mipIndex</a> = 0</td></tr>
+<tr class="memdesc:a45ecb58d0133e93f5fd404a0c802bead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which mipmap level to use from the image. <br /></td></tr>
+<tr class="separator:a45ecb58d0133e93f5fd404a0c802bead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c931d32d4c22e84c1f055ce12dbac38"><td class="memItemLeft" align="right" valign="top"><a id="a7c931d32d4c22e84c1f055ce12dbac38"></a>
-CustomScaleType&#160;</td><td class="memItemRight" valign="bottom"><b>m_customScaleType</b> = CustomScaleType::None</td></tr>
+CustomScaleType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gradient_signal_1_1_image_gradient_config.html#a7c931d32d4c22e84c1f055ce12dbac38">m_customScaleType</a> = CustomScaleType::None</td></tr>
+<tr class="memdesc:a7c931d32d4c22e84c1f055ce12dbac38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale type to apply to the image data. (Auto = auto-scale data to use full 0-1 range, Manual = use scaleRangeMin/Max) <br /></td></tr>
 <tr class="separator:a7c931d32d4c22e84c1f055ce12dbac38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07d8b9d937108a1f3ee7c4bbdd1873ef"><td class="memItemLeft" align="right" valign="top"><a id="a07d8b9d937108a1f3ee7c4bbdd1873ef"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_scaleRangeMin</b> = 0.0f</td></tr>
@@ -104,6 +115,18 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_scaleRangeMin</b> 
 <tr class="memitem:ad7f12790e114cdb8bd0f24414239f7af"><td class="memItemLeft" align="right" valign="top"><a id="ad7f12790e114cdb8bd0f24414239f7af"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_scaleRangeMax</b> = 1.0f</td></tr>
 <tr class="separator:ad7f12790e114cdb8bd0f24414239f7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84570b55ec57f1c2969b06c3476fd64a"><td class="memItemLeft" align="right" valign="top"><a id="a84570b55ec57f1c2969b06c3476fd64a"></a>
+SamplingType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gradient_signal_1_1_image_gradient_config.html#a84570b55ec57f1c2969b06c3476fd64a">m_samplingType</a> = SamplingType::Point</td></tr>
+<tr class="memdesc:a84570b55ec57f1c2969b06c3476fd64a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which sampling method to use for querying gradient values (Point = exact image data, Bilinear = interpolated image data) <br /></td></tr>
+<tr class="separator:a84570b55ec57f1c2969b06c3476fd64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a017afe5c4e8d65c9bd4e13624acbb455"><td class="memItemLeft" align="right" valign="top"><a id="a017afe5c4e8d65c9bd4e13624acbb455"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gradient_signal_1_1_image_gradient_config.html#a017afe5c4e8d65c9bd4e13624acbb455">m_imageModificationActive</a> = false</td></tr>
+<tr class="memdesc:a017afe5c4e8d65c9bd4e13624acbb455"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if we're currently modifying the image, false if not. <br /></td></tr>
+<tr class="separator:a017afe5c4e8d65c9bd4e13624acbb455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39eac992146f6445c139ea2742e69676"><td class="memItemLeft" align="right" valign="top"><a id="a39eac992146f6445c139ea2742e69676"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gradient_signal_1_1_image_gradient_config.html#a39eac992146f6445c139ea2742e69676">m_imageAssetPropertyLabel</a> = &quot;Image Asset&quot;</td></tr>
+<tr class="memdesc:a39eac992146f6445c139ea2742e69676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Label to use for the image asset. This gets modified to show current asset loading/processing state. <br /></td></tr>
+<tr class="separator:a39eac992146f6445c139ea2742e69676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/GradientSignal/Code/Include/GradientSignal/Components/ImageGradientComponent.h</li>
@@ -111,7 +134,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_scaleRangeMax</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:47 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 30 2022 10:04:48 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

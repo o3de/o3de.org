@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">2210.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -91,18 +91,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_adapter_builder.html#aa32eac104f50236c0d7afec62286dfdb">EndPropertyEditor</a> ()</td></tr>
 <tr class="memdesc:aa32eac104f50236c0d7afec62286dfdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience method, calls EndNode&lt;Nodes::PropertyEditor&gt;() <br /></td></tr>
 <tr class="separator:aa32eac104f50236c0d7afec62286dfdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6c4a895e6ef319df140f34366260c01"><td class="memItemLeft" align="right" valign="top"><a id="ac6c4a895e6ef319df140f34366260c01"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_adapter_builder.html#ac6c4a895e6ef319df140f34366260c01">Label</a> (AZStd::string_view text, bool copy=true)</td></tr>
-<tr class="memdesc:ac6c4a895e6ef319df140f34366260c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a Label node with the specified text. <br /></td></tr>
-<tr class="separator:ac6c4a895e6ef319df140f34366260c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef6122ca6427db168864f41ca42afec"><td class="memItemLeft" align="right" valign="top"><a id="a4ef6122ca6427db168864f41ca42afec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_adapter_builder.html#a4ef6122ca6427db168864f41ca42afec">Label</a> (AZStd::string_view text)</td></tr>
+<tr class="memdesc:a4ef6122ca6427db168864f41ca42afec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a Label node with the specified text. <br /></td></tr>
+<tr class="separator:a4ef6122ca6427db168864f41ca42afec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89f3f23247dfa540aa7e25dab829138e"><td class="memItemLeft" align="right" valign="top"><a id="a89f3f23247dfa540aa7e25dab829138e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_adapter_builder.html#a89f3f23247dfa540aa7e25dab829138e">Value</a> (Dom::Value value)</td></tr>
 <tr class="memdesc:a89f3f23247dfa540aa7e25dab829138e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the last node. Used for setting the current value of a property editor. <br /></td></tr>
 <tr class="separator:a89f3f23247dfa540aa7e25dab829138e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd9e6b91d6cdff1e70fb1c713a4b9dd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_adapter_builder.html#acd9e6b91d6cdff1e70fb1c713a4b9dd5">Attribute</a> (Name attribute, Dom::Value value)</td></tr>
 <tr class="separator:acd9e6b91d6cdff1e70fb1c713a4b9dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a0a84fff7a618a1cc7692268e06d0f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_adapter_builder.html#a3a0a84fff7a618a1cc7692268e06d0f6">OnEditorChanged</a> (AZStd::function&lt; void(const Dom::Path &amp;, const Dom::Value &amp;)&gt; onChangedCallback)</td></tr>
-<tr class="separator:a3a0a84fff7a618a1cc7692268e06d0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d63d6ff42c13cd2de6bf079109aea77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_adapter_builder.html#a7d63d6ff42c13cd2de6bf079109aea77">OnEditorChanged</a> (AZStd::function&lt; void(const Dom::Path &amp;, const Dom::Value &amp;, Nodes::ValueChangeType)&gt; onChangedCallback)</td></tr>
+<tr class="separator:a7d63d6ff42c13cd2de6bf079109aea77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa76ab9c9e3f5ee33e0d6bc2df93ed5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_adapter_builder.html#acaa76ab9c9e3f5ee33e0d6bc2df93ed5">AddMessageHandler</a> (<a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html">DocumentAdapter</a> *adapter, AZ::Name messageName, const Dom::Value &amp;contextData={})</td></tr>
+<tr class="separator:acaa76ab9c9e3f5ee33e0d6bc2df93ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10ecdf5e0f145a868280d8ab8fd25805"><td class="memItemLeft" align="right" valign="top"><a id="a10ecdf5e0f145a868280d8ab8fd25805"></a>
 Dom::Path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_adapter_builder.html#a10ecdf5e0f145a868280d8ab8fd25805">GetCurrentPath</a> () const</td></tr>
 <tr class="memdesc:a10ecdf5e0f145a868280d8ab8fd25805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the path to the DOM node currently being built within this builder's DOM. <br /></td></tr>
@@ -117,10 +119,10 @@ const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a 
 <tr class="separator:a21d01706cf7d0b0569d0e58ccb9c13f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc473cdaa0c564dcb03429b1291a3c0e"><td class="memItemLeft" align="right" valign="top">Dom::Value &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_adapter_builder.html#abc473cdaa0c564dcb03429b1291a3c0e">FinishAndTakeResult</a> ()</td></tr>
 <tr class="separator:abc473cdaa0c564dcb03429b1291a3c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828f2b10cf2a3e444e1ff0ed0125ea5a"><td class="memTemplParams" colspan="2"><a id="a828f2b10cf2a3e444e1ff0ed0125ea5a"></a>
-template&lt;class PropertyEditorDefinition &gt; </td></tr>
-<tr class="memitem:a828f2b10cf2a3e444e1ff0ed0125ea5a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>BeginPropertyEditor</b> (Dom::Value value={})</td></tr>
-<tr class="separator:a828f2b10cf2a3e444e1ff0ed0125ea5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a281bcace9413fb35549cd33cedf5b0"><td class="memTemplParams" colspan="2"><a id="a1a281bcace9413fb35549cd33cedf5b0"></a>
+template&lt;class PropertyEditorDefinition , class ValueType  = AZ::Dom::Value&gt; </td></tr>
+<tr class="memitem:a1a281bcace9413fb35549cd33cedf5b0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>BeginPropertyEditor</b> (ValueType value={})</td></tr>
+<tr class="separator:a1a281bcace9413fb35549cd33cedf5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a834dbd597edb0231676fe514c2f1fffc"><td class="memTemplParams" colspan="2"><a id="a834dbd597edb0231676fe514c2f1fffc"></a>
 template&lt;class NodeDefinition &gt; </td></tr>
 <tr class="memitem:a834dbd597edb0231676fe514c2f1fffc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>BeginNode</b> ()</td></tr>
@@ -144,10 +146,56 @@ template&lt;class CallbackType , class Functor &gt; </td></tr>
 <tr class="memitem:ab1f3385aaa4eb6d53ea7c9a99bcec383"><td class="memItemLeft" align="right" valign="top"><a id="ab1f3385aaa4eb6d53ea7c9a99bcec383"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Attribute</b> (const <a class="el" href="class_a_z_1_1_document_property_editor_1_1_attribute_definition.html">AttributeDefinition</a>&lt; AZStd::string_view &gt; &amp;definition, AZStd::string_view value)</td></tr>
 <tr class="separator:ab1f3385aaa4eb6d53ea7c9a99bcec383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf57cefb3a84cd6e8bf5d0a217c7041"><td class="memTemplParams" colspan="2"><a id="accf57cefb3a84cd6e8bf5d0a217c7041"></a>
+template&lt;class CallbackType &gt; </td></tr>
+<tr class="memitem:accf57cefb3a84cd6e8bf5d0a217c7041"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>AddMessageHandler</b> (<a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html">DocumentAdapter</a> *adapter, const <a class="el" href="class_a_z_1_1_document_property_editor_1_1_callback_attribute_definition.html">CallbackAttributeDefinition</a>&lt; CallbackType &gt; &amp;callback, const Dom::Value &amp;contextData={})</td></tr>
+<tr class="separator:accf57cefb3a84cd6e8bf5d0a217c7041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper class that builds a DOM suitable for usage in a <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html">DocumentAdapter</a>. Uses a visitor pattern to establish node elements. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="acaa76ab9c9e3f5ee33e0d6bc2df93ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaa76ab9c9e3f5ee33e0d6bc2df93ed5">&#9670;&nbsp;</a></span>AddMessageHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::DocumentPropertyEditor::AdapterBuilder::AddMessageHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html">DocumentAdapter</a> *&#160;</td>
+          <td class="paramname"><em>adapter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::Name&#160;</td>
+          <td class="paramname"><em>messageName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dom::Value &amp;&#160;</td>
+          <td class="paramname"><em>contextData</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a message handler bound to the given adapter for a given message name or callback attribute. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adapter</td><td>The adapter to bind this message to. </td></tr>
+    <tr><td class="paramname">messageName</td><td>The name of the message. </td></tr>
+    <tr><td class="paramname">contextData</td><td>If specified, is provided as additional message data when this message is sent. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="acd9e6b91d6cdff1e70fb1c713a4b9dd5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd9e6b91d6cdff1e70fb1c713a4b9dd5">&#9670;&nbsp;</a></span>Attribute()</h2>
 
@@ -262,8 +310,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Attribute</b> (const 
 
 </div>
 </div>
-<a id="a3a0a84fff7a618a1cc7692268e06d0f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a0a84fff7a618a1cc7692268e06d0f6">&#9670;&nbsp;</a></span>OnEditorChanged()</h2>
+<a id="a7d63d6ff42c13cd2de6bf079109aea77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d63d6ff42c13cd2de6bf079109aea77">&#9670;&nbsp;</a></span>OnEditorChanged()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -271,7 +319,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Attribute</b> (const 
         <tr>
           <td class="memname">void AZ::DocumentPropertyEditor::AdapterBuilder::OnEditorChanged </td>
           <td>(</td>
-          <td class="paramtype">AZStd::function&lt; void(const Dom::Path &amp;, const Dom::Value &amp;)&gt;&#160;</td>
+          <td class="paramtype">AZStd::function&lt; void(const Dom::Path &amp;, const Dom::Value &amp;, Nodes::ValueChangeType)&gt;&#160;</td>
           <td class="paramname"><em>onChangedCallback</em></td><td>)</td>
           <td></td>
         </tr>
@@ -287,7 +335,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Attribute</b> (const 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:18:00 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 30 2022 10:02:58 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

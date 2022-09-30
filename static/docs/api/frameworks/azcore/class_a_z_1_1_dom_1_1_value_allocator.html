@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">2210.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -61,11 +61,11 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aa0a3627c9c68ef179c8e9a072fec747a"><td class="memItemLeft" align="right" valign="top"><a id="aa0a3627c9c68ef179c8e9a072fec747a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Base</b> = <a class="el" href="class_a_z_1_1_simple_schema_allocator.html">SimpleSchemaAllocator</a>&lt; <a class="el" href="class_a_z_1_1_hpha_schema.html">AZ::HphaSchema</a>, <a class="el" href="struct_a_z_1_1_hpha_schema_1_1_descriptor.html">AZ::HphaSchema::Descriptor</a>, false, false &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Base</b> = <a class="el" href="class_a_z_1_1_simple_schema_allocator.html">SimpleSchemaAllocator</a>&lt; <a class="el" href="class_a_z_1_1_hpha_schema.html">AZ::HphaSchema</a>, AZ::HphaSchema::Descriptor, false, false &gt;</td></tr>
 <tr class="separator:aa0a3627c9c68ef179c8e9a072fec747a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_a_z_1_1_simple_schema_allocator"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_z_1_1_simple_schema_allocator')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_z_1_1_simple_schema_allocator.html">AZ::SimpleSchemaAllocator&lt; AZ::HphaSchema, AZ::HphaSchema::Descriptor, false, false &gt;</a></td></tr>
 <tr class="memitem:af0f35a4e9f1617ba88e9a197b66e8685 inherit pub_types_class_a_z_1_1_simple_schema_allocator"><td class="memItemLeft" align="right" valign="top"><a id="af0f35a4e9f1617ba88e9a197b66e8685"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Descriptor</b> = <a class="el" href="struct_a_z_1_1_hpha_schema_1_1_descriptor.html">AZ::HphaSchema::Descriptor</a></td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Descriptor</b> = AZ::HphaSchema::Descriptor</td></tr>
 <tr class="separator:af0f35a4e9f1617ba88e9a197b66e8685 inherit pub_types_class_a_z_1_1_simple_schema_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae717ea28bd81a3f4cdef68a8ecb7bf4d inherit pub_types_class_a_z_1_1_simple_schema_allocator"><td class="memItemLeft" align="right" valign="top"><a id="ae717ea28bd81a3f4cdef68a8ecb7bf4d"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>pointer_type</b> = typename <a class="el" href="class_a_z_1_1_hpha_schema.html">AZ::HphaSchema</a> ::pointer_type</td></tr>
@@ -97,7 +97,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SimpleSchemaAllocator</b> (const char *name, const char *desc)</td></tr>
 <tr class="separator:ad996accabbb71aa8074025dcb23bfb8b inherit pub_methods_class_a_z_1_1_simple_schema_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a853aa1be897089a719fece2494b5a1 inherit pub_methods_class_a_z_1_1_simple_schema_allocator"><td class="memItemLeft" align="right" valign="top"><a id="a2a853aa1be897089a719fece2494b5a1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> (const <a class="el" href="struct_a_z_1_1_hpha_schema_1_1_descriptor.html">Descriptor</a> &amp;desc=<a class="el" href="struct_a_z_1_1_hpha_schema_1_1_descriptor.html">Descriptor</a>())</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> (const Descriptor &amp;desc=Descriptor())</td></tr>
 <tr class="separator:a2a853aa1be897089a719fece2494b5a1 inherit pub_methods_class_a_z_1_1_simple_schema_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dc339590e07dea530a5a1bd89522493 inherit pub_methods_class_a_z_1_1_simple_schema_allocator"><td class="memItemLeft" align="right" valign="top"><a id="a2dc339590e07dea530a5a1bd89522493"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Destroy</b> () override</td></tr>
@@ -263,7 +263,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:17:21 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 30 2022 10:02:16 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

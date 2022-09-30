@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">2210.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -81,6 +81,12 @@ virtual AZ::TimeUs&#160;</td><td class="memItemRight" valign="bottom"><b>GetReal
 <tr class="memitem:a866c90dfe4895c5435b330bd85ee2497"><td class="memItemLeft" align="right" valign="top"><a id="a866c90dfe4895c5435b330bd85ee2497"></a>
 virtual AZ::TimeUs&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastSimulationTickTime</b> () const override</td></tr>
 <tr class="separator:a866c90dfe4895c5435b330bd85ee2497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414c8d6b0fdf855b96227379e151c79b"><td class="memItemLeft" align="right" valign="top"><a id="a414c8d6b0fdf855b96227379e151c79b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetElapsedTimeMsDebug</b> ([[maybe_unused]] TimeMs timeMs) override</td></tr>
+<tr class="separator:a414c8d6b0fdf855b96227379e151c79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ed42edc3ecd65acb55bd697f5adc680"><td class="memItemLeft" align="right" valign="top"><a id="a8ed42edc3ecd65acb55bd697f5adc680"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetElapsedTimeUsDebug</b> ([[maybe_unused]] TimeUs timeUs) override</td></tr>
+<tr class="separator:a8ed42edc3ecd65acb55bd697f5adc680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d674b300aafcb35715d9a71fb783b71"><td class="memItemLeft" align="right" valign="top"><a id="a4d674b300aafcb35715d9a71fb783b71"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSimulationTickDeltaOverride</b> ([[maybe_unused]]TimeMs timeMs) override</td></tr>
 <tr class="separator:a4d674b300aafcb35715d9a71fb783b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,6 +124,12 @@ TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>GetRealElapsedTimeM
 <tr class="memitem:a201cf5c686d8ffc7c0060a245b3fb027 inherit pub_methods_class_a_z_1_1_time_system"><td class="memItemLeft" align="right" valign="top"><a id="a201cf5c686d8ffc7c0060a245b3fb027"></a>
 TimeUs&#160;</td><td class="memItemRight" valign="bottom"><b>GetRealElapsedTimeUs</b> () const override</td></tr>
 <tr class="separator:a201cf5c686d8ffc7c0060a245b3fb027 inherit pub_methods_class_a_z_1_1_time_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b427e47781bd46bf5d7067eb3f48ebc inherit pub_methods_class_a_z_1_1_time_system"><td class="memItemLeft" align="right" valign="top"><a id="a2b427e47781bd46bf5d7067eb3f48ebc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetElapsedTimeMsDebug</b> (TimeMs time) override</td></tr>
+<tr class="separator:a2b427e47781bd46bf5d7067eb3f48ebc inherit pub_methods_class_a_z_1_1_time_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60bee4667f144900a6bbfaf338081911 inherit pub_methods_class_a_z_1_1_time_system"><td class="memItemLeft" align="right" valign="top"><a id="a60bee4667f144900a6bbfaf338081911"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetElapsedTimeUsDebug</b> (TimeUs time) override</td></tr>
+<tr class="separator:a60bee4667f144900a6bbfaf338081911 inherit pub_methods_class_a_z_1_1_time_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace45fcc0ecd5022ffeb5da77e8aa7da8 inherit pub_methods_class_a_z_1_1_time_system"><td class="memItemLeft" align="right" valign="top"><a id="ace45fcc0ecd5022ffeb5da77e8aa7da8"></a>
 TimeUs&#160;</td><td class="memItemRight" valign="bottom"><b>GetSimulationTickDeltaTimeUs</b> () const override</td></tr>
 <tr class="separator:ace45fcc0ecd5022ffeb5da77e8aa7da8 inherit pub_methods_class_a_z_1_1_time_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,7 +171,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:17:19 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 30 2022 10:02:15 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
