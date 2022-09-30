@@ -87,7 +87,7 @@ In this section, you'll create a terrain spawner entity and a gradient entity. T
 
 1. Create a new entity (hotkey **Ctrl + Alt + N**). Name the entity `Terrain Spawner`.
 
-2. With the entity selected, in Entity Inspector, add a **Terrain Layer Spawner** component. This component enables the entity to generate terrain.
+2. With the entity selected, add a **Terrain Layer Spawner** component. This component enables the entity to generate terrain.
 
 3. The **Terrain Layer Spawner** component displays a warning about missing a required component. Choose **Add Required Component** and select **Axis Aligned Box Shape** from the list. This box shape defines the extents of the generated terrain.
 
