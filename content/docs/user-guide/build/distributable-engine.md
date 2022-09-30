@@ -227,7 +227,7 @@ Whenever working on their project, project developers should launch the tools th
 
 ### License file generation
 
-License attribution files can be generated during the project development process to properly attribute any code or packages that were imported (often called the NOTICES file). To scan project directories for licenses, project developers can run a script located in the engine's `scripts\license_scanner` subdirectory.
+License attribution files (often called the NOTICES file) can be generated during the project development process to properly attribute any code or packages that were imported. To scan project directories for licenses, project developers can run a script located in the engine's `scripts\license_scanner` subdirectory.
 
 In this example, with the engine, project, and `C:\o3de-source\3rdParty` as your downloadable packages folder, run the following script in the engine source folder:
    ```cmd
