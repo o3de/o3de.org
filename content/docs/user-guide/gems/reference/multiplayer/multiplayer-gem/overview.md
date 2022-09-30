@@ -58,10 +58,19 @@ Since each entity with a multiplayer component is replicated across the network,
 
 The roles offered for O3DE multiplayer hosts are:
 
-* **Client**: The lowest privilege role for a component. The smallest possible subset of network properties are replicated to this role, and its behavior is strictly read-only. Use this role when working with entities that should contain only presentation logic and act as a proxy for invoking RPCs. Examples of entities which should use this role are AIs and entities under the control of another host.
-* **Autonomous**: A role with the _illusion_ of write access. Autonomous roles are usually assigned to components directly under local user control, and receive a larger amount of network information than a Client role. Autonomous roles can also take advantage of predictive networking.
-* **Authority**: This role has ultimate authority. It has full write access, and sees all network properties on the component.
+* **Client** (`NetEntityRole::Client`): The lowest privilege role for a component. The smallest possible subset of network properties are replicated to this role, and its behavior is strictly read-only. Use this role when working with entities that should contain only presentation logic and act as a proxy for invoking RPCs. Examples of entities which should use this role are AIs and entities under the control of another host.
 
-In addition to the roles described above, O3DE has an additional role found only in multiserver instances:
+* **Autonomous** (`NetEntityRole::Autonomous`): A role with the _illusion_ of write access. Autonomous roles are usually assigned to components directly under local user control. These roles receive a larger amount of network information than a Client role. Autonomous roles can also take advantage of predictive networking.
 
-* **ServerProxy**: Provided to servers which *don't* have authority over a particular component. The proxy dummies out the networking properties which the server should treat as if they were in the Client role. In the event of a server crash, proxy servers can fully assume the Server role as a hot backup.
+* **Authority** (`NetEntityRole::Authority`): The role with ultimate authority. It has full write access and sees all network properties on the component.
+In addition to the previously described roles, O3DE has an additional role found only in multiserver instances:
+
+* **Server** (`NetEntityRole::Server`): Provided to servers that *don't* have authority over a particular component. The proxy dummies out the networking properties, which the server should treat as if they were in the Client role.
+
+## Related topics
+
+| Topic | Description |
+|--|--|
+| [Networking](/docs/user-guide/networking/) | Learn about `AzNetworking`, the core networking framework that O3DE uses, and that the Multiplayer Gem is built on top of. |
+| [Automate Source Generation from Templates with AzAutoGen](/docs/user-guide/engine/autogen/) | Learn about the AzAutoGen code generation system used to create [auto-components](./autocomponents) for projects using the Multiplayer Gem. |
+| [Open 3D Engine Multiplayer Gem API Reference](/docs/api/gems/multiplayer/) | The C++ API reference for classes that the Multiplayer Gem provides. |
