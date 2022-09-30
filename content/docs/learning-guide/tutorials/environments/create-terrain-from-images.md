@@ -129,7 +129,7 @@ Changing the **Sampling Type** property in the **Image Gradient** component from
 
 7. Select the Terrain Spawner entity. In the **Terrain Height Gradient List** component, click the {{< icon "add.svg" >}} **Add** button to add a new gradient slot. Click the {{< icon "picker.svg" >}} **Picker** button, then click the Terrain Gradient entity in Entity Outliner to create a reference.
 
-8. In the **Gradient Transform Modifier** component, set the **Wrapping Type** property to either `Clamp To Zero` or `Clamp To Edge`. Leaving this property set to `Unbounded` night create artifacts at the edges of the terrain.
+8. Select the Terrain Gradient entity. In the **Gradient Transform Modifier** component, set the **Wrapping Type** property to either `Clamp To Zero` or `Clamp To Edge`. Leaving this property set to `Unbounded` might create artifacts at the edges of the terrain.
 
 9. **Save** the level (hotkey **Ctrl + S**).
 
