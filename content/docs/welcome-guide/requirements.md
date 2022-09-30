@@ -46,7 +46,7 @@ or later is required.
 The following versions of Visual Studio are supported:
 
 + [Microsoft Visual Studio 2019](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes) version **16.11.x**.
-+ [Microsoft Visual Studio 2022](https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes) version **17.3.x**. **A minimum of CMake 3.21.7 or above is required to build with Visual Studio 2022**.
++ [Microsoft Visual Studio 2022](https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes) version **17.3.x**.
 
 You can use any Microsoft Visual Studio license, including the Community edition.
 
