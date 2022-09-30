@@ -260,6 +260,10 @@ Follow the instructions in [Bundling Assets for a Project Game Release Layout](a
 
 You may notice that both your bundled assets are smaller than the default `engine.pak` that was created automatically when you created a project game release layout earlier. 
 
+## License file generation
+License attribution files (often called the NOTICES file) can be generated during the project development process to properly attribute any code or downloadable packages that were imported. To scan project and package directories for licenses, you can run a script located in the engine's `scripts\license_scanner` subdirectory. This script will look for the `PackageInfo.json` file in order to create a summary file of all package licenses with SPDX tags for easy reference.
+
+Refer to the instructions in [Engine and Project Distribution](/docs/user-guide/build/distributable-engine#license-file-generation) for more details. Generally, you will copy the generated file to the root of your game release layout to properly attribute your dependencies.
 
 ## Run the Game Launcher
 
