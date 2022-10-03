@@ -182,13 +182,6 @@ The minimum version of Clang required by O3DE is clang-12. To override the older
 sudo apt-get install clang-12 
 ```
 
-After Clang is installed, it needs to be added to `/etc/environment` as two new environment variables. For example, if you installed clang-12, add the following:
-
-```shell
-CC="/usr/bin/clang-12"
-CXX="/usr/bin/clang++-12"
-```
-
 {{% /tab %}}
 {{% tab name="22.04 LTS" %}}
 
@@ -196,13 +189,6 @@ You can install the default version of Clang for Ubuntu 22.04 LTS, which is clan
 
 ```shell
 sudo apt-get install clang
-```
-
-After Clang is installed, it needs to be added to `/etc/environment` as two new environment variables. For example, if you installed clang-14, add the following:
-
-```shell
-CC="/usr/bin/clang-14"
-CXX="/usr/bin/clang++-14"
 ```
 
 {{% /tab %}}
