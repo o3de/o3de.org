@@ -11,7 +11,7 @@ In order to use AzAutoGen, you must provide Jinja templates and XML or JSON data
 
 ## Integrating with an O3DE target build
 
-AzAutoGen invokes when CMake builds an O3DE target. To invoke AzAutoGen and generate the output source files for your project or Gem, complete the following steps:
+AzAutoGen is invoked when CMake builds an O3DE target. To invoke AzAutoGen and generate the output source files for your project or Gem, complete the following steps:
 
 1. Define the autogen rules by passing in a set of `AUTOGEN_RULES` to the `ly_add_target(...)` command in your project's `CMakeLists.txt` file. Each rules maps a set of data input files to a single template and specifies the output filenames for the generated content.
 
@@ -60,7 +60,7 @@ set(FILES
 
 ## Autogen rules
 
-An *autogen rule* instructs CMake to generate files by using AzAutoGen. 
+An *autogen rule* instructs CMake to use AzAutoGen to generate files. 
 You can define autogen rules by passing in a set of `AUTOGEN_RULES` to the `ly_add_target(...)` command that's inside your project's `CMakeLists.txt` file.
 
 Each element of the set passed to `AUTOGEN_RULES` should follow the `<input>,<template>,<output>` format. Here, `<input>` is the name of the XML or JSON data input file, `<template>` is the name of the Jinja template file, and `<output>` is the name that you want the generated file to have. 
@@ -127,7 +127,7 @@ AUTOGEN_RULES
 Most of the time, you want to run AzAutoGen by passing autogen rules into `ly_add_target()`, as outlined in the [Integrating with an O3DE build target](#integrating-with-an-o3de-build-target) section earlier. 
 However, in uncommon cases, you may want to run AzAutoGen when building a target that isn't defined by `ly_add_target()`. 
 
-To do this you can add an autogen step to any build target by calling the `ly_add_autogen()` CMake command. 
+To do this, you can add an autogen step to any build target by calling the `ly_add_autogen()` CMake command. 
 This associates a target with a set of autogen rules and gives an explicit list of the generated output files to include in the target build.
 
 ```cmake
