@@ -15,7 +15,6 @@ required.
 
 Minimum hardware requirements for development include the following:
 
-+ Windows 10 64-bit version 1809 or Ubuntu {{< versions/ubuntu >}}
 + Quad-core Intel or AMD processor, 2.5 GHz or faster
 + 8 GB RAM
 + DirectX 12, Vulkan-compatible, or Metal-compatible video card with 2 GB VRAM minimum
