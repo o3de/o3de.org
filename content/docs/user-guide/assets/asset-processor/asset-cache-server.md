@@ -186,7 +186,7 @@ An example this JSON ACS block will cache all product assets built by the "XmlBu
 "ACS XmlBuilderWorker":
 {
    "name": "XmlBuilderWorker",
-   "glob":  "*.vegdescriptorlist",
+   "glob":  "*.xml",
    "checkServer": true
 }
 ```
