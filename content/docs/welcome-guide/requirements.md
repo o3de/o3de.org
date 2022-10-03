@@ -152,7 +152,7 @@ sudo apt-get install cmake
 {{% /tab %}}
 {{% tab name="22.04 LTS" %}}
 
-Install the latest version of CMake for Ubuntu 22.04 LTS from the CMake [download page](https://cmake.org/download/#latest).
+You can install the default version of CMake for Ubuntu 22.04 LTS. For additional information, refer to the CMake [download page](https://cmake.org/download/#latest).
 
 ```shell
 sudo apt-get install cmake
@@ -176,7 +176,7 @@ Install Clang using the instructions for the version of Ubuntu that you have ins
 {{< tabs name="Clang install" >}}
 {{% tab name="20.04 LTS" %}}
 
-The minimum version of Clang required by O3DE is clang-12. To override the older default version of Clang for Ubuntu 20.04 LTS during the installation of Clang, you will need to specify a specific version as part of the install command.
+The minimum version of Clang required by O3DE is clang-12. To override the older default version of Clang for Ubuntu 20.04 LTS during the installation of Clang, you will need to specify a version as part of the install command.
 
 ```shell
 sudo apt-get install clang-12 

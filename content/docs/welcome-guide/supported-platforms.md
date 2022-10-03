@@ -7,7 +7,7 @@ toc: true
 ---
 
 **Open 3D Engine (O3DE)** supports several _host platforms_ for creating and developing games and simulations, and _target platforms_ on which these projects can run.
- 
+
 ### Host platforms
 
 | Host Platform | Platform-specific Documentation |
