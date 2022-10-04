@@ -119,7 +119,7 @@ If the current CMake version was not returned because CMake cannot be found, loc
 The primary Linux distribution for using the O3DE Editor is Ubuntu {{< versions/ubuntu >}}.
 
 {{< note >}}
-Support for Ubuntu 22.04 in O3DE is considered experimental.
+Support for Ubuntu 22.04 is in an experimental stage.
 {{< /note >}}
 
 The following instructions describe how to retrieve and install the required software packages through Ubuntu's `apt-get` command-line utility.
