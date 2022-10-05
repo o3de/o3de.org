@@ -7,7 +7,7 @@ toc: true
 ---
 
 
-**Open 3D Engine (O3DE)** version 22.10.0 consists of Quality of Life Improvements, such as performance, workflows, and usability, and some notable new features. Here are some highlights, followed by a detailed list of features broken down by SIG. You can also see the [feature grid](TODO), showing the overall status of each feature.
+**Open 3D Engine (O3DE)** version 22.10.0 consists of Quality of Life Improvements, such as performance, workflows, and usability, and some notable new features. Here are some highlights, followed by a detailed list of features broken down by SIG. You can also see the [feature grid](./feature-state), showing the overall status of each feature.
 
 ## Highlights for 22.10.0
 
