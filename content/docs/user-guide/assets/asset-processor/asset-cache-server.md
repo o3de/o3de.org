@@ -178,7 +178,7 @@ The block should only be set to `"glob"` or `"pattern"`, not both.
 
 The `"checkServer"` Boolean flag is used to enable the block. The default value for `"checkServer"` is false, so to enable the ACS block the Boolean flag needs to be set to true.
 
-The ``name`` field is used for both the title of the configuration block in the GUI tool, but it is also possible to match all an asset pattern by setting the ``name`` to a name of an asset builder. For example, a configuration block can set the name to "Atom Image Builder" so that all the processed images will be cached.
+The ``name`` field is used for the title of the configuration block in the GUI tool, but it can also match all assets of an asset pattern by setting it to the name of an asset builder. For example, a configuration block can set the name to "Atom Image Builder" so that all the processed images are cached.
 
 {{< note >}}
 To use the ``name`` of a builder to cahce its product files it must match exactly includings white space and letter case.
