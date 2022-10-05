@@ -181,10 +181,10 @@ The `"checkServer"` Boolean flag is used to enable the block. The default value 
 The ``name`` field is used for the title of the configuration block in the GUI tool, but it can also match all assets of an asset pattern by setting it to the name of an asset builder. For example, a configuration block can set the name to "Atom Image Builder" so that all the processed images are cached.
 
 {{< note >}}
-To use the ``name`` of a builder to cahce its product files it must match exactly includings white space and letter case.
+To use the ``name`` of a builder to cache, its product files it must match exactly, including white space and letter case.
 {{< /note >}}
 
-This example JSON ACS block will cache all product assets built by the "XmlBuilderWorker" builder:
+This example JSON ACS block caches all product assets built by the "XmlBuilderWorker" builder:
 
 ```json
 "ACS XmlBuilderWorker":
