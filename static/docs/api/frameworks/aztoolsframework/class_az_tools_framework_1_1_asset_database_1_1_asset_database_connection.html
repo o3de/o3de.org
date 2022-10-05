@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2210.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -125,18 +125,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af8d8a6f8262ad3e9b7770761b610473f"><td class="memItemLeft" align="right" valign="top"><a id="af8d8a6f8262ad3e9b7770761b610473f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_az_tools_framework_1_1_asset_database_1_1_asset_database_connection.html">AssetDatabaseConnection</a>, AZ::SystemAllocator, 0)</td></tr>
 <tr class="separator:af8d8a6f8262ad3e9b7770761b610473f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78daebc7124d9bbcf8cc59fbde13c24b"><td class="memItemLeft" align="right" valign="top"><a id="a78daebc7124d9bbcf8cc59fbde13c24b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>OpenDatabase</b> ()</td></tr>
-<tr class="separator:a78daebc7124d9bbcf8cc59fbde13c24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7febc3ac49faf36c8ec7935c4f5e88"><td class="memItemLeft" align="right" valign="top"><a id="a9a7febc3ac49faf36c8ec7935c4f5e88"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>OpenDatabase</b> (bool ignoreFutureAssetDBVersionError=false)</td></tr>
+<tr class="separator:a9a7febc3ac49faf36c8ec7935c4f5e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabdef8b137879ce3cb7fdbfa95be5851"><td class="memItemLeft" align="right" valign="top"><a id="aabdef8b137879ce3cb7fdbfa95be5851"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CloseDatabase</b> ()</td></tr>
 <tr class="separator:aabdef8b137879ce3cb7fdbfa95be5851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26dbe29bff4d13b25b937052385d2f03"><td class="memItemLeft" align="right" valign="top"><a id="a26dbe29bff4d13b25b937052385d2f03"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReadOnly</b> () const</td></tr>
 <tr class="separator:a26dbe29bff4d13b25b937052385d2f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07defdd3bca1bf34a0076cc28c73ae43"><td class="memItemLeft" align="right" valign="top"><a id="a07defdd3bca1bf34a0076cc28c73ae43"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>PostOpenDatabase</b> ()</td></tr>
-<tr class="separator:a07defdd3bca1bf34a0076cc28c73ae43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8bc2b0930e3c365edb57136f3b44a73"><td class="memItemLeft" align="right" valign="top"><a id="aa8bc2b0930e3c365edb57136f3b44a73"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>PostOpenDatabase</b> (bool ignoreFutureAssetDBVersionError)</td></tr>
+<tr class="separator:aa8bc2b0930e3c365edb57136f3b44a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf3efa1dcada6835b50344bd7a2cfcdb"><td class="memItemLeft" align="right" valign="top"><a id="adf3efa1dcada6835b50344bd7a2cfcdb"></a>
 virtual DatabaseVersion&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentDatabaseVersion</b> () const</td></tr>
 <tr class="separator:adf3efa1dcada6835b50344bd7a2cfcdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -614,7 +614,7 @@ AZStd::unordered_set&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" v
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 30 2022 10:03:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:32 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
