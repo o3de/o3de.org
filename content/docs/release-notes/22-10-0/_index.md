@@ -253,3 +253,10 @@ toc: true
 
 - There's an issue with running the Game Launcher in a maximized window, by pressing "Play Game (Maximized)" in the O3DE Editor. [#12125](https://github.com/o3de/o3de/pull/12125)
 
+**Script Canvas**
+
+- Saving changes to a script that's incompatible with the interpreter can crash the O3DE Editor. [#11747](https://github.com/o3de/o3de/issues/11747)
+
+**Prefabs**
+
+- Deleting or reordering a nested prefab in Prefab Edit Mode disrupts the rest of the outliner view. [#11737](https://github.com/o3de/o3de/issues/11737)
