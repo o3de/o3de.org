@@ -4,9 +4,9 @@ title: 22.10.0 Feature Grid snapshot
 description: Snapshot of the Open 3D Engine (O3DE) feature status grid for the 22.10.0 release.
 toc: true
 ---
-This feature grid shows the state of each feature system within **Open 3D Engine (O3DE)** for the 22.10.0 release. For an up-to-date feature grid and full notes, see the [o3de/community feature grid](https://o3de.github.io/community/features/form.html).
+This feature grid shows the state of each feature system within **Open 3D Engine (O3DE)** for the 22.10.0 release. For an up-to-date feature grid and full notes, refer to the [Feature State Form](https://o3de.github.io/community/features/form.html).
 
-Features are reported via each individual O3DE Special Interest Group (SIG). For more information about each SIG and their responsibilities, see the [o3de/community repository](https://github.com/o3de/community/) on GitHub.
+Features are reported by each individual O3DE Special Interest Group (SIG), as outlined in the [O3DE SIG Features Editing tool](https://o3de.github.io/community/features/) guide. For more information about each SIG and their responsibilities, refer to the [o3de/community repository](https://github.com/o3de/community/) on GitHub.
  
 ## SIG-Build 
 
@@ -17,7 +17,7 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Github Pipelines | 🟢 Complete | 🟢 Complete | 🟢 Complete | 🟢 Stable | 🟢 Optimized | All  | [Link](https://github.com/o3de/o3de/tree/development/.github) | [Link](https://www.o3de.org/docs/contributing/to-code/git-workflow/) |
 | Jenkins Pipelines | 🟡 Active | 🟢 Complete | 🟢 Complete | 🟢 Stable | 🔵 In Progress | All  | [Link](https://github.com/o3de/o3de/tree/development/scripts/build/Jenkins) | [Link](https://github.com/o3de/sig-build/blob/main/AutomatedReview/JenkinsPipelineGuide.md) |
-| Installer Builds | 🟢 Complete | 🟢 Complete | 🟢 Complete | 🟢 Stable | 🟢 Optimized | Windows Linux  | [Link](https://github.com/o3de/o3de/tree/development/cmake/Platform/Windows) [Link](https://github.com/o3de/o3de/tree/development/cmake/Platform/Linux) | |
+| Installer Builds | 🟢 Complete | 🟢 Complete | 🟢 Complete | 🟢 Stable | 🟢 Optimized | Windows Linux  | [Windows Link](https://github.com/o3de/o3de/tree/development/cmake/Platform/Windows)&nbsp;[Linux Link](https://github.com/o3de/o3de/tree/development/cmake/Platform/Linux) | |
 | Build Failure Analysis | 🟡 Active | 🟢 Complete | 🟢 Complete | 🔵 In Progress | 🔵 In Progress | All  | | [Link](https://github.com/o3de/sig-build/blob/main/AutomatedReview/RootCauseRunbook.md)
 | Build Scripts | 🟡 Active | 🟢 Complete | 🟢 Complete | 🔵 In Progress | 🔵 In Progress | All  | [Link](https://github.com/o3de/o3de/tree/development/scripts/build/Platform) | |
 | Build Environments | 🟢 Complete | 🟢 Complete | 🟢 Complete | 🟢 Stable | 🟢 Optimized | All  | [Link](https://github.com/o3de/o3de/tree/development/scripts/build/build_node/Platform) | |

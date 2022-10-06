@@ -76,6 +76,8 @@ toc: true
 
 ### sig-docs-community
 
+- Updates to various feature documentation. Refer to the **Docs Link** column in the [22.10.0 Feature Grid](feature-state.md). 
+
 ### sig-graphics-audio
 
 - Added a new Shadow Bias flag for parallax materials, to deal with shadow acne on parallax surfaces.
