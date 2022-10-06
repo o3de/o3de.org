@@ -240,7 +240,7 @@ The AWS Core Gem also requires that the `AllowAWSMetadataCredentials` setting be
 
 To turn on `AllowAWSMetadataCredentials` in AWSCore:
 
-1. Add it to your `awscoreconfiguration.setreg` [project settings file]((./getting-started/#project-settings)) at the following path:
+1. Add it to your `awscoreconfiguration.setreg` [project settings file](./getting-started/#project-settings) at the following path:
 ```json
 {
     "Amazon":
