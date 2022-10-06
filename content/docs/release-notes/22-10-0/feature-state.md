@@ -32,6 +32,8 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 | Github | 🟢 Complete | 🟢 Complete | 🟢 Complete | 🟢 Stable | 🟢 Optimized | All  | [Link](https://github.com/o3de/o3de/tree/development/.github) | |
 | LFS | 🟢 Complete | 🟢 Complete | 🟢 Complete | 🟢 Stable | 🟢 Optimized | All  | |
 | License Scanning | 🟡 Active | 🟢 Complete | 🟢 Complete | 🔵 In Progress | 🔵 In Progress | All  | [Link](https://github.com/o3de/o3de/tree/development/scripts/license_scanner) | |
+
+
 ## SIG-Content 
 
 
@@ -120,6 +122,7 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 | Triangulation | 🔵 Backlogged | ❌ None | ⭕ Not Required | ❌ Unproven | ❌ Unsupported | Windows Linux MacOS  | | 
 | Boolean Operations | 🔵 Backlogged | ❌ None | ⭕ Not Required | ❌ Unproven | ❌ Unsupported | Windows Linux MacOS  | | 
 | Custom UV Mapping | 🔵 Backlogged | ❌ None | ⭕ Not Required | ❌ Unproven | ❌ Unsupported | Windows Linux MacOS  | | 
+
 ## SIG-Core 
 
 
@@ -248,7 +251,7 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | PAL CMake | 🟡 Active | 🟡 Partial | | | | | | |
 | PAL Tools/Editor/AP | 🟡 Active | 🟡 Partial | | | | | | |
-| | | | | | | | | |
+
 
 ### Platform Configure (Engine Centric) 
 
@@ -262,7 +265,7 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 | Paris | 🟢 Complete | 🟢 Complete | | | | | | |
 | Salem | 🟢 Complete | 🟢 Complete | | | | | | |
 | Provo | 🟢 Complete | 🟢 Complete | | | | | | |
-| | | | | | | | | |
+
 
 ### Platform Build (Engine Centric) 
 
@@ -276,7 +279,7 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 | Paris | 🟢 Complete | 🟢 Complete | | | | | | |
 | Salem | 🟢 Complete | 🟢 Complete | | | | | | |
 | Provo | 🟢 Complete | 🟢 Complete | | | | | | |
-| | | | | | | | | |
+
 
 ### Platform Configure (Project Centric) 
 
@@ -313,7 +316,6 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 | Template | 🟢 Complete | 🟢 Complete | | | | | | |
 | Restricted | 🟡 Active | 🟡 Partial | | | | | | |
 | Repo | 🟡 Active | 🔵 In-Design | | | | | | |
-| | | | | | | | | |
 
 ### Language/Localization 
 
@@ -321,7 +323,6 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Editor | 🟢 Complete | 🟢 Complete | | | | | | |
 | Runtime | 🟡 Active | 🟡 Partial | | | | | | |
-| | | | | | | | | |
 
 ### Packaging 
 
@@ -337,7 +338,6 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 | Provo | 🟡 Active | 🟠 Minimal | | | | | | |
 
 ## SIG-Content 
-
 
 ### Animation 
 
@@ -471,8 +471,8 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 | Module | Feature | Functional | Content | Code/API | Performance | Platform | Github Link | Doc Link |
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Soft Bodies | ❌ Unscheduled | | | | | | | | 
-## SIG-Testing 
 
+## SIG-Testing 
 
 ### AutomatedReview 
 
@@ -494,8 +494,8 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 | O3DE EditorTest | 🟡 Active | 🟡 Partial | 🟢 Complete | 🟡 Experimental | 🟡 Needs Optimization | Windows Linux  | [Link](https://github.com/o3de/o3de/blob/development/Tools/LyTestTools/ly_test_tools/o3de/editor_test.py) | [Link](https://www.o3de.org/docs/user-guide/testing/parallel-pattern/) | 
 | O3DE GameTest | 🟠 Planned | 🔵 In-Design | ❌ None | ❌ Unproven | 🔴 Needs Testing | All  | | | 
 | LyTestTools | 🟢 Complete | 🟢 Complete | 🟢 Complete | 🟢 Stable | 🟡 Needs Optimization | Windows Linux MacOS  | [Link](https://github.com/o3de/o3de/tree/development/Tools/LyTestTools) | [Link](https://www.o3de.org/docs/user-guide/testing/lytesttools/getting-started/) | 
-## SIG-UI-UX 
 
+## SIG-UI-UX 
 
 ### UI Components 
 
