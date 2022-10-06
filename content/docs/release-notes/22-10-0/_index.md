@@ -227,11 +227,17 @@ toc: true
   }
   ```
 
-**Character**
+**Animation**
 
-- Do not include `.` character in names for animations in you DCC tool as this can fail at import time. [#12342](https://github.com/o3de/o3de/issues/12342)
+- Do not include `.` in names for animations in you DCC tool as this can fail at import time. [#12342](https://github.com/o3de/o3de/issues/12342)
 
-- Ensure a level is opened before accessing the scene settings tool. [#12414](https://github.com/o3de/o3de/issues/12414)
+- Some animations crash in the scene settings tool when a level isn't opened. Ensure a level is opened before accessing the scene settings tool. [#12414](https://github.com/o3de/o3de/issues/12414)
+
+**UI**
+
+- In the UI Editor, the Curve Editor is not functional. [#11616](https://github.com/o3de/o3de/issues/11616)
+
+- In the UI Editor, modifying keys may crash the Editor. [#12219](https://github.com/o3de/o3de/issues/12219)
 
 **Prefab**
 
@@ -242,4 +248,8 @@ toc: true
   - For prefab creation, it will be fixed in development. [#12013](https://github.com/o3de/o3de/issues/12013)
 
 **Editor**
--  The O3DE Editor splash screen displays "Development Build" instead of the version number. [#9519](https://github.com/o3de/o3de/issues/9519)
+
+- The O3DE Editor splash screen displays "Development Build" instead of the version number. [#9519](https://github.com/o3de/o3de/issues/9519)
+
+- There's an issue with running the Game Launcher in a maximized window, by pressing "Play Game (Maximized)" in the O3DE Editor. [#12125](https://github.com/o3de/o3de/pull/12125)
+

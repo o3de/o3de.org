@@ -181,7 +181,7 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 
 | Module | Feature | Functional | Content | Code/API | Performance | Platform | Github Link | Doc Link |
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Wwyse Integration | 🟢 Complete | 🟡 Partial | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | | | [Link](https://www.o3de.org/docs/atom-guide/dev-guide/rhi/) |
+| Wwise Integration | 🟢 Complete | 🟡 Partial | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | | | |
 
 ## SIG-Network 
 
