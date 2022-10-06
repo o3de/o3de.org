@@ -37,6 +37,7 @@ You will need to create this file if you want to set any of the following option
 | --- | --- |
 | **ProfileName** | \[Optional\] The project will use your **default** profile in `./aws/credentials` (on macOS and Linux) or `%USERPROFILE%\.aws\credentials` (on Windows). Override the **default** profile or any environment variable setting by using this variable. Must be a named profile in your `credentials` file. |
 | **ResourceMappingConfigFileName** | \[Optional\] The name of the resource mapping file to load while starting up. Resource mapping files are expected to be located in `<ProjectName>\Config`. See [Resource Mapping Files](./resource-mapping-files/) for more information. |
+| **AllowAWSMetadataCredentials** | \[Optional\] Whether or not the AWS Core Gem should query AWS environment endpoints like the [EC2 instance metadata service (IMDS)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html) when looking up credentials. Defaults to `false`. See [Running your O3DE project on Amazon EC2](./configuring-credentials#running-your-o3de-project-on-amazon-ec2) for more information. |
 
 {{< note >}}
 If you make changes to this file, you will need to restart the O3DE Editor.
@@ -45,12 +46,14 @@ If you make changes to this file, you will need to restart the O3DE Editor.
 Example registry settings file:
 
 ```json
-{
-  "Amazon": {
-    "AWSCore": {
-      "ProfileName": "testprofile",
-      "ResourceMappingConfigFileName": "default_aws_resource_mappings.json"
+  {
+    "Amazon":
+    {
+      "AWSCore": {
+          "ProfileName": "testprofile",
+          "ResourceMappingConfigFileName": "default_aws_resource_mappings.json",
+          "AllowAWSMetadataCredentials": false
+      }
     }
   }
-}
 ```

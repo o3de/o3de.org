@@ -227,6 +227,38 @@ To set up a team, repeat the instructions for individual users above to:
 
 Please read [Working with AWS credentials](#working-with-aws-credentials) to decide the right method for providing AWS IAM credentials for your O3DE project.
 
+## Running your O3DE project on Amazon EC2
+
+If you are running your project on Amazon EC2, you have the additional option of using the underlying [instance profile](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#ec2-instance-profile) to authenticate calls made to AWS. Using the EC2 instance role lets you avoid needing to separately configure AWS credentials on the machine through less secure methods like setting the AWS environment variables through user data at deploy time or manually remoting into the machine to set up a profile.
+
+To use EC2 instance role credentials with your project:
+1. Create an EC2 [instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) through the Amazon web console or AWS CLI. An instance profile is essentially a container for an IAM role that your EC2 instance can assume to make calls to AWS.
+1. Provide the associated IAM role any [permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html) required to access the AWS resources your O3DE project needs.
+1. Attach the instance profile to the EC2 instance(s) running your O3DE project. You can attach it to a new instance [at launch time](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/LaunchingAndUsingInstances.html) or you can [attach it to a running instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#attach-iam-role). 
+
+The AWS Core Gem also requires that the `AllowAWSMetadataCredentials` setting be set to `true` before it will query the [EC2 instance metadata service (IMDS)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html) for credentials. This is to avoid uselessly calling this endpoint when running your O3DE project locally or on untrusted client machines. 
+
+To turn on `AllowAWSMetadataCredentials` in AWSCore:
+
+1. Add it to your `awscoreconfiguration.setreg` [project settings file]((./getting-started/#project-settings)) at the following path:
+```json
+{
+    "Amazon":
+    {
+        "AWSCore": {
+            "ProfileName": "testprofile",
+            "ResourceMappingConfigFileName": "default_aws_resource_mappings.json",
+            "AllowAWSMetadataCredentials": true, // example of value set to "true"
+        }
+    }
+}
+```
+2. **OR** set it to true via the command line when directly invoking the launcher:
+```
+./MyGame.ServerLauncher.exe --regset="/Amazon/AWSCore/AllowAWSMetadataCredentials=true"
+```
+
+
 ## Additional resources
 
 * For general help with AWS CLI configuration commands, see [Configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html).
