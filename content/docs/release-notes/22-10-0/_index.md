@@ -240,3 +240,6 @@ toc: true
 - After prefab operations, you may encounter warnings that say "Some of the patches were not successfully applied". 
   - For prefab deletion, it has been fixed in development. [#11756](https://github.com/o3de/o3de/issues/11756)
   - For prefab creation, it will be fixed in development. [#12013](https://github.com/o3de/o3de/issues/12013)
+
+**Editor**
+-  The O3DE Editor splash screen displays "Development Build" instead of the version number. [#9519](https://github.com/o3de/o3de/issues/9519)
