@@ -538,24 +538,3 @@ Features are reported via each individual O3DE Special Interest Group (SIG). For
 | Hotkey management | 🔵 Backlogged | 🟠 Minimal | | | | | | | 
 | UI/UX Responsiveness standards | 🔵 Backlogged | ❌ None | | | | | | |
 | Viewport interaction | 🔵 Backlogged | 🔵 In-Design | | | | | | |
-| Searching & Filtering | | | | | | | | |
-| Drag & Drop | | | | | | | | |
-| Messaging | | | | | | | | |
-| Dialogs | | | | | | | | |
-| Mouse Actions | | | | | | | | |
-| Hot Keys | | | | | | | | |
-| File Handling | | | | | | | | |
-| Asset Handling | | | | | | | | |
-| Data Entry | | | | | | | | |
-| Focus State | | | | | | | | |
-| FTUE | | | | | | | | |
-| Main Menus | | | | | | | | |
-| Success Messaging | | | | | | | | |
-| Modes | | | | | | | | |
-| Pickers | | | | | | | | |
-| Progress Bars | | | | | | | | |
-| Settings | | | | | | | | |
-| Window Behavior | | | | | | | | |
-| Thumbnails | | | | | | | | |
-| FAQs | | | | | | | | |
-| Examples | | | | | | | | | 

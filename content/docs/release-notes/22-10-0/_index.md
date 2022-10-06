@@ -199,6 +199,18 @@ toc: true
 
 **Physics**
 - Setting the Cylinder Collider component's radius or height to zero causes the O3DE Editor to crash. This is a known issue that will be fixed in development. Until it's resolved, avoid setting the radius or height to zero. [#12147](https://github.com/o3de/o3de/issues/12147)
+- The physics material library asset has been removed now supports individual physics material assets. If you work with AutomatedTesting, atom-sampleviewer, multiplatyersample or netsoaktest, you don't need to do anything -- all physics material assets are already converted.
+
+  For any other project, one person must convert the assets by following these steps:
+
+  1. Run Editor. Do not open any level, just close the "Welcome to O3DE" screen.
+  1. Wait until Asset Processor has finished processing all the assets.
+  1. Open Console by clicking **Tools** > **Console**.
+  1. Enter the following console command to convert old physics material libraries: `ed_physxConvertMaterialLibrariesIntoIndividualMaterials`
+  1. Wait until Asset Processor has finished processing all the assets.
+  1. Enter the following console command to fix prefabs and fbx manifests that reference old assets: `ed_physxFixAssetsUsingPhysicsLegacyMaterials`
+  1. Wait until Asset Processor has finished processing all the assets.
+  1. Commit the source asset changes into Github.
 
 **Viewport**
 - The Component Mode Switcher may suffer from instability on Linux. If this is experienced you can disable the Switcher in the Settings Registry by adding the following: 
