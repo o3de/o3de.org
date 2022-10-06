@@ -29,7 +29,7 @@ The location of `o3de.exe` depends on how the engine binaries were built:
 {{< tabs name="o3de.exe location" >}}
 {{% tab name="Source engine" %}}
 
-When you build a source engine, you specify a build directory, such as `build/windows_vs2019` or `build/linux`. The binaries are located in a subdirectory of the build directory. The path name of this subdirectory depends on the build configuration you chose. Example: `bin/profile`.
+When you build a source engine, you specify a build directory, such as `build/windows` or `build/linux`. The binaries are located in a subdirectory of the build directory. The path name of this subdirectory depends on the build configuration you chose. Example: `bin/profile`.
 
 To launch Project Manager, do the following:
 
@@ -40,7 +40,7 @@ To launch Project Manager, do the following:
 Example:
 
 ```cmd
-build\windows_vs2019\bin\profile\o3de.exe
+build\windows\bin\profile\o3de.exe
 ```
 
 {{% /tab %}}
