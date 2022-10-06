@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzNetworking API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -64,12 +64,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2203eed45354db8458db3c74a975fb34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a2203eed45354db8458db3c74a975fb34">UdpNetworkInterface</a> (AZ::Name name, <a class="el" href="class_az_networking_1_1_i_connection_listener.html">IConnectionListener</a> &amp;connectionListener, TrustZone trustZone, <a class="el" href="class_az_networking_1_1_udp_reader_thread.html">UdpReaderThread</a> &amp;readerThread)</td></tr>
-<tr class="separator:a2203eed45354db8458db3c74a975fb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1186b5e75fc0123b889232e2d88c32cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a1186b5e75fc0123b889232e2d88c32cc">IsEncrypted</a> () const</td></tr>
-<tr class="separator:a1186b5e75fc0123b889232e2d88c32cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b2ececf9de402cf1573668c87386ec6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a3b2ececf9de402cf1573668c87386ec6">IsOpen</a> () const</td></tr>
-<tr class="separator:a3b2ececf9de402cf1573668c87386ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70757ce5e7a9fdcabc7e1182be40c137"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a70757ce5e7a9fdcabc7e1182be40c137">UdpNetworkInterface</a> (const AZ::Name &amp;name, <a class="el" href="class_az_networking_1_1_i_connection_listener.html">IConnectionListener</a> &amp;connectionListener, TrustZone trustZone, <a class="el" href="class_az_networking_1_1_udp_reader_thread.html">UdpReaderThread</a> &amp;readerThread)</td></tr>
+<tr class="separator:a70757ce5e7a9fdcabc7e1182be40c137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a08f0cf7417b334f17df10ced609dc4c2"><td class="memItemLeft" align="right" valign="top">AZ::Name&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a08f0cf7417b334f17df10ced609dc4c2">GetName</a> () const override</td></tr>
 <tr class="separator:a08f0cf7417b334f17df10ced609dc4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -85,10 +81,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a24d913a3be201fa8277e172f510ff652"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31946b1725e333b968a1e432db8641ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a31946b1725e333b968a1e432db8641ef">Listen</a> (uint16_t port) override</td></tr>
 <tr class="separator:a31946b1725e333b968a1e432db8641ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a864d587dabeb0ac93556f8b33273180d"><td class="memItemLeft" align="right" valign="top">ConnectionId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a864d587dabeb0ac93556f8b33273180d">Connect</a> (const <a class="el" href="class_az_networking_1_1_ip_address.html">IpAddress</a> &amp;remoteAddress) override</td></tr>
-<tr class="separator:a864d587dabeb0ac93556f8b33273180d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7cb42cedb625a3b43936f035e7843cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#ae7cb42cedb625a3b43936f035e7843cd">Update</a> (AZ::TimeMs deltaTimeMs) override</td></tr>
-<tr class="separator:ae7cb42cedb625a3b43936f035e7843cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9beb6b36f8a5d053673673ca6bf80f9"><td class="memItemLeft" align="right" valign="top">ConnectionId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#ab9beb6b36f8a5d053673673ca6bf80f9">Connect</a> (const <a class="el" href="class_az_networking_1_1_ip_address.html">IpAddress</a> &amp;remoteAddress, uint16_t localPort=0) override</td></tr>
+<tr class="separator:ab9beb6b36f8a5d053673673ca6bf80f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a3c8e056d0116329c62e01739a782ff"><td class="memItemLeft" align="right" valign="top"><a id="a7a3c8e056d0116329c62e01739a782ff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a7a3c8e056d0116329c62e01739a782ff">Update</a> () override</td></tr>
+<tr class="memdesc:a7a3c8e056d0116329c62e01739a782ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the <a class="el" href="class_az_networking_1_1_i_network_interface.html" title="Network interface class to abstract client/server and protocol concerns from application code.">INetworkInterface</a>. <br /></td></tr>
+<tr class="separator:a7a3c8e056d0116329c62e01739a782ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab818227340221e76f95e67a6b9a8aca2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#ab818227340221e76f95e67a6b9a8aca2">SendReliablePacket</a> (ConnectionId connectionId, const <a class="el" href="class_az_networking_1_1_i_packet.html">IPacket</a> &amp;packet) override</td></tr>
 <tr class="separator:ab818227340221e76f95e67a6b9a8aca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b114c42750dd1c6afed11bcf5a60756"><td class="memItemLeft" align="right" valign="top">PacketId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a3b114c42750dd1c6afed11bcf5a60756">SendUnreliablePacket</a> (ConnectionId connectionId, const <a class="el" href="class_az_networking_1_1_i_packet.html">IPacket</a> &amp;packet) override</td></tr>
@@ -103,6 +101,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4ad85278b43a6672d34070103ca66177"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdab58b0a002ed979daa82d0ff7444c5"><td class="memItemLeft" align="right" valign="top">AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#acdab58b0a002ed979daa82d0ff7444c5">GetTimeoutMs</a> () const override</td></tr>
 <tr class="separator:acdab58b0a002ed979daa82d0ff7444c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7ac07081080dd028f7909d6d2755798"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#ac7ac07081080dd028f7909d6d2755798">IsEncrypted</a> () const override</td></tr>
+<tr class="separator:ac7ac07081080dd028f7909d6d2755798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae20c53b26272693ecaf2741b4d712e10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#ae20c53b26272693ecaf2741b4d712e10">IsOpen</a> () const override</td></tr>
+<tr class="separator:ae20c53b26272693ecaf2741b4d712e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_az_networking_1_1_i_network_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_az_networking_1_1_i_network_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_az_networking_1_1_i_network_interface.html">AzNetworking::INetworkInterface</a></td></tr>
 <tr class="memitem:abde6ec41f5dad0462ddf280bc9f4edfa inherit pub_methods_class_az_networking_1_1_i_network_interface"><td class="memItemLeft" align="right" valign="top"><a id="abde6ec41f5dad0462ddf280bc9f4edfa"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_networking_1_1_i_network_interface.html">INetworkInterface</a>, &quot;{ECDA6FA2-4AA0-435E-881F-214C4B179A31}&quot;)</td></tr>
@@ -139,7 +141,9 @@ Reliability</h3>
 <p>UDP packets can be sent reliably or unreliably. Reliably sent packets are registered for tracking first. This causes the reliable packet to be resent if a timeout on the packet is reached. Once the packet is acknowledged, the packet is unregistered.</p>
 <h3><a class="anchor" id="autotoc_md7"></a>
 Fragmentation</h3>
-<p>If the raw packet size exceeds the configured maximum transmission unit (MTU) then the packet is broken into multiple reliable fragments to avoid fragmentation at the routing level. Fragments are always reliable so the original packet can be reconstructed. Operations that alter the payload generally follow this step so that they can be separately applied to the Fragments in addition to not being applied to both the original and Fragments.</p>
+<p>If the raw packet size exceeds the configured maximum transmission unit (MTU) then the packet is broken into multiple fragments to avoid fragmentation at the routing level. Fragment reliability is controlled by the cvar net_FragmentsAlwaysReliable. When true, fragments are always sent reliably to ensure the source packet can be reconstructed. This means unreliable packets exceeding MTU will be split into several reliable packets to guarantee delivery but at a cost of extra network processing. (Default) When false, fragments inherit the reliability type of their source packet. This may cause non-reliable packet transmission to fail if packet is fragmented, if even one fragment fails to be delivered due to network conditions.</p>
+<p>Optimizing packets to remain under MTU and appropriate usage of reliable packets is recommended before enabling net_FragmentsAlwaysReliable.</p>
+<p>Operations that alter the payload generally follow this step so that they can be separately applied to the Fragments in addition to not being applied to both the original and Fragments.</p>
 <h3><a class="anchor" id="autotoc_md8"></a>
 Compression</h3>
 <p>Compression here refers to content insensitive compression using libraries like LZ4. If enabled, the target payload is run through the compressor and replaces the original payload if it's in fact smaller. To tell if compression is enabled on a given packet, we operate on a bit in the packet's Flags. The Sender writes this bit while the Receiver checks it to see if a packet needs to be decompressed.</p>
@@ -148,8 +152,8 @@ Compression</h3>
 Encryption</h3>
 <p>AzNetworking uses the <a href="https://www.openssl.org/">OpenSSL</a> library to implement Datagram Layer Transport Security (DTLS) encryption on UDP traffic. Encryption operates as described in <a href="http://o3de.org/docs/user-guide/networking/encryption">O3DE Networking Encryption</a> on the documentation website. Once both endpoints have completed their handshake, all traffic is expected to be fully encrypted. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2203eed45354db8458db3c74a975fb34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2203eed45354db8458db3c74a975fb34">&#9670;&nbsp;</a></span>UdpNetworkInterface()</h2>
+<a id="a70757ce5e7a9fdcabc7e1182be40c137"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70757ce5e7a9fdcabc7e1182be40c137">&#9670;&nbsp;</a></span>UdpNetworkInterface()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,7 +161,7 @@ Encryption</h3>
         <tr>
           <td class="memname">AzNetworking::UdpNetworkInterface::UdpNetworkInterface </td>
           <td>(</td>
-          <td class="paramtype">AZ::Name&#160;</td>
+          <td class="paramtype">const AZ::Name &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -198,8 +202,8 @@ Encryption</h3>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a864d587dabeb0ac93556f8b33273180d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a864d587dabeb0ac93556f8b33273180d">&#9670;&nbsp;</a></span>Connect()</h2>
+<a id="ab9beb6b36f8a5d053673673ca6bf80f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9beb6b36f8a5d053673673ca6bf80f9">&#9670;&nbsp;</a></span>Connect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,8 +215,18 @@ Encryption</h3>
           <td class="memname">ConnectionId AzNetworking::UdpNetworkInterface::Connect </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_az_networking_1_1_ip_address.html">IpAddress</a> &amp;&#160;</td>
-          <td class="paramname"><em>remoteAddress</em></td><td>)</td>
+          <td class="paramname"><em>remoteAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>localPort</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -224,12 +238,13 @@ Encryption</h3>
 <p>Opens a new connection to the provided address. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">remoteAddress</td><td>the <a class="el" href="class_az_networking_1_1_ip_address.html" title="Wrapper for dealing with internet Ip addresses.">IpAddress</a> of the remote process to open a connection to </td></tr>
+    <tr><td class="paramname">localPort</td><td>the local port number to open a socket on to initiate the connection, 0 binds to any available port </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the connectionId of the new connection, or InvalidConnectionId if the operation failed </dd></dl>
 
-<p>Implements <a class="el" href="class_az_networking_1_1_i_network_interface.html#a81d1e6904b2288456b9ede5e36c0e8aa">AzNetworking::INetworkInterface</a>.</p>
+<p>Implements <a class="el" href="class_az_networking_1_1_i_network_interface.html#a4cb0d8ffaaade7b30dd1f4dd0f847ca1">AzNetworking::INetworkInterface</a>.</p>
 
 </div>
 </div>
@@ -475,11 +490,14 @@ Encryption</h3>
 
 </div>
 </div>
-<a id="a1186b5e75fc0123b889232e2d88c32cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1186b5e75fc0123b889232e2d88c32cc">&#9670;&nbsp;</a></span>IsEncrypted()</h2>
+<a id="ac7ac07081080dd028f7909d6d2755798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7ac07081080dd028f7909d6d2755798">&#9670;&nbsp;</a></span>IsEncrypted()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool AzNetworking::UdpNetworkInterface::IsEncrypted </td>
@@ -488,16 +506,26 @@ Encryption</h3>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Returns true if this is an encrypted socket, false if not. </p><dl class="section return"><dt>Returns</dt><dd>boolean true if this is an encrypted socket, false if not </dd></dl>
+<p>Returns true if communications on this network interface are encrypted, false if not. </p><dl class="section return"><dt>Returns</dt><dd>boolean true if communciations are encrypted, false if not </dd></dl>
+
+<p>Implements <a class="el" href="class_az_networking_1_1_i_network_interface.html#a3fcd0150dc45fa0254a04da683f7e5ab">AzNetworking::INetworkInterface</a>.</p>
 
 </div>
 </div>
-<a id="a3b2ececf9de402cf1573668c87386ec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b2ececf9de402cf1573668c87386ec6">&#9670;&nbsp;</a></span>IsOpen()</h2>
+<a id="ae20c53b26272693ecaf2741b4d712e10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae20c53b26272693ecaf2741b4d712e10">&#9670;&nbsp;</a></span>IsOpen()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool AzNetworking::UdpNetworkInterface::IsOpen </td>
@@ -506,8 +534,15 @@ Encryption</h3>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Returns true if this connection instance is in an open state, and is capable of actively sending and receiving packets. </p><dl class="section return"><dt>Returns</dt><dd>boolean true if this connection instance is in an open state </dd></dl>
+
+<p>Implements <a class="el" href="class_az_networking_1_1_i_network_interface.html#a31592ad4479e981a601ad42d0d507bcf">AzNetworking::INetworkInterface</a>.</p>
 
 </div>
 </div>
@@ -700,40 +735,6 @@ Encryption</h3>
 
 </div>
 </div>
-<a id="ae7cb42cedb625a3b43936f035e7843cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7cb42cedb625a3b43936f035e7843cd">&#9670;&nbsp;</a></span>Update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzNetworking::UdpNetworkInterface::Update </td>
-          <td>(</td>
-          <td class="paramtype">AZ::TimeMs&#160;</td>
-          <td class="paramname"><em>deltaTimeMs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Updates the <a class="el" href="class_az_networking_1_1_i_network_interface.html" title="Network interface class to abstract client/server and protocol concerns from application code.">INetworkInterface</a>. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">deltaTimeMs</td><td>milliseconds since update was last invoked </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="class_az_networking_1_1_i_network_interface.html#a6fa639cf42fc9686bbf3017de81b57fb">AzNetworking::INetworkInterface</a>.</p>
-
-</div>
-</div>
 <a id="a962021d19f08b7d04ffa9b3dcb351df0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a962021d19f08b7d04ffa9b3dcb351df0">&#9670;&nbsp;</a></span>WasPacketAcked()</h2>
 
@@ -786,7 +787,7 @@ Encryption</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:27 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:19 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

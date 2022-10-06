@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -66,9 +66,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab673d6c7d5998e637e45ee912fd90f49"><td class="memItemLeft" align="right" valign="top"><a id="ab673d6c7d5998e637e45ee912fd90f49"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>StackedString</b> (<a class="el" href="class_a_z_1_1_stacked_string.html#a034e1d4cd0d1cd7d943e90b9c209ce9f">Format</a> format)</td></tr>
 <tr class="separator:ab673d6c7d5998e637e45ee912fd90f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab38ab7377b5605e60b23bf4985e01aa2"><td class="memItemLeft" align="right" valign="top"><a id="ab38ab7377b5605e60b23bf4985e01aa2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_stacked_string.html#ab38ab7377b5605e60b23bf4985e01aa2">Push</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> value)</td></tr>
-<tr class="memdesc:ab38ab7377b5605e60b23bf4985e01aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a new string part onto the stack. <br /></td></tr>
+<tr class="memitem:ab38ab7377b5605e60b23bf4985e01aa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_stacked_string.html#ab38ab7377b5605e60b23bf4985e01aa2">Push</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> value)</td></tr>
 <tr class="separator:ab38ab7377b5605e60b23bf4985e01aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e6942604c5520785a9445610430310f"><td class="memItemLeft" align="right" valign="top"><a id="a7e6942604c5520785a9445610430310f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_stacked_string.html#a7e6942604c5520785a9445610430310f">Push</a> (size_t value)</td></tr>
@@ -117,13 +115,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab38ab7377b5605e60b23bf4985e01aa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab38ab7377b5605e60b23bf4985e01aa2">&#9670;&nbsp;</a></span>Push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::StackedString::Push </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Push a new string part onto the stack. Only supports a single reference token i.e appending "Foo" onto "/O3DE" results in "/O3DE/Foo" However appending "TokenWith/ForwardSlash" results in "/O3DE/Foo/TokenWith~1ForwardSlash" as the forward slash is seen as part of a single reference token and encoded. See the JSON pointer path spec for more info: <a href="https://www.rfc-editor.org/rfc/rfc6901#section-3">https://www.rfc-editor.org/rfc/rfc6901#section-3</a> </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Serialization/Json/StackedString.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:46 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:30 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

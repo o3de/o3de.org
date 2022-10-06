@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -47,6 +47,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
@@ -70,6 +71,13 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for platform specific implementations of virtual keyboard input devices.  <a href="class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a2af14791323d2bf47ed3fb1d9ca9884d"><td class="memItemLeft" align="right" valign="top"><a id="a2af14791323d2bf47ed3fb1d9ca9884d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#a2af14791323d2bf47ed3fb1d9ca9884d">ImplementationFactory</a> = <a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation.html">Implementation</a> *(<a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html">InputDeviceVirtualKeyboard</a> &amp;)</td></tr>
+<tr class="memdesc:a2af14791323d2bf47ed3fb1d9ca9884d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for the function type used to create a custom implementation for this input device. <br /></td></tr>
+<tr class="separator:a2af14791323d2bf47ed3fb1d9ca9884d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9468c40fd9d671b7f5a20d03cee71627"><td class="memItemLeft" align="right" valign="top"><a id="a9468c40fd9d671b7f5a20d03cee71627"></a>
@@ -78,10 +86,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a886d0dfb6ae8e7d4513a69efc2142c0c"><td class="memItemLeft" align="right" valign="top"><a id="a886d0dfb6ae8e7d4513a69efc2142c0c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html">InputDeviceVirtualKeyboard</a>, &quot;{85BA81F4-EB74-4CFB-8504-DD8C555D8D79}&quot;, InputDevice)</td></tr>
 <tr class="separator:a886d0dfb6ae8e7d4513a69efc2142c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a267e0d40f96a70eb25a325ae20aa6a03"><td class="memItemLeft" align="right" valign="top"><a id="a267e0d40f96a70eb25a325ae20aa6a03"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#a267e0d40f96a70eb25a325ae20aa6a03">InputDeviceVirtualKeyboard</a> ()</td></tr>
-<tr class="memdesc:a267e0d40f96a70eb25a325ae20aa6a03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
-<tr class="separator:a267e0d40f96a70eb25a325ae20aa6a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb2346af1319ce05a255cd8fcac49482"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#acb2346af1319ce05a255cd8fcac49482">InputDeviceVirtualKeyboard</a> (const <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a> &amp;inputDeviceId=<a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#a0127a6c66996bf1117015dd3a4252029">Id</a>, <a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#a2af14791323d2bf47ed3fb1d9ca9884d">ImplementationFactory</a> implementationFactory=&amp;<a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation.html#a5957326e51da158651240ae5a90135d5">Implementation::Create</a>)</td></tr>
+<tr class="separator:acb2346af1319ce05a255cd8fcac49482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acab3d35caba3f3895edc0b1656349c27"><td class="memItemLeft" align="right" valign="top"><a id="acab3d35caba3f3895edc0b1656349c27"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html">InputDeviceVirtualKeyboard</a>)</td></tr>
 <tr class="separator:acab3d35caba3f3895edc0b1656349c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,10 +166,10 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a0d17889ebcf9a8f149953ebea52b453b"><td class="memItemLeft" align="right" valign="top"><a id="a0d17889ebcf9a8f149953ebea52b453b"></a>
-static const <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#a0d17889ebcf9a8f149953ebea52b453b">Id</a></td></tr>
-<tr class="memdesc:a0d17889ebcf9a8f149953ebea52b453b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The id used to identify the primary virtual keyboard input device. <br /></td></tr>
-<tr class="separator:a0d17889ebcf9a8f149953ebea52b453b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0127a6c66996bf1117015dd3a4252029"><td class="memItemLeft" align="right" valign="top"><a id="a0127a6c66996bf1117015dd3a4252029"></a>
+static constexpr <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#a0127a6c66996bf1117015dd3a4252029">Id</a> {&quot;virtual_keyboard&quot;}</td></tr>
+<tr class="memdesc:a0127a6c66996bf1117015dd3a4252029"><td class="mdescLeft">&#160;</td><td class="mdescRight">The id used to identify the primary virtual keyboard input device. <br /></td></tr>
+<tr class="separator:a0127a6c66996bf1117015dd3a4252029"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -205,7 +211,51 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines a generic virtual keyboard device. Platform specific implementations are defined as private implementations so that creating an instance of this generic class will work on any platform that supports a virtual keyboard. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="acb2346af1319ce05a255cd8fcac49482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb2346af1319ce05a255cd8fcac49482">&#9670;&nbsp;</a></span>InputDeviceVirtualKeyboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AzFramework::InputDeviceVirtualKeyboard::InputDeviceVirtualKeyboard </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a> &amp;&#160;</td>
+          <td class="paramname"><em>inputDeviceId</em> = <code><a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#a0127a6c66996bf1117015dd3a4252029">Id</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#a2af14791323d2bf47ed3fb1d9ca9884d">ImplementationFactory</a>&#160;</td>
+          <td class="paramname"><em>implementationFactory</em> = <code>&amp;<a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation.html#a5957326e51da158651240ae5a90135d5">Implementation::Create</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputDeviceId</td><td>Optional override of the default input device id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">implementationFactory</td><td>Optional override of the default <a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation.html#a5957326e51da158651240ae5a90135d5">Implementation::Create</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a764f83dea661a676549f2d136504771e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a764f83dea661a676549f2d136504771e">&#9670;&nbsp;</a></span>IsVirtualKeyboardDevice()</h2>
 
@@ -277,7 +327,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:21 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:12 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

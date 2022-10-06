@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptEvents Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -66,16 +66,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afd09e97817ba21afd69361f4368d3706"><td class="memItemLeft" align="right" valign="top"><a id="afd09e97817ba21afd69361f4368d3706"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DefaultBehaviorHandler</b> (AZ::BehaviorEBus *ebus, const <a class="el" href="class_script_events_1_1_script_event.html">ScriptEvents::ScriptEvent</a> *)</td></tr>
 <tr class="separator:afd09e97817ba21afd69361f4368d3706"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f3e138d805f424a1c0d843716039ab9"><td class="memItemLeft" align="right" valign="top"><a id="a9f3e138d805f424a1c0d843716039ab9"></a>
-AZ::BehaviorValueParameter *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBusId</b> () override</td></tr>
-<tr class="separator:a9f3e138d805f424a1c0d843716039ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba82d3abed6c40c82e105ad25aeff98"><td class="memItemLeft" align="right" valign="top"><a id="acba82d3abed6c40c82e105ad25aeff98"></a>
+AZ::BehaviorArgument *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBusId</b> () override</td></tr>
+<tr class="separator:acba82d3abed6c40c82e105ad25aeff98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eb41fda062e81e7c3cc638b2ea7719e"><td class="memItemLeft" align="right" valign="top"><a id="a1eb41fda062e81e7c3cc638b2ea7719e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_events_1_1_default_behavior_handler.html#a1eb41fda062e81e7c3cc638b2ea7719e">GetFunctionIndex</a> (const char *name) const override</td></tr>
 <tr class="memdesc:a1eb41fda062e81e7c3cc638b2ea7719e"><td class="mdescLeft">&#160;</td><td class="mdescRight">AZ::BehaviorEBusHandler. <br /></td></tr>
 <tr class="separator:a1eb41fda062e81e7c3cc638b2ea7719e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6734aa504e8d5cab89d264f1241be4d"><td class="memItemLeft" align="right" valign="top"><a id="af6734aa504e8d5cab89d264f1241be4d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Connect</b> (AZ::BehaviorValueParameter *address=nullptr) override</td></tr>
-<tr class="separator:af6734aa504e8d5cab89d264f1241be4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c61a033bb26bef8695ce23e69e687c0"><td class="memItemLeft" align="right" valign="top"><a id="a9c61a033bb26bef8695ce23e69e687c0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Connect</b> (AZ::BehaviorArgument *address=nullptr) override</td></tr>
+<tr class="separator:a9c61a033bb26bef8695ce23e69e687c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac082f5b26297466144bde94bfd74cb28"><td class="memItemLeft" align="right" valign="top"><a id="ac082f5b26297466144bde94bfd74cb28"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Disconnect</b> () override</td></tr>
 <tr class="separator:ac082f5b26297466144bde94bfd74cb28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -89,9 +89,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Disconnect</b> () ove
 <tr class="memitem:a6be3935f32d89e05ce343b88a2dbf574 inherit pub_methods_class_script_events_1_1_script_events_handler"><td class="memItemLeft" align="right" valign="top"><a id="a6be3935f32d89e05ce343b88a2dbf574"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnected</b> () override</td></tr>
 <tr class="separator:a6be3935f32d89e05ce343b88a2dbf574 inherit pub_methods_class_script_events_1_1_script_events_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87b1ba5e92e032c41657ab548d075e40 inherit pub_methods_class_script_events_1_1_script_events_handler"><td class="memItemLeft" align="right" valign="top"><a id="a87b1ba5e92e032c41657ab548d075e40"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnectedId</b> (AZ::BehaviorValueParameter *) override</td></tr>
-<tr class="separator:a87b1ba5e92e032c41657ab548d075e40 inherit pub_methods_class_script_events_1_1_script_events_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f3e5b2408b37090ee076ed7a0eff509 inherit pub_methods_class_script_events_1_1_script_events_handler"><td class="memItemLeft" align="right" valign="top"><a id="a4f3e5b2408b37090ee076ed7a0eff509"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnectedId</b> (AZ::BehaviorArgument *) override</td></tr>
+<tr class="separator:a4f3e5b2408b37090ee076ed7a0eff509 inherit pub_methods_class_script_events_1_1_script_events_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/ScriptEvents/Code/Include/ScriptEvents/Internal/BehaviorContextBinding/DefaultEventHandler.h</li>
@@ -99,7 +99,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnectedId</b> (AZ
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:12 for Open 3D Engine ScriptEvents Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:40 for Open 3D Engine ScriptEvents Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

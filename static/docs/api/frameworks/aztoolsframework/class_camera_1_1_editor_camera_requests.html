@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -75,6 +75,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab86ee3f291512cd00d4a2d0bd06a4239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbb8feb3f6c399a0ce4541aa876756d2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_1_1_editor_camera_requests.html#afbb8feb3f6c399a0ce4541aa876756d2">GetActiveCameraPosition</a> (AZ::Vector3 &amp;)</td></tr>
 <tr class="separator:afbb8feb3f6c399a0ce4541aa876756d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2eb6c55d9232e92675a07b5d9edca0f"><td class="memItemLeft" align="right" valign="top">virtual AZStd::optional&lt; AZ::Transform &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_1_1_editor_camera_requests.html#ab2eb6c55d9232e92675a07b5d9edca0f">GetActiveCameraTransform</a> ()</td></tr>
+<tr class="separator:ab2eb6c55d9232e92675a07b5d9edca0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c182397f03bfddb7d7d5b718c0094c"><td class="memItemLeft" align="right" valign="top">virtual AZStd::optional&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_1_1_editor_camera_requests.html#a10c182397f03bfddb7d7d5b718c0094c">GetCameraFoV</a> ()</td></tr>
+<tr class="separator:a10c182397f03bfddb7d7d5b718c0094c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a4a96eb358bf2062b1f82371f8f2685"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_1_1_editor_camera_requests.html#a5a4a96eb358bf2062b1f82371f8f2685">GetActiveCameraState</a> ([[maybe_unused]] AzFramework::CameraState &amp;cameraState)</td></tr>
 <tr class="separator:a5a4a96eb358bf2062b1f82371f8f2685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -150,6 +154,58 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the camera view was successfully retrieved, false if not. </dd></dl>
+
+</div>
+</div>
+<a id="ab2eb6c55d9232e92675a07b5d9edca0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2eb6c55d9232e92675a07b5d9edca0f">&#9670;&nbsp;</a></span>GetActiveCameraTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::optional&lt;AZ::Transform&gt; Camera::EditorCameraRequests::GetActiveCameraTransform </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the transform of the currently active Editor camera. The Editor can have multiple viewports displayed, though at most only one is active at any point in time. (Active is not the same as "has focus" - a different editor pane can have focus, but there's still one active viewport that's updating every frame, and the others are not) </p><dl class="section return"><dt>Returns</dt><dd>the current camera transform in the one active Editor viewport. </dd></dl>
+
+</div>
+</div>
+<a id="a10c182397f03bfddb7d7d5b718c0094c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10c182397f03bfddb7d7d5b718c0094c">&#9670;&nbsp;</a></span>GetCameraFoV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::optional&lt;float&gt; Camera::EditorCameraRequests::GetCameraFoV </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the field of view of the currently active Editor camera. The Editor can have multiple viewports displayed, though at most only one is active at any point in time. (Active is not the same as "has focus" - a different editor pane can have focus, but there's still one active viewport that's updating every frame, and the others are not) </p><dl class="section return"><dt>Returns</dt><dd>the current camera field of view in the one active Editor viewport. </dd></dl>
 
 </div>
 </div>
@@ -260,7 +316,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:40 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:34 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -67,14 +67,14 @@ template&lt;class Derived  = D&gt; </td></tr>
 template&lt;class Derived  = D&gt; </td></tr>
 <tr class="memitem:ab1519c28867d99615c4b957dbec4a69b"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator bool</b> () const noexcept(noexcept(ranges::empty(static_cast&lt; const Derived &amp; &gt;(*this))))</td></tr>
 <tr class="separator:ab1519c28867d99615c4b957dbec4a69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13ebb4113f3f0176203d48aa695f62d9"><td class="memTemplParams" colspan="2"><a id="a13ebb4113f3f0176203d48aa695f62d9"></a>
+<tr class="memitem:af26ccb8c74a3925e8535f7c6d88191a9"><td class="memTemplParams" colspan="2"><a id="af26ccb8c74a3925e8535f7c6d88191a9"></a>
 template&lt;class Derived  = D&gt; </td></tr>
-<tr class="memitem:a13ebb4113f3f0176203d48aa695f62d9"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>data</b> () -&gt; enable_if_t&lt; contiguous_iterator&lt; iterator_t&lt; Derived &gt;&gt;, decltype(to_address(ranges::begin(static_cast&lt; Derived &amp; &gt;(*this))))&gt;</td></tr>
-<tr class="separator:a13ebb4113f3f0176203d48aa695f62d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f2594af9ae1076dcfbffd263752b465"><td class="memTemplParams" colspan="2"><a id="a1f2594af9ae1076dcfbffd263752b465"></a>
+<tr class="memitem:af26ccb8c74a3925e8535f7c6d88191a9"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>data</b> () -&gt; enable_if_t&lt; contiguous_iterator&lt; iterator_t&lt; Derived &gt;&gt;, decltype(AZStd::to_address(ranges::begin(static_cast&lt; Derived &amp; &gt;(*this))))&gt;</td></tr>
+<tr class="separator:af26ccb8c74a3925e8535f7c6d88191a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5964186aec6b0eba846657a07f7d6fbb"><td class="memTemplParams" colspan="2"><a id="a5964186aec6b0eba846657a07f7d6fbb"></a>
 template&lt;class Derived  = D&gt; </td></tr>
-<tr class="memitem:a1f2594af9ae1076dcfbffd263752b465"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>data</b> () const -&gt; enable_if_t&lt; range&lt; const Derived &gt; &amp;&amp;contiguous_iterator&lt; iterator_t&lt; const Derived &gt;&gt;, decltype(to_address(ranges::begin(static_cast&lt; const Derived &amp; &gt;(*this))))&gt;</td></tr>
-<tr class="separator:a1f2594af9ae1076dcfbffd263752b465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5964186aec6b0eba846657a07f7d6fbb"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>data</b> () const -&gt; enable_if_t&lt; range&lt; const Derived &gt; &amp;&amp;contiguous_iterator&lt; iterator_t&lt; const Derived &gt;&gt;, decltype(AZStd::to_address(ranges::begin(static_cast&lt; const Derived &amp; &gt;(*this))))&gt;</td></tr>
+<tr class="separator:a5964186aec6b0eba846657a07f7d6fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae077d988eb471afb27e0c5b402189721"><td class="memTemplParams" colspan="2"><a id="ae077d988eb471afb27e0c5b402189721"></a>
 template&lt;class Derived  = D&gt; </td></tr>
 <tr class="memitem:ae077d988eb471afb27e0c5b402189721"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>size</b> () -&gt; enable_if_t&lt; conjunction_v&lt; bool_constant&lt; forward_range&lt; Derived &gt;&gt;, bool_constant&lt; sized_sentinel_for&lt; sentinel_t&lt; Derived &gt;, iterator_t&lt; Derived &gt;&gt;&gt;&gt;, decltype(ranges::end(static_cast&lt; Derived &amp; &gt;(*this)) - ranges::begin(static_cast&lt; Derived &amp; &gt;(*this)))&gt;</td></tr>
@@ -114,7 +114,7 @@ template&lt;class R  = const D&gt; </td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:17:55 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:05 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

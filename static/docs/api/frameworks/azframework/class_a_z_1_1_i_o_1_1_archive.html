@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -65,10 +65,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab36423d74cd0dbce51dd9172ff92cc1c"><td class="memItemLeft" align="right" valign="top"><a id="ab36423d74cd0dbce51dd9172ff92cc1c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_archive.html">Archive</a>, AZ::OSAllocator, 0)</td></tr>
 <tr class="separator:ab36423d74cd0dbce51dd9172ff92cc1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6db1dd8041d332b084359eb90d52ca5a"><td class="memItemLeft" align="right" valign="top"><a id="a6db1dd8041d332b084359eb90d52ca5a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_archive.html#a6db1dd8041d332b084359eb90d52ca5a">FindCompressionInfo</a> (bool &amp;found, AZ::IO::CompressionInfo &amp;info, const AZStd::string_view filename) override</td></tr>
-<tr class="memdesc:a6db1dd8041d332b084359eb90d52ca5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">CompressionBus Handler implementation. <br /></td></tr>
-<tr class="separator:a6db1dd8041d332b084359eb90d52ca5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7b4e4d97f728d0f850d90653608c25"><td class="memItemLeft" align="right" valign="top"><a id="adb7b4e4d97f728d0f850d90653608c25"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_archive.html#adb7b4e4d97f728d0f850d90653608c25">FindCompressionInfo</a> (bool &amp;found, AZ::IO::CompressionInfo &amp;info, const AZ::IO::PathView filePath) override</td></tr>
+<tr class="memdesc:adb7b4e4d97f728d0f850d90653608c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">CompressionBus Handler implementation. <br /></td></tr>
+<tr class="separator:adb7b4e4d97f728d0f850d90653608c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14b7857ddd0e874e54bb138f92314d0e"><td class="memItemLeft" align="right" valign="top"><a id="a14b7857ddd0e874e54bb138f92314d0e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLocalizationFolder</b> (AZStd::string_view sLocalizationFolder) override</td></tr>
 <tr class="separator:a14b7857ddd0e874e54bb138f92314d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,9 +92,6 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_archive.html#a1d3ace08e0ef4f8c4b62baa108ec315d">PoolFree</a> (void *p) override</td></tr>
 <tr class="memdesc:a1d3ace08e0ef4f8c4b62baa108ec315d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free pool. <br /></td></tr>
 <tr class="separator:a1d3ace08e0ef4f8c4b62baa108ec315d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80329bf4de654f06b45e91289fcbe96b"><td class="memItemLeft" align="right" valign="top"><a id="a80329bf4de654f06b45e91289fcbe96b"></a>
-AZStd::intrusive_ptr&lt; <a class="el" href="struct_a_z_1_1_i_o_1_1_memory_block.html">AZ::IO::MemoryBlock</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PoolAllocMemoryBlock</b> (size_t nSize, const char *sUsage, size_t nAlign) override</td></tr>
-<tr class="separator:a80329bf4de654f06b45e91289fcbe96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1825068971600dfe8b457b60ea574b2"><td class="memItemLeft" align="right" valign="top"><a id="ac1825068971600dfe8b457b60ea574b2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterFileAccessSink</b> (<a class="el" href="struct_a_z_1_1_i_o_1_1_i_archive_file_access_sink.html">IArchiveFileAccessSink</a> *pSink) override</td></tr>
 <tr class="separator:ac1825068971600dfe8b457b60ea574b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,9 +152,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>FFlush</b> (AZ::IO::Ha
 <tr class="memitem:a653ad7e5e07004c9d72931a786574fbe"><td class="memItemLeft" align="right" valign="top"><a id="a653ad7e5e07004c9d72931a786574fbe"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>FClose</b> (AZ::IO::HandleType handle) override</td></tr>
 <tr class="separator:a653ad7e5e07004c9d72931a786574fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87517f2b3563d2a86b79b8bb4fc0626d"><td class="memItemLeft" align="right" valign="top"><a id="a87517f2b3563d2a86b79b8bb4fc0626d"></a>
-<a class="el" href="struct_a_z_1_1_i_o_1_1_archive_file_iterator.html">AZ::IO::ArchiveFileIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindFirst</b> (AZStd::string_view pDir, EFileSearchType searchType=eFileSearchType_AllowInZipsOnly) override</td></tr>
-<tr class="separator:a87517f2b3563d2a86b79b8bb4fc0626d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e97ec6a7a2515cff579b2f8099681c4"><td class="memItemLeft" align="right" valign="top"><a id="a5e97ec6a7a2515cff579b2f8099681c4"></a>
+<a class="el" href="struct_a_z_1_1_i_o_1_1_archive_file_iterator.html">AZ::IO::ArchiveFileIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindFirst</b> (AZStd::string_view pDir, FileSearchLocation searchType=FileSearchLocation::InPak) override</td></tr>
+<tr class="separator:a5e97ec6a7a2515cff579b2f8099681c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a882f041cf1655afe0bef4ffd4077b6fe"><td class="memItemLeft" align="right" valign="top"><a id="a882f041cf1655afe0bef4ffd4077b6fe"></a>
 <a class="el" href="struct_a_z_1_1_i_o_1_1_archive_file_iterator.html">AZ::IO::ArchiveFileIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindNext</b> (<a class="el" href="struct_a_z_1_1_i_o_1_1_archive_file_iterator.html">AZ::IO::ArchiveFileIterator</a> fileIterator) override</td></tr>
 <tr class="separator:a882f041cf1655afe0bef4ffd4077b6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,9 +182,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveDir</b> (AZStd:
 <tr class="memitem:abda971af7d536313f5048b5b13b2db92"><td class="memItemLeft" align="right" valign="top"><a id="abda971af7d536313f5048b5b13b2db92"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAbsPath</b> (AZStd::string_view pPath) override</td></tr>
 <tr class="separator:abda971af7d536313f5048b5b13b2db92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aab2509e65886024ac028a3fe1e45a4"><td class="memItemLeft" align="right" valign="top"><a id="a5aab2509e65886024ac028a3fe1e45a4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsFileExist</b> (AZStd::string_view sFilename, EFileSearchLocation fileLocation=eFileLocation_Any) override</td></tr>
-<tr class="separator:a5aab2509e65886024ac028a3fe1e45a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c1b5f9b64389455c3be0dd8909015b"><td class="memItemLeft" align="right" valign="top"><a id="a16c1b5f9b64389455c3be0dd8909015b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsFileExist</b> (AZStd::string_view sFilename, FileSearchLocation fileLocation=FileSearchLocation::Any) override</td></tr>
+<tr class="separator:a16c1b5f9b64389455c3be0dd8909015b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe21fc22e833a522b8951bf0fb0aa53b"><td class="memItemLeft" align="right" valign="top"><a id="abe21fc22e833a522b8951bf0fb0aa53b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsFolder</b> (AZStd::string_view sPath) override</td></tr>
 <tr class="separator:abe21fc22e833a522b8951bf0fb0aa53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,9 +218,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableRuntimeFileAcc
 <tr class="memitem:a23fbc0b19d8f1323bdfb29c29496c34b"><td class="memItemLeft" align="right" valign="top"><a id="a23fbc0b19d8f1323bdfb29c29496c34b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>DisableRuntimeFileAccess</b> (bool status, AZStd::thread_id threadId) override</td></tr>
 <tr class="separator:a23fbc0b19d8f1323bdfb29c29496c34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e6cd2fc4a81d5c7ee04580289fbf595"><td class="memItemLeft" align="right" valign="top"><a id="a4e6cd2fc4a81d5c7ee04580289fbf595"></a>
-ArchiveLocationPriority&#160;</td><td class="memItemRight" valign="bottom"><b>GetPakPriority</b> () const override</td></tr>
-<tr class="separator:a4e6cd2fc4a81d5c7ee04580289fbf595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a186eadb7f1462a967224de310883c65e"><td class="memItemLeft" align="right" valign="top"><a id="a186eadb7f1462a967224de310883c65e"></a>
+FileSearchPriority&#160;</td><td class="memItemRight" valign="bottom"><b>GetPakPriority</b> () const override</td></tr>
+<tr class="separator:a186eadb7f1462a967224de310883c65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7795145278bd306d7156ca2d792d8d42"><td class="memItemLeft" align="right" valign="top"><a id="a7795145278bd306d7156ca2d792d8d42"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetFileOffsetOnMedia</b> (AZStd::string_view szName) const override</td></tr>
 <tr class="separator:a7795145278bd306d7156ca2d792d8d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,31 +268,21 @@ Additional Inherited Members</h2></td></tr>
 <b>RFOM_NextLevel</b>
  }</td></tr>
 <tr class="separator:a12b732870c170105e921821f2590e4af inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7546fcfbf00e3a69ee89309b71bff052 inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memItemLeft" align="right" valign="top"><a id="a7546fcfbf00e3a69ee89309b71bff052"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EFileSearchLocation</b> { <b>eFileLocation_Any</b> = 0, 
-<b>eFileLocation_OnDisk</b>, 
-<b>eFileLocation_InPak</b>
- }</td></tr>
-<tr class="separator:a7546fcfbf00e3a69ee89309b71bff052 inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada6079462fb923591e9a54c0fd820700 inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memItemLeft" align="right" valign="top"><a id="ada6079462fb923591e9a54c0fd820700"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EInMemoryArchiveLocation</b> { <b>eInMemoryPakLocale_Unload</b> = 0, 
 <b>eInMemoryPakLocale_CPU</b>, 
 <b>eInMemoryPakLocale_GPU</b>, 
 <b>eInMemoryPakLocale_PAK</b>
  }</td></tr>
 <tr class="separator:ada6079462fb923591e9a54c0fd820700 inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacac0651d8b48547edf34f417f31e69c inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memItemLeft" align="right" valign="top"><a id="aacac0651d8b48547edf34f417f31e69c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EFileSearchType</b> { <b>eFileSearchType_AllowInZipsOnly</b> = 0, 
-<b>eFileSearchType_AllowOnDiskAndInZips</b>, 
-<b>eFileSearchType_AllowOnDiskOnly</b>
- }</td></tr>
-<tr class="separator:aacac0651d8b48547edf34f417f31e69c inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a356625f1bf8f798d81b1f67078aef3 inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memItemLeft" align="right" valign="top"><a id="a9a356625f1bf8f798d81b1f67078aef3"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>FileTime</b> = uint64_t</td></tr>
 <tr class="separator:a9a356625f1bf8f798d81b1f67078aef3 inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03d3a9a4525a8c4360093b84aa532811 inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memItemLeft" align="right" valign="top"><a id="a03d3a9a4525a8c4360093b84aa532811"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>SignedFileSize</b> = int64_t</td></tr>
 <tr class="separator:a03d3a9a4525a8c4360093b84aa532811 inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d0aa7aec087aa3c124bc8ef47000428 inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memItemLeft" align="right" valign="top"><a id="a4d0aa7aec087aa3c124bc8ef47000428"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>LevelPackOpenEvent</b> = AZ::Event&lt; const AZStd::vector&lt; AZStd::string &gt; &amp; &gt;</td></tr>
-<tr class="separator:a4d0aa7aec087aa3c124bc8ef47000428 inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4abbd74b39ff0b15e23312afdfcea2ab inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memItemLeft" align="right" valign="top"><a id="a4abbd74b39ff0b15e23312afdfcea2ab"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>LevelPackOpenEvent</b> = AZ::Event&lt; const AZStd::vector&lt; AZ::IO::Path &gt; &amp; &gt;</td></tr>
+<tr class="separator:a4abbd74b39ff0b15e23312afdfcea2ab inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdac687ba2cf4f9e8723799a9a7f5de0 inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memItemLeft" align="right" valign="top"><a id="acdac687ba2cf4f9e8723799a9a7f5de0"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>LevelPackCloseEvent</b> = AZ::Event&lt; AZStd::string_view &gt;</td></tr>
 <tr class="separator:acdac687ba2cf4f9e8723799a9a7f5de0 inherit pub_types_struct_a_z_1_1_i_o_1_1_i_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -310,7 +297,7 @@ static constexpr IArchive::SignedFileSize&#160;</td><td class="memItemRight" val
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:19 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:10 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

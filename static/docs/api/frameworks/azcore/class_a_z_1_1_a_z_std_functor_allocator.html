@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -71,13 +71,13 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b> 
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_a_z_std_functor_allocator.html#adc868f16839851dc13f585e1aaebae14">allow_memory_leaks</a> = AZStd::false_type</td></tr>
 <tr class="memdesc:adc868f16839851dc13f585e1aaebae14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular allocators should not leak. <br /></td></tr>
 <tr class="separator:adc868f16839851dc13f585e1aaebae14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acda90e4af716113f80bebfcf953d6a42"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_a_z_std_functor_allocator.html#acda90e4af716113f80bebfcf953d6a42">functor_type</a> = <a class="el" href="class_a_z_1_1_i_allocator_allocate.html">IAllocatorAllocate</a> &amp;(*)()</td></tr>
-<tr class="separator:acda90e4af716113f80bebfcf953d6a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22392662100639f8f61bd0b86e2e841d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_a_z_std_functor_allocator.html#a22392662100639f8f61bd0b86e2e841d">functor_type</a> = <a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> &amp;(*)()</td></tr>
+<tr class="separator:a22392662100639f8f61bd0b86e2e841d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0060fb773d7bbde24a8d5e177e8b3440"><td class="memItemLeft" align="right" valign="top"><a id="a0060fb773d7bbde24a8d5e177e8b3440"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>AZStdFunctorAllocator</b> (<a class="el" href="class_a_z_1_1_a_z_std_functor_allocator.html#acda90e4af716113f80bebfcf953d6a42">functor_type</a> allocatorFunctor, const char *name=&quot;AZ::AZStdFunctorAllocator&quot;)</td></tr>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>AZStdFunctorAllocator</b> (<a class="el" href="class_a_z_1_1_a_z_std_functor_allocator.html#a22392662100639f8f61bd0b86e2e841d">functor_type</a> allocatorFunctor, const char *name=&quot;AZ::AZStdFunctorAllocator&quot;)</td></tr>
 <tr class="separator:a0060fb773d7bbde24a8d5e177e8b3440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30f899a4563b141c6ecfb199c8637606"><td class="memItemLeft" align="right" valign="top"><a id="a30f899a4563b141c6ecfb199c8637606"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>AZStdFunctorAllocator</b> (const <a class="el" href="class_a_z_1_1_a_z_std_functor_allocator.html">AZStdFunctorAllocator</a> &amp;rhs, const char *name)</td></tr>
@@ -119,18 +119,18 @@ constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=<
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Generic wrapper for binding <a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> interface allocator. This is basically the same as <a class="el" href="class_a_z_1_1_a_z_std_alloc.html">AZStdAlloc</a> but it allows you to remove the template parameter and retrieve the allocator from a supplied function pointer </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="acda90e4af716113f80bebfcf953d6a42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acda90e4af716113f80bebfcf953d6a42">&#9670;&nbsp;</a></span>functor_type</h2>
+<a id="a22392662100639f8f61bd0b86e2e841d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22392662100639f8f61bd0b86e2e841d">&#9670;&nbsp;</a></span>functor_type</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="class_a_z_1_1_a_z_std_functor_allocator.html#acda90e4af716113f80bebfcf953d6a42">AZ::AZStdFunctorAllocator::functor_type</a> =  <a class="el" href="class_a_z_1_1_i_allocator_allocate.html">IAllocatorAllocate</a>&amp;(*)()</td>
+          <td class="memname">using <a class="el" href="class_a_z_1_1_a_z_std_functor_allocator.html#a22392662100639f8f61bd0b86e2e841d">AZ::AZStdFunctorAllocator::functor_type</a> =  <a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a>&amp;(*)()</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Function Pointer must return <a class="el" href="class_a_z_1_1_i_allocator_allocate.html">IAllocatorAllocate</a>&amp;. function pointers do not support covariant return types </p>
+<p>Function Pointer must return <a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a>&amp;. function pointers do not support covariant return types </p>
 
 </div>
 </div>
@@ -140,7 +140,7 @@ constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

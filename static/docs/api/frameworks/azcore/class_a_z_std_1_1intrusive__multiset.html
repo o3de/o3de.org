@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -343,8 +343,7 @@ AZ_FORCE_INLINE const_node_ptr_type&#160;</td><td class="memItemRight" valign="b
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:abe9213d3c3133a7da0ff24e92d1a24bb"><td class="memItemLeft" align="right" valign="top"><a id="abe9213d3c3133a7da0ff24e92d1a24bb"></a>
-static node_ptr_type&#160;</td><td class="memItemRight" valign="bottom"><b>MinOrMax</b> (const_node_ptr_type node, SideType side)</td></tr>
+<tr class="memitem:abe9213d3c3133a7da0ff24e92d1a24bb"><td class="memItemLeft" align="right" valign="top">static node_ptr_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1intrusive__multiset.html#abe9213d3c3133a7da0ff24e92d1a24bb">MinOrMax</a> (const_node_ptr_type node, SideType side)</td></tr>
 <tr class="separator:abe9213d3c3133a7da0ff24e92d1a24bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -372,7 +371,52 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_impl</b></t
 class AZStd::intrusive_multiset&lt; T, Hook, Compare &gt;</h3>
 
 <p>Intrusive multiset container is a <a class="el" href="namespace_a_z_std.html" title="AZ namespace needs to be closed in order to specialize the AZStd::hash struct for AddressTypeElement ...">AZStd</a> extension container. </p><dl class="section user"><dt></dt><dd>It uses the <a class="el" href="struct_a_z_std_1_1intrusive__multiset__node.html">intrusive_multiset_node</a> contained in the provided user type T. You have 2 choices you can make your T type to either inherit from <a class="el" href="struct_a_z_std_1_1intrusive__multiset__node.html">intrusive_multiset_node</a> or just have <a class="el" href="struct_a_z_std_1_1intrusive__multiset__node.html">intrusive_multiset_node</a> as a <b>public</b> member. Based on which option you prefer you should use the appropriate hook type. Hook parameter should be <a class="el" href="struct_a_z_std_1_1intrusive__multiset__base__hook.html">intrusive_multiset_base_hook</a> (if you inherit the <a class="el" href="struct_a_z_std_1_1intrusive__multiset__node.html">intrusive_multiset_node</a>) or <a class="el" href="struct_a_z_std_1_1intrusive__multiset__member__hook.html">intrusive_multiset_member_hook</a> if you have it as a public member. Intrusive containers never allocate any memory, destroy or create any objects. Just used the provided nodes to store it's information. Generally speaking intrusive containers are better for the cache (assuming you are operating on the objects you are iterating) You can see examples of all that AZStdExamples. </dd></dl>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="abe9213d3c3133a7da0ff24e92d1a24bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe9213d3c3133a7da0ff24e92d1a24bb">&#9670;&nbsp;</a></span>MinOrMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class Hook , class Compare  = AZStd::less&lt;T&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static node_ptr_type <a class="el" href="class_a_z_std_1_1intrusive__multiset.html">AZStd::intrusive_multiset</a>&lt; T, Hook, Compare &gt;::MinOrMax </td>
+          <td>(</td>
+          <td class="paramtype">const_node_ptr_type&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SideType&#160;</td>
+          <td class="paramname"><em>side</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>pre-condition </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>must be non-nullptr </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a9f9b0dcdbeadc7798caa9850707d15a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f9b0dcdbeadc7798caa9850707d15a5">&#9670;&nbsp;</a></span>m_head</h2>
 
@@ -407,7 +451,7 @@ template&lt;class T , class Hook , class Compare  = AZStd::less&lt;T&gt;&gt; </d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:05 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:54 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

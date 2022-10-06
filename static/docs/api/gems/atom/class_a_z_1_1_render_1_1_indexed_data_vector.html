@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -61,43 +61,46 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>IndexedDataVector</b> (size_t initialReservedSize)</td></tr>
 <tr class="separator:a2dbc474205eee8b602698952cd183495"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab304dd81e6645df3a9113993a4d41027"><td class="memItemLeft" align="right" valign="top"><a id="ab304dd81e6645df3a9113993a4d41027"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html#ab304dd81e6645df3a9113993a4d41027">Clear</a> ()</td></tr>
+<tr class="memdesc:ab304dd81e6645df3a9113993a4d41027"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all data and resets to initial state. <br /></td></tr>
 <tr class="separator:ab304dd81e6645df3a9113993a4d41027"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcdd732a43be31e0451e84118d80e73a"><td class="memItemLeft" align="right" valign="top"><a id="abcdd732a43be31e0451e84118d80e73a"></a>
-IndexType&#160;</td><td class="memItemRight" valign="bottom"><b>GetFreeSlotIndex</b> ()</td></tr>
+IndexType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html#abcdd732a43be31e0451e84118d80e73a">GetFreeSlotIndex</a> ()</td></tr>
+<tr class="memdesc:abcdd732a43be31e0451e84118d80e73a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new entry, default-constructs it, and returns an index that references it. <br /></td></tr>
 <tr class="separator:abcdd732a43be31e0451e84118d80e73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af060af92cba8a55a934acbbc26b7ef99"><td class="memItemLeft" align="right" valign="top"><a id="af060af92cba8a55a934acbbc26b7ef99"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveIndex</b> (IndexType index)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html#af060af92cba8a55a934acbbc26b7ef99">RemoveIndex</a> (IndexType index)</td></tr>
+<tr class="memdesc:af060af92cba8a55a934acbbc26b7ef99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the data referenced by index and frees that index for future use. <br /></td></tr>
 <tr class="separator:af060af92cba8a55a934acbbc26b7ef99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a226dfb3490c3fb43a39fd31289d04f12"><td class="memItemLeft" align="right" valign="top"><a id="a226dfb3490c3fb43a39fd31289d04f12"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveData</b> (DataType *data)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html#a226dfb3490c3fb43a39fd31289d04f12">RemoveData</a> (DataType *data)</td></tr>
+<tr class="memdesc:a226dfb3490c3fb43a39fd31289d04f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the data and related index by using a pointer to the data itself. <br /></td></tr>
 <tr class="separator:a226dfb3490c3fb43a39fd31289d04f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ee3900e2b159a5c7c5197b745f763a1"><td class="memItemLeft" align="right" valign="top"><a id="a5ee3900e2b159a5c7c5197b745f763a1"></a>
-DataType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetData</b> (IndexType index)</td></tr>
+DataType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html#a5ee3900e2b159a5c7c5197b745f763a1">GetData</a> (IndexType index)</td></tr>
+<tr class="memdesc:a5ee3900e2b159a5c7c5197b745f763a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the data using the provided index. <br /></td></tr>
 <tr class="separator:a5ee3900e2b159a5c7c5197b745f763a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b8baa1daea84a094ff103d9113ca256"><td class="memItemLeft" align="right" valign="top"><a id="a3b8baa1daea84a094ff103d9113ca256"></a>
 const DataType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetData</b> (IndexType index) const</td></tr>
 <tr class="separator:a3b8baa1daea84a094ff103d9113ca256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe1a5eb780e3dd5b3801b7988b964854"><td class="memItemLeft" align="right" valign="top"><a id="afe1a5eb780e3dd5b3801b7988b964854"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataCount</b> () const</td></tr>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html#afe1a5eb780e3dd5b3801b7988b964854">GetDataCount</a> () const</td></tr>
+<tr class="memdesc:afe1a5eb780e3dd5b3801b7988b964854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a count of how many items are stored in the <a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html">IndexedDataVector</a>. <br /></td></tr>
 <tr class="separator:afe1a5eb780e3dd5b3801b7988b964854"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64f06dab13daf90d4b3b897899765277"><td class="memItemLeft" align="right" valign="top"><a id="a64f06dab13daf90d4b3b897899765277"></a>
-AZStd::vector&lt; DataType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataVector</b> ()</td></tr>
+<tr class="memitem:a64f06dab13daf90d4b3b897899765277"><td class="memItemLeft" align="right" valign="top">AZStd::vector&lt; DataType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html#a64f06dab13daf90d4b3b897899765277">GetDataVector</a> ()</td></tr>
 <tr class="separator:a64f06dab13daf90d4b3b897899765277"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac59e49fb3a1e5d9ac67069d036fe946e"><td class="memItemLeft" align="right" valign="top"><a id="ac59e49fb3a1e5d9ac67069d036fe946e"></a>
 const AZStd::vector&lt; DataType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataVector</b> () const</td></tr>
 <tr class="separator:ac59e49fb3a1e5d9ac67069d036fe946e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95e659224d17e29241ea870cccb44de8"><td class="memItemLeft" align="right" valign="top"><a id="a95e659224d17e29241ea870cccb44de8"></a>
-AZStd::vector&lt; IndexType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetIndexVector</b> ()</td></tr>
-<tr class="separator:a95e659224d17e29241ea870cccb44de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c5fc54efec3c071865330cd82595e67"><td class="memItemLeft" align="right" valign="top"><a id="a4c5fc54efec3c071865330cd82595e67"></a>
-const AZStd::vector&lt; IndexType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetIndexVector</b> () const</td></tr>
-<tr class="separator:a4c5fc54efec3c071865330cd82595e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77acc11d09532fb885d108e9301eb480"><td class="memItemLeft" align="right" valign="top"><a id="a77acc11d09532fb885d108e9301eb480"></a>
+const AZStd::vector&lt; IndexType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html#a77acc11d09532fb885d108e9301eb480">GetDataToIndexVector</a> () const</td></tr>
+<tr class="memdesc:a77acc11d09532fb885d108e9301eb480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the internal vector. <br /></td></tr>
+<tr class="separator:a77acc11d09532fb885d108e9301eb480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5c1084cb8cbefebbc14b1df4c6eab7b"><td class="memItemLeft" align="right" valign="top"><a id="aa5c1084cb8cbefebbc14b1df4c6eab7b"></a>
-IndexType&#160;</td><td class="memItemRight" valign="bottom"><b>GetRawIndex</b> (IndexType index) const</td></tr>
+IndexType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html#aa5c1084cb8cbefebbc14b1df4c6eab7b">GetRawIndex</a> (IndexType index) const</td></tr>
+<tr class="memdesc:aa5c1084cb8cbefebbc14b1df4c6eab7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the offset into the internal data vector for a given index. <br /></td></tr>
 <tr class="separator:aa5c1084cb8cbefebbc14b1df4c6eab7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad991230ce230faefc413e72bdf24d366"><td class="memItemLeft" align="right" valign="top"><a id="ad991230ce230faefc413e72bdf24d366"></a>
-IndexType&#160;</td><td class="memItemRight" valign="bottom"><b>GetIndexForData</b> (const DataType *data) const</td></tr>
+<tr class="memitem:ad991230ce230faefc413e72bdf24d366"><td class="memItemLeft" align="right" valign="top">IndexType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html#ad991230ce230faefc413e72bdf24d366">GetIndexForData</a> (const DataType *data) const</td></tr>
 <tr class="separator:ad991230ce230faefc413e72bdf24d366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -112,6 +115,53 @@ Static Public Attributes</h2></td></tr>
 static constexpr IndexType&#160;</td><td class="memItemRight" valign="bottom"><b>NoFreeSlot</b> = std::numeric_limits&lt;IndexType&gt;::max()</td></tr>
 <tr class="separator:a628eafc48183fb5c3c65dfe7f53ca005"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a64f06dab13daf90d4b3b897899765277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f06dab13daf90d4b3b897899765277">&#9670;&nbsp;</a></span>GetDataVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DataType , typename IndexType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const AZStd::vector&lt; DataType &gt; &amp; <a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html">AZ::Render::IndexedDataVector</a>&lt; DataType, IndexType &gt;::GetDataVector</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a reference to the internal data vector. This vector should not be altered by calling code or the <a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html">IndexedDataVector</a> will be corrupted </p>
+
+</div>
+</div>
+<a id="ad991230ce230faefc413e72bdf24d366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad991230ce230faefc413e72bdf24d366">&#9670;&nbsp;</a></span>GetIndexForData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DataType , typename IndexType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">IndexType <a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html">AZ::Render::IndexedDataVector</a>&lt; DataType, IndexType &gt;::GetIndexForData </td>
+          <td>(</td>
+          <td class="paramtype">const DataType *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the logical index for data given its pointer, which could passed to <a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html#a5ee3900e2b159a5c7c5197b745f763a1" title="Returns a reference to the data using the provided index.">GetData()</a> to retrieve the data again. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Gems/Atom/Feature/Common/Code/Include/Atom/Feature/Utils/IndexedDataVector.h</li>
 <li>Gems/Atom/Feature/Common/Code/Include/Atom/Feature/Utils/IndexedDataVector.inl</li>
@@ -119,7 +169,7 @@ static constexpr IndexType&#160;</td><td class="memItemRight" valign="bottom"><b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:25 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

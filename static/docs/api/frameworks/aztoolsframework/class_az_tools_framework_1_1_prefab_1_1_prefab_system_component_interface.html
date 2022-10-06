@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,6 +46,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -57,6 +58,12 @@ $(function() {
 
 <p>Inherited by <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html">AzToolsFramework::Prefab::PrefabSystemComponent</a><code> [private]</code>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a3f0ec010b05be798afbeb4731a8c4d18"><td class="memItemLeft" align="right" valign="top"><a id="a3f0ec010b05be798afbeb4731a8c4d18"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>InstantiatedEntitiesCallback</b> = AZStd::function&lt; void(AZStd::vector&lt; AZ::Entity * &gt; &amp;)&gt;</td></tr>
+<tr class="separator:a3f0ec010b05be798afbeb4731a8c4d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a723d55e9f5fb4396b7d4741e5d1e6018"><td class="memItemLeft" align="right" valign="top"><a id="a723d55e9f5fb4396b7d4741e5d1e6018"></a>
@@ -86,9 +93,9 @@ virtual LinkId&#160;</td><td class="memItemRight" valign="bottom"><b>AddLink</b>
 <tr class="memitem:ab206249739b6153947891bb38ef3dbd9"><td class="memItemLeft" align="right" valign="top"><a id="ab206249739b6153947891bb38ef3dbd9"></a>
 virtual LinkId&#160;</td><td class="memItemRight" valign="bottom"><b>CreateLink</b> (TemplateId linkTargetId, TemplateId linkSourceId, const InstanceAlias &amp;instanceAlias, const PrefabDomConstReference linkPatches, const LinkId &amp;linkId=InvalidLinkId)=0</td></tr>
 <tr class="separator:ab206249739b6153947891bb38ef3dbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b910433b3001159786f9e6aa71b3a2b"><td class="memItemLeft" align="right" valign="top"><a id="a1b910433b3001159786f9e6aa71b3a2b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveLink</b> (const LinkId &amp;linkId)=0</td></tr>
-<tr class="separator:a1b910433b3001159786f9e6aa71b3a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e58f5765c2cb2242cc093839888337"><td class="memItemLeft" align="right" valign="top"><a id="aa3e58f5765c2cb2242cc093839888337"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveLink</b> (const LinkId &amp;linkId)=0</td></tr>
+<tr class="separator:aa3e58f5765c2cb2242cc093839888337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a001bc655eb1d5e478dbfb8ffdf9b523e"><td class="memItemLeft" align="right" valign="top"><a id="a001bc655eb1d5e478dbfb8ffdf9b523e"></a>
 virtual TemplateId&#160;</td><td class="memItemRight" valign="bottom"><b>GetTemplateIdFromFilePath</b> (AZ::IO::PathView filePath) const =0</td></tr>
 <tr class="separator:a001bc655eb1d5e478dbfb8ffdf9b523e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,15 +117,15 @@ virtual PrefabDom &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Fi
 <tr class="memitem:a7312a82fa896ff38dd121793785911da"><td class="memItemLeft" align="right" valign="top"><a id="a7312a82fa896ff38dd121793785911da"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePrefabTemplate</b> (TemplateId templateId, const PrefabDom &amp;updatedDom)=0</td></tr>
 <tr class="separator:a7312a82fa896ff38dd121793785911da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8741962a31f07019f681d57b32698e15"><td class="memItemLeft" align="right" valign="top"><a id="a8741962a31f07019f681d57b32698e15"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PropagateTemplateChanges</b> (TemplateId templateId, InstanceOptionalReference instanceToExclude=AZStd::nullopt)=0</td></tr>
-<tr class="separator:a8741962a31f07019f681d57b32698e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9885ac02c847ad54ad012e638cefacb5"><td class="memItemLeft" align="right" valign="top"><a id="a9885ac02c847ad54ad012e638cefacb5"></a>
-virtual AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>InstantiatePrefab</b> (AZ::IO::PathView filePath, InstanceOptionalReference parent=AZStd::nullopt)=0</td></tr>
-<tr class="separator:a9885ac02c847ad54ad012e638cefacb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b78df361854899a0dc80583f74447ef"><td class="memItemLeft" align="right" valign="top"><a id="a1b78df361854899a0dc80583f74447ef"></a>
-virtual AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>InstantiatePrefab</b> (TemplateId templateId, InstanceOptionalReference parent=AZStd::nullopt)=0</td></tr>
-<tr class="separator:a1b78df361854899a0dc80583f74447ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce2916be856863fec1316c542362b3d"><td class="memItemLeft" align="right" valign="top"><a id="a2ce2916be856863fec1316c542362b3d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PropagateTemplateChanges</b> (TemplateId templateId, InstanceOptionalConstReference instanceToExclude=AZStd::nullopt)=0</td></tr>
+<tr class="separator:a2ce2916be856863fec1316c542362b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa24d0a215dbd51069d9120943f6e2369"><td class="memItemLeft" align="right" valign="top"><a id="aa24d0a215dbd51069d9120943f6e2369"></a>
+virtual AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>InstantiatePrefab</b> (AZ::IO::PathView filePath, InstanceOptionalReference parent=AZStd::nullopt, const InstantiatedEntitiesCallback &amp;instantiatedEntitiesCallback={})=0</td></tr>
+<tr class="separator:aa24d0a215dbd51069d9120943f6e2369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a7c7ea2dda4eaf538d597fa41dcb3a"><td class="memItemLeft" align="right" valign="top"><a id="a43a7c7ea2dda4eaf538d597fa41dcb3a"></a>
+virtual AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>InstantiatePrefab</b> (TemplateId templateId, InstanceOptionalReference parent=AZStd::nullopt, const InstantiatedEntitiesCallback &amp;instantiatedEntitiesCallback={})=0</td></tr>
+<tr class="separator:a43a7c7ea2dda4eaf538d597fa41dcb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a356f0ae14770f40bff8dc8f90b7a7cd3"><td class="memItemLeft" align="right" valign="top"><a id="a356f0ae14770f40bff8dc8f90b7a7cd3"></a>
 virtual AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreatePrefab</b> (const AZStd::vector&lt; AZ::Entity * &gt; &amp;entities, AZStd::vector&lt; AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&gt; &amp;&amp;instancesToConsume, AZ::IO::PathView filePath, AZStd::unique_ptr&lt; AZ::Entity &gt; containerEntity=nullptr, InstanceOptionalReference parent=AZStd::nullopt, bool shouldCreateLinks=true)=0</td></tr>
 <tr class="separator:a356f0ae14770f40bff8dc8f90b7a7cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,7 +242,7 @@ virtual AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_p
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:40 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:33 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

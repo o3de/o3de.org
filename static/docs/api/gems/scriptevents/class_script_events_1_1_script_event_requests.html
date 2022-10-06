@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptEvents Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -85,6 +85,12 @@ virtual AZStd::intrusive_ptr&lt; Internal::ScriptEventRegistration &gt;&#160;</t
 <tr class="memitem:a605659a069d752f291466108114285dd"><td class="memItemLeft" align="right" valign="top"><a id="a605659a069d752f291466108114285dd"></a>
 virtual const <a class="el" href="struct_script_events_1_1_fundamental_types.html">FundamentalTypes</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFundamentalTypes</b> ()=0</td></tr>
 <tr class="separator:a605659a069d752f291466108114285dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9004674eb308c36a05070563bdd591fa"><td class="memItemLeft" align="right" valign="top"><a id="a9004674eb308c36a05070563bdd591fa"></a>
+virtual AZ::Outcome&lt; <a class="el" href="class_script_events_1_1_script_event.html">ScriptEvents::ScriptEvent</a>, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LoadDefinitionSource</b> (const AZ::IO::Path &amp;path)=0</td></tr>
+<tr class="separator:a9004674eb308c36a05070563bdd591fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e0a3383c6901b8bed9b9a62a4b056e"><td class="memItemLeft" align="right" valign="top"><a id="ab3e0a3383c6901b8bed9b9a62a4b056e"></a>
+virtual AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SaveDefinitionSourceFile</b> (const <a class="el" href="class_script_events_1_1_script_event.html">ScriptEvents::ScriptEvent</a> &amp;events, const AZ::IO::Path &amp;path)=0</td></tr>
+<tr class="separator:ab3e0a3383c6901b8bed9b9a62a4b056e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -103,7 +109,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:12 for Open 3D Engine ScriptEvents Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:40 for Open 3D Engine ScriptEvents Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

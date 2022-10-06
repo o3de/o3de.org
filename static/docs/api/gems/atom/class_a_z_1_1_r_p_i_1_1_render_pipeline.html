@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -68,6 +68,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:ac24a57606d88525803ed49ae14ec04b9"><td class="memItemLeft" align="right" valign="top"><a id="ac24a57606d88525803ed49ae14ec04b9"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineViewMap</b> = AZStd::map&lt; PipelineViewTag, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pipeline_views.html">PipelineViews</a>, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_a_z_name_sort_ascending.html">AZNameSortAscending</a> &gt;</td></tr>
 <tr class="separator:ac24a57606d88525803ed49ae14ec04b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee41e857fcc88ba2ed439fb3e66cbb81"><td class="memItemLeft" align="right" valign="top"><a id="aee41e857fcc88ba2ed439fb3e66cbb81"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ViewToViewTagMap</b> = AZStd::map&lt; const <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html">View</a> *, PipelineViewTag &gt;</td></tr>
+<tr class="separator:aee41e857fcc88ba2ed439fb3e66cbb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -116,16 +119,22 @@ RenderPipelineId&#160;</td><td class="memItemRight" valign="bottom"><b>GetId</b>
 <tr class="memitem:a904c7e55ef0177a3fe4e6f9b3fc1e7f4"><td class="memItemLeft" align="right" valign="top"><a id="a904c7e55ef0177a3fe4e6f9b3fc1e7f4"></a>
 const Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_parent_pass.html">ParentPass</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRootPass</b> () const</td></tr>
 <tr class="separator:a904c7e55ef0177a3fe4e6f9b3fc1e7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0032e2a950cc5e33bbd802cba4f96af3"><td class="memItemLeft" align="right" valign="top"><a id="a0032e2a950cc5e33bbd802cba4f96af3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a0032e2a950cc5e33bbd802cba4f96af3">SetPassModified</a> ()</td></tr>
-<tr class="memdesc:a0032e2a950cc5e33bbd802cba4f96af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function need to be called by <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> class when any passes are added/removed in this pipeline's pass tree. <br /></td></tr>
-<tr class="separator:a0032e2a950cc5e33bbd802cba4f96af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed270392afc65dd0693dfbe3213bde85"><td class="memItemLeft" align="right" valign="top"><a id="aed270392afc65dd0693dfbe3213bde85"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#aed270392afc65dd0693dfbe3213bde85">SetPassNeedsRecreate</a> ()</td></tr>
-<tr class="memdesc:aed270392afc65dd0693dfbe3213bde85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the pipeline it needs to recreate passes. Typical use case is for pass asset hot reloading. <br /></td></tr>
-<tr class="separator:aed270392afc65dd0693dfbe3213bde85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5fd5e44651e91f17631ffaea70d3b9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#ab5fd5e44651e91f17631ffaea70d3b9b">OnPassModified</a> ()</td></tr>
-<tr class="separator:ab5fd5e44651e91f17631ffaea70d3b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a28e9229eeda44c4ad0517b078f968"><td class="memItemLeft" align="right" valign="top"><a id="ab3a28e9229eeda44c4ad0517b078f968"></a>
+u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#ab3a28e9229eeda44c4ad0517b078f968">GetPipelinePassChanges</a> () const</td></tr>
+<tr class="memdesc:ab3a28e9229eeda44c4ad0517b078f968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the flags indicating the pipeline pass changes that occured this past frame. <br /></td></tr>
+<tr class="separator:ab3a28e9229eeda44c4ad0517b078f968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0490e6e78d5b5714c704c888b58e9c75"><td class="memItemLeft" align="right" valign="top"><a id="a0490e6e78d5b5714c704c888b58e9c75"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a0490e6e78d5b5714c704c888b58e9c75">ProcessQueuedPassChanges</a> ()</td></tr>
+<tr class="memdesc:a0490e6e78d5b5714c704c888b58e9c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes passes in the pipeline that are queued for build, initialization or removal. <br /></td></tr>
+<tr class="separator:a0490e6e78d5b5714c704c888b58e9c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15009776e66d152033f0f643496678c4"><td class="memItemLeft" align="right" valign="top"><a id="a15009776e66d152033f0f643496678c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a15009776e66d152033f0f643496678c4">MarkPipelinePassChanges</a> (u32 passChangeFlags)</td></tr>
+<tr class="memdesc:a15009776e66d152033f0f643496678c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function signals the render pipeline that modifications have been made to the pipeline passes. <br /></td></tr>
+<tr class="separator:a15009776e66d152033f0f643496678c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d4dc360b727e739dc8af3e706f9f5db"><td class="memItemLeft" align="right" valign="top"><a id="a9d4dc360b727e739dc8af3e706f9f5db"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a9d4dc360b727e739dc8af3e706f9f5db">UpdatePasses</a> ()</td></tr>
+<tr class="memdesc:a9d4dc360b727e739dc8af3e706f9f5db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update passes and views that are affected by any modifed passes. Called at the start of each frame. <br /></td></tr>
+<tr class="separator:a9d4dc360b727e739dc8af3e706f9f5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba84674d117ad784a330017258bf5cfc"><td class="memItemLeft" align="right" valign="top"><a id="aba84674d117ad784a330017258bf5cfc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#aba84674d117ad784a330017258bf5cfc">IsExecuteOnce</a> ()</td></tr>
 <tr class="memdesc:aba84674d117ad784a330017258bf5cfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this pipeline should be removed after a single execution. <br /></td></tr>
@@ -171,6 +180,16 @@ RenderMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 RHI::DrawFilterMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a211c9ef58d6d0ce301737432ab92ec38">GetDrawFilterMask</a> () const</td></tr>
 <tr class="memdesc:a211c9ef58d6d0ce301737432ab92ec38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get draw filter mask. <br /></td></tr>
 <tr class="separator:a211c9ef58d6d0ce301737432ab92ec38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ff0b4c4154ee1545c5df01f1b88eec"><td class="memItemLeft" align="right" valign="top"><a id="a18ff0b4c4154ee1545c5df01f1b88eec"></a>
+const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html">RenderPipelineDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a18ff0b4c4154ee1545c5df01f1b88eec">GetDescriptor</a> () const</td></tr>
+<tr class="memdesc:a18ff0b4c4154ee1545c5df01f1b88eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html" title="A descriptor used to create a render pipeline.">RenderPipelineDescriptor</a> which was used to create this <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a>. <br /></td></tr>
+<tr class="separator:a18ff0b4c4154ee1545c5df01f1b88eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a5860ce4182713fc194b76447b8334"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#ae7a5860ce4182713fc194b76447b8334">AddPassBefore</a> (Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> &gt; newPass, const AZ::Name &amp;referencePassName)</td></tr>
+<tr class="separator:ae7a5860ce4182713fc194b76447b8334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc30d7f021dc2e0f447805aeb9a80a65"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#adc30d7f021dc2e0f447805aeb9a80a65">AddPassAfter</a> (Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> &gt; newPass, const AZ::Name &amp;referencePassName)</td></tr>
+<tr class="separator:adc30d7f021dc2e0f447805aeb9a80a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419941a9bd9482ee53345d30cf1ca6e0"><td class="memItemLeft" align="right" valign="top">Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a419941a9bd9482ee53345d30cf1ca6e0">FindFirstPass</a> (const AZ::Name &amp;passName)</td></tr>
+<tr class="separator:a419941a9bd9482ee53345d30cf1ca6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -180,15 +199,21 @@ static RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><b>C
 <tr class="memitem:a47d9e5edd7f40c0284d79db1c5ef1ef6"><td class="memItemLeft" align="right" valign="top"><a id="a47d9e5edd7f40c0284d79db1c5ef1ef6"></a>
 static RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRenderPipelineFromAsset</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_any_asset.html">AnyAsset</a> &gt; pipelineAsset)</td></tr>
 <tr class="separator:a47d9e5edd7f40c0284d79db1c5ef1ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a256789a5484c60e7e8dbea17163e5e98"><td class="memItemLeft" align="right" valign="top"><a id="a256789a5484c60e7e8dbea17163e5e98"></a>
-static RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRenderPipelineForWindow</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html">RenderPipelineDescriptor</a> &amp;desc, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html">WindowContext</a> &amp;windowContext)</td></tr>
-<tr class="separator:a256789a5484c60e7e8dbea17163e5e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7283559d0a6680707cac30a637e90b04"><td class="memItemLeft" align="right" valign="top"><a id="a7283559d0a6680707cac30a637e90b04"></a>
+static RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRenderPipelineForWindow</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html">RenderPipelineDescriptor</a> &amp;desc, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html">WindowContext</a> &amp;windowContext, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#ae5952c87284bc252aa88563f10bb8c3e">WindowContext::SwapChainMode</a> swapchainMode=WindowContext::SwapChainMode::Default)</td></tr>
+<tr class="separator:a7283559d0a6680707cac30a637e90b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d1d40e68b2018b05450059d189057b8"><td class="memItemLeft" align="right" valign="top"><a id="a2d1d40e68b2018b05450059d189057b8"></a>
 static RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRenderPipelineForWindow</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_any_asset.html">AnyAsset</a> &gt; pipelineAsset, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html">WindowContext</a> &amp;windowContext)</td></tr>
 <tr class="separator:a2d1d40e68b2018b05450059d189057b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
+<tr class="memitem:a3dcef6908bba76672fc23993a0ab298f"><td class="memItemLeft" align="right" valign="top"><a id="a3dcef6908bba76672fc23993a0ab298f"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Pass</b></td></tr>
+<tr class="separator:a3dcef6908bba76672fc23993a0ab298f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad15643eaf82b4b17f3d83719c8443575"><td class="memItemLeft" align="right" valign="top"><a id="ad15643eaf82b4b17f3d83719c8443575"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>PassSystem</b></td></tr>
+<tr class="separator:ad15643eaf82b4b17f3d83719c8443575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a032858ae1fe02d2d1170981c2af2d67c"><td class="memItemLeft" align="right" valign="top"><a id="a032858ae1fe02d2d1170981c2af2d67c"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
 <tr class="separator:a032858ae1fe02d2d1170981c2af2d67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,6 +221,64 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> describes how to render a scene. It has all the passes and views for rendering. A scene may have several pipelines. Each pipeline have its own render frequency. Pipeline can be disabled and it won't be rendered if it's disabled. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="adc30d7f021dc2e0f447805aeb9a80a65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc30d7f021dc2e0f447805aeb9a80a65">&#9670;&nbsp;</a></span>AddPassAfter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AZ::RPI::RenderPipeline::AddPassAfter </td>
+          <td>(</td>
+          <td class="paramtype">Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> &gt;&#160;</td>
+          <td class="paramname"><em>newPass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Name &amp;&#160;</td>
+          <td class="paramname"><em>referencePassName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Find a reference pass's location and add the new pass after the reference pass After the new pass was inserted, the new pass and the reference pass are siblings </p>
+
+</div>
+</div>
+<a id="ae7a5860ce4182713fc194b76447b8334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a5860ce4182713fc194b76447b8334">&#9670;&nbsp;</a></span>AddPassBefore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AZ::RPI::RenderPipeline::AddPassBefore </td>
+          <td>(</td>
+          <td class="paramtype">Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> &gt;&#160;</td>
+          <td class="paramname"><em>newPass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Name &amp;&#160;</td>
+          <td class="paramname"><em>referencePassName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Find a reference pass's location and add the new pass before the reference pass After the new pass was inserted, the new pass and the reference pass are siblings </p>
+
+</div>
+</div>
 <a id="a0dc83498f5615a3d1d2e79270a3a1828"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0dc83498f5615a3d1d2e79270a3a1828">&#9670;&nbsp;</a></span>AddToRenderTick()</h2>
 
@@ -261,6 +344,25 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
 
 </div>
 </div>
+<a id="a419941a9bd9482ee53345d30cf1ca6e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a419941a9bd9482ee53345d30cf1ca6e0">&#9670;&nbsp;</a></span>FindFirstPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ptr&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a>&gt; AZ::RPI::RenderPipeline::FindFirstPass </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Name &amp;&#160;</td>
+          <td class="paramname"><em>passName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Find the first pass with matching name in the render pipeline Note: to find all the passes with matching name in this render pipeline, use RPI::PassSystemInterface::Get()-&gt;ForEachPass() function instead. </p>
+
+</div>
+</div>
 <a id="ad42b8f2f0deb98ff908bdc6c4fd036ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad42b8f2f0deb98ff908bdc6c4fd036ac">&#9670;&nbsp;</a></span>GetDefaultView()</h2>
 
@@ -276,24 +378,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Get the view for the default view tag. It's the same as GetViews(GetMainViewTag()) and using first element. </p>
-
-</div>
-</div>
-<a id="ab5fd5e44651e91f17631ffaea70d3b9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5fd5e44651e91f17631ffaea70d3b9b">&#9670;&nbsp;</a></span>OnPassModified()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::RPI::RenderPipeline::OnPassModified </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Update passes and views when any pass was modified which may affect pipeline views. This function is automatically called when frame starts. User may call it manually when they expect to get up to date view information after any pass changes. </p>
 
 </div>
 </div>
@@ -351,7 +435,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:29 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:23 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

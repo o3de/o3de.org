@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine GradientSignal Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -47,7 +47,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_gradient_signal_1_1_perlin_improved_noise-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GradientSignal::PerlinImprovedNoise Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -63,22 +62,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0982dfd9366cd6ae1d37e13e2b78afb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19e42786dc4867ed74ca9ed6e16108cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gradient_signal_1_1_perlin_improved_noise.html#a19e42786dc4867ed74ca9ed6e16108cf">PerlinImprovedNoise</a> (int seed)</td></tr>
 <tr class="separator:a19e42786dc4867ed74ca9ed6e16108cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc931fc3b8bd4b3ff659a72cf56ee1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gradient_signal_1_1_perlin_improved_noise.html#a8fc931fc3b8bd4b3ff659a72cf56ee1f">PerlinImprovedNoise</a> (const AZStd::span&lt; int, 512 &gt; &amp;permutationTable)</td></tr>
+<tr class="separator:a8fc931fc3b8bd4b3ff659a72cf56ee1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f6e9ef58b1bedc0aa3ebc906ef1aa38"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gradient_signal_1_1_perlin_improved_noise.html#a7f6e9ef58b1bedc0aa3ebc906ef1aa38">GenerateOctaveNoise</a> (float x, float y, float z, int octaves, float persistence, float initialFrequency=1.0f)</td></tr>
 <tr class="separator:a7f6e9ef58b1bedc0aa3ebc906ef1aa38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea8c3ecb51d219ddd78344855699d740"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gradient_signal_1_1_perlin_improved_noise.html#aea8c3ecb51d219ddd78344855699d740">GenerateNoise</a> (float x, float y, float z)</td></tr>
 <tr class="separator:aea8c3ecb51d219ddd78344855699d740"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a200179e49fae3f4fe2d14b1887a30a0c"><td class="memItemLeft" align="right" valign="top"><a id="a200179e49fae3f4fe2d14b1887a30a0c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareTable</b> (int seed)</td></tr>
-<tr class="separator:a200179e49fae3f4fe2d14b1887a30a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the Perlin improved noise algorithm Perlin noise can be used for any sort of wave-like deterministic patterns </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a19e42786dc4867ed74ca9ed6e16108cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19e42786dc4867ed74ca9ed6e16108cf">&#9670;&nbsp;</a></span>PerlinImprovedNoise()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e42786dc4867ed74ca9ed6e16108cf">&#9670;&nbsp;</a></span>PerlinImprovedNoise() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -93,6 +88,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareTable</b> (int
       </table>
 </div><div class="memdoc">
 <p>Prepares the permutation table with a given random seed </p>
+
+</div>
+</div>
+<a id="a8fc931fc3b8bd4b3ff659a72cf56ee1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fc931fc3b8bd4b3ff659a72cf56ee1f">&#9670;&nbsp;</a></span>PerlinImprovedNoise() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GradientSignal::PerlinImprovedNoise::PerlinImprovedNoise </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::span&lt; int, 512 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>permutationTable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initializes the permutation table from a preset table </p>
 
 </div>
 </div>
@@ -191,7 +205,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareTable</b> (int
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:44 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:56 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

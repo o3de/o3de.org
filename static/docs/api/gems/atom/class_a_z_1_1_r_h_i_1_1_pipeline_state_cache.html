@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -69,10 +69,10 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_cache.html#af620506570de69470b52fe56c499db75">Reset</a> ()</td></tr>
 <tr class="memdesc:af620506570de69470b52fe56c499db75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the caches of all pipeline libraries back to empty. All internal references to pipeline states are released. <br /></td></tr>
 <tr class="separator:af620506570de69470b52fe56c499db75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae54c4a472e217779d4cdf77a3948e64c"><td class="memItemLeft" align="right" valign="top"><a id="ae54c4a472e217779d4cdf77a3948e64c"></a>
-<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">PipelineLibraryHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_cache.html#ae54c4a472e217779d4cdf77a3948e64c">CreateLibrary</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library_data.html">PipelineLibraryData</a> *serializedData)</td></tr>
-<tr class="memdesc:ae54c4a472e217779d4cdf77a3948e64c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an internal pipeline library instance and returns its handle. <br /></td></tr>
-<tr class="separator:ae54c4a472e217779d4cdf77a3948e64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ea290c65855487e742ed6d14b607654"><td class="memItemLeft" align="right" valign="top"><a id="a6ea290c65855487e742ed6d14b607654"></a>
+<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">PipelineLibraryHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_cache.html#a6ea290c65855487e742ed6d14b607654">CreateLibrary</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library_data.html">PipelineLibraryData</a> *serializedData, const AZStd::string &amp;filePath=&quot;&quot;)</td></tr>
+<tr class="memdesc:a6ea290c65855487e742ed6d14b607654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an internal pipeline library instance and returns its handle. <br /></td></tr>
+<tr class="separator:a6ea290c65855487e742ed6d14b607654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab83879909e07ccc6f513f58ddc641823"><td class="memItemLeft" align="right" valign="top"><a id="ab83879909e07ccc6f513f58ddc641823"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_cache.html#ab83879909e07ccc6f513f58ddc641823">ReleaseLibrary</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">PipelineLibraryHandle</a> handle)</td></tr>
 <tr class="memdesc:ab83879909e07ccc6f513f58ddc641823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the pipeline library and purges it from the cache. Releases all held references to pipeline states for the library. <br /></td></tr>
@@ -81,10 +81,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_cache.html#aa6307b23fa04d617a78949568af486f7">ResetLibrary</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">PipelineLibraryHandle</a> handle)</td></tr>
 <tr class="memdesc:aa6307b23fa04d617a78949568af486f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets cache contents in the library. Releases all held references to pipeline states for the library. <br /></td></tr>
 <tr class="separator:aa6307b23fa04d617a78949568af486f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cc1bcf67c73043ea51916098a4f7ef8"><td class="memItemLeft" align="right" valign="top"><a id="a0cc1bcf67c73043ea51916098a4f7ef8"></a>
-ConstPtr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library_data.html">PipelineLibraryData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_cache.html#a0cc1bcf67c73043ea51916098a4f7ef8">GetLibrarySerializedData</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">PipelineLibraryHandle</a> handle) const</td></tr>
-<tr class="memdesc:a0cc1bcf67c73043ea51916098a4f7ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the serialized data for the library, which can be used to re-initialize it. <br /></td></tr>
-<tr class="separator:a0cc1bcf67c73043ea51916098a4f7ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab06a44ba5f1e26971d022add87d94df6"><td class="memItemLeft" align="right" valign="top">Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library.html">PipelineLibrary</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_cache.html#ab06a44ba5f1e26971d022add87d94df6">GetMergedLibrary</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">PipelineLibraryHandle</a> handle) const</td></tr>
+<tr class="separator:ab06a44ba5f1e26971d022add87d94df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65fb407a2f67f132a66c20b151f504af"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state.html">PipelineState</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_cache.html#a65fb407a2f67f132a66c20b151f504af">AcquirePipelineState</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">PipelineLibraryHandle</a> library, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_descriptor.html">PipelineStateDescriptor</a> &amp;descriptor)</td></tr>
 <tr class="separator:a65fb407a2f67f132a66c20b151f504af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e927b1d8797d83557bee7642379886b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_cache.html#a1e927b1d8797d83557bee7642379886b">Compact</a> ()</td></tr>
@@ -188,6 +186,25 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab06a44ba5f1e26971d022add87d94df6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab06a44ba5f1e26971d022add87d94df6">&#9670;&nbsp;</a></span>GetMergedLibrary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ptr&lt;<a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library.html">PipelineLibrary</a>&gt; AZ::RHI::PipelineStateCache::GetMergedLibrary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">PipelineLibraryHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the resulting merged library from all the threadLibraries related to the passed in handle. The merged library can be used to write out the serialized data. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="ada90877801cd1ee732db41585c6ff5fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada90877801cd1ee732db41585c6ff5fa">&#9670;&nbsp;</a></span>LibraryCountMax</h2>
@@ -218,7 +235,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:27 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:20 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

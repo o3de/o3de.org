@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -62,12 +62,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acdc853d72fd0f6f377b7a418d653383b"><td class="memItemLeft" align="right" valign="top"><a id="acdc853d72fd0f6f377b7a418d653383b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library.html">PipelineLibrary</a>, &quot;{843579BE-57E4-4527-AB00-C0217885AEA9}&quot;)</td></tr>
 <tr class="separator:acdc853d72fd0f6f377b7a418d653383b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82b810ceb4825e6c8a9320e1fe2b3c8b"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library.html#a82b810ceb4825e6c8a9320e1fe2b3c8b">Init</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">Device</a> &amp;device, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library_data.html">PipelineLibraryData</a> *serializedData)</td></tr>
-<tr class="separator:a82b810ceb4825e6c8a9320e1fe2b3c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bbe336b304b9dc3636be88e2eb188a9"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library.html#a7bbe336b304b9dc3636be88e2eb188a9">MergeInto</a> (AZStd::array_view&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library.html">PipelineLibrary</a> * &gt; librariesToMerge)</td></tr>
-<tr class="separator:a7bbe336b304b9dc3636be88e2eb188a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d71f53f4b9a0cebc4a875dda124409"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library.html#a15d71f53f4b9a0cebc4a875dda124409">Init</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_pipeline_library_descriptor.html">PipelineLibraryDescriptor</a> &amp;descriptor)</td></tr>
+<tr class="separator:a15d71f53f4b9a0cebc4a875dda124409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ca1458e36b2e6316fdc43a151dfd14"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library.html#a48ca1458e36b2e6316fdc43a151dfd14">MergeInto</a> (AZStd::span&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library.html">PipelineLibrary</a> *const &gt; librariesToMerge)</td></tr>
+<tr class="separator:a48ca1458e36b2e6316fdc43a151dfd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af96f22a63a365b2b37bfb492de756ef7"><td class="memItemLeft" align="right" valign="top">ConstPtr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library_data.html">PipelineLibraryData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library.html#af96f22a63a365b2b37bfb492de756ef7">GetSerializedData</a> () const</td></tr>
 <tr class="separator:af96f22a63a365b2b37bfb492de756ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3badb2e2d7bd2059a705700164b543"><td class="memItemLeft" align="right" valign="top"><a id="a3d3badb2e2d7bd2059a705700164b543"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library.html#a3d3badb2e2d7bd2059a705700164b543">SaveSerializedData</a> (const AZStd::string &amp;filePath) const</td></tr>
+<tr class="memdesc:a3d3badb2e2d7bd2059a705700164b543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the platform-specific data to disk using the filePath provided. This is done through RHI backend drivers. <br /></td></tr>
+<tr class="separator:a3d3badb2e2d7bd2059a705700164b543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af35d411b4173a205f7464a635a789ed6"><td class="memItemLeft" align="right" valign="top"><a id="af35d411b4173a205f7464a635a789ed6"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library.html#af35d411b4173a205f7464a635a789ed6">IsMergeRequired</a> () const</td></tr>
 <tr class="memdesc:af35d411b4173a205f7464a635a789ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the current library need to be merged. <br /></td></tr>
@@ -123,8 +127,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a82b810ceb4825e6c8a9320e1fe2b3c8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82b810ceb4825e6c8a9320e1fe2b3c8b">&#9670;&nbsp;</a></span>Init()</h2>
+<a id="a15d71f53f4b9a0cebc4a875dda124409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d71f53f4b9a0cebc4a875dda124409">&#9670;&nbsp;</a></span>Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,8 +142,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library_data.html">PipelineLibraryData</a> *&#160;</td>
-          <td class="paramname"><em>serializedData</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_pipeline_library_descriptor.html">PipelineLibraryDescriptor</a> &amp;&#160;</td>
+          <td class="paramname"><em>descriptor</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -150,15 +154,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 <p>Initializes the pipeline library from a platform-specific data payload. This data is generated by calling GetSerializedData in a previous run of the application. When run for the first time, the serialized data should be empty. When the application completes, the library can be serialized and the contents saved to disk. Subsequent loads will experience much faster pipeline state creation times (on supported platforms). On success, the library is transitioned to the initialized state. On failure, the library remains uninitialized. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">serializedData</td><td>The initial serialized data used to initialize the library. It can be null. </td></tr>
+    <tr><td class="paramname">descriptor</td><td>The descriptor needed to init the <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library.html">PipelineLibrary</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a7bbe336b304b9dc3636be88e2eb188a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bbe336b304b9dc3636be88e2eb188a9">&#9670;&nbsp;</a></span>MergeInto()</h2>
+<a id="a48ca1458e36b2e6316fdc43a151dfd14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ca1458e36b2e6316fdc43a151dfd14">&#9670;&nbsp;</a></span>MergeInto()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +170,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">ResultCode AZ::RHI::PipelineLibrary::MergeInto </td>
           <td>(</td>
-          <td class="paramtype">AZStd::array_view&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library.html">PipelineLibrary</a> * &gt;&#160;</td>
+          <td class="paramtype">AZStd::span&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_library.html">PipelineLibrary</a> *const &gt;&#160;</td>
           <td class="paramname"><em>librariesToMerge</em></td><td>)</td>
           <td></td>
         </tr>
@@ -182,7 +186,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:27 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:20 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

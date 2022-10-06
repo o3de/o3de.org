@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -125,9 +125,9 @@ const Outs &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetLatent
 <tr class="memitem:a3c2ab62a53795cabbd5e6453d0676e93"><td class="memItemLeft" align="right" valign="top"><a id="a3c2ab62a53795cabbd5e6453d0676e93"></a>
 <a class="el" href="struct_script_canvas_1_1_grammar_1_1_lexical_scope.html">LexicalScope</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetLexicalScope</b> (const <a class="el" href="struct_script_canvas_1_1_grammar_1_1_in.html">In</a> &amp;in) const</td></tr>
 <tr class="separator:a3c2ab62a53795cabbd5e6453d0676e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afedf199baad6a9d14cef11a87cbcd482"><td class="memItemLeft" align="right" valign="top"><a id="afedf199baad6a9d14cef11a87cbcd482"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
-<tr class="separator:afedf199baad6a9d14cef11a87cbcd482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f9e10298aae3da028c056b0a8933bd"><td class="memItemLeft" align="right" valign="top"><a id="ae6f9e10298aae3da028c056b0a8933bd"></a>
+AZ::Outcome&lt; AZStd::string, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
+<tr class="separator:ae6f9e10298aae3da028c056b0a8933bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87ddf13b029b53b126ed2399c5bc1fec"><td class="memItemLeft" align="right" valign="top"><a id="a87ddf13b029b53b126ed2399c5bc1fec"></a>
 const NamespacePath &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetNamespacePath</b> () const</td></tr>
 <tr class="separator:a87ddf13b029b53b126ed2399c5bc1fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,12 +143,21 @@ const Outputs *&#160;</td><td class="memItemRight" valign="bottom"><b>GetOutput<
 <tr class="memitem:af41e242164fe0bdc9574ac04c3c42a8d"><td class="memItemLeft" align="right" valign="top"><a id="af41e242164fe0bdc9574ac04c3c42a8d"></a>
 const Outs *&#160;</td><td class="memItemRight" valign="bottom"><b>GetOuts</b> (const AZStd::string &amp;in) const</td></tr>
 <tr class="separator:af41e242164fe0bdc9574ac04c3c42a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a499cf29221afb101c5f47e7bc44c6d9e"><td class="memItemLeft" align="right" valign="top"><a id="a499cf29221afb101c5f47e7bc44c6d9e"></a>
+const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetParentClassName</b> () const</td></tr>
+<tr class="separator:a499cf29221afb101c5f47e7bc44c6d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a523c82e42c067ea0ae04094cb38d785a"><td class="memItemLeft" align="right" valign="top"><a id="a523c82e42c067ea0ae04094cb38d785a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsActiveDefaultObject</b> () const</td></tr>
 <tr class="separator:a523c82e42c067ea0ae04094cb38d785a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e9f9d57176f2c5a56eafc434a8990ae"><td class="memItemLeft" align="right" valign="top"><a id="a9e9f9d57176f2c5a56eafc434a8990ae"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsBaseClass</b> () const</td></tr>
+<tr class="separator:a9e9f9d57176f2c5a56eafc434a8990ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf302f77ba053e0330fe9647b692202b"><td class="memItemLeft" align="right" valign="top"><a id="aaf302f77ba053e0330fe9647b692202b"></a>
 AZ::Outcome&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>IsBranch</b> (const AZStd::string &amp;in) const</td></tr>
 <tr class="separator:aaf302f77ba053e0330fe9647b692202b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefd888dd35dfdbf9c21d5db9b450b70"><td class="memItemLeft" align="right" valign="top"><a id="acefd888dd35dfdbf9c21d5db9b450b70"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsClass</b> () const</td></tr>
+<tr class="separator:acefd888dd35dfdbf9c21d5db9b450b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9600f8c2a72310f807c4d0e3e3068b90"><td class="memItemLeft" align="right" valign="top"><a id="a9600f8c2a72310f807c4d0e3e3068b90"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLatent</b> () const</td></tr>
 <tr class="separator:a9600f8c2a72310f807c4d0e3e3068b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,9 +170,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsParsedPure</b> () c
 <tr class="memitem:a1d40133b7539133b4493b3b211e5d324"><td class="memItemLeft" align="right" valign="top"><a id="a1d40133b7539133b4493b3b211e5d324"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsUserNodeable</b> () const</td></tr>
 <tr class="separator:a1d40133b7539133b4493b3b211e5d324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64a13f5fcc040234f2888668360c8fdc"><td class="memItemLeft" align="right" valign="top"><a id="a64a13f5fcc040234f2888668360c8fdc"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsUserVariable</b> () const</td></tr>
-<tr class="separator:a64a13f5fcc040234f2888668360c8fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3f4366e59602b269943d240c0dd1cd6"><td class="memItemLeft" align="right" valign="top"><a id="af3f4366e59602b269943d240c0dd1cd6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasAnyFunctionality</b> () const</td></tr>
 <tr class="separator:af3f4366e59602b269943d240c0dd1cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,15 +206,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkExecutionCharacte
 <tr class="memitem:a824f78c6f91a59491987afc8c8be7641"><td class="memItemLeft" align="right" valign="top"><a id="a824f78c6f91a59491987afc8c8be7641"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkOnGraphStart</b> ()</td></tr>
 <tr class="separator:a824f78c6f91a59491987afc8c8be7641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79ec92172862483a1a3ad99fffebc04"><td class="memItemLeft" align="right" valign="top"><a id="ab79ec92172862483a1a3ad99fffebc04"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkRefersToSelfEntityId</b> ()</td></tr>
+<tr class="separator:ab79ec92172862483a1a3ad99fffebc04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40448c54e02c52b1791235882b4db515"><td class="memItemLeft" align="right" valign="top"><a id="a40448c54e02c52b1791235882b4db515"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkRequiresConstructionParameters</b> ()</td></tr>
 <tr class="separator:a40448c54e02c52b1791235882b4db515"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3821112847fb238a90224f7b96e6b889"><td class="memItemLeft" align="right" valign="top"><a id="a3821112847fb238a90224f7b96e6b889"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkRequiresConstructionParametersForDependencies</b> ()</td></tr>
 <tr class="separator:a3821112847fb238a90224f7b96e6b889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4161fbc884a9d1664d30053d6a1aaa17"><td class="memItemLeft" align="right" valign="top"><a id="a4161fbc884a9d1664d30053d6a1aaa17"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkUserVariable</b> ()</td></tr>
-<tr class="separator:a4161fbc884a9d1664d30053d6a1aaa17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa221ee4f1834e5cd7e13c54f59a24a15"><td class="memItemLeft" align="right" valign="top"><a id="aa221ee4f1834e5cd7e13c54f59a24a15"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkClass</b> ()</td></tr>
+<tr class="separator:aa221ee4f1834e5cd7e13c54f59a24a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae220129ce0d701b84a5e5b1e894295c2"><td class="memItemLeft" align="right" valign="top"><a id="ae220129ce0d701b84a5e5b1e894295c2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>MergeExecutionCharacteristics</b> (const <a class="el" href="class_script_canvas_1_1_grammar_1_1_subgraph_interface.html">SubgraphInterface</a> &amp;dependency)</td></tr>
 <tr class="separator:ae220129ce0d701b84a5e5b1e894295c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,12 +230,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const
 <tr class="memitem:a8b82a1eb1d4a339bfe65a69f45350ecc"><td class="memItemLeft" align="right" valign="top"><a id="a8b82a1eb1d4a339bfe65a69f45350ecc"></a>
 AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Parse</b> ()</td></tr>
 <tr class="separator:a8b82a1eb1d4a339bfe65a69f45350ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cdd5d0eb0b7f5ab547533462201f53c"><td class="memItemLeft" align="right" valign="top"><a id="a6cdd5d0eb0b7f5ab547533462201f53c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>RefersToSelfEntityId</b> () const</td></tr>
+<tr class="separator:a6cdd5d0eb0b7f5ab547533462201f53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac62a8625a98d84fe627893ac2c052dc3"><td class="memItemLeft" align="right" valign="top"><a id="ac62a8625a98d84fe627893ac2c052dc3"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>RequiresConstructionParameters</b> () const</td></tr>
 <tr class="separator:ac62a8625a98d84fe627893ac2c052dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7d1248f16c836317ec656cb5a936013"><td class="memItemLeft" align="right" valign="top"><a id="ae7d1248f16c836317ec656cb5a936013"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>RequiresConstructionParametersForDependencies</b> () const</td></tr>
 <tr class="separator:ae7d1248f16c836317ec656cb5a936013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6d9311c5c0ef1dbf000b7f6c09e2116"><td class="memItemLeft" align="right" valign="top"><a id="aa6d9311c5c0ef1dbf000b7f6c09e2116"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkBaseClass</b> ()</td></tr>
+<tr class="separator:aa6d9311c5c0ef1dbf000b7f6c09e2116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59d199b005164e0fc705945ad45e007b"><td class="memItemLeft" align="right" valign="top"><a id="a59d199b005164e0fc705945ad45e007b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNamespacePath</b> (const NamespacePath &amp;namespacePath)</td></tr>
 <tr class="separator:a59d199b005164e0fc705945ad45e007b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,7 +261,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:06 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:33 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -49,7 +49,6 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_service-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -61,9 +60,6 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7c2ae24c138b832841cb4d243c11be8d"><td class="memItemLeft" align="right" valign="top"><a id="a7c2ae24c138b832841cb4d243c11be8d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>EntityList</b> = AzFramework::EntityList</td></tr>
-<tr class="separator:a7c2ae24c138b832841cb4d243c11be8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65d3efe303b4f2ab735579e344360857"><td class="memItemLeft" align="right" valign="top"><a id="a65d3efe303b4f2ab735579e344360857"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntitiesAddedCallback</b> = AzFramework::OnEntitiesAddedCallback</td></tr>
 <tr class="separator:a65d3efe303b4f2ab735579e344360857"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,15 +139,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>StopPlayInEditor</b> 
 <tr class="memitem:a2f9a7f1dd681aeff220757303c47ce46"><td class="memItemLeft" align="right" valign="top"><a id="a2f9a7f1dd681aeff220757303c47ce46"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateNewLevelPrefab</b> (AZStd::string_view filename, const AZStd::string &amp;templateFilename) override</td></tr>
 <tr class="separator:a2f9a7f1dd681aeff220757303c47ce46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d5a92fc41aac8bc01c432a9ee2c3f48"><td class="memItemLeft" align="right" valign="top"><a id="a7d5a92fc41aac8bc01c432a9ee2c3f48"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRootPrefabAssigned</b> () const override</td></tr>
+<tr class="memitem:a7d5a92fc41aac8bc01c432a9ee2c3f48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_service.html#a7d5a92fc41aac8bc01c432a9ee2c3f48">IsRootPrefabAssigned</a> () const override</td></tr>
 <tr class="separator:a7d5a92fc41aac8bc01c432a9ee2c3f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a9cc8a1f4a88ecff45d7574124cbfd5b9"><td class="memItemLeft" align="right" valign="top"><a id="a9cc8a1f4a88ecff45d7574124cbfd5b9"></a>
-static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultMainSpawnableName</b> = &quot;Root&quot;</td></tr>
-<tr class="separator:a9cc8a1f4a88ecff45d7574124cbfd5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ca643848a191a1a8769826b3066720"><td class="memItemLeft" align="right" valign="top">Prefab::InstanceOptionalReference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_service.html#aa6ca643848a191a1a8769826b3066720">GetInstanceReferenceFromRootAliasPath</a> (Prefab::RootAliasPath rootAliasPath) const override</td></tr>
+<tr class="separator:aa6ca643848a191a1a8769826b3066720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0cac362dbce211f3916cb52ad2c666"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_service.html#a3c0cac362dbce211f3916cb52ad2c666">GetInstancesInRootAliasPath</a> (Prefab::RootAliasPath rootAliasPath, const AZStd::function&lt; bool(const Prefab::InstanceOptionalReference)&gt; &amp;callback) const override</td></tr>
+<tr class="separator:a3c0cac362dbce211f3916cb52ad2c666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0da5f16f9be794f982d175c71a1eee4"><td class="memItemLeft" align="right" valign="top"><a id="af0da5f16f9be794f982d175c71a1eee4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterGameModeEventHandler</b> (AZ::Event&lt; GameModeState &gt;::Handler &amp;handler) override</td></tr>
+<tr class="separator:af0da5f16f9be794f982d175c71a1eee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -191,6 +187,87 @@ AZ::SliceComponent::SliceInstanceAddress&#160;</td><td class="memItemRight" vali
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool whether fetching entities was successful. </dd></dl>
+
+</div>
+</div>
+<a id="aa6ca643848a191a1a8769826b3066720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6ca643848a191a1a8769826b3066720">&#9670;&nbsp;</a></span>GetInstanceReferenceFromRootAliasPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Prefab::InstanceOptionalReference AzToolsFramework::PrefabEditorEntityOwnershipService::GetInstanceReferenceFromRootAliasPath </td>
+          <td>(</td>
+          <td class="paramtype">Prefab::RootAliasPath&#160;</td>
+          <td class="paramname"><em>rootAliasPath</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the reference to the instance corresponding to the RootAliasPath provided. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rootAliasPath</td><td>The RootAliasPath to be queried. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the instance if valid, AZStd::nullopt otherwise. </dd></dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a94a792934ff9bc835181edb9e6d546bf">AzToolsFramework::PrefabEditorEntityOwnershipInterface</a>.</p>
+
+</div>
+</div>
+<a id="a3c0cac362dbce211f3916cb52ad2c666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c0cac362dbce211f3916cb52ad2c666">&#9670;&nbsp;</a></span>GetInstancesInRootAliasPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzToolsFramework::PrefabEditorEntityOwnershipService::GetInstancesInRootAliasPath </td>
+          <td>(</td>
+          <td class="paramtype">Prefab::RootAliasPath&#160;</td>
+          <td class="paramname"><em>rootAliasPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::function&lt; bool(const Prefab::InstanceOptionalReference)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Allows to iterate through all instances referenced in the path, from the root down. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rootAliasPath</td><td>The RootAliasPath to iterate through. If invalid, callback will not be called. </td></tr>
+    <tr><td class="paramname">callback</td><td>The function to call on each instance. If it returns true, it prevents the rest of the path from being called. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the iteration was halted by a callback returning true, false otherwise. Also returns false if the path is invalid. </dd></dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a631dfff0f7224b9c9f0f064c80bd78ee">AzToolsFramework::PrefabEditorEntityOwnershipInterface</a>.</p>
 
 </div>
 </div>
@@ -253,13 +330,41 @@ AZ::SliceComponent::SliceInstanceAddress&#160;</td><td class="memItemRight" vali
 
 </div>
 </div>
+<a id="a7d5a92fc41aac8bc01c432a9ee2c3f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d5a92fc41aac8bc01c432a9ee2c3f48">&#9670;&nbsp;</a></span>IsRootPrefabAssigned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzToolsFramework::PrefabEditorEntityOwnershipService::IsRootPrefabAssigned </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns whether the system has a root instance assigned. </p><dl class="section return"><dt>Returns</dt><dd>True if a root prefab is assigned, false otherwise. </dd></dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a93338630ebc3c1626ab68616fbda14be">AzToolsFramework::PrefabEditorEntityOwnershipInterface</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Entity/PrefabEditorEntityOwnershipService.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:37 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:31 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -47,6 +47,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Prefab::PrefabFocusHandler Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -58,47 +59,61 @@ $(function() {
 
 <p><code>#include &lt;PrefabFocusHandler.h&gt;</code></p>
 
-<p>Inherits <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface.html">AzToolsFramework::Prefab::PrefabFocusInterface</a>, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>, Handler, Handler, and Handler.</p>
+<p>Inherits Handler, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface.html">AzToolsFramework::Prefab::PrefabFocusInterface</a>, Handler, Handler, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a583121183c26efc8e9ceb59b5dc7d954"><td class="memItemLeft" align="right" valign="top"><a id="a583121183c26efc8e9ceb59b5dc7d954"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html">PrefabFocusHandler</a>, AZ::SystemAllocator, 0)</td></tr>
 <tr class="separator:a583121183c26efc8e9ceb59b5dc7d954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd3a0859637010506b825ae0dcc1f8b"><td class="memItemLeft" align="right" valign="top"><a id="aefd3a0859637010506b825ae0dcc1f8b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterPrefabFocusInterface</b> ()</td></tr>
+<tr class="separator:aefd3a0859637010506b825ae0dcc1f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae70daef0ea271b2b5a40d4a71cd4207c"><td class="memItemLeft" align="right" valign="top"><a id="ae70daef0ea271b2b5a40d4a71cd4207c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabFocusInterface</b> ()</td></tr>
+<tr class="separator:ae70daef0ea271b2b5a40d4a71cd4207c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad590d3cadd02ac60acc8d3a9b83fcbf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#ad590d3cadd02ac60acc8d3a9b83fcbf9">InitializeEditorInterfaces</a> () override</td></tr>
 <tr class="separator:ad590d3cadd02ac60acc8d3a9b83fcbf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73c28c33a4dbd7db622f6568b65e7086"><td class="memItemLeft" align="right" valign="top">PrefabFocusOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a73c28c33a4dbd7db622f6568b65e7086">FocusOnPrefabInstanceOwningEntityId</a> (AZ::EntityId entityId) override</td></tr>
 <tr class="separator:a73c28c33a4dbd7db622f6568b65e7086"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69165a53c72a24519acc899fe6f943bf"><td class="memItemLeft" align="right" valign="top"><a id="a69165a53c72a24519acc899fe6f943bf"></a>
-TemplateId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a69165a53c72a24519acc899fe6f943bf">GetFocusedPrefabTemplateId</a> (AzFramework::EntityContextId entityContextId) const override</td></tr>
-<tr class="memdesc:a69165a53c72a24519acc899fe6f943bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the template id of the instance the prefab system is focusing on. <br /></td></tr>
+<tr class="memitem:a69165a53c72a24519acc899fe6f943bf"><td class="memItemLeft" align="right" valign="top">TemplateId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a69165a53c72a24519acc899fe6f943bf">GetFocusedPrefabTemplateId</a> (AzFramework::EntityContextId entityContextId) const override</td></tr>
 <tr class="separator:a69165a53c72a24519acc899fe6f943bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa396563871cff0a0833d12c5b52445ee"><td class="memItemLeft" align="right" valign="top"><a id="aa396563871cff0a0833d12c5b52445ee"></a>
-InstanceOptionalReference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#aa396563871cff0a0833d12c5b52445ee">GetFocusedPrefabInstance</a> (AzFramework::EntityContextId entityContextId) const override</td></tr>
-<tr class="memdesc:aa396563871cff0a0833d12c5b52445ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the instance the prefab system is focusing on. <br /></td></tr>
+<tr class="memitem:aa396563871cff0a0833d12c5b52445ee"><td class="memItemLeft" align="right" valign="top">InstanceOptionalReference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#aa396563871cff0a0833d12c5b52445ee">GetFocusedPrefabInstance</a> (AzFramework::EntityContextId entityContextId) const override</td></tr>
 <tr class="separator:aa396563871cff0a0833d12c5b52445ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a539d268c66285c5a39551dd748463f2c"><td class="memItemLeft" align="right" valign="top">PrefabFocusOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a539d268c66285c5a39551dd748463f2c">FocusOnOwningPrefab</a> (AZ::EntityId entityId) override</td></tr>
+<tr class="memitem:a53e2ab13378daeff544c635207058d22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a53e2ab13378daeff544c635207058d22">IsFocusedPrefabInstanceReadOnly</a> (AzFramework::EntityContextId entityContextId) const override</td></tr>
+<tr class="separator:a53e2ab13378daeff544c635207058d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a958a3ee46ad9a10489be8d035f841f92"><td class="memItemLeft" align="right" valign="top">LinkId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a958a3ee46ad9a10489be8d035f841f92">AppendPathFromFocusedInstanceToPatchPaths</a> (PrefabDom &amp;providedPatch, AZ::EntityId entityId) const override</td></tr>
+<tr class="separator:a958a3ee46ad9a10489be8d035f841f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539d268c66285c5a39551dd748463f2c"><td class="memItemLeft" align="right" valign="top"><a id="a539d268c66285c5a39551dd748463f2c"></a>
+PrefabFocusOperationResult&#160;</td><td class="memItemRight" valign="bottom"><b>FocusOnOwningPrefab</b> (AZ::EntityId entityId) override</td></tr>
 <tr class="separator:a539d268c66285c5a39551dd748463f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab994d2a5ff97cb020f412604794e106d"><td class="memItemLeft" align="right" valign="top"><a id="ab994d2a5ff97cb020f412604794e106d"></a>
-PrefabFocusOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#ab994d2a5ff97cb020f412604794e106d">FocusOnParentOfFocusedPrefab</a> (AzFramework::EntityContextId entityContextId) override</td></tr>
-<tr class="memdesc:ab994d2a5ff97cb020f412604794e106d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the focused prefab instance to the parent of the currently focused prefab instance. Supports undo/redo. <br /></td></tr>
+PrefabFocusOperationResult&#160;</td><td class="memItemRight" valign="bottom"><b>FocusOnParentOfFocusedPrefab</b> (AzFramework::EntityContextId entityContextId) override</td></tr>
 <tr class="separator:ab994d2a5ff97cb020f412604794e106d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a423cf81f21bcfacf4a30e121c2b812ee"><td class="memItemLeft" align="right" valign="top">PrefabFocusOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a423cf81f21bcfacf4a30e121c2b812ee">FocusOnPathIndex</a> (AzFramework::EntityContextId entityContextId, int index) override</td></tr>
+<tr class="memitem:a423cf81f21bcfacf4a30e121c2b812ee"><td class="memItemLeft" align="right" valign="top"><a id="a423cf81f21bcfacf4a30e121c2b812ee"></a>
+PrefabFocusOperationResult&#160;</td><td class="memItemRight" valign="bottom"><b>FocusOnPathIndex</b> (AzFramework::EntityContextId entityContextId, int index) override</td></tr>
 <tr class="separator:a423cf81f21bcfacf4a30e121c2b812ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e01bf9591ae0aacb0c32e7e800a102"><td class="memItemLeft" align="right" valign="top"><a id="a49e01bf9591ae0aacb0c32e7e800a102"></a>
+PrefabFocusOperationResult&#160;</td><td class="memItemRight" valign="bottom"><b>SetOwningPrefabInstanceOpenState</b> (AZ::EntityId entityId, bool openState) override</td></tr>
+<tr class="separator:a49e01bf9591ae0aacb0c32e7e800a102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a0483199f710a4671676734c38d9c8d"><td class="memItemLeft" align="right" valign="top"><a id="a5a0483199f710a4671676734c38d9c8d"></a>
-AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a5a0483199f710a4671676734c38d9c8d">GetFocusedPrefabContainerEntityId</a> (AzFramework::EntityContextId entityContextId) const override</td></tr>
-<tr class="memdesc:a5a0483199f710a4671676734c38d9c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the entity id of the container entity for the instance the prefab system is focusing on. <br /></td></tr>
+AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetFocusedPrefabContainerEntityId</b> (AzFramework::EntityContextId entityContextId) const override</td></tr>
 <tr class="separator:a5a0483199f710a4671676734c38d9c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5552a198a5cb59323aaf4cf68dd973b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a5552a198a5cb59323aaf4cf68dd973b5">IsOwningPrefabBeingFocused</a> (AZ::EntityId entityId) const override</td></tr>
+<tr class="memitem:a5552a198a5cb59323aaf4cf68dd973b5"><td class="memItemLeft" align="right" valign="top"><a id="a5552a198a5cb59323aaf4cf68dd973b5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOwningPrefabBeingFocused</b> (AZ::EntityId entityId) const override</td></tr>
 <tr class="separator:a5552a198a5cb59323aaf4cf68dd973b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d98b8f04d0b0e6cec157652c13817a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a7d98b8f04d0b0e6cec157652c13817a2">IsOwningPrefabInFocusHierarchy</a> (AZ::EntityId entityId) const override</td></tr>
+<tr class="memitem:a7d98b8f04d0b0e6cec157652c13817a2"><td class="memItemLeft" align="right" valign="top"><a id="a7d98b8f04d0b0e6cec157652c13817a2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOwningPrefabInFocusHierarchy</b> (AZ::EntityId entityId) const override</td></tr>
 <tr class="separator:a7d98b8f04d0b0e6cec157652c13817a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4803443f0e88a1b70a3080e2aa40f911"><td class="memItemLeft" align="right" valign="top">const AZ::IO::Path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a4803443f0e88a1b70a3080e2aa40f911">GetPrefabFocusPath</a> (AzFramework::EntityContextId entityContextId) const override</td></tr>
+<tr class="memitem:a4803443f0e88a1b70a3080e2aa40f911"><td class="memItemLeft" align="right" valign="top"><a id="a4803443f0e88a1b70a3080e2aa40f911"></a>
+const AZ::IO::Path &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPrefabFocusPath</b> (AzFramework::EntityContextId entityContextId) const override</td></tr>
 <tr class="separator:a4803443f0e88a1b70a3080e2aa40f911"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacefa00301683ccc8112b5caf708d9f2"><td class="memItemLeft" align="right" valign="top"><a id="aacefa00301683ccc8112b5caf708d9f2"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#aacefa00301683ccc8112b5caf708d9f2">GetPrefabFocusPathLength</a> (AzFramework::EntityContextId entityContextId) const override</td></tr>
-<tr class="memdesc:aacefa00301683ccc8112b5caf708d9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the path to the currently focused instance. <br /></td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>GetPrefabFocusPathLength</b> (AzFramework::EntityContextId entityContextId) const override</td></tr>
 <tr class="separator:aacefa00301683ccc8112b5caf708d9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92cba9577d79bc674905691998111ea9"><td class="memItemLeft" align="right" valign="top"><a id="a92cba9577d79bc674905691998111ea9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPrefabEditScope</b> (AzFramework::EntityContextId entityContextId, PrefabEditScope mode) override</td></tr>
+<tr class="separator:a92cba9577d79bc674905691998111ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15ed10092c57f6299ad8c5a7e3f5d6e8"><td class="memItemLeft" align="right" valign="top"><a id="a15ed10092c57f6299ad8c5a7e3f5d6e8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnContextReset</b> () override</td></tr>
 <tr class="separator:a15ed10092c57f6299ad8c5a7e3f5d6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,12 +126,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabInstancePropa
 <tr class="memitem:a362456603e8fba2e3f9adf3c744c595a"><td class="memItemLeft" align="right" valign="top"><a id="a362456603e8fba2e3f9adf3c744c595a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabTemplateDirtyFlagUpdated</b> (TemplateId templateId, bool status) override</td></tr>
 <tr class="separator:a362456603e8fba2e3f9adf3c744c595a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9db01ce684eed3331702bef0880d50f4"><td class="memItemLeft" align="right" valign="top"><a id="a9db01ce684eed3331702bef0880d50f4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
+<tr class="separator:a9db01ce684eed3331702bef0880d50f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handles Prefab Focus mode, determining which prefab file entity changes will target. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a539d268c66285c5a39551dd748463f2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a539d268c66285c5a39551dd748463f2c">&#9670;&nbsp;</a></span>FocusOnOwningPrefab()</h2>
+<a id="a958a3ee46ad9a10489be8d035f841f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a958a3ee46ad9a10489be8d035f841f92">&#9670;&nbsp;</a></span>AppendPathFromFocusedInstanceToPatchPaths()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,55 +146,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabTemplateDirty
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">PrefabFocusOperationResult AzToolsFramework::Prefab::PrefabFocusHandler::FocusOnOwningPrefab </td>
+          <td class="memname">LinkId AzToolsFramework::Prefab::PrefabFocusHandler::AppendPathFromFocusedInstanceToPatchPaths </td>
           <td>(</td>
-          <td class="paramtype">AZ::EntityId&#160;</td>
-          <td class="paramname"><em>entityId</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set the focused prefab instance to the owning instance of the entityId provided. Supports undo/redo. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entityId</td><td>The entityId of the entity whose owning instance we want the prefab system to focus on. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html#aea41f1f458abd2f808351f22ea0d79e7">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>.</p>
-
-</div>
-</div>
-<a id="a423cf81f21bcfacf4a30e121c2b812ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a423cf81f21bcfacf4a30e121c2b812ee">&#9670;&nbsp;</a></span>FocusOnPathIndex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">PrefabFocusOperationResult AzToolsFramework::Prefab::PrefabFocusHandler::FocusOnPathIndex </td>
-          <td>(</td>
-          <td class="paramtype">AzFramework::EntityContextId&#160;</td>
-          <td class="paramname"><em>entityContextId</em>, </td>
+          <td class="paramtype">PrefabDom &amp;&#160;</td>
+          <td class="paramname"><em>providedPatch</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em>&#160;</td>
+          <td class="paramtype">AZ::EntityId&#160;</td>
+          <td class="paramname"><em>entityId</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -182,14 +169,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabTemplateDirty
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the focused prefab instance to the instance at position index of the current path. Supports undo/redo. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Appends the path from the focused instance to entity id into the provided patch array. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>The index of the instance in the current path that we want the prefab system to focus on. </td></tr>
+    <tr><td class="paramname">providedPatch</td><td>The provided path array to be appended to. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>LinkId stored in the instance closest to the focused instance in hierarchy. </dd></dl>
 
-<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html#a3a67e90b3bc5882248116ec373081e47">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>.</p>
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface.html#a357883cfe2574c5d8b3c8b79cd1e7b4a">AzToolsFramework::Prefab::PrefabFocusInterface</a>.</p>
 
 </div>
 </div>
@@ -216,19 +204,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabTemplateDirty
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the focused prefab instance to the owning instance of the entityId provided. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sets the focused instance to the owning instance of the entity id provided. If the entity id is invalid, then focus on the root prefab instance. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">entityId</td><td>The entityId of the entity whose owning instance we want the prefab system to focus on. </td></tr>
+    <tr><td class="paramname">EntityId</td><td>The entity id of the entity whose owning instance we want the prefab system to focus on. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>PrefabFocusOperationResult that shows if the operation succeeds. </dd></dl>
 
 <p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface.html#ad93db738064c457ddfb2dd0783ca87c8">AzToolsFramework::Prefab::PrefabFocusInterface</a>.</p>
 
 </div>
 </div>
-<a id="a4803443f0e88a1b70a3080e2aa40f911"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4803443f0e88a1b70a3080e2aa40f911">&#9670;&nbsp;</a></span>GetPrefabFocusPath()</h2>
+<a id="aa396563871cff0a0833d12c5b52445ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa396563871cff0a0833d12c5b52445ee">&#9670;&nbsp;</a></span>GetFocusedPrefabInstance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,7 +226,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabTemplateDirty
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const AZ::IO::Path&amp; AzToolsFramework::Prefab::PrefabFocusHandler::GetPrefabFocusPath </td>
+          <td class="memname">InstanceOptionalReference AzToolsFramework::Prefab::PrefabFocusHandler::GetFocusedPrefabInstance </td>
           <td>(</td>
           <td class="paramtype">AzFramework::EntityContextId&#160;</td>
           <td class="paramname"><em>entityContextId</em></td><td>)</td>
@@ -250,9 +239,50 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabTemplateDirty
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the path from the root instance to the currently focused instance. </p><dl class="section return"><dt>Returns</dt><dd>A path composed from the names of the container entities for the instance path. </dd></dl>
+<p>Returns a reference to the currently focused instance. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">EntityContextId</td><td>The entity context id. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The focused instance. </dd></dl>
 
-<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html#a0ddbbec4d6a877e8b28450ff37cf8d2b">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>.</p>
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface.html#ad62458fb0c84d1cf8a6f02a0248d8be9">AzToolsFramework::Prefab::PrefabFocusInterface</a>.</p>
+
+</div>
+</div>
+<a id="a69165a53c72a24519acc899fe6f943bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69165a53c72a24519acc899fe6f943bf">&#9670;&nbsp;</a></span>GetFocusedPrefabTemplateId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TemplateId AzToolsFramework::Prefab::PrefabFocusHandler::GetFocusedPrefabTemplateId </td>
+          <td>(</td>
+          <td class="paramtype">AzFramework::EntityContextId&#160;</td>
+          <td class="paramname"><em>entityContextId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the template id of the currently focused instance. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityContextId</td><td>The entity context id. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TemplateId of the focused instance. </dd></dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface.html#a5f6ed2340d55923860d92faa64d06bfd">AzToolsFramework::Prefab::PrefabFocusInterface</a>.</p>
 
 </div>
 </div>
@@ -284,8 +314,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabTemplateDirty
 
 </div>
 </div>
-<a id="a5552a198a5cb59323aaf4cf68dd973b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5552a198a5cb59323aaf4cf68dd973b5">&#9670;&nbsp;</a></span>IsOwningPrefabBeingFocused()</h2>
+<a id="a53e2ab13378daeff544c635207058d22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53e2ab13378daeff544c635207058d22">&#9670;&nbsp;</a></span>IsFocusedPrefabInstanceReadOnly()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,10 +324,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabTemplateDirty
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool AzToolsFramework::Prefab::PrefabFocusHandler::IsOwningPrefabBeingFocused </td>
+          <td class="memname">bool AzToolsFramework::Prefab::PrefabFocusHandler::IsFocusedPrefabInstanceReadOnly </td>
           <td>(</td>
-          <td class="paramtype">AZ::EntityId&#160;</td>
-          <td class="paramname"><em>entityId</em></td><td>)</td>
+          <td class="paramtype">AzFramework::EntityContextId&#160;</td>
+          <td class="paramname"><em>entityContextId</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -307,50 +337,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabTemplateDirty
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns whether the entity belongs to the instance that is being focused on. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns whether the currently focused prefab instance is read-only. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">entityId</td><td>The entityId of the queried entity. </td></tr>
+    <tr><td class="paramname">EntityContextId</td><td>The entity context id. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the entity belongs to the focused instance, false otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the currently focused prefab instance is read-only, false otherwise. </dd></dl>
 
-<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html#a19d37610cb97c0be3becdea44151a476">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>.</p>
-
-</div>
-</div>
-<a id="a7d98b8f04d0b0e6cec157652c13817a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d98b8f04d0b0e6cec157652c13817a2">&#9670;&nbsp;</a></span>IsOwningPrefabInFocusHierarchy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AzToolsFramework::Prefab::PrefabFocusHandler::IsOwningPrefabInFocusHierarchy </td>
-          <td>(</td>
-          <td class="paramtype">AZ::EntityId&#160;</td>
-          <td class="paramname"><em>entityId</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns whether the entity belongs to the instance that is being focused on, or one of its descendants. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entityId</td><td>The entityId of the queried entity. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the entity belongs to the focused instance or one of its descendants, false otherwise. </dd></dl>
-
-<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html#aef5f193d7d0ba41ad7d6189f0577aa8e">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>.</p>
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface.html#a76ff4bc3a022711e6eabc42151143b59">AzToolsFramework::Prefab::PrefabFocusInterface</a>.</p>
 
 </div>
 </div>
@@ -360,7 +355,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabTemplateDirty
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:39 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:33 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

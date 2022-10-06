@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -41,40 +41,52 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ScriptCanvasEditor</b></li><li class="navelem"><a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_script_canvas_editor.html">ScriptCanvasEditor</a></li><li class="navelem"><a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_script_canvas_editor_1_1_editor_script_canvas_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ScriptCanvasEditor::EditorScriptCanvasComponent Class Reference</div>  </div>
+<div class="title">ScriptCanvasEditor::EditorScriptCanvasComponent Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;EditorScriptCanvasComponent.h&gt;</code></p>
 
-<p>Inherits EditorComponentBase, Handler, Handler, Handler, Handler, Handler, and Handler.</p>
+<p>Inherits EditorComponentBase, and Handler.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:af8569d74dbe93e6d84ad3a0a6bff4ffa"><td class="memItemLeft" align="right" valign="top"><a id="af8569d74dbe93e6d84ad3a0a6bff4ffa"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Version</b> { <br />
+&#160;&#160;<b>PrefabIntegration</b> = 10
+, <b>AddSourceHandle</b>, 
+<b>RefactorAssets</b>, 
+<b>RemoveRuntimeData</b>, 
+<br />
+&#160;&#160;<b>SeparateFromConfiguration</b>, 
+<b>RefactorRuntime</b>, 
+<b>Current</b>
+<br />
+ }</td></tr>
+<tr class="separator:af8569d74dbe93e6d84ad3a0a6bff4ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2edc6b96be165d495ebeeb0f6b4753ad"><td class="memItemLeft" align="right" valign="top"><a id="a2edc6b96be165d495ebeeb0f6b4753ad"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_COMPONENT</b> (<a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a>, &quot;{C28E2D29-0746-451D-A639-7F113ECF5D72}&quot;, AzToolsFramework::Components::EditorComponentBase)</td></tr>
 <tr class="separator:a2edc6b96be165d495ebeeb0f6b4753ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f4e96305fe8132867f7504a9de3fb97"><td class="memItemLeft" align="right" valign="top"><a id="a9f4e96305fe8132867f7504a9de3fb97"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>EditorScriptCanvasComponent</b> (const <a class="el" href="class_script_canvas_editor_1_1_source_handle.html">SourceHandle</a> &amp;sourceHandle)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>EditorScriptCanvasComponent</b> (const SourceHandle &amp;sourceHandle)</td></tr>
 <tr class="separator:a9f4e96305fe8132867f7504a9de3fb97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab72a60ee3ca696f99e7559e51671106b"><td class="memItemLeft" align="right" valign="top"><a id="ab72a60ee3ca696f99e7559e51671106b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeSource</b> (const <a class="el" href="class_script_canvas_editor_1_1_source_handle.html">SourceHandle</a> &amp;sourceHandle)</td></tr>
-<tr class="separator:ab72a60ee3ca696f99e7559e51671106b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5a8def44fb9213d1eec1bea7d0c3756"><td class="memItemLeft" align="right" valign="top"><a id="ae5a8def44fb9213d1eec1bea7d0c3756"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> () override</td></tr>
-<tr class="separator:ae5a8def44fb9213d1eec1bea7d0c3756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
 <tr class="memitem:a4cd1085dcef9a257c929f3ca544959fe"><td class="memItemLeft" align="right" valign="top"><a id="a4cd1085dcef9a257c929f3ca544959fe"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> () override</td></tr>
 <tr class="separator:a4cd1085dcef9a257c929f3ca544959fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -87,90 +99,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildGameEntity</b> (
 <tr class="memitem:aa8028bbabe3f03244c48019830f2ebc2"><td class="memItemLeft" align="right" valign="top"><a id="aa8028bbabe3f03244c48019830f2ebc2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPrimaryAsset</b> (const AZ::Data::AssetId &amp;) override</td></tr>
 <tr class="separator:aa8028bbabe3f03244c48019830f2ebc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebad66474096aa0da0b0ce1695741d97"><td class="memItemLeft" align="right" valign="top"><a id="aebad66474096aa0da0b0ce1695741d97"></a>
-AZ::NamedEntityId&#160;</td><td class="memItemRight" valign="bottom"><b>FindNamedEntityId</b> () const override</td></tr>
-<tr class="separator:aebad66474096aa0da0b0ce1695741d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39cff360c6f80c90c5400f7c972fd62e"><td class="memItemLeft" align="right" valign="top"><a id="a39cff360c6f80c90c5400f7c972fd62e"></a>
-<a class="el" href="struct_script_canvas_1_1_graph_identifier.html">ScriptCanvas::GraphIdentifier</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphIdentifier</b> () const override</td></tr>
-<tr class="separator:a39cff360c6f80c90c5400f7c972fd62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98a39326e7b1e4558b9cb0ae772bb6bc"><td class="memItemLeft" align="right" valign="top"><a id="a98a39326e7b1e4558b9cb0ae772bb6bc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenEditor</b> (const AZ::Data::AssetId &amp;, const AZ::Data::AssetType &amp;)</td></tr>
-<tr class="separator:a98a39326e7b1e4558b9cb0ae772bb6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4105355f35bb5b2f052489eec73e1573"><td class="memItemLeft" align="right" valign="top"><a id="a4105355f35bb5b2f052489eec73e1573"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetName</b> (AZStd::string_view name)</td></tr>
-<tr class="separator:a4105355f35bb5b2f052489eec73e1573"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22628952d1ef3df95e764c815c2f42fa"><td class="memItemLeft" align="right" valign="top"><a id="a22628952d1ef3df95e764c815c2f42fa"></a>
-const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
-<tr class="separator:a22628952d1ef3df95e764c815c2f42fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbcd823a1dacfc794e4599c5caf1e234"><td class="memItemLeft" align="right" valign="top"><a id="afbcd823a1dacfc794e4599c5caf1e234"></a>
-AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetEditorEntityId</b> () const</td></tr>
-<tr class="separator:afbcd823a1dacfc794e4599c5caf1e234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6781b4643ef0c33b9d220176e93f7a28"><td class="memItemLeft" align="right" valign="top"><a id="a6781b4643ef0c33b9d220176e93f7a28"></a>
-AZ::NamedEntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetNamedEditorEntityId</b> () const</td></tr>
-<tr class="separator:a6781b4643ef0c33b9d220176e93f7a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59510fbadf3dcd8e7e0c851248360c4a"><td class="memItemLeft" align="right" valign="top"><a id="a59510fbadf3dcd8e7e0c851248360c4a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAssetId</b> (const <a class="el" href="class_script_canvas_editor_1_1_source_handle.html">SourceHandle</a> &amp;assetId) override</td></tr>
-<tr class="separator:a59510fbadf3dcd8e7e0c851248360c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae629d0a3a94883762d3ec305e7038905"><td class="memItemLeft" align="right" valign="top"><a id="ae629d0a3a94883762d3ec305e7038905"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasAssetId</b> () const override</td></tr>
-<tr class="separator:ae629d0a3a94883762d3ec305e7038905"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad981c4c3b6f98e79b4e988f09dcab36"><td class="memItemLeft" align="right" valign="top"><a id="aad981c4c3b6f98e79b4e988f09dcab36"></a>
-AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetId</b> () const override</td></tr>
-<tr class="separator:aad981c4c3b6f98e79b4e988f09dcab36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr class="memitem:a098a5b14cbc83b11f6e2c2c08d7ef814"><td class="memItemLeft" align="right" valign="top"><a id="a098a5b14cbc83b11f6e2c2c08d7ef814"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SourceChangeDescription</b> : AZ::u8 { <b>Error</b>, 
-<b>Modified</b>, 
-<b>Removed</b>, 
-<b>SelectionChanged</b>
- }</td></tr>
-<tr class="separator:a098a5b14cbc83b11f6e2c2c08d7ef814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a144b7aa74269f17e772725af03bd10e9"><td class="memItemLeft" align="right" valign="top"><a id="a144b7aa74269f17e772725af03bd10e9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SourceFileChanged</b> (AZStd::string relativePath, AZStd::string scanFolder, AZ::Uuid fileAssetId) override</td></tr>
-<tr class="separator:a144b7aa74269f17e772725af03bd10e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05676522384e36200ef758907ae5e4d9"><td class="memItemLeft" align="right" valign="top"><a id="a05676522384e36200ef758907ae5e4d9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SourceFileRemoved</b> (AZStd::string relativePath, AZStd::string scanFolder, AZ::Uuid fileAssetId) override</td></tr>
-<tr class="separator:a05676522384e36200ef758907ae5e4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7747f7ebc5d029800bfee3993a122ec"><td class="memItemLeft" align="right" valign="top"><a id="af7747f7ebc5d029800bfee3993a122ec"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SourceFileFailed</b> (AZStd::string relativePath, AZStd::string scanFolder, AZ::Uuid fileAssetId) override</td></tr>
-<tr class="separator:af7747f7ebc5d029800bfee3993a122ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a311dd758efb14dfd03a8af8a910961d8"><td class="memItemLeft" align="right" valign="top"><a id="a311dd758efb14dfd03a8af8a910961d8"></a>
-AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>OnFileSelectionChanged</b> ()</td></tr>
-<tr class="separator:a311dd758efb14dfd03a8af8a910961d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af37bb00d6556426b05b3e9f654314269"><td class="memItemLeft" align="right" valign="top"><a id="af37bb00d6556426b05b3e9f654314269"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnScriptCanvasAssetChanged</b> (SourceChangeDescription changeDescription)</td></tr>
-<tr class="separator:af37bb00d6556426b05b3e9f654314269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33c9249498b0099dcc7da7252d54d51f"><td class="memItemLeft" align="right" valign="top"><a id="a33c9249498b0099dcc7da7252d54d51f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateName</b> ()</td></tr>
-<tr class="separator:a33c9249498b0099dcc7da7252d54d51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a92ec0477721f207d63fada4ce35d73"><td class="memItemLeft" align="right" valign="top"><a id="a0a92ec0477721f207d63fada4ce35d73"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePropertyDisplay</b> (const <a class="el" href="class_script_canvas_editor_1_1_source_handle.html">SourceHandle</a> &amp;sourceHandle)</td></tr>
-<tr class="separator:a0a92ec0477721f207d63fada4ce35d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac204ce4f8e22c334482bfb21f02009a"><td class="memItemLeft" align="right" valign="top"><a id="aac204ce4f8e22c334482bfb21f02009a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildGameEntityData</b> ()</td></tr>
-<tr class="separator:aac204ce4f8e22c334482bfb21f02009a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49797829ef063ed95ed41e7d6041e121"><td class="memItemLeft" align="right" valign="top"><a id="a49797829ef063ed95ed41e7d6041e121"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearVariables</b> ()</td></tr>
-<tr class="separator:a49797829ef063ed95ed41e7d6041e121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:aabdd773fd8ba47c2c4f04d5eea882902"><td class="memItemLeft" align="right" valign="top"><a id="aabdd773fd8ba47c2c4f04d5eea882902"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
-<tr class="separator:aabdd773fd8ba47c2c4f04d5eea882902"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8532c9208a7c82c049fdf45fa39cf6c6"><td class="memItemLeft" align="right" valign="top"><a id="a8532c9208a7c82c049fdf45fa39cf6c6"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;provided)</td></tr>
 <tr class="separator:a8532c9208a7c82c049fdf45fa39cf6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20e52c2271b458b9c41758444257b24c"><td class="memItemLeft" align="right" valign="top"><a id="a20e52c2271b458b9c41758444257b24c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;required)</td></tr>
-<tr class="separator:a20e52c2271b458b9c41758444257b24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af03322e5633b119d78efc0e6cc6e61db"><td class="memItemLeft" align="right" valign="top"><a id="af03322e5633b119d78efc0e6cc6e61db"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibleServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;incompatible)</td></tr>
-<tr class="separator:af03322e5633b119d78efc0e6cc6e61db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabdd773fd8ba47c2c4f04d5eea882902"><td class="memItemLeft" align="right" valign="top"><a id="aabdd773fd8ba47c2c4f04d5eea882902"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
+<tr class="separator:aabdd773fd8ba47c2c4f04d5eea882902"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -179,14 +116,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>AZ::EditorScriptCanv
 <tr class="separator:a70685918cc4a862d780599db0c8db05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a> The user facing Editor Component for interfacing with <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> It connects to the AssetCatalogEventBus in order to remove the ScriptCanvasAssetHolder asset reference when the asset is removed from the file system. The reason the ScriptCanvasAssetHolder holder does not remove the asset reference itself is because the ScriptCanvasEditor MainWindow has a ScriptCanvasAssetHolder which it uses to maintain the asset data in memory. Therefore removing an open <a class="el" href="class_script_canvas_editor_1_1_script_canvas_asset.html">ScriptCanvasAsset</a> from the file system will remove the reference from the <a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a>, but not the reference from the MainWindow allowing the <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> graph to still be modified while open Finally per graph instance variables values are stored on the <a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a> and injected into the runtime <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> component in BuildGameEntity </p>
+<div class="textblock"><p><a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a> The user facing Editor Component for interacting with <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a>. Per graph instance variables values are stored here and injected into the runtime <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> component in BuildGameEntity. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/ScriptCanvas/Code/Editor/Include/ScriptCanvas/Components/EditorScriptCanvasComponent.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:08 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:36 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

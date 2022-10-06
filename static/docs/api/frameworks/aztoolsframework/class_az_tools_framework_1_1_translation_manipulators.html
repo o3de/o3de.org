@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -65,9 +65,20 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a933bb883f5f446c3783c6c6bf7249c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many dimensions does this translation manipulator have. <br /></td></tr>
 <tr class="separator:a933bb883f5f446c3783c6c6bf7249c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_class_az_tools_framework_1_1_manipulators"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_az_tools_framework_1_1_manipulators')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_az_tools_framework_1_1_manipulators.html">AzToolsFramework::Manipulators</a></td></tr>
+<tr class="memitem:a02b12edf62180c01103ed34878426716 inherit pub_types_class_az_tools_framework_1_1_manipulators"><td class="memItemLeft" align="right" valign="top"><a id="a02b12edf62180c01103ed34878426716"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_manipulators.html#a02b12edf62180c01103ed34878426716">ManipulatorVisitCallback</a> = AZStd::function&lt; void(<a class="el" href="class_az_tools_framework_1_1_base_manipulator.html">BaseManipulator</a> *)&gt;</td></tr>
+<tr class="memdesc:a02b12edf62180c01103ed34878426716 inherit pub_types_class_az_tools_framework_1_1_manipulators"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function that is used to visit every manipulator in this group of <a class="el" href="class_az_tools_framework_1_1_manipulators.html">Manipulators</a>. <br /></td></tr>
+<tr class="separator:a02b12edf62180c01103ed34878426716 inherit pub_types_class_az_tools_framework_1_1_manipulators"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a933909fa149d72d863b7819216d0171a"><td class="memItemLeft" align="right" valign="top"><a id="a933909fa149d72d863b7819216d0171a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TranslationManipulators</b> (<a class="el" href="class_az_tools_framework_1_1_translation_manipulators.html">TranslationManipulators</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a933909fa149d72d863b7819216d0171a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b364514d327b870c4381988ad816ee"><td class="memItemLeft" align="right" valign="top"><a id="ae6b364514d327b870c4381988ad816ee"></a>
+<a class="el" href="class_az_tools_framework_1_1_translation_manipulators.html">TranslationManipulators</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_az_tools_framework_1_1_translation_manipulators.html">TranslationManipulators</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:ae6b364514d327b870c4381988ad816ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c45b323ea34636ef32dec01d89b0739"><td class="memItemLeft" align="right" valign="top"><a id="a0c45b323ea34636ef32dec01d89b0739"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TranslationManipulators</b> (<a class="el" href="class_az_tools_framework_1_1_translation_manipulators.html#a933bb883f5f446c3783c6c6bf7249c73">Dimensions</a> dimensions, const AZ::Transform &amp;worldFromLocal, const AZ::Vector3 &amp;nonUniformScale)</td></tr>
 <tr class="separator:a0c45b323ea34636ef32dec01d89b0739"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,6 +109,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>InstallSurfaceManipul
 <tr class="memitem:aae7759f689032137c066d1dc97ac9c0c"><td class="memItemLeft" align="right" valign="top"><a id="aae7759f689032137c066d1dc97ac9c0c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>InstallSurfaceManipulatorMouseUpCallback</b> (const SurfaceManipulator::MouseActionCallback &amp;onMouseUpCallback)</td></tr>
 <tr class="separator:aae7759f689032137c066d1dc97ac9c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af304faaef709efc779ad8f10f192dbe2"><td class="memItemLeft" align="right" valign="top"><a id="af304faaef709efc779ad8f10f192dbe2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InstallSurfaceManipulatorEntityIdsToIgnoreFn</b> (<a class="el" href="class_az_tools_framework_1_1_surface_manipulator.html#a228094711e4f35aa77b3ecf5fc05b1b1">SurfaceManipulator::EntityIdsToIgnoreFn</a> entityIdsToIgnoreFn)</td></tr>
+<tr class="separator:af304faaef709efc779ad8f10f192dbe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f028efa2dd1f18bad22353f3591584f"><td class="memItemLeft" align="right" valign="top"><a id="a9f028efa2dd1f18bad22353f3591584f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSpaceImpl</b> (const AZ::Transform &amp;worldFromLocal) override</td></tr>
 <tr class="separator:a9f028efa2dd1f18bad22353f3591584f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,15 +130,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNonUniformScaleImp
 <tr class="memitem:aa0eb64cc36ab44d0cd1b964fc0464dd6"><td class="memItemLeft" align="right" valign="top"><a id="aa0eb64cc36ab44d0cd1b964fc0464dd6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAxes</b> (const AZ::Vector3 &amp;axis1, const AZ::Vector3 &amp;axis2, const AZ::Vector3 &amp;axis3=AZ::Vector3::CreateAxisZ())</td></tr>
 <tr class="separator:aa0eb64cc36ab44d0cd1b964fc0464dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a831bcae7cb52454dbe5079f03e267fba"><td class="memItemLeft" align="right" valign="top"><a id="a831bcae7cb52454dbe5079f03e267fba"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ConfigurePlanarView</b> (const AZ::Color &amp;plane1Color, const AZ::Color &amp;plane2Color=AZ::Color(0.0f, 1.0f, 0.0f, 0.5f), const AZ::Color &amp;plane3Color=AZ::Color(0.0f, 0.0f, 1.0f, 0.5f))</td></tr>
-<tr class="separator:a831bcae7cb52454dbe5079f03e267fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3308f584d285faeadb8d444c24298c7"><td class="memItemLeft" align="right" valign="top"><a id="aa3308f584d285faeadb8d444c24298c7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ConfigureLinearView</b> (float axisLength, const AZ::Color &amp;axis1Color, const AZ::Color &amp;axis2Color, const AZ::Color &amp;axis3Color=AZ::Color(0.0f, 0.0f, 1.0f, 0.5f))</td></tr>
-<tr class="separator:aa3308f584d285faeadb8d444c24298c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5ea26b57ad7d888e2f4b917acec3083"><td class="memItemLeft" align="right" valign="top"><a id="ac5ea26b57ad7d888e2f4b917acec3083"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ConfigureSurfaceView</b> (float radius, const AZ::Color &amp;color)</td></tr>
-<tr class="separator:ac5ea26b57ad7d888e2f4b917acec3083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292380fe7e3610a694d1ccc066461442"><td class="memItemLeft" align="right" valign="top"><a id="a292380fe7e3610a694d1ccc066461442"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ConfigureView2d</b> (const <a class="el" href="struct_az_tools_framework_1_1_translation_manipulators_view_create_info.html">TranslationManipulatorsViewCreateInfo</a> &amp;translationManipulatorViewCreateInfo)</td></tr>
+<tr class="separator:a292380fe7e3610a694d1ccc066461442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d741f5384a8f9a4e9537896cb043d9a"><td class="memItemLeft" align="right" valign="top"><a id="a0d741f5384a8f9a4e9537896cb043d9a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ConfigureView3d</b> (const <a class="el" href="struct_az_tools_framework_1_1_translation_manipulators_view_create_info.html">TranslationManipulatorsViewCreateInfo</a> &amp;translationManipulatorViewCreateInfo)</td></tr>
+<tr class="separator:a0d741f5384a8f9a4e9537896cb043d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f04b1081def4318c138b6e12aae8ebd"><td class="memItemLeft" align="right" valign="top"><a id="a4f04b1081def4318c138b6e12aae8ebd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_translation_manipulators.html#a4f04b1081def4318c138b6e12aae8ebd">SetLineBoundWidth</a> (float lineBoundWidth)</td></tr>
 <tr class="memdesc:a4f04b1081def4318c138b6e12aae8ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the bound width to use for the line/axis of a linear manipulator. <br /></td></tr>
@@ -154,10 +165,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>PerformingAction</b> 
 <tr class="memitem:a2ddd86f7aead43de355411e23e2dbb32 inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="memItemLeft" align="right" valign="top"><a id="a2ddd86f7aead43de355411e23e2dbb32"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Registered</b> ()</td></tr>
 <tr class="separator:a2ddd86f7aead43de355411e23e2dbb32 inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07dd42358f5b2853d987f6d42cfc2945 inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="memItemLeft" align="right" valign="top"><a id="a07dd42358f5b2853d987f6d42cfc2945"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_manipulators.html#a07dd42358f5b2853d987f6d42cfc2945">RefreshView</a> (const AZ::Vector3 &amp;)</td></tr>
-<tr class="memdesc:a07dd42358f5b2853d987f6d42cfc2945 inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh the Manipulator and/or View based on the current view position. <br /></td></tr>
-<tr class="separator:a07dd42358f5b2853d987f6d42cfc2945 inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cab2872782d514d8bb3d76142ede826 inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="memItemLeft" align="right" valign="top"><a id="a8cab2872782d514d8bb3d76142ede826"></a>
 const AZ::Transform &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetLocalTransform</b> () const</td></tr>
 <tr class="separator:a8cab2872782d514d8bb3d76142ede826 inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,6 +189,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLocalOrientation</
 <tr class="memitem:a1e7b4be6876510060acf443047f0fbf0 inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="memItemLeft" align="right" valign="top"><a id="a1e7b4be6876510060acf443047f0fbf0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNonUniformScale</b> (const AZ::Vector3 &amp;nonUniformScale)</td></tr>
 <tr class="separator:a1e7b4be6876510060acf443047f0fbf0 inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6861deee6fee350912eb70822e8962e inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="memItemLeft" align="right" valign="top"><a id="ae6861deee6fee350912eb70822e8962e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_manipulators.html#ae6861deee6fee350912eb70822e8962e">RefreshView</a> ([[maybe_unused]] const AZ::Vector3 &amp;worldViewPosition)</td></tr>
+<tr class="memdesc:ae6861deee6fee350912eb70822e8962e inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh the Manipulator and/or View based on the current view position. <br /></td></tr>
+<tr class="separator:ae6861deee6fee350912eb70822e8962e inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa9ce8b4e899fc1fd9821a9edf9c5c27 inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="memItemLeft" align="right" valign="top"><a id="aaa9ce8b4e899fc1fd9821a9edf9c5c27"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_manipulators.html#aaa9ce8b4e899fc1fd9821a9edf9c5c27">DisplayFeedback</a> ([[maybe_unused]] AzFramework::DebugDisplayRequests &amp;debugDisplay, [[maybe_unused]] const AzFramework::CameraState &amp;cameraState)</td></tr>
+<tr class="memdesc:aaa9ce8b4e899fc1fd9821a9edf9c5c27 inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide additional display feedback for an aggregate manipulator. <br /></td></tr>
+<tr class="separator:aaa9ce8b4e899fc1fd9821a9edf9c5c27 inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d18001371af262bf6e3b6e5c44e040 inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_manipulators.html#ae9d18001371af262bf6e3b6e5c44e040">ProcessManipulators</a> (const <a class="el" href="class_az_tools_framework_1_1_manipulators.html#a02b12edf62180c01103ed34878426716">ManipulatorVisitCallback</a> &amp;)=0</td></tr>
+<tr class="separator:ae9d18001371af262bf6e3b6e5c44e040 inherit pub_methods_class_az_tools_framework_1_1_manipulators"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -214,7 +231,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNonUniform
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:38 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:31 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

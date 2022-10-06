@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine SurfaceData Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -57,23 +57,20 @@ $(function() {
 
 <p><code>#include &lt;SurfaceDataProviderRequestBus.h&gt;</code></p>
 
-<p>Inherits EBusTraits.</p>
+<p>Inherits EBusSharedDispatchTraits&lt; SurfaceDataProviderRequests &gt;.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ab7764cfb1ebf0b73fbc7b884d0581a1c"><td class="memItemLeft" align="right" valign="top"><a id="ab7764cfb1ebf0b73fbc7b884d0581a1c"></a>
 typedef AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>BusIdType</b></td></tr>
 <tr class="separator:ab7764cfb1ebf0b73fbc7b884d0581a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e904bf8c8d2924f46f9dd86839d94ea"><td class="memItemLeft" align="right" valign="top"><a id="a0e904bf8c8d2924f46f9dd86839d94ea"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_surface_data_1_1_surface_data_provider_requests.html#a0e904bf8c8d2924f46f9dd86839d94ea">MutexType</a> = AZStd::recursive_mutex</td></tr>
-<tr class="memdesc:a0e904bf8c8d2924f46f9dd86839d94ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">allows multiple threads to call <br /></td></tr>
-<tr class="separator:a0e904bf8c8d2924f46f9dd86839d94ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a81ea3bf4c4c59e6dc2af82c55b38114f"><td class="memItemLeft" align="right" valign="top"><a id="a81ea3bf4c4c59e6dc2af82c55b38114f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfacePoints</b> (const AZ::Vector3 &amp;inPosition, SurfacePointList &amp;surfacePointList) const =0</td></tr>
+<tr class="memitem:a81ea3bf4c4c59e6dc2af82c55b38114f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_surface_data_1_1_surface_data_provider_requests.html#a81ea3bf4c4c59e6dc2af82c55b38114f">GetSurfacePoints</a> (const AZ::Vector3 &amp;inPosition, <a class="el" href="class_surface_data_1_1_surface_point_list.html">SurfacePointList</a> &amp;surfacePointList) const =0</td></tr>
 <tr class="separator:a81ea3bf4c4c59e6dc2af82c55b38114f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5203b5b744e36e53054b3d2a9f2ff28"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_surface_data_1_1_surface_data_provider_requests.html#ac5203b5b744e36e53054b3d2a9f2ff28">GetSurfacePointsFromList</a> (AZStd::span&lt; const AZ::Vector3 &gt; inPositions, <a class="el" href="class_surface_data_1_1_surface_point_list.html">SurfacePointList</a> &amp;surfacePointList) const</td></tr>
+<tr class="separator:ac5203b5b744e36e53054b3d2a9f2ff28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -85,14 +82,101 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 <tr class="separator:a664eb100565944a11e091e93867ee5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>the EBus is used to request information about a surface </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>The EBus is used to request information about a surface. This bus uses shared dispatches, which means that all requests on the bus can run in parallel, but will NOT run in parallel with bus connections / disconnections. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a81ea3bf4c4c59e6dc2af82c55b38114f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81ea3bf4c4c59e6dc2af82c55b38114f">&#9670;&nbsp;</a></span>GetSurfacePoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SurfaceData::SurfaceDataProviderRequests::GetSurfacePoints </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>inPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_surface_data_1_1_surface_point_list.html">SurfacePointList</a> &amp;&#160;</td>
+          <td class="paramname"><em>surfacePointList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get all of the surface points that this provider has at the given input position. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inPosition</td><td>- The input position to query. Only XY are guaranteed to be valid, Z should be ignored. </td></tr>
+    <tr><td class="paramname">surfacePointList</td><td>- The input/output <a class="el" href="class_surface_data_1_1_surface_point_list.html">SurfacePointList</a> to add any generated surface points to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac5203b5b744e36e53054b3d2a9f2ff28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5203b5b744e36e53054b3d2a9f2ff28">&#9670;&nbsp;</a></span>GetSurfacePointsFromList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SurfaceData::SurfaceDataProviderRequests::GetSurfacePointsFromList </td>
+          <td>(</td>
+          <td class="paramtype">AZStd::span&lt; const AZ::Vector3 &gt;&#160;</td>
+          <td class="paramname"><em>inPositions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_surface_data_1_1_surface_point_list.html">SurfacePointList</a> &amp;&#160;</td>
+          <td class="paramname"><em>surfacePointList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get all of the surface points that this provider has at the given input positions. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inPositions</td><td>- The input positions to query. Only XY are guaranteed to be valid, Z should be ignored. </td></tr>
+    <tr><td class="paramname">surfacePointList</td><td>- The input/output <a class="el" href="class_surface_data_1_1_surface_point_list.html">SurfacePointList</a> to add any generated surface points to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/SurfaceData/Code/Include/SurfaceData/SurfaceDataProviderRequestBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:15 for Open 3D Engine SurfaceData Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:46 for Open 3D Engine SurfaceData Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -47,7 +47,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_browser_1_1_folder_asset_browser_entry-members.html">List of all members</a>  </div>
@@ -74,12 +73,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a51ff6090ed9d1734e15bb8854edf72c1"><td class="memItemLeft" align="right" valign="top"><a id="a51ff6090ed9d1734e15bb8854edf72c1"></a>
 AssetEntryType&#160;</td><td class="memItemRight" valign="bottom"><b>GetEntryType</b> () const override</td></tr>
 <tr class="separator:a51ff6090ed9d1734e15bb8854edf72c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac992eb47cd05d928c1b582b8c65c239c"><td class="memItemLeft" align="right" valign="top"><a id="ac992eb47cd05d928c1b582b8c65c239c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsGemsFolder</b> () const</td></tr>
-<tr class="separator:ac992eb47cd05d928c1b582b8c65c239c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0ea5f93b8c97e57467bf729c45fc30a"><td class="memItemLeft" align="right" valign="top"><a id="aa0ea5f93b8c97e57467bf729c45fc30a"></a>
 SharedThumbnailKey&#160;</td><td class="memItemRight" valign="bottom"><b>CreateThumbnailKey</b> () override</td></tr>
 <tr class="separator:aa0ea5f93b8c97e57467bf729c45fc30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90eacf6350d868f8969c72b812b355ec"><td class="memItemLeft" align="right" valign="top"><a id="a90eacf6350d868f8969c72b812b355ec"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsScanFolder</b> () const</td></tr>
+<tr class="separator:a90eacf6350d868f8969c72b812b355ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AzToolsFramework::AssetBrowser::AssetBrowserEntry</a></td></tr>
 <tr class="memitem:a48fc86ea7ef3cba5b5b88e1ba9ce2bf1 inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top"><a id="a48fc86ea7ef3cba5b5b88e1ba9ce2bf1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a>, &quot;{67679F9E-055D-43BE-A2D0-FB4720E5302A}&quot;)</td></tr>
@@ -90,9 +89,6 @@ virtual QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> 
 <tr class="memitem:a39d71365e18f233e42e6be7ccf7736ec inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top"><a id="a39d71365e18f233e42e6be7ccf7736ec"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>row</b> () const</td></tr>
 <tr class="separator:a39d71365e18f233e42e6be7ccf7736ec inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0230610e9964760bb6fe248f3bcfa42 inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top"><a id="ab0230610e9964760bb6fe248f3bcfa42"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddToMimeData</b> (QMimeData *mimeData) const</td></tr>
-<tr class="separator:ab0230610e9964760bb6fe248f3bcfa42 inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f3af116e4888eeabea560ed6eccb27b inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top"><a id="a5f3af116e4888eeabea560ed6eccb27b"></a>
 const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#a5f3af116e4888eeabea560ed6eccb27b">GetName</a> () const</td></tr>
 <tr class="memdesc:a5f3af116e4888eeabea560ed6eccb27b inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actual name of the asset or folder. <br /></td></tr>
@@ -101,14 +97,14 @@ const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a 
 const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#a14c6309d4559ceeacfd85699f08af344">GetDisplayName</a> () const</td></tr>
 <tr class="memdesc:a14c6309d4559ceeacfd85699f08af344 inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display name represents how entry is shown in asset browser. <br /></td></tr>
 <tr class="separator:a14c6309d4559ceeacfd85699f08af344 inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932203e6b73d436ddeac6a90ac14971b inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#a932203e6b73d436ddeac6a90ac14971b">GetDisplayPath</a> () const</td></tr>
+<tr class="separator:a932203e6b73d436ddeac6a90ac14971b inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4aa6f78d1af2eeee93be0b86c3e28c9 inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top"><a id="aa4aa6f78d1af2eeee93be0b86c3e28c9"></a>
 const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#aa4aa6f78d1af2eeee93be0b86c3e28c9">GetRelativePath</a> () const</td></tr>
 <tr class="memdesc:aa4aa6f78d1af2eeee93be0b86c3e28c9 inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return path relative to scan folder. <br /></td></tr>
 <tr class="separator:aa4aa6f78d1af2eeee93be0b86c3e28c9 inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e9ae417f11c8600bcd7e89e8cf7d204 inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top"><a id="a1e9ae417f11c8600bcd7e89e8cf7d204"></a>
-const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#a1e9ae417f11c8600bcd7e89e8cf7d204">GetFullPath</a> () const</td></tr>
-<tr class="memdesc:a1e9ae417f11c8600bcd7e89e8cf7d204 inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return absolute path. If called on product, return source absolute path. <br /></td></tr>
-<tr class="separator:a1e9ae417f11c8600bcd7e89e8cf7d204 inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a11222fb0d3adb0d4e3ffda8aa11f3b inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top">const AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#a7a11222fb0d3adb0d4e3ffda8aa11f3b">GetFullPath</a> () const</td></tr>
+<tr class="separator:a7a11222fb0d3adb0d4e3ffda8aa11f3b inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70a3a6756bdaa0fd8c810f674cc35b99 inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memTemplParams" colspan="2"><a id="a70a3a6756bdaa0fd8c810f674cc35b99"></a>
 template&lt;typename EntryType &gt; </td></tr>
 <tr class="memitem:a70a3a6756bdaa0fd8c810f674cc35b99 inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#a70a3a6756bdaa0fd8c810f674cc35b99">GetChildren</a> (AZStd::vector&lt; const EntryType * &gt; &amp;entries) const</td></tr>
@@ -140,30 +136,6 @@ virtual SharedThumbnailKey&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="memitem:a0e2df47cdac20b5fa91eff07936e04f0 inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top"><a id="a0e2df47cdac20b5fa91eff07936e04f0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetThumbnailKey</b> (SharedThumbnailKey thumbnailKey)</td></tr>
 <tr class="separator:a0e2df47cdac20b5fa91eff07936e04f0 inherit pub_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7f7eab21fc88347760e582f09fa522f4"><td class="memItemLeft" align="right" valign="top"><a id="a7f7eab21fc88347760e582f09fa522f4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
-<tr class="separator:a7f7eab21fc88347760e582f09fa522f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AzToolsFramework::AssetBrowser::AssetBrowserEntry</a></td></tr>
-<tr class="memitem:af89ce65b143a2c872068e15ebc572be0 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top"><a id="af89ce65b143a2c872068e15ebc572be0"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>AssetEntryTypeToString</b> (AssetEntryType assetEntryType)</td></tr>
-<tr class="separator:af89ce65b143a2c872068e15ebc572be0 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdd0ff2f55fa7f402fa73ce634c08144 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top"><a id="acdd0ff2f55fa7f402fa73ce634c08144"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>FromMimeData</b> (const QMimeData *mimeData, AZStd::vector&lt; <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a> * &gt; &amp;entries)</td></tr>
-<tr class="separator:acdd0ff2f55fa7f402fa73ce634c08144 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5a69b3d13e47b8827052f96cd796938 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top"><a id="ae5a69b3d13e47b8827052f96cd796938"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>GetMimeType</b> ()</td></tr>
-<tr class="separator:ae5a69b3d13e47b8827052f96cd796938 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89af89b7cb3afdf5ca9b4dbc8cdeed90 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top"><a id="a89af89b7cb3afdf5ca9b4dbc8cdeed90"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
-<tr class="separator:a89af89b7cb3afdf5ca9b4dbc8cdeed90 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc41c406fcd7b5adaf361548225a9477 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memTemplParams" colspan="2"><a id="adc41c406fcd7b5adaf361548225a9477"></a>
-template&lt;typename EntryType &gt; </td></tr>
-<tr class="memitem:adc41c406fcd7b5adaf361548225a9477 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#adc41c406fcd7b5adaf361548225a9477">ForEachEntryInMimeData</a> (const QMimeData *mimeData, AZStd::function&lt; void(const EntryType *)&gt; callbackFunction)</td></tr>
-<tr class="memdesc:adc41c406fcd7b5adaf361548225a9477 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="mdescLeft">&#160;</td><td class="mdescRight">! Utility function: Given a Qt QMimeData pointer, your callbackFunction will be called for each entry of that type it finds in there. <br /></td></tr>
-<tr class="separator:adc41c406fcd7b5adaf361548225a9477 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -220,6 +192,20 @@ Additional Inherited Members</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a2ec53cee0eb2e39a362a4aa662fca264 inherit pub_types_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AzToolsFramework::AssetBrowser::AssetBrowserEntry</a></td></tr>
+<tr class="memitem:af89ce65b143a2c872068e15ebc572be0 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top"><a id="af89ce65b143a2c872068e15ebc572be0"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>AssetEntryTypeToString</b> (AssetEntryType assetEntryType)</td></tr>
+<tr class="separator:af89ce65b143a2c872068e15ebc572be0 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8967cd6bdb6aff39d578633034cf958c inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#a8967cd6bdb6aff39d578633034cf958c">FromMimeData</a> (const QMimeData *mimeData, AZStd::vector&lt; const <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a> * &gt; &amp;entries)</td></tr>
+<tr class="separator:a8967cd6bdb6aff39d578633034cf958c inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5a69b3d13e47b8827052f96cd796938 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top"><a id="ae5a69b3d13e47b8827052f96cd796938"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>GetMimeType</b> ()</td></tr>
+<tr class="separator:ae5a69b3d13e47b8827052f96cd796938 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc41c406fcd7b5adaf361548225a9477 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memTemplParams" colspan="2"><a id="adc41c406fcd7b5adaf361548225a9477"></a>
+template&lt;typename EntryType &gt; </td></tr>
+<tr class="memitem:adc41c406fcd7b5adaf361548225a9477 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#adc41c406fcd7b5adaf361548225a9477">ForEachEntryInMimeData</a> (const QMimeData *mimeData, AZStd::function&lt; void(const EntryType *)&gt; callbackFunction)</td></tr>
+<tr class="memdesc:adc41c406fcd7b5adaf361548225a9477 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="mdescLeft">&#160;</td><td class="mdescRight">! Utility function: Given a Qt QMimeData pointer, your callbackFunction will be called for each entry of that type it finds in there. <br /></td></tr>
+<tr class="separator:adc41c406fcd7b5adaf361548225a9477 inherit pub_static_methods_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AzToolsFramework::AssetBrowser::AssetBrowserEntry</a></td></tr>
 <tr class="memitem:a4b3dc7b99622bbde3185e883e478bed7 inherit pub_static_attribs_class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry"><td class="memItemLeft" align="right" valign="top"><a id="a4b3dc7b99622bbde3185e883e478bed7"></a>
 static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_columnNames</b> [static_cast&lt; int &gt;(Column::Count)]</td></tr>
@@ -259,7 +245,7 @@ AZStd::vector&lt; <a class="el" href="class_az_tools_framework_1_1_asset_browser
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:38 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:32 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

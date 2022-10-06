@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -114,18 +114,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_allocator_manager.html#aa952ac905fbf19eb6f865c71b6a08db7">SetAllocatorLeaking</a> (bool allowLeaking)</td></tr>
 <tr class="memdesc:aa952ac905fbf19eb6f865c71b6a08db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Especially for great code and engines... <br /></td></tr>
 <tr class="separator:aa952ac905fbf19eb6f865c71b6a08db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2653b01b1e34875d6c939334e8188222"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_allocator_manager.html#a2653b01b1e34875d6c939334e8188222">SetOverrideAllocatorSource</a> (<a class="el" href="class_a_z_1_1_i_allocator_allocate.html">IAllocatorAllocate</a> *source, bool overrideExistingAllocators=true)</td></tr>
-<tr class="separator:a2653b01b1e34875d6c939334e8188222"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a624c67f04216846b8dfafbc1351c975f"><td class="memItemLeft" align="right" valign="top"><a id="a624c67f04216846b8dfafbc1351c975f"></a>
-<a class="el" href="class_a_z_1_1_i_allocator_allocate.html">IAllocatorAllocate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_allocator_manager.html#a624c67f04216846b8dfafbc1351c975f">GetOverrideAllocatorSource</a> () const</td></tr>
-<tr class="memdesc:a624c67f04216846b8dfafbc1351c975f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the override schema. <br /></td></tr>
-<tr class="separator:a624c67f04216846b8dfafbc1351c975f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a236bc5309816d5a5fd067c3ffe67638f"><td class="memItemLeft" align="right" valign="top"><a id="a236bc5309816d5a5fd067c3ffe67638f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAllocatorRemapping</b> (const char *fromName, const char *toName)</td></tr>
-<tr class="separator:a236bc5309816d5a5fd067c3ffe67638f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51512ec75723854d6bc60bc8e30b052c"><td class="memItemLeft" align="right" valign="top"><a id="a51512ec75723854d6bc60bc8e30b052c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FinalizeConfiguration</b> ()</td></tr>
-<tr class="separator:a51512ec75723854d6bc60bc8e30b052c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a894b397a15caf16c78944ed098b9eeaf"><td class="memItemLeft" align="right" valign="top"><a id="a894b397a15caf16c78944ed098b9eeaf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_allocator_manager.html#a894b397a15caf16c78944ed098b9eeaf">EnterProfilingMode</a> ()</td></tr>
 <tr class="memdesc:a894b397a15caf16c78944ed098b9eeaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enter or exit profiling mode; calls to Enter must be matched with calls to Exit. <br /></td></tr>
@@ -157,9 +145,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnRegisterAllocator</
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af9f4068aa35022d22f3e108b59ca84ac"><td class="memItemLeft" align="right" valign="top"><a id="af9f4068aa35022d22f3e108b59ca84ac"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>PreRegisterAllocator</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *allocator)</td></tr>
-<tr class="separator:af9f4068aa35022d22f3e108b59ca84ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71cdf836b3705fb58038266f16c401f6"><td class="memItemLeft" align="right" valign="top"><a id="a71cdf836b3705fb58038266f16c401f6"></a>
 static <a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateLazyAllocator</b> (size_t size, size_t alignment, <a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *(*creationFn)(void *))</td></tr>
 <tr class="separator:a71cdf836b3705fb58038266f16c401f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,42 +203,13 @@ template&lt;typename T &gt; </td></tr>
 
 </div>
 </div>
-<a id="a2653b01b1e34875d6c939334e8188222"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2653b01b1e34875d6c939334e8188222">&#9670;&nbsp;</a></span>SetOverrideAllocatorSource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::AllocatorManager::SetOverrideAllocatorSource </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_i_allocator_allocate.html">IAllocatorAllocate</a> *&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>overrideExistingAllocators</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set an override allocator All allocators registered with the <a class="el" href="class_a_z_1_1_allocator_manager.html">AllocatorManager</a> will automatically redirect to this allocator if set. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Memory/AllocatorManager.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

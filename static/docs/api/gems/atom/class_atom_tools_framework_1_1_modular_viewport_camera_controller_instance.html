@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -84,6 +84,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>StopTrackingTransform
 <tr class="memitem:a873db61dfb931ff69ebc24dbb161c085"><td class="memItemLeft" align="right" valign="top"><a id="a873db61dfb931ff69ebc24dbb161c085"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTrackingTransform</b> () const override</td></tr>
 <tr class="separator:a873db61dfb931ff69ebc24dbb161c085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad309eb3a2a06908b551eed9f976f962d"><td class="memItemLeft" align="right" valign="top"><a id="ad309eb3a2a06908b551eed9f976f962d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCameraPivotAttached</b> (const AZ::Vector3 &amp;pivot) override</td></tr>
+<tr class="separator:ad309eb3a2a06908b551eed9f976f962d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cd1586875209f110be67d58f5b2fa7"><td class="memItemLeft" align="right" valign="top"><a id="a55cd1586875209f110be67d58f5b2fa7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCameraPivotAttachedImmediate</b> (const AZ::Vector3 &amp;pivot) override</td></tr>
+<tr class="separator:a55cd1586875209f110be67d58f5b2fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a400a273f664b9a4023cb3de5962440fb"><td class="memItemLeft" align="right" valign="top"><a id="a400a273f664b9a4023cb3de5962440fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCameraPivotDetached</b> (const AZ::Vector3 &amp;pivot) override</td></tr>
+<tr class="separator:a400a273f664b9a4023cb3de5962440fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf524a3464f0e225b419953737a78319"><td class="memItemLeft" align="right" valign="top"><a id="acf524a3464f0e225b419953737a78319"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCameraPivotDetachedImmediate</b> (const AZ::Vector3 &amp;pivot) override</td></tr>
+<tr class="separator:acf524a3464f0e225b419953737a78319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e1949f96c1e097f8a1c21f031bec35"><td class="memItemLeft" align="right" valign="top"><a id="ac9e1949f96c1e097f8a1c21f031bec35"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCameraOffset</b> (const AZ::Vector3 &amp;offset) override</td></tr>
+<tr class="separator:ac9e1949f96c1e097f8a1c21f031bec35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c819a66810ae9d406a89b34596e62c"><td class="memItemLeft" align="right" valign="top"><a id="a80c819a66810ae9d406a89b34596e62c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCameraOffsetImmediate</b> (const AZ::Vector3 &amp;offset) override</td></tr>
+<tr class="separator:a80c819a66810ae9d406a89b34596e62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5bddeb9e610c2411c8d52ac92926a73"><td class="memItemLeft" align="right" valign="top"><a id="af5bddeb9e610c2411c8d52ac92926a73"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>AddCameras</b> (const AZStd::vector&lt; AZStd::shared_ptr&lt; AzFramework::CameraInput &gt;&gt; &amp;cameraInputs) override</td></tr>
+<tr class="separator:af5bddeb9e610c2411c8d52ac92926a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9835b8766e693e0f974d5bb16ac7e450"><td class="memItemLeft" align="right" valign="top"><a id="a9835b8766e693e0f974d5bb16ac7e450"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveCameras</b> (const AZStd::vector&lt; AZStd::shared_ptr&lt; AzFramework::CameraInput &gt;&gt; &amp;cameraInputs) override</td></tr>
+<tr class="separator:a9835b8766e693e0f974d5bb16ac7e450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A customizable camera controller that can be configured to run a varying set of CameraInput instances. The controller can also be animated from its current transform to a new translation and orientation. </p>
@@ -93,7 +117,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTrackingTransform</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

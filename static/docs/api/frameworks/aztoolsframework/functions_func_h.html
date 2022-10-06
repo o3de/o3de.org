@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -44,6 +44,9 @@ $(function() {
 &#160;
 
 <h3><a id="index_h"></a>- h -</h3><ul>
+<li>HandleAssetCreatedInEditor()
+: <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_file_creation_notifications.html#a42e3e21d424b12f007dbab72d4f90a9d">AzToolsFramework::AssetBrowser::AssetBrowserFileCreationNotifications</a>
+</li>
 <li>HandleEditorOnlyEntities()
 : <a class="el" href="class_az_tools_framework_1_1_editor_only_entity_handler.html#a286f2004066352b6ee7a75f9a24c8389">AzToolsFramework::EditorOnlyEntityHandler</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_editor_only_entity_handler.html#a7928ac52f5828bdc0df220192b2c2da5">AzToolsFramework::Prefab::PrefabConversionUtils::EditorOnlyEntityHandler</a>
@@ -55,19 +58,26 @@ $(function() {
 <li>HandleEntitiesAdded()
 : <a class="el" href="class_az_tools_framework_1_1_editor_entity_context_requests.html#a75d995aad6b849414b1b925c9e986a1d">AzToolsFramework::EditorEntityContextRequests</a>
 </li>
+<li>HandleInitialFilenameChange()
+: <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_file_creation_notifications.html#a753bb98c759e8696302b8b1aa3432d54">AzToolsFramework::AssetBrowser::AssetBrowserFileCreationNotifications</a>
+</li>
 <li>HandleMouse()
 : <a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#a1fcdb80b4ee10a1d7d1ec83181d65d3e">AzToolsFramework::EditorVertexSelectionBase&lt; Vertex &gt;</a>
 </li>
 <li>HandleMouseInteraction()
-: <a class="el" href="class_az_tools_framework_1_1_editor_box_select.html#ad7884f61e65dd3a4938b85b64845e472">AzToolsFramework::EditorBoxSelect</a>
+: <a class="el" href="class_az_tools_framework_1_1_editor_box_select.html#af7bccaa3c8b4720f6791c0765e98c515">AzToolsFramework::EditorBoxSelect</a>
 , <a class="el" href="class_az_tools_framework_1_1_editor_transform_component_selection.html#a5e6af7f944b4619c1a58a2ba94fb8363">AzToolsFramework::EditorTransformComponentSelection</a>
 , <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_mouse_viewport_requests.html#ae8ffd7d7a2e2fa79f761c564eee2e877">AzToolsFramework::ViewportInteraction::MouseViewportRequests</a>
 </li>
+<li>HandleOperationAtPath()
+: <a class="el" href="class_az_tools_framework_1_1_d_p_e_row_widget.html#a6465175bc165e82b92a38e92bf12836b">AzToolsFramework::DPERowWidget</a>
+</li>
+<li>HandleRootPrefabClosure()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_integration_interface.html#af32d090b05dc17f1ec5442738f67fb30">AzToolsFramework::Prefab::PrefabIntegrationInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_integration_manager.html#a3c3b4b85d54933f60a40fb8c6784599f">AzToolsFramework::Prefab::PrefabIntegrationManager</a>
+</li>
 <li>HandlesInputEvent()
 : <a class="el" href="class_az_tools_framework_1_1_qt_event_to_az_input_mapper.html#a4082dd11ea40556da8d51ea03b5cbcf1">AzToolsFramework::QtEventToAzInputMapper</a>
-</li>
-<li>HandleSourceFileType()
-: <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_source_drop_events.html#a7cfdb71594dd481e7946ecc75b1f5005">AzToolsFramework::AssetBrowser::AssetBrowserSourceDropEvents</a>
 </li>
 <li>HasComponentOfType()
 : <a class="el" href="class_az_tools_framework_1_1_editor_component_a_p_i_requests.html#a2f4949ac7aba506f9ad6d3f026173e4f">AzToolsFramework::EditorComponentAPIRequests</a>
@@ -79,14 +89,17 @@ $(function() {
 <li>HasContainerAncestorEntityId()
 : <a class="el" href="class_az_tools_framework_1_1_cursor_entity_id_query.html#a15dccf8203f0ef26c4f814b96b6d3ce0">AzToolsFramework::CursorEntityIdQuery</a>
 </li>
-<li>HasContext()
-: <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#aaa4cec4a7710115180c7180452a52e46">AzToolsFramework::Thumbnailer::ThumbnailerRequests</a>
+<li>HasEnabledStateCallback()
+: <a class="el" href="class_az_tools_framework_1_1_editor_action.html#a304121d59be8e0b0d04bca8cb4ecefc7">AzToolsFramework::EditorAction</a>
 </li>
 <li>HasEntityComponentIdPair()
 : <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#ad31713d3676695bb6111d4cd703e7dd6">AzToolsFramework::BaseManipulator</a>
 </li>
 <li>HasEntityId()
 : <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#a66c31408fda46e8119c17bc9cc399e62">AzToolsFramework::BaseManipulator</a>
+</li>
+<li>HasInMemorySpawnableAsset()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#ac1937a054d271d499ac5bab8230122c1">AzToolsFramework::Prefab::PrefabPublicRequests</a>
 </li>
 <li>HasManifest()
 : <a class="el" href="class_az_tools_framework_1_1_asset_bundle_component.html#ae6e1b42df172bf797c26ecb2e5eeed1d">AzToolsFramework::AssetBundleComponent</a>
@@ -98,13 +111,13 @@ $(function() {
 <li>HasProductType()
 : <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_source_asset_browser_entry.html#a1f7736fa5c0df3c6baaa1efe77dc6363">AzToolsFramework::AssetBrowser::SourceAssetBrowserEntry</a>
 </li>
-<li>HasSelectionComponent()
-: <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html#ac31de220ad7a58f28bf5c932f8d93693">AzToolsFramework::Components::EditorComponentBase</a>
-</li>
 <li>HasUnsavedChanges()
 : <a class="el" href="class_az_tools_framework_1_1_layers_1_1_editor_layer_component_requests.html#a870a6b241cef8f0a4758154e1feda48c">AzToolsFramework::Layers::EditorLayerComponentRequests</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#aea780e346eb390aabc4dfbc340e4a68e">AzToolsFramework::Prefab::PrefabPublicHandler</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#addbae9df6f1c7e65fbcf921badff8592">AzToolsFramework::Prefab::PrefabPublicInterface</a>
+</li>
+<li>HelpersVisible()
+: <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_settings_requests.html#ae3ab0dea3115562249e08bdae480d036">AzToolsFramework::ViewportInteraction::ViewportSettingsRequests</a>
 </li>
 <li>HideToastNotification()
 : <a class="el" href="class_az_tools_framework_1_1_toast_requests.html#a93f0dff60af00db4a94ded07ef10e0ef">AzToolsFramework::ToastRequests</a>
@@ -113,7 +126,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:41 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:35 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

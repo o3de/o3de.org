@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -56,9 +56,6 @@ $(function() {
 <li>OnAddGlobalProperty()
 : <a class="el" href="class_a_z_1_1_behavior_context_events.html#ace561276c30e60ed32e46df1af774aec">AZ::BehaviorContextEvents</a>
 </li>
-<li>OnAssert()
-: <a class="el" href="class_a_z_1_1_debug_1_1_trace_messages_driller.html#a183a839953ac61c54565b53c63fed71b">AZ::Debug::TraceMessagesDriller</a>
-</li>
 <li>OnAssetCanceled()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset_events.html#a962d86be60d414fcd045bec8fc2f1336">AZ::Data::AssetEvents</a>
 , <a class="el" href="class_a_z_1_1_data_1_1_asset_manager_events.html#a58db1b49d641cc1a59053eb75bd4ec84">AZ::Data::AssetManagerEvents</a>
@@ -88,7 +85,6 @@ $(function() {
 </li>
 <li>OnAssetPreReload()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset_events.html#a341183dfda2dbfa08d5731c45e53cdf9">AZ::Data::AssetEvents</a>
-, <a class="el" href="class_a_z_1_1_script_system_component.html#a328ea47f84ddd0a621657d86e16f8d6d">AZ::ScriptSystemComponent</a>
 </li>
 <li>OnAssetReady()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset_events.html#a445b45414ddbe8ee5d2a36bb0ef23e85">AZ::Data::AssetEvents</a>
@@ -97,6 +93,7 @@ $(function() {
 <li>OnAssetReloaded()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset_events.html#a35db5becaa4189e390fa3f3115a9a793">AZ::Data::AssetEvents</a>
 , <a class="el" href="class_a_z_1_1_data_1_1_asset_manager_events.html#ab1895cc208d239e2b5cc425b768a7fad">AZ::Data::AssetManagerEvents</a>
+, <a class="el" href="class_a_z_1_1_script_system_component.html#a36e88a058494519720c7d5f9452d264f">AZ::ScriptSystemComponent</a>
 </li>
 <li>OnAssetReloadError()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset_events.html#ac6ae62f3b67b9efdab36f232938ca2a9">AZ::Data::AssetEvents</a>
@@ -111,6 +108,9 @@ $(function() {
 <li>OnBeginSlicePush()
 : <a class="el" href="class_a_z_1_1_slice_asset_serialization_notifications.html#ad6c84de935713f5e796dd802233f815e">AZ::SliceAssetSerializationNotifications</a>
 </li>
+<li>OnCaptureFinished()
+: <a class="el" href="class_a_z_1_1_debug_1_1_profiler_notifications.html#ae37e34504002ccc74d03cf16a8014433">AZ::Debug::ProfilerNotifications</a>
+</li>
 <li>OnChildAdded()
 : <a class="el" href="class_a_z_1_1_transform_notification.html#a763d8f4f03fe7321fc74419d33308182">AZ::TransformNotification</a>
 </li>
@@ -123,29 +123,11 @@ $(function() {
 <li>OnChildRemoved()
 : <a class="el" href="class_a_z_1_1_transform_notification.html#ad05f3f6215a4682662e45d42639cbd3a">AZ::TransformNotification</a>
 </li>
-<li>OnData()
-: <a class="el" href="class_a_z_1_1_debug_1_1_driller_drillerdata_handler.html#a0d6c7592bf2563915af8bd77ff6d5ecc">AZ::Debug::DrillerDrillerdataHandler</a>
-, <a class="el" href="class_a_z_1_1_debug_1_1_driller_drillerdata_handler_1_1_param_handler.html#a3e17e9857e9e1f8c255786efc197a4e0">AZ::Debug::DrillerDrillerdataHandler::ParamHandler</a>
-, <a class="el" href="class_a_z_1_1_debug_1_1_driller_handler_parser.html#aea2c5111575d01c206d46570b0f27a49">AZ::Debug::DrillerHandlerParser</a>
-, <a class="el" href="class_a_z_1_1_debug_1_1_driller_s_a_x_parser_handler.html#ae0fead9ca62aa4ab84e8dbbfdef6a939">AZ::Debug::DrillerSAXParserHandler</a>
-, <a class="el" href="class_a_z_1_1_debug_1_1_driller_startdata_handler.html#a798444a69444f661167b5ed54f558583">AZ::Debug::DrillerStartdataHandler</a>
-, <a class="el" href="class_a_z_1_1_debug_1_1_frame_handler.html#ae8776696c28663e1acfc08506887182b">AZ::Debug::FrameHandler&lt; DrillerContainer &gt;</a>
-</li>
 <li>OnDemandReflectionOwner()
 : <a class="el" href="class_a_z_1_1_on_demand_reflection_owner.html#a9ed459a7c988ecd1655d9c6c85c5a9a6">AZ::OnDemandReflectionOwner</a>
 </li>
-<li>OnEndOfFrame()
-: <a class="el" href="class_a_z_1_1_debug_1_1_driller_output_stream.html#a3a310952cd02a1bddf9d1a6092dfc3c7">AZ::Debug::DrillerOutputStream</a>
-</li>
 <li>OnEndSlicePush()
 : <a class="el" href="class_a_z_1_1_slice_asset_serialization_notifications.html#a1356ce0f706fc0d9939a7703d12a920c">AZ::SliceAssetSerializationNotifications</a>
-</li>
-<li>OnEnterTag()
-: <a class="el" href="class_a_z_1_1_debug_1_1_driller_drillerdata_handler.html#a528de27be5164e10e52e8c2aac5429d6">AZ::Debug::DrillerDrillerdataHandler</a>
-, <a class="el" href="class_a_z_1_1_debug_1_1_driller_handler_parser.html#af82afb477e415b25cf199d59a45a5580">AZ::Debug::DrillerHandlerParser</a>
-, <a class="el" href="class_a_z_1_1_debug_1_1_driller_root_handler.html#a322f480cf769c045c60bbf2b3b14ac41">AZ::Debug::DrillerRootHandler&lt; DrillerContainer &gt;</a>
-, <a class="el" href="class_a_z_1_1_debug_1_1_driller_startdata_handler.html#a941e7ec95f4a3f07a56dd6ddc7076fb7">AZ::Debug::DrillerStartdataHandler</a>
-, <a class="el" href="class_a_z_1_1_debug_1_1_frame_handler.html#a31b0b1c488572e5229c37b6b9ec968fb">AZ::Debug::FrameHandler&lt; DrillerContainer &gt;</a>
 </li>
 <li>OnEntityActivated()
 : <a class="el" href="class_a_z_1_1_entity_events.html#a8b4d5fdb8a56b1dad1cfa331074ed4c9">AZ::EntityEvents</a>
@@ -176,14 +158,8 @@ $(function() {
 <li>OnEntityStartStatusChanged()
 : <a class="el" href="class_a_z_1_1_entity_system_events.html#ae3385f4cb518ff2e1cbba692a5eeef6f">AZ::EntitySystemEvents</a>
 </li>
-<li>OnError()
-: <a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_events.html#a1e53b375bd5f6bdafed7d81de76c6e1a">AZ::IO::FileIOEvents</a>
-</li>
 <li>OnException()
 : <a class="el" href="class_a_z_1_1_debug_1_1_trace_message_events.html#a7422854e0722cb8629ca047f9dc053be">AZ::Debug::TraceMessageEvents</a>
-</li>
-<li>OnExitTag()
-: <a class="el" href="class_a_z_1_1_debug_1_1_driller_handler_parser.html#a424d58ae9f36fbf360a9ecadb47a9664">AZ::Debug::DrillerHandlerParser</a>
 </li>
 <li>OnLegacyDataPatchLoaded()
 : <a class="el" href="class_a_z_1_1_data_patch_notifications.html#abc8351213c7104c3a4d5eb009551e74c">AZ::DataPatchNotifications</a>
@@ -213,8 +189,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_allocator_base.html#a1d190d6a079f57c4bacc3ef7ab505a33">AZ::AllocatorBase</a>
 </li>
 <li>OnOutput()
-: <a class="el" href="class_a_z_1_1_debug_1_1_trace_message_driller_events.html#adcd62622f0606fbbbe555be1639483ab">AZ::Debug::TraceMessageDrillerEvents</a>
-, <a class="el" href="class_a_z_1_1_debug_1_1_trace_message_events.html#a38fa89cea45aeea8c3ddc60ff8b0f57f">AZ::Debug::TraceMessageEvents</a>
+: <a class="el" href="class_a_z_1_1_debug_1_1_trace_message_events.html#a38fa89cea45aeea8c3ddc60ff8b0f57f">AZ::Debug::TraceMessageEvents</a>
 </li>
 <li>OnParentChanged()
 : <a class="el" href="class_a_z_1_1_transform_notification.html#afc29d1f714c8364041637e0cc2a818d2">AZ::TransformNotification</a>
@@ -227,9 +202,6 @@ $(function() {
 </li>
 <li>OnPatchEnd()
 : <a class="el" href="class_a_z_1_1_serialize_context_1_1_i_event_handler.html#a5c223e8276f7673e79a01ac43dc641d5">AZ::SerializeContext::IEventHandler</a>
-</li>
-<li>OnPreAssert()
-: <a class="el" href="class_a_z_1_1_debug_1_1_trace_message_driller_events.html#ab0e54cc1d21d5fdec57d376d480fe91a">AZ::Debug::TraceMessageDrillerEvents</a>
 </li>
 <li>OnReadBegin()
 : <a class="el" href="class_a_z_1_1_serialize_context_1_1_i_event_handler.html#a9aeaf27dbc5daf0eb999517017bf1799">AZ::SerializeContext::IEventHandler</a>
@@ -250,16 +222,11 @@ $(function() {
 <li>OnSystemTick()
 : <a class="el" href="class_a_z_1_1_system_tick_events.html#a99cbe63330555c02c986026f5ff3e712">AZ::SystemTickEvents</a>
 </li>
-<li>OnTag()
-: <a class="el" href="class_a_z_1_1_debug_1_1_driller_s_a_x_parser_handler.html#ad980e6bdeaa5bc9021fe488be0e1ee36">AZ::Debug::DrillerSAXParserHandler</a>
-</li>
 <li>OnThreadEnter()
-: <a class="el" href="class_a_z_std_1_1_thread_driller_events.html#a3323bfa0a7e5e0a044c97a0d3747096f">AZStd::ThreadDrillerEvents</a>
-, <a class="el" href="class_a_z_std_1_1_thread_events.html#a566c019fd3f402aecc589188088de9c1">AZStd::ThreadEvents</a>
+: <a class="el" href="class_a_z_std_1_1_thread_events.html#a566c019fd3f402aecc589188088de9c1">AZStd::ThreadEvents</a>
 </li>
 <li>OnThreadExit()
-: <a class="el" href="class_a_z_std_1_1_thread_driller_events.html#a7f7b4c585282c4a9939bd1f631111017">AZStd::ThreadDrillerEvents</a>
-, <a class="el" href="class_a_z_std_1_1_thread_events.html#ab3d5f3e68e9a4406580bfbe928694e07">AZStd::ThreadEvents</a>
+: <a class="el" href="class_a_z_std_1_1_thread_events.html#ab3d5f3e68e9a4406580bfbe928694e07">AZStd::ThreadEvents</a>
 </li>
 <li>OnTick()
 : <a class="el" href="class_a_z_1_1_event_scheduler_system_component.html#acedf31cc16c4f644ed36bf2b6b33935b">AZ::EventSchedulerSystemComponent</a>
@@ -300,6 +267,10 @@ $(function() {
 <li>OnWriteEnd()
 : <a class="el" href="class_a_z_1_1_serialize_context_1_1_i_event_handler.html#af7cf584e2e493f749a2351116a6cf0c8">AZ::SerializeContext::IEventHandler</a>
 </li>
+<li>OpaqueValue()
+: <a class="el" href="class_a_z_1_1_dom_1_1_value_writer.html#a3a71c9c19c0ab0bb2ee4c699590d9c0d">AZ::Dom::ValueWriter</a>
+, <a class="el" href="class_a_z_1_1_dom_1_1_visitor.html#ae50d676d2e9cccd266ce6d90606a39d3">AZ::Dom::Visitor</a>
+</li>
 <li>Open()
 : <a class="el" href="class_a_z_1_1_android_1_1_a_p_k_file_handler.html#a21d3525495a9cf8b71c65de74c3eaf89">AZ::Android::APKFileHandler</a>
 , <a class="el" href="class_a_z_1_1_i_o_1_1_file_reader.html#a0464c69833939c0e1e4aa3ed97298369">AZ::IO::FileReader</a>
@@ -316,7 +287,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_console_data_wrapper.html#ab58c685a0ee05c83a92f6d387dace5b0">AZ::ConsoleDataWrapper&lt; BASE_TYPE, THREAD_SAFETY &gt;</a>
 </li>
 <li>operator BehaviorObject()
-: <a class="el" href="struct_a_z_1_1_behavior_value_parameter.html#a87cc9b34becef135f3d9571cac799882">AZ::BehaviorValueParameter</a>
+: <a class="el" href="struct_a_z_1_1_behavior_argument.html#a2a7e680e4273014be873185ce0e6d8f4">AZ::BehaviorArgument</a>
 </li>
 <li>operator bool()
 : <a class="el" href="class_a_z_1_1_allocator_wrapper.html#af27e93456fb693fb4f27a66b0443edd3">AZ::AllocatorWrapper&lt; Allocator &gt;</a>
@@ -355,8 +326,8 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_allocator_wrapper.html#a9221ad0be32cd0d8f6b1625fd8fb185c">AZ::AllocatorWrapper&lt; Allocator &gt;</a>
 , <a class="el" href="struct_a_z_1_1_i_o_1_1parser_1_1_path_parser.html#af5c19553a255f22a264c1239580ed2d8">AZ::IO::parser::PathParser</a>
 , <a class="el" href="class_a_z_1_1_matrix3x3.html#a04681ec73b9525aba538c693ca5e2870">AZ::Matrix3x3</a>
-, <a class="el" href="class_a_z_1_1_matrix3x4.html#a5ef7072743eb060904da1669ca8e64ba">AZ::Matrix3x4</a>
-, <a class="el" href="class_a_z_1_1_matrix4x4.html#a5811d8102712fa3f2aca09b5c4fca382">AZ::Matrix4x4</a>
+, <a class="el" href="class_a_z_1_1_matrix3x4.html#a6ff72bcd7d99e803384c044281e918f0">AZ::Matrix3x4</a>
+, <a class="el" href="class_a_z_1_1_matrix4x4.html#a9884b195826ee36061be9f705f1e3c5c">AZ::Matrix4x4</a>
 </li>
 <li>operator+()
 : <a class="el" href="class_a_z_1_1_matrix3x3.html#a8858572ff42ddfc9f182cc5f78adf3df">AZ::Matrix3x3</a>
@@ -366,7 +337,7 @@ $(function() {
 </li>
 <li>operator-()
 : <a class="el" href="class_a_z_1_1_matrix3x3.html#a25f6f7fa97b8275955a8f8198f4020dc">AZ::Matrix3x3</a>
-, <a class="el" href="class_a_z_1_1_matrix3x4.html#a67d412e2c1f9ad765adb20fac9001766">AZ::Matrix3x4</a>
+, <a class="el" href="class_a_z_1_1_matrix3x4.html#afc3759acca6a9ca728c803972f48bcf9">AZ::Matrix3x4</a>
 , <a class="el" href="class_a_z_1_1_matrix4x4.html#a94d9860a324be450616d985aabf4f22c">AZ::Matrix4x4</a>
 , <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html#a9e2e1ce7fadf65ca5fce7cbb2c1c965c">AZStd::deque&lt; T, Allocator, NumElementsPerBlock, MinMapSize &gt;::const_iterator_impl</a>
 </li>
@@ -391,14 +362,15 @@ $(function() {
 <li>operator=()
 : <a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1shared__ref.html#a9eef43f48ea9f346f7d174d3f86701d1">AZ::Android::JNI::shared_ref&lt; JniType &gt;</a>
 , <a class="el" href="class_a_z_1_1_console_data_wrapper.html#a0d43096f8640ee42de7a9c72f62e2215">AZ::ConsoleDataWrapper&lt; BASE_TYPE, THREAD_SAFETY &gt;</a>
+, <a class="el" href="class_a_z_1_1_dom_1_1_value.html#a25e9ded4d88d31b9459157bb95f58027">AZ::Dom::Value</a>
 , <a class="el" href="struct_a_z_1_1_e_bus_aggregate_results.html#a114dc689647a27b847d0261540c4d061">AZ::EBusAggregateResults&lt; T &gt;</a>
 , <a class="el" href="struct_a_z_1_1_e_bus_reduce_result.html#a3118a45d9c9f4ccd5c1f54b7d41de576">AZ::EBusReduceResult&lt; T, Aggregator &gt;</a>
-, <a class="el" href="struct_a_z_1_1_e_bus_reduce_result_3_01_t_01_6_00_01_aggregator_01_4.html#a7aa66437321266e2f3ffc7cc7410af65">AZ::EBusReduceResult&lt; T &amp;, Aggregator &gt;</a>
+, <a class="el" href="struct_a_z_1_1_e_bus_reduce_result_3_01_t_01_6_00_01_aggregator_01_4.html#a74a23dad199897c75b8fd4d5e0650e36">AZ::EBusReduceResult&lt; T &amp;, Aggregator &gt;</a>
 , <a class="el" href="class_a_z_1_1_i_o_1_1_file_reader.html#a611f43d09d1c24ef3e514d2e4ae1935c">AZ::IO::FileReader</a>
 , <a class="el" href="class_a_z_1_1_matrix3x3.html#af56aba6453cfba20b1d457c9e1949364">AZ::Matrix3x3</a>
 , <a class="el" href="class_a_z_1_1_matrix3x4.html#a515a0e5baaab31d65488568db19da51e">AZ::Matrix3x4</a>
 , <a class="el" href="class_a_z_1_1_name.html#aa4debf0720b05230f50504c23189a80c">AZ::Name</a>
-, <a class="el" href="class_a_z_1_1_outcome.html#adba9118f62159122dab14bc394996bc0">AZ::Outcome&lt; ValueT, ErrorT &gt;</a>
+, <a class="el" href="class_a_z_1_1_outcome.html#ab79613b2800460a4c3b7ab2e4f9df5af">AZ::Outcome&lt; ValueT, ErrorT &gt;</a>
 , <a class="el" href="class_a_z_1_1_thread_safe_object.html#a0a52f5a170ded687cabc2451bd2e967b">AZ::ThreadSafeObject&lt; _TYPE &gt;</a>
 , <a class="el" href="class_a_z_std_1_1any.html#a367f5fe4466d976a3bbcfe46029a020b">AZStd::any</a>
 </li>
@@ -418,7 +390,8 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_console_data_wrapper.html#ae8095f02cc93824fecddd454d591811b">AZ::ConsoleDataWrapper&lt; BASE_TYPE, THREAD_SAFETY &gt;</a>
 </li>
 <li>operator[]()
-: <a class="el" href="class_a_z_1_1_vertex_container.html#ab878870ae0fd5d9b9f6067ed89a3e892">AZ::VertexContainer&lt; Vertex &gt;</a>
+: <a class="el" href="class_a_z_1_1_dom_1_1_dom_prefix_tree.html#af44325e22b11d79576c394f8bdbbeb03">AZ::Dom::DomPrefixTree&lt; T &gt;</a>
+, <a class="el" href="class_a_z_1_1_vertex_container.html#ab878870ae0fd5d9b9f6067ed89a3e892">AZ::VertexContainer&lt; Vertex &gt;</a>
 , <a class="el" href="class_a_z_std_1_1fixed__unordered__map.html#ae85090137e133ce15533b51563bf39c9">AZStd::fixed_unordered_map&lt; Key, MappedType, FixedNumBuckets, FixedNumElements, Hasher, EqualKey &gt;</a>
 , <a class="el" href="class_a_z_std_1_1unordered__map.html#ac7e6c2a6f0e1ddff9c30febf70eef784">AZStd::unordered_map&lt; Key, MappedType, Hasher, EqualKey, Allocator &gt;</a>
 </li>
@@ -433,7 +406,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:16 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:06 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -116,24 +116,27 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>BuilderInfoHandler</
 <tr class="memitem:a43ffe6cd6d067664b57a46e1107312fe"><td class="memItemLeft" align="right" valign="top"><a id="a43ffe6cd6d067664b57a46e1107312fe"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>fileHandler</b> = AZStd::function&lt; bool(<a class="el" href="class_az_tools_framework_1_1_asset_database_1_1_file_database_entry.html">FileDatabaseEntry</a> &amp;entry)&gt;</td></tr>
 <tr class="separator:a43ffe6cd6d067664b57a46e1107312fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56798958dfad836152b08cf98a0b0ca2"><td class="memItemLeft" align="right" valign="top"><a id="a56798958dfad836152b08cf98a0b0ca2"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>statHandler</b> = AZStd::function&lt; bool(<a class="el" href="class_az_tools_framework_1_1_asset_database_1_1_stat_database_entry.html">StatDatabaseEntry</a> &amp;entry)&gt;</td></tr>
+<tr class="separator:a56798958dfad836152b08cf98a0b0ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af8d8a6f8262ad3e9b7770761b610473f"><td class="memItemLeft" align="right" valign="top"><a id="af8d8a6f8262ad3e9b7770761b610473f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_az_tools_framework_1_1_asset_database_1_1_asset_database_connection.html">AssetDatabaseConnection</a>, AZ::SystemAllocator, 0)</td></tr>
 <tr class="separator:af8d8a6f8262ad3e9b7770761b610473f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78daebc7124d9bbcf8cc59fbde13c24b"><td class="memItemLeft" align="right" valign="top"><a id="a78daebc7124d9bbcf8cc59fbde13c24b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>OpenDatabase</b> ()</td></tr>
-<tr class="separator:a78daebc7124d9bbcf8cc59fbde13c24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7febc3ac49faf36c8ec7935c4f5e88"><td class="memItemLeft" align="right" valign="top"><a id="a9a7febc3ac49faf36c8ec7935c4f5e88"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>OpenDatabase</b> (bool ignoreFutureAssetDBVersionError=false)</td></tr>
+<tr class="separator:a9a7febc3ac49faf36c8ec7935c4f5e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabdef8b137879ce3cb7fdbfa95be5851"><td class="memItemLeft" align="right" valign="top"><a id="aabdef8b137879ce3cb7fdbfa95be5851"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CloseDatabase</b> ()</td></tr>
 <tr class="separator:aabdef8b137879ce3cb7fdbfa95be5851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26dbe29bff4d13b25b937052385d2f03"><td class="memItemLeft" align="right" valign="top"><a id="a26dbe29bff4d13b25b937052385d2f03"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReadOnly</b> () const</td></tr>
 <tr class="separator:a26dbe29bff4d13b25b937052385d2f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07defdd3bca1bf34a0076cc28c73ae43"><td class="memItemLeft" align="right" valign="top"><a id="a07defdd3bca1bf34a0076cc28c73ae43"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>PostOpenDatabase</b> ()</td></tr>
-<tr class="separator:a07defdd3bca1bf34a0076cc28c73ae43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8bc2b0930e3c365edb57136f3b44a73"><td class="memItemLeft" align="right" valign="top"><a id="aa8bc2b0930e3c365edb57136f3b44a73"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>PostOpenDatabase</b> (bool ignoreFutureAssetDBVersionError)</td></tr>
+<tr class="separator:aa8bc2b0930e3c365edb57136f3b44a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf3efa1dcada6835b50344bd7a2cfcdb"><td class="memItemLeft" align="right" valign="top"><a id="adf3efa1dcada6835b50344bd7a2cfcdb"></a>
 virtual DatabaseVersion&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentDatabaseVersion</b> () const</td></tr>
 <tr class="separator:adf3efa1dcada6835b50344bd7a2cfcdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +167,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueryBuilderInfoTable
 <tr class="memitem:a5be780d6b09918539ab46b9ce90c5bbd"><td class="memItemLeft" align="right" valign="top"><a id="a5be780d6b09918539ab46b9ce90c5bbd"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueryFilesTable</b> (fileHandler handler)</td></tr>
 <tr class="separator:a5be780d6b09918539ab46b9ce90c5bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a8e01b677c1ec3cc937f882b093d8de"><td class="memItemLeft" align="right" valign="top"><a id="a2a8e01b677c1ec3cc937f882b093d8de"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueryStatsTable</b> (statHandler handler)</td></tr>
+<tr class="separator:a2a8e01b677c1ec3cc937f882b093d8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c58a76193435c84f9a4c6f51ec77000"><td class="memItemLeft" align="right" valign="top"><a id="a1c58a76193435c84f9a4c6f51ec77000"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetLikeActualSearchTerm</b> (const char *likeString, LikeType likeType)</td></tr>
 <tr class="separator:a1c58a76193435c84f9a4c6f51ec77000"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,6 +215,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>QuerySourceBySourceNa
 <tr class="memitem:a628c139f67ca18db507e06fb8b89b31b"><td class="memItemLeft" align="right" valign="top"><a id="a628c139f67ca18db507e06fb8b89b31b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>QuerySourceLikeSourceName</b> (const char *likeSourceName, LikeType likeType, sourceHandler handler)</td></tr>
 <tr class="separator:a628c139f67ca18db507e06fb8b89b31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719d814bee7c3b65b10de04c5c5d18aa"><td class="memItemLeft" align="right" valign="top"><a id="a719d814bee7c3b65b10de04c5c5d18aa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>QuerySourceLikeSourceNameScanFolderID</b> (const char *likeSourceName, AZ::s64 scanFolderID, LikeType likeType, sourceHandler handler)</td></tr>
+<tr class="separator:a719d814bee7c3b65b10de04c5c5d18aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16dd3602e856c9a7d27ebc778c623129"><td class="memItemLeft" align="right" valign="top"><a id="a16dd3602e856c9a7d27ebc778c623129"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>QuerySourceAnalysisFingerprint</b> (const char *exactSourceName, AZ::s64 scanFolderID, AZStd::string &amp;result)</td></tr>
 <tr class="separator:a16dd3602e856c9a7d27ebc778c623129"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -329,6 +338,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueryDirectProductDep
 <tr class="separator:a418c67a70fec0bee260b6169bcacf9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64e3c05594f211cb3d0c74bc1d382c21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_database_1_1_asset_database_connection.html#a64e3c05594f211cb3d0c74bc1d382c21">QueryDirectReverseProductDependenciesBySourceGuidSubId</a> (AZ::Uuid dependencySourceGuid, AZ::u32 dependencySubId, productHandler handler)</td></tr>
 <tr class="separator:a64e3c05594f211cb3d0c74bc1d382c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88552dcac6436f7cb967cbd22c45b16d"><td class="memItemLeft" align="right" valign="top"><a id="a88552dcac6436f7cb967cbd22c45b16d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueryDirectReverseProductDependenciesBySourceGuidAllPlatforms</b> (AZ::Uuid dependencySourceGuid, productDependencyHandler handler)</td></tr>
+<tr class="separator:a88552dcac6436f7cb967cbd22c45b16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44a9b949589d498dca34564c34588f7c"><td class="memItemLeft" align="right" valign="top"><a id="a44a9b949589d498dca34564c34588f7c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueryAllProductDependencies</b> (AZ::s64 productID, productHandler handler)</td></tr>
 <tr class="separator:a44a9b949589d498dca34564c34588f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -355,15 +367,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueryFileByFileID</b>
 <tr class="memitem:abc77fc91ee7fbfa5f58a46ea9d616583"><td class="memItemLeft" align="right" valign="top"><a id="abc77fc91ee7fbfa5f58a46ea9d616583"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueryFilesByFileNameAndScanFolderID</b> (const char *fileName, AZ::s64 scanfolderID, fileHandler handler)</td></tr>
 <tr class="separator:abc77fc91ee7fbfa5f58a46ea9d616583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1249d737f0f812686a2cae6ad8fd15bc"><td class="memItemLeft" align="right" valign="top"><a id="a1249d737f0f812686a2cae6ad8fd15bc"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueryFilesLikeFileName</b> (const char *likeFileName, LikeType likeType, fileHandler handler)</td></tr>
-<tr class="separator:a1249d737f0f812686a2cae6ad8fd15bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21c9e946f9d5093c5a448c1e6c815d32"><td class="memItemLeft" align="right" valign="top"><a id="a21c9e946f9d5093c5a448c1e6c815d32"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueryFilesLikeFileNameAndScanFolderID</b> (const char *likeFileName, LikeType likeType, AZ::s64 scanfolderID, fileHandler handler)</td></tr>
+<tr class="separator:a21c9e946f9d5093c5a448c1e6c815d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61520d4d57c9b23e6bb66ffb72c50c96"><td class="memItemLeft" align="right" valign="top"><a id="a61520d4d57c9b23e6bb66ffb72c50c96"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueryFilesByScanFolderID</b> (AZ::s64 scanFolderID, fileHandler handler)</td></tr>
 <tr class="separator:a61520d4d57c9b23e6bb66ffb72c50c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec1ed6fe510f048f1fda5177f29fd4c3"><td class="memItemLeft" align="right" valign="top"><a id="aec1ed6fe510f048f1fda5177f29fd4c3"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueryFileByFileNameScanFolderID</b> (const char *fileName, AZ::s64 scanFolderID, fileHandler handler)</td></tr>
 <tr class="separator:aec1ed6fe510f048f1fda5177f29fd4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8afa78121ca972293d52d5b5d402d787"><td class="memItemLeft" align="right" valign="top"><a id="a8afa78121ca972293d52d5b5d402d787"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueryStatByStatName</b> (const char *statName, statHandler handler)</td></tr>
+<tr class="separator:a8afa78121ca972293d52d5b5d402d787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a334cff702051870ea19578ab66be3"><td class="memItemLeft" align="right" valign="top"><a id="a10a334cff702051870ea19578ab66be3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueryStatLikeStatName</b> (const char *statName, statHandler handler)</td></tr>
+<tr class="separator:a10a334cff702051870ea19578ab66be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32c15f17bceb8f727322c2aa59ad6beb"><td class="memItemLeft" align="right" valign="top"><a id="a32c15f17bceb8f727322c2aa59ad6beb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetQueryLogging</b> (bool enableLogging)</td></tr>
 <tr class="separator:a32c15f17bceb8f727322c2aa59ad6beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -596,7 +614,7 @@ AZStd::unordered_set&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" v
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:38 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:32 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

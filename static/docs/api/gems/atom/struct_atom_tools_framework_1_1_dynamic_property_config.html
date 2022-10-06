@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -68,7 +68,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ad9eaaa3ac97a5220f5d62a7e0b890890"><td class="memItemLeft" align="right" valign="top"><a id="ad9eaaa3ac97a5220f5d62a7e0b890890"></a>
-DynamicPropertyType&#160;</td><td class="memItemRight" valign="bottom"><b>m_dataType</b> = DynamicPropertyType::Invalid</td></tr>
+DynamicPropertyType&#160;</td><td class="memItemRight" valign="bottom"><b>m_dataType</b> = DynamicPropertyType::Unspecified</td></tr>
 <tr class="separator:ad9eaaa3ac97a5220f5d62a7e0b890890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a306d6b4b0c72f9d68b38c39ad52cfc56"><td class="memItemLeft" align="right" valign="top"><a id="a306d6b4b0c72f9d68b38c39ad52cfc56"></a>
 AZ::Name&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_atom_tools_framework_1_1_dynamic_property_config.html#a306d6b4b0c72f9d68b38c39ad52cfc56">m_id</a></td></tr>
@@ -83,6 +83,9 @@ AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_displayNam
 <tr class="memitem:a738ff080f29044da22df6c2eea24370b"><td class="memItemLeft" align="right" valign="top"><a id="a738ff080f29044da22df6c2eea24370b"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_groupName</b></td></tr>
 <tr class="separator:a738ff080f29044da22df6c2eea24370b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf0ceb91744e929704174543fee0948"><td class="memItemLeft" align="right" valign="top"><a id="adaf0ceb91744e929704174543fee0948"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_groupDisplayName</b></td></tr>
+<tr class="separator:adaf0ceb91744e929704174543fee0948"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22bf2dcb7d5391417ffdc8cf193cb57e"><td class="memItemLeft" align="right" valign="top"><a id="a22bf2dcb7d5391417ffdc8cf193cb57e"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_description</b></td></tr>
 <tr class="separator:a22bf2dcb7d5391417ffdc8cf193cb57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,6 +128,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_readOnly</b> = fals
 <tr class="memitem:afc8365bb3a1ae484f80c80b7a6e62f86"><td class="memItemLeft" align="right" valign="top"><a id="afc8365bb3a1ae484f80c80b7a6e62f86"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_showThumbnail</b> = false</td></tr>
 <tr class="separator:afc8365bb3a1ae484f80c80b7a6e62f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a784e1da01988525a8058f1532f8f6c4c"><td class="memItemLeft" align="right" valign="top"><a id="a784e1da01988525a8058f1532f8f6c4c"></a>
+AZStd::function&lt; AZ::u32(const AZStd::any &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_dataChangeCallback</b></td></tr>
+<tr class="separator:a784e1da01988525a8058f1532f8f6c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac237c72eb4d79f844581b4d67537190c"><td class="memItemLeft" align="right" valign="top"><a id="ac237c72eb4d79f844581b4d67537190c"></a>
+AZStd::vector&lt; AZ::Data::AssetType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_supportedAssetTypes</b></td></tr>
+<tr class="separator:ac237c72eb4d79f844581b4d67537190c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071fddad7bfc5ecbded6fdafb265bb34"><td class="memItemLeft" align="right" valign="top"><a id="a071fddad7bfc5ecbded6fdafb265bb34"></a>
+AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_customHandler</b> = 0</td></tr>
+<tr class="separator:a071fddad7bfc5ecbded6fdafb265bb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Configures the initial state, data type, attributes, and values that describe the dynamic property and how it is presented </p>
@@ -134,7 +146,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_showThumbnail</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

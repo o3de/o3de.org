@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine EMotionFX Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -72,14 +72,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_motion_f_x_1_1_integration_1_1_anim_audio_component_requests.html#a878a509f34677d6b3b9e0080b6d8d1d8">RemoveTriggerEvent</a> (const AZStd::string &amp;eventName)=0</td></tr>
 <tr class="memdesc:a878a509f34677d6b3b9e0080b6d8d1d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes audio support from an anim event. <br /></td></tr>
 <tr class="separator:a878a509f34677d6b3b9e0080b6d8d1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a399797546dd6337aeba742f58c8980f6"><td class="memItemLeft" align="right" valign="top"><a id="a399797546dd6337aeba742f58c8980f6"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_motion_f_x_1_1_integration_1_1_anim_audio_component_requests.html#a399797546dd6337aeba742f58c8980f6">ExecuteSourceTrigger</a> (const Audio::TAudioControlID triggerID, const Audio::SAudioCallBackInfos &amp;callbackInfo, const Audio::TAudioControlID &amp;sourceId, const AZStd::string &amp;jointName)=0</td></tr>
-<tr class="memdesc:a399797546dd6337aeba742f58c8980f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a single ATL source trigger on a joint proxy. <br /></td></tr>
-<tr class="separator:a399797546dd6337aeba742f58c8980f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc6ce676f67f3780a5783ef20d09d099"><td class="memItemLeft" align="right" valign="top"><a id="adc6ce676f67f3780a5783ef20d09d099"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_motion_f_x_1_1_integration_1_1_anim_audio_component_requests.html#adc6ce676f67f3780a5783ef20d09d099">ExecuteTrigger</a> (const Audio::TAudioControlID triggerID, const Audio::SAudioCallBackInfos &amp;callbackInfo, const AZStd::string &amp;jointName)=0</td></tr>
-<tr class="memdesc:adc6ce676f67f3780a5783ef20d09d099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a single ATL trigger on a joint proxy. <br /></td></tr>
-<tr class="separator:adc6ce676f67f3780a5783ef20d09d099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a0dddb83e92335c964556fd5b5f9e70"><td class="memItemLeft" align="right" valign="top"><a id="a2a0dddb83e92335c964556fd5b5f9e70"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_motion_f_x_1_1_integration_1_1_anim_audio_component_requests.html#a2a0dddb83e92335c964556fd5b5f9e70">ExecuteSourceTrigger</a> (const Audio::TAudioControlID triggerID, const Audio::TAudioControlID &amp;sourceId, const AZStd::string &amp;jointName)=0</td></tr>
+<tr class="memdesc:a2a0dddb83e92335c964556fd5b5f9e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a single ATL source trigger on a joint proxy. <br /></td></tr>
+<tr class="separator:a2a0dddb83e92335c964556fd5b5f9e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680450c9ec6dfaac89097ce9f5a47eb8"><td class="memItemLeft" align="right" valign="top"><a id="a680450c9ec6dfaac89097ce9f5a47eb8"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_motion_f_x_1_1_integration_1_1_anim_audio_component_requests.html#a680450c9ec6dfaac89097ce9f5a47eb8">ExecuteTrigger</a> (const Audio::TAudioControlID triggerID, const AZStd::string &amp;jointName)=0</td></tr>
+<tr class="memdesc:a680450c9ec6dfaac89097ce9f5a47eb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a single ATL trigger on a joint proxy. <br /></td></tr>
+<tr class="separator:a680450c9ec6dfaac89097ce9f5a47eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfc7e6e5f2a570a92c898e45c542ae17"><td class="memItemLeft" align="right" valign="top"><a id="adfc7e6e5f2a570a92c898e45c542ae17"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_motion_f_x_1_1_integration_1_1_anim_audio_component_requests.html#adfc7e6e5f2a570a92c898e45c542ae17">KillTrigger</a> (const Audio::TAudioControlID triggerID, const AZStd::string *jointName=nullptr)=0</td></tr>
 <tr class="memdesc:adfc7e6e5f2a570a92c898e45c542ae17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kill a single or all ATL triggers on a joint proxy. If a joint name is provided, only kill on provided joint. Otherwise, kill all joints' audio triggers. <br /></td></tr>
@@ -114,7 +114,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:39 for Open 3D Engine EMotionFX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:49 for Open 3D Engine EMotionFX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

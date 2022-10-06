@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -106,9 +106,13 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>basic_string_vie
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>basic_string_view</b> (const_pointer s, size_type count)</td></tr>
 <tr class="separator:a6ee42e27daca51af510ef5820458957d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af81c79eb8dcbd483e5c2e5eaaa4c1a7b"><td class="memTemplParams" colspan="2"><a id="af81c79eb8dcbd483e5c2e5eaaa4c1a7b"></a>
-template&lt;typename It , typename End , typename  = AZStd::enable_if_t&lt;            Internal::satisfies_contiguous_iterator_concept_v&lt;It&gt;            &amp;&amp; is_same_v&lt;typename AZStd::iterator_traits&lt;It&gt;::value_type, value_type&gt;            &amp;&amp; !is_convertible_v&lt;End, size_type&gt;&gt;&gt; </td></tr>
+template&lt;typename It , typename End , typename  = AZStd::enable_if_t&lt;            contiguous_iterator&lt;It&gt;            &amp;&amp; sized_sentinel_for&lt;End, It&gt;            &amp;&amp; is_same_v&lt;iter_value_t&lt;It&gt;, value_type&gt;            &amp;&amp; !is_convertible_v&lt;End, size_type&gt;&gt;&gt; </td></tr>
 <tr class="memitem:af81c79eb8dcbd483e5c2e5eaaa4c1a7b"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>basic_string_view</b> (It first, End last)</td></tr>
 <tr class="separator:af81c79eb8dcbd483e5c2e5eaaa4c1a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02c5aed71dd0c2123e52ea938bc928a"><td class="memTemplParams" colspan="2"><a id="af02c5aed71dd0c2123e52ea938bc928a"></a>
+template&lt;typename R , typename  = enable_if_t&lt;conjunction_v&lt;            bool_constant&lt;!same_as&lt;remove_cvref_t&lt;R&gt;, basic_string_view&gt;&gt;,            bool_constant&lt;!convertible_to&lt;R, const_pointer&gt;&gt;            &gt;&gt;, typename  = enable_if_t&lt;conjunction_v&lt;            bool_constant&lt;ranges::contiguous_range&lt;R&gt;&gt;,            bool_constant&lt;ranges::sized_range&lt;R&gt;&gt;,            bool_constant&lt;same_as&lt;ranges::range_value_t&lt;R&gt;, value_type&gt;&gt;,            bool_constant&lt;!Internal::convertible_to_string_view&lt;Element, Traits, R&gt;&gt;,            bool_constant&lt;Internal::range_trait_type_matches&lt;Element, Traits, R&gt;&gt;            &gt;&gt;&gt; </td></tr>
+<tr class="memitem:af02c5aed71dd0c2123e52ea938bc928a"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>basic_string_view</b> (R &amp;&amp;r)</td></tr>
+<tr class="separator:af02c5aed71dd0c2123e52ea938bc928a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10beb2c63ea50fc949c64c5cf9109606"><td class="memItemLeft" align="right" valign="top"><a id="a10beb2c63ea50fc949c64c5cf9109606"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>basic_string_view</b> (const <a class="el" href="class_a_z_std_1_1basic__string__view.html">basic_string_view</a> &amp;) noexcept=default</td></tr>
 <tr class="separator:a10beb2c63ea50fc949c64c5cf9109606"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -337,7 +341,7 @@ constexpr friend bool&#160;</td><td class="memItemRight" valign="bottom"><b>oper
 <div class="textblock"><h3>template&lt;class Element, class Traits = AZStd::char_traits&lt;Element&gt;&gt;<br />
 class AZStd::basic_string_view&lt; Element, Traits &gt;</h3>
 
-<p>Immutable string wrapper based on boost::const_string and std::string_view. When we operate on const char* we don't know if this points to NULL terminated string or just a char array. to have a clear distinction between them we provide this wrapper. </p>
+<p>Immutable string wrapper based on std::string_view. When we operate on const char* we don't know if this points to NULL terminated string or just a char array. to have a clear distinction between them we provide this wrapper. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>Code/Framework/AzCore/AzCore/Console/IConsoleTypes.h</li>
 <li>Code/Framework/AzCore/AzCore/std/string/string_view.h</li>
@@ -345,7 +349,7 @@ class AZStd::basic_string_view&lt; Element, Traits &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:50 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:34 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

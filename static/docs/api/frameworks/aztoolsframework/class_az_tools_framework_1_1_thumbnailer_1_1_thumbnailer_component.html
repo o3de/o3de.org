@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,6 +46,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_component-members.html">List of all members</a>  </div>
@@ -54,7 +55,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits Component, and Handler.</p>
+<p>Inherits Component, Handler, and QObject.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -64,27 +65,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> () overr
 <tr class="memitem:aa0da776c4b18b970b2237aaefd3eb060"><td class="memItemLeft" align="right" valign="top"><a id="aa0da776c4b18b970b2237aaefd3eb060"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () override</td></tr>
 <tr class="separator:aa0da776c4b18b970b2237aaefd3eb060"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02c4b9173db18fe7b6ac9a1bef21784b"><td class="memItemLeft" align="right" valign="top"><a id="a02c4b9173db18fe7b6ac9a1bef21784b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterContext</b> (const char *contextName) override</td></tr>
-<tr class="separator:a02c4b9173db18fe7b6ac9a1bef21784b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac47e0f0b60cf4133dbae89786233e81"><td class="memItemLeft" align="right" valign="top"><a id="aac47e0f0b60cf4133dbae89786233e81"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterContext</b> (const char *contextName) override</td></tr>
-<tr class="separator:aac47e0f0b60cf4133dbae89786233e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5c45fc50e9793a1f38b5d48b14e4375"><td class="memItemLeft" align="right" valign="top"><a id="ab5c45fc50e9793a1f38b5d48b14e4375"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasContext</b> (const char *contextName) const override</td></tr>
-<tr class="separator:ab5c45fc50e9793a1f38b5d48b14e4375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb87c307d1bf45d70caa6606373a4113"><td class="memItemLeft" align="right" valign="top"><a id="adb87c307d1bf45d70caa6606373a4113"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterThumbnailProvider</b> (SharedThumbnailProvider provider, const char *contextName) override</td></tr>
-<tr class="separator:adb87c307d1bf45d70caa6606373a4113"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2213c9f9398dba19de8054403506734"><td class="memItemLeft" align="right" valign="top"><a id="ae2213c9f9398dba19de8054403506734"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterThumbnailProvider</b> (const char *providerName, const char *contextName) override</td></tr>
-<tr class="separator:ae2213c9f9398dba19de8054403506734"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a163fcd1ad26f2b9632fde12e3f8a3fbf"><td class="memItemLeft" align="right" valign="top"><a id="a163fcd1ad26f2b9632fde12e3f8a3fbf"></a>
-SharedThumbnail&#160;</td><td class="memItemRight" valign="bottom"><b>GetThumbnail</b> (SharedThumbnailKey thumbnailKey, const char *contextName) override</td></tr>
-<tr class="separator:a163fcd1ad26f2b9632fde12e3f8a3fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1df087b998e8bda94937aeaabeaf6929"><td class="memItemLeft" align="right" valign="top"><a id="a1df087b998e8bda94937aeaabeaf6929"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLoading</b> (SharedThumbnailKey thumbnailKey, const char *contextName) override</td></tr>
-<tr class="separator:a1df087b998e8bda94937aeaabeaf6929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac613d499247827f5cf7339248fd0c97a"><td class="memItemLeft" align="right" valign="top"><a id="ac613d499247827f5cf7339248fd0c97a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterThumbnailProvider</b> (SharedThumbnailProvider provider) override</td></tr>
+<tr class="separator:ac613d499247827f5cf7339248fd0c97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ab48b50c136840e62197dfeda4a6da"><td class="memItemLeft" align="right" valign="top"><a id="a85ab48b50c136840e62197dfeda4a6da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterThumbnailProvider</b> (const char *providerName) override</td></tr>
+<tr class="separator:a85ab48b50c136840e62197dfeda4a6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4561da0658062954425f19edee58178"><td class="memItemLeft" align="right" valign="top"><a id="ad4561da0658062954425f19edee58178"></a>
+SharedThumbnail&#160;</td><td class="memItemRight" valign="bottom"><b>GetThumbnail</b> (SharedThumbnailKey thumbnailKey) override</td></tr>
+<tr class="separator:ad4561da0658062954425f19edee58178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6947ecf9b2f48abf99694157b44efc23"><td class="memItemLeft" align="right" valign="top"><a id="a6947ecf9b2f48abf99694157b44efc23"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLoading</b> (SharedThumbnailKey thumbnailKey) override</td></tr>
+<tr class="separator:a6947ecf9b2f48abf99694157b44efc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afede35a8d3626dc946e173a7fae06f12"><td class="memItemLeft" align="right" valign="top"><a id="afede35a8d3626dc946e173a7fae06f12"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RedrawThumbnail</b> ()</td></tr>
+<tr class="separator:afede35a8d3626dc946e173a7fae06f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -104,7 +99,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedSer
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:40 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:34 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

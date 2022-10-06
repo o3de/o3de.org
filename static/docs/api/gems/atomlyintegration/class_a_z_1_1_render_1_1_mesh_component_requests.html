@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AtomLyIntegration Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -60,78 +60,207 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8915088d9a1700cc263ebc7fe9333730"><td class="memItemLeft" align="right" valign="top"><a id="a8915088d9a1700cc263ebc7fe9333730"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetModelAsset</b> (Data::Asset&lt; RPI::ModelAsset &gt; modelAsset)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a8915088d9a1700cc263ebc7fe9333730">SetModelAsset</a> (Data::Asset&lt; RPI::ModelAsset &gt; modelAsset)=0</td></tr>
+<tr class="memdesc:a8915088d9a1700cc263ebc7fe9333730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the model asset used by the component. <br /></td></tr>
 <tr class="separator:a8915088d9a1700cc263ebc7fe9333730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ca461ae474a2faabfb05b41e449af0e"><td class="memItemLeft" align="right" valign="top"><a id="a8ca461ae474a2faabfb05b41e449af0e"></a>
-virtual Data::Asset&lt; const RPI::ModelAsset &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetModelAsset</b> () const =0</td></tr>
+virtual Data::Asset&lt; const RPI::ModelAsset &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a8ca461ae474a2faabfb05b41e449af0e">GetModelAsset</a> () const =0</td></tr>
+<tr class="memdesc:a8ca461ae474a2faabfb05b41e449af0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the model asset used by the component. <br /></td></tr>
 <tr class="separator:a8ca461ae474a2faabfb05b41e449af0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacda8b9100f3ee3ce0a8d48197696fc9"><td class="memItemLeft" align="right" valign="top"><a id="aacda8b9100f3ee3ce0a8d48197696fc9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetModelAssetId</b> (Data::AssetId modelAssetId)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#aacda8b9100f3ee3ce0a8d48197696fc9">SetModelAssetId</a> (Data::AssetId modelAssetId)=0</td></tr>
+<tr class="memdesc:aacda8b9100f3ee3ce0a8d48197696fc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the model used by the component via its AssetId. <br /></td></tr>
 <tr class="separator:aacda8b9100f3ee3ce0a8d48197696fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a187d14058fa89982c5840d63f06b814e"><td class="memItemLeft" align="right" valign="top"><a id="a187d14058fa89982c5840d63f06b814e"></a>
-virtual Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><b>GetModelAssetId</b> () const =0</td></tr>
+virtual Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a187d14058fa89982c5840d63f06b814e">GetModelAssetId</a> () const =0</td></tr>
+<tr class="memdesc:a187d14058fa89982c5840d63f06b814e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the AssetId for the model used by the component. <br /></td></tr>
 <tr class="separator:a187d14058fa89982c5840d63f06b814e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a359ba324875ebe22bf1c4948ae23a3df"><td class="memItemLeft" align="right" valign="top"><a id="a359ba324875ebe22bf1c4948ae23a3df"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetModelAssetPath</b> (const AZStd::string &amp;path)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a359ba324875ebe22bf1c4948ae23a3df">SetModelAssetPath</a> (const AZStd::string &amp;path)=0</td></tr>
+<tr class="memdesc:a359ba324875ebe22bf1c4948ae23a3df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the model used by the component via its path. <br /></td></tr>
 <tr class="separator:a359ba324875ebe22bf1c4948ae23a3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa824df8fad82d5d718dae553c196a009"><td class="memItemLeft" align="right" valign="top"><a id="aa824df8fad82d5d718dae553c196a009"></a>
-virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetModelAssetPath</b> () const =0</td></tr>
+virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#aa824df8fad82d5d718dae553c196a009">GetModelAssetPath</a> () const =0</td></tr>
+<tr class="memdesc:aa824df8fad82d5d718dae553c196a009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path for the model used by the component. <br /></td></tr>
 <tr class="separator:aa824df8fad82d5d718dae553c196a009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66d4c7fc891db2af72803f003bff3718"><td class="memItemLeft" align="right" valign="top"><a id="a66d4c7fc891db2af72803f003bff3718"></a>
-virtual Data::Instance&lt; RPI::Model &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetModel</b> () const =0</td></tr>
+virtual Data::Instance&lt; RPI::Model &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a66d4c7fc891db2af72803f003bff3718">GetModel</a> () const =0</td></tr>
+<tr class="memdesc:a66d4c7fc891db2af72803f003bff3718"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the model instance used by the component. <br /></td></tr>
 <tr class="separator:a66d4c7fc891db2af72803f003bff3718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a330fba050ef4772ee7d120145f11d7dd"><td class="memItemLeft" align="right" valign="top"><a id="a330fba050ef4772ee7d120145f11d7dd"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSortKey</b> (RHI::DrawItemSortKey sortKey)=0</td></tr>
+<tr class="memitem:a330fba050ef4772ee7d120145f11d7dd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a330fba050ef4772ee7d120145f11d7dd">SetSortKey</a> (RHI::DrawItemSortKey sortKey)=0</td></tr>
 <tr class="separator:a330fba050ef4772ee7d120145f11d7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbc777e62177838301fc2991cd067bd7"><td class="memItemLeft" align="right" valign="top"><a id="abbc777e62177838301fc2991cd067bd7"></a>
-virtual RHI::DrawItemSortKey&#160;</td><td class="memItemRight" valign="bottom"><b>GetSortKey</b> () const =0</td></tr>
+virtual RHI::DrawItemSortKey&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#abbc777e62177838301fc2991cd067bd7">GetSortKey</a> () const =0</td></tr>
+<tr class="memdesc:abbc777e62177838301fc2991cd067bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sort key for the component. <br /></td></tr>
 <tr class="separator:abbc777e62177838301fc2991cd067bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75e3b952a22150f49d68f3ec669c7550"><td class="memItemLeft" align="right" valign="top"><a id="a75e3b952a22150f49d68f3ec669c7550"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLodType</b> (RPI::Cullable::LodType lodType)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a75e3b952a22150f49d68f3ec669c7550">SetLodType</a> (RPI::Cullable::LodType lodType)=0</td></tr>
+<tr class="memdesc:a75e3b952a22150f49d68f3ec669c7550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the LodType, which determines how Lods will be selected during rendering. <br /></td></tr>
 <tr class="separator:a75e3b952a22150f49d68f3ec669c7550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e5a39bdea86c8adea0298e999ab5df0"><td class="memItemLeft" align="right" valign="top"><a id="a4e5a39bdea86c8adea0298e999ab5df0"></a>
-virtual RPI::Cullable::LodType&#160;</td><td class="memItemRight" valign="bottom"><b>GetLodType</b> () const =0</td></tr>
+virtual RPI::Cullable::LodType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a4e5a39bdea86c8adea0298e999ab5df0">GetLodType</a> () const =0</td></tr>
+<tr class="memdesc:a4e5a39bdea86c8adea0298e999ab5df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the LodType. <br /></td></tr>
 <tr class="separator:a4e5a39bdea86c8adea0298e999ab5df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77a2eb3fa195da577705f490cec36d7b"><td class="memItemLeft" align="right" valign="top"><a id="a77a2eb3fa195da577705f490cec36d7b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLodOverride</b> (RPI::Cullable::LodOverride lodOverride)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a77a2eb3fa195da577705f490cec36d7b">SetLodOverride</a> (RPI::Cullable::LodOverride lodOverride)=0</td></tr>
+<tr class="memdesc:a77a2eb3fa195da577705f490cec36d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Lod that is rendered for all views when used with LodType::SpecificLod. <br /></td></tr>
 <tr class="separator:a77a2eb3fa195da577705f490cec36d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaef18b8a01e16ee4b04691de7ead8a49"><td class="memItemLeft" align="right" valign="top"><a id="aaef18b8a01e16ee4b04691de7ead8a49"></a>
-virtual RPI::Cullable::LodOverride&#160;</td><td class="memItemRight" valign="bottom"><b>GetLodOverride</b> () const =0</td></tr>
+virtual RPI::Cullable::LodOverride&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#aaef18b8a01e16ee4b04691de7ead8a49">GetLodOverride</a> () const =0</td></tr>
+<tr class="memdesc:aaef18b8a01e16ee4b04691de7ead8a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the LodOverride. <br /></td></tr>
 <tr class="separator:aaef18b8a01e16ee4b04691de7ead8a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23b51b728ba2f542a1cd036ea2ebaca1"><td class="memItemLeft" align="right" valign="top"><a id="a23b51b728ba2f542a1cd036ea2ebaca1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMinimumScreenCoverage</b> (float minimumScreenCoverage)=0</td></tr>
+<tr class="memitem:a23b51b728ba2f542a1cd036ea2ebaca1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a23b51b728ba2f542a1cd036ea2ebaca1">SetMinimumScreenCoverage</a> (float minimumScreenCoverage)=0</td></tr>
 <tr class="separator:a23b51b728ba2f542a1cd036ea2ebaca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad58617db537fa3b2c1003c0b1a7cf095"><td class="memItemLeft" align="right" valign="top"><a id="ad58617db537fa3b2c1003c0b1a7cf095"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetMinimumScreenCoverage</b> () const =0</td></tr>
+virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#ad58617db537fa3b2c1003c0b1a7cf095">GetMinimumScreenCoverage</a> () const =0</td></tr>
+<tr class="memdesc:ad58617db537fa3b2c1003c0b1a7cf095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum screen coverage. <br /></td></tr>
 <tr class="separator:ad58617db537fa3b2c1003c0b1a7cf095"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a133e0c04df09e2a982ed3244a9848db6"><td class="memItemLeft" align="right" valign="top"><a id="a133e0c04df09e2a982ed3244a9848db6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetQualityDecayRate</b> (float qualityDecayRate)=0</td></tr>
+<tr class="memitem:a133e0c04df09e2a982ed3244a9848db6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a133e0c04df09e2a982ed3244a9848db6">SetQualityDecayRate</a> (float qualityDecayRate)=0</td></tr>
 <tr class="separator:a133e0c04df09e2a982ed3244a9848db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87b9a29b5f7dddddb8dfcfad7a145505"><td class="memItemLeft" align="right" valign="top"><a id="a87b9a29b5f7dddddb8dfcfad7a145505"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetQualityDecayRate</b> () const =0</td></tr>
+virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a87b9a29b5f7dddddb8dfcfad7a145505">GetQualityDecayRate</a> () const =0</td></tr>
+<tr class="memdesc:a87b9a29b5f7dddddb8dfcfad7a145505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the quality decay rate. <br /></td></tr>
 <tr class="separator:a87b9a29b5f7dddddb8dfcfad7a145505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a182fe3b8aafef42dc46f951f9da9fc46"><td class="memItemLeft" align="right" valign="top"><a id="a182fe3b8aafef42dc46f951f9da9fc46"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVisibility</b> (bool visible)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a182fe3b8aafef42dc46f951f9da9fc46">SetVisibility</a> (bool visible)=0</td></tr>
+<tr class="memdesc:a182fe3b8aafef42dc46f951f9da9fc46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the model should be visible (true) or hidden (false). <br /></td></tr>
 <tr class="separator:a182fe3b8aafef42dc46f951f9da9fc46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73f9af47d07fd000a9be8b9fa6662118"><td class="memItemLeft" align="right" valign="top"><a id="a73f9af47d07fd000a9be8b9fa6662118"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetVisibility</b> () const =0</td></tr>
+<tr class="memitem:a73f9af47d07fd000a9be8b9fa6662118"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a73f9af47d07fd000a9be8b9fa6662118">GetVisibility</a> () const =0</td></tr>
 <tr class="separator:a73f9af47d07fd000a9be8b9fa6662118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0591687dffec983c51260f6dc9b053c"><td class="memItemLeft" align="right" valign="top"><a id="aa0591687dffec983c51260f6dc9b053c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#aa0591687dffec983c51260f6dc9b053c">SetRayTracingEnabled</a> (bool enabled)=0</td></tr>
+<tr class="memdesc:aa0591687dffec983c51260f6dc9b053c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables (true) or disables (false) ray tracing for this model. <br /></td></tr>
+<tr class="separator:aa0591687dffec983c51260f6dc9b053c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a987a437a66d8f0e7069138c413671abf"><td class="memItemLeft" align="right" valign="top"><a id="a987a437a66d8f0e7069138c413671abf"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a987a437a66d8f0e7069138c413671abf">GetRayTracingEnabled</a> () const =0</td></tr>
+<tr class="memdesc:a987a437a66d8f0e7069138c413671abf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether ray tracing is enabled (true) or disabled (false) for this model. <br /></td></tr>
+<tr class="separator:a987a437a66d8f0e7069138c413671abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f9ae196352f3911d0cba901f22f0689"><td class="memItemLeft" align="right" valign="top"><a id="a1f9ae196352f3911d0cba901f22f0689"></a>
-virtual AZ::Aabb&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldBounds</b> ()=0</td></tr>
+virtual AZ::Aabb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a1f9ae196352f3911d0cba901f22f0689">GetWorldBounds</a> ()=0</td></tr>
+<tr class="memdesc:a1f9ae196352f3911d0cba901f22f0689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the axis-aligned bounding box for the model at its world position. <br /></td></tr>
 <tr class="separator:a1f9ae196352f3911d0cba901f22f0689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c66c46fb13e2e6f62d78a31dcd85f4e"><td class="memItemLeft" align="right" valign="top"><a id="a1c66c46fb13e2e6f62d78a31dcd85f4e"></a>
-virtual AZ::Aabb&#160;</td><td class="memItemRight" valign="bottom"><b>GetLocalBounds</b> ()=0</td></tr>
+virtual AZ::Aabb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a1c66c46fb13e2e6f62d78a31dcd85f4e">GetLocalBounds</a> ()=0</td></tr>
+<tr class="memdesc:a1c66c46fb13e2e6f62d78a31dcd85f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the axis-aligned bounding box in model space. <br /></td></tr>
 <tr class="separator:a1c66c46fb13e2e6f62d78a31dcd85f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>MeshComponentRequestBus provides an interface to request operations on a MeshComponent </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a73f9af47d07fd000a9be8b9fa6662118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73f9af47d07fd000a9be8b9fa6662118">&#9670;&nbsp;</a></span>GetVisibility()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AZ::Render::MeshComponentRequests::GetVisibility </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the visibility. If the model is visible (true), that only means that it has not been explicitly hidden. The model may still not be visible by any views being rendered. If it is not visible (false), it will not be rendered by any views, regardless of whether or not the model is in the view frustum. </p>
+
+</div>
+</div>
+<a id="a23b51b728ba2f542a1cd036ea2ebaca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23b51b728ba2f542a1cd036ea2ebaca1">&#9670;&nbsp;</a></span>SetMinimumScreenCoverage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::MeshComponentRequests::SetMinimumScreenCoverage </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>minimumScreenCoverage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the minimum screen coverage. the minimum proportion of screen area an entity takes up when used with LodType::ScreenCoverage. If the entity is smaller than the minimum coverage, it is culled. </p>
+
+</div>
+</div>
+<a id="a133e0c04df09e2a982ed3244a9848db6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a133e0c04df09e2a982ed3244a9848db6">&#9670;&nbsp;</a></span>SetQualityDecayRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::MeshComponentRequests::SetQualityDecayRate </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>qualityDecayRate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the quality rate at which mesh quality decays. (0 -&gt; always stay highest quality lod, 1 -&gt; quality falls off to lowest quality lod immediately). </p>
+
+</div>
+</div>
+<a id="a330fba050ef4772ee7d120145f11d7dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a330fba050ef4772ee7d120145f11d7dd">&#9670;&nbsp;</a></span>SetSortKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::MeshComponentRequests::SetSortKey </td>
+          <td>(</td>
+          <td class="paramtype">RHI::DrawItemSortKey&#160;</td>
+          <td class="paramname"><em>sortKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the sort key for the component. Transparent models are drawn in order first by sort key, then depth. Use this to force certain transparent models to draw before or after others. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/AtomLyIntegration/CommonFeatures/Code/Include/AtomLyIntegration/CommonFeatures/Mesh/MeshComponentBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:33 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:27 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

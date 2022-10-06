@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -108,10 +108,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddShaderInput</b> (c
 <tr class="separator:a4feb2e17dde619b9543fbfe6adf8e872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add1e90bd0eebfe9391c50898d5b627bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html#add1e90bd0eebfe9391c50898d5b627bc">SetBindingSlot</a> (uint32_t bindingSlot)</td></tr>
 <tr class="separator:add1e90bd0eebfe9391c50898d5b627bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a417a492fdad4d4fefa3c1b1616582a38"><td class="memItemLeft" align="right" valign="top"><a id="a417a492fdad4d4fefa3c1b1616582a38"></a>
-AZStd::array_view&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_static_sampler_descriptor.html">ShaderInputStaticSamplerDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html#a417a492fdad4d4fefa3c1b1616582a38">GetStaticSamplers</a> () const</td></tr>
-<tr class="memdesc:a417a492fdad4d4fefa3c1b1616582a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the full list of static samplers descriptors declared on the layout. <br /></td></tr>
-<tr class="separator:a417a492fdad4d4fefa3c1b1616582a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a517f4d65d30c8201cef00963e2390ed5"><td class="memItemLeft" align="right" valign="top"><a id="a517f4d65d30c8201cef00963e2390ed5"></a>
+AZStd::span&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_static_sampler_descriptor.html">ShaderInputStaticSamplerDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html#a517f4d65d30c8201cef00963e2390ed5">GetStaticSamplers</a> () const</td></tr>
+<tr class="memdesc:a517f4d65d30c8201cef00963e2390ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the full list of static samplers descriptors declared on the layout. <br /></td></tr>
+<tr class="separator:a517f4d65d30c8201cef00963e2390ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f1d74038d3310c138bf120e2f208963"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputBufferIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html#a2f1d74038d3310c138bf120e2f208963">FindShaderInputBufferIndex</a> (const Name &amp;name) const</td></tr>
 <tr class="separator:a2f1d74038d3310c138bf120e2f208963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad33f36fefe56822132c982ded4f6c9d2"><td class="memItemLeft" align="right" valign="top"><a id="ad33f36fefe56822132c982ded4f6c9d2"></a>
@@ -146,23 +146,23 @@ const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_buffer_unbounded_
 <tr class="memitem:a5d3ef72885b074d4f1b4f7cf25dc3ca6"><td class="memItemLeft" align="right" valign="top"><a id="a5d3ef72885b074d4f1b4f7cf25dc3ca6"></a>
 const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_image_unbounded_array_descriptor.html">ShaderInputImageUnboundedArrayDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetShaderInput</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputImageUnboundedArrayIndex</a> index) const</td></tr>
 <tr class="separator:a5d3ef72885b074d4f1b4f7cf25dc3ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98158978370b7067cf1c28f19bb0bdce"><td class="memItemLeft" align="right" valign="top">AZStd::array_view&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_buffer_descriptor.html">ShaderInputBufferDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html#a98158978370b7067cf1c28f19bb0bdce">GetShaderInputListForBuffers</a> () const</td></tr>
-<tr class="separator:a98158978370b7067cf1c28f19bb0bdce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a634f06eb705331ab73e90c0797c26d06"><td class="memItemLeft" align="right" valign="top"><a id="a634f06eb705331ab73e90c0797c26d06"></a>
-AZStd::array_view&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_image_descriptor.html">ShaderInputImageDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetShaderInputListForImages</b> () const</td></tr>
-<tr class="separator:a634f06eb705331ab73e90c0797c26d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04840853542de73a7e5617620233af81"><td class="memItemLeft" align="right" valign="top"><a id="a04840853542de73a7e5617620233af81"></a>
-AZStd::array_view&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_sampler_descriptor.html">ShaderInputSamplerDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetShaderInputListForSamplers</b> () const</td></tr>
-<tr class="separator:a04840853542de73a7e5617620233af81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb8cfc4db011351c5b895b5ec0095c7f"><td class="memItemLeft" align="right" valign="top"><a id="adb8cfc4db011351c5b895b5ec0095c7f"></a>
-AZStd::array_view&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_constant_descriptor.html">ShaderInputConstantDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetShaderInputListForConstants</b> () const</td></tr>
-<tr class="separator:adb8cfc4db011351c5b895b5ec0095c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64f38b91c931f46d7bff9637511c5385"><td class="memItemLeft" align="right" valign="top"><a id="a64f38b91c931f46d7bff9637511c5385"></a>
-AZStd::array_view&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_buffer_unbounded_array_descriptor.html">ShaderInputBufferUnboundedArrayDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetShaderInputListForBufferUnboundedArrays</b> () const</td></tr>
-<tr class="separator:a64f38b91c931f46d7bff9637511c5385"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a479e3c15e658c4d8166dedb0ada69089"><td class="memItemLeft" align="right" valign="top"><a id="a479e3c15e658c4d8166dedb0ada69089"></a>
-AZStd::array_view&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_image_unbounded_array_descriptor.html">ShaderInputImageUnboundedArrayDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetShaderInputListForImageUnboundedArrays</b> () const</td></tr>
-<tr class="separator:a479e3c15e658c4d8166dedb0ada69089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218c45eba4201ce334c7f3fa55d47c47"><td class="memItemLeft" align="right" valign="top">AZStd::span&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_buffer_descriptor.html">ShaderInputBufferDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html#a218c45eba4201ce334c7f3fa55d47c47">GetShaderInputListForBuffers</a> () const</td></tr>
+<tr class="separator:a218c45eba4201ce334c7f3fa55d47c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e4f13714b7a82898d8ddbc25659d32f"><td class="memItemLeft" align="right" valign="top"><a id="a0e4f13714b7a82898d8ddbc25659d32f"></a>
+AZStd::span&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_image_descriptor.html">ShaderInputImageDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetShaderInputListForImages</b> () const</td></tr>
+<tr class="separator:a0e4f13714b7a82898d8ddbc25659d32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a606f9cd3dd467dcb928307b8d55db528"><td class="memItemLeft" align="right" valign="top"><a id="a606f9cd3dd467dcb928307b8d55db528"></a>
+AZStd::span&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_sampler_descriptor.html">ShaderInputSamplerDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetShaderInputListForSamplers</b> () const</td></tr>
+<tr class="separator:a606f9cd3dd467dcb928307b8d55db528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a383321b403b11402b5bd9ecce135b7f5"><td class="memItemLeft" align="right" valign="top"><a id="a383321b403b11402b5bd9ecce135b7f5"></a>
+AZStd::span&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_constant_descriptor.html">ShaderInputConstantDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetShaderInputListForConstants</b> () const</td></tr>
+<tr class="separator:a383321b403b11402b5bd9ecce135b7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29949d49dc4c17d48bb6ae54a4519b59"><td class="memItemLeft" align="right" valign="top"><a id="a29949d49dc4c17d48bb6ae54a4519b59"></a>
+AZStd::span&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_buffer_unbounded_array_descriptor.html">ShaderInputBufferUnboundedArrayDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetShaderInputListForBufferUnboundedArrays</b> () const</td></tr>
+<tr class="separator:a29949d49dc4c17d48bb6ae54a4519b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0647597bce90f1325447f5228a7a55cd"><td class="memItemLeft" align="right" valign="top"><a id="a0647597bce90f1325447f5228a7a55cd"></a>
+AZStd::span&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_image_unbounded_array_descriptor.html">ShaderInputImageUnboundedArrayDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetShaderInputListForImageUnboundedArrays</b> () const</td></tr>
+<tr class="separator:a0647597bce90f1325447f5228a7a55cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fb34df2ada2d79205e2484785241a6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_interval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html#a5fb34df2ada2d79205e2484785241a6d">GetGroupInterval</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputBufferIndex</a> inputIndex) const</td></tr>
 <tr class="separator:a5fb34df2ada2d79205e2484785241a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a070837d0f9c3471cd0c7ffce56be844b"><td class="memItemLeft" align="right" valign="top"><a id="a070837d0f9c3471cd0c7ffce56be844b"></a>
@@ -410,14 +410,14 @@ static Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group
 
 </div>
 </div>
-<a id="a98158978370b7067cf1c28f19bb0bdce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98158978370b7067cf1c28f19bb0bdce">&#9670;&nbsp;</a></span>GetShaderInputListForBuffers()</h2>
+<a id="a218c45eba4201ce334c7f3fa55d47c47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a218c45eba4201ce334c7f3fa55d47c47">&#9670;&nbsp;</a></span>GetShaderInputListForBuffers()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">AZStd::array_view&lt;<a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_buffer_descriptor.html">ShaderInputBufferDescriptor</a>&gt; AZ::RHI::ShaderResourceGroupLayout::GetShaderInputListForBuffers </td>
+          <td class="memname">AZStd::span&lt;const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_buffer_descriptor.html">ShaderInputBufferDescriptor</a>&gt; AZ::RHI::ShaderResourceGroupLayout::GetShaderInputListForBuffers </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -602,7 +602,7 @@ static Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:27 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:21 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

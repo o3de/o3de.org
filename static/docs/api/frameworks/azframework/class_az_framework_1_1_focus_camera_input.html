@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -79,10 +79,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9a50ec100fd4fd8aae0dafea95606bd"><td class="memItemLeft" align="right" valign="top"><a id="ad9a50ec100fd4fd8aae0dafea95606bd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>FocusCameraInput</b> (const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;focusChannelId, FocusOffsetFn offsetFn)</td></tr>
 <tr class="separator:ad9a50ec100fd4fd8aae0dafea95606bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab734d7ab3d265b5cb178c12046f47b59"><td class="memItemLeft" align="right" valign="top"><a id="ab734d7ab3d265b5cb178c12046f47b59"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_focus_camera_input.html#ab734d7ab3d265b5cb178c12046f47b59">HandleEvents</a> (const <a class="el" href="namespace_az_framework.html#a4a87e38f15ae672e5f11c0e70fb152f0">InputEvent</a> &amp;event, const <a class="el" href="struct_az_framework_1_1_screen_vector.html">ScreenVector</a> &amp;cursorDelta, float scrollDelta) override</td></tr>
-<tr class="memdesc:ab734d7ab3d265b5cb178c12046f47b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respond to input events to transition a camera input to active, handle input while running, and restore to idle when input ends. <br /></td></tr>
-<tr class="separator:ab734d7ab3d265b5cb178c12046f47b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62899d2c6a3353d0a6065c0e39d92cc9"><td class="memItemLeft" align="right" valign="top"><a id="a62899d2c6a3353d0a6065c0e39d92cc9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_focus_camera_input.html#a62899d2c6a3353d0a6065c0e39d92cc9">HandleEvents</a> (const <a class="el" href="struct_az_framework_1_1_input_state.html">InputState</a> &amp;state, const <a class="el" href="struct_az_framework_1_1_screen_vector.html">ScreenVector</a> &amp;cursorDelta, float scrollDelta) override</td></tr>
+<tr class="memdesc:a62899d2c6a3353d0a6065c0e39d92cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respond to input events to transition a camera input to active, handle input while running, and restore to idle when input ends. <br /></td></tr>
+<tr class="separator:a62899d2c6a3353d0a6065c0e39d92cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae008af661df00d4863f4ff63ee840c60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_az_framework_1_1_camera.html">Camera</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_focus_camera_input.html#ae008af661df00d4863f4ff63ee840c60">StepCamera</a> (const <a class="el" href="struct_az_framework_1_1_camera.html">Camera</a> &amp;targetCamera, const <a class="el" href="struct_az_framework_1_1_screen_vector.html">ScreenVector</a> &amp;cursorDelta, float scrollDelta, float deltaTime) override</td></tr>
 <tr class="separator:ae008af661df00d4863f4ff63ee840c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f7ecb7e85f360b10d5b883d1c82888f"><td class="memItemLeft" align="right" valign="top"><a id="a1f7ecb7e85f360b10d5b883d1c82888f"></a>
@@ -111,6 +111,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginActivation</b> (
 <tr class="memitem:a89a4d844a38b39d4b8093195cb7a0590 inherit pub_methods_class_az_framework_1_1_camera_input"><td class="memItemLeft" align="right" valign="top"><a id="a89a4d844a38b39d4b8093195cb7a0590"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>EndActivation</b> ()</td></tr>
 <tr class="separator:a89a4d844a38b39d4b8093195cb7a0590 inherit pub_methods_class_az_framework_1_1_camera_input"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafdb5f825a67f6a7fe161edf8e2608c4 inherit pub_methods_class_az_framework_1_1_camera_input"><td class="memItemLeft" align="right" valign="top"><a id="aafdb5f825a67f6a7fe161edf8e2608c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelActivation</b> ()</td></tr>
+<tr class="separator:aafdb5f825a67f6a7fe161edf8e2608c4 inherit pub_methods_class_az_framework_1_1_camera_input"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94821433b6297aa462a1d5283bba56af inherit pub_methods_class_az_framework_1_1_camera_input"><td class="memItemLeft" align="right" valign="top"><a id="a94821433b6297aa462a1d5283bba56af"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ContinueActivation</b> ()</td></tr>
 <tr class="separator:a94821433b6297aa462a1d5283bba56af inherit pub_methods_class_az_framework_1_1_camera_input"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,7 +200,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:11 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

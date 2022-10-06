@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -68,9 +68,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:a77a6f8f00b40b58a1a7bef4294adebec"><td class="memItemLeft" align="right" valign="top"><a id="a77a6f8f00b40b58a1a7bef4294adebec"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>StatIdType</b> = <a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a></td></tr>
 <tr class="separator:a77a6f8f00b40b58a1a7bef4294adebec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5bb7a82ebdf6f201817eb88dca7b755"><td class="memItemLeft" align="right" valign="top"><a id="ad5bb7a82ebdf6f201817eb88dca7b755"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>StatisticalProfilerType</b> = <a class="el" href="class_a_z_1_1_statistics_1_1_statistical_profiler.html">StatisticalProfiler</a>&lt; <a class="el" href="class_a_z_1_1_crc32.html">StatIdType</a>, <a class="el" href="class_a_z_std_1_1shared__mutex.html">AZStd::shared_spin_mutex</a> &gt;</td></tr>
-<tr class="separator:ad5bb7a82ebdf6f201817eb88dca7b755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16e712b875604d3778e98ab523f564fb"><td class="memItemLeft" align="right" valign="top"><a id="a16e712b875604d3778e98ab523f564fb"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>StatisticalProfilerType</b> = <a class="el" href="class_a_z_1_1_statistics_1_1_statistical_profiler.html">StatisticalProfiler</a>&lt; <a class="el" href="class_a_z_1_1_crc32.html">StatIdType</a>, <a class="el" href="class_a_z_std_1_1shared__mutex.html">AZStd::shared_mutex</a> &gt;</td></tr>
+<tr class="separator:a16e712b875604d3778e98ab523f564fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -98,6 +98,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ActivateProfiler</b> 
 <tr class="memitem:a529116464f27ae5551888f0ac3aefa29"><td class="memItemLeft" align="right" valign="top"><a id="a529116464f27ae5551888f0ac3aefa29"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>PushSample</b> (StatisticalProfilerId id, const <a class="el" href="class_a_z_1_1_crc32.html">StatIdType</a> &amp;statId, double value)</td></tr>
 <tr class="separator:a529116464f27ae5551888f0ac3aefa29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4080f37c4dc17f771017ee4110ea77b3"><td class="memItemLeft" align="right" valign="top"><a id="a4080f37c4dc17f771017ee4110ea77b3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllStatistics</b> (<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_statistics_1_1_named_running_statistic.html">NamedRunningStatistic</a> * &gt; &amp;stats)</td></tr>
+<tr class="separator:a4080f37c4dc17f771017ee4110ea77b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6423d8b65870f5c8e4b8a61290726595"><td class="memItemLeft" align="right" valign="top"><a id="a6423d8b65870f5c8e4b8a61290726595"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllStatisticsOfUnits</b> (<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_statistics_1_1_named_running_statistic.html">NamedRunningStatistic</a> * &gt; &amp;stats, const char *units)</td></tr>
+<tr class="separator:a6423d8b65870f5c8e4b8a61290726595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae625e07df04aefd1b17ed2f81b0946ef"><td class="memItemLeft" align="right" valign="top"><a id="ae625e07df04aefd1b17ed2f81b0946ef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetAllStatistics</b> ()</td></tr>
+<tr class="separator:ae625e07df04aefd1b17ed2f81b0946ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -117,7 +126,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TimedScope</b></td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:49 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:33 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

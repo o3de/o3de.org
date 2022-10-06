@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -51,7 +51,7 @@ $(function() {
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_property_editor_g_u_i_messages-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AzToolsFramework::PropertyEditorGUIMessages Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">AzToolsFramework::PropertyEditorGUIMessages Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -65,38 +65,62 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Bus</b> = AZ::EBus&l
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1f31eb80f2e330bfeeb9b609cf8be6d8"><td class="memItemLeft" align="right" valign="top"><a id="a1f31eb80f2e330bfeeb9b609cf8be6d8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RequestWrite</b> (QWidget *editorGUI)=0</td></tr>
-<tr class="separator:a1f31eb80f2e330bfeeb9b609cf8be6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a459d0cd4e7c79645ccaaa0c05ef587e7"><td class="memItemLeft" align="right" valign="top"><a id="a459d0cd4e7c79645ccaaa0c05ef587e7"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RequestRefresh</b> (PropertyModificationRefreshLevel)=0</td></tr>
-<tr class="separator:a459d0cd4e7c79645ccaaa0c05ef587e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7cd03fb14b0c4743ecbaa2229f240f9"><td class="memItemLeft" align="right" valign="top"><a id="af7cd03fb14b0c4743ecbaa2229f240f9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddElementsToParentContainer</b> (QWidget *editorGUI, size_t numElements, const InstanceDataNode::FillDataClassCallback &amp;fillDataCallback)=0</td></tr>
-<tr class="separator:af7cd03fb14b0c4743ecbaa2229f240f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52a5dab1af5ca51c3fd0f8125ac2102e"><td class="memItemLeft" align="right" valign="top"><a id="a52a5dab1af5ca51c3fd0f8125ac2102e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RequestPropertyNotify</b> (QWidget *editorGUI)=0</td></tr>
-<tr class="separator:a52a5dab1af5ca51c3fd0f8125ac2102e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a902c9bba439e2fbd8cf4ca099ad58741"><td class="memItemLeft" align="right" valign="top"><a id="a902c9bba439e2fbd8cf4ca099ad58741"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEditingFinished</b> (QWidget *editorGUI)=0</td></tr>
-<tr class="separator:a902c9bba439e2fbd8cf4ca099ad58741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f5cc39ff66ad7f7ede084f033a91f65"><td class="memItemLeft" align="right" valign="top"><a id="a6f5cc39ff66ad7f7ede084f033a91f65"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RequestWrite</b> ([[maybe_unused]] QWidget *editorGUI)</td></tr>
+<tr class="separator:a6f5cc39ff66ad7f7ede084f033a91f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa716c7c7e28c2d7f731b62b1215069"><td class="memItemLeft" align="right" valign="top"><a id="abfa716c7c7e28c2d7f731b62b1215069"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RequestRefresh</b> (PropertyModificationRefreshLevel)</td></tr>
+<tr class="separator:abfa716c7c7e28c2d7f731b62b1215069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc4c173b6bf7ed59e0cca0654538f12"><td class="memItemLeft" align="right" valign="top"><a id="a4dc4c173b6bf7ed59e0cca0654538f12"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddElementsToParentContainer</b> ([[maybe_unused]] QWidget *editorGUI, [[maybe_unused]] size_t numElements, [[maybe_unused]] const InstanceDataNode::FillDataClassCallback &amp;fillDataCallback)</td></tr>
+<tr class="separator:a4dc4c173b6bf7ed59e0cca0654538f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec059d86351afc53d6e9677ffbf81df7"><td class="memItemLeft" align="right" valign="top"><a id="aec059d86351afc53d6e9677ffbf81df7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RequestPropertyNotify</b> ([[maybe_unused]] QWidget *editorGUI)</td></tr>
+<tr class="separator:aec059d86351afc53d6e9677ffbf81df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c90cd4c01d706b087999843f42e7fa0"><td class="memItemLeft" align="right" valign="top"><a id="a8c90cd4c01d706b087999843f42e7fa0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEditingFinished</b> ([[maybe_unused]] QWidget *editorGUI)</td></tr>
+<tr class="separator:a8c90cd4c01d706b087999843f42e7fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a27f9b46e8cc6ee0a73222d47822aaccf"><td class="memItemLeft" align="right" valign="top"><a id="a27f9b46e8cc6ee0a73222d47822aaccf"></a>
-static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>AddressPolicy</b> = AZ::EBusAddressPolicy::Single</td></tr>
+<tr class="memitem:a27f9b46e8cc6ee0a73222d47822aaccf"><td class="memItemLeft" align="right" valign="top">static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>AddressPolicy</b></td></tr>
 <tr class="separator:a27f9b46e8cc6ee0a73222d47822aaccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e1a470e8315af59b3b5f1fdf949dbf0"><td class="memItemLeft" align="right" valign="top"><a id="a7e1a470e8315af59b3b5f1fdf949dbf0"></a>
 static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>HandlerPolicy</b> = AZ::EBusHandlerPolicy::Multiple</td></tr>
 <tr class="separator:a7e1a470e8315af59b3b5f1fdf949dbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a27f9b46e8cc6ee0a73222d47822aaccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27f9b46e8cc6ee0a73222d47822aaccf">&#9670;&nbsp;</a></span>AddressPolicy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const AZ::EBusAddressPolicy AzToolsFramework::PropertyEditorGUIMessages::AddressPolicy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">            AZ::EBusAddressPolicy::Single</div>
+</div><!-- fragment -->
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/UI/PropertyEditor/PropertyEditorAPI.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:37 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:31 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

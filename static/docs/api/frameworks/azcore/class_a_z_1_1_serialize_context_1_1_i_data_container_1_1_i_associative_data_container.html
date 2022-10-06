@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -69,6 +69,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ae0aa709a938cfac4d2e33126613974ff"><td class="memItemLeft" align="right" valign="top"><a id="ae0aa709a938cfac4d2e33126613974ff"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (<a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container_1_1_i_associative_data_container.html">IAssociativeDataContainer</a>, &quot;{58CF6250-6B0F-4A25-9864-25A64EB55DB1}&quot;)</td></tr>
+<tr class="separator:ae0aa709a938cfac4d2e33126613974ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9346e8b68f79b5ef977c9ea064a161ac"><td class="memItemLeft" align="right" valign="top"><a id="a9346e8b68f79b5ef977c9ea064a161ac"></a>
 <a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container_1_1_i_associative_data_container.html#a9346e8b68f79b5ef977c9ea064a161ac">CreateKey</a> ()</td></tr>
 <tr class="memdesc:a9346e8b68f79b5ef977c9ea064a161ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve a key that can be used for associative container operations. <br /></td></tr>
@@ -81,6 +84,10 @@ virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container_1_1_i_associative_data_container.html#a969d01961120731e4683adfa9fbd4548">SetElementKey</a> (void *element, void *key)=0</td></tr>
 <tr class="memdesc:a969d01961120731e4683adfa9fbd4548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates element with key (for associative containers). Not used for serialization. <br /></td></tr>
 <tr class="separator:a969d01961120731e4683adfa9fbd4548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088f7a6aa77dc055178eaece588eefa6"><td class="memItemLeft" align="right" valign="top"><a id="a088f7a6aa77dc055178eaece588eefa6"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container_1_1_i_associative_data_container.html#a088f7a6aa77dc055178eaece588eefa6">GetValueByKey</a> (void *instance, const void *key)=0</td></tr>
+<tr class="memdesc:a088f7a6aa77dc055178eaece588eefa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mapped value's address by its key. If there is no mapped value (like in a set&lt;&gt;) the value returned is the key itself. <br /></td></tr>
+<tr class="separator:a088f7a6aa77dc055178eaece588eefa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -101,7 +108,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:45 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:29 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

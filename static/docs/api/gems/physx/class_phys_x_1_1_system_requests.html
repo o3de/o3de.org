@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine PhysX Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,6 +46,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_phys_x_1_1_system_requests-members.html">List of all members</a>  </div>
@@ -58,6 +59,12 @@ $(function() {
 
 <p>Inherits EBusTraits.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a97256db3c3ed893ad1515a9b44ccb95e"><td class="memItemLeft" align="right" valign="top"><a id="a97256db3c3ed893ad1515a9b44ccb95e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>MutexType</b> = AZStd::recursive_mutex</td></tr>
+<tr class="separator:a97256db3c3ed893ad1515a9b44ccb95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acddbfa2697af71b9b4541c62669de3c5"><td class="memItemLeft" align="right" valign="top">virtual physx::PxConvexMesh *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_system_requests.html#acddbfa2697af71b9b4541c62669de3c5">CreateConvexMesh</a> (const void *vertices, AZ::u32 vertexNum, AZ::u32 vertexStride)=0</td></tr>
@@ -66,8 +73,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a97d585cf688e8ca611213c4a7768c291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89e8603f87bfdadc2e1c031f9f2aef11"><td class="memItemLeft" align="right" valign="top">virtual physx::PxTriangleMesh *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_system_requests.html#a89e8603f87bfdadc2e1c031f9f2aef11">CreateTriangleMeshFromCooked</a> (const void *cookedMeshData, AZ::u32 bufferSize)=0</td></tr>
 <tr class="separator:a89e8603f87bfdadc2e1c031f9f2aef11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12539bcdc21fa739bd588f6c18e729cd"><td class="memItemLeft" align="right" valign="top">virtual physx::PxHeightField *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_system_requests.html#a12539bcdc21fa739bd588f6c18e729cd">CreateHeightField</a> (const physx::PxHeightFieldSample *samples, AZ::u32 numRows, AZ::u32 numColumns)=0</td></tr>
-<tr class="separator:a12539bcdc21fa739bd588f6c18e729cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e0ce46fe87d01383ec05f13cbed687d"><td class="memItemLeft" align="right" valign="top">virtual physx::PxHeightField *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_system_requests.html#a0e0ce46fe87d01383ec05f13cbed687d">CreateHeightField</a> (const physx::PxHeightFieldSample *samples, size_t numColumns, size_t numRows)=0</td></tr>
+<tr class="separator:a0e0ce46fe87d01383ec05f13cbed687d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74fccb2ceff67f38e8dc77bf16a4621d"><td class="memItemLeft" align="right" valign="top">virtual physx::PxFilterData&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_system_requests.html#a74fccb2ceff67f38e8dc77bf16a4621d">CreateFilterData</a> (const AzPhysics::CollisionLayer &amp;layer, const AzPhysics::CollisionGroup &amp;group)=0</td></tr>
 <tr class="separator:a74fccb2ceff67f38e8dc77bf16a4621d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a550ad6fd868177fabf997f348e48c903"><td class="memItemLeft" align="right" valign="top">virtual physx::PxCooking *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_system_requests.html#a550ad6fd868177fabf997f348e48c903">GetCooking</a> ()=0</td></tr>
@@ -223,8 +230,8 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a12539bcdc21fa739bd588f6c18e729cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12539bcdc21fa739bd588f6c18e729cd">&#9670;&nbsp;</a></span>CreateHeightField()</h2>
+<a id="a0e0ce46fe87d01383ec05f13cbed687d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e0ce46fe87d01383ec05f13cbed687d">&#9670;&nbsp;</a></span>CreateHeightField()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,14 +248,14 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">AZ::u32&#160;</td>
-          <td class="paramname"><em>numRows</em>, </td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numColumns</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">AZ::u32&#160;</td>
-          <td class="paramname"><em>numColumns</em>&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numRows</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -265,8 +272,8 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 <p>Creates a new heightfield. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">samples</td><td>Pointer to beginning of heightfield sample data. </td></tr>
-    <tr><td class="paramname">numRows</td><td>Number of rows in the heightfield. </td></tr>
     <tr><td class="paramname">numColumns</td><td>Number of columns in the heightfield. </td></tr>
+    <tr><td class="paramname">numRows</td><td>Number of rows in the heightfield. </td></tr>
   </table>
   </dd>
 </dl>
@@ -350,7 +357,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:55 for Open 3D Engine PhysX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:16 for Open 3D Engine PhysX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

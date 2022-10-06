@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -56,7 +56,7 @@ $(function() {
 
 <p><code>#include &lt;BehaviorContext.h&gt;</code></p>
 
-<p>Inherited by <a class="el" href="struct_a_z_1_1_behavior_value_parameter.html">AZ::BehaviorValueParameter</a>.</p>
+<p>Inherited by <a class="el" href="struct_a_z_1_1_behavior_argument.html">AZ::BehaviorArgument</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -97,7 +97,8 @@ u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_traits</b></td></tr>
 <tr class="separator:a983c889637f183b6006996ebe4d60f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Stores information about a function parameter (no instance). During calls we use <a class="el" href="struct_a_z_1_1_behavior_value_parameter.html">BehaviorValueParameter</a> which in addition offers value storage and functions to interact with the data </p>
+<div class="textblock"><p>Reflects information about a C++ function parameter, mostly for use in <a class="el" href="class_a_z_1_1_behavior_context.html">BehaviorContext</a> Methods and Events. It only provides a description or the C++ characteristics of the parameter, e.g. type and storage specification. It does not refer to any C++ value.</p>
+<dl class="section note"><dt>Note</dt><dd>During actual runtime calls, using the <a class="el" href="class_a_z_1_1_behavior_context.html">BehaviorContext</a> generic calling mechanism, use <a class="el" href="struct_a_z_1_1_behavior_argument.html">BehaviorArgument</a> to wrap arguments to the generic function call. </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a9aefcdd7ce414cacf116e9191392b963"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9aefcdd7ce414cacf116e9191392b963">&#9670;&nbsp;</a></span>Traits</h2>
@@ -120,7 +121,7 @@ u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_traits</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine PhysX Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -64,42 +64,12 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a05c8379bcb807d10cbda8b17748de607"><td class="memItemLeft" align="right" valign="top">virtual AZ::Data::Asset&lt; <a class="el" href="class_phys_x_1_1_pipeline_1_1_mesh_asset.html">Pipeline::MeshAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_mesh_collider_component_requests.html#a05c8379bcb807d10cbda8b17748de607">GetMeshAsset</a> () const =0</td></tr>
 <tr class="separator:a05c8379bcb807d10cbda8b17748de607"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cb9d8f0a8390dd982645827ace9e748"><td class="memItemLeft" align="right" valign="top">virtual Physics::MaterialId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_mesh_collider_component_requests.html#a5cb9d8f0a8390dd982645827ace9e748">GetMaterialId</a> () const =0</td></tr>
-<tr class="separator:a5cb9d8f0a8390dd982645827ace9e748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81db2d4f08fc0bd17ecb30b5688489c3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_mesh_collider_component_requests.html#a81db2d4f08fc0bd17ecb30b5688489c3">SetMeshAsset</a> (const AZ::Data::AssetId &amp;id)=0</td></tr>
 <tr class="separator:a81db2d4f08fc0bd17ecb30b5688489c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a037368f6c259a131990e180248e7c3de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_mesh_collider_component_requests.html#a037368f6c259a131990e180248e7c3de">SetMaterialId</a> (const Physics::MaterialId &amp;id)=0</td></tr>
-<tr class="separator:a037368f6c259a131990e180248e7c3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Services provided by the PhysX Mesh Collider Component. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5cb9d8f0a8390dd982645827ace9e748"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cb9d8f0a8390dd982645827ace9e748">&#9670;&nbsp;</a></span>GetMaterialId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Physics::MaterialId PhysX::MeshColliderComponentRequests::GetMaterialId </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Gets the material id from the material library for this entity. </p><dl class="section return"><dt>Returns</dt><dd>The asset ID to set it to. </dd></dl>
-
-</div>
-</div>
 <a id="a05c8379bcb807d10cbda8b17748de607"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a05c8379bcb807d10cbda8b17748de607">&#9670;&nbsp;</a></span>GetMeshAsset()</h2>
 
@@ -123,38 +93,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Gets Mesh information from this entity. </p><dl class="section return"><dt>Returns</dt><dd>Asset pointer to mesh asset. </dd></dl>
-
-</div>
-</div>
-<a id="a037368f6c259a131990e180248e7c3de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a037368f6c259a131990e180248e7c3de">&#9670;&nbsp;</a></span>SetMaterialId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void PhysX::MeshColliderComponentRequests::SetMaterialId </td>
-          <td>(</td>
-          <td class="paramtype">const Physics::MaterialId &amp;&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sets the material id from the material library. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>The asset ID to set it to. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -196,7 +134,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:55 for Open 3D Engine PhysX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:16 for Open 3D Engine PhysX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

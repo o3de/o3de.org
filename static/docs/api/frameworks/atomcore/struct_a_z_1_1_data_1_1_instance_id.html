@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AtomCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -68,6 +68,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a12423624da261a20cbd8c36702614662"><td class="memItemLeft" align="right" valign="top"><a id="a12423624da261a20cbd8c36702614662"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>InstanceId</b> (const Uuid &amp;guid, uint32_t subId)</td></tr>
 <tr class="separator:a12423624da261a20cbd8c36702614662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b5385a42ccf75cf1a674e5ba17caed"><td class="memItemLeft" align="right" valign="top"><a id="a15b5385a42ccf75cf1a674e5ba17caed"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>InstanceId</b> (const Uuid &amp;guid, uint32_t subId, void *versionId)</td></tr>
+<tr class="separator:a15b5385a42ccf75cf1a674e5ba17caed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad08b285a3465ec086a1882db0e6641fc"><td class="memItemLeft" align="right" valign="top"><a id="ad08b285a3465ec086a1882db0e6641fc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> () const</td></tr>
 <tr class="separator:ad08b285a3465ec086a1882db0e6641fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -88,6 +91,8 @@ template&lt;class StringType &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aad02828287b4da5de45e118ffc39c6d1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html#aad02828287b4da5de45e118ffc39c6d1">CreateFromAsset</a> (const Asset&lt; AssetData &gt; &amp;asset)</td></tr>
+<tr class="separator:aad02828287b4da5de45e118ffc39c6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adff5b2c1f4e118dc8be9493a24adcbc2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html#adff5b2c1f4e118dc8be9493a24adcbc2">CreateFromAssetId</a> (const AssetId &amp;assetId)</td></tr>
 <tr class="separator:adff5b2c1f4e118dc8be9493a24adcbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94759ab102cfc38216009d9c98fe3250"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html#a94759ab102cfc38216009d9c98fe3250">CreateName</a> (const char *name)</td></tr>
@@ -105,6 +110,9 @@ Uuid&#160;</td><td class="memItemRight" valign="bottom"><b>m_guid</b> = Uuid::Cr
 <tr class="memitem:a2ba264cd500f1b73be5ca9e1eb5f6aa2"><td class="memItemLeft" align="right" valign="top"><a id="a2ba264cd500f1b73be5ca9e1eb5f6aa2"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_subId</b> = 0</td></tr>
 <tr class="separator:a2ba264cd500f1b73be5ca9e1eb5f6aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc4037915f4d3bbbe0190228ddd0b6d8"><td class="memItemLeft" align="right" valign="top"><a id="abc4037915f4d3bbbe0190228ddd0b6d8"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_versionId</b> = nullptr</td></tr>
+<tr class="separator:abc4037915f4d3bbbe0190228ddd0b6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a> is a unique identifier for an Instance in an <a class="el" href="class_a_z_1_1_data_1_1_instance_database.html">InstanceDatabase</a>. Instances are used primarily to control de-duplication of 'instances' created from 'assets'. As a result, this class mirrors the structure of asset id (by including the sub-id) in order to make translation easy. However, the types are not related in order to add some type safety to the system. </p>
@@ -146,6 +154,33 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_subId</b> = 0</
 
 </div>
 </div>
+<a id="aad02828287b4da5de45e118ffc39c6d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad02828287b4da5de45e118ffc39c6d1">&#9670;&nbsp;</a></span>CreateFromAsset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a> AZ::Data::InstanceId::CreateFromAsset </td>
+          <td>(</td>
+          <td class="paramtype">const Asset&lt; AssetData &gt; &amp;&#160;</td>
+          <td class="paramname"><em>asset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates an instance id from an asset. The instance id will share the same guid, sub id, and an opaque pointer value to identify a specific version of an asset. This is a create method rather than a constructor in order to make it explicit. </p>
+
+</div>
+</div>
 <a id="adff5b2c1f4e118dc8be9493a24adcbc2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adff5b2c1f4e118dc8be9493a24adcbc2">&#9670;&nbsp;</a></span>CreateFromAssetId()</h2>
 
@@ -169,7 +204,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_subId</b> = 0</
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates an instance id from an asset id. The two will share the same guid and sub id. This is an explicit create method rather than a constructor in order to make it explicit. </p>
+<p>Creates an instance id from an asset id. The two will share the same guid and sub id. This is a create method rather than a constructor in order to make it explicit. </p>
 
 </div>
 </div>
@@ -232,7 +267,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_subId</b> = 0</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:34 for Open 3D Engine AtomCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:17 for Open 3D Engine AtomCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

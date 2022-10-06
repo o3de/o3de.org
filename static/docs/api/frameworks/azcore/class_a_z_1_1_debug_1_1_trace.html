@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,24 +46,86 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_a_z_1_1_debug_1_1_trace-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Debug::Trace Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Inherits <a class="el" href="class_a_z_1_1_debug_1_1_i_trace.html">AZ::Debug::ITrace</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2f7d9e454c9d66a8235f907e675e48c0"><td class="memItemLeft" align="right" valign="top"><a id="a2f7d9e454c9d66a8235f907e675e48c0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> () override</td></tr>
+<tr class="separator:a2f7d9e454c9d66a8235f907e675e48c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c805391c669301228b59d43fa10638"><td class="memItemLeft" align="right" valign="top"><a id="af8c805391c669301228b59d43fa10638"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Destroy</b> () override</td></tr>
+<tr class="separator:af8c805391c669301228b59d43fa10638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a262b46a0b9922632590e104bc9dfd"><td class="memItemLeft" align="right" valign="top"><a id="a18a262b46a0b9922632590e104bc9dfd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDebuggerPresent</b> () override</td></tr>
+<tr class="separator:a18a262b46a0b9922632590e104bc9dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a014ac21a0d5d8d93b01fe6ce650e9ac3"><td class="memItemLeft" align="right" valign="top"><a id="a014ac21a0d5d8d93b01fe6ce650e9ac3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace.html#a014ac21a0d5d8d93b01fe6ce650e9ac3">Break</a> () override</td></tr>
+<tr class="memdesc:a014ac21a0d5d8d93b01fe6ce650e9ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Breaks program execution immediately. <br /></td></tr>
+<tr class="separator:a014ac21a0d5d8d93b01fe6ce650e9ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b86365555801097435dcc959c0b3fe2"><td class="memItemLeft" align="right" valign="top"><a id="a4b86365555801097435dcc959c0b3fe2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace.html#a4b86365555801097435dcc959c0b3fe2">Crash</a> () override</td></tr>
+<tr class="memdesc:a4b86365555801097435dcc959c0b3fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crash the application. <br /></td></tr>
+<tr class="separator:a4b86365555801097435dcc959c0b3fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95325d281f63b09bc503e93f1fb2b605"><td class="memItemLeft" align="right" valign="top"><a id="a95325d281f63b09bc503e93f1fb2b605"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Assert</b> (const char *fileName, int line, const char *funcName, const char *format,...) override</td></tr>
+<tr class="separator:a95325d281f63b09bc503e93f1fb2b605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c2e549a03c221d72b5f543328214c1"><td class="memItemLeft" align="right" valign="top"><a id="a86c2e549a03c221d72b5f543328214c1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Error</b> (const char *fileName, int line, const char *funcName, const char *window, const char *format,...) override</td></tr>
+<tr class="separator:a86c2e549a03c221d72b5f543328214c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afccec38bf417c86fdbf6b1e4914a6531"><td class="memItemLeft" align="right" valign="top"><a id="afccec38bf417c86fdbf6b1e4914a6531"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Warning</b> (const char *fileName, int line, const char *funcName, const char *window, const char *format,...) override</td></tr>
+<tr class="separator:afccec38bf417c86fdbf6b1e4914a6531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7c3811edc6bcf1936b842569e4a2927"><td class="memItemLeft" align="right" valign="top"><a id="aa7c3811edc6bcf1936b842569e4a2927"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Printf</b> (const char *window, const char *format,...) override</td></tr>
+<tr class="separator:aa7c3811edc6bcf1936b842569e4a2927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb546487e40f483d68ca46821614fb5"><td class="memItemLeft" align="right" valign="top"><a id="a1cb546487e40f483d68ca46821614fb5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Output</b> (const char *window, const char *message) override</td></tr>
+<tr class="separator:a1cb546487e40f483d68ca46821614fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e35dff7b4f4de5d1d47e69fe30ea29"><td class="memItemLeft" align="right" valign="top"><a id="a44e35dff7b4f4de5d1d47e69fe30ea29"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace.html#a44e35dff7b4f4de5d1d47e69fe30ea29">RawOutput</a> (const char *window, const char *message) override</td></tr>
+<tr class="memdesc:a44e35dff7b4f4de5d1d47e69fe30ea29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by output to handle the actual output, does not interact with ebus or allow interception. <br /></td></tr>
+<tr class="separator:a44e35dff7b4f4de5d1d47e69fe30ea29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af03f53e9e0572752138ac59328c74dbc"><td class="memItemLeft" align="right" valign="top"><a id="af03f53e9e0572752138ac59328c74dbc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintCallstack</b> (const char *window, unsigned int suppressCount=0, void *nativeContext=nullptr) override</td></tr>
+<tr class="separator:af03f53e9e0572752138ac59328c74dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_debug_1_1_i_trace')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_debug_1_1_i_trace.html">AZ::Debug::ITrace</a></td></tr>
+<tr class="memitem:ac5d18281e1c6343a909ab543df4e03bf inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memItemLeft" align="right" valign="top"><a id="ac5d18281e1c6343a909ab543df4e03bf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ITrace</b> (const <a class="el" href="class_a_z_1_1_debug_1_1_i_trace.html">ITrace</a> &amp;)=delete</td></tr>
+<tr class="separator:ac5d18281e1c6343a909ab543df4e03bf inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36b4501f6b6d41d0733916fec760043a inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memItemLeft" align="right" valign="top"><a id="a36b4501f6b6d41d0733916fec760043a"></a>
+O3DEKERNEL_API&#160;</td><td class="memItemRight" valign="bottom"><b>ITrace</b> (<a class="el" href="class_a_z_1_1_debug_1_1_i_trace.html">ITrace</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a36b4501f6b6d41d0733916fec760043a inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1ac13d7555eb2219f41f184d4535235 inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memItemLeft" align="right" valign="top"><a id="ad1ac13d7555eb2219f41f184d4535235"></a>
+<a class="el" href="class_a_z_1_1_debug_1_1_i_trace.html">ITrace</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1_debug_1_1_i_trace.html">ITrace</a> &amp;)=delete</td></tr>
+<tr class="separator:ad1ac13d7555eb2219f41f184d4535235 inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9542b40b9d74563713c76555ce99db71 inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memItemLeft" align="right" valign="top"><a id="a9542b40b9d74563713c76555ce99db71"></a>
+O3DEKERNEL_API <a class="el" href="class_a_z_1_1_debug_1_1_i_trace.html">ITrace</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_1_1_debug_1_1_i_trace.html">ITrace</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a9542b40b9d74563713c76555ce99db71 inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab31cb515f7d5ae446cb67db153de3762 inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memItemLeft" align="right" valign="top"><a id="ab31cb515f7d5ae446cb67db153de3762"></a>
+O3DEKERNEL_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_i_trace.html#ab31cb515f7d5ae446cb67db153de3762">IsTraceLoggingEnabledForLevel</a> (<a class="el" href="namespace_a_z.html#ad5ac339a1199350350d069e8e936c09b">LogLevel</a> level)</td></tr>
+<tr class="memdesc:ab31cb515f7d5ae446cb67db153de3762 inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if trace logging functions are enabled based on compile mode and cvar logging level. <br /></td></tr>
+<tr class="separator:ab31cb515f7d5ae446cb67db153de3762 inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0c9d1f451d9f6c585abad6c478b5e5 inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memItemLeft" align="right" valign="top"><a id="a9e0c9d1f451d9f6c585abad6c478b5e5"></a>
+O3DEKERNEL_API void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLogLevel</b> (<a class="el" href="namespace_a_z.html#ad5ac339a1199350350d069e8e936c09b">LogLevel</a> newLevel)</td></tr>
+<tr class="separator:a9e0c9d1f451d9f6c585abad6c478b5e5 inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2423150a04d56bb43747701c57bdcd08 inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memItemLeft" align="right" valign="top"><a id="a2423150a04d56bb43747701c57bdcd08"></a>
+O3DEKERNEL_API bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAlwaysPrintCallstack</b> () const</td></tr>
+<tr class="separator:a2423150a04d56bb43747701c57bdcd08 inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23c621e606ff5397316ad12d354bb73 inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memItemLeft" align="right" valign="top"><a id="ad23c621e606ff5397316ad12d354bb73"></a>
+O3DEKERNEL_API void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAlwaysPrintCallstack</b> (bool enable)</td></tr>
+<tr class="separator:ad23c621e606ff5397316ad12d354bb73 inherit pub_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:adac248dca01555c67cc5b59372dcc7ce"><td class="memItemLeft" align="right" valign="top"><a id="adac248dca01555c67cc5b59372dcc7ce"></a>
-static <a class="el" href="class_a_z_1_1_debug_1_1_trace.html">Trace</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> ()</td></tr>
-<tr class="separator:adac248dca01555c67cc5b59372dcc7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01d6ee004a77ae2cec8f776df5e30e0f"><td class="memItemLeft" align="right" valign="top"><a id="a01d6ee004a77ae2cec8f776df5e30e0f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
-<tr class="separator:a01d6ee004a77ae2cec8f776df5e30e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c91d999d8d6be90d3af45978ead9f4b"><td class="memItemLeft" align="right" valign="top"><a id="a0c91d999d8d6be90d3af45978ead9f4b"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Destroy</b> ()</td></tr>
-<tr class="separator:a0c91d999d8d6be90d3af45978ead9f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d4cefce92842286f2bc87512cc1aac0"><td class="memItemLeft" align="right" valign="top"><a id="a6d4cefce92842286f2bc87512cc1aac0"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssertVerbosityLevel</b> ()</td></tr>
 <tr class="separator:a6d4cefce92842286f2bc87512cc1aac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -72,9 +134,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAssertVerbo
 <tr class="separator:ae3ce6d8eff56212e8c3a647544c5a17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4023c906a2c75892f5f1bdccdf063e20"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace.html#a4023c906a2c75892f5f1bdccdf063e20">GetDefaultSystemWindow</a> ()</td></tr>
 <tr class="separator:a4023c906a2c75892f5f1bdccdf063e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3ab8109ed81a907a0ed9d9b979c31fc"><td class="memItemLeft" align="right" valign="top"><a id="ad3ab8109ed81a907a0ed9d9b979c31fc"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDebuggerPresent</b> ()</td></tr>
-<tr class="separator:ad3ab8109ed81a907a0ed9d9b979c31fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c9d036e926874503b9c5fc54f3404a3"><td class="memItemLeft" align="right" valign="top"><a id="a2c9d036e926874503b9c5fc54f3404a3"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>AttachDebugger</b> ()</td></tr>
 <tr class="separator:a2c9d036e926874503b9c5fc54f3404a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -85,44 +144,18 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>WaitForDebugge
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace.html#a7e2b0a39cdb8f5c8edcbaf5c7fbfb493">HandleExceptions</a> (bool isEnabled)</td></tr>
 <tr class="memdesc:a7e2b0a39cdb8f5c8edcbaf5c7fbfb493"><td class="mdescLeft">&#160;</td><td class="mdescRight">True or false if we want to handle system exceptions. <br /></td></tr>
 <tr class="separator:a7e2b0a39cdb8f5c8edcbaf5c7fbfb493"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bbc6f4f21739ff542eb7eaeb2754e2c"><td class="memItemLeft" align="right" valign="top"><a id="a0bbc6f4f21739ff542eb7eaeb2754e2c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace.html#a0bbc6f4f21739ff542eb7eaeb2754e2c">Break</a> ()</td></tr>
-<tr class="memdesc:a0bbc6f4f21739ff542eb7eaeb2754e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Breaks program execution immediately. <br /></td></tr>
-<tr class="separator:a0bbc6f4f21739ff542eb7eaeb2754e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad57b96846f159171af45f68ba3e52aaa"><td class="memItemLeft" align="right" valign="top"><a id="ad57b96846f159171af45f68ba3e52aaa"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace.html#ad57b96846f159171af45f68ba3e52aaa">Crash</a> ()</td></tr>
-<tr class="memdesc:ad57b96846f159171af45f68ba3e52aaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crash the application. <br /></td></tr>
-<tr class="separator:ad57b96846f159171af45f68ba3e52aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fcb869a062b49453e7b01505751e158"><td class="memItemLeft" align="right" valign="top"><a id="a8fcb869a062b49453e7b01505751e158"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace.html#a8fcb869a062b49453e7b01505751e158">Terminate</a> (int exitCode)</td></tr>
 <tr class="memdesc:a8fcb869a062b49453e7b01505751e158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates the process with the specified exit code. <br /></td></tr>
 <tr class="separator:a8fcb869a062b49453e7b01505751e158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b2423d4cca2ed4e58adc00de5b2e16e"><td class="memItemLeft" align="right" valign="top"><a id="a5b2423d4cca2ed4e58adc00de5b2e16e"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace.html#a5b2423d4cca2ed4e58adc00de5b2e16e">IsTraceLoggingEnabledForLevel</a> (<a class="el" href="namespace_a_z.html#ad5ac339a1199350350d069e8e936c09b">LogLevel</a> level)</td></tr>
-<tr class="memdesc:a5b2423d4cca2ed4e58adc00de5b2e16e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if trace logging functions are enabled based on compile mode and cvar logging level. <br /></td></tr>
-<tr class="separator:a5b2423d4cca2ed4e58adc00de5b2e16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bb182a963553a908ac0f042f3240583"><td class="memItemLeft" align="right" valign="top"><a id="a3bb182a963553a908ac0f042f3240583"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Assert</b> (const char *fileName, int line, const char *funcName, const char *format,...)</td></tr>
-<tr class="separator:a3bb182a963553a908ac0f042f3240583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a476d5147a777ed4c0f71228131aad43e"><td class="memItemLeft" align="right" valign="top"><a id="a476d5147a777ed4c0f71228131aad43e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Error</b> (const char *fileName, int line, const char *funcName, const char *window, const char *format,...)</td></tr>
-<tr class="separator:a476d5147a777ed4c0f71228131aad43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a276a0659da3612019292425c1988a03a"><td class="memItemLeft" align="right" valign="top"><a id="a276a0659da3612019292425c1988a03a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Warning</b> (const char *fileName, int line, const char *funcName, const char *window, const char *format,...)</td></tr>
-<tr class="separator:a276a0659da3612019292425c1988a03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17f51990b04246abae334917f69223a4"><td class="memItemLeft" align="right" valign="top"><a id="a17f51990b04246abae334917f69223a4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Printf</b> (const char *window, const char *format,...)</td></tr>
-<tr class="separator:a17f51990b04246abae334917f69223a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2334e68ddd8b225328721b4134b12d9"><td class="memItemLeft" align="right" valign="top"><a id="aa2334e68ddd8b225328721b4134b12d9"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Output</b> (const char *window, const char *message)</td></tr>
-<tr class="separator:aa2334e68ddd8b225328721b4134b12d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc9d0e83a38a789506c39cf78b433311"><td class="memItemLeft" align="right" valign="top"><a id="afc9d0e83a38a789506c39cf78b433311"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintCallstack</b> (const char *window, unsigned int suppressCount=0, void *nativeContext=0)</td></tr>
-<tr class="separator:afc9d0e83a38a789506c39cf78b433311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1483100c33e58b5c62dd9e10fee8b32b"><td class="memItemLeft" align="right" valign="top"><a id="a1483100c33e58b5c62dd9e10fee8b32b"></a>
 static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_trace.html#a1483100c33e58b5c62dd9e10fee8b32b">GetNativeExceptionInfo</a> ()</td></tr>
 <tr class="memdesc:a1483100c33e58b5c62dd9e10fee8b32b"><td class="mdescLeft">&#160;</td><td class="mdescRight">PEXCEPTION_POINTERS on Windows, always NULL on other platforms. <br /></td></tr>
 <tr class="separator:a1483100c33e58b5c62dd9e10fee8b32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_a_z_1_1_debug_1_1_i_trace"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_a_z_1_1_debug_1_1_i_trace')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_a_z_1_1_debug_1_1_i_trace.html">AZ::Debug::ITrace</a></td></tr>
+<tr class="memitem:a3ac128b448d3b8a1a896f29c8e562224 inherit pub_static_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memItemLeft" align="right" valign="top"><a id="a3ac128b448d3b8a1a896f29c8e562224"></a>
+static O3DEKERNEL_API <a class="el" href="class_a_z_1_1_debug_1_1_i_trace.html">ITrace</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> ()</td></tr>
+<tr class="separator:a3ac128b448d3b8a1a896f29c8e562224 inherit pub_static_methods_class_a_z_1_1_debug_1_1_i_trace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4023c906a2c75892f5f1bdccdf063e20"></a>
@@ -157,7 +190,7 @@ static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:48 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:31 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

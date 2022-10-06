@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -71,6 +71,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a4987a9a58ff10d10e73c75244ea74ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3230c201f3039fc6da27d38531151f24"><td class="memItemLeft" align="right" valign="top">AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html#a3230c201f3039fc6da27d38531151f24">m_morphTargetName</a></td></tr>
 <tr class="separator:a3230c201f3039fc6da27d38531151f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec3163dc46b2a618c72aa7eaf24faad"><td class="memItemLeft" align="right" valign="top"><a id="a9ec3163dc46b2a618c72aa7eaf24faad"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_meshIndex</b></td></tr>
+<tr class="separator:a9ec3163dc46b2a618c72aa7eaf24faad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fc0a55ecf0758f7edb5eda8d5bf0240"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html#a0fc0a55ecf0758f7edb5eda8d5bf0240">m_startIndex</a></td></tr>
 <tr class="separator:a0fc0a55ecf0758f7edb5eda8d5bf0240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea44c7b60098485c6206696a6fcbf59f"><td class="memItemLeft" align="right" valign="top"><a id="aea44c7b60098485c6206696a6fcbf59f"></a>
@@ -86,10 +89,6 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxPositionDelta</
 <a class="el" href="class_a_z_1_1_data_1_1_asset.html">AZ::Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image_asset.html">AZ::RPI::StreamingImageAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html#a761daa5a2c75efd875b5eb18a9f1bb93">m_wrinkleMask</a></td></tr>
 <tr class="memdesc:a761daa5a2c75efd875b5eb18a9f1bb93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the wrinkle mask, if it exists. <br /></td></tr>
 <tr class="separator:a761daa5a2c75efd875b5eb18a9f1bb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32aadc6188b490058a061338e1c8d13f"><td class="memItemLeft" align="right" valign="top"><a id="a32aadc6188b490058a061338e1c8d13f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html#a32aadc6188b490058a061338e1c8d13f">m_hasColorDeltas</a> = false</td></tr>
-<tr class="memdesc:a32aadc6188b490058a061338e1c8d13f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean to indicate the presence or absence of color deltas. <br /></td></tr>
-<tr class="separator:a32aadc6188b490058a061338e1c8d13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Meta data for a morph target. </p>
@@ -105,7 +104,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The name of the mesh we are referring to. </p>
+<p>The name of the mesh we are referring to. One morph target may refer to multiple meshes. </p>
 
 </div>
 </div>
@@ -160,7 +159,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:29 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:23 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

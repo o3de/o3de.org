@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -98,6 +98,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_capsule_light_feature_processor_interface.html#a9985ddf1089a50e19b6da9fdd9a8a7a5">SetCapsuleRadius</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">LightHandle</a> handle, float radius)=0</td></tr>
 <tr class="memdesc:a9985ddf1089a50e19b6da9fdd9a8a7a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the capsule radius for the provided LightHandle. <br /></td></tr>
 <tr class="separator:a9985ddf1089a50e19b6da9fdd9a8a7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9667aa6b1e5355d459837a10a5df655"><td class="memItemLeft" align="right" valign="top"><a id="aa9667aa6b1e5355d459837a10a5df655"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_capsule_light_feature_processor_interface.html#aa9667aa6b1e5355d459837a10a5df655">SetAffectsGI</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">LightHandle</a> handle, bool affectsGI)=0</td></tr>
+<tr class="memdesc:aa9667aa6b1e5355d459837a10a5df655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies if this light affects the diffuse global illumination in the scene. <br /></td></tr>
+<tr class="separator:aa9667aa6b1e5355d459837a10a5df655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03dd0af40ce11bba55b461b725e9250"><td class="memItemLeft" align="right" valign="top"><a id="ad03dd0af40ce11bba55b461b725e9250"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_capsule_light_feature_processor_interface.html#ad03dd0af40ce11bba55b461b725e9250">SetAffectsGIFactor</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">LightHandle</a> handle, float affectsGIFactor)=0</td></tr>
+<tr class="memdesc:ad03dd0af40ce11bba55b461b725e9250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the contribution of this light to the diffuse global illumination in the scene. <br /></td></tr>
+<tr class="separator:ad03dd0af40ce11bba55b461b725e9250"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae679932f319128288df84d43262086b5"><td class="memItemLeft" align="right" valign="top"><a id="ae679932f319128288df84d43262086b5"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_capsule_light_feature_processor_interface.html#ae679932f319128288df84d43262086b5">SetCapsuleData</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">LightHandle</a> handle, const <a class="el" href="struct_a_z_1_1_render_1_1_capsule_light_data.html">CapsuleLightData</a> &amp;data)=0</td></tr>
 <tr class="memdesc:ae679932f319128288df84d43262086b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all of the the capsule data for the provided LightHandle. <br /></td></tr>
@@ -120,6 +128,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a98270908692bffdf4bf5cc6817236580">Deactivate</a> ()</td></tr>
 <tr class="memdesc:a98270908692bffdf4bf5cc6817236580 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform any necessary deactivation. <br /></td></tr>
 <tr class="separator:a98270908692bffdf4bf5cc6817236580 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41df34f125055709089709397a528c90 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top"><a id="a41df34f125055709089709397a528c90"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a41df34f125055709089709397a528c90">ApplyRenderPipelineChange</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *)</td></tr>
+<tr class="memdesc:a41df34f125055709089709397a528c90 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply changes and add additional render passes to the render pipeline from the feature processors. <br /></td></tr>
+<tr class="separator:a41df34f125055709089709397a528c90 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28b655ac096c209bfdcd3cf93bcf32b2 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a28b655ac096c209bfdcd3cf93bcf32b2">PrepareViews</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_feature_processor_1_1_prepare_views_packet.html">PrepareViewsPacket</a> &amp;, AZStd::vector&lt; AZStd::pair&lt; PipelineViewTag, ViewPtr &gt;&gt; &amp;)</td></tr>
 <tr class="separator:a28b655ac096c209bfdcd3cf93bcf32b2 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39a87cce766c54804df525b96d4a499b inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a39a87cce766c54804df525b96d4a499b">Simulate</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_feature_processor_1_1_simulate_packet.html">SimulatePacket</a> &amp;)</td></tr>
@@ -153,7 +165,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -57,6 +57,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a7274096e43cdd98e76c638a167f77443"><td class="memItemLeft" align="right" valign="top"><a id="a7274096e43cdd98e76c638a167f77443"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html">InstanceToTemplatePropagator</a>, &quot;{526F7B55-84F9-4EA9-8180-19C5DBCD0103}&quot;, InstanceToTemplateInterface)</td></tr>
+<tr class="separator:a7274096e43cdd98e76c638a167f77443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b6615594fdf1925515b8bb1a46240e"><td class="memItemLeft" align="right" valign="top"><a id="a61b6615594fdf1925515b8bb1a46240e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html">InstanceToTemplatePropagator</a>, AZ::SystemAllocator, 0)</td></tr>
+<tr class="separator:a61b6615594fdf1925515b8bb1a46240e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7870fc1550df49accdb82ffbc96944a"><td class="memItemLeft" align="right" valign="top"><a id="af7870fc1550df49accdb82ffbc96944a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterInstanceToTemplateInterface</b> ()</td></tr>
 <tr class="separator:af7870fc1550df49accdb82ffbc96944a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -71,10 +77,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#a241d1a19242dc56ad5e32dc13917dffe">GenerateDomForInstance</a> (PrefabDom &amp;generatedInstanceDom, const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Prefab::Instance</a> &amp;instance) override</td></tr>
 <tr class="memdesc:a241d1a19242dc56ad5e32dc13917dffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a prefabdom for the instance in its current state and places the result in generatedDom. <br /></td></tr>
 <tr class="separator:a241d1a19242dc56ad5e32dc13917dffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad577bb5bfcd170f45e6b147934a30ecb"><td class="memItemLeft" align="right" valign="top"><a id="ad577bb5bfcd170f45e6b147934a30ecb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#ad577bb5bfcd170f45e6b147934a30ecb">GeneratePatch</a> (PrefabDom &amp;generatedPatch, const PrefabDom &amp;initialState, const PrefabDom &amp;modifiedState) override</td></tr>
-<tr class="memdesc:ad577bb5bfcd170f45e6b147934a30ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a patch using serialization system and places the result in generatedPatch. <br /></td></tr>
-<tr class="separator:ad577bb5bfcd170f45e6b147934a30ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f59ef9eb2622bb1a0a6be63eb425543"><td class="memItemLeft" align="right" valign="top"><a id="a7f59ef9eb2622bb1a0a6be63eb425543"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#a7f59ef9eb2622bb1a0a6be63eb425543">GeneratePatch</a> (PrefabDom &amp;generatedPatch, const PrefabDomValue &amp;initialState, const PrefabDomValue &amp;modifiedState) override</td></tr>
+<tr class="memdesc:a7f59ef9eb2622bb1a0a6be63eb425543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a patch using serialization system and places the result in generatedPatch. <br /></td></tr>
+<tr class="separator:a7f59ef9eb2622bb1a0a6be63eb425543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82237fc77eecc73818764fbabb0f6173"><td class="memItemLeft" align="right" valign="top"><a id="a82237fc77eecc73818764fbabb0f6173"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#a82237fc77eecc73818764fbabb0f6173">GeneratePatchForLink</a> (PrefabDom &amp;generatedPatch, const PrefabDom &amp;initialState, const PrefabDom &amp;modifiedState, LinkId linkId) override</td></tr>
 <tr class="memdesc:a82237fc77eecc73818764fbabb0f6173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a patch to be associated with a link with the given LinkId and places the result in generatedPatch. <br /></td></tr>
@@ -83,14 +89,16 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#a3d7eb03ac1ccef35813ba90c9cda4d72">PatchEntityInTemplate</a> (PrefabDom &amp;providedPatch, AZ::EntityId entityId) override</td></tr>
 <tr class="memdesc:a3d7eb03ac1ccef35813ba90c9cda4d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the affected template for a given entityId using the providedPatch. <br /></td></tr>
 <tr class="separator:a3d7eb03ac1ccef35813ba90c9cda4d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab485a45eb7260165edb77b22ac95e610"><td class="memItemLeft" align="right" valign="top"><a id="ab485a45eb7260165edb77b22ac95e610"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AppendEntityAliasToPatchPaths</b> (PrefabDom &amp;providedPatch, const AZ::EntityId &amp;entityId) override</td></tr>
-<tr class="separator:ab485a45eb7260165edb77b22ac95e610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac29797a4a9063d15e00bc80ab570b42c"><td class="memItemLeft" align="right" valign="top">AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#ac29797a4a9063d15e00bc80ab570b42c">GenerateEntityAliasPath</a> (AZ::EntityId entityId) override</td></tr>
+<tr class="separator:ac29797a4a9063d15e00bc80ab570b42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4643e72e3015969dbe3ebff87ceefbd4"><td class="memItemLeft" align="right" valign="top"><a id="a4643e72e3015969dbe3ebff87ceefbd4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AppendEntityAliasToPatchPaths</b> (PrefabDom &amp;providedPatch, AZ::EntityId entityId, AZStd::string prefix=&quot;&quot;) override</td></tr>
+<tr class="separator:a4643e72e3015969dbe3ebff87ceefbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3441fdf8b7d55d998b05d8ed06f6d8f"><td class="memItemLeft" align="right" valign="top"><a id="ab3441fdf8b7d55d998b05d8ed06f6d8f"></a>
 InstanceOptionalReference&#160;</td><td class="memItemRight" valign="bottom"><b>GetTopMostInstanceInHierarchy</b> (AZ::EntityId entityId) override</td></tr>
 <tr class="separator:ab3441fdf8b7d55d998b05d8ed06f6d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ff5ba0e04fcead354bfc0e92482415b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#a3ff5ba0e04fcead354bfc0e92482415b">PatchTemplate</a> (PrefabDomValue &amp;providedPatch, TemplateId templateId, InstanceOptionalReference instanceToExclude=AZStd::nullopt) override</td></tr>
-<tr class="separator:a3ff5ba0e04fcead354bfc0e92482415b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed04300d93419bc53fc7a1074643b85f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#aed04300d93419bc53fc7a1074643b85f">PatchTemplate</a> (PrefabDomValue &amp;providedPatch, TemplateId templateId, InstanceOptionalConstReference instanceToExclude=AZStd::nullopt) override</td></tr>
+<tr class="separator:aed04300d93419bc53fc7a1074643b85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1faebb6e33be46e6f19554989abf6c31"><td class="memItemLeft" align="right" valign="top"><a id="a1faebb6e33be46e6f19554989abf6c31"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyPatchesToInstance</b> (const AZ::EntityId &amp;entityId, PrefabDom &amp;patches, const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;instanceToAddPatches) override</td></tr>
 <tr class="separator:a1faebb6e33be46e6f19554989abf6c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,8 +107,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddPatchesToLink</b> 
 <tr class="separator:a05fedb02051b05ce9a6608f9d61ace53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3ff5ba0e04fcead354bfc0e92482415b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ff5ba0e04fcead354bfc0e92482415b">&#9670;&nbsp;</a></span>PatchTemplate()</h2>
+<a id="ac29797a4a9063d15e00bc80ab570b42c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac29797a4a9063d15e00bc80ab570b42c">&#9670;&nbsp;</a></span>GenerateEntityAliasPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::string AzToolsFramework::Prefab::InstanceToTemplatePropagator::GenerateEntityAliasPath </td>
+          <td>(</td>
+          <td class="paramtype">AZ::EntityId&#160;</td>
+          <td class="paramname"><em>entityId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generates a string matching the path to the entity alias corresponding to the entity id. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityId</td><td>The entity id to use for generating alias path </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The string matching the path to the entity alias </dd></dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_interface.html#acdc1b7e28f3cb56ab4a088d44c80f4f4">AzToolsFramework::Prefab::InstanceToTemplateInterface</a>.</p>
+
+</div>
+</div>
+<a id="aed04300d93419bc53fc7a1074643b85f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed04300d93419bc53fc7a1074643b85f">&#9670;&nbsp;</a></span>PatchTemplate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,7 +166,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddPatchesToLink</b> 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">InstanceOptionalReference&#160;</td>
+          <td class="paramtype">InstanceOptionalConstReference&#160;</td>
           <td class="paramname"><em>instanceToExclude</em> = <code>AZStd::nullopt</code>&#160;</td>
         </tr>
         <tr>
@@ -148,7 +191,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddPatchesToLink</b> 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the template was patched correctly, false if the operation failed. </dd></dl>
 
-<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_interface.html#abf37ff2371e17aaacc096aef7e2048fc">AzToolsFramework::Prefab::InstanceToTemplateInterface</a>.</p>
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_interface.html#a3d6c1227509014b312a5d7c66b388497">AzToolsFramework::Prefab::InstanceToTemplateInterface</a>.</p>
 
 </div>
 </div>
@@ -158,7 +201,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddPatchesToLink</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:39 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:33 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

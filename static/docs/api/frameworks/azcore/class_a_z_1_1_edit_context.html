@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -62,6 +62,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_edit_context_1_1_enum_builder.html">EnumBuilder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_edit_context_1_1_enumerate_instance_call_context.html">EnumerateInstanceCallContext</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analog to <a class="el" href="struct_a_z_1_1_serialize_context_1_1_enumerate_instance_call_context.html">SerializeContext::EnumerateInstanceCallContext</a> for enumerating an <a class="el" href="class_a_z_1_1_edit_context.html">EditContext</a>.  <a href="struct_a_z_1_1_edit_context_1_1_enumerate_instance_call_context.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -84,6 +87,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveClassData</b> (
 <tr class="memitem:acbf4b052970b98612803b0a231b3810e"><td class="memItemLeft" align="right" valign="top"><a id="acbf4b052970b98612803b0a231b3810e"></a>
 const <a class="el" href="struct_a_z_1_1_edit_1_1_element_data.html">Edit::ElementData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnumElementData</b> (const <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a> &amp;enumId) const</td></tr>
 <tr class="separator:acbf4b052970b98612803b0a231b3810e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6ecf3aa81fe21db2eba1f6947273599"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_edit_context.html#af6ecf3aa81fe21db2eba1f6947273599">EnumerateInstanceConst</a> (<a class="el" href="struct_a_z_1_1_edit_context_1_1_enumerate_instance_call_context.html">EnumerateInstanceCallContext</a> *callContext, const void *ptr, const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;classId, const <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_data.html">SerializeContext::ClassData</a> *classData, const <a class="el" href="struct_a_z_1_1_serialize_context_1_1_class_element.html">SerializeContext::ClassElement</a> *classElement) const</td></tr>
+<tr class="separator:af6ecf3aa81fe21db2eba1f6947273599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e84f2fd907fe0b701e2ea23eb16478"><td class="memItemLeft" align="right" valign="top"><a id="a92e84f2fd907fe0b701e2ea23eb16478"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateInstance</b> (<a class="el" href="struct_a_z_1_1_edit_context_1_1_enumerate_instance_call_context.html">EnumerateInstanceCallContext</a> *callContext, void *ptr, const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;classId, const <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_data.html">SerializeContext::ClassData</a> *classData, const <a class="el" href="struct_a_z_1_1_serialize_context_1_1_class_element.html">SerializeContext::ClassElement</a> *classElement) const</td></tr>
+<tr class="separator:a92e84f2fd907fe0b701e2ea23eb16478"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_edit_context.html">EditContext</a> is bound to serialize context. It uses it for data manipulation. It's role is to be an abstract way to generate and describe how a class should be edited. It doesn't rely on any edit/editor/etc. code and it should not as it's ABSTRACT. Please refer to your editor/edit tools to check what are the "id" for the uiElements and their respective properties "id" and values. </p>
@@ -107,13 +115,73 @@ const <a class="el" href="struct_a_z_1_1_edit_1_1_element_data.html">Edit::Eleme
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af6ecf3aa81fe21db2eba1f6947273599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6ecf3aa81fe21db2eba1f6947273599">&#9670;&nbsp;</a></span>EnumerateInstanceConst()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AZ::EditContext::EnumerateInstanceConst </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_a_z_1_1_edit_context_1_1_enumerate_instance_call_context.html">EnumerateInstanceCallContext</a> *&#160;</td>
+          <td class="paramname"><em>callContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;&#160;</td>
+          <td class="paramname"><em>classId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_data.html">SerializeContext::ClassData</a> *&#160;</td>
+          <td class="paramname"><em>classData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_serialize_context_1_1_class_element.html">SerializeContext::ClassElement</a> *&#160;</td>
+          <td class="paramname"><em>classElement</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Call this function to traverse an instance's hierarchy by providing address and classId, if you have the typed pointer you can just call EnumerateObject </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>pointer to the object for traversal </td></tr>
+    <tr><td class="paramname">classId</td><td>classId of object for traversal </td></tr>
+    <tr><td class="paramname">beginElemCB</td><td>callback when we begin/open a child element </td></tr>
+    <tr><td class="paramname">endElemCB</td><td>callback when we end/close a child element </td></tr>
+    <tr><td class="paramname">accessFlags</td><td>EnumerationAccessFlags </td></tr>
+    <tr><td class="paramname">classData</td><td>pointer to the class data for the traversed object to avoid calling FindClassData(classId) (can be null) </td></tr>
+    <tr><td class="paramname">classElement</td><td>pointer to class element (null for root elements) </td></tr>
+    <tr><td class="paramname">errorHandler</td><td>optional pointer to the error handler. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Serialization/EditContext.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:43 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

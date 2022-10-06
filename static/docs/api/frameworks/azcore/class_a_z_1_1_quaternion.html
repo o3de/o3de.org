@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -223,6 +223,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 <tr class="separator:ac1700b11286af12fc6d0090d8b97bbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac23b1270d137d88063dce7c54c4681e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_quaternion.html#ac23b1270d137d88063dce7c54c4681e1">ConvertToAxisAngle</a> (<a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;outAxis, float &amp;outAngle) const</td></tr>
 <tr class="separator:ac23b1270d137d88063dce7c54c4681e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7ece528f080acbf23c870139951a6b"><td class="memItemLeft" align="right" valign="top"><a id="adf7ece528f080acbf23c870139951a6b"></a>
+<a class="el" href="class_a_z_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_quaternion.html#adf7ece528f080acbf23c870139951a6b">ConvertToScaledAxisAngle</a> () const</td></tr>
+<tr class="memdesc:adf7ece528f080acbf23c870139951a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the quaternion into scaled axis-angle representation. <br /></td></tr>
+<tr class="separator:adf7ece528f080acbf23c870139951a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f731daa50f0795fa96cb3a7ab9767fd"><td class="memItemLeft" align="right" valign="top"><a id="a8f731daa50f0795fa96cb3a7ab9767fd"></a>
 <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_quaternion.html#a8f731daa50f0795fa96cb3a7ab9767fd">GetImaginary</a> () const</td></tr>
 <tr class="memdesc:a8f731daa50f0795fa96cb3a7ab9767fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the imaginary (X/Y/Z) portion of the quaternion. <br /></td></tr>
@@ -279,6 +283,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>InvertFull</b> ()</td
 <tr class="memitem:aff828b91fb3228df185e04ad278042f3"><td class="memItemLeft" align="right" valign="top"><a id="aff828b91fb3228df185e04ad278042f3"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>NormalizeWithLengthEstimate</b> ()</td></tr>
 <tr class="separator:aff828b91fb3228df185e04ad278042f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ae63dec10330004620c00a7346ed50bca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_quaternion.html#ae63dec10330004620c00a7346ed50bca">GetShortestEquivalent</a> () const</td></tr>
+<tr class="separator:ae63dec10330004620c00a7346ed50bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc90e85cb9a3dca80f2000f21946376"><td class="memItemLeft" align="right" valign="top"><a id="a6bc90e85cb9a3dca80f2000f21946376"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ShortestEquivalent</b> ()</td></tr>
+<tr class="separator:a6bc90e85cb9a3dca80f2000f21946376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -302,6 +312,24 @@ static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</
 static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_quaternion.html#abffcfc22fc173c6e4e5b42898bcf4e37">CreateFromVector3AndValue</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;v, float w)</td></tr>
 <tr class="memdesc:abffcfc22fc173c6e4e5b42898bcf4e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets components using a <a class="el" href="class_a_z_1_1_vector3.html" title="3-dimensional vector class.">Vector3</a> for the imaginary part and a float for the real part. <br /></td></tr>
 <tr class="separator:abffcfc22fc173c6e4e5b42898bcf4e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f5acdabdb4386d58ce43176d061c09"><td class="memItemLeft" align="right" valign="top"><a id="af8f5acdabdb4386d58ce43176d061c09"></a>
+static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFromEulerRadiansXYZ</b> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;eulerRadians)</td></tr>
+<tr class="separator:af8f5acdabdb4386d58ce43176d061c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7f68dc957083d1925201588720ea67"><td class="memItemLeft" align="right" valign="top"><a id="afc7f68dc957083d1925201588720ea67"></a>
+static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFromEulerRadiansYXZ</b> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;eulerRadians)</td></tr>
+<tr class="separator:afc7f68dc957083d1925201588720ea67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b8714a91ad3795aa65048451fbb0f1"><td class="memItemLeft" align="right" valign="top"><a id="a06b8714a91ad3795aa65048451fbb0f1"></a>
+static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFromEulerRadiansZYX</b> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;eulerRadians)</td></tr>
+<tr class="separator:a06b8714a91ad3795aa65048451fbb0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e08f2a2270f355e781e4e8a8316eb1"><td class="memItemLeft" align="right" valign="top"><a id="ac5e08f2a2270f355e781e4e8a8316eb1"></a>
+static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFromEulerDegreesXYZ</b> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;eulerDegrees)</td></tr>
+<tr class="separator:ac5e08f2a2270f355e781e4e8a8316eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a073e07cd3396f6d8be42b13598465649"><td class="memItemLeft" align="right" valign="top"><a id="a073e07cd3396f6d8be42b13598465649"></a>
+static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFromEulerDegreesYXZ</b> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;eulerDegrees)</td></tr>
+<tr class="separator:a073e07cd3396f6d8be42b13598465649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089b57dc3a01297a46b3060e947bf839"><td class="memItemLeft" align="right" valign="top"><a id="a089b57dc3a01297a46b3060e947bf839"></a>
+static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFromEulerDegreesZYX</b> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;eulerDegrees)</td></tr>
+<tr class="separator:a089b57dc3a01297a46b3060e947bf839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2e3a37552802b5c4494972be74e890e"><td class="memItemLeft" align="right" valign="top"><a id="af2e3a37552802b5c4494972be74e890e"></a>
 static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_quaternion.html#af2e3a37552802b5c4494972be74e890e">CreateFromMatrix3x3</a> (const class <a class="el" href="class_a_z_1_1_matrix3x3.html">Matrix3x3</a> &amp;m)</td></tr>
 <tr class="memdesc:af2e3a37552802b5c4494972be74e890e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion from a <a class="el" href="class_a_z_1_1_matrix3x3.html">Matrix3x3</a>. <br /></td></tr>
@@ -319,6 +347,10 @@ static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</
 <tr class="memitem:a87b3c868f6c574dfb8602b84d69378f4"><td class="memItemLeft" align="right" valign="top"><a id="a87b3c868f6c574dfb8602b84d69378f4"></a>
 static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFromAxisAngle</b> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;axis, float angle)</td></tr>
 <tr class="separator:a87b3c868f6c574dfb8602b84d69378f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ddaa11d0a80e049631d82e4bfd768a"><td class="memItemLeft" align="right" valign="top"><a id="aa6ddaa11d0a80e049631d82e4bfd768a"></a>
+static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_quaternion.html#aa6ddaa11d0a80e049631d82e4bfd768a">CreateFromScaledAxisAngle</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;scaledAxisAngle)</td></tr>
+<tr class="memdesc:aa6ddaa11d0a80e049631d82e4bfd768a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a quaternion from a scaled axis-angle representation. <br /></td></tr>
+<tr class="separator:aa6ddaa11d0a80e049631d82e4bfd768a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6a18792cf9c1c453c87b49dd73fdf81"><td class="memItemLeft" align="right" valign="top"><a id="ac6a18792cf9c1c453c87b49dd73fdf81"></a>
 static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateShortestArc</b> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;v1, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;v2)</td></tr>
 <tr class="separator:ac6a18792cf9c1c453c87b49dd73fdf81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -331,14 +363,14 @@ static const <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#
 <tr class="memdesc:a80dd4b6e61b7f85f142c6c6866208ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion using rotation in radians about the axes. First rotated about the X axis, followed by the Y axis, then the Z axis. <br /></td></tr>
 <tr class="separator:a80dd4b6e61b7f85f142c6c6866208ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:afbd10d351e6ed4eb7c0c533118372fc7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_quaternion.html#afbd10d351e6ed4eb7c0c533118372fc7">CreateRotationX</a> (float angle)</td></tr>
-<tr class="separator:afbd10d351e6ed4eb7c0c533118372fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1755f9244359782babaf059bef1752a3"><td class="memItemLeft" align="right" valign="top"><a id="a1755f9244359782babaf059bef1752a3"></a>
-static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRotationY</b> (float angle)</td></tr>
-<tr class="separator:a1755f9244359782babaf059bef1752a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27167edc76640916591142222c4a9858"><td class="memItemLeft" align="right" valign="top"><a id="a27167edc76640916591142222c4a9858"></a>
-static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRotationZ</b> (float angle)</td></tr>
-<tr class="separator:a27167edc76640916591142222c4a9858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae16be06be1ebb82a57a883af921db88e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_quaternion.html#ae16be06be1ebb82a57a883af921db88e">CreateRotationX</a> (float angleInRadians)</td></tr>
+<tr class="separator:ae16be06be1ebb82a57a883af921db88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc05a3492b4313730bb21a2335e0e51d"><td class="memItemLeft" align="right" valign="top"><a id="adc05a3492b4313730bb21a2335e0e51d"></a>
+static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRotationY</b> (float angleInRadians)</td></tr>
+<tr class="separator:adc05a3492b4313730bb21a2335e0e51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae051f8ff177f753e844dc72dc3e1f53a"><td class="memItemLeft" align="right" valign="top"><a id="ae051f8ff177f753e844dc72dc3e1f53a"></a>
+static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRotationZ</b> (float angleInRadians)</td></tr>
+<tr class="separator:ae051f8ff177f753e844dc72dc3e1f53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab667084cc56cce5713d41b32f270ff3d"></a>
@@ -431,8 +463,8 @@ static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</
 
 </div>
 </div>
-<a id="afbd10d351e6ed4eb7c0c533118372fc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbd10d351e6ed4eb7c0c533118372fc7">&#9670;&nbsp;</a></span>CreateRotationX()</h2>
+<a id="ae16be06be1ebb82a57a883af921db88e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae16be06be1ebb82a57a883af921db88e">&#9670;&nbsp;</a></span>CreateRotationX()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -444,7 +476,7 @@ static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</
           <td class="memname">AZ_MATH_INLINE <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a> AZ::Quaternion::CreateRotationX </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td class="paramname"><em>angleInRadians</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -454,7 +486,7 @@ static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the quaternion to be a rotation around a specified axis. </p>
+<p>Sets the quaternion to be a rotation around a specified axis in radians. </p>
 
 </div>
 </div>
@@ -527,6 +559,24 @@ static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</
       </table>
 </div><div class="memdoc">
 <p>This is the inverse for any quaternion, not just unit quaternions. </p>
+
+</div>
+</div>
+<a id="ae63dec10330004620c00a7346ed50bca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae63dec10330004620c00a7346ed50bca">&#9670;&nbsp;</a></span>GetShortestEquivalent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ_MATH_INLINE <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a> AZ::Quaternion::GetShortestEquivalent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the shortest equivalent of the rotation. In case the w component of the quaternion is negative the rotation is &gt; 180° and taking the longer path. The quaternion will be inverted in that case to take the shortest path of rotation. </p>
 
 </div>
 </div>
@@ -706,10 +756,11 @@ static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">eulerDegrees</td><td>A vector containing component-wise rotation angles in degrees. </td></tr>
+    <tr><td class="paramname">eulerDegrees</td><td>A vector containing component-wise rotation angles in degrees. O3DE_DEPRECATION_NOTICE(GHI-10929) </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>use CreateFromEulerDegreesXYZ </dd></dl>
 
 </div>
 </div>
@@ -730,10 +781,11 @@ static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">eulerRadians</td><td>A vector containing component-wise rotation angles in radians. </td></tr>
+    <tr><td class="paramname">eulerRadians</td><td>A vector containing component-wise rotation angles in radians. O3DE_DEPRECATION_NOTICE(GHI-10929) </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>use CreateFromEulerRadiansXYZ </dd></dl>
 
 </div>
 </div>
@@ -785,7 +837,7 @@ static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:45 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:29 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

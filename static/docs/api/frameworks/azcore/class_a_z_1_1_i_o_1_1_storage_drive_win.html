@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -113,9 +113,9 @@ Protected Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:af4b61a816e2a3676e6db6867e2629b96"><td class="memItemLeft" align="right" valign="top"><a id="af4b61a816e2a3676e6db6867e2629b96"></a>
-OpenFileResult&#160;</td><td class="memItemRight" valign="bottom"><b>OpenFile</b> (HANDLE &amp;fileHandle, size_t &amp;cacheSlot, <a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request, const <a class="el" href="struct_a_z_1_1_i_o_1_1_file_request_1_1_read_data.html">FileRequest::ReadData</a> &amp;data)</td></tr>
-<tr class="separator:af4b61a816e2a3676e6db6867e2629b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a727cbc520745b85155fd38ae94fbe84e"><td class="memItemLeft" align="right" valign="top"><a id="a727cbc520745b85155fd38ae94fbe84e"></a>
+OpenFileResult&#160;</td><td class="memItemRight" valign="bottom"><b>OpenFile</b> (HANDLE &amp;fileHandle, size_t &amp;cacheSlot, <a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request, const <a class="el" href="struct_a_z_1_1_i_o_1_1_requests_1_1_read_data.html">Requests::ReadData</a> &amp;data)</td></tr>
+<tr class="separator:a727cbc520745b85155fd38ae94fbe84e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab25ca93d8d17002760eb1af630ab6a89"><td class="memItemLeft" align="right" valign="top"><a id="ab25ca93d8d17002760eb1af630ab6a89"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReadRequest</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request)</td></tr>
 <tr class="separator:ab25ca93d8d17002760eb1af630ab6a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,9 +146,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>FindInMetaDataCache
 <tr class="memitem:a7ca5c0104b183454715ed6719800baec"><td class="memItemLeft" align="right" valign="top"><a id="a7ca5c0104b183454715ed6719800baec"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetNextMetaDataCacheSlot</b> ()</td></tr>
 <tr class="separator:a7ca5c0104b183454715ed6719800baec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac582b6874d3b8d13f5176bc7bc7d16ca"><td class="memItemLeft" align="right" valign="top"><a id="ac582b6874d3b8d13f5176bc7bc7d16ca"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsServicedByThisDrive</b> (const char *filePath) const</td></tr>
-<tr class="separator:ac582b6874d3b8d13f5176bc7bc7d16ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acedd08cdbc6bd969e79040559b4b0f20"><td class="memItemLeft" align="right" valign="top"><a id="acedd08cdbc6bd969e79040559b4b0f20"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsServicedByThisDrive</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">AZ::IO::PathView</a> filePath) const</td></tr>
+<tr class="separator:acedd08cdbc6bd969e79040559b4b0f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b2fe094b05d99cedecc95d814a1209c"><td class="memItemLeft" align="right" valign="top"><a id="a7b2fe094b05d99cedecc95d814a1209c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>EstimateCompletionTimeForRequest</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request, <a class="el" href="class_a_z_std_1_1chrono_1_1time__point.html">AZStd::chrono::system_clock::time_point</a> &amp;startTime, const <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> *&amp;activeFile, u64 &amp;activeOffset) const</td></tr>
 <tr class="separator:a7b2fe094b05d99cedecc95d814a1209c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,9 +170,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>FinalizeReads</b> ()<
 <tr class="memitem:a1a92d2e888c778931e79a089eda14548"><td class="memItemLeft" align="right" valign="top"><a id="a1a92d2e888c778931e79a089eda14548"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>FinalizeSingleRequest</b> (<a class="el" href="struct_a_z_1_1_i_o_1_1_storage_drive_win_1_1_file_read_status.html">FileReadStatus</a> &amp;status, size_t readSlot, DWORD numBytesTransferred, bool isCanceled, bool encounteredError)</td></tr>
 <tr class="separator:a1a92d2e888c778931e79a089eda14548"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32aea3e5ad4989eb571342aafbff60ec"><td class="memItemLeft" align="right" valign="top"><a id="a32aea3e5ad4989eb571342aafbff60ec"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Report</b> (const <a class="el" href="struct_a_z_1_1_i_o_1_1_file_request_1_1_report_data.html">FileRequest::ReportData</a> &amp;data) const</td></tr>
-<tr class="separator:a32aea3e5ad4989eb571342aafbff60ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d5653c390e72d575fcf9910b69e185f"><td class="memItemLeft" align="right" valign="top"><a id="a0d5653c390e72d575fcf9910b69e185f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Report</b> (const <a class="el" href="struct_a_z_1_1_i_o_1_1_requests_1_1_report_data.html">Requests::ReportData</a> &amp;data) const</td></tr>
+<tr class="separator:a0d5653c390e72d575fcf9910b69e185f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -554,7 +554,7 @@ static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>In
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:48 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:32 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

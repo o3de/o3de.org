@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,8 +46,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_script_asset-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -59,33 +60,6 @@ $(function() {
 
 <p>Inherits <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AZ::Data::AssetData</a>.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ab971035065dd81c170f7059bdcd836df"><td class="memItemLeft" align="right" valign="top"><a id="ab971035065dd81c170f7059bdcd836df"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: u32 { <b>CompiledAssetSubId</b> = 1, 
-<b>CopiedAssetSubId</b> = 2
- }</td></tr>
-<tr class="separator:ab971035065dd81c170f7059bdcd836df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6737805093d04c5750ab453c7ff040b3"><td class="memItemLeft" align="right" valign="top"><a id="a6737805093d04c5750ab453c7ff040b3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptInfo</b> : u8 { <b>AssetVersion</b> = 3, 
-<b>AssetTypeCompiled</b> = 0, 
-<b>AssetTypeText</b> = 1, 
-<b>Invalid</b> = UCHAR_MAX
- }</td></tr>
-<tr class="separator:a6737805093d04c5750ab453c7ff040b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_class_a_z_1_1_data_1_1_asset_data"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_z_1_1_data_1_1_asset_data')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AZ::Data::AssetData</a></td></tr>
-<tr class="memitem:ad5dfcf78a6efdfb4f7c53da4ed9ec9f3 inherit pub_types_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3">AssetStatus</a> : int { <br />
-&#160;&#160;<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3a5111e24c1ecc6266ce0de4b4dc42033b">AssetStatus::NotLoaded</a>, 
-<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3a7b2f31b90fe1c2cc33a52233c1925df3">AssetStatus::Queued</a>, 
-<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3afca649f8236026114edf0f8393565693">AssetStatus::StreamReady</a>, 
-<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3a16bfbf9c462762cf1cba4134ec53c504">AssetStatus::Loading</a>, 
-<br />
-&#160;&#160;<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3ab3f3bfb4251908d40b99b8b67b905ccf">AssetStatus::LoadedPreReady</a>, 
-<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3ae42d5712665f1badb50c33e497674f35">AssetStatus::ReadyPreNotify</a>, 
-<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3ae7d31fc0602fb2ede144d18cdffd816b">AssetStatus::Ready</a>, 
-<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3a902b0d55fddef6f8d651fe1035b7d4bd">AssetStatus::Error</a>
-<br />
- }</td></tr>
-<tr class="separator:ad5dfcf78a6efdfb4f7c53da4ed9ec9f3 inherit pub_types_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a06ab47175abac3ca54b0f325b733515f"><td class="memItemLeft" align="right" valign="top"><a id="a06ab47175abac3ca54b0f325b733515f"></a>
@@ -97,24 +71,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a19f8020895e634fc5e3b93f13c932166"><td class="memItemLeft" align="right" valign="top"><a id="a19f8020895e634fc5e3b93f13c932166"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ScriptAsset</b> (const <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">Data::AssetId</a> &amp;assetId=<a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">Data::AssetId</a>())</td></tr>
 <tr class="separator:a19f8020895e634fc5e3b93f13c932166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8000de8a28513c0f055e1936db27a2a"><td class="memItemLeft" align="right" valign="top"><a id="ac8000de8a28513c0f055e1936db27a2a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptAsset</b> (const <a class="el" href="class_a_z_1_1_script_asset.html">ScriptAsset</a> &amp;rhs)=delete</td></tr>
-<tr class="separator:ac8000de8a28513c0f055e1936db27a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2411d75bf111ffc3101df378978ab35d"><td class="memItemLeft" align="right" valign="top"><a id="a2411d75bf111ffc3101df378978ab35d"></a>
-<a class="el" href="class_a_z_1_1_script_asset.html">ScriptAsset</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1_script_asset.html">ScriptAsset</a> &amp;rhs)=delete</td></tr>
-<tr class="separator:a2411d75bf111ffc3101df378978ab35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af41fecb12b817df86b9b53d9584aa217"><td class="memItemLeft" align="right" valign="top"><a id="af41fecb12b817df86b9b53d9584aa217"></a>
-const <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; char &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetScriptBuffer</b> ()</td></tr>
-<tr class="separator:af41fecb12b817df86b9b53d9584aa217"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa401c13427397d9e93404810853bc6f0"><td class="memItemLeft" align="right" valign="top"><a id="aa401c13427397d9e93404810853bc6f0"></a>
-<a class="el" href="class_a_z_1_1_i_o_1_1_memory_stream.html">IO::MemoryStream</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateMemoryStream</b> ()</td></tr>
-<tr class="separator:aa401c13427397d9e93404810853bc6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af63ffb897624f0db928db9a03345e96c"><td class="memItemLeft" align="right" valign="top"><a id="af63ffb897624f0db928db9a03345e96c"></a>
-<a class="el" href="class_a_z_1_1_i_o_1_1_byte_container_stream.html">IO::ByteContainerStream</a>&lt; <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; char &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateWriteStream</b> ()</td></tr>
-<tr class="separator:af63ffb897624f0db928db9a03345e96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51af3ed032ed9dd0896e9edd392c790c"><td class="memItemLeft" align="right" valign="top"><a id="a51af3ed032ed9dd0896e9edd392c790c"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebugName</b> ()</td></tr>
-<tr class="separator:a51af3ed032ed9dd0896e9edd392c790c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_data_1_1_asset_data"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_data_1_1_asset_data')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AZ::Data::AssetData</a></td></tr>
 <tr class="memitem:a09e1c0ec32d38ac23d15c4911901c868 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top"><a id="a09e1c0ec32d38ac23d15c4911901c868"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a>, <a class="el" href="class_a_z_1_1_system_allocator.html">SystemAllocator</a>, 0)</td></tr>
@@ -137,25 +93,40 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AcquireWeak</b> ()</t
 <tr class="memitem:a41e78ed5f044a8032f5a2816342bd336 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top"><a id="a41e78ed5f044a8032f5a2816342bd336"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseWeak</b> ()</td></tr>
 <tr class="separator:a41e78ed5f044a8032f5a2816342bd336 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a41f68f8e4a19d97ee45e980885b751 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top">AZ_FORCE_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#a2a41f68f8e4a19d97ee45e980885b751">IsReady</a> () const</td></tr>
-<tr class="separator:a2a41f68f8e4a19d97ee45e980885b751 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaeb680f3e89acbd795d1a549e6ff5bbe inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top">AZ_FORCE_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#aaeb680f3e89acbd795d1a549e6ff5bbe">IsError</a> () const</td></tr>
-<tr class="separator:aaeb680f3e89acbd795d1a549e6ff5bbe inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab914a198a5ac61fab5b835dbf3407fd1 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ab914a198a5ac61fab5b835dbf3407fd1">IsReady</a> () const</td></tr>
+<tr class="separator:ab914a198a5ac61fab5b835dbf3407fd1 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26033343da7eebed84116debe6ee971b inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#a26033343da7eebed84116debe6ee971b">IsError</a> () const</td></tr>
+<tr class="separator:a26033343da7eebed84116debe6ee971b inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99c1b3e9da3c70926fa4de8249ae8c80 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top"><a id="a99c1b3e9da3c70926fa4de8249ae8c80"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLoading</b> (bool includeQueued=true) const</td></tr>
 <tr class="separator:a99c1b3e9da3c70926fa4de8249ae8c80 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6d98cc021ee603d43a5b9b254f147e4 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top"><a id="af6d98cc021ee603d43a5b9b254f147e4"></a>
-AZ_FORCE_INLINE <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3">AssetStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetStatus</b> () const</td></tr>
-<tr class="separator:af6d98cc021ee603d43a5b9b254f147e4 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f260f57e5b896c7897aa648f67b6393 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top"><a id="a5f260f57e5b896c7897aa648f67b6393"></a>
-const AZ_FORCE_INLINE <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AssetId</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetId</b> () const</td></tr>
-<tr class="separator:a5f260f57e5b896c7897aa648f67b6393 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40a14307a28e5ed26680b867570f4ca7 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top"><a id="a40a14307a28e5ed26680b867570f4ca7"></a>
-const AZ_FORCE_INLINE <a class="el" href="struct_a_z_1_1_uuid.html">AssetType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetType</b> () const</td></tr>
-<tr class="separator:a40a14307a28e5ed26680b867570f4ca7 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2158b8224168096241993b4cf9023e52 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top"><a id="a2158b8224168096241993b4cf9023e52"></a>
-AZ_FORCE_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><b>GetUseCount</b> () const</td></tr>
-<tr class="separator:a2158b8224168096241993b4cf9023e52 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a91a73b0d4f9ef4c6354892ca7a6c62 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top"><a id="a2a91a73b0d4f9ef4c6354892ca7a6c62"></a>
+<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3">AssetStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetStatus</b> () const</td></tr>
+<tr class="separator:a2a91a73b0d4f9ef4c6354892ca7a6c62 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add51c82d2785a6593475fc3d8484593e inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top"><a id="add51c82d2785a6593475fc3d8484593e"></a>
+const <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AssetId</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetId</b> () const</td></tr>
+<tr class="separator:add51c82d2785a6593475fc3d8484593e inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565dce79c8fa17e80e786c2c1a91898e inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top"><a id="a565dce79c8fa17e80e786c2c1a91898e"></a>
+const <a class="el" href="struct_a_z_1_1_uuid.html">AssetType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetType</b> () const</td></tr>
+<tr class="separator:a565dce79c8fa17e80e786c2c1a91898e inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9afba4a987ea199a81d409a211a8d99 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top"><a id="ab9afba4a987ea199a81d409a211a8d99"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetUseCount</b> () const</td></tr>
+<tr class="separator:ab9afba4a987ea199a81d409a211a8d99 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fadb01dae5198c539c9bed78cd78c76 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top"><a id="a0fadb01dae5198c539c9bed78cd78c76"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetCreationToken</b> () const</td></tr>
+<tr class="separator:a0fadb01dae5198c539c9bed78cd78c76 inherit pub_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a1729a6160fb5ff69d1b305098d8a21bb"><td class="memItemLeft" align="right" valign="top"><a id="a1729a6160fb5ff69d1b305098d8a21bb"></a>
+<a class="el" href="class_a_z_1_1_lua_script_data.html">LuaScriptData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b></td></tr>
+<tr class="separator:a1729a6160fb5ff69d1b305098d8a21bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aa920f3b4efe071cf5105e1772f65aa6c"><td class="memItemLeft" align="right" valign="top"><a id="aa920f3b4efe071cf5105e1772f65aa6c"></a>
+static const u32&#160;</td><td class="memItemRight" valign="bottom"><b>CompiledAssetSubId</b> = 1</td></tr>
+<tr class="separator:aa920f3b4efe071cf5105e1772f65aa6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -165,6 +136,20 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptSystemComponen
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_a_z_1_1_data_1_1_asset_data"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_z_1_1_data_1_1_asset_data')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AZ::Data::AssetData</a></td></tr>
+<tr class="memitem:ad5dfcf78a6efdfb4f7c53da4ed9ec9f3 inherit pub_types_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3">AssetStatus</a> : int { <br />
+&#160;&#160;<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3a5111e24c1ecc6266ce0de4b4dc42033b">AssetStatus::NotLoaded</a>, 
+<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3a7b2f31b90fe1c2cc33a52233c1925df3">AssetStatus::Queued</a>, 
+<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3afca649f8236026114edf0f8393565693">AssetStatus::StreamReady</a>, 
+<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3a16bfbf9c462762cf1cba4134ec53c504">AssetStatus::Loading</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3ab3f3bfb4251908d40b99b8b67b905ccf">AssetStatus::LoadedPreReady</a>, 
+<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3ae42d5712665f1badb50c33e497674f35">AssetStatus::ReadyPreNotify</a>, 
+<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3ae7d31fc0602fb2ede144d18cdffd816b">AssetStatus::Ready</a>, 
+<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3a902b0d55fddef6f8d651fe1035b7d4bd">AssetStatus::Error</a>
+<br />
+ }</td></tr>
+<tr class="separator:ad5dfcf78a6efdfb4f7c53da4ed9ec9f3 inherit pub_types_class_a_z_1_1_data_1_1_asset_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_a_z_1_1_data_1_1_asset_data"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_a_z_1_1_data_1_1_asset_data')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AZ::Data::AssetData</a></td></tr>
 <tr class="memitem:a78fc734eba42d55ee17bd1b69218e17a inherit pub_static_methods_class_a_z_1_1_data_1_1_asset_data"><td class="memItemLeft" align="right" valign="top"><a id="a78fc734eba42d55ee17bd1b69218e17a"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (<a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a> *context)</td></tr>
@@ -230,7 +215,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_creationToken</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:45 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:29 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

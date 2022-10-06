@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,160 +46,58 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_physics_1_1_material-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Physics::Material Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;Material.h&gt;</code></p>
+<p>Runtime Physics material instance.  
+ <a href="class_physics_1_1_material.html#details">More...</a></p>
+
+<p><code>#include &lt;PhysicsMaterial.h&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:aab6fac9c9b38d1bf830d2fafdc04b31a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material.html#aab6fac9c9b38d1bf830d2fafdc04b31a">CombineMode</a> : AZ::u8 { <b>Average</b>, 
-<b>Minimum</b>, 
-<b>Maximum</b>, 
-<b>Multiply</b>
- }</td></tr>
-<tr class="separator:aab6fac9c9b38d1bf830d2fafdc04b31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab5325b7a2b66355a75470bd5b9416697"><td class="memItemLeft" align="right" valign="top"><a id="ab5325b7a2b66355a75470bd5b9416697"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_physics_1_1_material.html">Material</a>, AZ::SystemAllocator, 0)</td></tr>
-<tr class="separator:ab5325b7a2b66355a75470bd5b9416697"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa922f8f2175fc87e6af08f4168d75aca"><td class="memItemLeft" align="right" valign="top"><a id="aa922f8f2175fc87e6af08f4168d75aca"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_physics_1_1_material.html">Physics::Material</a>, &quot;{44636CEA-46DD-4D4A-B1EF-5ED6DEA7F714}&quot;)</td></tr>
-<tr class="separator:aa922f8f2175fc87e6af08f4168d75aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7e2227890df1880db2b86d8be4ef32e"><td class="memItemLeft" align="right" valign="top"><a id="af7e2227890df1880db2b86d8be4ef32e"></a>
-virtual AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material.html#af7e2227890df1880db2b86d8be4ef32e">GetSurfaceType</a> () const =0</td></tr>
-<tr class="memdesc:af7e2227890df1880db2b86d8be4ef32e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns AZ::Crc32 of the surface name. <br /></td></tr>
-<tr class="separator:af7e2227890df1880db2b86d8be4ef32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae99d095756b209fefe2691b6e12b8d2d"><td class="memItemLeft" align="right" valign="top"><a id="ae99d095756b209fefe2691b6e12b8d2d"></a>
-virtual const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfaceTypeName</b> () const =0</td></tr>
-<tr class="separator:ae99d095756b209fefe2691b6e12b8d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad118f7873fe2e360eca9bec5e177767b"><td class="memItemLeft" align="right" valign="top"><a id="ad118f7873fe2e360eca9bec5e177767b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSurfaceTypeName</b> (const AZStd::string &amp;surfaceTypeName)=0</td></tr>
-<tr class="separator:ad118f7873fe2e360eca9bec5e177767b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bec516db6b747816367046fbbdd3469"><td class="memItemLeft" align="right" valign="top"><a id="a7bec516db6b747816367046fbbdd3469"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetDynamicFriction</b> () const =0</td></tr>
-<tr class="separator:a7bec516db6b747816367046fbbdd3469"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac76bd766dfdfa7ca314010027441d3c8"><td class="memItemLeft" align="right" valign="top"><a id="ac76bd766dfdfa7ca314010027441d3c8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDynamicFriction</b> (float dynamicFriction)=0</td></tr>
-<tr class="separator:ac76bd766dfdfa7ca314010027441d3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c498edcec431ca25b1d2df8e33adfd1"><td class="memItemLeft" align="right" valign="top"><a id="a4c498edcec431ca25b1d2df8e33adfd1"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticFriction</b> () const =0</td></tr>
-<tr class="separator:a4c498edcec431ca25b1d2df8e33adfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ccbc334430ba2963db81ab55f5b63e5"><td class="memItemLeft" align="right" valign="top"><a id="a0ccbc334430ba2963db81ab55f5b63e5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStaticFriction</b> (float staticFriction)=0</td></tr>
-<tr class="separator:a0ccbc334430ba2963db81ab55f5b63e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbc1ffb0cc2ddb90be0769a016fe4ed3"><td class="memItemLeft" align="right" valign="top"><a id="adbc1ffb0cc2ddb90be0769a016fe4ed3"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetRestitution</b> () const =0</td></tr>
-<tr class="separator:adbc1ffb0cc2ddb90be0769a016fe4ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a045d5389d216e84d42ce72bee74bb141"><td class="memItemLeft" align="right" valign="top"><a id="a045d5389d216e84d42ce72bee74bb141"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRestitution</b> (float restitution)=0</td></tr>
-<tr class="separator:a045d5389d216e84d42ce72bee74bb141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cef5761c9be218b8f45c06cf81bbc57"><td class="memItemLeft" align="right" valign="top"><a id="a6cef5761c9be218b8f45c06cf81bbc57"></a>
-virtual <a class="el" href="class_physics_1_1_material.html#aab6fac9c9b38d1bf830d2fafdc04b31a">CombineMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrictionCombineMode</b> () const =0</td></tr>
-<tr class="separator:a6cef5761c9be218b8f45c06cf81bbc57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27e7969f98960b41b1b003e4b48a02a0"><td class="memItemLeft" align="right" valign="top"><a id="a27e7969f98960b41b1b003e4b48a02a0"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFrictionCombineMode</b> (<a class="el" href="class_physics_1_1_material.html#aab6fac9c9b38d1bf830d2fafdc04b31a">CombineMode</a> mode)=0</td></tr>
-<tr class="separator:a27e7969f98960b41b1b003e4b48a02a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6e688d3b98f3b769ef7d16ca2f53fb6"><td class="memItemLeft" align="right" valign="top"><a id="ac6e688d3b98f3b769ef7d16ca2f53fb6"></a>
-virtual <a class="el" href="class_physics_1_1_material.html#aab6fac9c9b38d1bf830d2fafdc04b31a">CombineMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRestitutionCombineMode</b> () const =0</td></tr>
-<tr class="separator:ac6e688d3b98f3b769ef7d16ca2f53fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6df1551c4623626af5ca3a3551c46191"><td class="memItemLeft" align="right" valign="top"><a id="a6df1551c4623626af5ca3a3551c46191"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRestitutionCombineMode</b> (<a class="el" href="class_physics_1_1_material.html#aab6fac9c9b38d1bf830d2fafdc04b31a">CombineMode</a> mode)=0</td></tr>
-<tr class="separator:a6df1551c4623626af5ca3a3551c46191"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab95770d53cb5a0e213054576f3b25a35"><td class="memItemLeft" align="right" valign="top"><a id="ab95770d53cb5a0e213054576f3b25a35"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetDensity</b> () const =0</td></tr>
-<tr class="separator:ab95770d53cb5a0e213054576f3b25a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa492456f270c275636a1275af1bfe18a"><td class="memItemLeft" align="right" valign="top"><a id="aa492456f270c275636a1275af1bfe18a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDensity</b> (float density)=0</td></tr>
-<tr class="separator:aa492456f270c275636a1275af1bfe18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac10a6124bda2a713a9106952c7b94a8b"><td class="memItemLeft" align="right" valign="top"><a id="ac10a6124bda2a713a9106952c7b94a8b"></a>
-virtual AZ::Color&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebugColor</b> () const =0</td></tr>
-<tr class="separator:ac10a6124bda2a713a9106952c7b94a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a097dfbfc7e7e3044950083e654d37b25"><td class="memItemLeft" align="right" valign="top"><a id="a097dfbfc7e7e3044950083e654d37b25"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugColor</b> (const AZ::Color &amp;debugColor)=0</td></tr>
-<tr class="separator:a097dfbfc7e7e3044950083e654d37b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55dfaea4ee3e8e00204d0d7010dd3955"><td class="memItemLeft" align="right" valign="top">virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material.html#a55dfaea4ee3e8e00204d0d7010dd3955">GetCryEngineSurfaceId</a> () const =0</td></tr>
-<tr class="separator:a55dfaea4ee3e8e00204d0d7010dd3955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc7e9ff6e629c51bcde541bf74fa4b6d"><td class="memItemLeft" align="right" valign="top"><a id="afc7e9ff6e629c51bcde541bf74fa4b6d"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material.html#afc7e9ff6e629c51bcde541bf74fa4b6d">GetNativePointer</a> ()=0</td></tr>
-<tr class="memdesc:afc7e9ff6e629c51bcde541bf74fa4b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns underlying pointer of the native physics type (for example PxMaterial in PhysX). <br /></td></tr>
-<tr class="separator:afc7e9ff6e629c51bcde541bf74fa4b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0ba0cc4219ad9582fecfc5bee73bd2"><td class="memItemLeft" align="right" valign="top"><a id="acf0ba0cc4219ad9582fecfc5bee73bd2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_physics_1_1_material_asset.html">Physics::MaterialAsset</a>, &quot;{B0C593B9-F58E-47BF-856B-2F202A9E8813}&quot;)</td></tr>
+<tr class="separator:acf0ba0cc4219ad9582fecfc5bee73bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9db99a519459868babfa488920f1ff9"><td class="memItemLeft" align="right" valign="top"><a id="ae9db99a519459868babfa488920f1ff9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Material</b> (const <a class="el" href="struct_physics_1_1_material_id.html">MaterialId</a> &amp;id, const AZ::Data::Asset&lt; <a class="el" href="class_physics_1_1_material_asset.html">MaterialAsset</a> &gt; &amp;materialAsset)</td></tr>
+<tr class="separator:ae9db99a519459868babfa488920f1ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769749b65178a79edc4771f752ef5012"><td class="memItemLeft" align="right" valign="top"><a id="a769749b65178a79edc4771f752ef5012"></a>
+virtual <a class="el" href="class_physics_1_1_material_property_value.html">MaterialPropertyValue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetProperty</b> (AZStd::string_view propertyName) const =0</td></tr>
+<tr class="separator:a769749b65178a79edc4771f752ef5012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f34af870d3e97130620f1bb88d0a0c"><td class="memItemLeft" align="right" valign="top"><a id="a99f34af870d3e97130620f1bb88d0a0c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetProperty</b> (AZStd::string_view propertyName, <a class="el" href="class_physics_1_1_material_property_value.html">MaterialPropertyValue</a> value)=0</td></tr>
+<tr class="separator:a99f34af870d3e97130620f1bb88d0a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89fdb74d7d032cf3acd6b42ecbb392ff"><td class="memItemLeft" align="right" valign="top"><a id="a89fdb74d7d032cf3acd6b42ecbb392ff"></a>
+<a class="el" href="struct_physics_1_1_material_id.html">MaterialId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetId</b> () const</td></tr>
+<tr class="separator:a89fdb74d7d032cf3acd6b42ecbb392ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c363e62db0070615d1eb8ce4f0faba"><td class="memItemLeft" align="right" valign="top"><a id="ad9c363e62db0070615d1eb8ce4f0faba"></a>
+AZ::Data::Asset&lt; <a class="el" href="class_physics_1_1_material_asset.html">MaterialAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaterialAsset</b> () const</td></tr>
+<tr class="separator:ad9c363e62db0070615d1eb8ce4f0faba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a4354b79da61f0fcb11cfd62439681580"><td class="memItemLeft" align="right" valign="top"><a id="a4354b79da61f0fcb11cfd62439681580"></a>
+<a class="el" href="struct_physics_1_1_material_id.html">MaterialId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_id</b></td></tr>
+<tr class="separator:a4354b79da61f0fcb11cfd62439681580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3904072e7da10566cbfbc421da35ae13"><td class="memItemLeft" align="right" valign="top"><a id="a3904072e7da10566cbfbc421da35ae13"></a>
+AZ::Data::Asset&lt; <a class="el" href="class_physics_1_1_material_asset.html">MaterialAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialAsset</b></td></tr>
+<tr class="separator:a3904072e7da10566cbfbc421da35ae13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h1><a class="anchor" id="autotoc_md0"></a>
-Physics material</h1>
-<p>This is the interface to the wrapper around native material type (such as PxMaterial in PhysX gem) that stores extra metadata, like Surface Type name.</p>
-<h2><a class="anchor" id="autotoc_md1"></a>
-Usage example</h2>
-<p>Create new material using Physics::SystemRequestBus and <a class="el" href="class_physics_1_1_material_configuration.html">Physics::MaterialConfiguration</a>: </p><pre class="fragment">Physics::MaterialConfiguration materialProperties;
-AZStd::shared_ptr&lt;Physics::Material&gt; newMaterial = AZ::Interface&lt;Physics::System&gt;::Get()-&gt;CreateMaterial(materialProperties);
-</pre> </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="aab6fac9c9b38d1bf830d2fafdc04b31a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab6fac9c9b38d1bf830d2fafdc04b31a">&#9670;&nbsp;</a></span>CombineMode</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="class_physics_1_1_material.html#aab6fac9c9b38d1bf830d2fafdc04b31a">Physics::Material::CombineMode</a> : AZ::u8</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Enumeration that determines how two materials properties are combined when processing collisions. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a55dfaea4ee3e8e00204d0d7010dd3955"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55dfaea4ee3e8e00204d0d7010dd3955">&#9670;&nbsp;</a></span>GetCryEngineSurfaceId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual AZ::u32 Physics::Material::GetCryEngineSurfaceId </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>If the name of this material matches the name of one of the CrySurface types, it will return its CrySurface Id.<br  />
-If there's no match it will return default CrySurface Id.<br  />
-CrySurface types are defined in libs/materialeffects/surfacetypes.xml </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>Code/Framework/AzFramework/AzFramework/Physics/Material.h</li>
+<div class="textblock"><p>Runtime Physics material instance. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzFramework/AzFramework/Physics/Material/PhysicsMaterial.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:24 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:15 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

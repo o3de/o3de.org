@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AtomLyIntegration Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -53,9 +53,6 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>MaterialComponent can send out notifications on the MaterialComponentNotificationBus.  
- <a href="class_a_z_1_1_render_1_1_material_component_notifications.html#details">More...</a></p>
-
 <p><code>#include &lt;MaterialComponentBus.h&gt;</code></p>
 
 <p>Inherits ComponentBus.</p>
@@ -64,26 +61,56 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad83a2c096d5355137b0829390dcc236d"><td class="memItemLeft" align="right" valign="top"><a id="ad83a2c096d5355137b0829390dcc236d"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_notifications.html#ad83a2c096d5355137b0829390dcc236d">OnMaterialsEdited</a> ()</td></tr>
-<tr class="memdesc:ad83a2c096d5355137b0829390dcc236d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This message is sent every time a material or property update affects UI. <br /></td></tr>
+<tr class="memdesc:ad83a2c096d5355137b0829390dcc236d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This notification is sent whenever material changes are made that need to be reflected in the UI. <br /></td></tr>
 <tr class="separator:ad83a2c096d5355137b0829390dcc236d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a121dee88241181a9643c1afd0d30979d"><td class="memItemLeft" align="right" valign="top"><a id="a121dee88241181a9643c1afd0d30979d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_notifications.html#a121dee88241181a9643c1afd0d30979d">OnMaterialsUpdated</a> ([[maybe_unused]] const MaterialAssignmentMap &amp;materials)</td></tr>
-<tr class="memdesc:a121dee88241181a9643c1afd0d30979d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This message is sent when one or more material property changes have been applied, at most once per frame. <br /></td></tr>
+<tr class="memitem:a7f4fa6508d3a2d3bf2834d8d6fe17404"><td class="memItemLeft" align="right" valign="top"><a id="a7f4fa6508d3a2d3bf2834d8d6fe17404"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_notifications.html#a7f4fa6508d3a2d3bf2834d8d6fe17404">OnMaterialSlotLayoutChanged</a> ()</td></tr>
+<tr class="memdesc:a7f4fa6508d3a2d3bf2834d8d6fe17404"><td class="mdescLeft">&#160;</td><td class="mdescRight">This notification is forwarded from the consumer whenever material slot layout or default values are changed. <br /></td></tr>
+<tr class="separator:a7f4fa6508d3a2d3bf2834d8d6fe17404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121dee88241181a9643c1afd0d30979d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_notifications.html#a121dee88241181a9643c1afd0d30979d">OnMaterialsUpdated</a> ([[maybe_unused]] const MaterialAssignmentMap &amp;materials)</td></tr>
 <tr class="separator:a121dee88241181a9643c1afd0d30979d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47378e702cdd1d488a070765d7f7277e"><td class="memItemLeft" align="right" valign="top"><a id="a47378e702cdd1d488a070765d7f7277e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_notifications.html#a47378e702cdd1d488a070765d7f7277e">OnMaterialInstanceCreated</a> ([[maybe_unused]] const MaterialAssignment &amp;materialAssignment)</td></tr>
-<tr class="memdesc:a47378e702cdd1d488a070765d7f7277e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This message is sent when the component has created the material instance to be used for rendering. <br /></td></tr>
+<tr class="memdesc:a47378e702cdd1d488a070765d7f7277e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This notification is sent whenever the material component creates a new material instance. <br /></td></tr>
 <tr class="separator:a47378e702cdd1d488a070765d7f7277e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>MaterialComponent can send out notifications on the MaterialComponentNotificationBus. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>MaterialComponentNotificationBus notifications are sent whenever the state of the material component changes in a way that would affect tools or consumers. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a121dee88241181a9643c1afd0d30979d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a121dee88241181a9643c1afd0d30979d">&#9670;&nbsp;</a></span>OnMaterialsUpdated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::MaterialComponentNotifications::OnMaterialsUpdated </td>
+          <td>(</td>
+          <td class="paramtype">[[maybe_unused] ] const MaterialAssignmentMap &amp;&#160;</td>
+          <td class="paramname"><em>materials</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This notification is sent whenever the material component has completed adding or removing a batch of instances for the material consumer to apply. The notification is not sent for individual property changes because the material component applies property changes directly to the material instances it manages. The notification should only be sent once per batch of changes, after material assets have been loaded, reloaded, or if a material property change resulted in creating a new, unique instance. Other functions can be invoked through editing or script that might also result in this notification being sent. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/AtomLyIntegration/CommonFeatures/Code/Include/AtomLyIntegration/CommonFeatures/Material/MaterialComponentBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:33 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:27 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Terrain Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -48,6 +48,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_terrain_1_1_terrain_area_surface_requests-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Terrain::TerrainAreaSurfaceRequests Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -59,13 +60,13 @@ $(function() {
 
 <p><code>#include &lt;TerrainGradientSurfaceListBus.h&gt;</code></p>
 
-<p>Inherits ComponentBus.</p>
+<p>Inherits EBusSharedDispatchTraits&lt; TerrainAreaSurfaceRequests &gt;.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ade7b51cefe50e92945200c9644b34bb0"><td class="memItemLeft" align="right" valign="top"><a id="ade7b51cefe50e92945200c9644b34bb0"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>MutexType</b> = AZStd::recursive_mutex</td></tr>
-<tr class="separator:ade7b51cefe50e92945200c9644b34bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e54e072290c7e8b6261c5479344fcc"><td class="memItemLeft" align="right" valign="top"><a id="a84e54e072290c7e8b6261c5479344fcc"></a>
+typedef AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>BusIdType</b></td></tr>
+<tr class="separator:a84e54e072290c7e8b6261c5479344fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade7b51cefe50e92945200c9644b34bb0"><td class="memItemLeft" align="right" valign="top"><a id="ade7b51cefe50e92945200c9644b34bb0"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>MutexType</b> = AZStd::recursive_mutex</td></tr>
 <tr class="separator:ade7b51cefe50e92945200c9644b34bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -76,12 +77,23 @@ Public Member Functions</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terrain_1_1_terrain_area_surface_requests.html#a48ec7b8969018588872d9b6d031de004">GetSurfaceWeights</a> (const AZ::Vector3 &amp;inPosition, AzFramework::SurfaceData::SurfaceTagWeightList &amp;outSurfaceWeights) const =0</td></tr>
 <tr class="memdesc:a48ec7b8969018588872d9b6d031de004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the surfaces and weights from a gradient at a given position. <br /></td></tr>
 <tr class="separator:a48ec7b8969018588872d9b6d031de004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2bb5124d2274dd0d3861f2cfcd8743b"><td class="memItemLeft" align="right" valign="top"><a id="ae2bb5124d2274dd0d3861f2cfcd8743b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terrain_1_1_terrain_area_surface_requests.html#ae2bb5124d2274dd0d3861f2cfcd8743b">GetSurfaceWeightsFromList</a> (AZStd::span&lt; const AZ::Vector3 &gt; inPositionList, AZStd::span&lt; AzFramework::SurfaceData::SurfaceTagWeightList &gt; outSurfaceWeightsList) const =0</td></tr>
+<tr class="memdesc:ae2bb5124d2274dd0d3861f2cfcd8743b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the surfaces and weights from a gradient at a given list of positions. <br /></td></tr>
+<tr class="separator:ae2bb5124d2274dd0d3861f2cfcd8743b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9e4f611a26e1f9b9c9bd859aab92dae"><td class="memItemLeft" align="right" valign="top"><a id="ac9e4f611a26e1f9b9c9bd859aab92dae"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfaceWeights</b> (const AZ::Vector3 &amp;inPosition, SurfaceData::SurfaceTagWeightMap &amp;surfaceWeights) const =0</td></tr>
 <tr class="separator:ac9e4f611a26e1f9b9c9bd859aab92dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a8ca7359e868740afa7a6bbf29c88e190"><td class="memItemLeft" align="right" valign="top"><a id="a8ca7359e868740afa7a6bbf29c88e190"></a>
+static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>AddressPolicy</b> = AZ::EBusAddressPolicy::ById</td></tr>
+<tr class="separator:a8ca7359e868740afa7a6bbf29c88e190"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This bus provides retrieval of information from Terrain Surfaces. </p>
+<p>This bus provides retrieval of information from Terrain Surfaces. This bus uses shared dispatches, which means that all requests on the bus can run in parallel, but will NOT run in parallel with bus connections / disconnections. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>Gems/Terrain/Code/Include/Terrain/Ebuses/TerrainAreaSurfaceRequestBus.h</li>
 <li>Gems/Terrain/Code/Include/Terrain/Ebuses/TerrainGradientSurfaceListBus.h</li>
@@ -89,7 +101,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfaceWei
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:15 for Open 3D Engine Terrain Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:47 for Open 3D Engine Terrain Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -66,9 +66,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>DecalHandle</b> = <a
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a60e7cd584416a07d8269e9b8cf066f95"><td class="memItemLeft" align="right" valign="top"><a id="a60e7cd584416a07d8269e9b8cf066f95"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html">AZ::Render::DecalFeatureProcessorInterface</a>, &quot;{4A64E427-7F9F-4AF7-B414-69EA91323827}&quot;, RPI::FeatureProcessor)</td></tr>
-<tr class="separator:a60e7cd584416a07d8269e9b8cf066f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6997ae3f822093a70de3fbf6bc78975"><td class="memItemLeft" align="right" valign="top"><a id="ac6997ae3f822093a70de3fbf6bc78975"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html">AZ::Render::DecalFeatureProcessorInterface</a>, &quot;{4A64E427-7F9F-4AF7-B414-69EA91323827}&quot;, AZ::RPI::FeatureProcessor)</td></tr>
+<tr class="separator:ac6997ae3f822093a70de3fbf6bc78975"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7879cf4fc364b1c51186ffbf622a5429"><td class="memItemLeft" align="right" valign="top"><a id="a7879cf4fc364b1c51186ffbf622a5429"></a>
 virtual <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DecalHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#a7879cf4fc364b1c51186ffbf622a5429">AcquireDecal</a> ()=0</td></tr>
 <tr class="memdesc:a7879cf4fc364b1c51186ffbf622a5429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new decal which can be referenced by the returned DecalHandle. Must be released via <a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#ac1bc01d93a79dd64a4ff3f7ee4f59b44" title="Releases a Decal.">ReleaseDecal()</a> when no longer needed. <br /></td></tr>
@@ -105,6 +105,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#aaadd6e50e8d5243933e5e4f429541a25">SetDecalOpacity</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DecalHandle</a> handle, float opacity)=0</td></tr>
 <tr class="memdesc:aaadd6e50e8d5243933e5e4f429541a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the opacity of the decal. <br /></td></tr>
 <tr class="separator:aaadd6e50e8d5243933e5e4f429541a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c1ecf93c56edf9cbf098715d55031e"><td class="memItemLeft" align="right" valign="top"><a id="ab7c1ecf93c56edf9cbf098715d55031e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#ab7c1ecf93c56edf9cbf098715d55031e">SetDecalNormalMapOpacity</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DecalHandle</a> handle, float opacity)=0</td></tr>
+<tr class="memdesc:ab7c1ecf93c56edf9cbf098715d55031e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the opacity of the decal normal map. <br /></td></tr>
+<tr class="separator:ab7c1ecf93c56edf9cbf098715d55031e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48507fc4a3ea666aadc9b7e3494b1bde"><td class="memItemLeft" align="right" valign="top"><a id="a48507fc4a3ea666aadc9b7e3494b1bde"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#a48507fc4a3ea666aadc9b7e3494b1bde">SetDecalMaterial</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DecalHandle</a> handle, const AZ::Data::AssetId)=0</td></tr>
 <tr class="memdesc:a48507fc4a3ea666aadc9b7e3494b1bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the material information for this decal. <br /></td></tr>
@@ -145,6 +149,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a98270908692bffdf4bf5cc6817236580">Deactivate</a> ()</td></tr>
 <tr class="memdesc:a98270908692bffdf4bf5cc6817236580 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform any necessary deactivation. <br /></td></tr>
 <tr class="separator:a98270908692bffdf4bf5cc6817236580 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41df34f125055709089709397a528c90 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top"><a id="a41df34f125055709089709397a528c90"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a41df34f125055709089709397a528c90">ApplyRenderPipelineChange</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *)</td></tr>
+<tr class="memdesc:a41df34f125055709089709397a528c90 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply changes and add additional render passes to the render pipeline from the feature processors. <br /></td></tr>
+<tr class="separator:a41df34f125055709089709397a528c90 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28b655ac096c209bfdcd3cf93bcf32b2 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a28b655ac096c209bfdcd3cf93bcf32b2">PrepareViews</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_feature_processor_1_1_prepare_views_packet.html">PrepareViewsPacket</a> &amp;, AZStd::vector&lt; AZStd::pair&lt; PipelineViewTag, ViewPtr &gt;&gt; &amp;)</td></tr>
 <tr class="separator:a28b655ac096c209bfdcd3cf93bcf32b2 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39a87cce766c54804df525b96d4a499b inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a39a87cce766c54804df525b96d4a499b">Simulate</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_feature_processor_1_1_simulate_packet.html">SimulatePacket</a> &amp;)</td></tr>
@@ -165,7 +173,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 <tr class="separator:a81d7925d975d56eb9ce78b03d5bc04c9 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html">DecalFeatureProcessorInterface</a> provides an interface to acquire, release, and update a decal. This is necessary for code outside of the Atom features gem to communicate with the DecalFeatureProcessor. </p>
+<div class="textblock"><p><a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html">DecalFeatureProcessorInterface</a> provides an interface to acquire, release, and update a decal. This is necessary for code outside of the Atom features gem to communicate with the DecalTextureArrayFeatureProcessor. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa177fe674ad407a8c0665bc303aa8469"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa177fe674ad407a8c0665bc303aa8469">&#9670;&nbsp;</a></span>SetDecalTransform()</h2>
@@ -210,7 +218,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
