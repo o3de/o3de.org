@@ -147,13 +147,13 @@ The ``ManifestAction`` input argument refers to the behavior type the applicatio
 
 The ManifestMetaInfoBus is used to gather and manage UX elements in the scene manifest for a source asset scene file. For example, it used in the Editor to fetch the names of the tabs of the group types and the rules the group can manage for the Scene Settings dialog.
 
-The AZ::SceneAPI::Events::ManifestMetaInfoBus events:
+The `AZ::SceneAPI::Events::ManifestMetaInfoBus` events:
 
-* GetCategoryAssignments -- Gets a list of all the categories and the class identifiers that are listed for that category.
-* GetIconPath -- Gets the path to the icon associated with the given group or rule.
-* GetAvailableModifiers -- Gets a list of modifiers (such as rules for groups) that the target accepts.
-* InitializeObject -- Initialized the given manifest group or rule based on the scene.
-* ObjectUpdated -- Called when an existing group or rule is updated.
+* `GetCategoryAssignments` - Gets a list of all the categories and the class identifiers that are listed for that category.
+* `GetIconPath` - Gets the path to the icon associated with the given group or rule.
+* `GetAvailableModifiers` - Gets a list of modifiers (such as rules for groups) that the target accepts.
+* `InitializeObject` - Initialized the given manifest group or rule based on the scene.
+* `ObjectUpdated` - Called when an existing group or rule is updated.
 
 ## The scene logging example
 
