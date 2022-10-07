@@ -16,7 +16,7 @@ The scene pipeline is a specialized asset builder that imports source scene file
 | [Scene Builder](scene-builder) | Asset builders that are designed to manage and export parts of the scene graph. |
 | [User Defined Properties](user_defined_properties.md) | A mechanism to use custom properties set in source scene files in the scene builder pipeline. |
 
-The following diagram shows the scene pipeline flow.
+The following diagram shows the scene pipeline flow:
 
 ![Scene pipeline flow.](/images/user-guide/assets/scene-pipeline/scene-pipeline-flow.png)
 
