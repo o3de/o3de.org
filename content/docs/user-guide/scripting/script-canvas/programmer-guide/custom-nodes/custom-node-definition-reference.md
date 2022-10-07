@@ -43,7 +43,8 @@ The __Class__ tag is used to define the node's appearance within O3DE. Many of t
 | __EditAttributes__ | Optional | Provides __EditContext__ attributes in the node's serialization. Use the `@` character to separate the key/value. Separate multiple attributes with a semi colon (`;`). | `EditAttributes="AZ::Script::Attributes::ExcludeFrom@AZ::Script::Attributes::ExcludeFlags::All;` `ScriptCanvas::Attributes::Node::TitlePaletteOverride@StringNodeTitlePalette"` |
 | __DynamicSlotOrdering__ | Optional | Enable this when the order of slots may change at edit time. By default, this is disabled. | `DynamicSlotOrdering="True"` |
 ----
-         
+
+Note: When specifying C++ code you must use the HTML Entity Codes. For example, in the case of __EventHandler__, instead of the C++ code `SerializeContextOnWriteEndHandler<EBusEventHandler>`, specify `SerializeContextOnWriteEndHandler&lt;EBusEventHandler&gt;`
 
 
 ### Examples
@@ -65,7 +66,7 @@ The __Class__ tag is used to define the node's appearance within O3DE. Many of t
 
 ## Execution slot elements
 
-### <a name="input"></a>Input
+### Input
 
 The __Input__ tag is used to configure execution entry slots on a node. Visually these would be on the left side of a node in the Script Canvas editor.
 
@@ -80,7 +81,7 @@ The __Input__ tag is used to configure execution entry slots on a node. Visually
 | __Latent__| Optional | This only applies if the __Output__ attribute is provided, it signals that the __Output__ slot may not execute immediately and may take more than one frame | `Output="Done" Latent="true"` |
 ----
 
-### <a name="output"></a>Output
+### Output
 
 The __Output__ tag is used to configure execution exit slots on a node. Visually these would be on the right side of a node in the Script Canvas editor.
 
@@ -99,6 +100,9 @@ The __Output__ tag is used to configure execution exit slots on a node. Visually
 ```xml
 <Input Name="Start" Output="Started" Description="Use this to start this operation"/>
 <Input Name="Stop " Output="Stopped" Latent="true" Description="Use this to stop this operation"/>
+
+<Output Name="Out" Description="Called immediately after this node is invoked"/>
+<Output Name="OperationComplete" Latent="true" Description="Called when this node's operation has finished"/>
 ```
 
 ## Data slot elements
@@ -138,7 +142,7 @@ The __Parameter__ tag can be specified within the __Input__ tag, it is used to d
 | __IsOutput__ | [Grammar Only](#grammar) | Used to define if this property will be placed as an output data slot on a node. This option is only available for Nodeables | `IsOutput="True"` or `IsOutput="False"` |
 
 
-### <a name="propertydata"></a>PropertyData
+### PropertyData
 
 The __PropertyData__ can be provided for elements of __Property__, it provides a mechanism to override certain __EditContext__ parameters of the type's reflection.
 
@@ -146,7 +150,7 @@ The __PropertyData__ can be provided for elements of __Property__, it provides a
 | ---------- | ------------| ------------| ------------| 
 | __Name__ | Required | The name of the property, this is the name that will of the slot on the node | `Name="Time Unit"` |
 
-### <a href="#editattribute"></a> EditAttribute
+### EditAttribute
 
 The __EditAttribute__ element can be provided within __PropertyData__, it allows to provide O3DE serialization attributes to the property.
 
@@ -171,9 +175,9 @@ The __EditAttribute__ element can be provided within __PropertyData__, it allows
 
 ----
 
-### <a href="#parameter"></a>Parameter
+### Parameter
 
-__Parameter__ is used by the [Input](#input) and [Output](#output) elements, they represent data slots on the node.
+__Parameter__ is used by the [Input](#input) and [Output](#output) tags. They represent data slots on the node.
  
 | __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
 | ---------- | ------------| ------------| ------------| 
@@ -186,7 +190,7 @@ __Parameter__ is used by the [Input](#input) and [Output](#output) elements, the
 
 ### Return
 
-__Return__ is used by the [Input](#input) tag, represents and output data slots on the node. You can think of it as the return value in a function, such as `int Foo() { return 42; }`.
+__Return__ is used by the [Input](#input) tag, represents an output data slot on the node. You can think of it as the return value in a function, such as the value returned by the following C++ function `int Foo() { return 42; }`.
 
 | __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
 | ---------- | ------------| ------------| ------------| 
@@ -199,8 +203,14 @@ __Return__ is used by the [Input](#input) tag, represents and output data slots 
 
 ### Examples
 
+```xml
+<Input Name="Fibonacci" OutputName="Done">
+    <Parameter Name="X" Type="int" Description="The value to calculate Fibonacci for"/>
+    <Return Name="Result" Type="int"/>
+</Input>
+```
 
-### <a href="#branch"></a>Branch
+### Branch
 
 | __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
 | ---------- | ------------| ------------| ------------| 
@@ -219,7 +229,8 @@ The following example creates a node that will return `Success` and an `Entity S
     <Branch Name="Failed"/>
 </Input>
 ```
-The above node's C++ code would be used in the following way:
+The node definition above will generate corresponding calls for each C++ branch in the same way it generates C++ functions for outputs. In this example it will generate `CallSuccess` and `CallFailed`, you can call these functions from within your node's C++ implementation.
+
 ```cpp
 void CreateSpawnTicketNodeable::CreateTicket(const AzFramework::Scripts::SpawnableScriptAssetRef& prefab)
 {
@@ -251,7 +262,7 @@ Use the following elements when defining Free Function Nodes:
 | __Branch__ | Optional | Specifies that the function be used to evaluate the branching condition | `Branch="IsValidFindPosition"` |
 | __BranchWithValue__ | Optional |  | `BranchWithValue="True"` |
 
-Functions can use the [Parameter](#propertydata) element to specify data inputs.
+Note: functions can use the [Parameter](#parameter) element to specify data inputs.
 
 ```xml
 <Function Name="RandomColor">
@@ -271,6 +282,8 @@ Functions can use the [Parameter](#propertydata) element to specify data inputs.
 </Function>
 
 ```
+
+### Out
 
 Functions can use the __Out__ element to specify the name for each of the [Branch](#branch) results.
 
@@ -309,7 +322,7 @@ Create a collection of functions using the `Library` element.
 ```
 ----
 
-## <a href="#grammar"></a> Grammar
+## Grammar
 
 Grammar nodes are nodes that have a direct translation into the backend's execution format, which is Lua. You do not need to create new grammar nodes if the Script Canvas Nodeable format is sufficient. However, in some situations it might be desirable to extend the Script Canvas grammar.
 
@@ -332,6 +345,15 @@ Specifies an execution exit slot
 | ---------- | ------------| ------------| ------------| 
 | __Name__ | Required | The name of the execution slot | `<Out Name="Done">` |
 | __Description__ | Optional | Displayed as a tooltip when hovering over the slot | `Description="The radius of the circle"`|
+
+### OutLatent
+
+Specifies a latent execution exit slot, a latent slot may execute several frames or ticks from the moment the node is invoked
+
+| __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
+| ---------- | ------------| ------------| ------------| 
+| __Name__ | Required | The name of the execution slot | `<OutLatent Name="TimerDone">` |
+| __Description__ | Optional | Displayed as a tooltip when hovering over the slot | `Description="The specified time interval is complete"`|
 
 ### SerializedProperty
 
@@ -367,6 +389,8 @@ __EditProperty__ may also use [EditAttribute](#editattribute) data.
 
 ### DynamicDataSlot
 
+A Dynamic Data Slot is a slot that does not have a predefined type, the type is acquired by the slot when a connection is made or when a variable reference is created. The type of the slot may be a value, a container or a general purpose slot that supports 'Any' type.
+
 | __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
 | ---------- | ------------| ------------| ------------| 
 | __Name__ | Required | The name of the data slot | `Name="Format"` |
@@ -378,6 +402,6 @@ __EditProperty__ may also use [EditAttribute](#editattribute) data.
 ```xml
 <DynamicDataSlot Name="Source"
                  Description="The container to get the size of."
-                 ConnectionType="ZScriptCanvas::ConnectionType::Input"
+                 ConnectionType="ScriptCanvas::ConnectionType::Input"
                  DynamicType="ScriptCanvas::DynamicDataType::Container" />
 ```                         
