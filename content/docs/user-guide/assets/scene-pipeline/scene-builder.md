@@ -100,7 +100,7 @@ The AZ::SceneAPI::SceneCore::LoadingComponent event contexts:
 
 ## GenerationComponent
 
-The the scene is loaded via the LoadingComponent components, the GenerationComponent events are emitted when the scene pipeline wants scene builders to modify node contents or add nodes to the SceneGraph. The mutable Scene object is sent to each GenerationComponent event.
+The scene is loaded via the LoadingComponent components. The GenerationComponent events are emitted when the scene pipeline wants scene builders to modify node contents or add nodes to the SceneGraph. The mutable Scene object is sent to each GenerationComponent event.
 
 The AZ::SceneAPI::SceneCore::GenerationComponent event contexts:
 
