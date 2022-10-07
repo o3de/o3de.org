@@ -186,6 +186,7 @@ toc: true
 ## Known issues
 
 **Graphics**
+
 - Problem displaying UV tiles (UDIMs) [#9448](https://github.com/o3de/o3de/issues/9448)
 
 - Lighting is inconsistent between the Editor and the GameLauncher. On AMD (MESA), all objects and terrain are dark in both the Game Launcher and in O3DE Editor. Textures that are linked in the object's material are not displayed. They only appear as color white, if direct lighting shines on it. On NVIDIA, in game mode, this behaves differently. [#7519](https://github.com/o3de/o3de/issues/7519)
@@ -193,14 +194,17 @@ toc: true
 - Running the command `./AtomSampleViewerStandalone --runtestsuite scripts/_fulltestsuite_.bv.luac` results in a crash, but all individual samples run correctly. [o3de-atom-sampleviewer#508](https://github.com/o3de/o3de-atom-sampleviewer/issues/508)
 
 **Testing**
+
 - Crash logs are not available on Linux. [#10346](https://github.com/o3de/o3de/issues/10346)
 
-
 **Build**
+
 - Building O3DE on Visual Studio 2022 experiences slower build times in some situations compared to Visual Studio 2019. [#12257](https://github.com/o3de/o3de/issues/12257)
 
 **Physics**
+
 - Setting the Cylinder Collider component's radius or height to zero causes the O3DE Editor to crash. This is a known issue that will be fixed in development. Until it's resolved, avoid setting the radius or height to zero. [#12147](https://github.com/o3de/o3de/issues/12147)
+
 - The physics material library asset has been removed now supports individual physics material assets. If you work with AutomatedTesting, atom-sampleviewer, multiplatyersample or netsoaktest, you don't need to do anything -- all physics material assets are already converted.
 
   For any other project, one person must convert the assets by following these steps:
@@ -215,6 +219,7 @@ toc: true
   1. Commit the source asset changes into Github.
 
 **Viewport**
+
 - The Component Mode Switcher may suffer from instability on Linux. If this is experienced you can disable the Switcher in the Settings Registry by adding the following: 
 
   ```
@@ -229,6 +234,30 @@ toc: true
   }
   ```
 
+**Prefab**
+
+- After creating and deleting prefabs, you must save your level twice.
+
+- After prefab operations, you may encounter warnings that say "Some of the patches were not successfully applied". 
+  - For prefab deletion, it has been fixed in development. [#11756](https://github.com/o3de/o3de/issues/11756)
+  - For prefab creation, it will be fixed in development. [#12013](https://github.com/o3de/o3de/issues/12013)
+
+- Deleting or reordering a nested prefab in Prefab Edit Mode disrupts the rest of the outliner view. [#11737](https://github.com/o3de/o3de/issues/11737)
+
+**Editor**
+
+- The O3DE Editor splash screen displays "Development Build" instead of the version number. [#9519](https://github.com/o3de/o3de/issues/9519)
+
+- There's an issue with running the Game Launcher in a maximized window when the user presses "Play Game (Maximized)" in the O3DE Editor. [#12125](https://github.com/o3de/o3de/pull/12125)
+
+- For projects with all Gems enabled, if a user previously closed the O3DE Editor while it was still processing assets, the O3DE Editor crashes on splash screen when it's reopened. [#11926](https://github.com/o3de/o3de/issues/11926) This issue will be resolved in development: [#12445](https://github.com/o3de/o3de/pull/12445)
+
+- Editor crashes in `AZ::TraskGraphEvent::Signal` occasionally. [#12015](https://github.com/o3de/o3de/issues/12015)
+
+**Script Canvas**
+
+- Saving changes to a script that's incompatible with the interpreter can crash the O3DE Editor. [#11747](https://github.com/o3de/o3de/issues/11747)
+
 **Animation**
 
 - Do not include `.` in names for animations in you DCC tool as this can fail at import time. [#12342](https://github.com/o3de/o3de/issues/12342)
@@ -240,25 +269,3 @@ toc: true
 - In the UI Editor, the Curve Editor is not functional. [#11616](https://github.com/o3de/o3de/issues/11616)
 
 - In the UI Editor, modifying keys may crash the Editor. [#12219](https://github.com/o3de/o3de/issues/12219)
-
-**Prefab**
-
-- After creating and deleting prefabs, you must save your level twice.
-
-- After prefab operations, you may encounter warnings that say "Some of the patches were not successfully applied". 
-  - For prefab deletion, it has been fixed in development. [#11756](https://github.com/o3de/o3de/issues/11756)
-  - For prefab creation, it will be fixed in development. [#12013](https://github.com/o3de/o3de/issues/12013)
-
-**Editor**
-
-- The O3DE Editor splash screen displays "Development Build" instead of the version number. [#9519](https://github.com/o3de/o3de/issues/9519)
-
-- There's an issue with running the Game Launcher in a maximized window, by pressing "Play Game (Maximized)" in the O3DE Editor. [#12125](https://github.com/o3de/o3de/pull/12125)
-
-**Script Canvas**
-
-- Saving changes to a script that's incompatible with the interpreter can crash the O3DE Editor. [#11747](https://github.com/o3de/o3de/issues/11747)
-
-**Prefabs**
-
-- Deleting or reordering a nested prefab in Prefab Edit Mode disrupts the rest of the outliner view. [#11737](https://github.com/o3de/o3de/issues/11737)
