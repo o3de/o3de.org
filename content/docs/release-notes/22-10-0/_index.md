@@ -29,7 +29,7 @@ toc: true
 
 ### sig-build
 
-- Project Manager now utilizes Visual Studio 2022+ for project builds, if it's installed. Going forward, Project Manager will always build on the highest version of Visual Studio that's detected in the user's local environment.[11449](https://github.com/o3de/o3de/pull/11449)
+- Project Manager now utilizes Visual Studio 2022+ for project builds, if it's installed. Going forward, Project Manager will always build on the highest version of Visual Studio that's detected in the user's local environment. [#11449](https://github.com/o3de/o3de/pull/11449)
 
 ### sig-content
 
@@ -246,7 +246,7 @@ toc: true
 
 **Editor**
 
-- The O3DE Editor splash screen displays "Development Build" instead of the version number. [#9519](https://github.com/o3de/o3de/issues/9519)
+- On Linux, the O3DE Editor splash screen displays "Development Build" instead of the version number if development and release are installed together. [#9519](https://github.com/o3de/o3de/issues/9519)
 
 - There's an issue with running the Game Launcher in a maximized window when the user presses "Play Game (Maximized)" in the O3DE Editor. [#12125](https://github.com/o3de/o3de/pull/12125)
 
