@@ -123,7 +123,7 @@ The `AZ::SceneAPI::SceneCore::ExportComponent` event contexts:
 
 ## BehaviorComponent
 
-AZ::SceneAPI::SceneCore::BehaviorComponent components are small logic units that exist as long as the scene pipeline is initialized and active. These components can react to various events that happen to a scene and make appropriate changes, additions or removals. The main use of the behavior components is to modify the rules and groups in the scene manifest so that export components can be modified, indirectly.
+`AZ::SceneAPI::SceneCore::BehaviorComponent` components are small logic units that exist as long as the scene pipeline is initialized and active. These components can react to various events that happen to a scene and make appropriate changes, additions or removals. The main use of the behavior components is to modify the rules and groups in the scene manifest so that export components can be modified, indirectly.
 
 The BehaviorComponent is handled a bit different than the other scene pipeline component types since it does not use the BindCall() method and participates in both the Editor and the Asset Processor. The behavior component is designed to activate the ManifestMetaInfoBus and/or the ManifestMetaInfoBus depending on the scene product asset uses.
 
