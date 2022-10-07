@@ -20,7 +20,7 @@ The following diagram shows the scene pipeline flow:
 
 ![Scene pipeline flow.](/images/user-guide/assets/scene-pipeline/scene-pipeline-flow.png)
 
-The key:
+In the preceding diagram:
 
 * The yellow outlined shapes are asset builder events
 * The blue outlined shapes are scene builder events using BindCall()
