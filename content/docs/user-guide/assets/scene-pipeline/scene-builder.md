@@ -115,11 +115,11 @@ The AZ::SceneAPI::SceneCore::GenerationComponent event contexts:
 
 During the exporting phase, the scene graph is inspected by various scene builders, and game-ready product assets are written to disk. This is done with ExportingComponent components. All the events that the ExportingComponent components respond to receive an immutable SceneGraph object, so they also cannot modify the SceneGraph. This means that the only place where the graph is writable is during the import and generation events.
 
-The AZ::SceneAPI::SceneCore::ExportComponent event contexts:
+The `AZ::SceneAPI::SceneCore::ExportComponent` event contexts:
 
-* PreExportEventContext -- Signals an export of the contained scene is about to happen.
-* ExportEventContext -- Signals the scene that the contained scene needs to be exported to the specified directory.
-* PostExportEventContext -- Signals that an export has completed and written (if successful) to the specified directory.
+* `PreExportEventContext` - Signals an export of the contained scene is about to happen.
+* `ExportEventContext` - Signals the scene that the contained scene needs to be exported to the specified directory.
+* `PostExportEventContext` - Signals that an export has completed and written (if successful) to the specified directory.
 
 ## BehaviorComponent
 
