@@ -6,7 +6,7 @@ weight: 400
 toc: true
 ---
 
-Rather than traditional approaches that load a scene file and directly take all data from it for conversion, the O3DE scene pipeline takes a two-step approach. In the first step a scene builder reads the content of the scene file and places it into an in-memory graph called the ```SceneGraph```. This graph is then used by various parts of the SceneAPI, to for instance read data for converting to O3DE data or to present to the user through the [Scene Settings](docs/user-guide/assets/scene-settings). This approach makes it possible to add different formats to the Scene Pipeline without having to write code that deals with processing and UI and conversely allows for adding settings and processing steps that will work for any scene format.
+The O3DE scene pipeline has two steps. First, a scene builder reads the content of the scene file and places it into an in-memory graph called the ```SceneGraph```. Then, this graph is used by various parts of the SceneAPI. For instance, read data can be presented to the user through the [Scene Settings](docs/user-guide/assets/scene-settings) interface, or converted to O3DE data. This approach makes it possible to add new formats to the Scene Pipeline while leveraging existing processing tools and code.
 
 ### SceneCore
 
