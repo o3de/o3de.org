@@ -131,13 +131,13 @@ The BehaviorComponent is handled a bit different than the other scene pipeline c
 
 This bus handles the scene pipeline events that modify the scene manifest. 
 
-The AZ::SceneAPI::Events::AssetImportRequestBus events:
+The `AZ::SceneAPI::Events::AssetImportRequestBus` events:
 
-* GetGeneratedManifestExtension -- Gets the file extension for the generated manifest
-* PrepareForAssetLoading -- Before asset loading starts this is called to allow for any required initialization
-* LoadAsset -- Starts the loading of the asset at the given path in the given scene
-* FinalizeAssetLoading -- Can be used to do any work to complete loading such as adjusting the loaded content in the SceneGraph
-* UpdateManifest -- After all loading has completed, this call can be used to adjust the manifest.
+* `GetGeneratedManifestExtension` - Gets the file extension for the generated manifest
+* `PrepareForAssetLoading` - Before asset loading starts this is called to allow for any required initialization
+* `LoadAsset` - Starts the loading of the asset at the given path in the given scene
+* `FinalizeAssetLoading` - Can be used to do any work to complete loading such as adjusting the loaded content in the SceneGraph
+* `UpdateManifest` - After all loading has completed, this call can be used to adjust the manifest.
 
 The ``RequestingApplication`` input argument refers to the type of application that sent the event such as the O3DE Editor or the O3DE Asset Processor.
 
