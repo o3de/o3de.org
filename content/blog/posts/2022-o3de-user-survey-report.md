@@ -34,7 +34,7 @@ In late October 2022, a development branch with the critical issues we identifie
 
 #### What Other Suggestions Do We Have?
 
-We will continue to address the issues identified in this research to improve the user experience, simplify the onboarding experience, lower the learning curve, deliver greater efficiency to users, and otherwise increase confidence in using O3DE. Simultaneously, we also suggest the related SIGs delve into the following areas and improve their user experience holistically.
+We will continue to address the issues identified in this research to improve the user experience, simplify the onboarding experience, lower the learning curve, deliver greater efficiency to users, and otherwise increase confidence in using O3DE. Simultaneously, we also suggest that the related SIGs delve into the following areas and improve their user experience holistically.
 
 1. World Building is a critical workflow in the game dev cycle, yet the satisfaction and confidence ratings for this workflow in O3DE are low (2.95 and 2.18, respectively). The satisfaction ratings for the toolings (e.g. dynamic vegetation and terrain) are also low (below 2.8). 
 2. Packaging and Deployment enable users to test their games with others on the designated platforms to gather early feedback; however, the tools we have today to support this workflow are not meeting user expectations. Users are looking for a one-click button that allows them to easily test or review their project on the designated platforms.
