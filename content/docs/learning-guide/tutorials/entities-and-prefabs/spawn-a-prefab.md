@@ -73,7 +73,7 @@ In this section, you'll create a script that spawns a prefab. You'll learn the b
 
     {{< video src="/images/learning-guide/tutorials/entities-and-prefabs/connect-nodes.mp4" info="Click and drag to connect Script Canvas nodes." autoplay="true" loop="true" >}}
 
-1. Add the prefab reference to the **Create Spawn Ticket** node. Right-click on the **Prefab** pin and select **Convert to Reference** from the context menu. The property is automatically set to the **PrefabRef** variable you created in step **1**. You can choose the {{< icon settings.svg>}} **Settings** button in the **Prefab** field to select a variable reference if necessary.
+1. Add the prefab reference to the **Create Spawn Ticket** node. Right-click on the **Prefab** pin and select **Convert to Reference** from the context menu. The property is automatically set to the **PrefabRef** variable you created in step 1. You can choose the {{< icon settings.svg>}} **Settings** button in the **Prefab** field to select a variable reference if necessary.
 
     ![Set the prefab reference on the Create Spawn Ticket Script Canvas Node.](/images/learning-guide/tutorials/entities-and-prefabs/set-prefab-reference.png)
 
