@@ -85,7 +85,7 @@ In this section, you'll create a script that spawns a prefab. You'll learn the b
 
     {{< image-width "/images/learning-guide/tutorials/entities-and-prefabs/connect-spawn-node.png" "900" "Connect the Spawn node to the Create Spawn Ticket node.">}}
 
-1. In addition to spawning prefab instances, the **Spawn** node also needs to populate the **SpawnTicket** variable with data. On the **Spawn** node, right-click on the **SpawnTicketOut** pin and select **Convert to Reference** from the context menu. The property is automatically set to the **SpawnTicket** variable you created in step **2**. You can choose the {{< icon settings.svg>}} **Settings** button in the **SpawnTicketOut** field to select a variable reference if necessary.
+1. In addition to spawning prefab instances, the **Spawn** node also needs to populate the **SpawnTicket** variable with data. On the **Spawn** node, right-click on the **SpawnTicketOut** pin and select **Convert to Reference** from the context menu. The property is automatically set to the **SpawnTicket** variable you created in step 2. You can choose the {{< icon settings.svg>}} **Settings** button in the **SpawnTicketOut** field to select a variable reference if necessary.
 
     ![Set the prefab reference on a Create Spawn Ticket Script Canvas Node.](/images/learning-guide/tutorials/entities-and-prefabs/spawn-ticket-out-ref.png)
 
