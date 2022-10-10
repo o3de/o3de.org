@@ -61,19 +61,24 @@ Perform the following steps from the O3DE source directory (`C:\o3de-source` in 
 1.  Generate the toolchain project files using a unique `LY_VERSION_ENGINE_NAME` CMake cache setting. This value is the name of the engine used by the O3DE project manager and registration system.
     
     ```cmd
-    cmake -B build/windows_vs2019 -G "Visual Studio 16" --config profile -DLY_VERSION_ENGINE_NAME="MyO3DE"
+    cmake -B build/windows -G "Visual Studio 16" --config profile -DLY_VERSION_ENGINE_NAME="MyO3DE"
     ```
 
+    {{< note >}}
+Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](./configure-and-build/#configuring-projects).
+    {{< /note >}}
+
     The **profile** configuration is recommended for distributed builds, as it provides additional logging and engine introspection capabilities useful during project development at minimal performance cost. **debug** builds are primarily useful during engine development.
+
 1.  Build the `INSTALL` target.
     
     ```cmd
-    cmake --build build/windows_vs2019 --target INSTALL --config profile
+    cmake --build build/windows --target INSTALL --config profile
     ```
     
     The binaries will be placed into a distributable install directory specified by the `CMAKE_INSTALL_PREFIX` CMake cache variable, or in an `install` subdirectory of the source code by default.
 
-Run the following steps from the distributable install directory:
+Run the following step from the distributable install directory:
 
 1. Install the version of Python and modules required by the engine.
    
@@ -128,8 +133,8 @@ Whether you have created a new project or updated an existing one, in order to c
 From your project directory, configure and build the project.
     
 ```cmd
-cmake -B build/windows_vs2019 -S .
-cmake --build build/windows_vs2019 --config profile
+cmake -B build/windows -S .
+cmake --build build/windows --config profile
 ```
 
 ## (Optional) Create and load an initial level
@@ -161,7 +166,7 @@ To help creative teams who will be using the tools (but not building them), we r
 To verify that the level loads when the game is launched, run the project's game launcher:
 
 ```cmd
-W:\MyProject\build\windows_vs2019\bin\profile\MyProject.GameLauncher.exe
+W:\MyProject\build\windows\bin\profile\MyProject.GameLauncher.exe
 ```
 
 ## Create a distributable build
@@ -173,7 +178,7 @@ From the project directory, run the following steps:
 1. Create an install build of the project.
     
     ```cmd
-    cmake --build build\windows_vs2019 --config profile --target INSTALL
+    cmake --build build\windows --config profile --target INSTALL
     ```
 
     This creates the binaries in an `install` subdirectory of your project. For our example it would be `W:\MyProject\install`.

@@ -44,25 +44,25 @@ To prepare to build the engine and projects, choose one of the following build t
 1. Use CMake to create the Visual Studio project for the engine. Supply the build directory, the Visual Studio generator, the path to the packages directory that you created, and any other project options. Paths can be absolute or relative. Alternatively, you can use the CMake GUI to complete this step.
 
     ```cmd
-    cmake -B build/windows_vs2019 -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages
+    cmake -B build/windows -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages
     ```
 
-    The preceding command specifies several noteworthy custom definitions (`-D`). All are optional but recommended in this example.
+    * Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](/docs/user-guide/build/configure-and-build/#configuring-projects) in the User Guide.
 
-    * `LY_3RDPARTY_PATH` : The path to the downloadable package directory, also known as the "third-party path". Do not use trailing slashes when specifying the path to the packages directory.
+    * `LY_3RDPARTY_PATH` is an optional custom definition. (Custom definitions are prefixed with `-D`.) Use it to specify the path to the downloadable package directory, also known as the "third-party path". Do not use trailing slashes when specifying the path to the packages directory.
 
 1. (Optional) Use CMake to build the source engine. This step is optional because in the "source engine" build model, the engine is built inside of every project. If you plan on working with projects, to avoid building the engine twice, consider waiting until you learn how to create and build a project, which is covered in the [Project Creation](/docs/welcome-guide/create/) section. The following command builds the engine without a project.
 
     The following example shows the `profile` build configuration.
 
     ```cmd
-    cmake --build build/windows_vs2019 --target Editor --config profile -- -m
+    cmake --build build/windows --target Editor --config profile -- -m
     ```
 
     The `-m` is a recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
     The `--config` sets the build configuration type: `profile`, `debug`, or `release`. For setting up O3DE, `profile` is recommended. Read more on [O3DE's build configurations](/docs/user-guide/build/configure-and-build.md#generated-build-configurations).
 
-    The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `C:\o3de\build\windows_vs2019\bin\profile`.
+    The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `C:\o3de\build\windows\bin\profile`.
 
 {{% /tab %}}
 {{% tab name="Pre-built SDK engine" %}}
@@ -86,8 +86,10 @@ To prepare to build the engine and projects, choose one of the following build t
 1. Use CMake to create the Visual Studio project for the engine. Supply the build directory, the Visual Studio generator, the path to the packages directory that you created, and any other project options. Paths can be absolute or relative. Alternatively, you can use the CMake GUI to complete this step.
 
     ```cmd
-    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=C:\o3de-install
+    cmake -B build/windows -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=C:\o3de-install
     ```
+
+    * Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](/docs/user-guide/build/configure-and-build/#configuring-projects) in the User Guide.
 
     The preceding command specifies several noteworthy custom definitions (`-D`). All are optional but recommended in this example.
 
@@ -98,7 +100,7 @@ To prepare to build the engine and projects, choose one of the following build t
 1. Use CMake to build the engine as an SDK, the same as if you installed the engine from an installer tool. The following example shows the `profile` build configuration.
 
     ```cmd
-    cmake --build build/windows_vs2019 --target INSTALL --config profile -- -m
+    cmake --build build/windows --target INSTALL --config profile -- -m
     ```
 
     The `-m` is a recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.

@@ -30,11 +30,24 @@ The O3DE GitHub repo uses the Git Large File Storage (LFS) system for storing la
 
 1. Verify that **Git LFS** is installed.
 
-    ```cmd
-    git lfs install
-    ```
+    {{< tabs name="Git LFS install" >}}
+    {{% tab name="Windows" %}}
 
-    If the output from this command is "Git LFS initialized", then you already have Git LFS installed. If you didn't have Git LFS installed, this command will install it for you.
+```cmd
+git lfs install
+```
+
+If the output from this command is "Git LFS initialized", then you already have Git LFS installed. If you didn't have Git LFS installed, this command will install it for you.
+
+    {{% /tab %}}
+    {{% tab name="Linux" %}}
+
+```bash
+sudo apt install git-lfs
+```
+
+    {{% /tab %}}
+    {{< /tabs >}}
 
 1. Verify that you have a **credential manager** set up for Git. Recent versions of Git install a credential manager to store your credentials so that you don't have to enter them for every request.
 
