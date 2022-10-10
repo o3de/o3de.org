@@ -7,11 +7,11 @@ toc: true
 ---
 
 
-**Open 3D Engine (O3DE)** version 22.10.0 consists of Quality of Life Improvements, such as performance, workflows, and usability, and some notable new features. Here are some highlights, followed by a detailed list of features broken down by SIG. You can also see the [feature grid](./feature-state), showing the overall status of each feature.
+**Open 3D Engine (O3DE)** version 22.10.0 consists of Quality of Life Improvements (such as performance, workflows, and usability) and some notable new features. Here are some highlights, followed by a detailed list of features broken down by SIG. You can also see the [feature grid](./feature-state), showing the overall status of each feature.
 
 ## Highlights for 22.10.0
 
-- **Onboarding and Collaboration**: Remote projects, templates, and networked asset cache has made it easier to onboard and collaborate with other team members.
+- **Onboarding and Collaboration**: Remote projects, templates, and networked asset cache have made it easier to onboard and collaborate with other team members.
 
 - **Multiplayer**: With improvements to the client-server connection, debugging, and network spawning, setting up multiplayer is more straightforward than before.
 
@@ -21,7 +21,7 @@ toc: true
 
 - **Terrain performance**: The new O3DE Terrain system is in preview. For developers who have found O3DE best for working in smaller or more enclosed environments, now you can start working on larger-scale worlds with significant performance improvements for both editing and runtime/rendering. It can now handle 16km x 16km worlds and beyond at high framerates.
 
-- **New features**: Sky Atmosphere, Stars
+- **New features**: Sky Atmosphere and Stars components.
 
 
 ## Features and bug fixes
@@ -35,9 +35,9 @@ toc: true
 
 - Asset Processor now shows the time spent analyzing and processing assets on a per-asset and per-builder basis. These metrics help improve Asset Builder throughput, track performance over time, and identify areas of asset processing that require more focus.
 
-- Asset Processor's new *asset server cache mode* allows teams to share pre-processed assets via network shared drives. Teams can use this mode to reduce the cost of processing assets on individual machines by sharing processed files across a network.
+- Asset Processor's new *asset server cache mode* allows teams to share preprocessed assets via network-shared drives. Teams can use this mode to reduce the cost of processing assets on individual machines by sharing processed files across a network.
 
-- Improvements to the underlying hot reload framework that improve the reliability of dynamic asset reloading in the O3DE Editor.
+- Improvements to the underlying hot reload framework that improve the reliability of dynamic asset reloading in O3DE Editor.
 
 - Intermediate assets add a powerful new asset category to the asset pipeline, allowing Asset Builders to chain together. This increases reusability and splits up processing into smaller parts, resulting in reduced reprocessing time.
 
@@ -51,7 +51,7 @@ toc: true
 
 - The Project Manager now displays the engine name and version number for each registered project. The Project Manager also displays the current engine version in the title bar.
 
-- Script Canvas Architecture: The Script Canvas Component now provides a framework to embed Script Canvas functionality in places other than Entity and Component system. The new architecture introduces a set of classes that handle a small part of the Script Canvas runtime. The highest level class is the `ScriptCanvas::Executor`, which `ScriptCanvas::RuntimeComponent` now uses. The `ScriptCanvas::Executor` is also used by the new `ScriptCanvasEditor::Interpreter`, which is a class that allows developers to embed user access to Script Canvas functionality any where in the editor.
+- Script Canvas Architecture: The Script Canvas Component now provides a framework to embed Script Canvas functionality in places other than the Entity and Component system. The new architecture introduces a set of classes that handle a small part of the Script Canvas runtime. The highest level class is the `ScriptCanvas::Executor`, which `ScriptCanvas::RuntimeComponent` now uses. The `ScriptCanvas::Executor` is also used by the new `ScriptCanvasEditor::Interpreter`, which is a class that allows developers to embed user access to Script Canvas functionality any where in O3DE Editor.
 
 - Writing C++ Script Canvas nodes is now a lot easier! We have deprecated node generics (a set of C++ macros) in favor of using AzAutoGen to produce libraries of functions or standalone nodes. We have consolidated the autogen semantics for Script Canvas grammar nodes and nodeables. We removed the concept of Script Canvas node libraries. Anytime you write a node, it gets registered automatically. You no longer have to manually reflect or register Script Canvas nodes.
 
@@ -63,7 +63,7 @@ toc: true
 
 - The O3DE Editor Viewport has a new *Component Mode Switcher* to quickly switch between the available Component Modes on entities. [#10662](https://github.com/o3de/o3de/issues/10662)
 
-- Asset Browser updates: Previously, Asset Browser was just a view of your asset with no way of interacting with your assets. Now, Asset Browser contains some core features such as duplicate, delete, open in the associated application (for example, Material Editor if it's a material file, Script canvas if it's a script canvas file, and so on). It also allows you to open an asset in third-party apps (for example, Visual Studios or another text editor for JSON files, a digital content creation (DCC) tool for 3D assets, and so on). We also now have a create new workflow for the creation of new assets you want to start in a specific folder or directory.
+- Asset Browser updates: Previously, Asset Browser was just a view of your asset with no way of interacting with your assets. Now, Asset Browser contains some core features such as duplicate, delete, and open in the associated application (for example, Material Editor if it's a material file or Script canvas if it's a script canvas file). It also allows you to open an asset in third-party apps (for example, Visual Studios or another text editor for JSON files, a digital content creation (DCC) tool for 3D assets, and so on). We also now have a _create new_ workflow for the creation of new assets you want to start in a specific folder or directory.
 
 
 ### sig-core
@@ -80,15 +80,15 @@ toc: true
 
 ### sig-graphics-audio
 
-- Added a new Shadow Bias flag for parallax materials, to deal with shadow acne on parallax surfaces.
+- Added a new Shadow Bias flag for parallax materials to deal with shadow acne on parallax surfaces.
 
 - Added minimum and maximum sliders to the Pass Tree Debug tool to support trimming the color output for increased contrast of fine details. [#9292](https://github.com/o3de/o3de/pull/9292)
 
 - Added averages to the CPU Profiler. [#10253](https://github.com/o3de/o3de/pull/10253)
 
-- The ImGui debug tools no longer disable the rest of the O3DE Editor.
+- The ImGui debug tools no longer disable the rest of O3DE Editor.
 
-- Added a Tga image loader to load tga images, which replaces the use of QImage. It handles more tga file formats. [#11161](https://github.com/o3de/o3de/pull/11161)
+- Added a TGA image loader to load TGA images, which replaces the use of QImage. It handles more TGA file formats. [#11161](https://github.com/o3de/o3de/pull/11161)
 
 - Switched to use tiled resource for streaming images for DX12 backend. [#10981](https://github.com/o3de/o3de/10981).
 
@@ -102,7 +102,7 @@ toc: true
 
 - RayTracing performance improvements. [8945](https://github.com/o3de/o3de/pull/8945)
 
-- Added "Affects GI" option to Lights. [#9379](https://github.com/o3de/o3de/pull/9379)
+- Added **Affects GI** option to lights. [#9379](https://github.com/o3de/o3de/pull/9379)
 
 - Added the Terrain mesh to the RayTracing scene. [#10207](https://github.com/o3de/o3de/pull/10207)
 
@@ -124,15 +124,15 @@ toc: true
 
 - Added a settings dialog for configuring common registry settings to the Material Editor, Shader Management Console, and similar tools.
 
-- Implemented an autosave feature in Material Editor, Shader Management Console, and similar tools. Users can enable the autosave feature from the tool's settings dialog. When autosave is enabled and configured, files will save automatically, after users make modifications inside Material Editor.
+- Implemented an autosave feature in Material Editor, Shader Management Console, and similar tools. Users can enable the autosave feature from the tool's settings dialog. When autosave is enabled and configured, files will save automatically after users make modifications inside Material Editor.
 
-- Updated the asset system, instance database, material component, and the thumbnail system so they better support processing asset changes in the background and hot reloading materials after the materials autosave in the Material Editor.
+- Updated the asset system, instance database, material component, and thumbnail system, so they better support processing asset changes in the background and hot reloading materials after the materials autosave in the Material Editor.
 
 - Added support for dragging and dropping files into the Material Editor.
 
 - Added support for saving custom window layouts in Material Editor and related tools.
 
-- Experimental preview of Material Canvas, a node-based, visual editor. It combines features from Material Editor and Script Canvas, allowing users to create new material types and shaders.
+- Enabled the experimental preview of Material Canvas, a node-based, visual editor. It combines features from Material Editor and Script Canvas, allowing users to create new material types and shaders.
 
 - Improved and refactored how raw requests are defined, created, sent, and processed in the AudioSystem Gem. All existing locations that created and sent an audio request directly to the system have been updated to the newer version.
 
@@ -141,11 +141,11 @@ toc: true
 
 ### sig-network
 
-- Multiple improvements to the client and server connection experience, including debug text to convey the current step in a connection process, debug text that indicates the connection status in game, and new ImGUI menu options in the launchers. 
+- Multiple improvements to the client and server connection experience, including debug text to convey the current step in a connection process, debug text that indicates the connection status in-game, and new ImGUI menu options in the launchers. 
 
-- To aid in debugging of networking serialization issues, we added an optional TypeValidatingSerializer, which raises an assert when serialization results in a type or variable name mismatch.
+- To aid in debugging networking serialization issues, we added an optional TypeValidatingSerializer, which raises an assert when serialization results in a type or variable name mismatch.
 
-- The Network Target Management Gem adds support for O3DE tools and applications that need a network connection to share information or to support debugging. An example of this is connecting the O3DE Editor to a Lua IDE to debug Lua scripts.
+- The Network Target Management Gem adds support for O3DE tools and applications that need a network connection to share information or to support debugging. An example of this is connecting O3DE Editor to Lua IDE to debug Lua scripts.
 
 - Unified Network Spawner Pipeline: Unifies the networking spawning pipeline with the non-network spawnable system. This reduces the complexity of networked entity spawning.
 
@@ -155,7 +155,7 @@ No callouts for this release.
 
 ### sig-platform
 
-- Updated Python from version 3.7.12 to 3.10.5. This extends the time-range of Python support and security updates to 2026. In addition, Python Enhancement Proposals [(PEP) 619](https://peps.python.org/pep-0619/) brings in many language and performance improvements over Python 3.7. See [RFC: Python Upgrade to 3.10](https://github.com/o3de/sig-platform/issues/54) for further details.
+- Updated Python from version 3.7.12 to 3.10.5. This extends the time range of Python support and security updates to 2026. In addition, Python Enhancement Proposals [(PEP) 619](https://peps.python.org/pep-0619/) brings in many language and performance improvements over Python 3.7. See [RFC: Python Upgrade to 3.10](https://github.com/o3de/sig-platform/issues/54) for further details.
 
 ### sig-security
 
@@ -169,11 +169,11 @@ No callouts for this release.
 
 - The O3DE Motion Matching Gem is ready for experimental use. See [Motion Matching in O3DE, a Data-Driven Animation Technique](https://www.o3de.org/blog/posts/blog-motionmatching/) for more details. [#10665](https://github.com/o3de/o3de/issues/10665)
 
-- O3DE now ships with support for navigation, using the Recast/Detour navigation library. You can now create a navmesh in your scene and see your characters path-find from one point to another. [#10663](https://github.com/o3de/o3de/issues/10663)
+- O3DE now ships with support for navigation using the Recast/Detour navigation library. You can now create a navmesh in your scene and see your character's path-find from one point to another. [#10663](https://github.com/o3de/o3de/issues/10663)
 
 - The ragdoll authoring experience has been completely overhauled to make it easier to set up colliders and joint limits. O3DE now provides joint limit auto-fitting and manipulator support for fine-grained adjustments for both colliders and joint limits. [#10654](https://github.com/o3de/o3de/issues/10654)
 
-- Completely updated the way physics material assets are stored and used. We've removed the physics material library asset and we now support individual physics material assets, much like render materials and other assets in O3DE. This makes physics materials easier to work with and more consistent. [#2897](https://github.com/o3de/o3de/issues/2897)
+- Completely updated the way physics material assets are stored and used. We've removed the physics material library asset, and we now support individual physics material assets, much like render materials and other assets in O3DE. This makes physics materials easier to work with and more consistent. [#2897](https://github.com/o3de/o3de/issues/2897)
 
 - The performance of the Terrain system has seen significant performance improvements for both editing and runtime/rendering. It can now handle 16km x 16km worlds and beyond at high framerates. [#1847](https://github.com/o3de/o3de/issues/1847)
 
@@ -194,7 +194,7 @@ No callouts for this release.
 
 - Problem displaying UV tiles (UDIMs) [#9448](https://github.com/o3de/o3de/issues/9448)
 
-- Lighting is inconsistent between the Editor and the GameLauncher. On AMD (MESA), all objects and terrain are dark in both the Game Launcher and in O3DE Editor. Textures that are linked in the object's material are not displayed. They only appear as color white, if direct lighting shines on it. On NVIDIA, in game mode, this behaves differently. [#7519](https://github.com/o3de/o3de/issues/7519)
+- Lighting is inconsistent between O3DE Editor and Game Launcher. On AMD (MESA), all objects and terrain are dark in both Game Launcher and Editor. Textures that are linked in the object's material are not displayed. They only appear as the color white if direct lighting shines on it. On NVIDIA, in game mode, this behaves differently. [#7519](https://github.com/o3de/o3de/issues/7519)
 
 - Running the command `./AtomSampleViewerStandalone --runtestsuite scripts/_fulltestsuite_.bv.luac` results in a crash, but all individual samples run correctly. [o3de-atom-sampleviewer#508](https://github.com/o3de/o3de-atom-sampleviewer/issues/508)
 
@@ -208,24 +208,24 @@ No callouts for this release.
 
 **Physics**
 
-- Setting the Cylinder Collider component's radius or height to zero causes the O3DE Editor to crash. This is a known issue that will be fixed in development. Until it's resolved, avoid setting the radius or height to zero. [#12147](https://github.com/o3de/o3de/issues/12147)
+- Setting the Cylinder Collider component's radius or height to zero causes O3DE Editor to crash. This is a known issue that will be fixed in development. Until it's resolved, avoid setting the radius or height to zero. [#12147](https://github.com/o3de/o3de/issues/12147)
 
-- The physics material library asset has been removed now supports individual physics material assets. If you work with AutomatedTesting, atom-sampleviewer, multiplatyersample or netsoaktest, you don't need to do anything -- all physics material assets are already converted.
+- The physics material library asset has been removed and now supports individual physics material assets. If you work with AutomatedTesting, atom-sampleviewer, multiplayersample or netsoaktest, you don't need to do anything -- all physics material assets are already converted.
 
   For any other project, one person must convert the assets by following these steps:
 
-  1. Run Editor. Do not open any level, just close the "Welcome to O3DE" screen.
+  1. Run Editor. Do not open any level; just close the "Welcome to O3DE" screen.
   1. Wait until Asset Processor has finished processing all the assets.
   1. Open Console by clicking **Tools** > **Console**.
   1. Enter the following console command to convert old physics material libraries: `ed_physxConvertMaterialLibrariesIntoIndividualMaterials`
   1. Wait until Asset Processor has finished processing all the assets.
-  1. Enter the following console command to fix prefabs and fbx manifests that reference old assets: `ed_physxFixAssetsUsingPhysicsLegacyMaterials`
+  1. Enter the following console command to fix prefabs and FBX manifests that reference old assets: `ed_physxFixAssetsUsingPhysicsLegacyMaterials`
   1. Wait until Asset Processor has finished processing all the assets.
   1. Commit the source asset changes into Github.
 
 **Viewport**
 
-- The Component Mode Switcher may suffer from instability on Linux. If this is experienced you can disable the Switcher in the Settings Registry by adding the following: 
+- The Component Mode Switcher may suffer from instability on Linux. If this occurs you can disable the Switcher in the Settings Registry by adding the following: 
 
   ```
   {
@@ -243,7 +243,7 @@ No callouts for this release.
 
 - After creating and deleting prefabs, you must save your level twice.
 
-- After prefab operations, you may encounter warnings that say "Some of the patches were not successfully applied". 
+- After prefab operations, you may encounter warnings that say, "Some of the patches were not successfully applied". 
   - For prefab deletion, it has been fixed in development. [#11756](https://github.com/o3de/o3de/issues/11756)
   - For prefab creation, it will be fixed in development. [#12013](https://github.com/o3de/o3de/issues/12013)
 
@@ -251,26 +251,26 @@ No callouts for this release.
 
 **Editor**
 
-- On Linux, the O3DE Editor splash screen displays "Development Build" instead of the version number if development and release are installed together. [#9519](https://github.com/o3de/o3de/issues/9519)
+- On Linux, O3DE Editor splash screen displays "Development Build" instead of the version number if development and release are installed together. [#9519](https://github.com/o3de/o3de/issues/9519)
 
-- There's an issue with running the Game Launcher in a maximized window when the user presses "Play Game (Maximized)" in the O3DE Editor. [#12125](https://github.com/o3de/o3de/pull/12125)
+- There's an issue with running Game Launcher in a maximized window when the user presses **Play Game (Maximized)** in O3DE Editor. [#12125](https://github.com/o3de/o3de/pull/12125)
 
-- For projects with all Gems enabled, if a user previously closed the O3DE Editor while it was still processing assets, the O3DE Editor crashes on splash screen when it's reopened. [#11926](https://github.com/o3de/o3de/issues/11926) This issue will be resolved in development: [#12445](https://github.com/o3de/o3de/pull/12445)
+- For projects with all Gems enabled, if a user previously closed O3DE Editor while it was still processing assets, Editor crashes on splash screen when it's reopened. [#11926](https://github.com/o3de/o3de/issues/11926) This issue will be resolved in development: [#12445](https://github.com/o3de/o3de/pull/12445)
 
 - Editor crashes in `AZ::TraskGraphEvent::Signal` occasionally. [#12015](https://github.com/o3de/o3de/issues/12015)
 
 **Script Canvas**
 
-- Saving changes to a script that's incompatible with the interpreter can crash the O3DE Editor. [#11747](https://github.com/o3de/o3de/issues/11747)
+- Saving changes to a script that's incompatible with the interpreter can crash O3DE Editor. [#11747](https://github.com/o3de/o3de/issues/11747)
 
 **Animation**
 
-- Do not include `.` in names for animations in you DCC tool as this can fail at import time. [#12342](https://github.com/o3de/o3de/issues/12342)
+- Do not include `.` in names for animations in your DCC tool, as this can fail at import time. [#12342](https://github.com/o3de/o3de/issues/12342)
 
-- Some animations crash in the scene settings tool when a level isn't opened. Ensure a level is opened before accessing the scene settings tool. [#12414](https://github.com/o3de/o3de/issues/12414)
+- Some animations crash in the scene settings tool while a level isn't open. Ensure a level is opened before accessing the scene settings tool. [#12414](https://github.com/o3de/o3de/issues/12414)
 
 **UI**
 
-- In the UI Editor, the Curve Editor is not functional. [#11616](https://github.com/o3de/o3de/issues/11616)
+- In UI Editor, Curve Editor is not functional. [#11616](https://github.com/o3de/o3de/issues/11616)
 
-- In the UI Editor, modifying keys may crash the Editor. [#12219](https://github.com/o3de/o3de/issues/12219)
+- In UI Editor, modifying keys may crash O3DE Editor. [#12219](https://github.com/o3de/o3de/issues/12219)
