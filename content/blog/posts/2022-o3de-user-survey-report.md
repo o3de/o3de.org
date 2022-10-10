@@ -30,7 +30,7 @@ While this quantitative survey data can point to areas of overall improvement in
 
 Through these interviews, 138 issues were identified that either block or impact users from accomplishing their tasks. Using this quantitative data to pinpoint and prioritize areas for improvement and more deeply understand these areas, SIG UI-UX worked with all of the other SIGs to improve these five workflows. You can find the issues tracked in [2022 Walk The Engine Issues Dashboard](https://github.com/o3de/o3de/projects/15) in GitHub.
 
-A development branch with the critical issues we identified and fixed will be released in late October, and we will conduct another round of O3DE UI/UX research using this branch towards the end of this year to verify if the improvements meet user expectations.
+In late October 2022, a development branch with the critical issues we identified and fixed will be released. Then, towards the end of the year, we will use this branch to conduct another round of O3DE UI/UX research to verify if the improvements meet user expectations.
 
 #### What Other Suggestions Do We Have?
 
