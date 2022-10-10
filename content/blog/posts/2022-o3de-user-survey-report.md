@@ -11,10 +11,10 @@ The O3DE user interface and user experience Special Interest Group (SIG UI-UX) c
 
 The survey collected user feedback on the O3DE user experience based on nine common game development workflows: Onboarding, Game Design, Actor Development, World Building, Look Development, Multiplayer, Team Collaboration, Engine Extension, and Packaging & Deployment. Within each workflow, users were asked to rate:
 
-- Workflow satisfaction: how satisfied they are with the workflow
-- Workflow confidence: how confident they feel they achieved their stated objectives after completing the workflow
-- Workflow efficiency: how efficient they feel their time spent on the workflow
-- Feature satisfaction: how satisfied they are using the features within the workflow.
+- Workflow satisfaction: how satisfied they are with the workflow.
+- Workflow confidence: how confident they feel that they achieved their stated objectives after completing the workflow.
+- Workflow efficiency: how efficient they feel about their time spent on the workflow.
+- Feature satisfaction: how satisfied they are with using the features within the workflow.
 
 #### What Did We Find?
 
