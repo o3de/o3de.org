@@ -98,7 +98,7 @@ To enable Asset Processor in ACS mode as a server, a `.setreg` file needs these 
                     "assetCacheServerMode": "server",
                     "ACS Atom Image Builder": {
                         "name": "Atom Image Builder",
-                        "glob": "*.tiff",
+                        "glob": "*.png",
                         "checkServer": true
                     },
                     "ACS Precompiled Shader Builder": {
@@ -163,7 +163,7 @@ The asset caching system is configured using opt-in patterns. There are many typ
 ```
 "ACS title":
 {
-   "name": (string) a label for this block, normally the same as the title
+   "name": (string) a label for this block, can be used to match any builder by name
    "glob":  (string) wild card pattern i.e. "*.fbx"
    "pattern": (string) a regular expression i.e. "[\w]*\.asset"
    "checkServer": (Boolean) to enable set to true
@@ -178,13 +178,19 @@ The block should only be set to `"glob"` or `"pattern"`, not both.
 
 The `"checkServer"` Boolean flag is used to enable the block. The default value for `"checkServer"` is false, so to enable the ACS block the Boolean flag needs to be set to true.
 
-An example JSON ACS block:
+The ``name`` field is used for the title of the configuration block in the GUI tool, but it can also match all assets of an asset pattern by setting it to the name of an asset builder. For example, a configuration block can set the name to "Atom Image Builder" so that all the processed images are cached.
+
+{{< note >}}
+To use the ``name`` of a builder to cache, its product files it must match exactly, including white space and letter case.
+{{< /note >}}
+
+This example JSON ACS block caches all product assets built by the "XmlBuilderWorker" builder:
 
 ```json
-"ACS WAV Files":
+"ACS XmlBuilderWorker":
 {
-   "name": "WAV Files",
-   "glob":  "*.wav",
+   "name": "XmlBuilderWorker",
+   "glob":  "*.xml",
    "checkServer": true
 }
 ```
