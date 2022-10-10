@@ -151,12 +151,15 @@ toc: true
 
 ### sig-operations
 
+No callouts for this release.
+
 ### sig-platform
 
 - Updated Python from version 3.7.12 to 3.10.5. This extends the time-range of Python support and security updates to 2026. In addition, Python Enhancement Proposals [(PEP) 619](https://peps.python.org/pep-0619/) brings in many language and performance improvements over Python 3.7. See [RFC: Python Upgrade to 3.10](https://github.com/o3de/sig-platform/issues/54) for further details.
 
 ### sig-security
 
+No callouts for this release.
 
 ### sig-simulation
 
@@ -181,6 +184,8 @@ toc: true
 - [GitHub codeowners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) alias hints now output during Python test failure. This helps O3DE contributors immediately know who to contact for support. Customers using O3DE's test framework can also see hints if their repo contains a codeowners file.
 
 ### sig-ui-ux
+
+No callouts for this release.
 
 
 ## Known issues
