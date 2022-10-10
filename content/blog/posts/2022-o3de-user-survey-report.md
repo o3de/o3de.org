@@ -22,7 +22,7 @@ Results from the [final survey report](https://github.com/o3de/sig-ui-ux/blob/ma
 
 {{< image-width src="/images/blog/user-survey-2022/survey-2022.png" width="100%" alt="Mean Ratings Across 3 User Experience Metreics" >}}
 
-We also asked users to rate their experience with the features within the workflow. Based on the data, the Help System across O3DE, the integration with the version control tools, the toolings (e.g. Terrain and Dynamic Vegetation) in the World Building workflow, the Physics System, and the asset management experience (including Asset Browser) received lower satisfaction ratings (ranging from 2.5 to 2.8). The UX performance of these features could be the reason that drove lower ratings in their designated workflows.
+We also asked users to rate their experience with the features within the workflow. The data indicates that the Help System across O3DE, the integration with version control tools, the tooling for the World Building workflow (e.g. Terrain and Dynamic Vegetation), the Physics System, and the asset management experience (including Asset Browser) received lower satisfaction ratings, ranging from 2.5 to 2.8. The UX performance of these features could be the reason that drove lower ratings in their designated workflows.
 
 #### Using Qualitative Data to Deepen Understanding
 
