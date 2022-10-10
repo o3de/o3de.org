@@ -18,7 +18,7 @@ The survey collected user feedback on the O3DE user experience based on nine com
 
 #### What Did We Find?
 
-Results from the [final survey report](https://github.com/o3de/sig-ui-ux/blob/main/user-research/2022%20Q2%20O3DE%20User%20Experience%20Survey.md) suggest areas of improvement across all nine workflows surveyed. The two highest performing workflows are Onboarding and Look Development, which suggests the data-driven plan to focus on improvements for these two workflows has been received positively, enabling users to finish these workflows within a reasonable amount of time. Meanwhile, six workflows, including Actor Development, World Building, Multiplayer, Team Collaboration, Engine Extension, Packaging and Deployment, received lower ratings, which suggests these workflows require the greatest improvement.
+Results from the [final survey report](https://github.com/o3de/sig-ui-ux/blob/6c82e950ad7e162de25a45df1adcf4528a907506/user-research/2022%20Q2%20O3DE%20User%20Experience%20Survey.md) suggest areas of improvement across all nine workflows surveyed. The two highest performing workflows are Onboarding and Look Development, which suggests the data-driven plan to focus on improvements for these two workflows has been received positively, enabling users to finish these workflows within a reasonable amount of time. Meanwhile, six workflows, including Actor Development, World Building, Multiplayer, Team Collaboration, Engine Extension, Packaging and Deployment, received lower ratings, which suggests these workflows require the greatest improvement.
 
 {{< image-width src="/images/blog/user-survey-2022/survey-2022.png" width="100%" alt="Mean Ratings Across 3 User Experience Metreics" >}}
 
