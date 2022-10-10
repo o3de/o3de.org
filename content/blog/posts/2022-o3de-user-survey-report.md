@@ -9,7 +9,7 @@ blog_img: "/images/blog/announcement_thumbnail.jpg"
 
 The O3DE user interface and user experience Special Interest Group (SIG UI-UX) conducted a survey in June 2022 with the goal to continuously improve the Open 3D Engine (O3DE) experience for developers, artists, content creators and other users. Results from over 200 participants provided a snapshot that will be used to guide the evolution of features, capabilities and enhancements to improve user experience in future releases of O3DE. 
 
-The survey collected user feedback on the O3DE user experience based on nine common game development workflows, from Onboarding, Game Design, Actor Development, World Building, Look Development, Multiplayer, to Team Collaboration, Engine Extension, and Packaging & Deployment. Within each workflow, users were asked to rate:
+The survey collected user feedback on the O3DE user experience based on nine common game development workflows: Onboarding, Game Design, Actor Development, World Building, Look Development, Multiplayer, Team Collaboration, Engine Extension, and Packaging & Deployment. Within each workflow, users were asked to rate:
 
 - Workflow satisfaction: how satisfied they are with the workflow
 - Workflow confidence: how confident they feel they achieved their stated objectives after completing the workflow
