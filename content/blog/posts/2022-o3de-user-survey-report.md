@@ -28,7 +28,7 @@ We also asked users to rate their experience with the features within the workfl
 
 While this quantitative survey data can point to areas of overall improvement in O3DE’s user experience, we need qualitative data to inform a deeper understanding of the results to guide the future evolution of the engine’s user experience. During the summer months, qualitative interviews were conducted with 20 community members, focused on the five common workflows users employ when building their content with O3DE: Onboarding Experience, Actor Development, Look Development, Multiplayer, and Engine Extension.
 
-Through these interviews, 138  issues were identified that either block or impact users from accomplishing their tasks. Using this quantitative data to pinpoint and prioritize areas for improvement  and more deeply understand these areas, SIG UI-UX worked with all of the other SIGs to improve these five workflows. You can find the issues tracked on the GitHub [2022 Walk The Engine Issues Dashboard](https://github.com/o3de/o3de/projects/15).
+Through these interviews, 138 issues were identified that either block or impact users from accomplishing their tasks. Using this quantitative data to pinpoint and prioritize areas for improvement and more deeply understand these areas, SIG UI-UX worked with all of the other SIGs to improve these five workflows. You can find the issues tracked in [2022 Walk The Engine Issues Dashboard](https://github.com/o3de/o3de/projects/15) in GitHub.
 
 A development branch with the critical issues we identified and fixed will be released in late October, and we will conduct another round of O3DE UI/UX research using this branch towards the end of this year to verify if the improvements meet user expectations.
 
