@@ -45,7 +45,7 @@ If your level contains the **Atom Default Environment**, delete or hide the Grid
 
     {{< image-width src="/images/learning-guide/tutorials/environments/enable-terrain-select.png" alt="Select the level.prefab." >}}
 
-3. In **Entity Inspector**, choose **Add Component** and add both the **Terrain World** and **Terrain World Renderer** level components to the level.prefab.
+3. In **Entity Inspector**, choose **Add Component** and add both the **Terrain World** and **Terrain World Renderer** level components to the level prefab.
 
     {{< image-width src="/images/learning-guide/tutorials/environments/enable-terrain-components.png" width="600" alt="Add terrain level components." >}}
 
