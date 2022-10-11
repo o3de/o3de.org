@@ -52,7 +52,7 @@ If your level contains the **Atom Default Environment**, delete or hide the Grid
 There are many properties available in the terrain level components that configure the terrain settings for the level. Later in the tutorial, you might need to make some adjustments to these properties.
 
 {{< important >}}
-For this tutorial, you'll set the world size of the heightmap image so that one pixel is equal to one meter. The rendering distances might need to be adjusted to make the entire terrain visible if the heightmap image is larger than the default terrain rendering distance of 4096 meters or the default camera view distance of 1024 meters.
+For this tutorial, you'll set the world size of the heightmap image so that one pixel is equal to one meter. You might need to adjust the rendering distances to make the entire terrain visible, if the heightmap image is larger than the default terrain rendering distance of 4096 meters or the default camera view distance of 1024 meters.
 
 1. In the **Terrain World Renderer** level component, set the **Mesh render distance** to a value that is greater than the resolution of the heightmap, so that the entire terrain will be visible.
 
