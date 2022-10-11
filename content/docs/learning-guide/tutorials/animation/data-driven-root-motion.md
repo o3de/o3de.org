@@ -114,7 +114,7 @@ A source scene file might contain more than one motion. You'll need to add a Roo
 
 1. With the modifier configured, choose **Update** to save your custom processing rule. The animation is automatically processed by Asset Processor. Close the output window and exit Scene Settings.
 
-When the motion is processed, the root motion is extracted and applied to the root bone in the motion product asset. You can verify if the root motion extraction was successful by repeating the steps in the [Generate data driven root motion](#generate-data-driven-root-motion) section.
+When the motion is processed, the root motion is extracted and applied to the root bone in the motion product asset. You can verify if the root motion extraction was successful by repeating the steps in the [Check actor setup](#check-actor-setup) section.
 
 The following table provides additional detail on the options provided by the Root motion extraction modifier:
 
