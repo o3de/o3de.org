@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -83,12 +83,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Open</b> (const <a cl
 <tr class="memitem:ac22e2d7fe2c0b7c6e6771a915bc38d7e"><td class="memItemLeft" align="right" valign="top"><a id="ac22e2d7fe2c0b7c6e6771a915bc38d7e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Open</b> (<a class="el" href="class_a_z_std_1_1vector.html">VectorDataSource</a> &amp;&amp;data)</td></tr>
 <tr class="separator:ac22e2d7fe2c0b7c6e6771a915bc38d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5893aa083fc137e24a4c8425715b164"><td class="memItemLeft" align="right" valign="top"><a id="ad5893aa083fc137e24a4c8425715b164"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Open</b> (const <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> &amp;filePath, size_t fileOffset, size_t assetSize, <a class="el" href="class_a_z_std_1_1chrono_1_1duration.html">AZStd::chrono::milliseconds</a> deadline=AZ::IO::IStreamerTypes::s_noDeadline, AZ::IO::IStreamerTypes::Priority priority=AZ::IO::IStreamerTypes::s_priorityMedium, <a class="el" href="class_a_z_std_1_1function.html">OnCompleteCallback</a> loadCallback={})</td></tr>
-<tr class="separator:ad5893aa083fc137e24a4c8425715b164"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bf0e7e838ea2b8878b75630d991494b"><td class="memItemLeft" align="right" valign="top"><a id="a7bf0e7e838ea2b8878b75630d991494b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Reschedule</b> (<a class="el" href="class_a_z_std_1_1chrono_1_1duration.html">AZStd::chrono::milliseconds</a> newDeadline, AZ::IO::IStreamerTypes::Priority newPriority)</td></tr>
-<tr class="separator:a7bf0e7e838ea2b8878b75630d991494b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011f7427c460dc9566f9b4ac59393265"><td class="memItemLeft" align="right" valign="top"><a id="a011f7427c460dc9566f9b4ac59393265"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Open</b> (const <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> &amp;filePath, size_t fileOffset, size_t assetSize, <a class="el" href="class_a_z_std_1_1chrono_1_1duration.html">AZ::IO::IStreamerTypes::Deadline</a> deadline=AZ::IO::IStreamerTypes::s_noDeadline, AZ::IO::IStreamerTypes::Priority priority=AZ::IO::IStreamerTypes::s_priorityMedium, <a class="el" href="class_a_z_std_1_1function.html">OnCompleteCallback</a> loadCallback={})</td></tr>
+<tr class="separator:a011f7427c460dc9566f9b4ac59393265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9951e561051af66b37c62659495f2edc"><td class="memItemLeft" align="right" valign="top"><a id="a9951e561051af66b37c62659495f2edc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Reschedule</b> (<a class="el" href="class_a_z_std_1_1chrono_1_1duration.html">AZ::IO::IStreamerTypes::Deadline</a> newDeadline, AZ::IO::IStreamerTypes::Priority newPriority)</td></tr>
+<tr class="separator:a9951e561051af66b37c62659495f2edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc88c46fdd64969636f57576fcb2cc64"><td class="memItemLeft" align="right" valign="top"><a id="acc88c46fdd64969636f57576fcb2cc64"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>BlockUntilLoadComplete</b> ()</td></tr>
 <tr class="separator:acc88c46fdd64969636f57576fcb2cc64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,9 +125,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Close</b> () override
 <tr class="memitem:ad9dc91735e88c98b3c3bab74bb27454e"><td class="memItemLeft" align="right" valign="top"><a id="ad9dc91735e88c98b3c3bab74bb27454e"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFilename</b> () const override</td></tr>
 <tr class="separator:ad9dc91735e88c98b3c3bab74bb27454e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a803ebe7cc49dfe179fa4395239e7001c"><td class="memItemLeft" align="right" valign="top"><a id="a803ebe7cc49dfe179fa4395239e7001c"></a>
-<a class="el" href="class_a_z_std_1_1chrono_1_1duration.html">AZStd::chrono::milliseconds</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetStreamingDeadline</b> () const</td></tr>
-<tr class="separator:a803ebe7cc49dfe179fa4395239e7001c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1137cdc86847f625d07a2b08257711"><td class="memItemLeft" align="right" valign="top"><a id="aab1137cdc86847f625d07a2b08257711"></a>
+<a class="el" href="class_a_z_std_1_1chrono_1_1duration.html">AZ::IO::IStreamerTypes::Deadline</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetStreamingDeadline</b> () const</td></tr>
+<tr class="separator:aab1137cdc86847f625d07a2b08257711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b65c3c8761717f476a1436dcb1561d4"><td class="memItemLeft" align="right" valign="top"><a id="a1b65c3c8761717f476a1436dcb1561d4"></a>
 AZ::IO::IStreamerTypes::Priority&#160;</td><td class="memItemRight" valign="bottom"><b>GetStreamingPriority</b> () const</td></tr>
 <tr class="separator:a1b65c3c8761717f476a1436dcb1561d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,7 +199,7 @@ SizeType&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeSeekPositi
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:17:20 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:31 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

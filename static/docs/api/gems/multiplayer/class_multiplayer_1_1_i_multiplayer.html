@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Multiplayer Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -77,8 +77,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab8c054628b97b60d4df364a2964a8fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa64a8f56c89e36af0f908ee8d35b8d72"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#aa64a8f56c89e36af0f908ee8d35b8d72">AddClientMigrationEndEventHandler</a> (ClientMigrationEndEvent::Handler &amp;handler)=0</td></tr>
 <tr class="separator:aa64a8f56c89e36af0f908ee8d35b8d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2253c36fac532ea74758248217f51dc7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a2253c36fac532ea74758248217f51dc7">AddClientDisconnectedHandler</a> (ClientDisconnectedEvent::Handler &amp;handler)=0</td></tr>
-<tr class="separator:a2253c36fac532ea74758248217f51dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671ee07efc90a430c9184f3028135a3c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a671ee07efc90a430c9184f3028135a3c">AddEndpointDisconnectedHandler</a> (EndpointDisconnectedEvent::Handler &amp;handler)=0</td></tr>
+<tr class="separator:a671ee07efc90a430c9184f3028135a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4495f207b35c4a84834b6d26b97af74"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#ab4495f207b35c4a84834b6d26b97af74">AddNotifyClientMigrationHandler</a> (NotifyClientMigrationEvent::Handler &amp;handler)=0</td></tr>
 <tr class="separator:ab4495f207b35c4a84834b6d26b97af74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2713f0b5239aa775341cdb3f531a864"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#ad2713f0b5239aa775341cdb3f531a864">AddNotifyEntityMigrationEventHandler</a> (NotifyEntityMigrationEvent::Handler &amp;handler)=0</td></tr>
@@ -121,38 +121,6 @@ Public Member Functions</h2></td></tr>
 <p><a class="el" href="class_multiplayer_1_1_i_multiplayer.html" title="IMultiplayer provides insight into the Multiplayer session and its Agents.">IMultiplayer</a> is an AZ::Interface&lt;T&gt; that provides applications access to multiplayer session information and events. <a class="el" href="class_multiplayer_1_1_i_multiplayer.html" title="IMultiplayer provides insight into the Multiplayer session and its Agents.">IMultiplayer</a> is implemented on the MultiplayerSystemComponent and is used to define and access information about the type of session and the role held by the current agent. An Agent is defined here as an actor in a session. Types of Agents included by default are a Client, a Client Server and a Dedicated Server.</p>
 <p><a class="el" href="class_multiplayer_1_1_i_multiplayer.html" title="IMultiplayer provides insight into the Multiplayer session and its Agents.">IMultiplayer</a> also provides events to allow developers to receive and respond to notifications relating to the session. These include Session Init and Shutdown and on acquisition of a new connection. These events are only fired on Client Server or Dedicated Server. These events are useful for services that talk to matchmaking services that may run in an entirely different layer which may need insight to the gameplay session. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2253c36fac532ea74758248217f51dc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2253c36fac532ea74758248217f51dc7">&#9670;&nbsp;</a></span>AddClientDisconnectedHandler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Multiplayer::IMultiplayer::AddClientDisconnectedHandler </td>
-          <td>(</td>
-          <td class="paramtype">ClientDisconnectedEvent::Handler &amp;&#160;</td>
-          <td class="paramname"><em>handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Adds a ClientDisconnectedEvent Handler which is invoked on the client when a disconnection occurs. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handler</td><td>The ClientDisconnectedEvent Handler to add </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="aa64a8f56c89e36af0f908ee8d35b8d72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa64a8f56c89e36af0f908ee8d35b8d72">&#9670;&nbsp;</a></span>AddClientMigrationEndEventHandler()</h2>
 
@@ -243,6 +211,38 @@ Public Member Functions</h2></td></tr>
 <p>Adds a ConnectionAcquiredEvent Handler which is invoked when a new endpoint connects to the session. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handler</td><td>The ConnectionAcquiredEvent Handler to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a671ee07efc90a430c9184f3028135a3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a671ee07efc90a430c9184f3028135a3c">&#9670;&nbsp;</a></span>AddEndpointDisconnectedHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Multiplayer::IMultiplayer::AddEndpointDisconnectedHandler </td>
+          <td>(</td>
+          <td class="paramtype">EndpointDisconnectedEvent::Handler &amp;&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adds a EndpointDisconnectedEvent Handler which is invoked on the client when a disconnection occurs. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>The EndpointDisconnectedEvent Handler to add </td></tr>
   </table>
   </dd>
 </dl>
@@ -1025,7 +1025,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:20:03 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:13 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -137,6 +137,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ab18d755a9d776ebf57845f816a5f9e14"><td class="memItemLeft" align="right" valign="top"><a id="ab18d755a9d776ebf57845f816a5f9e14"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> &amp;other) const</td></tr>
 <tr class="separator:ab18d755a9d776ebf57845f816a5f9e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c0784d00d6ff43ee07f5333af94eb51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#a8c0784d00d6ff43ee07f5333af94eb51">CastToType</a> (TypeId requestedType) const</td></tr>
+<tr class="separator:a8c0784d00d6ff43ee07f5333af94eb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -168,6 +170,25 @@ static AZStd::any&#160;</td><td class="memItemRight" valign="bottom"><b>ToAny</b
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8c0784d00d6ff43ee07f5333af94eb51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c0784d00d6ff43ee07f5333af94eb51">&#9670;&nbsp;</a></span>CastToType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> AZ::RPI::MaterialPropertyValue::CastToType </td>
+          <td>(</td>
+          <td class="paramtype">TypeId&#160;</td>
+          <td class="paramname"><em>requestedType</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Attempt to cast the value to another type, handling numerical types (e.g. int to float, bool to int), vector types (e.g. Vector2 to Vector3) and color&lt;-&gt;vector types (e.g. Vector[3-4] to Color). In conversions between vector based types of different dimension, the result gets truncated or padded with zeroes as needed. Conversions between color and vector types are only supported for 3 and 4 dimensional vectors. In case of incompatible types (e.g. string to float, Vector2 to Color), the current object is returned as-is. </p>
+
+</div>
+</div>
 <a id="aba98f5b2bd5b115484156669a046b614"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba98f5b2bd5b115484156669a046b614">&#9670;&nbsp;</a></span>FromAny()</h2>
 
@@ -258,7 +279,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

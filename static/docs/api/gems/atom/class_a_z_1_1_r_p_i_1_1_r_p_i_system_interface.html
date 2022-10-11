@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -77,6 +77,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a8dda2b4918062fa1360a3580d4f757db">IsInitialized</a> () const =0</td></tr>
 <tr class="memdesc:a8dda2b4918062fa1360a3580d4f757db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Was the RPI system initialized properly. <br /></td></tr>
 <tr class="separator:a8dda2b4918062fa1360a3580d4f757db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b8b3cd622ff1847de245088c4cf1407"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a9b8b3cd622ff1847de245088c4cf1407">IsNullRenderer</a> () const =0</td></tr>
+<tr class="separator:a9b8b3cd622ff1847de245088c4cf1407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a0d2a782eb5f326dd0555ea0f1c036c"><td class="memItemLeft" align="right" valign="top"><a id="a8a0d2a782eb5f326dd0555ea0f1c036c"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a8a0d2a782eb5f326dd0555ea0f1c036c">RegisterScene</a> (ScenePtr scene)=0</td></tr>
 <tr class="memdesc:a8a0d2a782eb5f326dd0555ea0f1c036c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a created scene to <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html">RPISystem</a>. Registered scene will be simulated and rendered in <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html">RPISystem</a> ticks. <br /></td></tr>
@@ -146,6 +148,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:aad522d2c572fb0f32b5ee79eebc6de15"><td class="memItemLeft" align="right" valign="top"><a id="aad522d2c572fb0f32b5ee79eebc6de15"></a>
 virtual const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_multisample_state.html">RHI::MultisampleState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetApplicationMultisampleState</b> () const =0</td></tr>
 <tr class="separator:aad522d2c572fb0f32b5ee79eebc6de15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b973b2709288080097358143dba33f"><td class="memItemLeft" align="right" valign="top"><a id="a05b973b2709288080097358143dba33f"></a>
+virtual <a class="el" href="class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html">XRRenderingInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a05b973b2709288080097358143dba33f">GetXRSystem</a> () const =0</td></tr>
+<tr class="memdesc:a05b973b2709288080097358143dba33f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the XR system for XR specific functionality. <br /></td></tr>
+<tr class="separator:a05b973b2709288080097358143dba33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -156,6 +162,34 @@ static <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface of <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html">RPISystem</a>, which is the main entry point for the Atom renderer. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9b8b3cd622ff1847de245088c4cf1407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b8b3cd622ff1847de245088c4cf1407">&#9670;&nbsp;</a></span>IsNullRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AZ::RPI::RPISystemInterface::IsNullRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>If the renderer is null. It's controlled by renderer=null command line option </p>
+
+<p>Implemented in <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html#ac12da684d4df77639aa2e7e70144fba7">AZ::RPI::RPISystem</a>.</p>
+
+</div>
+</div>
 <a id="a4c43e26a192a74e2e8ce839e920a540f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4c43e26a192a74e2e8ce839e920a540f">&#9670;&nbsp;</a></span>SetRenderPrepareJobPolicy()</h2>
 
@@ -248,7 +282,7 @@ static <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html">
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:25 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:23 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

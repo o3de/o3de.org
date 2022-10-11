@@ -6,19 +6,39 @@ weight: 400
 toc: true
 ---
 
-**Faster Scanning Mode** speeds up **Asset Processor’s** startup scan by using timestamps to track source asset changes rather than file hashes. Faster Scanning Mode also skips checks for cache changes that occurred while Asset Processor was not running. This can save time when processing many assets in a project. You can switch scan modes at any time without restarting the Asset Processor, including during an asset scan. Asset Processor saves your preference between sessions.
+**Faster Scanning Mode** speeds up **Asset Processor's** startup scan by using timestamps to track source asset changes before checking file hashes. This saves time when launching Asset Processor in all circumstances. You can switch scanning modes at any time without restarting Asset Processor, including during an asset scan. Asset Processor saves your preference between sessions.
 
-## Choose a scan mode
+When Faster Scanning is enabled:
+1. The Asset Processor compares the timestamp of the source asset's last modification time against the last time it processed that file. If the timestamps are identical, it skips processing that source asset.
+1. If the timestamps are different, Asset Processor creates a hash of the contents of the source asset and compares that to the hash of the source asset the last time it was processed. If they match, it skips processing the source asset.
+    * There are a few reasons why timestamps might not match when the hashes of the content do match:
+        * Some source control configurations may result in the same source asset having a different timestamp.
+        * Some archival formats, like ZIP, will truncate timestamps, so a source asset that is placed into a ZIP file and later removed will have a truncated timestamp.
+        * Sometimes, content creators may re-save a file without making a change.
+1. If the hashes of the source asset's content are different, the standard asset processing process begins, calling Create Jobs on the source asset for all relevant builders.
+
+When Faster Scanning is disabled:
+1. The Asset Processor calls Create Jobs on every single source asset it tracks for each builder that processes those source assets.
+1. If the fingerprint of the Create Jobs result for the source asset on that builder matches the last time it was run, then Process Job is skipped for that builder.
+
+With Faster Scanning enabled or disabled, if the fingerprint of the builder or the file has changed, the associated job will also run again. The builder fingerprint is modified by the builder author when they change the logic for the builder, and all jobs using that builder must be re-run. The file fingerprint checks if any source or job dependencies have changed and forces the job to re-run if those upstream files have been modified.
+
+{{< note >}}
+In either scanning mode, the Asset Processor does not check the cache for changes made while it was not running. Making modifications to files in the asset cache should be avoided; those changes won't be tracked by the O3DE tools and could be overwritten at any time.
+{{< /note >}}
+
+## Choose a scanning mode
 
 ![The Faster Scanning Mode settings in Asset Processor](/images/user-guide/assets/asset-processor/interface-fast-scan.png)
 
-Faster Scanning Mode is on by default. To disable Faster Scanning Mode, do the following:
+Faster Scanning Mode is enabled by default for Asset Processor GUI but disabled by default for Asset Processor Batch.
 
+To disable Faster Scanning Mode in the GUI, do the following:
 1. Choose the Tools tab in Asset Processor.
 1. Uncheck the **Faster Scanning Mode** option.
 
 {{< note >}}
-When Faster Scanning Mode is disabled, file hashes are used to check for updated source assets and source dependencies. This might significantly increase analysis time.
+When Faster Scanning Mode is disabled, file hashes are used to check for updated source assets and source dependencies. This will significantly increase analysis time.
 {{< /note >}}
 
 You can use the command line option below to activate Faster Scanning Mode for **Asset Processor Batch**.
@@ -62,8 +82,8 @@ You can perform a **Full Scan**, even when Faster Scanning Mode is active. A Ful
 
 A source asset found during the scan can be excluded from reanalysis if it meets all of the criteria below:
 
-* The source asset hasn’t changed on disk (its timestamp matches the timestamp in the Asset Database).
-* The source assets's dependencies haven’t changed on disk (the source dependency timestamps match the timestamps in the Asset Database).
+* The source asset hasn't changed on disk (its timestamp matches the timestamp in the Asset Database).
+* The source assets's dependencies haven't changed on disk (the source dependency timestamps match the timestamps in the Asset Database).
 * The most recent process jobs for the source asset succeeded without errors or warnings.
 * The version and fingerprint of the Asset Builders that processed the source asset have not changed.
 * There are no new Asset Builders that may process the source file.
@@ -78,5 +98,7 @@ A full scan checks the Asset Cache for product assets and rebuilds the appropria
 1. Choose Start Scan.
 
 {{< note >}}
-If you are having issues with the Asset Cache, performing a full scan might resolve the issues. If a full scan does not repair the Asset Cache, you can rebuild the entire Asset Cache by deleting the `Cache` directory in your project. If you’re an engineer making BuilderSDK-based Asset Builders, deleting the cache is not recommended.
+If you are having issues with the Asset Cache, performing a full scan might resolve the issues. If a full scan does not repair the Asset Cache, you can rebuild the entire Asset Cache by deleting the `Cache` directory in your project. If you're an engineer making BuilderSDK-based Asset Builders, deleting the cache is not recommended.
 {{< /note >}}
+
+Deleting the Asset Cache to work around or solve a problem should be treated as a last resort solution. The issue might not be resolved after the cache is rebuilt. Even if it is, you might lose more time deleting and rebuilding the cache than it requires to fix the root problem. Instead, it is recommended that you document the issue and share that information with your team.  Wait until a pipeline engineer can investigate the problem before deleting the cache.

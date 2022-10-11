@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -108,10 +108,32 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#aa033b36c1f1128da76d67f2dff38b480">SaveAllDocuments</a> ()=0</td></tr>
 <tr class="memdesc:aa033b36c1f1128da76d67f2dff38b480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save all documents. <br /></td></tr>
 <tr class="separator:aa033b36c1f1128da76d67f2dff38b480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a806509de9ef4006ab81ad8c9387e5fb1"><td class="memItemLeft" align="right" valign="top"><a id="a806509de9ef4006ab81ad8c9387e5fb1"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a806509de9ef4006ab81ad8c9387e5fb1">SaveAllModifiedDocuments</a> ()=0</td></tr>
+<tr class="memdesc:a806509de9ef4006ab81ad8c9387e5fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save all modified documents. <br /></td></tr>
+<tr class="separator:a806509de9ef4006ab81ad8c9387e5fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae28ca4bd616a39687b73ed33487dda02"><td class="memItemLeft" align="right" valign="top"><a id="ae28ca4bd616a39687b73ed33487dda02"></a>
 virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ae28ca4bd616a39687b73ed33487dda02">GetDocumentCount</a> () const =0</td></tr>
 <tr class="memdesc:ae28ca4bd616a39687b73ed33487dda02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of allocated documents. <br /></td></tr>
 <tr class="separator:ae28ca4bd616a39687b73ed33487dda02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6493ac8084aca8d2a98ba14297efe3dc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a6493ac8084aca8d2a98ba14297efe3dc">IsDocumentOpen</a> (const AZ::Uuid &amp;documentId) const =0</td></tr>
+<tr class="separator:a6493ac8084aca8d2a98ba14297efe3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4734bae58cd1e26a9363ed52174cebcf"><td class="memItemLeft" align="right" valign="top"><a id="a4734bae58cd1e26a9363ed52174cebcf"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a4734bae58cd1e26a9363ed52174cebcf">AddRecentFilePath</a> (const AZStd::string &amp;absolutePath)=0</td></tr>
+<tr class="memdesc:a4734bae58cd1e26a9363ed52174cebcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file path to the top of the list of recent file paths. <br /></td></tr>
+<tr class="separator:a4734bae58cd1e26a9363ed52174cebcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c37cacfc0ca90b7aa63675c5948eaa"><td class="memItemLeft" align="right" valign="top"><a id="a06c37cacfc0ca90b7aa63675c5948eaa"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a06c37cacfc0ca90b7aa63675c5948eaa">ClearRecentFilePaths</a> ()=0</td></tr>
+<tr class="memdesc:a06c37cacfc0ca90b7aa63675c5948eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all file paths from the list of recent file paths. <br /></td></tr>
+<tr class="separator:a06c37cacfc0ca90b7aa63675c5948eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4986e370376ff6c2ce47634a9258846"><td class="memItemLeft" align="right" valign="top"><a id="ab4986e370376ff6c2ce47634a9258846"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ab4986e370376ff6c2ce47634a9258846">SetRecentFilePaths</a> (const AZStd::vector&lt; AZStd::string &gt; &amp;absolutePaths)=0</td></tr>
+<tr class="memdesc:ab4986e370376ff6c2ce47634a9258846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace the list of recent file paths in the settings registry. <br /></td></tr>
+<tr class="separator:ab4986e370376ff6c2ce47634a9258846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adccee16a31737a70c2578cca13bfbfe7"><td class="memItemLeft" align="right" valign="top"><a id="adccee16a31737a70c2578cca13bfbfe7"></a>
+virtual const AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#adccee16a31737a70c2578cca13bfbfe7">GetRecentFilePaths</a> () const =0</td></tr>
+<tr class="memdesc:adccee16a31737a70c2578cca13bfbfe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the list of recent file paths from the settings registry. <br /></td></tr>
+<tr class="separator:adccee16a31737a70c2578cca13bfbfe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -341,6 +363,38 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
+<a id="a6493ac8084aca8d2a98ba14297efe3dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6493ac8084aca8d2a98ba14297efe3dc">&#9670;&nbsp;</a></span>IsDocumentOpen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AtomToolsFramework::AtomToolsDocumentSystemRequests::IsDocumentOpen </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Uuid &amp;&#160;</td>
+          <td class="paramname"><em>documentId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Determine if a document is open in the system </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">documentId</td><td>unique id of document to check </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad41a44da41b7efce1391869df434493a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad41a44da41b7efce1391869df434493a">&#9670;&nbsp;</a></span>OpenDocument()</h2>
 
@@ -498,7 +552,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

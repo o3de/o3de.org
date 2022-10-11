@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,8 +46,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_local_view_bookmark_loader-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::LocalViewBookmarkLoader Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -59,35 +59,25 @@ $(function() {
 
 <p><code>#include &lt;LocalViewBookmarkLoader.h&gt;</code></p>
 
-<p>Inherits <a class="el" href="class_az_tools_framework_1_1_view_bookmark_loader_interface.html">AzToolsFramework::ViewBookmarkLoaderInterface</a>.</p>
+<p>Inherits <a class="el" href="class_az_tools_framework_1_1_view_bookmark_interface.html">AzToolsFramework::ViewBookmarkInterface</a>, and <a class="el" href="class_az_tools_framework_1_1_view_bookmark_persist_interface.html">AzToolsFramework::ViewBookmarkPersistInterface</a>.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a849c7efc03029e40c253971bdf6cd317"><td class="memItemLeft" align="right" valign="top"><a id="a849c7efc03029e40c253971bdf6cd317"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ViewBookmarkType</b> : int { <b>Standard</b>, 
-<b>LastKnownLocation</b>
- }</td></tr>
-<tr class="separator:a849c7efc03029e40c253971bdf6cd317"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a603f7f79ad73f6cf7da9b1f2343b66ff"><td class="memItemLeft" align="right" valign="top"><a id="a603f7f79ad73f6cf7da9b1f2343b66ff"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_az_tools_framework_1_1_local_view_bookmark_loader.html">LocalViewBookmarkLoader</a>, AZ::SystemAllocator, 0)</td></tr>
 <tr class="separator:a603f7f79ad73f6cf7da9b1f2343b66ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c320c923c0180ff62058f53c299f1e0"><td class="memItemLeft" align="right" valign="top"><a id="a9c320c923c0180ff62058f53c299f1e0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_local_view_bookmark_loader.html">LocalViewBookmarkLoader</a>, &quot;{A64F2300-0958-4430-9EEA-1D457997E618}&quot;, ViewBookmarkLoaderInterface)</td></tr>
-<tr class="separator:a9c320c923c0180ff62058f53c299f1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a976c7c38b345fa98bed1394c1ff29cb2"><td class="memItemLeft" align="right" valign="top"><a id="a976c7c38b345fa98bed1394c1ff29cb2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterViewBookmarkLoaderInterface</b> ()</td></tr>
-<tr class="separator:a976c7c38b345fa98bed1394c1ff29cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72b2a19c76eb986efc77fc166a4fbb1b"><td class="memItemLeft" align="right" valign="top"><a id="a72b2a19c76eb986efc77fc166a4fbb1b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterViewBookmarkLoaderInterface</b> ()</td></tr>
-<tr class="separator:a72b2a19c76eb986efc77fc166a4fbb1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91fd786ea8949d40f116dd8f57f97ffb"><td class="memItemLeft" align="right" valign="top"><a id="a91fd786ea8949d40f116dd8f57f97ffb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveBookmark</b> (const <a class="el" href="struct_az_tools_framework_1_1_view_bookmark.html">ViewBookmark</a> &amp;bookmark) override</td></tr>
-<tr class="separator:a91fd786ea8949d40f116dd8f57f97ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e5144cd293ce380858dd8cd56f8e4de"><td class="memItemLeft" align="right" valign="top"><a id="a0e5144cd293ce380858dd8cd56f8e4de"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ModifyBookmarkAtIndex</b> (const <a class="el" href="struct_az_tools_framework_1_1_view_bookmark.html">ViewBookmark</a> &amp;bookmark, int index) override</td></tr>
-<tr class="separator:a0e5144cd293ce380858dd8cd56f8e4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7788d30ddb043fef2767b6f59cfd6887"><td class="memItemLeft" align="right" valign="top"><a id="a7788d30ddb043fef2767b6f59cfd6887"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_local_view_bookmark_loader.html">LocalViewBookmarkLoader</a>, &quot;{A64F2300-0958-4430-9EEA-1D457997E618}&quot;, ViewBookmarkInterface)</td></tr>
+<tr class="separator:a7788d30ddb043fef2767b6f59cfd6887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b214aa5b83adc05c3b28220542a1c4"><td class="memItemLeft" align="right" valign="top"><a id="ae8b214aa5b83adc05c3b28220542a1c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterViewBookmarkInterface</b> ()</td></tr>
+<tr class="separator:ae8b214aa5b83adc05c3b28220542a1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193bce4478844744d4851d980a6351c3"><td class="memItemLeft" align="right" valign="top"><a id="a193bce4478844744d4851d980a6351c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterViewBookmarkInterface</b> ()</td></tr>
+<tr class="separator:a193bce4478844744d4851d980a6351c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2914788ba580e123f8d4b4de9bf1254b"><td class="memItemLeft" align="right" valign="top"><a id="a2914788ba580e123f8d4b4de9bf1254b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveBookmarkAtIndex</b> (const <a class="el" href="struct_az_tools_framework_1_1_view_bookmark.html">ViewBookmark</a> &amp;bookmark, int index) override</td></tr>
+<tr class="separator:a2914788ba580e123f8d4b4de9bf1254b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae15137b9b1ae4a16616aac0e1a4c9a95"><td class="memItemLeft" align="right" valign="top"><a id="ae15137b9b1ae4a16616aac0e1a4c9a95"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveLastKnownLocation</b> (const <a class="el" href="struct_az_tools_framework_1_1_view_bookmark.html">ViewBookmark</a> &amp;bookmark) override</td></tr>
 <tr class="separator:ae15137b9b1ae4a16616aac0e1a4c9a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,19 +87,130 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveBookmarkAtIndex
 <tr class="memitem:ac62903e7d0eaf01ead73bd4f299a01b5"><td class="memItemLeft" align="right" valign="top"><a id="ac62903e7d0eaf01ead73bd4f299a01b5"></a>
 AZStd::optional&lt; <a class="el" href="struct_az_tools_framework_1_1_view_bookmark.html">ViewBookmark</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LoadBookmarkAtIndex</b> (int index) override</td></tr>
 <tr class="separator:ac62903e7d0eaf01ead73bd4f299a01b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8dad761f441eb5d6aa7990b446af5fb"><td class="memItemLeft" align="right" valign="top"><a id="ac8dad761f441eb5d6aa7990b446af5fb"></a>
-AZStd::optional&lt; <a class="el" href="struct_az_tools_framework_1_1_view_bookmark.html">ViewBookmark</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LoadLastKnownLocation</b> () const override</td></tr>
-<tr class="separator:ac8dad761f441eb5d6aa7990b446af5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b26fe3ef71824f1ee5629f61502371c"><td class="memItemLeft" align="right" valign="top"><a id="a1b26fe3ef71824f1ee5629f61502371c"></a>
+AZStd::optional&lt; <a class="el" href="struct_az_tools_framework_1_1_view_bookmark.html">ViewBookmark</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LoadLastKnownLocation</b> () override</td></tr>
+<tr class="separator:a1b26fe3ef71824f1ee5629f61502371c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad680a89c725fbe8d5f0b3311a92f6be4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_local_view_bookmark_loader.html#ad680a89c725fbe8d5f0b3311a92f6be4">OverrideStreamWriteFn</a> (<a class="el" href="class_az_tools_framework_1_1_view_bookmark_persist_interface.html#a049523a8ce2d3d47f9883b98000c9aa9">StreamWriteFn</a> streamWriteFn) override</td></tr>
+<tr class="separator:ad680a89c725fbe8d5f0b3311a92f6be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd2ad7992a65c83afaf56e99c9b9e85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_local_view_bookmark_loader.html#a4fd2ad7992a65c83afaf56e99c9b9e85">OverrideStreamReadFn</a> (<a class="el" href="class_az_tools_framework_1_1_view_bookmark_persist_interface.html#ae66b7d807b14aad20cc6b06b481730b6">StreamReadFn</a> streamReadFn) override</td></tr>
+<tr class="separator:a4fd2ad7992a65c83afaf56e99c9b9e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96dcc928b65a5e4352dde6fd59d44806"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_local_view_bookmark_loader.html#a96dcc928b65a5e4352dde6fd59d44806">OverrideFileExistsFn</a> (FileExistsFn fileExistsFn) override</td></tr>
+<tr class="separator:a96dcc928b65a5e4352dde6fd59d44806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a1f894a05feb7b228f464d7d8dcffedad"><td class="memItemLeft" align="right" valign="top"><a id="a1f894a05feb7b228f464d7d8dcffedad"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultViewBookmarkCount</b> = 12</td></tr>
+<tr class="separator:a1f894a05feb7b228f464d7d8dcffedad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_az_tools_framework_1_1_view_bookmark_persist_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_az_tools_framework_1_1_view_bookmark_persist_interface')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_az_tools_framework_1_1_view_bookmark_persist_interface.html">AzToolsFramework::ViewBookmarkPersistInterface</a></td></tr>
+<tr class="memitem:a049523a8ce2d3d47f9883b98000c9aa9 inherit pub_types_class_az_tools_framework_1_1_view_bookmark_persist_interface"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_view_bookmark_persist_interface.html#a049523a8ce2d3d47f9883b98000c9aa9">StreamWriteFn</a> = AZStd::function&lt; bool(const AZ::IO::PathView &amp;localBookmarksFileName, AZStd::string_view stringBuffer, AZStd::function&lt; bool(AZ::IO::GenericStream &amp;genericStream, const AZStd::string &amp;stringBuffer)&gt;)&gt;</td></tr>
+<tr class="separator:a049523a8ce2d3d47f9883b98000c9aa9 inherit pub_types_class_az_tools_framework_1_1_view_bookmark_persist_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66b7d807b14aad20cc6b06b481730b6 inherit pub_types_class_az_tools_framework_1_1_view_bookmark_persist_interface"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_view_bookmark_persist_interface.html#ae66b7d807b14aad20cc6b06b481730b6">StreamReadFn</a> = AZStd::function&lt; AZStd::vector&lt; char &gt;(const AZ::IO::PathView &amp;localBookmarksFileName)&gt;</td></tr>
+<tr class="separator:ae66b7d807b14aad20cc6b06b481730b6 inherit pub_types_class_az_tools_framework_1_1_view_bookmark_persist_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada257db1df181d25bc783de037634006 inherit pub_types_class_az_tools_framework_1_1_view_bookmark_persist_interface"><td class="memItemLeft" align="right" valign="top"><a id="ada257db1df181d25bc783de037634006"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>FileExistsFn</b> = AZStd::function&lt; bool(const AZ::IO::PathView &amp;localBookmarksFileName)&gt;</td></tr>
+<tr class="separator:ada257db1df181d25bc783de037634006 inherit pub_types_class_az_tools_framework_1_1_view_bookmark_persist_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>class used to load/store local ViewBookmarks from project/user/Registry/ViewBookmarks. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a96dcc928b65a5e4352dde6fd59d44806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96dcc928b65a5e4352dde6fd59d44806">&#9670;&nbsp;</a></span>OverrideFileExistsFn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::LocalViewBookmarkLoader::OverrideFileExistsFn </td>
+          <td>(</td>
+          <td class="paramtype">FileExistsFn&#160;</td>
+          <td class="paramname"><em>fileExistsFn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overrides the check for if the persistent View Bookmark Settings Registry exists or not. </p><dl class="section note"><dt>Note</dt><dd>By default this will check for a file on disk. </dd></dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_view_bookmark_persist_interface.html#a97e03fd51b3bd41806a04af37755a235">AzToolsFramework::ViewBookmarkPersistInterface</a>.</p>
+
+</div>
+</div>
+<a id="a4fd2ad7992a65c83afaf56e99c9b9e85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fd2ad7992a65c83afaf56e99c9b9e85">&#9670;&nbsp;</a></span>OverrideStreamReadFn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::LocalViewBookmarkLoader::OverrideStreamReadFn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_az_tools_framework_1_1_view_bookmark_persist_interface.html#ae66b7d807b14aad20cc6b06b481730b6">StreamReadFn</a>&#160;</td>
+          <td class="paramname"><em>streamReadFn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overrides the behavior of reading from a stream. </p><dl class="section note"><dt>Note</dt><dd>By default this will read from a file on disk. </dd></dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_view_bookmark_persist_interface.html#ac1357eaea54ecda7b5998ce822357dee">AzToolsFramework::ViewBookmarkPersistInterface</a>.</p>
+
+</div>
+</div>
+<a id="ad680a89c725fbe8d5f0b3311a92f6be4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad680a89c725fbe8d5f0b3311a92f6be4">&#9670;&nbsp;</a></span>OverrideStreamWriteFn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::LocalViewBookmarkLoader::OverrideStreamWriteFn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_az_tools_framework_1_1_view_bookmark_persist_interface.html#a049523a8ce2d3d47f9883b98000c9aa9">StreamWriteFn</a>&#160;</td>
+          <td class="paramname"><em>streamWriteFn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overrides the behavior of writing to a stream. </p><dl class="section note"><dt>Note</dt><dd>By default this will write to a file on disk. </dd></dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_view_bookmark_persist_interface.html#a14a28bde9ac6bbe726bb814343c03b7c">AzToolsFramework::ViewBookmarkPersistInterface</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Viewport/LocalViewBookmarkLoader.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:18:21 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:30 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

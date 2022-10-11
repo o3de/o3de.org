@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzNetworking API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -70,8 +70,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a89cb8a372de9c61fa888f5d46f24c59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e6424f1d239c5fddbd69367d08f5108"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_connection.html#a6e6424f1d239c5fddbd69367d08f5108">IsOpen</a> () const</td></tr>
 <tr class="separator:a6e6424f1d239c5fddbd69367d08f5108"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fd879cdf6764d999f9834b0508023fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_connection.html#a8fd879cdf6764d999f9834b0508023fd">Connect</a> ()</td></tr>
-<tr class="separator:a8fd879cdf6764d999f9834b0508023fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356eb74d100ffcca37d0591fbbbce906"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_connection.html#a356eb74d100ffcca37d0591fbbbce906">Connect</a> (uint16_t localPort)</td></tr>
+<tr class="separator:a356eb74d100ffcca37d0591fbbbce906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a373a86e7bab28ad0d89a06e3ace5ed29"><td class="memItemLeft" align="right" valign="top"><a id="a373a86e7bab28ad0d89a06e3ace5ed29"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_connection.html#a373a86e7bab28ad0d89a06e3ace5ed29">UpdateSend</a> ()</td></tr>
 <tr class="memdesc:a373a86e7bab28ad0d89a06e3ace5ed29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles any new outgoing network traffic. <br /></td></tr>
@@ -231,8 +231,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8fd879cdf6764d999f9834b0508023fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fd879cdf6764d999f9834b0508023fd">&#9670;&nbsp;</a></span>Connect()</h2>
+<a id="a356eb74d100ffcca37d0591fbbbce906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a356eb74d100ffcca37d0591fbbbce906">&#9670;&nbsp;</a></span>Connect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,12 +240,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">bool AzNetworking::TcpConnection::Connect </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>localPort</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Connects to the provided remote address. </p><dl class="section return"><dt>Returns</dt><dd>boolean true on success </dd></dl>
+<p>Connects to the provided remote address. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">localPort</td><td>the local port to open a connection from, 0 binds to any available port </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean true on success </dd></dl>
 
 </div>
 </div>
@@ -618,7 +625,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:18:10 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:19 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

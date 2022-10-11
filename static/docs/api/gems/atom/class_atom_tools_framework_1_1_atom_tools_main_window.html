@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -48,8 +48,10 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="class_atom_tools_framework_1_1_atom_tools_main_window-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AtomToolsFramework::AtomToolsMainWindow Class Reference</div>  </div>
@@ -107,15 +109,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStatusWarning</b> 
 <tr class="memitem:a2839d9d9ed10f5afa82180815c6480b8"><td class="memItemLeft" align="right" valign="top"><a id="a2839d9d9ed10f5afa82180815c6480b8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStatusError</b> (const QString &amp;message)</td></tr>
 <tr class="separator:a2839d9d9ed10f5afa82180815c6480b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a089c26bd4d3c1e9a1129782aaeb37aa7"><td class="memItemLeft" align="right" valign="top"><a id="a089c26bd4d3c1e9a1129782aaeb37aa7"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenSettings</b> ()</td></tr>
-<tr class="separator:a089c26bd4d3c1e9a1129782aaeb37aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64964db36c358e1e6062c81e9f32e86b"><td class="memItemLeft" align="right" valign="top"><a id="a64964db36c358e1e6062c81e9f32e86b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenHelp</b> ()</td></tr>
-<tr class="separator:a64964db36c358e1e6062c81e9f32e86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27313221108677658dacd7b05cb795ce"><td class="memItemLeft" align="right" valign="top"><a id="a27313221108677658dacd7b05cb795ce"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenAbout</b> ()</td></tr>
-<tr class="separator:a27313221108677658dacd7b05cb795ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d845c85f27151b3c23c028200a39b3d"><td class="memItemLeft" align="right" valign="top"><a id="a0d845c85f27151b3c23c028200a39b3d"></a>
+virtual AZStd::vector&lt; AZStd::shared_ptr&lt; <a class="el" href="struct_atom_tools_framework_1_1_dynamic_property_group.html">DynamicPropertyGroup</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSettingsDialogGroups</b> () const</td></tr>
+<tr class="separator:a0d845c85f27151b3c23c028200a39b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43e6600a2890397e6066ad20608b102a"><td class="memItemLeft" align="right" valign="top"><a id="a43e6600a2890397e6066ad20608b102a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenSettingsDialog</b> ()</td></tr>
+<tr class="separator:a43e6600a2890397e6066ad20608b102a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea9461c61180f1bb0f4d372e2a5c11c"><td class="memItemLeft" align="right" valign="top"><a id="a9ea9461c61180f1bb0f4d372e2a5c11c"></a>
+virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetHelpDialogText</b> () const</td></tr>
+<tr class="separator:a9ea9461c61180f1bb0f4d372e2a5c11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e24cc1e867797fd6752bf753c9f119"><td class="memItemLeft" align="right" valign="top"><a id="a66e24cc1e867797fd6752bf753c9f119"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenHelpDialog</b> ()</td></tr>
+<tr class="separator:a66e24cc1e867797fd6752bf753c9f119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a966c69abe5d4a1aedf3f72ca7e1a4e"><td class="memItemLeft" align="right" valign="top"><a id="a9a966c69abe5d4a1aedf3f72ca7e1a4e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenAboutDialog</b> ()</td></tr>
+<tr class="separator:a9a966c69abe5d4a1aedf3f72ca7e1a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a9f97b6c18d83c49fa0c50429d454fb27"><td class="memItemLeft" align="right" valign="top"><a id="a9f97b6c18d83c49fa0c50429d454fb27"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>LayoutSettingsMap</b> = AZStd::map&lt; AZStd::string, AZStd::string &gt;</td></tr>
+<tr class="separator:a9f97b6c18d83c49fa0c50429d454fb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -125,6 +139,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>showEvent</b> (QShowE
 <tr class="memitem:a3994d5d1128718ee6aa91337fffa07db"><td class="memItemLeft" align="right" valign="top"><a id="a3994d5d1128718ee6aa91337fffa07db"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>closeEvent</b> (QCloseEvent *closeEvent) override</td></tr>
 <tr class="separator:a3994d5d1128718ee6aa91337fffa07db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29790e9a53bc87f30778ec61236323f2"><td class="memItemLeft" align="right" valign="top"><a id="a29790e9a53bc87f30778ec61236323f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildDockingMenu</b> ()</td></tr>
+<tr class="separator:a29790e9a53bc87f30778ec61236323f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3f7f3f315e87d6da87a6bb3e23bfd1f"><td class="memItemLeft" align="right" valign="top"><a id="ae3f7f3f315e87d6da87a6bb3e23bfd1f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildLayoutsMenu</b> ()</td></tr>
+<tr class="separator:ae3f7f3f315e87d6da87a6bb3e23bfd1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8be76c00096dbe10fd31ae812974384"><td class="memItemLeft" align="right" valign="top"><a id="aa8be76c00096dbe10fd31ae812974384"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildScriptsMenu</b> ()</td></tr>
+<tr class="separator:aa8be76c00096dbe10fd31ae812974384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb03dc4c9028cada120de2fe2464ebf9"><td class="memItemLeft" align="right" valign="top"><a id="adb03dc4c9028cada120de2fe2464ebf9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RestoreDefaultLayout</b> ()</td></tr>
+<tr class="separator:adb03dc4c9028cada120de2fe2464ebf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d60898c438674e29a08be9b299c735"><td class="memItemLeft" align="right" valign="top"><a id="ab4d60898c438674e29a08be9b299c735"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RestoreSavedLayout</b> ()</td></tr>
+<tr class="separator:ab4d60898c438674e29a08be9b299c735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69e403df9428de125f63804f7065c050"><td class="memItemLeft" align="right" valign="top"><a id="a69e403df9428de125f63804f7065c050"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupMetrics</b> ()</td></tr>
 <tr class="separator:a69e403df9428de125f63804f7065c050"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,6 +223,15 @@ QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>m_menuHelp</b> = {
 <tr class="memitem:aca0f4d764731907ad71d196ebf8b848b"><td class="memItemLeft" align="right" valign="top"><a id="aca0f4d764731907ad71d196ebf8b848b"></a>
 AzToolsFramework::LogPanel::TracePrintFLogPanel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_logPanel</b> = {}</td></tr>
 <tr class="separator:aca0f4d764731907ad71d196ebf8b848b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a694f84af8e6d1bb8d69143d24c184bde"><td class="memItemLeft" align="right" valign="top"><a id="a694f84af8e6d1bb8d69143d24c184bde"></a>
+static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>ToolLayoutSettingsKey</b> = &quot;/O3DE/AtomToolsFramework/MainWindow/Layouts/Tool&quot;</td></tr>
+<tr class="separator:a694f84af8e6d1bb8d69143d24c184bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c929d28a476ccdaa52c225365df7da4"><td class="memItemLeft" align="right" valign="top"><a id="a4c929d28a476ccdaa52c225365df7da4"></a>
+static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>UserLayoutSettingsKey</b> = &quot;/O3DE/AtomToolsFramework/MainWindow/Layouts/User&quot;</td></tr>
+<tr class="separator:a4c929d28a476ccdaa52c225365df7da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/Tools/AtomToolsFramework/Code/Include/AtomToolsFramework/Window/AtomToolsMainWindow.h</li>
@@ -201,7 +239,7 @@ AzToolsFramework::LogPanel::TracePrintFLogPanel *&#160;</td><td class="memItemRi
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

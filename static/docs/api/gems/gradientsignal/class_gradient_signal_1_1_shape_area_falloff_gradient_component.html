@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine GradientSignal Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -58,7 +58,7 @@ $(function() {
 
 <p><code>#include &lt;ShapeAreaFalloffGradientComponent.h&gt;</code></p>
 
-<p>Inherits Component, Handler, and Handler.</p>
+<p>Inherits Component, Handler, Handler, Handler, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -104,6 +104,15 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:ac7bbe435af9dff8277279d5a158f6e05"><td class="memItemLeft" align="right" valign="top"><a id="ac7bbe435af9dff8277279d5a158f6e05"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityActivated</b> (const AZ::EntityId &amp;entityId) override</td></tr>
+<tr class="separator:ac7bbe435af9dff8277279d5a158f6e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16ecd31f44602f24940098d598f4ffaf"><td class="memItemLeft" align="right" valign="top"><a id="a16ecd31f44602f24940098d598f4ffaf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityDeactivated</b> (const AZ::EntityId &amp;entityId) override</td></tr>
+<tr class="separator:a16ecd31f44602f24940098d598f4ffaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30d8f786c00b7c5f6ff362cd8d2e3d50"><td class="memItemLeft" align="right" valign="top"><a id="a30d8f786c00b7c5f6ff362cd8d2e3d50"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnShapeChanged</b> (LmbrCentral::ShapeComponentNotifications::ShapeChangeReasons reasons) override</td></tr>
+<tr class="separator:a30d8f786c00b7c5f6ff362cd8d2e3d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca862459ea2c196bba47b84d7273304c"><td class="memItemLeft" align="right" valign="top"><a id="aca862459ea2c196bba47b84d7273304c"></a>
 AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetShapeEntityId</b> () const override</td></tr>
 <tr class="separator:aca862459ea2c196bba47b84d7273304c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,6 +131,15 @@ FalloffType&#160;</td><td class="memItemRight" valign="bottom"><b>GetFalloffType
 <tr class="memitem:ae6e4dcebf2ff60a3008ab4ba377497ae"><td class="memItemLeft" align="right" valign="top"><a id="ae6e4dcebf2ff60a3008ab4ba377497ae"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFalloffType</b> (FalloffType type) override</td></tr>
 <tr class="separator:ae6e4dcebf2ff60a3008ab4ba377497ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee35534a2ba71af596626ac07dab0d0"><td class="memItemLeft" align="right" valign="top"><a id="a9ee35534a2ba71af596626ac07dab0d0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Get3dFalloff</b> () const override</td></tr>
+<tr class="separator:a9ee35534a2ba71af596626ac07dab0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae6b310a52810ae8b3bba7ecb1e3eb5d"><td class="memItemLeft" align="right" valign="top"><a id="aae6b310a52810ae8b3bba7ecb1e3eb5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Set3dFalloff</b> (bool is3dFalloff) override</td></tr>
+<tr class="separator:aae6b310a52810ae8b3bba7ecb1e3eb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:added8b66f7a24b8ef7fbd2e04e0e510c"><td class="memItemLeft" align="right" valign="top"><a id="added8b66f7a24b8ef7fbd2e04e0e510c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CacheShapeBounds</b> ()</td></tr>
+<tr class="separator:added8b66f7a24b8ef7fbd2e04e0e510c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -138,7 +156,7 @@ template&lt;typename , typename &gt; </td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:47 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:56 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

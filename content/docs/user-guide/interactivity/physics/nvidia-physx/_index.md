@@ -11,10 +11,9 @@ O3DE's PhysX system acts upon entities to create realistic physical effects such
 + [PhysX Gems](#physx-gems)
 + [PhysX Components](#physx-components)
 + [PhysX Configuration](#physx-configuration)
-+ [PhysX Materials](#physx-materials)
++ [Physics Materials](#physics-materials)
 + [PhysX Debugging](#physx-debugging)
-+ [Configuring the PhysX System](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/)
-+ [Physics materials](/docs/user-guide/interactivity/physics/nvidia-physx/materials/)
++ [Configuring the PhysX System](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/))
 + [PhysX Scene Queries](/docs/user-guide/interactivity/physics/nvidia-physx/scene-queries/)
 + [PhysX Simulated Bodies](/docs/user-guide/interactivity/physics/nvidia-physx/simulated-bodies/)
 + [Dynamic joints with PhysX](/docs/user-guide/interactivity/physics/nvidia-physx/joint-intro/)
@@ -54,9 +53,9 @@ Use the **PhysX Configuration** window in O3DE Editor to configure global settin
 
 For more information, see [Configuring the PhysX System](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/).
 
-## PhysX Materials 
+## Physics Materials 
 
-PhysX materials allow simulation properties to be configured by entity. Materials customize how an object reacts when it hits a surface and control qualities like friction and bounciness. You use the **Asset Editor** to create a material library, assign the library in PhysX Configuration, and then select a specific material from the library for the collider.
+Physics materials allow simulation properties to be configured by entity. Materials customize how an object reacts when it hits a surface and control qualities like friction and bounciness. You use the **Asset Editor** to create a physics material and then assign a material to the collider.
 
 For more information, see [Physics materials](/docs/user-guide/interactivity/physics/nvidia-physx/materials/).
 

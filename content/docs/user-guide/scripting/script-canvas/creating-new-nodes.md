@@ -54,7 +54,12 @@ For more information, refer to [Creating Script Canvas Nodes from the Behavior C
 
 ## Custom nodes
 
-For the most control and flexibility when creating new nodes, including the ability to add new functionality, you can use _nodeables_, a highly customizable node implementation mechanism. To create custom Script Canvas nodes, nodeables use XML configuration, Jinja templates, and an automatic C++ code generation tool. Programmers can use nodeables to write classes in C++ using an SDK that is guaranteed to generate a class interface that provides both a usable node in Script Canvas Editor and a usable object at runtime.
+For the most control and flexibility when creating new nodes, including the ability to add new functionality, you can use
+* _nodeables_, a highly customizable node implementation mechanism
+* free function nodes, a customizable node reflecting C++ free function
+
+To create custom Script Canvas nodes, we use XML configuration, Jinja templates, and an automatic C++ code generation tool.
+Programmers can use nodeables/free function nodes to write classes/functions in C++ using an SDK that is guaranteed to generate a class interface that provides both a usable node in Script Canvas Editor and a usable object at runtime.
 
 ![Example node created from nodeables](/images/user-guide/scripting/script-canvas/nodeable-node-example.png)
 
@@ -64,6 +69,10 @@ Nodeables are not available to other O3DE scripting systems, such as Lua.
 
 {{< note >}}
 Gems that use nodeables to provide custom Script Canvas nodes must specify a dependency on the Script Canvas Gem.
+{{< /note >}}
+
+{{< note >}}
+Gems that use free function nodes to provide custom Script Canvas nodes must specify a dependency on the ScriptCanvas.Extensions target.
 {{< /note >}}
 
 For more information, refer to [Creating Custom Nodes in Script Canvas](programmer-guide/custom-nodes/) in the Script Canvas Programmer Guide.

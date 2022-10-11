@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -85,6 +85,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2d34b7d6c5f8fb422568fda335d34c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe3b91faaab353fb97ac1088b25dbf9c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#afe3b91faaab353fb97ac1088b25dbf9c">OnDocumentObjectInfoChanged</a> ([[maybe_unused]] const AZ::Uuid &amp;documentId, [[maybe_unused]] const <a class="el" href="struct_atom_tools_framework_1_1_document_object_info.html">DocumentObjectInfo</a> &amp;objectInfo, [[maybe_unused]] bool rebuilt)</td></tr>
 <tr class="separator:afe3b91faaab353fb97ac1088b25dbf9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48caf87f13b7fd70902a5ce0423aa3ce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#a48caf87f13b7fd70902a5ce0423aa3ce">OnDocumentObjectInfoInvalidated</a> ([[maybe_unused]] const AZ::Uuid &amp;documentId)</td></tr>
+<tr class="separator:a48caf87f13b7fd70902a5ce0423aa3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22e4c1b860b0bd3d99762e1aa65e35b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#a22e4c1b860b0bd3d99762e1aa65e35b0">OnDocumentCleared</a> ([[maybe_unused]] const AZ::Uuid &amp;documentId)</td></tr>
 <tr class="separator:a22e4c1b860b0bd3d99762e1aa65e35b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2ae98065db7564c4067a83c16134b31"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#ac2ae98065db7564c4067a83c16134b31">OnDocumentError</a> ([[maybe_unused]] const AZ::Uuid &amp;documentId)</td></tr>
@@ -406,6 +408,38 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
+<a id="a48caf87f13b7fd70902a5ce0423aa3ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48caf87f13b7fd70902a5ce0423aa3ce">&#9670;&nbsp;</a></span>OnDocumentObjectInfoInvalidated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AtomToolsFramework::AtomToolsDocumentNotifications::OnDocumentObjectInfoInvalidated </td>
+          <td>(</td>
+          <td class="paramtype">[[maybe_unused] ] const AZ::Uuid &amp;&#160;</td>
+          <td class="paramname"><em>documentId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Signal that reflected objects and pointers contained in the document have been invalidated so that any affected UI can be rebuilt </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">documentId</td><td>unique id of document for which the notification is sent </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a95b757ebcb9d4a2870dd00e596617bde"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95b757ebcb9d4a2870dd00e596617bde">&#9670;&nbsp;</a></span>OnDocumentOpened()</h2>
 
@@ -493,7 +527,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Signal that a document undo state was updated </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Signal that the current location in the undo redo history has changed and the UI needs to be updated </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">documentId</td><td>unique id of document for which the notification is sent </td></tr>
   </table>
@@ -508,7 +542,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

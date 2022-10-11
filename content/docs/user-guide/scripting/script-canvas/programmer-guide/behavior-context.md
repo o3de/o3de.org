@@ -34,6 +34,10 @@ The combination of the Script Canvas and behavior context architectures includes
 
 ## Example: Static functions
 
+{{< note >}}
+Refer to [Custom Free Function Nodes](/docs/user-guide/scripting/script-canvas/programmer-guide/custom-nodes/custom-free-function-nodes/) for an approach with a lighter overhead.
+{{< /note >}}
+
 To demonstrate how C++ code can become a Script Canvas node, this example uses the behavior context to reflect a few simple, static math library functions.
 
 We start with the static function declarations. The following functions return the sine and cosine of an angle. The angle is in radians:

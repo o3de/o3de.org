@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -83,8 +83,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartPlayInEd
 <tr class="memitem:adfb027db9615e429fa6a1edddea1dfff"><td class="memItemLeft" align="right" valign="top"><a id="adfb027db9615e429fa6a1edddea1dfff"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StopPlayInEditor</b> ()=0</td></tr>
 <tr class="separator:adfb027db9615e429fa6a1edddea1dfff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50c85ee6dd584860886fc145cff6cabd"><td class="memItemLeft" align="right" valign="top">virtual const Prefab::PrefabConversionUtils::InMemorySpawnableAssetContainer::SpawnableAssets &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a50c85ee6dd584860886fc145cff6cabd">GetPlayInEditorAssetData</a> () const =0</td></tr>
-<tr class="separator:a50c85ee6dd584860886fc145cff6cabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5ba6ca736deeeb6e04eb6b47866935"><td class="memItemLeft" align="right" valign="top">virtual const AzFramework::InMemorySpawnableAssetContainer::SpawnableAssets &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a3c5ba6ca736deeeb6e04eb6b47866935">GetPlayInEditorAssetData</a> () const =0</td></tr>
+<tr class="separator:a3c5ba6ca736deeeb6e04eb6b47866935"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade81000223eff6f52d40be239bf9ad68"><td class="memItemLeft" align="right" valign="top"><a id="ade81000223eff6f52d40be239bf9ad68"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadFromStream</b> (AZ::IO::GenericStream &amp;stream, AZStd::string_view filename)=0</td></tr>
 <tr class="separator:ade81000223eff6f52d40be239bf9ad68"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -95,6 +95,9 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveToStream<
 <tr class="separator:a94a792934ff9bc835181edb9e6d546bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a631dfff0f7224b9c9f0f064c80bd78ee"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a631dfff0f7224b9c9f0f064c80bd78ee">GetInstancesInRootAliasPath</a> (Prefab::RootAliasPath rootAliasPath, const AZStd::function&lt; bool(const Prefab::InstanceOptionalReference)&gt; &amp;callback) const =0</td></tr>
 <tr class="separator:a631dfff0f7224b9c9f0f064c80bd78ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ea36225f5f965a469a6e415fdabbcab"><td class="memItemLeft" align="right" valign="top"><a id="a6ea36225f5f965a469a6e415fdabbcab"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterGameModeEventHandler</b> (AZ::Event&lt; GameModeState &gt;::Handler &amp;handler)=0</td></tr>
+<tr class="separator:a6ea36225f5f965a469a6e415fdabbcab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aadaa9719260499631f0400d5791a1464"></a>
@@ -236,8 +239,8 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveToStream<
 
 </div>
 </div>
-<a id="a50c85ee6dd584860886fc145cff6cabd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50c85ee6dd584860886fc145cff6cabd">&#9670;&nbsp;</a></span>GetPlayInEditorAssetData()</h2>
+<a id="a3c5ba6ca736deeeb6e04eb6b47866935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c5ba6ca736deeeb6e04eb6b47866935">&#9670;&nbsp;</a></span>GetPlayInEditorAssetData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -246,7 +249,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveToStream<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const Prefab::PrefabConversionUtils::InMemorySpawnableAssetContainer::SpawnableAssets&amp; AzToolsFramework::PrefabEditorEntityOwnershipInterface::GetPlayInEditorAssetData </td>
+          <td class="memname">virtual const AzFramework::InMemorySpawnableAssetContainer::SpawnableAssets&amp; AzToolsFramework::PrefabEditorEntityOwnershipInterface::GetPlayInEditorAssetData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -340,7 +343,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveToStream<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:18:21 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:31 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

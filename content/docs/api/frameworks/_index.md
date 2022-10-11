@@ -14,4 +14,3 @@ description: Reference index for Open 3D Engine frameworks.
 * [AzTest](/docs/api/frameworks/aztest)
 * [AzToolsFramework](/docs/api/frameworks/aztoolsframework)
 * [GFxFramework](/docs/api/frameworks/gfxframework)
-* [GridMate](/docs/api/frameworks/gridmate)

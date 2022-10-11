@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -56,6 +56,8 @@ $(function() {
 <div class="title">AzToolsFramework::Prefab::PrefabConversionUtils::PrefabProcessorContext Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Inherits <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_entity_id_path_mapper_interface.html">AzToolsFramework::Prefab::PrefabConversionUtils::EntityIdPathMapperInterface</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -140,6 +142,18 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasCompletedS
 <tr class="memitem:a21b70943e59ef59bdebc44375a1e2dff"><td class="memItemLeft" align="right" valign="top"><a id="a21b70943e59ef59bdebc44375a1e2dff"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ErrorEncountered</b> ()</td></tr>
 <tr class="separator:a21b70943e59ef59bdebc44375a1e2dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5a2d369c6482dd4a17ea1c3c19222f0"><td class="memItemLeft" align="right" valign="top"><a id="aa5a2d369c6482dd4a17ea1c3c19222f0"></a>
+AZ::IO::PathView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_prefab_processor_context.html#aa5a2d369c6482dd4a17ea1c3c19222f0">GetHashedPathUsedForEntityIdGeneration</a> (const AZ::EntityId) override</td></tr>
+<tr class="memdesc:aa5a2d369c6482dd4a17ea1c3c19222f0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_entity_id_path_mapper_interface.html">EntityIdPathMapperInterface</a> overrides. <br /></td></tr>
+<tr class="separator:aa5a2d369c6482dd4a17ea1c3c19222f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430f2ad7a2c7da4e7020917515f74111"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_prefab_processor_context.html#a430f2ad7a2c7da4e7020917515f74111">SetHashedPathUsedForEntityIdGeneration</a> (const AZ::EntityId, AZ::IO::PathView) override</td></tr>
+<tr class="separator:a430f2ad7a2c7da4e7020917515f74111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec361146daec8fe56e2a23b45785df26"><td class="memItemLeft" align="right" valign="top"><a id="aec361146daec8fe56e2a23b45785df26"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddPrefabSpawnablePostProcessEventHandler</b> (PrefabSpawnablePostProcessEvent::Handler &amp;handler)</td></tr>
+<tr class="separator:aec361146daec8fe56e2a23b45785df26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e522632a79dcf315aeda3f9a01b0ecf"><td class="memItemLeft" align="right" valign="top"><a id="a9e522632a79dcf315aeda3f9a01b0ecf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SendSpawnablePostProcessEvent</b> (const AZStd::string &amp;prefabName, AzFramework::Spawnable &amp;spawnable)</td></tr>
+<tr class="separator:a9e522632a79dcf315aeda3f9a01b0ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -161,6 +175,9 @@ AZ::Data::AssetLoadBehavior&#160;</td><td class="memItemRight" valign="bottom"><
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a450489a730bacfa8607fb7f2ce06ad65"><td class="memItemLeft" align="right" valign="top"><a id="a450489a730bacfa8607fb7f2ce06ad65"></a>
+AZStd::unordered_map&lt; AZ::EntityId, AZ::IO::Path &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityIdToHashedPathMap</b></td></tr>
+<tr class="separator:a450489a730bacfa8607fb7f2ce06ad65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15f722fe516dfc8e7f604886da015c8e"><td class="memItemLeft" align="right" valign="top"><a id="a15f722fe516dfc8e7f604886da015c8e"></a>
 PrefabContainer&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabs</b></td></tr>
 <tr class="separator:a15f722fe516dfc8e7f604886da015c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,6 +196,9 @@ ProcessedObjectStoreContainer&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:acc8a6da7e6eeb1e34ebbe5afe12febee"><td class="memItemLeft" align="right" valign="top"><a id="acc8a6da7e6eeb1e34ebbe5afe12febee"></a>
 ProductAssetDependencyContainer&#160;</td><td class="memItemRight" valign="bottom"><b>m_registeredProductAssetDependencies</b></td></tr>
 <tr class="separator:acc8a6da7e6eeb1e34ebbe5afe12febee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f92a43977c77cf0e4f955e302f2317"><td class="memItemLeft" align="right" valign="top"><a id="aa6f92a43977c77cf0e4f955e302f2317"></a>
+PrefabSpawnablePostProcessEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabPostProcessEvent</b></td></tr>
+<tr class="separator:aa6f92a43977c77cf0e4f955e302f2317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70bd160711df8dae18d1d2c9133d13ad"><td class="memItemLeft" align="right" valign="top"><a id="a70bd160711df8dae18d1d2c9133d13ad"></a>
 AZ::PlatformTagSet&#160;</td><td class="memItemRight" valign="bottom"><b>m_platformTags</b></td></tr>
 <tr class="separator:a70bd160711df8dae18d1d2c9133d13ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,13 +212,59 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isIterating</b> { f
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_completedSuccessfully</b> { true }</td></tr>
 <tr class="separator:a4ac05dcb4a55046529c628c131e7d9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a430f2ad7a2c7da4e7020917515f74111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a430f2ad7a2c7da4e7020917515f74111">&#9670;&nbsp;</a></span>SetHashedPathUsedForEntityIdGeneration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::Prefab::PrefabConversionUtils::PrefabProcessorContext::SetHashedPathUsedForEntityIdGeneration </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::EntityId&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::IO::PathView&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the hashed path used for generation of entity id during deserialization for a given entity id. This map is needed when there is a many-to-one relationship between entity ids and hashed paths. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">AZ::EntityId</td><td>The Entity Id to set a hashed path for </td></tr>
+    <tr><td class="paramname">AZ::IO::PathView</td><td>The hashed path to set for the given Entity Id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_entity_id_path_mapper_interface.html#ae3195b3731f3c6cf1700e7f487df8403">AzToolsFramework::Prefab::PrefabConversionUtils::EntityIdPathMapperInterface</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Prefab/Spawnable/PrefabProcessorContext.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:18:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:34 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

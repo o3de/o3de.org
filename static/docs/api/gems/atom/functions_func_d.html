@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -69,6 +69,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_free_list_allocator.html#ae73cc48dd133b2f2f0faef390fa3605b">AZ::RHI::FreeListAllocator</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_linear_allocator.html#a29fe71705f95b0f5bda4c867d4f4dd36">AZ::RHI::LinearAllocator</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_object_pool.html#a9716d2b9f1221138cee8ad25d3c3fd4f">AZ::RHI::ObjectPool&lt; Traits &gt;</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_page_tile_allocator.html#a9d45c1fe76b83e1ac29a67320f9884f0">AZ::RHI::PageTileAllocator</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_pool_allocator.html#a96a62da19f63cc891e6eb2225b5a2bab">AZ::RHI::PoolAllocator</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_query_pool_sub_allocator.html#a917060fc9ff214706257c55cc72c989e">AZ::RHI::QueryPoolSubAllocator</a>
 </li>
@@ -96,7 +97,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_descriptor.html#ad4557d81aa8f8871495eb1cff1cd46bc">AZ::RPI::ShaderOptionDescriptor</a>
 </li>
 <li>DepthStencilAttachment()
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_render_attachment_layout_builder_1_1_subpass_attachment_layout_builder.html#a79d48616f99d5c9a48e24dae65751b72">AZ::RHI::RenderAttachmentLayoutBuilder::SubpassAttachmentLayoutBuilder</a>
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_render_attachment_layout_builder_1_1_subpass_attachment_layout_builder.html#a8ef678431b0a21b7c2700b66f1bcb805">AZ::RHI::RenderAttachmentLayoutBuilder::SubpassAttachmentLayoutBuilder</a>
 </li>
 <li>DestroyDocument()
 : <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a3256dab3f1c054ddb76d4d33ca597b40">AtomToolsFramework::AtomToolsDocumentSystemRequests</a>
@@ -122,6 +123,10 @@ $(function() {
 <li>DisableFeatureProcessor()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a5c218cc01b2a7ae7ce55f30ceff3f33a">AZ::RPI::Scene</a>
 </li>
+<li>DisableSkinning()
+: <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html#aff3e4404613264043bc6513c2d543025">AZ::Render::SkinnedMeshFeatureProcessorInterface</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#af29ba14977831279e5f44e10ba5c0fb8">AZ::Render::SkinnedMeshInstance</a>
+</li>
 <li>Disconnect()
 : <a class="el" href="class_atom_tools_framework_1_1_local_server.html#a36d4bf3a3d62c3aa832a2e4c15379b08">AtomToolsFramework::LocalServer</a>
 , <a class="el" href="class_atom_tools_framework_1_1_local_socket.html#a5b6e96a05b5585c22d3002b1d153ce95">AtomToolsFramework::LocalSocket</a>
@@ -138,12 +143,11 @@ $(function() {
 <li>Draw()
 : <a class="el" href="class_a_z_1_1_render_1_1_im_gui_frame_visualizer.html#abf383c6c1fb447ce246e97445ff9cc85">AZ::Render::ImGuiFrameVisualizer</a>
 , <a class="el" href="class_a_z_1_1_render_1_1_im_gui_gpu_profiler.html#acdb90e332b72e38ec5dba0e4206c1088">AZ::Render::ImGuiGpuProfiler</a>
-, <a class="el" href="class_a_z_1_1_render_1_1_im_gui_shader_metrics.html#a069d702c1d6bc5f3bcf7a7a0a15deb68">AZ::Render::ImGuiShaderMetrics</a>
 , <a class="el" href="class_a_z_1_1_render_1_1_im_gui_transient_attachment_profiler.html#aba9116067d1605023acf8bfc2a235d3e">AZ::Render::ImGuiTransientAttachmentProfiler</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#ae660f1a0603b87e33de1455f8111c493">AZ::RHI::IndirectBufferWriter</a>
 </li>
 <li>DrawAabb()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#a8c344582cd1455a0645944593daf19b0">AZ::RPI::AuxGeomDraw</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#a5f38bb7b7014f1ffbe5fe2a45487a4ab">AZ::RPI::AuxGeomDraw</a>
 </li>
 <li>DrawCone()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#a3ad36edce65ac22021bd5479bda3bdf3">AZ::RPI::AuxGeomDraw</a>
@@ -195,11 +199,14 @@ $(function() {
 <li>DumpGraphVis()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_logger.html#af4824e3a98606d7146eb023a9c042e55">AZ::RHI::FrameGraphLogger</a>
 </li>
+<li>DynamicNodePaletteItem()
+: <a class="el" href="class_atom_tools_framework_1_1_dynamic_node_palette_item.html#a84fb03da8cd625ab4d9163e781148f79">AtomToolsFramework::DynamicNodePaletteItem</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:27 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:25 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

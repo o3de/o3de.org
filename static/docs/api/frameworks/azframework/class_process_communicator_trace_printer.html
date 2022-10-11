@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -53,8 +53,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afe9682e3c0bbb80a8bd7aba48c7c29bb"><td class="memItemLeft" align="right" valign="top"><a id="afe9682e3c0bbb80a8bd7aba48c7c29bb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessCommunicatorTracePrinter</b> (<a class="el" href="class_az_framework_1_1_process_communicator.html">AzFramework::ProcessCommunicator</a> *communicator, const char *window)</td></tr>
+<tr class="memitem:afe9682e3c0bbb80a8bd7aba48c7c29bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_communicator_trace_printer.html#afe9682e3c0bbb80a8bd7aba48c7c29bb">ProcessCommunicatorTracePrinter</a> (<a class="el" href="class_az_framework_1_1_process_communicator.html">AzFramework::ProcessCommunicator</a> *communicator, const char *window)</td></tr>
 <tr class="separator:afe9682e3c0bbb80a8bd7aba48c7c29bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4c5b48fd688aafa9dc8f5d20e78ed16"><td class="memItemLeft" align="right" valign="top"><a id="aa4c5b48fd688aafa9dc8f5d20e78ed16"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_communicator_trace_printer.html#aa4c5b48fd688aafa9dc8f5d20e78ed16">Pump</a> ()</td></tr>
@@ -71,13 +70,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_process_communicator_trace_printer.html">ProcessCommunicatorTracePrinter</a> listens to stderr and stdout of a running process and writes its output to the AZ_Trace system Importantly, it does not do any blocking operations. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="afe9682e3c0bbb80a8bd7aba48c7c29bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe9682e3c0bbb80a8bd7aba48c7c29bb">&#9670;&nbsp;</a></span>ProcessCommunicatorTracePrinter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProcessCommunicatorTracePrinter::ProcessCommunicatorTracePrinter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_az_framework_1_1_process_communicator.html">AzFramework::ProcessCommunicator</a> *&#160;</td>
+          <td class="paramname"><em>communicator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Wraps a <a class="el" href="class_process_communicator_trace_printer.html">ProcessCommunicatorTracePrinter</a> around an existing ProcessCommunicator, which it will then invoke to read from stdout/stderr. Because it is going to invoke functions on the given ProcessCommuncator which you pass in, it is important that the 'communicator' you pass in is only destroyed after you destroyProcessCommunicatorTracePrinter. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Process/ProcessCommunicatorTracePrinter.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:18:00 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:10 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -132,7 +132,7 @@ The following instructions assume that you've completed the optional steps to se
 3. Use Python to run `generate_android_project.py` and generate the Android project for Atom Sample Viewer. The following command by itself assumes you skipped step 2 and that you plan to create KeyStore settings through Android Studio after generating the project. Otherwise, if you did generate a KeyStore in step 2, then include the `--signconfig-*` options listed below and specify their values.
    
     ```
-    %O3DE_ENGINE_PATH%\python\python.cmd %O3DE_ENGINE_PATH%\cmake\Tools\Platform\Android\generate_android_project.py --engine-root %O3DE_ENGINE_PATH% --project-path %O3DE_PROJECT_PATH% --build-dir %O3DE_BUILD_ROOT%\android --third-party-path %USERPROFILE%\.o3de\3rdParty --android-sdk-path %O3DE_ANDROID_SDK_PATH% --android-ndk-version %O3DE_ANDROID_NDK_VERSION% --android-sdk-platform %O3DE_ANDROID_SDK_API_LEVEL% --include-apk-assets --asset-mode %O3DE_ANDROID_ASSET_MODE%
+    %O3DE_ENGINE_PATH%\python\python.cmd %O3DE_ENGINE_PATH%\cmake\Tools\Platform\Android\generate_android_project.py --engine-root %O3DE_ENGINE_PATH% --project-path %O3DE_PROJECT_PATH% --build-dir %O3DE_BUILD_ROOT%\android --third-party-path %USERPROFILE%\.o3de\3rdParty --android-sdk-path %O3DE_ANDROID_SDK_PATH% --android-ndk-version %O3DE_ANDROID_NDK_VERSION% --android-sdk-platform %O3DE_ANDROID_SDK_API_LEVEL% --enable-unity-build --include-apk-assets --asset-mode %O3DE_ANDROID_ASSET_MODE%
     ```
 
 4. Build the Android project.

@@ -24,7 +24,7 @@ With no changes to the code for a builder, and no changes to a source asset, whe
 
 More assets than expected will show up when attempting to generate Delta Asset Bundles to create content patches for your game, causing your players to download more content than necessary.
 
-### Common Causes
+### Common causes
 
 * Extraneous information is included in the product asset, such as a timestamp. Information which would be guaranteed to vary for each build is a possible cause.
 * Logic in the builder is non-deterministic. Make sure that asset building is as deterministic as possible, with no side effects.
@@ -72,7 +72,7 @@ This happens because scene processing generates Sub IDs based on the node's name
 
 Note that in this case, this behavior is 100% intentional. There is no code issue in this example. In this case, if this change was not intended by the FBX author, it is a content bug. The following sections will cover how to identify and correct issues like this.
 
-### Common Causes
+### Common causes
 
 #### Change to source asset causes Sub IDs to shift
 
@@ -147,7 +147,7 @@ If the builder is an O3DE builder, and not one that your team has created, you c
 
 An engineer makes changes to the logic of an asset builder, but the engineer does not change the fingerprint or version of the builder.
 
-### Common Issues
+### Common issues
 
 Source Assets processed by this builder will not be automatically reprocessed with the latest changes.
 
@@ -155,13 +155,11 @@ If an asset would fail to process due to the builder change, the engineer making
 
 If other content or logic requires the changes from processing the asset, other team members may run into problems using the Product Assets output by the older version of the builder with the other updated logic.
 
-### Immediate Solution
+### Immediate solution
 
 Change the version number of the builder reported in that builder's `AssetBuilderSDK::AssetBuilderDesc`. After you do this and rebuild the Asset Processor, all assets using this builder will be reprocessed.
 
-### Long Term Solutions
-
-Create automated jobs that process all assets cleanly at some interval, to catch issues like this.
+### Long term solutions
 
 One configuration that would catch issues would be:
 
@@ -281,11 +279,11 @@ Another option would be to examine the source code for the builder itself, espec
 
 To help with that, it may be useful to [more directly debug the Asset Builder](#DebugAssetBuilders).
 
-## Slow Asset Processing Times
+## Slow asset processing times
 
 Long asset processing times can be disruptive to a team's ability to iterate quickly on a project.
 
-### Common Causes
+### Common causes
 
 * Source asset quantity - A project with a lot of content will take a longer time to process.
 * Large or difficult to process source assets - In some cases, a single source asset may be an outlier, having a much longer processing time than most other content.
@@ -296,7 +294,104 @@ Long asset processing times can be disruptive to a team's ability to iterate qui
 * Removing unused content from your project can save on overall asset processing time.
 * Targeted performance improvements at the Asset Builders that are taking the most overall time in asset processing can help.
 
-## View Asset Processor Logs 
+## Debugging the scene pipeline
+
+The scene pipeline imports source scene assets into a scene graph that contains the scene nodes like meshes and materials. The scene manifest adds processing rules that scene builders use to output scene product assets like models, collision meshes, and animations. The scene process is a complex framework that imports source asset scene files into a scene graph, updates the manifest, builds products from the scene rules in the manifest, and  generate product assets based on these rules. The frustration can lead to the scene author to tweak minor data in the original source scene (i.e. the Blender file) and re-exporting to attempt to resolve strange errors from the O3DE scene pipeline. The scene pipeline does many processing steps so it can be confusing to determine which of the scene node data (e.g. Transform Data, Mesh Data) were discovered and the rules used to import the scene nodes. Scene pipeline events can be overridden, by either Python scripts or C++ code modifying the scene manifest rules. This can lead to confusion of what rules were used to generate the product assets.
+
+As source scene assets become more complex, developers will eventually need to debug the output from the scene pipeline to troubleshoot problems.
+
+The team may encounter:
+
+* Render models not aligning with collision meshes
+* Materials end up with unexpected settings or textures
+* Finding extra models in the scene
+* User defined properties not showing up with the correct values
+* Unexpected groupings of mesh nodes stored in a render model
+
+### Common causes
+
+#### AssImp issues
+
+The scene pipeline uses the AssImp library to import source scene files into a scene graph. The scene graph is the in-memory representation of the source scene file in the pipeline. It is possible that the source scene file looks different in the scene graph due to how the AssImp library imports the file.
+
+#### Missing user defined properties
+
+User defined properties in the source scene file might be imported with unexpected results such as missing keys or changed values. There could be a mismatch in what the AssImp library will import, options to export custom properties might have been missed, or the scene pipeline might expect exact value types from the source scene file.
+
+For more information, refer to [Scene API: User Defined Properties](/docs/user-guide/assets/pipeline/scene-api-udp/).
+
+#### Wrong scene manifest rules used
+
+A technical content creator (such as a Technical Artist) who is authoring or debugging a script might find some unexpected results for some source scene assets. Python scripts can add output commands in the asset's log files using `print()`, but this may not be enough to determine what the script is affecting. The debug output flag is another good way to determine what is happening in the affected scripted pipeline.
+
+### Solutions
+
+#### Enable the debug output feature
+
+The "debug output" flag is a feature flag that can be used to see what the scene pipeline produced for the scene graph and scene manifest. The scene graph is considered immutable after the source scene is imported from the AssImp library. The scene manifest can be updated during the scene pipeline events.
+
+{{< note >}}
+When enabled, AssetBuilders that support debug output will provide debug information as product assets. This is used primarily with scene files.
+{{< /note >}}
+
+The flag can be set on the command line or in the Asset Processor GUI application. To use the command line option:
+
+```cmd
+<path to asset processor>/AssetProcessor.exe --debugOutput
+```
+
+The command line flag can be applied to the batch version of the Asset Processor as well.
+
+```cmd
+<path to asset processor>/AssetProcessorBatch.exe --debugOutput
+```
+
+For example:
+
+```cmd
+D:\o3de\build\bin\profile\AssetProcessor.exe --debugOutput
+```
+
+The debug output flag can be set in the Asset Processor GUI using the Tools | Debug Output check box. When this check box is active, debug output files will be found in the cache folder for the scene files.
+
+![Asset Processor UI Debug Output](/images/user-guide/assets/asset-processor/debug_output.png)
+
+{{< note >}}
+After turning on the debug output flag, the asset needs to be reprocessed to output the debug files.
+{{< /note >}}
+
+#### Debug output: scene graph
+
+The scene graph debug output files are stored next to the default `.azmodel` file. For example, for a source file in `D:\o3de\my_project\assets\test.fbx` for the PC platform, the Cache folder should have (at least) these files:
+
+```cmd
+D:\o3de\my_project\Cache\pc\assets\test.azmodel
+D:\o3de\my_project\Cache\pc\assets\test.dbgsg
+D:\o3de\my_project\Cache\pc\assets\test.dbgsg.xml
+```
+
+The `.dbgsg` and `.dbgsg.xml` files are the debug scene graph files where the former is a flat list of debug information per node and the latter is an XML representation of the debug information of the nodes in the file.
+
+The debug output lists the node name, the node path, and the node type. The name is the text label the author assigned to the node. The node path is the dotted notation that leads to the node from the root node. The node type stores specific data for that node such as mesh data, transform data, or custom property data. 
+
+The Mesh Data stores information about the mesh such as the count of positions, normals, face list, and face material IDs. The Transform Data stores information about the matrix translation, scale, and rotation. The Material Data stores information such as its name and physical base rendering properties. The Custom Property Data stores the user defined properties in key-value pairs.
+
+#### Debug output: scene manifest
+
+The scene pipeline logic can be altered using Python scripts or C++ code to update the scene manifest. To determine how the logic affected the scene manifest rules a team can turn on the debug output flag and find the `.assetinfo.dbg` file in the Cache folder.
+
+For example:
+
+```cmd
+D:\o3de\my_project\Cache\pc\assets\test.azmodel
+D:\o3de\my_project\Cache\pc\assets\test.assetinfo.dbg
+```
+
+The `.assetinfo.dbg` file is a file representation of the scene manifest that was in memory when the scene builder processed the scene graph. Each rule starts with the `"$type"` key and lists the rule by both GUID and name such as `"{07B356B7-3635-40B5-878A-FAC4EFD5AD86} MeshGroup"`.
+
+The MeshGroup is an example of a rule where it creates an `.azmodel` product file that is named using the `"name"` field, includes the mesh node paths in the `"selectedNodes"` array, and excludes the node paths in the `"unselectedNodes"` array.
+
+## View Asset Processor logs 
 
 If Asset Processor isn't working as expected, use the information in the **Logs** tab to debug the issue. The Logs tab contains log information for Asset Processor and not for individual process jobs. To view logs for individual process jobs, refer to the **Event Log Details** pane in the **Jobs** tab of Asset Processor.
 
@@ -402,7 +497,8 @@ The next time that you modify your source file, `AssetBuilder.exe` builds that a
 You can spawn multiple instances of `AssetBuilder.exe` and attach them to Visual Studio.
 {{< /tip >}}
 
-## Clearing the Cache
+## Clearing the cache
+
 
 If you're a game artist and you're having issues running Asset Processor, the issues might be due to a corrupt cache. You might solve the issues by deleting your project's `Cache` directory. Restart Asset Processor to reprocess the source assets and rebuild the Asset Cache.
 

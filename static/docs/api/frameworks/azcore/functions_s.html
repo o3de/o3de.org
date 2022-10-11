@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -47,6 +47,12 @@ $(function() {
 <li>s_defaultGlobalContext
 : <a class="el" href="struct_a_z_1_1_e_bus_environment_storage_policy.html#a8d8b9fa8b82f982e6ab08d4ec45dfdad">AZ::EBusEnvironmentStoragePolicy&lt; Context &gt;</a>
 </li>
+<li>s_HighPriority
+: <a class="el" href="class_a_z_1_1_asset_type_info.html#ad3427bbcbec2fef6eb7a013df14b1630">AZ::AssetTypeInfo</a>
+</li>
+<li>s_NormalPriority
+: <a class="el" href="class_a_z_1_1_asset_type_info.html#a77ca308ff8bbd6082850176d4c5ac7c6">AZ::AssetTypeInfo</a>
+</li>
 <li>s_segmentFractionEpsilon
 : <a class="el" href="struct_a_z_1_1_spline_address.html#ae940d5673641db5edbaafe6923382ecf">AZ::SplineAddress</a>
 </li>
@@ -70,7 +76,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_scheduled_event.html#ad54921a05b9064ce7bd5d8e6f6677de9">AZ::ScheduledEvent</a>
 </li>
 <li>ScheduledEventHandle()
-: <a class="el" href="class_a_z_1_1_scheduled_event_handle.html#a162ce9e231b5fcf2a067940b116eb181">AZ::ScheduledEventHandle</a>
+: <a class="el" href="class_a_z_1_1_scheduled_event_handle.html#a9792eddfb2c2ed963e25332b909b823c">AZ::ScheduledEventHandle</a>
 </li>
 <li>scoped_ref()
 : <a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html#a4ed42efc60829cba5855c738d1dd07fc">AZ::Android::JNI::scoped_ref&lt; JniType &gt;</a>
@@ -88,6 +94,9 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_android_1_1_a_p_k_file_handler.html#afa48fc77ec250cf685e2188c5025e99f">AZ::Android::APKFileHandler</a>
 , <a class="el" href="class_a_z_1_1_i_o_1_1_file_reader.html#a5b43b01ce0ab1e3a601d87c9d2a1e149">AZ::IO::FileReader</a>
 , <a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html#ad9f5048c9e295f24c144ff8c0d7a121c">AZ::IO::SystemFile</a>
+</li>
+<li>SegmentTriangleHitTester()
+: <a class="el" href="class_a_z_1_1_intersect_1_1_segment_triangle_hit_tester.html#ab208f4383e3e0277643bf0d2dda07136">AZ::Intersect::SegmentTriangleHitTester</a>
 </li>
 <li>SerializeContext()
 : <a class="el" href="class_a_z_1_1_serialize_context.html#a0634d9e1dd8256fd706efc569c4d5481">AZ::SerializeContext</a>
@@ -107,6 +116,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_frustum.html#afa088b71aaa69ff011cacd90289528b2">AZ::Frustum</a>
 , <a class="el" href="class_a_z_1_1_settings_registry_impl.html#ad2be4c70e9645b75785b237ca7872eca">AZ::SettingsRegistryImpl</a>
 , <a class="el" href="class_a_z_1_1_settings_registry_interface.html#ad19b9c7d9bb15d12ec467801eda75a98">AZ::SettingsRegistryInterface</a>
+, <a class="el" href="class_a_z_1_1_sphere.html#ad540236f49cb307ceac1639fb9fedb6c">AZ::Sphere</a>
 , <a class="el" href="class_a_z_1_1_vector3.html#af6cce1c98a7c6dc6c8b3f9675aeb9bf6">AZ::Vector3</a>
 , <a class="el" href="class_a_z_1_1_vector4.html#a99c4a4d608c8df5c02668370a3a32b70">AZ::Vector4</a>
 </li>
@@ -131,10 +141,6 @@ $(function() {
 </li>
 <li>SetAllocatorLeaking()
 : <a class="el" href="class_a_z_1_1_allocator_manager.html#aa952ac905fbf19eb6f865c71b6a08db7">AZ::AllocatorManager</a>
-</li>
-<li>SetApplyPatchSettings()
-: <a class="el" href="class_a_z_1_1_settings_registry_impl.html#ab2f86cabc2c1d877fdca1fa9a52b0db1">AZ::SettingsRegistryImpl</a>
-, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#abf51c98f70814b11a2c72615e7e3ec2f">AZ::SettingsRegistryInterface</a>
 </li>
 <li>SetAssetInfoUpgradingEnabled()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset_manager.html#ab6a3e7beeda8501ed3e25a4ee67f2e48">AZ::Data::AssetManager</a>
@@ -192,6 +198,12 @@ $(function() {
 <li>SetDeprecatedAlias()
 : <a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html#aac1468946d7eac349fc53a078fdf6ca4">AZ::IO::FileIOBase</a>
 </li>
+<li>SetElapsedTimeMsDebug()
+: <a class="el" href="class_a_z_1_1_i_time.html#a169331dc5563d058fb705519d9ec3082">AZ::ITime</a>
+</li>
+<li>SetElapsedTimeUsDebug()
+: <a class="el" href="class_a_z_1_1_i_time.html#aef023146ccb9db1f79cf4074eb215a74">AZ::ITime</a>
+</li>
 <li>SetElement()
 : <a class="el" href="class_a_z_1_1_matrix3x4.html#a559ffd0ae571fc584f03f0a518b9d53c">AZ::Matrix3x4</a>
 , <a class="el" href="class_a_z_1_1_quaternion.html#a212f5abd0a51dcceaeac685ddf912a75">AZ::Quaternion</a>
@@ -226,6 +238,9 @@ $(function() {
 </li>
 <li>SetFilterFlags()
 : <a class="el" href="class_a_z_1_1_slice_asset_handler.html#a1d54e5409d000be3d411f8da43db3e11">AZ::SliceAssetHandler</a>
+</li>
+<li>SetFirstHemisphereCenter()
+: <a class="el" href="class_a_z_1_1_capsule.html#a63f017e21ed992be88a98227d0cec7e7">AZ::Capsule</a>
 </li>
 <li>SetFlags()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset.html#a34bd7d205acf6485fd67194b79b82259">AZ::Data::Asset&lt; T &gt;</a>
@@ -346,12 +361,16 @@ $(function() {
 <li>SetNonUniformScale()
 : <a class="el" href="class_a_z_1_1_polygon_prism.html#a1a5200540cc63fb51e27be76f005cfe0">AZ::PolygonPrism</a>
 </li>
+<li>SetNotifyForMergeOperations()
+: <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a90f03077bda27978d73bc58e40e91571">AZ::SettingsRegistryImpl</a>
+, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#a49f4e503acbf416101d68e95399aac4c">AZ::SettingsRegistryInterface</a>
+</li>
 <li>SetNumBytesToRead()
 : <a class="el" href="class_a_z_1_1_android_1_1_a_p_k_file_handler.html#aa35963c46bc3ab19d1406692c6d1b645">AZ::Android::APKFileHandler</a>
 </li>
 <li>SetObject()
-: <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a652429b0f71a214d929ba42bc26e7d45">AZ::SettingsRegistryImpl</a>
-, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#aba1904a1a01141a56f34d29aba933d4b">AZ::SettingsRegistryInterface</a>
+: <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a06882edb5c2068128fbfe7fdf4791b30">AZ::SettingsRegistryImpl</a>
+, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#a39e35f13fdc2e37658afcce8a1695e63">AZ::SettingsRegistryInterface</a>
 </li>
 <li>SetOffsets()
 : <a class="el" href="class_a_z_1_1_halton_sequence.html#a0114ffa4c951311fad36467e29225288">AZ::HaltonSequence&lt; Dimensions &gt;</a>
@@ -376,6 +395,9 @@ $(function() {
 </li>
 <li>SetProfilingActive()
 : <a class="el" href="class_a_z_1_1_allocator_base.html#ad4b5066e11564d2204e6cda0fe77a88d">AZ::AllocatorBase</a>
+</li>
+<li>SetRadius()
+: <a class="el" href="class_a_z_1_1_capsule.html#adb4b4fd46a6200ef8f6ad685776d4783">AZ::Capsule</a>
 </li>
 <li>SetRecords()
 : <a class="el" href="class_a_z_1_1_allocator_base.html#a3a030d903bb426f7a88bd2398b1eb191">AZ::AllocatorBase</a>
@@ -404,6 +426,9 @@ $(function() {
 <li>SetScale()
 : <a class="el" href="class_a_z_1_1_non_uniform_scale_requests.html#ad6ae3d49b1579319aeffc7e25694ab83">AZ::NonUniformScaleRequests</a>
 </li>
+<li>SetSecondHemisphereCenter()
+: <a class="el" href="class_a_z_1_1_capsule.html#a0e14d647df129cfb30ae110529ee8d29">AZ::Capsule</a>
+</li>
 <li>SetSettingsRegistrySpecializations()
 : <a class="el" href="class_a_z_1_1_component_application.html#a9532f86ac72a7d2cdf1d502f5a418d1c">AZ::ComponentApplication</a>
 </li>
@@ -425,11 +450,14 @@ $(function() {
 <li>SettingsRegistryImpl()
 : <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a2bfcfa57cc5dc1605d1fcc7ae4fe834c">AZ::SettingsRegistryImpl</a>
 </li>
+<li>SetTrackingFilter()
+: <a class="el" href="class_a_z_1_1_settings_registry_origin_tracker.html#a27e0ce4205b4f65b5177df9564e17efe">AZ::SettingsRegistryOriginTracker</a>
+</li>
 <li>SetTrackingMode()
 : <a class="el" href="class_a_z_1_1_allocator_manager.html#a95fe03a8266225cca509496033096aa8">AZ::AllocatorManager</a>
 </li>
 <li>SetTranslation()
-: <a class="el" href="class_a_z_1_1_matrix3x4.html#a61647edb7525778b657c73c5353d6d12">AZ::Matrix3x4</a>
+: <a class="el" href="class_a_z_1_1_matrix3x4.html#af4070c9cf9de9414100668f9d73a6719">AZ::Matrix3x4</a>
 </li>
 <li>SetUseFileIO()
 : <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a9b3998727cedb616dcb29b18258b56cb">AZ::SettingsRegistryImpl</a>
@@ -486,13 +514,17 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html#a367694d0af52b338a1c941f3b4b36567a8f8cc9ef22cf6dbd03146408c8157ce6">AZ::IO::SystemFile</a>
 </li>
 <li>Sfmt()
-: <a class="el" href="class_a_z_1_1_sfmt.html#a4545648240ff7f3539a8c50e52181a1b">AZ::Sfmt</a>
+: <a class="el" href="class_a_z_1_1_sfmt.html#a829b8073da35ab7d4c9044c987dbf03b">AZ::Sfmt</a>
 </li>
 <li>shared_ref()
-: <a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1shared__ref.html#a265116fd3f30e6648af7d6b304500951">AZ::Android::JNI::shared_ref&lt; JniType &gt;</a>
+: <a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1shared__ref.html#a1d50acf3604b627ef0a052b6787029cc">AZ::Android::JNI::shared_ref&lt; JniType &gt;</a>
 </li>
 <li>ShouldAddSystemComponent()
 : <a class="el" href="class_a_z_1_1_component_application.html#a57d830544bf55097cc6934b2d2e4e74b">AZ::ComponentApplication</a>
+</li>
+<li>ShouldClearContainer()
+: <a class="el" href="class_a_z_1_1_json_basic_container_serializer.html#aef7f333a042b4a3c31a79b3c638332cd">AZ::JsonBasicContainerSerializer</a>
+, <a class="el" href="class_a_z_1_1_json_map_serializer.html#ae02472eb1db367f5d7023ded1951626f">AZ::JsonMapSerializer</a>
 </li>
 <li>ShouldClearContainers()
 : <a class="el" href="class_a_z_1_1_json_deserializer_context.html#a8e542c259864b4270929e6ab1a5bed3e">AZ::JsonDeserializerContext</a>
@@ -509,6 +541,9 @@ $(function() {
 </li>
 <li>SignalEntityDeactivated()
 : <a class="el" href="class_a_z_1_1_component_application_requests.html#afa9d4336405df2770454350dd154f859">AZ::ComponentApplicationRequests</a>
+</li>
+<li>Signedness
+: <a class="el" href="class_a_z_1_1_settings_registry_interface.html#a2152bcdfa7c98d160d72d2444927fba5">AZ::SettingsRegistryInterface</a>
 </li>
 <li>Size()
 : <a class="el" href="class_a_z_1_1_fixed_vertices.html#ae3500bbb010975395172b0f7c89a8fbc">AZ::FixedVertices&lt; Vertex &gt;</a>
@@ -610,6 +645,9 @@ $(function() {
 <li>StepOver()
 : <a class="el" href="class_a_z_1_1_script_context_debug.html#afeb514a7a703f4fee0652d0e861a2f3e">AZ::ScriptContextDebug</a>
 </li>
+<li>Stop()
+: <a class="el" href="class_a_z_1_1_i_o_1_1_file_descriptor_capturer.html#a0d40dfac4ce9591362b77669db59f19a">AZ::IO::FileDescriptorCapturer</a>
+</li>
 <li>StopMonitoringAssets()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset_catalog_requests.html#a9b89e612c1ef2802288593acb457b94c">AZ::Data::AssetCatalogRequests</a>
 </li>
@@ -623,6 +661,7 @@ $(function() {
 <li>Store()
 : <a class="el" href="class_a_z_1_1_base_json_serializer.html#a6ea9a0b73b2024a6e46fe8be7137e201">AZ::BaseJsonSerializer</a>
 , <a class="el" href="class_a_z_1_1_data_1_1_asset_json_serializer.html#a3e4e6734888a52896b3b3b9d7f1ee441">AZ::Data::AssetJsonSerializer</a>
+, <a class="el" href="class_a_z_1_1_json_any_serializer.html#ae5ca57d78636373a85f2b562c7da1ad5">AZ::JsonAnySerializer</a>
 , <a class="el" href="class_a_z_1_1_json_array_serializer.html#a12ffecc50741254fbf81fea3a4373c88">AZ::JsonArraySerializer</a>
 , <a class="el" href="class_a_z_1_1_json_basic_container_serializer.html#a4c10f9486c4b8a6e28c9ef7da075d910">AZ::JsonBasicContainerSerializer</a>
 , <a class="el" href="class_a_z_1_1_json_bool_serializer.html#adef23ae8f3896d078a86180f7613ef8c">AZ::JsonBoolSerializer</a>
@@ -644,7 +683,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_json_o_s_string_serializer.html#aca99430c68072aad92bd16e7e50cf3a2">AZ::JsonOSStringSerializer</a>
 , <a class="el" href="class_a_z_1_1_json_path_serializer.html#a7f1054661f3672d02bdc512423bec09d">AZ::JsonPathSerializer</a>
 , <a class="el" href="class_a_z_1_1_json_quaternion_serializer.html#a50398a60717a9eb83251761fee785d9e">AZ::JsonQuaternionSerializer</a>
-, <a class="el" href="class_a_z_1_1_json_serialization.html#ab18bdf7ef288a00bcf5652d974e04006">AZ::JsonSerialization</a>
+, <a class="el" href="class_a_z_1_1_json_serialization.html#ada52f32eba18c59c1c711b36353f4613">AZ::JsonSerialization</a>
 , <a class="el" href="class_a_z_1_1_json_short_serializer.html#a3c6f2b17350b5f09702a444b91fe3510">AZ::JsonShortSerializer</a>
 , <a class="el" href="class_a_z_1_1_json_smart_pointer_serializer.html#a04c7e0626ede527f04d59fe700c262fa">AZ::JsonSmartPointerSerializer</a>
 , <a class="el" href="class_a_z_1_1_json_string_serializer.html#a9da56c6d520367676b02796fb25804b5">AZ::JsonStringSerializer</a>
@@ -669,13 +708,13 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container.html#a76c8f642be883e46a735b8eb1fe361d8">AZ::SerializeContext::IDataContainer</a>
 </li>
 <li>StoreInTempData()
-: <a class="el" href="struct_a_z_1_1_behavior_value_parameter.html#ac8d4c1554dbf1579bfaf7f4504566667">AZ::BehaviorValueParameter</a>
+: <a class="el" href="struct_a_z_1_1_behavior_argument.html#a6ba81a0c48db4cc1bacc37129c2e2287">AZ::BehaviorArgument</a>
 </li>
 <li>StoreModuleInfoData()
 : <a class="el" href="class_a_z_1_1_debug_1_1_symbol_storage.html#af351b77fa56e2113454fe25bdccf0d3b">AZ::Debug::SymbolStorage</a>
 </li>
 <li>StoreResult()
-: <a class="el" href="struct_a_z_1_1_behavior_value_parameter.html#afa6a34cc5f963c0eafa63407c2c586e9">AZ::BehaviorValueParameter</a>
+: <a class="el" href="struct_a_z_1_1_behavior_argument.html#ae00dded9c634ceb13a37817acf9c3e7a">AZ::BehaviorArgument</a>
 </li>
 <li>StoreToColumnMajorFloat12()
 : <a class="el" href="class_a_z_1_1_matrix3x4.html#a06de430186c28cd9bedc62d214040f00">AZ::Matrix3x4</a>
@@ -726,7 +765,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_entity.html#abf245ba8568800a15100321642cfcfa5">AZ::Entity</a>
 </li>
 <li>structured_task_group()
-: <a class="el" href="class_a_z_1_1structured__task__group.html#a4eb1d84b3a4dffe1cff7dacc328f153d">AZ::structured_task_group</a>
+: <a class="el" href="class_a_z_1_1structured__task__group.html#aae4a785e516b216839031451ae92ae33">AZ::structured_task_group</a>
 </li>
 <li>subId
 : <a class="el" href="struct_a_z_1_1_h_s_m_1_1_state.html#a281ad81dc7bec97075a215b4b9896f29">AZ::HSM::State</a>
@@ -775,13 +814,13 @@ $(function() {
 </li>
 <li>swap()
 : <a class="el" href="class_a_z_std_1_1any.html#ad569d23330d5dca35919075ca4f4598d">AZStd::any</a>
-, <a class="el" href="class_a_z_std_1_1variant.html#a851e2fde923ea21c9662d086b3c30625">AZStd::variant&lt; Types &gt;</a>
+, <a class="el" href="class_a_z_std_1_1variant.html#a2a004ae470d268b9fae89b54e2a404a2">AZStd::variant&lt; Types &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:17:56 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:06 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -2,7 +2,7 @@
 linktitle: Archive
 title: Archived Release Notes for Open 3D Engine (O3DE)
 description: Find out what's in a given version of O3DE.
-weight: 100
+weight: 1000
 toc: true
 ---
 

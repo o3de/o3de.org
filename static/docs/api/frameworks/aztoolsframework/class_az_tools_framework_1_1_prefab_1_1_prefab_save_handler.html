@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -60,7 +60,7 @@ $(function() {
 
 <p><code>#include &lt;PrefabSaveLoadHandler.h&gt;</code></p>
 
-<p>Inherits QObject, and Handler.</p>
+<p>Inherits QObject, Handler, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -75,12 +75,36 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4a5a8eea2af97b4d5f2bff3e01f047d5"><td class="memItemLeft" align="right" valign="top"><a id="a4a5a8eea2af97b4d5f2bff3e01f047d5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_save_handler.html">PrefabSaveHandler</a>, AZ::SystemAllocator, 0)</td></tr>
 <tr class="separator:a4a5a8eea2af97b4d5f2bff3e01f047d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d4ca5f5201b9f7ced2f7a0224178d2d"><td class="memItemLeft" align="right" valign="top"><a id="a1d4ca5f5201b9f7ced2f7a0224178d2d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleSourceFileType</b> (AZStd::string_view sourceFilePath, AZ::EntityId parentId, AZ::Vector3 position) const override</td></tr>
-<tr class="separator:a1d4ca5f5201b9f7ced2f7a0224178d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d5a55d5a8075f4a11f6486a905390f"><td class="memItemLeft" align="right" valign="top"><a id="ac5d5a55d5a8075f4a11f6486a905390f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDragAndDropEventsPriority</b> () const override</td></tr>
+<tr class="separator:ac5d5a55d5a8075f4a11f6486a905390f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36fc630edcd532f1acc876bebd709bb3"><td class="memItemLeft" align="right" valign="top"><a id="a36fc630edcd532f1acc876bebd709bb3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DragEnter</b> (QDragEnterEvent *event, AzQtComponents::DragAndDropContextBase &amp;context) override</td></tr>
+<tr class="separator:a36fc630edcd532f1acc876bebd709bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbecfc884fae36f4fe079acb29daafc6"><td class="memItemLeft" align="right" valign="top"><a id="adbecfc884fae36f4fe079acb29daafc6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DragMove</b> (QDragMoveEvent *event, AzQtComponents::DragAndDropContextBase &amp;context) override</td></tr>
+<tr class="separator:adbecfc884fae36f4fe079acb29daafc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ccb30d434027f54e0c43e3b9fc45dc0"><td class="memItemLeft" align="right" valign="top"><a id="a8ccb30d434027f54e0c43e3b9fc45dc0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DragLeave</b> (QDragLeaveEvent *event) override</td></tr>
+<tr class="separator:a8ccb30d434027f54e0c43e3b9fc45dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79fe34cea40eb38773d1dac6b46a5b02"><td class="memItemLeft" align="right" valign="top"><a id="a79fe34cea40eb38773d1dac6b46a5b02"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Drop</b> (QDropEvent *event, AzQtComponents::DragAndDropContextBase &amp;context) override</td></tr>
+<tr class="separator:a79fe34cea40eb38773d1dac6b46a5b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd435d81afc43453d1486bc24e77d218"><td class="memItemLeft" align="right" valign="top"><a id="abd435d81afc43453d1486bc24e77d218"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDragAndDropItemViewEventsPriority</b> () const override</td></tr>
+<tr class="separator:abd435d81afc43453d1486bc24e77d218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee940fd1d81cd53eee57b7e333831ab6"><td class="memItemLeft" align="right" valign="top"><a id="aee940fd1d81cd53eee57b7e333831ab6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CanDropItemView</b> (bool &amp;accepted, AzQtComponents::DragAndDropContextBase &amp;context) override</td></tr>
+<tr class="separator:aee940fd1d81cd53eee57b7e333831ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe5b1291e8319010c80b84a06f7dc9cf"><td class="memItemLeft" align="right" valign="top"><a id="abe5b1291e8319010c80b84a06f7dc9cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DoDropItemView</b> (bool &amp;accepted, AzQtComponents::DragAndDropContextBase &amp;context) override</td></tr>
+<tr class="separator:abe5b1291e8319010c80b84a06f7dc9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf6491478f0c94d6ee57374378c63499"><td class="memItemLeft" align="right" valign="top"><a id="abf6491478f0c94d6ee57374378c63499"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ExecuteClosePrefabDialog</b> (TemplateId templateId)</td></tr>
 <tr class="separator:abf6491478f0c94d6ee57374378c63499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac92e458fe584794e863e83327cfb6a"><td class="memItemLeft" align="right" valign="top"><a id="a2ac92e458fe584794e863e83327cfb6a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExecuteSavePrefabDialog</b> (AZ::EntityId entityId)</td></tr>
+<tr class="separator:a2ac92e458fe584794e863e83327cfb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa571951526b2c7a515e835024daa6d45"><td class="memItemLeft" align="right" valign="top"><a id="aa571951526b2c7a515e835024daa6d45"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ExecuteSavePrefabDialog</b> (TemplateId templateId, bool useSaveAllPrefabsPreference)</td></tr>
 <tr class="separator:aa571951526b2c7a515e835024daa6d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,7 +147,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateSugges
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:18:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:33 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

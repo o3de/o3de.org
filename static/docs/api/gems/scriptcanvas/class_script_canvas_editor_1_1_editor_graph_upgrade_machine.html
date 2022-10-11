@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -41,7 +41,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ScriptCanvasEditor</b></li><li class="navelem"><a class="el" href="class_script_canvas_editor_1_1_editor_graph_upgrade_machine.html">EditorGraphUpgradeMachine</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_script_canvas_editor.html">ScriptCanvasEditor</a></li><li class="navelem"><a class="el" href="class_script_canvas_editor_1_1_editor_graph_upgrade_machine.html">EditorGraphUpgradeMachine</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -67,7 +67,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EditorGraphUpgradeMachine</b> (<a class="el" href="class_script_canvas_editor_1_1_editor_graph.html">EditorGraph</a> *graph)</td></tr>
 <tr class="separator:a3144827d93ba8f5241eacb3a134c5ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adee0da43055e3bc750cf9f32c8965504"><td class="memItemLeft" align="right" valign="top"><a id="adee0da43055e3bc750cf9f32c8965504"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAsset</b> (<a class="el" href="class_script_canvas_editor_1_1_source_handle.html">SourceHandle</a> &amp;assetasset)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAsset</b> (SourceHandle &amp;assetasset)</td></tr>
 <tr class="separator:adee0da43055e3bc750cf9f32c8965504"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3b909b41f8bf5aa0565d8a9c8079c36"><td class="memItemLeft" align="right" valign="top"><a id="ac3b909b41f8bf5aa0565d8a9c8079c36"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnComplete</b> (IState::ExitStatus exitStatus) override</td></tr>
@@ -82,15 +82,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Run</b> (int startSta
 <tr class="memitem:a8c54aa5f97a1c8e3edeca971db99fae6 inherit pub_methods_class_script_canvas_editor_1_1_state_machine"><td class="memItemLeft" align="right" valign="top"><a id="a8c54aa5f97a1c8e3edeca971db99fae6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSystemTick</b> () override</td></tr>
 <tr class="separator:a8c54aa5f97a1c8e3edeca971db99fae6 inherit pub_methods_class_script_canvas_editor_1_1_state_machine"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4284f34ecc07244d00c636e2654b8695 inherit pub_methods_class_script_canvas_editor_1_1_state_machine"><td class="memItemLeft" align="right" valign="top"><a id="a4284f34ecc07244d00c636e2654b8695"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetVerbose</b> () const</td></tr>
-<tr class="separator:a4284f34ecc07244d00c636e2654b8695 inherit pub_methods_class_script_canvas_editor_1_1_state_machine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b22d8dbf1c06d42220ad4a9fd8bb1ba inherit pub_methods_class_script_canvas_editor_1_1_state_machine"><td class="memItemLeft" align="right" valign="top"><a id="a8b22d8dbf1c06d42220ad4a9fd8bb1ba"></a>
+const <a class="el" href="struct_script_canvas_editor_1_1_upgrade_graph_config.html">UpgradeGraphConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetConfig</b> () const</td></tr>
+<tr class="separator:a8b22d8dbf1c06d42220ad4a9fd8bb1ba inherit pub_methods_class_script_canvas_editor_1_1_state_machine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5650f08ec8cd010404ba940cc2bbf310 inherit pub_methods_class_script_canvas_editor_1_1_state_machine"><td class="memItemLeft" align="right" valign="top"><a id="a5650f08ec8cd010404ba940cc2bbf310"></a>
 const AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetError</b> () const</td></tr>
 <tr class="separator:a5650f08ec8cd010404ba940cc2bbf310 inherit pub_methods_class_script_canvas_editor_1_1_state_machine"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ceaf9981883124a39389dedec9cc0db inherit pub_methods_class_script_canvas_editor_1_1_state_machine"><td class="memItemLeft" align="right" valign="top"><a id="a4ceaf9981883124a39389dedec9cc0db"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVerbose</b> (bool isVerbose)</td></tr>
-<tr class="separator:a4ceaf9981883124a39389dedec9cc0db inherit pub_methods_class_script_canvas_editor_1_1_state_machine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa26f7e5a31a9971ce7f979b9ef6883ab inherit pub_methods_class_script_canvas_editor_1_1_state_machine"><td class="memItemLeft" align="right" valign="top"><a id="aa26f7e5a31a9971ce7f979b9ef6883ab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetConfig</b> (const <a class="el" href="struct_script_canvas_editor_1_1_upgrade_graph_config.html">UpgradeGraphConfig</a> &amp;config)</td></tr>
+<tr class="separator:aa26f7e5a31a9971ce7f979b9ef6883ab inherit pub_methods_class_script_canvas_editor_1_1_state_machine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a155b4a677606b91f7fa63d3617d3c95e inherit pub_methods_class_script_canvas_editor_1_1_state_machine"><td class="memItemLeft" align="right" valign="top"><a id="a155b4a677606b91f7fa63d3617d3c95e"></a>
 const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebugPrefix</b> () const</td></tr>
 <tr class="separator:a155b4a677606b91f7fa63d3617d3c95e inherit pub_methods_class_script_canvas_editor_1_1_state_machine"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,7 +146,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_graphNeedsDirtying<
 <a class="el" href="class_script_canvas_editor_1_1_editor_graph.html">EditorGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_graph</b> = nullptr</td></tr>
 <tr class="separator:a70d58a080338d2921b62828bf6c4a2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ff144db3504d45af17efc441151b85d"><td class="memItemLeft" align="right" valign="top"><a id="a9ff144db3504d45af17efc441151b85d"></a>
-<a class="el" href="class_script_canvas_editor_1_1_source_handle.html">SourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_asset</b></td></tr>
+SourceHandle&#160;</td><td class="memItemRight" valign="bottom"><b>m_asset</b></td></tr>
 <tr class="separator:a9ff144db3504d45af17efc441151b85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_script_canvas_editor_1_1_state_machine"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_script_canvas_editor_1_1_state_machine')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_script_canvas_editor_1_1_state_machine.html">ScriptCanvasEditor::StateMachine</a></td></tr>
 <tr class="memitem:ab47b1103824ba5c9cf4a36749a8ed30f inherit pub_attribs_class_script_canvas_editor_1_1_state_machine"><td class="memItemLeft" align="right" valign="top"><a id="ab47b1103824ba5c9cf4a36749a8ed30f"></a>
@@ -164,7 +164,7 @@ AZStd::vector&lt; AZStd::shared_ptr&lt; <a class="el" href="class_script_canvas_
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:20:25 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:36 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

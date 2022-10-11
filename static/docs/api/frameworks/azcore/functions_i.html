@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -80,8 +80,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_object_stream.html#abbc98ffdb49a7a9c937a487d00b442da">AZ::ObjectStream</a>
 </li>
 <li>insert()
-: <a class="el" href="class_a_z_std_1_1forward__list.html#a5fd5ab3ef8e33725531cfab1604d3d5c">AZStd::forward_list&lt; T, Allocator &gt;</a>
-, <a class="el" href="class_a_z_std_1_1list.html#a588eaf3a2972b299fc3012a8af5cf947">AZStd::list&lt; T, Allocator &gt;</a>
+: <a class="el" href="class_a_z_std_1_1list.html#a588eaf3a2972b299fc3012a8af5cf947">AZStd::list&lt; T, Allocator &gt;</a>
 , <a class="el" href="class_a_z_std_1_1map.html#a6a2fc5e1f7814821ab5f1a80186b8abb">AZStd::map&lt; Key, MappedType, Compare, Allocator &gt;</a>
 , <a class="el" href="class_a_z_std_1_1multimap.html#ac6d43bcef8fcdc6d5f49c73a09784e4e">AZStd::multimap&lt; Key, MappedType, Compare, Allocator &gt;</a>
 </li>
@@ -144,6 +143,12 @@ $(function() {
 <li>IntersectSegment()
 : <a class="el" href="class_a_z_1_1_plane.html#a33bc050cc19af3975a414ae675a56df5">AZ::Plane</a>
 </li>
+<li>IntersectSegmentTriangle()
+: <a class="el" href="class_a_z_1_1_intersect_1_1_segment_triangle_hit_tester.html#a9ad614caee6318cfdfff9880b6493233">AZ::Intersect::SegmentTriangleHitTester</a>
+</li>
+<li>IntersectSegmentTriangleCCW()
+: <a class="el" href="class_a_z_1_1_intersect_1_1_segment_triangle_hit_tester.html#a0b4f303d7212dec41ea712cafa957627">AZ::Intersect::SegmentTriangleHitTester</a>
+</li>
 <li>IntersectSphere()
 : <a class="el" href="class_a_z_1_1_frustum.html#a24a6796e924083d56d62538e81a06aa6">AZ::Frustum</a>
 </li>
@@ -201,6 +206,7 @@ $(function() {
 </li>
 <li>IsClose()
 : <a class="el" href="class_a_z_1_1_aabb.html#a300b2dddcc90863930d16321bc8b1677">AZ::Aabb</a>
+, <a class="el" href="class_a_z_1_1_capsule.html#a71255320583e1900f9c41b4abcb8e215">AZ::Capsule</a>
 , <a class="el" href="class_a_z_1_1_color.html#ae089c9e125a1831a426bdf806b6d344a">AZ::Color</a>
 , <a class="el" href="class_a_z_1_1_frustum.html#a7a69bd934a1cefed2a49786baa34cc76">AZ::Frustum</a>
 , <a class="el" href="class_a_z_1_1_matrix3x4.html#a8d559bb41f62f7127ae379919f5779a0">AZ::Matrix3x4</a>
@@ -241,7 +247,8 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_base_json_serializer.html#a0593c6f749321c2b34698ab668a64038">AZ::BaseJsonSerializer</a>
 </li>
 <li>IsFinite()
-: <a class="el" href="class_a_z_1_1_matrix3x4.html#a7782b1f9926fdf54fc1cdfc2680c8406">AZ::Matrix3x4</a>
+: <a class="el" href="class_a_z_1_1_color.html#a7db2da5f2acc6896b7d80bba19b371ae">AZ::Color</a>
+, <a class="el" href="class_a_z_1_1_matrix3x4.html#a7782b1f9926fdf54fc1cdfc2680c8406">AZ::Matrix3x4</a>
 , <a class="el" href="class_a_z_1_1_vector3.html#aa881edd603e701b3dc032ab782d25a50">AZ::Vector3</a>
 </li>
 <li>IsFixedCapacity()
@@ -264,6 +271,12 @@ $(function() {
 </li>
 <li>IsInstantiated()
 : <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html#aa3ab48c64c5f801ef6e0d8dce9b242bb">AZ::SliceComponent::SliceReference</a>
+</li>
+<li>IsInvokable()
+: <a class="el" href="class_a_z_1_1_attribute.html#af322f813c3770637d965196f22e32527">AZ::Attribute</a>
+, <a class="el" href="class_a_z_1_1_attribute_function_3_01_r_07_args_8_8_8_08_4.html#a287b3cacfd3a8faa6f7535a74cc71dd2">AZ::AttributeFunction&lt; R(Args...)&gt;</a>
+, <a class="el" href="class_a_z_1_1_attribute_invocable.html#a897e0c96ac7a8a5b378260514a1158d5">AZ::AttributeInvocable&lt; Invocable &gt;</a>
+, <a class="el" href="class_a_z_1_1_attribute_member_function_3_01_r_07_c_1_1_5_08_07_args_8_8_8_08_4.html#ab0313df4777aab0479369c9d6deca380">AZ::AttributeMemberFunction&lt; R(C::*)(Args...)&gt;</a>
 </li>
 <li>IsLazilyCreated()
 : <a class="el" href="class_a_z_1_1_allocator_base.html#a1888c05c8d2aa8ae3b305a81ca964121">AZ::AllocatorBase</a>
@@ -356,11 +369,16 @@ $(function() {
 <li>IsSuccess()
 : <a class="el" href="class_a_z_1_1_outcome.html#a0aad003ae1ba0474410f5526f62843ee">AZ::Outcome&lt; ValueT, ErrorT &gt;</a>
 </li>
+<li>IsSuspended()
+: <a class="el" href="class_a_z_1_1_i_o_1_1_i_streamer.html#a3f6adeea97fcf08504a841be2852de68">AZ::IO::IStreamer</a>
+, <a class="el" href="class_a_z_1_1_i_o_1_1_scheduler.html#ab78e9d72108efd47bd688a1ee03442f8">AZ::IO::Scheduler</a>
+, <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html#a5c23c9c0a5425e0829448e87b65aef5b">AZ::IO::Streamer</a>
+</li>
 <li>IsTagEnabled()
 : <a class="el" href="class_a_z_1_1_i_logger.html#afb8c494fec13a760677587684d670da4">AZ::ILogger</a>
 </li>
 <li>IsTraceLoggingEnabledForLevel()
-: <a class="el" href="class_a_z_1_1_debug_1_1_trace.html#a5b2423d4cca2ed4e58adc00de5b2e16e">AZ::Debug::Trace</a>
+: <a class="el" href="class_a_z_1_1_debug_1_1_i_trace.html#ab31cb515f7d5ae446cb67db153de3762">AZ::Debug::ITrace</a>
 </li>
 <li>IsValid()
 : <a class="el" href="class_a_z_1_1_behavior_interface_proxy.html#a7ff138b87181993637ba7fe274edfc34">AZ::BehaviorInterfaceProxy&lt; T &gt;</a>
@@ -381,7 +399,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:17:56 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:06 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

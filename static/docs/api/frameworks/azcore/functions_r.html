@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -65,7 +65,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_dom_1_1_visitor.html#a2d4838ee9c922821c9168405a8fc2f27">AZ::Dom::Visitor</a>
 </li>
 <li>RawOutput()
-: <a class="el" href="class_a_z_1_1_debug_1_1_trace.html#a92dcfe52a04e7912d1fbff552aed6ed4">AZ::Debug::Trace</a>
+: <a class="el" href="class_a_z_1_1_debug_1_1_trace.html#a44e35dff7b4f4de5d1d47e69fe30ea29">AZ::Debug::Trace</a>
 </li>
 <li>RawStartNode()
 : <a class="el" href="class_a_z_1_1_dom_1_1_value_writer.html#a1e1e3cb7bf75c4efe93a7fc62976a17d">AZ::Dom::ValueWriter</a>
@@ -74,14 +74,17 @@ $(function() {
 <li>RawValue()
 : <a class="el" href="class_a_z_1_1_dom_1_1_visitor.html#a482be789e0540b5a1db337b0bb59ab39">AZ::Dom::Visitor</a>
 </li>
+<li>Ray()
+: <a class="el" href="class_a_z_1_1_ray.html#a8c1e3afb1b1eff61861b87a917ed3132">AZ::Ray</a>
+</li>
 <li>Read()
 : <a class="el" href="class_a_z_1_1_android_1_1_a_p_k_file_handler.html#a4699e82df0eac6c37632b10eec6bf2b1">AZ::Android::APKFileHandler</a>
 , <a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#a48043000da14882df8f10c7d82c4bfd5">AZ::IO::Compressor</a>
 , <a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#aefd8085a3076158896d9eae9917b4be2">AZ::IO::CompressorZLib</a>
 , <a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std.html#a2a963af05850f9202182334d5db89665">AZ::IO::CompressorZStd</a>
 , <a class="el" href="class_a_z_1_1_i_o_1_1_file_reader.html#afad918e55de5a3adeac1ba6133198600">AZ::IO::FileReader</a>
-, <a class="el" href="class_a_z_1_1_i_o_1_1_i_streamer.html#a91010a3025c7a3f9d2cd1ad8752bc667">AZ::IO::IStreamer</a>
-, <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html#ab0575cba6f60d24e420bf5bf0792feed">AZ::IO::Streamer</a>
+, <a class="el" href="class_a_z_1_1_i_o_1_1_i_streamer.html#af047bf1a30057c619bc7665505f0f2cf">AZ::IO::IStreamer</a>
+, <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html#ac31db62bc908a930e1a052e3a32ffa79">AZ::IO::Streamer</a>
 , <a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html#a4fcb946e8f42f5e70c645b60851903ef">AZ::IO::SystemFile</a>
 , <a class="el" href="class_a_z_1_1_shared_memory_ring_buffer.html#ad135b9fcae197b23970b0ed02a1bd7a6">AZ::SharedMemoryRingBuffer</a>
 </li>
@@ -111,7 +114,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_best_fit_external_map_schema.html#a79e386e584795cce1a8c459bf6b041b5">AZ::BestFitExternalMapSchema</a>
 , <a class="el" href="class_a_z_1_1_child_allocator_schema.html#a8d3ae55a0c4daf3942c16c909e128117">AZ::ChildAllocatorSchema&lt; ParentAllocator &gt;</a>
 , <a class="el" href="class_a_z_1_1_heap_schema.html#af18ee704857ec7841843b9ed1a884dbc">AZ::HeapSchema</a>
-, <a class="el" href="class_a_z_1_1_hpha_schema.html#a75fb6cdf1665eb51de79e849d445d47e">AZ::HphaSchema</a>
+, <a class="el" href="class_a_z_1_1_hpha_schema_base.html#a204b107d370c74225d2097ae263da77e">AZ::HphaSchemaBase&lt; DebugAllocator &gt;</a>
 , <a class="el" href="class_a_z_1_1_i_allocator_schema.html#a6abee5e6bea72fc951956afa9db2d3ed">AZ::IAllocatorSchema</a>
 , <a class="el" href="class_a_z_1_1_malloc_schema.html#ad836770e388ceff316366dfe132130ab">AZ::MallocSchema</a>
 , <a class="el" href="class_a_z_1_1_o_s_allocator.html#ac0e24ae0f4cb95e2087aafa5caa36ab4">AZ::OSAllocator</a>
@@ -155,7 +158,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_debug_1_1_i_event_logger.html#a79281ed72f90226c082994d3b42e195c">AZ::Debug::IEventLogger</a>
 </li>
 <li>RecycleRequest()
-: <a class="el" href="class_a_z_1_1_i_o_1_1_streamer_context.html#a6893fda9072d2f19cc1b68a1baaf723e">AZ::IO::StreamerContext</a>
+: <a class="el" href="class_a_z_1_1_i_o_1_1_streamer_context.html#a738dfc3391ea352f0f1b8984bb0f38bb">AZ::IO::StreamerContext</a>
 </li>
 <li>RedirectToGlobalContext()
 : <a class="el" href="class_a_z_1_1_e_bus_environment.html#ab28c8912b1c8ba805507253f99315eb2">AZ::EBusEnvironment</a>
@@ -330,10 +333,10 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_slice_component_1_1_data_flags_per_entity.html#a55817789b0f2d3a5ff52e0a4407543fa">AZ::SliceComponent::DataFlagsPerEntity</a>
 </li>
 <li>RemapIds()
-: <a class="el" href="struct_a_z_1_1_id_utils_1_1_remapper.html#a550527e2ae9d0e622eb4cfdcde1e9f43">AZ::IdUtils::Remapper&lt; IdType, AllowDuplicates &gt;</a>
+: <a class="el" href="struct_a_z_1_1_id_utils_1_1_remapper.html#a154b9f15344cf2474760309cb9758c6a">AZ::IdUtils::Remapper&lt; IdType, AllowDuplicates &gt;</a>
 </li>
 <li>RemapIdsAndIdRefs()
-: <a class="el" href="struct_a_z_1_1_id_utils_1_1_remapper.html#a728e640ad5a0ca5fe9eb82f57620bef8">AZ::IdUtils::Remapper&lt; IdType, AllowDuplicates &gt;</a>
+: <a class="el" href="struct_a_z_1_1_id_utils_1_1_remapper.html#a8859df30388e6ef62a1307d41faf23a2">AZ::IdUtils::Remapper&lt; IdType, AllowDuplicates &gt;</a>
 </li>
 <li>Remove()
 : <a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html#ac1fe3fbe1a6f453d5a98a29fa2d4fe1b">AZ::IO::FileIOBase</a>
@@ -384,7 +387,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_scheduled_event.html#a19271b046071151baaa20112ef8d5157">AZ::ScheduledEvent</a>
 </li>
 <li>RemoveInstance()
-: <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html#a5e3a57fc42ff8a9efb5fdafa14a8c7d6">AZ::SliceComponent::SliceReference</a>
+: <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html#a2d82f077afc22a8c99ff359d6b9406d8">AZ::SliceComponent::SliceReference</a>
 </li>
 <li>RemoveMetaDataEntity()
 : <a class="el" href="class_a_z_1_1_slice_component.html#a18c5785d02de87725b652924df2c0d61">AZ::SliceComponent</a>
@@ -428,7 +431,8 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_id_utils_1_1_remapper.html#a251f62a78d10569cbb9c3400fef3a9f5">AZ::IdUtils::Remapper&lt; IdType, AllowDuplicates &gt;</a>
 </li>
 <li>Report()
-: <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html#ab0642e6ea4085b5321bbb8e7ef035f57">AZ::IO::Streamer</a>
+: <a class="el" href="class_a_z_1_1_i_o_1_1_i_streamer.html#aa3dd009be6368b3f068c66d8f71c847c">AZ::IO::IStreamer</a>
+, <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html#a05ff6f73c9d8832ecffeb3803e885f0e">AZ::IO::Streamer</a>
 , <a class="el" href="class_a_z_1_1_json_base_context.html#a0837adc7b83a586c4d588ff11c3c463d">AZ::JsonBaseContext</a>
 </li>
 <li>ReportError()
@@ -459,8 +463,8 @@ $(function() {
 : <a class="el" href="class_a_z_std_1_1ring__buffer.html#ad5109d5a8e05a3dfb1d9325a0bb4158a">AZStd::ring_buffer&lt; T, Allocator &gt;</a>
 </li>
 <li>RescheduleRequest()
-: <a class="el" href="class_a_z_1_1_i_o_1_1_i_streamer.html#a084a174c0afa8539b26910eb363f712d">AZ::IO::IStreamer</a>
-, <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html#a6fff8e32ab85b8764e280e3c04b31f42">AZ::IO::Streamer</a>
+: <a class="el" href="class_a_z_1_1_i_o_1_1_i_streamer.html#ac81af2c81e65d3b74ab027ccf10aeabb">AZ::IO::IStreamer</a>
+, <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html#adc3701dc68922fdc1f06cce3bcb339cb">AZ::IO::Streamer</a>
 </li>
 <li>ReserveElement()
 : <a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container.html#a25e487a40a58f37395725edc991339b7">AZ::SerializeContext::IDataContainer</a>
@@ -495,7 +499,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_best_fit_external_map_schema.html#a19c1421423f3f952b820169b59ed2d5d">AZ::BestFitExternalMapSchema</a>
 , <a class="el" href="class_a_z_1_1_child_allocator_schema.html#af2712f6997d49866ae752f2d916ae769">AZ::ChildAllocatorSchema&lt; ParentAllocator &gt;</a>
 , <a class="el" href="class_a_z_1_1_heap_schema.html#a0c67764b18119f3d053ecccf296f90ec">AZ::HeapSchema</a>
-, <a class="el" href="class_a_z_1_1_hpha_schema.html#a3832ec2cac71ad96afd134c24e0ca68e">AZ::HphaSchema</a>
+, <a class="el" href="class_a_z_1_1_hpha_schema_base.html#aecd6c9e32a8bd6b13c492efdd36afb6f">AZ::HphaSchemaBase&lt; DebugAllocator &gt;</a>
 , <a class="el" href="class_a_z_1_1_i_allocator_schema.html#a185b218b8b01bd490e30514eda2dc1ec">AZ::IAllocatorSchema</a>
 , <a class="el" href="class_a_z_1_1_malloc_schema.html#a043ef5fd3b4385cfacc6c344d039f45a">AZ::MallocSchema</a>
 , <a class="el" href="class_a_z_1_1_o_s_allocator.html#a8450fac73ffe9ca3b15244f3a75d172c">AZ::OSAllocator</a>
@@ -598,7 +602,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:17:56 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:06 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine GradientSignal Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -57,16 +57,13 @@ $(function() {
 
 <p><code>#include &lt;GradientRequestBus.h&gt;</code></p>
 
-<p>Inherits EBusTraits.</p>
+<p>Inherits EBusSharedDispatchTraits&lt; GradientRequests &gt;.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aad4757c20665ef635b6772e9b818473d"><td class="memItemLeft" align="right" valign="top"><a id="aad4757c20665ef635b6772e9b818473d"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BusIdType</b> = AZ::EntityId</td></tr>
 <tr class="separator:aad4757c20665ef635b6772e9b818473d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52d129fb7024cb35ca766887049de2b7"><td class="memItemLeft" align="right" valign="top"><a id="a52d129fb7024cb35ca766887049de2b7"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>MutexType</b> = AZStd::recursive_mutex</td></tr>
-<tr class="separator:a52d129fb7024cb35ca766887049de2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -87,7 +84,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 <tr class="separator:a94c619c432d5bef9e231700e9c2094d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Handles gradient sampling requests based on up to 3 data points such as X,Y,Z </p>
+<div class="textblock"><p>Handles gradient sampling requests based on up to 3 data points such as X,Y,Z. This bus uses shared dispatches, which means that all requests on the bus can run in parallel, but will NOT run in parallel with bus connections / disconnections. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a19008adf131385c8d36bc0cdf0794d53"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a19008adf131385c8d36bc0cdf0794d53">&#9670;&nbsp;</a></span>GetValue()</h2>
@@ -192,7 +189,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:47 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:56 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

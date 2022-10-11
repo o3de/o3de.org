@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -85,7 +85,6 @@ $(function() {
 </li>
 <li>OnAssetPreReload()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset_events.html#a341183dfda2dbfa08d5731c45e53cdf9">AZ::Data::AssetEvents</a>
-, <a class="el" href="class_a_z_1_1_script_system_component.html#a328ea47f84ddd0a621657d86e16f8d6d">AZ::ScriptSystemComponent</a>
 </li>
 <li>OnAssetReady()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset_events.html#a445b45414ddbe8ee5d2a36bb0ef23e85">AZ::Data::AssetEvents</a>
@@ -94,6 +93,7 @@ $(function() {
 <li>OnAssetReloaded()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset_events.html#a35db5becaa4189e390fa3f3115a9a793">AZ::Data::AssetEvents</a>
 , <a class="el" href="class_a_z_1_1_data_1_1_asset_manager_events.html#ab1895cc208d239e2b5cc425b768a7fad">AZ::Data::AssetManagerEvents</a>
+, <a class="el" href="class_a_z_1_1_script_system_component.html#a36e88a058494519720c7d5f9452d264f">AZ::ScriptSystemComponent</a>
 </li>
 <li>OnAssetReloadError()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset_events.html#ac6ae62f3b67b9efdab36f232938ca2a9">AZ::Data::AssetEvents</a>
@@ -287,7 +287,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_console_data_wrapper.html#ab58c685a0ee05c83a92f6d387dace5b0">AZ::ConsoleDataWrapper&lt; BASE_TYPE, THREAD_SAFETY &gt;</a>
 </li>
 <li>operator BehaviorObject()
-: <a class="el" href="struct_a_z_1_1_behavior_value_parameter.html#a87cc9b34becef135f3d9571cac799882">AZ::BehaviorValueParameter</a>
+: <a class="el" href="struct_a_z_1_1_behavior_argument.html#a2a7e680e4273014be873185ce0e6d8f4">AZ::BehaviorArgument</a>
 </li>
 <li>operator bool()
 : <a class="el" href="class_a_z_1_1_allocator_wrapper.html#af27e93456fb693fb4f27a66b0443edd3">AZ::AllocatorWrapper&lt; Allocator &gt;</a>
@@ -326,7 +326,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_allocator_wrapper.html#a9221ad0be32cd0d8f6b1625fd8fb185c">AZ::AllocatorWrapper&lt; Allocator &gt;</a>
 , <a class="el" href="struct_a_z_1_1_i_o_1_1parser_1_1_path_parser.html#af5c19553a255f22a264c1239580ed2d8">AZ::IO::parser::PathParser</a>
 , <a class="el" href="class_a_z_1_1_matrix3x3.html#a04681ec73b9525aba538c693ca5e2870">AZ::Matrix3x3</a>
-, <a class="el" href="class_a_z_1_1_matrix3x4.html#a73c66e7eadddf6d0ff52c838275c6516">AZ::Matrix3x4</a>
+, <a class="el" href="class_a_z_1_1_matrix3x4.html#a6ff72bcd7d99e803384c044281e918f0">AZ::Matrix3x4</a>
 , <a class="el" href="class_a_z_1_1_matrix4x4.html#a9884b195826ee36061be9f705f1e3c5c">AZ::Matrix4x4</a>
 </li>
 <li>operator+()
@@ -336,8 +336,8 @@ $(function() {
 , <a class="el" href="struct_a_z_1_1_uuid.html#a7800181fd8e41312cf0e90f099d82b0b">AZ::Uuid</a>
 </li>
 <li>operator-()
-: <a class="el" href="class_a_z_1_1_matrix3x3.html#ae8bb501e3208fc1b6a4c4e7f1fd0f86c">AZ::Matrix3x3</a>
-, <a class="el" href="class_a_z_1_1_matrix3x4.html#a67d412e2c1f9ad765adb20fac9001766">AZ::Matrix3x4</a>
+: <a class="el" href="class_a_z_1_1_matrix3x3.html#a25f6f7fa97b8275955a8f8198f4020dc">AZ::Matrix3x3</a>
+, <a class="el" href="class_a_z_1_1_matrix3x4.html#afc3759acca6a9ca728c803972f48bcf9">AZ::Matrix3x4</a>
 , <a class="el" href="class_a_z_1_1_matrix4x4.html#a94d9860a324be450616d985aabf4f22c">AZ::Matrix4x4</a>
 , <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html#a9e2e1ce7fadf65ca5fce7cbb2c1c965c">AZStd::deque&lt; T, Allocator, NumElementsPerBlock, MinMapSize &gt;::const_iterator_impl</a>
 </li>
@@ -360,19 +360,19 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_console_data_wrapper.html#adbcf6bde60d3155874d23085131582a4">AZ::ConsoleDataWrapper&lt; BASE_TYPE, THREAD_SAFETY &gt;</a>
 </li>
 <li>operator=()
-: <a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1shared__ref.html#a5e2efe637bb46a231f242f4a23b6be8a">AZ::Android::JNI::shared_ref&lt; JniType &gt;</a>
+: <a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1shared__ref.html#a9eef43f48ea9f346f7d174d3f86701d1">AZ::Android::JNI::shared_ref&lt; JniType &gt;</a>
 , <a class="el" href="class_a_z_1_1_console_data_wrapper.html#a0d43096f8640ee42de7a9c72f62e2215">AZ::ConsoleDataWrapper&lt; BASE_TYPE, THREAD_SAFETY &gt;</a>
 , <a class="el" href="class_a_z_1_1_dom_1_1_value.html#a25e9ded4d88d31b9459157bb95f58027">AZ::Dom::Value</a>
 , <a class="el" href="struct_a_z_1_1_e_bus_aggregate_results.html#a114dc689647a27b847d0261540c4d061">AZ::EBusAggregateResults&lt; T &gt;</a>
-, <a class="el" href="struct_a_z_1_1_e_bus_reduce_result.html#af2e8375db659518121421931cac44e27">AZ::EBusReduceResult&lt; T, Aggregator &gt;</a>
-, <a class="el" href="struct_a_z_1_1_e_bus_reduce_result_3_01_t_01_6_00_01_aggregator_01_4.html#aab446b19c478986748fdfaf212c015bb">AZ::EBusReduceResult&lt; T &amp;, Aggregator &gt;</a>
+, <a class="el" href="struct_a_z_1_1_e_bus_reduce_result.html#a3118a45d9c9f4ccd5c1f54b7d41de576">AZ::EBusReduceResult&lt; T, Aggregator &gt;</a>
+, <a class="el" href="struct_a_z_1_1_e_bus_reduce_result_3_01_t_01_6_00_01_aggregator_01_4.html#a74a23dad199897c75b8fd4d5e0650e36">AZ::EBusReduceResult&lt; T &amp;, Aggregator &gt;</a>
 , <a class="el" href="class_a_z_1_1_i_o_1_1_file_reader.html#a611f43d09d1c24ef3e514d2e4ae1935c">AZ::IO::FileReader</a>
 , <a class="el" href="class_a_z_1_1_matrix3x3.html#af56aba6453cfba20b1d457c9e1949364">AZ::Matrix3x3</a>
 , <a class="el" href="class_a_z_1_1_matrix3x4.html#a515a0e5baaab31d65488568db19da51e">AZ::Matrix3x4</a>
 , <a class="el" href="class_a_z_1_1_name.html#aa4debf0720b05230f50504c23189a80c">AZ::Name</a>
-, <a class="el" href="class_a_z_1_1_outcome.html#a194181f9a74a95fa862f31e962959108">AZ::Outcome&lt; ValueT, ErrorT &gt;</a>
+, <a class="el" href="class_a_z_1_1_outcome.html#ab79613b2800460a4c3b7ab2e4f9df5af">AZ::Outcome&lt; ValueT, ErrorT &gt;</a>
 , <a class="el" href="class_a_z_1_1_thread_safe_object.html#a0a52f5a170ded687cabc2451bd2e967b">AZ::ThreadSafeObject&lt; _TYPE &gt;</a>
-, <a class="el" href="class_a_z_std_1_1any.html#a111c317736b2b11ecc26d6662c01b57a">AZStd::any</a>
+, <a class="el" href="class_a_z_std_1_1any.html#a367f5fe4466d976a3bbcfe46029a020b">AZStd::any</a>
 </li>
 <li>operator==()
 : <a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1shared__ref.html#ab5f6eb3af7c7e235bdb7cae9c2637e4b">AZ::Android::JNI::shared_ref&lt; JniType &gt;</a>
@@ -390,7 +390,8 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_console_data_wrapper.html#ae8095f02cc93824fecddd454d591811b">AZ::ConsoleDataWrapper&lt; BASE_TYPE, THREAD_SAFETY &gt;</a>
 </li>
 <li>operator[]()
-: <a class="el" href="class_a_z_1_1_vertex_container.html#ab878870ae0fd5d9b9f6067ed89a3e892">AZ::VertexContainer&lt; Vertex &gt;</a>
+: <a class="el" href="class_a_z_1_1_dom_1_1_dom_prefix_tree.html#af44325e22b11d79576c394f8bdbbeb03">AZ::Dom::DomPrefixTree&lt; T &gt;</a>
+, <a class="el" href="class_a_z_1_1_vertex_container.html#ab878870ae0fd5d9b9f6067ed89a3e892">AZ::VertexContainer&lt; Vertex &gt;</a>
 , <a class="el" href="class_a_z_std_1_1fixed__unordered__map.html#ae85090137e133ce15533b51563bf39c9">AZStd::fixed_unordered_map&lt; Key, MappedType, FixedNumBuckets, FixedNumElements, Hasher, EqualKey &gt;</a>
 , <a class="el" href="class_a_z_std_1_1unordered__map.html#ac7e6c2a6f0e1ddff9c30febf70eef784">AZStd::unordered_map&lt; Key, MappedType, Hasher, EqualKey, Allocator &gt;</a>
 </li>
@@ -399,13 +400,13 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_matrix3x4.html#aaf0d473d1ebcd1a571748abc098df7c0">AZ::Matrix3x4</a>
 </li>
 <li>Outcome()
-: <a class="el" href="class_a_z_1_1_outcome.html#a51bd416b8abd5e88fea65a1b7e942c41">AZ::Outcome&lt; ValueT, ErrorT &gt;</a>
+: <a class="el" href="class_a_z_1_1_outcome.html#a4a63e3b0138361456b50b798b32d3380">AZ::Outcome&lt; ValueT, ErrorT &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:17:57 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:06 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
