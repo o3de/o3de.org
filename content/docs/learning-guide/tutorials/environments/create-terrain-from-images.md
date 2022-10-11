@@ -27,7 +27,7 @@ In a heightmap, dark values are low elevation areas and light values are high el
 * Postfix the heightmap file name with `_gsi` so that the heightmap is automatically processed by Asset Processor as a GSI (`LevelOneTerrainHeight_gsi.png`, for example). If you don't use the `_gsi` postfix, you can use [Texture Settings](/docs/user-guide/assets/texture-settings/) to configure the heightmap source asset to be processed as a GSI.
 
 {{< tip >}}
-The default **Heigh Query Resolution** for terrain in O3DE is 1.0 meters. This means a 1000 x 1000 heightmap represents one square kilometer of terrain. The **Height Query Resolution** can be changed in the [**Terrain World**](/docs/user-guide/components/reference/terrain/world) level component.
+The default **Height Query Resolution** for terrain in O3DE is 1.0 meters. This means a 1000 x 1000 heightmap represents one square kilometer of terrain. The **Height Query Resolution** can be changed in the [**Terrain World**](/docs/user-guide/components/reference/terrain/world) level component.
 {{< /tip >}}
 
 
