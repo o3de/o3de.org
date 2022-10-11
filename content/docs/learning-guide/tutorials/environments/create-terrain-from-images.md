@@ -6,7 +6,7 @@ weight: 300
 toc: true
 ---
 
-Terrain in Open 3D Engine (O3DE) is generated from *gradients*. Gradients, in the context of this tutorial, represent changes in elevation and weight masks for materials. Gradients can be generated procedurally or processed from an image. In this tutorial, you'll create terrain elevation and apply detail materials using image gradients, and add support for PhysX simulations with a heightfield collider and physics materials.
+Terrain in **Open 3D Engine (O3DE)** is generated from *gradients*. Gradients, in the context of this tutorial, represent changes in elevation and weight masks for materials. Gradients can be generated procedurally or processed from an image. In this tutorial, you'll create terrain elevation and apply detail materials using image gradients, and add support for PhysX simulations with a heightfield collider and physics materials.
 
 This tutorial requires that you have the **Terrain**, **Landscape Canvas**, and **PhysX** Gems enabled in your project.
 
