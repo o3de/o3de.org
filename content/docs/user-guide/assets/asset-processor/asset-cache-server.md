@@ -172,25 +172,21 @@ The asset caching system is configured using opt-in patterns. There are many typ
 
 This ACS block allows users to configure the types of source assets that should be cached in the remote folder. The block is placed in the JSON path `/AssetProcessor/Settings/Server` object. The title must start with the prefix `"ACS "` to designate the object as a configuration block. The next part is either `"glob"` or `"pattern"` followed by the correct text for a wild card pattern or a regular expression; these are used to tag source assets that need to be cached.
 
+The ``name`` field is used for both the title of the configuration block in the GUI tool, but it is also possible to match all an asset pattern by setting the ``name`` to a name of an asset builder. For example, a configuration block can set the name to "Atom Image Builder" so that all the processed images will be cached.
+
 {{< note >}}
 The block should only be set to `"glob"` or `"pattern"`, not both.
 {{< /note >}}
 
 The `"checkServer"` Boolean flag is used to enable the block. The default value for `"checkServer"` is false, so to enable the ACS block the Boolean flag needs to be set to true.
 
-The ``name`` field is used for the title of the configuration block in the GUI tool, but it can also match all assets of an asset pattern by setting it to the name of an asset builder. For example, a configuration block can set the name to "Atom Image Builder" so that all the processed images are cached.
-
-{{< note >}}
-To use the ``name`` of a builder to cache, its product files it must match exactly, including white space and letter case.
-{{< /note >}}
-
-This example JSON ACS block caches all product assets built by the "XmlBuilderWorker" builder:
+An example this JSON ACS block will cache all product assets built by the "XmlBuilderWorker" builder:
 
 ```json
 "ACS XmlBuilderWorker":
 {
    "name": "XmlBuilderWorker",
-   "glob":  "*.xml",
+   "glob":  "*.vegdescriptorlist",
    "checkServer": true
 }
 ```
