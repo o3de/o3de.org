@@ -231,7 +231,7 @@ Please read [Working with AWS credentials](#working-with-aws-credentials) to dec
 
 If you are running your project on Amazon EC2, you have the additional option of using the underlying [instance profile](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#ec2-instance-profile) to authenticate calls made to AWS. Using the EC2 instance role lets you avoid needing to separately configure AWS credentials on the machine through less secure methods like setting the AWS environment variables through user data at deploy time or manually remoting into the machine to set up a profile.
 
-To use EC2 instance role credentials with your project:
+To use Amazon EC2 instance role credentials with your project:
 1. Create an EC2 [instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) through the [Amazon web console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html#instance-profiles-manage-console) or AWS CLI. An instance profile is essentially a container for an IAM role that your EC2 instance can assume to make calls to AWS.
 1. Provide the associated IAM role any [permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html) required to access the AWS resources your O3DE project needs.
 1. Attach the instance profile to the EC2 instance(s) running your O3DE project. You can attach it to a new instance [at launch time](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/LaunchingAndUsingInstances.html) or you can [attach it to a running instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#attach-iam-role). 
