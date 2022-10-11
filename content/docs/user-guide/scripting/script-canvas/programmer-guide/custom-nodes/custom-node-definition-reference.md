@@ -389,7 +389,7 @@ __EditProperty__ may also use [EditAttribute](#editattribute) data.
 
 ### DynamicDataSlot
 
-A Dynamic Data Slot is a slot that does not have a predefined type, the type is acquired by the slot when a connection is made or when a variable reference is created. The type of the slot may be a value, a container or a general purpose slot that supports 'Any' type.
+A Dynamic Data Slot is a slot that does not have a predefined type; the type is acquired by the slot when a connection is made or when a variable reference is created. The type of the slot may be a value, a container, or a general purpose slot that supports 'Any' type.
 
 | __Attribute__   |  __Requirements__  | __Description__ | __Example__ |
 | ---------- | ------------| ------------| ------------| 
