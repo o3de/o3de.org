@@ -48,7 +48,7 @@ Data driven root motion can give animators more control over the actor's perform
 
 The remainder of this tutorial focuses on data driven root motion. You'll learn how to determine if an actor is properly set up for data driven root motion, extract root motion if necessary, and enable root motion in [Animation Editor](/docs/user-guide/visualization/animation/animation-editor/user-interface).
 
-## Root motion set up
+## Root motion setup
 
 The data in data driven root motion is usually keyframe animation applied to the root bone of an actor's skeleton by an animator. In an ideal scenario, the actor and animation source scene files follow these rules:
 
