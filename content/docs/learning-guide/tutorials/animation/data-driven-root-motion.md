@@ -14,7 +14,7 @@ For this tutorial, you'll need an actor asset with animation that has been proce
 
 An actor entity usually has many components (meshes, a skeleton, colliders, and so on) that need to move together. If an actor jumps, the actor's collision capsule needs to have the same jump movement applied so that it moves with the skeleton and meshes. This movement, that moves all of the actor's components, is the *root motion*.
 
-Root motion can be *code driven* or *data driven*, The focus of this tutorial is data driven root motion, but it's helpful to understand both methods.
+Root motion can be *code driven* or *data driven*. The focus of this tutorial is data driven root motion, but it's helpful to understand both methods.
 
 ### Code driven
 
