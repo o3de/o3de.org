@@ -241,7 +241,7 @@ This section assumes you have created the materials you want to apply to your te
 
 #### Create a surface tag name list
 
-Surface tag names are strings that you can use to refer to parts of the terrain that are associated with specific gradients.
+_Surface tag names_ are strings that you can use to refer to parts of the terrain that are associated with specific gradients.
 
 1. From the **Tools** menu, select **Asset Editor**.
 
