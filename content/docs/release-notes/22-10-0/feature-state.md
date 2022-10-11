@@ -36,20 +36,27 @@ For an up-to-date feature grid and full notes, open the [Feature State Form](htt
 
 ## SIG-Content 
 
-
 ### Frameworks 
 
 | Module | Feature | Functional | Content | Code/API | Performance | Platform | Github Link | Doc Link |
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | AzToolsFramework | 🟢 Complete | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | All | | |
 | Lua | 🟢 Complete | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | All | | [Link](https://www.o3de.org/docs/user-guide/scripting/lua/) |
+| Prefabs | 🟡 Active | 🟠 Minimal | ⭕ Not Required | 🟠 Volatile | 🟡 Needs Optimization | All  | | |
+| Qt for Python | 🟡 Active | 🟠 Minimal | ⭕ Not Required | 🔵 In Progress | 🔵 In Progress | Windows Linux  | | |
 
 ### Editor 
 
 | Module | Feature | Functional | Content | Code/API | Performance | Platform | Github Link | Doc Link |
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Asset Browser | 🟡 Active | 🔵 In-Design | ⭕ Not Required | 🟢 Stable | 🔵 In Progress | Windows Linux MacOS  | | |
-| Asset Editor | 🔵 Backlogged | 🟠 Minimal | ⭕ Not Required | 🟢 Stable | 🔵 In Progress | Windows Linux MacOS  | | |
+| Asset Browser | 🟡 Active | 🟠 Minimal | ⭕ Not Required | 🟠 Volatile | 🔵 In Progress | Windows Linux MacOS  | | |
+| Framework | | | | | | | | |
+| Localization | 🔵 Backlogged | ❌ None | ❌ None | ❌ Unproven | ❌ Unsupported | | | |
+| Undo / Redo | 🟢 Complete | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🟡 Needs Optimization | Windows Linux MacOS  | | |
+| Asset Editor | 🟡 Active | 🟠 Minimal | ⭕ Not Required | 🟢 Stable | 🟡 Needs Optimization | Windows Linux MacOS  | | |
+| Outliner | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🟠 Volatile | 🟡 Needs Optimization | Windows Linux MacOS  | | |
+| Inspector | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🟠 Volatile | 🟡 Needs Optimization | Windows Linux MacOS  | | |
+| Document Property Editor (DPE) | 🟡 Active | 🔵 In-Design | ⭕ Not Required | 🔵 In Progress | 🟡 Needs Optimization | Windows Linux MacOS  | | |
 
 ### Canvas Tools 
 
@@ -57,18 +64,19 @@ For an up-to-date feature grid and full notes, open the [Feature State Form](htt
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Graph Model | 🟡 Active | 🟠 Minimal | ⭕ Not Required | 🟢 Stable | 🔴 Needs Testing | Windows Linux MacOS  | | |
 | Graph Canvas | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🟢 Stable | 🔴 Needs Testing | Windows Linux MacOS  | | |
-| Landscape Canvas | 🟢 Complete | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | Windows Linux MacOS  | | |
+| Landscape Canvas | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | Windows Linux MacOS  | | |
 
 ### Project Manager 
 
 | Module | Feature | Functional | Content | Code/API | Performance | Platform | Github Link | Doc Link |
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Remote Projects | 🟡 Active | 🔵 In-Design | ⭕ Not Required | 🔵 In Progress | 🔵 In Progress | Windows Linux  | | |
-| Project versioning | 🟡 Active | 🔵 In-Design | ⭕ Not Required | 🔵 In Progress | 🔵 In Progress | Windows Linux  | | |
-| Template Management | 🟠 Planned | ❌ None | ⭕ Not Required | ❌ Unproven | ❌ Unsupported | Windows Linux  | | |
-| Gem Creation Wizard | 🟠 Planned | ❌ None | ⭕ Not Required | ❌ Unproven | ❌ Unsupported | Windows Linux  | | |
-| Remote Gems Improvements (URI vs URL) | 🟠 Planned | ❌ None | ⭕ Not Required | ❌ Unproven | ❌ Unsupported | Windows Linux  | | |
-| Remote Gems (Initial) | 🟢 Complete | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🔵 In Progress | Windows Linux  | | |
+| Remote Projects | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🔵 In Progress | 🔵 In Progress | Windows Linux MacOS  | | |
+| Remote Gems | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🔵 In Progress | 🔵 In Progress | Windows Linux MacOS  | | |
+| Remote Templates | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🔵 In Progress | 🔵 In Progress | Windows Linux MacOS  | | |
+| Project Versioning | 🟡 Active | 🔵 In-Design | ⭕ Not Required | 🔵 In Progress | 🔵 In Progress | Windows Linux MacOS  | | |
+| Template Management | 🟠 Planned | 🔵 In-Design | ⭕ Not Required | ❌ Unproven | ❌ Unsupported | Windows Linux MacOS  | | |
+| Gem Management | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🔵 In Progress | 🔴 Needs Testing | Windows Linux MacOS  | | |
+| Engine Versioning | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🔵 In Progress | 🟢 Optimized | Windows Linux MacOS  | | |
 
 ### Scripting 
 
@@ -77,15 +85,15 @@ For an up-to-date feature grid and full notes, open the [Feature State Form](htt
 | Expression Evaluation | 🟢 Complete | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | All | | |
 | Script Canvas | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🟠 Volatile | 🔴 Needs Testing | Windows Linux MacOS  | | [Link](https://www.o3de.org/docs/user-guide/scripting/script-canvas/) |
 | Script Canvas Developer | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | Windows Linux MacOS  | | |
-| Script Events | 🟢 Complete | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | All | | [Link](https://www.o3de.org/docs/user-guide/scripting/script-events/) |
+| Script Events | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🟠 Volatile | 🟢 Optimized | All | | [Link](https://www.o3de.org/docs/user-guide/scripting/script-events/) |
 | Script Canvas Testing | 🟢 Complete | 🟡 Partial | ⭕ Not Required | 🟠 Volatile | 🟢 Optimized | Windows Linux MacOS  | | |
-| Lua Editor | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🟢 Stable | 🔴 Needs Testing | Windows Linux MacOS  | | [Link](https://www.o3de.org/docs/user-guide/scripting/lua/) |
+| Lua Editor | 🟢 Complete | 🟡 Partial | ⭕ Not Required | 🟠 Volatile | 🔴 Needs Testing | Windows Linux MacOS  | | [Link](https://www.o3de.org/docs/user-guide/scripting/lua/) |
 
 ### User Interface 
 
 | Module | Feature | Functional | Content | Code/API | Performance | Platform | Github Link | Doc Link |
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| LyShine (2D Render) | 🟡 Active | 🟢 Complete | 🟢 Complete | 🟢 Stable | 🔴 Needs Testing | Windows Linux MacOS  | | |
+| LyShine (2D Render) | 🟢 Complete | 🟢 Complete | 🟢 Complete | 🟢 Stable | 🔴 Needs Testing | Windows Linux MacOS  | | |
 
 ### World Building 
 
@@ -98,15 +106,15 @@ For an up-to-date feature grid and full notes, open the [Feature State Form](htt
 
 | Module | Feature | Functional | Content | Code/API | Performance | Platform | Github Link | Doc Link |
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Manipulators | 🟡 Active | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🔴 Needs Testing | Windows Linux MacOS  | | |
-| Component Mode | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🔵 In Progress | 🔴 Needs Testing | Windows Linux MacOS  | | |
-| Viewport UI | 🟡 Active | 🟠 Minimal | ⭕ Not Required | 🔵 In Progress | 🔴 Needs Testing | Windows Linux MacOS  | | |
+| Manipulators | 🟡 Active | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | Windows Linux MacOS  | | |
+| Component Mode | 🟡 Active | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | Windows Linux MacOS  | | |
+| Viewport UI | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🟢 Stable | 🟡 Needs Optimization | Windows Linux MacOS  | | |
 | Interaction Model | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | Windows Linux MacOS  | | |
-| Camera | 🟡 Active | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🔴 Needs Testing | Windows Linux MacOS  | | |
-| View Bookmarks | 🟡 Active | 🟠 Minimal | ⭕ Not Required | 🟡 Experimental | 🔴 Needs Testing | Windows Linux MacOS  | | |
-| Manipulator Test Framework | 🟢 Complete | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🔴 Needs Testing | Windows Linux MacOS  | | |
+| Camera | 🟡 Active | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🔵 In Progress | Windows Linux MacOS  | | |
+| View Bookmarks | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🟡 Experimental | 🔵 In Progress | Windows Linux MacOS  | | |
+| Manipulator Test Framework | 🟢 Complete | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | Windows Linux MacOS  | | |
 | Visibility | 🟢 Complete | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🟢 Optimized | Windows Linux MacOS  | | |
-| Editor Mode Visual Feedback | 🟡 Active | 🟠 Minimal | ⭕ Not Required | 🟡 Experimental | 🔵 In Progress | Windows Linux MacOS  | | |
+| Editor Mode Visual Feedback | 🟡 Active | 🟡 Partial | ⭕ Not Required | 🟡 Experimental | 🔵 In Progress | Windows Linux MacOS  | | |
 
 ### White Box Tool 
 
@@ -315,7 +323,7 @@ For an up-to-date feature grid and full notes, open the [Feature State Form](htt
 | Android | 🟢 Complete | 🟢 Complete | | | | | | |
 | Linux | 🟢 Complete | 🟢 Complete | | | | | | |
 
-## SIG-Content 
+## SIG-Simulation
 
 ### Animation 
 
