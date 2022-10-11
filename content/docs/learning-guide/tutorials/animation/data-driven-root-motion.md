@@ -18,7 +18,7 @@ Root motion can be *code driven* or *data driven*, The focus of this tutorial is
 
 ### Code driven
 
-For code driven root motion, the actor's animation cycles happen in place and any movement off the scene origin is provided by code (such as a script). The actor runs, walks, or jumps in place and the script provides the appropriate directional movement.
+For code driven root motion, the actor's animation cycles happen in place, and any movement off the scene origin is provided by code (such as a script). The actor runs, walks, or jumps in place, and the script provides the appropriate directional movement.
 
 The following movie demonstrates a forward run cycle created for code driven root motion:
 
