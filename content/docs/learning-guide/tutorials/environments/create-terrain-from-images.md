@@ -193,7 +193,7 @@ The following properties are closely related and might require special attention
 
 * The **Dimensions** property of the **Axis Aligned Box Shape** component specifies the terrain area. The **Dimensions: Z** property, in particular, specifies the height of the terrain. Its value should not exceed the range defined in the **Terrain World** level component by the **Min Height** and **Max Height** properties.
 
-* The **Translate** property of the **Transform** component of the Terrain Spawner entity places the terrain entity in the level. The translate position of the Terrain Spawner entity is at the center of the box shape that defines the terrain area. This means that if the box shape is a 512 unit cube, and the **Translate** property is `0.0` on each axis, then the terrain extends 256 units in each direction from the origin of the level. Care should be taken to ensure that the **Translate: Z** value places the box shape within the range defined by the **Min Height** and **Max Height** properties of the **Terrain World** level component.
+* The **Translate** property of the **Transform** component of the Terrain Spawner entity places the terrain entity in the level. The translate position of the Terrain Spawner entity is at the center of the box shape that defines the terrain area. This means that if the box shape is a 512 unit cube, and the **Translate** property is `0.0` on each axis, then the terrain extends 256 units in each direction from the origin of the level. Be careful to ensure that the **Translate: Z** value places the box shape within the range defined by the **Min Height** and **Max Height** properties of the **Terrain World** level component.
 
 ## Apply terrain materials
 
