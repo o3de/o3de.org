@@ -56,7 +56,7 @@ The data in data driven root motion is usually keyframe animation applied to the
 * The root bone is connected to the actor's pelvis bone (or some relative bone on an actor that isn't a biped).
 * Any motion that moves the actor off the scene origin is keyframed on the root bone.
 
-### Check actor set up
+### Check actor setup
 
 To determine if the actor has a root bone with animation, do the following:
 
