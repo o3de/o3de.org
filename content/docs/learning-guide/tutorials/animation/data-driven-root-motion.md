@@ -120,7 +120,7 @@ The following table provides additional detail on the options provided by the Ro
 
 | Option | Description |
 | - | - |
-| **Sample Joint** | The bone that root motion is extracted from. Usually this is the hip or pelvis (or some relative bone for actors that aren't bipeds). |
+| **Sample Joint** | The bone that root motion is extracted from. Usually, this is the hip or pelvis (or some relative bone for actors that aren't bipeds). |
 | **Ignore X-Axis transition** | When enabled, X-axis translations aren't extracted. The X translation of the root motion is set to `0.0`. |
 | **Ignore Y-Axis transition** | When enabled, Y-axis translations aren't extracted. The Y translation of the root motion is set to `0.0`. |
 | **Rotation extraction** | When enabled, rotations are also extracted for the root motion. |
