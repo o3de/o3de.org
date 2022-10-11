@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,6 +46,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
@@ -57,17 +58,28 @@ $(function() {
 
 <p><code>#include &lt;ProcesedObjectStore.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_processed_object_store_1_1_asset_smart_ptr_deleter.html">AssetSmartPtrDeleter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a65fc5fa96562205ab3e2dfdf26b10a03"><td class="memItemLeft" align="right" valign="top"><a id="a65fc5fa96562205ab3e2dfdf26b10a03"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>SerializerFunction</b> = AZStd::function&lt; bool(AZStd::vector&lt; uint8_t &gt; &amp;, const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_processed_object_store.html">ProcessedObjectStore</a> &amp;)&gt;</td></tr>
 <tr class="separator:a65fc5fa96562205ab3e2dfdf26b10a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b4eef1c41c200b85db41e1b4d8c8f8"><td class="memItemLeft" align="right" valign="top"><a id="a67b4eef1c41c200b85db41e1b4d8c8f8"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>AssetSmartPtr</b> = AZStd::unique_ptr&lt; AZ::Data::AssetData, <a class="el" href="struct_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_processed_object_store_1_1_asset_smart_ptr_deleter.html">AssetSmartPtrDeleter</a> &gt;</td></tr>
+<tr class="separator:a67b4eef1c41c200b85db41e1b4d8c8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a16766f30f4b5abc27983b5801d86e2f2"><td class="memItemLeft" align="right" valign="top"><a id="a16766f30f4b5abc27983b5801d86e2f2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Serialize</b> (AZStd::vector&lt; uint8_t &gt; &amp;output) const</td></tr>
 <tr class="separator:a16766f30f4b5abc27983b5801d86e2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a497e948a6282e7d63b952e1400e33b49"><td class="memItemLeft" align="right" valign="top"><a id="a497e948a6282e7d63b952e1400e33b49"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubId</b> () const</td></tr>
+<tr class="separator:a497e948a6282e7d63b952e1400e33b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69046e55340110598ce7eb13ee244c88"><td class="memItemLeft" align="right" valign="top"><a id="a69046e55340110598ce7eb13ee244c88"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasAsset</b> () const</td></tr>
 <tr class="separator:a69046e55340110598ce7eb13ee244c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -80,9 +92,9 @@ const AZ::Data::AssetData &amp;&#160;</td><td class="memItemRight" valign="botto
 <tr class="memitem:a55d2b8fd1e82a8352ed0b7c8abf76e5b"><td class="memItemLeft" align="right" valign="top"><a id="a55d2b8fd1e82a8352ed0b7c8abf76e5b"></a>
 AZ::Data::AssetData &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAsset</b> ()</td></tr>
 <tr class="separator:a55d2b8fd1e82a8352ed0b7c8abf76e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3acb2b8907375f2c6d3cb5350304147f"><td class="memItemLeft" align="right" valign="top"><a id="a3acb2b8907375f2c6d3cb5350304147f"></a>
-AZStd::unique_ptr&lt; AZ::Data::AssetData &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseAsset</b> ()</td></tr>
-<tr class="separator:a3acb2b8907375f2c6d3cb5350304147f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa25b6f81e0447b307c61c166d11ce85"><td class="memItemLeft" align="right" valign="top"><a id="aaa25b6f81e0447b307c61c166d11ce85"></a>
+AssetSmartPtr&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseAsset</b> ()</td></tr>
+<tr class="separator:aaa25b6f81e0447b307c61c166d11ce85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af657c4d208f798722fe011ba1b519178"><td class="memItemLeft" align="right" valign="top"><a id="af657c4d208f798722fe011ba1b519178"></a>
 AZStd::vector&lt; AZ::Data::Asset&lt; AZ::Data::AssetData &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetReferencedAssets</b> ()</td></tr>
 <tr class="separator:af657c4d208f798722fe011ba1b519178"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,7 +175,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:40 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:34 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

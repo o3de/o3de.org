@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -62,7 +62,7 @@ $(function() {
 
 <p>Inherits EBusTraits.</p>
 
-<p>Inherited by UnitTest::TestDebugDisplayRequests.</p>
+<p>Inherited by UnitTest::NullDebugDisplayRequests, and UnitTest::TestDebugDisplayRequests.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -72,15 +72,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>BusIdType</b> = AZ::
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9fa802dcaddd23ca644651ec3550a7d9"><td class="memItemLeft" align="right" valign="top"><a id="a9fa802dcaddd23ca644651ec3550a7d9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetColor</b> (float r, float g, float b, float a=1.f)</td></tr>
-<tr class="separator:a9fa802dcaddd23ca644651ec3550a7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab24126179e1bbe8af2f9e8a9eb3046b9"><td class="memItemLeft" align="right" valign="top"><a id="ab24126179e1bbe8af2f9e8a9eb3046b9"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetColor</b> (const AZ::Color &amp;color)</td></tr>
 <tr class="separator:ab24126179e1bbe8af2f9e8a9eb3046b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14cad7d7cb625afbaa16fc87378871ce"><td class="memItemLeft" align="right" valign="top"><a id="a14cad7d7cb625afbaa16fc87378871ce"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetColor</b> (const AZ::Vector4 &amp;color)</td></tr>
-<tr class="separator:a14cad7d7cb625afbaa16fc87378871ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42507380e1309c5c86a36ec7519e2980"><td class="memItemLeft" align="right" valign="top"><a id="a42507380e1309c5c86a36ec7519e2980"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAlpha</b> (float a)</td></tr>
 <tr class="separator:a42507380e1309c5c86a36ec7519e2980"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +129,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawLines</b>
 <tr class="memitem:a7299640e13f0236b201cf76e36f0c1cd"><td class="memItemLeft" align="right" valign="top"><a id="a7299640e13f0236b201cf76e36f0c1cd"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawPolyLine</b> (const AZ::Vector3 *pnts, int numPoints, bool cycled=true)</td></tr>
 <tr class="separator:a7299640e13f0236b201cf76e36f0c1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7860b7ebfd8310a758ff14633fe64a82"><td class="memItemLeft" align="right" valign="top"><a id="a7860b7ebfd8310a758ff14633fe64a82"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawPolyLine</b> (AZStd::span&lt; const AZ::Vector3 &gt; points, bool cycled=true)</td></tr>
+<tr class="separator:a7860b7ebfd8310a758ff14633fe64a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acde8d2ba1d0907dd99e4779fc8e1a344"><td class="memItemLeft" align="right" valign="top"><a id="acde8d2ba1d0907dd99e4779fc8e1a344"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawWireQuad2d</b> (const AZ::Vector2 &amp;p1, const AZ::Vector2 &amp;p2, float z)</td></tr>
 <tr class="separator:acde8d2ba1d0907dd99e4779fc8e1a344"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -279,7 +276,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:11 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

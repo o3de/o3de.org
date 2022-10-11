@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,6 +46,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_a_z_1_1_r_h_i_1_1_frame_graph_execute_group_1_1_init_merged_request-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -55,17 +56,22 @@ $(function() {
 
 <p><code>#include &lt;FrameGraphExecuteGroup.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_graph_execute_group_1_1_init_merged_request_1_1_scope_entry.html">ScopeEntry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a8c52aa9e60bf113162c0f7d11622c914"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html">CommandList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_graph_execute_group_1_1_init_merged_request.html#a8c52aa9e60bf113162c0f7d11622c914">m_commandList</a> = nullptr</td></tr>
 <tr class="separator:a8c52aa9e60bf113162c0f7d11622c914"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ca42798f37e8e078c93040324f43df"><td class="memItemLeft" align="right" valign="top"><a id="a35ca42798f37e8e078c93040324f43df"></a>
-const ScopeId *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_graph_execute_group_1_1_init_merged_request.html#a35ca42798f37e8e078c93040324f43df">m_scopeIds</a> = nullptr</td></tr>
-<tr class="memdesc:a35ca42798f37e8e078c93040324f43df"><td class="mdescLeft">&#160;</td><td class="mdescRight">An ordered list of scope ids in the group. <br /></td></tr>
-<tr class="separator:a35ca42798f37e8e078c93040324f43df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a886735b1493cad72287c45e7c3273e59"><td class="memItemLeft" align="right" valign="top"><a id="a886735b1493cad72287c45e7c3273e59"></a>
+const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_graph_execute_group_1_1_init_merged_request_1_1_scope_entry.html">ScopeEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_graph_execute_group_1_1_init_merged_request.html#a886735b1493cad72287c45e7c3273e59">m_scopeEntries</a> = nullptr</td></tr>
+<tr class="memdesc:a886735b1493cad72287c45e7c3273e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">An ordered list of scope ids and submit counts in the group. <br /></td></tr>
+<tr class="separator:a886735b1493cad72287c45e7c3273e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae06a44ff5585395c27a62e77e072c33a"><td class="memItemLeft" align="right" valign="top"><a id="ae06a44ff5585395c27a62e77e072c33a"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_graph_execute_group_1_1_init_merged_request.html#ae06a44ff5585395c27a62e77e072c33a">m_scopeCount</a> = 0</td></tr>
-<tr class="memdesc:ae06a44ff5585395c27a62e77e072c33a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of scopes in the scope id array. <br /></td></tr>
+<tr class="memdesc:ae06a44ff5585395c27a62e77e072c33a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of scopes in the <a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_graph_execute_group_1_1_init_merged_request_1_1_scope_entry.html">ScopeEntry</a> array. <br /></td></tr>
 <tr class="separator:ae06a44ff5585395c27a62e77e072c33a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -92,7 +98,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:26 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:20 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

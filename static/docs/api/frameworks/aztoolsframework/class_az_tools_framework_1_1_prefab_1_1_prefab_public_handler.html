@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -81,10 +81,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
 <tr class="separator:a742cfb08b34bce17cd2518d345259232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a914ff0b372f3f55133deb5bf5eb6689b"><td class="memItemLeft" align="right" valign="top">PrefabOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a914ff0b372f3f55133deb5bf5eb6689b">GenerateUndoNodesForEntityChangeAndUpdateCache</a> (AZ::EntityId entityId, <a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point.html">UndoSystem::URSequencePoint</a> *parentUndoBatch) override</td></tr>
 <tr class="separator:a914ff0b372f3f55133deb5bf5eb6689b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9b4da44048053f031822dee0680b29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a3d9b4da44048053f031822dee0680b29">IsOwnedByProceduralPrefabInstance</a> (AZ::EntityId entityId) const override</td></tr>
+<tr class="separator:a3d9b4da44048053f031822dee0680b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e633dc0a04a6a5e09ce7a45570cf5a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a1e633dc0a04a6a5e09ce7a45570cf5a7">IsInstanceContainerEntity</a> (AZ::EntityId entityId) const override</td></tr>
 <tr class="separator:a1e633dc0a04a6a5e09ce7a45570cf5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97b64ffb7c6e07e5d4553652e5a31e92"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a97b64ffb7c6e07e5d4553652e5a31e92">IsLevelInstanceContainerEntity</a> (AZ::EntityId entityId) const override</td></tr>
 <tr class="separator:a97b64ffb7c6e07e5d4553652e5a31e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8567b5f0d5c35d92d1408a8054c5bd3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#af8567b5f0d5c35d92d1408a8054c5bd3">EntitiesBelongToSameInstance</a> (const EntityIdList &amp;entityIds) const</td></tr>
+<tr class="separator:af8567b5f0d5c35d92d1408a8054c5bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a156116c90d765436e72cf5486687f00b"><td class="memItemLeft" align="right" valign="top">AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a156116c90d765436e72cf5486687f00b">GetInstanceContainerEntityId</a> (AZ::EntityId entityId) const override</td></tr>
 <tr class="separator:a156116c90d765436e72cf5486687f00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87c279fcef8846b1c7b3be75cc3e8335"><td class="memItemLeft" align="right" valign="top">AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a87c279fcef8846b1c7b3be75cc3e8335">GetLevelInstanceContainerEntityId</a> () const override</td></tr>
@@ -93,8 +97,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
 <tr class="separator:a39a125207d55c584d26e87056dad2ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea780e346eb390aabc4dfbc340e4a68e"><td class="memItemLeft" align="right" valign="top">PrefabRequestResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#aea780e346eb390aabc4dfbc340e4a68e">HasUnsavedChanges</a> (AZ::IO::Path prefabFilePath) const override</td></tr>
 <tr class="separator:aea780e346eb390aabc4dfbc340e4a68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04707ababae69a7792cce8722d15d428"><td class="memItemLeft" align="right" valign="top">PrefabOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a04707ababae69a7792cce8722d15d428">DeleteEntitiesInInstance</a> (const EntityIdList &amp;entityIds) override</td></tr>
-<tr class="separator:a04707ababae69a7792cce8722d15d428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25fee666ba2405cc315469d2c177fc31"><td class="memItemLeft" align="right" valign="top">PrefabOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a25fee666ba2405cc315469d2c177fc31">DeleteEntitiesAndAllDescendantsInInstance</a> (const EntityIdList &amp;entityIds) override</td></tr>
 <tr class="separator:a25fee666ba2405cc315469d2c177fc31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23361b138f4ddc0bd8ccf1fe2704b273"><td class="memItemLeft" align="right" valign="top">DuplicatePrefabResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a23361b138f4ddc0bd8ccf1fe2704b273">DuplicateEntitiesInInstance</a> (const EntityIdList &amp;entityIds) override</td></tr>
@@ -281,41 +283,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
 
 </div>
 </div>
-<a id="a04707ababae69a7792cce8722d15d428"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04707ababae69a7792cce8722d15d428">&#9670;&nbsp;</a></span>DeleteEntitiesInInstance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">PrefabOperationResult AzToolsFramework::Prefab::PrefabPublicHandler::DeleteEntitiesInInstance </td>
-          <td>(</td>
-          <td class="paramtype">const EntityIdList &amp;&#160;</td>
-          <td class="paramname"><em>entityIds</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Deletes all entities from the owning instance. Bails if the entities don't all belong to the same instance. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entities</td><td>The entities to delete. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An outcome object; on failure, it comes with an error message detailing the cause of the error. </dd></dl>
-
-<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#aa0ba70d009f5b243fdb692825c2c67e4">AzToolsFramework::Prefab::PrefabPublicInterface</a>.</p>
-
-</div>
-</div>
 <a id="aa62063527bd49e5825997901c1f9fc49"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa62063527bd49e5825997901c1f9fc49">&#9670;&nbsp;</a></span>DetachPrefab()</h2>
 
@@ -383,6 +350,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
 <dl class="section return"><dt>Returns</dt><dd>An outcome object with a list of ids of target entities' duplicates if duplication succeeded; on failure, it comes with an error message detailing the cause of the error. </dd></dl>
 
 <p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a4c5c22d0cbd15c86a97e523a616fad2d">AzToolsFramework::Prefab::PrefabPublicInterface</a>.</p>
+
+</div>
+</div>
+<a id="af8567b5f0d5c35d92d1408a8054c5bd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8567b5f0d5c35d92d1408a8054c5bd3">&#9670;&nbsp;</a></span>EntitiesBelongToSameInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzToolsFramework::Prefab::PrefabPublicHandler::EntitiesBelongToSameInstance </td>
+          <td>(</td>
+          <td class="paramtype">const EntityIdList &amp;&#160;</td>
+          <td class="paramname"><em>entityIds</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Detects if a list of entities are under the same instance. The instance of a container entity is special cased to be the parent instance of its instance. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityIds</td><td>The list of entities to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if all entities in the list have the same instance, false otherwise. </dd></dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a4d47507aaa4c0f5df5bcaf9d3a4be9dc">AzToolsFramework::Prefab::PrefabPublicInterface</a>.</p>
 
 </div>
 </div>
@@ -689,6 +691,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
 
 </div>
 </div>
+<a id="a3d9b4da44048053f031822dee0680b29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9b4da44048053f031822dee0680b29">&#9670;&nbsp;</a></span>IsOwnedByProceduralPrefabInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzToolsFramework::Prefab::PrefabPublicHandler::IsOwnedByProceduralPrefabInstance </td>
+          <td>(</td>
+          <td class="paramtype">AZ::EntityId&#160;</td>
+          <td class="paramname"><em>entityId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Detects if an entity is owned by a procedural prefab. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityId</td><td>The entity to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the entity is owned by a procedural prefab instance, false otherwise. </dd></dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a899e006ae59a57e858086a9e49688905">AzToolsFramework::Prefab::PrefabPublicInterface</a>.</p>
+
+</div>
+</div>
 <a id="aa62eafa9d157e2013f22fc895398651d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa62eafa9d157e2013f22fc895398651d">&#9670;&nbsp;</a></span>SavePrefab()</h2>
 
@@ -730,7 +767,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:40 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:33 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

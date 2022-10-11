@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -56,21 +56,24 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1c9239c798c6836d2cac9f5f74bb76cd"><td class="memItemLeft" align="right" valign="top"><a id="a1c9239c798c6836d2cac9f5f74bb76cd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ExecutionStateConfig</b> (AZ::Data::Asset&lt; <a class="el" href="class_script_canvas_1_1_runtime_asset.html">RuntimeAsset</a> &gt; asset, <a class="el" href="class_script_canvas_1_1_runtime_component.html">RuntimeComponent</a> &amp;component)</td></tr>
-<tr class="separator:a1c9239c798c6836d2cac9f5f74bb76cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82223e4f098c381252f12c2038d5ec9b"><td class="memItemLeft" align="right" valign="top"><a id="a82223e4f098c381252f12c2038d5ec9b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ExecutionStateConfig</b> (const <a class="el" href="struct_script_canvas_1_1_runtime_data_overrides.html">RuntimeDataOverrides</a> &amp;overrides)</td></tr>
+<tr class="separator:a82223e4f098c381252f12c2038d5ec9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a24713c34b9cf95a49142c89de176c"><td class="memItemLeft" align="right" valign="top"><a id="a71a24713c34b9cf95a49142c89de176c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ExecutionStateConfig</b> (const <a class="el" href="struct_script_canvas_1_1_runtime_data_overrides.html">RuntimeDataOverrides</a> &amp;overrides, ExecutionUserData &amp;&amp;userData)</td></tr>
+<tr class="separator:a71a24713c34b9cf95a49142c89de176c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a15fa0733d2cf9d7b266625ebfcf5fd54"><td class="memItemLeft" align="right" valign="top"><a id="a15fa0733d2cf9d7b266625ebfcf5fd54"></a>
-AZ::Data::Asset&lt; <a class="el" href="class_script_canvas_1_1_runtime_asset.html">RuntimeAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>asset</b></td></tr>
-<tr class="separator:a15fa0733d2cf9d7b266625ebfcf5fd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79ef4c206c02f0d046198874e7afe6cf"><td class="memItemLeft" align="right" valign="top"><a id="a79ef4c206c02f0d046198874e7afe6cf"></a>
-<a class="el" href="class_script_canvas_1_1_runtime_component.html">RuntimeComponent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>component</b></td></tr>
-<tr class="separator:a79ef4c206c02f0d046198874e7afe6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6139a507cce2a2f398740efa8826e78"><td class="memItemLeft" align="right" valign="top"><a id="ab6139a507cce2a2f398740efa8826e78"></a>
 const <a class="el" href="struct_script_canvas_1_1_runtime_data.html">RuntimeData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>runtimeData</b></td></tr>
 <tr class="separator:ab6139a507cce2a2f398740efa8826e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8ef21c6fee1361f823ee54a7862e66"><td class="memItemLeft" align="right" valign="top"><a id="abe8ef21c6fee1361f823ee54a7862e66"></a>
+const <a class="el" href="struct_script_canvas_1_1_runtime_data_overrides.html">RuntimeDataOverrides</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>overrides</b></td></tr>
+<tr class="separator:abe8ef21c6fee1361f823ee54a7862e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace4544165b042ab63cb9bd4dd1261fa1"><td class="memItemLeft" align="right" valign="top"><a id="ace4544165b042ab63cb9bd4dd1261fa1"></a>
+ExecutionUserData &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><b>userData</b></td></tr>
+<tr class="separator:ace4544165b042ab63cb9bd4dd1261fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Gems/ScriptCanvas/Code/Include/ScriptCanvas/Execution/ExecutionState.h</li>
@@ -78,7 +81,7 @@ const <a class="el" href="struct_script_canvas_1_1_runtime_data.html">RuntimeDat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:03 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:30 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -152,10 +152,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a9c0e205191fe752c42aaee31c8dcbaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5c237e48be10530a004a241194b1765"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_entity.html#af0457fa3365aa49daa432ced422a15f2">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_entity.html#aa5c237e48be10530a004a241194b1765">GetState</a> () const</td></tr>
 <tr class="separator:aa5c237e48be10530a004a241194b1765"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a269916f323bcca646bbe79d559976ea4"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_entity.html#a269916f323bcca646bbe79d559976ea4">GetSpawnTicketId</a> () const</td></tr>
-<tr class="separator:a269916f323bcca646bbe79d559976ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f1cd7120d47c386b1b3e7a594b72348"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_entity.html#a9f1cd7120d47c386b1b3e7a594b72348">SetSpawnTicketId</a> (u32 spawnTicketId)</td></tr>
-<tr class="separator:a9f1cd7120d47c386b1b3e7a594b72348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722377727eee6c27e3620552be55578a"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_entity.html#a722377727eee6c27e3620552be55578a">GetEntitySpawnTicketId</a> () const</td></tr>
+<tr class="separator:a722377727eee6c27e3620552be55578a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a370e34024192f8a85c2d14ad22460272"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_entity.html#a370e34024192f8a85c2d14ad22460272">SetEntitySpawnTicketId</a> (u32 entitySpawnTicketId)</td></tr>
+<tr class="separator:a370e34024192f8a85c2d14ad22460272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6883ed32f42dbf83d80030e0385903f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_entity.html#af6883ed32f42dbf83d80030e0385903f">AddStateEventHandler</a> (<a class="el" href="class_a_z_1_1_event_handler.html">EntityStateEvent::Handler</a> &amp;handler)</td></tr>
 <tr class="separator:af6883ed32f42dbf83d80030e0385903f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21249e2c8a73d831ffa36188fe38224b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_entity.html#a21249e2c8a73d831ffa36188fe38224b">SetId</a> (const <a class="el" href="class_a_z_1_1_entity_id.html">EntityId</a> &amp;id)</td></tr>
@@ -256,9 +256,9 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_entity.html#ab7cbf8da50429fd992a63724578d3999">m_name</a></td></tr>
 <tr class="memdesc:ab7cbf8da50429fd992a63724578d3999"><td class="mdescLeft">&#160;</td><td class="mdescRight">A user-friendly name for the entity. This makes error messages easier to read. <br /></td></tr>
 <tr class="separator:ab7cbf8da50429fd992a63724578d3999"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a217ea55c2dcc78d44bef67e95cb3c54a"><td class="memItemLeft" align="right" valign="top"><a id="a217ea55c2dcc78d44bef67e95cb3c54a"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_spawnTicketId</b> = 0</td></tr>
-<tr class="separator:a217ea55c2dcc78d44bef67e95cb3c54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f8b1059763921241282c3fc62e138a"><td class="memItemLeft" align="right" valign="top"><a id="a56f8b1059763921241282c3fc62e138a"></a>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_entitySpawnTicketId</b> = 0</td></tr>
+<tr class="separator:a56f8b1059763921241282c3fc62e138a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37d8754ac44839711096162a9b6cbf7d"><td class="memItemLeft" align="right" valign="top"><a id="a37d8754ac44839711096162a9b6cbf7d"></a>
 <a class="el" href="class_a_z_1_1_entity.html#af0457fa3365aa49daa432ced422a15f2">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_entity.html#a37d8754ac44839711096162a9b6cbf7d">m_state</a></td></tr>
 <tr class="memdesc:a37d8754ac44839711096162a9b6cbf7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The state of the entity. <br /></td></tr>
@@ -886,6 +886,24 @@ template&lt;class ComponentType &gt; </div>
 
 </div>
 </div>
+<a id="a722377727eee6c27e3620552be55578a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a722377727eee6c27e3620552be55578a">&#9670;&nbsp;</a></span>GetEntitySpawnTicketId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 AZ::Entity::GetEntitySpawnTicketId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the ticket id used to spawn the entity. </p><dl class="section return"><dt>Returns</dt><dd>the ticket id used to spawn the entity. If entity is not spawned, the id will be 0. </dd></dl>
+
+</div>
+</div>
 <a id="a7ef8899081408ae18c47aef329370567"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ef8899081408ae18c47aef329370567">&#9670;&nbsp;</a></span>GetId()</h2>
 
@@ -963,24 +981,6 @@ template&lt;class ComponentType &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Gets the Process Signature of the local machine. </p><dl class="section return"><dt>Returns</dt><dd>The Process Signature of the local machine. </dd></dl>
-
-</div>
-</div>
-<a id="a269916f323bcca646bbe79d559976ea4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a269916f323bcca646bbe79d559976ea4">&#9670;&nbsp;</a></span>GetSpawnTicketId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">u32 AZ::Entity::GetSpawnTicketId </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Gets the ticket id used to spawn the entity. </p><dl class="section return"><dt>Returns</dt><dd>the ticket id used to spawn the entity. If entity is not spawned, the id will be 0. </dd></dl>
 
 </div>
 </div>
@@ -1174,6 +1174,30 @@ template&lt;class ComponentType &gt; </div>
 
 </div>
 </div>
+<a id="a370e34024192f8a85c2d14ad22460272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a370e34024192f8a85c2d14ad22460272">&#9670;&nbsp;</a></span>SetEntitySpawnTicketId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::Entity::SetEntitySpawnTicketId </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>entitySpawnTicketId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the ticket id used to spawn the entity. The ticket id in the entity will remain 0 unless it's set using this function. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entitySpawnTicketId</td><td>the ticket id used to spawn the entity. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a21249e2c8a73d831ffa36188fe38224b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a21249e2c8a73d831ffa36188fe38224b">&#9670;&nbsp;</a></span>SetId()</h2>
 
@@ -1248,30 +1272,6 @@ template&lt;class ComponentType &gt; </div>
 <p>Mark the entity to be activated by default. This is observed automatically by EntityContext, and should be observed by any other custom systems that create and manage entities. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">activeByDefault</td><td>whether the entity should be active by default after creation. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a9f1cd7120d47c386b1b3e7a594b72348"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f1cd7120d47c386b1b3e7a594b72348">&#9670;&nbsp;</a></span>SetSpawnTicketId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::Entity::SetSpawnTicketId </td>
-          <td>(</td>
-          <td class="paramtype">u32&#160;</td>
-          <td class="paramname"><em>spawnTicketId</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sets the ticket id used to spawn the entity. The ticket id in the entity will remain 0 unless it's set using this function. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">spawnTicketId</td><td>the ticket id used to spawn the entity. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1388,7 +1388,7 @@ template&lt;class ComponentType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:43 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

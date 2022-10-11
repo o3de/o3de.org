@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -60,8 +60,8 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_layers_1_1_editor_layer_component.html#a2668821b2ff082fa2ae4039821b7defa">AzToolsFramework::Layers::EditorLayerComponent</a>
 </li>
 <li>Redo()
-: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_undo_entity_update.html#a508fe5d0a2a07d927bcf9414b05d4946">AzToolsFramework::Prefab::PrefabUndoEntityUpdate</a>
-, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_undo_link_update.html#acfe47b9e20800cade8939a42265d49f3">AzToolsFramework::Prefab::PrefabUndoLinkUpdate</a>
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_undo_entity_update.html#a5c80c76fcef1c997bd51c38d25e6316c">AzToolsFramework::Prefab::PrefabUndoEntityUpdate</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_undo_link_update.html#a826474b6d0ea6341e3501b201d956b60">AzToolsFramework::Prefab::PrefabUndoLinkUpdate</a>
 </li>
 <li>RedoPressed()
 : <a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#aafed6af0dfa6a2063e665567e79231c9">AzToolsFramework::ToolsApplicationRequests</a>
@@ -95,6 +95,14 @@ $(function() {
 <li>RefreshMouseOverState()
 : <a class="el" href="class_az_tools_framework_1_1_manipulator_manager.html#ab39367d93484377bf5d73c69f2662e2a">AzToolsFramework::ManipulatorManager</a>
 </li>
+<li>RefreshReadOnlyState()
+: <a class="el" href="class_az_tools_framework_1_1_read_only_entity_query_interface.html#a41a52bc9df6f5141d2ce45e53bc2c58b">AzToolsFramework::ReadOnlyEntityQueryInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_read_only_entity_system_component.html#a4d7dff43fd912543c72f8bbe37e783ae">AzToolsFramework::ReadOnlyEntitySystemComponent</a>
+</li>
+<li>RefreshReadOnlyStateForAllEntities()
+: <a class="el" href="class_az_tools_framework_1_1_read_only_entity_query_interface.html#ac6bcac73b1bbc21abd21d98077e6e5ce">AzToolsFramework::ReadOnlyEntityQueryInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_read_only_entity_system_component.html#a2b66059cfdb95dc33b8e0a55caa8ce1d">AzToolsFramework::ReadOnlyEntitySystemComponent</a>
+</li>
 <li>RefreshSpace()
 : <a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#a0253d50d9e294a642b73f2237e6543af">AzToolsFramework::EditorVertexSelectionBase&lt; Vertex &gt;</a>
 </li>
@@ -102,8 +110,7 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#ad75e9b1fc93c70f4e8770f680b5f7329">AzToolsFramework::EditorVertexSelectionBase&lt; Vertex &gt;</a>
 </li>
 <li>RefreshView()
-: <a class="el" href="class_az_tools_framework_1_1_manipulators.html#a07dd42358f5b2853d987f6d42cfc2945">AzToolsFramework::Manipulators</a>
-, <a class="el" href="class_az_tools_framework_1_1_rotation_manipulators.html#a252d4c90e3b345460ae07f5f78471a01">AzToolsFramework::RotationManipulators</a>
+: <a class="el" href="class_az_tools_framework_1_1_manipulators.html#ae6861deee6fee350912eb70822e8962e">AzToolsFramework::Manipulators</a>
 </li>
 <li>RefreshVisibilityAndLock()
 : <a class="el" href="class_az_tools_framework_1_1_component_entity_editor_requests.html#a717d20da05124c0da72975ef4d8e4baa">AzToolsFramework::ComponentEntityEditorRequests</a>
@@ -111,17 +118,30 @@ $(function() {
 <li>Register()
 : <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#a64b09c78961394a3dd617bd4b3b50c21">AzToolsFramework::BaseManipulator</a>
 </li>
+<li>RegisterAction()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#ad2e80928418659f645f97b35fde5b84f">AzToolsFramework::ActionManagerInterface</a>
+</li>
+<li>RegisterActionContext()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#a2095b95eeda8c8ef6c78548cce8134aa">AzToolsFramework::ActionManagerInterface</a>
+</li>
+<li>RegisterActionUpdater()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#aaf7055df9c026856add3f23840853203">AzToolsFramework::ActionManagerInterface</a>
+</li>
+<li>RegisterCheckableAction()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#a57346338c4798dd40b6dd9ccae753a73">AzToolsFramework::ActionManagerInterface</a>
+</li>
 <li>RegisterClusterEventHandler()
 : <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#ad4de399556b06a8c4def544e684dc8b0">AzToolsFramework::ViewportUi::ViewportUiRequests</a>
-</li>
-<li>RegisterContext()
-: <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#ae4aa16cc0d12c72502983637c42cf3d6">AzToolsFramework::Thumbnailer::ThumbnailerRequests</a>
 </li>
 <li>RegisterCoreComponents()
 : <a class="el" href="class_legacy_framework_1_1_application.html#ae535398913becf4b94fc673a911aa456">LegacyFramework::Application</a>
 </li>
 <li>RegisterCustomViewPane()
 : <a class="el" href="class_az_tools_framework_1_1_editor_requests.html#afa9182ae44a993e3addb244912e02f33">AzToolsFramework::EditorRequests</a>
+</li>
+<li>RegisterDpeHandler()
+: <a class="el" href="class_az_tools_framework_1_1_generic_property_handler.html#aafe02dde919a6bb1731cf9fa62907370">AzToolsFramework::GenericPropertyHandler&lt; WidgetType &gt;</a>
+, <a class="el" href="class_az_tools_framework_1_1_property_handler_base.html#a86897f4d067cdcc4684d82ea16f3889f">AzToolsFramework::PropertyHandlerBase</a>
 </li>
 <li>Registered()
 : <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#a5ab05af09752c14cbdf57ad7992ec650">AzToolsFramework::BaseManipulator</a>
@@ -130,12 +150,21 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_container_entity_interface.html#a478cead69151bd3ad1f2aea17bceace3">AzToolsFramework::ContainerEntityInterface</a>
 , <a class="el" href="class_az_tools_framework_1_1_container_entity_system_component.html#a7d1b04606ec5cfbc3adb94b75b4b26c1">AzToolsFramework::ContainerEntitySystemComponent</a>
 </li>
+<li>RegisterHandler()
+: <a class="el" href="class_az_tools_framework_1_1_property_editor_tools_system_interface.html#aeb63af8458f768d47931139f083577c9">AzToolsFramework::PropertyEditorToolsSystemInterface</a>
+</li>
 <li>RegisterIPCHandler()
 : <a class="el" href="class_legacy_framework_1_1_i_p_c_command_a_p_i.html#ad783bc7aa3474a2302d323252603bebe">LegacyFramework::IPCCommandAPI</a>
 </li>
 <li>RegisterManipulator()
 : <a class="el" href="class_az_tools_framework_1_1_editor_transform_component_selection.html#a581c42a2143a235ea8d0ec8f0d714b14">AzToolsFramework::EditorTransformComponentSelection</a>
 , <a class="el" href="class_az_tools_framework_1_1_manipulator_manager_requests.html#a8a2bad27c885c346e1ee0280fe5fd841">AzToolsFramework::ManipulatorManagerRequests</a>
+</li>
+<li>RegisterMenu()
+: <a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html#a61c17b8700793b10aaaf3d9cbace54f3">AzToolsFramework::MenuManagerInterface</a>
+</li>
+<li>RegisterMenuBar()
+: <a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html#a39ad04acde8cd755881b22e55a655a3f">AzToolsFramework::MenuManagerInterface</a>
 </li>
 <li>RegisterSourceAssetType()
 : <a class="el" href="class_az_tools_framework_1_1_tools_asset_system_requests.html#a5c145f43ef74e87190836140ab1c1bdb">AzToolsFramework::ToolsAssetSystemRequests</a>
@@ -147,12 +176,17 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a5c078f49b0996f588f0fce0b2256dcfe">AzToolsFramework::ViewportUi::ViewportUiRequests</a>
 </li>
 <li>RegisterThumbnailProvider()
-: <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnail_context.html#a74707b21963e6d1a784718c2bba11ef6">AzToolsFramework::Thumbnailer::ThumbnailContext</a>
-, <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#aa5e0930f138823b7fff10612b2681114">AzToolsFramework::Thumbnailer::ThumbnailerRequests</a>
+: <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#a6c307152978f5b9a4be4c50f79b0895c">AzToolsFramework::Thumbnailer::ThumbnailerRequests</a>
+</li>
+<li>RegisterToolBar()
+: <a class="el" href="class_az_tools_framework_1_1_tool_bar_manager_interface.html#aee8cfb9e60f6809b31e26bc716e50d34">AzToolsFramework::ToolBarManagerInterface</a>
 </li>
 <li>RegisterViewportElementGroup()
 : <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_viewport_ui.html#acd6ac39dd44f8a0b8b49e208519d6ac1">AzToolsFramework::ComponentModeFramework::ComponentModeViewportUi</a>
 , <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_viewport_ui_requests.html#ad2de7f6557cbb74b39e197f265a2aba7">AzToolsFramework::ComponentModeFramework::ComponentModeViewportUiRequests</a>
+</li>
+<li>RegisterWidgetAction()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#a37c3e5183cac828e10886e301250e7f6">AzToolsFramework::ActionManagerInterface</a>
 </li>
 <li>RegisterWindowType()
 : <a class="el" href="class_legacy_framework_1_1_log_component_a_p_i.html#ade827c3fce13633181b1a1f5361997ad">LegacyFramework::LogComponentAPI</a>
@@ -160,11 +194,29 @@ $(function() {
 <li>ReleaseTemplate()
 : <a class="el" href="class_az_tools_framework_1_1_components_1_1_generic_component_wrapper.html#ab4cbf0bd51652324364b07888501b383">AzToolsFramework::Components::GenericComponentWrapper</a>
 </li>
+<li>ReloadTemplateFromFile()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader.html#a15233fd04cfd6d37a0085787e158d21f">AzToolsFramework::Prefab::PrefabLoader</a>
+</li>
+<li>RemoveActionFromMenu()
+: <a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html#adb4e03c0f3daf061c8b8d827a9f51975">AzToolsFramework::MenuManagerInterface</a>
+</li>
+<li>RemoveActionFromToolBar()
+: <a class="el" href="class_az_tools_framework_1_1_tool_bar_manager_interface.html#a877f08eb83f9d30e9718da8b621158b8">AzToolsFramework::ToolBarManagerInterface</a>
+</li>
 <li>RemoveActionOverride()
 : <a class="el" href="class_az_tools_framework_1_1_action_override_requests.html#a7b0d3fd99b66799be69fc067362d137b">AzToolsFramework::ActionOverrideRequests</a>
 </li>
+<li>RemoveActionsFromMenu()
+: <a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html#ac8ffcdf8f4fa37010ea6ad1123bc4d98">AzToolsFramework::MenuManagerInterface</a>
+</li>
+<li>RemoveActionsFromToolBar()
+: <a class="el" href="class_az_tools_framework_1_1_tool_bar_manager_interface.html#ac764c98aaeb8d3d4cb4c33eb767e0072">AzToolsFramework::ToolBarManagerInterface</a>
+</li>
 <li>RemoveActionViaBus()
 : <a class="el" href="class_az_tools_framework_1_1_editor_action_requests.html#ada97a3df430473d03bf316bc191247e4">AzToolsFramework::EditorActionRequests</a>
+</li>
+<li>RemoveAllInMemorySpawnableAssets()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#a1af4480546ae4e7a977a92d137e9f103">AzToolsFramework::Prefab::PrefabPublicRequests</a>
 </li>
 <li>RemoveAllTemplates()
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a0db51cd1aade144c34bf32fdcf86bff5">AzToolsFramework::Prefab::PrefabSystemComponent</a>
@@ -180,19 +232,22 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a9e87a9d25a8c4145245fa59d7b98213b">AzToolsFramework::ToolsApplicationRequests</a>
 </li>
 <li>RemoveEntity()
-: <a class="el" href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction.html#a9e45b8f82a58a880d4777a665d2a6b91">AzToolsFramework::SliceUtilities::SliceTransaction</a>
+: <a class="el" href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction.html#adb633b200e15fe61044622b1d49e6934">AzToolsFramework::SliceUtilities::SliceTransaction</a>
 </li>
 <li>RemoveEntityComponentIdPair()
-: <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#ab269d11658cc640a28d314c3192102d4">AzToolsFramework::BaseManipulator</a>
+: <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#a5bf2ed7c541728d562f6634017dd7973">AzToolsFramework::BaseManipulator</a>
 </li>
 <li>RemoveEntityFromSelection()
 : <a class="el" href="class_az_tools_framework_1_1_editor_transform_component_selection.html#a64556d4883dc6afe159b16150a44de4a">AzToolsFramework::EditorTransformComponentSelection</a>
 </li>
 <li>RemoveEntityId()
-: <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#af6fe716c51263b227c4c19e1f5b81bd0">AzToolsFramework::BaseManipulator</a>
+: <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#af6b5a204c23e9fe2fec8d936c3a1a5ed">AzToolsFramework::BaseManipulator</a>
+</li>
+<li>RemoveInMemorySpawnableAsset()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#aec837e62631b0f2542029fda84c9431a">AzToolsFramework::Prefab::PrefabPublicRequests</a>
 </li>
 <li>RemoveLink()
-: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a0fa0246a3ba09f25f2c2f360617d9626">AzToolsFramework::Prefab::PrefabSystemComponent</a>
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a5105d45da46b3d96b4e28591783c7791">AzToolsFramework::Prefab::PrefabSystemComponent</a>
 </li>
 <li>RemoveMessageFilter()
 : <a class="el" href="class_az_tools_framework_1_1_trace_logger.html#aa49f049129ee0f13377a6d9578707789">AzToolsFramework::TraceLogger</a>
@@ -212,11 +267,24 @@ $(function() {
 <li>RemoveStatement()
 : <a class="el" href="class_az_tools_framework_1_1_s_q_lite_1_1_connection.html#a115a9ce832b39a37e777a326cd4bc215">AzToolsFramework::SQLite::Connection</a>
 </li>
+<li>RemoveSubMenuFromMenu()
+: <a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html#a007f2524a895e01dade5cd73061c55aa">AzToolsFramework::MenuManagerInterface</a>
+</li>
+<li>RemoveSubMenusFromMenu()
+: <a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html#aa79fb6eaa47a288f7c539fb8e58b34be">AzToolsFramework::MenuManagerInterface</a>
+</li>
 <li>RemoveSwitcher()
 : <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a751e44c1b9bfa1c2291d888b3b41d2f5">AzToolsFramework::ViewportUi::ViewportUiRequests</a>
 </li>
+<li>RemoveSwitcherButton()
+: <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a13bb7b800d3620635196479f9d203839">AzToolsFramework::ViewportUi::ViewportUiRequests</a>
+</li>
 <li>RemoveTemplate()
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#abbf6ce5a3c817a137f36182c6bd7d63f">AzToolsFramework::Prefab::PrefabSystemComponent</a>
+</li>
+<li>RemoveTemplateInstanceFromQueue()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html#a3913a3bdb0de93a8c2b1f0dff7cd0051">AzToolsFramework::Prefab::InstanceUpdateExecutor</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#ac86d595f1c4ea2a4ae2aaa497305df8c">AzToolsFramework::Prefab::InstanceUpdateExecutorInterface</a>
 </li>
 <li>RemoveTextField()
 : <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a8a0bb5d02b619565e13a3cdab4f583ab">AzToolsFramework::ViewportUi::ViewportUiRequests</a>
@@ -226,6 +294,9 @@ $(function() {
 </li>
 <li>RemoveWindowFilter()
 : <a class="el" href="class_az_tools_framework_1_1_trace_logger.html#aafee7bec6bf3cec1da3287812f960bbb">AzToolsFramework::TraceLogger</a>
+</li>
+<li>ReplaceEntity()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#ae7e1c2eecd48346129838de76cb7acb7">AzToolsFramework::Prefab::Instance</a>
 </li>
 <li>ReportSliceAssetDependenciesById()
 : <a class="el" href="class_az_tools_framework_1_1_slice_dependency_browser_requests.html#ae626c6f6fe26f9f3963f6358b0fb6a34">AzToolsFramework::SliceDependencyBrowserRequests</a>
@@ -328,7 +399,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:41 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:35 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

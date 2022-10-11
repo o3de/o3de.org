@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -77,6 +77,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_window_requests.html#a6225c98d16892667a43b992ffd4dd160">ResizeClientArea</a> (<a class="el" href="struct_az_framework_1_1_window_size.html">WindowSize</a> clientAreaSize)=0</td></tr>
 <tr class="memdesc:a6225c98d16892667a43b992ffd4dd160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the client area size. This is the size that can be rendered to. <br /></td></tr>
 <tr class="separator:a6225c98d16892667a43b992ffd4dd160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a5271f7d07274bc9e2ecf1098636d2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_window_requests.html#a70a5271f7d07274bc9e2ecf1098636d2">SupportsClientAreaResize</a> () const =0</td></tr>
+<tr class="separator:a70a5271f7d07274bc9e2ecf1098636d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ce7c68d007732ca36de3dcc11bbb14c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_window_requests.html#a6ce7c68d007732ca36de3dcc11bbb14c">GetFullScreenState</a> () const =0</td></tr>
 <tr class="separator:a6ce7c68d007732ca36de3dcc11bbb14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17f93f7d32ca6d6ee7947fc643b6562b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_window_requests.html#a17f93f7d32ca6d6ee7947fc643b6562b">SetFullScreenState</a> (bool fullScreenState)=0</td></tr>
@@ -93,6 +95,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_window_requests.html#a7d70cfa790d83e36e31699169417d238">GetSyncInterval</a> () const =0</td></tr>
 <tr class="memdesc:a7d70cfa790d83e36e31699169417d238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sync interval which tells the drivers the number of v-blanks to synchronize with. <br /></td></tr>
 <tr class="separator:a7d70cfa790d83e36e31699169417d238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb1ae9d8e65132baa5d3e39d3368cf7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_window_requests.html#a4fb1ae9d8e65132baa5d3e39d3368cf7">SetSyncInterval</a> (uint32_t newSyncInterval)=0</td></tr>
+<tr class="separator:a4fb1ae9d8e65132baa5d3e39d3368cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6b3cb7c97e39df9aac7c258fa29027a"><td class="memItemLeft" align="right" valign="top"><a id="aa6b3cb7c97e39df9aac7c258fa29027a"></a>
 virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_window_requests.html#aa6b3cb7c97e39df9aac7c258fa29027a">GetDisplayRefreshRate</a> () const =0</td></tr>
 <tr class="memdesc:aa6b3cb7c97e39df9aac7c258fa29027a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the refresh rate of the main display. <br /></td></tr>
@@ -246,13 +250,66 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
+<a id="a4fb1ae9d8e65132baa5d3e39d3368cf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb1ae9d8e65132baa5d3e39d3368cf7">&#9670;&nbsp;</a></span>SetSyncInterval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AzFramework::WindowRequests::SetSyncInterval </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>newSyncInterval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the sync interval which tells the drivers the number of v-blanks to synchronize with Returns if the sync interval was successfully set </p>
+
+</div>
+</div>
+<a id="a70a5271f7d07274bc9e2ecf1098636d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70a5271f7d07274bc9e2ecf1098636d2">&#9670;&nbsp;</a></span>SupportsClientAreaResize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AzFramework::WindowRequests::SupportsClientAreaResize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Does this platform support window resizing. Generally desktop platforms support resizing, mobile platforms don't. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Windowing/WindowBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:22 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:13 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

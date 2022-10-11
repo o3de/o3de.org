@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -66,6 +66,10 @@ virtual IImageObjectPtr&#160;</td><td class="memItemRight" valign="bottom"><a cl
 virtual AZStd::vector&lt; AssetBuilderSDK::JobProduct &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_processing_atom_1_1_image_builder_requests.html#a195f171839bc803afb02c42d8c383645">ConvertImageObject</a> (IImageObjectPtr imageObject, const AZStd::string &amp;presetName, const AZStd::string &amp;platformName, const AZStd::string &amp;outputDir, const AZ::Data::AssetId &amp;sourceAssetId, const AZStd::string &amp;sourceAssetName)=0</td></tr>
 <tr class="memdesc:a195f171839bc803afb02c42d8c383645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an image and save its products to the specified folder. <br /></td></tr>
 <tr class="separator:a195f171839bc803afb02c42d8c383645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c58d86c8ee09c34df7070bffd752e7"><td class="memItemLeft" align="right" valign="top"><a id="a97c58d86c8ee09c34df7070bffd752e7"></a>
+virtual IImageObjectPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_processing_atom_1_1_image_builder_requests.html#a97c58d86c8ee09c34df7070bffd752e7">ConvertImageObjectInMemory</a> (IImageObjectPtr imageObject, const AZStd::string &amp;presetName, const AZStd::string &amp;platformName, const AZ::Data::AssetId &amp;sourceAssetId, const AZStd::string &amp;sourceAssetName)=0</td></tr>
+<tr class="memdesc:a97c58d86c8ee09c34df7070bffd752e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an image and return its product instead ot saving it to the disk. <br /></td></tr>
+<tr class="separator:a97c58d86c8ee09c34df7070bffd752e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a393d3ba99c56a9bc4009128c0247f648"><td class="memItemLeft" align="right" valign="top"><a id="a393d3ba99c56a9bc4009128c0247f648"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_processing_atom_1_1_image_builder_requests.html#a393d3ba99c56a9bc4009128c0247f648">DoesSupportPlatform</a> (const AZStd::string &amp;platformId)=0</td></tr>
 <tr class="memdesc:a393d3ba99c56a9bc4009128c0247f648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the specified platform is supported by the image builder. <br /></td></tr>
@@ -74,6 +78,30 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_processing_atom_1_1_image_builder_requests.html#aa516148a8f989b7ef3ff377d94db2b01">IsPresetFormatSquarePow2</a> (const AZStd::string &amp;presetName, const AZStd::string &amp;platformName)=0</td></tr>
 <tr class="memdesc:aa516148a8f989b7ef3ff377d94db2b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the specified preset requires an image to be square and a power of 2. <br /></td></tr>
 <tr class="separator:aa516148a8f989b7ef3ff377d94db2b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50a43878f218c9460a9ce10f9221e938"><td class="memItemLeft" align="right" valign="top"><a id="a50a43878f218c9460a9ce10f9221e938"></a>
+virtual FileMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_processing_atom_1_1_image_builder_requests.html#a50a43878f218c9460a9ce10f9221e938">GetFileMask</a> (AZStd::string_view imageFilePath)=0</td></tr>
+<tr class="memdesc:a50a43878f218c9460a9ce10f9221e938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the file mask of a file path. <br /></td></tr>
+<tr class="separator:a50a43878f218c9460a9ce10f9221e938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab73e42a44ffa23957d1434bf0cb79371"><td class="memItemLeft" align="right" valign="top"><a id="ab73e42a44ffa23957d1434bf0cb79371"></a>
+virtual AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_processing_atom_1_1_image_builder_requests.html#ab73e42a44ffa23957d1434bf0cb79371">GetFileMasksForPreset</a> (const PresetName &amp;presetName)=0</td></tr>
+<tr class="memdesc:ab73e42a44ffa23957d1434bf0cb79371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all file masks associated with this preset. <br /></td></tr>
+<tr class="separator:ab73e42a44ffa23957d1434bf0cb79371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8640ba88479fe12941090ebaaf95ca37"><td class="memItemLeft" align="right" valign="top"><a id="a8640ba88479fe12941090ebaaf95ca37"></a>
+virtual AZStd::vector&lt; PresetName &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_processing_atom_1_1_image_builder_requests.html#a8640ba88479fe12941090ebaaf95ca37">GetPresetsForFileMask</a> (const FileMask &amp;fileMask)=0</td></tr>
+<tr class="memdesc:a8640ba88479fe12941090ebaaf95ca37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all preset names associated with this file mask. <br /></td></tr>
+<tr class="separator:a8640ba88479fe12941090ebaaf95ca37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f380ab3d72173fb0fa661bea334e790"><td class="memItemLeft" align="right" valign="top"><a id="a4f380ab3d72173fb0fa661bea334e790"></a>
+virtual PresetName&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_processing_atom_1_1_image_builder_requests.html#a4f380ab3d72173fb0fa661bea334e790">GetDefaultPreset</a> ()=0</td></tr>
+<tr class="memdesc:a4f380ab3d72173fb0fa661bea334e790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default opaque preset name. <br /></td></tr>
+<tr class="separator:a4f380ab3d72173fb0fa661bea334e790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14a384dcf722551212105fb098d925d"><td class="memItemLeft" align="right" valign="top"><a id="ac14a384dcf722551212105fb098d925d"></a>
+virtual PresetName&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_processing_atom_1_1_image_builder_requests.html#ac14a384dcf722551212105fb098d925d">GetDefaultAlphaPreset</a> ()=0</td></tr>
+<tr class="memdesc:ac14a384dcf722551212105fb098d925d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default alpha preset name. <br /></td></tr>
+<tr class="separator:ac14a384dcf722551212105fb098d925d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad1b35af09aab5aec6e0ffee6e15ba9"><td class="memItemLeft" align="right" valign="top"><a id="a4ad1b35af09aab5aec6e0ffee6e15ba9"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_processing_atom_1_1_image_builder_requests.html#a4ad1b35af09aab5aec6e0ffee6e15ba9">IsValidPreset</a> (PresetName presetName)=0</td></tr>
+<tr class="memdesc:a4ad1b35af09aab5aec6e0ffee6e15ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the preset name is valid. <br /></td></tr>
+<tr class="separator:a4ad1b35af09aab5aec6e0ffee6e15ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -90,7 +118,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:30 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

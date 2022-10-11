@@ -102,7 +102,7 @@ Now, you're ready to do some work! After you've made some changes and saved your
     This will push the update to your fork, and NOT the O3DE code repo.
 
     {{< note >}}
-We require DCO signing on all code commits. This requires that you have both your contributor name and email address in your `.gitconfig` file, or have previously run the following Git commands from a Git-enabled shell: `git config user.name "YOUR CONTRIBUTOR NAME HERE"` `git config user.email "YOUR CONTRIBUTOR CONTACT MAIL HERE"`. (This command updates your `.gitconfig.`) You must use the `-s` option on every commit. If you are using a Git-enabled IDE, such as Visual Studio 2019 or Visual Studio Code, turn on commit signing in the preferences.
+We require DCO signing on all code commits. This requires that you have both your contributor name and email address in your `.gitconfig` file, or have previously run the following Git commands from a Git-enabled shell: `git config user.name "YOUR CONTRIBUTOR NAME HERE"` `git config user.email "YOUR CONTRIBUTOR CONTACT MAIL HERE"`. (This command updates your `.gitconfig.`) You must use the `-s` option on every commit. If you are using a Git-enabled IDE, such as Visual Studio or Visual Studio Code, turn on commit signing in the preferences.
     {{< /note >}}
 
 2. (Optional): Test your branch with Jenkins.

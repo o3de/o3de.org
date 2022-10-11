@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Multiplayer Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -85,12 +85,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:af62f266d6ca13951e51a6a94cad2d0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac43208ab443c80d8959ed9675c48c4be"><td class="memItemLeft" align="right" valign="top">NetEntityId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#ac43208ab443c80d8959ed9675c48c4be">GetNetEntityId</a> () const</td></tr>
 <tr class="separator:ac43208ab443c80d8959ed9675c48c4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97f73a845a6414d385ebf03476b052f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a97f73a845a6414d385ebf03476b052f0">IsAuthority</a> () const</td></tr>
-<tr class="separator:a97f73a845a6414d385ebf03476b052f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acad358ca001a6f50b9e1969b7bc2e693"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#acad358ca001a6f50b9e1969b7bc2e693">IsAutonomous</a> () const</td></tr>
-<tr class="separator:acad358ca001a6f50b9e1969b7bc2e693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603433682d3cd15ca987bf523957d779"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a603433682d3cd15ca987bf523957d779">IsNetEntityRoleAuthority</a> () const</td></tr>
+<tr class="separator:a603433682d3cd15ca987bf523957d779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686d0d8c183fc82d25dc5f7eb8d0b2e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a686d0d8c183fc82d25dc5f7eb8d0b2e1">IsNetEntityRoleAutonomous</a> () const</td></tr>
+<tr class="separator:a686d0d8c183fc82d25dc5f7eb8d0b2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f250462c6e0408ff5a9f6f27ae6f168"><td class="memItemLeft" align="right" valign="top">AZ::Entity *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a4f250462c6e0408ff5a9f6f27ae6f168">GetEntity</a> () const</td></tr>
 <tr class="separator:a4f250462c6e0408ff5a9f6f27ae6f168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbd9b9073b63e42a4f0555cb7b2b39c0"><td class="memItemLeft" align="right" valign="top">AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#abbd9b9073b63e42a4f0555cb7b2b39c0">GetEntityId</a> () const</td></tr>
+<tr class="separator:abbd9b9073b63e42a4f0555cb7b2b39c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a238b42f1c0b45ecc5cb401097f5228ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html">ConstNetworkEntityHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a238b42f1c0b45ecc5cb401097f5228ea">GetEntityHandle</a> () const</td></tr>
 <tr class="separator:a238b42f1c0b45ecc5cb401097f5228ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7df7a4d4a9481f00edc8ed41a6036f60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_multiplayer_1_1_network_entity_handle.html">NetworkEntityHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a7df7a4d4a9481f00edc8ed41a6036f60">GetEntityHandle</a> ()</td></tr>
@@ -291,6 +293,24 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NetBindComponent</b>
 
 </div>
 </div>
+<a id="abbd9b9073b63e42a4f0555cb7b2b39c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbd9b9073b63e42a4f0555cb7b2b39c0">&#9670;&nbsp;</a></span>GetEntityId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ::EntityId Multiplayer::MultiplayerController::GetEntityId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the AZ::EntityId of the entity that owns this controller </dd></dl>
+
+</div>
+</div>
 <a id="a8d04934764054a17b43643e626dce4a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d04934764054a17b43643e626dce4a0">&#9670;&nbsp;</a></span>GetNetBindComponent()</h2>
 
@@ -361,14 +381,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NetBindComponent</b>
 
 </div>
 </div>
-<a id="a97f73a845a6414d385ebf03476b052f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97f73a845a6414d385ebf03476b052f0">&#9670;&nbsp;</a></span>IsAuthority()</h2>
+<a id="a603433682d3cd15ca987bf523957d779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a603433682d3cd15ca987bf523957d779">&#9670;&nbsp;</a></span>IsNetEntityRoleAuthority()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Multiplayer::MultiplayerController::IsAuthority </td>
+          <td class="memname">bool Multiplayer::MultiplayerController::IsNetEntityRoleAuthority </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -379,14 +399,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NetBindComponent</b>
 
 </div>
 </div>
-<a id="acad358ca001a6f50b9e1969b7bc2e693"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acad358ca001a6f50b9e1969b7bc2e693">&#9670;&nbsp;</a></span>IsAutonomous()</h2>
+<a id="a686d0d8c183fc82d25dc5f7eb8d0b2e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a686d0d8c183fc82d25dc5f7eb8d0b2e1">&#9670;&nbsp;</a></span>IsNetEntityRoleAutonomous()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Multiplayer::MultiplayerController::IsAutonomous </td>
+          <td class="memname">bool Multiplayer::MultiplayerController::IsNetEntityRoleAutonomous </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -489,7 +509,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NetBindComponent</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:53 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:13 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

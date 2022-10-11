@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzNetworking API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -52,9 +52,9 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html#a686ded4472b22f6b9f608071b978d462">BeginObject</a>(const char *name, const char *typeName) override</td><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html#a93a079eddbcd7118c95302dff1920e95">BeginObject</a>(const char *name) override</td><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html#a78da3b53125280de2eedc7ec6585b661">ClearTrackedChangesFlag</a>() override</td><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html#a58481448203e48047b5e0eceefd7dfd5">EndObject</a>(const char *name, const char *typeName) override</td><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html#ae23ae6a3b73f268dee74534fc26171a1">EndObject</a>(const char *name) override</td><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html#a2bd123a7f8c82d238ccc58a4c2860bd3">GetBuffer</a>() const override</td><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html#ad2ebf74b92edb3706f71bd0cd5dfa1a7">GetCapacity</a>() const override</td><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html#ab80f9c31b51027d456356fe5ba9b38ca">GetSerializerMode</a>() const override</td><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -79,13 +79,14 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html#af176876305337b097ad41be0daf28111">Serialize</a>(double &amp;value, const char *name, double minValue, double maxValue) override</td><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_az_networking_1_1_i_serializer.html#a3c5b69d63f6177b5d5d1edd45671591d">AzNetworking::ISerializer::Serialize</a>(TYPE &amp;value, const char *name)</td><td class="entry"><a class="el" href="class_az_networking_1_1_i_serializer.html">AzNetworking::ISerializer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html#a91620a564fb7c6e9856521653cf17ee9">SerializeBytes</a>(uint8_t *buffer, uint32_t bufferCapacity, bool isString, uint32_t &amp;outSize, const char *name) override</td><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>StringifySerializer</b>()=default (defined in <a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a>)</td><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>StringifySerializer</b>() (defined in <a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a>)</td><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>ValueMap</b> typedef (defined in <a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a>)</td><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>~ISerializer</b>()=default (defined in <a class="el" href="class_az_networking_1_1_i_serializer.html">AzNetworking::ISerializer</a>)</td><td class="entry"><a class="el" href="class_az_networking_1_1_i_serializer.html">AzNetworking::ISerializer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~StringifySerializer</b>() override (defined in <a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a>)</td><td class="entry"><a class="el" href="class_az_networking_1_1_stringify_serializer.html">AzNetworking::StringifySerializer</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:27 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:19 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

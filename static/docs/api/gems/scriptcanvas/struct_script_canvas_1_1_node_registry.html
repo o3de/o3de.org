@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -48,6 +48,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_script_canvas_1_1_node_registry-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -58,7 +59,8 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:abf29e0eeafdce68b0374d7132c060daa"><td class="memItemLeft" align="right" valign="top"><a id="abf29e0eeafdce68b0374d7132c060daa"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>NodeList</b> = AZStd::vector&lt; AZStd::pair&lt; AZ::Uuid, AZStd::string &gt; &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_script_canvas_1_1_node_registry.html#abf29e0eeafdce68b0374d7132c060daa">NodeList</a> = AZStd::vector&lt; AZStd::pair&lt; AZ::Uuid, AZStd::string &gt; &gt;</td></tr>
+<tr class="memdesc:abf29e0eeafdce68b0374d7132c060daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated field, keep it for backward compatible. <br /></td></tr>
 <tr class="separator:abf29e0eeafdce68b0374d7132c060daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -67,19 +69,32 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (<a class="el" href="struct_script_canvas_1_1_node_registry.html">NodeRegistry</a>, &quot;{C1613BD5-3104-44E4-98FE-A917A90B2014}&quot;)</td></tr>
 <tr class="separator:a1ea27ffe5ffee62d88a7839f74d4a1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a27fd3e3646e46d8082585ae21960c52f"><td class="memItemLeft" align="right" valign="top"><a id="a27fd3e3646e46d8082585ae21960c52f"></a>
+static <a class="el" href="struct_script_canvas_1_1_node_registry.html">NodeRegistry</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetInstance</b> ()</td></tr>
+<tr class="separator:a27fd3e3646e46d8082585ae21960c52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b9122949dec75eb78c5be56b2f407f0"><td class="memItemLeft" align="right" valign="top"><a id="a2b9122949dec75eb78c5be56b2f407f0"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetInstance</b> ()</td></tr>
+<tr class="separator:a2b9122949dec75eb78c5be56b2f407f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a6503b3954e61797bb69d8b70c79d892c"><td class="memItemLeft" align="right" valign="top"><a id="a6503b3954e61797bb69d8b70c79d892c"></a>
+AZStd::vector&lt; AZ::Uuid &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_script_canvas_1_1_node_registry.html#a6503b3954e61797bb69d8b70c79d892c">m_nodes</a></td></tr>
+<tr class="memdesc:a6503b3954e61797bb69d8b70c79d892c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection to store <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> derived node uuid. <br /></td></tr>
+<tr class="separator:a6503b3954e61797bb69d8b70c79d892c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac42b83fbd22b473de08bee0075b9f0be"><td class="memItemLeft" align="right" valign="top"><a id="ac42b83fbd22b473de08bee0075b9f0be"></a>
-AZStd::unordered_map&lt; AZ::Uuid, NodeList &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_nodeMap</b></td></tr>
+AZStd::unordered_map&lt; AZ::Uuid, <a class="el" href="struct_script_canvas_1_1_node_registry.html#abf29e0eeafdce68b0374d7132c060daa">NodeList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_nodeMap</b></td></tr>
 <tr class="separator:ac42b83fbd22b473de08bee0075b9f0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>Gems/ScriptCanvas/Code/Include/ScriptCanvas/Libraries/Libraries.h</li>
+<li>Gems/ScriptCanvas/Code/Include/ScriptCanvas/Libraries/ScriptCanvasNodeRegistry.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:04 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:31 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

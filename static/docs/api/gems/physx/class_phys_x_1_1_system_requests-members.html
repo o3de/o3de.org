@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine PhysX Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -56,15 +56,16 @@ $(function() {
   <tr><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html#acddbfa2697af71b9b4541c62669de3c5">CreateConvexMesh</a>(const void *vertices, AZ::u32 vertexNum, AZ::u32 vertexStride)=0</td><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html">PhysX::SystemRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html#a97d585cf688e8ca611213c4a7768c291">CreateConvexMeshFromCooked</a>(const void *cookedMeshData, AZ::u32 bufferSize)=0</td><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html">PhysX::SystemRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html#a74fccb2ceff67f38e8dc77bf16a4621d">CreateFilterData</a>(const AzPhysics::CollisionLayer &amp;layer, const AzPhysics::CollisionGroup &amp;group)=0</td><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html">PhysX::SystemRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html#a12539bcdc21fa739bd588f6c18e729cd">CreateHeightField</a>(const physx::PxHeightFieldSample *samples, AZ::u32 numRows, AZ::u32 numColumns)=0</td><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html">PhysX::SystemRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html#a0e0ce46fe87d01383ec05f13cbed687d">CreateHeightField</a>(const physx::PxHeightFieldSample *samples, size_t numColumns, size_t numRows)=0</td><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html">PhysX::SystemRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html#a89e8603f87bfdadc2e1c031f9f2aef11">CreateTriangleMeshFromCooked</a>(const void *cookedMeshData, AZ::u32 bufferSize)=0</td><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html">PhysX::SystemRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html#a550ad6fd868177fabf997f348e48c903">GetCooking</a>()=0</td><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html">PhysX::SystemRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>HandlerPolicy</b> (defined in <a class="el" href="class_phys_x_1_1_system_requests.html">PhysX::SystemRequests</a>)</td><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html">PhysX::SystemRequests</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~SystemRequests</b>()=default (defined in <a class="el" href="class_phys_x_1_1_system_requests.html">PhysX::SystemRequests</a>)</td><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html">PhysX::SystemRequests</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>MutexType</b> typedef (defined in <a class="el" href="class_phys_x_1_1_system_requests.html">PhysX::SystemRequests</a>)</td><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html">PhysX::SystemRequests</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~SystemRequests</b>()=default (defined in <a class="el" href="class_phys_x_1_1_system_requests.html">PhysX::SystemRequests</a>)</td><td class="entry"><a class="el" href="class_phys_x_1_1_system_requests.html">PhysX::SystemRequests</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:55 for Open 3D Engine PhysX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:16 for Open 3D Engine PhysX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,7 +46,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_a_z_1_1_r_p_i_1_1_shader_reload_debug_tracker_1_1_scoped_section-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::RPI::ShaderReloadDebugTracker::ScopedSection Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -58,12 +60,23 @@ $(function() {
 
 <p><code>#include &lt;ShaderReloadDebugTracker.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a725f1099b896933e06971c3f7f0a45b0"><td class="memItemLeft" align="right" valign="top"><a id="a725f1099b896933e06971c3f7f0a45b0"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SectionName</b> = AZStd::fixed_string&lt; MaxSectionNameLength &gt;</td></tr>
+<tr class="separator:a725f1099b896933e06971c3f7f0a45b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7199b4a7941d6b325fc1c53b28461e89"><td class="memTemplParams" colspan="2"><a id="a7199b4a7941d6b325fc1c53b28461e89"></a>
-template&lt;typename ... Args&gt; </td></tr>
-<tr class="memitem:a7199b4a7941d6b325fc1c53b28461e89"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ScopedSection</b> (const char *sectionNameFormat, Args... args)</td></tr>
-<tr class="separator:a7199b4a7941d6b325fc1c53b28461e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b145b959847ea29414e64ba5ce34669"><td class="memItemLeft" align="right" valign="top"><a id="a8b145b959847ea29414e64ba5ce34669"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ScopedSection</b> ([[maybe_unused]] const char *sectionNameFormat,...)</td></tr>
+<tr class="separator:a8b145b959847ea29414e64ba5ce34669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a873664d430a88e1d3c6d689f2bb24a71"><td class="memItemLeft" align="right" valign="top"><a id="a873664d430a88e1d3c6d689f2bb24a71"></a>
+static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>MaxSectionNameLength</b> = 1024</td></tr>
+<tr class="separator:a873664d430a88e1d3c6d689f2bb24a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Use this utility to call <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_reload_debug_tracker.html#a7b8cceddce4c1229853810ca76e6cbef" title="Begin a code section. Will print a &quot;[BEGIN] &lt;sectionName&gt;&quot; header, and all subsequent calls will be i...">BeginSection()</a>, and automatically call <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_reload_debug_tracker.html#a2c5d2029c1c62738d0ff6962ffa13685" title="Ends a code section. Will print &quot;[_END_] &lt;sectionName&gt;&quot;, and un-indent subsequent messages by one lev...">EndSection()</a> when the object goes out of scope. </p>
@@ -73,7 +86,7 @@ template&lt;typename ... Args&gt; </td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:29 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:23 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

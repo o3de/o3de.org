@@ -29,7 +29,7 @@ The engine, the project, and individual Gems can be installed in any location ac
 
 ## Files in scan directories
 
-Scan directories provide the entry point for [asset builders](docs/user-guide/assets/pipeline/asset-builders/) to read files as source assets, for generating product assets into the asset cache.
+Scan directories provide the entry point for [asset builders](/docs/user-guide/assets/pipeline/asset-builders/) to read files as source assets, for generating product assets into the asset cache.
 
 A file being in a scan directory does not automatically become a source asset. Source assets are files in scan directories that have had jobs created for them. Otherwise, these files are called non-asset source files. A non-asset source file will not have a UUID to identify it, and can only be referenced by path.
 
@@ -37,13 +37,13 @@ A file being in a scan directory does not automatically become a source asset. S
 
 There are three core points during development where it may be necessary to reference and potentially load a file that is in a scan directory.
 
-In all cases, it's important to make sure [dependencies](docs/user-guide/assets/pipeline/asset-dependencies-and-identifiers/) are accurate for all assets.
+In all cases, it's important to make sure [dependencies](/docs/user-guide/assets/pipeline/asset-dependencies-and-identifiers/) are accurate for all assets.
 
 ### From asset builders
 
-When authoring [asset builders,](docs/user-guide/assets/pipeline/asset-builders/) loading the primary source asset used by the builder is straightforward. The create jobs and process job functions each have a parameter with the path to the relevant source asset.
+When authoring [asset builders,](/docs/user-guide/assets/pipeline/asset-builders/) loading the primary source asset used by the builder is straightforward. The create jobs and process job functions each have a parameter with the path to the relevant source asset.
 
-Sometimes it may be necessary to load additional files besides the primary source asset within these builders. See [this documentation on loading other files](docs/user-guide/assets/pipeline/asset-builders/#loading-other-files) for details on handling these situations.
+Sometimes it may be necessary to load additional files besides the primary source asset within these builders. See [this documentation on loading other files](/docs/user-guide/assets/pipeline/asset-builders/#loading-other-files) for details on handling these situations.
 
 ### From external tools
 

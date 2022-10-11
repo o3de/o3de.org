@@ -50,7 +50,7 @@ You must start Asset Processor before you can enter a -debug command for AssetBu
 
 To debug with Asset Builder:
 * Use the instructions for setting Asset Processor to just use a single Asset Builder processor: 
-* Navigate to the build folder directory, for example `build\windows_vs2019\bin\profile`
+* Navigate to the build folder directory, for example `build\windows\bin\profile`
 * In a command line prompt, enter the following command to get a list of possible options: `AssetBuilder -help`
 * Or use the settings below to aid with debugging the AssetBuilder, for example `AssetBuilder.exe --debug C:\o3de\o3de\Assets\Editor\Materials\ShaderList.xml --platform pc --tags dx12 --project-name AutomatedTesting --project-cache-path C:\o3de\o3de\AutomatedTesting\Cache`
 
@@ -158,7 +158,7 @@ Product assets should only have these references:
 
 While it's technically possible to reference files in other ways in product assets, it may end up causing problems later. The development version of a project, running the Editor or game launcher connected to the Asset Processor is what a team will be most used to interacting with. However, when preparing to deliver a project to end customers, with packaged and bundled content, the layout of the project and placement of assets will be different. References from product assets to other files that worked during development may not work in release builds of projects. For example, if a product asset references a source asset, that source asset likely won't be on the end user's machine in the packaged release build.
 
-Product assets should never reference other product assets with absolute path because this will result in the hash of the contents of product assets being unique per machine that generates product assets. When authoring a builder, the complete lifecycle of asset management for a project should be kept in mind. Keeping product assets stable across machines will ensure that the gathering modified assets step of generating a patch for a live game is accurate. You can read more about [asset bundling here.](docs/user-guide/packaging/asset-bundler/overview/)
+Product assets should never reference other product assets with absolute path because this will result in the hash of the contents of product assets being unique per machine that generates product assets. When authoring a builder, the complete lifecycle of asset management for a project should be kept in mind. Keeping product assets stable across machines will ensure that the gathering modified assets step of generating a patch for a live game is accurate. You can read more about [asset bundling here.](/docs/user-guide/packaging/asset-bundler/overview/)
 
 ### Load product assets in process job
 
@@ -187,4 +187,3 @@ Sometimes processing a source asset, either the create jobs or process job steps
 A source dependency is declared during the CreateJob step, and when the file in this dependency changes, the job will be re-run.
 
 Read more about [source dependencies here.](/docs/user-guide/assets/pipeline/asset-dependencies-and-identifiers/#source-dependencies)
-

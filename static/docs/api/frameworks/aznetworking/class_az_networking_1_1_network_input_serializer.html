@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzNetworking API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -49,7 +49,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_az_networking_1_1_network_input_serializer-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AzNetworking::NetworkInputSerializer Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">AzNetworking::NetworkInputSerializer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -94,10 +94,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2808e57ea2482f81a825e6e8dcf11422"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af08f927f190948cc9e15ec2e5cf3a718"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_network_input_serializer.html#af08f927f190948cc9e15ec2e5cf3a718">SerializeBytes</a> (uint8_t *buffer, uint32_t bufferCapacity, bool isString, uint32_t &amp;outSize, const char *name) override</td></tr>
 <tr class="separator:af08f927f190948cc9e15ec2e5cf3a718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b69d2462835986b7311f8804110ded2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_network_input_serializer.html#a1b69d2462835986b7311f8804110ded2">BeginObject</a> (const char *name, const char *typeName) override</td></tr>
-<tr class="separator:a1b69d2462835986b7311f8804110ded2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5545779be860f2e394839250aa80b7bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_network_input_serializer.html#a5545779be860f2e394839250aa80b7bc">EndObject</a> (const char *name, const char *typeName) override</td></tr>
-<tr class="separator:a5545779be860f2e394839250aa80b7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6134692b7175a467414eb790c902285"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_network_input_serializer.html#ac6134692b7175a467414eb790c902285">BeginObject</a> (const char *name) override</td></tr>
+<tr class="separator:ac6134692b7175a467414eb790c902285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0b18045dd38adc01149228285a34e80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_network_input_serializer.html#af0b18045dd38adc01149228285a34e80">EndObject</a> (const char *name) override</td></tr>
+<tr class="separator:af0b18045dd38adc01149228285a34e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff8e6680d1cf7082ccff04fd4e1338a8"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_network_input_serializer.html#aff8e6680d1cf7082ccff04fd4e1338a8">GetBuffer</a> () const override</td></tr>
 <tr class="separator:aff8e6680d1cf7082ccff04fd4e1338a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a410b9ad4140fe21ce0f29fc567ac7b67"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_network_input_serializer.html#a410b9ad4140fe21ce0f29fc567ac7b67">GetCapacity</a> () const override</td></tr>
@@ -165,8 +165,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializerValid</b>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1b69d2462835986b7311f8804110ded2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b69d2462835986b7311f8804110ded2">&#9670;&nbsp;</a></span>BeginObject()</h2>
+<a id="ac6134692b7175a467414eb790c902285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6134692b7175a467414eb790c902285">&#9670;&nbsp;</a></span>BeginObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,18 +178,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializerValid</b>
           <td class="memname">bool AzNetworking::NetworkInputSerializer::BeginObject </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>typeName</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -201,13 +191,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializerValid</b>
 <p>Begins serializing an object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>string name of the object </td></tr>
-    <tr><td class="paramname">typeInfo</td><td>basic type information for the value being serialized </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Result. In the case of Skip, Serialize is not called. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean true on success, false for failure </dd></dl>
 
-<p>Implements <a class="el" href="class_az_networking_1_1_i_serializer.html#ac09b6e4a963a9a7d5cb7ec1c40ebfb77">AzNetworking::ISerializer</a>.</p>
+<p>Implements <a class="el" href="class_az_networking_1_1_i_serializer.html#a47039952774cb2766a25374114d142f9">AzNetworking::ISerializer</a>.</p>
 
 </div>
 </div>
@@ -244,9 +233,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializerValid</b>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool AzNetworking::NetworkInputSerializer::CopyToBuffer </td>
@@ -266,11 +252,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializerValid</b>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Copies the provided bytes into the serialization output buffer. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -283,8 +264,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializerValid</b>
 
 </div>
 </div>
-<a id="a5545779be860f2e394839250aa80b7bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5545779be860f2e394839250aa80b7bc">&#9670;&nbsp;</a></span>EndObject()</h2>
+<a id="af0b18045dd38adc01149228285a34e80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0b18045dd38adc01149228285a34e80">&#9670;&nbsp;</a></span>EndObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -296,18 +277,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializerValid</b>
           <td class="memname">bool AzNetworking::NetworkInputSerializer::EndObject </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>typeName</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -319,13 +290,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializerValid</b>
 <p>Ends serializing an object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>string name of the object </td></tr>
-    <tr><td class="paramname">typeInfo</td><td>basic type information for the value being serialized </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean true for success, false for serialization failure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean true on success, false for failure </dd></dl>
 
-<p>Implements <a class="el" href="class_az_networking_1_1_i_serializer.html#a73bd5845a3a6e565c8abe64ae59b036c">AzNetworking::ISerializer</a>.</p>
+<p>Implements <a class="el" href="class_az_networking_1_1_i_serializer.html#ac6b1b8d94450e4287e225d4cc6b6a030">AzNetworking::ISerializer</a>.</p>
 
 </div>
 </div>
@@ -1242,14 +1212,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializerValid</b>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzNetworking/AzNetworking/Serialization/NetworkInputSerializer.h</li>
-<li>Code/Framework/AzNetworking/AzNetworking/Serialization/NetworkInputSerializer.inl</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:27 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:19 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

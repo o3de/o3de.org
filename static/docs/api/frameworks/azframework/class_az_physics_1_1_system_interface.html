@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -123,10 +123,6 @@ virtual const <a class="el" href="struct_az_physics_1_1_scene_configuration.html
 <tr class="separator:ab32f4b5f7bac9ea8ba4e260e755b106e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a541e53bb985984b0f96218d7420271df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_system_interface.html#a541e53bb985984b0f96218d7420271df">RegisterSystemConfigurationChangedEvent</a> (SystemEvents::OnConfigurationChangedEvent::Handler &amp;handler)</td></tr>
 <tr class="separator:a541e53bb985984b0f96218d7420271df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff87cfc6a4ef4ecef0e59d6f8b39ac71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_system_interface.html#aff87cfc6a4ef4ecef0e59d6f8b39ac71">RegisterOnMaterialLibraryChangedEventHandler</a> (SystemEvents::OnMaterialLibraryChangedEvent::Handler &amp;handler)</td></tr>
-<tr class="separator:aff87cfc6a4ef4ecef0e59d6f8b39ac71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b0d57e0d20e12bfb138f97d07b63036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_system_interface.html#a0b0d57e0d20e12bfb138f97d07b63036">RegisterOnMaterialLibraryLoadErrorEventHandler</a> (SystemEvents::OnMaterialLibraryLoadErrorEvent::Handler &amp;handler)</td></tr>
-<tr class="separator:a0b0d57e0d20e12bfb138f97d07b63036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addcc4fea69fa9ce3e40c569cd47c2333"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_system_interface.html#addcc4fea69fa9ce3e40c569cd47c2333">RegisterOnDefaultSceneConfigurationChangedEventHandler</a> (SystemEvents::OnDefaultSceneConfigurationChangedEvent::Handler &amp;handler)</td></tr>
 <tr class="separator:addcc4fea69fa9ce3e40c569cd47c2333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -162,12 +158,6 @@ SystemEvents::OnSceneRemovedEvent&#160;</td><td class="memItemRight" valign="bot
 <tr class="memitem:a761560f6ba221919d20166d57364fa03"><td class="memItemLeft" align="right" valign="top"><a id="a761560f6ba221919d20166d57364fa03"></a>
 SystemEvents::OnConfigurationChangedEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_configChangeEvent</b></td></tr>
 <tr class="separator:a761560f6ba221919d20166d57364fa03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d2e35051aa32119ed1b26ec34fe4e4e"><td class="memItemLeft" align="right" valign="top"><a id="a4d2e35051aa32119ed1b26ec34fe4e4e"></a>
-SystemEvents::OnMaterialLibraryChangedEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_onMaterialLibraryChangedEvent</b></td></tr>
-<tr class="separator:a4d2e35051aa32119ed1b26ec34fe4e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2458cfb328ce59aeb60ffce68d1559a2"><td class="memItemLeft" align="right" valign="top"><a id="a2458cfb328ce59aeb60ffce68d1559a2"></a>
-SystemEvents::OnMaterialLibraryLoadErrorEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_onMaterialLibraryLoadErrorEvent</b></td></tr>
-<tr class="separator:a2458cfb328ce59aeb60ffce68d1559a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd2e901099e794820af860c629f22719"><td class="memItemLeft" align="right" valign="top"><a id="abd2e901099e794820af860c629f22719"></a>
 SystemEvents::OnDefaultSceneConfigurationChangedEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_onDefaultSceneConfigurationChangedEvent</b></td></tr>
 <tr class="separator:abd2e901099e794820af860c629f22719"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -456,70 +446,6 @@ SystemEvents::OnDefaultSceneConfigurationChangedEvent&#160;</td><td class="memIt
 </table>
 </div><div class="memdoc">
 <p>Register a handler to receive an event when the default <a class="el" href="struct_az_physics_1_1_scene_configuration.html" title="Configuration object that contains data to setup a Scene.">SceneConfiguration</a> changes. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handler</td><td>The handler to receive the event. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aff87cfc6a4ef4ecef0e59d6f8b39ac71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff87cfc6a4ef4ecef0e59d6f8b39ac71">&#9670;&nbsp;</a></span>RegisterOnMaterialLibraryChangedEventHandler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzPhysics::SystemInterface::RegisterOnMaterialLibraryChangedEventHandler </td>
-          <td>(</td>
-          <td class="paramtype">SystemEvents::OnMaterialLibraryChangedEvent::Handler &amp;&#160;</td>
-          <td class="paramname"><em>handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Register a handler to receive an event when the material library changes. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handler</td><td>The handler to receive the event. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a0b0d57e0d20e12bfb138f97d07b63036"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b0d57e0d20e12bfb138f97d07b63036">&#9670;&nbsp;</a></span>RegisterOnMaterialLibraryLoadErrorEventHandler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzPhysics::SystemInterface::RegisterOnMaterialLibraryLoadErrorEventHandler </td>
-          <td>(</td>
-          <td class="paramtype">SystemEvents::OnMaterialLibraryLoadErrorEvent::Handler &amp;&#160;</td>
-          <td class="paramname"><em>handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Register a handler to receive an event when the material library fails to load on startup. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handler</td><td>The handler to receive the event. </td></tr>
   </table>
@@ -924,7 +850,7 @@ SystemEvents::OnDefaultSceneConfigurationChangedEvent&#160;</td><td class="memIt
 </table>
 </div><div class="memdoc">
 <p>Advance the Physics state. This will iterate the <a class="el" href="class_az_physics_1_1_scene.html" title="Interface of a Physics Scene.">Scene</a> list, update All simulation bodies and advance the physics state by the given delta time. It is recommended to call this function to run the physics tick. Advanced users may manually update each scene, if required to have finer control. This function will also signal the OnPresimulateEvent and OnPostsimulateEvent. The OnPresimulateEvent will have a parameter that will be the total time executed by the simulation. When <a class="el" href="struct_az_physics_1_1_system_configuration.html#a4b6472a8482366abbf48ecc40ee0f3ba" title="Timestep in seconds to run the physics update. See DefaultFixedTimestep.">SystemConfiguration::m_fixedTimestep</a> is greater than zero, the simulation will run at the fixed time step and may run multiple steps per frame. This time can range from 0.0f to <a class="el" href="struct_az_physics_1_1_system_configuration.html#ad6393376043b3dbd2a24cefeccb32748" title="Value represents 1/60th or 60 FPS.">SystemConfiguration::m_maxTimestep</a>. Where 0.0 time indicates that the simulation did not execute any steps this frame. When <a class="el" href="struct_az_physics_1_1_system_configuration.html#a4b6472a8482366abbf48ecc40ee0f3ba" title="Timestep in seconds to run the physics update. See DefaultFixedTimestep.">SystemConfiguration::m_fixedTimestep</a> equal to or less than zero, the simulation will step once with a time between deltaTime and <a class="el" href="struct_az_physics_1_1_system_configuration.html#ad6393376043b3dbd2a24cefeccb32748" title="Value represents 1/60th or 60 FPS.">SystemConfiguration::m_maxTimestep</a>. Example Advanced users might do to self manage Advancing the physics state. </p><div class="fragment"><div class="line"><span class="comment">//The following would be somewhere in the client code game update loop.</span></div>
-<div class="line"><span class="keywordflow">if</span> (<span class="keyword">auto</span>* system = AZ::Interface&lt;AzPhysics::SystemInterface&gt;::Get())</div>
+<div class="line"><span class="keywordflow">if</span> (<span class="keyword">auto</span>* system = <a class="code" href="class_a_z_1_1_interface.html">AZ::Interface&lt;AzPhysics::SystemInterface&gt;::Get</a>())</div>
 <div class="line">{</div>
 <div class="line">    SceneInterfaceList&amp; sceneList = system-&gt;GetAllScenes();</div>
 <div class="line">    <span class="comment">//Here you may want to order the update of the scenes, or only update specific scenes.</span></div>
@@ -1026,9 +952,10 @@ SystemEvents::OnDefaultSceneConfigurationChangedEvent&#160;</td><td class="memIt
 <li>Code/Framework/AzFramework/AzFramework/Physics/PhysicsSystem.h</li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="aclass_a_z_1_1_interface_html"><div class="ttname"><a href="class_a_z_1_1_interface.html">AZ::Interface</a></div><div class="ttdef"><b>Definition:</b> IRemoteTools.h:32</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:23 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:14 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

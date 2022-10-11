@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -141,6 +141,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFrameEnd</b> () ove
 <tr class="separator:afbc28e15dd6a3dca7cd4335334a39ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fe8a556b6a465e8b47f7c50a90c5903"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html#a7fe8a556b6a465e8b47f7c50a90c5903">SetResolver</a> (AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool_resolver.html">ResourcePoolResolver</a> &gt; &amp;&amp;resolvePolicy)</td></tr>
 <tr class="separator:a7fe8a556b6a465e8b47f7c50a90c5903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac386f4f293542b761c4e1913760b088f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html#ac386f4f293542b761c4e1913760b088f">ComputeFragmentation</a> () const =0</td></tr>
+<tr class="separator:ac386f4f293542b761c4e1913760b088f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6cd48cc42082c237f052eb667ea30e8"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html#ab6cd48cc42082c237f052eb667ea30e8">Init</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">Device</a> &amp;device, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool_descriptor.html">ResourcePoolDescriptor</a> &amp;descriptor, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html#afb820b68e4930670d9fbfbf8e0ce86d8">PlatformMethod</a> &amp;initMethod)</td></tr>
 <tr class="separator:ab6cd48cc42082c237f052eb667ea30e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35e079756f55967a17511ed3d3c0f5b5"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html#a35e079756f55967a17511ed3d3c0f5b5">InitResource</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_resource.html">Resource</a> *resource, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html#afb820b68e4930670d9fbfbf8e0ce86d8">PlatformMethod</a> &amp;initResourceMethod)</td></tr>
@@ -178,6 +180,34 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Resource</b></td></t
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A base class for resource pools. This class facilitates registration of resources into the pool, and allows iterating child resource instances. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac386f4f293542b761c4e1913760b088f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac386f4f293542b761c4e1913760b088f">&#9670;&nbsp;</a></span>ComputeFragmentation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::RHI::ResourcePool::ComputeFragmentation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compute the memory fragmentation for each constituent heap and store the results in m_memoryUsage. This method is invoked when memory statistics gathering is active. </p>
+
+<p>Implemented in <a class="el" href="class_a_z_1_1_r_h_i_1_1_aliased_heap.html#ad487efef9adefed547dda0bd07868667">AZ::RHI::AliasedHeap</a>, <a class="el" href="class_a_z_1_1_r_h_i_1_1_query_pool.html#ac5c58491282891a84d548a306835b01b">AZ::RHI::QueryPool</a>, <a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#a55b550fb82b6311fe75333ef7ca52f6f">AZ::RHI::SwapChain</a>, <a class="el" href="class_a_z_1_1_r_h_i_1_1_image_pool.html#a14cef2cad8d54a86e4f610b445f2d28f">AZ::RHI::ImagePool</a>, and <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_pool.html#aec5fb1d1cc6cb2e3e87030bb3585264a">AZ::RHI::ShaderResourceGroupPool</a>.</p>
+
+</div>
+</div>
 <a id="a48190c3241a32050d316df9c1bfe6492"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48190c3241a32050d316df9c1bfe6492">&#9670;&nbsp;</a></span>ForEach()</h2>
 
@@ -363,7 +393,7 @@ template&lt;typename ResourceType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:27 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:21 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

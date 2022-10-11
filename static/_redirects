@@ -8,3 +8,9 @@
 /docs/user-guide/engine/*                           /docs/user-guide/programming/:splat
 /docs/user-guide/components/development/*           /docs/user-guide/programming/components/:splat
 /docs/user-guide/gems/development/*                 /docs/user-guide/programming/gems/:splat
+
+/docs/contributing/to-code/overview                 /docs/contributing/to-code
+/docs/contributing/to-docs/overview                 /docs/contributing/to-docs
+/docs/contributing/to-docs/style-guide/overview     /docs/contributing/to-docs/style-guide
+/docs/user-guide/gems/overview                      /docs/user-guide/gems
+/docs/user-guide/gems/reference/overview            /docs/user-guide/gems/reference

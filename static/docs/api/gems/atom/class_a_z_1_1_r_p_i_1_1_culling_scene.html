@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -49,9 +49,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_r_p_i_1_1_culling_scene-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::RPI::CullingScene Class Reference</div>  </div>
@@ -70,9 +68,6 @@ Public Types</h2></td></tr>
 <tr class="memitem:a7ec4d56581c44e0b9c1c0ec4e85faab0"><td class="memItemLeft" align="right" valign="top"><a id="a7ec4d56581c44e0b9c1c0ec4e85faab0"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>OcclusionPlaneVector</b> = AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_culling_scene_1_1_occlusion_plane.html">OcclusionPlane</a> &gt;</td></tr>
 <tr class="separator:a7ec4d56581c44e0b9c1c0ec4e85faab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a182b7a079e405807bb0e2e33ab70a163"><td class="memItemLeft" align="right" valign="top"><a id="a182b7a079e405807bb0e2e33ab70a163"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>WorkListType</b> = AZStd::fixed_vector&lt; AzFramework::IVisibilityScene::NodeData, WorkListCapacity &gt;</td></tr>
-<tr class="separator:a182b7a079e405807bb0e2e33ab70a163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -103,8 +98,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#aaccc86e0b4f76a41ef44d600e2e2fbaa">EndCulling</a> ()</td></tr>
 <tr class="memdesc:aaccc86e0b4f76a41ef44d600e2e2fbaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">CullingScene</a> that the culling is done for this frame. <br /></td></tr>
 <tr class="separator:aaccc86e0b4f76a41ef44d600e2e2fbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad14fe80971d60c2287733c7e964b1129"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#ad14fe80971d60c2287733c7e964b1129">ProcessCullables</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> &amp;scene, <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html">View</a> &amp;view, AZ::Job &amp;parentJob)</td></tr>
-<tr class="separator:ad14fe80971d60c2287733c7e964b1129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd5c1022b968b69bfef0f67e01053e86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#afd5c1022b968b69bfef0f67e01053e86">ProcessCullablesJobs</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> &amp;scene, <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html">View</a> &amp;view, AZ::Job &amp;parentJob)</td></tr>
+<tr class="separator:afd5c1022b968b69bfef0f67e01053e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b42000b0c4a0be77e54316dc64a12c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#a67b42000b0c4a0be77e54316dc64a12c">ProcessCullablesTG</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> &amp;scene, <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html">View</a> &amp;view, AZ::TaskGraph &amp;taskGraph)</td></tr>
+<tr class="separator:a67b42000b0c4a0be77e54316dc64a12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adad78311446f60233c7adf2f8fccc944"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#adad78311446f60233c7adf2f8fccc944">RegisterOrUpdateCullable</a> (<a class="el" href="struct_a_z_1_1_r_p_i_1_1_cullable.html">Cullable</a> &amp;cullable)</td></tr>
 <tr class="separator:adad78311446f60233c7adf2f8fccc944"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30d4543e681add3e440f2c6c8ba75f14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#a30d4543e681add3e440f2c6c8ba75f14">UnregisterCullable</a> (<a class="el" href="struct_a_z_1_1_r_p_i_1_1_cullable.html">Cullable</a> &amp;cullable)</td></tr>
@@ -116,48 +113,28 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a5a8aa317c0594f41994a166a4912defb"><td class="memItemLeft" align="right" valign="top"><a id="a5a8aa317c0594f41994a166a4912defb"></a>
 <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_debug_context.html">CullingDebugContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebugContext</b> ()</td></tr>
 <tr class="separator:a5a8aa317c0594f41994a166a4912defb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a4b6966b442e3d0fbe94bb03c2e2221da"><td class="memItemLeft" align="right" valign="top"><a id="a4b6966b442e3d0fbe94bb03c2e2221da"></a>
-static const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>WorkListCapacity</b> = 5</td></tr>
-<tr class="separator:a4b6966b442e3d0fbe94bb03c2e2221da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652733dadbb0289f58b0d8c005650725"><td class="memItemLeft" align="right" valign="top"><a id="a652733dadbb0289f58b0d8c005650725"></a>
+const AzFramework::IVisibilityScene *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#a652733dadbb0289f58b0d8c005650725">GetVisibilityScene</a> () const</td></tr>
+<tr class="memdesc:a652733dadbb0289f58b0d8c005650725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the visibility scene. <br /></td></tr>
+<tr class="separator:a652733dadbb0289f58b0d8c005650725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a977672da003182f95f0c2dcbd6aa5d63"><td class="memItemLeft" align="right" valign="top"><a id="a977672da003182f95f0c2dcbd6aa5d63"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>CountObjectsInScene</b> ()</td></tr>
 <tr class="separator:a977672da003182f95f0c2dcbd6aa5d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:adec73946a24b12e120289cc11200a19e"><td class="memItemLeft" align="right" valign="top"><a id="adec73946a24b12e120289cc11200a19e"></a>
-const <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_parentScene</b> = nullptr</td></tr>
-<tr class="separator:adec73946a24b12e120289cc11200a19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef2bb42bda996a816973250707c23053"><td class="memItemLeft" align="right" valign="top"><a id="aef2bb42bda996a816973250707c23053"></a>
-AzFramework::IVisibilityScene *&#160;</td><td class="memItemRight" valign="bottom"><b>m_visScene</b> = nullptr</td></tr>
-<tr class="separator:aef2bb42bda996a816973250707c23053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba1cf03ef3a140f2073f674f8939c9b1"><td class="memItemLeft" align="right" valign="top"><a id="aba1cf03ef3a140f2073f674f8939c9b1"></a>
-<a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_debug_context.html">CullingDebugContext</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_debugCtx</b></td></tr>
-<tr class="separator:aba1cf03ef3a140f2073f674f8939c9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdd610baea7fa24166ea5254ea9dba98"><td class="memItemLeft" align="right" valign="top"><a id="acdd610baea7fa24166ea5254ea9dba98"></a>
-AZStd::concurrency_checker&#160;</td><td class="memItemRight" valign="bottom"><b>m_cullDataConcurrencyCheck</b></td></tr>
-<tr class="separator:acdd610baea7fa24166ea5254ea9dba98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73aad3e2053be9d65c04f464920cceef"><td class="memItemLeft" align="right" valign="top"><a id="a73aad3e2053be9d65c04f464920cceef"></a>
-OcclusionPlaneVector&#160;</td><td class="memItemRight" valign="bottom"><b>m_occlusionPlanes</b></td></tr>
-<tr class="separator:a73aad3e2053be9d65c04f464920cceef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Centralized manager for culling-related processing for a given scene. There is one <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">CullingScene</a> owned by each <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a>, so external systems (such as FeatureProcessors) should access the <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">CullingScene</a> via their parent <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad14fe80971d60c2287733c7e964b1129"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad14fe80971d60c2287733c7e964b1129">&#9670;&nbsp;</a></span>ProcessCullables()</h2>
+<a id="afd5c1022b968b69bfef0f67e01053e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd5c1022b968b69bfef0f67e01053e86">&#9670;&nbsp;</a></span>ProcessCullablesJobs()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void AZ::RPI::CullingScene::ProcessCullables </td>
+          <td class="memname">void AZ::RPI::CullingScene::ProcessCullablesJobs </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> &amp;&#160;</td>
           <td class="paramname"><em>scene</em>, </td>
@@ -182,6 +159,41 @@ OcclusionPlaneVector&#160;</td><td class="memItemRight" valign="bottom"><b>m_occ
       </table>
 </div><div class="memdoc">
 <p>Performs render culling and lod selection for a <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html">View</a>, then adds the visible renderpackets to that <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html">View</a>. Must be called between <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#a8de95a9da4fb69d1b5f581b9edc1ccde" title="Notifies the CullingScene that culling will begin for this frame.">BeginCulling()</a> and <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#aaccc86e0b4f76a41ef44d600e2e2fbaa" title="Notifies the CullingScene that the culling is done for this frame.">EndCulling()</a>, once for each active scene/view pair. Will create child jobs under the parentJob to do the processing in parallel. Can be called in parallel (i.e. to perform culling on multiple views at the same time). </p>
+
+</div>
+</div>
+<a id="a67b42000b0c4a0be77e54316dc64a12c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b42000b0c4a0be77e54316dc64a12c">&#9670;&nbsp;</a></span>ProcessCullablesTG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::CullingScene::ProcessCullablesTG </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> &amp;&#160;</td>
+          <td class="paramname"><em>scene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html">View</a> &amp;&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::TaskGraph &amp;&#160;</td>
+          <td class="paramname"><em>taskGraph</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Performs render culling and lod selection for a <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html">View</a>, then adds the visible renderpackets to that <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html">View</a>. Must be called between <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#a8de95a9da4fb69d1b5f581b9edc1ccde" title="Notifies the CullingScene that culling will begin for this frame.">BeginCulling()</a> and <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#aaccc86e0b4f76a41ef44d600e2e2fbaa" title="Notifies the CullingScene that the culling is done for this frame.">EndCulling()</a>, once for each active scene/view pair. Will create child task graphs that signal the TaskGraphEvent to do the processing in parallel. Can be called in parallel (i.e. to perform culling on multiple views at the same time). </p>
 
 </div>
 </div>
@@ -229,7 +241,7 @@ OcclusionPlaneVector&#160;</td><td class="memItemRight" valign="bottom"><b>m_occ
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:28 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

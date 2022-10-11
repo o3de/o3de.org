@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -105,24 +105,16 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsShaderStage
 <tr class="memitem:af148bc77d2bb8abb0edb9af42d81f65c"><td class="memItemLeft" align="right" valign="top"><a id="af148bc77d2bb8abb0edb9af42d81f65c"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsShaderStageForRayTracing</b> (ShaderHardwareStage shaderStageType) const =0</td></tr>
 <tr class="separator:af148bc77d2bb8abb0edb9af42d81f65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1bfebfabccb188c5773c32f7ad4d893"><td class="memItemLeft" align="right" valign="top"><a id="af1bfebfabccb188c5773c32f7ad4d893"></a>
-virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#af1bfebfabccb188c5773c32f7ad4d893">GetAzslCompilerParameters</a> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">RHI::ShaderCompilerArguments</a> &amp;shaderCompilerArguments) const =0</td></tr>
-<tr class="memdesc:af1bfebfabccb188c5773c32f7ad4d893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the parameters (except warning related) from that platform interface, and the configuration files. <br /></td></tr>
-<tr class="separator:af1bfebfabccb188c5773c32f7ad4d893"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af43a9c589d4b9540f525feaa4b0cb393"><td class="memItemLeft" align="right" valign="top"><a id="af43a9c589d4b9540f525feaa4b0cb393"></a>
-virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#af43a9c589d4b9540f525feaa4b0cb393">GetAzslCompilerWarningParameters</a> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">RHI::ShaderCompilerArguments</a> &amp;shaderCompilerArguments) const =0</td></tr>
-<tr class="memdesc:af43a9c589d4b9540f525feaa4b0cb393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get only the warning-related parameters from that platform interface. <br /></td></tr>
-<tr class="separator:af43a9c589d4b9540f525feaa4b0cb393"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a317aeae683a6c14c9961d4d5cecc39f4"><td class="memItemLeft" align="right" valign="top"><a id="a317aeae683a6c14c9961d4d5cecc39f4"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#a317aeae683a6c14c9961d4d5cecc39f4">BuildHasDebugInfo</a> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">RHI::ShaderCompilerArguments</a> &amp;shaderCompilerArguments) const =0</td></tr>
-<tr class="memdesc:a317aeae683a6c14c9961d4d5cecc39f4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_r_h_i_1_1_query.html">Query</a> whether the shaders are set to build with debug information. <br /></td></tr>
-<tr class="separator:a317aeae683a6c14c9961d4d5cecc39f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9257e1f3cfee92c5afa313e60a31a60a"><td class="memItemLeft" align="right" valign="top"><a id="a9257e1f3cfee92c5afa313e60a31a60a"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#a9257e1f3cfee92c5afa313e60a31a60a">BuildHasDebugInfo</a> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_build_arguments.html">RHI::ShaderBuildArguments</a> &amp;shaderBuildArguments) const</td></tr>
+<tr class="memdesc:a9257e1f3cfee92c5afa313e60a31a60a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_r_h_i_1_1_query.html">Query</a> whether the shaders are set to build with debug information. <br /></td></tr>
+<tr class="separator:a9257e1f3cfee92c5afa313e60a31a60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f1628fd206ca86ecf66bbe0ca38f51f"><td class="memItemLeft" align="right" valign="top"><a id="a8f1628fd206ca86ecf66bbe0ca38f51f"></a>
 virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#a8f1628fd206ca86ecf66bbe0ca38f51f">GetAzslHeader</a> (const AssetBuilderSDK::PlatformInfo &amp;platform) const =0</td></tr>
 <tr class="memdesc:a8f1628fd206ca86ecf66bbe0ca38f51f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the filename of include file to prefix shader programs with. <br /></td></tr>
 <tr class="separator:a8f1628fd206ca86ecf66bbe0ca38f51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b45b846ed42284e6e4d56fbe43da68a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#a6b45b846ed42284e6e4d56fbe43da68a">BuildPipelineLayoutDescriptor</a> (RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_layout_descriptor.html">RHI::PipelineLayoutDescriptor</a> &gt; pipelineLayoutDescriptor, const ShaderResourceGroupInfoList &amp;srgInfoList, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_platform_interface_1_1_root_constants_info.html">RootConstantsInfo</a> &amp;rootConstantsInfo, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">ShaderCompilerArguments</a> &amp;shaderCompilerArguments)=0</td></tr>
-<tr class="separator:a6b45b846ed42284e6e4d56fbe43da68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a867a40b39e8a8116dafdad4d528497d9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#a867a40b39e8a8116dafdad4d528497d9">BuildPipelineLayoutDescriptor</a> (RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_layout_descriptor.html">RHI::PipelineLayoutDescriptor</a> &gt; pipelineLayoutDescriptor, const ShaderResourceGroupInfoList &amp;srgInfoList, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_platform_interface_1_1_root_constants_info.html">RootConstantsInfo</a> &amp;rootConstantsInfo, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_build_arguments.html">RHI::ShaderBuildArguments</a> &amp;shaderBuildArguments)=0</td></tr>
+<tr class="separator:a867a40b39e8a8116dafdad4d528497d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a326807cea88fa799aa4d108e2e68ea40"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#a326807cea88fa799aa4d108e2e68ea40">VariantCompilationRequiresSrgLayoutData</a> () const</td></tr>
 <tr class="separator:a326807cea88fa799aa4d108e2e68ea40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3978e7a4f57601df600af2e5fb9b07d3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#a3978e7a4f57601df600af2e5fb9b07d3">GetAPIUniqueIndex</a> () const</td></tr>
@@ -131,8 +123,8 @@ virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class provides a platform agnostic interface for the creation and manipulation of platform shader objects. WARNING: The <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html">ShaderPlatformInterface</a> objects are singletons and will be used to process multiple shader compilation jobs. Do not store per-job configuration data in any <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html">ShaderPlatformInterface</a> classes, as it may get stomped. Instead, pass any per-job configuration on the call stack. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6b45b846ed42284e6e4d56fbe43da68a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b45b846ed42284e6e4d56fbe43da68a">&#9670;&nbsp;</a></span>BuildPipelineLayoutDescriptor()</h2>
+<a id="a867a40b39e8a8116dafdad4d528497d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a867a40b39e8a8116dafdad4d528497d9">&#9670;&nbsp;</a></span>BuildPipelineLayoutDescriptor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,8 +153,8 @@ virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">ShaderCompilerArguments</a> &amp;&#160;</td>
-          <td class="paramname"><em>shaderCompilerArguments</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_build_arguments.html">RHI::ShaderBuildArguments</a> &amp;&#160;</td>
+          <td class="paramname"><em>shaderBuildArguments</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -228,7 +220,7 @@ virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
   </tr>
 </table>
 </div><div class="memdoc">
-<p>In general, shader compilation doesn't require SRG Layout data, but RHIs like Metal don't do well if unused resources (descriptors) are not bound. If this function returns TRUE the ShaderVariantAssetBuilder will invoke <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#a6b45b846ed42284e6e4d56fbe43da68a">BuildPipelineLayoutDescriptor()</a> so the RHI gets the chance to build SRG Layout data which will be useful when compiling MetalISL to Metal byte code. </p>
+<p>In general, shader compilation doesn't require SRG Layout data, but RHIs like Metal don't do well if unused resources (descriptors) are not bound. If this function returns TRUE the ShaderVariantAssetBuilder will invoke <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#a867a40b39e8a8116dafdad4d528497d9">BuildPipelineLayoutDescriptor()</a> so the RHI gets the chance to build SRG Layout data which will be useful when compiling MetalISL to Metal byte code. </p>
 
 </div>
 </div>
@@ -238,7 +230,7 @@ virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:27 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:21 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

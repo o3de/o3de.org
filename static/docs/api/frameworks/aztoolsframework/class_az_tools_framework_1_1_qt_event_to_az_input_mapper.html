@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -49,15 +49,16 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_az_tools_framework_1_1_qt_event_to_az_input_mapper-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::QtEventToAzInputMapper Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;QtEventToAzInputManager.h&gt;</code></p>
+<p><code>#include &lt;QtEventToAzInputMapper.h&gt;</code></p>
 
-<p>Inherits QObject.</p>
+<p>Inherits QObject, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
@@ -77,6 +78,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a66c0ce7ab533c6195e0f33af53d2f21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa21e3a70523bfce40dbc6d28b2476049"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_qt_event_to_az_input_mapper.html#aa21e3a70523bfce40dbc6d28b2476049">SetCursorCaptureEnabled</a> (bool enabled)</td></tr>
 <tr class="separator:aa21e3a70523bfce40dbc6d28b2476049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf0521835c4c6943e26ae567912482f2"><td class="memItemLeft" align="right" valign="top"><a id="aaf0521835c4c6943e26ae567912482f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_qt_event_to_az_input_mapper.html#aaf0521835c4c6943e26ae567912482f2">SetCursorMode</a> (AzToolsFramework::CursorInputMode mode)</td></tr>
+<tr class="memdesc:aaf0521835c4c6943e26ae567912482f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cursor mode. <br /></td></tr>
+<tr class="separator:aaf0521835c4c6943e26ae567912482f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9089998fa5a6b271f3f782b76a6d8748"><td class="memItemLeft" align="right" valign="top"><a id="a9089998fa5a6b271f3f782b76a6d8748"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOverrideCursor</b> (<a class="el" href="namespace_az_tools_framework_1_1_viewport_interaction.html#ab44dbc924ebc5684304baf34fd5dc4d0">ViewportInteraction::CursorStyleOverride</a> cursorStyleOverride)</td></tr>
 <tr class="separator:a9089998fa5a6b271f3f782b76a6d8748"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -86,6 +91,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearOverrideCursor</
 <tr class="memitem:a9da5a4d960dced2ebc709bb733227636"><td class="memItemLeft" align="right" valign="top"><a id="a9da5a4d960dced2ebc709bb733227636"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObject *object, QEvent *event) override</td></tr>
 <tr class="separator:a9da5a4d960dced2ebc709bb733227636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a5e14cb93b806b050354dfb1150a76811"><td class="memItemLeft" align="right" valign="top"><a id="a5e14cb93b806b050354dfb1150a76811"></a>
+AZ::s32&#160;</td><td class="memItemRight" valign="bottom"><b>GetPriority</b> () const override</td></tr>
+<tr class="separator:a5e14cb93b806b050354dfb1150a76811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a424c69f08b852506eff8fa74bc21f0fc"><td class="memItemLeft" align="right" valign="top"><a id="a424c69f08b852506eff8fa74bc21f0fc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnInputChannelEvent</b> (const AzFramework::InputChannel &amp;inputChannel, bool &amp;hasBeenConsumed) override</td></tr>
+<tr class="separator:a424c69f08b852506eff8fa74bc21f0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Maps events from the Qt input system to synthetic InputChannels in AzFramework that can be used by AzFramework::ViewportControllers. </p>
@@ -167,17 +181,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObj
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets whether or not the cursor should be constrained to the source widget and invisible. Internally, this will reset the cursor position after each move event to ensure movement events don't allow the cursor to escape. This can be used for typical camera controls like a dolly or rotation, where mouse movement is important but cursor location is not. </p>
+<p>Sets whether or not the cursor should be constrained to the source widget and invisible. Internally, this will reset the cursor position after each move event to ensure movement events don't allow the cursor to escape. This can be used for typical camera controls like a dolly or rotation, where mouse movement is important but cursor location is not. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_az_tools_framework_1_1_qt_event_to_az_input_mapper.html#aaf0521835c4c6943e26ae567912482f2" title="Set the cursor mode.">SetCursorMode()</a> </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Code/Framework/AzToolsFramework/AzToolsFramework/Input/QtEventToAzInputManager.h</li>
+<li>Code/Framework/AzToolsFramework/AzToolsFramework/Input/QtEventToAzInputMapper.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:37 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:31 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

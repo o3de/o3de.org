@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -76,6 +76,10 @@ Protected Types</h2></td></tr>
 <b>Multiple</b>
  }</td></tr>
 <tr class="separator:a6ac98c5fb7c79e5c33ded785da5f6ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7d6d3a4ed82f9e4d107c89f61a2b82"><td class="memItemLeft" align="right" valign="top"><a id="aba7d6d3a4ed82f9e4d107c89f61a2b82"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>OutSourceType</b> { <b>Nodeable</b>, 
+<b>InterpretedClass</b>
+ }</td></tr>
+<tr class="separator:aba7d6d3a4ed82f9e4d107c89f61a2b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b7a631d22624053fa6884b822fe12af"><td class="memItemLeft" align="right" valign="top"><a id="a8b7a631d22624053fa6884b822fe12af"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>IsLeadingCommaRequired</b> { <b>No</b>, 
 <b>Yes</b>
  }</td></tr>
@@ -103,6 +107,9 @@ const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:a919476e076f78b7e292bed3b1c69667f"><td class="memItemLeft" align="right" valign="top"><a id="a919476e076f78b7e292bed3b1c69667f"></a>
 AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetOperatorString</b> (Grammar::ExecutionTreeConstPtr execution)</td></tr>
 <tr class="separator:a919476e076f78b7e292bed3b1c69667f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade5d9accc31cc48b42175cd0a0095aa9"><td class="memItemLeft" align="right" valign="top"><a id="ade5d9accc31cc48b42175cd0a0095aa9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConstructCallRequired</b> () const</td></tr>
+<tr class="separator:ade5d9accc31cc48b42175cd0a0095aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedd547450bd099efaeaede4ebd17a457"><td class="memItemLeft" align="right" valign="top"><a id="aedd547450bd099efaeaede4ebd17a457"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDebugInfoWritten</b> () const</td></tr>
 <tr class="separator:aedd547450bd099efaeaede4ebd17a457"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,6 +134,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>TranslateClassClose</
 <tr class="memitem:a9621dd046bc2636d7c0587eef844eed6"><td class="memItemLeft" align="right" valign="top"><a id="a9621dd046bc2636d7c0587eef844eed6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>TranslateClassOpen</b> ()</td></tr>
 <tr class="separator:a9621dd046bc2636d7c0587eef844eed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff71cb75ed5ffefba47fb307057b069a"><td class="memItemLeft" align="right" valign="top"><a id="aff71cb75ed5ffefba47fb307057b069a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TranslateConstructMethod</b> ()</td></tr>
+<tr class="separator:aff71cb75ed5ffefba47fb307057b069a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ad744469047b6c30901eefb3b029d90"><td class="memItemLeft" align="right" valign="top"><a id="a4ad744469047b6c30901eefb3b029d90"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>TranslateConstruction</b> ()</td></tr>
 <tr class="separator:a4ad744469047b6c30901eefb3b029d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,12 +197,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>TranslateFunctionDefi
 <tr class="memitem:a6d786763e6abfc638b9f6765c4946dd0"><td class="memItemLeft" align="right" valign="top"><a id="a6d786763e6abfc638b9f6765c4946dd0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>TranslateInheritance</b> ()</td></tr>
 <tr class="separator:a6d786763e6abfc638b9f6765c4946dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcc586bdb059a9a155f959be4f363773"><td class="memItemLeft" align="right" valign="top"><a id="adcc586bdb059a9a155f959be4f363773"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>TranslateNodeableOut</b> (Grammar::VariableConstPtr host, Grammar::ExecutionTreeConstPtr execution)</td></tr>
-<tr class="separator:adcc586bdb059a9a155f959be4f363773"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c13d46d8f3c1f56360e46c7176d0c55"><td class="memItemLeft" align="right" valign="top"><a id="a0c13d46d8f3c1f56360e46c7176d0c55"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>TranslateNodeableOuts</b> (Grammar::VariableConstPtr host, Grammar::ExecutionTreeConstPtr execution)</td></tr>
-<tr class="separator:a0c13d46d8f3c1f56360e46c7176d0c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a913ccd41db7064e8aef0ce4575fa660f"><td class="memItemLeft" align="right" valign="top"><a id="a913ccd41db7064e8aef0ce4575fa660f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TranslateExecutionOut</b> (Grammar::VariableConstPtr host, Grammar::ExecutionTreeConstPtr execution, OutSourceType sourceType)</td></tr>
+<tr class="separator:a913ccd41db7064e8aef0ce4575fa660f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7249b5dcdb34778a9e037b3c8cdf04c4"><td class="memItemLeft" align="right" valign="top"><a id="a7249b5dcdb34778a9e037b3c8cdf04c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TranslateExecutionOuts</b> (Grammar::VariableConstPtr host, Grammar::ExecutionTreeConstPtr execution)</td></tr>
+<tr class="separator:a7249b5dcdb34778a9e037b3c8cdf04c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb47b66d3eed58ababd00263adeaaeb7"><td class="memItemLeft" align="right" valign="top"><a id="aeb47b66d3eed58ababd00263adeaaeb7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>TranslateNodeableParse</b> ()</td></tr>
 <tr class="separator:aeb47b66d3eed58ababd00263adeaaeb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,6 +230,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteConstructionDepe
 <tr class="memitem:a08f12a260a5fdef0e99e892037341856"><td class="memItemLeft" align="right" valign="top"><a id="a08f12a260a5fdef0e99e892037341856"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteConstructionInput</b> ()</td></tr>
 <tr class="separator:a08f12a260a5fdef0e99e892037341856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade692a99a22f54cfd9e0a74bff2c642d"><td class="memItemLeft" align="right" valign="top"><a id="ade692a99a22f54cfd9e0a74bff2c642d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteConstructMethod</b> ()</td></tr>
+<tr class="separator:ade692a99a22f54cfd9e0a74bff2c642d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a116395091498f9b1b999f10dfff29f7d"><td class="memItemLeft" align="right" valign="top"><a id="a116395091498f9b1b999f10dfff29f7d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteCycleBegin</b> (Grammar::ExecutionTreeConstPtr execution)</td></tr>
 <tr class="separator:a116395091498f9b1b999f10dfff29f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -292,6 +305,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteInfiniteLoopChec
 <tr class="memitem:aa6d8fe1d13b6fac0c865d99f45393d27"><td class="memItemLeft" align="right" valign="top"><a id="aa6d8fe1d13b6fac0c865d99f45393d27"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteInfiniteLoopCheckPre</b> (Grammar::ExecutionTreeConstPtr execution)</td></tr>
 <tr class="separator:aa6d8fe1d13b6fac0c865d99f45393d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5685c7759736491b110c09df132cd011"><td class="memItemLeft" align="right" valign="top"><a id="a5685c7759736491b110c09df132cd011"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteInitializeLocalSelfEntityId</b> ()</td></tr>
+<tr class="separator:a5685c7759736491b110c09df132cd011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a804bfedea95c149483d17b76431dbb3a"><td class="memItemLeft" align="right" valign="top"><a id="a804bfedea95c149483d17b76431dbb3a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteLocalInputCreation</b> (Grammar::ExecutionTreeConstPtr execution)</td></tr>
 <tr class="separator:a804bfedea95c149483d17b76431dbb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -437,9 +453,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:afa9ed9b1f86f1902ff109714bc8ef575"><td class="memItemLeft" align="right" valign="top"><a id="afa9ed9b1f86f1902ff109714bc8ef575"></a>
 <a class="el" href="struct_script_canvas_1_1_translation_1_1_runtime_inputs.html">RuntimeInputs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_runtimeInputs</b></td></tr>
 <tr class="separator:afa9ed9b1f86f1902ff109714bc8ef575"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a551bf00ebc58c67c4f7353c37e2bc2c2"><td class="memItemLeft" align="right" valign="top"><a id="a551bf00ebc58c67c4f7353c37e2bc2c2"></a>
-BuildConfiguration&#160;</td><td class="memItemRight" valign="bottom"><b>m_executionConfig</b> = BuildConfiguration::Release</td></tr>
-<tr class="separator:a551bf00ebc58c67c4f7353c37e2bc2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a6be51d0758099099dee993cea03706"><td class="memItemLeft" align="right" valign="top"><a id="a2a6be51d0758099099dee993cea03706"></a>
+BuildConfiguration&#160;</td><td class="memItemRight" valign="bottom"><b>m_buildConfiguration</b> = BuildConfiguration::Release</td></tr>
+<tr class="separator:a2a6be51d0758099099dee993cea03706"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55c50c3cbdd98deb36660ce804dbe6ae"><td class="memItemLeft" align="right" valign="top"><a id="a55c50c3cbdd98deb36660ce804dbe6ae"></a>
 FunctionBlockConfig&#160;</td><td class="memItemRight" valign="bottom"><b>m_functionBlockConfig</b> = FunctionBlockConfig::Ignored</td></tr>
 <tr class="separator:a55c50c3cbdd98deb36660ce804dbe6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -479,7 +495,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSuccessfull</b> () 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:08 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:35 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

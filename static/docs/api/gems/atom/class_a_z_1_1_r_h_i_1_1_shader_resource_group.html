@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -95,6 +95,32 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html#a0da77933c795b8ff327936f589f1c61a">IsQueuedForCompile</a> () const</td></tr>
 <tr class="memdesc:a0da77933c795b8ff327936f589f1c61a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the group is currently queued for compilation. <br /></td></tr>
 <tr class="separator:a0da77933c795b8ff327936f589f1c61a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c7a6566abdebe6c78f9c7ea77ee5fda"><td class="memItemLeft" align="right" valign="top"><a id="a3c7a6566abdebe6c78f9c7ea77ee5fda"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html#a3c7a6566abdebe6c78f9c7ea77ee5fda">DisableCompilationForAllResourceTypes</a> ()</td></tr>
+<tr class="memdesc:a3c7a6566abdebe6c78f9c7ea77ee5fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the update mask after m_updateMaskResetLatency number of compiles. <br /></td></tr>
+<tr class="separator:a3c7a6566abdebe6c78f9c7ea77ee5fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a636414bf21a37c8a4021c84970e47819"><td class="memItemLeft" align="right" valign="top"><a id="a636414bf21a37c8a4021c84970e47819"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html#a636414bf21a37c8a4021c84970e47819">IsAnyResourceTypeUpdated</a> () const</td></tr>
+<tr class="memdesc:a636414bf21a37c8a4021c84970e47819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if any of the resource type has been enabled for compilation. <br /></td></tr>
+<tr class="separator:a636414bf21a37c8a4021c84970e47819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09bc70d145ee9216f2ebd88b451e0262"><td class="memItemLeft" align="right" valign="top"><a id="a09bc70d145ee9216f2ebd88b451e0262"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html#a09bc70d145ee9216f2ebd88b451e0262">IsResourceTypeEnabledForCompilation</a> (uint32_t resourceTypeMask) const</td></tr>
+<tr class="memdesc:a09bc70d145ee9216f2ebd88b451e0262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a specific resource type has been enabled for compilation. <br /></td></tr>
+<tr class="separator:a09bc70d145ee9216f2ebd88b451e0262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1fb010ed6e0f0c2d7152bdcc8a0d340"><td class="memItemLeft" align="right" valign="top"><a id="ab1fb010ed6e0f0c2d7152bdcc8a0d340"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html#ab1fb010ed6e0f0c2d7152bdcc8a0d340">EnableRhiResourceTypeCompilation</a> (const ShaderResourceGroupData::ResourceTypeMask resourceTypeMask)</td></tr>
+<tr class="memdesc:ab1fb010ed6e0f0c2d7152bdcc8a0d340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the m_rhiUpdateMask for a given resource type which will ensure we will compile that type for the current frame. <br /></td></tr>
+<tr class="separator:ab1fb010ed6e0f0c2d7152bdcc8a0d340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42510f2336f4f5cbaa49c85a3f259ecb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html#a42510f2336f4f5cbaa49c85a3f259ecb">ResetResourceTypeIteration</a> (const ShaderResourceGroupData::ResourceType resourceType)</td></tr>
+<tr class="separator:a42510f2336f4f5cbaa49c85a3f259ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7251016ab928d75d3c3e10de82e27a2"><td class="memItemLeft" align="right" valign="top"><a id="ac7251016ab928d75d3c3e10de82e27a2"></a>
+HashValue64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html#ac7251016ab928d75d3c3e10de82e27a2">GetViewHash</a> (const AZ::Name &amp;viewName)</td></tr>
+<tr class="memdesc:ac7251016ab928d75d3c3e10de82e27a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the view hash stored within m_viewHash. <br /></td></tr>
+<tr class="separator:ac7251016ab928d75d3c3e10de82e27a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83119fa80fcea8bbe946a2a4c63befba"><td class="memItemLeft" align="right" valign="top"><a id="a83119fa80fcea8bbe946a2a4c63befba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html#a83119fa80fcea8bbe946a2a4c63befba">UpdateViewHash</a> (const AZ::Name &amp;viewName, const HashValue64 viewHash)</td></tr>
+<tr class="memdesc:a83119fa80fcea8bbe946a2a4c63befba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the view hash within m_viewHash. <br /></td></tr>
+<tr class="separator:a83119fa80fcea8bbe946a2a4c63befba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_r_h_i_1_1_resource"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_h_i_1_1_resource')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource.html">AZ::RHI::Resource</a></td></tr>
 <tr class="memitem:a29a6f823e06abcd9f5025f0395c0a4fe inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource"><td class="memItemLeft" align="right" valign="top"><a id="a29a6f823e06abcd9f5025f0395c0a4fe"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_resource.html">Resource</a>, &quot;{9D02CDAC-80EB-4B77-8E62-849AC6E69206}&quot;, DeviceObject)</td></tr>
@@ -233,13 +259,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="a42510f2336f4f5cbaa49c85a3f259ecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42510f2336f4f5cbaa49c85a3f259ecb">&#9670;&nbsp;</a></span>ResetResourceTypeIteration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RHI::ShaderResourceGroup::ResetResourceTypeIteration </td>
+          <td>(</td>
+          <td class="paramtype">const ShaderResourceGroupData::ResourceType&#160;</td>
+          <td class="paramname"><em>resourceType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reset the iteration counter to 0 for a resource type which will ensure that the given type will be compiled for another m_updateMaskResetLatency number of Compile calls </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/RHI/Code/Include/Atom/RHI/ShaderResourceGroup.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:27 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:21 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

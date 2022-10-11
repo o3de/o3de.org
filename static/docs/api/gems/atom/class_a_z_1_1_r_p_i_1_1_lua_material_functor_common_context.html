@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -67,12 +67,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a06dccfc7ed2cdc40f003f9ac2672df0b"><td class="memItemLeft" align="right" valign="top"><a id="a06dccfc7ed2cdc40f003f9ac2672df0b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_lua_material_functor_common_context.html">AZ::RPI::LuaMaterialFunctorCommonContext</a>, &quot;{2CCCB9A9-AD4F-447C-B587-E7A91CEA8088}&quot;)</td></tr>
 <tr class="separator:a06dccfc7ed2cdc40f003f9ac2672df0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8992fc97ad7fcd56e053f2ccce49c5c3"><td class="memItemLeft" align="right" valign="top"><a id="a8992fc97ad7fcd56e053f2ccce49c5c3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>LuaMaterialFunctorCommonContext</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_functor_1_1_runtime_context.html">MaterialFunctor::RuntimeContext</a> *runtimeContextImpl, const MaterialPropertyFlags *materialPropertyDependencies, const AZStd::string &amp;propertyNamePrefix, const AZStd::string &amp;srgNamePrefix, const AZStd::string &amp;optionsNamePrefix)</td></tr>
-<tr class="separator:a8992fc97ad7fcd56e053f2ccce49c5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b35465e185d438b3c6ffa43c38a92e5"><td class="memItemLeft" align="right" valign="top"><a id="a8b35465e185d438b3c6ffa43c38a92e5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>LuaMaterialFunctorCommonContext</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_functor_1_1_editor_context.html">MaterialFunctor::EditorContext</a> *editorContextImpl, const MaterialPropertyFlags *materialPropertyDependencies, const AZStd::string &amp;propertyNamePrefix, const AZStd::string &amp;srgNamePrefix, const AZStd::string &amp;optionsNamePrefix)</td></tr>
-<tr class="separator:a8b35465e185d438b3c6ffa43c38a92e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32c90c6d3938ef9748fff5956e7898c6"><td class="memItemLeft" align="right" valign="top"><a id="a32c90c6d3938ef9748fff5956e7898c6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LuaMaterialFunctorCommonContext</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_functor_1_1_runtime_context.html">MaterialFunctor::RuntimeContext</a> *runtimeContextImpl, const MaterialPropertyFlags *materialPropertyDependencies, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_name_context.html">MaterialNameContext</a> &amp;materialNameContext)</td></tr>
+<tr class="separator:a32c90c6d3938ef9748fff5956e7898c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e96236fcfa0a2a7977e28fa522ec12"><td class="memItemLeft" align="right" valign="top"><a id="a45e96236fcfa0a2a7977e28fa522ec12"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LuaMaterialFunctorCommonContext</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_functor_1_1_editor_context.html">MaterialFunctor::EditorContext</a> *editorContextImpl, const MaterialPropertyFlags *materialPropertyDependencies, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_name_context.html">MaterialNameContext</a> &amp;materialNameContext)</td></tr>
+<tr class="separator:a45e96236fcfa0a2a7977e28fa522ec12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91866221b324fa04ec69c5a9aab47050"><td class="memItemLeft" align="right" valign="top"><a id="a91866221b324fa04ec69c5a9aab47050"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_lua_material_functor_common_context.html#a91866221b324fa04ec69c5a9aab47050">CheckPsoChangesAllowed</a> ()</td></tr>
 <tr class="memdesc:a91866221b324fa04ec69c5a9aab47050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false if PSO changes are not allowed, and may report errors or warnings. <br /></td></tr>
@@ -102,15 +102,9 @@ AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaterialP
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ad33746fc44a667bda5446b523fa08064"><td class="memItemLeft" align="right" valign="top"><a id="ad33746fc44a667bda5446b523fa08064"></a>
-const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_propertyNamePrefix</b></td></tr>
-<tr class="separator:ad33746fc44a667bda5446b523fa08064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac470cad7d7cb25f35034963e14b2b3b8"><td class="memItemLeft" align="right" valign="top"><a id="ac470cad7d7cb25f35034963e14b2b3b8"></a>
-const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_srgNamePrefix</b></td></tr>
-<tr class="separator:ac470cad7d7cb25f35034963e14b2b3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b51db42fdf8822d6b28faf89dc7753f"><td class="memItemLeft" align="right" valign="top"><a id="a6b51db42fdf8822d6b28faf89dc7753f"></a>
-const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_optionsNamePrefix</b></td></tr>
-<tr class="separator:a6b51db42fdf8822d6b28faf89dc7753f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0540a958ee48198daef96fbfd303e9"><td class="memItemLeft" align="right" valign="top"><a id="a5e0540a958ee48198daef96fbfd303e9"></a>
+const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_name_context.html">MaterialNameContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialNameContext</b></td></tr>
+<tr class="separator:a5e0540a958ee48198daef96fbfd303e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides some shared code for <a class="el" href="class_a_z_1_1_r_p_i_1_1_lua_material_functor_runtime_context.html" title="Wraps MaterialFunctor::RuntimeContext with lua bindings.">LuaMaterialFunctorRuntimeContext</a> and <a class="el" href="class_a_z_1_1_r_p_i_1_1_lua_material_functor_editor_context.html" title="Wraps MaterialFunctor::EditorContext with lua bindings.">LuaMaterialFunctorEditorContext</a>. </p>
@@ -120,7 +114,7 @@ const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:28 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

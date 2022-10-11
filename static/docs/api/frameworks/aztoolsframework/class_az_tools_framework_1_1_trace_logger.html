@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -70,10 +70,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a96f4524f919c433ceaa38122041191aa"><td class="memItemLeft" align="right" valign="top"><a id="a96f4524f919c433ceaa38122041191aa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_trace_logger.html#a96f4524f919c433ceaa38122041191aa">PrepareLogFile</a> (const AZStd::string &amp;logFileName)</td></tr>
-<tr class="memdesc:a96f4524f919c433ceaa38122041191aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open log file and dump log sink into it. <br /></td></tr>
-<tr class="separator:a96f4524f919c433ceaa38122041191aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae4d077bb38eef33def52f546ecaba0"><td class="memItemLeft" align="right" valign="top"><a id="a5ae4d077bb38eef33def52f546ecaba0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_trace_logger.html#a5ae4d077bb38eef33def52f546ecaba0">OpenLogFile</a> (const AZStd::string &amp;logFileName, bool clearLogFile)</td></tr>
+<tr class="memdesc:a5ae4d077bb38eef33def52f546ecaba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open log file and dump log sink into it. <br /></td></tr>
+<tr class="separator:a5ae4d077bb38eef33def52f546ecaba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7deb648780f0f95714e666194638c68a"><td class="memItemLeft" align="right" valign="top"><a id="a7deb648780f0f95714e666194638c68a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_trace_logger.html#a7deb648780f0f95714e666194638c68a">AddWindowFilter</a> (const AZStd::string &amp;filter)</td></tr>
 <tr class="memdesc:a7deb648780f0f95714e666194638c68a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add filter to ignore messages for windows with matching names. <br /></td></tr>
@@ -107,9 +107,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnOutput</b> (const c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a793dfe91f1e00044eaec6906be2406ca"><td class="memItemLeft" align="right" valign="top"><a id="a793dfe91f1e00044eaec6906be2406ca"></a>
-AZStd::vector&lt; <a class="el" href="struct_az_tools_framework_1_1_trace_logger_1_1_log_message.html">LogMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_startupLogSink</b></td></tr>
-<tr class="separator:a793dfe91f1e00044eaec6906be2406ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0547bee8ed4381466587cb71e494c4cb"><td class="memItemLeft" align="right" valign="top"><a id="a0547bee8ed4381466587cb71e494c4cb"></a>
+AZStd::list&lt; <a class="el" href="struct_az_tools_framework_1_1_trace_logger_1_1_log_message.html">LogMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_startupLogSink</b></td></tr>
+<tr class="separator:a0547bee8ed4381466587cb71e494c4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad30b94bdbac149e44fa7a6d7e790bb32"><td class="memItemLeft" align="right" valign="top"><a id="ad30b94bdbac149e44fa7a6d7e790bb32"></a>
 AZStd::unordered_set&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_windowFilters</b></td></tr>
 <tr class="separator:ad30b94bdbac149e44fa7a6d7e790bb32"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,7 +128,7 @@ AZStd::unique_ptr&lt; AzFramework::LogFile &gt;&#160;</td><td class="memItemRigh
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:38 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:31 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

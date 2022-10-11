@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine GraphModel Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -115,6 +115,21 @@ virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <tr class="memitem:a3ebff175c2c38e6d0b6ca9891c086123 inherit pub_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a3ebff175c2c38e6d0b6ca9891c086123"></a>
 NodeId&#160;</td><td class="memItemRight" valign="bottom"><b>GetId</b> () const</td></tr>
 <tr class="separator:a3ebff175c2c38e6d0b6ca9891c086123 inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff52ce23b5d762f274d08e6cfbaacab inherit pub_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="afff52ce23b5d762f274d08e6cfbaacab"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasConnections</b> () const</td></tr>
+<tr class="separator:afff52ce23b5d762f274d08e6cfbaacab inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4565431a730badb64bb27fccf1cc6c4 inherit pub_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="ad4565431a730badb64bb27fccf1cc6c4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasInputConnections</b> () const</td></tr>
+<tr class="separator:ad4565431a730badb64bb27fccf1cc6c4 inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa50a9babcd9dd1f333990984f5479210 inherit pub_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="aa50a9babcd9dd1f333990984f5479210"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasOutputConnections</b> () const</td></tr>
+<tr class="separator:aa50a9babcd9dd1f333990984f5479210 inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cfa118a46c886ce81ebd3501ff0e2c8 inherit pub_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a4cfa118a46c886ce81ebd3501ff0e2c8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasInputConnectionFromNode</b> (ConstNodePtr node) const</td></tr>
+<tr class="separator:a4cfa118a46c886ce81ebd3501ff0e2c8 inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e10447a1442e7f0f612c9798f49b5d inherit pub_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a45e10447a1442e7f0f612c9798f49b5d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasOutputConnectionToNode</b> (ConstNodePtr node) const</td></tr>
+<tr class="separator:a45e10447a1442e7f0f612c9798f49b5d inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ec2d4562c94b609985c000ee19d32a9 inherit pub_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a6ec2d4562c94b609985c000ee19d32a9"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Contains</b> (ConstSlotPtr slot) const</td></tr>
 <tr class="separator:a6ec2d4562c94b609985c000ee19d32a9 inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,10 +160,6 @@ const ExtendableSlotSet &amp;&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="separator:ab0338a2432b41c7be16ddb6616f1bbcd inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a934d5e0213dc1777572dd7ba49ff320e inherit pub_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#a934d5e0213dc1777572dd7ba49ff320e">GetExtendableSlotCount</a> (const SlotName &amp;name)</td></tr>
 <tr class="separator:a934d5e0213dc1777572dd7ba49ff320e inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad289e26aa0e0f6ef1cd0221caf2b4ba4 inherit pub_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="ad289e26aa0e0f6ef1cd0221caf2b4ba4"></a>
-virtual DataTypePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#ad289e26aa0e0f6ef1cd0221caf2b4ba4">GetDataType</a> (ConstSlotPtr slot) const</td></tr>
-<tr class="memdesc:ad289e26aa0e0f6ef1cd0221caf2b4ba4 inherit pub_methods_class_graph_model_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> for the given slot, which can be overriden for individual nodes to extend. <br /></td></tr>
-<tr class="separator:ad289e26aa0e0f6ef1cd0221caf2b4ba4 inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93930637dbf0c06c1be0fe192047841b inherit pub_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#a93930637dbf0c06c1be0fe192047841b">DeleteSlot</a> (SlotPtr slot)</td></tr>
 <tr class="separator:a93930637dbf0c06c1be0fe192047841b inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac894c83bbfe37a2cf0655c8778089183 inherit pub_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#ac894c83bbfe37a2cf0655c8778089183">CanDeleteSlot</a> (ConstSlotPtr slot) const</td></tr>
@@ -169,10 +180,10 @@ virtual DataTypePtr&#160;</td><td class="memItemRight" valign="bottom"><a class=
 GraphPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_graph_element.html#a20fbcc5a55cdac832f747c31521cfa49">GetGraph</a> () const</td></tr>
 <tr class="memdesc:a20fbcc5a55cdac832f747c31521cfa49 inherit pub_methods_class_graph_model_1_1_graph_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="class_graph_model_1_1_graph.html">Graph</a> that owns this <a class="el" href="class_graph_model_1_1_graph_element.html" title="!! Start in Graph.h for high level GraphModel documentation !!!">GraphElement</a>. <br /></td></tr>
 <tr class="separator:a20fbcc5a55cdac832f747c31521cfa49 inherit pub_methods_class_graph_model_1_1_graph_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfc831b221a7c2b886bd40de214d6d72 inherit pub_methods_class_graph_model_1_1_graph_element"><td class="memItemLeft" align="right" valign="top"><a id="acfc831b221a7c2b886bd40de214d6d72"></a>
-IGraphContextPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_graph_element.html#acfc831b221a7c2b886bd40de214d6d72">GetGraphContext</a> () const</td></tr>
-<tr class="memdesc:acfc831b221a7c2b886bd40de214d6d72 inherit pub_methods_class_graph_model_1_1_graph_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="class_graph_model_1_1_i_graph_context.html" title="!! Start in Graph.h for high level GraphModel documentation !!!">IGraphContext</a> for this <a class="el" href="class_graph_model_1_1_graph_element.html" title="!! Start in Graph.h for high level GraphModel documentation !!!">GraphElement</a>. <br /></td></tr>
-<tr class="separator:acfc831b221a7c2b886bd40de214d6d72 inherit pub_methods_class_graph_model_1_1_graph_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3313e4dcd1a9823329b4d60ac8bde91c inherit pub_methods_class_graph_model_1_1_graph_element"><td class="memItemLeft" align="right" valign="top"><a id="a3313e4dcd1a9823329b4d60ac8bde91c"></a>
+GraphContextPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_graph_element.html#a3313e4dcd1a9823329b4d60ac8bde91c">GetGraphContext</a> () const</td></tr>
+<tr class="memdesc:a3313e4dcd1a9823329b4d60ac8bde91c inherit pub_methods_class_graph_model_1_1_graph_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="class_graph_model_1_1_graph_context.html" title="!! Start in Graph.h for high level GraphModel documentation !!!">GraphContext</a> for this <a class="el" href="class_graph_model_1_1_graph_element.html" title="!! Start in Graph.h for high level GraphModel documentation !!!">GraphElement</a>. <br /></td></tr>
+<tr class="separator:a3313e4dcd1a9823329b4d60ac8bde91c inherit pub_methods_class_graph_model_1_1_graph_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -343,7 +354,7 @@ AZStd::weak_ptr&lt; <a class="el" href="class_graph_model_1_1_graph.html">Graph<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:45 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:58 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

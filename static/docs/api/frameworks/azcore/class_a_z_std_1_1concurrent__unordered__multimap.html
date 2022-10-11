@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -63,9 +63,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:a9b19af4a192d7ef1ee4f823728fb9eb7"><td class="memItemLeft" align="right" valign="top"><a id="a9b19af4a192d7ef1ee4f823728fb9eb7"></a>
 typedef base_type::key_type&#160;</td><td class="memItemRight" valign="bottom"><b>key_type</b></td></tr>
 <tr class="separator:a9b19af4a192d7ef1ee4f823728fb9eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0762514f405b27544ed9e0dae4f55f1"><td class="memItemLeft" align="right" valign="top"><a id="ac0762514f405b27544ed9e0dae4f55f1"></a>
-typedef base_type::key_eq&#160;</td><td class="memItemRight" valign="bottom"><b>key_eq</b></td></tr>
-<tr class="separator:ac0762514f405b27544ed9e0dae4f55f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c5a5bd1d9b5d4996207158e3b78f38"><td class="memItemLeft" align="right" valign="top"><a id="a26c5a5bd1d9b5d4996207158e3b78f38"></a>
+typedef base_type::key_equal&#160;</td><td class="memItemRight" valign="bottom"><b>key_equal</b></td></tr>
+<tr class="separator:a26c5a5bd1d9b5d4996207158e3b78f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae28b60de48914fc6d2c6aacc2efce3b3"><td class="memItemLeft" align="right" valign="top"><a id="ae28b60de48914fc6d2c6aacc2efce3b3"></a>
 typedef base_type::hasher&#160;</td><td class="memItemRight" valign="bottom"><b>hasher</b></td></tr>
 <tr class="separator:ae28b60de48914fc6d2c6aacc2efce3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,18 +99,18 @@ typedef base_type::value_type&#160;</td><td class="memItemRight" valign="bottom"
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9ed7bcf64aa84168f919cf20aa992227"><td class="memItemLeft" align="right" valign="top"><a id="a9ed7bcf64aa84168f919cf20aa992227"></a>
-AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>concurrent_unordered_multimap</b> (const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_eq &amp;keyEqual, const allocator_type &amp;<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>)</td></tr>
-<tr class="separator:a9ed7bcf64aa84168f919cf20aa992227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e09a40f8de052d9a3c7fc363451bfe"><td class="memItemLeft" align="right" valign="top"><a id="a36e09a40f8de052d9a3c7fc363451bfe"></a>
+AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>concurrent_unordered_multimap</b> (const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_equal &amp;keyEqual, const allocator_type &amp;<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>)</td></tr>
+<tr class="separator:a36e09a40f8de052d9a3c7fc363451bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6e567a021c31e94ce4f841cc6c7c8fd"><td class="memItemLeft" align="right" valign="top"><a id="ae6e567a021c31e94ce4f841cc6c7c8fd"></a>
 AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>concurrent_unordered_multimap</b> (size_type numBuckets)</td></tr>
 <tr class="separator:ae6e567a021c31e94ce4f841cc6c7c8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65292f5f646993f6f0e6a8e40cb24de0"><td class="memItemLeft" align="right" valign="top"><a id="a65292f5f646993f6f0e6a8e40cb24de0"></a>
-AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>concurrent_unordered_multimap</b> (size_type numBuckets, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_eq &amp;keyEqual)</td></tr>
-<tr class="separator:a65292f5f646993f6f0e6a8e40cb24de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acded9fb70e8bc257305ee6314d05581f"><td class="memItemLeft" align="right" valign="top"><a id="acded9fb70e8bc257305ee6314d05581f"></a>
-AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>concurrent_unordered_multimap</b> (size_type numBuckets, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_eq &amp;keyEqual, const allocator_type &amp;<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>)</td></tr>
-<tr class="separator:acded9fb70e8bc257305ee6314d05581f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8eb67e18b6281085ebfc7643c4d6a2"><td class="memItemLeft" align="right" valign="top"><a id="aab8eb67e18b6281085ebfc7643c4d6a2"></a>
+AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>concurrent_unordered_multimap</b> (size_type numBuckets, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_equal &amp;keyEqual)</td></tr>
+<tr class="separator:aab8eb67e18b6281085ebfc7643c4d6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a002f976a6d50f146c375fc9dadb2d16a"><td class="memItemLeft" align="right" valign="top"><a id="a002f976a6d50f146c375fc9dadb2d16a"></a>
+AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>concurrent_unordered_multimap</b> (size_type numBuckets, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_equal &amp;keyEqual, const allocator_type &amp;<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>)</td></tr>
+<tr class="separator:a002f976a6d50f146c375fc9dadb2d16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05fc8e3e4ed2f9d05faa0788f50d345a"><td class="memTemplParams" colspan="2"><a id="a05fc8e3e4ed2f9d05faa0788f50d345a"></a>
 template&lt;class Iterator &gt; </td></tr>
 <tr class="memitem:a05fc8e3e4ed2f9d05faa0788f50d345a"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><b>concurrent_unordered_multimap</b> (Iterator first, Iterator last)</td></tr>
@@ -119,14 +119,14 @@ template&lt;class Iterator &gt; </td></tr>
 template&lt;class Iterator &gt; </td></tr>
 <tr class="memitem:a3b84729c497fbd99fe45288c3615e9cd"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><b>concurrent_unordered_multimap</b> (Iterator first, Iterator last, size_type numBuckets)</td></tr>
 <tr class="separator:a3b84729c497fbd99fe45288c3615e9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d70655e25f0d1e66d39e8acce1292d9"><td class="memTemplParams" colspan="2"><a id="a6d70655e25f0d1e66d39e8acce1292d9"></a>
+<tr class="memitem:ac3fce8925d7b87657e0a0ba995fea6c8"><td class="memTemplParams" colspan="2"><a id="ac3fce8925d7b87657e0a0ba995fea6c8"></a>
 template&lt;class Iterator &gt; </td></tr>
-<tr class="memitem:a6d70655e25f0d1e66d39e8acce1292d9"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><b>concurrent_unordered_multimap</b> (Iterator first, Iterator last, size_type numBuckets, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_eq &amp;keyEqual)</td></tr>
-<tr class="separator:a6d70655e25f0d1e66d39e8acce1292d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60cca5f96fac5b3062861d2db415c47e"><td class="memTemplParams" colspan="2"><a id="a60cca5f96fac5b3062861d2db415c47e"></a>
+<tr class="memitem:ac3fce8925d7b87657e0a0ba995fea6c8"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><b>concurrent_unordered_multimap</b> (Iterator first, Iterator last, size_type numBuckets, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_equal &amp;keyEqual)</td></tr>
+<tr class="separator:ac3fce8925d7b87657e0a0ba995fea6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a861e70a476a4a547bf3663b9852342"><td class="memTemplParams" colspan="2"><a id="a1a861e70a476a4a547bf3663b9852342"></a>
 template&lt;class Iterator &gt; </td></tr>
-<tr class="memitem:a60cca5f96fac5b3062861d2db415c47e"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><b>concurrent_unordered_multimap</b> (Iterator first, Iterator last, size_type numBuckets, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_eq &amp;keyEqual, const allocator_type &amp;<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>)</td></tr>
-<tr class="separator:a60cca5f96fac5b3062861d2db415c47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a861e70a476a4a547bf3663b9852342"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><b>concurrent_unordered_multimap</b> (Iterator first, Iterator last, size_type numBuckets, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_equal &amp;keyEqual, const allocator_type &amp;<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>)</td></tr>
+<tr class="separator:a1a861e70a476a4a547bf3663b9852342"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3deadb686a284fe2398a386caa582d1"><td class="memItemLeft" align="right" valign="top"><a id="aa3deadb686a284fe2398a386caa582d1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (const key_type &amp;keyValue) const</td></tr>
 <tr class="separator:aa3deadb686a284fe2398a386caa582d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,7 +145,7 @@ class AZStd::concurrent_unordered_multimap&lt; Key, MappedType, NumLocks, Hasher
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:56 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

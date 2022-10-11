@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -59,7 +59,7 @@ $(function() {
 
 <p><code>#include &lt;FocusModeSystemComponent.h&gt;</code></p>
 
-<p>Inherits Component, and <a class="el" href="class_az_tools_framework_1_1_focus_mode_interface.html">AzToolsFramework::FocusModeInterface</a>.</p>
+<p>Inherits Component, <a class="el" href="class_az_tools_framework_1_1_focus_mode_interface.html">AzToolsFramework::FocusModeInterface</a>, Handler, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -83,10 +83,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a8cc0fb18e32fdbee1dfe9e6163f2f707"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8c55fd52a98932add40a2540774f39a"><td class="memItemLeft" align="right" valign="top">AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_focus_mode_system_component.html#ad8c55fd52a98932add40a2540774f39a">GetFocusRoot</a> (AzFramework::EntityContextId entityContextId) override</td></tr>
 <tr class="separator:ad8c55fd52a98932add40a2540774f39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad2e38dd23aa4985dbc37026360038e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_focus_mode_system_component.html#a7ad2e38dd23aa4985dbc37026360038e">IsFocusRoot</a> (AZ::EntityId entityId) const override</td></tr>
+<tr class="separator:a7ad2e38dd23aa4985dbc37026360038e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33dcba19d91183dfb32805ba95033dc3"><td class="memItemLeft" align="right" valign="top"><a id="a33dcba19d91183dfb32805ba95033dc3"></a>
+const EntityIdList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_focus_mode_system_component.html#a33dcba19d91183dfb32805ba95033dc3">GetFocusedEntities</a> (AzFramework::EntityContextId entityContextId) override</td></tr>
+<tr class="memdesc:a33dcba19d91183dfb32805ba95033dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of the ids of all the entities that are descendants of the focus root. <br /></td></tr>
+<tr class="separator:a33dcba19d91183dfb32805ba95033dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e09d51d5c759c86cc242fd3f7210115"><td class="memItemLeft" align="right" valign="top"><a id="a7e09d51d5c759c86cc242fd3f7210115"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_focus_mode_system_component.html#a7e09d51d5c759c86cc242fd3f7210115">IsInFocusSubTree</a> (AZ::EntityId entityId) const override</td></tr>
 <tr class="memdesc:a7e09d51d5c759c86cc242fd3f7210115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the entity id provided is part of the focused sub-tree. <br /></td></tr>
 <tr class="separator:a7e09d51d5c759c86cc242fd3f7210115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1108e4d4e0507418a5f90d843ee7735"><td class="memItemLeft" align="right" valign="top"><a id="ad1108e4d4e0507418a5f90d843ee7735"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityInfoUpdatedAddChildEnd</b> (AZ::EntityId parentId, AZ::EntityId childId) override</td></tr>
+<tr class="separator:ad1108e4d4e0507418a5f90d843ee7735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f480e22b711ca3583844eb318a9e4ed"><td class="memItemLeft" align="right" valign="top"><a id="a4f480e22b711ca3583844eb318a9e4ed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityInfoUpdatedRemoveChildEnd</b> (AZ::EntityId parentId, AZ::EntityId childId) override</td></tr>
+<tr class="separator:a4f480e22b711ca3583844eb318a9e4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a69409132bcbf33d5b77c1072e19a89"><td class="memItemLeft" align="right" valign="top"><a id="a2a69409132bcbf33d5b77c1072e19a89"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabInstancePropagationEnd</b> () override</td></tr>
+<tr class="separator:a2a69409132bcbf33d5b77c1072e19a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -135,6 +150,35 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 
 </div>
 </div>
+<a id="a7ad2e38dd23aa4985dbc37026360038e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad2e38dd23aa4985dbc37026360038e">&#9670;&nbsp;</a></span>IsFocusRoot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzToolsFramework::FocusModeSystemComponent::IsFocusRoot </td>
+          <td>(</td>
+          <td class="paramtype">AZ::EntityId&#160;</td>
+          <td class="paramname"><em>entityId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Verifies if the entityId provided matches with the current focus root. </p><dl class="section return"><dt>Returns</dt><dd>True if the entity provided is the focus root, false otherwise. </dd></dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_focus_mode_interface.html#a7caca0059fbfc3136d7f1ecb09011863">AzToolsFramework::FocusModeInterface</a>.</p>
+
+</div>
+</div>
 <a id="a30f68c61e0f770965c14ba464a8b49a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30f68c61e0f770965c14ba464a8b49a9">&#9670;&nbsp;</a></span>SetFocusRoot()</h2>
 
@@ -175,7 +219,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:37 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:30 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

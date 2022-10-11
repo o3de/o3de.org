@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -63,10 +63,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab5941f8fd00693a65fd0cdef0c54b00d"><td class="memItemLeft" align="right" valign="top"><a id="ab5941f8fd00693a65fd0cdef0c54b00d"></a>
-<a class="el" href="class_a_z_1_1_i_allocator_allocate.html">IAllocatorAllocate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_system_allocator_1_1_descriptor.html#ab5941f8fd00693a65fd0cdef0c54b00d">m_custom</a></td></tr>
-<tr class="memdesc:ab5941f8fd00693a65fd0cdef0c54b00d"><td class="mdescLeft">&#160;</td><td class="mdescRight">You can provide our own allocation scheme. If NULL a HeapScheme will be used with the provided <a class="el" href="struct_a_z_1_1_system_allocator_1_1_descriptor.html">Descriptor</a>. <br /></td></tr>
-<tr class="separator:ab5941f8fd00693a65fd0cdef0c54b00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4552b7dffeef9e024b6477af7d81d560"><td class="memItemLeft" align="right" valign="top"><a id="a4552b7dffeef9e024b6477af7d81d560"></a>
+<a class="el" href="class_a_z_1_1_i_allocator_schema.html">IAllocatorSchema</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_system_allocator_1_1_descriptor.html#a4552b7dffeef9e024b6477af7d81d560">m_custom</a></td></tr>
+<tr class="memdesc:a4552b7dffeef9e024b6477af7d81d560"><td class="mdescLeft">&#160;</td><td class="mdescRight">You can provide our own allocation scheme. If NULL a HeapScheme will be used with the provided <a class="el" href="struct_a_z_1_1_system_allocator_1_1_descriptor.html">Descriptor</a>. <br /></td></tr>
+<tr class="separator:a4552b7dffeef9e024b6477af7d81d560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9debeb568dc807d8478a5d5f8ab954a"><td class="memItemLeft" align="right" valign="top"><a id="ae9debeb568dc807d8478a5d5f8ab954a"></a>
 struct <a class="el" href="struct_a_z_1_1_system_allocator_1_1_descriptor_1_1_heap.html">AZ::SystemAllocator::Descriptor::Heap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_heap</b></td></tr>
 <tr class="separator:ae9debeb568dc807d8478a5d5f8ab954a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -80,14 +80,14 @@ unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <tr class="separator:a43eb96380bbf1e1ac5d27b9beb2779d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Description - configure the system allocator. By default we will allocate system memory using system calls. You can provide arenas (spaces) with pre-allocated memory, and use the flag to specify which arena you want to allocate from. You are also allowed to supply <a class="el" href="class_a_z_1_1_i_allocator_allocate.html">IAllocatorAllocate</a>, but if you do so you will need to take care of all allocations, we will not use the default <a class="el" href="class_a_z_1_1_heap_schema.html">HeapSchema</a>. <a class="el" href="struct_a_z_1_1_heap_schema_1_1_descriptor.html">HeapSchema::Descriptor</a> </p>
+<div class="textblock"><p>Description - configure the system allocator. By default we will allocate system memory using system calls. You can provide arenas (spaces) with pre-allocated memory, and use the flag to specify which arena you want to allocate from. You are also allowed to supply <a class="el" href="class_a_z_1_1_i_allocator_schema.html">IAllocatorSchema</a>, but if you do so you will need to take care of all allocations, we will not use the default <a class="el" href="class_a_z_1_1_heap_schema.html">HeapSchema</a>. <a class="el" href="struct_a_z_1_1_heap_schema_1_1_descriptor.html">HeapSchema::Descriptor</a> </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Memory/SystemAllocator.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:46 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:30 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

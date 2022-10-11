@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -49,6 +49,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_a_z_1_1_render_1_1_lighting_preset-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Render::LightingPreset Struct Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -68,9 +69,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af1a6c4b271cf61828c5a63e89ccabf72"><td class="memItemLeft" align="right" valign="top"><a id="af1a6c4b271cf61828c5a63e89ccabf72"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="struct_a_z_1_1_render_1_1_lighting_preset.html">LightingPreset</a>, AZ::SystemAllocator, 0)</td></tr>
 <tr class="separator:af1a6c4b271cf61828c5a63e89ccabf72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04ae1388aca2c2fe14c7cb4a4d93ab5f"><td class="memItemLeft" align="right" valign="top"><a id="a04ae1388aca2c2fe14c7cb4a4d93ab5f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyLightingPreset</b> (<a class="el" href="class_a_z_1_1_render_1_1_image_based_light_feature_processor_interface.html">ImageBasedLightFeatureProcessorInterface</a> *iblFeatureProcessor, <a class="el" href="class_a_z_1_1_render_1_1_sky_box_feature_processor_interface.html">SkyBoxFeatureProcessorInterface</a> *skyboxFeatureProcessor, <a class="el" href="class_a_z_1_1_render_1_1_exposure_control_settings_interface.html">ExposureControlSettingsInterface</a> *exposureControlSettingsInterface, <a class="el" href="class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html">DirectionalLightFeatureProcessorInterface</a> *directionalLightFeatureProcessor, const Camera::Configuration &amp;cameraConfig, AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DirectionalLightFeatureProcessorInterface::LightHandle</a> &gt; &amp;lightHandles, Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">AZ::RPI::Material</a> &gt; shadowCatcherMaterial=nullptr, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RPI::MaterialPropertyIndex</a> shadowCatcherOpacityPropertyIndex=<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RPI::MaterialPropertyIndex</a>(), bool enableAlternateSkybox=false) const</td></tr>
-<tr class="separator:a04ae1388aca2c2fe14c7cb4a4d93ab5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86b13d17f4847802354db2bc6d55497"><td class="memItemLeft" align="right" valign="top"><a id="ab86b13d17f4847802354db2bc6d55497"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyLightingPreset</b> (<a class="el" href="class_a_z_1_1_render_1_1_image_based_light_feature_processor_interface.html">ImageBasedLightFeatureProcessorInterface</a> *iblFeatureProcessor, <a class="el" href="class_a_z_1_1_render_1_1_sky_box_feature_processor_interface.html">SkyBoxFeatureProcessorInterface</a> *skyboxFeatureProcessor, <a class="el" href="class_a_z_1_1_render_1_1_exposure_control_settings_interface.html">ExposureControlSettingsInterface</a> *exposureControlSettingsInterface, <a class="el" href="class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html">DirectionalLightFeatureProcessorInterface</a> *directionalLightFeatureProcessor, const Camera::Configuration &amp;cameraConfig, AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DirectionalLightFeatureProcessorInterface::LightHandle</a> &gt; &amp;lightHandles, bool enableAlternateSkybox) const</td></tr>
+<tr class="separator:ab86b13d17f4847802354db2bc6d55497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -80,9 +81,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa8da2cd244a2674f19ccc8c011f1a6a8"><td class="memItemLeft" align="right" valign="top"><a id="aa8da2cd244a2674f19ccc8c011f1a6a8"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_displayName</b></td></tr>
-<tr class="separator:aa8da2cd244a2674f19ccc8c011f1a6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c881e257dbeb7b4202e397a62a634d4"><td class="memItemLeft" align="right" valign="top"><a id="a5c881e257dbeb7b4202e397a62a634d4"></a>
 <a class="el" href="class_a_z_1_1_data_1_1_asset.html">AZ::Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image_asset.html">AZ::RPI::StreamingImageAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_iblDiffuseImageAsset</b></td></tr>
 <tr class="separator:a5c881e257dbeb7b4202e397a62a634d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,6 +108,12 @@ AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_render_1_1_light_config.htm
 <tr class="memitem:aab17b4571c9b3ea84988aa5df1384b48"><td class="memItemLeft" align="right" valign="top"><a id="aab17b4571c9b3ea84988aa5df1384b48"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_shadowCatcherOpacity</b> = 0.5f</td></tr>
 <tr class="separator:aab17b4571c9b3ea84988aa5df1384b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a9a974c4f8af3bb951dd52aeb185acab2"><td class="memItemLeft" align="right" valign="top"><a id="a9a974c4f8af3bb951dd52aeb185acab2"></a>
+static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>Extension</b> = &quot;lightingpreset.azasset&quot;</td></tr>
+<tr class="separator:a9a974c4f8af3bb951dd52aeb185acab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="struct_a_z_1_1_render_1_1_lighting_preset.html" title="LightingPreset describes a lighting environment that can be applied to the viewport.">LightingPreset</a> describes a lighting environment that can be applied to the viewport. </p>
@@ -119,7 +123,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_shadowCatcherOpaci
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:25 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

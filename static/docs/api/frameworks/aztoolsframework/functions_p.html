@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -47,6 +47,7 @@ $(function() {
 <li>PaintDescendantBackground()
 : <a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#a45c2545cf4a58f633e2c6d8cd4852466">AzToolsFramework::EditorEntityUiHandlerBase</a>
 , <a class="el" href="class_az_tools_framework_1_1_layer_ui_handler.html#ad49a3d86bd61ec43743c04fa168394dd">AzToolsFramework::LayerUiHandler</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#ac07ddfe8ec288d7c2cc95d08322ed5fa">AzToolsFramework::PrefabUiHandler</a>
 </li>
 <li>PaintDescendantBranchBackground()
 : <a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#a1aaa286afaac464bcbecdc4685f517ae">AzToolsFramework::EditorEntityUiHandlerBase</a>
@@ -60,7 +61,6 @@ $(function() {
 <li>PaintItemBackground()
 : <a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#aaf4827c6b4738ecc0ed876e9a0089565">AzToolsFramework::EditorEntityUiHandlerBase</a>
 , <a class="el" href="class_az_tools_framework_1_1_layer_ui_handler.html#af356dd27a9cf32f71ba13de3512332c7">AzToolsFramework::LayerUiHandler</a>
-, <a class="el" href="class_az_tools_framework_1_1_level_root_ui_handler.html#ab538061680306d2268797607348fe6e6">AzToolsFramework::LevelRootUiHandler</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#a0f944252d29febde639ad427f33198ad">AzToolsFramework::PrefabUiHandler</a>
 </li>
 <li>PaintItemForeground()
@@ -84,8 +84,8 @@ $(function() {
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#a3d7eb03ac1ccef35813ba90c9cda4d72">AzToolsFramework::Prefab::InstanceToTemplatePropagator</a>
 </li>
 <li>PatchTemplate()
-: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_interface.html#abf37ff2371e17aaacc096aef7e2048fc">AzToolsFramework::Prefab::InstanceToTemplateInterface</a>
-, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#a3ff5ba0e04fcead354bfc0e92482415b">AzToolsFramework::Prefab::InstanceToTemplatePropagator</a>
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_interface.html#a3d6c1227509014b312a5d7c66b388497">AzToolsFramework::Prefab::InstanceToTemplateInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#aed04300d93419bc53fc7a1074643b85f">AzToolsFramework::Prefab::InstanceToTemplatePropagator</a>
 </li>
 <li>PerformActionsBasedOnSceneStatus()
 : <a class="el" href="class_az_tools_framework_1_1_tools_application_events.html#ac278783aaeb0d180f752d5f2feb0b41f">AzToolsFramework::ToolsApplicationEvents</a>
@@ -114,9 +114,6 @@ $(function() {
 <li>PickModeSelectEntity()
 : <a class="el" href="class_az_tools_framework_1_1_editor_pick_mode_requests.html#af95fc45d7ff335b14b317cd183fb0d8f">AzToolsFramework::EditorPickModeRequests</a>
 </li>
-<li>PickTerrain()
-: <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_main_editor_viewport_interaction_requests.html#a6b6bdbaa12484aec19945349eb2cfe1e">AzToolsFramework::ViewportInteraction::MainEditorViewportInteractionRequests</a>
-</li>
 <li>Pivot
 : <a class="el" href="class_az_tools_framework_1_1_editor_transform_component_selection_requests.html#a5eb3e7c57b89e84e555c128f2a9a6191">AzToolsFramework::EditorTransformComponentSelectionRequests</a>
 </li>
@@ -125,7 +122,7 @@ $(function() {
 , <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_base_component_mode.html#a937148c9ed497ac52140cd273ea639bc">AzToolsFramework::ComponentModeFramework::EditorBaseComponentMode</a>
 </li>
 <li>PopulateEditorGlobalContextMenu()
-: <a class="el" href="class_az_tools_framework_1_1_editor_context_menu_events.html#a6eac1bedfa6811af7a8d24c8772d6b07">AzToolsFramework::EditorContextMenuEvents</a>
+: <a class="el" href="class_az_tools_framework_1_1_editor_context_menu_events.html#adcf9f5f1200d9c82b612a2bbd04f9308">AzToolsFramework::EditorContextMenuEvents</a>
 </li>
 <li>PopulateEditorGlobalContextMenu_SliceSection()
 : <a class="el" href="class_az_tools_framework_1_1_editor_events.html#a6ab0cbe809c6ec3fcd2281a4eec70b69">AzToolsFramework::EditorEvents</a>
@@ -154,11 +151,8 @@ $(function() {
 <li>PrepareForContextReset()
 : <a class="el" href="class_az_tools_framework_1_1_editor_entity_context_notification.html#a3ae201162f621b4c2f80d618460ae693">AzToolsFramework::EditorEntityContextNotification</a>
 </li>
-<li>PrepareLogFile()
-: <a class="el" href="class_az_tools_framework_1_1_trace_logger.html#a96f4524f919c433ceaa38122041191aa">AzToolsFramework::TraceLogger</a>
-</li>
 <li>PressButton()
-: <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a324c8fe399ddee458bc8937cd20f6379">AzToolsFramework::ViewportUi::ViewportUiRequests</a>
+: <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a3626fa2b31652198543aa64e2f05c7b4">AzToolsFramework::ViewportUi::ViewportUiRequests</a>
 </li>
 <li>PreviousModifiers()
 : <a class="el" href="class_az_tools_framework_1_1_editor_box_select.html#a34737977deea6b9ffeec4099265945da">AzToolsFramework::EditorBoxSelect</a>
@@ -167,13 +161,18 @@ $(function() {
 : <a class="el" href="struct_az_tools_framework_1_1_indexed_translation_manipulator.html#a6180ba4585f64dde27505ff2ad9601ca">AzToolsFramework::IndexedTranslationManipulator&lt; Vertex &gt;</a>
 </li>
 <li>ProcessManipulators()
-: <a class="el" href="class_az_tools_framework_1_1_manipulators.html#aab13710fd90cfb5e86060b0c4469ae27">AzToolsFramework::Manipulators</a>
+: <a class="el" href="class_az_tools_framework_1_1_manipulators.html#ae9d18001371af262bf6e3b6e5c44e040">AzToolsFramework::Manipulators</a>
+, <a class="el" href="class_az_tools_framework_1_1_rotation_manipulators.html#afb4905d3f1c3b9a8d62a5f6c4c4ddf7b">AzToolsFramework::RotationManipulators</a>
+, <a class="el" href="class_az_tools_framework_1_1_scale_manipulators.html#ad741d892b7f9094ba455e5ef19e55085">AzToolsFramework::ScaleManipulators</a>
 </li>
 <li>PromoteEditorEntitiesIntoSlice()
 : <a class="el" href="class_az_tools_framework_1_1_slice_editor_entity_ownership_service_requests.html#a1ac1d3c61f7c7f28e1d619f8cc011846">AzToolsFramework::SliceEditorEntityOwnershipServiceRequests</a>
 </li>
 <li>PropagateDirection
 : <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter.html#ab4c16923d471b9dd42161beb72856c35">AzToolsFramework::AssetBrowser::AssetBrowserEntryFilter</a>
+</li>
+<li>PropertyHandlerId
+: <a class="el" href="class_az_tools_framework_1_1_property_editor_tools_system_interface.html#a357d9a49f1890dcc3a5545cae2a07a3d">AzToolsFramework::PropertyEditorToolsSystemInterface</a>
 </li>
 <li>PropertyTreeEditor()
 : <a class="el" href="class_az_tools_framework_1_1_property_tree_editor.html#aac3ddec688b27007025ab47d09d1e284">AzToolsFramework::PropertyTreeEditor</a>
@@ -187,7 +186,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:41 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:35 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

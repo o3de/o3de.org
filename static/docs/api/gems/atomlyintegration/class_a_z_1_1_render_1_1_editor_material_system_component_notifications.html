@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AtomLyIntegration Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -50,7 +50,7 @@ $(function() {
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_a_z_1_1_render_1_1_editor_material_system_component_notifications-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AZ::Render::EditorMaterialSystemComponentNotifications Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">AZ::Render::EditorMaterialSystemComponentNotifications Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -60,10 +60,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a24ce21d64d93570b799b6d6c0592ac13"><td class="memItemLeft" align="right" valign="top"><a id="a24ce21d64d93570b799b6d6c0592ac13"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_notifications.html#a24ce21d64d93570b799b6d6c0592ac13">OnRenderMaterialPreviewComplete</a> (const AZ::EntityId &amp;entityId, const AZ::Render::MaterialAssignmentId &amp;materialAssignmentId, const QPixmap &amp;pixmap)=0</td></tr>
-<tr class="memdesc:a24ce21d64d93570b799b6d6c0592ac13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a material preview image is ready. <br /></td></tr>
-<tr class="separator:a24ce21d64d93570b799b6d6c0592ac13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ceeff8424c0ee577764a599767bfec7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_notifications.html#a2ceeff8424c0ee577764a599767bfec7">OnRenderMaterialPreviewRendered</a> ([[maybe_unused]] const AZ::EntityId &amp;entityId, [[maybe_unused]] const AZ::Render::MaterialAssignmentId &amp;materialAssignmentId, [[maybe_unused]] const QPixmap &amp;pixmap)</td></tr>
+<tr class="separator:a2ceeff8424c0ee577764a599767bfec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e8f2725ad903879961a416b7766c68"><td class="memItemLeft" align="right" valign="top"><a id="ab9e8f2725ad903879961a416b7766c68"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_notifications.html#ab9e8f2725ad903879961a416b7766c68">OnRenderMaterialPreviewReady</a> ([[maybe_unused]] const AZ::EntityId &amp;entityId, [[maybe_unused]] const AZ::Render::MaterialAssignmentId &amp;materialAssignmentId, [[maybe_unused]] const QPixmap &amp;pixmap)</td></tr>
+<tr class="memdesc:ab9e8f2725ad903879961a416b7766c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">This notification is sent after a material preview image has been rendered and cached. <br /></td></tr>
+<tr class="separator:ab9e8f2725ad903879961a416b7766c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -76,13 +78,57 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_notifications.html">EditorMaterialSystemComponentNotifications</a> is an interface for handling notifications from EditorMaterialSystemComponent, like being informed that material preview images are available </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2ceeff8424c0ee577764a599767bfec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ceeff8424c0ee577764a599767bfec7">&#9670;&nbsp;</a></span>OnRenderMaterialPreviewRendered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::EditorMaterialSystemComponentNotifications::OnRenderMaterialPreviewRendered </td>
+          <td>(</td>
+          <td class="paramtype">[[maybe_unused] ] const AZ::EntityId &amp;&#160;</td>
+          <td class="paramname"><em>entityId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[[maybe_unused] ] const AZ::Render::MaterialAssignmentId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssignmentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[[maybe_unused] ] const QPixmap &amp;&#160;</td>
+          <td class="paramname"><em>pixmap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This notification is sent when a material preview image for a given entity and material assignment has been rendered by the preview rendering system </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/AtomLyIntegration/CommonFeatures/Code/Include/AtomLyIntegration/CommonFeatures/Material/EditorMaterialSystemComponentNotificationBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:33 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:27 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

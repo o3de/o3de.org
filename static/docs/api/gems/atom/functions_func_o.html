@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -50,18 +50,12 @@ $(function() {
 <li>OnAddToRenderPipeline()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a508d18b042b6f966b26a58bf75763b1b">AZ::RPI::View</a>
 </li>
-<li>OnAlternateSkyboxEnabledChanged()
-: <a class="el" href="class_material_editor_1_1_material_viewport_notifications.html#a194a33ba2c14bba0e915e455ce5c75c2">MaterialEditor::MaterialViewportNotifications</a>
-</li>
 <li>OnAttached()
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment.html#a5ff7da987b9725bde7f68b7a27a2811e">AZ::RPI::PassAttachment</a>
 </li>
 <li>OnBeginPrepareRender()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#a512a344bec6e924d01cdd284c83ddeab">AZ::RPI::SceneNotification</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a18e599cec76f328388d4b6d982e819c9">AZ::RPI::ViewportContext</a>
-</li>
-<li>OnBeginReloadContent()
-: <a class="el" href="class_material_editor_1_1_material_viewport_notifications.html#a430db6b1bdcc55398de61512f9d571d7">MaterialEditor::MaterialViewportNotifications</a>
 </li>
 <li>OnCameraMoveBegan()
 : <a class="el" href="class_a_z_1_1_debug_1_1_camera_controller_notifications.html#ad712409b469046ce8198285ccb91e9ef">AZ::Debug::CameraControllerNotifications</a>
@@ -76,13 +70,16 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_render_1_1_profiling_capture_notifications.html#a0de7b48e940ac0bd77e4db5416fd77b6">AZ::Render::ProfilingCaptureNotifications</a>
 </li>
 <li>OnCaptureFinished()
-: <a class="el" href="class_a_z_1_1_render_1_1_frame_capture_notifications.html#acdb4f55e398fbb6ee4f6c70d4b56992e">AZ::Render::FrameCaptureNotifications</a>
+: <a class="el" href="class_a_z_1_1_render_1_1_frame_capture_notifications.html#a97a55414796766f57fcb4175ebec6d9f">AZ::Render::FrameCaptureNotifications</a>
 </li>
 <li>OnCaptureQueryPipelineStatisticsFinished()
 : <a class="el" href="class_a_z_1_1_render_1_1_profiling_capture_notifications.html#a699c6404d8efa869568c24b14a905d8c">AZ::Render::ProfilingCaptureNotifications</a>
 </li>
 <li>OnCaptureQueryTimestampFinished()
 : <a class="el" href="class_a_z_1_1_render_1_1_profiling_capture_notifications.html#a7fae01ff4c986e5a3ed3d79e93a63e3a">AZ::Render::ProfilingCaptureNotifications</a>
+</li>
+<li>OnChildAdded()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_parent_pass.html#ac506bfcbb428931737d85369b470479d">AZ::RPI::ParentPass</a>
 </li>
 <li>OnConfigChanged()
 : <a class="el" href="class_a_z_1_1_render_1_1_post_process_settings_interface.html#a51c90ebcb9beb3a2c8927e5e6a5ef8dd">AZ::Render::PostProcessSettingsInterface</a>
@@ -93,8 +90,11 @@ $(function() {
 <li>OnControllerEnabled()
 : <a class="el" href="class_a_z_1_1_debug_1_1_camera_controller_notifications.html#a1b4106ee9c681efcec52343e85016d1d">AZ::Debug::CameraControllerNotifications</a>
 </li>
-<li>OnDisplayMapperOperationTypeChanged()
-: <a class="el" href="class_material_editor_1_1_material_viewport_notifications.html#af9941215c34403f38c041c53e6babac9">MaterialEditor::MaterialViewportNotifications</a>
+<li>OnDeviceRemoved()
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_r_h_i_system_notificiation_interface.html#a5aaab346aeabd7c523b93585e87ca9c2">AZ::RHI::RHISystemNotificiationInterface</a>
+</li>
+<li>OnDocumentCleared()
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#a22e4c1b860b0bd3d99762e1aa65e35b0">AtomToolsFramework::AtomToolsDocumentNotifications</a>
 </li>
 <li>OnDocumentClosed()
 : <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#ad286d23cf176402984b4549a0ef41c1d">AtomToolsFramework::AtomToolsDocumentNotifications</a>
@@ -108,29 +108,26 @@ $(function() {
 <li>OnDocumentDestroyed()
 : <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#a3211500211c8ae14a425d457d95478ce">AtomToolsFramework::AtomToolsDocumentNotifications</a>
 </li>
+<li>OnDocumentError()
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#ac2ae98065db7564c4067a83c16134b31">AtomToolsFramework::AtomToolsDocumentNotifications</a>
+</li>
 <li>OnDocumentExternallyModified()
 : <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#abb30b812c72ef932e8cfba747a358dab">AtomToolsFramework::AtomToolsDocumentNotifications</a>
 </li>
 <li>OnDocumentModified()
 : <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#a87c253132e82f522f5023104da97c50a">AtomToolsFramework::AtomToolsDocumentNotifications</a>
 </li>
+<li>OnDocumentObjectInfoChanged()
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#afe3b91faaab353fb97ac1088b25dbf9c">AtomToolsFramework::AtomToolsDocumentNotifications</a>
+</li>
+<li>OnDocumentObjectInfoInvalidated()
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#a48caf87f13b7fd70902a5ce0423aa3ce">AtomToolsFramework::AtomToolsDocumentNotifications</a>
+</li>
 <li>OnDocumentOpened()
 : <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#a95b757ebcb9d4a2870dd00e596617bde">AtomToolsFramework::AtomToolsDocumentNotifications</a>
 </li>
-<li>OnDocumentPropertyConfigModified()
-: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#ae7e7631c5fe923c9d7ab830930ca9de7">AtomToolsFramework::AtomToolsDocumentNotifications</a>
-</li>
-<li>OnDocumentPropertyGroupVisibilityChanged()
-: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#aebbd614fc13edb0741d3ab80bbc5b6c7">AtomToolsFramework::AtomToolsDocumentNotifications</a>
-</li>
-<li>OnDocumentPropertyValueModified()
-: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#a00ec155a138778dec53880a0985aeb42">AtomToolsFramework::AtomToolsDocumentNotifications</a>
-</li>
 <li>OnDocumentSaved()
 : <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#adf63c1fab13c2dd2fa09cdb0a6e69fd4">AtomToolsFramework::AtomToolsDocumentNotifications</a>
-</li>
-<li>OnDocumentSelected()
-: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#ae538d5f87adf8c731f94826c68884e38">AtomToolsFramework::AtomToolsDocumentNotifications</a>
 </li>
 <li>OnDocumentUndoStateChanged()
 : <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_notifications.html#a2d34b7d6c5f8fb422568fda335d34c3f">AtomToolsFramework::AtomToolsDocumentNotifications</a>
@@ -140,12 +137,6 @@ $(function() {
 </li>
 <li>OnEndPrepareRender()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#a22fbe63532c0f5b71698e7b8d28bc802">AZ::RPI::SceneNotification</a>
-</li>
-<li>OnEndReloadContent()
-: <a class="el" href="class_material_editor_1_1_material_viewport_notifications.html#a8e21ccef39735556c158cb04e86b00e2">MaterialEditor::MaterialViewportNotifications</a>
-</li>
-<li>OnFieldOfViewChanged()
-: <a class="el" href="class_material_editor_1_1_material_viewport_notifications.html#a7e78bcc638918148acb9d958a87d90c9">MaterialEditor::MaterialViewportNotifications</a>
 </li>
 <li>OnFrameBegin()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_event_interface.html#aa950341b0feea65cdfa94bc17c248be2">AZ::RHI::FrameEventInterface</a>
@@ -160,18 +151,6 @@ $(function() {
 <li>OnFrameEnd()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_event_interface.html#a13e92eec862c3062c95d34595cf21df8">AZ::RHI::FrameEventInterface</a>
 </li>
-<li>OnGridEnabledChanged()
-: <a class="el" href="class_material_editor_1_1_material_viewport_notifications.html#a3ca16691948432db6f11a96595f8f08f">MaterialEditor::MaterialViewportNotifications</a>
-</li>
-<li>OnLightingPresetAdded()
-: <a class="el" href="class_material_editor_1_1_material_viewport_notifications.html#a7065ca715972413dc87d0fe3688d39fb">MaterialEditor::MaterialViewportNotifications</a>
-</li>
-<li>OnLightingPresetChanged()
-: <a class="el" href="class_material_editor_1_1_material_viewport_notifications.html#a0e982d973db37dbe6344eccd4da7b7d2">MaterialEditor::MaterialViewportNotifications</a>
-</li>
-<li>OnLightingPresetSelected()
-: <a class="el" href="class_material_editor_1_1_material_viewport_notifications.html#a239ae80662c9ee0c0c29307801d795eb">MaterialEditor::MaterialViewportNotifications</a>
-</li>
 <li>OnMaterialAssetReinitialized()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_reload_notifications.html#a1b264ceb29ff4d6f1553b125c0be46f3">AZ::RPI::MaterialReloadNotifications</a>
 </li>
@@ -181,20 +160,14 @@ $(function() {
 <li>OnMaterialTypeAssetReinitialized()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_reload_notifications.html#ae97a8419448317415a4b9117d8b22c28">AZ::RPI::MaterialReloadNotifications</a>
 </li>
-<li>OnModelPresetAdded()
-: <a class="el" href="class_material_editor_1_1_material_viewport_notifications.html#a30291317cde154e93f68599764aa1791">MaterialEditor::MaterialViewportNotifications</a>
-</li>
-<li>OnModelPresetChanged()
-: <a class="el" href="class_material_editor_1_1_material_viewport_notifications.html#aa631af19e4da42e745607b784104ab50">MaterialEditor::MaterialViewportNotifications</a>
-</li>
-<li>OnModelPresetSelected()
-: <a class="el" href="class_material_editor_1_1_material_viewport_notifications.html#a37cf6c6052c269dcdbd460d4849d55dc">MaterialEditor::MaterialViewportNotifications</a>
-</li>
-<li>OnPassModified()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#ab5fd5e44651e91f17631ffaea70d3b9b">AZ::RPI::RenderPipeline</a>
-</li>
 <li>OnPostProcessSettingsChanged()
 : <a class="el" href="class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html#a85e0f289bd6fe3848d01e4d235f58b68">AZ::Render::PostProcessFeatureProcessorInterface</a>
+</li>
+<li>OnRenderDebugComponentAdded()
+: <a class="el" href="class_a_z_1_1_render_1_1_render_debug_feature_processor_interface.html#a8a2ae781fdc989deec9e3e93bdf6ac94">AZ::Render::RenderDebugFeatureProcessorInterface</a>
+</li>
+<li>OnRenderDebugComponentRemoved()
+: <a class="el" href="class_a_z_1_1_render_1_1_render_debug_feature_processor_interface.html#a769d93d7b21923d98f8baea23e9a923e">AZ::Render::RenderDebugFeatureProcessorInterface</a>
 </li>
 <li>OnRenderEnd()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#ae3d2fbe2dafaf3b035addb9048121bc9">AZ::RPI::FeatureProcessor</a>
@@ -231,9 +204,6 @@ $(function() {
 <li>OnShaderVariantReinitialized()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_reload_notifications.html#ae7e043457b154d8591cf4fa0976654cb">AZ::RPI::ShaderReloadNotifications</a>
 </li>
-<li>OnShadowCatcherEnabledChanged()
-: <a class="el" href="class_material_editor_1_1_material_viewport_notifications.html#af6700a606c3b36d37be39cec4336cca1">MaterialEditor::MaterialViewportNotifications</a>
-</li>
 <li>OnSkinnedMeshOutputStreamMemoryAvailable()
 : <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_output_stream_notifications.html#a660dda120bf41f8b12078259f3c58089">AZ::Render::SkinnedMeshOutputStreamNotifications</a>
 </li>
@@ -243,6 +213,9 @@ $(function() {
 <li>OnViewportDpiScalingChanged()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_notifications.html#a42b9b4bdd61f6acdd0a96d05d1391897">AZ::RPI::ViewportContextNotifications</a>
 </li>
+<li>OnViewportSettingsChanged()
+: <a class="el" href="class_atom_tools_framework_1_1_entity_preview_viewport_settings_notifications.html#a58edd258789c59e8fa74c3bb10896507">AtomToolsFramework::EntityPreviewViewportSettingsNotifications</a>
+</li>
 <li>OnViewportSizeChanged()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_notifications.html#aa4c25640947268da92df8c458902c2c5">AZ::RPI::ViewportContextNotifications</a>
 </li>
@@ -250,10 +223,13 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#ae017c60630bd4eb2f05f707b3569a48a">AZ::RPI::ViewportContext</a>
 </li>
 <li>Open()
-: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a9db452a5408cc48eaf723a2cde7c65d9">AtomToolsFramework::AtomToolsDocumentRequests</a>
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a2fc035a07a4501cc40fd6203766b6b91">AtomToolsFramework::AtomToolsDocumentRequests</a>
 </li>
 <li>OpenDocument()
-: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ac4420fff16001ed8d390b736ad7b68fb">AtomToolsFramework::AtomToolsDocumentSystemRequests</a>
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ad41a44da41b7efce1391869df434493a">AtomToolsFramework::AtomToolsDocumentSystemRequests</a>
+</li>
+<li>OpenDocumentTabContextMenu()
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_main_window.html#a1062e7e9f7ea6ecce864823a68323cc2">AtomToolsFramework::AtomToolsDocumentMainWindow</a>
 </li>
 <li>OpenSourceTextureFile()
 : <a class="el" href="class_image_processing_atom_editor_1_1_image_processing_editor_requests.html#a100f8a3e2df432b061a82808ac7cdd6e">ImageProcessingAtomEditor::ImageProcessingEditorRequests</a>
@@ -262,8 +238,8 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html#a9fc1f19717769ad16299cbdc973e4321">AZ::RHI::DrawPacket</a>
 </li>
 <li>operator=()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#adeb9635e54039f40bfe41e81955d9134">AZ::RPI::MaterialPropertyValue</a>
-, <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html#abde5cd00b8c051fb1ff477dab9337bb7">AZ::StableDynamicArrayHandle&lt; ValueType &gt;</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#a3a38f58b4562ac361b67bad6678c966a">AZ::RPI::MaterialPropertyValue</a>
+, <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html#af5aa2270d4eb3e65d5ee02a14b84eaae">AZ::StableDynamicArrayHandle&lt; ValueType &gt;</a>
 </li>
 <li>operator==()
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_subresource_range.html#ae49883317152ab3ca6c24304c2c63a9e">AZ::RHI::ImageSubresourceRange</a>
@@ -282,7 +258,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:31 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:25 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

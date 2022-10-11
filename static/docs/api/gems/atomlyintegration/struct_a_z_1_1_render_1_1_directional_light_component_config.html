@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AtomLyIntegration Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -159,16 +159,34 @@ ShadowFilterMethod&#160;</td><td class="memItemRight" valign="bottom"><a class="
 <tr class="memdesc:a20b85a6ff3bba8ca8429d6934394ab25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method of shadow's filtering. <br /></td></tr>
 <tr class="separator:a20b85a6ff3bba8ca8429d6934394ab25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90146af83876741a418183ed624e1117"><td class="memItemLeft" align="right" valign="top"><a id="a90146af83876741a418183ed624e1117"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_normalShadowBias</b> = 0.0f</td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_normalShadowBias</b> = 2.5f</td></tr>
 <tr class="separator:a90146af83876741a418183ed624e1117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f8a3e7617d431b3376ea55d58593cc0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_directional_light_component_config.html#a5f8a3e7617d431b3376ea55d58593cc0">m_filteringSampleCount</a> = 32</td></tr>
 <tr class="separator:a5f8a3e7617d431b3376ea55d58593cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3818e0d584fa48c2a5e4999ccc765869"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_directional_light_component_config.html#a3818e0d584fa48c2a5e4999ccc765869">m_receiverPlaneBiasEnabled</a> = true</td></tr>
 <tr class="separator:a3818e0d584fa48c2a5e4999ccc765869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13f8598dd472f996f5735de8c20d51e2"><td class="memItemLeft" align="right" valign="top"><a id="a13f8598dd472f996f5735de8c20d51e2"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_directional_light_component_config.html#a13f8598dd472f996f5735de8c20d51e2">m_shadowBias</a> = 0.0f</td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_directional_light_component_config.html#a13f8598dd472f996f5735de8c20d51e2">m_shadowBias</a> = 0.0015f</td></tr>
 <tr class="memdesc:a13f8598dd472f996f5735de8c20d51e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduces shadow acne by applying a small amount of offset along shadow-space z. <br /></td></tr>
 <tr class="separator:a13f8598dd472f996f5735de8c20d51e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b844af590637f9115d10cd3681a1c5c"><td class="memItemLeft" align="right" valign="top"><a id="a3b844af590637f9115d10cd3681a1c5c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_cascadeBlendingEnabled</b> = false</td></tr>
+<tr class="separator:a3b844af590637f9115d10cd3681a1c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e7d9d83aeba1f73ef31bde7255df81"><td class="memItemLeft" align="right" valign="top"><a id="a63e7d9d83aeba1f73ef31bde7255df81"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_fullscreenBlurEnabled</b> = true</td></tr>
+<tr class="separator:a63e7d9d83aeba1f73ef31bde7255df81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52ab083eec5a64ef086b00c64967e58"><td class="memItemLeft" align="right" valign="top"><a id="ac52ab083eec5a64ef086b00c64967e58"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_directional_light_component_config.html#ac52ab083eec5a64ef086b00c64967e58">m_fullscreenBlurConstFalloff</a> = 2.0f / 3.0f</td></tr>
+<tr class="memdesc:ac52ab083eec5a64ef086b00c64967e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much a value is reduced from pixel to pixel on a perfectly flat surface. <br /></td></tr>
+<tr class="separator:ac52ab083eec5a64ef086b00c64967e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7285668e76e892a0379569a897680b81"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_directional_light_component_config.html#a7285668e76e892a0379569a897680b81">m_fullscreenBlurDepthFalloffStrength</a> = 50.0f</td></tr>
+<tr class="separator:a7285668e76e892a0379569a897680b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0509990e7b1ca665ce52777707e1a14b"><td class="memItemLeft" align="right" valign="top"><a id="a0509990e7b1ca665ce52777707e1a14b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_affectsGI</b> = true</td></tr>
+<tr class="separator:a0509990e7b1ca665ce52777707e1a14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0c4712962d5aa265ee5aa50eb9abed3"><td class="memItemLeft" align="right" valign="top"><a id="af0c4712962d5aa265ee5aa50eb9abed3"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_affectsGIFactor</b> = 1.0f</td></tr>
+<tr class="separator:af0c4712962d5aa265ee5aa50eb9abed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a5a5c755fd2cfd9fffc0b37b769bfa077"></a>
@@ -204,6 +222,21 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str
       </table>
 </div><div class="memdoc">
 <p>Sample Count for filtering (from 4 to 64) It is used only when the pixel is predicted as on the boundary. </p>
+
+</div>
+</div>
+<a id="a7285668e76e892a0379569a897680b81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7285668e76e892a0379569a897680b81">&#9670;&nbsp;</a></span>m_fullscreenBlurDepthFalloffStrength</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AZ::Render::DirectionalLightComponentConfig::m_fullscreenBlurDepthFalloffStrength = 50.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>How much the difference in depth slopes between pixels affects the blur falloff. The higher this value, the sharper edges will appear </p>
 
 </div>
 </div>
@@ -289,7 +322,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str
 <div class="ttc" id="astruct_a_z_1_1_render_1_1_directional_light_component_config_html_a2a676d4ec50a1a17483eb7704d762c1b"><div class="ttname"><a href="struct_a_z_1_1_render_1_1_directional_light_component_config.html#a2a676d4ec50a1a17483eb7704d762c1b">AZ::Render::DirectionalLightComponentConfig::m_shadowFarClipDistance</a></div><div class="ttdeci">float m_shadowFarClipDistance</div><div class="ttdoc">Far depth clips for shadows.</div><div class="ttdef"><b>Definition:</b> DirectionalLightComponentConfig.h:57</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:33 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:27 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzQtComponents API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -188,9 +188,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_card_header.html#a64681a763025df2a5e4e4294a169d9c5">setContextMenuIcon</a> (<a class="el" href="class_az_qt_components_1_1_card_header.html#a9c5e415be0f689822e02367008b5bd43">ContextMenuIcon</a> iconType)</td></tr>
 <tr class="memdesc:a64681a763025df2a5e4e4294a169d9c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the icon to be displayed for the context menu. <br /></td></tr>
 <tr class="separator:a64681a763025df2a5e4e4294a169d9c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85540dc86c24bff1c6d782353e8310a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_card_header.html#a85540dc86c24bff1c6d782353e8310a3">setUnderlineColor</a> (const QColor &amp;color)</td></tr>
+<tr class="separator:a85540dc86c24bff1c6d782353e8310a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa6849162fc92f096d81114348719f38b"><td class="memItemLeft" align="right" valign="top"><a id="aa6849162fc92f096d81114348719f38b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>applyContainerStyle</b> (<a class="el" href="class_az_qt_components_1_1_card_header.html">CardHeader</a> *header)</td></tr>
+<tr class="separator:aa6849162fc92f096d81114348719f38b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad284c8764ab19549d778466035ed3190"><td class="memItemLeft" align="right" valign="top"><a id="ad284c8764ab19549d778466035ed3190"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_card_header.html#ad284c8764ab19549d778466035ed3190">setIconSize</a> (int iconSize)</td></tr>
 <tr class="memdesc:ad284c8764ab19549d778466035ed3190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the size of the <a class="el" href="class_az_qt_components_1_1_card.html">Card</a> header's icon. <br /></td></tr>
@@ -253,6 +258,9 @@ QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><b>m_contextMen
 <tr class="memitem:aa7247ccf4992da4c11d82a5ae6f41a5a"><td class="memItemLeft" align="right" valign="top"><a id="aa7247ccf4992da4c11d82a5ae6f41a5a"></a>
 QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><b>m_helpButton</b> = nullptr</td></tr>
 <tr class="separator:aa7247ccf4992da4c11d82a5ae6f41a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad916e6652502bfaf4f4c621a1d7d8b57"><td class="memItemLeft" align="right" valign="top"><a id="ad916e6652502bfaf4f4c621a1d7d8b57"></a>
+Internal::RectangleWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_underlineWidget</b> = nullptr</td></tr>
+<tr class="separator:ad916e6652502bfaf4f4c621a1d7d8b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3cb47888bd920666620dae2b84da701"><td class="memItemLeft" align="right" valign="top"><a id="af3cb47888bd920666620dae2b84da701"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_warning</b> = false</td></tr>
 <tr class="separator:af3cb47888bd920666620dae2b84da701"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -468,13 +476,32 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Card</b></td></tr>
 
 </div>
 </div>
+<a id="a85540dc86c24bff1c6d782353e8310a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85540dc86c24bff1c6d782353e8310a3">&#9670;&nbsp;</a></span>setUnderlineColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzQtComponents::CardHeader::setUnderlineColor </td>
+          <td>(</td>
+          <td class="paramtype">const QColor &amp;&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the small solid color underline under the header. If color is invalid or transparent, the underline will disappear completely. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzQtComponents/AzQtComponents/Components/Widgets/CardHeader.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:30 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

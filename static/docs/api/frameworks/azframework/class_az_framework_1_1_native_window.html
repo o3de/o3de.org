@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -91,6 +91,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWindowTitle</b> (c
 <tr class="memitem:aff6aab0a7c7c513e8f07ec9e4f411f4e"><td class="memItemLeft" align="right" valign="top"><a id="aff6aab0a7c7c513e8f07ec9e4f411f4e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ResizeClientArea</b> (<a class="el" href="struct_az_framework_1_1_window_size.html">WindowSize</a> clientAreaSize) override</td></tr>
 <tr class="separator:aff6aab0a7c7c513e8f07ec9e4f411f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af389d304e76815b1c55247b83ce76ab4"><td class="memItemLeft" align="right" valign="top"><a id="af389d304e76815b1c55247b83ce76ab4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsClientAreaResize</b> () const override</td></tr>
+<tr class="separator:af389d304e76815b1c55247b83ce76ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af14466ed150366dfa662d30e30028f04"><td class="memItemLeft" align="right" valign="top"><a id="af14466ed150366dfa662d30e30028f04"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFullScreenState</b> () const override</td></tr>
 <tr class="separator:af14466ed150366dfa662d30e30028f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,12 +112,19 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>GetDpiScaleFactor</b
 <tr class="memitem:a876785e0cddd67f297c04b90c744757a"><td class="memItemLeft" align="right" valign="top"><a id="a876785e0cddd67f297c04b90c744757a"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetSyncInterval</b> () const override</td></tr>
 <tr class="separator:a876785e0cddd67f297c04b90c744757a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bbe3316d5016d53103b87e9ab00e2fc"><td class="memItemLeft" align="right" valign="top"><a id="a1bbe3316d5016d53103b87e9ab00e2fc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetSyncInterval</b> (uint32_t newSyncInterval) override</td></tr>
+<tr class="separator:a1bbe3316d5016d53103b87e9ab00e2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac855725616cd4a90efd15d73fd57f9d3"><td class="memItemLeft" align="right" valign="top"><a id="ac855725616cd4a90efd15d73fd57f9d3"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetDisplayRefreshRate</b> () const override</td></tr>
 <tr class="separator:ac855725616cd4a90efd15d73fd57f9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a48e91d290ab420b75b6b7130a5b3f9a8"><td class="memItemLeft" align="right" valign="top"><a id="a48e91d290ab420b75b6b7130a5b3f9a8"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_native_window.html#a48e91d290ab420b75b6b7130a5b3f9a8">SupportsClientAreaResizeOfDefaultWindow</a> ()</td></tr>
+<tr class="memdesc:a48e91d290ab420b75b6b7130a5b3f9a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether the default window supports client area resizing. <br /></td></tr>
+<tr class="separator:a48e91d290ab420b75b6b7130a5b3f9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec743234c52ece01723c7676666f1f2d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_native_window.html#aec743234c52ece01723c7676666f1f2d">GetFullScreenStateOfDefaultWindow</a> ()</td></tr>
 <tr class="separator:aec743234c52ece01723c7676666f1f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91ad34bf3216ccd8e90a9d001f1e92ea"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_native_window.html#a91ad34bf3216ccd8e90a9d001f1e92ea">SetFullScreenStateOfDefaultWindow</a> (bool fullScreenState)</td></tr>
@@ -306,7 +316,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:21 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:12 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

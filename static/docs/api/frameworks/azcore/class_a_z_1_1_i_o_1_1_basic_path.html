@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -70,9 +70,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>traits_type</b> = ty
 <tr class="memitem:aadee571e82bab282c2005f27324c4806"><td class="memItemLeft" align="right" valign="top"><a id="aadee571e82bab282c2005f27324c4806"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>string_view_type</b> = <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a></td></tr>
 <tr class="separator:aadee571e82bab282c2005f27324c4806"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27a1c1ffc4b044215f8dffcf7e4b9fb2"><td class="memItemLeft" align="right" valign="top"><a id="a27a1c1ffc4b044215f8dffcf7e4b9fb2"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> = const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</a> &gt;</td></tr>
-<tr class="separator:a27a1c1ffc4b044215f8dffcf7e4b9fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab16004e5c451fc793fffbcf3e51fe1ad"><td class="memItemLeft" align="right" valign="top"><a id="ab16004e5c451fc793fffbcf3e51fe1ad"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> = <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; const <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">BasicPath</a> &gt;</td></tr>
+<tr class="separator:ab16004e5c451fc793fffbcf3e51fe1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a350d32ff8b12f2cc60e8284f790689e0"><td class="memItemLeft" align="right" valign="top"><a id="a350d32ff8b12f2cc60e8284f790689e0"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> = <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">const_iterator</a></td></tr>
 <tr class="separator:a350d32ff8b12f2cc60e8284f790689e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,7 +237,10 @@ constexpr string_type &amp;&amp;&#160;</td><td class="memItemRight" valign="bott
 <tr class="separator:ad3df10aa7c5e2bff3257bb0f63f3204a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a468e712ece51c198262bf4ebbb38316e"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">AZStd::fixed_string</a>&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#ae164229bbf1f88cf7a2bbfb660f444c6">MaxPathLength</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html#a468e712ece51c198262bf4ebbb38316e">FixedMaxPathString</a> () const</td></tr>
 <tr class="separator:a468e712ece51c198262bf4ebbb38316e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1966addf5380980d7f0ec03532ad2447"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html#a1966addf5380980d7f0ec03532ad2447">StringAsPosix</a> () const</td></tr>
+<tr class="memitem:a6cdeb8a49251b7a55301fed6e3d6de90"><td class="memItemLeft" align="right" valign="top">constexpr string_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html#a6cdeb8a49251b7a55301fed6e3d6de90">AsPosix</a> () const</td></tr>
+<tr class="separator:a6cdeb8a49251b7a55301fed6e3d6de90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1966addf5380980d7f0ec03532ad2447"><td class="memItemLeft" align="right" valign="top"><a id="a1966addf5380980d7f0ec03532ad2447"></a>
+<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StringAsPosix</b> () const</td></tr>
 <tr class="separator:a1966addf5380980d7f0ec03532ad2447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a929895caaabba8dec909b3b144f5e8f0"><td class="memItemLeft" align="right" valign="top"><a id="a929895caaabba8dec909b3b144f5e8f0"></a>
 constexpr <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">AZStd::fixed_string</a>&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#ae164229bbf1f88cf7a2bbfb660f444c6">MaxPathLength</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FixedMaxPathStringAsPosix</b> () const noexcept</td></tr>
@@ -336,15 +339,12 @@ template&lt;typename InputIt &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ac0e382f2728cb8450e68021baeafe808"><td class="memItemLeft" align="right" valign="top"><a id="ac0e382f2728cb8450e68021baeafe808"></a>
-friend&#160;</td><td class="memItemRight" valign="bottom"><b>PathIterator&lt; BasicPath &gt;</b></td></tr>
-<tr class="separator:ac0e382f2728cb8450e68021baeafe808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a26705e7f373a939deb3f1980147f02"><td class="memItemLeft" align="right" valign="top"><a id="a6a26705e7f373a939deb3f1980147f02"></a>
+friend&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b></td></tr>
+<tr class="separator:a6a26705e7f373a939deb3f1980147f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a58342e9bbefe3c7a514e4ff8e3e7a263"><td class="memItemLeft" align="right" valign="top"><a id="a58342e9bbefe3c7a514e4ff8e3e7a263"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>PathReflection</b></td></tr>
-<tr class="separator:a58342e9bbefe3c7a514e4ff8e3e7a263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8ab7583ff80f915ee52c4cbf0d53167"><td class="memItemLeft" align="right" valign="top"><a id="ab8ab7583ff80f915ee52c4cbf0d53167"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>PathView</b></td></tr>
 <tr class="separator:ab8ab7583ff80f915ee52c4cbf0d53167"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -623,6 +623,31 @@ template&lt;typename StringType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6cdeb8a49251b7a55301fed6e3d6de90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cdeb8a49251b7a55301fed6e3d6de90">&#9670;&nbsp;</a></span>AsPosix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StringType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">AZ::IO::BasicPath</a>&lt; StringType &gt;::AsPosix</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Replicates the behavior of the Python pathlib as_posix method by replacing the Windows Path Separator with the Posix Path Seperator </p>
+
+</div>
+</div>
 <a id="a1e5a9ebe09729f35684b8ff4f89c5de8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e5a9ebe09729f35684b8ff4f89c5de8">&#9670;&nbsp;</a></span>Assign()</h2>
 
@@ -1293,23 +1318,6 @@ template&lt;typename StringType &gt; </div>
 
 </div>
 </div>
-<a id="a1966addf5380980d7f0ec03532ad2447"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1966addf5380980d7f0ec03532ad2447">&#9670;&nbsp;</a></span>StringAsPosix()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename StringType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">AZ::IO::BasicPath</a>&lt; StringType &gt;::StringAsPosix</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Replicates the behavior of the Python pathlib as_posix method by replacing the Windows Path Separator with the Posix Path Seperator </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Code/Framework/AzCore/AzCore/IO/Path/Path.h</li>
 <li>Code/Framework/AzCore/AzCore/IO/Path/Path.inl</li>
@@ -1317,7 +1325,7 @@ template&lt;typename StringType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:48 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:32 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

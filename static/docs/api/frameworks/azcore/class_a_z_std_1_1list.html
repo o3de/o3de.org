@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -121,30 +121,37 @@ AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>list</b> (
 <tr class="memitem:a475917360dff61ed9fc2196536eb38b3"><td class="memItemLeft" align="right" valign="top"><a id="a475917360dff61ed9fc2196536eb38b3"></a>
 AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>list</b> (size_type numElements, const_reference value, const allocator_type &amp;<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>)</td></tr>
 <tr class="separator:a475917360dff61ed9fc2196536eb38b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfa6e83fffd03a33ab7c2b9a59c87eeb"><td class="memTemplParams" colspan="2"><a id="abfa6e83fffd03a33ab7c2b9a59c87eeb"></a>
-template&lt;class InputIterator &gt; </td></tr>
-<tr class="memitem:abfa6e83fffd03a33ab7c2b9a59c87eeb"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><b>list</b> (const InputIterator &amp;first, const InputIterator &amp;last)</td></tr>
-<tr class="separator:abfa6e83fffd03a33ab7c2b9a59c87eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdaadc74c52a737408da456b1d860ed5"><td class="memTemplParams" colspan="2"><a id="afdaadc74c52a737408da456b1d860ed5"></a>
-template&lt;class InputIterator &gt; </td></tr>
-<tr class="memitem:afdaadc74c52a737408da456b1d860ed5"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><b>list</b> (const InputIterator &amp;first, const InputIterator &amp;last, const allocator_type &amp;<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>)</td></tr>
-<tr class="separator:afdaadc74c52a737408da456b1d860ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a9d9beec395f544410644c4e6742e71"><td class="memItemLeft" align="right" valign="top"><a id="a6a9d9beec395f544410644c4e6742e71"></a>
 AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>list</b> (const <a class="el" href="class_a_z_std_1_1list.html">this_type</a> &amp;rhs)</td></tr>
 <tr class="separator:a6a9d9beec395f544410644c4e6742e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a966b06cbf643d32a43c88ae289602b47"><td class="memItemLeft" align="right" valign="top"><a id="a966b06cbf643d32a43c88ae289602b47"></a>
-AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>list</b> (std::initializer_list&lt; T &gt; <a class="el" href="class_a_z_std_1_1list.html">list</a>)</td></tr>
-<tr class="separator:a966b06cbf643d32a43c88ae289602b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a678f19a4098a1a01bf91eb21649e404c"><td class="memTemplParams" colspan="2"><a id="a678f19a4098a1a01bf91eb21649e404c"></a>
+template&lt;class InputIterator &gt; </td></tr>
+<tr class="memitem:a678f19a4098a1a01bf91eb21649e404c"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><b>list</b> (InputIterator first, InputIterator last, const allocator_type &amp;<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>=allocator_type())</td></tr>
+<tr class="separator:a678f19a4098a1a01bf91eb21649e404c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8e7d6bf389d256b1ceb060bcf26a2c"><td class="memTemplParams" colspan="2"><a id="afc8e7d6bf389d256b1ceb060bcf26a2c"></a>
+template&lt;class R , class  = enable_if_t&lt;Internal::container_compatible_range&lt;R, value_type&gt;&gt;&gt; </td></tr>
+<tr class="memitem:afc8e7d6bf389d256b1ceb060bcf26a2c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>list</b> (<a class="el" href="struct_a_z_std_1_1from__range__t.html">from_range_t</a>, R &amp;&amp;rg, const allocator_type &amp;alloc=Allocator())</td></tr>
+<tr class="separator:afc8e7d6bf389d256b1ceb060bcf26a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b93507600f211d8e2979f888670490"><td class="memItemLeft" align="right" valign="top"><a id="a93b93507600f211d8e2979f888670490"></a>
+AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>list</b> (initializer_list&lt; T &gt; ilist, const allocator_type &amp;alloc=allocator_type())</td></tr>
+<tr class="separator:a93b93507600f211d8e2979f888670490"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee42fd2f9fc97db8ce1a5af56ee41710"><td class="memItemLeft" align="right" valign="top"><a id="aee42fd2f9fc97db8ce1a5af56ee41710"></a>
 AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1list.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1list.html">this_type</a> &amp;rhs)</td></tr>
 <tr class="separator:aee42fd2f9fc97db8ce1a5af56ee41710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92fab942e84bc6ecdd643645a82f0b92"><td class="memItemLeft" align="right" valign="top"><a id="a92fab942e84bc6ecdd643645a82f0b92"></a>
 AZ_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (size_type numElements, const_reference value)</td></tr>
 <tr class="separator:a92fab942e84bc6ecdd643645a82f0b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec73c6f30de3b652a7819731836c3587"><td class="memTemplParams" colspan="2"><a id="aec73c6f30de3b652a7819731836c3587"></a>
+<tr class="memitem:a96e4e8602164693f3eb8fec519e33c5b"><td class="memTemplParams" colspan="2"><a id="a96e4e8602164693f3eb8fec519e33c5b"></a>
 template&lt;class InputIterator &gt; </td></tr>
-<tr class="memitem:aec73c6f30de3b652a7819731836c3587"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>assign</b> (const InputIterator &amp;first, const InputIterator &amp;last)</td></tr>
-<tr class="separator:aec73c6f30de3b652a7819731836c3587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e4e8602164693f3eb8fec519e33c5b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>assign</b> (InputIterator first, InputIterator last)</td></tr>
+<tr class="separator:a96e4e8602164693f3eb8fec519e33c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b60276d631e07ad8df9bfad0d4c9bb6"><td class="memTemplParams" colspan="2"><a id="a9b60276d631e07ad8df9bfad0d4c9bb6"></a>
+template&lt;class R &gt; </td></tr>
+<tr class="memitem:a9b60276d631e07ad8df9bfad0d4c9bb6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>assign_range</b> (R &amp;&amp;rg) -&gt; enable_if_t&lt; Internal::container_compatible_range&lt; R, value_type &gt;&gt;</td></tr>
+<tr class="separator:a9b60276d631e07ad8df9bfad0d4c9bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d758caaf3c69142fa1332bdb31a7f2c"><td class="memItemLeft" align="right" valign="top"><a id="a2d758caaf3c69142fa1332bdb31a7f2c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (initializer_list&lt; T &gt; iList)</td></tr>
+<tr class="separator:a2d758caaf3c69142fa1332bdb31a7f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7637f583c06c1424208db376748df315"><td class="memItemLeft" align="right" valign="top"><a id="a7637f583c06c1424208db376748df315"></a>
 AZ_FORCE_INLINE size_type&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
 <tr class="separator:a7637f583c06c1424208db376748df315"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,12 +203,20 @@ AZ_FORCE_INLINE const_reference&#160;</td><td class="memItemRight" valign="botto
 <tr class="memitem:a6484f908e2a486bb9fdc2477ada79aa5"><td class="memItemLeft" align="right" valign="top"><a id="a6484f908e2a486bb9fdc2477ada79aa5"></a>
 AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>push_front</b> (const_reference value)</td></tr>
 <tr class="separator:a6484f908e2a486bb9fdc2477ada79aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb90c6521ceb2da5b3f49a45f3d56ff9"><td class="memTemplParams" colspan="2"><a id="aeb90c6521ceb2da5b3f49a45f3d56ff9"></a>
+template&lt;class R &gt; </td></tr>
+<tr class="memitem:aeb90c6521ceb2da5b3f49a45f3d56ff9"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>prepend_range</b> (R &amp;&amp;rg) -&gt; enable_if_t&lt; Internal::container_compatible_range&lt; R, T &gt;&gt;</td></tr>
+<tr class="separator:aeb90c6521ceb2da5b3f49a45f3d56ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54efce1c03d0f81d62f0200de89c9fc4"><td class="memItemLeft" align="right" valign="top"><a id="a54efce1c03d0f81d62f0200de89c9fc4"></a>
 AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>pop_front</b> ()</td></tr>
 <tr class="separator:a54efce1c03d0f81d62f0200de89c9fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ceaefe5836b449e2ee712c361fd58a5"><td class="memItemLeft" align="right" valign="top"><a id="a6ceaefe5836b449e2ee712c361fd58a5"></a>
 AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>push_back</b> (const_reference value)</td></tr>
 <tr class="separator:a6ceaefe5836b449e2ee712c361fd58a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accc533aec80685aa4974cdb29ffb0346"><td class="memTemplParams" colspan="2"><a id="accc533aec80685aa4974cdb29ffb0346"></a>
+template&lt;class R &gt; </td></tr>
+<tr class="memitem:accc533aec80685aa4974cdb29ffb0346"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>append_range</b> (R &amp;&amp;rg) -&gt; enable_if_t&lt; Internal::container_compatible_range&lt; R, T &gt;&gt;</td></tr>
+<tr class="separator:accc533aec80685aa4974cdb29ffb0346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2a443c46f872d3c4074a3eb46d8b2c7"><td class="memItemLeft" align="right" valign="top"><a id="ac2a443c46f872d3c4074a3eb46d8b2c7"></a>
 AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>pop_back</b> ()</td></tr>
 <tr class="separator:ac2a443c46f872d3c4074a3eb46d8b2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,21 +239,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>push_back</b> (T &amp
 <tr class="memitem:a232320318c5db7c1f1eda1321b9955e5"><td class="memItemLeft" align="right" valign="top"><a id="a232320318c5db7c1f1eda1321b9955e5"></a>
 <a class="el" href="class_a_z_std_1_1list__iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="class_a_z_std_1_1list__const__iterator.html">const_iterator</a> inserPos, T &amp;&amp;value)</td></tr>
 <tr class="separator:a232320318c5db7c1f1eda1321b9955e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6785df2ac4db011d44b82696b1a46ec"><td class="memTemplParams" colspan="2"><a id="ad6785df2ac4db011d44b82696b1a46ec"></a>
+<tr class="memitem:ae79b330c56a78a760803a17c285e713f"><td class="memTemplParams" colspan="2"><a id="ae79b330c56a78a760803a17c285e713f"></a>
 template&lt;class ... ArgumentsInputs&gt; </td></tr>
-<tr class="memitem:ad6785df2ac4db011d44b82696b1a46ec"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>emplace_front</b> (ArgumentsInputs &amp;&amp;... agruments)</td></tr>
-<tr class="separator:ad6785df2ac4db011d44b82696b1a46ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab83e65e055acbaef1c186eaa5cf0cd0d"><td class="memTemplParams" colspan="2"><a id="ab83e65e055acbaef1c186eaa5cf0cd0d"></a>
+<tr class="memitem:ae79b330c56a78a760803a17c285e713f"><td class="memTemplItemLeft" align="right" valign="top">reference&#160;</td><td class="memTemplItemRight" valign="bottom"><b>emplace_front</b> (ArgumentsInputs &amp;&amp;... arguments)</td></tr>
+<tr class="separator:ae79b330c56a78a760803a17c285e713f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ebecc9eac4c112c5537e3857d6ac5dd"><td class="memTemplParams" colspan="2"><a id="a3ebecc9eac4c112c5537e3857d6ac5dd"></a>
 template&lt;class ... ArgumentsInputs&gt; </td></tr>
-<tr class="memitem:ab83e65e055acbaef1c186eaa5cf0cd0d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>emplace_back</b> (ArgumentsInputs &amp;&amp;... agruments)</td></tr>
-<tr class="separator:ab83e65e055acbaef1c186eaa5cf0cd0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5be176acb73fbb494a83d08e7acbd259"><td class="memTemplParams" colspan="2"><a id="a5be176acb73fbb494a83d08e7acbd259"></a>
+<tr class="memitem:a3ebecc9eac4c112c5537e3857d6ac5dd"><td class="memTemplItemLeft" align="right" valign="top">reference&#160;</td><td class="memTemplItemRight" valign="bottom"><b>emplace_back</b> (ArgumentsInputs &amp;&amp;... arguments)</td></tr>
+<tr class="separator:a3ebecc9eac4c112c5537e3857d6ac5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b6589f996bbe93a5910fd8c790b91b"><td class="memTemplParams" colspan="2"><a id="a12b6589f996bbe93a5910fd8c790b91b"></a>
 template&lt;class ... ArgumentsInputs&gt; </td></tr>
-<tr class="memitem:a5be176acb73fbb494a83d08e7acbd259"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1list__iterator.html">iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>emplace</b> (<a class="el" href="class_a_z_std_1_1list__const__iterator.html">const_iterator</a> insertPos, ArgumentsInputs &amp;&amp;... agruments)</td></tr>
-<tr class="separator:a5be176acb73fbb494a83d08e7acbd259"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa5e4c9a01e978d9a692d28c241d1613"><td class="memItemLeft" align="right" valign="top"><a id="afa5e4c9a01e978d9a692d28c241d1613"></a>
-<a class="el" href="class_a_z_std_1_1list__iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="class_a_z_std_1_1list__const__iterator.html">const_iterator</a> insertPos, std::initializer_list&lt; T &gt; ilist)</td></tr>
-<tr class="separator:afa5e4c9a01e978d9a692d28c241d1613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b6589f996bbe93a5910fd8c790b91b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1list__iterator.html">iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>emplace</b> (<a class="el" href="class_a_z_std_1_1list__const__iterator.html">const_iterator</a> insertPos, ArgumentsInputs &amp;&amp;... arguments)</td></tr>
+<tr class="separator:a12b6589f996bbe93a5910fd8c790b91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f9fcbb9577beac13731667527a4ce21"><td class="memItemLeft" align="right" valign="top"><a id="a8f9fcbb9577beac13731667527a4ce21"></a>
+<a class="el" href="class_a_z_std_1_1list__iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="class_a_z_std_1_1list__const__iterator.html">const_iterator</a> insertPos, initializer_list&lt; T &gt; ilist)</td></tr>
+<tr class="separator:a8f9fcbb9577beac13731667527a4ce21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e18f58f6ddad34e799e04fdc841171a"><td class="memItemLeft" align="right" valign="top"><a id="a6e18f58f6ddad34e799e04fdc841171a"></a>
 <a class="el" href="class_a_z_std_1_1list__iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="class_a_z_std_1_1list__const__iterator.html">const_iterator</a> insertPos, const_reference value)</td></tr>
 <tr class="separator:a6e18f58f6ddad34e799e04fdc841171a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,6 +264,10 @@ template&lt;class ... ArgumentsInputs&gt; </td></tr>
 template&lt;class InputIterator &gt; </td></tr>
 <tr class="memitem:aedc626867fa6e9d97c0adc111fe15017"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1list__iterator.html">iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert</b> (<a class="el" href="class_a_z_std_1_1list__const__iterator.html">const_iterator</a> insertPos, InputIterator first, InputIterator last)</td></tr>
 <tr class="separator:aedc626867fa6e9d97c0adc111fe15017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb37bbefb790d331155e912b7abdf6c"><td class="memTemplParams" colspan="2"><a id="a7eb37bbefb790d331155e912b7abdf6c"></a>
+template&lt;class R &gt; </td></tr>
+<tr class="memitem:a7eb37bbefb790d331155e912b7abdf6c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert_range</b> (<a class="el" href="class_a_z_std_1_1list__const__iterator.html">const_iterator</a> insertPos, R &amp;&amp;rg) -&gt; enable_if_t&lt; Internal::container_compatible_range&lt; R, value_type &gt;, <a class="el" href="class_a_z_std_1_1list__iterator.html">iterator</a> &gt;</td></tr>
+<tr class="separator:a7eb37bbefb790d331155e912b7abdf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24f817c26450747ce6c7ee2f0c96d6c7"><td class="memItemLeft" align="right" valign="top"><a id="a24f817c26450747ce6c7ee2f0c96d6c7"></a>
 <a class="el" href="class_a_z_std_1_1list__iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (<a class="el" href="class_a_z_std_1_1list__const__iterator.html">const_iterator</a> toErase)</td></tr>
 <tr class="separator:a24f817c26450747ce6c7ee2f0c96d6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -324,10 +343,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memitem:a34ca4191ebd25e2e5cf70dbeadd376fe"><td class="memItemLeft" align="right" valign="top"><a id="a34ca4191ebd25e2e5cf70dbeadd376fe"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_iterator</b> (const <a class="el" href="class_a_z_std_1_1list__iterator.html">iterator</a> &amp;iter) const</td></tr>
 <tr class="separator:a34ca4191ebd25e2e5cf70dbeadd376fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a51cd1b4ce9b4163b11e3081ade2061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1list.html#a1a51cd1b4ce9b4163b11e3081ade2061">push_back</a> ()</td></tr>
-<tr class="separator:a1a51cd1b4ce9b4163b11e3081ade2061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0955e9f7436103161bf6dc204848ca61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1list.html#a0955e9f7436103161bf6dc204848ca61">push_front</a> ()</td></tr>
-<tr class="separator:a0955e9f7436103161bf6dc204848ca61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a588eaf3a2972b299fc3012a8af5cf947"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1list__iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1list.html#a588eaf3a2972b299fc3012a8af5cf947">insert</a> (<a class="el" href="class_a_z_std_1_1list__iterator.html">iterator</a> insertPos)</td></tr>
 <tr class="separator:a588eaf3a2972b299fc3012a8af5cf947"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5251edf144be8c775b84e9d18b556508"><td class="memItemLeft" align="right" valign="top"><a id="a5251edf144be8c775b84e9d18b556508"></a>
@@ -376,10 +391,10 @@ template&lt;class InputIterator &gt; </td></tr>
 template&lt;class InputIterator &gt; </td></tr>
 <tr class="memitem:ace0c9f0b3c9b315adabbc66c435dbb29"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>assign_iter</b> (const InputIterator &amp;first, const InputIterator &amp;last, const false_type &amp;)</td></tr>
 <tr class="separator:ace0c9f0b3c9b315adabbc66c435dbb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9323dd687747e267bf137ba7b1032d27"><td class="memTemplParams" colspan="2"><a id="a9323dd687747e267bf137ba7b1032d27"></a>
+<tr class="memitem:a6a4e0f9294a856d01d76057f7c183fc0"><td class="memTemplParams" colspan="2"><a id="a6a4e0f9294a856d01d76057f7c183fc0"></a>
 template&lt;class ... ArgumentsInputs&gt; </td></tr>
-<tr class="memitem:a9323dd687747e267bf137ba7b1032d27"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert_element</b> (<a class="el" href="class_a_z_std_1_1list__const__iterator.html">const_iterator</a> insertPos, ArgumentsInputs &amp;&amp;... agruments)</td></tr>
-<tr class="separator:a9323dd687747e267bf137ba7b1032d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4e0f9294a856d01d76057f7c183fc0"><td class="memTemplItemLeft" align="right" valign="top">reference&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert_element</b> (<a class="el" href="class_a_z_std_1_1list__const__iterator.html">const_iterator</a> insertPos, ArgumentsInputs &amp;&amp;... arguments)</td></tr>
+<tr class="separator:a6a4e0f9294a856d01d76057f7c183fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -387,7 +402,7 @@ Protected Attributes</h2></td></tr>
 base_node_type&#160;</td><td class="memItemRight" valign="bottom"><b>m_head</b></td></tr>
 <tr class="separator:a3a7442061a248bef70d79744c21ceade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8012f7eff911d47a481f034eccbfae9"><td class="memItemLeft" align="right" valign="top"><a id="ae8012f7eff911d47a481f034eccbfae9"></a>
-size_type&#160;</td><td class="memItemRight" valign="bottom"><b>m_numElements</b></td></tr>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>m_numElements</b> {}</td></tr>
 <tr class="separator:ae8012f7eff911d47a481f034eccbfae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa734acee1a2620ac2e95f167a122681c"><td class="memItemLeft" align="right" valign="top"><a id="aa734acee1a2620ac2e95f167a122681c"></a>
 allocator_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1list.html#aa734acee1a2620ac2e95f167a122681c">m_allocator</a></td></tr>
@@ -456,62 +471,6 @@ template&lt;class T , class Allocator  = AZStd::allocator&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Resets the container without deallocating any memory or calling any destructor. This function should be used when we need very quick tear down. Generally it's used for temporary vectors and we can just nuke them that way. In addition the provided <a class="el" href="_allocators.html">Allocators</a>, has leak and reset flag which will enable automatically this behavior. So this function should be used in special cases AZStdExamples. </p><dl class="section note"><dt>Note</dt><dd>This function is added to the vector for consistency. In the vector case we have only one allocation, and if the allocator allows memory leaks it can just leave deallocate function empty, which performance wise will be the same. For more complex containers this will make big difference. </dd></dl>
-
-</div>
-</div>
-<a id="a1a51cd1b4ce9b4163b11e3081ade2061"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a51cd1b4ce9b4163b11e3081ade2061">&#9670;&nbsp;</a></span>push_back()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , class Allocator  = AZStd::allocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_a_z_std_1_1list.html">AZStd::list</a>&lt; T, Allocator &gt;::push_back </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Pushes an element at the back of the list, without a provided instance. This can be used for value types with expensive constructors so we don't want to create temporary one. </p>
-
-</div>
-</div>
-<a id="a0955e9f7436103161bf6dc204848ca61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0955e9f7436103161bf6dc204848ca61">&#9670;&nbsp;</a></span>push_front()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , class Allocator  = AZStd::allocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_a_z_std_1_1list.html">AZStd::list</a>&lt; T, Allocator &gt;::push_front </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Pushes an element at the front of the list, without a provided instance. This can be used for value types with expensive constructors so we don't want to create temporary one. </p>
 
 </div>
 </div>
@@ -590,7 +549,7 @@ template&lt;class T , class Allocator  = AZStd::allocator&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:05 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:54 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

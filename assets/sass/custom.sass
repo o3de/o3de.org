@@ -1507,14 +1507,13 @@ nav.docs-nav
       position: relative
 
       a
-        display: block
+        display: inline-block
         padding: 3px 20px 3px 5px
         color: #333
         &:hover
           color: $o3de-blue-highlight
       
-      a.currentPage:not(.has-children)
-        background: rgba(221, 221, 221, .3)
+      a.currentPage
         border-radius: 3px
         color: $o3de-blue
         font-weight: 600
@@ -1526,28 +1525,50 @@ nav.docs-nav
         color: $o3de-blue
         &:hover
           color: $o3de-blue-highlight
-
-      a.has-children::after
-        content: ''
-        width: 10px
-        height: 10px
-        position: absolute
-        right: 8px
-        top: 13px
-        transition: transform .5s ease
-        transform: rotate(-45deg)
-        border: 2px solid #333
-        border-left: 0
-        border-top: 0
         
       a.currentAncestor.has-children::after
         border-color: $o3de-blue
 
       a.has-children:hover::after
-        border-color: $o3de-blue-highlight
+        border-color: $o3de-blue-highlight    
+
+      a.has-children-icon  
+        position: absolute  
+        right: 0px
+        top: 8px
+        &:after
+          position: absolute  
+          right: 5px
+          content: ''
+          width: 10px
+          height: 10px
+          transition: transform .5s ease
+          transform: rotate(-45deg)
+          border: 2px solid #333
+          border-left: 0
+          border-top: 0    
+        &:hover::after
+          cursor: pointer
+          border-color: $o3de-blue-highlight
+        
+      a.has-children-icon.open
+        &:after
+          transform: rotate(45deg) translate(-3px, -3px)
+        &:hover::after
+          border-color: $o3de-blue-highlight
       
-      a.has-children.open::after
-        transform: rotate(45deg) translate(-3px, -3px)
+      a.has-children-icon.currentPage
+        &:after
+          border-color: $o3de-blue
+        &:hover::after
+          border-color: $o3de-blue-highlight
+
+      a.has-children-icon.currentAncestor
+        &:after
+          border-color: $o3de-blue          
+        &:hover::after
+          border-color: $o3de-blue-highlight
+
 
       ul
         display: none

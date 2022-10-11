@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -74,8 +74,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6fbebc6735e273299c8e900c5c0d1ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcda47f58ee6a3b05aad53ed85539c8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html#adcda47f58ee6a3b05aad53ed85539c8c">CreateInstance</a> (const <a class="el" href="struct_a_z_1_1_id_utils_1_1_remapper.html">AZ::IdUtils::Remapper</a>&lt; <a class="el" href="class_a_z_1_1_entity_id.html">AZ::EntityId</a> &gt;::IdMapper &amp;customMapper=nullptr, <a class="el" href="struct_a_z_1_1_uuid.html">SliceInstanceId</a> sliceInstanceId=SliceInstanceId::CreateRandom())</td></tr>
 <tr class="separator:adcda47f58ee6a3b05aad53ed85539c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a045c54a3886bcd6863f68e9ece8e58bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html#a045c54a3886bcd6863f68e9ece8e58bc">CreateInstanceFromExistingEntities</a> (<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_entity.html">AZ::Entity</a> * &gt; &amp;entities, const <a class="el" href="class_a_z_std_1_1unordered__map.html">EntityIdToEntityIdMap</a> assetToLiveIdMap, <a class="el" href="struct_a_z_1_1_uuid.html">SliceInstanceId</a> sliceInstanceId=SliceInstanceId::CreateRandom())</td></tr>
-<tr class="separator:a045c54a3886bcd6863f68e9ece8e58bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646937cbb607e71290b59ee2eb36e0bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html#a646937cbb607e71290b59ee2eb36e0bf">CreateInstanceFromExistingEntities</a> (<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_entity.html">AZ::Entity</a> * &gt; &amp;entities, const <a class="el" href="class_a_z_std_1_1unordered__map.html">EntityIdToEntityIdMap</a> &amp;assetToLiveIdMap, <a class="el" href="struct_a_z_1_1_uuid.html">SliceInstanceId</a> sliceInstanceId=SliceInstanceId::CreateRandom())</td></tr>
+<tr class="separator:a646937cbb607e71290b59ee2eb36e0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fc5ab0b8ed5efc8fa9c48574aba38b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html#a7fc5ab0b8ed5efc8fa9c48574aba38b3">CloneInstance</a> (<a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a> *instance, <a class="el" href="class_a_z_std_1_1unordered__map.html">EntityIdToEntityIdMap</a> &amp;sourceToCloneEntityIdMap)</td></tr>
 <tr class="separator:a7fc5ab0b8ed5efc8fa9c48574aba38b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fcf6626a07567b6775e49c90e2a4b8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html#a3fcf6626a07567b6775e49c90e2a4b8f">RestoreAndClearCachedInstance</a> (<a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a> &amp;cachedInstance)</td></tr>
@@ -196,7 +196,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SliceComponent</b></
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>Use SliceInstances </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated:</a></b></dt><dd>Use SliceInstances </dd></dl>
 
 </div>
 </div>
@@ -316,8 +316,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SliceComponent</b></
 
 </div>
 </div>
-<a id="a045c54a3886bcd6863f68e9ece8e58bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a045c54a3886bcd6863f68e9ece8e58bc">&#9670;&nbsp;</a></span>CreateInstanceFromExistingEntities()</h2>
+<a id="a646937cbb607e71290b59ee2eb36e0bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646937cbb607e71290b59ee2eb36e0bf">&#9670;&nbsp;</a></span>CreateInstanceFromExistingEntities()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -331,7 +331,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SliceComponent</b></
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_a_z_std_1_1unordered__map.html">EntityIdToEntityIdMap</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_std_1_1unordered__map.html">EntityIdToEntityIdMap</a> &amp;&#160;</td>
           <td class="paramname"><em>assetToLiveIdMap</em>, </td>
         </tr>
         <tr>
@@ -493,7 +493,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SliceComponent</b></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:46 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:30 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

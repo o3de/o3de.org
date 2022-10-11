@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AtomLyIntegration Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -54,6 +54,8 @@ $(function() {
 <table class="directory">
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>AZ_RTTI</b>(AZ::Render::AreaLightRequests, &quot;{BC54532C-F3C8-4942-99FC-58D2E3D3DD54}&quot;) (defined in <a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#a3e7ef166cc9eee97fd150da4dfb85b46">ConvertToIntensityMode</a>(PhotometricUnit intensityMode)=0</td><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#a41f293d12e8c058faa3a233dc0845cd6">GetAffectsGI</a>() const =0</td><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#ad84fd38d93ac3ffbe74e66b974457a4a">GetAffectsGIFactor</a>() const =0</td><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#aea77bdf0c5d1eaf410963a686fe17a13">GetAttenuationRadius</a>() const =0</td><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#a216188d6f6aaaecea30afd428da28147">GetColor</a>() const =0</td><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#a4182f565a672510af614dbd6bcfdd4c0">GetEnableShadow</a>() const =0</td><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
@@ -71,6 +73,8 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#ad3b8c90984f1903df8261c0b2648c4e3">GetShadowmapMaxSize</a>() const =0</td><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#aff3174e660970771ebbddce3a38197a2">GetUseFastApproximation</a>() const =0</td><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#afbb1f8707eaee68b0cb1940db5ba076f">HandlerPolicy</a></td><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#a3985a27d78e211e1929fc44fdcf0e8be">SetAffectsGI</a>(bool affectsGI) const =0</td><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#a315c57a9766b999a0e1d9ca4f0a0bdce">SetAffectsGIFactor</a>(float affectsGIFactor) const =0</td><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#a062a060ce716a752fb041e0c17e3f53b">SetAttenuationRadius</a>(float radius)=0</td><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>SetAttenuationRadiusMode</b>(LightAttenuationRadiusMode attenuationRadiusMode)=0 (defined in <a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#a1334cd922506cfdb394b5713bcb81ecb">SetColor</a>(const Color &amp;color)=0</td><td class="entry"><a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html">AZ::Render::AreaLightRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
@@ -92,7 +96,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:33 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:27 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

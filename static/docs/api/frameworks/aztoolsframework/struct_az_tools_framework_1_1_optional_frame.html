@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,7 +46,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_az_tools_framework_1_1_optional_frame-members.html">List of all members</a>  </div>
@@ -60,11 +59,6 @@ $(function() {
 
 <p><code>#include &lt;EditorTransformComponentSelection.h&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_optional_frame_1_1_pick_type.html">PickType</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a434556d3469fa76af138800d819ad195"><td class="memItemLeft" align="right" valign="top"><a id="a434556d3469fa76af138800d819ad195"></a>
@@ -76,15 +70,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasOrientationOverrid
 <tr class="memitem:aa5e8ad795f93635c14e84b56545aa17d"><td class="memItemLeft" align="right" valign="top"><a id="aa5e8ad795f93635c14e84b56545aa17d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasTransformOverride</b> () const</td></tr>
 <tr class="separator:aa5e8ad795f93635c14e84b56545aa17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0720422faaa2d1c629947ae26ab60760"><td class="memItemLeft" align="right" valign="top"><a id="a0720422faaa2d1c629947ae26ab60760"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasEntityOverride</b> () const</td></tr>
-<tr class="separator:a0720422faaa2d1c629947ae26ab60760"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe17104496b402fc7937ba6c5a13c1ae"><td class="memItemLeft" align="right" valign="top"><a id="abe17104496b402fc7937ba6c5a13c1ae"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>PickedTranslation</b> () const</td></tr>
-<tr class="separator:abe17104496b402fc7937ba6c5a13c1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad2201331737a42a8ef9c37e0bc6490b"><td class="memItemLeft" align="right" valign="top"><a id="aad2201331737a42a8ef9c37e0bc6490b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>PickedOrientation</b> () const</td></tr>
-<tr class="separator:aad2201331737a42a8ef9c37e0bc6490b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31e0f91229124506245d9bf5a05db6de"><td class="memItemLeft" align="right" valign="top"><a id="a31e0f91229124506245d9bf5a05db6de"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_optional_frame.html#a31e0f91229124506245d9bf5a05db6de">Reset</a> ()</td></tr>
 <tr class="memdesc:a31e0f91229124506245d9bf5a05db6de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all state associated with the frame. <br /></td></tr>
@@ -100,10 +85,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a914cadf343863b763e61aa018e2346f4"><td class="memItemLeft" align="right" valign="top"><a id="a914cadf343863b763e61aa018e2346f4"></a>
-AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_optional_frame.html#a914cadf343863b763e61aa018e2346f4">m_pickedEntityIdOverride</a></td></tr>
-<tr class="memdesc:a914cadf343863b763e61aa018e2346f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Picked' Entity - frame and parent space relative to this if active. <br /></td></tr>
-<tr class="separator:a914cadf343863b763e61aa018e2346f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad00b02d653c4cdd082361d870f48f82"><td class="memItemLeft" align="right" valign="top"><a id="aad00b02d653c4cdd082361d870f48f82"></a>
 AZStd::optional&lt; AZ::Vector3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_optional_frame.html#aad00b02d653c4cdd082361d870f48f82">m_translationOverride</a></td></tr>
 <tr class="memdesc:aad00b02d653c4cdd082361d870f48f82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translation override, if set, reset when selection is empty. <br /></td></tr>
@@ -112,10 +93,6 @@ AZStd::optional&lt; AZ::Vector3 &gt;&#160;</td><td class="memItemRight" valign="
 AZStd::optional&lt; AZ::Quaternion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_optional_frame.html#aa20c74e202ef38039f496092ffc0d5af">m_orientationOverride</a></td></tr>
 <tr class="memdesc:aa20c74e202ef38039f496092ffc0d5af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orientation override, if set, reset when selection is empty. <br /></td></tr>
 <tr class="separator:aa20c74e202ef38039f496092ffc0d5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d4e2af96d16c9ce39190bc8e89ffa8c"><td class="memItemLeft" align="right" valign="top"><a id="a0d4e2af96d16c9ce39190bc8e89ffa8c"></a>
-AZ::u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_optional_frame.html#a0d4e2af96d16c9ce39190bc8e89ffa8c">m_pickTypes</a> = PickType::None</td></tr>
-<tr class="memdesc:a0d4e2af96d16c9ce39190bc8e89ffa8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">What mode(s) were we in when picking an EntityId override. <br /></td></tr>
-<tr class="separator:a0d4e2af96d16c9ce39190bc8e89ffa8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Temporary manipulator frame used during selection. </p>
@@ -125,7 +102,7 @@ AZ::u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:37 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:30 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

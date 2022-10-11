@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -61,8 +61,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae6d85507e18c6a4eac6894123245efc2"><td class="memItemLeft" align="right" valign="top"><a id="ae6d85507e18c6a4eac6894123245efc2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_descriptor.html">AZ::RPI::ShaderOptionDescriptor</a>, &quot;{07B9E2F7-5408-49E9-904D-CC1A9C33230E}&quot;)</td></tr>
 <tr class="separator:ae6d85507e18c6a4eac6894123245efc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25d9ff7882a3117156d54aad47b4dcd4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_descriptor.html#a25d9ff7882a3117156d54aad47b4dcd4">ShaderOptionDescriptor</a> (const Name &amp;name, const ShaderOptionType &amp;optionType, uint32_t bitOffset, uint32_t order, const AZStd::vector&lt; RPI::ShaderOptionValuePair &gt; &amp;nameIndexList, const Name &amp;defaultValue)</td></tr>
-<tr class="separator:a25d9ff7882a3117156d54aad47b4dcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f4928918aa393a6d3334910ab454b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_descriptor.html#aa7f4928918aa393a6d3334910ab454b9">ShaderOptionDescriptor</a> (const Name &amp;name, const ShaderOptionType &amp;optionType, uint32_t bitOffset, uint32_t order, const ShaderOptionValues &amp;nameIndexList, const Name &amp;defaultValue={})</td></tr>
+<tr class="separator:aa7f4928918aa393a6d3334910ab454b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a890a28d22c327a06ac27b42d7963e66a"><td class="memItemLeft" align="right" valign="top"><a id="a890a28d22c327a06ac27b42d7963e66a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DEFAULT_COPY_MOVE</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_descriptor.html">ShaderOptionDescriptor</a>)</td></tr>
 <tr class="separator:a890a28d22c327a06ac27b42d7963e66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,8 +172,8 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes a shader option to the <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group_layout.html">ShaderOptionGroupLayout</a> class. Maps a shader option to a set of bits in a mask in order to facilitate packing values into a mask to form a ShaderKey. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a25d9ff7882a3117156d54aad47b4dcd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25d9ff7882a3117156d54aad47b4dcd4">&#9670;&nbsp;</a></span>ShaderOptionDescriptor()</h2>
+<a id="aa7f4928918aa393a6d3334910ab454b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7f4928918aa393a6d3334910ab454b9">&#9670;&nbsp;</a></span>ShaderOptionDescriptor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,14 +205,14 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const AZStd::vector&lt; RPI::ShaderOptionValuePair &gt; &amp;&#160;</td>
+          <td class="paramtype">const ShaderOptionValues &amp;&#160;</td>
           <td class="paramname"><em>nameIndexList</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const Name &amp;&#160;</td>
-          <td class="paramname"><em>defaultValue</em>&#160;</td>
+          <td class="paramname"><em>defaultValue</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -227,8 +227,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
     <tr><td class="paramname">optionType</td><td>Type hint for the option - bool, enum, integer range, etc. </td></tr>
     <tr><td class="paramname">bitOffset</td><td>Bit offset must match the <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group_layout.html">ShaderOptionGroupLayout</a> where this Option will be added </td></tr>
     <tr><td class="paramname">order</td><td>The order (rank) of the shader option. Must be unique within a group. Lower order is higher priority. </td></tr>
-    <tr><td class="paramname">nameIndexList</td><td>List of valid (valueName, value) pairs for this Option </td></tr>
-    <tr><td class="paramname">defaultValue</td><td>Default value name, which must also be in the nameIndexList. In the cases where the list defines a range (IntegerRange for instance) defaultValue must be within the range instead. </td></tr>
+    <tr><td class="paramname">nameIndexList</td><td>List of valid (valueName, value) pairs for this Option. See "Create*ShaderOptionValues" utility functions above. <br  />
+ </td></tr>
+    <tr><td class="paramname">defaultValue</td><td>Default value name, which must also be in the nameIndexList. In the cases where the list defines a range (IntegerRange for instance) defaultValue must be within the range instead. If omitted, the first entry in @nameIndexList will be used. </td></tr>
   </table>
   </dd>
 </dl>
@@ -290,7 +291,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:29 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:23 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

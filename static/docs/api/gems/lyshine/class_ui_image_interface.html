@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine LyShine Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -129,14 +129,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:ac9d3f9f6e9c5181a954bb03efb596d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f77eb65a43c627350f00b386218c23b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui_image_interface.html#a8f77eb65a43c627350f00b386218c23b">SetSpritePathnameIfExists</a> (AZStd::string spritePath)=0</td></tr>
 <tr class="separator:a8f77eb65a43c627350f00b386218c23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2ac5dbb05027d7f2d3ed5616f5a487d"><td class="memItemLeft" align="right" valign="top"><a id="ab2ac5dbb05027d7f2d3ed5616f5a487d"></a>
-virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui_image_interface.html#ab2ac5dbb05027d7f2d3ed5616f5a487d">GetRenderTargetName</a> ()=0</td></tr>
-<tr class="memdesc:ab2ac5dbb05027d7f2d3ed5616f5a487d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the render target. <br /></td></tr>
-<tr class="separator:ab2ac5dbb05027d7f2d3ed5616f5a487d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b8a9439942dbe1d73a3e9ebf2379d19"><td class="memItemLeft" align="right" valign="top"><a id="a7b8a9439942dbe1d73a3e9ebf2379d19"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui_image_interface.html#a7b8a9439942dbe1d73a3e9ebf2379d19">SetRenderTargetName</a> (AZStd::string renderTargetName)=0</td></tr>
-<tr class="memdesc:a7b8a9439942dbe1d73a3e9ebf2379d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the render target. <br /></td></tr>
-<tr class="separator:a7b8a9439942dbe1d73a3e9ebf2379d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d67c2308e61fef62a233d38c8b6261f"><td class="memItemLeft" align="right" valign="top"><a id="a9d67c2308e61fef62a233d38c8b6261f"></a>
+virtual AZ::Data::Asset&lt; AZ::RPI::AttachmentImageAsset &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAttachmentImageAsset</b> ()=0</td></tr>
+<tr class="separator:a9d67c2308e61fef62a233d38c8b6261f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33f853b109bafaf8b377ab87be16be9"><td class="memItemLeft" align="right" valign="top"><a id="af33f853b109bafaf8b377ab87be16be9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAttachmentImageAsset</b> (const AZ::Data::Asset&lt; AZ::RPI::AttachmentImageAsset &gt; &amp;attachmentImageAsset)=0</td></tr>
+<tr class="separator:af33f853b109bafaf8b377ab87be16be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70bcd6c6eebceea60dda410e34e72d92"><td class="memItemLeft" align="right" valign="top"><a id="a70bcd6c6eebceea60dda410e34e72d92"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui_image_interface.html#a70bcd6c6eebceea60dda410e34e72d92">GetIsRenderTargetSRGB</a> ()=0</td></tr>
 <tr class="memdesc:a70bcd6c6eebceea60dda410e34e72d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the render target is in sRGB color space. <br /></td></tr>
@@ -330,7 +328,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:57 for Open 3D Engine LyShine Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:05 for Open 3D Engine LyShine Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

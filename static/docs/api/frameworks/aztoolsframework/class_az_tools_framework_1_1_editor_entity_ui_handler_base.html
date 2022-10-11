@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -48,11 +48,15 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="class_az_tools_framework_1_1_editor_entity_ui_handler_base-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::EditorEntityUiHandlerBase Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Defines a handler that can customize entity UI appearance and behavior in the Entity Outliner.  
+ <a href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#details">More...</a></p>
 
 <p><code>#include &lt;EditorEntityUiHandlerBase.h&gt;</code></p>
 
@@ -75,14 +79,14 @@ virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 virtual QIcon&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#ab9da13f3ac57578b1ee05505c68b83c0">GenerateItemIcon</a> (AZ::EntityId entityId) const</td></tr>
 <tr class="memdesc:ab9da13f3ac57578b1ee05505c68b83c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the item icon pixmap to display in the Outliner. <br /></td></tr>
 <tr class="separator:ab9da13f3ac57578b1ee05505c68b83c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8cb0672c506ea03ad8ba7acce9a487f"><td class="memItemLeft" align="right" valign="top"><a id="ae8cb0672c506ea03ad8ba7acce9a487f"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#ae8cb0672c506ea03ad8ba7acce9a487f">CanToggleLockVisibility</a> (AZ::EntityId entityId) const</td></tr>
-<tr class="memdesc:ae8cb0672c506ea03ad8ba7acce9a487f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the element's lock and visibility state should be accessible in the Outliner. <br /></td></tr>
-<tr class="separator:ae8cb0672c506ea03ad8ba7acce9a487f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af17f0dbd1a1fe0fd672f2c44c8c708c4"><td class="memItemLeft" align="right" valign="top"><a id="af17f0dbd1a1fe0fd672f2c44c8c708c4"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#af17f0dbd1a1fe0fd672f2c44c8c708c4">CanRename</a> (AZ::EntityId entityId) const</td></tr>
 <tr class="memdesc:af17f0dbd1a1fe0fd672f2c44c8c708c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the element's name should be editable. <br /></td></tr>
 <tr class="separator:af17f0dbd1a1fe0fd672f2c44c8c708c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8cb0672c506ea03ad8ba7acce9a487f"><td class="memItemLeft" align="right" valign="top"><a id="ae8cb0672c506ea03ad8ba7acce9a487f"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#ae8cb0672c506ea03ad8ba7acce9a487f">CanToggleLockVisibility</a> (AZ::EntityId entityId) const</td></tr>
+<tr class="memdesc:ae8cb0672c506ea03ad8ba7acce9a487f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the element's lock and visibility state should be accessible in the Outliner. <br /></td></tr>
+<tr class="separator:ae8cb0672c506ea03ad8ba7acce9a487f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf4827c6b4738ecc0ed876e9a0089565"><td class="memItemLeft" align="right" valign="top"><a id="aaf4827c6b4738ecc0ed876e9a0089565"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#aaf4827c6b4738ecc0ed876e9a0089565">PaintItemBackground</a> (QPainter *painter, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const</td></tr>
 <tr class="memdesc:aaf4827c6b4738ecc0ed876e9a0089565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paints the background of the item in the Outliner. <br /></td></tr>
@@ -105,6 +109,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:aeac1b599bdc329b8ddaa169ae62623b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af06eaf1436c14377a1a402784bfd7585"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#af06eaf1436c14377a1a402784bfd7585">OnOutlinerItemClick</a> (const QPoint &amp;position, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const</td></tr>
 <tr class="separator:af06eaf1436c14377a1a402784bfd7585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec1f40279899e6498e1472669637ab2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#a2ec1f40279899e6498e1472669637ab2">OnOutlinerItemDoubleClick</a> (const QModelIndex &amp;index) const</td></tr>
+<tr class="separator:a2ec1f40279899e6498e1472669637ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeda9dfe029b84f78fb0bb71f120f3bc1"><td class="memItemLeft" align="right" valign="top"><a id="aeda9dfe029b84f78fb0bb71f120f3bc1"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#aeda9dfe029b84f78fb0bb71f120f3bc1">OnOutlinerItemExpand</a> (const QModelIndex &amp;index) const</td></tr>
 <tr class="memdesc:aeda9dfe029b84f78fb0bb71f120f3bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when an entity's children are expanded in the Outliner. <br /></td></tr>
@@ -113,47 +119,22 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#a5ddd4193b2f0e2709362147d475c6e97">OnOutlinerItemCollapse</a> (const QModelIndex &amp;index) const</td></tr>
 <tr class="memdesc:a5ddd4193b2f0e2709362147d475c6e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when an entity's children are collapsed in the Outliner. <br /></td></tr>
 <tr class="separator:a5ddd4193b2f0e2709362147d475c6e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab02cefa9ad33a83d56cec1e8212ae6f7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#ab02cefa9ad33a83d56cec1e8212ae6f7">OnEntityDoubleClick</a> (AZ::EntityId entityId) const</td></tr>
-<tr class="separator:ab02cefa9ad33a83d56cec1e8212ae6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a0b510ba81dc58908516977480b84b192"><td class="memItemLeft" align="right" valign="top"><a id="a0b510ba81dc58908516977480b84b192"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html">EditorEntityUiHandlerBase</a>, &quot;{EFB6CBC0-3A0A-4302-92EB-62CAF1C47163}&quot;)</td></tr>
 <tr class="separator:a0b510ba81dc58908516977480b84b192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa07f587ece5705f697d279d8503c3fb7"><td class="memItemLeft" align="right" valign="top"><a id="aa07f587ece5705f697d279d8503c3fb7"></a>
+static AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetEntityIdFromIndex</b> (const QModelIndex &amp;index)</td></tr>
+<tr class="separator:aa07f587ece5705f697d279d8503c3fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines a handler that can customize entity UI appearance and behavior in the Entity Outliner. This class is meant to be abstract, entities do not have a handler by default. </p>
+<div class="textblock"><p>Defines a handler that can customize entity UI appearance and behavior in the Entity Outliner. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab02cefa9ad33a83d56cec1e8212ae6f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab02cefa9ad33a83d56cec1e8212ae6f7">&#9670;&nbsp;</a></span>OnEntityDoubleClick()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool AzToolsFramework::EditorEntityUiHandlerBase::OnEntityDoubleClick </td>
-          <td>(</td>
-          <td class="paramtype">AZ::EntityId&#160;</td>
-          <td class="paramname"><em>entityId</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Triggered when the entity is double clicked in the Outliner or in the Viewport. </p><dl class="section return"><dt>Returns</dt><dd>True if the double click has been handled and should not be propagated, false otherwise. </dd></dl>
-
-<p>Reimplemented in <a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#a90a1872dcdc0d5ed343a0c263dff387c">AzToolsFramework::PrefabUiHandler</a>, and <a class="el" href="class_az_tools_framework_1_1_level_root_ui_handler.html#af2411f26e332644f98a2fb26112e2fe8">AzToolsFramework::LevelRootUiHandler</a>.</p>
-
-</div>
-</div>
 <a id="af06eaf1436c14377a1a402784bfd7585"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af06eaf1436c14377a1a402784bfd7585">&#9670;&nbsp;</a></span>OnOutlinerItemClick()</h2>
 
@@ -195,7 +176,36 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Triggered when the entity is clicked in the Outliner. </p><dl class="section return"><dt>Returns</dt><dd>True if the click has been handled and should not be propagated, false otherwise. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#adbf94b03aec7ffd169dc2b6ad56a8c10">AzToolsFramework::PrefabUiHandler</a>.</p>
+<p>Reimplemented in <a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#adbf94b03aec7ffd169dc2b6ad56a8c10">AzToolsFramework::PrefabUiHandler</a>, and <a class="el" href="class_az_tools_framework_1_1_level_root_ui_handler.html#a00573dde6925ed9f0c93cb41d171e1f9">AzToolsFramework::LevelRootUiHandler</a>.</p>
+
+</div>
+</div>
+<a id="a2ec1f40279899e6498e1472669637ab2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ec1f40279899e6498e1472669637ab2">&#9670;&nbsp;</a></span>OnOutlinerItemDoubleClick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AzToolsFramework::EditorEntityUiHandlerBase::OnOutlinerItemDoubleClick </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Triggered when the entity is double-clicked in the Outliner. </p><dl class="section return"><dt>Returns</dt><dd>True if the double-click has been handled and should not be propagated, false otherwise. </dd></dl>
+
+<p>Reimplemented in <a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#ac5d16a48cbd913fbdb156216524b6eb1">AzToolsFramework::PrefabUiHandler</a>, and <a class="el" href="class_az_tools_framework_1_1_level_root_ui_handler.html#adf536a6f6ec7f5fc1cba0a9632a1a643">AzToolsFramework::LevelRootUiHandler</a>.</p>
 
 </div>
 </div>
@@ -205,7 +215,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:36 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:29 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

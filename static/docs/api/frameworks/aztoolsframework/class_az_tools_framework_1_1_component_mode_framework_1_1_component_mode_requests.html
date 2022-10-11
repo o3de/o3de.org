@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -82,16 +82,16 @@ virtual AZ::ComponentId&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <tr class="separator:a3c8f708ae24326410dd83c22e4ab072a inherit pub_methods_class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd958ea0c8edb040b9958de5121fe218 inherit pub_methods_class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode"><td class="memItemLeft" align="right" valign="top"><a id="abd958ea0c8edb040b9958de5121fe218"></a>
 virtual AZStd::vector&lt; <a class="el" href="struct_az_tools_framework_1_1_action_override.html">ActionOverride</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html#abd958ea0c8edb040b9958de5121fe218">PopulateActions</a> ()=0</td></tr>
-<tr class="memdesc:abd958ea0c8edb040b9958de5121fe218 inherit pub_methods_class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the ActionManager which actions should be enabled for this Mode. <br /></td></tr>
+<tr class="memdesc:abd958ea0c8edb040b9958de5121fe218 inherit pub_methods_class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the <a class="el" href="class_az_tools_framework_1_1_action_manager.html">ActionManager</a> which actions should be enabled for this Mode. <br /></td></tr>
 <tr class="separator:abd958ea0c8edb040b9958de5121fe218 inherit pub_methods_class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae62829e9011efad8169104708389af4d inherit pub_methods_class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode"><td class="memItemLeft" align="right" valign="top"><a id="ae62829e9011efad8169104708389af4d"></a>
 virtual AZStd::vector&lt; <a class="el" href="class_az_tools_framework_1_1_id_type.html">ViewportUi::ClusterId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html#ae62829e9011efad8169104708389af4d">PopulateViewportUi</a> ()=0</td></tr>
 <tr class="memdesc:ae62829e9011efad8169104708389af4d inherit pub_methods_class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add UI elements for this <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a> onto the Viewport UI system. <br /></td></tr>
 <tr class="separator:ae62829e9011efad8169104708389af4d inherit pub_methods_class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62f0270641c0b316d2664e9ec3641220 inherit pub_methods_class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode"><td class="memItemLeft" align="right" valign="top"><a id="a62f0270641c0b316d2664e9ec3641220"></a>
-virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html#a62f0270641c0b316d2664e9ec3641220">GetComponentModeName</a> () const</td></tr>
-<tr class="memdesc:a62f0270641c0b316d2664e9ec3641220 inherit pub_methods_class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name for the <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a> to be displayed. <br /></td></tr>
-<tr class="separator:a62f0270641c0b316d2664e9ec3641220 inherit pub_methods_class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47992da6667a4263330d17b12d3394ae inherit pub_methods_class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode"><td class="memItemLeft" align="right" valign="top"><a id="a47992da6667a4263330d17b12d3394ae"></a>
+virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html#a47992da6667a4263330d17b12d3394ae">GetComponentModeName</a> () const =0</td></tr>
+<tr class="memdesc:a47992da6667a4263330d17b12d3394ae inherit pub_methods_class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name for the <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a> to be displayed. <br /></td></tr>
+<tr class="separator:a47992da6667a4263330d17b12d3394ae inherit pub_methods_class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Mouse viewport events to be intercepted by individual ComponentModes. </p>
@@ -128,7 +128,7 @@ virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:39 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:32 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -271,13 +271,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateAndPostLoad</
 <tr class="memitem:a695156867713a50e30714be4782362f0"><td class="memItemLeft" align="right" valign="top"><a id="a695156867713a50e30714be4782362f0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>PostLoad</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">AZ::Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AZ::Data::AssetData</a> &gt; &amp;asset, bool loadSucceeded, bool isReload, <a class="el" href="class_a_z_1_1_data_1_1_asset_handler.html">AZ::Data::AssetHandler</a> *assetHandler=nullptr)</td></tr>
 <tr class="separator:a695156867713a50e30714be4782362f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addcc330d78f27864dcdb47b7f1482dfe"><td class="memItemLeft" align="right" valign="top"><a id="addcc330d78f27864dcdb47b7f1482dfe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>QueueAssetReload</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">AZ::Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AZ::Data::AssetData</a> &gt; asset, bool signalLoaded)</td></tr>
+<tr class="separator:addcc330d78f27864dcdb47b7f1482dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd56164e7423f810091790a29f68e4a0"><td class="memItemLeft" align="right" valign="top"><a id="abd56164e7423f810091790a29f68e4a0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateDebugStatus</b> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">AZ::Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AZ::Data::AssetData</a> &gt; &amp;asset)</td></tr>
 <tr class="separator:abd56164e7423f810091790a29f68e4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa489ab659f3ad3823fe9c48cc5390c2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_container.html">AssetContainer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset_manager.html#aa489ab659f3ad3823fe9c48cc5390c2a">GetAssetContainer</a> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; asset, const <a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a> &amp;loadParams=<a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a>{})</td></tr>
-<tr class="separator:aa489ab659f3ad3823fe9c48cc5390c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec49801c5b4060a4cad0f1e44052f79"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_container.html">AssetContainer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset_manager.html#a9ec49801c5b4060a4cad0f1e44052f79">CreateAssetContainer</a> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; asset, const <a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a> &amp;loadParams=<a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a>{}) const</td></tr>
-<tr class="separator:a9ec49801c5b4060a4cad0f1e44052f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f09999ccc6f6ce39e89e1e041f67aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_container.html">AssetContainer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset_manager.html#a79f09999ccc6f6ce39e89e1e041f67aa">GetAssetContainer</a> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; asset, const <a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a> &amp;loadParams=<a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a>{}, bool isReload=false)</td></tr>
+<tr class="separator:a79f09999ccc6f6ce39e89e1e041f67aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08403353334350aa427916f5b7c6fb70"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_container.html">AssetContainer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset_manager.html#a08403353334350aa427916f5b7c6fb70">CreateAssetContainer</a> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; asset, const <a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a> &amp;loadParams=<a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a>{}, bool isReload=false) const</td></tr>
+<tr class="separator:a08403353334350aa427916f5b7c6fb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8486f3585a710b14167f71d54c050214"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset_manager.html#a8486f3585a710b14167f71d54c050214">ReleaseAssetContainersForAsset</a> (<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> *asset)</td></tr>
 <tr class="separator:a8486f3585a710b14167f71d54c050214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51995cf1fae7375e14a6e2def4bfd6a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset_manager.html#a51995cf1fae7375e14a6e2def4bfd6a3">ReleaseOwnedAssetContainer</a> (<a class="el" href="class_a_z_1_1_data_1_1_asset_container.html">AssetContainer</a> *assetContainer)</td></tr>
@@ -523,8 +526,8 @@ template&lt;class AssetClass &gt; </div>
 
 </div>
 </div>
-<a id="a9ec49801c5b4060a4cad0f1e44052f79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ec49801c5b4060a4cad0f1e44052f79">&#9670;&nbsp;</a></span>CreateAssetContainer()</h2>
+<a id="a08403353334350aa427916f5b7c6fb70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08403353334350aa427916f5b7c6fb70">&#9670;&nbsp;</a></span>CreateAssetContainer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -542,7 +545,13 @@ template&lt;class AssetClass &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a> &amp;&#160;</td>
-          <td class="paramname"><em>loadParams</em> = <code><a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a>{}</code>&#160;</td>
+          <td class="paramname"><em>loadParams</em> = <code><a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isReload</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -725,8 +734,8 @@ template&lt;class AssetClass &gt; </div>
 
 </div>
 </div>
-<a id="aa489ab659f3ad3823fe9c48cc5390c2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa489ab659f3ad3823fe9c48cc5390c2a">&#9670;&nbsp;</a></span>GetAssetContainer()</h2>
+<a id="a79f09999ccc6f6ce39e89e1e041f67aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79f09999ccc6f6ce39e89e1e041f67aa">&#9670;&nbsp;</a></span>GetAssetContainer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -744,7 +753,13 @@ template&lt;class AssetClass &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a> &amp;&#160;</td>
-          <td class="paramname"><em>loadParams</em> = <code><a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a>{}</code>&#160;</td>
+          <td class="paramname"><em>loadParams</em> = <code><a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isReload</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1095,7 +1110,7 @@ template&lt;class AssetClass &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:47 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:31 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

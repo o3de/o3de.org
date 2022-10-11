@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -102,6 +102,14 @@ template&lt;size_t Index&gt; </td></tr>
 <tr class="memitem:a56254fdfa1a1c85e50cd7d3c2972d58f"><td class="memItemLeft" align="right" valign="top"><a id="a56254fdfa1a1c85e50cd7d3c2972d58f"></a>
 IndexType&#160;</td><td class="memItemRight" valign="bottom"><b>GetRawIndex</b> (IndexType index) const</td></tr>
 <tr class="separator:a56254fdfa1a1c85e50cd7d3c2972d58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e7e75c47f368dc6118191737d76241"><td class="memTemplParams" colspan="2"><a id="a35e7e75c47f368dc6118191737d76241"></a>
+template&lt;size_t Index, typename DataType &gt; </td></tr>
+<tr class="memitem:a35e7e75c47f368dc6118191737d76241"><td class="memTemplItemLeft" align="right" valign="top">IndexType&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetIndexForData</b> (const DataType *data) const</td></tr>
+<tr class="separator:a35e7e75c47f368dc6118191737d76241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ddb0aa0a33e7bc0411a66ecd1bcc0f8"><td class="memTemplParams" colspan="2"><a id="a7ddb0aa0a33e7bc0411a66ecd1bcc0f8"></a>
+template&lt;size_t Index, typename LambdaType &gt; </td></tr>
+<tr class="memitem:a7ddb0aa0a33e7bc0411a66ecd1bcc0f8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ForEach</b> (LambdaType lambda) const</td></tr>
+<tr class="separator:a7ddb0aa0a33e7bc0411a66ecd1bcc0f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -134,14 +142,14 @@ static constexpr IndexType&#160;</td><td class="memItemRight" valign="bottom"><b
 <div class="textblock"><h3>template&lt;typename ... Ts&gt;<br />
 class AZ::Render::MultiIndexedDataVector&lt; Ts &gt;</h3>
 
-<p><a class="el" href="class_a_z_1_1_render_1_1_multi_indexed_data_vector.html">MultiIndexedDataVector</a> is similar to <a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html">IndexedDataVector</a> but adds support for multiple different data vectors each containing different types i.e. structure of (N) arrays See IndexedDataVectorTests.cpp for examples of use </p>
+<p><a class="el" href="class_a_z_1_1_render_1_1_multi_indexed_data_vector.html">MultiIndexedDataVector</a> is similar to <a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html">IndexedDataVector</a> but adds support for multiple different data vectors each containing different types i.e. structure of (N) arrays See MultiIndexedDataVectorTests.cpp for examples of use </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/Feature/Common/Code/Include/Atom/Feature/Utils/MultiIndexedDataVector.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:25 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

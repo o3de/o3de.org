@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Multiplayer Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -55,39 +55,266 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a084ff215e77b7d06268b8b244035b5d3"><td class="memItemLeft" align="right" valign="top"><a id="a084ff215e77b7d06268b8b244035b5d3"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReplicationSetUpdateReady</b> ()=0</td></tr>
+<tr class="memitem:a084ff215e77b7d06268b8b244035b5d3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_replication_window.html#a084ff215e77b7d06268b8b244035b5d3">ReplicationSetUpdateReady</a> ()=0</td></tr>
 <tr class="separator:a084ff215e77b7d06268b8b244035b5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa610cd2dccc82c309221e453e458a0fe"><td class="memItemLeft" align="right" valign="top"><a id="aa610cd2dccc82c309221e453e458a0fe"></a>
-virtual const ReplicationSet &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetReplicationSet</b> () const =0</td></tr>
+<tr class="memitem:aa610cd2dccc82c309221e453e458a0fe"><td class="memItemLeft" align="right" valign="top">virtual const ReplicationSet &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_replication_window.html#aa610cd2dccc82c309221e453e458a0fe">GetReplicationSet</a> () const =0</td></tr>
 <tr class="separator:aa610cd2dccc82c309221e453e458a0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4829ec07e8843aefb37cd64ec8d5bca5"><td class="memItemLeft" align="right" valign="top"><a id="a4829ec07e8843aefb37cd64ec8d5bca5"></a>
-virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_replication_window.html#a4829ec07e8843aefb37cd64ec8d5bca5">GetMaxProxyEntityReplicatorSendCount</a> () const =0</td></tr>
-<tr class="memdesc:a4829ec07e8843aefb37cd64ec8d5bca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max number of entities we can send updates for in one frame. <br /></td></tr>
+<tr class="memitem:a4829ec07e8843aefb37cd64ec8d5bca5"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_replication_window.html#a4829ec07e8843aefb37cd64ec8d5bca5">GetMaxProxyEntityReplicatorSendCount</a> () const =0</td></tr>
 <tr class="separator:a4829ec07e8843aefb37cd64ec8d5bca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a597744e737f04bb7c7a5cfe05be7005a"><td class="memItemLeft" align="right" valign="top"><a id="a597744e737f04bb7c7a5cfe05be7005a"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInWindow</b> (const <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html">ConstNetworkEntityHandle</a> &amp;entityPtr, NetEntityRole &amp;outNetworkRole) const =0</td></tr>
+<tr class="memitem:a597744e737f04bb7c7a5cfe05be7005a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_replication_window.html#a597744e737f04bb7c7a5cfe05be7005a">IsInWindow</a> (const <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html">ConstNetworkEntityHandle</a> &amp;entityPtr, NetEntityRole &amp;outNetworkRole) const =0</td></tr>
 <tr class="separator:a597744e737f04bb7c7a5cfe05be7005a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84b7238295cd8b4ef6343956dd8436ad"><td class="memItemLeft" align="right" valign="top"><a id="a84b7238295cd8b4ef6343956dd8436ad"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateWindow</b> ()=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_replication_window.html#a84b7238295cd8b4ef6343956dd8436ad">UpdateWindow</a> ()=0</td></tr>
+<tr class="memdesc:a84b7238295cd8b4ef6343956dd8436ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">This updates the replication set, ensuring all relevant entities are included. <br /></td></tr>
 <tr class="separator:a84b7238295cd8b4ef6343956dd8436ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28a15d2f34ae5234db64bab039c688c0"><td class="memItemLeft" align="right" valign="top"><a id="a28a15d2f34ae5234db64bab039c688c0"></a>
-virtual AzNetworking::PacketId&#160;</td><td class="memItemRight" valign="bottom"><b>SendEntityUpdateMessages</b> (NetworkEntityUpdateVector &amp;entityUpdateVector)=0</td></tr>
+<tr class="memitem:a28a15d2f34ae5234db64bab039c688c0"><td class="memItemLeft" align="right" valign="top">virtual AzNetworking::PacketId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_replication_window.html#a28a15d2f34ae5234db64bab039c688c0">SendEntityUpdateMessages</a> (NetworkEntityUpdateVector &amp;entityUpdateVector)=0</td></tr>
 <tr class="separator:a28a15d2f34ae5234db64bab039c688c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4669dd3d1b8b6a517192ea28049d86bb"><td class="memItemLeft" align="right" valign="top"><a id="a4669dd3d1b8b6a517192ea28049d86bb"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SendEntityRpcs</b> (NetworkEntityRpcVector &amp;entityRpcVector, bool reliable)=0</td></tr>
+<tr class="memitem:a4669dd3d1b8b6a517192ea28049d86bb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_replication_window.html#a4669dd3d1b8b6a517192ea28049d86bb">SendEntityRpcs</a> (NetworkEntityRpcVector &amp;entityRpcVector, bool reliable)=0</td></tr>
 <tr class="separator:a4669dd3d1b8b6a517192ea28049d86bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc02ec60a4d00c8823b3ff0578a3a961"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_replication_window.html#afc02ec60a4d00c8823b3ff0578a3a961">SendEntityResets</a> (const NetEntityIdSet &amp;resetIds)=0</td></tr>
+<tr class="separator:afc02ec60a4d00c8823b3ff0578a3a961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7a4f759c8958f18ddee0b122cad7528"><td class="memItemLeft" align="right" valign="top"><a id="ac7a4f759c8958f18ddee0b122cad7528"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DebugDraw</b> () const =0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_replication_window.html#ac7a4f759c8958f18ddee0b122cad7528">DebugDraw</a> () const =0</td></tr>
+<tr class="memdesc:ac7a4f759c8958f18ddee0b122cad7528"><td class="mdescLeft">&#160;</td><td class="mdescRight">This causes the replication window to perform debug-draw overlays. <br /></td></tr>
 <tr class="separator:ac7a4f759c8958f18ddee0b122cad7528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4829ec07e8843aefb37cd64ec8d5bca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4829ec07e8843aefb37cd64ec8d5bca5">&#9670;&nbsp;</a></span>GetMaxProxyEntityReplicatorSendCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint32_t Multiplayer::IReplicationWindow::GetMaxProxyEntityReplicatorSendCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Max number of entities we can send updates for in one frame. </p><dl class="section return"><dt>Returns</dt><dd>the max number of entities we can send updates for in one frame </dd></dl>
+
+</div>
+</div>
+<a id="aa610cd2dccc82c309221e453e458a0fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa610cd2dccc82c309221e453e458a0fe">&#9670;&nbsp;</a></span>GetReplicationSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const ReplicationSet&amp; Multiplayer::IReplicationWindow::GetReplicationSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the set of entities, roles, and priorities marked for replication by this replication window. </p><dl class="section return"><dt>Returns</dt><dd>const reference to the replication windows replication set </dd></dl>
+
+</div>
+</div>
+<a id="a597744e737f04bb7c7a5cfe05be7005a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a597744e737f04bb7c7a5cfe05be7005a">&#9670;&nbsp;</a></span>IsInWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Multiplayer::IReplicationWindow::IsInWindow </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html">ConstNetworkEntityHandle</a> &amp;&#160;</td>
+          <td class="paramname"><em>entityPtr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NetEntityRole &amp;&#160;</td>
+          <td class="paramname"><em>outNetworkRole</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if the provided network entity is within this replication window. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityPtr</td><td>the handle of the entity to test for inclusion </td></tr>
+    <tr><td class="paramname">outNetworkRole</td><td>output containing the network role of the requested entity if found </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a084ff215e77b7d06268b8b244035b5d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084ff215e77b7d06268b8b244035b5d3">&#9670;&nbsp;</a></span>ReplicationSetUpdateReady()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Multiplayer::IReplicationWindow::ReplicationSetUpdateReady </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Queries whether or not the replication window is in a state capable of sending entity update messages. </p><dl class="section return"><dt>Returns</dt><dd>boolean true if the replication window is ready and in a valid state, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="afc02ec60a4d00c8823b3ff0578a3a961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc02ec60a4d00c8823b3ff0578a3a961">&#9670;&nbsp;</a></span>SendEntityResets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Multiplayer::IReplicationWindow::SendEntityResets </td>
+          <td>(</td>
+          <td class="paramtype">const NetEntityIdSet &amp;&#160;</td>
+          <td class="paramname"><em>resetIds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This sends an EntityReset message on the associated network interface and connection. This will reset the replicators on the remote endpoint and cause a full refresh of the specified entities </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resetIds</td><td>the set of netEntityIds to refresh </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4669dd3d1b8b6a517192ea28049d86bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4669dd3d1b8b6a517192ea28049d86bb">&#9670;&nbsp;</a></span>SendEntityRpcs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Multiplayer::IReplicationWindow::SendEntityRpcs </td>
+          <td>(</td>
+          <td class="paramtype">NetworkEntityRpcVector &amp;&#160;</td>
+          <td class="paramname"><em>entityRpcVector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>reliable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This sends an EntityRpcs message on the associated network interface and connection. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityRpcVector</td><td>the rpc data set to transmit </td></tr>
+    <tr><td class="paramname">reliable</td><td>if a value of true is passed, the rpc message will be sent reliably, unreliably if false </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a28a15d2f34ae5234db64bab039c688c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28a15d2f34ae5234db64bab039c688c0">&#9670;&nbsp;</a></span>SendEntityUpdateMessages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AzNetworking::PacketId Multiplayer::IReplicationWindow::SendEntityUpdateMessages </td>
+          <td>(</td>
+          <td class="paramtype">NetworkEntityUpdateVector &amp;&#160;</td>
+          <td class="paramname"><em>entityUpdateVector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This sends an EntityUpdate message on the associated network interface and connection. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityUpdateVector</td><td>set of entity updates </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the packetId of the sent update message, or InvalidPacketId in the case of failure </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Multiplayer/Code/Include/Multiplayer/ReplicationWindows/IReplicationWindow.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:53 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:13 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

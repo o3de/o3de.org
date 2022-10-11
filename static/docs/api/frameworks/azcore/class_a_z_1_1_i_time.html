@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -47,13 +47,14 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_a_z_1_1_i_time-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::ITime Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is an AZ::Interface&lt;&gt; for managing time related operations. <a class="el" href="class_a_z_1_1_i_time.html" title="This is an AZ::Interface&lt;&gt; for managing time related operations. AZ::ITime and associated types may n...">AZ::ITime</a> and associated types may not operate in realtime. These abstractions are to allow our application simulation to operate both slower and faster than realtime in a well defined and user controllable manner The rate at which time passes for <a class="el" href="class_a_z_1_1_i_time.html" title="This is an AZ::Interface&lt;&gt; for managing time related operations. AZ::ITime and associated types may n...">AZ::ITime</a> is controlled by the cvar t_scale t_scale == 0 means simulation time should halt 0 &lt; t_scale &lt; 1 will cause time to pass slower than realtime, with t_scale 0.1 being roughly 1/10th realtime t_scale == 1 will cause time to pass at roughly realtime t_scale &gt; 1 will cause time to pass faster than normal, with t_scale 10 being roughly 10x realtime.  
+<p>This is an AZ::Interface&lt;&gt; for managing time related operations. <a class="el" href="class_a_z_1_1_i_time.html" title="This is an AZ::Interface&lt;&gt; for managing time related operations. AZ::ITime and associated types may n...">AZ::ITime</a> and associated types may not operate in realtime. These abstractions are to allow our application simulation to operate both slower and faster than realtime in a well defined and user controllable manner The rate at which time passes for <a class="el" href="class_a_z_1_1_i_time.html" title="This is an AZ::Interface&lt;&gt; for managing time related operations. AZ::ITime and associated types may n...">AZ::ITime</a> is controlled by the cvar t_simulationTickScale t_simulationTickScale == 0 means simulation time should halt 0 &lt; t_simulationTickScale &lt; 1 will cause time to pass slower than realtime, with t_simulationTickScale 0.1 being roughly 1/10th realtime t_simulationTickScale == 1 will cause time to pass at roughly realtime t_simulationTickScale &gt; 1 will cause time to pass faster than normal, with t_simulationTickScale 10 being roughly 10x realtime.  
  <a href="class_a_z_1_1_i_time.html#details">More...</a></p>
 
 <p><code>#include &lt;ITime.h&gt;</code></p>
@@ -67,12 +68,49 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1c224a9213fab2fa5b59c60e2c7867b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdcc3cf793ba8937bf5bc3d1920bc101"><td class="memItemLeft" align="right" valign="top">virtual TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#acdcc3cf793ba8937bf5bc3d1920bc101">GetElapsedTimeUs</a> () const =0</td></tr>
 <tr class="separator:acdcc3cf793ba8937bf5bc3d1920bc101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f3a2b72488ab8e246e6f3806bc6b06"><td class="memItemLeft" align="right" valign="top">virtual TimeMs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#a81f3a2b72488ab8e246e6f3806bc6b06">GetRealElapsedTimeMs</a> () const =0</td></tr>
+<tr class="separator:a81f3a2b72488ab8e246e6f3806bc6b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2550dc0efef8e31c41e815d3905ce527"><td class="memItemLeft" align="right" valign="top">virtual TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#a2550dc0efef8e31c41e815d3905ce527">GetRealElapsedTimeUs</a> () const =0</td></tr>
+<tr class="separator:a2550dc0efef8e31c41e815d3905ce527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a169331dc5563d058fb705519d9ec3082"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#a169331dc5563d058fb705519d9ec3082">SetElapsedTimeMsDebug</a> (TimeMs time)=0</td></tr>
+<tr class="separator:a169331dc5563d058fb705519d9ec3082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef023146ccb9db1f79cf4074eb215a74"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#aef023146ccb9db1f79cf4074eb215a74">SetElapsedTimeUsDebug</a> (TimeUs time)=0</td></tr>
+<tr class="separator:aef023146ccb9db1f79cf4074eb215a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71d1cbee515f505325b5027df6f6ef7"><td class="memItemLeft" align="right" valign="top">virtual TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#af71d1cbee515f505325b5027df6f6ef7">GetSimulationTickDeltaTimeUs</a> () const =0</td></tr>
+<tr class="separator:af71d1cbee515f505325b5027df6f6ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba062a3aaac98b55e582531be6beaddd"><td class="memItemLeft" align="right" valign="top">virtual TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#aba062a3aaac98b55e582531be6beaddd">GetRealTickDeltaTimeUs</a> () const =0</td></tr>
+<tr class="separator:aba062a3aaac98b55e582531be6beaddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa24d861da1dcec527bf78420aafbccc9"><td class="memItemLeft" align="right" valign="top"><a id="aa24d861da1dcec527bf78420aafbccc9"></a>
+virtual TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#aa24d861da1dcec527bf78420aafbccc9">GetLastSimulationTickTime</a> () const =0</td></tr>
+<tr class="memdesc:aa24d861da1dcec527bf78420aafbccc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time since application start of when the last simulation tick was updated. <br /></td></tr>
+<tr class="separator:aa24d861da1dcec527bf78420aafbccc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbaaa666dce16641b686f62e08839821"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#afbaaa666dce16641b686f62e08839821">SetSimulationTickDeltaOverride</a> (TimeMs timeMs)=0</td></tr>
+<tr class="separator:afbaaa666dce16641b686f62e08839821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49eb2de1cd4b1d3e77647d72debd5d73"><td class="memItemLeft" align="right" valign="top">virtual TimeMs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#a49eb2de1cd4b1d3e77647d72debd5d73">GetSimulationTickDeltaOverride</a> () const =0</td></tr>
+<tr class="separator:a49eb2de1cd4b1d3e77647d72debd5d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b9a898bacaa60020feb580b4756a0d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#a08b9a898bacaa60020feb580b4756a0d">SetSimulationTickScale</a> (float scale)=0</td></tr>
+<tr class="separator:a08b9a898bacaa60020feb580b4756a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d4f2b5bd913d0a480d1936227f70227"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#a5d4f2b5bd913d0a480d1936227f70227">GetSimulationTickScale</a> () const =0</td></tr>
+<tr class="separator:a5d4f2b5bd913d0a480d1936227f70227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2e475820e59fdf27f845fab6c6662c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#a7e2e475820e59fdf27f845fab6c6662c">SetSimulationTickRate</a> (int rate)=0</td></tr>
+<tr class="separator:a7e2e475820e59fdf27f845fab6c6662c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5059b1cfb8da7e72bbec6f4241111b95"><td class="memItemLeft" align="right" valign="top">virtual int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#a5059b1cfb8da7e72bbec6f4241111b95">GetSimulationTickRate</a> () const =0</td></tr>
+<tr class="separator:a5059b1cfb8da7e72bbec6f4241111b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab897d90f6268a6140ed6316fa2590ffd"><td class="memItemLeft" align="right" valign="top"><a id="ab897d90f6268a6140ed6316fa2590ffd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_a_z_1_1_i_time.html">ITime</a>)</td></tr>
 <tr class="separator:ab897d90f6268a6140ed6316fa2590ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a87fbf237965357a8b456a54f3bf72e9e"><td class="memItemLeft" align="right" valign="top"><a id="a87fbf237965357a8b456a54f3bf72e9e"></a>
+static const AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>ZeroTimeMs</b> = AZ::TimeMs{ 0 }</td></tr>
+<tr class="separator:a87fbf237965357a8b456a54f3bf72e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae744ec5522515c6b9648a3a20abb90ac"><td class="memItemLeft" align="right" valign="top"><a id="ae744ec5522515c6b9648a3a20abb90ac"></a>
+static const AZ::TimeUs&#160;</td><td class="memItemRight" valign="bottom"><b>ZeroTimeUs</b> = AZ::TimeUs{ 0 }</td></tr>
+<tr class="separator:ae744ec5522515c6b9648a3a20abb90ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is an AZ::Interface&lt;&gt; for managing time related operations. <a class="el" href="class_a_z_1_1_i_time.html" title="This is an AZ::Interface&lt;&gt; for managing time related operations. AZ::ITime and associated types may n...">AZ::ITime</a> and associated types may not operate in realtime. These abstractions are to allow our application simulation to operate both slower and faster than realtime in a well defined and user controllable manner The rate at which time passes for <a class="el" href="class_a_z_1_1_i_time.html" title="This is an AZ::Interface&lt;&gt; for managing time related operations. AZ::ITime and associated types may n...">AZ::ITime</a> is controlled by the cvar t_scale t_scale == 0 means simulation time should halt 0 &lt; t_scale &lt; 1 will cause time to pass slower than realtime, with t_scale 0.1 being roughly 1/10th realtime t_scale == 1 will cause time to pass at roughly realtime t_scale &gt; 1 will cause time to pass faster than normal, with t_scale 10 being roughly 10x realtime. </p>
+<div class="textblock"><p>This is an AZ::Interface&lt;&gt; for managing time related operations. <a class="el" href="class_a_z_1_1_i_time.html" title="This is an AZ::Interface&lt;&gt; for managing time related operations. AZ::ITime and associated types may n...">AZ::ITime</a> and associated types may not operate in realtime. These abstractions are to allow our application simulation to operate both slower and faster than realtime in a well defined and user controllable manner The rate at which time passes for <a class="el" href="class_a_z_1_1_i_time.html" title="This is an AZ::Interface&lt;&gt; for managing time related operations. AZ::ITime and associated types may n...">AZ::ITime</a> is controlled by the cvar t_simulationTickScale t_simulationTickScale == 0 means simulation time should halt 0 &lt; t_simulationTickScale &lt; 1 will cause time to pass slower than realtime, with t_simulationTickScale 0.1 being roughly 1/10th realtime t_simulationTickScale == 1 will cause time to pass at roughly realtime t_simulationTickScale &gt; 1 will cause time to pass faster than normal, with t_simulationTickScale 10 being roughly 10x realtime. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1c224a9213fab2fa5b59c60e2c7867b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c224a9213fab2fa5b59c60e2c7867b1">&#9670;&nbsp;</a></span>GetElapsedTimeMs()</h2>
@@ -96,7 +134,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the number of milliseconds since application start. </p><dl class="section return"><dt>Returns</dt><dd>the number of milliseconds that have elapsed since application start </dd></dl>
+<p>Returns the number of milliseconds since application start scaled by t_simulationTickScale. </p><dl class="section return"><dt>Returns</dt><dd>The number of milliseconds that have elapsed since application start. </dd></dl>
 
 </div>
 </div>
@@ -122,7 +160,350 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the number of microseconds since application start. </p><dl class="section return"><dt>Returns</dt><dd>the number of microseconds that have elapsed since application start </dd></dl>
+<p>Returns the number of microseconds since application start scaled by t_simulationTickScale. </p><dl class="section return"><dt>Returns</dt><dd>the number of microseconds that have elapsed since application start </dd></dl>
+
+</div>
+</div>
+<a id="a81f3a2b72488ab8e246e6f3806bc6b06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f3a2b72488ab8e246e6f3806bc6b06">&#9670;&nbsp;</a></span>GetRealElapsedTimeMs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual TimeMs AZ::ITime::GetRealElapsedTimeMs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the number of milliseconds since application start. This value is not affected by the t_simulationTickScale cvar. </p><dl class="section return"><dt>Returns</dt><dd>The number of milliseconds that have elapsed since application start. </dd></dl>
+
+</div>
+</div>
+<a id="a2550dc0efef8e31c41e815d3905ce527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2550dc0efef8e31c41e815d3905ce527">&#9670;&nbsp;</a></span>GetRealElapsedTimeUs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual TimeUs AZ::ITime::GetRealElapsedTimeUs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the number of microseconds since application start. This value is not affected by the t_simulationTickScale cvar. </p><dl class="section return"><dt>Returns</dt><dd>The number of microseconds that have elapsed since application start. </dd></dl>
+
+</div>
+</div>
+<a id="aba062a3aaac98b55e582531be6beaddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba062a3aaac98b55e582531be6beaddd">&#9670;&nbsp;</a></span>GetRealTickDeltaTimeUs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual TimeUs AZ::ITime::GetRealTickDeltaTimeUs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the non-manipulated tick time. </p><dl class="section return"><dt>Returns</dt><dd>The number of microseconds elapsed since the last game tick. </dd></dl>
+
+</div>
+</div>
+<a id="a49eb2de1cd4b1d3e77647d72debd5d73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49eb2de1cd4b1d3e77647d72debd5d73">&#9670;&nbsp;</a></span>GetSimulationTickDeltaOverride()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual TimeMs AZ::ITime::GetSimulationTickDeltaOverride </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the current simulation tick override. 0 means disabled. </p><dl class="section return"><dt>Returns</dt><dd>The current simulation tick override in milliseconds. </dd></dl>
+
+</div>
+</div>
+<a id="af71d1cbee515f505325b5027df6f6ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af71d1cbee515f505325b5027df6f6ef7">&#9670;&nbsp;</a></span>GetSimulationTickDeltaTimeUs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual TimeUs AZ::ITime::GetSimulationTickDeltaTimeUs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the current simulation tick delta time. This is affected by the cvars t_simulationTickScale, t_simulationTickDeltaOverride, and t_maxGameTickDelta. </p><dl class="section return"><dt>Returns</dt><dd>The number of microseconds elapsed since the last game tick. </dd></dl>
+
+</div>
+</div>
+<a id="a5059b1cfb8da7e72bbec6f4241111b95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5059b1cfb8da7e72bbec6f4241111b95">&#9670;&nbsp;</a></span>GetSimulationTickRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32_t AZ::ITime::GetSimulationTickRate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the current simulation tick rate. 0 means disabled. </p><dl class="section return"><dt>Returns</dt><dd>The rate in frames per second. </dd></dl>
+
+</div>
+</div>
+<a id="a5d4f2b5bd913d0a480d1936227f70227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d4f2b5bd913d0a480d1936227f70227">&#9670;&nbsp;</a></span>GetSimulationTickScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float AZ::ITime::GetSimulationTickScale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the current simulation tick scale. 1.0 == realtime, 0.5 == half realtime, 2.0 == doubletime. </p><dl class="section return"><dt>Returns</dt><dd>The simulation tick scale value. </dd></dl>
+
+</div>
+</div>
+<a id="a169331dc5563d058fb705519d9ec3082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a169331dc5563d058fb705519d9ec3082">&#9670;&nbsp;</a></span>SetElapsedTimeMsDebug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::ITime::SetElapsedTimeMsDebug </td>
+          <td>(</td>
+          <td class="paramtype">TimeMs&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the number of milliseconds since application start. For debug purposes only. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">The</td><td>number of milliseconds that have elapsed since application start. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef023146ccb9db1f79cf4074eb215a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef023146ccb9db1f79cf4074eb215a74">&#9670;&nbsp;</a></span>SetElapsedTimeUsDebug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::ITime::SetElapsedTimeUsDebug </td>
+          <td>(</td>
+          <td class="paramtype">TimeUs&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the number of microseconds since application start. For debug purposes only. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">The</td><td>number of microseconds that have elapsed since application start. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afbaaa666dce16641b686f62e08839821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbaaa666dce16641b686f62e08839821">&#9670;&nbsp;</a></span>SetSimulationTickDeltaOverride()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::ITime::SetSimulationTickDeltaOverride </td>
+          <td>(</td>
+          <td class="paramtype">TimeMs&#160;</td>
+          <td class="paramname"><em>timeMs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>If &gt; 0 this will override the simulation tick delta time with the provided value. When enabled this will ignore any set simulation tick scale. Setting to 0 disables the override. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeMs</td><td>The time in milliseconds to use for the tick delta. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7e2e475820e59fdf27f845fab6c6662c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e2e475820e59fdf27f845fab6c6662c">&#9670;&nbsp;</a></span>SetSimulationTickRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::ITime::SetSimulationTickRate </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The minimum rate to force the simulation tick to run. 0 for as fast as possible. 30 = ~33ms, 60 = ~16ms. Setting to 0 will disable rate limiting. </p><dl class="section note"><dt>Note</dt><dd>It is not guaranteed to hit the requested tick rate exactly. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rate</td><td>The rate in frames per second. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a08b9a898bacaa60020feb580b4756a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b9a898bacaa60020feb580b4756a0d">&#9670;&nbsp;</a></span>SetSimulationTickScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::ITime::SetSimulationTickScale </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A scalar amount to adjust the passage of time by, 1.0 == realtime, 0.5 == half realtime, 2.0 == doubletime. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scale</td><td>The scalar value to apply to the simulation time. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -132,7 +513,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:43 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

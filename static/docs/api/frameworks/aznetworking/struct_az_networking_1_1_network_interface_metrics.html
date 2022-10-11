@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzNetworking API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -56,7 +56,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ab057961414865f4eddd6b82a2721b4ff"><td class="memItemLeft" align="right" valign="top"><a id="ab057961414865f4eddd6b82a2721b4ff"></a>
-AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_networking_1_1_network_interface_metrics.html#ab057961414865f4eddd6b82a2721b4ff">m_updateTimeMs</a> = AZ::TimeMs{ 0 }</td></tr>
+AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_networking_1_1_network_interface_metrics.html#ab057961414865f4eddd6b82a2721b4ff">m_updateTimeMs</a> = AZ::Time::ZeroTimeMs</td></tr>
 <tr class="memdesc:ab057961414865f4eddd6b82a2721b4ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of milliseconds spent updating this network interface. <br /></td></tr>
 <tr class="separator:ab057961414865f4eddd6b82a2721b4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78bc72b5c75d56295522223ce43520f3"><td class="memItemLeft" align="right" valign="top"><a id="a78bc72b5c75d56295522223ce43520f3"></a>
@@ -64,7 +64,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memdesc:a78bc72b5c75d56295522223ce43520f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of connections bound to this network interface. <br /></td></tr>
 <tr class="separator:a78bc72b5c75d56295522223ce43520f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a163f9b30a977d612bf9533cd2bb9c477"><td class="memItemLeft" align="right" valign="top"><a id="a163f9b30a977d612bf9533cd2bb9c477"></a>
-AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_networking_1_1_network_interface_metrics.html#a163f9b30a977d612bf9533cd2bb9c477">m_sendTimeMs</a> = AZ::TimeMs{ 0 }</td></tr>
+AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_networking_1_1_network_interface_metrics.html#a163f9b30a977d612bf9533cd2bb9c477">m_sendTimeMs</a> = AZ::Time::ZeroTimeMs</td></tr>
 <tr class="memdesc:a163f9b30a977d612bf9533cd2bb9c477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of milliseconds spent sending data on this network interface. <br /></td></tr>
 <tr class="separator:a163f9b30a977d612bf9533cd2bb9c477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a323c14f0d0ee7223482c65c4e68f7a4e"><td class="memItemLeft" align="right" valign="top"><a id="a323c14f0d0ee7223482c65c4e68f7a4e"></a>
@@ -100,7 +100,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memdesc:a910f6a5f99799313ed745cd922aa586f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of packets that had to be resent on this network interface due to packet loss. <br /></td></tr>
 <tr class="separator:a910f6a5f99799313ed745cd922aa586f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7eda70b6207b2484005f11d3951d149"><td class="memItemLeft" align="right" valign="top"><a id="ab7eda70b6207b2484005f11d3951d149"></a>
-AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_networking_1_1_network_interface_metrics.html#ab7eda70b6207b2484005f11d3951d149">m_recvTimeMs</a> = AZ::TimeMs{ 0 }</td></tr>
+AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_networking_1_1_network_interface_metrics.html#ab7eda70b6207b2484005f11d3951d149">m_recvTimeMs</a> = AZ::Time::ZeroTimeMs</td></tr>
 <tr class="memdesc:ab7eda70b6207b2484005f11d3951d149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of milliseconds spent processing received data on this network interface. <br /></td></tr>
 <tr class="separator:ab7eda70b6207b2484005f11d3951d149"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea5fcae7704707e37432022688374725"><td class="memItemLeft" align="right" valign="top"><a id="aea5fcae7704707e37432022688374725"></a>
@@ -126,7 +126,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:27 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:19 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -60,13 +60,14 @@ $(function() {
   <tr><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html#adeb19869ff1850c1756c6459b4db769b">GetDefaultViewportContextName</a>() const =0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html">AZ::RPI::ViewportContextRequestsInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html#af6d7b3a700f6a3a33188a26a504b2317">GetViewportContextById</a>(AzFramework::ViewportId id) const =0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html">AZ::RPI::ViewportContextRequestsInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html#a4b452af5e67593dafbd7429c94af2ac1">GetViewportContextByName</a>(const Name &amp;contextName) const =0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html">AZ::RPI::ViewportContextRequestsInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html#adc12dfeaba8da7fc71a91b58fb52908c">PopView</a>(const Name &amp;contextName, ViewPtr view)=0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html">AZ::RPI::ViewportContextRequestsInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html#af3e5ecc4d19bb376d14904028e815ea4">PushView</a>(const Name &amp;contextName, ViewPtr view)=0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html">AZ::RPI::ViewportContextRequestsInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html#a65cf117e709c48f37f4e45207c5aaf6a">RenameViewportContext</a>(ViewportContextPtr viewportContext, const Name &amp;newContextName)=0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html">AZ::RPI::ViewportContextRequestsInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html#a5eae664b856cd1654f6d820635f91f28">GetViewportContextByScene</a>(const Scene *scene) const =0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html">AZ::RPI::ViewportContextRequestsInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html#adc12dfeaba8da7fc71a91b58fb52908c">PopView</a>(const Name &amp;contextName, ViewPtr view)=0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html">AZ::RPI::ViewportContextRequestsInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html#af3e5ecc4d19bb376d14904028e815ea4">PushView</a>(const Name &amp;contextName, ViewPtr view)=0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html">AZ::RPI::ViewportContextRequestsInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html#a65cf117e709c48f37f4e45207c5aaf6a">RenameViewportContext</a>(ViewportContextPtr viewportContext, const Name &amp;newContextName)=0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html">AZ::RPI::ViewportContextRequestsInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:30 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

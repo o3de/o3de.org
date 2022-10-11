@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -64,27 +64,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> () overr
 <tr class="memitem:abb2c7d554c1a23cf1bbfe812da3f5805"><td class="memItemLeft" align="right" valign="top"><a id="abb2c7d554c1a23cf1bbfe812da3f5805"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () override</td></tr>
 <tr class="separator:abb2c7d554c1a23cf1bbfe812da3f5805"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea0bd8726e07b61babc4ef36ad626974"><td class="memItemLeft" align="right" valign="top"><a id="aea0bd8726e07b61babc4ef36ad626974"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterContext</b> (const char *contextName) override</td></tr>
-<tr class="separator:aea0bd8726e07b61babc4ef36ad626974"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae10d002f0a1e0d1f3b4b1c790659aec8"><td class="memItemLeft" align="right" valign="top"><a id="ae10d002f0a1e0d1f3b4b1c790659aec8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterContext</b> (const char *contextName) override</td></tr>
-<tr class="separator:ae10d002f0a1e0d1f3b4b1c790659aec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f9c479472fcca36a149ef0be95d78e9"><td class="memItemLeft" align="right" valign="top"><a id="a0f9c479472fcca36a149ef0be95d78e9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasContext</b> (const char *contextName) const override</td></tr>
-<tr class="separator:a0f9c479472fcca36a149ef0be95d78e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad91a2c62b182e89cc617b09e8124606"><td class="memItemLeft" align="right" valign="top"><a id="aad91a2c62b182e89cc617b09e8124606"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterThumbnailProvider</b> (AzToolsFramework::Thumbnailer::SharedThumbnailProvider provider, const char *contextName) override</td></tr>
-<tr class="separator:aad91a2c62b182e89cc617b09e8124606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaa7e40cc986e1f386ac789a5845ca58"><td class="memItemLeft" align="right" valign="top"><a id="afaa7e40cc986e1f386ac789a5845ca58"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterThumbnailProvider</b> (const char *providerName, const char *contextName) override</td></tr>
-<tr class="separator:afaa7e40cc986e1f386ac789a5845ca58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d72bbe4dca32849e3a40d8beb522f2a"><td class="memItemLeft" align="right" valign="top"><a id="a9d72bbe4dca32849e3a40d8beb522f2a"></a>
-AzToolsFramework::Thumbnailer::SharedThumbnail&#160;</td><td class="memItemRight" valign="bottom"><b>GetThumbnail</b> (AzToolsFramework::Thumbnailer::SharedThumbnailKey thumbnailKey, const char *contextName) override</td></tr>
-<tr class="separator:a9d72bbe4dca32849e3a40d8beb522f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80403821974b2043d1575f97246487d8"><td class="memItemLeft" align="right" valign="top"><a id="a80403821974b2043d1575f97246487d8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLoading</b> (AzToolsFramework::Thumbnailer::SharedThumbnailKey thumbnailKey, const char *contextName) override</td></tr>
-<tr class="separator:a80403821974b2043d1575f97246487d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e2f3fb2214edc0c7f9e28d7f4502ba"><td class="memItemLeft" align="right" valign="top"><a id="a00e2f3fb2214edc0c7f9e28d7f4502ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterThumbnailProvider</b> (AzToolsFramework::Thumbnailer::SharedThumbnailProvider provider) override</td></tr>
+<tr class="separator:a00e2f3fb2214edc0c7f9e28d7f4502ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6588c5da8724635bbce289ddd293dfc3"><td class="memItemLeft" align="right" valign="top"><a id="a6588c5da8724635bbce289ddd293dfc3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterThumbnailProvider</b> (const char *providerName) override</td></tr>
+<tr class="separator:a6588c5da8724635bbce289ddd293dfc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf0f80626fb5b580d73e4fe52d22adc"><td class="memItemLeft" align="right" valign="top"><a id="a5cf0f80626fb5b580d73e4fe52d22adc"></a>
+AzToolsFramework::Thumbnailer::SharedThumbnail&#160;</td><td class="memItemRight" valign="bottom"><b>GetThumbnail</b> (AzToolsFramework::Thumbnailer::SharedThumbnailKey thumbnailKey) override</td></tr>
+<tr class="separator:a5cf0f80626fb5b580d73e4fe52d22adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a4c74acf2e1655ec239251a324768b2"><td class="memItemLeft" align="right" valign="top"><a id="a5a4c74acf2e1655ec239251a324768b2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLoading</b> (AzToolsFramework::Thumbnailer::SharedThumbnailKey thumbnailKey) override</td></tr>
+<tr class="separator:a5a4c74acf2e1655ec239251a324768b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -101,7 +92,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedSer
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:40 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:34 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

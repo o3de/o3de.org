@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -98,14 +98,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a730ab9730859e12accfb47542a85c52c">DebugPrintPassHierarchy</a> () override</td></tr>
 <tr class="memdesc:a730ab9730859e12accfb47542a85c52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the entire pass hierarchy from the root. <br /></td></tr>
 <tr class="separator:a730ab9730859e12accfb47542a85c52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c49a1d6fc185d4301521c7bdaea2d09"><td class="memItemLeft" align="right" valign="top"><a id="a1c49a1d6fc185d4301521c7bdaea2d09"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a1c49a1d6fc185d4301521c7bdaea2d09">IsHotReloading</a> () const override</td></tr>
-<tr class="memdesc:a1c49a1d6fc185d4301521c7bdaea2d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> System is currently hot reloading. <br /></td></tr>
-<tr class="separator:a1c49a1d6fc185d4301521c7bdaea2d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbfede2b3e446d8a42cc64c07eff2dbe"><td class="memItemLeft" align="right" valign="top"><a id="abbfede2b3e446d8a42cc64c07eff2dbe"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#abbfede2b3e446d8a42cc64c07eff2dbe">SetHotReloading</a> (bool hotReloading) override</td></tr>
-<tr class="memdesc:abbfede2b3e446d8a42cc64c07eff2dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> System is currently hot reloading. <br /></td></tr>
-<tr class="separator:abbfede2b3e446d8a42cc64c07eff2dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8708fdba50c22f3d9b9fce60a12b455"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#ab8708fdba50c22f3d9b9fce60a12b455">SetTargetedPassDebuggingName</a> (const AZ::Name &amp;targetPassName) override</td></tr>
 <tr class="separator:ab8708fdba50c22f3d9b9fce60a12b455"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae26980b72e2a8e20f971f98bc0a7536f"><td class="memItemLeft" align="right" valign="top"><a id="ae26980b72e2a8e20f971f98bc0a7536f"></a>
@@ -120,6 +112,21 @@ PassSystemState&#160;</td><td class="memItemRight" valign="bottom"><b>GetState</
 <a class="el" href="class_a_z_1_1_r_p_i_1_1_swap_chain_pass.html">SwapChainPass</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a5a05ef40c34a17daec128010b9fa7625">FindSwapChainPass</a> (AzFramework::NativeWindowHandle windowHandle) const override</td></tr>
 <tr class="memdesc:a5a05ef40c34a17daec128010b9fa7625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the <a class="el" href="class_a_z_1_1_r_p_i_1_1_swap_chain_pass.html">SwapChainPass</a> associated with window Handle. <br /></td></tr>
 <tr class="separator:a5a05ef40c34a17daec128010b9fa7625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af514add58aa39210f43873e0c6836a05"><td class="memItemLeft" align="right" valign="top"><a id="af514add58aa39210f43873e0c6836a05"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DebugBreakOnPass</b> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> *pass) const override</td></tr>
+<tr class="separator:af514add58aa39210f43873e0c6836a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2b0e0f359af7ad0c02450eed94622d"><td class="memItemLeft" align="right" valign="top"><a id="a7d2b0e0f359af7ad0c02450eed94622d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a7d2b0e0f359af7ad0c02450eed94622d">AddRenderPipeline</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *renderPipeline) override</td></tr>
+<tr class="memdesc:a7d2b0e0f359af7ad0c02450eed94622d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a render pipeline with the pass system. <br /></td></tr>
+<tr class="separator:a7d2b0e0f359af7ad0c02450eed94622d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf4956e0a92f497a05e921c520ae30cb"><td class="memItemLeft" align="right" valign="top"><a id="acf4956e0a92f497a05e921c520ae30cb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#acf4956e0a92f497a05e921c520ae30cb">RemoveRenderPipeline</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *renderPipeline) override</td></tr>
+<tr class="memdesc:acf4956e0a92f497a05e921c520ae30cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a render pipeline from the pass system. <br /></td></tr>
+<tr class="separator:acf4956e0a92f497a05e921c520ae30cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ecc9621d89c2a0641d325c7de731eb"><td class="memItemLeft" align="right" valign="top"><a id="a70ecc9621d89c2a0641d325c7de731eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a70ecc9621d89c2a0641d325c7de731eb">AddPassWithoutPipeline</a> (const Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> &gt; &amp;pass) override</td></tr>
+<tr class="memdesc:a70ecc9621d89c2a0641d325c7de731eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to add passes that do not belong to any render pipeline. <br /></td></tr>
+<tr class="separator:a70ecc9621d89c2a0641d325c7de731eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70be9b24d1e8c2e977ef97b02aefc587"><td class="memItemLeft" align="right" valign="top"><a id="a70be9b24d1e8c2e977ef97b02aefc587"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>IncrementFrameDrawItemCount</b> (u32 numDrawItems) override</td></tr>
 <tr class="separator:a70be9b24d1e8c2e977ef97b02aefc587"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,10 +144,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a84a118f533ae2920ecac6a6e4e40dc04">CreatePassFromClass</a> (Name passClassName, Name passName) override</td></tr>
 <tr class="memdesc:a84a118f533ae2920ecac6a6e4e40dc04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> using the name of the <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> class. <br /></td></tr>
 <tr class="separator:a84a118f533ae2920ecac6a6e4e40dc04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3e662affa11b633815dfc6db2a0f17f"><td class="memItemLeft" align="right" valign="top"><a id="af3e662affa11b633815dfc6db2a0f17f"></a>
-Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#af3e662affa11b633815dfc6db2a0f17f">CreatePassFromTemplate</a> (const AZStd::shared_ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> &gt; &amp;passTemplate, Name passName) override</td></tr>
-<tr class="memdesc:af3e662affa11b633815dfc6db2a0f17f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> using a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a>. <br /></td></tr>
-<tr class="separator:af3e662affa11b633815dfc6db2a0f17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9add79ac0037119c14f6dec5a5a5c7"><td class="memItemLeft" align="right" valign="top"><a id="a2c9add79ac0037119c14f6dec5a5a5c7"></a>
+Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a2c9add79ac0037119c14f6dec5a5a5c7">CreatePassFromTemplate</a> (const AZStd::shared_ptr&lt; const <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> &gt; &amp;passTemplate, Name passName) override</td></tr>
+<tr class="memdesc:a2c9add79ac0037119c14f6dec5a5a5c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> using a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a>. <br /></td></tr>
+<tr class="separator:a2c9add79ac0037119c14f6dec5a5a5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93caad6f18f42e614ecd68271195ad89"><td class="memItemLeft" align="right" valign="top"><a id="a93caad6f18f42e614ecd68271195ad89"></a>
 Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a93caad6f18f42e614ecd68271195ad89">CreatePassFromTemplate</a> (Name templateName, Name passName) override</td></tr>
 <tr class="memdesc:a93caad6f18f42e614ecd68271195ad89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> using the name of a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a>. <br /></td></tr>
@@ -153,6 +160,10 @@ Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> &gt;&#16
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a716f3cd94c6883f60774e28a91cbd983">HasCreatorForClass</a> (Name passClassName) override</td></tr>
 <tr class="memdesc:a716f3cd94c6883f60774e28a91cbd983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the factory has a creator for a given pass class name. <br /></td></tr>
 <tr class="separator:a716f3cd94c6883f60774e28a91cbd983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a317ae26dc11c50f9ee8fff09b4a3617b"><td class="memItemLeft" align="right" valign="top"><a id="a317ae26dc11c50f9ee8fff09b4a3617b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a317ae26dc11c50f9ee8fff09b4a3617b">HasTemplate</a> (const Name &amp;templateName) const override</td></tr>
+<tr class="memdesc:a317ae26dc11c50f9ee8fff09b4a3617b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the pass library contains a pass template with the given template name. <br /></td></tr>
+<tr class="separator:a317ae26dc11c50f9ee8fff09b4a3617b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17f2bbd7970a40915cb4f041ee93e8fc"><td class="memItemLeft" align="right" valign="top"><a id="a17f2bbd7970a40915cb4f041ee93e8fc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a17f2bbd7970a40915cb4f041ee93e8fc">HasPassesForTemplateName</a> (const Name &amp;templateName) const override</td></tr>
 <tr class="memdesc:a17f2bbd7970a40915cb4f041ee93e8fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the pass factory contains passes created with the given template name. <br /></td></tr>
@@ -161,10 +172,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a8d35a6735e56bd97ade2803c66c16d68">AddPassTemplate</a> (const Name &amp;name, const AZStd::shared_ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> &gt; &amp;passTemplate) override</td></tr>
 <tr class="memdesc:a8d35a6735e56bd97ade2803c66c16d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> to the library. <br /></td></tr>
 <tr class="separator:a8d35a6735e56bd97ade2803c66c16d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a517d09a3477cb09e0a71507e795a44b8"><td class="memItemLeft" align="right" valign="top"><a id="a517d09a3477cb09e0a71507e795a44b8"></a>
-const AZStd::shared_ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a517d09a3477cb09e0a71507e795a44b8">GetPassTemplate</a> (const Name &amp;name) const override</td></tr>
-<tr class="memdesc:a517d09a3477cb09e0a71507e795a44b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> from the library. <br /></td></tr>
-<tr class="separator:a517d09a3477cb09e0a71507e795a44b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb787c2fde6bcfe4fc5cf94a1cb94a6"><td class="memItemLeft" align="right" valign="top"><a id="a2eb787c2fde6bcfe4fc5cf94a1cb94a6"></a>
+const AZStd::shared_ptr&lt; const <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a2eb787c2fde6bcfe4fc5cf94a1cb94a6">GetPassTemplate</a> (const Name &amp;name) const override</td></tr>
+<tr class="memdesc:a2eb787c2fde6bcfe4fc5cf94a1cb94a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> from the library. <br /></td></tr>
+<tr class="separator:a2eb787c2fde6bcfe4fc5cf94a1cb94a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6aa6edde175fa9ce7e136f922e3651"><td class="memItemLeft" align="right" valign="top"><a id="a4b6aa6edde175fa9ce7e136f922e3651"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a4b6aa6edde175fa9ce7e136f922e3651">RemovePassTemplate</a> (const Name &amp;name) override</td></tr>
+<tr class="memdesc:a4b6aa6edde175fa9ce7e136f922e3651"><td class="mdescLeft">&#160;</td><td class="mdescRight">See remarks in PassLibrary.h for the function with this name. <br /></td></tr>
+<tr class="separator:a4b6aa6edde175fa9ce7e136f922e3651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f75ac99338292acf6296c9f26d91a69"><td class="memItemLeft" align="right" valign="top"><a id="a5f75ac99338292acf6296c9f26d91a69"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a5f75ac99338292acf6296c9f26d91a69">RemovePassFromLibrary</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> *pass) override</td></tr>
 <tr class="memdesc:a5f75ac99338292acf6296c9f26d91a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all references to the given pass from the pass library. <br /></td></tr>
@@ -475,7 +490,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>OnReadyLoadTemplates
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:29 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:23 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

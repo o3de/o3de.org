@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AtomLyIntegration Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -120,6 +120,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_area_light_component_config.html#afe04a57c7515fa7e0d04b3537055b615">SupportsShadows</a> () const</td></tr>
 <tr class="memdesc:afe04a57c7515fa7e0d04b3537055b615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the light type supports shadows. <br /></td></tr>
 <tr class="separator:afe04a57c7515fa7e0d04b3537055b615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d50ebb08728ab1d6426e40ffd1961ec"><td class="memItemLeft" align="right" valign="top"><a id="a8d50ebb08728ab1d6426e40ffd1961ec"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_area_light_component_config.html#a8d50ebb08728ab1d6426e40ffd1961ec">SupportsAffectsGI</a> () const</td></tr>
+<tr class="memdesc:a8d50ebb08728ab1d6426e40ffd1961ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the light type can be configured to affect global illumination. <br /></td></tr>
+<tr class="separator:a8d50ebb08728ab1d6426e40ffd1961ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47ded5d15663c81abba531f4e33149d1"><td class="memItemLeft" align="right" valign="top"><a id="a47ded5d15663c81abba531f4e33149d1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_area_light_component_config.html#a47ded5d15663c81abba531f4e33149d1">ShadowsDisabled</a> () const</td></tr>
 <tr class="memdesc:a47ded5d15663c81abba531f4e33149d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if shadows are turned on. <br /></td></tr>
@@ -222,6 +226,12 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_filteringSample
 <tr class="memitem:a57369fd51088c9f1e6aaf7b7d1fd4ebc"><td class="memItemLeft" align="right" valign="top"><a id="a57369fd51088c9f1e6aaf7b7d1fd4ebc"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_esmExponent</b> = 87.0f</td></tr>
 <tr class="separator:a57369fd51088c9f1e6aaf7b7d1fd4ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42199e8ed6d1255e1f906ec77f085d5a"><td class="memItemLeft" align="right" valign="top"><a id="a42199e8ed6d1255e1f906ec77f085d5a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_affectsGI</b> = true</td></tr>
+<tr class="separator:a42199e8ed6d1255e1f906ec77f085d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4eec458c270c174cdce0e13e7ba37cf"><td class="memItemLeft" align="right" valign="top"><a id="ad4eec458c270c174cdce0e13e7ba37cf"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_affectsGIFactor</b> = 1.0f</td></tr>
+<tr class="separator:ad4eec458c270c174cdce0e13e7ba37cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -235,7 +245,7 @@ static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>Cut
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:33 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:27 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

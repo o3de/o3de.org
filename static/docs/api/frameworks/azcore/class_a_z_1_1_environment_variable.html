@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -103,12 +103,10 @@ T *&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> () c
 <tr class="memitem:a7b0396cd77fb84f76ef6e47ca95aa5c9"><td class="memItemLeft" align="right" valign="top"><a id="a7b0396cd77fb84f76ef6e47ca95aa5c9"></a>
 T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b> () const</td></tr>
 <tr class="separator:a7b0396cd77fb84f76ef6e47ca95aa5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a6c7b2691c39ce285d9b153d42046ca"><td class="memItemLeft" align="right" valign="top"><a id="a4a6c7b2691c39ce285d9b153d42046ca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (const T &amp;value)</td></tr>
-<tr class="separator:a4a6c7b2691c39ce285d9b153d42046ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfb4aaf55951ccc07bad7171230f75a4"><td class="memItemLeft" align="right" valign="top"><a id="abfb4aaf55951ccc07bad7171230f75a4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (T &amp;&amp;value)</td></tr>
-<tr class="separator:abfb4aaf55951ccc07bad7171230f75a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a88e5f9bc999731b56ee12a70361c0"><td class="memTemplParams" colspan="2"><a id="a90a88e5f9bc999731b56ee12a70361c0"></a>
+template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a90a88e5f9bc999731b56ee12a70361c0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Set</b> (U &amp;&amp;value) -&gt; AZStd::enable_if_t&lt; AZStd::assignable_from&lt; T &amp;, U &gt;&gt;</td></tr>
+<tr class="separator:a90a88e5f9bc999731b56ee12a70361c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dbd633bf5a29e04e864739e2316bf9a"><td class="memItemLeft" align="right" valign="top"><a id="a9dbd633bf5a29e04e864739e2316bf9a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>operator bool</b> () const</td></tr>
 <tr class="separator:a9dbd633bf5a29e04e864739e2316bf9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,18 +116,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!</b> () cons
 <tr class="memitem:a7f384d011dc8d60568bae3ed1ebe747b"><td class="memItemLeft" align="right" valign="top"><a id="a7f384d011dc8d60568bae3ed1ebe747b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Swap</b> (<a class="el" href="class_a_z_1_1_environment_variable.html">EnvironmentVariable</a> &amp;rhs)</td></tr>
 <tr class="separator:a7f384d011dc8d60568bae3ed1ebe747b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a814a06d9115c697c3ba627abcbdee21f"><td class="memItemLeft" align="right" valign="top"><a id="a814a06d9115c697c3ba627abcbdee21f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> () const</td></tr>
-<tr class="separator:a814a06d9115c697c3ba627abcbdee21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d586d7404362ecc96346e5be9ecc4cb"><td class="memItemLeft" align="right" valign="top"><a id="a7d586d7404362ecc96346e5be9ecc4cb"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOwner</b> () const</td></tr>
 <tr class="separator:a7d586d7404362ecc96346e5be9ecc4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e9274e50d4aaf1f4ea0a299e8f70661"><td class="memItemLeft" align="right" valign="top"><a id="a9e9274e50d4aaf1f4ea0a299e8f70661"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConstructed</b> () const</td></tr>
 <tr class="separator:a9e9274e50d4aaf1f4ea0a299e8f70661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23e30720c94d4f9923888594f9168205"><td class="memItemLeft" align="right" valign="top"><a id="a23e30720c94d4f9923888594f9168205"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Construct</b> ()</td></tr>
-<tr class="separator:a23e30720c94d4f9923888594f9168205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -142,14 +134,14 @@ HolderType *&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b></t
 class AZ::EnvironmentVariable&lt; T &gt;</h3>
 
 <p><a class="el" href="class_a_z_1_1_environment_variable.html" title="EnvironmentVariable holds a pointer to the actual variable, it should be used as any smart pointer....">EnvironmentVariable</a> holds a pointer to the actual variable, it should be used as any smart pointer. <a class="el" href="class_a_z_1_1_event.html">Event</a> though most of the it will be "static" as it's treated as a global. </p>
-<p><a class="el" href="class_a_z_1_1_environment_variable.html" title="EnvironmentVariable holds a pointer to the actual variable, it should be used as any smart pointer....">EnvironmentVariable</a> implementation, T should be default constructible/destructible. Keep in mind that if T uses virtual function (virtual destructor), it will use the vtable for the current module unloading the module with a vtable will destroy the variable (unless specified with CreateVariableEx). You will either need to control the order (aka Call Environmnet::Create from the module that will alive before the variable is destroyed) or provide intramodule allocator <a class="el" href="namespace_a_z_1_1_environment.html#ae28c1bb94040473cd0fbba492b82bfbe">Environment::Create</a> and make sure you don't use virtual function (of course implementations must match too). In general we advise to use the minimal amount of environment variables and use pointer types so you can manage the life cycle yourself, we will accept value types and do the best to make it work for you. When it comes to threading we make sure the <a class="el" href="class_a_z_1_1_environment_variable.html" title="EnvironmentVariable holds a pointer to the actual variable, it should be used as any smart pointer....">EnvironmentVariable</a> objects can be created, destroyed and assigned from multiple threads, however we don't make the code safe (for performance) when you access the variable. If your variable can be access from multiple threads while it's being modified you will need to make sure you synchronize the access to it. </p>
+<p><a class="el" href="class_a_z_1_1_environment_variable.html" title="EnvironmentVariable holds a pointer to the actual variable, it should be used as any smart pointer....">EnvironmentVariable</a> implementation, T should be default constructible/destructible. Keep in mind that if T uses virtual function (virtual destructor), it will use the vtable for the current module unloading the module with a vtable will destroy the variable (unless specified with CreateVariableEx). You will either need to control the order (aka Call Environmnet::Create from the module that will alive before the variable is destroyed) or provide intramodule allocator Environment::Create and make sure you don't use virtual function (of course implementations must match too). In general we advise to use the minimal amount of environment variables and use pointer types so you can manage the life cycle yourself, we will accept value types and do the best to make it work for you. When it comes to threading we make sure the <a class="el" href="class_a_z_1_1_environment_variable.html" title="EnvironmentVariable holds a pointer to the actual variable, it should be used as any smart pointer....">EnvironmentVariable</a> objects can be created, destroyed and assigned from multiple threads, however we don't make the code safe (for performance) when you access the variable. If your variable can be access from multiple threads while it's being modified you will need to make sure you synchronize the access to it. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Module/Environment.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:43 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

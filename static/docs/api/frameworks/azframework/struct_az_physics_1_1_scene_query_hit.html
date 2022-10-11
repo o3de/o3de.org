@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -93,8 +93,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a0d3550a42df8c3a0557825960b8beda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08b523503b6893d20a34db766a58002a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_physics_1_1_shape.html">Physics::Shape</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_physics_1_1_scene_query_hit.html#a08b523503b6893d20a34db766a58002a">m_shape</a> = nullptr</td></tr>
 <tr class="separator:a08b523503b6893d20a34db766a58002a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad355b5501abe427d8af787f44379dc80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_physics_1_1_material.html">Physics::Material</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_physics_1_1_scene_query_hit.html#ad355b5501abe427d8af787f44379dc80">m_material</a> = nullptr</td></tr>
-<tr class="separator:ad355b5501abe427d8af787f44379dc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a31925db66065878d4051e27d4d01d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_physics_1_1_material_id.html">Physics::MaterialId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_physics_1_1_scene_query_hit.html#a1a31925db66065878d4051e27d4d01d4">m_physicsMaterialId</a></td></tr>
+<tr class="separator:a1a31925db66065878d4051e27d4d01d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7542de875819dc09d0f07d87e28c98a9"><td class="memItemLeft" align="right" valign="top">AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_physics_1_1_scene_query_hit.html#a7542de875819dc09d0f07d87e28c98a9">m_position</a> = AZ::Vector3::CreateZero()</td></tr>
 <tr class="separator:a7542de875819dc09d0f07d87e28c98a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9745dadfa172ec2a1563e2e74feafb25"><td class="memItemLeft" align="right" valign="top">AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_physics_1_1_scene_query_hit.html#a9745dadfa172ec2a1563e2e74feafb25">m_normal</a> = AZ::Vector3::CreateZero()</td></tr>
@@ -148,21 +148,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad355b5501abe427d8af787f44379dc80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad355b5501abe427d8af787f44379dc80">&#9670;&nbsp;</a></span>m_material</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_physics_1_1_material.html">Physics::Material</a>* AzPhysics::SceneQueryHit::m_material = nullptr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The material on the shape (or face) that was hit. Valid if SceneQuery::ResultFlags::Material is set. </p>
-
-</div>
-</div>
 <a id="a9745dadfa172ec2a1563e2e74feafb25"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9745dadfa172ec2a1563e2e74feafb25">&#9670;&nbsp;</a></span>m_normal</h2>
 
@@ -175,6 +160,21 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The normal of the surface hit. Valid if SceneQuery::ResultFlags::Normal is set. </p>
+
+</div>
+</div>
+<a id="a1a31925db66065878d4051e27d4d01d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a31925db66065878d4051e27d4d01d4">&#9670;&nbsp;</a></span>m_physicsMaterialId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_physics_1_1_material_id.html">Physics::MaterialId</a> AzPhysics::SceneQueryHit::m_physicsMaterialId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The physics material id on the shape (or face) that was hit. Valid if SceneQuery::ResultFlags::Material is set. </p>
 
 </div>
 </div>
@@ -229,7 +229,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:23 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:14 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

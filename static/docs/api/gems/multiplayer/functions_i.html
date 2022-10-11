@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Multiplayer Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -57,12 +57,6 @@ $(function() {
 <li>InitializeMultiplayer()
 : <a class="el" href="class_multiplayer_1_1_i_multiplayer.html#ac35703a1996a1bb57ea035936be75e0f">Multiplayer::IMultiplayer</a>
 </li>
-<li>IsAuthority()
-: <a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a97f73a845a6414d385ebf03476b052f0">Multiplayer::MultiplayerController</a>
-</li>
-<li>IsAutonomous()
-: <a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#acad358ca001a6f50b9e1969b7bc2e693">Multiplayer::MultiplayerController</a>
-</li>
 <li>IsEntityFiltered()
 : <a class="el" href="class_multiplayer_1_1_i_filter_entity_manager.html#a961e3b9e2fd0e3d2d471228d0904bfce">Multiplayer::IFilterEntityManager</a>
 </li>
@@ -83,6 +77,9 @@ $(function() {
 <li>IsInitialized()
 : <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a85049cfd05fd9bf3e293a00299da2259">Multiplayer::INetworkEntityManager</a>
 </li>
+<li>IsInWindow()
+: <a class="el" href="class_multiplayer_1_1_i_replication_window.html#a597744e737f04bb7c7a5cfe05be7005a">Multiplayer::IReplicationWindow</a>
+</li>
 <li>IsMarkedForRemoval()
 : <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a0f820b45c0c5b93f81f18c19aed9c8e3">Multiplayer::INetworkEntityManager</a>
 </li>
@@ -90,10 +87,12 @@ $(function() {
 : <a class="el" href="class_multiplayer_1_1_local_prediction_player_input_component_controller.html#a4a3ff9c94aa14ec6a6a19c85318d8265">Multiplayer::LocalPredictionPlayerInputComponentController</a>
 </li>
 <li>IsNetEntityRoleAuthority()
-: <a class="el" href="class_multiplayer_1_1_net_bind_component.html#ae2b3ff9eca491ba1184416cec061780e">Multiplayer::NetBindComponent</a>
+: <a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a603433682d3cd15ca987bf523957d779">Multiplayer::MultiplayerController</a>
+, <a class="el" href="class_multiplayer_1_1_net_bind_component.html#ae2b3ff9eca491ba1184416cec061780e">Multiplayer::NetBindComponent</a>
 </li>
 <li>IsNetEntityRoleAutonomous()
-: <a class="el" href="class_multiplayer_1_1_net_bind_component.html#a840bf52798c9ed92fe182a0ba721e000">Multiplayer::NetBindComponent</a>
+: <a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a686d0d8c183fc82d25dc5f7eb8d0b2e1">Multiplayer::MultiplayerController</a>
+, <a class="el" href="class_multiplayer_1_1_net_bind_component.html#a840bf52798c9ed92fe182a0ba721e000">Multiplayer::NetBindComponent</a>
 </li>
 <li>IsNetEntityRoleClient()
 : <a class="el" href="class_multiplayer_1_1_net_bind_component.html#ad6bbd395672e3ec91451a4641937eff6">Multiplayer::NetBindComponent</a>
@@ -115,7 +114,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:53 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:13 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

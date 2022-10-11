@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Multiplayer Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -141,9 +141,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleEntityDeleteMes
 <tr class="memitem:a5a13cc1090e88b23153e7ab6960ff02a"><td class="memItemLeft" align="right" valign="top"><a id="a5a13cc1090e88b23153e7ab6960ff02a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleEntityUpdateMessage</b> (AzNetworking::IConnection *invokingConnection, const AzNetworking::IPacketHeader &amp;packetHeader, const <a class="el" href="class_multiplayer_1_1_network_entity_update_message.html">NetworkEntityUpdateMessage</a> &amp;updateMessage)</td></tr>
 <tr class="separator:a5a13cc1090e88b23153e7ab6960ff02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7222e887f42d980f2aa609086f509647"><td class="memItemLeft" align="right" valign="top"><a id="a7222e887f42d980f2aa609086f509647"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleEntityRpcMessage</b> (AzNetworking::IConnection *invokingConnection, <a class="el" href="class_multiplayer_1_1_network_entity_rpc_message.html">NetworkEntityRpcMessage</a> &amp;message)</td></tr>
-<tr class="separator:a7222e887f42d980f2aa609086f509647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af394541ce41e0d2633dee580f59681d4"><td class="memItemLeft" align="right" valign="top"><a id="af394541ce41e0d2633dee580f59681d4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleEntityRpcMessages</b> (AzNetworking::IConnection *invokingConnection, NetworkEntityRpcVector &amp;rpcVector)</td></tr>
+<tr class="separator:af394541ce41e0d2633dee580f59681d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb60aa49868b2eaf798fa7201ad452f4"><td class="memItemLeft" align="right" valign="top"><a id="adb60aa49868b2eaf798fa7201ad452f4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleEntityResetMessages</b> (AzNetworking::IConnection *invokingConnection, const NetEntityIdsForReset &amp;resetIds)</td></tr>
+<tr class="separator:adb60aa49868b2eaf798fa7201ad452f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e0f1db351cfd833b12ed222564759cc"><td class="memItemLeft" align="right" valign="top"><a id="a9e0f1db351cfd833b12ed222564759cc"></a>
 AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>GetResendTimeoutTimeMs</b> () const</td></tr>
 <tr class="separator:a9e0f1db351cfd833b12ed222564759cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,7 +186,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntityReplicator</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:52 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:13 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

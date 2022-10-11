@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,6 +46,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -53,6 +54,11 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_intersect_1_1_segment_triangle_hit_tester.html">SegmentTriangleHitTester</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a620dc75ecf2e691ece3641309f273c9d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#a620dc75ecf2e691ece3641309f273c9d">RayAABBIsectTypes</a> : AZ::s32 { <a class="el" href="namespace_a_z_1_1_intersect.html#a620dc75ecf2e691ece3641309f273c9da36693d2bf879494dbf99ca06a6ddd41f">ISECT_RAY_AABB_NONE</a> = 0, 
@@ -94,32 +100,30 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a9474d4440f1b8ae3587bb5e5e14bb118"><td class="memItemLeft" align="right" valign="top">AZ_MATH_INLINE <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#a9474d4440f1b8ae3587bb5e5e14bb118">Barycentric</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;a, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;b, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;c, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;p)</td></tr>
 <tr class="separator:a9474d4440f1b8ae3587bb5e5e14bb118"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16130832da6652844895803d8d04265a"><td class="memItemLeft" align="right" valign="top"><a id="a16130832da6652844895803d8d04265a"></a>
-AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#a16130832da6652844895803d8d04265a">TestPointTriangle</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;p, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;a, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;b, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;c)</td></tr>
-<tr class="memdesc:a16130832da6652844895803d8d04265a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if point p lies inside the triangle (a,b,c). <br /></td></tr>
-<tr class="separator:a16130832da6652844895803d8d04265a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13b83e0347f512c90bc5d30f75020925"><td class="memItemLeft" align="right" valign="top"><a id="a13b83e0347f512c90bc5d30f75020925"></a>
-AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#a13b83e0347f512c90bc5d30f75020925">TestPointTriangleCCW</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;p, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;a, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;b, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;c)</td></tr>
-<tr class="memdesc:a13b83e0347f512c90bc5d30f75020925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if point p lies inside the counter clock wise triangle (a,b,c). <br /></td></tr>
-<tr class="separator:a13b83e0347f512c90bc5d30f75020925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab53ec062a18b941568d6477129693796"><td class="memItemLeft" align="right" valign="top"><a id="ab53ec062a18b941568d6477129693796"></a>
+AZ_MATH_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#ab53ec062a18b941568d6477129693796">TestPointTriangle</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;p, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;a, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;b, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;c)</td></tr>
+<tr class="memdesc:ab53ec062a18b941568d6477129693796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if point p lies inside the triangle (a,b,c). <br /></td></tr>
+<tr class="separator:ab53ec062a18b941568d6477129693796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a9baa767ffc55ad821c70197ee59541"><td class="memItemLeft" align="right" valign="top"><a id="a8a9baa767ffc55ad821c70197ee59541"></a>
+AZ_MATH_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#a8a9baa767ffc55ad821c70197ee59541">TestPointTriangleCCW</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;p, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;a, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;b, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;c)</td></tr>
+<tr class="memdesc:a8a9baa767ffc55ad821c70197ee59541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if point p lies inside the counter clock wise triangle (a,b,c). <br /></td></tr>
+<tr class="separator:a8a9baa767ffc55ad821c70197ee59541"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87d6446096aec4fa456e5fcb46c3283b"><td class="memItemLeft" align="right" valign="top">AZ_MATH_INLINE float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#a87d6446096aec4fa456e5fcb46c3283b">ClosestPointPlane</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;p, const <a class="el" href="class_a_z_1_1_plane.html">Plane</a> &amp;plane, <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;ptOnPlane)</td></tr>
 <tr class="separator:a87d6446096aec4fa456e5fcb46c3283b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72137d6b2ff0a5278f4550af2bf6b816"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#a72137d6b2ff0a5278f4550af2bf6b816">ClosestPointTriangle</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;p, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;a, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;b, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;c)</td></tr>
 <tr class="separator:a72137d6b2ff0a5278f4550af2bf6b816"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed5a94fb2dfb115889d366f2ce2c088"><td class="memItemLeft" align="right" valign="top">AZ_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#abed5a94fb2dfb115889d366f2ce2c088">PointSphere</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;centerPosition, float radiusSquared, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;testPoint)</td></tr>
-<tr class="memdesc:abed5a94fb2dfb115889d366f2ce2c088"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method checks if a point is inside a sphere or outside it.  <a href="namespace_a_z_1_1_intersect.html#abed5a94fb2dfb115889d366f2ce2c088">More...</a><br /></td></tr>
 <tr class="separator:abed5a94fb2dfb115889d366f2ce2c088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c8871244488abcb7175bf8576bc9edf"><td class="memItemLeft" align="right" valign="top">AZ_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#a7c8871244488abcb7175bf8576bc9edf">PointCylinder</a> (const <a class="el" href="class_a_z_1_1_vector3.html">AZ::Vector3</a> &amp;baseCenterPoint, const <a class="el" href="class_a_z_1_1_vector3.html">AZ::Vector3</a> &amp;axisVector, float axisLengthSquared, float radiusSquared, const <a class="el" href="class_a_z_1_1_vector3.html">AZ::Vector3</a> &amp;testPoint)</td></tr>
-<tr class="memdesc:a7c8871244488abcb7175bf8576bc9edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method checks if a point is inside a cylinder or outside it.  <a href="namespace_a_z_1_1_intersect.html#a7c8871244488abcb7175bf8576bc9edf">More...</a><br /></td></tr>
 <tr class="separator:a7c8871244488abcb7175bf8576bc9edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab7e5adcf3c4fc83b283a65b3ec364d0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#aab7e5adcf3c4fc83b283a65b3ec364d0">LineToPointDistanceTime</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;s1, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;s21, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;p)</td></tr>
 <tr class="separator:aab7e5adcf3c4fc83b283a65b3ec364d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57905a691a9f2cc1a7a87f4d1395aa17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#a57905a691a9f2cc1a7a87f4d1395aa17">LineToPointDistance</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;s1, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;s2, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;p, float &amp;u)</td></tr>
 <tr class="separator:a57905a691a9f2cc1a7a87f4d1395aa17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc7eb7e8997254d2024b03d7b50071a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#abc7eb7e8997254d2024b03d7b50071a3">IntersectSegmentTriangleCCW</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;p, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;q, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;a, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;b, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;c, <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;normal, float &amp;t)</td></tr>
-<tr class="separator:abc7eb7e8997254d2024b03d7b50071a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a518879c376617631ee29ca737ac8f9ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#a518879c376617631ee29ca737ac8f9ab">IntersectSegmentTriangle</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;p, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;q, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;a, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;b, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;c, <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;normal, float &amp;t)</td></tr>
-<tr class="separator:a518879c376617631ee29ca737ac8f9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d6d3842435767600d9e3339f8f6d040"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#a8d6d3842435767600d9e3339f8f6d040">IntersectSegmentTriangleCCW</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;p, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;q, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;a, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;b, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;c, <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;normal, float &amp;t)</td></tr>
+<tr class="separator:a8d6d3842435767600d9e3339f8f6d040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa081fe6bb551bb0733d59474f517c2bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#aa081fe6bb551bb0733d59474f517c2bf">IntersectSegmentTriangle</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;p, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;q, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;a, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;b, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;c, <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;normal, float &amp;t)</td></tr>
+<tr class="separator:aa081fe6bb551bb0733d59474f517c2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34644321555ee3cc583687bb035a5963"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_a_z_1_1_intersect.html#a620dc75ecf2e691ece3641309f273c9d">RayAABBIsectTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#a34644321555ee3cc583687bb035a5963">IntersectRayAABB</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;rayStart, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;dir, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;dirRCP, const <a class="el" href="class_a_z_1_1_aabb.html">Aabb</a> &amp;aabb, float &amp;tStart, float &amp;tEnd, <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;startNormal)</td></tr>
 <tr class="separator:a34644321555ee3cc583687bb035a5963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5ca9ceadb872529b654ff1512ce0a22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_a_z_1_1_intersect.html#a620dc75ecf2e691ece3641309f273c9d">RayAABBIsectTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_intersect.html#ac5ca9ceadb872529b654ff1512ce0a22">IntersectRayAABB2</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;rayStart, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;dirRCP, const <a class="el" href="class_a_z_1_1_aabb.html">Aabb</a> &amp;aabb, float &amp;start, float &amp;end)</td></tr>
@@ -177,7 +181,7 @@ AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="
       </table>
 </div><div class="memdoc">
 
-<p>Capsule ray intersect types. </p>
+<p><a class="el" href="class_a_z_1_1_capsule.html" title="A class representing a capsule (a cylinder with a hemispherical cap at each end).">Capsule</a> ray intersect types. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a63715d33dc6d5d8d45ddaebb4afc9c30a3080d7fa24a681bebbf1e371c7e15664"></a>ISECT_RAY_CAPSULE_SA_INSIDE&#160;</td><td class="fielddoc"><p>The ray starts inside the cylinder. </p>
 </td></tr>
@@ -205,7 +209,7 @@ AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="
       </table>
 </div><div class="memdoc">
 
-<p>Ray cylinder intersection types. </p>
+<p><a class="el" href="class_a_z_1_1_ray.html" title="Ray defined by two Vector3, an orign and a normalized direction.">Ray</a> cylinder intersection types. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acce25f5e8694999dcb02397f5b560b1ca03fd07815bd2e7161348822a80b2ff12"></a>RR_ISECT_RAY_CYL_SA_INSIDE&#160;</td><td class="fielddoc"><p>the ray starts inside the cylinder </p>
 </td></tr>
@@ -233,7 +237,7 @@ AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="
       </table>
 </div><div class="memdoc">
 
-<p>Ray aabb intersection result types. </p>
+<p><a class="el" href="class_a_z_1_1_ray.html" title="Ray defined by two Vector3, an orign and a normalized direction.">Ray</a> aabb intersection result types. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a620dc75ecf2e691ece3641309f273c9da36693d2bf879494dbf99ca06a6ddd41f"></a>ISECT_RAY_AABB_NONE&#160;</td><td class="fielddoc"><p>no intersection </p>
 </td></tr>
@@ -257,7 +261,7 @@ AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="
       </table>
 </div><div class="memdoc">
 
-<p>Ray sphere intersection result types. </p>
+<p><a class="el" href="class_a_z_1_1_ray.html" title="Ray defined by two Vector3, an orign and a normalized direction.">Ray</a> sphere intersection result types. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac28022d9815af72d6302ecb960423737a7110fd3396305220a3561bafdd7ebe85"></a>ISECT_RAY_SPHERE_SA_INSIDE&#160;</td><td class="fielddoc"><p>The ray starts inside the cylinder. </p>
 </td></tr>
@@ -307,7 +311,7 @@ AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Compute barycentric coordinates (u,v,w) for a point P with respect to triangle (a,b,c) </p>
+<p>Compute barycentric coordinates (u,v,w) for a point P with respect to triangle (a,b,c). </p>
 
 </div>
 </div>
@@ -399,13 +403,13 @@ AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Find the closest point to 'p' on a plane 'plane'. </p><dl class="section return"><dt>Returns</dt><dd>Distance from the 'p' to 'ptOnPlane' </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Find the closest point to 'p' on a plane 'plane'. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ptOnPlane</td><td>closest point on the plane. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ptOnPlane</td><td>closest point on the plane. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Distance from the 'p' to 'ptOnPlane'. </dd></dl>
 
 </div>
 </div>
@@ -510,7 +514,7 @@ AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Find the closest point to 'p' on a triangle (a,b,c). </p><dl class="section return"><dt>Returns</dt><dd>closest point to 'p' on the triangle (a,b,c) </dd></dl>
+<p>Find the closest point to 'p' on a triangle (a,b,c). </p><dl class="section return"><dt>Returns</dt><dd>closest point to 'p' on the triangle (a,b,c). </dd></dl>
 
 </div>
 </div>
@@ -725,8 +729,8 @@ AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="
 </div><div class="memdoc">
 <p><a class="el" href="namespace_a_z_1_1_intersect.html">Intersect</a> ray R(t) = rayStart + t*d against AABB a. When intersecting, return intersection distance tmin and point q of intersection. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rayStart</td><td>Ray starting point </td></tr>
-    <tr><td class="paramname">dir</td><td>Ray direction and length (dir = rayEnd - rayStart) </td></tr>
+    <tr><td class="paramname">rayStart</td><td><a class="el" href="class_a_z_1_1_ray.html" title="Ray defined by two Vector3, an orign and a normalized direction.">Ray</a> starting point </td></tr>
+    <tr><td class="paramname">dir</td><td><a class="el" href="class_a_z_1_1_ray.html" title="Ray defined by two Vector3, an orign and a normalized direction.">Ray</a> direction and length (dir = rayEnd - rayStart) </td></tr>
     <tr><td class="paramname">dirRCP</td><td>1/dir (reciprocal direction - we cache this result very often so we don't need to compute it multiple times, otherwise just use dir.GetReciprocal()) </td></tr>
     <tr><td class="paramname">aabb</td><td>Axis aligned bounding box to intersect against </td></tr>
     <tr><td class="paramname">tStart</td><td>Time on ray of the first intersection [0,1] or 0 if the ray starts inside the aabb - check the return value </td></tr>
@@ -784,8 +788,8 @@ AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="
 </div><div class="memdoc">
 <p><a class="el" href="namespace_a_z_1_1_intersect.html">Intersect</a> ray against AABB. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rayStart</td><td>Ray starting point. </td></tr>
-    <tr><td class="paramname">dir</td><td>Ray reciprocal direction. </td></tr>
+    <tr><td class="paramname">rayStart</td><td><a class="el" href="class_a_z_1_1_ray.html" title="Ray defined by two Vector3, an orign and a normalized direction.">Ray</a> starting point. </td></tr>
+    <tr><td class="paramname">dir</td><td><a class="el" href="class_a_z_1_1_ray.html" title="Ray defined by two Vector3, an orign and a normalized direction.">Ray</a> reciprocal direction. </td></tr>
     <tr><td class="paramname">aabb</td><td>Axis aligned bounding box to intersect against. </td></tr>
     <tr><td class="paramname">start</td><td>Length on ray of the first intersection. </td></tr>
     <tr><td class="paramname">end</td><td>Length of the of the second intersection. </td></tr>
@@ -1505,7 +1509,7 @@ AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Reference: Real-Time Collision Detection - 5.3.7 Intersecting Ray or Segment Against Cylinder <a class="el" href="namespace_a_z_1_1_intersect.html">Intersect</a> segment S(t)=sa+t(dir), 0&lt;=t&lt;=1 against cylinder specified by p, q and r. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Reference: Real-Time Collision Detection - 5.3.7 Intersecting <a class="el" href="class_a_z_1_1_ray.html" title="Ray defined by two Vector3, an orign and a normalized direction.">Ray</a> or Segment Against Cylinder <a class="el" href="namespace_a_z_1_1_intersect.html">Intersect</a> segment S(t)=sa+t(dir), 0&lt;=t&lt;=1 against cylinder specified by p, q and r. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">sa</td><td>The initial point. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">dir</td><td>Magnitude and direction for sa. </td></tr>
@@ -1598,14 +1602,14 @@ AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="
 
 </div>
 </div>
-<a id="a518879c376617631ee29ca737ac8f9ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a518879c376617631ee29ca737ac8f9ab">&#9670;&nbsp;</a></span>IntersectSegmentTriangle()</h2>
+<a id="aa081fe6bb551bb0733d59474f517c2bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa081fe6bb551bb0733d59474f517c2bf">&#9670;&nbsp;</a></span>IntersectSegmentTriangle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool AZ::Intersect::IntersectSegmentTriangle </td>
+          <td class="memname">AZ_MATH_INLINE bool AZ::Intersect::IntersectSegmentTriangle </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
           <td class="paramname"><em>p</em>, </td>
@@ -1653,30 +1657,30 @@ AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Same as <a class="el" href="namespace_a_z_1_1_intersect.html#abc7eb7e8997254d2024b03d7b50071a3">IntersectSegmentTriangleCCW</a> without respecting the triangle (a,b,c) vertex order (double sided). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Same as <a class="el" href="namespace_a_z_1_1_intersect.html#a8d6d3842435767600d9e3339f8f6d040">IntersectSegmentTriangleCCW</a> without respecting the triangle (a,b,c) vertex order (i.e. double sided). This is a convenience method on top of the <a class="el" href="class_a_z_1_1_intersect_1_1_segment_triangle_hit_tester.html">SegmentTriangleHitTester</a> to make it easier to call the API in the single ray/triangle intersection use case. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>Segment start point. </td></tr>
     <tr><td class="paramname">q</td><td>Segment end point. </td></tr>
-    <tr><td class="paramname">a</td><td>Triangle point 1. </td></tr>
-    <tr><td class="paramname">b</td><td>Triangle point 2. </td></tr>
-    <tr><td class="paramname">c</td><td>Triangle point 3. </td></tr>
-    <tr><td class="paramname">normal</td><td>At the intersection point. </td></tr>
-    <tr><td class="paramname">t</td><td>Time of intersection along the segment [0.0 (p), 1.0 (q)]. </td></tr>
+    <tr><td class="paramname">a</td><td>Triangle vertex 1. </td></tr>
+    <tr><td class="paramname">b</td><td>Triangle vertex 2. </td></tr>
+    <tr><td class="paramname">c</td><td>Triangle vertex 3. </td></tr>
+    <tr><td class="paramname">normal</td><td>Triangle normal at the intersection point if segment intersects triangle. </td></tr>
+    <tr><td class="paramname">t</td><td>Time of intersection along the segment [0.0 (p), 1.0 (q)] if segment intersects triangle. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the segments intersects the triangle otherwise false. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the segment intersects the triangle otherwise false. </dd></dl>
 
 </div>
 </div>
-<a id="abc7eb7e8997254d2024b03d7b50071a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc7eb7e8997254d2024b03d7b50071a3">&#9670;&nbsp;</a></span>IntersectSegmentTriangleCCW()</h2>
+<a id="a8d6d3842435767600d9e3339f8f6d040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d6d3842435767600d9e3339f8f6d040">&#9670;&nbsp;</a></span>IntersectSegmentTriangleCCW()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool AZ::Intersect::IntersectSegmentTriangleCCW </td>
+          <td class="memname">AZ_MATH_INLINE bool AZ::Intersect::IntersectSegmentTriangleCCW </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
           <td class="paramname"><em>p</em>, </td>
@@ -1724,19 +1728,19 @@ AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Given segment pq and triangle abc (CCW), returns whether segment intersects triangle and if so, also returns the barycentric coordinates (u,v,w) of the intersection point. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Given a segment pq and a triangle abc (CCW), returns whether the segment intersects the triangle and if so, also returns the time of intersection along the segment and the triangle normal. This is a convenience method on top of the <a class="el" href="class_a_z_1_1_intersect_1_1_segment_triangle_hit_tester.html">SegmentTriangleHitTester</a> to make it easier to call the API in the single ray/triangle intersection use case. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>Segment start point. </td></tr>
     <tr><td class="paramname">q</td><td>Segment end point. </td></tr>
-    <tr><td class="paramname">a</td><td>Triangle point 1. </td></tr>
-    <tr><td class="paramname">b</td><td>Triangle point 2. </td></tr>
-    <tr><td class="paramname">c</td><td>Triangle point 3. </td></tr>
-    <tr><td class="paramname">normal</td><td>At the intersection point. </td></tr>
-    <tr><td class="paramname">t</td><td>Time of intersection along the segment [0.0 (p), 1.0 (q)]. </td></tr>
+    <tr><td class="paramname">a</td><td>Triangle vertex 1. </td></tr>
+    <tr><td class="paramname">b</td><td>Triangle vertex 2. </td></tr>
+    <tr><td class="paramname">c</td><td>Triangle vertex 3. </td></tr>
+    <tr><td class="paramname">normal</td><td>Triangle normal at the intersection point if segment intersects triangle. </td></tr>
+    <tr><td class="paramname">t</td><td>Time of intersection along the segment [0.0 (p), 1.0 (q)] if segment intersects triangle. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the segments intersects the triangle otherwise false. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the segment intersects the triangle otherwise false. </dd></dl>
 
 </div>
 </div>
@@ -1876,19 +1880,17 @@ AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>This method checks if a point is inside a cylinder or outside it. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>This method checks if a point is inside a cylinder or outside it. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">baseCenterPoint</td><td>Vector to the base of the cylinder </td></tr>
-    <tr><td class="paramname">axisVector</td><td>Non normalized vector from the base of the cylinder to the other end </td></tr>
-    <tr><td class="paramname">axisLengthSquared</td><td>square of length of "axisVector" </td></tr>
-    <tr><td class="paramname">radiusSquared</td><td>square of cylinder radius </td></tr>
-    <tr><td class="paramname">testPoint</td><td>Point to be tested </td></tr>
+    <tr><td class="paramname">baseCenterPoint</td><td>Vector to the base of the cylinder. </td></tr>
+    <tr><td class="paramname">axisVector</td><td>Non normalized vector from the base of the cylinder to the other end. </td></tr>
+    <tr><td class="paramname">axisLengthSquared</td><td>square of length of "axisVector". </td></tr>
+    <tr><td class="paramname">radiusSquared</td><td>square of cylinder radius. </td></tr>
+    <tr><td class="paramname">testPoint</td><td>Point to be tested. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean value indicating if the point is inside or not </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean value indicating if the point is inside or not. </dd></dl>
 
 </div>
 </div>
@@ -1923,17 +1925,15 @@ AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>This method checks if a point is inside a sphere or outside it. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>This method checks if a point is inside a sphere or outside it. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">centerPosition</td><td>Position of the center of the sphere </td></tr>
-    <tr><td class="paramname">radiusSquared</td><td>square of cylinder radius </td></tr>
-    <tr><td class="paramname">testPoint</td><td>Point to be tested </td></tr>
+    <tr><td class="paramname">centerPosition</td><td>Position of the center of the sphere. </td></tr>
+    <tr><td class="paramname">radiusSquared</td><td>square of sphere radius. </td></tr>
+    <tr><td class="paramname">testPoint</td><td>Point to be tested. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean value indicating if the point is inside or not </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean value indicating if the point is inside or not. </dd></dl>
 
 </div>
 </div>
@@ -2026,7 +2026,7 @@ AZ_MATH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:48 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:32 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

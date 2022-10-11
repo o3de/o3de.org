@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,6 +46,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
@@ -55,58 +56,103 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_byte_size.html">ByteSize</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_byte_size_range.html">ByteSizeRange</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_bytes_per_second.html">BytesPerSecond</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_float_range.html">FloatRange</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_integer_range.html">IntegerRange</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_percentage.html">Percentage</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_percentage_range.html">PercentageRange</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_time.html">Time</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_time_range.html">TimeRange</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:afc8108c1a32392747571d4137549d4fb"><td class="memItemLeft" align="right" valign="top"><a id="afc8108c1a32392747571d4137549d4fb"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <b>FloatingPoint</b>, 
-<b>Integer</b>, 
-<b>Percentage</b>
+<tr class="memitem:a31907f355b103b46e3e6553cd887238c"><td class="memItemLeft" align="right" valign="top"><a id="a31907f355b103b46e3e6553cd887238c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>GraphType</b> : u8 { <b>None</b>, 
+<b>Lines</b>, 
+<b>Histogram</b>
  }</td></tr>
-<tr class="separator:afc8108c1a32392747571d4137549d4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a31907f355b103b46e3e6553cd887238c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8f59073bd76a622efc3df3f415358f3"><td class="memItemLeft" align="right" valign="top"><a id="ad8f59073bd76a622efc3df3f415358f3"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>TimeValue</b> = <a class="el" href="class_a_z_std_1_1chrono_1_1duration.html">AZStd::chrono::nanoseconds</a></td></tr>
+<tr class="separator:ad8f59073bd76a622efc3df3f415358f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8300881ab2953e67e2126beaff539b"><td class="memItemLeft" align="right" valign="top"><a id="a3c8300881ab2953e67e2126beaff539b"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Value</b> = <a class="el" href="class_a_z_std_1_1variant.html">AZStd::variant</a>&lt; <a class="el" href="struct_a_z_std_1_1monostate.html">AZStd::monostate</a>, bool, double, <a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_float_range.html">FloatRange</a>, s64, <a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_integer_range.html">IntegerRange</a>, <a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_percentage.html">Percentage</a>, <a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_percentage_range.html">PercentageRange</a>, <a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_byte_size.html">ByteSize</a>, <a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_byte_size_range.html">ByteSizeRange</a>, <a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_time.html">Time</a>, <a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_time_range.html">TimeRange</a>, <a class="el" href="struct_a_z_1_1_i_o_1_1_statistic_1_1_bytes_per_second.html">BytesPerSecond</a>, <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> &gt;</td></tr>
+<tr class="separator:a3c8300881ab2953e67e2126beaff539b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4f109a22d6b1f5787c5cc8a1e2696f4a"><td class="memItemLeft" align="right" valign="top"><a id="a4f109a22d6b1f5787c5cc8a1e2696f4a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Statistic</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a> &amp;rhs)</td></tr>
-<tr class="separator:a4f109a22d6b1f5787c5cc8a1e2696f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af191cd73edd63c143b3fa851f4695661"><td class="memItemLeft" align="right" valign="top"><a id="af191cd73edd63c143b3fa851f4695661"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Statistic</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a> &amp;&amp;rhs)</td></tr>
-<tr class="separator:af191cd73edd63c143b3fa851f4695661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8cf0c2354adadecf5b3df6f7981614a"><td class="memItemLeft" align="right" valign="top"><a id="af8cf0c2354adadecf5b3df6f7981614a"></a>
-<a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a> &amp;rhs)</td></tr>
-<tr class="separator:af8cf0c2354adadecf5b3df6f7981614a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4418cec33024775b0ae76830371f9c0"><td class="memItemLeft" align="right" valign="top"><a id="ae4418cec33024775b0ae76830371f9c0"></a>
-<a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a> &amp;&amp;rhs)</td></tr>
-<tr class="separator:ae4418cec33024775b0ae76830371f9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a482485905eb39dbd5d2073c16273da7a"><td class="memItemLeft" align="right" valign="top"><a id="a482485905eb39dbd5d2073c16273da7a"></a>
 <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetOwner</b> () const</td></tr>
 <tr class="separator:a482485905eb39dbd5d2073c16273da7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a185d6f76c562cb21e0689640f3261c08"><td class="memItemLeft" align="right" valign="top"><a id="a185d6f76c562cb21e0689640f3261c08"></a>
 <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
 <tr class="separator:a185d6f76c562cb21e0689640f3261c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfb25ad3778127ea96bc1c33c080dcab"><td class="memItemLeft" align="right" valign="top"><a id="acfb25ad3778127ea96bc1c33c080dcab"></a>
-Type&#160;</td><td class="memItemRight" valign="bottom"><b>GetType</b> () const</td></tr>
-<tr class="separator:acfb25ad3778127ea96bc1c33c080dcab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b2deceeb25a2d1b357eb5b4eea38010"><td class="memItemLeft" align="right" valign="top"><a id="a9b2deceeb25a2d1b357eb5b4eea38010"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>GetFloatValue</b> () const</td></tr>
-<tr class="separator:a9b2deceeb25a2d1b357eb5b4eea38010"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a653ad016e833ea3edba45d139a237560"><td class="memItemLeft" align="right" valign="top"><a id="a653ad016e833ea3edba45d139a237560"></a>
-s64&#160;</td><td class="memItemRight" valign="bottom"><b>GetIntegerValue</b> () const</td></tr>
-<tr class="separator:a653ad016e833ea3edba45d139a237560"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06d26811c92534c89d81aeeaee245ff7"><td class="memItemLeft" align="right" valign="top"><a id="a06d26811c92534c89d81aeeaee245ff7"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>GetPercentage</b> () const</td></tr>
-<tr class="separator:a06d26811c92534c89d81aeeaee245ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217f765bfe5b525e4fcffc776ee925e4"><td class="memItemLeft" align="right" valign="top"><a id="a217f765bfe5b525e4fcffc776ee925e4"></a>
+<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescription</b> () const</td></tr>
+<tr class="separator:a217f765bfe5b525e4fcffc776ee925e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c40a133eaa149eff1a495f4ad32c03"><td class="memItemLeft" align="right" valign="top"><a id="af6c40a133eaa149eff1a495f4ad32c03"></a>
+const <a class="el" href="class_a_z_std_1_1variant.html">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetValue</b> () const</td></tr>
+<tr class="separator:af6c40a133eaa149eff1a495f4ad32c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9075c0471f472ec3fa96bf8e71a6dfd9"><td class="memItemLeft" align="right" valign="top"><a id="a9075c0471f472ec3fa96bf8e71a6dfd9"></a>
+GraphType&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphType</b> () const</td></tr>
+<tr class="separator:a9075c0471f472ec3fa96bf8e71a6dfd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af145e05c22fa414cb1e36ecacac61a30"><td class="memItemLeft" align="right" valign="top"><a id="af145e05c22fa414cb1e36ecacac61a30"></a>
-static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFloat</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, double value)</td></tr>
-<tr class="separator:af145e05c22fa414cb1e36ecacac61a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaa2df467b5fa6745b89ba9d3726b2a6"><td class="memItemLeft" align="right" valign="top"><a id="aeaa2df467b5fa6745b89ba9d3726b2a6"></a>
-static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateInteger</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, s64 value)</td></tr>
-<tr class="separator:aeaa2df467b5fa6745b89ba9d3726b2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac826b9a0c2bfbdf39615354f5ceb9877"><td class="memItemLeft" align="right" valign="top"><a id="ac826b9a0c2bfbdf39615354f5ceb9877"></a>
-static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreatePercentage</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, double value)</td></tr>
-<tr class="separator:ac826b9a0c2bfbdf39615354f5ceb9877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f9a96f180c3caab0d6f31cb66c83c5"><td class="memItemLeft" align="right" valign="top"><a id="a04f9a96f180c3caab0d6f31cb66c83c5"></a>
+static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateBoolean</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, bool value, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> description=&quot;&quot;, GraphType graphType=GraphType::Histogram)</td></tr>
+<tr class="separator:a04f9a96f180c3caab0d6f31cb66c83c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c62128a80ec4f75032f6695e8785f8"><td class="memItemLeft" align="right" valign="top"><a id="af1c62128a80ec4f75032f6695e8785f8"></a>
+static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFloat</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, double value, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> description=&quot;&quot;, GraphType graphType=GraphType::Lines)</td></tr>
+<tr class="separator:af1c62128a80ec4f75032f6695e8785f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19093125a1e8668202e78b2483c0ff20"><td class="memItemLeft" align="right" valign="top"><a id="a19093125a1e8668202e78b2483c0ff20"></a>
+static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFloatRange</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, double value, double min, double max, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> description=&quot;&quot;, GraphType graphType=GraphType::Lines)</td></tr>
+<tr class="separator:a19093125a1e8668202e78b2483c0ff20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d8986d7390196be99227e385dbfd66"><td class="memItemLeft" align="right" valign="top"><a id="a45d8986d7390196be99227e385dbfd66"></a>
+static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateInteger</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, s64 value, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> description=&quot;&quot;, GraphType graphType=GraphType::Lines)</td></tr>
+<tr class="separator:a45d8986d7390196be99227e385dbfd66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac88c825f0bb99cdf5e6013982546b432"><td class="memItemLeft" align="right" valign="top"><a id="ac88c825f0bb99cdf5e6013982546b432"></a>
+static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateIntegerRange</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, s64 value, s64 min, s64 max, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> description=&quot;&quot;, GraphType graphType=GraphType::Lines)</td></tr>
+<tr class="separator:ac88c825f0bb99cdf5e6013982546b432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3959a3c5720efa5a86fc95ed0db088c6"><td class="memItemLeft" align="right" valign="top"><a id="a3959a3c5720efa5a86fc95ed0db088c6"></a>
+static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreatePercentage</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, double value, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> description=&quot;&quot;, GraphType graphType=GraphType::Lines)</td></tr>
+<tr class="separator:a3959a3c5720efa5a86fc95ed0db088c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77c53b7a703195dbabf71ca4859dffb7"><td class="memItemLeft" align="right" valign="top"><a id="a77c53b7a703195dbabf71ca4859dffb7"></a>
+static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreatePercentageRange</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, double value, double min, double max, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> description=&quot;&quot;, GraphType graphType=GraphType::Lines)</td></tr>
+<tr class="separator:a77c53b7a703195dbabf71ca4859dffb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c16c8a32315caedd33be6e4995f391"><td class="memItemLeft" align="right" valign="top"><a id="a47c16c8a32315caedd33be6e4995f391"></a>
+static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateByteSize</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, u64 value, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> description=&quot;&quot;, GraphType graphType=GraphType::Histogram)</td></tr>
+<tr class="separator:a47c16c8a32315caedd33be6e4995f391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3de820f24ada3012731a08b62a7b46"><td class="memItemLeft" align="right" valign="top"><a id="a6e3de820f24ada3012731a08b62a7b46"></a>
+static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateByteSizeRange</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, u64 value, u64 min, u64 max, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> description=&quot;&quot;, GraphType graphType=GraphType::Histogram)</td></tr>
+<tr class="separator:a6e3de820f24ada3012731a08b62a7b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4cc77af3ff88243ea725a90a616d1df"><td class="memItemLeft" align="right" valign="top"><a id="aa4cc77af3ff88243ea725a90a616d1df"></a>
+static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateTime</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, <a class="el" href="class_a_z_std_1_1chrono_1_1duration.html">TimeValue</a> value, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> description=&quot;&quot;, GraphType graphType=GraphType::Lines)</td></tr>
+<tr class="separator:aa4cc77af3ff88243ea725a90a616d1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75763f84a2a4ee212a1289272e0b7e2"><td class="memItemLeft" align="right" valign="top"><a id="aa75763f84a2a4ee212a1289272e0b7e2"></a>
+static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateTimeRange</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, <a class="el" href="class_a_z_std_1_1chrono_1_1duration.html">TimeValue</a> value, <a class="el" href="class_a_z_std_1_1chrono_1_1duration.html">TimeValue</a> min, <a class="el" href="class_a_z_std_1_1chrono_1_1duration.html">TimeValue</a> max, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> description=&quot;&quot;, GraphType graphType=GraphType::Lines)</td></tr>
+<tr class="separator:aa75763f84a2a4ee212a1289272e0b7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f0db8a2a67efdbd3600d7d905b2dfd"><td class="memItemLeft" align="right" valign="top"><a id="af9f0db8a2a67efdbd3600d7d905b2dfd"></a>
+static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateBytesPerSecond</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, double value, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> description=&quot;&quot;, GraphType graphType=GraphType::Histogram)</td></tr>
+<tr class="separator:af9f0db8a2a67efdbd3600d7d905b2dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2651edc299301c8af40023afaafded"><td class="memItemLeft" align="right" valign="top"><a id="a7e2651edc299301c8af40023afaafded"></a>
+static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreatePersistentString</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> value, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> description=&quot;&quot;)</td></tr>
+<tr class="separator:a7e2651edc299301c8af40023afaafded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa26b4d51ac77a3bf975338985b7b4e55"><td class="memItemLeft" align="right" valign="top"><a id="aa26b4d51ac77a3bf975338985b7b4e55"></a>
+static <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateReferenceString</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> value, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> description=&quot;&quot;)</td></tr>
+<tr class="separator:aa26b4d51ac77a3bf975338985b7b4e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f61184b040960d6d2640de58130e081"><td class="memItemLeft" align="right" valign="top"><a id="a9f61184b040960d6d2640de58130e081"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>PlotImmediate</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> owner, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, double value)</td></tr>
 <tr class="separator:a9f61184b040960d6d2640de58130e081"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,7 +163,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>PlotImmediate<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:48 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:32 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

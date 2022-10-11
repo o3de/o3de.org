@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -63,6 +63,10 @@ Public Types</h2></td></tr>
 <b>Decimal</b>
  }</td></tr>
 <tr class="separator:a633fc9f538207daa9070338994a49a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a437e3186593a5c0da846f36f68092a8a"><td class="memItemLeft" align="right" valign="top"><a id="a437e3186593a5c0da846f36f68092a8a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html#a437e3186593a5c0da846f36f68092a8a">FixedString</a> = <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">AZStd::fixed_string</a>&lt; MaxStringBuffer &gt;</td></tr>
+<tr class="memdesc:a437e3186593a5c0da846f36f68092a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">UUid size (includes terminal) + ":" + hex, subId. <br /></td></tr>
+<tr class="separator:a437e3186593a5c0da846f36f68092a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -98,6 +102,9 @@ template&lt;class StringType &gt; </td></tr>
 template&lt;class StringType &gt; </td></tr>
 <tr class="memitem:a51316ed88176a3f5aa20022879253d7b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ToString</b> (StringType &amp;result, SubIdDisplayType displayType=SubIdDisplayType::Hex) const</td></tr>
 <tr class="separator:a51316ed88176a3f5aa20022879253d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a664b2e59fc92fd09f349413bb26ce0c9"><td class="memItemLeft" align="right" valign="top"><a id="a664b2e59fc92fd09f349413bb26ce0c9"></a>
+<a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html#a437e3186593a5c0da846f36f68092a8a">FixedString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ToFixedString</b> () const</td></tr>
+<tr class="separator:a664b2e59fc92fd09f349413bb26ce0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -123,6 +130,9 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><b>m_padBytes</b> [s_maxMe
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:a3ee6786749d7058c601504538f127d6b"><td class="memItemLeft" align="right" valign="top"><a id="a3ee6786749d7058c601504538f127d6b"></a>
+static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>MaxStringBuffer</b> = AZ::Uuid::MaxStringBuffer + 9</td></tr>
+<tr class="separator:a3ee6786749d7058c601504538f127d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2084fe472772136bb293b9c37a0bdb8"><td class="memItemLeft" align="right" valign="top"><a id="ad2084fe472772136bb293b9c37a0bdb8"></a>
 static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>s_maxMemberAlignment</b> = alignof(decltype(m_guid))</td></tr>
 <tr class="separator:ad2084fe472772136bb293b9c37a0bdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,7 +175,7 @@ static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>s_
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:47 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:31 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

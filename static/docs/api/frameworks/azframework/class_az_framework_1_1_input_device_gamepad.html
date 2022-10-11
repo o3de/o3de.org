@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -47,6 +47,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
@@ -82,6 +83,13 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the input channel ids that identify game-pad analog trigger input.  <a href="struct_az_framework_1_1_input_device_gamepad_1_1_trigger.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:adc7e25a72b1038bb0093a3a19016144f"><td class="memItemLeft" align="right" valign="top"><a id="adc7e25a72b1038bb0093a3a19016144f"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#adc7e25a72b1038bb0093a3a19016144f">ImplementationFactory</a> = <a class="el" href="class_az_framework_1_1_input_device_gamepad_1_1_implementation.html">Implementation</a> *(<a class="el" href="class_az_framework_1_1_input_device_gamepad.html">InputDeviceGamepad</a> &amp;)</td></tr>
+<tr class="memdesc:adc7e25a72b1038bb0093a3a19016144f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for the function type used to create a custom implementation for this input device. <br /></td></tr>
+<tr class="separator:adc7e25a72b1038bb0093a3a19016144f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a748b356aa7a6f5055c6b6aa76170a81e"><td class="memItemLeft" align="right" valign="top"><a id="a748b356aa7a6f5055c6b6aa76170a81e"></a>
@@ -96,6 +104,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa1f76d8fa11c248b8c81492cc1823824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15b52e92cf622ddec1a5e16885b3f2c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#a15b52e92cf622ddec1a5e16885b3f2c9">InputDeviceGamepad</a> (AZ::u32 index)</td></tr>
 <tr class="separator:a15b52e92cf622ddec1a5e16885b3f2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf51f2dea24acd677b3d3beca6997dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#a5cf51f2dea24acd677b3d3beca6997dc">InputDeviceGamepad</a> (const <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a> &amp;inputDeviceId, <a class="el" href="class_az_framework_1_1_input_device_gamepad.html#adc7e25a72b1038bb0093a3a19016144f">ImplementationFactory</a> implementationFactory=&amp;<a class="el" href="class_az_framework_1_1_input_device_gamepad_1_1_implementation.html#a95d23876aa6acb7f174ae2a28a6040cd">Implementation::Create</a>)</td></tr>
+<tr class="separator:a5cf51f2dea24acd677b3d3beca6997dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a780e5313275afcfca954ad069ca8ebd5"><td class="memItemLeft" align="right" valign="top"><a id="a780e5313275afcfca954ad069ca8ebd5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_az_framework_1_1_input_device_gamepad.html">InputDeviceGamepad</a>)</td></tr>
 <tr class="separator:a780e5313275afcfca954ad069ca8ebd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,10 +194,10 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:aef0cccc9c8db32fd9860ce4c2fae466f"><td class="memItemLeft" align="right" valign="top"><a id="aef0cccc9c8db32fd9860ce4c2fae466f"></a>
-static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#aef0cccc9c8db32fd9860ce4c2fae466f">Name</a></td></tr>
-<tr class="memdesc:aef0cccc9c8db32fd9860ce4c2fae466f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name used to identify any game-pad input device. <br /></td></tr>
-<tr class="separator:aef0cccc9c8db32fd9860ce4c2fae466f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad89e718f53ee5173b88522973f532924"><td class="memItemLeft" align="right" valign="top"><a id="ad89e718f53ee5173b88522973f532924"></a>
+static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#ad89e718f53ee5173b88522973f532924">Name</a> {&quot;gamepad&quot;}</td></tr>
+<tr class="memdesc:ad89e718f53ee5173b88522973f532924"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name used to identify any game-pad input device. <br /></td></tr>
+<tr class="separator:ad89e718f53ee5173b88522973f532924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -233,20 +243,20 @@ ThumbStickAxis2DChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom
 ThumbStickDirectionChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#abf017511d36587730e746b8e6d6d7fad">m_thumbStickDirectionChannelsById</a></td></tr>
 <tr class="memdesc:abf017511d36587730e746b8e6d6d7fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">All thumb-stick direction channels by id. <br /></td></tr>
 <tr class="separator:abf017511d36587730e746b8e6d6d7fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ed019a67ed5f163e0e5c6c6fdd833fa"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#a3ed019a67ed5f163e0e5c6c6fdd833fa">IdForIndex0</a></td></tr>
-<tr class="separator:a3ed019a67ed5f163e0e5c6c6fdd833fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a877cd9d94bb4efc45be7c55500f88728"><td class="memItemLeft" align="right" valign="top"><a id="a877cd9d94bb4efc45be7c55500f88728"></a>
-static const <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IdForIndex1</b></td></tr>
-<tr class="separator:a877cd9d94bb4efc45be7c55500f88728"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83c4b695a424e86ccab51c6151b0c8e4"><td class="memItemLeft" align="right" valign="top"><a id="a83c4b695a424e86ccab51c6151b0c8e4"></a>
-static const <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IdForIndex2</b></td></tr>
-<tr class="separator:a83c4b695a424e86ccab51c6151b0c8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dff66f03506cd9a7162b42723f63765"><td class="memItemLeft" align="right" valign="top"><a id="a4dff66f03506cd9a7162b42723f63765"></a>
-static const <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IdForIndex3</b></td></tr>
-<tr class="separator:a4dff66f03506cd9a7162b42723f63765"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a46b06b63fb189d93df39d326b2256c"><td class="memItemLeft" align="right" valign="top"><a id="a6a46b06b63fb189d93df39d326b2256c"></a>
-static const <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IdForIndexN</b> (AZ::u32 n)</td></tr>
-<tr class="separator:a6a46b06b63fb189d93df39d326b2256c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcc11bf9312bb57f39e242b201b70071"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#abcc11bf9312bb57f39e242b201b70071">IdForIndex0</a> {<a class="el" href="class_az_framework_1_1_input_device_gamepad.html#ad89e718f53ee5173b88522973f532924">Name</a>, 0}</td></tr>
+<tr class="separator:abcc11bf9312bb57f39e242b201b70071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110a6b61d6a22b693b31af05c968ad6d"><td class="memItemLeft" align="right" valign="top"><a id="a110a6b61d6a22b693b31af05c968ad6d"></a>
+static constexpr <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IdForIndex1</b> {<a class="el" href="class_az_framework_1_1_input_device_gamepad.html#ad89e718f53ee5173b88522973f532924">Name</a>, 1}</td></tr>
+<tr class="separator:a110a6b61d6a22b693b31af05c968ad6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cde65876bfbc9d0c39f7307dab0367a"><td class="memItemLeft" align="right" valign="top"><a id="a0cde65876bfbc9d0c39f7307dab0367a"></a>
+static constexpr <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IdForIndex2</b> {<a class="el" href="class_az_framework_1_1_input_device_gamepad.html#ad89e718f53ee5173b88522973f532924">Name</a>, 2}</td></tr>
+<tr class="separator:a0cde65876bfbc9d0c39f7307dab0367a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5232db8f6a73fe1cdc4d8ff5d7b5b8"><td class="memItemLeft" align="right" valign="top"><a id="a9c5232db8f6a73fe1cdc4d8ff5d7b5b8"></a>
+static constexpr <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IdForIndex3</b> {<a class="el" href="class_az_framework_1_1_input_device_gamepad.html#ad89e718f53ee5173b88522973f532924">Name</a>, 3}</td></tr>
+<tr class="separator:a9c5232db8f6a73fe1cdc4d8ff5d7b5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21723f3ef391addff317ce581a66919b"><td class="memItemLeft" align="right" valign="top"><a id="a21723f3ef391addff317ce581a66919b"></a>
+static constexpr <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IdForIndexN</b> (AZ::u32 n)</td></tr>
+<tr class="separator:a21723f3ef391addff317ce581a66919b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -296,7 +306,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a15b52e92cf622ddec1a5e16885b3f2c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15b52e92cf622ddec1a5e16885b3f2c9">&#9670;&nbsp;</a></span>InputDeviceGamepad()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b52e92cf622ddec1a5e16885b3f2c9">&#9670;&nbsp;</a></span>InputDeviceGamepad() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -321,6 +331,49 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Constructor </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Index of the game-pad device </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5cf51f2dea24acd677b3d3beca6997dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf51f2dea24acd677b3d3beca6997dc">&#9670;&nbsp;</a></span>InputDeviceGamepad() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AzFramework::InputDeviceGamepad::InputDeviceGamepad </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a> &amp;&#160;</td>
+          <td class="paramname"><em>inputDeviceId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#adc7e25a72b1038bb0093a3a19016144f">ImplementationFactory</a>&#160;</td>
+          <td class="paramname"><em>implementationFactory</em> = <code>&amp;<a class="el" href="class_az_framework_1_1_input_device_gamepad_1_1_implementation.html#a95d23876aa6acb7f174ae2a28a6040cd">Implementation::Create</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputDeviceId</td><td>Id of the input device </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">implementationFactory</td><td>Optional override of the default <a class="el" href="class_az_framework_1_1_input_device_gamepad_1_1_implementation.html#a95d23876aa6acb7f174ae2a28a6040cd">Implementation::Create</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -420,8 +473,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3ed019a67ed5f163e0e5c6c6fdd833fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ed019a67ed5f163e0e5c6c6fdd833fa">&#9670;&nbsp;</a></span>IdForIndex0</h2>
+<a id="abcc11bf9312bb57f39e242b201b70071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcc11bf9312bb57f39e242b201b70071">&#9670;&nbsp;</a></span>IdForIndex0</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -430,12 +483,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a> AzFramework::InputDeviceGamepad::IdForIndex0</td>
+          <td class="memname">constexpr <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a> AzFramework::InputDeviceGamepad::IdForIndex0 {<a class="el" href="class_az_framework_1_1_input_device_gamepad.html#ad89e718f53ee5173b88522973f532924">Name</a>, 0}</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -449,7 +502,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:21 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:12 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

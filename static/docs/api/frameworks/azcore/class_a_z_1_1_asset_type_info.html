@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -95,6 +95,15 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>EventProcessingPolic
 <tr class="memitem:ae1a111142fb7527a57987841927b4113 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplParams" colspan="2">template&lt;typename DispatchMutex , bool IsLocklessDispatch&gt; </td></tr>
 <tr class="memitem:ae1a111142fb7527a57987841927b4113 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#ae1a111142fb7527a57987841927b4113">DispatchLockGuard</a> = AZStd::conditional_t&lt; IsLocklessDispatch, AZ::Internal::NullLockGuard&lt; DispatchMutex &gt;, <a class="el" href="class_a_z_std_1_1scoped__lock.html">AZStd::scoped_lock</a>&lt; DispatchMutex &gt; &gt;</td></tr>
 <tr class="separator:ae1a111142fb7527a57987841927b4113 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54035b6bc2b36202fd17aa9a72d6685c inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplParams" colspan="2">template&lt;typename ContextMutex &gt; </td></tr>
+<tr class="memitem:a54035b6bc2b36202fd17aa9a72d6685c inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a54035b6bc2b36202fd17aa9a72d6685c">ConnectLockGuard</a> = AZStd::conditional_t&lt; AZStd::is_same_v&lt; ContextMutex, <a class="el" href="struct_a_z_1_1_null_mutex.html">AZ::NullMutex</a> &gt;, AZ::Internal::NullLockGuard&lt; ContextMutex &gt;, <a class="el" href="class_a_z_std_1_1unique__lock.html">AZStd::unique_lock</a>&lt; ContextMutex &gt; &gt;</td></tr>
+<tr class="separator:a54035b6bc2b36202fd17aa9a72d6685c inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6912736611ad7aeec68dec2cd0dcc312 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplParams" colspan="2">template&lt;typename ContextMutex &gt; </td></tr>
+<tr class="memitem:a6912736611ad7aeec68dec2cd0dcc312 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a6912736611ad7aeec68dec2cd0dcc312">BindLockGuard</a> = <a class="el" href="class_a_z_std_1_1scoped__lock.html">AZStd::scoped_lock</a>&lt; ContextMutex &gt;</td></tr>
+<tr class="separator:a6912736611ad7aeec68dec2cd0dcc312 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1b22884b906be6714741ffb4f00f5f inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplParams" colspan="2">template&lt;typename ContextMutex &gt; </td></tr>
+<tr class="memitem:a7f1b22884b906be6714741ffb4f00f5f inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a7f1b22884b906be6714741ffb4f00f5f">CallstackTrackerLockGuard</a> = AZStd::conditional_t&lt; AZStd::is_same_v&lt; ContextMutex, <a class="el" href="struct_a_z_1_1_null_mutex.html">AZ::NullMutex</a> &gt;, AZ::Internal::NullLockGuard&lt; ContextMutex &gt;, <a class="el" href="class_a_z_std_1_1unique__lock.html">AZStd::unique_lock</a>&lt; ContextMutex &gt; &gt;</td></tr>
+<tr class="separator:a7f1b22884b906be6714741ffb4f00f5f inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -122,14 +131,25 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a246f3c6a2ab4ab4b1a9a2556f83acfb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4955bd84b17e318a80b97deefc4a0d74"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_asset_type_info.html#a4955bd84b17e318a80b97deefc4a0d74">CanCreateComponent</a> ([[maybe_unused]] const <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &amp;assetId) const</td></tr>
 <tr class="separator:a4955bd84b17e318a80b97deefc4a0d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a344800ab0e687028b1cb62e830bdeffb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_asset_type_info.html#a344800ab0e687028b1cb62e830bdeffb">HasConflictingProducts</a> ([[maybe_unused]] const <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Data::AssetType</a> &gt; &amp;productAssetTypes) const</td></tr>
-<tr class="separator:a344800ab0e687028b1cb62e830bdeffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6577ab5986d4f65298135daba18430b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_asset_type_info.html#ae6577ab5986d4f65298135daba18430b">GetAssetTypeDragAndDropCreationPriority</a> () const</td></tr>
+<tr class="separator:ae6577ab5986d4f65298135daba18430b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a2a0c581902a769ef2e6dee40266c007a"><td class="memItemLeft" align="right" valign="top"><a id="a2a0c581902a769ef2e6dee40266c007a"></a>
 static const <a class="el" href="namespace_a_z.html#abd62fbe2e48ab376e0cce1a0ff0ea873">AZ::EBusAddressPolicy</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddressPolicy</b> = <a class="el" href="namespace_a_z.html#abd62fbe2e48ab376e0cce1a0ff0ea873adb4f7ff88b3cc15c6c585c284600a3dd">AZ::EBusAddressPolicy::ById</a></td></tr>
 <tr class="separator:a2a0c581902a769ef2e6dee40266c007a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829a1a2ee0942ffeea989f0291c90d23"><td class="memItemLeft" align="right" valign="top"><a id="a829a1a2ee0942ffeea989f0291c90d23"></a>
+static constexpr const int&#160;</td><td class="memItemRight" valign="bottom"><b>s_LowPriority</b> = -10</td></tr>
+<tr class="separator:a829a1a2ee0942ffeea989f0291c90d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ca308ff8bbd6082850176d4c5ac7c6"><td class="memItemLeft" align="right" valign="top"><a id="a77ca308ff8bbd6082850176d4c5ac7c6"></a>
+static constexpr const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_asset_type_info.html#a77ca308ff8bbd6082850176d4c5ac7c6">s_NormalPriority</a> = 0</td></tr>
+<tr class="memdesc:a77ca308ff8bbd6082850176d4c5ac7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">use when you want your type to be the last resort <br /></td></tr>
+<tr class="separator:a77ca308ff8bbd6082850176d4c5ac7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3427bbcbec2fef6eb7a013df14b1630"><td class="memItemLeft" align="right" valign="top"><a id="ad3427bbcbec2fef6eb7a013df14b1630"></a>
+static constexpr const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_asset_type_info.html#ad3427bbcbec2fef6eb7a013df14b1630">s_HighPriority</a> = 10</td></tr>
+<tr class="memdesc:ad3427bbcbec2fef6eb7a013df14b1630"><td class="mdescLeft">&#160;</td><td class="mdescRight">the default priority <br /></td></tr>
+<tr class="separator:ad3427bbcbec2fef6eb7a013df14b1630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_struct_a_z_1_1_e_bus_traits')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="struct_a_z_1_1_e_bus_traits.html">AZ::EBusTraits</a></td></tr>
 <tr class="memitem:a5d46cb1c8cb6e0c4642175b610ed8163 inherit pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_a_z.html#a32ca3a3605e97c0cd07dbfa805bf3e82">EBusHandlerPolicy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a5d46cb1c8cb6e0c4642175b610ed8163">HandlerPolicy</a> = <a class="el" href="namespace_a_z.html#a32ca3a3605e97c0cd07dbfa805bf3e82aa0bf169f2539e893e00d7b1296bc4d8e">EBusHandlerPolicy::Multiple</a></td></tr>
 <tr class="separator:a5d46cb1c8cb6e0c4642175b610ed8163 inherit pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,6 +200,32 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ae6577ab5986d4f65298135daba18430b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6577ab5986d4f65298135daba18430b">&#9670;&nbsp;</a></span>GetAssetTypeDragAndDropCreationPriority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int AZ::AssetTypeInfo::GetAssetTypeDragAndDropCreationPriority </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Used to assign a sort order to assets in the case where the user drags and drops a source file (like a FBX, but others too) which result in many different products of different types. Creating entities for each will cause a jumbled mess, so instead, the products will be sorted using this value as a hint and the first one in the resulting list will be picked to represent the drop operation. Highest number wins. In the case of ties, the list will also be sorted alphabetically and give a higher weight to assets with the same name as the source file that produced them. </p>
+
+</div>
+</div>
 <a id="acbf6f245d8bbd6bd8c7f1885955ebbec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acbf6f245d8bbd6bd8c7f1885955ebbec">&#9670;&nbsp;</a></span>GetComponentTypeId()</h2>
 
@@ -206,45 +252,13 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a344800ab0e687028b1cb62e830bdeffb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a344800ab0e687028b1cb62e830bdeffb">&#9670;&nbsp;</a></span>HasConflictingProducts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool AZ::AssetTypeInfo::HasConflictingProducts </td>
-          <td>(</td>
-          <td class="paramtype">[[maybe_unused] ] const <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Data::AssetType</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>productAssetTypes</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Determines if other products conflict with the given one when multiple are generated from a source asset. This will be called before attempting to create a component from an asset (drag&amp;drop, etc) You can use this to filter by conflicting product types or in case you want to skip for UX reasons. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">productAssetTypes</td><td>Asset types of all generated products, including the one for our given type in this bus. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Asset/AssetTypeInfoBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

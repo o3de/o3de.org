@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -57,7 +57,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits Component, Handler, Handler, Handler, Registrar, and Handler.</p>
+<p>Inherits Component, Handler, Handler, Registrar, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -85,9 +85,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetTickOrder</b> () ov
 <tr class="memitem:a3d7155007ada5b22a5f2b059e1540951"><td class="memItemLeft" align="right" valign="top"><a id="a3d7155007ada5b22a5f2b059e1540951"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSystemTick</b> () override</td></tr>
 <tr class="separator:a3d7155007ada5b22a5f2b059e1540951"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea87b4145c2404ff791e617c19454e6a"><td class="memItemLeft" align="right" valign="top"><a id="aea87b4145c2404ff791e617c19454e6a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCatalogLoaded</b> (const char *catalogFile) override</td></tr>
-<tr class="separator:aea87b4145c2404ff791e617c19454e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd1e7e237845415fab622309a06f3a9d"><td class="memItemLeft" align="right" valign="top"><a id="afd1e7e237845415fab622309a06f3a9d"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>AssignRootSpawnable</b> (AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; rootSpawnable) override</td></tr>
 <tr class="separator:afd1e7e237845415fab622309a06f3a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,6 +97,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessSpawnableQueue
 <tr class="memitem:a6f5b3923fe1fa65834ed2cd6fb21f292"><td class="memItemLeft" align="right" valign="top"><a id="a6f5b3923fe1fa65834ed2cd6fb21f292"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRootSpawnableAssigned</b> (AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; rootSpawnable, uint32_t generation) override</td></tr>
 <tr class="separator:a6f5b3923fe1fa65834ed2cd6fb21f292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e5f85dac323800506924a48978dfe4"><td class="memItemLeft" align="right" valign="top"><a id="ab1e5f85dac323800506924a48978dfe4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRootSpawnableReady</b> (AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; rootSpawnable, uint32_t generation) override</td></tr>
+<tr class="separator:ab1e5f85dac323800506924a48978dfe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeed79a2aaae865c04a8b9544398a740f"><td class="memItemLeft" align="right" valign="top"><a id="aeed79a2aaae865c04a8b9544398a740f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRootSpawnableReleased</b> (uint32_t generation) override</td></tr>
 <tr class="separator:aeed79a2aaae865c04a8b9544398a740f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,9 +154,9 @@ AZ::SettingsRegistryInterface::NotifyEventHandler&#160;</td><td class="memItemRi
 <tr class="memitem:aa186de705280a58a2e6a820264ceca3c"><td class="memItemLeft" align="right" valign="top"><a id="aa186de705280a58a2e6a820264ceca3c"></a>
 AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootSpawnableId</b></td></tr>
 <tr class="separator:aa186de705280a58a2e6a820264ceca3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a596ca736bbf232fd2ac23a7ba15a0ef6"><td class="memItemLeft" align="right" valign="top"><a id="a596ca736bbf232fd2ac23a7ba15a0ef6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_catalogAvailable</b> { false }</td></tr>
-<tr class="separator:a596ca736bbf232fd2ac23a7ba15a0ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ccc50cee12f37ba19f26da4afaa9e34"><td class="memItemLeft" align="right" valign="top"><a id="a9ccc50cee12f37ba19f26da4afaa9e34"></a>
+AZ::SettingsRegistryInterface::NotifyEventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>m_criticalAssetsHandler</b></td></tr>
+<tr class="separator:a9ccc50cee12f37ba19f26da4afaa9e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Spawnable/SpawnableSystemComponent.h</li>
@@ -164,7 +164,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_catalogAvailable</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:22 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:13 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

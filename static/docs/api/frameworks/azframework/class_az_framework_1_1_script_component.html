@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -58,7 +58,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits Component, and Handler.</p>
+<p>Inherits Component.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -108,29 +108,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> () overr
 <tr class="memitem:ad8a7bfeab0d4005681c82d7dad9f57b0"><td class="memItemLeft" align="right" valign="top"><a id="ad8a7bfeab0d4005681c82d7dad9f57b0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () override</td></tr>
 <tr class="separator:ad8a7bfeab0d4005681c82d7dad9f57b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4350ac15908e98aa610017c050cbd822"><td class="memItemLeft" align="right" valign="top"><a id="a4350ac15908e98aa610017c050cbd822"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetReady</b> (AZ::Data::Asset&lt; AZ::Data::AssetData &gt; asset) override</td></tr>
-<tr class="separator:a4350ac15908e98aa610017c050cbd822"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab478d43877e1f8de39140a0ea7cf40ca"><td class="memItemLeft" align="right" valign="top"><a id="ab478d43877e1f8de39140a0ea7cf40ca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetReloaded</b> (AZ::Data::Asset&lt; AZ::Data::AssetData &gt; asset) override</td></tr>
-<tr class="separator:ab478d43877e1f8de39140a0ea7cf40ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab41a52c7a812c3cd981ccdbc14e1dbaf"><td class="memItemLeft" align="right" valign="top"><a id="ab41a52c7a812c3cd981ccdbc14e1dbaf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_script_component.html#ab41a52c7a812c3cd981ccdbc14e1dbaf">LoadScript</a> ()</td></tr>
-<tr class="memdesc:ab41a52c7a812c3cd981ccdbc14e1dbaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load script (unless already by other instances) and creates the script instance into the VM. <br /></td></tr>
-<tr class="separator:ab41a52c7a812c3cd981ccdbc14e1dbaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bab670f3e14f202626f077b70898f2d"><td class="memItemLeft" align="right" valign="top"><a id="a9bab670f3e14f202626f077b70898f2d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_script_component.html#a9bab670f3e14f202626f077b70898f2d">UnloadScript</a> ()</td></tr>
-<tr class="memdesc:a9bab670f3e14f202626f077b70898f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the script instance and unloads the script (unless needed by other instances) <br /></td></tr>
-<tr class="separator:a9bab670f3e14f202626f077b70898f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b887c2de57c0581eecddad3d9fb59da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_script_component.html#a7b887c2de57c0581eecddad3d9fb59da">LoadInContext</a> ()</td></tr>
 <tr class="memdesc:a7b887c2de57c0581eecddad3d9fb59da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the script into the context/VM,.  <a href="class_az_framework_1_1_script_component.html#a7b887c2de57c0581eecddad3d9fb59da">More...</a><br /></td></tr>
 <tr class="separator:a7b887c2de57c0581eecddad3d9fb59da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2736ed8c496062672ca3d86eb3b02b8d"><td class="memItemLeft" align="right" valign="top"><a id="a2736ed8c496062672ca3d86eb3b02b8d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateEntityTable</b> ()</td></tr>
 <tr class="separator:a2736ed8c496062672ca3d86eb3b02b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab55ed38e7f6c399e3d4059d8e00c4544"><td class="memItemLeft" align="right" valign="top"><a id="ab55ed38e7f6c399e3d4059d8e00c4544"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyEntityTable</b> ()</td></tr>
-<tr class="separator:ab55ed38e7f6c399e3d4059d8e00c4544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85bf5414d5fc3ec34e28302edbfc232d"><td class="memItemLeft" align="right" valign="top"><a id="a85bf5414d5fc3ec34e28302edbfc232d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreatePropertyGroup</b> (const <a class="el" href="struct_az_framework_1_1_script_property_group.html">ScriptPropertyGroup</a> &amp;group, int propertyGroupTableIndex, int parentIndex, int metatableIndex, bool isRoot)</td></tr>
 <tr class="separator:a85bf5414d5fc3ec34e28302edbfc232d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,7 +182,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>AzToolsFramework::Co
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:22 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:12 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

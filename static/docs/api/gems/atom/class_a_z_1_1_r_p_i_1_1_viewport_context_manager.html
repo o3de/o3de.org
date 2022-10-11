@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -101,6 +101,8 @@ AZ::Name&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 ViewportContextPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_manager.html#a70cae1debede9fa9fb16258b7b9c80ed">GetDefaultViewportContext</a> () const override</td></tr>
 <tr class="memdesc:a70cae1debede9fa9fb16258b7b9c80ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ViewportConext which has default <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a> name. <br /></td></tr>
 <tr class="separator:a70cae1debede9fa9fb16258b7b9c80ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa511d2fec9d9cdaceec0421d164b4939"><td class="memItemLeft" align="right" valign="top">ViewportContextPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_manager.html#aa511d2fec9d9cdaceec0421d164b4939">GetViewportContextByScene</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *scene) const override</td></tr>
+<tr class="separator:aa511d2fec9d9cdaceec0421d164b4939"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html">AZ::RPI::ViewportContextRequestsInterface</a></td></tr>
 <tr class="memitem:a72e361ce149df87ff19eff20f4e350b6 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface"><td class="memItemLeft" align="right" valign="top"><a id="a72e361ce149df87ff19eff20f4e350b6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html">ViewportContextRequestsInterface</a>, &quot;{FDB82F02-7021-433B-AAD3-25B97EC69962}&quot;)</td></tr>
@@ -189,6 +191,35 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContext</b><
 <p>Gets the view currently registered to a given context, assuming the context exists. This will be null if there is no registered <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a> and no views have been pushed for this context name. </p>
 
 <p>Implements <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html#a3482fe981b65bd93289579dc713dacc6">AZ::RPI::ViewportContextRequestsInterface</a>.</p>
+
+</div>
+</div>
+<a id="aa511d2fec9d9cdaceec0421d164b4939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa511d2fec9d9cdaceec0421d164b4939">&#9670;&nbsp;</a></span>GetViewportContextByScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ViewportContextPtr AZ::RPI::ViewportContextManager::GetViewportContextByScene </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the registered <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a> with matching <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">RPI::Scene</a>, if any. This function will return the first result. </p>
+
+<p>Implements <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html#a5eae664b856cd1654f6d820635f91f28">AZ::RPI::ViewportContextRequestsInterface</a>.</p>
 
 </div>
 </div>
@@ -315,7 +346,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContext</b><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:30 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
