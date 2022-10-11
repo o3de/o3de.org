@@ -60,7 +60,7 @@ For this tutorial, you'll set the world size of the heightmap image so that one 
 
     i. Set the **First LOD distance** property to `256`. This sets the terrain's highest level of detail (LOD) display to a distance of 256 meters from the camera.
 
-    ii. Set the **CLOD Distance** property to `32`. This sets the blend distance between LODs to 32 meters. Larger values make the LOD transitions smoother, but the value should be less than 1/4 the **First LOD distance** value to ensure that there is enough distance to blend each LOD.
+    ii. Set the **CLOD Distance** property to `32`. This sets the blend distance between LODs to 32 meters. Larger values make the LOD transitions smoother, but the value should be less than 1/4 of the **First LOD distance** value to ensure that there is enough distance to blend each LOD.
 
 3. In the Camera entity, in the **Camera** component, set the **Far clip distance** property to a value that is greater than the resolution of the heightmap.
 
