@@ -269,6 +269,8 @@ No callouts for this release.
 
 - Some animations crash in the scene settings tool while a level isn't open. Ensure a level is opened before accessing the scene settings tool. [#12414](https://github.com/o3de/o3de/issues/12414)
 
+- On Linux, Animation Editor crashes the Editor inconsistently. [#12536](https://github.com/o3de/o3de/issues/12536)
+
 **UI**
 
 - In UI Editor, Curve Editor is not functional. [#11616](https://github.com/o3de/o3de/issues/11616)
