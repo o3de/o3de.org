@@ -74,7 +74,7 @@ type = "heading_font"
 [[menu.main]]
 name = "DOWNLOAD"
 url = "/download"
-weight = 1
+weight = 5
 
 # [[menu.main]]
 # name = "News"
@@ -84,12 +84,12 @@ weight = 1
 [[menu.main]]
 name = "GET STARTED"
 url = "/docs/welcome-guide"
-weight = 3
+weight = 4
 
 [[menu.main]]
 name = "COMMUNITY"
 url = "/community"
-weight = 4
+weight = 1
 identifier = "community"
 
 # [[menu.main]]
@@ -101,10 +101,10 @@ identifier = "community"
 [[menu.main]]
 name = "LEARN"
 url = "/docs"
-weight = 6
+weight = 3
 identifier = "docs"
 
 [[menu.main]]
 name = "CONTRIBUTE"
 url = "/contribute"
-weight = 7
+weight = 2

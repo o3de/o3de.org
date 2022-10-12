@@ -78,7 +78,8 @@ $o3de-mediumblue: #4B8DEF
 $o3de-lightblue: #A5C6F7
 $o3de-blue-highlight: #94D2FF
 $o3de-green: #58BD61
-$o3de-purple: #652d90
+$o3de-purple: #700AC7
+$o3de-aqua: #0AC1C7
 
 // layouts/section-nav.html typography
 
@@ -301,10 +302,22 @@ code
     padding: 8px 24px
     background-color: #222
 
+.navbar-dark .navbar-nav .navbar-item
+  &:last-child
+    margin-left: 25px
+    border: 1px solid $o3de-white
+    border-radius: 4px;
+    .nav-link
+      padding-right: 1.2rem;
+      padding-left: 1.2rem;
+
 .navbar-dark .navbar-nav .nav-link
-  color: $o3de-white
+  color: $o3de-white 
+  font-size: .9rem
+  line-height: 1
   &:hover 
     color: $o3de-blue-highlight
+
 
 .navbar-docs .navbar-nav .nav-link
   text-transform: uppercase
@@ -314,6 +327,7 @@ code
 .navbar-dark .navbar-nav li
   display: inline-block
   position: relative
+  margin-left: 20px
 
 .navbar-dark .navbar-nav li.active
   &:hover 
@@ -588,8 +602,11 @@ $width: '59vw';
     background-color: darken(#58BD61, 10%)
 
 .download-cta 
-  background-color: $o3de-blue
-  padding: 4px 16px
+  background-color: $o3de-aqua
+  font-size: .9rem
+  line-heigh: 1
+  padding: 12px 16px
+
   &:hover 
     background-color: darken(#1E71EB, 10%)
   
