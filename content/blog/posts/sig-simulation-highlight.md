@@ -17,7 +17,7 @@ This summer marked the Open 3D Engine’s first year, and with it, the celebrati
 
 #### What is your experience with open source, and what do you find appealing about it? 
 
-**Lars**: My experience with open source software began as a longtime user of applications such as GIMP as an alternative to Photoshop or Notepad++. I eventually started engaging with open-source projects through filing issues and starting conversations with the developers, which I found much more engaging than working with commercial software where usually you don’t have any way to interact with the developers unless you have a commercial support subscription. 
+**Lars**: My experience with open source software began as a longtime user of applications such as GIMP, as an alternative to Photoshop, or Notepad++. I eventually started engaging with open-source projects through filing issues and starting conversations with the developers, which I found much more engaging than working with commercial software where usually you don’t have any way to interact with the developers unless you have a commercial support subscription. 
 
 I then started developing my own software and submitted the first merge request for the launch of an open-source project, which was really encouraging because it was immediately picked up and received positive feedback from the developers. I was able to fix bugs for thousands of users around the globe.
 
