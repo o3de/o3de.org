@@ -17,8 +17,10 @@
 {{ end }}
 {{ $fontsUrl := printf "https://fonts.googleapis.com/css?family=%s" (delimit $fontSlice "|") }}
 @import url("{{ $fontsUrl }}")
-{{ end }}
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap');
+
+{{ end }}
 
 // Required
 @import "bootstrap/scss/functions" 
@@ -68,6 +70,7 @@
 // Variables 
 
 $font-family-headers: "Open Sans" 
+$font-family-Poppins: "Poppins", sans-serif;
 $o3de-black: #000
 $o3de-white: #fff
 $o3de-lightgray: #ddd
@@ -80,6 +83,7 @@ $o3de-blue-highlight: #94D2FF
 $o3de-green: #58BD61
 $o3de-purple: #700AC7
 $o3de-aqua: #0AC1C7
+
 
 // layouts/section-nav.html typography
 
@@ -315,6 +319,8 @@ code
   color: $o3de-white 
   font-size: .9rem
   line-height: 1
+  font-family: $font-family-Poppins
+  font-weight: 700
   &:hover 
     color: $o3de-blue-highlight
 
@@ -466,8 +472,9 @@ a.top-banner
   &:hover 
     background-color: darken($o3de-purple, 10%)
 
-  .container
+  .top-notification
     position: relative
+    padding: 0.5rem 1rem;
 
     @include media-breakpoint-down(lg)
       max-width: 100%
@@ -497,21 +504,31 @@ a.top-banner
         display: none
 
     .banner-title
-      font-weight: bold
+      font-weight: 700
+      font-family: $font-family-Poppins
+      font-size: .9rem
+      letter-spacing: 1.4px;
+
 
     .banner-subtitle
-      font-size: .8rem
+      font-size: .9rem
+      font-weight: 700
+      font-family: $font-family-Poppins
+      text-transform: uppercase
+      letter-spacing: 1.4px;
 
     .banner-call-to-action
       position: absolute
-      right: 15px
+      right: 66px
+      width: 130px;
       top: 50%
       transform: translate(0, -50%)
       background: #fff
       color: #652d90
-      font-weight: 600
       padding: 3px 8px
       font-size: .9rem
+      font-family: $font-family-Poppins
+      font-weight: 700
       border-radius: 4px
       transition: .2s ease
       border: 2px solid $o3de-white
@@ -604,8 +621,12 @@ $width: '59vw';
 .download-cta 
   background-color: $o3de-aqua
   font-size: .9rem
-  line-heigh: 1
-  padding: 12px 16px
+  line-height: 1
+  font-family: $font-family-Poppins
+  font-weight: 700
+  padding: 10px 16px
+  color: $o3de-black
+
 
   &:hover 
     background-color: darken(#1E71EB, 10%)
@@ -629,6 +650,14 @@ $width: '59vw';
   overflow: hidden
 
 .hero-slideshow
+  video
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  
 
   &::after
     content: ""
@@ -666,6 +695,17 @@ $width: '59vw';
 
 .hero-slideshow-foreground
   color: $o3de-white
+  h1
+    font-size: 3.8rem
+    font-family: $font-family-Poppins
+    font-weight: 800
+    @include media-breakpoint-down(md)
+      font-size: 2.2rem
+  h5
+    font-size: 1rem
+    font-family: $font-family-Poppins
+    font-weight: 500  
+
 
 // layouts/partial/download/hero.html
 
