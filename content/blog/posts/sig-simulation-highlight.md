@@ -7,7 +7,7 @@ blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: "/images/blog/sig-simulation/highlight.png"
 ---
 
-This summer marked the Open 3D Engine’s first year, and with it, the celebration of the Engine’s immense growth in members, code contributions, and much more. With this incredible momentum came a recent election of a new chair and co-chair for SIG Simulation, a vital part of the project, from [Huawei](https://www.huawei.com/). As a Premier member of the [Open 3D Foundation](https://o3d.foundation/) (O3DF) and a major contributor to the Engine, Huawei understands the importance of [SIG Simulation](https://github.com/o3de/sig-simulation) to the Open 3D Engine (O3DE). We sat down with new Chair and Co-Chair of SIG Simulation, Lars Gleim and Bo Gao, to discuss their insights into this SIG’s essential work and their hopes for O3DE’s future.
+This summer marked the Open 3D Engine’s first year, and with it, the celebration of the Engine’s immense growth in members, code contributions, and much more. With this incredible momentum came a recent election of a new chair and co-chair for Special Interest Group (SIG) Simulation, a vital part of the project, from [Huawei](https://www.huawei.com/). As a Premier member of the [Open 3D Foundation](https://o3d.foundation/) (O3DF) and a major contributor to the Engine, Huawei understands the importance of [SIG Simulation](https://github.com/o3de/sig-simulation) to the Open 3D Engine (O3DE). We sat down with new Chair and Co-Chair of SIG Simulation, Lars Gleim and Bo Gao, to discuss their insights into this SIG’s essential work and their hopes for O3DE’s future.
 
 #### Please tell us a little bit about yourself.
 
