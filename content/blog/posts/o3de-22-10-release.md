@@ -26,7 +26,7 @@ It’s now easier and smoother to work with entities and prefabs in the world us
 With this latest release, the Terrain system has moved from an experimental state into preview. Developers who are using O3DE in smaller or more enclosed environments to work on larger-scale worlds will see a significant improvement in performance, both for editing and runtime/rendering. The O3DE Terrain system can now scale to 16km x 16km worlds and beyond at high frame rates, or 256x performance.
 
 ##### **New Rendering Features**
-You can more easily generate [sky atmosphere]9https://github.com/o3de/o3de/pull/9649) and [stars](https://github.com/o3de/o3de/pull/8624) using built-in additions.
+You can more easily generate [sky atmosphere](https://github.com/o3de/o3de/pull/9649) and [stars](https://github.com/o3de/o3de/pull/8624) using built-in additions.
 For all you developers, artists and content creators around the globe, we’re looking forward to seeing the incredible experiences you bring to life using these new features. Share them with our [community](http://Discord.com/invite/o3de)—we’d love to showcase your creations on the [O3DE website](/).
 
 We want to thank our community for their collaboration in accelerating the Open 3D Engine’s maturity on the path to becoming the go-to choice for creators who want a modular approach to building immersive 3D experiences. It’s gratifying to see the results of their hard work, and we can’t wait to see what they accomplish next!
