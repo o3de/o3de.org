@@ -11,7 +11,7 @@ This summer marked the Open 3D Engine’s first year, and with it, the celebrati
 
 #### Please tell us a little bit about yourself.
 
-**Lars**: My name is Lars Gleim. I’m a senior research engineer at Huawei’s Munich Research Center in the cloud robotics lab, where we are currently building software for simulation and cloud-native operation of robots. I previously completed my Ph.D. studies in Computer Science at RWTH Aachen University, where I was building systems and architecture for data management, basically inter-organizational cloud edge scenarios. I’m also the O3DE SIG Simulation chair.
+**Lars**: My name is Lars Gleim. I’m a senior research engineer at Huawei’s Munich Research Center in the cloud robotics lab, where we are currently building software for simulation and cloud-native operation of robots. I previously completed my Ph.D. studies in Computer Science at RWTH Aachen University, where I was building systems and architecture for data management, basically inter-organizational, cloud-edge scenarios. I’m also the O3DE SIG Simulation Chair.
 
 **Bo**: My name is Bo Gao, and I’m currently a principal research engineer in Huawei’s 2012 Lab, responsible for the development of a physics engine. I have more than 10 years of experience in algorithm development and specialize in using mathematical methods to solve problems. I received my Master of Science degree in Applied Mathematics at Lanzhou University in 2011. In addition, I’m co-chair of O3DE SIG Simulation.
 
