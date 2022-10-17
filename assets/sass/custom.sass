@@ -324,8 +324,10 @@ code
   font-family: $font-family-Poppins
   font-weight: 700
   letter-spacing: 1.4px;
+  transition: 300ms ease
   &:hover 
-    color: $o3de-blue-highlight
+    color: $o3de-white 
+    opacity: 0.7
 
 
 .navbar-docs .navbar-nav .nav-link
@@ -540,6 +542,7 @@ a.top-banner
       border-radius: 4px
       transition: .2s ease
       border: 2px solid $o3de-white
+      letter-spacing: 1.4px;
 
       @include media-breakpoint-down(sm)
         right: 16px;
@@ -635,10 +638,11 @@ $width: '59vw';
   padding: 12px 9px;
   color: $o3de-black
   letter-spacing: 1.4px;
+  transition: 300ms
 
 
   &:hover 
-    background-color: darken(#1E71EB, 10%)
+    background-color: darken($o3de-aqua, 15%)
   
   @include media-breakpoint-down(md)
     //width: 100%
@@ -654,6 +658,11 @@ $width: '59vw';
   border: 1px solid #fff
   margin-left: 23px
   letter-spacing: 1.4px;
+  transition: 300ms
+
+  &:hover 
+    color: $o3de-white
+    opacity: 0.7
 // Home Slideshow
 
 .hero-block
