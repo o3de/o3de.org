@@ -287,12 +287,14 @@ code
 .main-navbar 
   background-color: rgba(0, 0, 0, 0.9)
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))
+  padding-bottom: 3px;
 
 .navbar-collapse
   @include media-breakpoint-down(md)
     position: absolute
     right: 0
     top: 62px
+
 
 .navbar-docs
   background-color: $o3de-docsblue
@@ -306,7 +308,7 @@ code
     padding: 8px 24px
     background-color: #222
 
-.navbar-dark .navbar-nav .navbar-item
+.new-nav.navbar-dark .navbar-nav .navbar-item
   &:last-child
     margin-left: 25px
     border: 1px solid $o3de-white
@@ -466,9 +468,10 @@ a.top-banner
   padding: 10px 0
   transition: .2s ease
   box-shadow: 0 0 10px rgba(0,0,0,.3)
-  position: absolute
+  position: relative
   width: 100%
   z-index: 1
+  
 
 
   &:hover 
@@ -489,7 +492,7 @@ a.top-banner
       height: 42px
       margin-right: 32px;
       background-repeat: no-repeat;
-      margin-left: 15px;
+      margin-left: 19px;
 
       @include media-breakpoint-down(sm)
         display: none
@@ -510,7 +513,7 @@ a.top-banner
       font-weight: 700
       font-family: $font-family-Poppins
       font-size: .9rem
-      letter-spacing: 1.4px;
+      letter-spacing: 1px;
 
 
     .banner-subtitle
@@ -518,7 +521,8 @@ a.top-banner
       font-weight: 700
       font-family: $font-family-Poppins
       text-transform: uppercase
-      letter-spacing: 1.4px;
+      letter-spacing: 1px;
+      line-height: 1;
 
     .banner-call-to-action
       position: absolute
@@ -628,8 +632,9 @@ $width: '59vw';
   line-height: 1
   font-family: $font-family-Poppins
   font-weight: 700
-  padding: 10px 16px
+  padding: 12px 9px;
   color: $o3de-black
+  letter-spacing: 1.4px;
 
 
   &:hover 
@@ -644,10 +649,11 @@ $width: '59vw';
   line-height: 1
   font-family: $font-family-Poppins
   font-weight: 700
-  padding: 10px 16px
+  padding: 12px 29px;
   color: $o3de-white
   border: 1px solid #fff
   margin-left: 23px
+  letter-spacing: 1.4px;
 // Home Slideshow
 
 .hero-block
@@ -720,7 +726,8 @@ $width: '59vw';
   h5
     font-size: 1rem
     font-family: $font-family-Poppins
-    font-weight: 500  
+    font-weight: 900;
+    letter-spacing: 0.2em;
 
 
 // layouts/partial/download/hero.html
@@ -1743,3 +1750,8 @@ nav.docs-nav
 .navbar-brand
   padding-top: 0;
   padding-bottom: 0;
+
+.home-page
+  a.top-banner
+    position: absolute
+    padding-bottom: 7px;
