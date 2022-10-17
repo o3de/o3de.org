@@ -542,7 +542,7 @@ a.top-banner
       border: 2px solid $o3de-white
 
       @include media-breakpoint-down(sm)
-
+        right: 16px;
 
       &:hover
         border-color: $o3de-purple
@@ -641,8 +641,8 @@ $width: '59vw';
     background-color: darken(#1E71EB, 10%)
   
   @include media-breakpoint-down(md)
-    width: 100%
-    margin-top: 0 !important
+    //width: 100%
+    //margin-top: 0 !important
 
 .border-cta
   font-size: .9rem
@@ -1755,3 +1755,15 @@ nav.docs-nav
   a.top-banner
     position: absolute
     padding-bottom: 7px;
+
+  .vertical-text
+    writing-mode: vertical-lr;
+    color: #fff
+    font-family: $font-family-Poppins
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    position: absolute
+    right: 30px
+    top: 50%
+    transform: translateY(-50%)  
