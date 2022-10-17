@@ -496,19 +496,19 @@ a.top-banner
       background-repeat: no-repeat;
       margin-left: 19px;
 
-      @include media-breakpoint-down(sm)
+      @include media-breakpoint-down(md)
         display: none
 
     .mobile-only
       display: none
 
-      @include media-breakpoint-down(sm)
+      @include media-breakpoint-down(md)
         display: inline
 
     .desktop-only
       display: inline
 
-      @include media-breakpoint-down(sm)
+      @include media-breakpoint-down(md)
         display: none
 
     .banner-title
@@ -544,7 +544,7 @@ a.top-banner
       border: 2px solid $o3de-white
       letter-spacing: 1.4px;
 
-      @include media-breakpoint-down(sm)
+      @include media-breakpoint-down(md)
         right: 16px;
         width: auto;
 
@@ -640,6 +640,7 @@ $width: '59vw';
   color: $o3de-black
   letter-spacing: 1.4px;
   transition: 300ms
+  margin-right: 23px;
 
   &:hover 
     background-color: darken($o3de-aqua, 15%)
@@ -656,7 +657,6 @@ $width: '59vw';
   padding: 12px 29px;
   color: $o3de-white
   border: 1px solid #fff
-  margin-left: 23px
   letter-spacing: 1.4px;
   transition: 300ms
 
@@ -730,6 +730,7 @@ $width: '59vw';
     font-size: 3.8rem
     font-family: $font-family-Poppins
     font-weight: 800
+    margin-bottom: 30px;
     @include media-breakpoint-down(md)
       font-size: 2.2rem
   h5
@@ -737,6 +738,11 @@ $width: '59vw';
     font-family: $font-family-Poppins
     font-weight: 900;
     letter-spacing: 0.2em;
+
+  p
+   font-family: $font-family-Poppins
+   font-weight: 500;
+   letter-spacing: 1px;
 
 
 // layouts/partial/download/hero.html
