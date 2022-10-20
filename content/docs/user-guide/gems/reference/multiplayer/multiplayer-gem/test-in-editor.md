@@ -24,14 +24,16 @@ The Multiplayer Gem exposes a variety of cvars to help configure launching a ser
 
 Using these features, you can configure the Editor to connect to a compatible remote host if you wanted or a specific server executable. For example, you could configure your profile Editor to connect to a debug server.
 
+![The Editor connected to a dedicated server](/images/user-guide/multiplayer/editor_client_with_dedicated_server_mode.png)
+
 #### Configuring Editor in Client-Server Mode
 
-You can also configure your Editor to act as both the server and a client at the same time. This allows for an immediate start of game mode when pressing CTRL-G. (On the other hand, it takes a few seconds to enter the game mode with the dedicated server as configured above.) This mode requires two CVars to be set to true: `editorsv_enabled` and `editor_clientserver`.
+You can configure your Editor to act as both the server and a client at the same time. This allows for an immediate start of game mode when pressing CTRL-G. (On the other hand, it takes a few seconds to enter the game mode with the dedicated server as configured above.) This mode requires two CVars to be set to true: `editorsv_enabled` and `editor_clientserver`.
 
 | CVar name | Type | Description |
 |--|--|--|
 | `editor_clientserver` | `bool` | Whether the Editor should act as a server and a client at the same time, without launching a dedicated server process. This is useful for quick iterative work that does not require testing client-only logic. |
 
-You can tell which multiplayer editor game mode are you in by looking at the debug text in the bottom right of the viewport.
+You can tell which multiplayer editor game mode are you in by looking at the debug text in the bottom right corner of the Editor's viewport.
 
 ![The Editor with editor_clientserver set to true](/images/user-guide/multiplayer/editor_clientserver_mode.png)
