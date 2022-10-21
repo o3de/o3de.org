@@ -23,7 +23,7 @@ Add the **Altitude Gradient** component to generate a normalized gradient from a
 | **Constrain to Shape** | If `Enabled`, the gradient preview uses the bounds of the entity selected in **Pin Preview to Shape**.<br> <br>*This field is available only if an entity is selected in **Pin Preview to Shape**.* | Boolean | `Disabled` |
 | **Altitude Min** | Sets the minimum altitude that generates gradient values. | Float: -Infinity to Infinity | `0.0` |
 | **Altitude Max** | Sets the maximum altitude that generates gradient values. | Float: -Infinity to Infinity | `128.0` |
-| **Surface Tags to track** | An optional array of surface tags.  This component generates a gradient only where these surface tags exist. | Array: Surface Tags | None |
+| **Surface Tags to track** | An optional array of [surface tags](/docs/user-guide/gems/reference/environment/surface-data).  This component generates a gradient only where these surface tags exist. | Array: Surface Tags | None |
 
 ## SurfaceAltitudeGradientRequestBus
 

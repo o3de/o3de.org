@@ -29,7 +29,7 @@ Add one of the following required components when using the Vegetation Surface M
 | **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor properties that are enabled can override this component's properties. | Boolean | `Disabled` |
 | **Upper Distance Range** | Sets the maximum altitude difference between the vegetation instance and the **Depth Comparison Tags**. Positive values correspond to altitudes above the surface tags, negative values correspond to altitudes below the surface tags.  | Float: -Infinity to Infinity | `1000.0` |
 | **Lower Distance Range** | Sets the minimum altitude difference between the vegetation instance and the **Depth Comparison Tags**. Positive values correspond to altitudes above the surface tags, negative values correspond to altitudes below the surface tags. | Float: -Infinity to Infinity | `-1000.0` |
-| **Depth Comparison Tags** | An array of surface tags that provide the elevation data to query altitude. | Array: Surface Tags | None |
+| **Depth Comparison Tags** | An array of [surface tags](/docs/user-guide/gems/reference/environment/surface-data) that provide the elevation data to query altitude. | Array: Surface Tags | None |
 
 ## SurfaceMaskDepthFilterRequestBus
 

@@ -27,7 +27,7 @@ Add one of the following required components when using the Vegetation Position 
 |-|-|-|-|
 | **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor properties that are enabled can override this component's properties. | Boolean | `Disabled` |
 | **Auto Snap to Surface** | If `Enabled`, automatically snaps the modified vegetation instance position to the nearest valid surface tag.  Valid surface tags include those selected in the **Surface Tags To Snap To** property, as well as any surface tags already associated with the vegetation instance. | Boolean | `Enabled` |
-| **Surface Tags To Snap To** | An array of surface tags used to align the vegetation instance with the surface. | Array: Surface Tags | None |
+| **Surface Tags To Snap To** | An array of [surface tags](/docs/user-guide/gems/reference/environment/surface-data) used to align the vegetation instance with the surface. | Array: Surface Tags | None |
 | **Position X - Range Min** | Sets the minimum modified position offset of the vegetation instance on the X-axis. | Float: -Infinity to Infinity | `-0.3` |
 | **Position X - Range Max** | Sets the maximum modified position offset of the vegetation instance on the X-axis. | Float: -Infinity to Infinity | `0.3` |
 | **Position X - Gradient** | Refer to [Gradient properties](#gradient-properties) below. |  |  |
