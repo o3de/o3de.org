@@ -236,27 +236,34 @@ To use Amazon EC2 instance role credentials with your project:
 1. Provide the associated IAM role with any [permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html) required to access the AWS resources that your O3DE project needs.
 1. Attach the instance profile to the Amazon EC2 instance(s) running your O3DE project. You can attach it to a new instance [at launch time](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/LaunchingAndUsingInstances.html) or you can [attach it to a running instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#attach-iam-role). 
 
-The AWS Core Gem also requires that the `AllowAWSMetadataCredentials` setting be set to `true` before it will query the [EC2 instance metadata service (IMDS)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html) for credentials. This default setting is to prevent unwanted calls to the Amazon EC2 IMDS endpoint when running your O3DE project locally or on non-Amazon EC2 compute.
+The AWS Core Gem also requires that the `AllowAWSMetadataCredentials` setting be set to `true` before it will query the [Amazon EC2 Instance Metadata Service (IMDS)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html) for credentials. By default, it is set to `false` to prevent unwanted calls to the Amazon EC2 IMDS endpoint when running your O3DE project locally or on non-Amazon EC2 compute.
+
+{{< note >}}
+If the environment variable `AWS_EC2_METADATA_DISABLED` is set to `true`, this will override the `AllowAWSMetadataCredentials` setting and you will be unable to use credentials from the instance profile. For more information about this environment variable, refer to the [HttpRequestor Gem](https://github.com/docs/user-guide/gems/reference/network/http-requestor/#turn-off-amazon-ec2-instance-metadata-service-calls).
+{{< /note>}}
 
 To turn on `AllowAWSMetadataCredentials` in AWSCore:
 
 1. Add it to your `awscoreconfiguration.setreg` [project settings file](./getting-started/#project-settings) at the following path:
-```json
-{
-    "Amazon":
+
+    ```json
     {
-        "AWSCore": {
-            "ProfileName": "testprofile",
-            "ResourceMappingConfigFileName": "default_aws_resource_mappings.json",
-            "AllowAWSMetadataCredentials": true, // example of value set to "true"
+        "Amazon":
+        {
+            "AWSCore": {
+                "ProfileName": "testprofile",
+                "ResourceMappingConfigFileName": "default_aws_resource_mappings.json",
+                "AllowAWSMetadataCredentials": true, // example of value set to "true"
+            }
         }
     }
-}
-```
+    ```
+
 2. **OR** set it to true via the command line when directly invoking the launcher:
-```
-./MyGame.ServerLauncher.exe --regset="/Amazon/AWSCore/AllowAWSMetadataCredentials=true"
-```
+
+    ```
+    ./MyGame.ServerLauncher.exe --regset="/Amazon/AWSCore/AllowAWSMetadataCredentials=true"
+    ```
 
 
 ## Additional resources
