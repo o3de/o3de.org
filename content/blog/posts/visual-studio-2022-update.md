@@ -11,24 +11,24 @@ With the 22.10.0 release of the **Open 3D Engine(O3DE)** Visual Studio 2022(VS20
 ## Background
 
 When we say that **O3DE** "fully supports" Visual Studio 2022, we are referring to building O3DE projects using Visual Studio 2022 [v143 toolset](https://learn.microsoft.com/en-us/cpp/build/how-to-modify-the-target-framework-and-platform-toolset?view=msvc-170#platform-toolset).  
-![Visual Studio 2022 v143 toolset](/images/blog/vs2022/vs2022-installer-v143-toolset.png)
+{{< image-width src="/images/blog/vs2022/vs2022-installer-v143-toolset.png" width="100%" alt="Visual Studio 2022 v143 toolset" >}}
 
-Because O3DE uses [CMake](https://www.o3de.org/docs/user-guide/build/configure-and-build/) as its build system generator, it has been possible since the release of [CMake 3.21](https://cmake.org/cmake/help/v3.21/release/3.21.html#generators) to configure and *attempt* to build using the Visual Studio 2022.  By *attempt*, we mean that building O3DE using Visual Studio 2022 could occur, but would have most likely failed due to stricter compiler warnings which were triggering using the newer v143 toolset.  
-The backend build server infrastructure for validating new commits to O3DE via the Automated Review(AR) pipeline wasn't setup to build against the v143 toolset.  
+Because O3DE uses [CMake](/docs/user-guide/build/configure-and-build/) as its build system generator, it has been possible since the release of [CMake 3.21](https://cmake.org/cmake/help/v3.21/release/3.21.html#generators) to configure and *attempt* to build using the Visual Studio 2022.  By *attempt*, we mean that building O3DE using Visual Studio 2022 could occur, but would have most likely failed due to stricter compiler warnings which were triggering using the newer v143 toolset.  
+The backend continuous integration(CI) build infrastructure for validating new commits to O3DE via the Automated Review(AR) pipeline wasn't setup to build against the v143 toolset.  
 Before the 22.10.0 release, continuous integration builds on Windows only installed the Visual Studio 2019(VS2019) Build Tools. The [v142 toolset](https://learn.microsoft.com/en-us/cpp/build/how-to-modify-the-target-framework-and-platform-toolset?view=msvc-170#platform-toolset) was the only Microsoft Visual C++(MSVC) toolset validated at the time and therefore build breakages of O3DE building against the Visual Studio 2022 v143 toolset were common and took days to discover.
 
 ## What's new
 
-### Build Server Updates
-Between the time of the 22.05.0(May 2022) release the 22.10.0(October 2022) release the Jenkins build servers have been updated with Visual Studio 2022 17.3 Build Tools and the latest v143 toolset. 
+### CI Nodes Updates
+Between the time of the 22.05.0(May 2022) release the 22.10.0(October 2022) release the Jenkins CI Nodes have been updated with Visual Studio 2022 17.3 Build Tools and the latest v143 toolset. 
 Furthermore all O3DE build warnings and errors using the the v143 toolset were fixed and future VS2022 compile failures are protected against via the Automated Review pipeline validating each Pull Request that goes into O3DE repo [development](https://github.com/o3de/o3de) branch.  
 
 
 ### Project Manager Updates
-The 22.10.0 release also included a feature update to the [Project Manager](https://www.o3de.org/docs/user-guide/project-config/project-manager/#projects) application. The requirement building against the Visual Studio 2019 application has been removed.  
-The Project Manager application will use the build toolset of latest version of Visual Studio installed on the user's machine for configuring and building O3DE Projects.  If the user only has Visual Studio 2019 installed with the v142 toolset, that will be used for compiling O3DE. If the user only has Visual Studio 2022 installed with the v143 toolset that will be used for compilation. Finally if the user has both Visual Studio 2019 and 2022 installed then Visual Studio 2022 v143 toolset will be used.
-![Project Manager Project Options](/images/blog/vs2022/project-manager-build-options.png)
-![Project Manager Building](/images/blog/vs2022/project-manager-building.png)
+The 22.10.0 release also included a feature update to the [Project Manager](/docs/user-guide/project-config/project-manager/#projects) application. The requirement of Project Manager only being able to build using the Visual Studio 2019 build tools has been removed.  
+The Project Manager application will use the build toolset of latest version of Visual Studio installed on the user's machine for configuring and building O3DE Projects.  If the user only has Visual Studio 2019 installed with the v142 toolset, that will be used for compiling O3DE. If the user only has Visual Studio 2022 installed with the v143 toolset that will be used for compilation. Finally if the user has both Visual Studio 2019 and 2022 installed then Visual Studio 2022 v143 toolset will be used.  
+{{< image-width src="/images/blog/vs2022/project-manager-build-options.png" width="100%" alt="Project Manager Project Options" >}}
+{{< image-width src="/images/blog/vs2022/project-manager-building.png" width="100%" alt="Project Manager Building" >}}
 
 
 ## VS2022 vs VS2019 O3DE differences
@@ -51,9 +51,9 @@ cmake --build build/windows --target Editor --config profile -- /maxcpucount:8 /
 
 The equivalent options in the Visual Studio 2022 IDE can be set via following IDE options
 * Setting the maximum number of parallel project builds value in the `Tools -> Options -> Projects and Solutions -> Build and Run` menu.  
-![Build and Run](/images/blog/vs2022/vs2022-parallel-project-builds-8.png)
+{{< image-width src="/images/blog/vs2022/vs2022-parallel-project-builds-8.png" width="100%" alt="Build and Run" >}}
 * Setting the maximum concurrent C++ compilations option in the `Tools -> Options -> Projects and Solutions -> VC++ Project Settings` menu.  
-![VC++ Project Settings](/images/blog/vs2022/vs2022-concurrent-compiliations-16.png)
+{{< image-width src="/images/blog/vs2022/vs2022-concurrent-compiliations-16.png" width="100%" alt="VC++ Project Settings" >}}
 
 This can to help alliviate any memory pressure that is caused by building the O3DE.
 
@@ -71,7 +71,7 @@ The triggered warnings are generally around [unsigned/signed](https://learn.micr
 One lesser known trick to build against multiple Microsoft build tools toolsets(v143, v142, etc...) without the need to have multiple versions of Visual Studio installed involves specifying the toolset option for Visual Studio on the command line when configuring with CMake.  
 
 First the user should make sure they have the latest `MSVC v142 - VS 2019 C++ x64/x86 build tools` component installed via the Visual Studio Installer.  
-![Visual Studio Installer Individual Components](/images/blog/vs2022/vs2022-installer-v142-toolset.png)
+{{< image-width src="/images/blog/vs2022/vs2022-installer-v142-toolset.png" width="100%" alt="Visual Studio Installer Individual Components" >}}
 
 Once it is verified that latest `MSVC v142` toolset is installed, the user can configure the toolset using either the CMake GUI or the CMake CLI via the `-T<toolset>` option which is documented on the CMake website as part of the [CMAKE_GENERATOR_TOOLSET](https://cmake.org/cmake/help/v3.23/variable/CMAKE_GENERATOR_TOOLSET.html#visual-studio-toolset-selection) variable documentation.  
 To use the the latest v142 toolset which is 14.29 at this time, the following value for the `-T` option should be supplied:
@@ -82,8 +82,8 @@ To use the the latest v142 toolset which is 14.29 at this time, the following va
 
 #### Configuring the CMake Gui to use the v142 toolset using VS 2022
 
-Using the CMake GUI to build against the VS2019 v142 toolset is as simple as specifying v142 to the toolset parameter
-![CMake GUI Visual Studio Toolset](/images/blog/vs2022/cmake-gui-14-29-toolset.png)
+Using the CMake GUI to build against the VS2019 v142 toolset is as simple as specifying v142 to the toolset parameter.  
+{{< image-width src="/images/blog/vs2022/cmake-gui-14-29-toolset.png" width="100%" alt="CMake GUI Visual Studio Toolset" >}}
 
 
 #### Configure the CMake CLI to use the v142 toolset using VS2022
@@ -112,8 +112,8 @@ PS C:\code\o3de> cmake -B build/windows_vs143_cli -S .
 O3DE provides a [CMakePresets.json](https://github.com/o3de/o3de/blob/main/CMakePresets.json) in the repo root, which leverages the [CMakePresets](https://cmake.org/cmake/help/v3.23/manual/cmake-presets.7.html) feature which is way to shared configuration, build and test settings with other users.  
 {{< note >}} This feature requires using CMake 3.23 or above installed on the user's machine {{< /note >}}
 
-The list of available CMake presets for the current host platform can be seen in the CMake GUI or the via the `cmake --list-presets` command
-![O3DE CMake Presets](/images/blog/vs2022/cmake-presets-gui.png)
+The list of available CMake presets for the current host platform can be seen in the CMake GUI or the via the `cmake --list-presets` command.  
+{{< image-width src="/images/blog/vs2022/cmake-presets-gui.png" width="100%" alt="O3DE CMake Presets" >}}
 ```
 C:\code\o3de> cmake --list-presets
 Available configure presets:
@@ -144,9 +144,9 @@ Available configure presets:
   "windows-ninja"                    - Windows Ninja
 ```
 
-Presets are an easy way to configure O3DE for building for a particular platform without the need to specify a myriad of O3DE CMake Cache Variable options(https://www.o3de.org/docs/user-guide/build/reference/) on the command line such as LY_UNITY_BUILD, LY_MONOLITHIC_GAME, etc...
+Presets are an easy way to configure O3DE for building for a particular platform without the need to specify a myriad of [O3DE CMake Cache Variable options](https://www.o3de.org/docs/user-guide/build/reference/) on the command line such as LY_UNITY_BUILD, LY_MONOLITHIC_GAME, etc...
 
-Using a cmake presets is as simple as selecting it from the CMake GUI or specifying it to the --preset option to the cmake CLI. Documentation for the CMake CLI can be found on the CMake website at https://cmake.org/cmake/help/v3.23/manual/cmake.1.html#options.
+Using a cmake presets is as simple as selecting it from the CMake GUI or specifying it to the --preset option to the cmake CLI. Documentation for the CMake CLI can be found on the [CMake docsite](https://cmake.org/cmake/help/v3.23/manual/cmake.1.html#options).
 ```
 PS C:\code\o3de> cmake --preset windows-default
 Preset CMake variables:
@@ -271,7 +271,7 @@ Here is an example of my `CMakeUserPresets.json` that is located in my local o3d
 }
 ```
 
-I use this preset file to configure the "Atom Sample Viewer" project in a project-centric workflow against the latest version of Visual Studio by only specifying the preset nameto the CMake CLI as follows.  
+I use this preset file to configure the "Atom Sample Viewer" project in a project-centric workflow against the latest version of Visual Studio by only specifying the preset name to the CMake CLI as follows.  
 ```powershell
 PS D:\o3de-atom-sampleviewer> cmake --build windows-atom-sample-viewer
 ```
