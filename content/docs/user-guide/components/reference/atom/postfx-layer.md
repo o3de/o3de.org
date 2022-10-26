@@ -35,7 +35,7 @@ Each PostFX Layer component must be assigned to a Layer Category. Each Layer Cat
 
 To update the preset Layer Category list:
 
-1. Open Asset Editor form the **Tools** menu.
+1. Open Asset Editor from the **Tools** menu.
 
 1. In Asset Editor, go to **File** &rarr; **Open**.
 
