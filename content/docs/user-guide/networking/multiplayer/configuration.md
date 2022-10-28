@@ -1,7 +1,7 @@
 ---
 linkTitle: Project Configuration
 title: Adding the Multiplayer Gem to a Project
-description: Add multiplayer support to an Open 3D Engine project or Gem, including the creation of auto-components.
+description: Learn how to add multiplayer support to an Open 3D Engine project or Gem. Includes instructions for creating a placeholder auto-component.
 weight: 200
 ---
 
@@ -9,7 +9,8 @@ Adding the full functionality of the Open 3D Engine Multiplayer Gem to a project
 
 * Linking against the correct core libraries and Gems.
 * Building [auto-components](./autocomponents).
-* Creating and registering component information with the Multiplayer Gem on project start.
+* Creating multiplayer component descriptors.
+* Registering the components with the Multiplayer Gem.
 
 {{< note >}}
 Since both O3DE Gems and projects use the same CMake build functions, these instructions can be used to create a new Gem that extends the behavior of the Multiplayer Gem.
@@ -117,15 +118,15 @@ set(FILES
 )
 ```
 
-### Add a temporary auto-component
+### Add a placeholder auto-component
 
 {{< known-issue link="https://github.com/o3de/o3de/issues/4058">}}
-You might experience a build failure if multiplayer auto-components are enabled, but no auto-components are created. As a work-around, follow the steps in this section to create a temporary auto-component.
+You might experience a build failure if multiplayer auto-components are enabled, but no auto-components are created. As a work-around, follow the steps in this section to create a placeholder auto-component.
 {{< /known-issue >}}
 
 1. Create a new folder under your project's `Code\Source\` directory called `AutoGen`. 
     {{< note >}}This AutoGen directory doesn't have to be temporary. All future multiplayer auto-components can live here.{{< /note >}}
-1. Create a new, temporary auto-component file under `Code\Source\AutoGen` called `MyFirstNetworkComponent.AutoComponent.xml`.
+1. Create a new, placeholder auto-component file under `Code\Source\AutoGen` called `MyFirstNetworkComponent.AutoComponent.xml`.
     {{< note >}}This guide uses "MyFirstNetworkComponent" as the name for this multiplayer auto-component. You can specify any name for your component, but ensure that the name is used consistently.{{< /note >}}
 
 1. Modify `Code\Source\AutoGen\MyFirstNetworkComponent.AutoComponent.xml` to have the following content:
@@ -143,14 +144,14 @@ You might experience a build failure if multiplayer auto-components are enabled,
     ```
     {{< important >}}Replace `<ProjectName>` with your project's name and make sure that the value is wrapped in quotes.
     {{< /important >}}
-1. Register the temporary auto-component with CMake by updating `<projectname_files.cmake>`.
+1. Register the placeholder auto-component with CMake by updating `<projectname_files.cmake>`.
     ```cmake
     set(FILES
         ...
         Source/AutoGen/MyFirstNetworkComponent.AutoComponent.xml
     )
     ```
-{{< note >}}After completing the setup steps in this guide, you can delete the temporary auto-component and create a new auto-component, or use it as a starting point. There must always be at least one auto-component.
+{{< note >}}After completing the setup steps in this guide, you can delete the placeholder auto-component and create a new auto-component, or use it as a starting point. There must always be at least one auto-component.
 
 Refer to [Multiplayer Auto-components](../autocomponents), or follow the introductory [multiplayer tutorial](/docs/learning-guide/tutorials/multiplayer/first-multiplayer-component/) to learn more about multiplayer auto-components.{{< /note >}}
 
