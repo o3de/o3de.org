@@ -4,7 +4,10 @@ weight: 950
 description: Learn about the low-level networking stack in Open 3D Engine and the Multiplayer Gem that uses it to provide multiplayer features in games and simulations.
 ---
 
-**Open 3D Engine (O3DE)** includes two networking frameworks to suit the varying needs of network developers: the `AzNetworking` framework, which provides a low-level networking API, and the **Multiplayer Gem** framework, which is built on top of `AzNetworking` and provides multiplayer networking features for games and simulations.
+With **Open 3D Engine (O3DE)**, you can use either of the following two networking frameworks depending on your needs:
+
+* The `AzNetworking` framework, which provides a low-level networking API.
+* The **Multiplayer Gem** framework, which is built on top of `AzNetworking` and provides multiplayer networking features for games and simulations.
 
 ## Networking frameworks
 
