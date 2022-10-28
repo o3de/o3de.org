@@ -1,8 +1,8 @@
 ---
-title: Open 3D Engine Multiplayer Gem Overview
-description:
 linkTitle: Overview
-toc: true
+title: Multiplayer Gem Overview
+description: An overview of the Multiplayer Gem in Open 3D Engine. Includes an introduction to multiplayer components, which provide network state synchronization.
+weight: 100
 ---
 
 In Open 3D Engine, the synchronization needed for multiplayer support is performed through *multiplayer components*. Like other components in O3DE, these are attached to *entities*. Multiplayer components offer the capability to receive function calls from a remote source, *remote procedure calls (RPC)*, and define the data to be synchronized across the network. Each multiplayer component, normally generated as an [autocomponent](./autocomponents), defines its own requirements for other data to be present and which functions are available.

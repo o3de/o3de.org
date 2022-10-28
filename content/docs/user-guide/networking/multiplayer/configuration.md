@@ -1,7 +1,8 @@
 ---
-title: Add the Open 3D Engine Multiplayer Gem to a Project
-description: Add Multiplayer support to an Open 3D Engine project or Gem, including the creation of auto-components.
-linkTitle: Project configuration
+linkTitle: Project Configuration
+title: Adding the Multiplayer Gem to a Project
+description: Add multiplayer support to an Open 3D Engine project or Gem, including the creation of auto-components.
+weight: 200
 ---
 
 Adding the full functionality of the Open 3D Engine Multiplayer Gem to a project requires making edits to the CMake scripts and source code. These changes enable:
@@ -146,7 +147,7 @@ You might experience a build failure if multiplayer auto-components are enabled,
     ```
 {{< note >}}After completing the setup steps in this guide, you can delete the temporary auto-component and create a new auto-component, or use it as a starting point. There must always be at least one auto-component.
 
-You can learn more about multiplayer auto-components [here](/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/autocomponents/), or follow [this tutorial](/docs/learning-guide/tutorials/multiplayer/first-multiplayer-component/).{{< /note >}}
+You can learn more about multiplayer auto-components [here](../autocomponents), or follow [this tutorial](/docs/learning-guide/tutorials/multiplayer/first-multiplayer-component/).{{< /note >}}
 
 ## Module and System component setup
 

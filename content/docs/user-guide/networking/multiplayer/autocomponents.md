@@ -1,7 +1,8 @@
 ---
+linktitle: Auto-components
 title: Multiplayer Auto-components
 description: A reference for defining Open 3D Engine multiplayer state through autocomponents.
-linktitle: Auto-components
+weight: 400
 ---
 
 *Auto-components* provide a convenient way to define states of a multiplayer component relevant to network synchronization. Using the [AzAutoGen](/docs/user-guide/programming/autogen) system, auto-component files found inside of your project are processed during builds to create C++ classes for components and controllers that provide network replication and remote function calls. Auto-components also take care of Editor and behavior context bindings so that the bound component shows in the Editor and works with O3DE scripting.

@@ -1,7 +1,8 @@
 ---
-title: Networking And Multiplayer Settings
-description: A reference for console variables and other settings that can be used on clients and servers to configure networking and multiplayer.
-linktitle: Network Settings
+linktitle: Network and Multiplayer Settings
+title: AzNetworking and Multiplayer Gem Settings
+description: A reference for console variables and other settings that can be used on clients and servers to configure AzNetworking and the Multiplayer Gem.
+weight: 300
 ---
 
 ## Overview
@@ -9,6 +10,7 @@ linktitle: Network Settings
 This page documents [console variables](/docs/user-guide/appendix/cvars/) and other settings that can control Networking and Multiplayer behavior.
 
 ## Networking commands
+
 The following [console functor](/docs/user-guide/programming/az-console/#console-functors-cfuncs) commands should be used to control the connection of clients to servers for networked games or simulations. 
 
 | Setting                | Description                                                                                                                                | Parameters                                                                       | Notes                                                                                     |

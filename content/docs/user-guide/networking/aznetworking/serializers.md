@@ -1,8 +1,8 @@
 ---
-title: Network Serializers
 linktitle: Serializers
-weight: 300
+title: Network Serializers
 description: An overview and reference for data serializers used by the Open 3D Engine networking stack.
+weight: 400
 ---
 
 Open 3D Engine supports a variety of serializers that visit an object hierarchy and perform operations upon that hierarchy, typically reading data from or writing data to the object hierarchy for the purpose of persistence or network transmission.

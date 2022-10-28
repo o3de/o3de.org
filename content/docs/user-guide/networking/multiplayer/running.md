@@ -1,18 +1,19 @@
 ---
-title: Running Open 3D Multiplayer Projects
-description: How to run Multiplayer enabled projects and relevant configuration
-linkTitle: Running Multiplayer
+linkTitle: Running Multiplayer Projects
+title: Running Multiplayer Projects
+description: How to run multiplayer-enabled projects in Open 3D Engine.
+weight: 300
 ---
 
 Running projects using the Open 3D Engine Multiplayer Gem requires build steps followed by a variety of options to run the projects.
 
-* Ensure your project is [properly configured](./configuration.md).
+* Ensure your project is [properly configured](./configuration).
 * Build your project's `GameLauncher` and `ServerLauncher` targets.
 * Run the game either in standalone mode using the ImGui options to host, or via the in editor testing approach.
 
 ## Testing in the Editor
 
-Multiplayer projects can be [run in Editor](./test-in-editor.md) using Ctrl-G. See the accompanying documentation for more detail. 
+Multiplayer projects can be [run in Editor](./test-in-editor) using Ctrl-G. See the accompanying documentation for more detail.
 
 ## Running locally using ImGui Options
 

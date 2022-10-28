@@ -1,14 +1,15 @@
 ---
-title: Multiplayer Desync Audit Trail
-description: Analyze and Debug Multiplayer Desyncs
-linkTitle: Desync Audit Trail
+linkTitle: Debugging Multiplayer Desyncs
+title: Debugging Multiplayer Desync Using Audit Trail
+description: Analyze and debug multiplayer desyncs using the Multiplayer Desync Audit Trail tool.
+weight: 800
 ---
 
 When a client and server disagree on the value of a networked variable, a desync occurs. Desyncs can be extremely difficult to debug which is where the *Multiplayer Desync Audit Trail* can help.
 
 The Multiplayer Desync Audit Trail is a tool available with the multiplayer gem for `debug`-configuration builds. It details all network desyncs that occur and categorizes network activity leading up to a desync, allowing you to root cause the desync itself.
 
-![Audit Trail Overlay](/images/user-guide/gems/reference/multiplayer/audit_trail_default.png)
+![Audit Trail Overlay](/images/user-guide/networking/multiplayer/audit_trail_default.png)
 
 The Audit Trail will capture a desync including the input ID and host frame it occurred on. For every desync, the UI will list all the captured activity leading to the desync. The depth of this history can be controlled by a cvar.
 
@@ -24,7 +25,7 @@ Desyncs are the primary event captured by the Audit Trail. Consequently the Audi
 
 Network inputs detail actions that create deltas in the networked state of the simulation. The Audit Trail lists all network inputs that were sent. In addition it also lists non-default values for each member per network input. This allows the correlation of inputs to desynchronized data. By tracking client inputs and desyncs together, you can identify if player actions affect specific desyncs.
 
-![Audit Trail Inputs](/images/user-guide/gems/reference/multiplayer/audit_trail_input.png)
+![Audit Trail Inputs](/images/user-guide/networking/multiplayer/audit_trail_input.png)
 
 The above screenshot shows inputs that occurred on the client's player entity, relative to the desync including those that are processed locally. For the host frames in question, the actions were exclusively the player moving via `NetworkPlayerMovementComponent`.
 
@@ -57,7 +58,7 @@ void NetworkExampleComponent::OnExampleEvent(Multiplayer::NetworkInput& input)
 }
 ```
 
-![Audit Trail Custom Events](/images/user-guide/gems/reference/multiplayer/audit_trail_event.png)
+![Audit Trail Custom Events](/images/user-guide/networking/multiplayer/audit_trail_event.png)
 
 ## Configuration
 

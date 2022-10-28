@@ -1,7 +1,8 @@
 ---
+linktitle: Auto-packets
 title: Networking Auto-packets
 description: A reference for defining Open 3D Engine networking packets through auto-packets.
-linktitle: Auto-packets
+weight: 200
 ---
 
 *Auto-packets* provide a convenient way to define network packets used to communicate data between endpoints in a `AzNetworking` session. Using the [AzAutoGen](/docs/user-guide/programming/autogen) system, auto-packet files found inside of your project are processed during builds to create C++ classes and handlers for packets with defined payloads.

@@ -1,7 +1,8 @@
 ---
-title: UDP with Datagram Transport Layer Security (DTLS)
 linktitle: UDP Encryption
+title: UDP with Datagram Transport Layer Security (DTLS)
 description: Learn about encryption capabilities of the Open 3D Engine AzNetworking framework and how to use them in your project.
+weight: 300
 ---
 
 To provide encryption to secure UDP packets, Open 3D Engine uses [OpenSSL](https://www.openssl.org/) to implement *DTLS (Datagram Transport Layer Security)*. The O3DE `AzNetworking` framework provides the [DtlsSocket](/docs/api/frameworks/aznetworking/class_az_networking_1_1_dtls_socket.html) and [DtlsEndpoint](/docs/api/frameworks/aznetworking/class_az_networking_1_1_dtls_endpoint.html) classes to enable DTLS over UDP. When encryption is enabled and configured in the O3DE networking system, the transport layer automatically uses `DtlsSocket` objects rather than `UdpSocket`. The role of `DtlsEndpoint` is to capture the connection target and handle SSL operations.

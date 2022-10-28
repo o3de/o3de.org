@@ -114,7 +114,7 @@ toc: true
 
 | Gem | Description |
 | - | - |
-| [Multiplayer](./multiplayer) | The Multiplayer Gem provides high-level, advanced multiplayer gameplay functionality such as entity replication, local prediction, and server side backward reconciliation. |
+| [Multiplayer](./multiplayer/multiplayer-gem) | The Multiplayer Gem provides high-level, advanced multiplayer gameplay functionality such as entity replication, local prediction, and server side backward reconciliation. |
 | [Multiplayer Compression](./multiplayer/multiplayer-compression) | The Multiplayer Compression Gem provides an open source compressor for use with the Multiplayer Gem. |
 
 ## Network
