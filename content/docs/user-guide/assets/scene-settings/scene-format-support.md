@@ -52,7 +52,7 @@ For example, popular 3D scene file formats such as `.stl` and `.obj` have limite
 | **Bitangents** | Custom bitangents from the source asset, or bitangents that are automatically generated with the MikkT algorithm. |
 | **UV Sets** [<sup>**2**</sup>](#buffer-limit)  | 2 UV sets (`UV0` and `UV1`) are supported by default shaders. |
 | **Vertex Colors** [<sup>**2**</sup>](#buffer-limit)  | 1 vertex color stream is supported by default shaders. Additional vertex color streams can store constraints and inverse mass data for cloth simulation. |
-| **Materials** | 1 per triangle. |
+| **Materials** | 1 per polygon. |
 | **Physics materials** | 1 per material. |
 | **Level of detail (LOD)** | 5 mesh LODs and 5 skeleton LODs numbered **[0]** to **[4]** (does not include base meshes and skeletons). |
 | **Bone influences per vertex** [<sup>**3**</sup>](#skin-weights) | Up to 32 per vertex maximum, with a default limit of 8 per vertex. |
@@ -92,7 +92,7 @@ Though the max number of bone influences (skin weights) per vertex is 32, a lowe
 | `/O3DE/SceneAPI/SkinRule/DefaultMaxSkinInfluencesPerVertex` | The maximum number of bones that can influence any vertex in an actor mesh. Each vertex in an actor mesh can have any number of skin weights between 1 and the number specified in this registry value. | 8 |
 | `/O3DE/SceneAPI/SkinRule/DefaultWeightThreshold` | The minimum value for a skin wight. Skin weight values below this limit are ignored. | 0.001 |
 
-The maximum number of bone influences and the weight threshold can be overridden on a per actor basis by adding a [Skin modifier](../meshes-tab#skin) to the actor's mesh in [Scene Settings](../scene-settings)
+The maximum number of bone influences and the weight threshold can be overridden on a per actor basis by adding a [Skin modifier](../meshes-tab#skin) to the actor's mesh in [Scene Settings](../scene-settings).
 
 <a name="cloth-meshes"></a>
 <sup>**4**</sup> **Cloth mesh limitations**
