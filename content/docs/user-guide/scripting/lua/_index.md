@@ -10,17 +10,9 @@ You can use Lua in **Open 3D Engine (O3DE)** to facilitate quick iteration of yo
 
 O3DE uses Lua version {{< versions/lua >}}.
 
-## Lua Editor and GridHub
+## Lua Editor and Debugging
 
-The Lua development environment in O3DE includes the **Lua Editor**. The debugger that is included with the Lua Editor uses a connection hub called **GridHub**. These two applications are built when the **O3DE Editor** is built.
-
-### Building Lua Editor and GridHub
-
-To build Lua Editor and GridHub separately, navigate to the directory where you build your project (or where you build the O3DE engine, if you build the engine separately) and run the following command, inserting the path to your build directory.
-
-```cmd
-cmake --build <build-directory> --target LuaIDE GridHub --config profile -- -m
-```
+The Lua development environment in O3DE includes the **Lua Editor**. The debugger that is included with the Lua Editor uses AzNetworking connections managed by AzFramework's TargetManagement.
 
 ## Learning Lua 
 

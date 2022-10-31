@@ -209,3 +209,8 @@ CMake functions used in this example:
 * `ly_pip_install_local_package_editable`: See the definition in `cmake/LYPython.cmake`.
 
 {{< /note >}}
+
+## License file generation
+License attribution files (often called the NOTICES file) can be generated during the project development process to properly attribute any code or downloadable packages that were imported. To scan project and package directories for licenses, you can run a script located in the engine's `scripts\license_scanner` subdirectory. This script will look for the `PackageInfo.json` file in order to create a summary file of all package licenses with SPDX tags for easy reference. 
+
+Refer to the instructions in [Engine and Project Distribution](./distributable-engine#license-file-generation) for more details.

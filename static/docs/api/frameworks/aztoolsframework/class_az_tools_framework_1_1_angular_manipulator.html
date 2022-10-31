@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -68,6 +68,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_angular_manipulator_1_1_current.html">Current</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The state of the manipulator during an interaction.  <a href="struct_az_tools_framework_1_1_angular_manipulator_1_1_current.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_angular_manipulator_1_1_fixed.html">Fixed</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unchanging data set once for the angular manipulator.  <a href="struct_az_tools_framework_1_1_angular_manipulator_1_1_fixed.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_angular_manipulator_1_1_start.html">Start</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The state of the manipulator at the start of an interaction.  <a href="struct_az_tools_framework_1_1_angular_manipulator_1_1_start.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,15 +117,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a522f1155d0a9f172dac80a50e51f1fbe"><td class="memItemLeft" align="right" valign="top"><a id="a522f1155d0a9f172dac80a50e51f1fbe"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAxis</b> (const AZ::Vector3 &amp;axis)</td></tr>
 <tr class="separator:a522f1155d0a9f172dac80a50e51f1fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af93b2d4d3227c35a52f0a67bdca0ef70"><td class="memItemLeft" align="right" valign="top"><a id="af93b2d4d3227c35a52f0a67bdca0ef70"></a>
+<tr class="memitem:a51293a9160c76ae96b1c83ea258a000e"><td class="memItemLeft" align="right" valign="top"><a id="a51293a9160c76ae96b1c83ea258a000e"></a>
 const AZ::Vector3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAxis</b> () const</td></tr>
-<tr class="separator:af93b2d4d3227c35a52f0a67bdca0ef70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a51293a9160c76ae96b1c83ea258a000e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5b56d080ae19bf4207fa07df15cd540"><td class="memItemLeft" align="right" valign="top"><a id="ad5b56d080ae19bf4207fa07df15cd540"></a>
+<a class="el" href="class_az_tools_framework_1_1_manipulator_view.html">ManipulatorView</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetView</b> ()</td></tr>
+<tr class="separator:ad5b56d080ae19bf4207fa07df15cd540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10326119df863c77e00400b3ff1e4e9"><td class="memItemLeft" align="right" valign="top"><a id="af10326119df863c77e00400b3ff1e4e9"></a>
+const <a class="el" href="class_az_tools_framework_1_1_manipulator_view.html">ManipulatorView</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetView</b> () const</td></tr>
+<tr class="separator:af10326119df863c77e00400b3ff1e4e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03f75138be3af0a9c08fa7fcd07d783e"><td class="memItemLeft" align="right" valign="top"><a id="a03f75138be3af0a9c08fa7fcd07d783e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetView</b> (AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_manipulator_view.html">ManipulatorView</a> &gt; &amp;&amp;view)</td></tr>
 <tr class="separator:a03f75138be3af0a9c08fa7fcd07d783e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9d1e20db35f29620d385484d19d8ef9"><td class="memItemLeft" align="right" valign="top"><a id="ab9d1e20db35f29620d385484d19d8ef9"></a>
-<a class="el" href="class_az_tools_framework_1_1_manipulator_view.html">ManipulatorView</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetView</b> () const</td></tr>
-<tr class="separator:ab9d1e20db35f29620d385484d19d8ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cbff99717b8535dfba3c4c98e5f39fd"><td class="memItemLeft" align="right" valign="top"><a id="a4cbff99717b8535dfba3c4c98e5f39fd"></a>
+<a class="el" href="struct_az_tools_framework_1_1_manipulator_state.html">ManipulatorState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateManipulatorState</b> () const</td></tr>
+<tr class="separator:a4cbff99717b8535dfba3c4c98e5f39fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_az_tools_framework_1_1_base_manipulator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_az_tools_framework_1_1_base_manipulator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html">AzToolsFramework::BaseManipulator</a></td></tr>
 <tr class="memitem:a02b5d7668dc213acf654fd07aa541a07 inherit pub_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memItemLeft" align="right" valign="top"><a id="a02b5d7668dc213acf654fd07aa541a07"></a>
 AZ_CLASS_ALLOCATOR_DECL&#160;</td><td class="memItemRight" valign="bottom"><b>BaseManipulator</b> (const <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html">BaseManipulator</a> &amp;)=delete</td></tr>
@@ -302,7 +311,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:18:19 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:28 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

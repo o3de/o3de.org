@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -48,7 +48,8 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_debug_1_1_i_event_logger_1_1_log_header.html#aa7273f566d18bbd4c3c995bbbcb62271">AZ::Debug::IEventLogger::LogHeader</a>
 </li>
 <li>m_accessFlags
-: <a class="el" href="struct_a_z_1_1_serialize_context_1_1_enumerate_instance_call_context.html#a463b5ece8b492275726699c1d7e7459d">AZ::SerializeContext::EnumerateInstanceCallContext</a>
+: <a class="el" href="struct_a_z_1_1_edit_context_1_1_enumerate_instance_call_context.html#a5238e18a623df84b74123e9c3ca00b56">AZ::EditContext::EnumerateInstanceCallContext</a>
+, <a class="el" href="struct_a_z_1_1_serialize_context_1_1_enumerate_instance_call_context.html#a463b5ece8b492275726699c1d7e7459d">AZ::SerializeContext::EnumerateInstanceCallContext</a>
 </li>
 <li>m_activeCacheSlot
 : <a class="el" href="class_a_z_1_1_i_o_1_1_storage_drive.html#ad8c5e3646f5af922f2b896f1db9d15b1">AZ::IO::StorageDrive</a>
@@ -151,7 +152,8 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_dom_1_1_json_1_1_null_delimited_string_stream.html#af3656df92bee254347f60593286ab69d">AZ::Dom::Json::NullDelimitedStringStream</a>
 </li>
 <li>m_beginElemCB
-: <a class="el" href="struct_a_z_1_1_serialize_context_1_1_enumerate_instance_call_context.html#adc0003d050486656b2501f76916c9124">AZ::SerializeContext::EnumerateInstanceCallContext</a>
+: <a class="el" href="struct_a_z_1_1_edit_context_1_1_enumerate_instance_call_context.html#adb0f1c85fe63021728036082bcb222ee">AZ::EditContext::EnumerateInstanceCallContext</a>
+, <a class="el" href="struct_a_z_1_1_serialize_context_1_1_enumerate_instance_call_context.html#adc0003d050486656b2501f76916c9124">AZ::SerializeContext::EnumerateInstanceCallContext</a>
 </li>
 <li>m_blockLastTouched
 : <a class="el" href="class_a_z_1_1_i_o_1_1_block_cache.html#a3b2b3963da3dba1794e9ffe8f08dabba">AZ::IO::BlockCache</a>
@@ -198,7 +200,7 @@ $(function() {
 , <a class="el" href="struct_a_z_1_1_i_o_1_1_dedicated_cache_config.html#aacda7e647358ee9d9c6093db0743a1c8">AZ::IO::DedicatedCacheConfig</a>
 </li>
 <li>m_capacity
-: <a class="el" href="struct_a_z_1_1_hpha_schema_1_1_descriptor.html#a7d14bfc02e8125e0a2ee2000e0196723">AZ::HphaSchema::Descriptor</a>
+: <a class="el" href="struct_a_z_1_1_hpha_schema_base_1_1_descriptor.html#a0c7b71af815f6d65213020ced5f0737a">AZ::HphaSchemaBase&lt; DebugAllocator &gt;::Descriptor</a>
 </li>
 <li>m_children
 : <a class="el" href="class_a_z_1_1_slice_metadata_info_component.html#a18fa55f7830d9e432445127f50d71814">AZ::SliceMetadataInfoComponent</a>
@@ -352,6 +354,10 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib_data.html#ae870281de4367a63442466dcf849e13a">AZ::IO::CompressorZLibData</a>
 , <a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std_data.html#a7cff3db18679a900b761d44f7f78fd6f">AZ::IO::CompressorZStdData</a>
 </li>
+<li>m_defaultErrorHandler
+: <a class="el" href="struct_a_z_1_1_edit_context_1_1_enumerate_instance_call_context.html#a0c0286da3abb9308698e0e62bf4accbc">AZ::EditContext::EnumerateInstanceCallContext</a>
+, <a class="el" href="struct_a_z_1_1_serialize_context_1_1_enumerate_instance_call_context.html#af50879633c537e8fc1658af861ded455">AZ::SerializeContext::EnumerateInstanceCallContext</a>
+</li>
 <li>m_delayedSections
 : <a class="el" href="class_a_z_1_1_i_o_1_1_block_cache.html#a5d45f5fa9bc858c5913a9847bf61d3d7">AZ::IO::BlockCache</a>
 </li>
@@ -383,6 +389,10 @@ $(function() {
 <li>m_element
 : <a class="el" href="class_a_z_1_1_serialize_context_1_1_data_element_node.html#a484933c94cacd8c9346ae5bf0fc21a1d">AZ::SerializeContext::DataElementNode</a>
 </li>
+<li>m_elementCallback
+: <a class="el" href="struct_a_z_1_1_edit_context_1_1_enumerate_instance_call_context.html#aaa6ef848e9bf7ebb0ced1517c05de9c3">AZ::EditContext::EnumerateInstanceCallContext</a>
+, <a class="el" href="struct_a_z_1_1_serialize_context_1_1_enumerate_instance_call_context.html#a5498451a620ac5168df7defb8aedc575">AZ::SerializeContext::EnumerateInstanceCallContext</a>
+</li>
 <li>m_elements
 : <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_data.html#a265717cf389787a1e82b1dd0808bb325">AZ::SerializeContext::ClassData</a>
 </li>
@@ -402,7 +412,8 @@ $(function() {
 : <a class="el" href="class_a_z_std_1_1vector.html#adf9cda007f803b041ae387322a645fa2">AZStd::vector&lt; T, Allocator &gt;</a>
 </li>
 <li>m_endElemCB
-: <a class="el" href="struct_a_z_1_1_serialize_context_1_1_enumerate_instance_call_context.html#a7464632b362202a820d6deeb37bf63a3">AZ::SerializeContext::EnumerateInstanceCallContext</a>
+: <a class="el" href="struct_a_z_1_1_edit_context_1_1_enumerate_instance_call_context.html#a6a143cc03504689b218eea444717f027">AZ::EditContext::EnumerateInstanceCallContext</a>
+, <a class="el" href="struct_a_z_1_1_serialize_context_1_1_enumerate_instance_call_context.html#a7464632b362202a820d6deeb37bf63a3">AZ::SerializeContext::EnumerateInstanceCallContext</a>
 </li>
 <li>m_entities
 : <a class="el" href="class_a_z_1_1_slice_component.html#af97ecf1f22cd25151989e4fbf87da91a">AZ::SliceComponent</a>
@@ -419,7 +430,8 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_slice_component.html#aad69bb4243d05880e9734e8c4eb06985">AZ::SliceComponent</a>
 </li>
 <li>m_errorHandler
-: <a class="el" href="struct_a_z_1_1_serialize_context_1_1_enumerate_instance_call_context.html#a9daa692c0390d7276b578aa6c911fde2">AZ::SerializeContext::EnumerateInstanceCallContext</a>
+: <a class="el" href="struct_a_z_1_1_edit_context_1_1_enumerate_instance_call_context.html#a2d84b5b30ccb202590b42cc6a49f1ee6">AZ::EditContext::EnumerateInstanceCallContext</a>
+, <a class="el" href="struct_a_z_1_1_serialize_context_1_1_enumerate_instance_call_context.html#a9daa692c0390d7276b578aa6c911fde2">AZ::SerializeContext::EnumerateInstanceCallContext</a>
 </li>
 <li>m_eventHandler
 : <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_data.html#a7e90a9e2a86408f0ae6877a0e6ea7fca">AZ::SerializeContext::ClassData</a>
@@ -435,6 +447,9 @@ $(function() {
 </li>
 <li>m_farClip
 : <a class="el" href="struct_a_z_1_1_view_frustum_attributes.html#a1c5f485fdc2522f36c4aea82e77c490b">AZ::ViewFrustumAttributes</a>
+</li>
+<li>m_fieldName
+: <a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_visit_args.html#a23c463cc8c085796a42d11726e2a7d8d">AZ::SettingsRegistryInterface::VisitArgs</a>
 </li>
 <li>m_fileHandles
 : <a class="el" href="class_a_z_1_1_i_o_1_1_storage_drive.html#a804225b5cbf30a14b9ab28178125271b">AZ::IO::StorageDrive</a>
@@ -456,10 +471,10 @@ $(function() {
 </li>
 <li>m_fixedMemoryBlock
 : <a class="el" href="class_a_z_1_1_component_application.html#a3ab3075bffd76fd17f2b16f70f44d398">AZ::ComponentApplication</a>
-, <a class="el" href="struct_a_z_1_1_hpha_schema_1_1_descriptor.html#a1db36288970d85093af140c77d8de331">AZ::HphaSchema::Descriptor</a>
+, <a class="el" href="struct_a_z_1_1_hpha_schema_base_1_1_descriptor.html#a4a2225d5a1d1f139e8e43246c7f12cf0">AZ::HphaSchemaBase&lt; DebugAllocator &gt;::Descriptor</a>
 </li>
 <li>m_fixedMemoryBlockByteSize
-: <a class="el" href="struct_a_z_1_1_hpha_schema_1_1_descriptor.html#a0549a3c5c8109688c6f1a250e021ad13">AZ::HphaSchema::Descriptor</a>
+: <a class="el" href="struct_a_z_1_1_hpha_schema_base_1_1_descriptor.html#a216f33d65e41cda8e356e6175ffd1992">AZ::HphaSchemaBase&lt; DebugAllocator &gt;::Descriptor</a>
 </li>
 <li>m_fixedMemoryBlocks
 : <a class="el" href="struct_a_z_1_1_system_allocator_1_1_descriptor_1_1_heap.html#a09fd4c087146a034073cdac2190dc731">AZ::SystemAllocator::Descriptor::Heap</a>
@@ -570,7 +585,7 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_heap_schema_1_1_descriptor.html#a2bc6a9f63b53c334cd9b0187b747b475">AZ::HeapSchema::Descriptor</a>
 </li>
 <li>m_isPoolAllocations
-: <a class="el" href="struct_a_z_1_1_hpha_schema_1_1_descriptor.html#a7c81759af5441ce02708d46bc470519a">AZ::HphaSchema::Descriptor</a>
+: <a class="el" href="struct_a_z_1_1_hpha_schema_base_1_1_descriptor.html#abb53f24341fdfd88c9b4fbe78fb9c493">AZ::HphaSchemaBase&lt; DebugAllocator &gt;::Descriptor</a>
 , <a class="el" href="struct_a_z_1_1_system_allocator_1_1_descriptor_1_1_heap.html#a1fce53b9ff5f8d30e9ae1944eac236cb">AZ::SystemAllocator::Descriptor::Heap</a>
 </li>
 <li>m_isRemoveReflection
@@ -587,6 +602,9 @@ $(function() {
 </li>
 <li>m_isStreamOwner
 : <a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html#a456362e5a50d30140d42c3e67177bbd9">AZ::IO::CompressorStream</a>
+</li>
+<li>m_jsonKeyPath
+: <a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_visit_args.html#a599dbef312c0ae819e45a7c3b439ceb4">AZ::SettingsRegistryInterface::VisitArgs</a>
 </li>
 <li>m_jsonPointerPrefix
 : <a class="el" href="struct_a_z_1_1_settings_registry_merge_utils_1_1_dumper_settings.html#a4228960234896f35792d9c068d7fff0e">AZ::SettingsRegistryMergeUtils::DumperSettings</a>
@@ -815,6 +833,9 @@ $(function() {
 <li>m_onlyEpilogWrites
 : <a class="el" href="class_a_z_1_1_i_o_1_1_block_cache.html#ab68561fd43f63cf6d51c69e81dd470a4">AZ::IO::BlockCache</a>
 </li>
+<li>m_originFilePath
+: <a class="el" href="struct_a_z_1_1_settings_registry_origin_tracker_1_1_settings_registry_origin.html#a85e288f9de98397886a970366108d956">AZ::SettingsRegistryOriginTracker::SettingsRegistryOrigin</a>
+</li>
 <li>m_outcome
 : <a class="el" href="struct_a_z_1_1_dom_1_1_patch_application_state.html#a601220a62be397c29ef3e7b24b0ae4b5">AZ::Dom::PatchApplicationState</a>
 </li>
@@ -836,7 +857,7 @@ $(function() {
 </li>
 <li>m_pageSize
 : <a class="el" href="struct_a_z_1_1_component_application_1_1_descriptor.html#ad0f689682f9b2b42dec38ddb3a84cc26">AZ::ComponentApplication::Descriptor</a>
-, <a class="el" href="struct_a_z_1_1_hpha_schema_1_1_descriptor.html#a5e0725e5ba6132ac78a9a06fbe231928">AZ::HphaSchema::Descriptor</a>
+, <a class="el" href="struct_a_z_1_1_hpha_schema_base_1_1_descriptor.html#a0e75afb2a568a70449e7d590c370aba1">AZ::HphaSchemaBase&lt; DebugAllocator &gt;::Descriptor</a>
 , <a class="el" href="struct_a_z_1_1_pool_schema_1_1_descriptor.html#a2a0eb1e641029b476eb7d559868af4ed">AZ::PoolSchema::Descriptor</a>
 , <a class="el" href="struct_a_z_1_1_system_allocator_1_1_descriptor_1_1_heap.html#a05ca11d89f469f5927d192ceabd44615">AZ::SystemAllocator::Descriptor::Heap</a>
 </li>
@@ -873,7 +894,7 @@ $(function() {
 </li>
 <li>m_poolPageSize
 : <a class="el" href="struct_a_z_1_1_component_application_1_1_descriptor.html#a2445a1b61998f7432cf85cf87c954bea">AZ::ComponentApplication::Descriptor</a>
-, <a class="el" href="struct_a_z_1_1_hpha_schema_1_1_descriptor.html#a51fb31d0a5ba6b50cff6a86155d1545e">AZ::HphaSchema::Descriptor</a>
+, <a class="el" href="struct_a_z_1_1_hpha_schema_base_1_1_descriptor.html#a6e1e8e68934b734cd1e3d89c40ec329c">AZ::HphaSchemaBase&lt; DebugAllocator &gt;::Descriptor</a>
 , <a class="el" href="struct_a_z_1_1_system_allocator_1_1_descriptor_1_1_heap.html#aaab83fea14c6ffa21e99f79a80f54b12">AZ::SystemAllocator::Descriptor::Heap</a>
 </li>
 <li>m_prettifyOutput
@@ -914,6 +935,9 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_json_base_context.html#a16cca94091fdd51f5fd54dfc34e4ee81">AZ::JsonBaseContext</a>
 , <a class="el" href="struct_a_z_1_1_json_deserializer_settings.html#a2ff3e8cd9cfe00982b5c5db40cb0a6bb">AZ::JsonDeserializerSettings</a>
 , <a class="el" href="struct_a_z_1_1_json_serializer_settings.html#a4e36869f1884cdf349666e829294c730">AZ::JsonSerializerSettings</a>
+</li>
+<li>m_registry
+: <a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_visit_args.html#a952f3a0849ef52200cd9955a8300adf8">AZ::SettingsRegistryInterface::VisitArgs</a>
 </li>
 <li>m_registryRootPointerPath
 : <a class="el" href="struct_a_z_1_1_settings_registry_merge_utils_1_1_config_parser_settings.html#a250d8a3d41570090940d38f2dd10e845">AZ::SettingsRegistryMergeUtils::ConfigParserSettings</a>
@@ -972,6 +996,12 @@ $(function() {
 </li>
 <li>m_serializer
 : <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_data.html#abc616ac76b45fbb857ba733b50cfe658">AZ::SerializeContext::ClassData</a>
+</li>
+<li>m_settingsKey
+: <a class="el" href="struct_a_z_1_1_settings_registry_origin_tracker_1_1_settings_registry_origin.html#aa2ee636a06de4a38587d5c322485aac4">AZ::SettingsRegistryOriginTracker::SettingsRegistryOrigin</a>
+</li>
+<li>m_settingsValue
+: <a class="el" href="struct_a_z_1_1_settings_registry_origin_tracker_1_1_settings_registry_origin.html#a458400183070ee9c847e76c97010343f">AZ::SettingsRegistryOriginTracker::SettingsRegistryOrigin</a>
 </li>
 <li>m_sharedRead
 : <a class="el" href="struct_a_z_1_1_i_o_1_1_requests_1_1_read_data.html#a457151735749875c3288b138df1273e5">AZ::IO::Requests::ReadData</a>
@@ -1039,7 +1069,7 @@ $(function() {
 , <a class="el" href="struct_a_z_1_1_serialize_context_1_1_data_element.html#a325bb85a2288a54b9dddba2125165f64">AZ::SerializeContext::DataElement</a>
 </li>
 <li>m_subAllocator
-: <a class="el" href="struct_a_z_1_1_hpha_schema_1_1_descriptor.html#a2e109980bb3a37d27573949863a37061">AZ::HphaSchema::Descriptor</a>
+: <a class="el" href="struct_a_z_1_1_hpha_schema_base_1_1_descriptor.html#aad287e5f99953f3de5ea9172ee6a0292">AZ::HphaSchemaBase&lt; DebugAllocator &gt;::Descriptor</a>
 , <a class="el" href="struct_a_z_1_1_system_allocator_1_1_descriptor_1_1_heap.html#a486626d56a712e752f445643be2594bb">AZ::SystemAllocator::Descriptor::Heap</a>
 </li>
 <li>m_subElements
@@ -1049,7 +1079,7 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html#a239f895704f6fd2163b2226eecd0c9a4">AZ::Data::AssetId</a>
 </li>
 <li>m_systemChunkSize
-: <a class="el" href="struct_a_z_1_1_hpha_schema_1_1_descriptor.html#a99d52dec0de35e679229d32a4274b3cb">AZ::HphaSchema::Descriptor</a>
+: <a class="el" href="struct_a_z_1_1_hpha_schema_base_1_1_descriptor.html#a8cc2439af5d44f84949835dc47afff06">AZ::HphaSchemaBase&lt; DebugAllocator &gt;::Descriptor</a>
 , <a class="el" href="struct_a_z_1_1_system_allocator_1_1_descriptor_1_1_heap.html#af5c33891deef715ce68a45336cee3eef">AZ::SystemAllocator::Descriptor::Heap</a>
 </li>
 <li>m_systemComponents
@@ -1066,7 +1096,7 @@ $(function() {
 , <a class="el" href="struct_a_z_1_1_i_o_1_1_requests_1_1_reschedule_data.html#a69c07d01b12ffdbfe8d4f12f301f7add">AZ::IO::Requests::RescheduleData</a>
 </li>
 <li>m_tempData
-: <a class="el" href="struct_a_z_1_1_behavior_value_parameter.html#a267a0494962fdb40f68a8dd9a4b3e7b6">AZ::BehaviorValueParameter</a>
+: <a class="el" href="struct_a_z_1_1_behavior_argument.html#a28b51d0db8151c0811c094f268da1fbf">AZ::BehaviorArgument</a>
 </li>
 <li>m_threadId
 : <a class="el" href="struct_a_z_1_1_debug_1_1_i_event_logger_1_1_prolog.html#a9ba2082dd27b922bb652a8c922d403c6">AZ::Debug::IEventLogger::Prolog</a>
@@ -1083,9 +1113,13 @@ $(function() {
 <li>m_transform
 : <a class="el" href="class_a_z_1_1_entity.html#a23c7ff3cde940cb183edd9919a6a15bd">AZ::Entity</a>
 </li>
+<li>m_treatOpaqueValuesOfSameTypeAsEqual
+: <a class="el" href="struct_a_z_1_1_dom_1_1_utils_1_1_comparison_parameters.html#a15bd04ba0c3c4a4067d086b1823e0046">AZ::Dom::Utils::ComparisonParameters</a>
+</li>
 <li>m_type
 : <a class="el" href="struct_a_z_1_1_i_o_1_1_i_streamer_types_1_1_request_memory_allocator_result.html#adf0d07d82cb997c7ec6aa9c70747b3e1">AZ::IO::IStreamerTypes::RequestMemoryAllocatorResult</a>
 , <a class="el" href="struct_a_z_1_1_script_context_debug_1_1_debug_value.html#a13816df0700489795732d10f2e327bbd">AZ::ScriptContextDebug::DebugValue</a>
+, <a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_visit_args.html#adbf55ab2177623f032a10ebd899c7ac4">AZ::SettingsRegistryInterface::VisitArgs</a>
 </li>
 <li>m_uncompressedOffset
 : <a class="el" href="struct_a_z_1_1_i_o_1_1_compressor_z_lib_seek_point.html#a653039f3884bb288924151d0d570d358">AZ::IO::CompressorZLibSeekPoint</a>
@@ -1108,7 +1142,7 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_debug_1_1_i_event_logger_1_1_log_header.html#a157d733430c7206f3c60a867b333b5dc">AZ::Debug::IEventLogger::LogHeader</a>
 </li>
 <li>m_value
-: <a class="el" href="struct_a_z_1_1_behavior_value_parameter.html#a2da6d7824b31df2b9f1f2da9dd0f8723">AZ::BehaviorValueParameter</a>
+: <a class="el" href="struct_a_z_1_1_behavior_argument.html#a1674602ff7821f633511bb97542ca3f3">AZ::BehaviorArgument</a>
 </li>
 <li>m_version
 : <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_data.html#a79b423a980c786653b746b1d0d94413c">AZ::SerializeContext::ClassData</a>
@@ -1143,13 +1177,13 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std_data.html#a5b408ec981dcb56b6a66976e650c06d3">AZ::IO::CompressorZStdData</a>
 </li>
 <li>MaxStringBuffer
-: <a class="el" href="struct_a_z_1_1_uuid.html#a42b1886bdc80ffe3ce010cfc841430fd">AZ::Uuid</a>
+: <a class="el" href="struct_a_z_1_1_uuid.html#a6f8baf9427c9534065843d46e4450859">AZ::Uuid</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:17:57 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:06 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

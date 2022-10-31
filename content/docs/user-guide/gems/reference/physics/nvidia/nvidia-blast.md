@@ -49,12 +49,16 @@ The NVIDIA Blast Gem provides the following:
 
 1. Configure the build:
 
+   ```cmd
+   cmake -B <CMake build dir> -S . -G "Visual Studio 16" 
    ```
-   cmake -B <CMake build dir> -S . -G "Visual Studio 16 2019" 
-   ```
+
+   {{< note >}}
+Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](/docs/user-guide/build/configure-and-build/#configuring-projects).
+   {{< /note >}}
 
 1. Build your project:
 
-   ```
+   ```cmd
    cmake --build <CMake build dir> --target <Project name> --config profile -- -m
    ```

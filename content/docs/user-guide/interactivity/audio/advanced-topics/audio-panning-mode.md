@@ -16,19 +16,12 @@ To set the speaker panning mode, send a request in C++ to the audio system.
 ## C++ Example: Request Set Panning Mode
 
 ```cpp
-using namespace Audio;
+if (auto audioSystem = AZ::Interface<Audio::IAudioSystem>::Get();
+    audioSystem != nullptr)
+{
+    Audio::SystemRequest::SetPanningMode setPanMode;
+    setPanMode.m_panningMode = Audio::PanningMode::Headphones; // or PanningMode::Speakers
 
-PanningMode panningMode = PanningMode::Speakers; // or PanningMode::Headphones
-
-SAudioRequest request;
-
-SAudioManagerRequestData\<eAMRT\_SET\_AUDIO\_PANNING\_MODE\>
-requestData(panningMode);
-
-request.nFlags = eARF\_PRIORITY\_NORMAL;
-
-request.pData = &requestData;
-
-AudioSystemRequestBus::Broadcast(&AudioSystemRequestBus::Events::PushRequest,
-request);
+    audioSystem->PushRequest(AZStd::move(setPanMode));
+}
 ```

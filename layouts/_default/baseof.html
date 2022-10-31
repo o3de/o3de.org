@@ -16,7 +16,7 @@
     {{ partial "meta-tags.html" . }}
   </head>
   {{ partial "javascript.html" }}
-    <body>
+    <body class="{{if .IsHome -}}home-page{{- end }}">
       {{ partial "navbar.html" . }}
     <main id="primary">
       {{ if eq  .Type "search" }}

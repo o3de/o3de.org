@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -190,7 +190,7 @@ $(function() {
 , <a class="el" href="struct_az_framework_1_1_reload_spawnable_optional_args.html#ac8f702e28db2e8aaf254a6170def2092">AzFramework::ReloadSpawnableOptionalArgs</a>
 , <a class="el" href="struct_az_framework_1_1_spawn_all_entities_optional_args.html#a5134e9bed53a43cfbccae85aabf652f7">AzFramework::SpawnAllEntitiesOptionalArgs</a>
 , <a class="el" href="struct_az_framework_1_1_spawn_entities_optional_args.html#a1b015aaff6367d54451822b046a5b0b6">AzFramework::SpawnEntitiesOptionalArgs</a>
-, <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html#a8fef3043ae32282ce72331866bc60c7b">AzFramework::Terrain::TerrainDataRequests::ProcessAsyncParams</a>
+, <a class="el" href="struct_az_framework_1_1_terrain_1_1_query_async_params.html#a5fcb5a077a82e1279814c39beb65733e">AzFramework::Terrain::QueryAsyncParams</a>
 , <a class="el" href="struct_az_framework_1_1_update_entity_alias_types_optional_args.html#acea7b7961462cd4533cdf0f8a8150b99">AzFramework::UpdateEntityAliasTypesOptionalArgs</a>
 </li>
 <li>m_connectionDirection
@@ -210,6 +210,9 @@ $(function() {
 </li>
 <li>m_context
 : <a class="el" href="class_az_framework_1_1_script_component.html#a17effc739cf0f0a12c705ad4cfee3534">AzFramework::ScriptComponent</a>
+</li>
+<li>m_contextData
+: <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_adapter_message.html#a7fa8b895b2ce6198234a0d82f8378064">AZ::DocumentPropertyEditor::AdapterMessage</a>
 </li>
 <li>m_contextId
 : <a class="el" href="class_az_framework_1_1_entity_context.html#a14f9ee66c3041d59ea27310d33d708d1">AzFramework::EntityContext</a>
@@ -231,9 +234,6 @@ $(function() {
 <li>m_dampingRatio
 : <a class="el" href="struct_physics_1_1_ragdoll_node_state.html#a6620b86cb40447eb7eb4b69e7df4a78d">Physics::RagdollNodeState</a>
 </li>
-<li>m_defaultMaterialConfiguration
-: <a class="el" href="struct_az_physics_1_1_system_configuration.html#a951523994a0a29547ee005400a0cc8fc">AzPhysics::SystemConfiguration</a>
-</li>
 <li>m_delayed
 : <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_queue.html#aacae6eac726a3211e52a828c584642ac">AzFramework::SpawnableEntitiesManager::Queue</a>
 </li>
@@ -250,7 +250,7 @@ $(function() {
 : <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#a10c3ea65661eb22eda87bb6f3aa078d6">AzFramework::TextDrawParameters</a>
 </li>
 <li>m_desiredNumberOfJobs
-: <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html#a310b3eaf959665b7c02b601c41dc3ec6">AzFramework::Terrain::TerrainDataRequests::ProcessAsyncParams</a>
+: <a class="el" href="struct_az_framework_1_1_terrain_1_1_query_async_params.html#a0a412fc7be80b016a9547f80db38fcb0">AzFramework::Terrain::QueryAsyncParams</a>
 </li>
 <li>m_deviceId
 : <a class="el" href="struct_az_framework_1_1_input_channel_1_1_snapshot.html#a690b4c695536b11471ecd585522d8b29">AzFramework::InputChannel::Snapshot</a>
@@ -366,10 +366,11 @@ $(function() {
 : <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#ac4eed2be31c2917353c348d2f0d2b954">AzFramework::TextDrawParameters</a>
 </li>
 <li>m_handleEventsFn
-: <a class="el" href="class_az_framework_1_1_custom_camera_input.html#aac5a634bad36a82cef9e43e9b42012ca">AzFramework::CustomCameraInput</a>
+: <a class="el" href="class_az_framework_1_1_custom_camera_input.html#aa0253913726cede7f1052cb3f154e173">AzFramework::CustomCameraInput</a>
 </li>
 <li>m_height
 : <a class="el" href="struct_az_framework_1_1_screen_size.html#a28b5cbf80120649d8b398289d60e10bd">AzFramework::ScreenSize</a>
+, <a class="el" href="class_physics_1_1_capsule_shape_configuration.html#a03db9ddb06c455390d8e65437f066eb9">Physics::CapsuleShapeConfiguration</a>
 , <a class="el" href="struct_physics_1_1_height_material_point.html#a2eb4cf15878e5a7eb126289db6ba8962">Physics::HeightMaterialPoint</a>
 </li>
 <li>m_highPriorityThreshold
@@ -445,6 +446,10 @@ $(function() {
 <li>m_launchTimeout
 : <a class="el" href="struct_az_framework_1_1_asset_system_1_1_connection_settings.html#a3fef4781e7574f005bd9dd345935afca">AzFramework::AssetSystem::ConnectionSettings</a>
 </li>
+<li>m_legacyMaterialSelection
+: <a class="el" href="class_physics_1_1_character_configuration.html#adf09a772d83e497f1096ceafd9ce77ef">Physics::CharacterConfiguration</a>
+, <a class="el" href="class_physics_1_1_collider_configuration.html#a971ceb3c191e4418ce90a5b944b3d8fe">Physics::ColliderConfiguration</a>
+</li>
 <li>m_linearVelocity
 : <a class="el" href="struct_physics_1_1_ragdoll_node_state.html#a722d1f69242e3455d1a1137a09cd70b5">Physics::RagdollNodeState</a>
 </li>
@@ -461,18 +466,18 @@ $(function() {
 <li>m_magneticFieldChannelsById
 : <a class="el" href="class_az_framework_1_1_input_device_motion.html#a7d566cfb26bb4a29527f0bffe9625a4e">AzFramework::InputDeviceMotion</a>
 </li>
-<li>m_material
-: <a class="el" href="struct_az_physics_1_1_scene_query_hit.html#ad355b5501abe427d8af787f44379dc80">AzPhysics::SceneQueryHit</a>
-</li>
 <li>m_materialIndex
 : <a class="el" href="struct_physics_1_1_height_material_point.html#afac85b5d97ae3fa2f7ea410eae386540">Physics::HeightMaterialPoint</a>
 </li>
-<li>m_materialLibraryAsset
-: <a class="el" href="struct_az_physics_1_1_system_configuration.html#a9274ca6664ca0b838e656ec8decc5fb6">AzPhysics::SystemConfiguration</a>
+<li>m_materialProperties
+: <a class="el" href="class_physics_1_1_material_asset.html#a39b34a1885962ae023350286524326e2">Physics::MaterialAsset</a>
 </li>
-<li>m_materialSelection
-: <a class="el" href="class_physics_1_1_character_configuration.html#af0a6483ea3c54fb17d86c348d92ac968">Physics::CharacterConfiguration</a>
-, <a class="el" href="class_physics_1_1_collider_configuration.html#a9ca242e6963bb2ce4f9acba5bb8f45b8">Physics::ColliderConfiguration</a>
+<li>m_materialSlots
+: <a class="el" href="class_physics_1_1_character_configuration.html#a8d9f6e0d65536d9b5b6cabb950a08819">Physics::CharacterConfiguration</a>
+, <a class="el" href="class_physics_1_1_collider_configuration.html#a1dc2856eb44c19a733d73670c867dd9d">Physics::ColliderConfiguration</a>
+</li>
+<li>m_materialType
+: <a class="el" href="class_physics_1_1_material_asset.html#a9c07985b926133e538042b35fe57adb9">Physics::MaterialAsset</a>
 </li>
 <li>m_maxCcdPasses
 : <a class="el" href="struct_az_physics_1_1_scene_configuration.html#a77cd679107105679a6f034c10cb31459">AzPhysics::SceneConfiguration</a>
@@ -489,11 +494,20 @@ $(function() {
 <li>m_maxTimestep
 : <a class="el" href="struct_az_physics_1_1_system_configuration.html#ad6393376043b3dbd2a24cefeccb32748">AzPhysics::SystemConfiguration</a>
 </li>
+<li>m_messageName
+: <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_adapter_message.html#a843ce4b81bf06b359412ee5057aa0bd9">AZ::DocumentPropertyEditor::AdapterMessage</a>
+</li>
+<li>m_messageOrigin
+: <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_adapter_message.html#a4ccd00d6aadd1ccc11ab655ad3785370">AZ::DocumentPropertyEditor::AdapterMessage</a>
+</li>
+<li>m_messageParameters
+: <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_adapter_message.html#af9aed5fcb6eac663adcb27ec04c95325">AZ::DocumentPropertyEditor::AdapterMessage</a>
+</li>
 <li>m_minimumMovementDistance
 : <a class="el" href="class_physics_1_1_character_configuration.html#aae463514aca5a35b40c5989ce0fbeab1">Physics::CharacterConfiguration</a>
 </li>
 <li>m_minPositionsPerJob
-: <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html#ad60a4ea61dfdbc723b50dadbfa6bbc13">AzFramework::Terrain::TerrainDataRequests::ProcessAsyncParams</a>
+: <a class="el" href="struct_az_framework_1_1_terrain_1_1_query_async_params.html#ae1fff44a3ba9a55a95dd612cc337bfce">AzFramework::Terrain::QueryAsyncParams</a>
 </li>
 <li>m_modifierKeyStates
 : <a class="el" href="class_az_framework_1_1_input_device_keyboard.html#ad32e0bc42ddcb80b94cd69e4e07df3ec">AzFramework::InputDeviceKeyboard</a>
@@ -548,6 +562,12 @@ $(function() {
 </li>
 <li>m_notificationBus
 : <a class="el" href="class_az_framework_1_1_transform_component.html#ad877799746bae18636459647d919d5fa">AzFramework::TransformComponent</a>
+</li>
+<li>m_numPointsX
+: <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_query_region.html#a2ce5132a9462e23cfd5c34e51aba1cec">AzFramework::Terrain::TerrainQueryRegion</a>
+</li>
+<li>m_numPointsY
+: <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_query_region.html#a6b719f4deb2274c7d9d41c91887996dc">AzFramework::Terrain::TerrainQueryRegion</a>
 </li>
 <li>m_objectLayers
 : <a class="el" href="struct_physics_1_1_debug_draw_settings.html#abdcc9a6a5e20080ee8cfa464f5ef8647">Physics::DebugDrawSettings</a>
@@ -611,6 +631,9 @@ $(function() {
 </li>
 <li>m_pendingRequest
 : <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_queue.html#a192e9f9c4d333418c13004c9d2c70023">AzFramework::SpawnableEntitiesManager::Queue</a>
+</li>
+<li>m_physicsMaterialId
+: <a class="el" href="struct_az_physics_1_1_scene_query_hit.html#a1a31925db66065878d4051e27d4d01d4">AzPhysics::SceneQueryHit</a>
 </li>
 <li>m_pimpl
 : <a class="el" href="class_az_framework_1_1_application.html#a7124043455bce8e8f4764be07eb222ff">AzFramework::Application</a>
@@ -801,6 +824,9 @@ $(function() {
 <li>m_stepHeight
 : <a class="el" href="class_physics_1_1_character_configuration.html#ab3325803007f1f399ef2c1905e46dd89">Physics::CharacterConfiguration</a>
 </li>
+<li>m_stepSize
+: <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_query_region.html#afd0ef0932269a5f598c8ef369274b9b0">AzFramework::Terrain::TerrainQueryRegion</a>
+</li>
 <li>m_strength
 : <a class="el" href="struct_physics_1_1_ragdoll_node_state.html#a59c308e75d728ef97ed7c2d253584050">Physics::RagdollNodeState</a>
 </li>
@@ -922,6 +948,9 @@ $(function() {
 <li>m_value
 : <a class="el" href="struct_az_framework_1_1_input_channel_1_1_snapshot.html#af5164f9b277af70fa30fdd6a09c91bb7">AzFramework::InputChannel::Snapshot</a>
 </li>
+<li>m_version
+: <a class="el" href="class_physics_1_1_material_asset.html#a1712f64020ff56076596a5153c4bb133">Physics::MaterialAsset</a>
+</li>
 <li>m_vertexStride
 : <a class="el" href="class_physics_1_1_triangle_mesh_shape_configuration.html#a7caf13d29ff8a25b3b848b726e87bd11">Physics::TriangleMeshShapeConfiguration</a>
 </li>
@@ -977,17 +1006,11 @@ $(function() {
 <li>m_yaw
 : <a class="el" href="struct_az_framework_1_1_camera.html#a161cd1436069c7f19277b6ce4980dc40">AzFramework::Camera</a>
 </li>
-<li>MaxDensityLimit
-: <a class="el" href="class_physics_1_1_material_configuration.html#a4200a38046612ed81ec4148084818ec0">Physics::MaterialConfiguration</a>
-</li>
 <li>Middle
 : <a class="el" href="struct_az_framework_1_1_input_device_mouse_1_1_button.html#a853d64312094c122a30e10d05e40a9d8">AzFramework::InputDeviceMouse::Button</a>
 </li>
-<li>MinDensityLimit
-: <a class="el" href="class_physics_1_1_material_configuration.html#a972fe72c39bc940d1c1a946c4aec03a8">Physics::MaterialConfiguration</a>
-</li>
 <li>MinPositionsPerJobDefault
-: <a class="el" href="struct_az_framework_1_1_terrain_1_1_terrain_data_requests_1_1_process_async_params.html#a4fa8e3c63d4e21b2c67c284628436271">AzFramework::Terrain::TerrainDataRequests::ProcessAsyncParams</a>
+: <a class="el" href="struct_az_framework_1_1_terrain_1_1_query_async_params.html#a43f90cce993acfada9e1fec0aa0f4b8e">AzFramework::Terrain::QueryAsyncParams</a>
 </li>
 <li>ModifierAltL
 : <a class="el" href="struct_az_framework_1_1_input_device_keyboard_1_1_key.html#a18f2fcd22ff5c901e85475a9714e90b7">AzFramework::InputDeviceKeyboard::Key</a>
@@ -1026,7 +1049,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:18:06 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:16 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

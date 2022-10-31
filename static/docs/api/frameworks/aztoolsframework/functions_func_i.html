@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -56,7 +56,6 @@ $(function() {
 , <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a693b2c6426a04b255b5640899db80356">AzToolsFramework::Components::EditorComponentBase</a>
 , <a class="el" href="class_az_tools_framework_1_1_components_1_1_generic_component_wrapper.html#a675450902151b0aef32259d147be9011">AzToolsFramework::Components::GenericComponentWrapper</a>
 , <a class="el" href="class_az_tools_framework_1_1_components_1_1_script_editor_component.html#a1db7e7d4dae4da6ab99215219e83f1f6">AzToolsFramework::Components::ScriptEditorComponent</a>
-, <a class="el" href="class_az_tools_framework_1_1_components_1_1_selection_component.html#a1e56f89d468cf96ec3c7591b68dc6c4c">AzToolsFramework::Components::SelectionComponent</a>
 , <a class="el" href="class_az_tools_framework_1_1_components_1_1_transform_component.html#a06c7d2515337e71cc3e6fcb2961efb69">AzToolsFramework::Components::TransformComponent</a>
 , <a class="el" href="class_az_tools_framework_1_1_layers_1_1_editor_layer_component.html#a7ab73acb568569b8c21f65c24b89be71">AzToolsFramework::Layers::EditorLayerComponent</a>
 </li>
@@ -74,7 +73,7 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_manager.html#a08d8e0ca9b5467f47df659a0a38811ea">AzToolsFramework::ViewportUi::ViewportUiManager</a>
 </li>
 <li>InjectFile()
-: <a class="el" href="class_az_tools_framework_1_1_asset_bundle_component.html#a0021a155810f5a72db14c94971efff9b">AzToolsFramework::AssetBundleComponent</a>
+: <a class="el" href="class_az_tools_framework_1_1_asset_bundle_component.html#adfba608442e68e86cdc05f95dcab35aa">AzToolsFramework::AssetBundleComponent</a>
 </li>
 <li>InjectFiles()
 : <a class="el" href="class_az_tools_framework_1_1_asset_bundle_component.html#aa58c472593496a78c777888e11a6acb4">AzToolsFramework::AssetBundleComponent</a>
@@ -84,6 +83,9 @@ $(function() {
 </li>
 <li>InstallDisplayScene()
 : <a class="el" href="class_az_tools_framework_1_1_editor_box_select.html#af1681e1eabb821a509a0aa9830477d6c">AzToolsFramework::EditorBoxSelect</a>
+</li>
+<li>InstallEnabledStateCallback()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#a73108c1b2f9c4dc64019ed3f1e06c162">AzToolsFramework::ActionManagerInterface</a>
 </li>
 <li>InstallLeftMouseDown()
 : <a class="el" href="class_az_tools_framework_1_1_editor_box_select.html#ab85ac692c51a901ad5b981db30177bc0">AzToolsFramework::EditorBoxSelect</a>
@@ -136,8 +138,20 @@ $(function() {
 <li>InvalidatePropertyDisplay()
 : <a class="el" href="class_az_tools_framework_1_1_tools_application_events.html#af8016d717916eea43cbf814e425385a0">AzToolsFramework::ToolsApplicationEvents</a>
 </li>
+<li>IsActionContextRegistered()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#a063e379336a2edf9f97e41a18425fdf6">AzToolsFramework::ActionManagerInterface</a>
+</li>
+<li>IsActionEnabled()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#af713b3c8b63e0be00d8e5debf3e40c31">AzToolsFramework::ActionManagerInterface</a>
+</li>
+<li>IsActionRegistered()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#a7b5a0c81d7c6b13816efd1183d366f59">AzToolsFramework::ActionManagerInterface</a>
+</li>
 <li>IsActive()
 : <a class="el" href="class_az_tools_framework_1_1_source_control_connection_requests.html#aac8188451c2c6f6842555a8a7efd1e1e">AzToolsFramework::SourceControlConnectionRequests</a>
+</li>
+<li>IsActiveCamera()
+: <a class="el" href="class_camera_1_1_editor_camera_view_requests.html#a63f43c1ee64ac1ce7f8ceb97c6a34c14">Camera::EditorCameraViewRequests</a>
 </li>
 <li>IsAppConfigWritable()
 : <a class="el" href="class_legacy_framework_1_1_framework_application_messages.html#a9a0755e8643bbe8a7b7079bce811be80">LegacyFramework::FrameworkApplicationMessages</a>
@@ -147,6 +161,9 @@ $(function() {
 </li>
 <li>IsAvailable()
 : <a class="el" href="struct_az_tools_framework_1_1_source_control_setting_info.html#ac552e135c63efabb37a460d5f8daeb75">AzToolsFramework::SourceControlSettingInfo</a>
+</li>
+<li>IsCheckable()
+: <a class="el" href="class_az_tools_framework_1_1_editor_action.html#aacee3b26f9c7691a26dd1d5fee5e7e38">AzToolsFramework::EditorAction</a>
 </li>
 <li>IsComponentEnabled()
 : <a class="el" href="class_az_tools_framework_1_1_editor_component_a_p_i_requests.html#a704940bc3ed6bfeffd8e710b59f14b0d">AzToolsFramework::EditorComponentAPIRequests</a>
@@ -158,6 +175,9 @@ $(function() {
 <li>IsContainerOpen()
 : <a class="el" href="class_az_tools_framework_1_1_container_entity_interface.html#ae56fee4692c8b0677e8598a831254265">AzToolsFramework::ContainerEntityInterface</a>
 , <a class="el" href="class_az_tools_framework_1_1_container_entity_system_component.html#a4eb279a1bad9274d0b27597e881090dc">AzToolsFramework::ContainerEntitySystemComponent</a>
+</li>
+<li>IsDefaultHandler()
+: <a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html#a473278dba9ed608ba745db166319a74a">AzToolsFramework::PropertyHandlerWidgetInterface</a>
 </li>
 <li>IsDifferentVersusComparison()
 : <a class="el" href="class_az_tools_framework_1_1_instance_data_node.html#a1b90488dc455cb00dcf568dfc651a80a">AzToolsFramework::InstanceDataNode</a>
@@ -177,6 +197,9 @@ $(function() {
 <li>IsEditorRunningGame()
 : <a class="el" href="class_az_tools_framework_1_1_editor_entity_context_requests.html#abf7c50095033dca4910af41962a1fd23">AzToolsFramework::EditorEntityContextRequests</a>
 </li>
+<li>IsEnabled()
+: <a class="el" href="class_az_tools_framework_1_1_editor_action.html#aad3235c9f88c708485e8c6bbb629e216">AzToolsFramework::EditorAction</a>
+</li>
 <li>IsEntityEditable()
 : <a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#ab2299e9c4bd4a3dde8a55a292190ba1a">AzToolsFramework::ToolsApplicationRequests</a>
 </li>
@@ -185,6 +208,10 @@ $(function() {
 </li>
 <li>IsEntrySupported()
 : <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_previewer_factory.html#a4478d4bfba4714beb03b8dc29e224e79">AzToolsFramework::AssetBrowser::PreviewerFactory</a>
+</li>
+<li>IsFocusedPrefabInstanceReadOnly()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a53e2ab13378daeff544c635207058d22">AzToolsFramework::Prefab::PrefabFocusHandler</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface.html#a76ff4bc3a022711e6eabc42151143b59">AzToolsFramework::Prefab::PrefabFocusInterface</a>
 </li>
 <li>IsFocusRoot()
 : <a class="el" href="class_az_tools_framework_1_1_focus_mode_interface.html#a7caca0059fbfc3136d7f1ecb09011863">AzToolsFramework::FocusModeInterface</a>
@@ -220,6 +247,9 @@ $(function() {
 <li>IsLoading()
 : <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#a8986fb60bd417675e1cb865ee46cfda3">AzToolsFramework::Thumbnailer::ThumbnailerRequests</a>
 </li>
+<li>IsMenuRegistered()
+: <a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html#a5c9281c7ead464700154a8570c5c1cbb">AzToolsFramework::MenuManagerInterface</a>
+</li>
 <li>IsModeActive()
 : <a class="el" href="class_az_tools_framework_1_1_viewport_editor_modes.html#a4dc32941e947cc39ae92e44cdf33233d">AzToolsFramework::ViewportEditorModes</a>
 , <a class="el" href="class_az_tools_framework_1_1_viewport_editor_modes_interface.html#ad406f2fb30138d4ece6325ccf54200fe">AzToolsFramework::ViewportEditorModesInterface</a>
@@ -248,9 +278,6 @@ $(function() {
 </li>
 <li>IsPrimary()
 : <a class="el" href="class_legacy_framework_1_1_framework_application_messages.html#ab4b9c6af7df2123632f388f6a76c562e">LegacyFramework::FrameworkApplicationMessages</a>
-</li>
-<li>IsPrimarySelection()
-: <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a33f2af872709c4acc7098006ae143701">AzToolsFramework::Components::EditorComponentBase</a>
 </li>
 <li>IsPythonActive()
 : <a class="el" href="class_az_tools_framework_1_1_editor_python_events_interface.html#a7d60387a2e4ab598be2c08d63390d5ad">AzToolsFramework::EditorPythonEventsInterface</a>
@@ -338,11 +365,14 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_editor_visible_entity_data_cache.html#afce33c0234ffc93031bf18f241dd65a7">AzToolsFramework::EditorVisibleEntityDataCache</a>
 , <a class="el" href="class_az_tools_framework_1_1_editor_visible_entity_data_cache_interface.html#a5359bba8371e180ca400f8f798ec09a8">AzToolsFramework::EditorVisibleEntityDataCacheInterface</a>
 </li>
+<li>IsWidgetActionRegistered()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#a32887a0869c65c40be25210ea46eab2f">AzToolsFramework::ActionManagerInterface</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:18:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:35 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

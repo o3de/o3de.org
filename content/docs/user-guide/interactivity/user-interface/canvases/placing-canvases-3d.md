@@ -11,7 +11,6 @@ You can use any material on an entity to display a texture rendered by a UI canv
 
 ## Placing a canvas in the world
 
-
 1. [Create a UI canvas](/docs/user-guide/interactivity/user-interface/canvases) in [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/). 
 
 1. In the [canvas properties](/docs/user-guide/interactivity/user-interface/canvases/canvas-properties), enable the **Render to texture** property.  

@@ -1,36 +1,48 @@
 {{ $title := site.Title }}
 {{ $desc  := site.Params.description | markdownify }}
-<div class="hero-block scalable d-flex flex-column align-items-center justify-content-around">
+<div class="hero-block scalable d-flex flex-column align-items-center justify-content-end">
   <div class="hero-slideshow-background">
     <div id="hero-slideshow" class="hero-slideshow">
-      <div class="hero-slideshow-image" style="background-image: url('images/home/slideshow/003.jpg')"></div>
+      
+      <video class="" type="video/mp4"
+       muted  autoplay="true" loop="true" poster="/video/poster.jpg" 
+       src="/video/Website Banner_Full Test_o2gd.mp4" preload="auto" >
+      </video>
+      <!-- <div class="hero-slideshow-image" style="background-image: url('images/home/slideshow/003.jpg')"></div>
       <div class="hero-slideshow-image" style="background-image: url('images/home/slideshow/004.png')"></div>
       <div class="hero-slideshow-image" style="background-image: url('images/home/slideshow/005.png')"></div>
       <div class="hero-slideshow-image" style="background-image: url('images/home/slideshow/006.jpg')"></div>
       <div class="hero-slideshow-image" style="background-image: url('images/home/slideshow/001.jpg')"></div>
-      <div class="hero-slideshow-image" style="background-image: url('images/home/slideshow/002.jpg')"></div>
+      <div class="hero-slideshow-image" style="background-image: url('images/home/slideshow/002.jpg')"></div> -->
     </div>
   </div>
   <div class="container hero-slideshow-foreground">
     <div class="row">
-      <div class="col col-12 col-md-7 pb-4 pt-4">
+      <div class="col col-12 col-md-6 pb-4 pt-4">
           <h1 class="title">
-            {{ $title }}
+            Open source, <br>real-time 3D <br>engine
           </h1>
-          <h4 class="title mt-0">
-            An open-source, real-time 3D development engine
-          </h4>
+          <h5 class="title mt-4">
+            UPDATE NEWS
+          </h5>
 
-          {{ with $desc }}
-          <p class="desc mt-5">
+          <!-- {{ with $desc }}
+          <p class="desc mt-3">
             {{ . }}
           </p>
-          {{ end }}
+          {{ end }} -->
+        
+          <p class="desc mt-3">
+            Easier team collaboration, artist workflows & multiplayer setup, increased terrain performance, new rendering features
+          </p>
+          
 
           <p class="buttons">
-            <a href="/download" class="mt-4 btn btn-lg text-white download-cta">Download O3DE</a>
+            <a href="/download" class="mt-4 btn btn-lg download-cta">GET THE LATEST VERSION</a>
+            <a href="/docs" class="mt-4 btn btn-lg border-cta">LEARN MORE</a>
           </p>
         </div>
       </div>
     </div>
+  <p class="vertical-text">Open up — Level up</p>  
 </div>

@@ -586,15 +586,13 @@ The following instructions walk you through how to store the icon using the Qt R
 
 ### Windows
 
-For Windows, build and debug your custom tool using **Visual Studio 2019**.
+For Windows, build and debug your custom tool using **Visual Studio**.
 
-1. Launch Visual Studio 2019 and open the O3DE solution.
+1. Launch Visual Studio and open the O3DE solution.
 
 1. Find your Gem in the Solution Explorer. Right-click and select **Build** or **Debug**.
 
-
-
-2. Open your project in the Editor and load the Gem.
+1. Open your project in the Editor and load the Gem.
 
 Congratulations! You created a custom tool Gem that's written in C++, built it, and loaded it in the Editor. Your Shape Example tool should look something like this:
 

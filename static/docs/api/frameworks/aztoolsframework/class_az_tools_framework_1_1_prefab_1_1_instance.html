@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -79,12 +79,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af99b06f0a08ad5c9f77a5d8e6f959134"><td class="memItemLeft" align="right" valign="top"><a id="af99b06f0a08ad5c9f77a5d8e6f959134"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> (InstanceOptionalReference parent)</td></tr>
 <tr class="separator:af99b06f0a08ad5c9f77a5d8e6f959134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c81a1cda9482d29293be1a6055ba42"><td class="memItemLeft" align="right" valign="top"><a id="ac4c81a1cda9482d29293be1a6055ba42"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> (InstanceOptionalReference parent, InstanceAlias alias)</td></tr>
+<tr class="separator:ac4c81a1cda9482d29293be1a6055ba42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b1bb156855d6e1748d57e42485a213"><td class="memItemLeft" align="right" valign="top"><a id="a54b1bb156855d6e1748d57e42485a213"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> (InstanceOptionalReference parent, InstanceAlias alias, EntityIdInstanceRelationship entityIdInstanceRelationship)</td></tr>
+<tr class="separator:a54b1bb156855d6e1748d57e42485a213"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af24504efe435ed9f3f1af92bfbaec951"><td class="memItemLeft" align="right" valign="top"><a id="af24504efe435ed9f3f1af92bfbaec951"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> (AZStd::unique_ptr&lt; AZ::Entity &gt; containerEntity, InstanceOptionalReference parent)</td></tr>
 <tr class="separator:af24504efe435ed9f3f1af92bfbaec951"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77aa15b76ffcd2bd9d4b062d080549a5"><td class="memItemLeft" align="right" valign="top"><a id="a77aa15b76ffcd2bd9d4b062d080549a5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> (InstanceAlias alias)</td></tr>
 <tr class="separator:a77aa15b76ffcd2bd9d4b062d080549a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7ad5eacd27cbd125692e9930955325"><td class="memItemLeft" align="right" valign="top"><a id="a7e7ad5eacd27cbd125692e9930955325"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> (EntityIdInstanceRelationship entityIdInstanceRelationship)</td></tr>
+<tr class="separator:a7e7ad5eacd27cbd125692e9930955325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8647f86c27d53bd36ba7e4794fbaaf36"><td class="memItemLeft" align="right" valign="top"><a id="a8647f86c27d53bd36ba7e4794fbaaf36"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> (InstanceAlias alias, EntityIdInstanceRelationship entityIdInstanceRelationship)</td></tr>
+<tr class="separator:a8647f86c27d53bd36ba7e4794fbaaf36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bfd3f2083c5c29fd433e4e334c9e965"><td class="memItemLeft" align="right" valign="top"><a id="a2bfd3f2083c5c29fd433e4e334c9e965"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> (const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;rhs)=delete</td></tr>
 <tr class="separator:a2bfd3f2083c5c29fd433e4e334c9e965"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,6 +230,9 @@ InstanceOptionalReference&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:a3bf171089241db54fa891c1f3996222b"><td class="memItemLeft" align="right" valign="top"><a id="a3bf171089241db54fa891c1f3996222b"></a>
 InstanceOptionalConstReference&#160;</td><td class="memItemRight" valign="bottom"><b>GetParentInstance</b> () const</td></tr>
 <tr class="separator:a3bf171089241db54fa891c1f3996222b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a727cb59d5ceb74a529d8ffeca4927"><td class="memItemLeft" align="right" valign="top"><a id="a32a727cb59d5ceb74a529d8ffeca4927"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasParentInstance</b> () const</td></tr>
+<tr class="separator:a32a727cb59d5ceb74a529d8ffeca4927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa02956274c7d34ead13c62649d0e85e2"><td class="memItemLeft" align="right" valign="top"><a id="aa02956274c7d34ead13c62649d0e85e2"></a>
 const InstanceAlias &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetInstanceAlias</b> () const</td></tr>
 <tr class="separator:aa02956274c7d34ead13c62649d0e85e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,6 +263,15 @@ AliasPath&#160;</td><td class="memItemRight" valign="bottom"><b>GetAbsoluteInsta
 <tr class="memitem:a816acac91fd865be0371d09c45707269"><td class="memItemLeft" align="right" valign="top"><a id="a816acac91fd865be0371d09c45707269"></a>
 AliasPath&#160;</td><td class="memItemRight" valign="bottom"><b>GetAliasPathRelativeToInstance</b> (const AZ::EntityId &amp;entity) const</td></tr>
 <tr class="separator:a816acac91fd865be0371d09c45707269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf4d2abf353edad2d5ddfcc6b8dcc31"><td class="memItemLeft" align="right" valign="top"><a id="acaf4d2abf353edad2d5ddfcc6b8dcc31"></a>
+PrefabDomConstReference&#160;</td><td class="memItemRight" valign="bottom"><b>GetCachedInstanceDom</b> () const</td></tr>
+<tr class="separator:acaf4d2abf353edad2d5ddfcc6b8dcc31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02548fc0a4e6b62c6265b49be0636c2"><td class="memItemLeft" align="right" valign="top"><a id="aa02548fc0a4e6b62c6265b49be0636c2"></a>
+PrefabDomReference&#160;</td><td class="memItemRight" valign="bottom"><b>GetCachedInstanceDom</b> ()</td></tr>
+<tr class="separator:aa02548fc0a4e6b62c6265b49be0636c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa219b637287b53a834c0b3970379c296"><td class="memItemLeft" align="right" valign="top"><a id="aa219b637287b53a834c0b3970379c296"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCachedInstanceDom</b> (PrefabDomValueConstReference instanceDom)</td></tr>
+<tr class="separator:aa219b637287b53a834c0b3970379c296"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -517,7 +541,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>InstanceEntityIdMapp
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:18:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:33 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

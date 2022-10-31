@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -72,6 +72,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a81f3a2b72488ab8e246e6f3806bc6b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2550dc0efef8e31c41e815d3905ce527"><td class="memItemLeft" align="right" valign="top">virtual TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#a2550dc0efef8e31c41e815d3905ce527">GetRealElapsedTimeUs</a> () const =0</td></tr>
 <tr class="separator:a2550dc0efef8e31c41e815d3905ce527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a169331dc5563d058fb705519d9ec3082"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#a169331dc5563d058fb705519d9ec3082">SetElapsedTimeMsDebug</a> (TimeMs time)=0</td></tr>
+<tr class="separator:a169331dc5563d058fb705519d9ec3082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef023146ccb9db1f79cf4074eb215a74"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#aef023146ccb9db1f79cf4074eb215a74">SetElapsedTimeUsDebug</a> (TimeUs time)=0</td></tr>
+<tr class="separator:aef023146ccb9db1f79cf4074eb215a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af71d1cbee515f505325b5027df6f6ef7"><td class="memItemLeft" align="right" valign="top">virtual TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#af71d1cbee515f505325b5027df6f6ef7">GetSimulationTickDeltaTimeUs</a> () const =0</td></tr>
 <tr class="separator:af71d1cbee515f505325b5027df6f6ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba062a3aaac98b55e582531be6beaddd"><td class="memItemLeft" align="right" valign="top">virtual TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_time.html#aba062a3aaac98b55e582531be6beaddd">GetRealTickDeltaTimeUs</a> () const =0</td></tr>
@@ -342,6 +346,70 @@ static const AZ::TimeUs&#160;</td><td class="memItemRight" valign="bottom"><b>Ze
 
 </div>
 </div>
+<a id="a169331dc5563d058fb705519d9ec3082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a169331dc5563d058fb705519d9ec3082">&#9670;&nbsp;</a></span>SetElapsedTimeMsDebug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::ITime::SetElapsedTimeMsDebug </td>
+          <td>(</td>
+          <td class="paramtype">TimeMs&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the number of milliseconds since application start. For debug purposes only. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">The</td><td>number of milliseconds that have elapsed since application start. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef023146ccb9db1f79cf4074eb215a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef023146ccb9db1f79cf4074eb215a74">&#9670;&nbsp;</a></span>SetElapsedTimeUsDebug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::ITime::SetElapsedTimeUsDebug </td>
+          <td>(</td>
+          <td class="paramtype">TimeUs&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the number of microseconds since application start. For debug purposes only. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">The</td><td>number of microseconds that have elapsed since application start. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="afbaaa666dce16641b686f62e08839821"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afbaaa666dce16641b686f62e08839821">&#9670;&nbsp;</a></span>SetSimulationTickDeltaOverride()</h2>
 
@@ -445,7 +513,7 @@ static const AZ::TimeUs&#160;</td><td class="memItemRight" valign="bottom"><b>Ze
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:17:16 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

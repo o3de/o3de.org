@@ -16,6 +16,12 @@ Do you have O3DE installed and you aren't sure where to start? How about creatin
 | - | - |
 | [Create your first O3DE game: Pong](first-project/) | Start from a new O3DE project and build your first game: Pong! What's "Pong"? Two paddles square off, in a ball-based battle to land the highest score. This tutorial series will introduce you to basic game UI development, scripting, and controls in O3DE. |
 
+## Animation
+
+| Tutorial | Description |
+| - | - |
+| [Data Driven Root Motion](animation/data-driven-root-motion) | Learn about data driven root motion and how to apply it to actors. |
+
 ## Artificial Intelligence
 
 | Tutorial | Description |
@@ -41,6 +47,7 @@ Do you have O3DE installed and you aren't sure where to start? How about creatin
 | Tutorial | Description |
 | - | - |
 | [Create a Level](environments/create-a-level) | Create a level for O3DE. |
+| [Create Terrain from Images](environments/create-terrain-from-images) | Learn to create terrain using images. |
 
 ## Extend O3DE Editor
 

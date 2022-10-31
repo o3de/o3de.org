@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -68,8 +68,17 @@ $(function() {
 <li>AcquireShadow()
 : <a class="el" href="class_a_z_1_1_render_1_1_projected_shadow_feature_processor_interface.html#ab48463a6aa16e4d8f41642f62f7dd92f">AZ::Render::ProjectedShadowFeatureProcessorInterface</a>
 </li>
+<li>AcquireSkinnedMesh()
+: <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html#afdc204bec084d1f943186b5ccb10918b">AZ::Render::SkinnedMeshFeatureProcessorInterface</a>
+</li>
+<li>AcquireSwapChainImage()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a5826e1501a7d96120a999932e30bacba">AZ::RPI::XRRenderingInterface</a>
+</li>
 <li>AcquireTag()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_tag_registry.html#aa40be9a574be9895664033703b61ccf4">AZ::RHI::TagRegistry&lt; TagType, MaxTagCount &gt;</a>
+</li>
+<li>Action()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_version_update_1_1_action.html#a07d1e56515f2b3ac8ebcbea6b1e55469">AZ::RPI::MaterialVersionUpdate::Action</a>
 </li>
 <li>Activate()
 : <a class="el" href="class_a_z_1_1_render_1_1_aces_display_mapper_feature_processor.html#ae0481db07ecae6ef5f05828ce2f7ba63">AZ::Render::AcesDisplayMapperFeatureProcessor</a>
@@ -96,6 +105,9 @@ $(function() {
 <li>ActiveImGuiContextChanged()
 : <a class="el" href="class_a_z_1_1_render_1_1_im_gui_system_notifications.html#a7d8a6ccacf668057f16968904e746b5a">AZ::Render::ImGuiSystemNotifications</a>
 </li>
+<li>AddAction()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_version_update.html#ab8b880a85ada21fe7f95217ae02af688">AZ::RPI::MaterialVersionUpdate</a>
+</li>
 <li>AddAttachmentBinding()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html#a2cd2e9e42c7d1dc20056a3d31e1fe277">AZ::RPI::Pass</a>
 </li>
@@ -110,7 +122,7 @@ $(function() {
 : <a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#a0ee21d6ef069c054f53f86a876b4a20e">AtomToolsFramework::ModularViewportCameraControllerRequests</a>
 </li>
 <li>AddChild()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_parent_pass.html#a4e14672be8298b2a91b43021fedc0263">AZ::RPI::ParentPass</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_parent_pass.html#a943ac72e8d47302b2e44249b68deaa02">AZ::RPI::ParentPass</a>
 , <a class="el" href="class_im_gui_1_1_im_gui_frame_visualizer_node.html#aba52f012602742b80b5d437f6b7c2912">ImGui::ImGuiFrameVisualizerNode</a>
 </li>
 <li>AddDockWidget()
@@ -185,7 +197,8 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image_asset_creator.html#a587084ded148ef1c1a1a864416e91953">AZ::RPI::StreamingImageAssetCreator</a>
 </li>
 <li>AddMorphTarget()
-: <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#ac043609fcff1166bc58e1741475f2d7c">AZ::Render::SkinnedMeshInputLod</a>
+: <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_buffers.html#a91c8850ac611ecb823efab23d5578fb0">AZ::Render::SkinnedMeshInputBuffers</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a8744919b8c92d3ba64fd27bc67c352c0">AZ::Render::SkinnedMeshInputLod</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_morph_target_meta_asset.html#af71164ab6df21b79a65658851ba406db">AZ::RPI::MorphTargetMetaAsset</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_creator.html#a4b1b4acc67396ddf87498ffef23d6d37">AZ::RPI::MorphTargetMetaAssetCreator</a>
 </li>
@@ -214,6 +227,10 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a8d35a6735e56bd97ade2803c66c16d68">AZ::RPI::PassSystem</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a411b96182e6927edb21a6216dd1be2b2">AZ::RPI::PassSystemInterface</a>
 </li>
+<li>AddPassWithoutPipeline()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a70ecc9621d89c2a0641d325c7de731eb">AZ::RPI::PassSystem</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a2a1b91468bf5868d18260ebb227b7ab7">AZ::RPI::PassSystemInterface</a>
+</li>
 <li>AddProperty()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#a45c54f4b87ada7f79bf90a1fc1381de6">AZ::RPI::MaterialTypeSourceData</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_group.html#aa50c04f20cdbb025d2c84eb31ca85776">AZ::RPI::MaterialTypeSourceData::PropertyGroup</a>
@@ -225,11 +242,21 @@ $(function() {
 <li>AddQueryPoolUse()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope.html#aadd4a530f2abba681f4844c146c7fd03">AZ::RHI::Scope</a>
 </li>
+<li>AddRecentFilePath()
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a4734bae58cd1e26a9363ed52174cebcf">AtomToolsFramework::AtomToolsDocumentSystemRequests</a>
+</li>
+<li>AddReflectionProbe()
+: <a class="el" href="class_a_z_1_1_render_1_1_reflection_probe_feature_processor_interface.html#aa9f2286e201304419bc43abbade48b1a">AZ::Render::ReflectionProbeFeatureProcessorInterface</a>
+</li>
+<li>AddRenderPipeline()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a7d2b0e0f359af7ad0c02450eed94622d">AZ::RPI::PassSystem</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a831144e0a0785dbb01490b4796c34d03">AZ::RPI::PassSystemInterface</a>
+</li>
 <li>AddResource()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_aliasing_barrier_tracker.html#a69789e4ea98be10dfd6631d2ea67fcd3">AZ::RHI::AliasingBarrierTracker</a>
 </li>
 <li>AddShader()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#ab84d4a75210a70532fa6d977590ca40e">AZ::RPI::MaterialTypeAssetCreator</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#ab39ed8f296e9baa68a5ec5f196fffdfd">AZ::RPI::MaterialTypeAssetCreator</a>
 </li>
 <li>AddShaderInput()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_layout.html#a3c552ff256bbbcf4ecccf666d9b39f12">AZ::RHI::ConstantsLayout</a>
@@ -305,6 +332,9 @@ $(function() {
 <li>ApplyDataMappings()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a0653a5a42feb026dea7908bb0d9afc1f">AZ::RPI::ShaderResourceGroup</a>
 </li>
+<li>ApplyGlobalShaderOptions()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html#a716ca048cfe3eccc81eee6932d6ff649">AZ::RPI::Material</a>
+</li>
 <li>ApplyModifiers()
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_size_multipliers.html#a08b91df50ba4be06cee9312fc2d8b914">AZ::RPI::PassAttachmentSizeMultipliers</a>
 </li>
@@ -313,7 +343,7 @@ $(function() {
 </li>
 <li>ApplyPropertyRenames()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html#ae13fc192b2783c56c42e7b8cf71e6a7c">AZ::RPI::MaterialTypeAsset</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_version_update.html#af706ccedcf3bada90b9a4a1b0f960467">AZ::RPI::MaterialVersionUpdate</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_version_updates.html#aa366b66eb2c1f80be08c390b637c470c">AZ::RPI::MaterialVersionUpdates</a>
 </li>
 <li>ApplyRenderPipelineChange()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a41df34f125055709089709397a528c90">AZ::RPI::FeatureProcessor</a>
@@ -325,7 +355,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_uv_stream_tangent_bitmask.html#a790e2b1864164a0069d250ca4d1d9958">AZ::RPI::UvStreamTangentBitmask</a>
 </li>
 <li>ApplyVersionUpdates()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_version_update.html#a6decf8b3cd3f6d83b0ff89e3e49f7498">AZ::RPI::MaterialVersionUpdate</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_version_updates.html#a6252b682a1195e7c074ca9393985c93a">AZ::RPI::MaterialVersionUpdates</a>
 </li>
 <li>AreSimilar()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value_source_data.html#ac05a4fef92eca3e6f664fde50be62e22">AZ::RPI::MaterialPropertyValueSourceData</a>
@@ -353,7 +383,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:27 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:25 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

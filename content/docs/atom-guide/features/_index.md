@@ -129,6 +129,10 @@ Bloom
 
 *Related to: [Bloom component](/docs/user-guide/components/reference/atom/bloom/)* 
 
+Chromatic Aberration   
+: A post-processing effect that simulates a lens that focuses different wavelengths of light at different points, creating fringes of color around edges in the image.
+
+*Related to: [Chromatic Aberration component](/docs/user-guide/components/reference/atom/chromatic-aberration/)* 
 
 Deferred Fog   
 : A post-processing effect that creates volumetric fog in a scene. Deferred fog is calculated using dynamic noise octaves to create fog, and ray marching to render the fog.

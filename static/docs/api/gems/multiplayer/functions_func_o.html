@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Multiplayer Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -47,6 +47,12 @@ $(function() {
 <li>OnAcceptMatchAsyncComplete()
 : <a class="el" href="class_multiplayer_1_1_matchmaking_async_request_notifications.html#a5dfa7e7f5d6b2883c003944b2cb7e262">Multiplayer::MatchmakingAsyncRequestNotifications</a>
 </li>
+<li>OnConnectToSimulationFail()
+: <a class="el" href="class_multiplayer_1_1_multiplayer_editor_server_notifications.html#a9ce159e10724763ab6aee1866501585e">Multiplayer::MultiplayerEditorServerNotifications</a>
+</li>
+<li>OnConnectToSimulationSuccess()
+: <a class="el" href="class_multiplayer_1_1_multiplayer_editor_server_notifications.html#a145d588802e48ed4832bbb352f523f56">Multiplayer::MultiplayerEditorServerNotifications</a>
+</li>
 <li>OnCreateSessionAsyncComplete()
 : <a class="el" href="class_multiplayer_1_1_session_async_request_notifications.html#a4c4e8f61eca43c92d08ff22e139f274a">Multiplayer::SessionAsyncRequestNotifications</a>
 </li>
@@ -61,6 +67,18 @@ $(function() {
 </li>
 <li>OnDestroySessionEnd()
 : <a class="el" href="class_multiplayer_1_1_session_notifications.html#ad795dcdb764d814ad8d306934eedf305">Multiplayer::SessionNotifications</a>
+</li>
+<li>OnEditorConnectionAttempt()
+: <a class="el" href="class_multiplayer_1_1_multiplayer_editor_server_notifications.html#a8107d100632bb5eef585a3981ffba2d1">Multiplayer::MultiplayerEditorServerNotifications</a>
+</li>
+<li>OnEditorConnectionAttemptsFailed()
+: <a class="el" href="class_multiplayer_1_1_multiplayer_editor_server_notifications.html#a93ba4d37894d139c57071d3831d7f211">Multiplayer::MultiplayerEditorServerNotifications</a>
+</li>
+<li>OnEditorSendingLevelData()
+: <a class="el" href="class_multiplayer_1_1_multiplayer_editor_server_notifications.html#af26067a762043dd14212d36b01e9e271">Multiplayer::MultiplayerEditorServerNotifications</a>
+</li>
+<li>OnEditorServerProcessStoppedUnexpectedly()
+: <a class="el" href="class_multiplayer_1_1_multiplayer_editor_server_notifications.html#a3f433edbf8207a04ef2ff73f10994253">Multiplayer::MultiplayerEditorServerNotifications</a>
 </li>
 <li>OnEntityActivated()
 : <a class="el" href="class_multiplayer_1_1_entity_replicator.html#af16807f00157d38b5872a8bf46a8d1f6">Multiplayer::EntityReplicator</a>
@@ -93,8 +111,17 @@ $(function() {
 <li>OnPlayerLeave()
 : <a class="el" href="class_multiplayer_1_1_i_multiplayer_spawner.html#a2144481dc67d6f90b2749409465e32c3">Multiplayer::IMultiplayerSpawner</a>
 </li>
+<li>OnPlayModeEnd()
+: <a class="el" href="class_multiplayer_1_1_multiplayer_editor_server_notifications.html#a92e3a415f4ba73e2c0985d6bf68ecd39">Multiplayer::MultiplayerEditorServerNotifications</a>
+</li>
 <li>OnSearchSessionsAsyncComplete()
 : <a class="el" href="class_multiplayer_1_1_session_async_request_notifications.html#a21d523be181d5b1f528e69f01e50438a">Multiplayer::SessionAsyncRequestNotifications</a>
+</li>
+<li>OnServerLaunched()
+: <a class="el" href="class_multiplayer_1_1_multiplayer_editor_server_notifications.html#a2e3e3a4c7f528238e9949c3912d27d38">Multiplayer::MultiplayerEditorServerNotifications</a>
+</li>
+<li>OnServerLaunchFail()
+: <a class="el" href="class_multiplayer_1_1_multiplayer_editor_server_notifications.html#ab3c10e75210f5281cbcdc050d498da0d">Multiplayer::MultiplayerEditorServerNotifications</a>
 </li>
 <li>OnSessionHealthCheck()
 : <a class="el" href="class_multiplayer_1_1_session_notifications.html#af5ae1dd08d78d1be0186bf27ca282300">Multiplayer::SessionNotifications</a>
@@ -120,7 +147,7 @@ $(function() {
 </li>
 <li>operator=()
 : <a class="el" href="class_multiplayer_1_1_rewindable_fixed_vector.html#aebc40a702cef7026f6785557f6863c0d">Multiplayer::RewindableFixedVector&lt; TYPE, SIZE &gt;</a>
-, <a class="el" href="class_multiplayer_1_1_rewindable_object.html#a74a9c03565b95de7dbfa58e0997da4fd">Multiplayer::RewindableObject&lt; BASE_TYPE, REWIND_SIZE &gt;</a>
+, <a class="el" href="class_multiplayer_1_1_rewindable_object.html#a3b8543126d58bac30a006a1f8336b23f">Multiplayer::RewindableObject&lt; BASE_TYPE, REWIND_SIZE &gt;</a>
 </li>
 <li>operator==()
 : <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html#a0a21340df291c146733f66bb6595c361">Multiplayer::ConstNetworkEntityHandle</a>
@@ -134,7 +161,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:20:04 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:13 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

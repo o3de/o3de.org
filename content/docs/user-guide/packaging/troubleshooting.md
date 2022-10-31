@@ -21,7 +21,7 @@ The following are techniques you can use to help you debug any issues that you m
 
 ### Compile with optimizations disabled and debug symbols enabled
 
-In Visual Studio 2019, you can compile with optimizations disabled and debug symbols enabled. This lets Visual Studio 2019's debugging tools produce more helpful information that can help you debug.
+In Visual Studio, you can compile with optimizations disabled and debug symbols enabled. This lets Visual Studio's debugging tools produce more helpful information that can help you debug.
 
 Make the following modifications to the `Configurations_msvc.cmake` file in the `<engine>\cmake\Platform\Common\MSVC` directory. In `ly_append_configurations_options`, under `COMPILATION _RELEASE`:
  - Change `/Od` to `/Ox`.
@@ -57,5 +57,5 @@ cmake --build <build> --target INSTALL --config profile
 ```
 
 Replace `<build>` with either of the following:
-- `build\windows_vs2019` -- For non-monolithic builds. 
+- `build\windows` -- For non-monolithic builds. 
 - `build\windows_mono` -- For monolithic builds.

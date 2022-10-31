@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -57,7 +57,7 @@ $(function() {
 
 <p><code>#include &lt;PrefabSystemComponent.h&gt;</code></p>
 
-<p>Inherits Component, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html">AzToolsFramework::Prefab::PrefabSystemComponentInterface</a>, and Handler.</p>
+<p>Inherits Component, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html">AzToolsFramework::Prefab::PrefabSystemComponentInterface</a>, Handler, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -102,8 +102,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSystemTick</b> () o
 <tr class="separator:a215543c312ebb33052307cc5c2f2c18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add4510f4fcc98d0003b1c317158bf620"><td class="memItemLeft" align="right" valign="top">LinkId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#add4510f4fcc98d0003b1c317158bf620">CreateLink</a> (TemplateId linkTargetId, TemplateId linkSourceId, const InstanceAlias &amp;instanceAlias, const PrefabDomConstReference linkPatches, const LinkId &amp;linkId=InvalidLinkId) override</td></tr>
 <tr class="separator:add4510f4fcc98d0003b1c317158bf620"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fa0246a3ba09f25f2c2f360617d9626"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a0fa0246a3ba09f25f2c2f360617d9626">RemoveLink</a> (const LinkId &amp;linkId) override</td></tr>
-<tr class="separator:a0fa0246a3ba09f25f2c2f360617d9626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5105d45da46b3d96b4e28591783c7791"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a5105d45da46b3d96b4e28591783c7791">RemoveLink</a> (const LinkId &amp;linkId) override</td></tr>
+<tr class="separator:a5105d45da46b3d96b4e28591783c7791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3bd07a629d366ece70dc56e1fb1f457"><td class="memItemLeft" align="right" valign="top">TemplateId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#af3bd07a629d366ece70dc56e1fb1f457">GetTemplateIdFromFilePath</a> (AZ::IO::PathView filePath) const override</td></tr>
 <tr class="separator:af3bd07a629d366ece70dc56e1fb1f457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77adb0affa6f65ea6399a5c90fa61cfa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a77adb0affa6f65ea6399a5c90fa61cfa">IsTemplateDirty</a> (TemplateId templateId) override</td></tr>
@@ -736,8 +736,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 
 </div>
 </div>
-<a id="a0fa0246a3ba09f25f2c2f360617d9626"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fa0246a3ba09f25f2c2f360617d9626">&#9670;&nbsp;</a></span>RemoveLink()</h2>
+<a id="a5105d45da46b3d96b4e28591783c7791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5105d45da46b3d96b4e28591783c7791">&#9670;&nbsp;</a></span>RemoveLink()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -746,7 +746,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void AzToolsFramework::Prefab::PrefabSystemComponent::RemoveLink </td>
+          <td class="memname">bool AzToolsFramework::Prefab::PrefabSystemComponent::RemoveLink </td>
           <td>(</td>
           <td class="paramtype">const LinkId &amp;&#160;</td>
           <td class="paramname"><em>linkId</em></td><td>)</td>
@@ -765,6 +765,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>whether link was successfully removed or not. </dd></dl>
 
 <p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html">AzToolsFramework::Prefab::PrefabSystemComponentInterface</a>.</p>
 
@@ -1016,7 +1017,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:18:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:33 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

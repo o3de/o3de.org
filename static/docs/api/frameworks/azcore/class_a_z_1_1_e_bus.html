@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -106,6 +106,15 @@ Public Types</h2></td></tr>
 <tr class="memitem:a19f7d4d10d361364e6444bf051c40b87"><td class="memTemplParams" colspan="2">template&lt;typename DispatchMutex &gt; </td></tr>
 <tr class="memitem:a19f7d4d10d361364e6444bf051c40b87"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_e_bus.html#a19f7d4d10d361364e6444bf051c40b87">DispatchLockGuardTemplate</a> = typename ImplTraits::template DispatchLockGuard&lt; DispatchMutex &gt;</td></tr>
 <tr class="separator:a19f7d4d10d361364e6444bf051c40b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f25d043cc626488d270a9c6e2ca2051"><td class="memTemplParams" colspan="2">template&lt;typename ContextMutexType &gt; </td></tr>
+<tr class="memitem:a6f25d043cc626488d270a9c6e2ca2051"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_e_bus.html#a6f25d043cc626488d270a9c6e2ca2051">ConnectLockGuardTemplate</a> = typename ImplTraits::template ConnectLockGuard&lt; ContextMutexType &gt;</td></tr>
+<tr class="separator:a6f25d043cc626488d270a9c6e2ca2051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24e7a2f4b8ffeb50f90e2b73518ed4a"><td class="memTemplParams" colspan="2">template&lt;typename ContextMutexType &gt; </td></tr>
+<tr class="memitem:ae24e7a2f4b8ffeb50f90e2b73518ed4a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_e_bus.html#ae24e7a2f4b8ffeb50f90e2b73518ed4a">BindLockGuardTemplate</a> = typename ImplTraits::template BindLockGuard&lt; ContextMutexType &gt;</td></tr>
+<tr class="separator:ae24e7a2f4b8ffeb50f90e2b73518ed4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba70bbdbb32464d03e096e5f0f2db83"><td class="memTemplParams" colspan="2">template&lt;typename ContextMutexType &gt; </td></tr>
+<tr class="memitem:a0ba70bbdbb32464d03e096e5f0f2db83"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_e_bus.html#a0ba70bbdbb32464d03e096e5f0f2db83">CallstackTrackerLockGuardTemplate</a> = typename ImplTraits::template CallstackTrackerLockGuard&lt; ContextMutexType &gt;</td></tr>
+<tr class="separator:a0ba70bbdbb32464d03e096e5f0f2db83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a164a5d2fadc7ba7ddb623719f10232ff"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_e_bus.html#a164a5d2fadc7ba7ddb623719f10232ff">StoragePolicy</a> = typename Traits::template <a class="el" href="class_a_z_1_1_e_bus.html#a164a5d2fadc7ba7ddb623719f10232ff">StoragePolicy</a>&lt; Context &gt;</td></tr>
 <tr class="separator:a164a5d2fadc7ba7ddb623719f10232ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a25fd37f12aef9dc73f026d8150f59f"><td class="memItemLeft" align="right" valign="top"><a id="a6a25fd37f12aef9dc73f026d8150f59f"></a>
@@ -233,6 +242,25 @@ template&lt;class Interface , class BusTraits  = Interface&gt; </div>
 
 </div>
 </div>
+<a id="ae24e7a2f4b8ffeb50f90e2b73518ed4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24e7a2f4b8ffeb50f90e2b73518ed4a">&#9670;&nbsp;</a></span>BindLockGuardTemplate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Interface , class BusTraits  = Interface&gt; </div>
+<div class="memtemplate">
+template&lt;typename ContextMutexType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_a_z_1_1_e_bus.html">AZ::EBus</a>&lt; <a class="el" href="class_a_z_1_1_interface.html">Interface</a>, BusTraits &gt;::<a class="el" href="class_a_z_1_1_e_bus.html#ae24e7a2f4b8ffeb50f90e2b73518ed4a">BindLockGuardTemplate</a> =  typename ImplTraits::template BindLockGuard&lt;ContextMutexType&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Template Lock Guard class that wraps around the Mutex the <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> uses for Bus Bind calls. </p>
+
+</div>
+</div>
 <a id="a3008e64fe02c0b3acf6846287baf95de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3008e64fe02c0b3acf6846287baf95de">&#9670;&nbsp;</a></span>BusesContainer</h2>
 
@@ -319,6 +347,25 @@ template&lt;class Interface , class BusTraits  = Interface&gt; </div>
 
 </div>
 </div>
+<a id="a0ba70bbdbb32464d03e096e5f0f2db83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba70bbdbb32464d03e096e5f0f2db83">&#9670;&nbsp;</a></span>CallstackTrackerLockGuardTemplate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Interface , class BusTraits  = Interface&gt; </div>
+<div class="memtemplate">
+template&lt;typename ContextMutexType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_a_z_1_1_e_bus.html">AZ::EBus</a>&lt; <a class="el" href="class_a_z_1_1_interface.html">Interface</a>, BusTraits &gt;::<a class="el" href="class_a_z_1_1_e_bus.html#a0ba70bbdbb32464d03e096e5f0f2db83">CallstackTrackerLockGuardTemplate</a> =  typename ImplTraits::template CallstackTrackerLockGuard&lt;ContextMutexType&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Template Lock Guard class that wraps around the Mutex the <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> uses for Bus callstack tracking. </p>
+
+</div>
+</div>
 <a id="abec9cebf391706c4531eccd24ee07cf4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abec9cebf391706c4531eccd24ee07cf4">&#9670;&nbsp;</a></span>ConnectionPolicy</h2>
 
@@ -333,6 +380,25 @@ template&lt;class Interface , class BusTraits  = Interface&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Enables custom logic to run when a handler connects to or disconnects from the EBus. For example, you can make a handler execute an event immediately upon connecting to the EBus. For available settings, see <a class="el" href="struct_a_z_1_1_e_bus_connection_policy.html">AZ::EBusConnectionPolicy</a>. By default, no extra logic is run. </p>
+
+</div>
+</div>
+<a id="a6f25d043cc626488d270a9c6e2ca2051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f25d043cc626488d270a9c6e2ca2051">&#9670;&nbsp;</a></span>ConnectLockGuardTemplate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Interface , class BusTraits  = Interface&gt; </div>
+<div class="memtemplate">
+template&lt;typename ContextMutexType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_a_z_1_1_e_bus.html">AZ::EBus</a>&lt; <a class="el" href="class_a_z_1_1_interface.html">Interface</a>, BusTraits &gt;::<a class="el" href="class_a_z_1_1_e_bus.html#a6f25d043cc626488d270a9c6e2ca2051">ConnectLockGuardTemplate</a> =  typename ImplTraits::template ConnectLockGuard&lt;ContextMutexType&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Template Lock Guard class that wraps around the Mutex the <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> uses for Bus Connects / Disconnects. </p>
 
 </div>
 </div>
@@ -937,10 +1003,10 @@ template&lt;class Interface , class BusTraits  = Interface&gt; </div>
 </ul>
 </div><!-- contents -->
 <div class="ttc" id="astruct_a_z_std_1_1less_html"><div class="ttname"><a href="struct_a_z_std_1_1less.html">AZStd::less</a></div><div class="ttdef"><b>Definition:</b> TypeInfo.h:31</div></div>
-<div class="ttc" id="aclass_a_z_1_1_e_bus_html_a1a659a565576b6becda464cce6d8adb1"><div class="ttname"><a href="class_a_z_1_1_e_bus.html#a1a659a565576b6becda464cce6d8adb1">AZ::EBus::BusIdOrderCompare</a></div><div class="ttdeci">typename ImplTraits::BusIdOrderCompare BusIdOrderCompare</div><div class="ttdef"><b>Definition:</b> EBus.h:424</div></div>
+<div class="ttc" id="aclass_a_z_1_1_e_bus_html_a1a659a565576b6becda464cce6d8adb1"><div class="ttname"><a href="class_a_z_1_1_e_bus.html#a1a659a565576b6becda464cce6d8adb1">AZ::EBus::BusIdOrderCompare</a></div><div class="ttdeci">typename ImplTraits::BusIdOrderCompare BusIdOrderCompare</div><div class="ttdef"><b>Definition:</b> EBus.h:465</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:17:15 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

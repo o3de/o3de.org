@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -59,7 +59,7 @@ $(function() {
 
 <p><code>#include &lt;PropertyEditorNodes.h&gt;</code></p>
 
-<p>Inherits <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_node_definition.html">AZ::DocumentPropertyEditor::NodeDefinition</a>.</p>
+<p>Inherits <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_node_with_visiblity_control.html">AZ::DocumentPropertyEditor::Nodes::NodeWithVisiblityControl</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -80,6 +80,22 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a009699182c75577ff01dc9aacaafd947"><td class="memItemLeft" align="right" valign="top"><a id="a009699182c75577ff01dc9aacaafd947"></a>
 static constexpr AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b> = &quot;Row&quot;</td></tr>
 <tr class="separator:a009699182c75577ff01dc9aacaafd947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3f37d44d114d7e432d15f8dbcb7bff"><td class="memItemLeft" align="right" valign="top"><a id="a4c3f37d44d114d7e432d15f8dbcb7bff"></a>
+static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>AutoExpand</b> = <a class="el" href="class_a_z_1_1_document_property_editor_1_1_attribute_definition.html">AttributeDefinition</a>&lt;bool&gt;(&quot;AutoExpand&quot;)</td></tr>
+<tr class="separator:a4c3f37d44d114d7e432d15f8dbcb7bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ffbd357533fd071d9989bbeebe077f"><td class="memItemLeft" align="right" valign="top"><a id="a55ffbd357533fd071d9989bbeebe077f"></a>
+static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>ForceAutoExpand</b> = <a class="el" href="class_a_z_1_1_document_property_editor_1_1_attribute_definition.html">AttributeDefinition</a>&lt;bool&gt;(&quot;ForceAutoExpand&quot;)</td></tr>
+<tr class="separator:a55ffbd357533fd071d9989bbeebe077f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbeac8beb075d34b5c39cd0879626019"><td class="memItemLeft" align="right" valign="top"><a id="afbeac8beb075d34b5c39cd0879626019"></a>
+static constexpr AZStd::initializer_list&lt; const <a class="el" href="class_a_z_1_1_document_property_editor_1_1_attribute_definition_interface.html">AttributeDefinitionInterface</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RowAttributes</b> = { &amp;AutoExpand, &amp;ForceAutoExpand }</td></tr>
+<tr class="separator:afbeac8beb075d34b5c39cd0879626019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_node_with_visiblity_control"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_node_with_visiblity_control')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_node_with_visiblity_control.html">AZ::DocumentPropertyEditor::Nodes::NodeWithVisiblityControl</a></td></tr>
+<tr class="memitem:ad28ded47e68dc5b3d15fc24887fdf964 inherit pub_static_attribs_struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_node_with_visiblity_control"><td class="memItemLeft" align="right" valign="top"><a id="ad28ded47e68dc5b3d15fc24887fdf964"></a>
+static constexpr AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b> = &quot;NodeWithVisiblityControl&quot;</td></tr>
+<tr class="separator:ad28ded47e68dc5b3d15fc24887fdf964 inherit pub_static_attribs_struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_node_with_visiblity_control"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2e48238c131992f26a22869a7aaeead inherit pub_static_attribs_struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_node_with_visiblity_control"><td class="memItemLeft" align="right" valign="top"><a id="aa2e48238c131992f26a22869a7aaeead"></a>
+static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>Visibility</b> = <a class="el" href="class_a_z_1_1_document_property_editor_1_1_attribute_definition.html">AttributeDefinition</a>&lt;PropertyVisibility&gt;(&quot;Visibility&quot;)</td></tr>
+<tr class="separator:aa2e48238c131992f26a22869a7aaeead inherit pub_static_attribs_struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_node_with_visiblity_control"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_struct_a_z_1_1_document_property_editor_1_1_node_definition"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_struct_a_z_1_1_document_property_editor_1_1_node_definition')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_node_definition.html">AZ::DocumentPropertyEditor::NodeDefinition</a></td></tr>
 <tr class="memitem:ab3240aaba350084299907516a2920d54 inherit pub_static_attribs_struct_a_z_1_1_document_property_editor_1_1_node_definition"><td class="memItemLeft" align="right" valign="top">static constexpr AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_document_property_editor_1_1_node_definition.html#ab3240aaba350084299907516a2920d54">Name</a> = &quot;&lt;undefined node name&gt;&quot;</td></tr>
 <tr class="separator:ab3240aaba350084299907516a2920d54 inherit pub_static_attribs_struct_a_z_1_1_document_property_editor_1_1_node_definition"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,7 +108,7 @@ static constexpr AZStd::string_view&#160;</td><td class="memItemRight" valign="b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:18:00 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:10 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

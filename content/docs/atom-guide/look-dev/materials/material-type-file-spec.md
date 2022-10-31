@@ -13,11 +13,13 @@ Provides a description or comment from the material type's author.
 Indicates the current version number of the material type. Any materials created with this material type will save this value in their [`materialTypeVersion`](material-file-spec/#materialtypeversion-optional) field.
 
 ## **versionUpdates**  
+
 Provides backward compatibility for `.material` files that reference an older version of this `.materialtype`. This section includes a list of update steps that can update material data from one version to the next. Whenever the author makes a change to the material type that would break existing materials, such as renaming a property, they can increment the `version` number (previously discussed) and provide a new version update description here. Then, any system that loads the old `.material` file can automatically upgrade it to be compatible with the latest material type.
 
 * **toVersion**: Indicates the material type version when these changes were introduced. The update step will be applied to any material with a [`materialTypeVersion`](material-file-spec/#materialtypeversion-optional) number less than this value.
 
 * **actions**: A list of actions to perform when applying this update. Each action will first have an `op` parameter to indicate what operation to perform. Additional parameters must be specified depending on which operation is used. Available actions and their required parameters are listed as follows:
+
 | op            | Parameter 1 | Description          | Parameter 2 | Description        |
 |---------------|-------------|----------------------|-------------|--------------------|
 | rename        | from        | old property name    | to          | new property name  |
@@ -271,6 +273,7 @@ It's common practice to "factor-out" property group definitions into separate JS
 ```
 
 ## **version** (deprecated)
+
 This version number in the `propertyLayout` section is no longer used and has been replaced by the previously shown [`version`](#version) number.
 
 ## **groups** (deprecated)
@@ -284,6 +287,7 @@ An older version of the material type file format organized `propertyLayout` wit
 This is replaced by `propertyGroups`. Similar to [**groups (deprecated)**](#groups-deprecated).
 
 ## **shaders**  
+
 An array of references to shader files (`*.shader`) to be used to render materials of this type. By default, all shaders are enabled, but they can be disabled using [`functors`](#functors).
 
 Each shader item includes the following values. 
