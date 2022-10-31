@@ -6,7 +6,7 @@ author: lumberyard-employee-dm
 blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: ""
 ---
-With the 22.10.0 release of **Open 3D Engine (O3DE)** Visual Studio 2022 (VS2022) is now fully supported within O3DE.
+With the 22.10.0 release of **Open 3D Engine (O3DE)**, Visual Studio 2022 (VS2022) is now fully supported within O3DE.
 
 ## Background
 
