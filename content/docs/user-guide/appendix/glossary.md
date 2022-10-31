@@ -1,8 +1,12 @@
 ---
+linkTitle: Glossary
 title: Glossary
+description: The glossary contains terminology used throughout Open 3D Engine (O3DE) documentation.
 weight: 100
 toc: true
 ---
+
+The glossary contains terminology used throughout Open 3D Engine (O3DE) documentation. 
 
 ### actor
 A specialized [entity](#entity) that is the basis for characters in a game.
