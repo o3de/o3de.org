@@ -9,21 +9,21 @@ To get started using AWS Gems with AWS services in your O3DE project, complete t
 
 1. [Create an AWS account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) if you don't have one.
 
-1. Configure **AWS credentials** following the instructions in [Configuring AWS Credentials for O3DE](./configuring-credentials/).
+2. Configure **AWS credentials** following the instructions in [Configuring AWS Credentials for O3DE](./configuring-credentials/).
 
     a. Confirm you have credentials using the command `aws configure list`.
 
-1. Install the [AWS Cloud Development Kit (CDK)](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html#getting_started_install).
+3. Install the [AWS Cloud Development Kit (CDK)](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install).
 
-    a. Confirm the CDK is setup using the command `cdk --version`.
+    a. Confirm the AWS CDK is set up using the command `cdk --version`.
 
-1. **Build** your O3DE project with the AWS Core Gem (and other AWS Gems you need) enabled.
+4. **Build** your O3DE project with the AWS Core Gem (and other AWS Gems you need) enabled.
 
-1. Deploy the **CDK applications** for the AWS Gems you have enabled. See [Deploying the CDK Application](./cdk-application/) for instructions.
+5. Deploy the **AWS CDK applications** for the AWS Gems you have enabled. See [Deploying the AWS CDK Application](./cdk-application/) for instructions.
 
-1. Configure a [resource mapping file](./resource-mapping-files/) using the [Resource Mapping Tool](./resource-mapping-tool/).
+6. Configure a [resource mapping file](./resource-mapping-files/) using the [Resource Mapping Tool](./resource-mapping-tool/).
 
-1. Associate the resource mapping file with the project. See the next section entitled [Project Settings](#project-settings).
+7. Associate the resource mapping file with the project. See the next section entitled [Project Settings](#project-settings).
 
 You should now be able to utilize AWS functions in Lua script, Script Canvas, or C++ to communicate with your AWS resources. See [Scripting with AWS Core](./scripting/) for scripting examples.
 
@@ -46,12 +46,11 @@ Example registry settings file:
 
 ```json
 {
-    "Amazon":
-    {
-        "AWSCore": {
-            "ProfileName": "testprofile",
-            "ResourceMappingConfigFileName": "default_aws_resource_mappings.json"
-        }
+  "Amazon": {
+    "AWSCore": {
+      "ProfileName": "testprofile",
+      "ResourceMappingConfigFileName": "default_aws_resource_mappings.json"
     }
+  }
 }
 ```
