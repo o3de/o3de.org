@@ -239,7 +239,7 @@ To use Amazon EC2 instance role credentials with your project:
 The AWS Core Gem also requires that the `AllowAWSMetadataCredentials` setting be set to `true` before it will query the [Amazon EC2 Instance Metadata Service (IMDS)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html) for credentials. By default, it is set to `false` to prevent unwanted calls to the Amazon EC2 IMDS endpoint when running your O3DE project locally or on non-Amazon EC2 compute.
 
 {{< note >}}
-If the environment variable `AWS_EC2_METADATA_DISABLED` is set to `true`, this will override the `AllowAWSMetadataCredentials` setting and you will be unable to use credentials from the instance profile. For more information about this environment variable, refer to the [HttpRequestor Gem](https://github.com/docs/user-guide/gems/reference/network/http-requestor/#turn-off-amazon-ec2-instance-metadata-service-calls).
+If the environment variable `AWS_EC2_METADATA_DISABLED` is set to `true`, this will override the `AllowAWSMetadataCredentials` setting and you will be unable to use credentials from the instance profile. For more information about this environment variable, refer to the [HttpRequestor Gem](/docs/user-guide/gems/reference/network/http-requestor/#turn-off-amazon-ec2-instance-metadata-service-calls).
 {{< /note>}}
 
 To turn on `AllowAWSMetadataCredentials` in AWSCore:
