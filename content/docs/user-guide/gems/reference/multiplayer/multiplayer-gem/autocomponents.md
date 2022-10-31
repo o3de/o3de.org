@@ -4,7 +4,7 @@ description: A reference for defining Open 3D Engine multiplayer state through a
 linktitle: Auto-components
 ---
 
-*Auto-components* provide a convenient way to create multiplayer components that require network synchronization. Using [AzAutoGen](/docs/user-guide/programming/autogen), you can process auto-component files found inside of your project during builds to create C++ classes for components and controllers that provide network replication and remote function calls. Auto-components also take care of edit and behavior context bindings so that the bound component shows in **O3DE Editor** and works with **Open 3D Engine (O3DE)** scripting.
+*Auto-components* provide a convenient way to create multiplayer components that require network synchronization. Using [AzAutoGen](/docs/user-guide/programming/autogen), you can process auto-component files found inside of your project during builds to create C++ classes for components and controllers that provide network replication and remote function calls. Auto-components also manage edit and behavior context bindings so that the bound component shows in **O3DE Editor** and works with **Open 3D Engine (O3DE)** scripting.
 
 ## Auto-component file structure
 
@@ -20,7 +20,7 @@ The `Component` tag defines the name, namespace, include path, and override beha
 | Namespace | The namespace the generated auto-component will be placed within. For a given Gem, all defined auto-components must be defined within the same namespace. Mixing namespaces inside a Gem will result in compiler errors. | `string`: Must be a valid C++ namespace name. |
 | OverrideComponent | If `true`, the generated component will be a base class and the developer implementing the multiplayer component will be responsible for supplying the final derived component used in the editor and at runtime. | `bool` |
 | OverrideController | If `true`, the generated controller will be a base class, and the developer implementing the multiplayer component will be responsible for supplying the final derived controller used in the runtime. | `bool` |
-| OverrideInclude | If either `OverrideComponent` or `OverrideController` are `true`, this value is **required** and must be the path (relative to the Gem root) of the header containing the concrete implementations. | `string`: The developer implementing the final component or controller classes must provide the class header the final classes are declared within. |
+| OverrideInclude | If either `OverrideComponent` or `OverrideController` are `true`, this value is **required** and must be the path (relative to the Gem root) of the header containing the concrete implementations. | `string`: The developer implementing the final component or controller classes must provide the class header that the final classes are declared within. |
 
 ### ComponentRelation
 

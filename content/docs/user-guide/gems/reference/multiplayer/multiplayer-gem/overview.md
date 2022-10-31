@@ -58,11 +58,11 @@ Since each entity with a multiplayer component is replicated across the network,
 
 The roles offered for O3DE multiplayer hosts are:
 
-* **Client** (`NetEntityRole::Client`): The lowest privilege role for a component. The smallest possible subset of network properties are replicated to this role, and its behavior is strictly read-only. Use this role when working with entities that should contain only presentation logic and act as a proxy for invoking RPCs. Examples of entities which should use this role are AIs and entities under the control of another host.
+* **Client** (`NetEntityRole::Client`): The lowest privilege role for a component. The smallest possible subset of network properties are replicated to this role, and its behavior is strictly read-only. Use this role when working with entities that should contain only presentation logic and act as a proxy for invoking RPCs. Examples of entities that should use this role are AIs and entities under the control of another host.
 
 * **Autonomous** (`NetEntityRole::Autonomous`): A role with the _illusion_ of write access. Autonomous roles are usually assigned to components directly under local user control. These roles receive a larger amount of network information than a Client role. Autonomous roles can also take advantage of predictive networking.
 
-* **Authority** (`NetEntityRole::Authority`): The role with ultimate authority. It has full write access and sees all network properties on the component.
+* **Authority** (`NetEntityRole::Authority`): The role with ultimate authority. It has full read and write access to all network properties on the component.
 
 In addition to the previously described roles, O3DE has an additional role found only in multiserver instances:
 

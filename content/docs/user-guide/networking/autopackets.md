@@ -51,7 +51,7 @@ The `Member` tag defines data on the packet. This is the primary mechanism for d
 
 ### Include
 
-AzAutoGen uses the `Include` tag to generate the `#includes` of the C++ code. Use an `Include` tag for each header that your generated classes will use
+AzAutoGen uses the `Include` tag to generate the `#includes` of the C++ code. Use an `Include` tag for each header used by the generated classes.
 
 | Property | Description | Type |
 |---|---|---|---|
