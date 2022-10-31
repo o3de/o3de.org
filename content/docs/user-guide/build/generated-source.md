@@ -6,14 +6,14 @@ description: Learn how to integrate AzAutoGen into Open 3D Engine (O3DE), so it 
 
 For complicated systems that use a lot of boilerplate code, it's useful to perform some kind of light automation to generate source files where possible. To generate files during builds, **Open 3D Engine (O3DE)** uses the **AzAutoGen** tool through a CMake command. O3DE stores the output source code in your CMake build directory and picks up the code to build it in your target.
 
-In order to use AzAutoGen, you must provide Jinja templates and XML or JSON data files that AzAutoGen can generate output files from. The contents of these files depend on your intended purpose for using AzAutoGen. For a complete description of how AzAutoGen works and how to write templates and data inputs for generation, read [Automate Source Generation from Templates with AzAutoGen](/docs/user-guide/programming/autogen/). 
+To use AzAutoGen, you must provide Jinja templates and XML or JSON data files that AzAutoGen can generate output files from. The contents of these files depend on your intended purpose for using AzAutoGen. For a complete description of how AzAutoGen works and how to write templates and data inputs for generation, refer to [Automate Source Generation from Templates with AzAutoGen](/docs/user-guide/programming/autogen/). 
 
 
 ## Integrating with an O3DE target build
 
 AzAutoGen is invoked when CMake builds an O3DE target. To invoke AzAutoGen and generate the output source files for your project or Gem, complete the following steps:
 
-1. Define the autogen rules by passing in a set of `AUTOGEN_RULES` to the `ly_add_target(...)` command in your project's `CMakeLists.txt` file. Each rules maps a set of data input files to a single template and specifies the output filenames for the generated content.
+1. Define the autogen rules by passing in a set of `AUTOGEN_RULES` to the `ly_add_target(...)` command in your project's `CMakeLists.txt` file. Each rule maps a set of data input files to a single template and specifies the output filenames for the generated content.
 
     For specifications on defining autogen rules, refer to the [Autogen rules](#autogen-rules) section on this page. 
 
@@ -26,7 +26,7 @@ When building, CMake detects the list of autogen rules, deduces the set of gener
 
 ### Example
 
-As an example, here are snippets of how the AzNetworking Framework generates the source code for various types of packets that the system requires.
+The following example shows snippets of how the AzNetworking Framework generates the source code for various types of packets that the system requires.
 
 Autogen rules are defined in [`Code/Framework/AzNetworking/CMakeLists.txt`](https://github.com/o3de/o3de/blob/dd0978c59f1d01b39e006e6c3ba3baf6060136cf/Code/Framework/AzNetworking/CMakeLists.txt#L33-L36). It also includes the `aznetworking_files.cmake` file using the `FILES_CMAKE` parameter.
 ```cmake
@@ -61,7 +61,7 @@ set(FILES
 ## Autogen rules
 
 An *autogen rule* instructs CMake to use AzAutoGen to generate files. 
-You can define autogen rules by passing in a set of `AUTOGEN_RULES` to the `ly_add_target(...)` command that's inside your project's `CMakeLists.txt` file.
+You define autogen rules by passing in a set of `AUTOGEN_RULES` to the `ly_add_target(...)` command that's inside your project's `CMakeLists.txt` file.
 
 Each element of the set passed to `AUTOGEN_RULES` should follow the `<input>,<template>,<output>` format. Here, `<input>` is the name of the XML or JSON data input file, `<template>` is the name of the Jinja template file, and `<output>` is the name that you want the generated file to have. 
 
@@ -81,13 +81,13 @@ The input filename supports the following matching operators:
   * `[<sequence>]` - Matches any characters in `<sequence>`.
   * `[!<sequence>]` - Matches any characters _not_ in `<sequence>`.
 
-For information on authoring data input files, refer to [Authoring Jinja templates and data inputs](/docs/user-guide/programming/autogen/).
+For information about authoring data input files, refer to [Authoring Jinja templates and data inputs](/docs/user-guide/programming/autogen/).
 
 ### Jinja Templates
 
 A template filename must be an explicit path to a single `.jinja` file. The path can be absolute or relative to the `CMakeLists.txt` file. 
 
-For information on authoring Jinja templates, refer to [Authoring Jinja templates and data inputs](/docs/user-guide/programming/autogen/).
+For information about authoring Jinja templates, refer to [Authoring Jinja templates and data inputs](/docs/user-guide/programming/autogen/).
 
 
 ### Output files
@@ -124,7 +124,7 @@ AUTOGEN_RULES
 
 ## Integrating with any target
 
-Most of the time, you want to run AzAutoGen by passing autogen rules into `ly_add_target()`, as outlined in the [Integrating with an O3DE build target](#integrating-with-an-o3de-build-target) section earlier. 
+Most of the time, you want to run AzAutoGen by passing autogen rules into `ly_add_target()`, as described in the [Integrating with an O3DE build target](#integrating-with-an-o3de-build-target) section earlier. 
 However, in uncommon cases, you may want to run AzAutoGen when building a target that isn't defined by `ly_add_target()`. 
 
 To do this, you can add an autogen step to any build target by calling the `ly_add_autogen()` CMake command. 
@@ -135,7 +135,7 @@ ly_add_autogen(
     NAME <Target to add the autogen step to>
     INCLUDE_DIRECTORIES <List of directories to use as include paths>
     AUTOGEN_RULES <Set of autogen rules describing output generation>
-    ALLFILES <Files generated which are part of the target source for compilation>
+    ALLFILES <Files generated that are part of the target source for compilation>
 )
 ```
 
