@@ -5,9 +5,9 @@ description: O3DE features can use AzAutoGen to automatically generate code and 
 weight: 200
 ---
 
-To create many similar boilerplate classes or assets, the simplest solution is often automated generation from templates and data inputs. For source file generation, **Open 3D Engine (O3DE)** uses **AzAutoGen**, its own lightweight generator system.
+To create many similar boilerplate classes or assets, the most efficient solution is often automated generation from templates and data inputs. For source file generation, **Open 3D Engine (O3DE)** uses **AzAutoGen**, its own lightweight generator system.
 
-AzAutoGen is a Python tool that uses the [Jinja2](https://jinja.palletsprojects.com/) template engine. Given a Jinja template and a set of XML or JSON data, AzAutoGen generates a set of output files. Your own O3DE Gems and projects can use AzAutoGen during build to generate output source files, such as code or assets. For information on invoking AzAutoGen during a build, refer to [Build Generated Source Files with AzAutoGen](/docs/user-guide/build/generated-source/).
+AzAutoGen is a Python tool that uses the [Jinja2](https://jinja.palletsprojects.com/) template engine. Given a Jinja template and a set of XML or JSON data, AzAutoGen generates a set of output files. Your own O3DE Gems and projects can use AzAutoGen during build to generate output source files, such as code or assets. For information about invoking AzAutoGen during a build, refer to [Build Generated Source Files with AzAutoGen](/docs/user-guide/build/generated-source/).
 
 This topic explains how AzAutoGen works and familiarizes you with both the JSON and XML input formats. 
 
@@ -19,15 +19,15 @@ AzAutoGen works off of two input sets. You can author these files and define the
 - A list of [*autogen rules*](/docs/user-guide/build/generated-source#autogen-rules), which map data input files to template files, and define their resulting output filename.
  
 
-Then, you can invoke AzAutoGen by integrating it into a CMake build process. For more information on how to set this up, refer to [Build Generated Source Files](/docs/user-guide/build/generated-source/).
+Then, you can invoke AzAutoGen by integrating it into a CMake build process. For more information about how to set up this integration, refer to [Build Generated Source Files](/docs/user-guide/build/generated-source/).
 
-Upon invokation, AzAutoGen runs through the following steps. (You can refer to the source code at [`cmake/AzAutoGen.py`](https://github.com/o3de/o3de/blob/5c733c3a34931e48435ef6ee72b7feddeac0e03b/cmake/AzAutoGen.py).)
+After AzAutoGen invokes, it runs through the following steps. (You can refer to the source code at [`cmake/AzAutoGen.py`](https://github.com/o3de/o3de/blob/5c733c3a34931e48435ef6ee72b7feddeac0e03b/cmake/AzAutoGen.py).)
 
-  1. Prune all input files that don't have an `.xml`, `.json`, or `.jinja` extension. Since this occurs, you can place templates at the same location as other code, although this isn't recommended.
+  1. Prune all input files that don't have an `.xml`, `.json`, or `.jinja` extension. Because this occurs, you can place templates at the same location as other code, although this isn't recommended.
 
-  1. Categorize `.xml` and `.json` input files as source (or data) files, and `.jinja` as template files.
+  1. Categorize `.xml` and `.json` input files as source, or data, files, and `.jinja` as template files.
 
-  1. For each set of input/template/output filenames that makes up an autogen rule, match the corresponding files into their appropriate sets. A template file must be a single file; Each input file runs through this template to generate a corresponding file that's named according to the pattern in the output filename.
+  1. For each set of input, template, and output filenames that makes up an autogen rule, match the corresponding files into their appropriate sets. A template file must be a single file. Each input file runs through this template to generate a corresponding file that's named according to the pattern in the output filename.
 
   1. For each XML or JSON data file:
 
@@ -38,9 +38,9 @@ Upon invokation, AzAutoGen runs through the following steps. (You can refer to t
 
 ## Authoring Jinja templates and data inputs
 
-How you use AzAutoGen in your Gem or project is driven by the functionality you author in the Jinja template and the data inputs you supply. 
+How you use AzAutoGen in your Gem or project is driven by the functionality that you author in the Jinja template and the data inputs that you supply. 
 
-First, it helps to understand some Jinja concepts. 
+Before you use the Jinja template, it helps to understand some Jinja concepts. 
 A *Jinja template* is a simple text file that takes in data, replaces parts of the template with the provided data, and outputs the final file. 
 A template contains *variables* and *expressions*, which the data replaces, as well as *tags*, which are logical instructions on how the output file should appear. *Data* are values that are input into the template. For AzAutoGen, you can author data in XML (`.xml`) or JSON (`.json`) files. 
 
@@ -64,15 +64,15 @@ When authoring a Jinja template, you can use the following variables. AzAutoGen 
 
 ### XML validation
 
-If you author input data files in XML, you can bind your `.xml` file to an `.xsd` file. Then, AzAutoGen will detect the `.xsd` file and validate your data input files. If it doesn't comform, AzAutoGen triggers a build failure.
+If you author input data files in XML, you can bind your `.xml` file to an `.xsd` file. Then, AzAutoGen will detect the `.xsd` file and validate your data input files. If it doesn't conform, AzAutoGen initiates a build failure.
 
-For XML validation, AzAutoGen uses the LXML Python library. To better understand how it works, refer to the [LXML documentation](https://lxml.de/).
+For XML validation, AzAutoGen uses the LXML Python library. To better understand how this library works, refer to the [LXML documentation](https://lxml.de/).
 
 ### Example
 
-Since Python XML element objects and dictionaries can't provide a strict one-to-one mapping, using different input formats requires using different templates. O3DE frequently uses XML formats for source generation, for example, when [creating Script Canvas nodes](/docs/user-guide/scripting/script-canvas/programmer-guide/custom-nodes/).
+Because Python XML element objects and dictionaries can't provide a strict one-to-one mapping, using different input formats requires using different templates. O3DE frequently uses XML formats for source generation; for example, when [creating Script Canvas nodes](/docs/user-guide/scripting/script-canvas/programmer-guide/custom-nodes/).
 
-The following example shows how to use AzAutoGen to generate a large set of similar `.h`  files. This example is a simplified version of `AzNetworking` framework's packet generation templates. Be aware that there are structural differences between XML and JSON data -- this is demonstrated in the example template for XML inputs, which contain annotations where there's a difference when processing JSON.
+The following example shows how to use AzAutoGen to generate a large set of similar `.h`  files. This example is a simplified version of `AzNetworking` framework's packet generation templates. Be aware that there are structural differences between XML and JSON data. These differences are demonstrated in the example template for XML inputs, which contain annotations where there's a difference when processing JSON.
 
 
 #### XML data
