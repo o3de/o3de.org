@@ -21,7 +21,7 @@ O3DE currently supports the following set of events:
 |Async|Provides a way to measure asynchronous operations across multiple threads.  This event may be used to output the frame time or network I/O stastistics.  Events with the same "cat"(category) and "id" field values are considered to be from the same event tree.  The "scope" argument is an optional string used to avoid id conflicts. When specified the "cat", "id" and "scope" will be used to identify an event from the same event tree.|b (nestable start), n (nestable instant), e (nestable end)|
 
 
-The following set of events are not provide by the JSON Trace Event Logger in O3DE currently:
+The following set of events are not provided by the JSON Trace Event Logger in O3DE currently:
 |Events|Description|Phase Markers|
 |---|---|---|
 |Flow|Similar to an asynchronous event, except each thread can have a duration associated with it.|s (start), t (step), f (end)|
@@ -49,7 +49,7 @@ Within that directory the following are the most important files to examine to l
 
 This section describes how to register to create an Event Factory and register it with a global interface(this is done by default within O3DE Applications), create an Event Logger, provide the Event Logger stream to record data output and to record sample metrics.  Finally how to visualize those metrics will be described at the end.
 
-The code in this section is available for examination within the [JsonTraceEventLogger Unit Tests](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/Tests/Metrics/JsonTraceEventLoggerTests.cpp) and [EventLoggerUtils Unit Tests](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/Tests/Metrics/EventLoggerUtilsTests.cpp)
+The full source code in this section is available in the [JsonTraceEventLogger Unit Tests](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/Tests/Metrics/JsonTraceEventLoggerTests.cpp) and [EventLoggerUtils Unit Tests](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/Tests/Metrics/EventLoggerUtilsTests.cpp)
 
 ### Create EventLogger Factory and register it as a global instance
 ```c++
@@ -57,11 +57,11 @@ The code in this section is available for examination within the [JsonTraceEvent
 constexpr AZ::Metrics::EventLoggerId SampleLoggerId{ static_cast<AZ::u32>(AZStd::hash<AZStd::string_view>{}("SampleEventLogger")) };
 
 //! This is a google test fixture class used for illustration purposes of recording using the Event Logger API
-class EventLoggerUtilsFixture
+class JsonTraceEventLoggerTest
     : public ::UnitTest::ScopedAllocatorSetupFixture
 {
 public:
-    EventLoggerUtilsFixture()
+    JsonTraceEventLoggerTest()
     {
         // Create an event logger factory
         m_eventLoggerFactory = AZStd::make_unique<AZ::Metrics::EventLoggerFactoryImpl>();
@@ -71,6 +71,7 @@ public:
 
         //...
     }
+
 protected:
     AZStd::string m_metricsOutput;
     AZStd::unique_ptr<AZ::Metrics::IEventLoggerFactory> m_eventLoggerFactory;
@@ -79,7 +80,7 @@ protected:
 
 ### Create a JSON Trace Event Logger that writes to an in-memory string and register it with the Event Logger Factory
 ```c++
-    EventLoggerUtilsFixture()
+    JsonTraceEventLoggerTest()
     {
         //... Previous logic to register event factory
 
@@ -95,53 +96,19 @@ protected:
     }
 ```
 
-### Generate trace metrics and record them to the Event Logger
+### Generate duration trace metrics and record them to the Event Logger
+
+The following block of code shows how to record a string and a number using the event logger
 ```c++
-TEST_F(JsonTraceEventLoggerTest, RecordAllEvents_StringsFromMultipleThreads_WrittenToStream)
 {
     constexpr AZStd::string_view eventString = "Hello world";
     constexpr AZ::s64 eventInt64 = -2;
-    constexpr AZ::u64 eventUint64 = 0xFFFF'0000'FFFF'FFFF;
-    constexpr bool eventBool = true;
-    constexpr double eventDouble = 64.0;
 
-    constexpr auto objectFieldNames = AZStd::to_array<AZStd::string_view>({"Field1", "Field2", "Field3", "Field4", "Field5"});
-    using EventArgsType = AZ::Metrics::EventValue::ArgsVariant;
-    const auto objectFieldValues = AZStd::to_array<EventArgsType>({ eventString, eventInt64, eventUint64, eventBool, eventDouble });
-
-    // Provides storage for the arguments supplied to the "args" structure
-    using EventArrayStorage = AZStd::fixed_vector<AZ::Metrics::EventValue, 8>;
-    using EventObjectStorage = AZStd::fixed_vector<AZ::Metrics::EventField, 8>;
-    EventArrayStorage eventArray;
-    EventObjectStorage eventObject;
-
-    // Fill out the child array and child object fields
-    for (size_t i = 0; i < objectFieldNames.size(); ++ i )
-    {
-        AZStd::string_view fieldName = objectFieldNames[i];
-        const EventArgsType& fieldName = objectFieldValues[i];
-        auto AppendArgs = [name = fieldName, &eventArray, &eventObject](auto&& value)
-        {
-            eventArray.push_back(value);
-            eventObject.emplace_back(name, value);
-        };
-
-        AZStd::visit(AppendArgs, fieldValue);
-    }
 
     // Populate the "args" container to associate with each events "args" field
-    EventObjectStorage argsContainer;
+    AZ::Metrics::EventObjectStorage argsContainer;
     argsContainer.emplace_back("string", eventString);
     argsContainer.emplace_back("int64_t", eventInt64);
-    argsContainer.emplace_back("uint64_t", eventUint64);
-    argsContainer.emplace_back("bool", eventBool);
-    argsContainer.emplace_back("double", eventDouble);
-    argsContainer.emplace_back("array", AZ::Metrics::EventArray(eventArray));
-    argsContainer.emplace_back("object", AZ::Metrics::EventObject(eventObject));
-
-
-    // timestamp to use for complete event
-    AZStd::chrono::utc_clock::time_point startThreadTime = AZStd::chrono::utc_clock::now();
 
     {
         // Record Duration Begin and End Events
@@ -153,80 +120,20 @@ TEST_F(JsonTraceEventLoggerTest, RecordAllEvents_StringsFromMultipleThreads_Writ
         auto resultOutcome = AZ::Metrics::RecordEvent(SampleLoggerId, AZ::Metrics::EventPhase::DurationBegin, durationArgs);
         EXPECT_TRUE(resultOutcome);
 
+        // Update the string value to "GoodbyeWorld and the integer value to "400"
+        argsContainer[0].m_value = "Goodbye world";
+        argsContainer[1]= 400;
+
+        // Re-update the durationArgs argument container to have the latetst argument values
+        durationArgs.m_args = argsContainer;
+
         resultOutcome = AZ::Metrics::RecordEvent(SampleLoggerId, AZ::Metrics::EventPhase::DurationEnd, durationArgs);
         EXPECT_TRUE(resultOutcome);
     }
-
-    {
-        // Record Complete Event
-        auto duration = AZStd::chrono::duration_cast<AZStd::chrono::microseconds>(AZStd::chrono::utc_clock::now() - startThreadTime);
-        AZ::Metrics::CompleteArgs completeArgs;
-        completeArgs.m_name = "Complete Event";
-        completeArgs.m_cat = "Test";
-        completeArgs.m_dur = duration;
-        completeArgs.m_args = argsContainer;
-        completeArgs.m_id = "0";
-        auto resultOutcome = AZ::Metrics::RecordEvent(SampleLoggerId, AZ::Metrics::EventPhase::Complete, completeArgs);
-        EXPECT_TRUE(resultOutcome);
-    }
-
-    {
-        // Record Instant Event
-        AZ::Metrics::InstantArgs instantArgs;
-        instantArgs.m_name = "Instant Event";
-        instantArgs.m_cat = "Test";
-        instantArgs.m_args = argsContainer;
-        instantArgs.m_id = "0";
-        instantArgs.m_scope = AZ::Metrics::InstantEventScope::Thread;
-        auto resultOutcome = AZ::Metrics::RecordEvent(SampleLoggerId, AZ::Metrics::EventPhase::Instant, instantArgs);
-        EXPECT_TRUE(resultOutcome);
-    }
-
-    {
-        // Record Instant Event
-        // Add an extra object field for a count by making a copy of the argsContainer
-        auto extendedArgs = argsContainer;
-        extendedArgs.emplace_back("frameTime", AZ::Metrics::EventValue{ AZStd::in_place_type<AZ::s64>, 16 + threadIndex });
-        AZ::Metrics::CounterArgs counterArgs;
-        counterArgs.m_name = "Counter Event";
-        counterArgs.m_cat = "Test";
-        counterArgs.m_args = extendedArgs;
-        counterArgs.m_id = "0";
-        auto resultOutcome = AZ::Metrics::RecordEvent(SampleLoggerId, AZ::Metrics::EventPhase::Counter, counterArgs);
-        EXPECT_TRUE(resultOutcome);
-    }
-
-    {
-        // Record Async Start and End Events
-        // Also records the Async Instant event
-        constexpr AZStd::string_view asyncOuterEventName = "Async Event";
-
-        AZ::Metrics::AsyncArgs asyncArgs;
-        asyncArgs.m_name = asyncOuterEventName;
-        asyncArgs.m_cat = "Test";
-        asyncArgs.m_args = argsContainer;
-        asyncArgs.m_id = "0";
-        asyncArgs.m_scope = "Distinguishing Scope";
-        auto resultOutcome = AZ::Metrics::RecordEvent(SampleLoggerId, AZ::Metrics::EventPhase::AsyncStart, asyncArgs);
-        EXPECT_TRUE(resultOutcome);
-
-        // Change the name of the event
-        asyncArgs.m_name = "Async Instant Event";
-        resultOutcome = AZ::Metrics::RecordEvent(SampleLoggerId, AZ::Metrics::EventPhase::AsyncInstant, asyncArgs);
-        EXPECT_TRUE(resultOutcome);
-
-        // "Async Event" is the logical name of the being and end event being recorded
-        // So make sure the end event matches
-        asyncArgs.m_name = asyncOuterEventName;
-        resultOutcome = AZ::Metrics::RecordEvent(SampleLoggerId, AZ::Metrics::EventPhase::AsyncEnd, asyncArgs);
-        EXPECT_TRUE(resultOutcome);
-    }
-
-    // Flush and closes the event stream
-    // This completes the json array
-    googleTraceLogger.ResetStream(nullptr);
 }
 ```
+
+### Flush the metrics string to a text file
 
 At this point the the metrics can be logged to stdout, sent over the network or written to a json file on disk.  
 The example will write the metrics a file named with the prefix "sample_metrics_" with the current time formated using the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) spec: `"sample_metrics_2023-01-01T120000.123456.json"`.
@@ -251,38 +158,8 @@ Afterwards here is how the sample json metrics file could look after recording e
 The sample metrics output logs the metrics using multithreads to illustrate that the thread id is associated with each metric.  
 ```json
 [
-  {"name":"Duration Event","id":"0","cat":"Test","ph":"B","ts":1664329933375019,"pid":31760,"tid":36036,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Duration Event","id":"0","cat":"Test","ph":"E","ts":1664329933375119,"pid":31760,"tid":36036,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Complete Event","id":"0","cat":"Test","ph":"X","ts":1664329933375182,"pid":31760,"tid":36036,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Instant Event","id":"0","cat":"Test","ph":"i","ts":1664329933375235,"pid":31760,"tid":36036,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Duration Event","id":"1","cat":"Test","ph":"B","ts":1664329933375233,"pid":31760,"tid":1936,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Counter Event","id":"0","cat":"Test","ph":"C","ts":1664329933375286,"pid":31760,"tid":36036,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0},"frameTime":16}},
-  {"name":"Duration Event","id":"1","cat":"Test","ph":"E","ts":1664329933375353,"pid":31760,"tid":1936,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Duration Event","id":"2","cat":"Test","ph":"B","ts":1664329933375328,"pid":31760,"tid":33928,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Async Event","id":"0","cat":"Test","ph":"b","ts":1664329933375356,"pid":31760,"tid":36036,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Duration Event","id":"3","cat":"Test","ph":"B","ts":1664329933375355,"pid":31760,"tid":19832,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Complete Event","id":"1","cat":"Test","ph":"X","ts":1664329933375422,"pid":31760,"tid":1936,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Async Instant Event","id":"0","cat":"Test","ph":"n","ts":1664329933375436,"pid":31760,"tid":36036,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Duration Event","id":"2","cat":"Test","ph":"E","ts":1664329933375458,"pid":31760,"tid":33928,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Instant Event","id":"1","cat":"Test","ph":"i","ts":1664329933375475,"pid":31760,"tid":1936,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Duration Event","id":"3","cat":"Test","ph":"E","ts":1664329933375475,"pid":31760,"tid":19832,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Async Event","id":"0","cat":"Test","ph":"e","ts":1664329933375484,"pid":31760,"tid":36036,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Complete Event","id":"2","cat":"Test","ph":"X","ts":1664329933375506,"pid":31760,"tid":33928,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Counter Event","id":"1","cat":"Test","ph":"C","ts":1664329933375525,"pid":31760,"tid":1936,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0},"frameTime":17}},
-  {"name":"Complete Event","id":"3","cat":"Test","ph":"X","ts":1664329933375527,"pid":31760,"tid":19832,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Instant Event","id":"2","cat":"Test","ph":"i","ts":1664329933375554,"pid":31760,"tid":33928,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Async Event","id":"1","cat":"Test","ph":"b","ts":1664329933375573,"pid":31760,"tid":1936,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Instant Event","id":"3","cat":"Test","ph":"i","ts":1664329933375575,"pid":31760,"tid":19832,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Counter Event","id":"2","cat":"Test","ph":"C","ts":1664329933375605,"pid":31760,"tid":33928,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0},"frameTime":18}},
-  {"name":"Async Instant Event","id":"1","cat":"Test","ph":"n","ts":1664329933375625,"pid":31760,"tid":1936,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Counter Event","id":"3","cat":"Test","ph":"C","ts":1664329933375629,"pid":31760,"tid":19832,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0},"frameTime":19}},
-  {"name":"Async Event","id":"2","cat":"Test","ph":"b","ts":1664329933375654,"pid":31760,"tid":33928,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Async Event","id":"1","cat":"Test","ph":"e","ts":1664329933375675,"pid":31760,"tid":1936,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Async Event","id":"3","cat":"Test","ph":"b","ts":1664329933375677,"pid":31760,"tid":19832,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Async Instant Event","id":"2","cat":"Test","ph":"n","ts":1664329933375701,"pid":31760,"tid":33928,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Async Instant Event","id":"3","cat":"Test","ph":"n","ts":1664329933375724,"pid":31760,"tid":19832,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Async Event","id":"2","cat":"Test","ph":"e","ts":1664329933375751,"pid":31760,"tid":33928,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}},
-  {"name":"Async Event","id":"3","cat":"Test","ph":"e","ts":1664329933375770,"pid":31760,"tid":19832,"args":{"string":"Hello world","int64_t":-2,"uint64_t":18446462603027808255,"bool":true,"double":64.0,"array":["Hello world",-2,18446462603027808255,true,64.0],"object":{"Field1":"Hello world","Field2":-2,"Field3":18446462603027808255,"Field4":true,"Field5":64.0}}}
+  {"name":"Duration Event","id":"0","cat":"Test","ph":"B","ts":1664329933375019,"pid":31760,"tid":36036,"args":{"string":"Hello world","int64_t":-2}},
+  {"name":"Duration Event","id":"0","cat":"Test","ph":"E","ts":1664329933375119,"pid":31760,"tid":36036,"args":{"string":"Goodbye world","int64_t":400}}
 ]
 ```
 
