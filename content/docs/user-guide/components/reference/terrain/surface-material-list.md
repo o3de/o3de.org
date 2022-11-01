@@ -21,7 +21,7 @@ Select the surface type tag using the **SurfaceTag** drop-down menu, then assign
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Gradient to Material Mappings** | An array of surface tags and material assets to map together. |  |  |
+| **Gradient to Material Mappings** | An array of [surface tags](/docs/user-guide/gems/reference/environment/surface-data) and material assets to map together. |  |  |
 | **Surface Tag** | Selects a surface tag to map to a material. | Surface:  Surface Tag | None |
 | **Material Asset** | Selects a material asset to apply to the surface. | Material Asset | None |
 
