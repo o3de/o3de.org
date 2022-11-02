@@ -3,7 +3,7 @@ linkTitle: Work with Issues
 title: Work with O3DE Documentation Issues
 description: Guide to create and work with issues in the Open 3D Engine (O3DE) documentation project.  
 toc: true
-weight: 250
+weight: 300
 ---
 
 The easiest way to contribute to **Open 3D Engine (O3DE)** documentation is to file an *issue* on GitHub. In O3DE documentation, issues are used to track documentation bugs, requests for new documentation, suggestions, and improvements. You can also search existing O3DE documentation issues for tasks that you would like to address and comment on. To see the current list of O3DE documentation issues, refer to [o3de.org issues](https://github.com/o3de/o3de.org/issues)

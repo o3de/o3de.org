@@ -35,7 +35,7 @@ Supplemental information, such as using the component across different workflows
 
 ## Setting up repository and downloading component template
 
-To contribute to O3DE documentation, you must complete the steps in [Set Up a Local O3DE Docs Repo](/docs/contributing/to-docs/o3de-docs-repo-setup/). You can do this before or after writing your component reference document. However, you must set this up to place your document and images in the right folder.
+To contribute to O3DE documentation, you must complete the steps in [Setting up a local o3de.org repo](./get-started#setting-up-a-local-o3deorg-repo). You can do this before or after writing your component reference document. However, you must set this up to place your document and images in the right folder.
 
 In a new tab, navigate to the file [component reference template](https://raw.githubusercontent.com/o3de/sig-docs-community/main/doc-templates/component-reference.md) in the o3de/sig-docs-community repository and save it to your local machine. Open the template in a text editor and refer to this page as you fill it out.
 
@@ -467,11 +467,4 @@ Remember to update the [Component Reference](/docs/user-guide/components/referen
 
 ## Submit your component reference document
 
-Congratulations on writing your component reference document! It's almost ready to publish. The [Contributing to O3DE Documentation](/docs/contributing/to-docs/) section can help you through the final steps to deliver your document: 
-
-* [Preview your document](/docs/contributing/to-docs/hugo/) using Hugo.
-
-* [Commit and push your document](/docs/contributing/to-docs/git-workflow/) to your `o3de.org` fork.
-
-* [Create a PR](/docs/contributing/to-docs/submit-a-pr/) against the `o3de.org` repository. 
-
+Congratulations on writing your component reference document! It's almost ready to publish. The [Get Started Contributing to Docs](/docs/contributing/to-docs/get-started) section can help you through the final steps to deliver your document.

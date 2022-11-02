@@ -33,6 +33,6 @@ Note that code issues should be filed against the main O3DE repository, while do
 
 ### Submitting Documentation Pull Requests
 
-If you're fixing an issue in the existing documentation, you should submit a PR against the master branch. Follow [these instructions to create a documentation pull request against the o3de.org repository](https://o3de.org/docs/contributing/to-docs/submit-a-pr/).
+If you're fixing an issue in the existing documentation, you should submit a PR against the master branch. For instructions about creating a documentation pull request against the o3de.org repository, refer to []
 
 For more information, see [contributing to O3DE documentation](https://o3de.org/docs/contributing/to-docs/).
