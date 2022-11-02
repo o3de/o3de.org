@@ -54,11 +54,11 @@ Remote procedure calls are how O3DE allows for pushing messages between hosts, r
 
 ## Multiplayer entity roles
 
-Because each entity with a multiplayer component is replicated across the network, you can think of them as existing on more than one host simultaneously. This consideration introduces the problem of *authority* over the network - which hosts have precedence to set the network state, define the replication rules, and determine which roles a host can play. In O3DE, these roles are intentionally compile-time enforced.
+Because each entity with a multiplayer component is replicated across the network, you can think of them as existing on more than one host simultaneously. This consideration introduces the problem of *authority* over the network - which hosts have precedence to set the network state, define the replication rules, and determine which roles a host can play. In O3DE, these roles are intentionally compile-time enforced. The Multiplayer Gem assigns and handles the roles of multiplayer entities automatically. 
 
 The roles offered for O3DE multiplayer hosts are:
 
-* **Client** (`NetEntityRole::Client`): The lowest privilege role for a component. It has the smallest subset of network properties, and its behavior is strictly read-only. Clients handle RPCs. Use this role when working with entities that are under the control of another host and consequently only require presentation logic, such as updating a position in the world. Examples of entities that should use this role are AIs and other players moving in the world.
+* **Client** (`NetEntityRole::Client`): The lowest privilege role for a component. The smallest possible subset of network properties are replicated to this role, and its behavior is strictly read-only. This role is used on client entities that are controlled by a host, and should contain only presentation logic and act as a proxy for invoking RPCs. Examples of entities that should use this role are AIs and other players moving in the world.
 
 * **Autonomous** (`NetEntityRole::Autonomous`): A role with the _illusion_ of write access. Autonomous roles are usually assigned to components directly under local user control. These roles receive a larger amount of network information than a Client role. Autonomous roles can also take advantage of predictive networking.
 
@@ -66,7 +66,7 @@ The roles offered for O3DE multiplayer hosts are:
 
 In addition to the previously described roles, O3DE has an additional role found only in multiserver instances:
 
-* **Server** (`NetEntityRole::Server`): Provided to servers that *don't* have authority over a particular component. The proxy dummies out the networking properties, which the server should treat as if they were in the Client role.
+* **Server** (`NetEntityRole::Server`): Provided to servers that *don't* have authority over a particular entity. This role is strictly read-only, and all interaction with these entities should be handled using RPCs.
 
 ## Related topics
 
