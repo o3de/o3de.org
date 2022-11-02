@@ -8,15 +8,13 @@ weight: 600
 
 This page provides advice on how many independent developers can efficiently maintain the **Open 3D Engine (O3DE)** with automated tests. The advice applies both to teams using O3DE who write their own automation, as well as to anyone contributing to O3DE. This document is not intended to serve as an exhaustive source of testing advice. It instead provides baseline definitions, and heuristics for investing in test automation. Each concept only serves as a brief introduction, as numerous in depth articles can be found published by other sources.
 
-## Cheatsheet
+## Avoid
 
-### Avoid
-
-#### I/O
+### I/O
 
 File access, device input, and network communication are slow operations which can create complex software and hardware dependencies. Tests performing I/O often encounter race conditions such as parallel contention. Most tests should prefer configuring mock implementations of I/O interfaces, and using in-memory buffers to simulate the behavior of actual input and output.
 
-#### Sleep
+### Sleep
 
 Do not rely on `this_thread::sleep` or `time.sleep` in tests. Be immediately suspicious if you see a sleep in a Pull Request. Some quick facts:
 
@@ -24,9 +22,9 @@ Do not rely on `this_thread::sleep` or `time.sleep` in tests. Be immediately sus
   * Latency depends on the the specific device, and still can fluctuate with its physical and digital hardware state.
 * Passing a duration to a sleep function requests a *minimum* time the thread should be suspended, not an exact time it will resume.
 
-{{< note >}}
-Try not to call sleep anywhere, it is almost never the correct tool!
-{{< /note >}}
+{{< caution >}}
+Avoid invoking sleep in any code, it is almost never the correct tool!
+{{< /caution >}}
 
 What are the alternatives?
 
@@ -35,13 +33,13 @@ What are the alternatives?
   * Avoids relying on OS performance counters.
   * Allows for more accurate simulation control while testing.
 
-#### Platform-specific Tests
+### Platform-specific Tests
 
 The majority of code and tests in O3DE should be written to be cross platform. Platform-specific production code should use the Platform Abstraction Layer (PAL) pattern. Tests should then rely on their production code to use PAL to provide the same functionality across different environments.
 
 A test which must target platform-specific behavior should conditionally disable itself when that dependency is unavailable. Tests should *AVOID* performing conditional steps based on their environment, as this makes "the same test" significantly more difficult to investigate when it automatically behaves differently on different machines.
 
-#### Negative Assertions
+### Negative Assertions
 
 Tests should positively verify an expected result occurred, instead of trying to negatively verify that "no bad side-effects" happened. This creates a problem because, unlike the correct result, the set of all potential incorrect results is effectively infinite. Consider the following code:
 
@@ -72,13 +70,13 @@ Negative assertions are different from negative test cases. A negative test case
 
 It can be okay to include negative assertions when there is also at least one positive assertion, but they should not be solely relied on. Focus on identifying the expected output.
 
-### Remember
+## Remember
 
-#### Insanity Checks
+### Insanity Checks
 
 Make sure a new test is actually configured to run and report failures by temporarily editing the production code. Intentionally break the code in one way the test should detect, and run the test suite. If no failure occurs, investigate why!
 
-#### Floating Point Assertions
+### Floating Point Assertions
 
 Floating-point numbers have problems with exact equality, as two floats can represent the "same" value but with slightly different rounding errors. Test frameworks provide special assertions that already account for many common issues:
 
@@ -86,7 +84,7 @@ Floating-point numbers have problems with exact equality, as two floats can repr
   * Custom error tolerance can also be provided to `EXPECT_NEAR(val1, val2, abs_error)`.
 * Python only has one floating point primitive, which is easily checked with `assert val1 == pytest.approx(val2)` or `unittest.assertAlmostEqual(val1, val2)`
 
-#### Assertion Messages
+### Assertion Messages
 
 By default test assertions output a terse message about the compared values. To help someone quickly understand a failure in the future, add a human-readable message. This can also include more context about other variables:
 
@@ -104,7 +102,7 @@ def test_LeakChecker_WaterAdded_DoesNotLeak():
     assert difference <= 0, f"Unexpectedly leaked {difference} units of Water from {target.water_container_dict}"
 ```
 
-#### Hard-coding Helps
+### Hard-coding Helps
 
 Tests should clearly declare their own ground-truth they expect to verify. To keep a test simple and legible, prefer directly using hard-coded values over values obtained from another file or function. Reducing complexity in this way also reduces the chance of accidentally creating an incorrect assumption. Consider the following example code:
 
@@ -290,7 +288,7 @@ Tests should have unique, obvious names to help document what they perform. One 
 2. StateUnderTest: Unique configuration steps. (Arrange)
    * Describes what makes the test vary from "normal" conditions in similar tests.
      * When nothing seems special use a placeholder such as `Default` or `HappyPath`, or omit this.
-3. ExpectedBehavior: The expected outcome of the test.
+3. ExpectedBehavior: The expected outcome of the test. (Assert)
    * Often describes the type of assertion being made `Unequal`, or highlights the most important of multiple asserted values.
    * Easy to read, since it comes last.
 
@@ -298,9 +296,9 @@ An alternative ways to think about this pattern is `<WhatIsTested>_<NotableConfi
 
 There are two main reasons to use this naming method. First, when a test fails a human can look at a report summary and quickly form an idea of what went wrong. If test MatrixDotProduct_SecondMatrixInvalidRows_InvalidDimensions starts failing, someone may immediately suspect what caused the issue before inspecting the code. Second, the name documents what makes the test uniquely important. This makes it easier to assess what is currently tested, and then declare a new test which is not a duplicate.
 
-### Underscores
-
+{{< caution >}}
 While the pattern above recommends using underscores, never start or end test names with underscores! This can result in [GoogleTest creating an invalid function name](http://google.github.io/googletest/faq.html#why-should-test-suite-names-and-test-names-not-contain-underscore) or [PyTest not discovering the test](https://docs.python.org/3/tutorial/classes.html#private-variables).
+{{< /caution >}}
 
 ## Disabling/Skipping Tests
 
@@ -310,7 +308,7 @@ Whenever a test provided with O3DE gets disabled, please [cut an issue](https://
 
 ## Test-Driven Development (TDD)
 
-Test-Driven Development is a software writing workflow which prompts engineers to iteratively develop code. The Red-Green-Refactor process can carve up questions such as "what should I build next?". This primarily helps avoid becoming lost in the ambiguity of software design. TDD also has an extra benefit of leaving behind tests targeting critical requirements. Repeating these three steps can help design new functionality:
+Test-Driven Development is a software writing workflow which prompts engineers to iteratively develop code. The Red-Green-Refactor process can carve up questions such as "what should I build next?". This helps avoid becoming lost in the ambiguity of software design. TDD also has an extra benefit of leaving behind tests targeting critical requirements. Repeating these three steps can help design new functionality:
 
 1. Red: Write a new failing (unit) test for new functionality.
    * What does success look like?
@@ -323,7 +321,7 @@ Test-Driven Development is a software writing workflow which prompts engineers t
    * Taking a step back, are there any better approaches?
 
 {{< note >}}
-TDD is one small, effective tool to help with software design. It is best employed alongside other design tools, such as the [SOLID design principles](https://en.wikipedia.org/wiki/SOLID). TDD helps focus on lower-level concerns, and prompts asking broader questions. However it notably assumes high-level requirements gathering has already provided direction for a task.
+TDD is one small, effective tool to help with software design. It is best employed alongside other design tools, such as the [SOLID design principles](https://en.wikipedia.org/wiki/SOLID). TDD helps focus on lower-level concerns, and prompts asking broader questions. However it also assumes high-level requirements gathering has already provided direction for a task.
 {{< /note >}}
 
-The primary benefits are building code which is easy to use and maintain, plus tests to prove it functions correctly in the future. If you don't already use TDD, try it out for your next feature!
+The primary benefit of TDD is writing code which is easy to use and maintain, plus tests to prove it functions correctly in the future. If you don't already use TDD, try it out for your next feature!
