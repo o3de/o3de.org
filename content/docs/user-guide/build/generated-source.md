@@ -125,10 +125,7 @@ AUTOGEN_RULES
 ## Integrating with any target
 
 Most of the time, you want to run AzAutoGen by passing autogen rules into `ly_add_target()`, as outlined in the [Integrating with an O3DE build target](#integrating-with-an-o3de-build-target) section earlier. 
-However, in uncommon cases, you may want to run AzAutoGen when building a target that isn't defined by `ly_add_target()`. 
-
-To do this you can add an autogen step to any build target by calling the `ly_add_autogen()` CMake command. 
-This associates a target with a set of autogen rules and gives an explicit list of the generated output files to include in the target build.
+For situations where a target is already defined and AzAutoGen needs to be invoked, use the `ly_add_autogen()` CMake command. This command associates a set of autogen rules, including build outputs, with an existing target.
 
 ```cmake
 ly_add_autogen(
