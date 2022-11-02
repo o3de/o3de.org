@@ -10,13 +10,13 @@ The Multiplayer Gem supports entity-based asynchronous networking in O3DE using 
 
 The Multiplayer Gem includes the following features:
 
-* Server authoritative model for anti-cheat
+* Server authoritative networking model for anti-cheat
+* Player spawners
 * Entity replication
 * Push-based synchronization
 * Event-driven network properties
 * Reliable and unreliable remote procedure calls
 * Local prediction
-* Packet reconciliation
 * Network input handlers
 * Multiserver support
 

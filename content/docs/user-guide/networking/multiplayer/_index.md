@@ -9,13 +9,13 @@ The multiplayer framework that the **Multiplayer Gem** provides is built on top 
 
 The Multiplayer Gem includes the following features:
 
-* Server authoritative model for anti-cheat
+* Server authoritative networking model for anti-cheat
+* Player spawners
 * Entity replication
 * Push-based synchronization
 * Event-driven network properties
 * Reliable and unreliable remote procedure calls
 * Local prediction
-* Packet reconciliation
 * Network input handlers
 * Multiserver support
 

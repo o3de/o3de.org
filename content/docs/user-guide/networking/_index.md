@@ -1,14 +1,15 @@
 ---
 linkTitle: Networking
 title: Networking
-weight: 950
 description: Learn about the low-level networking stack in Open 3D Engine (O3DE) and the Multiplayer Gem that uses it to provide multiplayer features in games and simulations.
+weight: 950
 ---
 
-With **Open 3D Engine (O3DE)**, you can use either of the following two networking frameworks depending on your needs:
+**Open 3D Engine (O3DE)** provides multiple networking solutions depending on your needs:
 
 * The `AzNetworking` framework, which provides a low-level networking API.
-* The **Multiplayer Gem** framework, which is built on top of `AzNetworking` and provides multiplayer networking features for games and simulations.
+* The **Multiplayer Gem** framework, which is built on top of `AzNetworking` and uses it to provide multiplayer networking features for games and simulations.
+* The **Remote Tools Gem**, which provides a connectivity solution between O3DE applications for debugging scenarios. Refer to the [Remote Tools Gem](/docs/user-guide/gems/reference/debug/remote-tools/) documentation for more information about this Gem.
 
 ## Networking frameworks
 
@@ -17,10 +18,11 @@ With **Open 3D Engine (O3DE)**, you can use either of the following two networki
 `AzNetworking` is a low-level network transport interface. It provides simple, fast, and efficient networking by focusing on reduced code size and complexity, low latency on packet send and receive operations, and low message processing overhead. Features of `AzNetworking` include:
 
 * Network compression
-* Encryption
+* Encryption using TLS/DTLS
 * Serialization
 * High-performance message processing
-* Reliable UDP packets
+* Reliable/unreliable UDP packets
+* TCP packets
 * Wrapper classes for managing UDP and TCP sockets
 
 If you need to work with networking classes at this lower level, refer to the [AzNetworking section](aznetworking/) topics and use the [AzNetworking API Reference](/docs/api/frameworks/aznetworking/annotated.html).
@@ -29,13 +31,13 @@ If you need to work with networking classes at this lower level, refer to the [A
 
 The Multiplayer Gem supports entity-based asynchronous networking in O3DE using event-driven network properties and remote procedure calls to synchronize state. The Gem includes the following features that multiplayer games and other simulations commonly need:
 
-* Server authoritative model for anti-cheat
+* Server authoritative networking model for anti-cheat
+* Player spawners
 * Entity replication
 * Push-based synchronization
 * Event-driven network properties
 * Reliable and unreliable remote procedure calls
 * Local prediction
-* Packet reconciliation
 * Network input handlers
 * Multiserver support
 
