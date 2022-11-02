@@ -1,7 +1,7 @@
 ---
 linkTitle: Overview
 title: Multiplayer Gem Overview
-description: An overview of the Multiplayer Gem in Open 3D Engine. Includes an introduction to multiplayer components, which provide network state synchronization.
+description: An overview of the Multiplayer Gem in Open 3D Engine (O3DE). Includes an introduction to multiplayer components, which provide network state synchronization.
 weight: 100
 ---
 

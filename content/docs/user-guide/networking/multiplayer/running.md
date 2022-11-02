@@ -1,11 +1,11 @@
 ---
 linkTitle: Running Multiplayer Projects
 title: Running Multiplayer Projects
-description: How to run multiplayer-enabled projects in Open 3D Engine.
+description: How to run multiplayer-enabled projects in Open 3D Engine (O3DE).
 weight: 300
 ---
 
-Running projects using the Open 3D Engine Multiplayer Gem requires build steps followed by a variety of options to run the projects.
+Running projects using the **Multiplayer Gem** in **Open 3D Engine (O3DE)** requires build steps followed by a variety of options needed to run the projects.
 
 * Ensure your project is [properly configured](./configuration).
 * Build your project's `GameLauncher` and `ServerLauncher` targets.
@@ -13,7 +13,7 @@ Running projects using the Open 3D Engine Multiplayer Gem requires build steps f
 
 ## Testing in the Editor
 
-Multiplayer projects can be [run in Editor](./test-in-editor) using Ctrl-G. See the accompanying documentation for more detail.
+You can run multiplayer projects in **O3DE Editor** using **Ctrl+G**. For more information, refer to [Test Multiplayer Projects in the O3DE Editor](./test-in-editor).
 
 ## Running locally using ImGui Options
 

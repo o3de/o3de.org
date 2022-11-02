@@ -1,17 +1,17 @@
 ---
 linkTitle: Debugging Multiplayer Desyncs
 title: Debugging Multiplayer Desync Using Audit Trail
-description: Analyze and debug multiplayer desyncs using the Multiplayer Desync Audit Trail tool.
+description: Analyze and debug multiplayer desyncs using the Multiplayer Desync Audit Trail tool in Open 3D Engine (O3DE).
 weight: 800
 ---
 
-When a client and server disagree on the value of a networked variable, a desync occurs. Desyncs can be extremely difficult to debug which is where the *Multiplayer Desync Audit Trail* can help.
+When a client and server disagree on the value of a networked variable, a desync occurs. Desyncs can be extremely difficult to debug, but the *Multiplayer Desync Audit Trail* tool can help.
 
-The Multiplayer Desync Audit Trail is a tool available with the multiplayer gem for `debug`-configuration builds. It details all network desyncs that occur and categorizes network activity leading up to a desync, allowing you to root cause the desync itself.
+The Multiplayer Desync Audit Trail tool in **Open 3D Engine (O3DE)** is available with the **Multiplayer Gem** for `debug`-configuration builds. The tool details all network desyncs that occur and it categorizes network activity leading up to a desync, allowing you to root cause the desync itself.
 
 ![Audit Trail Overlay](/images/user-guide/networking/multiplayer/audit_trail_default.png)
 
-The Audit Trail will capture a desync including the input ID and host frame it occurred on. For every desync, the UI will list all the captured activity leading to the desync. The depth of this history can be controlled by a cvar.
+The Audit Trail tool captures a desync, including the input ID and host frame that it occurred on. For every desync, the UI lists all the captured activity leading to the desync. You can control the depth of this history by a cvar.
 
 ## Auditing Categories
 
@@ -23,11 +23,11 @@ Desyncs are the primary event captured by the Audit Trail. Consequently the Audi
 
 ### Input events
 
-Network inputs detail actions that create deltas in the networked state of the simulation. The Audit Trail lists all network inputs that were sent. In addition it also lists non-default values for each member per network input. This allows the correlation of inputs to desynchronized data. By tracking client inputs and desyncs together, you can identify if player actions affect specific desyncs.
+Network inputs detail actions that create deltas in the networked state of the simulation. The Audit Trail tool lists all network inputs that were sent. In addition, it also lists non-default values for each member per network input. This allows the correlation of inputs to desynchronized data. By tracking client inputs and desyncs together, you can identify if player actions affect specific desyncs.
 
 ![Audit Trail Inputs](/images/user-guide/networking/multiplayer/audit_trail_input.png)
 
-The above screenshot shows inputs that occurred on the client's player entity, relative to the desync including those that are processed locally. For the host frames in question, the actions were exclusively the player moving via `NetworkPlayerMovementComponent`.
+The preceding screenshot shows inputs that occurred on the client's player entity, relative to the desync, including those that are processed locally. For the host frames in question, the actions were exclusively the player moving via `NetworkPlayerMovementComponent`.
 
 ### Capturing custom events
 

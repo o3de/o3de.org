@@ -1,13 +1,13 @@
 ---
 linktitle: Spawning Players
 title: Spawning Player Entities
-description: A reference for spawning and registering network player entities in Open 3D Engine.
+description: A reference for spawning and registering network player entities in Open 3D Engine (O3DE).
 weight: 700
 ---
 
-In most scenarios, when a player joins a multiplayer session, a controllable networked entity must be spawned for the player. The **Multiplayer Gem** provides an interface to specify an *autonomous* entity for a player. Refer to the definition of *autonomous role* in the [Multiplayer Gem Overview](overview#multiplayer-entity-roles) for more information.
+In most scenarios, when a player joins a multiplayer session, a controllable networked entity must be spawned for the player. The **Multiplayer Gem** in **Open 3D Engine (O3DE)** provides an interface to specify an *autonomous* entity for a player. For more information about autonomous roles, refer to the [Multiplayer Gem Overview](overview#multiplayer-entity-roles).
 
-*IMultiplayerSpawner* is an [`AZ::Interface<T>`](/docs/user-guide/programming/az-interface) that provides a mechanism to tell the Multiplayer Gem what to spawn and where when a player joins a session. `IMultiplayerSpawner` also provides a hook to clean up when a player leaves. All multiplayer games should provide an implementation to handle the events delivered for player join and player leave events.
+*IMultiplayerSpawner* is an [`AZ::Interface<T>`](/docs/user-guide/programming/az-interface) that provides a mechanism to tell the Multiplayer Gem what to spawn and where to spawn it when a player joins a session. `IMultiplayerSpawner` also provides a hook to clean up when a player leaves. All multiplayer games should provide an implementation to handle the events delivered for player join and player leave events.
 
 ### Player join events
 

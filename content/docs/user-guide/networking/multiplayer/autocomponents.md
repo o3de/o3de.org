@@ -1,7 +1,7 @@
 ---
 linktitle: Auto-components
 title: Multiplayer Auto-components
-description: A reference for defining Open 3D Engine multiplayer state through autocomponents.
+description: A reference for defining Open 3D Engine (O3DE) multiplayer states through auto-components.
 weight: 400
 ---
 
