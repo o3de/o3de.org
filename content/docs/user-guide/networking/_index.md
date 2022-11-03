@@ -5,7 +5,7 @@ description: Learn about the low-level networking stack in Open 3D Engine (O3DE)
 weight: 950
 ---
 
-**Open 3D Engine (O3DE)** provides multiple networking solutions depending on your needs:
+**Open 3D Engine (O3DE)** includes the following networking and multiplayer features:
 
 * The `AzNetworking` framework, which provides a low-level networking API.
 * The **Multiplayer Gem** framework, which is built on top of `AzNetworking` and uses it to provide multiplayer networking features for games and simulations.
@@ -39,7 +39,6 @@ The Multiplayer Gem supports entity-based asynchronous networking in O3DE using 
 * Reliable and unreliable remote procedure calls
 * Local prediction
 * Network input handlers
-* Multiserver support
 
 For information on how to use the multiplayer framework that the Multiplayer Gem provides, refer to the [Multiplayer section](multiplayer/) topics. To help you experiment with its features, be sure to download the [multiplayer sample](https://github.com/o3de/o3de-multiplayersample#readme) and try the [multiplayer tutorials](/docs/learning-guide/tutorials/multiplayer/).
 

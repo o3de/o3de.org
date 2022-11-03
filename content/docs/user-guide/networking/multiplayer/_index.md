@@ -17,7 +17,6 @@ The Multiplayer Gem includes the following features:
 * Reliable and unreliable remote procedure calls
 * Local prediction
 * Network input handlers
-* Multiserver support
 
 ## Section topics
 
