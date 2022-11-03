@@ -5,7 +5,7 @@ description: A reference for defining Open 3D Engine (O3DE) multiplayer states t
 weight: 400
 ---
 
-*Auto-components* provide a convenient way to define states of an **Open 3D Engine (O3DE)** multiplayer component relevant to network synchronization. Using the [AzAutoGen](/docs/user-guide/programming/autogen) system, auto-component files found in your project are processed during builds to create C++ classes for components and to create controllers that provide network replication and remote function calls. Auto-components also take care of Editor and behavior context bindings so that the bound component shows in the Editor and works with O3DE scripting.
+*Auto-components* provide a convenient way to create **Open 3D Engine (O3DE)** multiplayer components that require network synchronization. Using the [AzAutoGen](/docs/user-guide/programming/autogen) system, you can process auto-component files that are found in your project during a build to create C++ classes for components and to create controllers that provide network replication and remote function calls. Auto-components also manage [edit](/docs/user-guide/programming/components/reflection/edit-context/) and [behavior](/docs/user-guide/programming/components/reflection/behavior-context/) context bindings so that the bound component shows in **O3DE Editor** and works with O3DE scripting.
 
 In order to enable auto-component builds for your project, follow the instructions in [Multiplayer Project Configuration](./configuration).
 
@@ -18,19 +18,19 @@ Auto-components are defined in XML files, placed in the `Code\Source\Autogen` di
 The `Component` tag defines the name, namespace, include path, and override behavior for the multiplayer component being described.
 
 | Property | Description | Type |
-|---|---|---|---|
+|---|---|---|
 | Name | The class name of the generated auto-component. | `string`: Must be a valid C++ class name. |
 | Namespace | The namespace the generated auto-component will be placed within. For a given Gem, all defined auto-components must be defined within the same namespace. Mixing namespaces inside a Gem will result in compiler errors. | `string`: Must be a valid C++ namespace name. |
 | OverrideComponent | If `true`, the generated component will be a base class and the developer implementing the multiplayer component will be responsible for supplying the final derived component used in the editor and at runtime. | `bool` |
 | OverrideController | If `true`, the generated controller will be a base class, and the developer implementing the multiplayer component will be responsible for supplying the final derived controller used in the runtime. | `bool` |
-| OverrideInclude | If either `OverrideComponent` or `OverrideController` are `true`, this value is **required** and must be the path (relative to the Gem root) of the header containing the concrete implementations. | the developer implementing the final component or controller classes must provide the class header the final classes are declared within. | `string` |
+| OverrideInclude | If either `OverrideComponent` or `OverrideController` are `true`, this value is **required** and must be the path (relative to the Gem root) of the header containing the concrete implementations. | `string`: The developer implementing the final component or controller classes must provide the class header that the final classes are declared within. |
 
 ### ComponentRelation
 
 A component relation (the `ComponentRelation` tag) describes how various components may be related to the component being described. 
 
 | Property | Description | Type |
-|---|---|---|---|
+|---|---|---|
 | Name | The name of the related component. | `string`: Must be a valid C++ class name. |
 | Namespace | The namespace the related component is declared within. | `string`: Must be a valid C++ namespace. |
 | Include | The include path of the related component. | `string` |
@@ -47,7 +47,7 @@ For components which have a relation constraint of `Required` or `Weak`, accesso
 The `Include` tag is used to generate the `#includes` of the C++ code. Use an `Include` tag for each header that your generated classes will use.
 
 | Property | Description | Type |
-|---|---|---|---|
+|---|---|---|
 | File | The path to a header to add as an `#include` of the generated source. | `string` |
 
 {{< todo issue="https://github.com/o3de/o3de.org/issues/678" >}}
