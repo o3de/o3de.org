@@ -21,7 +21,8 @@ Scene settings can come from several places:
 * Default scene settings logic exists for all supported asset types. Asset Pipeline uses this default logic to process scene files when no other settings exist.
 * Soft naming conventions on the mesh and skeleton nodes in the source asset can be used to override the default logic. For example, a node with the suffix `_lod1` is treated as a level of detail (LOD).
 * User generated `.assetinfo` files override the default logic, and can override soft naming conventions. These sidecar files have the same name as their relative source asset file, but have a `.assetinfo` extension. For example, `myCharacter.fbx.assetinfo` contains the the scene settings for `myCharacter.fbx`. User generated `.assetinfo` files are created with the [Scene Settings](scene-settings) tool.
-* Some jobs, usually from a [Python Asset Builder](/docs/user-guide/assets/builder/), might output procedurally generated `.assetinfo` files. These files take priority over user generated `.assetinfo` files because the procedural system can read the source file when generating scene settings and choose to override them.
+* Some jobs output procedurally generated `.assetinfo` files as part of asset processing. These files take priority over user generated `.assetinfo` files because the procedural system can read the source file when generating scene settings and choose to override them.
+
 * Python scripts can be called to modify the scene settings loaded in memory when an asset is processed. This can override all other scene settings, because the script can read the scene settings provided through any other method and modify them.
 
 ## Scene source assets topics
