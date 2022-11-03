@@ -1,7 +1,8 @@
 ---
-description: ' Use group selection and reference spaces in Open 3D Engine. '
-title: Using Group Selections and Reference Spaces
-weight: 250
+linkTitle: Group Selection
+title: Group Selection
+description: Select and manipulate groups of entities in the 3D Viewport in Open 3D Engine (O3DE).
+weight: 300
 ---
 
 In the viewport, you can select multiple entities. This is called a group selection. You can use the following shortcuts for group selection.

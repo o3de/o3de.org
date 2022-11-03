@@ -1,6 +1,7 @@
 ---
-description: ' Create reference spaces to modify your entities in Open 3D Engine. '
-title: Reference Space Model
+linkTitle:  Reference Spaces
+title: Reference Spaces
+description: Create reference spaces to modify your entities in Open 3D Engine (O3DE).
 weight: 200
 ---
 
