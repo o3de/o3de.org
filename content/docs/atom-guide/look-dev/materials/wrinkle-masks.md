@@ -10,6 +10,8 @@ This document describes how to drive the blending of different wrinkle layers in
 
 For a demonstration of wrinkle mask blending, see a [YouTube video](https://www.youtube.com/watch?v=ebr8t_mz8p8&t=3s) by Deadhaus Sonata. This video shows wrinkle mask blending with O3DE in action. 
 
+The skin shader supports up to 4 wrinkle layers, where a wrinkle layer can be a base color or a normal. A wrinkle mask is an RGBA `.tif` file, and each color channel corresponds to the weight of one of the wrinkle layers. So for a material with only one wrinkle layer, all of the masks will only be red (with `0`, or black, in the green, blue, and alpha channels). If a material uses two wrinkle layers, such as one for vertical wrinkles and one for horizontal wrinkles, then each wrinkle mask will be red, green, or a combination of the two.
+
 {{< important >}}
 This workflow represents a minimum viable product for animating wrinkle masks. There are a number of aspects that could use feedback on how to improve, such as how the normal maps and blend masks are blended, and the potential need for corrective blend masks. If you are using this feature, please reach out to [sig-graphics-audio on Discord](https://discord.com/channels/805939474655346758/816043793576886273) with your suggestions!
 {{< /important >}}
