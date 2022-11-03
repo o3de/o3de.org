@@ -31,7 +31,7 @@ If you need to work with networking classes at this lower level, refer to the [A
 
 The Multiplayer Gem supports entity-based asynchronous networking in O3DE using event-driven network properties and remote procedure calls to synchronize state. The Gem includes the following features that multiplayer games and other simulations commonly need:
 
-* Server authoritative networking model for anti-cheat
+* Server authoritative networking model
 * Player spawners
 * Entity replication
 * Push-based synchronization
