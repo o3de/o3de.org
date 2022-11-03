@@ -19,10 +19,9 @@ When source assets are placed in a scan directory, [Asset Processor](../../asset
 Scene settings can come from several places:
 
 * Default scene settings logic exists for all supported asset types. Asset Pipeline uses this default logic to process scene files when no other settings exist.
-* Soft naming conventions on the mesh and skeleton nodes in the source asset can be used to override the default logic. For example, a node with the suffix `_lod1` is treated as a level of detail (LOD).
+* Soft naming conventions on the mesh and skeleton nodes in the source asset can be used to override the default logic. For example, a node with the suffix `_phys` is treated as a collision mesh.
 * User generated `.assetinfo` files override the default logic, and can override soft naming conventions. These sidecar files have the same name as their relative source asset file, but have a `.assetinfo` extension. For example, `myCharacter.fbx.assetinfo` contains the the scene settings for `myCharacter.fbx`. User generated `.assetinfo` files are created with the [Scene Settings](scene-settings) tool.
 * Some jobs output procedurally generated `.assetinfo` files as part of asset processing. These files take priority over user generated `.assetinfo` files because the procedural system can read the source file when generating scene settings and choose to override them.
-
 * Python scripts can be called to modify the scene settings loaded in memory when an asset is processed. This can override all other scene settings, because the script can read the scene settings provided through any other method and modify them.
 
 ## Scene source assets topics
@@ -32,8 +31,7 @@ The topics in this section provide general information about creating scene sour
 | Topic | Description |
 | - | - |
 | [Scene format support](scene-format-support) | In depth information on scene data supported in O3DE. |
-| [Best Practices](source-asset-best-practices) | Some general best practices for scene source assets created in DCC applications to be processed for O3DE. |
-| [Blender Scene Exporter](blender-scene-exporter) | Information on the Blender Scene Exporter that is provided with O3DE. Blender users can use to tool to ensure their scene source assets are correctly formatted to be processed for O3DE. |
+| [Best Practices](source-asset-best-practices) | Best practices for scene source assets created in DCC applications to be processed for O3DE. |
 | [Scene Settings](scene-settings) | Documentation on the Scene Settings tool that you can use to customize how individual scene source assets are processed. |
 | [Interface](interface) | An overview of the Scene Settings interface and the options it displays based on the contents of source assets. |
 | [Meshes](meshes-tab) | An explanation of the **Meshes** tab, and the modifiers you can add to customize mesh product asset generation. |

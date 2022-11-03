@@ -8,7 +8,7 @@ toc: true
 
 With **Scene Settings**, you can specify what data is processed from 3D scene source assets, and add modifiers to customize how the data is processed for **Open 3D Engine (O3DE)**. Scene settings provides tabs with options for **Meshes**, **Actors**, **Motions**, and **PhysX** colliders. The Scene Settings interface presents tabs based on the types of data that are detected in the selected source asset file.
 
-{{< image-width "/images/user-guide/assets/scene-settings/scene-settings-interface.png" "550" "The Scene Settings user interface." >}}
+{{< image-width "/images/user-guide/assets/scene-settings/scene-settings-interface.png" "650" "The Scene Settings user interface." >}}
 
 ## Source and product assets
 
@@ -16,7 +16,7 @@ In Scene Settings you can specify any number of meshes, actors, PhysX colliders,
 
 You can see the product assets by expanding the asset list of a source asset in **Asset Browser**. In the image below, `Lucy_High.fbx` is the source asset and the assets contained within the highlighted box are all product assets of `Lucy_High.fbx`
 
-{{< image-width "/images/user-guide/assets/scene-settings/asset-browser-product-assets.png" "550" "An expanded list of product assets in Asset Browser." >}}
+{{< image-width "/images/user-guide/assets/scene-settings/asset-browser-product-assets.png" "650" "An expanded list of product assets in Asset Browser." >}}
 
 ## Using Scene Settings
 
@@ -26,7 +26,7 @@ Scene Settings operates on one source asset at a time. To open Scene Settings, u
 
 1. **Right-click** the 3D scene source asset and then choose **Edit Settings...**.
 
-{{< image-width "/images/user-guide/assets/scene-settings/asset-browser-edit.png" "550" "Open Scene Settings from a selected 3D scene source asset in Asset Browser." >}}
+{{< image-width "/images/user-guide/assets/scene-settings/asset-browser-edit.png" "650" "Open Scene Settings from a selected 3D scene source asset in Asset Browser." >}}
 <!-- Don't remove the newline below. -->
 \
 {{< note >}}
