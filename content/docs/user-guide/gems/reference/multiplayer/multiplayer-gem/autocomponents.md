@@ -27,7 +27,7 @@ The `Component` tag defines the name, namespace, include path, and override beha
 
 ### ComponentRelation
 
-The `ComponentRelation` tag indicates a component relation, which describes how various components may relate to the component that's being described.
+The `ComponentRelation` tag indicates this component's relationship with other components. Use this to define if this component requires or is incompatible with sibling components on the same entity. For example, the NetworkCharacterComponent requires a NetworkTransformComponent on the same entity to properly function.
 
 | Property | Description | Type |
 |---|---|---|---|
@@ -94,9 +94,10 @@ The `Include` tag is used to generate the `#includes` of the C++ code. Use an `I
 
 ## Building auto-components
 
-Auto-components are processed when you compile and build your project.
-Make sure to add your auto-component files inside your project's CMake file so they can be built.
+Auto-components are processed when you compile and build your project. 
+Any time that you update an auto-component XML file, you must reconfigure and recompile O3DE Editor, Game Launcher, and Server Launcher. That's because the XML is used to generate a C++ file, and the C++ file must be compiled. For more information, refer to [Configure and Build](/docs/user-guide/build/configure-and-build).
 
+Like other O3DE components, make sure to add your auto-component files inside your project's CMake file so they can be built. Similarly, you must reconfigure and recompile after updating any CMake file.
 This example of `<your-project>_files.cmake` lists the auto-component files.
 ```cmake
 set(FILES
@@ -105,5 +106,3 @@ set(FILES
     Source/AutoGen/MySimpleNetPlayerComponent.AutoComponent.xml    
 )    
 ```
-
-Any time that you update a CMake file, you must reconfigure and recompile O3DE Editor, Game Launcher, and Server Launcher. For more information, refer to [Configure and Build](/docs/user-guide/build/configure-and-build).
