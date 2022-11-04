@@ -45,7 +45,8 @@ O3DE requires CMake {{< versions/cmake >}} or higher.
 | Topic | Description |
 | --- | --- |
 | [Configure and Build](configure-and-build) | The full details on how to configure and build O3DE core, Gems, and projects. |
-| [Create Distributable Open 3D Engine Builds](distributable-engine) | Instructions on how to separate engine developer and project developer workflows, by creating fixed binaries to distribute to project teams. |
+| [Build Generated Source Files](generated-source) | Learn how to use the AzAutoGen automation tool to generate source files when building a target. |
+| [Engine and Project Distribution](distributable-engine) | Instructions on how to separate engine developer and project developer workflows, by creating fixed binaries to distribute to project teams. |
 | [O3DE Packages](packages) | Learn about the O3DE package system that's used to ship binaries along with your Gem or project. |
 | [Troubleshooting](troubleshooting) | How to debug and troubleshoot CMake and build problems. |
 | [CMake Settings Reference](reference) | Reference for user-configurable CMake settings specific to O3DE. |
