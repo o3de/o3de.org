@@ -20,7 +20,7 @@ The top-level element of an auto-packet definition is a `PacketGroup`. Packet gr
 | Property | Description | Type |
 |---|---|---|
 | Name | The namespace for generated auto-packets. | A valid C++ namespace identifier. |
-| PacketStart | The value at which to start sequencing packet type identifiers for this packet group at. To avoid conflicts with the core `AzNetworking` framework, use `CorePackets::PacketType::Max`. | `const int32` |
+| PacketStart | The value at which to start sequencing packet type identifiers for this packet group. To avoid conflicts with the core `AzNetworking` framework, use `CorePackets::PacketType::Max`. | `const int32` |
 
 ### Packet attributes
 
@@ -28,8 +28,8 @@ The `Packet` tag defines a new packet.
 
 | Property | Description | Type |
 |---|---|---|
-| Name | The class name of the generated autopacket. | A valid C++ class identifier. |
-| Desc | The description of the generated autopacket. | `string` |
+| Name | The class name of the generated auto-packet. | A valid C++ class identifier. |
+| Desc | The description of the generated auto-packet. | `string` |
 | HandshakePacket | If enabled, the packet is part of a connection handshake. | `bool` |
 
 {{< note >}}

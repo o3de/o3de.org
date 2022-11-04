@@ -7,7 +7,7 @@ weight: 400
 
 *Auto-components* provide a convenient way to create **Open 3D Engine (O3DE)** multiplayer components that require network synchronization. Using the [AzAutoGen](/docs/user-guide/programming/autogen) system, you can process auto-component files that are found in your project during a build to create C++ classes for components and to create controllers that provide network replication and remote function calls. Auto-components also manage [edit](/docs/user-guide/programming/components/reflection/edit-context/) and [behavior](/docs/user-guide/programming/components/reflection/behavior-context/) context bindings so that the bound component shows in **O3DE Editor** and works with O3DE scripting.
 
-In order to enable auto-component builds for your project, follow the instructions in [Multiplayer Project Configuration](./configuration).
+To enable auto-component builds for your project, follow the instructions in [Multiplayer: Project Configuration](./configuration).
 
 ## Auto-component file structure
 

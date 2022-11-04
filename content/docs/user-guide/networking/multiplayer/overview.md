@@ -42,7 +42,8 @@ Then, clients update themselves from a delta by:
 
 1. Checking if the received delta is in sequence.
 1. Extracting the delta information and updating the world state.
-1. Sending an `ACK` to the server indicating the world was updated.
+
+After, the AzNetworking layer becomes aware that the world was updated. This occurs automatically through ACK vector replication, and does not require any further action from the client.
 
 ## Remote procedure calls (RPCs)
 
@@ -59,7 +60,9 @@ Because each entity with a multiplayer component is replicated across the networ
 The roles offered for O3DE multiplayer hosts are:
 
 * **Client** (`NetEntityRole::Client`): The lowest privilege role for a component. The smallest possible subset of network properties are replicated to this role, and its behavior is strictly read-only. This role is used on client entities that are controlled by a host, and should contain only presentation logic and act as a proxy for invoking RPCs. Examples of entities that should use this role are AIs and other players moving in the world.
+
 * **Autonomous** (`NetEntityRole::Autonomous`): A role with the _illusion_ of write access. Autonomous roles are usually assigned to components directly under local user control. These roles receive a larger amount of network information than a Client role. Autonomous roles can also take advantage of predictive networking.
+
 * **Authority** (`NetEntityRole::Authority`): The role with ultimate authority. It has full read and write access to all network properties on the component.
 
 In addition to the previously described roles, O3DE has an additional role found only in multiserver instances:
