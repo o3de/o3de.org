@@ -42,7 +42,8 @@ Then, clients update themselves from a delta by:
 
 1. Checking if the received delta is in sequence.
 1. Extracting the delta information and updating the world state.
-1. Sending an `ACK` to the server indicating the world was updated.
+
+After, the AzNetworking layer becomes aware that the world was updated. This occurs automatically through ACK vector replication, and does not require any further action from the client.
 
 ## Remote procedure calls (RPCs)
 
