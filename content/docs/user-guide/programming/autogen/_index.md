@@ -62,11 +62,6 @@ When authoring a Jinja template, you can use the following variables. AzAutoGen 
 | `outputFile` | The name of the output file. |
 | `filename` | The name of the file that AzAutoGen is currently generating. |
 
-### XML validation
-
-If you author input data files in XML, you can bind your `.xml` file to an `.xsd` file. Then, AzAutoGen will detect the `.xsd` file and validate your data input files. If it doesn't conform, AzAutoGen initiates a build failure.
-
-For XML validation, AzAutoGen uses the LXML Python library. To better understand how this library works, refer to the [LXML documentation](https://lxml.de/).
 
 ### Example
 
