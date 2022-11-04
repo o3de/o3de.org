@@ -94,9 +94,9 @@ For information about authoring Jinja templates, refer to [Authoring Jinja templ
 
 When AzAutoGen feeds data input files into the Jinja2 templates, it generates output files. You must specify the names of the output files you want to generate in the autogen rules. You can use the following *special values* when defining the output filenames:
 
-* `$path`: The path to the final output destination.
-* `$fileprefix`: The name of the current file up to the first `.` token. This is equivalent to running the UNIX shell command `basename ${file%%.*}`.
-* `$file`: The full name of the input file. This is equivalent to running the UNIX shell command `basename $file`.
+* `$path`: The path to the final output destination, `${CMAKE_CURRENT_BINARY_DIR}/Azcg/Generated`.
+* `$fileprefix`: The name of the current input file up to the first `.` token. This is equivalent to running the UNIX shell command `basename ${file%%.*}`.
+* `$file`: The full name of the current input file. This is equivalent to running the UNIX shell command `basename $file`.
 
 {{< important >}}
 When generating multiple output files, the output name should _always_ begin with `$path`. Otherwise, AzAutoGen may place output files in an incorrect directory.
@@ -124,7 +124,7 @@ AUTOGEN_RULES
 
 ## Integrating with any target
 
-Most of the time, you want to run AzAutoGen by passing autogen rules into `ly_add_target()`, as outlined in the [Integrating with an O3DE build target](#integrating-with-an-o3de-build-target) section earlier. 
+Most of the time, you want to run AzAutoGen by passing autogen rules into `ly_add_target()`, as outlined in the [Integrating with an O3DE target build](#integrating-with-an-o3de-target-build) section earlier. 
 For situations where a target is already defined and AzAutoGen needs to be invoked, use the `ly_add_autogen()` CMake command. This command associates a set of autogen rules, including build outputs, with an existing target. 
 The `ly_add_autogen()` function is defined in [LyAutoGen.cmake](https://github.com/o3de/o3de/blob/development/cmake/LyAutoGen.cmake#L9-L15). It takes the following parameters:
 ```cmake
