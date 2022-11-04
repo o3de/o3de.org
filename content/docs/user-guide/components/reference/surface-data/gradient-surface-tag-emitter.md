@@ -42,4 +42,4 @@ When applying Gradient Surface Tag Emitter to an entity, the entity is required 
 | **Surface Bounds** | Optionally constrains the gradient to the bounds of an entity with a Shape component. | Shape Entity: EntityId | None |
 | **Threshold Min** | Sets the minimum value from the input gradient that allows tags to be applied. | 0.0 - 1.0 | `0.1` |
 | **Threshold Max** | Sets the maximum value from the input gradient that allows tags to be applied. | 0.0 - 1.0 | `1.0` |
-| **Extended Tags** | An array of surface tags that the gradient will emit. | Array: Surface Tags | None |
+| **Extended Tags** | An array of [surface tags](/docs/user-guide/gems/reference/environment/surface-data) that the gradient will emit.| Array: Surface Tags | None |
