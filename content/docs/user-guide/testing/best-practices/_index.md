@@ -28,10 +28,12 @@ Avoid invoking sleep in any code, it is almost never the correct tool!
 
 What are the alternatives?
 
-* If you need to wait for a long-running operation, consider using AZStd::binary_sempahore or AZStd::condition_variable (semaphore preferred for simplicity) to block until the long running operation is done.
+* If you need to wait for a long-running operation, consider using `AZStd::binary_sempahore` or `AZStd::condition_variable` (semaphore preferred for simplicity) to block until the long running operation is done.
 * If you need to test some time-dependent functionality and need to advance time, expose the ability to advance time programmatically.
   * Avoids relying on OS performance counters.
   * Allows for more accurate simulation control while testing.
+* If you need Python to block until a condition is met, try `ly_test_tools.environment.waiter.wait_for(boolean_function)`
+  * If you need to synchronize Python and C++ code inside the O3DE Editor, prefer `azlmbr.legacy.general.idle_wait_frames` over `idle_wait_seconds`
 
 ### Platform-specific Tests
 
@@ -56,7 +58,7 @@ TEST(MathTests, FastSquare_Integer_Squared)
     //act
     int result = Math::FastSquare(10);
     //assert
-    EXPECT_NE(result), 0);
+    EXPECT_NE(result, 0);
     EXPECT_NE(result, -1);
     EXPECT_NE(result, 10);
 }
@@ -83,6 +85,7 @@ Floating-point numbers have problems with exact equality, as two floats can repr
 * C++ distinguishes between floats and doubles since they are assessed differently `EXPECT_FLOAT_EQ(val1, val2)` and `EXPECT_DOUBLE_EQ(val1, val2)`
   * Custom error tolerance can also be provided to `EXPECT_NEAR(val1, val2, abs_error)`.
 * Python only has one floating point primitive, which is easily checked with `assert val1 == pytest.approx(val2)` or `unittest.assertAlmostEqual(val1, val2)`
+  * In-editor Python tests interacting with C++ code can call `azlmbr.math.Math_IsClose(val1, val2, tolerance)`
 
 ### Assertion Messages
 
@@ -114,7 +117,6 @@ int Math::FastSquare( const int number )
 ```
 
 ```cpp
-
 enum PrecomputedSquares
 {
     pcs_one = 2;
@@ -122,13 +124,15 @@ enum PrecomputedSquares
     // ...
     pcs_ten = 20;
 }
+```
 
+```cpp
 int CalculateTestSquare( const int number)
 {
-    return number * 2;
+    return number + number;
 }
 
-TEST(MathTests, FastSquare_Integer_Squared)
+TEST(MathTests, FastSquare_Integer_Squared1)
 {
     int tenSquared = Math::FastSquare(10);
     int result = Math::FastSquare(10);
@@ -161,7 +165,7 @@ TEST(MathTests, FastSquare_Integer_Squared5)
 }
 ```
 
-The test code above incorrectly expects the buggy behavior of the production code in every test, which will each pass! Each test is incorrectly written in a different way, so the bug cannot be caught. However since the fourth and fifth hard-code the expectation, it is easier to visually find the error when looking at the test code. Try to avoid burying assumptions in other files and functions.
+The incorrect math of the production code is trusted in every test above, which will each pass! Each test is incorrectly written in a different way where the bug cannot be caught. The first test ends up only checking the identity property. No matter how the code is changed, it will only ever verify the code returns the same value. The second test duplicates the production code, which will an annoying pattern to maintain as the code changes in complex ways. The third test uses a static value, but hides it off in another file. However since the fourth and fifth tests hard-code the expectation, it is easier to see the error. Try to avoid burying assumptions in other files and functions.
 
 ## Sizes of Automated Tests in O3DE
 
@@ -216,6 +220,12 @@ Here are real-world examples of O3DE's integ tests in [C++](https://github.com/o
 3. Reduce the amount of code necessary for the integration test
     * Consider refactoring the production interface to make it easier to write (unit) tests
     * Remove similar highly-similar integration tests by combining their steps, and/or eliminating less-critical verifications
+4. Batch tests with large startup time
+    * Share startup cost once in a fixture provided to each test
+    * Combining tests can be considered, though it has complexity tradeoffs
+    * For in-editor Python tests, see [EditorTest](https://www.o3de.org/docs/user-guide/testing/parallel-pattern)
+5. Parallelize small tests which have few external dependencies
+    * Unit test libraries execute in parallel by default
 
 ### System Tests
 
@@ -256,19 +266,23 @@ O3DE's performance testing tools focus on two layers of creating metrics on the 
 
 ## Which Tests are Best?
 
-Short answer: the most useful automated test is usually a unit test. Don't get paralyzed by test design decisions! Write a small test now, and revise your approach while iterating on the feature. If a bug slips through your tests, revise the tests to catch it next time.
+{{< note >}}
+Don't get paralyzed by test design! The most useful automated test is usually a unit test. Write a small test now, and revise your approach while iterating on the feature. If a bug slips through your tests, revise the tests to catch it next time.
+{{< /note >}}
 
-In more detail: there is often no easy answer to which types of test are the most important for a feature. Writing automated tests of each kind can help ensure the highest quality products, but all code comes with a maintenance cost. A balance of tests of each kind based on their effectiveness and resilience is recocmmended:
+There is often no easy answer to which types of test are the most important for a feature. Automated tests are useful because they reduce the human effort to write working code, quickly detecting when functionality regresses to a broken state. Automating many tests of each kind can help ensure the highest quality products, but all code comes with its own maintenance cost. A balance of tests based on their effectiveness and resilience is recocmmended:
 
-* Unit tests should account for at least 80% of the total number of tests.
+* Unit tests should account for the vast majority of the total number of tests.
   * The most efficient to write, execute, and maintain.
   * First line of automated defense against newly introduced bugs.
+  * Often referred to as the base of a "Testing Pyramid"
 * Integration tests should account for most of the remaining automated tests.
   * Integration often catch the most variety of bugs, but also require significantly more effort to write and maintain.
   * UI tests should extremely limited. Most integration tests can be written just below the UI layer, to verify the core functionality of the systems.
-* System tests should account for less than 1% of the total number of tests.
-  * Only the few most critical few workflows should be included, and they should not aim to be exhaustive.
-* Performance metrics and other specialized tests should be added only as specific need is identified
+* System tests should account for a few tests.
+  * Only the few most critical few workflows should be included.
+  * Should not aim to be exhaustive.
+* Performance metrics and other specialized tests should be added only when specific need is identified.
 
 ## Where Do I Write New Tests?
 
@@ -308,7 +322,7 @@ Whenever a test provided with O3DE gets disabled, please [cut an issue](https://
 
 ## Test-Driven Development (TDD)
 
-Test-Driven Development is a software writing workflow which prompts engineers to iteratively develop code. The Red-Green-Refactor process can carve up questions such as "what should I build next?". This helps avoid becoming lost in the ambiguity of software design. TDD also has an extra benefit of leaving behind tests targeting critical requirements. Repeating these three steps can help design new functionality:
+Test-Driven Development is a software writing workflow which prompts engineers to iteratively develop code. The Red-Green-Refactor process can carve up questions such as "what should I build next?" into actionable tasks. This helps avoid getting lost in the ambiguity of software design. TDD also has an extra benefit of leaving behind tests targeting critical requirements. Repeating these three steps can help design new functionality:
 
 1. Red: Write a new failing (unit) test for new functionality.
    * What does success look like?
