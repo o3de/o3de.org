@@ -29,25 +29,21 @@ You can use the manipulator to switch between local and world space without losi
 
 1. Viewport UI icons ({{< icon "world.svg" >}} World, {{< icon "parent.svg" >}} Parent, and {{< icon "local.svg" >}} Local) in the top right of the viewport allow you to pin a reference space.
 
-![Switch between local and parent space in the viewport in O3DE.](/images/user-guide/viewportinteractionmodel/viewport-selection-model-1.gif)
+    ![Switch between local and parent space in the viewport in O3DE.](/images/user-guide/viewportinteractionmodel/viewport-selection-model-1.gif)
 
-## Using Custom Reference Spaces 
+## Creating custom reference spaces
 
 You can adjust the manipulator independent of the entity to create a custom reference space. You can also pick another target entity as a reference space. When you specify a reference space, the entities that you select move in relation to that space.
-
-**To create a custom reference space**
 
 1. In the viewport, select an entity.
 
 1. Select a manipulator mode, such as translation.
 
-1. Press and hold **Ctrl** and **Alt** and click a target entity in the viewport. This matches the manipulator to the translation or orientation of the target entity.
+1. Press and hold **Ctrl** and **Alt** and **left-click** a target entity in the viewport. This matches the manipulator to the translation or orientation of the target entity.
 
-**Example**
+    In the following example, the excavator entity becomes a reference space for the car. When the manipulator moves the car, the car moves in relation to the reference space.
 
-In the following example, the excavator entity becomes a reference space for the car. When the manipulator moves the car, the car moves in relation to the reference space.
-
-![Create a custom reference using another entity as a target in O3DE.](/images/user-guide/viewportinteractionmodel/viewport-selection-model-4.gif)
+    ![Create a custom reference using another entity as a target in O3DE.](/images/user-guide/viewportinteractionmodel/viewport-selection-model-4.gif)
 
 1. Use the manipulator to modify the entity.
 
