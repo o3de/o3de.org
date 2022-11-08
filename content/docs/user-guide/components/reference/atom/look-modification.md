@@ -5,7 +5,7 @@ description: 'Open 3D Engine (O3DE) Look Modification component reference.'
 toc: true
 ---
 
-The **Look Modification** component allows you to apply a color grading post FX using a look-up table (LUT). Before the LUT is applied, the linear color values are altered using the transfer function chosen in "Shaper type". The colors are then un-shaped back into linear color. Any color values outside of the range of the shaper will be clamped. For low dynamic range content, typically the `Log2 48 nits` shaper should be used. For high dynamic range content, typically either the `Log2 1000 nits` or `PQ(SMPTE ST 2084)` shapers are used.
+The **Look Modification** component allows you to apply a color grading post-processing effect using a look-up table (LUT). Before the LUT is applied, the linear color values are altered using the transfer function selected in the **Shaper Type** property. The colors are then un-shaped back into linear color. Any color values outside of the range of the shaper will be clamped. For low dynamic range content, you should typically use the `Log2 48 nits` shaper. For high dynamic range content, you should typically use either the `Log2 1000 nits` or `PQ(SMPTE ST 2084)` shapers.
 
 
 ## Provider ##
