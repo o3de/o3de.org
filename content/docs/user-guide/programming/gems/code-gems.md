@@ -43,3 +43,21 @@ The `<Gem>EditorModule` class contains the logic for using the Gem in the Editor
 ### `<Gem>EditorSystemComponent.cpp`, `<Gem>EditorSystemComponent.h`
 
 The `<Gem>EditorSystemComponent` class is the system component class for managing the Editor module. You can use this class to program Editor functionality. For example, if your Gem implements a component or a window that appears in the O3DE Editor.
+
+## Building a Gem
+
+After a Gem is registered to an engine, project, or the global `o3de_manifest.json`, you can build the gem using the command line.  Gems that have been added to a project will be built automatically when the project builds.  While developing a Gem, however, you may want to build it individually to avoid rebuilding the entire project.
+
+In the directory that is appropriate for your engine installation, use the `cmake --build` command and specify the build solution and configuration.  Use the `--target` flag to specify the Gem modules that you want to build, `<Gem Name>` for the main Gem module or `<Gem Name>.Editor` for Editor modules.  
+
+The following example shows the command to build _both_ the Editor and main Gem modules for a Gem named `MyGem`:
+
+```cmd
+cmake --build build/windows --target MyGem.Editor MyGem --config profile -- -m
+```
+
+When you build a Gem, the build system will also build any of the Gem's dependencies that are listed in the Gem's `gem.json` file.
+
+### Building a Gem in Visual Studio
+
+With your project's build solution open, find your Gem's `Code` directory in the Solution Explorer.  This directory contains all of your Gem's build targets, including the main `<MyGem>` and Editor `<MyGem>.Editor` modules.  Ensure that the correct build configuration is selected on the top toolbar. **Right-click** on a module and select **Build** from the menu to build the module.  
