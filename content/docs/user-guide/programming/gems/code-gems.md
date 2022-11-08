@@ -46,7 +46,7 @@ The `<Gem>EditorSystemComponent` class is the system component class for managin
 
 ## Building a Gem
 
-After a Gem is registered to an engine, project, or the global `o3de_manifest.json`, you can build the gem using the command line.  Gems that have been added to a project will be built automatically when the project builds.  While developing a Gem, however, you may want to build it individually to avoid rebuilding the entire project.
+After a Gem is registered to an engine, project, or the global `o3de_manifest.json`, you can build the gem using the same command line tool that you use to [build the engine and projects](/docs/user-guide/build/).  Gems that have been added to a project will be built automatically when the project builds.  While developing a Gem, however, you may want to build it individually to avoid rebuilding the entire project.
 
 In the directory that is appropriate for your [engine installation](/docs/welcome-guide/setup/setup-from-github/building-windows/#build-the-engine), use the `cmake --build` command and specify the build solution and configuration.  Use the `--target` flag to specify the Gem modules that you want to build, `<Gem Name>` for the main Gem module or `<Gem Name>.Editor` for Editor modules.  
 
