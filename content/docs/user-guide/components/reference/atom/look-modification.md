@@ -12,6 +12,9 @@ The **Look Modification** component allows you to apply a color grading post-pro
 
 [Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
+## Dependencies
+
+[PostFX Layer component](postfx-layer)
 
 ## Properties
 
