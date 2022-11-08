@@ -48,7 +48,7 @@ The `<Gem>EditorSystemComponent` class is the system component class for managin
 
 After a Gem is registered to an engine, project, or the global `o3de_manifest.json`, you can build the gem using the command line.  Gems that have been added to a project will be built automatically when the project builds.  While developing a Gem, however, you may want to build it individually to avoid rebuilding the entire project.
 
-In the directory that is appropriate for your engine installation, use the `cmake --build` command and specify the build solution and configuration.  Use the `--target` flag to specify the Gem modules that you want to build, `<Gem Name>` for the main Gem module or `<Gem Name>.Editor` for Editor modules.  
+In the directory that is appropriate for your [engine installation](/docs/welcome-guide/setup/setup-from-github/building-windows/#build-the-engine), use the `cmake --build` command and specify the build solution and configuration.  Use the `--target` flag to specify the Gem modules that you want to build, `<Gem Name>` for the main Gem module or `<Gem Name>.Editor` for Editor modules.  
 
 The following example shows the command to build _both_ the Editor and main Gem modules for a Gem named `MyGem`:
 
@@ -56,8 +56,8 @@ The following example shows the command to build _both_ the Editor and main Gem 
 cmake --build build/windows --target MyGem.Editor MyGem --config profile -- -m
 ```
 
-When you build a Gem, the build system will also build any of the Gem's dependencies that are listed in the Gem's `gem.json` file.
+When you build a Gem, the build system will also build any of the Gem's dependencies that are listed in the Gem's `code/CMakeLists.txt` file.
 
 ### Building a Gem in Visual Studio
 
-With your project's build solution open, find your Gem's `Code` directory in the Solution Explorer.  This directory contains all of your Gem's build targets, including the main `<MyGem>` and Editor `<MyGem>.Editor` modules.  Ensure that the correct build configuration is selected on the top toolbar. **Right-click** on a module and select **Build** from the menu to build the module.  
+Open the build solution that is appropriate your [engine installation](/docs/welcome-guide/setup/setup-from-github/building-windows/#build-the-engine), for source engine installations this will be the engine's root directory, for pre-built SDK engines this will be the project's root directory. Then find your Gem's `Code` directory in the Solution Explorer.  This directory contains all of your Gem's build targets, including the main `<MyGem>` and Editor `<MyGem>.Editor` modules.  Ensure that the correct build configuration is selected on the top toolbar. **Right-click** on a module and select **Build** from the menu to build the module.  
