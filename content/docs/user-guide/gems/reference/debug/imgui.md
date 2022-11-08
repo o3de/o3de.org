@@ -1,11 +1,11 @@
 ---
-linkTitle: Immediate Mode GUI (IMGUI)
-title: Immediate Mode GUI (IMGUI) Gem
-description: The Immediate Mode GUI (IMGUI) Gem provides the 3rdParty library IMGUI which can be used to create runtime immediate mode overlays for debugging and profiling in Open 3D Engine (O3DE) projects.
+linkTitle: Immediate Mode GUI (ImGui)
+title: Immediate Mode GUI (ImGui) Gem
+description: The Immediate Mode GUI (ImGui) Gem provides the 3rdParty library IMGUI which can be used to create runtime immediate mode overlays for debugging and profiling in Open 3D Engine (O3DE) projects.
 toc: true
 ---
 
-The Immediate Mode GUI (ImGui) Gem provides the 3rdParty library [ImGui](https://github.com/ocornut/imgui), which can be used to create run time immediate mode menus and overlays for debugging and profiling information in Open 3D Engine. You can use it to access existing O3DE tooling or set up your own ImGui menus for your components or other game code.
+The Immediate Mode GUI (ImGui) Gem provides the 3rdParty library [Dear ImGui](https://github.com/ocornut/imgui), which can be used to create run time immediate mode menus and overlays for debugging and profiling information in Open 3D Engine. You can use it to access existing O3DE tooling or set up your own ImGui menus for your components or other game code.
 
 One of the great things about ImGui is that there is next to no overhead when the ImGui game overlay is not visible, which is the default state. It is also very lightweight while in use. 
 
@@ -23,7 +23,7 @@ You can use a keyboard, mouse or controller to navigate the ImGui menus.
 For keyboard use the arrow keys to navigate the menus and `space` to activate or select an option.
 
 ### Controller navigation
-Controller support is disabled by default, to turn it on you can use either the `imgui_EnableController` or `imgui_EnableControllerMouse` to simulate the mouse with the controller.
+Controller support is disabled by default, to turn it on you can use either the `imgui_EnableController` or `imgui_EnableControllerMouse` [CVARs](#cvars) to simulate the mouse with the controller.
 
 If using the controller then the following inputs are supported:
 
@@ -47,13 +47,13 @@ If using the controller as a mouse then the following inputs are supported:
 You can adjust the sensitivity using `imgui_ControllerMouseSensitivity`
 
 ## Discrete input mode
-By default, when ImGui is visible input will be sent to both ImGui and the O3DE game. Sometimes, it is more desirable to only control either ImGui or the Game at any given time. To facilitate this, a discrete input mode has been added.
+By default, when ImGui is visible input will be sent to both ImGui and the O3DE game/editor. Sometimes, it is more desirable to only control either ImGui or the game/editor at any given time. To facilitate this, the ImGui Gem supports a discrete input mode.
 
-Discrete input mode is off by default, it can be turned on in the ImGui O3DE menu, or with the CVAR `imgui_DiscreteInputMode`
+By default, discrete input mode is off. It can be turned on in the ImGui O3DE menu, or with the [CVAR](#cvars) `imgui_DiscreteInputMode`
 
-When this mode is enabled, ImGui will be given a 2nd visibility state, at this point, when toggling ImGui visibility via the HOME button or L3/R3 on a game controller, it will toggle through 3 states instead of the typical 2 ( on and off )
+When this mode is enabled, ImGui will be given a 2nd visibility state, at this point, when toggling ImGui visibility via the HOME button or L3/R3 on a game controller, it will toggle through three states instead of just on and off.
 
-1. ImGui is off - ImGui is not visible
+1. ImGui is off - ImGui is not visible,
 2. All input goes to ImGui - ImGui is visible and receiving all input.
 3. All input goes to the Game - ImGui is visible but input is going to the game. This allows ImGui profiling tools and others to be visible on screen while interacting with O3DE.
 
@@ -84,7 +84,7 @@ O3DE ships with many ImGui tools so the options you see will be dependent on the
 * [Atom Rendering Profiler](https://www.o3de.org/docs/atom-guide/atom-sample-viewer/debug-menu-samples/)
 * [Multiplayer helpers](https://www.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/running/#running-locally-using-imgui-options)
 
-## ImGui CVARs
+## CVARs
 
 ImGui uses the following Console variables (CVARs) either at runtime via the console, or by placing them in configuration. See the general [CVAR guide](https://www.o3de.org/docs/user-guide/appendix/cvars/) for more information on configuring CVARs.
 
