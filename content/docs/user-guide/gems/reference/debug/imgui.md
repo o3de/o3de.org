@@ -13,7 +13,7 @@ One of the great things about ImGui is that there is next to no overhead when th
 
 ImGui can be accessed by pressing the `HOME` key in the editor, game or server launchers.
 
-![ImGui Menus in Viewport](imgui_menus.png)
+![ImGui Menus in Viewport](/images/user-guide/gems/reference/debug/imgui_menus.png)
 
 > Server launchers support ImGui if rendering is active. ImGui requires the `rhi` cvar to not be null.
 
@@ -59,7 +59,7 @@ When this mode is enabled, ImGui will be given a 2nd visibility state, at this p
 
 > You can look at the upper right hand corner of the ImGui Main Menu bar to see the current state of ImGui input. You can also interact with this menu for some input tips.
 
-![ImGui Input Status](imgui_input_and_status.png)
+![ImGui Input Status](/images/user-guide/gems/reference/debug/imgui_input_and_status.png)
 
 ## Using ImGui in your component
 
