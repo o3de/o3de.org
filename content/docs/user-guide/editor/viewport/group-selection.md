@@ -17,13 +17,11 @@ When you select a group of entities, you can use the same controls as you would 
 
 ## Selecting a group of entities
 
-1. In the viewport, select multiple entities.
+1. With multiple entities visible in the viewport, hold **Ctrl** and **left-click** on individual entities to add them to a group selection.
 
-1. Press and hold **Ctrl** and **left-click** and **drag** the rotation manipulator.
+1. To remove an entity from a group selection, hold **Ctrl** and **left-click** on it.
 
-1. Press **Shift** to change from custom to world space.
-
-1. Use the manipulator to modify the entities.
+You can hold **Shift** to switch from the group selection's reference space to world space.
 
 In the following example, three entities are selected. Because there is no common parent of the group, the manipulator defaults to world space. The entities now move in relation to the parent (the manipulator).
 

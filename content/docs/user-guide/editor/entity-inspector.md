@@ -9,13 +9,13 @@ The **Entity Inspector** manages all the components for each entity. Select an e
 
 Use the **Entity Inspector** to do the following:
 
-* Add components to entities
-* Modify component properties
-* Remove, copy, cut, and paste components
-* Set the entity status
-* Customize the entity icon
-* Pin an entity's inspector
-* Create your own help topic for your custom component
+- Add components to entities
+- Modify component properties
+- Remove, copy, cut, and paste components
+- Set the entity status
+- Customize the entity icon
+- Pin an entity's inspector
+- Create your own help topic for your custom component
 
 {{< note >}}
 For a list and descriptions of available components, see [Component Reference](/docs/user-guide/components/reference). You can also click the **Help** icon in the header of each component to open a help topic.

@@ -22,7 +22,7 @@ The **Entity Outliner** shows all the entities and prefabs in the level. You can
 
 ## Reordering Entities
 
-When you create entities or instantiate prefabs, they appear at the bottom of the list in the **Entity Outliner**.
+When you create entities or instantiate prefabs in Entity Outliner without anything selected, they appear at the bottom of the list. If an entity is selected, however, the new entity or prefab will be a child of the selected entity.
 
 1. To move an entity, right-click an entity and choose **Move up** or **Move down**.
 
@@ -48,7 +48,7 @@ You can hide entities so that they don't appear in the viewport, so that the vie
 
 ## Locking Entities 
 
-You can lock entities so that they can't be selected in the viewport, so that you can select only the entities that you want to edit. If you lock a parent entity, all children entities are also locked. You can also lock child entities within a parent entity.
+You can lock entities so that they can't be selected in the viewport.  This allows you to only select the entities that you want to edit. If you lock a parent entity, all child entities are also locked. You can also lock individual child entities within a parent entity.
 
 1. In the **Entity Outliner**, click the lock icon next to the entity. The icon appears white when the entity is locked.
 

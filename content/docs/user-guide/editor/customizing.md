@@ -66,21 +66,15 @@ You can change the general O3DE Editor settings and file settings.
 | Parameter | Description |
 | --- | --- |
 | Show Geometry Preview Panel |  Displays a preview window for the selected object.  |
-| Hide objects by config spec |  Hides objects as determined by the minimal specifications and configuration specifications.  |
-| Enable Source Control |  Enables Perforce version control.  |
-| External Layers: Save only Modified |  Saves only the modified external layers.  |
-| Freeze Read-only external layer on Load |  Freezes the read-only external layers when loading the level.  |
-| Frozen layers are selectable |  Allows objects in frozen layers to be selected.  |
-| Console Background |  Changes the background color for the console.  |
+| Enable Source Control |  Enables Perforce version control. |
+| Clear Console at game startup | If enabled, text in the Console will be cleared when entering Game Mode. | 
+| Console Background |  Changes the background color mode for the console. Default: `Dark` |
 | Auto-load last level at startup |  Loads the level that was last loaded.  |
 | Show Time in Console |  Displays the time in the console window.  |
-| Toolbar Icon Size |  Adjusts the toolbar icon size.  Default: `16` (32 pixels).  |
+| Toolbar Icon Size |  Adjusts the toolbar icon size.  Default: `16` (32 pixels). |
 | Stylus Mode |  Enables stylus mode for tablets and other pointing devices.  |
-| Enable UI 2.0 (EXPERIMENTAL) |  Enables the updated user interface (UI) in O3DE Editor.  |
 | Enable Scene Inspector (EXPERIMENTAL) | Enables the option to inspect scenes in files such as .fbx files. |
 | Restore Viewport Camera on Game Mode Exit |  Returns the camera to the original transform when you exit gameplay mode.  |
-| Enable Legacy UI (DEPRECATED) |  Enable the legacy user interface (UI) in O3DE Editor.  |
-| Enable New Viewport Interaction Model (EXPERIMENTAL) |  Replaces the old interaction model in the viewport. For more information, see [Working with the Viewport Interaction Model](/docs/user-guide/editor/viewport/).  |
 
 **Messaging**
 

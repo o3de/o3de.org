@@ -23,7 +23,7 @@ You can set manipulators to have a custom location, rotation, or scale.
 
 1. Select the transform mode of the manipulator you want to modify.
 
-1. Press and hold **Ctrl**, and **left-click and drag** the manipulator to modify it's location, rotation, or scale.
+1. Press and hold **Ctrl**, and **left-click and drag** the manipulator to modify its location, rotation, or scale.
 
 In the following example, the manipulator is moved away from the car, switches to rotate mode, and rotates the car.
 
@@ -31,7 +31,7 @@ In the following example, the manipulator is moved away from the car, switches t
 
 ## Reset a manipulator's transform, rotation, or scale
 
-You can reset a manipulator to it's default location, rotation, or scale by pressing **Ctrl + R** while the related manipulator is active.
+You can reset a manipulator to its default location, rotation, or scale by pressing **Ctrl + R** while the related manipulator is active.
 
 ## Matching entity transforms
 
