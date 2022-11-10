@@ -6,29 +6,40 @@ weight: 300
 toc: true
 ---
 
-**Open 3D Engine (O3DE)** has a minimum set of hardware and software requirements for development, as outlined in the following sections. In the [Software
-prerequisites and configuration](#software-prerequisites)
-section, each prerequisite is listed along with any specific configuration steps
-required.
+**Open 3D Engine (O3DE)** has a minimum set of hardware and software requirements for development, as outlined in the following sections. In the [Software prerequisites and configuration](#software-prerequisites) section, each prerequisite is listed along with any specific configuration steps required.
 
 ## Hardware requirements
 
+### Minimum hardware requirements
+
 Minimum hardware requirements for development include the following:
 
-+ Quad-core Intel or AMD processor, 2.5 GHz or faster
-+ 8 GB RAM
-+ DirectX 12, Vulkan-compatible, or Metal-compatible video card with 2 GB VRAM minimum
-  + 4 GB VRAM recommended
-  + NVIDIA GeForce GTX 1060 or better, driver version 471.11 or later recommended
-  + AMD Radeon Pro 560 or better
-  + Intel HD 630 or better
++ Quad-core 64-bit x86-capable Intel or AMD processor, 2.5 GHz, with the SSE 4.1 SIMD instruction set
++ 16 GB RAM (8GB RAM may be acceptable if you limit the number of processes used for compilation)
++ DirectX 12, Vulkan-compatible, or Metal-compatible video card
+  + 2 GB VRAM
+  + NVIDIA GeForce GTX 1060, driver version 471.11 or later recommended
+  + AMD Radeon Pro 560
+  + Intel HD 630
   + Shader Model 6.2 (or Shader Model 6.3 to use raytracing features)
-+ 40 - 100 GB of free disk space
++ 40 - 100 GB of free disk space (Installing the engine with the [pre-built installer](https://o3debinaries.org/download/windows.html) requires less disk space than compiling from source)
 + 1366 x 768 px screen resolution
 
 {{< note >}}
-RAM and free disk space requirements are dependent on the options that you select when configuring your project in O3DE.
+RAM and free disk space requirements are dependent on the options that you select when configuring your project in O3DE.  Compiling the engine from source requires 2GB per core in addition to your systems running requirements.
 {{< /note >}}
+
+### Recommended hardware requirements
+
++ Quad-core 64-bit x86-capable Intel or AMD processor, 2.5 GHz, supports the SSE 4.1 SIMD instruction set
++ 32 GB RAM
++ DirectX 12, Vulkan-compatible, or Metal-compatible video card
+  + 6 GB VRAM
+  + NVIDIA GeForce GTX 16 Series, driver version 471.11 or later recommended
+  + AMD RX 5000 Series
+  + Shader Model 6.2 (or Shader Model 6.3 to use raytracing features)
++ 500 GB SSD
++ 1366 x 768 px screen resolution
 
 ## Software prerequisites and configuration {#software-prerequisites}
 
