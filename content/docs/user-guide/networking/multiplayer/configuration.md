@@ -35,7 +35,6 @@ Find the CMake file that defines your project's static target. For example, `<Pr
                 ...
                 <projectname>_autogen_files.cmake
     ```
-    {{< note >}}You create the `<projectname>_autogen_files.cmake` file later in the [Add the AutoGen CMake file](#add-the-autogen-cmake-file) section. For now, create a reference to it in the `CMakeList.txt` file.{{< /note >}}
 
 1. In the `BUILD_DEPENDENCIES PUBLIC` section, add `AZ::AzNetworking`, `Gem::Multiplayer`, and `AZ::AzFramework`.
    ```cmake
