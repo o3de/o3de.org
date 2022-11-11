@@ -16,11 +16,11 @@ Additionally, you can add CVARs to [configuration files](/docs/user-guide/editor
 
 ### Discovering CVARs
 
-The easier way to find the CVARs settable in the current project is via the [console variables window](/docs/user-guide/editor/console/#viewing-the-console-window). Bringing up the console window will list all the CVARs in the current project.
+The fastest way to find all the CVARs settable in the current project is via the [console variables window](/docs/user-guide/editor/console/#viewing-the-console-window). Bringing up the console window will list all the CVARs in the current project as well as allow you to set their values.
 
-You can also begin to type a CVAR name in the console and then use `tab` to show suggestions and autocomplete the CVAR name.
+You can also begin to type the start of CVAR name in the console and then use `tab` to show autocomplete and look at all the potential matches. For example, after typing `ed_` you can use the tab key to cycle through all the CVARs that impact the editor.
 
-![Autoexpansion in console](/images/user-guide/appendix/cvars/console_autoexpand.png)
+![Automatic CVAR expansion in the console](/images/user-guide/appendix/cvars/console_autoexpand.png)
 
 ### CVAR console functions
 
@@ -41,7 +41,7 @@ O3DE uses the following prefixes to make discovering CVARs easier:
 | cl_    | For client only CVARs.                                                           |
 | ed_    | For editor only CVARs.                                                           |
 | net_   | For low-level networking CVARs.                                                  |
-| physx_ | For physx related CVARS.                                                         |
+| physx_ | For physx related CVARs.                                                         |
 | r_     | For rendering related CVARs.                                                     |
 | s_     | For sound related CVARs                                                          |
 | sv_    | For server only CVARs.                                                           |
@@ -52,5 +52,5 @@ O3DE uses the following prefixes to make discovering CVARs easier:
 Many O3DE features expose CVARs to aid debugging, troubleshooting and additional visualization. These features include:
 
 * [Networking](/docs/user-guide/networking/settings/)
-* [Physics](/docs/user-guide/interactivity/physics/debugging/#physx-debug-console-variables)
 * [Navigation](/docs/user-guide/interactivity/navigation-and-pathfinding/recast-navigation/#visualizing-the-navigation-mesh)
+* [Physics](/docs/user-guide/interactivity/physics/debugging/#physx-debug-console-variables)
