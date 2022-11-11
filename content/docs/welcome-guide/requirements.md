@@ -10,36 +10,31 @@ toc: true
 
 ## Hardware requirements
 
-### Minimum hardware requirements
-
-Minimum hardware requirements for development include the following:
-
-+ Quad-core 64-bit x86-capable Intel or AMD processor, 2.5 GHz, with the SSE 4.1 SIMD instruction set
-+ 16 GB RAM (8GB RAM may be acceptable if you limit the number of processes used for compilation)
-+ DirectX 12, Vulkan-compatible, or Metal-compatible video card
-  + 2 GB VRAM
-  + NVIDIA GeForce GTX 1060, driver version 471.11 or later recommended
-  + AMD Radeon Pro 560
-  + Intel HD 630
-  + Shader Model 6.2 (or Shader Model 6.3 to use raytracing features)
-+ 40 - 100 GB of free disk space (Installing the engine with the [pre-built installer](https://o3debinaries.org/download/windows.html) requires less disk space than compiling from source)
-+ 1366 x 768 px screen resolution
+The following sections specify the minimum and recommended system hardware required to install or build **O3DE Editor** and related tools, and to develop O3DE projects.  RAM and free disk space requirements are dependent on the options that you select when configuring your project in O3DE.  Performance will vary based on the complexity of your project's levels.  
 
 {{< note >}}
-RAM and free disk space requirements are dependent on the options that you select when configuring your project in O3DE.  Compiling the engine from source requires 2GB per core in addition to your systems running requirements.
+Building the engine from source requires 2GB _per core_ in addition to your system's running requirements.  However, it is possible to limit the number of cores that are allocated to the build process.  
+
+Installing the engine with the [pre-built installer](https://o3debinaries.org/download/windows.html) requires less disk space and RAM than building from source.
 {{< /note >}}
 
-### Recommended hardware requirements
+### Minimum hardware specification
 
-+ Quad-core 64-bit x86-capable Intel or AMD processor, 2.5 GHz, supports the SSE 4.1 SIMD instruction set
-+ 32 GB RAM
-+ DirectX 12, Vulkan-compatible, or Metal-compatible video card
-  + 6 GB VRAM
-  + NVIDIA GeForce GTX 16 Series, driver version 471.11 or later recommended
-  + AMD RX 5000 Series
-  + Shader Model 6.2 (or Shader Model 6.3 to use raytracing features)
-+ 500 GB SSD
-+ 1366 x 768 px screen resolution
+| Hardware Component | Minimum Specification |
+| - | - |
+| CPU | Quad-core (4 cores) 64-bit x86-capable Intel or AMD processor, 2.5 GHz, with the SSE 4.1 SIMD instruction set |
+| RAM | 16 GB RAM (8GB RAM may be acceptable if you limit the number of processes used for compilation) |
+| GPU | - DirectX 12 or Vulkan-compatible video card <br> - 2 GB VRAM <br> - Shader Model 6.2 (or Shader Model 6.3 to use raytracing features) <br> - NVIDIA GeForce GTX 1060, driver version 471.11 or later recommended _or_ <br> - AMD Radeon Pro 560 _or_ <br> - Intel HD 630 <br> |
+| Hard Disk | 40 GB (using the [pre-built installer](https://o3debinaries.org/download/windows.html)) _or_ 100+ GB (depending on project configuration) of free disk space |
+
+### Recommended hardware specification
+
+| Hardware Component | Recommended Specification |
+| - | - |
+| CPU | Hexa-core (6 cores) 64-bit x86-capable Intel or AMD processor, 2.5 GHz, supports the SSE 4.1 SIMD instruction set |
+| RAM | 32 GB RAM |
+| GPU | - DirectX 12 or Vulkan-compatible video card <br> - 6 GB VRAM <br> - Shader Model 6.2 (or Shader Model 6.3 to use raytracing features) <br> - NVIDIA GeForce GTX 16 Series, driver version 471.11 or later recommended _or_ <br> - AMD RX 5000 Series |
+| Hard Disk | SSD with 1 TB of free disk space |
 
 ## Software prerequisites and configuration {#software-prerequisites}
 
