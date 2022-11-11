@@ -5,9 +5,9 @@ description: Analyze and debug multiplayer desyncs using the Multiplayer Desync 
 weight: 800
 ---
 
-When a client and server disagree on the value of a networked variable, a desync occurs. Desyncs can be extremely difficult to debug, but the *Multiplayer Desync Audit Trail* tool can help.
+When a client and server disagree on the value of a networked variable, a desync occurs. Desyncs can be extremely difficult to debug, but the *Multiplayer Audit Trail* tool can help.
 
-The Multiplayer Desync Audit Trail tool in **Open 3D Engine (O3DE)** is available with the **Multiplayer Gem** for `debug`-configuration builds. The tool details all network desyncs that occur and it categorizes network activity leading up to a desync, allowing you to root cause the desync itself.
+The Multiplayer Audit Trail tool in **Open 3D Engine (O3DE)** is available with the **Multiplayer Gem** for `debug`-configuration builds. The tool details all network desyncs that occur and it categorizes network activity leading up to a desync, allowing you to root cause the desync itself.
 
 ![Audit Trail Overlay](/images/user-guide/networking/multiplayer/audit_trail_default.png)
 
@@ -39,7 +39,7 @@ Custom events are custom auditing events the developer can specify via macros in
 | `AZ_MPAUDIT_INPUT_VALUE` | Allows the developer to audit a non-networked value using the timing data of an input. Timing data includes input ID and host frame. |
 | `AZ_MPAUDIT_VALUE` | Allows the developer to audit a non-networked value without any timing data. |
 
-Custom events allow the developer to specify additional information they'd like to track. In order to use these macros, including 1MultiplayerDebug.h1 is required. The parameters the macros require are:
+Custom events allow the developer to specify additional information they'd like to track. In order to use these macros, including `MultiplayerDebug.h` is required. The parameters the macros require are:
 
 * The variable in question
 * The variable's underlying type. This should always be `T`, even for `RewindableObject<T>` values being captured.

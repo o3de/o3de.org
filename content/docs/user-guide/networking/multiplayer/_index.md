@@ -7,7 +7,7 @@ weight: 200
 
 The multiplayer framework that the **Multiplayer Gem** provides is built on top of `AzNetworking`. The Multiplayer Gem supports entity-based asynchronous networking in **Open 3D Engine (O3DE)**, using event-driven network properties and remote procedure calls to synchronize O3DE components and entities across a network, giving you tools to make a multiplayer game.
 
-The Multiplayer Gem includes the following features:
+The Multiplayer Gem supports the following:
 
 * Server authoritative networking model
 * Player spawners

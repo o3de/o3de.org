@@ -8,7 +8,7 @@ description:  Create multiplayer games with the Open 3D Engine (O3DE) Multiplaye
 
 The Multiplayer Gem supports entity-based asynchronous networking in O3DE using event-driven network properties and remote procedure calls to synchronize O3DE components and entities across a network.
 
-The Multiplayer Gem includes the following features:
+The Multiplayer Gem supports the following:
 
 * Server authoritative networking model
 * Player spawners
