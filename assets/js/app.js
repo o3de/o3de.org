@@ -154,6 +154,49 @@ function showChildren(e) {
   });
 }
 
+// A helper function to build the dropdown for the version switcher.
+function buildSelectElement(currentOrigin) {
+    const branches = [];
+    branches[0] = { name:"main", url:"https://www.o3de.org", displayName:"22.10" };
+    branches[1] = { name:"development", url:"https://development--o3deorg.netlify.app", displayName:"development" };
+    branches[2] = { name:"2205", url:"https://2205--o3deorg.netlify.app", displayName:"22.05" };
+    branches[3] = { name:"local", url:"http://localhost:1313", displayName:"local" };
+
+    var html = ['<select>'];
+    
+    // Build the <select> element.
+    branches.forEach(function(value) {
+        html.push('<option value="' + value.url + '"');
+        if (value.url == currentOrigin) {
+            html.push(' selected="selected"');
+        }
+        html.push('>' + value.displayName + '</option>');
+    });
+    html.push('</select>');
+    
+    return html.join("");
+}
+
+// For docs navbar, switch to a different published docset.
+$(function() {
+    // Build the dropdown for the version switcher, based on the origin part of the URL.
+    $("#version-switcher").html(buildSelectElement(window.location.origin));
+
+    // Set up the onChange event handler for the version switcher to load the current page from the selected location.
+    $("#version-switcher").on("change", function(event) {
+        // Get new host from selected version.
+        const newHost = event.target.value;
+        
+        // Build a new URL using new host and old path.
+        const newURL = new URL(newHost + window.location.pathname);
+        var newHref = newURL.href;
+
+        // Load the new location.
+        if (newHref != window.location.href) {
+            window.location.href = newHref;
+        }
+    });
+});
 
 $(function() {
   $("body").append("<div id=\"docs-mobile-menu-overlay\" class=\"docs-mobile-menu-overlay\"></div>");
