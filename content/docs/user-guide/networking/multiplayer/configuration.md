@@ -26,7 +26,7 @@ Start by adding and enabling the Multiplayer Gem in your project. For help, refe
 
 Make sure the `<ProjectName>.Static` target includes the correct dependencies. 
 Find the CMake file that defines your project's static target. For example, `<ProjectName>/Gem/Code/CMakeList.txt`. Edit the `<ProjectName>.Static` target as follows:
-1. In the `FILES_CMAKE` section, add `<projectname>_autogen_files.cmake`.
+1. In the `FILES_CMAKE` section, add `<projectname>_autogen_files.cmake`. You create this file in a later step.
     ```cmake
         ly_add_target(
             NAME <ProjectName>.Static STATIC
