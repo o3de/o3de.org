@@ -18,19 +18,19 @@ By naming convention, auto-component file names must be suffixed with `.AutoComp
 The `Component` tag defines the name, namespace, include path, and override behavior for the multiplayer component that's being described.
 
 | Property | Description | Type |
-|---|---|---|---|
+|---|---|---|
 | Name | The class name of the generated auto-component. | `string`: Must be a valid C++ class name. |
 | Namespace | The namespace the generated auto-component will be placed within. For a given Gem, all defined auto-components must be defined within the same namespace. Mixing namespaces inside a Gem will result in compiler errors. | `string`: Must be a valid C++ namespace name. |
 | OverrideComponent | If `true`, the generated component will be a base class and the developer implementing the multiplayer component will be responsible for supplying the final derived component used in the editor and at runtime. | `bool` |
 | OverrideController | If `true`, the generated controller will be a base class, and the developer implementing the multiplayer component will be responsible for supplying the final derived controller used in the runtime. | `bool` |
-| OverrideInclude | If either `OverrideComponent` or `OverrideController` are `true`, this value is **required** and must be the path (relative to the Gem root) of the header containing the concrete implementations. | the developer implementing the final component or controller classes must provide the class header the final classes are declared within. | `string` |
+| OverrideInclude | If either `OverrideComponent` or `OverrideController` are `true`, this value is **required** and must be the path (relative to the Gem root) of the header containing the concrete implementations. | `string`: The developer implementing the final component or controller classes must provide the class header that the final classes are declared within. |
 
 ### ComponentRelation
 
 The `ComponentRelation` tag indicates this component's relationship with other components. Use this to define if this component requires or is incompatible with sibling components on the same entity. For example, the NetworkCharacterComponent requires a NetworkTransformComponent on the same entity to properly function.
 
 | Property | Description | Type |
-|---|---|---|---|
+|---|---|---|
 | Name | The name of the related component. | `string`: Must be a valid C++ class name. |
 | Namespace | The namespace the related component is declared within. | `string`: Must be a valid C++ namespace. |
 | Include | The include path of the related component. | `string` |
