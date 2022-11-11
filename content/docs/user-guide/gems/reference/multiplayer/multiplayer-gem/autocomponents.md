@@ -4,15 +4,18 @@ description: A reference for defining Open 3D Engine multiplayer state through a
 linktitle: Auto-components
 ---
 
-*Auto-components* provide a convenient way to create multiplayer components that require network synchronization. Using [AzAutoGen](/docs/user-guide/programming/autogen), you can process auto-component files found inside of your project during builds to create C++ classes for components and controllers that provide network replication and remote function calls. Auto-components also manage [edit](/docs/user-guide/programming/components/reflection/edit-context/) and [behavior](/docs/user-guide/programming/components/reflection/behavior-context/) context bindings so that the bound component shows in **O3DE Editor** and works with **Open 3D Engine (O3DE)** scripting.
+*Auto-components* provide a convenient way to define states of a multiplayer component that's relevant to network synchronization. Using the [AzAutoGen](/docs/user-guide/programming/autogen) system, auto-component files in your project are processed at build-time to automatically generate C++ classes for components and controllers that provide network replication and remote function calls. Auto-components also take care of [edit](/docs/user-guide/programming/components/reflection/edit-context) and [behavior](/docs/user-guide/programming/components/reflection/behavior-context) context bindings, so that the bound component shows in the Editor and works with O3DE scripting.
+
+To enable auto-component builds for your project, follow the instructions in [Multiplayer Project Configuration](./configuration).
 
 ## Auto-component file structure
 
-Auto-components are defined in XML files, placed in the `Code\Source\Autogen` directory of the Multiplayer Gem.
+Auto-components are defined in XML files and placed in the `Code\Source\Autogen` directory of the Multiplayer Gem. 
+By naming convention, auto-component file names must be suffixed with `.AutoComponent.xml`.
 
 ### Component attributes
 
-The `Component` tag defines the name, namespace, include path, and override behavior for the multiplayer component being described.
+The `Component` tag defines the name, namespace, include path, and override behavior for the multiplayer component that's being described.
 
 | Property | Description | Type |
 |---|---|---|
@@ -24,7 +27,7 @@ The `Component` tag defines the name, namespace, include path, and override beha
 
 ### ComponentRelation
 
-A component relation (the `ComponentRelation` tag) describes how various components may be related to the component being described. 
+The `ComponentRelation` tag indicates this component's relationship with other components. Use this to define if this component requires or is incompatible with sibling components on the same entity. For example, the NetworkCharacterComponent requires a NetworkTransformComponent on the same entity to properly function.
 
 | Property | Description | Type |
 |---|---|---|
@@ -37,7 +40,7 @@ A component relation (the `ComponentRelation` tag) describes how various compone
 | | **Incompatible**: The related component isn't compatible with this auto-component. Attempting to place both components on an entity will result in an error. | |
 | HasController | If `true`, the related component must have a multiplayer controller associated with it. Setting this value to true will cause controller accessors to be generated on the controller being described. | `bool` |
 
-For components which have a relation constraint of `Required` or `Weak`, accessors are generated on the auto-component with the name `Get<ComponentName>()`. These accessors return a cached pointer to the related component, created on entity activation.
+For components that have a relation constraint of `Required` or `Weak`, accessors are generated on the auto-component with the name `Get<ComponentName>()`. These accessors return a cached pointer to the related component that's created on entity activation.
 
 ### Include
 
@@ -47,17 +50,9 @@ The `Include` tag is used to generate the `#includes` of the C++ code. Use an `I
 |---|---|---|---|
 | File | The path to a header to add as an `#include` of the generated source. | `string` |
 
-{{< todo issue="https://github.com/o3de/o3de.org/issues/678" >}}
-Document the following parts of auto-components:
-* NetworkInput
-* NetworkProperty
-* ArchetypeProperty
-* RemoteProcedure
-{{< /todo >}}
-
 ### Example
 
-The following is an example of an auto-component which synchronizes a component representing weapon state across a multiplayer session.
+[`NetworkWeaponsComponent.AutoComponent.xml`](https://github.com/o3de/o3de-multiplayersample/blob/development/Gem/Code/Source/AutoGen/NetworkWeaponsComponent.AutoComponent.xml) is an example of an auto-component that synchronizes a component that represents weapon state across a multiplayer session.
 
 ```xml
 <?xml version="1.0"?>
@@ -95,4 +90,19 @@ The following is an example of an auto-component which synchronizes a component 
         <Param Type="HitEvent"    Name="HitEvent" />
     </RemoteProcedure>
 </Component>
+```
+
+## Building auto-components
+
+Auto-components are processed when you compile and build your project. 
+Any time that you update an auto-component XML file, you must reconfigure and recompile O3DE Editor, Game Launcher, and Server Launcher. That's because the XML is used to generate a C++ file, and the C++ file must be compiled. For more information, refer to [Configure and Build](/docs/user-guide/build/configure-and-build).
+
+Like other O3DE components, make sure to add your auto-component files inside your project's CMake file so they can be built. Similarly, you must reconfigure and recompile after updating any CMake file.
+This example of `<your-project>_files.cmake` lists the auto-component files.
+```cmake
+set(FILES
+    ...
+    Source/AutoGen/NetworkTestPlayerComponent.AutoComponent.xml
+    Source/AutoGen/MySimpleNetPlayerComponent.AutoComponent.xml    
+)    
 ```
