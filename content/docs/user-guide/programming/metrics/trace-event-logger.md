@@ -37,7 +37,7 @@ More information about each of these events can be found in the [Event Descripti
 ## Event Logger API documentation
 
 Detailed doxygen comments on the available interfaces for the Event Logger API is located within the header API files located within the [Code/Framework/AzCore/AzCore/Metrics](https://github.com/o3de/o3de/tree/development/Code/Framework/AzCore/AzCore/Metrics) directory.  
-Within that directory the following are the most important files to examine to learn about the API
+Within that directory the following are the most important files to examine to learn about the API:
 
 |File|Description|
 |---|---|
@@ -47,7 +47,7 @@ Within that directory the following are the most important files to examine to l
 
 ## How to use the JSON Trace Event Logger
 
-This section describes how to register to create an Event Factory and register it with a global interface(this is done by default within O3DE Applications), create an Event Logger, provide the Event Logger stream to record data output and to record sample metrics.  Finally how to visualize those metrics will be described at the end.
+This section describes how to register to create an Event Factory and register it with a global interface, create an Event Logger, provide the Event Logger stream to record data output and to record sample metrics. By the end you will be able to view collected metrics in a Chromium-based browser.
 
 The full source code in this section is available in the [JsonTraceEventLogger Unit Tests](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/Tests/Metrics/JsonTraceEventLoggerTests.cpp) and [EventLoggerUtils Unit Tests](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/Tests/Metrics/EventLoggerUtilsTests.cpp)
 
@@ -98,7 +98,8 @@ protected:
 
 ### Generate duration trace metrics and record them to the Event Logger
 
-The following block of code shows how to record a string and a number using the event logger
+The following block of code shows how to record a string and a number using the event logger:
+
 ```c++
 {
     constexpr AZStd::string_view eventString = "Hello world";
@@ -135,8 +136,8 @@ The following block of code shows how to record a string and a number using the 
 
 ### Flush the metrics string to a text file
 
-At this point the the metrics can be logged to stdout, sent over the network or written to a json file on disk.  
-The example will write the metrics a file named with the prefix "sample_metrics_" with the current time formated using the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) spec: `"sample_metrics_2023-01-01T120000.123456.json"`.
+At this point the the metrics can be logged to `stdout`, sent over the network or written to a JSON file on disk.  
+The example will write the metrics a file named with the prefix "sample_metrics_" with the current time formatted using the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) standard. An example filename is `sample_metrics_2023-01-01T120000.123456.json`.
 ```c++
 {
     constexpr AZ::IO::OpenMode openMode = AZ::IO::OpenMode::ModeWrite;
@@ -154,8 +155,8 @@ The example will write the metrics a file named with the prefix "sample_metrics_
 ```
 
 ### Event Metrics JSON output
-Afterwards here is how the sample json metrics file could look after recording events.  
-The sample metrics output logs the metrics using multithreads to illustrate that the thread id is associated with each metric.  
+
+  The following example shows logging of metrics using multithreads, to illustrate that the thread ID is associated with each metric.  
 ```json
 [
   {"name":"Duration Event","id":"0","cat":"Test","ph":"B","ts":1664329933375019,"pid":31760,"tid":36036,"args":{"string":"Hello world","int64_t":-2}},
@@ -165,6 +166,6 @@ The sample metrics output logs the metrics using multithreads to illustrate that
 
 
 ### Viewing the event metrics
-Using a chromium based browser `about:tracing` page or the trace-viewer provided by the [catapult repo](https://google.github.io/trace-viewer/), the metrics can be visualized based on their event types.
+Using a Cchromium-based browser `about:tracing` page or the trace-viewer provided by the [catapult repo](https://google.github.io/trace-viewer/), the recorded metrics can be visualized based on their event types.
 
 ![about::tracing](/images/user-guide/metrics/about-tracing.png)
