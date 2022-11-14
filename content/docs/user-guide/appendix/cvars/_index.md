@@ -29,7 +29,7 @@ There are built-in console commands that make working with CVARs easier:
 | Name             | Description                                                                                                                                                   |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | DumpCommandsVars | (Legacy) Will dump all the CVARs and their values to a file called `consolecommandsandvars.txt`.<br>Prefer to use the console window to see CVARs and values. | 
-| resetcvars       | Resets all CVARs to their initial values                                                                                                                      |
+| resetcvars       | Resets all CVARs to their initial values.                                                                                                                     |
 
 ## Common CVAR prefixes
 
