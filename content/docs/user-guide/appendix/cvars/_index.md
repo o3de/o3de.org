@@ -43,7 +43,7 @@ O3DE uses the following prefixes to make discovering CVARs easier:
 | net_   | For low-level networking CVARs.                                                  |
 | physx_ | For physx related CVARs.                                                         |
 | r_     | For rendering related CVARs.                                                     |
-| s_     | For sound related CVARs                                                          |
+| s_     | For sound related CVARs.                                                         |
 | sv_    | For server only CVARs.                                                           |
 | sys_   | For low-level core systems CVARs.                                                |
 
