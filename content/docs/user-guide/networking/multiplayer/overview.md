@@ -1,11 +1,11 @@
 ---
-title: Open 3D Engine Multiplayer Gem Overview
-description:
 linkTitle: Overview
-toc: true
+title: Multiplayer Gem Overview
+description: An overview of the Multiplayer Gem in Open 3D Engine (O3DE). Includes an introduction to multiplayer components, which provide network state synchronization.
+weight: 100
 ---
 
-In **Open 3D Engine (O3DE)**, the synchronization needed for multiplayer support is performed through *multiplayer components*. Like other components in O3DE, these are attached to *entities*. Multiplayer components offer the capability to receive function calls from a remote source, *remote procedure calls (RPC)*, and define the data to be synchronized across the network. Each multiplayer component, normally generated as an [autocomponent](./autocomponents), defines its own requirements for other data to be present and which functions are available.
+In **Open 3D Engine (O3DE)**, the synchronization needed for multiplayer support is performed through *multiplayer components*. Like other components in O3DE, these are attached to *entities*. Multiplayer components can receive *remote procedure calls (RPC)*, which are function calls from a remote source. Multiplayer components also define the data to be synchronized across the network. Each multiplayer component, normally generated as an [auto-component](./autocomponents), defines its own requirements for other data to be present and defines which functions are available.
 
 Some of the features offered in the O3DE Multiplayer Gem include:
 
@@ -20,7 +20,7 @@ O3DE multiplayer components are built on top of standard O3DE components, offeri
 * **Network properties**, state information about the component that gets replicated between hosts.
 * **Remote procedure calls (RPCs)**, allow messages to be sent to a particular component on an entity.
 
-Together, these represent an event-driven messaging system. When a property changes on a network component, it triggers an event; Similarly, when an RPC is invoked, it sends a trigger to the relevant component. This means that the multiplayer Gem uses a *push-based* model rather than *poll-based* model for synchronizing information across the clients and server. Using this model keeps code and entity management simpler and offers performance benefits by not requiring a network state check on a timer.
+Together, these represent an event-driven messaging system. When a property changes on a network component, it triggers an event; Similarly, when an RPC is invoked, it sends a trigger to the relevant component. This means that the Multiplayer Gem uses a *push-based* model rather than *poll-based* model for synchronizing information across the clients and server. Using this model keeps code and entity management simpler and offers performance benefits by not requiring a network state check on a timer.
 
 {{< important >}}
 Network components are the **only** built-in way to communicate between entities in O3DE. Due to the engine's ability to distribute and interact with entities across multiple hosts, there is no guarantee that any two entities have authoritative representations on the same host.
@@ -73,6 +73,6 @@ In addition to the previously described roles, O3DE has an additional role found
 
 | Topic | Description |
 |--|--|
-| [Networking](/docs/user-guide/networking/) | Learn about `AzNetworking`, the core networking framework that O3DE uses, and that the Multiplayer Gem is built on top of. |
+| [AzNetworking](/docs/user-guide/networking/aznetworking/) | Learn about the low-level networking stack in O3DE that the Multiplayer Gem is built on top of. |
 | [Automate Source Generation from Templates with AzAutoGen](/docs/user-guide/engine/autogen/) | Learn about the AzAutoGen code generation system used to create [auto-components](./autocomponents) for projects using the Multiplayer Gem. |
-| [Multiplayer Gem API Reference](/docs/api/gems/multiplayer/) | The C++ API reference for classes that the O3DE Multiplayer Gem provides. |
+| [Multiplayer Gem API Reference](/docs/api/gems/multiplayer/annotated.html) | The complete C++ API reference for the O3DE Multiplayer Gem. |

@@ -23,7 +23,7 @@ Read about [the features provided by Open 3D Engine](/docs/welcome-guide/feature
 | [Settings Registry](settings/overview) | Learn how to use the Settings Registry to maintain settings and configurations for O3DE applications and tools. |
 | [Gems](gems/) | Learn about the Gems that extend O3DE.|
 | [Interactivity](interactivity/) | Learn how to implement player navigation controls and other world interaction methods. |
-| [Networking](networking/) | Learn about the networking features in O3DE, offering both peer-to-peer connections and dedicated servers.  |
+| [Networking](networking/) | Learn about the low-level networking stack in O3DE and the multiplayer framework that uses it to provide multiplayer features in games and simulations. |
 | [Packaging](packaging/) | Learn how to package your O3DE-based product for release. |
 | [Programming](programming/) |  Learn about core engine programming concepts in O3DE. |
 | [Project Configuration](project-config/) | Learn how to configure and customize your O3DE project. |

@@ -1,24 +1,14 @@
 ---
-title: Tutorial - Your First Network Component
 linktitle: Your First Network Component
-description: Use Multiplayer Gem to create multiplayer components.
-toc: true
+title: Your First Network Component
+description: In this tutorial you will learn how to use the Multiplayer Gem to create multiplayer components in Open 3D Engine (O3DE). The tutorial uses the O3DE Multiplayer Sample project as a base project to get you started.
 ---
 
+Follow this tutorial to get started with creating multiplayer components in **Open 3D Engine (O3DE)**. By the end of the tutorial, you'll know how to create a new network component that has a network property and a remote procedure call.
 
+To begin, build and run the O3DE MultiplayerSample project. For instructions about how to build and run this project, refer to the [MultiplayerSample Project README](https://github.com/o3de/o3de-multiplayersample#readme).
 
-## Introduction
-
-
-This tutorial will link all the relevant documentation to provide you with a detailed guide on getting started with creating multiplayer components. By the end of this tutorial you will learn how to create a new network component that has a network property and a remote procedure call.
-
-Our starting base will be the O3DE MultiplayerSample project. You can find the instructions on how to build and run it in the [MultiplayerSample project readme](https://github.com/o3de/o3de-multiplayersample/blob/development/README.md).
-
-
-
-
-
-## Network Components
+## Network components
 
 ### Add a New Component
 
@@ -151,16 +141,16 @@ Since we already have MultiplayerSample setup for [automated code generation](/d
         Source/Components/MyFirstNetworkComponent.h
     ```
 
-1. Now, MultiplayerSample project should compile without any issues. Open the Editor to see the new component in the Editor.
+1. Now, MultiplayerSample project should compile without any issues. Open **O3DE Editor** to see the new component in the Editor.
 
 
-    ![My First Network Component in the Editor](/images/user-guide/multiplayer/my_first_network_component_in_editor.png)
+    ![My First Network Component in the Editor](/images/learning-guide/tutorials/multiplayer/my_first_network_component_in_editor.png)
 
     Additionally, you can find the generated files and your XML file in Visual Studio:
 
-    ![Generated Code in Visual Studio](/images/user-guide/multiplayer/visualstudio_generated_files_for_myfirstnetworkcomponent.png)
+    ![Generated Code in Visual Studio](/images/learning-guide/tutorials/multiplayer/visualstudio_generated_files_for_myfirstnetworkcomponent.png)
 
-1. At this point, we have a new multiplayer component, `MyFirstNetworkComponent`.
+1. At this point, you have a new multiplayer component named `MyFirstNetworkComponent`.
 
 ### Add a Network Property
 
@@ -707,12 +697,12 @@ Now that we have created a data flow from the server to clients using network pr
     Only entities that are autonomous will have controllers, otherwise `GetController()` will give a null on clients. If you are getting a null on your `GetController` calls then you have attached your component to an entity that is not autonomous. Attach them to player prefabs instead, as those are marked as autonomous by the server.
     {{</important>}}
 
-    The player prefab for MultiplayerSample project can be found at `<o3de-multiplayersample>\Prefabs\Player.prefab`.
-    Do the following steps to modify `Player.prefab`:
+    You can find the player prefab for MultiplayerSample project at `<o3de-multiplayersample>\Prefabs\Player.prefab`.
+    To modify `Player.prefab`, do the following:
 
-    ![Attaching Network Component to an Autonomous Entity](/images/user-guide/multiplayer/add_myfirstnetworkcomponent_to_player_prefab.png)
+    ![Attaching Network Component to an Autonomous Entity](/images/learning-guide/tutorials/multiplayer/add_myfirstnetworkcomponent_to_player_prefab.png)
 
-    1. Instantiate a player prefab in the level temporarily. (You can find the player prefab for MultiplayerSample project at `<o3de-multiplayersample>\Prefabs\Player.prefab`.)
+    1. Temporarily instantiate a player prefab in the level. (You can find the player prefab for MultiplayerSample project at `<o3de-multiplayersample>\Prefabs\Player.prefab`.)
 
     1. Modify the player prefab instance by adding `MyFirstNetworkComponent` to `player` entity.
 
@@ -926,6 +916,6 @@ Now that we have created a data flow from the server to clients using network pr
     </Component>
     ```
 
-10. At this point you should be able to see the client and server logs being emitted in the editor console when running the game in Play Mode:
+10. At this point, you should see the client and server logs being emitted in the Editor console when running the game in Play Mode:
 
-    ![Console logs emitted while running game from editor with RPC](/images/user-guide/multiplayer/add_myfirstnetworkcomponent_run_game_with_rpc.png)
+    ![Console logs emitted while running game from editor with RPC](/images/learning-guide/tutorials/multiplayer/add_myfirstnetworkcomponent_run_game_with_rpc.png)

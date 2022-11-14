@@ -246,5 +246,5 @@ You can write Jinja templates that more easily support both data formats by usin
 | Topic | Description |
 |-|-|
 | [Build Generated Source Files with AzAutoGen](/docs/user-guide/build/generated-source/) | How to use the `ly_add_autogen` function in CMake to generate and build source code from templates. |
-| [Networking Auto-packets](/docs/user-guide/networking/autopackets/) | How to create new packet types for the `AzNetworking` framework using AzAutoGen. |
+| [Networking Auto-packets](/docs/user-guide/networking/aznetworking/autopackets/) | How to create new packet types for the `AzNetworking` framework using AzAutoGen. |
 | [Creating Custom Nodes in Script Canvas](/docs/user-guide/scripting/script-canvas/programmer-guide/custom-nodes/) | How to create custom nodes in Script Canvas using XML definitions and turn the nodes into code with AzAutoGen. |

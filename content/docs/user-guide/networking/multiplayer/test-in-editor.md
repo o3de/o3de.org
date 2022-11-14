@@ -1,16 +1,17 @@
 ---
-title: Test Multiplayer Games in the O3DE Editor
-linktitle: Test in Editor
-description: Use the Editor of Open 3D Engine to test and edit synchronized multiplayer game projects.
+linktitle: Testing in Editor
+title: Testing Multiplayer Projects in O3DE Editor
+description: Learn how to use O3DE Editor to test and edit synchronized multiplayer game projects in Open 3D Engine (O3DE).
+weight: 500
 ---
 
-An important part of Multiplayer simulation is getting a feel for how your client looks and performs when connected to a server. In order to help with that, Open 3D Engine offers the ability to automatically connect a client to a server. When in the **O3DE Editor**, as long as networked entities are on the scene and you have a current server launcher, entering Play Mode **(Ctrl+G)** will locally launch your server for you. As part of this process, the Editor will perform a one time send of all entities on your scene to the server so it can then load them. The Editor will then connect to the server as a client.
+An important part of multiplayer simulation is getting a feel for how your client looks and performs when connected to a server. To help with that, **Open 3D Engine (O3DE)** lets you automatically connect a client to a server. In **O3DE Editor**, if your networked entities are on the scene and you have a current server launcher, you can enter Play Mode (**Ctrl+G**) to locally launch your server. As part of this process, the Editor performs a one-time send of all entities on the scene to your server so that it can then load them. The Editor then connects to the server as a client.
 
-The nature of this feature has the Editor authoritating world state to the Server before ceding control to the server. This process is inherently risky and as such, this feature is compiled out for Release builds.
+The nature of this feature has the Editor authoritating world state to the Server before ceding control to the server. Because this process is inherently risky, this feature is compiled out for Release builds.
 
-### Advanced Configuration
+### Advanced configuration
 
-The Multiplayer Gem exposes a variety of cvars to help configure launching a server when the Editor enters Play Mode.
+The **Multiplayer Gem** exposes a variety of cvars to help you configure how to launch a server when the Editor enters Play Mode.
 
 | CVar name | Type | Description |
 |--|--|--|
