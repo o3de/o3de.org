@@ -18,7 +18,7 @@ Additionally, you can add CVARs to [configuration files](/docs/user-guide/editor
 
 The fastest way to find all the CVARs settable in the current project is via the [console variables window](/docs/user-guide/editor/console/#viewing-the-console-window). Bringing up the console window will list all the CVARs in the current project as well as allow you to set their values.
 
-You can also begin to type the start of CVAR name in the console and then use `tab` to show autocomplete and look at all the potential matches. For example, after typing `ed_` you can use the tab key to cycle through all the CVARs that impact the editor.
+You can also begin to type the start of a CVAR name in the console and then use the **Tab** key to show autocomplete and look at all the potential matches. For example, after typing `ed_` you can use **Tab** to cycle through all the CVARs that impact the editor.
 
 ![Automatic CVAR expansion in the console](/images/user-guide/appendix/cvars/console_autoexpand.png)
 
