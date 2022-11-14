@@ -92,7 +92,9 @@ The following are four types of RPCs with a valid "invoked from and handled on" 
 
 - **Authority-to-Client**: Authority sends calls to all the clients. For example, sending information about particle effects. 
 
-- **Server-to-Authority**: This is useful to communicate information between entities. For example, when a player wants to deal damage, Autonomous informs the Server, and the Server sends the DealDamage function to Authority. 
+- **Server-to-Authority**: This is required to communicate information between entities. For example, suppose in a multi-server setup, EntityA is owned by ServerA and EntityB is owned by ServerB. If EntityA communicates directly to EntityB, EntityA will be talking to a proxy, not the real EntityB. Server-to-Authority ensures that messages always find the entity with authority.
+
+when a player wants to deal damage, Autonomous informs the Server, and the Server sends the DealDamage function to Authority. 
 
 - **Autonomous-to-Authority**: Used for sending user settings information that affects user input and is used during input-process time rather than input-creation time, such as mouse sensitivity and input controls. 
 
