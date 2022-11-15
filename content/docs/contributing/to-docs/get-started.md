@@ -11,7 +11,8 @@ This section will help you get started on contributing to Open 3D Engine (O3DE) 
 O3DE documentation uses the [fork and pull model](https://en.wikipedia.org/wiki/Fork_and_pull_model) for contributions. As a contributor, you maintain a fork (your own repository of the O3DE documentation) on GitHub, and work locally to edit documentation. You then submit PRs from your fork for review.
 
 {{< note >}}
-The steps on this page use the terminal to run Git commands. You may complete these steps through an alternative tool of your choice, but ensure that you're completing the correct operations. 
+The steps on this page use the terminal to run Git commands. You may complete these steps directly on GitHub and refer to the GitHub's [Repositories](https://docs.github.com/en/repositories) documentation, or through an alternative tool of your choice, such as [GitHub Desktop](https://desktop.github.com/) or another client.
+Whatever method you choose, ensure that you're completing the correct operations that are outlined on this page.
 {{< /note >}}
 
 ## Prerequisites
@@ -30,13 +31,13 @@ In this section, you'll learn to create your own fork of the O3DE documentation.
 
 ### Create a fork
 
-A *fork* is your own copy of `o3de.org:main` on GitHub. You can do anything you like within your fork, though it is recommended that you keep your fork synced with `o3de.org:main`, and work within branches in your fork. Working this way ensures the integrity of `o3de.org:main` and makes it easy for you to work at your own pace, experiment with changes, and collaborate with other contributors. 
+A *fork* is your own copy of the `o3de.org` source repo on GitHub. You can do anything you like within your fork, though it is recommended that you keep your fork synced with the source repo, and work within branches in your fork. Working this way ensures the integrity of `o3de.org` and makes it easy for you to work at your own pace, experiment with changes, and collaborate with other contributors. 
 
 To create a fork, perform the following steps:
 
 1. Go to the [O3DE documentation repository](https://github.com/o3de/o3de.org).
 
-1. Fork `o3de.org:main`. Choose the **Fork** button in the upper-right corner of the page. For more information on creating forks, refer to GitHub Docs, [Fork a repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
+1. Fork `o3de.org`. Choose the **Fork** button in the upper-right corner of the page. For more information on creating forks, refer to GitHub Docs, [Fork a repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
 You can access your fork in your repositories or by going to `https://github.com/<your-username>/o3de.org`.
 For more information on working with forks, refer to GitHub Docs, [Working with forks](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks).
@@ -79,9 +80,24 @@ In a terminal, perform the steps below:
 For more information about this step, refer to the GitHub Docs, [Configuring a remote for a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-for-a-fork). 
 
 
+### Branches
+
+There are two important branches in `o3de.org` repo: `main` and `development`. Depending on what docs you're contributing, you can choose to contribute your changes to either branch. 
+
+| Branch | Description |
+| --- | --- |
+| `main` | If you're contributing docs for a feature that already exists in a stable version of O3DE, or [`o3de:main`](https://github.com/o3de/o3de/tree/main). |
+| `development` | If you're contributing docs for a feature that's still in development, or in [`o3de:development`](https://github.com/o3de/o3de/tree/development). |
+
+Decide ahead of time which branch you want to contribute your docs to. It's important to know because it can help you keep your local changes synced with correct upstream branch, especially when you're doing one of the following things: 
+- Creating a new branch
+- Syncing your branch
+- Creating a PR
+
+
 ### Sync your clone
 
-Throughout the writing process, in your clone, you must *sync* whatever branch you're working in with the appropriate upstream branch: `o3de.org:main` or `o3de.org:development`. This ensures that your branch is up-to-date with the latest commits and can help you avoid issues when creating a PR. It's good practice to do this step frequently, such as before creating a new branch, or before syncing a branch to submit a PR.
+Throughout the writing process, in your clone, you must *sync* whatever branch you're working in with the appropriate upstream branch, `main` or `development`. This ensures that your branch is up-to-date with the latest commits and can help you avoid issues when creating a PR. It's good practice to do this step frequently, such as before creating a new branch, or creating a PR.
 
 To sync your branch:
 
@@ -100,8 +116,13 @@ To sync your branch:
 1. Pull the latest commits from the appropriate upstream branch into your local branch.
 
     ```shell
-    git pull upstream upstream/[main|development]
+    git merge upstream upstream/[main|development]
     ```
+
+Alternatively, the following [`git pull`](https://git-scm.com/docs/git-pull/2.22.0) command fetches and merges: 
+```shell
+git pull upstream [main|development]
+```
 
 As an example workflow, you may want to keep your fork's `main` branch synced with the source `o3de.org:main` branch. The set of operations to do that look like this: 
 
@@ -157,13 +178,13 @@ When naming branches, we recommend a short dash-separated name that clearly deno
 
 As you write your docs iteratively and make changes as part of the PR process, you will cycle through the following Git operations: 
 
-1. **`git fetch upstream`** and **`git pull upstream [main|development]`** -- Keep your branch up-to-date with the latest commits.
+1. **`git fetch upstream`** and **`git merge upstream [main|development]`** -- Keep your branch up-to-date with the latest commits.
 1. Write your docs using a text editor. Ensure that your docs are technically accurate and follow the [O3DE Style Guide](./style-guide/). 
 1. **`git add`** -- Adds your files to local Git staging. Do not add *any* files that are not work you are submitting for review.
 1. **`git commit -s -m "<message>"`** --  Writes your changes to the branch history in preparation for submission. `-s` signs off DCO for your commit. Your initial commit message should reference the corresponding GitHub issue and provide a clear assessment of the work you did.
 1. **`git push origin <branch-name>`** -- Pushes your commit to your remote fork (_origin_). 
 
-Repeat these steps as needed. When you're done writing, you should have at least one DCO signed-off commit that contains only the changes that you made. The commits must be pushed to your remote fork. Later, you will submit a PR to merge your changes to the remote source. 
+Repeat these steps as needed. When you're done writing, each of your commits should have a DCO sign-off and contain only the changes that you made. The commits must be pushed to your remote fork. Later, you will submit a PR to merge your changes to the remote source. 
 
 
 ### DCO sign-off your commits
@@ -188,7 +209,7 @@ Finally, you can preview and share a preview of your docs when they are in a PR.
 
 ## Submitting docs
 
-When you make changes or create new docs, you must submit a pull request (PR) for review before the changes can be merged into `o3de.org:main`. PRs allow peer contributors to review contributions for several potential issues, including technical accuracy, spelling, grammar, clarity, and style. 
+When you make changes or create new docs, you must create a pull request (PR) for review before the changes can be merged into `o3de.org:main`. PRs allow peer contributors to review contributions for several potential issues, including technical accuracy, spelling, grammar, clarity, and style. 
 
 The current list of active PRs is here [O3DE repository pull requests (PRs)](https://github.com/o3de/o3de.org/pulls).
 
@@ -228,4 +249,4 @@ For more information on incorporating PR feedback, refer to [Incorporating feedb
 
 ### The PR merge
 
-When you have approval from two reviewers, and approval from a technical reviewer (if necessary), your PR can be merged. Never merge your own PRs. The last reviewer to approve the PR is responsible for merging the PR.
+When you have an approval from at least one docs reviewer and at least one technical reviewer, your PR can be merged. Never merge your own PRs. Docs maintainers are responsible for merging the PR.
