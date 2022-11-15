@@ -1,8 +1,12 @@
 ---
+linkTitle: Glossary
 title: Glossary
+description: The glossary contains terminology used throughout Open 3D Engine (O3DE) documentation.
 weight: 100
 toc: true
 ---
+
+The glossary contains terminology used throughout Open 3D Engine (O3DE) documentation. 
 
 ### actor
 A specialized [entity](#entity) that is the basis for characters in a game.
@@ -27,6 +31,9 @@ Any art, texture, 3D model, sound effect, or other digital data that is presente
 
 ### attachment
 A hierarchical object that is attached to characters, respond to real-world physics, and can be attached, detached, or replaced at runtime in the game. Character attachments include clothing, weapons, tools, or entire body parts such as heads or hands.
+
+### AzAutoGen
+A Python tool that uses the [Jinja2](https://jinja.palletsprojects.com/) template engine to generate source files, by passing in XML or JSON data into a Jinja template. O3DE uses AzAutoGen as a simple transpiler to create boilerplate code or assets.
 
 ### baked
 Performs and stores all calculations for a scene element so that the element does not need to be processed or rendered in real time in the game. Often used for lighting or physics. Also referred to as *prebaked*.

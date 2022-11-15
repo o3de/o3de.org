@@ -1,10 +1,11 @@
 ---
-title: Networking Auto-packets
-description: A reference for defining Open 3D Engine networking packets through auto-packets.
 linktitle: Auto-packets
+title: Networking Auto-packets
+description: Learn how to define Open 3D Engine (O3DE) networking packets through auto-packets.
+weight: 200
 ---
 
-*Auto-packets* provide a convenient way to define network packets used to communicate data between endpoints in a `AzNetworking` session. Using the [AzAutoGen](/docs/user-guide/programming/autogen) system, auto-packet files found inside of your project are processed during builds to create C++ classes and handlers for packets with defined payloads.
+*Auto-packets* provide a convenient way to define network packets used to communicate data between endpoints in an `AzNetworking` session. Using the [AzAutoGen](/docs/user-guide/programming/autogen) system, auto-packet files found inside of your project are processed during builds to create C++ classes and handlers for packets with defined payloads.
 
 In order to enable auto-packet builds for your project, you must add AZ::AzNetworking as a build dependency of your project.
 
@@ -17,21 +18,22 @@ Auto-packets are defined in XML files, placed in the `Code\Source\Autogen` direc
 The top-level element of an auto-packet definition is a `PacketGroup`. Packet groups associate different types of individual packet definitions together. Packets defined as part of a packet group are placed into the same namespace.
 
 | Property | Description | Type |
-|---|---|---|---|
-| Name | The namespace for generated auto-packets. | A valid C++ namespace identifier |
-| PacketStart | The value to start sequencing packet type identifiers for this packet group at. To avoid conflicts with the core AzNetworking framework, use `CorePackets::PacketType::Max`. | `const int32` |
+|---|---|---|
+| Name | The namespace for generated auto-packets. | A valid C++ namespace identifier. |
+| PacketStart | The value at which to start sequencing packet type identifiers for this packet group. To avoid conflicts with the core `AzNetworking` framework, use `CorePackets::PacketType::Max`. | `const int32` |
 
 ### Packet attributes
 
 The `Packet` tag defines a new packet.
 
 | Property | Description | Type |
-|---|---|---|---|
-| Name | The class name of the generated autopacket. | A valid C++ class identifier. |
-| Desc | The description of the generated autopacket. | `string` |
-| HandshakePacket | If the packet is part of a connection handshake. | `bool` |
+|---|---|---|
+| Name | The class name of the generated auto-packet. | A valid C++ class identifier. |
+| Desc | The description of the generated auto-packet. | `string` |
+| HandshakePacket | If enabled, the packet is part of a connection handshake. | `bool` |
+
 {{< note >}}
-Packets with `HandshakePacket ` set as true will only be processed if the user-implemented `IsHandshakeComplete` function for the packet returns `false`.
+Packets with `HandshakePacket` set as true are processed only if the user-implemented `IsHandshakeComplete` function for the packet returns `false`.
 {{< /note >}}
 
 ### Member attributes
@@ -39,7 +41,7 @@ Packets with `HandshakePacket ` set as true will only be processed if the user-i
 The `Member` tag defines data on the packet. This is the primary mechanism for defining a packet's payload.
 
 | Property | Description | Type |
-|---|---|---|---|
+|---|---|---|
 | Name | The name of the packet member. | A valid C++ variable name. |
 | Type | The type of the packet member. | A valid C++ type. |
 | Init | The initial value of the packet member. | `<Type>` |
@@ -50,10 +52,10 @@ The `Member` tag defines data on the packet. This is the primary mechanism for d
 
 ### Include
 
-The `Include` tag is used to generate the `#includes` of the C++ code. Use an `Include` tag for each header that your generated classes will use.
+AzAutoGen uses the `Include` tag to generate the `#includes` of the C++ code. Use an `Include` tag for each header used by the generated classes.
 
 | Property | Description | Type |
-|---|---|---|---|
+|---|---|---|
 | File | The path to a header to add as an `#include` of the generated source. | `string` |
 
 ### Example
@@ -145,7 +147,7 @@ This function checks if handshake logic for the IConnectionListener is complete.
 HandleRequest defines a callback for each packet type.
 
 | Property | Description | Type |
-|---|---|---|---|
+|---|---|---|
 | connection | The connection the packet was sent on. | `AzNetworking::IConnection*` |
 | packetHeader | The header of the packet. | `const IPacketHeader&` |
 | packet | The packet itself as defined by AzCodeGen. | `<Type>`: Must be a valid packet type of the related packet group. |
