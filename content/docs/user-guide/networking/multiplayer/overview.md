@@ -45,13 +45,11 @@ Then, clients update themselves from a delta by:
 
 After, the AzNetworking layer becomes aware that the world was updated. This occurs automatically through ACK vector replication, and does not require any further action from the client.
 
-### Types of network properties
+#### Types of network properties
 
 Network properties have two important fields: `ReplicateFrom` and `ReplicateTo`. 
-Together, these defines which role can replicate to which role. 
-Properties can replicate *from* Authority and Autonomous roles only because they have write-access. 
-Properties can replicate *to* all of the roles because all roles have read-access. 
-This structure makes sense because roles with only read-access simply receive information; they don't have any data to write or replicate. 
+Together, these define which role can replicate to which role. You can only replicate property values *from* Authority and Autonomous roles. Under the server-authority model of O3DE, this ensures that you never accidentally replicate from an unprivileged client. 
+Properties can be replicated *to* any role, since all active clients in the session must share information and some may not necessarily need to be used in the server-authoritative model.
 
 | Field | Description | Values | 
 | - | - | - |
@@ -67,9 +65,9 @@ The following are four types of networking properties with a valid "from and to"
 
 - **Authority-to-Server**: For handling host migration.
 
-- **Autonomous-to-Authority**: For gathering information about client metrics, such as monitoring the health of clients, and so on.
+- **Autonomous-to-Authority**: For gathering information about client metrics, such as monitoring the health of clients.
 
-For networking properties that replicate from Authority, a replication hierarchy applies. The replicate-to rules trickle up the hierarchy in the following way: An Authority-to-Client replication also replicates to Autonomous and Server roles. An Authority-to-Autonomous replication also replicates to the Server role. Finally, an Authority-to-Server replication only replicates to the Server.
+For networking properties that replicate from Authority, a replication hierarchy applies. The replicate-to rules trickle up the hierarchy in the following way: An Authority-to-Client replication also replicates to Autonomous and Server roles. An Authority-to-Autonomous replication also replicates to the Server role. Finally, an Authority-to-Server replication only replicates to the Server. This behavioral hierarchy ensures that if the Authority ever migrates to the other server, then the other server has the right property information.
 
 ## Remote procedure calls (RPCs)
 
@@ -86,7 +84,7 @@ Similar to network properties, RPCs have two important fields: `InvokeFrom` and 
 | Field | Description | Values | 
 | - | - | - |
 | `InvokeFrom` | Tells the network which role invokes this RPC. | Server, Autonomous, Client | 
-| `HandleOn` | Tells the network which roles handles this RPC. If Authority, the RPC is handled by the server that has authority over that entity. If Autonomous, the RPC is handled by the player on the local client. If Client, the RPC is handled on all clients. | Authority, Autonomous, Client | 
+| `HandleOn` | Tells the network which roles handles this RPC. If Authority, the RPC is handled by the server that has authority over that entity. If Autonomous, the RPC is handled only by the relevant player's local client. If Client, the RPC is handled on all clients. | Authority, Autonomous, Client | 
 
 The following are four types of RPCs with a valid "invoked from and handled on" relationship that you can define, and their possible use cases:
 
@@ -94,9 +92,9 @@ The following are four types of RPCs with a valid "invoked from and handled on" 
 
 - **Authority-to-Client**: Authority sends calls to all the clients. For example, sending information about particle effects. 
 
-- **Server-to-Authority**: This is useful to communicate information between entities. For example, when a player wants to deal damage, Autonomous informs the Server, and the Server sends the DealDamage function to Authority. 
+- **Server-to-Authority**: This is required to communicate information between entities. For example, suppose in a multi-server setup, EntityA is owned by ServerA and EntityB is owned by ServerB. If EntityA communicates directly to EntityB, EntityA will be talking to a proxy, not the real EntityB. Server-to-Authority ensures that messages always find the entity with authority. when a player wants to deal damage, Autonomous informs the Server, and the Server sends the DealDamage function to Authority. 
 
-- **Autonomous-to-Authority**: For example, sending user setting information, that affects user input and is used during input-process time rather than input-creation time, such as mouse sensitivity and input controls. 
+- **Autonomous-to-Authority**: Used for sending user settings information that affects user input and is used during input-process time rather than input-creation time, such as mouse sensitivity and input controls. 
 
 
 ## Multiplayer entity roles
