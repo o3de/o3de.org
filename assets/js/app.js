@@ -156,6 +156,7 @@ function showChildren(e) {
 
 // A helper function to build the dropdown for the version switcher.
 function buildSelectElement(currentOrigin) {
+    // TODO: Load this from config.toml? (Also, use a simple key-value pair since 'name' is not being used.)
     const branches = [];
     branches[0] = { name:"main", url:"https://www.o3de.org", displayName:"22.10 (latest)" };
     branches[1] = { name:"development", url:"https://development--o3deorg.netlify.app", displayName:"development" };
