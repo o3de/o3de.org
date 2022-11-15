@@ -41,7 +41,7 @@ O3DE uses the following prefixes to make discovering CVARs easier:
 | cl_    | For client only CVARs.                                                           |
 | ed_    | For editor only CVARs.                                                           |
 | net_   | For low-level networking CVARs.                                                  |
-| physx_ | For physx related CVARs.                                                         |
+| physx_ | For NVIDIA PhysX related CVARs.                                                  |
 | r_     | For rendering related CVARs.                                                     |
 | s_     | For sound related CVARs.                                                         |
 | sv_    | For server only CVARs.                                                           |
