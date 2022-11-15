@@ -45,7 +45,7 @@ Then, clients update themselves from a delta by:
 
 After, the AzNetworking layer becomes aware that the world was updated. This occurs automatically through ACK vector replication, and does not require any further action from the client.
 
-#### Types of network properties
+### Types of network properties
 
 Network properties have two important fields: `ReplicateFrom` and `ReplicateTo`. 
 Together, these define which role can replicate to which role. You can only replicate property values *from* Authority and Autonomous roles. Under the server-authority model of O3DE, this ensures that you never accidentally replicate from an unprivileged client. 
