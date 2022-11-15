@@ -12,7 +12,7 @@ This page provides advice on how many independent developers can efficiently mai
 
 ### I/O
 
-File access, device input, and network communication are slow operations which can create complex software and hardware dependencies. Tests performing I/O often encounter race conditions such as parallel contention. Most tests should prefer configuring mock implementations of I/O interfaces, and using in-memory buffers to simulate the behavior of actual input and output.
+File access, device input, and network communication are slow operations which can create complex software and hardware dependencies. Tests performing I/O often encounter race conditions such as parallel contention. Prefer configuring mock implementations of I/O interfaces, and using in-memory buffers to simulate the behavior of actual input and output.
 
 ### Sleep
 
@@ -34,6 +34,23 @@ What are the alternatives?
   * Allows for more accurate simulation control while testing.
 * If you need Python to block until a condition is met, try `ly_test_tools.environment.waiter.wait_for(boolean_function)`
   * If you need to synchronize Python and C++ code inside the O3DE Editor, prefer `azlmbr.legacy.general.idle_wait_frames` over `idle_wait_seconds`
+
+### Nondeterminism
+
+Tests must minimize random behavior. Test failures should demonstrate obvious and determinisitic flaws in a feature. Features should be able to isolate their sources of nondeterminism, allowing tests to bypass or control randomness.
+
+When production code depends on randomness or other nondeterministic behavior:
+
+* Expose an interface to set the seed for the random generator, or to provide a different generator
+* Expose the ability to programmatically advance through steps, such as a timestep
+* Create interfaces between deterministic and nondeterministic code
+  * Tests can then configure mock dependencies, and only verify determinisitc code
+
+Tests should have specific expectations, which are declared before the test executes. Tests should never dynamically set expectations, such as fetching a "correct" value from the production code or from a network call. Randomness should not be used in tests.
+
+{{< note >}}
+When you don't know what boundaries to check, "Fuzz Tests" which randomly search different values can be a useful design tool. However since these tests are inspecific and inefficient, avoid checking them in. Use Fuzz Testing as a precursor to writing specific deterministic tests.
+{{< /note >}}
 
 ### Platform-specific Tests
 
@@ -78,6 +95,10 @@ It can be okay to include negative assertions when there is also at least one po
 
 Make sure a new test is actually configured to run and report failures by temporarily editing the production code. Intentionally break the code in one way the test should detect, and run the test suite. If no failure occurs, investigate why!
 
+{{< caution >}}
+Immediately revert any intentional failures after verifying failure can be detected.
+{{< /caution >}}
+
 ### Floating Point Assertions
 
 Floating-point numbers have problems with exact equality, as two floats can represent the "same" value but with slightly different rounding errors. Test frameworks provide special assertions that already account for many common issues:
@@ -89,7 +110,7 @@ Floating-point numbers have problems with exact equality, as two floats can repr
 
 ### Assertion Messages
 
-By default test assertions output a terse message about the compared values. To help someone quickly understand a failure in the future, add a human-readable message. This can also include more context about other variables:
+By default test assertions output a terse message about the compared values. To help someone quickly understand a failure in the future, add a human-readable message. To assist in debugging, the assertion messages can also include information about other variables:
 
 ```cpp
 TEST(WaterTests, LeakChecker_WaterAdded_DoesNotLeak)
