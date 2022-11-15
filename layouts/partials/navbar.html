@@ -6,40 +6,45 @@
 {{ $isDocs := in .RelPermalink "/docs/" }}
 
 {{ if $isDocs }}
+<div class="sticky-top">
 <div class="main-navbar navbar navbar-dark navbar-docs sticky-top" role="navigation" aria-label="main navigation">
   <div class="container-fluid d-flex flex-row justify-content-between">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="{{ $docs }}">
-          {{ if $logo }}
-          {{ $url := printf "img/logos/%s" $logo | relURL }}
-            <img src="{{ $url }}" class="navbar-logo">
-          {{ else }}
-            {{ $title }}
-          {{ end }}
-          <span class="subTitle">LEARN</span>
-        </a>
-      </div>
-
-      <div id="version-switcher"></div>
-
-      <div class="d-flex flex-row align-items-center navbar-docs">
-        <div id="main-nav" class="navbar-primary">
-          {{ partial "docs-menu-loop.html" . }}
+        <div class="navbar-brand">
+            <a class="navbar-item" href="{{ $docs }}">
+            {{ if $logo }}
+            {{ $url := printf "img/logos/%s" $logo | relURL }}
+                <img src="{{ $url }}" class="navbar-logo">
+            {{ else }}
+                {{ $title }}
+            {{ end }}
+            <span class="subTitle">LEARN</span>
+            </a>
         </div>
 
-        <button class="navbar-toggler secondary-toggler" type="button" data-toggle="collapse" data-target="#secondary-nav" aria-controls="secondary-nav" aria-expanded="false" aria-label="Toggle secondary navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="custom-select" id="version-switcher"></div>
 
-        <div class="collapse navbar-collapse navbar-secondary" id="secondary-nav">
-          {{ partial "docs-secondary-menu-loop.html" . }}
+        <div class="d-flex flex-row align-items-center navbar-docs">
+            <div id="main-nav" class="navbar-primary">
+            {{ partial "docs-menu-loop.html" . }}
+            </div>
+
+            <button class="navbar-toggler secondary-toggler" type="button" data-toggle="collapse" data-target="#secondary-nav" aria-controls="secondary-nav" aria-expanded="false" aria-label="Toggle secondary navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-secondary" id="secondary-nav">
+            {{ partial "docs-secondary-menu-loop.html" . }}
+            </div>
+            
+            <div id="mobile-docs-toggler" class="mobile-docs-toggler">
+            <span class="navbar-toggler-icon"></span>
+            </div>
         </div>
-        
-        <div id="mobile-docs-toggler" class="mobile-docs-toggler">
-          <span class="navbar-toggler-icon"></span>
-        </div>
-      </div>
-  </div> 
+    </div>
+</div>
+<div class="p-1 bg-warning" id="version-warning">
+    <p style="text-align:center;"><b>This page is not the current version of O3DE documentation. <a href="https://www.o3de.org/docs">Click here to switch to the latest release</a>, or select a version from the dropdown at the top of the page.</b></p>
+</div>
 </div>
 {{ else }}
   <div class="new-nav main-navbar navbar navbar-dark navbar-expand-lg sticky-top" role="navigation" aria-label="main navigation">

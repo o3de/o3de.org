@@ -157,7 +157,7 @@ function showChildren(e) {
 // A helper function to build the dropdown for the version switcher.
 function buildSelectElement(currentOrigin) {
     const branches = [];
-    branches[0] = { name:"main", url:"https://www.o3de.org", displayName:"22.10" };
+    branches[0] = { name:"main", url:"https://www.o3de.org", displayName:"22.10 (latest)" };
     branches[1] = { name:"development", url:"https://development--o3deorg.netlify.app", displayName:"development" };
     branches[2] = { name:"2205", url:"https://2205--o3deorg.netlify.app", displayName:"22.05" };
     branches[3] = { name:"local", url:"http://localhost:1313", displayName:"local" };
@@ -196,6 +196,11 @@ $(function() {
             window.location.href = newHref;
         }
     });
+
+    // Hide the version warning if the latest release is shown.
+    if (window.location.hostname == "www.o3de.org") {
+        $("#version-warning").hide();
+    }
 });
 
 $(function() {
