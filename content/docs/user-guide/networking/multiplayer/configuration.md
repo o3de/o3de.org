@@ -1,28 +1,32 @@
 ---
-title: Add the Open 3D Engine Multiplayer Gem to a Project
-description: Add Multiplayer support to an Open 3D Engine project or Gem, including the creation of auto-components.
-linkTitle: Project configuration
+linkTitle: Project Configuration
+title: Adding the Multiplayer Gem to a Project
+description: Learn how to add multiplayer support to an Open 3D Engine (O3DE) project or Gem. Includes instructions for creating a placeholder auto-component.
+weight: 200
 ---
 
-Adding the full functionality of the Open 3D Engine Multiplayer Gem to a project requires making edits to the CMake scripts and source code. These changes enable:
+Adding the full functionality of the **Multiplayer Gem** to an **Open 3D Engine (O3DE)** project requires making edits to the CMake scripts and source code. These changes enable:
 
-* Linking against the correct core libraries and Gems
-* Building [auto-components](./autocomponents)
-* Creating and registering component information with the Multiplayer Gem on project start
+* Linking against the correct core libraries and Gems.
+* Building [auto-components](./autocomponents).
+* Creating multiplayer component descriptors.
+* Registering the components with the Multiplayer Gem.
 
 {{< note >}}
-Since both O3DE Gems and projects use the same CMake build functions, these instructions can be used to create a *subgem* of the Multiplayer Gem. This allows you to create a new Gem that extends the behavior of the Multiplayer Gem.
+Because both O3DE Gems and projects use the same CMake build functions, you can use these instructions to create a new Gem that extends the behavior of the Multiplayer Gem.
 {{< /note >}}
 
 ## Build setup
 
-Start by ensuring the Multiplayer Gem is [added to the project](/docs/user-guide/project-config/add-remove-gems/).
-After adding the Multiplayer Gem to the project there are more steps that require editing some of the project's CMake and C++ files by hand. 
-### CMakeList.txt changes
+### Enable the Multiplayer Gem
+
+Start by adding and enabling the Multiplayer Gem in your project. For help, refer to [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems/).
+
+### Make CMakeList.txt changes
+
 Make sure the `<ProjectName>.Static` target includes the correct dependencies. 
-Find the CMake file defining your project's static target; for example `<ProjectName>/Code/CMakeList.txt`. 
-Make the following edits to the `<ProjectName>.Static` target:
-1. In the `FILES_CMAKE` section, add `<projectname>_autogen_files.cmake`
+Find the CMake file that defines your project's static target. For example, `<ProjectName>/Gem/Code/CMakeList.txt`. Edit the `<ProjectName>.Static` target as follows:
+1. In the `FILES_CMAKE` section, add `<projectname>_autogen_files.cmake`. You create this file in a later step.
     ```cmake
         ly_add_target(
             NAME <ProjectName>.Static STATIC
@@ -31,7 +35,6 @@ Make the following edits to the `<ProjectName>.Static` target:
                 ...
                 <projectname>_autogen_files.cmake
     ```
-    {{< note >}}The `<projectname>_autogen_files.cmake` file is created later in the [Adding AutoGen CMake file](#adding_autogen_file) section. For now, create a reference to it in the `CMakeList.txt`{{< /note >}}
 
 1. In the `BUILD_DEPENDENCIES PUBLIC` section, add `AZ::AzNetworking`, `Gem::Multiplayer`, and `AZ::AzFramework`.
    ```cmake
@@ -99,9 +102,10 @@ ly_add_target(
         *.AutoComponent.xml,AutoComponentTypes_Source.jinja,$path/AutoComponentTypes.cpp
 )
 ```
-<a id="adding_autogen_file"></a>
-### Adding AutoGen CMake file
-Next, create a new file called `<projectname>_autogen_files.cmake` and place it in the project's code folder. For example: `<ProjectName>/Code/<projectname>_autogen_files.cmake`. The contents of this file add the source templates for [autocomponents](./autocomponents) to the project build.
+
+### Add the AutoGen CMake file
+
+Next, create a new file named `<projectname>_autogen_files.cmake` and place it in the project's code folder. For example: `<ProjectName>/Gem/Code/<projectname>_autogen_files.cmake`. The contents of this file add the source templates for [auto-components](./autocomponents) to the project build.
 
 ```cmake
 set(FILES
@@ -113,14 +117,16 @@ set(FILES
 )
 ```
 
-### Adding a temporary auto-component
-{{< note >}}
-You might experience a build failure if multiplayer auto-components are enabled, but no auto-components are created. As a work-around, create a temporary auto-component. Refer to this [issue](https://github.com/o3de/o3de/issues/4058) for more information.
-{{< /note >}}
-1. Create a new folder under your project's `Code\Source\` directory called `AutoGen`. 
+### Add a placeholder auto-component
+
+{{< known-issue link="https://github.com/o3de/o3de/issues/4058">}}
+If you've enabled multiplayer auto-components but you haven't created any auto-components, you might experience a build failure. As a workaround, follow the steps in this section to create a placeholder auto-component.
+{{< /known-issue >}}
+
+1. Under your project's `Code\Source\` directory, create a new folder named `AutoGen`.
     {{< note >}}This AutoGen directory doesn't have to be temporary. All future multiplayer auto-components can live here.{{< /note >}}
-1. Create a new, temporary auto-component file under `Code\Source\AutoGen` called `MyFirstNetworkComponent.AutoComponent.xml`.
-    {{< note >}}This guide uses "MyFirstNetworkComponent" as the name for this multiplayer auto-component. You can specify any name for your component, but ensure that the name is used consistently.{{< /note >}}
+1. Under `Code\Source\AutoGen`, create a new, placeholder auto-component file named `MyFirstNetworkComponent.AutoComponent.xml`.
+    {{< note >}}This guide uses "MyFirstNetworkComponent" as the name for this multiplayer auto-component. You can specify any name for your component, but be sure to use that name consistently.{{< /note >}}
 
 1. Modify `Code\Source\AutoGen\MyFirstNetworkComponent.AutoComponent.xml` to have the following content:
     ```xml  
@@ -135,22 +141,22 @@ You might experience a build failure if multiplayer auto-components are enabled,
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     </Component>
     ```
-    {{< important >}}Make sure that the "Namespace" property is wrapped in quotes and matches the name of your project.
+    {{< important >}}Replace `<ProjectName>` with your project's name and make sure that the value is wrapped in quotes.
     {{< /important >}}
-1. Register the temporary auto-component with CMake by updating `<projectname_files.cmake>`
+1. Register the placeholder auto-component with CMake by updating `<projectname_files.cmake>`.
     ```cmake
     set(FILES
         ...
         Source/AutoGen/MyFirstNetworkComponent.AutoComponent.xml
     )
     ```
-{{< note >}}After completing the setup steps in this guide, you can delete the temporary auto-component and create a new auto-component, or use it as a starting point. There must always be at least one auto-component.
+{{< note >}}After completing the setup steps in this guide, you can delete the placeholder auto-component and create a new auto-component, or use it as a starting point. There must always be at least one auto-component.
 
-You can learn more about multiplayer auto-components [here](/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/autocomponents/), or follow [this tutorial](/docs/learning-guide/tutorials/multiplayer/first-multiplayer-component/).{{< /note >}}
+To learn more about multiplayer auto-components, refer to [Multiplayer Auto-components](../autocomponents) or follow the introductory [multiplayer tutorial](/docs/learning-guide/tutorials/multiplayer/first-multiplayer-component/).{{< /note >}}
 
-## Module and System component setup
+## Module and system component setup
 
-In order to use multiplayer functionality, you need to make small changes to the source code to generate descriptors for multiplayer components and then register these components with the Multiplayer Gem.
+To use multiplayer functionality, you must make small changes to the source code to generate descriptors for multiplayer components. Then, you must register these components with the Multiplayer Gem.
 
 ### Module.cpp changes
 

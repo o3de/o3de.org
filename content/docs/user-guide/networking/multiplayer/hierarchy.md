@@ -1,7 +1,8 @@
 ---
-title: Network Hierarchy Entities
-description: A reference for creating hierarchical network entities.
-linktitle: Hierarchies
+linktitle: Network Entity Hierarchies
+title: Multiplayer Network Entity Hierarchies
+description: A reference for creating network entity hierarchies in Open 3D Engine (O3DE).
+weight: 600
 ---
 
 *Network Hierarchies* provide a convenient way to group related entities under one logical group. Entities in such a hierarchy process their network input together as one, including their input creation, processing and rollback.
@@ -29,25 +30,25 @@ Network hierarchies can be created either in the Editor or by parenting entities
 
 1. Here is an example of a simple network entity:
 
-    ![Starting Network Entity](/images/user-guide/gems/reference/multiplayer/starting_network_entity.png)
+    ![Starting Network Entity](/images/user-guide/networking/multiplayer/starting_network_entity.png)
 
-1. In order to make it a hierarchical root entity, add a **Network Hierarchy Root** component:
+1. To make it a hierarchical root entity, add a **Network Hierarchy Root** component:
 
-    ![Starting Hierarchy Root Entity](/images/user-guide/gems/reference/multiplayer/starting_hierarchy_root_entity.png)
+    ![Starting Hierarchy Root Entity](/images/user-guide/networking/multiplayer/starting_hierarchy_root_entity.png)
 
-    This entity will be a parent entity for hierarchical child entities.
+    The resulting entity is a parent entity for hierarchical child entities.
 
-1. A hierarchical child entity is formed by adding a **Network Hierarchy Child** component.
+1. Form a hierarchical child entity by adding a **Network Hierarchy Child** component:
 
-    ![Starting Hierarchy Child Entity](/images/user-guide/gems/reference/multiplayer/starting_hierarchy_child_entity.png)
+    ![Starting Hierarchy Child Entity](/images/user-guide/networking/multiplayer/starting_hierarchy_child_entity.png)
 
     Notice that this entity is a child entity to the root entity.
 
-    ![Simple Hierarchy Example](/images/user-guide/gems/reference/multiplayer/simple_hierarchy.png)
+    ![Simple Hierarchy Example](/images/user-guide/networking/multiplayer/simple_hierarchy.png)
 
-    Often a hierarchy is a group of entities that you want to spawn at runtime. In such cases you want to create a prefab out of the entities.
+    Often, a hierarchy is a group of entities that you want to spawn at runtime. In these cases, you want to create a prefab out of the entities.
 
-    ![Simple Hierarchy Prefab](/images/user-guide/gems/reference/multiplayer/simple_hierarchy_prefab.png)
+    ![Simple Hierarchy Prefab](/images/user-guide/networking/multiplayer/simple_hierarchy_prefab.png)
 
     It is important that the entity with a **Network Hierarchy Root** component is at the top parent entity within the prefab. All other entities should have a **Network Hierarchy Child** component on them.
 
@@ -91,9 +92,9 @@ For example, here is an example component that has a `NetworkInput` field in its
 
 Add a component to provide multiplayer input processing:
 
-![Hierarchy Debug Overlay](/images/user-guide/gems/reference/multiplayer/hierarchy_child_entity_with_input_processing_component.png)
+![Hierarchy Debug Overlay](/images/user-guide/networking/multiplayer/hierarchy_child_entity_with_input_processing_component.png)
 
-As a general rule, a hierarchy must have one **Local Prediction Input** component at its top parent entity to process multiplayer input. While hierarchical child entities need only to have a **Network Hierarchy Child** component to process their multiplayer input.
+As a general rule, a hierarchy must have one **Local Prediction Input** component at its top parent entity to process multiplayer input. However, hierarchical child entities need only a **Network Hierarchy Child** component to process their multiplayer input.
 
 
 ### Creating Network Hierarchies at Runtime

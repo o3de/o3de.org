@@ -1,11 +1,11 @@
 ---
+linktitle: Packet Structure
 title: Network Packet Structure
-linktitle: Packets
-weight: 300
-description: An overview and reference for the structure of UDP and TCP packets used by the Open 3D Engine networking stack.
+description: An overview and reference for the structure of UDP and TCP packets that the Open 3D Engine (O3DE) networking stack uses.
+weight: 100
 ---
 
-Open 3D Engine has support for both TCP and UDP protocols in its networking stack, giving you the flexibility to choose how to connect your game to existing services and what level of overhead you want to introduce on server communications. While TCP packets contain minimal information themselves, there is the overhead (and assurance) of the TCP protocol behind these connections. UDP packets contain longer headers to help address consistency, even when packets may be dropped. This enables custom recovery mechanisms through O3DE Gems that allow for features like rollback.
+**Open 3D Engine (O3DE)** supports both TCP and UDP protocols in its networking stack. This gives you the flexibility to choose how to connect your game to existing services and what level of overhead you want to introduce on server communications. While TCP packets contain minimal information themselves, there is the overhead (and assurance) of the TCP protocol behind these connections. UDP packets contain longer headers to help address consistency, even when packets may be dropped. This enables custom recovery mechanisms through O3DE Gems that allow for features such as rollback.
 
 This section only describes the overall packet structure, and doesn't cover best practices or information on efficient implementation of packet payload data.
 
