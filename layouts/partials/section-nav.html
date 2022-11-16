@@ -1,6 +1,8 @@
 {{ $allSections  := site.Sections }} <!-- "blog" and "docs" -->
 {{ $docsSections := where $allSections "Section" "docs" }}
 
+<p id="version-switcher"></p>
+
 <form id="search"
     action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}' method="get" class="align-items-center justify-content-center">
     <div class="search-input-view">

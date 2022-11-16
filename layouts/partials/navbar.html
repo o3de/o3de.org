@@ -6,7 +6,7 @@
 {{ $isDocs := in .RelPermalink "/docs/" }}
 
 {{ if $isDocs }}
-<!-- TODO: Additional sticky-top is temporary. Working on a better implementation. -->
+<!-- TODO: Additional sticky-top is temporary. Working on a better way to stop left nav from scrolling. -->
 <div class="sticky-top">
 <div class="main-navbar navbar navbar-dark navbar-docs sticky-top" role="navigation" aria-label="main navigation">
   <div class="container-fluid d-flex flex-row justify-content-between">
@@ -21,8 +21,6 @@
           <span class="subTitle">LEARN</span>
         </a>
       </div>
-
-      <div class="custom-select" id="version-switcher"></div>
 
       <div class="d-flex flex-row align-items-center navbar-docs">
         <div id="main-nav" class="navbar-primary">
@@ -44,8 +42,7 @@
   </div>
 </div>
 <div class="p-1 bg-warning" id="version-warning">
-    <!-- TODO: Set href in JS function to use the pathname of the current page. -->
-    <p style="text-align:center;"><b>This page is not the current version of O3DE documentation. <a href="https://www.o3de.org/docs">Click here to switch to the latest release</a>, or select a version from the dropdown at the top of the page.</b></p>
+  {{ partial "version-warning.html" . }}
 </div>
 </div>
 {{ else }}

@@ -163,7 +163,7 @@ function buildSelectElement(currentOrigin) {
     branches[2] = { name:"2205", url:"https://2205--o3deorg.netlify.app", displayName:"22.05" };
     branches[3] = { name:"local", url:"http://localhost:1313", displayName:"local" };
 
-    var html = ['<select>'];
+    var html = ['Version: <select>'];
     
     // Build the <select> element.
     branches.forEach(function(value) {
@@ -201,6 +201,10 @@ $(function() {
     // Hide the version warning if the latest release is shown.
     if (window.location.hostname == "www.o3de.org") {
         $("#version-warning").hide();
+    }
+    else {
+        // Otherwise, adjust the top of the left nav so that it doesn't scroll when scrolling the contents of the page.
+        $(".docs-sidebar").css("top", $(".sticky-top").height());
     }
 });
 
