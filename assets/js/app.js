@@ -161,18 +161,35 @@ function buildSelectElement(currentOrigin) {
     branches[0] = { name:"main", url:"https://www.o3de.org", displayName:"22.10 (latest)" };
     branches[1] = { name:"development", url:"https://development--o3deorg.netlify.app", displayName:"development" };
     branches[2] = { name:"2205", url:"https://2205--o3deorg.netlify.app", displayName:"22.05" };
-    branches[3] = { name:"local", url:"http://localhost:1313", displayName:"local" };
 
+    var urlMatched = false;
     var html = ['Version: <select>'];
     
     // Build the <select> element.
     branches.forEach(function(value) {
         html.push('<option value="' + value.url + '"');
         if (value.url == currentOrigin) {
+            urlMatched = true;
             html.push(' selected="selected"');
         }
         html.push('>' + value.displayName + '</option>');
     });
+
+    // Add the current host if it's not one of the standard published branches.
+    if (!urlMatched) {
+        html.push('<option value="' + currentOrigin + '" selected="selected">');
+        if (currentOrigin.includes("localhost")) {
+            html.push('local</option>');
+        }
+        else if (currentOrigin.includes("deploy-preview")) {
+            // label format: "preview-#"
+            html.push(currentOrigin.split("--")[0].split("-")[1] + '</option>');
+        }
+        else {
+            html.push(currentOrigin + '</option>');
+        }
+    }
+
     html.push('</select>');
     
     return html.join("");
