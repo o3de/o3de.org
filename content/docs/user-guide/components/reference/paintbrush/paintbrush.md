@@ -67,15 +67,15 @@ An example of a brush stroke crossing itself with medium opacity:
 
 | Blend Mode | Math Function | Description |
 | - | - | - |
-| Normal | `c = b` | Directly uses the painted value for blending. |
-| Multiply | `c = ab` | Multiplies the main value and painted value before blending, which results in darker values. |
-| Screen | `c = 1 - (1 - a)(1 - b)` | Performs an inverted multiply between the main value and painted value before blending, which results in lighter values. |
-| Linear Dodge (Add) | `c = a + b` | Adds the main value and painted value before blending, which results in lighter values. |
-| Subtract | `c = a - b` | Subtracts the main value and painted value before blending, which results in darker values. |
-| Darken (Min) | `c = min(a, b)` | Keeps the minimum value between the main and painted value before blending. This results in values that are always the same or darker than the main value. |
-| Lighten (Max) | `c = max(a, b)` | Keeps the maximum value between the main and painted value before blending. This results in values that are always the same or lighter than the main value. |
-| Average | `c = (a + b) / 2` | Uses the average of the main and painted values for blending. |
-| Overlay | `a < 0.5 : c = 2ab`<br>`a >= 0.5 : c = 1 - 2(1 - a)(1 - b)` | If the main value is dark, apply Multiply mode and darken; if the main value is light, apply Screen mode and lighten. |
+| Normal | $$c = b$$ | Directly uses the painted value for blending. |
+| Multiply | $$c = ab$$ | Multiplies the main value and painted value before blending, which results in darker values. |
+| Screen | $$c = 1 - (1 - a)(1 - b)$$ | Performs an inverted multiply between the main value and painted value before blending, which results in lighter values. |
+| Linear Dodge (Add) | $$c = a + b$$ | Adds the main value and painted value before blending, which results in lighter values. |
+| Subtract | $$c = a - b$$ | Subtracts the main value and painted value before blending, which results in darker values. |
+| Darken (Min) | $$c = min(a, b)$$ | Keeps the minimum value between the main and painted value before blending. This results in values that are always the same or darker than the main value. |
+| Lighten (Max) | $$c = max(a, b)$$ | Keeps the maximum value between the main and painted value before blending. This results in values that are always the same or lighter than the main value. |
+| Average | $$c = (a + b) / 2$$ | Uses the average of the main and painted values for blending. |
+| Overlay | $$a < 1/2 : c = 2ab$$<br>$$a >= 1/2 : c = 1 - 2(1 - a)(1 - b)$$ | If the main value is dark, apply Multiply mode and darken; if the main value is light, apply Screen mode and lighten. |
 
 ### Settings that affect brush circles
 
@@ -144,7 +144,7 @@ The following settings only apply to the smoothing brush.
 
 #### Smoothing Radius
 
-**Smoothing Radius** is the number of values to use in each direction from the center value when computing the smoothed value. The smoothing methods use NxN values, where N is (radius * 2) + 1. A radius of 1 is a 3x3 set of values, a radius of 2 is a 5x5 set of values, a radius of 3 is a 7x7 set of values, etc.
+**Smoothing Radius** is the number of values to use in each direction from the center value when computing the smoothed value. The smoothing methods use NxN values, where `N = (radius * 2) + 1`. A radius of 1 is a 3x3 set of values, a radius of 2 is a 5x5 set of values, a radius of 3 is a 7x7 set of values, etc.
 
 This number is expressed in "Value Space". In other words, it is describing the number of adjacent values to use in each direction regardless of how the values are mapped into world space.
 
