@@ -27,7 +27,7 @@ These Gems are only built and loaded for products that require them:
 
 * **ScriptCanvas** and **GraphCanvas** - Script Canvas is the graphical scripting language used by O3DE, with its Editor UX tools powered by the GraphCanvas Gem. The ScriptCanvas Gem itself provides the Script Canvas tools and runtimes. Read the [Script Canvas documentation](/docs/user-guide/scripting/script-canvas/) for more information.
 
-* **EditorPythonBindings** - Support for dynamic Python scripting of the Editor. Read the [Python Bindings Examples](/docs/user-guide/editor/editor-automation-examples/) for more information.
+* **EditorPythonBindings** - Support for dynamic Python scripting of the Editor. Read the [Python Bindings Examples](/docs/user-guide/editor/editor-automation/#python-editor-bindings-gem-examples) for more information.
 
 * **PythonAssetBuilder** - Adds Asset Processor support for building assets via Python scripts. Read the [Python Asset Builder Gem documentation](/docs/user-guide/assets/builder/) for more information.
 
