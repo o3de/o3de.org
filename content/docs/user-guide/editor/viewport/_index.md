@@ -110,12 +110,3 @@ Refer to the following table for a summary of keyboard hotkeys for the 3D Viewpo
 | **Ctrl + R** | Resets the current manipulator. |  |
 | **P** | Toggles the pivot of the selected entity. |  |
 
-## Section topics
-
-| Topic | Description |
-| - | - |
-| [Modifying the Transform](viewport-interaction-model-transform) |  |
-| [Reference Spaces](reference-spaces) |  |
-| [Group Selection](group-selection) |  |
-| [Resetting the Transform](reset-transform) |  |
-| [Matching the Transform](transform-matching) |  |
