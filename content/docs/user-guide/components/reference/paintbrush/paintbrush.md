@@ -85,7 +85,7 @@ Size controls the diameter of each brush circle. The size is specified in meters
 
 #### Flow
 
-**Flow** controls the maximum opacity of each brush circle. A Flow value of 0% is completely transparent, and 100% is completely opaque. 
+**Flow** controls the maximum opacity of each brush circle. A Flow value of 0% is completely transparent, and 100% is completely opaque.
 
 | Flow | Illustration |
 | - | - |
