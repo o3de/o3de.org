@@ -273,3 +273,10 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Vegetation Rotation Modifier](vegetation-modifiers/vegetation-rotation-modifier) | Offsets the rotation of the vegetation. |
 | [Vegetation Scale Modifier](vegetation-modifiers/vegetation-scale-modifier) | Offsets the scale of the vegetation. |
 | [Vegetation Slope Alignment Modifier](vegetation-modifiers/vegetation-slope-alignment-modifier) | Offsets the orientation of the vegetation relative to a surface angle. |
+
+## Supplemental Information
+The pages below provide information about data and systems used by the components above.
+
+| Data/System | Description | 
+| - | - |
+| [Paint Brush](paintbrush/paintbrush) | Painting data manipulator used by some components. |
