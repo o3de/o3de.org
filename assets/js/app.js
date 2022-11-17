@@ -182,8 +182,7 @@ function buildSelectElement(currentOrigin) {
             html.push('local</option>');
         }
         else if (currentOrigin.includes("deploy-preview")) {
-            // label format: "preview-#"
-            html.push(currentOrigin.split("--")[0].split("-")[1] + '</option>');
+            html.push('preview</option>');
         }
         else {
             html.push(currentOrigin + '</option>');
