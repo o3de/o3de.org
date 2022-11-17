@@ -4,6 +4,8 @@
 {{ $logo   := site.Params.logos.navbar }}
 {{ $menu   := site.Menus.main }}
 {{ $isDocs := in .RelPermalink "/docs/" }}
+{{ $isPreview := in site.BaseURL "deploy-preview" }}
+{{ $isRelease := in site.BaseURL "www.o3de.org" }}
 
 {{ if $isDocs }}
 <!-- TODO: Additional sticky-top is temporary. Working on a better way to stop left nav from scrolling. -->
@@ -41,9 +43,17 @@
       </div>
   </div>
 </div>
-<div class="p-1 bg-warning" id="version-warning">
-  {{ partial "version-warning.html" . }}
-</div>
+{{ if not .Site.IsServer }}
+  {{ if $isPreview }}
+    <div class="p-2 text-white bg-secondary" id="preview-info">
+      {{ partial "preview-info.html" . }}
+    </div>
+  {{ else if not $isRelease }}
+    <div class="p-2 text-dark bg-warning" id="version-warning">
+      {{ partial "version-warning.html" . }}
+    </div>
+  {{ end }}
+{{ end }}
 </div>
 {{ else }}
   <div class="new-nav main-navbar navbar navbar-dark navbar-expand-lg sticky-top" role="navigation" aria-label="main navigation">

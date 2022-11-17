@@ -198,12 +198,8 @@ $(function() {
         }
     });
 
-    // Hide the version warning if the latest release is shown.
-    if (window.location.hostname == "www.o3de.org") {
-        $("#version-warning").hide();
-    }
-    else {
-        // Otherwise, adjust the top of the left nav so that it doesn't scroll when scrolling the contents of the page.
+    // If an info or warning banner is present, adjust the top of the left nav so that it doesn't scroll when scrolling the contents of the page.
+    if ($("#preview-info").length > 0 || $("#version-warning").length > 0) {
         $(".docs-sidebar").css("top", $(".sticky-top").height());
     }
 });
