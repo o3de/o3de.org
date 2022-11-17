@@ -6,7 +6,7 @@ toc: true
 weight: 600
 ---
 
-This page provides advice on how many independent developers can efficiently maintain the **Open 3D Engine (O3DE)** with automated tests. The advice applies both to teams using O3DE who write their own automation, as well as to anyone contributing to O3DE. This document is not intended to serve as an exhaustive source of testing advice. It instead provides baseline definitions, and heuristics for investing in test automation. Each concept only serves as a brief introduction, as numerous in depth articles can be found published by other sources.
+This page provides advice on how many independent developers can efficiently maintain the **Open 3D Engine (O3DE)** with automated tests. The advice applies both to teams using O3DE who write their own automation, as well as to anyone contributing to O3DE. This document is not intended to serve as an exhaustive source of testing advice. It instead provides baseline definitions and heuristics for investing in test automation. Each concept only serves as a brief introduction, as numerous in depth articles can be found published by other sources.
 
 ## Avoid
 
@@ -186,7 +186,7 @@ TEST(MathTests, FastSquare_Integer_Squared5)
 }
 ```
 
-The incorrect math of the production code is trusted in every test above, which will each pass! Each test is incorrectly written in a different way where the bug cannot be caught. The first test ends up only checking the identity property. No matter how the code is changed, it will only ever verify the code returns the same value. The second test duplicates the production code, which will an annoying pattern to maintain as the code changes in complex ways. The third test uses a static value, but hides it off in another file. However since the fourth and fifth tests hard-code the expectation, it is easier to see the error. Try to avoid burying assumptions in other files and functions.
+The incorrect math of the production code is trusted in every test above, which will each pass! Each test is incorrectly written in a different way where the bug cannot be caught. The first test ends up only checking the identity property. No matter how the code is changed, it will only ever verify the code returns the same value. The second test duplicates the production code, which will become an annoying pattern to maintain as the code changes in complex ways. The third test uses a static value, but hides it off in an enum in another file. However since the fourth and fifth tests hard-code the expectation, it is easier to see the error. Avoid burying assumptions in other files and functions.
 
 ## Sizes of Automated Tests in O3DE
 
@@ -194,9 +194,7 @@ Size or scope is one of the more useful ways to classify a test. When automating
 
 ### Unit Tests
 
-The most straighforward automated tests are unit tests. Unit tests have a very simple mantra:
-
-`One input, one call, one output`
+The most straighforward automated tests are unit tests. Unit tests have a very simple mantra: **One input, one call, one output**
 
 The purpose of unit tests are to be small, specific, and fast. They are easy to run, and when they fail it tends to be easy to determine why. This ease of use primarily comes from the "one call" aspect. Different interactions are treated as different tests, rather than different steps within the same test of a longer workflow. One can think of a unit test as creating an extremely simple robot, which will quickly report if one specific behavior is ever accidentally broken. Each robot allows the author to reduce expending mental resources worrying about a design concern. It also documents and monitors that concern for anyone unfamiliar with the area. This allows developers to focus on changing production code, while trusting their robots will efficiently help them detect and debug issues as they get introduced. When you are writing code intended to exist for more than a week, write some unit tests.
 
@@ -224,9 +222,9 @@ Note that neither of the above tests are good candidates to include with O3DE, a
 
 ### Integration Tests
 
-Integration tests are the next level up after unit tests. These higher-order tests focus on the interactions between multiple components and dependencies. Integration tests cover a slightly wider workflow, though they are exponentially broader in scope and far more sensitive to changes across the codebase. This means that they can catch many bugs, which is both a benefit and a drawback. The main drawbacks come from how slow these tests can be to run and debug. When a test chains multiple calls and verifications interacting with different concerns, any test failures will provide a more complex debugging experience.
+Integration tests are the next level up after unit tests. These higher-order tests focus on interactions between multiple components and dependencies. Integration tests cover a slightly wider workflow, though they are exponentially broader in scope and far more sensitive to changes across the codebase. This means that they can catch many bugs, which is both a benefit and a drawback. The main drawbacks come from how slow these tests can be to run and debug. When a test chains multiple calls and verifications interacting with different concerns, any test failures will provide a more complex debugging experience.
 
-Integration tests are useful for areas of critical functionality, and for detecting failures which unit tests cannot catch. As you approach major functional milestones, add or update integration tests. As you identify features which emit many bugs, consider adding integration tests to more quickly detect issues. If you find an integration test frustrating to investigate and debug, consider changes to the underlying feature and its unit tests.
+Integration tests are useful for areas of critical functionality, and for detecting failures which unit tests cannot catch. As code approaches major functional milestones, add or update integration tests. As you identify features which emit many bugs, consider adding integration tests to more quickly detect issues. If you find an integration test frustrating to investigate and debug, consider changes to the underlying feature and its unit tests.
 
 Here are real-world examples of O3DE's integ tests in [C++](https://github.com/o3de/o3de/blob/development/Gems/EMotionFX/Code/Tests/MotionEventTrackTests.cpp) and [Python](https://github.com/o3de/o3de/blob/development/AutomatedTesting/Gem/PythonTests/largeworlds/dyn_veg/EditorScripts/RotationModifierOverrides_InstancesRotateWithinRange.py), which each require examining many sibling files. These tests take on the order of one minute to automatically verify.
 
@@ -324,12 +322,17 @@ Tests should have unique, obvious names to help document what they perform. One 
    * Describes what makes the test vary from "normal" conditions in similar tests.
      * When nothing seems special use a placeholder such as `Default` or `HappyPath`, or omit this.
 3. ExpectedBehavior: The expected outcome of the test. (Assert)
-   * Often describes the type of assertion being made `Unequal`, or highlights the most important of multiple asserted values.
+   * Often describes the type of assertion being made, or highlights the most important of multiple asserted values.
    * Easy to read, since it comes last.
 
 An alternative ways to think about this pattern is `<WhatIsTested>_<NotableConfigurationStep>_<ImportantAssertion>`
 
-There are two main reasons to use this naming method. First, when a test fails a human can look at a report summary and quickly form an idea of what went wrong. If test MatrixDotProduct_SecondMatrixInvalidRows_InvalidDimensions starts failing, someone may immediately suspect what caused the issue before inspecting the code. Second, the name documents what makes the test uniquely important. This makes it easier to assess what is currently tested, and then declare a new test which is not a duplicate.
+There are two main reasons to use this naming method:
+
+1. When a test fails, a human can look at a report summary and quickly form an idea of what went wrong.
+   * If test `MatrixDotProduct_SecondMatrixInvalidRows_InvalidDimensions` starts failing, someone may immediately suspect what caused the issue before navigating through code.
+2. The name documents what makes the test uniquely important.
+   * This makes it easier to assess what is currently tested, and then declare a new test which is not a duplicate.
 
 {{< caution >}}
 While the pattern above recommends using underscores, never start or end test names with underscores! This can result in [GoogleTest creating an invalid function name](http://google.github.io/googletest/faq.html#why-should-test-suite-names-and-test-names-not-contain-underscore) or [PyTest not discovering the test](https://docs.python.org/3/tutorial/classes.html#private-variables).
@@ -343,7 +346,7 @@ Whenever a test provided with O3DE gets disabled, please [cut an issue](https://
 
 ## Test-Driven Development (TDD)
 
-Test-Driven Development is a software writing workflow which prompts engineers to iteratively develop code. The Red-Green-Refactor process can carve up questions such as "what should I build next?" into actionable tasks. This helps avoid getting lost in the ambiguity of software design. TDD also has an extra benefit of leaving behind tests targeting critical requirements. Repeating these three steps can help design new functionality:
+Test-Driven Development is a software writing workflow which prompts engineers to iteratively develop code. The Red-Green-Refactor process can carve up questions such as "what should I build next?" into actionable tasks. This helps avoid getting lost in the ambiguity of software design. TDD also has an extra benefit of leaving behind tests targeting critical requirements. Repeating these three steps can help design new features:
 
 1. Red: Write a new failing (unit) test for new functionality.
    * What does success look like?
