@@ -7,13 +7,6 @@ weight: 500
 
 In O3DE Editor, the console window shows a running list of all editor commands, processes, and output. For example, when you delete an entity, the console shows the action and the output. You can use the console to enter or modify console variables (CVARs). Console variables are a type of variable that you can manipulate in O3DE Editor.
 
-**Topics**
-- [Viewing the Console Window](#viewing-the-console-window)
-- [Exporting All Console Commands and Variables](#exporting-console-variables-cvars)
-- [Configuring Console Variables](#configuring-console-variables-cvars)
-- [Console in Depth](/docs/user-guide/editor/console-cvars-commands/)
-- [Console Variable Tutorial](/docs/user-guide/programming/cvars/)
-
 ## Viewing the Console Window 
 
 You can enter commands directly in the console window or search and edit console variables.
