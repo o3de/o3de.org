@@ -46,16 +46,16 @@ The following inputs are supported when simulating mouse input with a game contr
 | A (Lower Face Button) | Left Mouse Button (Btn1)  |
 | B (Right Face Button) | Right Mouse Button (Btn2) |
 
-You can adjust the sensitivity using `imgui_ControllerMouseSensitivity`
+You can adjust the sensitivity using `imgui_ControllerMouseSensitivity`.
 
 ## Discrete input mode
 When ImGui is visible, input is sent to both ImGui and the O3DE game/editor. Sometimes, it is more desirable to only control either ImGui or the game/editor at any given time. To facilitate this, the ImGui Gem supports a discrete input mode.
 
-By default, discrete input mode is off. It can be turned on in the ImGui O3DE menu, or with the [CVAR](#cvars) `imgui_DiscreteInputMode`
+By default, discrete input mode is off. It can be turned on in the ImGui O3DE menu, or with the [CVAR](#cvars) `imgui_DiscreteInputMode`.
 
 When this mode is enabled, ImGui will be given a 2nd visibility state, at this point, when toggling ImGui visibility via the HOME button or L3/R3 on a game controller, it will toggle through three states instead of just on and off.
 
-1. ImGui is off - ImGui is not visible,
+1. ImGui is off - ImGui is not visible.
 2. All input goes to ImGui - ImGui is visible and receiving all input.
 3. All input goes to the Game - ImGui is visible but input is going to the game. This allows ImGui profiling tools and others to be visible on screen while interacting with O3DE.
 
@@ -69,26 +69,26 @@ You will need to:
 
 1. Ensure the ImGui Gem is active in your project. See the O3DE guide on [Adding Gems in a project](https://www.o3de.org/docs/user-guide/project-config/add-remove-gems/).
 2. Sign up for ImGui::ImGuiUpdateListenerBus::Handler or use the `ImGuiLYCommonMenu` class as a base.
-3. Inside the handler perform your ImGui actions
+3. Inside the handler perform your ImGui actions.
 
-```
+```cpp
         void MyImGuiComponent::OnImGuiUpdate()
         {
             // .. do imgui stuff ...
         }
 ```
 
-## Example O3DE Imgui tools
+## Example O3DE ImGui tools
 
 O3DE ships with many ImGui tools so the options you see will be dependent on the specific gems active in your project.
 
-* [Debugging PhysX](https://o3de.org/docs/user-guide/interactivity/physics/debugging/)
-* [Atom Rendering Profiler](https://www.o3de.org/docs/atom-guide/atom-sample-viewer/debug-menu-samples/)
-* [Multiplayer helpers](https://www.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/running/#running-locally-using-imgui-options)
+* [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging/)
+* [Atom Rendering Profiler](/docs/atom-guide/atom-sample-viewer/debug-menu-samples/)
+* [Multiplayer helpers](/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/running/#running-locally-using-imgui-options)
 
 ## CVARs
 
-ImGui uses the following Console variables (CVARs) either at runtime via the console, or by placing them in configuration. See the general [CVAR guide](https://www.o3de.org/docs/user-guide/appendix/cvars/) for more information on configuring CVARs.
+ImGui uses the following Console variables (CVARs) either at runtime via the console, or by placing them in configuration. See the general [CVAR guide](/docs/user-guide/appendix/cvars/) for more information on configuring CVARs.
 
 | Name                             | Description                                                                                                                                                               | 
 |----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
