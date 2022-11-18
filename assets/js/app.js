@@ -154,50 +154,47 @@ function showChildren(e) {
   });
 }
 
-// A helper function to build the dropdown for the version switcher.
-function buildSelectElement(currentOrigin) {
-    // TODO: Load this from config.toml? (Also, use a simple key-value pair since 'name' is not being used.)
-    const branches = [];
-    branches[0] = { name:"main", url:"https://www.o3de.org", displayName:"22.10 (latest)" };
-    branches[1] = { name:"development", url:"https://development--o3deorg.netlify.app", displayName:"development" };
-    branches[2] = { name:"2205", url:"https://2205--o3deorg.netlify.app", displayName:"22.05" };
-
-    var urlMatched = false;
-    var html = ['Version: <select>'];
+// A helper function to customize the dropdown for the version switcher.
+function updateSelectElement(currentOrigin) {
+    var originMatched = false;
     
-    // Build the <select> element.
-    branches.forEach(function(value) {
-        html.push('<option value="' + value.url + '"');
-        if (value.url == currentOrigin) {
-            urlMatched = true;
-            html.push(' selected="selected"');
+    // Make the following modifications to the dropdown options:
+    // - Add "(latest)" to the production URL option.
+    // - Set the selected option and enhance its style.
+    $("#version-switcher").children("option").attr("value", function(i, currentValue) {
+        if (currentValue.includes("www.o3de.org")) {
+            $(this).text($(this).text() + " (latest)");
         }
-        html.push('>' + value.displayName + '</option>');
+
+        if (currentValue == currentOrigin) {
+            originMatched = true;
+            $(this).attr("selected", "selected");
+            $(this).css("class", "selectedVersion");
+        }
     });
 
     // Add the current host if it's not one of the standard published branches.
-    if (!urlMatched) {
-        html.push('<option value="' + currentOrigin + '" selected="selected">');
+    if (!originMatched) {
+        var newOption = '<option value="' + currentOrigin + '" selected="selected" class="selectedVersion">';
+        
         if (currentOrigin.includes("localhost")) {
-            html.push('local</option>');
+            newOption += 'local</option>';
         }
         else if (currentOrigin.includes("deploy-preview")) {
-            html.push('preview</option>');
+            newOption += 'preview</option>';
         }
         else {
-            html.push(currentOrigin + '</option>');
+            newOption += new URL(currentOrigin).hostname + '</option>';
         }
-    }
 
-    html.push('</select>');
-    
-    return html.join("");
+        $("#version-switcher").append(newOption);
+    }
 }
 
 // For docs navbar, switch to a different published docset.
 $(function() {
-    // Build the dropdown for the version switcher, based on the origin part of the URL.
-    $("#version-switcher").html(buildSelectElement(window.location.origin));
+    // Update the dropdown for the version switcher, based on the origin part of the URL.
+    updateSelectElement(window.location.origin);
 
     // Set up the onChange event handler for the version switcher to load the current page from the selected location.
     $("#version-switcher").on("change", function(event) {

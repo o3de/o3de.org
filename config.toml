@@ -25,6 +25,15 @@ contentDir = "/content/"
 docsDir = "/docs/"
 sourceRepo = "https://github.com/o3de/o3de"
 
+[params.docs]
+# Docs version data format: ["display name", "baseURL"]
+# Note: A version that has "www.o3de.org" in its baseURL will get " (latest)" appended to its display name in the version selector.
+versions = [
+  ["22.10", "https://www.o3de.org"],
+  ["development", "https://development--o3deorg.netlify.app"],
+  ["22.05", "https://2205--o3deorg.netlify.app"]
+]
+
 [params.logos]
 navbar = "O3DE-Logo-with-color-white.svg"
 footer = "O3DE-Logo-REV-Mono.svg"
