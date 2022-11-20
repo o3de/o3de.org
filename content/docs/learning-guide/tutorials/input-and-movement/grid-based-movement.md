@@ -24,7 +24,7 @@ In this tutorial, you will learn how to:
 
 ## Prerequisites
 
-You will need to have a project built from the standard project template or contains the Gems in the standard template.
+You will need to have a project built from the standard project template or one that contains the Gems in the standard template.
 
 ## Steps
 
