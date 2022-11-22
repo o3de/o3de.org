@@ -14,7 +14,7 @@ The session interface performs all of the session handling. The Gem acts as a ga
 
 There must be only one implementation of the session interface per dedicated server solution. To add support for another dedicated server solution, you must create another implementation of the session interface.
 
-It is recommended to create gameing sessions following the [best practices for GameLift game session queues](https://docs.aws.amazon.com/gamelift/latest/developerguide/queues-best-practices.html) instead of creating them directly on fleets.
+It is recommended to create game sessions following the [best practices for GameLift game session queues](https://docs.aws.amazon.com/gamelift/latest/developerguide/queues-best-practices.html) instead of creating them directly on fleets.
 
 
 ### Client initialization
@@ -155,7 +155,7 @@ After the game session has been created, notifications are broadcast through `Mu
 
 ### `OnCreateSessionBegin`
 
-When the session begins to create on the server, the `Multiplayer::SessionNotificationBus::Events::OnCreateSessionBegin()` notification is broadcasted on the server side. During this step, it's recommended to load the level on the server side. 
+When the session begins to create on the server, the `Multiplayer::SessionNotificationBus::Events::OnCreateSessionBegin()` notification is broadcast on the server side. During this step, it's recommended to load the level on the server side. 
 
 ```cpp
 bool OnCreateSessionBegin(const Multiplayer::SessionConfig& sessionConfig)
@@ -167,7 +167,7 @@ bool OnCreateSessionBegin(const Multiplayer::SessionConfig& sessionConfig)
 
 ### `OnCreateSessionEnd`
 
-At the end of session creation process, the `Multiplayer::SessionNotificationBus::Events::OnCreateSessionEnd()` notification is broadcasted on the server side to perform any follow-up operation after session is created and active.
+At the end of session creation process, the `Multiplayer::SessionNotificationBus::Events::OnCreateSessionEnd()` notification is broadcast on the server side to perform any follow-up operation after session is created and active.
 
 ```cpp
 bool OnCreateSessionEnd()
@@ -193,7 +193,7 @@ bool OnSessionHealthCheck()
 
 ### `OnDestroySessionBegin`
 
-When the session begins to terminate, the `Multiplayer::SessionNotificationBus::Events::OnDestroySessionBegin` notification is broadcasted to perform cleanup operations. During this step, it's recommended to clean up level data on the server side.
+When the session begins to terminate, the `Multiplayer::SessionNotificationBus::Events::OnDestroySessionBegin` notification is broadcast to perform cleanup operations. During this step, it's recommended to clean up level data on the server side.
 
 ```cpp
 bool OnDestroySessionBegin()
@@ -204,7 +204,7 @@ bool OnDestroySessionBegin()
 
 ### `OnDestroySessionEnd`
 
-After the session is terminated, the `Multiplayer::SessionNotificationBus::Events::OnDestroySessionEnd` notification is broadcasted for any follow-up operations, like shutdown application process, etc.
+After the session is terminated, the `Multiplayer::SessionNotificationBus::Events::OnDestroySessionEnd` notification is broadcast for any follow-up operations, like shutdown application process, etc.
 
 ```cpp
 bool OnDestroySessionEnd()
@@ -212,10 +212,3 @@ bool OnDestroySessionEnd()
     ...
 }
 ```
-
-
----
-
-Previous topic: [Session Management Integration](integration/)
-
-Next topic: [Session Management Scripting](scripting/)

@@ -117,10 +117,3 @@ Make sure to replace `<package base folder>` with the path to the installation f
 {{< note >}}  
 If you are using virtualbox to build linux server, you would not be able to test the networking connection across host pc and virtualbox. Instead after launching server, you can use AWS cli to test gamelift session on server side. (see details in [Test a Game Server](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html#integration-testing-local-server))
 {{< /note >}}
-
-
----
-
-Previous topic: [AWS GameLift Gem Build Packaging for Windows](build-packaging-for-windows/)
-
-Next topic: [AWS GameLift Gem Resource Management](resource-management/)

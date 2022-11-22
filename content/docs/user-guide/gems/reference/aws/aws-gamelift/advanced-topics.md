@@ -85,7 +85,7 @@ In Script Canvas, follow these steps:
 
 7. Search for sessions by using the **SearchSessionsAsync** node.
 
-![A scipt that searches for a maximum of ten sessions in the corresponding fleet.](/images/user-guide/gems/reference/aws/aws-gamelift/searchactivesessions.PNG)
+![A script that searches for a maximum of ten sessions in the corresponding fleet.](/images/user-guide/gems/reference/aws/aws-gamelift/searchactivesessions.PNG)
 
 
 ### Example: Browse search results and join session
@@ -131,9 +131,3 @@ To support logging for multiple processes on the same GameLift instance, enter t
 ```cmd
 C:\game\bin\server.exe --engine-path=C:\game --project-path=C:\game\process1 --project-cache-path=C:\game\assets -bg_ConnectToAssetProcessor= 0
 ```
-
----
-
-Previous topic: [FlexMatch Scripting](flexmatch/scripting/)
-
-Next topic: [AWS GameLift Gem Local Testing](local-testing/)
