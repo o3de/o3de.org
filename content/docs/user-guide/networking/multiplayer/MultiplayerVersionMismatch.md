@@ -22,7 +22,7 @@ Multiplayer version mismatch detection is enabled automatically inside the [Mult
 1. AzAutoGen creates a unique 64-bit hash value for each auto-component xml it digests.
     1. The 64-bit hash will be stored in the ComponentData class that’s passed to the global MultiplayerComponentRegistry
 2. During application start up, as all the gems are registering their components with the MultiplayerComponentRegistry, the MultiplayerComponentRegistry will combine each component’s hash to create its own 64-bit system version hash.
-3. The MultiplayerComponentRegistry’s version hash is sent from the connector (ie: client) to the acceptor (ie: server) as part of the MultiplayerPackets::Connect packet.
+3. On a connection event the MultiplayerComponentRegistry’s version hash is sent from the connector (typically the client) to the acceptor (the server) as part of the MultiplayerPackets::Connect packet.
 4. Server will compare the client’s version-hash with its own to make sure it matches
     1. If there's a multiplayer system version mismatch then...
         1. A version mismatch packet is exchanged containing the version hash of each individual auto-component in order that the server and client know exactly which components are out-of-date.
