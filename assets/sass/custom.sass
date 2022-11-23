@@ -1581,7 +1581,20 @@ body.docs-mobile-menu-open .docs-sidebar
       transform: scale(.9)
 
 
-// layouts/section-nav.html 
+// layouts/section-nav.html version-switcher
+
+.version-switcher
+  font-size: 0.9rem
+
+  select
+    option
+      font-size: 0.8rem
+
+    option.selectedVersion
+      color: $o3de-blue
+      font-weight: bold
+
+// layouts/section-nav.html nav
 
 nav.docs-nav > ul > li:not(.currentAncestorCategory)
     @include media-breakpoint-up(xl)
