@@ -11,7 +11,7 @@ For example, consider a server that is running a particular build of a multiplay
 
 Servers and clients must be running the same version of all the multiplayer components (components which communicate to each other over the network); any differences may lead to unexpected behavior. 
 
-O3DE networking provides multiplayer version checks to identify and guard against this unexpected behavior.
+**Open 3D Engine (O3DE)** networking provides multiplayer version checks to identify and guard against this unexpected behavior.
 
 ## How to enable the Multiplayer Version Mismatch feature:
 Multiplayer version mismatch detection is enabled automatically inside the [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/). If two multiplayer endpoints connect with different versions, a Multiplayer::VersionMismatchEvent [AZ::Event](/docs/user-guide/programming/az-event/) will be triggered.  In addition, information about which auto-components are mismatched will be printed to the console and written to logs to aid debugging.
