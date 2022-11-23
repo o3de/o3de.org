@@ -24,7 +24,7 @@ Multiplayer version mismatch detection is enabled automatically inside the [Mult
 **bg_viewportConnectionStatus** *true | false* If true, the viewport connection status system will display on-screen warnings whenever important  multiplayer events occur; this includes version mismatches.
 
 ## How it works behind the scenes:
-1. AzAutoGen creates a unique 64-bit hash value for each auto-component xml it digests.
+1. AzAutoGen creates a unique 64-bit hash value for each auto-component XML file that it digests.
     1. The 64-bit hash will be stored in the `ComponentData` class that’s passed to the global `MultiplayerComponentRegistry`.
 2. During application start up, as all the gems are registering their components with the MultiplayerComponentRegistry, the MultiplayerComponentRegistry will combine each component’s hash to create its own 64-bit system version hash.
 3. On a connection event the MultiplayerComponentRegistry’s version hash is sent from the connector (typically the client) to the acceptor (the server) as part of the MultiplayerPackets::Connect packet.
