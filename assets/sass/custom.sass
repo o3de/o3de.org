@@ -1531,9 +1531,9 @@ $os-selector-mobile-height: 48px
 
   @include media-breakpoint-up(xl)
     position: sticky
-    top: 4rem
+    top: 4rem // this is recalculated in app.js updateSidebarAttributes() function
     z-index: 1000
-    height: calc(100vh - 4rem)
+    height: calc(100vh - 4rem) // this is recalculated in app.js updateSidebarAttributes() function
     flex: 0 1 320px
     order: 0
     box-sizing: border-box
