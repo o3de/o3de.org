@@ -7,7 +7,7 @@ weight: 900
 
 In order to keep the multiplayer simulation in sync, it's important that all connected multiplayer endpoints are running the same multiplayer version.
 
-For example, consider a server that is running a particular build of a multiplayer game. If the client is then updated and has changes to update its networked components, the server may not know how to handle updated network properties or even be able to serialize network packets correctly. 
+For example, consider a server that is running a particular build of a multiplayer game. If an updated client connects with changes to its network components, the server may not know how to handle the updated network properties, or how to serialize network packets correctly.
 
 Servers and clients must be running the same version of all the multiplayer components (components which communicate to each other over the network); any differences may lead to unexpected behavior. 
 
