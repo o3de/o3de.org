@@ -2,6 +2,7 @@
 linktitle: Build Generated Source Files
 title: Build Generated Source Files with AzAutoGen
 description: Learn how to integrate AzAutoGen into Open 3D Engine (O3DE), so it can generate source files when building a target using CMake.
+weight: 150
 ---
 
 For complicated systems that use a lot of boilerplate code, it's useful to perform some kind of light automation to generate source files where possible. To generate files during builds, **Open 3D Engine (O3DE)** uses the **AzAutoGen** tool through a CMake command. O3DE stores the output source code in your CMake build directory and picks up the code to build it in your target.
@@ -142,5 +143,5 @@ ly_add_autogen(
 | Title | Description |
 |-|-|
 | [Automate Source Generation from Templates with AzAutoGen](/docs/user-guide/programming/autogen/) | How to generate new types of network packets for O3DE. |
-| [Networking Auto-packets](/docs/user-guide/networking/autopackets/) | How to create new packet types for `AzNetworking` using AzAutoGen. |
+| [Networking Auto-packets](/docs/user-guide/networking/aznetworking/autopackets/) | How to create new packet types for `AzNetworking` using AzAutoGen. |
 | [Creating Custom Nodes in Script Canvas](/docs/user-guide/scripting/script-canvas/programmer-guide/custom-nodes/) | How to create custom nodes in Script Canvas using XML definitions and turn the nodes into code with AzAutoGen. |toGen. |
