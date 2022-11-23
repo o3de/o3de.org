@@ -12,7 +12,7 @@ O3DE networking provides multiplayer version checks to identify and guard agains
 Multiplayer version mismatch detection is enabled automatically inside the [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/). If two multiplayer endpoints connect with different versions, a Multiplayer::VersionMismatchEvent [AZ::Event](/docs/user-guide/programming/az-event/) will be triggered.  In addition, information about which auto-components are mismatched will be printed to the console and written to logs to aid debugging.
 
 ## Relevant Console Variables (CVars)
-**sv_versionMismatch_autoDisconnect**  *true | false* Determines if a mismatched connection with automatically terminate. It's recommended to keep this true; even minor differences between the version of a multiplayer component can cause unexpected behavior.
+**sv_versionMismatch_autoDisconnect**  *true | false* Determines if a mismatched connection will automatically terminate. It's recommended to keep this true; even minor differences between the version of a multiplayer component can cause unexpected behavior.
 
 **sv_versionMismatch_sendManifestToClient**  *true | false* Determines if the server will send all its individual multiplayer component version information to the client when there's a mismatch. Upon receiving the information, the client will print which components are different to the console. It's recommended to set to false for release builds. This is to prevent clients having knowledge to any multiplayer component information that should be kept private (component names and version hashes).
 

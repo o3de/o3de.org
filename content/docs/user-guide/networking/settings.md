@@ -80,6 +80,8 @@ The following [console variables](/docs/user-guide/appendix/cvars/) control serv
 | sv_isDedicated          | Whether the host command creates an independent or client hosted server.        | True    |                      |
 | sv_isTransient          | Whether a dedicated server shuts down if all existing connections disconnect.   | True    ||
 | sv_serverSendRateMs     | Minimum number of milliseconds between each network update.                     | 50 ms   || 
+| sv_versionMismatch_autoDisconnect          | Determines if a mismatched connection will automatically terminate. It's recommended to keep this true; even minor differences between the version of a multiplayer component can cause unexpected behavior. | True   ||
+| sv_versionMismatch_sendManifestToClient    | Determines if the server will send all its individual multiplayer component version information to the client when there's a mismatch. Upon receiving the information, the client will print which components are different to the console. It's recommended to set to false for release builds. This is to prevent clients having knowledge to any multiplayer component information that should be kept private (component names and version hashes). | True   ||
 
 ### Server to client connection settings
 | Setting                                                | Description                                                                                                                                     | Default    | Notes |
