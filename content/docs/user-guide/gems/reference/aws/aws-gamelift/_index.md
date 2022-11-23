@@ -27,7 +27,7 @@ The **AWS GameLift** Gem provides the following features:
 
 For a better understanding of the topics covered in this AWS GameLift Gem guide, we recommend reviewing the following:
 - [What Is Amazon GameLift? (Amazon GameLift Developer Guide)](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-intro.html)
-- [FlexMatch](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-intro.html) - to understand how matchmaking and GameLift works.
+- [FlexMatch](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-intro.html) - to understand how matchmaking and Amazon GameLift works.
 - [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/) - to understand how Multiplayer in O3DE works.
 - [Networking](/docs/user-guide/networking/)
 
