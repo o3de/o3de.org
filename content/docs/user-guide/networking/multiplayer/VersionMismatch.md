@@ -1,4 +1,9 @@
-# Multiplayer Version Mismatch
+---
+linkTitle: Version Mismatch
+title: Multiplayer Version Mismatch
+description: Learn how to detect multiplayer version mismatch in Open 3D Engine (O3DE).
+weight: 900
+---
 
 In order to keep the multiplayer simulation in sync, it's important that all connected multiplayer endpoints are running the same multiplayer version.
 
