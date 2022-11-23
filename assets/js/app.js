@@ -191,6 +191,15 @@ function updateSelectElement(currentOrigin) {
     }
 }
 
+function updateSidebarAttributes() {
+    // If an info or warning banner is present, adjust the top and height of the left nav so that it doesn't scroll when scrolling the contents of the page.
+    if ($("#preview-info").length > 0 || $("#version-warning").length > 0) {
+        var bannerHeight = $("#docs-banners").height();
+        $(".docs-sidebar").css("top", bannerHeight);
+        $(".docs-sidebar").css("height", window.innerHeight - bannerHeight);
+    }
+}
+
 // For docs navbar, switch to a different published docset.
 $(function() {
     // Update the dropdown for the version switcher, based on the origin part of the URL.
@@ -211,10 +220,11 @@ $(function() {
         }
     });
 
-    // If an info or warning banner is present, adjust the top of the left nav so that it doesn't scroll when scrolling the contents of the page.
-    if ($("#preview-info").length > 0 || $("#version-warning").length > 0) {
-        $(".docs-sidebar").css("top", $(".sticky-top").height());
-    }
+    updateSidebarAttributes();
+});
+
+$(window).on("resize", function() {
+    updateSidebarAttributes();
 });
 
 $(function() {
