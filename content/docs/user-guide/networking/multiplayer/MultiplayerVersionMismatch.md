@@ -2,7 +2,7 @@
 
 In order to keep the multiplayer simulation in sync, it's important that all connected multiplayer endpoints are running the same multiplayer version.
 
-For example, consider a server that is running a particular build of a multiplayer game. If the client is then updated  and has changes to update its networked components, the server may not know how to handle updated network properties or even be able to serialize network packets correctly. 
+For example, consider a server that is running a particular build of a multiplayer game. If the client is then updated and has changes to update its networked components, the server may not know how to handle updated network properties or even be able to serialize network packets correctly. 
 
 Servers and clients must be running the same version of all the multiplayer components (components which communicate to each other over the network); any differences may lead to unexpected behavior. 
 
@@ -14,7 +14,7 @@ Multiplayer version mismatch detection is enabled automatically inside the [Mult
 ## Relevant Console Variables (CVars)
 **sv_versionMismatch_autoDisconnect**  *true | false* Determines if a mismatched connection with automatically terminate. It's recommended to keep this true; even minor differences between the version of a multiplayer component can cause unexpected behavior.
 
-**sv_versionMismatch_sendManifestToClient**  *true | false* Determines if the server will send all its individual multiplayer component version information to the client when there's a mismatch. Upon receiving the information, the client will print which components are different to the console. Its recommended to set to false for release builds. This is to prevent clients having knowledge to any multiplayer component information that should be kept private (component names and version hashes).
+**sv_versionMismatch_sendManifestToClient**  *true | false* Determines if the server will send all its individual multiplayer component version information to the client when there's a mismatch. Upon receiving the information, the client will print which components are different to the console. It's recommended to set to false for release builds. This is to prevent clients having knowledge to any multiplayer component information that should be kept private (component names and version hashes).
 
 **bg_viewportConnectionStatus** *true | false* If true, the viewport connection status system will display on-screen warnings whenever important  multiplayer events occur; this includes version mismatches.
 
