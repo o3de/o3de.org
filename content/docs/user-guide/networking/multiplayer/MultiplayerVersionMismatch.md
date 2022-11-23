@@ -9,7 +9,7 @@ Servers and clients must be running the same version of all the multiplayer comp
 O3DE networking provides multiplayer version checks to identify and guard against this unexpected behavior.
 
 ## How to enable the Multiplayer Version Mismatch feature:
-Multiplayer version mismatch detection is enabled automatically inside the [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/). If two multiplayer endpoints connect with different versions, a Multiplayer::VersionMismatchEvent [AZ::Event](/docs/user-guide/programming/az-event/) will be triggered, and debug logs containing information about which auto-components are mismatched will be printed to the console.
+Multiplayer version mismatch detection is enabled automatically inside the [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/). If two multiplayer endpoints connect with different versions, a Multiplayer::VersionMismatchEvent [AZ::Event](/docs/user-guide/programming/az-event/) will be triggered.  In addition, information about which auto-components are mismatched will be printed to the console and written to logs to aid debugging.
 
 ## Relevant Console Variables (CVars)
 **sv_versionMismatch_autoDisconnect**  *true | false* Determines if a mismatched connection with automatically terminate. It's recommended to keep this true; even minor differences between the version of a multiplayer component can cause unexpected behavior.
