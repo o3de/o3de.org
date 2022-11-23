@@ -169,7 +169,7 @@ function updateSelectElement(currentOrigin) {
         if (currentValue == currentOrigin) {
             originMatched = true;
             $(this).attr("selected", "selected");
-            $(this).css("class", "selectedVersion");
+            $(this).attr("class", "selectedVersion");
         }
     });
 
