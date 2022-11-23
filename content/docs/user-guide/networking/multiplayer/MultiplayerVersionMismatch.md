@@ -2,7 +2,11 @@
 
 In order to keep the multiplayer simulation in sync, it's important that all connected multiplayer endpoints are running the same multiplayer version.
 
-For example, suppose a server is running a build an old multiplayer player component. When a client's player tries to sends new network input to the server, the server won't know how to handle the input. Servers and clients must be running the same version of all the multiplayer components (components which communicate to each other over the network); any differences can lead to unexpected behavior. The multiplayer versioning feature will warn users upon finding a mismatch.
+For example, consider a server that is running a particular build of a multiplayer game. If the client is then updated  and has changes to update its networked components, the server may not know how to handle updated network properties or even be able to serialize network packets correctly. 
+
+Servers and clients must be running the same version of all the multiplayer components (components which communicate to each other over the network); any differences may lead to unexpected behavior. 
+
+O3DE networking provides multiplayer version checks to identify and guard against this unexpected behavior.
 
 ## How to enable the Multiplayer Version Mismatch feature:
 Multiplayer version mismatch detection is enabled automatically inside the [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/). If two multiplayer endpoints connect with different versions, a Multiplayer::VersionMismatchEvent [AZ::Event](/docs/user-guide/programming/az-event/) will be triggered, and debug logs containing information about which auto-components are mismatched will be printed to the console.
