@@ -29,7 +29,7 @@ Each of the terrain components can be replaced with new components that meet the
 
 Any replacement components need to support the following:
 
-* Implement the request bus that matches the component being replaced (`TerrainSpawnerRequestBus`, ``TerrainAreaHeightRequestBus`, TerrainAreaSurfaceRequestBus`, etc).
+* Implement the request bus that matches the component being replaced (`TerrainSpawnerRequestBus`, `TerrainAreaHeightRequestBus`, `TerrainAreaSurfaceRequestBus`, etc).
 * Declare that it implements each service that matches the component being replaced (`TerrainAreaService`, `TerrainHeightProviderService`, `TerrainSurfaceProviderService`, etc) in `GetProvidedServices`.
 * Support thread safety.
 * Call `OnCompositionChanged` or `OnCompositionRegionChanged` whenever any data within the component changes.
@@ -37,7 +37,7 @@ Any replacement components need to support the following:
 
 ## Terrain physics integration
 
-The terrain physics support is provided through a divided component system. One half is the `TerrainPhysicsCollider`, which knows about the generic `TerrainDataRequestBus` for terrain data and the generic `HeightfieldProvider` buses for physics communication, and the other half is the `PhysXHeightfieldCollider`, which knows about PhysX and heightfields, but not about terrain. To integrate terrain with a new physics system, a new `*HeightfieldCollider` component would need to be implemented to replace the PhysX version that works with the `HeightfieldProvider` buses and with the new physics system.
+The terrain physics support is provided through a divided component system. One half is the `TerrainPhysicsCollider`, which knows about the generic `TerrainDataRequestBus` for terrain data and the generic `HeightfieldProvider` buses for physics communication, and the other half is the `PhysXHeightfieldCollider`, which knows about PhysX and heightfields, but not about terrain. To integrate terrain with a new physics system, a new `HeightfieldCollider` component would need to be implemented to replace the PhysX version that works with the `HeightfieldProvider` buses and with the new physics system.
 
 ## Terrain renderer
 
