@@ -54,7 +54,7 @@ This diagram shows a sample communication flow as a gradient component used for 
                                                                                +---------------+
 +------------+  OnCompositionChanged()   +------------------+  RefreshArea()   | +-----------+ |
 |  Gradient  +-------------------------->|  Terrain Height  +----------------->| |  Terrain  | |
-+------------+                           |  Gradient list   |                  | |  Systen   | |
++------------+                           |  Gradient list   |                  | |  System   | |
                                          +------------------+                  | +-----------+ |
                                                                                +-------+-------+
                                                                                        |                                            +---------------+
