@@ -33,4 +33,4 @@ Multiplayer version mismatch detection is enabled automatically inside the [Mult
         1. A version mismatch packet is exchanged containing the version hash of each individual auto-component in order for the server and client to know exactly which components are out-of-date.
         2. Error logs are reported.
         3. An [AZ::Event](/docs/user-guide/programming/az-event/) is broadcast using `AZ::Interface<IMultiplayer>::Get()->AddVersionMismatchHandler)`.
-        4. The connection is terminated (if sv_versionMismatch_autoDisconnect is enabled). 
+        4. The connection is terminated (if `sv_versionMismatch_autoDisconnect` is enabled). 
