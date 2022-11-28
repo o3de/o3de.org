@@ -9,7 +9,7 @@ In order to keep the multiplayer simulation in sync, it's important that all con
 
 For example, consider a server that is running a particular build of a multiplayer game. If an updated client connects with changes to its network components, the server may not know how to handle the updated network properties, or how to serialize network packets correctly.
 
-Servers and clients must be running the same version of all the multiplayer components (components which communicate to each other over the network); any differences may lead to unexpected behavior. 
+Servers and clients must be running the same version of all the multiplayer components (components which communicate to each other over the network); any difference may lead to unexpected behavior. 
 
 **Open 3D Engine (O3DE)** networking provides multiplayer version checks to identify and guard against this unexpected behavior.
 
