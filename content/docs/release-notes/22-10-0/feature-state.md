@@ -151,7 +151,7 @@ For an up-to-date feature grid and full notes, open the [Feature State Form](htt
 
 | Module | Feature | Functional | Content | Code/API | Performance | Platform | Github Link | Doc Link |
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Deferred Fog | 🟢 Complete | 🟡 Partial | 🟢 Complete | 🟢 Stable | 🟢 Optimized | All  | | [Link](https://docs.o3de.org/docs/user-guide/components/reference/atom/deferred-fog/) |
+| Deferred Fog | 🟢 Complete | 🟡 Partial | 🟢 Complete | 🟢 Stable | 🟢 Optimized | All  | | [Link](https://o3de.org/docs/user-guide/components/reference/atom/deferred-fog/) |
 | Tonemapping | 🟢 Complete | 🟢 Complete | 🟢 Complete | 🟢 Stable | 🟡 Needs Optimization | All  | | [Link](https://www.o3de.org/docs/atom-guide/atom-sample-viewer/graphics-feature-samples/#tonemapping) |
 | Direct Lighting / Area Lights | 🟢 Complete | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🟡 Needs Optimization | All  | | [Link](https://www.o3de.org/docs/user-guide/components/reference/atom/light/) |
 | Meshes | 🟡 Active | 🟡 Partial | 🟢 Complete | 🟢 Stable | 🟡 Needs Optimization | All  | | [Link](https://www.o3de.org/docs/atom-guide/features/#meshes) |
@@ -212,7 +212,7 @@ For an up-to-date feature grid and full notes, open the [Feature State Form](htt
 | Multiplayer component API | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
 | Local Prediction | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
 | Server Side Rollback | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
-| Play in Editor Mode | 🟡 Active | 🟢 Complete | 🟠 Partial | ❌ Unproven | 🟡 Needs Optimization | | | [Link](https://docs.o3de.org/docs/user-guide/networking/multiplayer/test-in-editor/) |
+| Play in Editor Mode | 🟡 Active | 🟢 Complete | 🟠 Partial | ❌ Unproven | 🟡 Needs Optimization | | | [Link](https://o3de.org/docs/user-guide/networking/multiplayer/test-in-editor/) |
 | Hosting/Joining a Game | 🟡 Active | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
 | Network property support | 🟢 Complete | 🟢 Complete | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | [Link](https://www.o3de.org/docs/user-guide/networking/aznetworking/autopackets/) |
 | RPC support | 🟡 Active | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
