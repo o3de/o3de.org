@@ -33,6 +33,6 @@ Note that code issues should be filed against the main O3DE repository, while do
 
 ### Submitting Documentation Pull Requests
 
-If you're fixing an issue in the existing documentation, you should submit a PR against the `main` branch of `o3de.org` repo. For more information about creating a pull request, refer to the [Submitting docs](https://o3de.org/docs/contributing/to-docs/get-started#submitting-docs).
+If you're fixing an issue that's relevant to the latest release of O3DE, you should submit a PR that targets the `main` branch of the `o3de.org` repo. Issues that are relevant only to other versions of O3DE (such as `development`) should target the matching branch of the `o3de.org` repo. For more information about creating a pull request, refer to the [Submitting docs](https://o3de.org/docs/contributing/to-docs/get-started#submitting-docs).
 
 For more information, see [contributing to O3DE documentation](https://o3de.org/docs/contributing/to-docs/).
