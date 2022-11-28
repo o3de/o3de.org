@@ -35,7 +35,7 @@ Supplemental information, such as using the component across different workflows
 
 ## Setting up repository and downloading component template
 
-To contribute to O3DE documentation, you must complete the steps in [Setting up a local o3de.org repo](./get-started#setting-up-a-local-o3deorg-repo). You can do this before or after writing your component reference document. However, you must set this up to place your document and images in the right folder.
+To contribute to O3DE documentation, you must complete the steps in [Setting up a local o3de.org repo](../get-started#setting-up-a-local-o3deorg-repo). You can do this before or after writing your component reference document. However, you must set this up to place your document and images in the right folder.
 
 In a new tab, navigate to the file [component reference template](https://raw.githubusercontent.com/o3de/sig-docs-community/main/doc-templates/component-reference.md) in the o3de/sig-docs-community repository and save it to your local machine. Open the template in a text editor and refer to this page as you fill it out.
 

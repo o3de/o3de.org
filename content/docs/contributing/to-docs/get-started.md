@@ -6,7 +6,7 @@ toc: true
 weight: 200
 ---
 
-This section will help you get started on contributing to Open 3D Engine (O3DE) documentation. You'll learn how to set up your writing environment and about the processes you need to get your documentation from text editor to the official O3DE documentation. 
+This section will help you get started on contributing to **Open 3D Engine (O3DE)** documentation. You'll learn how to set up your writing environment and about the processes you need to get your documentation from text editor to the official O3DE documentation. 
 
 O3DE documentation uses the [fork and pull model](https://en.wikipedia.org/wiki/Fork_and_pull_model) for contributions. As a contributor, you maintain a fork (your own repository of the O3DE documentation) on GitHub, and work locally to edit documentation. You then submit PRs from your fork for review.
 
@@ -26,7 +26,7 @@ Whatever method you choose, ensure that you're completing the correct operations
 
 ## Setting up a local o3de.org repo
 
-In this section, you'll learn to create your own fork of the O3DE documentation. 
+In this section, you'll learn how to create your own fork of the O3DE documentation. 
 
 
 ### Create a fork
@@ -89,7 +89,7 @@ There are two important branches in `o3de.org` repo: `main` and `development`. D
 | `main` | If you're contributing docs for a feature that already exists in a stable version of O3DE, or [`o3de:main`](https://github.com/o3de/o3de/tree/main). |
 | `development` | If you're contributing docs for a feature that's still in development, or in [`o3de:development`](https://github.com/o3de/o3de/tree/development). |
 
-Decide ahead of time which branch you want to contribute your docs to. It's important to know because it can help you keep your local changes synced with correct upstream branch, especially when you're doing one of the following things: 
+Decide ahead of time which branch you want to contribute your docs to. It's important to know because it can help you keep your local changes synced with the correct upstream branch, especially when you're doing one of the following things: 
 - Creating a new branch
 - Syncing your branch
 - Creating a PR
@@ -101,7 +101,7 @@ Throughout the writing process, in your clone, you must *sync* whatever branch y
 
 To sync your branch:
 
-1. Checkout the branch that you want to sync.
+1. Checkout the local branch that you want to sync.
 
     ```shell
     git checkout <branch-name>
@@ -116,7 +116,7 @@ To sync your branch:
 1. Pull the latest commits from the appropriate upstream branch into your local branch.
 
     ```shell
-    git merge upstream upstream/[main|development]
+    git merge upstream/[main|development]
     ```
 
 Alternatively, the following [`git pull`](https://git-scm.com/docs/git-pull/2.22.0) command fetches and merges: 
@@ -127,7 +127,7 @@ git pull upstream [main|development]
 As an example workflow, you may want to keep your fork's `main` branch synced with the source `o3de.org:main` branch. The set of operations to do that look like this: 
 
 ```shell
-git checkout origin main
+git checkout main
 git fetch upstream
 git merge upstream/main
 git push origin main
@@ -136,7 +136,7 @@ git push origin main
 
 ## Writing process
 
-This section covers the technical details of the writing process, such as setting up you're writing environment. 
+This section covers the technical details of the writing process, such as setting up your writing environment. 
 
 ### Create a branch
 
@@ -155,12 +155,7 @@ To create a branch that's already synced with the latest:
 1. Create a branch that points at the latest `upstream/main` or `upstream/development`, and switch to that branch.
 
     ```shell
-    git branch <branch-name> upstream/[main|development]
-    git checkout <branch-name>
-
-    # Or
-
-    git checkout -b <branch-name> upstream/[main|development]
+    git switch -c <branch-name> upstream/[main|development]
     ```
 
     {{< note >}}
@@ -178,7 +173,7 @@ When naming branches, we recommend a short dash-separated name that clearly deno
 
 As you write your docs iteratively and make changes as part of the PR process, you will cycle through the following Git operations: 
 
-1. **`git fetch upstream`** and **`git merge upstream [main|development]`** -- Keep your branch up-to-date with the latest commits.
+1. **`git fetch upstream`** and **`git merge upstream/[main|development]`** -- Keep your branch up-to-date with the latest commits.
 1. Write your docs using a text editor. Ensure that your docs are technically accurate and follow the [O3DE Style Guide](./style-guide/). 
 1. **`git add`** -- Adds your files to local Git staging. Do not add *any* files that are not work you are submitting for review.
 1. **`git commit -s -m "<message>"`** --  Writes your changes to the branch history in preparation for submission. `-s` signs off DCO for your commit. Your initial commit message should reference the corresponding GitHub issue and provide a clear assessment of the work you did.
@@ -200,16 +195,16 @@ For GitHub accounts created prior to July 18, 2017, use `username@users.noreply.
 
 ### Preview your docs
 
-As you write, you should preview of your docs to ensure it's in the correct format. Because the o3de.org website is built on Hugo, the best way to preview your docs is by running Hugo on your local machine. For information on how to set up and use Hugo, refer to the o3de.org [`README.md`](https://github.com/o3de/o3de.org) file. 
+As you write, you should preview of your docs to ensure it's in the correct format. Because the o3de.org website is built on Hugo, the best way to preview your docs is by running Hugo on your local machine. For information on how to set up and use Hugo, refer to the o3de.org [`README.md`](https://github.com/o3de/o3de.org#readme) file. 
 
 Additionally, a quick way to preview your docs is by using VS Code's [Editor and preview synchronization](https://code.visualstudio.com/docs/languages/markdown#_editor-and-preview-synchronization) feature for Markdown. This feature is limited to VS Code's Markdown support, so it won't render any features that are unique to Hugo, such as shortcodes. 
 
-Finally, you can preview and share a preview of your docs when they are in a PR. Netlify deploys a preview for each PR. This takes a few minutes to deploy after creating the PR, and refreshes everytime you push a commit. You can access the deployed preview at the bottom of the PR webpage: Find **netlify/o3deorg/deploy-preview — Deploy Preview ready!** and click **Details**. 
+Finally, you can view and share a preview of your docs when they are in a PR. The Netlify web deployment service creates a preview for each PR. This takes a few minutes to deploy after creating the PR, and refreshes every time you push a commit. You can access the deployed preview at the bottom of the PR webpage: Find **netlify/o3deorg/deploy-preview — Deploy Preview ready!** and click **Details**. 
 
 
 ## Submitting docs
 
-When you make changes or create new docs, you must create a pull request (PR) for review before the changes can be merged into `o3de.org:main`. PRs allow peer contributors to review contributions for several potential issues, including technical accuracy, spelling, grammar, clarity, and style. 
+When you make changes or create new docs, you must create a pull request (PR) for review before the changes can be merged into `o3de.org`. PRs allow peer contributors to review contributions for several potential issues, including technical accuracy, spelling, grammar, clarity, and style. 
 
 The current list of active PRs is here [O3DE repository pull requests (PRs)](https://github.com/o3de/o3de.org/pulls).
 
@@ -222,7 +217,7 @@ PRs are created in the GitHub web interface from your branch. Go to your fork on
 
 1. In the **Comparing changes** page, you will compare your fork's branch against the remote source's branch. Ensure that the **base**, which you're comparing against, points to `o3de/o3de.org:main` or `o3de/o3de.org:development`. The **head repository** should be your fork. Then, in the **compare** dropdown, choose the branch that you want to submit.
 
-1. Verify that the changed files contains only the changes you want to submit. Only the commits you made should be listed. If there are more commits than you expected, stop here and make sure to properly sync your branch.
+1. Verify that the changed files contains only the changes you want to submit. Only the commits you made should be listed. If there are more commits than you expected, stop here and make sure to properly sync your branch using the fetch, merge, and push commands from the [iteration steps](#sync-write-add-commit-and-push) explained earlier.
 
 1. Choose the green **Create pull request** button to open the **Open a pull request** page. 
 
@@ -243,7 +238,7 @@ Feedback comes in the form of comments that you can address by editing files in 
 * To commit multiple suggestions, use the batch functionality to integrate multiple suggestions in a single commit.
 * Do try to acknowledge all the feedback you are given. This doesn't mean to integrate every comment and commit every suggestion. It simply means to avoid resolving comments and suggestions without action or a response. Embrace collaboration.
 * When addressing comments, maintain the relative conversation in the PR, edit the topics as necessary, and commit the changes to your fork/branch. Your new commits will be automatically added to the PR.
-* Make sure to request a re-review of your new commits if required. More guidance on how to traverse our PR process is coming!
+* Make sure to request a re-review of your new commits if required.
 
 For more information on incorporating PR feedback, refer to [Incorporating feedback in your pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/incorporating-feedback-in-your-pull-request).
 
