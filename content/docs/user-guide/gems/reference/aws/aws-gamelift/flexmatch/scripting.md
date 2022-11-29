@@ -106,9 +106,3 @@ OnMatchError is fired when match is processed with error.
 OnMatchFailure is fired when match is failed to complete.
 
 ![OnMatchFailure node](/images/user-guide/gems/reference/aws/aws-gamelift/onmatchfailure.PNG)
-
-
----
-Previous topic: [FlexMatch C++ API](cpp-api/)
-
-Next topic: [AWS GameLift Gem Advanced Topics](/docs/user-guide/gems/reference/aws/aws-gamelift/advanced-topics/)

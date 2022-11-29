@@ -6,6 +6,9 @@ toc: true
 weight: 300
 ---
 
+A game session is defined as the time your server process is available to host players. Typically, a session ends when a game specific condition is met, which may include all players have left the session, player(s) reach a win condition, or a time period has expired. 
+
+For GameLift a session is specifically an instance of your game running on Amazon GameLift that is ready to host players. The session ends when your server notifies GameLift to end the session.
 
 ## Topics
 

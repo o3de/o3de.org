@@ -89,7 +89,7 @@ You must include the AWS GameLift Gem static library in your project's CMake bui
 
 ## 3. Integrate game and dedicated server
 
-Check [Session Management Integration](session-management/integration/) for managing game sesions within your game and dedicated server.
+Check [Session Management Integration](session-management/integration/) for managing game sessions within your game and dedicated server.
 To support the optional FlexMatch feature, check [FlexMatch Integration](flexmatch/integration/).
 
 
@@ -113,10 +113,3 @@ Alternatively, you can test your server's GameLift integration locally using Gam
 ## 5. Set up the AWS CLI and AWS CDK
 
 The AWS GameLift Gem provides a sample AWS Cloud Development Kit (AWS CDK) application that you can use to model GameLift resources and deploy your server to GameLift. To do this, you must have the [AWS Command Line Interface (AWS CLI)](https://aws.amazon.com/cli/) and [AWS CDK](https://aws.amazon.com/cdk/) installed on your local machine.
-
-
----
-
-Previous topic: [AWS GameLift Gem feature overview](/docs/user-guide/gems/reference/aws/aws-gamelift)
-
-Next topic: [Session Management](session-management/)
