@@ -15,7 +15,7 @@ A "terrain system" is a system that defines the geometry, color, and surface typ
 * Authoring tools and workflows that support creating / modifying data and mapping it to regions
 * Queryable data that can be used by both simulation and rendering
 * Specialized rendering as needed to support efficient, high-quality terrain visualization across the view distance
-* One or more physics surfaces that can be used to provide a "physical" simulation of the terrain in the virtual world
+* One or more physics surfaces that can provide a "physical" simulation of the terrain in the virtual world
 
 ## Design tenets
 
