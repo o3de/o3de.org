@@ -48,8 +48,8 @@ After, the AzNetworking layer becomes aware that the world was updated. This occ
 ### Types of network properties
 
 Network properties have two important fields: `ReplicateFrom` and `ReplicateTo`. 
-Together, these define which role can replicate to which role. You can only replicate property values *from* Authority and Autonomous roles. Under the server-authority model of O3DE, this ensures that you never accidentally replicate from an unprivileged client. 
-Properties can be replicated *to* any role, since all active clients in the session must share information and some may not necessarily need to be used in the server-authoritative model.
+Together, these define which role can replicate to which role. You can only replicate property values *from* Authority and Autonomous roles. A `ReplicateFrom` Authority relationship creates a server-authority model, which ensures that you never accidentally replicate from an unprivileged client. 
+Properties can be replicated *to* any role, since all participants in the session may need information from any other participant.
 
 | Field | Description | Values | 
 | - | - | - |
@@ -57,7 +57,7 @@ Properties can be replicated *to* any role, since all active clients in the sess
 | `ReplicateTo` | Tells the network which role can receive information about the changes that were made to this property. | Server, Authority, Autonomous, Client | 
 
 
-The following are four types of networking properties with a valid "from and to" relationship that you can define, and their possible use cases:
+The following are four types of networking properties with a valid "from and to" relationship and their possible use cases:
 
 - **Authority-to-Client**: For handling client, or "simulated", properties.
 
@@ -86,13 +86,13 @@ Similar to network properties, RPCs have two important fields: `InvokeFrom` and 
 | `InvokeFrom` | Tells the network which role invokes this RPC. | Server, Autonomous, Client | 
 | `HandleOn` | Tells the network which roles handles this RPC. If Authority, the RPC is handled by the server that has authority over that entity. If Autonomous, the RPC is handled only by the relevant player's local client. If Client, the RPC is handled on all clients. | Authority, Autonomous, Client | 
 
-The following are four types of RPCs with a valid "invoked from and handled on" relationship that you can define, and their possible use cases:
+The following are four types of RPCs with a valid "invoked from and handled on" relationship and their possible use cases:
 
 - **Authority-to-Autonomous**: For example, sending corrections about the game state to the user.
 
 - **Authority-to-Client**: Authority sends calls to all the clients. For example, sending information about particle effects. 
 
-- **Server-to-Authority**: This is required to communicate information between entities. For example, suppose in a multi-server setup, EntityA is owned by ServerA and EntityB is owned by ServerB. If EntityA communicates directly to EntityB, EntityA will be talking to a proxy, not the real EntityB. Server-to-Authority ensures that messages always find the entity with authority. when a player wants to deal damage, Autonomous informs the Server, and the Server sends the DealDamage function to Authority. 
+- **Server-to-Authority**: This is required to communicate information between entities. For example, suppose in a multi-server setup, EntityA is owned by ServerA and EntityB is owned by ServerB. If EntityA communicates directly to EntityB, EntityA will be talking to a proxy, not the real EntityB. Server-to-Authority ensures that messages always find the entity with authority. When a player wants to deal damage, Autonomous informs the Server, and the Server sends the DealDamage function to Authority. 
 
 - **Autonomous-to-Authority**: Used for sending user settings information that affects user input and is used during input-process time rather than input-creation time, such as mouse sensitivity and input controls. 
 
