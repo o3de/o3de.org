@@ -48,7 +48,7 @@ With this design pattern, the terrain system is essentially a "passive" system t
 
 There are some pros and cons to this design. The main benefits are design simplicity for each individual piece, decoupled systems, and easy extensibility. The main downside is that it's very easy to have redundant computations caused from multiple decoupled systems that all request the same set of terrain data at the same time. There is also a heavier set of design requirements on each piece of the system to ensure that they work well in parallel, asynchronous environments.
 
-This diagram shows a sample communication flow as a gradient component used for height gets activated. This particular example demonstrates both change notifications and data requests in a single series of actions.
+This diagram shows a sample communication flow as a Gradient component used for height gets activated. This particular example demonstrates both change notifications and data requests in a single series of actions.
 
 ```goat
                                                                                +---------------+
