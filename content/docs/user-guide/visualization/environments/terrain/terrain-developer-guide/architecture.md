@@ -25,7 +25,7 @@ At the highest level, the Terrain system consists of a Terrain Gem that relies o
         '---------------------------------'     '--------'
 ```
 
-The **Gradient Signal Gem** provides components that map data in the 0-1 range to world positions. The gradient components are used for defining height data and surface weight data. In particular, the **Image Gradient** provides a convenient workflow for importing and using heightmaps and "splat maps" (surface weight maps) that are generated from external terrain authoring tools.
+The **Gradient Signal Gem** provides components that map data in the 0-1 range to world positions. The gradient components are used for defining height data and surface weight data. In particular, the **Image Gradient** component provides a convenient workflow for importing and using heightmaps and "splat maps" (surface weight maps) that are generated from external terrain authoring tools.
 
 The **Surface Data Gem** provides a way to define conceptual geometric shells with sets of arbitrary tags which can then be referenced from other systems (like Dynamic Vegetation) that operate on generic surfaces. The terrain system uses the Surface Data tags as the naming system for terrain surface types. It also implements a Surface Data component to make the terrain show up as a surface within the Surface Data system. This enables the Dynamic Vegetation system to treat terrain as a "plantable surface".
 
