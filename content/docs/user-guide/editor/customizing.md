@@ -1,7 +1,8 @@
 ---
-description: ' Customize O3DE Editor by docking windows and toolbars, customizing
-  toolbars and menus, and updating editor settings and global preferences for Open 3D Engine. '
-title: Customizing O3DE Editor
+linkTitle: Customizing Editor Layout
+title: Customizing O3DE Editor Layout
+description: Customize O3DE Editor by docking windows and toolbars, customizing toolbars and menus, and updating editor settings and global preferences for Open 3D Engine.
+weight: 150
 ---
 
 You can customize your workspace by adjusting how the windows and tools are docked, customizing which toolbars and menus display, and updating the global editor settings.
@@ -14,115 +15,94 @@ To change the size setting for the toolbar icon, open the `Editor.cfg` file and 
 
 When you drag a window or toolbar over an interface element or the edges of the editor, docking targets appear to show you where you can dock them. These targets appear for the top, bottom, left, and right quadrants of the pane. You can dock windows relative to any open pane, whether it is already docked, floating as a tab, or split in a column or row.
 
-**To split a row or column**
-To split a row or column, drop the window or toolbar on a docking target.
+- To split a row or column, drop the window or toolbar on a docking target.
 
-![Split the column into two panes](/images/user-guide/editor-customize-splitting-column.gif)
+    ![Split the column into two panes](/images/user-guide/editor-customize-splitting-column.gif)
 
-**To dock a window or toolbar as a tab**
-To dock a window or toolbar as a tab, drop it on the docking target in the middle of a pane.
+- To dock a window or toolbar as a tab, drop it on the docking target in the middle of a pane.
 
-![Dock the window into a tabbed view](/images/user-guide/editor-customize-docking-tabs.gif)
+    ![Dock the window into a tabbed view](/images/user-guide/editor-customize-docking-tabs.gif)
 
-**To dock a window or toolbar to the editor window**
-To dock a window or toolbar to the editor window, drop it on the outer docking target. This creates a new column next to the existing column.
+- To dock a window or toolbar to the editor window, drop it on the outer docking target. This creates a new column next to the existing column.
 
-![Dock the window to the editor window and create a new column](/images/user-guide/editor-customize-docking-to-editor-window.gif)
+    ![Dock the window to the editor window and create a new column](/images/user-guide/editor-customize-docking-to-editor-window.gif)
 
-**To undock a window or toolbar**
-To undock a window or toolbar, drag the title bar and move the selection window away. Avoid the docking targets to prevent from accidentally redocking the window. To help prevent accidental docking, a brief delay occurs before a docking target becomes active. You can also undock a window by right-clicking the title bar and choosing **Undock**.
+- To undock a window or toolbar, drag the title bar and move the selection window away. Avoid the docking targets to prevent from accidentally redocking the window. To help prevent accidental docking, a brief delay occurs before a docking target becomes active. You can also undock a window by right-clicking the title bar and choosing **Undock**.
 
-![Undock the window from the tabbed view](/images/user-guide/editor-customize-undocking-tabs.gif)
+    ![Undock the window from the tabbed view](/images/user-guide/editor-customize-undocking-tabs.gif)
 
-**To prevent a window from docking**
-To prevent a window from docking, press and hold **Ctrl** while moving the window.
+- To prevent a window from docking, press and hold **Ctrl** while moving the window.
 
-**To snap windows**
-To snap a window in place, move the window close to a stationary window. Snapping works on the top, bottom, left, and right borders of the pane.
+- To snap a window in place, move the window close to a stationary window. Snapping works on the top, bottom, left, and right borders of the pane.
 
 ## Customizing Toolbars and Menus
 
 You can also give toolbars and menus your own personal touch.
 
-**To customize preset toolbars or create custom toolbars and menus**
-
 1.  Right-click the top toolbar and choose **Customize**.
 
 1. In the **Customize** window, for **Toolbars**, create, rename, and delete any custom toolbars and menus, or reset them to the default settings.
 
-![Toolbars tab in the Customize window](/images/user-guide/editor-customizing-toolbars.png)
+    ![Toolbars tab in the Customize window](/images/user-guide/editor-customizing-toolbars.png)
 
 1. In the **Commands** tab, drag and drop menu commands to any menu category.
 
-![Commands tab in the Customize window](/images/user-guide/editor-customizing-commands.png)
+    ![Commands tab in the Customize window](/images/user-guide/editor-customizing-commands.png)
 
 ## Changing Preferences 
 
 You can change the default settings to customize the look and functionality of the editor.
 
-**To customize the look and features of O3DE Editor**
-+ In O3DE Editor, choose **Edit**, **Editor Settings**, **Global Preferences**.
+1. In O3DE Editor, choose **Edit**, **Editor Settings**, **Global Preferences**.
 
-![General Settings tab in the Preferences window](/images/user-guide/editor-preferences.png)
+    ![General Settings tab in the Preferences window](/images/user-guide/editor-preferences.png)
 
 ### General Settings 
 
 You can change the general O3DE Editor settings and file settings.
-
 
 **General Settings**
 
 | Parameter | Description |
 | --- | --- |
 | Show Geometry Preview Panel |  Displays a preview window for the selected object.  |
-| Hide objects by config spec |  Hides objects as determined by the minimal specifications and configuration specifications.  |
-| Enable Source Control |  Enables Perforce version control.  |
-| External Layers: Save only Modified |  Saves only the modified external layers.  |
-| Freeze Read-only external layer on Load |  Freezes the read-only external layers when loading the level.  |
-| Frozen layers are selectable |  Allows objects in frozen layers to be selected.  |
-| Console Background |  Changes the background color for the console.  |
+| Enable Source Control |  Enables Perforce version control. |
+| Clear Console at game startup | If enabled, text in the Console will be cleared when entering Game Mode. | 
+| Console Background |  Changes the background color mode for the console. Default: `Dark` |
 | Auto-load last level at startup |  Loads the level that was last loaded.  |
 | Show Time in Console |  Displays the time in the console window.  |
-| Toolbar Icon Size |  Adjusts the toolbar icon size.  Default: `16` (32 pixels).  |
+| Toolbar Icon Size |  Adjusts the toolbar icon size.  Default: `16` (32 pixels). |
 | Stylus Mode |  Enables stylus mode for tablets and other pointing devices.  |
-|  **Enable UI 2.0 (EXPERIMENTAL)**  |  Enables the updated user interface (UI) in O3DE Editor.  |
-|  **Enable Scene Inspector (EXPERIMENTAL)**  | Enables the option to inspect scenes in files such as .fbx files. |
-|  **Restore Viewport Camera on Game Mode Exit**  |  Returns the camera to the original transform when you exit gameplay mode.  |
-|  **Enable Legacy UI (DEPRECATED)**  |  Enable the legacy user interface (UI) in O3DE Editor.  |
-|  **Enable New Viewport Interaction Model (EXPERIMENTAL)**  |  Replaces the old interaction model in the viewport. For more information, see [Working with the Viewport Interaction Model](/docs/user-guide/editor/viewport/).  |
-
+| Enable Scene Inspector (EXPERIMENTAL) | Enables the option to inspect scenes in files such as .fbx files. |
+| Restore Viewport Camera on Game Mode Exit |  Returns the camera to the original transform when you exit gameplay mode.  |
 
 **Messaging**
 
 | Parameter | Description |
 | --- | --- |
 | Show Welcome to O3DE at startup |  Displays the **Welcome to O3DE** dialog box at startup.  |
-|  **Show Error: Circular dependency**  |  Shows an error message when adding a slice instance to a target would create cyclic asset dependency. All other overrides to slices will be saved.  |
-
+| Show Error: Circular dependency |  Shows an error message when adding a slice instance to a target would create cyclic asset dependency. All other overrides to slices will be saved.  |
 
 **Undo**
 
 | Parameter | Description |
 | --- | --- |
 | Undo Levels |  Specifies the maximum number of times you can undo a level.  Default: `50`  |
-|  **Undo Slice Override Saves**  | Allows you to undo override saves to slices.  |
-
+| Undo Slice Override Saves | Allows you to undo override saves to slices.  |
 
 **Selection**
 
 | Parameter | Description |
 | --- | --- |
-|  **Deep selection range**  |  |
-|  **Stick duplicate to cursor**  |  |
-
+| Deep selection range |  |
+| Stick duplicate to cursor |  |
 
 **Vertex Snapping**
 
 | Parameter | Description |
 | --- | --- |
 | Vertex Cube Size |  Adjusts the vertex cube size.  |
-|  **Render Penetrated Boundboxes**  |  Renders penetrated bound boxes.  |
-
+| Render Penetrated Boundboxes |  Renders penetrated bound boxes.  |
 
 **Metrics**
 
@@ -130,13 +110,11 @@ You can change the general O3DE Editor settings and file settings.
 | --- | --- |
 | Enable Metrics Tracking |  Enables metrics tracking.  |
 
-
 **Slices**
 
 | Parameter | Description |
 | --- | --- |
-|  **New Slices Dynamic By Default**  | When you create a slice, the slice is set to dynamic. |
-
+| New Slices Dynamic By Default | When you create a slice, the slice is set to dynamic. |
 
 **Files**
 
@@ -159,7 +137,6 @@ You can change the general O3DE Editor settings and file settings.
 ### Viewport 
 
 You can change the default settings for the viewport.
-
 
 **General**
 
@@ -202,7 +179,6 @@ You can change the default settings for the viewport.
 | Geometry Highlight Alpha |  Specifies the amount of highlight alpha to add to the geometry.  |
 | Child Geometry Highlight Alpha |  Specifies the amount of highlight alpha to add to the child geometry.  |
 
-
 **Movement**
 
 | Parameter | Description |
@@ -213,7 +189,6 @@ You can change the default settings for the viewport.
 | Wheel Zoom Speed |  Specifies the speed of the camera zoom when using the mouse wheel.  |
 | Invert Y Axis |  Inverts the direction that the camera moves on the y-axis when holding the right button on the mouse and moving the mouse up or down.  |
 | Invert Pan |  Inverts the direction that the camera moves when holding the middle button on the mouse and moving the mouse left or right.  |
-
 
 **Gizmos**
 
@@ -226,7 +201,6 @@ You can change the default settings for the viewport.
 | Tagpoint Scale Multiplier |  Specifies the scale of the tagpoint helper sphere and the base helper scale value.  |
 | Ruler Sphere Scale |  Specifies the scale of the locator sphere size when using the **Ruler** tool.  |
 | Ruler Sphere Transparency |  Specifies the transparency level of the locator sphere when using the **Ruler** tool.  |
-
 
 **Debug**
 
@@ -241,9 +215,8 @@ You can change the default settings for the viewport.
 
 You can change the default settings for experimental features such as total illumination.
 
-
 **Lighting Settings**
 
 | Parameter | Description |
 | --- | --- |
-| Total Illumination |  Enables the total illumination lighting feature  |
+| Total Illumination |  Enables the total illumination lighting feature.  |

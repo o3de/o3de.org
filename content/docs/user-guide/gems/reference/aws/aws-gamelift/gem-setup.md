@@ -29,7 +29,7 @@ The lifetime of a session involves the following phases:
 The AWS GameLift Gem depends on the following Gems:
 
 - [AWS Core Gem](/docs/user-guide/gems/reference/aws/aws-core): Provides the framework to use AWS services in O3DE.
-- [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/): Provides multiplayer functionality, like connection and hosting, by extending the networking framework.
+- [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/): Provides multiplayer functionality, like connection and hosting, by extending the networking framework.
 
 
 ### Enable the AWS GameLift Gem and its dependencies

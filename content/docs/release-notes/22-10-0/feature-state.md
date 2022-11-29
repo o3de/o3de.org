@@ -151,7 +151,7 @@ For an up-to-date feature grid and full notes, open the [Feature State Form](htt
 
 | Module | Feature | Functional | Content | Code/API | Performance | Platform | Github Link | Doc Link |
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Deferred Fog | 🟢 Complete | 🟡 Partial | 🟢 Complete | 🟢 Stable | 🟢 Optimized | All  | | [Link](https://docs.o3de.org/docs/user-guide/components/reference/atom/deferred-fog/) |
+| Deferred Fog | 🟢 Complete | 🟡 Partial | 🟢 Complete | 🟢 Stable | 🟢 Optimized | All  | | [Link](https://o3de.org/docs/user-guide/components/reference/atom/deferred-fog/) |
 | Tonemapping | 🟢 Complete | 🟢 Complete | 🟢 Complete | 🟢 Stable | 🟡 Needs Optimization | All  | | [Link](https://www.o3de.org/docs/atom-guide/atom-sample-viewer/graphics-feature-samples/#tonemapping) |
 | Direct Lighting / Area Lights | 🟢 Complete | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🟡 Needs Optimization | All  | | [Link](https://www.o3de.org/docs/user-guide/components/reference/atom/light/) |
 | Meshes | 🟡 Active | 🟡 Partial | 🟢 Complete | 🟢 Stable | 🟡 Needs Optimization | All  | | [Link](https://www.o3de.org/docs/atom-guide/features/#meshes) |
@@ -198,10 +198,10 @@ For an up-to-date feature grid and full notes, open the [Feature State Form](htt
 | Compression (TCP/UDP) | 🟢 Complete | 🟢 Complete | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | [Link](https://www.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-compression/) |
 | Metrics support | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
 | UDP Core | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
-| UDP: DTLS support | 🟢 Complete | 🟢 Complete | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | [Link](https://www.o3de.org/docs/user-guide/networking/encryption/) |
+| UDP: DTLS support | 🟢 Complete | 🟢 Complete | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | [Link](https://www.o3de.org/docs/user-guide/networking/aznetworking/encryption/) |
 | UDP: Reliable queue support | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
 | UDP: Fragmented packet support | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
-| TCP | 🟢 Complete | 🟢 Complete | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | [Link](https://www.o3de.org/docs/user-guide/networking/packets/) |
+| TCP | 🟢 Complete | 🟢 Complete | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | [Link](https://www.o3de.org/docs/user-guide/networking/aznetworking/packets/) |
 | TCP: TLS Support | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
 | TCP: Ringbuffer support Pkg Xmit | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
 
@@ -212,20 +212,20 @@ For an up-to-date feature grid and full notes, open the [Feature State Form](htt
 | Multiplayer component API | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
 | Local Prediction | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
 | Server Side Rollback | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
-| Play in Editor Mode | 🟡 Active | 🟢 Complete | 🟠 Partial | ❌ Unproven | 🟡 Needs Optimization | | | [Link](https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/test-in-editor/) |
+| Play in Editor Mode | 🟡 Active | 🟢 Complete | 🟠 Partial | ❌ Unproven | 🟡 Needs Optimization | | | [Link](https://o3de.org/docs/user-guide/networking/multiplayer/test-in-editor/) |
 | Hosting/Joining a Game | 🟡 Active | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
-| Network property support | 🟢 Complete | 🟢 Complete | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | [Link](https://www.o3de.org/docs/user-guide/networking/autopackets/) |
+| Network property support | 🟢 Complete | 🟢 Complete | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | [Link](https://www.o3de.org/docs/user-guide/networking/aznetworking/autopackets/) |
 | RPC support | 🟡 Active | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
 | Network Input support | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
 | ScriptBind support | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
 | Netbound entity support [NetBindComponent] | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
 | Entity replication support | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
-| Network Prefab Spawning | 🟢 Complete | 🟢 Complete | ⭕ Not Required | ❌ Unproven | 🔴 Needs Testing | | | [Link](https://development--o3deorg.netlify.app/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/spawning/) |
+| Network Prefab Spawning | 🟢 Complete | 🟢 Complete | ⭕ Not Required | ❌ Unproven | 🔴 Needs Testing | | | [Link](https://www.o3de.org/docs/user-guide/networking/multiplayer/spawning/) |
 | Networked Animation | ❌ Unscheduled | 🟠 Minimal | ❌ None | ❌ Unproven | 🔴 Needs Testing | | | |
 | Network Audio Support | ❌ Unscheduled | ❌ None | ❌ None | ❌ Unproven | ❌ Unsupported | | | |
 | Network Simulation (Physics) | 🟢 Complete | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
 | Quality of Service | 🟡 Active | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
-| Debugging Tools | 🟡 Active | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | [Link](https://www.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-debug/) |
+| Debugging Tools | 🟡 Active | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | [Link](https://www.o3de.org/docs/user-guide/networking/multiplayer/debug-desync/) |
 | Metrics | 🟡 Active | 🟡 Partial | ⭕ Not Required | ❌ Unproven | 🟡 Needs Optimization | | | |
 
 ### AWS Cloud Services 
