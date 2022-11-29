@@ -40,7 +40,7 @@ The terrain system adheres to the following design goals:
 | - | - |
 | **Workflow parallelization** | Multiple content creators should be able to work on different terrain locations or different aspects of the terrain content at the same time.|
 | **System / workflow reuse** | The terrain system should leverage the existing Shape components, Surface Data components, Gradient Signal components, Landscape Canvas system, and the entity/component authoring workflows.|
-| **Data flow transparency** | Source data should exist as external assets in common editable formats that hot-reload when changed, and the output data used in the game is always in sync with the inputs and traceable back to them.|
+| **Data flow transparency** | Source data should exist as external assets in common editable formats that hot-reload when changed. The output data used in the game should always be in sync with the inputs and traceable back to them.|
 | **Non-destructive editing** | Terrain data should be modifiable either through layered changes or through direct data changes that don't require the original source data to change. |
 | **Round-trip data flows** | It should be easy to export terrain data changes to external content tools, modify the data further, and re-import the data. |
 | **Reusable data** | The same terrain data should be reusable for multiple different locations in the world. |
