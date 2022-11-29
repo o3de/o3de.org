@@ -1,0 +1,5 @@
+{{ $prnum := replaceRE `^https://deploy-preview-(\d+).*` "$1" .Permalink }}
+
+<p class="build-info-text">
+    <b>GitHub pull request: <a href="{{ $.Site.Params.repositoryUrl }}/pull/{{ $prnum }}" target="_blank">PR {{ $prnum }}</a></b>
+</p>

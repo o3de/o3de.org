@@ -1,7 +1,8 @@
 ---
-description: ' Use the Open 3D Engine console to customize and create your own console
-  variable commands. '
-title: Console in Depth
+linkTitle: Customizing Console
+title: Customizing O3DE Console
+description: Use the Open 3D Engine console to customize and create your own console variable commands.
+weight: 550
 ---
 
 The console is a user interface system which handles console commands and console variables. It also outputs log messages and stores the input and output history.
@@ -161,12 +162,12 @@ StarterGameLauncher.exe -devmode +map SinglePlayer +exec autotest +quit
 ```
 
 In the example, the following operations were performed:
-+ Load the SinglePlayer map.
-+ Wait for 100 frames.
-+ Take a screenshot called autotestFrames.
-+ Wait for 5 seconds.
-+ Take a screenshot called autotestTime.
-+ Quit the application.
+- Load the SinglePlayer map.
+- Wait for 100 frames.
+- Take a screenshot called autotestFrames.
+- Wait for 5 seconds.
+- Take a screenshot called autotestTime.
+- Quit the application.
 
 ### Details 
 

@@ -154,6 +154,78 @@ function showChildren(e) {
   });
 }
 
+// A helper function to customize the dropdown for the version switcher.
+function updateSelectElement(currentOrigin) {
+    var originMatched = false;
+    
+    // Make the following modifications to the dropdown options:
+    // - Add "(latest)" to the production URL option.
+    // - Set the selected option and enhance its style.
+    $("#version-switcher").children("option").attr("value", function(i, currentValue) {
+        if (currentValue.includes("www.o3de.org")) {
+            $(this).text($(this).text() + " (latest)");
+        }
+
+        if (currentValue == currentOrigin) {
+            originMatched = true;
+            $(this).attr("selected", "selected");
+            $(this).attr("class", "selectedVersion");
+        }
+    });
+
+    // Add the current host if it's not one of the standard published branches.
+    if (!originMatched) {
+        var newOption = '<option value="' + currentOrigin + '" selected="selected" class="selectedVersion">';
+        
+        if (currentOrigin.includes("localhost")) {
+            newOption += 'local</option>';
+        }
+        else if (currentOrigin.includes("deploy-preview")) {
+            newOption += 'preview</option>';
+        }
+        else {
+            newOption += new URL(currentOrigin).hostname + '</option>';
+        }
+
+        $("#version-switcher").append(newOption);
+    }
+}
+
+function updateSidebarAttributes() {
+    // If an info or warning banner is present, adjust the top and height of the left nav so that it doesn't scroll when scrolling the contents of the page.
+    if ($("#preview-info").length > 0 || $("#version-warning").length > 0) {
+        var bannerHeight = $("#docs-banners").height();
+        $(".docs-sidebar").css("top", bannerHeight);
+        $(".docs-sidebar").css("height", window.innerHeight - bannerHeight);
+    }
+}
+
+// For docs navbar, switch to a different published docset.
+$(function() {
+    // Update the dropdown for the version switcher, based on the origin part of the URL.
+    updateSelectElement(window.location.origin);
+
+    // Set up the onChange event handler for the version switcher to load the current page from the selected location.
+    $("#version-switcher").on("change", function(event) {
+        // Get new host from selected version.
+        const newHost = event.target.value;
+        
+        // Build a new URL using new host and old path.
+        const newURL = new URL(newHost + window.location.pathname);
+        var newHref = newURL.href;
+
+        // Load the new location.
+        if (newHref != window.location.href) {
+            window.location.href = newHref;
+        }
+    });
+
+    updateSidebarAttributes();
+});
+
+$(window).on("resize", function() {
+    updateSidebarAttributes();
+});
 
 $(function() {
   $("body").append("<div id=\"docs-mobile-menu-overlay\" class=\"docs-mobile-menu-overlay\"></div>");
