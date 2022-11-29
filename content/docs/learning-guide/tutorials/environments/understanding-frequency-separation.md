@@ -1,7 +1,7 @@
 ---
-linkTitle: Create Terrain Detail and Macro Materials
-title: Create Terrain Detail and Macro Materials
-description: Learn to blend terrain detail and macro materials to create realistic terrain environments.
+linkTitle: Understanding Frequency Separation
+title: Understanding Frequency Separation
+description: Learn various frequency separation techniques and how they apply to detail materials.
 weight: 300
 toc: true
 ---
