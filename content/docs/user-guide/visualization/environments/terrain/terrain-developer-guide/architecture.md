@@ -86,7 +86,7 @@ Single terrain system:
 * Defines a single "world grid" for the entire terrain, which presents a consistent resolution and alignment for the terrain grid everywhere. This makes it easy to query the system, since it's possible to walk through the world at consistently-spaced positions everywhere, regardless of the input data resolution and positioning.
   * This also means the renderer doesn't need to solve seams with adjacent meshes of different resolutions, manage LODs across different resolutions, deal with overlapping terrain meshes, etc.
 * Provides a way to manage priorities for overlapping terrain data regions.
-* Gives a single well-defined API connection point for queries and notifications, without forcing everything using terrain to know about all of the individual data pieces that have been used to assemble the terrain.
+* Gives a single well-defined API connection point for queries and notifications, without forcing everything that uses terrain to know about all of the individual data pieces that have been used to assemble the terrain.
 
 Multiple terrain components:
 
