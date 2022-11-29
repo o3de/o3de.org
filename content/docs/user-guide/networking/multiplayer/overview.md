@@ -71,7 +71,7 @@ For networking properties that replicate from Authority, a replication hierarchy
 
 ## Remote procedure calls (RPCs)
 
-Remote procedure calls are how O3DE allows for pushing messages between hosts, rather than sending an update that's based on the server world state. O3DE offers both *reliable* and *unreliable* RPCs. By default, RPCs are reliable.
+Developers can use *remote procedure calls* in O3DE to invoke a function on a remote endpoint. An RPC is a useful mechanism for signaling and notifying about events across networked endpoints. Unlike network properties, a developer chooses when to invoke an RPC. RPCs are not guaranteed to arrive in the order they are sent. O3DE offers both reliable and unreliable RPCs. By default, RPCs are reliable. 
 
 **Reliable** RPCs use a queue to guarantee the delivery of a message. When sending any reliable packet, the packet is also inserted into a priority queue and given a timeout value that's related to the latency of the connection that the message is sent on. On timeout, if the reliable packet was not explicitly acknowledged, the packet will be retransmitted. On the receiving end, the O3DE client tracks every reliable packet received and guarantees that any packet will only be delivered at most once. While this feature provides *guaranteed* delivery, it doesn't provide *ordered* delivery.
 
