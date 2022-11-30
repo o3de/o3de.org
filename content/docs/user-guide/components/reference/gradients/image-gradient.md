@@ -75,7 +75,7 @@ To edit an existing image, press the **Edit** button on the Image Gradient compo
 
 After editing is complete, end the Paint Brush mode by pressing **Esc**, pressing the **Done** button on the Image Gradient component, or by selecting a different component's icon in the **Component Switcher** in the viewport. At this point, the image changes will be saved, re-processed by the Asset Processor, and reloaded when processing is complete.
 
-The **Save Mode** determined where the image will be saved.
+The **Save Mode** determines where the image will be saved.
 | Save Mode | Description |
 | - | - |
 | `Save As...` | Prompts for a save location every time the image is saved. |
