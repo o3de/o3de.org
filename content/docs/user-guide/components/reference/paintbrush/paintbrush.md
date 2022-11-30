@@ -103,7 +103,7 @@ An example of a brush stroke crossing itself with medium flow:
 
 An illustration of Hardness 50% - the inner circle shows where the falloff begins, and the outer circle shows where the falloff ends. The outer circle is the brush size:![Illustration of hardness opacity falloff.](/images/user-guide/components/reference/paintbrush/paintbrush-falloff-50-percent.png)
 
-The following chart shows how the overall circle opacity changes through different combinations of Hardness and Flow. Although the circles appear to be different sizes, they are all the same brush size with differing amounts of opacity between the center and the outer edge. Lower Flow values have a lower maximum opacity which causes the falloff to reach 0 more quickly.
+The following chart shows how the overall circle opacity changes through different combinations of **Hardness** and **Flow**. Although the circles appear to be different sizes, they are all the same brush size with differing amounts of opacity between the center and the outer edge. Lower **Flow** values have a lower maximum opacity which causes the falloff to reach 0 more quickly.
 
 | | Flow 1% | Flow 50% | Flow 100% |
 | - | - | - | - |
