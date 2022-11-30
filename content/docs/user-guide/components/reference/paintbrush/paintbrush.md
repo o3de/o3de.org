@@ -99,7 +99,7 @@ An example of a brush stroke crossing itself with medium flow:
 
 #### Hardness
 
-**Hardness** controls the opacity falloff of each brush circle. The Hardness is the percent distance along the radius of the circle to begin the falloff. The falloff always ends at the outer radius. For example, a Hardness value of 50% means that the inner 50% of the brush circle will use the maximum opacity specified by Flow, and the outer 50% of the brush circle will drop in opacity until it is completely transparent. A value of 100% will make the entire brush circle use the maximum opacity.
+**Hardness** controls the opacity falloff of each brush circle. The **Hardness** is the percentage of distance along the circle's radius to begin the falloff at. The falloff always ends at the outer radius. For example, a **Hardness** value of 50% means that the inner 50% of the brush circle will use the maximum opacity specified by **Flow**, and the outer 50% of the brush circle will drop in opacity until it is completely transparent. A value of 100% will make the entire brush circle use the maximum opacity.
 
 An illustration of Hardness 50% - the inner circle shows where the falloff begins, and the outer circle shows where the falloff ends. The outer circle is the brush size:![Illustration of hardness opacity falloff.](/images/user-guide/components/reference/paintbrush/paintbrush-falloff-50-percent.png)
 
