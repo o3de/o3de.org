@@ -8,39 +8,13 @@ toc: true
 
 Terrain in **Open 3D Engine (O3DE)** is generated from *gradients*. Gradients, in the context of this tutorial, represent changes in elevation and weight masks for materials. Gradients can be generated procedurally or processed from an image. In this tutorial, you'll create terrain elevation and apply detail materials using image gradients, and add support for PhysX simulations with a heightfield collider and physics materials.
 
-This tutorial requires that you have the **Terrain**, **Landscape Canvas**, and **PhysX** Gems enabled in your project.
-
-## Required image assets
-
-To complete this tutorial, you can use the following example images, or you can use your own:
-
-| Heightmap | Macro Color | Surface Weights |
-| - | - | - |
-| {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/tutorial_terrain_heightmap_gsi.png" width="256" alt="An example heightmap image." >}} | {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/tutorial_terrain_basecolor.png" width="256" alt="An example macro color image." >}} | {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/tutorial_grass_splatmap_gsi.png" width="256" alt="An example surface weight mask image." >}} |
-
-In a heightmap, dark values are low elevation areas and light values are high elevation areas. To use a heightmap for terrain in O3DE, it must be processed as a *gradient signal image (GSI)* by [Asset Processor](/docs/user-guide/assets/asset-processor/). To ensure the heightmap is processed correctly, keep the following recommendations in mind:
-
-* 16-bit color depths are recommended. 8-bit images may not provide enough gradient steps to represent elevation, and 32-bit images might be unnecessarily large. 16-bit images can provide up to 65,536 elevation steps.
-
-* Use `.png` or `.tif` formats for 16-bit heightmap images.
-
-* Use `.tif` format for 32-bit heightmap images.
-
-* Postfix the heightmap file name with `_gsi` so that the heightmap is automatically processed by Asset Processor as a GSI (`LevelOneTerrainHeight_gsi.png`, for example). If you don't use the `_gsi` postfix, you can use [Texture Settings](/docs/user-guide/assets/texture-settings/) to configure the heightmap source asset to be processed as a GSI.
-
-{{< tip >}}
-The default **Height Query Resolution** for terrain in O3DE is 1.0 meters. This means a 1000 x 1000 heightmap represents one square kilometer of terrain. The **Height Query Resolution** can be changed in the [**Terrain World**](/docs/user-guide/components/reference/terrain/world) level component.
-{{< /tip >}}
-
-A macro color texture is used to provide low-fidelity color variation to the terrain. Any texture format can be used, though the name should have a postfix of `_basecolor` to ensure that it is processed as a color texture.
-
-In a surface weight mask, dark values are low surface weights and light values are high surface weights. Surface weight masks are used as gradients, so they should also be postfixed with `_gsi`. Precision isn't as noticeable in surface weight masks, so 8-bit images are nearly always sufficient.
+This tutorial requires that you have the **Terrain**, **Gradient Signal**, **Landscape Canvas**, and **PhysX** Gems enabled in your project.
 
 ## Create a new level
 
 1. In **O3DE Editor**, create a new level. (Refer to the [Create a new level](/docs/learning-guide/tutorials/reference/environments/create-a-level) tutorial for more details)
 
-2. Delete the Grid, Ground, and Shader Ball entities underneath the **Atom Default Environment** so that the terrain you will build is not visually obstructed.
+2. Delete the Grid, Ground, and Shader Ball entities underneath the **Atom Default Environment** so that the terrain you will build is fully visible.
 
     {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/delete-default-entities.png" alt="Delete several default entities." >}}
 
@@ -57,6 +31,102 @@ In a surface weight mask, dark values are low surface weights and light values a
 At this point, the level should appear empty except for a blue sky.
 
 {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-empty-level.png" alt="Illustration of the new empty level with the sky component configured." >}}
+
+## Terrain image assets
+
+To complete this tutorial, you can use the following example images or you can use your own. To use these images, right-click on each image, choose `Save Image As...`, and save the image into the folder that contains your tutorial level.
+
+| Heightmap | Macro Color | Surface Weight Mask |
+| - | - | - |
+| {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/tutorial_terrain_heightmap_gsi.png" width="256" alt="An example heightmap image." >}} | {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/tutorial_terrain_basecolor.png" width="256" alt="An example macro color image." >}} | {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/tutorial_grass_splatmap_gsi.png" width="256" alt="An example surface weight mask image." >}} |
+
+A heightmap is an image in which dark values represent low elevation areas and light values represent high elevation areas. Heightmaps can be used for terrain by assigning them to Image Gradients. To use a heightmap with an Image Gradient, it must be processed as a *gradient signal image (GSI)* by [Asset Processor](/docs/user-guide/assets/asset-processor/) to prevent the texture processing from applying color corrections or lossy compression. To ensure the heightmap is processed correctly, keep the following recommendations in mind:
+
+* 16-bit color depths are recommended. 8-bit images may not provide enough gradient steps to represent elevation, and 32-bit images might be unnecessarily large. 16-bit images can provide up to 65,536 elevation steps.
+
+* Use `.png` or `.tif` formats for 16-bit heightmap images.
+
+* Use `.tif` format for 32-bit heightmap images.
+
+* Postfix the heightmap file name with `_gsi` so that the heightmap is automatically processed by Asset Processor as a GSI (`LevelOneTerrainHeight_gsi.png`, for example). If you don't use the `_gsi` postfix, you can use [Texture Settings](/docs/user-guide/assets/texture-settings/) to configure the heightmap source asset to be processed as a GSI.
+
+{{< tip >}}
+The default **Height Query Resolution** for terrain in O3DE is 1.0 meters. This means a 1000 x 1000 heightmap represents one square kilometer of terrain. The **Height Query Resolution** can be changed in the [**Terrain World**](/docs/user-guide/components/reference/terrain/world) level component.
+{{< /tip >}}
+
+A macro color texture is an image that provides low-fidelity color variation to the terrain. Any texture format can be used, though the name should have a postfix of `_basecolor` to ensure that it is processed as a color texture.
+
+A surface weight mask is an image in which dark values are low surface weights and light values are high surface weights. Surface weight mask images are also used with Image Gradients, so they should also be postfixed with `_gsi`. Precision isn't as noticeable in surface weight masks, so 8-bit images are nearly always sufficient.
+
+## Terrain materials
+
+There are two types of materials that are needed for terrain, the [*macro material*](/docs/user-guide/components/reference/terrain/terrain-macro-material) and [*detail materials*](/docs/user-guide/components/reference/terrain/terrain-detail-material).
+
+The macro material is a basic material that applies to the entire terrain. It supports a simple color texture and a normal texture. These textures provide low fidelity color and normal information across the entire terrain that is blended with detail materials. The macro material is the only material displayed at distances from the camera that are farther than the **Detail material render distance**.
+
+Detail materials are standard materials that you can create with the [Material Editor](/docs/atom-guide/look-dev/materials/material-editor/). They are assigned to the terrain through surface tag names that are generated by gradients, similar to how this tutorial used an image gradient to create elevation. This allows you to assign many materials across a large terrain surface and blend between them. Detail materials are displayed on the terrain within the **Detail material render distance** from the camera.
+
+This blending of detail materials with the macro material enables you to use small, high fidelity, tiled detail materials by creating variations in color and lighting across the terrain. In the following example, the grass on the left is a detail material that is not blended with the macro material. The grass on the right is the same detail material, but it has been blended over a low fidelity macro material. Notice the variations in color and lighting that create a less uniform and much more natural appearance:
+
+{{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/macro-material-blending.png" width="800" alt="An example of the difference in variation created by macro material blending." >}}
+
+{{< tip >}}
+In the **Terrain World Renderer** level component, there is a property group named **Detail material configuration** that you can use to configure how far from the camera to stop blending detail materials into the macro material, and the distance over which to fade out the blended detail materials.
+{{< /tip >}}
+
+The following example image demonstrates various material assignments and how they interact on a terrain surface:
+
+{{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-materials-example.png" width="800" alt="An example of macro and detail materials applied to a terrain." >}}
+
+In this example, there are four materials:
+
+* Magenta - This is the macro material. It's displayed on terrain that is 512 meters from the camera. The blend distance between this macro material and the detail materials is 64 meters.
+
+* Green - This is the default detail material. Detail materials are layered, and the default material is the base layer. The default material is displayed on areas that aren't assigned a detail material through a surface tag name, but are close to the camera.
+
+* Red - This is a detail material. It's applied to the terrain through a surface tag name. The surface tag name is generated by a tiled image gradient that contains a white triangle on a black background.
+
+* Blue - This is a detail material. It's applied to the terrain through a surface tag name. The surface tag name is generated by a tiled image gradient that contains a white circle on a black background.
+
+{{< note >}}
+Notice that the red and blue detail materials blend to purple in areas where the triangles and circles overlap. The is because the image gradients are generating surface tags for both materials in these overlap areas.
+{{< /note >}}
+
+### Create terrain detail materials
+
+To create terrain detail materials for use with this tutorial, we will follow the steps in [Creating a StandardPBR Material](/docs/learning-guide/tutorials/rendering/create-standardpbr-material) with a few modifications. You may wish to familiarize yourself with that tutorial first as the steps here will be abbreviated.
+
+1. Download texture files. We will use two ready-made materials from [Poly Haven](https://polyhaven.com/): [Forest Ground 01](https://polyhaven.com/a/forrest_ground_01)
+and [Rock Boulder Dry](https://polyhaven.com/a/rock_boulder_dry). You can download them at any resolution; the example images in this tutorial use the 4k resolution. Download the AO, Diffuse, Displacement, Normal, and Rough textures into your tutorial level folder and rename them as follows:
+
+    * forrest_ground_01_**ao**\_4k &rarr; forrest_ground_01\_**ao**
+    * forrest_ground_01_**diff**\_4k &rarr; forrest_ground_01\_**basecolor**
+    * forrest_ground_01_**disp**\_4k &rarr; forrest_ground_01\_**displ**
+    * forrest_ground_01_**nor**\_gl_4k &rarr; forrest_ground_01\_**normal**
+    * forrest_ground_01_**rough**\_4k &rarr; forrest_ground_01\_**roughness**
+    * rock_boulder_dry_**ao**\_4k &rarr; rock_boulder_dry\_**ao**
+    * rock_boulder_dry_**diff**\_4k &rarr; rock_boulder_dry\_**basecolor**
+    * rock_boulder_dry_**disp**\_4k &rarr; rock_boulder_dry\_**displ**
+    * rock_boulder_dry_**nor**\_gl_4k &rarr; rock_boulder_dry\_**normal**
+    * rock_boulder_dry_**rough**\_4k &rarr; rock_boulder_dry\_**roughness**
+
+2. Create a Terrain Detail Material with the Material Editor. Open the Material Editor, select File -> New Material Document..., and create a `Terrain Detail Material`. Note that we aren't choosing `Standard PBR` here because we would like the additional terrain texture controls that are available on a `Terrain Detail Material`. Name the material `forrest_ground_01.material` and save it in your tutorial level folder.
+
+3. Select the `forrest_ground_01_basecolor` texture under Base Color, `forrest_ground_01_roughness` texture under Roughness, `forrest_ground_01_normal` under Normal, `forrest_ground_01_ao` under Occlusion, and `forrest_ground_01_displ` under Displacement.
+
+4. The normal maps from Poly Haven need their normals flipped by default, so enable Flip Y Channel under Normal.
+
+5. Under Base Color, set the blend mode to `Lerp` and the Factor to `0.5`. For terrain detail materials, we will typically use a blend mode of `Linear Light` to blend between a high-frequency detail material and a low-frequency macro material. Refer to [Terrain Detail Material](/docs/user-guide/components/reference/terrain/terrain-detail-material) and the [Understanding Frequency Separation](/docs/learning-guide/tutorials/environments/understanding-frequency-separation) tutorial for more details. Less often, we might choose to use a blend mode of `Lerp` with a Factor of `0.0` to blend from just the macro material at far distance to just the detail material at close distances. This is used in workflows where the detail materials contain full-color information and the macro material is just a low-resolution composite of the detail materials, not a separate texture used for color variation. However, for this tutorial we would like to demonstrate blending between the macro material and the detail materials for color variation without walking through the additional texture processing steps. We can achieve a lesser-quality version of the blending by setting the Texture Blend Mode under Base Color to `Lerp` and a Factor of 0.5. This will perform a 50% alpha blend between the macro material and the detail material which lets them both be visible, but will produce a softer lower-quality result than the full frequency separation workflow. The chart below shows the effects of the different Lerp factors to help visualize how the blending changes the outputs.
+
+    | Base Macro Color | Detail Lerp 1.0 | Detail Lerp 0.5 | Detail Lerp 0.0 |
+    | - | - | - | - |
+    | {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-macro-only.png" alt="Comparison image showing only the macro material." >}} | {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-macro-lerp-1.png" alt="Comparison image showing the macro material plus a detail material with Lerp 1.0." >}} | {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-macro-lerp-0.5.png" alt="Comparison image showing the macro material plus a detail material with Lerp 0.5." >}} | {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-macro-lerp-0.png" alt="Comparison image showing the macro material plus a detail material with Lerp 0.0." >}} |
+
+6. Scale the textures larger. This is purely an aesthetic choice, it helps the details in the textures become more visible. Set Tile U and Tile V under UVs to 0.25 to make the textures 4x larger.
+
+7. Set the terrain height blending parameters. Under Terrain, enable Override parallax settings, set Height offset to 0.25, Height scale to 0.5, Blend factor to 0.5, and Weight clamp factor to 0.2. These values should be tuned based on the aesthetics, they control how the detail material blends with other detail materials when height-based blending is enabled.
+
+8. Follow all of the steps above for rock_boulder_dry, except set Tile U and Tile V to 0.125, Height offset to 0.0, Height scale to 1.0, Blend factor to 0.2, and Weight clamp factor to 0.2.
 
 ## Enable the terrain system
 
@@ -122,23 +192,21 @@ The following image is the complete Terrain Spawner entity:
 
 4. The **Gradient Transform Modifier** component displays a warning about missing a required component. Choose **Add Required Component** and select **Shape Reference** from the list. In a later step, you'll add a reference to the **Axis Aligned Box Shape** component in the Terrain Spawner entity to ensure the terrain bounds and the gradient bounds are identical.
 
-5. Download the tutorial heightmap by right-clicking on the heightmap image at the top of the tutorial, choose `Save Image As...`, and save the image into the folder that contains your tutorial level.
-
-6. Add the heightmap to the Terrain Height entity. In the **Image Gradient** component, to the right of the **Image Asset** property, click the {{< icon "file-folder.svg" >}} **File** button and select the heightmap asset that you saved in the previous step.
+5. Add the heightmap to the Terrain Height entity. In the **Image Gradient** component, to the right of the **Image Asset** property, click the {{< icon "file-folder.svg" >}} **File** button and select the `tutorial_terrain_heightmap_gsi` heightmap asset that you saved in your tutorial level folder, or optionally any other heightmap image you would like to use.
 
     {{< tip >}}
 Change the **Sampling Type** property in the **Image Gradient** component from `Point` to `Bilinear` or `Bicubic` to make the elevation changes smoother in case the heightmap resolution and the dimensions of the **Axis Aligned Box Shape** component should ever differ.
     {{< /tip >}}
 
-7. The **Shape Reference** component needs to reference the **Axis Aligned Box Shape** component in the Terrain Spawner entity. In the **Shape Reference** component, click the {{< icon "picker.svg" >}} **Picker** button, then click the Terrain Spawner entity in Entity Outliner to create the reference. The following image shows the final Terrain Height entity:
+6. The **Shape Reference** component needs to reference the **Axis Aligned Box Shape** component in the Terrain Spawner entity. In the **Shape Reference** component, click the {{< icon "picker.svg" >}} **Picker** button, then click the Terrain Spawner entity in Entity Outliner to create the reference. The following image shows the final Terrain Height entity:
 
     {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-gradient-entity.png" width="450" alt="The completed Terrain Gradient entity." >}}
 
-8. Select the Terrain Spawner entity. In the **Terrain Height Gradient List** component, click the {{< icon "add.svg" >}} **Add** button to add a new gradient slot. Click the {{< icon "picker.svg" >}} **Picker** button, then click the Terrain Height entity in Entity Outliner to create a reference.
+7. Select the Terrain Spawner entity. In the **Terrain Height Gradient List** component, click the {{< icon "add.svg" >}} **Add** button to add a new gradient slot. Click the {{< icon "picker.svg" >}} **Picker** button, then click the Terrain Height entity in Entity Outliner to create a reference.
 
-9. Select the Terrain Height entity. In the **Gradient Transform Modifier** component, set the **Wrapping Type** property to `Clamp To Edge`. Leaving this property set to `Unbounded` might create artifacts at the edges of the terrain.
+8. Select the Terrain Height entity. In the **Gradient Transform Modifier** component, set the **Wrapping Type** property to `Clamp To Edge`. Leaving this property set to `Unbounded` might create artifacts at the edges of the terrain.
 
-10. **Save** the level (hotkey **Ctrl + S**).
+9. **Save** the level (hotkey **Ctrl + S**).
 
 {{< note >}}
 Before continuing to the next section, be sure to learn about terrain setup with Landscape Canvas by selecting the tab at the top of this section.
@@ -170,17 +238,15 @@ In this section, you'll create terrain based on a heightmap with Landscape Canva
 
 8. In Landscape Canvas, in the Node Palette, expand the **Gradients** node list, and drag an **Image** node into the graph. Notice that in O3DE Editor, a new child entity named Entity3 is created with the necessary components for an image gradient. Also notice that the components are displayed in Node Inspector in Landscape Canvas.
 
-9. Download the tutorial heightmap by right-clicking on the heightmap image at the top of the tutorial, choose `Save Image As...`, and save the image into the folder that contains your tutorial level.
+9. In the **Image** node, in the **Image Gradient** component, to the right of the **Image Asset** property, click the {{< icon "file-folder.svg" >}} **File** button and select the `tutorial_terrain_heightmap_gsi` heightmap asset that you saved in your tutorial level folder, or optionally any other heightmap image you would like to use.
 
-10. In the **Image** node, in the **Image Gradient** component, to the right of the **Image Asset** property, click the {{< icon "file-folder.svg" >}} **File** button and select the heightmap asset that you saved in the previous step.
+10. Click the **Bounds** pin of the **Axis Aligned Box Shape** node, and drag to the **Inbound Shape** of the **Shape Reference** node to connect the nodes and point the **Image Gradient** to use the same box as the terrain.
 
-11. Click the **Bounds** pin of the **Axis Aligned Box Shape** node, and drag to the **Inbound Shape** of the **Shape Reference** node to connect the nodes and point the **Image Gradient** to use the same box as the terrain.
-
-12. Click the **Outbound Gradient** pin of the **Image** node, and drag to the **Inbound Gradient** of the **Terrain Layer Spawner** node to connect the nodes and generate the terrain. The final graph and the **Image** node configuration are shown in the following image:
+11. Click the **Outbound Gradient** pin of the **Image** node, and drag to the **Inbound Gradient** of the **Terrain Layer Spawner** node to connect the nodes and generate the terrain. The final graph and the **Image** node configuration are shown in the following image:
 
     {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/landscape-canvas-terrain-spawner-image-gradient.png" width="938" alt="The configured image gradient node and terrain network in Landscape Canvas." >}}
 
-13. **Save** the level (hotkey **Ctrl + S**).
+12. **Save** the level (hotkey **Ctrl + S**).
 
 {{% /tab %}}
 
@@ -224,45 +290,11 @@ These suggestions are meant to help you view the entire terrain while you build 
 
 ## Apply terrain materials
 
-There are two types of materials that are needed for terrain, the [*macro material*](/docs/user-guide/components/reference/terrain/terrain-macro-material) and [*detail materials*](/docs/user-guide/components/reference/terrain/terrain-detail-material).
-
-The macro material is a basic material that applies to the entire terrain. It supports a simple color texture and a normal texture. These textures provide low fidelity color and normal information across the entire terrain that is blended with detail materials. The macro material is the only material displayed at distances from the camera that are farther than the **Detail material render distance**.
-
-Detail materials are standard materials that you can create with the [Material Editor](/docs/atom-guide/look-dev/materials/material-editor/). They are assigned to the terrain through surface tag names that are generated by gradients, similar to how this tutorial used an image gradient to create elevation. This allows you to assign many materials across a large terrain surface and blend between them. Detail materials are displayed on the terrain within the **Detail material render distance** from the camera.
-
-This blending of detail materials with the macro material enables you to use small, high fidelity, tiled detail materials by creating variations in color and lighting across the terrain. In the following example, the grass on the left is a detail material that is not blended with the macro material. The grass on the right is the same detail material, but it has been blended over a low fidelity macro material. Notice the variations in color and lighting that create a less uniform and much more natural appearance:
-
-{{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/macro-material-blending.png" width="800" alt="An example of the difference in variation created by macro material blending." >}}
-
-{{< tip >}}
-In the **Terrain World Renderer** level component, there is a property group named **Detail material configuration** that you can use to configure how far from the camera to stop blending detail materials into the macro material, and the distance over which to fade out the blended detail materials.
-{{< /tip >}}
-
-The following example image demonstrates various material assignments and how they interact on a terrain surface:
-
-{{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-materials-example.png" width="800" alt="An example of macro and detail materials applied to a terrain." >}}
-
-In this example, there are four materials:
-
-* Magenta - This is the macro material. It's displayed on terrain that is 512 meters from the camera. The blend distance between this macro material and the detail materials is 64 meters.
-
-* Green - This is the default detail material. Detail materials are layered, and the default material is the base layer. The default material is displayed on areas that aren't assigned a detail material through a surface tag name, but are close to the camera.
-
-* Red - This is a detail material. It's applied to the terrain through a surface tag name. The surface tag name is generated by a tiled image gradient that contains a white triangle on a black background.
-
-* Blue - This is a detail material. It's applied to the terrain through a surface tag name. The surface tag name is generated by a tiled image gradient that contains a white circle on a black background.
-
-{{< note >}}
-Notice that the red and blue detail materials blend to purple in areas where the triangles and circles overlap. The is because the image gradients are generating surface tags for both materials in these overlap areas.
-{{< /note >}}
-
 ### Apply a macro material
 
 1. With the Terrain Spawner entity selected, add a **Terrain Macro Material** component.
 
-2. Download the tutorial macro color texture by right-clicking on the macro color image at the top of the tutorial, choose `Save Image As...`, and save the image into the folder that contains your tutorial level.
-
-3. In the **Terrain Macro Material** component, select the macro color texture that you saved in the previous step, or optionally any other color texture of your choosing. This tutorial doesn't use a macro normal texture, but if your terrain authoring software supports generating one, you can select it here as well.
+2. In the **Terrain Macro Material** component, select the `tutorial_terrain_basecolor` macro color texture that you saved in your tutorial level folder, or optionally any other color texture of your choosing. This tutorial doesn't use a macro normal texture, but if your terrain authoring software supports generating one, you can select it here as well.
 
 {{< important >}}
 If you use a macro normal texture, the terrain area size must exactly match the size of the terrain in the terrain authoring software or else the normals won't point in the correct directions.
@@ -273,42 +305,6 @@ At this point, the terrain should be colored, but up close it lacks any surface 
 | | |
 | - | - |
 | {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/level-with-macro-color.png" width="550" alt="An example of a macro material applied to a terrain." >}} | {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/level-with-macro-color-up-close.png" width="550" alt="An zoomed-in example of a macro material applied to a terrain." >}} |
-
-### Create detail materials
-
-To create terrain detail materials for use with this tutorial, we will follow the steps in [Creating a StandardPBR Material](/docs/learning-guide/tutorials/rendering/create-standardpbr-material) with a few modifications. You may wish to familiarize yourself with that tutorial first as the steps here will be abbreviated.
-
-1. Download texture files. We will use two ready-made materials from [Poly Haven](https://polyhaven.com/): [Forest Ground 01](https://polyhaven.com/a/forrest_ground_01)
-and [Rock Boulder Dry](https://polyhaven.com/a/rock_boulder_dry). You can download them at any resolution; the tutorial images use the 4k resolution. Download the AO, Diffuse, Displacement, Normal, and Rough textures into your tutorial level folder and rename them as follows:
-
-    * forrest_ground_01_**ao**\_4k &rarr; forrest_ground_01\_**ao**
-    * forrest_ground_01_**diff**\_4k &rarr; forrest_ground_01\_**basecolor**
-    * forrest_ground_01_**disp**\_4k &rarr; forrest_ground_01\_**displ**
-    * forrest_ground_01_**nor**\_gl_4k &rarr; forrest_ground_01\_**normal**
-    * forrest_ground_01_**rough**\_4k &rarr; forrest_ground_01\_**roughness**
-    * rock_boulder_dry_**ao**\_4k &rarr; rock_boulder_dry\_**ao**
-    * rock_boulder_dry_**diff**\_4k &rarr; rock_boulder_dry\_**basecolor**
-    * rock_boulder_dry_**disp**\_4k &rarr; rock_boulder_dry\_**displ**
-    * rock_boulder_dry_**nor**\_gl_4k &rarr; rock_boulder_dry\_**normal**
-    * rock_boulder_dry_**rough**\_4k &rarr; rock_boulder_dry\_**roughness**
-
-2. Create a Terrain Detail Material with the Material Editor. Open the Material Editor, select File -> New Material Document..., and create a `Terrain Detail Material`. Note that we aren't choosing `Standard PBR` here because we would like the additional terrain texture controls that are available on a `Terrain Detail Material`. Name the material `forrest_ground_01.material` and save it in your tutorial level folder.
-
-3. Select the `forrest_ground_01_basecolor` texture under Base Color, `forrest_ground_01_roughness` texture under Roughness, `forrest_ground_01_normal` under Normal, `forrest_ground_01_ao` under Occlusion, and `forrest_ground_01_displ` under Displacement.
-
-4. The normal maps from Poly Haven need their normals flipped by default, so enable Flip Y Channel under Normal.
-
-5. For terrain detail materials, we will normally either use a blend mode of `Lerp` to blend from just the macro material at far distance to just the detail material at close distances, or a blend mode of `Linear Light` to blend the two material types. See [TODO] for more details. However, for this tutorial we would like to demonstrate the blended colors without the additional texture processing steps in [TODO]. We can achieve a lesser-quality version by setting the Texture Blend Mode under Base Color to `Lerp` and a Factor of 0.5. The chart below shows the effects of the different Lerp factors. For this terrain, a Factor of 0.5 gives a reasonable blend between the macro color and the surface detail material color.
-
-| Base Macro Color | Detail Lerp 1.0 | Detail Lerp 0.5 | Detail Lerp 0.0 |
-| - | - | - | - |
-| {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-macro-only.png" alt="Comparison image showing only the macro material." >}} | {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-macro-lerp-1.png" alt="Comparison image showing the macro material plus a detail material with Lerp 1.0." >}} | {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-macro-lerp-0.5.png" alt="Comparison image showing the macro material plus a detail material with Lerp 0.5." >}} | {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-macro-lerp-0.png" alt="Comparison image showing the macro material plus a detail material with Lerp 0.0." >}} |
-
-6. Scale the textures larger. This is purely an aesthetic choice, it helps the details in the textures become more visible. Set Tile U and Tile V under UVs to 0.25 to make the textures 4x larger.
-
-7. Set the terrain height blending parameters. Under Terrain, enable Override parallax settings, set Height offset to 0.25, Height scale to 0.5, Blend factor to 0.5, and Weight clamp factor to 0.2. These values should be tuned based on the aesthetics, they control how the detail material blends with other detail materials when height-based blending is enabled.
-
-8. Follow all of the steps above for rock_boulder_dry, except set Tile U and Tile V to 0.125, Height offset to 0.0, Height scale to 1.0, Blend factor to 0.2, and Weight clamp factor to 0.2.
 
 ### Apply detail materials
 
@@ -327,6 +323,7 @@ We start by adding a default surface material so that we can verify that the sur
 At this point, the terrain should have height variation, color variation, and a grass texture:
 
 {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-default-surface.png" alt="Terrain covered with a single default surface material." >}}
+
 #### Create a surface tag name list
 
 [_Surface tag names_](/docs/user-guide/gems/reference/environment/surface-data) are strings that you can use to refer to parts of the terrain that are associated with specific gradients. These tags will be used to describe which parts of the terrain are grass surfaces and which parts are rock surfaces.
@@ -357,13 +354,11 @@ Other gradient types can be used, but image gradients offer the most control and
 
 * A shape component. Most often, this is a **Shape Reference** component that references the **Axis Aligned Box Shape** component in the Terrain Spawner entity.
 
-1. Download the tutorial grass surface weight texture by right-clicking on the surface weight image at the top of the tutorial, choose `Save Image As...`, and save the image into the folder that contains your tutorial level.
+1. Create a child entity of the Terrain Spawner entity named `Terrain Grass` and add an **Image Gradient**, a **Gradient Transform Modifier**, and a **Shape Reference** component.
 
-2. Create a child entity of the Terrain Spawner entity named `Terrain Grass` and add an **Image Gradient**, a **Gradient Transform Modifier**, and a **Shape Reference** component.
+2. On the Shape Reference component, click the {{< icon "picker.svg" >}} **Picker** button, then click the Terrain Spawner entity in Entity Outliner to create a reference.
 
-3. On the Shape Reference component, click the {{< icon "picker.svg" >}} **Picker** button, then click the Terrain Spawner entity in Entity Outliner to create a reference.
-
-4. On the Image Gradient, set the Image Asset to the `tutorial_grass_splatmap_gsi` image that you downloaded.
+3. On the Image Gradient, set the Image Asset to the `tutorial_grass_splatmap_gsi` image that you downloaded into your tutorial level folder.
 
 #### Create gradient entity for the rock surface weights
 
