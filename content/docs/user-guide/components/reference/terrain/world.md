@@ -36,4 +36,4 @@ For example, if a terrain uses a heightmap image with 10 texels/meter with a 1 m
 
 For physics, **Height Query Resolution** controls the heightfield quad spacing of the underlying collider. For rendering, this determines the triangle density of the closest level of detail.
 
-**Surface Data Query Resolution** affects the density of detail material weight data.
+**Surface Data Query Resolution** affects the density of the detail material weight data that is used for detail material blending.
