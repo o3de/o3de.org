@@ -111,7 +111,7 @@ The following chart shows how the overall circle opacity changes through differe
 | Hardness 50% | ![50% Hardness 1% Flow.](/images/user-guide/components/reference/paintbrush/paintbrush-hardness-50-flow-1.png) | ![50% Hardness 50% Flow.](/images/user-guide/components/reference/paintbrush/paintbrush-hardness-50-flow-50.png) | ![50% Hardness 100% Flow.](/images/user-guide/components/reference/paintbrush/paintbrush-hardness-50-flow-100.png) |
 | Hardness 100% | ![100% Hardness 1% Flow.](/images/user-guide/components/reference/paintbrush/paintbrush-hardness-100-flow-1.png) | ![100% Hardness 50% Flow.](/images/user-guide/components/reference/paintbrush/paintbrush-hardness-100-flow-50.png) | ![100% Hardness 100% Flow.](/images/user-guide/components/reference/paintbrush/paintbrush-hardness-100-flow-100.png) |
 
-Because the Hardness opacity affects each brush circle, overlapping circles in the same brush stroke will blend with each other.
+Because the **Hardness** opacity affects each brush circle, overlapping circles in the same brush stroke will blend with each other.
 
 An example of a brush stroke crossing itself with medium hardness:![Example of brush stroke crossing itself with medium hardness.](/images/user-guide/components/reference/paintbrush/paintbrush-hardness-overlap.png)
 
