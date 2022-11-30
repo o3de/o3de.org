@@ -71,7 +71,7 @@ There are several sampling types to choose from. Choosing the best sampling type
 
 ## Editing an image
 
-To edit an existing image, press the **Edit** button on the Image Gradient component or selecting the Image Gradient component's icon in the **Component Switcher** in the viewport. This will enter Paint Brush mode. See the [Paint Brush](/docs/user-guide/components/reference/paintbrush/paintbrush) documentation for more details on how to use the Paint Brush.
+To edit an existing image, press the **Edit** button on the Image Gradient component or select the Image Gradient component's icon in the **Component Switcher** in the viewport. This will enter Paint Brush mode. Refer to the [Paint Brush](/docs/user-guide/components/reference/paintbrush/paintbrush) documentation for more details on how to use the Paint Brush.
 
 After editing is complete, end the Paint Brush mode by pressing **Esc**, pressing the **Done** button on the Image Gradient component, or by selecting a different component's icon in the **Component Switcher** in the viewport. At this point, the image changes will be saved, re-processed by the Asset Processor, and reloaded when processing is complete.
 
