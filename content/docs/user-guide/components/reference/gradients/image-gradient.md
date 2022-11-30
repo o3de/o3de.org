@@ -79,7 +79,7 @@ The **Save Mode** determined where the image will be saved.
 | Save Mode | Description |
 | - | - |
 | `Save As...` | Prompts for a save location every time the image is saved. |
-| `Auto Save` | Prompts for a save location the first time the image is saved after loading the level, but on every subsequent save automatically overwrites the image in that location. |
+| `Auto Save` | Prompts for a save location the first time the image is saved after loading the level, but on every subsequent save, it automatically overwrites the image in that location. |
 | `Auto Save With Incrementing Names` | Automatically saves the image with an incrementing number at the end of the name and only prompts for a save location if there is already an existing image with that name.<br><br>For example, if the initially-selected image is `image_gsi.tif`, this will save it as `image_gsi.0000.tif`, then as `image_gsi.0001.tif`, then as `image_gsi.0002.tif`, etc. |
 
 ## ImageGradientRequestBus
