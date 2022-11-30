@@ -24,7 +24,7 @@ The O3DE terrain system was built with specific design tenets in mind. Enhanceme
 | | |
 | - | - |
 | **Enjoyable** | Content creators and engineers should be delighted to use the terrain system and excited by the power and flexibility the tools provide.|
-| **Familiar** | The design should be familiar to content creators that use external terrain authoring tools and should follow similar design patterns to other O3DE workflows.|
+| **Familiar** | The design should be familiar to content creators that use external terrain authoring tools and should follow similar design patterns used in other O3DE workflows.|
 | **Fast** | Iteration should be rapid and responsive, and the runtime should be optimized to a production-ready state.|
 | **Reusable** | Every aspect of the system should be optional, reusable, and replaceable, and the system should reuse existing functionality in O3DE as much as possible. Content should also be authorable as optional, reusable, and replaceable pieces.|
 | **Scalable** | The system should scale to allow for worlds of arbitrary size and density without enforcing any hard limits.|
