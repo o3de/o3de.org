@@ -8,7 +8,7 @@ In O3DE, many different components attach data to world space positions and regi
 
 The Paint Brush is an editing mode available on some types of components to enable standard painting controls for editing the component's data in world space.
 
-Some components directly map pixels from a source image into world space, but other components might have a more indirect mapping, such as weights stored on vertices on a mesh. The Paint Brush is designed to allow painting in world space for any arbitrary type of data. For that reason, the descriptions below refer more generically to "values" instead of "pixels", even though painting is generally considered to be an image-based operation. Also, the mapping of the data values into world space can be at different densities, so the descriptions below make a distinction between "world space" and "value space". "World space" represents a number of meters in the virtual world. "Value space" represents a number of pixels / vertex weights / etc.
+Some components directly map pixels from a source image into world space, but other components might have a more indirect mapping, such as weights stored on vertices on a mesh. The Paint Brush is designed to allow painting in world space for any arbitrary type of data. For that reason, the descriptions below refer more generically to values instead of pixels, even though painting is generally considered to be an image-based operation. Also, the mapping of data values into world space can be at different densities, so the descriptions below make a distinction between *world space* and *value space*. World space represents a number of meters in the virtual world. Value space represents a quantity of adjacent data values in the data source being edited.
 
 ## Using the Paint Brush
 
@@ -24,7 +24,7 @@ Once the Paint Brush is active, there are three sets of controls:
 
 Painting consists of moving the mouse in the viewport while holding down the left mouse button. A brush stroke begins once the left mouse button is pressed down and ends once the left mouse button is released. Undo/redo commands work on each brush stroke.
 
-A brush stroke consists of a series of overlapping circles with constant spacing that are applied as the mouse moves. The Paint Brush Settings control the color, opacity, size, and spacing of the circles.
+A brush stroke consists of a series of overlapping circles applied with constant spacing as the mouse moves. The Paint Brush Settings control the color, opacity, size, and spacing of the circles.
 
 ![Example brush stroke.](/images/user-guide/components/reference/paintbrush/paintbrush-brush-stroke.png)
 
@@ -137,7 +137,7 @@ The following settings only apply to the smoothing brush.
 
 | Mode | Description | Example 1 | Example 2 |
 | - | - | - | - |
-| (None) | (Input images used in smoothing) |![Sample smoothing input image.](/images/user-guide/components/reference/paintbrush/paintbrush-smooth-mode-input.png) |![Sample smoothing input image 2.](/images/user-guide/components/reference/paintbrush/paintbrush-smooth-mode-input2.png) |
+|  | (Input images) |![Sample smoothing input image.](/images/user-guide/components/reference/paintbrush/paintbrush-smooth-mode-input.png) |![Sample smoothing input image 2.](/images/user-guide/components/reference/paintbrush/paintbrush-smooth-mode-input2.png) |
 | `Gaussian` | Takes a weighted average of the NxN values using a Gaussian bell curve distribution function. This is the most common smoothing method used by paint programs. It provides a good balance of smoothing out noise and preserving details. |![Sample smoothing Gaussian image.](/images/user-guide/components/reference/paintbrush/paintbrush-smooth-mode-gaussian.png) |![Sample smoothing Gaussian image 2.](/images/user-guide/components/reference/paintbrush/paintbrush-smooth-mode-gaussian2.png) |
 | `Mean` | Takes an unweighted average of the NxN values. This method smooths out noise and is the method least likely to preserve sharp details. |![Sample smoothing mean image.](/images/user-guide/components/reference/paintbrush/paintbrush-smooth-mode-mean.png) |![Sample smoothing mean image 2.](/images/user-guide/components/reference/paintbrush/paintbrush-smooth-mode-mean2.png) |
 | `Median` | Takes the middle value from the sorted set of NxN values. This method preserves sharper edges than the other smoothing methods and can completely eliminate noise, but it also produces less smooth results in general and might introduce noticeable artifacts. |![Sample smoothing median image.](/images/user-guide/components/reference/paintbrush/paintbrush-smooth-mode-median.png) |![Sample smoothing median image 2.](/images/user-guide/components/reference/paintbrush/paintbrush-smooth-mode-median2.png) |
