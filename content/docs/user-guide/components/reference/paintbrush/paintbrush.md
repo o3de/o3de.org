@@ -12,7 +12,7 @@ Some components directly map pixels from a source image into world space, but ot
 
 ## Using the Paint Brush
 
-The Paint Brush is enabled by clicking the **Edit** button on the component or by selecting the component's icon in the **Component Switcher** in the viewport.
+The Paint Brush is enabled by clicking the **Edit** button on the component or selecting the component's icon in the **Component Switcher** in the viewport.
 
 Once the Paint Brush is active, there are three sets of controls:
 
