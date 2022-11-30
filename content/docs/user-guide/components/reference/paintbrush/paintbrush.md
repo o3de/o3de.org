@@ -63,7 +63,7 @@ An example of a brush stroke crossing itself with medium opacity:
 
 #### Blend Mode
 
-**Blend Mode** controls how the entire brush stroke is blended back into the main layer. In the following table, `a` is the main layer value, `b` is the painted value, and `c` is the value blended back into the main layer using linear interpolation based on the Opacity setting.
+**Blend Mode** controls how the entire brush stroke is blended back into the main layer. In the following table, `a` is the main layer value, `b` is the painted value, and `c` is the value blended back into the main layer using linear interpolation based on the **Opacity** setting.
 
 | Blend Mode | Math Function | Description |
 | - | - | - |
