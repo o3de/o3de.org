@@ -146,7 +146,7 @@ The following settings only apply to the smoothing brush.
 
 **Smoothing Radius** is the number of values to use in each direction from the center value when computing the smoothed value. The smoothing methods use NxN values, where `N = (radius * 2) + 1`. A radius of 1 is a 3x3 set of values, a radius of 2 is a 5x5 set of values, a radius of 3 is a 7x7 set of values, and so on.
 
-This number is expressed in "Value Space". In other words, it is describing the number of adjacent values to use in each direction regardless of how the values are mapped into world space.
+This number is expressed in *value space*. In other words, it describes the number of adjacent values to use in each direction regardless of how the values are mapped into world space.
 
 A larger smoothing radius will generally cause a smoother result across larger distances, but it also has an increased performance cost.
 
