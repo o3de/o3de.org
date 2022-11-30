@@ -85,7 +85,7 @@ An example of a brush stroke crossing itself with medium opacity:
 
 #### Flow
 
-**Flow** controls the maximum opacity of each brush circle. A Flow value of 0% is completely transparent, and 100% is completely opaque.
+**Flow** controls the maximum opacity of each brush circle. A **Flow** value of 0% is completely transparent, and 100% is completely opaque.
 
 | Flow | Illustration |
 | - | - |
