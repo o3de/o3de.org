@@ -41,7 +41,7 @@ The [Terrain World Renderer](/docs/user-guide/components/reference/terrain/world
 
 ## TerrainSpawnerRequestBus
 
-The `TerrainSpawnerRequestBus` is an internal EBus used by the terrain system to query the Terrain Layer Spawner settings. It shouldn't generally be needed or used by other systems, since nothing outside the terrain system should need any information about individual Terrain Layer Spawners. However, if a use case should arise, the following request functions on the `TerrainSpawnerRequestBus` EBus interface can be used to query the individual Terrain Layer Spawner components.
+The `TerrainSpawnerRequestBus` is an internal EBus used by the terrain system to query Terrain Layer Spawner settings. Other systems generally do not need to use this EBus since nothing outside the terrain system should need any information about individual Terrain Layer Spawners. However, if a use case arises, the following request functions on the `TerrainSpawnerRequestBus` EBus interface can be used to query the individual Terrain Layer Spawner components.
 
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
