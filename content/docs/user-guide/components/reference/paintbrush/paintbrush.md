@@ -37,7 +37,7 @@ The Paint Brush has three separate modes - **Paint**, **Eyedropper**, and **Smoo
 | Mode | Description |
 | - | - |
 | Paint | The Paint Brush blends new values onto whatever data is being painted based on the Paint Brush Settings. |
-| Eyedropper | The Paint Brush reads the current value from underneath the exact center of the brush and sets the Intensity / Color / Opacity in the Paint Brush Settings to that value. The Eyedropper always uses the exact center to read a single value, the brush size does not affect it. |
+| Eyedropper | The Paint Brush reads the current value from underneath the exact center of the brush and sets the **Intensity**, **Color**, and **Opacity** in the Paint Brush Settings to that value. The Eyedropper always uses the exact center to read a single value; the brush size does not affect it. |
 | Smooth | The Paint Brush smooths the existing data and blends the results back in based on the Paint Brush Settings. |
 
 ## Paint Brush Settings
