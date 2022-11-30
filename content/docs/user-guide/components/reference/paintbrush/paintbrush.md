@@ -117,7 +117,7 @@ An example of a brush stroke crossing itself with medium hardness:![Example of b
 
 #### Distance
 
-**Distance** controls the spacing of each circle within the brush stroke as the mouse moves. Very specifically, The Distance value represents the total distance the mouse needs to move before applying another circle, so small back-and-forth movements with the mouse can produce circles that are closer together than the Distance value. The Distance is a percentage of the circle's size, so a value of 50% will overlap each circle by 50% and a value of 100% will produce exactly non-overlapping circles. Values greater than 100% will leave space between each circle.
+**Distance** controls the spacing of each circle within the brush stroke as the mouse moves. Specifically, the **Distance** value represents the total distance the mouse needs to move before applying another circle, so small back-and-forth movements with the mouse can produce circles that are closer together than the **Distance** value. **Distance** is a percentage of the circle's size, so a value of 50% will overlap each circle by 50% and a value of 100% will produce exactly non-overlapping circles. Values greater than 100% will leave space between each circle.
 
 | Distance | Illustration |
 | - | - |
