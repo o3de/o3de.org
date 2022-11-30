@@ -117,7 +117,7 @@ The terrain system uses three level components:
 | - | - |
 | **Terrain World** | Controls the base terrain system. The entire system is enabled or disabled by adding or removing this component. The configuration parameters that affect the entire terrain world exist on this component as well.|
 | **Terrain World Renderer** | Controls the terrain rendering. It requires the **Terrain World** component to exist, and it provides all of the rendering configuration settings that apply globally to the entire terrain. This component is separated from **Terrain World** so that it's possible to define a conceptual terrain without requiring the overhead of rendering. This is useful for cases where a visual representation simply isn't necessary. Also, this provides a "replacement touchpoint" for creating different terrain renderers, such as a voxel-based implementation or a raytracing-based implementation.|
-| **Terrain World Debugger** | Provides helpful debugging features for visualizing aspects of the terrain system. This component is kept separate from **Terrain World** so that it can easily be completely removed from shipping products.|
+| **Terrain World Debugger** | Provides helpful debugging features for visualizing aspects of the terrain system. This component is separated from **Terrain World** so that it's easy to completely remove it from shipping products.|
 
 ### Entity components
 
