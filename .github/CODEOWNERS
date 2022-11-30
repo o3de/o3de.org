@@ -1,0 +1,22 @@
+# Do not update archived releases without a very good reason!!!
+* @o3de/sig-chairs
+
+# Foundation-owned materials
+content/download/* @o3de/lf
+content/_index.md @o3de/lf
+LICENSE-* @o3de/lf
+_index.md @o3de/lf
+netlify.toml @o3de/lf
+static/apple-touch-icon-114x114.png @o3de/lf
+static/apple-touch-icon-120x120.png @o3de/lf
+static/apple-touch-icon-144x144.png @o3de/lf
+static/apple-touch-icon-152x152.png @o3de/lf
+static/apple-touch-icon-180x180.png @o3de/lf
+static/apple-touch-icon-57x57.png @o3de/lf
+static/apple-touch-icon-72x72.png @o3de/lf
+static/apple-touch-icon-76x76.png @o3de/lf
+static/apple-touch-icon.png @o3de/lf
+static/favicon.ico @o3de/lf
+static/img/* @o3de/lf
+static/images/events/* @o3de/lf
+static/images/home/* @o3de/lf
