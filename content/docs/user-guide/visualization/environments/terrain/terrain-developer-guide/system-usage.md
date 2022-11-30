@@ -5,15 +5,15 @@ description: Information on how to use the terrain system's APIs.
 weight: 300
 ---
 
-Internal to the terrain system, there are a number of components, EBus definitions, and APIs. However, if your goal as a developer is simply to _use_ the terrain system, the only methods that are needed are the ones defined on the `TerrainDataNotificationBus` and the `TerrainDataRequestBus`.
+Internal to the terrain system, there are a number of components, EBus definitions, and APIs. However, if your goal as a developer is simply to _use_ the terrain system, the only methods that you need are the ones defined on the `TerrainDataNotificationBus` and the `TerrainDataRequestBus`.
 
 ## `TerrainDataNotificationBus`
 
-The `TerrainDataNotificationBus` provides notifications when the terrain system is first activated, when it is deactivated, and every time a piece of terrain data is changed. Any system that is keeping some form of synchronized state with the terrain system, such as physics, rendering, or navigation, will need to listen to this EBus to udpate its synchronized state on every notification.
+The `TerrainDataNotificationBus` provides notifications when the terrain system first activates, when it deactivates, and every time a piece of terrain data changes. Any system that keeps some form of synchronized state with the terrain system, such as physics, rendering, or navigation, needs to listen to this EBus to update its synchronized state on every notification.
 
 There are several requirements that this imposes.
 
-1. The terrain system can get activated and deactivated at any time, so you should explicitly handle and test these cases. The easiest way to test it is to enable and disable the **Terrain World** level component.
+1. The terrain system can be activated and deactivated at any time, so you should explicitly handle and test these cases. The simplest way to test it is to enable and disable the **Terrain World** level component.
 
 2. Your system must always remain reactive to data changes. There is no singular concept of "terrain has finished loading", because all of the data is decomposed into separate pieces that can load at separate times, and the data can dynamically stream in and out at any time. If your system needs a well-defined "done" point, you will need to explicitly define and track this state yourself based on the requirements of your specific product.
 
@@ -48,11 +48,11 @@ The `Default` / `Bilinear` Sampler setting uses the query resolution to sample t
 
 | Height Query Resolution | Result | Description |
 | - | - | - |
-| 1.0 meters | 40 | Querying at 0.75 will fetch the underlying data at 0.00 (40) and 1.00 (40) and interpolate at 75%. |
-| 0.5 meters | 30 | Querying at 0.75 will fetch the underlying data at 0.50 (20) and 1.00 (40) and interpolate at 50%. |
-| 0.25 meters | 10 | Querying at 0.75 will fetch the underlying data at 0.75 (10) and 1.00 (40) and interpolate at 0%. |
+| 1.0 meters | 40 | Querying at 0.75 fetches the underlying data at 0.00 (40) and 1.00 (40) and interpolate at 75%. |
+| 0.5 meters | 30 | Querying at 0.75 fetches the underlying data at 0.50 (20) and 1.00 (40) and interpolate at 50%. |
+| 0.25 meters | 10 | Querying at 0.75 fetches the underlying data at 0.75 (10) and 1.00 (40) and interpolate at 0%. |
 
-The `Default` Sampler setting is the one that should be used by most systems when querying. However, there are two other sampling methods that are available for specialized use.
+The `Default` Sampler setting should be used by most systems when querying. However, there are two other sampling methods that are available for specialized use.
 
 The `Clamp` Sampler setting will take the requested query position and 'clamp' it down to the terrain grid before requesting the value. Where the `Bilinear` sampler produces an infinite range of interpolated values for all the positions between grid points, the `Clamp` sampler will always produce the same value for every position between grid points. Because this only fetches one data value, not four, it can run up to 4x faster than the `Default` sampler, but the values returned will only match the rendering and physics representations when queried directly on the grid points. For that reason, this setting should only be used when querying directly on terrain grid points.
 
@@ -66,11 +66,11 @@ Because terrain data only exists within arbitrary authored regions, it's possibl
 
 Here are a few tips for getting the best performance out of the terrain query APIs:
 
-* The APIs are designed to let you query for different combinations of height, normal, and surface data. The more data you query, the more expensive the query will be, so try to limit queries to fetch the minimum amount of data that you intend to use. When you need multiple types of data for the same position, the APIs that let you fetch multiple types at once will generally be faster than calling the individual APIs separately. For example, `GetSurfacePoint` will be faster than calling `GetHeight`, `GetNormal`, and `GetSurfaceWeights` individually.
+* The APIs are designed to let you query for different combinations of height, normal, and surface data. The more data you query, the more expensive the query is, so try to limit queries to fetch the minimum amount of data that you intend to use. When you need multiple types of data for the same position, the APIs that let you fetch multiple types at once are generally faster than calling the individual APIs separately. For example, `GetSurfacePoint` is faster than calling `GetHeight`, `GetNormal`, and `GetSurfaceWeights` individually.
 * When querying for multiple input positions, the bulk APIs (`QueryList`, `QueryRegion`) are generally 80-90% faster than calling the individual APIs (`GetHeight`, etc).
 * `QueryRegion` / `QueryRegionAsync` are the fastest query APIs because they don't require the additional step of building up an input list of positions before calling them.
-* The queries can be made up to 4x faster by using the `Exact` or `Clamp` sampler choices, as long as you take care to align the input positions or input region exactly to the terrain grid. Misalignment will produce inaccurate results.
-* The `TerrainAreaExistsInBounds` provides a quick way to determine if terrain exists at _all_ within an AABB. This can be used to circumvent the more expensive per-point queries entirely if the region your system cares about doesn't contain any terrain.
+* The queries can be up to 4x faster by using the `Exact` or `Clamp` sampler choices, as long as you take care to align the input positions or input region exactly to the terrain grid. Misalignment produces inaccurate results.
+* The `TerrainAreaExistsInBounds` provides a quick way to determine if terrain exists within an AABB. This can be used to entirely circumvent the more expensive per-point queries if the region that your system cares about doesn't contain any terrain.
 
 ### Raycast queries
 
