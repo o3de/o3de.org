@@ -28,7 +28,7 @@ A brush stroke consists of a series of overlapping circles with constant spacing
 
 ![Example brush stroke.](/images/user-guide/components/reference/paintbrush/paintbrush-brush-stroke.png)
 
-Painting mode is ended by pressing **Esc**, clicking the **Done** button on the component, or by selecting a different component's icon in the **Component Switcher** in the viewport.
+End Paint Brush mode by pressing **Esc**, clicking the **Done** button on the component, or selecting a different component's icon in the **Component Switcher** in the viewport.
 
 ## Paint Brush Modes
 
