@@ -148,18 +148,18 @@ The following settings only apply to the smoothing brush.
 
 This number is expressed in *value space*. In other words, it describes the number of adjacent values to use in each direction regardless of how the values are mapped into world space.
 
-A larger smoothing radius will generally cause a smoother result across larger distances, but it also has an increased performance cost.
+A larger radius will generally cause a smoother result across larger distances, but it also has an increased performance cost.
 
-The Smoothing Radius is separate from the Paint Brush Size. The Paint Brush Size controls how many values will get smoothed, and the Smoothing Radius controls how many adjacent values are used to smooth each value. Only values within the Paint Brush will get smoothed, but values outside of the Paint Brush might be used for calculating the smoothed results.
+The **Smoothing Radius** is separate from the Paint Brush **Size**. The Paint Brush **Size** controls how many values will get smoothed, and the **Smoothing Radius** controls how many adjacent values are used to smooth each value. Only values within the Paint Brush will get smoothed, but values outside of the Paint Brush might be used for calculating the smoothed results.
 
 ## Hotkeys and CVars
 
 | Hotkey | Description |
 | - | - |
-| `[` | Decreases the Paint Brush Size |
-| `]` | Increases the Paint Brush Size |
-| `{` | Decreases the Paint Brush Hardness |
-| `}` | Increases the Paint Brush Hardness |
+| **[** | Decreases the Paint Brush **Size**. |
+| **]** | Increases the Paint Brush **Size**. |
+| **{** | Decreases the Paint Brush **Hardness**. |
+| **}** | Increases the Paint Brush **Hardness**. |
 
 | CVar | Description |
 | - | - |

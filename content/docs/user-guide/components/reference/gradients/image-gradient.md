@@ -37,7 +37,7 @@ The `Create New Image` Source Type has the following set of properties.
 | **Resolution** | Defines the number of pixels to use in the X and Y directions for the created image. | Int32: 1 to 8192 pixels | X: `512`, Y: `512` |
 | **Output Format** | Sets the output format for the created image, which determines how many bytes are used for each pixel. | `R8 (8-bit)`, `R16 (16-bit)`, `R32 (32-bit)` | `R32 (32-bit)` |
 
-To create a new image, set the properties to the desired image size and format and press the **Create** button. You will be prompted for a location to save the image. If the image is saved into a source asset directory that is used by the project, the Image Gradient will automatically switch the Source Type to `Use Existing Image` and populate the Image Asset field with the saved image.
+To create a new image, set the properties to the desired image size and format and press the **Create** button. You will be prompted for a location to save the image. If the image is saved into a source asset directory that is used by the project, the Image Gradient will automatically switch the **Source Type** to `Use Existing Image` and populate the **Image Asset** field with the saved image.
 
 {{< important >}}
 The image name should end in `_gsi` (ex: `image_gsi.tif`). This will ensure that the image is processed by the Asset Processor as a Gradient Signal Image (gsi) asset which will leave the image data uncompressed.
@@ -45,15 +45,15 @@ The image name should end in `_gsi` (ex: `image_gsi.tif`). This will ensure that
 
 ### Use Existing Image
 
-The `Use Existing Image` Source Type has the following set of properties.
+The `Use Existing Image` **Source Type** has the following set of properties.
 
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Image Asset** | Sets the source image to use as the gradient's values.<br><br>**NOTE:** The **Image Gradient** currently only supports a subset of all available pixel formats. Most of the uncompressed formats are supported, as well as the `BC1` compressed format. For a full list of supported formats, see `AZ::RPI::IsImageDataPixelAPISupported` | `.streamingimage` | None |
 | **Sampling Type** | The sampling type to use on the image data. | `Point`, `Bilinear`, `Bicubic` | `Point` |
 | **Tiling** | Sets the number of times to tile the image horizontally (X) and vertically (Y). | Vector2: 0.01 to Infinity | X: `1.0`, Y: `1.0` |
-| **Channel To Use** | The channel component of the image to sample from.<br><br>The `Terrarium` option is for an image-based terrain file format as defined by Mapzen [here](https://www.mapzen.com/blog/terrain-tile-service/) | `Red`, `Green`, `Blue`, `Alpha`, `Terrarium` | `Red` |
-| **Mip Index** | Specify which mip level index to sample from.<br><br>If you specify a mip level higher than the number of mip levels available in your image, then the highest existing mip index will be used (see [`MipCountMax`](https://github.com/o3de/o3de/blob/development/Gems/Atom/RHI/Code/Include/Atom/RHI.Reflect/Limits.h)). | Int: `0` to `15` | `0` |
+| **Channel To Use** | The channel component of the image to sample from.<br><br>The `Terrarium` option is for an image-based terrain file format as defined by Mapzen [here](https://www.mapzen.com/blog/terrain-tile-service/). | `Red`, `Green`, `Blue`, `Alpha`, `Terrarium` | `Red` |
+| **Mip Index** | Specify which mip level index to sample from.<br><br>If you specify a mip level higher than the number of mip levels available in your image, then the highest existing mip index will be used (refer to [`MipCountMax`](https://github.com/o3de/o3de/blob/development/Gems/Atom/RHI/Code/Include/Atom/RHI.Reflect/Limits.h)). | Int: `0` to `15` | `0` |
 | **Custom Scale** | Choose a value-scaling operation to be applied to all image data.<br><br>The `Auto` option will automatically scale the values into the `0`-`1` range based on the min/max values in the image data. | `None`, `Auto`, `Manual` | `None` |
 | **Range Minimum** | The minimum value used to scale image data into the `0`-`1` range for the gradient. All image values at or below the minimum will be scaled to `0`.<br> <br>*This field is available only if the **Custom Scale** field is set to `Manual`.* | Float: `0.0` to `1.0`  | `0.0` |
 | **Range Maximum** | The maximum value used to scale image data into the `0`-`1` range for the gradient. All image values at or above the maximum will be scaled to `1`.<br> <br>*This field is available only if the **Custom Scale** field is set to `Manual`.* | Float: `0.0` to `1.0`  | `1.0` |
@@ -65,9 +65,9 @@ There are several sampling types to choose from. Choosing the best sampling type
 
 | Sampling Type | Description | Performance Cost | Quality | Example |
 | - | - | - | - | - |
-| Point | `Point` sampling is the default and only samples a single point for each pixel of the source image.<br><br>This will produce blocky artifacts if the image is sampled at a higher frequency than the number of pixels. `Point` sampling produces the best results when the pixel size exactly matches the sampling frequency. | 1x | Poor | ![Image Gradient using point sampling](/images/user-guide/components/reference/gradients/image-gradient-component-point.png) |
-|  Bilinear | The `Bilinear` filter smooths out the image by requesting four points in a grid around a requested pixel and then performing interpolation between the points.<br><br>Because this uses linear interpolation between 4 points, bilinear filtering can cause noticeable plus-shaped artifacts in the smoothed data. `Bilinear` sampling is the best general-purpose choice, as it balances performance and quality. | 4x | Good | ![Image Gradient using bilinear interpolation](/images/user-guide/components/reference/gradients/image-gradient-component-bilinear.png) |
-|  Bicubic | The `Bicubic` filter smooths out the image by requesting sixteen points in a grid around a requested pixel and then performing Catmull-Rom interpolation between the points.<br><br>Because this uses non-linear interpolation, there are no noticeable plus-shaped artifacts in the smoothed data. `Bicubic` sampling is the best choice when quality is needed over performance. | 16x | Great | ![Image Gradient using bicubic interpolation](/images/user-guide/components/reference/gradients/image-gradient-component-bicubic.png) |
+| `Point` | `Point` sampling is the default and only samples a single point for each pixel of the source image.<br><br>This will produce blocky artifacts if the image is sampled at a higher frequency than the number of pixels. `Point` sampling produces the best results when the pixel size exactly matches the sampling frequency. | 1x | Poor | ![Image Gradient using point sampling](/images/user-guide/components/reference/gradients/image-gradient-component-point.png) |
+|  `Bilinear` | The `Bilinear` filter smooths out the image by requesting four points in a grid around a requested pixel and then performing interpolation between the points.<br><br>Because this uses linear interpolation between 4 points, bilinear filtering can cause noticeable plus-shaped artifacts in the smoothed data. `Bilinear` sampling is the best general-purpose choice, as it balances performance and quality. | 4x | Good | ![Image Gradient using bilinear interpolation](/images/user-guide/components/reference/gradients/image-gradient-component-bilinear.png) |
+|  `Bicubic` | The `Bicubic` filter smooths out the image by requesting sixteen points in a grid around a requested pixel and then performing Catmull-Rom interpolation between the points.<br><br>Because this uses non-linear interpolation, there are no noticeable plus-shaped artifacts in the smoothed data. `Bicubic` sampling is the best choice when quality is needed over performance. | 16x | Great | ![Image Gradient using bicubic interpolation](/images/user-guide/components/reference/gradients/image-gradient-component-bicubic.png) |
 
 ## Editing an image
 
