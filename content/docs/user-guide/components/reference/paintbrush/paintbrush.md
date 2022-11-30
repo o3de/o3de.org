@@ -30,7 +30,7 @@ A brush stroke consists of a series of overlapping circles with constant spacing
 
 End Paint Brush mode by pressing **Esc**, clicking the **Done** button on the component, or selecting a different component's icon in the **Component Switcher** in the viewport.
 
-## Paint Brush Modes
+## Paint Brush modes
 
 The Paint Brush has three separate modes - **Paint**, **Eyedropper**, and **Smooth**.
 
