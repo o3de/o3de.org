@@ -54,7 +54,7 @@ The Paint Brush Settings provides a **Color** setting for components that suppor
 
 #### Opacity
 
-**Opacity** controls the opacity of the entire brush stroke. Conceptually, if the entire brush stroke was painted into a separate paint layer, Opacity is the alpha value used to blend that layer back into the main layer. If a brush stroke crosses itself, it will not double-blend.
+**Opacity** controls the opacity of the entire brush stroke. Conceptually, if the entire brush stroke was painted into a separate paint layer, **Opacity** is the alpha value used to blend that layer back into the main layer. If a brush stroke crosses itself, it will not double-blend.
 
 If the component supports full-color values, the opacity can either be edited as a part of the color or via the Opacity slider. The same value is exposed in both places for convenience.
 
