@@ -49,7 +49,7 @@ The `Use Existing Image` **Source Type** has the following set of properties.
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Image Asset** | Sets the source image to use as the gradient's values.<br><br>**NOTE:** The **Image Gradient** currently only supports a subset of all available pixel formats. Most of the uncompressed formats are supported, as well as the `BC1` compressed format. For a full list of supported formats, see `AZ::RPI::IsImageDataPixelAPISupported` | `.streamingimage` | None |
+| **Image Asset** | Sets the source image to use as the gradient's values.<br><br>**NOTE:** The **Image Gradient** currently only supports a subset of all available pixel formats. Most of the uncompressed formats are supported, as well as the `BC1` compressed format. For a full list of supported formats, refer to [`AZ::RPI::IsImageDataPixelAPISupported`](https://github.com/o3de/o3de/blob/development/Gems/Atom/RPI/Code/Include/Atom/RPI.Public/RPIUtils.h). | `.streamingimage` | None |
 | **Sampling Type** | The sampling type to use on the image data. | `Point`, `Bilinear`, `Bicubic` | `Point` |
 | **Tiling** | Sets the number of times to tile the image horizontally (X) and vertically (Y). | Vector2: 0.01 to Infinity | X: `1.0`, Y: `1.0` |
 | **Channel To Use** | The channel component of the image to sample from.<br><br>The `Terrarium` option is for an image-based terrain file format as defined by Mapzen [here](https://www.mapzen.com/blog/terrain-tile-service/). | `Red`, `Green`, `Blue`, `Alpha`, `Terrarium` | `Red` |

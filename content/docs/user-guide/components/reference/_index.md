@@ -275,7 +275,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Vegetation Slope Alignment Modifier](vegetation-modifiers/vegetation-slope-alignment-modifier) | Offsets the orientation of the vegetation relative to a surface angle. |
 
 ## Supplemental Information
-The pages below provide information about data and systems used by the components above.
+The following pages provide additional information about data and systems used by the components.
 
 | Data/System | Description | 
 | - | - |
