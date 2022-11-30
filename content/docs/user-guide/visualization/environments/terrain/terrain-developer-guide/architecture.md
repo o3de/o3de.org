@@ -4,7 +4,7 @@ title: Architecture
 description: Developer documentation explaining the terrain system architecture
 weight: 200
 ---
-At the highest level, the Terrain system consists of a Terrain Gem that relies on a number of other Gems:
+At the highest level, the terrain system consists of a Terrain Gem that relies on a number of other Gems:
 
 ```goat
                   .--------------.
@@ -27,7 +27,7 @@ At the highest level, the Terrain system consists of a Terrain Gem that relies o
 
 The **Gradient Signal Gem** provides components that map data in the 0-1 range to world positions. The gradient components are used for defining height data and surface weight data. In particular, the **Image Gradient** component provides a convenient workflow for importing and using heightmaps and "splat maps" (surface weight maps) that are generated from external terrain authoring tools.
 
-The **Surface Data Gem** provides a way to define conceptual geometric shells with sets of arbitrary tags which can then be referenced from other systems (like Dynamic Vegetation) that operate on generic surfaces. The terrain system uses the Surface Data tags as the naming system for terrain surface types. It also implements a Surface Data component to make the terrain show up as a surface within the Surface Data system. This enables the Dynamic Vegetation system to treat terrain as a "plantable surface".
+The **Surface Data Gem** provides a way to define conceptual geometric volumes with sets of arbitrary tags which can then be referenced from other systems (like Dynamic Vegetation) that operate on generic surfaces. The terrain system uses the Surface Data tags as the naming system for terrain surface types. It also implements a Surface Data component to make the terrain show up as a surface within the Surface Data system. This enables the Dynamic Vegetation system to treat terrain as a "plantable surface".
 
 The **LmbrCentral Gem** defines all of the base shape components. Shape components are used by Terrain, Gradients, and Surface Data as a way to attach data to geometric volumes in the world. These volumes provide an easy way to author location, size, scale, and data density in easily-modifiable ways.
 
@@ -65,7 +65,7 @@ This diagram shows a sample communication flow as a Gradient component used for 
                                                                                                                                     +---------------+                                                                              
 ```
 
-It starts with a series of notification events to tell the Terrain System that data needs to refresh. The Terrain System then broadcasts outward that data has changed, which causes the Terrain Mesh Renderer to take action and refresh itself. The Terrain Mesh Renderer then queries the Terrain System for the height data that it needs to refresh itself. Other systems can listen to the OnTerrainDataChanged() notification and refresh themselves in parallel.
+It starts with a series of notification events to tell the terrain system that data needs to refresh. The terrain system then broadcasts outward that data has changed, which causes the Terrain Mesh Renderer to take action and refresh itself. The Terrain Mesh Renderer then queries the terrain system for the height data that it needs to refresh itself. Other systems can listen to the OnTerrainDataChanged() notification and refresh themselves in parallel.
 
 ## Internal system communication
 
@@ -99,7 +99,7 @@ Multiple terrain components:
   * Aspects of terrain rendering can be disabled for server-side or machine learning simulations that don't require a visual representation of terrain.
 * Different components can have different input data resolutions. The terrain system defines a single _output_ terrain grid and resolution, but the input data resolutions can be varied to optimize the data size and complexity based on the need for that region. Even within a region, two different data providers (such as height and surface type) can use two different resolutions based on what's appropriate for that type of data.
 * The functionality can be replaced at a component-by-component level.
-  * The PhysX Heightfield component could be replaced with one that connects to another physics system such as Jolt or Bullet.
+  * The PhysX Heightfield component could be replaced with one that connects to another physics system such as [Jolt Physics](https://github.com/jrouwe/JoltPhysics) or [Bullet Physics SDK](https://github.com/bulletphysics/bullet3).
   * Image Gradients can be used for areas with authored input data, and Fast Noise Gradients can be used to procedurally generate data in other areas.
   * New data providers can be created for streaming satellite data, performing complex procedural generation, etc, and swapped in without needing to replace the rest of the terrain system.
 
@@ -116,7 +116,7 @@ The terrain system uses three level components:
 | Component | Description |
 | - | - |
 | **Terrain World** | Controls the base terrain system. The entire system is enabled or disabled by adding or removing this component. The configuration parameters that affect the entire terrain world exist on this component as well.|
-| **Terrain World Renderer** | Controls the terrain rendering. It requires the **Terrain World** component to exist, and it provides all of the rendering configuration that needs to be consistent across the entire terrain. This component is kept separate from **Terrain World** so that it's possible to define a conceptual terrain without requiring the overhead of rendering for use cases where a visual representation simply isn't necessary. Also, this provides a "replacement touchpoint" for creating different terrain renderers, such as a voxel-based implementation or a raytracing-based implementation.|
+| **Terrain World Renderer** | Controls the terrain rendering. It requires the **Terrain World** component to exist, and it provides all of the rendering configuration settings that apply globally to the entire terrain. This component is separated from **Terrain World** so that it's possible to define a conceptual terrain without requiring the overhead of rendering. This is useful for cases where a visual representation simply isn't necessary. Also, this provides a "replacement touchpoint" for creating different terrain renderers, such as a voxel-based implementation or a raytracing-based implementation.|
 | **Terrain World Debugger** | Provides helpful debugging features for visualizing aspects of the terrain system. This component is kept separate from **Terrain World** so that it can easily be completely removed from shipping products.|
 
 ### Entity components
@@ -138,6 +138,6 @@ The "auxiliary" components only require a Box Shape on their entity, but not a T
 
 | Component | Description |
 | - | - |
-| **Terrain Macro Material** | Defines terrain base coloring for all terrain regions that fall within its volume. Macro materials aren't directly attached to single terrain regions so that they can be authored and streamed at different world resolutions than the terrain regions. |
+| **Terrain Macro Material** | Applies a terrain base color texture to all terrain regions that fall within its volume. Macro materials aren't directly attached to single terrain regions so that they can be authored and streamed at different world resolutions than the terrain regions. |
 | **Terrain Surface Materials List** | Defines the mapping between surface types and rendering materials. By keeping this separate from terrain regions, if the list of surface materials and type mappings are constant throughought the world, this can just be authored once with a box large enough to contain the world, instead of duplicated on each terrain region. |
 | **Terrain Physics Collider** / **PhysX Heightfield Collider** | Defines volumes that contains physics heightfield colliders. These have been separated from terrain regions so that they can easily be spawned and despawned at different sizes and times than the rest of the terrain data. |
