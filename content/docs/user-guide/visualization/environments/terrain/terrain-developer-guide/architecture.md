@@ -7,22 +7,28 @@ weight: 200
 At the highest level, the terrain system consists of a Terrain Gem that relies on a number of other Gems:
 
 ```goat
-                  .--------------.
-                 |    Terrain     |
-                  '--+---+-+---+-'
-                     |   | |   |
-                     |   | |    '------------------.
-            .-------'    |  '--------.              |
-           |             |            |             |
-           v             |            v             |
-  .--------+----------.  |  .---------+------.      | 
- |   Gradient Signal   | | |   Surface Data   |     |
-  '------------+------'  |  '------+---------'      |
-               |         |         |                |
-               v         v         v                v
-        .------+---------+---------+------.     .--------.
-       |   LmbrCentral (Shape Components)  |   |   Atom   |
-        '---------------------------------'     '--------'
+                         .--------------.
+                        |    Terrain     |
+                         '--+-+-+-+---+-'
+                            | | | |   |
+     .---------------------'  | | |    '------------------.
+    |              .---------'  |  '--------.              |
+    |             |             |            |             |
+    |             v             |            v             |
+    |    .--------+----------.  |  .---------+------.      | 
+    |   |   Gradient Signal   | | |   Surface Data   |     |
+    |    '------------+------'  |  '------+---------'      |
+    |                 |         |         |                |
+    |                 v         v         v                v
+    |          .------+---------+---------+------.     .--------.
+    |         |   LmbrCentral (Shape Components)  |   |   Atom   |
+    |          '---------------------------------'     '--------'
+    |
+    v    
+ .-----------------------------------------------------------.
+|           AzFramework (Terrain API Definitions)             |
+ '-----------------------------------------------------------'
+
 ```
 
 The **Gradient Signal Gem** provides components that map data in the 0-1 range to world positions. The gradient components are used for defining height data and surface weight data. In particular, the **Image Gradient** component provides a convenient workflow for importing and using heightmaps and "splat maps" (surface weight maps) that are generated from external terrain authoring tools.
@@ -50,20 +56,7 @@ There are some pros and cons to this design. The main benefits are design simpli
 
 This diagram shows a sample communication flow as a Gradient component used for height gets activated. This particular example demonstrates both change notifications and data requests in a single series of actions.
 
-```goat
-                                                                               +---------------+
-+------------+  OnCompositionChanged()   +------------------+  RefreshArea()   | +-----------+ |
-|  Gradient  +-------------------------->|  Terrain Height  +----------------->| |  Terrain  | |
-+------------+                           |  Gradient list   |                  | |  System   | |
-                                         +------------------+                  | +-----------+ |
-                                                                               +-------+-------+
-                                                                                       |                                            +---------------+
-                                                                OnTerrainDataChanged() |           +--------------+  QueryRegion()  | +-----------+ |  GetHeights()  +------------------+  GetValues()   +------------+
-                                                                                       +---------->| Terrain Mesh +---------------->| |  Terrain  | +--------------->|  Terrain Height  +--------------->|  Gradient  |
-                                                                                                   | Renderer     |<----------------+ |  System   | |<---------------+  Gradient list   |<---------------+            |
-                                                                                                   +--------------+                 | +-----------+ |                +------------------+                +------------+
-                                                                                                                                    +---------------+                                                                              
-```
+{{< image-width src="/images/user-guide/visualization/environments/terrain/terrain-communication-flow.svg" width="1200" alt="Terrain communication flow." >}}
 
 It starts with a series of notification events to tell the terrain system that data needs to refresh. The terrain system then broadcasts outward that data has changed, which causes the Terrain Mesh Renderer to take action and refresh itself. The Terrain Mesh Renderer then queries the terrain system for the height data that it needs to refresh itself. Other systems can listen to the OnTerrainDataChanged() notification and refresh themselves in parallel.
 
