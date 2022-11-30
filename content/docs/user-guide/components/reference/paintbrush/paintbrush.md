@@ -92,7 +92,7 @@ An example of a brush stroke crossing itself with medium opacity:
 | 1% | ![Paintbrush flow of 1%.](/images/user-guide/components/reference/paintbrush/paintbrush-flow-1.png) |
 | 100% | ![Paintbrush flow of 100%.](/images/user-guide/components/reference/paintbrush/paintbrush-flow-100.png) |
 
-Because the Flow opacity affects each brush circle, overlapping circles in the same brush stroke will blend with each other.
+Because the **Flow** opacity affects each brush circle, overlapping circles in the same brush stroke will blend with each other.
 
 An example of a brush stroke crossing itself with medium flow:
 ![Example of brush stroke crossing itself with medium flow.](/images/user-guide/components/reference/paintbrush/paintbrush-flow-overlap.png)
