@@ -19,7 +19,7 @@ The few cases where you need to work directly with files are covered by a small 
 
 The pure-virtual base class `FileIOBase` \(located in `\dev\Code\Framework\AzCore\AzCore\IO AzCore\IO\FileIO.h`\) defines the API for accessing files. It is a basic blocking low-level file API, as the following code shows:
 
-```
+```cpp
 class FileIOBase
 {
 ...
@@ -79,21 +79,20 @@ FileIOBase::GetAlias()
 This section describes the use of directory aliases.
 
 **`@assets@`**
-Refers to the asset cache. This is the default alias when no alias is specified. Note the following:
-+ Because `@assets@` is the default alias, code can simply load files by name \(for example, `textures\MyTexture.dds`\) without using the asset system. This makes it unnecessary to have the `@assets@` alias appear throughout the code.
+Refers to the asset cache directory. This is the default alias when no alias is specified. Note the following:
++ Because `@assets@` is the default alias, code can simply load files by name (for example, `textures\MyTexture.dds`) without using the asset system. This makes it unnecessary to have the `@assets@` alias appear throughout the code.
 
     {{< note >}}
 If you are loading files from the asset cache, do not prefix your file names with the `@assets@` alias. The use of aliases is required only when you must alter the default behavior. This best practice makes your code easier to read and enhances compatibility.
 {{< /note >}}
 
-+ During development on a PC, `@assets@` points to the `dev\Cache\<game_name>\pc\<game_name>` directory. After release, it points to the directory where your `.pak` files are stored (not the root of your cache where your configuration files are stored).
++ During development on a PC, `@assets@` points to the `Cache\<project_name>\pc\<project_name>` directory. After release, it points to the directory where your `.pak` files are stored (not the root of your cache where your configuration files are stored).
 + Because the asset cache can be locked by asset processing operations, attempting to write to the asset cache can cause an assertion fail. Do not attempt to write files to the asset cache.
 
 **`@root@`**
-Specifies the location of the root configuration files like `bootstrap.cfg`. Note the following:
-+ The asset cache `@assets@` can be a child directory of `@root@`, but that is not always the case. Therefore, do not make this assumption. If you want to load a root file, use `@root@`. If you want to load assets, either use no alias \(because `@assets@` is the default\), or use `@assets@`.
-+ During development, the `@root@` directory maps to your `dev\Cache\<game_name>\pc` directory. In release, this directory is the root directory of your game distribution \(where the `bootstrap.cfg` file is stored\).
-+ Attempting to write to the `@assets@` location causes an assertion fail. You should change these files in your source `dev\` directory, not in the cache.
+Specifies the location of the project root configuration files. Note the following:
++ The asset cache `@assets@` can be a child directory of `@root@`, but that is not always the case. Therefore, do not make this assumption. If you want to load a root file, use `@root@`. If you want to load assets, either use no alias (because `@assets@` is the default), or use `@assets@`.
++ During development, the `@root@` directory maps to your `<project_name>` directory. In release, this directory is the root directory of your game distribution.
 
 **`@user@`**
 Specifies a writable directory that stores data between gaming sessions. Note the following:
@@ -111,7 +110,7 @@ Specifies a writable directory for storing diagnostic logs.
 
 A. The following code example opens a file in the assets directory.
 
-```
+```cpp
 using namespace AZ::IO;
 HandleType fileHandle = InvalidHandle;
 // Because @assets@\config\myfile.xml is desired, an alias doesn't have to be specified.
@@ -128,7 +127,7 @@ Note that because aliases are used in the preceding example, the `config\myfile.
 
 B. The following code example opens a file in the log directory and appends log lines to it.
 
-```
+```cpp
 using namespace AZ::IO;
 HandleType fileHandle = InvalidHandle;
 // In this rare case, you want to write to a file in the @log@ alias,
@@ -148,7 +147,7 @@ The `FileIOStream` class in the `AZ::IO` namespace automatically closes a file w
 The following aliases are applicable only for editor tools.
 
 **`@devroot@`**
-Specifies the `\dev\` directory of your source tree where files like `bootstrap.cfg` are located. These files are consumed by the Asset Processor and deployed into the cache specified by `@root@`.
+Specifies the root directory of your source tree where files like `engine.json` are located. These files are consumed by the Asset Processor and deployed into the cache specified by `@root@`.
 
 **`@devassets@`**
 Specifies the location of your game project's assets directory in the source tree. This directory contains uncompiled source files like `.tif` or `.fbx` files. It does not contain compressed `.dds` files or other assets that a game normally uses. Note the following:
@@ -162,16 +161,16 @@ To service the needs of the game client and tools, more than one `FileIO` instan
 
 ![File access in local and remote scenarios](/images/user-guide/programming/file-access-direct-1.png)
 
-The behavior of the **Either/Or** branch depends on whether the virtual file system (VFS) feature \(`RemoteFileIO` in the diagram\) is enabled. VFS reads assets remotely from non-PC devices such as Android and iOS, allowing for the live reloading of assets. Otherwise, assets would need to be deployed directly onto game devices. VFS is disabled by default. To enable VFS, edit the `remote_filesystem` entry of the `\dev\bootstrap.cfg` configuration file, as in the following example.
+The behavior of the **Either/Or** branch depends on whether the virtual file system (VFS) feature (`RemoteFileIO` in the diagram) is enabled. VFS reads assets remotely from non-PC devices such as Android and iOS, allowing for the live reloading of assets. Otherwise, assets would need to be deployed directly onto game devices. VFS is disabled by default. To enable VFS, edit the `remote_filesystem` entry of the engine's `Registry\bootstrap.setreg` configuration file, as in the following example.
 
-```
+```json
 -- remote_filesystem - enable Virtual File System (VFS)
-remote_filesystem=1
+"remote_filesystem": 1
 ```
 
 Because the VFS feature is at a low level, file access operations are transmitted transparently over the network through the Asset Processor to the layers above.
 
-To send requests for files through other systems, you can implement your own version of `FileIOBase` \(or one of the derived classes such as `RemoteFileIO` or `LocalFileIO`\). If you replace the instance returned by either `GetInstance` or `GetDirectinstance` with your own instance, the `FileIO` system uses your layer instead. You can form a stack of additional filters by replacing the instance with your own. Then make your own instance call down into the previously installed instance.
+To send requests for files through other systems, you can implement your own version of `FileIOBase` (or one of the derived classes such as `RemoteFileIO` or `LocalFileIO`). If you replace the instance returned by either `GetInstance` or `GetDirectinstance` with your own instance, the `FileIO` system uses your layer instead. You can form a stack of additional filters by replacing the instance with your own. Then make your own instance call down into the previously installed instance.
 
 ## Asynchronous Streaming 
 
