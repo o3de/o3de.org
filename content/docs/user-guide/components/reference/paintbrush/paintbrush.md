@@ -4,7 +4,7 @@ title: Paint Brush
 description: ' The Paint Brush is a generalized tool for manipulating arbitrary data in world space using standard painting controls. '
 ---
 
-In O3DE, many different components attach data to world space positions and regions. This data can be edited externally in content creation tools, but sometimes it can be easier to edit the data directly in the context of the assembled world inside of O3DE.
+In O3DE, many different components attach data to world space positions and regions. You can edit this data externally in content creation tools, but sometimes it can be easier to edit the data directly in the context of the assembled world inside of O3DE.
 
 The Paint Brush is an editing mode available on some types of components to enable standard painting controls for editing the component's data in world space.
 
