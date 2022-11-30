@@ -81,7 +81,7 @@ An example of a brush stroke crossing itself with medium opacity:
 
 #### Size
 
-Size controls the diameter of each brush circle. The size is specified in meters in world space coordinates, not in pixels or the number of values affected in the component.
+**Size** controls the diameter of each brush circle. The size is specified in meters in world space coordinates, not in pixels or the number of values affected in the component.
 
 #### Flow
 
