@@ -50,7 +50,7 @@ There are three types of Paint Brush Settings - settings that affect brush strok
 
 The Paint Brush Settings provides a **Color** setting for components that support full-color values or an **Intensity** setting for components that only support a single-channel greyscale value.
 
-Color controls the color and opacity for the entire brush stroke. Intensity controls the greyscale value for the entire brush stroke.
+**Color** controls the color and opacity for the entire brush stroke. **Intensity** controls the greyscale value for the entire brush stroke.
 
 #### Opacity
 
