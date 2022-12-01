@@ -41,7 +41,7 @@ The terrain physics support is provided through a divided component system. One 
 
 ## Terrain renderer
 
-The entire terrain renderer could be replaced by creating new rendering level components, rendering entity components, feature processors, and shaders. Replacing the renderer will have no effect on the base terrain system or the terrain physics integrations. This undertaking isn't for the faint of heart, as a high-performance terrain renderer can be difficult to write.
+The entire terrain renderer can be replaced by creating new rendering level components, rendering entity components, feature processors, and shaders. Replacing the renderer doesn't affect the base terrain system or the terrain physics integrations.
 
 ## Terrain system
 

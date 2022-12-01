@@ -10,7 +10,7 @@ There are a number of improvements that could potentially be made to the terrain
 
 ## Large-scale improvements
 
-This category of improvements requires architecting new solutions to provide extensive new capabilities.
+This category of improvements requires architecting solutions to provide extensive new capabilities.
 
 ### 3D geometry support
 
@@ -24,11 +24,11 @@ The terrain system is built on top of the gradient components, which perform all
 
 ## Additional features
 
-This category of improvements should be possible to incrementally add into the system without fundamentally altering anything about how the system currently works.
+This category of improvements may be incrementally added to the system without fundamentally altering anything about how the system currently works.
 
 ### Triangle split direction
 
-The terrain currently always triangulates each quad in the same uniform direction. This could be replaced with heuristics for choosing the best direction for each quad. This could even be exposed as multiple heuristics - same direction for every quad, alternating directions per quad, best choice per quad based on vertex heights. This decision should be controlled at the terrain system level, so that the information can be provided consistently to the terrain debugger, terrain physics, terrain rendering, terrain raycasting, etc.
+Currently, the terrain always triangulates each quad in the same uniform direction. This can be replaced with heuristics for choosing the best direction for each quad. This can even be exposed as multiple heuristics: same direction for every quad, alternating directions per quad, or best choice per quad based on vertex heights. This decision should be controlled at the terrain system level, so that the information can be provided consistently to the terrain debugger, terrain physics, terrain rendering, terrain raycasting, etc.
 
 ### Improved shape to height workflows
 
