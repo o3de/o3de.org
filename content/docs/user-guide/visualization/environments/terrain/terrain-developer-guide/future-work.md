@@ -14,7 +14,7 @@ This category of improvements requires architecting solutions to provide extensi
 
 ### 3D geometry support
 
-Instead of a heightfield-based approach, the APIs and renderer could be extended to use a full 3D approach, whether it's through voxels, displacement maps, mesh ingestion, raytracing, or some other technology. This would enable the system to support caves, arches, cliff geometry, and other vertical or overlapping terrain features that simply can't be supported through a pure heightfield approach.
+Instead of a heightfield-based approach, the APIs and renderer can be extended to use a full 3D approach, whether it's through voxels, displacement maps, mesh ingestion, raytracing, or some other technology. This would enable the system to support caves, arches, cliff geometry, and other vertical or overlapping terrain features that can't be supported through a pure heightfield approach.
 
 The API extensions will likely consist of redefining the current APIs to provide the _highest elevation_ terrain data that appears below the given query input positions, and then adding more APIs to provide _all_ the terrain data that exists at or below the given query positions.
 
