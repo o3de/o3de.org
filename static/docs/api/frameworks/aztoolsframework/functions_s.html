@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -54,6 +54,10 @@ $(function() {
 </li>
 <li>SaveAssetAs()
 : <a class="el" href="class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_widget_requests.html#aedcace317b619dbd7962bb2f6a8a3cbf">AzToolsFramework::AssetEditor::AssetEditorWidgetRequests</a>
+</li>
+<li>SaveCurrentPrefab()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_integration_interface.html#a5c04c28a0b93c26cb6c55bd7cf944626">AzToolsFramework::Prefab::PrefabIntegrationInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_integration_manager.html#a68423d9f0f0133e29edb28d5042d9f47">AzToolsFramework::Prefab::PrefabIntegrationManager</a>
 </li>
 <li>saveKeyName
 : <a class="el" href="struct_az_tools_framework_1_1_view_pane_options.html#a8024d90d9215c341dad16536701ee513">AzToolsFramework::ViewPaneOptions</a>
@@ -135,6 +139,25 @@ $(function() {
 <li>SetAbortRequested()
 : <a class="el" href="class_legacy_framework_1_1_framework_application_messages.html#a8dcdf230957195b3ebfe94f66e6cdcd1">LegacyFramework::FrameworkApplicationMessages</a>
 </li>
+<li>SetActionCategory()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#a05e2add2ec9913e0d2643090dbeaa228">AzToolsFramework::ActionManagerInterface</a>
+</li>
+<li>SetActionDescription()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#ae6481f960b61b5fe3692ad56329d0dab">AzToolsFramework::ActionManagerInterface</a>
+</li>
+<li>SetActionHotKey()
+: <a class="el" href="class_az_tools_framework_1_1_hot_key_manager.html#a9af18206940feec034d30e4bf35441eb">AzToolsFramework::HotKeyManager</a>
+, <a class="el" href="class_az_tools_framework_1_1_hot_key_manager_interface.html#aa4fce86aeb32c73c306ed83cf56a4e59">AzToolsFramework::HotKeyManagerInterface</a>
+</li>
+<li>SetActionIconPath()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#afbabc8c2f7449d20682bb85b53c61a53">AzToolsFramework::ActionManagerInterface</a>
+</li>
+<li>SetActionName()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#a279885b29497510140ba7f8067fa2825">AzToolsFramework::ActionManagerInterface</a>
+</li>
+<li>SetAdapter()
+: <a class="el" href="class_az_tools_framework_1_1_document_property_editor.html#a719850e065227faf99463d5acbf9a7aa">AzToolsFramework::DocumentPropertyEditor</a>
+</li>
 <li>SetAddComponentModeCallback()
 : <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_delegate.html#a35907cc4b71431fdb8022d3f98dd596b">AzToolsFramework::ComponentModeFramework::ComponentModeDelegate</a>
 </li>
@@ -197,6 +220,10 @@ $(function() {
 <li>SetCursorCaptureEnabled()
 : <a class="el" href="class_az_tools_framework_1_1_qt_event_to_az_input_mapper.html#aa21e3a70523bfce40dbc6d28b2476049">AzToolsFramework::QtEventToAzInputMapper</a>
 </li>
+<li>SetCursorMode()
+: <a class="el" href="class_az_tools_framework_1_1_qt_event_to_az_input_mapper.html#aaf0521835c4c6943e26ae567912482f2">AzToolsFramework::QtEventToAzInputMapper</a>
+, <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_mouse_cursor_requests.html#aa9f233b5dc43962bb82fea33257c7501">AzToolsFramework::ViewportInteraction::ViewportMouseCursorRequests</a>
+</li>
 <li>SetDefaultHandler()
 : <a class="el" href="class_az_tools_framework_1_1_editor_interaction_system_viewport_selection.html#a2283eaa4e284c6cce509b535c88e1bf1">AzToolsFramework::EditorInteractionSystemViewportSelection</a>
 </li>
@@ -218,6 +245,9 @@ $(function() {
 <li>SetEnabled()
 : <a class="el" href="class_az_tools_framework_1_1_qt_event_to_az_input_mapper.html#a66c0ce7ab533c6195e0f33af53d2f21b">AzToolsFramework::QtEventToAzInputMapper</a>
 </li>
+<li>SetEnabledStateCallback()
+: <a class="el" href="class_az_tools_framework_1_1_editor_action.html#a96a4842cc2409ddc01e0afa8d4f2886c">AzToolsFramework::EditorAction</a>
+</li>
 <li>SetEnableEditorUiFunc()
 : <a class="el" href="class_az_tools_framework_1_1_editor_window_request_bus_impl.html#aa6cc4904850e72122d7a4e799303e76f">AzToolsFramework::EditorWindowRequestBusImpl</a>
 </li>
@@ -237,8 +267,18 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_focus_mode_interface.html#a412c8dd1801bc0857ae850bc902b4d95">AzToolsFramework::FocusModeInterface</a>
 , <a class="el" href="class_az_tools_framework_1_1_focus_mode_system_component.html#a30f68c61e0f770965c14ba464a8b49a9">AzToolsFramework::FocusModeSystemComponent</a>
 </li>
+<li>SetForceAddEntitiesToBackFlag()
+: <a class="el" href="class_az_tools_framework_1_1_editor_entity_context_notification.html#a3cdfedff61e2ea4656367fc57ea3cf6f">AzToolsFramework::EditorEntityContextNotification</a>
+</li>
 <li>SetHandler()
 : <a class="el" href="class_az_tools_framework_1_1_editor_interaction_system_viewport_selection.html#a76631d8f324f0365f4d1db8c25ca3f31">AzToolsFramework::EditorInteractionSystemViewportSelection</a>
+</li>
+<li>SetHashedPathUsedForEntityIdGeneration()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_entity_id_path_mapper_interface.html#ae3195b3731f3c6cf1700e7f487df8403">AzToolsFramework::Prefab::PrefabConversionUtils::EntityIdPathMapperInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_prefab_processor_context.html#a430f2ad7a2c7da4e7020917515f74111">AzToolsFramework::Prefab::PrefabConversionUtils::PrefabProcessorContext</a>
+</li>
+<li>SetIntensity()
+: <a class="el" href="class_az_tools_framework_1_1_paint_brush_requests.html#a2dca050f5ad03454efe8b6b46cf68fc6">AzToolsFramework::PaintBrushRequests</a>
 </li>
 <li>SetKeySequence()
 : <a class="el" href="struct_az_tools_framework_1_1_action_override.html#a4be0d5b9afe6e28bc8d1e5cd6253d658">AzToolsFramework::ActionOverride</a>
@@ -262,6 +302,9 @@ $(function() {
 <li>SetNewComponentId()
 : <a class="el" href="class_az_tools_framework_1_1_entity_property_editor_requests.html#a28f7e829ca6ec6ca2fb1eb8501e802a0">AzToolsFramework::EntityPropertyEditorRequests</a>
 </li>
+<li>SetOpacity()
+: <a class="el" href="class_az_tools_framework_1_1_paint_brush_requests.html#acac8cb5d080a8e8dac2c42ab196ef3e4">AzToolsFramework::PaintBrushRequests</a>
+</li>
 <li>SetOverrideCursor()
 : <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_mouse_cursor_requests.html#ac128396e7a8e406acc71fd8fe790ef92">AzToolsFramework::ViewportInteraction::ViewportMouseCursorRequests</a>
 </li>
@@ -271,16 +314,29 @@ $(function() {
 <li>SetOverwriteFlag()
 : <a class="el" href="class_az_tools_framework_1_1_layers_1_1_editor_layer_component_requests.html#a6dc32dce0f606b5289855ff1d90934f9">AzToolsFramework::Layers::EditorLayerComponentRequests</a>
 </li>
+<li>SetOwningPrefabInstanceOpenState()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html#a77f4614e54781995627d24e370651604">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>
+</li>
+<li>SetPrefabEditScope()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html#a6b4cc6830386741dda459429db5faedd">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>
+</li>
 <li>SetPrimaryAsset()
 : <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a84b9458691ab8798b47a16d9cda353e6">AzToolsFramework::Components::EditorComponentBase</a>
 , <a class="el" href="class_az_tools_framework_1_1_components_1_1_generic_component_wrapper.html#aa8d613e605a0ec7a17b64e450f74bca3">AzToolsFramework::Components::GenericComponentWrapper</a>
 , <a class="el" href="class_az_tools_framework_1_1_components_1_1_script_editor_component.html#a9e3c8d253822c43b8f6d566706364dfd">AzToolsFramework::Components::ScriptEditorComponent</a>
+</li>
+<li>SetRadius()
+: <a class="el" href="class_az_tools_framework_1_1_paint_brush_requests.html#a7f74c2db5da727fc8a60d991a22b0060">AzToolsFramework::PaintBrushRequests</a>
 </li>
 <li>SetSelectedEntities()
 : <a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#acac664257211fcf0c1f0f51563efea84">AzToolsFramework::ToolsApplicationRequests</a>
 </li>
 <li>SetSelectedPosition()
 : <a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#ab0411b2c81cd5b2975eb8eeb6c05c4ce">AzToolsFramework::EditorVertexSelectionBase&lt; Vertex &gt;</a>
+</li>
+<li>SetShouldPauseInstancePropagation()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html#af67caaa89c1919449400bbf0fd5b224d">AzToolsFramework::Prefab::InstanceUpdateExecutor</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#a6e18b39a29928e47aa91fb2616435bec">AzToolsFramework::Prefab::InstanceUpdateExecutorInterface</a>
 </li>
 <li>SetShowCircularDependencyError()
 : <a class="el" href="class_az_tools_framework_1_1_editor_requests.html#a337e33e62811a9db2c16122e28503f8b">AzToolsFramework::EditorRequests</a>
@@ -299,7 +355,13 @@ $(function() {
 , <a class="el" href="class_az_tools_framework_1_1_log_panel_1_1_styled_log_panel.html#a32a13ff6561286e83cf103dc84cf3339">AzToolsFramework::LogPanel::StyledLogPanel</a>
 </li>
 <li>SetSwitcherActiveButton()
-: <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a66da743ce25c8aa2ce7fe58ce79164c9">AzToolsFramework::ViewportUi::ViewportUiRequests</a>
+: <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a47efc69010e4c6c1d5074faa0d0ae412">AzToolsFramework::ViewportUi::ViewportUiRequests</a>
+</li>
+<li>SetSwitcherButtonTooltip()
+: <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#af5a16660f3856849e42dd660d95739f2">AzToolsFramework::ViewportUi::ViewportUiRequests</a>
+</li>
+<li>SetSwitcherVisible()
+: <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a68776bfb36d9819568011ae0ef41cf80">AzToolsFramework::ViewportUi::ViewportUiRequests</a>
 </li>
 <li>SetTemplateDirtyFlag()
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a790da65f5aee943c5a24958fcca7649e">AzToolsFramework::Prefab::PrefabSystemComponent</a>
@@ -309,10 +371,6 @@ $(function() {
 </li>
 <li>SetTextFieldVisible()
 : <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a0a8548ec628679523ea6e268b1475d9c">AzToolsFramework::ViewportUi::ViewportUiRequests</a>
-</li>
-<li>SetThumbnailContext()
-: <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_entry_delegate.html#ace5a1376560c3e94ea719234f5ef71aa">AzToolsFramework::AssetBrowser::EntryDelegate</a>
-, <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnail_delegate.html#a94b08b11f8655ad89bc0c1570a87d2c3">AzToolsFramework::Thumbnailer::ThumbnailDelegate</a>
 </li>
 <li>SetTip()
 : <a class="el" href="struct_az_tools_framework_1_1_action_override.html#a857be11a430a5a0ba292ac0fb7348dcc">AzToolsFramework::ActionOverride</a>
@@ -336,6 +394,12 @@ $(function() {
 <li>SetValueComparisonFunction()
 : <a class="el" href="class_az_tools_framework_1_1_instance_data_hierarchy.html#a1b18f0b5fadc51a6d8cee1978e3f1b5a">AzToolsFramework::InstanceDataHierarchy</a>
 </li>
+<li>SetValueFromDom()
+: <a class="el" href="class_az_tools_framework_1_1_container_action_button_handler.html#a0358d6c07dd15733b230fdded6efae90">AzToolsFramework::ContainerActionButtonHandler</a>
+, <a class="el" href="class_az_tools_framework_1_1_d_p_e_row_widget.html#a51db8692f8fc822982889c896bcfd849">AzToolsFramework::DPERowWidget</a>
+, <a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html#a4b927a9124d67c9d9ebf76fda893329f">AzToolsFramework::PropertyHandlerWidgetInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_rpe_property_handler_wrapper.html#ade142a0fd7c090cbae4f0ece2857be4b">AzToolsFramework::RpePropertyHandlerWrapper&lt; WrappedType &gt;</a>
+</li>
 <li>SetVertexPositionsUpdatedCallback()
 : <a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#afd0eda0c3859a3989c6008845db6b7ca">AzToolsFramework::EditorVertexSelectionBase&lt; Vertex &gt;</a>
 </li>
@@ -355,11 +419,20 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_editor_component_a_p_i_requests.html#a0dbd57783c6d2644a9531aa0eda75aa3">AzToolsFramework::EditorComponentAPIRequests</a>
 , <a class="el" href="class_az_tools_framework_1_1_property_tree_editor.html#a0e3678e885bf3c1314ccbfb04d30166f">AzToolsFramework::PropertyTreeEditor</a>
 </li>
+<li>SetWidgetActionCategory()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#a1188ac09d83604383e781accd615ac56">AzToolsFramework::ActionManagerInterface</a>
+</li>
+<li>SetWidgetActionName()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#ad44dd6064b95b8c675f181fc332bc9fe">AzToolsFramework::ActionManagerInterface</a>
+</li>
 <li>Shift()
 : <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_keyboard_modifiers.html#a86597280e1f056c9f937c6bc745d0af0">AzToolsFramework::ViewportInteraction::KeyboardModifiers</a>
 </li>
 <li>shortcut
 : <a class="el" href="struct_az_tools_framework_1_1_view_pane_options.html#ac126e277672bd0a019091ef9becd889e">AzToolsFramework::ViewPaneOptions</a>
+</li>
+<li>ShouldHandleNode()
+: <a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html#a2962347c031c8340edd05fb4497a1d5b">AzToolsFramework::PropertyHandlerWidgetInterface</a>
 </li>
 <li>ShouldRunAssetProcessor()
 : <a class="el" href="class_legacy_framework_1_1_framework_application_messages.html#ab8474b151240677f47bc7ae7358d469a">LegacyFramework::FrameworkApplicationMessages</a>
@@ -421,11 +494,14 @@ $(function() {
 <li>SnapSelectedEntitiesToWorldGrid()
 : <a class="el" href="class_az_tools_framework_1_1_editor_transform_component_selection_requests.html#ad805f8227b8c8cda149ac9bb6ed4a849">AzToolsFramework::EditorTransformComponentSelectionRequests</a>
 </li>
-<li>SnapVerticesToTerrain()
-: <a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#a4e49e608779b1fc2f59b29b8d1f91edf">AzToolsFramework::EditorVertexSelectionBase&lt; Vertex &gt;</a>
+<li>SnapVerticesToSurface()
+: <a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#ab5036d69b35bd7abb36722ca33fe4391">AzToolsFramework::EditorVertexSelectionBase&lt; Vertex &gt;</a>
 </li>
 <li>SourceFileChanged()
 : <a class="el" href="class_az_tools_framework_1_1_asset_system_1_1_asset_system_notifications.html#a238fb3b42f52d2f6057c2d3fe1ece22b">AzToolsFramework::AssetSystem::AssetSystemNotifications</a>
+</li>
+<li>SourceFileCreatorFunctionType
+: <a class="el" href="struct_az_tools_framework_1_1_asset_browser_1_1_source_file_creator_details.html#a0ada576b228503ece22ab3d4df8f12da">AzToolsFramework::AssetBrowser::SourceFileCreatorDetails</a>
 </li>
 <li>SourceFileDetails()
 : <a class="el" href="struct_az_tools_framework_1_1_asset_browser_1_1_source_file_details.html#a153fbd3c6c6b6876b0ba97c9f4e40ca4">AzToolsFramework::AssetBrowser::SourceFileDetails</a>
@@ -468,8 +544,17 @@ $(function() {
 <li>StopPython()
 : <a class="el" href="class_az_tools_framework_1_1_editor_python_events_interface.html#aa7ea6c5362fcb3fcf588a39454695753">AzToolsFramework::EditorPythonEventsInterface</a>
 </li>
+<li>StreamReadFn
+: <a class="el" href="class_az_tools_framework_1_1_view_bookmark_persist_interface.html#ae66b7d807b14aad20cc6b06b481730b6">AzToolsFramework::ViewBookmarkPersistInterface</a>
+</li>
+<li>StreamWriteFn
+: <a class="el" href="class_az_tools_framework_1_1_view_bookmark_persist_interface.html#a049523a8ce2d3d47f9883b98000c9aa9">AzToolsFramework::ViewBookmarkPersistInterface</a>
+</li>
 <li>SupportsEditorRayIntersect()
 : <a class="el" href="class_az_tools_framework_1_1_editor_component_selection_requests.html#a07285502055b0ddf9969248bd3d8d003">AzToolsFramework::EditorComponentSelectionRequests</a>
+</li>
+<li>SupportsEditorRayIntersectViewport()
+: <a class="el" href="class_az_tools_framework_1_1_editor_component_selection_requests.html#acf3375e27a01ea7cc34284d8351191ea">AzToolsFramework::EditorComponentSelectionRequests</a>
 </li>
 <li>SupportsViewportEntityIdPicking()
 : <a class="el" href="class_az_tools_framework_1_1_editor_entity_context_picking_requests.html#abb65a342fabb243d066b9828ab39961f">AzToolsFramework::EditorEntityContextPickingRequests</a>
@@ -478,7 +563,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:41 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:35 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -82,6 +82,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a42b5745ebec710b348793ced960cf8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78f92fa5acd8a51fdf8c65e84bd3438a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_interaction_notifications.html#a78f92fa5acd8a51fdf8c65e84bd3438a">AddSourceFileOpeners</a> (const char *, const AZ::Uuid &amp;, SourceFileOpenerList &amp;)</td></tr>
 <tr class="separator:a78f92fa5acd8a51fdf8c65e84bd3438a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9533ffeed21b4b2a460f16ad4205df2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_interaction_notifications.html#ad9533ffeed21b4b2a460f16ad4205df2">AddSourceFileCreators</a> (const char *, const AZ::Uuid &amp;, SourceFileCreatorList &amp;)</td></tr>
+<tr class="separator:ad9533ffeed21b4b2a460f16ad4205df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9bc7edee7bb2ac9dd35f7e3b5162ed7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_interaction_notifications.html#ae9bc7edee7bb2ac9dd35f7e3b5162ed7">OpenAssetInAssociatedEditor</a> (const AZ::Data::AssetId &amp;, bool &amp;)</td></tr>
 <tr class="separator:ae9bc7edee7bb2ac9dd35f7e3b5162ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8c59a756311b05e00cac44d693bf400"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_az_tools_framework_1_1_asset_browser_1_1_source_file_details.html">SourceFileDetails</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_interaction_notifications.html#aa8c59a756311b05e00cac44d693bf400">GetSourceFileDetails</a> (const char *)</td></tr>
@@ -94,6 +96,49 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Bus for interaction with asset browser widget. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad9533ffeed21b4b2a460f16ad4205df2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9533ffeed21b4b2a460f16ad4205df2">&#9670;&nbsp;</a></span>AddSourceFileCreators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzToolsFramework::AssetBrowser::AssetBrowserInteractionNotifications::AddSourceFileCreators </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Uuid &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SourceFileCreatorList &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Implement AddSourceFilereators to provide your own creator for source files This gets called to collect the list of available creators for a file. Add your detail(s) to the creators list if you would like to be one of the options available to create the file. You can also add more than one to the list, or check the existing list to determine your behavior. If there is more than one in the list, the user will be given the choice of creators to use. If nobody responds (nobody adds their entry into the creators list), then the default operating system handler will be called (whatever that kind of file is associated with). </p>
+
+</div>
+</div>
 <a id="a78f92fa5acd8a51fdf8c65e84bd3438a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a78f92fa5acd8a51fdf8c65e84bd3438a">&#9670;&nbsp;</a></span>AddSourceFileOpeners()</h2>
 
@@ -207,7 +252,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:38 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:31 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

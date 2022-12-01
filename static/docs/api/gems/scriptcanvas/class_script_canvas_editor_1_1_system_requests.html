@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -41,7 +41,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ScriptCanvasEditor</b></li><li class="navelem"><a class="el" href="class_script_canvas_editor_1_1_system_requests.html">SystemRequests</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_script_canvas_editor.html">ScriptCanvasEditor</a></li><li class="navelem"><a class="el" href="class_script_canvas_editor_1_1_system_requests.html">SystemRequests</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -58,15 +58,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3b706bdc38a44605aa0ad33c899ef3a2"><td class="memItemLeft" align="right" valign="top"><a id="a3b706bdc38a44605aa0ad33c899ef3a2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAsyncJob</b> (AZStd::function&lt; void()&gt; &amp;&amp;jobFunc)=0</td></tr>
-<tr class="separator:a3b706bdc38a44605aa0ad33c899ef3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a298370616fc7cfa0a9d16511b8ae9701"><td class="memItemLeft" align="right" valign="top"><a id="a298370616fc7cfa0a9d16511b8ae9701"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetEditorCreatableTypes</b> (AZStd::unordered_set&lt; <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">ScriptCanvas::Data::Type</a> &gt; &amp;outCreatableTypes)=0</td></tr>
 <tr class="separator:a298370616fc7cfa0a9d16511b8ae9701"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb6ada16c13395b467618a4cb1f8b633"><td class="memItemLeft" align="right" valign="top"><a id="afb6ada16c13395b467618a4cb1f8b633"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateEditorComponentsOnEntity</b> (AZ::Entity *entity, const AZ::Data::AssetType &amp;assetType)=0</td></tr>
 <tr class="separator:afb6ada16c13395b467618a4cb1f8b633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c61715ae4baa6153e69f112ea757163"><td class="memItemLeft" align="right" valign="top"><a id="a0c61715ae4baa6153e69f112ea757163"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RequestGarbageCollect</b> ()=0</td></tr>
+<tr class="separator:a0c61715ae4baa6153e69f112ea757163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -80,7 +80,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:08 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:36 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

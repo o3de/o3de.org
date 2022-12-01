@@ -1,6 +1,6 @@
 ---
-linkTitle: 3D Scene Format Support
-title: 3D Scene Format Support
+linkTitle: Scene Format Support
+title: Scene Format Support
 description: Information about 3D scene file types and data supported by Open 3D Engine (O3DE).
 weight: 100
 toc: true
@@ -52,21 +52,25 @@ For example, popular 3D scene file formats such as `.stl` and `.obj` have limite
 | **Bitangents** | Custom bitangents from the source asset, or bitangents that are automatically generated with the MikkT algorithm. |
 | **UV Sets** [<sup>**2**</sup>](#buffer-limit)  | 2 UV sets (`UV0` and `UV1`) are supported by default shaders. |
 | **Vertex Colors** [<sup>**2**</sup>](#buffer-limit)  | 1 vertex color stream is supported by default shaders. Additional vertex color streams can store constraints and inverse mass data for cloth simulation. |
-| **Materials** | 1 per triangle. |
+| **Materials** | 1 per polygon. |
 | **Physics materials** | 1 per material. |
 | **Level of detail (LOD)** | 5 mesh LODs and 5 skeleton LODs numbered **[0]** to **[4]** (does not include base meshes and skeletons). |
-| **Skin Weights** | 4 per vertex. |
+| **Bone influences per vertex** [<sup>**3**</sup>](#skin-weights) | Up to 32 per vertex maximum, with a default limit of 8 per vertex. |
 | **Bones per skeleton** | Unlimited. Skeletons can have any number of bones.  |
 | **Motions** | Unlimited. A motion can can have any number of keyframes and multiple motions can be specified from a source asset in segments with start and end keyframes. |
-| **Cloth meshes** [<sup>**3**</sup>](#cloth-meshes) | Unlimited. |
-| **PhysX colliders** [<sup>**4**</sup>](#physx-colliders) | Unlimited. PhysX colliders can be triangle meshes processed from the source asset or automatically generated as shape or convex hull colliders. |
+| **Cloth meshes** [<sup>**4**</sup>](#cloth-meshes) | Unlimited. |
+| **PhysX colliders** [<sup>**5**</sup>](#physx-colliders) | Unlimited. PhysX colliders can be triangle meshes processed from the source asset or automatically generated as shape or convex hull colliders. |
 
 {{< note >}}
 <a name="vertex-limit"></a>
-<sup>**1**</sup> The vertices per mesh limit is theoretical. The real total number of vertices is dependent on target platform hardware resources and performance.
+<sup>**1**</sup> **Vertices per mesh limit**
+
+The vertices per mesh limit is theoretical. The real total number of vertices is dependent on target platform hardware resources and performance.
 
 <a name="buffer-limit"></a>
-<sup>**2**</sup> Although the default shaders only support 2 UV sets and 1 vertex color stream, support for additional UV sets and vertex color streams can be added. Each `.azmodel` can have up to 12 `.azbuffer` product assets that store additional model data including UV sets and vertex color streams. The total number of UV sets and vertex color streams is limited by the available `.azbuffer` product assets. For example, suppose an `.azmodel` product asset has the buffers below:
+<sup>**2**</sup> **UV set and vertex color limits**
+
+Although the default shaders only support 2 UV sets and 1 vertex color stream, support for additional UV sets and vertex color streams can be added. Each `.azmodel` can have up to 12 `.azbuffer` product assets that store additional model data including UV sets and vertex color streams. The total number of UV sets and vertex color streams is limited by the available `.azbuffer` product assets. For example, suppose an `.azmodel` product asset has the buffers below:
 
 * index
 * position
@@ -78,11 +82,27 @@ For example, popular 3D scene file formats such as `.stl` and `.obj` have limite
 
 In the example asset above, 7 of the 12 available buffers contain data, leaving 5 remaining buffers available for UV sets and vertex color streams.
 
+<a name="skin-weights"></a>
+<sup>**3**</sup> **Bone influences per vertex limit**
+
+Though the max number of bone influences (skin weights) per vertex is 32, a lower default value is specified for the project in the [Settings Registry](../../../settings). The following settings registry values can be modified to change the default skin weight settings. Allowing fewer bone influences per vertex can offer better animation performance on some target platforms.
+
+| Setting | Description | Default |
+| :-- | :-- | :-: |
+| `/O3DE/SceneAPI/SkinRule/DefaultMaxSkinInfluencesPerVertex` | The maximum number of bones that can influence any vertex in an actor mesh. Each vertex in an actor mesh can have any number of skin weights between 1 and the number specified in this registry value. | 8 |
+| `/O3DE/SceneAPI/SkinRule/DefaultWeightThreshold` | The minimum value for a skin wight. Skin weight values below this limit are ignored. | 0.001 |
+
+The maximum number of bone influences and the weight threshold can be overridden on a per actor basis by adding a [Skin modifier](../meshes-tab#skin) to the actor's mesh in [Scene Settings](../scene-settings).
+
 <a name="cloth-meshes"></a>
-<sup>**3**</sup> Though any number of cloth meshes can be processed, the number and resolution of cloth meshes that O3DE can support is dependent on the target platform's capabilities.
+<sup>**4**</sup> **Cloth mesh limitations**
+
+Though any number of cloth meshes can be processed, the number and resolution of cloth meshes that O3DE can support is dependent on the target platform's capabilities.
 
 <a name="physx-colliders"></a>
-<sup>**4**</sup> The PhysX collider Asset Builder can generate colliders  from triangle meshes, primitives, or convex hulls. The generated colliders can be automatically fit to the mesh asset and complex meshes can be decomposed into convex parts. Because source asset meshes can be combined or decomposed into convex parts for collider generation, there might not be a one-to-one relationship between the number of mesh product assets and the number of PhysX collider product assets.
+<sup>**5**</sup> **Physics colliders limitations**
+
+The PhysX collider Asset Builder can generate colliders  from triangle meshes, primitives, or convex hulls. The generated colliders can be automatically fit to the mesh asset and complex meshes can be decomposed into convex parts. Because source asset meshes can be combined or decomposed into convex parts for collider generation, there might not be a one-to-one relationship between the number of mesh product assets and the number of PhysX collider product assets.
 
 Though any number of PhysX colliders can be processed, the number and resolution of PhysX colliders that O3DE can support is dependent on the target platform's capabilities. Primitive colliders provide the best performance in general.
 {{< /note >}}

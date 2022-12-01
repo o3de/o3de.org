@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Multiplayer Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -44,6 +44,24 @@ $(function() {
 &#160;
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>SearchSessions()
+: <a class="el" href="class_multiplayer_1_1_i_session_requests.html#a99c00b9564528c13728dd3a5b09600e4">Multiplayer::ISessionRequests</a>
+</li>
+<li>SearchSessionsAsync()
+: <a class="el" href="class_multiplayer_1_1_i_session_async_requests.html#a944a739db204ee89513fd633d45a342e">Multiplayer::ISessionAsyncRequests</a>
+</li>
+<li>SendEditorServerLevelDataPacket()
+: <a class="el" href="class_multiplayer_1_1_multiplayer_editor_server_requests.html#aa43efadb40c54364ecbed49520018f6f">Multiplayer::MultiplayerEditorServerRequests</a>
+</li>
+<li>SendEntityResets()
+: <a class="el" href="class_multiplayer_1_1_i_replication_window.html#afc02ec60a4d00c8823b3ff0578a3a961">Multiplayer::IReplicationWindow</a>
+</li>
+<li>SendEntityRpcs()
+: <a class="el" href="class_multiplayer_1_1_i_replication_window.html#a4669dd3d1b8b6a517192ea28049d86bb">Multiplayer::IReplicationWindow</a>
+</li>
+<li>SendEntityUpdateMessages()
+: <a class="el" href="class_multiplayer_1_1_i_replication_window.html#a28a15d2f34ae5234db64bab039c688c0">Multiplayer::IReplicationWindow</a>
+</li>
 <li>SendNotifyClientMigrationEvent()
 : <a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a5c9fa9e81bbc60aba575ef0271485357">Multiplayer::IMultiplayer</a>
 </li>
@@ -63,6 +81,9 @@ $(function() {
 <li>SetAabb()
 : <a class="el" href="class_multiplayer_1_1_i_entity_domain.html#a035f4f1ad3af26239c7b3d9b6822e395">Multiplayer::IEntityDomain</a>
 </li>
+<li>SetAllowEntityMigration()
+: <a class="el" href="class_multiplayer_1_1_net_bind_component.html#af7a8c089ced1d701e43c144edd2a507a">Multiplayer::NetBindComponent</a>
+</li>
 <li>SetCanSendUpdates()
 : <a class="el" href="class_multiplayer_1_1_i_connection_data.html#a6852ae894df91d4ab7c8c483a0d87837">Multiplayer::IConnectionData</a>
 </li>
@@ -72,8 +93,8 @@ $(function() {
 <li>SetDidHandshake()
 : <a class="el" href="class_multiplayer_1_1_i_connection_data.html#aee17afd36f5d2aea621214b81afc5cd5">Multiplayer::IConnectionData</a>
 </li>
-<li>SetFilterEntityManager()
-: <a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a8c6a35a25510858bab117d19f0c85e01">Multiplayer::IMultiplayer</a>
+<li>SetMigrateTimeoutTimeMs()
+: <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#ae0d3a8a66c48f7e2d1a00e462a5a2c94">Multiplayer::INetworkEntityManager</a>
 </li>
 <li>SetOwningConnectionId()
 : <a class="el" href="class_multiplayer_1_1_rewindable_object.html#acc51d8c9159e21ddffb74ce94020c6ec">Multiplayer::RewindableObject&lt; BASE_TYPE, REWIND_SIZE &gt;</a>
@@ -105,6 +126,18 @@ $(function() {
 <li>StartHosting()
 : <a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a7605ff65e96885170d4428ae09c293e3">Multiplayer::IMultiplayer</a>
 </li>
+<li>StartMatchmaking()
+: <a class="el" href="class_multiplayer_1_1_i_matchmaking_requests.html#a63c87308ce68bdc5c99312e4768c7cd0">Multiplayer::IMatchmakingRequests</a>
+</li>
+<li>StartMatchmakingAsync()
+: <a class="el" href="class_multiplayer_1_1_i_matchmaking_async_requests.html#add9877384f86e58112a90c8f814f6be0">Multiplayer::IMatchmakingAsyncRequests</a>
+</li>
+<li>StopMatchmaking()
+: <a class="el" href="class_multiplayer_1_1_i_matchmaking_requests.html#a7d71905684c87c21e88403f443b47dd9">Multiplayer::IMatchmakingRequests</a>
+</li>
+<li>StopMatchmakingAsync()
+: <a class="el" href="class_multiplayer_1_1_i_matchmaking_async_requests.html#ab664d05742d286af7d8cc86c4c325b5e">Multiplayer::IMatchmakingAsyncRequests</a>
+</li>
 <li>SyncEntitiesToRewindState()
 : <a class="el" href="class_multiplayer_1_1_i_network_time.html#a5df0d91a3660fd7791a5149b55b8a66f">Multiplayer::INetworkTime</a>
 </li>
@@ -112,7 +145,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:53 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:13 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -79,6 +79,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetClusterButtonLocke
 <tr class="memitem:ad2aeabcf4ffb26daa7c6e424c4a0544d"><td class="memItemLeft" align="right" valign="top"><a id="ad2aeabcf4ffb26daa7c6e424c4a0544d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetClusterButtonTooltip</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId, const AZStd::string &amp;tooltip) override</td></tr>
 <tr class="separator:ad2aeabcf4ffb26daa7c6e424c4a0544d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b25c062f84b8f60e933993d3e28468"><td class="memItemLeft" align="right" valign="top"><a id="a06b25c062f84b8f60e933993d3e28468"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSwitcherButtonTooltip</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId, const AZStd::string &amp;tooltip) override</td></tr>
+<tr class="separator:a06b25c062f84b8f60e933993d3e28468"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef2dfee93a2a30b934407eca7bfe2004"><td class="memItemLeft" align="right" valign="top"><a id="aef2dfee93a2a30b934407eca7bfe2004"></a>
 const <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateClusterButton</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, const AZStd::string &amp;icon) override</td></tr>
 <tr class="separator:aef2dfee93a2a30b934407eca7bfe2004"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,12 +100,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveCluster</b> (<a
 <tr class="memitem:a381df55bd92ca23c2e205ffc9dca66d9"><td class="memItemLeft" align="right" valign="top"><a id="a381df55bd92ca23c2e205ffc9dca66d9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveSwitcher</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId) override</td></tr>
 <tr class="separator:a381df55bd92ca23c2e205ffc9dca66d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1ccade2bc11d7befca13fc65d4b1d4"><td class="memItemLeft" align="right" valign="top"><a id="acd1ccade2bc11d7befca13fc65d4b1d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveSwitcherButton</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId) override</td></tr>
+<tr class="separator:acd1ccade2bc11d7befca13fc65d4b1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fceaf339fa13fdcbe469fcd197234cc"><td class="memItemLeft" align="right" valign="top"><a id="a9fceaf339fa13fdcbe469fcd197234cc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetClusterVisible</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, bool visible) override</td></tr>
 <tr class="separator:a9fceaf339fa13fdcbe469fcd197234cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb1c0173ea9268820a9c6ddb3815f456"><td class="memItemLeft" align="right" valign="top"><a id="acb1c0173ea9268820a9c6ddb3815f456"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSwitcherVisible</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId, bool visible)</td></tr>
-<tr class="separator:acb1c0173ea9268820a9c6ddb3815f456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcdcbc3f05ce83795a3bfa4e0f963a0e"><td class="memItemLeft" align="right" valign="top"><a id="adcdcbc3f05ce83795a3bfa4e0f963a0e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSwitcherVisible</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId, bool visible) override</td></tr>
+<tr class="separator:adcdcbc3f05ce83795a3bfa4e0f963a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f659d61216f5bf3c2192d8585aab73c"><td class="memItemLeft" align="right" valign="top"><a id="a0f659d61216f5bf3c2192d8585aab73c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetClusterGroupVisible</b> (const AZStd::vector&lt; <a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> &gt; &amp;clusterGroup, bool visible) override</td></tr>
 <tr class="separator:a0f659d61216f5bf3c2192d8585aab73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,9 +130,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTextFieldVisible</
 <tr class="memitem:a6b992cbf310f3ac3dc5b06ec5e593b20"><td class="memItemLeft" align="right" valign="top"><a id="a6b992cbf310f3ac3dc5b06ec5e593b20"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateViewportBorder</b> (const AZStd::string &amp;borderTitle, AZStd::optional&lt; ViewportUiBackButtonCallback &gt; backButtonCallback) override</td></tr>
 <tr class="separator:a6b992cbf310f3ac3dc5b06ec5e593b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a7c40e3e12cdc4f8bd028773bd2537b"><td class="memItemLeft" align="right" valign="top"><a id="a3a7c40e3e12cdc4f8bd028773bd2537b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeViewportBorderText</b> (const AZStd::string &amp;borderTitle) override</td></tr>
+<tr class="separator:a3a7c40e3e12cdc4f8bd028773bd2537b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd7802ee94fa232df187e3721b347b74"><td class="memItemLeft" align="right" valign="top"><a id="acd7802ee94fa232df187e3721b347b74"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveViewportBorder</b> () override</td></tr>
 <tr class="separator:acd7802ee94fa232df187e3721b347b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab6353949ad33e9322713420f5742a2"><td class="memItemLeft" align="right" valign="top"><a id="a5ab6353949ad33e9322713420f5742a2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetViewportBorderVisible</b> () const override</td></tr>
+<tr class="separator:a5ab6353949ad33e9322713420f5742a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1b453a4922d49f6dc5b48145b06007a"><td class="memItemLeft" align="right" valign="top"><a id="ae1b453a4922d49f6dc5b48145b06007a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>PressButton</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId) override</td></tr>
 <tr class="separator:ae1b453a4922d49f6dc5b48145b06007a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,7 +187,7 @@ AZStd::unique_ptr&lt; Internal::ViewportUiDisplay &gt;&#160;</td><td class="memI
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:40 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:34 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

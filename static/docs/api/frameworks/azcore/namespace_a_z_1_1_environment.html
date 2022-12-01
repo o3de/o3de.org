@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -82,28 +82,14 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a7bac66b64675a5f5236e530441c992fc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_environment_variable.html">EnvironmentVariable</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_environment.html#a7bac66b64675a5f5236e530441c992fc">FindVariable</a> (const char *uniqueName)</td></tr>
 <tr class="memdesc:a7bac66b64675a5f5236e530441c992fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="namespace_a_z_1_1_environment.html#ae7e0ad77850071aa566c4a665d6903c3">FindVariable</a> but using a unique string as input. Please check <a class="el" href="namespace_a_z_1_1_environment.html#a01c2b48d219bb812acfdff31a3612b36">CreateVariable</a> for more information about hot strings are used internally. <br /></td></tr>
 <tr class="separator:a7bac66b64675a5f5236e530441c992fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23ba14b264cd882bf341e766387e5575"><td class="memItemLeft" align="right" valign="top"><a id="a23ba14b264cd882bf341e766387e5575"></a>
-EnvironmentInstance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_environment.html#a23ba14b264cd882bf341e766387e5575">GetInstance</a> ()</td></tr>
-<tr class="memdesc:a23ba14b264cd882bf341e766387e5575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the environment so you can share it with AttachEnvironment. <br /></td></tr>
-<tr class="separator:a23ba14b264cd882bf341e766387e5575"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa6b7c29f19bd2fe1b3a264b1f146f7e"><td class="memItemLeft" align="right" valign="top"><a id="aaa6b7c29f19bd2fe1b3a264b1f146f7e"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_environment.html#aaa6b7c29f19bd2fe1b3a264b1f146f7e">GetModuleId</a> ()</td></tr>
-<tr class="memdesc:aaa6b7c29f19bd2fe1b3a264b1f146f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns module id (non persistent) <br /></td></tr>
-<tr class="separator:aaa6b7c29f19bd2fe1b3a264b1f146f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae28c1bb94040473cd0fbba492b82bfbe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_environment.html#ae28c1bb94040473cd0fbba492b82bfbe">Create</a> (<a class="el" href="class_a_z_1_1_environment_1_1_allocator_interface.html">AllocatorInterface</a> *allocator)</td></tr>
-<tr class="separator:ae28c1bb94040473cd0fbba492b82bfbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3cf7bd1d13ed392279313b2cfcb5e54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_environment.html#af3cf7bd1d13ed392279313b2cfcb5e54">Destroy</a> ()</td></tr>
-<tr class="separator:af3cf7bd1d13ed392279313b2cfcb5e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b21ab3526019e262c41875517a7c165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_environment.html#a9b21ab3526019e262c41875517a7c165">Attach</a> (EnvironmentInstance sourceEnvironment, bool useAsGetFallback=false)</td></tr>
-<tr class="separator:a9b21ab3526019e262c41875517a7c165"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab4c454984e97e9fb7abd47a15184556"><td class="memItemLeft" align="right" valign="top"><a id="aab4c454984e97e9fb7abd47a15184556"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_environment.html#aab4c454984e97e9fb7abd47a15184556">Detach</a> ()</td></tr>
-<tr class="memdesc:aab4c454984e97e9fb7abd47a15184556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches the active environment (if one is attached) <br /></td></tr>
-<tr class="separator:aab4c454984e97e9fb7abd47a15184556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9061b234991f3034f7159ae9e029cc62"><td class="memItemLeft" align="right" valign="top"><a id="a9061b234991f3034f7159ae9e029cc62"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_environment.html#a9061b234991f3034f7159ae9e029cc62">IsReady</a> ()</td></tr>
-<tr class="memdesc:a9061b234991f3034f7159ae9e029cc62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if an environment is attached to this module. <br /></td></tr>
-<tr class="separator:a9061b234991f3034f7159ae9e029cc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e166459c815e5af5d7ed30f014f31c"><td class="memItemLeft" align="right" valign="top"><a id="a22e166459c815e5af5d7ed30f014f31c"></a>
+O3DEKERNEL_API EnvironmentInstance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_environment.html#a22e166459c815e5af5d7ed30f014f31c">GetInstance</a> ()</td></tr>
+<tr class="memdesc:a22e166459c815e5af5d7ed30f014f31c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the environment so you can share it with AttachEnvironment. <br /></td></tr>
+<tr class="separator:a22e166459c815e5af5d7ed30f014f31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf2658281dc08f94db0e6a995c368152"><td class="memItemLeft" align="right" valign="top"><a id="acf2658281dc08f94db0e6a995c368152"></a>
+const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_1_1_environment.html#acf2658281dc08f94db0e6a995c368152">GetModuleId</a> ()</td></tr>
+<tr class="memdesc:acf2658281dc08f94db0e6a995c368152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns module id (non persistent) <br /></td></tr>
+<tr class="separator:acf2658281dc08f94db0e6a995c368152"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="namespace_a_z_1_1_environment.html">Environment</a> is a module "global variable" provider. It's used when you want to share globals (which should happen as little as possible) between modules/DLLs.</p>
@@ -113,59 +99,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 <p>Using the environment with POD types is straight and simple. On the other hand when your environment variable has virtual methods, things become more complex. We advice that you avoid this as much as possible. When a variable has virtual function, even if we shared environment and memory allocations, the variable will still be "bound" to the module as it's vtable will point inside the module. Which mean that if we unload the module we have to destroy your variable. The system handles this automatically if your class has virtual functions. You can still keep your variables, but if you try to access the data you will trigger an assert, unless you recreated the variable from one of the exiting modules.</p>
 <dl class="section note"><dt>Note</dt><dd>we use class for the <a class="el" href="namespace_a_z_1_1_environment.html">Environment</a> (instead of simple global function) so can easily friend it to create variables where the ctor/dtor are protected that way you need to add friend <a class="el" href="namespace_a_z_1_1_environment.html">AZ::Environment</a> and that's it. </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a9b21ab3526019e262c41875517a7c165"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b21ab3526019e262c41875517a7c165">&#9670;&nbsp;</a></span>Attach()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::Environment::Attach </td>
-          <td>(</td>
-          <td class="paramtype">EnvironmentInstance&#160;</td>
-          <td class="paramname"><em>sourceEnvironment</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useAsGetFallback</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Attaches the current module environment from sourceEnvironment. note: this is not a copy it will actually reference the source environment, so any variables you add remove will be visible to all shared modules </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">useAsFallback</td><td>if set to true a new environment will be created and only failures to GetVariable which check the shared environment. This way you can change the environment. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae28c1bb94040473cd0fbba492b82bfbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae28c1bb94040473cd0fbba492b82bfbe">&#9670;&nbsp;</a></span>Create()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AZ::Environment::Create </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_environment_1_1_allocator_interface.html">AllocatorInterface</a> *&#160;</td>
-          <td class="paramname"><em>allocator</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Create <a class="el" href="namespace_a_z_1_1_environment.html">Environment</a> with customer allocator interface. You don't have to call create or destroy as they will created on demand, but is such case the module allocator will used. For example on Windows if you link the CRT two environments will end up on different heaps. </p><dl class="section return"><dt>Returns</dt><dd>true if Create was successful, false if environment is already created/attached. </dd></dl>
-
-</div>
-</div>
 <a id="a141acb78ca3b42bd33868398b3dd4635"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a141acb78ca3b42bd33868398b3dd4635">&#9670;&nbsp;</a></span>CreateVariable() <span class="overload">[1/2]</span></h2>
 
@@ -283,24 +216,6 @@ template&lt;typename T , class... Args&gt; </div>
 
 </div>
 </div>
-<a id="af3cf7bd1d13ed392279313b2cfcb5e54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3cf7bd1d13ed392279313b2cfcb5e54">&#9670;&nbsp;</a></span>Destroy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::Environment::Destroy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Explicit Destroy, you don't have to call it unless you want to control order. It will be called when the module is unloaded. Of course no order is guaranteed. </p>
-
-</div>
-</div>
 <a id="ae7e0ad77850071aa566c4a665d6903c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7e0ad77850071aa566c4a665d6903c3">&#9670;&nbsp;</a></span>FindVariable()</h2>
 
@@ -325,7 +240,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:48 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:32 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -60,65 +60,98 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a15723d55e9f04afc27693628618c447b"><td class="memItemLeft" align="right" valign="top"><a id="a15723d55e9f04afc27693628618c447b"></a>
-typedef base_type::key_type&#160;</td><td class="memItemRight" valign="bottom"><b>key_type</b></td></tr>
-<tr class="separator:a15723d55e9f04afc27693628618c447b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fc646b7b1e210ac853de02794d27a5b"><td class="memItemLeft" align="right" valign="top"><a id="a6fc646b7b1e210ac853de02794d27a5b"></a>
-typedef base_type::key_eq&#160;</td><td class="memItemRight" valign="bottom"><b>key_eq</b></td></tr>
-<tr class="separator:a6fc646b7b1e210ac853de02794d27a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac21b854c0900eb3873478094deae86d7"><td class="memItemLeft" align="right" valign="top"><a id="ac21b854c0900eb3873478094deae86d7"></a>
-typedef base_type::hasher&#160;</td><td class="memItemRight" valign="bottom"><b>hasher</b></td></tr>
-<tr class="separator:ac21b854c0900eb3873478094deae86d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61ab378396723606f83c502d037ccd8b"><td class="memItemLeft" align="right" valign="top"><a id="a61ab378396723606f83c502d037ccd8b"></a>
-typedef base_type::allocator_type&#160;</td><td class="memItemRight" valign="bottom"><b>allocator_type</b></td></tr>
-<tr class="separator:a61ab378396723606f83c502d037ccd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7169f895482f153907f8658aa13cb84d"><td class="memItemLeft" align="right" valign="top"><a id="a7169f895482f153907f8658aa13cb84d"></a>
-typedef base_type::size_type&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b></td></tr>
-<tr class="separator:a7169f895482f153907f8658aa13cb84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb34442eb50fb33c25ecd92c31f72ba3"><td class="memItemLeft" align="right" valign="top"><a id="aeb34442eb50fb33c25ecd92c31f72ba3"></a>
-typedef base_type::difference_type&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b></td></tr>
-<tr class="separator:aeb34442eb50fb33c25ecd92c31f72ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1bae63535596d089dc3df28c97860b1"><td class="memItemLeft" align="right" valign="top"><a id="af1bae63535596d089dc3df28c97860b1"></a>
-typedef base_type::pointer&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b></td></tr>
-<tr class="separator:af1bae63535596d089dc3df28c97860b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f684a4d8e303a148345738d39717334"><td class="memItemLeft" align="right" valign="top"><a id="a9f684a4d8e303a148345738d39717334"></a>
-typedef base_type::const_pointer&#160;</td><td class="memItemRight" valign="bottom"><b>const_pointer</b></td></tr>
-<tr class="separator:a9f684a4d8e303a148345738d39717334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac63c174b78782895aed1c36d291ff6a6"><td class="memItemLeft" align="right" valign="top"><a id="ac63c174b78782895aed1c36d291ff6a6"></a>
-typedef base_type::reference&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b></td></tr>
-<tr class="separator:ac63c174b78782895aed1c36d291ff6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7280b3200c6ff5250375c016a24eb3d3"><td class="memItemLeft" align="right" valign="top"><a id="a7280b3200c6ff5250375c016a24eb3d3"></a>
-typedef base_type::const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b></td></tr>
-<tr class="separator:a7280b3200c6ff5250375c016a24eb3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a768b208b0acf21ae1ea4ad647ad5d436"><td class="memItemLeft" align="right" valign="top"><a id="a768b208b0acf21ae1ea4ad647ad5d436"></a>
-typedef base_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
-<tr class="separator:a768b208b0acf21ae1ea4ad647ad5d436"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcc1283ffbc3419c940025ce28370229"><td class="memItemLeft" align="right" valign="top"><a id="abcc1283ffbc3419c940025ce28370229"></a>
-typedef base_type::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b></td></tr>
-<tr class="separator:abcc1283ffbc3419c940025ce28370229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fa5a8c33d372fcec56c55797ddd5764"><td class="memItemLeft" align="right" valign="top"><a id="a3fa5a8c33d372fcec56c55797ddd5764"></a>
-typedef base_type::value_type&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b></td></tr>
-<tr class="separator:a3fa5a8c33d372fcec56c55797ddd5764"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53a07c67ebb473a41cfc11e2cba53353"><td class="memItemLeft" align="right" valign="top"><a id="a53a07c67ebb473a41cfc11e2cba53353"></a>
-typedef base_type::local_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>local_iterator</b></td></tr>
-<tr class="separator:a53a07c67ebb473a41cfc11e2cba53353"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaae20348d3c651f97d63f9dcfc64c10"><td class="memItemLeft" align="right" valign="top"><a id="aaaae20348d3c651f97d63f9dcfc64c10"></a>
-typedef base_type::const_local_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>const_local_iterator</b></td></tr>
-<tr class="separator:aaaae20348d3c651f97d63f9dcfc64c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a995832aae70e0d327a79958103218106"><td class="memItemLeft" align="right" valign="top"><a id="a995832aae70e0d327a79958103218106"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>traits_type</b> = typename base_type::traits_type</td></tr>
+<tr class="separator:a995832aae70e0d327a79958103218106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab673664c3e023c7eb4522a058b1b62cb"><td class="memItemLeft" align="right" valign="top"><a id="ab673664c3e023c7eb4522a058b1b62cb"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>key_type</b> = typename base_type::key_type</td></tr>
+<tr class="separator:ab673664c3e023c7eb4522a058b1b62cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ae81bd10e27b496c19e9683fe6735e1"><td class="memItemLeft" align="right" valign="top"><a id="a7ae81bd10e27b496c19e9683fe6735e1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>key_equal</b> = typename base_type::key_equal</td></tr>
+<tr class="separator:a7ae81bd10e27b496c19e9683fe6735e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f4806a9adae4ce03f311a26ab6f733"><td class="memItemLeft" align="right" valign="top"><a id="a95f4806a9adae4ce03f311a26ab6f733"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>hasher</b> = typename base_type::hasher</td></tr>
+<tr class="separator:a95f4806a9adae4ce03f311a26ab6f733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8c5f8214d3bdb2f19fed565c45f8d4"><td class="memItemLeft" align="right" valign="top"><a id="a4f8c5f8214d3bdb2f19fed565c45f8d4"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>allocator_type</b> = typename base_type::allocator_type</td></tr>
+<tr class="separator:a4f8c5f8214d3bdb2f19fed565c45f8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c3ce8603f2f7c23030ef1b3aed1cc6"><td class="memItemLeft" align="right" valign="top"><a id="a48c3ce8603f2f7c23030ef1b3aed1cc6"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b> = typename base_type::size_type</td></tr>
+<tr class="separator:a48c3ce8603f2f7c23030ef1b3aed1cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007646bba35ba52a75d19e3eb0440653"><td class="memItemLeft" align="right" valign="top"><a id="a007646bba35ba52a75d19e3eb0440653"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b> = typename base_type::difference_type</td></tr>
+<tr class="separator:a007646bba35ba52a75d19e3eb0440653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dda1847121597a3a986d648f9755298"><td class="memItemLeft" align="right" valign="top"><a id="a7dda1847121597a3a986d648f9755298"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b> = typename base_type::pointer</td></tr>
+<tr class="separator:a7dda1847121597a3a986d648f9755298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c202fd9d0e47591bd9a53b7e510fe8"><td class="memItemLeft" align="right" valign="top"><a id="a56c202fd9d0e47591bd9a53b7e510fe8"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_pointer</b> = typename base_type::const_pointer</td></tr>
+<tr class="separator:a56c202fd9d0e47591bd9a53b7e510fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af198e1bcb09e6453f052eb8906715503"><td class="memItemLeft" align="right" valign="top"><a id="af198e1bcb09e6453f052eb8906715503"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = typename base_type::reference</td></tr>
+<tr class="separator:af198e1bcb09e6453f052eb8906715503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0614ae24de1a658d657b2cc5aec3269"><td class="memItemLeft" align="right" valign="top"><a id="ac0614ae24de1a658d657b2cc5aec3269"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b> = typename base_type::const_reference</td></tr>
+<tr class="separator:ac0614ae24de1a658d657b2cc5aec3269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab3cf8d3bbfb4510f9d4532fa5d04bb"><td class="memItemLeft" align="right" valign="top"><a id="adab3cf8d3bbfb4510f9d4532fa5d04bb"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> = typename base_type::iterator</td></tr>
+<tr class="separator:adab3cf8d3bbfb4510f9d4532fa5d04bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07617d38fec27e04756f8b7626f86d04"><td class="memItemLeft" align="right" valign="top"><a id="a07617d38fec27e04756f8b7626f86d04"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> = typename base_type::const_iterator</td></tr>
+<tr class="separator:a07617d38fec27e04756f8b7626f86d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6616b86c91d5c2bd32166614f03e956b"><td class="memItemLeft" align="right" valign="top"><a id="a6616b86c91d5c2bd32166614f03e956b"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = typename base_type::value_type</td></tr>
+<tr class="separator:a6616b86c91d5c2bd32166614f03e956b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a924b04174d09d17619bf3d17fd94de00"><td class="memItemLeft" align="right" valign="top"><a id="a924b04174d09d17619bf3d17fd94de00"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>local_iterator</b> = typename base_type::local_iterator</td></tr>
+<tr class="separator:a924b04174d09d17619bf3d17fd94de00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab59c90702903da937eae11129b04d468"><td class="memItemLeft" align="right" valign="top"><a id="ab59c90702903da937eae11129b04d468"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_local_iterator</b> = typename base_type::const_local_iterator</td></tr>
+<tr class="separator:ab59c90702903da937eae11129b04d468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47712c173562fddea941911389856ada"><td class="memItemLeft" align="right" valign="top"><a id="a47712c173562fddea941911389856ada"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>node_type</b> = set_node_handle&lt; set_node_traits&lt; value_type, allocator_type, typename base_type::list_node_type, typename <a class="el" href="class_a_z_std_1_1hash__node__destructor.html">base_type::node_deleter</a> &gt; &gt;</td></tr>
+<tr class="separator:a47712c173562fddea941911389856ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9aa9cb6e063b4ca9051a63dfeb091403"><td class="memItemLeft" align="right" valign="top"><a id="a9aa9cb6e063b4ca9051a63dfeb091403"></a>
-AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>fixed_unordered_set</b> (const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_eq &amp;keyEqual)</td></tr>
-<tr class="separator:a9aa9cb6e063b4ca9051a63dfeb091403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e4b8fd384669eb4fd0dd8d9ee186d3b"><td class="memTemplParams" colspan="2"><a id="a7e4b8fd384669eb4fd0dd8d9ee186d3b"></a>
+<tr class="memitem:a8f9c56cd61f0e3662c4bd78c3261a926"><td class="memItemLeft" align="right" valign="top"><a id="a8f9c56cd61f0e3662c4bd78c3261a926"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>fixed_unordered_set</b> (size_type numBuckets, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>=hasher(), const key_equal &amp;keyEqual=key_equal())</td></tr>
+<tr class="separator:a8f9c56cd61f0e3662c4bd78c3261a926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9e6747aed2eea88b07d40719aee7d2"><td class="memTemplParams" colspan="2"><a id="a2a9e6747aed2eea88b07d40719aee7d2"></a>
 template&lt;class Iterator &gt; </td></tr>
-<tr class="memitem:a7e4b8fd384669eb4fd0dd8d9ee186d3b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fixed_unordered_set</b> (Iterator first, Iterator last)</td></tr>
-<tr class="separator:a7e4b8fd384669eb4fd0dd8d9ee186d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0a97ec89de1cb9c84b83359e1c3f693"><td class="memTemplParams" colspan="2"><a id="af0a97ec89de1cb9c84b83359e1c3f693"></a>
-template&lt;class Iterator &gt; </td></tr>
-<tr class="memitem:af0a97ec89de1cb9c84b83359e1c3f693"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fixed_unordered_set</b> (Iterator first, Iterator last, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_eq &amp;keyEqual)</td></tr>
-<tr class="separator:af0a97ec89de1cb9c84b83359e1c3f693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9e6747aed2eea88b07d40719aee7d2"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fixed_unordered_set</b> (Iterator first, Iterator last, size_type numBuckets={}, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>=hasher(), const key_equal &amp;keyEqual=key_equal())</td></tr>
+<tr class="separator:a2a9e6747aed2eea88b07d40719aee7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c172fce608b492dc23866bdfd2b6e7"><td class="memTemplParams" colspan="2"><a id="a97c172fce608b492dc23866bdfd2b6e7"></a>
+template&lt;class R , class  = enable_if_t&lt;Internal::container_compatible_range&lt;R, value_type&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a97c172fce608b492dc23866bdfd2b6e7"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fixed_unordered_set</b> (<a class="el" href="struct_a_z_std_1_1from__range__t.html">from_range_t</a>, R &amp;&amp;rg, size_type numBucketsHint={}, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>=hasher(), const key_equal &amp;keyEqual=key_equal())</td></tr>
+<tr class="separator:a97c172fce608b492dc23866bdfd2b6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c72da7c93fcd9ccdbb85a49d9a2c17a"><td class="memItemLeft" align="right" valign="top"><a id="a3c72da7c93fcd9ccdbb85a49d9a2c17a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>fixed_unordered_set</b> (const <a class="el" href="class_a_z_std_1_1fixed__unordered__set.html">fixed_unordered_set</a> &amp;rhs)</td></tr>
+<tr class="separator:a3c72da7c93fcd9ccdbb85a49d9a2c17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab819b8895de1937a84e4b9061deac1d6"><td class="memItemLeft" align="right" valign="top"><a id="ab819b8895de1937a84e4b9061deac1d6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>fixed_unordered_set</b> (<a class="el" href="class_a_z_std_1_1fixed__unordered__set.html">fixed_unordered_set</a> &amp;&amp;rhs)</td></tr>
+<tr class="separator:ab819b8895de1937a84e4b9061deac1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d378e3d37f42b4c67561cab783ed68"><td class="memItemLeft" align="right" valign="top"><a id="ae9d378e3d37f42b4c67561cab783ed68"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>fixed_unordered_set</b> (const initializer_list&lt; value_type &gt; &amp;<a class="el" href="class_a_z_std_1_1list.html">list</a>, size_type numBuckets={}, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>=hasher(), const key_equal &amp;keyEqual=key_equal())</td></tr>
+<tr class="separator:ae9d378e3d37f42b4c67561cab783ed68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabbaba0165b1c949541e286121c363a2"><td class="memItemLeft" align="right" valign="top"><a id="aabbaba0165b1c949541e286121c363a2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>fixed_unordered_set</b> (size_type numBucketsHint, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>)</td></tr>
+<tr class="separator:aabbaba0165b1c949541e286121c363a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a577b046ea6c92c1da949c41ab4cbf37f"><td class="memTemplParams" colspan="2"><a id="a577b046ea6c92c1da949c41ab4cbf37f"></a>
+template&lt;class InputIterator &gt; </td></tr>
+<tr class="memitem:a577b046ea6c92c1da949c41ab4cbf37f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fixed_unordered_set</b> (InputIterator f, InputIterator l, size_type n, const hasher &amp;hf)</td></tr>
+<tr class="separator:a577b046ea6c92c1da949c41ab4cbf37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab78b08cafb6ea02f6a3ebe230db926d7"><td class="memTemplParams" colspan="2"><a id="ab78b08cafb6ea02f6a3ebe230db926d7"></a>
+template&lt;class R , class  = enable_if_t&lt;Internal::container_compatible_range&lt;R, value_type&gt;&gt;&gt; </td></tr>
+<tr class="memitem:ab78b08cafb6ea02f6a3ebe230db926d7"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fixed_unordered_set</b> (<a class="el" href="struct_a_z_std_1_1from__range__t.html">from_range_t</a>, R &amp;&amp;rg, size_type n, const hasher &amp;hf)</td></tr>
+<tr class="separator:ab78b08cafb6ea02f6a3ebe230db926d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1167fc1b4565c82b1d18489e6c63da7"><td class="memItemLeft" align="right" valign="top"><a id="af1167fc1b4565c82b1d18489e6c63da7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>fixed_unordered_set</b> (initializer_list&lt; value_type &gt; il, size_type n, const hasher &amp;hf)</td></tr>
+<tr class="separator:af1167fc1b4565c82b1d18489e6c63da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac872956dae7c6003f8197cf40942b189"><td class="memItemLeft" align="right" valign="top"><a id="ac872956dae7c6003f8197cf40942b189"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1fixed__unordered__set.html#ac872956dae7c6003f8197cf40942b189">fixed_unordered_set</a> (const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_equal &amp;keyEqual)</td></tr>
+<tr class="memdesc:ac872956dae7c6003f8197cf40942b189"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructor is <a class="el" href="namespace_a_z_std.html" title="AZ namespace needs to be closed in order to specialize the AZStd::hash struct for AddressTypeElement ...">AZStd</a> extension. <br /></td></tr>
+<tr class="separator:ac872956dae7c6003f8197cf40942b189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Key, AZStd::size_t FixedNumBuckets, AZStd::size_t FixedNumElements, class Hasher = AZStd::hash&lt;Key&gt;, class EqualKey = AZStd::equal_to&lt;Key&gt;&gt;<br />
@@ -133,7 +166,7 @@ class AZStd::fixed_unordered_set&lt; Key, FixedNumBuckets, FixedNumElements, Has
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:04 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:52 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

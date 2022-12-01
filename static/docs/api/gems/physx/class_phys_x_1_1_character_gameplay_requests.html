@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine PhysX Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -70,6 +70,12 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a6ce46f8ec47b849f81f52ab582f066d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fee2453d2c46fe6d1b5e768145f5b94"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_character_gameplay_requests.html#a4fee2453d2c46fe6d1b5e768145f5b94">SetGravityMultiplier</a> (float gravityMultiplier)=0</td></tr>
 <tr class="separator:a4fee2453d2c46fe6d1b5e768145f5b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbaf70ab68c3dd0b3b290b071018710a"><td class="memItemLeft" align="right" valign="top"><a id="abbaf70ab68c3dd0b3b290b071018710a"></a>
+virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_character_gameplay_requests.html#abbaf70ab68c3dd0b3b290b071018710a">GetGroundDetectionBoxHeight</a> () const =0</td></tr>
+<tr class="memdesc:abbaf70ab68c3dd0b3b290b071018710a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the vertical size of the box used when checking for ground contact. <br /></td></tr>
+<tr class="separator:abbaf70ab68c3dd0b3b290b071018710a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c570e8eec7cfeb2f7bd02a41b84752d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_character_gameplay_requests.html#a4c570e8eec7cfeb2f7bd02a41b84752d">SetGroundDetectionBoxHeight</a> (float groundDetectionBoxHeight)=0</td></tr>
+<tr class="separator:a4c570e8eec7cfeb2f7bd02a41b84752d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62a1c1957c95e659f5ba6e819824303b"><td class="memItemLeft" align="right" valign="top"><a id="a62a1c1957c95e659f5ba6e819824303b"></a>
 virtual AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phys_x_1_1_character_gameplay_requests.html#a62a1c1957c95e659f5ba6e819824303b">GetFallingVelocity</a> () const =0</td></tr>
 <tr class="memdesc:a62a1c1957c95e659f5ba6e819824303b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the falling velocity. <br /></td></tr>
@@ -158,8 +164,39 @@ virtual AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </div><div class="memdoc">
 <p>Sets the gravity multipier. The gravity multiplier is combined with the gravity value for the physics world to which the character belongs when applying gravity to the character. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">gravityMultiplier</td><td>The new <br  />
- </td></tr>
+    <tr><td class="paramname">gravityMultiplier</td><td>The new gravity multiplier value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4c570e8eec7cfeb2f7bd02a41b84752d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c570e8eec7cfeb2f7bd02a41b84752d">&#9670;&nbsp;</a></span>SetGroundDetectionBoxHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PhysX::CharacterGameplayRequests::SetGroundDetectionBoxHeight </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>groundDetectionBoxHeight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the vertical size of the box used when checking for ground contact. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">groundDetectionBoxHeight</td><td>The new ground detection box height value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -172,7 +209,7 @@ virtual AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:55 for Open 3D Engine PhysX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:16 for Open 3D Engine PhysX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

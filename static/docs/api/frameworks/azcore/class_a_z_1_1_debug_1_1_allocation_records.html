@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -48,9 +48,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_debug_1_1_allocation_records-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Debug::AllocationRecords Class Reference</div>  </div>
@@ -74,6 +72,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab43de9e1a73c18d91f8bdaa281c8e633"><td class="memItemLeft" align="right" valign="top"><a id="ab43de9e1a73c18d91f8bdaa281c8e633"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_debug_1_1_allocation_records.html">AllocationRecords</a>, <a class="el" href="class_a_z_1_1_o_s_allocator.html">OSAllocator</a>, 0)</td></tr>
+<tr class="separator:ab43de9e1a73c18d91f8bdaa281c8e633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f7bb490e08d9a4a1a5eb894e1384368"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_allocation_records.html#a6f7bb490e08d9a4a1a5eb894e1384368">AllocationRecords</a> (unsigned char stackRecordLevels, bool isMemoryGuard, bool isMarkUnallocatedMemory, const char *allocatorName)</td></tr>
 <tr class="separator:a6f7bb490e08d9a4a1a5eb894e1384368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5f12803779a3f9033e3727f3a162b59"><td class="memItemLeft" align="right" valign="top"><a id="ad5f12803779a3f9033e3727f3a162b59"></a>
@@ -150,9 +151,6 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr class="memitem:a6eaeac5e5c7e9e23fc53744b81710c2a"><td class="memItemLeft" align="right" valign="top"><a id="a6eaeac5e5c7e9e23fc53744b81710c2a"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllocatorName</b> () const</td></tr>
 <tr class="separator:a6eaeac5e5c7e9e23fc53744b81710c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
 <tr class="memitem:a527d949e18ecc0aa392d28679c2206a1"><td class="memItemLeft" align="right" valign="top"><a id="a527d949e18ecc0aa392d28679c2206a1"></a>
 const <a class="el" href="struct_a_z_1_1_debug_1_1_allocation_info.html">AllocationInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterAllocation</b> (void *address, size_t byteSize, size_t alignment, const char *name, const char *fileName, int lineNum, unsigned int stackSuppressCount)</td></tr>
 <tr class="separator:a527d949e18ecc0aa392d28679c2206a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,15 +160,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterAllocation<
 <tr class="memitem:a3a4d2467be48083d788fdc74ce931eb8"><td class="memItemLeft" align="right" valign="top"><a id="a3a4d2467be48083d788fdc74ce931eb8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ResizeAllocation</b> (void *address, size_t newSize)</td></tr>
 <tr class="separator:a3a4d2467be48083d788fdc74ce931eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72d9d21db91c68cd301ef4de8e1a0304"><td class="memItemLeft" align="right" valign="top"><a id="a72d9d21db91c68cd301ef4de8e1a0304"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>IntegrityCheckNoLock</b> () const</td></tr>
-<tr class="separator:a72d9d21db91c68cd301ef4de8e1a0304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ae741fe49c76fa1c0b26bf9bce2acb3b2"><td class="memItemLeft" align="right" valign="top"><a id="ae741fe49c76fa1c0b26bf9bce2acb3b2"></a>
 <a class="el" href="class_a_z_std_1_1unordered__map.html">Debug::AllocationRecordsType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_records</b></td></tr>
 <tr class="separator:ae741fe49c76fa1c0b26bf9bce2acb3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25fc65287a14abd7fe12d1e03e7d9677"><td class="memItemLeft" align="right" valign="top"><a id="a25fc65287a14abd7fe12d1e03e7d9677"></a>
+<a class="el" href="class_a_z_std_1_1spin__mutex.html">AZStd::spin_mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_recordsMutex</b></td></tr>
+<tr class="separator:a25fc65287a14abd7fe12d1e03e7d9677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec15fc9518333d14269104f10882a48e"><td class="memItemLeft" align="right" valign="top"><a id="aec15fc9518333d14269104f10882a48e"></a>
 <a class="el" href="class_a_z_1_1_debug_1_1_allocation_records.html#ab8ddd9944b54d2e540ea50ccc964ead2">Mode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_mode</b></td></tr>
 <tr class="separator:aec15fc9518333d14269104f10882a48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,24 +191,18 @@ unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>m_numStackLe
 <tr class="memitem:abc3bf5428c48e28b45a3dab050884eed"><td class="memItemLeft" align="right" valign="top"><a id="abc3bf5428c48e28b45a3dab050884eed"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_memoryGuardSize</b></td></tr>
 <tr class="separator:abc3bf5428c48e28b45a3dab050884eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ca554447da570d156d5bb4db2af5ba7"><td class="memItemLeft" align="right" valign="top"><a id="a5ca554447da570d156d5bb4db2af5ba7"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_requestedAllocs</b></td></tr>
-<tr class="separator:a5ca554447da570d156d5bb4db2af5ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4b58616e27aa988bfbfb99ed9c032cc"><td class="memItemLeft" align="right" valign="top"><a id="ac4b58616e27aa988bfbfb99ed9c032cc"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_requestedBytes</b></td></tr>
-<tr class="separator:ac4b58616e27aa988bfbfb99ed9c032cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27a9db961dcad00bee391644a16ec541"><td class="memItemLeft" align="right" valign="top"><a id="a27a9db961dcad00bee391644a16ec541"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_requestedBytesPeak</b></td></tr>
-<tr class="separator:a27a9db961dcad00bee391644a16ec541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2301bfa792fd440c85bcdbd70d78c772"><td class="memItemLeft" align="right" valign="top"><a id="a2301bfa792fd440c85bcdbd70d78c772"></a>
+AZStd::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_requestedAllocs</b></td></tr>
+<tr class="separator:a2301bfa792fd440c85bcdbd70d78c772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e486229881a98b15a2b3437abac7b59"><td class="memItemLeft" align="right" valign="top"><a id="a0e486229881a98b15a2b3437abac7b59"></a>
+AZStd::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_requestedBytes</b></td></tr>
+<tr class="separator:a0e486229881a98b15a2b3437abac7b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215c538cfad96883b747902fe6c52766"><td class="memItemLeft" align="right" valign="top"><a id="a215c538cfad96883b747902fe6c52766"></a>
+AZStd::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_requestedBytesPeak</b></td></tr>
+<tr class="separator:a215c538cfad96883b747902fe6c52766"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b7bfa6d1ea89e81e773cb4b1cf1a69d"><td class="memItemLeft" align="right" valign="top"><a id="a1b7bfa6d1ea89e81e773cb4b1cf1a69d"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_allocatorName</b></td></tr>
 <tr class="separator:a1b7bfa6d1ea89e81e773cb4b1cf1a69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:ade386de309418eb3663a6ba5c5fbd673"><td class="memItemLeft" align="right" valign="top"><a id="ade386de309418eb3663a6ba5c5fbd673"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>MemoryDriller</b></td></tr>
-<tr class="separator:ade386de309418eb3663a6ba5c5fbd673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Container for debug allocation records. This records can be thread safe or not depending on your needs. When you set the thread safe flag all functions will be thread safe unless explicitly noted.</p>
@@ -290,7 +282,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>MemoryDriller</b></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:47 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:31 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

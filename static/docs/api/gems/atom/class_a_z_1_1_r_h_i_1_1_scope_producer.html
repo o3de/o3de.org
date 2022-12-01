@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -71,8 +71,12 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa9baf156d938f81797608012f54dd298"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html#aa9baf156d938f81797608012f54dd298">ScopeProducer</a> ()</td></tr>
 <tr class="separator:aa9baf156d938f81797608012f54dd298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee7123c4f881abccef3a85cde2728ac7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html#aee7123c4f881abccef3a85cde2728ac7">SetHardwareQueueClass</a> (HardwareQueueClass hardwareQueueClass)</td></tr>
+<tr class="separator:aee7123c4f881abccef3a85cde2728ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01fb5aede089ff9c06e61b0926c30c26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html#a01fb5aede089ff9c06e61b0926c30c26">SetScopeId</a> (const ScopeId &amp;scopeId)</td></tr>
 <tr class="separator:a01fb5aede089ff9c06e61b0926c30c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8b287d3ce654a87b356eb6bef4a443"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html#a3b8b287d3ce654a87b356eb6bef4a443">InitScope</a> (const ScopeId &amp;scopeId, HardwareQueueClass hardwareQueueClass=HardwareQueueClass::Graphics)</td></tr>
+<tr class="separator:a3b8b287d3ce654a87b356eb6bef4a443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -144,6 +148,70 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FrameScheduler</b></
 
 </div>
 </div>
+<a id="a3b8b287d3ce654a87b356eb6bef4a443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b8b287d3ce654a87b356eb6bef4a443">&#9670;&nbsp;</a></span>InitScope()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RHI::ScopeProducer::InitScope </td>
+          <td>(</td>
+          <td class="paramtype">const ScopeId &amp;&#160;</td>
+          <td class="paramname"><em>scopeId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HardwareQueueClass&#160;</td>
+          <td class="paramname"><em>hardwareQueueClass</em> = <code>HardwareQueueClass::Graphics</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initializes the scope with a ScopeId and HardwareQueueClass. Used by classes that inherit from <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html">ScopeProducer</a> but can't supply a ScopeId at construction. </p>
+
+</div>
+</div>
+<a id="aee7123c4f881abccef3a85cde2728ac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee7123c4f881abccef3a85cde2728ac7">&#9670;&nbsp;</a></span>SetHardwareQueueClass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RHI::ScopeProducer::SetHardwareQueueClass </td>
+          <td>(</td>
+          <td class="paramtype">HardwareQueueClass&#160;</td>
+          <td class="paramname"><em>hardwareQueueClass</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the HardwareQueueClass on the scope </p>
+
+</div>
+</div>
 <a id="a01fb5aede089ff9c06e61b0926c30c26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01fb5aede089ff9c06e61b0926c30c26">&#9670;&nbsp;</a></span>SetScopeId()</h2>
 
@@ -167,7 +235,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FrameScheduler</b></
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets ID of the scope producer. Used by class that inherit from <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html">ScopeProducer</a> but that can't supply a ScopeId at construction. </p>
+<p>DEPRECATED. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use InitScope instead </dd></dl>
 
 </div>
 </div>
@@ -177,7 +245,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FrameScheduler</b></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:27 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:21 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

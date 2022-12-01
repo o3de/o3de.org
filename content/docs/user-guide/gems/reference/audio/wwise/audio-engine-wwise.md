@@ -31,6 +31,10 @@ In general you can use more recent versions of Wwise than specified above, but s
     cmake configure -B build/<platform> -G "Visual Studio 16" -DLY_3RDPARTY_PATH=<o3de-packages> -DLY_WWISE_INSTALL_PATH=<wwise-installation>
     ```
 
+    {{< note >}}
+Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](/docs/user-guide/build/configure-and-build/#configuring-projects).
+    {{< /note >}}
+
 1. Build your project using Project Manager, Visual Studio, or CMake.
 
     {{< important >}}

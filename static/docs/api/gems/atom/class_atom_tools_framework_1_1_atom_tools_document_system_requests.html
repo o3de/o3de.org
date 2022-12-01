@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,6 +46,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_atom_tools_framework_1_1_atom_tools_document_system_requests-members.html">List of all members</a>  </div>
@@ -54,27 +55,41 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>AtomToolsDocumentSystemRequestBus provides high level requests for menus, scripts, etc.  
+<p>AtomToolsDocumentSystemRequestBus is an interface that provides requests for high level user interactions with a system of documents.  
  <a href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#details">More...</a></p>
 
 <p><code>#include &lt;AtomToolsDocumentSystemRequestBus.h&gt;</code></p>
 
 <p>Inherits EBusTraits.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a3658d8b3d2ea246d249b9f2dc6e6e7e7"><td class="memItemLeft" align="right" valign="top"><a id="a3658d8b3d2ea246d249b9f2dc6e6e7e7"></a>
+typedef AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>BusIdType</b></td></tr>
+<tr class="separator:a3658d8b3d2ea246d249b9f2dc6e6e7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9986664bc0237e0cc9dde1f45483d29b"><td class="memItemLeft" align="right" valign="top"><a id="a9986664bc0237e0cc9dde1f45483d29b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a9986664bc0237e0cc9dde1f45483d29b">RegisterDocumentType</a> (AZStd::function&lt; <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html">AtomToolsDocument</a> *()&gt; documentCreator)=0</td></tr>
-<tr class="memdesc:a9986664bc0237e0cc9dde1f45483d29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a document factory function used to create specific document types. <br /></td></tr>
-<tr class="separator:a9986664bc0237e0cc9dde1f45483d29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad71525aa1247729fef5ca80905af9d36"><td class="memItemLeft" align="right" valign="top">virtual AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ad71525aa1247729fef5ca80905af9d36">CreateDocument</a> ()=0</td></tr>
-<tr class="separator:ad71525aa1247729fef5ca80905af9d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd6e0f87a23f466eaba15d5a9cdffee"><td class="memItemLeft" align="right" valign="top"><a id="afdd6e0f87a23f466eaba15d5a9cdffee"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#afdd6e0f87a23f466eaba15d5a9cdffee">RegisterDocumentType</a> (const <a class="el" href="struct_atom_tools_framework_1_1_document_type_info.html">DocumentTypeInfo</a> &amp;documentType)=0</td></tr>
+<tr class="memdesc:afdd6e0f87a23f466eaba15d5a9cdffee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a document type descriptor including factory function. <br /></td></tr>
+<tr class="separator:afdd6e0f87a23f466eaba15d5a9cdffee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d357eb7e644409177824f873279113"><td class="memItemLeft" align="right" valign="top"><a id="aa8d357eb7e644409177824f873279113"></a>
+virtual const DocumentTypeInfoVector &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#aa8d357eb7e644409177824f873279113">GetRegisteredDocumentTypes</a> () const =0</td></tr>
+<tr class="memdesc:aa8d357eb7e644409177824f873279113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a container of all the registered document types. <br /></td></tr>
+<tr class="separator:aa8d357eb7e644409177824f873279113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ace8085d4cff6cc1c43e90edbb425e"><td class="memItemLeft" align="right" valign="top">virtual AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ab0ace8085d4cff6cc1c43e90edbb425e">CreateDocumentFromType</a> (const <a class="el" href="struct_atom_tools_framework_1_1_document_type_info.html">DocumentTypeInfo</a> &amp;documentType)=0</td></tr>
+<tr class="separator:ab0ace8085d4cff6cc1c43e90edbb425e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7f78058cdc7837b85d52460d2209ec"><td class="memItemLeft" align="right" valign="top">virtual AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#aad7f78058cdc7837b85d52460d2209ec">CreateDocumentFromTypeName</a> (const AZStd::string &amp;documentTypeName)=0</td></tr>
+<tr class="separator:aad7f78058cdc7837b85d52460d2209ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a865fa86c5100a0b760160b29630e890c"><td class="memItemLeft" align="right" valign="top">virtual AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a865fa86c5100a0b760160b29630e890c">CreateDocumentFromFileType</a> (const AZStd::string &amp;path)=0</td></tr>
+<tr class="separator:a865fa86c5100a0b760160b29630e890c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac74a30f28133b1dce9306de42fafec"><td class="memItemLeft" align="right" valign="top">virtual AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#adac74a30f28133b1dce9306de42fafec">CreateDocumentFromFilePath</a> (const AZStd::string &amp;sourcePath, const AZStd::string &amp;targetPath)=0</td></tr>
+<tr class="separator:adac74a30f28133b1dce9306de42fafec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3256dab3f1c054ddb76d4d33ca597b40"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a3256dab3f1c054ddb76d4d33ca597b40">DestroyDocument</a> (const AZ::Uuid &amp;documentId)=0</td></tr>
 <tr class="separator:a3256dab3f1c054ddb76d4d33ca597b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4420fff16001ed8d390b736ad7b68fb"><td class="memItemLeft" align="right" valign="top">virtual AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ac4420fff16001ed8d390b736ad7b68fb">OpenDocument</a> (AZStd::string_view sourcePath)=0</td></tr>
-<tr class="separator:ac4420fff16001ed8d390b736ad7b68fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad331ac42512cdbd5265d2cd3f979faad"><td class="memItemLeft" align="right" valign="top">virtual AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ad331ac42512cdbd5265d2cd3f979faad">CreateDocumentFromFile</a> (AZStd::string_view sourcePath, AZStd::string_view targetPath)=0</td></tr>
-<tr class="separator:ad331ac42512cdbd5265d2cd3f979faad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41a44da41b7efce1391869df434493a"><td class="memItemLeft" align="right" valign="top">virtual AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ad41a44da41b7efce1391869df434493a">OpenDocument</a> (const AZStd::string &amp;sourcePath)=0</td></tr>
+<tr class="separator:ad41a44da41b7efce1391869df434493a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d4f935a54c5b0059a71495d3f2a79fe"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a2d4f935a54c5b0059a71495d3f2a79fe">CloseDocument</a> (const AZ::Uuid &amp;documentId)=0</td></tr>
 <tr class="separator:a2d4f935a54c5b0059a71495d3f2a79fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1504bebbf7c24ff387ae982c123ad924"><td class="memItemLeft" align="right" valign="top"><a id="a1504bebbf7c24ff387ae982c123ad924"></a>
@@ -85,26 +100,52 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a84daf8888c52521acb7ad3fd94762adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0ed8ca10804446b9fa0feea8f035cf2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ab0ed8ca10804446b9fa0feea8f035cf2">SaveDocument</a> (const AZ::Uuid &amp;documentId)=0</td></tr>
 <tr class="separator:ab0ed8ca10804446b9fa0feea8f035cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18962678f01e57ad176a1557609392e4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a18962678f01e57ad176a1557609392e4">SaveDocumentAsCopy</a> (const AZ::Uuid &amp;documentId, AZStd::string_view targetPath)=0</td></tr>
-<tr class="separator:a18962678f01e57ad176a1557609392e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02b873752f11d874f3b3b06351304b3a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a02b873752f11d874f3b3b06351304b3a">SaveDocumentAsChild</a> (const AZ::Uuid &amp;documentId, AZStd::string_view targetPath)=0</td></tr>
-<tr class="separator:a02b873752f11d874f3b3b06351304b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ce85ded2fcf91dd943fc9aad9d3c17"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#af5ce85ded2fcf91dd943fc9aad9d3c17">SaveDocumentAsCopy</a> (const AZ::Uuid &amp;documentId, const AZStd::string &amp;targetPath)=0</td></tr>
+<tr class="separator:af5ce85ded2fcf91dd943fc9aad9d3c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f3b1d1c7de2a29d54024a77408a6c6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#aa2f3b1d1c7de2a29d54024a77408a6c6">SaveDocumentAsChild</a> (const AZ::Uuid &amp;documentId, const AZStd::string &amp;targetPath)=0</td></tr>
+<tr class="separator:aa2f3b1d1c7de2a29d54024a77408a6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa033b36c1f1128da76d67f2dff38b480"><td class="memItemLeft" align="right" valign="top"><a id="aa033b36c1f1128da76d67f2dff38b480"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#aa033b36c1f1128da76d67f2dff38b480">SaveAllDocuments</a> ()=0</td></tr>
 <tr class="memdesc:aa033b36c1f1128da76d67f2dff38b480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save all documents. <br /></td></tr>
 <tr class="separator:aa033b36c1f1128da76d67f2dff38b480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a806509de9ef4006ab81ad8c9387e5fb1"><td class="memItemLeft" align="right" valign="top"><a id="a806509de9ef4006ab81ad8c9387e5fb1"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a806509de9ef4006ab81ad8c9387e5fb1">SaveAllModifiedDocuments</a> ()=0</td></tr>
+<tr class="memdesc:a806509de9ef4006ab81ad8c9387e5fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save all modified documents. <br /></td></tr>
+<tr class="separator:a806509de9ef4006ab81ad8c9387e5fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28ca4bd616a39687b73ed33487dda02"><td class="memItemLeft" align="right" valign="top"><a id="ae28ca4bd616a39687b73ed33487dda02"></a>
+virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ae28ca4bd616a39687b73ed33487dda02">GetDocumentCount</a> () const =0</td></tr>
+<tr class="memdesc:ae28ca4bd616a39687b73ed33487dda02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of allocated documents. <br /></td></tr>
+<tr class="separator:ae28ca4bd616a39687b73ed33487dda02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6493ac8084aca8d2a98ba14297efe3dc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a6493ac8084aca8d2a98ba14297efe3dc">IsDocumentOpen</a> (const AZ::Uuid &amp;documentId) const =0</td></tr>
+<tr class="separator:a6493ac8084aca8d2a98ba14297efe3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4734bae58cd1e26a9363ed52174cebcf"><td class="memItemLeft" align="right" valign="top"><a id="a4734bae58cd1e26a9363ed52174cebcf"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a4734bae58cd1e26a9363ed52174cebcf">AddRecentFilePath</a> (const AZStd::string &amp;absolutePath)=0</td></tr>
+<tr class="memdesc:a4734bae58cd1e26a9363ed52174cebcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file path to the top of the list of recent file paths. <br /></td></tr>
+<tr class="separator:a4734bae58cd1e26a9363ed52174cebcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c37cacfc0ca90b7aa63675c5948eaa"><td class="memItemLeft" align="right" valign="top"><a id="a06c37cacfc0ca90b7aa63675c5948eaa"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a06c37cacfc0ca90b7aa63675c5948eaa">ClearRecentFilePaths</a> ()=0</td></tr>
+<tr class="memdesc:a06c37cacfc0ca90b7aa63675c5948eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all file paths from the list of recent file paths. <br /></td></tr>
+<tr class="separator:a06c37cacfc0ca90b7aa63675c5948eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4986e370376ff6c2ce47634a9258846"><td class="memItemLeft" align="right" valign="top"><a id="ab4986e370376ff6c2ce47634a9258846"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ab4986e370376ff6c2ce47634a9258846">SetRecentFilePaths</a> (const AZStd::vector&lt; AZStd::string &gt; &amp;absolutePaths)=0</td></tr>
+<tr class="memdesc:ab4986e370376ff6c2ce47634a9258846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace the list of recent file paths in the settings registry. <br /></td></tr>
+<tr class="separator:ab4986e370376ff6c2ce47634a9258846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adccee16a31737a70c2578cca13bfbfe7"><td class="memItemLeft" align="right" valign="top"><a id="adccee16a31737a70c2578cca13bfbfe7"></a>
+virtual const AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#adccee16a31737a70c2578cca13bfbfe7">GetRecentFilePaths</a> () const =0</td></tr>
+<tr class="memdesc:adccee16a31737a70c2578cca13bfbfe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the list of recent file paths from the settings registry. <br /></td></tr>
+<tr class="separator:adccee16a31737a70c2578cca13bfbfe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a4d9eee192d9391901dbe4cbcbfe5811f"><td class="memItemLeft" align="right" valign="top"><a id="a4d9eee192d9391901dbe4cbcbfe5811f"></a>
-static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>HandlerPolicy</b> = AZ::EBusHandlerPolicy::Single</td></tr>
+static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>HandlerPolicy</b> = AZ::EBusHandlerPolicy::Multiple</td></tr>
 <tr class="separator:a4d9eee192d9391901dbe4cbcbfe5811f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7ea00de3b5cdfc6009774f8a2d9ef35"><td class="memItemLeft" align="right" valign="top"><a id="aa7ea00de3b5cdfc6009774f8a2d9ef35"></a>
-static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>AddressPolicy</b> = AZ::EBusAddressPolicy::Single</td></tr>
+static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>AddressPolicy</b> = AZ::EBusAddressPolicy::ById</td></tr>
 <tr class="separator:aa7ea00de3b5cdfc6009774f8a2d9ef35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>AtomToolsDocumentSystemRequestBus provides high level requests for menus, scripts, etc. </p>
+<div class="textblock"><p>AtomToolsDocumentSystemRequestBus is an interface that provides requests for high level user interactions with a system of documents. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a84daf8888c52521acb7ad3fd94762adf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84daf8888c52521acb7ad3fd94762adf">&#9670;&nbsp;</a></span>CloseAllDocumentsExcept()</h2>
@@ -170,8 +211,8 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="ad71525aa1247729fef5ca80905af9d36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad71525aa1247729fef5ca80905af9d36">&#9670;&nbsp;</a></span>CreateDocument()</h2>
+<a id="adac74a30f28133b1dce9306de42fafec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adac74a30f28133b1dce9306de42fafec">&#9670;&nbsp;</a></span>CreateDocumentFromFilePath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,41 +221,15 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual AZ::Uuid AtomToolsFramework::AtomToolsDocumentSystemRequests::CreateDocument </td>
+          <td class="memname">virtual AZ::Uuid AtomToolsFramework::AtomToolsDocumentSystemRequests::CreateDocumentFromFilePath </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create a document object </p><dl class="section return"><dt>Returns</dt><dd>Uuid of new document, or null Uuid if failed </dd></dl>
-
-</div>
-</div>
-<a id="ad331ac42512cdbd5265d2cd3f979faad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad331ac42512cdbd5265d2cd3f979faad">&#9670;&nbsp;</a></span>CreateDocumentFromFile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual AZ::Uuid AtomToolsFramework::AtomToolsDocumentSystemRequests::CreateDocumentFromFile </td>
-          <td>(</td>
-          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>sourcePath</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>targetPath</em>&#160;</td>
         </tr>
         <tr>
@@ -229,7 +244,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create a new document by specifying a source and prompting the user for destination path. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Create a new document by opening a source as a template then saving it as a derived document at the target path </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sourcePath</td><td>document to open. </td></tr>
     <tr><td class="paramname">targetPath</td><td>location where document is saved. </td></tr>
@@ -237,6 +252,87 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unique id of new document if successful, otherwise null Uuid </dd></dl>
+
+</div>
+</div>
+<a id="a865fa86c5100a0b760160b29630e890c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a865fa86c5100a0b760160b29630e890c">&#9670;&nbsp;</a></span>CreateDocumentFromFileType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZ::Uuid AtomToolsFramework::AtomToolsDocumentSystemRequests::CreateDocumentFromFileType </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Search for document type info corresponding to the extension of the path then create a document from it </p><dl class="section return"><dt>Returns</dt><dd>Uuid of new document, or null Uuid if failed </dd></dl>
+
+</div>
+</div>
+<a id="ab0ace8085d4cff6cc1c43e90edbb425e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0ace8085d4cff6cc1c43e90edbb425e">&#9670;&nbsp;</a></span>CreateDocumentFromType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZ::Uuid AtomToolsFramework::AtomToolsDocumentSystemRequests::CreateDocumentFromType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_atom_tools_framework_1_1_document_type_info.html">DocumentTypeInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>documentType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a document from type info and add it to the system </p><dl class="section return"><dt>Returns</dt><dd>Uuid of new document, or null Uuid if failed </dd></dl>
+
+</div>
+</div>
+<a id="aad7f78058cdc7837b85d52460d2209ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7f78058cdc7837b85d52460d2209ec">&#9670;&nbsp;</a></span>CreateDocumentFromTypeName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZ::Uuid AtomToolsFramework::AtomToolsDocumentSystemRequests::CreateDocumentFromTypeName </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>documentTypeName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Search for document type info by name and create a document from it </p><dl class="section return"><dt>Returns</dt><dd>Uuid of new document, or null Uuid if failed </dd></dl>
 
 </div>
 </div>
@@ -263,12 +359,44 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Destroy a document object with the specified id </p><dl class="section return"><dt>Returns</dt><dd>true if Uuid was found and removed, otherwise false </dd></dl>
+<p>Destroy a document with the specified id </p><dl class="section return"><dt>Returns</dt><dd>true if Uuid was found and removed, otherwise false </dd></dl>
 
 </div>
 </div>
-<a id="ac4420fff16001ed8d390b736ad7b68fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4420fff16001ed8d390b736ad7b68fb">&#9670;&nbsp;</a></span>OpenDocument()</h2>
+<a id="a6493ac8084aca8d2a98ba14297efe3dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6493ac8084aca8d2a98ba14297efe3dc">&#9670;&nbsp;</a></span>IsDocumentOpen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AtomToolsFramework::AtomToolsDocumentSystemRequests::IsDocumentOpen </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Uuid &amp;&#160;</td>
+          <td class="paramname"><em>documentId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Determine if a document is open in the system </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">documentId</td><td>unique id of document to check </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad41a44da41b7efce1391869df434493a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad41a44da41b7efce1391869df434493a">&#9670;&nbsp;</a></span>OpenDocument()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,7 +407,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual AZ::Uuid AtomToolsFramework::AtomToolsDocumentSystemRequests::OpenDocument </td>
           <td>(</td>
-          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>sourcePath</em></td><td>)</td>
           <td></td>
         </tr>
@@ -332,8 +460,8 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a02b873752f11d874f3b3b06351304b3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02b873752f11d874f3b3b06351304b3a">&#9670;&nbsp;</a></span>SaveDocumentAsChild()</h2>
+<a id="aa2f3b1d1c7de2a29d54024a77408a6c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2f3b1d1c7de2a29d54024a77408a6c6">&#9670;&nbsp;</a></span>SaveDocumentAsChild()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,7 +478,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>targetPath</em>&#160;</td>
         </tr>
         <tr>
@@ -375,8 +503,8 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a18962678f01e57ad176a1557609392e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18962678f01e57ad176a1557609392e4">&#9670;&nbsp;</a></span>SaveDocumentAsCopy()</h2>
+<a id="af5ce85ded2fcf91dd943fc9aad9d3c17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ce85ded2fcf91dd943fc9aad9d3c17">&#9670;&nbsp;</a></span>SaveDocumentAsCopy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -393,7 +521,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>targetPath</em>&#160;</td>
         </tr>
         <tr>
@@ -424,7 +552,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -37,8 +37,8 @@ You must create a separate installation folder to copy over the required assets,
 
 2. Copy the following files to the `/bin` folder:
 
-    -   All the `*.exe` and `*.dll` files from `o3de/build/windows_vs2019/bin/profile`.
-    -   The `Registry` folder from `o3de/build/windows_vs2019/bin/profile/Registry/`.
+    -   All the `*.exe` and `*.dll` files from `o3de/build/windows/bin/profile`.
+    -   The `Registry` folder from `o3de/build/windows/bin/profile/Registry/`.
   
 3. Copy all of the files (loose assets) in your project's cache folder, `<project folder>/Cache/pc`, to the `<package base folder>/assets/pc` folder.
 
@@ -60,9 +60,9 @@ You must create a separate installation folder to copy over the required assets,
 
 2. Copy the following files to the `/bin` folder:
 
-    -   All the `*.exe` and `*.dll` files from `o3de/build/windows_vs2019/bin/release`.
+    -   All the `*.exe` and `*.dll` files from `o3de/build/windows/bin/release`.
   
-3. Zip all the assets under `<project folder>/Cache/pc` as well as the `Registry` folder from `o3de/build/windows_vs2019/bin/release/Registry/` into a package called `engine.pak`. Then add `engine.pak` to the `<package base folder>/assets/pc` folder.
+3. Zip all the assets under `<project folder>/Cache/pc` as well as the `Registry` folder from `o3de/build/windows/bin/release/Registry/` into a package called `engine.pak`. Then add `engine.pak` to the `<package base folder>/assets/pc` folder.
 
 4. Copy the `VC_redist.x64.exe` file from `o3de/Tools/Redistributables/Visual Studio 2015-2019` to the package base folder.
 
@@ -88,10 +88,3 @@ To test the local server package:
 {{< caution >}}  
 Make sure to replace `<package base folder>` with the path to the installation folder that you created earlier. 
 {{< /caution >}}
-
-
----
-
-Previous topic: [AWS GameLift Gem Local Testing](local-testing/)
-
-Next topic: [AWS GameLift Gem Build Packaging for Linux](build-packaging-for-linux/)

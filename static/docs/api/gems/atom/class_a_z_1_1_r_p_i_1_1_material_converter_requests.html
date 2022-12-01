@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -65,8 +65,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6c7b5e71fc385f587a5feb000f34d7e"><td class="memItemLeft" align="right" valign="top"><a id="ab6c7b5e71fc385f587a5feb000f34d7e"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEnabled</b> () const =0</td></tr>
 <tr class="separator:ab6c7b5e71fc385f587a5feb000f34d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a780b69f7144f126ca8f8c2fccb3f5e12"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_converter_requests.html#a780b69f7144f126ca8f8c2fccb3f5e12">ShouldIncludeMaterialPropertyNames</a> () const =0</td></tr>
-<tr class="separator:a780b69f7144f126ca8f8c2fccb3f5e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66bf200aed743d8dca3cac1407ef01f3"><td class="memItemLeft" align="right" valign="top"><a id="a66bf200aed743d8dca3cac1407ef01f3"></a>
+virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_converter_requests.html#a66bf200aed743d8dca3cac1407ef01f3">GetFingerprintInfo</a> () const =0</td></tr>
+<tr class="memdesc:a66bf200aed743d8dca3cac1407ef01f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a fingerprint string that can be used to salt the SceneAPI builder's fingerprint. <br /></td></tr>
+<tr class="separator:a66bf200aed743d8dca3cac1407ef01f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3b57b0fc3fa6f39605ad93c5574bef9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_converter_requests.html#aa3b57b0fc3fa6f39605ad93c5574bef9">ConvertMaterial</a> (const AZ::SceneAPI::DataTypes::IMaterialData &amp;materialData, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html">MaterialSourceData</a> &amp;out)=0</td></tr>
 <tr class="separator:aa3b57b0fc3fa6f39605ad93c5574bef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e150e2c09abd5b183bed6ec81f9a314"><td class="memItemLeft" align="right" valign="top"><a id="a2e150e2c09abd5b183bed6ec81f9a314"></a>
@@ -118,40 +120,13 @@ virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a clas
 
 </div>
 </div>
-<a id="a780b69f7144f126ca8f8c2fccb3f5e12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a780b69f7144f126ca8f8c2fccb3f5e12">&#9670;&nbsp;</a></span>ShouldIncludeMaterialPropertyNames()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool AZ::RPI::MaterialConverterRequests::ShouldIncludeMaterialPropertyNames </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns true if material property names should be included in azmaterials. This allows unlinking of dependencies for some file types to materialtype files (e.g. fbx). <br  />
- </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/RPI/Code/Include/Atom/RPI.Edit/Material/MaterialConverterBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:28 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

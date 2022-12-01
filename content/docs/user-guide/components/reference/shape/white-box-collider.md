@@ -29,8 +29,7 @@ In the image above, the White Box Collider component is added to an entity with 
 |-|-|-|-|
 | **Collision Layer** | The collision layer that's assigned to the collider. For more information, see [Collision Layers](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-layers/). || `Default` |
 | **Collides With** | The collision group containing the layers that this collider collides with. For more information, see [Collision Groups](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-groups/). || `All` |
-| **Physics Materials - Library** | Set the physics material library for this collider. || `surfacetypemateriallibrary (default)` |
-| **Physics Materials - Entire object** | Choose a material from the physics material library for this collider. The material is applied to the entire white box entity. || `<Default Physics Material>` |
+| **Physics Materials** | Choose a physics material for this white box collider. | A `.physxmaterial` asset assigned. | `(default)` |
 | **Tag** | Set a tag for this collider. Tags can be used to quickly identify components in script or code. | Crc32 | None |
 | **Rest offset** | Bodies will come to rest separated by the sum of their **Rest offset** values. Must be less than **Contact offset**. | -Infinity to 50.0 | `0.0` |
 | **Contact offset** | Bodies will begin to generate contacts when within the sum of their **Contact offset** values.  Must be greater than **Rest offset** | 0.0 - 50.0 | `0.02` |

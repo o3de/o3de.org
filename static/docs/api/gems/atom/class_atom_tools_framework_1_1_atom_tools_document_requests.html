@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -55,6 +55,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p><code>#include &lt;AtomToolsDocumentRequestBus.h&gt;</code></p>
+
 <p>Inherits EBusTraits.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -65,26 +67,24 @@ typedef AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><b>BusIdType
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a30f2b6a68cc0df98d9e20240bfa70fb1"><td class="memItemLeft" align="right" valign="top"><a id="a30f2b6a68cc0df98d9e20240bfa70fb1"></a>
-virtual AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a30f2b6a68cc0df98d9e20240bfa70fb1">GetAbsolutePath</a> () const =0</td></tr>
-<tr class="memdesc:a30f2b6a68cc0df98d9e20240bfa70fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get absolute path of document. <br /></td></tr>
-<tr class="separator:a30f2b6a68cc0df98d9e20240bfa70fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeed0d47a84c01562f6366d1ee290660c"><td class="memItemLeft" align="right" valign="top"><a id="aeed0d47a84c01562f6366d1ee290660c"></a>
-virtual AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#aeed0d47a84c01562f6366d1ee290660c">GetRelativePath</a> () const =0</td></tr>
-<tr class="memdesc:aeed0d47a84c01562f6366d1ee290660c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get relative path of document. <br /></td></tr>
-<tr class="separator:aeed0d47a84c01562f6366d1ee290660c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10c1b7d860120a05b262c2cff04029cd"><td class="memItemLeft" align="right" valign="top">virtual const AZStd::any &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a10c1b7d860120a05b262c2cff04029cd">GetPropertyValue</a> (const AZ::Name &amp;propertyFullName) const =0</td></tr>
-<tr class="separator:a10c1b7d860120a05b262c2cff04029cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b213f0f981709d31aa2e4ccc0ddcd24"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="struct_atom_tools_framework_1_1_dynamic_property.html">AtomToolsFramework::DynamicProperty</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a0b213f0f981709d31aa2e4ccc0ddcd24">GetProperty</a> (const AZ::Name &amp;propertyFullName) const =0</td></tr>
-<tr class="separator:a0b213f0f981709d31aa2e4ccc0ddcd24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c2e79c158243ff04b6e361a6a5eb298"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a1c2e79c158243ff04b6e361a6a5eb298">IsPropertyGroupVisible</a> (const AZ::Name &amp;propertyGroupFullName) const =0</td></tr>
-<tr class="separator:a1c2e79c158243ff04b6e361a6a5eb298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e0551ca55cf10d517514e686d1a23b1"><td class="memItemLeft" align="right" valign="top"><a id="a5e0551ca55cf10d517514e686d1a23b1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a5e0551ca55cf10d517514e686d1a23b1">SetPropertyValue</a> (const AZ::Name &amp;propertyFullName, const AZStd::any &amp;value)=0</td></tr>
-<tr class="memdesc:a5e0551ca55cf10d517514e686d1a23b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify document property value. <br /></td></tr>
-<tr class="separator:a5e0551ca55cf10d517514e686d1a23b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9db452a5408cc48eaf723a2cde7c65d9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a9db452a5408cc48eaf723a2cde7c65d9">Open</a> (AZStd::string_view loadPath)=0</td></tr>
-<tr class="separator:a9db452a5408cc48eaf723a2cde7c65d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a623ccd76f55dc524d3f683ddd210ad14"><td class="memItemLeft" align="right" valign="top"><a id="a623ccd76f55dc524d3f683ddd210ad14"></a>
+virtual const <a class="el" href="struct_atom_tools_framework_1_1_document_type_info.html">DocumentTypeInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a623ccd76f55dc524d3f683ddd210ad14">GetDocumentTypeInfo</a> () const =0</td></tr>
+<tr class="memdesc:a623ccd76f55dc524d3f683ddd210ad14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the document type info that was used to create this document. <br /></td></tr>
+<tr class="separator:a623ccd76f55dc524d3f683ddd210ad14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb2155f76075869fee5c450d08af0fbc"><td class="memItemLeft" align="right" valign="top"><a id="aeb2155f76075869fee5c450d08af0fbc"></a>
+virtual DocumentObjectInfoVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#aeb2155f76075869fee5c450d08af0fbc">GetObjectInfo</a> () const =0</td></tr>
+<tr class="memdesc:aeb2155f76075869fee5c450d08af0fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a container describing all reflected objects contained in a document. <br /></td></tr>
+<tr class="separator:aeb2155f76075869fee5c450d08af0fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328edb4777b722993c3d107e9bae8ff8"><td class="memItemLeft" align="right" valign="top"><a id="a328edb4777b722993c3d107e9bae8ff8"></a>
+virtual const AZ::Uuid &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a328edb4777b722993c3d107e9bae8ff8">GetId</a> () const =0</td></tr>
+<tr class="memdesc:a328edb4777b722993c3d107e9bae8ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the unique ID of the document, which should be the same as the bus ID. <br /></td></tr>
+<tr class="separator:a328edb4777b722993c3d107e9bae8ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3291c81b5d91b4a58bc0ee7f3d8011"><td class="memItemLeft" align="right" valign="top"><a id="a9a3291c81b5d91b4a58bc0ee7f3d8011"></a>
+virtual const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a9a3291c81b5d91b4a58bc0ee7f3d8011">GetAbsolutePath</a> () const =0</td></tr>
+<tr class="memdesc:a9a3291c81b5d91b4a58bc0ee7f3d8011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get absolute path of document. <br /></td></tr>
+<tr class="separator:a9a3291c81b5d91b4a58bc0ee7f3d8011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc035a07a4501cc40fd6203766b6b91"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a2fc035a07a4501cc40fd6203766b6b91">Open</a> (const AZStd::string &amp;loadPath)=0</td></tr>
+<tr class="separator:a2fc035a07a4501cc40fd6203766b6b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ac6b2450367597e8e9fd21c32e3247e"><td class="memItemLeft" align="right" valign="top"><a id="a4ac6b2450367597e8e9fd21c32e3247e"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a4ac6b2450367597e8e9fd21c32e3247e">Reopen</a> ()=0</td></tr>
 <tr class="memdesc:a4ac6b2450367597e8e9fd21c32e3247e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reopen document preserving edits. <br /></td></tr>
@@ -93,14 +93,18 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#ae56aad2a256d9e2b8e716bebcd301fcf">Save</a> ()=0</td></tr>
 <tr class="memdesc:ae56aad2a256d9e2b8e716bebcd301fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save document to file. <br /></td></tr>
 <tr class="separator:ae56aad2a256d9e2b8e716bebcd301fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab6df5af3b3e9619c2e11b4ae80cf3f7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#aab6df5af3b3e9619c2e11b4ae80cf3f7">SaveAsCopy</a> (AZStd::string_view savePath)=0</td></tr>
-<tr class="separator:aab6df5af3b3e9619c2e11b4ae80cf3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad20ebd5eec639bd291f2aa98108898ea"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#ad20ebd5eec639bd291f2aa98108898ea">SaveAsChild</a> (AZStd::string_view savePath)=0</td></tr>
-<tr class="separator:ad20ebd5eec639bd291f2aa98108898ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6508b8207e92eca6df68ee9e3eaf8b7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#aa6508b8207e92eca6df68ee9e3eaf8b7">SaveAsCopy</a> (const AZStd::string &amp;savePath)=0</td></tr>
+<tr class="separator:aa6508b8207e92eca6df68ee9e3eaf8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1f12430d2bb3cc0b55e2593c2190378"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#af1f12430d2bb3cc0b55e2593c2190378">SaveAsChild</a> (const AZStd::string &amp;savePath)=0</td></tr>
+<tr class="separator:af1f12430d2bb3cc0b55e2593c2190378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b47b312f57b25eeb40ac91e2290cd98"><td class="memItemLeft" align="right" valign="top"><a id="a8b47b312f57b25eeb40ac91e2290cd98"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a8b47b312f57b25eeb40ac91e2290cd98">Close</a> ()=0</td></tr>
 <tr class="memdesc:a8b47b312f57b25eeb40ac91e2290cd98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close document and reset its data. <br /></td></tr>
 <tr class="separator:a8b47b312f57b25eeb40ac91e2290cd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a968ac11e62d1eb22193ea3ce60ecdddf"><td class="memItemLeft" align="right" valign="top"><a id="a968ac11e62d1eb22193ea3ce60ecdddf"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a968ac11e62d1eb22193ea3ce60ecdddf">Clear</a> ()=0</td></tr>
+<tr class="memdesc:a968ac11e62d1eb22193ea3ce60ecdddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear document of all content. <br /></td></tr>
+<tr class="separator:a968ac11e62d1eb22193ea3ce60ecdddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae25dce60eba3e99fd68c525e71528614"><td class="memItemLeft" align="right" valign="top"><a id="ae25dce60eba3e99fd68c525e71528614"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#ae25dce60eba3e99fd68c525e71528614">IsOpen</a> () const =0</td></tr>
 <tr class="memdesc:ae25dce60eba3e99fd68c525e71528614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Document is loaded. <br /></td></tr>
@@ -109,10 +113,10 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a9785a0407730fceb2cdef53a1370a5f4">IsModified</a> () const =0</td></tr>
 <tr class="memdesc:a9785a0407730fceb2cdef53a1370a5f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Document has changes pending. <br /></td></tr>
 <tr class="separator:a9785a0407730fceb2cdef53a1370a5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab49d3557f71e0310cc87bcc19727d157"><td class="memItemLeft" align="right" valign="top"><a id="ab49d3557f71e0310cc87bcc19727d157"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#ab49d3557f71e0310cc87bcc19727d157">IsSavable</a> () const =0</td></tr>
-<tr class="memdesc:ab49d3557f71e0310cc87bcc19727d157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can the document be saved. <br /></td></tr>
-<tr class="separator:ab49d3557f71e0310cc87bcc19727d157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a858f8850bd1a84ca22d6a4485c3bcf"><td class="memItemLeft" align="right" valign="top"><a id="a6a858f8850bd1a84ca22d6a4485c3bcf"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a6a858f8850bd1a84ca22d6a4485c3bcf">CanSave</a> () const =0</td></tr>
+<tr class="memdesc:a6a858f8850bd1a84ca22d6a4485c3bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can the document be saved. <br /></td></tr>
+<tr class="separator:a6a858f8850bd1a84ca22d6a4485c3bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9611a99f401ecaeee0e95e58ac555976"><td class="memItemLeft" align="right" valign="top"><a id="a9611a99f401ecaeee0e95e58ac555976"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a9611a99f401ecaeee0e95e58ac555976">CanUndo</a> () const =0</td></tr>
 <tr class="memdesc:a9611a99f401ecaeee0e95e58ac555976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if there are reversible modifications to the document. <br /></td></tr>
@@ -147,90 +151,11 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>AddressPolicy</b> = AZ::EBusAddressPolicy::ById</td></tr>
 <tr class="separator:a69b636ce3a89b2a814d449d2a16c85ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0b213f0f981709d31aa2e4ccc0ddcd24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b213f0f981709d31aa2e4ccc0ddcd24">&#9670;&nbsp;</a></span>GetProperty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const <a class="el" href="struct_atom_tools_framework_1_1_dynamic_property.html">AtomToolsFramework::DynamicProperty</a>&amp; AtomToolsFramework::AtomToolsDocumentRequests::GetProperty </td>
-          <td>(</td>
-          <td class="paramtype">const AZ::Name &amp;&#160;</td>
-          <td class="paramname"><em>propertyFullName</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns a property object If the document is not open or the id can't be found, an invalid property is returned. </p>
-
-</div>
-</div>
-<a id="a10c1b7d860120a05b262c2cff04029cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10c1b7d860120a05b262c2cff04029cd">&#9670;&nbsp;</a></span>GetPropertyValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const AZStd::any&amp; AtomToolsFramework::AtomToolsDocumentRequests::GetPropertyValue </td>
-          <td>(</td>
-          <td class="paramtype">const AZ::Name &amp;&#160;</td>
-          <td class="paramname"><em>propertyFullName</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Return property value If the document is not open or the id can't be found, an invalid value is returned instead. </p>
-
-</div>
-</div>
-<a id="a1c2e79c158243ff04b6e361a6a5eb298"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c2e79c158243ff04b6e361a6a5eb298">&#9670;&nbsp;</a></span>IsPropertyGroupVisible()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool AtomToolsFramework::AtomToolsDocumentRequests::IsPropertyGroupVisible </td>
-          <td>(</td>
-          <td class="paramtype">const AZ::Name &amp;&#160;</td>
-          <td class="paramname"><em>propertyGroupFullName</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns whether a property group is visible If the document is not open or the id can't be found, returns false. </p>
-
-</div>
-</div>
-<a id="a9db452a5408cc48eaf723a2cde7c65d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9db452a5408cc48eaf723a2cde7c65d9">&#9670;&nbsp;</a></span>Open()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This bus provides the most basic interface for implementing a document that works with the document system. Any extensions or application specific functionality should be added using a domain specific buses. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2fc035a07a4501cc40fd6203766b6b91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fc035a07a4501cc40fd6203766b6b91">&#9670;&nbsp;</a></span>Open()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,7 +166,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual bool AtomToolsFramework::AtomToolsDocumentRequests::Open </td>
           <td>(</td>
-          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>loadPath</em></td><td>)</td>
           <td></td>
         </tr>
@@ -261,8 +186,8 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="ad20ebd5eec639bd291f2aa98108898ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad20ebd5eec639bd291f2aa98108898ea">&#9670;&nbsp;</a></span>SaveAsChild()</h2>
+<a id="af1f12430d2bb3cc0b55e2593c2190378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1f12430d2bb3cc0b55e2593c2190378">&#9670;&nbsp;</a></span>SaveAsChild()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,7 +198,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual bool AtomToolsFramework::AtomToolsDocumentRequests::SaveAsChild </td>
           <td>(</td>
-          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>savePath</em></td><td>)</td>
           <td></td>
         </tr>
@@ -293,8 +218,8 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="aab6df5af3b3e9619c2e11b4ae80cf3f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab6df5af3b3e9619c2e11b4ae80cf3f7">&#9670;&nbsp;</a></span>SaveAsCopy()</h2>
+<a id="aa6508b8207e92eca6df68ee9e3eaf8b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6508b8207e92eca6df68ee9e3eaf8b7">&#9670;&nbsp;</a></span>SaveAsCopy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,7 +230,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual bool AtomToolsFramework::AtomToolsDocumentRequests::SaveAsCopy </td>
           <td>(</td>
-          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>savePath</em></td><td>)</td>
           <td></td>
         </tr>
@@ -331,7 +256,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -409,9 +409,12 @@ In this example, the signal listener uses a lambda handler, so you can define th
 
 Define `CreateEntityWithShapeComponent(...)`, which communicates with O3DE EBuses to create a new entity with a component specified by the `typeId` parameter.
 
-1. Send a request to create a new entity by using `editor.ToolsApplicationRequestBus` to call `bus.Broadcast` and dispatch `CreateNewEntity`, which creates a new entity and returns its `AZ::EntityId`. The new entity's `AZ::EntityId` is stored in `new_entity_id`.
+1. Send a request to check if a level is loaded in the Editor by using `editor.EditorRequestBus` to call `bus.Broadcast` and dispatch `IsLevelDocumentOpen`, which will return true/false if a level has been loaded or not.
+    - Attempting to create an Entity without a level loaded will cause a crash, so if a level isn't loaded, we will print a warning message and then return.
 
-2. If the user entered a name in the input field, update the entity's name.
+2. Send a request to create a new entity by using `editor.ToolsApplicationRequestBus` to call `bus.Broadcast` and dispatch `CreateNewEntity`, which creates a new entity and returns its `AZ::EntityId`. The new entity's `AZ::EntityId` is stored in `new_entity_id`.
+
+3. If the user entered a name in the input field, update the entity's name.
 
    - Get the name of the entity by calling `text()`, and store it in `entity_name`.
 
@@ -421,21 +424,27 @@ Define `CreateEntityWithShapeComponent(...)`, which communicates with O3DE EBuse
 
    - Use `editor.EditorEntityAPIBus` to call `bus.Event`  and dispatch `"SetName"` to set the name of `new_entity_id` to `entity_name`.
 
-3. Set the entity's scale.
+4. Set the entity's scale.
    
    - Get the value in the combobox by calling `currentText()`, and store it in `scale_text`.
 
    - Set the entity's scale by using `components.TransformBus` to call `bus.Event` and dispatch `"SetLocalUniformScale"`, which sets the scale of `new_entity_id`. Be aware that you must convert `scale_text` to a float.
 
-4. Add a Shape component to the entity. Use `editor.EditorComponentAPIBus` to call `bus.Broadcast` and dispatch `"AddComponentsOfType"`, which adds the components from the provided list to `new_entity_id`.
+5. Add a Shape component to the entity. Use `editor.EditorComponentAPIBus` to call `bus.Broadcast` and dispatch `"AddComponentsOfType"`, which adds the components from the provided list to `new_entity_id`.
 
 ```py
      def create_entity_with_shape_component(self, type_id):
-        
-        # 1 
-        new_entity_id = editor.ToolsApplicationRequestBus(bus.Broadcast, 'CreateNewEntity', entity.EntityId())
+
+        # 1
+        is_level_loaded = editor.EditorRequestBus(bus.Broadcast, 'IsLevelDocumentOpen')
+        if not is_level_loaded:
+            print("Make sure a level is loaded before choosing your shape")
+            return
 
         # 2
+        new_entity_id = editor.ToolsApplicationRequestBus(bus.Broadcast, 'CreateNewEntity', entity.EntityId())
+
+        # 3
         if self.name_input.text():
             entity_name = self.name_input.text()
 
@@ -449,14 +458,14 @@ Define `CreateEntityWithShapeComponent(...)`, which communicates with O3DE EBuse
 
             editor.EditorEntityAPIBus(bus.Event, "SetName", new_entity_id, entity_name)
 
-        # 3
+        # 4
         try:
             scale_text = self.scale_combobox.currentText()
             components.TransformBus(bus.Event, "SetLocalUniformScale", new_entity_id, float(scale_text))
         except:
             pass
 
-        # 4
+        # 5
         editor.EditorComponentAPIBus(bus.Broadcast, "AddComponentsOfType", new_entity_id, [type_id])
 ```
 

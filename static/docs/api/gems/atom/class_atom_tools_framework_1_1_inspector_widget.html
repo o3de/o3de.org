@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -48,6 +48,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_atom_tools_framework_1_1_inspector_widget-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -58,12 +59,17 @@ $(function() {
 <p><code>#include &lt;InspectorWidget.h&gt;</code></p>
 
 <p>Inherits QWidget, and Handler.</p>
+
+<p>Inherited by <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_inspector.html">AtomToolsFramework::AtomToolsDocumentInspector</a>, and <a class="el" href="class_atom_tools_framework_1_1_entity_preview_viewport_settings_inspector.html">AtomToolsFramework::EntityPreviewViewportSettingsInspector</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0683ab4758d286d7d1f2ff3ae5a4e7f6"><td class="memItemLeft" align="right" valign="top"><a id="a0683ab4758d286d7d1f2ff3ae5a4e7f6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_atom_tools_framework_1_1_inspector_widget.html">InspectorWidget</a>, AZ::SystemAllocator, 0)</td></tr>
 <tr class="separator:a0683ab4758d286d7d1f2ff3ae5a4e7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aca7343bc297a929d69f6d5cd5e06fc"><td class="memItemLeft" align="right" valign="top"><a id="a4aca7343bc297a929d69f6d5cd5e06fc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_atom_tools_framework_1_1_inspector_widget.html">AtomToolsFramework::InspectorWidget</a>, &quot;{D77A5F5F-0536-4249-916F-328B272E1AAB}&quot;)</td></tr>
+<tr class="separator:a4aca7343bc297a929d69f6d5cd5e06fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeba2c26532d5123f80937849a414e049"><td class="memItemLeft" align="right" valign="top"><a id="aeba2c26532d5123f80937849a414e049"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>InspectorWidget</b> (QWidget *parent=nullptr)</td></tr>
 <tr class="separator:aeba2c26532d5123f80937849a414e049"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,6 +127,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ExpandAll</b> () over
 <tr class="memitem:a53e99f9e9272ffef0aed44e23da062f5"><td class="memItemLeft" align="right" valign="top"><a id="a53e99f9e9272ffef0aed44e23da062f5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CollapseAll</b> () override</td></tr>
 <tr class="separator:a53e99f9e9272ffef0aed44e23da062f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0af311de97cbef6f1a48f411536768f"><td class="memItemLeft" align="right" valign="top"><a id="ad0af311de97cbef6f1a48f411536768f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGroupSettingsPrefix</b> (const AZStd::string &amp;prefix)</td></tr>
+<tr class="separator:ad0af311de97cbef6f1a48f411536768f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4897cb381a77e93be723c11748ea08ed"><td class="memItemLeft" align="right" valign="top"><a id="a4897cb381a77e93be723c11748ea08ed"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
+<tr class="separator:a4897cb381a77e93be723c11748ea08ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -145,7 +160,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnHeaderClick
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

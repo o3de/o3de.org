@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine HttpRequestor Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -52,17 +52,16 @@ $(function() {
 <div class="title">HttpRequestor::Parameters Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;HttpRequestParameters.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5634d28e9a406b60d90a92213fffc1a0"><td class="memItemLeft" align="right" valign="top"><a id="a5634d28e9a406b60d90a92213fffc1a0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Parameters</b> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const Callback &amp;callback)</td></tr>
+<tr class="memitem:a5634d28e9a406b60d90a92213fffc1a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_http_requestor_1_1_parameters.html#a5634d28e9a406b60d90a92213fffc1a0">Parameters</a> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const Callback &amp;callback)</td></tr>
 <tr class="separator:a5634d28e9a406b60d90a92213fffc1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6ce25fda86b48c8913d2f6d157a8bce"><td class="memItemLeft" align="right" valign="top"><a id="aa6ce25fda86b48c8913d2f6d157a8bce"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Parameters</b> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const Headers &amp;headers, const Callback &amp;callback)</td></tr>
+<tr class="memitem:aa6ce25fda86b48c8913d2f6d157a8bce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_http_requestor_1_1_parameters.html#aa6ce25fda86b48c8913d2f6d157a8bce">Parameters</a> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const Headers &amp;headers, const Callback &amp;callback)</td></tr>
 <tr class="separator:aa6ce25fda86b48c8913d2f6d157a8bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a166d73dd810b538b6431077c5e142a96"><td class="memItemLeft" align="right" valign="top"><a id="a166d73dd810b538b6431077c5e142a96"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Parameters</b> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const Headers &amp;headers, const AZStd::string &amp;body, const Callback &amp;callback)</td></tr>
+<tr class="memitem:a166d73dd810b538b6431077c5e142a96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_http_requestor_1_1_parameters.html#a166d73dd810b538b6431077c5e142a96">Parameters</a> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const Headers &amp;headers, const AZStd::string &amp;body, const Callback &amp;callback)</td></tr>
 <tr class="separator:a166d73dd810b538b6431077c5e142a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a871b1197747be47ad92b1529801081ce"><td class="memItemLeft" align="right" valign="top"><a id="a871b1197747be47ad92b1529801081ce"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Parameters</b> (const <a class="el" href="class_http_requestor_1_1_parameters.html">Parameters</a> &amp;)=default</td></tr>
@@ -77,28 +76,280 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="class_http_requestor_1_1_parameters.html">Parameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_http_requestor_1_1_parameters.html">Parameters</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a249e7c19c9bd7c4b7f022b0b997fed21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8582cf34d9ccdaa3d049b745608b532e"><td class="memItemLeft" align="right" valign="top"><a id="a8582cf34d9ccdaa3d049b745608b532e"></a>
-const Aws::String &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetURI</b> () const</td></tr>
+const Aws::String &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_http_requestor_1_1_parameters.html#a8582cf34d9ccdaa3d049b745608b532e">GetURI</a> () const</td></tr>
+<tr class="memdesc:a8582cf34d9ccdaa3d049b745608b532e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the URI in string form as an recipient of the HTTP connection. <br /></td></tr>
 <tr class="separator:a8582cf34d9ccdaa3d049b745608b532e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af652371092e9021846572cfa89d78b3f"><td class="memItemLeft" align="right" valign="top"><a id="af652371092e9021846572cfa89d78b3f"></a>
-Aws::Http::HttpMethod&#160;</td><td class="memItemRight" valign="bottom"><b>GetMethod</b> () const</td></tr>
+Aws::Http::HttpMethod&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_http_requestor_1_1_parameters.html#af652371092e9021846572cfa89d78b3f">GetMethod</a> () const</td></tr>
+<tr class="memdesc:af652371092e9021846572cfa89d78b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the HTTP method configured to use for a request. <br /></td></tr>
 <tr class="separator:af652371092e9021846572cfa89d78b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8da62b0a74734ffa74e3f9dd5740849"><td class="memItemLeft" align="right" valign="top"><a id="ae8da62b0a74734ffa74e3f9dd5740849"></a>
-const Headers &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetHeaders</b> () const</td></tr>
+<tr class="memitem:ae8da62b0a74734ffa74e3f9dd5740849"><td class="memItemLeft" align="right" valign="top">const Headers &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_http_requestor_1_1_parameters.html#ae8da62b0a74734ffa74e3f9dd5740849">GetHeaders</a> () const</td></tr>
 <tr class="separator:ae8da62b0a74734ffa74e3f9dd5740849"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4059ae7ef565e803d9a4af2f18a569b2"><td class="memItemLeft" align="right" valign="top"><a id="a4059ae7ef565e803d9a4af2f18a569b2"></a>
-const std::shared_ptr&lt; std::stringstream &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetBodyStream</b> () const</td></tr>
+<tr class="memitem:a4059ae7ef565e803d9a4af2f18a569b2"><td class="memItemLeft" align="right" valign="top">const std::shared_ptr&lt; std::stringstream &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_http_requestor_1_1_parameters.html#a4059ae7ef565e803d9a4af2f18a569b2">GetBodyStream</a> () const</td></tr>
 <tr class="separator:a4059ae7ef565e803d9a4af2f18a569b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e690b51fb955350dc2ebfc05d15f950"><td class="memItemLeft" align="right" valign="top"><a id="a9e690b51fb955350dc2ebfc05d15f950"></a>
-const Callback &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCallback</b> () const</td></tr>
+<tr class="memitem:a9e690b51fb955350dc2ebfc05d15f950"><td class="memItemLeft" align="right" valign="top">const Callback &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_http_requestor_1_1_parameters.html#a9e690b51fb955350dc2ebfc05d15f950">GetCallback</a> () const</td></tr>
 <tr class="separator:a9e690b51fb955350dc2ebfc05d15f950"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Models the parameters needed to make a HTTP call and then receive the returned JSON in a meaningful place. Examples of use are in the HttpRequestCaller class. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5634d28e9a406b60d90a92213fffc1a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5634d28e9a406b60d90a92213fffc1a0">&#9670;&nbsp;</a></span>Parameters() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HttpRequestor::Parameters::Parameters </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>URI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Aws::Http::HttpMethod&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Callback &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">URI</td><td>A universal resource indicator representing an endpoint. </td></tr>
+    <tr><td class="paramname">method</td><td>The HTTP method to use, for example HTTP_GET. </td></tr>
+    <tr><td class="paramname">callback</td><td>The callback method to receive a HTTP call's response. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa6ce25fda86b48c8913d2f6d157a8bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6ce25fda86b48c8913d2f6d157a8bce">&#9670;&nbsp;</a></span>Parameters() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HttpRequestor::Parameters::Parameters </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>URI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Aws::Http::HttpMethod&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Headers &amp;&#160;</td>
+          <td class="paramname"><em>headers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Callback &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">URI</td><td>A universal resource indicator representing an endpoint. </td></tr>
+    <tr><td class="paramname">method</td><td>The HTTP method to use, for example HTTP_GET. </td></tr>
+    <tr><td class="paramname">headers</td><td>A map of header names and values to use. </td></tr>
+    <tr><td class="paramname">callback</td><td>The callback method to receive a HTTP call's response. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a166d73dd810b538b6431077c5e142a96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a166d73dd810b538b6431077c5e142a96">&#9670;&nbsp;</a></span>Parameters() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HttpRequestor::Parameters::Parameters </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>URI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Aws::Http::HttpMethod&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Headers &amp;&#160;</td>
+          <td class="paramname"><em>headers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>body</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Callback &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">URI</td><td>A universal resource indicator representing an endpoint. </td></tr>
+    <tr><td class="paramname">method</td><td>The HTTP method to use, for example HTTP_POST. </td></tr>
+    <tr><td class="paramname">headers</td><td>A map of header names and values to use. </td></tr>
+    <tr><td class="paramname">body</td><td>An data to associate with an HTTP call. </td></tr>
+    <tr><td class="paramname">callback</td><td>The callback method to receive a HTTP call's response. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4059ae7ef565e803d9a4af2f18a569b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4059ae7ef565e803d9a4af2f18a569b2">&#9670;&nbsp;</a></span>GetBodyStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::shared_ptr&lt;std::stringstream&gt;&amp; HttpRequestor::Parameters::GetBodyStream </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get an input stream that can be used to send the body of a request. </p><dl class="section return"><dt>Returns</dt><dd>A string stream representing a request body. </dd></dl>
+
+</div>
+</div>
+<a id="a9e690b51fb955350dc2ebfc05d15f950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e690b51fb955350dc2ebfc05d15f950">&#9670;&nbsp;</a></span>GetCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Callback&amp; HttpRequestor::Parameters::GetCallback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the callback function for processing JSON returned in an HTTP response. Callback functions are responsible for correctly interpreting the HTTP response code, and should communicate any failures. </p><dl class="section return"><dt>Returns</dt><dd>The callback function to process endpoint responses with. </dd></dl>
+
+</div>
+</div>
+<a id="ae8da62b0a74734ffa74e3f9dd5740849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8da62b0a74734ffa74e3f9dd5740849">&#9670;&nbsp;</a></span>GetHeaders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Headers&amp; HttpRequestor::Parameters::GetHeaders </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the list of extra headers to send as part of a request. </p><dl class="section return"><dt>Returns</dt><dd>A map of header-value pairs. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/HttpRequestor/Code/Include/HttpRequestor/HttpRequestParameters.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:46 for Open 3D Engine HttpRequestor Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:00 for Open 3D Engine HttpRequestor Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

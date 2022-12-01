@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -65,9 +65,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a951e88347b5e1c3ce4133c0c5df25e22"><td class="memItemLeft" align="right" valign="top"><a id="a951e88347b5e1c3ce4133c0c5df25e22"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>GenericHookType</b>) (void *, const char *, int, <a class="el" href="struct_a_z_1_1_behavior_value_parameter.html">BehaviorValueParameter</a> *, int, <a class="el" href="struct_a_z_1_1_behavior_value_parameter.html">BehaviorValueParameter</a> *)</td></tr>
-<tr class="separator:a951e88347b5e1c3ce4133c0c5df25e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3894a9e11485b7e70346da005652b1"><td class="memItemLeft" align="right" valign="top"><a id="a5a3894a9e11485b7e70346da005652b1"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>GenericHookType</b>) (void *, const char *, int, <a class="el" href="struct_a_z_1_1_behavior_argument.html">BehaviorArgument</a> *, int, <a class="el" href="struct_a_z_1_1_behavior_argument.html">BehaviorArgument</a> *)</td></tr>
+<tr class="separator:a5a3894a9e11485b7e70346da005652b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a742424081aaa54417f96d5d2c4867f78"><td class="memItemLeft" align="right" valign="top"><a id="a742424081aaa54417f96d5d2c4867f78"></a>
 typedef <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="struct_a_z_1_1_behavior_e_bus_handler_1_1_bus_forwarder_event.html">BusForwarderEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EventArray</b></td></tr>
 <tr class="separator:a742424081aaa54417f96d5d2c4867f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -84,18 +84,18 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetFunctionInd
 template&lt;class BusId &gt; </td></tr>
 <tr class="memitem:a8366f382c78a285a3c17b64a044aed1b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Connect</b> (BusId id)</td></tr>
 <tr class="separator:a8366f382c78a285a3c17b64a044aed1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6742df1fe3d5455f76ffc639f2a59ae3"><td class="memItemLeft" align="right" valign="top"><a id="a6742df1fe3d5455f76ffc639f2a59ae3"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Connect</b> (<a class="el" href="struct_a_z_1_1_behavior_value_parameter.html">BehaviorValueParameter</a> *id=nullptr)=0</td></tr>
-<tr class="separator:a6742df1fe3d5455f76ffc639f2a59ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba93d2ff30e5fd791332f5b2f5dfa92"><td class="memItemLeft" align="right" valign="top"><a id="a5ba93d2ff30e5fd791332f5b2f5dfa92"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Connect</b> (<a class="el" href="struct_a_z_1_1_behavior_argument.html">BehaviorArgument</a> *id=nullptr)=0</td></tr>
+<tr class="separator:a5ba93d2ff30e5fd791332f5b2f5dfa92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36c9c385fd169460e835fa2801b65562"><td class="memItemLeft" align="right" valign="top"><a id="a36c9c385fd169460e835fa2801b65562"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Disconnect</b> ()=0</td></tr>
 <tr class="separator:a36c9c385fd169460e835fa2801b65562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6a6a53218a17d544c2743d0f9cd02b3"><td class="memItemLeft" align="right" valign="top"><a id="af6a6a53218a17d544c2743d0f9cd02b3"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnected</b> ()=0</td></tr>
 <tr class="separator:af6a6a53218a17d544c2743d0f9cd02b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b7792efec2db228f54579771d7b8db7"><td class="memItemLeft" align="right" valign="top"><a id="a5b7792efec2db228f54579771d7b8db7"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnectedId</b> (<a class="el" href="struct_a_z_1_1_behavior_value_parameter.html">BehaviorValueParameter</a> *id)=0</td></tr>
-<tr class="separator:a5b7792efec2db228f54579771d7b8db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a11dcacf8ae6d17cfde5fbc989d9bc"><td class="memItemLeft" align="right" valign="top"><a id="ad4a11dcacf8ae6d17cfde5fbc989d9bc"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnectedId</b> (<a class="el" href="struct_a_z_1_1_behavior_argument.html">BehaviorArgument</a> *id)=0</td></tr>
+<tr class="separator:ad4a11dcacf8ae6d17cfde5fbc989d9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a49197d092e1727ffeb65512b5c0e0b"><td class="memTemplParams" colspan="2"><a id="a0a49197d092e1727ffeb65512b5c0e0b"></a>
 template&lt;class Hook &gt; </td></tr>
 <tr class="memitem:a0a49197d092e1727ffeb65512b5c0e0b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>InstallHook</b> (int index, Hook h, void *userData=nullptr)</td></tr>
@@ -132,10 +132,10 @@ Protected Member Functions</h2></td></tr>
 template&lt;class Event &gt; </td></tr>
 <tr class="memitem:a79831671f2f019504c8e7e57d139de47"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetEvent</b> (<a class="el" href="class_a_z_1_1_event.html">Event</a> e, const char *name)</td></tr>
 <tr class="separator:a79831671f2f019504c8e7e57d139de47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac90c6fe89ef1d62528039ded35e316cb"><td class="memTemplParams" colspan="2"><a id="ac90c6fe89ef1d62528039ded35e316cb"></a>
+<tr class="memitem:ae1f6441fbedbde400fcedf38f33c2cec"><td class="memTemplParams" colspan="2"><a id="ae1f6441fbedbde400fcedf38f33c2cec"></a>
 template&lt;class Event &gt; </td></tr>
-<tr class="memitem:ac90c6fe89ef1d62528039ded35e316cb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetEvent</b> (<a class="el" href="class_a_z_1_1_event.html">Event</a> e, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, const <a class="el" href="class_a_z_std_1_1array.html">AZStd::array</a>&lt; <a class="el" href="struct_a_z_1_1_behavior_parameter_overrides.html">BehaviorParameterOverrides</a>, <a class="el" href="struct_a_z_std_1_1function__traits.html">AZStd::function_traits</a>&lt; <a class="el" href="class_a_z_1_1_event.html">Event</a> &gt;::num_args &gt; &amp;args)</td></tr>
-<tr class="separator:ac90c6fe89ef1d62528039ded35e316cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1f6441fbedbde400fcedf38f33c2cec"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetEvent</b> (<a class="el" href="class_a_z_1_1_event.html">Event</a> e, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; <a class="el" href="class_a_z_1_1_event.html">Event</a> &gt; &amp;args)</td></tr>
+<tr class="separator:ae1f6441fbedbde400fcedf38f33c2cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adffd605a72278eed22884ad0e5e0112b"><td class="memTemplParams" colspan="2"><a id="adffd605a72278eed22884ad0e5e0112b"></a>
 template&lt;class... Args&gt; </td></tr>
 <tr class="memitem:adffd605a72278eed22884ad0e5e0112b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Call</b> (int index, Args &amp;&amp;... args) const</td></tr>
@@ -157,7 +157,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

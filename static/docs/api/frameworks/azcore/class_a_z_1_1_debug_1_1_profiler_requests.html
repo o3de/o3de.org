@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,7 +46,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_a_z_1_1_debug_1_1_profiler_requests-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -55,80 +54,69 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;ProfilerBus.h&gt;</code></p>
-
-<p>Inherits <a class="el" href="struct_a_z_1_1_e_bus_traits.html">AZ::EBusTraits</a>.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ac0e02c2df7a048a359e39fb68d2c6619"><td class="memItemLeft" align="right" valign="top"><a id="ac0e02c2df7a048a359e39fb68d2c6619"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>MutexType</b> = <a class="el" href="class_a_z_std_1_1mutex.html">AZStd::mutex</a></td></tr>
-<tr class="separator:ac0e02c2df7a048a359e39fb68d2c6619"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_struct_a_z_1_1_e_bus_traits"><td colspan="2" onclick="javascript:toggleInherit('pub_types_struct_a_z_1_1_e_bus_traits')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="struct_a_z_1_1_e_bus_traits.html">AZ::EBusTraits</a></td></tr>
-<tr class="memitem:a7d18a8cf116a63f6f1a2a39089651aac inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a7d18a8cf116a63f6f1a2a39089651aac">AllocatorType</a> = AZ::Internal::EBusEnvironmentAllocator</td></tr>
-<tr class="separator:a7d18a8cf116a63f6f1a2a39089651aac inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9445433422a226bf6ca92d06e74835f inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#ac9445433422a226bf6ca92d06e74835f">BusIdType</a> = <a class="el" href="struct_a_z_1_1_null_bus_id.html">NullBusId</a></td></tr>
-<tr class="separator:ac9445433422a226bf6ca92d06e74835f inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a5cc9acf15e838b810d9371aa6b858e inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a6a5cc9acf15e838b810d9371aa6b858e">BusIdOrderCompare</a> = NullBusIdCompare</td></tr>
-<tr class="separator:a6a5cc9acf15e838b810d9371aa6b858e inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af13c49e6f838b6fa71f762b1a5ec95e6 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#af13c49e6f838b6fa71f762b1a5ec95e6">BusHandlerOrderCompare</a> = BusHandlerCompareDefault</td></tr>
-<tr class="separator:af13c49e6f838b6fa71f762b1a5ec95e6 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7caac0bc5f090561541f1ecf359040c inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#af7caac0bc5f090561541f1ecf359040c">MutexType</a> = <a class="el" href="struct_a_z_1_1_null_mutex.html">NullMutex</a></td></tr>
-<tr class="separator:af7caac0bc5f090561541f1ecf359040c inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae29d85afa3eba414331c9399eba61db7 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#ae29d85afa3eba414331c9399eba61db7">EventQueueMutexType</a> = <a class="el" href="struct_a_z_1_1_null_mutex.html">NullMutex</a></td></tr>
-<tr class="separator:ae29d85afa3eba414331c9399eba61db7 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa769c4108d542aa0dc5f5555b7588838 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplParams" colspan="2">template&lt;class Bus &gt; </td></tr>
-<tr class="memitem:aa769c4108d542aa0dc5f5555b7588838 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#aa769c4108d542aa0dc5f5555b7588838">ConnectionPolicy</a> = <a class="el" href="struct_a_z_1_1_e_bus_connection_policy.html">EBusConnectionPolicy</a>&lt; Bus &gt;</td></tr>
-<tr class="separator:aa769c4108d542aa0dc5f5555b7588838 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39014982cd56f0089dfa2df757565982 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplParams" colspan="2">template&lt;class Context &gt; </td></tr>
-<tr class="memitem:a39014982cd56f0089dfa2df757565982 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a39014982cd56f0089dfa2df757565982">StoragePolicy</a> = <a class="el" href="struct_a_z_1_1_e_bus_environment_storage_policy.html">EBusEnvironmentStoragePolicy</a>&lt; Context &gt;</td></tr>
-<tr class="separator:a39014982cd56f0089dfa2df757565982 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd01ca86374f2359f691cdc496269315 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplParams" colspan="2">template&lt;class Bus &gt; </td></tr>
-<tr class="memitem:acd01ca86374f2359f691cdc496269315 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#acd01ca86374f2359f691cdc496269315">RouterPolicy</a> = EBusRouterPolicy&lt; Bus &gt;</td></tr>
-<tr class="separator:acd01ca86374f2359f691cdc496269315 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26e2728bcd1004fe8f1959350d55ab8f inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top"><a id="a26e2728bcd1004fe8f1959350d55ab8f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>EventProcessingPolicy</b> = <a class="el" href="struct_a_z_1_1_e_bus_event_processing_policy.html">EBusEventProcessingPolicy</a></td></tr>
-<tr class="separator:a26e2728bcd1004fe8f1959350d55ab8f inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1a111142fb7527a57987841927b4113 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplParams" colspan="2">template&lt;typename DispatchMutex , bool IsLocklessDispatch&gt; </td></tr>
-<tr class="memitem:ae1a111142fb7527a57987841927b4113 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#ae1a111142fb7527a57987841927b4113">DispatchLockGuard</a> = AZStd::conditional_t&lt; IsLocklessDispatch, AZ::Internal::NullLockGuard&lt; DispatchMutex &gt;, <a class="el" href="class_a_z_std_1_1scoped__lock.html">AZStd::scoped_lock</a>&lt; DispatchMutex &gt; &gt;</td></tr>
-<tr class="separator:ae1a111142fb7527a57987841927b4113 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a52dc8ee91e9cd199adb9f73bfb153083"><td class="memItemLeft" align="right" valign="top"><a id="a52dc8ee91e9cd199adb9f73bfb153083"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsActive</b> ()=0</td></tr>
-<tr class="separator:a52dc8ee91e9cd199adb9f73bfb153083"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1700727c3787b145e694435fbb3c218f"><td class="memItemLeft" align="right" valign="top"><a id="a1700727c3787b145e694435fbb3c218f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>FrameAdvance</b> (ProfileFrameAdvanceType type)=0</td></tr>
-<tr class="separator:a1700727c3787b145e694435fbb3c218f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_struct_a_z_1_1_e_bus_traits')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="struct_a_z_1_1_e_bus_traits.html">AZ::EBusTraits</a></td></tr>
-<tr class="memitem:a5d46cb1c8cb6e0c4642175b610ed8163 inherit pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_a_z.html#a32ca3a3605e97c0cd07dbfa805bf3e82">EBusHandlerPolicy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a5d46cb1c8cb6e0c4642175b610ed8163">HandlerPolicy</a> = <a class="el" href="namespace_a_z.html#a32ca3a3605e97c0cd07dbfa805bf3e82aa0bf169f2539e893e00d7b1296bc4d8e">EBusHandlerPolicy::Multiple</a></td></tr>
-<tr class="separator:a5d46cb1c8cb6e0c4642175b610ed8163 inherit pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04e0f785ae096b8e7b344cc51b1f1bf4 inherit pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_a_z.html#abd62fbe2e48ab376e0cce1a0ff0ea873">EBusAddressPolicy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a04e0f785ae096b8e7b344cc51b1f1bf4">AddressPolicy</a> = <a class="el" href="namespace_a_z.html#abd62fbe2e48ab376e0cce1a0ff0ea873a66ba162102bbf6ae31b522aec561735e">EBusAddressPolicy::Single</a></td></tr>
-<tr class="separator:a04e0f785ae096b8e7b344cc51b1f1bf4 inherit pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a028e63d906349155be1a0bfced09adf0 inherit pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a028e63d906349155be1a0bfced09adf0">EnableEventQueue</a> = false</td></tr>
-<tr class="separator:a028e63d906349155be1a0bfced09adf0 inherit pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ebed35954e0ffb0dd0d7ede44459055 inherit pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a3ebed35954e0ffb0dd0d7ede44459055">EventQueueingActiveByDefault</a> = true</td></tr>
-<tr class="separator:a3ebed35954e0ffb0dd0d7ede44459055 inherit pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2d70dd4df65b01bccb09271e409be9a inherit pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#ac2d70dd4df65b01bccb09271e409be9a">EnableQueuedReferences</a> = false</td></tr>
-<tr class="separator:ac2d70dd4df65b01bccb09271e409be9a inherit pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a3213277ff6f61b1476e0f67ec95622 inherit pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a8a3213277ff6f61b1476e0f67ec95622">LocklessDispatch</a> = false</td></tr>
-<tr class="separator:a8a3213277ff6f61b1476e0f67ec95622 inherit pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_struct_a_z_1_1_e_bus_traits"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_struct_a_z_1_1_e_bus_traits')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="struct_a_z_1_1_e_bus_traits.html">AZ::EBusTraits</a></td></tr>
-<tr class="memitem:ab28df8aaec278ff471e7b5bd943cdc17 inherit pro_methods_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#ab28df8aaec278ff471e7b5bd943cdc17">~EBusTraits</a> ()=default</td></tr>
-<tr class="separator:ab28df8aaec278ff471e7b5bd943cdc17 inherit pro_methods_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84caf57872cab6e7dd38131ca34192bc"><td class="memItemLeft" align="right" valign="top"><a id="a84caf57872cab6e7dd38131ca34192bc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_debug_1_1_profiler_requests.html">ProfilerRequests</a>, &quot;{90AEC117-14C1-4BAE-9704-F916E49EF13F}&quot;)</td></tr>
+<tr class="separator:a84caf57872cab6e7dd38131ca34192bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade03d0a77ed390ec5755c3c6e50c007a"><td class="memItemLeft" align="right" valign="top"><a id="ade03d0a77ed390ec5755c3c6e50c007a"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_profiler_requests.html#ade03d0a77ed390ec5755c3c6e50c007a">IsActive</a> () const =0</td></tr>
+<tr class="memdesc:ade03d0a77ed390ec5755c3c6e50c007a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter/setter for the profiler active state. <br /></td></tr>
+<tr class="separator:ade03d0a77ed390ec5755c3c6e50c007a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aa2112da27515b964bd7440eb161dd7"><td class="memItemLeft" align="right" valign="top"><a id="a8aa2112da27515b964bd7440eb161dd7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetActive</b> (bool active)=0</td></tr>
+<tr class="separator:a8aa2112da27515b964bd7440eb161dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7537aa8f674ae55bc462e6ea54eb95d"><td class="memItemLeft" align="right" valign="top"><a id="ac7537aa8f674ae55bc462e6ea54eb95d"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_profiler_requests.html#ac7537aa8f674ae55bc462e6ea54eb95d">CaptureFrame</a> (const <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> &amp;outputFilePath)=0</td></tr>
+<tr class="memdesc:ac7537aa8f674ae55bc462e6ea54eb95d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture a single frame of profiling data. <br /></td></tr>
+<tr class="separator:ac7537aa8f674ae55bc462e6ea54eb95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d0d7446cf6efbfd2716c7458c175f8"><td class="memItemLeft" align="right" valign="top"><a id="a81d0d7446cf6efbfd2716c7458c175f8"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_profiler_requests.html#a81d0d7446cf6efbfd2716c7458c175f8">StartCapture</a> (<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> outputFilePath)=0</td></tr>
+<tr class="memdesc:a81d0d7446cf6efbfd2716c7458c175f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting/ending a multi-frame capture of profiling data. <br /></td></tr>
+<tr class="separator:a81d0d7446cf6efbfd2716c7458c175f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c16a952f81e7d002de05efc661ab3d4"><td class="memItemLeft" align="right" valign="top"><a id="a5c16a952f81e7d002de05efc661ab3d4"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>EndCapture</b> ()=0</td></tr>
+<tr class="separator:a5c16a952f81e7d002de05efc661ab3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c3caaded5c4ba6440a2f3616cb7778"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_profiler_requests.html#a26c3caaded5c4ba6440a2f3616cb7778">IsCaptureInProgress</a> () const =0</td></tr>
+<tr class="separator:a26c3caaded5c4ba6440a2f3616cb7778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_debug_1_1_profiler_requests.html">ProfilerRequests</a> provides an interface for making profiling system requests </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a26c3caaded5c4ba6440a2f3616cb7778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26c3caaded5c4ba6440a2f3616cb7778">&#9670;&nbsp;</a></span>IsCaptureInProgress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AZ::Debug::ProfilerRequests::IsCaptureInProgress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check to see if a programmatic capture is currently in progress, implies that the profiler is active if returns True. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Debug/ProfilerBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:48 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:31 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

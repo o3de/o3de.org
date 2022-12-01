@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -90,11 +90,11 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a19a8aaa7357dc024a05e46e07774cf6b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html#a19a8aaa7357dc024a05e46e07774cf6b">SetConstant</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex, const T &amp;value, uint32_t arrayIndex)</td></tr>
 <tr class="memdesc:a19a8aaa7357dc024a05e46e07774cf6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a value of type T to the constant shader input, at an array offset. <br /></td></tr>
 <tr class="separator:a19a8aaa7357dc024a05e46e07774cf6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a195ece13c8bd2da3267aff409070a2a5"><td class="memTemplParams" colspan="2"><a id="a195ece13c8bd2da3267aff409070a2a5"></a>
+<tr class="memitem:a06b2539547f237e4cfd08ff69af58fca"><td class="memTemplParams" colspan="2"><a id="a06b2539547f237e4cfd08ff69af58fca"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a195ece13c8bd2da3267aff409070a2a5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html#a195ece13c8bd2da3267aff409070a2a5">SetConstantArray</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex, AZStd::array_view&lt; T &gt; values)</td></tr>
-<tr class="memdesc:a195ece13c8bd2da3267aff409070a2a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns an array of type T to the constant shader input. <br /></td></tr>
-<tr class="separator:a195ece13c8bd2da3267aff409070a2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b2539547f237e4cfd08ff69af58fca"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html#a06b2539547f237e4cfd08ff69af58fca">SetConstantArray</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex, AZStd::span&lt; const T &gt; values)</td></tr>
+<tr class="memdesc:a06b2539547f237e4cfd08ff69af58fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns an array of type T to the constant shader input. <br /></td></tr>
+<tr class="separator:a06b2539547f237e4cfd08ff69af58fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cabed9fc085bf8622ea929e1ee0182e"><td class="memItemLeft" align="right" valign="top"><a id="a2cabed9fc085bf8622ea929e1ee0182e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html#a2cabed9fc085bf8622ea929e1ee0182e">SetConstantData</a> (const void *bytes, size_t byteCount)</td></tr>
 <tr class="memdesc:a2cabed9fc085bf8622ea929e1ee0182e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns constant data as a whole. <br /></td></tr>
@@ -102,23 +102,23 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a88f2af99aeb70083ef289f77f6f12a55"><td class="memItemLeft" align="right" valign="top"><a id="a88f2af99aeb70083ef289f77f6f12a55"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetConstantData</b> (const void *bytes, size_t byteOffset, size_t byteCount)</td></tr>
 <tr class="separator:a88f2af99aeb70083ef289f77f6f12a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad612e2586b06328027d1d819e9a16996"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad612e2586b06328027d1d819e9a16996"><td class="memTemplItemLeft" align="right" valign="top">AZStd::array_view&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html#ad612e2586b06328027d1d819e9a16996">GetConstantArray</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex) const</td></tr>
-<tr class="separator:ad612e2586b06328027d1d819e9a16996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84f837d3e8d3a6a72851274b11d0e7c8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a84f837d3e8d3a6a72851274b11d0e7c8"><td class="memTemplItemLeft" align="right" valign="top">AZStd::span&lt; const T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html#a84f837d3e8d3a6a72851274b11d0e7c8">GetConstantArray</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex) const</td></tr>
+<tr class="separator:a84f837d3e8d3a6a72851274b11d0e7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ce4a92e28f82167c6d457c9a1bf04dd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a8ce4a92e28f82167c6d457c9a1bf04dd"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html#a8ce4a92e28f82167c6d457c9a1bf04dd">GetConstant</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex) const</td></tr>
 <tr class="separator:a8ce4a92e28f82167c6d457c9a1bf04dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53a17f1088fa92c08275bdb61e5f28fc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a53a17f1088fa92c08275bdb61e5f28fc"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html#a53a17f1088fa92c08275bdb61e5f28fc">GetConstant</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex, uint32_t arrayIndex) const</td></tr>
 <tr class="separator:a53a17f1088fa92c08275bdb61e5f28fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d676e78b86995d416a6920b2a2b0018"><td class="memItemLeft" align="right" valign="top"><a id="a1d676e78b86995d416a6920b2a2b0018"></a>
-AZStd::array_view&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html#a1d676e78b86995d416a6920b2a2b0018">GetConstantRaw</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex) const</td></tr>
-<tr class="memdesc:a1d676e78b86995d416a6920b2a2b0018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns constant data for the given shader input index as an array of bytes. <br /></td></tr>
-<tr class="separator:a1d676e78b86995d416a6920b2a2b0018"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4192dd75f9872cacfe801b24842dd29"><td class="memItemLeft" align="right" valign="top"><a id="aa4192dd75f9872cacfe801b24842dd29"></a>
-AZStd::array_view&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html#aa4192dd75f9872cacfe801b24842dd29">GetConstantData</a> () const</td></tr>
-<tr class="memdesc:aa4192dd75f9872cacfe801b24842dd29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the opaque constant data populated by calls to SetConstant and SetConstantData. <br /></td></tr>
-<tr class="separator:aa4192dd75f9872cacfe801b24842dd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757983655c7be70622162e5bef900b77"><td class="memItemLeft" align="right" valign="top"><a id="a757983655c7be70622162e5bef900b77"></a>
+AZStd::span&lt; const uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html#a757983655c7be70622162e5bef900b77">GetConstantRaw</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex) const</td></tr>
+<tr class="memdesc:a757983655c7be70622162e5bef900b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns constant data for the given shader input index as a span of bytes. <br /></td></tr>
+<tr class="separator:a757983655c7be70622162e5bef900b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6581861ebbd698a249e66d614df8f7c6"><td class="memItemLeft" align="right" valign="top"><a id="a6581861ebbd698a249e66d614df8f7c6"></a>
+AZStd::span&lt; const uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html#a6581861ebbd698a249e66d614df8f7c6">GetConstantData</a> () const</td></tr>
+<tr class="memdesc:a6581861ebbd698a249e66d614df8f7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the opaque constant data populated by calls to SetConstant and SetConstantData. <br /></td></tr>
+<tr class="separator:a6581861ebbd698a249e66d614df8f7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a975d58384ae7cd9ccc878d0bb8daa528"><td class="memItemLeft" align="right" valign="top"><a id="a975d58384ae7cd9ccc878d0bb8daa528"></a>
 const <a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_layout.html">ConstantsLayout</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html#a975d58384ae7cd9ccc878d0bb8daa528">GetLayout</a> () const</td></tr>
 <tr class="memdesc:a975d58384ae7cd9ccc878d0bb8daa528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the constants layout. <br /></td></tr>
@@ -157,10 +157,14 @@ template&lt;&gt; </td></tr>
 template&lt;&gt; </td></tr>
 <tr class="memitem:ac782fe4e102cdc9bcabb037f037ad1a9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetConstant</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex, const Vector4 &amp;value)</td></tr>
 <tr class="separator:ac782fe4e102cdc9bcabb037f037ad1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af52cdf0c78a9128bb2bf49a76870f734"><td class="memItemLeft" align="right" valign="top"><a id="af52cdf0c78a9128bb2bf49a76870f734"></a>
+<tr class="memitem:ac28b9198eec0d5ae3fe1ec103c9a21b1"><td class="memItemLeft" align="right" valign="top"><a id="ac28b9198eec0d5ae3fe1ec103c9a21b1"></a>
 template&lt;&gt; </td></tr>
-<tr class="memitem:af52cdf0c78a9128bb2bf49a76870f734"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetConstantArray</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex, AZStd::array_view&lt; bool &gt; values)</td></tr>
-<tr class="separator:af52cdf0c78a9128bb2bf49a76870f734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac28b9198eec0d5ae3fe1ec103c9a21b1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetConstant</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex, const Color &amp;value)</td></tr>
+<tr class="separator:ac28b9198eec0d5ae3fe1ec103c9a21b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d1a01b4b0a20b42aab4df03fcbed70"><td class="memItemLeft" align="right" valign="top"><a id="a67d1a01b4b0a20b42aab4df03fcbed70"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a67d1a01b4b0a20b42aab4df03fcbed70"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetConstantArray</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex, AZStd::span&lt; const bool &gt; values)</td></tr>
+<tr class="separator:a67d1a01b4b0a20b42aab4df03fcbed70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a413466e8f1816e8d39d2758c2076de0f"><td class="memItemLeft" align="right" valign="top"><a id="a413466e8f1816e8d39d2758c2076de0f"></a>
 template&lt;&gt; </td></tr>
 <tr class="memitem:a413466e8f1816e8d39d2758c2076de0f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetConstant</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex) const</td></tr>
@@ -189,6 +193,10 @@ template&lt;&gt; </td></tr>
 template&lt;&gt; </td></tr>
 <tr class="memitem:a45764e7e7b39e1d6ecc6b1aecbb68cb5"><td class="memTemplItemLeft" align="right" valign="top">Vector4&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetConstant</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex) const</td></tr>
 <tr class="separator:a45764e7e7b39e1d6ecc6b1aecbb68cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb106fc8b6b0a7b65b56fdb95daab8dd"><td class="memItemLeft" align="right" valign="top"><a id="aeb106fc8b6b0a7b65b56fdb95daab8dd"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:aeb106fc8b6b0a7b65b56fdb95daab8dd"><td class="memTemplItemLeft" align="right" valign="top">Color&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetConstant</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex) const</td></tr>
+<tr class="separator:aeb106fc8b6b0a7b65b56fdb95daab8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The intent of this class is to provide fast and thin access to the underlying constant data (inline or from an SRG), with basic validation to protect the user. As a secondary objective, it provides type-specific convenience operations as long as they don't violate the primary "fast" and "thin" objectives. To clarify, thin means we don't make assumptions about the data or how the user wants to operate on the data, and the convenience operations boil down to thin wrappers for single calls to SetConstantRaw and GetConstantRaw. So these convenience functions are provided in situations that are "low-hanging-fruit". </p>
@@ -245,8 +253,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ad612e2586b06328027d1d819e9a16996"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad612e2586b06328027d1d819e9a16996">&#9670;&nbsp;</a></span>GetConstantArray()</h2>
+<a id="a84f837d3e8d3a6a72851274b11d0e7c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84f837d3e8d3a6a72851274b11d0e7c8">&#9670;&nbsp;</a></span>GetConstantArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,7 +262,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">AZStd::array_view&lt; T &gt; AZ::RHI::ConstantsData::GetConstantArray </td>
+          <td class="memname">AZStd::span&lt; const T &gt; AZ::RHI::ConstantsData::GetConstantArray </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a>&#160;</td>
           <td class="paramname"><em>inputIndex</em></td><td>)</td>
@@ -291,7 +299,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:26 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

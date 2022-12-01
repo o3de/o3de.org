@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine GraphModel Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -98,18 +98,21 @@ SlotDirection&#160;</td><td class="memItemRight" valign="bottom"><b>GetSlotDirec
 <tr class="memitem:adcf0aec935a25dd7c5676a54816637bc"><td class="memItemLeft" align="right" valign="top"><a id="adcf0aec935a25dd7c5676a54816637bc"></a>
 SlotType&#160;</td><td class="memItemRight" valign="bottom"><b>GetSlotType</b> () const</td></tr>
 <tr class="separator:adcf0aec935a25dd7c5676a54816637bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8e56d69207128d01a2b457787e03426"><td class="memItemLeft" align="right" valign="top"><a id="ae8e56d69207128d01a2b457787e03426"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsValue</b> () const</td></tr>
-<tr class="separator:ae8e56d69207128d01a2b457787e03426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e7c89edc3be1fa23b08f1895a0a4af4"><td class="memItemLeft" align="right" valign="top"><a id="a0e7c89edc3be1fa23b08f1895a0a4af4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsDataType</b> () const</td></tr>
-<tr class="separator:a0e7c89edc3be1fa23b08f1895a0a4af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a837b8360b425bfc310a53354f690782a"><td class="memItemLeft" align="right" valign="top"><a id="a837b8360b425bfc310a53354f690782a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsValues</b> () const</td></tr>
+<tr class="separator:a837b8360b425bfc310a53354f690782a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6f8caeb7777f3c393c59588d6f74e0"><td class="memItemLeft" align="right" valign="top"><a id="a6e6f8caeb7777f3c393c59588d6f74e0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsDataTypes</b> () const</td></tr>
+<tr class="separator:a6e6f8caeb7777f3c393c59588d6f74e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3cc44dfd51ee16966b7b48b6c1b2cf0"><td class="memItemLeft" align="right" valign="top"><a id="aa3cc44dfd51ee16966b7b48b6c1b2cf0"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsConnections</b> () const</td></tr>
 <tr class="separator:aa3cc44dfd51ee16966b7b48b6c1b2cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cc19ed0cb430cec3be39c4251ced8fa"><td class="memItemLeft" align="right" valign="top"><a id="a4cc19ed0cb430cec3be39c4251ced8fa"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsExtendability</b> () const</td></tr>
 <tr class="separator:a4cc19ed0cb430cec3be39c4251ced8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab15da96a73ebb927e360da50180876cb"><td class="memItemLeft" align="right" valign="top"><a id="ab15da96a73ebb927e360da50180876cb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsEditingOnNode</b> () const</td></tr>
+<tr class="separator:ab15da96a73ebb927e360da50180876cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbfef4507c595eebab6722115205b688"><td class="memItemLeft" align="right" valign="top"><a id="adbfef4507c595eebab6722115205b688"></a>
 const SlotName &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot.html#adbfef4507c595eebab6722115205b688">GetName</a> () const</td></tr>
 <tr class="memdesc:adbfef4507c595eebab6722115205b688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valid for all slot configurations. <br /></td></tr>
@@ -132,8 +135,10 @@ AZStd::any&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <tr class="separator:af2783695b10a5bff7c2f0e8a3f845aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1683fc8a07b016a8e4dac0fdf612f58"><td class="memItemLeft" align="right" valign="top">const DataTypeList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot.html#af1683fc8a07b016a8e4dac0fdf612f58">GetSupportedDataTypes</a> () const</td></tr>
 <tr class="separator:af1683fc8a07b016a8e4dac0fdf612f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c393b6f92e960265424fd9f3dbec0b3"><td class="memItemLeft" align="right" valign="top">const DataTypeList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot.html#a2c393b6f92e960265424fd9f3dbec0b3">GetPossibleDataTypes</a> () const</td></tr>
-<tr class="separator:a2c393b6f92e960265424fd9f3dbec0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c72ae3fda06553b7a58836f2d3c7740"><td class="memItemLeft" align="right" valign="top"><a id="a9c72ae3fda06553b7a58836f2d3c7740"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot.html#a9c72ae3fda06553b7a58836f2d3c7740">IsSupportedDataType</a> (DataTypePtr dataType) const</td></tr>
+<tr class="memdesc:a9c72ae3fda06553b7a58836f2d3c7740"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the input data type is supported by this slot. <br /></td></tr>
+<tr class="separator:a9c72ae3fda06553b7a58836f2d3c7740"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad83930141923752363633a3893fb5b0b"><td class="memItemLeft" align="right" valign="top"><a id="ad83930141923752363633a3893fb5b0b"></a>
 const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot.html#ad83930141923752363633a3893fb5b0b">GetMinimumSlots</a> () const</td></tr>
 <tr class="memdesc:ad83930141923752363633a3893fb5b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience functions that wrap <a class="el" href="class_graph_model_1_1_slot_definition.html">SlotDefinition</a> accessors (specific to definitions that support extendable slots) <br /></td></tr>
@@ -151,9 +156,9 @@ SlotSubId&#160;</td><td class="memItemRight" valign="bottom"><b>GetSlotSubId</b>
 <tr class="separator:a603592287e24abaf75005648ffecdcc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a248e9da7746409805942b866cee685e4"><td class="memItemLeft" align="right" valign="top">AZStd::any&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot.html#a248e9da7746409805942b866cee685e4">GetValue</a> () const</td></tr>
 <tr class="separator:a248e9da7746409805942b866cee685e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad73155d437c6c67b67f6c432ee20cf77"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad73155d437c6c67b67f6c432ee20cf77"><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot.html#ad73155d437c6c67b67f6c432ee20cf77">GetValue</a> () const</td></tr>
-<tr class="separator:ad73155d437c6c67b67f6c432ee20cf77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bc68b28af75c1c46287861b36864c76"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0bc68b28af75c1c46287861b36864c76"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot.html#a0bc68b28af75c1c46287861b36864c76">GetValue</a> () const</td></tr>
+<tr class="separator:a0bc68b28af75c1c46287861b36864c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa413dbc04e8d3d2fad7b51e53a016b85"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa413dbc04e8d3d2fad7b51e53a016b85"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot.html#aa413dbc04e8d3d2fad7b51e53a016b85">SetValue</a> (const T &amp;value)</td></tr>
 <tr class="separator:aa413dbc04e8d3d2fad7b51e53a016b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,10 +180,10 @@ SlotSubId&#160;</td><td class="memItemRight" valign="bottom"><b>GetSlotSubId</b>
 GraphPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_graph_element.html#a20fbcc5a55cdac832f747c31521cfa49">GetGraph</a> () const</td></tr>
 <tr class="memdesc:a20fbcc5a55cdac832f747c31521cfa49 inherit pub_methods_class_graph_model_1_1_graph_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="class_graph_model_1_1_graph.html">Graph</a> that owns this <a class="el" href="class_graph_model_1_1_graph_element.html" title="!! Start in Graph.h for high level GraphModel documentation !!!">GraphElement</a>. <br /></td></tr>
 <tr class="separator:a20fbcc5a55cdac832f747c31521cfa49 inherit pub_methods_class_graph_model_1_1_graph_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfc831b221a7c2b886bd40de214d6d72 inherit pub_methods_class_graph_model_1_1_graph_element"><td class="memItemLeft" align="right" valign="top"><a id="acfc831b221a7c2b886bd40de214d6d72"></a>
-IGraphContextPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_graph_element.html#acfc831b221a7c2b886bd40de214d6d72">GetGraphContext</a> () const</td></tr>
-<tr class="memdesc:acfc831b221a7c2b886bd40de214d6d72 inherit pub_methods_class_graph_model_1_1_graph_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="class_graph_model_1_1_i_graph_context.html" title="!! Start in Graph.h for high level GraphModel documentation !!!">IGraphContext</a> for this <a class="el" href="class_graph_model_1_1_graph_element.html" title="!! Start in Graph.h for high level GraphModel documentation !!!">GraphElement</a>. <br /></td></tr>
-<tr class="separator:acfc831b221a7c2b886bd40de214d6d72 inherit pub_methods_class_graph_model_1_1_graph_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3313e4dcd1a9823329b4d60ac8bde91c inherit pub_methods_class_graph_model_1_1_graph_element"><td class="memItemLeft" align="right" valign="top"><a id="a3313e4dcd1a9823329b4d60ac8bde91c"></a>
+GraphContextPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_graph_element.html#a3313e4dcd1a9823329b4d60ac8bde91c">GetGraphContext</a> () const</td></tr>
+<tr class="memdesc:a3313e4dcd1a9823329b4d60ac8bde91c inherit pub_methods_class_graph_model_1_1_graph_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="class_graph_model_1_1_graph_context.html" title="!! Start in Graph.h for high level GraphModel documentation !!!">GraphContext</a> for this <a class="el" href="class_graph_model_1_1_graph_element.html" title="!! Start in Graph.h for high level GraphModel documentation !!!">GraphElement</a>. <br /></td></tr>
+<tr class="separator:a3313e4dcd1a9823329b4d60ac8bde91c inherit pub_methods_class_graph_model_1_1_graph_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -191,9 +196,6 @@ Friends</h2></td></tr>
 <tr class="memitem:afab89afd724f1b07b1aaad6bdc61c47a"><td class="memItemLeft" align="right" valign="top"><a id="afab89afd724f1b07b1aaad6bdc61c47a"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 <tr class="separator:afab89afd724f1b07b1aaad6bdc61c47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ea0157e7e6041c745035f684ddbb624"><td class="memItemLeft" align="right" valign="top"><a id="a1ea0157e7e6041c745035f684ddbb624"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>JsonSlotSerializer</b></td></tr>
-<tr class="separator:a1ea0157e7e6041c745035f684ddbb624"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -286,24 +288,6 @@ AZStd::weak_ptr&lt; <a class="el" href="class_graph_model_1_1_graph.html">Graph<
 
 </div>
 </div>
-<a id="a2c393b6f92e960265424fd9f3dbec0b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c393b6f92e960265424fd9f3dbec0b3">&#9670;&nbsp;</a></span>GetPossibleDataTypes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const DataTypeList&amp; GraphModel::Slot::GetPossibleDataTypes </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Valid for Data and Property slots. Otherwise returns an empty DataTypeList. If valid, this will return the subset of data types that this slot can currently accept based on the configuration of the node this slot belongs to and/or connections to other slots on the node. </p>
-
-</div>
-</div>
 <a id="af1683fc8a07b016a8e4dac0fdf612f58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af1683fc8a07b016a8e4dac0fdf612f58">&#9670;&nbsp;</a></span>GetSupportedDataTypes()</h2>
 
@@ -340,8 +324,8 @@ AZStd::weak_ptr&lt; <a class="el" href="class_graph_model_1_1_graph.html">Graph<
 
 </div>
 </div>
-<a id="ad73155d437c6c67b67f6c432ee20cf77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad73155d437c6c67b67f6c432ee20cf77">&#9670;&nbsp;</a></span>GetValue() <span class="overload">[2/2]</span></h2>
+<a id="a0bc68b28af75c1c46287861b36864c76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bc68b28af75c1c46287861b36864c76">&#9670;&nbsp;</a></span>GetValue() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -349,7 +333,7 @@ AZStd::weak_ptr&lt; <a class="el" href="class_graph_model_1_1_graph.html">Graph<
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const T &amp; GraphModel::Slot::GetValue</td>
+          <td class="memname">T GraphModel::Slot::GetValue</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -440,7 +424,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:45 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:58 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

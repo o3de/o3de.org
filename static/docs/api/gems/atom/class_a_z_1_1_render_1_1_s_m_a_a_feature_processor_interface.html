@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -59,9 +59,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac801d4c4f6933d0a55454391acb13d9e"><td class="memItemLeft" align="right" valign="top"><a id="ac801d4c4f6933d0a55454391acb13d9e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_render_1_1_s_m_a_a_feature_processor_interface.html">AZ::Render::SMAAFeatureProcessorInterface</a>, &quot;{7E6A9FB5-E42C-41C3-8F84-40A1D4433A94}&quot;)</td></tr>
-<tr class="separator:ac801d4c4f6933d0a55454391acb13d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6403c0f3663423feab6d8a7c4f304fcc"><td class="memItemLeft" align="right" valign="top"><a id="a6403c0f3663423feab6d8a7c4f304fcc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_render_1_1_s_m_a_a_feature_processor_interface.html">AZ::Render::SMAAFeatureProcessorInterface</a>, &quot;{7E6A9FB5-E42C-41C3-8F84-40A1D4433A94}&quot;, AZ::RPI::FeatureProcessor)</td></tr>
+<tr class="separator:a6403c0f3663423feab6d8a7c4f304fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a648c41eb9ef7174aa43537cc15bb32f0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_s_m_a_a_feature_processor_interface.html#a648c41eb9ef7174aa43537cc15bb32f0">SetEnable</a> (bool enable)=0</td></tr>
 <tr class="separator:a648c41eb9ef7174aa43537cc15bb32f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86ee5083268bde1fabfab70abe9b3397"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_s_m_a_a_feature_processor_interface.html#a86ee5083268bde1fabfab70abe9b3397">SetQualityByPreset</a> (SMAAQualityPreset preset)=0</td></tr>
@@ -114,6 +114,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a98270908692bffdf4bf5cc6817236580">Deactivate</a> ()</td></tr>
 <tr class="memdesc:a98270908692bffdf4bf5cc6817236580 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform any necessary deactivation. <br /></td></tr>
 <tr class="separator:a98270908692bffdf4bf5cc6817236580 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41df34f125055709089709397a528c90 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top"><a id="a41df34f125055709089709397a528c90"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a41df34f125055709089709397a528c90">ApplyRenderPipelineChange</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *)</td></tr>
+<tr class="memdesc:a41df34f125055709089709397a528c90 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply changes and add additional render passes to the render pipeline from the feature processors. <br /></td></tr>
+<tr class="separator:a41df34f125055709089709397a528c90 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28b655ac096c209bfdcd3cf93bcf32b2 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a28b655ac096c209bfdcd3cf93bcf32b2">PrepareViews</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_feature_processor_1_1_prepare_views_packet.html">PrepareViewsPacket</a> &amp;, AZStd::vector&lt; AZStd::pair&lt; PipelineViewTag, ViewPtr &gt;&gt; &amp;)</td></tr>
 <tr class="separator:a28b655ac096c209bfdcd3cf93bcf32b2 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39a87cce766c54804df525b96d4a499b inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a39a87cce766c54804df525b96d4a499b">Simulate</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_feature_processor_1_1_simulate_packet.html">SimulatePacket</a> &amp;)</td></tr>
@@ -680,7 +684,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:25 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

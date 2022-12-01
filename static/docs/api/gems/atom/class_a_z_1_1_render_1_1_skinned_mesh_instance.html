@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -65,6 +65,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2e1a09d767cb5a146f9342a5d8adb8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0317a708b7abbbd0b4ac4bbb636f818a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#a0317a708b7abbbd0b4ac4bbb636f818a">SuppressSignalOnDeallocate</a> ()</td></tr>
 <tr class="separator:a0317a708b7abbbd0b4ac4bbb636f818a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29ba14977831279e5f44e10ba5c0fb8"><td class="memItemLeft" align="right" valign="top"><a id="af29ba14977831279e5f44e10ba5c0fb8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#af29ba14977831279e5f44e10ba5c0fb8">DisableSkinning</a> (uint32_t lodIndex, uint32_t meshIndex)</td></tr>
+<tr class="memdesc:af29ba14977831279e5f44e10ba5c0fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a flag to skip skinning for a particular mesh. <br /></td></tr>
+<tr class="separator:af29ba14977831279e5f44e10ba5c0fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac979ae725c776ca72b1b0798e6c58429"><td class="memItemLeft" align="right" valign="top"><a id="ac979ae725c776ca72b1b0798e6c58429"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#ac979ae725c776ca72b1b0798e6c58429">EnableSkinning</a> (uint32_t lodIndex, uint32_t meshIndex)</td></tr>
+<tr class="memdesc:ac979ae725c776ca72b1b0798e6c58429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a flag to enable skinning for a particular mesh. <br /></td></tr>
+<tr class="separator:ac979ae725c776ca72b1b0798e6c58429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a408cff70930e31ce27f5d3ed079a9902"><td class="memItemLeft" align="right" valign="top"><a id="a408cff70930e31ce27f5d3ed079a9902"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#a408cff70930e31ce27f5d3ed079a9902">IsSkinningEnabled</a> (uint32_t lodIndex, uint32_t meshIndex) const</td></tr>
+<tr class="memdesc:a408cff70930e31ce27f5d3ed079a9902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if skinning should be executed for this mesh. <br /></td></tr>
+<tr class="separator:a408cff70930e31ce27f5d3ed079a9902"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -72,14 +84,22 @@ Public Attributes</h2></td></tr>
 Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html">RPI::Model</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#ad0be4da5f5b3e2ffa901c7e2ca69515d">m_model</a></td></tr>
 <tr class="memdesc:ad0be4da5f5b3e2ffa901c7e2ca69515d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target model, which is used by the <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html" title="This feature processor handles static and dynamic non-skinned meshes.">MeshFeatureProcessor</a> to render the mesh. <br /></td></tr>
 <tr class="separator:ad0be4da5f5b3e2ffa901c7e2ca69515d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad76abdca6fed97c25b6bda3e888d389a"><td class="memItemLeft" align="right" valign="top"><a id="ad76abdca6fed97c25b6bda3e888d389a"></a>
-AZStd::vector&lt; AZStd::vector&lt; uint32_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#ad76abdca6fed97c25b6bda3e888d389a">m_outputStreamOffsetsInBytes</a></td></tr>
-<tr class="memdesc:ad76abdca6fed97c25b6bda3e888d389a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offsets into the skinned vertex data which are used by SkinnedMeshDispatchItem to target the correct location to store the skinning results. <br /></td></tr>
-<tr class="separator:ad76abdca6fed97c25b6bda3e888d389a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d17cb8caf5c180c50c42a466712717"><td class="memItemLeft" align="right" valign="top"><a id="a78d17cb8caf5c180c50c42a466712717"></a>
+AZStd::vector&lt; AZStd::vector&lt; SkinnedMeshOutputVertexOffsets &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#a78d17cb8caf5c180c50c42a466712717">m_outputStreamOffsetsInBytes</a></td></tr>
+<tr class="memdesc:a78d17cb8caf5c180c50c42a466712717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offsets into the skinned vertex data which are used by SkinnedMeshDispatchItem to target the correct location to store the skinning results. <br /></td></tr>
+<tr class="separator:a78d17cb8caf5c180c50c42a466712717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4f681581bc3d36e976f6b25f3e721d"><td class="memItemLeft" align="right" valign="top"><a id="a7f4f681581bc3d36e976f6b25f3e721d"></a>
+AZStd::vector&lt; AZStd::vector&lt; uint32_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#a7f4f681581bc3d36e976f6b25f3e721d">m_positionHistoryBufferOffsetsInBytes</a></td></tr>
+<tr class="memdesc:a7f4f681581bc3d36e976f6b25f3e721d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offsets to the start of the position history buffer for each mesh. <br /></td></tr>
+<tr class="separator:a7f4f681581bc3d36e976f6b25f3e721d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af06a1c2c9dac36f8fc226860a30bd0aa"><td class="memItemLeft" align="right" valign="top">AZStd::vector&lt; AZStd::vector&lt; AZStd::intrusive_ptr&lt; <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_output_stream_allocation.html">SkinnedMeshOutputStreamAllocation</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#af06a1c2c9dac36f8fc226860a30bd0aa">m_allocations</a></td></tr>
 <tr class="separator:af06a1c2c9dac36f8fc226860a30bd0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb27c0e4268014b876db7f3322733947"><td class="memItemLeft" align="right" valign="top">AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_render_1_1_morph_target_instance_meta_data.html">MorphTargetInstanceMetaData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#acb27c0e4268014b876db7f3322733947">m_morphTargetInstanceMetaData</a></td></tr>
-<tr class="separator:acb27c0e4268014b876db7f3322733947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4f5a76171a1a8b360c0766058ff2e0"><td class="memItemLeft" align="right" valign="top">AZStd::vector&lt; AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_render_1_1_morph_target_instance_meta_data.html">MorphTargetInstanceMetaData</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#a9c4f5a76171a1a8b360c0766058ff2e0">m_morphTargetInstanceMetaData</a></td></tr>
+<tr class="separator:a9c4f5a76171a1a8b360c0766058ff2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cd0edc29cf51ebc411cd7175317db8"><td class="memItemLeft" align="right" valign="top"><a id="a55cd0edc29cf51ebc411cd7175317db8"></a>
+AZStd::vector&lt; AZStd::vector&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#a55cd0edc29cf51ebc411cd7175317db8">m_isSkinningEnabled</a></td></tr>
+<tr class="memdesc:a55cd0edc29cf51ebc411cd7175317db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Meshes that have no influences or are skinned by another system (cloth) should be skipped. <br /></td></tr>
+<tr class="separator:a55cd0edc29cf51ebc411cd7175317db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html">SkinnedMeshInstance</a> contains the data that is needed to represent the output from skinning a single instance of a skinned mesh. It does not contain the actual skinned vertex data, but rather views into the buffers that do contain the data, which are owned by the SkinnedMeshOutputStreamManager </p>
@@ -118,14 +138,14 @@ AZStd::vector&lt; AZStd::vector&lt; uint32_t &gt; &gt;&#160;</td><td class="memI
 
 </div>
 </div>
-<a id="acb27c0e4268014b876db7f3322733947"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb27c0e4268014b876db7f3322733947">&#9670;&nbsp;</a></span>m_morphTargetInstanceMetaData</h2>
+<a id="a9c4f5a76171a1a8b360c0766058ff2e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c4f5a76171a1a8b360c0766058ff2e0">&#9670;&nbsp;</a></span>m_morphTargetInstanceMetaData</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">AZStd::vector&lt;<a class="el" href="struct_a_z_1_1_render_1_1_morph_target_instance_meta_data.html">MorphTargetInstanceMetaData</a>&gt; AZ::Render::SkinnedMeshInstance::m_morphTargetInstanceMetaData</td>
+          <td class="memname">AZStd::vector&lt;AZStd::vector&lt;<a class="el" href="struct_a_z_1_1_render_1_1_morph_target_instance_meta_data.html">MorphTargetInstanceMetaData</a>&gt; &gt; AZ::Render::SkinnedMeshInstance::m_morphTargetInstanceMetaData</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -139,7 +159,7 @@ AZStd::vector&lt; AZStd::vector&lt; uint32_t &gt; &gt;&#160;</td><td class="memI
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:25 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

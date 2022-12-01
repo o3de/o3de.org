@@ -17,7 +17,7 @@ Before you begin authoring passes, it's important to understand the Pass System 
 ### Root Pass
 At the basis of the pass system is a **root pass**, which begins the tree of nested child passes. Each pass is registered within its parent pass to establish the overall context of the passes. A pass can be either a render pass or a sub-root with nested child passes. 
 
-One of the key passes is `MainPipeline.pass`, which is the parent pass that defines the rendering logic for the pipeline. You can change Atom's default pipeline pass in the asset file `MainRenderPipeline.azasset`. Furthermore, if you want to change Atom's default pipeline asset, edit the `m_defaultPipelineAssetPath` parameter in the file `bootstrap.cfg`.
+One of the key passes is `MainPipeline.pass`, which is the parent pass that defines the rendering logic for the pipeline. You can change Atom's default pipeline pass in the asset file `MainRenderPipeline.azasset`.
 
 ### Pass Registry
 The **pass registry** contains the registry of all possible pass templates. In order to use a pass template, it must be included in the pass registry. Note that the pass registry can contain pass templates that are never used. You can add a pass templates into the pass registry file `PassTemplates.azasset` by including the name of the pass template and a path to the `.pass` file through the `Name` and `Path` properties.

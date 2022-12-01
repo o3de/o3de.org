@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -48,6 +48,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_a_z_std_1_1deque_1_1iterator__impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::deque&lt; T, Allocator, NumElementsPerBlock, MinMapSize &gt;::iterator_impl Class Reference</div>  </div>
@@ -75,7 +76,7 @@ typedef T&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b></
 typedef AZStd::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b></td></tr>
 <tr class="separator:aa2659f0272ae6b02b7172b7ea65219aa inherit pub_types_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27d9c84a5703ef046c4182152fefc97f inherit pub_types_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memItemLeft" align="right" valign="top"><a id="a27d9c84a5703ef046c4182152fefc97f"></a>
-typedef <a class="el" href="namespace_a_z_std.html#af84aaacb8f8d5829c71bc26b6fdb5885">AZStd::random_access_iterator_tag</a>&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_category</b></td></tr>
+typedef <a class="el" href="namespace_a_z_std.html#abf6750ae5de11d75b6c6243322f4b2bf">AZStd::random_access_iterator_tag</a>&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_category</b></td></tr>
 <tr class="separator:a27d9c84a5703ef046c4182152fefc97f inherit pub_types_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -104,15 +105,15 @@ AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__i
 <tr class="memitem:ac8351daa8590e257b1ad1bcf6162e7a7"><td class="memItemLeft" align="right" valign="top"><a id="ac8351daa8590e257b1ad1bcf6162e7a7"></a>
 AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (difference_type offset)</td></tr>
 <tr class="separator:ac8351daa8590e257b1ad1bcf6162e7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaed23d41f556fe7aee5ad80229b3dd1"><td class="memItemLeft" align="right" valign="top"><a id="abaed23d41f556fe7aee5ad80229b3dd1"></a>
-AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (difference_type offset)</td></tr>
-<tr class="separator:abaed23d41f556fe7aee5ad80229b3dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5d3658366ab1f559d4c7aa167b5b21"><td class="memItemLeft" align="right" valign="top"><a id="a8b5d3658366ab1f559d4c7aa167b5b21"></a>
+AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (difference_type offset) const</td></tr>
+<tr class="separator:a8b5d3658366ab1f559d4c7aa167b5b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26cfe6158b45e1fb6ec589f8e8d61498"><td class="memItemLeft" align="right" valign="top"><a id="a26cfe6158b45e1fb6ec589f8e8d61498"></a>
 AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-=</b> (difference_type offset)</td></tr>
 <tr class="separator:a26cfe6158b45e1fb6ec589f8e8d61498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13ede3edb8358d9309ed18ba5e7b051e"><td class="memItemLeft" align="right" valign="top"><a id="a13ede3edb8358d9309ed18ba5e7b051e"></a>
-AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (difference_type offset)</td></tr>
-<tr class="separator:a13ede3edb8358d9309ed18ba5e7b051e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41e49b71656596280798ab4ad7b8b13"><td class="memItemLeft" align="right" valign="top"><a id="ac41e49b71656596280798ab4ad7b8b13"></a>
+AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (difference_type offset) const</td></tr>
+<tr class="separator:ac41e49b71656596280798ab4ad7b8b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89dfdb06ce1f16991c650fe2ac4da73b"><td class="memItemLeft" align="right" valign="top"><a id="a89dfdb06ce1f16991c650fe2ac4da73b"></a>
 AZ_FORCE_INLINE difference_type&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a> &amp;rhs) const</td></tr>
 <tr class="separator:a89dfdb06ce1f16991c650fe2ac4da73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,15 +145,15 @@ AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__i
 <tr class="memitem:acdd2a8d604e0a398c42cbc8044a28047 inherit pub_methods_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memItemLeft" align="right" valign="top"><a id="acdd2a8d604e0a398c42cbc8044a28047"></a>
 AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (difference_type offset)</td></tr>
 <tr class="separator:acdd2a8d604e0a398c42cbc8044a28047 inherit pub_methods_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a448552c9e153e79f2d8d6950ac1308a1 inherit pub_methods_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memItemLeft" align="right" valign="top"><a id="a448552c9e153e79f2d8d6950ac1308a1"></a>
-AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (difference_type offset)</td></tr>
-<tr class="separator:a448552c9e153e79f2d8d6950ac1308a1 inherit pub_methods_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534cbfa8c81fb22398ef1134bbc69514 inherit pub_methods_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memItemLeft" align="right" valign="top"><a id="a534cbfa8c81fb22398ef1134bbc69514"></a>
+AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (difference_type offset) const</td></tr>
+<tr class="separator:a534cbfa8c81fb22398ef1134bbc69514 inherit pub_methods_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d810bbb722e3bb26e9f78ad46105919 inherit pub_methods_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memItemLeft" align="right" valign="top"><a id="a7d810bbb722e3bb26e9f78ad46105919"></a>
 AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-=</b> (difference_type offset)</td></tr>
 <tr class="separator:a7d810bbb722e3bb26e9f78ad46105919 inherit pub_methods_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4291d3de347d072ce76ab5e5741942f inherit pub_methods_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memItemLeft" align="right" valign="top"><a id="aa4291d3de347d072ce76ab5e5741942f"></a>
-AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (difference_type offset)</td></tr>
-<tr class="separator:aa4291d3de347d072ce76ab5e5741942f inherit pub_methods_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2de55fb4517d9843793d8471c8724005 inherit pub_methods_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memItemLeft" align="right" valign="top"><a id="a2de55fb4517d9843793d8471c8724005"></a>
+AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (difference_type offset) const</td></tr>
+<tr class="separator:a2de55fb4517d9843793d8471c8724005 inherit pub_methods_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e2e1ce7fadf65ca5fce7cbb2c1c965c inherit pub_methods_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memItemLeft" align="right" valign="top"><a id="a9e2e1ce7fadf65ca5fce7cbb2c1c965c"></a>
 AZ_FORCE_INLINE difference_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html#a9e2e1ce7fadf65ca5fce7cbb2c1c965c">operator-</a> (const <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a> &amp;rhs) const</td></tr>
 <tr class="memdesc:a9e2e1ce7fadf65ca5fce7cbb2c1c965c inherit pub_methods_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">??? <br /></td></tr>
@@ -179,6 +180,12 @@ AZ_FORCE_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>opera
 AZ_FORCE_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;=</b> (const <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a> &amp;rhs) const</td></tr>
 <tr class="separator:a96dc4679cb85e4f89e11ab195dfc89b2 inherit pub_methods_class_a_z_std_1_1deque_1_1const__iterator__impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a7aa5fd1f2687f5253dc09e97873739c2"><td class="memItemLeft" align="right" valign="top"><a id="a7aa5fd1f2687f5253dc09e97873739c2"></a>
+AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (difference_type offset, const <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">this_type</a> &amp;rhs)</td></tr>
+<tr class="separator:a7aa5fd1f2687f5253dc09e97873739c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_a_z_std_1_1deque_1_1const__iterator__impl"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_a_z_std_1_1deque_1_1const__iterator__impl')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">AZStd::deque&lt; T, Allocator, NumElementsPerBlock, MinMapSize &gt;::const_iterator_impl</a></td></tr>
@@ -202,7 +209,7 @@ const <a class="el" href="class_a_z_std_1_1deque.html">container_type</a> *&#160
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:45 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

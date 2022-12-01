@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -47,6 +47,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_script_data_context-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -231,6 +232,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CallExecute</b> ()</t
 <tr class="memitem:a934f967b0a26b723fa4a2b57e4dbe170"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_script_property.html">AZ::ScriptProperty</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_script_data_context.html#a934f967b0a26b723fa4a2b57e4dbe170">ConstructScriptProperty</a> (int index, const char *name=nullptr, bool restrictToPropertyArrays=false)</td></tr>
 <tr class="separator:a934f967b0a26b723fa4a2b57e4dbe170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a7ba56d7f1bbb1e1a225d7db3f233fd31"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_script_data_context.html#a7ba56d7f1bbb1e1a225d7db3f233fd31">GetInterpreterVersion</a> ()</td></tr>
+<tr class="separator:a7ba56d7f1bbb1e1a225d7db3f233fd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a9aca79c79af1c5e9fd060c1813473c03"><td class="memItemLeft" align="right" valign="top"><a id="a9aca79c79af1c5e9fd060c1813473c03"></a>
@@ -275,6 +281,32 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>LuaEBusHandler</b></
       </table>
 </div><div class="memdoc">
 <p>Converts the value at a given index into a <a class="el" href="class_a_z_1_1_script_property.html">ScriptProperty</a> object. If restrictToPropertyArrays is true. Will only parse out to property arrays(i.e. an array of all numbers) If restrictToPropertyArarys is false. May return a table that can be of mixed values, instead of an array. </p>
+
+</div>
+</div>
+<a id="a7ba56d7f1bbb1e1a225d7db3f233fd31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba56d7f1bbb1e1a225d7db3f233fd31">&#9670;&nbsp;</a></span>GetInterpreterVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const char* AZ::ScriptDataContext::GetInterpreterVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieve a string representing the current version of the interpreter. Example of use: To signal incompatibility with previously emitted bytecode, to invalidate </p>
 
 </div>
 </div>
@@ -364,7 +396,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>LuaEBusHandler</b></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:45 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:29 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

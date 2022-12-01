@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -49,21 +49,24 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_prefab_processor_context-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Prefab::PrefabConversionUtils::PrefabProcessorContext Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Inherits <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_entity_id_path_mapper_interface.html">AzToolsFramework::Prefab::PrefabConversionUtils::EntityIdPathMapperInterface</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a77262214b1afcb3c217d89be7b9c7ba2"><td class="memItemLeft" align="right" valign="top"><a id="a77262214b1afcb3c217d89be7b9c7ba2"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessedObjectStoreContainer</b> = AZStd::vector&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_processed_object_store.html">ProcessedObjectStore</a> &gt;</td></tr>
 <tr class="separator:a77262214b1afcb3c217d89be7b9c7ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62e410c132fbf92b46d869ae6eff16f4"><td class="memItemLeft" align="right" valign="top"><a id="a62e410c132fbf92b46d869ae6eff16f4"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ProductAssetDependencyContainer</b> = AZStd::unordered_map&lt; AZ::Data::AssetId, AZStd::unordered_set&lt; AZ::Data::AssetId &gt; &gt;</td></tr>
-<tr class="separator:a62e410c132fbf92b46d869ae6eff16f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462ed59bf6afba89a1eda2dbd93c6117"><td class="memItemLeft" align="right" valign="top"><a id="a462ed59bf6afba89a1eda2dbd93c6117"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ProductAssetDependencyContainer</b> = AZStd::unordered_multimap&lt; AZ::Data::AssetId, <a class="el" href="struct_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_asset_dependency_info.html">AssetDependencyInfo</a> &gt;</td></tr>
+<tr class="separator:a462ed59bf6afba89a1eda2dbd93c6117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -76,30 +79,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a42871386b56fd53ff088f0123c74d02c"><td class="memItemLeft" align="right" valign="top"><a id="a42871386b56fd53ff088f0123c74d02c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>PrefabProcessorContext</b> (const AZ::Uuid &amp;sourceUuid)</td></tr>
 <tr class="separator:a42871386b56fd53ff088f0123c74d02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f156009806dd1d11e1c20f09a6c10bd"><td class="memItemLeft" align="right" valign="top"><a id="a4f156009806dd1d11e1c20f09a6c10bd"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>AddPrefab</b> (AZStd::string prefabName, PrefabDom prefab)</td></tr>
-<tr class="separator:a4f156009806dd1d11e1c20f09a6c10bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa87d92d26b33ed57be834f12eb190d4"><td class="memItemLeft" align="right" valign="top"><a id="aaa87d92d26b33ed57be834f12eb190d4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ListPrefabs</b> (const AZStd::function&lt; void(AZStd::string_view, PrefabDom &amp;)&gt; &amp;callback)</td></tr>
-<tr class="separator:aaa87d92d26b33ed57be834f12eb190d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb5060d54a6796bd860ae00034ebad96"><td class="memItemLeft" align="right" valign="top"><a id="abb5060d54a6796bd860ae00034ebad96"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ListPrefabs</b> (const AZStd::function&lt; void(AZStd::string_view, const PrefabDom &amp;)&gt; &amp;callback) const</td></tr>
-<tr class="separator:abb5060d54a6796bd860ae00034ebad96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a4b0888af872e2022b9a4a82afd3ce"><td class="memItemLeft" align="right" valign="top"><a id="ae9a4b0888af872e2022b9a4a82afd3ce"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>AddPrefab</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_prefab_document.html">PrefabDocument</a> &amp;&amp;document)</td></tr>
+<tr class="separator:ae9a4b0888af872e2022b9a4a82afd3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8d92a2548574946af997867aca4264"><td class="memItemLeft" align="right" valign="top"><a id="afc8d92a2548574946af997867aca4264"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ListPrefabs</b> (const AZStd::function&lt; void(<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_prefab_document.html">PrefabDocument</a> &amp;)&gt; &amp;callback)</td></tr>
+<tr class="separator:afc8d92a2548574946af997867aca4264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c9bc5738bd33f8fb9d397b89fef3cd3"><td class="memItemLeft" align="right" valign="top"><a id="a8c9bc5738bd33f8fb9d397b89fef3cd3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ListPrefabs</b> (const AZStd::function&lt; void(const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_prefab_document.html">PrefabDocument</a> &amp;)&gt; &amp;callback) const</td></tr>
+<tr class="separator:a8c9bc5738bd33f8fb9d397b89fef3cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c4f6d53f9dcf41fedc0b5ea8331afa0"><td class="memItemLeft" align="right" valign="top"><a id="a1c4f6d53f9dcf41fedc0b5ea8331afa0"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasPrefabs</b> () const</td></tr>
 <tr class="separator:a1c4f6d53f9dcf41fedc0b5ea8331afa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e00183799ffe377eec8dbef5414e4c3"><td class="memItemLeft" align="right" valign="top"><a id="a3e00183799ffe377eec8dbef5414e4c3"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterSpawnableProductAssetDependency</b> (AZStd::string prefabName, AZStd::string dependentPrefabName)</td></tr>
-<tr class="separator:a3e00183799ffe377eec8dbef5414e4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55e4a61bb49970a9b735d8f2c794f898"><td class="memItemLeft" align="right" valign="top"><a id="a55e4a61bb49970a9b735d8f2c794f898"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterSpawnableProductAssetDependency</b> (AZStd::string prefabName, const AZ::Data::AssetId &amp;dependentAssetId)</td></tr>
-<tr class="separator:a55e4a61bb49970a9b735d8f2c794f898"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56a93042d9340971a7c262b3cf2d5923"><td class="memItemLeft" align="right" valign="top"><a id="a56a93042d9340971a7c262b3cf2d5923"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterSpawnableProductAssetDependency</b> (uint32_t spawnableAssetSubId, uint32_t dependentSpawnableAssetSubId)</td></tr>
-<tr class="separator:a56a93042d9340971a7c262b3cf2d5923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51bce761a6c5de26e2fd71b0e9f301bd"><td class="memItemLeft" align="right" valign="top"><a id="a51bce761a6c5de26e2fd71b0e9f301bd"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterSpawnableProductAssetDependency</b> (AZStd::string prefabName, AZStd::string dependentPrefabName, EntityAliasSpawnableLoadBehavior loadBehavior)</td></tr>
+<tr class="separator:a51bce761a6c5de26e2fd71b0e9f301bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f13852b6c9e07c05be0a7a76ea0284"><td class="memItemLeft" align="right" valign="top"><a id="a47f13852b6c9e07c05be0a7a76ea0284"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterSpawnableProductAssetDependency</b> (AZStd::string prefabName, const AZ::Data::AssetId &amp;dependentAssetId, EntityAliasSpawnableLoadBehavior loadBehavior)</td></tr>
+<tr class="separator:a47f13852b6c9e07c05be0a7a76ea0284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8440ef647e728739177e7cb99decc2e5"><td class="memItemLeft" align="right" valign="top"><a id="a8440ef647e728739177e7cb99decc2e5"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterSpawnableProductAssetDependency</b> (uint32_t spawnableAssetSubId, uint32_t dependentSpawnableAssetSubId, EntityAliasSpawnableLoadBehavior loadBehavior)</td></tr>
+<tr class="separator:a8440ef647e728739177e7cb99decc2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a34273441851921ba36d46687dd6903"><td class="memItemLeft" align="right" valign="top"><a id="a2a34273441851921ba36d46687dd6903"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterProductAssetDependency</b> (const AZ::Data::AssetId &amp;assetId, const AZ::Data::AssetId &amp;dependentAssetId)</td></tr>
 <tr class="separator:a2a34273441851921ba36d46687dd6903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3efb9e111ab2903bf533e47d82cfe539"><td class="memItemLeft" align="right" valign="top"><a id="a3efb9e111ab2903bf533e47d82cfe539"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterProductAssetDependency</b> (const AZ::Data::AssetId &amp;assetId, const AZ::Data::AssetId &amp;dependentAssetId, AZ::Data::AssetLoadBehavior loadBehavior)</td></tr>
+<tr class="separator:a3efb9e111ab2903bf533e47d82cfe539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19732a4d11360b7c678c71914f5395d"><td class="memItemLeft" align="right" valign="top"><a id="ac19732a4d11360b7c678c71914f5395d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterSpawnableEntityAlias</b> (<a class="el" href="struct_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_entity_alias_store.html">EntityAliasStore</a> link)</td></tr>
+<tr class="separator:ac19732a4d11360b7c678c71914f5395d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68345b9409d47d3a6669af2389b7a236"><td class="memItemLeft" align="right" valign="top"><a id="a68345b9409d47d3a6669af2389b7a236"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ResolveSpawnableEntityAliases</b> (AZStd::string_view prefabName, AzFramework::Spawnable &amp;spawnable, const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">AzToolsFramework::Prefab::Instance</a> &amp;instance)</td></tr>
+<tr class="separator:a68345b9409d47d3a6669af2389b7a236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3e728fca51dda376881152374f61700"><td class="memItemLeft" align="right" valign="top"><a id="ae3e728fca51dda376881152374f61700"></a>
 virtual ProcessedObjectStoreContainer &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetProcessedObjects</b> ()</td></tr>
 <tr class="separator:ae3e728fca51dda376881152374f61700"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,30 +133,72 @@ virtual const AZ::PlatformTagSet &amp;&#160;</td><td class="memItemRight" valign
 <tr class="memitem:a1d5e24b1189587814cc0fb4c2c24fdc5"><td class="memItemLeft" align="right" valign="top"><a id="a1d5e24b1189587814cc0fb4c2c24fdc5"></a>
 virtual const AZ::Uuid &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSourceUuid</b> () const</td></tr>
 <tr class="separator:a1d5e24b1189587814cc0fb4c2c24fdc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954b4a29831f244a27cb84743e227996"><td class="memItemLeft" align="right" valign="top"><a id="a954b4a29831f244a27cb84743e227996"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ResolveLinks</b> ()</td></tr>
+<tr class="separator:a954b4a29831f244a27cb84743e227996"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a616032981e63b7704d26238e589a0e79"><td class="memItemLeft" align="right" valign="top"><a id="a616032981e63b7704d26238e589a0e79"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasCompletedSuccessfully</b> () const</td></tr>
 <tr class="separator:a616032981e63b7704d26238e589a0e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21b70943e59ef59bdebc44375a1e2dff"><td class="memItemLeft" align="right" valign="top"><a id="a21b70943e59ef59bdebc44375a1e2dff"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ErrorEncountered</b> ()</td></tr>
 <tr class="separator:a21b70943e59ef59bdebc44375a1e2dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5a2d369c6482dd4a17ea1c3c19222f0"><td class="memItemLeft" align="right" valign="top"><a id="aa5a2d369c6482dd4a17ea1c3c19222f0"></a>
+AZ::IO::PathView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_prefab_processor_context.html#aa5a2d369c6482dd4a17ea1c3c19222f0">GetHashedPathUsedForEntityIdGeneration</a> (const AZ::EntityId) override</td></tr>
+<tr class="memdesc:aa5a2d369c6482dd4a17ea1c3c19222f0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_entity_id_path_mapper_interface.html">EntityIdPathMapperInterface</a> overrides. <br /></td></tr>
+<tr class="separator:aa5a2d369c6482dd4a17ea1c3c19222f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430f2ad7a2c7da4e7020917515f74111"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_prefab_processor_context.html#a430f2ad7a2c7da4e7020917515f74111">SetHashedPathUsedForEntityIdGeneration</a> (const AZ::EntityId, AZ::IO::PathView) override</td></tr>
+<tr class="separator:a430f2ad7a2c7da4e7020917515f74111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec361146daec8fe56e2a23b45785df26"><td class="memItemLeft" align="right" valign="top"><a id="aec361146daec8fe56e2a23b45785df26"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddPrefabSpawnablePostProcessEventHandler</b> (PrefabSpawnablePostProcessEvent::Handler &amp;handler)</td></tr>
+<tr class="separator:aec361146daec8fe56e2a23b45785df26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e522632a79dcf315aeda3f9a01b0ecf"><td class="memItemLeft" align="right" valign="top"><a id="a9e522632a79dcf315aeda3f9a01b0ecf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SendSpawnablePostProcessEvent</b> (const AZStd::string &amp;prefabName, AzFramework::Spawnable &amp;spawnable)</td></tr>
+<tr class="separator:a9e522632a79dcf315aeda3f9a01b0ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:a6607025b345efb0ec3f4fcd37e677995"><td class="memItemLeft" align="right" valign="top"><a id="a6607025b345efb0ec3f4fcd37e677995"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>NamedPrefabContainer</b> = AZStd::unordered_map&lt; AZStd::string, PrefabDom &gt;</td></tr>
-<tr class="separator:a6607025b345efb0ec3f4fcd37e677995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf27361182f0a7941f6c2606b3bb4da"><td class="memItemLeft" align="right" valign="top"><a id="a1bf27361182f0a7941f6c2606b3bb4da"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>PrefabNames</b> = AZStd::unordered_set&lt; AZStd::string &gt;</td></tr>
+<tr class="separator:a1bf27361182f0a7941f6c2606b3bb4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5b993a3f86a6a33db732601cb350559"><td class="memItemLeft" align="right" valign="top"><a id="ad5b993a3f86a6a33db732601cb350559"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>PrefabContainer</b> = AZStd::vector&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_prefab_document.html">PrefabDocument</a> &gt;</td></tr>
+<tr class="separator:ad5b993a3f86a6a33db732601cb350559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b3caa04d2ff3ec983412e4a4c56590"><td class="memItemLeft" align="right" valign="top"><a id="a94b3caa04d2ff3ec983412e4a4c56590"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnableEntityAliasStore</b> = AZStd::vector&lt; <a class="el" href="struct_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_entity_alias_store.html">EntityAliasStore</a> &gt;</td></tr>
+<tr class="separator:a94b3caa04d2ff3ec983412e4a4c56590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad5cab095c46be87d14f98dc3f7e71696"><td class="memItemLeft" align="right" valign="top"><a id="ad5cab095c46be87d14f98dc3f7e71696"></a>
+AZ::Data::AssetLoadBehavior&#160;</td><td class="memItemRight" valign="bottom"><b>ToAssetLoadBehavior</b> (EntityAliasSpawnableLoadBehavior loadBehavior) const</td></tr>
+<tr class="separator:ad5cab095c46be87d14f98dc3f7e71696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a0f9d7f5087433c73e6e2360d098078a6"><td class="memItemLeft" align="right" valign="top"><a id="a0f9d7f5087433c73e6e2360d098078a6"></a>
-NamedPrefabContainer&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabs</b></td></tr>
-<tr class="separator:a0f9d7f5087433c73e6e2360d098078a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450489a730bacfa8607fb7f2ce06ad65"><td class="memItemLeft" align="right" valign="top"><a id="a450489a730bacfa8607fb7f2ce06ad65"></a>
+AZStd::unordered_map&lt; AZ::EntityId, AZ::IO::Path &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityIdToHashedPathMap</b></td></tr>
+<tr class="separator:a450489a730bacfa8607fb7f2ce06ad65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f722fe516dfc8e7f604886da015c8e"><td class="memItemLeft" align="right" valign="top"><a id="a15f722fe516dfc8e7f604886da015c8e"></a>
+PrefabContainer&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabs</b></td></tr>
+<tr class="separator:a15f722fe516dfc8e7f604886da015c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12c5e9188ac8961e0b12536e3e9e578"><td class="memItemLeft" align="right" valign="top"><a id="ad12c5e9188ac8961e0b12536e3e9e578"></a>
+PrefabContainer&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingPrefabAdditions</b></td></tr>
+<tr class="separator:ad12c5e9188ac8961e0b12536e3e9e578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c4d40854044dac3dbdb8f889ca7b58a"><td class="memItemLeft" align="right" valign="top"><a id="a2c4d40854044dac3dbdb8f889ca7b58a"></a>
+PrefabNames&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabNames</b></td></tr>
+<tr class="separator:a2c4d40854044dac3dbdb8f889ca7b58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76212dcdee993834dc6977ecf1d6944a"><td class="memItemLeft" align="right" valign="top"><a id="a76212dcdee993834dc6977ecf1d6944a"></a>
+SpawnableEntityAliasStore&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityAliases</b></td></tr>
+<tr class="separator:a76212dcdee993834dc6977ecf1d6944a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3baded51863a3bc7eaffe1f01611ad9e"><td class="memItemLeft" align="right" valign="top"><a id="a3baded51863a3bc7eaffe1f01611ad9e"></a>
 ProcessedObjectStoreContainer&#160;</td><td class="memItemRight" valign="bottom"><b>m_products</b></td></tr>
 <tr class="separator:a3baded51863a3bc7eaffe1f01611ad9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc8a6da7e6eeb1e34ebbe5afe12febee"><td class="memItemLeft" align="right" valign="top"><a id="acc8a6da7e6eeb1e34ebbe5afe12febee"></a>
 ProductAssetDependencyContainer&#160;</td><td class="memItemRight" valign="bottom"><b>m_registeredProductAssetDependencies</b></td></tr>
 <tr class="separator:acc8a6da7e6eeb1e34ebbe5afe12febee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f92a43977c77cf0e4f955e302f2317"><td class="memItemLeft" align="right" valign="top"><a id="aa6f92a43977c77cf0e4f955e302f2317"></a>
+PrefabSpawnablePostProcessEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabPostProcessEvent</b></td></tr>
+<tr class="separator:aa6f92a43977c77cf0e4f955e302f2317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70bd160711df8dae18d1d2c9133d13ad"><td class="memItemLeft" align="right" valign="top"><a id="a70bd160711df8dae18d1d2c9133d13ad"></a>
 AZ::PlatformTagSet&#160;</td><td class="memItemRight" valign="bottom"><b>m_platformTags</b></td></tr>
 <tr class="separator:a70bd160711df8dae18d1d2c9133d13ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,13 +212,59 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isIterating</b> { f
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_completedSuccessfully</b> { true }</td></tr>
 <tr class="separator:a4ac05dcb4a55046529c628c131e7d9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a430f2ad7a2c7da4e7020917515f74111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a430f2ad7a2c7da4e7020917515f74111">&#9670;&nbsp;</a></span>SetHashedPathUsedForEntityIdGeneration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::Prefab::PrefabConversionUtils::PrefabProcessorContext::SetHashedPathUsedForEntityIdGeneration </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::EntityId&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::IO::PathView&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the hashed path used for generation of entity id during deserialization for a given entity id. This map is needed when there is a many-to-one relationship between entity ids and hashed paths. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">AZ::EntityId</td><td>The Entity Id to set a hashed path for </td></tr>
+    <tr><td class="paramname">AZ::IO::PathView</td><td>The hashed path to set for the given Entity Id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_entity_id_path_mapper_interface.html#ae3195b3731f3c6cf1700e7f487df8403">AzToolsFramework::Prefab::PrefabConversionUtils::EntityIdPathMapperInterface</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Prefab/Spawnable/PrefabProcessorContext.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:40 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:34 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

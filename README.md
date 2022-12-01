@@ -1,9 +1,9 @@
 # Open 3D Engine Website & Documentation
 
-This repository contains the website and documentation for **Open 3D Engine (O3DE)**. During preview, the site and documentation are under heavy development - so don't be surprised if information is missing or sometimes breaks. If you would like to visit our official website in preview, please contact us directly for the information.
+This repository contains the website and documentation for **Open 3D Engine (O3DE)**. 
 
 If you would like to build a local version of the site, all it takes is cloning this repo, following the local instructions, and under a minute for a build.
-For more information, refer to [Contributing to O3DE Documentation](https://www.o3de.org/docs/contributing/to-docs/overview/) 
+For more information, refer to [Contributing to O3DE Documentation](https://www.o3de.org/docs/contributing/to-docs/) 
 
 Otherwise, documentation is browsable in this repository at `content/docs`. API documentation is stored in this repository at `static/docs/api`, generated using the default Doxygen HTML templates. You can browse the API references without needing to install Hugo, NodeJS, or build the website.
 
@@ -69,6 +69,18 @@ You can download this repository or clone it onto your local machine. Cloning th
     Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
     Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
     Press Ctrl+C to stop
+    ```
+
+    The above command starts a server on `localhost` using an available port (usually `1313`). The command prints the address and port in the console. You can view your server in a web browser. The server will continue to run as long as the terminal that is running the server remains open. If you need to view the site over a network connection, you can use the command below to specify a server and port.
+
+    ```shell
+    hugo server --port 44541 --bind=0.0.0.0
+    ```
+
+    Note, for **macOS** platform, you must run Hugo with the `--watch=false` switch enabled. For example:
+
+    ```bash
+    hugo server --port 44541 --bind=0.0.0.0 --watch=false
     ```
 
 3. To view a local build of the O3DE website, open a web browser and go to http://localhost:1313/.

@@ -8,7 +8,6 @@ weight: 100
 The PhysX system can be configured for each project. With the **PhysX Configuration** tool, you can do the following:
 
 * Set the global frequency of PhysX simulations.
-* Specify a physics material library for the project and a default physics material.
 * Set the global PhysX gravity constant.
 * Enable continuous collision detection (CCD) to improve collision results.
 * Set the minimum bounce threshold for collisions.
@@ -23,7 +22,7 @@ The topics in this section provide information on the settings available in the 
 
 | Topic | Description |
 | - | - |
-| [Global Configuration](configuration-global) | Learn about global PhysX settings including simulation frequency, physics materials, collision settings, debug visualization options, and wind tags. |
+| [Global Configuration](configuration-global) | Learn about global PhysX settings including simulation frequency, collision settings, debug visualization options, and wind tags. |
 | [Collision Layers](configuration-collision-layers) | Create collision layers to organize PhysX entities into categories. |
 | [Collision Groups](configuration-collision-groups) | Create collision groups to define which collision layers interact with each other. |
 | [Create Layers and Groups in Code](configuration-collision-layer-and-group-programming) | Create and access collision groups and layers programmatically. |

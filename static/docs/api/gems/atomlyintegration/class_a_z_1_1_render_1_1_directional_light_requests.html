@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AtomLyIntegration Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -133,6 +133,26 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a2e54fd701cf7442ac0af52f8c91278b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af75fc0f2146a517ac706569a7217dc3e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_directional_light_requests.html#af75fc0f2146a517ac706569a7217dc3e">SetNormalShadowBias</a> (float normalShadowBias)=0</td></tr>
 <tr class="separator:af75fc0f2146a517ac706569a7217dc3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeedc504f832ad40805ecd0680dbc0e40"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_directional_light_requests.html#aeedc504f832ad40805ecd0680dbc0e40">GetCascadeBlendingEnabled</a> () const =0</td></tr>
+<tr class="separator:aeedc504f832ad40805ecd0680dbc0e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f02dc0ad5bd0827b486fa8a6c8c3ad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_directional_light_requests.html#a21f02dc0ad5bd0827b486fa8a6c8c3ad">SetCascadeBlendingEnabled</a> (bool enable)=0</td></tr>
+<tr class="separator:a21f02dc0ad5bd0827b486fa8a6c8c3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62964b39173151d4cc074956d4b4bf52"><td class="memItemLeft" align="right" valign="top"><a id="a62964b39173151d4cc074956d4b4bf52"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_directional_light_requests.html#a62964b39173151d4cc074956d4b4bf52">GetAffectsGI</a> () const =0</td></tr>
+<tr class="memdesc:a62964b39173151d4cc074956d4b4bf52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this light affects global illumination. <br /></td></tr>
+<tr class="separator:a62964b39173151d4cc074956d4b4bf52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab45e3a2cc2bb73459ed53ff40ff4ad6f"><td class="memItemLeft" align="right" valign="top"><a id="ab45e3a2cc2bb73459ed53ff40ff4ad6f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_directional_light_requests.html#ab45e3a2cc2bb73459ed53ff40ff4ad6f">SetAffectsGI</a> (bool affectsGI)=0</td></tr>
+<tr class="memdesc:ab45e3a2cc2bb73459ed53ff40ff4ad6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether this light affects global illumination. <br /></td></tr>
+<tr class="separator:ab45e3a2cc2bb73459ed53ff40ff4ad6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9605b1879e5b2ecb3bd302977d4c4894"><td class="memItemLeft" align="right" valign="top"><a id="a9605b1879e5b2ecb3bd302977d4c4894"></a>
+virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_directional_light_requests.html#a9605b1879e5b2ecb3bd302977d4c4894">GetAffectsGIFactor</a> () const =0</td></tr>
+<tr class="memdesc:a9605b1879e5b2ecb3bd302977d4c4894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the contribution multiplier for global illumination. <br /></td></tr>
+<tr class="separator:a9605b1879e5b2ecb3bd302977d4c4894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa30d8378185b660aa2a248c68ad52f6a"><td class="memItemLeft" align="right" valign="top"><a id="aa30d8378185b660aa2a248c68ad52f6a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_directional_light_requests.html#aa30d8378185b660aa2a248c68ad52f6a">SetAffectsGIFactor</a> (float affectsGIFactor)=0</td></tr>
+<tr class="memdesc:aa30d8378185b660aa2a248c68ad52f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the contribution multiplier for global illumination. <br /></td></tr>
+<tr class="separator:aa30d8378185b660aa2a248c68ad52f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a89b1d1a9f6454a58722ed56e88e68eb6"></a>
@@ -184,6 +204,32 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 <p>This gets the entity ID of the camera used for specifying view frustum to create shadowmaps. </p><dl class="section return"><dt>Returns</dt><dd>camera entity ID. </dd></dl>
+
+</div>
+</div>
+<a id="aeedc504f832ad40805ecd0680dbc0e40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeedc504f832ad40805ecd0680dbc0e40">&#9670;&nbsp;</a></span>GetCascadeBlendingEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AZ::Render::DirectionalLightRequests::GetCascadeBlendingEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets whether the directional shadow map has cascade blending enabled. This smooths out the border between cascades at the cost of some performance in the blend area. </p>
 
 </div>
 </div>
@@ -662,6 +708,38 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>This sets the entity ID of the camera used for specifying view frustum to create shadowmaps. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">entityId</td><td>camera entity ID. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a21f02dc0ad5bd0827b486fa8a6c8c3ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f02dc0ad5bd0827b486fa8a6c8c3ad">&#9670;&nbsp;</a></span>SetCascadeBlendingEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::DirectionalLightRequests::SetCascadeBlendingEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets whether the directional shadow map has cascade blending enabled. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>flag specifying whether to enable cascade blending. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1197,7 +1275,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:33 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:27 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

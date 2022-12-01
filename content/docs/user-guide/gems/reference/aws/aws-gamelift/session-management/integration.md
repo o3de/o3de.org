@@ -29,10 +29,3 @@ For more details on GameLift server notifications, refer to the [Server notifica
 ## Related information
 
 - [Integrating Games with Custom Game Servers](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-custom-intro.html)
-
-
----
-
-Previous topic: [Session Management](/docs/user-guide/gems/reference/aws/aws-gamelift/session-management)
-
-Next topic: [Session Management C++ API](cpp-api/)

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -48,6 +48,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::ComponentModeFramework Namespace Reference</div>  </div>
@@ -56,6 +57,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_component_mode_framework_1_1_component_data.html">ComponentData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct containing relevant information about component for the switcher.  <a href="struct_az_tools_framework_1_1_component_mode_framework_1_1_component_data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_builder.html">ComponentModeBuilder</a></td></tr>
@@ -76,6 +80,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_requests.html">ComponentModeRequests</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse viewport events to be intercepted by individual ComponentModes.  <a href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_requests.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_switcher.html">ComponentModeSwitcher</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles all aspects of the ViewportUi Switcher related to Component Mode.  <a href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_switcher.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_system_requests.html">ComponentModeSystemRequests</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bus to control the overall editor <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a> state.  <a href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_system_requests.html#details">More...</a><br /></td></tr>
@@ -125,6 +132,13 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nam
 <tr class="memdesc:a36b4c113cd9ea271b34e4562629f7c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type to inherit to implement <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_component_mode_notifications.html" title="Used to notify other systems when ComponentMode events happen.">EditorComponentModeNotifications</a>. <br /></td></tr>
 <tr class="separator:a36b4c113cd9ea271b34e4562629f7c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a8df78ac502a56dbb333fc373f09359d8"><td class="memItemLeft" align="right" valign="top"><a id="a8df78ac502a56dbb333fc373f09359d8"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>AddOrRemoveComponent</b> { <b>Add</b>, 
+<b>Remove</b>
+ }</td></tr>
+<tr class="separator:a8df78ac502a56dbb333fc373f09359d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa2128e0de98cf1dbb7e701cc8271da22"><td class="memTemplParams" colspan="2"><a id="aa2128e0de98cf1dbb7e701cc8271da22"></a>
@@ -164,7 +178,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:39 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:32 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

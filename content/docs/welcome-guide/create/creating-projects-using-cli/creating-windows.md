@@ -71,8 +71,12 @@ Use **CMake** to create the Visual Studio project for your O3DE project.
 
     ```cmd
     cd %USERPROFILE%\O3DE\Projects\MyProject
-    cmake -B build/windows_vs2019 -S . -G "Visual Studio 16"
+    cmake -B build/windows -S . -G "Visual Studio 16"
     ```
+
+    {{< note >}}
+Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](/docs/user-guide/build/configure-and-build/#configuring-projects) in the User Guide.
+    {{< /note >}}
 
     {{< note >}}
 CMake uses the downloadable packages directory that is defined in your O3DE manifest with `default_third_party_folder`. You can specify a different directory to use by including the `-DLY_3RDPARTY_PATH` argument. For example, if you created the package directory in `C:\o3de-packages`, include the argument `-DLY_3RDPARTY_PATH=C:\o3de-packages`.
@@ -88,10 +92,10 @@ CMake [unity builds](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.ht
 
 Use CMake to build the Visual Studio project in the build directory of your O3DE project.
 
-1. Build the project launcher using the solution that you created in the project's `build/windows_vs2019` directory. The following example shows the `profile` build configuration.
+1. Build the project launcher using the solution that you created in the project's `build/windows` directory. The following example shows the `profile` build configuration.
 
     ```cmd
-    cmake --build build/windows_vs2019 --target MyProject.GameLauncher Editor --config profile -- -m
+    cmake --build build/windows --target MyProject.GameLauncher Editor --config profile -- -m
     ```
 
     {{< important >}}
@@ -102,12 +106,12 @@ When building the project for a pre-built SDK engine, even though you aren't bui
 
     The `-m` is a recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
 
-1. When the build is complete, you can find the project binaries in the project directory under `build/windows_vs2019/bin/profile`. To verify that the project is ready to use, run O3DE Editor by doing one of the following:
+1. When the build is complete, you can find the project binaries in the project directory under `build/windows/bin/profile`. To verify that the project is ready to use, run O3DE Editor by doing one of the following:
 
     * If you set up your engine as a [source engine](/docs/welcome-guide/setup/setup-from-github/building-windows/#build-the-engine), run the Editor from the project build directory.
 
         ```cmd
-        build\windows_vs2019\bin\profile\Editor.exe
+        build\windows\bin\profile\Editor.exe
         ```
 
         {{< note >}}

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -48,6 +48,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_a_z_1_1_r_h_i_1_1_thread_local_context-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::RHI::ThreadLocalContext&lt; Storage &gt; Class Template Reference</div>  </div>
@@ -66,9 +67,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>InitFunction</b> = A
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a807aa3885ff1efab0a0a39b36ea60bb7"><td class="memItemLeft" align="right" valign="top"><a id="a807aa3885ff1efab0a0a39b36ea60bb7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ThreadLocalContext</b> (InitFunction initFunction=[](Storage &amp;) {})</td></tr>
-<tr class="separator:a807aa3885ff1efab0a0a39b36ea60bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b9e91d809da06f4199ba5cbbae2fad"><td class="memItemLeft" align="right" valign="top"><a id="a23b9e91d809da06f4199ba5cbbae2fad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ThreadLocalContext</b> (InitFunction initFunction=&amp;DefaultFunction)</td></tr>
+<tr class="separator:a23b9e91d809da06f4199ba5cbbae2fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f3620ff04af2b330a745b12d18e5491"><td class="memItemLeft" align="right" valign="top"><a id="a6f3620ff04af2b330a745b12d18e5491"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ThreadLocalContext</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_thread_local_context.html">ThreadLocalContext</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:a6f3620ff04af2b330a745b12d18e5491"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -86,12 +87,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ForEach</b> (AZStd::f
 <tr class="separator:a50b646495363cd1712953dbf8f3316f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af83c40587e34804175a01a6a026644ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_thread_local_context.html#af83c40587e34804175a01a6a026644ac">Clear</a> ()</td></tr>
 <tr class="separator:af83c40587e34804175a01a6a026644ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ade67e5b55666ef61722a7c5e61da894b"><td class="memItemLeft" align="right" valign="top"><a id="ade67e5b55666ef61722a7c5e61da894b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFunction</b> (Storage &amp;)</td></tr>
+<tr class="separator:ade67e5b55666ef61722a7c5e61da894b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename Storage&gt;<br />
 class AZ::RHI::ThreadLocalContext&lt; Storage &gt;</h3>
 
-<p>This class is a container of thread local storage. It allows for multiple instances of thread local storage to exist simultaneously (a property not possible with the thread_local modifier, which is really a thread global). The context tracks <a class="el" href="namespace_a_z.html" title="This file holds useful utility functions for working with the RPI.">AZ</a> thread lifetime through a bus in order to clean up storage for exiting threads. The context allows thread-safe iteration of all thread contexts, which is also a property not possible with thread_local.</p>
+<p>This class is a container of thread local storage. It allows for multiple instances of thread local storage to exist simultaneously (a property not possible with the thread_local modifier, which is really a thread global). The context tracks <a class="el" href="namespace_a_z.html" title="This file holds useful material related utility functions.">AZ</a> thread lifetime through a bus in order to clean up storage for exiting threads. The context allows thread-safe iteration of all thread contexts, which is also a property not possible with thread_local.</p>
 <p>Finally, thread_local is used to cache access to storage for the context. The container performs best when there are lots of back-to-back calls to the same container. Interleaving container accesses will perform less optimally. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af83c40587e34804175a01a6a026644ac"></a>
@@ -177,7 +184,7 @@ template&lt;typename Storage &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:28 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:21 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

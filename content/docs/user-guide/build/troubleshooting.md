@@ -84,11 +84,10 @@ When Project Manager opens it should automatically re-register the O3DE engine a
 
 ## Package Directory Detection Fails
 
-**Issue:** During configuration, the package directory isn't correctly detected and the CMake configure task reports
-an error similar to the following:
+**Issue:** During configuration, the package directory isn't correctly detected and the CMake configure task reports an error similar to the following:
 
 ```cmd
-cmake -B windows_vs2019 -S . -G "Visual Studio 16 2019" -DLY_3RDPARTY_PATH="C:\o3de\3rdParty\" -DLY_PROJECTS="%O3DE_PROJECTS%"
+cmake -B build/windows -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH="C:\o3de\3rdParty\"
 -- Selecting Windows SDK version 10.0.18362.0 to target Windows 10.0.17763.
 -- Using Windows target SDK 10.0.18362.0
 CMake Error at cmake/3rdParty.cmake:19 (file):

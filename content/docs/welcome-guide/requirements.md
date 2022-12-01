@@ -6,30 +6,37 @@ weight: 300
 toc: true
 ---
 
-**Open 3D Engine (O3DE)** has a minimum set of hardware and software requirements for development, as outlined in the following sections. In the [Software
-prerequisites and configuration](#software-prerequisites)
-section, each prerequisite is listed along with any specific configuration steps
-required.
+**Open 3D Engine (O3DE)** has a minimum set of hardware and software requirements for development, as outlined in the following sections. In the [Software prerequisites and configuration](#software-prerequisites) section, each prerequisite is listed along with any specific configuration steps required.
 
 ## Hardware requirements
 
-Minimum hardware requirements for development include the following:
-
-+ Windows 10 64-bit version 1809 or Ubuntu {{< versions/ubuntu >}}
-+ Quad-core Intel or AMD processor, 2.5 GHz or faster
-+ 8 GB RAM
-+ DirectX 12, Vulkan-compatible, or Metal-compatible video card with 2 GB VRAM minimum
-  + 4 GB VRAM recommended
-  + NVIDIA GeForce GTX 1060 or better, driver version 471.11 or later recommended
-  + AMD Radeon Pro 560 or better
-  + Intel HD 630 or better
-  + Shader Model 6.2 (or Shader Model 6.3 to use raytracing features)
-+ 40 - 100 GB of free disk space
-+ 1366 x 768 px screen resolution
+The following sections specify the minimum and recommended system hardware required to install or build **O3DE Editor** and related tools, and to develop O3DE projects.  RAM and free disk space requirements are dependent on the options that you select when configuring your project in O3DE.  Performance will vary based on the complexity of your project's levels.  
 
 {{< note >}}
-RAM and free disk space requirements are dependent on the options that you select when configuring your project in O3DE.
+Building the engine from source requires 2GB _per thread_ in addition to your system's running requirements.  However, it is possible to limit the number of threads that are allocated to the build process.  
+
+Installing the engine with the [pre-built installer](https://o3debinaries.org/download/windows.html) requires less disk space and RAM than building from source.
 {{< /note >}}
+
+### Minimum hardware specification
+
+| Hardware Component | Minimum Required Specification |
+| - | - |
+| CPU | Quad-core (4 cores) 64-bit x86-capable Intel or AMD processor, 2.5 GHz, with the SSE 4.1 SIMD instruction set |
+| RAM | 16 GB RAM (8GB RAM may be acceptable if you limit the number of threads used for compilation) |
+| GPU | - DirectX 12 or Vulkan-compatible video card <br> - 2 GB VRAM <br> - Shader Model 6.2 (or Shader Model 6.3 to use raytracing features) <br> - NVIDIA GeForce GTX 1060, driver version 471.11 or later recommended _or_ <br> - AMD Radeon Pro 560 _or_ <br> - Intel HD 630 <br> |
+| Hard Disk | 40 GB (using the [pre-built installer](https://o3debinaries.org/download/windows.html)) _or_ 100+ GB (depending on project configuration) of free disk space |
+| Display Device | 1366 x 768 pixel screen resolution |
+
+### Recommended hardware specification
+
+| Hardware Component | Minimum Recommended Specification |
+| - | - |
+| CPU | Hexa-core (6 cores) 64-bit x86-capable Intel or AMD processor, 2.5 GHz, supports the SSE 4.1 SIMD instruction set |
+| RAM | 32 GB RAM |
+| GPU | - DirectX 12 or Vulkan-compatible video card <br> - 6 GB VRAM <br> - Shader Model 6.2 (or Shader Model 6.3 to use raytracing features) <br> - NVIDIA GeForce GTX 16 Series, driver version 471.11 or later recommended _or_ <br> - AMD RX 5000 Series |
+| Hard Disk | SSD with 1 TB of free disk space |
+| Display Device | 1366 x 768 pixel screen resolution |
 
 ## Software prerequisites and configuration {#software-prerequisites}
 
@@ -43,7 +50,12 @@ or later is required.
 
 ### Microsoft Visual Studio
 
-+ [Microsoft Visual Studio 2019](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes) version **16.9.2** through version **16.11.x** are supported with O3DE. You can use any Microsoft Visual Studio license, including the Community edition.
+The following versions of Visual Studio are supported:
+
++ [Microsoft Visual Studio 2019](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes) version **16.11.x**.
++ [Microsoft Visual Studio 2022](https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes) version **17.3.x**.
+
+You can use any Microsoft Visual Studio license, including the Community edition.
 
 #### Visual Studio configuration
 
@@ -70,7 +82,7 @@ After the install completes, you might be prompted to restart your system.
 
 ### Microsoft Visual Studio C++ Redistributable
 
-You will also need the [Visual C++ Redistributable for Visual Studio 2019](https://visualstudio.microsoft.com/downloads/#other-family).
+You will also need the latest version of [Visual C++ Redistributable for Visual Studio](https://visualstudio.microsoft.com/downloads/#other-family), if it was not installed by the **Desktop development with C++** workload for Visual Studio. 
 
 After installing the C++ redistributable, you might be prompted to restart your system.
 
@@ -112,7 +124,13 @@ If the current CMake version was not returned because CMake cannot be found, loc
 
 ## Linux
 
-The primary Linux distribution for using the O3DE Editor is Ubuntu {{< versions/ubuntu >}}. The following instructions describe how to retrieve and install the required software packages through Ubuntu's `apt-get` command-line utility.
+The primary Linux distribution for using the O3DE Editor is Ubuntu {{< versions/ubuntu >}}.
+
+{{< note >}}
+Support for Ubuntu 22.04 is in an experimental stage.
+{{< /note >}}
+
+The following instructions describe how to retrieve and install the required software packages through Ubuntu's `apt-get` command-line utility.
 
 ### CMake {#linux-cmake}
 
@@ -122,7 +140,12 @@ As with the other operating systems, [CMake {{< versions/cmake >}} or later](htt
 sudo apt-get remove cmake
 ```
 
-In order to get the latest version of CMake for Ubuntu, you can add the Kitware APT repository to your Ubuntu package list and run `apt-get` to install it. Refer to [Kitware APT Page](https://apt.kitware.com/) for more information.
+Install CMake using the instructions for the version of Ubuntu that you have installed:
+
+{{< tabs name="CMake install" >}}
+{{% tab name="20.04 LTS" %}}
+
+In order to get the latest version of CMake for Ubuntu 20.04 LTS, you can add the Kitware APT repository to your Ubuntu package list and run `apt-get` to install it. Refer to [Kitware APT Page](https://apt.kitware.com/) for more information.
 
 ```shell
 wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | sudo tee /usr/share/keyrings/kitware-archive-keyring.gpg >/dev/null
@@ -134,6 +157,18 @@ sudo apt-get update
 sudo apt-get install cmake
 ```
 
+{{% /tab %}}
+{{% tab name="22.04 LTS" %}}
+
+You can install the default version of CMake for Ubuntu 22.04 LTS. For additional information, refer to the CMake [download page](https://cmake.org/download/#latest).
+
+```shell
+sudo apt-get install cmake
+```
+
+{{% /tab %}}
+{{< /tabs >}}
+
 Once installed, verify that the version meets the minimum version criteria.
 
 ```shell
@@ -144,16 +179,28 @@ cmake --version
 
 O3DE requires [Clang](https://clang.llvm.org/get_started.html) to compile all of the native C++ code.
 
+Install Clang using the instructions for the version of Ubuntu that you have installed:
+
+{{< tabs name="Clang install" >}}
+{{% tab name="20.04 LTS" %}}
+
+The minimum version of Clang required by O3DE is clang-12. To override the older default version of Clang for Ubuntu 20.04 LTS during the installation of Clang, you will need to specify a version as part of the install command.
+
 ```shell
 sudo apt-get install clang-12 
 ```
 
-After clang-12 is installed, it needs to be added to `/etc/environment` as two new environment variables.
+{{% /tab %}}
+{{% tab name="22.04 LTS" %}}
+
+You can install the default version of Clang for Ubuntu 22.04 LTS, which is clang-14.
 
 ```shell
-CC="/usr/bin/clang-12"
-CXX="/usr/bin/clang++-12"
+sudo apt-get install clang
 ```
+
+{{% /tab %}}
+{{< /tabs >}}
 
 ### Vulkan supported video drivers
 

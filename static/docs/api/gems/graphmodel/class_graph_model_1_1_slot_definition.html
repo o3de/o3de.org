@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine GraphModel Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -70,26 +70,30 @@ SlotDirection&#160;</td><td class="memItemRight" valign="bottom"><b>GetSlotDirec
 <tr class="memitem:ab0ca4c9deb68395ad8bf14eda6ed1cda"><td class="memItemLeft" align="right" valign="top"><a id="ab0ca4c9deb68395ad8bf14eda6ed1cda"></a>
 SlotType&#160;</td><td class="memItemRight" valign="bottom"><b>GetSlotType</b> () const</td></tr>
 <tr class="separator:ab0ca4c9deb68395ad8bf14eda6ed1cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae0c044f81c5d641090e5f19441d5b84"><td class="memItemLeft" align="right" valign="top"><a id="aae0c044f81c5d641090e5f19441d5b84"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot_definition.html#aae0c044f81c5d641090e5f19441d5b84">SupportsValue</a> () const</td></tr>
-<tr class="memdesc:aae0c044f81c5d641090e5f19441d5b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether slot value is relevent to this slot's configuration. <br /></td></tr>
-<tr class="separator:aae0c044f81c5d641090e5f19441d5b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a810d80f23186a860431f89ff97dd6dfb"><td class="memItemLeft" align="right" valign="top"><a id="a810d80f23186a860431f89ff97dd6dfb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot_definition.html#a810d80f23186a860431f89ff97dd6dfb">SupportsDataType</a> () const</td></tr>
-<tr class="memdesc:a810d80f23186a860431f89ff97dd6dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether slot data type is relevent to this slot's configuration. <br /></td></tr>
-<tr class="separator:a810d80f23186a860431f89ff97dd6dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e6e0a2f744d8ed7bc2117e6b7bfae3"><td class="memItemLeft" align="right" valign="top"><a id="a98e6e0a2f744d8ed7bc2117e6b7bfae3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot_definition.html#a98e6e0a2f744d8ed7bc2117e6b7bfae3">SupportsValues</a> () const</td></tr>
+<tr class="memdesc:a98e6e0a2f744d8ed7bc2117e6b7bfae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this slot supports assigning values. <br /></td></tr>
+<tr class="separator:a98e6e0a2f744d8ed7bc2117e6b7bfae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c1e341ac7cd1286b3213505ac3d2ff"><td class="memItemLeft" align="right" valign="top"><a id="a86c1e341ac7cd1286b3213505ac3d2ff"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot_definition.html#a86c1e341ac7cd1286b3213505ac3d2ff">SupportsDataTypes</a> () const</td></tr>
+<tr class="memdesc:a86c1e341ac7cd1286b3213505ac3d2ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this slot supports data types. <br /></td></tr>
+<tr class="separator:a86c1e341ac7cd1286b3213505ac3d2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36a6f9c8c7e0272e1defeb801a00d88e"><td class="memItemLeft" align="right" valign="top"><a id="a36a6f9c8c7e0272e1defeb801a00d88e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot_definition.html#a36a6f9c8c7e0272e1defeb801a00d88e">SupportsConnections</a> () const</td></tr>
 <tr class="memdesc:a36a6f9c8c7e0272e1defeb801a00d88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this slot's configuration allows connections to other slots. <br /></td></tr>
 <tr class="separator:a36a6f9c8c7e0272e1defeb801a00d88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e80936d7897c3f18c5b23743d9f7865"><td class="memItemLeft" align="right" valign="top"><a id="a8e80936d7897c3f18c5b23743d9f7865"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot_definition.html#a8e80936d7897c3f18c5b23743d9f7865">Is</a> (SlotDirection slotDirection, SlotType slotType) const</td></tr>
-<tr class="memdesc:a8e80936d7897c3f18c5b23743d9f7865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this slot matches the given configuration. <br /></td></tr>
-<tr class="separator:a8e80936d7897c3f18c5b23743d9f7865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7989f170d936e44f591ddfb4b9fa2c7e"><td class="memItemLeft" align="right" valign="top"><a id="a7989f170d936e44f591ddfb4b9fa2c7e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot_definition.html#a7989f170d936e44f591ddfb4b9fa2c7e">SupportsEditingOnNode</a> () const</td></tr>
+<tr class="memdesc:a7989f170d936e44f591ddfb4b9fa2c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not the value for this slot should be editable on the node ui. <br /></td></tr>
+<tr class="separator:a7989f170d936e44f591ddfb4b9fa2c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ade444fd3a69b92185dfe599a5bc50"><td class="memItemLeft" align="right" valign="top"><a id="ad9ade444fd3a69b92185dfe599a5bc50"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot_definition.html#ad9ade444fd3a69b92185dfe599a5bc50">SupportsExtendability</a> () const</td></tr>
 <tr class="memdesc:ad9ade444fd3a69b92185dfe599a5bc50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not this slot is configured to be extendable. <br /></td></tr>
 <tr class="separator:ad9ade444fd3a69b92185dfe599a5bc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e80936d7897c3f18c5b23743d9f7865"><td class="memItemLeft" align="right" valign="top"><a id="a8e80936d7897c3f18c5b23743d9f7865"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot_definition.html#a8e80936d7897c3f18c5b23743d9f7865">Is</a> (SlotDirection slotDirection, SlotType slotType) const</td></tr>
+<tr class="memdesc:a8e80936d7897c3f18c5b23743d9f7865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this slot matches the given configuration. <br /></td></tr>
+<tr class="separator:a8e80936d7897c3f18c5b23743d9f7865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f4a1d2a9c4b94da1cc0f2ff8702ddee"><td class="memItemLeft" align="right" valign="top"><a id="a1f4a1d2a9c4b94da1cc0f2ff8702ddee"></a>
 const SlotName &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot_definition.html#a1f4a1d2a9c4b94da1cc0f2ff8702ddee">GetName</a> () const</td></tr>
 <tr class="memdesc:a1f4a1d2a9c4b94da1cc0f2ff8702ddee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valid for all slot configurations. <br /></td></tr>
@@ -128,25 +132,25 @@ const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac044d4fb6c24ac673ac79ca05fd19e4d"><td class="memItemLeft" align="right" valign="top"><a id="ac044d4fb6c24ac673ac79ca05fd19e4d"></a>
-static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot_definition.html#ac044d4fb6c24ac673ac79ca05fd19e4d">CreateInputData</a> (AZStd::string_view name, AZStd::string_view displayName, DataTypePtr dataType, AZStd::any defaultValue, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr)</td></tr>
-<tr class="memdesc:ac044d4fb6c24ac673ac79ca05fd19e4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This set of factory functions create a <a class="el" href="class_graph_model_1_1_slot_definition.html">SlotDefinition</a> for each of the valid SlotDirection/SlotType combinations. <br /></td></tr>
-<tr class="separator:ac044d4fb6c24ac673ac79ca05fd19e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad34c94d2bfc5e09cca4e2e2b2292017e"><td class="memItemLeft" align="right" valign="top"><a id="ad34c94d2bfc5e09cca4e2e2b2292017e"></a>
-static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateInputData</b> (AZStd::string_view name, AZStd::string_view displayName, DataTypeList supportedDataTypes, AZStd::any defaultValue, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr)</td></tr>
-<tr class="separator:ad34c94d2bfc5e09cca4e2e2b2292017e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c62d2aa24819e1ee533d28e1be1cd69"><td class="memItemLeft" align="right" valign="top"><a id="a1c62d2aa24819e1ee533d28e1be1cd69"></a>
-static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateOutputData</b> (AZStd::string_view name, AZStd::string_view displayName, DataTypePtr dataType, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr)</td></tr>
-<tr class="separator:a1c62d2aa24819e1ee533d28e1be1cd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34e82b6c0aec1502fc0c31fc1382a608"><td class="memItemLeft" align="right" valign="top"><a id="a34e82b6c0aec1502fc0c31fc1382a608"></a>
-static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateInputEvent</b> (AZStd::string_view name, AZStd::string_view displayName, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr)</td></tr>
-<tr class="separator:a34e82b6c0aec1502fc0c31fc1382a608"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1b9e94faffb7045a65b9a53f424113d"><td class="memItemLeft" align="right" valign="top"><a id="ab1b9e94faffb7045a65b9a53f424113d"></a>
-static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateOutputEvent</b> (AZStd::string_view name, AZStd::string_view displayName, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr)</td></tr>
-<tr class="separator:ab1b9e94faffb7045a65b9a53f424113d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6967645107d05d1c6d70202edd07db7"><td class="memItemLeft" align="right" valign="top"><a id="ad6967645107d05d1c6d70202edd07db7"></a>
-static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateProperty</b> (AZStd::string_view name, AZStd::string_view displayName, DataTypePtr dataType, AZStd::any defaultValue, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr)</td></tr>
-<tr class="separator:ad6967645107d05d1c6d70202edd07db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae361f3c6f1d6362fc9a7f700f0b4d8be"><td class="memItemLeft" align="right" valign="top"><a id="ae361f3c6f1d6362fc9a7f700f0b4d8be"></a>
+static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot_definition.html#ae361f3c6f1d6362fc9a7f700f0b4d8be">CreateInputData</a> (AZStd::string_view name, AZStd::string_view displayName, DataTypePtr dataType, AZStd::any defaultValue, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr, bool supportsEditingOnNode=true)</td></tr>
+<tr class="memdesc:ae361f3c6f1d6362fc9a7f700f0b4d8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">This set of factory functions create a <a class="el" href="class_graph_model_1_1_slot_definition.html">SlotDefinition</a> for each of the valid SlotDirection/SlotType combinations. <br /></td></tr>
+<tr class="separator:ae361f3c6f1d6362fc9a7f700f0b4d8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ad9b274ef872b34fd853669b4d420c"><td class="memItemLeft" align="right" valign="top"><a id="a97ad9b274ef872b34fd853669b4d420c"></a>
+static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateInputData</b> (AZStd::string_view name, AZStd::string_view displayName, DataTypeList supportedDataTypes, AZStd::any defaultValue, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr, bool supportsEditingOnNode=true)</td></tr>
+<tr class="separator:a97ad9b274ef872b34fd853669b4d420c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b2c258c4e609e02c748d6b78cc36e37"><td class="memItemLeft" align="right" valign="top"><a id="a6b2c258c4e609e02c748d6b78cc36e37"></a>
+static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateOutputData</b> (AZStd::string_view name, AZStd::string_view displayName, DataTypePtr dataType, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr, bool supportsEditingOnNode=true)</td></tr>
+<tr class="separator:a6b2c258c4e609e02c748d6b78cc36e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6caaed94cc7efad62ac4b5116803598"><td class="memItemLeft" align="right" valign="top"><a id="ad6caaed94cc7efad62ac4b5116803598"></a>
+static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateInputEvent</b> (AZStd::string_view name, AZStd::string_view displayName, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr, bool supportsEditingOnNode=true)</td></tr>
+<tr class="separator:ad6caaed94cc7efad62ac4b5116803598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a714625a1d7327ed74c759a1a9440d20f"><td class="memItemLeft" align="right" valign="top"><a id="a714625a1d7327ed74c759a1a9440d20f"></a>
+static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateOutputEvent</b> (AZStd::string_view name, AZStd::string_view displayName, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr, bool supportsEditingOnNode=true)</td></tr>
+<tr class="separator:a714625a1d7327ed74c759a1a9440d20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98cae2a3e7a18fccff418f6cac119097"><td class="memItemLeft" align="right" valign="top"><a id="a98cae2a3e7a18fccff418f6cac119097"></a>
+static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateProperty</b> (AZStd::string_view name, AZStd::string_view displayName, DataTypePtr dataType, AZStd::any defaultValue, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr, bool supportsEditingOnNode=true)</td></tr>
+<tr class="separator:a98cae2a3e7a18fccff418f6cac119097"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides static information about a <a class="el" href="class_graph_model_1_1_slot.html" title="!! Start in Graph.h for high level GraphModel documentation !!!">Slot</a>, like its name and data type. The set of features provided by this slot is determined by the combination of SlotDirection and SlotType, which is set depending on which Create* function is used to create the <a class="el" href="class_graph_model_1_1_slot_definition.html">SlotDefinition</a>.</p>
@@ -180,7 +184,7 @@ static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>C
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:45 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:58 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

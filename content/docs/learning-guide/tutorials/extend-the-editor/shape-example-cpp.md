@@ -131,7 +131,7 @@ Import the following dependent modules in the `Code\Source\ShapeExampleWidget.cp
 #include <QLineEdit>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include <ShapeExampleWidget.h>
+#include "ShapeExampleWidget.h"
 ```
 
 
@@ -468,9 +468,12 @@ In this example, the signal listener uses a lambda handler, so you can define th
 
 Define `CreateEntityWithShapeComponent(...)`, which communicates with O3DE EBuses to create a new entity with a component specified by the `typeId` parameter.
 
-1. Send a request to create a new entity by calling `EditorRequestBus::BroadcastResult(...)`. Dispatch the `EditorRequests::CreateNewEntity` event, which creates a new entity and returns its `AZ::EntityId`. The new entity's `AZ::EntityId` is stored in `newEntityId`.
+1. Send a request to create a new entity by calling `EditorRequestBus::BroadcastResult(...)`. Dispatch the `EditorRequests::IsLevelDocumentOpen` event, which will return true/false if a level has been loaded or not.
+   - Attempting to create an Entity without a level loaded will cause a crash, so if a level isn't loaded, we will print a warning message and then return.
 
-2. If the user entered a name in the input field, update the entity's name. 
+2. Send a request to create a new entity by calling `EditorRequestBus::BroadcastResult(...)`. Dispatch the `EditorRequests::CreateNewEntity` event, which creates a new entity and returns its `AZ::EntityId`. The new entity's `AZ::EntityId` is stored in `newEntityId`.
+
+3. If the user entered a name in the input field, update the entity's name.
 
    - Get the name of the entity by calling `text()`, and store it in `entityName`.
 
@@ -480,22 +483,31 @@ Define `CreateEntityWithShapeComponent(...)`, which communicates with O3DE EBuse
 
    - Call `EditorEntityAPIBus::Event(...)` and dispatch `EditorEntityAPIRequests::SetName` to set the name of `newEntityId` to `entityName`.
 
-3. Set the entity's scale.
+4. Set the entity's scale.
 
    - Get the value in the combobox by calling `currentText()`, and store it in `scale`.
 
    - Set the entity's scale by calling `AZ::TransformBus::Event()`. Dispatch `SetLocalUniformScale` to set the scale of `newEntityId`.
 
-4. Add a Shape component to the entity. Call `EditorComponentAPIBus::Broadcast(...)` and dispatch `EditorComponentAPIRequests::AddComponentsOfType`, which adds the components from the provided list to `newEntityId`.
+5. Add a Shape component to the entity. Call `EditorComponentAPIBus::Broadcast(...)` and dispatch `EditorComponentAPIRequests::AddComponentsOfType`, which adds the components from the provided list to `newEntityId`.
 
 ```cpp
 void ShapeExampleWidget::CreateEntityWithShapeComponent(const AZ::TypeId& typeId)
 {
-    // 1        
+    // 1
+    bool isLevelLoaded = false;
+    EditorRequestBus::BroadcastResult(isLevelLoaded, &EditorRequests::IsLevelDocumentOpen);
+    if (!isLevelLoaded)
+    {
+        AZ_Warning("ShapeExample", false, "Make sure a level is loaded before choosing your shape");
+        return;
+    }
+
+    // 2
     AZ::EntityId newEntityId;
     EditorRequestBus::BroadcastResult(newEntityId, &EditorRequests::CreateNewEntity, AZ::EntityId());
 
-    // 2
+    // 3
     if (!m_nameInput->text().isEmpty())
     {
         QString entityName = m_nameInput->text();
@@ -520,7 +532,7 @@ void ShapeExampleWidget::CreateEntityWithShapeComponent(const AZ::TypeId& typeId
         EditorEntityAPIBus::Event(newEntityId, &EditorEntityAPIRequests::SetName, entityName.toUtf8().constData());
     }
 
-    // 3
+    // 4
     bool validFloat = false;
     float scale = m_scaleInput->currentText().toFloat(&validFloat);
     if (validFloat)
@@ -528,7 +540,7 @@ void ShapeExampleWidget::CreateEntityWithShapeComponent(const AZ::TypeId& typeId
         AZ::TransformBus::Event(newEntityId, &AZ::TransformInterface::SetLocalUniformScale, scale);
     }
 
-    // 4
+    // 5
     EditorComponentAPIBus::Broadcast(&EditorComponentAPIRequests::AddComponentsOfType, newEntityId, AZ::ComponentTypeList{ typeId });
 }
 ```
@@ -574,15 +586,13 @@ The following instructions walk you through how to store the icon using the Qt R
 
 ### Windows
 
-For Windows, build and debug your custom tool using **Visual Studio 2019**.
+For Windows, build and debug your custom tool using **Visual Studio**.
 
-1. Launch Visual Studio 2019 and open the O3DE solution.
+1. Launch Visual Studio and open the O3DE solution.
 
 1. Find your Gem in the Solution Explorer. Right-click and select **Build** or **Debug**.
 
-
-
-2. Open your project in the Editor and load the Gem.
+1. Open your project in the Editor and load the Gem.
 
 Congratulations! You created a custom tool Gem that's written in C++, built it, and loaded it in the Editor. Your Shape Example tool should look something like this:
 

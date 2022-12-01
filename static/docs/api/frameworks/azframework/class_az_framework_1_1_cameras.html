@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -57,14 +57,20 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a956872e011620893056dfa7f5b1f9a4e"><td class="memItemLeft" align="right" valign="top"><a id="a956872e011620893056dfa7f5b1f9a4e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleEvents</b> (const <a class="el" href="namespace_az_framework.html#a4a87e38f15ae672e5f11c0e70fb152f0">InputEvent</a> &amp;event, const <a class="el" href="struct_az_framework_1_1_screen_vector.html">ScreenVector</a> &amp;cursorDelta, float scrollDelta)</td></tr>
-<tr class="separator:a956872e011620893056dfa7f5b1f9a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0668a2a7a4d10d781ac3abeac1e94b"><td class="memItemLeft" align="right" valign="top"><a id="aaa0668a2a7a4d10d781ac3abeac1e94b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleEvents</b> (const <a class="el" href="struct_az_framework_1_1_input_state.html">InputState</a> &amp;state, const <a class="el" href="struct_az_framework_1_1_screen_vector.html">ScreenVector</a> &amp;cursorDelta, float scrollDelta)</td></tr>
+<tr class="separator:aaa0668a2a7a4d10d781ac3abeac1e94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae57d62accb964d7bcd7347ef897fea18"><td class="memItemLeft" align="right" valign="top"><a id="ae57d62accb964d7bcd7347ef897fea18"></a>
 <a class="el" href="struct_az_framework_1_1_camera.html">Camera</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StepCamera</b> (const <a class="el" href="struct_az_framework_1_1_camera.html">Camera</a> &amp;targetCamera, const <a class="el" href="struct_az_framework_1_1_screen_vector.html">ScreenVector</a> &amp;cursorDelta, float scrollDelta, float deltaTime)</td></tr>
 <tr class="separator:ae57d62accb964d7bcd7347ef897fea18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09d73b8c0da065ce9a2628fad89ccf56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_cameras.html#a09d73b8c0da065ce9a2628fad89ccf56">AddCamera</a> (AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_camera_input.html">CameraInput</a> &gt; cameraInput)</td></tr>
-<tr class="separator:a09d73b8c0da065ce9a2628fad89ccf56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceef3b075a31c9fac94a47e99660da66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_cameras.html#aceef3b075a31c9fac94a47e99660da66">AddCamera</a> (AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_camera_input.html">CameraInput</a> &gt; cameraInput)</td></tr>
+<tr class="separator:aceef3b075a31c9fac94a47e99660da66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb4a552c9ad28186df0007835fadea39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_cameras.html#afb4a552c9ad28186df0007835fadea39">AddCameras</a> (const AZStd::vector&lt; AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_camera_input.html">AzFramework::CameraInput</a> &gt;&gt; &amp;cameraInputs)</td></tr>
+<tr class="separator:afb4a552c9ad28186df0007835fadea39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2565f551cd8560772b19fbdc734d8d4a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_cameras.html#a2565f551cd8560772b19fbdc734d8d4a">RemoveCamera</a> (const AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_camera_input.html">CameraInput</a> &gt; &amp;cameraInput)</td></tr>
+<tr class="separator:a2565f551cd8560772b19fbdc734d8d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23a23d7f68b1e340e51e2b98c601de3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_cameras.html#aa23a23d7f68b1e340e51e2b98c601de3">RemoveCameras</a> (const AZStd::vector&lt; AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_camera_input.html">AzFramework::CameraInput</a> &gt;&gt; &amp;cameraInputs)</td></tr>
+<tr class="separator:aa23a23d7f68b1e340e51e2b98c601de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace6a5647084aef70cd92c68f0f41cd16"><td class="memItemLeft" align="right" valign="top"><a id="ace6a5647084aef70cd92c68f0f41cd16"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_cameras.html#ace6a5647084aef70cd92c68f0f41cd16">Reset</a> ()</td></tr>
 <tr class="memdesc:ace6a5647084aef70cd92c68f0f41cd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of all cameras. <br /></td></tr>
@@ -79,14 +85,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages a list of camera inputs. By default all camera inputs are added to the idle list, when a camera activates it will be added to the active list, when it deactivates it will be returned to the idle list. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a09d73b8c0da065ce9a2628fad89ccf56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09d73b8c0da065ce9a2628fad89ccf56">&#9670;&nbsp;</a></span>AddCamera()</h2>
+<a id="aceef3b075a31c9fac94a47e99660da66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceef3b075a31c9fac94a47e99660da66">&#9670;&nbsp;</a></span>AddCamera()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void AzFramework::Cameras::AddCamera </td>
+          <td class="memname">bool AzFramework::Cameras::AddCamera </td>
           <td>(</td>
           <td class="paramtype">AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_camera_input.html">CameraInput</a> &gt;&#160;</td>
           <td class="paramname"><em>cameraInput</em></td><td>)</td>
@@ -94,7 +100,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a camera input (behavior) to run in this set of camera inputs. The camera inputs added here will determine the overall behavior of the camera. </p>
+<p>Add a camera input (behavior) to run in this set of camera inputs. The camera inputs added here will determine the overall behavior of the camera. </p><dl class="section return"><dt>Returns</dt><dd>Returns if the camera was successfully added (if the camera already exists it is not added and AddCamera returns false). </dd></dl>
+
+</div>
+</div>
+<a id="afb4a552c9ad28186df0007835fadea39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb4a552c9ad28186df0007835fadea39">&#9670;&nbsp;</a></span>AddCameras()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzFramework::Cameras::AddCameras </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::vector&lt; AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_camera_input.html">AzFramework::CameraInput</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>cameraInputs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add a collection of camera inputs (behaviors) to run in this set of camera inputs. </p><dl class="section return"><dt>Returns</dt><dd>Returns if all cameras were added successfully. </dd></dl>
 
 </div>
 </div>
@@ -116,13 +141,51 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="a2565f551cd8560772b19fbdc734d8d4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2565f551cd8560772b19fbdc734d8d4a">&#9670;&nbsp;</a></span>RemoveCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzFramework::Cameras::RemoveCamera </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_camera_input.html">CameraInput</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>cameraInput</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove a camera input (behavior) to stop it running in the set of camera inputs. </p><dl class="section return"><dt>Returns</dt><dd>Returns if the camera was removed successfully (if the could not be found RemoveCamera returns false). </dd></dl>
+
+</div>
+</div>
+<a id="aa23a23d7f68b1e340e51e2b98c601de3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa23a23d7f68b1e340e51e2b98c601de3">&#9670;&nbsp;</a></span>RemoveCameras()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzFramework::Cameras::RemoveCameras </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::vector&lt; AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_camera_input.html">AzFramework::CameraInput</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>cameraInputs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove a collection of camera inputs (behaviors) to stop them running in the set of camera inputs. </p><dl class="section return"><dt>Returns</dt><dd>Returns if all cameras were removed successfully. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Viewport/CameraInput.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:11 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

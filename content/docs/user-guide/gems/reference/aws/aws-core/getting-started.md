@@ -27,6 +27,22 @@ To get started using AWS Gems with AWS services in your O3DE project, complete t
 
 You should now be able to utilize AWS functions in Lua script, Script Canvas, or C++ to communicate with your AWS resources. See [Scripting with AWS Core](./scripting/) for scripting examples.
 
+## Prevent calls to Amazon EC2 Instance Metadata Service
+
+AWS Gems use the [AWS C++ SDK](https://github.com/aws/aws-sdk-cpp) to call AWS resources. Unless your project is running on Amazon EC2 compute, it's recommended that you turn off Amazon EC2 Instance Metadata Service (IMDS) queries by setting the [AWS_EC2_METADATA_DISABLED](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html) environment variable to `true`. 
+Setting this environment variable will prevent SDK resources from needlessly attempting to contact the Amazon EC2 IMDS for configuration, region, and credential information, which can result in delays and wasted network resources.
+
+```
+# macOS / Linux
+export AWS_EC2_METADATA_DISABLED=true
+
+# Windows (for all sessions)
+setx AWS_EC2_METADATA_DISABLED true
+
+# Windows (for just this session)
+set AWS_EC2_METADATA_DISABLED=true
+```
+
 ## Project settings
 
 On start up the AWS Core Gem will look for the `awscoreconfiguration.setreg` file in the project's registry directory: `<ProjectName>\Registry`.

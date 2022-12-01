@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -56,7 +56,7 @@ $(function() {
 
 <p><code>#include &lt;EditorVisibleEntityDataCache.h&gt;</code></p>
 
-<p>Inherits Router, Router, Router, Router, Router, Router, Handler, Handler, and Handler.</p>
+<p>Inherits <a class="el" href="class_az_tools_framework_1_1_editor_visible_entity_data_cache_interface.html">AzToolsFramework::EditorVisibleEntityDataCacheInterface</a>, Router, Router, Router, Router, Router, Router, Handler, Handler, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -81,39 +81,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae02cb09f687fa7847e38d00c931a8154"><td class="memItemLeft" align="right" valign="top"><a id="ae02cb09f687fa7847e38d00c931a8154"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateVisibleEntityDatas</b> (const AzFramework::ViewportInfo &amp;viewportInfo)</td></tr>
 <tr class="separator:ae02cb09f687fa7847e38d00c931a8154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b720ae720dce5f80010da75d02d9b62"><td class="memItemLeft" align="right" valign="top"><a id="a7b720ae720dce5f80010da75d02d9b62"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_visible_entity_data_cache.html#a7b720ae720dce5f80010da75d02d9b62">VisibleEntityDataCount</a> () const</td></tr>
-<tr class="memdesc:a7b720ae720dce5f80010da75d02d9b62"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_tools_framework_1_1_editor_visible_entity_data_cache.html">EditorVisibleEntityDataCache</a> interface. <br /></td></tr>
-<tr class="separator:a7b720ae720dce5f80010da75d02d9b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5645f987d22ac7373128a4a12e802fe5"><td class="memItemLeft" align="right" valign="top"><a id="a5645f987d22ac7373128a4a12e802fe5"></a>
-AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetVisibleEntityPosition</b> (size_t index) const</td></tr>
-<tr class="separator:a5645f987d22ac7373128a4a12e802fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebff9383c0a9bd6005df25d9ba6cb5ed"><td class="memItemLeft" align="right" valign="top"><a id="aebff9383c0a9bd6005df25d9ba6cb5ed"></a>
-const AZ::Transform &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVisibleEntityTransform</b> (size_t index) const</td></tr>
-<tr class="separator:aebff9383c0a9bd6005df25d9ba6cb5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59404dfc2ea1702596876410b8ac758b"><td class="memItemLeft" align="right" valign="top"><a id="a59404dfc2ea1702596876410b8ac758b"></a>
-AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetVisibleEntityId</b> (size_t index) const</td></tr>
-<tr class="separator:a59404dfc2ea1702596876410b8ac758b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58a9356edace274ce89c093f3dd34e01"><td class="memItemLeft" align="right" valign="top"><a id="a58a9356edace274ce89c093f3dd34e01"></a>
-ComponentEntityAccentType&#160;</td><td class="memItemRight" valign="bottom"><b>GetVisibleEntityAccent</b> (size_t index) const</td></tr>
-<tr class="separator:a58a9356edace274ce89c093f3dd34e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a861574a32216934ce1be52c95119c202"><td class="memItemLeft" align="right" valign="top"><a id="a861574a32216934ce1be52c95119c202"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVisibleEntityLocked</b> (size_t index) const</td></tr>
-<tr class="separator:a861574a32216934ce1be52c95119c202"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a818de7231265929f4a4ee401fb6fbd12"><td class="memItemLeft" align="right" valign="top"><a id="a818de7231265929f4a4ee401fb6fbd12"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVisibleEntityVisible</b> (size_t index) const</td></tr>
-<tr class="separator:a818de7231265929f4a4ee401fb6fbd12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a8550f3010fc6d79b541cec5d45a0f0"><td class="memItemLeft" align="right" valign="top"><a id="a7a8550f3010fc6d79b541cec5d45a0f0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVisibleEntitySelected</b> (size_t index) const</td></tr>
-<tr class="separator:a7a8550f3010fc6d79b541cec5d45a0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af41da321e175c734ddfd43f5596bbf19"><td class="memItemLeft" align="right" valign="top"><a id="af41da321e175c734ddfd43f5596bbf19"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVisibleEntityIconHidden</b> (size_t index) const</td></tr>
-<tr class="separator:af41da321e175c734ddfd43f5596bbf19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af117b108d9c494d26ade65a60be9bf73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_visible_entity_data_cache.html#af117b108d9c494d26ade65a60be9bf73">IsVisibleEntityIndividuallySelectableInViewport</a> (size_t index) const</td></tr>
-<tr class="separator:af117b108d9c494d26ade65a60be9bf73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe9ecea13cb8541d10abbd1f1b9d68f9"><td class="memItemLeft" align="right" valign="top"><a id="afe9ecea13cb8541d10abbd1f1b9d68f9"></a>
-AZStd::optional&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVisibleEntityIndexFromId</b> (AZ::EntityId entityId) const</td></tr>
-<tr class="separator:afe9ecea13cb8541d10abbd1f1b9d68f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69e9abda94c49ab2c276a2d73489f8e"><td class="memItemLeft" align="right" valign="top"><a id="ad69e9abda94c49ab2c276a2d73489f8e"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_visible_entity_data_cache.html#ad69e9abda94c49ab2c276a2d73489f8e">VisibleEntityDataCount</a> () const override</td></tr>
+<tr class="memdesc:ad69e9abda94c49ab2c276a2d73489f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_tools_framework_1_1_editor_visible_entity_data_cache_interface.html">EditorVisibleEntityDataCacheInterface</a> overrides ... <br /></td></tr>
+<tr class="separator:ad69e9abda94c49ab2c276a2d73489f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1755aa6841b2798d3150408fe0757721"><td class="memItemLeft" align="right" valign="top"><a id="a1755aa6841b2798d3150408fe0757721"></a>
+AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetVisibleEntityPosition</b> (size_t index) const override</td></tr>
+<tr class="separator:a1755aa6841b2798d3150408fe0757721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f763425928309bd04bbdad9bd4bc8f"><td class="memItemLeft" align="right" valign="top"><a id="ac6f763425928309bd04bbdad9bd4bc8f"></a>
+const AZ::Transform &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVisibleEntityTransform</b> (size_t index) const override</td></tr>
+<tr class="separator:ac6f763425928309bd04bbdad9bd4bc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dcf16cb05008ee07b286a75beb85617"><td class="memItemLeft" align="right" valign="top"><a id="a6dcf16cb05008ee07b286a75beb85617"></a>
+AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetVisibleEntityId</b> (size_t index) const override</td></tr>
+<tr class="separator:a6dcf16cb05008ee07b286a75beb85617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae70ec2f6faf597cc828e6d63e6c051"><td class="memItemLeft" align="right" valign="top"><a id="a5ae70ec2f6faf597cc828e6d63e6c051"></a>
+ComponentEntityAccentType&#160;</td><td class="memItemRight" valign="bottom"><b>GetVisibleEntityAccent</b> (size_t index) const override</td></tr>
+<tr class="separator:a5ae70ec2f6faf597cc828e6d63e6c051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecbae01e59bb1f6a04950f31d4bb6587"><td class="memItemLeft" align="right" valign="top"><a id="aecbae01e59bb1f6a04950f31d4bb6587"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVisibleEntityLocked</b> (size_t index) const override</td></tr>
+<tr class="separator:aecbae01e59bb1f6a04950f31d4bb6587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af696bb7e2050213651806fcf3a3783d1"><td class="memItemLeft" align="right" valign="top"><a id="af696bb7e2050213651806fcf3a3783d1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVisibleEntityVisible</b> (size_t index) const override</td></tr>
+<tr class="separator:af696bb7e2050213651806fcf3a3783d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92f7bb250957dc5f22b5c263c2831b5c"><td class="memItemLeft" align="right" valign="top"><a id="a92f7bb250957dc5f22b5c263c2831b5c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVisibleEntitySelected</b> (size_t index) const override</td></tr>
+<tr class="separator:a92f7bb250957dc5f22b5c263c2831b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7127781e1992770f988bf83d9234d27"><td class="memItemLeft" align="right" valign="top"><a id="ad7127781e1992770f988bf83d9234d27"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVisibleEntityIconHidden</b> (size_t index) const override</td></tr>
+<tr class="separator:ad7127781e1992770f988bf83d9234d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce33c0234ffc93031bf18f241dd65a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_visible_entity_data_cache.html#afce33c0234ffc93031bf18f241dd65a7">IsVisibleEntityIndividuallySelectableInViewport</a> (size_t index) const override</td></tr>
+<tr class="separator:afce33c0234ffc93031bf18f241dd65a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9fb646e6b1344bc9f33129c040160aa"><td class="memItemLeft" align="right" valign="top"><a id="ad9fb646e6b1344bc9f33129c040160aa"></a>
+AZStd::optional&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVisibleEntityIndexFromId</b> (AZ::EntityId entityId) const override</td></tr>
+<tr class="separator:ad9fb646e6b1344bc9f33129c040160aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fa597ee366122d8586b2b39b365ee0a"><td class="memItemLeft" align="right" valign="top"><a id="a3fa597ee366122d8586b2b39b365ee0a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntityIds</b> (const EntityIdList &amp;entityIds)</td></tr>
 <tr class="separator:a3fa597ee366122d8586b2b39b365ee0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,11 +121,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntityIds</b> (con
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A cache of packed EntityData that can be iterated over efficiently without the need to make individual EBus calls </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="af117b108d9c494d26ade65a60be9bf73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af117b108d9c494d26ade65a60be9bf73">&#9670;&nbsp;</a></span>IsVisibleEntityIndividuallySelectableInViewport()</h2>
+<a id="afce33c0234ffc93031bf18f241dd65a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce33c0234ffc93031bf18f241dd65a7">&#9670;&nbsp;</a></span>IsVisibleEntityIndividuallySelectableInViewport()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool AzToolsFramework::EditorVisibleEntityDataCache::IsVisibleEntityIndividuallySelectableInViewport </td>
@@ -135,8 +138,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntityIds</b> (con
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Returns true if the entity is individually selectable (none of its ancestors are a closed container entity). </p><dl class="section note"><dt>Note</dt><dd>It may still be desirable to be able to 'click' an entity that is a descendant of a closed container to select the container itself, not the individual entity. </dd></dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_editor_visible_entity_data_cache_interface.html#a5359bba8371e180ca400f8f798ec09a8">AzToolsFramework::EditorVisibleEntityDataCacheInterface</a>.</p>
 
 </div>
 </div>
@@ -146,7 +156,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntityIds</b> (con
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:36 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:30 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

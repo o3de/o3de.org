@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -59,6 +59,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a120a7340cb2b25999766663403c559ba"><td class="memItemLeft" align="right" valign="top"><a id="a120a7340cb2b25999766663403c559ba"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>CheckIfSpawnableIsLoaded</b> : bool { <b>Yes</b>, 
+<b>No</b>
+ }</td></tr>
+<tr class="separator:a120a7340cb2b25999766663403c559ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14b08f4b135170dc1227f1afea9c749f"><td class="memItemLeft" align="right" valign="top"><a id="a14b08f4b135170dc1227f1afea9c749f"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>AlertCallback</b> = AZStd::function&lt; void(uint32_t generation)&gt;</td></tr>
 <tr class="separator:a14b08f4b135170dc1227f1afea9c749f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -75,14 +79,14 @@ Public Member Functions</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_container.html#a0d7be74a217131e4b933c53c522fb012">IsSet</a> () const</td></tr>
 <tr class="memdesc:a0d7be74a217131e4b933c53c522fb012"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the container has a spawnable set and can process requests, otherwise returns falls. <br /></td></tr>
 <tr class="separator:a0d7be74a217131e4b933c53c522fb012"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9cad759ed29c047e19aa56009e8cca7"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_container.html#ac9cad759ed29c047e19aa56009e8cca7">GetCurrentGeneration</a> () const</td></tr>
-<tr class="separator:ac9cad759ed29c047e19aa56009e8cca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5368c90e40be0f5a0daebc8bf5c95439"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_container.html#a5368c90e40be0f5a0daebc8bf5c95439">GetCurrentGeneration</a> () const</td></tr>
+<tr class="separator:a5368c90e40be0f5a0daebc8bf5c95439"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5e800cf1e180cd9151aee5c16b92c12"><td class="memItemLeft" align="right" valign="top"><a id="af5e800cf1e180cd9151aee5c16b92c12"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_container.html#af5e800cf1e180cd9151aee5c16b92c12">SpawnAllEntities</a> ()</td></tr>
 <tr class="memdesc:af5e800cf1e180cd9151aee5c16b92c12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts in a request to spawn entities using all entities in the provided spawnable as a template. <br /></td></tr>
 <tr class="separator:af5e800cf1e180cd9151aee5c16b92c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29a604b5e691dbe1b7e80a8b9cd2eb74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_container.html#a29a604b5e691dbe1b7e80a8b9cd2eb74">SpawnEntities</a> (AZStd::vector&lt; size_t &gt; entityIndices)</td></tr>
-<tr class="separator:a29a604b5e691dbe1b7e80a8b9cd2eb74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20dc88c68a86c1f4ccf2b123269f1a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_container.html#ad20dc88c68a86c1f4ccf2b123269f1a2">SpawnEntities</a> (AZStd::vector&lt; uint32_t &gt; entityIndices)</td></tr>
+<tr class="separator:ad20dc88c68a86c1f4ccf2b123269f1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a031bd4cc0a4859b9e9eb3191926d17a6"><td class="memItemLeft" align="right" valign="top"><a id="a031bd4cc0a4859b9e9eb3191926d17a6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_container.html#a031bd4cc0a4859b9e9eb3191926d17a6">DespawnAllEntities</a> ()</td></tr>
 <tr class="memdesc:a031bd4cc0a4859b9e9eb3191926d17a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts in a request to despawn all previous spawned entities. <br /></td></tr>
@@ -91,8 +95,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a614df0167b0d1d7d80c0799669ddb36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf0a8a42ecd4f16e22d27ede1bc8871f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_container.html#acf0a8a42ecd4f16e22d27ede1bc8871f">Clear</a> ()</td></tr>
 <tr class="separator:acf0a8a42ecd4f16e22d27ede1bc8871f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45b45d216b690f7f5fcd0ca07787f90e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_container.html#a45b45d216b690f7f5fcd0ca07787f90e">Alert</a> (AlertCallback callback)</td></tr>
-<tr class="separator:a45b45d216b690f7f5fcd0ca07787f90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4f92b2cfb732fa330b07548ad0ac28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_container.html#a2f4f92b2cfb732fa330b07548ad0ac28">Alert</a> (AlertCallback callback, CheckIfSpawnableIsLoaded spawnableCheck=CheckIfSpawnableIsLoaded::No)</td></tr>
+<tr class="separator:a2f4f92b2cfb732fa330b07548ad0ac28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A utility class to simplify the life-cycle management of entities created from a <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a>. This class will keep track of the created entities and take appropriate action when the spawnable changes. Calls to this container should be done from the same thread, but multiple threads can create their own container for the same <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a>. This container is for simple use cases. Complex situations can directly call the SpawnablesEntitesInterface and use the <a class="el" href="class_az_framework_1_1_spawnable_monitor.html">SpawnableMonitor</a> if needed. </p>
@@ -130,8 +134,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a45b45d216b690f7f5fcd0ca07787f90e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45b45d216b690f7f5fcd0ca07787f90e">&#9670;&nbsp;</a></span>Alert()</h2>
+<a id="a2f4f92b2cfb732fa330b07548ad0ac28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f4f92b2cfb732fa330b07548ad0ac28">&#9670;&nbsp;</a></span>Alert()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,12 +144,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td class="memname">void AzFramework::SpawnableEntitiesContainer::Alert </td>
           <td>(</td>
           <td class="paramtype">AlertCallback&#160;</td>
-          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">CheckIfSpawnableIsLoaded&#160;</td>
+          <td class="paramname"><em>spawnableCheck</em> = <code>CheckIfSpawnableIsLoaded::No</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Adds an alert that will trigger the provided callback once all previous calls to change the container have completed. This includes calls to (de)spawn entities, reset the container or clear. The callback can be called from threads other than the calling thread including the main thread. Note that because the alert is queued it can still be called after the container has been deleted or can be called for a previously assigned spawnable. In the latter case check if the current generation matches the generation provided with the callback. </p>
+<p>Adds an alert that will trigger the provided callback once all previous calls to change the container have completed. This includes calls to (de)spawn entities, reset the container or clear. The callback can be called from threads other than the calling thread including the main thread. Note that because the alert is queued it can still be called after the container has been deleted or can be called for a previously assigned spawnable. In the latter case check if the current generation matches the generation provided with the callback. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>The function called when the alert triggers. This can be called from a different thread than the one that the one that made the call to Alert. </td></tr>
+    <tr><td class="paramname">checkSpawnableIsLoaded</td><td>If true the alert will also block until the spawnable has been loaded. If false then it will be called after all previous calls have completed, but the spawnable may not be loaded at that point. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -167,14 +187,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="ac9cad759ed29c047e19aa56009e8cca7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9cad759ed29c047e19aa56009e8cca7">&#9670;&nbsp;</a></span>GetCurrentGeneration()</h2>
+<a id="a5368c90e40be0f5a0daebc8bf5c95439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5368c90e40be0f5a0daebc8bf5c95439">&#9670;&nbsp;</a></span>GetCurrentGeneration()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t AzFramework::SpawnableEntitiesContainer::GetCurrentGeneration </td>
+          <td class="memname">uint32_t AzFramework::SpawnableEntitiesContainer::GetCurrentGeneration </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -209,8 +229,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a29a604b5e691dbe1b7e80a8b9cd2eb74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29a604b5e691dbe1b7e80a8b9cd2eb74">&#9670;&nbsp;</a></span>SpawnEntities()</h2>
+<a id="ad20dc88c68a86c1f4ccf2b123269f1a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20dc88c68a86c1f4ccf2b123269f1a2">&#9670;&nbsp;</a></span>SpawnEntities()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,7 +238,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void AzFramework::SpawnableEntitiesContainer::SpawnEntities </td>
           <td>(</td>
-          <td class="paramtype">AZStd::vector&lt; size_t &gt;&#160;</td>
+          <td class="paramtype">AZStd::vector&lt; uint32_t &gt;&#160;</td>
           <td class="paramname"><em>entityIndices</em></td><td>)</td>
           <td></td>
         </tr>
@@ -239,7 +259,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:22 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:13 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

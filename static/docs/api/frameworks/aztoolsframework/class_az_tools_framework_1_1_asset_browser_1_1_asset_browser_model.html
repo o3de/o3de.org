@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -47,6 +47,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_model-members.html">List of all members</a>  </div>
@@ -63,6 +64,12 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="separator:a0081910a43550bc6699417f5a38fb966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:aaa6160712f349e356243a5dddf98d412"><td class="memItemLeft" align="right" valign="top"><a id="aaa6160712f349e356243a5dddf98d412"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RequestOpenItemForEditing</b> (const QModelIndex &amp;index)</td></tr>
+<tr class="separator:aaa6160712f349e356243a5dddf98d412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d42e1273d0bf3140e170d79cda6a9da"><td class="memItemLeft" align="right" valign="top"><a id="a5d42e1273d0bf3140e170d79cda6a9da"></a>
@@ -71,6 +78,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6e5e8bd4067f528e6c3e78426fcc75a1"><td class="memItemLeft" align="right" valign="top"><a id="a6e5e8bd4067f528e6c3e78426fcc75a1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AssetBrowserModel</b> (QObject *parent=nullptr)</td></tr>
 <tr class="separator:a6e5e8bd4067f528e6c3e78426fcc75a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6739fdf3588f85d42ab7fad4258c5ead"><td class="memItemLeft" align="right" valign="top"><a id="a6739fdf3588f85d42ab7fad4258c5ead"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EnableTickBus</b> ()</td></tr>
+<tr class="separator:a6739fdf3588f85d42ab7fad4258c5ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff32915059e58b61d5103df10868da54"><td class="memItemLeft" align="right" valign="top"><a id="aff32915059e58b61d5103df10868da54"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableTickBus</b> ()</td></tr>
+<tr class="separator:aff32915059e58b61d5103df10868da54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0931a053de6f7e8c431db03cb2193f08"><td class="memItemLeft" align="right" valign="top"><a id="a0931a053de6f7e8c431db03cb2193f08"></a>
 QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>findIndex</b> (const QString &amp;absoluteAssetPath) const</td></tr>
 <tr class="separator:a0931a053de6f7e8c431db03cb2193f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -86,6 +99,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>columnCount</b> (const
 <tr class="memitem:a04594b4701b961d8ce7f577c661b49a5"><td class="memItemLeft" align="right" valign="top"><a id="a04594b4701b961d8ce7f577c661b49a5"></a>
 QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> (const QModelIndex &amp;index, int role=Qt::DisplayRole) const override</td></tr>
 <tr class="separator:a04594b4701b961d8ce7f577c661b49a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3221f5c0fd415475fabdb040fa4c1e21"><td class="memItemLeft" align="right" valign="top"><a id="a3221f5c0fd415475fabdb040fa4c1e21"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setData</b> (const QModelIndex &amp;index, const QVariant &amp;value, int role) override</td></tr>
+<tr class="separator:a3221f5c0fd415475fabdb040fa4c1e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac880aa34f5ec9755a17aaac21799a717"><td class="memItemLeft" align="right" valign="top"><a id="ac880aa34f5ec9755a17aaac21799a717"></a>
 Qt::ItemFlags&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> (const QModelIndex &amp;index) const override</td></tr>
 <tr class="separator:ac880aa34f5ec9755a17aaac21799a717"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,6 +138,18 @@ AZStd::shared_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_asset_bro
 <tr class="memitem:a96ae79b7bf05ddbc1b6362eda87243fc"><td class="memItemLeft" align="right" valign="top"><a id="a96ae79b7bf05ddbc1b6362eda87243fc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRootEntry</b> (AZStd::shared_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_root_asset_browser_entry.html">RootAssetBrowserEntry</a> &gt; rootEntry)</td></tr>
 <tr class="separator:a96ae79b7bf05ddbc1b6362eda87243fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5acdd984890bb39a5340c8bbaa4703"><td class="memItemLeft" align="right" valign="top"><a id="a3c5acdd984890bb39a5340c8bbaa4703"></a>
+AssetBrowserFilterModel *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFilterModel</b> ()</td></tr>
+<tr class="separator:a3c5acdd984890bb39a5340c8bbaa4703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14607c587c74526aab73cca71a06cee9"><td class="memItemLeft" align="right" valign="top"><a id="a14607c587c74526aab73cca71a06cee9"></a>
+const AssetBrowserFilterModel *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFilterModel</b> () const</td></tr>
+<tr class="separator:a14607c587c74526aab73cca71a06cee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c6ea87b591326cdbd3699ff968e5801"><td class="memItemLeft" align="right" valign="top"><a id="a9c6ea87b591326cdbd3699ff968e5801"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFilterModel</b> (AssetBrowserFilterModel *filterModel)</td></tr>
+<tr class="separator:a9c6ea87b591326cdbd3699ff968e5801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a9546dd93b9f22da82069d853d23f6"><td class="memItemLeft" align="right" valign="top"><a id="aa2a9546dd93b9f22da82069d853d23f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleAssetCreatedInEditor</b> (const AZStd::string &amp;assetPath, const AZ::Crc32 &amp;creatorBusId=AZ::Crc32())</td></tr>
+<tr class="separator:aa2a9546dd93b9f22da82069d853d23f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -138,7 +166,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SourceIndexesT
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:38 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:31 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

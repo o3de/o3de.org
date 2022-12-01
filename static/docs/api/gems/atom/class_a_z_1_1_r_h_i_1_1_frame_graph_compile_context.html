@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -72,21 +72,37 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_compile_context.html#aec78c8c124cc3148697c68ac93c8f5dd">GetScopeAttachmentCount</a> (const AttachmentId &amp;attachmentId) const</td></tr>
 <tr class="memdesc:aec78c8c124cc3148697c68ac93c8f5dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of scope attachments used by the current scope for the given attachment. <br /></td></tr>
 <tr class="separator:aec78c8c124cc3148697c68ac93c8f5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6f7fa87da9021b4da16f844a3ef1e8d"><td class="memItemLeft" align="right" valign="top"><a id="af6f7fa87da9021b4da16f844a3ef1e8d"></a>
-const <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">BufferView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_compile_context.html#af6f7fa87da9021b4da16f844a3ef1e8d">GetBufferView</a> (const AttachmentId &amp;attachmentId, size_t index=0) const</td></tr>
-<tr class="memdesc:af6f7fa87da9021b4da16f844a3ef1e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the buffer view associated with usage on the current scope. <br /></td></tr>
-<tr class="separator:af6f7fa87da9021b4da16f844a3ef1e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd33c63a60316af911afd56d0c4c7ae"><td class="memItemLeft" align="right" valign="top"><a id="a6cd33c63a60316af911afd56d0c4c7ae"></a>
+const <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">BufferView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_compile_context.html#a6cd33c63a60316af911afd56d0c4c7ae">GetBufferView</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_attachment.html">ScopeAttachment</a> *scopeAttachment) const</td></tr>
+<tr class="memdesc:a6cd33c63a60316af911afd56d0c4c7ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the buffer view associated with the scope attachment. <br /></td></tr>
+<tr class="separator:a6cd33c63a60316af911afd56d0c4c7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b4c045ab062dd140fc621155228270"><td class="memItemLeft" align="right" valign="top"><a id="a26b4c045ab062dd140fc621155228270"></a>
+const <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">BufferView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_compile_context.html#a26b4c045ab062dd140fc621155228270">GetBufferView</a> (const AttachmentId &amp;attachmentId) const</td></tr>
+<tr class="memdesc:a26b4c045ab062dd140fc621155228270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the buffer view associated with the attachmentId. <br /></td></tr>
+<tr class="separator:a26b4c045ab062dd140fc621155228270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdebbe568f730f5ceb6d79b2b48f1962"><td class="memItemLeft" align="right" valign="top"><a id="abdebbe568f730f5ceb6d79b2b48f1962"></a>
+const <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">BufferView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_compile_context.html#abdebbe568f730f5ceb6d79b2b48f1962">GetBufferView</a> (const AttachmentId &amp;attachmentId, RHI::ScopeAttachmentUsage attachmentUsage) const</td></tr>
+<tr class="memdesc:abdebbe568f730f5ceb6d79b2b48f1962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the buffer view associated with attachmentId and the attachmentUsage on the current scope. <br /></td></tr>
+<tr class="separator:abdebbe568f730f5ceb6d79b2b48f1962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f90d719d5af4c694187192defcbfc2e"><td class="memItemLeft" align="right" valign="top"><a id="a5f90d719d5af4c694187192defcbfc2e"></a>
 const <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer.html">Buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_compile_context.html#a5f90d719d5af4c694187192defcbfc2e">GetBuffer</a> (const AttachmentId &amp;attachmentId) const</td></tr>
-<tr class="memdesc:a5f90d719d5af4c694187192defcbfc2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the buffer associated with usage on the current scope. <br /></td></tr>
+<tr class="memdesc:a5f90d719d5af4c694187192defcbfc2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the buffer associated with attachmentId. <br /></td></tr>
 <tr class="separator:a5f90d719d5af4c694187192defcbfc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afec1f613cabf4af5ec477a6b2e840038"><td class="memItemLeft" align="right" valign="top"><a id="afec1f613cabf4af5ec477a6b2e840038"></a>
-const <a class="el" href="class_a_z_1_1_r_h_i_1_1_image_view.html">ImageView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_compile_context.html#afec1f613cabf4af5ec477a6b2e840038">GetImageView</a> (const AttachmentId &amp;attachmentId, size_t index=0) const</td></tr>
-<tr class="memdesc:afec1f613cabf4af5ec477a6b2e840038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the image view associated with usage on the current scope. <br /></td></tr>
-<tr class="separator:afec1f613cabf4af5ec477a6b2e840038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b6f22c7dc66117ccb35d4e45944a0dc"><td class="memItemLeft" align="right" valign="top"><a id="a8b6f22c7dc66117ccb35d4e45944a0dc"></a>
+const <a class="el" href="class_a_z_1_1_r_h_i_1_1_image_view.html">ImageView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_compile_context.html#a8b6f22c7dc66117ccb35d4e45944a0dc">GetImageView</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_attachment.html">ScopeAttachment</a> *scopeAttacment) const</td></tr>
+<tr class="memdesc:a8b6f22c7dc66117ccb35d4e45944a0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the image view associated with the scope attachment. <br /></td></tr>
+<tr class="separator:a8b6f22c7dc66117ccb35d4e45944a0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaad9580bbecf47d36030bc9ae6ab8fc"><td class="memItemLeft" align="right" valign="top"><a id="afaad9580bbecf47d36030bc9ae6ab8fc"></a>
+const <a class="el" href="class_a_z_1_1_r_h_i_1_1_image_view.html">ImageView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_compile_context.html#afaad9580bbecf47d36030bc9ae6ab8fc">GetImageView</a> (const AttachmentId &amp;attachmentId, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_view_descriptor.html">ImageViewDescriptor</a> &amp;imageViewDescriptor, const RHI::ScopeAttachmentUsage attachmentUsage) const</td></tr>
+<tr class="memdesc:afaad9580bbecf47d36030bc9ae6ab8fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the image view associated with attachmentId, attachmentUsage and imageViewDescriptor on the current scope. <br /></td></tr>
+<tr class="separator:afaad9580bbecf47d36030bc9ae6ab8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e7e2801c59aef3c70b6cb4da5cd9a43"><td class="memItemLeft" align="right" valign="top"><a id="a5e7e2801c59aef3c70b6cb4da5cd9a43"></a>
+const <a class="el" href="class_a_z_1_1_r_h_i_1_1_image_view.html">ImageView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_compile_context.html#a5e7e2801c59aef3c70b6cb4da5cd9a43">GetImageView</a> (const AttachmentId &amp;attachmentId) const</td></tr>
+<tr class="memdesc:a5e7e2801c59aef3c70b6cb4da5cd9a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the image view associated with the attachmentId. <br /></td></tr>
+<tr class="separator:a5e7e2801c59aef3c70b6cb4da5cd9a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab28f55353af5e8ec8ca1997cb6c01888"><td class="memItemLeft" align="right" valign="top"><a id="ab28f55353af5e8ec8ca1997cb6c01888"></a>
 const <a class="el" href="class_a_z_1_1_r_h_i_1_1_image.html">Image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_compile_context.html#ab28f55353af5e8ec8ca1997cb6c01888">GetImage</a> (const AttachmentId &amp;attachmentId) const</td></tr>
-<tr class="memdesc:ab28f55353af5e8ec8ca1997cb6c01888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the image associated with usage on the current scope. <br /></td></tr>
+<tr class="memdesc:ab28f55353af5e8ec8ca1997cb6c01888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the image associated with the attachmentId. <br /></td></tr>
 <tr class="separator:ab28f55353af5e8ec8ca1997cb6c01888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f9aa62440da56eab534a2cf03319160"><td class="memItemLeft" align="right" valign="top"><a id="a6f9aa62440da56eab534a2cf03319160"></a>
 <a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_descriptor.html">BufferDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_compile_context.html#a6f9aa62440da56eab534a2cf03319160">GetBufferDescriptor</a> (const AttachmentId &amp;attachmentId) const</td></tr>
@@ -105,7 +121,7 @@ const <a class="el" href="class_a_z_1_1_r_h_i_1_1_image.html">Image</a> *&#160;<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:26 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:20 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

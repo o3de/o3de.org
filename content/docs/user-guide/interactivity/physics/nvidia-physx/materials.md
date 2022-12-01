@@ -5,21 +5,17 @@ title: Physics materials
 weight: 200
 ---
 
-Physics materials define how a PhysX collider reacts to collisions through properties like friction and restitution (bounce). In O3DE, you specify physics materials for each PhysX collider and store them inside a physics material library that you create with the **Asset Editor**. One library stores all the physics materials for a project.
+Physics materials define how a PhysX collider reacts to collisions through properties like friction and restitution (bounce). In O3DE, you create physics materials with the **Asset Editor** and assign them to PhysX colliders.
 
 **Topics**
 + [Physics material properties](#physics-material-properties)
 + [Create a physics material](#create-a-physics-material)
-+ [Assign a physics material library](#assign-a-physics-material-library)
 + [Assign a physics material](#assign-a-physics-material)
   + [Assign physics materials per face](#assign-physics-materials-per-face)
 
 ## Physics material properties
 
 ![Physics material interface.](/images/user-guide/physx/physx/ui-physx-material-A.png)
-
-****Name****
-Name of the physics material.
 
 ****Dynamic Friction****
 The friction coefficient when the PhysX collider is moving.
@@ -65,39 +61,19 @@ When materials collide, the **Friction combine** and **Restitution combine** def
 
 ## Create a physics material
 
-Physics materials define the physical properties of PhysX colliders. To create physics materials, you first create a physics material library.
+Physics materials define the physical properties of PhysX colliders.
 
 **To create a physics material**
 
 1. Choose Asset Editor from the **Tools** menu.
 
-1. In the Asset Editor, choose **New**, **Physics Material** from the **File** menu to create a new physics material library.
+1. In the Asset Editor, choose **New**, **PhysX Material** from the **File** menu.
 
-![Create a physics material library in the Asset Editor.](/images/user-guide/physx/physx/ui-physx-material-B.png)
+   ![Create a physics material in the Asset Editor.](/images/user-guide/physx/physx/ui-physx-material-B.png)
 
-1. Create a physics material in the library by clicking the **+** on the right.
+1. Set the material properties as desired.
 
-![Create a physics material library in the Asset Editor.](/images/user-guide/physx/physx/ui-physx-material-C.png)
-
-1. Name the physics material by editing the **Name** property. Set the material properties as desired.
-
-    {{< note >}}
-You can add additional physics materials to the library by repeating the preceding two steps.
-{{< /note >}}
-
-1. Choose **Save As** from the **File** menu in the Asset Editor to save the library and physics material.
-
-## Assign a physics material library
-
-Your project has the physics material library set in **PhysX Configuration**. To change the physics material library, choose **PhysX Configuration** from the **Tools** menu. In the **Global Configuration** tab, click the button to the right of **Physics Material Library** to change the library.
-
-![PhysX Configuration, physics material library.](/images/user-guide/physx/physx/ui-physx-material-D.png)
-
-PhysX collider components use the physics material library that is assigned to PhysX Configuration.
-
-You can specify the paremeter of the **Default Physics Material** in **PhysX Configuration**, which is the default option used before physics materials are assigned in PhysX collider components.
-
-![PhysX Configuration, default physics material.](/images/user-guide/physx/physx/ui-physx-material-E.png)
+1. Choose **Save As** from the **File** menu in the Asset Editor to save the physics material.
 
 ## Assign a physics material
 
@@ -109,7 +85,7 @@ When the **Physics Asset** shape is selected in **PhysX Collider** component, an
 
 ### Assign physics materials per face
 
-Static entities that have PhysX triangle mesh assets can have physics materials assigned per face. You define material placement by assigning materials to the faces of the triangle collision mesh in a content creation application. These materials are listed in both FBX Settings PhysX group and PhysX Collider component, where each material is assigned a physics material.
+Entities that have PhysX triangle mesh assets can have physics materials assigned per face. You define material placement by assigning materials to the faces of the triangle collision mesh in a content creation application. These materials are listed in both FBX Settings PhysX group and PhysX Collider component, where each material is assigned a physics material.
 
 For more information on creating PhysX mesh assets, see [FBX Settings PhysX tab](/docs/user-guide/assets/scene-settings/physx-tab/).
 

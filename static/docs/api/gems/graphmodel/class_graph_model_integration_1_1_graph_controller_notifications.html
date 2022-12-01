@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine GraphModel Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -95,8 +95,22 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_graph_controller_notifications.html#ad23d948044afcaf82cc07acec92d42c0">OnGraphModelNodeUnwrapped</a> (GraphModel::NodePtr, GraphModel::NodePtr)</td></tr>
 <tr class="memdesc:ad23d948044afcaf82cc07acec92d42c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The specified node has been unwrapped (removed) from the wrapperNode. <br /></td></tr>
 <tr class="separator:ad23d948044afcaf82cc07acec92d42c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a9e19c2d369666bfbe15ea1160cafbf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_graph_controller_notifications.html#a4a9e19c2d369666bfbe15ea1160cafbf">OnGraphModelSlotModified</a> (GraphModel::SlotPtr slot)</td></tr>
+<tr class="separator:a4a9e19c2d369666bfbe15ea1160cafbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4ad8634c781f4b08af53fe2a29f983c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_graph_controller_notifications.html#aa4ad8634c781f4b08af53fe2a29f983c">OnGraphModelGraphModified</a> (GraphModel::NodePtr node)</td></tr>
 <tr class="separator:aa4ad8634c781f4b08af53fe2a29f983c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2dd4c453c9390eb39bd14b5a9ee3329"><td class="memItemLeft" align="right" valign="top"><a id="ad2dd4c453c9390eb39bd14b5a9ee3329"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_graph_controller_notifications.html#ad2dd4c453c9390eb39bd14b5a9ee3329">OnGraphModelRequestUndoPoint</a> ()</td></tr>
+<tr class="memdesc:ad2dd4c453c9390eb39bd14b5a9ee3329"><td class="mdescLeft">&#160;</td><td class="mdescRight">A request has been made to record data for an undoable operation. <br /></td></tr>
+<tr class="separator:ad2dd4c453c9390eb39bd14b5a9ee3329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d28758ba3de7e021223d91cf706b145"><td class="memItemLeft" align="right" valign="top"><a id="a7d28758ba3de7e021223d91cf706b145"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_graph_controller_notifications.html#a7d28758ba3de7e021223d91cf706b145">OnGraphModelTriggerUndo</a> ()</td></tr>
+<tr class="memdesc:a7d28758ba3de7e021223d91cf706b145"><td class="mdescLeft">&#160;</td><td class="mdescRight">A request has been made to perform an undo operation. <br /></td></tr>
+<tr class="separator:a7d28758ba3de7e021223d91cf706b145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d6b7170847e26e9a2ad4cac9a0af93"><td class="memItemLeft" align="right" valign="top"><a id="a18d6b7170847e26e9a2ad4cac9a0af93"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_graph_controller_notifications.html#a18d6b7170847e26e9a2ad4cac9a0af93">OnGraphModelTriggerRedo</a> ()</td></tr>
+<tr class="memdesc:a18d6b7170847e26e9a2ad4cac9a0af93"><td class="mdescLeft">&#160;</td><td class="mdescRight">A request has been made to perform a redo operation. <br /></td></tr>
+<tr class="separator:a18d6b7170847e26e9a2ad4cac9a0af93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -139,13 +153,45 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
+<a id="a4a9e19c2d369666bfbe15ea1160cafbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a9e19c2d369666bfbe15ea1160cafbf">&#9670;&nbsp;</a></span>OnGraphModelSlotModified()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GraphModelIntegration::GraphControllerNotifications::OnGraphModelSlotModified </td>
+          <td>(</td>
+          <td class="paramtype">GraphModel::SlotPtr&#160;</td>
+          <td class="paramname"><em>slot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sent whenever a graph model slot value changes </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slot</td><td>The slot that was modified in the graph. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/GraphModel/Code/Include/GraphModel/GraphModelBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:46 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:59 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

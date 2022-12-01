@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,6 +46,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_atom_tools_framework_1_1_atom_tools_main_window_requests-members.html">List of all members</a>  </div>
@@ -54,21 +55,24 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>AtomToolsMainWindowRequestBus provides.  
- <a href="class_atom_tools_framework_1_1_atom_tools_main_window_requests.html#details">More...</a></p>
-
 <p><code>#include &lt;AtomToolsMainWindowRequestBus.h&gt;</code></p>
 
 <p>Inherits EBusTraits.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a1d2e3f8412a0f6f242a8cada1a9c6004"><td class="memItemLeft" align="right" valign="top"><a id="a1d2e3f8412a0f6f242a8cada1a9c6004"></a>
+typedef AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>BusIdType</b></td></tr>
+<tr class="separator:a1d2e3f8412a0f6f242a8cada1a9c6004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4e87f635d4e3a001881e7c2ac51d4134"><td class="memItemLeft" align="right" valign="top"><a id="a4e87f635d4e3a001881e7c2ac51d4134"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window_requests.html#a4e87f635d4e3a001881e7c2ac51d4134">ActivateWindow</a> ()=0</td></tr>
 <tr class="memdesc:a4e87f635d4e3a001881e7c2ac51d4134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bring main window to foreground. <br /></td></tr>
 <tr class="separator:a4e87f635d4e3a001881e7c2ac51d4134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad77d98243dfc18279974ad02774a7915"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window_requests.html#ad77d98243dfc18279974ad02774a7915">AddDockWidget</a> (const AZStd::string &amp;name, QWidget *widget, uint32_t area, uint32_t orientation)=0</td></tr>
-<tr class="separator:ad77d98243dfc18279974ad02774a7915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af05ee741c803231ba6d1ca1017ede9a7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window_requests.html#af05ee741c803231ba6d1ca1017ede9a7">AddDockWidget</a> (const AZStd::string &amp;name, QWidget *widget, uint32_t area)=0</td></tr>
+<tr class="separator:af05ee741c803231ba6d1ca1017ede9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62597a6c9654f8ce270be10dd605065f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window_requests.html#a62597a6c9654f8ce270be10dd605065f">RemoveDockWidget</a> (const AZStd::string &amp;name)=0</td></tr>
 <tr class="separator:a62597a6c9654f8ce270be10dd605065f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13aaf875856f85fc461264e01704a148"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window_requests.html#a13aaf875856f85fc461264e01704a148">SetDockWidgetVisible</a> (const AZStd::string &amp;name, bool visible)=0</td></tr>
@@ -79,6 +83,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window_requests.html#ab221a71f097f126ab8957ff8d0da0bc9">GetDockWidgetNames</a> () const =0</td></tr>
 <tr class="memdesc:ab221a71f097f126ab8957ff8d0da0bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of registered docked widget names. <br /></td></tr>
 <tr class="separator:ab221a71f097f126ab8957ff8d0da0bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e67da0352985b0fd4f8e6dfe153b16"><td class="memItemLeft" align="right" valign="top"><a id="ab1e67da0352985b0fd4f8e6dfe153b16"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window_requests.html#ab1e67da0352985b0fd4f8e6dfe153b16">QueueUpdateMenus</a> (bool rebuildMenus)=0</td></tr>
+<tr class="memdesc:ab1e67da0352985b0fd4f8e6dfe153b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare to update menus. <br /></td></tr>
+<tr class="separator:ab1e67da0352985b0fd4f8e6dfe153b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45521954bd28eeb0de06d6fa42535c6b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window_requests.html#a45521954bd28eeb0de06d6fa42535c6b">ResizeViewportRenderTarget</a> ([[maybe_unused]] uint32_t width, [[maybe_unused]] uint32_t height)</td></tr>
 <tr class="separator:a45521954bd28eeb0de06d6fa42535c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6e059253ada239dfb889de256260792"><td class="memItemLeft" align="right" valign="top"><a id="ac6e059253ada239dfb889de256260792"></a>
@@ -93,17 +101,18 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a37418d498ca9095a32d942f5e39a9bc7"><td class="memItemLeft" align="right" valign="top"><a id="a37418d498ca9095a32d942f5e39a9bc7"></a>
-static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>HandlerPolicy</b> = AZ::EBusHandlerPolicy::Single</td></tr>
+static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>HandlerPolicy</b> = AZ::EBusHandlerPolicy::Multiple</td></tr>
 <tr class="separator:a37418d498ca9095a32d942f5e39a9bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ad5caee1cce85538d1ae105706c2fb7"><td class="memItemLeft" align="right" valign="top"><a id="a6ad5caee1cce85538d1ae105706c2fb7"></a>
-static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>AddressPolicy</b> = AZ::EBusAddressPolicy::Single</td></tr>
+static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>AddressPolicy</b> = AZ::EBusAddressPolicy::ById</td></tr>
 <tr class="separator:a6ad5caee1cce85538d1ae105706c2fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>AtomToolsMainWindowRequestBus provides. </p>
+<div class="textblock"><p>AtomToolsMainWindowRequestBus provides an interface to common main application window functions like adding docked windows, resizing the viewport, and other operations <br  />
+ </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad77d98243dfc18279974ad02774a7915"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad77d98243dfc18279974ad02774a7915">&#9670;&nbsp;</a></span>AddDockWidget()</h2>
+<a id="af05ee741c803231ba6d1ca1017ede9a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af05ee741c803231ba6d1ca1017ede9a7">&#9670;&nbsp;</a></span>AddDockWidget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -127,13 +136,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>area</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>orientation</em>&#160;</td>
+          <td class="paramname"><em>area</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -152,7 +155,6 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
     <tr><td class="paramname">name</td><td>title of the dockable window </td></tr>
     <tr><td class="paramname">widget</td><td>docked window content </td></tr>
     <tr><td class="paramname">area</td><td>location of docked window corresponding to Qt::DockWidgetArea </td></tr>
-    <tr><td class="paramname">orientation</td><td>orientation of docked window corresponding to Qt::Orientation </td></tr>
   </table>
   </dd>
 </dl>
@@ -308,7 +310,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

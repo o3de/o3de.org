@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -76,6 +76,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a5cc20068c728f0f5075bcf430cd30f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e2615f46ae07bc625aa7d6f22371435"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_interface.html#a1e2615f46ae07bc625aa7d6f22371435">AddDrawPacket</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *scene, AZStd::unique_ptr&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html">RHI::DrawPacket</a> &gt; drawPacket)=0</td></tr>
 <tr class="separator:a1e2615f46ae07bc625aa7d6f22371435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1efb1c5e6d4f7a907382319f8097d0a7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_interface.html#a1efb1c5e6d4f7a907382319f8097d0a7">AddDrawPacket</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *scene, ConstPtr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html">RHI::DrawPacket</a> &gt; drawPacket)=0</td></tr>
+<tr class="separator:a1efb1c5e6d4f7a907382319f8097d0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1f84dc441e3838a9666d69a6075f4a0"><td class="memItemLeft" align="right" valign="top"><a id="aa1f84dc441e3838a9666d69a6075f4a0"></a>
 virtual AZStd::vector&lt; RHI::DrawListView &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_interface.html#aa1f84dc441e3838a9666d69a6075f4a0">GetDrawListsForPass</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_raster_pass.html">RasterPass</a> *pass)=0</td></tr>
 <tr class="memdesc:aa1f84dc441e3838a9666d69a6075f4a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DrawLists from any <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> which output to the specified <a class="el" href="class_a_z_1_1_r_p_i_1_1_raster_pass.html" title="A RasterPass is a leaf pass (pass with no children) that is used for rasterization.">RasterPass</a>. <br /></td></tr>
@@ -91,7 +93,7 @@ static <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_interface.html">
 <div class="textblock"><p>Interface of dynamic draw system which provide access to system dynamic buffer and some draw functions </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1e2615f46ae07bc625aa7d6f22371435"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e2615f46ae07bc625aa7d6f22371435">&#9670;&nbsp;</a></span>AddDrawPacket()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e2615f46ae07bc625aa7d6f22371435">&#9670;&nbsp;</a></span>AddDrawPacket() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,9 +125,48 @@ static <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_interface.html">
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Submits a DrawPacket to the renderer. Note that ownership of the DrawPacket pointer is passed to the dynamic draw system. (it will be cleaned up correctly since the DrawPacket keeps track of the allocator that was used when it was built) </p>
+<p>Deprecated. Please use <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_interface.html#a1efb1c5e6d4f7a907382319f8097d0a7">AddDrawPacket(Scene* scene, ConstPtr&lt;RHI::DrawPacket&gt; drawPacket)</a> instead Submits a DrawPacket to the renderer. Note that ownership of the DrawPacket pointer is passed to the dynamic draw system. (it will be cleaned up correctly since the DrawPacket keeps track of the allocator that was used when it was built) </p>
 
 <p>Implemented in <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_system.html#a8008bfe19e1014b195c42c59be595044">AZ::RPI::DynamicDrawSystem</a>.</p>
+
+</div>
+</div>
+<a id="a1efb1c5e6d4f7a907382319f8097d0a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1efb1c5e6d4f7a907382319f8097d0a7">&#9670;&nbsp;</a></span>AddDrawPacket() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::RPI::DynamicDrawInterface::AddDrawPacket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ConstPtr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html">RHI::DrawPacket</a> &gt;&#160;</td>
+          <td class="paramname"><em>drawPacket</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Submits a DrawPacket to the scene. The dynamic draw system will keep a reference for the DrawPacket until it's rendered. </p>
+
+<p>Implemented in <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_system.html#abae830c6abe6abc96c776d03be432657">AZ::RPI::DynamicDrawSystem</a>.</p>
 
 </div>
 </div>
@@ -202,7 +243,7 @@ static <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_interface.html">
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:28 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

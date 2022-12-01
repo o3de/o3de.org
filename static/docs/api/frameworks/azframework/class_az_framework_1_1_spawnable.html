@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,6 +46,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
@@ -58,11 +59,39 @@ $(function() {
 
 <p>Inherits AssetData.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_spawnable_1_1_entity_alias.html">EntityAlias</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An entity alias redirects the spawning of an entity to another entity, possibly in another spawnable.  <a href="struct_az_framework_1_1_spawnable_1_1_entity_alias.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_1_1_entity_alias_const_visitor.html">EntityAliasConstVisitor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_1_1_entity_alias_visitor.html">EntityAliasVisitor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a7d38a3ee19e9e389eec00feb586cc19c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable.html#a7d38a3ee19e9e389eec00feb586cc19c">EntityAliasType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="class_az_framework_1_1_spawnable.html#a7d38a3ee19e9e389eec00feb586cc19ca0a52da7a03a6de3beefe54f8c03ad80d">EntityAliasType::Original</a>, 
+<a class="el" href="class_az_framework_1_1_spawnable.html#a7d38a3ee19e9e389eec00feb586cc19cabcfaccebf745acfd5e75351095a5394a">EntityAliasType::Disable</a>, 
+<a class="el" href="class_az_framework_1_1_spawnable.html#a7d38a3ee19e9e389eec00feb586cc19ca0ebe6df8a3ac338e0512acc741823fdb">EntityAliasType::Replace</a>, 
+<a class="el" href="class_az_framework_1_1_spawnable.html#a7d38a3ee19e9e389eec00feb586cc19ca27b948ac5b24cd345b14faa60c455f67">EntityAliasType::Additional</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_az_framework_1_1_spawnable.html#a7d38a3ee19e9e389eec00feb586cc19ca68be4837f6c739877233e527a996dd00">EntityAliasType::Merge</a>
+<br />
+ }</td></tr>
+<tr class="separator:a7d38a3ee19e9e389eec00feb586cc19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b767bae3d60260d809cfba9f3d167d6"><td class="memItemLeft" align="right" valign="top"><a id="a2b767bae3d60260d809cfba9f3d167d6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ShareState</b> : int32_t { <b>Read</b> = -1, 
+<b>NotShared</b> = 0, 
+<b>ReadWrite</b> = 1
+ }</td></tr>
+<tr class="separator:a2b767bae3d60260d809cfba9f3d167d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78f10820bff888ea79ae52aecc918342"><td class="memItemLeft" align="right" valign="top"><a id="a78f10820bff888ea79ae52aecc918342"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>EntityList</b> = AZStd::vector&lt; AZStd::unique_ptr&lt; AZ::Entity &gt; &gt;</td></tr>
 <tr class="separator:a78f10820bff888ea79ae52aecc918342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad63aaec47f9678f0fde759a5aa18c4dc"><td class="memItemLeft" align="right" valign="top"><a id="ad63aaec47f9678f0fde759a5aa18c4dc"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>EntityAliasList</b> = AZStd::vector&lt; <a class="el" href="struct_az_framework_1_1_spawnable_1_1_entity_alias.html">EntityAlias</a> &gt;</td></tr>
+<tr class="separator:ad63aaec47f9678f0fde759a5aa18c4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -93,6 +122,15 @@ const EntityList &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Get
 <tr class="memitem:a7d5c9def67e25a09133ec20678efbdf7"><td class="memItemLeft" align="right" valign="top"><a id="a7d5c9def67e25a09133ec20678efbdf7"></a>
 EntityList &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetEntities</b> ()</td></tr>
 <tr class="separator:a7d5c9def67e25a09133ec20678efbdf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a412be85dcb3163397ad461e91cbcaed9"><td class="memItemLeft" align="right" valign="top"><a id="a412be85dcb3163397ad461e91cbcaed9"></a>
+<a class="el" href="class_az_framework_1_1_spawnable_1_1_entity_alias_const_visitor.html">EntityAliasConstVisitor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TryGetAliasesConst</b> () const</td></tr>
+<tr class="separator:a412be85dcb3163397ad461e91cbcaed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9faa47c302fb2de8a9876620c2f0b244"><td class="memItemLeft" align="right" valign="top"><a id="a9faa47c302fb2de8a9876620c2f0b244"></a>
+<a class="el" href="class_az_framework_1_1_spawnable_1_1_entity_alias_const_visitor.html">EntityAliasConstVisitor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TryGetAliases</b> () const</td></tr>
+<tr class="separator:a9faa47c302fb2de8a9876620c2f0b244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1378d0ae38f7494ec390fbeaaf3e55"><td class="memItemLeft" align="right" valign="top"><a id="a7d1378d0ae38f7494ec390fbeaaf3e55"></a>
+<a class="el" href="class_az_framework_1_1_spawnable_1_1_entity_alias_visitor.html">EntityAliasVisitor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TryGetAliases</b> ()</td></tr>
+<tr class="separator:a7d1378d0ae38f7494ec390fbeaaf3e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f60d9d863b84b828f5e1dcd69691605"><td class="memItemLeft" align="right" valign="top"><a id="a7f60d9d863b84b828f5e1dcd69691605"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmpty</b> () const</td></tr>
 <tr class="separator:a7f60d9d863b84b828f5e1dcd69691605"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,6 +149,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:a72f7e90a019d549fb1e9dc4259ee7361"><td class="memItemLeft" align="right" valign="top"><a id="a72f7e90a019d549fb1e9dc4259ee7361"></a>
+static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultMainSpawnableName</b> = &quot;Root&quot;</td></tr>
+<tr class="separator:a72f7e90a019d549fb1e9dc4259ee7361"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15aecea6ce61d24b7677beaa45aa0408"><td class="memItemLeft" align="right" valign="top"><a id="a15aecea6ce61d24b7677beaa45aa0408"></a>
 static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>FileExtension</b> = &quot;spawnable&quot;</td></tr>
 <tr class="separator:a15aecea6ce61d24b7677beaa45aa0408"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,13 +159,48 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>DotFileExtension</b> = &quot;.spawnable&quot;</td></tr>
 <tr class="separator:ac537c96788cad4f9c4dd26549c8aa75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a7d38a3ee19e9e389eec00feb586cc19c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d38a3ee19e9e389eec00feb586cc19c">&#9670;&nbsp;</a></span>EntityAliasType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_az_framework_1_1_spawnable.html#a7d38a3ee19e9e389eec00feb586cc19c">AzFramework::Spawnable::EntityAliasType</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7d38a3ee19e9e389eec00feb586cc19ca0a52da7a03a6de3beefe54f8c03ad80d"></a>Original&#160;</td><td class="fielddoc"><p>The original entity is spawned. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7d38a3ee19e9e389eec00feb586cc19cabcfaccebf745acfd5e75351095a5394a"></a>Disable&#160;</td><td class="fielddoc"><p>No entity will be spawned. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7d38a3ee19e9e389eec00feb586cc19ca0ebe6df8a3ac338e0512acc741823fdb"></a>Replace&#160;</td><td class="fielddoc"><p>The entity alias is spawned instead of the original. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7d38a3ee19e9e389eec00feb586cc19ca27b948ac5b24cd345b14faa60c455f67"></a>Additional&#160;</td><td class="fielddoc"><p>The original entity is spawned as well as the alias. The alias will get a new entity id. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7d38a3ee19e9e389eec00feb586cc19ca68be4837f6c739877233e527a996dd00"></a>Merge&#160;</td><td class="fielddoc"><p>The original entity is spawned and the components of the alias are added. The caller is responsible for maintaining a valid component list. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Spawnable/Spawnable.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:22 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:13 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

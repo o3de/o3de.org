@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -72,18 +72,27 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddShape</b> 
 <tr class="memitem:a768c778b0f4e6662a537306900166392"><td class="memItemLeft" align="right" valign="top"><a id="a768c778b0f4e6662a537306900166392"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveShape</b> (AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_shape.html">Physics::Shape</a> &gt; shape)=0</td></tr>
 <tr class="separator:a768c778b0f4e6662a537306900166392"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a339597fdcea56a8714b5e42f4270f3d7"><td class="memItemLeft" align="right" valign="top"><a id="a339597fdcea56a8714b5e42f4270f3d7"></a>
-virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetShapeCount</b> ()</td></tr>
-<tr class="separator:a339597fdcea56a8714b5e42f4270f3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f24657827ef3ca444f24af2771f732f"><td class="memItemLeft" align="right" valign="top"><a id="a9f24657827ef3ca444f24af2771f732f"></a>
-virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_shape.html">Physics::Shape</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetShape</b> ([[maybe_unused]]AZ::u32 index)</td></tr>
-<tr class="separator:a9f24657827ef3ca444f24af2771f732f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a651fa7dba2e86686d1d1c368b9735460"><td class="memItemLeft" align="right" valign="top"><a id="a651fa7dba2e86686d1d1c368b9735460"></a>
+virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetShapeCount</b> () const</td></tr>
+<tr class="separator:a651fa7dba2e86686d1d1c368b9735460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f80e7905282a5ca96671407fd3fd894"><td class="memItemLeft" align="right" valign="top"><a id="a3f80e7905282a5ca96671407fd3fd894"></a>
+virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_shape.html">Physics::Shape</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetShape</b> ([[maybe_unused]] AZ::u32 index)</td></tr>
+<tr class="separator:a3f80e7905282a5ca96671407fd3fd894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f23ead0c6377809924871a3182d6d6"><td class="memItemLeft" align="right" valign="top"><a id="a26f23ead0c6377809924871a3182d6d6"></a>
+virtual AZStd::shared_ptr&lt; const <a class="el" href="class_physics_1_1_shape.html">Physics::Shape</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetShape</b> ([[maybe_unused]] AZ::u32 index) const</td></tr>
+<tr class="separator:a26f23ead0c6377809924871a3182d6d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae61a29fa15058495267103aca4e62e27"><td class="memItemLeft" align="right" valign="top"><a id="ae61a29fa15058495267103aca4e62e27"></a>
 virtual AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetCenterOfMassWorld</b> () const =0</td></tr>
 <tr class="separator:ae61a29fa15058495267103aca4e62e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dfa38fed7577284355bcfd2946dde80"><td class="memItemLeft" align="right" valign="top"><a id="a3dfa38fed7577284355bcfd2946dde80"></a>
 virtual AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetCenterOfMassLocal</b> () const =0</td></tr>
 <tr class="separator:a3dfa38fed7577284355bcfd2946dde80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5d3e0f6432a23f1c6f314fb7b97684"><td class="memItemLeft" align="right" valign="top"><a id="a4d5d3e0f6432a23f1c6f314fb7b97684"></a>
+virtual AZ::Matrix3x3&#160;</td><td class="memItemRight" valign="bottom"><b>GetInertiaWorld</b> () const =0</td></tr>
+<tr class="separator:a4d5d3e0f6432a23f1c6f314fb7b97684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee7bfdaadbe8f9c05583048f7676c09"><td class="memItemLeft" align="right" valign="top"><a id="abee7bfdaadbe8f9c05583048f7676c09"></a>
+virtual AZ::Matrix3x3&#160;</td><td class="memItemRight" valign="bottom"><b>GetInertiaLocal</b> () const =0</td></tr>
+<tr class="separator:abee7bfdaadbe8f9c05583048f7676c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a233d38d26939da1e13377c04544916d0"><td class="memItemLeft" align="right" valign="top"><a id="a233d38d26939da1e13377c04544916d0"></a>
 virtual AZ::Matrix3x3&#160;</td><td class="memItemRight" valign="bottom"><b>GetInverseInertiaWorld</b> () const =0</td></tr>
 <tr class="separator:a233d38d26939da1e13377c04544916d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -336,7 +345,7 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:23 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:14 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -72,9 +72,9 @@ typedef Traits&#160;</td><td class="memItemRight" valign="bottom"><b>traits_type
 <tr class="memitem:a467c545861ace831af9d7d4a12a1fe94"><td class="memItemLeft" align="right" valign="top"><a id="a467c545861ace831af9d7d4a12a1fe94"></a>
 typedef Traits::key_type&#160;</td><td class="memItemRight" valign="bottom"><b>key_type</b></td></tr>
 <tr class="separator:a467c545861ace831af9d7d4a12a1fe94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add054d533e58977f3a45cf867d36a0bb"><td class="memItemLeft" align="right" valign="top"><a id="add054d533e58977f3a45cf867d36a0bb"></a>
-typedef Traits::key_eq&#160;</td><td class="memItemRight" valign="bottom"><b>key_eq</b></td></tr>
-<tr class="separator:add054d533e58977f3a45cf867d36a0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d32532535e28543fddfe8fce6a768f8"><td class="memItemLeft" align="right" valign="top"><a id="a3d32532535e28543fddfe8fce6a768f8"></a>
+typedef Traits::key_equal&#160;</td><td class="memItemRight" valign="bottom"><b>key_equal</b></td></tr>
+<tr class="separator:a3d32532535e28543fddfe8fce6a768f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae75f90127c3c4d7f574c52c392eb5fa5"><td class="memItemLeft" align="right" valign="top"><a id="ae75f90127c3c4d7f574c52c392eb5fa5"></a>
 typedef Traits::hasher&#160;</td><td class="memItemRight" valign="bottom"><b>hasher</b></td></tr>
 <tr class="separator:ae75f90127c3c4d7f574c52c392eb5fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,18 +150,24 @@ typedef <a class="el" href="class_a_z_std_1_1hash__node__destructor.html">hash_n
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a062b780aff23195d05dc89aef29a9972"><td class="memItemLeft" align="right" valign="top"><a id="a062b780aff23195d05dc89aef29a9972"></a>
-AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>hash_table</b> (const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_eq &amp;keyEqual, const allocator_type &amp;alloc=allocator_type())</td></tr>
-<tr class="separator:a062b780aff23195d05dc89aef29a9972"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90d27687b61dbd09f1e375f592f28bd0"><td class="memItemLeft" align="right" valign="top"><a id="a90d27687b61dbd09f1e375f592f28bd0"></a>
-AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>hash_table</b> (const value_type *first, const value_type *last, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_eq &amp;keyEqual, const allocator_type &amp;alloc)</td></tr>
-<tr class="separator:a90d27687b61dbd09f1e375f592f28bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6fca5e7b062475302d85dd1218943a2"><td class="memItemLeft" align="right" valign="top"><a id="af6fca5e7b062475302d85dd1218943a2"></a>
-AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>hash_table</b> (const <a class="el" href="class_a_z_std_1_1hash__table.html">this_type</a> &amp;rhs)</td></tr>
-<tr class="separator:af6fca5e7b062475302d85dd1218943a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c643669b20f0ed2cdf596a17a39dd94"><td class="memItemLeft" align="right" valign="top"><a id="a0c643669b20f0ed2cdf596a17a39dd94"></a>
-AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>hash_table</b> (<a class="el" href="class_a_z_std_1_1hash__table.html">this_type</a> &amp;&amp;rhs)</td></tr>
-<tr class="separator:a0c643669b20f0ed2cdf596a17a39dd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25528d77f4b940fef0a60f47dc974210"><td class="memItemLeft" align="right" valign="top"><a id="a25528d77f4b940fef0a60f47dc974210"></a>
+AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>hash_table</b> (const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_equal &amp;keyEqual, const allocator_type &amp;alloc=allocator_type())</td></tr>
+<tr class="separator:a25528d77f4b940fef0a60f47dc974210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fedcbf9d44d80b0643902f4ad1902f5"><td class="memItemLeft" align="right" valign="top"><a id="a1fedcbf9d44d80b0643902f4ad1902f5"></a>
+AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>hash_table</b> (const value_type *first, const value_type *last, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_equal &amp;keyEqual, const allocator_type &amp;alloc)</td></tr>
+<tr class="separator:a1fedcbf9d44d80b0643902f4ad1902f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a610ef16e12172fe503e45564cb575212"><td class="memItemLeft" align="right" valign="top"><a id="a610ef16e12172fe503e45564cb575212"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hash_table</b> (const <a class="el" href="class_a_z_std_1_1hash__table.html">hash_table</a> &amp;rhs)</td></tr>
+<tr class="separator:a610ef16e12172fe503e45564cb575212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d87b0e9af0baa430e1542fcc795b99"><td class="memItemLeft" align="right" valign="top"><a id="a51d87b0e9af0baa430e1542fcc795b99"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hash_table</b> (const <a class="el" href="class_a_z_std_1_1hash__table.html">hash_table</a> &amp;rhs, const type_identity_t&lt; allocator_type &gt; &amp;alloc)</td></tr>
+<tr class="separator:a51d87b0e9af0baa430e1542fcc795b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dbf4a6911b77f8f0d2b1946daa7758b"><td class="memItemLeft" align="right" valign="top"><a id="a9dbf4a6911b77f8f0d2b1946daa7758b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hash_table</b> (<a class="el" href="class_a_z_std_1_1hash__table.html">hash_table</a> &amp;&amp;rhs)</td></tr>
+<tr class="separator:a9dbf4a6911b77f8f0d2b1946daa7758b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c425277974b194c567569f1bde34170"><td class="memItemLeft" align="right" valign="top"><a id="a5c425277974b194c567569f1bde34170"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hash_table</b> (<a class="el" href="class_a_z_std_1_1hash__table.html">hash_table</a> &amp;&amp;rhs, const type_identity_t&lt; allocator_type &gt; &amp;alloc)</td></tr>
+<tr class="separator:a5c425277974b194c567569f1bde34170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89a1aff6ac992caebcdb11922182c721"><td class="memItemLeft" align="right" valign="top"><a id="a89a1aff6ac992caebcdb11922182c721"></a>
 <a class="el" href="class_a_z_std_1_1hash__table.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_std_1_1hash__table.html">this_type</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:a89a1aff6ac992caebcdb11922182c721"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,9 +219,9 @@ AZ_FORCE_INLINE size_type&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:a5441cac208098d6955daa3c9cd124ee6"><td class="memItemLeft" align="right" valign="top"><a id="a5441cac208098d6955daa3c9cd124ee6"></a>
 AZ_FORCE_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const</td></tr>
 <tr class="separator:a5441cac208098d6955daa3c9cd124ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adde25dfd4f00bdd289cd43ff06938113"><td class="memItemLeft" align="right" valign="top"><a id="adde25dfd4f00bdd289cd43ff06938113"></a>
-AZ_FORCE_INLINE key_eq&#160;</td><td class="memItemRight" valign="bottom"><b>key_equal</b> () const</td></tr>
-<tr class="separator:adde25dfd4f00bdd289cd43ff06938113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e9e44ca49878ee39c8eca4a995707e"><td class="memItemLeft" align="right" valign="top"><a id="a95e9e44ca49878ee39c8eca4a995707e"></a>
+AZ_FORCE_INLINE key_equal&#160;</td><td class="memItemRight" valign="bottom"><b>key_eq</b> () const</td></tr>
+<tr class="separator:a95e9e44ca49878ee39c8eca4a995707e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2601c1af51c1f58ced2c2f33c4d853a"><td class="memItemLeft" align="right" valign="top"><a id="ad2601c1af51c1f58ced2c2f33c4d853a"></a>
 AZ_FORCE_INLINE hasher&#160;</td><td class="memItemRight" valign="bottom"><b>get_hasher</b> () const</td></tr>
 <tr class="separator:ad2601c1af51c1f58ced2c2f33c4d853a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,10 +265,14 @@ template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:ad0364c63006af918e205e56c05292be7"><td class="memItemLeft" align="right" valign="top"><a id="ad0364c63006af918e205e56c05292be7"></a>
 AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (std::initializer_list&lt; value_type &gt; <a class="el" href="class_a_z_std_1_1list.html">list</a>)</td></tr>
 <tr class="separator:ad0364c63006af918e205e56c05292be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a268e222b11738864f18005cb70eabb40"><td class="memTemplParams" colspan="2"><a id="a268e222b11738864f18005cb70eabb40"></a>
+<tr class="memitem:a5bca1103af711aacb8e33d81b0684cfb"><td class="memTemplParams" colspan="2"><a id="a5bca1103af711aacb8e33d81b0684cfb"></a>
 template&lt;class Iterator &gt; </td></tr>
-<tr class="memitem:a268e222b11738864f18005cb70eabb40"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert</b> (Iterator first, Iterator last)</td></tr>
-<tr class="separator:a268e222b11738864f18005cb70eabb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bca1103af711aacb8e33d81b0684cfb"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert</b> (Iterator first, Iterator last) -&gt; enable_if_t&lt; input_iterator&lt; Iterator &gt; &amp;&amp;!is_convertible_v&lt; Iterator, size_type &gt;&gt;</td></tr>
+<tr class="separator:a5bca1103af711aacb8e33d81b0684cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add2974c3a566fc28e476b5fd53dfeff1"><td class="memTemplParams" colspan="2"><a id="add2974c3a566fc28e476b5fd53dfeff1"></a>
+template&lt;class R &gt; </td></tr>
+<tr class="memitem:add2974c3a566fc28e476b5fd53dfeff1"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert_range</b> (R &amp;&amp;rg) -&gt; enable_if_t&lt; Internal::container_compatible_range&lt; R, value_type &gt;&gt;</td></tr>
+<tr class="separator:add2974c3a566fc28e476b5fd53dfeff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a913b18ed7e1ce23870821f7338cfbc60"><td class="memTemplParams" colspan="2">template&lt;class InsertReturnType , class NodeHandle &gt; </td></tr>
 <tr class="memitem:a913b18ed7e1ce23870821f7338cfbc60"><td class="memTemplItemLeft" align="right" valign="top">InsertReturnType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1hash__table.html#a913b18ed7e1ce23870821f7338cfbc60">node_handle_insert</a> (NodeHandle &amp;&amp;nodeHandle)</td></tr>
 <tr class="separator:a913b18ed7e1ce23870821f7338cfbc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,46 +304,46 @@ iterator&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (const_
 <tr class="memitem:aad74518e73ea9323fbe8560f0efbbade"><td class="memItemLeft" align="right" valign="top"><a id="aad74518e73ea9323fbe8560f0efbbade"></a>
 AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
 <tr class="separator:aad74518e73ea9323fbe8560f0efbbade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb8f0f38fede3f101ff020a291bb4c78"><td class="memTemplParams" colspan="2"><a id="afb8f0f38fede3f101ff020a291bb4c78"></a>
+<tr class="memitem:af2aace28282690535aaf6c1246e642ed"><td class="memTemplParams" colspan="2"><a id="af2aace28282690535aaf6c1246e642ed"></a>
 template&lt;class ComparableToKey &gt; </td></tr>
-<tr class="memitem:afb8f0f38fede3f101ff020a291bb4c78"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>find</b> (const ComparableToKey &amp;key) -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_eq, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, iterator &gt;</td></tr>
-<tr class="separator:afb8f0f38fede3f101ff020a291bb4c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c189e1f45c586129e15851bbe36a719"><td class="memTemplParams" colspan="2"><a id="a6c189e1f45c586129e15851bbe36a719"></a>
+<tr class="memitem:af2aace28282690535aaf6c1246e642ed"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>find</b> (const ComparableToKey &amp;key) -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_equal, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, iterator &gt;</td></tr>
+<tr class="separator:af2aace28282690535aaf6c1246e642ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a133bded4409709c30916e86f81864f4c"><td class="memTemplParams" colspan="2"><a id="a133bded4409709c30916e86f81864f4c"></a>
 template&lt;class ComparableToKey &gt; </td></tr>
-<tr class="memitem:a6c189e1f45c586129e15851bbe36a719"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>find</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_eq, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, const_iterator &gt;</td></tr>
-<tr class="separator:a6c189e1f45c586129e15851bbe36a719"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45ed5be8a6d01d3b51b0275e54e930e0"><td class="memTemplParams" colspan="2"><a id="a45ed5be8a6d01d3b51b0275e54e930e0"></a>
+<tr class="memitem:a133bded4409709c30916e86f81864f4c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>find</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_equal, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, const_iterator &gt;</td></tr>
+<tr class="separator:a133bded4409709c30916e86f81864f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84d0ba374297f52081564a6fc2923a91"><td class="memTemplParams" colspan="2"><a id="a84d0ba374297f52081564a6fc2923a91"></a>
 template&lt;class ComparableToKey &gt; </td></tr>
-<tr class="memitem:a45ed5be8a6d01d3b51b0275e54e930e0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>contains</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_eq, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, bool &gt;</td></tr>
-<tr class="separator:a45ed5be8a6d01d3b51b0275e54e930e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad621e8a57caad2d6b7a75b2a28b9519c"><td class="memTemplParams" colspan="2"><a id="ad621e8a57caad2d6b7a75b2a28b9519c"></a>
+<tr class="memitem:a84d0ba374297f52081564a6fc2923a91"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>contains</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_equal, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, bool &gt;</td></tr>
+<tr class="separator:a84d0ba374297f52081564a6fc2923a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08505ee4aeb35c3815d27f42974c771d"><td class="memTemplParams" colspan="2"><a id="a08505ee4aeb35c3815d27f42974c771d"></a>
 template&lt;class ComparableToKey &gt; </td></tr>
-<tr class="memitem:ad621e8a57caad2d6b7a75b2a28b9519c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>count</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_eq, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, size_type &gt;</td></tr>
-<tr class="separator:ad621e8a57caad2d6b7a75b2a28b9519c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9138c3b469ed84e1eaa1ad6eee607147"><td class="memTemplParams" colspan="2"><a id="a9138c3b469ed84e1eaa1ad6eee607147"></a>
+<tr class="memitem:a08505ee4aeb35c3815d27f42974c771d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>count</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_equal, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, size_type &gt;</td></tr>
+<tr class="separator:a08505ee4aeb35c3815d27f42974c771d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a854458f591e96c7f6c0696b56c0c2440"><td class="memTemplParams" colspan="2"><a id="a854458f591e96c7f6c0696b56c0c2440"></a>
 template&lt;class ComparableToKey &gt; </td></tr>
-<tr class="memitem:a9138c3b469ed84e1eaa1ad6eee607147"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lower_bound</b> (const ComparableToKey &amp;key) -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_eq, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, iterator &gt;</td></tr>
-<tr class="separator:a9138c3b469ed84e1eaa1ad6eee607147"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10b4eaef3decd227bb1cb4045a188e2f"><td class="memTemplParams" colspan="2"><a id="a10b4eaef3decd227bb1cb4045a188e2f"></a>
+<tr class="memitem:a854458f591e96c7f6c0696b56c0c2440"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lower_bound</b> (const ComparableToKey &amp;key) -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_equal, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, iterator &gt;</td></tr>
+<tr class="separator:a854458f591e96c7f6c0696b56c0c2440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d2e0a6bdb746a3111d4966d7cd587a"><td class="memTemplParams" colspan="2"><a id="a19d2e0a6bdb746a3111d4966d7cd587a"></a>
 template&lt;class ComparableToKey &gt; </td></tr>
-<tr class="memitem:a10b4eaef3decd227bb1cb4045a188e2f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lower_bound</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_eq, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, const_iterator &gt;</td></tr>
-<tr class="separator:a10b4eaef3decd227bb1cb4045a188e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac43d6f99bb999d9a22b9203c89feef6a"><td class="memTemplParams" colspan="2"><a id="ac43d6f99bb999d9a22b9203c89feef6a"></a>
+<tr class="memitem:a19d2e0a6bdb746a3111d4966d7cd587a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lower_bound</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_equal, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, const_iterator &gt;</td></tr>
+<tr class="separator:a19d2e0a6bdb746a3111d4966d7cd587a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5181ca0d768afd2e162799029f936333"><td class="memTemplParams" colspan="2"><a id="a5181ca0d768afd2e162799029f936333"></a>
 template&lt;class ComparableToKey &gt; </td></tr>
-<tr class="memitem:ac43d6f99bb999d9a22b9203c89feef6a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>upper_bound</b> (const ComparableToKey &amp;key) -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_eq, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, iterator &gt;</td></tr>
-<tr class="separator:ac43d6f99bb999d9a22b9203c89feef6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac64486af4492b3f1b7b97305ed0c7453"><td class="memTemplParams" colspan="2"><a id="ac64486af4492b3f1b7b97305ed0c7453"></a>
+<tr class="memitem:a5181ca0d768afd2e162799029f936333"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>upper_bound</b> (const ComparableToKey &amp;key) -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_equal, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, iterator &gt;</td></tr>
+<tr class="separator:a5181ca0d768afd2e162799029f936333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1460d04c0be8f3015c29341be2658aa1"><td class="memTemplParams" colspan="2"><a id="a1460d04c0be8f3015c29341be2658aa1"></a>
 template&lt;class ComparableToKey &gt; </td></tr>
-<tr class="memitem:ac64486af4492b3f1b7b97305ed0c7453"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>upper_bound</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_eq, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, const_iterator &gt;</td></tr>
-<tr class="separator:ac64486af4492b3f1b7b97305ed0c7453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adee38d2c32ded1171a59262f4aa05aea"><td class="memTemplParams" colspan="2"><a id="adee38d2c32ded1171a59262f4aa05aea"></a>
+<tr class="memitem:a1460d04c0be8f3015c29341be2658aa1"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>upper_bound</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_equal, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, const_iterator &gt;</td></tr>
+<tr class="separator:a1460d04c0be8f3015c29341be2658aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a9e25419aaa875549255f721975047a"><td class="memTemplParams" colspan="2"><a id="a1a9e25419aaa875549255f721975047a"></a>
 template&lt;class ComparableToKey &gt; </td></tr>
-<tr class="memitem:adee38d2c32ded1171a59262f4aa05aea"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>equal_range</b> (const ComparableToKey &amp;key) -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_eq, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, <a class="el" href="struct_a_z_std_1_1pair.html">AZStd::pair</a>&lt; iterator, iterator &gt;&gt;</td></tr>
-<tr class="separator:adee38d2c32ded1171a59262f4aa05aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefa4d962f8904c97375f149d94bcb982"><td class="memTemplParams" colspan="2"><a id="aefa4d962f8904c97375f149d94bcb982"></a>
+<tr class="memitem:a1a9e25419aaa875549255f721975047a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>equal_range</b> (const ComparableToKey &amp;key) -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_equal, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, <a class="el" href="struct_a_z_std_1_1pair.html">AZStd::pair</a>&lt; iterator, iterator &gt;&gt;</td></tr>
+<tr class="separator:a1a9e25419aaa875549255f721975047a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad229c60d7d4a6429cfd098007a8be331"><td class="memTemplParams" colspan="2"><a id="ad229c60d7d4a6429cfd098007a8be331"></a>
 template&lt;class ComparableToKey &gt; </td></tr>
-<tr class="memitem:aefa4d962f8904c97375f149d94bcb982"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>equal_range</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_eq, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, <a class="el" href="struct_a_z_std_1_1pair.html">AZStd::pair</a>&lt; const_iterator, const_iterator &gt;&gt;</td></tr>
-<tr class="separator:aefa4d962f8904c97375f149d94bcb982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad229c60d7d4a6429cfd098007a8be331"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>equal_range</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt;(Internal::is_transparent&lt; key_equal, ComparableToKey &gt;::value &amp;&amp;Internal::is_transparent&lt; hasher, ComparableToKey &gt;::value)||AZStd::is_convertible_v&lt; ComparableToKey, key_type &gt;, <a class="el" href="struct_a_z_std_1_1pair.html">AZStd::pair</a>&lt; const_iterator, const_iterator &gt;&gt;</td></tr>
+<tr class="separator:ad229c60d7d4a6429cfd098007a8be331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91c7d13da3d17a4cc6a3c1e5963e4747"><td class="memItemLeft" align="right" valign="top"><a id="a91c7d13da3d17a4cc6a3c1e5963e4747"></a>
 AZ_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="class_a_z_std_1_1hash__table.html">this_type</a> &amp;rhs)</td></tr>
 <tr class="separator:a91c7d13da3d17a4cc6a3c1e5963e4747"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -437,9 +447,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a8f7fefc8a448e8a9bdbeed05aa3ac8a6"><td class="memItemLeft" align="right" valign="top"><a id="a8f7fefc8a448e8a9bdbeed05aa3ac8a6"></a>
 storage_type&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b></td></tr>
 <tr class="separator:a8f7fefc8a448e8a9bdbeed05aa3ac8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3dee9ca4cad9dd7bffe7cdb8f220c1a"><td class="memItemLeft" align="right" valign="top"><a id="ad3dee9ca4cad9dd7bffe7cdb8f220c1a"></a>
-key_eq&#160;</td><td class="memItemRight" valign="bottom"><b>m_keyEqual</b></td></tr>
-<tr class="separator:ad3dee9ca4cad9dd7bffe7cdb8f220c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb23b13a82b61bc4fd1723dd11e51f37"><td class="memItemLeft" align="right" valign="top"><a id="aeb23b13a82b61bc4fd1723dd11e51f37"></a>
+key_equal&#160;</td><td class="memItemRight" valign="bottom"><b>m_keyEqual</b></td></tr>
+<tr class="separator:aeb23b13a82b61bc4fd1723dd11e51f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb4595160addf1be65d5cc544f3d8af5"><td class="memItemLeft" align="right" valign="top"><a id="abb4595160addf1be65d5cc544f3d8af5"></a>
 hasher&#160;</td><td class="memItemRight" valign="bottom"><b>m_hasher</b></td></tr>
 <tr class="separator:abb4595160addf1be65d5cc544f3d8af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -449,7 +459,7 @@ hasher&#160;</td><td class="memItemRight" valign="bottom"><b>m_hasher</b></td></
 class AZStd::hash_table&lt; Traits &gt;</h3>
 
 <p>Hash table is internal container used as a base class for all unordered associative containers. It provides functionality for the unordered container in CTR1. (6.3.4). In addition we introduce the following <a class="el" href="class_a_z_std_1_1hash__table.html#HashExtensions">extensions</a>.</p>
-<p>Traits should have the following members typedef xxx key_type; typedef xxx key_eq; typedef xxx hasher; typedef xxx value_type; typedef xxx allocator_type; enum { max_load_factor = xxx, // What should the max load factor before we grow the map. Load factor is the average num of elements per bucket. min_buckets = xxx, // Min num of buckets to be allocated. has_multi_elements = true or false, is_dynamic = true or false, // true if we have fixed container. If we do so we will need to se fixed_num_buckets and fixed_num_elements. fixed_num_buckets = xxx, // Number of buckets to pre-allocate. For hashing purposes it will be good to be a prime number. We we get better bucket distribution. // It should be aprox. 1/3 - 1/4 (max_load_factor 3 or 4) of the number of elements, otherwise we will have too much liear searches. fixed_num_elements = xxx, // Number of elements to pre-allocate. }</p>
+<p>Traits should have the following members typedef xxx key_type; typedef xxx key_equal; typedef xxx hasher; typedef xxx value_type; typedef xxx allocator_type; enum { max_load_factor = xxx, // What should the max load factor before we grow the map. Load factor is the average num of elements per bucket. min_buckets = xxx, // Min num of buckets to be allocated. has_multi_elements = true or false, is_dynamic = true or false, // true if we have fixed container. If we do so we will need to se fixed_num_buckets and fixed_num_elements. fixed_num_buckets = xxx, // Number of buckets to pre-allocate. For hashing purposes it will be good to be a prime number. We we get better bucket distribution. // It should be aprox. 1/3 - 1/4 (max_load_factor 3 or 4) of the number of elements, otherwise we will have too much liear searches. fixed_num_elements = xxx, // Number of elements to pre-allocate. }</p>
 <p>static inline key_type key_from_value(const value_type&amp; value);</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a78e6deb47d597669bd12691d8796f411"></a>
@@ -672,7 +682,7 @@ template&lt;class InsertReturnType , class NodeHandle &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:05 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:53 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

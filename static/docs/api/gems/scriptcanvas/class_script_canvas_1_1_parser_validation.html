@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -67,9 +67,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a30de26cbc3aa39693dfb221faf82eb0a"><td class="memItemLeft" align="right" valign="top"><a id="a30de26cbc3aa39693dfb221faf82eb0a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_script_canvas_1_1_parser_validation.html">ParserValidation</a>, AZ::SystemAllocator, 0)</td></tr>
 <tr class="separator:a30de26cbc3aa39693dfb221faf82eb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace59bd2b6e0b20ce03593754bd0caaef"><td class="memItemLeft" align="right" valign="top"><a id="ace59bd2b6e0b20ce03593754bd0caaef"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ParserValidation</b> (AZ::EntityId nodeId, ValidationSeverity severity, const AZStd::string_view &amp;description)</td></tr>
-<tr class="separator:ace59bd2b6e0b20ce03593754bd0caaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a83f071954bb60dbc9a121dbe012e8"><td class="memItemLeft" align="right" valign="top"><a id="ac2a83f071954bb60dbc9a121dbe012e8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ParserValidation</b> (AZ::EntityId nodeId, ValidationSeverity severity, const AZStd::string_view &amp;description, AZ::Crc32 idCRC={}, const AZStd::string &amp;id={})</td></tr>
+<tr class="separator:ac2a83f071954bb60dbc9a121dbe012e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f165c4eb2981d9c52aa432e84b9a064"><td class="memItemLeft" align="right" valign="top"><a id="a7f165c4eb2981d9c52aa432e84b9a064"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetIdentifier</b> () const override</td></tr>
+<tr class="separator:a7f165c4eb2981d9c52aa432e84b9a064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8708d4c6c66417b399db8a4ad936e38c"><td class="memItemLeft" align="right" valign="top"><a id="a8708d4c6c66417b399db8a4ad936e38c"></a>
+AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetIdCrc</b> () const override</td></tr>
+<tr class="separator:a8708d4c6c66417b399db8a4ad936e38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3db81357a682eba249ba3d32f9e56ca0"><td class="memItemLeft" align="right" valign="top"><a id="a3db81357a682eba249ba3d32f9e56ca0"></a>
 AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetTooltip</b> () const override</td></tr>
 <tr class="separator:a3db81357a682eba249ba3d32f9e56ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -95,12 +101,6 @@ AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetDesc
 <tr class="memitem:a297c30888bc2c07e89133b47262a98e7 inherit pub_methods_class_script_canvas_1_1_validation_event"><td class="memItemLeft" align="right" valign="top"><a id="a297c30888bc2c07e89133b47262a98e7"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanAutoFix</b> () const</td></tr>
 <tr class="separator:a297c30888bc2c07e89133b47262a98e7 inherit pub_methods_class_script_canvas_1_1_validation_event"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58349a62861d2de191e346e28a97254b inherit pub_methods_class_script_canvas_1_1_validation_event"><td class="memItemLeft" align="right" valign="top"><a id="a58349a62861d2de191e346e28a97254b"></a>
-virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetIdentifier</b> () const =0</td></tr>
-<tr class="separator:a58349a62861d2de191e346e28a97254b inherit pub_methods_class_script_canvas_1_1_validation_event"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaaaae3246724aa584e8637cd52a88f7 inherit pub_methods_class_script_canvas_1_1_validation_event"><td class="memItemLeft" align="right" valign="top"><a id="acaaaae3246724aa584e8637cd52a88f7"></a>
-virtual AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetIdCrc</b> () const =0</td></tr>
-<tr class="separator:acaaaae3246724aa584e8637cd52a88f7 inherit pub_methods_class_script_canvas_1_1_validation_event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af90fcae0e4ed317b0e49d2e4fc676da3 inherit pub_methods_class_script_canvas_1_1_validation_event"><td class="memItemLeft" align="right" valign="top"><a id="af90fcae0e4ed317b0e49d2e4fc676da3"></a>
 ValidationSeverity&#160;</td><td class="memItemRight" valign="bottom"><b>GetSeverity</b> () const</td></tr>
 <tr class="separator:af90fcae0e4ed317b0e49d2e4fc676da3 inherit pub_methods_class_script_canvas_1_1_validation_event"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,7 +137,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetValidationType</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:04 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:31 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

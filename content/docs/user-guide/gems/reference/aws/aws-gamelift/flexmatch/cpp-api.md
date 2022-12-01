@@ -145,7 +145,7 @@ Notifications will be sent from the matchmaking ticket tracking system when the 
 
 ### `OnMatchComplete`
 
-When the matchmaking request is completed, the `Multiplayer::MatchmakingNotificationBus::Events::OnMatchComplete()` notification is broadcasted from the matchmaking ticket tracking system. Once the matchmaking ticket is completed, the player can join the game session that is hosting the match. 
+When the matchmaking request is completed, the `Multiplayer::MatchmakingNotificationBus::Events::OnMatchComplete()` notification is broadcast from the matchmaking ticket tracking system. Once the matchmaking ticket is completed, the player can join the game session that is hosting the match. 
 
 ```cpp
 bool OnMatchComplete()
@@ -156,7 +156,7 @@ bool OnMatchComplete()
 
 ### `OnMatchError`
 
-When the matchmaking request is processed with error, the `Multiplayer::MatchmakingNotificationBus::Events::OnMatchError()` notification is broadcasted from the matchmaking ticket tracking system. 
+When the matchmaking request is processed with error, the `Multiplayer::MatchmakingNotificationBus::Events::OnMatchError()` notification is broadcast from the matchmaking ticket tracking system. 
 
 ```cpp
 bool OnMatchError()
@@ -198,8 +198,8 @@ Sends a request to find new players for open slots in an existing game session. 
 
 To begin the process for manual backfill, call `AWSGameLiftServerManager::StartMatchBackfill()`, and pass in references to the ticket Id and a list of players. 
 
-When an existing session begins to be updated, the `OnUpdateSessionBegin` notification is broadcasted on the server side to perform any configuration or initialization. 
-At the end of the update, the `OnUpdateSessionEnd` notification is broadcasted on the server side to perform any follow-up operations.
+When an existing session begins to be updated, the `OnUpdateSessionBegin` notification is broadcast on the server side to perform any configuration or initialization. 
+At the end of the update, the `OnUpdateSessionEnd` notification is broadcast on the server side to perform any follow-up operations.
 
 ```cpp
 AZStd::string matchmakingTicketId = "YourMatchmakingTicketId";
@@ -248,10 +248,3 @@ bool OnUpdateSessionEnd()
 {{< note >}}  
 Server side APIs and notifications are for the manual backfill mode only. You don't need to call them for the automatic backfill mode.
 {{< /note >}}
-
-
----
-
-Previous topic: [Game and Server Integration](integration/)
-
-Next topic: [FlexMatch Scripting](scripting/)

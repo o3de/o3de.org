@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -56,7 +56,7 @@ $(function() {
 
 <p><code>#include &lt;ClientTransceiver.h&gt;</code></p>
 
-<p>Inherits <a class="el" href="class_script_canvas_1_1_debugger_1_1_message_1_1_notification_visitor.html">ScriptCanvas::Debugger::Message::NotificationVisitor</a>, Handler, Handler, Handler, Handler, and Handler.</p>
+<p>Inherits <a class="el" href="class_script_canvas_1_1_debugger_1_1_message_1_1_notification_visitor.html">ScriptCanvas::Debugger::Message::NotificationVisitor</a>, Handler, Handler, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -66,21 +66,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa72d724752330270821e2f25066cca34"><td class="memItemLeft" align="right" valign="top"><a id="aa72d724752330270821e2f25066cca34"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_script_canvas_1_1_debugger_1_1_client_transceiver.html">ClientTransceiver</a>, &quot;{C6F5ACDC-5415-48FE-A7C3-E6398FDDED33}&quot;)</td></tr>
 <tr class="separator:aa72d724752330270821e2f25066cca34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a310d9205296d248df653ee5330b35333"><td class="memItemLeft" align="right" valign="top"><a id="a310d9205296d248df653ee5330b35333"></a>
-AzFramework::TargetContainer&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateAvailableNetworkTargets</b> () override</td></tr>
-<tr class="separator:a310d9205296d248df653ee5330b35333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b893e11130e7afed7ad99c7ee6b884"><td class="memItemLeft" align="right" valign="top"><a id="a94b893e11130e7afed7ad99c7ee6b884"></a>
+AzFramework::RemoteToolsEndpointContainer&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateAvailableNetworkTargets</b> () override</td></tr>
+<tr class="separator:a94b893e11130e7afed7ad99c7ee6b884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace1adac35ca28a738fead2eae437018d"><td class="memItemLeft" align="right" valign="top"><a id="ace1adac35ca28a738fead2eae437018d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasValidConnection</b> () const override</td></tr>
 <tr class="separator:ace1adac35ca28a738fead2eae437018d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68aa1558591e79816e729aed74948cff"><td class="memItemLeft" align="right" valign="top"><a id="a68aa1558591e79816e729aed74948cff"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnected</b> (const AzFramework::TargetInfo &amp;) const override</td></tr>
-<tr class="separator:a68aa1558591e79816e729aed74948cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa46b2002cdb64a5de26a7618903652b8"><td class="memItemLeft" align="right" valign="top"><a id="aa46b2002cdb64a5de26a7618903652b8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnected</b> (const AzFramework::RemoteToolsEndpointInfo &amp;) const override</td></tr>
+<tr class="separator:aa46b2002cdb64a5de26a7618903652b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f6590883fb1af9d59daee965042deb2"><td class="memItemLeft" align="right" valign="top"><a id="a3f6590883fb1af9d59daee965042deb2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnectedToSelf</b> () const override</td></tr>
 <tr class="separator:a3f6590883fb1af9d59daee965042deb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a074f0360e7af1fde7eb17f372d949ea1"><td class="memItemLeft" align="right" valign="top"><a id="a074f0360e7af1fde7eb17f372d949ea1"></a>
-AzFramework::TargetInfo&#160;</td><td class="memItemRight" valign="bottom"><b>GetNetworkTarget</b> () override</td></tr>
-<tr class="separator:a074f0360e7af1fde7eb17f372d949ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04521adb1e86f3e99e42b2441b3af996"><td class="memItemLeft" align="right" valign="top"><a id="a04521adb1e86f3e99e42b2441b3af996"></a>
+AzFramework::RemoteToolsEndpointInfo&#160;</td><td class="memItemRight" valign="bottom"><b>GetNetworkTarget</b> () override</td></tr>
+<tr class="separator:a04521adb1e86f3e99e42b2441b3af996"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a97b6a3c1340094f850944403430287"><td class="memItemLeft" align="right" valign="top"><a id="a2a97b6a3c1340094f850944403430287"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddBreakpoint</b> (const <a class="el" href="struct_script_canvas_1_1_tagged_parent.html">Breakpoint</a> &amp;) override</td></tr>
 <tr class="separator:a2a97b6a3c1340094f850944403430287"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,21 +117,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetActiveGraphs</b> (
 <tr class="memitem:aa0a0976f19045d5821277561f4597950"><td class="memItemLeft" align="right" valign="top"><a id="aa0a0976f19045d5821277561f4597950"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableValue</b> () override</td></tr>
 <tr class="separator:aa0a0976f19045d5821277561f4597950"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80134348b37c3be5fddb77e13dd64b8e"><td class="memItemLeft" align="right" valign="top"><a id="a80134348b37c3be5fddb77e13dd64b8e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DesiredTargetConnected</b> (bool connected) override</td></tr>
-<tr class="separator:a80134348b37c3be5fddb77e13dd64b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03f58893058ecf3ce9aa2d6020e3bdb8"><td class="memItemLeft" align="right" valign="top"><a id="a03f58893058ecf3ce9aa2d6020e3bdb8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DesiredTargetChanged</b> (AZ::u32 newId, AZ::u32 oldId) override</td></tr>
-<tr class="separator:a03f58893058ecf3ce9aa2d6020e3bdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accded09f1d97703f939e68d4697cf704"><td class="memItemLeft" align="right" valign="top"><a id="accded09f1d97703f939e68d4697cf704"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>TargetJoinedNetwork</b> (AzFramework::TargetInfo info) override</td></tr>
-<tr class="separator:accded09f1d97703f939e68d4697cf704"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae131fbc3b3ec8c222399dd5fb94fb49"><td class="memItemLeft" align="right" valign="top"><a id="aae131fbc3b3ec8c222399dd5fb94fb49"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>TargetLeftNetwork</b> (AzFramework::TargetInfo info) override</td></tr>
-<tr class="separator:aae131fbc3b3ec8c222399dd5fb94fb49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fce8780def26edfe1e75979e08720ca"><td class="memItemLeft" align="right" valign="top"><a id="a2fce8780def26edfe1e75979e08720ca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnReceivedMsg</b> (AzFramework::TmMsgPtr msg) override</td></tr>
-<tr class="separator:a2fce8780def26edfe1e75979e08720ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75fc7bbdcb73fd700da83e38926bca8"><td class="memItemLeft" align="right" valign="top"><a id="ac75fc7bbdcb73fd700da83e38926bca8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DesiredTargetConnected</b> (bool connected)</td></tr>
+<tr class="separator:ac75fc7bbdcb73fd700da83e38926bca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0273b175b8976c8083b7fbf18405c22f"><td class="memItemLeft" align="right" valign="top"><a id="a0273b175b8976c8083b7fbf18405c22f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DesiredTargetChanged</b> (AZ::u32 newId, AZ::u32 oldId)</td></tr>
+<tr class="separator:a0273b175b8976c8083b7fbf18405c22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee6017a7fd4d21eec0ae3631c7c568d"><td class="memItemLeft" align="right" valign="top"><a id="afee6017a7fd4d21eec0ae3631c7c568d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TargetJoinedNetwork</b> (AzFramework::RemoteToolsEndpointInfo info)</td></tr>
+<tr class="separator:afee6017a7fd4d21eec0ae3631c7c568d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b654381357bca0bbac71d3324ae3262"><td class="memItemLeft" align="right" valign="top"><a id="a1b654381357bca0bbac71d3324ae3262"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TargetLeftNetwork</b> (AzFramework::RemoteToolsEndpointInfo info)</td></tr>
+<tr class="separator:a1b654381357bca0bbac71d3324ae3262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c8b11da2cdb3d3decd9f8bd2c888157"><td class="memItemLeft" align="right" valign="top"><a id="a2c8b11da2cdb3d3decd9f8bd2c888157"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnReceivedMsg</b> (AzFramework::RemoteToolsMessagePointer msg)</td></tr>
+<tr class="separator:a2c8b11da2cdb3d3decd9f8bd2c888157"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa771760b9c4c6d512a476799567faf07"><td class="memItemLeft" align="right" valign="top"><a id="aa771760b9c4c6d512a476799567faf07"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Visit</b> (<a class="el" href="class_script_canvas_1_1_debugger_1_1_message_1_1_notification_payload.html">Message::ActiveEntitiesResult</a> &amp;notification) override</td></tr>
 <tr class="separator:aa771760b9c4c6d512a476799567faf07"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,7 +227,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessMessages</b> (
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:05 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:32 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

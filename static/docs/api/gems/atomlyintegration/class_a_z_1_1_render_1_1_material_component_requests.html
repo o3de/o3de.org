@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AtomLyIntegration Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -62,132 +62,96 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa653ee192db3160530c29358a97133d8"><td class="memItemLeft" align="right" valign="top"><a id="aa653ee192db3160530c29358a97133d8"></a>
-virtual MaterialAssignmentMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#aa653ee192db3160530c29358a97133d8">GetOriginalMaterialAssignments</a> () const =0</td></tr>
-<tr class="memdesc:aa653ee192db3160530c29358a97133d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all material assignments that can be overridden. <br /></td></tr>
-<tr class="separator:aa653ee192db3160530c29358a97133d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f64712d352edaff2ca86db1c72df9b5"><td class="memItemLeft" align="right" valign="top"><a id="a8f64712d352edaff2ca86db1c72df9b5"></a>
-virtual MaterialAssignmentId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a8f64712d352edaff2ca86db1c72df9b5">FindMaterialAssignmentId</a> (const MaterialAssignmentLodIndex lod, const AZStd::string &amp;label) const =0</td></tr>
-<tr class="memdesc:a8f64712d352edaff2ca86db1c72df9b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get material assignment id matching lod and label substring. <br /></td></tr>
+<tr class="memitem:a29af0ccefb5f8a595f42867412bb9800"><td class="memItemLeft" align="right" valign="top"><a id="a29af0ccefb5f8a595f42867412bb9800"></a>
+virtual MaterialAssignmentMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a29af0ccefb5f8a595f42867412bb9800">GetDefautMaterialMap</a> () const =0</td></tr>
+<tr class="memdesc:a29af0ccefb5f8a595f42867412bb9800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a map representing the default layout and values for all material assignment slots on the source model or object. <br /></td></tr>
+<tr class="separator:a29af0ccefb5f8a595f42867412bb9800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f64712d352edaff2ca86db1c72df9b5"><td class="memItemLeft" align="right" valign="top">virtual MaterialAssignmentId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a8f64712d352edaff2ca86db1c72df9b5">FindMaterialAssignmentId</a> (const MaterialAssignmentLodIndex lod, const AZStd::string &amp;label) const =0</td></tr>
 <tr class="separator:a8f64712d352edaff2ca86db1c72df9b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8eb506069df613651b44918805ca2785"><td class="memItemLeft" align="right" valign="top"><a id="a8eb506069df613651b44918805ca2785"></a>
-virtual AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a8eb506069df613651b44918805ca2785">GetDefaultMaterialAssetId</a> (const MaterialAssignmentId &amp;materialAssignmentId) const =0</td></tr>
-<tr class="memdesc:a8eb506069df613651b44918805ca2785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get default material asset. <br /></td></tr>
+<tr class="memitem:a8eb506069df613651b44918805ca2785"><td class="memItemLeft" align="right" valign="top">virtual AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a8eb506069df613651b44918805ca2785">GetDefaultMaterialAssetId</a> (const MaterialAssignmentId &amp;materialAssignmentId) const =0</td></tr>
 <tr class="separator:a8eb506069df613651b44918805ca2785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63e7f0819ad165a6081738bbe76b2c1d"><td class="memItemLeft" align="right" valign="top"><a id="a63e7f0819ad165a6081738bbe76b2c1d"></a>
-virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a63e7f0819ad165a6081738bbe76b2c1d">GetMaterialSlotLabel</a> (const MaterialAssignmentId &amp;materialAssignmentId) const =0</td></tr>
-<tr class="memdesc:a63e7f0819ad165a6081738bbe76b2c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get material slot label. <br /></td></tr>
-<tr class="separator:a63e7f0819ad165a6081738bbe76b2c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a112ad95f0671a37b179251d58489a5ab"><td class="memItemLeft" align="right" valign="top"><a id="a112ad95f0671a37b179251d58489a5ab"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a112ad95f0671a37b179251d58489a5ab">SetMaterialOverrides</a> (const MaterialAssignmentMap &amp;materials)=0</td></tr>
-<tr class="memdesc:a112ad95f0671a37b179251d58489a5ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set material overrides. <br /></td></tr>
-<tr class="separator:a112ad95f0671a37b179251d58489a5ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3f52f08bcd7f5ffa65664f762e964cb"><td class="memItemLeft" align="right" valign="top"><a id="aa3f52f08bcd7f5ffa65664f762e964cb"></a>
-virtual const MaterialAssignmentMap &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#aa3f52f08bcd7f5ffa65664f762e964cb">GetMaterialOverrides</a> () const =0</td></tr>
-<tr class="memdesc:aa3f52f08bcd7f5ffa65664f762e964cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get material overrides. <br /></td></tr>
-<tr class="separator:aa3f52f08bcd7f5ffa65664f762e964cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0526bebff78a51502f12ee76ccb20b36"><td class="memItemLeft" align="right" valign="top"><a id="a0526bebff78a51502f12ee76ccb20b36"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a0526bebff78a51502f12ee76ccb20b36">ClearAllMaterialOverrides</a> ()=0</td></tr>
-<tr class="memdesc:a0526bebff78a51502f12ee76ccb20b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all material overrides. <br /></td></tr>
-<tr class="separator:a0526bebff78a51502f12ee76ccb20b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa58bfc87181140f066fb662ab2b99db7"><td class="memItemLeft" align="right" valign="top"><a id="aa58bfc87181140f066fb662ab2b99db7"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#aa58bfc87181140f066fb662ab2b99db7">ClearModelMaterialOverrides</a> ()=0</td></tr>
-<tr class="memdesc:aa58bfc87181140f066fb662ab2b99db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear non-lod material overrides. <br /></td></tr>
-<tr class="separator:aa58bfc87181140f066fb662ab2b99db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eaeb243469cb51c2aa27baf612d3da1"><td class="memItemLeft" align="right" valign="top"><a id="a0eaeb243469cb51c2aa27baf612d3da1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a0eaeb243469cb51c2aa27baf612d3da1">ClearLodMaterialOverrides</a> ()=0</td></tr>
-<tr class="memdesc:a0eaeb243469cb51c2aa27baf612d3da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear lod material overrides. <br /></td></tr>
-<tr class="separator:a0eaeb243469cb51c2aa27baf612d3da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af54ccf922717a1c3395af434604b7e56"><td class="memItemLeft" align="right" valign="top"><a id="af54ccf922717a1c3395af434604b7e56"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#af54ccf922717a1c3395af434604b7e56">ClearIncompatibleMaterialOverrides</a> ()=0</td></tr>
-<tr class="memdesc:af54ccf922717a1c3395af434604b7e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear residual materials that don't correspond to the associated model. <br /></td></tr>
-<tr class="separator:af54ccf922717a1c3395af434604b7e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad303958a6e943d2537d5f385671e8b8e"><td class="memItemLeft" align="right" valign="top"><a id="ad303958a6e943d2537d5f385671e8b8e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#ad303958a6e943d2537d5f385671e8b8e">ClearInvalidMaterialOverrides</a> ()=0</td></tr>
-<tr class="memdesc:ad303958a6e943d2537d5f385671e8b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear materials that reference missing assets. <br /></td></tr>
-<tr class="separator:ad303958a6e943d2537d5f385671e8b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4373c26f4677c954c328c25cb544029"><td class="memItemLeft" align="right" valign="top"><a id="aa4373c26f4677c954c328c25cb544029"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#aa4373c26f4677c954c328c25cb544029">RepairInvalidMaterialOverrides</a> ()=0</td></tr>
-<tr class="memdesc:aa4373c26f4677c954c328c25cb544029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repair materials that reference missing assets by assigning the default asset. <br /></td></tr>
-<tr class="separator:aa4373c26f4677c954c328c25cb544029"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f15dc0f75b2572d56296af6559913cb"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a7f15dc0f75b2572d56296af6559913cb">ApplyAutomaticPropertyUpdates</a> ()=0</td></tr>
-<tr class="separator:a7f15dc0f75b2572d56296af6559913cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e9e78d836d95735c23add58bdee7fb8"><td class="memItemLeft" align="right" valign="top"><a id="a4e9e78d836d95735c23add58bdee7fb8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a4e9e78d836d95735c23add58bdee7fb8">SetDefaultMaterialOverride</a> (const AZ::Data::AssetId &amp;materialAssetId)=0</td></tr>
-<tr class="memdesc:a4e9e78d836d95735c23add58bdee7fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default material override. <br /></td></tr>
-<tr class="separator:a4e9e78d836d95735c23add58bdee7fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23702c35cf93ca0786e3a0d641a51430"><td class="memItemLeft" align="right" valign="top"><a id="a23702c35cf93ca0786e3a0d641a51430"></a>
-virtual const AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a23702c35cf93ca0786e3a0d641a51430">GetDefaultMaterialOverride</a> () const =0</td></tr>
-<tr class="memdesc:a23702c35cf93ca0786e3a0d641a51430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get default material override. <br /></td></tr>
-<tr class="separator:a23702c35cf93ca0786e3a0d641a51430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c193e6225f9ccf1499ec829d1598f30"><td class="memItemLeft" align="right" valign="top"><a id="a4c193e6225f9ccf1499ec829d1598f30"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a4c193e6225f9ccf1499ec829d1598f30">ClearDefaultMaterialOverride</a> ()=0</td></tr>
-<tr class="memdesc:a4c193e6225f9ccf1499ec829d1598f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear default material override. <br /></td></tr>
-<tr class="separator:a4c193e6225f9ccf1499ec829d1598f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9bb893d5bbbe2882c4d198c9d8acedf"><td class="memItemLeft" align="right" valign="top"><a id="ae9bb893d5bbbe2882c4d198c9d8acedf"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#ae9bb893d5bbbe2882c4d198c9d8acedf">SetMaterialOverride</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZ::Data::AssetId &amp;materialAssetId)=0</td></tr>
-<tr class="memdesc:ae9bb893d5bbbe2882c4d198c9d8acedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set material override. <br /></td></tr>
-<tr class="separator:ae9bb893d5bbbe2882c4d198c9d8acedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad53e46ce270baa9d9836eae5fe2b5ec0"><td class="memItemLeft" align="right" valign="top"><a id="ad53e46ce270baa9d9836eae5fe2b5ec0"></a>
-virtual AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#ad53e46ce270baa9d9836eae5fe2b5ec0">GetMaterialOverride</a> (const MaterialAssignmentId &amp;materialAssignmentId) const =0</td></tr>
-<tr class="memdesc:ad53e46ce270baa9d9836eae5fe2b5ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get material override. <br /></td></tr>
-<tr class="separator:ad53e46ce270baa9d9836eae5fe2b5ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfc8d8edaeb87d3b3d80b162991675bc"><td class="memItemLeft" align="right" valign="top"><a id="acfc8d8edaeb87d3b3d80b162991675bc"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#acfc8d8edaeb87d3b3d80b162991675bc">ClearMaterialOverride</a> (const MaterialAssignmentId &amp;materialAssignmentId)=0</td></tr>
-<tr class="memdesc:acfc8d8edaeb87d3b3d80b162991675bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear material override. <br /></td></tr>
-<tr class="separator:acfc8d8edaeb87d3b3d80b162991675bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf936f8b52c84d174b2d05593f2d380e"><td class="memItemLeft" align="right" valign="top"><a id="abf936f8b52c84d174b2d05593f2d380e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#abf936f8b52c84d174b2d05593f2d380e">SetPropertyOverride</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const AZStd::any &amp;value)=0</td></tr>
-<tr class="memdesc:abf936f8b52c84d174b2d05593f2d380e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a material property override value wrapped by an AZStd::any. <br /></td></tr>
-<tr class="separator:abf936f8b52c84d174b2d05593f2d380e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef2473bffbe980c5d147e686461e4329"><td class="memItemLeft" align="right" valign="top"><a id="aef2473bffbe980c5d147e686461e4329"></a>
-virtual AZStd::any&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#aef2473bffbe980c5d147e686461e4329">GetPropertyOverride</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const =0</td></tr>
-<tr class="memdesc:aef2473bffbe980c5d147e686461e4329"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a material property override value wrapped by an AZStd::any. <br /></td></tr>
-<tr class="separator:aef2473bffbe980c5d147e686461e4329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7932693a143b3483e6cf989680b11de"><td class="memItemLeft" align="right" valign="top"><a id="ac7932693a143b3483e6cf989680b11de"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#ac7932693a143b3483e6cf989680b11de">ClearPropertyOverride</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName)=0</td></tr>
-<tr class="memdesc:ac7932693a143b3483e6cf989680b11de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear property override for a specific material assignment. <br /></td></tr>
-<tr class="separator:ac7932693a143b3483e6cf989680b11de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57f819e61adefe341384c05c8bb4a509"><td class="memItemLeft" align="right" valign="top"><a id="a57f819e61adefe341384c05c8bb4a509"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a57f819e61adefe341384c05c8bb4a509">ClearPropertyOverrides</a> (const MaterialAssignmentId &amp;materialAssignmentId)=0</td></tr>
-<tr class="memdesc:a57f819e61adefe341384c05c8bb4a509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear property overrides for a specific material assignment. <br /></td></tr>
-<tr class="separator:a57f819e61adefe341384c05c8bb4a509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade7c4fb1e1a4db3ee284114da0fc7f2f"><td class="memItemLeft" align="right" valign="top"><a id="ade7c4fb1e1a4db3ee284114da0fc7f2f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#ade7c4fb1e1a4db3ee284114da0fc7f2f">ClearAllPropertyOverrides</a> ()=0</td></tr>
-<tr class="memdesc:ade7c4fb1e1a4db3ee284114da0fc7f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all property overrides. <br /></td></tr>
-<tr class="separator:ade7c4fb1e1a4db3ee284114da0fc7f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3973d05bf71a3631e888bf294181f69c"><td class="memItemLeft" align="right" valign="top"><a id="a3973d05bf71a3631e888bf294181f69c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a3973d05bf71a3631e888bf294181f69c">SetPropertyOverrides</a> (const MaterialAssignmentId &amp;materialAssignmentId, const MaterialPropertyOverrideMap &amp;propertyOverrides)=0</td></tr>
-<tr class="memdesc:a3973d05bf71a3631e888bf294181f69c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Property overrides for a specific material assignment. <br /></td></tr>
-<tr class="separator:a3973d05bf71a3631e888bf294181f69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabbb134fdef3c2d0b71098210e4cf9cf"><td class="memItemLeft" align="right" valign="top"><a id="aabbb134fdef3c2d0b71098210e4cf9cf"></a>
-virtual MaterialPropertyOverrideMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#aabbb134fdef3c2d0b71098210e4cf9cf">GetPropertyOverrides</a> (const MaterialAssignmentId &amp;materialAssignmentId) const =0</td></tr>
-<tr class="memdesc:aabbb134fdef3c2d0b71098210e4cf9cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Property overrides for a specific material assignment. <br /></td></tr>
-<tr class="separator:aabbb134fdef3c2d0b71098210e4cf9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfa72f1c2e62afc8494482e666bc45a9"><td class="memItemLeft" align="right" valign="top"><a id="adfa72f1c2e62afc8494482e666bc45a9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#adfa72f1c2e62afc8494482e666bc45a9">SetModelUvOverrides</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZ::RPI::MaterialModelUvOverrideMap &amp;modelUvOverrides)=0</td></tr>
-<tr class="memdesc:adfa72f1c2e62afc8494482e666bc45a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Model UV overrides for a specific material assignment. <br /></td></tr>
+<tr class="memitem:a38b43dd08ffd9322cc94a3f2e1b3ae59"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a38b43dd08ffd9322cc94a3f2e1b3ae59">GetMaterialLabel</a> (const MaterialAssignmentId &amp;materialAssignmentId) const =0</td></tr>
+<tr class="separator:a38b43dd08ffd9322cc94a3f2e1b3ae59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706a404845e3ccab2b73597f82040d38"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a706a404845e3ccab2b73597f82040d38">SetMaterialMap</a> (const MaterialAssignmentMap &amp;materials)=0</td></tr>
+<tr class="separator:a706a404845e3ccab2b73597f82040d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60836655b25034e1a62098b4e2205ca"><td class="memItemLeft" align="right" valign="top">virtual const MaterialAssignmentMap &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#ad60836655b25034e1a62098b4e2205ca">GetMaterialMap</a> () const =0</td></tr>
+<tr class="separator:ad60836655b25034e1a62098b4e2205ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531eb25720a43542e04694bc50fc6a41"><td class="memItemLeft" align="right" valign="top"><a id="a531eb25720a43542e04694bc50fc6a41"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a531eb25720a43542e04694bc50fc6a41">ClearMaterialMap</a> ()=0</td></tr>
+<tr class="memdesc:a531eb25720a43542e04694bc50fc6a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all overridden materials and properties from the material component. <br /></td></tr>
+<tr class="separator:a531eb25720a43542e04694bc50fc6a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ded9f0c86e2d29bccb7fbffae023cff"><td class="memItemLeft" align="right" valign="top"><a id="a8ded9f0c86e2d29bccb7fbffae023cff"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a8ded9f0c86e2d29bccb7fbffae023cff">ClearMaterialsOnModelSlots</a> ()=0</td></tr>
+<tr class="memdesc:a8ded9f0c86e2d29bccb7fbffae023cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all overrides from the material component not associated with a specific LOD. <br /></td></tr>
+<tr class="separator:a8ded9f0c86e2d29bccb7fbffae023cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8773dc34d51810fcee6aa7f0d6c082d"><td class="memItemLeft" align="right" valign="top"><a id="aa8773dc34d51810fcee6aa7f0d6c082d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#aa8773dc34d51810fcee6aa7f0d6c082d">ClearMaterialsOnLodSlots</a> ()=0</td></tr>
+<tr class="memdesc:aa8773dc34d51810fcee6aa7f0d6c082d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all overrides from the material component associated with a specific LOD. <br /></td></tr>
+<tr class="separator:aa8773dc34d51810fcee6aa7f0d6c082d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ac1fb2b90e103a48ded7b6eded92b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a25ac1fb2b90e103a48ded7b6eded92b9">ClearMaterialsOnInvalidSlots</a> ()=0</td></tr>
+<tr class="separator:a25ac1fb2b90e103a48ded7b6eded92b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742603524f9a2e9c593090ef1cd1f1f6"><td class="memItemLeft" align="right" valign="top"><a id="a742603524f9a2e9c593090ef1cd1f1f6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a742603524f9a2e9c593090ef1cd1f1f6">ClearMaterialsWithMissingAssets</a> ()=0</td></tr>
+<tr class="memdesc:a742603524f9a2e9c593090ef1cd1f1f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all material overrides referencing material assets that cant' be located. <br /></td></tr>
+<tr class="separator:a742603524f9a2e9c593090ef1cd1f1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686b873d554d6c3c04daa121da68a5b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a686b873d554d6c3c04daa121da68a5b5">RepairMaterialsWithMissingAssets</a> ()=0</td></tr>
+<tr class="separator:a686b873d554d6c3c04daa121da68a5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2343e1a47aa78f6d0e37545f4a513a43"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a2343e1a47aa78f6d0e37545f4a513a43">RepairMaterialsWithRenamedProperties</a> ()=0</td></tr>
+<tr class="separator:a2343e1a47aa78f6d0e37545f4a513a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd512e06ca9d533119ea7a688416410"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#afbd512e06ca9d533119ea7a688416410">SetMaterialAssetIdOnDefaultSlot</a> (const AZ::Data::AssetId &amp;materialAssetId)=0</td></tr>
+<tr class="separator:afbd512e06ca9d533119ea7a688416410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7354f0690be9212de87504b91f5702c3"><td class="memItemLeft" align="right" valign="top"><a id="a7354f0690be9212de87504b91f5702c3"></a>
+virtual const AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a7354f0690be9212de87504b91f5702c3">GetMaterialAssetIdOnDefaultSlot</a> () const =0</td></tr>
+<tr class="memdesc:a7354f0690be9212de87504b91f5702c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to get the current material asset on the default material slot. <br /></td></tr>
+<tr class="separator:a7354f0690be9212de87504b91f5702c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f48fe3843dad83d3c8c30491cc02aab"><td class="memItemLeft" align="right" valign="top"><a id="a0f48fe3843dad83d3c8c30491cc02aab"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a0f48fe3843dad83d3c8c30491cc02aab">ClearMaterialAssetIdOnDefaultSlot</a> ()=0</td></tr>
+<tr class="memdesc:a0f48fe3843dad83d3c8c30491cc02aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to clear be over written material has set on the default material slot. <br /></td></tr>
+<tr class="separator:a0f48fe3843dad83d3c8c30491cc02aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7feb4e10988cf61806e9e80fd9c548b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#ab7feb4e10988cf61806e9e80fd9c548b">SetMaterialAssetId</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZ::Data::AssetId &amp;materialAssetId)=0</td></tr>
+<tr class="separator:ab7feb4e10988cf61806e9e80fd9c548b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7fcc6a6180a975402f5ff5ca92ff1f"><td class="memItemLeft" align="right" valign="top">virtual AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a1a7fcc6a6180a975402f5ff5ca92ff1f">GetMaterialAssetId</a> (const MaterialAssignmentId &amp;materialAssignmentId) const =0</td></tr>
+<tr class="separator:a1a7fcc6a6180a975402f5ff5ca92ff1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3fba75c22cbf271bbb93b717d75634"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a4d3fba75c22cbf271bbb93b717d75634">ClearMaterialAssetId</a> (const MaterialAssignmentId &amp;materialAssignmentId)=0</td></tr>
+<tr class="separator:a4d3fba75c22cbf271bbb93b717d75634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bbc651441197ea1c39baabcdc9bb6b7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a0bbc651441197ea1c39baabcdc9bb6b7">IsMaterialAssetIdOverridden</a> (const MaterialAssignmentId &amp;materialAssignmentId) const =0</td></tr>
+<tr class="separator:a0bbc651441197ea1c39baabcdc9bb6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94053b0b394d2e33ded2f943c4d91b84"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a94053b0b394d2e33ded2f943c4d91b84">SetPropertyValue</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const AZStd::any &amp;value)=0</td></tr>
+<tr class="separator:a94053b0b394d2e33ded2f943c4d91b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0ea83567bd1d7dc8303bc725ef47f4b"><td class="memItemLeft" align="right" valign="top">virtual AZStd::any&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#aa0ea83567bd1d7dc8303bc725ef47f4b">GetPropertyValue</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const =0</td></tr>
+<tr class="separator:aa0ea83567bd1d7dc8303bc725ef47f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a714fdbba80b535e8e44b6a01b32b5abb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a714fdbba80b535e8e44b6a01b32b5abb">ClearPropertyValue</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName)=0</td></tr>
+<tr class="separator:a714fdbba80b535e8e44b6a01b32b5abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafae6923400f202e9974dfecd48ee8e1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#aafae6923400f202e9974dfecd48ee8e1">ClearPropertyValues</a> (const MaterialAssignmentId &amp;materialAssignmentId)=0</td></tr>
+<tr class="separator:aafae6923400f202e9974dfecd48ee8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15cb99bc7ea0d067aa920ec50d2f4351"><td class="memItemLeft" align="right" valign="top"><a id="a15cb99bc7ea0d067aa920ec50d2f4351"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a15cb99bc7ea0d067aa920ec50d2f4351">ClearAllPropertyValues</a> ()=0</td></tr>
+<tr class="memdesc:a15cb99bc7ea0d067aa920ec50d2f4351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all property overrides for every material in the material component. <br /></td></tr>
+<tr class="separator:a15cb99bc7ea0d067aa920ec50d2f4351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd55a704b95f4ea4cd2b210b57b58ce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a5bd55a704b95f4ea4cd2b210b57b58ce">SetPropertyValues</a> (const MaterialAssignmentId &amp;materialAssignmentId, const MaterialPropertyOverrideMap &amp;propertyOverrides)=0</td></tr>
+<tr class="separator:a5bd55a704b95f4ea4cd2b210b57b58ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1624afe507d968e55ba45079b9ab9ad"><td class="memItemLeft" align="right" valign="top">virtual MaterialPropertyOverrideMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#ab1624afe507d968e55ba45079b9ab9ad">GetPropertyValues</a> (const MaterialAssignmentId &amp;materialAssignmentId) const =0</td></tr>
+<tr class="separator:ab1624afe507d968e55ba45079b9ab9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa72f1c2e62afc8494482e666bc45a9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#adfa72f1c2e62afc8494482e666bc45a9">SetModelUvOverrides</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZ::RPI::MaterialModelUvOverrideMap &amp;modelUvOverrides)=0</td></tr>
 <tr class="separator:adfa72f1c2e62afc8494482e666bc45a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adda564ff34f50de110c44a1a3e7bb41d"><td class="memItemLeft" align="right" valign="top"><a id="adda564ff34f50de110c44a1a3e7bb41d"></a>
-virtual AZ::RPI::MaterialModelUvOverrideMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#adda564ff34f50de110c44a1a3e7bb41d">GetModelUvOverrides</a> (const MaterialAssignmentId &amp;materialAssignmentId) const =0</td></tr>
-<tr class="memdesc:adda564ff34f50de110c44a1a3e7bb41d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Model UV overrides for a specific material assignment. <br /></td></tr>
+<tr class="memitem:adda564ff34f50de110c44a1a3e7bb41d"><td class="memItemLeft" align="right" valign="top">virtual AZ::RPI::MaterialModelUvOverrideMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#adda564ff34f50de110c44a1a3e7bb41d">GetModelUvOverrides</a> (const MaterialAssignmentId &amp;materialAssignmentId) const =0</td></tr>
 <tr class="separator:adda564ff34f50de110c44a1a3e7bb41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32f0f4347539fe296215ef260b19f39f"><td class="memTemplParams" colspan="2"><a id="a32f0f4347539fe296215ef260b19f39f"></a>
+<tr class="memitem:afb8068832890ea0ca15ce31a5e38af6b"><td class="memTemplParams" colspan="2"><a id="afb8068832890ea0ca15ce31a5e38af6b"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a32f0f4347539fe296215ef260b19f39f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a32f0f4347539fe296215ef260b19f39f">SetPropertyOverrideT</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const T &amp;value)</td></tr>
-<tr class="memdesc:a32f0f4347539fe296215ef260b19f39f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set material property override value with a specific type. <br /></td></tr>
-<tr class="separator:a32f0f4347539fe296215ef260b19f39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80ca0d002ff3cc3b830cfb0caa7d7390"><td class="memTemplParams" colspan="2"><a id="a80ca0d002ff3cc3b830cfb0caa7d7390"></a>
+<tr class="memitem:afb8068832890ea0ca15ce31a5e38af6b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#afb8068832890ea0ca15ce31a5e38af6b">SetPropertyValueT</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName, const T &amp;value)</td></tr>
+<tr class="memdesc:afb8068832890ea0ca15ce31a5e38af6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set material property override value with a specific type. <br /></td></tr>
+<tr class="separator:afb8068832890ea0ca15ce31a5e38af6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4918fae5369532acbe1b80dcc5876d6e"><td class="memTemplParams" colspan="2"><a id="a4918fae5369532acbe1b80dcc5876d6e"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a80ca0d002ff3cc3b830cfb0caa7d7390"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a80ca0d002ff3cc3b830cfb0caa7d7390">GetPropertyOverrideT</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const</td></tr>
-<tr class="memdesc:a80ca0d002ff3cc3b830cfb0caa7d7390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get material property override value with a specific type. <br /></td></tr>
-<tr class="separator:a80ca0d002ff3cc3b830cfb0caa7d7390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4918fae5369532acbe1b80dcc5876d6e"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a4918fae5369532acbe1b80dcc5876d6e">GetPropertyValueT</a> (const MaterialAssignmentId &amp;materialAssignmentId, const AZStd::string &amp;propertyName) const</td></tr>
+<tr class="memdesc:a4918fae5369532acbe1b80dcc5876d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get material property override value with a specific type. <br /></td></tr>
+<tr class="separator:a4918fae5369532acbe1b80dcc5876d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>MaterialComponentRequestBus provides an interface to request operations on a MaterialComponent. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7f15dc0f75b2572d56296af6559913cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f15dc0f75b2572d56296af6559913cb">&#9670;&nbsp;</a></span>ApplyAutomaticPropertyUpdates()</h2>
+<a id="a4d3fba75c22cbf271bbb93b717d75634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d3fba75c22cbf271bbb93b717d75634">&#9670;&nbsp;</a></span>ClearMaterialAssetId()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,7 +160,39 @@ template&lt;typename T &gt; </td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual uint32_t AZ::Render::MaterialComponentRequests::ApplyAutomaticPropertyUpdates </td>
+          <td class="memname">virtual void AZ::Render::MaterialComponentRequests::ClearMaterialAssetId </td>
+          <td>(</td>
+          <td class="paramtype">const MaterialAssignmentId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssignmentId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Removes the material asset associated with the material assignment ID </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialAssignmentId</td><td>ID of material slot. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a25ac1fb2b90e103a48ded7b6eded92b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25ac1fb2b90e103a48ded7b6eded92b9">&#9670;&nbsp;</a></span>ClearMaterialsOnInvalidSlots()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::MaterialComponentRequests::ClearMaterialsOnInvalidSlots </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -208,7 +204,690 @@ template&lt;typename T &gt; </td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Repair material property overrides that reference missing properties by auto-renaming them where possible </p><dl class="section return"><dt>Returns</dt><dd>the number of properties that were updated </dd></dl>
+<p>Clear all material overrides from the material component mapped to material assignment IDs that do not match the current material layout. This is usually used for clearing materials leftover between model changes or moving the material component from one entity to another. </p>
+
+</div>
+</div>
+<a id="a714fdbba80b535e8e44b6a01b32b5abb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a714fdbba80b535e8e44b6a01b32b5abb">&#9670;&nbsp;</a></span>ClearPropertyValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::MaterialComponentRequests::ClearPropertyValue </td>
+          <td>(</td>
+          <td class="paramtype">const MaterialAssignmentId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssignmentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>propertyName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clear any property override associated with the material assignment ID and property name. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialAssignmentId</td><td>ID of material slot. </td></tr>
+    <tr><td class="paramname">propertyName</td><td>Name of the property being cleared. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aafae6923400f202e9974dfecd48ee8e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafae6923400f202e9974dfecd48ee8e1">&#9670;&nbsp;</a></span>ClearPropertyValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::MaterialComponentRequests::ClearPropertyValues </td>
+          <td>(</td>
+          <td class="paramtype">const MaterialAssignmentId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssignmentId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clear all property overrides associated with the material assignment ID. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialAssignmentId</td><td>ID of material slot. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8f64712d352edaff2ca86db1c72df9b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f64712d352edaff2ca86db1c72df9b5">&#9670;&nbsp;</a></span>FindMaterialAssignmentId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual MaterialAssignmentId AZ::Render::MaterialComponentRequests::FindMaterialAssignmentId </td>
+          <td>(</td>
+          <td class="paramtype">const MaterialAssignmentLodIndex&#160;</td>
+          <td class="paramname"><em>lod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>label</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Search for a material assignment ID matching the lod and label parameters </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lod</td><td>Index of the LOD to be searched for the material assignment ID. -1 is used to search the default material and model material slots. </td></tr>
+    <tr><td class="paramname">label</td><td>Substring used to look up a material assignment ID with a matching label. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The corresponding material assignment ID is found, otherwise DefaultMaterialAssignmentId. </dd></dl>
+
+</div>
+</div>
+<a id="a8eb506069df613651b44918805ca2785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eb506069df613651b44918805ca2785">&#9670;&nbsp;</a></span>GetDefaultMaterialAssetId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZ::Data::AssetId AZ::Render::MaterialComponentRequests::GetDefaultMaterialAssetId </td>
+          <td>(</td>
+          <td class="paramtype">const MaterialAssignmentId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssignmentId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the material asset associated with the source model or object prior to overrides being applied. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialAssignmentId</td><td>ID of material assignment slot for which the information is being requested. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Default asset ID associated with the material assignment ID, otherwise an invalid asset ID. </dd></dl>
+
+</div>
+</div>
+<a id="a1a7fcc6a6180a975402f5ff5ca92ff1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a7fcc6a6180a975402f5ff5ca92ff1f">&#9670;&nbsp;</a></span>GetMaterialAssetId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZ::Data::AssetId AZ::Render::MaterialComponentRequests::GetMaterialAssetId </td>
+          <td>(</td>
+          <td class="paramtype">const MaterialAssignmentId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssignmentId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieve the material asset associated with the material assignment ID </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialAssignmentId</td><td>ID of material slot. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The current material asset ID is found, otherwise invalid asset ID . </dd></dl>
+
+</div>
+</div>
+<a id="a38b43dd08ffd9322cc94a3f2e1b3ae59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38b43dd08ffd9322cc94a3f2e1b3ae59">&#9670;&nbsp;</a></span>GetMaterialLabel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::string AZ::Render::MaterialComponentRequests::GetMaterialLabel </td>
+          <td>(</td>
+          <td class="paramtype">const MaterialAssignmentId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssignmentId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the material asset associated with the source model or object prior to overrides being applied. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialAssignmentId</td><td>ID of material assignment slot for which the information is being requested. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>String corresponding to the display name of the material slot. </dd></dl>
+
+</div>
+</div>
+<a id="ad60836655b25034e1a62098b4e2205ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60836655b25034e1a62098b4e2205ca">&#9670;&nbsp;</a></span>GetMaterialMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const MaterialAssignmentMap&amp; AZ::Render::MaterialComponentRequests::GetMaterialMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns all materials and properties used by the material component. </p><dl class="section return"><dt>Returns</dt><dd>Map of material assigned data including materials, property overrides, and other parameters. </dd></dl>
+
+</div>
+</div>
+<a id="adda564ff34f50de110c44a1a3e7bb41d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adda564ff34f50de110c44a1a3e7bb41d">&#9670;&nbsp;</a></span>GetModelUvOverrides()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZ::RPI::MaterialModelUvOverrideMap AZ::Render::MaterialComponentRequests::GetModelUvOverrides </td>
+          <td>(</td>
+          <td class="paramtype">const MaterialAssignmentId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssignmentId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get Model UV overrides for a specific material assignment </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialAssignmentId</td><td>ID of material slot. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Map of remapped UV channels. </dd></dl>
+
+</div>
+</div>
+<a id="aa0ea83567bd1d7dc8303bc725ef47f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0ea83567bd1d7dc8303bc725ef47f4b">&#9670;&nbsp;</a></span>GetPropertyValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::any AZ::Render::MaterialComponentRequests::GetPropertyValue </td>
+          <td>(</td>
+          <td class="paramtype">const MaterialAssignmentId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssignmentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>propertyName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the current value of a material property wrapped by an AZStd::any </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialAssignmentId</td><td>ID of material slot. </td></tr>
+    <tr><td class="paramname">propertyName</td><td>Name of the property being requested. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Value of the property is located, otherwise an empty AZStd::any. </dd></dl>
+
+</div>
+</div>
+<a id="ab1624afe507d968e55ba45079b9ab9ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1624afe507d968e55ba45079b9ab9ad">&#9670;&nbsp;</a></span>GetPropertyValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual MaterialPropertyOverrideMap AZ::Render::MaterialComponentRequests::GetPropertyValues </td>
+          <td>(</td>
+          <td class="paramtype">const MaterialAssignmentId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssignmentId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieves a map of all property values associated with the material assignment ID. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialAssignmentId</td><td>ID of material slot. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Map of all property values. </dd></dl>
+
+</div>
+</div>
+<a id="a0bbc651441197ea1c39baabcdc9bb6b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bbc651441197ea1c39baabcdc9bb6b7">&#9670;&nbsp;</a></span>IsMaterialAssetIdOverridden()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AZ::Render::MaterialComponentRequests::IsMaterialAssetIdOverridden </td>
+          <td>(</td>
+          <td class="paramtype">const MaterialAssignmentId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssignmentId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if the material slot contains an explicit material asset override </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialAssignmentId</td><td>ID of material slot. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if a valid material asset has been assigned. <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="a686b873d554d6c3c04daa121da68a5b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a686b873d554d6c3c04daa121da68a5b5">&#9670;&nbsp;</a></span>RepairMaterialsWithMissingAssets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::MaterialComponentRequests::RepairMaterialsWithMissingAssets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates all material overrides referencing material assets that can't be located to instead point to a default material asset. </p>
+
+</div>
+</div>
+<a id="a2343e1a47aa78f6d0e37545f4a513a43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2343e1a47aa78f6d0e37545f4a513a43">&#9670;&nbsp;</a></span>RepairMaterialsWithRenamedProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint32_t AZ::Render::MaterialComponentRequests::RepairMaterialsWithRenamedProperties </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Remaps material property overrides that have been renamed since they were assigned. </p><dl class="section return"><dt>Returns</dt><dd>the number of properties that were updated </dd></dl>
+
+</div>
+</div>
+<a id="ab7feb4e10988cf61806e9e80fd9c548b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7feb4e10988cf61806e9e80fd9c548b">&#9670;&nbsp;</a></span>SetMaterialAssetId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::MaterialComponentRequests::SetMaterialAssetId </td>
+          <td>(</td>
+          <td class="paramtype">const MaterialAssignmentId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssignmentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Data::AssetId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssetId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Assign a material asset to the slot corresponding to material assignment ID </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialAssignmentId</td><td>ID of material slot that the material will be assigned to. </td></tr>
+    <tr><td class="paramname">materialAssetId</td><td>Material asset that will be assigned to the material slot. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afbd512e06ca9d533119ea7a688416410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbd512e06ca9d533119ea7a688416410">&#9670;&nbsp;</a></span>SetMaterialAssetIdOnDefaultSlot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::MaterialComponentRequests::SetMaterialAssetIdOnDefaultSlot </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Data::AssetId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssetId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convenience function to set the overridden material asset on the default material slot. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialAssetId</td><td>Material asset that will be assigned to the default material slot. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a706a404845e3ccab2b73597f82040d38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a706a404845e3ccab2b73597f82040d38">&#9670;&nbsp;</a></span>SetMaterialMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::MaterialComponentRequests::SetMaterialMap </td>
+          <td>(</td>
+          <td class="paramtype">const MaterialAssignmentMap &amp;&#160;</td>
+          <td class="paramname"><em>materials</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Replaces all material and property overrides with whatever is contained in the provided map. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materials</td><td>Map of material assignment data including materials, property overrides, and other parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adfa72f1c2e62afc8494482e666bc45a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfa72f1c2e62afc8494482e666bc45a9">&#9670;&nbsp;</a></span>SetModelUvOverrides()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::MaterialComponentRequests::SetModelUvOverrides </td>
+          <td>(</td>
+          <td class="paramtype">const MaterialAssignmentId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssignmentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::RPI::MaterialModelUvOverrideMap &amp;&#160;</td>
+          <td class="paramname"><em>modelUvOverrides</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set Model UV overrides for a specific material assignment </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialAssignmentId</td><td>ID of material slot. </td></tr>
+    <tr><td class="paramname">modelUvOverrides</td><td>Map of remapped UV channels. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a94053b0b394d2e33ded2f943c4d91b84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94053b0b394d2e33ded2f943c4d91b84">&#9670;&nbsp;</a></span>SetPropertyValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::MaterialComponentRequests::SetPropertyValue </td>
+          <td>(</td>
+          <td class="paramtype">const MaterialAssignmentId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssignmentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>propertyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::any &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set a material property override value wrapped by an AZStd::any </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialAssignmentId</td><td>ID of material slot. </td></tr>
+    <tr><td class="paramname">propertyName</td><td>Name of the property being assigned. </td></tr>
+    <tr><td class="paramname">value</td><td>Value to be assigned to the specified property. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5bd55a704b95f4ea4cd2b210b57b58ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd55a704b95f4ea4cd2b210b57b58ce">&#9670;&nbsp;</a></span>SetPropertyValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::MaterialComponentRequests::SetPropertyValues </td>
+          <td>(</td>
+          <td class="paramtype">const MaterialAssignmentId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssignmentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const MaterialPropertyOverrideMap &amp;&#160;</td>
+          <td class="paramname"><em>propertyOverrides</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Replaces all property overrides associated with the material assignment ID. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialAssignmentId</td><td>ID of material slot. </td></tr>
+    <tr><td class="paramname">propertyOverrides</td><td>Map of all property values being assigned. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -218,7 +897,7 @@ template&lt;typename T &gt; </td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:33 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:27 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

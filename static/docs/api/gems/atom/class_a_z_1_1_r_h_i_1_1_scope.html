@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -91,6 +91,10 @@ const <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph.html">FrameGraph</
 HardwareQueueClass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_scope.html#ac4c37cd541c3cdc5797754bdc36e1795">GetHardwareQueueClass</a> () const</td></tr>
 <tr class="memdesc:ac4c37cd541c3cdc5797754bdc36e1795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hardware queue class for this scope. <br /></td></tr>
 <tr class="separator:ac4c37cd541c3cdc5797754bdc36e1795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d0aa6fd818628f6f2d8e2daea7db7c"><td class="memItemLeft" align="right" valign="top"><a id="af7d0aa6fd818628f6f2d8e2daea7db7c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_scope.html#af7d0aa6fd818628f6f2d8e2daea7db7c">SetHardwareQueueClass</a> (HardwareQueueClass hardwareQueueClass)</td></tr>
+<tr class="memdesc:af7d0aa6fd818628f6f2d8e2daea7db7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the hardware queue class for this scope. <br /></td></tr>
+<tr class="separator:af7d0aa6fd818628f6f2d8e2daea7db7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ba0ba1002a93e6b785cb7b4ff53323b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_scope.html#a4ba0ba1002a93e6b785cb7b4ff53323b">GetEstimatedItemCount</a> () const</td></tr>
 <tr class="separator:a4ba0ba1002a93e6b785cb7b4ff53323b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90344d494c4eff5d7c316f0b6a353b86"><td class="memItemLeft" align="right" valign="top"><a id="a90344d494c4eff5d7c316f0b6a353b86"></a>
@@ -141,10 +145,10 @@ const AZStd::vector&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.h
 const AZStd::vector&lt; Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_fence.html">Fence</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_scope.html#a596c012c901d67bae0c16b8bf67e7a59">GetFencesToSignal</a> () const</td></tr>
 <tr class="memdesc:a596c012c901d67bae0c16b8bf67e7a59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of fences to signal on completion of the scope. <br /></td></tr>
 <tr class="separator:a596c012c901d67bae0c16b8bf67e7a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ea7ff4560239bffcd95c6a1b071b1ec"><td class="memItemLeft" align="right" valign="top"><a id="a8ea7ff4560239bffcd95c6a1b071b1ec"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_scope.html#a8ea7ff4560239bffcd95c6a1b071b1ec">Init</a> (const ScopeId &amp;scopeId)</td></tr>
-<tr class="memdesc:a8ea7ff4560239bffcd95c6a1b071b1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the scope. <br /></td></tr>
-<tr class="separator:a8ea7ff4560239bffcd95c6a1b071b1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a254d6d3052ea30ab0e237242110c3f1a"><td class="memItemLeft" align="right" valign="top"><a id="a254d6d3052ea30ab0e237242110c3f1a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_scope.html#a254d6d3052ea30ab0e237242110c3f1a">Init</a> (const ScopeId &amp;scopeId, HardwareQueueClass hardwareQueueClass=HardwareQueueClass::Graphics)</td></tr>
+<tr class="memdesc:a254d6d3052ea30ab0e237242110c3f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the scope. <br /></td></tr>
+<tr class="separator:a254d6d3052ea30ab0e237242110c3f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a877c7500e7cb3fe4f9782dc2195ad4c0"><td class="memItemLeft" align="right" valign="top"><a id="a877c7500e7cb3fe4f9782dc2195ad4c0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_scope.html#a877c7500e7cb3fe4f9782dc2195ad4c0">Activate</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph.html">FrameGraph</a> *frameGraph, uint32_t index, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">GraphGroupId</a> &amp;groupId)</td></tr>
 <tr class="memdesc:a877c7500e7cb3fe4f9782dc2195ad4c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the scope for the current frame. <br /></td></tr>
@@ -275,7 +279,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FrameGraphCompiler</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:27 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:21 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

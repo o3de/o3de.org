@@ -8,3 +8,17 @@
 /docs/user-guide/engine/*                           /docs/user-guide/programming/:splat
 /docs/user-guide/components/development/*           /docs/user-guide/programming/components/:splat
 /docs/user-guide/gems/development/*                 /docs/user-guide/programming/gems/:splat
+
+/docs/contributing/to-code/overview                 /docs/contributing/to-code
+/docs/contributing/to-docs/overview                 /docs/contributing/to-docs
+/docs/contributing/to-docs/style-guide/overview     /docs/contributing/to-docs/style-guide
+/docs/user-guide/gems/overview                      /docs/user-guide/gems
+/docs/user-guide/gems/reference/overview            /docs/user-guide/gems/reference
+/docs/user-guide/networking/autopackets             /docs/user-guide/networking/aznetworking/autopackets
+/docs/user-guide/networking/encryption              /docs/user-guide/networking/aznetworking/encryption
+/docs/user-guide/networking/packets                 /docs/user-guide/networking/aznetworking/packets
+/docs/user-guide/networking/serializers             /docs/user-guide/networking/aznetworking/serializers
+
+/docs/user-guide/gems/reference/multiplayer/multiplayer-debug                           /docs/user-guide/networking/multiplayer/debug-desync
+/docs/user-guide/gems/reference/multiplayer/multiplayer-debug/debug/desync-audit-trail  /docs/user-guide/networking/multiplayer/debug-desync
+/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/*                           /docs/user-guide/networking/multiplayer/:splat

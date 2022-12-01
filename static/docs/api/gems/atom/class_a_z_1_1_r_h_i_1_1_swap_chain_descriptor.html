@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -83,21 +83,23 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aff660e5fc6ad35226493fe94d7c8ed73"><td class="memItemLeft" align="right" valign="top"><a id="aff660e5fc6ad35226493fe94d7c8ed73"></a>
-<a class="el" href="struct_a_z_1_1_r_h_i_1_1_swap_chain_dimensions.html">SwapChainDimensions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain_descriptor.html#aff660e5fc6ad35226493fe94d7c8ed73">m_dimensions</a></td></tr>
-<tr class="memdesc:aff660e5fc6ad35226493fe94d7c8ed73"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimensions and format of the swap chain images. <br /></td></tr>
+<a class="el" href="struct_a_z_1_1_r_h_i_1_1_swap_chain_dimensions.html">SwapChainDimensions</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_dimensions</b></td></tr>
 <tr class="separator:aff660e5fc6ad35226493fe94d7c8ed73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02517b7857c54e76d8b78b45d7e01df0"><td class="memItemLeft" align="right" valign="top"><a id="a02517b7857c54e76d8b78b45d7e01df0"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain_descriptor.html#a02517b7857c54e76d8b78b45d7e01df0">m_verticalSyncInterval</a> = 0</td></tr>
-<tr class="memdesc:a02517b7857c54e76d8b78b45d7e01df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">0: disable VSync. &gt;= 1: sync N vertical blanks. <br /></td></tr>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_verticalSyncInterval</b> = 0</td></tr>
 <tr class="separator:a02517b7857c54e76d8b78b45d7e01df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa7dabbf25c4ba303c17b5d2a2a612cd"><td class="memItemLeft" align="right" valign="top"><a id="afa7dabbf25c4ba303c17b5d2a2a612cd"></a>
-<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">WindowHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain_descriptor.html#afa7dabbf25c4ba303c17b5d2a2a612cd">m_window</a></td></tr>
-<tr class="memdesc:afa7dabbf25c4ba303c17b5d2a2a612cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Not Reflected] API dependent handle to the OS window to attach the swap chain. <br /></td></tr>
+<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">WindowHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_window</b></td></tr>
 <tr class="separator:afa7dabbf25c4ba303c17b5d2a2a612cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbd965007a848a0a5f9a162a9904b94f"><td class="memItemLeft" align="right" valign="top"><a id="abbd965007a848a0a5f9a162a9904b94f"></a>
-RHI::AttachmentId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain_descriptor.html#abbd965007a848a0a5f9a162a9904b94f">m_attachmentId</a></td></tr>
-<tr class="memdesc:abbd965007a848a0a5f9a162a9904b94f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID for the <a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html">SwapChain</a>'s attachment. <br /></td></tr>
+RHI::AttachmentId&#160;</td><td class="memItemRight" valign="bottom"><b>m_attachmentId</b></td></tr>
 <tr class="separator:abbd965007a848a0a5f9a162a9904b94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dca00de57970ed6bd7743c59b39d28e"><td class="memItemLeft" align="right" valign="top"><a id="a4dca00de57970ed6bd7743c59b39d28e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isXrSwapChain</b> = false</td></tr>
+<tr class="separator:a4dca00de57970ed6bd7743c59b39d28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d80503530150c726e79cef75d17a50b"><td class="memItemLeft" align="right" valign="top"><a id="a1d80503530150c726e79cef75d17a50b"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_xrSwapChainIndex</b> = 0</td></tr>
+<tr class="separator:a1d80503530150c726e79cef75d17a50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_a_z_1_1_r_h_i_1_1_resource_pool_descriptor"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_a_z_1_1_r_h_i_1_1_resource_pool_descriptor')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool_descriptor.html">AZ::RHI::ResourcePoolDescriptor</a></td></tr>
 <tr class="memitem:a59ae731425f9bdf40e96c2afe4b13fe1 inherit pub_attribs_class_a_z_1_1_r_h_i_1_1_resource_pool_descriptor"><td class="memItemLeft" align="right" valign="top">AZ::u64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool_descriptor.html#a59ae731425f9bdf40e96c2afe4b13fe1">m_budgetInBytes</a> = 0</td></tr>
 <tr class="separator:a59ae731425f9bdf40e96c2afe4b13fe1 inherit pub_attribs_class_a_z_1_1_r_h_i_1_1_resource_pool_descriptor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,7 +110,7 @@ RHI::AttachmentId&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:28 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:21 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

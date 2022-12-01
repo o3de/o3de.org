@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine GradientSignal Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -58,7 +58,7 @@ $(function() {
 
 <p><code>#include &lt;ImageGradientComponent.h&gt;</code></p>
 
-<p>Inherits Component, Handler, Handler, Handler, and Handler.</p>
+<p>Inherits Component, Handler, Handler, Handler, Handler, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -95,6 +95,48 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetMoved</b> (AZ:
 <tr class="memitem:ab303b1fef512ac8ced646dde213e3994"><td class="memItemLeft" align="right" valign="top"><a id="ab303b1fef512ac8ced646dde213e3994"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetReloaded</b> (AZ::Data::Asset&lt; AZ::Data::AssetData &gt; asset) override</td></tr>
 <tr class="separator:ab303b1fef512ac8ced646dde213e3994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b4ea0cdc2da187e582a60741d1d1e9"><td class="memItemLeft" align="right" valign="top"><a id="a15b4ea0cdc2da187e582a60741d1d1e9"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageAssetPath</b> () const override</td></tr>
+<tr class="separator:a15b4ea0cdc2da187e582a60741d1d1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15fa1fdd5c39e46dc9f8e94aad432dee"><td class="memItemLeft" align="right" valign="top"><a id="a15fa1fdd5c39e46dc9f8e94aad432dee"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageAssetSourcePath</b> () const override</td></tr>
+<tr class="separator:a15fa1fdd5c39e46dc9f8e94aad432dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7ae4cc26cc8ded2e31ff562015a30a"><td class="memItemLeft" align="right" valign="top"><a id="acc7ae4cc26cc8ded2e31ff562015a30a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetImageAssetPath</b> (const AZStd::string &amp;assetPath) override</td></tr>
+<tr class="separator:acc7ae4cc26cc8ded2e31ff562015a30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1d578deed5f73d37fe2accaf6a800cc"><td class="memItemLeft" align="right" valign="top"><a id="ae1d578deed5f73d37fe2accaf6a800cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetImageAssetSourcePath</b> (const AZStd::string &amp;assetPath) override</td></tr>
+<tr class="separator:ae1d578deed5f73d37fe2accaf6a800cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9d052800da808e8a8a922c2e0669cce"><td class="memItemLeft" align="right" valign="top"><a id="ad9d052800da808e8a8a922c2e0669cce"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageHeight</b> () const override</td></tr>
+<tr class="separator:ad9d052800da808e8a8a922c2e0669cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ba0c26da01539dac558d310b290770"><td class="memItemLeft" align="right" valign="top"><a id="a76ba0c26da01539dac558d310b290770"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageWidth</b> () const override</td></tr>
+<tr class="separator:a76ba0c26da01539dac558d310b290770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2988e08dbacd3343691861c8bc588f98"><td class="memItemLeft" align="right" valign="top"><a id="a2988e08dbacd3343691861c8bc588f98"></a>
+AZ::Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>GetImagePixelsPerMeter</b> () const override</td></tr>
+<tr class="separator:a2988e08dbacd3343691861c8bc588f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec23bf6418473157f28c20859b4b09c4"><td class="memItemLeft" align="right" valign="top"><a id="aec23bf6418473157f28c20859b4b09c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartImageModification</b> () override</td></tr>
+<tr class="separator:aec23bf6418473157f28c20859b4b09c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a92c1a144e7bfd9225494a78a4974f"><td class="memItemLeft" align="right" valign="top"><a id="a92a92c1a144e7bfd9225494a78a4974f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EndImageModification</b> () override</td></tr>
+<tr class="separator:a92a92c1a144e7bfd9225494a78a4974f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b9502cbb93352661f7a4229745da6d"><td class="memItemLeft" align="right" valign="top"><a id="a61b9502cbb93352661f7a4229745da6d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetValue</b> (const AZ::Vector3 &amp;position, float value) override</td></tr>
+<tr class="separator:a61b9502cbb93352661f7a4229745da6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72669525c90b19e9e3896b4cb62ac72"><td class="memItemLeft" align="right" valign="top"><a id="aa72669525c90b19e9e3896b4cb62ac72"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetValues</b> (AZStd::span&lt; const AZ::Vector3 &gt; positions, AZStd::span&lt; const float &gt; values) override</td></tr>
+<tr class="separator:aa72669525c90b19e9e3896b4cb62ac72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78b5147754469aef81531705acc4f6ec"><td class="memItemLeft" align="right" valign="top"><a id="a78b5147754469aef81531705acc4f6ec"></a>
+AZStd::vector&lt; float &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageModificationBuffer</b> ()</td></tr>
+<tr class="separator:a78b5147754469aef81531705acc4f6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58011c6e76ee8802673bb0ffd14f53c2"><td class="memItemLeft" align="right" valign="top"><a id="a58011c6e76ee8802673bb0ffd14f53c2"></a>
+AZ::Data::Asset&lt; AZ::RPI::StreamingImageAsset &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageAsset</b> () const</td></tr>
+<tr class="separator:a58011c6e76ee8802673bb0ffd14f53c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a241a0af7b6b8e704e8ef5da897638727"><td class="memItemLeft" align="right" valign="top"><a id="a241a0af7b6b8e704e8ef5da897638727"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetImageAsset</b> (const AZ::Data::Asset&lt; AZ::RPI::StreamingImageAsset &gt; &amp;asset)</td></tr>
+<tr class="separator:a241a0af7b6b8e704e8ef5da897638727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -107,6 +149,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 <tr class="memitem:a13524f8242ee93487ebdbccc9f48dd63"><td class="memItemLeft" align="right" valign="top"><a id="a13524f8242ee93487ebdbccc9f48dd63"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;services)</td></tr>
 <tr class="separator:a13524f8242ee93487ebdbccc9f48dd63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5364d4f855549f2029c2bf734cc56510"><td class="memItemLeft" align="right" valign="top"><a id="a5364d4f855549f2029c2bf734cc56510"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependentServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;services)</td></tr>
+<tr class="separator:a5364d4f855549f2029c2bf734cc56510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1bffccee9bb09939d59fad0d684f34b"><td class="memItemLeft" align="right" valign="top"><a id="ab1bffccee9bb09939d59fad0d684f34b"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:ab1bffccee9bb09939d59fad0d684f34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,15 +164,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnGradientTransformCh
 <tr class="memitem:a6c767b6409ccc06331d15454fc6d7e0e"><td class="memItemLeft" align="right" valign="top"><a id="a6c767b6409ccc06331d15454fc6d7e0e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupDependencies</b> ()</td></tr>
 <tr class="separator:a6c767b6409ccc06331d15454fc6d7e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12aea2f7e4dd3ab9bcb372d4497b7528"><td class="memItemLeft" align="right" valign="top"><a id="a12aea2f7e4dd3ab9bcb372d4497b7528"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateImageModificationBuffer</b> ()</td></tr>
+<tr class="separator:a12aea2f7e4dd3ab9bcb372d4497b7528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e69bf4c402c29f4f99f425d1c6862b"><td class="memItemLeft" align="right" valign="top"><a id="ac0e69bf4c402c29f4f99f425d1c6862b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearImageModificationBuffer</b> ()</td></tr>
+<tr class="separator:ac0e69bf4c402c29f4f99f425d1c6862b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2189e4854b51ac06b602bfbb6ad1a32"><td class="memItemLeft" align="right" valign="top"><a id="ab2189e4854b51ac06b602bfbb6ad1a32"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ModificationBufferIsActive</b> () const</td></tr>
+<tr class="separator:ab2189e4854b51ac06b602bfbb6ad1a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08e4063d2678bdf4ebb88accc5dc71c"><td class="memItemLeft" align="right" valign="top"><a id="ae08e4063d2678bdf4ebb88accc5dc71c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateCachedImageBufferData</b> (const AZ::RHI::ImageDescriptor &amp;imageDescriptor, AZStd::span&lt; const uint8_t &gt; imageData)</td></tr>
+<tr class="separator:ae08e4063d2678bdf4ebb88accc5dc71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c881e0d417169a68d6710ed38a0736f"><td class="memItemLeft" align="right" valign="top"><a id="a1c881e0d417169a68d6710ed38a0736f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubImageData</b> ()</td></tr>
 <tr class="separator:a1c881e0d417169a68d6710ed38a0736f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab42cd029e67997f53b9c82b85bf48aae"><td class="memItemLeft" align="right" valign="top"><a id="ab42cd029e67997f53b9c82b85bf48aae"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>GetValueFromImageData</b> (const AZ::Vector3 &amp;uvw, float defaultValue) const</td></tr>
 <tr class="separator:ab42cd029e67997f53b9c82b85bf48aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46f6f27b2bd5ad369d83403a8180012f"><td class="memItemLeft" align="right" valign="top"><a id="a46f6f27b2bd5ad369d83403a8180012f"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetTerrariumPixelValue</b> (AZ::u32 x, AZ::u32 y, AZStd::span&lt; const uint8_t &gt; imageData) const</td></tr>
-<tr class="separator:a46f6f27b2bd5ad369d83403a8180012f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6e2197c4a4ec2f892eb8b7c41f153e"><td class="memItemLeft" align="right" valign="top"><a id="a8c6e2197c4a4ec2f892eb8b7c41f153e"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetPixelValue</b> (AZ::u32 x, AZ::u32 y) const</td></tr>
+<tr class="separator:a8c6e2197c4a4ec2f892eb8b7c41f153e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0016f4b7e3e5e1d888336011654a58"><td class="memItemLeft" align="right" valign="top"><a id="ade0016f4b7e3e5e1d888336011654a58"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetTerrariumPixelValue</b> (AZ::u32 x, AZ::u32 y) const</td></tr>
+<tr class="separator:ade0016f4b7e3e5e1d888336011654a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0238f7e7a83519687210d0ee2f2a551"><td class="memItemLeft" align="right" valign="top"><a id="ac0238f7e7a83519687210d0ee2f2a551"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupMultiplierAndOffset</b> (float min, float max)</td></tr>
 <tr class="separator:ac0238f7e7a83519687210d0ee2f2a551"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,12 +200,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupAutoScaleMultipl
 <tr class="memitem:a956d1fc5da4cae86983f32d57f858f28"><td class="memItemLeft" align="right" valign="top"><a id="a956d1fc5da4cae86983f32d57f858f28"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupManualScaleMultiplierAndOffset</b> ()</td></tr>
 <tr class="separator:a956d1fc5da4cae86983f32d57f858f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15b4ea0cdc2da187e582a60741d1d1e9"><td class="memItemLeft" align="right" valign="top"><a id="a15b4ea0cdc2da187e582a60741d1d1e9"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageAssetPath</b> () const override</td></tr>
-<tr class="separator:a15b4ea0cdc2da187e582a60741d1d1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc7ae4cc26cc8ded2e31ff562015a30a"><td class="memItemLeft" align="right" valign="top"><a id="acc7ae4cc26cc8ded2e31ff562015a30a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetImageAssetPath</b> (const AZStd::string &amp;assetPath) override</td></tr>
-<tr class="separator:acc7ae4cc26cc8ded2e31ff562015a30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa81498e47052383d7136ca06cbfbc64d"><td class="memItemLeft" align="right" valign="top"><a id="aa81498e47052383d7136ca06cbfbc64d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetValueForSamplingType</b> (AZ::u32 x0, AZ::u32 y0, float pixelX, float pixelY) const</td></tr>
+<tr class="separator:aa81498e47052383d7136ca06cbfbc64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a094f2c6e6c7b165f89ac4671564ecd01"><td class="memItemLeft" align="right" valign="top"><a id="a094f2c6e6c7b165f89ac4671564ecd01"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>GetTilingX</b> () const override</td></tr>
 <tr class="separator:a094f2c6e6c7b165f89ac4671564ecd01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,10 +218,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTilingY</b> (float
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a8651d636606ce59e62700bd4eadda534"><td class="memTemplParams" colspan="2"><a id="a8651d636606ce59e62700bd4eadda534"></a>
-template&lt;typename , typename &gt; </td></tr>
-<tr class="memitem:a8651d636606ce59e62700bd4eadda534"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>LmbrCentral::EditorWrappedComponentBase</b></td></tr>
-<tr class="separator:a8651d636606ce59e62700bd4eadda534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0789ec1e26487d1e0129751ac5164cb3"><td class="memItemLeft" align="right" valign="top"><a id="a0789ec1e26487d1e0129751ac5164cb3"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>EditorImageGradientComponent</b></td></tr>
+<tr class="separator:a0789ec1e26487d1e0129751ac5164cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>calculates a gradient value based on image data </p>
@@ -174,7 +230,7 @@ template&lt;typename , typename &gt; </td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:47 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:56 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

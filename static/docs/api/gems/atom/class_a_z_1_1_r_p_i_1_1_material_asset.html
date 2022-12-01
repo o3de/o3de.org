@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -94,8 +94,14 @@ const <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_collection.html">Shader
 const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_properties_layout.html">MaterialPropertiesLayout</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#ae82d5c89ff3c19e94feda77d53a1e546">GetMaterialPropertiesLayout</a> () const</td></tr>
 <tr class="memdesc:ae82d5c89ff3c19e94feda77d53a1e546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a layout that includes a list of MaterialPropertyDescriptors for each material property. <br /></td></tr>
 <tr class="separator:ae82d5c89ff3c19e94feda77d53a1e546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3274db988996a365df5ab30b876e7d17"><td class="memItemLeft" align="right" valign="top">AZStd::array_view&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#a3274db988996a365df5ab30b876e7d17">GetPropertyValues</a> () const</td></tr>
-<tr class="separator:a3274db988996a365df5ab30b876e7d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23bbbeb882445261499f85d708680dc9"><td class="memItemLeft" align="right" valign="top">const AZStd::vector&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#a23bbbeb882445261499f85d708680dc9">GetPropertyValues</a> ()</td></tr>
+<tr class="separator:a23bbbeb882445261499f85d708680dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97827038d658366be682570ebe666950"><td class="memItemLeft" align="right" valign="top"><a id="a97827038d658366be682570ebe666950"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#a97827038d658366be682570ebe666950">WasPreFinalized</a> () const</td></tr>
+<tr class="memdesc:a97827038d658366be682570ebe666950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if material was created in a finalize state, as opposed to being finalized after loading from disk. <br /></td></tr>
+<tr class="separator:a97827038d658366be682570ebe666950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed7ad99902f5ee4436da6e9c5c230e54"><td class="memItemLeft" align="right" valign="top">const AZStd::vector&lt; AZStd::pair&lt; Name, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#aed7ad99902f5ee4436da6e9c5c230e54">GetRawPropertyValues</a> () const</td></tr>
+<tr class="separator:aed7ad99902f5ee4436da6e9c5c230e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -114,25 +120,24 @@ static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>Group<
 <tr class="memitem:a9d8396e9aa60219d03246bcef33e57f8"><td class="memItemLeft" align="right" valign="top"><a id="a9d8396e9aa60219d03246bcef33e57f8"></a>
 static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>Extension</b></td></tr>
 <tr class="separator:a9d8396e9aa60219d03246bcef33e57f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47a058c7c4b5c2c5a1f4908fdb1b5c74"><td class="memItemLeft" align="right" valign="top"><a id="a47a058c7c4b5c2c5a1f4908fdb1b5c74"></a>
+static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>UnspecifiedMaterialTypeVersion</b> = static_cast&lt;uint32_t&gt;(-1)</td></tr>
+<tr class="separator:a47a058c7c4b5c2c5a1f4908fdb1b5c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a06f56261afbbe413925d6bbe1818deeb"><td class="memItemLeft" align="right" valign="top"><a id="a06f56261afbbe413925d6bbe1818deeb"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialVersionUpdate</b></td></tr>
-<tr class="separator:a06f56261afbbe413925d6bbe1818deeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113f9996eab079a426655acbefc6ee66"><td class="memItemLeft" align="right" valign="top"><a id="a113f9996eab079a426655acbefc6ee66"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialVersionUpdates</b></td></tr>
+<tr class="separator:a113f9996eab079a426655acbefc6ee66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89569fe8b51cea43e2eab52cb517ab93"><td class="memItemLeft" align="right" valign="top"><a id="a89569fe8b51cea43e2eab52cb517ab93"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialAssetCreator</b></td></tr>
 <tr class="separator:a89569fe8b51cea43e2eab52cb517ab93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaad18b3955ce0d21d59c2e8e2a81089"><td class="memItemLeft" align="right" valign="top"><a id="abaad18b3955ce0d21d59c2e8e2a81089"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialAssetHandler</b></td></tr>
 <tr class="separator:abaad18b3955ce0d21d59c2e8e2a81089"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae295e93de799fdc859760eb3226a92d9"><td class="memItemLeft" align="right" valign="top"><a id="ae295e93de799fdc859760eb3226a92d9"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialAssetCreatorCommon</b></td></tr>
-<tr class="separator:ae295e93de799fdc859760eb3226a92d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> defines a single material, which can be used to create a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> instance for rendering at runtime. It fetches <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html" title="This is a simple data structure for serializing in/out material type source files.">MaterialTypeSourceData</a> from the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a> it owned.</p>
-<p>Use a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset_creator.html">MaterialAssetCreator</a> to create a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a>. </p>
+<div class="textblock"><p><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> defines a single material, which can be used to create a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> instance for rendering at runtime. Use a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset_creator.html">MaterialAssetCreator</a> to create a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4ad2fcc56da85b96e1651c0fdf12286c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ad2fcc56da85b96e1651c0fdf12286c">&#9670;&nbsp;</a></span>GetMaterialFunctors()</h2>
@@ -274,22 +279,42 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialAssetCreator
 
 </div>
 </div>
-<a id="a3274db988996a365df5ab30b876e7d17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3274db988996a365df5ab30b876e7d17">&#9670;&nbsp;</a></span>GetPropertyValues()</h2>
+<a id="a23bbbeb882445261499f85d708680dc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23bbbeb882445261499f85d708680dc9">&#9670;&nbsp;</a></span>GetPropertyValues()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">AZStd::array_view&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a>&gt; AZ::RPI::MaterialAsset::GetPropertyValues </td>
+          <td class="memname">const AZStd::vector&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a>&gt;&amp; AZ::RPI::MaterialAsset::GetPropertyValues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the list of values for all properties in this material. The entries in this list align with the entries in the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_properties_layout.html" title="Provides a set of MaterialPropertyDescriptors which define the topology for a material.">MaterialPropertiesLayout</a>. Each AZStd::any is guaranteed to have a value of type that matches the corresponding <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_descriptor.html">MaterialPropertyDescriptor</a>. For images, the value will be of type ImageBinding.</p>
+<p>Note that even though material source data files contain only override values and inherit the rest from their parent material, they all get flattened at build time so every <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> has the full set of values.</p>
+<p>Calling <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#a23bbbeb882445261499f85d708680dc9">GetPropertyValues()</a> will automatically finalize the material asset if it isn't finalized already. The <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a> must be loaded and ready. </p>
+
+</div>
+</div>
+<a id="aed7ad99902f5ee4436da6e9c5c230e54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed7ad99902f5ee4436da6e9c5c230e54">&#9670;&nbsp;</a></span>GetRawPropertyValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const AZStd::vector&lt;AZStd::pair&lt;Name, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a>&gt; &gt;&amp; AZ::RPI::MaterialAsset::GetRawPropertyValues </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the list of values for all properties in this material. The entries in this list align with the entries in the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_properties_layout.html" title="Provides a set of MaterialPropertyDescriptors which define the topology for a material.">MaterialPropertiesLayout</a>. Each AZStd::any is guaranteed to have a value of type that matches the corresponding <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_descriptor.html">MaterialPropertyDescriptor</a>. For images, the value will be of type ImageBinding.</p>
-<p>Note that even though material source data files contain only override values and inherit the rest from their parent material, they all get flattened at build time so every <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> has the full set of values. </p>
+<p>Returns the list of raw values for all properties in this material, as listed in the source .material file(s), before the material asset was Finalized.</p>
+<p>The <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> can be created in a "half-baked" state (see MaterialUtils::BuildersShouldFinalizeMaterialAssets) where minimal processing has been done because it did not yet have access to the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a>. In that case, the list will be populated with values copied from the source .material file with little or no validation or other processing. It includes all parent .material files, with properties listed in low-to-high priority order. This list will be empty however if the asset was finalized at build-time (i.e. <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html#a97827038d658366be682570ebe666950" title="Returns true if material was created in a finalize state, as opposed to being finalized after loading...">WasPreFinalized()</a> returns true). </p>
 
 </div>
 </div>
@@ -299,7 +324,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialAssetCreator
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:28 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

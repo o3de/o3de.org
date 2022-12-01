@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -58,26 +58,31 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ace848937f39c6615e468508a9cfb9cf5"><td class="memItemLeft" align="right" valign="top"><a id="ace848937f39c6615e468508a9cfb9cf5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialPropertyId</b> (AZStd::string_view propertyName)</td></tr>
+<tr class="separator:ace848937f39c6615e468508a9cfb9cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26181698901f7d84251ebfcefc13d35c"><td class="memItemLeft" align="right" valign="top"><a id="a26181698901f7d84251ebfcefc13d35c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MaterialPropertyId</b> (AZStd::string_view groupName, AZStd::string_view propertyName)</td></tr>
 <tr class="separator:a26181698901f7d84251ebfcefc13d35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5295f2eebeb0dac3a6fbe8c39c61b551"><td class="memItemLeft" align="right" valign="top"><a id="a5295f2eebeb0dac3a6fbe8c39c61b551"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MaterialPropertyId</b> (const Name &amp;groupName, const Name &amp;propertyName)</td></tr>
 <tr class="separator:a5295f2eebeb0dac3a6fbe8c39c61b551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c6dc3b2b2cf6d0ec54e98e52fdd934b"><td class="memItemLeft" align="right" valign="top"><a id="a2c6dc3b2b2cf6d0ec54e98e52fdd934b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialPropertyId</b> (const AZStd::span&lt; AZStd::string &gt; names)</td></tr>
+<tr class="separator:a2c6dc3b2b2cf6d0ec54e98e52fdd934b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c81d29d71658a5f3289d89fc9f5ef5e"><td class="memItemLeft" align="right" valign="top"><a id="a9c81d29d71658a5f3289d89fc9f5ef5e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialPropertyId</b> (const AZStd::span&lt; AZStd::string &gt; groupNames, AZStd::string_view propertyName)</td></tr>
+<tr class="separator:a9c81d29d71658a5f3289d89fc9f5ef5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac818b7632467e744933d68826da94c0f"><td class="memItemLeft" align="right" valign="top"><a id="ac818b7632467e744933d68826da94c0f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DEFAULT_COPY_MOVE</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html">MaterialPropertyId</a>)</td></tr>
 <tr class="separator:ac818b7632467e744933d68826da94c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2db9da7ef1bda7018dc719f94ee07516"><td class="memItemLeft" align="right" valign="top"><a id="a2db9da7ef1bda7018dc719f94ee07516"></a>
-const Name &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGroupName</b> () const</td></tr>
-<tr class="separator:a2db9da7ef1bda7018dc719f94ee07516"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac64cb36711afc0aad81f5f70122cd36d"><td class="memItemLeft" align="right" valign="top"><a id="ac64cb36711afc0aad81f5f70122cd36d"></a>
-const Name &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPropertyName</b> () const</td></tr>
-<tr class="separator:ac64cb36711afc0aad81f5f70122cd36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1939a4651a9dfc49d6aa8c1001dbe9ef"><td class="memItemLeft" align="right" valign="top"><a id="a1939a4651a9dfc49d6aa8c1001dbe9ef"></a>
-const Name &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFullName</b> () const</td></tr>
-<tr class="separator:a1939a4651a9dfc49d6aa8c1001dbe9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82109deff20565296c0fb1d12ed572d7"><td class="memItemLeft" align="right" valign="top"><a id="a82109deff20565296c0fb1d12ed572d7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>operator const Name &amp;</b> () const</td></tr>
+<tr class="separator:a82109deff20565296c0fb1d12ed572d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb1a6d4069bda881f2e9d776ff95b91a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html#acb1a6d4069bda881f2e9d776ff95b91a">GetCStr</a> () const</td></tr>
 <tr class="separator:acb1a6d4069bda881f2e9d776ff95b91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48433dd13ae7dbb7121874a7f7c7b3ca"><td class="memItemLeft" align="right" valign="top">AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html#a48433dd13ae7dbb7121874a7f7c7b3ca">GetStringView</a> () const</td></tr>
+<tr class="separator:a48433dd13ae7dbb7121874a7f7c7b3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46ff581f3864e2a36ac323127c462825"><td class="memItemLeft" align="right" valign="top"><a id="a46ff581f3864e2a36ac323127c462825"></a>
 Name::Hash&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html#a46ff581f3864e2a36ac323127c462825">GetHash</a> () const</td></tr>
 <tr class="memdesc:a46ff581f3864e2a36ac323127c462825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a hash of the full name. This is needed for compatibility with NameIdReflectionMap. <br /></td></tr>
@@ -95,18 +100,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> () const<
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a636b88652a36f970fe9792d25b6ff518"><td class="memItemLeft" align="right" valign="top"><a id="a636b88652a36f970fe9792d25b6ff518"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValidName</b> (AZStd::string_view name)</td></tr>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html#a636b88652a36f970fe9792d25b6ff518">IsValidName</a> (AZStd::string_view name)</td></tr>
+<tr class="memdesc:a636b88652a36f970fe9792d25b6ff518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the name is a valid C-style identifier. <br /></td></tr>
 <tr class="separator:a636b88652a36f970fe9792d25b6ff518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a266502867dd3311c625fb5beb4d19115"><td class="memItemLeft" align="right" valign="top"><a id="a266502867dd3311c625fb5beb4d19115"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValidName</b> (const AZ::Name &amp;name)</td></tr>
 <tr class="separator:a266502867dd3311c625fb5beb4d19115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d168d7206c7fdada3719762e6a3b196"><td class="memItemLeft" align="right" valign="top"><a id="a5d168d7206c7fdada3719762e6a3b196"></a>
-static <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html">MaterialPropertyId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html#a5d168d7206c7fdada3719762e6a3b196">Parse</a> (AZStd::string_view fullPropertyId)</td></tr>
-<tr class="memdesc:a5d168d7206c7fdada3719762e6a3b196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html">MaterialPropertyId</a> from a full name string like "[groupName].[propertyName]" or just "[propertyName]". <br /></td></tr>
+<tr class="memitem:a0d33176bfce346fcd2060f8ea7945237"><td class="memItemLeft" align="right" valign="top"><a id="a0d33176bfce346fcd2060f8ea7945237"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html#a0d33176bfce346fcd2060f8ea7945237">CheckIsValidName</a> (AZStd::string_view name)</td></tr>
+<tr class="memdesc:a0d33176bfce346fcd2060f8ea7945237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the name is a valid C-style identifier, and reports errors if it is not. <br /></td></tr>
+<tr class="separator:a0d33176bfce346fcd2060f8ea7945237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe332e86ae39d94d8b53416543ff771"><td class="memItemLeft" align="right" valign="top"><a id="a1fe332e86ae39d94d8b53416543ff771"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>CheckIsValidName</b> (const AZ::Name &amp;name)</td></tr>
+<tr class="separator:a1fe332e86ae39d94d8b53416543ff771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d168d7206c7fdada3719762e6a3b196"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html">MaterialPropertyId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html#a5d168d7206c7fdada3719762e6a3b196">Parse</a> (AZStd::string_view fullPropertyId)</td></tr>
 <tr class="separator:a5d168d7206c7fdada3719762e6a3b196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Utility for building material property names consisting of a group name and a property sub-name. Represented as "[groupName].[propertyName]". The group name is optional, in which case the ID will just be "[propertyName]". </p>
+<div class="textblock"><p>Utility for building material property IDs. These IDs are represented like "groupA.groupB.[...].propertyName". The groups are optional, in which case the full property ID will just be like "propertyName". </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="acb1a6d4069bda881f2e9d776ff95b91a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acb1a6d4069bda881f2e9d776ff95b91a">&#9670;&nbsp;</a></span>GetCStr()</h2>
@@ -122,7 +133,52 @@ static <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html">Ma
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns a pointer to the full name ("[groupName].[propertyName]"). This is included for convenience so it can be used for error messages in the same way an AZ::Name is used. </p>
+<p>Returns a pointer to the full name ("[groupName].[propertyName]"). Same as Name::GetCStr() This is included for convenience so it can be used for error messages in the same way an AZ::Name is used. </p>
+
+</div>
+</div>
+<a id="a48433dd13ae7dbb7121874a7f7c7b3ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48433dd13ae7dbb7121874a7f7c7b3ca">&#9670;&nbsp;</a></span>GetStringView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::string_view AZ::RPI::MaterialPropertyId::GetStringView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a string_view of the full name ("[groupName].[propertyName]"). Same as Name::GetStringView() This is included for convenience so it can be used for string comparison in the same way an AZ::Name is used. </p>
+
+</div>
+</div>
+<a id="a5d168d7206c7fdada3719762e6a3b196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d168d7206c7fdada3719762e6a3b196">&#9670;&nbsp;</a></span>Parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html">MaterialPropertyId</a> AZ::RPI::MaterialPropertyId::Parse </td>
+          <td>(</td>
+          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramname"><em>fullPropertyId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html">MaterialPropertyId</a> from a full name string like "groupA.groupB.[...].propertyName" or just "propertyName". Also checks the name for validity. </p>
 
 </div>
 </div>
@@ -132,7 +188,7 @@ static <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_id.html">Ma
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:29 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

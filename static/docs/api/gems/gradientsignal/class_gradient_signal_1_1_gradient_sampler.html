@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine GradientSignal Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -66,9 +66,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afb605cce6333ce8e2a3e8b6ba5c6043b"><td class="memItemLeft" align="right" valign="top"><a id="afb605cce6333ce8e2a3e8b6ba5c6043b"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>GetValue</b> (const <a class="el" href="struct_gradient_signal_1_1_gradient_sample_params.html">GradientSampleParams</a> &amp;sampleParams) const</td></tr>
 <tr class="separator:afb605cce6333ce8e2a3e8b6ba5c6043b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f4fb2de924c51594d5c2f3a93bd022"><td class="memItemLeft" align="right" valign="top"><a id="a21f4fb2de924c51594d5c2f3a93bd022"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetValues</b> (AZStd::span&lt; const AZ::Vector3 &gt; positions, AZStd::span&lt; float &gt; outValues) const</td></tr>
+<tr class="separator:a21f4fb2de924c51594d5c2f3a93bd022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19517ce2d6282d74608b78ebe4401ba2"><td class="memItemLeft" align="right" valign="top"><a id="a19517ce2d6282d74608b78ebe4401ba2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEntityInHierarchy</b> (const AZ::EntityId &amp;entityId) const</td></tr>
 <tr class="separator:a19517ce2d6282d74608b78ebe4401ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a0fe276748b7a3efe18636c9857853d"><td class="memItemLeft" align="right" valign="top"><a id="a9a0fe276748b7a3efe18636c9857853d"></a>
+AZ::Aabb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gradient_signal_1_1_gradient_sampler.html#a9a0fe276748b7a3efe18636c9857853d">TransformDirtyRegion</a> (const AZ::Aabb &amp;dirtyRegion) const</td></tr>
+<tr class="memdesc:a9a0fe276748b7a3efe18636c9857853d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a dirty region for a gradient, transform the dirty region in world space based on the gradient transform settings. <br /></td></tr>
+<tr class="separator:a9a0fe276748b7a3efe18636c9857853d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae76bf1299a4bbfd1b08813c11e292cee"><td class="memItemLeft" align="right" valign="top"><a id="ae76bf1299a4bbfd1b08813c11e292cee"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateGradientEntityId</b> ()</td></tr>
 <tr class="separator:ae76bf1299a4bbfd1b08813c11e292cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,7 +138,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_outputMax</b> = 1.
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:44 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:56 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
