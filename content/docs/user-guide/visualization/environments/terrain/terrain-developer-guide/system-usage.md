@@ -35,28 +35,21 @@ The grid spacing is controlled by the `Height Query Resolution` and `Surface Dat
 
 However, the terrain system itself can be queried at any position, not just on the conceptual grids. The `Sampler` type controls exactly _how_ to query the underlying data in relation to these grids.
 
-The `Default` / `Bilinear` Sampler setting uses the query resolution to sample the four grid corners that surround the requested position, and then it performs bilinear filtering to create the resulting output value. For example, in the illustration below, the underlying height data has different values at every 0.25 meter interval. The chart below it shows what happens when querying this data at position 0.75 with different Height Query Resolution settings.
+The `Default` / `Bilinear` Sampler setting uses the query resolution to sample the four grid corners that surround the requested position, and then it performs bilinear filtering to create the resulting output value.
 
-```goat
-40  o                           o
-30  |                           |
-20  |      o      o             |
-10  |      |      |      o      |
-0   +------+------+------+------+
-   0.00   0.25   0.50   0.75   1.00
-```
+The `Bilinear` Sampler setting should be used by most systems when querying. However, there are two other sampling methods that are available for specialized use.
 
-| Height Query Resolution | Result | Description |
-| - | - | - |
-| 1.0 meters | 40 | Querying at 0.75 fetches the underlying data at 0.00 (40) and 1.00 (40) and interpolate at 75%. |
-| 0.5 meters | 30 | Querying at 0.75 fetches the underlying data at 0.50 (20) and 1.00 (40) and interpolate at 50%. |
-| 0.25 meters | 10 | Querying at 0.75 fetches the underlying data at 0.75 (10) and 1.00 (40) and interpolate at 0%. |
+The `Clamp` Sampler setting takes the requested query position and clamps it to the terrain grid before requesting the value. Unlike the `Bilinear` sampler, which returns an infinite range of interpolated values for every position between the grid points, the `Clamp` sampler always returns the same value for every position between the grid points. Because this only fetches a single grid point, and not the four grid corners, it runs up to 4x faster than the `Bilinear` sampler. However, the values returned will only match the rendering and physics representations when queried directly on the grid points. For that reason, this setting should only be used when querying directly on terrain grid points.
 
-The `Default` Sampler setting should be used by most systems when querying. However, there are two other sampling methods that are available for specialized use.
+The `Exact` Sampler setting takes the requested query position and passes it directly down to the underlying data source, ignoring the terrain grids entirely. Similar to `Clamp`, this is 4x faster than `Bilinear`, but only produces matching values when it's queried directly on the grid points. You should not use it to query positions outside of the grid points, since the data may not align with the rendering or physics representations. However, the feature is available for those who want it.
 
-The `Clamp` Sampler setting will take the requested query position and 'clamp' it down to the terrain grid before requesting the value. Where the `Bilinear` sampler produces an infinite range of interpolated values for all the positions between grid points, the `Clamp` sampler will always produce the same value for every position between grid points. Because this only fetches one data value, not four, it can run up to 4x faster than the `Default` sampler, but the values returned will only match the rendering and physics representations when queried directly on the grid points. For that reason, this setting should only be used when querying directly on terrain grid points.
+The following chart demonstrates the differences between the samplers. The circles represent the underlying data source values, which in this example has different values every 0.25 meters. The squares are the terrain grid at different Height Query Resolution settings. The solid black circle is the position we are querying for the height. The blue circles are the data source values used to compute the result.
 
-The `Exact` Sampler setting takes the requested query position and passes it directly down to the underlying data source, ignoring the terrain grids entirely. Similar to `Clamp`, this is 4x faster than `Default`, but only produces matching values when it's queried directly on the grid points. You should not use it to query positions outside of the grid points, since the data may not align with the rendering or physics representations. However, the feature is available for those who want it.
+| Sampling Type | Description | Height Query Resolution 1.0 m | Height Query Resolution 0.5 m | Height Query Resolution 0.25 m |
+| - | - | - | - | - |
+| `Bilinear` | The height query for (0.75, 0.75) gathers the heights from points A, B, C, and D and interpolates them to calculate the final result. | {{< image-width src="/images/user-guide/visualization/environments/terrain/bilinear-1.0m.svg" width="400" alt="Bilinear sampling at 1.0 meters." >}} | {{< image-width src="/images/user-guide/visualization/environments/terrain/bilinear-0.5m.svg" width="400" alt="Bilinear sampling at 0.5 meters." >}} | {{< image-width src="/images/user-guide/visualization/environments/terrain/bilinear-0.25m.svg" width="400" alt="Bilinear sampling at 0.25 meters." >}} |
+| `Clamp` | The height query for (0.75, 0.75) returns the height from point A, which is the terrain grid point that the query position is rounded down to. | {{< image-width src="/images/user-guide/visualization/environments/terrain/clamp-1.0m.svg" width="400" alt="Clamp sampling at 1.0 meters." >}} | {{< image-width src="/images/user-guide/visualization/environments/terrain/clamp-0.5m.svg" width="400" alt="Clamp sampling at 0.5 meters." >}} | {{< image-width src="/images/user-guide/visualization/environments/terrain/clamp-0.25m.svg" width="400" alt="Clamp sampling at 0.25 meters." >}} |
+| `Exact` | The height query for (0.75, 0.75) returns the height from point A, which is always the value from the underlying data source at that location, regardless of the terrain grid size. | {{< image-width src="/images/user-guide/visualization/environments/terrain/exact-1.0m.svg" width="400" alt="Exact sampling at 1.0 meters." >}} | {{< image-width src="/images/user-guide/visualization/environments/terrain/exact-0.5m.svg" width="400" alt="Exact sampling at 0.5 meters." >}} | {{< image-width src="/images/user-guide/visualization/environments/terrain/exact-0.25m.svg" width="400" alt="Exact sampling at 0.25 meters." >}} |
 
 ### The `terrainExists` flag
 
