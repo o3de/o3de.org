@@ -68,7 +68,7 @@ Communication within the terrain system is all abstracted through EBus requests 
 2. EBus encourages decoupling. We want each piece of the system to be able to operate independently and only interact through the API contracts defined on the EBus.
 3. EBus enables functional replacements. As long as a component or system meets the EBus contract, it's possible to replace the functionality in discrete chunks.
 
-Queries to the system should be able to run in parallel and only block on data modifications, and data modifications should run serially and block on both data queries and data modifications. The locking pattern is optimized around the assumption that terrain data is queried in a read-only fashion most of the time, and the data is loaded, unloaded, or modified just a small fraction of the time.
+Queries to the system run in parallel and only block on data modifications, and data modifications run serially and block on both data queries and data modifications. The locking pattern is optimized around the assumption that terrain data is queried in a read-only fashion most of the time, and the data is loaded, unloaded, or modified just a small fraction of the time.
 
 ## Single system, multiple components
 
@@ -77,7 +77,7 @@ Another key aspect to the terrain system design is that it provides a singleton 
 Single terrain system:
 
 * Defines a single "world grid" for the entire terrain, which presents a consistent resolution and alignment for the terrain grid everywhere. This makes it easy to query the system, since it's possible to walk through the world at consistently-spaced positions everywhere, regardless of the input data resolution and positioning.
-  * This also means the renderer doesn't need to solve seams with adjacent meshes of different resolutions, manage LODs across different resolutions, deal with overlapping terrain meshes, etc.
+  * This also means the renderer doesn't need to solve seams with adjacent meshes of different resolutions, manage LODs across different resolutions, deal with overlapping terrain meshes, and so on.
 * Provides a way to manage priorities for overlapping terrain data regions.
 * Gives a single well-defined API connection point for queries and notifications, without forcing everything that uses terrain to know about all of the individual data pieces that have been used to assemble the terrain.
 
@@ -92,7 +92,7 @@ Multiple terrain components:
   * Aspects of terrain rendering can be disabled for server-side or machine learning simulations that don't require a visual representation of terrain.
 * Different components can have different input data resolutions. The terrain system defines a single _output_ terrain grid and resolution, but the input data resolutions can be varied to optimize the data size and complexity based on the need for that region. Even within a region, two different data providers (such as height and surface type) can use two different resolutions based on what's appropriate for that type of data.
 * The functionality can be replaced at a component-by-component level.
-  * The PhysX Heightfield component could be replaced with one that connects to another physics system such as [Jolt Physics](https://github.com/jrouwe/JoltPhysics) or [Bullet Physics SDK](https://github.com/bulletphysics/bullet3).
+  * The PhysX Heightfield component can be replaced with one that connects to another physics system such as [Jolt Physics](https://github.com/jrouwe/JoltPhysics) or [Bullet Physics SDK](https://github.com/bulletphysics/bullet3).
   * Image Gradients can be used for areas with authored input data, and Fast Noise Gradients can be used to procedurally generate data in other areas.
   * New data providers can be created for streaming satellite data, performing complex procedural generation, etc, and swapped in without needing to replace the rest of the terrain system.
 
