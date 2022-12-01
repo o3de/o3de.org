@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -67,6 +67,10 @@ Public Types</h2></td></tr>
 <b>Copy</b>
  }</td></tr>
 <tr class="separator:a54994da6993a2e89fbc80dc2453f9364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd0139c1810448617076a026e96e51fd"><td class="memItemLeft" align="right" valign="top"><a id="abd0139c1810448617076a026e96e51fd"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TypeChange</b> { <b>Forced</b>, 
+<b>Requested</b>
+ }</td></tr>
+<tr class="separator:abd0139c1810448617076a026e96e51fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -97,22 +101,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af2e0067b98ee2e76affe87432661176c"><td class="memItemLeft" align="right" valign="top"><a id="af2e0067b98ee2e76affe87432661176c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Datum</b> (const AZStd::string &amp;behaviorClassName, eOriginality originality)</td></tr>
 <tr class="separator:af2e0067b98ee2e76affe87432661176c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdcb354474392a0d47045fc2bbc5b951"><td class="memItemLeft" align="right" valign="top"><a id="acdcb354474392a0d47045fc2bbc5b951"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Datum</b> (const AZ::BehaviorValueParameter &amp;value)</td></tr>
-<tr class="separator:acdcb354474392a0d47045fc2bbc5b951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4f317601112b1c5bed411707b572010"><td class="memItemLeft" align="right" valign="top"><a id="ac4f317601112b1c5bed411707b572010"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Datum</b> (const AZ::BehaviorArgument &amp;value)</td></tr>
+<tr class="separator:ac4f317601112b1c5bed411707b572010"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a653f4f336b26dc72dffbe3150fcfbef8"><td class="memItemLeft" align="right" valign="top"><a id="a653f4f336b26dc72dffbe3150fcfbef8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ReconfigureDatumTo</b> (<a class="el" href="class_script_canvas_1_1_datum.html">Datum</a> &amp;&amp;object)</td></tr>
 <tr class="separator:a653f4f336b26dc72dffbe3150fcfbef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2eb8635e36b75a53dae0beeb44255122"><td class="memItemLeft" align="right" valign="top"><a id="a2eb8635e36b75a53dae0beeb44255122"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ReconfigureDatumTo</b> (const <a class="el" href="class_script_canvas_1_1_datum.html">Datum</a> &amp;object)</td></tr>
 <tr class="separator:a2eb8635e36b75a53dae0beeb44255122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc3baa9caaf27d17931b3b0da748a66"><td class="memItemLeft" align="right" valign="top"><a id="abbc3baa9caaf27d17931b3b0da748a66"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyDatumTypeAndValue</b> (const <a class="el" href="class_script_canvas_1_1_datum.html">Datum</a> &amp;object)</td></tr>
+<tr class="separator:abbc3baa9caaf27d17931b3b0da748a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af06a37585f85ccfadff44e92dd1d2eab"><td class="memItemLeft" align="right" valign="top"><a id="af06a37585f85ccfadff44e92dd1d2eab"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DeepCopyDatum</b> (const <a class="el" href="class_script_canvas_1_1_datum.html">Datum</a> &amp;object)</td></tr>
 <tr class="separator:af06a37585f85ccfadff44e92dd1d2eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5765e31cceac02990a24727d55d9d782"><td class="memItemLeft" align="right" valign="top"><a id="a5765e31cceac02990a24727d55d9d782"></a>
 const AZStd::any &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ToAny</b> () const</td></tr>
 <tr class="separator:a5765e31cceac02990a24727d55d9d782"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1060f6cf7ad05355f46e4f8090c5cb8a"><td class="memTemplParams" colspan="2">template&lt;typename t_Value , typename  = AZStd::enable_if_t&lt;!AZStd::is_same&lt;AZStd::decay_t&lt;t_Value&gt;, Datum&gt;::value &amp;&amp; !AZStd::is_same&lt;AZStd::decay_t&lt;t_Value&gt;, AZ::BehaviorValueParameter&gt;::value&gt;&gt; </td></tr>
+<tr class="memitem:a1060f6cf7ad05355f46e4f8090c5cb8a"><td class="memTemplParams" colspan="2">template&lt;typename t_Value , typename  = AZStd::enable_if_t&lt;!AZStd::is_same&lt;AZStd::decay_t&lt;t_Value&gt;, Datum&gt;::value &amp;&amp; !AZStd::is_same&lt;AZStd::decay_t&lt;t_Value&gt;, AZ::BehaviorArgument&gt;::value&gt;&gt; </td></tr>
 <tr class="memitem:a1060f6cf7ad05355f46e4f8090c5cb8a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_datum.html#a1060f6cf7ad05355f46e4f8090c5cb8a">Datum</a> (t_Value &amp;&amp;value)</td></tr>
 <tr class="separator:a1060f6cf7ad05355f46e4f8090c5cb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5174e4f5c6d9004c1e035b1b1566f11"><td class="memItemLeft" align="right" valign="top"><a id="ad5174e4f5c6d9004c1e035b1b1566f11"></a>
@@ -128,9 +135,9 @@ template&lt;typename t_Value &gt; </td></tr>
 <tr class="memitem:a01f69d1a81503d7ee1d9d02b09fd85f7"><td class="memItemLeft" align="right" valign="top"><a id="a01f69d1a81503d7ee1d9d02b09fd85f7"></a>
 const <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetType</b> () const</td></tr>
 <tr class="separator:a01f69d1a81503d7ee1d9d02b09fd85f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a886f773e105c6dfbc73acfa467f7e714"><td class="memItemLeft" align="right" valign="top"><a id="a886f773e105c6dfbc73acfa467f7e714"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetType</b> (const <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a> &amp;dataType)</td></tr>
-<tr class="separator:a886f773e105c6dfbc73acfa467f7e714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a546c826d0ab951ddcbc478467a05d496"><td class="memItemLeft" align="right" valign="top"><a id="a546c826d0ab951ddcbc478467a05d496"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetType</b> (const <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a> &amp;dataType, TypeChange typeChange=TypeChange::Requested)</td></tr>
+<tr class="separator:a546c826d0ab951ddcbc478467a05d496"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7be40d7b93a695ef1ff62986b1e72436"><td class="memTemplParams" colspan="2"><a id="a7be40d7b93a695ef1ff62986b1e72436"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a7be40d7b93a695ef1ff62986b1e72436"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetAZType</b> ()</td></tr>
@@ -202,15 +209,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetToDefaultValueOfTy
 <tr class="memitem:a4e2e00f161725f4c4f2a901e72a0210b"><td class="memItemLeft" align="right" valign="top"><a id="a4e2e00f161725f4c4f2a901e72a0210b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNotificationsTarget</b> (AZ::EntityId notificationId)</td></tr>
 <tr class="separator:a4e2e00f161725f4c4f2a901e72a0210b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f1180ae186cce1d6cafabbf5b041aff"><td class="memItemLeft" align="right" valign="top"><a id="a2f1180ae186cce1d6cafabbf5b041aff"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ToBehaviorContext</b> (AZ::BehaviorValueParameter &amp;destination) const</td></tr>
-<tr class="separator:a2f1180ae186cce1d6cafabbf5b041aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5018c6320da517480b62dc451381a3b"><td class="memItemLeft" align="right" valign="top"><a id="ab5018c6320da517480b62dc451381a3b"></a>
-AZ::BehaviorValueParameter&#160;</td><td class="memItemRight" valign="bottom"><b>ToBehaviorContext</b> (AZ::BehaviorClass *&amp;behaviorClass)</td></tr>
-<tr class="separator:ab5018c6320da517480b62dc451381a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a988218ae6c25436d577af39686cc6bcc"><td class="memItemLeft" align="right" valign="top"><a id="a988218ae6c25436d577af39686cc6bcc"></a>
-AZ::Outcome&lt; AZ::BehaviorValueParameter, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToBehaviorValueParameter</b> (const AZ::BehaviorParameter &amp;description) const</td></tr>
-<tr class="separator:a988218ae6c25436d577af39686cc6bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70f0d9d3e30c5bb3bf4f9ff69f233f5"><td class="memItemLeft" align="right" valign="top"><a id="ab70f0d9d3e30c5bb3bf4f9ff69f233f5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ToBehaviorContext</b> (AZ::BehaviorArgument &amp;destination) const</td></tr>
+<tr class="separator:ab70f0d9d3e30c5bb3bf4f9ff69f233f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8322d4f75df883da13705389f26b4580"><td class="memItemLeft" align="right" valign="top"><a id="a8322d4f75df883da13705389f26b4580"></a>
+AZ::BehaviorArgument&#160;</td><td class="memItemRight" valign="bottom"><b>ToBehaviorContext</b> (AZ::BehaviorClass *&amp;behaviorClass)</td></tr>
+<tr class="separator:a8322d4f75df883da13705389f26b4580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f01f9942f1e4cf32e807f1965068e5"><td class="memItemLeft" align="right" valign="top"><a id="a00f01f9942f1e4cf32e807f1965068e5"></a>
+AZ::Outcome&lt; AZ::BehaviorArgument, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToBehaviorValueParameter</b> (const AZ::BehaviorParameter &amp;description) const</td></tr>
+<tr class="separator:a00f01f9942f1e4cf32e807f1965068e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75aa2474ecf8429b246a924846b19c89"><td class="memItemLeft" align="right" valign="top"><a id="a75aa2474ecf8429b246a924846b19c89"></a>
 AZ_INLINE AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> () const</td></tr>
 <tr class="separator:a75aa2474ecf8429b246a924846b19c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,9 +239,9 @@ AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetVisibility</b
 <tr class="memitem:ac73e540b109ab42d43e9d88d96f2624e"><td class="memItemLeft" align="right" valign="top"><a id="ac73e540b109ab42d43e9d88d96f2624e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ResolveSelfEntityReferences</b> (const AZ::EntityId &amp;graphOwnerId)</td></tr>
 <tr class="separator:ac73e540b109ab42d43e9d88d96f2624e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1e60eb866ae7749601490f6e6d90b85"><td class="memItemLeft" align="right" valign="top"><a id="ac1e60eb866ae7749601490f6e6d90b85"></a>
-AZ::Outcome&lt; AZ::BehaviorValueParameter, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToBehaviorValueParameterResult</b> (const AZ::BehaviorParameter &amp;description, const AZStd::string_view className, const AZStd::string_view methodName)</td></tr>
-<tr class="separator:ac1e60eb866ae7749601490f6e6d90b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f3180682fb59bfcba4d62137240273c"><td class="memItemLeft" align="right" valign="top"><a id="a9f3180682fb59bfcba4d62137240273c"></a>
+AZ::Outcome&lt; AZ::BehaviorArgument, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToBehaviorValueParameterResult</b> (const AZ::BehaviorParameter &amp;description, const AZStd::string_view className, const AZStd::string_view methodName)</td></tr>
+<tr class="separator:a9f3180682fb59bfcba4d62137240273c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d15b14e646f34a125d9682f792de098"><td class="memItemLeft" align="right" valign="top"><a id="a3d15b14e646f34a125d9682f792de098"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertBehaviorContextMethodResult</b> (const AZ::BehaviorParameter &amp;resultType)</td></tr>
 <tr class="separator:a3d15b14e646f34a125d9682f792de098"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,12 +259,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSerialize</
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad989d37e4cc9be2f9fee282f14b768bf"><td class="memItemLeft" align="right" valign="top"><a id="ad989d37e4cc9be2f9fee282f14b768bf"></a>
-static AZ::Outcome&lt; <a class="el" href="class_script_canvas_1_1_datum.html">Datum</a>, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CallBehaviorContextMethodResult</b> (const AZ::BehaviorMethod *method, const AZ::BehaviorParameter *resultType, AZ::BehaviorValueParameter *params, unsigned int numExpectedArgs, const AZStd::string_view context)</td></tr>
-<tr class="separator:ad989d37e4cc9be2f9fee282f14b768bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1156e5eee70ef7e7382c16914118709c"><td class="memItemLeft" align="right" valign="top"><a id="a1156e5eee70ef7e7382c16914118709c"></a>
-static AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CallBehaviorContextMethod</b> (const AZ::BehaviorMethod *method, AZ::BehaviorValueParameter *params, unsigned int numExpectedArgs)</td></tr>
-<tr class="separator:a1156e5eee70ef7e7382c16914118709c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1783236b6fdcd60b69bee566bdc1c45e"><td class="memItemLeft" align="right" valign="top"><a id="a1783236b6fdcd60b69bee566bdc1c45e"></a>
+static AZ::Outcome&lt; <a class="el" href="class_script_canvas_1_1_datum.html">Datum</a>, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CallBehaviorContextMethodResult</b> (const AZ::BehaviorMethod *method, const AZ::BehaviorParameter *resultType, AZ::BehaviorArgument *params, unsigned int numExpectedArgs, const AZStd::string_view context)</td></tr>
+<tr class="separator:a1783236b6fdcd60b69bee566bdc1c45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ae8cdf9c97ed91c41a0c4893cfcbdf"><td class="memItemLeft" align="right" valign="top"><a id="a75ae8cdf9c97ed91c41a0c4893cfcbdf"></a>
+static AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CallBehaviorContextMethod</b> (const AZ::BehaviorMethod *method, AZ::BehaviorArgument *params, unsigned int numExpectedArgs)</td></tr>
+<tr class="separator:a75ae8cdf9c97ed91c41a0c4893cfcbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06d2e08e0e2296db558ce6121c555dfa"><td class="memItemLeft" align="right" valign="top"><a id="a06d2e08e0e2296db558ce6121c555dfa"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValidDatum</b> (const <a class="el" href="class_script_canvas_1_1_datum.html">Datum</a> *datum)</td></tr>
 <tr class="separator:a06d2e08e0e2296db558ce6121c555dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -331,7 +338,7 @@ template&lt;typename t_Value , typename &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:03 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:30 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

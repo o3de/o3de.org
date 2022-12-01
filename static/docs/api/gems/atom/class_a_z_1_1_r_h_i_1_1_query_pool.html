@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -150,6 +150,8 @@ Protected Member Functions</h2></td></tr>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:ab857deb7b846e998f538fcabe9194eac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SortQueries</b> (AZStd::vector&lt; T * &gt; &amp;queries)</td></tr>
 <tr class="separator:ab857deb7b846e998f538fcabe9194eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c58491282891a84d548a306835b01b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_query_pool.html#ac5c58491282891a84d548a306835b01b">ComputeFragmentation</a> () const override</td></tr>
+<tr class="separator:ac5c58491282891a84d548a306835b01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_a_z_1_1_r_h_i_1_1_resource_pool"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_h_i_1_1_resource_pool')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html">AZ::RHI::ResourcePool</a></td></tr>
 <tr class="memitem:af247b6405cd840826adcebeee47e5daa inherit pro_methods_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="memItemLeft" align="right" valign="top"><a id="af247b6405cd840826adcebeee47e5daa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFrameBegin</b> () override</td></tr>
@@ -199,6 +201,34 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_r_h_i_1_1_query.html">Query</a> pool provides backing storage and context for query instances. The <a class="el" href="class_a_z_1_1_r_h_i_1_1_query_pool_descriptor.html">QueryPoolDescriptor</a> contains properties defining memory characteristics of query pools. All queries created on a pool share the same backing and type. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac5c58491282891a84d548a306835b01b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5c58491282891a84d548a306835b01b">&#9670;&nbsp;</a></span>ComputeFragmentation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RHI::QueryPool::ComputeFragmentation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compute the memory fragmentation for each constituent heap and store the results in m_memoryUsage. This method is invoked when memory statistics gathering is active. </p>
+
+<p>Implements <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html#ac386f4f293542b761c4e1913760b088f">AZ::RHI::ResourcePool</a>.</p>
+
+</div>
+</div>
 <a id="a3f258c7bb68c02cd47378b850153ec75"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f258c7bb68c02cd47378b850153ec75">&#9670;&nbsp;</a></span>GetDescriptor()</h2>
 
@@ -449,7 +479,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:27 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:20 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

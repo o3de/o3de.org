@@ -23,4 +23,4 @@ When applying Mesh Surface Tag Emitter to an entity, the entity is required to h
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Generated Tags** | An array of surface tags that the static mesh will emit. | Array: Surface Tags | None |
+| **Generated Tags** | An array of [surface tags](/docs/user-guide/gems/reference/environment/surface-data) that the static mesh will emit. | Array: Surface Tags | None |

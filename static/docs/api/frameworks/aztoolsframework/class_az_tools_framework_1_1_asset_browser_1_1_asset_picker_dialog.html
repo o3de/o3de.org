@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -48,7 +48,9 @@ $(function() {
   <div class="summary">
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-slots">Protected Slots</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_browser_1_1_asset_picker_dialog-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::AssetBrowser::AssetPickerDialog Class Reference</div>  </div>
@@ -72,6 +74,21 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AssetPickerDialog</b> (<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_selection_model.html">AssetSelectionModel</a> &amp;selection, QWidget *parent=nullptr)</td></tr>
 <tr class="separator:a7d7b824eb4c2fd0f8282f0feb9011c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
+Protected Slots</h2></td></tr>
+<tr class="memitem:acf41f1bd20ccc6d63cf71cbc672fc016"><td class="memItemLeft" align="right" valign="top"><a id="acf41f1bd20ccc6d63cf71cbc672fc016"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DoubleClickedSlot</b> (const QModelIndex &amp;index)</td></tr>
+<tr class="separator:acf41f1bd20ccc6d63cf71cbc672fc016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe073b048dbb844e1df311377c006fa6"><td class="memItemLeft" align="right" valign="top"><a id="afe073b048dbb844e1df311377c006fa6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SelectionChangedSlot</b> ()</td></tr>
+<tr class="separator:afe073b048dbb844e1df311377c006fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec37020138d1468ff875c15b479c351"><td class="memItemLeft" align="right" valign="top"><a id="aeec37020138d1468ff875c15b479c351"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RestoreState</b> ()</td></tr>
+<tr class="separator:aeec37020138d1468ff875c15b479c351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9e637c7755b7ffb2c6ff1e61c48499"><td class="memItemLeft" align="right" valign="top"><a id="adf9e637c7755b7ffb2c6ff1e61c48499"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFilterUpdated</b> ()</td></tr>
+<tr class="separator:adf9e637c7755b7ffb2c6ff1e61c48499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a7d97eb432039591461321a5f1f71f123"><td class="memItemLeft" align="right" valign="top"><a id="a7d97eb432039591461321a5f1f71f123"></a>
@@ -86,14 +103,76 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressEvent</b> (QK
 <tr class="memitem:a1c4c2fedb38b636da05bba51f157a2ee"><td class="memItemLeft" align="right" valign="top"><a id="a1c4c2fedb38b636da05bba51f157a2ee"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *resizeEvent) override</td></tr>
 <tr class="separator:a1c4c2fedb38b636da05bba51f157a2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3af7ba57a50585989622310d4754a2b7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_picker_dialog.html#a3af7ba57a50585989622310d4754a2b7">EvaluateSelection</a> () const</td></tr>
+<tr class="separator:a3af7ba57a50585989622310d4754a2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada619119f0808614b670e4cafb24c59b"><td class="memItemLeft" align="right" valign="top"><a id="ada619119f0808614b670e4cafb24c59b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePreview</b> () const</td></tr>
+<tr class="separator:ada619119f0808614b670e4cafb24c59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2462e5f2190a3e6ab98535e0a8184705"><td class="memItemLeft" align="right" valign="top"><a id="a2462e5f2190a3e6ab98535e0a8184705"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveState</b> ()</td></tr>
+<tr class="separator:a2462e5f2190a3e6ab98535e0a8184705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a931bf5d99690d34a0be4054997261178"><td class="memItemLeft" align="right" valign="top"><a id="a931bf5d99690d34a0be4054997261178"></a>
+QScopedPointer&lt; Ui::AssetPickerDialogClass &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ui</b></td></tr>
+<tr class="separator:a931bf5d99690d34a0be4054997261178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0cdd61e723a2b2bdf9db48e039d8fb1"><td class="memItemLeft" align="right" valign="top"><a id="ab0cdd61e723a2b2bdf9db48e039d8fb1"></a>
+<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_model.html">AssetBrowserModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetBrowserModel</b> = nullptr</td></tr>
+<tr class="separator:ab0cdd61e723a2b2bdf9db48e039d8fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5563cddecb781b17886a7d7781accf90"><td class="memItemLeft" align="right" valign="top"><a id="a5563cddecb781b17886a7d7781accf90"></a>
+QScopedPointer&lt; AssetBrowserFilterModel &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_filterModel</b></td></tr>
+<tr class="separator:a5563cddecb781b17886a7d7781accf90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0569de061714ac36a57af1f047c8cc"><td class="memItemLeft" align="right" valign="top"><a id="acf0569de061714ac36a57af1f047c8cc"></a>
+QScopedPointer&lt; <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_table_model.html">AssetBrowserTableModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_tableModel</b></td></tr>
+<tr class="separator:acf0569de061714ac36a57af1f047c8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c84b92a6b3dfe16b78df409695a66b3"><td class="memItemLeft" align="right" valign="top"><a id="a4c84b92a6b3dfe16b78df409695a66b3"></a>
+<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_selection_model.html">AssetSelectionModel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_selection</b></td></tr>
+<tr class="separator:a4c84b92a6b3dfe16b78df409695a66b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a785c785c7f7e56fabc108972209984f1"><td class="memItemLeft" align="right" valign="top"><a id="a785c785c7f7e56fabc108972209984f1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_hasFilter</b></td></tr>
+<tr class="separator:a785c785c7f7e56fabc108972209984f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e97f6d3f6facf0d7fb0b1c42cc847a4"><td class="memItemLeft" align="right" valign="top"><a id="a6e97f6d3f6facf0d7fb0b1c42cc847a4"></a>
+AZStd::unique_ptr&lt; TreeViewState &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_filterStateSaver</b></td></tr>
+<tr class="separator:a6e97f6d3f6facf0d7fb0b1c42cc847a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf3920cc5bff01d30cc5087d172c544c"><td class="memItemLeft" align="right" valign="top"><a id="aaf3920cc5bff01d30cc5087d172c544c"></a>
+AZStd::intrusive_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_q_widget_saved_state.html">QWidgetSavedState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_persistentState</b></td></tr>
+<tr class="separator:aaf3920cc5bff01d30cc5087d172c544c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3af7ba57a50585989622310d4754a2b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3af7ba57a50585989622310d4754a2b7">&#9670;&nbsp;</a></span>EvaluateSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AzToolsFramework::AssetBrowser::AssetPickerDialog::EvaluateSelection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Evaluate whether current selection is valid. Valid selection requires exactly one item to be selected, must be source or product type, and must match the wildcard filter </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/AssetBrowser/AssetPicker/AssetPickerDialog.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:38 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:32 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

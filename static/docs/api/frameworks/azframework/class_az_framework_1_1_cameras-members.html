@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -52,16 +52,19 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html#a09d73b8c0da065ce9a2628fad89ccf56">AddCamera</a>(AZStd::shared_ptr&lt; CameraInput &gt; cameraInput)</td><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html#ad88f21c92895a386657a3f30160e4fc8">Clear</a>()</td><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html#aa866a03e39c0905ec420f8a5ca9998c6">Exclusive</a>() const</td><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>HandleEvents</b>(const InputEvent &amp;event, const ScreenVector &amp;cursorDelta, float scrollDelta) (defined in <a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a>)</td><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html#ace6a5647084aef70cd92c68f0f41cd16">Reset</a>()</td><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>StepCamera</b>(const Camera &amp;targetCamera, const ScreenVector &amp;cursorDelta, float scrollDelta, float deltaTime) (defined in <a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a>)</td><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html#aceef3b075a31c9fac94a47e99660da66">AddCamera</a>(AZStd::shared_ptr&lt; CameraInput &gt; cameraInput)</td><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html#afb4a552c9ad28186df0007835fadea39">AddCameras</a>(const AZStd::vector&lt; AZStd::shared_ptr&lt; AzFramework::CameraInput &gt;&gt; &amp;cameraInputs)</td><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html#ad88f21c92895a386657a3f30160e4fc8">Clear</a>()</td><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html#aa866a03e39c0905ec420f8a5ca9998c6">Exclusive</a>() const</td><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>HandleEvents</b>(const InputState &amp;state, const ScreenVector &amp;cursorDelta, float scrollDelta) (defined in <a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a>)</td><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html#a2565f551cd8560772b19fbdc734d8d4a">RemoveCamera</a>(const AZStd::shared_ptr&lt; CameraInput &gt; &amp;cameraInput)</td><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html#aa23a23d7f68b1e340e51e2b98c601de3">RemoveCameras</a>(const AZStd::vector&lt; AZStd::shared_ptr&lt; AzFramework::CameraInput &gt;&gt; &amp;cameraInputs)</td><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html#ace6a5647084aef70cd92c68f0f41cd16">Reset</a>()</td><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>StepCamera</b>(const Camera &amp;targetCamera, const ScreenVector &amp;cursorDelta, float scrollDelta, float deltaTime) (defined in <a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a>)</td><td class="entry"><a class="el" href="class_az_framework_1_1_cameras.html">AzFramework::Cameras</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:11 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

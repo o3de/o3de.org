@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -79,8 +79,34 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a0e6da631abb90793cf3892611267b750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa12f60c3dfce1b57108a84eda618cdc7"><td class="memItemLeft" align="right" valign="top"><a id="aa12f60c3dfce1b57108a84eda618cdc7"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#aa12f60c3dfce1b57108a84eda618cdc7">IsTrackingTransform</a> () const =0</td></tr>
-<tr class="memdesc:aa12f60c3dfce1b57108a84eda618cdc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if the tracking transform is set. <br /></td></tr>
+<tr class="memdesc:aa12f60c3dfce1b57108a84eda618cdc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if the tracking transform is set. <br /></td></tr>
 <tr class="separator:aa12f60c3dfce1b57108a84eda618cdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af98cb05a8ecbd4da2790c9480441c3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#a6af98cb05a8ecbd4da2790c9480441c3">SetCameraPivotAttached</a> (const AZ::Vector3 &amp;pivot)=0</td></tr>
+<tr class="separator:a6af98cb05a8ecbd4da2790c9480441c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac790c058dfc451cdcb262904a45488c4"><td class="memItemLeft" align="right" valign="top"><a id="ac790c058dfc451cdcb262904a45488c4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#ac790c058dfc451cdcb262904a45488c4">SetCameraPivotAttachedImmediate</a> (const AZ::Vector3 &amp;pivot)=0</td></tr>
+<tr class="memdesc:ac790c058dfc451cdcb262904a45488c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as SetCameraPivotAttached only the pivot is set on the current and target cameras so no interpolation occurs. <br /></td></tr>
+<tr class="separator:ac790c058dfc451cdcb262904a45488c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a956e500cf39d120d16e63c19d7595a79"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#a956e500cf39d120d16e63c19d7595a79">SetCameraPivotDetached</a> (const AZ::Vector3 &amp;pivot)=0</td></tr>
+<tr class="separator:a956e500cf39d120d16e63c19d7595a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b34a45aa6d5a8b36d7143f262490157"><td class="memItemLeft" align="right" valign="top"><a id="a6b34a45aa6d5a8b36d7143f262490157"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#a6b34a45aa6d5a8b36d7143f262490157">SetCameraPivotDetachedImmediate</a> (const AZ::Vector3 &amp;pivot)=0</td></tr>
+<tr class="memdesc:a6b34a45aa6d5a8b36d7143f262490157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as SetCameraPivotDetached only the pivot is set on the current and target cameras so no interpolation occurs. <br /></td></tr>
+<tr class="separator:a6b34a45aa6d5a8b36d7143f262490157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22f264914ec85e2a5ccd65706dbfe796"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#a22f264914ec85e2a5ccd65706dbfe796">SetCameraOffset</a> (const AZ::Vector3 &amp;offset)=0</td></tr>
+<tr class="separator:a22f264914ec85e2a5ccd65706dbfe796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa76b8ad17a7c1eb16fcf0b26b56410db"><td class="memItemLeft" align="right" valign="top"><a id="aa76b8ad17a7c1eb16fcf0b26b56410db"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#aa76b8ad17a7c1eb16fcf0b26b56410db">SetCameraOffsetImmediate</a> (const AZ::Vector3 &amp;offset)=0</td></tr>
+<tr class="memdesc:aa76b8ad17a7c1eb16fcf0b26b56410db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as SetCameraOffset only the offset is set on the current and target cameras so no interpolation occurs. <br /></td></tr>
+<tr class="separator:aa76b8ad17a7c1eb16fcf0b26b56410db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ee21d6ef069c054f53f86a876b4a20e"><td class="memItemLeft" align="right" valign="top"><a id="a0ee21d6ef069c054f53f86a876b4a20e"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#a0ee21d6ef069c054f53f86a876b4a20e">AddCameras</a> (const AZStd::vector&lt; AZStd::shared_ptr&lt; AzFramework::CameraInput &gt;&gt; &amp;cameraInputs)=0</td></tr>
+<tr class="memdesc:a0ee21d6ef069c054f53f86a876b4a20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add one or more camera inputs (behaviors) to run for the current camera. <br /></td></tr>
+<tr class="separator:a0ee21d6ef069c054f53f86a876b4a20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac371b98115faeb5ece4cbd8bf334b966"><td class="memItemLeft" align="right" valign="top"><a id="ac371b98115faeb5ece4cbd8bf334b966"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#ac371b98115faeb5ece4cbd8bf334b966">RemoveCameras</a> (const AZStd::vector&lt; AZStd::shared_ptr&lt; AzFramework::CameraInput &gt;&gt; &amp;cameraInputs)=0</td></tr>
+<tr class="memdesc:ac371b98115faeb5ece4cbd8bf334b966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove one or more camera inputs (behaviors) to stop them running for the current camera. <br /></td></tr>
+<tr class="separator:ac371b98115faeb5ece4cbd8bf334b966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -120,13 +146,94 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Begin a smooth transition of the camera to the requested transform. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Begins a smooth transition of the camera to the requested transform. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">worldFromLocal</td><td>The transform of where the camera should end up. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns true if the call began an interpolation and false otherwise. Calls to InterpolateToTransform will have no effect if an interpolation is currently in progress. </dd></dl>
+
+</div>
+</div>
+<a id="a22f264914ec85e2a5ccd65706dbfe796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22f264914ec85e2a5ccd65706dbfe796">&#9670;&nbsp;</a></span>SetCameraOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AtomToolsFramework::ModularViewportCameraControllerRequests::SetCameraOffset </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the current camera offset from the pivot. </p><dl class="section note"><dt>Note</dt><dd>The offset value is in the current space of the camera, not world space. Setting a negative Z value will move the camera backwards from the pivot. </dd></dl>
+
+</div>
+</div>
+<a id="a6af98cb05a8ecbd4da2790c9480441c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6af98cb05a8ecbd4da2790c9480441c3">&#9670;&nbsp;</a></span>SetCameraPivotAttached()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AtomToolsFramework::ModularViewportCameraControllerRequests::SetCameraPivotAttached </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>pivot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the current camera pivot, moving the camera offset with it (the camera appears to follow the pivot, staying the same distance away from it). </p>
+
+</div>
+</div>
+<a id="a956e500cf39d120d16e63c19d7595a79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a956e500cf39d120d16e63c19d7595a79">&#9670;&nbsp;</a></span>SetCameraPivotDetached()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AtomToolsFramework::ModularViewportCameraControllerRequests::SetCameraPivotDetached </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>pivot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the current camera pivot, leaving the camera offset in-place (the camera will stay fixed and the pivot will appear to move around on its own). </p>
 
 </div>
 </div>
@@ -153,7 +260,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Start tracking a transform. Store the current camera transform and move to the next camera transform. </p>
+<p>Starts tracking a transform. Store the current camera transform and move to the next camera transform. </p>
 
 </div>
 </div>
@@ -179,7 +286,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Stop tracking the set transform. The previously stored camera transform is restored. </p>
+<p>Stops tracking the set transform. The previously stored camera transform is restored. </p>
 
 </div>
 </div>
@@ -189,7 +296,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

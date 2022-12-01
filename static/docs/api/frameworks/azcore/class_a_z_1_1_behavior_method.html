@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -58,7 +58,7 @@ $(function() {
 
 <p>Inherits <a class="el" href="class_a_z_1_1_on_demand_reflection_owner.html">AZ::OnDemandReflectionOwner</a>.</p>
 
-<p>Inherited by AZ::Internal::BehaviorEBusEvent&lt; EBus, EventType, R(C::*)(Args...)&gt;, AZ::Internal::BehaviorMethodImpl&lt; R(Args...)&gt;, and AZ::Internal::BehaviorMethodImpl&lt; R(C::*)(Args...)&gt;.</p>
+<p>Inherited by AZ::Internal::BehaviorEBusEvent&lt; EBus, EventType, R(BusType *, Args...)&gt;, AZ::Internal::BehaviorEBusEvent&lt; EBus, EventType, R(C::*)(Args...)&gt;, AZ::Internal::BehaviorMethodImpl&lt; R(Args...)&gt;, and AZ::Internal::BehaviorMethodImpl&lt; R(C::*)(Args...)&gt;.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -86,9 +86,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDeprecatedName</b>
 <tr class="memitem:abe874fe558d076719e8b3c30f82d8d8a"><td class="memItemLeft" align="right" valign="top"><a id="abe874fe558d076719e8b3c30f82d8d8a"></a>
 const <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeprecatedName</b> () const</td></tr>
 <tr class="separator:abe874fe558d076719e8b3c30f82d8d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed251bc88aab294d5cc3b0c7fdcf5750"><td class="memItemLeft" align="right" valign="top"><a id="aed251bc88aab294d5cc3b0c7fdcf5750"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Call</b> (<a class="el" href="struct_a_z_1_1_behavior_value_parameter.html">BehaviorValueParameter</a> *arguments, unsigned int numArguments, <a class="el" href="struct_a_z_1_1_behavior_value_parameter.html">BehaviorValueParameter</a> *result=nullptr) const =0</td></tr>
-<tr class="separator:aed251bc88aab294d5cc3b0c7fdcf5750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74e06d951a3bff615290352cb8a2e486"><td class="memItemLeft" align="right" valign="top"><a id="a74e06d951a3bff615290352cb8a2e486"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Call</b> (<a class="el" href="struct_a_z_1_1_behavior_argument.html">BehaviorArgument</a> *arguments, unsigned int numArguments, <a class="el" href="struct_a_z_1_1_behavior_argument.html">BehaviorArgument</a> *result=nullptr) const =0</td></tr>
+<tr class="separator:a74e06d951a3bff615290352cb8a2e486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf316f4be0d1c161e44471645900f61d"><td class="memItemLeft" align="right" valign="top"><a id="aaf316f4be0d1c161e44471645900f61d"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasResult</b> () const =0</td></tr>
 <tr class="separator:aaf316f4be0d1c161e44471645900f61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,6 +138,9 @@ virtual <a class="el" href="class_a_z_std_1_1intrusive__ptr.html">BehaviorDefaul
 <tr class="memitem:a4a2ff57af550354b1245c9b394d6424a"><td class="memItemLeft" align="right" valign="top"><a id="a4a2ff57af550354b1245c9b394d6424a"></a>
 virtual const <a class="el" href="struct_a_z_1_1_behavior_parameter.html">BehaviorParameter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetResult</b> () const =0</td></tr>
 <tr class="separator:a4a2ff57af550354b1245c9b394d6424a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e15d5775740054f75f3cfa00fe44358"><td class="memItemLeft" align="right" valign="top"><a id="a1e15d5775740054f75f3cfa00fe44358"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessAuxiliaryMethods</b> (<a class="el" href="class_a_z_1_1_behavior_context.html">BehaviorContext</a> *context, <a class="el" href="class_a_z_1_1_behavior_method.html">BehaviorMethod</a> &amp;method)</td></tr>
+<tr class="separator:a1e15d5775740054f75f3cfa00fe44358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab0da52f343e7d6aaf69667d06e4ab2c"><td class="memItemLeft" align="right" valign="top"><a id="aab0da52f343e7d6aaf69667d06e4ab2c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>AddOverload</b> (<a class="el" href="class_a_z_1_1_behavior_method.html">BehaviorMethod</a> *method)</td></tr>
 <tr class="separator:aab0da52f343e7d6aaf69667d06e4ab2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,7 +206,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

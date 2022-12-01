@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -62,38 +62,26 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae4aa16cc0d12c72502983637c42cf3d6"><td class="memItemLeft" align="right" valign="top"><a id="ae4aa16cc0d12c72502983637c42cf3d6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#ae4aa16cc0d12c72502983637c42cf3d6">RegisterContext</a> (const char *contextName)=0</td></tr>
-<tr class="memdesc:ae4aa16cc0d12c72502983637c42cf3d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add thumbnail context. <br /></td></tr>
-<tr class="separator:ae4aa16cc0d12c72502983637c42cf3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc0c5ee91db4b527023eba83cb859380"><td class="memItemLeft" align="right" valign="top"><a id="afc0c5ee91db4b527023eba83cb859380"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#afc0c5ee91db4b527023eba83cb859380">UnregisterContext</a> (const char *contextName)=0</td></tr>
-<tr class="memdesc:afc0c5ee91db4b527023eba83cb859380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove thumbnail context and all associated ThumbnailProviders. <br /></td></tr>
-<tr class="separator:afc0c5ee91db4b527023eba83cb859380"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa4cec4a7710115180c7180452a52e46"><td class="memItemLeft" align="right" valign="top"><a id="aaa4cec4a7710115180c7180452a52e46"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#aaa4cec4a7710115180c7180452a52e46">HasContext</a> (const char *contextName) const =0</td></tr>
-<tr class="memdesc:aaa4cec4a7710115180c7180452a52e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a given <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnail_context.html" title="ThumbnailContext provides distinct thumbnail location for specific context.">ThumbnailContext</a> has been registered. <br /></td></tr>
-<tr class="separator:aaa4cec4a7710115180c7180452a52e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5e0930f138823b7fff10612b2681114"><td class="memItemLeft" align="right" valign="top"><a id="aa5e0930f138823b7fff10612b2681114"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#aa5e0930f138823b7fff10612b2681114">RegisterThumbnailProvider</a> (SharedThumbnailProvider provider, const char *contextName)=0</td></tr>
-<tr class="memdesc:aa5e0930f138823b7fff10612b2681114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add new thumbnail provider to <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnail_context.html" title="ThumbnailContext provides distinct thumbnail location for specific context.">ThumbnailContext</a>. <br /></td></tr>
-<tr class="separator:aa5e0930f138823b7fff10612b2681114"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43cd7d9d252d66c7950120493846b9a2"><td class="memItemLeft" align="right" valign="top"><a id="a43cd7d9d252d66c7950120493846b9a2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#a43cd7d9d252d66c7950120493846b9a2">UnregisterThumbnailProvider</a> (const char *providerName, const char *contextName)=0</td></tr>
-<tr class="memdesc:a43cd7d9d252d66c7950120493846b9a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove thumbnail provider from <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnail_context.html" title="ThumbnailContext provides distinct thumbnail location for specific context.">ThumbnailContext</a>. <br /></td></tr>
-<tr class="separator:a43cd7d9d252d66c7950120493846b9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02e8d6baaa70b1319c31cd1bccb4f789"><td class="memItemLeft" align="right" valign="top">virtual SharedThumbnail&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#a02e8d6baaa70b1319c31cd1bccb4f789">GetThumbnail</a> (SharedThumbnailKey thumbnailKey, const char *contextName)=0</td></tr>
-<tr class="separator:a02e8d6baaa70b1319c31cd1bccb4f789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a549c61a4bd8e3a52b0b983747cb8958e"><td class="memItemLeft" align="right" valign="top"><a id="a549c61a4bd8e3a52b0b983747cb8958e"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#a549c61a4bd8e3a52b0b983747cb8958e">IsLoading</a> (SharedThumbnailKey thumbnailKey, const char *contextName)=0</td></tr>
-<tr class="memdesc:a549c61a4bd8e3a52b0b983747cb8958e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the thumbnail is loading. <br /></td></tr>
-<tr class="separator:a549c61a4bd8e3a52b0b983747cb8958e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c307152978f5b9a4be4c50f79b0895c"><td class="memItemLeft" align="right" valign="top"><a id="a6c307152978f5b9a4be4c50f79b0895c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#a6c307152978f5b9a4be4c50f79b0895c">RegisterThumbnailProvider</a> (SharedThumbnailProvider provider)=0</td></tr>
+<tr class="memdesc:a6c307152978f5b9a4be4c50f79b0895c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add new thumbnail provider. <br /></td></tr>
+<tr class="separator:a6c307152978f5b9a4be4c50f79b0895c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b17c91e220a4c052ceac29596d0e2cb"><td class="memItemLeft" align="right" valign="top"><a id="a5b17c91e220a4c052ceac29596d0e2cb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#a5b17c91e220a4c052ceac29596d0e2cb">UnregisterThumbnailProvider</a> (const char *providerName)=0</td></tr>
+<tr class="memdesc:a5b17c91e220a4c052ceac29596d0e2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove thumbnail provider. <br /></td></tr>
+<tr class="separator:a5b17c91e220a4c052ceac29596d0e2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57223cc7fbd44df6908baa93963a496"><td class="memItemLeft" align="right" valign="top">virtual SharedThumbnail&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#af57223cc7fbd44df6908baa93963a496">GetThumbnail</a> (SharedThumbnailKey thumbnailKey)=0</td></tr>
+<tr class="separator:af57223cc7fbd44df6908baa93963a496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8986fb60bd417675e1cb865ee46cfda3"><td class="memItemLeft" align="right" valign="top"><a id="a8986fb60bd417675e1cb865ee46cfda3"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#a8986fb60bd417675e1cb865ee46cfda3">IsLoading</a> (SharedThumbnailKey thumbnailKey)=0</td></tr>
+<tr class="memdesc:a8986fb60bd417675e1cb865ee46cfda3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the thumbnail is loading. <br /></td></tr>
+<tr class="separator:a8986fb60bd417675e1cb865ee46cfda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interaction with thumbnailer. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a02e8d6baaa70b1319c31cd1bccb4f789"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02e8d6baaa70b1319c31cd1bccb4f789">&#9670;&nbsp;</a></span>GetThumbnail()</h2>
+<a id="af57223cc7fbd44df6908baa93963a496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af57223cc7fbd44df6908baa93963a496">&#9670;&nbsp;</a></span>GetThumbnail()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -105,18 +93,8 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td class="memname">virtual SharedThumbnail AzToolsFramework::Thumbnailer::ThumbnailerRequests::GetThumbnail </td>
           <td>(</td>
           <td class="paramtype">SharedThumbnailKey&#160;</td>
-          <td class="paramname"><em>thumbnailKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>thumbnailKey</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>contextName</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -135,7 +113,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:40 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:34 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

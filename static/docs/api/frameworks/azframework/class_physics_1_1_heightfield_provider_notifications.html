@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,6 +46,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_physics_1_1_heightfield_provider_notifications-members.html">List of all members</a>  </div>
@@ -61,10 +62,23 @@ $(function() {
 
 <p>Inherits ComponentBus.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a221cd8d7a79cfdbe645a65ad470d2067"><td class="memItemLeft" align="right" valign="top"><a id="a221cd8d7a79cfdbe645a65ad470d2067"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>HeightfieldChangeMask</b> : AZ::u8 { <br />
+&#160;&#160;<b>None</b> = 0, 
+<b>Settings</b> = (1 &lt;&lt; 0), 
+<b>HeightData</b> = (1 &lt;&lt; 1), 
+<b>SurfaceData</b> = (1 &lt;&lt; 2), 
+<br />
+&#160;&#160;<b>SurfaceMapping</b> = (1 &lt;&lt; 3)
+<br />
+ }</td></tr>
+<tr class="separator:a221cd8d7a79cfdbe645a65ad470d2067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa4756b61e3a2fed2d80ecf329776ef1d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_heightfield_provider_notifications.html#aa4756b61e3a2fed2d80ecf329776ef1d">OnHeightfieldDataChanged</a> ([[maybe_unused]] const AZ::Aabb &amp;dirtyRegion)</td></tr>
-<tr class="separator:aa4756b61e3a2fed2d80ecf329776ef1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad33227d4f632f463cd618ed4d4b54c6c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_heightfield_provider_notifications.html#ad33227d4f632f463cd618ed4d4b54c6c">OnHeightfieldDataChanged</a> ([[maybe_unused]] const AZ::Aabb &amp;dirtyRegion, [[maybe_unused]] Physics::HeightfieldProviderNotifications::HeightfieldChangeMask changeMask)</td></tr>
+<tr class="separator:ad33227d4f632f463cd618ed4d4b54c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -75,8 +89,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Broadcasts notifications when heightfield data changes - heightfield providers implement HeightfieldRequests bus. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa4756b61e3a2fed2d80ecf329776ef1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4756b61e3a2fed2d80ecf329776ef1d">&#9670;&nbsp;</a></span>OnHeightfieldDataChanged()</h2>
+<a id="ad33227d4f632f463cd618ed4d4b54c6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad33227d4f632f463cd618ed4d4b54c6c">&#9670;&nbsp;</a></span>OnHeightfieldDataChanged()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -88,8 +102,18 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
           <td class="memname">virtual void Physics::HeightfieldProviderNotifications::OnHeightfieldDataChanged </td>
           <td>(</td>
           <td class="paramtype">[[maybe_unused] ] const AZ::Aabb &amp;&#160;</td>
-          <td class="paramname"><em>dirtyRegion</em></td><td>)</td>
+          <td class="paramname"><em>dirtyRegion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">[[maybe_unused] ] Physics::HeightfieldProviderNotifications::HeightfieldChangeMask&#160;</td>
+          <td class="paramname"><em>changeMask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -113,7 +137,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:24 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:15 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -2,6 +2,13 @@
 <!DOCTYPE html>
 <html{{ with $lang }} lang="{{ . }}"{{ end }}>
   <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N8476P6');</script>
+    <!-- End Google Tag Manager -->
     <title>
       {{ block "title" . }}
         {{if .IsHome -}}
@@ -16,15 +23,20 @@
     {{ partial "meta-tags.html" . }}
   </head>
   {{ partial "javascript.html" }}
-    <body>
+    <body class="{{if .IsHome -}}home-page{{- end }}">
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8476P6"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
       {{ partial "navbar.html" . }}
-    <main id="primary">
-      {{ if eq  .Type "search" }}
-        {{ partial "search-results.html" . }}
-      {{ else }}
-        {{ block "main" . }}
-        {{ end }}
-      {{ end}}
-    </main>
+      <main id="primary">
+        {{ if eq  .Type "search" }}
+          {{ partial "search-results.html" . }}
+        {{ else }}
+          {{ block "main" . }}
+          {{ end }}
+        {{ end}}
+      </main>
   </body>
 </html>

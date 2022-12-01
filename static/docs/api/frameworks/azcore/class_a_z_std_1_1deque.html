@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -125,44 +125,56 @@ AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> 
 <tr class="memitem:ab819602ef67a60bd73324d0271a901b1"><td class="memItemLeft" align="right" valign="top"><a id="ab819602ef67a60bd73324d0271a901b1"></a>
 AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (const <a class="el" href="class_a_z_std_1_1deque.html">this_type</a> &amp;rhs)</td></tr>
 <tr class="separator:ab819602ef67a60bd73324d0271a901b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa9ab2ffb867dc105b0768f3c2479488"><td class="memTemplParams" colspan="2"><a id="aaa9ab2ffb867dc105b0768f3c2479488"></a>
+<tr class="memitem:af1b9f10171f6af44c488974b57af3efc"><td class="memTemplParams" colspan="2"><a id="af1b9f10171f6af44c488974b57af3efc"></a>
 template&lt;class InputIterator &gt; </td></tr>
-<tr class="memitem:aaa9ab2ffb867dc105b0768f3c2479488"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><b>deque</b> (InputIterator first, InputIterator last)</td></tr>
-<tr class="separator:aaa9ab2ffb867dc105b0768f3c2479488"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3886b319fe7fce125516648828fe0442"><td class="memTemplParams" colspan="2"><a id="a3886b319fe7fce125516648828fe0442"></a>
-template&lt;class InputIterator &gt; </td></tr>
-<tr class="memitem:a3886b319fe7fce125516648828fe0442"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><b>deque</b> (InputIterator first, InputIterator last, const Allocator &amp;<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>)</td></tr>
-<tr class="separator:a3886b319fe7fce125516648828fe0442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fc8dbf8dea1503d9abd74e2773a4f1d"><td class="memItemLeft" align="right" valign="top"><a id="a4fc8dbf8dea1503d9abd74e2773a4f1d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (std::initializer_list&lt; T &gt; ilist, const Allocator &amp;alloc=Allocator())</td></tr>
-<tr class="separator:a4fc8dbf8dea1503d9abd74e2773a4f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b9f10171f6af44c488974b57af3efc"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>deque</b> (InputIterator first, InputIterator last, const Allocator &amp;<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>=Allocator())</td></tr>
+<tr class="separator:af1b9f10171f6af44c488974b57af3efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02dc9e1c5d20494a717688a5ad9fa09d"><td class="memTemplParams" colspan="2"><a id="a02dc9e1c5d20494a717688a5ad9fa09d"></a>
+template&lt;class R , class  = enable_if_t&lt;Internal::container_compatible_range&lt;R, value_type&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a02dc9e1c5d20494a717688a5ad9fa09d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>deque</b> (<a class="el" href="struct_a_z_std_1_1from__range__t.html">from_range_t</a>, R &amp;&amp;rg, const Allocator &amp;alloc=Allocator())</td></tr>
+<tr class="separator:a02dc9e1c5d20494a717688a5ad9fa09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf4d9a7b46e3a5bd7488c391ddef257f"><td class="memItemLeft" align="right" valign="top"><a id="acf4d9a7b46e3a5bd7488c391ddef257f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (initializer_list&lt; T &gt; ilist, const Allocator &amp;alloc=Allocator())</td></tr>
+<tr class="separator:acf4d9a7b46e3a5bd7488c391ddef257f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e2028f81d696eac90b1c12d32608a98"><td class="memItemLeft" align="right" valign="top"><a id="a3e2028f81d696eac90b1c12d32608a98"></a>
 <a class="el" href="class_a_z_std_1_1deque.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1deque.html">this_type</a> &amp;rhs)</td></tr>
 <tr class="separator:a3e2028f81d696eac90b1c12d32608a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ea29bdb576acc352b500f350ad3c590"><td class="memItemLeft" align="right" valign="top"><a id="a1ea29bdb576acc352b500f350ad3c590"></a>
-AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1iterator__impl.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
-<tr class="separator:a1ea29bdb576acc352b500f350ad3c590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83bf809235ad27fa83e2be1f77e474bd"><td class="memItemLeft" align="right" valign="top"><a id="a83bf809235ad27fa83e2be1f77e474bd"></a>
-AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
-<tr class="separator:a83bf809235ad27fa83e2be1f77e474bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1062753e8e513ca9f49b6c3df836176"><td class="memItemLeft" align="right" valign="top"><a id="ac1062753e8e513ca9f49b6c3df836176"></a>
-AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1iterator__impl.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
-<tr class="separator:ac1062753e8e513ca9f49b6c3df836176"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a057283268236c4651ffe50e4727b98f1"><td class="memItemLeft" align="right" valign="top"><a id="a057283268236c4651ffe50e4727b98f1"></a>
-AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
-<tr class="separator:a057283268236c4651ffe50e4727b98f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6083b63581cbd196ef0c9b2624780edc"><td class="memItemLeft" align="right" valign="top"><a id="a6083b63581cbd196ef0c9b2624780edc"></a>
-AZ_FORCE_INLINE reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> ()</td></tr>
-<tr class="separator:a6083b63581cbd196ef0c9b2624780edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc13353c6802d04ae48157cec65e5be7"><td class="memItemLeft" align="right" valign="top"><a id="abc13353c6802d04ae48157cec65e5be7"></a>
-AZ_FORCE_INLINE const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> () const</td></tr>
-<tr class="separator:abc13353c6802d04ae48157cec65e5be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af334cb7356914de18f07997c69642af5"><td class="memItemLeft" align="right" valign="top"><a id="af334cb7356914de18f07997c69642af5"></a>
-AZ_FORCE_INLINE reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> ()</td></tr>
-<tr class="separator:af334cb7356914de18f07997c69642af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a220cc89e652dfe6f0f64303daafbe31b"><td class="memItemLeft" align="right" valign="top"><a id="a220cc89e652dfe6f0f64303daafbe31b"></a>
-AZ_FORCE_INLINE const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> () const</td></tr>
-<tr class="separator:a220cc89e652dfe6f0f64303daafbe31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a065dab4d52fab0fd2d79d13a1c9bcc83"><td class="memItemLeft" align="right" valign="top"><a id="a065dab4d52fab0fd2d79d13a1c9bcc83"></a>
+AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1iterator__impl.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () noexcept</td></tr>
+<tr class="separator:a065dab4d52fab0fd2d79d13a1c9bcc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3a4c39d67ba15eeb3f114317c40e14"><td class="memItemLeft" align="right" valign="top"><a id="a2e3a4c39d67ba15eeb3f114317c40e14"></a>
+AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const noexcept</td></tr>
+<tr class="separator:a2e3a4c39d67ba15eeb3f114317c40e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99d4683ebd795fa9d6e3b9e2380bcd48"><td class="memItemLeft" align="right" valign="top"><a id="a99d4683ebd795fa9d6e3b9e2380bcd48"></a>
+AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cbegin</b> () const noexcept</td></tr>
+<tr class="separator:a99d4683ebd795fa9d6e3b9e2380bcd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af52b8a22e8432b3c085b63e1e03df008"><td class="memItemLeft" align="right" valign="top"><a id="af52b8a22e8432b3c085b63e1e03df008"></a>
+AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1iterator__impl.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () noexcept</td></tr>
+<tr class="separator:af52b8a22e8432b3c085b63e1e03df008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6896bff0977d16edeb6b4b0af996b415"><td class="memItemLeft" align="right" valign="top"><a id="a6896bff0977d16edeb6b4b0af996b415"></a>
+AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const noexcept</td></tr>
+<tr class="separator:a6896bff0977d16edeb6b4b0af996b415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62d817f26038f47654fb492c7d62f99c"><td class="memItemLeft" align="right" valign="top"><a id="a62d817f26038f47654fb492c7d62f99c"></a>
+AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cend</b> () const noexcept</td></tr>
+<tr class="separator:a62d817f26038f47654fb492c7d62f99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3910c6ab2a3e07a976c8aad468228a97"><td class="memItemLeft" align="right" valign="top"><a id="a3910c6ab2a3e07a976c8aad468228a97"></a>
+AZ_FORCE_INLINE reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> () noexcept</td></tr>
+<tr class="separator:a3910c6ab2a3e07a976c8aad468228a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2097e7321cf2f5d78572fda2b9e9f93"><td class="memItemLeft" align="right" valign="top"><a id="aa2097e7321cf2f5d78572fda2b9e9f93"></a>
+AZ_FORCE_INLINE const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> () const noexcept</td></tr>
+<tr class="separator:aa2097e7321cf2f5d78572fda2b9e9f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac800f3029d07edbf9fc7d3690ef38003"><td class="memItemLeft" align="right" valign="top"><a id="ac800f3029d07edbf9fc7d3690ef38003"></a>
+AZ_FORCE_INLINE const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>crbegin</b> () const noexcept</td></tr>
+<tr class="separator:ac800f3029d07edbf9fc7d3690ef38003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bab57265e6446a2d12358146d964cc7"><td class="memItemLeft" align="right" valign="top"><a id="a8bab57265e6446a2d12358146d964cc7"></a>
+AZ_FORCE_INLINE reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> () noexcept</td></tr>
+<tr class="separator:a8bab57265e6446a2d12358146d964cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44f4d8361c884663b95dc505f595a9c"><td class="memItemLeft" align="right" valign="top"><a id="ae44f4d8361c884663b95dc505f595a9c"></a>
+AZ_FORCE_INLINE const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> () const noexcept</td></tr>
+<tr class="separator:ae44f4d8361c884663b95dc505f595a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7303f92ab70a9d5c3053c2c3205ebcae"><td class="memItemLeft" align="right" valign="top"><a id="a7303f92ab70a9d5c3053c2c3205ebcae"></a>
+AZ_FORCE_INLINE const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>crend</b> () const noexcept</td></tr>
+<tr class="separator:a7303f92ab70a9d5c3053c2c3205ebcae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac937c9a65fb2681160c356f09478702a"><td class="memItemLeft" align="right" valign="top"><a id="ac937c9a65fb2681160c356f09478702a"></a>
 AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (size_type newSize)</td></tr>
 <tr class="separator:ac937c9a65fb2681160c356f09478702a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,9 +223,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>pop_front</b> ()</td>
 <tr class="memitem:a1aa85485979edb508edcd5b812be84db"><td class="memItemLeft" align="right" valign="top"><a id="a1aa85485979edb508edcd5b812be84db"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>push_back</b> (const value_type &amp;value)</td></tr>
 <tr class="separator:a1aa85485979edb508edcd5b812be84db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0fb4b3441bbec73bd7d87c3d4cd7c0"><td class="memTemplParams" colspan="2"><a id="a5d0fb4b3441bbec73bd7d87c3d4cd7c0"></a>
+template&lt;class R &gt; </td></tr>
+<tr class="memitem:a5d0fb4b3441bbec73bd7d87c3d4cd7c0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>prepend_range</b> (R &amp;&amp;rg) -&gt; enable_if_t&lt; Internal::container_compatible_range&lt; R, T &gt;&gt;</td></tr>
+<tr class="separator:a5d0fb4b3441bbec73bd7d87c3d4cd7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedcb1ab0413350a520777f73776ed6fb"><td class="memItemLeft" align="right" valign="top"><a id="aedcb1ab0413350a520777f73776ed6fb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>pop_back</b> ()</td></tr>
 <tr class="separator:aedcb1ab0413350a520777f73776ed6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa37129afee3a97b91b714aef5330b05e"><td class="memTemplParams" colspan="2"><a id="aa37129afee3a97b91b714aef5330b05e"></a>
+template&lt;class R &gt; </td></tr>
+<tr class="memitem:aa37129afee3a97b91b714aef5330b05e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>append_range</b> (R &amp;&amp;rg) -&gt; enable_if_t&lt; Internal::container_compatible_range&lt; R, T &gt;&gt;</td></tr>
+<tr class="separator:aa37129afee3a97b91b714aef5330b05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2575ce8e38d7a116d416441703d1ecec"><td class="memItemLeft" align="right" valign="top"><a id="a2575ce8e38d7a116d416441703d1ecec"></a>
 AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (size_type numElements, const value_type &amp;value)</td></tr>
 <tr class="separator:a2575ce8e38d7a116d416441703d1ecec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,19 +241,30 @@ AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>assig
 template&lt;class InputIterator &gt; </td></tr>
 <tr class="memitem:a39d6628c5531a7b53c5520ab8784e787"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>assign</b> (InputIterator first, InputIterator last)</td></tr>
 <tr class="separator:a39d6628c5531a7b53c5520ab8784e787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53cf35d93ba2954c8eb279eeeacc6c02"><td class="memTemplParams" colspan="2"><a id="a53cf35d93ba2954c8eb279eeeacc6c02"></a>
+template&lt;class R &gt; </td></tr>
+<tr class="memitem:a53cf35d93ba2954c8eb279eeeacc6c02"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>assign_range</b> (R &amp;&amp;rg) -&gt; enable_if_t&lt; Internal::container_compatible_range&lt; R, value_type &gt;&gt;</td></tr>
+<tr class="separator:a53cf35d93ba2954c8eb279eeeacc6c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd193e33b6361583b01265b465fe4d28"><td class="memItemLeft" align="right" valign="top"><a id="afd193e33b6361583b01265b465fe4d28"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (initializer_list&lt; T &gt; iList)</td></tr>
+<tr class="separator:afd193e33b6361583b01265b465fe4d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad22e292d4e9460f022380d002965a044"><td class="memItemLeft" align="right" valign="top"><a id="ad22e292d4e9460f022380d002965a044"></a>
 <a class="el" href="class_a_z_std_1_1deque_1_1iterator__impl.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">const_iterator</a> insertPos, const value_type &amp;value)</td></tr>
 <tr class="separator:ad22e292d4e9460f022380d002965a044"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38ba985c1c022c66d632c3faa5873847"><td class="memItemLeft" align="right" valign="top"><a id="a38ba985c1c022c66d632c3faa5873847"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">const_iterator</a> insertPos, size_type numElements, const value_type &amp;value)</td></tr>
-<tr class="separator:a38ba985c1c022c66d632c3faa5873847"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd17f744f7caf64ae6c14d957dabe81f"><td class="memItemLeft" align="right" valign="top"><a id="abd17f744f7caf64ae6c14d957dabe81f"></a>
-AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">const_iterator</a> insertPos, std::initializer_list&lt; value_type &gt; <a class="el" href="class_a_z_std_1_1list.html">list</a>)</td></tr>
-<tr class="separator:abd17f744f7caf64ae6c14d957dabe81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04aba08a1893dc0bd9a4ea87e348d10d"><td class="memTemplParams" colspan="2"><a id="a04aba08a1893dc0bd9a4ea87e348d10d"></a>
+<tr class="memitem:a05fcefdde957a7d3fe3e30db2e85d893"><td class="memItemLeft" align="right" valign="top"><a id="a05fcefdde957a7d3fe3e30db2e85d893"></a>
+<a class="el" href="class_a_z_std_1_1deque_1_1iterator__impl.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">const_iterator</a> insertPos, size_type numElements, const value_type &amp;value)</td></tr>
+<tr class="separator:a05fcefdde957a7d3fe3e30db2e85d893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5220e0e2f5ea84edff4ec490326a424d"><td class="memTemplParams" colspan="2"><a id="a5220e0e2f5ea84edff4ec490326a424d"></a>
 template&lt;class InputIterator &gt; </td></tr>
-<tr class="memitem:a04aba08a1893dc0bd9a4ea87e348d10d"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert</b> (<a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">const_iterator</a> insertPos, InputIterator first, InputIterator last)</td></tr>
-<tr class="separator:a04aba08a1893dc0bd9a4ea87e348d10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5220e0e2f5ea84edff4ec490326a424d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1deque_1_1iterator__impl.html">iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert</b> (<a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">const_iterator</a> insertPos, InputIterator first, InputIterator last)</td></tr>
+<tr class="separator:a5220e0e2f5ea84edff4ec490326a424d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3139d0bb1190a4f7057d63ef00bf13c"><td class="memTemplParams" colspan="2"><a id="ad3139d0bb1190a4f7057d63ef00bf13c"></a>
+template&lt;class R &gt; </td></tr>
+<tr class="memitem:ad3139d0bb1190a4f7057d63ef00bf13c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert_range</b> (<a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">const_iterator</a> insertPos, R &amp;&amp;rg) -&gt; enable_if_t&lt; Internal::container_compatible_range&lt; R, value_type &gt;, <a class="el" href="class_a_z_std_1_1deque_1_1iterator__impl.html">iterator</a> &gt;</td></tr>
+<tr class="separator:ad3139d0bb1190a4f7057d63ef00bf13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0283098be6596713c01675fbd4663168"><td class="memItemLeft" align="right" valign="top"><a id="a0283098be6596713c01675fbd4663168"></a>
+<a class="el" href="class_a_z_std_1_1deque_1_1iterator__impl.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">const_iterator</a> insertPos, initializer_list&lt; value_type &gt; <a class="el" href="class_a_z_std_1_1list.html">list</a>)</td></tr>
+<tr class="separator:a0283098be6596713c01675fbd4663168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf1789bd799588c8caaa1fdd93b2937f"><td class="memItemLeft" align="right" valign="top"><a id="aaf1789bd799588c8caaa1fdd93b2937f"></a>
 AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1deque_1_1iterator__impl.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (<a class="el" href="class_a_z_std_1_1deque_1_1iterator__impl.html">iterator</a> erasePos)</td></tr>
 <tr class="separator:aaf1789bd799588c8caaa1fdd93b2937f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,10 +296,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>push_back</b> (value_
 template&lt;class... Args&gt; </td></tr>
 <tr class="memitem:abb7b7cd6d7da2e38deee497e0daed995"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>emplace_front</b> (Args &amp;&amp;... args)</td></tr>
 <tr class="separator:abb7b7cd6d7da2e38deee497e0daed995"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef33bceee9cd5170171c54406f4d1c82"><td class="memTemplParams" colspan="2"><a id="aef33bceee9cd5170171c54406f4d1c82"></a>
+<tr class="memitem:a58e0bbb5841b6e4b71a35474441292b1"><td class="memTemplParams" colspan="2"><a id="a58e0bbb5841b6e4b71a35474441292b1"></a>
 template&lt;class... Args&gt; </td></tr>
-<tr class="memitem:aef33bceee9cd5170171c54406f4d1c82"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>emplace_back</b> (Args &amp;&amp;... args)</td></tr>
-<tr class="separator:aef33bceee9cd5170171c54406f4d1c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e0bbb5841b6e4b71a35474441292b1"><td class="memTemplItemLeft" align="right" valign="top">reference&#160;</td><td class="memTemplItemRight" valign="bottom"><b>emplace_back</b> (Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a58e0bbb5841b6e4b71a35474441292b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cafa04558b0883ba0a37aad85139ec0"><td class="memTemplParams" colspan="2"><a id="a8cafa04558b0883ba0a37aad85139ec0"></a>
 template&lt;class Args &gt; </td></tr>
 <tr class="memitem:a8cafa04558b0883ba0a37aad85139ec0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1deque_1_1iterator__impl.html">iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert</b> (<a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">const_iterator</a> pos, Args &amp;&amp;args)</td></tr>
@@ -302,10 +333,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_iterator</b> 
 <tr class="memitem:af33cac6edaf832d9678368dd8a377055"><td class="memItemLeft" align="right" valign="top"><a id="af33cac6edaf832d9678368dd8a377055"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_iterator</b> (const <a class="el" href="class_a_z_std_1_1deque_1_1const__iterator__impl.html">const_iterator</a> &amp;iter) const</td></tr>
 <tr class="separator:af33cac6edaf832d9678368dd8a377055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad92b0ac9d27b321f208977722b0d6418"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1deque.html#ad92b0ac9d27b321f208977722b0d6418">push_front</a> ()</td></tr>
-<tr class="separator:ad92b0ac9d27b321f208977722b0d6418"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb46f0b3ec2482a096a1811561a0004e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1deque.html#afb46f0b3ec2482a096a1811561a0004e">push_back</a> ()</td></tr>
-<tr class="separator:afb46f0b3ec2482a096a1811561a0004e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23a6c47ead7d4bbb2c0207b06279caa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1deque.html#a23a6c47ead7d4bbb2c0207b06279caa4">leak_and_reset</a> ()</td></tr>
 <tr class="separator:a23a6c47ead7d4bbb2c0207b06279caa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -321,23 +348,23 @@ const typedef T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>cons
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aa57b575a811ec2d028f34c5843e020d2"><td class="memItemLeft" align="right" valign="top"><a id="aa57b575a811ec2d028f34c5843e020d2"></a>
-map_node_ptr_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1deque.html#aa57b575a811ec2d028f34c5843e020d2">m_map</a></td></tr>
+map_node_ptr_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1deque.html#aa57b575a811ec2d028f34c5843e020d2">m_map</a> {}</td></tr>
 <tr class="memdesc:aa57b575a811ec2d028f34c5843e020d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to array of pointers to blocks. <br /></td></tr>
 <tr class="separator:aa57b575a811ec2d028f34c5843e020d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7af1b6c1ecb8de8a0de640e507ce1b3"><td class="memItemLeft" align="right" valign="top"><a id="aa7af1b6c1ecb8de8a0de640e507ce1b3"></a>
-size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1deque.html#aa7af1b6c1ecb8de8a0de640e507ce1b3">m_mapSize</a></td></tr>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1deque.html#aa7af1b6c1ecb8de8a0de640e507ce1b3">m_mapSize</a> {}</td></tr>
 <tr class="memdesc:aa7af1b6c1ecb8de8a0de640e507ce1b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of map array. <br /></td></tr>
 <tr class="separator:aa7af1b6c1ecb8de8a0de640e507ce1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35455ca12cf68d485015d911ce5a63a2"><td class="memItemLeft" align="right" valign="top"><a id="a35455ca12cf68d485015d911ce5a63a2"></a>
-size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1deque.html#a35455ca12cf68d485015d911ce5a63a2">m_firstOffset</a></td></tr>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1deque.html#a35455ca12cf68d485015d911ce5a63a2">m_firstOffset</a> {}</td></tr>
 <tr class="memdesc:a35455ca12cf68d485015d911ce5a63a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of initial element. <br /></td></tr>
 <tr class="separator:a35455ca12cf68d485015d911ce5a63a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36cade18aa4fd8762ceb3fc509a296aa"><td class="memItemLeft" align="right" valign="top"><a id="a36cade18aa4fd8762ceb3fc509a296aa"></a>
-size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1deque.html#a36cade18aa4fd8762ceb3fc509a296aa">m_size</a></td></tr>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1deque.html#a36cade18aa4fd8762ceb3fc509a296aa">m_size</a> {}</td></tr>
 <tr class="memdesc:a36cade18aa4fd8762ceb3fc509a296aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of elements in the deque. <br /></td></tr>
 <tr class="separator:a36cade18aa4fd8762ceb3fc509a296aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb818987177b1dd8b26e8fe992a8570b"><td class="memItemLeft" align="right" valign="top"><a id="afb818987177b1dd8b26e8fe992a8570b"></a>
-allocator_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1deque.html#afb818987177b1dd8b26e8fe992a8570b">m_allocator</a></td></tr>
+allocator_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1deque.html#afb818987177b1dd8b26e8fe992a8570b">m_allocator</a> {}</td></tr>
 <tr class="memdesc:afb818987177b1dd8b26e8fe992a8570b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instance of the allocator. <br /></td></tr>
 <tr class="separator:afb818987177b1dd8b26e8fe992a8570b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -376,69 +403,13 @@ template&lt;class T , class Allocator  = AZStd::allocator, AZStd::size_t NumElem
 
 </div>
 </div>
-<a id="afb46f0b3ec2482a096a1811561a0004e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb46f0b3ec2482a096a1811561a0004e">&#9670;&nbsp;</a></span>push_back()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , class Allocator  = AZStd::allocator, AZStd::size_t NumElementsPerBlock = AZStd::deque_block&lt;sizeof(T)&gt;::num_elements, AZStd::size_t MinMapSize = 8&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_a_z_std_1_1deque.html">AZStd::deque</a>&lt; T, Allocator, NumElementsPerBlock, MinMapSize &gt;::push_back </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Pushes an element at the back of the deque without a provided instance. This can be used for value types with expensive constructors so we don't want to create temporary one. </p>
-
-</div>
-</div>
-<a id="ad92b0ac9d27b321f208977722b0d6418"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad92b0ac9d27b321f208977722b0d6418">&#9670;&nbsp;</a></span>push_front()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , class Allocator  = AZStd::allocator, AZStd::size_t NumElementsPerBlock = AZStd::deque_block&lt;sizeof(T)&gt;::num_elements, AZStd::size_t MinMapSize = 8&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_a_z_std_1_1deque.html">AZStd::deque</a>&lt; T, Allocator, NumElementsPerBlock, MinMapSize &gt;::push_front </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Pushes an element at the front of the deque without a provided instance. This can be used for value types with expensive constructors so we don't want to create temporary one. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/containers/deque.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:45 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

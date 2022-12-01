@@ -36,7 +36,7 @@ To set up and run Asset Bundler, do the following:
 1. In your `<engine>` directory, use CMake to invoke Visual Studio to build Asset Bundler.
 
     ```cmd
-    cmake --build build\windows_vs2019 --target AssetBundler --config profile -- -m
+    cmake --build build/windows --target AssetBundler --config profile -- -m
     ```
 
     This command contains the following options:
@@ -46,7 +46,7 @@ To set up and run Asset Bundler, do the following:
     - `--config profile` -- Sets the build configuration to profile, which enables optimization and allows debugging.
 
 
-1. Run `AssetBundler.exe` from the `<engine>\build\windows_vs2019\bin\profile` directory. This opens Asset Bundler with a graphical user interface (GUI). (Alternatively, to use the command line interface (CLI), run `AssetBundlerBatch.exe`.)
+1. Run `AssetBundler.exe` from the `<engine>\build\windows\bin\profile` directory. This opens Asset Bundler with a graphical user interface (GUI). (Alternatively, to use the command line interface (CLI), run `AssetBundlerBatch.exe`.)
 
     Now you should have Asset Bundler open, which looks like this in the GUI:
 

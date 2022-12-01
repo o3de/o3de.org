@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -41,7 +41,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ScriptCanvasEditor</b></li><li class="navelem"><a class="el" href="class_script_canvas_editor_1_1_general_requests.html">GeneralRequests</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_script_canvas_editor.html">ScriptCanvasEditor</a></li><li class="navelem"><a class="el" href="class_script_canvas_editor_1_1_general_requests.html">GeneralRequests</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -58,22 +58,22 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5782bd316cad98f720334bca185a08c6"><td class="memItemLeft" align="right" valign="top">virtual AZ::Outcome&lt; int, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_editor_1_1_general_requests.html#a5782bd316cad98f720334bca185a08c6">OpenScriptCanvasAsset</a> (<a class="el" href="class_script_canvas_editor_1_1_source_handle.html">SourceHandle</a> scriptCanvasAssetId, Tracker::ScriptCanvasFileState fileState, int tabIndex=-1)=0</td></tr>
+<tr class="memitem:a5782bd316cad98f720334bca185a08c6"><td class="memItemLeft" align="right" valign="top">virtual AZ::Outcome&lt; int, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_editor_1_1_general_requests.html#a5782bd316cad98f720334bca185a08c6">OpenScriptCanvasAsset</a> (SourceHandle scriptCanvasAssetId, Tracker::ScriptCanvasFileState fileState, int tabIndex=-1)=0</td></tr>
 <tr class="separator:a5782bd316cad98f720334bca185a08c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad204c478bf47b7881fd11d54a35adc7c"><td class="memItemLeft" align="right" valign="top"><a id="ad204c478bf47b7881fd11d54a35adc7c"></a>
-virtual AZ::Outcome&lt; int, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OpenScriptCanvasAssetId</b> (const <a class="el" href="class_script_canvas_editor_1_1_source_handle.html">SourceHandle</a> &amp;scriptCanvasAsset, Tracker::ScriptCanvasFileState fileState)=0</td></tr>
+virtual AZ::Outcome&lt; int, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OpenScriptCanvasAssetId</b> (const SourceHandle &amp;scriptCanvasAsset, Tracker::ScriptCanvasFileState fileState)=0</td></tr>
 <tr class="separator:ad204c478bf47b7881fd11d54a35adc7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7766b35406bc683052917cb7e536a16d"><td class="memItemLeft" align="right" valign="top"><a id="a7766b35406bc683052917cb7e536a16d"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>CloseScriptCanvasAsset</b> (const <a class="el" href="class_script_canvas_editor_1_1_source_handle.html">SourceHandle</a> &amp;)=0</td></tr>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>CloseScriptCanvasAsset</b> (const SourceHandle &amp;)=0</td></tr>
 <tr class="separator:a7766b35406bc683052917cb7e536a16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b45b84a486a3ebd04c808bb4070f08b"><td class="memItemLeft" align="right" valign="top"><a id="a2b45b84a486a3ebd04c808bb4070f08b"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>CreateScriptCanvasAssetFor</b> (const TypeDefs::EntityComponentId &amp;requestingComponent)=0</td></tr>
 <tr class="separator:a2b45b84a486a3ebd04c808bb4070f08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a386a5fdc0532aa0646d6c56adcf35e17"><td class="memItemLeft" align="right" valign="top"><a id="a386a5fdc0532aa0646d6c56adcf35e17"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsScriptCanvasAssetOpen</b> (const <a class="el" href="class_script_canvas_editor_1_1_source_handle.html">SourceHandle</a> &amp;assetId) const =0</td></tr>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsScriptCanvasAssetOpen</b> (const SourceHandle &amp;assetId) const =0</td></tr>
 <tr class="separator:a386a5fdc0532aa0646d6c56adcf35e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac82e44a2b15f55c9e26180b1df480069"><td class="memItemLeft" align="right" valign="top"><a id="ac82e44a2b15f55c9e26180b1df480069"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnChangeActiveGraphTab</b> (<a class="el" href="class_script_canvas_editor_1_1_source_handle.html">SourceHandle</a>)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnChangeActiveGraphTab</b> (SourceHandle)</td></tr>
 <tr class="separator:ac82e44a2b15f55c9e26180b1df480069"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a146e2268ed4708cbdd5b876c2269b3ac"><td class="memItemLeft" align="right" valign="top"><a id="a146e2268ed4708cbdd5b876c2269b3ac"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateNewRuntimeAsset</b> ()=0</td></tr>
@@ -91,10 +91,10 @@ virtual GraphCanvas::GraphId&#160;</td><td class="memItemRight" valign="bottom">
 virtual ScriptCanvas::ScriptCanvasId&#160;</td><td class="memItemRight" valign="bottom"><b>GetScriptCanvasId</b> ([[maybe_unused]] const GraphCanvas::GraphId &amp;graphCanvasSceneId) const</td></tr>
 <tr class="separator:a9390f2e92f00b7d1f39e5ff986a062e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f49cb60c365a902942e5a4773793042"><td class="memItemLeft" align="right" valign="top"><a id="a2f49cb60c365a902942e5a4773793042"></a>
-virtual GraphCanvas::GraphId&#160;</td><td class="memItemRight" valign="bottom"><b>FindGraphCanvasGraphIdByAssetId</b> ([[maybe_unused]] const <a class="el" href="class_script_canvas_editor_1_1_source_handle.html">SourceHandle</a> &amp;assetId) const</td></tr>
+virtual GraphCanvas::GraphId&#160;</td><td class="memItemRight" valign="bottom"><b>FindGraphCanvasGraphIdByAssetId</b> ([[maybe_unused]] const SourceHandle &amp;assetId) const</td></tr>
 <tr class="separator:a2f49cb60c365a902942e5a4773793042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6f296afbbbae2b5dd4ad9f2c76d8560"><td class="memItemLeft" align="right" valign="top"><a id="ab6f296afbbbae2b5dd4ad9f2c76d8560"></a>
-virtual ScriptCanvas::ScriptCanvasId&#160;</td><td class="memItemRight" valign="bottom"><b>FindScriptCanvasIdByAssetId</b> ([[maybe_unused]] const <a class="el" href="class_script_canvas_editor_1_1_source_handle.html">SourceHandle</a> &amp;assetId) const</td></tr>
+virtual ScriptCanvas::ScriptCanvasId&#160;</td><td class="memItemRight" valign="bottom"><b>FindScriptCanvasIdByAssetId</b> ([[maybe_unused]] const SourceHandle &amp;assetId) const</td></tr>
 <tr class="separator:ab6f296afbbbae2b5dd4ad9f2c76d8560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9151b16117e299cd53f05235438b873a"><td class="memItemLeft" align="right" valign="top"><a id="a9151b16117e299cd53f05235438b873a"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInUndoRedo</b> (const AZ::EntityId &amp;graphCanvasGraphId) const =0</td></tr>
@@ -121,7 +121,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DisconnectEnd
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PostUndoPoint</b> (ScriptCanvas::ScriptCanvasId)=0</td></tr>
 <tr class="separator:a00bcf196655d1c3cbb0c40191563a96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ba9772821208aa8c25410139a3166e5"><td class="memItemLeft" align="right" valign="top"><a id="a2ba9772821208aa8c25410139a3166e5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalSceneDirty</b> (<a class="el" href="class_script_canvas_editor_1_1_source_handle.html">SourceHandle</a>)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalSceneDirty</b> (SourceHandle)=0</td></tr>
 <tr class="separator:a2ba9772821208aa8c25410139a3166e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37d39fd4f96e10ba4efb303322a99057"><td class="memItemLeft" align="right" valign="top"><a id="a37d39fd4f96e10ba4efb303322a99057"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PushPreventUndoStateUpdate</b> ()=0</td></tr>
@@ -164,7 +164,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual AZ::Outcome&lt;int, AZStd::string&gt; ScriptCanvasEditor::GeneralRequests::OpenScriptCanvasAsset </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_script_canvas_editor_1_1_source_handle.html">SourceHandle</a>&#160;</td>
+          <td class="paramtype">SourceHandle&#160;</td>
           <td class="paramname"><em>scriptCanvasAssetId</em>, </td>
         </tr>
         <tr>
@@ -207,7 +207,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:08 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:36 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

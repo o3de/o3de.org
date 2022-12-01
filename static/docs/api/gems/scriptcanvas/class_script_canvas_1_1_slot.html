@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -67,6 +67,10 @@ Public Types</h2></td></tr>
 <b>VariableReference</b>
  }</td></tr>
 <tr class="separator:aaf8e7d405860eb88f0269d10648352c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec6e8ed1f992896ddb3362a05c7658a"><td class="memItemLeft" align="right" valign="top"><a id="adec6e8ed1f992896ddb3362a05c7658a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>IsVariableTypeChange</b> { <b>No</b>, 
+<b>Yes</b>
+ }</td></tr>
+<tr class="separator:adec6e8ed1f992896ddb3362a05c7658a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -156,12 +160,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsData</b> () const</
 <tr class="memitem:a94ef33780a1bbd4f3d45789a91f02ce7"><td class="memItemLeft" align="right" valign="top"><a id="a94ef33780a1bbd4f3d45789a91f02ce7"></a>
 const <a class="el" href="class_script_canvas_1_1_datum.html">Datum</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindDatum</b> () const</td></tr>
 <tr class="separator:a94ef33780a1bbd4f3d45789a91f02ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66ba6e2210ea5aa1c38c3d33988ae308"><td class="memItemLeft" align="right" valign="top"><a id="a66ba6e2210ea5aa1c38c3d33988ae308"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FindModifiableDatumView</b> (<a class="el" href="class_script_canvas_1_1_modifiable_datum_view.html">ModifiableDatumView</a> &amp;datumView)</td></tr>
-<tr class="separator:a66ba6e2210ea5aa1c38c3d33988ae308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a842bddb56eb157ab2260ef447f40f5cc"><td class="memItemLeft" align="right" valign="top"><a id="a842bddb56eb157ab2260ef447f40f5cc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>FindModifiableDatumView</b> (<a class="el" href="class_script_canvas_1_1_modifiable_datum_view.html">ModifiableDatumView</a> &amp;datumView)</td></tr>
+<tr class="separator:a842bddb56eb157ab2260ef447f40f5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ec51f3ff5147e312c9157c5ae3e31b3"><td class="memItemLeft" align="right" valign="top"><a id="a6ec51f3ff5147e312c9157c5ae3e31b3"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVariableReference</b> () const</td></tr>
 <tr class="separator:a6ec51f3ff5147e312c9157c5ae3e31b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634adeb913962c32118328ab574db281"><td class="memItemLeft" align="right" valign="top"><a id="a634adeb913962c32118328ab574db281"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanHaveInputField</b> () const</td></tr>
+<tr class="separator:a634adeb913962c32118328ab574db281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1413bf79d7ca9e56313b8eef16062ce"><td class="memItemLeft" align="right" valign="top"><a id="ae1413bf79d7ca9e56313b8eef16062ce"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanConvertTypes</b> () const</td></tr>
 <tr class="separator:ae1413bf79d7ca9e56313b8eef16062ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,15 +178,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanConvertToValue</b>
 <tr class="memitem:a1864a9d052b377daae73ff673790a4f1"><td class="memItemLeft" align="right" valign="top"><a id="a1864a9d052b377daae73ff673790a4f1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToValue</b> ()</td></tr>
 <tr class="separator:a1864a9d052b377daae73ff673790a4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36984428a24f73bae71198a40a34fe11"><td class="memItemLeft" align="right" valign="top"><a id="a36984428a24f73bae71198a40a34fe11"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanConvertToReference</b> () const</td></tr>
-<tr class="separator:a36984428a24f73bae71198a40a34fe11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a559d8c541f996dbd9ea45258b1c27187"><td class="memItemLeft" align="right" valign="top"><a id="a559d8c541f996dbd9ea45258b1c27187"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToReference</b> ()</td></tr>
-<tr class="separator:a559d8c541f996dbd9ea45258b1c27187"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66141a08ee1118e79d73a8ee35d3501e"><td class="memItemLeft" align="right" valign="top"><a id="a66141a08ee1118e79d73a8ee35d3501e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVariableReference</b> (const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;variableId)</td></tr>
-<tr class="separator:a66141a08ee1118e79d73a8ee35d3501e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb0c6066a2bb21655c3884e3a6e104c"><td class="memItemLeft" align="right" valign="top"><a id="accb0c6066a2bb21655c3884e3a6e104c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanConvertToReference</b> (bool isNewSlot=false) const</td></tr>
+<tr class="separator:accb0c6066a2bb21655c3884e3a6e104c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb4f821b70f09b9c59ac347c56ac68b"><td class="memItemLeft" align="right" valign="top"><a id="aabb4f821b70f09b9c59ac347c56ac68b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToReference</b> (bool isNewSlot=false)</td></tr>
+<tr class="separator:aabb4f821b70f09b9c59ac347c56ac68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a557b8eb4358b54dbe6200a369c361263"><td class="memItemLeft" align="right" valign="top"><a id="a557b8eb4358b54dbe6200a369c361263"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVariableReference</b> (const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;variableId, IsVariableTypeChange isTypeChange=IsVariableTypeChange::No)</td></tr>
+<tr class="separator:a557b8eb4358b54dbe6200a369c361263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5d0c5094b844366ba86b0a24fdec910"><td class="memItemLeft" align="right" valign="top"><a id="ac5d0c5094b844366ba86b0a24fdec910"></a>
 const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableReference</b> () const</td></tr>
 <tr class="separator:ac5d0c5094b844366ba86b0a24fdec910"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -306,6 +313,9 @@ AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>m_displayGroup</
 <tr class="memitem:aa6c927c45c450a8c9a7aee1cdeb75a58"><td class="memItemLeft" align="right" valign="top"><a id="aa6c927c45c450a8c9a7aee1cdeb75a58"></a>
 AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>m_dynamicGroup</b></td></tr>
 <tr class="separator:aa6c927c45c450a8c9a7aee1cdeb75a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a0e8831bf285d5e32f491db2cab087"><td class="memItemLeft" align="right" valign="top"><a id="ab1a0e8831bf285d5e32f491db2cab087"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_canHaveInputField</b> = true</td></tr>
+<tr class="separator:ab1a0e8831bf285d5e32f491db2cab087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65302cded3b4aacc4248e8c3b4e7dc25"><td class="memItemLeft" align="right" valign="top"><a id="a65302cded3b4aacc4248e8c3b4e7dc25"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isLatentSlot</b> = false</td></tr>
 <tr class="separator:a65302cded3b4aacc4248e8c3b4e7dc25"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,6 +349,9 @@ DynamicDataType&#160;</td><td class="memItemRight" valign="bottom"><b>m_dynamicD
 <tr class="memitem:a422067db845fd8281a844c8959284f73"><td class="memItemLeft" align="right" valign="top"><a id="a422067db845fd8281a844c8959284f73"></a>
 AZStd::vector&lt; AZStd::unique_ptr&lt; <a class="el" href="class_script_canvas_1_1_contract.html">Contract</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_contracts</b></td></tr>
 <tr class="separator:a422067db845fd8281a844c8959284f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c671ae0872fbcb526ca83355cc8ba23"><td class="memItemLeft" align="right" valign="top"><a id="a7c671ae0872fbcb526ca83355cc8ba23"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_needsNodePropertyDisplay</b> = true</td></tr>
+<tr class="separator:a7c671ae0872fbcb526ca83355cc8ba23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -352,7 +365,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Node</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:04 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:31 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

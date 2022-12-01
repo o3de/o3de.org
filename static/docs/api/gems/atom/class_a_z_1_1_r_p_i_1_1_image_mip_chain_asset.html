@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -88,14 +88,14 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_image_mip_chain_asset.html#a7ab09e18de2c9efdd4eedcf0782d7cb2">GetSubImageCount</a> () const</td></tr>
 <tr class="memdesc:a7ab09e18de2c9efdd4eedcf0782d7cb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of sub-images in the group. <br /></td></tr>
 <tr class="separator:a7ab09e18de2c9efdd4eedcf0782d7cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a771a5a96cc158c1f4baf6e194194ecd7"><td class="memItemLeft" align="right" valign="top"><a id="a771a5a96cc158c1f4baf6e194194ecd7"></a>
-AZStd::array_view&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_image_mip_chain_asset.html#a771a5a96cc158c1f4baf6e194194ecd7">GetSubImageData</a> (uint32_t mipSlice, uint32_t arraySlice) const</td></tr>
-<tr class="memdesc:a771a5a96cc158c1f4baf6e194194ecd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sub-image data blob for a given mip slice and array slice (local to the group). <br /></td></tr>
-<tr class="separator:a771a5a96cc158c1f4baf6e194194ecd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab410d5bda690d62e05aa58c1aa8582ba"><td class="memItemLeft" align="right" valign="top"><a id="ab410d5bda690d62e05aa58c1aa8582ba"></a>
-AZStd::array_view&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_image_mip_chain_asset.html#ab410d5bda690d62e05aa58c1aa8582ba">GetSubImageData</a> (uint32_t subImageIndex) const</td></tr>
-<tr class="memdesc:ab410d5bda690d62e05aa58c1aa8582ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sub-image data blob for a linear index (local to the group). <br /></td></tr>
-<tr class="separator:ab410d5bda690d62e05aa58c1aa8582ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54752173830244164c34ca95ee4d8495"><td class="memItemLeft" align="right" valign="top"><a id="a54752173830244164c34ca95ee4d8495"></a>
+AZStd::span&lt; const uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_image_mip_chain_asset.html#a54752173830244164c34ca95ee4d8495">GetSubImageData</a> (uint32_t mipSlice, uint32_t arraySlice) const</td></tr>
+<tr class="memdesc:a54752173830244164c34ca95ee4d8495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sub-image data blob for a given mip slice and array slice (local to the group). <br /></td></tr>
+<tr class="separator:a54752173830244164c34ca95ee4d8495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab499ea2a940fd94f0be5adac5056318f"><td class="memItemLeft" align="right" valign="top"><a id="ab499ea2a940fd94f0be5adac5056318f"></a>
+AZStd::span&lt; const uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_image_mip_chain_asset.html#ab499ea2a940fd94f0be5adac5056318f">GetSubImageData</a> (uint32_t subImageIndex) const</td></tr>
+<tr class="memdesc:ab499ea2a940fd94f0be5adac5056318f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sub-image data blob for a linear index (local to the group). <br /></td></tr>
+<tr class="separator:ab499ea2a940fd94f0be5adac5056318f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8204dcbb554dcde760861c7ecc7e2558"><td class="memItemLeft" align="right" valign="top"><a id="a8204dcbb554dcde760861c7ecc7e2558"></a>
 const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_subresource_layout.html">RHI::ImageSubresourceLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_image_mip_chain_asset.html#a8204dcbb554dcde760861c7ecc7e2558">GetSubImageLayout</a> (uint32_t subImageIndex) const</td></tr>
 <tr class="memdesc:a8204dcbb554dcde760861c7ecc7e2558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sub-image layout for a single sub-image by index. <br /></td></tr>
@@ -159,7 +159,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>StreamingImageAssetH
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:28 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

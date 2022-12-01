@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -48,6 +48,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_a_z_1_1_r_h_i_1_1_aliased_heap-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::RHI::AliasedHeap Class Reference</div>  </div>
@@ -102,6 +103,10 @@ const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_aliased_heap_descriptor.html"
 const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_attachment_statistics_1_1_heap.html">TransientAttachmentStatistics::Heap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_aliased_heap.html#a3e9d677043d67db725c54788bc952f52">GetStatistics</a> () const</td></tr>
 <tr class="memdesc:a3e9d677043d67db725c54788bc952f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the heap statistics of the frame when the Aliased Heap was began with the GatherStatistics flag. <br /></td></tr>
 <tr class="separator:a3e9d677043d67db725c54788bc952f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec300fbdb106b9d9174fd969cacd31c2"><td class="memItemLeft" align="right" valign="top"><a id="aec300fbdb106b9d9174fd969cacd31c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_aliased_heap.html#aec300fbdb106b9d9174fd969cacd31c2">RemoveFromCache</a> (RHI::AttachmentId attachmentId)</td></tr>
+<tr class="memdesc:aec300fbdb106b9d9174fd969cacd31c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the entry related to the provided attachmentId from the cache as it is probably stale now. <br /></td></tr>
+<tr class="separator:aec300fbdb106b9d9174fd969cacd31c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_r_h_i_1_1_resource_pool"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_h_i_1_1_resource_pool')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html">AZ::RHI::ResourcePool</a></td></tr>
 <tr class="memitem:ac3cddf64f7ab00287f2de4a8aa51a975 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="memItemLeft" align="right" valign="top"><a id="ac3cddf64f7ab00287f2de4a8aa51a975"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html">ResourcePool</a>, &quot;{757EB674-25DC-4D00-9808-D3DAF33A4EFE}&quot;, DeviceObject)</td></tr>
@@ -155,13 +160,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a3974b3af221310b51746ee2b193b57e8 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memItemLeft" align="right" valign="top">const Name &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html#a3974b3af221310b51746ee2b193b57e8">GetName</a> () const</td></tr>
 <tr class="separator:a3974b3af221310b51746ee2b193b57e8 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html">AZ::RHI::ResourcePool</a></td></tr>
-<tr class="memitem:afb820b68e4930670d9fbfbf8e0ce86d8 inherit pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="memItemLeft" align="right" valign="top"><a id="afb820b68e4930670d9fbfbf8e0ce86d8"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html#afb820b68e4930670d9fbfbf8e0ce86d8">PlatformMethod</a> = AZStd::function&lt; RHI::ResultCode()&gt;</td></tr>
-<tr class="memdesc:afb820b68e4930670d9fbfbf8e0ce86d8 inherit pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple functor that returns a result code. <br /></td></tr>
-<tr class="separator:afb820b68e4930670d9fbfbf8e0ce86d8 inherit pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad487efef9adefed547dda0bd07868667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_aliased_heap.html#ad487efef9adefed547dda0bd07868667">ComputeFragmentation</a> () const override</td></tr>
+<tr class="separator:ad487efef9adefed547dda0bd07868667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_a_z_1_1_r_h_i_1_1_resource_pool"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_h_i_1_1_resource_pool')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html">AZ::RHI::ResourcePool</a></td></tr>
 <tr class="memitem:af247b6405cd840826adcebeee47e5daa inherit pro_methods_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="memItemLeft" align="right" valign="top"><a id="af247b6405cd840826adcebeee47e5daa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFrameBegin</b> () override</td></tr>
@@ -196,6 +198,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_object.html#a80ab91a69f8f962f519c29f6529cac51">Init</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">Device</a> &amp;device)</td></tr>
 <tr class="memdesc:a80ab91a69f8f962f519c29f6529cac51 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_device_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">The derived class should call this method to assign the device. <br /></td></tr>
 <tr class="separator:a80ab91a69f8f962f519c29f6529cac51 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html">AZ::RHI::ResourcePool</a></td></tr>
+<tr class="memitem:afb820b68e4930670d9fbfbf8e0ce86d8 inherit pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="memItemLeft" align="right" valign="top"><a id="afb820b68e4930670d9fbfbf8e0ce86d8"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html#afb820b68e4930670d9fbfbf8e0ce86d8">PlatformMethod</a> = AZStd::function&lt; RHI::ResultCode()&gt;</td></tr>
+<tr class="memdesc:afb820b68e4930670d9fbfbf8e0ce86d8 inherit pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple functor that returns a result code. <br /></td></tr>
+<tr class="separator:afb820b68e4930670d9fbfbf8e0ce86d8 inherit pro_types_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_a_z_1_1_r_h_i_1_1_resource_pool"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_r_h_i_1_1_resource_pool')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html">AZ::RHI::ResourcePool</a></td></tr>
 <tr class="memitem:a3181366eaa57c5f71850feb2b67bfd2c inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_pool_memory_usage.html">PoolMemoryUsage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html#a3181366eaa57c5f71850feb2b67bfd2c">m_memoryUsage</a></td></tr>
 <tr class="separator:a3181366eaa57c5f71850feb2b67bfd2c inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_resource_pool"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,13 +237,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="ad487efef9adefed547dda0bd07868667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad487efef9adefed547dda0bd07868667">&#9670;&nbsp;</a></span>ComputeFragmentation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RHI::AliasedHeap::ComputeFragmentation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compute the memory fragmentation for each constituent heap and store the results in m_memoryUsage. This method is invoked when memory statistics gathering is active. </p>
+
+<p>Implements <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool.html#ac386f4f293542b761c4e1913760b088f">AZ::RHI::ResourcePool</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/RHI/Code/Include/Atom/RHI/AliasedHeap.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:26 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

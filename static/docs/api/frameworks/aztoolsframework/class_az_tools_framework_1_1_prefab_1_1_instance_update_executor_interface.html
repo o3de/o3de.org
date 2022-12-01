@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -53,6 +53,11 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Interface to handle instance update in template propagation.  
+ <a href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#details">More...</a></p>
+
+<p><code>#include &lt;InstanceUpdateExecutorInterface.h&gt;</code></p>
+
 <p>Inherited by <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html">AzToolsFramework::Prefab::InstanceUpdateExecutor</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -60,23 +65,232 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a93fe0c772c836884d509b1812590b679"><td class="memItemLeft" align="right" valign="top"><a id="a93fe0c772c836884d509b1812590b679"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html">InstanceUpdateExecutorInterface</a>, &quot;{26BB4ACF-6EA5-4668-84E7-AB75B90BA449}&quot;)</td></tr>
 <tr class="separator:a93fe0c772c836884d509b1812590b679"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bb8bd6539a96918386b1b090aa7f27e"><td class="memItemLeft" align="right" valign="top"><a id="a2bb8bd6539a96918386b1b090aa7f27e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddTemplateInstancesToQueue</b> (TemplateId instanceTemplateId, InstanceOptionalReference instanceToExclude=AZStd::nullopt)=0</td></tr>
-<tr class="separator:a2bb8bd6539a96918386b1b090aa7f27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae64bd93546a57c15ab9c8827111eb9a5"><td class="memItemLeft" align="right" valign="top"><a id="ae64bd93546a57c15ab9c8827111eb9a5"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateTemplateInstancesInQueue</b> ()=0</td></tr>
+<tr class="memitem:a2631b2235ff4e6628fe659b30cf8bc51"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#a2631b2235ff4e6628fe659b30cf8bc51">AddInstanceToQueue</a> (InstanceOptionalReference instance)=0</td></tr>
+<tr class="separator:a2631b2235ff4e6628fe659b30cf8bc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a9de5e8e86faca1c9f23865aa0f2e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#aa4a9de5e8e86faca1c9f23865aa0f2e0">AddTemplateInstancesToQueue</a> (TemplateId instanceTemplateId, InstanceOptionalConstReference instanceToExclude=AZStd::nullopt)=0</td></tr>
+<tr class="separator:aa4a9de5e8e86faca1c9f23865aa0f2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64bd93546a57c15ab9c8827111eb9a5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#ae64bd93546a57c15ab9c8827111eb9a5">UpdateTemplateInstancesInQueue</a> ()=0</td></tr>
 <tr class="separator:ae64bd93546a57c15ab9c8827111eb9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc1b8fecfaaca6548eaac0992ee2a3c"><td class="memItemLeft" align="right" valign="top"><a id="accc1b8fecfaaca6548eaac0992ee2a3c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveTemplateInstanceFromQueue</b> (const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> *instance)=0</td></tr>
-<tr class="separator:accc1b8fecfaaca6548eaac0992ee2a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86d595f1c4ea2a4ae2aaa497305df8c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#ac86d595f1c4ea2a4ae2aaa497305df8c">RemoveTemplateInstanceFromQueue</a> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> *instance)=0</td></tr>
+<tr class="separator:ac86d595f1c4ea2a4ae2aaa497305df8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab1a97364df48b0d02f12c3b2e0d5e1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#a9ab1a97364df48b0d02f12c3b2e0d5e1">QueueRootPrefabLoadedNotificationForNextPropagation</a> ()=0</td></tr>
+<tr class="separator:a9ab1a97364df48b0d02f12c3b2e0d5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e18b39a29928e47aa91fb2616435bec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#a6e18b39a29928e47aa91fb2616435bec">SetShouldPauseInstancePropagation</a> (bool shouldPausePropagation)=0</td></tr>
+<tr class="separator:a6e18b39a29928e47aa91fb2616435bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface to handle instance update in template propagation. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2631b2235ff4e6628fe659b30cf8bc51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2631b2235ff4e6628fe659b30cf8bc51">&#9670;&nbsp;</a></span>AddInstanceToQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzToolsFramework::Prefab::InstanceUpdateExecutorInterface::AddInstanceToQueue </td>
+          <td>(</td>
+          <td class="paramtype">InstanceOptionalReference&#160;</td>
+          <td class="paramname"><em>instance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adds an instance into queue for updating it later. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>The instance to be added to queue. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html#aeb7b23020734214fdbd8d015fdbf4a32">AzToolsFramework::Prefab::InstanceUpdateExecutor</a>.</p>
+
+</div>
+</div>
+<a id="aa4a9de5e8e86faca1c9f23865aa0f2e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a9de5e8e86faca1c9f23865aa0f2e0">&#9670;&nbsp;</a></span>AddTemplateInstancesToQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzToolsFramework::Prefab::InstanceUpdateExecutorInterface::AddTemplateInstancesToQueue </td>
+          <td>(</td>
+          <td class="paramtype">TemplateId&#160;</td>
+          <td class="paramname"><em>instanceTemplateId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InstanceOptionalConstReference&#160;</td>
+          <td class="paramname"><em>instanceToExclude</em> = <code>AZStd::nullopt</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adds all instances of template with given id into queue for updating them later. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instanceTemplateId</td><td>The template id used to retrieve all instances. </td></tr>
+    <tr><td class="paramname">instanceToExclude</td><td>The instance to be excluded. It is nullopt by default. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html#a33e9836225a26162303985ffa2be5783">AzToolsFramework::Prefab::InstanceUpdateExecutor</a>.</p>
+
+</div>
+</div>
+<a id="a9ab1a97364df48b0d02f12c3b2e0d5e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ab1a97364df48b0d02f12c3b2e0d5e1">&#9670;&nbsp;</a></span>QueueRootPrefabLoadedNotificationForNextPropagation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzToolsFramework::Prefab::InstanceUpdateExecutorInterface::QueueRootPrefabLoadedNotificationForNextPropagation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the flag that tells whether root prefab instance is loaded to false. A notification OnRootPrefabInstanceLoaded will fire during the propagation if root prefab instance is loaded for the first time after this function is called. </p>
+
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html#aa2ec557f2652af53dcd8e92073fc5d21">AzToolsFramework::Prefab::InstanceUpdateExecutor</a>.</p>
+
+</div>
+</div>
+<a id="ac86d595f1c4ea2a4ae2aaa497305df8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac86d595f1c4ea2a4ae2aaa497305df8c">&#9670;&nbsp;</a></span>RemoveTemplateInstanceFromQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzToolsFramework::Prefab::InstanceUpdateExecutorInterface::RemoveTemplateInstanceFromQueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> *&#160;</td>
+          <td class="paramname"><em>instance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Removes an instance from the waiting queue. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>The instance to be removed from queue. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html#a3913a3bdb0de93a8c2b1f0dff7cd0051">AzToolsFramework::Prefab::InstanceUpdateExecutor</a>.</p>
+
+</div>
+</div>
+<a id="a6e18b39a29928e47aa91fb2616435bec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e18b39a29928e47aa91fb2616435bec">&#9670;&nbsp;</a></span>SetShouldPauseInstancePropagation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzToolsFramework::Prefab::InstanceUpdateExecutorInterface::SetShouldPauseInstancePropagation </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shouldPausePropagation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets whether to pause instance propagation or not. When making property changes in the entity editor, pausing propagation during editing will prevent the user from losing control of the properties they are editing. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shouldPausePropagation</td><td>Flag that decides whether to pause propagation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html#af67caaa89c1919449400bbf0fd5b224d">AzToolsFramework::Prefab::InstanceUpdateExecutor</a>.</p>
+
+</div>
+</div>
+<a id="ae64bd93546a57c15ab9c8827111eb9a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64bd93546a57c15ab9c8827111eb9a5">&#9670;&nbsp;</a></span>UpdateTemplateInstancesInQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AzToolsFramework::Prefab::InstanceUpdateExecutorInterface::UpdateTemplateInstancesInQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates instances in the waiting queue. </p><dl class="section return"><dt>Returns</dt><dd>bool on whether the operation succeeds. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html#afa6312856c38c8d959348abc9bea937b">AzToolsFramework::Prefab::InstanceUpdateExecutor</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Prefab/Instance/InstanceUpdateExecutorInterface.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:39 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:33 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

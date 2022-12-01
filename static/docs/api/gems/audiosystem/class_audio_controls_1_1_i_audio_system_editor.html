@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AudioSystem Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -89,6 +89,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_controls_1_1_i_audio_system_editor.html#ac39da867569a392c44267a61d10ddb55">DataSaved</a> ()=0</td></tr>
 <tr class="memdesc:ac39da867569a392c44267a61d10ddb55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the plugin that the ACE has saved the data in case it needs to do any clean up. <br /></td></tr>
 <tr class="separator:ac39da867569a392c44267a61d10ddb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0329e644fe7506e9f3668b7121d6dcb"><td class="memItemLeft" align="right" valign="top">virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_controls_1_1_i_audio_system_editor.html#ab0329e644fe7506e9f3668b7121d6dcb">CreateConnectionPropertiesWidget</a> ([[maybe_unused]] const TConnectionPtr connection, [[maybe_unused]] EACEControlType atlControlType)</td></tr>
+<tr class="separator:ab0329e644fe7506e9f3668b7121d6dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2d9dae897fc7a5e68e5490561dc4abf3"></a>
@@ -164,6 +166,43 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created connection. </dd></dl>
+
+</div>
+</div>
+<a id="ab0329e644fe7506e9f3668b7121d6dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0329e644fe7506e9f3668b7121d6dcb">&#9670;&nbsp;</a></span>CreateConnectionPropertiesWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QWidget* AudioControls::IAudioSystemEditor::CreateConnectionPropertiesWidget </td>
+          <td>(</td>
+          <td class="paramtype">[[maybe_unused] ] const TConnectionPtr&#160;</td>
+          <td class="paramname"><em>connection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[[maybe_unused] ] EACEControlType&#160;</td>
+          <td class="paramname"><em>atlControlType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a widget for modifying connection properties. The widget must have a "PropertiesChanged()" signal. The widget ownership transferred to the caller. </p>
 
 </div>
 </div>
@@ -537,7 +576,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:35 for Open 3D Engine AudioSystem Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:30 for Open 3D Engine AudioSystem Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

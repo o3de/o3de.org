@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,18 +46,20 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
+<dt>Member <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#a8967cd6bdb6aff39d578633034cf958c">AzToolsFramework::AssetBrowser::AssetBrowserEntry::FromMimeData</a>  (const QMimeData *mimeData, AZStd::vector&lt; const AssetBrowserEntry * &gt; &amp;entries)</dt>
+<dd><a class="anchor" id="_deprecated000001"></a>: Use "AssetBrowserEntryUtils::FromMimeData" instead  </dd>
 <dt>Member <a class="el" href="class_az_tools_framework_1_1_box_manipulator_requests.html#a80c0f2896f1fb3fde0d920dcda786cda">AzToolsFramework::BoxManipulatorRequests::GetBoxScale</a>  ()=0</dt>
-<dd><a class="anchor" id="_deprecated000003"></a>Because non-uniform scale effects can be complex, it is recommended to separately use AZ::TransformBus::Events::GetWorldTM, AZ::NonUniformScaleRequests::GetScale and GetCurrentLocalTransform and combine their effects. Get the scale currently applied to the box. With the Box Shape, the largest x/y/z component is taken so scale is always uniform, with colliders the scale may be different per component.  </dd>
+<dd><a class="anchor" id="_deprecated000004"></a>Because non-uniform scale effects can be complex, it is recommended to separately use AZ::TransformBus::Events::GetWorldTM, AZ::NonUniformScaleRequests::GetScale and GetCurrentLocalTransform and combine their effects. Get the scale currently applied to the box. With the Box Shape, the largest x/y/z component is taken so scale is always uniform, with colliders the scale may be different per component.  </dd>
 <dt>Member <a class="el" href="class_az_tools_framework_1_1_box_manipulator_requests.html#a6b282c7f9f01082f50af856fea6dd399">AzToolsFramework::BoxManipulatorRequests::GetCurrentTransform</a>  ()=0</dt>
-<dd><a class="anchor" id="_deprecated000002"></a>Because non-uniform scale effects can be complex, it is recommended to separately use AZ::TransformBus::Events::GetWorldTM, AZ::NonUniformScaleRequests::GetScale and GetCurrentLocalTransform and combine their effects. Get the transform of the box shape/collider. This is used by <a class="el" href="class_az_tools_framework_1_1_box_component_mode.html">BoxComponentMode</a> instead of the \AZ::TransformBus because a collider may have an additional translation/orientation offset from the Entity transform.  </dd>
+<dd><a class="anchor" id="_deprecated000003"></a>Because non-uniform scale effects can be complex, it is recommended to separately use AZ::TransformBus::Events::GetWorldTM, AZ::NonUniformScaleRequests::GetScale and GetCurrentLocalTransform and combine their effects. Get the transform of the box shape/collider. This is used by <a class="el" href="class_az_tools_framework_1_1_box_component_mode.html">BoxComponentMode</a> instead of the \AZ::TransformBus because a collider may have an additional translation/orientation offset from the Entity transform.  </dd>
 <dt>Member <a class="el" href="class_az_tools_framework_1_1_qt_event_to_az_input_mapper.html#aa21e3a70523bfce40dbc6d28b2476049">AzToolsFramework::QtEventToAzInputMapper::SetCursorCaptureEnabled</a>  (bool enabled)</dt>
-<dd><a class="anchor" id="_deprecated000001"></a>Use <a class="el" href="class_az_tools_framework_1_1_qt_event_to_az_input_mapper.html#aaf0521835c4c6943e26ae567912482f2" title="Set the cursor mode.">SetCursorMode()</a> </dd>
+<dd><a class="anchor" id="_deprecated000002"></a>Use <a class="el" href="class_az_tools_framework_1_1_qt_event_to_az_input_mapper.html#aaf0521835c4c6943e26ae567912482f2" title="Set the cursor mode.">SetCursorMode()</a> </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:18:19 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:28 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

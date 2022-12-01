@@ -25,7 +25,7 @@ O3DE has build support for the following platforms and toolchains:
 
 | Platform | Supported toolchains |
 | --- | --- |
-| Windows 64-bit | Visual Studio 2019 |
+| Windows 64-bit | Visual Studio ([supported versions](/docs/welcome-guide/requirements/#microsoft-visual-studio)) |
 | Linux | Clang/LLVM |
 | macOS, iOS | XCode {{< versions/xcode >}} or later |
 | Android | Android Clang/LLVM |
@@ -54,7 +54,14 @@ To configure an O3DE project using CMake, you'll need the following information:
 
 * The locations of the build source and output directories.
 * The generator you want to use to create the native project files.
-* The location of the downloadable packages, also known as the third-party libraries.
+
+    | Platform / Build System | Generator |
+    | --- | --- |
+    | Windows / Visual Studio 2019 | `Visual Studio 16` |
+    | Windows / Visual Studio 2022 | `Visual Studio 17` |
+    | Linux / Ninja | `Ninja Multi-Config` |
+
+* The location of the downloadable packages, also known as the third-party libraries. The default location is `<user>/.o3de/3rdParty` for Windows, and `$HOME/.o3de/3rdParty` for Linux.
 
 ### Configure with the CMake CLI
 
@@ -64,7 +71,7 @@ The typical CMake command used to configure a project looks like the following:
 {{% tab name="Windows" %}}
 
 ```cmd
-cmake -B build/windows_vs2019 -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=<downloadable-packages-directory>
+cmake -B build/windows -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=<downloadable-packages-directory>
 ```
 
 {{% /tab %}}
@@ -103,7 +110,7 @@ CMake also offers an intuitive, GUI-based tool that you can use instead of the c
 1. Set the following values in the GUI after launching it:
 
     * Set the **Where is the source code:** text field to your O3DE project directory.
-    * Set the **Where to build the binaries:** text field to a subdirectory of your O3DE project where you want your build files to be generated. Typical values are `build\windows_vs2019` for Windows, and `build/linux` for Linux platforms.
+    * Set the **Where to build the binaries:** text field to a subdirectory of your O3DE project where you want your build files to be generated. Typical values are `<project-dir>/build/windows` for Windows, and `<project-dir>/build/linux` for Linux platforms.
 
 1. (Optional) Choose the **Add Entry** button and add a cache entry for the `LY_3RDPARTY_PATH` downloadable package directory. Use the following values for this entry:
 
@@ -117,7 +124,7 @@ CMake also offers an intuitive, GUI-based tool that you can use instead of the c
 
 1. Specify the generator for the project.
 
-    * **For Windows:** Visual Studio 16 2019
+    * **For Windows:** Visual Studio 16 _or_ Visual Studio 17
     * **For Linux:** Ninja Multi-Config
 
 1. Inspect the variables that are read in and update any that are not correct.
@@ -159,7 +166,7 @@ Use the following command to build just the Editor and its tool dependencies:
 {{% tab name="Windows" %}}
 
 ```cmd
-cmake --build build/windows_vs2019 --target Editor --config profile -- -m
+cmake --build build/windows --target Editor --config profile -- -m
 ```
 
 * `--build` : Location of build directory, where to put the build output.
@@ -167,7 +174,7 @@ cmake --build build/windows_vs2019 --target Editor --config profile -- -m
 * `--config` : The build configuration. Refer to the previous section on [Generated build configurations](#generated-build-configurations).
 * `-m` : A recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
 
-In this example, build products are placed in the `build\windows_vs2019\bin\profile` directory.
+In this example, build products are placed in the `build\windows\bin\profile` directory.
 
 {{% /tab %}}
 {{% tab name="Linux" %}}
@@ -194,12 +201,12 @@ Use the following command to build the project, Editor, and its tool dependencie
 {{% tab name="Windows" %}}
 
 ```cmd
-cmake --build build/windows_vs2019 --target <ProjectName>.GameLauncher Editor --config profile -- -m
+cmake --build build/windows --target <ProjectName>.GameLauncher Editor --config profile -- -m
 ```
 
 Refer to the previous section for an explanation of each parameter.
 
-In this example, build products are placed in the `build\windows_vs2019\bin\profile` directory.
+In this example, build products are placed in the `build\windows\bin\profile` directory.
 
 {{% /tab %}}
 {{% tab name="Linux" %}}

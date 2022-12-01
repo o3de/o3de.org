@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -64,6 +64,8 @@ $(function() {
   <tr><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html#a9984dcd171fb86460bdc1e9f315b2d3d">IsActiveView</a>()=0</td><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html">Camera::CameraComponentRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html#a783db1580221ac020830559be5a5e691">IsOrthographic</a>()=0</td><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html">Camera::CameraComponentRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html#a52941e4689852f75af347d3afcd4805f">MakeActiveView</a>()=0</td><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html">Camera::CameraComponentRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html#a9e4e8e37166fac52750dbf85d3ff5267">ScreenNdcToWorld</a>(const AZ::Vector2 &amp;screenNdcPosition, float depth)=0</td><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html">Camera::CameraComponentRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html#a81f2e4d2be6dc39f1e0103c16e72e229">ScreenToWorld</a>(const AZ::Vector2 &amp;screenPosition, float depth)=0</td><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html">Camera::CameraComponentRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html#aa3dcf2a2679baad00a422f668055d085">SetFarClipDistance</a>(float farClipDistance)=0</td><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html">Camera::CameraComponentRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html#a815b087a8f32c829b36edf090edb9488">SetFov</a>(float fov)</td><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html">Camera::CameraComponentRequests</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html#a072f5d1fb9fe47e5be77f35b8f58cdc7">SetFovDegrees</a>(float fovInDegrees)=0</td><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html">Camera::CameraComponentRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
@@ -73,11 +75,13 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html#ad4592d7497a7b68b2dc7a7eb11af4b94">SetNearClipDistance</a>(float nearClipDistance)=0</td><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html">Camera::CameraComponentRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html#aa1b2ee9fe1a266142335272ce771531d">SetOrthographic</a>(bool orthographic)=0</td><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html">Camera::CameraComponentRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html#a03e6553e3b0df82ee8c88a37a1b083bb">SetOrthographicHalfWidth</a>(float halfWidth)=0</td><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html">Camera::CameraComponentRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html#a4493c398ca0bebe8d902db7bbe1e53b0">WorldToScreen</a>(const AZ::Vector3 &amp;worldPosition)=0</td><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html">Camera::CameraComponentRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html#acbb4a00cc4935b0e4682a1495aff8476">WorldToScreenNdc</a>(const AZ::Vector3 &amp;worldPosition)=0</td><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html">Camera::CameraComponentRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>~CameraComponentRequests</b>()=default (defined in <a class="el" href="class_camera_1_1_camera_component_requests.html">Camera::CameraComponentRequests</a>)</td><td class="entry"><a class="el" href="class_camera_1_1_camera_component_requests.html">Camera::CameraComponentRequests</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:23 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:15 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

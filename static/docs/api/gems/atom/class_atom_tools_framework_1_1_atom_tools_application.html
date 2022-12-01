@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -51,6 +51,7 @@ $(function() {
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="class_atom_tools_framework_1_1_atom_tools_application-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AtomToolsFramework::AtomToolsApplication Class Reference</div>  </div>
@@ -62,7 +63,9 @@ $(function() {
 
 <p><code>#include &lt;AtomToolsApplication.h&gt;</code></p>
 
-<p>Inherits Application, AzQtApplication, Handler, Handler, Handler, Handler, and Handler.</p>
+<p>Inherits Application, AzQtApplication, Handler, Handler, Handler, and Handler.</p>
+
+<p>Inherited by <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_application.html">AtomToolsFramework::AtomToolsDocumentApplication</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -75,9 +78,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae080a9daf880736047fcbefad846f388"><td class="memItemLeft" align="right" valign="top"><a id="ae080a9daf880736047fcbefad846f388"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (AtomTools::AtomToolsApplication, &quot;{A0DF25BA-6F74-4F11-9F85-0F99278D5986}&quot;)</td></tr>
 <tr class="separator:ae080a9daf880736047fcbefad846f388"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89eeaaa47b62073c44ea1e03d37342df"><td class="memItemLeft" align="right" valign="top"><a id="a89eeaaa47b62073c44ea1e03d37342df"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AtomToolsApplication</b> (int *argc, char ***argv)</td></tr>
-<tr class="separator:a89eeaaa47b62073c44ea1e03d37342df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae735beb3a8699c818d32a27e8874d87"><td class="memItemLeft" align="right" valign="top"><a id="aae735beb3a8699c818d32a27e8874d87"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_atom_tools_framework_1_1_atom_tools_application.html">AtomToolsApplication</a>)</td></tr>
+<tr class="separator:aae735beb3a8699c818d32a27e8874d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2affdd1b4addc1b6839e69460c55cb5e"><td class="memItemLeft" align="right" valign="top"><a id="a2affdd1b4addc1b6839e69460c55cb5e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AtomToolsApplication</b> (const char *targetName, int *argc, char ***argv)</td></tr>
+<tr class="separator:a2affdd1b4addc1b6839e69460c55cb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a892923be13b2ba9e8535443d53811f07"><td class="memItemLeft" align="right" valign="top"><a id="a892923be13b2ba9e8535443d53811f07"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>LaunchLocalServer</b> ()</td></tr>
 <tr class="separator:a892923be13b2ba9e8535443d53811f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,27 +108,24 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentCon
 <tr class="memitem:af1a8dfe5ad573309772017e753eb2592"><td class="memItemLeft" align="right" valign="top"><a id="af1a8dfe5ad573309772017e753eb2592"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>StartCommon</b> (AZ::Entity *systemEntity) override</td></tr>
 <tr class="separator:af1a8dfe5ad573309772017e753eb2592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af696a9d7285a048be55ae78bcb42e30c"><td class="memItemLeft" align="right" valign="top"><a id="af696a9d7285a048be55ae78bcb42e30c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Tick</b> (float deltaOverride=-1.f) override</td></tr>
-<tr class="separator:af696a9d7285a048be55ae78bcb42e30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a662533066fbb914cd3cfe2b0b8fde0e0"><td class="memItemLeft" align="right" valign="top"><a id="a662533066fbb914cd3cfe2b0b8fde0e0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Stop</b> () override</td></tr>
-<tr class="separator:a662533066fbb914cd3cfe2b0b8fde0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e8cd6a1c1408d90b8de9044d4b5c9c"><td class="memItemLeft" align="right" valign="top"><a id="a47e8cd6a1c1408d90b8de9044d4b5c9c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Destroy</b> () override</td></tr>
+<tr class="separator:a47e8cd6a1c1408d90b8de9044d4b5c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca7b85e5d7c14e0252b70d82cddfbd4"><td class="memItemLeft" align="right" valign="top"><a id="a3ca7b85e5d7c14e0252b70d82cddfbd4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RunMainLoop</b> () override</td></tr>
+<tr class="separator:a3ca7b85e5d7c14e0252b70d82cddfbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:aecf2834b6821f36d5a7691dc2bf4f28d"><td class="memItemLeft" align="right" valign="top"><a id="aecf2834b6821f36d5a7691dc2bf4f28d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnIdle</b> ()</td></tr>
+<tr class="separator:aecf2834b6821f36d5a7691dc2bf4f28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a735ea86181c0155839fd7c184af1647f"><td class="memItemLeft" align="right" valign="top"><a id="a735ea86181c0155839fd7c184af1647f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnMainWindowClosing</b> () override</td></tr>
 <tr class="separator:a735ea86181c0155839fd7c184af1647f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dcc1186649cf7929d9e7a2b88e11f05"><td class="memItemLeft" align="right" valign="top"><a id="a8dcc1186649cf7929d9e7a2b88e11f05"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetDatabaseLocation</b> (AZStd::string &amp;result) override</td></tr>
 <tr class="separator:a8dcc1186649cf7929d9e7a2b88e11f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47e8cd6a1c1408d90b8de9044d4b5c9c"><td class="memItemLeft" align="right" valign="top"><a id="a47e8cd6a1c1408d90b8de9044d4b5c9c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Destroy</b> () override</td></tr>
-<tr class="separator:a47e8cd6a1c1408d90b8de9044d4b5c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa41811eab6d1a9e3a8e2be281fd0de7d"><td class="memItemLeft" align="right" valign="top"><a id="aa41811eab6d1a9e3a8e2be281fd0de7d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AssetSystemAvailable</b> () override</td></tr>
-<tr class="separator:aa41811eab6d1a9e3a8e2be281fd0de7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae81ea900574304580894a4164ee42f95"><td class="memItemLeft" align="right" valign="top"><a id="ae81ea900574304580894a4164ee42f95"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>QueryApplicationType</b> (AZ::ApplicationTypeQuery &amp;appType) const override</td></tr>
 <tr class="separator:ae81ea900574304580894a4164ee42f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,10 +141,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnErrorMessage</b> (A
 <tr class="memitem:a3918e6101120fa2a6b5c788cd8cc9e7b"><td class="memItemLeft" align="right" valign="top"><a id="a3918e6101120fa2a6b5c788cd8cc9e7b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnExceptionMessage</b> (AZStd::string_view message) override</td></tr>
 <tr class="separator:a3918e6101120fa2a6b5c788cd8cc9e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54f09ebe01ff60035686742aa13ed8a1"><td class="memItemLeft" align="right" valign="top"><a id="a54f09ebe01ff60035686742aa13ed8a1"></a>
-virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_application.html#a54f09ebe01ff60035686742aa13ed8a1">GetBuildTargetName</a> () const</td></tr>
-<tr class="memdesc:a54f09ebe01ff60035686742aa13ed8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executable target name generally used as a prefix for logging and other saved files. <br /></td></tr>
-<tr class="separator:a54f09ebe01ff60035686742aa13ed8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42675e4ea96806e13700bf6c9fb364f0"><td class="memItemLeft" align="right" valign="top"><a id="a42675e4ea96806e13700bf6c9fb364f0"></a>
 virtual AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_application.html#a42675e4ea96806e13700bf6c9fb364f0">GetCriticalAssetFilters</a> () const</td></tr>
 <tr class="memdesc:a42675e4ea96806e13700bf6c9fb364f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of filters for assets that need to be pre-built to run the application. <br /></td></tr>
@@ -152,18 +151,36 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadSettings<
 <tr class="memitem:a37fc2917c12666da125a74bb6ee94cdf"><td class="memItemLeft" align="right" valign="top"><a id="a37fc2917c12666da125a74bb6ee94cdf"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UnloadSettings</b> ()</td></tr>
 <tr class="separator:a37fc2917c12666da125a74bb6ee94cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ba2219e188ecaea47246b39a035a21"><td class="memItemLeft" align="right" valign="top"><a id="a48ba2219e188ecaea47246b39a035a21"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ConnectToAssetProcessor</b> ()</td></tr>
+<tr class="separator:a48ba2219e188ecaea47246b39a035a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaf3c0b67a1f87e8130b2cacfbe9806c"><td class="memItemLeft" align="right" valign="top"><a id="afaf3c0b67a1f87e8130b2cacfbe9806c"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CompileCriticalAssets</b> ()</td></tr>
 <tr class="separator:afaf3c0b67a1f87e8130b2cacfbe9806c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a885ffad61f2794b8587d64e7dceefc36"><td class="memItemLeft" align="right" valign="top"><a id="a885ffad61f2794b8587d64e7dceefc36"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessCommandLine</b> (const AZ::CommandLine &amp;commandLine)</td></tr>
 <tr class="separator:a885ffad61f2794b8587d64e7dceefc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f9a1d8d9318b1649bc5728d1ab0794"><td class="memItemLeft" align="right" valign="top"><a id="ac6f9a1d8d9318b1649bc5728d1ab0794"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAlways</b> (const AZStd::string &amp;output)</td></tr>
+<tr class="separator:ac6f9a1d8d9318b1649bc5728d1ab0794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7221b6172325b15245f7f1fcae40f43"><td class="memItemLeft" align="right" valign="top"><a id="af7221b6172325b15245f7f1fcae40f43"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RedirectStdoutToNull</b> ()</td></tr>
+<tr class="separator:af7221b6172325b15245f7f1fcae40f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:a3eb66d26ae77e7d32a8d6257cb04be61"><td class="memItemLeft" align="right" valign="top"><a id="a3eb66d26ae77e7d32a8d6257cb04be61"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>PyIdleWaitFrames</b> (uint32_t frames)</td></tr>
 <tr class="separator:a3eb66d26ae77e7d32a8d6257cb04be61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3226bc0e4b35a2a19676d9708b5c7938"><td class="memItemLeft" align="right" valign="top"><a id="a3226bc0e4b35a2a19676d9708b5c7938"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>PyExit</b> ()</td></tr>
+<tr class="separator:a3226bc0e4b35a2a19676d9708b5c7938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0831979ae5a8832ccbf69ab8a1b07f56"><td class="memItemLeft" align="right" valign="top"><a id="a0831979ae5a8832ccbf69ab8a1b07f56"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>PyTestOutput</b> (const AZStd::string &amp;output)</td></tr>
+<tr class="separator:a0831979ae5a8832ccbf69ab8a1b07f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70991719c7ba8b5ca4ccfda548382669"><td class="memItemLeft" align="right" valign="top"><a id="a70991719c7ba8b5ca4ccfda548382669"></a>
+static <a class="el" href="class_atom_tools_framework_1_1_atom_tools_application.html">AtomToolsApplication</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetInstance</b> ()</td></tr>
+<tr class="separator:a70991719c7ba8b5ca4ccfda548382669"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -175,21 +192,42 @@ AZStd::unique_ptr&lt; AzQtComponents::StyleManager &gt;&#160;</td><td class="mem
 <tr class="separator:a8c6a200565a5cc83760a9d10ba99c3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a313a44162be104218160357dbecf241e"><td class="memItemLeft" align="right" valign="top"><a id="a313a44162be104218160357dbecf241e"></a>
 AZ::UserSettingsProvider&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_application.html#a313a44162be104218160357dbecf241e">m_localUserSettings</a></td></tr>
-<tr class="memdesc:a313a44162be104218160357dbecf241e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local user settings are used to store material browser tree expansion state. <br /></td></tr>
+<tr class="memdesc:a313a44162be104218160357dbecf241e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local user settings are used to store asset browser tree expansion state. <br /></td></tr>
 <tr class="separator:a313a44162be104218160357dbecf241e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a198c64b013a4904bbef66a958bb46c07"><td class="memItemLeft" align="right" valign="top"><a id="a198c64b013a4904bbef66a958bb46c07"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_application.html#a198c64b013a4904bbef66a958bb46c07">m_activatedLocalUserSettings</a> = false</td></tr>
 <tr class="memdesc:a198c64b013a4904bbef66a958bb46c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Are local settings loaded. <br /></td></tr>
 <tr class="separator:a198c64b013a4904bbef66a958bb46c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6742959b4402c1f1568487e5cc711e6e"><td class="memItemLeft" align="right" valign="top"><a id="a6742959b4402c1f1568487e5cc711e6e"></a>
-QTimer&#160;</td><td class="memItemRight" valign="bottom"><b>m_timer</b></td></tr>
-<tr class="separator:a6742959b4402c1f1568487e5cc711e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cc76f888dbedfb729871ca058c17236"><td class="memItemLeft" align="right" valign="top"><a id="a1cc76f888dbedfb729871ca058c17236"></a>
 <a class="el" href="class_atom_tools_framework_1_1_local_socket.html">AtomToolsFramework::LocalSocket</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_socket</b></td></tr>
 <tr class="separator:a1cc76f888dbedfb729871ca058c17236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0d84f22200b0c990618587ef6cc6e14"><td class="memItemLeft" align="right" valign="top"><a id="ad0d84f22200b0c990618587ef6cc6e14"></a>
 <a class="el" href="class_atom_tools_framework_1_1_local_server.html">AtomToolsFramework::LocalServer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_server</b></td></tr>
 <tr class="separator:ad0d84f22200b0c990618587ef6cc6e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f9a9848cd368f07b2cb57e6bd01529"><td class="memItemLeft" align="right" valign="top"><a id="a90f9a9848cd368f07b2cb57e6bd01529"></a>
+AZStd::unique_ptr&lt; <a class="el" href="class_atom_tools_framework_1_1_atom_tools_asset_browser_interactions.html">AtomToolsFramework::AtomToolsAssetBrowserInteractions</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetBrowserInteractions</b></td></tr>
+<tr class="separator:a90f9a9848cd368f07b2cb57e6bd01529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac40990d45f774bf32230cf91b200251e"><td class="memItemLeft" align="right" valign="top"><a id="ac40990d45f774bf32230cf91b200251e"></a>
+const AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_targetName</b></td></tr>
+<tr class="separator:ac40990d45f774bf32230cf91b200251e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae263241370672c4d93c4437aa6b53e85"><td class="memItemLeft" align="right" valign="top"><a id="ae263241370672c4d93c4437aa6b53e85"></a>
+const AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>m_toolId</b> = {}</td></tr>
+<tr class="separator:ae263241370672c4d93c4437aa6b53e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2cbcff1028c01d79529212fe37ea63b"><td class="memItemLeft" align="right" valign="top"><a id="ab2cbcff1028c01d79529212fe37ea63b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_PUSH_DISABLE_DLL_EXPORT_MEMBER_WARNING</b></td></tr>
+<tr class="separator:ab2cbcff1028c01d79529212fe37ea63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05090fb5e05ffdea50df46f22808719e"><td class="memItemLeft" align="right" valign="top"><a id="a05090fb5e05ffdea50df46f22808719e"></a>
+AZ::IO::FileDescriptorRedirector&#160;</td><td class="memItemRight" valign="bottom"><b>m_stdoutRedirection</b> = AZ::IO::FileDescriptorRedirector(1)</td></tr>
+<tr class="separator:a05090fb5e05ffdea50df46f22808719e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3404a5c41ea7aa5628b149f2456e66a"><td class="memItemLeft" align="right" valign="top"><a id="af3404a5c41ea7aa5628b149f2456e66a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_POP_DISABLE_DLL_EXPORT_MEMBER_WARNING</b></td></tr>
+<tr class="separator:af3404a5c41ea7aa5628b149f2456e66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:acbcf5083787d3b5dc960bf734eea3ec5"><td class="memItemLeft" align="right" valign="top"><a id="acbcf5083787d3b5dc960bf734eea3ec5"></a>
+static <a class="el" href="class_atom_tools_framework_1_1_atom_tools_application.html">AtomToolsApplication</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_instance</b></td></tr>
+<tr class="separator:acbcf5083787d3b5dc960bf734eea3ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for Atom tools to inherit from. </p>
@@ -199,7 +237,7 @@ QTimer&#160;</td><td class="memItemRight" valign="bottom"><b>m_timer</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

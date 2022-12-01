@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -58,9 +58,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abf332f2f81f7fa21707604858b1b419c"><td class="memItemLeft" align="right" valign="top"><a id="abf332f2f81f7fa21707604858b1b419c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StreamingImageInitRequest</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_image.html">Image</a> &amp;image, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_descriptor.html">ImageDescriptor</a> &amp;descriptor, AZStd::array_view&lt; <a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_mip_slice.html">StreamingImageMipSlice</a> &gt; tailMipSlices)</td></tr>
-<tr class="separator:abf332f2f81f7fa21707604858b1b419c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac814f9fcb7e6acaac6d85c24c75b693a"><td class="memItemLeft" align="right" valign="top"><a id="ac814f9fcb7e6acaac6d85c24c75b693a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>StreamingImageInitRequest</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_image.html">Image</a> &amp;image, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_descriptor.html">ImageDescriptor</a> &amp;descriptor, AZStd::span&lt; const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_mip_slice.html">StreamingImageMipSlice</a> &gt; tailMipSlices)</td></tr>
+<tr class="separator:ac814f9fcb7e6acaac6d85c24c75b693a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -72,20 +72,20 @@ Public Attributes</h2></td></tr>
 <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_descriptor.html">ImageDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_init_request.html#a25137c43ec5679bf5c5e0022a6d17414">m_descriptor</a></td></tr>
 <tr class="memdesc:a25137c43ec5679bf5c5e0022a6d17414"><td class="mdescLeft">&#160;</td><td class="mdescRight">The descriptor used to to initialize the image. <br /></td></tr>
 <tr class="separator:a25137c43ec5679bf5c5e0022a6d17414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1716117d5727798640ccdac9cb14a28c"><td class="memItemLeft" align="right" valign="top">AZStd::array_view&lt; <a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_mip_slice.html">StreamingImageMipSlice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_init_request.html#a1716117d5727798640ccdac9cb14a28c">m_tailMipSlices</a></td></tr>
-<tr class="separator:a1716117d5727798640ccdac9cb14a28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09aa3b765d6913572fb70077acf6cde0"><td class="memItemLeft" align="right" valign="top">AZStd::span&lt; const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_mip_slice.html">StreamingImageMipSlice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_init_request.html#a09aa3b765d6913572fb70077acf6cde0">m_tailMipSlices</a></td></tr>
+<tr class="separator:a09aa3b765d6913572fb70077acf6cde0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A structure used as an argument to <a class="el" href="class_a_z_1_1_r_h_i_1_1_streaming_image_pool.html#a0098bbdfbc2ef630034715a7385a022c" title="Initializes the backing resources of an image.">StreamingImagePool::InitImage</a>. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1716117d5727798640ccdac9cb14a28c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1716117d5727798640ccdac9cb14a28c">&#9670;&nbsp;</a></span>m_tailMipSlices</h2>
+<a id="a09aa3b765d6913572fb70077acf6cde0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09aa3b765d6913572fb70077acf6cde0">&#9670;&nbsp;</a></span>m_tailMipSlices</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">AZStd::array_view&lt;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_mip_slice.html">StreamingImageMipSlice</a>&gt; AZ::RHI::StreamingImageInitRequest::m_tailMipSlices</td>
+          <td class="memname">AZStd::span&lt;const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_mip_slice.html">StreamingImageMipSlice</a>&gt; AZ::RHI::StreamingImageInitRequest::m_tailMipSlices</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -99,7 +99,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:28 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:21 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

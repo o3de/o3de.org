@@ -6,6 +6,8 @@ toc: true
 weight: 400
 ---
 
+[Amazon GameLift FlexMatch](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-intro.html) provides matchmaking features to find and group players together for online multiplayer games.
+
 ## Topics
 
 | Topic | Description |

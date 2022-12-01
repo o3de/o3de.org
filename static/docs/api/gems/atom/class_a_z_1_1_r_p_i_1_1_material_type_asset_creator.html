@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -55,7 +55,7 @@ $(function() {
 
 <p><code>#include &lt;MaterialTypeAssetCreator.h&gt;</code></p>
 
-<p>Inherits <a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html">AZ::RPI::AssetCreator&lt; MaterialTypeAsset &gt;</a>, and <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset_creator_common.html">AZ::RPI::MaterialAssetCreatorCommon</a>.</p>
+<p>Inherits <a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html">AZ::RPI::AssetCreator&lt; MaterialTypeAsset &gt;</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -63,8 +63,11 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a33a67e88c217e244b89d5cbb62389047">Begin</a> (const Data::AssetId &amp;assetId)</td></tr>
 <tr class="memdesc:a33a67e88c217e244b89d5cbb62389047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin creating a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a>. <br /></td></tr>
 <tr class="separator:a33a67e88c217e244b89d5cbb62389047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab84d4a75210a70532fa6d977590ca40e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#ab84d4a75210a70532fa6d977590ca40e">AddShader</a> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">AZ::Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset, const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_id.html">ShaderVariantId</a> &amp;shaderVaraintId=<a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_id.html">ShaderVariantId</a>{}, const AZ::Name &amp;shaderTag=Uuid::CreateRandom().ToString&lt; AZ::Name &gt;())</td></tr>
-<tr class="separator:ab84d4a75210a70532fa6d977590ca40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39ed8f296e9baa68a5ec5f196fffdfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#ab39ed8f296e9baa68a5ec5f196fffdfd">AddShader</a> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">AZ::Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset, const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_id.html">ShaderVariantId</a> &amp;shaderVariantId=<a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_id.html">ShaderVariantId</a>{})</td></tr>
+<tr class="separator:ab39ed8f296e9baa68a5ec5f196fffdfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49514c3e284f95fbdbc9244a9b5684c4"><td class="memItemLeft" align="right" valign="top"><a id="a49514c3e284f95fbdbc9244a9b5684c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddShader</b> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">AZ::Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset, const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_id.html">ShaderVariantId</a> &amp;shaderVariantId, const AZ::Name &amp;shaderTag)</td></tr>
+<tr class="separator:a49514c3e284f95fbdbc9244a9b5684c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace3b79e3d140b2cd4e2a6cf37e40cfce"><td class="memItemLeft" align="right" valign="top"><a id="ace3b79e3d140b2cd4e2a6cf37e40cfce"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddShader</b> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">AZ::Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset, const AZ::Name &amp;shaderTag)</td></tr>
 <tr class="separator:ace3b79e3d140b2cd4e2a6cf37e40cfce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -96,6 +99,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#ab8074f64ff4d72c46caa1577017a64e2">EndMaterialProperty</a> ()</td></tr>
 <tr class="memdesc:ab8074f64ff4d72c46caa1577017a64e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finishes creating a material property. <br /></td></tr>
 <tr class="separator:ab8074f64ff4d72c46caa1577017a64e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2242f768749668eac99d08027e7985af"><td class="memItemLeft" align="right" valign="top"><a id="a2242f768749668eac99d08027e7985af"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPropertyValue</b> (const Name &amp;name, const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_asset.html">ImageAsset</a> &gt; &amp;imageAsset)</td></tr>
+<tr class="separator:a2242f768749668eac99d08027e7985af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a885da8324d5f39055aa0aa6944c0767e"><td class="memItemLeft" align="right" valign="top"><a id="a885da8324d5f39055aa0aa6944c0767e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPropertyValue</b> (const Name &amp;name, const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image_asset.html">StreamingImageAsset</a> &gt; &amp;imageAsset)</td></tr>
+<tr class="separator:a885da8324d5f39055aa0aa6944c0767e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f0dfde43195335f770a7886e47f305a"><td class="memItemLeft" align="right" valign="top"><a id="a9f0dfde43195335f770a7886e47f305a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPropertyValue</b> (const Name &amp;name, const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_attachment_image_asset.html">AttachmentImageAsset</a> &gt; &amp;imageAsset)</td></tr>
+<tr class="separator:a9f0dfde43195335f770a7886e47f305a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507ec0b605f381025d24b985f41e54d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a507ec0b605f381025d24b985f41e54d9">SetPropertyValue</a> (const Name &amp;name, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> &amp;value)</td></tr>
+<tr class="separator:a507ec0b605f381025d24b985f41e54d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2266024eea1ca30747e3fa374de9f932"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a2266024eea1ca30747e3fa374de9f932">AddMaterialFunctor</a> (const Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_functor.html">MaterialFunctor</a> &gt; &amp;functor)</td></tr>
 <tr class="separator:a2266024eea1ca30747e3fa374de9f932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6460412ceba6d41ec82b146cf18c11ac"><td class="memItemLeft" align="right" valign="top"><a id="a6460412ceba6d41ec82b146cf18c11ac"></a>
@@ -116,6 +130,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>End</b> (<a class="el
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html#a26787bf58b938d387c329e6d12208d5b">SetElevateWarnings</a> (bool elevated)</td></tr>
 <tr class="memdesc:a26787bf58b938d387c329e6d12208d5b inherit pub_methods_class_a_z_1_1_r_p_i_1_1_asset_creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">When true, treat all subsequent warnings as errors. Any warnings already reported will not be elevated. <br /></td></tr>
 <tr class="separator:a26787bf58b938d387c329e6d12208d5b inherit pub_methods_class_a_z_1_1_r_p_i_1_1_asset_creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870ef15890e04b8499397823410c3f3c inherit pub_methods_class_a_z_1_1_r_p_i_1_1_asset_creator"><td class="memItemLeft" align="right" valign="top"><a id="a870ef15890e04b8499397823410c3f3c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetElevateWarnings</b> () const</td></tr>
+<tr class="separator:a870ef15890e04b8499397823410c3f3c inherit pub_methods_class_a_z_1_1_r_p_i_1_1_asset_creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a733be076519ee1cb429af3838af93f56 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_asset_creator"><td class="memItemLeft" align="right" valign="top"><a id="a733be076519ee1cb429af3838af93f56"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>GetErrorCount</b> () const</td></tr>
 <tr class="separator:a733be076519ee1cb429af3838af93f56 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_asset_creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,18 +149,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportError</b> ([[ma
 <tr class="memitem:a732dd85e2815b96a7a6d49923811d7ee inherit pub_methods_class_a_z_1_1_r_p_i_1_1_asset_creator"><td class="memItemLeft" align="right" valign="top"><a id="a732dd85e2815b96a7a6d49923811d7ee"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportWarning</b> ([[maybe_unused]] const char *format,[[maybe_unused]] Args... args)</td></tr>
 <tr class="separator:a732dd85e2815b96a7a6d49923811d7ee inherit pub_methods_class_a_z_1_1_r_p_i_1_1_asset_creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_a_z_1_1_r_p_i_1_1_material_asset_creator_common"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_p_i_1_1_material_asset_creator_common')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset_creator_common.html">AZ::RPI::MaterialAssetCreatorCommon</a></td></tr>
-<tr class="memitem:ac74c3d26c45b88c7ee083578ad7db11e inherit pub_methods_class_a_z_1_1_r_p_i_1_1_material_asset_creator_common"><td class="memItemLeft" align="right" valign="top"><a id="ac74c3d26c45b88c7ee083578ad7db11e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPropertyValue</b> (const Name &amp;name, const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_asset.html">ImageAsset</a> &gt; &amp;imageAsset)</td></tr>
-<tr class="separator:ac74c3d26c45b88c7ee083578ad7db11e inherit pub_methods_class_a_z_1_1_r_p_i_1_1_material_asset_creator_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59502956db3e2c977204bac9ec7bb015 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_material_asset_creator_common"><td class="memItemLeft" align="right" valign="top"><a id="a59502956db3e2c977204bac9ec7bb015"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPropertyValue</b> (const Name &amp;name, const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image_asset.html">StreamingImageAsset</a> &gt; &amp;imageAsset)</td></tr>
-<tr class="separator:a59502956db3e2c977204bac9ec7bb015 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_material_asset_creator_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4026675370ee250f936370fdab6983c3 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_material_asset_creator_common"><td class="memItemLeft" align="right" valign="top"><a id="a4026675370ee250f936370fdab6983c3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPropertyValue</b> (const Name &amp;name, const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_attachment_image_asset.html">AttachmentImageAsset</a> &gt; &amp;imageAsset)</td></tr>
-<tr class="separator:a4026675370ee250f936370fdab6983c3 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_material_asset_creator_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9455190e874084d503077ed6914859a4 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_material_asset_creator_common"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset_creator_common.html#a9455190e874084d503077ed6914859a4">SetPropertyValue</a> (const Name &amp;name, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> &amp;value)</td></tr>
-<tr class="separator:a9455190e874084d503077ed6914859a4 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_material_asset_creator_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -167,13 +172,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateNotNull</b> (
 <tr class="memitem:a9bbea048540a016c341c96918b286b51 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_asset_creator"><td class="memItemLeft" align="right" valign="top"><a id="a9bbea048540a016c341c96918b286b51"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateNotNull</b> (const AZStd::intrusive_ptr&lt; T &gt; &amp;pointer, const char *name)</td></tr>
 <tr class="separator:a9bbea048540a016c341c96918b286b51 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_asset_creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_a_z_1_1_r_p_i_1_1_material_asset_creator_common"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_p_i_1_1_material_asset_creator_common')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset_creator_common.html">AZ::RPI::MaterialAssetCreatorCommon</a></td></tr>
-<tr class="memitem:a9b18f1fca56f10e282127dbfbee6f5e1 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_material_asset_creator_common"><td class="memItemLeft" align="right" valign="top"><a id="a9b18f1fca56f10e282127dbfbee6f5e1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBegin</b> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_properties_layout.html">MaterialPropertiesLayout</a> *propertyLayout, AZStd::vector&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> &gt; *propertyValues, const AZStd::function&lt; void(const char *)&gt; &amp;warningFunc, const AZStd::function&lt; void(const char *)&gt; &amp;errorFunc)</td></tr>
-<tr class="separator:a9b18f1fca56f10e282127dbfbee6f5e1 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_material_asset_creator_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a767f4d38ad45826a91c4a4c949b07158 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_material_asset_creator_common"><td class="memItemLeft" align="right" valign="top"><a id="a767f4d38ad45826a91c4a4c949b07158"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnd</b> ()</td></tr>
-<tr class="separator:a767f4d38ad45826a91c4a4c949b07158 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_material_asset_creator_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_a_z_1_1_r_p_i_1_1_asset_creator"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_r_p_i_1_1_asset_creator')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html">AZ::RPI::AssetCreator&lt; MaterialTypeAsset &gt;</a></td></tr>
 <tr class="memitem:a0f56e7b03cd164900a47c72e1f874c0a inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_asset_creator"><td class="memItemLeft" align="right" valign="top"><a id="a0f56e7b03cd164900a47c72e1f874c0a"></a>
 <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html#a0f56e7b03cd164900a47c72e1f874c0a">m_asset</a></td></tr>
@@ -202,8 +200,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnd</b> ()</td></tr
 
 </div>
 </div>
-<a id="ab84d4a75210a70532fa6d977590ca40e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab84d4a75210a70532fa6d977590ca40e">&#9670;&nbsp;</a></span>AddShader()</h2>
+<a id="ab39ed8f296e9baa68a5ec5f196fffdfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab39ed8f296e9baa68a5ec5f196fffdfd">&#9670;&nbsp;</a></span>AddShader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,13 +216,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnd</b> ()</td></tr
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_id.html">ShaderVariantId</a> &amp;&#160;</td>
-          <td class="paramname"><em>shaderVaraintId</em> = <code><a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_id.html">ShaderVariantId</a>{}</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZ::Name &amp;&#160;</td>
-          <td class="paramname"><em>shaderTag</em> = <code>Uuid::CreateRandom().ToString&lt;&#160;AZ::Name&#160;&gt;()</code>&#160;</td>
+          <td class="paramname"><em>shaderVariantId</em> = <code><a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_id.html">ShaderVariantId</a>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -312,7 +304,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnd</b> ()</td></tr
 </div><div class="memdoc">
 <p>Adds an output mapping from the current material property to a shader option in a specific shader. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">shaderIndex</td><td>Index to the material type's list of shader references, according to <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#ab84d4a75210a70532fa6d977590ca40e">AddShader()</a>. </td></tr>
+    <tr><td class="paramname">shaderIndex</td><td>Index to the material type's list of shader references, according to <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#ab39ed8f296e9baa68a5ec5f196fffdfd">AddShader()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -352,7 +344,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnd</b> ()</td></tr
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This provides access to the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_properties_layout.html" title="Provides a set of MaterialPropertyDescriptors which define the topology for a material.">MaterialPropertiesLayout</a> while the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a> is still being built. This is needed by <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html" title="This is a simple data structure for serializing in/out material type source files.">MaterialTypeSourceData</a> to initialize functor objects. </p><dl class="section return"><dt>Returns</dt><dd>A valid pointer when called between <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a33a67e88c217e244b89d5cbb62389047" title="Begin creating a MaterialTypeAsset.">Begin()</a> and End(). Otherwise, returns nullptr. </dd></dl>
+<p>This provides access to the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_properties_layout.html" title="Provides a set of MaterialPropertyDescriptors which define the topology for a material.">MaterialPropertiesLayout</a> while the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a> is still being built. This is needed by <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html">MaterialTypeSourceData</a> to initialize functor objects. </p><dl class="section return"><dt>Returns</dt><dd>A valid pointer when called between <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a33a67e88c217e244b89d5cbb62389047" title="Begin creating a MaterialTypeAsset.">Begin()</a> and End(). Otherwise, returns nullptr. </dd></dl>
 
 </div>
 </div>
@@ -370,7 +362,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnd</b> ()</td></tr
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This provides access to the material ShaderResourceGroupLayout being used for the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a>. This is needed by <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html" title="This is a simple data structure for serializing in/out material type source files.">MaterialTypeSourceData</a> to initialize functor objects. The same layout object can be retrieved from the ShaderAssets passed to the creator, but this function is provided for convenience. </p><dl class="section return"><dt>Returns</dt><dd>A valid pointer if a <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> with a material ShaderResourceGroupLayout was added. Otherwise, returns nullptr. </dd></dl>
+<p>This provides access to the material ShaderResourceGroupLayout being used for the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a>. This is needed by <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html">MaterialTypeSourceData</a> to initialize functor objects. The same layout object can be retrieved from the ShaderAssets passed to the creator, but this function is provided for convenience. </p><dl class="section return"><dt>Returns</dt><dd>A valid pointer if a <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> with a material ShaderResourceGroupLayout was added. Otherwise, returns nullptr. </dd></dl>
 
 </div>
 </div>
@@ -388,7 +380,36 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnd</b> ()</td></tr
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This provides access to the <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_collection.html">ShaderCollection</a> while the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> is still being built. This is needed by <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html" title="This is a simple data structure for serializing in/out material type source files.">MaterialTypeSourceData</a> to initialize functor objects. </p><dl class="section return"><dt>Returns</dt><dd>A valid pointer when called between <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a33a67e88c217e244b89d5cbb62389047" title="Begin creating a MaterialTypeAsset.">Begin()</a> and End(). Otherwise, returns nullptr. </dd></dl>
+<p>This provides access to the <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_collection.html">ShaderCollection</a> while the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> is still being built. This is needed by <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html">MaterialTypeSourceData</a> to initialize functor objects. </p><dl class="section return"><dt>Returns</dt><dd>A valid pointer when called between <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a33a67e88c217e244b89d5cbb62389047" title="Begin creating a MaterialTypeAsset.">Begin()</a> and End(). Otherwise, returns nullptr. </dd></dl>
+
+</div>
+</div>
+<a id="a507ec0b605f381025d24b985f41e54d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a507ec0b605f381025d24b985f41e54d9">&#9670;&nbsp;</a></span>SetPropertyValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::MaterialTypeAssetCreator::SetPropertyValue </td>
+          <td>(</td>
+          <td class="paramtype">const Name &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets a property value using data in AZStd::variant-based <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a>. The contained data must match the data type of the property. For type <a class="el" href="class_a_z_1_1_r_p_i_1_1_image.html" title="A base class for images providing access to common image information.">Image</a>, the value must be a Data::Asset&lt;ImageAsset&gt;. </p>
 
 </div>
 </div>
@@ -398,7 +419,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnd</b> ()</td></tr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:29 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

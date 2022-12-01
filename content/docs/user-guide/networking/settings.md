@@ -1,15 +1,17 @@
 ---
-title: Networking And Multiplayer Settings
-description: A reference for console variables and other settings that can be used on clients and servers to configure networking and multiplayer.
-linktitle: Network Settings
+linktitle: Network and Multiplayer Settings
+title: AzNetworking and Multiplayer Gem Settings
+description: A reference for console variables and other settings that you can use on clients and servers to configure `AzNetworking` and the Multiplayer Gem.
+weight: 300
 ---
 
 ## Overview
 
-This page documents [console variables](/docs/user-guide/appendix/cvars/) and other settings that can control Networking and Multiplayer behavior.
+This page documents [console variables (CVARs)](/docs/user-guide/appendix/cvars/) and other settings that can control Networking and Multiplayer behavior in **Open 3D Engine (O3DE)**.
 
 ## Networking commands
-The following [console functor](/docs/user-guide/programming/az-console/#console-functors-cfuncs) commands should be used to control the connection of clients to servers for networked games or simulations. 
+
+Use the following [console functor (cfunc)](/docs/user-guide/programming/az-console/#console-functors-cfuncs) commands to control the connection of clients to servers for networked games or simulations. 
 
 | Setting                | Description                                                                                                                                | Parameters                                                                       | Notes                                                                                     |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
@@ -114,7 +116,7 @@ These settings control how a server will be launched during the "play-in-editor"
 | editorsv_isDedicated               | Whether to init as a server expecting data from an Editor. Do not modify unless you're sure of what you're doing.                                                                                                                                                                                                        | False     ||
 | editorsv_port                      | The server port the Editor will connect to when entering play-mode.                                                                                                                                                                                                                                                      | 33450     | Only valid when `editorsv_enabled` is true.                                                                                                      | 
 | editorsv_serveraddr                | The address of the server the Editor will connect to when entering play-mode.                                                                                                                                                                                                                                            | LocalHost | Only valid when `editorsv_enabled` is true.                                                                                                      |
-| editorsv_process                   | The file path to your project’s ServerLauncher. If `editorsv_enabled` and `editorsv_launch` is true, the Editor will attempt to launch its own server when entering game mode. By default it looks for the ServerLauncher executable inside the same folder where Editor lives; `editorsv_process` overrides that path. | ""        |                                                                                                                                                  |
+| editorsv_process                   | The file path to your project's ServerLauncher. If `editorsv_enabled` and `editorsv_launch` is true, the Editor will attempt to launch its own server when entering game mode. By default it looks for the ServerLauncher executable inside the same folder where Editor lives; `editorsv_process` overrides that path. | ""        |                                                                                                                                                  |
 | editorsv_rhi_override              | If `editorsv_launch` is true, the server will use the same render hardware interface (rhi) that the editor is using. For example, if the editor is using DX12, then the new server will be launched using DX12. `editorsv_rhi_override` can be used to override the rhi.                                                 | ""        | If you don't need to see the launched server's graphics then set `editorsv_rhi_override=null`, the null renderer.                                |
 | editorsv_enabled                   | If true the Editor will attempt to connect to a Multiplayer server upon entering game mode.                                                                                                                                                                                                                              | False     ||
 | editorsv_clientserver              | Whether the Editor should act as the server and a client at the same time, without launching a dedicated server process.  | False | Only applies if `editorsv_enabled` is also true. |

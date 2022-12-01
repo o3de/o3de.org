@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -50,22 +50,27 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_r_p_i_1_1_material_version_update-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::RPI::MaterialVersionUpdate Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;MaterialVersionUpdate.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_version_update_1_1_rename_property_action.html">RenamePropertyAction</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_version_update_1_1_action.html">Action</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_version_update_1_1_material_property_value_wrapper.html">MaterialPropertyValueWrapper</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4202e1497d919c6ef33489e170a80863"><td class="memItemLeft" align="right" valign="top"><a id="a4202e1497d919c6ef33489e170a80863"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Actions</b> = AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_version_update_1_1_rename_property_action.html">RenamePropertyAction</a> &gt;</td></tr>
-<tr class="separator:a4202e1497d919c6ef33489e170a80863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0dc5ea76eacf5316d05830f90bf44c3"><td class="memItemLeft" align="right" valign="top"><a id="aa0dc5ea76eacf5316d05830f90bf44c3"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Actions</b> = AZStd::vector&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_version_update_1_1_action.html">Action</a> &gt;</td></tr>
+<tr class="separator:aa0dc5ea76eacf5316d05830f90bf44c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -81,59 +86,53 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetVersion</b> ()
 <tr class="memitem:a828bb32001d9fc049e49427bde1a0709"><td class="memItemLeft" align="right" valign="top"><a id="a828bb32001d9fc049e49427bde1a0709"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVersion</b> (uint32_t toVersion)</td></tr>
 <tr class="separator:a828bb32001d9fc049e49427bde1a0709"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af706ccedcf3bada90b9a4a1b0f960467"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_version_update.html#af706ccedcf3bada90b9a4a1b0f960467">ApplyPropertyRenames</a> (AZ::Name &amp;propertyId) const</td></tr>
-<tr class="separator:af706ccedcf3bada90b9a4a1b0f960467"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6decf8b3cd3f6d83b0ff89e3e49f7498"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_version_update.html#a6decf8b3cd3f6d83b0ff89e3e49f7498">ApplyVersionUpdates</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> &amp;materialAsset) const</td></tr>
-<tr class="separator:a6decf8b3cd3f6d83b0ff89e3e49f7498"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a818e67d45d90766778ec7bc30ed89e34"><td class="memItemLeft" align="right" valign="top"><a id="a818e67d45d90766778ec7bc30ed89e34"></a>
 const Actions &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetActions</b> () const</td></tr>
 <tr class="separator:a818e67d45d90766778ec7bc30ed89e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1ff30a22beba2af943bd8501a5b16c3"><td class="memItemLeft" align="right" valign="top"><a id="aa1ff30a22beba2af943bd8501a5b16c3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAction</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_version_update_1_1_rename_property_action.html">RenamePropertyAction</a> &amp;action)</td></tr>
-<tr class="separator:aa1ff30a22beba2af943bd8501a5b16c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b880a85ada21fe7f95217ae02af688"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_version_update.html#ab8b880a85ada21fe7f95217ae02af688">AddAction</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_version_update_1_1_action.html">Action</a> &amp;action, AZStd::function&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a>(const Name &amp;, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> &amp;)&gt; sourceDataResolver=nullptr)</td></tr>
+<tr class="separator:ab8b880a85ada21fe7f95217ae02af688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a83a75f142597dda6b82e0a28d6d0c346"><td class="memItemLeft" align="right" valign="top"><a id="a83a75f142597dda6b82e0a28d6d0c346"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (ReflectContext *context)</td></tr>
 <tr class="separator:a83a75f142597dda6b82e0a28d6d0c346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a113f9996eab079a426655acbefc6ee66"><td class="memItemLeft" align="right" valign="top"><a id="a113f9996eab079a426655acbefc6ee66"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialVersionUpdates</b></td></tr>
+<tr class="separator:a113f9996eab079a426655acbefc6ee66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="af706ccedcf3bada90b9a4a1b0f960467"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af706ccedcf3bada90b9a4a1b0f960467">&#9670;&nbsp;</a></span>ApplyPropertyRenames()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_version_update.html">MaterialVersionUpdate</a> contains a list of actions that specify the operations that need to be performed on a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> when updating it to MaterialType version 'toVersion' [cf. MaterialVersionUpdate(uint32_t toVersion) and GetVersion()], given that the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> was based on a MaterialType one version below. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab8b880a85ada21fe7f95217ae02af688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8b880a85ada21fe7f95217ae02af688">&#9670;&nbsp;</a></span>AddAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool AZ::RPI::MaterialVersionUpdate::ApplyPropertyRenames </td>
+          <td class="memname">void AZ::RPI::MaterialVersionUpdate::AddAction </td>
           <td>(</td>
-          <td class="paramtype">AZ::Name &amp;&#160;</td>
-          <td class="paramname"><em>propertyId</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_version_update_1_1_action.html">Action</a> &amp;&#160;</td>
+          <td class="paramname"><em>action</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-<p>Possibly renames @propertyId based on the material version update steps. </p><dl class="section return"><dt>Returns</dt><dd>true if the property was renamed </dd></dl>
-
-</div>
-</div>
-<a id="a6decf8b3cd3f6d83b0ff89e3e49f7498"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6decf8b3cd3f6d83b0ff89e3e49f7498">&#9670;&nbsp;</a></span>ApplyVersionUpdates()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">bool AZ::RPI::MaterialVersionUpdate::ApplyVersionUpdates </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> &amp;&#160;</td>
-          <td class="paramname"><em>materialAsset</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::function&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a>(const Name &amp;, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>sourceDataResolver</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Apply version updates to the given material asset. </p><dl class="section return"><dt>Returns</dt><dd>true if any changes were made </dd></dl>
+<p>Add the given action. Optionally, <code>sourceDataResolver</code> may be given to resolve a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html">MaterialPropertyValue</a> from a source type into an asset-ready type (e.g. from an image filename string to an <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_asset.html">ImageAsset</a>). </p>
 
 </div>
 </div>
@@ -143,7 +142,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (R
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:29 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -138,8 +138,14 @@ const AZStd::vector&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_frame
 const ScopeAttachmentPtrList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_attachment_database.html#a295a37276935306ee7e8121bf34c0cca">FindScopeAttachmentList</a> (const ScopeId &amp;scopeId, const AttachmentId &amp;attachmentId) const</td></tr>
 <tr class="memdesc:a295a37276935306ee7e8121bf34c0cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the list of scope attachments used by a scope for the given attachment. <br /></td></tr>
 <tr class="separator:a295a37276935306ee7e8121bf34c0cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68147dc8fdfefebd3fa8e8926d7dd746"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_attachment.html">ScopeAttachment</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_attachment_database.html#a68147dc8fdfefebd3fa8e8926d7dd746">FindScopeAttachment</a> (const ScopeId &amp;scopeId, const AttachmentId &amp;attachmentId, size_t index=0) const</td></tr>
-<tr class="separator:a68147dc8fdfefebd3fa8e8926d7dd746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa84d85d03dc79958ef6545c6909e48c9"><td class="memItemLeft" align="right" valign="top"><a id="aa84d85d03dc79958ef6545c6909e48c9"></a>
+const <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_attachment.html">ScopeAttachment</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_attachment_database.html#aa84d85d03dc79958ef6545c6909e48c9">FindScopeAttachment</a> (const ScopeId &amp;scopeId, const AttachmentId &amp;attachmentId) const</td></tr>
+<tr class="memdesc:aa84d85d03dc79958ef6545c6909e48c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the scope attachment used by a scope for the given attachment. <br /></td></tr>
+<tr class="separator:aa84d85d03dc79958ef6545c6909e48c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a67f7b549d6949d499f91251b682a5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_attachment.html">ScopeAttachment</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_attachment_database.html#a76a67f7b549d6949d499f91251b682a5">FindScopeAttachment</a> (const ScopeId &amp;scopeId, const AttachmentId &amp;attachmentId, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_view_descriptor.html">ImageViewDescriptor</a> &amp;imageViewDescriptor, const RHI::ScopeAttachmentUsage attachmentUsage) const</td></tr>
+<tr class="separator:a76a67f7b549d6949d499f91251b682a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876f5c3f759c148150e0c5ab2bd5c1a3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_attachment.html">ScopeAttachment</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_attachment_database.html#a876f5c3f759c148150e0c5ab2bd5c1a3">FindScopeAttachment</a> (const ScopeId &amp;scopeId, const AttachmentId &amp;attachmentId, const RHI::ScopeAttachmentUsage attachmentUsage) const</td></tr>
+<tr class="separator:a876f5c3f759c148150e0c5ab2bd5c1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc8de46ac03605f7c7a700cd255a4b82"><td class="memItemLeft" align="right" valign="top"><a id="abc8de46ac03605f7c7a700cd255a4b82"></a>
 const ScopeAttachmentPtrList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_attachment_database.html#abc8de46ac03605f7c7a700cd255a4b82">GetScopeAttachments</a> () const</td></tr>
 <tr class="memdesc:abc8de46ac03605f7c7a700cd255a4b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the full list of scope attachments. <br /></td></tr>
@@ -233,8 +239,8 @@ template&lt;typename AttachmentType &gt; </div>
 
 </div>
 </div>
-<a id="a68147dc8fdfefebd3fa8e8926d7dd746"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68147dc8fdfefebd3fa8e8926d7dd746">&#9670;&nbsp;</a></span>FindScopeAttachment()</h2>
+<a id="a76a67f7b549d6949d499f91251b682a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76a67f7b549d6949d499f91251b682a5">&#9670;&nbsp;</a></span>FindScopeAttachment() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,8 +260,14 @@ template&lt;typename AttachmentType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>index</em> = <code>0</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_view_descriptor.html">ImageViewDescriptor</a> &amp;&#160;</td>
+          <td class="paramname"><em>imageViewDescriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RHI::ScopeAttachmentUsage&#160;</td>
+          <td class="paramname"><em>attachmentUsage</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -264,7 +276,42 @@ template&lt;typename AttachmentType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Finds the scope attachment used by a scope for the given attachment. If multiple scope attachments are used for the same attachment (like binding multiple mips of a texture), the index parameter will specify which one to select. </p>
+<p>Finds the scope attachment used by a scope for the given attachment. If multiple scope image attachments are used for the same attachment, provide ScopeAttachmentUsage (in case attachments are merged) and <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_view_descriptor.html">ImageViewDescriptor</a> (in case the attachments are different based on view, i.e different mips or aspect of a texture) to ensure that the correct scope attachment is returned. </p>
+
+</div>
+</div>
+<a id="a876f5c3f759c148150e0c5ab2bd5c1a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a876f5c3f759c148150e0c5ab2bd5c1a3">&#9670;&nbsp;</a></span>FindScopeAttachment() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_attachment.html">ScopeAttachment</a>* AZ::RHI::FrameGraphAttachmentDatabase::FindScopeAttachment </td>
+          <td>(</td>
+          <td class="paramtype">const ScopeId &amp;&#160;</td>
+          <td class="paramname"><em>scopeId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AttachmentId &amp;&#160;</td>
+          <td class="paramname"><em>attachmentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RHI::ScopeAttachmentUsage&#160;</td>
+          <td class="paramname"><em>attachmentUsage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Finds the scope attachment used by a scope for the given attachment. If multiple scope attachments are used for the same attachment provide attachmentUsage to ensure that the correct scope attachment is returned </p>
 
 </div>
 </div>
@@ -326,7 +373,7 @@ template&lt;typename AttachmentType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:26 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

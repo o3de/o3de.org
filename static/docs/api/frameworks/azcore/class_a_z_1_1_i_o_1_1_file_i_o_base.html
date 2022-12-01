@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -146,19 +146,19 @@ virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <tr class="separator:adad4dcf2ab4b6c394a9b8fb13c830950"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac1468946d7eac349fc53a078fdf6ca4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html#aac1468946d7eac349fc53a078fdf6ca4">SetDeprecatedAlias</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> oldAlias, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> newAlias)=0</td></tr>
 <tr class="separator:aac1468946d7eac349fc53a078fdf6ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe6c906e1bf80846a0aae6fbe8eb8381"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_a_z_std_1_1optional.html">AZStd::optional</a>&lt; AZ::u64 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html#abe6c906e1bf80846a0aae6fbe8eb8381">ConvertToAlias</a> (char *inOutBuffer, AZ::u64 bufferLength) const =0</td></tr>
+<tr class="memitem:abe6c906e1bf80846a0aae6fbe8eb8381"><td class="memItemLeft" align="right" valign="top">virtual AZStd::optional&lt; AZ::u64 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html#abe6c906e1bf80846a0aae6fbe8eb8381">ConvertToAlias</a> (char *inOutBuffer, AZ::u64 bufferLength) const =0</td></tr>
 <tr class="separator:abe6c906e1bf80846a0aae6fbe8eb8381"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa57707093783baedbbdcc813e9636661"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html#aa57707093783baedbbdcc813e9636661">ConvertToAlias</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">AZ::IO::FixedMaxPath</a> &amp;convertedPath, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">AZ::IO::PathView</a> &amp;path) const =0</td></tr>
 <tr class="separator:aa57707093783baedbbdcc813e9636661"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa6f4d4f17733bbb442bff164413ee16"><td class="memItemLeft" align="right" valign="top"><a id="afa6f4d4f17733bbb442bff164413ee16"></a>
-<a class="el" href="class_a_z_std_1_1optional.html">AZStd::optional</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">AZ::IO::FixedMaxPath</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToAlias</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">AZ::IO::PathView</a> &amp;path) const</td></tr>
+AZStd::optional&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">AZ::IO::FixedMaxPath</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToAlias</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">AZ::IO::PathView</a> &amp;path) const</td></tr>
 <tr class="separator:afa6f4d4f17733bbb442bff164413ee16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bbae30792f2f0ca81a1ea46805d411b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html#a2bbae30792f2f0ca81a1ea46805d411b">ResolvePath</a> (const char *path, char *resolvedPath, AZ::u64 resolvedPathSize) const =0</td></tr>
 <tr class="separator:a2bbae30792f2f0ca81a1ea46805d411b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9844a46310e0789d315c40f68efff60e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html#a9844a46310e0789d315c40f68efff60e">ResolvePath</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">AZ::IO::FixedMaxPath</a> &amp;resolvedPath, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">AZ::IO::PathView</a> &amp;path) const =0</td></tr>
 <tr class="separator:a9844a46310e0789d315c40f68efff60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30db5e398e5a1553eb239a549b2d93ad"><td class="memItemLeft" align="right" valign="top"><a id="a30db5e398e5a1553eb239a549b2d93ad"></a>
-<a class="el" href="class_a_z_std_1_1optional.html">AZStd::optional</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">AZ::IO::FixedMaxPath</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ResolvePath</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">AZ::IO::PathView</a> &amp;path) const</td></tr>
+AZStd::optional&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">AZ::IO::FixedMaxPath</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ResolvePath</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">AZ::IO::PathView</a> &amp;path) const</td></tr>
 <tr class="separator:a30db5e398e5a1553eb239a549b2d93ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d8b4689b45dce88aa48f8583f9b4393"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html#a4d8b4689b45dce88aa48f8583f9b4393">ReplaceAlias</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">AZ::IO::FixedMaxPath</a> &amp;replacedAliasPath, const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">AZ::IO::PathView</a> &amp;path) const =0</td></tr>
 <tr class="separator:a4d8b4689b45dce88aa48f8583f9b4393"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,7 +249,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDirectInsta
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_a_z_std_1_1optional.html">AZStd::optional</a>&lt;AZ::u64&gt; AZ::IO::FileIOBase::ConvertToAlias </td>
+          <td class="memname">virtual AZStd::optional&lt;AZ::u64&gt; AZ::IO::FileIOBase::ConvertToAlias </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>inOutBuffer</em>, </td>
@@ -643,7 +643,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDirectInsta
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:48 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:32 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

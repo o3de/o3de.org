@@ -52,13 +52,17 @@ Atom Sample Viewer is a good place to start if you're interested in evaluating A
 1. Use CMake to generate a Visual Studio solution. In the next step, you build the Atom project using this solution.
 
     ```cmd
-    cmake -B build/windows_vs2019 -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:/o3de-packages
+    cmake -B build/windows -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:/o3de-packages
     ```
+
+    {{< note >}}
+Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](/docs/user-guide/build/configure-and-build/#configuring-projects) in the User Guide.
+    {{< /note >}}
 
 1. Use CMake to build `AtomSampleViewerStandalone`. Specify the `profile` configuration for your build.
 
     ```cmd
-    cmake --build build/windows_vs2019 --target AtomSampleViewerStandalone --config profile -- -m
+    cmake --build build/windows --target AtomSampleViewerStandalone --config profile -- -m
     ```
 
 When the project is done building, you can find the build files in the directory `o3de-atom-sampleviewer/build/bin/profile/`. From there, you can launch `AtomSampleViewerStandalone.exe`.

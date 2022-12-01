@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -74,9 +74,13 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ModelChangedEvent</b
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a142356d673f1f49bf873ad39854f5da8"><td class="memItemLeft" align="right" valign="top"><a id="a142356d673f1f49bf873ad39854f5da8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html">AZ::Render::MeshFeatureProcessorInterface</a>, &quot;{975D7F0C-2E7E-4819-94D0-D3C4E2024721}&quot;, FeatureProcessor)</td></tr>
-<tr class="separator:a142356d673f1f49bf873ad39854f5da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74607be114525eddaecd5f325065a2a7"><td class="memItemLeft" align="right" valign="top"><a id="a74607be114525eddaecd5f325065a2a7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html">AZ::Render::MeshFeatureProcessorInterface</a>, &quot;{975D7F0C-2E7E-4819-94D0-D3C4E2024721}&quot;, AZ::RPI::FeatureProcessor)</td></tr>
+<tr class="separator:a74607be114525eddaecd5f325065a2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74413cfd26fde94795e211284b265ceb"><td class="memItemLeft" align="right" valign="top"><a id="a74413cfd26fde94795e211284b265ceb"></a>
+virtual <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">TransformServiceFeatureProcessorInterface::ObjectId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a74413cfd26fde94795e211284b265ceb">GetObjectId</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) const =0</td></tr>
+<tr class="memdesc:a74413cfd26fde94795e211284b265ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the object id for a mesh handle. <br /></td></tr>
+<tr class="separator:a74413cfd26fde94795e211284b265ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacfcd15f1f2ecc3cb741188d6c28e62b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#aacfcd15f1f2ecc3cb741188d6c28e62b">AcquireMesh</a> (const <a class="el" href="struct_a_z_1_1_render_1_1_mesh_handle_descriptor.html">MeshHandleDescriptor</a> &amp;descriptor, const MaterialAssignmentMap &amp;materials={})=0</td></tr>
 <tr class="separator:aacfcd15f1f2ecc3cb741188d6c28e62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1da6cc8fd3a67ce5f66cd13fde864585"><td class="memItemLeft" align="right" valign="top"><a id="a1da6cc8fd3a67ce5f66cd13fde864585"></a>
@@ -99,6 +103,8 @@ virtual Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model.htm
 virtual <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a8fb7da41e2a420c05f7fe26655e0fe26">GetModelAsset</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) const =0</td></tr>
 <tr class="memdesc:a8fb7da41e2a420c05f7fe26655e0fe26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the underlying <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> for a meshHandle. <br /></td></tr>
 <tr class="separator:a8fb7da41e2a420c05f7fe26655e0fe26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5053b96e63ac723072934c0a0b13e18d"><td class="memItemLeft" align="right" valign="top">virtual const MeshDrawPacketLods &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a5053b96e63ac723072934c0a0b13e18d">GetDrawPackets</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) const =0</td></tr>
+<tr class="separator:a5053b96e63ac723072934c0a0b13e18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae293194d94e56a717ff4e080d37513d"><td class="memItemLeft" align="right" valign="top">virtual const AZStd::vector&lt; Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">RPI::ShaderResourceGroup</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#aae293194d94e56a717ff4e080d37513d">GetObjectSrgs</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) const =0</td></tr>
 <tr class="separator:aae293194d94e56a717ff4e080d37513d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d94dba9482371d523914f21ffdd30a9"><td class="memItemLeft" align="right" valign="top"><a id="a3d94dba9482371d523914f21ffdd30a9"></a>
@@ -163,10 +169,16 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#ad8a89e204c99550298f1ca7eb63ee252">SetRayTracingEnabled</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, bool rayTracingEnabled)=0</td></tr>
 <tr class="memdesc:ad8a89e204c99550298f1ca7eb63ee252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the option to exclude this mesh from raytracing. <br /></td></tr>
 <tr class="separator:ad8a89e204c99550298f1ca7eb63ee252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9066beff24ca27f2e89ff595527af7d3"><td class="memItemLeft" align="right" valign="top"><a id="a9066beff24ca27f2e89ff595527af7d3"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a9066beff24ca27f2e89ff595527af7d3">GetRayTracingEnabled</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) const =0</td></tr>
+<tr class="memdesc:a9066beff24ca27f2e89ff595527af7d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether this mesh is excluded from raytracing. <br /></td></tr>
+<tr class="separator:a9066beff24ca27f2e89ff595527af7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae922150bd951a2de6f315f16bd46c38e"><td class="memItemLeft" align="right" valign="top"><a id="ae922150bd951a2de6f315f16bd46c38e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#ae922150bd951a2de6f315f16bd46c38e">SetVisible</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, bool visible)=0</td></tr>
 <tr class="memdesc:ae922150bd951a2de6f315f16bd46c38e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the mesh as visible or hidden. When the mesh is hidden it will not be rendered by the feature processor. <br /></td></tr>
 <tr class="separator:ae922150bd951a2de6f315f16bd46c38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee18706104d02f06519275fd1a6f296"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a4ee18706104d02f06519275fd1a6f296">GetVisible</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) const =0</td></tr>
+<tr class="separator:a4ee18706104d02f06519275fd1a6f296"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8a5c70b5df7e023f1e99935811818da"><td class="memItemLeft" align="right" valign="top"><a id="ac8a5c70b5df7e023f1e99935811818da"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#ac8a5c70b5df7e023f1e99935811818da">SetUseForwardPassIblSpecular</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, bool useForwardPassIblSpecular)=0</td></tr>
 <tr class="memdesc:ac8a5c70b5df7e023f1e99935811818da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the mesh to render IBL specular in the forward pass. <br /></td></tr>
@@ -189,6 +201,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a98270908692bffdf4bf5cc6817236580">Deactivate</a> ()</td></tr>
 <tr class="memdesc:a98270908692bffdf4bf5cc6817236580 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform any necessary deactivation. <br /></td></tr>
 <tr class="separator:a98270908692bffdf4bf5cc6817236580 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41df34f125055709089709397a528c90 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top"><a id="a41df34f125055709089709397a528c90"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a41df34f125055709089709397a528c90">ApplyRenderPipelineChange</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *)</td></tr>
+<tr class="memdesc:a41df34f125055709089709397a528c90 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply changes and add additional render passes to the render pipeline from the feature processors. <br /></td></tr>
+<tr class="separator:a41df34f125055709089709397a528c90 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28b655ac096c209bfdcd3cf93bcf32b2 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a28b655ac096c209bfdcd3cf93bcf32b2">PrepareViews</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_feature_processor_1_1_prepare_views_packet.html">PrepareViewsPacket</a> &amp;, AZStd::vector&lt; AZStd::pair&lt; PipelineViewTag, ViewPtr &gt;&gt; &amp;)</td></tr>
 <tr class="separator:a28b655ac096c209bfdcd3cf93bcf32b2 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39a87cce766c54804df525b96d4a499b inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a39a87cce766c54804df525b96d4a499b">Simulate</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_feature_processor_1_1_simulate_packet.html">SimulatePacket</a> &amp;)</td></tr>
@@ -255,6 +271,35 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 
 </div>
 </div>
+<a id="a5053b96e63ac723072934c0a0b13e18d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5053b96e63ac723072934c0a0b13e18d">&#9670;&nbsp;</a></span>GetDrawPackets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const MeshDrawPacketLods&amp; AZ::Render::MeshFeatureProcessorInterface::GetDrawPackets </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;&#160;</td>
+          <td class="paramname"><em>meshHandle</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function is primarily intended for debug output and testing, by providing insight into what materials, shaders, etc. are actively being used to render the model. </p>
+
+<p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a8f95d954a136fa8d2f11bdf5fc732548">AZ::Render::MeshFeatureProcessor</a>.</p>
+
+</div>
+</div>
 <a id="aae293194d94e56a717ff4e080d37513d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae293194d94e56a717ff4e080d37513d">&#9670;&nbsp;</a></span>GetObjectSrgs()</h2>
 
@@ -281,6 +326,35 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 <p>Gets the ObjectSrgs for a meshHandle. Updating the ObjectSrgs should be followed by a call to QueueObjectSrgForCompile, instead of compiling the srgs directly. This way, if the srgs have already been queued for compile, they will not be queued twice in the same frame. The ObjectSrgs should not be updated during Simulate, or it will create a race between updating the data and the call to Compile Cases where there may be multiple ObjectSrgs: if a model has multiple submeshes and those submeshes use different materials with different object SRGs. </p>
 
 <p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a0d641a9142333da5c8642eb68d3c653a">AZ::Render::MeshFeatureProcessor</a>.</p>
+
+</div>
+</div>
+<a id="a4ee18706104d02f06519275fd1a6f296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee18706104d02f06519275fd1a6f296">&#9670;&nbsp;</a></span>GetVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AZ::Render::MeshFeatureProcessorInterface::GetVisible </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;&#160;</td>
+          <td class="paramname"><em>meshHandle</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the visibility state of the mesh. This only refers to whether or not the mesh has been explicitly hidden, and is not related to view frustum visibility. </p>
+
+<p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#ab0bcc98acdcd7752058b3c18d509e5fa">AZ::Render::MeshFeatureProcessor</a>.</p>
 
 </div>
 </div>
@@ -329,7 +403,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:25 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

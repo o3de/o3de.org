@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzQtComponents API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,57 +46,62 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_drag_and_drop_events-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::DragAndDropEvents Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;DragAndDrop.h&gt;</code></p>
-
-<p>Inherits EBusTraits.</p>
+<p>Inherits <a class="el" href="class_az_qt_components_1_1_common_drag_and_drop_bus_traits.html">AzQtComponents::CommonDragAndDropBusTraits</a>.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ac1f73c0d515ec1b54f6e8135d2bf1b12"><td class="memItemLeft" align="right" valign="top"><a id="ac1f73c0d515ec1b54f6e8135d2bf1b12"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>BusIdType</b> = AZ::u32</td></tr>
-<tr class="separator:ac1f73c0d515ec1b54f6e8135d2bf1b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7dbff635df5640f5695aaf5fd6ce6163"><td class="memItemLeft" align="right" valign="top"><a id="a7dbff635df5640f5695aaf5fd6ce6163"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetPriority</b> () const</td></tr>
-<tr class="separator:a7dbff635df5640f5695aaf5fd6ce6163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4d799fb7866015427a29a8ffe1ef05"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_drag_and_drop_events.html#a3d4d799fb7866015427a29a8ffe1ef05">GetDragAndDropEventsPriority</a> () const</td></tr>
+<tr class="separator:a3d4d799fb7866015427a29a8ffe1ef05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca5924d6ed0758cdefa39f29873b7bab"><td class="memItemLeft" align="right" valign="top"><a id="aca5924d6ed0758cdefa39f29873b7bab"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_drag_and_drop_events.html#aca5924d6ed0758cdefa39f29873b7bab">Compare</a> (const <a class="el" href="class_az_qt_components_1_1_drag_and_drop_events.html">DragAndDropEvents</a> *other) const</td></tr>
 <tr class="memdesc:aca5924d6ed0758cdefa39f29873b7bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare function required by BusHandlerOrderCompare = BusHandlerCompareDefault. <br /></td></tr>
 <tr class="separator:aca5924d6ed0758cdefa39f29873b7bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af64c606d43826309b6f010b67cf94564"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_drag_and_drop_events.html#af64c606d43826309b6f010b67cf94564">DragEnter</a> (QDragEnterEvent *, <a class="el" href="class_az_qt_components_1_1_drag_and_drop_context_base.html">DragAndDropContextBase</a> &amp;)</td></tr>
 <tr class="separator:af64c606d43826309b6f010b67cf94564"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af307dfa23f1d9aed6b6a62fe3b36ec2f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_drag_and_drop_events.html#af307dfa23f1d9aed6b6a62fe3b36ec2f">DragMove</a> (QDragMoveEvent *, <a class="el" href="class_az_qt_components_1_1_drag_and_drop_context_base.html">DragAndDropContextBase</a> &amp;)</td></tr>
+<tr class="memitem:af307dfa23f1d9aed6b6a62fe3b36ec2f"><td class="memItemLeft" align="right" valign="top"><a id="af307dfa23f1d9aed6b6a62fe3b36ec2f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_drag_and_drop_events.html#af307dfa23f1d9aed6b6a62fe3b36ec2f">DragMove</a> (QDragMoveEvent *, <a class="el" href="class_az_qt_components_1_1_drag_and_drop_context_base.html">DragAndDropContextBase</a> &amp;)</td></tr>
+<tr class="memdesc:af307dfa23f1d9aed6b6a62fe3b36ec2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sent when a drag and drop action is in progress. <br /></td></tr>
 <tr class="separator:af307dfa23f1d9aed6b6a62fe3b36ec2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dd3d6bd1291c31c3536a80f7fa9b338"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_drag_and_drop_events.html#a4dd3d6bd1291c31c3536a80f7fa9b338">DragLeave</a> (QDragLeaveEvent *)</td></tr>
 <tr class="separator:a4dd3d6bd1291c31c3536a80f7fa9b338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc675ee6f3f87d038b14afa24f4888b8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_drag_and_drop_events.html#abc675ee6f3f87d038b14afa24f4888b8">Drop</a> (QDropEvent *, <a class="el" href="class_az_qt_components_1_1_drag_and_drop_context_base.html">DragAndDropContextBase</a> &amp;)</td></tr>
+<tr class="memitem:abc675ee6f3f87d038b14afa24f4888b8"><td class="memItemLeft" align="right" valign="top"><a id="abc675ee6f3f87d038b14afa24f4888b8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_drag_and_drop_events.html#abc675ee6f3f87d038b14afa24f4888b8">Drop</a> (QDropEvent *, <a class="el" href="class_az_qt_components_1_1_drag_and_drop_context_base.html">DragAndDropContextBase</a> &amp;)</td></tr>
+<tr class="memdesc:abc675ee6f3f87d038b14afa24f4888b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sent when a drag and drop action completes. <br /></td></tr>
 <tr class="separator:abc675ee6f3f87d038b14afa24f4888b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a63398b84e111615804d4e555e130c7f0"><td class="memItemLeft" align="right" valign="top"><a id="a63398b84e111615804d4e555e130c7f0"></a>
-static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>HandlerPolicy</b> = AZ::EBusHandlerPolicy::MultipleAndOrdered</td></tr>
-<tr class="separator:a63398b84e111615804d4e555e130c7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1c323c12cb44ed69b345a22fe9af51b"><td class="memItemLeft" align="right" valign="top"><a id="ab1c323c12cb44ed69b345a22fe9af51b"></a>
-static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>AddressPolicy</b> = AZ::EBusAddressPolicy::ById</td></tr>
-<tr class="separator:ab1c323c12cb44ed69b345a22fe9af51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_az_qt_components_1_1_common_drag_and_drop_bus_traits"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_az_qt_components_1_1_common_drag_and_drop_bus_traits')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_az_qt_components_1_1_common_drag_and_drop_bus_traits.html">AzQtComponents::CommonDragAndDropBusTraits</a></td></tr>
+<tr class="memitem:a5da2abeb90878fa796b3a4f4b9e3383f inherit pub_types_class_az_qt_components_1_1_common_drag_and_drop_bus_traits"><td class="memItemLeft" align="right" valign="top"><a id="a5da2abeb90878fa796b3a4f4b9e3383f"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>BusIdType</b> = AZ::u32</td></tr>
+<tr class="separator:a5da2abeb90878fa796b3a4f4b9e3383f inherit pub_types_class_az_qt_components_1_1_common_drag_and_drop_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_class_az_qt_components_1_1_common_drag_and_drop_bus_traits"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_az_qt_components_1_1_common_drag_and_drop_bus_traits')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_az_qt_components_1_1_common_drag_and_drop_bus_traits.html">AzQtComponents::CommonDragAndDropBusTraits</a></td></tr>
+<tr class="memitem:a2b1c7d203b7240b12dfae78d0b43fa2c inherit pub_static_attribs_class_az_qt_components_1_1_common_drag_and_drop_bus_traits"><td class="memItemLeft" align="right" valign="top"><a id="a2b1c7d203b7240b12dfae78d0b43fa2c"></a>
+static constexpr AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>HandlerPolicy</b> = AZ::EBusHandlerPolicy::MultipleAndOrdered</td></tr>
+<tr class="separator:a2b1c7d203b7240b12dfae78d0b43fa2c inherit pub_static_attribs_class_az_qt_components_1_1_common_drag_and_drop_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1cdaaceb3c46e4a6ce85b0718817aaa inherit pub_static_attribs_class_az_qt_components_1_1_common_drag_and_drop_bus_traits"><td class="memItemLeft" align="right" valign="top"><a id="ac1cdaaceb3c46e4a6ce85b0718817aaa"></a>
+static constexpr AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>AddressPolicy</b> = AZ::EBusAddressPolicy::ById</td></tr>
+<tr class="separator:ac1cdaaceb3c46e4a6ce85b0718817aaa inherit pub_static_attribs_class_az_qt_components_1_1_common_drag_and_drop_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b3831200a7c41e140ca36f6a783e52e inherit pub_static_attribs_class_az_qt_components_1_1_common_drag_and_drop_bus_traits"><td class="memItemLeft" align="right" valign="top"><a id="a3b3831200a7c41e140ca36f6a783e52e"></a>
+static constexpr const int&#160;</td><td class="memItemRight" valign="bottom"><b>s_LowPriority</b> = -10</td></tr>
+<tr class="separator:a3b3831200a7c41e140ca36f6a783e52e inherit pub_static_attribs_class_az_qt_components_1_1_common_drag_and_drop_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb4a96fb04ac3da9eac79e47a2b864e inherit pub_static_attribs_class_az_qt_components_1_1_common_drag_and_drop_bus_traits"><td class="memItemLeft" align="right" valign="top"><a id="a0eb4a96fb04ac3da9eac79e47a2b864e"></a>
+static constexpr const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_common_drag_and_drop_bus_traits.html#a0eb4a96fb04ac3da9eac79e47a2b864e">s_NormalPriority</a> = 0</td></tr>
+<tr class="memdesc:a0eb4a96fb04ac3da9eac79e47a2b864e inherit pub_static_attribs_class_az_qt_components_1_1_common_drag_and_drop_bus_traits"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run this handler after the default handler. <br /></td></tr>
+<tr class="separator:a0eb4a96fb04ac3da9eac79e47a2b864e inherit pub_static_attribs_class_az_qt_components_1_1_common_drag_and_drop_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a247f0da1479cebf97b6c7807c4ca6 inherit pub_static_attribs_class_az_qt_components_1_1_common_drag_and_drop_bus_traits"><td class="memItemLeft" align="right" valign="top"><a id="a63a247f0da1479cebf97b6c7807c4ca6"></a>
+static constexpr const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_common_drag_and_drop_bus_traits.html#a63a247f0da1479cebf97b6c7807c4ca6">s_HighPriority</a> = 10</td></tr>
+<tr class="memdesc:a63a247f0da1479cebf97b6c7807c4ca6 inherit pub_static_attribs_class_az_qt_components_1_1_common_drag_and_drop_bus_traits"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default handler. <br /></td></tr>
+<tr class="separator:a63a247f0da1479cebf97b6c7807c4ca6 inherit pub_static_attribs_class_az_qt_components_1_1_common_drag_and_drop_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="class_az_qt_components_1_1_drag_and_drop_events.html">DragAndDropEvents</a> bus is intended to act as a proxy for objects handling QT Drag and Drop Events on Widgets. Multiple handlers can register with a single Widget name to handle drag and drop events from that name. It is the handler authors' responsibility to not conflict with others' drag and drop handlers.</p>
-<p>See <a href="http://doc.qt.io/qt-5.8/dnd.html">http://doc.qt.io/qt-5.8/dnd.html</a> for more complete documentation on QT Drag and Drop.</p>
-<p>In general, to use this system, listen on the bus at the address of one of the contexts (see files in AzQtComponents/DragAndDrop/ for contexts) Each time you get any of the events, always check if the event has already been consumed by some other system by examining the event's "isAccepted()" bool property. If its already accepted by someone, do not do anything yourself. otherwise you may examine the mimeData attached in event-&gt;mimeData() and decide whether its relevant or not to your handler. if it is, accept the event yourself. The context is intentionally not const, allowing higher priority handlers to fill the context so that later ones can use it. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="af64c606d43826309b6f010b67cf94564"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af64c606d43826309b6f010b67cf94564">&#9670;&nbsp;</a></span>DragEnter()</h2>
 
@@ -130,7 +135,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sent when a drag and drop action enters a widget. </p>
+<p>Sent when a drag and drop action enters a widget. The context is intentionally non const, so that higher level listeners can add additional contextual information such as decoding the data and caching it, or partially consuming the data. </p>
 
 </div>
 </div>
@@ -161,8 +166,8 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="af307dfa23f1d9aed6b6a62fe3b36ec2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af307dfa23f1d9aed6b6a62fe3b36ec2f">&#9670;&nbsp;</a></span>DragMove()</h2>
+<a id="a3d4d799fb7866015427a29a8ffe1ef05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d4d799fb7866015427a29a8ffe1ef05">&#9670;&nbsp;</a></span>GetDragAndDropEventsPriority()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,21 +176,10 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void AzQtComponents::DragAndDropEvents::DragMove </td>
+          <td class="memname">virtual int AzQtComponents::DragAndDropEvents::GetDragAndDropEventsPriority </td>
           <td>(</td>
-          <td class="paramtype">QDragMoveEvent *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_az_qt_components_1_1_drag_and_drop_context_base.html">DragAndDropContextBase</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -194,44 +188,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sent when a drag and drop action is in progress. </p>
-
-</div>
-</div>
-<a id="abc675ee6f3f87d038b14afa24f4888b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc675ee6f3f87d038b14afa24f4888b8">&#9670;&nbsp;</a></span>Drop()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AzQtComponents::DragAndDropEvents::Drop </td>
-          <td>(</td>
-          <td class="paramtype">QDropEvent *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_az_qt_components_1_1_drag_and_drop_context_base.html">DragAndDropContextBase</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sent when a drag and drop action completes. </p>
+<p>Override this with one of the above priority values (or a number between them) to control what order your handler gets invoked relative to the other handlers. </p>
 
 </div>
 </div>
@@ -241,7 +198,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:30 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

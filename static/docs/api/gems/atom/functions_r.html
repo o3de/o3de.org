@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -49,13 +49,10 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_kd_tree.html#aa688ab6f919c13be98dd220a3a997678">AZ::RPI::ModelKdTree</a>
 </li>
 <li>ReadbackAttachment()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html#a8af11ba636aad8efe8a64756c4bf0fca">AZ::RPI::Pass</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html#a0db1cd10e71521a5ec8fe385a8825dfb">AZ::RPI::Pass</a>
 </li>
 <li>ReadbackOutput()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_attachment_preview_pass.html#ac1f541d1e7c4e0aad9f4e0d35cdb02df">AZ::RPI::ImageAttachmentPreviewPass</a>
-</li>
-<li>ReadLog()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_metrics_system_interface.html#ab418f8576d93c1537569a405327a0b61">AZ::RPI::ShaderMetricsSystemInterface</a>
 </li>
 <li>ReadPassAttachment()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_attachment_readback.html#a439dc281156aa100e9357152c38be786">AZ::RPI::AttachmentReadback</a>
@@ -72,6 +69,9 @@ $(function() {
 </li>
 <li>RebuildInstance()
 : <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment.html#ac92e52cfd8a1f265c51540cd89d21aca">AZ::Render::MaterialAssignment</a>
+</li>
+<li>RebuildPipelineStatesLookup()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a0895305dbc9fccc69d2ed164a43f201f">AZ::RPI::Scene</a>
 </li>
 <li>Recreate()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_parent_pass.html#ad3bfe489898fd27f03703752d06f3472">AZ::RPI::ParentPass</a>
@@ -97,8 +97,25 @@ $(function() {
 <li>RegisterAssociatedViewportContext()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#a2f7e905395c31a2b74ea8be73c8ddb9f">AZ::RPI::WindowContext</a>
 </li>
+<li>RegisterAttachmentImage()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_system.html#ac2570e3a7d425d46a5fcea599276ec84">AZ::RPI::ImageSystem</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_system_interface.html#ac4b53a63d0dc3248161b2275a04012a7">AZ::RPI::ImageSystemInterface</a>
+</li>
+<li>RegisterConfig()
+: <a class="el" href="class_atom_tools_framework_1_1_dynamic_node_manager_requests.html#a865512af1b3b530e344fc4bfeb2334a5">AtomToolsFramework::DynamicNodeManagerRequests</a>
+</li>
+<li>RegisterContextMenuActions()
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_asset_browser_interactions.html#a228140991e7cf824e41369fbd0271524">AtomToolsFramework::AtomToolsAssetBrowserInteractions</a>
+</li>
+<li>RegisterDataTypes()
+: <a class="el" href="class_atom_tools_framework_1_1_dynamic_node_manager.html#a016290b447bf9877c7882c3802ceddcf">AtomToolsFramework::DynamicNodeManager</a>
+, <a class="el" href="class_atom_tools_framework_1_1_dynamic_node_manager_requests.html#aedb04deebd3d4f72c0defebcca70dde7">AtomToolsFramework::DynamicNodeManagerRequests</a>
+</li>
 <li>RegisterDocumentType()
-: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a9986664bc0237e0cc9dde1f45483d29b">AtomToolsFramework::AtomToolsDocumentSystemRequests</a>
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#afdd6e0f87a23f466eaba15d5a9cdffee">AtomToolsFramework::AtomToolsDocumentSystemRequests</a>
+</li>
+<li>RegisterEditDataForSetting()
+: <a class="el" href="class_atom_tools_framework_1_1_dynamic_node_manager_requests.html#a54f9e40acee026413f110a0fad035818">AtomToolsFramework::DynamicNodeManagerRequests</a>
 </li>
 <li>RegisterFactory()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_factory_manager_request.html#a69121c31b434be4fc8df4ecd4a75ca10">AZ::RHI::FactoryManagerRequest</a>
@@ -118,6 +135,9 @@ $(function() {
 </li>
 <li>RegisterShaderPlatformHandler()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface_register.html#aa5329e1955c66744686dcbd05861fe95">AZ::RHI::ShaderPlatformInterfaceRegister</a>
+</li>
+<li>RegisterXRInterface()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_i_x_r_register_interface.html#a509e326cd0063e7aee0216f556ba9277">AZ::RPI::IXRRegisterInterface</a>
 </li>
 <li>Release()
 : <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment.html#a894eea0bb62534741dee8c709e003c38">AZ::Render::MaterialAssignment</a>
@@ -161,17 +181,23 @@ $(function() {
 <li>ReleaseShadow()
 : <a class="el" href="class_a_z_1_1_render_1_1_projected_shadow_feature_processor_interface.html#a35499bd209563713c152b5d62d8c0736">AZ::Render::ProjectedShadowFeatureProcessorInterface</a>
 </li>
+<li>ReleaseSkinnedMesh()
+: <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html#aaf51052459c9e9985b5630bdb60b78c6">AZ::Render::SkinnedMeshFeatureProcessorInterface</a>
+</li>
 <li>ReleaseTag()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_tag_registry.html#a56e62cfbb5811928556f162649848d65">AZ::RHI::TagRegistry&lt; TagType, MaxTagCount &gt;</a>
-</li>
-<li>ReloadContent()
-: <a class="el" href="class_material_editor_1_1_material_viewport_requests.html#a85d121cfc49553515e2bab7c7bdeba2d">MaterialEditor::MaterialViewportRequests</a>
 </li>
 <li>ReloadModel()
 : <a class="el" href="class_a_z_1_1_render_1_1_model_reloader_system_interface.html#ad41d8803991e4fd339305a98488a0b6e">AZ::Render::ModelReloaderSystemInterface</a>
 </li>
+<li>RemoveCameras()
+: <a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#ac371b98115faeb5ece4cbd8bf334b966">AtomToolsFramework::ModularViewportCameraControllerRequests</a>
+</li>
 <li>RemoveChild()
 : <a class="el" href="class_im_gui_1_1_im_gui_frame_visualizer_node.html#adaa81628894d518d1a13cbcccaf6e028">ImGui::ImGuiFrameVisualizerNode</a>
+</li>
+<li>RemoveData()
+: <a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html#a226dfb3490c3fb43a39fd31289d04f12">AZ::Render::IndexedDataVector&lt; DataType, IndexType &gt;</a>
 </li>
 <li>RemoveDefaultImGuiPass()
 : <a class="el" href="class_a_z_1_1_render_1_1_im_gui_system_requests.html#a441b364d65fb037214dbe4b9e3c6a318">AZ::Render::ImGuiSystemRequests</a>
@@ -179,13 +205,34 @@ $(function() {
 <li>RemoveDockWidget()
 : <a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window_requests.html#a62597a6c9654f8ce270be10dd605065f">AtomToolsFramework::AtomToolsMainWindowRequests</a>
 </li>
+<li>RemoveDocumentTab()
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_main_window.html#a1ec6b64033d0b59ed4e9d76a687f5b9a">AtomToolsFramework::AtomToolsDocumentMainWindow</a>
+</li>
+<li>RemoveFromCache()
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_aliased_heap.html#aec300fbdb106b9d9174fd969cacd31c2">AZ::RHI::AliasedHeap</a>
+</li>
 <li>RemoveFromRenderTick()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a713ae084403d4162e7845cacf347a57b">AZ::RPI::RenderPipeline</a>
+</li>
+<li>RemoveIndex()
+: <a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html#af060af92cba8a55a934acbbc26b7ef99">AZ::Render::IndexedDataVector&lt; DataType, IndexType &gt;</a>
 </li>
 <li>RemovePassFromLibrary()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_library.html#a075a5b7e4374b69143bcd480e84da1e1">AZ::RPI::PassLibrary</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a5f75ac99338292acf6296c9f26d91a69">AZ::RPI::PassSystem</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#aad87c35c2fb3b9afb35f230d67efed58">AZ::RPI::PassSystemInterface</a>
+</li>
+<li>RemovePassTemplate()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_library.html#a521d597a82ad7dcfa011e1373be9c916">AZ::RPI::PassLibrary</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a4b6aa6edde175fa9ce7e136f922e3651">AZ::RPI::PassSystem</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#aa6ffd56ef8d513e99c85e915dbf6b616">AZ::RPI::PassSystemInterface</a>
+</li>
+<li>RemoveReflectionProbe()
+: <a class="el" href="class_a_z_1_1_render_1_1_reflection_probe_feature_processor_interface.html#a08bfe34c8984f4e10eb46693abad0dfb">AZ::Render::ReflectionProbeFeatureProcessorInterface</a>
+</li>
+<li>RemoveRenderPipeline()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#acf4956e0a92f497a05e921c520ae30cb">AZ::RPI::PassSystem</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a67b1127a8eca5b472e54f340eeee658a">AZ::RPI::PassSystemInterface</a>
 </li>
 <li>RemoveSettingsInterface()
 : <a class="el" href="class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html#af062b9695ccfc9433dc672b2f35e20b6">AZ::Render::PostProcessFeatureProcessorInterface</a>
@@ -220,6 +267,12 @@ $(function() {
 <li>Reopen()
 : <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a4ac6b2450367597e8e9fd21c32e3247e">AtomToolsFramework::AtomToolsDocumentRequests</a>
 </li>
+<li>ReopenRecordState()
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html#aae549f17e8a6f55d9c4f64a78fc521c3">AtomToolsFramework::AtomToolsDocument</a>
+</li>
+<li>ReopenRestoreState()
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html#ae78829ca92b3d70489d0dff3216e665c">AtomToolsFramework::AtomToolsDocument</a>
+</li>
 <li>ReportError()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html#a8e9b542ff427b8e606fc2414188607b2">AZ::RPI::AssetCreator&lt; AssetDataT &gt;</a>
 </li>
@@ -236,9 +289,6 @@ $(function() {
 <li>ReportWarning()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html#a4741990b501e12a2679e8705f84a8f31">AZ::RPI::AssetCreator&lt; AssetDataT &gt;</a>
 </li>
-<li>RequestShaderVariant()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_metrics_system_interface.html#ac3a02809d80d9e9308a5ce6776a9ec68">AZ::RPI::ShaderMetricsSystemInterface</a>
-</li>
 <li>RequiresLoading()
 : <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment.html#ae0b9f5331c222eccf4d5fa655c7fecc4">AZ::Render::MaterialAssignment</a>
 </li>
@@ -254,6 +304,8 @@ $(function() {
 </li>
 <li>Reset()
 : <a class="el" href="class_atom_tools_framework_1_1_inspector_requests.html#a1f1d2f6011b579dc274e2dec1399f09e">AtomToolsFramework::InspectorRequests</a>
+, <a class="el" href="class_atom_tools_framework_1_1_viewport_input_behavior_controller.html#ad2a9ad50707b1716a92e6cdd0145d457">AtomToolsFramework::ViewportInputBehaviorController</a>
+, <a class="el" href="class_atom_tools_framework_1_1_viewport_input_behavior_controller_interface.html#ac9e0538b4c9aa73d3a5f3fd2fc167710">AtomToolsFramework::ViewportInputBehaviorControllerInterface</a>
 , <a class="el" href="class_a_z_1_1_debug_1_1_camera_controller_requests.html#a267acf11f140c3aca2ee3e3b26cbb6f2">AZ::Debug::CameraControllerRequests</a>
 , <a class="el" href="class_a_z_1_1_render_1_1_image_based_light_feature_processor.html#ac986fe294772f7603052537b33c29943">AZ::Render::ImageBasedLightFeatureProcessor</a>
 , <a class="el" href="class_a_z_1_1_render_1_1_image_based_light_feature_processor_interface.html#aa1f342a2475f61aa3caca418946ad3b3">AZ::Render::ImageBasedLightFeatureProcessorInterface</a>
@@ -268,15 +320,22 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_render_attachment_layout_builder.html#a6f97b10c6560a6cc1f4369dbf5e4dd81">AZ::RHI::RenderAttachmentLayoutBuilder</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_tag_registry.html#a606053dd5e7780ba8b702d97e2bf5389">AZ::RHI::TagRegistry&lt; TagType, MaxTagCount &gt;</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_i_shader_variant_finder.html#ae61b2679d37182f149bf52591b059518">AZ::RPI::IShaderVariantFinder</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_metrics_system_interface.html#a2e21dd3a8793b34d6775eb873af2f94c">AZ::RPI::ShaderMetricsSystemInterface</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_uv_stream_tangent_bitmask.html#a049c157e07eea02cbf48dc7cff5c8ebe">AZ::RPI::UvStreamTangentBitmask</a>
-, <a class="el" href="class_material_editor_1_1_material_editor_viewport_input_controller_requests.html#a2ee910eb727f2fbe88ed8da387b16054">MaterialEditor::MaterialEditorViewportInputControllerRequests</a>
 </li>
 <li>ResetLibrary()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_cache.html#aa6307b23fa04d617a78949568af486f7">AZ::RHI::PipelineStateCache</a>
 </li>
 <li>ResetObject()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_object_factory_base.html#a8fa733a450eb4c99eefec0017ceccca6">AZ::RHI::ObjectFactoryBase&lt; ObjectType &gt;</a>
+</li>
+<li>ResetResourceTypeIteration()
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html#a42510f2336f4f5cbaa49c85a3f259ecb">AZ::RHI::ShaderResourceGroup</a>
+</li>
+<li>ResetTotalSubmits()
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html#a701ac39842e7836615e3fed223c83106">AZ::RHI::CommandList</a>
+</li>
+<li>ResetUpdateMask()
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#ae6966fbc034b85a60b16d1e15f162ff9">AZ::RHI::ShaderResourceGroupData</a>
 </li>
 <li>ResetViews()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#adef8019144a236fae2b4838576a4db45">AZ::RHI::ShaderResourceGroupData</a>
@@ -312,7 +371,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:31 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:25 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -75,7 +75,7 @@ $(function() {
 : <a class="el" href="class_a_z_std_1_1thread.html#a4facf1d6ad0b6227f33d55762194cf81">AZStd::thread</a>
 </li>
 <li>Tick()
-: <a class="el" href="class_a_z_1_1_component_application.html#a2cd2ad97413f7bd3d74272b2ff8d9a8e">AZ::ComponentApplication</a>
+: <a class="el" href="class_a_z_1_1_component_application.html#ab509b447671e365d7595c7bfa0329255">AZ::ComponentApplication</a>
 </li>
 <li>TickEvents()
 : <a class="el" href="class_a_z_1_1_tick_events.html#ae0a25e62de046bda16836c2a70d9a44e">AZ::TickEvents</a>
@@ -91,6 +91,7 @@ $(function() {
 </li>
 <li>ToString()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset.html#ad27062be27073389c5614ee1621b69c8">AZ::Data::Asset&lt; T &gt;</a>
+, <a class="el" href="class_a_z_1_1_dom_1_1_path.html#af1ee1ef6fac346c992e56315646c8e6f">AZ::Dom::Path</a>
 , <a class="el" href="class_a_z_1_1_entity_id.html#a2af7e16cfa72dab7f0136cb3539b2da7">AZ::EntityId</a>
 , <a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html#a9ca06a5ac99fb762b5371e51e399425b">AZ::JsonSerializationResult::ResultCode</a>
 , <a class="el" href="class_a_z_1_1_script_time_point.html#af1687bbf3f218289c662457284438354">AZ::ScriptTimePoint</a>
@@ -102,15 +103,21 @@ $(function() {
 <li>ToU32LinearToGamma()
 : <a class="el" href="class_a_z_1_1_color.html#ac59c8c928b70ac0fbcccbef341cdd87b">AZ::Color</a>
 </li>
+<li>TrackingFilterCallback
+: <a class="el" href="class_a_z_1_1_settings_registry_origin_tracker.html#ae89fa87b36c65811ee307705aff303f1">AZ::SettingsRegistryOriginTracker</a>
+</li>
 <li>Traits
 : <a class="el" href="struct_a_z_1_1_behavior_parameter.html#a9aefcdd7ce414cacf116e9191392b963">AZ::BehaviorParameter</a>
 , <a class="el" href="class_a_z_1_1_e_bus.html#a3db969336347a43aaca9d2c9c45ed3c9">AZ::EBus&lt; Interface, BusTraits &gt;</a>
 </li>
 <li>Transform()
-: <a class="el" href="class_a_z_1_1_transform.html#af890bdb61355797653f7aad7054cd181">AZ::Transform</a>
+: <a class="el" href="class_a_z_1_1_transform.html#a47996b30080aea3ac1d215622d324a42">AZ::Transform</a>
 </li>
 <li>TransformConfig()
-: <a class="el" href="class_a_z_1_1_transform_config.html#a39f6bea53ab8cc6f527330e3c1e9dfec">AZ::TransformConfig</a>
+: <a class="el" href="class_a_z_1_1_transform_config.html#a5a685bcc6fc289555f5e78c1f21c685e">AZ::TransformConfig</a>
+</li>
+<li>TransformPoint()
+: <a class="el" href="class_a_z_1_1_matrix3x4.html#a3f78fcf3ffa6a56381d796cb64a88d89">AZ::Matrix3x4</a>
 </li>
 <li>TransformVector()
 : <a class="el" href="class_a_z_1_1_matrix3x4.html#afd54d0acde0fce310a2e078a4263110e">AZ::Matrix3x4</a>
@@ -137,7 +144,8 @@ $(function() {
 , <a class="el" href="class_a_z_std_1_1unordered__map.html#a1ef24a3ccddb26bfb7291d7d8c2e8fa7">AZStd::unordered_map&lt; Key, MappedType, Hasher, EqualKey, Allocator &gt;</a>
 </li>
 <li>Type
-: <a class="el" href="class_a_z_1_1_settings_registry_interface.html#aa75183be24f262f58ae98105b4d27c43">AZ::SettingsRegistryInterface</a>
+: <a class="el" href="class_a_z_1_1_dom_1_1_patch_operation.html#a373c619165d71ac7eefd7ca090ff9263">AZ::Dom::PatchOperation</a>
+, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#aa75183be24f262f58ae98105b4d27c43">AZ::SettingsRegistryInterface</a>
 </li>
 <li>type()
 : <a class="el" href="class_a_z_std_1_1any.html#ada888c1e277f62fe3f43cf70a5e58a37">AZStd::any</a>
@@ -159,7 +167,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:16 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:06 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

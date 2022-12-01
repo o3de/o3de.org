@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -81,11 +81,17 @@ $(function() {
 : <a class="el" href="class_az_framework_1_1_entity_context.html#a4e2fcc9d4b547b30d524ccd7623b8fd1">AzFramework::EntityContext</a>
 , <a class="el" href="class_az_framework_1_1_game_entity_context_component.html#a570c7fa8cc6f825d66ab2f6048eabd52">AzFramework::GameEntityContextComponent</a>
 </li>
+<li>OnDespawn()
+: <a class="el" href="class_az_framework_1_1_scripts_1_1_spawnable_script_notifications.html#a8eb63bd9f4193392518e553c0cf43783">AzFramework::Scripts::SpawnableScriptNotifications</a>
+</li>
 <li>OnDpiScaleFactorChanged()
 : <a class="el" href="class_az_framework_1_1_window_notifications.html#a0b02084f755020c0ef3fbfb5efb44280">AzFramework::WindowNotifications</a>
 </li>
+<li>OnEditorChanged()
+: <a class="el" href="class_a_z_1_1_document_property_editor_1_1_adapter_builder.html#a7d63d6ff42c13cd2de6bf079109aea77">AZ::DocumentPropertyEditor::AdapterBuilder</a>
+</li>
 <li>OnEntitiesReloadedFromStream()
-: <a class="el" href="class_az_framework_1_1_entity_ownership_service_notifications.html#ace39d9119c4bc621bfc35e6f5bc70838">AzFramework::EntityOwnershipServiceNotifications</a>
+: <a class="el" href="class_az_framework_1_1_entity_ownership_service_notifications.html#a4c6f245e0c8363c7fa7d324d1f210e61">AzFramework::EntityOwnershipServiceNotifications</a>
 </li>
 <li>OnEntityActivated()
 : <a class="el" href="class_az_framework_1_1_transform_component.html#a80b8c76a19e093ae1276147934f3e3a1">AzFramework::TransformComponent</a>
@@ -106,7 +112,7 @@ $(function() {
 : <a class="el" href="class_az_framework_1_1_transform_component.html#a69f0f1c34522db98202b85ddf03b4eda">AzFramework::TransformComponent</a>
 </li>
 <li>OnEntityOwnershipServiceReset()
-: <a class="el" href="class_az_framework_1_1_entity_ownership_service_notifications.html#aed490a8fe6eb31ef9808b5d698199f3f">AzFramework::EntityOwnershipServiceNotifications</a>
+: <a class="el" href="class_az_framework_1_1_entity_ownership_service_notifications.html#a91410ab4c0a25d0b2617a01cf246c337">AzFramework::EntityOwnershipServiceNotifications</a>
 </li>
 <li>OnError()
 : <a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_system_info_notifications.html#a07e28ec9747edffcc6466977a23c99e7">AzFramework::AssetSystem::AssetSystemInfoNotifications</a>
@@ -124,7 +130,19 @@ $(function() {
 : <a class="el" href="class_physics_1_1_wind_notifications.html#a343e03d0177f1a5451845810a5cb4adc">Physics::WindNotifications</a>
 </li>
 <li>OnHeightfieldDataChanged()
-: <a class="el" href="class_physics_1_1_heightfield_provider_notifications.html#aa4756b61e3a2fed2d80ecf329776ef1d">Physics::HeightfieldProviderNotifications</a>
+: <a class="el" href="class_physics_1_1_heightfield_provider_notifications.html#ad33227d4f632f463cd618ed4d4b54c6c">Physics::HeightfieldProviderNotifications</a>
+</li>
+<li>OnImGuiActivated()
+: <a class="el" href="class_az_framework_1_1_viewport_im_gui_notifications.html#a9e882f6e55b4ecee3b66f51f384d7d3d">AzFramework::ViewportImGuiNotifications</a>
+</li>
+<li>OnImGuiDeactivated()
+: <a class="el" href="class_az_framework_1_1_viewport_im_gui_notifications.html#af1e8967604b036ce62cc2fb221e909f6">AzFramework::ViewportImGuiNotifications</a>
+</li>
+<li>OnImGuiDropDownHidden()
+: <a class="el" href="class_az_framework_1_1_viewport_im_gui_notifications.html#ad0f54c7767d28db8859d6b451d4d26d0">AzFramework::ViewportImGuiNotifications</a>
+</li>
+<li>OnImGuiDropDownShown()
+: <a class="el" href="class_az_framework_1_1_viewport_im_gui_notifications.html#a61f748b14037c553bf33dc444e27652e">AzFramework::ViewportImGuiNotifications</a>
 </li>
 <li>OnInputChannelEvent()
 : <a class="el" href="class_az_framework_1_1_input_channel_event_listener.html#a800fe9f8e450e5ab0567f54677885782">AzFramework::InputChannelEventListener</a>
@@ -150,9 +168,6 @@ $(function() {
 </li>
 <li>OnInputTextEventFiltered()
 : <a class="el" href="class_az_framework_1_1_input_text_event_listener.html#adf9a6164e7cd3b3e938003a632ddaebb">AzFramework::InputTextEventListener</a>
-</li>
-<li>OnMaterialLibraryChanged()
-: <a class="el" href="class_physics_1_1_material_selection.html#a403ab2bfd0af6ded0648fd2026cbae99">Physics::MaterialSelection</a>
 </li>
 <li>OnPackageProgressChanged()
 : <a class="el" href="class_az_framework_1_1_streaming_install_1_1_streaming_install_package_notifications.html#a98cbbf9856918f0af1a525da5772d49f">AzFramework::StreamingInstall::StreamingInstallPackageNotifications</a>
@@ -192,8 +207,14 @@ $(function() {
 <li>OnRefreshRateChanged()
 : <a class="el" href="class_az_framework_1_1_window_notifications.html#a333dc85ab759621c43d0967358c80612">AzFramework::WindowNotifications</a>
 </li>
+<li>OnResolveAliases()
+: <a class="el" href="class_az_framework_1_1_spawnable_asset_events.html#aa03e5b2cb9a85ebc08244b5a6946bab0">AzFramework::SpawnableAssetEvents</a>
+</li>
 <li>OnRootSpawnableAssigned()
 : <a class="el" href="class_az_framework_1_1_root_spawnable_notifications.html#a8b8e32cd86111c3f094eb1fbdc1386ac">AzFramework::RootSpawnableNotifications</a>
+</li>
+<li>OnRootSpawnableReady()
+: <a class="el" href="class_az_framework_1_1_root_spawnable_notifications.html#aa2c3b7d4ff143218c9c56a8b24199767">AzFramework::RootSpawnableNotifications</a>
 </li>
 <li>OnRootSpawnableReleased()
 : <a class="el" href="class_az_framework_1_1_root_spawnable_notifications.html#af35710e5b82ee986b85e37b607c6a837">AzFramework::RootSpawnableNotifications</a>
@@ -216,6 +237,9 @@ $(function() {
 : <a class="el" href="class_az_framework_1_1_input_mapping.html#a577b6a382b3f697ebcc70b5649e1ec46">AzFramework::InputMapping</a>
 , <a class="el" href="class_az_framework_1_1_input_mapping_and.html#a200f0343779d772a614586542f7bde30">AzFramework::InputMappingAnd</a>
 , <a class="el" href="class_az_framework_1_1_input_mapping_or.html#a14b5df546207d4f81c5ca639f81a221e">AzFramework::InputMappingOr</a>
+</li>
+<li>OnSpawn()
+: <a class="el" href="class_az_framework_1_1_scripts_1_1_spawnable_script_notifications.html#aeee3f33e1e1415c1a6f79544f188dd8e">AzFramework::Scripts::SpawnableScriptNotifications</a>
 </li>
 <li>OnSpawnableIssue()
 : <a class="el" href="class_az_framework_1_1_spawnable_monitor.html#a69a459a5536c7e70018da27a91f79bec">AzFramework::SpawnableMonitor</a>
@@ -255,19 +279,23 @@ $(function() {
 : <a class="el" href="class_az_framework_1_1_window_notifications.html#a040daf5c3b3c76e5995f29ce000440d0">AzFramework::WindowNotifications</a>
 </li>
 <li>operator!=()
-: <a class="el" href="class_az_framework_1_1_slice_instantiation_ticket.html#aaebd85436c3433771c6e2d1eb81d35f7">AzFramework::SliceInstantiationTicket</a>
+: <a class="el" href="class_az_framework_1_1_input_channel_id.html#a021e00b32e1b44166c4f3e0c2981e2fe">AzFramework::InputChannelId</a>
+, <a class="el" href="class_az_framework_1_1_input_device_id.html#a21043c3bfc1677079986895435b94eb8">AzFramework::InputDeviceId</a>
+, <a class="el" href="class_az_framework_1_1_slice_instantiation_ticket.html#aaebd85436c3433771c6e2d1eb81d35f7">AzFramework::SliceInstantiationTicket</a>
+, <a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_tag_weight.html#a02db8894fed53b57e5e023f2162e85e7">AzFramework::SurfaceData::SurfaceTagWeight</a>
 </li>
 <li>operator&lt;()
-: <a class="el" href="class_az_framework_1_1_input_device_id.html#a948e5ad9558770a7f1372b6524b0d2fe">AzFramework::InputDeviceId</a>
+: <a class="el" href="class_az_framework_1_1_input_device_id.html#a1810ad3df08d63433f04dcf0717a066c">AzFramework::InputDeviceId</a>
 </li>
 <li>operator=()
-: <a class="el" href="class_az_framework_1_1_input_device_id.html#ae67040e075f0518fedb65de8ef3a2713">AzFramework::InputDeviceId</a>
+: <a class="el" href="class_physics_1_1_material_property_value.html#a18a7a30aec9d6856e78066416d1f3e8f">Physics::MaterialPropertyValue</a>
 </li>
 <li>operator==()
-: <a class="el" href="class_az_framework_1_1_input_channel_id.html#a21b14ff7bc7373d1f76ab35654c49d28">AzFramework::InputChannelId</a>
+: <a class="el" href="class_az_framework_1_1_input_channel_id.html#a949fde1481dd8d6fe4662e4fa413bfa8">AzFramework::InputChannelId</a>
 , <a class="el" href="class_az_framework_1_1_input_channel_requests_1_1_bus_id_type.html#a343217125cdf9d63c417ea33369c9a66">AzFramework::InputChannelRequests::BusIdType</a>
-, <a class="el" href="class_az_framework_1_1_input_device_id.html#ac8019f53496b012e94b3dfe5aa449066">AzFramework::InputDeviceId</a>
+, <a class="el" href="class_az_framework_1_1_input_device_id.html#a96cd54c11a63ede813f74e7815bf1617">AzFramework::InputDeviceId</a>
 , <a class="el" href="class_az_framework_1_1_slice_instantiation_ticket.html#a12eaa06f29393dd10c62e11a7e3d24ec">AzFramework::SliceInstantiationTicket</a>
+, <a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_tag_weight.html#acf226d4f40d5d2d24e90e8848578df6e">AzFramework::SurfaceData::SurfaceTagWeight</a>
 </li>
 <li>OverrideTimeNowFn()
 : <a class="el" href="class_az_framework_1_1_click_detector.html#aba8687a1983d4bc0db0ece775c07443e">AzFramework::ClickDetector</a>
@@ -276,7 +304,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:24 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:16 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

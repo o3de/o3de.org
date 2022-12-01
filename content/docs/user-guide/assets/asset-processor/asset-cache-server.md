@@ -98,7 +98,7 @@ To enable Asset Processor in ACS mode as a server, a `.setreg` file needs these 
                     "assetCacheServerMode": "server",
                     "ACS Atom Image Builder": {
                         "name": "Atom Image Builder",
-                        "glob": "*.tiff",
+                        "glob": "*.png",
                         "checkServer": true
                     },
                     "ACS Precompiled Shader Builder": {
@@ -163,7 +163,7 @@ The asset caching system is configured using opt-in patterns. There are many typ
 ```
 "ACS title":
 {
-   "name": (string) a label for this block, normally the same as the title
+   "name": (string) a label for this block, can be used to match any builder by name
    "glob":  (string) wild card pattern i.e. "*.fbx"
    "pattern": (string) a regular expression i.e. "[\w]*\.asset"
    "checkServer": (Boolean) to enable set to true
@@ -172,19 +172,21 @@ The asset caching system is configured using opt-in patterns. There are many typ
 
 This ACS block allows users to configure the types of source assets that should be cached in the remote folder. The block is placed in the JSON path `/AssetProcessor/Settings/Server` object. The title must start with the prefix `"ACS "` to designate the object as a configuration block. The next part is either `"glob"` or `"pattern"` followed by the correct text for a wild card pattern or a regular expression; these are used to tag source assets that need to be cached.
 
+The `"name"` field is used for the title of the configuration block in the GUI tool, but it can also match an asset pattern by setting the `"name"` to a name of an asset builder. For example, a configuration block can set the name to "Atom Image Builder" so that all the processed images will be cached.
+
 {{< note >}}
 The block should only be set to `"glob"` or `"pattern"`, not both.
 {{< /note >}}
 
-The `"checkServer"` Boolean flag is used to enable the block. The default value for `"checkServer"` is false, so to enable the ACS block the Boolean flag needs to be set to true.
+The `"checkServer"` Boolean flag is used to enable the block. The default value for `"checkServer"` is false, so to enable the ACS block, the boolean flag needs to be set to true.
 
-An example JSON ACS block:
+As an example, this JSON ACS block will cache all product assets built by the "XmlBuilderWorker" builder:
 
 ```json
-"ACS WAV Files":
+"ACS XmlBuilderWorker":
 {
-   "name": "WAV Files",
-   "glob":  "*.wav",
+   "name": "XmlBuilderWorker",
+   "glob":  "*.vegdescriptorlist",
    "checkServer": true
 }
 ```

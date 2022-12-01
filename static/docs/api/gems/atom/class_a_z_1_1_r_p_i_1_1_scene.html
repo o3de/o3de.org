@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -70,6 +70,8 @@ Public Types</h2></td></tr>
 <tr class="memitem:af9fa41b600793e45d8766c2c55c24a02"><td class="memItemLeft" align="right" valign="top"><a id="af9fa41b600793e45d8766c2c55c24a02"></a>
 typedef AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_scene_1_1_pipeline_state_data.html">PipelineStateData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineStateList</b></td></tr>
 <tr class="separator:af9fa41b600793e45d8766c2c55c24a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43dbd9965040358ee5839711831511a2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a43dbd9965040358ee5839711831511a2">FeatureProcessorVisitCallback</a> = AZStd::function&lt; bool(<a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html">FeatureProcessor</a> &amp;)&gt;</td></tr>
+<tr class="separator:a43dbd9965040358ee5839711831511a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaabf28ef2e526f14abdbca21a6ef056"><td class="memItemLeft" align="right" valign="top"><a id="abaabf28ef2e526f14abdbca21a6ef056"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareSceneSrgEvent</b> = AZ::Event&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">RPI::ShaderResourceGroup</a> * &gt;</td></tr>
 <tr class="separator:abaabf28ef2e526f14abdbca21a6ef056"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,6 +109,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableFeatureProcess
 <tr class="memitem:ad3a3dfbf94357ce96165e31b831ae925"><td class="memItemLeft" align="right" valign="top"><a id="ad3a3dfbf94357ce96165e31b831ae925"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableAllFeatureProcessors</b> ()</td></tr>
 <tr class="separator:ad3a3dfbf94357ce96165e31b831ae925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a177202df4d654c81979c37dfdd8e23"><td class="memItemLeft" align="right" valign="top"><a id="a5a177202df4d654c81979c37dfdd8e23"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>VisitFeatureProcessor</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a43dbd9965040358ee5839711831511a2">FeatureProcessorVisitCallback</a> callback) const</td></tr>
+<tr class="separator:a5a177202df4d654c81979c37dfdd8e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeb2ce19bbf90732fd74183b2caef344"><td class="memTemplParams" colspan="2">template&lt;typename FeatureProcessorType &gt; </td></tr>
 <tr class="memitem:aeeb2ce19bbf90732fd74183b2caef344"><td class="memTemplItemLeft" align="right" valign="top">FeatureProcessorType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#aeeb2ce19bbf90732fd74183b2caef344">GetFeatureProcessor</a> () const</td></tr>
 <tr class="separator:aeeb2ce19bbf90732fd74183b2caef344"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +169,12 @@ RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><b>FindRend
 <tr class="separator:a3772348ab1f450dd31a1d9ee88dd86be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d4ce9800b2fe7aa0da3b4f368bede43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a4d4ce9800b2fe7aa0da3b4f368bede43">ConnectEvent</a> (PrepareSceneSrgEvent::Handler &amp;handler)</td></tr>
 <tr class="separator:a4d4ce9800b2fe7aa0da3b4f368bede43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0895305dbc9fccc69d2ed164a43f201f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a0895305dbc9fccc69d2ed164a43f201f">RebuildPipelineStatesLookup</a> ()</td></tr>
+<tr class="separator:a0895305dbc9fccc69d2ed164a43f201f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3514e5612709aae5c71495381a33f3"><td class="memItemLeft" align="right" valign="top"><a id="acc3514e5612709aae5c71495381a33f3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#acc3514e5612709aae5c71495381a33f3">TryApplyRenderPipelineChanges</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *pipeline)</td></tr>
+<tr class="memdesc:acc3514e5612709aae5c71495381a33f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try apply render pipeline changes from each feature processors if the pipeline allows modification and wasn't modified. <br /></td></tr>
+<tr class="separator:acc3514e5612709aae5c71495381a33f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -193,6 +204,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a221894c215ae2482c19a4b4ba9806dcc"><td class="memItemLeft" align="right" valign="top"><a id="a221894c215ae2482c19a4b4ba9806dcc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSceneNotifictaionHandlerConnected</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html">SceneNotification</a> *handler)</td></tr>
 <tr class="separator:a221894c215ae2482c19a4b4ba9806dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d101cfa2dc5f246a81e703105a7e771"><td class="memItemLeft" align="right" valign="top"><a id="a8d101cfa2dc5f246a81e703105a7e771"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineStateLookupNeedsRebuild</b> () override</td></tr>
+<tr class="separator:a8d101cfa2dc5f246a81e703105a7e771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad38eb6d23cde85ef87144b56448e6e06"><td class="memItemLeft" align="right" valign="top"><a id="ad38eb6d23cde85ef87144b56448e6e06"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Simulate</b> (RHI::JobPolicy jobPolicy, float simulationTime)</td></tr>
 <tr class="separator:ad38eb6d23cde85ef87144b56448e6e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,6 +229,22 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FeatureProcessorFact
 class&#160;</td><td class="memItemRight" valign="bottom"><b>RPISystem</b></td></tr>
 <tr class="separator:a6299e0989108b6adbb0aa76c80efc732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a43dbd9965040358ee5839711831511a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43dbd9965040358ee5839711831511a2">&#9670;&nbsp;</a></span>FeatureProcessorVisitCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a43dbd9965040358ee5839711831511a2">AZ::RPI::Scene::FeatureProcessorVisitCallback</a> =  AZStd::function&lt;bool(<a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html">FeatureProcessor</a>&amp;)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Callback function that will be invoked with each non-pointer <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html" title="Interface that FeatureProcessors should derive from @detail FeatureProcceors will record simulation s...">FeatureProcessor</a> return true to continue visiting or false to halt </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="adb4e2daf22e5f658b878f13b82cd742b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb4e2daf22e5f658b878f13b82cd742b">&#9670;&nbsp;</a></span>ConfigurePipelineState()</h2>
@@ -342,6 +372,24 @@ template&lt;typename FeatureProcessorType &gt; </div>
 
 </div>
 </div>
+<a id="a0895305dbc9fccc69d2ed164a43f201f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0895305dbc9fccc69d2ed164a43f201f">&#9670;&nbsp;</a></span>RebuildPipelineStatesLookup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::Scene::RebuildPipelineStatesLookup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rebuild pipeline states lookup table. This function is called every time scene's render pipelines change. User may call this function explicitly if render pipelines were changed </p>
+
+</div>
+</div>
 <a id="a344433e0fa483abc6ee4b1dccd962f30"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a344433e0fa483abc6ee4b1dccd962f30">&#9670;&nbsp;</a></span>SetDefaultRenderPipeline()</h2>
 
@@ -367,7 +415,7 @@ template&lt;typename FeatureProcessorType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:29 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:23 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -80,16 +80,16 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:aed58ea3f0d862fdfa4bde52502dc577a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147731daac2ea63e7dad6227695d5d81"><td class="memItemLeft" align="right" valign="top"><a id="a147731daac2ea63e7dad6227695d5d81"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_uuid.html#a147731daac2ea63e7dad6227695d5d81">FixedString</a> = <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">AZStd::fixed_string</a>&lt; <a class="el" href="struct_a_z_1_1_uuid.html#a6f8baf9427c9534065843d46e4450859">MaxStringBuffer</a> &gt;</td></tr>
+<tr class="memdesc:a147731daac2ea63e7dad6227695d5d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">32 <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> + 4 dashes + 2 brackets + 1 terminate <br /></td></tr>
+<tr class="separator:a147731daac2ea63e7dad6227695d5d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7beef7e86c6bf1a8ed729904cfbfd861"><td class="memItemLeft" align="right" valign="top"><a id="a7beef7e86c6bf1a8ed729904cfbfd861"></a>
 typedef unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
 <tr class="separator:a7beef7e86c6bf1a8ed729904cfbfd861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a554d342cb8105d6d995292b496448a98"><td class="memItemLeft" align="right" valign="top"><a id="a554d342cb8105d6d995292b496448a98"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_uuid.html#a554d342cb8105d6d995292b496448a98">Uuid</a> ()</td></tr>
-<tr class="memdesc:a554d342cb8105d6d995292b496448a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">32 <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> + 4 dashes + 2 brackets + 1 terminate <br /></td></tr>
-<tr class="separator:a554d342cb8105d6d995292b496448a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a057db6c96dd1a205b638b10cad75e9ca"><td class="memItemLeft" align="right" valign="top"><a id="a057db6c96dd1a205b638b10cad75e9ca"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Uuid</b> (const char *string, size_t stringLength=0)</td></tr>
 <tr class="separator:a057db6c96dd1a205b638b10cad75e9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,6 +117,9 @@ template&lt;class StringType &gt; </td></tr>
 <tr class="memitem:aab7059fcb6668495f76f4e922af2a5e0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_uuid.html#aab7059fcb6668495f76f4e922af2a5e0">ToString</a> (StringType &amp;result, bool isBrackets=true, bool isDashes=true) const</td></tr>
 <tr class="memdesc:aab7059fcb6668495f76f4e922af2a5e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">For inplace version we require resize, data and size members. <br /></td></tr>
 <tr class="separator:aab7059fcb6668495f76f4e922af2a5e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02cf379ad2d885f735523f42bcaba44b"><td class="memItemLeft" align="right" valign="top"><a id="a02cf379ad2d885f735523f42bcaba44b"></a>
+<a class="el" href="struct_a_z_1_1_uuid.html#a147731daac2ea63e7dad6227695d5d81">FixedString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ToFixedString</b> (bool isBrackets=true, bool isDashes=true) const</td></tr>
+<tr class="separator:a02cf379ad2d885f735523f42bcaba44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c05a9bd6b0d742bddd52962e17efe84"><td class="memItemLeft" align="right" valign="top"><a id="a0c05a9bd6b0d742bddd52962e17efe84"></a>
 AZ_MATH_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;rhs) const</td></tr>
 <tr class="separator:a0c05a9bd6b0d742bddd52962e17efe84"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,9 +163,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetHash</b> () cons
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab7a52baf9c5d171fc77d972a348c3dc7"><td class="memItemLeft" align="right" valign="top"><a id="ab7a52baf9c5d171fc77d972a348c3dc7"></a>
-static <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateNull</b> ()</td></tr>
-<tr class="separator:ab7a52baf9c5d171fc77d972a348c3dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cba681f128ea5e34bd5ceb1a911c495"><td class="memItemLeft" align="right" valign="top"><a id="a1cba681f128ea5e34bd5ceb1a911c495"></a>
+static constexpr <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateNull</b> ()</td></tr>
+<tr class="separator:a1cba681f128ea5e34bd5ceb1a911c495"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9e8d42120fef3aa18bcc77cd8197499"><td class="memItemLeft" align="right" valign="top"><a id="af9e8d42120fef3aa18bcc77cd8197499"></a>
 static <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_uuid.html#af9e8d42120fef3aa18bcc77cd8197499">Create</a> ()</td></tr>
 <tr class="memdesc:af9e8d42120fef3aa18bcc77cd8197499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> (VAR_RFC_4122,VER_RANDOM) <br /></td></tr>
@@ -193,7 +196,7 @@ Public Attributes</h2></td></tr>
 const typedef unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b></td></tr>
 <tr class="separator:a3936a0a26755ce9d42ad65b0babdcae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac66e8f51540cf9fd1ae87339f0514573"><td class="memItemLeft" align="right" valign="top"><a id="ac66e8f51540cf9fd1ae87339f0514573"></a>
-unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> [16]</td></tr>
+unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> [16] {}</td></tr>
 <tr class="separator:ac66e8f51540cf9fd1ae87339f0514573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -201,10 +204,10 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:ac00e676bccb574f8a88adfd4a5f9fc8c"><td class="memItemLeft" align="right" valign="top"><a id="ac00e676bccb574f8a88adfd4a5f9fc8c"></a>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>ValidUuidStringLength</b> = 32</td></tr>
 <tr class="separator:ac00e676bccb574f8a88adfd4a5f9fc8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42b1886bdc80ffe3ce010cfc841430fd"><td class="memItemLeft" align="right" valign="top"><a id="a42b1886bdc80ffe3ce010cfc841430fd"></a>
-static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_uuid.html#a42b1886bdc80ffe3ce010cfc841430fd">MaxStringBuffer</a> = 39</td></tr>
-<tr class="memdesc:a42b1886bdc80ffe3ce010cfc841430fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of characters (data only, no extra formatting) in a valid UUID string. <br /></td></tr>
-<tr class="separator:a42b1886bdc80ffe3ce010cfc841430fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8baf9427c9534065843d46e4450859"><td class="memItemLeft" align="right" valign="top"><a id="a6f8baf9427c9534065843d46e4450859"></a>
+static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_uuid.html#a6f8baf9427c9534065843d46e4450859">MaxStringBuffer</a> = 39</td></tr>
+<tr class="memdesc:a6f8baf9427c9534065843d46e4450859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of characters (data only, no extra formatting) in a valid UUID string. <br /></td></tr>
+<tr class="separator:a6f8baf9427c9534065843d46e4450859"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0c1b4eecc1eaf67780d56b585360e2bc"></a>
@@ -342,7 +345,7 @@ template&lt;size_t SizeT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:46 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:31 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

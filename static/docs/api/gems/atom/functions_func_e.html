@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -60,7 +60,14 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#addf5fad151b0e5848da92534c7a10067">AZ::RPI::Scene</a>
 </li>
 <li>EnableResourceTypeCompilation()
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#ad34d3dc9b365e58c3f4295a90e89cea0">AZ::RHI::ShaderResourceGroupData</a>
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#a5af548138593f6417ca8c203caf31e0e">AZ::RHI::ShaderResourceGroupData</a>
+</li>
+<li>EnableRhiResourceTypeCompilation()
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html#ab1fb010ed6e0f0c2d7152bdcc8a0d340">AZ::RHI::ShaderResourceGroup</a>
+</li>
+<li>EnableSkinning()
+: <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html#a689150589cd2d51ae5070d0783871ff6">AZ::Render::SkinnedMeshFeatureProcessorInterface</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#ac979ae725c776ca72b1b0798e6c58429">AZ::Render::SkinnedMeshInstance</a>
 </li>
 <li>End()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_aliased_attachment_allocator.html#a39394e7a26b135405c8a0a80d2e494a2">AZ::RHI::AliasedAttachmentAllocator&lt; Heap &gt;</a>
@@ -106,6 +113,7 @@ $(function() {
 <li>EndFrame()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html#af933eda6d87a09cf8ef5b801a81347df">AZ::RHI::Device</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_scheduler.html#af78f7895fdc8818c610d4c8d0d67e6c3">AZ::RHI::FrameScheduler</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#add238641e5446b1ee13fd45f7f3ad3d1">AZ::RHI::XRRenderingInterface</a>
 </li>
 <li>EndGroup()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_executer.html#aef3dd193071372e7d1ebd91b099ec525">AZ::RHI::FrameGraphExecuter</a>
@@ -140,10 +148,10 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_factory.html#a40fca3644da6d1cc864898acf808c79d">AZ::RHI::Factory</a>
 </li>
 <li>EnumerateProperties()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#a936164e5291d58014fa88e0d8863c8bf">AZ::RPI::MaterialTypeSourceData</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ae882d05b620f58afe9de2294e29b6678">AZ::RPI::MaterialTypeSourceData</a>
 </li>
-<li>EnumeratePropertiesInDisplayOrder()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#aa3d41b20a593288f0bac92a0a54134a5">AZ::RPI::MaterialTypeSourceData</a>
+<li>EnumeratePropertyGroups()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#a4a72037c44990b05067a80c66c20102a">AZ::RPI::MaterialTypeSourceData</a>
 </li>
 <li>EnumerateViewportContexts()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_manager.html#abb9785816b90ae5c2e455dd044f76f88">AZ::RPI::ViewportContextManager</a>
@@ -152,6 +160,9 @@ $(function() {
 <li>erase()
 : <a class="el" href="class_a_z_1_1_render_1_1_indexable_list.html#a42b3f7c3054fabda65849a201bbbc84e">AZ::Render::IndexableList&lt; T &gt;</a>
 , <a class="el" href="class_a_z_1_1_stable_dynamic_array.html#a10d8ad8ce46674b31adb13ad948b4290">AZ::StableDynamicArray&lt; T, ElementsPerPage, Allocator &gt;</a>
+</li>
+<li>EraseItem()
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_object_cache.html#a17e87858a4a304b88b073622d7359a7f">AZ::RHI::ObjectCache&lt; ObjectType, KeyType, EvictionCallback &gt;</a>
 </li>
 <li>EraseResourceView()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource.html#aebaa2dc5e3c0456c244e5c23c8a93d56">AZ::RHI::Resource</a>
@@ -177,11 +188,14 @@ $(function() {
 <li>ExpandMipChain()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image.html#a6e9b81f468a8c5a4e97838daf531a927">AZ::RPI::StreamingImage</a>
 </li>
+<li>ExtendPropertyIdContext()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_name_context.html#a8a7251c708433175c06ac67265958f50">AZ::RPI::MaterialNameContext</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:31 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:25 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -37,7 +37,7 @@ Review these specifications when creating a toast:
 
 * Don't stack multiple toasts such that they are side-by-side vertically or horizontally, as this may block the user's workflow. Instead, display multiple toasts sequentially and in order of importance.
 
-* Use one of the following icons from the list of [Standard icons](../overview#standard-icons): error/failure, warning, success, or information icon.
+* Use one of the following icons from the list of [Standard icons](../#standard-icons): error/failure, warning, success, or information icon.
 
 * The toast must have a fixed width and should not expand to fit the content area.
 

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -72,9 +72,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>string_view_type</b>
 <tr class="memitem:afc9febcf6796e19d47c138090bc23b42"><td class="memItemLeft" align="right" valign="top"><a id="afc9febcf6796e19d47c138090bc23b42"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = char</td></tr>
 <tr class="separator:afc9febcf6796e19d47c138090bc23b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee8ccadaec336d3cf8d2030762c77dad"><td class="memItemLeft" align="right" valign="top"><a id="aee8ccadaec336d3cf8d2030762c77dad"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> = const <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a> &gt;</td></tr>
-<tr class="separator:aee8ccadaec336d3cf8d2030762c77dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d140acedb31ec01109f9c5a42c5fafc"><td class="memItemLeft" align="right" valign="top"><a id="a4d140acedb31ec01109f9c5a42c5fafc"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> = <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">PathIterator</a>&lt; const <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a> &gt;</td></tr>
+<tr class="separator:a4d140acedb31ec01109f9c5a42c5fafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af206c4875a92586e202c902d51296407"><td class="memItemLeft" align="right" valign="top"><a id="af206c4875a92586e202c902d51296407"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> = <a class="el" href="class_a_z_1_1_i_o_1_1_path_iterator.html">const_iterator</a></td></tr>
 <tr class="separator:af206c4875a92586e202c902d51296407"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,9 +108,12 @@ constexpr <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a>
 constexpr void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a> &amp;rhs) noexcept</td></tr>
 <tr class="separator:a3654460a6b50591d1d3cef6a0adcaa23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f10782766c9675c859dce2a8d4a2bdf"><td class="memItemLeft" align="right" valign="top"><a id="a1f10782766c9675c859dce2a8d4a2bdf"></a>
-constexpr <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html#a1f10782766c9675c859dce2a8d4a2bdf">Native</a> () const noexcept</td></tr>
+constexpr const <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html#a1f10782766c9675c859dce2a8d4a2bdf">Native</a> () const noexcept</td></tr>
 <tr class="memdesc:a1f10782766c9675c859dce2a8d4a2bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns string_view stored within the <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a>. <br /></td></tr>
 <tr class="separator:a1f10782766c9675c859dce2a8d4a2bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f29a5ca5ba8f3a11177a4d2618d976"><td class="memItemLeft" align="right" valign="top"><a id="ac8f29a5ca5ba8f3a11177a4d2618d976"></a>
+constexpr <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Native</b> () noexcept</td></tr>
+<tr class="separator:ac8f29a5ca5ba8f3a11177a4d2618d976"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f1fa4c5b71070b1b99217a19b7839b3"><td class="memItemLeft" align="right" valign="top"><a id="a4f1fa4c5b71070b1b99217a19b7839b3"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html#a4f1fa4c5b71070b1b99217a19b7839b3">operator AZStd::string_view</a> () const noexcept</td></tr>
 <tr class="memdesc:a4f1fa4c5b71070b1b99217a19b7839b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion operator to retrieve string_view stored within the <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a>. <br /></td></tr>
@@ -200,9 +203,9 @@ constexpr <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">FixedMaxPat
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a51b99362583a9cd01cfda191157cf87b"><td class="memItemLeft" align="right" valign="top"><a id="a51b99362583a9cd01cfda191157cf87b"></a>
-friend&#160;</td><td class="memItemRight" valign="bottom"><b>PathIterator&lt; PathView &gt;</b></td></tr>
-<tr class="separator:a51b99362583a9cd01cfda191157cf87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f532cf9a898944e510407eb673cfa3"><td class="memItemLeft" align="right" valign="top"><a id="a16f532cf9a898944e510407eb673cfa3"></a>
+friend&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b></td></tr>
+<tr class="separator:a16f532cf9a898944e510407eb673cfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -943,7 +946,7 @@ a glob containing '*' will match a single component of a path</h1>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:48 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:32 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

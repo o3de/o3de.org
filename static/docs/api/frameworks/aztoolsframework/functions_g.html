@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -61,6 +61,14 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_interface.html#aea893fcffbe48fdd02806716e947e778">AzToolsFramework::Prefab::InstanceToTemplateInterface</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#a241d1a19242dc56ad5e32dc13917dffe">AzToolsFramework::Prefab::InstanceToTemplatePropagator</a>
 </li>
+<li>GenerateEntityAliasPath()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_interface.html#acdc1b7e28f3cb56ab4a088d44c80f4f4">AzToolsFramework::Prefab::InstanceToTemplateInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#ac29797a4a9063d15e00bc80ab570b42c">AzToolsFramework::Prefab::InstanceToTemplatePropagator</a>
+</li>
+<li>GenerateInstanceDom()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_dom_generator.html#ad462b2b0f30ded7dab993bd098fff5db">AzToolsFramework::Prefab::InstanceDomGenerator</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_dom_generator_interface.html#a415f3af0257bb7e71d639f6922160053">AzToolsFramework::Prefab::InstanceDomGeneratorInterface</a>
+</li>
 <li>GenerateItemIcon()
 : <a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#ab9da13f3ac57578b1ee05505c68b83c0">AzToolsFramework::EditorEntityUiHandlerBase</a>
 , <a class="el" href="class_az_tools_framework_1_1_layer_ui_handler.html#a6f3b46371921d57a67062563a145a448">AzToolsFramework::LayerUiHandler</a>
@@ -76,10 +84,14 @@ $(function() {
 <li>GenerateItemTooltip()
 : <a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#a79d84c56d7fc771d73e82857ad60cebe">AzToolsFramework::EditorEntityUiHandlerBase</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#a7d2be169e3280af9e5674e16e524bef4">AzToolsFramework::PrefabUiHandler</a>
+, <a class="el" href="class_az_tools_framework_1_1_procedural_prefab_ui_handler.html#aa923b96b0fe1b03eebf56e172aad4249">AzToolsFramework::ProceduralPrefabUiHandler</a>
+</li>
+<li>GenerateLuaComponentBoilerplate()
+: <a class="el" href="class_az_tools_framework_1_1_script_1_1_lua_editor_system_component.html#a8f4256f8aaa9d91c679552eefcdd25d9">AzToolsFramework::Script::LuaEditorSystemComponent</a>
 </li>
 <li>GeneratePatch()
-: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_interface.html#a47dbb505ab3deeeeaa0eae88cfc27748">AzToolsFramework::Prefab::InstanceToTemplateInterface</a>
-, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#ad577bb5bfcd170f45e6b147934a30ecb">AzToolsFramework::Prefab::InstanceToTemplatePropagator</a>
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_interface.html#a48d6439fdd5e1fe5122f17b9d33ef5ae">AzToolsFramework::Prefab::InstanceToTemplateInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#a7f59ef9eb2622bb1a0a6be63eb425543">AzToolsFramework::Prefab::InstanceToTemplatePropagator</a>
 </li>
 <li>GeneratePatchForLink()
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_interface.html#a3d33341a19f7e72f00d52b60d5d9fd05">AzToolsFramework::Prefab::InstanceToTemplateInterface</a>
@@ -99,11 +111,29 @@ $(function() {
 <li>GetAbsoluteAssetDatabaseLocation()
 : <a class="el" href="class_az_tools_framework_1_1_asset_system_1_1_asset_system_request.html#a24506879a2707cf7d7b53c7346e6a53a">AzToolsFramework::AssetSystem::AssetSystemRequest</a>
 </li>
+<li>GetAction()
+: <a class="el" href="class_az_tools_framework_1_1_editor_action.html#ae8dc977f459e206d77afb59381e77381">AzToolsFramework::EditorAction</a>
+</li>
+<li>GetActionCategory()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#a4e15c8a8d0b919fc1e1a28cd70a1be69">AzToolsFramework::ActionManagerInterface</a>
+</li>
+<li>GetActionDescription()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#a546c6cb02a2e410cfa067d64845475ba">AzToolsFramework::ActionManagerInterface</a>
+</li>
+<li>GetActionIconPath()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#abb9684aa4bfa65306d6984833d3007c7">AzToolsFramework::ActionManagerInterface</a>
+</li>
+<li>GetActionName()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#a4ed58437fe63c356feecdf1105c58b9a">AzToolsFramework::ActionManagerInterface</a>
+</li>
 <li>GetActiveCameraPosition()
 : <a class="el" href="class_camera_1_1_editor_camera_requests.html#afbb8feb3f6c399a0ce4541aa876756d2">Camera::EditorCameraRequests</a>
 </li>
 <li>GetActiveCameraState()
 : <a class="el" href="class_camera_1_1_editor_camera_requests.html#a5a4a96eb358bf2062b1f82371f8f2685">Camera::EditorCameraRequests</a>
+</li>
+<li>GetActiveCameraTransform()
+: <a class="el" href="class_camera_1_1_editor_camera_requests.html#ab2eb6c55d9232e92675a07b5d9edca0f">Camera::EditorCameraRequests</a>
 </li>
 <li>GetAgentTypes()
 : <a class="el" href="class_az_tools_framework_1_1_editor_requests.html#a1637159e6c4f90e9bd51dbaeea672cae">AzToolsFramework::EditorRequests</a>
@@ -168,6 +198,9 @@ $(function() {
 <li>GetBundleSettingsFileExtension()
 : <a class="el" href="class_az_tools_framework_1_1_asset_bundle_settings.html#a2af6e84d67121e0f5ed0ea3f40e99ea6">AzToolsFramework::AssetBundleSettings</a>
 </li>
+<li>GetCameraFoV()
+: <a class="el" href="class_camera_1_1_editor_camera_requests.html#a10c182397f03bfddb7d7d5b718c0094c">Camera::EditorCameraRequests</a>
+</li>
 <li>GetCameraState()
 : <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_interaction_requests.html#ab7b435a90f0c8e85112d155cdae7597f">AzToolsFramework::ViewportInteraction::ViewportInteractionRequests</a>
 , <a class="el" href="class_camera_1_1_editor_camera_view_requests.html#aa05f33d38a2e9d6bc42667887e8e33cf">Camera::EditorCameraViewRequests</a>
@@ -190,9 +223,6 @@ $(function() {
 <li>GetColorPropertyValue()
 : <a class="el" href="class_az_tools_framework_1_1_layers_1_1_editor_layer_component_requests.html#af7ff44fb9060f1a92b177530a085aea5">AzToolsFramework::Layers::EditorLayerComponentRequests</a>
 </li>
-<li>GetCommandLineParser()
-: <a class="el" href="class_legacy_framework_1_1_framework_application_messages.html#a95ae0d8807d4f06278dc25ea245e8b6e">LegacyFramework::FrameworkApplicationMessages</a>
-</li>
 <li>GetComparisonNode()
 : <a class="el" href="class_az_tools_framework_1_1_instance_data_node.html#abfc82cdce6d3aa49444d0ecbb40339cb">AzToolsFramework::InstanceDataNode</a>
 </li>
@@ -207,7 +237,7 @@ $(function() {
 , <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_base_component_mode.html#aff9671503fd372563b25c496100383af">AzToolsFramework::ComponentModeFramework::EditorBaseComponentMode</a>
 </li>
 <li>GetComponentModeName()
-: <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html#a62f0270641c0b316d2664e9ec3641220">AzToolsFramework::ComponentModeFramework::ComponentMode</a>
+: <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html#a47992da6667a4263330d17b12d3394ae">AzToolsFramework::ComponentModeFramework::ComponentMode</a>
 </li>
 <li>GetComponentName()
 : <a class="el" href="class_az_tools_framework_1_1_entity_composition_requests.html#ac46295a035025eb286b1e4b23319c43d">AzToolsFramework::EntityCompositionRequests</a>
@@ -243,6 +273,9 @@ $(function() {
 </li>
 <li>GetCurrentLevelEntityId()
 : <a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#ad0531feda05e0647e6303dccb5bfe5c5">AzToolsFramework::ToolsApplicationRequests</a>
+</li>
+<li>GetCurrentLocalTransform()
+: <a class="el" href="class_az_tools_framework_1_1_box_manipulator_requests.html#a3dbabcc5ec2e1a97ef8c81fc25411af6">AzToolsFramework::BoxManipulatorRequests</a>
 </li>
 <li>GetCurrentTransform()
 : <a class="el" href="class_az_tools_framework_1_1_box_manipulator_requests.html#a6b282c7f9f01082f50af856fea6dd399">AzToolsFramework::BoxManipulatorRequests</a>
@@ -290,6 +323,9 @@ $(function() {
 <li>GetDisplayName()
 : <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#a14c6309d4559ceeacfd85699f08af344">AzToolsFramework::AssetBrowser::AssetBrowserEntry</a>
 </li>
+<li>GetDisplayPath()
+: <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#a932203e6b73d436ddeac6a90ac14971b">AzToolsFramework::AssetBrowser::AssetBrowserEntry</a>
+</li>
 <li>GetEditor()
 : <a class="el" href="class_az_tools_framework_1_1_editor_requests.html#a0f6d4857514674349d2e285e9cda208d">AzToolsFramework::EditorRequests</a>
 </li>
@@ -300,7 +336,7 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_slice_editor_entity_ownership_service_requests.html#a9b6e8b365f29a8279933af342d76990d">AzToolsFramework::SliceEditorEntityOwnershipServiceRequests</a>
 </li>
 <li>GetEditorSelectionBoundsViewport()
-: <a class="el" href="class_az_tools_framework_1_1_editor_component_selection_requests.html#a28d694492d3a89210cba7547a898d670">AzToolsFramework::EditorComponentSelectionRequests</a>
+: <a class="el" href="class_az_tools_framework_1_1_editor_component_selection_requests.html#a490f2eda88cbd265be708e9eb1f93abb">AzToolsFramework::EditorComponentSelectionRequests</a>
 </li>
 <li>GetEnabledPlatforms()
 : <a class="el" href="class_az_tools_framework_1_1_platform_addressed_asset_catalog_manager.html#aeb0e8838493ae83a883fa6c46243f955">AzToolsFramework::PlatformAddressedAssetCatalogManager</a>
@@ -309,7 +345,7 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#acaead32ae4ece5cefdbac53a360a7305">AzToolsFramework::Prefab::Instance</a>
 </li>
 <li>GetEntityAlias()
-: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#a96bffe892ff88c366f7feef13704ada8">AzToolsFramework::Prefab::Instance</a>
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#a082ccb636c179de95922d74c0d8305c1">AzToolsFramework::Prefab::Instance</a>
 </li>
 <li>GetEntityAliases()
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#aa0fb95caa54470af791dfb75986ad49f">AzToolsFramework::Prefab::Instance</a>
@@ -328,7 +364,10 @@ $(function() {
 </li>
 <li>GetEntityId()
 : <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_base_component_mode.html#a93abbae9285d74f9fa32034c84f773ac">AzToolsFramework::ComponentModeFramework::EditorBaseComponentMode</a>
-, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#a6830af2f4154f947a3d50da31cab8da4">AzToolsFramework::Prefab::Instance</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#a29e9bd2f04791b2ed83384c09a6d5e88">AzToolsFramework::Prefab::Instance</a>
+</li>
+<li>GetEntityIdFromAliasPath()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#abe5142e1ff9fb6a89c8595ce66a939f1">AzToolsFramework::Prefab::Instance</a>
 </li>
 <li>GetExistingEntity()
 : <a class="el" href="class_az_tools_framework_1_1_editor_requests.html#a95cd9de125be0f38cafbef704820d165">AzToolsFramework::EditorRequests</a>
@@ -337,9 +376,16 @@ $(function() {
 <li>GetFileInfo()
 : <a class="el" href="class_az_tools_framework_1_1_source_control_commands.html#a5f193320d0488ba6db2491658d4c5bed">AzToolsFramework::SourceControlCommands</a>
 </li>
+<li>GetFirstInTabOrder()
+: <a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html#adec672ba05d4359e959f2f477b0f048f">AzToolsFramework::PropertyHandlerWidgetInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_rpe_property_handler_wrapper.html#aa208f53a52190915281427f369e649bc">AzToolsFramework::RpePropertyHandlerWrapper&lt; WrappedType &gt;</a>
+</li>
+<li>GetFocusedEntities()
+: <a class="el" href="class_az_tools_framework_1_1_focus_mode_interface.html#ac5538be01cdeb4e6c5f5434579f5d706">AzToolsFramework::FocusModeInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_focus_mode_system_component.html#a33dcba19d91183dfb32805ba95033dc3">AzToolsFramework::FocusModeSystemComponent</a>
+</li>
 <li>GetFocusedPrefabContainerEntityId()
-: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a5a0483199f710a4671676734c38d9c8d">AzToolsFramework::Prefab::PrefabFocusHandler</a>
-, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html#a860ce475548ba504fce32e4b91f95f95">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html#a860ce475548ba504fce32e4b91f95f95">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>
 </li>
 <li>GetFocusedPrefabInstance()
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#aa396563871cff0a0833d12c5b52445ee">AzToolsFramework::Prefab::PrefabFocusHandler</a>
@@ -354,12 +400,19 @@ $(function() {
 , <a class="el" href="class_az_tools_framework_1_1_focus_mode_system_component.html#ad8c55fd52a98932add40a2540774f39a">AzToolsFramework::FocusModeSystemComponent</a>
 </li>
 <li>GetFullPath()
-: <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#a1e9ae417f11c8600bcd7e89e8cf7d204">AzToolsFramework::AssetBrowser::AssetBrowserEntry</a>
+: <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#a7a11222fb0d3adb0d4e3ffda8aa11f3b">AzToolsFramework::AssetBrowser::AssetBrowserEntry</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader.html#ac093cd09a73d1bcd04a8c83c8a1aa3c1">AzToolsFramework::Prefab::PrefabLoader</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface.html#ad452c47eb99304f54f40b7463df8732a">AzToolsFramework::Prefab::PrefabLoaderInterface</a>
 </li>
 <li>GetFullSourcePathFromRelativeProductPath()
 : <a class="el" href="class_az_tools_framework_1_1_asset_system_1_1_asset_system_request.html#a423433dc5f3c306029d8fa695ec2464b">AzToolsFramework::AssetSystem::AssetSystemRequest</a>
+</li>
+<li>GetHandlerName()
+: <a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html#a32ea2204ce9442b84903a3da126a3a7d">AzToolsFramework::PropertyHandlerWidgetInterface</a>
+</li>
+<li>GetHashedPathUsedForEntityIdGeneration()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_entity_id_path_mapper_interface.html#ad8c07780bb902638febb5e91baaf72ad">AzToolsFramework::Prefab::PrefabConversionUtils::EntityIdPathMapperInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_prefab_processor_context.html#aa5a2d369c6482dd4a17ea1c3c19222f0">AzToolsFramework::Prefab::PrefabConversionUtils::PrefabProcessorContext</a>
 </li>
 <li>GetHighlightedEntities()
 : <a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#ab13ac2d363c9ceff5cec1bd03fcc5a2d">AzToolsFramework::ToolsApplicationRequests</a>
@@ -373,12 +426,36 @@ $(function() {
 <li>GetIncompatibleServices()
 : <a class="el" href="class_az_tools_framework_1_1_slice_metadata_entity_context_component.html#a51791c22e64d6b3d000c70ea2b932535">AzToolsFramework::SliceMetadataEntityContextComponent</a>
 </li>
+<li>GetInMemorySpawnableAssetId()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#ad2260d17b0389ede51e4dc72e822df4d">AzToolsFramework::Prefab::PrefabPublicRequests</a>
+</li>
+<li>GetInstanceAndEntityIdFromAliasPath()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#affcafabac4d2995142abba8367733b9a">AzToolsFramework::Prefab::Instance</a>
+</li>
 <li>GetInstanceContainerEntityId()
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a156116c90d765436e72cf5486687f00b">AzToolsFramework::Prefab::PrefabPublicHandler</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a98df8668d022e57cd2de3bece14240fb">AzToolsFramework::Prefab::PrefabPublicInterface</a>
 </li>
+<li>GetInstanceReferenceFromRootAliasPath()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a94a792934ff9bc835181edb9e6d546bf">AzToolsFramework::PrefabEditorEntityOwnershipInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_service.html#aa6ca643848a191a1a8769826b3066720">AzToolsFramework::PrefabEditorEntityOwnershipService</a>
+</li>
+<li>GetInstancesInRootAliasPath()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a631dfff0f7224b9c9f0f064c80bd78ee">AzToolsFramework::PrefabEditorEntityOwnershipInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_service.html#a3c0cac362dbce211f3916cb52ad2c666">AzToolsFramework::PrefabEditorEntityOwnershipService</a>
+</li>
+<li>GetIntensity()
+: <a class="el" href="class_az_tools_framework_1_1_paint_brush_requests.html#add39058a8acc8daeb8c4d706c7ae528b">AzToolsFramework::PaintBrushRequests</a>
+</li>
 <li>GetJobLog()
 : <a class="el" href="class_az_tools_framework_1_1_asset_system_1_1_asset_system_job_request.html#aab744e775b6fdac5ae3c815fbe125c5d">AzToolsFramework::AssetSystem::AssetSystemJobRequest</a>
+</li>
+<li>GetLastDescendantInLayout()
+: <a class="el" href="class_az_tools_framework_1_1_d_p_e_row_widget.html#a5d174388f63fdd6534bd47e6f420d104">AzToolsFramework::DPERowWidget</a>
+</li>
+<li>GetLastInTabOrder()
+: <a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html#a88e2936cfbc86b4e465645515a7f6579">AzToolsFramework::PropertyHandlerWidgetInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_rpe_property_handler_wrapper.html#a267bd24e8bdff705db0c818b68e28bce">AzToolsFramework::RpePropertyHandlerWrapper&lt; WrappedType &gt;</a>
 </li>
 <li>GetLastRowID()
 : <a class="el" href="class_az_tools_framework_1_1_s_q_lite_1_1_connection.html#a25d2fa96d1f9ee6060e185ca0a5ddbec">AzToolsFramework::SQLite::Connection</a>
@@ -401,6 +478,9 @@ $(function() {
 </li>
 <li>GetLinkedInstanceDom()
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_link.html#ad125172823a85e7404ebfbe2d13f40a4">AzToolsFramework::Prefab::Link</a>
+</li>
+<li>GetListOfClasses()
+: <a class="el" href="class_az_tools_framework_1_1_script_1_1_lua_symbols_reporter_system_component.html#ab1263f57afd8f7490d97c3fce583bae5">AzToolsFramework::Script::LuaSymbolsReporterSystemComponent</a>
 </li>
 <li>GetLiveToAssetEntityIdMap()
 : <a class="el" href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction.html#a018ec279d0d4b955fd3a11eb471fa409">AzToolsFramework::SliceUtilities::SliceTransaction</a>
@@ -461,7 +541,7 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_s_q_lite_1_1_statement.html#aeecc4b24512cbad77973ebc6bf6e8deb">AzToolsFramework::SQLite::Statement</a>
 </li>
 <li>GetNestedEntityIds()
-: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#a6c107184e23ba034de7fe3c8e116510c">AzToolsFramework::Prefab::Instance</a>
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#a7e066e08c414068e66531d43e32d73b4">AzToolsFramework::Prefab::Instance</a>
 </li>
 <li>GetNestedInstanceAliases()
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#a3e5b87951aaa4ef7e1884790a7df29ae">AzToolsFramework::Prefab::Instance</a>
@@ -471,6 +551,9 @@ $(function() {
 </li>
 <li>GetNumAffectedRows()
 : <a class="el" href="class_az_tools_framework_1_1_s_q_lite_1_1_connection.html#afb98ccef0eaad3b670d8dd79330fc8d6">AzToolsFramework::SQLite::Connection</a>
+</li>
+<li>GetOpacity()
+: <a class="el" href="class_az_tools_framework_1_1_paint_brush_requests.html#a27d0aec72ea9a7122a30f4e3d52ce5ce">AzToolsFramework::PaintBrushRequests</a>
 </li>
 <li>GetOrder()
 : <a class="el" href="class_az_tools_framework_1_1_editor_python_console_notifications.html#a10a6df1342d0bedc6fb70e5840b0c7a9">AzToolsFramework::EditorPythonConsoleNotifications</a>
@@ -496,15 +579,13 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_asset_system_1_1_asset_system_request.html#affee4cad03be97b86a10de334a18c50b">AzToolsFramework::AssetSystem::AssetSystemRequest</a>
 </li>
 <li>GetPlayInEditorAssetData()
-: <a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a0d3f49cbca95b2d84e691aa092953a4e">AzToolsFramework::PrefabEditorEntityOwnershipInterface</a>
+: <a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a3c5ba6ca736deeeb6e04eb6b47866935">AzToolsFramework::PrefabEditorEntityOwnershipInterface</a>
 </li>
 <li>GetPrefabFocusPath()
-: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#a4803443f0e88a1b70a3080e2aa40f911">AzToolsFramework::Prefab::PrefabFocusHandler</a>
-, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html#a0ddbbec4d6a877e8b28450ff37cf8d2b">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html#a0ddbbec4d6a877e8b28450ff37cf8d2b">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>
 </li>
 <li>GetPrefabFocusPathLength()
-: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html#aacefa00301683ccc8112b5caf708d9f2">AzToolsFramework::Prefab::PrefabFocusHandler</a>
-, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html#ad24636d2300ccfdd052d521d8c059840">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html#ad24636d2300ccfdd052d521d8c059840">AzToolsFramework::Prefab::PrefabFocusPublicInterface</a>
 </li>
 <li>GetPreviewerFactory()
 : <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_previewer_requests.html#a4d2e77a0799df08bcba612bf8deca256">AzToolsFramework::AssetBrowser::PreviewerRequests</a>
@@ -518,14 +599,18 @@ $(function() {
 <li>GetPriority()
 : <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_interaction_notifications.html#a648884343abc47fa3b96c0456807dc0f">AzToolsFramework::AssetBrowser::AssetBrowserInteractionNotifications</a>
 </li>
-<li>GetProductTexturePreview()
-: <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_texture_preview_requests.html#a89aa910a01621356bc7e66fe60a01f2f">AzToolsFramework::AssetBrowser::AssetBrowserTexturePreviewRequests</a>
+<li>GetPropertyHandlerForNode()
+: <a class="el" href="class_az_tools_framework_1_1_property_editor_tools_system.html#a482973117b4e52be67c0d677dcb1926a">AzToolsFramework::PropertyEditorToolsSystem</a>
+, <a class="el" href="class_az_tools_framework_1_1_property_editor_tools_system_interface.html#a2541572cbc3aee590319808a57b30aea">AzToolsFramework::PropertyEditorToolsSystemInterface</a>
 </li>
 <li>GetPropertyType()
 : <a class="el" href="class_az_tools_framework_1_1_property_tree_editor.html#a15879692bde0a65013565dbe2918ce40">AzToolsFramework::PropertyTreeEditor</a>
 </li>
 <li>GetProvidedServices()
 : <a class="el" href="class_az_tools_framework_1_1_slice_metadata_entity_context_component.html#a3b6463b554bacad385ddc9409aed9768">AzToolsFramework::SliceMetadataEntityContextComponent</a>
+</li>
+<li>GetRadius()
+: <a class="el" href="class_az_tools_framework_1_1_paint_brush_requests.html#a006a3b2e5d449835f547a0f1c6eb2f00">AzToolsFramework::PaintBrushRequests</a>
 </li>
 <li>GetRelativePath()
 : <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#aa4aa6f78d1af2eeee93be0b86c3e28c9">AzToolsFramework::AssetBrowser::AssetBrowserEntry</a>
@@ -546,6 +631,12 @@ $(function() {
 <li>GetRootEntityIdOfSliceInstance()
 : <a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a39bafa01d1757d26de42898321f2e74e">AzToolsFramework::ToolsApplicationRequests</a>
 </li>
+<li>GetRootPrefabInstance()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a3fe3bc9cdc98aa445e5781df46838440">AzToolsFramework::PrefabEditorEntityOwnershipInterface</a>
+</li>
+<li>GetRootPrefabTemplateId()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a7588b8e1a8982aeeee5a151e10ca1217">AzToolsFramework::PrefabEditorEntityOwnershipInterface</a>
+</li>
 <li>GetSandboxObject()
 : <a class="el" href="class_az_tools_framework_1_1_component_entity_editor_requests.html#a5460702b45b0a27de73e7bc45f639f20">AzToolsFramework::ComponentEntityEditorRequests</a>
 </li>
@@ -561,15 +652,15 @@ $(function() {
 <li>GetSelectedAndPinnedEntities()
 : <a class="el" href="class_az_tools_framework_1_1_entity_property_editor_requests.html#ae81f1012ce4752aab24fccb170ebfef2">AzToolsFramework::EntityPropertyEditorRequests</a>
 </li>
+<li>GetSelectedAssets()
+: <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_tree_view.html#ad8e79face6959949ea5a11973d7e1ab0">AzToolsFramework::AssetBrowser::AssetBrowserTreeView</a>
+</li>
 <li>GetSelectedEntities()
 : <a class="el" href="class_az_tools_framework_1_1_entity_property_editor_requests.html#ac5f1ae1bee0db33e5e4a22fcd0c9586d">AzToolsFramework::EntityPropertyEditorRequests</a>
 , <a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a8c3a356dfcf74063aa237b4537578528">AzToolsFramework::ToolsApplicationRequests</a>
 </li>
 <li>GetSelectedEntitiesCount()
 : <a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a08a22a489e46c31ffe0d78880812871a">AzToolsFramework::ToolsApplicationRequests</a>
-</li>
-<li>GetSelection()
-: <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html#af876067fa7ebc2c6530e0051c1886c3d">AzToolsFramework::Components::EditorComponentBase</a>
 </li>
 <li>GetShowCircularDependencyError()
 : <a class="el" href="class_az_tools_framework_1_1_editor_requests.html#ae04db5df7c907812cf23a43bfb829398">AzToolsFramework::EditorRequests</a>
@@ -579,6 +670,24 @@ $(function() {
 </li>
 <li>GetSliceRelativePath()
 : <a class="el" href="class_az_tools_framework_1_1_slice_relationship_node.html#ad295bddfe51f9cf2d4b145e64504aa97">AzToolsFramework::SliceRelationshipNode</a>
+</li>
+<li>GetSortKeyOfActionInMenu()
+: <a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html#a1caa53a02c740ccf203fb0530989c6c5">AzToolsFramework::MenuManagerInterface</a>
+</li>
+<li>GetSortKeyOfActionInToolBar()
+: <a class="el" href="class_az_tools_framework_1_1_tool_bar_manager_interface.html#a995e1616f1fd1240337c4dea2883cd02">AzToolsFramework::ToolBarManagerInterface</a>
+</li>
+<li>GetSortKeyOfMenuInMenuBar()
+: <a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html#ac1a3ebdab3e2b471bf8157a0c632c29b">AzToolsFramework::MenuManagerInterface</a>
+</li>
+<li>GetSortKeyOfSubMenuInMenu()
+: <a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html#a6ac7b89c408b7e479d625cfc18e17876">AzToolsFramework::MenuManagerInterface</a>
+</li>
+<li>GetSortKeyOfWidgetInMenu()
+: <a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html#a54864e969514c9fa13d6638a757ecaeb">AzToolsFramework::MenuManagerInterface</a>
+</li>
+<li>GetSortKeyOfWidgetInToolBar()
+: <a class="el" href="class_az_tools_framework_1_1_tool_bar_manager_interface.html#a50e6825026690d0704dc256aa76bf561">AzToolsFramework::ToolBarManagerInterface</a>
 </li>
 <li>GetSourceControlState()
 : <a class="el" href="class_az_tools_framework_1_1_source_control_connection_requests.html#ae3dd32a47dd1773d67822649478b51ea">AzToolsFramework::SourceControlConnectionRequests</a>
@@ -604,12 +713,11 @@ $(function() {
 <li>GetTemplateIdFromFilePath()
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#af3bd07a629d366ece70dc56e1fb1f457">AzToolsFramework::Prefab::PrefabSystemComponent</a>
 </li>
-<li>GetThreadPool()
-: <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnail_context_requests.html#adea2416de1961bf9f1ce3fb3261c9c54">AzToolsFramework::Thumbnailer::ThumbnailContextRequests</a>
-</li>
 <li>GetThumbnail()
-: <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnail_context.html#a0fbe04081dcae201d03aeeb3d3926781">AzToolsFramework::Thumbnailer::ThumbnailContext</a>
-, <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#a02e8d6baaa70b1319c31cd1bccb4f789">AzToolsFramework::Thumbnailer::ThumbnailerRequests</a>
+: <a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_requests.html#af57223cc7fbd44df6908baa93963a496">AzToolsFramework::Thumbnailer::ThumbnailerRequests</a>
+</li>
+<li>GetToolBar()
+: <a class="el" href="class_az_tools_framework_1_1_tool_bar_manager_interface.html#a0d43d87c9498fce7952864032fa344da">AzToolsFramework::ToolBarManagerInterface</a>
 </li>
 <li>GetTrackedViewportCount()
 : <a class="el" href="class_az_tools_framework_1_1_viewport_editor_mode_tracker.html#a620ecc4d9e5841ae5e800c917c03fc42">AzToolsFramework::ViewportEditorModeTracker</a>
@@ -630,12 +738,26 @@ $(function() {
 <li>GetViewPaneWidget()
 : <a class="el" href="class_az_tools_framework_1_1_editor_requests.html#a19d8d2888f03362ddde35c6432db9bed">AzToolsFramework::EditorRequests</a>
 </li>
+<li>GetViewportBorderVisible()
+: <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a185e61bcc5423ba57b1023d97b18fdb9">AzToolsFramework::ViewportUi::ViewportUiRequests</a>
+</li>
 <li>GetViewportEditorModes()
 : <a class="el" href="class_az_tools_framework_1_1_viewport_editor_mode_tracker.html#ac00f6023e5513cadeec592b89d5f517e">AzToolsFramework::ViewportEditorModeTracker</a>
 , <a class="el" href="class_az_tools_framework_1_1_viewport_editor_mode_tracker_interface.html#a081ee443e268b1b80a891b4b97187625">AzToolsFramework::ViewportEditorModeTrackerInterface</a>
 </li>
 <li>GetVisibilityFlag()
 : <a class="el" href="class_az_tools_framework_1_1_editor_visibility_requests.html#a170d9910bc244ed42d29836a80bde22b">AzToolsFramework::EditorVisibilityRequests</a>
+</li>
+<li>GetWidget()
+: <a class="el" href="class_az_tools_framework_1_1_property_handler_widget.html#ae4b18340634b2ea594450faecf8cac77">AzToolsFramework::PropertyHandlerWidget&lt; BaseWidget &gt;</a>
+, <a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html#a8217a8ee749c872da06e8c0b64ee9ab4">AzToolsFramework::PropertyHandlerWidgetInterface</a>
+, <a class="el" href="class_az_tools_framework_1_1_rpe_property_handler_wrapper.html#a00f94caf70a1ae937f5bf9599889d907">AzToolsFramework::RpePropertyHandlerWrapper&lt; WrappedType &gt;</a>
+</li>
+<li>GetWidgetActionCategory()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#adc281a5e8c7ac470f3df25d48f6724a5">AzToolsFramework::ActionManagerInterface</a>
+</li>
+<li>GetWidgetActionName()
+: <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#a376a6e5b228b69b94decbc573a77c29b">AzToolsFramework::ActionManagerInterface</a>
 </li>
 <li>GetWidgetForViewportContextMenu()
 : <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_main_editor_viewport_interaction_requests.html#a3285d84e9cb925ff4f361b6b8b21bc00">AzToolsFramework::ViewportInteraction::MainEditorViewportInteractionRequests</a>
@@ -665,7 +787,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:41 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:35 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

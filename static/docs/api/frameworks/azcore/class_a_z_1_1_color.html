@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -179,6 +179,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:af438b7fb7a415a5441773362f8419ef8"><td class="memItemLeft" align="right" valign="top"><a id="af438b7fb7a415a5441773362f8419ef8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsZero</b> (float tolerance=Constants::FloatEpsilon) const</td></tr>
 <tr class="separator:af438b7fb7a415a5441773362f8419ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db2da5f2acc6896b7d80bba19b371ae"><td class="memItemLeft" align="right" valign="top"><a id="a7db2da5f2acc6896b7d80bba19b371ae"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_color.html#a7db2da5f2acc6896b7d80bba19b371ae">IsFinite</a> () const</td></tr>
+<tr class="memdesc:a7db2da5f2acc6896b7d80bba19b371ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether all components are finite. <br /></td></tr>
+<tr class="separator:a7db2da5f2acc6896b7d80bba19b371ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb258e4ef1b743e345512b84ec17c0f6"><td class="memItemLeft" align="right" valign="top"><a id="adb258e4ef1b743e345512b84ec17c0f6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_1_1_color.html">Color</a> &amp;rhs) const</td></tr>
 <tr class="separator:adb258e4ef1b743e345512b84ec17c0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -312,6 +316,14 @@ static <a class="el" href="class_a_z_1_1_color.html">Color</a>&#160;</td><td cla
 static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_color.html#acf6e1569a9f709e1104e1184442389e2">CreateU32</a> (u8 r, u8 g, u8 b, u8 a)</td></tr>
 <tr class="memdesc:acf6e1569a9f709e1104e1184442389e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">r,g,b,a to u32 =&gt; 0xAABBGGRR (COLREF format). <br /></td></tr>
 <tr class="separator:acf6e1569a9f709e1104e1184442389e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a1633a845bfedc4738dd7c274bae054"><td class="memItemLeft" align="right" valign="top"><a id="a7a1633a845bfedc4738dd7c274bae054"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_color.html#a7a1633a845bfedc4738dd7c274bae054">ConvertSrgbGammaToLinear</a> (float x)</td></tr>
+<tr class="memdesc:a7a1633a845bfedc4738dd7c274bae054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert SRGB gamma space to linear space. <br /></td></tr>
+<tr class="separator:a7a1633a845bfedc4738dd7c274bae054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1cac87707b48c9579212d7e08273ee4"><td class="memItemLeft" align="right" valign="top"><a id="ab1cac87707b48c9579212d7e08273ee4"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_color.html#ab1cac87707b48c9579212d7e08273ee4">ConvertSrgbLinearToGamma</a> (float x)</td></tr>
+<tr class="memdesc:ab1cac87707b48c9579212d7e08273ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert SRGB linear space to gamma space. <br /></td></tr>
+<tr class="separator:ab1cac87707b48c9579212d7e08273ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A color class with 4 components, RGBA. </p>
@@ -422,7 +434,7 @@ static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

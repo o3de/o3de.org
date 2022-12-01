@@ -15,7 +15,7 @@ toc: true
 
 2. **Close Button**: Closes the dialog without resolving the issue.
 
-3. **Icon**: A standard icon and has a size of 48 x 48px. Refer to [Standard Icons](../overview#standard-icons). 
+3. **Icon**: A standard icon and has a size of 48 x 48px. Refer to [Standard Icons](../#standard-icons). 
 
 4. **Body**: Contains information regarding the user's task and how to resolve it. 
 
@@ -45,7 +45,7 @@ Review these specifications when creating a dialog:
 * Write relevant information to help users complete the dialog's task in the title and body of the dialog. Refer to [Guidelines for Writing Error Messages](../guidelines).
 
 
-* Include only one icon, if any. Use one of the following icons from the list of [Standard icons](../overview#standard-icons): error/failure, warning, success, or information icon.
+* Include only one icon, if any. Use one of the following icons from the list of [Standard icons](../#standard-icons): error/failure, warning, success, or information icon.
 
 * Include a primary button and/or an optional secondary button for the dialog's actions. 
   

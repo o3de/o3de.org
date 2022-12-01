@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine GraphModel Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -71,14 +71,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1379f6391748b33bdbed46e9a5789531"><td class="memItemLeft" align="right" valign="top"><a id="a1379f6391748b33bdbed46e9a5789531"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_graph_model_1_1_data_type.html">DataType</a>, &quot;{B8CBD17E-B8F7-4090-99A7-E9E9970D3EF3}&quot;)</td></tr>
 <tr class="separator:a1379f6391748b33bdbed46e9a5789531"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6273382e5bb56a0d1e2a8549dbf1194c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_data_type.html#a6273382e5bb56a0d1e2a8549dbf1194c">DataType</a> (<a class="el" href="class_graph_model_1_1_data_type.html#a54e6b079dbc3f501e8dc918f0043b6a0">Enum</a> typeEnum, AZ::Uuid typeUuid, AZStd::any defaultValue, AZStd::string_view typeDisplayName, AZStd::string_view cppTypeName)</td></tr>
-<tr class="separator:a6273382e5bb56a0d1e2a8549dbf1194c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa54a523ca1c8f0b38293e44350358945"><td class="memItemLeft" align="right" valign="top"><a id="aa54a523ca1c8f0b38293e44350358945"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DataType</b> (const <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> &amp;other)</td></tr>
-<tr class="separator:aa54a523ca1c8f0b38293e44350358945"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6379446c5a78f0c560a3605cdaf3f74"><td class="memItemLeft" align="right" valign="top"><a id="af6379446c5a78f0c560a3605cdaf3f74"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> &amp;other)=delete</td></tr>
-<tr class="separator:af6379446c5a78f0c560a3605cdaf3f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2327b473c0db763a23e24c9a44f53362"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_data_type.html#a2327b473c0db763a23e24c9a44f53362">DataType</a> (<a class="el" href="class_graph_model_1_1_data_type.html#a54e6b079dbc3f501e8dc918f0043b6a0">Enum</a> typeEnum, const AZ::Uuid &amp;typeUuid, const AZStd::any &amp;defaultValue, AZStd::string_view typeDisplayName, AZStd::string_view cppTypeName, const AZStd::function&lt; bool(const AZStd::any &amp;)&gt; &amp;valueValidator={})</td></tr>
+<tr class="separator:a2327b473c0db763a23e24c9a44f53362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17372e4a4c657ef1bc8ea9c56cde5d4e"><td class="memTemplParams" colspan="2"><a id="a17372e4a4c657ef1bc8ea9c56cde5d4e"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a17372e4a4c657ef1bc8ea9c56cde5d4e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DataType</b> (<a class="el" href="class_graph_model_1_1_data_type.html#a54e6b079dbc3f501e8dc918f0043b6a0">Enum</a> typeEnum, const T &amp;defaultValue, AZStd::string_view typeDisplayName)</td></tr>
+<tr class="separator:a17372e4a4c657ef1bc8ea9c56cde5d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae085df82dd482a90e771973e14712777"><td class="memTemplParams" colspan="2"><a id="ae085df82dd482a90e771973e14712777"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae085df82dd482a90e771973e14712777"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DataType</b> (<a class="el" href="class_graph_model_1_1_data_type.html#a54e6b079dbc3f501e8dc918f0043b6a0">Enum</a> typeEnum, const T &amp;defaultValue)</td></tr>
+<tr class="separator:ae085df82dd482a90e771973e14712777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49314c9fcd00a31ee88e183200189074"><td class="memItemLeft" align="right" valign="top"><a id="a49314c9fcd00a31ee88e183200189074"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> &amp;other) const</td></tr>
 <tr class="separator:a49314c9fcd00a31ee88e183200189074"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,26 +94,32 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> () const<
 <a class="el" href="class_graph_model_1_1_data_type.html#a54e6b079dbc3f501e8dc918f0043b6a0">Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_data_type.html#ab8568f5b9c375ab220419e95a104e902">GetTypeEnum</a> () const</td></tr>
 <tr class="memdesc:ab8568f5b9c375ab220419e95a104e902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the enum value that identifies this <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a>. <br /></td></tr>
 <tr class="separator:ab8568f5b9c375ab220419e95a104e902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67035a3538a431d016d8c4eb3761bac8"><td class="memItemLeft" align="right" valign="top"><a id="a67035a3538a431d016d8c4eb3761bac8"></a>
-AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_data_type.html#a67035a3538a431d016d8c4eb3761bac8">GetTypeUuid</a> () const</td></tr>
-<tr class="memdesc:a67035a3538a431d016d8c4eb3761bac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type Uuid that corresponds to this <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a>. <br /></td></tr>
-<tr class="separator:a67035a3538a431d016d8c4eb3761bac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd975401ad46dc4ccfd97a9d9102e9c"><td class="memItemLeft" align="right" valign="top"><a id="a2fd975401ad46dc4ccfd97a9d9102e9c"></a>
+const AZ::Uuid &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_data_type.html#a2fd975401ad46dc4ccfd97a9d9102e9c">GetTypeUuid</a> () const</td></tr>
+<tr class="memdesc:a2fd975401ad46dc4ccfd97a9d9102e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type Uuid that corresponds to this <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a>. <br /></td></tr>
+<tr class="separator:a2fd975401ad46dc4ccfd97a9d9102e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91f3bd4f4835c79953e731654fcf6972"><td class="memItemLeft" align="right" valign="top"><a id="a91f3bd4f4835c79953e731654fcf6972"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_data_type.html#a91f3bd4f4835c79953e731654fcf6972">GetTypeUuidString</a> () const</td></tr>
-<tr class="memdesc:a91f3bd4f4835c79953e731654fcf6972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="class_graph_model_1_1_data_type.html#a67035a3538a431d016d8c4eb3761bac8" title="Return the type Uuid that corresponds to this DataType.">GetTypeUuid()</a> as a string (for convenience) <br /></td></tr>
+<tr class="memdesc:a91f3bd4f4835c79953e731654fcf6972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="class_graph_model_1_1_data_type.html#a2fd975401ad46dc4ccfd97a9d9102e9c" title="Return the type Uuid that corresponds to this DataType.">GetTypeUuid()</a> as a string (for convenience) <br /></td></tr>
 <tr class="separator:a91f3bd4f4835c79953e731654fcf6972"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2d684e5511f214fed3475e889c2632d"><td class="memItemLeft" align="right" valign="top"><a id="af2d684e5511f214fed3475e889c2632d"></a>
-AZStd::any&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_data_type.html#af2d684e5511f214fed3475e889c2632d">GetDefaultValue</a> () const</td></tr>
-<tr class="memdesc:af2d684e5511f214fed3475e889c2632d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a default value for data of this type. <br /></td></tr>
-<tr class="separator:af2d684e5511f214fed3475e889c2632d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7baa497865c36beb25f310ae08a984f"><td class="memItemLeft" align="right" valign="top"><a id="aa7baa497865c36beb25f310ae08a984f"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_data_type.html#aa7baa497865c36beb25f310ae08a984f">GetCppName</a> () const</td></tr>
-<tr class="memdesc:aa7baa497865c36beb25f310ae08a984f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the C++ type name. <br /></td></tr>
-<tr class="separator:aa7baa497865c36beb25f310ae08a984f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfb5b303483319a5dc74b0386da8c6e8"><td class="memItemLeft" align="right" valign="top"><a id="abfb5b303483319a5dc74b0386da8c6e8"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_data_type.html#abfb5b303483319a5dc74b0386da8c6e8">GetDisplayName</a> () const</td></tr>
-<tr class="memdesc:abfb5b303483319a5dc74b0386da8c6e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a user friently type name, for UI display. <br /></td></tr>
-<tr class="separator:abfb5b303483319a5dc74b0386da8c6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa524692a6f80ceee33f79b039c7ac592"><td class="memItemLeft" align="right" valign="top"><a id="aa524692a6f80ceee33f79b039c7ac592"></a>
+const AZStd::any &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_data_type.html#aa524692a6f80ceee33f79b039c7ac592">GetDefaultValue</a> () const</td></tr>
+<tr class="memdesc:aa524692a6f80ceee33f79b039c7ac592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a default value for data of this type. <br /></td></tr>
+<tr class="separator:aa524692a6f80ceee33f79b039c7ac592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65260e5445e3349c30d64869aeec14d5"><td class="memItemLeft" align="right" valign="top"><a id="a65260e5445e3349c30d64869aeec14d5"></a>
+const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_data_type.html#a65260e5445e3349c30d64869aeec14d5">GetDisplayName</a> () const</td></tr>
+<tr class="memdesc:a65260e5445e3349c30d64869aeec14d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a user friently type name, for UI display. <br /></td></tr>
+<tr class="separator:a65260e5445e3349c30d64869aeec14d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83b5afd713b81e4b7a27f0edefcada4"><td class="memItemLeft" align="right" valign="top"><a id="ad83b5afd713b81e4b7a27f0edefcada4"></a>
+const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_data_type.html#ad83b5afd713b81e4b7a27f0edefcada4">GetCppName</a> () const</td></tr>
+<tr class="memdesc:ad83b5afd713b81e4b7a27f0edefcada4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the C++ type name. <br /></td></tr>
+<tr class="separator:ad83b5afd713b81e4b7a27f0edefcada4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a84e4f1c35c7823ddc3a0f55a3dabe0"><td class="memItemLeft" align="right" valign="top"><a id="a2a84e4f1c35c7823ddc3a0f55a3dabe0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSupportedType</b> (const AZ::Uuid &amp;typeUuid) const</td></tr>
+<tr class="separator:a2a84e4f1c35c7823ddc3a0f55a3dabe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4975508cb1d36731939258f9bba16ddf"><td class="memItemLeft" align="right" valign="top"><a id="a4975508cb1d36731939258f9bba16ddf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSupportedValue</b> (const AZStd::any &amp;value) const</td></tr>
+<tr class="separator:a4975508cb1d36731939258f9bba16ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -144,8 +152,8 @@ static const <a class="el" href="class_graph_model_1_1_data_type.html#a54e6b079d
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6273382e5bb56a0d1e2a8549dbf1194c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6273382e5bb56a0d1e2a8549dbf1194c">&#9670;&nbsp;</a></span>DataType()</h2>
+<a id="a2327b473c0db763a23e24c9a44f53362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2327b473c0db763a23e24c9a44f53362">&#9670;&nbsp;</a></span>DataType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,13 +167,13 @@ static const <a class="el" href="class_graph_model_1_1_data_type.html#a54e6b079d
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">AZ::Uuid&#160;</td>
+          <td class="paramtype">const AZ::Uuid &amp;&#160;</td>
           <td class="paramname"><em>typeUuid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">AZStd::any&#160;</td>
+          <td class="paramtype">const AZStd::any &amp;&#160;</td>
           <td class="paramname"><em>defaultValue</em>, </td>
         </tr>
         <tr>
@@ -178,7 +186,13 @@ static const <a class="el" href="class_graph_model_1_1_data_type.html#a54e6b079d
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">AZStd::string_view&#160;</td>
-          <td class="paramname"><em>cppTypeName</em>&#160;</td>
+          <td class="paramname"><em>cppTypeName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::function&lt; bool(const AZStd::any &amp;)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>valueValidator</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -189,11 +203,12 @@ static const <a class="el" href="class_graph_model_1_1_data_type.html#a54e6b079d
 </div><div class="memdoc">
 <p>Constructs a new <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">typeEnum</td><td>- The main unique ID used by the GraphModel framework for this <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> object.Every <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> in the <a class="el" href="class_graph_model_1_1_i_graph_context.html" title="!! Start in Graph.h for high level GraphModel documentation !!!">IGraphContext</a> must have a unique enum value. </td></tr>
+    <tr><td class="paramname">typeEnum</td><td>- The main unique ID used by the GraphModel framework for this <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> object.Every <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> in the <a class="el" href="class_graph_model_1_1_graph_context.html" title="!! Start in Graph.h for high level GraphModel documentation !!!">GraphContext</a> must have a unique enum value. </td></tr>
     <tr><td class="paramname">typeUuid</td><td>- An alternate unique ID that is used by the node graph UI system. (This is not necessarily the same thing as an RTTI TypeId.The only requirement is that it maps 1:1 with the typeEnum). </td></tr>
     <tr><td class="paramname">defaultValue</td><td>- The default value assigned to any slot that uses this data type upon creation. </td></tr>
     <tr><td class="paramname">typeDisplayName</td><td>- Used for tooltips or other UI elements as well as debug messages.This should be unique, and similar to typeEnum. </td></tr>
     <tr><td class="paramname">cppTypeName</td><td>- The name of the c++ class that the <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> maps to.This is only used for debug messages. </td></tr>
+    <tr><td class="paramname">valueValidator</td><td>- An optional function used to check for specific values compatible with this data type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -206,7 +221,7 @@ static const <a class="el" href="class_graph_model_1_1_data_type.html#a54e6b079d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:45 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:58 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -56,7 +56,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits MultiHandler, and MultiHandler.</p>
+<p>Inherits MultiHandler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -69,9 +69,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a81717192d98cd9bb8b832741fa75dc21"><td class="memItemLeft" align="right" valign="top"><a id="a81717192d98cd9bb8b832741fa75dc21"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset_container.html">AssetContainer</a>, <a class="el" href="class_a_z_1_1_system_allocator.html">SystemAllocator</a>, 0)</td></tr>
 <tr class="separator:a81717192d98cd9bb8b832741fa75dc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95b0bc89208a98b81cbf7a951485b998"><td class="memItemLeft" align="right" valign="top"><a id="a95b0bc89208a98b81cbf7a951485b998"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AssetContainer</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; asset, const <a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a> &amp;loadParams)</td></tr>
-<tr class="separator:a95b0bc89208a98b81cbf7a951485b998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fd60dabecdd6e4bf8c8ba45a10388a"><td class="memItemLeft" align="right" valign="top"><a id="ac0fd60dabecdd6e4bf8c8ba45a10388a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AssetContainer</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; asset, const <a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a> &amp;loadParams, bool isReload=false)</td></tr>
+<tr class="separator:ac0fd60dabecdd6e4bf8c8ba45a10388a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1c50ee95c4882244036539786fa8c44"><td class="memItemLeft" align="right" valign="top"><a id="af1c50ee95c4882244036539786fa8c44"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReady</b> () const</td></tr>
 <tr class="separator:af1c50ee95c4882244036539786fa8c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,15 +109,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ListWaitingPreloads</
 <tr class="memitem:aa3ecfe0276dead7f439cd2df1557b154"><td class="memItemLeft" align="right" valign="top"><a id="aa3ecfe0276dead7f439cd2df1557b154"></a>
 const <a class="el" href="class_a_z_std_1_1unordered__set.html">AZStd::unordered_set</a>&lt; <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetUnloadedDependencies</b> () const</td></tr>
 <tr class="separator:aa3ecfe0276dead7f439cd2df1557b154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa63fc5e269df101a2250b4551dc41fb"><td class="memItemLeft" align="right" valign="top"><a id="aaa63fc5e269df101a2250b4551dc41fb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetReady</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; asset) override</td></tr>
-<tr class="separator:aaa63fc5e269df101a2250b4551dc41fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32efabeb89614b1a5636dbfd4dd71335"><td class="memItemLeft" align="right" valign="top"><a id="a32efabeb89614b1a5636dbfd4dd71335"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetError</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; asset) override</td></tr>
-<tr class="separator:a32efabeb89614b1a5636dbfd4dd71335"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab20a7fa64d54bcd4ddcb493bfa020a0a"><td class="memItemLeft" align="right" valign="top"><a id="ab20a7fa64d54bcd4ddcb493bfa020a0a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetDataLoaded</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">AZ::Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AZ::Data::AssetData</a> &gt; asset) override</td></tr>
 <tr class="separator:ab20a7fa64d54bcd4ddcb493bfa020a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa63fc5e269df101a2250b4551dc41fb"><td class="memItemLeft" align="right" valign="top"><a id="aaa63fc5e269df101a2250b4551dc41fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetReady</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; asset) override</td></tr>
+<tr class="separator:aaa63fc5e269df101a2250b4551dc41fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36faa0446de18dbf183e204e42b4ffac"><td class="memItemLeft" align="right" valign="top"><a id="a36faa0446de18dbf183e204e42b4ffac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetReloaded</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; asset) override</td></tr>
+<tr class="separator:a36faa0446de18dbf183e204e42b4ffac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32efabeb89614b1a5636dbfd4dd71335"><td class="memItemLeft" align="right" valign="top"><a id="a32efabeb89614b1a5636dbfd4dd71335"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetError</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; asset) override</td></tr>
+<tr class="separator:a32efabeb89614b1a5636dbfd4dd71335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7eeebab3a0e16d69931492b1dac51fd"><td class="memItemLeft" align="right" valign="top"><a id="ae7eeebab3a0e16d69931492b1dac51fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetReloadError</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; asset) override</td></tr>
+<tr class="separator:ae7eeebab3a0e16d69931492b1dac51fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -175,6 +181,9 @@ AssetInternal::WeakAsset&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_da
 <tr class="memitem:a9c25ca9739bfb0611a32f98898e95a66"><td class="memItemLeft" align="right" valign="top"><a id="a9c25ca9739bfb0611a32f98898e95a66"></a>
 <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AssetId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_containerAssetId</b></td></tr>
 <tr class="separator:a9c25ca9739bfb0611a32f98898e95a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b9f7679209958e01f552ed68cf785a1"><td class="memItemLeft" align="right" valign="top"><a id="a5b9f7679209958e01f552ed68cf785a1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isReload</b> { false }</td></tr>
+<tr class="separator:a5b9f7679209958e01f552ed68cf785a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cd937ee08eade3defceb9dd62d27f72"><td class="memItemLeft" align="right" valign="top"><a id="a2cd937ee08eade3defceb9dd62d27f72"></a>
 <a class="el" href="class_a_z_std_1_1recursive__mutex.html">AZStd::recursive_mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_dependencyMutex</b></td></tr>
 <tr class="separator:a2cd937ee08eade3defceb9dd62d27f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -255,7 +264,7 @@ AZStd::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_final
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:47 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:31 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -17,8 +17,10 @@
 {{ end }}
 {{ $fontsUrl := printf "https://fonts.googleapis.com/css?family=%s" (delimit $fontSlice "|") }}
 @import url("{{ $fontsUrl }}")
-{{ end }}
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap');
+
+{{ end }}
 
 // Required
 @import "bootstrap/scss/functions" 
@@ -68,6 +70,7 @@
 // Variables 
 
 $font-family-headers: "Open Sans" 
+$font-family-Poppins: "Poppins", sans-serif;
 $o3de-black: #000
 $o3de-white: #fff
 $o3de-lightgray: #ddd
@@ -78,7 +81,9 @@ $o3de-mediumblue: #4B8DEF
 $o3de-lightblue: #A5C6F7
 $o3de-blue-highlight: #94D2FF
 $o3de-green: #58BD61
-$o3de-purple: #652d90
+$o3de-purple: #700AC7
+$o3de-aqua: #0AC1C7
+
 
 // layouts/section-nav.html typography
 
@@ -280,14 +285,16 @@ code
 // layouts/partials/navbar.html 
 
 .main-navbar 
-  background-color: $o3de-black
+  background-color: rgba(0, 0, 0, 0.9)
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))
+  padding-bottom: 3px;
 
 .navbar-collapse
   @include media-breakpoint-down(md)
     position: absolute
     right: 0
     top: 62px
+
 
 .navbar-docs
   background-color: $o3de-docsblue
@@ -301,10 +308,27 @@ code
     padding: 8px 24px
     background-color: #222
 
+.new-nav.navbar-dark .navbar-nav .navbar-item
+  &:last-child
+    margin-left: 25px
+    border: 1px solid $o3de-white
+    border-radius: 4px;
+    .nav-link
+      padding-right: 1.2rem;
+      padding-left: 1.2rem;
+
 .navbar-dark .navbar-nav .nav-link
-  color: $o3de-white
+  color: $o3de-white 
+  font-size: .9rem
+  line-height: 1
+  font-family: $font-family-Poppins
+  font-weight: 700
+  letter-spacing: 1.4px;
+  transition: 300ms ease
   &:hover 
-    color: $o3de-blue-highlight
+    color: $o3de-white 
+    opacity: 0.7
+
 
 .navbar-docs .navbar-nav .nav-link
   text-transform: uppercase
@@ -314,6 +338,7 @@ code
 .navbar-dark .navbar-nav li
   display: inline-block
   position: relative
+  margin-left: 20px
 
 .navbar-dark .navbar-nav li.active
   &:hover 
@@ -349,7 +374,7 @@ code
   background-color: $o3de-blue-highlight
 
 .navbar-logo
-  max-height: 36px
+  max-height: 48px
   color: #FFFFFF
 
 .subTitle
@@ -435,25 +460,33 @@ code
     @include media-breakpoint-down(lg)
       display: block
 
+// layouts/partials/navbar.html build-info
+.build-info-text
+  margin-bottom: 0
+  text-align: center
+
 // layouts/partials/hero.html
 
 // banner
 a.top-banner
   color: $o3de-white
-  background-color: $o3de-purple
+  background-color: rgba(112,10,199,0.9)
   display: block
   padding: 10px 0
   transition: .2s ease
   box-shadow: 0 0 10px rgba(0,0,0,.3)
   position: relative
+  width: 100%
   z-index: 1
+  
 
 
   &:hover 
     background-color: darken($o3de-purple, 10%)
 
-  .container
+  .top-notification
     position: relative
+    padding: 0rem 1rem;
 
     @include media-breakpoint-down(lg)
       max-width: 100%
@@ -464,46 +497,61 @@ a.top-banner
       float: left
       width: 182px
       height: 42px
-      margin-right: 12px
-      margin-top: -2px
+      margin-right: 32px;
+      background-repeat: no-repeat;
+      margin-left: 19px;
 
-      @include media-breakpoint-down(sm)
+      @include media-breakpoint-down(md)
         display: none
 
     .mobile-only
       display: none
 
-      @include media-breakpoint-down(sm)
+      @include media-breakpoint-down(md)
         display: inline
 
     .desktop-only
       display: inline
 
-      @include media-breakpoint-down(sm)
+      @include media-breakpoint-down(md)
         display: none
 
     .banner-title
-      font-weight: bold
+      font-weight: 700
+      font-family: $font-family-Poppins
+      font-size: .9rem
+      letter-spacing: 1px;
+
 
     .banner-subtitle
-      font-size: .8rem
+      font-size: .9rem
+      font-weight: 700
+      font-family: $font-family-Poppins
+      text-transform: uppercase
+      letter-spacing: 1px;
+      line-height: 1;
 
     .banner-call-to-action
       position: absolute
-      right: 15px
+      right: 66px
+      width: 140px;
       top: 50%
       transform: translate(0, -50%)
       background: #fff
       color: #652d90
-      font-weight: 600
       padding: 3px 8px
       font-size: .9rem
+      text-align: center
+      font-family: $font-family-Poppins
+      font-weight: 700
       border-radius: 4px
       transition: .2s ease
       border: 2px solid $o3de-white
+      letter-spacing: 1.4px;
 
-      @include media-breakpoint-down(sm)
-
+      @include media-breakpoint-down(md)
+        right: 16px;
+        width: auto;
 
       &:hover
         border-color: $o3de-purple
@@ -588,19 +636,44 @@ $width: '59vw';
     background-color: darken(#58BD61, 10%)
 
 .download-cta 
-  background-color: $o3de-blue
-  padding: 4px 16px
+  background-color: $o3de-aqua
+  font-size: .9rem
+  line-height: 1
+  font-family: $font-family-Poppins
+  font-weight: 700
+  padding: 12px 18px;
+  color: $o3de-black
+  letter-spacing: 1.4px;
+  transition: 300ms
+  margin-right: 23px;
+
   &:hover 
-    background-color: darken(#1E71EB, 10%)
+    background-color: darken($o3de-aqua, 15%)
   
   @include media-breakpoint-down(md)
-    width: 100%
-    margin-top: 0 !important
+    //width: 100%
+    //margin-top: 0 !important
 
+.border-cta
+  font-size: .9rem
+  line-height: 1
+  font-family: $font-family-Poppins
+  font-weight: 700
+  padding: 12px 29px;
+  color: $o3de-white
+  border: 1px solid #fff
+  letter-spacing: 1.4px;
+  transition: 300ms
+
+  &:hover 
+    color: $o3de-white
+    opacity: 0.7
 // Home Slideshow
 
 .hero-block
   position: relative
+  height: 100vh
+  padding-bottom: 80px;
 
 .hero-slideshow-background,
 .hero-slideshow
@@ -610,8 +683,17 @@ $width: '59vw';
   bottom: 0
   right: 0
   overflow: hidden
-
+.hero-slideshow-background
+  top: -64px
 .hero-slideshow
+  video
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  
 
   &::after
     content: ""
@@ -649,6 +731,25 @@ $width: '59vw';
 
 .hero-slideshow-foreground
   color: $o3de-white
+  h1
+    font-size: 3.8rem
+    font-family: $font-family-Poppins
+    font-weight: 800
+    margin-bottom: 30px;
+    @include media-breakpoint-down(md)
+      font-size: 2.2rem
+      
+  h5
+    font-size: 1rem
+    font-family: $font-family-Poppins
+    font-weight: 900;
+    letter-spacing: 0.2em;
+
+  p
+   font-family: $font-family-Poppins
+   font-weight: 500;
+   letter-spacing: 1px;
+
 
 // layouts/partial/download/hero.html
 
@@ -1430,9 +1531,9 @@ $os-selector-mobile-height: 48px
 
   @include media-breakpoint-up(xl)
     position: sticky
-    top: 4rem
+    top: 4rem // this is recalculated in app.js updateSidebarAttributes() function
     z-index: 1000
-    height: calc(100vh - 4rem)
+    height: calc(100vh - 4rem) // this is recalculated in app.js updateSidebarAttributes() function
     flex: 0 1 320px
     order: 0
     box-sizing: border-box
@@ -1485,7 +1586,20 @@ body.docs-mobile-menu-open .docs-sidebar
       transform: scale(.9)
 
 
-// layouts/section-nav.html 
+// layouts/section-nav.html version-switcher
+
+.version-switcher
+  font-size: 0.9rem
+
+  select
+    option
+      font-size: 0.8rem
+
+    option.selectedVersion
+      color: $o3de-blue
+      font-weight: bold
+
+// layouts/section-nav.html nav
 
 nav.docs-nav > ul > li:not(.currentAncestorCategory)
     @include media-breakpoint-up(xl)
@@ -1507,14 +1621,13 @@ nav.docs-nav
       position: relative
 
       a
-        display: block
+        display: inline-block
         padding: 3px 20px 3px 5px
         color: #333
         &:hover
           color: $o3de-blue-highlight
       
-      a.currentPage:not(.has-children)
-        background: rgba(221, 221, 221, .3)
+      a.currentPage
         border-radius: 3px
         color: $o3de-blue
         font-weight: 600
@@ -1526,28 +1639,50 @@ nav.docs-nav
         color: $o3de-blue
         &:hover
           color: $o3de-blue-highlight
-
-      a.has-children::after
-        content: ''
-        width: 10px
-        height: 10px
-        position: absolute
-        right: 8px
-        top: 13px
-        transition: transform .5s ease
-        transform: rotate(-45deg)
-        border: 2px solid #333
-        border-left: 0
-        border-top: 0
         
       a.currentAncestor.has-children::after
         border-color: $o3de-blue
 
       a.has-children:hover::after
-        border-color: $o3de-blue-highlight
+        border-color: $o3de-blue-highlight    
+
+      a.has-children-icon  
+        position: absolute  
+        right: 0px
+        top: 8px
+        &:after
+          position: absolute  
+          right: 5px
+          content: ''
+          width: 10px
+          height: 10px
+          transition: transform .5s ease
+          transform: rotate(-45deg)
+          border: 2px solid #333
+          border-left: 0
+          border-top: 0    
+        &:hover::after
+          cursor: pointer
+          border-color: $o3de-blue-highlight
+        
+      a.has-children-icon.open
+        &:after
+          transform: rotate(45deg) translate(-3px, -3px)
+        &:hover::after
+          border-color: $o3de-blue-highlight
       
-      a.has-children.open::after
-        transform: rotate(45deg) translate(-3px, -3px)
+      a.has-children-icon.currentPage
+        &:after
+          border-color: $o3de-blue
+        &:hover::after
+          border-color: $o3de-blue-highlight
+
+      a.has-children-icon.currentAncestor
+        &:after
+          border-color: $o3de-blue          
+        &:hover::after
+          border-color: $o3de-blue-highlight
+
 
       ul
         display: none
@@ -1646,3 +1781,23 @@ nav.docs-nav
     @include media-breakpoint-down(sm)
       display: block
       
+.navbar-brand
+  padding-top: 0;
+  padding-bottom: 0;
+
+.home-page
+  a.top-banner
+    position: absolute
+    padding-bottom: 7px;
+
+  .vertical-text
+    writing-mode: vertical-lr;
+    color: #fff
+    font-family: $font-family-Poppins
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    position: absolute
+    right: 30px
+    top: 50%
+    transform: translateY(-50%)  

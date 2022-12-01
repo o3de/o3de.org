@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -86,6 +86,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_allocator_1_1_descriptor.html">Descriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_allocator.html#a37f1596b7355d177c927ea724c9842d1">GetDescriptor</a> () const =0</td></tr>
 <tr class="memdesc:a37f1596b7355d177c927ea724c9842d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the descriptor used to initialize the allocator. <br /></td></tr>
 <tr class="separator:a37f1596b7355d177c927ea724c9842d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae161debe8d1ed08d683973c7772232c6"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_allocator.html#ae161debe8d1ed08d683973c7772232c6">ComputeFragmentation</a> () const</td></tr>
+<tr class="separator:ae161debe8d1ed08d683973c7772232c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6e3d950ddec122c3e08b1232964e003"><td class="memItemLeft" align="right" valign="top"><a id="ad6e3d950ddec122c3e08b1232964e003"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_allocator.html#ad6e3d950ddec122c3e08b1232964e003">Clone</a> ([[maybe_unused]] <a class="el" href="class_a_z_1_1_r_h_i_1_1_allocator.html">RHI::Allocator</a> *newAllocator)</td></tr>
 <tr class="memdesc:ad6e3d950ddec122c3e08b1232964e003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone the current allocator to the new allocator passed in. <br /></td></tr>
@@ -178,6 +180,34 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Helper for converting agnostic <a class="el" href="class_a_z_1_1_r_h_i_1_1_virtual_address.html">VirtualAddress</a> type to pointer type. Will convert VirtualAddress::Null to nullptr. </p>
+
+</div>
+</div>
+<a id="ae161debe8d1ed08d683973c7772232c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae161debe8d1ed08d683973c7772232c6">&#9670;&nbsp;</a></span>ComputeFragmentation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float AZ::RHI::Allocator::ComputeFragmentation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compute the fragmentation present in the allocator (possibly an estimate). The returned value is expected to be a measure between 0.f and 1.f inclusive, with 0.f indicating zero fragmentation. </p>
+
+<p>Reimplemented in <a class="el" href="class_a_z_1_1_r_h_i_1_1_free_list_allocator.html#a804be65b08221570fa33cec99c7964d4">AZ::RHI::FreeListAllocator</a>.</p>
 
 </div>
 </div>
@@ -300,7 +330,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:26 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

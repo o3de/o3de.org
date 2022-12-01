@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine LyShine Gem API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -217,14 +217,14 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui_canvas_interface.html#aaaf1a6028c0972d1e3b2c3345125b969">SetIsRenderToTexture</a> (bool isRenderToTexture)=0</td></tr>
 <tr class="memdesc:aaaf1a6028c0972d1e3b2c3345125b969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set flag that controls whether the canvas is rendering to a texture. <br /></td></tr>
 <tr class="separator:aaaf1a6028c0972d1e3b2c3345125b969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3adec3fd780346515a71e073176d1511"><td class="memItemLeft" align="right" valign="top"><a id="a3adec3fd780346515a71e073176d1511"></a>
-virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui_canvas_interface.html#a3adec3fd780346515a71e073176d1511">GetRenderTargetName</a> ()=0</td></tr>
-<tr class="memdesc:a3adec3fd780346515a71e073176d1511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the render target name that this canvas will render to. <br /></td></tr>
-<tr class="separator:a3adec3fd780346515a71e073176d1511"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72505c925a97531fc6c2991746a9cfc8"><td class="memItemLeft" align="right" valign="top"><a id="a72505c925a97531fc6c2991746a9cfc8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui_canvas_interface.html#a72505c925a97531fc6c2991746a9cfc8">SetRenderTargetName</a> (const AZStd::string &amp;name)=0</td></tr>
-<tr class="memdesc:a72505c925a97531fc6c2991746a9cfc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the render target name that this canvas will render to. <br /></td></tr>
-<tr class="separator:a72505c925a97531fc6c2991746a9cfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6260f1c863ae815c23965a7d6334171"><td class="memItemLeft" align="right" valign="top"><a id="ac6260f1c863ae815c23965a7d6334171"></a>
+virtual const AZ::Data::Asset&lt; AZ::RPI::AttachmentImageAsset &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui_canvas_interface.html#ac6260f1c863ae815c23965a7d6334171">GetAttachmentImageAsset</a> ()=0</td></tr>
+<tr class="memdesc:ac6260f1c863ae815c23965a7d6334171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the attachment image that this canvas will render to. <br /></td></tr>
+<tr class="separator:ac6260f1c863ae815c23965a7d6334171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4b6571c92340420cc2a927f9cf76ba"><td class="memItemLeft" align="right" valign="top"><a id="a7f4b6571c92340420cc2a927f9cf76ba"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui_canvas_interface.html#a7f4b6571c92340420cc2a927f9cf76ba">SetAttachmentImageAsset</a> (const AZ::Data::Asset&lt; AZ::RPI::AttachmentImageAsset &gt; &amp;attachmentImageAsset)=0</td></tr>
+<tr class="memdesc:a7f4b6571c92340420cc2a927f9cf76ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the attachment image that this canvas will render to. <br /></td></tr>
+<tr class="separator:a7f4b6571c92340420cc2a927f9cf76ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d83378f775204a3a9e3e33f542b56ad"><td class="memItemLeft" align="right" valign="top"><a id="a1d83378f775204a3a9e3e33f542b56ad"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui_canvas_interface.html#a1d83378f775204a3a9e3e33f542b56ad">GetIsPositionalInputSupported</a> ()=0</td></tr>
 <tr class="memdesc:a1d83378f775204a3a9e3e33f542b56ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get flag that controls whether this canvas automatically handles positional input (mouse/touch) <br /></td></tr>
@@ -1165,7 +1165,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:19:56 for Open 3D Engine LyShine Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:05 for Open 3D Engine LyShine Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzNetworking API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -112,10 +112,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a3c5b69d63f6177b5d5d1edd45671591d"><td class="memTemplParams" colspan="2">template&lt;typename TYPE &gt; </td></tr>
 <tr class="memitem:a3c5b69d63f6177b5d5d1edd45671591d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_serializer.html#a3c5b69d63f6177b5d5d1edd45671591d">Serialize</a> (TYPE &amp;value, const char *name)</td></tr>
 <tr class="separator:a3c5b69d63f6177b5d5d1edd45671591d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac09b6e4a963a9a7d5cb7ec1c40ebfb77"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_serializer.html#ac09b6e4a963a9a7d5cb7ec1c40ebfb77">BeginObject</a> (const char *name, const char *typeName)=0</td></tr>
-<tr class="separator:ac09b6e4a963a9a7d5cb7ec1c40ebfb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73bd5845a3a6e565c8abe64ae59b036c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_serializer.html#a73bd5845a3a6e565c8abe64ae59b036c">EndObject</a> (const char *name, const char *typeName)=0</td></tr>
-<tr class="separator:a73bd5845a3a6e565c8abe64ae59b036c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47039952774cb2766a25374114d142f9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_serializer.html#a47039952774cb2766a25374114d142f9">BeginObject</a> (const char *name)=0</td></tr>
+<tr class="separator:a47039952774cb2766a25374114d142f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b1b8d94450e4287e225d4cc6b6a030"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_serializer.html#ac6b1b8d94450e4287e225d4cc6b6a030">EndObject</a> (const char *name)=0</td></tr>
+<tr class="separator:ac6b1b8d94450e4287e225d4cc6b6a030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a265e7595f7c96bcdf25942200c72b6e9"><td class="memItemLeft" align="right" valign="top">virtual const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_serializer.html#a265e7595f7c96bcdf25942200c72b6e9">GetBuffer</a> () const =0</td></tr>
 <tr class="separator:a265e7595f7c96bcdf25942200c72b6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e14e1357d1c94a4671c9107370cb9ea"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_serializer.html#a6e14e1357d1c94a4671c9107370cb9ea">GetCapacity</a> () const =0</td></tr>
@@ -140,8 +140,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializerValid</b>
 <p>Provided serializers include <a class="el" href="class_az_networking_1_1_network_input_serializer.html" title="Input serializer for writing an object model into a bytestream.">NetworkInputSerializer</a> for writing an object model into a bytestream, <a class="el" href="class_az_networking_1_1_network_output_serializer.html" title="Output serializer for inflating and writing out a bytestream into an object model.">NetworkOutputSerializer</a> for writing to an object model, TrackChangesSerializer which is used to efficiently serialize objects without incurring significant copy or comparison overhead, and <a class="el" href="class_az_networking_1_1_hash_serializer.html" title="Generate a 32bit integer hash for a serializable object. NOTE: This hash is not designed to be crypto...">HashSerializer</a> which can be used to generate a hash of all visited data which is important for automated desync detection. <br  />
  </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac09b6e4a963a9a7d5cb7ec1c40ebfb77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac09b6e4a963a9a7d5cb7ec1c40ebfb77">&#9670;&nbsp;</a></span>BeginObject()</h2>
+<a id="a47039952774cb2766a25374114d142f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47039952774cb2766a25374114d142f9">&#9670;&nbsp;</a></span>BeginObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,18 +153,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializerValid</b>
           <td class="memname">virtual bool AzNetworking::ISerializer::BeginObject </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>typeName</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -176,13 +166,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializerValid</b>
 <p>Begins serializing an object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>string name of the object </td></tr>
-    <tr><td class="paramname">typeInfo</td><td>basic type information for the value being serialized </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Result. In the case of Skip, Serialize is not called. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean true on success, false for failure </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_networking_1_1_delta_serializer_apply.html#af03bea8b19c16e5b719f7bb161b87234">AzNetworking::DeltaSerializerApply</a>, <a class="el" href="class_az_networking_1_1_delta_serializer_create.html#a0a445297ff7276f20add995aaec8f749">AzNetworking::DeltaSerializerCreate</a>, <a class="el" href="class_az_networking_1_1_network_output_serializer.html#acf53c3e457f2a16fc0375f916c1bcfb2">AzNetworking::NetworkOutputSerializer</a>, <a class="el" href="class_az_networking_1_1_network_input_serializer.html#a1b69d2462835986b7311f8804110ded2">AzNetworking::NetworkInputSerializer</a>, <a class="el" href="class_az_networking_1_1_stringify_serializer.html#a686ded4472b22f6b9f608071b978d462">AzNetworking::StringifySerializer</a>, and <a class="el" href="class_az_networking_1_1_hash_serializer.html#a09dbfbe7c58515f6d8f280dedd8b1504">AzNetworking::HashSerializer</a>.</p>
+<p>Implemented in <a class="el" href="class_az_networking_1_1_delta_serializer_apply.html#abe501cb2b3a77ef9d70fd15c1bb15083">AzNetworking::DeltaSerializerApply</a>, <a class="el" href="class_az_networking_1_1_delta_serializer_create.html#a41ea23fba03208e0da433e81a233205c">AzNetworking::DeltaSerializerCreate</a>, <a class="el" href="class_az_networking_1_1_network_output_serializer.html#acd3ab53645da18e94a5ee7a03220e167">AzNetworking::NetworkOutputSerializer</a>, <a class="el" href="class_az_networking_1_1_network_input_serializer.html#ac6134692b7175a467414eb790c902285">AzNetworking::NetworkInputSerializer</a>, <a class="el" href="class_az_networking_1_1_stringify_serializer.html#a93a079eddbcd7118c95302dff1920e95">AzNetworking::StringifySerializer</a>, and <a class="el" href="class_az_networking_1_1_hash_serializer.html#a4e3d6447631507d4470b091ad68dfba2">AzNetworking::HashSerializer</a>.</p>
 
 </div>
 </div>
@@ -214,8 +203,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializerValid</b>
 
 </div>
 </div>
-<a id="a73bd5845a3a6e565c8abe64ae59b036c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73bd5845a3a6e565c8abe64ae59b036c">&#9670;&nbsp;</a></span>EndObject()</h2>
+<a id="ac6b1b8d94450e4287e225d4cc6b6a030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b1b8d94450e4287e225d4cc6b6a030">&#9670;&nbsp;</a></span>EndObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,18 +216,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializerValid</b>
           <td class="memname">virtual bool AzNetworking::ISerializer::EndObject </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>typeName</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -250,13 +229,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializerValid</b>
 <p>Ends serializing an object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>string name of the object </td></tr>
-    <tr><td class="paramname">typeInfo</td><td>basic type information for the value being serialized </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean true for success, false for serialization failure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean true on success, false for failure </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_networking_1_1_delta_serializer_apply.html#a4ad27737e408e576d12c223c455fed16">AzNetworking::DeltaSerializerApply</a>, <a class="el" href="class_az_networking_1_1_delta_serializer_create.html#a0345d1ebfed4ad97b8390ffb31429a1e">AzNetworking::DeltaSerializerCreate</a>, <a class="el" href="class_az_networking_1_1_network_output_serializer.html#a1eb618ec5be8aa572b3532b93a01edae">AzNetworking::NetworkOutputSerializer</a>, <a class="el" href="class_az_networking_1_1_network_input_serializer.html#a5545779be860f2e394839250aa80b7bc">AzNetworking::NetworkInputSerializer</a>, <a class="el" href="class_az_networking_1_1_stringify_serializer.html#a58481448203e48047b5e0eceefd7dfd5">AzNetworking::StringifySerializer</a>, and <a class="el" href="class_az_networking_1_1_hash_serializer.html#a547ab7b9a9cd3805281e793c3dab7401">AzNetworking::HashSerializer</a>.</p>
+<p>Implemented in <a class="el" href="class_az_networking_1_1_delta_serializer_apply.html#a74c137cfeb640cf6b553722d45711da8">AzNetworking::DeltaSerializerApply</a>, <a class="el" href="class_az_networking_1_1_delta_serializer_create.html#aa5a7f119bb337579076e868eac9d45dd">AzNetworking::DeltaSerializerCreate</a>, <a class="el" href="class_az_networking_1_1_network_output_serializer.html#abfcd5082f988fa437ddb69ba8176b7c4">AzNetworking::NetworkOutputSerializer</a>, <a class="el" href="class_az_networking_1_1_network_input_serializer.html#af0b18045dd38adc01149228285a34e80">AzNetworking::NetworkInputSerializer</a>, <a class="el" href="class_az_networking_1_1_stringify_serializer.html#ae23ae6a3b73f268dee74534fc26171a1">AzNetworking::StringifySerializer</a>, and <a class="el" href="class_az_networking_1_1_hash_serializer.html#a34d1b61d8309bcb9a1a9bf3be122c664">AzNetworking::HashSerializer</a>.</p>
 
 </div>
 </div>
@@ -931,7 +909,6 @@ template&lt;typename TYPE &gt; </div>
   <table class="params">
     <tr><td class="paramname">value</td><td>object instance to serialize </td></tr>
     <tr><td class="paramname">name</td><td>string name of the object </td></tr>
-    <tr><td class="paramname">typeInfo</td><td>basic type information for the value being serialized </td></tr>
   </table>
   </dd>
 </dl>
@@ -1253,7 +1230,7 @@ template&lt;typename TYPE &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:27 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:19 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

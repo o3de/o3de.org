@@ -1,8 +1,17 @@
+{{ $defaultVersions := site.Params.docs.versions }}
 {{ $allSections  := site.Sections }} <!-- "blog" and "docs" -->
 {{ $docsSections := where $allSections "Section" "docs" }}
 
+<p class="version-switcher">
+    Version: <select id="version-switcher">
+        {{ range $version := $defaultVersions }}
+            <option value="{{ index $version 1 }}">{{ index $version 0 }}</option>
+        {{ end }}
+    </select>
+</p>
+
 <form id="search"
-    action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}' method="get" class="align-items-center justify-content-center">
+    action="/search" method="get" class="align-items-center justify-content-center">
     <div class="search-input-view">
         <label hidden for="search-input">Search site</label>
         <img src="/img/home/Search_dark.svg" class="search-icon"/>

@@ -20,7 +20,7 @@ Take only the bits your project needs! O3DE is composed of *Gems*, which are mod
 
 O3DE supports Gems with precompiled binaries and libraries. Adding or removing precompiled Gems does not require you to recompile O3DE. Upgrading to new engine versions only requires that you recompile projects.
 
-For more information, see [the O3DE Gems documentation](/docs/user-guide/gems/overview).
+For more information, see [the O3DE Gems documentation](/docs/user-guide/gems/).
 
 ## Build with familiar tools
 

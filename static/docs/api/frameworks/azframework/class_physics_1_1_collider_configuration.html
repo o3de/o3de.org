@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -93,9 +93,9 @@ AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetIsTriggerVisi
 <tr class="memitem:a56ed89b32983fa706b8e447f0862b033"><td class="memItemLeft" align="right" valign="top"><a id="a56ed89b32983fa706b8e447f0862b033"></a>
 AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetCollisionLayerVisibility</b> () const</td></tr>
 <tr class="separator:a56ed89b32983fa706b8e447f0862b033"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9457aef51a4f4785ea9adc4667d2dbd3"><td class="memItemLeft" align="right" valign="top"><a id="a9457aef51a4f4785ea9adc4667d2dbd3"></a>
-AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaterialSelectionVisibility</b> () const</td></tr>
-<tr class="separator:a9457aef51a4f4785ea9adc4667d2dbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ca52007efc02ed24b21bd3b205e479"><td class="memItemLeft" align="right" valign="top"><a id="a03ca52007efc02ed24b21bd3b205e479"></a>
+AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaterialSlotsVisibility</b> () const</td></tr>
+<tr class="separator:a03ca52007efc02ed24b21bd3b205e479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8ac26f032dc1fa0f45a0cc22ce570cb"><td class="memItemLeft" align="right" valign="top"><a id="ab8ac26f032dc1fa0f45a0cc22ce570cb"></a>
 AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetOffsetVisibility</b> () const</td></tr>
 <tr class="separator:ab8ac26f032dc1fa0f45a0cc22ce570cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,10 +138,14 @@ AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>m_position</b>
 <tr class="memitem:a2497c0a044c9e8e74ddcbecac21edf29"><td class="memItemLeft" align="right" valign="top">AZ::Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_collider_configuration.html#a2497c0a044c9e8e74ddcbecac21edf29">m_rotation</a> = AZ::Quaternion::CreateIdentity()</td></tr>
 <tr class="memdesc:a2497c0a044c9e8e74ddcbecac21edf29"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_physics_1_1_shape.html">Shape</a> offset relative to the connected rigid body.  <a href="class_physics_1_1_collider_configuration.html#a2497c0a044c9e8e74ddcbecac21edf29">More...</a><br /></td></tr>
 <tr class="separator:a2497c0a044c9e8e74ddcbecac21edf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ca242e6963bb2ce4f9acba5bb8f45b8"><td class="memItemLeft" align="right" valign="top"><a id="a9ca242e6963bb2ce4f9acba5bb8f45b8"></a>
-<a class="el" href="class_physics_1_1_material_selection.html">Physics::MaterialSelection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_collider_configuration.html#a9ca242e6963bb2ce4f9acba5bb8f45b8">m_materialSelection</a></td></tr>
-<tr class="memdesc:a9ca242e6963bb2ce4f9acba5bb8f45b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Materials for the collider. <br /></td></tr>
-<tr class="separator:a9ca242e6963bb2ce4f9acba5bb8f45b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc2856eb44c19a733d73670c867dd9d"><td class="memItemLeft" align="right" valign="top"><a id="a1dc2856eb44c19a733d73670c867dd9d"></a>
+<a class="el" href="class_physics_1_1_material_slots.html">MaterialSlots</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_collider_configuration.html#a1dc2856eb44c19a733d73670c867dd9d">m_materialSlots</a></td></tr>
+<tr class="memdesc:a1dc2856eb44c19a733d73670c867dd9d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_physics_1_1_material.html" title="Runtime Physics material instance.">Material</a> slots for the collider. <br /></td></tr>
+<tr class="separator:a1dc2856eb44c19a733d73670c867dd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971ceb3c191e4418ce90a5b944b3d8fe"><td class="memItemLeft" align="right" valign="top"><a id="a971ceb3c191e4418ce90a5b944b3d8fe"></a>
+<a class="el" href="class_physics_legacy_1_1_material_selection.html">PhysicsLegacy::MaterialSelection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_collider_configuration.html#a971ceb3c191e4418ce90a5b944b3d8fe">m_legacyMaterialSelection</a></td></tr>
+<tr class="memdesc:a971ceb3c191e4418ce90a5b944b3d8fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kept to convert old physics material assets. <br /></td></tr>
+<tr class="separator:a971ceb3c191e4418ce90a5b944b3d8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4b32d2972bae7ef58f692907edd571c"><td class="memItemLeft" align="right" valign="top">AZ::u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_collider_configuration.html#ae4b32d2972bae7ef58f692907edd571c">m_propertyVisibilityFlags</a> = (std::numeric_limits&lt;AZ::u8&gt;::max)()</td></tr>
 <tr class="separator:ae4b32d2972bae7ef58f692907edd571c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21f28821eba460e90f2c3a2308ea2112"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_collider_configuration.html#a21f28821eba460e90f2c3a2308ea2112">m_visible</a> = false</td></tr>
@@ -178,7 +182,7 @@ static const float&#160;</td><td class="memItemRight" valign="bottom"><b>Contact
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad3df11738632186c3634ac79a9bb0ad1a5ced7780f35f5146391150db514d7cc4"></a>IsVisible&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>This property will be removed in a future release. </dd></dl>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad3df11738632186c3634ac79a9bb0ad1a5ced7780f35f5146391150db514d7cc4"></a>IsVisible&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>This property will be removed in a future release. </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ad3df11738632186c3634ac79a9bb0ad1a5239634950ec2c75a701f54920172831"></a>Offset&#160;</td><td class="fielddoc"><p>Whether the rotation and position offsets should be visible. </p>
 </td></tr>
@@ -230,7 +234,7 @@ static const float&#160;</td><td class="memItemRight" valign="bottom"><b>Contact
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>This property will be removed in a future release. Display the collider in editor view. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>This property will be removed in a future release. Display the collider in editor view. </dd></dl>
 
 </div>
 </div>
@@ -240,7 +244,7 @@ static const float&#160;</td><td class="memItemRight" valign="bottom"><b>Contact
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:23 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:15 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine GraphModel Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -93,42 +93,16 @@ virtual DataTypePtr&#160;</td><td class="memItemRight" valign="bottom"><a class=
 virtual DataTypePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_i_graph_context.html#ab2f4b8c5a6f651e1cd2631e199c6df21">GetDataType</a> (<a class="el" href="class_graph_model_1_1_data_type.html#a54e6b079dbc3f501e8dc918f0043b6a0">DataType::Enum</a> typeEnum) const =0</td></tr>
 <tr class="memdesc:ab2f4b8c5a6f651e1cd2631e199c6df21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> object representing the given TypeId, or Invalid if it doesn't exist. <br /></td></tr>
 <tr class="separator:ab2f4b8c5a6f651e1cd2631e199c6df21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99819fc06d80be133cfbaec5d1bd88fe"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a99819fc06d80be133cfbaec5d1bd88fe"><td class="memTemplParams" colspan="2"><a id="a99819fc06d80be133cfbaec5d1bd88fe"></a>
+template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a99819fc06d80be133cfbaec5d1bd88fe"><td class="memTemplItemLeft" align="right" valign="top">DataTypePtr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_i_graph_context.html#a99819fc06d80be133cfbaec5d1bd88fe">GetDataType</a> () const</td></tr>
+<tr class="memdesc:a99819fc06d80be133cfbaec5d1bd88fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to returns a <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> object representing the given template type T, or Invalid if it doesn't exist. <br /></td></tr>
 <tr class="separator:a99819fc06d80be133cfbaec5d1bd88fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>!! Start in Graph.h for high level GraphModel documentation !!! </p>
 <p><a class="el" href="class_graph_model_1_1_i_graph_context.html" title="!! Start in Graph.h for high level GraphModel documentation !!!">IGraphContext</a> provides an interface to client system specific features for the GraphModel framework to use. All systems that use GraphModel must provide an implementation of this interface, passed to the main <a class="el" href="class_graph_model_1_1_graph.html">Graph</a> object. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a99819fc06d80be133cfbaec5d1bd88fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99819fc06d80be133cfbaec5d1bd88fe">&#9670;&nbsp;</a></span>GetDataType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DataTypePtr GraphModel::IGraphContext::GetDataType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Utility function to returns a <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> object representing the given template type T, or Invalid if it doesn't exist. Subclasses may need to implement this function too, and just call <a class="el" href="class_graph_model_1_1_i_graph_context.html#abec98e83473ccf86c66aae94fd820c81" title="Returns a DataType object representing the given TypeId, or Invalid if it doesn&#39;t exist.">IGraphContext::GetDataType&lt;T&gt;()</a> in order to avoid "error C2275: 'Type': illegal use of this type as an expression" </p>
-
-</div>
-</div>
 <a id="a73e653c4a7154dde87b8a9086f9ad939"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73e653c4a7154dde87b8a9086f9ad939">&#9670;&nbsp;</a></span>GetDataTypeForValue()</h2>
 
@@ -152,7 +126,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns a <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> object representing the given AZStd::any value, or Invalid if it doesn't exist. This data type method has a different name because if the GraphContext implementation doesn't override this, there will be a compile error for a hidden function because of subclasses implementing the templated version below </p>
+<p>Returns a <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> object representing the given AZStd::any value, or Invalid if it doesn't exist. This data type method has a different name because if the <a class="el" href="class_graph_model_1_1_graph_context.html" title="!! Start in Graph.h for high level GraphModel documentation !!!">GraphContext</a> implementation doesn't override this, there will be a compile error for a hidden function because of subclasses implementing the templated version below </p>
 
 </div>
 </div>
@@ -162,7 +136,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:45 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:58 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

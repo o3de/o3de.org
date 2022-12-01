@@ -27,10 +27,10 @@ Add one of the following required components when using the Vegetation Surface M
 |-|-|-|-|
 | **Filter Stage** | Defines if filters are applied before or after modifiers. | `PreProcess`, `PostProcess`, or `Default` | `Default` |
 | **Allow Per-Item Overrides** | If `Enabled`, vegetation descriptor properties that are enabled can override this component's properties. | Boolean | `Disabled` |
-| **Inclusion - Surface Tags** | An array of surface tags that allow vegetation or blocker instance placement if the surface tag weight of the location is within the **Inclusion - Weight** properties. | Array: Surface Tags | None |
+| **Inclusion - Surface Tags** | An array of [surface tags](/docs/user-guide/gems/reference/environment/surface-data) that allow vegetation or blocker instance placement if the surface tag weight of the location is within the **Inclusion - Weight** properties. | Array: Surface Tags | None |
 | **Inclusion - Weight Min** | Sets the minimum weight of an **Inclusion - Surface Tag** that allows vegetation placement. | Float: 0.0 - 1.0 | `0.1` |
 | **Inclusion - Weight Max** | Sets the maximum weight of an **Inclusion - Surface Tag** that allows vegetation placement. | Float: 0.0 - 1.0 | `1.0` |
-| **Exclusion - Surface Tags** | An array of surface tags that don't allow vegetation or blocker instance placement if the surface tag weight of the location is within the **Exclusion - Weight** properties. | Array: Surface Tags | None |
+| **Exclusion - Surface Tags** | An array of [surface tags](/docs/user-guide/gems/reference/environment/surface-data) that don't allow vegetation or blocker instance placement if the surface tag weight of the location is within the **Exclusion - Weight** properties. | Array: Surface Tags | None |
 | **Exclusion - Weight Min** | Sets the minimum weight of an **Exclusion - Surface Tag** that blocks vegetation. | Float: 0.0 - 1.0 | `0.1` |
 | **Exclusion - Weight Max** | Sets the maximum weight of an **Exclusion - Surface Tag** that blocks vegetation. | Float: 0.0 - 1.0 | `1.0` |
 

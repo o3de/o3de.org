@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -44,6 +44,9 @@ $(function() {
 &#160;
 
 <h3><a id="index_m"></a>- m -</h3><ul>
+<li>m_absolutePath
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html#ae2792d7aa6849f4731e27d47fef8b069">AtomToolsFramework::AtomToolsDocument</a>
+</li>
 <li>m_access
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_scope_attachment_usage_and_access.html#a5f4a03b016beb7c227c5b8a6f48190a1">AZ::RHI::ScopeAttachmentUsageAndAccess</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_buffer_descriptor.html#ac5abc0ffb54f5b10be1e27c76c3ff4d6">AZ::RHI::ShaderInputBufferDescriptor</a>
@@ -63,6 +66,9 @@ $(function() {
 <li>m_addSuffixToFileName
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_prepend_arguments.html#a18b95a7cf4fbcb426bb9f4f5aeb92296">AZ::RHI::PrependArguments</a>
 </li>
+<li>m_affectsGIFactor
+: <a class="el" href="struct_a_z_1_1_render_1_1_capsule_light_data.html#ab99f2f35b07e4259519a49bfe9fd01e3">AZ::Render::CapsuleLightData</a>
+</li>
 <li>m_alignment
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_descriptor.html#a0a296589eb63e4d1f70850ed5430c601">AZ::RHI::BufferDescriptor</a>
 , <a class="el" href="struct_a_z_1_1_r_h_i_1_1_memory_allocation.html#aa156c78954526f1fe0811f4cebc14421">AZ::RHI::MemoryAllocation&lt; MemoryType &gt;</a>
@@ -72,6 +78,21 @@ $(function() {
 </li>
 <li>m_allocations
 : <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#af06a1c2c9dac36f8fc226860a30bd0aa">AZ::Render::SkinnedMeshInstance</a>
+</li>
+<li>m_allowModification
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html#ae4504ffe87f3e304f40f6cac87b5be5d">AZ::RPI::RenderPipelineDescriptor</a>
+</li>
+<li>m_angleDown
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_fov_data.html#a8768895ec995a9347540e75d4e61c902">AZ::RPI::FovData</a>
+</li>
+<li>m_angleLeft
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_fov_data.html#a4a81ffe4e38224e27a11b0d4d80cb1fa">AZ::RPI::FovData</a>
+</li>
+<li>m_angleRight
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_fov_data.html#a92b8ac73444336390f4fee5365bd4516">AZ::RPI::FovData</a>
+</li>
+<li>m_angleUp
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_fov_data.html#a67466a842fc0144718e98dfec3612c55">AZ::RPI::FovData</a>
 </li>
 <li>m_arguments
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_dispatch_item.html#aa64ff0519874722cc6e76e45faeb2cbe">AZ::RHI::DispatchItem</a>
@@ -114,8 +135,7 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_image_system_descriptor.html#af4fd5e93b32e9b4c7e266ddec4fe9b76">AZ::RPI::ImageSystemDescriptor</a>
 </li>
 <li>m_attachment
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a063f1ac28b9578f8d1a6e0d3530754f9">AZ::RPI::PassAttachmentBinding</a>
-, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_ref.html#aedabac15f14be863125305588602d685">AZ::RPI::PassAttachmentRef</a>
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_ref.html#aedabac15f14be863125305588602d685">AZ::RPI::PassAttachmentRef</a>
 </li>
 <li>m_attachmentCount
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_render_attachment_layout.html#af97d2cf64b89a4db4396577384122c28">AZ::RHI::RenderAttachmentLayout</a>
@@ -125,7 +145,6 @@ $(function() {
 </li>
 <li>m_attachmentId
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_scope_attachment_descriptor.html#a818792023fe343f5a071686f5de879e0">AZ::RHI::ScopeAttachmentDescriptor</a>
-, <a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain_descriptor.html#abbd965007a848a0a5f9a162a9904b94f">AZ::RHI::SwapChainDescriptor</a>
 , <a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_buffer_descriptor.html#add96ea4b15732b2548e988ab134dd0b4">AZ::RHI::TransientBufferDescriptor</a>
 , <a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_image_descriptor.html#a676ba74705dd6ef5eb970c27ef2a872b">AZ::RHI::TransientImageDescriptor</a>
 </li>
@@ -140,6 +159,9 @@ $(function() {
 </li>
 <li>m_attachmentUsageIndex
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a2efffe8499041951cf4b3c7c47543af2">AZ::RPI::PassAttachmentBinding</a>
+</li>
+<li>m_azslcArguments
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_build_arguments.html#a465e08db40cf98b4478b96059e14d57b">AZ::RHI::ShaderBuildArguments</a>
 </li>
 <li>m_bakeEmptyAsDefault
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_option_group_hints.html#a4221bca9f4a42381cd4dc71471e3d449">AZ::RPI::ShaderOptionGroupHints</a>
@@ -254,6 +276,9 @@ $(function() {
 <li>m_capacityInBytes
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_allocator_1_1_descriptor.html#a8e97c41009624514249b1bc089538850">AZ::RHI::Allocator::Descriptor</a>
 </li>
+<li>m_category
+: <a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_config.html#ad72671d35f6543f45bb68a22ed988fa8">AtomToolsFramework::DynamicNodeConfig</a>
+</li>
 <li>m_clearValue
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_attachment_load_store_action.html#a39f787565e112af8b18b68b18cacbdb1">AZ::RHI::AttachmentLoadStoreAction</a>
 </li>
@@ -294,6 +319,9 @@ $(function() {
 <li>m_componentCount
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_input_contract_1_1_stream_channel_info.html#afe05d69595200a05270dc1c41e7b3951">AZ::RPI::ShaderInputContract::StreamChannelInfo</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_output_contract_1_1_color_attachment_info.html#a7ca1f491be622734227272c418a16883">AZ::RPI::ShaderOutputContract::ColorAttachmentInfo</a>
+</li>
+<li>m_componentUuid
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_cullable_1_1_cull_data.html#a460cacab42f629027fbf5a20913cc093">AZ::RPI::Cullable::CullData</a>
 </li>
 <li>m_compressionLevel
 : <a class="el" href="struct_a_z_1_1_utils_1_1_png_file_1_1_save_settings.html#a77ffddcf60eef5b6d6d1b8ece8b37b97">AZ::Utils::PngFile::SaveSettings</a>
@@ -357,11 +385,14 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_subresource_data.html#ad4cdbf898572ba45d55e036a65a94284">AZ::RHI::StreamingImageSubresourceData</a>
 , <a class="el" href="struct_a_z_1_1_stable_dynamic_array_1_1_page.html#a8051c496cf868e53c7e888c9095f03ef">AZ::StableDynamicArray&lt; T, ElementsPerPage, Allocator &gt;::Page</a>
 </li>
+<li>m_defaultAssetIdToCreate
+: <a class="el" href="struct_atom_tools_framework_1_1_document_type_info.html#ab32c07d4a511e46ebf5c7e31a4309466">AtomToolsFramework::DocumentTypeInfo</a>
+</li>
 <li>m_defaultMaterialAsset
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_model_material_slot.html#a57198621eaed4875aa156e62e5305177">AZ::RPI::ModelMaterialSlot</a>
 </li>
-<li>m_defaultMatrixOrder
-: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html#a7369a54ec21112dabd819cd3cab01b3e">AZ::RHI::ShaderCompilerArguments</a>
+<li>m_defaultValue
+: <a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_slot_config.html#a7801d477df4d50a02ebcf9af2a6958c4">AtomToolsFramework::DynamicNodeSlotConfig</a>
 </li>
 <li>m_depth
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item_properties.html#a1d9a8622e8e914e979561ef8fbb5a5e7">AZ::RHI::DrawItemProperties</a>
@@ -384,6 +415,9 @@ $(function() {
 <li>m_depthWrite
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_aux_geom_draw_1_1_aux_geom_dynamic_draw_arguments.html#acb95ea7cb16cd29d551fdbf8c87f9e0d">AZ::RPI::AuxGeomDraw::AuxGeomDynamicDrawArguments</a>
 </li>
+<li>m_description
+: <a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_slot_config.html#a39d3fd8eab095cf8dee53aae64f1c0e0">AtomToolsFramework::DynamicNodeSlotConfig</a>
+</li>
 <li>m_descriptor
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_init_request.html#a54948609ddceda824cffb2bfb6a3d151">AZ::RHI::BufferInitRequest</a>
 , <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_init_request.html#a2c9326ba3dbc13265baac5202b27cf2d">AZ::RHI::ImageInitRequest</a>
@@ -400,17 +434,14 @@ $(function() {
 <li>m_destinationStringOpt
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_prepend_arguments.html#a4f89205f327d75385ac888f27e851a01">AZ::RHI::PrependArguments</a>
 </li>
+<li>m_detailedCapture
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_memory_statistics.html#a6e43bdc6a022b72ccd8b7692e0738b90">AZ::RHI::MemoryStatistics</a>
+</li>
 <li>m_deviceScalingFactorFn
 : <a class="el" href="class_atom_tools_framework_1_1_viewport_interaction_impl.html#ad821683db82ad16e6cef6497ef9534a4">AtomToolsFramework::ViewportInteractionImpl</a>
 </li>
 <li>m_dimension
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_descriptor.html#a845f2aa380fc3d44ca2a4cd7454c91d0">AZ::RHI::ImageDescriptor</a>
-</li>
-<li>m_dimensionFilter
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_slot.html#af7b9794973336a603033c86f94551c18">AZ::RPI::PassSlot</a>
-</li>
-<li>m_dimensions
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain_descriptor.html#aff660e5fc6ad35226493fe94d7c8ed73">AZ::RHI::SwapChainDescriptor</a>
 </li>
 <li>m_direct
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_dispatch_arguments.html#a44920bca6947d6b63730750abf9d60ce">AZ::RHI::DispatchArguments</a>
@@ -421,11 +452,18 @@ $(function() {
 <li>m_disabledRhiBackends
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data.html#a7e435c93fba04965114b65f9e83eb20e">AZ::RPI::ShaderSourceData</a>
 </li>
-<li>m_disableWarnings
-: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html#a421605ec2bd4d5ff0fe2e0505b35f264">AZ::RHI::ShaderCompilerArguments</a>
-</li>
 <li>m_displayName
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_model_material_slot.html#af7fb8054c01c0da778780e636de9d707">AZ::RPI::ModelMaterialSlot</a>
+: <a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_slot_config.html#a4558d912fa924499a5f816d6fd5cb14d">AtomToolsFramework::DynamicNodeSlotConfig</a>
+, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_model_material_slot.html#af7fb8054c01c0da778780e636de9d707">AZ::RPI::ModelMaterialSlot</a>
+</li>
+<li>m_documentFactoryCallback
+: <a class="el" href="struct_atom_tools_framework_1_1_document_type_info.html#af68704e6fbf055c08903c44efa14dc57">AtomToolsFramework::DocumentTypeInfo</a>
+</li>
+<li>m_documentTypeName
+: <a class="el" href="struct_atom_tools_framework_1_1_document_type_info.html#ad6ccf3f532e1656fbeea9148a4edc0fb">AtomToolsFramework::DocumentTypeInfo</a>
+</li>
+<li>m_documentViewFactoryCallback
+: <a class="el" href="struct_atom_tools_framework_1_1_document_type_info.html#a830d8522f5ac79d426677a4ca96e5a54">AtomToolsFramework::DocumentTypeInfo</a>
 </li>
 <li>m_drawFilterMask
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item_properties.html#a653f37430888697f33e90c063f6a3a66">AZ::RHI::DrawItemProperties</a>
@@ -439,14 +477,11 @@ $(function() {
 <li>m_dualSourceBlending
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#aca26fa950738ca39f13ae420c0814e31">AZ::RHI::DeviceFeatures</a>
 </li>
-<li>m_dxcAdditionalFreeArguments
-: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html#a71e4a6ae502c7542a7b5ac7f3d9d70ca">AZ::RHI::ShaderCompilerArguments</a>
+<li>m_dxcArguments
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_build_arguments.html#a930793e1af82bf79f8c4a6c4bda3e679">AZ::RHI::ShaderBuildArguments</a>
 </li>
 <li>m_dynamicBufferPoolSize
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_dynamic_draw_system_descriptor.html#a8fca3e1bc58547d13ae04804b89c9798">AZ::RPI::DynamicDrawSystemDescriptor</a>
-</li>
-<li>m_dynamicOptionCount
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_request.html#a07dd8189b1f3b08824a2325963354677">AZ::RPI::ShaderVariantRequest</a>
 </li>
 <li>m_elementCount
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_view_descriptor.html#a86dc448483d7ba7484a5a8f3e200e18f">AZ::RHI::BufferViewDescriptor</a>
@@ -470,6 +505,9 @@ $(function() {
 </li>
 <li>m_endScope
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_aliased_resource.html#a1a3988f5321d3197ac359e8d7cb28423">AZ::RHI::AliasedResource</a>
+</li>
+<li>m_enum
+: <a class="el" href="struct_a_z_1_1_render_1_1_skinned_mesh_vertex_stream_info.html#a305c220aa3b89406c82eb53fdd819965">AZ::Render::SkinnedMeshVertexStreamInfo</a>
 </li>
 <li>m_enumIsUv
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_definition.html#ada058274fca2e2fd4c59794b5871fd9c">AZ::RPI::MaterialTypeSourceData::PropertyDefinition</a>
@@ -521,12 +559,12 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_image_attachment_desc.html#a5bb65dcba839ea61cfc2a8c6f2f4ac80">AZ::RPI::PassImageAttachmentDesc</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_slot.html#a85a2b6edb617e938866f2ce32be93fc0">AZ::RPI::PassSlot</a>
 </li>
-<li>m_formatFilter
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_slot.html#aadfb27ab1b82a0b1a167ef3fd567e81d">AZ::RPI::PassSlot</a>
-</li>
 <li>m_formatSource
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment.html#a501b9a06a2b0eefe445e3a5c9de469c4">AZ::RPI::PassAttachment</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_desc.html#a5b48077af76028a1e16131f118db7316">AZ::RPI::PassAttachmentDesc</a>
+</li>
+<li>m_fragmentation
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_memory_statistics_1_1_buffer.html#aa6893888e2f3a79f83d8566880279ba5">AZ::RHI::MemoryStatistics::Buffer</a>
 </li>
 <li>m_fragmentFunction
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_descriptor_for_draw.html#a3fba4ae614a09d76ee7862cc4c74fc05">AZ::RHI::PipelineStateDescriptorForDraw</a>
@@ -537,6 +575,9 @@ $(function() {
 <li>m_garbageCollectLatency
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_allocator_1_1_descriptor.html#ae57c09e0b47919a7f4e18215d596a570">AZ::RHI::Allocator::Descriptor</a>
 </li>
+<li>m_generateDebugInfo
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_build_arguments.html#a614caf54b8a02d6fb5c4e6f88e5ea534">AZ::RHI::ShaderBuildArguments</a>
+</li>
 <li>m_generateFullMipChain
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment.html#af716c898defd618b3ccee81b8d07e75b">AZ::RPI::PassAttachment</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_image_attachment_desc.html#acef7bfad5eb29eef892b61434b36bb8f">AZ::RPI::PassImageAttachmentDesc</a>
@@ -544,17 +585,17 @@ $(function() {
 <li>m_geometryShader
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#ad88d0f17025ae12d13f58ac5af4f5e7d">AZ::RHI::DeviceFeatures</a>
 </li>
+<li>m_globalName
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pipeline_global_connection.html#ab00e6dab5fc059794a5c0ff8fb1e14e7">AZ::RPI::PipelineGlobalConnection</a>
+</li>
 <li>m_globalPipelineState
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_dispatch_rays_item.html#ae166ea8ceb1d500400cbdd6b537f2647">AZ::RHI::DispatchRaysItem</a>
 </li>
-<li>m_groups
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_layout.html#a5276ea54ef5211365b670cb396237c00">AZ::RPI::MaterialTypeSourceData::PropertyLayout</a>
+<li>m_groupsOld
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_layout.html#a0a7013784091bbe3d8a356a6c543f940">AZ::RPI::MaterialTypeSourceData::PropertyLayout</a>
 </li>
 <li>m_hardwareQueueClass
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_attachment_statistics_1_1_scope.html#a115921216670ac6dbc5f2ea8382812c6">AZ::RHI::TransientAttachmentStatistics::Scope</a>
-</li>
-<li>m_hasColorDeltas
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html#a32aadc6188b490058a061338e1c8d13f">AZ::RPI::MorphTargetMetaAsset::MorphTarget</a>
 </li>
 <li>m_heapMemoryLevel
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_pool_descriptor.html#a853bf105841219f85a6e321976f988dc">AZ::RHI::BufferPoolDescriptor</a>
@@ -588,7 +629,12 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_pool_descriptor.html#af6b4bb7a2f29840c80fb71c477f0c005">AZ::RHI::BufferPoolDescriptor</a>
 </li>
 <li>m_id
-: <a class="el" href="struct_atom_tools_framework_1_1_dynamic_property_config.html#a306d6b4b0c72f9d68b38c39ad52cfc56">AtomToolsFramework::DynamicPropertyConfig</a>
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html#a0c7a0d08051aec243d9414a6f440851c">AtomToolsFramework::AtomToolsDocument</a>
+, <a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_config.html#a64df9acb14d964ce321b3c4091667c50">AtomToolsFramework::DynamicNodeConfig</a>
+, <a class="el" href="struct_atom_tools_framework_1_1_dynamic_property_config.html#a306d6b4b0c72f9d68b38c39ad52cfc56">AtomToolsFramework::DynamicPropertyConfig</a>
+</li>
+<li>m_ignoreSourceFileChangeToSelf
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html#a6bfafe6608f05822d870ed2659c75dae">AtomToolsFramework::AtomToolsDocument</a>
 </li>
 <li>m_image
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_init_request.html#a06d304b6636a02ce0227c421022f5a95">AZ::RHI::ImageInitRequest</a>
@@ -612,6 +658,7 @@ $(function() {
 </li>
 <li>m_imageDescriptor
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_image_descriptor.html#a589125bf0dcd541979bed1354eeeba0e">AZ::RHI::TransientImageDescriptor</a>
+, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_create_attachment_image_request.html#ac191d5af22e0df5c2d7f768e89df2a3a">AZ::RPI::CreateAttachmentImageRequest</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_image_attachment_desc.html#aae87e66ee150e48d17226efdf3a37db6">AZ::RPI::PassImageAttachmentDesc</a>
 </li>
 <li>m_imageFormat
@@ -622,6 +669,12 @@ $(function() {
 </li>
 <li>m_imageIndex
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_swap_chain_1_1_init_image_request.html#add830d884c185c9cd4c677f500d7bf60">AZ::RHI::SwapChain::InitImageRequest</a>
+</li>
+<li>m_imageName
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_create_attachment_image_request.html#a2d8bc0b3a7aa6e3e878baf2a5f7de044">AZ::RPI::CreateAttachmentImageRequest</a>
+</li>
+<li>m_imagePool
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_create_attachment_image_request.html#ac4f67ddec6771c7df6c50cc3b468782a">AZ::RPI::CreateAttachmentImageRequest</a>
 </li>
 <li>m_images
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_memory_statistics_1_1_pool.html#af7aa285ceb95c2a58bce0a1c78deb00e">AZ::RHI::MemoryStatistics::Pool</a>
@@ -638,6 +691,7 @@ $(function() {
 <li>m_imageViewDescriptor
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_scope_attachment_descriptor.html#a46487bb14eedb20c877fb82a0e073a61">AZ::RHI::ImageScopeAttachmentDescriptor</a>
 , <a class="el" href="struct_a_z_1_1_r_h_i_1_1_unified_scope_attachment_descriptor.html#afcf14f673d8e1ea6445c7198d1511571">AZ::RHI::UnifiedScopeAttachmentDescriptor</a>
+, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_create_attachment_image_request.html#a9d15b3044388bf6bb8163b77323f91b7">AZ::RPI::CreateAttachmentImageRequest</a>
 </li>
 <li>m_imageWidth
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_swap_chain_dimensions.html#a79a1086da868742e4f1f707cbd9179e8">AZ::RHI::SwapChainDimensions</a>
@@ -687,8 +741,14 @@ $(function() {
 <li>m_initialData
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_init_request.html#a6d78781e18ace369b6f685dfd0249ad3">AZ::RHI::BufferInitRequest</a>
 </li>
+<li>m_inputBufferViews
+: <a class="el" href="struct_a_z_1_1_render_1_1_skinned_sub_mesh_properties.html#ae6b7ab83d1eab1426d58641df648faef">AZ::Render::SkinnedSubMeshProperties</a>
+</li>
 <li>m_inputSlotName
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_fallback_connection.html#a68d01377817e1113e01b195417688e73">AZ::RPI::PassFallbackConnection</a>
+</li>
+<li>m_inputSlots
+: <a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_config.html#ad1b1967cd4302df207247d3fca69b300">AtomToolsFramework::DynamicNodeConfig</a>
 </li>
 <li>m_inputStreamLayout
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_descriptor_for_draw.html#ac5449a6da54b0d86f4b304ab2b92d4cc">AZ::RHI::PipelineStateDescriptorForDraw</a>
@@ -710,13 +770,21 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_cullable.html#aae6b17c571262b249ddf4e02eef4f3af">AZ::RPI::Cullable</a>
 </li>
 <li>m_isOptional
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_input_contract_1_1_stream_channel_info.html#a85e040931962257d7bac102351cbef4c">AZ::RPI::ShaderInputContract::StreamChannelInfo</a>
+: <a class="el" href="struct_a_z_1_1_render_1_1_skinned_mesh_vertex_stream_info.html#ab96e9e5ef87e241b9f4b38288e17c384">AZ::Render::SkinnedMeshVertexStreamInfo</a>
+, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_input_contract_1_1_stream_channel_info.html#a85e040931962257d7bac102351cbef4c">AZ::RPI::ShaderInputContract::StreamChannelInfo</a>
 </li>
 <li>m_isParent
 : <a class="el" href="struct_a_z_1_1_render_1_1_pass_entry.html#a69367833b4a4753b3288ba01f84375b1">AZ::Render::PassEntry</a>
 </li>
+<li>m_isPsoCacheFileOperationsNeeded
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#aab022a245e980325eb76357cf981588c">AZ::RHI::DeviceFeatures</a>
+</li>
+<li>m_isSkinningEnabled
+: <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#a55cd0edc29cf51ebc411cd7175317db8">AZ::Render::SkinnedMeshInstance</a>
+</li>
 <li>m_isUniqueName
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_common_buffer_descriptor.html#a560941241065f9f542e94242a9638be4">AZ::RPI::CommonBufferDescriptor</a>
+, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_create_attachment_image_request.html#a3c4ce8466953143776864f2fa18bd5a4">AZ::RPI::CreateAttachmentImageRequest</a>
 </li>
 <li>m_isVisible
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_cullable.html#a82da63bc61a1a0bd313cfdf701baba18">AZ::RPI::Cullable</a>
@@ -773,6 +841,9 @@ $(function() {
 , <a class="el" href="struct_a_z_1_1_r_h_i_1_1_scope_attachment_descriptor.html#a8cc54ff75ff5ab03f5e02972527078e4">AZ::RHI::ScopeAttachmentDescriptor</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_slot.html#a03ded9ea5761a109b8046f55a98ca1ab">AZ::RPI::PassSlot</a>
 </li>
+<li>m_localBinding
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pipeline_global_connection.html#aa934367990f4c2d6d76d696d68a23e62">AZ::RPI::PipelineGlobalConnection</a>
+</li>
 <li>m_localSlot
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_connection.html#a6cb41718a5865bcdcdd8b27b14ee7321">AZ::RPI::PassConnection</a>
 </li>
@@ -785,6 +856,9 @@ $(function() {
 <li>m_logVerbosity
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_graph_compile_request.html#a22f9d043fec4cc1f9c82d90754e748eb">AZ::RHI::FrameGraphCompileRequest</a>
 , <a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_scheduler_compile_request.html#ab86608f2fa564bf4dfe2c60d9392039f">AZ::RHI::FrameSchedulerCompileRequest</a>
+</li>
+<li>m_luminanceFactor
+: <a class="el" href="struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#ab86fde9b0347ccd50dff981520713ab6">AZ::Render::SkyAtmosphereParams</a>
 </li>
 <li>m_mainViewTagName
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html#a2c13a13926c4c623555d4aa498b16ec7">AZ::RPI::RenderPipelineDescriptor</a>
@@ -802,8 +876,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html#a140683f3e52099a45cc805f7601635ac">AZ::RPI::MaterialSourceData</a>
 </li>
 <li>m_materialTypeVersion
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_json_material_property_value_serializer_1_1_load_context.html#a9d255277c99b93cdded48128e135de0a">AZ::RPI::JsonMaterialPropertyValueSerializer::LoadContext</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html#a6c381db13ba006e862ec8f2405d65cda">AZ::RPI::MaterialSourceData</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html#a6c381db13ba006e862ec8f2405d65cda">AZ::RPI::MaterialSourceData</a>
 </li>
 <li>m_maxHeapWastedPercentage
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_heap_memory_hint_parameters.html#a11b94df374bdaf70d6067ba8a71e0162">AZ::RHI::HeapMemoryHintParameters</a>
@@ -846,6 +919,12 @@ $(function() {
 <li>m_meshNodeName
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html#a4987a9a58ff10d10e73c75244ea74ff8">AZ::RPI::MorphTargetMetaAsset::MorphTarget</a>
 </li>
+<li>m_metalAirArguments
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_build_arguments.html#a35f8bd409ee9f1e08d4b51b497e29b88">AZ::RHI::ShaderBuildArguments</a>
+</li>
+<li>m_metalLibArguments
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_build_arguments.html#a453eb2a48e1b967611a5e3e400e6deb7">AZ::RHI::ShaderBuildArguments</a>
+</li>
 <li>m_minConstantBufferViewOffset
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_limits.html#a665dd84fbe52b01334837c677a2d5adf">AZ::RHI::DeviceLimits</a>
 </li>
@@ -854,9 +933,6 @@ $(function() {
 </li>
 <li>m_minPositionDelta
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html#adbe95c6e7ae91fc46c4c6d6a79813839">AZ::RPI::MorphTargetMetaAsset::MorphTarget</a>
-</li>
-<li>m_minusArguments
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data_1_1_supervariant_info.html#a1bcf3a901670fea69a36a3543651cebf">AZ::RPI::ShaderSourceData::SupervariantInfo</a>
 </li>
 <li>m_mipLevels
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_descriptor.html#add510025ec97093f856142951fa679f2">AZ::RHI::ImageDescriptor</a>
@@ -873,13 +949,16 @@ $(function() {
 , <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_view_descriptor.html#a12e9bd006d0a15b66afc972b63234480">AZ::RHI::ImageViewDescriptor</a>
 </li>
 <li>m_mipSlices
-: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_expand_request.html#a0b2f1de52e317b6d84017dae98561500">AZ::RHI::StreamingImageExpandRequest</a>
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_expand_request.html#ae2bc503b3f44e7ae326c933bde2c01ac">AZ::RHI::StreamingImageExpandRequest</a>
 </li>
 <li>m_model
 : <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#ad0be4da5f5b3e2ffa901c7e2ca69515d">AZ::Render::SkinnedMeshInstance</a>
 </li>
 <li>m_morphTargetInstanceMetaData
-: <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#acb27c0e4268014b876db7f3322733947">AZ::Render::SkinnedMeshInstance</a>
+: <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#a9c4f5a76171a1a8b360c0766058ff2e0">AZ::Render::SkinnedMeshInstance</a>
+</li>
+<li>m_morphTargetIntegerEncoding
+: <a class="el" href="struct_a_z_1_1_render_1_1_skinned_sub_mesh_properties.html#a18915986077ce0e2f5e0d2693d41c480">AZ::Render::SkinnedSubMeshProperties</a>
 </li>
 <li>m_morphTargetName
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html#a3230c201f3039fc6da27d38531151f24">AZ::RPI::MorphTargetMetaAsset::MorphTarget</a>
@@ -896,7 +975,8 @@ $(function() {
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pipeline_render_settings.html#a95dfed602b2dfccc55b284e87c3ca90f">AZ::RPI::PipelineRenderSettings</a>
 </li>
 <li>m_name
-: <a class="el" href="struct_a_z_1_1_render_1_1_display_mapper_configuration_descriptor.html#a2ed4fb9bf7967a116105729824eb2d2c">AZ::Render::DisplayMapperConfigurationDescriptor</a>
+: <a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_slot_config.html#a8c883578dd432bd5965b1c7c1fb35d46">AtomToolsFramework::DynamicNodeSlotConfig</a>
+, <a class="el" href="struct_a_z_1_1_render_1_1_display_mapper_configuration_descriptor.html#a2ed4fb9bf7967a116105729824eb2d2c">AZ::Render::DisplayMapperConfigurationDescriptor</a>
 , <a class="el" href="struct_a_z_1_1_render_1_1_lookup_table_asset.html#aba0826572331de81a0ca5da67446f74c">AZ::Render::LookupTableAsset</a>
 , <a class="el" href="struct_a_z_1_1_render_1_1_pass_entry.html#a1eebcb700dadbb2e14f7bc006458de3d">AZ::Render::PassEntry</a>
 , <a class="el" href="struct_a_z_1_1_r_h_i_1_1_memory_statistics_1_1_buffer.html#a759db02e0718db56bd71e9b944c40e49">AZ::RHI::MemoryStatistics::Buffer</a>
@@ -912,7 +992,6 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_static_sampler_descriptor.html#ad7f6b609dd5613de2f031b7d31d2bd73">AZ::RHI::ShaderInputStaticSamplerDescriptor</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_semantic.html#aa1dcccbf11026914ceeedd37b69417c8">AZ::RHI::ShaderSemantic</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_group_definition.html#ae01b71b7cc64058fced4ba511d496c09">AZ::RPI::MaterialTypeSourceData::GroupDefinition</a>
-, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_definition.html#adbeff332268d5d53bd54adcca05fd870">AZ::RPI::MaterialTypeSourceData::PropertyDefinition</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment.html#ab333feb2719244f789126607b6000d1d">AZ::RPI::PassAttachment</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a7693e95c2395fee0ac03f426da212f80">AZ::RPI::PassAttachmentBinding</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_desc.html#a3d69d28157c0fd0a72fe0a462fac238c">AZ::RPI::PassAttachmentDesc</a>
@@ -942,17 +1021,17 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_init_request.html#a0a9528a19547753da863d46b8ad6ce80">AZ::RHI::ImageInitRequest</a>
 , <a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_image_descriptor.html#a09f78d99d6258c9940a361cfecc7e4e1">AZ::RHI::TransientImageDescriptor</a>
 </li>
-<li>m_originalAttachment
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a2aa080193fa37924039fcdf91afe68b3">AZ::RPI::PassAttachmentBinding</a>
-</li>
 <li>m_outputConnections
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_definition.html#a3ccd644b29b22ebd61e6b549c8974ecc">AZ::RPI::MaterialTypeSourceData::PropertyDefinition</a>
 </li>
 <li>m_outputSlotName
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_fallback_connection.html#a44dd82ab8861a14d44261138e601f80e">AZ::RPI::PassFallbackConnection</a>
 </li>
+<li>m_outputSlots
+: <a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_config.html#a8e69d7a7a71fd7f4c682a3fe51098df0">AtomToolsFramework::DynamicNodeConfig</a>
+</li>
 <li>m_outputStreamOffsetsInBytes
-: <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#ad76abdca6fed97c25b6bda3e888d389a">AZ::Render::SkinnedMeshInstance</a>
+: <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#a78d17cb8caf5c180c50c42a466712717">AZ::Render::SkinnedMeshInstance</a>
 </li>
 <li>m_overrideBindFlags
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_view_descriptor.html#a0476c86837fd903e5bf32ba386733c65">AZ::RHI::BufferViewDescriptor</a>
@@ -986,7 +1065,8 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html#a903f49dc26f5bf305c1a539499e41ca4">AZ::RPI::PassTemplate</a>
 </li>
 <li>m_passData
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_descriptor.html#ab466a956022170b2530e7baaf0e586d8">AZ::RPI::PassDescriptor</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html#a69d38bed111584bc3bbd549a30e3473f">AZ::RPI::Pass</a>
+, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_descriptor.html#ab466a956022170b2530e7baaf0e586d8">AZ::RPI::PassDescriptor</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_request.html#ab7a1010a233b383437331dbd5ac439fd">AZ::RPI::PassRequest</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html#ae25e114ff438c2d4497704eb130c6487">AZ::RPI::PassTemplate</a>
 </li>
@@ -1007,11 +1087,14 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_raster_pass_data.html#a502ee06b9e1a48bdd590627addeff816">AZ::RPI::RasterPassData</a>
 </li>
 <li>m_passTemplate
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_descriptor.html#ab633f5c8c84b3f900ccbe7c26532d794">AZ::RPI::PassDescriptor</a>
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_descriptor.html#a7cfa2fa7df12232282e4abf8b67ac97f">AZ::RPI::PassDescriptor</a>
 </li>
 <li>m_path
 : <a class="el" href="struct_a_z_1_1_render_1_1_pass_entry.html#a1320ee43c8faea82c8266e3e1cae5c21">AZ::Render::PassEntry</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment.html#a1de48aa93923b831b55c47604587f3f9">AZ::RPI::PassAttachment</a>
+</li>
+<li>m_pathToSelect
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_asset_browser.html#a0eeceeb36c9da79258434d8bf3d14f65">AtomToolsFramework::AtomToolsAssetBrowser</a>
 </li>
 <li>m_pendingRecreation
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#afb9db5b7215b9017a9e0d2bfa619ff00">AZ::RHI::SwapChain</a>
@@ -1029,8 +1112,8 @@ $(function() {
 <li>m_pipelineStatisticsMask
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_query_pool_descriptor.html#afb10974651fd0e7602a1fd07454c1126">AZ::RHI::QueryPoolDescriptor</a>
 </li>
-<li>m_plusArguments
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data_1_1_supervariant_info.html#aa0faaa205595be3d15625b8de35a64d9">AZ::RPI::ShaderSourceData::SupervariantInfo</a>
+<li>m_planetOrigin
+: <a class="el" href="struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a22b4be3745533f81c65165e395379f80">AZ::Render::SkyAtmosphereParams</a>
 </li>
 <li>m_policy
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_free_list_allocator_1_1_descriptor.html#a024aa6a79d50ac4aca2601e83cd72b5e">AZ::RHI::FreeListAllocator::Descriptor</a>
@@ -1041,11 +1124,23 @@ $(function() {
 <li>m_position
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_environment_cube_map_pass_data.html#aa767ebb8b1c438ae86545591626f707a">AZ::RPI::EnvironmentCubeMapPassData</a>
 </li>
+<li>m_positionHistoryBufferOffsetsInBytes
+: <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#a7f4f681581bc3d36e976f6b25f3e721d">AZ::Render::SkinnedMeshInstance</a>
+</li>
 <li>m_predication
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#a749372ebd6b88864c89b1b60cd4e23f3">AZ::RHI::DeviceFeatures</a>
 </li>
-<li>m_properties
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_layout.html#a41857781a37b515e21ab5df1b801a493">AZ::RPI::MaterialTypeSourceData::PropertyLayout</a>
+<li>m_preprocessorArguments
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_build_arguments.html#a6d9625f30d8d3d16c5f17f45c9329d9c">AZ::RHI::ShaderBuildArguments</a>
+</li>
+<li>m_propertiesOld
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_layout.html#af3000d87c2743b97ba864a0f74e5820c">AZ::RPI::MaterialTypeSourceData::PropertyLayout</a>
+</li>
+<li>m_propertyGroups
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_layout.html#adc7078a7220e0975c0c69319b4076999">AZ::RPI::MaterialTypeSourceData::PropertyLayout</a>
+</li>
+<li>m_propertySlots
+: <a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_config.html#aac2f3c3ab0461f0584101a3f4d1ca0a9">AtomToolsFramework::DynamicNodeConfig</a>
 </li>
 <li>m_queryTypesMask
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#afa2e6ed1084c4024d4a4c74e8796b6d4">AZ::RHI::DeviceFeatures</a>
@@ -1104,9 +1199,6 @@ $(function() {
 <li>m_renderTargetSubpassInputSupport
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#a312a4c8aa2e47523a8e353db6f33f1ca">AZ::RHI::DeviceFeatures</a>
 </li>
-<li>m_requestCount
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_request.html#a2eed8b52969858fb74e37cbeb93023e8">AZ::RPI::ShaderVariantRequest</a>
-</li>
 <li>m_reservedMemory
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_attachment_statistics.html#a06db35b058e33479760eb922137c8c28">AZ::RHI::TransientAttachmentStatistics</a>
 </li>
@@ -1153,6 +1245,9 @@ $(function() {
 <li>m_samplerTable
 : <a class="el" href="class_a_z_1_1_d_x12_1_1_root_parameter_binding.html#a0445c1fe89d41c5013c682ec729652f5">AZ::DX12::RootParameterBinding</a>
 </li>
+<li>m_savePathNormalized
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html#af04027ea1e2842b560f71ca8189ba8ae">AtomToolsFramework::AtomToolsDocument</a>
+</li>
 <li>m_scissors
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item.html#af29e521cd5d5f55a250f4f37e47019b0">AZ::RHI::DrawItem</a>
 </li>
@@ -1163,11 +1258,11 @@ $(function() {
 <li>m_scopeCount
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_graph_execute_group_1_1_init_merged_request.html#ae06a44ff5585395c27a62e77e072c33a">AZ::RHI::FrameGraphExecuteGroup::InitMergedRequest</a>
 </li>
+<li>m_scopeEntries
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_graph_execute_group_1_1_init_merged_request.html#a886735b1493cad72287c45e7c3273e59">AZ::RHI::FrameGraphExecuteGroup::InitMergedRequest</a>
+</li>
 <li>m_scopeId
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_graph_execute_group_1_1_init_request.html#ae97c358c508181ab180a416fc1a3bd5c">AZ::RHI::FrameGraphExecuteGroup::InitRequest</a>
-</li>
-<li>m_scopeIds
-: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_graph_execute_group_1_1_init_merged_request.html#a35ca42798f37e8e078c93040324f43df">AZ::RHI::FrameGraphExecuteGroup::InitMergedRequest</a>
 </li>
 <li>m_scopeOffsetMax
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_attachment_statistics_1_1_attachment.html#aa6d988d9dd9ee783d9bfe2165ec380a4">AZ::RHI::TransientAttachmentStatistics::Attachment</a>
@@ -1184,8 +1279,9 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_stream_channel_descriptor.html#ae1648c27451dca1df4e6f4d4715cfc88">AZ::RHI::StreamChannelDescriptor</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_model_lod_1_1_stream_buffer_info.html#a286e332eaee86561dd2e4b0236f4e08d">AZ::RPI::ModelLod::StreamBufferInfo</a>
 </li>
-<li>m_settingFlags
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment.html#a74ae61bbdd7d44a70f4bfd9760b9b099">AZ::RPI::PassAttachment</a>
+<li>m_settings
+: <a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_config.html#abc57f1e83bbf42a060b6727a6e0d8dad">AtomToolsFramework::DynamicNodeConfig</a>
+, <a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_slot_config.html#ace100bdcb7616a0451b619a96df04309">AtomToolsFramework::DynamicNodeSlotConfig</a>
 </li>
 <li>m_shaderAsset
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_fullscreen_triangle_pass_data.html#a436813914bd4f4185f2b0541f46db2ec">AZ::RPI::FullscreenTrianglePassData</a>
@@ -1195,9 +1291,6 @@ $(function() {
 </li>
 <li>m_shaderFilePath
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_shader_variant_reference_data.html#a993584b70c7bafa557bc9f442b9965d6">AZ::RPI::MaterialTypeSourceData::ShaderVariantReferenceData</a>
-</li>
-<li>m_shaderId
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_request.html#abf6484bb47601211151a5ba6bfb777b9">AZ::RPI::ShaderVariantRequest</a>
 </li>
 <li>m_shaderImageDimensionsName
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_slot.html#ae4aeed80d5a7e1c2adda385a1ddca2cb">AZ::RPI::PassSlot</a>
@@ -1217,9 +1310,6 @@ $(function() {
 <li>m_shaderInputName
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a4fa18b2f27e34b1a7db8941e515624cf">AZ::RPI::PassAttachmentBinding</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_slot.html#a03b745efc627b6f6410972a85ff88ca5">AZ::RPI::PassSlot</a>
-</li>
-<li>m_shaderName
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_request.html#a95f2a0eec1fbb3823582d08d7fc07685">AZ::RPI::ShaderVariantRequest</a>
 </li>
 <li>m_shaderOptionValues
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_shader_variant_reference_data.html#aa22fa8ecb0bcfd92bfc3a409d30c7b92">AZ::RPI::MaterialTypeSourceData::ShaderVariantReferenceData</a>
@@ -1248,12 +1338,6 @@ $(function() {
 <li>m_shaderTag
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_shader_variant_reference_data.html#a8c43563a377f514955a53d07f22e401a">AZ::RPI::MaterialTypeSourceData::ShaderVariantReferenceData</a>
 </li>
-<li>m_shaderVariantId
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_request.html#ad73115365fcdce8412e4633b26288a01">AZ::RPI::ShaderVariantRequest</a>
-</li>
-<li>m_shaderVariantStableId
-: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_request.html#afaf8c6760ad661aa5b77a274bcd589ce">AZ::RPI::ShaderVariantRequest</a>
-</li>
 <li>m_sharedQueueMask
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_descriptor.html#a09fe90191487ba7b14ddcbf9f64ec57d">AZ::RHI::BufferDescriptor</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_pool_descriptor.html#ac7b659c87d3b7c5ed04bfdad38eb9cbe">AZ::RHI::BufferPoolDescriptor</a>
@@ -1278,6 +1362,9 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment.html#a61258fdad30164449d154a0ee9eb773d">AZ::RPI::PassAttachment</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_desc.html#ab8c3a6d95e7fbeb24b1ffdc7a1729a7b">AZ::RPI::PassAttachmentDesc</a>
 </li>
+<li>m_skinInfluenceCountPerVertex
+: <a class="el" href="struct_a_z_1_1_render_1_1_skinned_sub_mesh_properties.html#aee69d4f3adc03222dea613d78500ed4e">AZ::Render::SkinnedSubMeshProperties</a>
+</li>
 <li>m_slot
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_indirect_buffer_view_arguments.html#a785b2459fe25cb53f86c2f71bb02b689">AZ::RHI::IndirectBufferViewArguments</a>
 </li>
@@ -1299,6 +1386,9 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_stream_request.html#a9e8f7517badee18580084d5d81ba4c5a">AZ::RHI::BufferStreamRequest</a>
 , <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_update_request.html#a969171cda9d3b22bc5938ad5ac885f6f">AZ::RHI::ImageUpdateRequest</a>
 </li>
+<li>m_sourceDependencies
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html#a58b728a21151de99c87210db0eaaf90a">AtomToolsFramework::AtomToolsDocument</a>
+</li>
 <li>m_sourceFilePath
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_functor_source_data_1_1_asset_dependency.html#ad4f3ca8098d74f899c6f3545b8edeee5">AZ::RPI::MaterialFunctorSourceData::AssetDependency</a>
 </li>
@@ -1309,11 +1399,17 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_platform_interface_1_1_root_constants_info.html#a0327ce42f947efc3c7ac77c1ea8db478">AZ::RHI::ShaderPlatformInterface::RootConstantsInfo</a>
 , <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_resource_group_binding_info.html#a2bed9b165ecbec71ba2c19da8da346ea">AZ::RHI::ShaderResourceGroupBindingInfo</a>
 </li>
+<li>m_spirvCrossArguments
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_build_arguments.html#a88dc816beb223ac3d9a5516bd695181e">AZ::RHI::ShaderBuildArguments</a>
+</li>
 <li>m_stableId
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_model_material_slot.html#a9407892ab81ab2cb60142f34e8134dff">AZ::RPI::ModelMaterialSlot</a>
 </li>
 <li>m_startIndex
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html#a0fc0a55ecf0758f7edb5eda8d5bf0240">AZ::RPI::MorphTargetMetaAsset::MorphTarget</a>
+</li>
+<li>m_staticBufferInfo
+: <a class="el" href="struct_a_z_1_1_render_1_1_skinned_sub_mesh_properties.html#ab5a99b5818ad24ed873e2e420e335d39">AZ::Render::SkinnedSubMeshProperties</a>
 </li>
 <li>m_statisticsFlags
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_graph_compile_request.html#a7d1e6191cdd3415f13a50275d97b7ace">AZ::RHI::FrameGraphCompileRequest</a>
@@ -1340,7 +1436,7 @@ $(function() {
 </li>
 <li>m_streamBufferViews
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item.html#aae54b5e30e3cc84c6586d8f2aea48c81">AZ::RHI::DrawItem</a>
-, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_packet_builder_1_1_draw_request.html#a5dbf2737e5e774b5b0cb3394395efac8">AZ::RHI::DrawPacketBuilder::DrawRequest</a>
+, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_packet_builder_1_1_draw_request.html#a4004b804b482425526a3f898af5f9b48">AZ::RHI::DrawPacketBuilder::DrawRequest</a>
 </li>
 <li>m_stride
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_model_lod_1_1_stream_buffer_info.html#a7e216c619d4a4719a593059ff54a1b96">AZ::RPI::ModelLod::StreamBufferInfo</a>
@@ -1352,6 +1448,9 @@ $(function() {
 <li>m_stripAlpha
 : <a class="el" href="struct_a_z_1_1_utils_1_1_png_file_1_1_load_settings.html#a097c1b10c9b7b3d360956d2fc40350ae">AZ::Utils::PngFile::LoadSettings</a>
 , <a class="el" href="struct_a_z_1_1_utils_1_1_png_file_1_1_save_settings.html#a23d51e8bdd91699d835c2252b04931e3">AZ::Utils::PngFile::SaveSettings</a>
+</li>
+<li>m_submitCount
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_graph_execute_group_1_1_init_request.html#aa68830d371f0802c9dbb75a63a8bdd5b">AZ::RHI::FrameGraphExecuteGroup::InitRequest</a>
 </li>
 <li>m_subpassCount
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_render_attachment_layout.html#aef6dbfba28b11a72d3ddaf2ed7e8f137">AZ::RHI::RenderAttachmentLayout</a>
@@ -1372,13 +1471,28 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_mip_slice.html#a54fb5a913e866e11d5c7da5e6c7246e3">AZ::RHI::StreamingImageMipSlice</a>
 </li>
 <li>m_subresources
-: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_mip_slice.html#a28c9e372bbfb5600919397cee108935d">AZ::RHI::StreamingImageMipSlice</a>
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_mip_slice.html#a697cdf47d8840cd515126d671e50d467">AZ::RHI::StreamingImageMipSlice</a>
+</li>
+<li>m_subTitle
+: <a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_config.html#a91d557fd485446bdfbf06b04e1914820">AtomToolsFramework::DynamicNodeConfig</a>
 </li>
 <li>m_supervariants
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data.html#abaf4f8c281925facdc98fdf0458b6ab0">AZ::RPI::ShaderSourceData</a>
 </li>
+<li>m_supportedAssetTypesToCreate
+: <a class="el" href="struct_atom_tools_framework_1_1_document_type_info.html#af1430962f1dc183a7a4da4d567953ad2">AtomToolsFramework::DocumentTypeInfo</a>
+</li>
+<li>m_supportedDataTypes
+: <a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_slot_config.html#a77b2e24ee1341f1f97779b52f42e3a40">AtomToolsFramework::DynamicNodeSlotConfig</a>
+</li>
+<li>m_supportedExtensionsToCreate
+: <a class="el" href="struct_atom_tools_framework_1_1_document_type_info.html#a37db56f3606dcbd70304625f9e75e08f">AtomToolsFramework::DocumentTypeInfo</a>
+</li>
 <li>m_supportedQueueMask
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_image_descriptor.html#a12fe1496de3bc7398d3fa888e8630341">AZ::RHI::TransientImageDescriptor</a>
+</li>
+<li>m_supportsEditingOnNode
+: <a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_slot_config.html#a27a32b151c08e3aaa2c91715034e3bb3">AtomToolsFramework::DynamicNodeSlotConfig</a>
 </li>
 <li>m_systemAttachmentImagePoolSize
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_image_system_descriptor.html#a652ab5655f7bd10b10ec7d166e1d4401">AZ::RPI::ImageSystemDescriptor</a>
@@ -1387,7 +1501,7 @@ $(function() {
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_image_system_descriptor.html#a67fc6911f34ea2ae4762861a0805efdd">AZ::RPI::ImageSystemDescriptor</a>
 </li>
 <li>m_tailMipSlices
-: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_init_request.html#a1716117d5727798640ccdac9cb14a28c">AZ::RHI::StreamingImageInitRequest</a>
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_streaming_image_init_request.html#a09aa3b765d6913572fb70077acf6cde0">AZ::RHI::StreamingImageInitRequest</a>
 </li>
 <li>m_templateName
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_request.html#a7c7bf7ca8fedb00f2d907f469b2ba20f">AZ::RPI::PassRequest</a>
@@ -1398,8 +1512,17 @@ $(function() {
 <li>m_tessellationShader
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#a8a7eccbfdbb133f5ef1bf96cb38a24c7">AZ::RHI::DeviceFeatures</a>
 </li>
+<li>m_tiledResource
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#a0dc6777592100b50d483dfd17c952f5e">AZ::RHI::DeviceFeatures</a>
+</li>
 <li>m_timestampEnabled
 : <a class="el" href="struct_a_z_1_1_render_1_1_pass_entry.html#a74362b87d275c89798af8ed6265fff0e">AZ::Render::PassEntry</a>
+</li>
+<li>m_title
+: <a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_config.html#a52f74f7eeed4e9d7e6523b4bfead4c76">AtomToolsFramework::DynamicNodeConfig</a>
+</li>
+<li>m_titlePaletteName
+: <a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_config.html#a4238b233c4d6d20f289e0f5317d52364">AtomToolsFramework::DynamicNodeConfig</a>
 </li>
 <li>m_totalSizeInBytes
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_platform_interface_1_1_root_constants_info.html#a51f551ebc3f75b8bfa8b1c571f507b8b">AZ::RHI::ShaderPlatformInterface::RootConstantsInfo</a>
@@ -1451,11 +1574,14 @@ $(function() {
 <li>m_vertexBufferArgs
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_indirect_command_descriptor.html#a516086f54b57a687800b25ae661a7b1f">AZ::RHI::IndirectCommandDescriptor</a>
 </li>
+<li>m_vertexCount
+: <a class="el" href="struct_a_z_1_1_render_1_1_skinned_sub_mesh_properties.html#a61e775ea45b1706d31f4a3ebdacb7335">AZ::Render::SkinnedSubMeshProperties</a>
+</li>
 <li>m_vertexFunction
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_descriptor_for_draw.html#a8d4b104b7e67e8115892dd8c13103b6d">AZ::RHI::PipelineStateDescriptorForDraw</a>
 </li>
-<li>m_verticalSyncInterval
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain_descriptor.html#a02517b7857c54e76d8b78b45d7e01df0">AZ::RHI::SwapChainDescriptor</a>
+<li>m_vertexOffsetsFromStreamStartInBytes
+: <a class="el" href="struct_a_z_1_1_render_1_1_skinned_sub_mesh_properties.html#a7f2dc7415a8fc9aca9c05b5962d23ffc">AZ::Render::SkinnedSubMeshProperties</a>
 </li>
 <li>m_verts
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_aux_geom_draw_1_1_aux_geom_dynamic_draw_arguments.html#a8c4b1a623f9a7602d6fa16352c58216f">AZ::RPI::AuxGeomDraw::AuxGeomDynamicDrawArguments</a>
@@ -1479,11 +1605,17 @@ $(function() {
 <li>m_width
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_dispatch_rays_item.html#af4bfaf00ef755bb382188eda6780ab05">AZ::RHI::DispatchRaysItem</a>
 </li>
-<li>m_window
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain_descriptor.html#afa7dabbf25c4ba303c17b5d2a2a612cd">AZ::RHI::SwapChainDescriptor</a>
-</li>
 <li>m_wrinkleMask
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html#a761daa5a2c75efd875b5eb18a9f1bb93">AZ::RPI::MorphTargetMetaAsset::MorphTarget</a>
+</li>
+<li>m_x
+: <a class="el" href="class_atom_tools_framework_1_1_viewport_input_behavior.html#a2bdc131ff4b566b11fc429e639179efd">AtomToolsFramework::ViewportInputBehavior</a>
+</li>
+<li>m_y
+: <a class="el" href="class_atom_tools_framework_1_1_viewport_input_behavior.html#a02e174059be4e41c4a825376887622de">AtomToolsFramework::ViewportInputBehavior</a>
+</li>
+<li>m_z
+: <a class="el" href="class_atom_tools_framework_1_1_viewport_input_behavior.html#a9c3f0039818e8023a561e2fdfa04252f">AtomToolsFramework::ViewportInputBehavior</a>
 </li>
 <li>MaxUnboundedArrays
 : <a class="el" href="class_a_z_1_1_d_x12_1_1_root_parameter_binding.html#a52132cc86854cf674e8dce8cf27a5a02">AZ::DX12::RootParameterBinding</a>
@@ -1495,7 +1627,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:31 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:25 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

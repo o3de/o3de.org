@@ -457,7 +457,7 @@ All paths should be platform agnostic and use `/` path separators. When using re
 
 Do | Don't
 :--| :-----
-Open the project's `bootstrap.cfg` file. | Open the project's bootstrap.cfg file.
+Open the project's `project.json` file. | Open the project's project.json file.
 ... in the `/<project>/levels` directory. | ... in the /\<project\>/levels directory.
 Open the `/<project>/game.cfg` file. | Open the /\<project\>/game.cfg file.
 

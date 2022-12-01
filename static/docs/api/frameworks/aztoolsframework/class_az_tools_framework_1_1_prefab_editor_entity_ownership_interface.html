@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -57,39 +57,47 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a93326c6418c331e105302168baa1961f"><td class="memItemLeft" align="right" valign="top"><a id="a93326c6418c331e105302168baa1961f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html">PrefabEditorEntityOwnershipInterface</a>,&quot;{38E764BA-A089-49F3-848F-46018822CE2E}&quot;)</td></tr>
-<tr class="separator:a93326c6418c331e105302168baa1961f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88df028b3b824a8e5adbb4a740f18358"><td class="memItemLeft" align="right" valign="top"><a id="a88df028b3b824a8e5adbb4a740f18358"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html">PrefabEditorEntityOwnershipInterface</a>, &quot;{38E764BA-A089-49F3-848F-46018822CE2E}&quot;)</td></tr>
+<tr class="separator:a88df028b3b824a8e5adbb4a740f18358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93338630ebc3c1626ab68616fbda14be"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a93338630ebc3c1626ab68616fbda14be">IsRootPrefabAssigned</a> () const =0</td></tr>
+<tr class="separator:a93338630ebc3c1626ab68616fbda14be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe3bc9cdc98aa445e5781df46838440"><td class="memItemLeft" align="right" valign="top"><a id="a3fe3bc9cdc98aa445e5781df46838440"></a>
+virtual Prefab::InstanceOptionalReference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a3fe3bc9cdc98aa445e5781df46838440">GetRootPrefabInstance</a> ()=0</td></tr>
+<tr class="memdesc:a3fe3bc9cdc98aa445e5781df46838440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an optional reference to the root prefab instance. <br /></td></tr>
+<tr class="separator:a3fe3bc9cdc98aa445e5781df46838440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7588b8e1a8982aeeee5a151e10ca1217"><td class="memItemLeft" align="right" valign="top"><a id="a7588b8e1a8982aeeee5a151e10ca1217"></a>
+virtual Prefab::TemplateId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a7588b8e1a8982aeeee5a151e10ca1217">GetRootPrefabTemplateId</a> ()=0</td></tr>
+<tr class="memdesc:a7588b8e1a8982aeeee5a151e10ca1217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the template id for the root prefab instance. <br /></td></tr>
+<tr class="separator:a7588b8e1a8982aeeee5a151e10ca1217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a762c05b1d54695be7b8cdf4406c16981"><td class="memItemLeft" align="right" valign="top"><a id="a762c05b1d54695be7b8cdf4406c16981"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateNewLevelPrefab</b> (AZStd::string_view filename, const AZStd::string &amp;templateFilename)=0</td></tr>
+<tr class="separator:a762c05b1d54695be7b8cdf4406c16981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadaa9719260499631f0400d5791a1464"><td class="memItemLeft" align="right" valign="top">virtual Prefab::InstanceOptionalReference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#aadaa9719260499631f0400d5791a1464">CreatePrefab</a> (const AZStd::vector&lt; AZ::Entity * &gt; &amp;entities, AZStd::vector&lt; AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Prefab::Instance</a> &gt;&gt; &amp;&amp;nestedPrefabInstances, AZ::IO::PathView filePath, Prefab::InstanceOptionalReference instanceToParentUnder=AZStd::nullopt)=0</td></tr>
 <tr class="separator:aadaa9719260499631f0400d5791a1464"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a486324c837b3a00c2ab4242b83975d1b"><td class="memItemLeft" align="right" valign="top">virtual Prefab::InstanceOptionalReference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a486324c837b3a00c2ab4242b83975d1b">InstantiatePrefab</a> (AZ::IO::PathView filePath, Prefab::InstanceOptionalReference instanceToParentUnder=AZStd::nullopt)=0</td></tr>
 <tr class="separator:a486324c837b3a00c2ab4242b83975d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fe3bc9cdc98aa445e5781df46838440"><td class="memItemLeft" align="right" valign="top"><a id="a3fe3bc9cdc98aa445e5781df46838440"></a>
-virtual Prefab::InstanceOptionalReference&#160;</td><td class="memItemRight" valign="bottom"><b>GetRootPrefabInstance</b> ()=0</td></tr>
-<tr class="separator:a3fe3bc9cdc98aa445e5781df46838440"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7588b8e1a8982aeeee5a151e10ca1217"><td class="memItemLeft" align="right" valign="top"><a id="a7588b8e1a8982aeeee5a151e10ca1217"></a>
-virtual Prefab::TemplateId&#160;</td><td class="memItemRight" valign="bottom"><b>GetRootPrefabTemplateId</b> ()=0</td></tr>
-<tr class="separator:a7588b8e1a8982aeeee5a151e10ca1217"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d3f49cbca95b2d84e691aa092953a4e"><td class="memItemLeft" align="right" valign="top">virtual const AZStd::vector&lt; AZ::Data::Asset&lt; AZ::Data::AssetData &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a0d3f49cbca95b2d84e691aa092953a4e">GetPlayInEditorAssetData</a> ()=0</td></tr>
-<tr class="separator:a0d3f49cbca95b2d84e691aa092953a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade81000223eff6f52d40be239bf9ad68"><td class="memItemLeft" align="right" valign="top"><a id="ade81000223eff6f52d40be239bf9ad68"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadFromStream</b> (AZ::IO::GenericStream &amp;stream, AZStd::string_view filename)=0</td></tr>
-<tr class="separator:ade81000223eff6f52d40be239bf9ad68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0be9eaed0a51c72eeb93ccdf6834a91"><td class="memItemLeft" align="right" valign="top"><a id="ab0be9eaed0a51c72eeb93ccdf6834a91"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveToStream</b> (AZ::IO::GenericStream &amp;stream, AZStd::string_view filename)=0</td></tr>
-<tr class="separator:ab0be9eaed0a51c72eeb93ccdf6834a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3537097d758e07475771f01fe13eab35"><td class="memItemLeft" align="right" valign="top"><a id="a3537097d758e07475771f01fe13eab35"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartPlayInEditor</b> ()=0</td></tr>
 <tr class="separator:a3537097d758e07475771f01fe13eab35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfb027db9615e429fa6a1edddea1dfff"><td class="memItemLeft" align="right" valign="top"><a id="adfb027db9615e429fa6a1edddea1dfff"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StopPlayInEditor</b> ()=0</td></tr>
 <tr class="separator:adfb027db9615e429fa6a1edddea1dfff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a762c05b1d54695be7b8cdf4406c16981"><td class="memItemLeft" align="right" valign="top"><a id="a762c05b1d54695be7b8cdf4406c16981"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateNewLevelPrefab</b> (AZStd::string_view filename, const AZStd::string &amp;templateFilename)=0</td></tr>
-<tr class="separator:a762c05b1d54695be7b8cdf4406c16981"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93338630ebc3c1626ab68616fbda14be"><td class="memItemLeft" align="right" valign="top"><a id="a93338630ebc3c1626ab68616fbda14be"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRootPrefabAssigned</b> () const =0</td></tr>
-<tr class="separator:a93338630ebc3c1626ab68616fbda14be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5ba6ca736deeeb6e04eb6b47866935"><td class="memItemLeft" align="right" valign="top">virtual const AzFramework::InMemorySpawnableAssetContainer::SpawnableAssets &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a3c5ba6ca736deeeb6e04eb6b47866935">GetPlayInEditorAssetData</a> () const =0</td></tr>
+<tr class="separator:a3c5ba6ca736deeeb6e04eb6b47866935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade81000223eff6f52d40be239bf9ad68"><td class="memItemLeft" align="right" valign="top"><a id="ade81000223eff6f52d40be239bf9ad68"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadFromStream</b> (AZ::IO::GenericStream &amp;stream, AZStd::string_view filename)=0</td></tr>
+<tr class="separator:ade81000223eff6f52d40be239bf9ad68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0be9eaed0a51c72eeb93ccdf6834a91"><td class="memItemLeft" align="right" valign="top"><a id="ab0be9eaed0a51c72eeb93ccdf6834a91"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveToStream</b> (AZ::IO::GenericStream &amp;stream, AZStd::string_view filename)=0</td></tr>
+<tr class="separator:ab0be9eaed0a51c72eeb93ccdf6834a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a792934ff9bc835181edb9e6d546bf"><td class="memItemLeft" align="right" valign="top">virtual Prefab::InstanceOptionalReference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a94a792934ff9bc835181edb9e6d546bf">GetInstanceReferenceFromRootAliasPath</a> (Prefab::RootAliasPath rootAliasPath) const =0</td></tr>
+<tr class="separator:a94a792934ff9bc835181edb9e6d546bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631dfff0f7224b9c9f0f064c80bd78ee"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a631dfff0f7224b9c9f0f064c80bd78ee">GetInstancesInRootAliasPath</a> (Prefab::RootAliasPath rootAliasPath, const AZStd::function&lt; bool(const Prefab::InstanceOptionalReference)&gt; &amp;callback) const =0</td></tr>
+<tr class="separator:a631dfff0f7224b9c9f0f064c80bd78ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ea36225f5f965a469a6e415fdabbcab"><td class="memItemLeft" align="right" valign="top"><a id="a6ea36225f5f965a469a6e415fdabbcab"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterGameModeEventHandler</b> (AZ::Event&lt; GameModeState &gt;::Handler &amp;handler)=0</td></tr>
+<tr class="separator:a6ea36225f5f965a469a6e415fdabbcab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aadaa9719260499631f0400d5791a1464"></a>
@@ -137,12 +145,21 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRootPrefabA
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates a prefab instance with the provided entities and nestedPrefabInstances. /param entities The entities to put under the new prefab. /param nestedPrefabInstances The nested prefab instances to put under the new prefab. /param filePath The filepath corresponding to the prefab file to be created. /param instanceToParentUnder The instance the newly created prefab instance is parented under. /return The optional reference to the prefab created. </p>
+<p>Creates a prefab instance with the provided entities and nestedPrefabInstances. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entities</td><td>The entities to put under the new prefab. </td></tr>
+    <tr><td class="paramname">nestedPrefabInstances</td><td>The nested prefab instances to put under the new prefab. </td></tr>
+    <tr><td class="paramname">filePath</td><td>The filepath corresponding to the prefab file to be created. </td></tr>
+    <tr><td class="paramname">instanceToParentUnder</td><td>The instance the newly created prefab instance is parented under. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The optional reference to the prefab created. </dd></dl>
 
 </div>
 </div>
-<a id="a0d3f49cbca95b2d84e691aa092953a4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d3f49cbca95b2d84e691aa092953a4e">&#9670;&nbsp;</a></span>GetPlayInEditorAssetData()</h2>
+<a id="a94a792934ff9bc835181edb9e6d546bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a792934ff9bc835181edb9e6d546bf">&#9670;&nbsp;</a></span>GetInstanceReferenceFromRootAliasPath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,10 +168,11 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRootPrefabA
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const AZStd::vector&lt;AZ::Data::Asset&lt;AZ::Data::AssetData&gt; &gt;&amp; AzToolsFramework::PrefabEditorEntityOwnershipInterface::GetPlayInEditorAssetData </td>
+          <td class="memname">virtual Prefab::InstanceOptionalReference AzToolsFramework::PrefabEditorEntityOwnershipInterface::GetInstanceReferenceFromRootAliasPath </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype">Prefab::RootAliasPath&#160;</td>
+          <td class="paramname"><em>rootAliasPath</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -163,7 +181,87 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRootPrefabA
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get all Assets generated by Prefab processing when entering Play-In Editor mode (Ctrl+G) /return The vector of Assets generated by Prefab processing </p>
+<p>Returns the reference to the instance corresponding to the RootAliasPath provided. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rootAliasPath</td><td>The RootAliasPath to be queried. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the instance if valid, AZStd::nullopt otherwise. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_service.html#aa6ca643848a191a1a8769826b3066720">AzToolsFramework::PrefabEditorEntityOwnershipService</a>.</p>
+
+</div>
+</div>
+<a id="a631dfff0f7224b9c9f0f064c80bd78ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a631dfff0f7224b9c9f0f064c80bd78ee">&#9670;&nbsp;</a></span>GetInstancesInRootAliasPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AzToolsFramework::PrefabEditorEntityOwnershipInterface::GetInstancesInRootAliasPath </td>
+          <td>(</td>
+          <td class="paramtype">Prefab::RootAliasPath&#160;</td>
+          <td class="paramname"><em>rootAliasPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::function&lt; bool(const Prefab::InstanceOptionalReference)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Allows to iterate through all instances referenced in the path, from the root down. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rootAliasPath</td><td>The RootAliasPath to iterate through. If invalid, callback will not be called. </td></tr>
+    <tr><td class="paramname">callback</td><td>The function to call on each instance. If it returns true, it prevents the rest of the path from being called. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the iteration was halted by a callback returning true, false otherwise. Also returns false if the path is invalid. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_service.html#a3c0cac362dbce211f3916cb52ad2c666">AzToolsFramework::PrefabEditorEntityOwnershipService</a>.</p>
+
+</div>
+</div>
+<a id="a3c5ba6ca736deeeb6e04eb6b47866935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c5ba6ca736deeeb6e04eb6b47866935">&#9670;&nbsp;</a></span>GetPlayInEditorAssetData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const AzFramework::InMemorySpawnableAssetContainer::SpawnableAssets&amp; AzToolsFramework::PrefabEditorEntityOwnershipInterface::GetPlayInEditorAssetData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get all Assets generated by Prefab processing when entering Play-In Editor mode (Ctrl+G) </p><dl class="section return"><dt>Returns</dt><dd>The vector of Assets generated by Prefab processing </dd></dl>
 
 </div>
 </div>
@@ -200,7 +298,42 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRootPrefabA
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Instantiate the prefab file provided. /param filePath The filepath for the prefab file the instance should be created from. /param instanceToParentUnder The instance the newly instantiated prefab instance is parented under. /return The optional reference to the prefab instance. </p>
+<p>Instantiate the prefab file provided. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>The filepath for the prefab file the instance should be created from. </td></tr>
+    <tr><td class="paramname">instanceToParentUnder</td><td>The instance the newly instantiated prefab instance is parented under. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The optional reference to the prefab instance. </dd></dl>
+
+</div>
+</div>
+<a id="a93338630ebc3c1626ab68616fbda14be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93338630ebc3c1626ab68616fbda14be">&#9670;&nbsp;</a></span>IsRootPrefabAssigned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AzToolsFramework::PrefabEditorEntityOwnershipInterface::IsRootPrefabAssigned </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns whether the system has a root instance assigned. </p><dl class="section return"><dt>Returns</dt><dd>True if a root prefab is assigned, false otherwise. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_service.html#a7d5a92fc41aac8bc01c432a9ee2c3f48">AzToolsFramework::PrefabEditorEntityOwnershipService</a>.</p>
 
 </div>
 </div>
@@ -210,7 +343,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRootPrefabA
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:37 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:31 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -4,43 +4,58 @@
 {{ $logo   := site.Params.logos.navbar }}
 {{ $menu   := site.Menus.main }}
 {{ $isDocs := in .RelPermalink "/docs/" }}
+{{ $isPreview := in site.BaseURL "deploy-preview" }}
+{{ $isRelease := in site.BaseURL "www.o3de.org" }}
 
 {{ if $isDocs }}
-<div class="main-navbar navbar navbar-dark navbar-docs sticky-top" role="navigation" aria-label="main navigation">
-  <div class="container-fluid d-flex flex-row justify-content-between">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="{{ $docs }}">
-          {{ if $logo }}
-          {{ $url := printf "img/logos/%s" $logo | relURL }}
-            <img src="{{ $url }}" class="navbar-logo">
-          {{ else }}
-            {{ $title }}
-          {{ end }}
-          <span class="subTitle">LEARN</span>
-        </a>
-      </div>
-
-      <div class="d-flex flex-row align-items-center navbar-docs">
-        <div id="main-nav" class="navbar-primary">
-          {{ partial "docs-menu-loop.html" . }}
+<div class="sticky-top" id="docs-banners">
+  <div class="main-navbar navbar navbar-dark navbar-docs" role="navigation" aria-label="main navigation">
+    <div class="container-fluid d-flex flex-row justify-content-between">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="{{ $docs }}">
+            {{ if $logo }}
+            {{ $url := printf "img/logos/%s" $logo | relURL }}
+                <img src="{{ $url }}" class="navbar-logo">
+            {{ else }}
+                {{ $title }}
+            {{ end }}
+            <span class="subTitle">LEARN</span>
+            </a>
         </div>
 
-        <button class="navbar-toggler secondary-toggler" type="button" data-toggle="collapse" data-target="#secondary-nav" aria-controls="secondary-nav" aria-expanded="false" aria-label="Toggle secondary navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="d-flex flex-row align-items-center navbar-docs">
+            <div id="main-nav" class="navbar-primary">
+            {{ partial "docs-menu-loop.html" . }}
+            </div>
 
-        <div class="collapse navbar-collapse navbar-secondary" id="secondary-nav">
-          {{ partial "docs-secondary-menu-loop.html" . }}
+            <button class="navbar-toggler secondary-toggler" type="button" data-toggle="collapse" data-target="#secondary-nav" aria-controls="secondary-nav" aria-expanded="false" aria-label="Toggle secondary navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-secondary" id="secondary-nav">
+            {{ partial "docs-secondary-menu-loop.html" . }}
+            </div>
+            
+            <div id="mobile-docs-toggler" class="mobile-docs-toggler">
+            <span class="navbar-toggler-icon"></span>
+            </div>
         </div>
-        
-        <div id="mobile-docs-toggler" class="mobile-docs-toggler">
-          <span class="navbar-toggler-icon"></span>
+    </div>
+  </div>
+  {{ if not .Site.IsServer }}
+    {{ if $isPreview }}
+        <div class="p-2 text-white bg-secondary" id="preview-info">
+        {{ partial "preview-info.html" . }}
         </div>
-      </div>
-  </div> 
+    {{ else if not $isRelease }}
+        <div class="p-2 text-dark bg-warning" id="version-warning">
+        {{ partial "version-warning.html" . }}
+        </div>
+    {{ end }}
+  {{ end }}
 </div>
 {{ else }}
-  <div class="main-navbar navbar navbar-dark navbar-expand-lg sticky-top" role="navigation" aria-label="main navigation">
+  <div class="new-nav main-navbar navbar navbar-dark navbar-expand-lg sticky-top" role="navigation" aria-label="main navigation">
     <div class="container-fluid d-flex flex-row justify-content-between">
         <div class="navbar-brand">
           <a class="navbar-item" href="{{ $home }}">

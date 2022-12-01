@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AtomLyIntegration Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -47,6 +47,14 @@ $(function() {
 <li>SetAcesParameterOverrides()
 : <a class="el" href="class_a_z_1_1_render_1_1_display_mapper_component_requests.html#ae81adb6558c5032efafefa4be15bd062">AZ::Render::DisplayMapperComponentRequests</a>
 </li>
+<li>SetAffectsGI()
+: <a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#a3985a27d78e211e1929fc44fdcf0e8be">AZ::Render::AreaLightRequests</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_directional_light_requests.html#ab45e3a2cc2bb73459ed53ff40ff4ad6f">AZ::Render::DirectionalLightRequests</a>
+</li>
+<li>SetAffectsGIFactor()
+: <a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#a315c57a9766b999a0e1d9ca4f0a0bdce">AZ::Render::AreaLightRequests</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_directional_light_requests.html#aa30d8378185b660aa2a248c68ad52f6a">AZ::Render::DirectionalLightRequests</a>
+</li>
 <li>SetAngularDiameter()
 : <a class="el" href="class_a_z_1_1_render_1_1_directional_light_requests.html#a3c060cbd70dbc79ef9dc8e7c5ae58774">AZ::Render::DirectionalLightRequests</a>
 </li>
@@ -56,8 +64,14 @@ $(function() {
 <li>SetAttenuationRadius()
 : <a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#a062a060ce716a752fb041e0c17e3f53b">AZ::Render::AreaLightRequests</a>
 </li>
+<li>SetAxisColor()
+: <a class="el" href="class_a_z_1_1_render_1_1_grid_component_requests.html#a988638638f8a4c2ee4a9041a806148f4">AZ::Render::GridComponentRequests</a>
+</li>
 <li>SetCameraEntityId()
 : <a class="el" href="class_a_z_1_1_render_1_1_directional_light_requests.html#a7667b45d9369bb2f9299446f2c31575f">AZ::Render::DirectionalLightRequests</a>
+</li>
+<li>SetCascadeBlendingEnabled()
+: <a class="el" href="class_a_z_1_1_render_1_1_directional_light_requests.html#a21f02dc0ad5bd0827b486fa8a6c8c3ad">AZ::Render::DirectionalLightRequests</a>
 </li>
 <li>SetCascadeCount()
 : <a class="el" href="class_a_z_1_1_render_1_1_directional_light_requests.html#afa0f1b823ab0b858e2ee09914672b591">AZ::Render::DirectionalLightRequests</a>
@@ -72,14 +86,14 @@ $(function() {
 <li>SetDebugColoringEnabled()
 : <a class="el" href="class_a_z_1_1_render_1_1_directional_light_requests.html#a81c9ef2291f581965260cadaa1c73edf">AZ::Render::DirectionalLightRequests</a>
 </li>
-<li>SetDefaultMaterialOverride()
-: <a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a4e9e78d836d95735c23add58bdee7fb8">AZ::Render::MaterialComponentRequests</a>
-</li>
 <li>SetDisplayMapperOperationType()
 : <a class="el" href="class_a_z_1_1_render_1_1_display_mapper_component_requests.html#af34966faaf90303c946f8d3e1ada9b99">AZ::Render::DisplayMapperComponentRequests</a>
 </li>
 <li>SetDisplayState()
 : <a class="el" href="class_a_z_1_1_atom_bridge_1_1_atom_viewport_info_display_requests.html#a890252c9932484d41bf4e6e35d0557d3">AZ::AtomBridge::AtomViewportInfoDisplayRequests</a>
+</li>
+<li>SetEnabled()
+: <a class="el" href="class_a_z_1_1_render_1_1_editor_state_requests.html#ac86189316e911c9d409129afd30392fa">AZ::Render::EditorStateRequests</a>
 </li>
 <li>SetEnableShadow()
 : <a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#ab8ac98961496518fdae64cce58ca8cd9">AZ::Render::AreaLightRequests</a>
@@ -107,17 +121,39 @@ $(function() {
 <li>SetLightEmitsBothDirections()
 : <a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#ae20c530e204d39c1ef0f1f4f2b795d6b">AZ::Render::AreaLightRequests</a>
 </li>
+<li>SetLodOverride()
+: <a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a77a2eb3fa195da577705f490cec36d7b">AZ::Render::MeshComponentRequests</a>
+</li>
+<li>SetLodType()
+: <a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a75e3b952a22150f49d68f3ec669c7550">AZ::Render::MeshComponentRequests</a>
+</li>
 <li>SetMaterialAssetId()
 : <a class="el" href="class_a_z_1_1_render_1_1_decal_requests.html#a8a9c684e58b306b21d8b28d4e6a1f2ea">AZ::Render::DecalRequests</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#ab7feb4e10988cf61806e9e80fd9c548b">AZ::Render::MaterialComponentRequests</a>
 </li>
-<li>SetMaterialOverride()
-: <a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#ae9bb893d5bbbe2882c4d198c9d8acedf">AZ::Render::MaterialComponentRequests</a>
+<li>SetMaterialAssetIdOnDefaultSlot()
+: <a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#afbd512e06ca9d533119ea7a688416410">AZ::Render::MaterialComponentRequests</a>
 </li>
-<li>SetMaterialOverrides()
-: <a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a112ad95f0671a37b179251d58489a5ab">AZ::Render::MaterialComponentRequests</a>
+<li>SetMaterialMap()
+: <a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a706a404845e3ccab2b73597f82040d38">AZ::Render::MaterialComponentRequests</a>
+</li>
+<li>SetMinimumScreenCoverage()
+: <a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a23b51b728ba2f542a1cd036ea2ebaca1">AZ::Render::MeshComponentRequests</a>
+</li>
+<li>SetModelAsset()
+: <a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a8915088d9a1700cc263ebc7fe9333730">AZ::Render::MeshComponentRequests</a>
+</li>
+<li>SetModelAssetId()
+: <a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#aacda8b9100f3ee3ce0a8d48197696fc9">AZ::Render::MeshComponentRequests</a>
+</li>
+<li>SetModelAssetPath()
+: <a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a359ba324875ebe22bf1c4948ae23a3df">AZ::Render::MeshComponentRequests</a>
 </li>
 <li>SetModelUvOverrides()
 : <a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#adfa72f1c2e62afc8494482e666bc45a9">AZ::Render::MaterialComponentRequests</a>
+</li>
+<li>SetNormalMapOpacity()
+: <a class="el" href="class_a_z_1_1_render_1_1_decal_requests.html#a2aaad0732dc8b6f417b090dda51da247">AZ::Render::DecalRequests</a>
 </li>
 <li>SetNormalShadowBias()
 : <a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#afb6466b15c34262ecde4bb4564cad350">AZ::Render::AreaLightRequests</a>
@@ -129,14 +165,32 @@ $(function() {
 <li>SetOuterShutterAngle()
 : <a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#a2e374cbfc1bf5340ec6fc31b7332ef3b">AZ::Render::AreaLightRequests</a>
 </li>
-<li>SetPropertyOverride()
-: <a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#abf936f8b52c84d174b2d05593f2d380e">AZ::Render::MaterialComponentRequests</a>
+<li>SetPrimaryColor()
+: <a class="el" href="class_a_z_1_1_render_1_1_grid_component_requests.html#a511c648ae5365a84593f0c1ce5d9c670">AZ::Render::GridComponentRequests</a>
 </li>
-<li>SetPropertyOverrides()
-: <a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a3973d05bf71a3631e888bf294181f69c">AZ::Render::MaterialComponentRequests</a>
+<li>SetPrimarySpacing()
+: <a class="el" href="class_a_z_1_1_render_1_1_grid_component_requests.html#a2dd0833485af1bfab85a6b9069116b1b">AZ::Render::GridComponentRequests</a>
 </li>
-<li>SetPropertyOverrideT()
-: <a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a32f0f4347539fe296215ef260b19f39f">AZ::Render::MaterialComponentRequests</a>
+<li>SetPropertyValue()
+: <a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a94053b0b394d2e33ded2f943c4d91b84">AZ::Render::MaterialComponentRequests</a>
+</li>
+<li>SetPropertyValues()
+: <a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a5bd55a704b95f4ea4cd2b210b57b58ce">AZ::Render::MaterialComponentRequests</a>
+</li>
+<li>SetPropertyValueT()
+: <a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#afb8068832890ea0ca15ce31a5e38af6b">AZ::Render::MaterialComponentRequests</a>
+</li>
+<li>SetQualityDecayRate()
+: <a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a133e0c04df09e2a982ed3244a9848db6">AZ::Render::MeshComponentRequests</a>
+</li>
+<li>SetRayTracingEnabled()
+: <a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#aa0591687dffec983c51260f6dc9b053c">AZ::Render::MeshComponentRequests</a>
+</li>
+<li>SetSecondaryColor()
+: <a class="el" href="class_a_z_1_1_render_1_1_grid_component_requests.html#ae9ff4ce5c5813027c8c31cfdeb4a38b1">AZ::Render::GridComponentRequests</a>
+</li>
+<li>SetSecondarySpacing()
+: <a class="el" href="class_a_z_1_1_render_1_1_grid_component_requests.html#ae9cc2af7525058e9b283704e0aa8a60d">AZ::Render::GridComponentRequests</a>
 </li>
 <li>SetShadowBias()
 : <a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#a0196ec6be2cbd4c47d5085b4bf04cf7b">AZ::Render::AreaLightRequests</a>
@@ -164,14 +218,21 @@ $(function() {
 <li>SetShadowReceiverPlaneBiasEnabled()
 : <a class="el" href="class_a_z_1_1_render_1_1_directional_light_requests.html#af308bb9fe1a3b5fbf2d9cf603332e6ee">AZ::Render::DirectionalLightRequests</a>
 </li>
+<li>SetSize()
+: <a class="el" href="class_a_z_1_1_render_1_1_grid_component_requests.html#a776a92a0e3b2e2369302866d5e49d4ed">AZ::Render::GridComponentRequests</a>
+</li>
 <li>SetSortKey()
 : <a class="el" href="class_a_z_1_1_render_1_1_decal_requests.html#a0cbd844602f6caef8d78d3b5e567e89e">AZ::Render::DecalRequests</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a330fba050ef4772ee7d120145f11d7dd">AZ::Render::MeshComponentRequests</a>
 </li>
 <li>SetUseFastApproximation()
 : <a class="el" href="class_a_z_1_1_render_1_1_area_light_requests.html#adbdb3831b2c4620d03c86ffb4cb1038f">AZ::Render::AreaLightRequests</a>
 </li>
 <li>SetViewFrustumCorrectionEnabled()
 : <a class="el" href="class_a_z_1_1_render_1_1_directional_light_requests.html#a05a4211fa008f3eb86d1d6319ab9a532">AZ::Render::DirectionalLightRequests</a>
+</li>
+<li>SetVisibility()
+: <a class="el" href="class_a_z_1_1_render_1_1_mesh_component_requests.html#a182fe3b8aafef42dc46f951f9da9fc46">AZ::Render::MeshComponentRequests</a>
 </li>
 <li>ShadowsDisabled()
 : <a class="el" href="struct_a_z_1_1_render_1_1_area_light_component_config.html#a47ded5d15663c81abba531f4e33149d1">AZ::Render::AreaLightComponentConfig</a>
@@ -184,6 +245,9 @@ $(function() {
 </li>
 <li>SizeBehavior
 : <a class="el" href="class_a_z_1_1_f_font.html#a5d49cb604f660d16be637d6839fc23af">AZ::FFont</a>
+</li>
+<li>SupportsAffectsGI()
+: <a class="el" href="struct_a_z_1_1_render_1_1_area_light_component_config.html#a8d50ebb08728ab1d6426e40ffd1961ec">AZ::Render::AreaLightComponentConfig</a>
 </li>
 <li>SupportsBothDirections()
 : <a class="el" href="struct_a_z_1_1_render_1_1_area_light_component_config.html#acec61361d3d1b9506c40ad265674b65a">AZ::Render::AreaLightComponentConfig</a>
@@ -201,7 +265,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:33 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:28 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -132,6 +132,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application_requests.html#a2f99339f430409d7a1480ee7e3a31315">CalculateBranchTokenForEngineRoot</a> (AZStd::string &amp;token) const =0</td></tr>
 <tr class="memdesc:a2f99339f430409d7a1480ee7e3a31315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the branch token from the current application's engine root. <br /></td></tr>
 <tr class="separator:a2f99339f430409d7a1480ee7e3a31315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf93f06ca97877f47286bbaf8f45d6b6"><td class="memItemLeft" align="right" valign="top"><a id="aaf93f06ca97877f47286bbaf8f45d6b6"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application_requests.html#aaf93f06ca97877f47286bbaf8f45d6b6">IsEditorModeFeedbackEnabled</a> () const</td></tr>
+<tr class="memdesc:aaf93f06ca97877f47286bbaf8f45d6b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if Prefab System is enabled, false if Legacy Slice System is enabled. <br /></td></tr>
+<tr class="separator:aaf93f06ca97877f47286bbaf8f45d6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7578ee73fa1308cd2aec69496310a30f"><td class="memItemLeft" align="right" valign="top"><a id="a7578ee73fa1308cd2aec69496310a30f"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application_requests.html#a7578ee73fa1308cd2aec69496310a30f">IsPrefabSystemEnabled</a> () const</td></tr>
 <tr class="memdesc:a7578ee73fa1308cd2aec69496310a30f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if Prefab System is enabled, false if Legacy Slice System is enabled. <br /></td></tr>
@@ -144,9 +148,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application_requests.html#a7706814be2e722adbeb7227c1cae6229">SetPrefabSystemEnabled</a> ([[maybe_unused]] bool enable)</td></tr>
 <tr class="memdesc:a7706814be2e722adbeb7227c1cae6229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether or not the Prefab System should be enabled. The application will need to be restarted when this changes. <br /></td></tr>
 <tr class="separator:a7706814be2e722adbeb7227c1cae6229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a843b2d26174bca32907643c889272c2a"><td class="memItemLeft" align="right" valign="top"><a id="a843b2d26174bca32907643c889272c2a"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application_requests.html#a843b2d26174bca32907643c889272c2a">IsPrefabSystemForLevelsEnabled</a> () const</td></tr>
-<tr class="memdesc:a843b2d26174bca32907643c889272c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if Prefab System is enabled for use with levels, false if legacy level system is enabled (level.pak) <br /></td></tr>
+<tr class="memitem:a843b2d26174bca32907643c889272c2a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application_requests.html#a843b2d26174bca32907643c889272c2a">IsPrefabSystemForLevelsEnabled</a> () const</td></tr>
 <tr class="separator:a843b2d26174bca32907643c889272c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9d2cee28e9b30944b54b21c1250aa1a"><td class="memItemLeft" align="right" valign="top"><a id="ad9d2cee28e9b30944b54b21c1250aa1a"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application_requests.html#ad9d2cee28e9b30944b54b21c1250aa1a">ShouldAssertForLegacySlicesUsage</a> () const</td></tr>
@@ -209,13 +211,39 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
+<a id="a843b2d26174bca32907643c889272c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a843b2d26174bca32907643c889272c2a">&#9670;&nbsp;</a></span>IsPrefabSystemForLevelsEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AzFramework::ApplicationRequests::IsPrefabSystemForLevelsEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if Prefab System is enabled for use with levels, false if legacy level system is enabled (level.pak) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use 'IsPrefabSystemEnabled' instead </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/API/ApplicationAPI.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:11 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

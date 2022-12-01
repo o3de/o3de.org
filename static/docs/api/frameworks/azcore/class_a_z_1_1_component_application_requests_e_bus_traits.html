@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -88,6 +88,15 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>EventProcessingPolic
 <tr class="memitem:ae1a111142fb7527a57987841927b4113 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplParams" colspan="2">template&lt;typename DispatchMutex , bool IsLocklessDispatch&gt; </td></tr>
 <tr class="memitem:ae1a111142fb7527a57987841927b4113 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#ae1a111142fb7527a57987841927b4113">DispatchLockGuard</a> = AZStd::conditional_t&lt; IsLocklessDispatch, AZ::Internal::NullLockGuard&lt; DispatchMutex &gt;, <a class="el" href="class_a_z_std_1_1scoped__lock.html">AZStd::scoped_lock</a>&lt; DispatchMutex &gt; &gt;</td></tr>
 <tr class="separator:ae1a111142fb7527a57987841927b4113 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54035b6bc2b36202fd17aa9a72d6685c inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplParams" colspan="2">template&lt;typename ContextMutex &gt; </td></tr>
+<tr class="memitem:a54035b6bc2b36202fd17aa9a72d6685c inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a54035b6bc2b36202fd17aa9a72d6685c">ConnectLockGuard</a> = AZStd::conditional_t&lt; AZStd::is_same_v&lt; ContextMutex, <a class="el" href="struct_a_z_1_1_null_mutex.html">AZ::NullMutex</a> &gt;, AZ::Internal::NullLockGuard&lt; ContextMutex &gt;, <a class="el" href="class_a_z_std_1_1unique__lock.html">AZStd::unique_lock</a>&lt; ContextMutex &gt; &gt;</td></tr>
+<tr class="separator:a54035b6bc2b36202fd17aa9a72d6685c inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6912736611ad7aeec68dec2cd0dcc312 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplParams" colspan="2">template&lt;typename ContextMutex &gt; </td></tr>
+<tr class="memitem:a6912736611ad7aeec68dec2cd0dcc312 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a6912736611ad7aeec68dec2cd0dcc312">BindLockGuard</a> = <a class="el" href="class_a_z_std_1_1scoped__lock.html">AZStd::scoped_lock</a>&lt; ContextMutex &gt;</td></tr>
+<tr class="separator:a6912736611ad7aeec68dec2cd0dcc312 inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1b22884b906be6714741ffb4f00f5f inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplParams" colspan="2">template&lt;typename ContextMutex &gt; </td></tr>
+<tr class="memitem:a7f1b22884b906be6714741ffb4f00f5f inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a7f1b22884b906be6714741ffb4f00f5f">CallstackTrackerLockGuard</a> = AZStd::conditional_t&lt; AZStd::is_same_v&lt; ContextMutex, <a class="el" href="struct_a_z_1_1_null_mutex.html">AZ::NullMutex</a> &gt;, AZ::Internal::NullLockGuard&lt; ContextMutex &gt;, <a class="el" href="class_a_z_std_1_1unique__lock.html">AZStd::unique_lock</a>&lt; ContextMutex &gt; &gt;</td></tr>
+<tr class="separator:a7f1b22884b906be6714741ffb4f00f5f inherit pub_types_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -159,7 +168,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -123,7 +123,7 @@ class AZ::Statistics::StatisticalProfiler&lt; StatIdType, MutexType &gt;</h3>
 <p>A helper class that facilitates collecting time spent in blocks (scopes) of code and aggregating the measured times as running statistics.</p>
 <p>See "StatisticalProfilerProxy.h" for more explanations on the meaning of Statistical Profiling.</p>
 <p>The <a class="el" href="class_a_z_1_1_statistics_1_1_statistical_profiler.html">StatisticalProfiler</a> was made as a template to accommodate for several performance needs... If all the code that is being profiled is single threaded and you want to identify each statistic by its string name, then the default StatisticalProfiler&lt;&gt; works for you. If using a map&lt;strings, stat&gt; is too much of what you can afford, then index your statistics with an integer or crc32 and your code profiler should be declared as StatisticalProfiler&lt;AZ::Crc32&gt;. For multi-threaded cases and indexing statistic with <a class="el" href="class_a_z_1_1_crc32.html">Crc32</a> you can have a profiler like this: StatisticalProfiler&lt;AZ::Crc32, AZStd::mutex&gt;. The UnitTests mentioned in the first paragraph do benchmarks of different combinations of indexing and synchronization primitives.</p>
-<p>Even though you can create, subclass and use your own StatisticalProfiler&lt;*,*&gt;, there are some things to consider when working with the <a class="el" href="class_a_z_1_1_statistics_1_1_statistical_profiler_proxy.html">StatisticalProfilerProxy</a>: The <a class="el" href="class_a_z_1_1_statistics_1_1_statistical_profiler_proxy.html">StatisticalProfilerProxy</a> OWNS an array of StatisticalProfiler&lt;AZStd::string, AZStd::shared_spin_mutex&gt;. You can "manage" one of those <a class="el" href="class_a_z_1_1_statistics_1_1_statistical_profiler.html">StatisticalProfiler</a> by getting a reference to it and add Running statistics etc. </p>
+<p>Even though you can create, subclass and use your own StatisticalProfiler&lt;*,*&gt;, there are some things to consider when working with the <a class="el" href="class_a_z_1_1_statistics_1_1_statistical_profiler_proxy.html">StatisticalProfilerProxy</a>: The <a class="el" href="class_a_z_1_1_statistics_1_1_statistical_profiler_proxy.html">StatisticalProfilerProxy</a> OWNS an array of StatisticalProfiler&lt;AZStd::string, AZStd::shared_mutex&gt;. You can "manage" one of those <a class="el" href="class_a_z_1_1_statistics_1_1_statistical_profiler.html">StatisticalProfiler</a> by getting a reference to it and add Running statistics etc. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="afe2f6eddee5c7ee17f56a44ae2593021"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe2f6eddee5c7ee17f56a44ae2593021">&#9670;&nbsp;</a></span>SummarizePerFrameStats()</h2>
@@ -159,7 +159,7 @@ template&lt;class StatIdType  = AZStd::string, class MutexType  = AZ::NullMutex&
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:02:49 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:03:33 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

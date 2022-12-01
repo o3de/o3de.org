@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -119,10 +119,21 @@ virtual <a class="el" href="class_az_physics_1_1_collision_group.html">AzPhysics
 <tr class="memitem:a23dddb291a4818cf47dc732b9c73d028"><td class="memItemLeft" align="right" valign="top"><a id="a23dddb291a4818cf47dc732b9c73d028"></a>
 virtual AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetColliderTag</b> () const =0</td></tr>
 <tr class="separator:a23dddb291a4818cf47dc732b9c73d028"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af03ecf93c1a8e866b7d779574733ef6e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_character.html#af03ecf93c1a8e866b7d779574733ef6e">AddVelocity</a> (const AZ::Vector3 &amp;velocity)=0</td></tr>
-<tr class="separator:af03ecf93c1a8e866b7d779574733ef6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af761b36fb93504e02d8ad7102f8e13f1"><td class="memItemLeft" align="right" valign="top"><a id="af761b36fb93504e02d8ad7102f8e13f1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddVelocity</b> (const AZ::Vector3 &amp;velocity)</td></tr>
+<tr class="separator:af761b36fb93504e02d8ad7102f8e13f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb5c4a12a1c0516416ca86abb619517"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_character.html#a0cb5c4a12a1c0516416ca86abb619517">AddVelocityForTick</a> (const AZ::Vector3 &amp;velocity)=0</td></tr>
+<tr class="separator:a0cb5c4a12a1c0516416ca86abb619517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c962fcd92fb69e8080f6cde1163a700"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_character.html#a9c962fcd92fb69e8080f6cde1163a700">AddVelocityForPhysicsTimestep</a> (const AZ::Vector3 &amp;velocity)=0</td></tr>
+<tr class="separator:a9c962fcd92fb69e8080f6cde1163a700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada72e078629addfb8e9c52c9db12e326"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_character.html#ada72e078629addfb8e9c52c9db12e326">ApplyRequestedVelocity</a> (float deltaTime)=0</td></tr>
 <tr class="separator:ada72e078629addfb8e9c52c9db12e326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a22afdaf65bbfa92e66e94ac260b2a5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_character.html#a1a22afdaf65bbfa92e66e94ac260b2a5">ResetRequestedVelocityForTick</a> ()=0</td></tr>
+<tr class="separator:a1a22afdaf65bbfa92e66e94ac260b2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a65036b9935fc7fb863585e617bb8ad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_character.html#a3a65036b9935fc7fb863585e617bb8ad">ResetRequestedVelocityForPhysicsTimestep</a> ()=0</td></tr>
+<tr class="separator:a3a65036b9935fc7fb863585e617bb8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88a224cbea304b7e73a906d3b315d9a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_character.html#ad88a224cbea304b7e73a906d3b315d9a">Move</a> (const AZ::Vector3 &amp;requestedMovement, float deltaTime)=0</td></tr>
+<tr class="separator:ad88a224cbea304b7e73a906d3b315d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a310e0b98c19b43fcff9e6298c77e2261"><td class="memItemLeft" align="right" valign="top"><a id="a310e0b98c19b43fcff9e6298c77e2261"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AttachShape</b> (AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_shape.html">Physics::Shape</a> &gt; shape)=0</td></tr>
 <tr class="separator:a310e0b98c19b43fcff9e6298c77e2261"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,8 +227,8 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Basic implementation of common character-style needs as a WorldBody. Is not a full-functional ship-ready all-purpose character controller implementation. This class just abstracts some common functionality amongst typical characters, and is take-it-or-leave it style; useful as a starting point or reference. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="af03ecf93c1a8e866b7d779574733ef6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af03ecf93c1a8e866b7d779574733ef6e">&#9670;&nbsp;</a></span>AddVelocity()</h2>
+<a id="a9c962fcd92fb69e8080f6cde1163a700"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c962fcd92fb69e8080f6cde1163a700">&#9670;&nbsp;</a></span>AddVelocityForPhysicsTimestep()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +237,7 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Physics::Character::AddVelocity </td>
+          <td class="memname">virtual void Physics::Character::AddVelocityForPhysicsTimestep </td>
           <td>(</td>
           <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
           <td class="paramname"><em>velocity</em></td><td>)</td>
@@ -239,9 +250,41 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Queues up a request to apply a velocity to the character. All requests received during a tick are accumulated (so for example, the effects of animation and gravity can be applied in two separate requests), and a movement with the accumulated velocity is performed once per tick, prior to the physics update. Obstacles may prevent the actual movement from exactly matching the requested movement. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Queues up a request to apply a velocity to the character, lasting for the duration of the physics timestep. All requests received are accumulated (so for example, the effects of animation and gravity can be applied in two separate requests), and the accumulated velocity is used when the character updates. Velocities added this way will apply until the end of the physics timestep. Obstacles and the maximum speed setting may prevent the actual movement from exactly matching the requested movement. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">velocity</td><td>The velocity to be added to the accumulated requests. </td></tr>
+    <tr><td class="paramname">velocity</td><td>The velocity to be added to the accumulated requests, lasting for the duration of a physics timestep. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0cb5c4a12a1c0516416ca86abb619517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb5c4a12a1c0516416ca86abb619517">&#9670;&nbsp;</a></span>AddVelocityForTick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Physics::Character::AddVelocityForTick </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>velocity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Queues up a request to apply a velocity to the character, lasting for the duration of the tick. All requests received are accumulated (so for example, the effects of animation and gravity can be applied in two separate requests), and the accumulated velocity is used when the character updates. Velocities added this way will apply until the end of the tick. Obstacles and the maximum speed setting may prevent the actual movement from exactly matching the requested movement. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">velocity</td><td>The velocity to be added to the accumulated requests, lasting for the duration of the tick. </td></tr>
   </table>
   </dd>
 </dl>
@@ -271,12 +314,101 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Applies the queued velocity requests and zeros the accumulated requested velocity. The expected usage is for this function to be called internally by the physics system once per tick, so that the cumulative result of multiple movement effects (e.g. animation, gravity, pseudo-impulses etc) can be combined from separate calls to AddVelocity. Accumulating the requests avoids performing multiple expensive character updates, and avoids any effects from the order of requests within a tick. Users who wish to add a new movement effect should generally just be able to use AddVelocity, and rely on the existing physics system call to ApplyRequestedVelocity. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Applies the queued velocity requests. The expected usage is for this function to be called internally by the physics system, so that the cumulative result of multiple movement effects (e.g. animation, gravity, pseudo-impulses etc) can be combined from separate calls to AddVelocityForTick or AddVelocityForPhysicsTimestep. Accumulating the requests avoids performing multiple expensive character updates, and avoids any effects from the order of requests within a tick. Users who wish to add a new movement effect should generally just be able to use AddVelocityForTick or AddVelocityForPhysicsTimestep, and rely on the existing physics system call to ApplyRequestedVelocity. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">deltaTime</td><td>The duration over which to apply the accumulated requested velocity. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ad88a224cbea304b7e73a906d3b315d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad88a224cbea304b7e73a906d3b315d9a">&#9670;&nbsp;</a></span>Move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Physics::Character::Move </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>requestedMovement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>deltaTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Directly requests the character to move. Used for making an immediate, displacement-based movement request, as opposed to a queued, velocity-based request. Obstacles may prevent the actual movement from exactly matching the requested movement. @ param requestedMovement The desired displacement relative to the character's current position. @ param deltaTime The duration over which to apply the requested movement. </p>
+
+</div>
+</div>
+<a id="a3a65036b9935fc7fb863585e617bb8ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a65036b9935fc7fb863585e617bb8ad">&#9670;&nbsp;</a></span>ResetRequestedVelocityForPhysicsTimestep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Physics::Character::ResetRequestedVelocityForPhysicsTimestep </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the accumulated velocity requests which last for the duration of a physics timestep to zero. The expected usage is for this funciton to be called internally by the physics system, to flush per timestep velocity requests once per timestep. Velocity requests with duration of the tick are not affected. </p>
+
+</div>
+</div>
+<a id="a1a22afdaf65bbfa92e66e94ac260b2a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a22afdaf65bbfa92e66e94ac260b2a5">&#9670;&nbsp;</a></span>ResetRequestedVelocityForTick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Physics::Character::ResetRequestedVelocityForTick </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the accumulated velocity requests which last for the duration of a tick to zero. The expected usage is for this funciton to be called internally by the physics system, to flush per tick velocity requests once per tick. Velocity requests with duration of the physics timestep are not affected. </p>
 
 </div>
 </div>
@@ -286,7 +418,7 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:23 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:15 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

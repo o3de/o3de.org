@@ -38,7 +38,7 @@ The elements in this example invocation break down to:
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe seeds --seedFileList MyProject\AssetBundling\SeedLists\AllDependencies.seed ^
+build\windows\bin\profile\AssetBundlerBatch.exe seeds --seedFileList MyProject\AssetBundling\SeedLists\AllDependencies.seed ^
     --addPlatformToSeeds ^
     --platform ios,pc
 ```
@@ -155,7 +155,7 @@ Create the seed list `testFile.seed` if it doesn't exist, and add the `asset1.pa
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe seeds --seedListFile testFile.seed ^
+build\windows\bin\profile\AssetBundlerBatch.exe seeds --seedListFile testFile.seed ^
     --addSeed cache\asset_path\asset1.pak,cache\asset_path\asset2.pak ^
     --platform pc
 ```
@@ -180,7 +180,7 @@ Add the `ios` and `android` platforms for all seeds in the `testFile.seed` seed 
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe seeds --seedListFile testFile.seed --addPlatformToSeeds --platform ios,android
+build\windows\bin\profile\AssetBundlerBatch.exe seeds --seedListFile testFile.seed --addPlatformToSeeds --platform ios,android
 ```
 
 {{% /tab %}}
@@ -201,7 +201,7 @@ Show the contents of the `testFile.seed` file, including the absolute and relati
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe seeds --seedListFile testFile.seed --print
+build\windows\bin\profile\AssetBundlerBatch.exe seeds --seedListFile testFile.seed --print
 ```
 
 {{% /tab %}}
@@ -328,7 +328,7 @@ Display which asset lists would be generated from the seed lists for the O3DE En
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe assetLists --addDefaultSeedListFiles --print
+build\windows\bin\profile\AssetBundlerBatch.exe assetLists --addDefaultSeedListFiles --print
 ```
 
 {{% /tab %}}
@@ -349,7 +349,7 @@ Use an input asset list and the project's default platforms to display that asse
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe assetLists --assetListFile assetListFile.assetlist --print
+build\windows\bin\profile\AssetBundlerBatch.exe assetLists --assetListFile assetListFile.assetlist --print
 ```
 
 {{% /tab %}}
@@ -370,7 +370,7 @@ Generate an asset list `testList_pc.assetlist` and debug information `testList_p
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe assetLists --assetListFile testList.assetlist ^
+build\windows\bin\profile\AssetBundlerBatch.exe assetLists --assetListFile testList.assetlist ^
     --seedListFile testFile.seed ^
     --platform pc ^
     --generateDebugFile
@@ -397,7 +397,7 @@ Display the contents of the `testList_pc.assetlist` file:
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe assetLists --assetListFile testList.assetlist --platform pc --print
+build\windows\bin\profile\AssetBundlerBatch.exe assetLists --assetListFile testList.assetlist --platform pc --print
 ```
 
 {{% /tab %}}
@@ -418,7 +418,7 @@ Regenerate all asset lists from the `testFile.seed` seed list, overwriting the `
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe assetLists --assetListFile testList.assetlist --seedListFile testFile.seed --allowOverwrites
+build\windows\bin\profile\AssetBundlerBatch.exe assetLists --assetListFile testList.assetlist --seedListFile testFile.seed --allowOverwrites
 ```
 
 {{% /tab %}}
@@ -494,7 +494,7 @@ Allow overwriting of existing comparison rules files. By default, existing files
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe comparisonRules --comparisonRulesFile deltaFilterXML.rules ^
+build\windows\bin\profile\AssetBundlerBatch.exe comparisonRules --comparisonRulesFile deltaFilterXML.rules ^
      --comparisonType delta,filePattern ^
      --filePatternType 0 ^
      --filePattern "*xml"
@@ -608,7 +608,7 @@ Generate a new asset list `deltaAssetList.assetlist` by taking the files that ap
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe compare --comparisonType delta ^
+build\windows\bin\profile\AssetBundlerBatch.exe compare --comparisonType delta ^
      --firstAssetFile firstAssetList_pc.assetlist ^
      --secondAssetFile secondAssetList_pc.assetlist ^
      --output deltaAssetList.assetlist
@@ -635,7 +635,7 @@ Generate a new asset list `filePatternAssetList.assetlist` that contains only XM
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe compare --comparisonType filePattern ^
+build\windows\bin\profile\AssetBundlerBatch.exe compare --comparisonType filePattern ^
     --filePatternType 0 ^
     --filePattern "*.xml" ^
     --firstAssetFile assetList_pc.assetlist ^
@@ -664,7 +664,7 @@ Use `intersectionCount` on `engine_pc.assetlist`, `game_pc.assetlist`, and `patc
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe compare --comparisonType intersectionCount ^
+build\windows\bin\profile\AssetBundlerBatch.exe compare --comparisonType intersectionCount ^
     --firstAssetFile engine_pc.assetlist,game_pc.assetlist,patch_pc.assetlist ^
     --print
 ```
@@ -748,7 +748,7 @@ Create a bundler settings file `defaults_pc.bundlesettings` for PC with the maxi
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe bundleSettings --bundleSettingsFile defaults.bundlesettings ^
+build\windows\bin\profile\AssetBundlerBatch.exe bundleSettings --bundleSettingsFile defaults.bundlesettings ^
     --maxSize 1024 ^
     --assetListFile allAssets.assetlist ^
     --platforms pc
@@ -833,7 +833,7 @@ Create a `assets_pc.pak` bundle for PC, using the `defaults_pc.bundlesettings` f
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe bundles --outputBundlePath assets.pak --bundleSettingsFile defaults.bundlesettings --platform pc
+build\windows\bin\profile\AssetBundlerBatch.exe bundles --outputBundlePath assets.pak --bundleSettingsFile defaults.bundlesettings --platform pc
 ```
 
 {{% /tab %}}
@@ -854,7 +854,7 @@ Create bundles for all of a project's enabled platforms, using the `allAssets_pc
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe bundles --outputBundlePath assets.pak --maxSize 512 --assetListFile allAssets.assetlist
+build\windows\bin\profile\AssetBundlerBatch.exe bundles --outputBundlePath assets.pak --maxSize 512 --assetListFile allAssets.assetlist
 ```
 
 {{% /tab %}}
@@ -932,7 +932,7 @@ Regenerate the bundle `processed.pak` for the `example.cgf` asset and all of its
 {{% tab name="Windows" %}}
 
 ```cmd
-build\windows_vs2019\bin\profile\AssetBundlerBatch.exe bundleSeed --addSeed example.cgf --outputBundlePath processed.pak --maxSize 512 --allowOverwrites
+build\windows\bin\profile\AssetBundlerBatch.exe bundleSeed --addSeed example.cgf --outputBundlePath processed.pak --maxSize 512 --allowOverwrites
 ```
 
 {{% /tab %}}

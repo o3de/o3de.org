@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -54,72 +54,39 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Container for all the buffers and views needed for a single lod of a skinned mesh.  
+ <a href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#details">More...</a></p>
+
 <p><code>#include &lt;SkinnedMeshInputBuffers.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a44df9a8863631937eed90b990c88254e"><td class="memItemLeft" align="right" valign="top"><a id="a44df9a8863631937eed90b990c88254e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a44df9a8863631937eed90b990c88254e">SetIndexCount</a> (uint32_t indexCount)</td></tr>
-<tr class="memdesc:a44df9a8863631937eed90b990c88254e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of indices for the lod. Must be called before calling CreateIndexBuffer. <br /></td></tr>
-<tr class="separator:a44df9a8863631937eed90b990c88254e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af673611c32f065dda14338c4d62e3bd7"><td class="memItemLeft" align="right" valign="top"><a id="af673611c32f065dda14338c4d62e3bd7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#af673611c32f065dda14338c4d62e3bd7">SetVertexCount</a> (uint32_t vertexCount)</td></tr>
-<tr class="memdesc:af673611c32f065dda14338c4d62e3bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of vertices for the lod. Must be called before calling CreateSkinningInputBuffer or CreateStaticBuffer. <br /></td></tr>
-<tr class="separator:af673611c32f065dda14338c4d62e3bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a832b2a4cb244646299f40b4b70727d86"><td class="memItemLeft" align="right" valign="top"><a id="a832b2a4cb244646299f40b4b70727d86"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a832b2a4cb244646299f40b4b70727d86">CreateFromModelLod</a> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> &gt; &amp;modelAsset, const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html">RPI::Model</a> &gt; &amp;model, uint32_t lodIndex)</td></tr>
+<tr class="memdesc:a832b2a4cb244646299f40b4b70727d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all the input data for the skinned mesh lod from a model lod. <br /></td></tr>
+<tr class="separator:a832b2a4cb244646299f40b4b70727d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e7431685dceb9528364d40bcdaac38"><td class="memItemLeft" align="right" valign="top"><a id="a03e7431685dceb9528364d40bcdaac38"></a>
+<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod_asset.html">RPI::ModelLodAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a03e7431685dceb9528364d40bcdaac38">GetModelLodAsset</a> () const</td></tr>
+<tr class="memdesc:a03e7431685dceb9528364d40bcdaac38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ModelLodAsset that was used to create this lod. <br /></td></tr>
+<tr class="separator:a03e7431685dceb9528364d40bcdaac38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ab877a5beb782ec0f1b3612cacf52b9"><td class="memItemLeft" align="right" valign="top"><a id="a3ab877a5beb782ec0f1b3612cacf52b9"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a3ab877a5beb782ec0f1b3612cacf52b9">GetVertexCount</a> () const</td></tr>
 <tr class="memdesc:a3ab877a5beb782ec0f1b3612cacf52b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of vertices for the lod. <br /></td></tr>
 <tr class="separator:a3ab877a5beb782ec0f1b3612cacf52b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63a916e88989de2be22ee1e9ef46a6d2"><td class="memItemLeft" align="right" valign="top"><a id="a63a916e88989de2be22ee1e9ef46a6d2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a63a916e88989de2be22ee1e9ef46a6d2">SetIndexBufferAsset</a> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset.html">RPI::BufferAsset</a> &gt; bufferAsset)</td></tr>
-<tr class="memdesc:a63a916e88989de2be22ee1e9ef46a6d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the index buffer asset. <br /></td></tr>
-<tr class="separator:a63a916e88989de2be22ee1e9ef46a6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a326be1249850ecc88fceec5bcf8bc637"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a326be1249850ecc88fceec5bcf8bc637">CreateIndexBuffer</a> (const uint32_t *data, const AZStd::string &amp;bufferNamePrefix=&quot;&quot;)</td></tr>
-<tr class="separator:a326be1249850ecc88fceec5bcf8bc637"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af63b90d5a2c70cf0e1d78f3174be9e74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#af63b90d5a2c70cf0e1d78f3174be9e74">CreateSkinningInputBuffer</a> (void *data, SkinnedMeshInputVertexStreams inputStream, const AZStd::string &amp;bufferNamePrefix=&quot;&quot;)</td></tr>
-<tr class="separator:af63b90d5a2c70cf0e1d78f3174be9e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d5f9731aa9f85fe5cf5ca4b5e501802"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a2d5f9731aa9f85fe5cf5ca4b5e501802">CreateStaticBuffer</a> (void *data, SkinnedMeshStaticVertexStreams staticInputStream, const AZStd::string &amp;bufferNamePrefix=&quot;&quot;)</td></tr>
-<tr class="separator:a2d5f9731aa9f85fe5cf5ca4b5e501802"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24711ba523b8562c8cf06cab65bc4c27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a24711ba523b8562c8cf06cab65bc4c27">SetSubMeshProperties</a> (const AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_render_1_1_skinned_sub_mesh_properties.html">SkinnedSubMeshProperties</a> &gt; &amp;subMeshProperties)</td></tr>
-<tr class="separator:a24711ba523b8562c8cf06cab65bc4c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3518ddbd742086dd539f45023c191a88"><td class="memItemLeft" align="right" valign="top"><a id="a3518ddbd742086dd539f45023c191a88"></a>
-const AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_render_1_1_skinned_sub_mesh_properties.html">SkinnedSubMeshProperties</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a3518ddbd742086dd539f45023c191a88">GetSubMeshProperties</a> () const</td></tr>
-<tr class="memdesc:a3518ddbd742086dd539f45023c191a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the properties of each submesh. <br /></td></tr>
-<tr class="separator:a3518ddbd742086dd539f45023c191a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac043609fcff1166bc58e1741475f2d7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#ac043609fcff1166bc58e1741475f2d7c">AddMorphTarget</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html">RPI::MorphTargetMetaAsset::MorphTarget</a> &amp;metaAsset, const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset.html">RPI::BufferAsset</a> &gt; &amp;morphBufferAsset, const AZStd::string &amp;bufferNamePrefix, float minWeight, float maxWeight)</td></tr>
-<tr class="separator:ac043609fcff1166bc58e1741475f2d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b8e2358fb5889acde6340970679f1b0"><td class="memItemLeft" align="right" valign="top"><a id="a3b8e2358fb5889acde6340970679f1b0"></a>
-const AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_render_1_1_morph_target_meta_data.html">MorphTargetMetaData</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a3b8e2358fb5889acde6340970679f1b0">GetMorphTargetMetaDatas</a> () const</td></tr>
-<tr class="memdesc:a3b8e2358fb5889acde6340970679f1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the MetaDatas for all the morph targets that can be applied to an instance of this skinned mesh. <br /></td></tr>
-<tr class="separator:a3b8e2358fb5889acde6340970679f1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8744919b8c92d3ba64fd27bc67c352c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a8744919b8c92d3ba64fd27bc67c352c0">AddMorphTarget</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html">RPI::MorphTargetMetaAsset::MorphTarget</a> &amp;morphTarget, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_view.html">RPI::BufferAssetView</a> *morphBufferAssetView, const AZStd::string &amp;bufferNamePrefix, float minWeight, float maxWeight)</td></tr>
+<tr class="separator:a8744919b8c92d3ba64fd27bc67c352c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc8947e5df91487829896ca90e16a63"><td class="memItemLeft" align="right" valign="top"><a id="a1dc8947e5df91487829896ca90e16a63"></a>
+const AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_render_1_1_morph_target_compute_meta_data.html">MorphTargetComputeMetaData</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a1dc8947e5df91487829896ca90e16a63">GetMorphTargetComputeMetaDatas</a> () const</td></tr>
+<tr class="memdesc:a1dc8947e5df91487829896ca90e16a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the MetaDatas for all the morph targets that can be applied to an instance of this skinned mesh. <br /></td></tr>
+<tr class="separator:a1dc8947e5df91487829896ca90e16a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada1f2f1294eb1ffaaad1fe6185b7ce6a"><td class="memItemLeft" align="right" valign="top"><a id="ada1f2f1294eb1ffaaad1fe6185b7ce6a"></a>
 const AZStd::vector&lt; AZStd::intrusive_ptr&lt; <a class="el" href="class_a_z_1_1_render_1_1_morph_target_input_buffers.html">MorphTargetInputBuffers</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#ada1f2f1294eb1ffaaad1fe6185b7ce6a">GetMorphTargetInputBuffers</a> () const</td></tr>
 <tr class="memdesc:ada1f2f1294eb1ffaaad1fe6185b7ce6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="class_a_z_1_1_render_1_1_morph_target_input_buffers.html">MorphTargetInputBuffers</a> for all the morph targets that can be applied to an instance of this skinned mesh. <br /></td></tr>
 <tr class="separator:ada1f2f1294eb1ffaaad1fe6185b7ce6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ed60b05162e385b7364f524be4c3b9e"><td class="memItemLeft" align="right" valign="top"><a id="a2ed60b05162e385b7364f524be4c3b9e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a2ed60b05162e385b7364f524be4c3b9e">SetSkinningInputBufferAsset</a> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset.html">RPI::BufferAsset</a> &gt; bufferAsset, SkinnedMeshInputVertexStreams inputStream)</td></tr>
-<tr class="memdesc:a2ed60b05162e385b7364f524be4c3b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the input vertex stream from an existing buffer asset. <br /></td></tr>
-<tr class="separator:a2ed60b05162e385b7364f524be4c3b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab21e52953a5d6bf3eb6951386eccbb50"><td class="memItemLeft" align="right" valign="top"><a id="ab21e52953a5d6bf3eb6951386eccbb50"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#ab21e52953a5d6bf3eb6951386eccbb50">SetStaticBufferAsset</a> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset.html">RPI::BufferAsset</a> &gt; bufferAsset, SkinnedMeshStaticVertexStreams staticStream)</td></tr>
-<tr class="memdesc:ab21e52953a5d6bf3eb6951386eccbb50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the static vertex stream from an existing buffer asset. <br /></td></tr>
-<tr class="separator:ab21e52953a5d6bf3eb6951386eccbb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fd33dc5c293f20bacc71772087f381f"><td class="memItemLeft" align="right" valign="top"><a id="a8fd33dc5c293f20bacc71772087f381f"></a>
-const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset.html">RPI::BufferAsset</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a8fd33dc5c293f20bacc71772087f381f">GetSkinningInputBufferAsset</a> (SkinnedMeshInputVertexStreams stream) const</td></tr>
-<tr class="memdesc:a8fd33dc5c293f20bacc71772087f381f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the BufferAsset of an input vertex stream. <br /></td></tr>
-<tr class="separator:a8fd33dc5c293f20bacc71772087f381f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ab65aeabfba5920013fe97703f3439c"><td class="memItemLeft" align="right" valign="top"><a id="a0ab65aeabfba5920013fe97703f3439c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a0ab65aeabfba5920013fe97703f3439c">WaitForUpload</a> ()</td></tr>
-<tr class="memdesc:a0ab65aeabfba5920013fe97703f3439c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer.html#aaa126f04cdea4d5532ec8e6737030cbe" title="Blocks until a streaming upload has completed (if one is currently in flight).">RPI::Buffer::WaitForUpload</a> for each buffer in the lod. <br /></td></tr>
-<tr class="separator:a0ab65aeabfba5920013fe97703f3439c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81da258674c4395efdb382c7e7c07fa0"><td class="memItemLeft" align="right" valign="top"><a id="a81da258674c4395efdb382c7e7c07fa0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a81da258674c4395efdb382c7e7c07fa0">HasDynamicColors</a> () const</td></tr>
-<tr class="memdesc:a81da258674c4395efdb382c7e7c07fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this lod has a morphed color stream. <br /></td></tr>
-<tr class="separator:a81da258674c4395efdb382c7e7c07fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b6ba58d22133bb240be7e767f631031"><td class="memItemLeft" align="right" valign="top"><a id="a2b6ba58d22133bb240be7e767f631031"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a2b6ba58d22133bb240be7e767f631031">SetModelLodAsset</a> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod_asset.html">RPI::ModelLodAsset</a> &gt; &amp;modelLodAsset)</td></tr>
-<tr class="memdesc:a2b6ba58d22133bb240be7e767f631031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the model lod asset for the underlying lod. <br /></td></tr>
-<tr class="separator:a2b6ba58d22133bb240be7e767f631031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a4826e9cfffd15643073d587c0dc2ac"><td class="memItemLeft" align="right" valign="top"><a id="a7a4826e9cfffd15643073d587c0dc2ac"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html#a7a4826e9cfffd15643073d587c0dc2ac">HasMorphTargetsForMesh</a> (uint32_t meshIndex) const</td></tr>
+<tr class="memdesc:a7a4826e9cfffd15643073d587c0dc2ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there are any morph targets that can be applied to a particular sub-mesh. <br /></td></tr>
+<tr class="separator:a7a4826e9cfffd15643073d587c0dc2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -128,10 +95,10 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SkinnedMeshInputBuff
 <tr class="separator:a5a6eb82f484241bee5f1e4f805efd975"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Container for all the buffers and views needed for a single lod of a skinned mesh To create a <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_lod.html">SkinnedMeshInputLod</a>, follow the general pattern lod.SetIndexCount() lod.SetVertexCount() lod.CreateIndexBuffer() for each input buffer lod.CreateSkinningInputBuffer() for each static buffer lod.CreateStaticBuffer() lod.SetSubMeshProperties() </p>
+<div class="textblock"><p>Container for all the buffers and views needed for a single lod of a skinned mesh. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac043609fcff1166bc58e1741475f2d7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac043609fcff1166bc58e1741475f2d7c">&#9670;&nbsp;</a></span>AddMorphTarget()</h2>
+<a id="a8744919b8c92d3ba64fd27bc67c352c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8744919b8c92d3ba64fd27bc67c352c0">&#9670;&nbsp;</a></span>AddMorphTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,13 +107,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SkinnedMeshInputBuff
           <td class="memname">void AZ::Render::SkinnedMeshInputLod::AddMorphTarget </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html">RPI::MorphTargetMetaAsset::MorphTarget</a> &amp;&#160;</td>
-          <td class="paramname"><em>metaAsset</em>, </td>
+          <td class="paramname"><em>morphTarget</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset.html">RPI::BufferAsset</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>morphBufferAsset</em>, </td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_view.html">RPI::BufferAssetView</a> *&#160;</td>
+          <td class="paramname"><em>morphBufferAssetView</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -175,152 +142,15 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SkinnedMeshInputBuff
 </div><div class="memdoc">
 <p>Add a single morph target that can be applied to an instance of this skinned mesh Creates a view into the larger morph target buffer to be used for applying an individual morph </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">metaAsset</td><td>The metadata that has info such as the min/max weight, offset, and vertex count for the morph </td></tr>
-    <tr><td class="paramname">morphBufferAsset</td><td>The the combined buffer that has all the deltas for all morph targets in the model lod </td></tr>
+    <tr><td class="paramname">morphTarget</td><td>The metadata that has info such as the min/max weight, offset, and vertex count for the morph </td></tr>
+    <tr><td class="paramname">morphBufferAssetView</td><td>The view of all the morph target deltas that can be applied to this mesh </td></tr>
     <tr><td class="paramname">bufferNamePrefix</td><td>A prefix that can be used to identify this morph target when creating the view into the morph target buffer. </td></tr>
     <tr><td class="paramname">minWeight</td><td>The minimum weight that might be applied to this morph target. It's possible for the weight of a morph target to be outside the 0-1 range. Defaults to 0 </td></tr>
-    <tr><td class="paramname">maxWeight</td><td>The maximum weight that might be applied to this morph target. It's possible for the weight of a morph target to be outside the 0-1 range. Defaults to 1 </td></tr>
+    <tr><td class="paramname">maxWeight</td><td>The maximum weight that might be applied to this morph target. It's possible for the weight of a morph target to be outside the 0-1 range. <br  />
+ </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a326be1249850ecc88fceec5bcf8bc637"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a326be1249850ecc88fceec5bcf8bc637">&#9670;&nbsp;</a></span>CreateIndexBuffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::Render::SkinnedMeshInputLod::CreateIndexBuffer </td>
-          <td>(</td>
-          <td class="paramtype">const uint32_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>bufferNamePrefix</em> = <code>&quot;&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Create the index buffer. SetIndexCount must be called first as CreateIndexBuffer depends on that to know the number of indices to create. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>The indices to be used for the index buffer. The index buffer is used by the target skinned model, but is not modified during skinning so it is shared between all instances of the same skinned mesh. </td></tr>
-    <tr><td class="paramname">bufferName</td><td>Optional debug name for the buffer. A Uuid will automatically be appended to make it unique. If none is specified, a default name will be used. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="af63b90d5a2c70cf0e1d78f3174be9e74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af63b90d5a2c70cf0e1d78f3174be9e74">&#9670;&nbsp;</a></span>CreateSkinningInputBuffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::Render::SkinnedMeshInputLod::CreateSkinningInputBuffer </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SkinnedMeshInputVertexStreams&#160;</td>
-          <td class="paramname"><em>inputStream</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>bufferNamePrefix</em> = <code>&quot;&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Create the buffer for the specified inputStream. SetVertexCount must be called first as CreateSkinningInputBuffer depends on that to know the number of vertices to create. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>The per-vertex data to use as input. The stride of data is expected to match the SkinnedMeshVertexStreamInfo::elementSize for the given input stream, and the size of the data buffer should be m_vertexCount * elementSize. </td></tr>
-    <tr><td class="paramname">inputStream</td><td>The input stream this buffer is used for. SkinnedMeshInputVertexStreams are used for input to the skinning shader. </td></tr>
-    <tr><td class="paramname">bufferName</td><td>Optional debug name for the buffer. A Uuid will automatically be appended to make it unique. If none is specified, a default name for the inputStream will be used. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2d5f9731aa9f85fe5cf5ca4b5e501802"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d5f9731aa9f85fe5cf5ca4b5e501802">&#9670;&nbsp;</a></span>CreateStaticBuffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::Render::SkinnedMeshInputLod::CreateStaticBuffer </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SkinnedMeshStaticVertexStreams&#160;</td>
-          <td class="paramname"><em>staticInputStream</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>bufferNamePrefix</em> = <code>&quot;&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Create the buffer for the specified staticInputStream. SetVertexCount must be called first as CreateSkinningInputBuffer depends on that to know the number of vertices to create. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>The per-vertex data to use as input. The stride of data is expected to match the SkinnedMeshVertexStreamInfo::elementSize for the given input stream, and the size of the data buffer should be m_vertexCount * elementSize. </td></tr>
-    <tr><td class="paramname">staticInputStream</td><td>The static input stream this buffer is used for. SkinnedMeshStaticInputVertexStreams are used by the target skinned ModelLod, but are not modified during skinning so they are shared between all instances of the same skinned mesh. </td></tr>
-    <tr><td class="paramname">bufferName</td><td>Optional debug name for the buffer. A Uuid will automatically be appended to make it unique. If none is specified, a default name for the staticInputStream will be used. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a24711ba523b8562c8cf06cab65bc4c27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24711ba523b8562c8cf06cab65bc4c27">&#9670;&nbsp;</a></span>SetSubMeshProperties()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::Render::SkinnedMeshInputLod::SetSubMeshProperties </td>
-          <td>(</td>
-          <td class="paramtype">const AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_render_1_1_skinned_sub_mesh_properties.html">SkinnedSubMeshProperties</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>subMeshProperties</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the properties used by each sub-mesh of a target skinned ModelLod and create per-sub-mesh views of the index and static buffers. Since this function is creating buffer views, it must be called after CreateIndexBuffer and CreateStaticBuffer. </p>
 
 </div>
 </div>
@@ -330,7 +160,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SkinnedMeshInputBuff
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:25 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

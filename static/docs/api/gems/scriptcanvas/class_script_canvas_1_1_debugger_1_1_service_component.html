@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -57,7 +57,7 @@ $(function() {
 
 <p><code>#include &lt;Debugger.h&gt;</code></p>
 
-<p>Inherits Component, <a class="el" href="class_script_canvas_1_1_debugger_1_1_message_1_1_request_visitor.html">ScriptCanvas::Debugger::Message::RequestVisitor</a>, Handler, Handler, and Handler.</p>
+<p>Inherits Component, <a class="el" href="class_script_canvas_1_1_debugger_1_1_message_1_1_request_visitor.html">ScriptCanvas::Debugger::Message::RequestVisitor</a>, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -76,21 +76,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> () overr
 <tr class="memitem:accb75fe287dc989a9741cae3dc94bfdb"><td class="memItemLeft" align="right" valign="top"><a id="accb75fe287dc989a9741cae3dc94bfdb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () override</td></tr>
 <tr class="separator:accb75fe287dc989a9741cae3dc94bfdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf5f28d23267658233f313208025a741"><td class="memItemLeft" align="right" valign="top"><a id="adf5f28d23267658233f313208025a741"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnReceivedMsg</b> (AzFramework::TmMsgPtr msg) override</td></tr>
-<tr class="separator:adf5f28d23267658233f313208025a741"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34f98a0bd39bb40390a3a19099204456"><td class="memItemLeft" align="right" valign="top"><a id="a34f98a0bd39bb40390a3a19099204456"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>TargetLeftNetwork</b> (AzFramework::TargetInfo info) override</td></tr>
-<tr class="separator:a34f98a0bd39bb40390a3a19099204456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40910827d426fa525b344771e93c5d2a"><td class="memItemLeft" align="right" valign="top"><a id="a40910827d426fa525b344771e93c5d2a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnReceivedMsg</b> (AzFramework::RemoteToolsMessagePointer msg)</td></tr>
+<tr class="separator:a40910827d426fa525b344771e93c5d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10b5a20e704533156ce4373242554e20"><td class="memItemLeft" align="right" valign="top"><a id="a10b5a20e704533156ce4373242554e20"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TargetLeftNetwork</b> (AzFramework::RemoteToolsEndpointInfo info)</td></tr>
+<tr class="separator:a10b5a20e704533156ce4373242554e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa50a090b1b714597beb72d076206477"><td class="memItemLeft" align="right" valign="top"><a id="afa50a090b1b714597beb72d076206477"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>GraphActivated</b> (const <a class="el" href="struct_script_canvas_1_1_tagged_parent.html">GraphActivation</a> &amp;) override</td></tr>
 <tr class="separator:afa50a090b1b714597beb72d076206477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b997a83e09b9cbcb0b2f967f6d171b2"><td class="memItemLeft" align="right" valign="top"><a id="a9b997a83e09b9cbcb0b2f967f6d171b2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>GraphDeactivated</b> (const <a class="el" href="struct_script_canvas_1_1_tagged_parent.html">GraphActivation</a> &amp;) override</td></tr>
 <tr class="separator:a9b997a83e09b9cbcb0b2f967f6d171b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b44a114cabba8347a488dd1018ddeba"><td class="memItemLeft" align="right" valign="top"><a id="a6b44a114cabba8347a488dd1018ddeba"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsGraphObserved</b> (const AZ::EntityId &amp;entityId, const <a class="el" href="struct_script_canvas_1_1_graph_identifier.html">GraphIdentifier</a> &amp;graphIdentifier) override</td></tr>
-<tr class="separator:a6b44a114cabba8347a488dd1018ddeba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa09d8313eb07f0fbf0c7ef55b02e5361"><td class="memItemLeft" align="right" valign="top"><a id="aa09d8313eb07f0fbf0c7ef55b02e5361"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsGraphObserved</b> (const <a class="el" href="class_script_canvas_1_1_execution_state.html">ExecutionState</a> &amp;executionState) override</td></tr>
+<tr class="separator:aa09d8313eb07f0fbf0c7ef55b02e5361"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abafce2b5b85054f42a11bcde0509af73"><td class="memItemLeft" align="right" valign="top"><a id="abafce2b5b85054f42a11bcde0509af73"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVariableObserved</b> (const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;variableId) override</td></tr>
 <tr class="separator:abafce2b5b85054f42a11bcde0509af73"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,9 +103,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>NodeSignaledInput</b>
 <tr class="memitem:ad98d94cd3b2792ae376442f0fa5d4e8f"><td class="memItemLeft" align="right" valign="top"><a id="ad98d94cd3b2792ae376442f0fa5d4e8f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>NodeStateUpdated</b> (const <a class="el" href="struct_script_canvas_1_1_node_state_change.html">NodeStateChange</a> &amp;) override</td></tr>
 <tr class="separator:ad98d94cd3b2792ae376442f0fa5d4e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32fd08ef786202f1119352c5941e9769"><td class="memItemLeft" align="right" valign="top"><a id="a32fd08ef786202f1119352c5941e9769"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RuntimeError</b> (const AZ::EntityId &amp;entityId, const <a class="el" href="struct_script_canvas_1_1_graph_identifier.html">GraphIdentifier</a> &amp;identifier, const AZStd::string_view &amp;description) override</td></tr>
-<tr class="separator:a32fd08ef786202f1119352c5941e9769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63c9e9e31e6e50162603c5c7ed7155b"><td class="memItemLeft" align="right" valign="top"><a id="ae63c9e9e31e6e50162603c5c7ed7155b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RuntimeError</b> (const <a class="el" href="class_script_canvas_1_1_execution_state.html">ExecutionState</a> &amp;executionState, const AZStd::string_view &amp;description) override</td></tr>
+<tr class="separator:ae63c9e9e31e6e50162603c5c7ed7155b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5f10b2e158eb1f217ae0e3581e3daa2"><td class="memItemLeft" align="right" valign="top"><a id="aa5f10b2e158eb1f217ae0e3581e3daa2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>VariableChanged</b> (const <a class="el" href="struct_script_canvas_1_1_tagged_data_value.html">VariableChange</a> &amp;) override</td></tr>
 <tr class="separator:aa5f10b2e158eb1f217ae0e3581e3daa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,9 +179,9 @@ template&lt;typename t_SignalType , typename t_MessageType &gt; </td></tr>
 <tr class="memitem:acaa156760a31606873fb4480d7b3f375"><td class="memItemLeft" align="right" valign="top"><a id="acaa156760a31606873fb4480d7b3f375"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Connect</b> (<a class="el" href="struct_script_canvas_1_1_debugger_1_1_target.html">Target</a> &amp;target)</td></tr>
 <tr class="separator:acaa156760a31606873fb4480d7b3f375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6710b1b1fef7f0ec26818df2cb129f36"><td class="memItemLeft" align="right" valign="top"><a id="a6710b1b1fef7f0ec26818df2cb129f36"></a>
-<a class="el" href="class_script_canvas_1_1_debugger_1_1_message_1_1_request.html">Message::Request</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FilterMessage</b> (AzFramework::TmMsgPtr &amp;msg)</td></tr>
-<tr class="separator:a6710b1b1fef7f0ec26818df2cb129f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e2330a1058720dd52f8952787ecf31"><td class="memItemLeft" align="right" valign="top"><a id="ab6e2330a1058720dd52f8952787ecf31"></a>
+<a class="el" href="class_script_canvas_1_1_debugger_1_1_message_1_1_request.html">Message::Request</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FilterMessage</b> (AzFramework::RemoteToolsMessagePointer &amp;msg)</td></tr>
+<tr class="separator:ab6e2330a1058720dd52f8952787ecf31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70ba7f5eb2c870ba9a0fb297c7c92ffe"><td class="memItemLeft" align="right" valign="top"><a id="a70ba7f5eb2c870ba9a0fb297c7c92ffe"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Interact</b> ()</td></tr>
 <tr class="separator:a70ba7f5eb2c870ba9a0fb297c7c92ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,7 +200,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessMessages</b> (
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:05 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:32 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

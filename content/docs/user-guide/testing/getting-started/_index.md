@@ -54,7 +54,7 @@ CTest can also run a subset of labeled test suites with the `-L` argument. These
 
 * **Windows**:
     ```cmd
-    cd C:\github\o3de\build\vs_2019
+    cd C:\github\o3de\build\windows
     ctest -C profile -L "(SUITE_smoke|SUITE_main)"
     ```
 

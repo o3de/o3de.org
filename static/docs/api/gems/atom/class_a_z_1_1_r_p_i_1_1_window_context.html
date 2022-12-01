@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -46,6 +46,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_a_z_1_1_r_p_i_1_1_window_context-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -57,6 +59,16 @@ $(function() {
 
 <p>Inherits Handler, and Handler.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae5952c87284bc252aa88563f10bb8c3e"><td class="memItemLeft" align="right" valign="top"><a id="ae5952c87284bc252aa88563f10bb8c3e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#ae5952c87284bc252aa88563f10bb8c3e">SwapChainMode</a> : uint32_t { <b>Default</b> = 0, 
+<b>XrLeft</b>, 
+<b>XrRight</b>, 
+<b>Count</b>
+ }</td></tr>
+<tr class="memdesc:ae5952c87284bc252aa88563f10bb8c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum to describe swapchain type. <br /></td></tr>
+<tr class="separator:ae5952c87284bc252aa88563f10bb8c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7cc524c1a106b0544e388ad8c80e12be"><td class="memItemLeft" align="right" valign="top"><a id="a7cc524c1a106b0544e388ad8c80e12be"></a>
@@ -74,26 +86,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#abd3a7c78d072db7a53b09438ce534cea">Shutdown</a> ()</td></tr>
 <tr class="memdesc:abd3a7c78d072db7a53b09438ce534cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts down the <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html">WindowContext</a> and destroys the underlying SwapChain. <br /></td></tr>
 <tr class="separator:abd3a7c78d072db7a53b09438ce534cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1db9e435705ee45aade8d452e1aa9d1"><td class="memItemLeft" align="right" valign="top"><a id="ad1db9e435705ee45aade8d452e1aa9d1"></a>
-const RHI::AttachmentId &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#ad1db9e435705ee45aade8d452e1aa9d1">GetSwapChainAttachmentId</a> () const</td></tr>
-<tr class="memdesc:ad1db9e435705ee45aade8d452e1aa9d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unique attachment id associated with the swap chain. <br /></td></tr>
-<tr class="separator:ad1db9e435705ee45aade8d452e1aa9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92f7ff7d042bd457dad029266e8d0c87"><td class="memItemLeft" align="right" valign="top"><a id="a92f7ff7d042bd457dad029266e8d0c87"></a>
-const RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html">RHI::SwapChain</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#a92f7ff7d042bd457dad029266e8d0c87">GetSwapChain</a> () const</td></tr>
-<tr class="memdesc:a92f7ff7d042bd457dad029266e8d0c87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the underlying SwapChain created by this <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html">WindowContext</a>. <br /></td></tr>
-<tr class="separator:a92f7ff7d042bd457dad029266e8d0c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2da2027b2fb7154439e2065dbd8c83fe"><td class="memItemLeft" align="right" valign="top"><a id="a2da2027b2fb7154439e2065dbd8c83fe"></a>
-const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_viewport.html">RHI::Viewport</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#a2da2027b2fb7154439e2065dbd8c83fe">GetViewport</a> () const</td></tr>
-<tr class="memdesc:a2da2027b2fb7154439e2065dbd8c83fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the default ViewportState for the <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html">WindowContext</a>. <br /></td></tr>
-<tr class="separator:a2da2027b2fb7154439e2065dbd8c83fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26ae6487a488f611e5f97d5361a24e1c"><td class="memItemLeft" align="right" valign="top"><a id="a26ae6487a488f611e5f97d5361a24e1c"></a>
-const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_scissor.html">RHI::Scissor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#a26ae6487a488f611e5f97d5361a24e1c">GetScissor</a> () const</td></tr>
-<tr class="memdesc:a26ae6487a488f611e5f97d5361a24e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the default ScissorState for the <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html">WindowContext</a>. <br /></td></tr>
-<tr class="separator:a26ae6487a488f611e5f97d5361a24e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9687b6fc84f9387019ab6f610f6665f"><td class="memItemLeft" align="right" valign="top"><a id="af9687b6fc84f9387019ab6f610f6665f"></a>
+const RHI::AttachmentId &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#af9687b6fc84f9387019ab6f610f6665f">GetSwapChainAttachmentId</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#ae5952c87284bc252aa88563f10bb8c3e">SwapChainMode</a> swapChainMode=SwapChainMode::Default) const</td></tr>
+<tr class="memdesc:af9687b6fc84f9387019ab6f610f6665f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unique attachment id associated with the swap chain. <br /></td></tr>
+<tr class="separator:af9687b6fc84f9387019ab6f610f6665f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad28fe9d988770153b34bb69d462b3de2"><td class="memItemLeft" align="right" valign="top"><a id="ad28fe9d988770153b34bb69d462b3de2"></a>
+const RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html">RHI::SwapChain</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#ad28fe9d988770153b34bb69d462b3de2">GetSwapChain</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#ae5952c87284bc252aa88563f10bb8c3e">SwapChainMode</a> swapChainMode=SwapChainMode::Default) const</td></tr>
+<tr class="memdesc:ad28fe9d988770153b34bb69d462b3de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the underlying SwapChain created by this <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html">WindowContext</a>. <br /></td></tr>
+<tr class="separator:ad28fe9d988770153b34bb69d462b3de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1489fb80d91a53fa8fe6746bb32dc077"><td class="memItemLeft" align="right" valign="top"><a id="a1489fb80d91a53fa8fe6746bb32dc077"></a>
+const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_viewport.html">RHI::Viewport</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#a1489fb80d91a53fa8fe6746bb32dc077">GetViewport</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#ae5952c87284bc252aa88563f10bb8c3e">SwapChainMode</a> swapChainMode=SwapChainMode::Default) const</td></tr>
+<tr class="memdesc:a1489fb80d91a53fa8fe6746bb32dc077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the default ViewportState for the <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html">WindowContext</a>. <br /></td></tr>
+<tr class="separator:a1489fb80d91a53fa8fe6746bb32dc077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f3453cd442030e4c50d17f88f87bdb3"><td class="memItemLeft" align="right" valign="top"><a id="a1f3453cd442030e4c50d17f88f87bdb3"></a>
+const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_scissor.html">RHI::Scissor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#a1f3453cd442030e4c50d17f88f87bdb3">GetScissor</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#ae5952c87284bc252aa88563f10bb8c3e">SwapChainMode</a> swapChainMode=SwapChainMode::Default) const</td></tr>
+<tr class="memdesc:a1f3453cd442030e4c50d17f88f87bdb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the default ScissorState for the <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html">WindowContext</a>. <br /></td></tr>
+<tr class="separator:a1f3453cd442030e4c50d17f88f87bdb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a269def424cc89862fe0c98ea73ef4798"><td class="memItemLeft" align="right" valign="top"><a id="a269def424cc89862fe0c98ea73ef4798"></a>
 AzFramework::NativeWindowHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#a269def424cc89862fe0c98ea73ef4798">GetWindowHandle</a> () const</td></tr>
 <tr class="memdesc:a269def424cc89862fe0c98ea73ef4798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the window ID for the <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html">WindowContext</a>. <br /></td></tr>
 <tr class="separator:a269def424cc89862fe0c98ea73ef4798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e6973b44875f4ffd013e7da7e8a77d"><td class="memItemLeft" align="right" valign="top"><a id="a58e6973b44875f4ffd013e7da7e8a77d"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#a58e6973b44875f4ffd013e7da7e8a77d">GetSwapChainsSize</a> () const</td></tr>
+<tr class="memdesc:a58e6973b44875f4ffd013e7da7e8a77d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of active swapchains. <br /></td></tr>
+<tr class="separator:a58e6973b44875f4ffd013e7da7e8a77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An RPI-level understanding of a Window and its relevant SwapChain This is how the RPI creates a SwapChain from an AzFramework's Window and passes it down throughout the RPI. This is a convenient way to package the SwapChain, Window size, Attachment info and other window information needed to present to a surface. </p>
@@ -151,7 +167,7 @@ AzFramework::NativeWindowHandle&#160;</td><td class="memItemRight" valign="botto
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:30 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

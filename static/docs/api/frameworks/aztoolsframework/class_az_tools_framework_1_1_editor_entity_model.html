@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -55,7 +55,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits Handler, Handler, Handler, MultiHandler, Handler, Handler, Handler, Handler, Handler, Handler, MultiHandler, and Handler.</p>
+<p>Inherits Handler, Handler, Handler, MultiHandler, Handler, Handler, Handler, Handler, Handler, Handler, Handler, MultiHandler, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -113,12 +113,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityStreamLoadSuc
 <tr class="memitem:a049acf052eb102f295e5ea141a7c14ee"><td class="memItemLeft" align="right" valign="top"><a id="a049acf052eb102f295e5ea141a7c14ee"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityStreamLoadFailed</b> () override</td></tr>
 <tr class="separator:a049acf052eb102f295e5ea141a7c14ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42e9aeb190d8d03e7da0d8ba00214da4"><td class="memItemLeft" align="right" valign="top"><a id="a42e9aeb190d8d03e7da0d8ba00214da4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntitiesAboutToBeCloned</b> () override</td></tr>
-<tr class="separator:a42e9aeb190d8d03e7da0d8ba00214da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bd9199a84d70f10d0fb525b4f742669"><td class="memItemLeft" align="right" valign="top"><a id="a7bd9199a84d70f10d0fb525b4f742669"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntitiesCloned</b> () override</td></tr>
-<tr class="separator:a7bd9199a84d70f10d0fb525b4f742669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a476190a5f40d22f47b80d7a7a9692d1b"><td class="memItemLeft" align="right" valign="top"><a id="a476190a5f40d22f47b80d7a7a9692d1b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetForceAddEntitiesToBackFlag</b> (bool forceAddToBack) override</td></tr>
+<tr class="separator:a476190a5f40d22f47b80d7a7a9692d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27cfaef657d504b3de78aa431aceb8a0"><td class="memItemLeft" align="right" valign="top"><a id="a27cfaef657d504b3de78aa431aceb8a0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityContextReset</b> () override</td></tr>
 <tr class="separator:a27cfaef657d504b3de78aa431aceb8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +152,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityActivated</b>
 <tr class="memitem:a2a7321014bb755daa5260056296f30ba"><td class="memItemLeft" align="right" valign="top"><a id="a2a7321014bb755daa5260056296f30ba"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTick</b> (float deltaTime, AZ::ScriptTimePoint time) override</td></tr>
 <tr class="separator:a2a7321014bb755daa5260056296f30ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3790a48a6ea0c320c8f1934afc7319bd"><td class="memItemLeft" align="right" valign="top"><a id="a3790a48a6ea0c320c8f1934afc7319bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabInstancePropagationBegin</b> () override</td></tr>
+<tr class="separator:a3790a48a6ea0c320c8f1934afc7319bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac916d433fce003b4612ad5341b5cabfd"><td class="memItemLeft" align="right" valign="top"><a id="ac916d433fce003b4612ad5341b5cabfd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabInstancePropagationEnd</b> () override</td></tr>
+<tr class="separator:ac916d433fce003b4612ad5341b5cabfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1f6aa2ae5b7f1ed50e5fbbde61fa812"><td class="memItemLeft" align="right" valign="top"><a id="ab1f6aa2ae5b7f1ed50e5fbbde61fa812"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddToChildrenWithOverrides</b> (const EntityIdList &amp;parentEntityIds, const AZ::EntityId &amp;entityId) override</td></tr>
 <tr class="separator:ab1f6aa2ae5b7f1ed50e5fbbde61fa812"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,7 +171,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveFromChildrenWit
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:36 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:29 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

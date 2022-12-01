@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -69,9 +69,13 @@ $(function() {
 <li>CanToggleLockVisibility()
 : <a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#ae8cb0672c506ea03ad8ba7acce9a487f">AzToolsFramework::EditorEntityUiHandlerBase</a>
 , <a class="el" href="class_az_tools_framework_1_1_level_root_ui_handler.html#a091a423c91a1650f48a0107089517764">AzToolsFramework::LevelRootUiHandler</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#ad7c33b516491ce8f16338f0bccfafae2">AzToolsFramework::PrefabUiHandler</a>
 </li>
 <li>CatalogExists()
 : <a class="el" href="class_az_tools_framework_1_1_platform_addressed_asset_catalog.html#a025f78430dd41caeaeb71ce6f42c64ab">AzToolsFramework::PlatformAddressedAssetCatalog</a>
+</li>
+<li>ChangeComponentMode()
+: <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_system_requests.html#ab13fea081d9ae8d226947be56ebe503f">AzToolsFramework::ComponentModeFramework::ComponentModeSystemRequests</a>
 </li>
 <li>Changed()
 : <a class="el" href="class_az_tools_framework_1_1_base_slice_command.html#ac25e0fcd4f1cfb0e0f747b3226c64952">AzToolsFramework::BaseSliceCommand</a>
@@ -79,7 +83,6 @@ $(function() {
 , <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_command.html#a351090eca92fd982a5058e15c9ed5e2f">AzToolsFramework::ComponentModeFramework::ComponentModeCommand</a>
 , <a class="el" href="class_az_tools_framework_1_1_entity_manipulator_command.html#abd282f2f31049fbb52676382d1a00537">AzToolsFramework::EntityManipulatorCommand</a>
 , <a class="el" href="class_az_tools_framework_1_1_entity_state_command.html#a70f65a3cf924a0c0923e98635012b4c5">AzToolsFramework::EntityStateCommand</a>
-, <a class="el" href="class_az_tools_framework_1_1_legacy_command.html#a87572aa0a735b5a20d132f2e82342715">AzToolsFramework::LegacyCommand&lt; UndoObjectType &gt;</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_undo.html#a6190fbc2abd2697f2e1f0d57c5a7c8a8">AzToolsFramework::Prefab::PrefabFocusUndo</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_undo_base.html#a578f8cd2294205c5c6ae7f6377225351">AzToolsFramework::Prefab::PrefabUndoBase</a>
 , <a class="el" href="class_az_tools_framework_1_1_selection_command.html#a51998fdb690d4cbfd3c503faf371f956">AzToolsFramework::SelectionCommand</a>
@@ -89,6 +92,9 @@ $(function() {
 </li>
 <li>ChangedNodeCB
 : <a class="el" href="class_az_tools_framework_1_1_instance_data_hierarchy.html#ac90c5f39450daf5e743f5f124308e6dd">AzToolsFramework::InstanceDataHierarchy</a>
+</li>
+<li>ChangeViewportBorderText()
+: <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a9755acbf041a4cee075fe7408f035b72">AzToolsFramework::ViewportUi::ViewportUiRequests</a>
 </li>
 <li>CheckOkayToShutDown()
 : <a class="el" href="class_legacy_framework_1_1_core_messages.html#a0e721cf5fc7c169c6c8ffc0ed61004a0">LegacyFramework::CoreMessages</a>
@@ -108,6 +114,7 @@ $(function() {
 , <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_previewer_frame.html#a4518d65fb6a464716937dfeed5c36d91">AzToolsFramework::AssetBrowser::PreviewerFrame</a>
 , <a class="el" href="class_az_tools_framework_1_1_container_entity_interface.html#a8b0cecefd8007fa18015d2e96ecf43b9">AzToolsFramework::ContainerEntityInterface</a>
 , <a class="el" href="class_az_tools_framework_1_1_container_entity_system_component.html#a26d8564493ff60dd286641a6ec0f465c">AzToolsFramework::ContainerEntitySystemComponent</a>
+, <a class="el" href="class_az_tools_framework_1_1_d_p_e_row_widget.html#a568cfd35fd6e167b3556f8cfb1c450d1">AzToolsFramework::DPERowWidget</a>
 , <a class="el" href="class_az_tools_framework_1_1_preemptive_undo_cache.html#afbf97af8208781842f1b72fdcdc8d99c">AzToolsFramework::PreemptiveUndoCache</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_undo_cache.html#a8007ba984937189018c497ad53775757">AzToolsFramework::Prefab::PrefabUndoCache</a>
 , <a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_undo_cache_interface.html#ae935148d83d8ac0a403117f5278a9e74">AzToolsFramework::UndoSystem::UndoCacheInterface</a>
@@ -293,6 +300,15 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a742cfb08b34bce17cd2518d345259232">AzToolsFramework::Prefab::PrefabPublicHandler</a>
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#ae905468dc2ae176e5762e9595ce5f74f">AzToolsFramework::Prefab::PrefabPublicInterface</a>
 </li>
+<li>CreateHandlerInstance()
+: <a class="el" href="class_az_tools_framework_1_1_property_editor_tools_system.html#af63c9f60a2bf9df589ea60ac1ddd856a">AzToolsFramework::PropertyEditorToolsSystem</a>
+, <a class="el" href="class_az_tools_framework_1_1_property_editor_tools_system_interface.html#a65250c2896445c2a4ed7cd16747c780a">AzToolsFramework::PropertyEditorToolsSystemInterface</a>
+</li>
+<li>CreateInMemorySpawnableAsset()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_in_memory_spawnable_asset_processor.html#a5717d5e3bfcaf4d35c18a910b94daf7a">AzToolsFramework::Prefab::PrefabConversionUtils::InMemorySpawnableAssetProcessor</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_prefab_in_memory_spawnable_converter.html#a59b80c27eda0d444f6d9ee183fff7352">AzToolsFramework::Prefab::PrefabConversionUtils::PrefabInMemorySpawnableConverter</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#aad3c1f0a04857bdbe2360ba4bbcb9057">AzToolsFramework::Prefab::PrefabPublicRequests</a>
+</li>
 <li>CreateLayerAssetContextMenu()
 : <a class="el" href="class_az_tools_framework_1_1_layers_1_1_editor_layer_component.html#a9799a52d42f6fdbbeb93e73c2ea28bcc">AzToolsFramework::Layers::EditorLayerComponent</a>
 </li>
@@ -380,7 +396,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:41 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:35 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2205.0</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -55,24 +55,42 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;DocumentSchema.h&gt;</code></p>
+
+<p>Inherits <a class="el" href="class_a_z_1_1_document_property_editor_1_1_attribute_definition_interface.html">AZ::DocumentPropertyEditor::AttributeDefinitionInterface</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af0012808b4469f723ebf881367e6b69a"><td class="memItemLeft" align="right" valign="top"><a id="af0012808b4469f723ebf881367e6b69a"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>AttributeDefinition</b> (AZStd::string_view name)</td></tr>
 <tr class="separator:af0012808b4469f723ebf881367e6b69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af84d87ed69be86ba614cf376c20b174e"><td class="memItemLeft" align="right" valign="top"><a id="af84d87ed69be86ba614cf376c20b174e"></a>
-Name&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_attribute_definition.html#af84d87ed69be86ba614cf376c20b174e">GetName</a> () const</td></tr>
-<tr class="memdesc:af84d87ed69be86ba614cf376c20b174e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the name of this attribute, as used as a key in the DOM. <br /></td></tr>
-<tr class="separator:af84d87ed69be86ba614cf376c20b174e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8ba4647f4a921d8739d20ca4c595cc5"><td class="memItemLeft" align="right" valign="top"><a id="aa8ba4647f4a921d8739d20ca4c595cc5"></a>
-Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_attribute_definition.html#aa8ba4647f4a921d8739d20ca4c595cc5">ValueToDom</a> (const AttributeType &amp;attribute) const</td></tr>
-<tr class="memdesc:aa8ba4647f4a921d8739d20ca4c595cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a value of this attribute's type to a DOM value. <br /></td></tr>
-<tr class="separator:aa8ba4647f4a921d8739d20ca4c595cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee0dc5963f653683ef66c8aac7b242e6"><td class="memItemLeft" align="right" valign="top"><a id="aee0dc5963f653683ef66c8aac7b242e6"></a>
-AttributeType &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_attribute_definition.html#aee0dc5963f653683ef66c8aac7b242e6">DomToValue</a> (const Dom::Value &amp;value) const</td></tr>
-<tr class="memdesc:aee0dc5963f653683ef66c8aac7b242e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a DOM value to an instance of AttributeType. <br /></td></tr>
-<tr class="separator:aee0dc5963f653683ef66c8aac7b242e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a3e606a114db793abff2d21ac489a4d"><td class="memItemLeft" align="right" valign="top"><a id="a3a3e606a114db793abff2d21ac489a4d"></a>
+Name&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_attribute_definition.html#a3a3e606a114db793abff2d21ac489a4d">GetName</a> () const override</td></tr>
+<tr class="memdesc:a3a3e606a114db793abff2d21ac489a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the name of this attribute, as used as a key in the DOM. <br /></td></tr>
+<tr class="separator:a3a3e606a114db793abff2d21ac489a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad210ba9c3abf08ba0a2ad52a6115c72"><td class="memItemLeft" align="right" valign="top"><a id="aad210ba9c3abf08ba0a2ad52a6115c72"></a>
+virtual Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_attribute_definition.html#aad210ba9c3abf08ba0a2ad52a6115c72">ValueToDom</a> (const AttributeType &amp;attribute) const</td></tr>
+<tr class="memdesc:aad210ba9c3abf08ba0a2ad52a6115c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a value of this attribute's type to a DOM value. <br /></td></tr>
+<tr class="separator:aad210ba9c3abf08ba0a2ad52a6115c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d87f8095b609a117fba049c79f4bb08"><td class="memItemLeft" align="right" valign="top"><a id="a1d87f8095b609a117fba049c79f4bb08"></a>
+virtual AZStd::optional&lt; AttributeType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_attribute_definition.html#a1d87f8095b609a117fba049c79f4bb08">DomToValue</a> (const Dom::Value &amp;value) const</td></tr>
+<tr class="memdesc:a1d87f8095b609a117fba049c79f4bb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a DOM value to an instance of AttributeType. <br /></td></tr>
+<tr class="separator:a1d87f8095b609a117fba049c79f4bb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7e7482abc6153ca405608f44740ff3"><td class="memItemLeft" align="right" valign="top"><a id="aba7e7482abc6153ca405608f44740ff3"></a>
+AZStd::optional&lt; AttributeType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_attribute_definition.html#aba7e7482abc6153ca405608f44740ff3">ExtractFromDomNode</a> (const Dom::Value &amp;node) const</td></tr>
+<tr class="memdesc:aba7e7482abc6153ca405608f44740ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts this value from a given Node, if this attribute is set there. <br /></td></tr>
+<tr class="separator:aba7e7482abc6153ca405608f44740ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45185a8943bef29edb2135609331c3b3"><td class="memItemLeft" align="right" valign="top"><a id="a45185a8943bef29edb2135609331c3b3"></a>
+const AZ::TypeId &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_attribute_definition.html#a45185a8943bef29edb2135609331c3b3">GetTypeId</a> () const override</td></tr>
+<tr class="memdesc:a45185a8943bef29edb2135609331c3b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets this attribute's type ID. <br /></td></tr>
+<tr class="separator:a45185a8943bef29edb2135609331c3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8d2d7b8bab27185cbf2b88919831b6"><td class="memItemLeft" align="right" valign="top"><a id="a6b8d2d7b8bab27185cbf2b88919831b6"></a>
+AZStd::shared_ptr&lt; AZ::Attribute &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_attribute_definition.html#a6b8d2d7b8bab27185cbf2b88919831b6">DomValueToLegacyAttribute</a> (const AZ::Dom::Value &amp;value) const override</td></tr>
+<tr class="memdesc:a6b8d2d7b8bab27185cbf2b88919831b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts this attribute to an AZ::Attribute usable by the ReflectedPropertyEditor. <br /></td></tr>
+<tr class="separator:a6b8d2d7b8bab27185cbf2b88919831b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09daaf8b0056d9113f9e2dbcaa949f90"><td class="memItemLeft" align="right" valign="top"><a id="a09daaf8b0056d9113f9e2dbcaa949f90"></a>
+AZ::Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_attribute_definition.html#a09daaf8b0056d9113f9e2dbcaa949f90">LegacyAttributeToDomValue</a> (void *instance, AZ::Attribute *attribute) const override</td></tr>
+<tr class="memdesc:a09daaf8b0056d9113f9e2dbcaa949f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts this attribute from an AZ::Attribute to a Dom::Value usable in the DocumentPropertyEditor. <br /></td></tr>
+<tr class="separator:a09daaf8b0056d9113f9e2dbcaa949f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -91,7 +109,7 @@ class AZ::DocumentPropertyEditor::AttributeDefinition&lt; AttributeType &gt;</h3
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 15:18:00 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:10 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

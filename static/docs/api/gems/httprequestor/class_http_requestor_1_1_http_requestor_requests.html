@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine HttpRequestor Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -54,27 +54,23 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p><code>#include &lt;HttpRequestorBus.h&gt;</code></p>
+
 <p>Inherits EBusTraits.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adb2c87105b13aab9047949ee8df4b060"><td class="memItemLeft" align="right" valign="top"><a id="adb2c87105b13aab9047949ee8df4b060"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRequest</b> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const Callback &amp;callback)=0</td></tr>
+<tr class="memitem:adb2c87105b13aab9047949ee8df4b060"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_http_requestor_1_1_http_requestor_requests.html#adb2c87105b13aab9047949ee8df4b060">AddRequest</a> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const Callback &amp;callback)=0</td></tr>
 <tr class="separator:adb2c87105b13aab9047949ee8df4b060"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04d7342d8029e6fdf65bec7b5b583f85"><td class="memItemLeft" align="right" valign="top"><a id="a04d7342d8029e6fdf65bec7b5b583f85"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRequestWithHeaders</b> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const Headers &amp;headers, const Callback &amp;callback)=0</td></tr>
+<tr class="memitem:a04d7342d8029e6fdf65bec7b5b583f85"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_http_requestor_1_1_http_requestor_requests.html#a04d7342d8029e6fdf65bec7b5b583f85">AddRequestWithHeaders</a> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const Headers &amp;headers, const Callback &amp;callback)=0</td></tr>
 <tr class="separator:a04d7342d8029e6fdf65bec7b5b583f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb6db624f8fc46a97c591ab7ca481eba"><td class="memItemLeft" align="right" valign="top"><a id="aeb6db624f8fc46a97c591ab7ca481eba"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRequestWithHeadersAndBody</b> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const Headers &amp;headers, const AZStd::string &amp;body, const Callback &amp;callback)=0</td></tr>
+<tr class="memitem:aeb6db624f8fc46a97c591ab7ca481eba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_http_requestor_1_1_http_requestor_requests.html#aeb6db624f8fc46a97c591ab7ca481eba">AddRequestWithHeadersAndBody</a> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const Headers &amp;headers, const AZStd::string &amp;body, const Callback &amp;callback)=0</td></tr>
 <tr class="separator:aeb6db624f8fc46a97c591ab7ca481eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab661819ea123b61836adfb3800879086"><td class="memItemLeft" align="right" valign="top"><a id="ab661819ea123b61836adfb3800879086"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddTextRequest</b> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const TextCallback &amp;callback)=0</td></tr>
+<tr class="memitem:ab661819ea123b61836adfb3800879086"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_http_requestor_1_1_http_requestor_requests.html#ab661819ea123b61836adfb3800879086">AddTextRequest</a> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const TextCallback &amp;callback)=0</td></tr>
 <tr class="separator:ab661819ea123b61836adfb3800879086"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6f32c4f96a3a33001aee115eb0b16b4"><td class="memItemLeft" align="right" valign="top"><a id="af6f32c4f96a3a33001aee115eb0b16b4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddTextRequestWithHeaders</b> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const Headers &amp;headers, const TextCallback &amp;callback)=0</td></tr>
+<tr class="memitem:af6f32c4f96a3a33001aee115eb0b16b4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_http_requestor_1_1_http_requestor_requests.html#af6f32c4f96a3a33001aee115eb0b16b4">AddTextRequestWithHeaders</a> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const Headers &amp;headers, const TextCallback &amp;callback)=0</td></tr>
 <tr class="separator:af6f32c4f96a3a33001aee115eb0b16b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad59a4a36529264c0ced97fd780f7c55a"><td class="memItemLeft" align="right" valign="top"><a id="ad59a4a36529264c0ced97fd780f7c55a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddTextRequestWithHeadersAndBody</b> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const Headers &amp;headers, const AZStd::string &amp;body, const TextCallback &amp;callback)=0</td></tr>
+<tr class="memitem:ad59a4a36529264c0ced97fd780f7c55a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_http_requestor_1_1_http_requestor_requests.html#ad59a4a36529264c0ced97fd780f7c55a">AddTextRequestWithHeadersAndBody</a> (const AZStd::string &amp;URI, Aws::Http::HttpMethod method, const Headers &amp;headers, const AZStd::string &amp;body, const TextCallback &amp;callback)=0</td></tr>
 <tr class="separator:ad59a4a36529264c0ced97fd780f7c55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -86,13 +82,358 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>AddressPolicy</b> = AZ::EBusAddressPolicy::Single</td></tr>
 <tr class="separator:a4b443e7e94a4f0f793c6fb30dbb4b1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Defines request APIs for Gem. Supports making HTTP requests. See <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html">HTTP RFC</a> for expectations around methods, headers, and body. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="adb2c87105b13aab9047949ee8df4b060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb2c87105b13aab9047949ee8df4b060">&#9670;&nbsp;</a></span>AddRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HttpRequestor::HttpRequestorRequests::AddRequest </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>URI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Aws::Http::HttpMethod&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Callback &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Make a RESTful call to a HTTP(s) endpoint. Receive the response, via the supplied callback as JSON. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">URI</td><td>The universal resource indicator representing the endpoint to make the request to. </td></tr>
+    <tr><td class="paramname">method</td><td>The HTTP method to use, for example HTTP_GET. </td></tr>
+    <tr><td class="paramname">callback</td><td>The callback method to receive the JSON response object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a04d7342d8029e6fdf65bec7b5b583f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04d7342d8029e6fdf65bec7b5b583f85">&#9670;&nbsp;</a></span>AddRequestWithHeaders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HttpRequestor::HttpRequestorRequests::AddRequestWithHeaders </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>URI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Aws::Http::HttpMethod&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Headers &amp;&#160;</td>
+          <td class="paramname"><em>headers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Callback &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Make a RESTful call to a HTTP(s) endpoint with customized headers. Receive the response, via the supplied callback as JSON. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">URI</td><td>The universal resource indicator representing the endpoint to make the request to. </td></tr>
+    <tr><td class="paramname">method</td><td>The HTTP method to use, for example HTTP_GET. </td></tr>
+    <tr><td class="paramname">headers</td><td>A map of header names and values to set on the request. </td></tr>
+    <tr><td class="paramname">callback</td><td>The callback method to receive the JSON response object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeb6db624f8fc46a97c591ab7ca481eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb6db624f8fc46a97c591ab7ca481eba">&#9670;&nbsp;</a></span>AddRequestWithHeadersAndBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HttpRequestor::HttpRequestorRequests::AddRequestWithHeadersAndBody </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>URI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Aws::Http::HttpMethod&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Headers &amp;&#160;</td>
+          <td class="paramname"><em>headers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>body</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Callback &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Make a RESTful call to a HTTP(s) endpoint with customized headers and a body. Receive the response, via the supplied callback as JSON. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">URI</td><td>The universal resource indicator representing the endpoint to make the request to. </td></tr>
+    <tr><td class="paramname">method</td><td>The HTTP method to use, for example HTTP_POST. </td></tr>
+    <tr><td class="paramname">headers</td><td>A map of header names and values to set on the request. </td></tr>
+    <tr><td class="paramname">body</td><td>Any HTTP request data to include in the request. Use Content-Type and Content-Length headers to specify the nature of the body payload. </td></tr>
+    <tr><td class="paramname">callback</td><td>The callback method to receive the JSON response object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab661819ea123b61836adfb3800879086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab661819ea123b61836adfb3800879086">&#9670;&nbsp;</a></span>AddTextRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HttpRequestor::HttpRequestorRequests::AddTextRequest </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>URI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Aws::Http::HttpMethod&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TextCallback &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Make a RESTful call to a HTTP(s) endpoint. Receive the response, via the supplied callback as text. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">URI</td><td>The universal resource indicator representing the endpoint to make the request to. </td></tr>
+    <tr><td class="paramname">method</td><td>The http method to use, for example HTTP_GET. </td></tr>
+    <tr><td class="paramname">callback</td><td>The callback method to receive the JSON response object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af6f32c4f96a3a33001aee115eb0b16b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6f32c4f96a3a33001aee115eb0b16b4">&#9670;&nbsp;</a></span>AddTextRequestWithHeaders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HttpRequestor::HttpRequestorRequests::AddTextRequestWithHeaders </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>URI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Aws::Http::HttpMethod&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Headers &amp;&#160;</td>
+          <td class="paramname"><em>headers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TextCallback &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Make a RESTful call to a HTTP(s) endpoint with customized headers. Receive the response, via the supplied callback as text. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">URI</td><td>The universal resource indicator representing the endpoint to make the request to. </td></tr>
+    <tr><td class="paramname">method</td><td>The HTTP method to use, for example HTTP_GET. </td></tr>
+    <tr><td class="paramname">headers</td><td>A map of header names and values to set on the request. </td></tr>
+    <tr><td class="paramname">callback</td><td>The callback method to receive the JSON response object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad59a4a36529264c0ced97fd780f7c55a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad59a4a36529264c0ced97fd780f7c55a">&#9670;&nbsp;</a></span>AddTextRequestWithHeadersAndBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HttpRequestor::HttpRequestorRequests::AddTextRequestWithHeadersAndBody </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>URI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Aws::Http::HttpMethod&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Headers &amp;&#160;</td>
+          <td class="paramname"><em>headers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>body</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TextCallback &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Make a RESTful call to a HTTP(s) endpoint with customized headers and a body. Receive the response, via the supplied callback as text. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">URI</td><td>The universal resource indicator representing the endpoint to make the request to. </td></tr>
+    <tr><td class="paramname">method</td><td>The HTTP method to use, for example HTTP_POST. </td></tr>
+    <tr><td class="paramname">headers</td><td>A map of header names and values to set on the request. </td></tr>
+    <tr><td class="paramname">body</td><td>Any HTTP request data to include in the request. Use Content-Type and Content-Length headers to specify the nature of the body payload. </td></tr>
+    <tr><td class="paramname">callback</td><td>The callback method to receive the JSON response object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/HttpRequestor/Code/Include/HttpRequestor/HttpRequestorBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:46 for Open 3D Engine HttpRequestor Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:00 for Open 3D Engine HttpRequestor Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

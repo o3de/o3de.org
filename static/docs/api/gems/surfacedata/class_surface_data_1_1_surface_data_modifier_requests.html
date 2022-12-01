@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine SurfaceData Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -57,23 +57,19 @@ $(function() {
 
 <p><code>#include &lt;SurfaceDataModifierRequestBus.h&gt;</code></p>
 
-<p>Inherits EBusTraits.</p>
+<p>Inherits EBusSharedDispatchTraits&lt; SurfaceDataModifierRequests &gt;.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a7791185d578412397d2d47d7d3b28cdc"><td class="memItemLeft" align="right" valign="top"><a id="a7791185d578412397d2d47d7d3b28cdc"></a>
 typedef AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>BusIdType</b></td></tr>
 <tr class="separator:a7791185d578412397d2d47d7d3b28cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cd5c85dc01440d31692a68583e22088"><td class="memItemLeft" align="right" valign="top"><a id="a3cd5c85dc01440d31692a68583e22088"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_surface_data_1_1_surface_data_modifier_requests.html#a3cd5c85dc01440d31692a68583e22088">MutexType</a> = AZStd::recursive_mutex</td></tr>
-<tr class="memdesc:a3cd5c85dc01440d31692a68583e22088"><td class="mdescLeft">&#160;</td><td class="mdescRight">allows multiple threads to call <br /></td></tr>
-<tr class="separator:a3cd5c85dc01440d31692a68583e22088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab03659032db81f54b5596a4f2b92d1cf"><td class="memItemLeft" align="right" valign="top"><a id="ab03659032db81f54b5596a4f2b92d1cf"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ModifySurfacePoints</b> (SurfacePointList &amp;surfacePointList) const =0</td></tr>
-<tr class="separator:ab03659032db81f54b5596a4f2b92d1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac247aa009a6bf17e4f7cc3195b0ee970"><td class="memItemLeft" align="right" valign="top"><a id="ac247aa009a6bf17e4f7cc3195b0ee970"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ModifySurfacePoints</b> (AZStd::span&lt; const AZ::Vector3 &gt; positions, AZStd::span&lt; const AZ::EntityId &gt; creatorEntityIds, AZStd::span&lt; <a class="el" href="class_surface_data_1_1_surface_tag_weights.html">SurfaceData::SurfaceTagWeights</a> &gt; weights) const =0</td></tr>
+<tr class="separator:ac247aa009a6bf17e4f7cc3195b0ee970"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -85,14 +81,14 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 <tr class="separator:af71328654cbe6210e8bbde05ab01c3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>the EBus is used to request information about a surface </p>
+<div class="textblock"><p>The EBus is used to request information about a surface. This bus uses shared dispatches, which means that all requests on the bus can run in parallel, but will NOT run in parallel with bus connections / disconnections. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/SurfaceData/Code/Include/SurfaceData/SurfaceDataModifierRequestBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:05:15 for Open 3D Engine SurfaceData Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:46 for Open 3D Engine SurfaceData Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

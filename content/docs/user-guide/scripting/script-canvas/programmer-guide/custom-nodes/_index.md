@@ -35,5 +35,6 @@ For a better understanding of creating custom nodes, we recommend reading follow
 | --- | --- |
 | [Custom Nodeable Nodes](custom-nodeable-nodes/) | How to create custom Script Canvas Nodeable Nodes in Open 3D Engine (O3DE). |
 | [Custom Free Function Nodes](custom-free-function-nodes/) | How to create custom Script Canvas Free Function Nodes in Open 3D Engine (O3DE). |
+| [Node Definition Reference](custom-node-definition-reference/) | Reference guide for Script Canvas node definitions. |
 | [Dynamic Data Slots](dynamic-data-slots/) | Use dynamic data slots to enable a single Script Canvas node to process a variety of data types in Open 3D Engine (O3DE). |
 

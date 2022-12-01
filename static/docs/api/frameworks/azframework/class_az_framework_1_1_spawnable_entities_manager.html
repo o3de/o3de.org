@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -76,15 +76,23 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_list_indices_entities_command.html">ListIndicesEntitiesCommand</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_load_barrier_command.html">LoadBarrierCommand</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_queue.html">Queue</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_register_ticket_command.html">RegisterTicketCommand</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_reload_spawnable_command.html">ReloadSpawnableCommand</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_retrieve_ticket_command.html">RetrieveTicketCommand</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_spawn_all_entities_command.html">SpawnAllEntitiesCommand</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_spawn_entities_command.html">SpawnEntitiesCommand</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_ticket.html">Ticket</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_update_entity_alias_types_command.html">UpdateEntityAliasTypesCommand</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -112,21 +120,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a339cb4b43707755bd81818b2ff4c6ec4"><td class="memItemLeft" align="right" valign="top"><a id="a339cb4b43707755bd81818b2ff4c6ec4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnAllEntities</b> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, <a class="el" href="struct_az_framework_1_1_spawn_all_entities_optional_args.html">SpawnAllEntitiesOptionalArgs</a> optionalArgs={}) override</td></tr>
 <tr class="separator:a339cb4b43707755bd81818b2ff4c6ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bff73ee815f651d83adf9b8fcc71795"><td class="memItemLeft" align="right" valign="top"><a id="a6bff73ee815f651d83adf9b8fcc71795"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnEntities</b> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, AZStd::vector&lt; size_t &gt; entityIndices, <a class="el" href="struct_az_framework_1_1_spawn_entities_optional_args.html">SpawnEntitiesOptionalArgs</a> optionalArgs={}) override</td></tr>
-<tr class="separator:a6bff73ee815f651d83adf9b8fcc71795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1cec58c5b39ea66fd00fcf696b4d8b7"><td class="memItemLeft" align="right" valign="top"><a id="af1cec58c5b39ea66fd00fcf696b4d8b7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnEntities</b> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, AZStd::vector&lt; uint32_t &gt; entityIndices, <a class="el" href="struct_az_framework_1_1_spawn_entities_optional_args.html">SpawnEntitiesOptionalArgs</a> optionalArgs={}) override</td></tr>
+<tr class="separator:af1cec58c5b39ea66fd00fcf696b4d8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af181f83b33ad8347d0188e332c57d579"><td class="memItemLeft" align="right" valign="top"><a id="af181f83b33ad8347d0188e332c57d579"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DespawnAllEntities</b> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, <a class="el" href="struct_az_framework_1_1_despawn_all_entities_optional_args.html">DespawnAllEntitiesOptionalArgs</a> optionalArgs={}) override</td></tr>
 <tr class="separator:af181f83b33ad8347d0188e332c57d579"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d11fb15e7ff183a8e323e2096655a37"><td class="memItemLeft" align="right" valign="top"><a id="a7d11fb15e7ff183a8e323e2096655a37"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DespawnEntity</b> (AZ::EntityId entityId, <a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, <a class="el" href="struct_az_framework_1_1_despawn_entity_optional_args.html">DespawnEntityOptionalArgs</a> optionalArgs={}) override</td></tr>
 <tr class="separator:a7d11fb15e7ff183a8e323e2096655a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e7039862ccf99e082c7c800f88e740f"><td class="memItemLeft" align="right" valign="top"><a id="a1e7039862ccf99e082c7c800f88e740f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RetrieveEntitySpawnTicket</b> (EntitySpawnTicket::Id entitySpawnTicketId, RetrieveEntitySpawnTicketCallback callback) override</td></tr>
-<tr class="separator:a1e7039862ccf99e082c7c800f88e740f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd65a9c395d599cc71ae18cb0c263768"><td class="memItemLeft" align="right" valign="top"><a id="acd65a9c395d599cc71ae18cb0c263768"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RetrieveTicket</b> (EntitySpawnTicket::Id ticketId, RetrieveEntitySpawnTicketCallback callback, <a class="el" href="struct_az_framework_1_1_retrieve_ticket_optional_args.html">RetrieveTicketOptionalArgs</a> optionalArgs={}) override</td></tr>
+<tr class="separator:acd65a9c395d599cc71ae18cb0c263768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaaf05be7e6ff2924d88db3d21a0b2b6"><td class="memItemLeft" align="right" valign="top"><a id="afaaf05be7e6ff2924d88db3d21a0b2b6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ReloadSpawnable</b> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; spawnable, <a class="el" href="struct_az_framework_1_1_reload_spawnable_optional_args.html">ReloadSpawnableOptionalArgs</a> optionalArgs={}) override</td></tr>
 <tr class="separator:afaaf05be7e6ff2924d88db3d21a0b2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbfb6688f98a5f20fcd9e493224d31cc"><td class="memItemLeft" align="right" valign="top"><a id="acbfb6688f98a5f20fcd9e493224d31cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateEntityAliasTypes</b> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, AZStd::vector&lt; <a class="el" href="struct_az_framework_1_1_entity_alias_type_change.html">EntityAliasTypeChange</a> &gt; updatedAliases, <a class="el" href="struct_az_framework_1_1_update_entity_alias_types_optional_args.html">UpdateEntityAliasTypesOptionalArgs</a> optionalArgs={}) override</td></tr>
+<tr class="separator:acbfb6688f98a5f20fcd9e493224d31cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75be28436b24a032c4c42f514209045f"><td class="memItemLeft" align="right" valign="top"><a id="a75be28436b24a032c4c42f514209045f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ListEntities</b> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, ListEntitiesCallback listCallback, <a class="el" href="struct_az_framework_1_1_list_entities_optional_args.html">ListEntitiesOptionalArgs</a> optionalArgs={}) override</td></tr>
 <tr class="separator:a75be28436b24a032c4c42f514209045f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,15 +150,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ClaimEntities</b> (<a
 <tr class="memitem:ae892dfe6b1a122a0791a2143dff095ac"><td class="memItemLeft" align="right" valign="top"><a id="ae892dfe6b1a122a0791a2143dff095ac"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Barrier</b> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;spawnInfo, BarrierCallback completionCallback, <a class="el" href="struct_az_framework_1_1_barrier_optional_args.html">BarrierOptionalArgs</a> optionalArgs={}) override</td></tr>
 <tr class="separator:ae892dfe6b1a122a0791a2143dff095ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b9689a299de2b8b2047ae4f948d5ad"><td class="memItemLeft" align="right" valign="top"><a id="ae8b9689a299de2b8b2047ae4f948d5ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadBarrier</b> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;spawnInfo, BarrierCallback completionCallback, <a class="el" href="struct_az_framework_1_1_load_barrier_optional_args.html">LoadBarrierOptionalArgs</a> optionalArgs={}) override</td></tr>
+<tr class="separator:ae8b9689a299de2b8b2047ae4f948d5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a888d67c31a625a7901cb29d57264b966"><td class="memItemLeft" align="right" valign="top"><a id="a888d67c31a625a7901cb29d57264b966"></a>
 CommandQueueStatus&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessQueue</b> (CommandQueuePriority priority)</td></tr>
 <tr class="separator:a888d67c31a625a7901cb29d57264b966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:ae3a1130018b64ae7d2164752b0c4cfa3"><td class="memItemLeft" align="right" valign="top"><a id="ae3a1130018b64ae7d2164752b0c4cfa3"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Requests</b> = AZStd::variant&lt; <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_spawn_all_entities_command.html">SpawnAllEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_spawn_entities_command.html">SpawnEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_despawn_all_entities_command.html">DespawnAllEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_despawn_entity_command.html">DespawnEntityCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_reload_spawnable_command.html">ReloadSpawnableCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_list_entities_command.html">ListEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_list_indices_entities_command.html">ListIndicesEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_claim_entities_command.html">ClaimEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_barrier_command.html">BarrierCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_destroy_ticket_command.html">DestroyTicketCommand</a> &gt;</td></tr>
-<tr class="separator:ae3a1130018b64ae7d2164752b0c4cfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4192f7996d929c0f90e7eabaa2c09ac"><td class="memItemLeft" align="right" valign="top"><a id="ac4192f7996d929c0f90e7eabaa2c09ac"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>CommandResult</b> : bool { <b>Executed</b>, 
+<b>Requeue</b>
+ }</td></tr>
+<tr class="separator:ac4192f7996d929c0f90e7eabaa2c09ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a94990c7c5dbd45b8eac071acccdd9a"><td class="memItemLeft" align="right" valign="top"><a id="a3a94990c7c5dbd45b8eac071acccdd9a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Requests</b> = AZStd::variant&lt; <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_spawn_all_entities_command.html">SpawnAllEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_spawn_entities_command.html">SpawnEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_despawn_all_entities_command.html">DespawnAllEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_despawn_entity_command.html">DespawnEntityCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_reload_spawnable_command.html">ReloadSpawnableCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_update_entity_alias_types_command.html">UpdateEntityAliasTypesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_list_entities_command.html">ListEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_list_indices_entities_command.html">ListIndicesEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_claim_entities_command.html">ClaimEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_barrier_command.html">BarrierCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_load_barrier_command.html">LoadBarrierCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_retrieve_ticket_command.html">RetrieveTicketCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_register_ticket_command.html">RegisterTicketCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_destroy_ticket_command.html">DestroyTicketCommand</a> &gt;</td></tr>
+<tr class="separator:a3a94990c7c5dbd45b8eac071acccdd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -155,48 +173,75 @@ Protected Member Functions</h2></td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ac405a27912b1fb33b0bdb6f02c011301"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>QueueRequest</b> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, SpawnablePriority priority, T &amp;&amp;request)</td></tr>
 <tr class="separator:ac405a27912b1fb33b0bdb6f02c011301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5086eb515d7ec0eaa342023cff368b98"><td class="memItemLeft" align="right" valign="top"><a id="a5086eb515d7ec0eaa342023cff368b98"></a>
-AZStd::pair&lt; EntitySpawnTicket::Id, void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateTicket</b> (AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; &amp;&amp;spawnable) override</td></tr>
-<tr class="separator:a5086eb515d7ec0eaa342023cff368b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1265d96760849767697b2a02e3d87321"><td class="memItemLeft" align="right" valign="top"><a id="a1265d96760849767697b2a02e3d87321"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyTicket</b> (void *ticket) override</td></tr>
-<tr class="separator:a1265d96760849767697b2a02e3d87321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac53b8a17661b291c17ca3e2dcf07a2f4"><td class="memItemLeft" align="right" valign="top"><a id="ac53b8a17661b291c17ca3e2dcf07a2f4"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateTicket</b> (AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; &amp;&amp;spawnable) override</td></tr>
+<tr class="separator:ac53b8a17661b291c17ca3e2dcf07a2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a61daa5f9736e002568ca781967b39"><td class="memItemLeft" align="right" valign="top"><a id="ab6a61daa5f9736e002568ca781967b39"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IncrementTicketReference</b> (void *ticket) override</td></tr>
+<tr class="separator:ab6a61daa5f9736e002568ca781967b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9a5e25e70f0d844b8caa5b67be9187"><td class="memItemLeft" align="right" valign="top"><a id="afb9a5e25e70f0d844b8caa5b67be9187"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DecrementTicketReference</b> (void *ticket) override</td></tr>
+<tr class="separator:afb9a5e25e70f0d844b8caa5b67be9187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaadd26aebbe561550c334c50b31e8218"><td class="memItemLeft" align="right" valign="top"><a id="aaadd26aebbe561550c334c50b31e8218"></a>
+EntitySpawnTicket::Id&#160;</td><td class="memItemRight" valign="bottom"><b>GetTicketId</b> (void *ticket) override</td></tr>
+<tr class="separator:aaadd26aebbe561550c334c50b31e8218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f472e2794c96f0c660168ecb3a8f66d"><td class="memItemLeft" align="right" valign="top"><a id="a0f472e2794c96f0c660168ecb3a8f66d"></a>
+const AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSpawnableOnTicket</b> (void *ticket) override</td></tr>
+<tr class="separator:a0f472e2794c96f0c660168ecb3a8f66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d1180714c06fab4b75ebbcc8532847d"><td class="memItemLeft" align="right" valign="top"><a id="a7d1180714c06fab4b75ebbcc8532847d"></a>
 CommandQueueStatus&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessQueue</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_queue.html">Queue</a> &amp;queue)</td></tr>
 <tr class="separator:a7d1180714c06fab4b75ebbcc8532847d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae09444939b2ba07702bd95a3f4bc14e6"><td class="memItemLeft" align="right" valign="top"><a id="ae09444939b2ba07702bd95a3f4bc14e6"></a>
-AZ::Entity *&#160;</td><td class="memItemRight" valign="bottom"><b>CloneSingleEntity</b> (const AZ::Entity &amp;entityTemplate, EntityIdMap &amp;templateToCloneMap, AZ::SerializeContext &amp;serializeContext)</td></tr>
-<tr class="separator:ae09444939b2ba07702bd95a3f4bc14e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72bb74dffadb34784f5935049876c74c"><td class="memItemLeft" align="right" valign="top"><a id="a72bb74dffadb34784f5935049876c74c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_spawn_all_entities_command.html">SpawnAllEntitiesCommand</a> &amp;request)</td></tr>
-<tr class="separator:a72bb74dffadb34784f5935049876c74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37a357416401160fdc592a7619b3d683"><td class="memItemLeft" align="right" valign="top"><a id="a37a357416401160fdc592a7619b3d683"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_spawn_entities_command.html">SpawnEntitiesCommand</a> &amp;request)</td></tr>
-<tr class="separator:a37a357416401160fdc592a7619b3d683"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6254afc8cd925262c9709da2272ec47d"><td class="memItemLeft" align="right" valign="top"><a id="a6254afc8cd925262c9709da2272ec47d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_despawn_all_entities_command.html">DespawnAllEntitiesCommand</a> &amp;request)</td></tr>
-<tr class="separator:a6254afc8cd925262c9709da2272ec47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2660626fef36bb5e1c5507a109278421"><td class="memItemLeft" align="right" valign="top"><a id="a2660626fef36bb5e1c5507a109278421"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_despawn_entity_command.html">DespawnEntityCommand</a> &amp;request)</td></tr>
-<tr class="separator:a2660626fef36bb5e1c5507a109278421"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c635c9cd009f1d83a0e9e61992ea025"><td class="memItemLeft" align="right" valign="top"><a id="a4c635c9cd009f1d83a0e9e61992ea025"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_reload_spawnable_command.html">ReloadSpawnableCommand</a> &amp;request)</td></tr>
-<tr class="separator:a4c635c9cd009f1d83a0e9e61992ea025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a465d15bef347fe124124e23b946f9750"><td class="memItemLeft" align="right" valign="top"><a id="a465d15bef347fe124124e23b946f9750"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_list_entities_command.html">ListEntitiesCommand</a> &amp;request)</td></tr>
-<tr class="separator:a465d15bef347fe124124e23b946f9750"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24f51d8f265e0917e859511eefcda8f3"><td class="memItemLeft" align="right" valign="top"><a id="a24f51d8f265e0917e859511eefcda8f3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_list_indices_entities_command.html">ListIndicesEntitiesCommand</a> &amp;request)</td></tr>
-<tr class="separator:a24f51d8f265e0917e859511eefcda8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1baa0b039b10b90c2ec0f08dd26db866"><td class="memItemLeft" align="right" valign="top"><a id="a1baa0b039b10b90c2ec0f08dd26db866"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_claim_entities_command.html">ClaimEntitiesCommand</a> &amp;request)</td></tr>
-<tr class="separator:a1baa0b039b10b90c2ec0f08dd26db866"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d47cd7d8bd27bbc05b17d6c461873c7"><td class="memItemLeft" align="right" valign="top"><a id="a8d47cd7d8bd27bbc05b17d6c461873c7"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_barrier_command.html">BarrierCommand</a> &amp;request)</td></tr>
-<tr class="separator:a8d47cd7d8bd27bbc05b17d6c461873c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff665932629f302645296cedec18bdb6"><td class="memItemLeft" align="right" valign="top"><a id="aff665932629f302645296cedec18bdb6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_destroy_ticket_command.html">DestroyTicketCommand</a> &amp;request)</td></tr>
-<tr class="separator:aff665932629f302645296cedec18bdb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27acc1b0218a2bc893b8c291f6f3ead2"><td class="memItemLeft" align="right" valign="top"><a id="a27acc1b0218a2bc893b8c291f6f3ead2"></a>
+AZ::Entity *&#160;</td><td class="memItemRight" valign="bottom"><b>CloneSingleEntity</b> (const AZ::Entity &amp;entityPrototype, EntityIdMap &amp;prototypeToCloneMap, AZ::SerializeContext &amp;serializeContext)</td></tr>
+<tr class="separator:a27acc1b0218a2bc893b8c291f6f3ead2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fbb8a4f40eaee9073505c33d2e77705"><td class="memItemLeft" align="right" valign="top"><a id="a1fbb8a4f40eaee9073505c33d2e77705"></a>
+AZ::Entity *&#160;</td><td class="memItemRight" valign="bottom"><b>CloneSingleAliasedEntity</b> (const AZ::Entity &amp;entityPrototype, const <a class="el" href="struct_az_framework_1_1_spawnable_1_1_entity_alias.html">Spawnable::EntityAlias</a> &amp;alias, EntityIdMap &amp;prototypeToCloneMap, AZ::Entity *previouslySpawnedEntity, AZ::SerializeContext &amp;serializeContext)</td></tr>
+<tr class="separator:a1fbb8a4f40eaee9073505c33d2e77705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acac24073d06077b372853d588c812794"><td class="memItemLeft" align="right" valign="top"><a id="acac24073d06077b372853d588c812794"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AppendComponents</b> (AZ::Entity &amp;target, const AZ::Entity::ComponentArrayType &amp;componentPrototypes, EntityIdMap &amp;prototypeToCloneMap, AZ::SerializeContext &amp;serializeContext)</td></tr>
+<tr class="separator:acac24073d06077b372853d588c812794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe657413dfa505674ee7b3a8b50f5f9b"><td class="memItemLeft" align="right" valign="top"><a id="abe657413dfa505674ee7b3a8b50f5f9b"></a>
+CommandResult&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_spawn_all_entities_command.html">SpawnAllEntitiesCommand</a> &amp;request)</td></tr>
+<tr class="separator:abe657413dfa505674ee7b3a8b50f5f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a467e45b6b8c8f95739d6a67b0364109e"><td class="memItemLeft" align="right" valign="top"><a id="a467e45b6b8c8f95739d6a67b0364109e"></a>
+CommandResult&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_spawn_entities_command.html">SpawnEntitiesCommand</a> &amp;request)</td></tr>
+<tr class="separator:a467e45b6b8c8f95739d6a67b0364109e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c7c620d8ccd1b3bc9414e7efcf1e92"><td class="memItemLeft" align="right" valign="top"><a id="a29c7c620d8ccd1b3bc9414e7efcf1e92"></a>
+CommandResult&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_despawn_all_entities_command.html">DespawnAllEntitiesCommand</a> &amp;request)</td></tr>
+<tr class="separator:a29c7c620d8ccd1b3bc9414e7efcf1e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c92036d572e267b08e78fea39be188d"><td class="memItemLeft" align="right" valign="top"><a id="a3c92036d572e267b08e78fea39be188d"></a>
+CommandResult&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_despawn_entity_command.html">DespawnEntityCommand</a> &amp;request)</td></tr>
+<tr class="separator:a3c92036d572e267b08e78fea39be188d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16cffbd6540e92830691ae55034d39e3"><td class="memItemLeft" align="right" valign="top"><a id="a16cffbd6540e92830691ae55034d39e3"></a>
+CommandResult&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_reload_spawnable_command.html">ReloadSpawnableCommand</a> &amp;request)</td></tr>
+<tr class="separator:a16cffbd6540e92830691ae55034d39e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab369718775a046a4f0f462570df8200f"><td class="memItemLeft" align="right" valign="top"><a id="ab369718775a046a4f0f462570df8200f"></a>
+CommandResult&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_update_entity_alias_types_command.html">UpdateEntityAliasTypesCommand</a> &amp;request)</td></tr>
+<tr class="separator:ab369718775a046a4f0f462570df8200f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac06157506ca31070864e39726b982a9c"><td class="memItemLeft" align="right" valign="top"><a id="ac06157506ca31070864e39726b982a9c"></a>
+CommandResult&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_list_entities_command.html">ListEntitiesCommand</a> &amp;request)</td></tr>
+<tr class="separator:ac06157506ca31070864e39726b982a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf14bbc5eae632ac3748e4e40f8f7bf"><td class="memItemLeft" align="right" valign="top"><a id="a9bf14bbc5eae632ac3748e4e40f8f7bf"></a>
+CommandResult&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_list_indices_entities_command.html">ListIndicesEntitiesCommand</a> &amp;request)</td></tr>
+<tr class="separator:a9bf14bbc5eae632ac3748e4e40f8f7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3bc9b41efaa09017d8a594d103cd08"><td class="memItemLeft" align="right" valign="top"><a id="a9a3bc9b41efaa09017d8a594d103cd08"></a>
+CommandResult&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_claim_entities_command.html">ClaimEntitiesCommand</a> &amp;request)</td></tr>
+<tr class="separator:a9a3bc9b41efaa09017d8a594d103cd08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab768635fff4dd8b48e214283152d6978"><td class="memItemLeft" align="right" valign="top"><a id="ab768635fff4dd8b48e214283152d6978"></a>
+CommandResult&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_barrier_command.html">BarrierCommand</a> &amp;request)</td></tr>
+<tr class="separator:ab768635fff4dd8b48e214283152d6978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ebba6b01022a4bd422168effc889b8"><td class="memItemLeft" align="right" valign="top"><a id="a76ebba6b01022a4bd422168effc889b8"></a>
+CommandResult&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_load_barrier_command.html">LoadBarrierCommand</a> &amp;request)</td></tr>
+<tr class="separator:a76ebba6b01022a4bd422168effc889b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceae03954d6481b709909ce7d49eb085"><td class="memItemLeft" align="right" valign="top"><a id="aceae03954d6481b709909ce7d49eb085"></a>
+CommandResult&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_retrieve_ticket_command.html">RetrieveTicketCommand</a> &amp;request)</td></tr>
+<tr class="separator:aceae03954d6481b709909ce7d49eb085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8f9211f337764cd36f434e588362a22"><td class="memItemLeft" align="right" valign="top"><a id="ab8f9211f337764cd36f434e588362a22"></a>
+CommandResult&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_register_ticket_command.html">RegisterTicketCommand</a> &amp;request)</td></tr>
+<tr class="separator:ab8f9211f337764cd36f434e588362a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64268aedf944e10cf4c7537961e3f16"><td class="memItemLeft" align="right" valign="top"><a id="af64268aedf944e10cf4c7537961e3f16"></a>
+CommandResult&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_destroy_ticket_command.html">DestroyTicketCommand</a> &amp;request)</td></tr>
+<tr class="separator:af64268aedf944e10cf4c7537961e3f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad64c0b1b4522e0166e6be50b97f99d34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_manager.html#ad64c0b1b4522e0166e6be50b97f99d34">InitializeEntityIdMappings</a> (const Spawnable::EntityList &amp;entities, EntityIdMap &amp;idMap, AZStd::unordered_set&lt; AZ::EntityId &gt; &amp;previouslySpawned)</td></tr>
 <tr class="separator:ad64c0b1b4522e0166e6be50b97f99d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e7cb800c29623e83b8cd7615a663954"><td class="memItemLeft" align="right" valign="top"><a id="a7e7cb800c29623e83b8cd7615a663954"></a>
@@ -216,6 +261,15 @@ AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_d
 <tr class="separator:af2b3d8b03df44925e9dad20a1ce2f3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd51b8c9494c41361d9579ca2e4042ff"><td class="memItemLeft" align="right" valign="top">SpawnablePriority&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_manager.html#afd51b8c9494c41361d9579ca2e4042ff">m_highPriorityThreshold</a> { 64 }</td></tr>
 <tr class="separator:afd51b8c9494c41361d9579ca2e4042ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ecf99a14ca02b54287776901a091b25"><td class="memItemLeft" align="right" valign="top"><a id="a0ecf99a14ca02b54287776901a091b25"></a>
+AZStd::unordered_map&lt; EntitySpawnTicket::Id, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_ticket.html">Ticket</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_entitySpawnTicketMap</b></td></tr>
+<tr class="separator:a0ecf99a14ca02b54287776901a091b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa7b9bae8bb6975db6469a50682a601"><td class="memItemLeft" align="right" valign="top"><a id="aaaa7b9bae8bb6975db6469a50682a601"></a>
+AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_totalTickets</b> { 0 }</td></tr>
+<tr class="separator:aaaa7b9bae8bb6975db6469a50682a601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a243b61edd136df67fa21edad8a855e71"><td class="memItemLeft" align="right" valign="top"><a id="a243b61edd136df67fa21edad8a855e71"></a>
+AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_ticketsPendingRegistration</b> { 0 }</td></tr>
+<tr class="separator:a243b61edd136df67fa21edad8a855e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad64c0b1b4522e0166e6be50b97f99d34"></a>
@@ -291,7 +345,7 @@ AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:22 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:13 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

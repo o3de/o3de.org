@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzNetworking API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -62,12 +62,12 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a68a8760e1a8aa3d6087ed15f878dd3cd"><td class="memItemLeft" align="right" valign="top">virtual AZStd::unique_ptr&lt; <a class="el" href="class_az_networking_1_1_i_compressor.html">ICompressor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_compressor_factory.html#a68a8760e1a8aa3d6087ed15f878dd3cd">Create</a> ()=0</td></tr>
 <tr class="separator:a68a8760e1a8aa3d6087ed15f878dd3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a319bb87490ffe1b70a3b13aca6050502"><td class="memItemLeft" align="right" valign="top">virtual AZ::Name&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_compressor_factory.html#a319bb87490ffe1b70a3b13aca6050502">GetFactoryName</a> () const =0</td></tr>
-<tr class="separator:a319bb87490ffe1b70a3b13aca6050502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac66052582f3d21c7d5d0a1e6f36738ae"><td class="memItemLeft" align="right" valign="top">virtual const AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_compressor_factory.html#ac66052582f3d21c7d5d0a1e6f36738ae">GetFactoryName</a> () const =0</td></tr>
+<tr class="separator:ac66052582f3d21c7d5d0a1e6f36738ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract factory to instantiate compressors. </p>
-<p><a class="el" href="class_az_networking_1_1_i_compressor_factory.html" title="Abstract factory to instantiate compressors.">ICompressorFactory</a> is an abstract compression interface meant for user provided GEMs to implement. <a class="el" href="class_az_networking_1_1_i_compressor_factory.html" title="Abstract factory to instantiate compressors.">ICompressorFactory</a> implementations can be registered to classes implementing <a class="el" href="class_az_networking_1_1_i_networking.html" title="The interface for creating and working with network interfaces.">INetworking</a>. Registered factories can then be used to create <a class="el" href="class_az_networking_1_1_i_compressor.html" title="Packet data compressor interface.">ICompressor</a> implementations on demand. The <a href="http://o3de.org/docs/user-guide/gems/reference/multiplayer-compression">Multiplayer Compression Gem</a> is an example of an <a class="el" href="class_az_networking_1_1_i_compressor_factory.html" title="Abstract factory to instantiate compressors.">ICompressorFactory</a> for an LZ4 Compressor. In it, MultiplayerCompressionSystemComponent registers its <a class="el" href="class_az_networking_1_1_i_compressor_factory.html" title="Abstract factory to instantiate compressors.">ICompressorFactory</a> with <a class="el" href="class_az_networking_1_1_networking_system_component.html">NetworkingSystemComponent</a>, which is an implementation of <a class="el" href="class_az_networking_1_1_i_networking.html" title="The interface for creating and working with network interfaces.">INetworking</a>. Registered factories are keyed by their AZ Name which is accessed through the factory's GetFactoryName method. </p>
+<p><a class="el" href="class_az_networking_1_1_i_compressor_factory.html" title="Abstract factory to instantiate compressors.">ICompressorFactory</a> is an abstract compression interface meant for user provided GEMs to implement. <a class="el" href="class_az_networking_1_1_i_compressor_factory.html" title="Abstract factory to instantiate compressors.">ICompressorFactory</a> implementations can be registered to classes implementing <a class="el" href="class_az_networking_1_1_i_networking.html" title="The interface for creating and working with network interfaces.">INetworking</a>. Registered factories can then be used to create <a class="el" href="class_az_networking_1_1_i_compressor.html" title="Packet data compressor interface.">ICompressor</a> implementations on demand. The <a href="http://o3de.org/docs/user-guide/gems/reference/multiplayer-compression">Multiplayer Compression Gem</a> is an example of an <a class="el" href="class_az_networking_1_1_i_compressor_factory.html" title="Abstract factory to instantiate compressors.">ICompressorFactory</a> for an LZ4 Compressor. In it, MultiplayerCompressionSystemComponent registers its <a class="el" href="class_az_networking_1_1_i_compressor_factory.html" title="Abstract factory to instantiate compressors.">ICompressorFactory</a> with <a class="el" href="class_az_networking_1_1_networking_system_component.html">NetworkingSystemComponent</a>, which is an implementation of <a class="el" href="class_az_networking_1_1_i_networking.html" title="The interface for creating and working with network interfaces.">INetworking</a>. Registered factories are keyed by an AZ::Crc32 of their string name accessed through the factory's GetFactoryName method. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a68a8760e1a8aa3d6087ed15f878dd3cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a68a8760e1a8aa3d6087ed15f878dd3cd">&#9670;&nbsp;</a></span>Create()</h2>
@@ -95,8 +95,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a319bb87490ffe1b70a3b13aca6050502"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a319bb87490ffe1b70a3b13aca6050502">&#9670;&nbsp;</a></span>GetFactoryName()</h2>
+<a id="ac66052582f3d21c7d5d0a1e6f36738ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac66052582f3d21c7d5d0a1e6f36738ae">&#9670;&nbsp;</a></span>GetFactoryName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -105,7 +105,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual AZ::Name AzNetworking::ICompressorFactory::GetFactoryName </td>
+          <td class="memname">virtual const AZStd::string_view AzNetworking::ICompressorFactory::GetFactoryName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -117,7 +117,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets the AZ Name of this compressor factory </p><dl class="section return"><dt>Returns</dt><dd>the AZ Name of this compressor factory </dd></dl>
+<p>Gets the string name of this compressor factory </p><dl class="section return"><dt>Returns</dt><dd>the string name of this compressor factory </dd></dl>
 
 </div>
 </div>
@@ -127,7 +127,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:03:27 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:04:19 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

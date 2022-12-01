@@ -9,15 +9,29 @@ To support multiple native build toolchains, **Open 3D Engine** (O3DE) uses the 
 <!-- Link "created an O3DE project" to a project config section on creating projects? -->
  Once you've [registered O3DE](/docs/welcome-guide/setup) and [created an O3DE project](/docs/welcome-guide/create), you can build your project with these commands:
 
-{{< tabs >}}
-{{< tab name="Windows" codelang="cmd">}}cd <project-directory>
-cmake -B build/windows_vs2019 -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=<absolute-path-to-packages>
-cmake --build build/windows_vs2019 --target <ProjectName>.GameLauncher Editor --config profile -- -m
-{{< /tab >}}
-{{< tab name="Linux" codelang="bash">}}cd <project-directory>
+{{< tabs name="CMake configure example" >}}
+{{% tab name="Windows" %}}
+
+```cmd
+cd <project-directory>
+cmake -B build/windows -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=<absolute-path-to-packages>
+cmake --build build/windows --target <ProjectName>.GameLauncher Editor --config profile -- -m
+```
+
+{{< note >}}
+Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](./configure-and-build/#configuring-projects).
+{{< /note >}}
+
+{{% /tab %}}
+{{% tab name="Linux" %}}
+
+```shell
+cd <project-directory>
 cmake -B build/linux -S . -G "Ninja Multi-Config" -DLY_3RDPARTY_PATH=<absolute-path-to-packages>
 cmake --build build/linux --target <ProjectName>.GameLauncher Editor --config profile
-{{< /tab >}}
+```
+
+{{% /tab %}}
 {{< /tabs >}}
 
 Builds created with these commands are located in the `<project-directory>/<build-directory>/bin/profile` directory.
@@ -31,7 +45,8 @@ O3DE requires CMake {{< versions/cmake >}} or higher.
 | Topic | Description |
 | --- | --- |
 | [Configure and Build](configure-and-build) | The full details on how to configure and build O3DE core, Gems, and projects. |
-| [Create Distributable Open 3D Engine Builds](distributable-engine) | Instructions on how to separate engine developer and project developer workflows, by creating fixed binaries to distribute to project teams. |
+| [Build Generated Source Files](generated-source) | Learn how to use the AzAutoGen automation tool to generate source files when building a target. |
+| [Engine and Project Distribution](distributable-engine) | Instructions on how to separate engine developer and project developer workflows, by creating fixed binaries to distribute to project teams. |
 | [O3DE Packages](packages) | Learn about the O3DE package system that's used to ship binaries along with your Gem or project. |
 | [Troubleshooting](troubleshooting) | How to debug and troubleshoot CMake and build problems. |
 | [CMake Settings Reference](reference) | Reference for user-configurable CMake settings specific to O3DE. |

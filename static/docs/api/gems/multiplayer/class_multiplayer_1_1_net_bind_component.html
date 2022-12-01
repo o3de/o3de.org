@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Multiplayer Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -78,6 +78,10 @@ NetEntityRole&#160;</td><td class="memItemRight" valign="bottom"><b>GetNetEntity
 <tr class="separator:a8314a86781906ce2fd27bf46d9d7974d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6bbd395672e3ec91451a4641937eff6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_net_bind_component.html#ad6bbd395672e3ec91451a4641937eff6">IsNetEntityRoleClient</a> () const</td></tr>
 <tr class="separator:ad6bbd395672e3ec91451a4641937eff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a8c089ced1d701e43c144edd2a507a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_net_bind_component.html#af7a8c089ced1d701e43c144edd2a507a">SetAllowEntityMigration</a> (EntityMigration value)</td></tr>
+<tr class="separator:af7a8c089ced1d701e43c144edd2a507a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dbb47ad1c6faa65163ccba441bc6542"><td class="memItemLeft" align="right" valign="top">EntityMigration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_net_bind_component.html#a7dbb47ad1c6faa65163ccba441bc6542">GetAllowEntityMigration</a> () const</td></tr>
+<tr class="separator:a7dbb47ad1c6faa65163ccba441bc6542"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada96b9408827bd9bb31c56c790dbb546"><td class="memItemLeft" align="right" valign="top"><a id="ada96b9408827bd9bb31c56c790dbb546"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasController</b> () const</td></tr>
 <tr class="separator:ada96b9408827bd9bb31c56c790dbb546"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -87,6 +91,15 @@ NetEntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetNetEntityId
 <tr class="memitem:ac42a2c222530495c759d3a73802911d9"><td class="memItemLeft" align="right" valign="top"><a id="ac42a2c222530495c759d3a73802911d9"></a>
 const <a class="el" href="struct_multiplayer_1_1_prefab_entity_id.html">PrefabEntityId</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPrefabEntityId</b> () const</td></tr>
 <tr class="separator:ac42a2c222530495c759d3a73802911d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c851833bac962f8f1f23a52c64639f4"><td class="memItemLeft" align="right" valign="top"><a id="a1c851833bac962f8f1f23a52c64639f4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPrefabEntityId</b> (const <a class="el" href="struct_multiplayer_1_1_prefab_entity_id.html">PrefabEntityId</a> &amp;prefabEntityId)</td></tr>
+<tr class="separator:a1c851833bac962f8f1f23a52c64639f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56eb35d49f34fdc7b5ac0fcb64de477"><td class="memItemLeft" align="right" valign="top"><a id="af56eb35d49f34fdc7b5ac0fcb64de477"></a>
+const AZ::Data::AssetId &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPrefabAssetId</b> () const</td></tr>
+<tr class="separator:af56eb35d49f34fdc7b5ac0fcb64de477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c74aa2f38845630434a68a1fbb354f"><td class="memItemLeft" align="right" valign="top"><a id="a58c74aa2f38845630434a68a1fbb354f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPrefabAssetId</b> (const AZ::Data::AssetId &amp;val)</td></tr>
+<tr class="separator:a58c74aa2f38845630434a68a1fbb354f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1773c46eb3de740ce262c6c4bc7cba2"><td class="memItemLeft" align="right" valign="top"><a id="ae1773c46eb3de740ce262c6c4bc7cba2"></a>
 <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html">ConstNetworkEntityHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetEntityHandle</b> () const</td></tr>
 <tr class="separator:ae1773c46eb3de740ce262c6c4bc7cba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,9 +112,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOwningConnectionId
 <tr class="memitem:a13a5eebf92aef369b855881ffb0761b3"><td class="memItemLeft" align="right" valign="top"><a id="a13a5eebf92aef369b855881ffb0761b3"></a>
 AzNetworking::ConnectionId&#160;</td><td class="memItemRight" valign="bottom"><b>GetOwningConnectionId</b> () const</td></tr>
 <tr class="separator:a13a5eebf92aef369b855881ffb0761b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a793ba9ccf5565ccc97545a44dc7869b5"><td class="memItemLeft" align="right" valign="top"><a id="a793ba9ccf5565ccc97545a44dc7869b5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAllowAutonomy</b> (bool value)</td></tr>
-<tr class="separator:a793ba9ccf5565ccc97545a44dc7869b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28bc952be2554e4d5833a5f9b35e967a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_net_bind_component.html#a28bc952be2554e4d5833a5f9b35e967a">EnablePlayerHostAutonomy</a> (bool enabled)</td></tr>
+<tr class="separator:a28bc952be2554e4d5833a5f9b35e967a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b4fe1870390e2f12e542a6dca92e7fc"><td class="memItemLeft" align="right" valign="top"><a id="a8b4fe1870390e2f12e542a6dca92e7fc"></a>
 MultiplayerComponentInputVector&#160;</td><td class="memItemRight" valign="bottom"><b>AllocateComponentInputs</b> ()</td></tr>
 <tr class="separator:a8b4fe1870390e2f12e542a6dca92e7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,10 +238,56 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HierarchyTests</b></
 <tr class="memitem:a855204c66661f0d7e615ce063c032cd4"><td class="memItemLeft" align="right" valign="top"><a id="a855204c66661f0d7e615ce063c032cd4"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>HierarchyBenchmarkBase</b></td></tr>
 <tr class="separator:a855204c66661f0d7e615ce063c032cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b1fdeaf08b08eb23e22f4ff3b4d6f4a"><td class="memItemLeft" align="right" valign="top"><a id="a4b1fdeaf08b08eb23e22f4ff3b4d6f4a"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>MultiplayerSystemTests</b></td></tr>
+<tr class="separator:a4b1fdeaf08b08eb23e22f4ff3b4d6f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8cc8191209421c0672af06f9130bc66"><td class="memItemLeft" align="right" valign="top"><a id="ae8cc8191209421c0672af06f9130bc66"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>NetworkEntityTests</b></td></tr>
+<tr class="separator:ae8cc8191209421c0672af06f9130bc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77850dbce064627814327488b8ebde7f"><td class="memItemLeft" align="right" valign="top"><a id="a77850dbce064627814327488b8ebde7f"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>LocalPredictionPlayerInputTests</b></td></tr>
+<tr class="separator:a77850dbce064627814327488b8ebde7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Component that provides net-binding to a networked entity. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a28bc952be2554e4d5833a5f9b35e967a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28bc952be2554e4d5833a5f9b35e967a">&#9670;&nbsp;</a></span>EnablePlayerHostAutonomy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiplayer::NetBindComponent::EnablePlayerHostAutonomy </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Allows a player host to autonomously control their player entity, even though the entity is in an authority role. Note: If this entity is already activated this will reactivate all of the multiplayer component controllers in order for them to reactivate under autonomous control. </p>
+
+</div>
+</div>
+<a id="a7dbb47ad1c6faa65163ccba441bc6542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dbb47ad1c6faa65163ccba441bc6542">&#9670;&nbsp;</a></span>GetAllowEntityMigration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EntityMigration Multiplayer::NetBindComponent::GetAllowEntityMigration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieves whether or not the netbound entity is allowed to migrate between hosts. </p><dl class="section return"><dt>Returns</dt><dd>EntityMigration::Enabled if the entity is allowed to migrate, EntityMigration::Disabled otherwise </dd></dl>
+
+</div>
+</div>
 <a id="ac65c35bb33b322e9364b582ee2ff0b42"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac65c35bb33b322e9364b582ee2ff0b42">&#9670;&nbsp;</a></span>Init()</h2>
 
@@ -365,13 +423,37 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HierarchyBenchmarkBa
 
 </div>
 </div>
+<a id="af7a8c089ced1d701e43c144edd2a507a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7a8c089ced1d701e43c144edd2a507a">&#9670;&nbsp;</a></span>SetAllowEntityMigration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiplayer::NetBindComponent::SetAllowEntityMigration </td>
+          <td>(</td>
+          <td class="paramtype">EntityMigration&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets whether or not a netbound entity is allowed to migrate between hosts. Use this feature carefully, as replication is spatially based. If migration is disabled chances are you want to mark the entity as always persistent as well. See <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a848decb1bb72e133638f6ff40f12fc6d">INetworkEntityManager::MarkAlwaysRelevantToClients</a> and <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a952585b1ef6fa496e166d3863af48889">INetworkEntityManager::MarkAlwaysRelevantToServers</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>whether to enable or disable host migrations for this entity </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Multiplayer/Code/Include/Multiplayer/Components/NetBindComponent.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:53 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:06:13 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

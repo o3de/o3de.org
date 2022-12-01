@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AtomLyIntegration Gem API Reference
-   &#160;<span id="projectnumber">2111.2</span>
+   &#160;<span id="projectnumber">22.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -62,19 +62,21 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a63e70214dc4d7f801bb3084e49a63efa"><td class="memItemLeft" align="right" valign="top"><a id="a63e70214dc4d7f801bb3084e49a63efa"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_requests.html#a63e70214dc4d7f801bb3084e49a63efa">OpenMaterialEditor</a> (const AZStd::string &amp;sourcePath)=0</td></tr>
-<tr class="memdesc:a63e70214dc4d7f801bb3084e49a63efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open source material in material editor. <br /></td></tr>
+<tr class="memdesc:a63e70214dc4d7f801bb3084e49a63efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open document in material editor. <br /></td></tr>
 <tr class="separator:a63e70214dc4d7f801bb3084e49a63efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab10595fd68477f1ee475ec4ce0372252"><td class="memItemLeft" align="right" valign="top"><a id="ab10595fd68477f1ee475ec4ce0372252"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_requests.html#ab10595fd68477f1ee475ec4ce0372252">OpenMaterialInspector</a> (const AZ::EntityId &amp;entityId, const AZ::Render::MaterialAssignmentId &amp;materialAssignmentId)=0</td></tr>
-<tr class="memdesc:ab10595fd68477f1ee475ec4ce0372252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open material instance editor. <br /></td></tr>
-<tr class="separator:ab10595fd68477f1ee475ec4ce0372252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c470ac2eee68c9f592eb06a55c4ec1a"><td class="memItemLeft" align="right" valign="top"><a id="a5c470ac2eee68c9f592eb06a55c4ec1a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_requests.html#a5c470ac2eee68c9f592eb06a55c4ec1a">OpenMaterialCanvas</a> (const AZStd::string &amp;sourcePath)=0</td></tr>
+<tr class="memdesc:a5c470ac2eee68c9f592eb06a55c4ec1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open document in material canvas. <br /></td></tr>
+<tr class="separator:a5c470ac2eee68c9f592eb06a55c4ec1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a146c126bff53bf39386988c2c9b11013"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_requests.html#a146c126bff53bf39386988c2c9b11013">OpenMaterialInspector</a> (const AZ::EntityId &amp;primaryEntityId, const AzToolsFramework::EntityIdSet &amp;entityIdsToEdit, const AZ::Render::MaterialAssignmentId &amp;materialAssignmentId)=0</td></tr>
+<tr class="separator:a146c126bff53bf39386988c2c9b11013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93cdbdd470b9187e16cbb7b39a45e1c5"><td class="memItemLeft" align="right" valign="top"><a id="a93cdbdd470b9187e16cbb7b39a45e1c5"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_requests.html#a93cdbdd470b9187e16cbb7b39a45e1c5">RenderMaterialPreview</a> (const AZ::EntityId &amp;entityId, const AZ::Render::MaterialAssignmentId &amp;materialAssignmentId)=0</td></tr>
-<tr class="memdesc:a93cdbdd470b9187e16cbb7b39a45e1c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a material preview image. <br /></td></tr>
+<tr class="memdesc:a93cdbdd470b9187e16cbb7b39a45e1c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a material preview image for a specific entity and material slot with material and property overrides applied. <br /></td></tr>
 <tr class="separator:a93cdbdd470b9187e16cbb7b39a45e1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c246bc01ae46e48fecfea6842d95827"><td class="memItemLeft" align="right" valign="top"><a id="a5c246bc01ae46e48fecfea6842d95827"></a>
 virtual QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_requests.html#a5c246bc01ae46e48fecfea6842d95827">GetRenderedMaterialPreview</a> (const AZ::EntityId &amp;entityId, const AZ::Render::MaterialAssignmentId &amp;materialAssignmentId) const =0</td></tr>
-<tr class="memdesc:a5c246bc01ae46e48fecfea6842d95827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get recently rendered material preview image. <br /></td></tr>
+<tr class="memdesc:a5c246bc01ae46e48fecfea6842d95827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the most recently rendered material preview image for the entity and material slot if one is available. <br /></td></tr>
 <tr class="separator:a5c246bc01ae46e48fecfea6842d95827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -88,13 +90,57 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_render_1_1_editor_material_system_component_requests.html">EditorMaterialSystemComponentRequests</a> provides an interface for interacting with EditorMaterialSystemComponent, performing different operations like opening the material editor, the material instance inspector, and managing material preview images </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a146c126bff53bf39386988c2c9b11013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a146c126bff53bf39386988c2c9b11013">&#9670;&nbsp;</a></span>OpenMaterialInspector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::EditorMaterialSystemComponentRequests::OpenMaterialInspector </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::EntityId &amp;&#160;</td>
+          <td class="paramname"><em>primaryEntityId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AzToolsFramework::EntityIdSet &amp;&#160;</td>
+          <td class="paramname"><em>entityIdsToEdit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Render::MaterialAssignmentId &amp;&#160;</td>
+          <td class="paramname"><em>materialAssignmentId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Open the material instance editor to preview and edit material property overrides for the primary entity while applying changes to all entities in the editable set </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/AtomLyIntegration/CommonFeatures/Code/Include/AtomLyIntegration/CommonFeatures/Material/EditorMaterialSystemComponentRequestBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2022 12:04:33 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 5 2022 14:05:27 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
