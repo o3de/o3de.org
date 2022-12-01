@@ -76,7 +76,9 @@ Here are a few tips for getting the best performance out of the terrain query AP
 
 The `TerrainDataRequestBus` provides a `GetClosestIntersection` method to perform a single raycast against the terrain. Typically, collision raycasts are expected to be performed through a physics system, but this method is available as an alternative for when physics raycasts aren't appropriate. For example, it's used within the Editor itself for placing objects on the terrain.
 
-If your system is always raycasting straight down to get terrain information directly beneath a location, the query APIs will produce faster results than the raycast API.
+{{< tip >}}
+`GetClosestIntersection` provides generalized raycasts in any direction, but if your system only raycasts straight down to get terrain information directly beneath a location, use one of the other query APIs such as `GetSurfacePoint` or `QueryList` instead. They produce faster results.
+{{< /tip >}}
 
 ## Surface Data System
 
