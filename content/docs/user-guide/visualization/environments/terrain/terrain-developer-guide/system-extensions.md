@@ -29,8 +29,8 @@ Each of the terrain components can be replaced with new components that meet the
 
 Any replacement components need to support the following:
 
-* Implement the request bus that matches the component being replaced (`TerrainSpawnerRequestBus`, `TerrainAreaHeightRequestBus`, `TerrainAreaSurfaceRequestBus`, etc).
-* Declare that it implements each service that matches the component being replaced (`TerrainAreaService`, `TerrainHeightProviderService`, `TerrainSurfaceProviderService`, etc) in `GetProvidedServices`.
+* Implement the request bus that matches the component being replaced. For example, `TerrainSpawnerRequestBus`, `TerrainAreaHeightRequestBus`, or `TerrainAreaSurfaceRequestBus`.
+* Declare that it implements each service that matches the component being replaced in `GetProvidedServices`. For example, `TerrainAreaService`, `TerrainHeightProviderService`, or `TerrainSurfaceProviderService`.
 * Support thread safety.
 * Call `OnCompositionChanged` or `OnCompositionRegionChanged` whenever any data within the component changes.
 * Call the appropriate APIs on the `TerrainSystemServiceRequestBus` to register/unregister/refresh a terrain region.

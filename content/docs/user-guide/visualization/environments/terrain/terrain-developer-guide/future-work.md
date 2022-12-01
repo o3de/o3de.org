@@ -6,7 +6,7 @@ weight: 500
 toc: true
 ---
 
-There are a number of improvements that could potentially be made to the terrain system for anyone interested in taking the system further.
+There are a number of improvements that can potentially be made to the terrain system for anyone interested in taking the system further. You can reach out to the O3DE community to talk about any terrain enhancements or ideas on the #sig-content channel on [Discord](https://discord.com/invite/o3de). We are happy to help!
 
 ## Large-scale improvements
 
@@ -20,7 +20,7 @@ The API extensions would likely consist of redefining the current APIs to provid
 
 ### GPU calculation support
 
-The terrain system is built on top of the gradient components, which perform all of their calculations CPU-side. However, the types of calculations being performed are ideal for GPU-side calculation. An overhaul or replacement of the gradient system that supports GPU-side calculations could provide orders of magnitude improvements to the terrain system. The primary caveats are that the data is still needed CPU-side to feed to physics, generalized raycasts, and other systems, and that it should be possible to still use the terrain system on devices with limited or no GPU capabilities (low-end phones, headless servers, etc).
+The terrain system is built on top of the gradient components, which perform all of their calculations on the CPU. However, a GPU can perform bulk computations like these far more optimally. An overhaul or replacement of the gradient system that supports GPU-side calculations can improve the terrain system's performance by orders of magnitude. The primary caveats are that the data is still needed on the CPU to feed to physics, generalized raycasts, and other systems, and that it should be possible to still use the terrain system on devices with limited or no GPU capabilities (low-end phones, headless servers, etc).
 
 ## Additional features
 
@@ -32,7 +32,7 @@ Currently, the terrain always triangulates each quad in the same uniform directi
 
 ### Improved shape to height workflows
 
-It's currently somewhat non-intuitive to create terrain heights directly from primitive shape components. The best options are to use either the Shape Falloff Gradient or the Surface Altitude Gradient, but they're both currently problematic. The Shape Falloff Gradient creates falloff based on distance from the bottom of a box, not just simply the position of the shape within a box, so it's hard to control. The Surface Altitude Gradient doesn't support falloff and the auto-refresh doesn't work. Either of these components could be improved, or a new component could be added, to make it easier to just place a shape with falloff into the world and turn it into a height gradient.
+Currently, it's somewhat non-intuitive to create terrain heights directly from primitive shape components. The best options are to use either the Shape Falloff Gradient or the Surface Altitude Gradient, but they're both problematic. The Shape Falloff Gradient creates falloff based on a shape's distance from the bottom of a box instead of falloff from the shape's world position, making it hard to control. The Surface Altitude Gradient doesn't support falloff and the auto-refresh doesn't work. Either of these components can be improved or a new component can be added, to make it easier to place a shape with falloff into the world and turn it into a height gradient.
 
 ### Masking / blending
 
