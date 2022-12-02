@@ -35,8 +35,8 @@ Refer to the [Terrain Developer Guide](/docs/user-guide/visualization/environmen
 | Component | Description |
 | - | - |
 | [Terrain World](/docs/user-guide/components/reference/terrain/world) | Enables the terrain system and provides the data required for other terrain components. |
-| [Terrain World Debugger](/docs/user-guide/components/reference/terrain/layer_spawner) | Offers a number of terrain debugging features. These visualizations are entirely optional, and can be toggled on or off individually. |
-| [Terrain World Renderer](/docs/user-guide/components/reference/terrain/layer_spawner) | Visualizes terrain in the world and controls the global terrain rendering properties. |
+| [Terrain World Debugger](/docs/user-guide/components/reference/terrain/world-debugger) | Offers a number of terrain debugging features. These visualizations are entirely optional, and can be toggled on or off individually. |
+| [Terrain World Renderer](/docs/user-guide/components/reference/terrain/world-renderer) | Visualizes terrain in the world and controls the global terrain rendering properties. |
 
 ## Components
 
