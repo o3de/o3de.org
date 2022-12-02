@@ -48,7 +48,7 @@ The `<Gem>EditorSystemComponent` class is the system component class for managin
 
 ### Prerequisites
 
-You must register your Gem before you can built it.
+You must register your Gem before you can build it.
 
 If you created a Gem using the [`create-gem` command](creating) in the `o3de` script, it is registered automatically.
 
