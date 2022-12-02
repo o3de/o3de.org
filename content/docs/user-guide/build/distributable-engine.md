@@ -121,7 +121,7 @@ If you have an existing project to update rather than creating a new one, the us
 Use the `o3de` script to re-register your project with the install build. This will be used to create the distributable build for your project.
    
 ```cmd
-scripts\o3de.bat register --pp W:\MyProject
+scripts\o3de.bat register -pp W:\MyProject
 ```
 
 The `engine` field of the `project.json` file will now be the name of the engine that was set as `LY_ENGINE_VERSION_NAME` during configuration.

@@ -126,7 +126,7 @@ import azlmbr.math as math
 
 from PySide2.QtCore import Qt
 from PySide2.QtGui import QDoubleValidator
-from PySide2.QtWidgets import QCheckBox, QComboBox, QDialog, QFormLayout, QGridLayout, QGroupBox, QLabel,  QPushButton, QVBoxLayout, QWidget
+from PySide2.QtWidgets import QCheckBox, QComboBox, QDialog, QFormLayout, QGridLayout, QGroupBox, QLabel, QLineEdit, QPushButton, QVBoxLayout, QWidget
 ```
 
 ## Dialogs, Widgets, and layouts
