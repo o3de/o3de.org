@@ -8,7 +8,7 @@ full_img: ""
 ---
 
 
-Compilers and linkers are not always at the forefront of our minds when we code. At best, we often work off of a vague mental model of how the they behave, but while our imperfect intuition might serve us well in many circumstances, not having a more comprehensive view can certainly get us into trouble. It’s possible that our project builds and “works” but in a way that is suboptimal. Over time, the cumulative inefficiencies of small issues and mistakes made by hundreds of engineers over a growing codebase can add up to become massive workflow problems. If the project you work on or work with exhibits any of the following symptoms, it’s time to take a look at what’s going on in linker-land.
+Compilers and linkers are not always at the forefront of our minds when we code. At best, we often work off of a vague mental model of how the they behave, but while our imperfect intuition might serve us well in many circumstances, not having a more comprehensive view can certainly get us into trouble. It’s possible that our project builds and “works,” but in a way that is suboptimal. Over time, the cumulative inefficiencies of small issues and mistakes made by hundreds of engineers over a growing codebase can add up to become massive workflow problems. If the project you work on or work with exhibits any of the following symptoms, it’s time to take a look at what’s going on in linker-land.
 
 * “I change one line of code in a C++ file and it feels like the whole universe is re-linking”
 * “I have dozens of gigabytes of duplicated code in extremely bloated binaries”
@@ -22,15 +22,15 @@ The world we all probably want to live in can be described conversely:
 * “My symbol files are manageable, and I don’t experience friction working with a debugger.”
 * “Compilation is instantaneous and takes no memory.”
 
-Ok the last one is maybe out of reach, but you get the idea. Can we achieve this nirvana? Experience shows that “yes” we can, but it requires consistent diligence and is the result of a team joint effort. This write up is intended to get us all up to speed on the knowledge needed to motivate and understand the changes needed for a healthy codebase.
+Ok, maybe the last one is out of reach, but you get the idea. Can we achieve this nirvana? Experience shows that we can, but it requires consistent diligence and is the result of a team joint effort. This writeup is intended to get us all up to speed on the knowledge needed to motivate and understand the changes needed for a healthy codebase.
 
 First, we’re going to start from the basics, assuming no prior knowledge of how the C++ toolchain works. Then, we’ll look at some of the things that can go wrong. Finally, we’ll draw some conclusions and try to formalize a set of recommendations about how we should structure our code.
 
-## Hello, world, but with extra steps
+## "Hello, world" but with extra steps
 
 Let’s make a simple file to implement the venerable “Hello, World” program, but in a function instead of a main routine.
 
-```
+```cpp
 // hello.cpp
 #include <cstdio>
 
@@ -42,19 +42,19 @@ void hello_world()
 
 On Windows, we can compile this pretty easily like so:
 
-```
+```cmd
 cl.exe hello.cpp /c
 ```
 
 The `/c` option is needed to compile the `hello.cpp` object file without invoking the linker (which is done by default). The command above produces `hello.obj` in the same folder. We can verify the contents of the object file with the `dumpbin` utility:
 
-```
+```cmd
 dumpbin /disasm hello.obj
 ```
 
 Running the command above should emit a bunch of assembly code, including instructions associated with `printf` as well as our `hello_world` function. Here’s a small snippet:
 
-```
+```asm
 Dump of file hello.obj
 
 File Type: COFF OBJECT
@@ -65,11 +65,11 @@ File Type: COFF OBJECT
   0000000000000007: E9 00 00 00 00     jmp         printf
 ```
 
-Easy enough, we have a simple `hello_world` function with only a couple instructions. The first `lea` loads the address of the embedded “Hello, World!\n” c-string literal for use in the `printf` subroutine (note that in this particular case, we can invoke `jmp` directly on the function address, instead of needing to call it as a function).
+Easy enough, we have a simple `hello_world` function with only a couple instructions. The first `lea` loads the address of the embedded `Hello, World!\n` c-string literal for use in the `printf` subroutine (note that in this particular case, we can invoke `jmp` directly on the function address, instead of needing to call it as a function).
 
 As it stands, this code isn’t “runnable” in any way. It’s not an executable yet, nor is it in a form that we can load at runtime to execute in the context of another program (i.e. it isn’t a runtime DLL). To do that, we need to use a linker. Let’s first create an executable that invokes our `hello_world` function.
 
-```
+```cpp
 // main.cpp
 
 void hello_world();
@@ -82,7 +82,7 @@ int main()
 
 If you compile this with `cl` as above, what do you think should happen? If you aren’t already familiar with the C++ compilation model, you might suspect this would fail to compile - after all, there’s no code defined for what the `hello_world` function should do when called! However, compiling this with `cl /c` works just fine and you’ll get a `main.obj` file for your trouble. Dumping the assembly of that yields:
 
-```
+```asm
 Dump of file main.obj
 
 File Type: COFF OBJECT
@@ -113,11 +113,11 @@ Sure enough, we see that the `main.obj` file embeds a relocation corresponding t
 
 OK, that’s all well and good, but we still don’t have an executable! We have an object file defining a function, and we have a main entry point that calls that function. We need some way to... *link* them together, and the tool to do exactly that is the appropriately named linker! Running the command, `link main.obj hello.obj /out:hello.exe`, yields a `hello.exe` file which, when run, prints “Hello, World!” The assembly of the main executable is seen below, with the call to `hello_world` present at the address in bold (**0x140001010**):
 
-```
+```cmd
 link main.obj hello.obj /out:hello.exe
 ```
 
-```
+```asm
 Dump of file main.exe
 
 File Type: EXECUTABLE IMAGE
@@ -140,7 +140,7 @@ This “works” but in practice isn’t sufficient due to practical limitations
 
 Let’s make a simple 3 file program to test it out. Two source files `A.cpp` and `B.cpp`, define two functions `foo` and `bar`, both of which will be called by a third main function. However, instead of linking them all together, we link `A.obj` and `B.obj` together into a static library named `AB.lib`, and then link *that* with `main.obj` to create our executable.
 
-```
+```cpp
 // A.cpp
 #include <cstdio>
 
@@ -150,7 +150,7 @@ void foo()
 }
 ```
 
-```
+```cpp
 // B.cpp
 #include <cstdio>
 
@@ -160,7 +160,7 @@ void bar()
 }
 ```
 
-```
+```cpp
 // main.cpp
 
 void foo();
@@ -192,7 +192,7 @@ So far we haven’t done anything fundamentally new yet. Let’s now link `A.obj
 
 The `dumpbin` tool is truly versatile, as it can inspect the contents of `AB.lib` also! If you use it to dump its assembly, you’ll see code associated with the `foo` and `bar` functions as you might expect.
 
-```
+```asm
 Dump of file AB.lib
 
 File Type: LIBRARY
@@ -225,7 +225,7 @@ Now that we know how static libraries work, are we done now? Well not quite, alt
 
 The solution is to leverage not static linking, but dynamic linking instead. As the names imply, “static” linking is done before we run a single instruction, at build time. Dynamic linking however, performs the symbol resolution we’ve already seen at runtime. To see how this works, let’s start with a simple source file that we’ll attempt to link dynamically.
 
-```
+```cpp
 // A.cpp
 
 __declspec(dllexport)
@@ -241,7 +241,7 @@ We can compile and link this file as before if we want, but we’ll use a shorth
 
 If we dump the assembly of `A.obj`, we should get the expected function body:
 
-```
+```asm
 Dump of file A.obj
 
 File Type: COFF OBJECT
@@ -253,7 +253,7 @@ File Type: COFF OBJECT
 
 The assembly of `A.dll` *also* has the code above, albeit with another hundred kilobytes or so of additional instructions which we won’t get into:
 
-```
+```asm
 Dump of file A.dll
 
 File Type: DLL
@@ -273,17 +273,14 @@ However, the `A.lib` file emitted along with the link command has no assembly at
 Dump of file A.lib
 
 File Type: LIBRARY
-
      Exports
-
        ordinal    name
-
                   ?foo@@YAHXZ (int __cdecl foo(void))
 ```
 
 Here, we see that the lib file has the symbol in the exports table. The `dllexport` attribute is key because without it, not only would this symbol not be present in the exports table, the linker wouldn't have emitted `A.lib` and `A.exp` at all. What’s in the `exp` file then? Inspecting it, you’ll find that it contains the `foo` function in its symbol and relocation tables. We’ll circle back to the `exp` file later, but first, let’s actually use our DLL in the context of an executable.
 
-```
+```cpp
 // main.cpp
 #include <cstdio>
 
@@ -299,14 +296,19 @@ int main()
 Here, we have a main function that invokes `foo` which is not yet resolved but we know exists in the DLL. To compile this into an executable, we can use the command `cl main.cpp A.lib` which conveniently links the object file generated from `main.cpp` and `A.lib` to produce `main.exe`. If we run it, `main.exe` prints “Version 1” to the console as expected, but how? To understand what happened, we can inspect things with [WinDbg](https://apps.microsoft.com/store/detail/windbg-preview/9PGJGD53TN86?hl=en-us&gl=us), a standalone debugger provided by Microsoft.
 [Image: image.png]In the screenshot above, we have paused the debugger right after the call to `main!foo`. Notice that in the bottom left, we have a number of modules loaded, including both our `main.exe` and also the `A.dll` library. We didn’t tell Windows to load `A.dll`, but by linking against its corresponding `A.lib` import library, the executable had the information needed to do it automatically for us. What did calling `main!foo` do however? If we inspect its disassembly, it looks like this:
 
-```
+```asm
     main!foo:
 00007ff6`efc371cc ff252e4e0900       jmp     qword ptr [main!__imp_?foo@@YAHXZ (7ff6efccc000)]
 ```
 
 An unconditional jump to `__imp_?foo@@YAH`X`Z`! That address is located in the middle of the Import Address Table (IAT) pictured below:
-[Image: image.png]Yet another jump! This time, to something in the `A` module instead of `main`. Sure enough, if we step to the next instruction, we wind up at our `foo` function which we defined in the `A.dll` module:
+
 [Image: image.png]
+
+Yet another jump! This time, to something in the `A` module instead of `main`. Sure enough, if we step to the next instruction, we wind up at our `foo` function which we defined in the `A.dll` module:
+
+[Image: image.png]
+
 Thinking about what this means, after we ran `main.exe`, Windows was kind enough to load `A.dll` into memory as well. After doing so, it wrote the address of `A!foo` into the IAT. When execution called `main!foo`, the instruction pointer was immediately redirected to the IAT entry corresponding to `__imp_?foo`, after which it was redirected again to `A!foo` and we finally arrived at our destination. Phew!
 
 Let’s now do a quick experiment. Remember that our original motivation for embarking on this DLL journey was to be able to modify code in the DLL without needing to relink the main executable and observe the changes.
@@ -317,7 +319,7 @@ Let’s change `foo` in `A.cpp` to now return `2` instead of `1`. After making t
 
 The `__impl_?foo` entry in the IAT we saw before is referred to as an “address thunk” or just a “thunk” for short. Earlier, we saw that when invoking `foo` from the `main` function, we did two jumps, first to `main!foo`, then to `__impl_?foo`, before finally resolving in `A!foo`. While the jump from the IAT is needed since this entry is written after the DLL loads at runtime, surely the jump to `main!foo` is unnecessary. This is where we can correct our declaration of `foo` to make this optimization:
 
-```
+```cpp
 #include <cstdio>
 
 // Now with the dllimport directive
@@ -331,7 +333,7 @@ int main()
 
 This is the same as before but with a `dllimport` directive on `foo` instead of just a naked `int foo()` declaration. If we compile this and inspect the disassembly, this is what we should see:
 
-```
+```asm
 main:
   00000001400070C0: 48 83 EC 28        sub         rsp,28h
   00000001400070C4: FF 15 36 4F 09 00  call        qword ptr [__imp_?foo@@YAHXZ]
@@ -354,7 +356,7 @@ We now have a mechanism by which we can change code without recompiling or relin
 
 As it turns out, there’s a way to load a DLL, query a function pointer, and then call it without needing to either export the function *or* link against the import lib. To demonstrate this, we’ll use the following code in two source files:
 
-```
+```cpp
 // A.cpp
 
 __declspec(dllexport)
@@ -435,7 +437,7 @@ So far, we’ve only linked static and dynamic libraries directly into an execut
 
 If it isn’t clear already, this can get messy really fast. Let’s look at a few motivating examples to see what can happen, starting first with a really simple case of linking `A.lib` with `B.dll` and `main.exe`.
 
-```
+```cpp
 // A.cpp (-> A.lib)
 int foo() { return 1; }
 
@@ -463,7 +465,7 @@ From `A.cpp`, we make a static library using `cl /c A.cpp` and `link /lib A.obj`
 
 So what’s the issue then? Well, “technically” there is no issue, but this is not the best way to structure things as we shall see. It’s also worth first trying to understand how this worked at all. If we dump the assembly of `A.lib`, we see the following:
 
-```
+```asm
 Dump of file A.lib
 
 File Type: LIBRARY
@@ -475,7 +477,7 @@ File Type: LIBRARY
 
 If we dump the assembly of `B.dll` on the other hand, we see this:
 
-```
+```asm
 Dump of file B.dll
 
 File Type: DLL
@@ -489,9 +491,9 @@ File Type: DLL
   0000000180001015: C3                 ret
 ```
 
-The call to that address at `0000000180001010` drops us just a few lines below where we should recognize the code corresponding to `foo`. Because `foo` itself wasn’t exported by `B.dll`, it’s code just lives as part of the `B` module on top of the `A` module. Finally, let’s look at the assembly of the executable itself with `dumpbin /disasm main.exe /out:main.asm`:
+The call to the emphasized address `0000000180001010` drops us just a few lines below where we should recognize the code corresponding to `foo`. Because `foo` itself wasn’t exported by `B.dll`, it’s code just lives as part of the `B` module on top of the `A` module. Finally, let’s look at the assembly of the executable itself with `dumpbin /disasm main.exe /out:main.asm`:
 
-```
+```asm
 Dump of file main.exe
 
 File Type: EXECUTABLE IMAGE
@@ -517,7 +519,7 @@ File Type: EXECUTABLE IMAGE
   
 ```
 
-I’ve highlighted the addresses of the call to `foo` and `bar` here. The first call to `foo` is visible since it sets `eax` to `1` and returns again. To verify that the second highlighted address takes us to the `bar` thunk, we can dump the imports of main using `dumpbin /imports main.exe`:
+The addresses for calling `foo` and `bar` are emphasized here. The first call to `foo` is visible since it sets `eax` to `1` and returns again. To verify that the second highlighted address takes us to the `bar` thunk, we can dump the imports of main using `dumpbin /imports main.exe`:
 
 ```
 Dump of file main.exe
@@ -556,7 +558,7 @@ Most C++ engineers are familiar with the notion of ODR (the One Definition Rule)
 
 Delving into every edge case and mechanism used to detect ODR violations or resolve possible ODR violations before they occur is well outside the scope of this writing, but I still wanted to give one example of how this can play out in practice.
 
-```
+```cpp
 // A.cpp
 template <int S>
 int X() {
@@ -568,7 +570,7 @@ int foo() {
 }
 ```
 
-```
+```cpp
 // B.cpp
 template <int S>
 int X() {
@@ -580,7 +582,7 @@ int bar() {
 }
 ```
 
-```
+```cpp
 // main.cpp
 #include <cstdio>
 
@@ -597,7 +599,7 @@ Here, `A.cpp` and `B.cpp` both instantiate the template function `X<2>`. In this
 
  Well, how did that work? If we look at the assembly of `A.obj`, `B.obj`, and `AB.lib`, we see the following:
 
-```
+```asm
 Dump of file A.obj
 
 File Type: COFF OBJECT
@@ -614,7 +616,7 @@ File Type: COFF OBJECT
   0000000000000005: C3                 ret
 ```
 
-```
+```asm
 Dump of file B.obj
 
 File Type: COFF OBJECT
@@ -631,7 +633,7 @@ File Type: COFF OBJECT
   0000000000000005: C3                 ret
 ```
 
-```
+```asm
 Dump of file AB.lib
 
 File Type: LIBRARY
@@ -661,7 +663,7 @@ File Type: LIBRARY
 
 By my count, the code associated with `int X<2>()` shows up 4 times here, once per object file, and then twice in the static library. As it turns out, the static library just concatenates all the sections of its inputs since it isn’t part of an executable module or DLL just yet - relocations haven’t yet been performed. The `main.exe` assembly on the other hand looks like this:
 
-```
+```asm
 Dump of file main.exe
 
 File Type: EXECUTABLE IMAGE
@@ -708,13 +710,13 @@ CMake even abstracts the build systems themselves, so that dependencies are resp
 
 Let’s do a quick test to see if CMake’s handling of DLLs operates as expected. We’ll go with a very simple scheme, one DLL linked into one executable (using sample code you’re probably sick of by now).
 
-```
+```cpp
 // A.cpp
 __declspec(dllexport)
 int foo() { return 1; }
 ```
 
-```
+```cpp
 // main.cpp
 #include <cstdio>
 
@@ -726,7 +728,7 @@ int main() { std::printf("%i\n", foo()); }
 
 Instead of compiling these files and linking by hand, let’s use [CMake](https://cmake.org/):
 
-```
+```cmake
 # CMakeLists.txt
 cmake_minimum_required(VERSION 3.24)
 project(DLLDemo)
