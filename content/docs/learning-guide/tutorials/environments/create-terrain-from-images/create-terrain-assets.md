@@ -93,7 +93,7 @@ Notice that the red and blue detail materials blend to purple in areas where the
 To create terrain detail materials for use with this tutorial, we will follow the steps in [Creating a StandardPBR Material](/docs/learning-guide/tutorials/rendering/create-standardpbr-material) with a few modifications. You may wish to familiarize yourself with that tutorial first as the steps here will be abbreviated.
 
 1. Download texture files. We will use two ready-made materials from [Poly Haven](https://polyhaven.com/): [Forest Ground 01](https://polyhaven.com/a/forrest_ground_01)
-and [Rock Boulder Dry](https://polyhaven.com/a/rock_boulder_dry). You can download them at any resolution; the example images in this tutorial use the 4k resolution. Download the AO, Diffuse, Displacement, Normal, and Rough textures into your tutorial level folder and rename them as follows:
+and [Rock Boulder Dry](https://polyhaven.com/a/rock_boulder_dry). You can download them at any resolution; the example images in this tutorial use the 4k resolution. To download the required images, click the hamburger button next to the Download button, then choose an extension to use and click the button for that extension next to the AO, Diffuse, Displacement, Normal, and Rough maps. Save the files into your tutorial level folder and rename them as follows:
 
     * forrest_ground_01_**ao**\_4k &rarr; forrest_ground_01\_**ao**
     * forrest_ground_01_**diff**\_4k &rarr; forrest_ground_01\_**basecolor**
