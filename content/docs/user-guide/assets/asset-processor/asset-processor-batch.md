@@ -11,10 +11,10 @@ You can use **Asset Processor Batch** as part of an automated build system for *
 `AssetProcessorBatch.exe` accepts the following command line parameters for overriding the default behavior:
 
 * `--platforms=<comma separated list>`
-* `--gamefolder=<name of game folder>`
+* `--project-path=<name of game folder>`
 
 Example:
 
 ```cmd
-AssetProcessorBatch.exe --platforms=pc,ios --gamefolder=MyTestProjectPath
+AssetProcessorBatch.exe --platforms=pc,ios --project-path=MyTestProjectPath
 ```
