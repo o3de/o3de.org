@@ -22,6 +22,8 @@ It's helpful to understand how the various gradient and terrain components work 
 
 In this section, you'll create the entities and components needed for defining surface types and adding materials to the terrain.
 
+1. **Save** the level (hotkey **Ctrl + S**) before beginning this section so that you can reload and revert the steps for texturing with entities if you choose to also work through the Landscape Canvas version of terrain texturing.
+
 ### Apply a macro material
 
 1. With the Terrain Spawner entity selected, add a **Terrain Macro Material** component.
@@ -228,8 +230,10 @@ Now that the terrain is fully textured, the settings on the **Terrain World Rend
 
 2. In the **Terrain World Renderer** component, enable **Height based texture blending** underneath **Detail material configuration**. This changes the terrain renderer from using pure alpha blending on detail materials to using the displacement maps on the materials to blend based on material heights. Height-based blending provides crisper details and more realistic transitions between the detail materials.
 
-| Alpha blending | Height-based blending |
-| - | - |
-| {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/detail-alpha-blending.png" alt="Detail materials blended with alpha blending." >}} | {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/detail-height-based-blending.png" alt="Detail materials blended with height-based blending." >}} |
+    | Alpha blending | Height-based blending |
+    | - | - |
+    | {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/detail-alpha-blending.png" alt="Detail materials blended with alpha blending." >}} | {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/detail-height-based-blending.png" alt="Detail materials blended with height-based blending." >}} |
 
-If performance becomes an issue, the detail material render and fade distances can be tuned to reduce the draw distance for the detail materials.
+    If performance becomes an issue, the detail material render and fade distances can be tuned to reduce the draw distance for the detail materials.
+
+3. **Save** the level (hotkey **Ctrl + S**).
