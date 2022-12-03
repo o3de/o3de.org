@@ -23,4 +23,4 @@ The tutorial is split into several parts to make it easier to refer back to indi
 | [Create Terrain Shape](create-terrain-shape) | Create the overall shape of the terrain in the level. |
 | [Texture the Terrain](texture-terrain) | Add color and surface types to the terrain. |
 | [Physicalize the Terrain](physicalize-terrain) | Physicalize the terrain by adding a physics collider. |
-| [Experiment further](experiment) | Experiment with the created terrain. |
+| [Experiment Further](experiment) | Experiment with the created terrain. |
