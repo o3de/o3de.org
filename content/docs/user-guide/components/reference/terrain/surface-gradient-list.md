@@ -11,7 +11,7 @@ The **Terrain Surface Gradient List** component defines mappings between a gradi
 
 You select a gradient either by dragging an entity containing a gradient component to the **GradientEntity** field, or by clicking {{< icon "picker.svg" >}}. Once a gradient is assigned, you can select the surface type that this gradient represents, by using the **Surface Tag** pull-down menu. You can configure the dimensions and priority of the layer using the required [Terrain Layer Spawner](/docs/user-guide/components/reference/terrain/layer_spawner).
 
-More than one gradient to surface type mapping can be defined in this component. The simplest example of multiple gradient mappings would be to have two surface types where one gradient uses an inverse modifier to act as the inverse of the other. You can have more than two as well that can be blended together.
+More than one gradient to surface type mapping can be defined in this component. A simple example of multiple gradient mappings would be to have two surface types where one gradient uses an inverse modifier to act as the inverse of the other. You can have more than two as well that can be blended together.
 
 ## Provider
 
