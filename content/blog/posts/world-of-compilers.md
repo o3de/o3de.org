@@ -7,7 +7,7 @@ blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: ""
 ---
 
-
+*In this blog from O3DE Technical Steering Committee member Jeremy Ong, he goes through the process of compilation and linking used by the MSVC compiler - useful for when you start encountering compilation and debugging issues!*
 Compilers and linkers are not always at the forefront of our minds when we code. At best, we often work off of a vague mental model of how the they behave, but while our imperfect intuition might serve us well in many circumstances, not having a more comprehensive view can certainly get us into trouble. It’s possible that our project builds and “works,” but in a way that is suboptimal. Over time, the cumulative inefficiencies of small issues and mistakes made by hundreds of engineers over a growing codebase can add up to become massive workflow problems. If the project you work on or work with exhibits any of the following symptoms, it’s time to take a look at what’s going on in linker-land.
 
 * “I change one line of code in a C++ file and it feels like the whole universe is re-linking”
