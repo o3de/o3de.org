@@ -294,7 +294,11 @@ int main()
 ```
 
 Here, we have a main function that invokes `foo` which is not yet resolved but we know exists in the DLL. To compile this into an executable, we can use the command `cl main.cpp A.lib` which conveniently links the object file generated from `main.cpp` and `A.lib` to produce `main.exe`. If we run it, `main.exe` prints “Version 1” to the console as expected, but how? To understand what happened, we can inspect things with [WinDbg](https://apps.microsoft.com/store/detail/windbg-preview/9PGJGD53TN86?hl=en-us&gl=us), a standalone debugger provided by Microsoft.
-[Image: image.png]In the screenshot above, we have paused the debugger right after the call to `main!foo`. Notice that in the bottom left, we have a number of modules loaded, including both our `main.exe` and also the `A.dll` library. We didn’t tell Windows to load `A.dll`, but by linking against its corresponding `A.lib` import library, the executable had the information needed to do it automatically for us. What did calling `main!foo` do however? If we inspect its disassembly, it looks like this:
+[Image: image.png]
+
+{{< image-width src="/images/blog/world-of-compilers/image1.png.png" width="100%" alt="Build and Run" >}}
+
+In the screenshot above, we have paused the debugger right after the call to `main!foo`. Notice that in the bottom left, we have a number of modules loaded, including both our `main.exe` and also the `A.dll` library. We didn’t tell Windows to load `A.dll`, but by linking against its corresponding `A.lib` import library, the executable had the information needed to do it automatically for us. What did calling `main!foo` do however? If we inspect its disassembly, it looks like this:
 
 ```asm
     main!foo:
@@ -303,11 +307,11 @@ Here, we have a main function that invokes `foo` which is not yet resolved but w
 
 An unconditional jump to `__imp_?foo@@YAH`X`Z`! That address is located in the middle of the Import Address Table (IAT) pictured below:
 
-[Image: image.png]
+{{< image-width src="/images/blog/world-of-compilers/image2.png" width="100%" alt="Build and Run" >}}
 
 Yet another jump! This time, to something in the `A` module instead of `main`. Sure enough, if we step to the next instruction, we wind up at our `foo` function which we defined in the `A.dll` module:
 
-[Image: image.png]
+{{< image-width src="/images/blog/world-of-compilers/image3.png" width="100%" alt="Build and Run" >}}
 
 Thinking about what this means, after we ran `main.exe`, Windows was kind enough to load `A.dll` into memory as well. After doing so, it wrote the address of `A!foo` into the IAT. When execution called `main!foo`, the instruction pointer was immediately redirected to the IAT entry corresponding to `__imp_?foo`, after which it was redirected again to `A!foo` and we finally arrived at our destination. Phew!
 
