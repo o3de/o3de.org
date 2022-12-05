@@ -9,9 +9,11 @@ The **Terrain Surface Gradient List** component defines mappings between a gradi
 
 ## Usage
 
+Terrain surface weight mappings control the strength of a surface type across the terrain surface. Multiple surface types and weights can exist at the same point. For example, a surface can be 30% grass, 50% dirt, and 20% rock. Other systems query these weights to determine how to render the terrain, what physics properties to apply to the terrain, and so on.
+
 You select a gradient either by dragging an entity containing a gradient component to the **GradientEntity** field, or by clicking {{< icon "picker.svg" >}}. Once a gradient is assigned, you can select the surface type that this gradient represents, by using the **Surface Tag** pull-down menu. You can configure the dimensions and priority of the layer using the required [Terrain Layer Spawner](/docs/user-guide/components/reference/terrain/layer_spawner).
 
-More than one gradient to surface type mapping can be defined in this component. A simple example of multiple gradient mappings would be to have two surface types where one gradient uses an inverse modifier to act as the inverse of the other. You can have more than two as well that can be blended together.
+More than one gradient to surface type mapping can be defined in this component. Each gradient needs to map to a different surface type. The simplest example of multiple gradient mappings would be to have two surface types where one gradient is the inverse of the other. You can have more than two as well that can be blended together.
 
 ## Provider
 
@@ -34,7 +36,7 @@ More than one gradient to surface type mapping can be defined in this component.
 
 ## TerrainAreaSurfaceRequestBus
 
-Use the following request functions with the `TerrainAreaSurfaceRequestBus ` EBus interface to communicate with Surface Gradient List components of your game.
+The `TerrainAreaSurfaceRequestBus` is an internal EBus used by the terrain system to query individual **Terrain Surface Gradient List** components. Other systems generally do not need to use this EBus since nothing outside the terrain system should need any information from the individual component instances. However, if a use case arises, the following request functions on the `TerrainAreaSurfaceRequestBus` EBus interface can be used to query the individual **Terrain Surface Gradient List** components.
 
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
