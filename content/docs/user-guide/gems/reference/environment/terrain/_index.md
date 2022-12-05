@@ -57,7 +57,7 @@ The Terrain Gem uses the following Console variables (CVARs) either at runtime v
 
 | Name | Description |
 | - | - |
-| `cl_terrainPhysicsColliderMaxJobs` | The maximum number of jobs to use when updating a Terrain Physics Collider (-1 will use all available cores). |
+| `cl_terrainPhysicsColliderMaxJobs` | The maximum number of jobs to use when updating a Terrain Physics Collider (`-1` will use all available cores). |
 | `physx_heightfieldDebugDrawDistance` | Distance for PhysX Heightfield debug visualization in meters. |
 | `physx_heightfieldDebugDrawBoundingBox` | Draw the bounding box used for heightfield debug visualization. |
 | `physx_heightfieldColliderUpdateRegionSize` | Size of a heightfield collider update region in meters, used for partitioning updates for faster cancellation. |
