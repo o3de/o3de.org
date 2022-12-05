@@ -13,7 +13,7 @@ Terrain surface weight mappings control the strength of a surface type across th
 
 You select a gradient either by dragging an entity containing a gradient component to the **GradientEntity** field, or by clicking {{< icon "picker.svg" >}}. Once a gradient is assigned, you can select the surface type that this gradient represents, by using the **Surface Tag** pull-down menu. You can configure the dimensions and priority of the layer using the required [Terrain Layer Spawner](/docs/user-guide/components/reference/terrain/layer_spawner).
 
-More than one gradient to surface type mapping can be defined in this component. Each gradient needs to map to a different surface type. The simplest example of multiple gradient mappings would be to have two surface types where one gradient is the inverse of the other. You can have more than two as well that can be blended together.
+More than one gradient to surface type mapping can be defined in this component. Each gradient needs to map to a different surface type. A simple example of multiple gradient mappings would be to have two surface types where one gradient is the inverse of the other. You can have more than two as well that can be blended together.
 
 ## Provider
 
