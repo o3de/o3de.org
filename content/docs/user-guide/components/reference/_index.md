@@ -217,6 +217,7 @@ The following components are grouped by type as they appear in the O3DE Editor.
 | - | - |
 | [Terrain Physics Heightfield Collider](./terrain/terrain-physics-collider) | Provides terrain data to a physics collider in the form of a heightfield and surface to material mapping. |
 | [Terrain Layer Spawner](./terrain/layer_spawner) | Spawns a terrain region contained within configurable bounds, and allows prioritization of overlapping terrain layers. |
+| [Terrain Macro Material](./terrain/terrain-macro-material) | Provides low-fidelity color data for a region of terrain. |
 | [Terrain Height Gradient List](./terrain/height_gradient_list) | Provides terrain height data from a list of gradients. |
 | [Terrain Surface Materials List](./terrain/surface-material-list) | Defines mappings between a surface type and a render material. |
 | [Terrain Surface Gradient List](./terrain/surface-gradient-list) | Defines mappings between a gradient and a surface type on a terrain layer. |
@@ -281,4 +282,3 @@ The following pages provide additional information about data and systems used b
 | - | - |
 | [Paint Brush](paintbrush/paintbrush) | Painting data manipulator used by some components. |
 | [Terrain Detail Material](./terrain/terrain-detail-material) | Provides high-fidelity material data for a region of terrain. |
-| [Terrain Macro Material](./terrain/terrain-macro-material) | Provides low-fidelity color data for a region of terrain. |
