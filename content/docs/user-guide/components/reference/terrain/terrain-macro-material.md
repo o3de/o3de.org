@@ -7,18 +7,6 @@ weight: 100
 
 The **Terrain Macro Material** component applies a terrain base color texture to all terrain regions that fall within its volume.
 
-## Usage
-
-The **Terrain Macro Material** component provides low-fidelity color information to the terrain system within a volume. The color data is used as the only source of color for any portion of the terrain that exists beyond the **Detail material render distance** defined on the [**Terrain World Renderer**](/docs/user-guide/components/reference/terrain/world-renderer) component. Within the **Detail material render distance** the color data is blended with the [terrain detail materials](/docs/user-guide/components/reference/terrain/terrain-detail-material) to provide color variation as the detail textures repeat on the surface.
-
-The component also provides optional macro normal information to the terrain system so that distant terrain can have higher quality normals on the lower-poly LODs. The macro normals are difficult to author correctly, so they aren't recommended for typical use. The macro normals must be in world space and generated at the same terrain scale in all dimensions as the terrain in the O3DE level. If the terrain in O3DE is resized unevenly in any direction, the normals will no longer line up with the terrain geometry and the terrain surface lighting will be incorrect.
-
-You can configure the dimensions of the volume by adjusting the [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape) component on the entity. You can assign a color texture and an optional normal texture by dragging texture assets to the **Color Texture** or **Normal Texture** fields, or by clicking {{< icon "file-folder.svg" >}}. When the textures are assigned, you can adjust the direction and magnitude of the normals by using the **Normal Flip X** and **Normal Flip Y** toggles, and the **Normal Factor** slider.
-
-The **Terrain Macro Material** can exist on the same entity as a **Terrain Layer Spawner** component if it's convenient, but this is not a requirement. This component can be used with any world region whether it overlaps multiple spawners, a single spawner, or no spawners at all. The macro material data is applied to any terrain data that appears within its volume and does not render wherever terrain is absent. This flexibility allows the terrain macro material to be authored, loaded, and unloaded at different sizes and resolutions than the rest of the terrain data.
-
-If two **Terrain Macro Material** volumes overlap, the **Priority** field dictates which macro material data will be used. Larger values are higher in priority.
-
 ## Provider
 
 [Terrain Gem](/docs/user-guide/gems/reference/environment/terrain)
@@ -43,6 +31,18 @@ The **Terrain Macro Material** also depends on at least one **Terrain Layer Spaw
 | **Normal Flip Y** | Set to true to flip the normals about Y. | Boolean | `False` |
 | **Normal Factor** | Adjusts the strength of the normal values. | Float | `1.0` |
 | **Priority** | The priority of the macro material data relative to other **Terrain Macro Material** components. Larger values are higher in priority. | Integer | `0` |
+
+## Usage
+
+The **Terrain Macro Material** component provides low-fidelity color information to the terrain system within a volume. The color data is used as the only source of color for any portion of the terrain that exists beyond the **Detail material render distance** defined on the [**Terrain World Renderer**](/docs/user-guide/components/reference/terrain/world-renderer) component. Within the **Detail material render distance** the color data is blended with the [terrain detail materials](/docs/user-guide/components/reference/terrain/terrain-detail-material) to provide color variation as the detail textures repeat on the surface.
+
+The component also provides optional macro normal information to the terrain system so that distant terrain can have higher quality normals on the lower-poly LODs. The macro normals are difficult to author correctly, so they aren't recommended for typical use. The macro normals must be in world space and generated at the same terrain scale in all dimensions as the terrain in the O3DE level. If the terrain in O3DE is resized unevenly in any direction, the normals will no longer line up with the terrain geometry and the terrain surface lighting will be incorrect.
+
+You can configure the dimensions of the volume by adjusting the [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape) component on the entity. You can assign a color texture and an optional normal texture by dragging texture assets to the **Color Texture** or **Normal Texture** fields, or by clicking {{< icon "file-folder.svg" >}}. When the textures are assigned, you can adjust the direction and magnitude of the normals by using the **Normal Flip X** and **Normal Flip Y** toggles, and the **Normal Factor** slider.
+
+The **Terrain Macro Material** can exist on the same entity as a **Terrain Layer Spawner** component if it's convenient, but this is not a requirement. This component can be used with any world region whether it overlaps multiple spawners, a single spawner, or no spawners at all. The macro material data is applied to any terrain data that appears within its volume and does not render wherever terrain is absent. This flexibility allows the terrain macro material to be authored, loaded, and unloaded at different sizes and resolutions than the rest of the terrain data.
+
+If two **Terrain Macro Material** volumes overlap, the **Priority** field dictates which macro material data will be used. Larger values are higher in priority.
 
 ## MacroMaterialData
 
