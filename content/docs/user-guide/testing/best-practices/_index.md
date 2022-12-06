@@ -18,7 +18,7 @@ File access, device input, and network communication are slow operations that ca
 
 Do not rely on `this_thread::sleep` or `time.sleep` in tests. Be immediately suspicious if you notice a sleep in a pull request. Some quick facts:
 
-* Tests relying on sleeps are automatically slow: yielding control to the underlying OS scheduler and returning control is a slow operation.
+* Tests relying on sleeps are naturally slow; yielding control to the underlying OS scheduler and returning control is a slow operation.
   * Latency depends on the the specific device, and still can fluctuate with its physical and digital hardware state.
 * Passing a duration to a sleep function requests a *minimum* time the thread should be suspended, not an exact time it will resume.
 
