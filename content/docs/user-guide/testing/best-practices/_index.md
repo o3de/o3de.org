@@ -6,7 +6,7 @@ toc: true
 weight: 600
 ---
 
-This page provides advice on how many independent developers can efficiently maintain the **Open 3D Engine (O3DE)** with automated tests. The advice applies both to teams using O3DE who write their own automation, as well as to anyone contributing to O3DE. This document is not intended to serve as an exhaustive source of testing advice. It instead provides baseline definitions and heuristics for investing in test automation. Each concept only serves as a brief introduction, as numerous in depth articles can be found published by other sources.
+This page provides advice on how many independent developers can efficiently maintain the **Open 3D Engine (O3DE)** with automated tests. The advice applies to teams using O3DE who write their own automation and anyone contributing to O3DE. This document does not serve as an exhaustive source of testing advice. It instead provides baseline definitions and heuristics for investing in test automation. Each concept only serves as a brief introduction; you can find numerous in-depth articles on testing best practices in other sources.
 
 ## Avoid
 
