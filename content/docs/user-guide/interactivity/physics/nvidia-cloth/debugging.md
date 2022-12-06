@@ -16,5 +16,5 @@ You can use the following console variables (CVARs) in the editor console to vis
 | `cloth_DebugDrawColliders <value>` | Draw the cloth colliders. | **0** - Disable collider display.<br>**1** - Enable collider display. |
 | `cloth_DebugDrawMotionConstraints <value>` | Draw the cloth motion constraints. | **0** - Disable motion constraint display.<br>**1** - Enable motion constraint display. |
 | `cloth_DebugDrawBackstop <value>` | Draw the cloth backstop. | **0** - Disable backstop display.<br>**1** - Enable backstop display. |
-| `cloth_DistanceToTeleport <meters>` | The amount of meters the entity has to move in a frame to consider it a teleport for cloth. | Floating point value represneting a distance in meters (world units). |
-| `cloth_SecondsToDelaySimulationOnActorSpawned <seconds>` | The amount of time in seconds the cloth simulation will be delayed to avoid sudden impulses when actors are spawned. | Floating point value that represnets a delay in seconds. |
+| `cloth_DistanceToTeleport <meters>` | The amount of meters the entity has to move in a frame to consider it a teleport for cloth. | Floating point value that represents a distance in meters (world units). |
+| `cloth_SecondsToDelaySimulationOnActorSpawned <seconds>` | The amount of time in seconds the cloth simulation will be delayed to avoid sudden impulses when actors are spawned. | Floating point value that represents a delay in seconds. |
