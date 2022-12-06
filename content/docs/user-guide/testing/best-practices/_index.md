@@ -12,7 +12,7 @@ This page provides advice on how many independent developers can efficiently mai
 
 ### I/O
 
-File access, device input, and network communication are slow operations which can create complex software and hardware dependencies. Tests performing I/O often encounter race conditions such as parallel contention. Prefer configuring mock implementations of I/O interfaces, and using in-memory buffers to simulate the behavior of actual input and output.
+File access, device input, and network communication are slow operations that can create complex software and hardware dependencies. Tests performing I/O often encounter race conditions such as parallel contention. Prefer configuring mock implementations of I/O interfaces and using in-memory buffers to simulate actual input and output behavior.
 
 ### Sleep
 
