@@ -23,7 +23,7 @@ If you can't find a component in the **Add Component** list, you may need to ena
 {{< /note >}}
 
 ## Components
-The components below are grouped by type as they appear in the O3DE Editor.
+The following components are grouped by type as they appear in the O3DE Editor.
 
 <!--
 ### AI
@@ -217,10 +217,10 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | - | - |
 | [Terrain Physics Heightfield Collider](./terrain/terrain-physics-collider) | Provides terrain data to a physics collider in the form of a heightfield and surface to material mapping. |
 | [Terrain Layer Spawner](./terrain/layer_spawner) | Spawns a terrain region contained within configurable bounds, and allows prioritization of overlapping terrain layers. |
+| [Terrain Macro Material](./terrain/terrain-macro-material) | Provides low-fidelity color data for a region of terrain. |
 | [Terrain Height Gradient List](./terrain/height_gradient_list) | Provides terrain height data from a list of gradients. |
 | [Terrain Surface Materials List](./terrain/surface-material-list) | Defines mappings between a surface type and a render material. |
 | [Terrain Surface Gradient List](./terrain/surface-gradient-list) | Defines mappings between a gradient and a surface type on a terrain layer. |
-| [Terrain Macro Material](./terrain/terrain-macro-material) | Provides a macro level method of defining the appearance of a region of terrain. |
 | [Terrain World](./terrain/world) | Allows the bounds of the Terrain World and the height query resolution to be set. |
 | [Terrain World Debugger](./terrain/world-debugger) | Provides a means to display a wireframe or bounds representation of the Terrain World. |
 | [Terrain World Renderer](./terrain/world-renderer) | Renders the terrain within the Terrain World bounds. |
@@ -273,3 +273,12 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Vegetation Rotation Modifier](vegetation-modifiers/vegetation-rotation-modifier) | Offsets the rotation of the vegetation. |
 | [Vegetation Scale Modifier](vegetation-modifiers/vegetation-scale-modifier) | Offsets the scale of the vegetation. |
 | [Vegetation Slope Alignment Modifier](vegetation-modifiers/vegetation-slope-alignment-modifier) | Offsets the orientation of the vegetation relative to a surface angle. |
+
+## Supplemental Information
+
+The following pages provide additional information about data and systems used by the components.
+
+| Data/System | Description |
+| - | - |
+| [Paint Brush](paintbrush/paintbrush) | Painting data manipulator used by some components. |
+| [Terrain Detail Material](./terrain/terrain-detail-material) | Provides high-fidelity material data for a region of terrain. |
