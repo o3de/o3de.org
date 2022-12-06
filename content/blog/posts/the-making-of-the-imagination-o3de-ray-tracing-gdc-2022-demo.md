@@ -1,5 +1,5 @@
 ---
-title: "Re-Post: The making of the Imagination O3DE ray tracing GDC 2022 demo"
+title: "Repost: The making of the Imagination O3DE ray tracing GDC 2022 demo"
 date: 2022-12-07 
 slug: imagination-o3de-ray-tracing 
 author: Alekos Caporali
