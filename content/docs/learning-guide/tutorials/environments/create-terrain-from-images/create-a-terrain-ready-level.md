@@ -6,8 +6,6 @@ weight: 100
 toc: true
 ---
 
-## Goal
-
 In this tutorial section, you will create a new level that is ready for authoring terrain.
 
 ## Create a new level
@@ -18,7 +16,7 @@ In this tutorial section, you will create a new level that is ready for authorin
 
     {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/delete-default-entities.png" alt="Delete several default entities." >}}
 
-3. On the **Global Sky** entity, delete the [**HDRi Skybox**](/docs/user-guide/components/reference/atom/hdri-skybox/) component. The default skybox has terrain in the skybox image which will clash with the terrain that you will create below. Instead, we will use the **Sky Atmosphere** component, which provides an empty sky to work with.
+3. On the **Global Sky** entity, delete the [**HDRi Skybox**](/docs/user-guide/components/reference/atom/hdri-skybox/) component. The default skybox has terrain in the skybox image which will clash with the terrain that you'll create below. Instead, you'll use the **Sky Atmosphere** component, which provides an empty sky background.
 
     {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/delete-hdri-skybox.png" alt="Delete the HDRi Skybox component." >}}
 
@@ -28,7 +26,7 @@ In this tutorial section, you will create a new level that is ready for authorin
 
     {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/add-sky-atmosphere.png" alt="Add the Sky Atmosphere component." >}}
 
-At this point, the level should appear empty except for a blue sky.
+You now have an empty level except for a sun and blue sky.
 
 {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-empty-level.png" alt="Illustration of the new empty level with the sky component configured." >}}
 

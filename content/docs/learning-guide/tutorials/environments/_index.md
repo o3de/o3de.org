@@ -9,4 +9,4 @@ This section contains step-by-step tutorials related to level and environment de
 | Tutorial | Description |
 | - | - |
 | [Create a Level](create-a-level) | Create a new level for O3DE. |
-| [Create Terrain from Images](create-terrain-from-images/create-terrain-from-images) | Learn to create terrain using images. |
+| [Create Terrain from Images](create-terrain-from-images/) | Learn to create terrain using images. |

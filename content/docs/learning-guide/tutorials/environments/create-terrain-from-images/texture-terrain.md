@@ -62,11 +62,7 @@ At this point, the terrain should have height variation, color variation, and a 
 
 This process is the same as creating a gradient entity for a heightmap. Each gradient entity should have three components:
 
-* An **Image Gradient** component that references a gradient image.
-
-    {{< tip >}}
-Other gradient types can be used, but image gradients offer the most control and are used in many scenarios when creating terrain.
-    {{< /tip >}}
+* An **Image Gradient** component that references a gradient image. Other gradient types can be used, but image gradients offer the most control and are used in many scenarios when creating terrain.
 
 * A **Gradient Transform Modifier** component that places the gradient in the level.
 
