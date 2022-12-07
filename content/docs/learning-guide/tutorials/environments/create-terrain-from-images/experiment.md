@@ -28,7 +28,7 @@ At this point, the terrain is 256 m x 256 m in size. However, the scale can be a
 
 2. A dialog will appear asking if you would like to move or retain the references to external entities. Select **Move**.
 
-3. Create a second copy of the terrain in the level by right-cliking in the Entity Inspector and choosing **Instantiate Prefab...**.
+3. Create a second copy of the terrain in the level by right-clicking in the Entity Outliner and choosing **Instantiate Prefab...**.
 
 4. Experiment by moving the second copy around in the level.
 
