@@ -6,8 +6,6 @@ weight: 400
 toc: true
 ---
 
-## Goal
-
 In this tutorial section, you will add color and surface types to the terrain.
 
 ## Apply terrain materials
@@ -76,7 +74,7 @@ This process is the same as creating a gradient entity for a heightmap. Each gra
 
 #### Create gradient entity for the rock surface weights
 
-In levels that have many different surface types, you will typically use separate images for each surface weight. However, for this tutorial, we only have two surface types, so we will make our rock gradient the inverse of the grass gradient.
+In levels that have many different surface types, you will typically use separate images for each surface weight. However, this tutorial only uses two surface types, so the rock gradient can be set to the inverse of the grass gradient.
 
 1. Create a child entity of the Terrain Spawner entity named `Terrain Rock` and add an [**Invert Gradient Modifier**](/docs/user-guide/components/reference/gradient-modifiers/invert-gradient-modifier) component and a **Shape Reference** component to it.
 
@@ -174,7 +172,7 @@ At this point, the terrain should have height variation, color variation, and a 
 
 #### Create gradient entity for the rock surface weights in Landscape Canvas
 
-In levels that have many different surface types, you will typically use separate images for each surface weight. However, for this tutorial, we only have two surface types, so we will make our rock gradient the inverse of the grass gradient.
+In levels that have many different surface types, you will typically use separate images for each surface weight. However, this tutorial only has two surface types, so the rock gradient can be set to the inverse of the grass gradient.
 
 1. In Landscape Canvas, in the Node Palette, expand the **Gradient Modifiers** node list, and drag an **Invert** node into the graph. Name the entity `Terrain Rock`.
 

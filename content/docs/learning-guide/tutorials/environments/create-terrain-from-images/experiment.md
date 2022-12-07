@@ -6,8 +6,6 @@ weight: 600
 toc: true
 ---
 
-## Goal
-
 In this tutorial section, you can experiment with the created terrain to try out more features of the terrain system.
 
 ## Scale the terrain

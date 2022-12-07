@@ -6,8 +6,6 @@ weight: 500
 toc: true
 ---
 
-## Goal
-
 In this tutorial section, you will physicalize the terrain by adding a physics collider.
 
 ## Add terrain physics

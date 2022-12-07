@@ -6,8 +6,6 @@ weight: 300
 toc: true
 ---
 
-## Goal
-
 In this tutorial section, you will create a terrain in the level that has the desired shape and size.
 
 ## Create the terrain

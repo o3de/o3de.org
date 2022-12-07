@@ -6,8 +6,6 @@ weight: 200
 toc: true
 ---
 
-## Goal
-
 In this tutorial section, you will create the terrain assets needed for authoring the example terrain in a level.
 
 ## Create a surface tag name list
