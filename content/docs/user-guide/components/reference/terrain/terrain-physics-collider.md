@@ -7,16 +7,6 @@ weight: 100
 
 The **Terrain Physics Heightfield Collider** component provides terrain data to the physics system in the form of a heightfield and material assignments.  You can configure the dimensions of the collider by modifying the [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape) component on the same entity.
 
-## Usage
-
-The physics system receives collision information about the terrain through the **Terrain Physics Heightfield Collider** component. This component takes the region within the associated **Axis Aligned Box Shape** component and creates a heightfield collider in the physics system. The heightfield collider has physics material assignments that varies per vertex based on the underlying terrain surface weights and the surface type to physics material mappings on this component.
-
-Because the terrain system uses the abstracted physics APIs in O3DE, the **Terrain Physics Heightfield Collider** component requires a companion Heightfield Collider component to interact with to convert terrain data into physics data for whichever physics system has been implemented. For example, when using this component with NVIDIA PhysX, the **PhysX Heightfield Collider** component is required on the same entity as the **Terrain Physics Heightfield Collider** to create a terrain heightfield in PhysX.
-
-The **Terrain Physics Heightfield Collider** can exist on the same entity as a **Terrain Layer Spawner** component if it's convenient, but this is not a requirement. The collider is not directly tied to a spawner. This component can be used with any region whether it overlaps multiple spawners, a single spawner, or no spawners at all. The primary advantage to keeping the collider on a separate entity from the spawner is that the physics colliders can be dynamically spawned and despawned at different times and sizes than the terrain. This enables having a large fully viewable terrain in the world and only a small subregion around the player that exists in the physics world for better control over performance and memory usage.
-
-You can assign which terrain surface types map to specific physics materials by selecting a surface type in the surface pull down menu, then selecting a physics material type in the material pull down. Multiple terrain surface types can map to the same physics material. Any terrain surface types that aren't mapped to a specific physics material will automatically be mapped to the **Default Surface Physics Material**.
-
 ## Provider
 
 [Terrain Gem](/docs/user-guide/gems/reference/environment/terrain)
@@ -38,6 +28,16 @@ The PhysX Heightfield Collider is only a dependency when using this component wi
 | **Surface to Material Mappings** | An array of [surface tags](/docs/user-guide/gems/reference/environment/surface-data) and physics materials to map together. |  |  |
 | **Surface Tag** | Selects a [surface tag](/docs/user-guide/gems/reference/environment/surface-data) to map to a [phsyics material](/docs/user-guide/interactivity/physics/nvidia-physx/materials). | Surface:  Surface Tag | (unassigned) |
 | **Material Asset** | Selects a [physics material](/docs/user-guide/interactivity/physics/nvidia-physx/materials) to apply to the surface. | Material: Physics Material | (default) |
+
+## Usage
+
+The physics system receives collision information about the terrain through the **Terrain Physics Heightfield Collider** component. This component takes the region within the associated **Axis Aligned Box Shape** component and creates a heightfield collider in the physics system. The heightfield collider has physics material assignments that varies per vertex based on the underlying terrain surface weights and the surface type to physics material mappings on this component.
+
+Because the terrain system uses the abstracted physics APIs in O3DE, the **Terrain Physics Heightfield Collider** component requires a companion Heightfield Collider component to interact with to convert terrain data into physics data for whichever physics system has been implemented. For example, when using this component with NVIDIA PhysX, the **PhysX Heightfield Collider** component is required on the same entity as the **Terrain Physics Heightfield Collider** to create a terrain heightfield in PhysX.
+
+The **Terrain Physics Heightfield Collider** can exist on the same entity as a **Terrain Layer Spawner** component if it's convenient, but this is not a requirement. The collider is not directly tied to a spawner. This component can be used with any region whether it overlaps multiple spawners, a single spawner, or no spawners at all. The primary advantage to keeping the collider on a separate entity from the spawner is that the physics colliders can be dynamically spawned and despawned at different times and sizes than the terrain. This enables having a large fully viewable terrain in the world and only a small subregion around the player that exists in the physics world for better control over performance and memory usage.
+
+You can assign which terrain surface types map to specific physics materials by selecting a surface type in the surface pull down menu, then selecting a physics material type in the material pull down. Multiple terrain surface types can map to the same physics material. Any terrain surface types that aren't mapped to a specific physics material will automatically be mapped to the **Default Surface Physics Material**.
 
 ## HeightfieldProviderRequestsBus
 
