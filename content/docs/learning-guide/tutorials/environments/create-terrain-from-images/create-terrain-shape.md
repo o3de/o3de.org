@@ -46,7 +46,7 @@ Once you have set the dimensions of the box shape, you can hide it by disabling 
 
 The following image is the complete **Terrain Spawner** entity:
 
-    {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-spawner-entity.png" width="450" alt="The completed Terrain Spawner entity." >}}
+{{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-spawner-entity.png" width="450" alt="The completed Terrain Spawner entity." >}}
 
 ### Create a terrain height gradient entity
 
