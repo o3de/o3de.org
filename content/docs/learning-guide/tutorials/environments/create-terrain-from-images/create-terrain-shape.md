@@ -138,7 +138,7 @@ The following properties are closely related and might require special attention
 
 ## Optionally adjust the terrain mesh rendering settings
 
-If you are using the tutorial assets, the default terrain mesh rendering settings should be sufficient. However, if you chose to use a different heightmap and terrain spawner box size than what's listed in the tutorial, and if the box size is larger than the default terrain rendering distance of 4096 meters or the default camera view distance of 1024 meters, you will need to adjust the rendering distances to make the entire terrain visible.
+If you are using the tutorial assets, the default terrain mesh rendering settings are sufficient. However, if you chose to use a different heightmap and terrain spawner box size than what's listed in the tutorial, and if the box size is larger than the default terrain rendering distance of 4096 meters or the default camera view distance of 1024 meters, you will need to adjust the rendering distances to make the entire terrain visible.
 
 1. In the **Terrain World Renderer** level component, set the **Mesh render distance** to a value that is greater than the terrain spawner box size so that the entire terrain will be visible.
 

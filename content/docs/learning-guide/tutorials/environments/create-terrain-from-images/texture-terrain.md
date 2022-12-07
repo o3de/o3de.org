@@ -32,11 +32,9 @@ In this section, you'll create the entities and components needed for defining s
 If you use a macro normal texture, the terrain area size must exactly match the size of the terrain in the terrain authoring software or else the normals won't point in the correct directions.
 {{< /important >}}
 
-At this point, the terrain should be colored, but up close it lacks any surface details:
+At this point, the terrain is colored, but up close it lacks any surface details:
 
-| | |
-| - | - |
-| ![An example of a macro material applied to a terrain.](/images/learning-guide/tutorials/environments/terrain-from-images/level-with-macro-color.png) | ![A zoomed-in example of a macro material applied to a terrain.](/images/learning-guide/tutorials/environments/terrain-from-images/level-with-macro-color-up-close.png) |
+{{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/level-with-macro-color-far-and-near.png" width=1000 alt="Illustrations of the macro material applied to a terrain." >}}
 
 ### Apply detail materials
 
@@ -48,17 +46,17 @@ Start by adding a default surface material to verify that the terrain detail mat
 
 1. With the Terrain Spawner selected, add a **Terrain Surface Materials List** component.
 
-2. To the right of the **Default Material** property, click the {{< icon "file-folder.svg" >}} **File** button and select the `rock_boulder_dry` material asset. The entire terrain should get redrawn with the rock material you created.
+2. To the right of the **Default Material** property, click the {{< icon "file-folder.svg" >}} **File** button and select the `rock_boulder_dry` material asset. The entire terrain is redrawn with the rock material you created.
 
-3. Now set the **Default Material** property to the `forrest_ground_01` material asset. This should change the entire terrain surface to grass.
+3. Now set the **Default Material** property to the `forrest_ground_01` material asset. This changes the entire terrain surface to grass.
 
-At this point, the terrain should have height variation, color variation, and a grass texture:
+At this point, the terrain has height variation, color variation, and a grass texture:
 
 {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-default-surface.png" width=1000 alt="Terrain covered with a single default surface material." >}}
 
 #### Create gradient entity for the grass surface weights
 
-This process is the same as creating a gradient entity for a heightmap. Each gradient entity should have three components:
+This process is the same as creating a gradient entity for a heightmap. Each gradient entity has three components:
 
 * An **Image Gradient** component that references a gradient image. Other gradient types can be used, but image gradients offer the most control and are used in many scenarios when creating terrain.
 
@@ -138,11 +136,9 @@ In this section, you'll color and surface the terrain using Landscape Canvas.
 If you use a macro normal texture, the terrain area size must exactly match the size of the terrain in the terrain authoring software or else the normals won't point in the correct directions.
 {{< /important >}}
 
-At this point, the terrain should be colored, but up close it lacks any surface details:
+At this point, the terrain is colored, but up close it lacks any surface details:
 
-| | |
-| - | - |
-| ![An example of a macro material applied to a terrain.](/images/learning-guide/tutorials/environments/terrain-from-images/level-with-macro-color.png) | ![A zoomed-in example of a macro material applied to a terrain.](/images/learning-guide/tutorials/environments/terrain-from-images/level-with-macro-color-up-close.png) |
+{{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/level-with-macro-color-far-and-near.png" width=1000 alt="Illustrations of the macro material applied to a terrain." >}}
 
 ### Apply detail materials in Landscape Canvas
 
@@ -154,11 +150,11 @@ Start by adding a default surface material to verify that the terrain detail mat
 
 1. Select the **Terrain Layer Spawner** node, press **Add Extenders**, and select **Terrain Surface Materials List**.
 
-2. In the Node Inspector, on the **Terrain Surface Materials List** component, to the right of the **Default Material** property, click the {{< icon "file-folder.svg" >}} **File** button and select the `rock_boulder_dry` material asset. The entire terrain should get redrawn with the rock material you created.
+2. In the Node Inspector, on the **Terrain Surface Materials List** component, to the right of the **Default Material** property, click the {{< icon "file-folder.svg" >}} **File** button and select the `rock_boulder_dry` material asset. The entire terrain is redrawn with the rock material you created.
 
-3. Now set the **Default Material** property to the `forrest_ground_01` material asset. This should change the entire terrain surface to grass.
+3. Now set the **Default Material** property to the `forrest_ground_01` material asset. This changes the entire terrain surface to grass.
 
-At this point, the terrain should have height variation, color variation, and a grass texture:
+At this point, the terrain has height variation, color variation, and a grass texture:
 
 {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/terrain-default-surface.png" width=1000 alt="Terrain covered with a single default surface material." >}}
 
@@ -208,7 +204,7 @@ This assigns the detail materials to the terrain based on the surface tag names 
 
 As you add detail materials and surface tag name pairs to the **Terrain Surface Materials List** component, the materials appear on the terrain surface.
 
-The final Landscape Canvas graph should look like this:
+The final Landscape Canvas graph looks like this:
 
 {{< image-width src="/images/learning-guide/tutorials/environments/terrain-from-images/landscape-canvas-graph.png" width=1000 alt="Landscape Canvas graph for the terrain." >}}
 
