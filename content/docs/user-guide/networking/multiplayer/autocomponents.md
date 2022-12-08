@@ -35,7 +35,7 @@ The `ComponentRelation` tag indicates this component's relationship with other c
 | Namespace | The namespace the related component is declared within. | `string`: Must be a valid C++ namespace. |
 | Include | The include path of the related component. | `string` |
 | Constraint | The type of relation this entry has with the component being described. The allowed values are: | `Required`, `Weak`, `Incompatible` |
-| | **Required**: The related component must be present on the entity. These components are displayed in the Editor as a hard requirement for adding this autocomponent. |
+| | **Required**: The related component must be present on the entity. These components are displayed in the Editor as a hard requirement for adding this auto-component. |
 | | **Weak**: The related component isn't required, but will be activated on the entity (if present) before this auto-component. | |
 | | **Incompatible**: The related component isn't compatible with this auto-component. Attempting to place both components on an entity will result in an error. | |
 | HasController | If `true`, the related component must have a multiplayer controller associated with it. Setting this value to true will cause controller accessors to be generated on the controller being described. | `bool` |
@@ -107,3 +107,34 @@ set(FILES
     Source/AutoGen/MySimpleNetPlayerComponent.AutoComponent.xml    
 )    
 ```
+
+## Network inputs
+
+Multiplayer auto-components can have *network inputs*, which are used to send input data from the player to the authoritative server. Network inputs are like special RPCs that the Multiplayer Gem creates, processes, and records at each frame of the network tick. When the authority receives a network input from the player, it stamps the network input with a frame number. Noting the frame number allows the authority to rewind, meaning it returns all the rewindable network properties to that moment in history, before it processes the input. Rewind is crucial to keep the multiplayer simulation in sync.
+
+### Attributes
+
+| Property | Description |
+| --- | --- |
+| **Name** | The name of the input. This name is used when writing or reading the input in code. |
+| **Type** | The data type that the input is stored as. |
+| **Init** | The initial value of the data. |
+
+### Example
+
+```xml
+<NetworkInput Type="StickAxis" Name="ForwardAxis" Init="0.0f" />
+<NetworkInput Type="bool"      Name="Crouch"      Init="false" />
+<NetworkInput Type="uint8_t"   Name="ResetCount"  Init="0" />
+```
+
+For a complete example, refer to [`NetworkPlayerMovementComponent.AutoComponent.xml`](https://github.com/o3de/o3de-multiplayersample/blob/development/Gem/Code/Source/AutoGen/NetworkPlayerMovementComponent.AutoComponent.xml#L21-L28).
+
+### Using network inputs in game logic
+
+In C++ and scripting, an auto-component with a network input overrides the following controllers:
+
+- `CreateInput`: The multiplayer system automatically calls `CreateInput` for the autonomous player at every network tick.
+
+- `ProcessInput`: This function calls for both the autonomous player and the authority.
+
