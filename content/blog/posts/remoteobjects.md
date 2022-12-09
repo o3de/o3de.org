@@ -11,8 +11,8 @@ In the 22.10.0 release of Open 3D Engine (O3DE), remote object support was exten
 
 ## Background
 
-In the [21.11.0 release](/blog/posts/o3de-22-10-release/) of O3DE, we added the ability to display gems outside of the official Gem catalog. Using Project Manager, you could register an external source from a webserver that had the correct O3DE metadata to display the remote gems and then pull and register them. This made the sharing of Gems the community created easier by removing a lot of the manual steps for downloading an registering Gems.
-Before the 22.11.0 release, downloading a new Gem was a manual process, by downloading an extracting the Gem, then using the O3DE CLI scripts to register the Gem for the current engine. The remote Gem functionality automated a lot of these steps, once a valid O3DE repository was registered, a single CLI command could handle the downloading, extracting and registering of the Gem. Project Manager was also updated to display the available Gems from the O3DE repository and then download, register and enable Gems for the current project all in one step.
+In the [21.11.0 release](/blog/posts/o3de-22-10-release/) of O3DE, we added the ability to display Gems outside the official Gem catalog. Using Project Manager, you can register an external Gem source on a web server with O3DE metadata to display, pull, and register remote Gems. This new workflow makes sharing Gems the community creates easier by removing manual steps.
+Before the 22.11.0 release, adding an external Gem was a manual process of downloading and extracting the Gem, then using the O3DE CLI scripts to register the Gem for the current engine. The remote Gem functionality automates these steps. Once a valid O3DE repository is registered, a single CLI command downloads, extracts, and registers the Gem. Project Manager was also updated to display Gems from a remote repository and then download, register and enable Gems for the current project⁠—all in one step.
 
 ## What's new
 
@@ -22,7 +22,7 @@ With O3DE 22.10.0 this functionality has been extended to cover projects and tem
 
 ### Setup
 
-Let's look at how a remote source with a project is set up for a remote project on GitHub (the steps for a template source is the same). First, looking at the layout of a repo.json file.
+Let's look at how a remote source with a project is set up as a remote repository on GitHub (the steps for a template source is the same). First, look at the layout of a `repo.json` file:
 
 ```json
 {
@@ -36,7 +36,7 @@ Let's look at how a remote source with a project is set up for a remote project 
 }
 ```
 
-This sets up the remote source information, with the name, author and uri for the source. In this example we want to sync the repository with git so we provide the GitHub uri with the .git extension and have a single object in the repository.
+The `repo.json` file sets up the repository with the name, author, and uri of the remote source. In this example, we want to sync the repository with Git, so we provide the GitHub uri with the `.git` extension and add a single O3DE object to the repository.
 
 The project.json looks like this
 
@@ -65,32 +65,32 @@ The project.json looks like this
 }
 ```
 
-The important field here is the origin_uri field which is the location of the object. Currently for GitHub repositories that we want to sync this will usually be the same as the remote source url.
+The important field here is the `origin_uri`, which is the O3DE object's location. For GitHub repositories that we want to sync, this will usually be the same as the remote source's url.
 
-The repo.json is placed in the same location as project.json in the root of the git repository.
+The `repo.json` is placed in the same location as `project.json` in the root of the Git repository.
 
 
-### Downloading using Project Manager
+### Download with Project Manager
 
-In Project Manager there is now an option to add a remote project.
+In Project Manager, there is now an option to add a remote project.
 
 {{< image-width src="/images/blog/remote-objects/dropdown.PNG" width="100%" alt="Add a Remote Project" >}}
 
-Selecting this brings up the Add a remote project dialog. On entering a valid O3DE repositoriy URL the dialog updates and selects a download folder based on the name of the project and the default projects folder.
+Selecting **Add a Remote Project** brings up the **Add a remote project** dialog. After entering a valid O3DE repository URL, the dialog updates and selects a download folder based on the remote project's name and the default project folder.
 
 {{< image-width src="/images/blog/remote-objects/addremotedialog.PNG" width="100%" alt="Add a Remote Project Config" >}}
 
-There is also the option whether to add the project to the build queue once it has downloaded. On selecting Download the project will be downloaded, registered and available to build and run like any other project.
+There is also an option to add the project to the build queue once the download finishes. After selecting **Download**, the project will be download, register, and be available to build and run like any other O3DE project.
 
-### Downloading using the O3DE CLI
+### Download with the O3DE CLI
 
-It is also possible to carry out these steps using the O3DE CLI. First by registering the remote source
+You can also add a remote project with the O3DE CLI. First, register the remote source:
 
 ```powershell
 scripts\o3de.bat register -ru <remote source URL>
 ```
 
-Then by specifying the project to download by the project name.
+Then, specify the project to download by the project name:
 
 ```powershell
 scripts\o3de.bat download -p <project name>
