@@ -110,7 +110,7 @@ set(FILES
 
 ## Network inputs
 
-Multiplayer auto-components can have *network inputs*, which are used to send input data from the player to the authoritative server. Network inputs are like special RPCs that the Multiplayer Gem creates, processes, and records at each frame of the network tick. When the authority receives a network input from the player, it stamps the network input with a frame number. Noting the frame number allows the authority to rewind, meaning it returns all of the rewindable network properties to that moment in history. Rewinding before processing the input is crucial to keep the multiplayer simulation in sync.
+Multiplayer auto-components can have *network inputs*, which are used to send input data from the player to the authoritative server. Network inputs are like special [remote procedure calls (RPCs)](/docs/user-guide/networking/multiplayer/overview#remote-procedure-calls-rpcs) that the Multiplayer Gem creates, processes, and records at each frame of the network tick. When the authority receives a network input from the player, it stamps the network input with a frame number. Noting the frame number allows the authority to rewind, meaning it returns all of the rewindable network properties to that moment in history. Rewinding before processing the input is crucial to keep the multiplayer simulation in sync.
 
 ### Attributes
 
