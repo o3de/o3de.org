@@ -110,7 +110,7 @@ set(FILES
 
 ## Network inputs
 
-Multiplayer auto-components can have *network inputs*, which are used to send input data from the player to the authoritative server. Network inputs are like special RPCs that the Multiplayer Gem creates, processes, and records at each frame of the network tick. When the authority receives a network input from the player, it stamps the network input with a frame number. Noting the frame number allows the authority to rewind, meaning it returns all the rewindable network properties to that moment in history, before it processes the input. Rewind is crucial to keep the multiplayer simulation in sync.
+Multiplayer auto-components can have *network inputs*, which are used to send input data from the player to the authoritative server. Network inputs are like special RPCs that the Multiplayer Gem creates, processes, and records at each frame of the network tick. When the authority receives a network input from the player, it stamps the network input with a frame number. Noting the frame number allows the authority to rewind, meaning it returns all of the rewindable network properties to that moment in history. Rewinding before processing the input is crucial to keep the multiplayer simulation in sync.
 
 ### Attributes
 
@@ -136,4 +136,4 @@ In C++ and scripting, an auto-component with a network input requires that you i
 
 - `CreateInput`: Define this function to return a filled-in network input that contains all of the recorded device inputs that occurred since the last tick. The multiplayer system automatically calls CreateInput for the autonomous player at every network tick. This is important because unlike for single player, the multiplayer system cannot act immediately upon receiving device inputs. Instead, the multiplayer system tracks all of the device inputs and stores them in the network input.
 
-- `ProcessInput`: Use this function to process all of the network inputs. Prior to calling this function, you should have only recorded device inputs by calling CreateInput, which doesn't result in any changes to the world yet. When you call ProcessInput, both the server and client-player will process the same network input at the same network tick. This function calls for both the autonomous player and the authority.
+- `ProcessInput`: Define and use this function to process all of the network inputs. Prior to calling this function, you should only have recorded device inputs through CreateInput, which doesn't result in any changes to the world yet. When you call ProcessInput, both the server and client-player will process the same network input at the same network tick. This function calls for both the autonomous player and the authority.
