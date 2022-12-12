@@ -16,7 +16,7 @@ Before the 22.11.0 release, adding an external Gem was a manual process of downl
 
 ## What's new
 
-With O3DE 22.10.0 this functionality has been extended to cover projects and templates, so that it is now possible to download and register projects and templates from a remote source. Remote sources have also been extended to cover downloading objects from GitHub repositories.
+With O3DE 22.10.0, we extended this functionality to projects and templates. It is now possible to download and register projects and templates from a remote source. Additionally, remote sources can download O3DE objects directly from GitHub repositories.
 
 ## Example
 
