@@ -38,7 +38,7 @@ Let's look at how a remote source with a project is set up as a remote repositor
 
 The `repo.json` file sets up the repository with the name, author, and uri of the remote source. In this example, we want to sync the repository with Git, so we provide the GitHub uri with the `.git` extension and add a single O3DE object to the repository.
 
-The project.json looks like this
+The `project.json` file looks like this:
 
 ```json
 {
