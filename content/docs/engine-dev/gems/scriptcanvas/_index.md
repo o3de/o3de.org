@@ -7,7 +7,7 @@ weight: 100
 
 {{< note >}}
 This information is for developers of the Script Canvas Gem, or for those who are working on low-level Gems which require taking advantage of Script Canvas
-or infrastructure it uses. If you're a user working with Script Canvas, please refer to the [Script Canvas User Guide](/docs/user-guide/gems/reference/script/script-canvas).
+or the infrastructure it uses. If you're a user working with Script Canvas, please refer to the [Script Canvas User Guide](/docs/user-guide/gems/reference/script/script-canvas).
 {{< /note >}}
 
 {{< todo >}}

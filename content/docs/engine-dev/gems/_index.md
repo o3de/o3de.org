@@ -6,10 +6,10 @@ weight: 300
 ---
 
 {{< note >}}
-This section of the documentation is for developers working on Gems distributed with O3DE, _not_ working on new Gems to add for their project. If you're a user looking to extend the engine through new functionality rather than modifying existing behavior, read the [User Guide - Gem Programming](/docs/user-guide/programming/gems) topic.
+This section of the documentation is for developers who wish to modify Gems that are distributed with O3DE. If you're a user looking to create new Gems, refer to the [User Guide - Gem Programming](/docs/user-guide/programming/gems) section.
 {{< /note >}}
 
-In **Open 3D Engine (O3DE)**, **Gems** are the library components that can be added to any project for functionality. As part of the standard O3DE distribution,
+In **Open 3D Engine (O3DE)**, **Gems** are packages that can be added to any project for functionality. As part of the standard O3DE distribution,
 multiple Gems needed for standard projects - such as the default rendering Gem, Atom - are provided. These Gems are maintained by the O3DE Project, and this
 documentation is for those looking to contribute, modify existing Gems to fit their needs, or build sub-Gems that are extensions of an existing core Gem.
 

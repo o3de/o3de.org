@@ -5,7 +5,7 @@ description: Documentation for developers looking to understand the overall arch
 weight: 100
 ---
 
-**Open 3D Engine (O3DE)** is a complex library suite designed to work with both reusable libraries (_Gems_) and user-created projects powered by the SDK (_projects_). In this section of the developer guide, you'll learn more about the overall architecture and design of O3DE from the bottom up, allowing low-level developers to take better advantage of the engine under the hood, diagnose tricky issues in debugging and loading, and contribute effectively back to O3DE with the core architecture principles in mind.
+**Open 3D Engine (O3DE)** is a complex library suite designed to work with both reusable libraries (_Gems_) and user-created projects powered by the SDK (_projects_). In this section of the developer guide, you'll learn more about the overall architecture and design of O3DE from the bottom up, allowing core engine developers to take better advantage of the engine under the hood, diagnose tricky issues in debugging and loading, and contribute effectively back to O3DE with the core architecture principles in mind.
 
 ## Topics
 
