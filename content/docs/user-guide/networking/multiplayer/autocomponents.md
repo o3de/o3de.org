@@ -128,13 +128,12 @@ Multiplayer auto-components can have *network inputs*, which are used to send in
 <NetworkInput Type="uint8_t"   Name="ResetCount"  Init="0" />
 ```
 
-For a complete example, refer to [`NetworkPlayerMovementComponent.AutoComponent.xml`](https://github.com/o3de/o3de-multiplayersample/blob/development/Gem/Code/Source/AutoGen/NetworkPlayerMovementComponent.AutoComponent.xml#L21-L28).
+For a more complete example, refer to [`NetworkPlayerMovementComponent.AutoComponent.xml`](https://github.com/o3de/o3de-multiplayersample/blob/development/Gem/Code/Source/AutoGen/NetworkPlayerMovementComponent.AutoComponent.xml#L21-L28).
 
 ### Using network inputs in game logic
 
-In C++ and scripting, an auto-component with a network input overrides the following controllers:
+In C++ and scripting, an auto-component with a network input requires that you implement the following multiplayer component controller functions:
 
-- `CreateInput`: The multiplayer system automatically calls `CreateInput` for the autonomous player at every network tick.
+- `CreateInput`: Define this function to return a filled-in network input that contains all of the recorded device inputs that occurred since the last tick. The multiplayer system automatically calls CreateInput for the autonomous player at every network tick. This is important because unlike for single player, the multiplayer system cannot act immediately upon receiving device inputs. Instead, the multiplayer system tracks all of the device inputs and stores them in the network input.
 
-- `ProcessInput`: This function calls for both the autonomous player and the authority.
-
+- `ProcessInput`: Use this function to process all of the network inputs. Prior to calling this function, you should have only recorded device inputs by calling CreateInput, which doesn't result in any changes to the world yet. When you call ProcessInput, both the server and client-player will process the same network input at the same network tick. This function calls for both the autonomous player and the authority.
