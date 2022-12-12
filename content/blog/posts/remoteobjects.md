@@ -7,8 +7,6 @@ blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: ""
 ---
 
-In the 22.10.0 release of Open 3D Engine (O3DE), remote object support was extended to projects and templates
-
 ## Background
 
 In the [21.11.0 release](/blog/posts/o3de-22-10-release/) of O3DE, we added the ability to display Gems outside the official Gem catalog. Using Project Manager, you can register an external Gem source on a web server with O3DE metadata to display, pull, and register remote Gems. This new workflow makes sharing Gems the community creates easier by removing manual steps.
