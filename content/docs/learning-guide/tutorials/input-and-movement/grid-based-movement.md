@@ -11,7 +11,7 @@ This tutorial teaches you how to use device input to move entities on a grid.  A
 
 | O3DE Experience | Time to Complete | Feature Focus | Last Updated |
 | - | - | - | - |
-| Beginner | 20 Minutes | Input Bindings assets, **Input** component, **Script Canvas** component | November 14, 2022 |
+| Beginner | 20 Minutes | Input Bindings assets, **Input** component, **Script Canvas** component | December 9, 2022 |
 
 ## What you will learn
 
@@ -46,7 +46,9 @@ The following image shows the scene layout after completing these steps.
 
 Next, you will create an Input Bindings asset that links input device event generators to input events.  In this tutorial, you will use the keyboard's `W`, `A`, `S`, and `D` keys to generate two input events that will move the Shader Ball on the X and Y-axis of the grid.  
 
-1. Open Asset Editor from the O3DE Editor **Tools** menu. **Left-click** the {{< icon "add.svg" >}} next to **Input Event Groups** twice to add two new input events.
+1. Open Asset Editor from the O3DE Editor **Tools** menu. In the Asset Editor **File** menu, choose **New** and then select **Input Bindings** to create a new Input Bindings asset.
+
+1. **Left-click** the {{< icon "add.svg" >}} next to **Input Event Groups** twice to add two new input events.
 
 1. In the new events' **Event Name** property, name the first event `MoveY` and the second `MoveX`.  You will need to remember these event names when you begin to script the Shader Ball's movement.
 
@@ -56,7 +58,7 @@ Next, you will create an Input Bindings asset that links input device event gene
 
 1. For the `MoveY` event, set the **Input Name** for the event generators to **keyboard_key_alphanumeric_W** and **keyboard_key_alphanumeric_S**.  For the `MoveX` event, set the **Input Name** for the event generators to **keyboard_key_alphanumeric_D** and **keyboard_key_alphanumeric_A**.
 
-1. You can leave the **Event value multiplier** of the `W` and `D` keys at their default value of `1.0`.  This corresponds to a movement in the positive direction on the X and Y-axis.  Change the **Event value multiplier** of the `S` and `A` keys to `-1.0` as this will correspond to a movement in the negative direction of the X and Y-axis.  It can be advantageous to use **Event value multipliers** to reduce the number of events you use, and it can simplify the scripting that handling the events requires.
+1. Change the **Event value multiplier** of the `S` and `A` keys to `-1.0` as this will correspond to a movement in the negative direction of the X and Y-axis.  You can leave the **Event value multiplier** of the `W` and `D` keys at their default value of `1.0`.  This corresponds to a movement in the positive direction on the X and Y-axis.  It can be advantageous to use **Event value multipliers** to reduce the number of events you use, and it can simplify the scripting that handling the events requires.
 
 1. Save the Input Bindings asset in your project's directory.
 
@@ -86,7 +88,7 @@ Next, you will create a script that handles the `MoveX` and `MoveY` input events
 
 1. Add the **On Graph Start** node to a new graph.  You can search for this node in the **Note Palettte** and **drag** it to the center of the editor to create a new graph.  When you play a level in _Game Mode_, the **On Graph Start** node will execute a single time as soon as the Script Canvas component is active.
 
-1. There must be one **Input Handler** node for each event that you want a graph to handle.  Add two **Input Hander** nodes to the graph.  In the **Event Name** fields, type the names of your events, `MoveX` and `MoveY`.  Connect the **Out** pin of the **On Graph Start** node to the **Connect Event** pin of the two **Input Handler** nodes.  Now the nodes' **Pressed**, **Held**, and **Released** slots will execute whenever the corresponding keyboard keys are pressed. When a key is pressed, you can capture and use the event's value by connecting the **value** output slot to nodes in your graph.
+1. There must be one **Input Handler** node for each event that you want a graph to handle.  Add two **Input Handler** nodes to the graph.  In the **Event Name** fields, type the names of your events, `MoveX` and `MoveY`.  Connect the **Out** pin of the **On Graph Start** node to the **Connect Event** pin of the two **Input Handler** nodes.  Now the nodes' **Pressed**, **Held**, and **Released** slots will execute whenever the corresponding keyboard keys are pressed. When a key is pressed, you can capture and use the event's value by connecting the **value** output slot to nodes in your graph.
 
     After connecting these nodes, your Script canvas graph should look like the following.
 
@@ -94,7 +96,7 @@ Next, you will create a script that handles the `MoveX` and `MoveY` input events
     
 1. Add two **From Values** nodes to the graph from the **Math > Vector3** category.  You will use these nodes to create a `Vector3` representing a single movement in one of the four grid directions.  Connect the **Pressed** pin of `MoveY`'s **Input Handler** to the **In** pin of one of the **From Values** nodes.  Then, connect the **value** pin to the **Y** slot of that node.
 
-1. Connect the `MoveX` **Input Handler** to the second **From Values** node in the same way, but this time connect the **value** pin to the **X** slot. When you press the `A` or `D` keyboard keys , this node will output either `(-1, 0, 0)` or `1, 0, 0)`.
+1. Connect the `MoveX` **Input Handler** to the second **From Values** node in the same way, but this time connect the **value** pin to the **X** slot. When you press the `A` or `D` keyboard keys , this node will output either `(-1, 0, 0)` or `(1, 0, 0)`.
 
 1. To get the Shader Ball to move, you need to add a `Vector3` to the ball's current world translation and then set the Shader Ball's translation to the result.  Add two **Get World Translation** nodes to the graph and connect the **Out** pins of the **From Values** node to the **In** pins of the **Get World Translation** nodes.
 
@@ -130,7 +132,9 @@ Script Canvas variables simplify the visual complexity of a graph by replacing c
 
 1. Remove all of the green `Vector3` connections in your graph by selecting each connection and pressing **Delete**.
 
-1. If a slot is unconnected, you can make it a variable reference by **double-clicking** on the pin or **right-clicking** on it and selecting **Convert to Reference**.  Set the reference by dragging the appropriate variable from Variable Manager and dropping it in the slot.  **Drag** the `Move Vector` variable to the **Vector3** slot of both **From Values** nodes after converting the slot to use a reference.
+1. If a slot is unconnected, you can make it a variable reference by **double-clicking** on the pin or **right-clicking** on it and selecting **Convert to Reference**. Convert all the `Vector3` slots to references. 
+
+1. Set the reference by dragging the appropriate variable from Variable Manager and dropping it the slot.  **Drag** the `Move Vector` variable to the **Vector3** slot of both **From Values** nodes.
 
 1. Convert the remaining green `Vector3` pins in the graph to use references and add the appropriate variable to them.
 
@@ -188,7 +192,7 @@ There is a problem with the Shader Ball's movement!  If you press a key to move 
 
 1. Disconnect the **From Values** nodes from the **Input Handler** nodes.  You need to insert a conditional check after input events are received.
 
-1. Add two **If** nodes from the **Logic** category.  Connect each of the **Input Hander** nodes to an **If** node, the **Pressed** pin should connect to the **In** pin of the **If** node.
+1. Add two **If** nodes from the **Logic** category.  Connect each of the **Input Handler** nodes to an **If** node, the **Pressed** pin should connect to the **In** pin of the **If** node.
 
 1. Convert the **Condition** slots to use a reference and **drag and drop** the `Is Moving` variable on them.  The **If** nodes have two output pins, only the pin with the same value as `Is Moving` will execute.  When `Is Moving` is `True`, you want to block additional movement, so the **True** pin should not connect to anything.  When `Is Moving` is `False`, you want the movement logic to execute, so connect the **False** pin to the **In** slot of the **From Values** node.
 
