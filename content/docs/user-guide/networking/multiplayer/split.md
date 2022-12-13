@@ -151,7 +151,6 @@ The following CMake example is abbreviated
                 AZ::AzCore
                 AZ::AzFramework
                 AZ::AzNetworking
-            PRIVATE
                 Gem::Multiplayer.Common.Static
     )
 
@@ -169,7 +168,6 @@ The following CMake example is abbreviated
                 AZ::AzCore
                 AZ::AzFramework
                 AZ::AzNetworking
-            PRIVATE
                 Gem::Multiplayer.Common.Static
     )
 ```
