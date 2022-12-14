@@ -98,6 +98,7 @@ Now, you're ready to do some work! After you've made some changes and saved your
     ```bash
     git fetch upstream --all
     git pull
+    git merge upstream/development
     ```
 
 1. Next, stage (add) the new or modified code files, commit your changes, and submit a pull request to your fork (origin) with the following commands. (**Check which branch you are on with `git branch` first!**):
