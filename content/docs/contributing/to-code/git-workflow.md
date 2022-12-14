@@ -91,7 +91,7 @@ At a high level, the workflow is:
 
 Now, you're ready to do some work! After you've made some changes and saved your work, it's time to submit it as a pull request (PR) for review.
 
-1. (Optional): First, depending on how much time has passed since your branch was initially created, you might want to merge the latest from `upstream/development` into your branch. This will ensure your changes don't conflict with any other recent code commits, and also gives your automated review (AR) the best chance of success the closer your branch is to the latest development snapshot.
+1. (Optional): First, depending on how much time has passed since your branch was initially created, you might want to merge the latest from `upstream/development` into your branch. This will ensure your changes don't conflict with any other recent code commits, and also gives your automated review (AR) the best chance of success, because your branch will be closer to the latest development snapshot.
 
     You can do this with the following commands (**Check which branch you are on with `git branch` first!**):
 
