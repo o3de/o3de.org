@@ -1,0 +1,1 @@
+This directory contains style rules, which are implemented by [Vale Linter, GitHub Action](https://github.com/marketplace/actions/vale-linter). 

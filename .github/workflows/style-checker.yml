@@ -1,0 +1,32 @@
+# Source: https://github.com/marketplace/actions/vale-linter?version=v2.0.1
+
+name: Style Checker
+on: pull_request
+
+jobs:
+  run_vale_on_changed_files:
+    runs-on: ubuntu-latest  # windows-latest | macos-latest    
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
+
+      - name: Get changed files in the docs folder
+        id: changed-files-specific
+        uses: tj-actions/changed-files@v34
+        with:
+          files: |
+            content/docs/**
+
+      - name: Run vale if any file(s) in the docs folder change
+        if: steps.changed-files-specific.outputs.any_changed == 'true'
+        uses: errata-ai/vale-action@reviewdog
+        env:
+          # Required, set by GitHub actions automatically:
+          # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        with:          
+          files: '${{  steps.changed-files-specific.outputs.all_changed_files }}'
+
+        
+      
