@@ -91,7 +91,16 @@ At a high level, the workflow is:
 
 Now, you're ready to do some work! After you've made some changes and saved your work, it's time to submit it as a pull request (PR) for review.
 
-1. First, stage (add) the new or modified code files, commit your changes, and submit a pull request to your fork (origin) with the following commands. (**Check which branch you are on with `git branch` first!**):
+1. (Optional): First, depending on how much time has passed since your branch was initially created, you might want to merge the latest from `upstream/development` into your branch. This will ensure your changes don't conflict with any other recent code commits, and also gives your automated review (AR) the best chance of success the closer your branch is to the latest development snapshot.
+
+    You can do this with the following commands (**Check which branch you are on with `git branch` first!**):
+
+    ```bash
+    git fetch upstream --all
+    git pull
+    ```
+
+1. Next, stage (add) the new or modified code files, commit your changes, and submit a pull request to your fork (origin) with the following commands. (**Check which branch you are on with `git branch` first!**):
 
     ```bash
     git add .
@@ -105,7 +114,7 @@ Now, you're ready to do some work! After you've made some changes and saved your
 We require DCO signing on all code commits. This requires that you have both your contributor name and email address in your `.gitconfig` file, or have previously run the following Git commands from a Git-enabled shell: `git config user.name "YOUR CONTRIBUTOR NAME HERE"` `git config user.email "YOUR CONTRIBUTOR CONTACT MAIL HERE"`. (This command updates your `.gitconfig.`) You must use the `-s` option on every commit. If you are using a Git-enabled IDE, such as Visual Studio or Visual Studio Code, turn on commit signing in the preferences.
     {{< /note >}}
 
-2. (Optional): Test your branch with Jenkins.
+1. (Optional): Test your branch with Jenkins.
 
     The source for the code build pipeline and the required infrastructure is stored in the O3DE repo. Contributors can utilize this to spin up their own build/test pipeline or they can test locally.
 
@@ -113,7 +122,7 @@ We require DCO signing on all code commits. This requires that you have both you
 
     The scripts to install all the dependencies on the build nodes and other infrastructure setup scripts are also stored in the repo for contributors and customers to use.
 
-3. Submit a pull request from your fork to the O3DE code repo.
+1. Submit a pull request from your fork to the O3DE code repo.
 
     * Navigate to your fork repo in GitHub, click the **Pull Requests** tab and click **New Pull Request**.
     * On the **Compare** page, verify the base repo and branch point is set to `O3DE/development`. (This should be set by default.)
@@ -128,13 +137,13 @@ We require DCO signing on all code commits. This requires that you have both you
 
     * Now, select **Create pull request**!
 
-4. The SIG maintainer/reviewer (or a delegate) for the affected component reviews the pull request. At the same time, the automated review (AR) is triggered.
+1. The SIG maintainer/reviewer (or a delegate) for the affected component reviews the pull request. At the same time, the automated review (AR) is triggered.
 
     {{< note >}}
 The SIG maintainer/reviewer will review the pull request and must approve the AR run before it can start. This is to required to prevent the pipeline from running malicious code. The AR build that is triggered on pull requests runs on the infrastructure owned by O3DE.
     {{< /note >}}
 
-5. Once all review comments have been addressed, a SIG member will approve the pull request.
+1. Once all review comments have been addressed, a SIG member will approve the pull request.
 
     The pull request receives the required approvals from SIG and the AR passes.
 
