@@ -6,6 +6,7 @@ linkTitle: Separating Client and Server
 
 The Multiplayer Gem supports builds that contain only client logic, only server logic, or both client and server logic. This allows users to create executables of smaller size by excluding unnecessary logic and dependencies. It also allows hiding potentially sensitive logic unique to one executable from the other. 
 
+The splitting functionality produces multiple build types.
 * GameLauncher is a client only launcher
 * ServerLauncher is a server only launcher suitable for Dedicated Servers
 * UnifiedLauncher provides both and is suitable for Client Hosted Servers
@@ -33,7 +34,7 @@ The split by cmake files leads us to four Multiplayer targets.
 
 When including the Multiplayer Gem it is important to understand the needs of said usage. If the usage requires split logic, it is recommended to create Client, Server and Unified targets which each use Multiplayer.Client, Server and Unified respectively. If it does not, Multiplayer.Common is sufficient.
 
-As an example, MultiplayerSample uses and builds upon MultiplayerComponents in the Multiplayer Gem. It therefore defines its own respective Client, Server and Unified targets. 
+As an example, [MultiplayerSample](https://github.com/o3de/o3de-multiplayersample) uses and builds upon MultiplayerComponents in the Multiplayer Gem. It therefore defines its own respective Client, Server and Unified targets. 
 
 {{< note >}}
 The following CMake examples are abbreviated
