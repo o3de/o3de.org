@@ -172,11 +172,11 @@ The most common workflow is to release your game only, in which case you should 
 
     **Note:** Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](/docs/user-guide/build/configure-and-build/#configuring-projects).
 
-1. To build your monolithic project for release, use CMake to invoke Visual Studio builder. Specify the `INSTALL` target and `release` configuration.
+1. To build your monolithic project for release, use CMake to invoke Visual Studio builder. Specify the `install` target and `release` configuration.
 
     ```cmd
     cd C:\MyProject
-    cmake --build build\windows_mono --target INSTALL --config release
+    cmake --build build\windows_mono --target install --config release
     ```
 
     This command generates a Game Launcher and dependent `.lib` files. It also bundles your project's product assets that are located in `<project>\Cache\pc` into an `engine.pak` file.
@@ -191,11 +191,11 @@ The other option is to release your game plus the **O3DE Editor** and all of its
 
 Building from a source engine supports non-monolithic projects by default. As detailed in [Prerequisites](#prerequisites), you should have already created a Visual Studio project for your project and registered your project to your engine.
 
-To build your non-monolithic project for release, use CMake to invoke Visual Studio builder. Specify the `INSTALL` target and `release` configuration.
+To build your non-monolithic project for release, use CMake to invoke Visual Studio builder. Specify the `install` target and `release` configuration.
 
 ```cmd
 cd C:\MyProject
-cmake --build build\windows --target INSTALL --config release
+cmake --build build\windows --target install --config release
 ```
 
 You can specify a particular non-monolithic build by appending the option `-DLY_MONOLITHIC_GAME=0`. This command generates O3DE tools (such as Editor, Asset Processor, Game Launcher, and Server Launcher) and dependent `.dll` files. It also bundles your project's product assets that are located in `<project>\Cache\pc` into an `engine.pak` file.
