@@ -224,19 +224,28 @@ Now, you will choose a build type for your project game release layout.
 
 The most common workflow is to release your game only, in which case you should choose the **monolithic** build. This will build only your game/server launcher and any necessary dependencies.
 
-1. Use CMake to create a Visual Studio project for an engine that supports monolithic projects. Specify a new CMake build directory (`build\windows_mono`) in your pre-built SDK engine directory, separate from your non-monolithic build directory. Specify a monolithic build by enabling the `-D` option, `LY_MONOLITHIC_GAME`.
+1. First, we need to build the monolithic artifacts in your SDK engine layout. Specify a new CMake build directory (`build\windows_mono`) in your pre-built SDK engine directory, separate from your non-monolithic build directory. Specify a monolithic build by enabling the `-D` option, `LY_MONOLITHIC_GAME`.
 
     ```cmd
     cd C:\o3de
     cmake --preset windows-mono-default -DLY_VERSION_ENGINE_NAME=o3de-install
     ```
 
-2. In your source engine, use CMake to invoke Visual Studio to append non-monolithic release artifacts to the pre-built SDK layout.
+1. In your source engine, use CMake to invoke Visual Studio to append non-monolithic release artifacts to the pre-built SDK layout.
 
     ```cmd
     cd C:\o3de
-    cmake --build --preset windows-mono-install  --config release
+    cmake --build --preset windows-mono-install --config release
     ```
+
+1. Now that the monolithic build artifacts have been added to the SDK engine layout, your project can configure against that layout to run a monolithic build. Switch to your project's source directory and use CMake to create a Visual Studio project for your project that builds against the monolithic engine.
+
+    ```cmd
+    cd C:\MyProject
+    cmake --B build\windows_mono -S . -DCMAKE_INSTALL_PREFIX=C:\MyProject\MyProjectGameLayout
+    ```
+
+1. Finally, invoke the CMake build wrapper to build the project game release layout using the `install` target.
 
     This command generates a Game Launcher and dependent `.lib` files. It also bundles your project's product assets that are located in `<project>\Cache\pc` into an `engine.pak` file.
 
