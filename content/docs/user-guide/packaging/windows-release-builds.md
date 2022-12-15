@@ -9,7 +9,7 @@ weight: 200
 This tutorial guides you through the process of creating an **Open 3D Engine (O3DE)** *project game release layout* for Windows computers. A project game release layout is a directory structure that contains the **Game Launcher** and the bundled assets needed to run the Game Launcher outside of the developer environment. You create a project game release layout when you build your project for release, known as a *release build*.
 
 {{< important >}}
-In order to create a project game release layout, you must have O3DE set up from source, not just the installer. Refer to [Setting up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github/). 
+In order to create a game only release (monolithic), you must have O3DE set up from source, not just the installer. Refer to [Setting up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github/).
 Also, you must use a project-centric configuration, which is detailed further [below](#create-a-project-game-release-layout).
 {{< /important >}}
 
