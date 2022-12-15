@@ -187,7 +187,7 @@ Your release build is now complete! Next, you need to [bundle your content](#bun
 
 The other option is to release your game plus the **O3DE Editor** and all of its tools, which is is a **non-monolithic** build. This is not recommended since the size of all these tools combined will be much larger than the **monolithic** build.
 
-A source engine supports non-monolithic projects by default. As detailed in [Prerequisites](#prerequisites), you should have already created a Visual Studio project for your project and registered your project to your engine.
+Building from a source engine supports non-monolithic projects by default. As detailed in [Prerequisites](#prerequisites), you should have already created a Visual Studio project for your project and registered your project to your engine.
 
 To build your non-monolithic project for release, use CMake to invoke Visual Studio builder. Specify the `INSTALL` target and `release` configuration.
 
@@ -196,7 +196,7 @@ cd C:\MyProject
 cmake --build build\windows --target INSTALL --config release
 ```
 
-You can specify a particular non-monolithic build by appending the option `-DLY_MONOLITHIC_GAME=0`. This command generates O3DE tools (such as Editor, Asset Processor, and Game Launcher) and dependent `.dll` files. It also bundles your project's product assets that are located in `<project>\Cache\pc` into an `engine.pak` file.
+You can specify a particular non-monolithic build by appending the option `-DLY_MONOLITHIC_GAME=0`. This command generates O3DE tools (such as Editor, Asset Processor, Game Launcher, and Server Launcher) and dependent `.dll` files. It also bundles your project's product assets that are located in `<project>\Cache\pc` into an `engine.pak` file.
 
 The result is a project game release layout in the install directory that's located at `<install>\bin\Windows\release\Default`. In your project game release layout, your `engine.pak` file is located in `Cache\pc`.
 
