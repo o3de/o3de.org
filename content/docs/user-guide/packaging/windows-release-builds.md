@@ -228,15 +228,14 @@ The most common workflow is to release your game only, in which case you should 
 
     ```cmd
     cd C:\o3de
-    cmake -B build\windows_mono -S . -DCMAKE_INSTALL_PREFIX=C:\o3de-install -DLY_VERSION_ENGINE_NAME=o3de-install -DLY_MONOLITHIC_GAME=1 -DLY_PROJECTS=C:\o3de-projects\MyProject
+    cmake --preset windows-mono-default -DLY_VERSION_ENGINE_NAME=o3de-install
     ```
-    - Include `-D` option, `LY_PROJECTS`, to point to your project's path.
 
 2. In your source engine, use CMake to invoke Visual Studio to append non-monolithic release artifacts to the pre-built SDK layout.
 
     ```cmd
     cd C:\o3de
-    cmake --build build\windows_mono --target INSTALL --config release
+    cmake --build --preset windows-mono-install  --config release
     ```
 
     This command generates a Game Launcher and dependent `.lib` files. It also bundles your project's product assets that are located in `<project>\Cache\pc` into an `engine.pak` file.
@@ -251,11 +250,11 @@ The other option is to release your game plus the **O3DE Editor** and all of its
 
 A pre-built SDK engine supports non-monolithic projects by default. As detailed in [Prerequisites](#prerequisites), you should have already created a Visual Studio project for the engine and registered the engine.
 
-1. Reconfigure your source engine with the `-D` option, `LY_PROJECTS`, pointing to your project's path.
+1. Use CMake to create a Visual Studio project for your SDK engine to support a non-monolithic project.
 
     ```cmd
     cd C:\o3de
-    cmake -B build/windows -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=C:\o3de-install -DLY_PROJECTS=C:\o3de-projects\MyProject
+    cmake --preset windows-default -DLY_VERSION_ENGINE_NAME=o3de-install
     ```
 
     **Note:** Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](/docs/user-guide/build/configure-and-build/#configuring-projects).
@@ -264,7 +263,7 @@ A pre-built SDK engine supports non-monolithic projects by default. As detailed 
 
     ```cmd
     cd C:\o3de
-    cmake --build build/windows --target INSTALL --config release
+    cmake --build --preset windows-install --config release
     ```
 
     You can specify a particular non-monolithic build by appending the option `-DLY_MONOLITHIC_GAME=0`. This command generates O3DE tools (such as Editor, Asset Processor, and Game Launcher) and dependent `.dll` files. It also bundles your project's product assets that are located in `<project>\Cache\pc` into an `engine.pak` file.
