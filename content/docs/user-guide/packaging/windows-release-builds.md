@@ -93,7 +93,9 @@ To process your project's assets, do one of the following:
 
 - **Run Asset Processor.** Do this if you already built Asset Processor and prefer to use a GUI.
 
-    1. Run `AssetProcessor.exe` from the `<project>/build/windows/bin/profile` directory.
+    1. Run `AssetProcessor.exe` from the build directory based on your engine type.
+        - `<project>/build/windows/bin/profile` -- For source engine.
+        - `<engine>/build/windows/bin/profile` -- For pre-built SDK engine.
 
         {{< image-width "/images/user-guide/packaging/windows-release-build/asset-processor.png" "700" "An image of O3DE Asset Processor." >}}
 
@@ -101,7 +103,9 @@ To process your project's assets, do one of the following:
 
 - **Run Asset Processor Batch.** Do this if you already built Asset Processor and prefer to use a CLI.
 
-    1. Run `AssetProcessorBatch.exe` from the `<project>\build\windows\bin\profile` directory.
+    1. Run `AssetProcessorBatch.exe` from the build directory based on your engine type.
+        - `<project>/build/windows/bin/profile` -- For source engine.
+        - `<engine>/build/windows/bin/profile` -- For pre-built SDK engine.
 
         {{< image-width "/images/user-guide/packaging/windows-release-build/asset-processor-batch.png" "700" "An image of O3DE Asset Processor Batch." >}}
 
