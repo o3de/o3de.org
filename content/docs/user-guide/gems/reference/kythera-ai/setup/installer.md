@@ -42,7 +42,7 @@ Select the “KytheraAIDemo” folder. (Ignore the "Project needs to be rebuilt"
 
 ![](/images/user-guide/gems/kythera-ai/demo-SelectKytheraProject.png)
 
-Verify that the Engine and project are registered by inspecting the file `%USERPROFILE%\\.o3de\\o3de\_manifest.json`. Look for a `projects` key with your project path listed, and an `engines` key with your engine path listed.
+Verify that the Engine and project are registered by inspecting the file `%USERPROFILE%\.o3de\o3de\_manifest.json`. Look for a `projects` key with your project path listed, and an `engines` key with your engine path listed.
 
 ![](/images/user-guide/gems/kythera-ai/demo-o3deManifest.png)
 
