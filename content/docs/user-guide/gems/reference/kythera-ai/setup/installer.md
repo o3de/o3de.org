@@ -34,7 +34,7 @@ Navigate into the newly unzipped folder. Inside you will see `Kythera` and `Kyth
 
 ![](/images/user-guide/gems/kythera-ai/demo-buildFolder.png)
 
-You now need to register this project with the engine. You can do this through the Editor using "Add Existing Project".
+You now need to register this project with the engine. You can do this through the **Project Manager** using "Add Existing Project".
 
 ![](/images/user-guide/gems/kythera-ai/demo-addExistingProject.png)
 
