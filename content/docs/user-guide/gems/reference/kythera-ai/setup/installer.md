@@ -8,7 +8,7 @@ toc: true
 
 
 
-This page tells you how to get the Kythera O3DE sample project working, or to add the Kythera AI Gem to an existing O3DE project, where O3DE was installed from the Installer or an SDK installation (as documented in the [O3DE Setup Guide](/docs/welcome-guide/setup/)).
+This page tells you how to get the Kythera sample project for **Open 3D Engine (O3DE)** working, or to add the Kythera AI Gem to an existing O3DE project, where O3DE was installed from the Installer or an SDK installation (as documented in the [O3DE Setup Guide](/docs/welcome-guide/setup/)).
 
 {{< note >}}
 Only follow these instructions if you installed O3DE via the O3DE Installer or SDK. If you installed O3DE from a source install (for example, using GitHub), please see [Kythera AI Gem Setup (Source)](../source)
