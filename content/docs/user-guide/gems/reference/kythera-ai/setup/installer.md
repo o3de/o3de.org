@@ -202,7 +202,7 @@ Forward slashes must be used.
 ],
 ```
 
-Go to the O3DE editor. Find your project and select “Configure Gems”. 
+Go to the O3DE Editor. Find your project and select “Configure Gems”. 
 
 ![](/images/user-guide/gems/kythera-ai/existing-editorConfigureGem.png)
 
