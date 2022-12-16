@@ -112,7 +112,7 @@ Once the build has finished, start/play the project from the O3DE Editor or by p
 
 ![](/images/user-guide/gems/kythera-ai/demo-tooltrayAssetProcessor.png)
 
-Do not proceed in o3de until the status of the asset processor is “idle”
+Do not proceed in O3DE until the status of the **Asset Processor** is “idle”
 
 ![](/images/user-guide/gems/kythera-ai/demo-assetProcessorIdle.png)
 
