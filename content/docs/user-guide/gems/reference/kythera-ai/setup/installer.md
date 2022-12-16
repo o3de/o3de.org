@@ -124,7 +124,7 @@ Open the Kythera City demo scene:
 
 After opening the level check back with the asset processor to make sure no further assets are being processed.
 
-Before playing, the Octree needs to be generated to allow for 3d flight.
+Before playing, the Octree needs to be generated to allow for 3D flight.
 
 *   Click here:
     
