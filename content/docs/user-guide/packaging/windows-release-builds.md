@@ -191,7 +191,7 @@ The other option is to release your game plus the **O3DE Editor** and all of its
 
 Building from a source engine supports non-monolithic projects by default. As detailed in [Prerequisites](#prerequisites), you should have already created a Visual Studio project for your project and registered your project to your engine.
 
-To build your non-monolithic project for release, use CMake to invoke Visual Studio builder. Specify the `install` target and `release` configuration.
+To build your non-monolithic project for release, use CMake to invoke Visual Studio MSBuild. Specify the `install` target and `release` configuration.
 
 ```cmd
 cd C:\MyProject
@@ -242,7 +242,7 @@ The most common workflow is to release your game only, in which case you should 
 
     ```cmd
     cd C:\MyProject
-    cmake --B build\windows_mono -S . -DCMAKE_INSTALL_PREFIX=C:\MyProject\MyProjectGameLayout
+    cmake --B build\windows_mono -S . -DCMAKE_INSTALL_PREFIX=C:\MyProject\MyProjectGameLayout -DLY_MONOLITHIC_GAME=1
     ```
 
 1. Finally, invoke the CMake build wrapper to build the project game release layout using the `install` target.
