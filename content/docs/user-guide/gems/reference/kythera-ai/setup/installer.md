@@ -107,7 +107,7 @@ Once the build has finished, start/play the project from the O3DE Editor or by p
 
 *   This will open o3de.
     
-*   Do not attempt to do anything until all assets have been processed, even when o3de asks you to select a level. You can see the status of these assets in the app tray. Double click on the double arrow icon.
+*   Do not attempt to do anything until all assets have been processed, even when O3DE asks you to select a level. You can see the status of these assets in the app tray. Double click on the double arrow icon.
     
 
 ![](/images/user-guide/gems/kythera-ai/demo-tooltrayAssetProcessor.png)
