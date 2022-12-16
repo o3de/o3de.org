@@ -116,7 +116,7 @@ Do not proceed in O3DE until the status of the **Asset Processor** is “idle”
 
 ![](/images/user-guide/gems/kythera-ai/demo-assetProcessorIdle.png)
 
-Once all assets have processed, switch to o3de (which would have opened automatically during this process).
+Once all assets have processed, switch to O3DE (which would have opened automatically during this process).
 
 Open the Kythera City demo scene:
 
