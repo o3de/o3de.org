@@ -87,3 +87,10 @@ There's also this little demo application which uses `ExternalProject_Add` to 
 We’ll wrap up the final entry in this series with what it takes to actually write a library that can be installed.
 
 _Disclaimer: The views expressed here are those of the individual author and do not represent those of the Open 3D Foundation, Open 3D Engine or individual's respective company._
+
+### Check out the other parts of the series:
+
+* [CMake Essentials Series - Part 1](/blog/posts/cmake-essentials-series-part-1/)
+* [CMake Essentials Series - Part 2](/blog/posts/cmake-essentials-series-part-2/)
+* [CMake Essentials Series - Part 3](/blog/posts/cmake-essentials-series-part-3/)
+* [CMake Essentials Series - Part 4](/blog/posts/cmake-essentials-series-part-4/)
