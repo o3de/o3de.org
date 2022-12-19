@@ -24,7 +24,8 @@ In this tutorial, you will learn how to:
 
 ## Prerequisites
 
-You will need to have a project built from the standard project template or one that contains the Gems in the standard template.
+- Basic working knowledge of the [Script Canvas Editor](/docs/user-guide/scripting/script-canvas/).
+- A project built from the standard project template or one that contains the Gems in the standard template.
 
 ## Steps
 
@@ -34,9 +35,9 @@ In this tutorial, you will modify several child entities of the Atom Default Env
 
 1. In a new level, select the Grid entity in **Entity Outliner**.  In **Entity Inspector**, set the [Grid](/docs/user-guide/components/reference/atom/grid/) component's **Primary Grid Spacing** to `5 meters`.  Set the **Secondary Grid Spacing** to `1 meter` and **Secondary Color** to white, `255, 255, 255` so that the grid spacing is more visible.
 
-1. Select the Shader Ball in Entity Outliner.  Currently, it is located at the intersection of four grid spaces and is too large to fit within a single space.  In Entity Inspector, set [Transform](/docs/user-guide/components/reference/transform/) component's **Uniform Scale** to `0.5`.  Set the **Translate** value to `X: 0.5, Y:0.5, Z:0.0`; the Shader Ball should now fit within a single grid space.  Remove all rotations from it by setting **Rotate** to `X: 0.0, Y:0.0, Z:0.0`.
+1. Select the Shader Ball in Entity Outliner.  Currently, it is located at the intersection of four grid spaces and is too large to fit within a single space.  In Entity Inspector, set [Transform](/docs/user-guide/components/reference/transform/) component's **Uniform Scale** to `0.5`.  Set the **Translate** value to `X: 0.5, Y: 0.5, Z: 0.0`; the Shader Ball should now fit within a single grid space.  Remove all rotations from it by setting **Rotate** to `X: 0.0, Y: 0.0, Z: 0.0`.
 
-1. Select the Camera in Entity Outliner, **left-click** and **drag** it over the Shader Ball entity and release it to attach the camera as a child entity of the Shader Ball.  In Entity Inspector, set the Transform component's **Translate** value to `X: 0.0, Y:-4.0, Z:5.0` and the **Rotate** value to `X: -45.0, Y:0.0, Z:0.0`.  As a child entity of the Shader Ball, the camera's translation and rotation are relative to its parent; the camera will be positioned behind the Shader Ball and looking down on it. The [Fly Camera Input](/docs/user-guide/components/reference/gameplay/fly-camera-input/) component currently attached to this entity will interfere with the input events you create later.  **Right-click** on the Fly Camera Input component in Entity Inspector and choose **Delete component**.
+1. Select the Camera in Entity Outliner, **left-click** and **drag** it over the Shader Ball entity and release it to attach the camera as a child entity of the Shader Ball.  In Entity Inspector, set the Transform component's **Translate** value to `X: 0.0, Y: -4.0, Z: 5.0` and the **Rotate** value to `X: -45.0, Y: 0.0, Z: 0.0`.  As a child entity of the Shader Ball, the camera's translation and rotation are relative to its parent; the camera will be positioned behind the Shader Ball and looking down on it. The [Fly Camera Input](/docs/user-guide/components/reference/gameplay/fly-camera-input/) component currently attached to this entity will interfere with the input events you create later.  **Right-click** on the Fly Camera Input component in Entity Inspector and choose **Delete component**.
 
 The following image shows the scene layout after completing these steps.
 
@@ -54,13 +55,13 @@ Next, you will create an Input Bindings asset that links input device event gene
 
 1. **Left-click** the {{< icon "add.svg" >}} next to **Event Generators** to add a generator to an event.  Add two event generators to each event.  In the **Class to create** dialog box that appears, choose the second option, **InputEventMap**.
 
-1. Set the four generator's **Input Device Type** to **keyboard**.
+1. Set each of the four generators' **Input Device Type** to **keyboard**.
 
 1. For the `MoveY` event, set the **Input Name** for the event generators to **keyboard_key_alphanumeric_W** and **keyboard_key_alphanumeric_S**.  For the `MoveX` event, set the **Input Name** for the event generators to **keyboard_key_alphanumeric_D** and **keyboard_key_alphanumeric_A**.
 
 1. Change the **Event value multiplier** of the `S` and `A` keys to `-1.0` as this will correspond to a movement in the negative direction of the X and Y-axis.  You can leave the **Event value multiplier** of the `W` and `D` keys at their default value of `1.0`.  This corresponds to a movement in the positive direction on the X and Y-axis.  It can be advantageous to use **Event value multipliers** to reduce the number of events you use, and it can simplify the scripting that handling the events requires.
 
-1. Save the Input Bindings asset in your project's directory.
+1. Save the Input Bindings asset in your project's directory as `grid-based-movement.inputbindings`.
 
 The following image shows the completed Input Bindings asset in the Asset Editor.
 
@@ -84,7 +85,7 @@ You can attach Input components to any active entity in a level; if an Input Bin
 
 Next, you will create a script that handles the `MoveX` and `MoveY` input events and moves the Shader Ball according to the event received and the event's value.
 
-1. Select the Shader Ball in Entity Outliner.  In Entity Inspector, add a Script Canvas component to the Shader Ball. On the new Script Canvas component, **left-click** the {{< icon "open-in-internal-app.svg" >}} button to open the Script Canvas editor.
+1. Select the Shader Ball in Entity Outliner.  In Entity Inspector, add a Script Canvas component to the Shader Ball. On the new Script Canvas component, **left-click** the {{< icon "open-in-internal-app.svg" >}} button to open Script Canvas Editor.
 
 1. Add the **On Graph Start** node to a new graph.  You can search for this node in the **Note Palettte** and **drag** it to the center of the editor to create a new graph.  When you play a level in _Game Mode_, the **On Graph Start** node will execute a single time as soon as the Script Canvas component is active.
 
@@ -104,7 +105,7 @@ Next, you will create a script that handles the `MoveX` and `MoveY` input events
 The **EntityID** fields of these nodes are set to `Self`; this means that when a node executes, it will return the translation of the entity that the Script Canvas graph is on. You simplify all Shader Ball-related references by attaching this graph to the Shader Ball.
 {{< /note >}}
 
-1. Next, you need to add the movement and translation vectors together.  Add two **Add (+)** nodes from the **Math** category to the graph, and connect the **Out** pins of the **Get World Translation** nodes to the **In** pins of the **Add (+)** nodes.  For each event, connect a **Get World Translation** **Translation** slot to **Value 0** and the **From Values** **Vector3** slot to **Value 1**.  Now, when the **Add (+)** node executes, the **Result** slot represents the world translation that the Shader Ball should move to.
+1. Next, you need to add the movement and translation vectors together.  Add two **Add (+)** nodes from the **Math** category to the graph, and connect the **Out** pins of the **Get World Translation** nodes to the **In** pins of the **Add (+)** nodes.  For each event, connect a **Get World Translation** **Translation** slot to **Value 0** and the **From Values** **Vector3** slot to **Value 1**.  Now, when the **Add (+)** node executes, its **Result** slot represents the world translation that the Shader Ball should move to.
 
 1. Add two **Set World Translation** nodes to the graph.  Connect the **Out** pin of the **Add (+)** nodes to the **In** pins of the new nodes.  Connect the **Result** pins to the **World Translation** slots.  The **Source** slots of the **Set World Translation** nodes are set to `Self`.
 
@@ -118,7 +119,7 @@ The **EntityID** fields of these nodes are set to `Self`; this means that when a
 
 ### Simplify the graph with variables
 
-Script Canvas variables simplify the visual complexity of a graph by replacing connections between nodes with references.  Graphs may also require certain variables to execute correctly; the value of an output pin may only be valid for a limited time after a node's execution.  It is best practice to save values as a variable to access them later reliably.  In this section, you will improve the Script Canvas graph you created previously in this tutorial by using variables.
+Script Canvas variables simplify the visual complexity of a graph by replacing connections between nodes with references.  Graphs may also require certain variables to execute correctly; the value of an output pin may only be valid for a limited time after a node's execution.  It is best practice to save values as a variable in order to reliably access them later.  In this section, you will improve the Script Canvas graph you created previously in this tutorial by using variables.
 
 1. If your Script Canvas graph is not already open in the Script Canvas editor, **left-click** the {{< icon "open-in-internal-app.svg" >}} button on the Shader Ball's Script Canvas component.
 
