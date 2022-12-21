@@ -1,7 +1,7 @@
 ---
 linkTitle: Branding Guidelines
 title: Open 3D Engine's Branding Guidelines
-description: A guide for using Open 3D Engine's (O3DE) brand logo, brand color, and other resources in the BlueJay Design System. 
+description: A guide for using Open 3D Engine's (O3DE) brand logo, brand color, and other resources in the Blue Jay Design System. 
 weight: 10
 ---
 
@@ -31,10 +31,10 @@ The O3DE Logo Pack also also includes the above O3DE brand guidelines PDF.
 
 [See the individual files on GitHub](https://github.com/o3de/artwork)
 
-## BlueJay Design System Logo Pack
+## Blue Jay Design System Logo Pack
 
-Download the logo assets and files for the **BlueJay Design System**.
+Download the logo assets and files for the **Blue Jay Design System**.
 
-[{{< image-width "/images/tools-ui/branding-guidelines/bjds-banner.png" "700" "A preview of the BlueJay Design Logo Pack" >}}](/files/BlueJay-Design-System-Logo-Pack.zip)  
+[{{< image-width "/images/tools-ui/branding-guidelines/o3de-bjds-branding-banner.png" "700" "A preview of the Blue Jay Design Logo Pack" >}}](/files/Blue Jay-Design-System-Logo-Pack.zip)  
 
-[Download BlueJay Design System Logo Pack ZIP](/files/BlueJay-Design-System-Logo-Pack.zip)
+[Download Blue Jay Design System Logo Pack ZIP](/files/Blue Jay-Design-System-Logo-Pack.zip)

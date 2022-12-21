@@ -10,13 +10,13 @@ guide_img: "/images/tools-ui/guide_img.png"
 primary: true
 ---
 
-![A banner of the BlueJay Design System](/images/tools-ui/bjds-banner.png)
+![A banner of the Blue Jay Design System](/images/tools-ui/bjds-banner.png)
 
-The **BlueJay Design System** is the modular UI framework of **Open 3D Engine (O3DE)**. This guide provides information for developers on the framework and how to use it when developing components, tools, and extensions for **O3DE Editor**.
+The **Blue Jay Design System** is the modular UI framework of **Open 3D Engine (O3DE)**. This guide provides information for developers on the framework and how to use it when developing components, tools, and extensions for **O3DE Editor**.
 
 This guide includes guidelines and information on the custom Qt widget library, the Qt Control Gallery tool, and a gallery of UI icon assets for O3DE. This guide also provides O3DE brand guidelines and O3DE brand assets that you can incorporate into your own projects.
 
-If you have any questions regarding the BlueJay Design System or have a suggestion to improve it, you can [file an issue](https://github.com/o3de/sig-ui-ux/issues/new/choose) with the UI/UX Special Interest Group on GitHub.
+If you have any questions regarding the Blue Jay Design System or have a suggestion to improve it, you can [file an issue](https://github.com/o3de/sig-ui-ux/issues/new/choose) with the UI/UX Special Interest Group on GitHub.
 
 Feel like having a chat? Check out our #SIG-UX-UI channel on [Discord](https://{{< links/o3de-discord >}}). The community is always happy to help!
 
