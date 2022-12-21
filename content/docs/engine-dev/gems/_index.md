@@ -21,4 +21,4 @@ This is a stub page intended to serve as an example of guide structure. Informat
 
 | Name | Description |
 |-|-|
-| [Script Canvas](./gems/scriptcanvas) | Learn about the internals of the Script Canvas system, including how Script Canvas handles types and generates bindings from C++ source code. |
+| [Script Canvas](./scriptcanvas/) | Learn about the internals of the Script Canvas system, including how Script Canvas handles types and generates bindings from C++ source code. |

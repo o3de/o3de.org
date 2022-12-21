@@ -52,3 +52,15 @@ This section is currently incomplete, with a stub example for the ScriptCanvas G
 | Name | Description |
 |-|-|
 | [Script Canvas](./gems/scriptcanvas) | Learn about the internals of the Script Canvas system, including how Script Canvas handles types and generates bindings from C++ source code. |
+
+## Included Tools
+
+O3DE includes a handful of tools to support project development. Examples include **Asset Processor** (`AssetProcessor.exe`) and **Project Manager** (`o3de.exe`). This section of the Engine Developer Guide is for tools like these that are not part of any Gem. In these pages you will find detailed information and diagrams describing their architecture, for the benefit of developers who want to modify them.
+
+{{< todo >}}
+This section is currently incomplete, with a stub example for Project Manager. As documentation is added for developers, this section will expand.
+{{< /todo >}}
+
+| Name | Description |
+|-|-|
+| [Project Manager](./tools/project-manager) | Learn about the internals of **Project Manager**, including an overview of the major classes and data structures that work together to create the UI and implement the project management and Gem library features of this tool. |

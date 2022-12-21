@@ -15,4 +15,4 @@ This is a stub page intended to serve as an example of guide structure. Informat
 
 | Name | Description |
 |-|-|
-| [AzCore](./framework/azcore) | Learn about the core internals of Open 3D Engine such as memory management and the custom RTTI system. |
+| [AzCore](./azcore) | Learn about the core internals of Open 3D Engine such as memory management and the custom RTTI system. |
