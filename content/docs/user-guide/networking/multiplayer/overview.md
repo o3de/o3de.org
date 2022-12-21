@@ -26,7 +26,7 @@ Together, these represent an event-driven messaging system. When a property chan
 Network components are the **only** built-in way to communicate between entities in O3DE. Due to the engine's ability to distribute and interact with entities across multiple hosts, there is no guarantee that any two entities have authoritative representations on the same host.
 {{< /important >}}
 
-## Network properties
+### Network properties
 
 The O3DE Multiplayer Gem uses *delta replication* to transmit property changes across hosts. The delta replication method uses a system where a server maintains information about both the last acknowledged state of each client and the current world state, and then sends the differences between the two states across the network. When the client receives this information, it updates the world state if the packet was received in the correct sequence.
 
@@ -45,30 +45,8 @@ Then, clients update themselves from a delta by:
 
 After, the AzNetworking layer becomes aware that the world was updated. This occurs automatically through ACK vector replication, and does not require any further action from the client.
 
-### Types of network properties
 
-Network properties have two important fields: `ReplicateFrom` and `ReplicateTo`. 
-Together, these fields define which role can replicate to another specific role. You can only replicate property values *from* Authority and Autonomous roles. A `ReplicateFrom` Authority relationship creates a server-authority model, which helps to ensure that you don't accidentally replicate from an unprivileged client. 
-Properties can be replicated *to* any role, because all participants in the session may need information from any other participant.
-
-| Field | Description | Values | 
-| - | - | - |
-| `ReplicateFrom` | Tells the network which role can send information about the changes that were made to this property. | Authority, Autonomous | 
-| `ReplicateTo` | Tells the network which role can receive information about the changes that were made to this property. | Server, Authority, Autonomous, Client | 
-
-
-The following are four types of networking properties with a valid "from and to" relationship and their possible use cases:
-
-- **Authority-to-Client**: Handles client, or "simulated", properties.
-
-- **Authority-to-Autonomous**: Handles autonomous-only properties.
-- **Authority-to-Server**: Handles host migration.
-
-- **Autonomous-to-Authority**: Gathers information about client metrics, such as monitoring the health of clients.
-
-For networking properties that replicate from Authority, a replication hierarchy applies. The replicate-to rules trickle up the hierarchy in the following way: An Authority-to-Client replication also replicates to Autonomous and Server roles. An Authority-to-Autonomous replication also replicates to the Server role. Finally, an Authority-to-Server replication only replicates to the Server. This behavioral hierarchy ensures that if the Authority ever migrates to the other server, then the other server has the right property information.
-
-## Remote procedure calls (RPCs)
+### Remote procedure calls (RPCs)
 
 Developers can use *remote procedure calls* in O3DE to invoke a function on a remote endpoint. An RPC is a useful mechanism for signaling and notifying about events across networked endpoints. Unlike network properties, a developer chooses when to invoke an RPC. RPCs are not guaranteed to arrive in the order they are sent. O3DE offers both reliable and unreliable RPCs. By default, RPCs are reliable. 
 
@@ -76,25 +54,10 @@ Developers can use *remote procedure calls* in O3DE to invoke a function on a re
 
 **Unreliable** RPCs are sent over a "fire and forget" method. The host sending the message has no way to ensure that the message was received.
 
-### Types of RPCs
 
-Similar to network properties, RPCs have two important fields: `InvokeFrom` and `HandleOn`. These fields describe which role the RPC is invoked from and which role it's handled on.
+### Auto-components
 
-| Field | Description | Values | 
-| - | - | - |
-| `InvokeFrom` | Tells the network which role invokes this RPC. | Server, Autonomous, Client | 
-| `HandleOn` | Tells the network which roles handles this RPC. If Authority, the RPC is handled by the server that has authority over that entity. If Autonomous, the RPC is handled only by the relevant player's local client. If Client, the RPC is handled on all clients. | Authority, Autonomous, Client | 
-
-The following are four types of RPCs with a valid "invoked from and handled on" relationship and their possible use cases:
-
-- **Authority-to-Autonomous**: In an example use case, it sends corrections about the game state to the user.
-
-- **Authority-to-Client**: Authority sends calls to all clients. For example, it sends information about particle effects.
-
-- **Server-to-Authority**: This is required to communicate information between entities. For example, suppose in a multi-server setup, EntityA is owned by ServerA and EntityB is owned by ServerB. If EntityA communicates directly to EntityB, EntityA will be talking to a proxy, not the real EntityB. Server-to-Authority ensures that messages always find the entity with authority. When a player wants to deal damage, Autonomous informs the Server, and the Server sends the DealDamage function to Authority. 
-
-- **Autonomous-to-Authority**: Sends user settings information that affects user input and is used during input-process time rather than input-creation time, such as mouse sensitivity and input controls. 
-
+Network properties and RPCs are generated by *auto-components*, XML files that defines components' states for network synchronization. For more information about generating network properties and RPCs by using auto-components, refer to [Multiplayer Auto-components](./autocomponents).
 
 ## Multiplayer entity roles
 

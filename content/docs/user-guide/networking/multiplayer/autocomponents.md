@@ -9,6 +9,56 @@ weight: 400
 
 To enable auto-component builds for your project, follow the instructions in [Multiplayer: Project Configuration](./configuration).
 
+
+## Types of components to generate
+
+The types of multiplayer components that auto-components can generate are **network properties** and **remote procedure calls (RPCs)**. This section covers how to define auto-components that generate these type of network components. For more information about network properties and RPCs, refer to the [Multiplayer Gem Overview](./overview) page. 
+
+
+### Network properties
+
+Network properties have two important fields: `ReplicateFrom` and `ReplicateTo`. 
+Together, these fields define which role can replicate to another specific role. You can only replicate property values *from* Authority and Autonomous roles. A `ReplicateFrom` Authority relationship creates a server-authority model, which helps to ensure that you don't accidentally replicate from an unprivileged client. 
+Properties can be replicated *to* any role, because all participants in the session may need information from any other participant.
+
+| Field | Description | Values | 
+| - | - | - |
+| `ReplicateFrom` | Tells the network which role can send information about the changes that were made to this property. | Authority, Autonomous | 
+| `ReplicateTo` | Tells the network which role can receive information about the changes that were made to this property. | Server, Authority, Autonomous, Client | 
+
+The following are four types of networking properties with a valid "from and to" relationship and their possible use cases:
+
+- **Authority-to-Client**: Handles client, or "simulated", properties.
+
+- **Authority-to-Autonomous**: Handles autonomous-only properties.
+
+- **Authority-to-Server**: Handles host migration.
+
+- **Autonomous-to-Authority**: Gathers information about client metrics, such as monitoring the health of clients.
+
+For networking properties that replicate from Authority, a replication hierarchy applies. The replicate-to rules trickle up the hierarchy in the following way: An Authority-to-Client replication also replicates to Autonomous and Server roles. An Authority-to-Autonomous replication also replicates to the Server role. Finally, an Authority-to-Server replication only replicates to the Server. This behavioral hierarchy ensures that if the Authority ever migrates to the other server, then the other server has the right property information.
+
+
+### Remote procedure calls (RPCs)
+
+Similar to network properties, RPCs have two important fields: `InvokeFrom` and `HandleOn`. These fields describe which role the RPC is invoked from and which role it's handled on.
+
+| Field | Description | Values | 
+| - | - | - |
+| `InvokeFrom` | Tells the network which role invokes this RPC. | Server, Autonomous, Client | 
+| `HandleOn` | Tells the network which roles handles this RPC. If Authority, the RPC is handled by the server that has authority over that entity. If Autonomous, the RPC is handled only by the relevant player's local client. If Client, the RPC is handled on all clients. | Authority, Autonomous, Client | 
+
+The following are four types of RPCs with a valid "invoked from and handled on" relationship and their possible use cases:
+
+- **Authority-to-Autonomous**: In an example use case, it sends corrections about the game state to the user.
+
+- **Authority-to-Client**: Authority sends calls to all clients. For example, it sends information about particle effects.
+
+- **Server-to-Authority**: This is required to communicate information between entities. For example, suppose in a multi-server setup, EntityA is owned by ServerA and EntityB is owned by ServerB. If EntityA communicates directly to EntityB, EntityA will be talking to a proxy, not the real EntityB. Server-to-Authority ensures that messages always find the entity with authority. When a player wants to deal damage, Autonomous informs the Server, and the Server sends the DealDamage function to Authority. 
+
+- **Autonomous-to-Authority**: Sends user settings information that affects user input and is used during input-process time rather than input-creation time, such as mouse sensitivity and input controls. 
+
+
 ## Auto-component file structure
 
 Auto-components are defined in XML files and placed in the `Code\Source\Autogen` directory of the Multiplayer Gem. According to naming convention, auto-component filenames must end with the suffix `.AutoComponent.xml`.
