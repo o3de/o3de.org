@@ -33,7 +33,7 @@
 
 # Docs content
 /content/docs/* @o3de/sig-docs-community-reviewers
-/content/docs/engine-dev/* @o3de/Maintainers
+/content/docs/engine-dev/* @o3de/Reviewers
 /static/docs/* @o3de/sig-docs-community-reviewers
 /static/images/api-reference/* @o3de/sig-docs-community-reviewers
 /static/images/atom-guide/* @o3de/sig-docs-community-reviewers
