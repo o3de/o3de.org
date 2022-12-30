@@ -50,7 +50,7 @@ Complex prefabs might require multiple entities and prefab instances. You can cr
 1. In Entity Outliner, **right-click** one of the selected entities or prefab instances and choose **Create Prefab...** from the context menu.
 1. In the **Save As…** window, choose a directory in your project, such as the `Prefabs` directory, supply a name for the prefab, and choose **Save**.
 
-In the following video, a prefab instance and an entity with a hierarchy are selected for a new prefab. When the new prefab instance is opened in [Focus Mode](#edit-a-prefab), it displays that the hierarchy is maintained in the new prefab.
+In the following video, a prefab instance and an entity with a hierarchy are selected for a new prefab. When the new prefab instance is opened in [Prefab Edit Mode](#edit-a-prefab), it displays that the hierarchy is maintained in the new prefab.
 
 {{< video src="/images/learning-guide/tutorials/entities-and-prefabs/multiple-entity-prefab.mp4" info="Creating a prefab from a collection of entities and prefabs." autoplay="true" loop="true" width="450" >}}
 
@@ -108,7 +108,7 @@ To focus the viewport on a particular entity or prefab instance, use either of t
 Entities and prefabs can have nested hierarchies. To create a hierarchy beneath an entity or within a prefab, **drag** an entity or prefab instance onto the root entity or prefab instance in Entity Outliner. As you drag a prefab or entity, a pale blue highlight marks where it will be placed in the hierarchy.
 
 {{< note >}}
-Editing the hierarchy of a prefab requires that the prefab is open for edit in [Focus Mode](#edit-a-prefab).
+Editing the hierarchy of a prefab requires that the prefab is open for edit in [Prefab Edit Mode](#edit-a-prefab).
 {{< /note >}}
 
 In the following video, an entity and a prefab instance are added as children of an entity.
@@ -128,46 +128,46 @@ A basic entity has a collection of components that define an object. You can add
 
 ## Edit a prefab
 
-To make changes to a prefab it must be open for editing by entering **Focus Mode**.
+To make changes to a prefab it must be open for editing by entering **Prefab Edit Mode**.
 
-### Enter Focus Mode
+### Enter Prefab Edit Mode
 
-Use any of the following methods to enter Focus Mode:
+Use any of the following methods to enter Prefab Edit Mode:
 
 * **Double-click** the prefab instance in Entity Outliner or in the viewport.
 * **Right-click** the prefab instance in Entity Outliner or in the viewport and choose **Open/Edit Prefab** from the context menu.
 * With the prefab instance selected, press **+**.
 
-![Edit a prefab in focus mode.](/images/learning-guide/tutorials/entities-and-prefabs/edit-prefab.png)
+![Edit a prefab in Prefab Edit mode.](/images/learning-guide/tutorials/entities-and-prefabs/edit-prefab.png)
 
-When Focus mode is active, the prefab's contents are exposed in Entity Outliner within a blue frame. The viewport also displays a blue frame. When you select an entity contained in the prefab, the entity's components are displayed in Entity Inspector.
+When Prefab Edit mode is active, the prefab's contents are exposed in Entity Outliner within a blue frame. The viewport also displays a blue frame. When you select an entity contained in the prefab, the entity's components are displayed in Entity Inspector.
 
-{{< image-width "/images/learning-guide/tutorials/entities-and-prefabs/prefab-focus-mode.png" "900" "A prefab opened for editing in focus mode" >}}
+{{< image-width "/images/learning-guide/tutorials/entities-and-prefabs/prefab-focus-mode.png" "900" "A prefab opened for editing in Prefab Edit mode" >}}
 
-### Edit a prefab in Focus Mode
+### Edit a prefab in Prefab Edit Mode
 
-When Focus Mode is active, you can use any entity and prefab editing actions within the context of the prefab. You can create, duplicate, remove, and rename entities and prefab instances, edit entities, create and instantiate prefabs, and create hierarchies of entities and prefab instances using the methods described in this topic. The results of any modifications happen within the context of the prefab that is in Focus Mode.
+When Prefab Edit Mode is active, you can use any entity and prefab editing actions within the context of the prefab. You can create, duplicate, remove, and rename entities and prefab instances, edit entities, create and instantiate prefabs, and create hierarchies of entities and prefab instances using the methods described in this topic. The results of any modifications happen within the context of the prefab that is in Prefab Edit Mode.
 
-In the following video example, an `.azmodel` is dragged from Asset Browser into the viewport while an prefab is in focus mode. A new entity is created for the `.azmodel` within the prefab.
+In the following video example, an `.azmodel` is dragged from Asset Browser into the viewport while a prefab is in Prefab Edit mode. A new entity is created for the `.azmodel` within the prefab.
 
-{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/create-entity-focus-mode.mp4" info="Creating an entity within a prefab in focus mode." autoplay="true" loop="true" width="900" >}}
+{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/create-entity-focus-mode.mp4" info="Creating an entity within a prefab in Prefab Edit mode." autoplay="true" loop="true" width="900" >}}
 
 When a prefab has unsaved changes, an **\*** appears next to the prefab file name. [Save the prefab](#saving-entities-and-prefabs) to write the changes to disk.
 
-### Exit Focus Mode
+### Exit Prefab Edit Mode
 
-Use any of the following methods to exit Focus Mode:
+Use any of the following methods to exit Prefab Edit Mode:
 
 * **Double-click** the prefab in Entity Outliner.
 * **Right-click** the prefab in Entity Outliner and choose **Close Prefab** from the context menu.
 * Press **-**.
-* **Click** the **X** icon in the upper-right corner of the blue Focus Mode frame that surrounds the viewport.
+* **Click** the **X** icon in the upper-right corner of the blue Prefab Edit Mode frame that surrounds the viewport.
 
-### Focus Mode and nested prefabs
+### Prefab Edit Mode and nested prefabs
 
-You can edit a nested prefab by opening the nested prefab in Focus Mode. In the following video, the nested prefab becomes the focus and a new entity is created within the context of the nested prefab.
+You can edit a nested prefab by opening the nested prefab in Prefab Edit Mode. In the following video, the nested prefab becomes the prefab being edited and a new entity is created within the context of the nested prefab.
 
-{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/nested-focus-mode.mp4" info="Open a nested prefab for edit in focus mode." autoplay="true" loop="true" width="450" >}}
+{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/nested-focus-mode.mp4" info="Open a nested prefab for edit in prefab edit mode." autoplay="true" loop="true" width="450" >}}
 
 ## Detach a prefab instance
 
@@ -176,7 +176,7 @@ When a prefab instance is detached, its link to the prefab file is broken and th
 {{< video src="/images/learning-guide/tutorials/entities-and-prefabs/detach-prefab.mp4" info="Detach a prefab instance." autoplay="true" loop="true" width="450" >}}
 
 {{< note >}}
-A prefab instance cannot be detached when it is in Focus Mode.
+A prefab instance cannot be detached when it is in Prefab Edit Mode.
 {{< /note >}}
 
 ## Duplicate an entity or a prefab instance
@@ -213,4 +213,4 @@ Deleting a prefab instance has no effect on the prefab file that has been used t
 
 ## Conclusion and next steps
 
-Now that you understand the differences between an entities, prefabs, and prefab instances, and the basics of creating and working with them, you can put it into practice. Learn to [Spawn and Despawn a Prefab](spawn-a-prefab) in the next tutorial. 
+Now that you understand the basics of creating and working with prefabs, you can learn how to apply an override to a single prefab instance. Learn to [Override a Prefab](override-a-prefab) in the next tutorial. 
