@@ -15,7 +15,7 @@ This functionality is implemented through a variety of build mechanisms and it's
 
 ## Splitting Up Client and Server logic
 
-The Multiplayer Gem contains code files that can be divided into two categories.
+The Multiplayer Gem contains code files that can be divided into two categories:
 1. Files that are fully required on all launcher types.
 2. Files that have parts conditionally compiled out depending on launcher type and their dependents.
 
