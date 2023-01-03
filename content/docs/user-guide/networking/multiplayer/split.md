@@ -171,6 +171,23 @@ The following CMake example is abbreviated
                 AZ::AzNetworking
                 Gem::Multiplayer.Common.Static
     )
+
+    ly_add_target(
+        NAME Multiplayer.Unified.Static STATIC
+        NAMESPACE Gem
+        FILES_CMAKE
+            multiplayer_split_files.cmake
+        COMPILE_DEFINITIONS
+            PUBLIC
+                AZ_TRAIT_CLIENT=1
+                AZ_TRAIT_SERVER=1
+        BUILD_DEPENDENCIES
+            PUBLIC
+                AZ::AzCore
+                AZ::AzFramework
+                AZ::AzNetworking
+                Gem::Multiplayer.Common.Static
+    )
 ```
 
 ### AutoComponents
