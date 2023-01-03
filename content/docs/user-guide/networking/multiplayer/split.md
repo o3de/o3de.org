@@ -19,7 +19,7 @@ The Multiplayer Gem contains code files that can be divided into two categories:
 1. Files that are fully required on all launcher types.
 2. Files that have parts conditionally compiled out depending on launcher type and their dependents.
 
-These file lists are maintained in multiplayer_files.cmake and multiplayer_split_files.cmake respectively.
+These file lists are maintained in `multiplayer_files.cmake` and `multiplayer_split_files.cmake` respectively.
 
 `multiplayer_files.cmake` generally contains core datatypes, base and core classes. `multiplayer_split_files.cmake` contains AutoComponent based MultiplayerComponents and types dependent on them.
 
