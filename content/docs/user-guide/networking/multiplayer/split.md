@@ -25,7 +25,7 @@ multiplayer_files.cmake generally contains core datatypes, base and core classes
 
 ### CMake setup
 
-The split by cmake files leads us to four Multiplayer targets.
+The split by cmake files leads us to four Multiplayer targets:
 
 1. Common - A target containing multiplayer_files.cmake
 2. Client - A target containing multiplayer_files.cmake plus multiplayer_split_files.cmake conditionally compiled for Clients
