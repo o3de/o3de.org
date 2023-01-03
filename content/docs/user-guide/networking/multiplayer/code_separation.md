@@ -9,7 +9,7 @@ The Multiplayer Gem supports code separation at build time, to create code that 
 The splitting functionality produces multiple build types:
 * GameLauncher is a client only launcher
 * ServerLauncher is a server only launcher suitable for Dedicated Servers
-* UnifiedLauncher provides both and is suitable for Client Hosted Servers
+* UnifiedLauncher provides both and is suitable for Client Hosted Servers which are clients that can simultaneously host and participate in a multiplayer session
 
 This functionality is implemented through a variety of build mechanisms and it's important to understand these mechanisms in any Gem or project using the Multiplayer Gem.
 
