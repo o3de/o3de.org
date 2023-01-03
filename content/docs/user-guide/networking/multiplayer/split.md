@@ -4,7 +4,7 @@ description: Build Open 3D Engine launchers with the Multiplayer Gem specificall
 linkTitle: Separating Client and Server
 ---
 
-The Multiplayer Gem supports builds that contain only client logic, only server logic, or both client and server logic. This allows users to create executables of smaller size by excluding unnecessary logic and dependencies. It also allows hiding potentially sensitive logic unique to one executable from the other. 
+The Multiplayer Gem supports builds that contain only client logic, only server logic, or both client and server logic. This allows users to create executables of smaller size by excluding unnecessary logic and dependencies. It also allows hiding potentially sensitive logic unique to one executable from the other. For example, a publicly released game client that doesn't ship with server logic can make hacking the simulation more difficult.
 
 The splitting functionality produces multiple build types.
 * GameLauncher is a client only launcher
