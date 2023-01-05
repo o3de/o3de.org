@@ -19,7 +19,7 @@ This is a PDF for O3DE's brand guidelines. It contains details on our primary an
 
 [Download O3DE Branding Guidelines PDF](/files/Open-3D-Branding-Guidelines-June-2021.pdf)
 
-## O3DE Logo Pack
+<!-- ## O3DE Logo Pack
 
 The O3DE Logo Pack contains all the essential brand assets for the O3DE logo in one convenient zip file. These brand assets are available as JPEGs,  PNGs with transparent backgrounds, and SVG and EPS vector files.
 
@@ -29,12 +29,12 @@ The O3DE Logo Pack also also includes the above O3DE brand guidelines PDF.
 
 [Download O3DE Logo Pack ZIP](/files/O3DE-Logo-Pack.zip)
 
-[See the individual files on GitHub](https://github.com/o3de/artwork)
+[See the individual files on GitHub](https://github.com/o3de/artwork) -->
 
 ## Blue Jay Design System Logo Pack
 
 Download the logo assets and files for the **Blue Jay Design System**.
 
-[{{< image-width "/images/tools-ui/branding-guidelines/o3de-bjds-branding-banner.png" "700" "A preview of the Blue Jay Design Logo Pack" >}}](/files/Blue Jay-Design-System-Logo-Pack.zip)  
+{{< image-width "/images/tools-ui/branding-guidelines/o3de-bjds-branding-banner.png" "700" "A preview of the Blue Jay Design Logo Pack" >}}
 
-[Download Blue Jay Design System Logo Pack ZIP](/files/Blue Jay-Design-System-Logo-Pack.zip)
+[Download Blue Jay Design System Logo Pack ZIP](/files/Blue-Jay-Design-System-Logo-Pack.zip)
