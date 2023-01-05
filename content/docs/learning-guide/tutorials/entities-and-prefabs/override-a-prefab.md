@@ -8,15 +8,13 @@ toc: true
 
 We learned in the previous tutorial that when a prefab is open in [Prefab Edit Mode](/docs/learning-guide/tutorials/entities-and-prefabs/entity-and-prefab-basics#edit-a-prefab), changes to its content are automatically propagated to all instances linked to that prefab. Sometimes though, it is useful to alter a prefab instance on its own without affecting the other instances. For example, a level may have multiple instances of the same car prefab, but each car can be a different color.
 
-If just the prefab that's in Prefab Edit mode can expose its content for editing while its nested prefab instances remain closed, how can we isolate changes to a single instance?
-
 The editor provides an **Override UX** mode that allows the content of prefab instances under the prefab that's open for editing to be exposed.
 
 In the below image, the Level is in Prefab Edit mode while the content of the Car prefab instances is expanded and accessible for editing:
 
 ![Level in Prefab Edit Mode in Entity Outliner.](/images/learning-guide/tutorials/entities-and-prefabs/level-prefab-edit.png)
 
-Now when a change is made to a prefab instance, it will be registered as an override and isolated to that single instance. The level itself is responsible for storing the override information of its nested prefabs.
+Now when a change is made to a Car prefab instance, it will be registered as an override and isolated to that single instance. The level itself is responsible for storing the override information of its nested prefabs.
 
 {{< note >}}
 A level is actually a prefab, and automatically enters Prefab Edit mode when it is opened. This is indicated by the blue capsule around the level in the Entity Outliner.
@@ -28,7 +26,7 @@ Overrides are not limited to the level. In fact, any prefab that is open for edi
 
 ## Enable Override UX mode
 
-To enable **Override UX** mode, open the settings registry file called editorpreferences.setreg and set the EnableOverridesUx flag to true:
+To enable **Override UX** mode, create a settings registry file called `editorpreferences.setreg` with the following contents:
 
 ```JSON
 {
@@ -42,13 +40,19 @@ To enable **Override UX** mode, open the settings registry file called editorpre
 }
 ```
 
+An example of such file exists as a project-specific override in the AutomatedTesting project: [`AutomatedTesting/Registry/editorpreferences.setreg`](https://github.com/o3de/o3de/blob/development/AutomatedTesting/Registry/editorpreferences.setreg)
+
+{{< note >}}
+It is recommended to add your `editorpreferences.setreg` file to the {project-path}/user/Registry folder as a user-specific override since any files under the user folder are git ignored and won't accidentally be committed.
+{{< /note >}}
+
 You can create different kinds of overrides on a prefab:
 * Component property edit
 * Component addition/removal
 * Entity addition/removal
 * Nested isntance addition/removal
 
-Overrides are automatically added when you perform editing actions on the content of a prefab instance.
+In **Override UX** mode, overrides are automatically added when you perform editing actions on the content of a prefab instance.
 
 ## Override a component property
 
