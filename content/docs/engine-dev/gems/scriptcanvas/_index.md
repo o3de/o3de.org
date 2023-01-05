@@ -2,7 +2,6 @@
 linkTitle: Script Canvas
 title: Script Canvas Gem Developer Documentation
 description: Documentation for the Script Canvas 
-weight: 100
 ---
 
 {{< note >}}

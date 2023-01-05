@@ -15,4 +15,4 @@ This is a stub page intended to serve as an example of guide structure. Informat
 
 | Name | Description |
 |-|-|
-| [Project bootstrapping](./architecture/bootstrap) | Learn about the execution flow of project launchers and how O3DE loads libraries at project runtime. |
+| [Project bootstrapping](./bootstrap) | Learn about the execution flow of project launchers and how O3DE loads libraries at project runtime. |
