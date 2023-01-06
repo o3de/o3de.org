@@ -71,8 +71,7 @@ The TerrainMacroMaterialRequestBus is an internal EBus used by the terrain rende
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
 | `GetTerrainMacroMaterialData` | Returns the `MacroMaterialData` structure assigned to the Terrain Macro Material component. | None | [MacroMaterialData](#macromaterialdata) | Yes |
-| `GetTerrainMacroColorImageHeight` | Returns the height of the color texture in pixels. | None | Integer | No |
-| `GetTerrainMacroColorImageWidth` | Returns the width of the color texture in pixels. | None | Integer | No |
+| `GetTerrainMacroColorImageSize` | Returns the height/width/depth of the color texture in pixels. | None | Integer | No |
 | `GetMacroColorImagePixelsPerMeter` | Returns the number of color texture pixels per meter in world space. | None | Vector2 | No |
 
 ## TerrainMacroMaterialNotificationBus
