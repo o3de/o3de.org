@@ -138,19 +138,19 @@ Use any of the following methods to enter Prefab Edit Mode:
 * **Right-click** the prefab instance in Entity Outliner or in the viewport and choose **Open/Edit Prefab** from the context menu.
 * With the prefab instance selected, press **+**.
 
-![Edit a prefab in Prefab Edit mode.](/images/learning-guide/tutorials/entities-and-prefabs/edit-prefab.png)
+![Edit a prefab in Prefab Edit Mode.](/images/learning-guide/tutorials/entities-and-prefabs/edit-prefab.png)
 
-When Prefab Edit mode is active, the prefab's contents are exposed in Entity Outliner within a blue frame. The viewport also displays a blue frame. When you select an entity contained in the prefab, the entity's components are displayed in Entity Inspector.
+When Prefab Edit Mode is active, the prefab's contents are exposed in Entity Outliner within a blue frame. The viewport also displays a blue frame. When you select an entity contained in the prefab, the entity's components are displayed in Entity Inspector.
 
-{{< image-width "/images/learning-guide/tutorials/entities-and-prefabs/prefab-focus-mode.png" "900" "A prefab opened for editing in Prefab Edit mode" >}}
+{{< image-width "/images/learning-guide/tutorials/entities-and-prefabs/prefab-focus-mode.png" "900" "A prefab opened for editing in Prefab Edit Mode" >}}
 
 ### Edit a prefab in Prefab Edit Mode
 
 When Prefab Edit Mode is active, you can use any entity and prefab editing actions within the context of the prefab. You can create, duplicate, remove, and rename entities and prefab instances, edit entities, create and instantiate prefabs, and create hierarchies of entities and prefab instances using the methods described in this topic. The results of any modifications happen within the context of the prefab that is in Prefab Edit Mode.
 
-In the following video example, an `.azmodel` is dragged from Asset Browser into the viewport while a prefab is in Prefab Edit mode. A new entity is created for the `.azmodel` within the prefab.
+In the following video example, an `.azmodel` is dragged from Asset Browser into the viewport while a prefab is in Prefab Edit Mode. A new entity is created for the `.azmodel` within the prefab.
 
-{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/create-entity-focus-mode.mp4" info="Creating an entity within a prefab in Prefab Edit mode." autoplay="true" loop="true" width="900" >}}
+{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/create-entity-focus-mode.mp4" info="Creating an entity within a prefab in Prefab Edit Mode." autoplay="true" loop="true" width="900" >}}
 
 When a prefab has unsaved changes, an **\*** appears next to the prefab file name. [Save the prefab](#saving-entities-and-prefabs) to write the changes to disk.
 
@@ -167,7 +167,7 @@ Use any of the following methods to exit Prefab Edit Mode:
 
 You can edit a nested prefab by opening the nested prefab in Prefab Edit Mode. In the following video, the nested prefab becomes the prefab being edited and a new entity is created within the context of the nested prefab.
 
-{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/nested-focus-mode.mp4" info="Open a nested prefab for edit in prefab edit mode." autoplay="true" loop="true" width="450" >}}
+{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/nested-focus-mode.mp4" info="Open a nested prefab for edit in Prefab Edit Mode." autoplay="true" loop="true" width="450" >}}
 
 ## Detach a prefab instance
 

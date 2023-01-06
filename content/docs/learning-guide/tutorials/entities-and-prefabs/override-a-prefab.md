@@ -8,9 +8,9 @@ toc: true
 
 We learned in the previous tutorial that when a prefab is open in [Prefab Edit Mode](/docs/learning-guide/tutorials/entities-and-prefabs/entity-and-prefab-basics#edit-a-prefab), changes to its content are automatically propagated to all instances linked to that prefab. Sometimes though, it is useful to alter a prefab instance on its own without affecting the other instances. For example, a level may have multiple instances of the same Car prefab, but each car can be a different color.
 
-The editor provides an **Override UX** mode that allows the content of prefab instances under the prefab that's open for editing to be exposed.
+**Override UX Mode** allows the content of prefab instances under the prefab that's open for editing to be exposed.
 
-In the below image, the Level is in Prefab Edit Mode while the content of the Car prefab instances is expanded and accessible for editing:
+In the below image, the level is in Prefab Edit Mode while the content of the Car prefab instances is expanded and accessible for editing:
 
 ![Level in Prefab Edit Mode in Entity Outliner.](/images/learning-guide/tutorials/entities-and-prefabs/level-prefab-edit.png)
 
@@ -26,7 +26,7 @@ Overrides are not limited to the level. In fact, any prefab that is open for edi
 
 ## Enable Override UX Mode
 
-To enable **Override UX** mode, create a settings registry file called `editorpreferences.setreg` with the following contents:
+To enable Override UX Mode, create a settings registry file called `editorpreferences.setreg` with the following contents:
 
 ```JSON
 {
@@ -52,14 +52,14 @@ You can create different kinds of overrides on a prefab:
 * Entity addition/removal
 * Nested instance removal
 
-In **Override UX** mode, overrides are automatically added when you perform editing actions on the content of a prefab instance.
+In Override UX Mode, overrides are automatically added when you perform editing actions on the content of a prefab instance.
 
 ## Override a component property
 
 To override a component property of an entity under a prefab instance:
 
-1. In the Entity Outliner, expand a prefab instance by clicking the arrow to the left of the instance name.
-1. Select an entity under the instance and edit one of its properties in the Entity Inspector.
+1. In the **Entity Outliner**, expand a prefab instance by clicking the arrow to the left of the instance name.
+1. Select an entity under the instance and edit one of its properties in the **Entity Inspector**.
 1. Notice that a blue circle appears on the entity's icon in the Entity Outliner. This indicates that an edit override is applied to the entity.
 
 In the below image, the Body entity in the first Car prefab instance has an override to change the default color of the car from red to blue:
