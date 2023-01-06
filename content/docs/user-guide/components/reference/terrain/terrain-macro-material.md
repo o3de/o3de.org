@@ -83,7 +83,7 @@ The `TerrainMacroMaterialRequestBus` is an internal system bus that is only inte
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
 | `GetTerrainMacroMaterialData` | Returns the `MacroMaterialData` structure assigned to the **Terrain Macro Material** component. | None | [MacroMaterialData](#macromaterialdata) | Yes |
-| `GetTerrainMacroColorImageSize` | Returns the height/width/depth of the color texture in pixels. | None | Integer | No |
+| `GetTerrainMacroColorImageSize` | Returns the height/width/depth of the color texture in pixels. | None | RHI::Size | No |
 | `GetMacroColorImagePixelsPerMeter` | Returns the number of color texture pixels per meter in world space. | None | Vector2 | No |
 
 ## TerrainMacroMaterialNotificationBus
