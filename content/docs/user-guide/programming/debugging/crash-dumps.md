@@ -4,7 +4,7 @@ linktitle: Crash Reporting
 description: When you encounter a crash in Open 3D Engine (O3DE), it's helpful to generate a dump file with crash reporting information to help track down the problem. 
 ---
 
-If you encounter a crash with **Open 3D Engine (O3DE)**, you may find helpful information in the dump file, `error.dmp`. The dump file records details about the state of the engine that led to the event of the crash. The dump file is a compact minidump and is located in the `user/log/` directory, within the same parent directory where you ran the O3DE Editor from. For example, if you ran the Editor from my project's directory, then you can find the dump files in `/MyProject/user/log/`. 
+If you encounter a crash with **Open 3D Engine (O3DE)**, you may find helpful information in the dump file, `error.dmp`. The dump file records details about the state of the engine that led to the event of the crash. The dump file is a compact minidump and is located in the `user/log/` directory, within the same parent directory where you ran the O3DE Editor from. For example, if you ran the Editor from `MyProject`'s directory, then you can find the dump files in `/MyProject/user/log/`. 
 
 ## Dump file creation
 
@@ -14,7 +14,7 @@ If you want to configure the type of crash log information that's generated, set
 - `0` -- Disable crash reporting.
 - `1` -- Generate a stack trace on crash.
 - `2` -- (Default) Generate a stack trace and limited variable information.
-- `3` -- Generate a Full crash log of the stack trace, and all variable and information.
+- `3` -- Generate a full crash log of the stack trace, and all variable and information.
 
 ## Debugging with the dump file
 
