@@ -21,11 +21,6 @@ Network properties have two important fields: `ReplicateFrom` and `ReplicateTo`.
 Together, these fields define which role can replicate to another specific role. You can only replicate property values *from* Authority and Autonomous roles. A `ReplicateFrom` Authority relationship creates a server-authority model, which helps to ensure that you don't accidentally replicate from an unprivileged client. 
 Properties can be replicated *to* any role, because all participants in the session may need information from any other participant.
 
-| Field | Description | Values | 
-| - | - | - |
-| `ReplicateFrom` | Tells the network which role can send information about the changes that were made to this property. | Authority, Autonomous | 
-| `ReplicateTo` | Tells the network which role can receive information about the changes that were made to this property. | Server, Authority, Autonomous, Client | 
-
 The following are four types of networking properties with a valid "from and to" relationship and their possible use cases:
 
 - **Authority-to-Client**: Handles client, or "simulated", properties.
@@ -38,15 +33,29 @@ The following are four types of networking properties with a valid "from and to"
 
 For networking properties that replicate from Authority, a replication hierarchy applies. The replicate-to rules trickle up the hierarchy in the following way: An Authority-to-Client replication also replicates to Autonomous and Server roles. An Authority-to-Autonomous replication also replicates to the Server role. Finally, an Authority-to-Server replication only replicates to the Server. This behavioral hierarchy ensures that if the Authority ever migrates to the other server, then the other server has the right property information.
 
+#### Properties
+
+| Field | Description | Values |
+| - | - | - |
+| Name | Name of network property. | `string` |
+| Description | Describes the network property. | `string` |
+| Type |  |  |
+| Init |  |  |
+| `ReplicateFrom` | Tells the network which role can send information about the changes that were made to this property. | Authority, Autonomous | 
+| `ReplicateTo` | Tells the network which role can receive information about the changes that were made to this property. | Server, Authority, Autonomous, Client | 
+| `Container` |  | `Object`, `Array`, `Vector` |
+| `Count` | Only applicable when `Container` is `Array` or `Vector`. |  |
+| IsPublic |  | `bool` |
+| IsRewindable |  | `bool` |
+| IsPredictable |  | `bool` |
+| ExposeToEditor |  | `bool` |
+| ExposeToScript |  |  |
+| GenerateEventBindings |  | `bool` |
+
 
 ### Remote procedure calls (RPCs)
 
 Similar to network properties, RPCs have two important fields: `InvokeFrom` and `HandleOn`. These fields describe which role the RPC is invoked from and which role it's handled on.
-
-| Field | Description | Values | 
-| - | - | - |
-| `InvokeFrom` | Tells the network which role invokes this RPC. | Server, Autonomous, Client | 
-| `HandleOn` | Tells the network which roles handles this RPC. If Authority, the RPC is handled by the server that has authority over that entity. If Autonomous, the RPC is handled only by the relevant player's local client. If Client, the RPC is handled on all clients. | Authority, Autonomous, Client | 
 
 The following are four types of RPCs with a valid "invoked from and handled on" relationship and their possible use cases:
 
@@ -58,6 +67,40 @@ The following are four types of RPCs with a valid "invoked from and handled on" 
 
 - **Autonomous-to-Authority**: Sends user settings information that affects user input and is used during input-process time rather than input-creation time, such as mouse sensitivity and input controls. 
 
+#### Properties
+The following are properties that you can use to define an RPC.
+
+| Field | Description | Values | 
+| - | - | - |
+| Name | Name of the RPC. | `string` |
+| Param | A parameter and value pair that you can send along with the RPCs. You can have 0 or an unlimited amount of parameters. You must specify the parameter's type and name. |  |
+| Description | Describes the RPC. | `string` |
+| `InvokeFrom` | Tells the network which role invokes this RPC. | Server, Autonomous, Client | 
+| `HandleOn` | Tells the network which roles handles this RPC. If Authority, the RPC is handled by the server that has authority over that entity. If Autonomous, the RPC is handled only by the relevant player's local client. If Client, the RPC is handled on all clients. | Authority, Autonomous, Client | 
+| IsPublic |  | `bool` |
+| IsReliable |  | `bool` |
+| GenerateEventBindings |  | `bool` |
+
+### Archetypes
+
+| Field | Description | Values | 
+| - | - | - |
+| Name | Name of the archetype. | `string` |
+| Type |  |  |
+| Init |  |  |
+| Container |  |  |
+| Count |  |  |
+| ExposeToEditor |  |  |
+
+```xml
+"ArchetypeProperty". Archetypes are set as edit time (literally in the editor via the component menu). Archetypes don't change at runtime.  You can have 0 or infinite amount of ArchetypeProperty
+    "Type" type="xs:string" use="required"/>
+    "Name" type="xs:string" use="required"/>
+    "Init" type="xs:string" use="required"/>
+     "Container": Options "Object" or "Array" or "Vector" />
+     "Count": Only applicable when "Countainer" is "Array" or "Vector" 
+     "ExposeToEditor" Options: True or False. Note: I'm not actually sure when you wouldn't want to set this in the editor, except if you want to hardcode the value as the "init" value and never expose it to designers.
+```
 
 ## Auto-component file structure
 
