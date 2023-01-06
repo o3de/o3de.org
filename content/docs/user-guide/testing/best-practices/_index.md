@@ -172,7 +172,7 @@ TEST(MathTests, FastSquare_Integer_Squared1)
 TEST(MathTests, FastSquare_Integer_Squared2)
 {
     // relies on a duplicate implementation of the production code which contains
-    // the same bug, and only helps prove the buggy implementation was not changed
+    // the same bug, and only helps prove the production bug was not changed
     int tenSquared = CalculateTestSquare(10);
     int result = Math::FastSquare(10);
     ASSERT_EQ(result, tenSquared);
@@ -180,8 +180,8 @@ TEST(MathTests, FastSquare_Integer_Squared2)
 
 TEST(MathTests, FastSquare_Integer_Squared3)
 {
-    // uses incorrectly computed squares from aonther file which have the production
-    // bug baked in, and only helps prove the buggy implementation was not changed
+    // uses incorrectly computed squares from another file, and only helps
+    // prove the production bug was not changed
     int result = Math::FastSquare(10);
     ASSERT_EQ(result, pcs_ten);
 }
