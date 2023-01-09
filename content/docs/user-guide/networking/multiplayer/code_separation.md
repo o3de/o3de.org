@@ -38,7 +38,7 @@ When including the Multiplayer Gem it is important to understand the needs of yo
 As an example, [MultiplayerSample](https://github.com/o3de/o3de-multiplayersample) uses and builds upon MultiplayerComponents in the Multiplayer Gem. It therefore defines its own respective Client, Server and Unified targets. 
 
 {{< note >}}
-The following CMake examples are abbreviated
+The following CMake examples are abbreviated.
 {{< /note >}}
 
 ```cmake
