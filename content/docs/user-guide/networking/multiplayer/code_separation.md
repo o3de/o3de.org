@@ -1,5 +1,5 @@
 ---
-title: Client and Server Launchers with the Multiplayer Gem
+title: Separating Multiplayer Logic into Client and Server Launchers
 description: Build Open 3D Engine launchers with the Multiplayer Gem specifically targeting Clients, Servers or both.
 linkTitle: Separating Client and Server
 ---
