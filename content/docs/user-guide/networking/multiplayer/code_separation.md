@@ -33,7 +33,7 @@ The split by cmake files leads us to four Multiplayer targets:
 3. Server - A target containing `multiplayer_files.cmake` plus `multiplayer_split_files.cmake` conditionally compiled for servers.
 4. Unified - A target containing `multiplayer_files.cmake` plus `multiplayer_split_files.cmake` conditionally compiled for both clients and servers.
 
-When including the Multiplayer Gem it is important to understand the needs of said usage. If the usage requires split logic, it is recommended to create Client, Server and Unified targets which each use Multiplayer.Client, Server and Unified respectively. If it does not, Multiplayer.Common is sufficient.
+When including the Multiplayer Gem it is important to understand the needs of your usage. If the usage requires split logic, it is recommended to create Client, Server, and Unified targets which specify `Multiplayer.Client`, `Multiplayer.Server `, and `Multiplayer.Unified` dependencies, respectively. If your usage does not require split logic, then `Multiplayer.Common` is sufficient.
 
 As an example, [MultiplayerSample](https://github.com/o3de/o3de-multiplayersample) uses and builds upon MultiplayerComponents in the Multiplayer Gem. It therefore defines its own respective Client, Server and Unified targets. 
 
