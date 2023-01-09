@@ -193,7 +193,7 @@ The following CMake example is abbreviated.
 
 ### AutoComponents
 
-AutoComponents make use of `AZ_TRAIT_SERVER` and `AZ_TRAIT_CLIENT`. Depending on the specification of elements of a component, they will conditionally exclude logic. For example, given an RPC that is invoked on the Client and handled on the Server, the invocation signal will be wrapped in `AZ_TRAIT_CLIENT` while the handler will be wrapped in `AZ_TRAIT_SERVER`. Classes inheriting from AutoComponents will need to honor these usages in order to compile correctly.
+AutoComponents make use of `AZ_TRAIT_SERVER` and `AZ_TRAIT_CLIENT`. Depending on the specification of elements of a component, they will conditionally exclude logic. For example, given an RPC that is invoked on the client and handled on the server, the invocation signal will be wrapped in `AZ_TRAIT_CLIENT` while the handler will be wrapped in `AZ_TRAIT_SERVER`. Classes inheriting from AutoComponents will need to honor these usages in order to compile correctly.
 
 Consider the following RPC:
 
