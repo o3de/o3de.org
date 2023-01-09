@@ -8,9 +8,9 @@ weight: 450
 The **Multiplayer Gem** supports code separation at build time, to create code that contains only client logic, only server logic, or both client and server logic. This allows users to create executables of smaller size by excluding unnecessary logic and dependencies. It also allows hiding potentially sensitive logic unique to one executable from the other. For example, ensuring that a free-to-play client executable never includes any server logic code will reduce the chances of hacking or abuse.
 
 The splitting functionality produces multiple build types:
-* GameLauncher is a client only launcher
-* ServerLauncher is a server only launcher suitable for Dedicated Servers
-* UnifiedLauncher provides both and is suitable for Client Hosted Servers which are clients that can simultaneously host and participate in a multiplayer session
+* _GameLauncher_ is a client-only launcher.
+* _ServerLauncher_ is a server-only launcher suitable for dedicated servers.
+* _UnifiedLauncher_ provides both functionalities, and is suitable for _client-hosted servers_, which are clients that can simultaneously host and participate in a multiplayer session.
 
 This functionality is implemented through a variety of build mechanisms and it's important to understand these mechanisms in any Gem or project using the Multiplayer Gem.
 
