@@ -2,6 +2,7 @@
 title: Separating Multiplayer Logic into Client and Server Launchers
 description: Build Open 3D Engine launchers with the Multiplayer Gem specifically targeting Clients, Servers or both.
 linkTitle: Separating Client and Server
+weight: 450
 ---
 
 The Multiplayer Gem supports code separation at build time, to create code that contains only client logic, only server logic, or both client and server logic. This allows users to create executables of smaller size by excluding unnecessary logic and dependencies. It also allows hiding potentially sensitive logic unique to one executable from the other. For example, ensuring that a free-to-play client executable never includes any server logic code will reduce the chances of hacking or abuse.
