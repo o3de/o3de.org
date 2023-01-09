@@ -14,7 +14,7 @@ The splitting functionality produces multiple build types:
 
 This functionality is implemented through a variety of build mechanisms and it's important to understand these mechanisms in any Gem or project using the Multiplayer Gem.
 
-## Splitting Up Client and Server logic
+## Splitting client and server logic
 
 The Multiplayer Gem contains code files that can be divided into two categories:
 1. Files that are fully required on all launcher types.
