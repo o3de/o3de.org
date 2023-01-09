@@ -128,7 +128,7 @@ Meanwhile, Multiplayer_ScriptCanvas only requires core datatypes so it only uses
                 Gem::Multiplayer.Common.Static
     )
 ```
-### Conditional Compilation
+### Conditional compilation
 
 MultiplayerComponents are subject to conditional compilation. This is done using the macros `AZ_TRAIT_CLIENT` and `AZ_TRAIT_SERVER`. Client specific logic should be wrapped in the former while Server specific logic should be wrapped in the latter. The motivation for this approach is to allow target specific logic in MultiplayerComponents without requiring target specific files (i.e. a ServerComponent and ClientComponent with or without a BaseComponent).
 
