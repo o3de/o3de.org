@@ -112,7 +112,7 @@ The following CMake examples are abbreviated.
     )
 ```
 
-Meanwhile, Multiplayer_ScriptCanvas only requires core datatypes so it only uses Multiplayer.Common
+Meanwhile, Multiplayer_ScriptCanvas only requires core datatypes so it only uses `Multiplayer.Common`.
 
 ```cmake
     ly_add_target(
