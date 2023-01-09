@@ -135,7 +135,7 @@ MultiplayerComponents are subject to conditional compilation. This is done using
 In the Multiplayer Gem's cmake, observe that each target enables or disables these traits based on the target. In example, Server enables `AZ_TRAIT_SERVER` while disabling `AZ_TRAIT_CLIENT`. Usage of these targets will bring the macro definitions with them.
 
 {{< note >}}
-The following CMake example is abbreviated
+The following CMake example is abbreviated.
 {{< /note >}}
 
 ```cmake
