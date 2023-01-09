@@ -28,10 +28,10 @@ These file lists are maintained in `multiplayer_files.cmake` and `multiplayer_sp
 
 The split by cmake files leads us to four Multiplayer targets:
 
-1. Common - A target containing multiplayer_files.cmake
-2. Client - A target containing multiplayer_files.cmake plus multiplayer_split_files.cmake conditionally compiled for Clients
-3. Server - A target containing multiplayer_files.cmake plus multiplayer_split_files.cmake conditionally compiled for Servers
-4. Unified - A target containing multiplayer_files.cmake plus multiplayer_split_files.cmake conditionally compiled for both Clients and Servers
+1. Common - A target containing `multiplayer_files.cmake`.
+2. Client - A target containing `multiplayer_files.cmake` plus `multiplayer_split_files.cmake` conditionally compiled for clients.
+3. Server - A target containing `multiplayer_files.cmake` plus `multiplayer_split_files.cmake` conditionally compiled for servers.
+4. Unified - A target containing `multiplayer_files.cmake` plus `multiplayer_split_files.cmake` conditionally compiled for both clients and servers.
 
 When including the Multiplayer Gem it is important to understand the needs of said usage. If the usage requires split logic, it is recommended to create Client, Server and Unified targets which each use Multiplayer.Client, Server and Unified respectively. If it does not, Multiplayer.Common is sufficient.
 
