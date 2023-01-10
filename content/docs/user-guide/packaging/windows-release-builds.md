@@ -127,7 +127,7 @@ To process your project's assets, do one of the following:
 
 Verify that Asset Processor successfully processed your assets by checking their status. Asset Processor can process your assets with or without warning or error, or they can fail to process. Warnings and errors indicate that your asset may need your attention, but they don't impede the ability to create a project game release layout. On the other hand, it's critical that you resolve any assets that were not processed due to failure.
 
-For help with debugging failures, refer to [Debugging](#debugging).
+For help with troubleshooting failures, refer to [Troubleshooting Packaging in O3DE](/docs/user-guide/packaging/troubleshooting/).
 
 
 ## Create a project game release layout
