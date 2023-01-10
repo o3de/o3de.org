@@ -13,5 +13,5 @@ yarn.lock
 .vscode
 .DS_Store
 
-# Netlify
+# Local Netlify folder
 .netlify

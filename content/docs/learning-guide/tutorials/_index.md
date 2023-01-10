@@ -58,6 +58,14 @@ Extend **O3DE Editor** by creating a custom tool Gem. A tool is a dockable widge
 | [Create a Custom Tool Gem in C++](extend-the-editor/shape-example-cpp.md) | Extend the Editor by creating a custom tool Gem that's written in C++. Learn how to use the **CppToolGem** template, and practice C++ development with [Qt](https://wiki.qt.io/Main), the O3DE Tools UI API, and other O3DE APIs. |
 | [Create a Custom Tool Gem in Python](extend-the-editor/shape-example-py.md) | Extend the Editor by creating a custom tool Gem that's written in Python. Learn how to use the **PythonToolGem** template, and practice Python development with [Qt](https://wiki.qt.io/Main), the O3DE Tools UI API, and other O3DE APIs.|
 
+## Input and movement
+
+Learn how to use the keyboard, mouse, and other input devices to move entities.
+
+| Tutorial | Description |
+| - | - |
+| [Grid-based Movement](input-and-movement/grid-based-movement) | Learn how to implement grid-based movement from input device events. |
+
 ## Multiplayer
 
 | Tutorial | Description |

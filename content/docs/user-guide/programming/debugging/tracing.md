@@ -1,6 +1,7 @@
 ---
-description:  Learn best practices for debug tracing in Open 3D Engine. 
-title: Tracing
+title: Debug Tracing
+linktitle: Tracing
+description: Learn best practices for debug tracing in Open 3D Engine (O3DE). 
 ---
 
 **Recommended**: For code tracing needs, use `AZ_*` tracing macros.
