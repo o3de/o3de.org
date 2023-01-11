@@ -1,7 +1,7 @@
 ---
 linktitle: Guidelines for Writing Error Messages
 title: Guidelines for Writing Error Messages in Open 3D Engine
-description: Learn how to write error messages, alerts, and notifications using the BlueJay Design System (BJDS) in Open 3D Engine (O3DE).
+description: Learn how to write error messages, alerts, and notifications using the Blue Jay Design System (BJDS) in Open 3D Engine (O3DE).
 weight: 200
 toc: true
 ---

@@ -1,7 +1,7 @@
 ---
 linktitle: Inline Notifications
 title: Error Messages in Inline Notifications
-description: Learn how to design Error/Warning/Success/Information messages in inline notifications using the BlueJay Design System (BJDS) in Open 3D Engine (O3DE).
+description: Learn how to design Error/Warning/Success/Information messages in inline notifications using the Blue Jay Design System (BJDS) in Open 3D Engine (O3DE).
 weight: 300
 toc: true
 ---

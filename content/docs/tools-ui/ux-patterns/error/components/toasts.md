@@ -1,7 +1,7 @@
 ---
 linktitle: Toasts
 title: Error Messages in Toasts
-description: Learn how to design Error/Warning/Success/Information messages in toasts using the BlueJay Design System (BJDS) in Open 3D Engine (O3DE).
+description: Learn how to design Error/Warning/Success/Information messages in toasts using the Blue Jay Design System (BJDS) in Open 3D Engine (O3DE).
 weight: 600
 toc: true
 ---
