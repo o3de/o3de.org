@@ -20,7 +20,7 @@ A multiplayer component can contain a variety of attributes that define its func
 
 ### Component
 
-The `Component` tag defines the name, namespace, include path, and override behavior for the multiplayer component. This is required and should be defined only once.
+The `Component` tag defines the name, namespace, include path, and C++ override behavior for the multiplayer component. This is required and should be defined only once.
 
 | Property | Description | Type |
 |---|---|---|
@@ -55,7 +55,7 @@ The `Include` tag is used to generate the `#include` directives of the C++ code.
 
 ### Network properties
 
-Network properties state information about the component that gets replicated between hosts. 
+Network properties state information about the component that gets replicated between network endpoints. 
 They have two important fields: `ReplicateFrom` and `ReplicateTo`. 
 Together, these fields define which role can replicate to another specific role.
 You can only replicate property values *from* Authority and Autonomous roles. 
@@ -84,14 +84,14 @@ The `NetworkProperty` tag has the following properties:
 | Init | The initial value of the property. | `string` |
 | ReplicateFrom | Tells the network which role can send information about the changes that were made to this property. | Authority, Autonomous | 
 | ReplicateTo | Tells the network which role can receive information about the changes that were made to this property. | Server, Authority, Autonomous, Client | 
-| Container | The type of holder object that stores this archetype property. | `Object`, `Array`, `Vector` |
+| Container | The type of holder object that stores this network property. | `Object`, `Array`, `Vector` |
 | Count | The number of elements, when `Container` is `Array` or `Vector`. Must be an integer value or an integer type variable. | `string` |
 | IsPublic | If `true`, this property's access modifier is set to `public`, and is accessible from outside of the class.  | `bool` |
-| IsRewindable |  | `bool` |
-| IsPredictable |  | `bool` |
+| IsRewindable | If `true`, the network simulation records the historic value of this network property for each network time tick. The ability to rewind is needed if the network property plays a crucial role in the network simulation, as it relates to other network entities. For example, the network transform component's network properties are rewindable. This is important because if player A shoots a gun at network time tick 10, then the host must rewind all of the other network entities' transform components back to their position at time tick 10 to check who was hit. | `bool` |
+| IsPredictable | If true, the Autonomous player is allowed to edit this property even if **ReplicateFrom** is `Authority` and not `Autonomous`. The autonomous player doesn't have control of this network property, but they may predict and change its value locally. For example, with the Network Transform component, the autonomous player is allowed to alter their player's position locally, even before receiving explicit permission from the server to move. This makes the player's movements feel responsive. | `bool` |
 | ExposeToEditor | If `true`, this property is accessible in the O3DE Editor. | `bool` |
-| ExposeToScript | If `true`, this property is accessibly via script.  | `bool` |
-| GenerateEventBindings |  | `bool` |
+| ExposeToScript | If `true`, this property is accessible for runtime scripting via Lua and ScriptCanvas.  | `bool` |
+| GenerateEventBindings | If `true`, [AZ::Event](https://www.o3de.org/docs/user-guide/programming/az-event/) callbacks will be triggered whenever the value of this network property is changed. | `bool` |
 
 ### Remote procedure calls (RPCs)
 
@@ -101,9 +101,9 @@ The following are four types of RPCs with a valid "invoked from and handled on" 
 
 - **Authority-to-Autonomous**: In an example use case, it sends corrections about the game state to the user.
 
-- **Authority-to-Client**: Authority sends calls to all clients. For example, it sends information about particle effects.
+- **Authority-to-Client**: Authority sends calls to all clients. For example, it sends a request to play a particle effect on all the clients.
 
-- **Server-to-Authority**: This is required to communicate information between entities. For example, suppose in a multi-server setup, EntityA is owned by ServerA and EntityB is owned by ServerB. If EntityA communicates directly to EntityB, EntityA will be talking to a proxy, not the real EntityB. Server-to-Authority ensures that messages always find the entity with authority. When a player wants to deal damage, Autonomous informs the Server, and the Server sends the DealDamage function to Authority. 
+- **Server-to-Authority**: This is required to communicate information between entities. For example, suppose in a multi-server setup, EntityA is owned by ServerA and EntityB is owned by ServerB. If EntityA communicates directly to EntityB, EntityA will be talking to a proxy, not the real EntityB. Server-to-Authority ensures that messages always find the entity with authority. For example, when a player wants to deal damage, Autonomous informs the Server, and the Server sends the DealDamage function to Authority. 
 
 - **Autonomous-to-Authority**: Sends user settings information that affects user input and is used during input-process time rather than input-creation time, such as mouse sensitivity and input controls. 
 
@@ -114,16 +114,16 @@ The `RemoteProcedure` tag has the following properties:
 | Name | Name of the RPC. | `string` |
 | Param | A parameter and value pair that you can send along with the RPCs. You can have none or an infinite amount of parameters. You must specify the parameter's type and name. |  |
 | Description | Describes the functionality of the RPC. | `string` |
-| InvokeFrom | Tells the network which role invokes this RPC. | `Server`, `Autonomous`, `Client` | 
+| InvokeFrom | Tells the network which role invokes this RPC. | `Authority`, `Server`, `Autonomous` | 
 | HandleOn | Tells the network which roles handles this RPC. If Authority, the RPC is handled by the server that has authority over that entity. If Autonomous, the RPC is handled only by the relevant player's local client. If Client, the RPC is handled on all clients. | `Authority`, `Autonomous`, `Client` |
-| IsPublic | If `true`, this property's access modifier is set to `public`, and is accessible from outside of the class.  | `bool` |
-| IsReliable | If `true`, RPC is reliable and uses a queue to guarantee the delivery of a message. Otherwise, RPC is unreliable and are sent over a "fire and forget" method. By default, RPCs are reliable. | `bool` |
-| GenerateEventBindings |  | `bool` |
+| IsPublic | If `true`, this property's access modifier is set to `public`, allowing others to send this RPC across the network. | `bool` |
+| IsReliable | If `true`, RPC is reliable and uses a queue to guarantee the delivery of a message. Otherwise, RPC is unreliable and are sent over a "fire and forget" method. Be aware that RPCs can be reliably sent, but are not guaranteed to arrive in any particular order.  | `bool` |
+| GenerateEventBindings | If `true`, [AZ::Event](https://www.o3de.org/docs/user-guide/programming/az-event/) callbacks will be triggered whenever the value of this network property is changed. | `bool` |
 
 
 ### Archetype property
 
-The `ArchetypeProperty` tag defines a property that you can configure only at edit time. When a multiplayer component gets generated, its archetype properties become accessible in the O3DE Editor, via the component menu. A multiplayer component may have none or an infinite number of archetype properties. 
+The `ArchetypeProperty` tag defines a property that you can configure only at edit time. When a multiplayer component gets generated, its archetype properties become accessible in the O3DE Editor, via the component menu. A multiplayer component may have none or an infinite number of archetype properties.
 
 | Property | Description | Values |
 | - | - | - |
