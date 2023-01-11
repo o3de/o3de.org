@@ -25,8 +25,8 @@ Feel like having a chat? Check out our #SIG-UX-UI channel on [Discord](https://{
 | Topic | Description |
 | --- | --- |
 | [O3DE's Branding Guidelines](branding-guidelines) | An overview of O3DE's branding guidelines, where you can download the logo assets, read about the recommended guidance for brand application, and review the details on our accepted brand colors.|
-| [O3DE UI Component Development Guidelines](ux-patterns/component-card/overview) | An overview of O3DE UI component development and the custom Qt widget library. |
-| [O3DE's Message Guidelines](ux-patterns/error/overview) | Reference and best practices for O3DE's UI message components, where you can find specifications, examples, and best practices for different message types, including toasts and dialogs.|
+| [O3DE UI Component Development Guidelines](ux-patterns/component-card) | An overview of O3DE UI component development and the custom Qt widget library. |
+| [O3DE's Message Guidelines](ux-patterns/error) | Reference and best practices for O3DE's UI message components, where you can find specifications, examples, and best practices for different message types, including toasts and dialogs.|
 | [O3DE Qt Control Gallery Tool](uidev-control-gallery/) | A tool included with O3DE that demonstrates the custom Qt widget library in action. Also includes sample code related to each component. |
 | [O3DE UI Component Library](component-library/) | An introduction to each UI component in O3DE and guidelines for their usage. |
 | [O3DE UI Icon Assets](icon-assets/) | A library of icon assets used in the O3DE development environment. |
