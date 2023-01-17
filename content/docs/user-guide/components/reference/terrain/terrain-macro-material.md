@@ -78,7 +78,7 @@ This structure is used when sending out information about the macro material set
 
 ## TerrainMacroMaterialRequestBus
 
-The `TerrainMacroMaterialRequestBus` is an internal system bus that is only intended for communication between the terrain rendering and editing systems and the **Terrain Macro Material** component. Other systems generally do not need to use this EBus since nothing outside the terrain system should need any information from the individual component instances. However, if a use case arises, the following request functions on the `TerrainMacroMaterialRequestBus` EBus interface can be used to query individual **Terrain Macro Material** components.
+The `TerrainMacroMaterialRequestBus` is an internal system bus that is only intended for communication between the terrain rendering and editing systems and the Terrain Macro Material component. Other systems generally do not need to use this EBus since nothing outside the terrain system should need any information from the individual component instances. However, if a use case arises, the following request functions on the `TerrainMacroMaterialRequestBus` EBus interface can be used to query individual Terrain Macro Material components.
 
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
