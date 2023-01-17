@@ -255,10 +255,15 @@ weight: 600
  # output: (list of strings) of type names
  'FindComponentTypeNames'
  
- # Returns the full list of names for all components that can be created with the EditorComponent API
- # input: N/A
+ # Returns the full list of names for all game components that can be created with the EditorComponent API
+ # input: entity.EntityType().Game
  # output: (list of strings) of the known component type names
- 'BuildComponentTypeNameList'
+ 'BuildComponentTypeNameListByEntityType'
+
+ # Returns the full list of names for all level components that can be created with the EditorComponent API
+ # input: entity.EntityType().Level
+ # output: (list of strings) of the known component type names
+ 'BuildComponentTypeNameListByEntityType'
  ```
  
  **Example usage**:
@@ -266,9 +271,12 @@ weight: 600
  ```python
  import azlmbr.bus as bus
  
- # Generate list of component type names
- componentList = azlmbr.editor.EditorComponentAPIBus(bus.Broadcast, 'BuildComponentTypeNameList')
+ # Generate list of game component type names
+ componentList = editor.EditorComponentAPIBus(bus.Broadcast, 'BuildComponentTypeNameListByEntityType', entity.EntityType().Game)
  
+ # Generate list of level component type names
+ componentList = editor.EditorComponentAPIBus(bus.Broadcast, 'BuildComponentTypeNameListByEntityType', entity.EntityType().Level)
+
  # Get component types for 'Mesh' and 'Comment'
  typeIdList = azlmbr.editor.EditorComponentAPIBus(bus.Broadcast, 'FindComponentTypeIds', ["Mesh", "Comment"])
  
