@@ -21,37 +21,35 @@ The following section explains how to generate layers in Photoshop that contain 
 
 ### Tiling images
 
-If you are working with tiling images, you will want to use the following steps in order to make sure that both the low pass and high pass will continue to properly tile after the frequency splitting happens:
+For tiling images, use the following steps before separating low and high frequencies to ensure that both the low pass and high pass tile properly:
 
-* Select All
-* Edit > Define Pattern ...
-  * Save the base image as a pattern
-* Image > Canvas Size
-  * Width/Height 300%
-* Edit > Fill ...
-  * Contents: Patterns
-  * Custom Pattern: (select the pattern you made previously from the base image)
-  * Note: This fills the image with the pattern. Consider it a 3x3 tiled version of your image, so we can work on the center tile.
-* Now repeat the steps above for splitting the image frequencies
-* Image > Canvas Size
-  * Width/Height: 33.33%, or the <original image size> in pixels
+1. Select the base image
+1. Choose  **Edit** > **Define Pattern...**
+1. Save the selected base image as a pattern
+1. Choose  **Image** > **Canvas Size...**
+1. In the Canvas Size dialog, set **Width** and  **Height** to 300%
+1. Create a 3x3 tiled image. Choose **Edit** > **Fill...** In the Fill dialog do the following:
+    * Set **Contents** to Patterns
+    * Choose **Custom Pattern** and select the pattern you made from the base image in step 3.
+1. Perform the previous steps for [Generating low and high pass](#generating-low-and-high-pass) layers
+1. Choose **Image** > **Canvas Size...**
+1. In the Canvas Size dialog set **Width** and **Height** to 33.33%, or the original image size in pixels to crop the image to the center tile.
 
-These steps allow the gaussian blur to take into account the wrapped tiling along the adjacent borders.
-Now, when the low pass (blur) is calculated, the pixel information wraps. Then, when it's subtracted and cropped both the low pass and the high pass will still tile properly.
+The preceding steps allow the Gaussian blur to take into account the wrapped tiling along the adjacent borders. When the low pass (blur) is calculated, the pixel information wraps. When it's subtracted and cropped, both the low pass and the high pass tile properly.
 
 ## Blending
 
-Next, we will combine (blend) the low pass (Layer 2) and the high pass (Layer 3).
-* In Photoshop, set the layer blend mode of the high pass to Linear light
+Next, you'll combine (blend) the low pass (Layer 2) and the high pass (Layer 3).
+
+In Photoshop, set the layer blend mode of the high pass to Linear light.
 
 ![Photoshop: Set blend mode of high pass to Linear light](/images/learning-guide/tutorials/environments/detail_macro_materials/ps_linear_light.png)
 
-As you can see in the screenshot, we've restored the original image fidelity by properly blending the low + high pass frequencies back together.
+In the preceding screenshot, the original image fidelity is restored by properly blending the low and high pass frequencies together.
 
 ## Downsampled low pass
 
-With the blending of low pass + high pass, we can actually downsample the low pass image and still achieve a final blended image with little perceptible loss in quality.
-We will downsample the low pass to a much smaller image, then reconstruct the image from two maps of different resolutions. Theoretically, we will loose some information which may decrease aspects like the fidelity, quality and overall data integrity of the image, but we can experiment with the levels to see where the quality of the final image starts to breakdown.
+With the blending of low pass and high pass, you can downsample the low pass image and still achieve a final blended image with little perceptible loss in quality. The following example downsamples the low pass to a much smaller image, then reconstructs the image from two maps of different resolutions. Some information is lost, which might decrease aspects such as fidelity, quality, and overall data integrity of the image, but you can experiment with the levels to find an acceptable result.
 
 | <div style="width:160px">Original Low Pass<br>(1024 x 1024 pixels)</div> | <div style="width:160px">Downsampled<br>(64 x 64 pixels)</div> | <div style="width:160px">Interpolated<br>(Bilinear)</div> | <div style="width:160px">Reconstructed<br>(Interpolated + Original High Pass)</div> |<div style="width:160px">Difference<br>(Original - Reconstructed)</div> |
 |-|-|-|-|-|
@@ -65,16 +63,16 @@ Let's try another downsampled even further.
 |-|-|-|-|-|
 |{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/original_low_pass.png" width="150" alt="Original Low Pass (1024 x 1024 pixels)" >}}|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/downsampled_16.png" width="150" alt="Downsampled (16 x 16 pixels)" >}}|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/interpolated_16.png" width="150" alt="Interpolated (Bilinear)" >}}|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/blended_16.png" width="150" alt="Interpolated + Original High Pass (Reconstructed blend)" >}}|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/difference_16.png" width="150" alt="Difference (Original minus Reconstructed blend)" >}}|
 
-At this level of downsampling, we are starting to see a perceptible difference in integrity, and the quality is arguably diminished. However, the fidelity is still good enough to be useful for our terrain detail mapping use case.
+At this level of downsampling, there is a perceptible difference in integrity, and the quality is arguably diminished. However, the fidelity is still good enough to be useful for terrain detail mapping use cases.
 
 ## Macro material low pass
 
-We can use the small downsampled low pass image in texturing for our Macro material. There are a several options for this use case:
+You can use the small downsampled low pass image in texturing for our Macro material. There are a several options for this use case:
 * Use the downsampled low pass image as a texture input for texturing
 * Use the downsampled low pass to generate a color ramp (and a matching height map), which can be used as input in programs like World Machine to use in colorization
 * Use the downsampled low pass as a color swatch for painting terrain
 
-Then with the proper blending and syncing the repeat, we can augment this with the the high pass detail texture and result in something similar to our original image up close.
+Then with the proper blending and syncing the repeat, you can augment this with the the high pass detail texture and result in something similar to the original image up close.
 
 ## High pass detail map
 
