@@ -6,7 +6,7 @@ weight: 300
 toc: true
 ---
 
-This tutorial explains how to use frequency separation to create textures for terrain in **Open 3D Engine (O3DE)**. This is an image technique which is often used in retouching photos. However, it can also be a useful technique to understand and apply technically to the creation of textures and/or shading techniques.
+This tutorial helps us understand the importance of Frequency Separation (FS), which is a technique used in image editing to separate the high-frequency details, such as texture and blemishes, from the low-frequency information, such as color and tone. This allows the editor to make adjustments to these different elements separately, allowing for more precise and targeted edits. For example, the Image Author could use frequency separation to smooth out the skin tone of a portrait without losing the texture of the skin, or to remove blemishes without affecting the overall skin tone. The technique involves creating two layers in the image, one for the high frequencies and one for the low frequencies, and then using blurring and other techniques to separate the two layers. Frequency separation can be a useful tool in a variety of editing situations, including portrait retouching, product photography, and landscape editing.
 
 ## Generating low and high pass
 
