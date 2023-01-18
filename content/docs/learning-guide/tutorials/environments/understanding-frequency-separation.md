@@ -13,7 +13,7 @@ This tutorial helps us understand the importance of Frequency Separation (FS), w
 Terrain detail maps can be derived from running a high pass filter on an image. Starting from an image with lots of color and detail, we are going to separate out the low frequency and high frequency data.
 Separating low/high frequency data from an image is a manual process in an image editor, such as Photoshop.
 
-Here is the original image:
+The following section explains how to generate layers in Photoshop that contain low and high pass filters of a base image:
 | Original (Layer 1) | Low pass filter (Layer 2) | High pass filter (Layer 3) |
 |-|-|-|
 |{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/original_image.png" width="250" alt="Original (Layer 1)" >}}|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/original_low_pass.png" width="250" alt="Low pass filter (Layer 2)" >}}|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/original_high_pass.png" width="250" alt="High pass filter (Layer 3)" >}}|
