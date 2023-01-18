@@ -47,7 +47,7 @@ There are several sampling types to choose from. Choosing the best sampling type
 
 ### Creating a new image
 
-To create a new image, press the **Create New Image...** button. You will be prompted for an image width and height in pixels, then for a location to save the image. If the image is saved into a source asset directory that is used by the project, the Image Gradient will automatically populate the **Image Asset** field with the saved image.
+To create a new image, press the **Create New Image...** button. You will be prompted for an image width and height in pixels, then for a location to save the image. If the image is saved into a [source asset directory](/docs/user-guide/assets/pipeline/scan-directories/) that is used by the project, the Image Gradient will automatically populate the **Image Asset** field with the saved image.
 
 {{< important >}}
 The image name should end in `_gsi` (ex: `image_gsi.tif`). This will ensure that the image is processed by the Asset Processor as a Gradient Signal Image (gsi) asset which will leave the image data uncompressed.

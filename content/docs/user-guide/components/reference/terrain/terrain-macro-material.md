@@ -47,7 +47,7 @@ If two **Terrain Macro Material** volumes overlap, the **Priority** field dictat
 
 ### Creating a new image
 
-To create a new image, press the **Create New Image...** button. You will be prompted for an image width and height in pixels, then for a location to save the image. If the image is saved into a source asset directory that is used by the project, the Terrain Macro Material will automatically populate the **Color Texture** field with the saved image.
+To create a new image, press the **Create New Image...** button. You will be prompted for an image width and height in pixels, then for a location to save the image. If the image is saved into a [source asset directory](/docs/user-guide/assets/pipeline/scan-directories/) that is used by the project, the Terrain Macro Material will automatically populate the **Color Texture** field with the saved image.
 
 ## Editing an image
 
