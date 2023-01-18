@@ -91,18 +91,20 @@ It can be okay to include negative assertions when there is also at least one po
 
 ### Disabling and skipping tests
 
-Ideally, all automated test failures prompt immediately fixing the broken feature (or updating the test when underlying expectations have changed). However, sometimes a tradeoff must be made to break a feature while enabling other functionality. In a case where functionality is known to be broken, automated tests can be temporarily "skipped" or disabled.
+Ideally, all automated test failures prompt immediately fixing the broken feature, or updating the test when underlying expectations have changed. However, sometimes a tradeoff must be made that breaks a feature to enable other functionality. In a case where functionality is known to be broken, automated tests can be temporarily "skipped" or disabled.
 
-Avoid immediately disabling tests when you see a failure. First consider what action the failure blocks, and why all contributors ignoring failure would be less risky. Whenever a test provided with O3DE gets disabled, please [cut an issue](https://github.com/o3de/o3de/issues/new/choose) to track fixing the feature and re-enabling the test.
+Avoid immediately disabling tests when you see a failure. First consider what action the failure blocks, and how critical it is to unblock. Compare that with the risk tradeoff from all contributors ignoring all future bugs the test could catch.
+
+Whenever a test provided with O3DE gets disabled, please [create an issue](https://github.com/o3de/o3de/issues/new/choose) to track fixing the feature and re-enabling the test.
 
 ## Practices to remember
 
 ### Insanity checks
 
-Ensure a new test is configured to run and report failures by temporarily editing the production code. Intentionally break the code in one way the test should detect, then run the test suite. If no failure occurs, investigate why!
+Ensure a new test is configured to run and report failures by temporarily editing the production code. Intentionally break the code in one way that the test should detect, and then run the test suite. If no failure occurs, investigate why!
 
 {{< caution >}}
-Immediately revert any intentionally broken code after verifying failure can be detected.
+Immediately revert any intentionally broken code, after verifying failure can be detected by the test.
 {{< /caution >}}
 
 ### Floating-point assertions
@@ -162,8 +164,7 @@ int CalculateTestSquare( const int number)
 
 TEST(MathTests, FastSquare_Integer_Squared1)
 {
-    // despite the name suggesting this verifies the math of computing a square
-    // this test trusts the function is correct, and only proves an identity property
+    // Assumes the function is correct, thus only proves an identity property
     int tenSquared = Math::FastSquare(10);
     int result = Math::FastSquare(10);
     ASSERT_EQ(result, tenSquared);
@@ -171,8 +172,8 @@ TEST(MathTests, FastSquare_Integer_Squared1)
 
 TEST(MathTests, FastSquare_Integer_Squared2)
 {
-    // relies on a duplicate implementation of the production code which contains
-    // the same bug, and only helps prove the production bug was not changed
+    // Relies on a duplicate implementation of the production code that contains
+    // the same bug, thus only proves the production bug was not changed
     int tenSquared = CalculateTestSquare(10);
     int result = Math::FastSquare(10);
     ASSERT_EQ(result, tenSquared);
@@ -180,15 +181,15 @@ TEST(MathTests, FastSquare_Integer_Squared2)
 
 TEST(MathTests, FastSquare_Integer_Squared3)
 {
-    // uses incorrectly computed squares from another file, and only helps
-    // prove the production bug was not changed
+    // Uses incorrectly computed squares from another file, thus only
+    // proves the production bug was not changed
     int result = Math::FastSquare(10);
     ASSERT_EQ(result, pcs_ten);
 }
 
 TEST(MathTests, FastSquare_Integer_Squared4)
 {
-    // directly states that 10^2 = 20, which is incorrect but also easy to notice
+    // directly states that 10^2 = 20, which is incorrect but also *easy to notice*
     int tenSquared = 20;
     int result = FastSquare(10);
     ASSERT_EQ(result, tenSquared);
@@ -196,7 +197,7 @@ TEST(MathTests, FastSquare_Integer_Squared4)
 
 TEST(MathTests, FastSquare_Integer_Squared5)
 {
-    // tersely verifies 10^2 results in 20, which is incorrect but should be easy to notice
+    // tersely verifies 10^2 results in 20, which is incorrect but should be *easy to notice*
     ASSERT_EQ(FastSquare(10), 20);
 }
 ```
@@ -213,7 +214,13 @@ The most straightforward automated tests are unit tests. Unit tests have a very 
 
 The purpose of a unit test is to be small, specific, and fast. They are easy to run, and when they fail, it tends to be easy to determine why. This ease of use primarily comes from the "one call" aspect. Different interactions are treated as additional tests rather than different steps within the same test with a more extended workflow. Think of a unit test as creating an extremely simple robot that quickly reports if one specific behavior breaks. Each robot allows the author to reduce expending mental resources worrying about a design concern. It also documents and monitors that concern for anyone unfamiliar with the area. This allows developers to focus on changing production code while trusting their robots will efficiently help them detect and debug issues as they get introduced. Consider unit tests when writing code intended to exist for more than a week.
 
-A good pattern to follow when writing unit tests is ***Arrange, Act, Assert***. First set up your environmental state (Arrange), then call the function under test (Act), and finally verify the expected side effects occurred (Assert). This simple structure leads to short, focused tests which are easy to understand. Below is a simple example in C++:
+A good pattern to follow when writing unit tests is ***Arrange, Act, Assert***:
+
+1. Set up your environmental state (Arrange)
+2. Call the function under test (Act)
+3. Verify the expected side effects occurred (Assert)
+
+This simple structure leads to short, focused tests which are easy to understand. Below is a simple example in C++:
 
 ```cpp
 TEST(VectorTests, PushBack_ContainsTwoItems_ThreeTotalItems)
@@ -233,7 +240,7 @@ def test_ListAppend_ContainsTwoItems_ThreeTotalItems(self):
     assert 3 == len(testList)  # Assert
 ```
 
-Note that neither of the preceding tests would be good candidates to include with O3DE, as they test the behavior of non-O3DE libraries (STL containers and Python built-ins). External dependencies should have their own automated tests which live in their own projects. When writing a unit test, focus on one specific behavior of *your* code. Here are real-world examples of O3DE's unit tests in [C++](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/Tests/Geometry2DUtils.cpp) and [Python](https://github.com/o3de/o3de/blob/development/Tools/LyTestTools/tests/unit/test_codeowners_hint.py). These tests take milliseconds to verify automatically!
+Note that neither of the preceding tests are good candidates to include with O3DE, as they test the behavior of non-O3DE libraries (STL containers and Python built-ins). External dependencies should have their own automated tests that live in their own projects. When writing a unit test, focus on one specific behavior of *your* code. Here are real-world examples of O3DE's unit tests in [C++](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/Tests/Geometry2DUtils.cpp) and [Python](https://github.com/o3de/o3de/blob/development/Tools/LyTestTools/tests/unit/test_codeowners_hint.py). These tests take milliseconds to verify automatically!
 
 ### Integration tests
 
@@ -353,7 +360,7 @@ While the pattern above recommends using underscores, never start or end test na
 
 ## Test-Driven development (TDD)
 
-*Test-Driven Development* (TDD) is a software writing workflow that prompts engineers to iteratively develop code. The Red-Green-Refactor process can carve up questions such as "what should be done next?" and "is this complete?" into actionable tasks. This helps avoid getting lost in the ambiguity of software design. TDD also has the extra benefit of leaving behind tests targeting critical requirements. Repeating these three steps can help design new features:
+*Test-Driven Development* (TDD) is a software writing workflow that prompts engineers to iteratively develop code. The Red-Green-Refactor process can carve up questions such as "what should be done next?" and "is this complete?" into actionable tasks. This helps avoid getting lost in the ambiguity of software design. TDD also has the extra benefit of leaving behind tests that target critical requirements. Repeating these three steps can help design new features:
 
 1. Red: Write a new failing (unit) test for new functionality.
    * What does success look like?
@@ -366,7 +373,7 @@ While the pattern above recommends using underscores, never start or end test na
    * Taking a step back, are there any better approaches?
 
 {{< note >}}
-TDD is one small, effective tool to help with software design. It is best employed alongside other design tools, such as the [SOLID design principles](https://en.wikipedia.org/wiki/SOLID). TDD helps focus on lower-level concerns and prompts asking broader questions. However, it also assumes high-level requirements gathering has already provided initial direction for a task.
+TDD is one small, effective tool to help with software design. It is best employed alongside other design tools, such as the [SOLID design principles](https://en.wikipedia.org/wiki/SOLID). TDD helps focus on lower-level concerns and prompts asking broader questions. However, it also assumes that high-level requirements gathering has already provided initial direction for a task.
 {{< /note >}}
 
 The primary benefit of TDD is writing code that is easy to use and maintain, plus tests to prove it functions correctly in the future. If you don't already use TDD, try it out for your next feature!
