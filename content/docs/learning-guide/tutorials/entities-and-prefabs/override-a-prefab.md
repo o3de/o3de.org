@@ -6,7 +6,7 @@ weight: 300
 toc: true
 ---
 
-When a prefab is open in [Prefab Edit Mode](/docs/learning-guide/tutorials/entities-and-prefabs/entity-and-prefab-basics#edit-a-prefab), changes to its content are automatically propagated to all instances of that prefab. Sometimes it is useful to alter a prefab instance on its own without affecting the other instances. For example, you might have multiple instances of the same car prefab in a level, but you want each car instance to be a different color. Prefab overrrides allow you to change the properties of prefab instances to make them unique.
+When a prefab is open in [Prefab Edit Mode](/docs/learning-guide/tutorials/entities-and-prefabs/entity-and-prefab-basics#edit-a-prefab), changes to its content are automatically propagated to all instances of that prefab. Sometimes it is useful to alter a prefab instance on its own without affecting the other instances. For example, you might have multiple instances of the same car prefab in a level, but you want each car instance to be a different color. Prefab overrrides allow you to change the properties and contents of prefab instances to make them unique.
 
 | O3DE Experience | Time to Complete | Feature Focus | Last Updated |
 | --- | --- | --- | --- |

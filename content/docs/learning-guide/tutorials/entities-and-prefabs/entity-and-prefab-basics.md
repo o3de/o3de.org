@@ -153,7 +153,7 @@ Use any of the following methods to enter Prefab Edit Mode:
 
 ![Edit a prefab in Prefab Edit Mode.](/images/learning-guide/tutorials/entities-and-prefabs/edit-prefab.png)
 
-In Prefab Edit Mode, O3DE Editor the prefab's contents are exposed in Entity Outliner within a blue frame. The viewport shifts to a monochromatic mode with the opened prefab rendered in full color. The toolbar above the viewport shows the path to the prefab that is open for edit. From the toolbar you can choose the **Prefab Edit Mode** list to switch the viewport render mode from monochromatic to color. When you select an entity contained in the prefab, the entity's components are displayed in Entity Inspector.
+In Prefab Edit Mode, the prefab's contents are exposed in Entity Outliner within a blue frame. The viewport shifts to a monochromatic mode with the opened prefab rendered in full color. The toolbar above the viewport shows the path to the prefab that is open for edit. From the toolbar you can choose the **Prefab Edit Mode** list to switch the viewport render mode from monochromatic to color. When you select an entity contained in the prefab, the entity's components are displayed in Entity Inspector.
 
 {{< image-width "/images/learning-guide/tutorials/entities-and-prefabs/prefab-focus-mode.png" "1200" "A prefab opened for editing in Prefab Edit Mode" >}}
 
@@ -174,7 +174,6 @@ Use any of the following methods to exit Prefab Edit Mode:
 * **Double-click** the prefab in Entity Outliner.
 * **Right-click** the prefab in Entity Outliner and choose **Close Prefab** from the context menu.
 * Press **-**.
-* **Click** the **X** icon in the upper-right corner of the blue Prefab Edit Mode frame that surrounds the viewport.
 
 ### Prefab Edit Mode and nested prefabs
 
