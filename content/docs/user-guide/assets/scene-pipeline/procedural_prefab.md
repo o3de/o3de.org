@@ -98,7 +98,7 @@ Users cannot add entities in the Entity Outliner nor components in the Entity In
 
 ### Save Off Procedural Prefab as Authored Prefab
 
-The Editor can save out a procedural prefab asset as an authored prefab source file as well. This allows Editor users to tweak a procedural prefab asset. The context menu item "Save as Prefab..." for the `(Procedural Prefab)` asset will prompt for a file name to save as an authored Prefab file.
+The Editor can save out a procedural prefab asset as an authored prefab source file as well. This allows Editor users to tweak a procedural prefab asset. The context menu item **Save as Prefab...** for the `(Procedural Prefab)` asset will prompt for a file name to save as an authored Prefab file.
 
 This will allow designers to tweak the entity layout, components, and properties of the prefab template
 
