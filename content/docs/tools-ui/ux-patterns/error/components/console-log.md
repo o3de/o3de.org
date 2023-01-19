@@ -1,7 +1,7 @@
 ---
 linktitle: Console Log
 title: Error Messages in Console Log
-description: Learn how to design Error/Warning/Success/Information messages in console logs using the BlueJay Design System (BJDS) in Open 3D Engine (O3DE).
+description: Learn how to design Error/Warning/Success/Information messages in console logs using the Blue Jay Design System (BJDS) in Open 3D Engine (O3DE).
 weight: 100
 toc: true
 ---

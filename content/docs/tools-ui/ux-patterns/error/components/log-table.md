@@ -1,7 +1,7 @@
 ---
 linktitle: Log Tables
 title: Error Messages in Log Tables
-description: Learn how to design Error/Warning/Success/Information messages in log tables using the BlueJay Design System (BJDS) in Open 3D Engine (O3DE).
+description: Learn how to design Error/Warning/Success/Information messages in log tables using the Blue Jay Design System (BJDS) in Open 3D Engine (O3DE).
 weight: 400
 toc: true
 ---
