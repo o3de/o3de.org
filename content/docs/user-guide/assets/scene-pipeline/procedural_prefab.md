@@ -6,7 +6,7 @@ weight: 400
 toc: true
 ---
 
-The procedural prefab feature allows technical pipeline developers to write out O3DE native entity-component scene descriptions in the form of prefab assets. The developers can write Python scripts to parse imported source scenes so that they can write out any number of prefab assets. Before this feature was added to O3DE, each mesh data node would need to be broken out inside the O3DE Editor. The procedural prefab workflow allows the artist to work longer in their digital content creation (DCC) tool such as Maya and Blender.
+With procedural prefabs, you can write out **Open 3D Engine (O3DE)** native entity-component scene descriptions from source scene files in the form of prefab assets. You can write Python scripts that parse imported source scenes and write out any number of prefab assets. With procedural prefabs, some of the process for building prefabs is shifted back into digital content creation (DCC) tools such as Maya and Blender, streamlining the asset creation workflow for artists and designers.
 
 The workflow produces procedural prefabs using Python scripts inside the scene pipeline or when when the Prefab gem generates a default procedural prefab.
 
