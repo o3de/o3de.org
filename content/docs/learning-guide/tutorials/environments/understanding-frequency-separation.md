@@ -85,6 +85,22 @@ Here are all three reconstructions again side-by-side, each is the final reconst
 |-|-|-|
 |{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/results_0.png" >}}|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/results_1.png" >}}|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/results_2.png" >}}|
 
+## Color Alteration
+
+This is a pretty flexible technique, as the high pass frequency can be applied across a wide range of shifts in the low pass base colors and still arrive at decent looking results. Here are a few extreme examples:
+
+| <div style="width:160px">Original Low Pass<br>(1024 x 1024 pixels)</div> | <div style="width:160px">Downsampled<br>(32 x 32 pixels)</div> | <div style="width:160px">Interpolated<br>(Bilinear)</div> | <div style="width:160px">Reconstructed<br>(Interpolated + Original High Pass)</div> |
+|-|-|-|-|
+|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/color_shift_0.png" width="150" >}}|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/color_shift_1.png" width="150" >}}|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/color_shift_2.png" width="150" >}}|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/color_shift_3.png" width="150" >}}|
+
+And in this next version, you are simple going to hue shift our original low pass colors.
+
+| <div style="width:160px">Original Low Pass<br>(1024 x 1024 pixels)</div> | <div style="width:160px">Downsampled<br>(32 x 32 pixels)</div> | <div style="width:160px">Interpolated<br>(Bilinear)</div> | <div style="width:160px">Reconstructed<br>(Interpolated + Original High Pass)</div> |
+|-|-|-|-|
+|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/hue_shift_0.png" width="150" >}}|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/hue_shift_1.png" width="150" >}}|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/hue_shift_2.png" width="150" >}}|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/hue_shift_3.png" width="150" >}}|
+
+As you can see, you can make pretty abrupt and wild changes to the base color, and still arrive at visually interesting results!
+
 ## Macro material low pass
 
 You can use the small downsampled low pass image in texturing for our Macro material. There are a several options for this use case:
