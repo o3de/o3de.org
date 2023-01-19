@@ -90,7 +90,7 @@ A Procedural Prefab can be added to an authored Prefab instance in the Entity Ou
 
 ![Entity Outliner Authored Prefab](/images/user-guide/assets/scene-pipeline/procprefab_ug_pp_eo_authored.png)
 
-A user uses the context menu "Instantiate Procedural Prefab..." option to add the Procedural Prefab patch into the authored Prefab.
+A user uses the context menu **Instantiate Procedural Prefab...** option to add the Procedural Prefab patch into the authored Prefab.
 
 ![Entity Outliner Procedural Prefab Inside](/images/user-guide/assets/scene-pipeline/procprefab_ug_pp_eo_inst.png)
 
