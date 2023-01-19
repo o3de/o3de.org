@@ -1,7 +1,7 @@
 ---
 linkTitle: Procedural Prefab
 title: Procedural Prefab
-description: A feature to create scipt driven prefab assets
+description: With procedural prefabs, you can use Python script to create prefab assets from scene source files for Open 3D Engine (O3DE).
 weight: 400
 toc: true
 ---
