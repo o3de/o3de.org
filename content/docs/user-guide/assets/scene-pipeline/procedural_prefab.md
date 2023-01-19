@@ -24,7 +24,7 @@ These procedural prefab assets are treated as read only prefabs inside the Edito
 
 ## Producing procedural prefabs
 
-The Prefab gem needs to be enabled by the project to gain the procedural prefab feature. Once the gem is enable then all source scene files will start producing a default procedural prefab and the Python scripts will have the ability to produce prefabs.
+The Prefab gem needs to be enabled by the project to gain the procedural prefab feature. Once the gem is enabled, all source scene files produce a default procedural prefab and the Python scripts will have the ability to produce prefabs.
 
 {{< note >}}
 It is possible to turn off the default procedural prefab by setting the registry key "/O3DE/Preferences/Prefabs/UseProceduralPrefabs" to False.
