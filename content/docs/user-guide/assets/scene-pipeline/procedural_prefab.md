@@ -112,7 +112,7 @@ The authored Prefab will get no updates from the procedural prefab asset once be
 
 Sometimes teams have a reason to turn off the default procedural prefab for a source scene file such as when a script is assigned to create a Prefab Group.
 
-It is possible prevent generating a default procedural prefab using the `Scene Settings` dialog. In the Asset Browser select the source scene file, use the context menu, and select the `Edit Scene Settings...` option.
+It is possible prevent generating a default procedural prefab using the **Scene Settings** dialog. In the Asset Browser select the source scene file, use the context menu, and select the **Edit Scene Settings...** option.
 
 ![Edit Settings](/images/user-guide/assets/scene-pipeline/procprefab_ug_pp_es_toggle.png)
 
