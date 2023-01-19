@@ -94,7 +94,7 @@ A user uses the context menu **Instantiate Procedural Prefab...** option to add 
 
 ![Entity Outliner Procedural Prefab Inside](/images/user-guide/assets/scene-pipeline/procprefab_ug_pp_eo_inst.png)
 
-Users cannot add entities in the Entity Outliner nor components in the Entity Inspector to any Procedural Prefab instances. The Asset Processor might re-export the procedural prefab templates at any time which will re-write the .procprefab file outside the Editor. The Procedural Prefab templates are backed by the source scene files.
+Users cannot add entities in the Entity Outliner nor components in the Entity Inspector to any Procedural Prefab instances. The Asset Processor might re-export the procedural prefab templates at any time which will re-write the `.procprefab` file outside the Editor. The Procedural Prefab templates are backed by the source scene files.
 
 ### Save Off Procedural Prefab as Authored Prefab
 
