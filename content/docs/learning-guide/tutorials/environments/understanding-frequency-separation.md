@@ -77,6 +77,14 @@ Let's try another downsampled even further.
 
 At this level of downsampling, there is a perceptible difference in integrity, and the quality is arguably diminished. However, the fidelity is still good enough to be useful for terrain detail mapping use cases.
 
+## Results
+
+Here are all three reconstructions again side-by-side, each is the final reconstructed resolution of 1024 pixels, only the low-frequency low-pass was altered. It's quite hard to visually pick out the difference, but if you look closely at the far-right version that had the most manipulation has some reduced contrast that was lost in some areas.
+
+| Low Pass: 1024<br>High Pass: 1024</div> | Low Pass: 64 (Bilinear upsample)<br>High Pass: 1024</div> | Low Pass: 16 (Bilinear upsample)<br>High Pass: 1024</div> |
+|-|-|-|
+|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/results_0.png" >}}|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/results_1.png" >}}|{{< image-width src="/images/learning-guide/tutorials/environments/detail_macro_materials/results_2.png" >}}|
+
 ## Macro material low pass
 
 You can use the small downsampled low pass image in texturing for our Macro material. There are a several options for this use case:
