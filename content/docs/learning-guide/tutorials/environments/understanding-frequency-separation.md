@@ -13,6 +13,18 @@ This tutorial helps us understand the importance of Frequency Separation (FS), w
 Terrain detail maps can be derived from running a high pass filter on an image. Starting from an image with lots of color and detail, we are going to separate out the low frequency and high frequency data.
 Separating low/high frequency data from an image is a manual process in an image editor, such as Photoshop.
 
+You can generate a basic high-pass texture a number of ways:
+1. Use a High-Pass Filter in your Image Editor:
+    * Adobe® Photoshop® software: menubar > filter > other > High Pass
+    * Gimp: by using Filters->Enhance->High Pass, with Std Dev=10, Contrast=1.0.
+    * Krita: you can use the method outlined in this document
+1. Or a similar High-Pass filter in your material authoring app, such as “Adobe®  Substance3D Designer® software:
+    * Google searching "substance high-pass" or "substance luminance highpass" will get you to those help pages
+
+This document describes a non-filter approach that has more flexibility, which can be used to separate an image into two textures:
+1. A high-frequency variation texture that is suitable for use in a Terrain Detail Material.
+1. A low-frequency color map that can be used in Terrain Macro Color workflows.
+
 The following section explains how to generate layers in Photoshop that contain low and high pass filters of a base image:
 | <div style="width:250px">Original (Layer 1)</div> | <div style="width:250px">Low pass filter (Layer 2)</div> | <div style="width:250px">High pass filter (Layer 3)</div> |
 | :-- | :-- | :-- |
