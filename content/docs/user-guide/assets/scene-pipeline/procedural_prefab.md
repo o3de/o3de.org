@@ -116,7 +116,7 @@ It is possible prevent generating a default procedural prefab using the **Scene 
 
 ![Edit Settings](/images/user-guide/assets/scene-pipeline/procprefab_ug_pp_es_toggle.png)
 
-To disable the procedural prefab generation, set the toggle for "Create default procedural prefab?" to the off value.
+To disable the procedural prefab generation, set the toggle for **Create default procedural prefab?** to the off value.
 
 ## Basic guidelines for default procedural prefab
 
