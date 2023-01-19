@@ -18,7 +18,7 @@ A prefab is a prefabricated description of entities, components, and properties 
 
 More information about the [Prefab](docs/user-guide/interactivity/prefabs) feature.
 
-It is also possible to define a procedure to produce a product prefab asset. Python scripts are the most typical way to define procedural prefab product assets. This feature give the ability to maintain the prefab template inside a source art scene file such as FBX or glTF. The O3DE content creators are free to instantiate these procedural prefabs in a level and are automatically updated when the source scene is updated.
+It is also possible to define a procedure to produce a product prefab asset. Python scripts are the most typical way to define procedural prefab product assets. This feature gives the ability to maintain the prefab template inside a source art scene file such as FBX or glTF. Content creators are free to instantiate these procedural prefabs in a level and they are automatically updated when the source scene is updated.
 
 These procedural prefab assets are treated as read only prefabs inside the Editor since they are created by the definition from the original source scene file plus the script that produced the prefab. In fact, procedural prefabs are placed in the asset cache so they should not be changed directly.
 
