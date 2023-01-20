@@ -26,7 +26,7 @@
           // You can customize your searchable fields using any .Page parameters
           "title": "{{ .Title  }}",
           "content": {{ .Content | plainify }}, // Strip out HTML tags
-          "url": "{{ .Permalink }}"
+          "url": "{{ .RelPermalink }}"
       },
       {{ end }}
     }

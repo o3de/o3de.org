@@ -72,3 +72,10 @@ The CMake [`FetchContent` docs](https://cmake.org/cmake/help/latest/module/Fetch
 There's also another intro CMake video titled ['CMake for Dummies'](https://youtu.be/7W4Q-XLnMaA). (_The video quality isn't the best but it does a great job covering the basics of using CMake_.)
   
 _Disclaimer: The views expressed here are those of the individual author and do not represent those of the Open 3D Foundation, Open 3D Engine or individual's respective company._
+
+### Check out the other parts of the series:
+
+* [CMake Essentials Series - Part 1](/blog/posts/cmake-essentials-series-part-1/)
+* [CMake Essentials Series - Part 2](/blog/posts/cmake-essentials-series-part-2/)
+* [CMake Essentials Series - Part 3](/blog/posts/cmake-essentials-series-part-3/)
+* [CMake Essentials Series - Part 4](/blog/posts/cmake-essentials-series-part-4/)

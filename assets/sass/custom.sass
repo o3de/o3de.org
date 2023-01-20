@@ -460,6 +460,11 @@ code
     @include media-breakpoint-down(lg)
       display: block
 
+// layouts/partials/navbar.html build-info
+.build-info-text
+  margin-bottom: 0
+  text-align: center
+
 // layouts/partials/hero.html
 
 // banner
@@ -1526,9 +1531,9 @@ $os-selector-mobile-height: 48px
 
   @include media-breakpoint-up(xl)
     position: sticky
-    top: 4rem
+    top: 4rem // this is recalculated in app.js updateSidebarAttributes() function
     z-index: 1000
-    height: calc(100vh - 4rem)
+    height: calc(100vh - 4rem) // this is recalculated in app.js updateSidebarAttributes() function
     flex: 0 1 320px
     order: 0
     box-sizing: border-box
@@ -1581,7 +1586,20 @@ body.docs-mobile-menu-open .docs-sidebar
       transform: scale(.9)
 
 
-// layouts/section-nav.html 
+// layouts/section-nav.html version-switcher
+
+.version-switcher
+  font-size: 0.9rem
+
+  select
+    option
+      font-size: 0.8rem
+
+    option.selectedVersion
+      color: $o3de-blue
+      font-weight: bold
+
+// layouts/section-nav.html nav
 
 nav.docs-nav > ul > li:not(.currentAncestorCategory)
     @include media-breakpoint-up(xl)

@@ -20,10 +20,10 @@ Once you have the prerequisites finished, you should have everything for testing
 ~/python/python -m pytest <path_to_test_file> --build-directory <path_to_build_output>
 ```
 
-Open 3D Engine ships with a sample test that demonstrates the use of `LyTestTools`, located in the `Tools/LyTestTools/tests/example/tests/test_system_example.py` file. After compiling O3DE, you can run the sample test against your build output with the following command (run from your O3DE directory):
+Open 3D Engine ships with a sample test that demonstrates the use of `LyTestTools`, located in the `Tools/LyTestTools/tests/integ/sanity_tests.py` file. After compiling O3DE, you can run the sample test against your build output with the following command (run from your O3DE directory):
 
 ```shell
-python -m pytest Tools/LyTestTools/tests/example/tests/test_system_example.py --build-directory <cmake-build-directory>
+python -m pytest Tools/LyTestTools/tests/integ/sanity_tests.py --build-directory <cmake-build-directory>
 ```
 
 ## More Information

@@ -24,7 +24,7 @@ The AWS GameLift Gem provides both [C++ APIs](cpp-api/) and [scripting](scriptin
 
 ## Integrate dedicated server
 
-To support the optional manual backfill, you server should implement the following the use cases:
+To support the optional manual backfill, your server should implement the following the use cases:
 - `StartMatchBackfill`
 - `StopMatchBackfill`
 - `OnUpdateSessionBegin`
@@ -33,10 +33,3 @@ To support the optional manual backfill, you server should implement the followi
 ## Related information
 
 - [Preparing games for FlexMatch](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-integration-intro.html)
-
-
----
-
-Previous topic: [FlexMatch Support](/docs/user-guide/gems/reference/aws/aws-gamelift/flexmatch)
-
-Next topic: [FlexMatch C++ API](cpp-api/)

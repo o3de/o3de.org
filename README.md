@@ -71,6 +71,18 @@ You can download this repository or clone it onto your local machine. Cloning th
     Press Ctrl+C to stop
     ```
 
+    The above command starts a server on `localhost` using an available port (usually `1313`). The command prints the address and port in the console. You can view your server in a web browser. The server will continue to run as long as the terminal that is running the server remains open. If you need to view the site over a network connection, you can use the command below to specify a server and port.
+
+    ```shell
+    hugo server --port 44541 --bind=0.0.0.0
+    ```
+
+    Note, for **macOS** platform, you must run Hugo with the `--watch=false` switch enabled. For example:
+
+    ```bash
+    hugo server --port 44541 --bind=0.0.0.0 --watch=false
+    ```
+
 3. To view a local build of the O3DE website, open a web browser and go to http://localhost:1313/.
 
 You can now view the O3DE website on your local machine! Find the O3DE documentation under the **Learn** section of the O3DE website.

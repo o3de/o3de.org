@@ -88,10 +88,3 @@ To test the local server package:
 {{< caution >}}  
 Make sure to replace `<package base folder>` with the path to the installation folder that you created earlier. 
 {{< /caution >}}
-
-
----
-
-Previous topic: [AWS GameLift Gem Local Testing](local-testing/)
-
-Next topic: [AWS GameLift Gem Build Packaging for Linux](build-packaging-for-linux/)

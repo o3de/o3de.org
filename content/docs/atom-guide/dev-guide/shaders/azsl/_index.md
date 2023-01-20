@@ -483,3 +483,66 @@ struct MyStruct
      [[pad_to(64)]] // This guarantees the sizeof(MyStruct) to be 64.
 };
 ```
+
+## Class method, late declaration member access
+
+This scenario is a limitation of the reference tracking system internal to AZSLc: the seenat [more documentation](https://github.com/o3de/o3de-azslc/wiki/Features#seenats).
+  
+```cpp
+class C
+{
+	void f()
+	{
+		a;
+	}
+	int a;
+};
+```
+with CLI switch `--dumpsym` will result in:
+```yaml
+Symbol '/C/a':
+  kind: Variable
+  references:
+  line: 7
+  type:
+    core: {name: "?int", validity: found, tclass: Scalar, underlying_scalar: int}
+    generic: <NA>
+  storage: 
+  array dim: ""
+  has sampler state: no
+```
+The field `references` is empty, which means AZSLc didn't detect that `a` line 5, is the `a` delcared line 7.
+Let's look at the swapping of declaration sites of `f` and `a`:
+```cpp
+class C
+{
+  int a;
+	void f()
+	{
+		a;
+	}
+};
+```
+results in:
+```yaml
+Symbol '/C/a':
+  kind: Variable
+  references:
+    - {line: 6, col: 3}
+  line: 3
+  type:
+    core: {name: "?int", validity: found, tclass: Scalar, underlying_scalar: int}
+    generic: <NA>
+  storage: 
+  array dim: ""
+  has sampler state: no
+```
+Now it does see the access, at line 6, column 3 (after 2 tabs).
+
+The problem happens because AZSL does not parse in 2 sweeps, it has only one pass. f()'s content parsing happens before a's declaration, so 'a' apparition in f() is an internal unresolved reference. You can see it, using `--W3` warning level. The compiler will output:
+  
+```shell
+source.azsl(5,3) : warning: undeclared sub-symbol in idexpression: a
+```
+  
+This shouldn't be a problem because AZSLc doesn't change the layout of the inner section of classes, so normally doesn't need to be successful identifying class fields. But for structures or enums it would be another story, since they can be used as constant buffer resources, or option values, they may undergo reflection and scope migration + name mutation and collision avoidance during transpilation to HLSL. So it would be a problem if such a tracking miss would happen to a symbol that undergo any of that. Normally it shouldn't happen since structs can't have methods in AZSL. But for safety, you can 

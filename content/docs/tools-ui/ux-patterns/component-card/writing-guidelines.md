@@ -1,7 +1,7 @@
 ---
 linktitle: Writing Guidelines
 title: Writing Guidelines for Component Cards
-description: Learn how to write effective UI/UX strings for component cards using the BlueJay Design System (BJDS) in Open 3D Engine (O3DE)
+description: Learn how to write effective UI/UX strings for component cards using the Blue Jay Design System (BJDS) in Open 3D Engine (O3DE)
 weight: 200
 ---
 

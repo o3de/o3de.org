@@ -1,9 +1,10 @@
 ---
-description: ' Learn how to use asserts in Open 3D Engine to debug your game code. '
 title: Using the sys_asserts Console Variable (CVAR)
+linktitle: CVAR Asserts
+description: Learn how to use asserts in Open 3D Engine (O3DE) to debug your game code.
 ---
 
-Manage assert notifications in O3DE with the `sys_asserts` console variable. The following table shows the possible values and their meanings.
+Manage assert notifications in **Open 3D Engine (O3DE)** with the `sys_asserts` [console variable (CVAR)](/docs/user-guide/appendix/cvars/). The following table shows the possible values and their meanings.
 
 
 | Value | Description |

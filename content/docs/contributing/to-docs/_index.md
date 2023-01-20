@@ -20,15 +20,14 @@ Wondering where to start? The conveniently titled [Get Started](./get-started) t
 
 | Topic | Description |
 |---|---|
-| [Get Started](./get-started) | A high-level overview of the O3DE docs contribution process. |
+| [Overview](./overview) | A high-level overview of the O3DE docs contribution process. |
+| [Get Started](./get-started) | Learn how to set up your local repo, set up your writing environment, and submit docs. |
 | [Work with Issues](./work-with-issues) | How to create and work with issues in the O3DE docs project. |
-| [Set up a Local O3DE Docs Repo](./o3de-docs-repo-setup) | A step-by-step guide to setting up and maintaining your O3DE docs repo. |
-| [Docs Contribution Runbook](./git-workflow) | Get the Git commands for the basic workflow. |
 | [O3DE Docs Structure](./o3de-docs-structure) | Need guidance on navigating the repository? This map will help. |
-| [Submit a PR](./submit-a-pr) | Navigate the pitfalls of making submissions to O3DE docs. |
+| [Docs Contribution Runbook](./git-workflow) | Get the Git commands for the basic workflow. |
 | [Style Guide](./style-guide/) | The fine details on how to consistently format and style docs for O3DE. |
 | [Terminology](./terminology) | O3DE has many specialized terms, and a handful of terms that you shouldn't use. |
-| [Work with Hugo](./hugo) | Learn to work with Hugo, the static site generator for O3DE docs. |
-| [O3DE Documentation and Community Special Interest Group](https://github.com/o3de/sig-docs-community) | The hub of the O3DE Documentation and Community Special Interest Group (D&C SIG), the governing body for O3DE docs. |
 | [Blog Post Submission](./blog-posts) | Have a blog post that you'd like to see featured on o3de.org? Learn how to go through our submission and approval process. |
+| [Work with Hugo](./hugo) | Learn to work with Hugo, the static site generator for O3DE docs. |
 | [Templates for O3DE Documentation](templates/) | Download templates and follow supplemental guidelines for writing O3DE documentation. |
+| [O3DE Documentation and Community Special Interest Group](https://github.com/o3de/sig-docs-community) | The hub of the O3DE Documentation and Community Special Interest Group (D&C SIG), the governing body for O3DE docs. |
