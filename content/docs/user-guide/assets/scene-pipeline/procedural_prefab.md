@@ -48,7 +48,7 @@ There are instructions for tagging mesh data nodes with an Atom material using t
 
 ## Using procedural	prefabs in the O3DE Editor
 
-For the most part, procedural prefabs are used in the same way that normal authored prefabs are used in the O3DE Editor. They can be instantiated into a level multiple times, the can be updated all at once if the source scene is modified, and can be placed inside authored prefabs inside the Entity Outliner.
+For the most part, procedural prefabs are used in the same way that normal authored prefabs are used in the O3DE Editor. They can be instantiated into a level multiple times, can be updated all at once if the source scene is modified, and can be placed inside authored prefabs inside the Entity Outliner.
 
 ### Instantiate procedural prefab in the Editor
 
