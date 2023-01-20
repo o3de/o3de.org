@@ -89,14 +89,22 @@ Negative assertions are different from negative test cases. A negative test case
 
 It can be okay to include negative assertions when there is also at least one positive assertion, but they should not be relied on alone. Focus on identifying the expected output.
 
+### Disabling and skipping tests
+
+Ideally, all automated test failures prompt immediately fixing the broken feature, or updating the test when underlying expectations have changed. However, sometimes a tradeoff must be made that breaks a feature to enable other functionality. In a case where functionality is known to be broken, automated tests can be temporarily "skipped" or disabled.
+
+Avoid immediately disabling tests when you see a failure. First consider what action the failure blocks, and how critical it is to unblock. Compare that with the risk tradeoff from all contributors ignoring all future bugs the test could catch.
+
+Whenever a test provided with O3DE gets disabled, please [create an issue](https://github.com/o3de/o3de/issues/new/choose) to track fixing the feature and re-enabling the test.
+
 ## Practices to remember
 
 ### Insanity checks
 
-Ensure a new test is configured to run and report failures by temporarily editing the production code. Intentionally break the code in one way the test should detect. Then, run the test suite. If no failure occurs, investigate why!
+Ensure a new test is configured to run and report failures by temporarily editing the production code. Intentionally break the code in one way that the test should detect, and then run the test suite. If no failure occurs, investigate why!
 
 {{< caution >}}
-Immediately revert any intentional code changes after verifying failure can be detected.
+Immediately revert any intentionally broken code, after verifying that the failure can be detected by the test.
 {{< /caution >}}
 
 ### Floating-point assertions
@@ -138,6 +146,7 @@ int Math::FastSquare( const int number )
 ```
 
 ```cpp
+// This other file contains hard-coded versions of invalid data
 enum PrecomputedSquares
 {
     pcs_one = 2;
@@ -155,6 +164,7 @@ int CalculateTestSquare( const int number)
 
 TEST(MathTests, FastSquare_Integer_Squared1)
 {
+    // Assumes the function is correct, thus only proves an identity property
     int tenSquared = Math::FastSquare(10);
     int result = Math::FastSquare(10);
     ASSERT_EQ(result, tenSquared);
@@ -162,6 +172,8 @@ TEST(MathTests, FastSquare_Integer_Squared1)
 
 TEST(MathTests, FastSquare_Integer_Squared2)
 {
+    // Relies on a duplicate implementation of the production code that contains
+    // the same bug, thus only proves the production bug was not changed
     int tenSquared = CalculateTestSquare(10);
     int result = Math::FastSquare(10);
     ASSERT_EQ(result, tenSquared);
@@ -169,12 +181,15 @@ TEST(MathTests, FastSquare_Integer_Squared2)
 
 TEST(MathTests, FastSquare_Integer_Squared3)
 {
+    // Uses incorrectly computed squares from another file, thus only
+    // proves the production bug was not changed
     int result = Math::FastSquare(10);
     ASSERT_EQ(result, pcs_ten);
 }
 
 TEST(MathTests, FastSquare_Integer_Squared4)
 {
+    // directly states that 10^2 = 20, which is incorrect but also *easy to notice*
     int tenSquared = 20;
     int result = FastSquare(10);
     ASSERT_EQ(result, tenSquared);
@@ -182,6 +197,7 @@ TEST(MathTests, FastSquare_Integer_Squared4)
 
 TEST(MathTests, FastSquare_Integer_Squared5)
 {
+    // tersely verifies 10^2 results in 20, which is incorrect but should be *easy to notice*
     ASSERT_EQ(FastSquare(10), 20);
 }
 ```
@@ -190,15 +206,21 @@ The incorrect math of the production code is trusted in every test above; all te
 
 ## Sizes of automated tests in O3DE
 
-Size or scope is one of the more useful ways to classify a test. When automating tests, prefer writing many small tests over writing fewer, larger tests. Larger tests take more initial effort to write and continuously consume magnitudes more time to execute and debug. If you can catch an issue with a smaller test, write the smaller test!
+Size (or scope) is one of the more useful ways to classify a test. When automating tests, prefer writing many small tests over writing fewer, larger tests. Larger tests take more initial effort to write and continuously consume magnitudes more time to execute and debug. If you can catch an issue with a smaller test, write the smaller test!
 
 ### Unit tests
 
 The most straightforward automated tests are unit tests. Unit tests have a very simple mantra: **One input, one call, one output**
 
-The purpose of a unit test is to be small, specific, and fast. They are easy to run, and when they fail, it tends to be easy to determine why. This ease of use primarily comes from the "one call" aspect. Different interactions are treated as additional tests rather than different steps within the same test with a more extended workflow. Think of a unit test as creating an extremely simple robot that quickly reports if one specific behavior breaks. Each robot allows the author to reduce expending mental resources worrying about a design concern. It also documents and monitors that concern for anyone unfamiliar with the area. This allows developers to focus on changing production code while trusting their robots will efficiently help them detect and debug issues as they get introduced. Write unit tests when writing code intended to exist for more than a week.
+The purpose of a unit test is to be small, specific, and fast. They are easy to run, and when they fail, it tends to be easy to determine why. This ease of use primarily comes from the "one call" aspect. Different interactions are treated as additional tests rather than different steps within the same test with a more extended workflow. Think of a unit test as creating an extremely simple robot that quickly reports if one specific behavior breaks. Each robot allows the author to reduce expending mental resources worrying about a design concern. It also documents and monitors that concern for anyone unfamiliar with the area. This allows developers to focus on changing production code while trusting their robots will efficiently help them detect and debug issues as they get introduced. Consider unit tests when writing code intended to exist for more than a week.
 
-A good pattern to follow when writing unit tests is ***Arrange, Act, Assert***. First, set up your environmental state (Arrange), then call the function under test (Act), and finally, verify the expected side effects occurred (Assert). This simple structure leads to short, focused tests which are easy to understand. Below is a simple example in C++:
+A good pattern to follow when writing unit tests is ***Arrange, Act, Assert***:
+
+1. Set up your environmental state (Arrange)
+2. Call the function under test (Act)
+3. Verify the expected side effects occurred (Assert)
+
+This simple structure leads to short, focused tests which are easy to understand. Below is a simple example in C++:
 
 ```cpp
 TEST(VectorTests, PushBack_ContainsTwoItems_ThreeTotalItems)
@@ -209,7 +231,7 @@ TEST(VectorTests, PushBack_ContainsTwoItems_ThreeTotalItems)
 }
 ```
 
-The test above verifies that adding one item to a vector that already has two items results in the vector reporting that it has three items. Here is a similar example in Python:
+The test above verifies that adding one item to a vector that already had two items results in the vector reporting that it has three items. Here is a similar example in Python:
 
 ```python
 def test_ListAppend_ContainsTwoItems_ThreeTotalItems(self):
@@ -218,7 +240,7 @@ def test_ListAppend_ContainsTwoItems_ThreeTotalItems(self):
     assert 3 == len(testList)  # Assert
 ```
 
-Note that neither of the preceding tests is a good candidate to include with O3DE, as they test the behavior of non-O3DE libraries (STL containers and Python built-ins). External dependencies should have their own automated tests which live in their own projects. When writing a unit test, ensure it focuses on one specific behavior of *your* code. Here are real-world examples of O3DE's unit tests in [C++](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/Tests/Geometry2DUtils.cpp) and [Python](https://github.com/o3de/o3de/blob/development/Tools/LyTestTools/tests/unit/test_codeowners_hint.py). These tests take milliseconds to verify automatically!
+Note that neither of the preceding tests are good candidates to include with O3DE, as they test the behavior of non-O3DE libraries (STL containers and Python built-ins). External dependencies should have their own automated tests that live in their own projects. When writing a unit test, focus on one specific behavior of *your* code. Here are real-world examples of O3DE's unit tests in [C++](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/Tests/Geometry2DUtils.cpp) and [Python](https://github.com/o3de/o3de/blob/development/Tools/LyTestTools/tests/unit/test_codeowners_hint.py). These tests take milliseconds to verify automatically!
 
 ### Integration tests
 
@@ -238,12 +260,12 @@ Here are real-world examples of O3DE's integration tests in [C++](https://github
     * While integration tests are intended to cover multiple dependencies, reducing the scope of actions and assertions reduces the risk of spending more time debugging tests than fixing the underlying problem.
 3. Reduce the amount of code necessary for the integration test.
     * Consider refactoring the production interface to make it easier to write (unit) tests.
-    * Remove similar highly-similar integration tests by combining their steps and/or eliminating less-critical verifications.
+    * Combine highly-similar integration tests into one test, though be careful about complexity tradeoffs.
 4. Batch tests with large startup times.
-    * Share startup cost once in a fixture provided to each test.
-    * Combining tests can be considered, though it has complexity tradeoffs.
+    * Share startup cost once in a fixture provided to each test, with a tradeoff of allowing shared state to interfere with other tests.
     * For in-editor Python tests, refer to the documentation on [editor tests](https://www.o3de.org/docs/user-guide/testing/parallel-pattern).
 5. Parallelize small tests which have few external dependencies.
+    * Can expose intermittent failures from parallel contention.
     * Unit test libraries execute in parallel by default.
 
 ### System tests
@@ -268,7 +290,7 @@ O3DE relies on contributors and SIGs to help verify that their code provides a g
 Automated UI tests are prone to false failures and false passes. This can lead to the anti-patterns of "when anyone changes any part of the code, they have to change all of the tests" or "this test never catches any real bugs." Due to these risks, only start investing in automated UI tests after automating lower-complexity tests.
 {{< /caution >}}
 
-While there is a significant amount of UI code in O3DE, we recommend that automated tests avoid targeting the UI layer. UI tests are relatively complex and expensive to maintain. It is also easy to write acceptance-style tests for the UI, where robotic scripts struggle to provide useful feedback. But, such tests can quickly consume more human effort to debug than manually testing the UI.
+While there is a significant amount of UI code in O3DE, we recommend that automated tests avoid targeting the UI layer. UI tests are relatively complex and expensive to maintain. It is also easy to write acceptance-style tests for the UI, where robotic scripts struggle to provide useful feedback. Such tests can quickly consume more human effort to debug than it would to manually test the UI.
 
 Relying on UI tests to verify features tends to be brittle and can prompt many confusing debugging sessions. In an ideal scenario, there would already be non-UI integration tests, which thoroughly test the underlying logic of a feature. Then any UI tests above that layer would not be responsible for testing the system but only for how the interface reacts to simple interactions. Whenever possible, prefer implementing that lower layer of non-UI automation.
 
@@ -293,9 +315,9 @@ There is often no easy answer to which types of tests are the most important for
   * The most efficient to write, execute, and maintain.
   * The first line of automated defense against newly introduced bugs.
   * Often referred to as the base of a *Testing Pyramid*.
-* Integration tests should account for most of the remaining automated tests.  Remember the following points about them:
-  * Integration tests often catch the largest variety of bugs but require significantly more effort to write and maintain.
-  * Use of UI tests should be limited. Most integration tests can be written just below the UI layer to verify the core functionality of the systems.
+* Integration tests should account for most of the remaining automated tests.  Remember the following tradeoffs:
+  * Integration tests often catch the largest variety of bugs, but require significantly more effort to write and maintain.
+  * Automated UI tests should be limited, and rely on humans to verify the UI. Most integration tests can be written just below the UI layer to verify system functionality.
 * System tests should account for few tests.  When writing system tests:
   * Only the most critical workflows should be included.
   * System tests should not aim to be exhaustive.
@@ -323,28 +345,22 @@ Tests should have unique, obvious names to help document what they perform. One 
    * Often describes the type of assertion made or highlights the most important of multiple asserted values.
    * Easy to read since it comes last.
 
-An alternative ways to think about this pattern is `<WhatIsTested>_<NotableConfigurationStep>_<ImportantAssertion>`
+An alternative way to think about this pattern is `<WhatIsTested>_<NotableConfigurationStep>_<ImportantAssertion>`
 
 There are two main reasons to use this naming method:
 
 1. When a test fails, a human can look at a report summary and quickly understand what went wrong.
    * If test `MatrixDotProduct_SecondMatrixInvalidRows_InvalidDimensions` starts failing, someone may immediately suspect what caused the issue before navigating through code.
 2. The name documents what makes the test uniquely important.
-   * This makes it easier to assess what is currently tested and then declare a new test that is not a duplicate.
+   * This makes it easier to assess what is currently tested and then create a new test that is not a duplicate.
 
 {{< caution >}}
 While the pattern above recommends using underscores, never start or end test names with underscores! This can result in [GoogleTest creating an invalid function name](http://google.github.io/googletest/faq.html#why-should-test-suite-names-and-test-names-not-contain-underscore) or [PyTest not discovering the test](https://docs.python.org/3/tutorial/classes.html#private-variables).
 {{< /caution >}}
 
-## Disabling and skipping tests
-
-Ideally, all automated test failures prompt immediately fixing the broken feature (or updating the test when underlying expectations have changed). However, sometimes a tradeoff must be made, which breaks a feature while enabling other functionality. In a case where functionality is known to be broken, automated tests can be temporarily "skipped" or disabled.
-
-Whenever a test provided with O3DE gets disabled, please [cut an issue](https://github.com/o3de/o3de/issues/new/choose) to track fixing the feature and re-enabling the tests.
-
 ## Test-Driven development (TDD)
 
-*Test-Driven Development* (TDD) is a software writing workflow that prompts engineers to iteratively develop code. The Red-Green-Refactor process can carve up questions such as "what should you build next?" into actionable tasks. This helps avoid getting lost in the ambiguity of software design. TDD also has the extra benefit of leaving behind tests targeting critical requirements. Repeating these three steps can help design new features:
+*Test-Driven Development* (TDD) is a software writing workflow that prompts engineers to iteratively develop code. The Red-Green-Refactor process can carve up questions such as "what should be done next?" and "is this complete?" into actionable tasks. This helps avoid getting lost in the ambiguity of software design. TDD also has the extra benefit of leaving behind tests that target critical requirements. Repeating these three steps can help design new features:
 
 1. Red: Write a new failing (unit) test for new functionality.
    * What does success look like?
@@ -357,7 +373,7 @@ Whenever a test provided with O3DE gets disabled, please [cut an issue](https://
    * Taking a step back, are there any better approaches?
 
 {{< note >}}
-TDD is one small, effective tool to help with software design. It is best employed alongside other design tools, such as the [SOLID design principles](https://en.wikipedia.org/wiki/SOLID). TDD helps focus on lower-level concerns and prompts asking broader questions. However, it also assumes high-level requirements gathering has already provided direction for a task.
+TDD is one small, effective tool to help with software design. It is best employed alongside other design tools, such as the [SOLID design principles](https://en.wikipedia.org/wiki/SOLID). TDD helps focus on lower-level concerns and prompts asking broader questions. However, it also assumes that high-level requirements gathering has already provided initial direction for a task.
 {{< /note >}}
 
 The primary benefit of TDD is writing code that is easy to use and maintain, plus tests to prove it functions correctly in the future. If you don't already use TDD, try it out for your next feature!
