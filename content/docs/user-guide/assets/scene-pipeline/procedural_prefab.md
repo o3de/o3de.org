@@ -32,7 +32,7 @@ It is possible to turn off the default procedural prefab by setting the registry
 
 ### Creating procedural prefabs from Python
 
-It is possible to create a procedural prefab using a Python script to hook into the scene pipeline. This script will add a Prefab Group rule into the scene manifest that describes the entities and components it will use. In fact, the script can add many Prefab Groups to the scene manifest if there is more than one scene description. The scripts can split up complex scenes from source files and to fill out entities with game components.
+It is possible to create a procedural prefab using a Python script to hook into the scene pipeline. This script will add a Prefab Group rule into the scene manifest that describes the entities and components it will use. In fact, the script can add many Prefab Groups to the scene manifest if there is more than one scene description. The scripts can split up complex scenes from source files and fill out entities with game components.
 
 {{< note >}}
 It should also be noted that the scene pipeline can be updated in C++ if the development team feels more comfortable writing C++ scene builders.
