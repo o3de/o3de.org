@@ -22,7 +22,7 @@ Place your actor `.fbx` source asset in a [scan directory](/docs/user-guide/asse
 
 ## Processing an actor asset
 
-When you placed your actor `.fbx` source asset in your project's `Assets` directory, Asset Processor detected the asset, examined its contents, and processed it with a default set of rules. To customize the rules that process the actor asset, do the following:
+When you placed your actor `.fbx` source asset in your project's `Assets` directory, Asset Processor detected the asset, examined its contents, and processed it with a default set of rules. These default rules might be sufficient for simple actor assets, however, actors often require additional processing for custom normals and tangents, cloth meshes, root motion extraction, or coordinate space changes. To customize the rules that process the actor asset, do the following:
 
 1. In **O3DE Editor**, locate your asset in **Asset Browser**. You can type the name of the asset into the search field at the top of Asset Browser to filter the list and locate your actor asset.
 
@@ -40,7 +40,7 @@ When you placed your actor `.fbx` source asset in your project's `Assets` direct
 
     In the preceding image, there is one **Mesh group** in the **Meshes** tab. A mesh group produces a runtime optimized mesh asset. By default, all the meshes in the source asset are selected for the mesh group and are processed as a single mesh.
 
-    Additional mesh groups can be created by choosing **Add another mesh**. However, an actor entity can only have one mesh component. All of the actor's meshes, that is, all the meshes that are bound to the actor's skeleton, must be included in a single mesh group. The actor in this example has one mesh, though it's common for actors to have many unique meshes.
+    Additional mesh groups can be created by choosing **Add another mesh**. However, an actor entity can only have one mesh component. All of the actor's meshes - which is to say, all the meshes that are bound to the actor's skeleton - must be included in a single mesh group. The actor in this example has one mesh, though it's common for actors to have many unique meshes.
 
     The following table explains the important elements of the default mesh group for actors:
 
@@ -48,7 +48,7 @@ When you placed your actor `.fbx` source asset in your project's `Assets` direct
     | --- | --- |
     | **Name mesh** | This property is the name of the mesh group. All product assets of this mesh group use this string as a prefix for their name. The product assets appear in Asset Browser beneath the source asset. By default, the name of the source scene file is used. |
     | **Select meshes** | The meshes selected for processing as part of the mesh group. Choosing the {{< icon browse-edit-select-files.svg >}} **node select** button allows you to select which meshes from the `.fbx` source asset to include in the mesh group. By default, all meshes in the `.fbx` source asset are selected. |
-    | **Skin** | The [Skin](/docs/user-guide/assets/scene-settings/meshes-tab/#skin) modifier is automatically added for meshes that are bound to a skeleton. The Skin modifier sets the max weights per vertex for the mesh, and the weight threshold for bone influences. The **Max weights per vertex** property has a default value of `8`, so that up to 8 bones can influence each vertex in the mesh. The default **Weight threshold** is `0.001`. Any vertex weighs lower than the threshold value are ignored. |
+    | **Skin** | The [Skin](/docs/user-guide/assets/scene-settings/meshes-tab/#skin) modifier is automatically added for meshes that are bound to a skeleton. The Skin modifier sets the max weights per vertex for the mesh, and the weight threshold for bone influences. The **Max weights per vertex** property has a default value of `8`, so that up to 8 bones can influence each vertex in the mesh. The default **Weight threshold** is `0.001`. Any vertex weights that are lower than the threshold value are ignored. |
     | **Material** | The [Material](/docs/user-guide/assets/scene-settings/meshes-tab/#material) modifier is automatically added to mesh groups. With the Material modifier, you can choose to update the materials for the processed actor, and remove unused materials that might have been previously processed for the actor. |
 
     {{< note >}}
@@ -79,7 +79,7 @@ If your actor has custom normals and materials that use normal maps, you might n
 The first node in the list is the scene root node, not the root of the skeleton. Make sure the bone you select is the root bone of the actor's skeleton. The skeleton root bone is critical for animation and root motion. For more information, refer to the [Data Driven Root Motion](/docs/learning-guide/tutorials/animation/data-driven-root-motion) tutorial.
     {{< /note >}}
 
-1. Choose **Save** to save the customized settings for the actor.
+1. Choose **Update** to save the customized settings for the actor.
 
     The customizations you make in Scene Settings are stored in a file with a `.assetinfo` extension. When Asset Processor detects a `.assetinfo` file, it uses the settings in the file to process the related source asset. This file is treated as a source dependency for the asset. This means that if the `.assetinfo` file is changed, the source asset will be reprocessed even if the source asset has not changed.
 

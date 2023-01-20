@@ -44,21 +44,21 @@ When you placed your mesh `.fbx` source asset in your project's `Assets` directo
 
     The **Select meshes** property reads **All meshes selected**. You can choose the {{< icon browse-edit-select-files.svg >}} **node select** button to select which meshes to include in the mesh group.
 
-2. Add a modifier to customize how the asset is processed. Choose the **Add Modifier** button to view the mesh modifier list and select [**Coordinate system change**](/docs/user-guide/assets/scene-settings/meshes-tab#coordinate-system-change).
+1. Add a modifier to customize how the asset is processed. Choose the **Add Modifier** button to view the mesh modifier list and select [**Coordinate system change**](/docs/user-guide/assets/scene-settings/meshes-tab#coordinate-system-change).
 
     ![ Scene Settings meshes tab, adding mesh a modifier. ](/images/learning-guide/tutorials/assets/meshes-coordinate-system-change.png)
 
-3. The Coordinate system change mesh modifier is used to scale or transform the asset for those scenarios where the asset might be too small, too large, or incorrectly oriented in O3DE. By default, the modifier provides a single option to rotate the mesh 180 degrees. Activate the **Use advanced settings** toggle to expose the advanced modifier settings.
+1. The Coordinate system change mesh modifier is used to scale or transform the asset for those scenarios where the asset might be too small, too large, or incorrectly oriented in O3DE. By default, the modifier provides a single option to rotate the mesh 180 degrees. Activate the **Use advanced settings** toggle to expose the advanced modifier settings.
 
     ![ Scene Settings meshes Coordinate system change modifier, Use advanced settings. ](/images/learning-guide/tutorials/assets/meshes-use-advanced-settings.png)
 
-4. Customize the scale of the asset. Set the **Scale** property to `5.0` to scale the asset to five times its size.
+1. Customize the scale of the asset. Set the **Scale** property to `5.0` to scale the asset to five times its size.
 
-5. Choose the **Update** button at the bottom-right of Scene Settings. This creates or updates the `.assetinfo` sidecar file and triggers Asset Processor to reprocess the asset.
+1. Choose the **Update** button at the bottom-right of Scene Settings. This creates or updates the `.assetinfo` sidecar file and triggers Asset Processor to reprocess the asset.
 
     When Asset Processor detects a `.assetinfo` file, it uses the settings in the file to process the related source asset. This sidecar file is treated as a source dependency for the asset. This means that if the `.assetinfo` file is changed, the source asset will be reprocessed even if the source asset has not changed.
 
-6. Drag the `.azmodel` product asset from Asset Browser into the viewport.
+1. Drag the `.azmodel` product asset from Asset Browser into the viewport.
 
     {{< image-width "/images/learning-guide/tutorials/assets/meshes-finished.png" "800" "Drag the mesh product asset into the viewport">}}
 

@@ -11,4 +11,3 @@ The meshes, textures, and animations that you create for your projects are known
 | [Customize Mesh Asset Processing](mesh-assets) | Use Scene Settings to process mesh assets for O3DE. |
 | [Customize Actor Asset Processing](actor-assets) | Use Scene Settings to process actor assets for O3DE. |
 | [Process PhysX Collider Assets](physx-colliders) | Use Scene Settings to process PhysX collider assets for O3DE. |
-
