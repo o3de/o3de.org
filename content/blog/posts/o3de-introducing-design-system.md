@@ -1,5 +1,5 @@
 ---
-title: "Introducing the BlueJay Design System for O3DE"
+title: "Introducing the Blue Jay Design System for O3DE"
 description: "Learn about the new UX design model for Open 3D Engine (O3DE) from Lee Hung Nguyen, one of the UX designers contributing to O3DE."
 date: 2022-02-03
 slug: intro-to-bjds
@@ -12,11 +12,11 @@ Learn about the new UX design system for Open 3D Engine (O3DE) tools from Lee Hu
 
 My name is Lee Hung Nguyen, and I am one of the UX Designers in the Special Interest Group for the UI UX community (SIG-UI-UX) that helps to contribute towards the Open 3D Engine (O3DE).
 
-Today, you'll be learning about the design system that the SIG UX UI community has been working on: **the BlueJay Design System (BJDS).**
+Today, you'll be learning about the design system that the SIG UX UI community has been working on: **the Blue Jay Design System (BJDS).**
 
-### What is the BlueJay Design System?
+### What is the Blue Jay Design System?
 
-**The BlueJay Design System (BJDS) is a unified design and development system for designers and developers who want to extend the O3DE editor. It consists of a design library of reusable UI components and UX pattern guidelines. Ultimately, these guidelines will help define a more consistent, productive experience for all O3DE users when followed.**
+**The Blue Jay Design System (BJDS) is a unified design and development system for designers and developers who want to extend the O3DE editor. It consists of a design library of reusable UI components and UX pattern guidelines. Ultimately, these guidelines will help define a more consistent, productive experience for all O3DE users when followed.**
 
 The main goal of BJDS is to help teams build high-quality and consistent digital experiences in O3DE. By utilizing reusable and modular UI components, we can align anyone contributing to the editor's expansion with faster and more consistent development workflows. As 3D engines generally have a high level of complexity for their use cases, we should prepare ourselves for the range of multiple workflows that come with it.
 
@@ -43,9 +43,9 @@ To further ensure that the editor upholds the high quality bar defined by these 
 
 These tenets were formed to be straightforward and easy to remember. We want to ensure that the BJDS tenets are flexible enough for the community to embrace and employ when contributing to the engine.
 
-### What's included in the BlueJay Design System
+### What's included in the Blue Jay Design System
 
-**The BlueJay Design System** is made up of a set of standardized components and layouts to help accelerate the creation of new workflows in the Editor. It also has [supporting documentation](https://o3de.org/docs/tools-ui/) on the O3DE Learn website, which details the following:
+**The Blue Jay Design System** is made up of a set of standardized components and layouts to help accelerate the creation of new workflows in the Editor. It also has [supporting documentation](https://o3de.org/docs/tools-ui/) on the O3DE Learn website, which details the following:
 
 #### UI Components
 
@@ -73,7 +73,7 @@ Our [brand guidelines section](https://o3de.org/docs/tools-ui/branding-guideline
 
 If there's a missing asset that you're looking for, don't hesitate to [file a ticket](https://github.com/o3de/sig-ui-ux/issues/new/choose) and the community will help get the right asset you need. We are always happy to help!
 
-### BlueJay Design System's Roadmap
+### Blue Jay Design System's Roadmap
 
 ![Diagram showing the tenets of the O3DE design system](/images/blog/intro-to-bjds/roadmap2.jpg)
 
@@ -89,6 +89,6 @@ If you would like to help contribute towards the efforts here—by reviewing, wr
 
 You can see here that the BJDS has big dreams and ambitions. At its core, it's just a design system for an open-source, 3D engine. But as an end goal, we want this to be much more than that.
 
-**We want BlueJay to become the best design system that all 3D engines can depend on to set the quality benchmark for industry standards.**
+**We want Blue Jay to become the best design system that all 3D engines can depend on to set the quality benchmark for industry standards.**
 
 This is just the beginning. Let's do it together!
