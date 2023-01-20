@@ -104,7 +104,7 @@ Whenever a test provided with O3DE gets disabled, please [create an issue](https
 Ensure a new test is configured to run and report failures by temporarily editing the production code. Intentionally break the code in one way that the test should detect, and then run the test suite. If no failure occurs, investigate why!
 
 {{< caution >}}
-Immediately revert any intentionally broken code, after verifying failure can be detected by the test.
+Immediately revert any intentionally broken code, after verifying that the failure can be detected by the test.
 {{< /caution >}}
 
 ### Floating-point assertions
