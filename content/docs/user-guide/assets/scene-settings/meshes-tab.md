@@ -85,7 +85,7 @@ Change the **Translation** (position), **Rotation** (orientation), and **Scale**
 
 LODs are optimized meshes with progressively lower polygon counts, fewer and smaller textures, and simplified materials. The farther an entity is from the camera, the less detail is required from the meshes that make up the entity. As the entity moves farther from the camera, it swaps to progressively simpler LOD.
 
-With [Scene Settings](https://www.o3de.org/docs/user-guide/assets/scene-settings/scene-settings/), you can specify up to five LODs (not including the base mesh) that are numbered \[`0`\] to \[`4`\], with \[`0`\] being the *highest* level of detail. LODs are not required but are recommended because they help get the best performance and visual fidelity across a range of platforms with different hardware capabilities.
+With [Scene Settings](/docs/user-guide/assets/scene-settings/scene-settings/), you can specify up to five LODs (not including the base mesh) that are numbered \[`0`\] to \[`4`\], with \[`0`\] being the *highest* level of detail. LODs are not required but are recommended because they help get the best performance and visual fidelity across a range of platforms with different hardware capabilities.
 
 * Choose the {{< icon add.svg >}} **Add** button to add an LOD.
 
@@ -93,13 +93,13 @@ With [Scene Settings](https://www.o3de.org/docs/user-guide/assets/scene-settings
 
 * Choose the {{< icon browse-edit-select-files.svg >}} **Selection list** button to specify the meshes to include in the LOD.
 
-You can also define your optimized mesh names following specific rules (soft naming convention) to automatically add a Level of Detail modifier and assign the meshes to the appropriate LOD slots. LODs are ordered from 0 (the *highest* level of detail) and then should be progressively *low* level of detail to meet the O3DE application needs.
+You can also define your optimized mesh names using a _soft naming convention_, which defines naming rules for automatically adding a Level of Detail modifier and assigning the meshes to the appropriate LOD slots. LODs are ordered from 0 (the *highest* level of detail), followed by progressively *lower* levels of detail to meet the O3DE application needs.
 
 For example, you may add `_lod0`, `_lod1`, `_lod2`, `_lod3`, `_lod4`, and `_lod5` as suffixes to your mesh names. `_lod0` is the base mesh with the highest resolution geometry, textures, and materials and is assigned to the base mesh group. `_lod1` is assigned to LOD slot **\[0\]**, `_lod2` is assigned to LOD slot **\[1\]**, and so on.
 
-The scene settings pipeline relies on the soft naming convention settings provided in [SoftNameSettings.setreg](https://github.com/o3de/o3de/blob/development/Gems/SceneProcessing/Registry/SoftNameSettings.setreg) for rules to identify the LOD meshes. It allows various format of name suffixes including _LOD0, _LOD_0, Lod0, _Lod_0, _lod0, and _lod_0 (upper, lower, CamelCase, etc.). 
+The scene settings pipeline relies on the soft naming convention settings defined in [SoftNameSettings.setreg](https://github.com/o3de/o3de/blob/development/Gems/SceneProcessing/Registry/SoftNameSettings.setreg) for rules to identify the LOD meshes. The rules allow for various formats of name suffixes, including _LOD0, _LOD_0, Lod0, _Lod_0, _lod0, and _lod_0 (upper, lower, CamelCase, etc.).
 
-To override those default settings, please use the project user registry (`<project-root>/Registry`) or the global machine registry (typically found in the users home directory under `.o3de/Registry/`) instead of modifying [SoftNameSettings.setreg](https://github.com/o3de/o3de/blob/development/Gems/SceneProcessing/Registry/SoftNameSettings.setreg) directly. Check [Settings Registry](https://www.o3de.org/docs/user-guide/settings/) for more information on providing settings and configurations for O3DE applications and tools. For example, you can add a new settings registry file like below under `<project-root>/Registry` to **exclude** children of the LOD0 nodes:
+To override those default settings, please use the project user registry (`<project-root>/Registry`) or the global machine registry (typically found in the users home directory under `.o3de/Registry/`) instead of modifying [SoftNameSettings.setreg](https://github.com/o3de/o3de/blob/development/Gems/SceneProcessing/Registry/SoftNameSettings.setreg) directly. Check [Settings Registry](/docs/user-guide/settings/) for more information on providing settings and configurations for O3DE applications and tools. For example, you can add a new settings registry file like below under `<project-root>/Registry` to **exclude** children of the LOD0 nodes:
 ```
 {
     "O3DE": {
@@ -127,7 +127,7 @@ To override those default settings, please use the project user registry (`<proj
 ```
 
 {{< note >}}
-You may add any number of soft naming convention settings by overriding the default settings registry, but each O3DE system has its own limit on the maximum LODs: [Atom renderer](https://deploy-preview-2206--o3deorg.netlify.app/docs/atom-guide/) supports up to 10 LODs while each actor can have up to [six](https://www.o3de.org/docs/user-guide/visualization/animation/using-actor-lods-optimize-game-performance/#using-actor-lods-in-o3de) LODs.
+You may add any number of soft naming convention settings by overriding the default settings registry, but each O3DE system has its own limit on the maximum LODs: [Atom renderer](/docs/atom-guide/) supports up to 10 LODs while each actor can have up to [six](/docs/user-guide/visualization/animation/using-actor-lods-optimize-game-performance/#using-actor-lods-in-o3de) LODs.
 {{< /note >}}
 
 ## Material
