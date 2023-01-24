@@ -94,7 +94,11 @@ You can specify up to five LODs (not including the base mesh) that are numbered 
 * Choose the {{< icon browse-edit-select-files.svg >}} **Selection list** button to specify the meshes to include in the LOD.
 
 {{< note >}}
-You can add `_lod0`, `_lod1`, `_lod2`, `_lod3`, `_lod4`, and `_lod5` as suffixes to your mesh names to automatically add a Level of Detail modifier and assign the meshes to the appropriate LOD slots. `_lod0` is the base mesh with the highest resolution geometry, textures, and materials and is assigned to the base mesh group. `_lod1` is assigned to LOD slot **\[0\]**, `_lod2` is assigned to LOD slot **\[1\]**, and so on.
+You can use soft name settings to automatically add a Level of Detail modifier and assign the meshes to the appropriate LOD slots. 
+
+For example, you may add `_lod0`, `_lod1`, `_lod2`, `_lod3`, `_lod4`, and `_lod5` as suffixes to your mesh names. `_lod0` is the base mesh with the highest resolution geometry, textures, and materials and is assigned to the base mesh group. `_lod1` is assigned to LOD slot **\[0\]**, `_lod2` is assigned to LOD slot **\[1\]**, and so on.
+
+By default, the scene settings pipeline relies on the soft name settings from [SoftNameSettings.setreg](https://github.com/o3de/o3de/blob/development/Gems/SceneProcessing/Registry/SoftNameSettings.setreg) to identify the LOD meshes. It allows various format of name suffixes including _LOD0, _LOD_0, Lod0, _Lod_0, _lod0, and _lod_0 (upper, lower, CamelCase, etc.). To override those default settings, please use the project user registry (`<project-root>/Registry`) or the global machine registry (1~/.o3de/Registry/) instead of modifying [SoftNameSettings.setreg](https://github.com/o3de/o3de/blob/development/Gems/SceneProcessing/Registry/SoftNameSettings.setreg) directly.
 {{< /note >}}
 
 ## Material
