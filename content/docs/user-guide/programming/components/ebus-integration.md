@@ -49,7 +49,7 @@ class TransformComponentRequests
 
 ### Base Class and Trait Specification 
 
-The base class for most `AZ::Component` request buses is `AZ::ComponentBus`. This class is a convenience to help set up EBus traits typical of component EBuses. You could also set up EBus traits by inheriting the default `AZ::EbusTraits`. Then you could optionally override any or all of the following traits. For more information, see [ EBus Configuration Options](/docs/user-guide/programming/messaging/ebus/design/#ebus-in-depth-configuration).
+The base class for most `AZ::Component` request buses is `AZ::ComponentBus`. This class is a convenience to help set up EBus traits typical of component EBuses. You could also set up EBus traits by inheriting the default `AZ::EbusTraits`. Then you could optionally override any or all of the following traits. For more information, see [ EBus Configuration Options](/docs/user-guide/programming/messaging/ebus-design/#ebus-in-depth-configuration).
 + Address policy
 + Bus ID type
 + Connection policy
