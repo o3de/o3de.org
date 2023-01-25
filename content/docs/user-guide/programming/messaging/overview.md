@@ -1,0 +1,22 @@
+---
+linktitle: Overview
+title: Overview of Event Messaging Systems
+description: Use event buses (EBus), AZ::Interface, and AZ::Event to dispatch messages between systems in Open 3D Engine (O3DE). 
+weight: 100
+---
+
+Event messaging systems are essential to a game engine because they allow each system to communicate with each other. **Open 3D Engine (O3DE)** uses a few types of communication methods, which are separated into the following modules: 
+
+- Event bus (EBus): A single global bus that all modules can use to invoke requests and dispatch messages, respectively known as a *request* and *notification* buses.
+- `AZ::Interface`: A C++ template class for a global interface that other components can invoke requests from. 
+- `AZ::Event`: A C++ template class that can publish single value messages, which other components can subscribe to. 
+
+These three modules overlap some of their functionality: `AZ::Interface` provides a request interface, `AZ::Event` provides a publish-subscribe interface, and EBus provides both. However, each has strengths and weaknesses that make them more suitable for different scenarios. 
+
+| | EBus | `AZ::Interface` | `AZ::Event` |
+| --- | --- | --- | --- |
+| Communication model | When a component connects to an EBus, it connects to everything else that's connected to the EBus. It allows many sources to provide a requests and publish messages, and many listeners to invoke those requests and subscribe to those messages. EBus is generally used for situations where event flow is more important than the source of the event. A listener can subscribe to an EBus specialization even if it doesn't exist yet. | An `AZ::Interface<T>` template specialization defines a global request interface, which other components can invoke. Other components can simply access the request interface by calling `AZ::Interface<T>.Get()`.  | Because an `AZ::Event` is attached to source objects, other objects must have a reference to the source object in order to subscribe to the event. Other objects subscribe to an event by implementing a handler that will process the event when it's signaled. An event can be signaled by calling `Signal()`, which subscribers can listen to and process via their event handler. A handler can only connect to one event, and an event can have multiple handlers. Events are useful for components talking to other components within the same entity. For cross-entity communication, an `AZ::Event` should be implemented on an `AZ::Interface`. |
+| Lifetime | EBus is a global singleton. It initializes when the application launches and gets destroyed when the application terminates. | There can only be a single instance of an `AZ::Interface<T>` specialization at a time. It initializes when the application launches and gets destroyed when the application is terminated. | There can be many instances of an `AZ::Event<T>` specialization. Each instance must be attached to an object. It initializes when the object is created and gets destroyed when the object is destroyed. |
+| Scripting | For request interfaces, only EBus can connect to scripting. To expose your system to O3DE's scripting modules, then it must use EBus. |
+| Advantages | EBus is O3DE's most flexible event messaging system. Any system can connect to it and communicate with any other system by simply providing a system's EBus name.  | Compared to EBus, `AZ::Interface` has improved runtime performance, improved debuggability, and compatibility with code autocomplete. | Compared to EBus, `AZ::Event` has improved runtime performance, allows simpler syntax to implement, uses fewer files, and removes aggregate interfaces where a handler only cares about a subset of events. |
+| Examples | EBus - [TODO] What is an example of when you'd choose EBus over `AZ::Interface` or `AZ::Event`? | A spawner-spawnee system. The spawner interface contains functions to manage spawnees. If we want another class to spawn something, that class can make a request via  `AZ::Interface<Spawner>`. Through `AZ::Interface`, other game systems can communicate with the spawner. | In the networking layer, when a remote process call (RPC) is sent, it signals an `AZ::Event<NetworkEntityRpcMessage&>`. Then, a connected handler listens for that signal change and processes the `NetworkEntityRpcMessage`. |
