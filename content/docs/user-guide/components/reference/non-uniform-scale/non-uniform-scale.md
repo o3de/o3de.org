@@ -85,7 +85,7 @@ None
 
 ### RegisterScaleChangedEvent
 
-Registers a handler for the **[AZ::Event](/docs/user-guide/programming/az-event/)** raised when the entity's non-uniform scale is changed.
+Registers a handler for the **[AZ::Event](/docs/user-guide/programming/messaging/az-event/)** raised when the entity's non-uniform scale is changed.
 
 **Parameters**
 Handler for non-uniform scale change events.
