@@ -1,8 +1,8 @@
 ---
-description: Use event buses and the eventing system to dispatch messages between systems in Open 3D Engine. 
 linktitle: EBus
-title: The Open 3D Engine Event Bus (EBus) System
-weight: 300
+title: Event Bus (EBus) System
+description: Use event buses and the eventing system to dispatch messages between systems in Open 3D Engine. 
+weight: 200
 ---
 
 Most engines driven by *entity-component systems (ECS)*, such as Open 3D Engine's [Component Entity System](../../components), use a *publish-subscribe (pub/sub)* model to decouple event generators from event consumers. In these systems, an entity *publishes* events which interested consumers can *subscribe* to. For example, a collision component would want to *publish* an event when an object collides into it, and the entity which owns the component would *subscribe* to these events in order to adjust the other components.

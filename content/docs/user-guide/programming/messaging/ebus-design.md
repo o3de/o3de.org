@@ -1,9 +1,11 @@
 ---
-description: ' Learn detailed information about EBuses in Open 3D Engine. '
-title: Event Buses in Depth
+linktitle: EBus In Depth
+title: Event Buses In Depth
+description: Learn detailed information about EBuses in Open 3D Engine.
+weight: 300
 ---
 
-Event buses (or EBus for short) are a general purpose system for dispatching messages. EBuses have many advantages:
+Event buses (EBus) are a general purpose system for dispatching messages. EBuses have many advantages:
 
 * **Abstraction** - Minimize hard dependencies between systems.
 * **Event-driven programming** - Eliminate polling patterns for more scalable and high performing software.
