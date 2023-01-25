@@ -166,7 +166,7 @@ class AZ::EBus&lt; Interface, BusTraits &gt;</h3>
   </table>
   </dd>
 </dl>
-<p>EBuses are configurable and support many different use cases. For more information about EBuses, see <a href="https://o3de.org/docs/user-guide/engine/ebus/">Event Bus</a> and <a href="https://o3de.org/docs/user-guide/components/development/entity-system-pg-components-ebuses-best-practices/">Components and EBuses: Best Practices</a> in the <em>Open 3D Engine Developer Guide</em>.</p>
+<p>EBuses are configurable and support many different use cases. For more information about EBuses, see <a href="https://o3de.org/docs/user-guide/engine/messaging/ebus/">Event Bus</a> and <a href="https://o3de.org/docs/user-guide/components/development/entity-system-pg-components-ebuses-best-practices/">Components and EBuses: Best Practices</a> in the <em>Open 3D Engine Developer Guide</em>.</p>
 <h2><a class="anchor" id="autotoc_md0"></a>
 How Components Use EBuses</h2>
 <p>Components commonly use EBuses in two ways: to dispatch events or to handle requests. A bus that dispatches events is a <em>notification bus</em>. A bus that receives requests is a <em>request bus</em>. Some components provide one type of bus, and some components provide both types. Some components do not provide an EBus at all. You use the EBus class for both EBus types, but you configure the EBuses differently. The following sections show how to set up and configure notification buses, event handlers, and request buses.</p>

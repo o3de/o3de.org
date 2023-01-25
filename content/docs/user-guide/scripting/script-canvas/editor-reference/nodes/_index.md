@@ -57,7 +57,7 @@ For more information about using variables in Script Canvas, refer to [Script Ca
 
 ## Event nodes
 
-In O3DE's [Event Bus (EBus) system](/docs/user-guide/programming/ebus/), events can be sent or received. Script Canvas surfaces this system through the use of sender nodes and receiver nodes.
+In O3DE's [Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/), events can be sent or received. Script Canvas surfaces this system through the use of sender nodes and receiver nodes.
 
 ### Sender nodes
 

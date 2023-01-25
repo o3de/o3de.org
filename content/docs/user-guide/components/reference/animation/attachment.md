@@ -32,7 +32,7 @@ The **Attachment** component has the following properties.
 
 Use the following request functions with the event bus (EBus) interface to communicate with other components of your game.
 
-For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
+For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/).
 
 
 ****
@@ -47,7 +47,7 @@ For more information, see [Working with the Event Bus (EBus) system](/docs/user-
 
 Use the following notification functions with the EBus interface to communicate with other components of your game.
 
-For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
+For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/).
 
 
 ****

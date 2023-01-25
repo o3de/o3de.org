@@ -61,7 +61,7 @@ The **Camera** component adds a camera to an entity.
 |-|-|-|-|-|
 | `GetActiveCamera` | Returns the EntityId of the active camera. | None | EntityId | Yes |
 
-For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
+For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/).
 
 ## Example Lua script
 
