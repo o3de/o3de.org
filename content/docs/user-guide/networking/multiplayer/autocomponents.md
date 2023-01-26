@@ -82,8 +82,8 @@ The `NetworkProperty` tag has the following properties:
 | Description | Describes the function of the network property. | `string` |
 | Type | The property's type must be a valid C++ type or class name. | `string` |
 | Init | The initial value of the property. | `string` |
-| ReplicateFrom | Tells the network which role can send information about the changes that were made to this property. | Authority, Autonomous | 
-| ReplicateTo | Tells the network which role can receive information about the changes that were made to this property. | Server, Authority, Autonomous, Client | 
+| ReplicateFrom | Tells the network which role can send information about the changes that were made to this property. | `Authority`, `Autonomous` | 
+| ReplicateTo | Tells the network which role can receive information about the changes that were made to this property. | `Server`, `Authority`, `Autonomous`, `Client` | 
 | Container | The type of holder object that stores this network property. | `Object`, `Array`, `Vector` |
 | Count | The number of elements, when `Container` is `Array` or `Vector`. Must be an integer value or an integer type variable. | `string` |
 | IsPublic | If `true`, this property's access modifier is set to `public`, and is accessible from outside of the class.  | `bool` |
