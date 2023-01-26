@@ -135,6 +135,35 @@ The `ArchetypeProperty` tag defines a property that you can configure only at ed
 | ExposeToEditor | If `true`, this is accessible in the O3DE Editor. It's recommended to enable this setting for archetype properties to be useful. Only disable this setting if you don't want users to access this and are supplying a hard-coded value in `Init`.  | `bool` |
 
 
+### Network inputs
+
+*Network inputs* are used to send input data from the player to the authoritative server. Network inputs are like special [remote procedure calls (RPCs)](/docs/user-guide/networking/multiplayer/overview#remote-procedure-calls-rpcs) that the Multiplayer Gem creates, processes, and records at each frame of the network tick. When the authority receives a network input from the player, it stamps the network input with a frame number. Noting the frame number allows the authority to *rewind*, meaning it returns all of the rewindable network properties to that moment in history. Rewinding before processing the input is crucial to keep the multiplayer simulation in sync.
+
+| Property | Description |
+| --- | --- |
+| **Name** | The name of the input. This name is used when writing or reading the input in code. |
+| **Type** | The data type that the input is stored as. |
+| **Init** | The initial value of the data. |
+
+#### Example
+
+```xml
+<NetworkInput Type="StickAxis" Name="ForwardAxis" Init="0.0f" />
+<NetworkInput Type="bool"      Name="Crouch"      Init="false" />
+<NetworkInput Type="uint8_t"   Name="ResetCount"  Init="0" />
+```
+
+For a more complete example, refer to [`NetworkPlayerMovementComponent.AutoComponent.xml`](https://github.com/o3de/o3de-multiplayersample/blob/development/Gem/Code/Source/AutoGen/NetworkPlayerMovementComponent.AutoComponent.xml#L21-L28).
+
+#### Using network inputs in game logic
+
+In C++ and scripting, an auto-component with a network input requires that you implement the following multiplayer component controller functions:
+
+- `CreateInput`: Define this function to return a filled-in network input that contains all of the recorded device inputs that occurred since the last tick. The multiplayer system automatically calls CreateInput for the autonomous player at every network tick. This is important because unlike for single player, the multiplayer system cannot act immediately upon receiving device inputs. Instead, the multiplayer system tracks all of the device inputs and stores them in the network input.
+
+- `ProcessInput`: Define and use this function to process all of the network inputs. Prior to calling this function, you should only have recorded device inputs through CreateInput, which doesn't result in any changes to the world yet. When you call ProcessInput, both the server and client-player will process the same network input at the same network tick. This function calls for both the autonomous player and the authority.
+
+
 ### Example
 
 [`NetworkWeaponsComponent.AutoComponent.xml`](https://github.com/o3de/o3de-multiplayersample/blob/development/Gem/Code/Source/AutoGen/NetworkWeaponsComponent.AutoComponent.xml) is an example of an auto-component that synchronizes a component that represents weapon state across a multiplayer session.
@@ -192,33 +221,3 @@ set(FILES
     Source/AutoGen/MySimpleNetPlayerComponent.AutoComponent.xml    
 )    
 ```
-
-## Network inputs
-
-Multiplayer auto-components can have *network inputs*, which are used to send input data from the player to the authoritative server. Network inputs are like special [remote procedure calls (RPCs)](/docs/user-guide/networking/multiplayer/overview#remote-procedure-calls-rpcs) that the Multiplayer Gem creates, processes, and records at each frame of the network tick. When the authority receives a network input from the player, it stamps the network input with a frame number. Noting the frame number allows the authority to rewind, meaning it returns all of the rewindable network properties to that moment in history. Rewinding before processing the input is crucial to keep the multiplayer simulation in sync.
-
-### Attributes
-
-| Property | Description |
-| --- | --- |
-| **Name** | The name of the input. This name is used when writing or reading the input in code. |
-| **Type** | The data type that the input is stored as. |
-| **Init** | The initial value of the data. |
-
-### Example
-
-```xml
-<NetworkInput Type="StickAxis" Name="ForwardAxis" Init="0.0f" />
-<NetworkInput Type="bool"      Name="Crouch"      Init="false" />
-<NetworkInput Type="uint8_t"   Name="ResetCount"  Init="0" />
-```
-
-For a more complete example, refer to [`NetworkPlayerMovementComponent.AutoComponent.xml`](https://github.com/o3de/o3de-multiplayersample/blob/development/Gem/Code/Source/AutoGen/NetworkPlayerMovementComponent.AutoComponent.xml#L21-L28).
-
-### Using network inputs in game logic
-
-In C++ and scripting, an auto-component with a network input requires that you implement the following multiplayer component controller functions:
-
-- `CreateInput`: Define this function to return a filled-in network input that contains all of the recorded device inputs that occurred since the last tick. The multiplayer system automatically calls CreateInput for the autonomous player at every network tick. This is important because unlike for single player, the multiplayer system cannot act immediately upon receiving device inputs. Instead, the multiplayer system tracks all of the device inputs and stores them in the network input.
-
-- `ProcessInput`: Define and use this function to process all of the network inputs. Prior to calling this function, you should only have recorded device inputs through CreateInput, which doesn't result in any changes to the world yet. When you call ProcessInput, both the server and client-player will process the same network input at the same network tick. This function calls for both the autonomous player and the authority.
