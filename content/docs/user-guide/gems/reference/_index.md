@@ -155,7 +155,7 @@ toc: true
 
 | Gem | Description |
 | - | - |
-| [ROS2](./ros2/) | The Gem provides integration with ROS2 and enables design of simulation of robotics systems |
+| [ROS 2](./ros2/) | The Gem provides integration with ROS 2 and enables design of simulation of robotics systems. |
 
 ## Script
 

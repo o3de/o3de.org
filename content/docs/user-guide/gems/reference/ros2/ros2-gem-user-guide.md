@@ -1,13 +1,13 @@
 ---
 linkTitle: Guide
-title: ROS2 Gem Details
-description: User guide to develop ROS2 enabled simulation
+title: O3DE ROS 2 Gem Details
+description: User guide to develop ROS 2 enabled simulation
 toc: true
 ---
 
-The Gem and its build instructions can be found in [this repository](https://github.com/o3de/o3de-extras/tree/development/Gems/ROS2). The
-ROS 2 Gem helps to build robotic simulations with [ROS 2 / Robot Operating System](https://www.ros.org/). For an example
-of use see [Warehouse Demo Project](https://github.com/RobotecAI/Ros2WarehouseDemo) or [Robot Vacuum Sample](https://github.com/o3de/RobotVacuumSample).
+The O3DE ROS 2 Gem and its build instructions can be found in [this repository](https://github.com/o3de/o3de-extras/tree/development/Gems/ROS2).
+TheROS 2 Gem helps to build robotic simulations with [ROS 2 / Robot Operating System](https://www.ros.org/).
+An example of usage can be seen [Robot Vacuum Sample](https://github.com/o3de/RobotVacuumSample).
 
 # Components overview
 
@@ -23,14 +23,15 @@ of use see [Warehouse Demo Project](https://github.com/RobotecAI/Ros2WarehouseDe
   - ROS2LidarSensorComponent
   - ROS2OdometrySensorComponent
 - __Robot control__
-  - ROS2RobotControlComponent
   - AckermannControlComponent
   - RigidBodyTwistControlComponent
+  - SkidSteeringControlComponent
 - __Spawner__
   - ROS2SpawnerComponent
   - ROS2SpawnPointComponent
 - __Vehicle dynamics__
-  - VehicleModelComponent
+  - AckermannVehicleModelComponent
+  - SkidSteeringModelComponent
   - WheelControllerComponent
 - __Robot Import (URDF) system component__
   - ROS2RobotImporterSystemComponent
@@ -50,29 +51,31 @@ It is intended to support any modern ROS 2 version, following these priorities:
 - Older versions.
 
 Currently tested and validated versions / platforms will be detailed in
-the [project repository](https://github.com/RobotecAI/o3de-ros2-gem).
+the [project repository](https://github.com/o3de/o3de-extras/tree/development/Gems/ROS2).
 
+**Currently, the O3DE ROS 2 Gem is not available for Windows.**
+ 
 If you have multiple versions installed, make sure
-you [source](https://docs.ros.org/en/galactic/Tutorials/Workspace/Creating-A-Workspace.html#source-the-overlay) the one
-you want to use. You can check which version is sourced in your console by checking the value of `ROS_DISTRO`
+you [source](https://docs.ros.org/en/humble/Tutorials/Workspace/Creating-A-Workspace.html#source-the-overlay) the one
+you would like to use. You can check which version is sourced in your console by checking the value of `ROS_DISTRO`
 environment variable (`echo $ROS_DISTRO`).
 
 ## ROS 2 Concepts
 
-Please refer to [ROS 2 Concepts documentation](https://docs.ros.org/en/humble/Concepts.html) if you are not familiar
-with how ROS 2 works.
+Please refer to [ROS 2 Concepts documentation](https://docs.ros.org/en/humble/Concepts.html).
 
 ## Structure and Communication
 
-The Gem creates a [ROS 2 node](https://docs.ros.org/en/galactic/Tutorials/Understanding-ROS2-Nodes.html) which is
-directly a part of ROS 2 ecosystem. As such, your simulation will not use any bridges to communicate and is subject to
-configuration through settings such as Environment Variables. It is truly a part of the ecosystem.
+The Gem creates a [ROS 2 node](https://docs.ros.org/en/humble/Tutorials/Understanding-ROS2-Nodes.html) which is
+directly a part of the ROS 2 ecosystem. 
+As such, your simulation will not use any bridges to communicate and is subject to configuration through settings such as Environment Variables. 
+It is truly a part of the ecosystem.
 
-Note that the simulation node is handled through `ROS2SystemComponent` - a singleton. However, you are free to create
-and use your own nodes if you need more than one.
+Note that the simulation node is handled through `ROS2SystemComponent` - a singleton. 
+However, you are free to create and use your own nodes if you need more than one.
 
 Typically, you will be creating publishers and subscriptions. This is done
-through [rclcpp API](https://docs.ros2.org/galactic/api/rclcpp/classrclcpp_1_1Node.html). Example:
+through [rclcpp API](https://docs.ros2.org/humble/api/rclcpp/classrclcpp_1_1Node.html). Example:
 
 ```
 auto ros2Node = ROS2Interface::Get()->GetNode();
@@ -80,14 +83,13 @@ AZStd::string fullTopic = ROS2Names::GetNamespacedName(GetNamespace(), m_MyTopic
 m_myPublisher = ros2Node->create_publisher<sensor_msgs::msg::PointCloud2>(fullTopic.data(), QoS());
 ```
 
-Note that QoS class is a simple wrapper
-to [rclcpp::QoS](https://docs.ros2.org/galactic/api/rclcpp/classrclcpp_1_1QoS.html).
+Note that QoS class is a simple wrapper to [rclcpp::QoS](https://docs.ros2.org/humble/api/rclcpp/classrclcpp_1_1QoS.html).
 
 ### Frames
 
 `ROS2FrameComponent` is a representation of an interesting physical part of the robot. It handles spatio-temporal
 relationship between this part and other frames of reference. It also encapsulates namespaces, which help to distinguish
-between different robots and different parts of the robot, such as in case of multiple identical sensors on one robot.
+between different robots and different parts of the robot, such in the case of multiple identical sensors on one robot.
 
 All Sensors and the Robot Control Component require `ROS2FrameComponent`.
 
@@ -98,9 +100,9 @@ it to ROS 2 domain.
 
 - Each sensor has a configuration, including one or more Publishers.
 - Sensors publish at a given rate (frequency).
-- Some sensors can be visualised.
+- Some sensors can be visualized.
 
-If you intend to add your own sensor, it might be useful to look at how sensors already provided within the Gem are
+If you intend to add your own sensor, it might be useful to look at how sensors already provided within the O3DE ROS2 Gem are
 implemented.
 
 Sensors can be fall into one of two categories:
@@ -112,11 +114,12 @@ Sensors can be fall into one of two categories:
 The Gem comes with `ROS2RobotControlComponent`, which you can use to move your robot through:
 
 - [Twist](https://github.com/ros2/common_interfaces/blob/master/geometry_msgs/msg/Twist.msg) messages.
-- [AckermannDrive](https://index.ros.org/p/ackermann_msgs/#rolling)
+- [AckermannDrive](https://index.ros.org/p/ackermann_msgs/#humble)
   The component subscribes to these command messages on a configured topic. The topic is "cmd_vel" by default, in a
   namespace as dictated by ROS2Frame.
 
-To make use of received command messages, use either `AckermannControlComponent` or `RigidBodyTwistControlComponent`,
+To make use of received command messages, use either `AckermannControlComponent`, `RigidBodyTwistControlComponent` 
+or `SkidSteeringControlComponent` ,
 depending on steering type. You can also implement your own control component or use LUA scripting to handle these
 commands.
 
@@ -138,15 +141,64 @@ physical forces on parts of a vehicle (robot).
 The model requires a `WheelControllerComponent` present in each wheel entity. It also uses an implementation
 of `DriveModel`, which converts vehicle inputs to forces acting on steering elements and wheels.
 
-#### Simplified drive model
+#### Wheel Controller
+A wheel controller is a controller that should be attached to the vehicle's wheel.
+The wheel entity should have PhysX Hinge Joint attached.
+The Joint controller should have:
+ - `Motor Configuration / Use Motor` enabled,
+ - `Motor Configuration / Force Limit Value` set to a desirable value.
 
-The only implementation of `DriveModel` available at this moment is the `SimplifiedDriveModel`. It
-uses [PID controllers](https://en.wikipedia.org/wiki/PID_controller)
-from [control_toolbox](https://github.com/ros-controls/control_toolbox) package. These controllers are likely not going
-to work with default parameters. The user should tune PID parameters manually. They are exposed through
-the `VehicleModel` component parameters.
+![PhysX Joint](/images/user-guide/gems/ros2/physx_joint.png)
 
-#### Manual control
+The wheel controller has the following parameters shown below.
+
+![Wheel Controller](/images/user-guide/gems/ros2/wheelController.png)  
+| Parameter Name               | Description                                                                      |
+|------------------------------|----------------------------------------------------------------------------------|
+| `Steering Entity`            | The entity that has a PhysX Hinge Joint that changes the direction of the wheel. |
+| `Scale of steering axis`     | Allows the user to change the ratio or / and direction of wheel steering.        |
+#### Ackermann Drive Model
+
+The implementation of `AckermannDriveModel` uses [PID controllers](https://en.wikipedia.org/wiki/PID_controller)
+from [control_toolbox](https://github.com/ros-controls/control_toolbox) package. 
+The model computes velocities or forces in the joints of the vehicle and applies it accordingly to commanded velocity.
+
+![AckermannModel](/images/user-guide/gems/ros2/ackermanModel.png)
+
+Parameters of the model are exposed to the user via `AckermannVehicleModelComponent`:
+  |------------------------------------------------|--------------------------------------------------------------------------|
+  | Parameter Name                                 | Description                                                              |
+  | `DriveModel / Axles `                          | List of axles of the vehicle.                                            |
+  | `DriveModel / Axles / Axle Wheels `            | List of wheels in axis.                                                  |
+  | `DriveModel / Axles / Is it a steering`        | If it is enabled the Ackermann Drive Model will apply a steering angle.  |
+  | `DriveModel / Axles / Is it a drive`           | If it is enabled the Ackermann Drive Model will apply drive force.       |
+  | `DriveModel / Axles / Track`                   | Distance between front and rear axis.                                    |
+  | `DriveModel / Axles / Wheelbase`               | Distance between left and right wheel.                                   |
+  | `DriveModel / Steering PID / P`                | Proportional gain of PID controller for steering servo.                  |
+  | `DriveModel / Steering PID / I`                | Integral gain of PID controller for steering servo.                      |
+  | `DriveModel / Steering PID / D`                | Derivative gain of PID controller for steering servo.                    |
+  | `DriveModel / Steering PID / IMin`             | Minimum integration impact of PID.                                       |
+  | `DriveModel / Steering PID / IMax`             | Maximum integration impact of PID.                                       |
+  | `DriveModel / Steering PID / AntiWindUp`       | Prevents integral wind-up in PID.                                        |
+  | `DriveModel / Steering PID / OutputLimit`      | Clamps output to maximum value.                                          |
+  | `DriveModel / Vehicles Limits / Speed limit `  | Maximum achievable linear speed in meters per second.                    |
+  | `DriveModel / Vehicles Limits / Steering limit`| Maximum achievable steering angle.                                       |
+#### Skid Steering Drive Model
+The model computes velocities in the joints of the vehicle and applies it accordinlgy to commanded velocity and configuration.
+
+![SkidSteeringModel](/images/user-guide/gems/ros2/skidSteeringModel.png)  
+Parameters of the model are exposed to the user via `AckermannVehicleModelComponent`:
+  |------------------------------------------------------|--------------------------------------------------------------------|
+  | Parameter Name                                       | Description                                                        |
+  | `DriveModel / Axles `                                | List of axles of the vehicle.                                      |
+  | `DriveModel / Axles / Axle Wheels `                  | List of wheels in axis.                                            |
+  | `DriveModel / Axles / Is it a steering`              | It is ignored in this model.                                       |
+  | `DriveModel / Axles / Is it a drive`                 | If it is enabled, the Skid Steering Drive Model will apply velocities to the axis' wheels.|
+  | `DriveModel / Axles / Track`                         | Distance between front and rear axis.                              |
+  | `DriveModel / Axles / Wheelbase`                     | Distance between left and right wheel.                             |
+  | `DriveModel / Vehicles Limits / Linear speed limit ` | Maximum achievable linear speed in meters per second.              |
+  | `DriveModel / Vehicles Limits / Angular speed limit` | Maximum achievable angular speed in radians per second.            |
+ #### Manual control
 
 The `VehicleModel` will handle input events with names "steering" and "accelerate". This means you can add
 an [InputComponent](https://www.o3de.org/docs/user-guide/components/reference/gameplay/input/) to the same entity and
@@ -185,7 +237,7 @@ All used services types are defined in gazebo_msgs package.
 ## Handling custom ROS 2 dependencies
 
 The ROS 2 Gem will respect your choice of [__
-sourced__](https://docs.ros.org/en/galactic/Tutorials/Workspace/Creating-A-Workspace.html#source-the-overlay) ROS 2
+sourced__](https://docs.ros.org/en/humble/Tutorials/Workspace/Creating-A-Workspace.html#source-the-overlay) ROS 2
 environment. The Gem comes with a number of ROS 2 packages already included and linked, but you might want to include
 additional packages in your project. To do so, use the `target_depends_on_ros2` function:
 
@@ -210,12 +262,3 @@ workspace
 
 Remember to __always have your ROS 2 overlay sourced__ when building and running the project as sourcing provides
 visibility of ROS 2 package paths.
-
-# Diagram of classes
-
-Some classes with relationships and functions are presented on this diagram. Specific sensor classes (e.g. Lidar) are
-not included. Some classes are presented in sub-diagrams:
-
-
-![classes diagram](/images/user-guide/gems/ros2/diagram_ros2_gem.svg)
-![Vehicle Dynamics](/images/user-guide/gems/ros2/ROSVehicleDynamics_planned.svg)
