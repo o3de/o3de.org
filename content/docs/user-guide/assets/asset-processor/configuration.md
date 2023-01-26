@@ -2,7 +2,7 @@
 linkTitle: Configuration
 title: Asset Processor Configuration
 description: Configure Asset Processor for Open 3D Engine (O3DE) with AssetProcessorPlatformConfig.setreg.
-weight: 300
+weight: 400
 toc: true
 ---
 

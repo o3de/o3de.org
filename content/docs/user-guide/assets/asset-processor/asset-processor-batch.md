@@ -2,7 +2,7 @@
 linkTitle: Batch
 title: Asset Processor Batch
 description: The Asset Processor Batch application can be used to compile all the assets for a project on a build server.
-weight: 200
+weight: 300
 toc: true
 ---
 
