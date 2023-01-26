@@ -1,7 +1,7 @@
 ---
 linktitle: Error Handling
-title: Error Handling in BlueJay Design System
-description: Learn about patterns for error handling using the BlueJay Design System in Open 3D Engine (O3DE), such as how to design UI messages and notifications, and implement error handling for toasts, inline notifications, dialogs, console logs, event logs, event tables, component cards, and text input validations.
+title: Error Handling in Blue Jay Design System
+description: Learn about patterns for error handling using the Blue Jay Design System in Open 3D Engine (O3DE), such as how to design UI messages and notifications, and implement error handling for toasts, inline notifications, dialogs, console logs, event logs, event tables, component cards, and text input validations.
 weight: 200
 toc: true
 ---

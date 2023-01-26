@@ -1,7 +1,7 @@
 ---
 linktitle: Text Input Validation
 title: Error Messages in Text Input Validation
-description: Learn how to design Error/Warning/Success/Information messages in text input validation using the BlueJay Design System (BJDS) in Open 3D Engine (O3DE).
+description: Learn how to design Error/Warning/Success/Information messages in text input validation using the Blue Jay Design System (BJDS) in Open 3D Engine (O3DE).
 weight: 500
 toc: true
 ---
