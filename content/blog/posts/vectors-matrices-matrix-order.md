@@ -2,7 +2,7 @@
 title: "Vectors, Matrices & Matrix Order"
 date: 2023-02-22
 slug: vectors-matrices-matrix-order
-author: jonawals
+author: John Coimbra Walsh
 blog_img: "/images/blog/dev-series.JPG"
 full_img: ""
 ---
