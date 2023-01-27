@@ -9,6 +9,10 @@ This information is for developers of the **Project Manager** tool. If you're a 
 {{< /note >}}
 
 
+{{< tip >}}
+Click on a node to open the relevant source code for that node.
+{{< /tip >}}
+
 ```mermaid
 
 graph TD
