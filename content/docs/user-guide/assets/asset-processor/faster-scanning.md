@@ -2,7 +2,7 @@
 linkTitle: Faster Scanning
 title: Asset Processor Faster Scanning Mode
 description: Faster Scanning mode speeds up source asset scanning in Open 3D Engine (O3DE).
-weight: 600
+weight: 400
 toc: true
 ---
 
