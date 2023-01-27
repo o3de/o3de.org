@@ -2,7 +2,7 @@
 linkTitle: Asset Cache Server Mode
 title: Asset Cache Server
 description: Enable a feature to reduce asset builds for a team.
-weight: 200
+weight: 800
 toc: true
 ---
 
