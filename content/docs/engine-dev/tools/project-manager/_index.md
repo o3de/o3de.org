@@ -123,6 +123,9 @@ graph TD
     class ProjectManager PlainTextNode
     
 ```
+
+## ScreenWidget
+
 ```mermaid
 graph LR
     classDef PlainTextNode fill:#0000, stroke:#0000, stroke-width:0px, text:#0000
