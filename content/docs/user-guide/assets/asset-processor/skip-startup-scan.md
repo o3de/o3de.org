@@ -8,7 +8,7 @@ toc: true
 
 Skipping Startup Scan improves O3DE Editor's launch time if no assets are modified while Asset Processor was closed. You can switch startup scan modes at any time but need to restart Asset Processor for the change to take effect. Asset Processor saves your preferences between sessions.
 
-Skipping Startup Scan is an expert mode that is designed for aiding code development workflows (e.g. code updating and debugging). Use it only when you are not modifying the asset processing pipeline or making asset content changes.
+Skipping Startup Scan is an expert mode that is designed for aiding code development workflows (e.g. code updating and debugging). Use it only when you are not modifying the asset processing pipeline or making asset content changes. Asset Processor will begin to watch for asset changes once it goes to the Idle state.
 
 When Skip Startup Scan is enabled:
 1. Asset Processor skips startup checks on asset modifications after launch and enters the idle state directly.
