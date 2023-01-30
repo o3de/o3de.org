@@ -228,7 +228,7 @@ The most common workflow is to release your game only, in which case you should 
 
     ```cmd
     cd C:\o3de
-    cmake --preset windows-mono-default -DLY_VERSION_ENGINE_NAME=o3de-install
+    cmake --preset windows-mono-default -DO3DE_INSTALL_ENGINE_NAME=o3de-install
     ```
 
     {{< note >}}
@@ -267,7 +267,7 @@ A pre-built SDK engine supports non-monolithic projects by default. As detailed 
 
     ```cmd
     cd C:\o3de
-    cmake --preset windows-default -DLY_VERSION_ENGINE_NAME=o3de-install
+    cmake --preset windows-default -DO3DE_INSTALL_ENGINE_NAME=o3de-install
     ```
 
     **Note:** Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](/docs/user-guide/build/configure-and-build/#configuring-projects).
