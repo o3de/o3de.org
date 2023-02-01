@@ -19,13 +19,11 @@ This Gem enables users to develop robotic simulations through ROS 2 tools and co
   * [ROS 2 Galactic](https://docs.ros.org/en/galactic/Installation.html) with Ubuntu 20.04
   * [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html) with Ubuntu 22.04
 
-Please note that to build or run projects using this Gem, you will need to have ROS [sourced](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html) in your console .
-The best way to ensure this is the case at all times is to add the following line to the `~/.profile` file:
+Please note that to build or run projects using this Gem, you will need to have ROS [sourced](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html) in your console . The best way to ensure this is the case at all times is to add the following line to the `~/.profile` file:
 ```
 source /opt/ros/<distro>/setup.bash
 ```
-Replace \<distro\> with the ROS 2 distribution name (galactic, humble, ..).
-Note that you need to re-log for the change to take effect.
+Replace \<distro\> with the ROS 2 distribution name (galactic, humble, ..). Note that you need to re-log for the change to take effect.
 
 #### Additional ROS 2 packages required
 
@@ -77,13 +75,11 @@ git clone https://github.com/o3de/o3de-extras
 
 ## Building
 
-The Gem is built through building a project which uses it. 
-Make sure to [source your ROS 2 workspace](https://docs.ros.org/en/humble/Tutorials/Configuring-ROS2-Environment.html#source-the-setup-files) before building.
+The Gem is built through building a project which uses it. Make sure to [source your ROS 2 workspace](https://docs.ros.org/en/humble/Tutorials/Configuring-ROS2-Environment.html#source-the-setup-files) before building.
 
 ## Adding Gem to your project
 
-To use O3DE ROS 2 Gem in your project, you need to register the Gem with O3DE. First, clone this repository. Then,
-in O3DE folder:
+To use O3DE ROS 2 Gem in your project, you need to register the Gem with O3DE. First, clone this repository. Then, in O3DE folder:
 ```
 scripts/o3de.sh register --gem-path <PATH_TO_CLONED_O3DE_EXTRAS>/Gems/ROS2
 scripts/o3de.sh enable-gem -gn ROS2 -pp <PATH_TO_YOUR_PROJECT>
@@ -91,15 +87,11 @@ scripts/o3de.sh enable-gem -gn ROS2 -pp <PATH_TO_YOUR_PROJECT>
 
 ## Example project
 
-You can test O3DE ROS 2 Gem with [this project](https://github.com/o3de/RobotVacuumSample).
-It will allow you to run robot navigation.
-All necessary assets are included.
+You can test O3DE ROS 2 Gem with [this project](https://github.com/o3de/RobotVacuumSample). It will allow you to run robot navigation. All necessary assets are included.
 
 ## User Guides
 
-Follow the [O3DE ROS2 Gem User Guide](ros2-gem-user-guide.md) to understand its concepts and components.
-For additional developer's documentation, check the [Gem documentation](https://github.com/o3de/o3de-extras/blob/development/Gems/ROS2/docs/guides/development_in_clion.md) and
-[Open 3D Engine Contributor guide](/docs/contributing)
+Follow the [O3DE ROS2 Gem User Guide](ros2-gem-user-guide.md) to understand its concepts and components. For additional developer's documentation, check the [Gem documentation](https://github.com/o3de/o3de-extras/blob/development/Gems/ROS2/docs/guides/development_in_clion.md) and [Open 3D Engine Contributor guide](/docs/contributing)
 
 ## How to create your own robotic simulation
 
@@ -118,7 +110,7 @@ Follow [Registering Gems to a Project](/docs/user-guide/project-config/register-
    1. Some sensors are already implemented in this Gem.
       1. They might require specialization (implementation specific for particular models).
       2. You might like to consider tradeoffs between performance and realism in each case.
-   2. Use `ROS2SensorComponent` as a base class if you are implementing a new sensor.
+   2. Use `ROS2SensorComponent` as a base class if you are implementing a new sensor. Follow [Contribution to Source Code](docs/contributing/to-code/) guide. 
 5. Develop necessary sensors and their prefabs.
 6. Consider developing additional abstraction to handle spawning and despawning robots.
    1. This would also be a valuable contribution to the Gem.
