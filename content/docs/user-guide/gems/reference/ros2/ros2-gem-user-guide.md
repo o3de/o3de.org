@@ -5,7 +5,14 @@ description: User guide to develop ROS 2 enabled simulation
 toc: true
 ---
 
-The O3DE ROS 2 Gem and its build instructions can be found in [this repository](https://github.com/o3de/o3de-extras/tree/development/Gems/ROS2). The ROS 2 Gem helps to build robotic simulations with [ROS 2 / Robot Operating System](https://www.ros.org/).An example of usage can be seen at [Robot Vacuum Sample](https://github.com/o3de/RobotVacuumSample).
+The ROS 2 Gem helps to build robotic simulations with [ROS 2 / Robot Operating System](https://www.ros.org/). 
+An example of usage can be seen at [Robot Vacuum Sample](https://github.com/o3de/RobotVacuumSample).
+The ROS 2 Gem contains a number of components that gives you a set of tools for robotic simulation.
+Components allow you to:
+- add locomotion to robotics platforms ([Vehicle Dynamics](#vehicle-model)),
+- simulate sensors ([Sensors](#sensors)),
+- provide tools to interact with simulation (e.g. [Robot Control](#robot-control), [Spawner](#spawner)).
+
 ## Components overview
 
 - __Central Singleton__
@@ -76,11 +83,11 @@ Note that QoS class is a simple wrapper to [`rclcpp::QoS`](https://docs.ros.org/
 
 `ROS2FrameComponent` is a representation of an interesting physical part of the robot. It handles spatio-temporal relationship between this part and other frames of reference. It also encapsulates namespaces, which help to distinguish between different robots and different parts of the robot, such in the case of multiple identical sensors on one robot.
 
-All Sensors and the Robot Control Component require `ROS2FrameComponent`.
+All Sensors and the Robot Control component require `ROS2FrameComponent`.
 
 ### Sensors
 
-Sensors are Components deriving from `ROS2SensorComponent`. They acquire data from the simulated environment and publish it to ROS 2 domain.
+Sensors are components deriving from `ROS2SensorComponent`. They acquire data from the simulated environment and publish it to ROS 2 domain.
 
 - Each sensor has a configuration, including one or more Publishers.
 - Sensors publish at a given rate (frequency).
@@ -164,7 +171,7 @@ Parameters of the model are exposed to the user via `AckermannVehicleModelCompon
 | `DriveModel / Vehicles Limits / Angular speed limit` | Maximum achievable angular speed in radians per second.            |
  #### Manual control
 
-The `VehicleModel` will handle input events with names "steering" and "accelerate". This means you can add an [InputComponent](https://www.o3de.org/docs/user-guide/components/reference/gameplay/input/) to the same entity and define an input map for your input devices (such as keyboard or a game pad) to control the vehicle manually.
+The `VehicleModel` will handle input events with names "steering" and "accelerate". This means you can add an [InputComponent](/docs/user-guide/components/reference/gameplay/input/) to the same entity and define an input map for your input devices (such as keyboard or a game pad) to control the vehicle manually.
 
 You can use tools such as [rqt_robot_steering](https://index.ros.org/p/rqt_robot_steering/) to move your robot with Twist messages. `RobotControl` is suitable to use with [ROS 2 navigation stack](https://navigation.ros.org/).
 
@@ -174,8 +181,11 @@ It is possible to implement your own control mechanisms with this Component.
 
 `ROS2SpawnerComponent` handles spawning entities during simulation. Available spawnables have to be set up as the component's field before the simulation. User is able to define named spawn points inside the Editor. This can be done by adding `ROS2SpawnPointComponent` to a child entity of an entity with `ROS2SpawnerComponent`. During the simulation user can access names of available spawnables and request spawning using ros2 services. The names of services are `/get_available_spawnable_names` and `/spawn_entity` respectivly. GetWorldProperties.srv and SpawnEntity.srv types are used to handle these features. In order to request defined spawn points names user can use `/get_spawn_points_names` service with GetWorldProperties.srv type. Detailed information about specific spawn point (e.g. pose) can be accessed using `/get_spawn_point_info` service with GetModelState.srv type. All used services types are defined in gazebo_msgs package.
 
-- Spawning: spawnable name should be passed in request.name and the position of entity in request.initial_pose
-  - example call: `ros2 service call /spawn_entity gazebo_msgs/srv/SpawnEntity '{name: 'robot', initial_pose: {position:{ x: 4, y: 4, z: 0.2}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}}'`
+- **Spawning**: The spawnable name must be passed in `request.name` and the position of entity in `request.initial_pose`.
+  - Example call: 
+  ```
+  ros2 service call /spawn_entity gazebo_msgs/srv/SpawnEntity '{name: 'robot', initial_pose: {position:{ x: 4, y: 4, z: 0.2}, orientation: {x: 0.0, y: 0.0, z: 0.0, w:.0}}}
+  ```
 - Spawning in defined spawn point: spawnable name should be passed in request.name and the name of the spawn point in request.xml
   - example call: `ros2 service call /spawn_entity gazebo_msgs/srv/SpawnEntity '{name: 'robot', xml: 'spawn_spot'}'`
 - Available spawnable names access: names of available spawnables are sent in response.model_names
@@ -187,7 +197,7 @@ It is possible to implement your own control mechanisms with this Component.
 
 ## Handling custom ROS 2 dependencies
 
-The ROS 2 Gem will respect your choice of [__sourced__](https://docs.ros.org/en/humble/Tutorials/Workspace/Creating-A-Workspace.html#source-the-overlay) ROS 2 environment. The Gem comes with a number of ROS 2 packages already included and linked, but you might want to include additional packages in your project. To do so, use the `target_depends_on_ros2` function:
+The ROS 2 Gem will respect your choice of [__sourced__](https://docs.ros.org/en/humble/Tutorials/Workspace/Creating-A-Workspace.html#source-the-overlay) ROS 2 environment. The Gem comes with a number of ROS 2 packages already included and linked, but you might want to include additional packages in your project. To do so, use the `target_depends_on_ros2` function in your project's `Gem/CMakeLists.txt`:
 
 ```
 target_depends_on_ros2_packages(<your_target> <ros_package1> <ros_package2>)

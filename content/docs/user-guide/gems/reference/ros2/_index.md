@@ -1,30 +1,32 @@
 ---
 linkTitle: ROS 2
 title: ROS 2 Gem
-description: The ROS 2 Gem helps to build robotic simulations with ROS 2 / Robot Operating System.
+description: The ROS 2 Gem helps build robotic simulations with Robot Operating System (ROS) 2 in Open 3D Engine (O3DE).
 toc: true
 ---
 
 <!-- # O3DE ROS2 Gem -->
 
-This Gem enables users to develop robotic simulations through ROS 2 tools and components.
+The **ROS 2** Gem provides integration with the [Robot Operating System (ROS) 2](https://docs.ros.org/en/rolling/index.html) library and enables design of simulation of robotics systems.
 
 ## Requirements
 
 * Ubuntu 20.04 or 22.04. 
-  Other Ubuntu versions and Linux distributions could also work as long as they can support ROS 2.
+  Other Ubuntu versions and Linux distributions can also work as long as they support ROS 2.
   **The O3DE ROS 2 Gem is not available for Windows.**
-* [O3DE](https://www.o3de.org/)
-* The modern version of ROS 2. This instruction assumes that the `desktop` version is installed. Otherwise, some packages might be missing. It has been tested with:
+* [O3DE installed for Linux](/docs/welcome-guide/setup/installing-linux/)
+* The [latest version](https://docs.ros.org/en/rolling/Releases.html) of ROS 2. This instruction assumes that the `desktop` version is installed. Otherwise, some packages might be missing. The O3DE ROS 2 has been tested with:
   * [ROS 2 Galactic](https://docs.ros.org/en/galactic/Installation.html) with Ubuntu 20.04
   * [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html) with Ubuntu 22.04
 
-Please note that to build or run projects using this Gem, you will need to have ROS [sourced](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html) in your console . The best way to ensure this is the case at all times is to add the following line to the `~/.profile` file:
+#### Source your ROS 2 workspace
+
+To build or run projects using ROS 2 Gem, you must [source your ROS 2 workspace](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html) in your console. The best way to ensure that ROS 2 is sourced at all times is by adding the following line to the `~/.profile` file:
 ```
 source /opt/ros/<distro>/setup.bash
 ```
-Replace \<distro\> with the ROS 2 distribution name (galactic, humble, ..). Note that you need to re-log for the change to take effect.
-
+Replace `<distro>` with the ROS 2 distribution name (`galactic`, `humble`, and so on).
+Then, you must log out and log in from Ubuntu for the change to take effect.
 #### Additional ROS 2 packages required
 
 * gazebo_msgs: `sudo apt install ros-${ROS_DISTRO}-gazebo-msgs`
@@ -67,27 +69,30 @@ For a "feel" of these features, see an [example project](https://github.com/o3de
 
 ## Clone this repository
 
-Clone the gem repository from Github:
+The ROS 2 Gem lives in the [`o3de/o3de-extras`](https://github.com/o3de/o3de-extras) repository. Clone the GitHub repository to your machine:
 
 ```
 git clone https://github.com/o3de/o3de-extras
 ```
 
-## Building
-
-The Gem is built through building a project which uses it. Make sure to [source your ROS 2 workspace](https://docs.ros.org/en/humble/Tutorials/Configuring-ROS2-Environment.html#source-the-setup-files) before building.
-
 ## Adding Gem to your project
 
-To use O3DE ROS 2 Gem in your project, you need to register the Gem with O3DE. First, clone this repository. Then, in O3DE folder:
+To use the ROS 2 Gem in your O3DE project, you need to register the Gem with O3DE. Then, you can enable the Gem in your project. Run the following commands from the O3DE folder:
 ```
 scripts/o3de.sh register --gem-path <PATH_TO_CLONED_O3DE_EXTRAS>/Gems/ROS2
 scripts/o3de.sh enable-gem -gn ROS2 -pp <PATH_TO_YOUR_PROJECT>
 ```
 
+For more information, refer to [Adding and Removing Gems](/docs/user-guide/project-config/add-remove-gems/) and [Registering Gems](/docs/user-guide/project-config/register-gems/).
+
+
+## Building
+
+The ROS 2 Gem is built when you build an O3DE project and enable the ROS 2 Gem. For more information, refer to [Project Creation](/docs/welcome-guide/create/) and [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems/). Make sure to [source your ROS 2 workspace](#source-your-ros-2-workspace) before building.
+
 ## Example project
 
-You can test O3DE ROS 2 Gem with [this project](https://github.com/o3de/RobotVacuumSample). It will allow you to run robot navigation. All necessary assets are included.
+You can test O3DE ROS 2 Gem with the [Robot Vacuum Sample](https://github.com/o3de/RobotVacuumSample) project. This project allows you to run robot navigation. All necessary assets are included.
 
 ## User Guides
 
@@ -114,6 +119,6 @@ Follow [Registering Gems to a Project](/docs/user-guide/project-config/register-
 5. Develop necessary sensors and their prefabs.
 6. Consider developing additional abstraction to handle spawning and despawning robots.
    1. This would also be a valuable contribution to the Gem.
-7. Develop your scene and simulation scenario, placing Assets and configuring Components.
+7. Develop your scene and simulation scenario, placing Assets and configuring components.
 
 Enjoy simulation with some of many [ROS 2 packages](https://index.ros.org/packages/#humble) and projects in [ROS 2 ecosystem](https://project-awesome.org/fkromer/awesome-ros2).
