@@ -1,6 +1,6 @@
 ---
 linkTitle: Bootup Sequence
-title: Boot-up sequence
+title: Bootup Sequence
 description: High Level Developer Overview for the Project Manager tool.
 ---
 
