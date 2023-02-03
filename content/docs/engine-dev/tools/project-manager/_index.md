@@ -13,4 +13,4 @@ The development source for the Project Manager can be found here: https://github
 | Name | Description |
 |-|-|
 | [Bootup Sequence](./bootup-sequence) | Learn about how the Project Manager starts up. This will include all necessary steps in the sequence and identify some key classes that affect the rest of the Project Manager's architecture.|
-| [Source Code Map](./source-code-map) | This contains a high level map of all code files in Project Manager, including brief descriptions and links to further information for each class.|
+| [Source Code Map](./source-code-map) | This contains a high level map of some of the most important code files in Project Manager, including brief descriptions and links to further information for each class.|
