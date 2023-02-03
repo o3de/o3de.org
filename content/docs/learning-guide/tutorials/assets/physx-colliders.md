@@ -14,9 +14,9 @@ There are three PhysX asset collider types that you can use in different simulat
 
 Before you learn about collider types, you should understand the three types of entity behavior that influence the collider asset type you might choose in a given scenario:
 
-* **Static** -- Static entities can be collided with, but they don't move, and PhysX collisions and forces don't affect them. Static entities can use any collider type.
-* **Kinematic** -- Kinematic entities have a **PhysX Rigid Body** component and movement that is driven by script. Kinematic entities can be collided with, but PhysX collisions and forces don't affect them. Kinematic entities can use any collider type.
-* **Dynamic** -- Dynamic entities have a **PhysX Rigid Body** component and simulated movement that results from PhysX collisions and forces. Dynamic entities can use only primitive and convex colliders.
+* **Static** -- Static entities have a **PhysX Static Rigid Body** and can be collided with, but they don't move, and PhysX collisions and forces don't affect them. Static entities can use any collider type.
+* **Kinematic** -- Kinematic entities have a **PhysX Dynamic Rigid Body** component and movement that is driven by script. Kinematic entities can be collided with, but PhysX collisions and forces don't affect them. Kinematic entities can use any collider type.
+* **Simulated** -- Simulated entities have a **PhysX Dynamic Rigid Body** component and simulated movement that results from PhysX collisions and forces. Simulated entities can use only primitive and convex colliders.
 
 ## PhysX collider assets
 
@@ -118,11 +118,11 @@ To automatically assign meshes in the source asset to a PhysX mesh group, add th
 
 1. Depending on the type of entity that you want, do one of the following:
 
-    * For a static entity, optimize your current static entity. In the **Transform** component, enable the **Static** property. This property ensures the best runtime performance for a static entity.
+    * For a static entity, , add a **PhysX Static Rigid Body** component. With the entity selected in the viewport, in **Entity Inspector**, choose **Add Component**, and then select **PhysX Static Rigid Body** from the component list. To optimize your current static entity, in the **Transform** component, enable the **Static** property. This property ensures the best runtime performance for a static entity.
 
-    * For a dynamic entity, add a **PhysX Rigid Body** component. With the entity selected in the viewport, in **Entity Inspector**, choose **Add Component**, and then select **PhysX Rigid Body** from the component list. If you choose the {{< icon simulate-physics.svg >}} simulation button now, the entity drops with gravity.
+    * For a simulated entity, add a **PhysX Dynamic Rigid Body** component. With the entity selected in the viewport, in **Entity Inspector**, choose **Add Component**, and then select **PhysX Dynamic Rigid Body** from the component list. If you choose the {{< icon simulate-physics.svg >}} simulation button now, the entity drops with gravity.
 
-    * For a kinematic entity, add a **PhysX Rigid Body** component, like you would for a dynamic entity. Then, in the **PhysX Rigid Body** component, enable the **Kinematic** property.
+    * For a kinematic entity, add a **PhysX Dynamic Rigid Body** component, like you would for a simulated entity. Then, in the **PhysX Dynamic Rigid Body** component, select **Kinematic** in the property Type.
 
     
     {{< caution >}}
