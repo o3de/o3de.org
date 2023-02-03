@@ -5,6 +5,7 @@ title: Simulating physics behavior with the PhysX system
 weight: 100
 ---
 
+
 O3DE's PhysX system acts upon entities to create realistic physical effects such as collision detection and rigid body dynamics simulation. 
 
 **Topics**
@@ -23,6 +24,7 @@ O3DE's PhysX system acts upon entities to create realistic physical effects such
 + [Determinism](#determinism)
 <!-- + [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/) -->
 
+
 ## PhysX Gems 
 
 The PhysX system uses the following Gems, which you can enable in **Project Manager**.
@@ -33,6 +35,16 @@ The PhysX system uses the following Gems, which you can enable in **Project Mana
 + **[PhysX Debug](/docs/user-guide/gems/reference/physics/nvidia/physx-debug/)** - Provides debug visualizations of PhysX scene geometry that you can enable with console commands and other tools.
 
   For more information, see [PhysX Debug](/docs/user-guide/gems/reference/physics/nvidia/physx-debug/).
+
+## PhysX version support
+
+O3DE uses PhysX 4.1 by default. You can enable PhysX 5.1 by specifying `-DAZ_USE_PHYSX5=ON` as a command-line option in the configuration step when you configure and build your project or the engine. The following is an an example configuration command that enables PhysX 5.1.
+
+```cmd
+cmake -B build/windows -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DAZ_USE_PHYSX5=ON
+```
+
+For more information on configuring and building projects see the [Configure and Build](/docs/user-guide/build/configure-and-build/) topic.
 
 ## PhysX Components 
 

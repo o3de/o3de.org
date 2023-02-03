@@ -68,7 +68,7 @@ This tutorial shows you how to use O3DE Lua Editor to perform debugging operatio
     
 ## Connect to O3DE Editor
 
-The [**Remote Tools Gem**](docs/user-guide/gems/reference/debug/remote-tools) facilitates local connections between O3DE applications. 
+The [**Remote Tools Gem**](/docs/user-guide/gems/reference/debug/remote-tools) facilitates local connections between O3DE applications. 
 
 {{< note >}}
 The **Remote Tools Gem** must be [enabled in your project](/docs/user-guide/project-config/add-remove-gems/#enabling-or-disabling-gems) for debugging to work.
