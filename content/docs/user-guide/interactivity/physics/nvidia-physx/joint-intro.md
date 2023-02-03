@@ -7,7 +7,7 @@ weight: 400
 
 PhysX joint components constrain the position and orientation of one PhysX Dynamic Rigid Body called the *follower*, relative to another rigid body, called the *leader*. The follower rigid body will have rotational freedom in zero, one, or two axes around the joint, depending on the type of PhysX joint.
 
-The example image below is a simple demonstration of the three joint types. In each example, the blue sphere is the lead rigid body. The joint, which is placed inside the follower, is centered on the leader rigid body (using the **Local Position** and **Local Rotation** properties of the joint component). The red sphere is the follower rigid body, which must always be a dynamic rigid body. For clarity, the ball joint and hinge joint leader rigid bodies are set to static rigid bodies, but they can be dynamic rigid bodies too.
+The example image below is a simple demonstration of the different joint types. In each example, the blue sphere is the lead rigid body. The red sphere is the follower rigid body, which must always be a simulated rigid body. The joint component is always part of the follower entity. Once the joint is added to the follower it needs to be configured to be placed around the leader (using the **Local Position** and **Local Rotation** properties of the joint component). In this example the ball and hinge leaders are static rigid bodies, but they could be kinematic or simulated rigid bodies too.
 
 ![PhysX Joints example](/images/user-guide/physx/physx/anim-joints-example.gif)
 
