@@ -15,7 +15,7 @@ There are three PhysX asset collider types that you can use in different simulat
 Before you learn about collider types, you should understand the three types of entity behavior that influence the collider asset type you might choose in a given scenario:
 
 * **Static** -- Static entities have a **PhysX Static Rigid Body** and can be collided with, but they don't move, and PhysX collisions and forces don't affect them. Static entities can use any collider type.
-* **Kinematic** -- Kinematic entities have a **PhysX Dynamic Rigid Body** component and movement that is driven by script. Kinematic entities can be collided with, but PhysX collisions and forces don't affect them. Kinematic entities can use any collider type.
+* **Kinematic** -- Kinematic entities have a **PhysX Dynamic Rigid Body** component and movement that is driven by code or script. Kinematic entities can be collided with, but PhysX collisions and forces don't affect them. Kinematic entities can use any collider type.
 * **Simulated** -- Simulated entities have a **PhysX Dynamic Rigid Body** component and simulated movement that results from PhysX collisions and forces. Simulated entities can use only primitive and convex colliders.
 
 ## PhysX collider assets
