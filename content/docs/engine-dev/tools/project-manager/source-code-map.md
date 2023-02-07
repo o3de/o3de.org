@@ -12,8 +12,10 @@ This information is for developers of the **Project Manager** tool. If you're a 
 This contains brief summaries of various class's functionality and role. If available, there are additional links in the table of contents, either with expanded information, or github links.
 {{< /note >}}
 
-## Map
-- <b>Startup Classes</b>
+## Startup classes
+
+### Overview
+
     - main.cpp [[cpp file](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/main.cpp) ]
         - Entry point for the Project Manager. Initiates the [Application main loop](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/main.cpp#L28).
     - [Application](#application)  [[header](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/Application.h) ] [[cpp file](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/Application.cpp) ]
