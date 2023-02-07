@@ -40,7 +40,7 @@ The setup for each joint type is the same.
 
    1. Create a new entity. Right click in **Perspective** and choose **Create enity** from the context menu.
 
-   1. Add a **PhysX Static Rigid Body** or a **PhysX Dynamic Rigid Body** component depending if you want the leader to move or not.
+   1. Add a **PhysX Static Rigid Body** or a **PhysX Dynamic Rigid Body** (type *kinematic* or *simulated*) component depending if you want the leader to move or not.
 
    1. Add a **PhysX Collider** component to the entity.
 
@@ -48,7 +48,7 @@ The setup for each joint type is the same.
 
    1. Create a new entity.
 
-   1. Add a **PhysX Dynamic Rigid Body** component to the entity.
+   1. Add a **PhysX Dynamic Rigid Body** (type *simulated*) component to the entity.
 
    1. Add a **PhysX Collider** component to the entity. This is required for angle limits to work correctly. Joints still work without a PhysX Collider component but angle limits and might not be enforced. This is also true when using trigger colliders.
 
