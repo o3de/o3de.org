@@ -25,7 +25,7 @@ This contains brief summaries of various class's functionality and role. If avai
     - [ScreensCtrl](#screensctrl)  [[header](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ScreensCtrl.h) ] [[cpp file](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ScreensCtrl.cpp) ]
         - Container structure for all Project Manager Screens and GUI Widgets. Also houses primary transition code for facilitating Project Manager's business logic.
     - ScreenFactory  [[header](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ScreenFactory.h) ] [[cpp file](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ScreenFactory.cpp) ]
-        - Helper class for ScreensCtrl that routes `ProjectManagerScreen` enums to appropriate ScreenWidget constructor, invokes that construtor, and returns an instance of a given screen for the Project Manager's business logic.
+        - Helper class for `ScreensCtrl` that routes `ProjectManagerScreen` enums to appropriate `ScreenWidget` constructor, invokes that constructor, and returns an instance of a given screen for the Project Manager's business logic.
 
 
 ### Application
