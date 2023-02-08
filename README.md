@@ -12,7 +12,7 @@ If you are working on the documentation or interested in seeing a specific branc
 
 To build the O3DE website locally, you need the items below.
 - `o3de.org` repository
-- **Hugo (extended version)**, a static site generator that builds the website.
+- **Hugo (extended version 0.93 or later)**, a static site generator that builds the website.
 - **npm** (or another package manager) to install the **bootstrap** package, which Hugo needs for styling.
 
 ### Download the repository
@@ -25,7 +25,7 @@ You can download this repository or clone it onto your local machine. Cloning th
 ### Setup Hugo, npm, and dependencies
 1. To install **Hugo (extended version)**, follow the instructions for your machine in the [Hugo documentation](https://gohugo.io/getting-started/installing). 
    
-    *Note: You must install the **extended version** of Hugo.*
+    *Note: You must install the **extended version** of Hugo, version 0.93 or later. If downloading a prebuilt binary, make sure the filename starts with `hugo_extended`.*
 
 2. To install **npm**, follow the instructions in the [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) documentation. Installing npm also installs **Node.js**.
 
@@ -89,7 +89,39 @@ You can now view the O3DE website on your local machine! Find the O3DE documenta
 
 ## Troubleshooting
 
-### Issue
+### Issue: Module not compatible
+
+Running `hugo server` outputs the following warning:
+
+```cmd
+WARN ... Module "project" is not compatible with this Hugo version; run "hugo mod graph" for more information.
+```
+
+#### Description
+
+This indicates that you are not using the correct edition or version of Hugo. The `o3de.org` website requires Hugo extended edition, version 0.93 or later.
+
+#### Steps to fix
+
+Install the latest release of **Hugo extended**, following the instructions for your machine in the [Hugo documentation](https://gohugo.io/getting-started/installing). If downloading a prebuilt binary, make sure the filename starts with `hugo_extended`.
+
+### Issue: Render of page failed / Can't evaluate field Store in page.Page
+
+Running `hugo server` outputs the following error:
+
+```cmd
+ERROR ... render of "page" failed: execute of template failed: template: blog/single.html:8:7: executing "main" at <partial "blog/content.html" .>: error calling partial: "C:\o3de.org\layouts\partials\blog\content.html:10:17": execute of template failed: template: partials/blog/content.html:10:17: executing "partials/blog/content.html" at <.Page.Store.Get>: can't evaluate field Store in type page.Page
+```
+
+#### Description
+
+This indicates that you are using an older version of Hugo that does not support the field page.Store.
+
+#### Steps to fix
+
+Install the latest release of **Hugo extended**, following the instructions for your machine in the [Hugo documentation](https://gohugo.io/getting-started/installing). If downloading a prebuilt binary, make sure the filename starts with `hugo_extended`.
+
+### Issue: SCSS processing failed
 
 Running `hugo server` outputs the following error:
 
@@ -97,17 +129,16 @@ Running `hugo server` outputs the following error:
 Error: Error building site: TOCSS: failed to transform "blah.sass" (text/x-sass): SCSS processing failed: file "stdin", line 26, col 1: File to import not found or unreadable: bootstrap/scss/functions.
 ```
 
-### Description
+#### Description
 
 This indicates that your local `o3de.org` repository may be missing bootstrap, or that the wrong version is installed. Similar errors may indicate that other dependent packages are missing.
 
 For a complete list of required dependencies, see `package.json`.
 
-### Steps to fix
+#### Steps to fix
 
 1. Open a shell or terminal and navigate to `o3de.org` repository: `cd <path-to-repo>/o3de.org`
 
 2. Verify that the required dependencies have been installed by running the command, `npm list`. This outputs the list of dependencies and indicates whether or not they've been installed.
 
 3. Install missing dependencies. You can install all of the dependencies by running the command, `npm install`. Or, you can install a specific dependency. For example: `npm install bootstrap@4.6.1`
-
