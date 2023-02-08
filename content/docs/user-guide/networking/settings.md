@@ -39,7 +39,7 @@ connect
 Console commands in configuration files can be passed to client and server launchers using the `console-command-file` option, for example `MultiplayerSample.ServerLauncher.exe --console-command-file=launch_server.cfg`.
 
 ## Client settings
-The following [console variables](/docs/user-guide/appendix/cvars/) control client behavior.
+The `cl` CVARs control client behavior.
 
 | Setting                | Description                                                                                                                                                                             | Default   | Notes |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|-------|
@@ -68,7 +68,7 @@ The following [console variables](/docs/user-guide/appendix/cvars/) control clie
 
 ## Server settings
 
-The following [console variables](/docs/user-guide/appendix/cvars/) control server behavior.
+The `sv` CVARs control server behavior.
 
 | Setting                 | Description                                                                     | Default | Notes                |
 |-------------------------|---------------------------------------------------------------------------------|---------|----------------------|
@@ -108,14 +108,14 @@ The following [console variables](/docs/user-guide/appendix/cvars/) control serv
 | sv_RewindVolumeExtrudeDistance | The amount to increase rewind volume checks to account for fast moving entities. | 50      |       |
 
 ### Editor server settings
-These settings control how a server will be launched during the "play-in-editor" (CTRL+G) mode.
+The `editorsv` settings control how a server will be launched during the "play-in-editor" (CTRL+G) mode.
 
 | Setting                            | Description                                                                                                                                                                                                                                                                                                              | Default   | Notes                                                                                                                                            |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | editorsv_isDedicated               | Whether to init as a server expecting data from an Editor. Do not modify unless you're sure of what you're doing.                                                                                                                                                                                                        | False     ||
 | editorsv_port                      | The server port the Editor will connect to when entering play-mode.                                                                                                                                                                                                                                                      | 33450     | Only valid when `editorsv_enabled` is true.                                                                                                      | 
 | editorsv_serveraddr                | The address of the server the Editor will connect to when entering play-mode.                                                                                                                                                                                                                                            | LocalHost | Only valid when `editorsv_enabled` is true.                                                                                                      |
-| editorsv_process                   | The file path to your project’s ServerLauncher. If `editorsv_enabled` and `editorsv_launch` is true, the Editor will attempt to launch its own server when entering game mode. By default it looks for the ServerLauncher executable inside the same folder where Editor lives; `editorsv_process` overrides that path. | ""        |                                                                                                                                                  |
+| editorsv_process                   | The file path to your project's ServerLauncher. If `editorsv_enabled` and `editorsv_launch` is true, the Editor will attempt to launch its own server when entering game mode. By default it looks for the ServerLauncher executable inside the same folder where Editor lives; `editorsv_process` overrides that path. | ""        |                                                                                                                                                  |
 | editorsv_rhi_override              | If `editorsv_launch` is true, the server will use the same render hardware interface (rhi) that the editor is using. For example, if the editor is using DX12, then the new server will be launched using DX12. `editorsv_rhi_override` can be used to override the rhi.                                                 | ""        | If you don't need to see the launched server's graphics then set `editorsv_rhi_override=null`, the null renderer.                                |
 | editorsv_enabled                   | If true the Editor will attempt to connect to a Multiplayer server upon entering game mode.                                                                                                                                                                                                                              | False     ||
 | editorsv_hidden                    | If true the Editor will automatically launch a server upon entering game mode. Set `editorsv_hidden` to true if you want the launched server to be started as a background process without any visible window.                                                                                                           | False     |                                                                                                                                                  |  
@@ -124,7 +124,7 @@ These settings control how a server will be launched during the "play-in-editor"
 
 
 ### Dual client server settings
-These settings control behavior on both the client and server.
+The `bg` settings control behavior on both the client and server.
 
 | Setting                                             | Description                                                                             | Default | Notes |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------|---------|-------|
@@ -141,7 +141,7 @@ These settings control behavior on both the client and server.
 
 
 ## Networking settings
-These settings control networking behavior.
+The `net` settings control networking behavior.
 
 ### AzNetworking layer
 | Setting                             | Description                                                                                                                         | Default         | Notes                |
