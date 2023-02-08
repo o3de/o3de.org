@@ -175,10 +175,10 @@ The PaintBrush provides an EBus that exposes high-level painting APIs for any co
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
 | `StartPaintSession` | Starts a runtime paint session and creates the temporary data buffers needed for modification. | PaintableEntityId: The entity that contains a paintable component.  | `Uuid`: The new paint session ID. | Yes |
-| `EndPaintSession` | End the runtime paint session for the given ID and cleans up the temporary data buffers. | sessionId: The paint session ID to end. | None | Yes |
-| `BeginBrushStroke` | Start a brush stroke for a paint session with the given brush settings for color/intensity/opacity. | sessionId: The paint session ID, brushSettings: The paint brush settings for this brush stroke. | None  | Yes |
-| `EndBrushStroke` | End a brush stroke for a paint session. | sessionId: The paint session ID. | None  | Yes |
+| `EndPaintSession` | Ends the runtime paint session for the given ID and cleans up the temporary data buffers. | sessionId: The paint session ID to end. | None | Yes |
+| `BeginBrushStroke` | Starts a brush stroke for a paint session with the given brush settings for color/intensity/opacity. | sessionId: The paint session ID, brushSettings: The paint brush settings for this brush stroke. | None  | Yes |
+| `EndBrushStroke` | Ends a brush stroke for a paint session. | sessionId: The paint session ID. | None  | Yes |
 | `IsInBrushStroke` | Returns whether or not a paint session is currently in the middle of a brush stroke. | sessionId: The paint session ID. | `bool`: True if a brush stroke has been started, false if not.  | Yes |
-| `ResetBrushStrokeTracking` | Reset the brush tracking so that the next action will be considered the start of a stroke movement instead of a continuation. | sessionId: The paint session ID. | None  | Yes |
-| `PaintToLocation` | Apply a paint color to the underlying data from the previous location to the provided location using the given brush settings. | sessionId: The paint session ID, brushCenter: The location to move the center of the brush to, brushSettings: The paint brush settings for this brush stroke. | None  | Yes |
-| `SmoothToLocation` | Smooth the underlying data from the previous location to the provided location using the given brush settings. | sessionId: The paint session ID, brushCenter: The location to move the center of the brush to, brushSettings: The paint brush settings for this brush stroke. | None  | Yes |
+| `ResetBrushStrokeTracking` | Resets the brush tracking so that the next action will be considered the start of a stroke movement instead of a continuation. | sessionId: The paint session ID. | None  | Yes |
+| `PaintToLocation` | Applies a paint color to the underlying data from the previous location to the provided location using the given brush settings. | sessionId: The paint session ID, brushCenter: The location to move the center of the brush to, brushSettings: The paint brush settings for this brush stroke. | None  | Yes |
+| `SmoothToLocation` | Smooths the underlying data from the previous location to the provided location using the given brush settings. | sessionId: The paint session ID, brushCenter: The location to move the center of the brush to, brushSettings: The paint brush settings for this brush stroke. | None  | Yes |

@@ -88,7 +88,7 @@ The `TerrainMacroMaterialRequestBus` is an internal system bus that is only inte
 
 ## TerrainMacroMaterialNotificationBus
 
-The TerrainMacroMaterialNotificationBus is an internal EBus used by the terrain rendering and editing systems to monitor changes to Terrain Macro Materials. Other systems generally do not need to use this EBus since nothing outside the terrain system should need any information about individual Terrain Macro Materials. However, if a use case arises, the following notification functions on the TerrainMacroMaterialNotificationBus EBus interface can be used to monitor Terrain Macro Material changes.
+The `TerrainMacroMaterialNotificationBus` is an internal EBus used by the terrain rendering and editing systems to monitor changes to Terrain Macro Materials. Other systems generally do not need to use this EBus since nothing outside the terrain system should need any information about individual Terrain Macro Materials. However, if a use case arises, the following notification functions on the `TerrainMacroMaterialNotificationBus` EBus interface can be used to monitor Terrain Macro Material changes.
 
 | Notification Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
@@ -99,7 +99,7 @@ The TerrainMacroMaterialNotificationBus is an internal EBus used by the terrain 
 
 ## TerrainMacroColorModificationBus
 
-The TerrainMacroColorModificationBus is an internal EBus used by the terrain editing systems to modify the Terrain Macro Material color texture. This is a lower-level API, most systems should use the higher-level [Paint Brush](/docs/user-guide/components/reference/paintbrush/paintbrush) painting API to modify the texture.
+The `TerrainMacroColorModificationBus` is an internal EBus used by the terrain editing systems to modify the Terrain Macro Material color texture. This is a lower-level API, most systems should use the higher-level [Paint Brush](/docs/user-guide/components/reference/paintbrush/paintbrush) painting API to modify the texture.
 
 | Notification Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
@@ -114,7 +114,7 @@ The TerrainMacroColorModificationBus is an internal EBus used by the terrain edi
 
 ## TerrainMacroColorModificationNotificationBus
 
-The TerrainMacroColorModificationNotificationBus is an internal EBus used by the terrain editing systems to modify the Terrain Macro Material color texture. This is a lower-level API, most systems should use the higher-level [Paint Brush](/docs/user-guide/components/reference/paintbrush/paintbrush) painting API to modify the texture.
+The `TerrainMacroColorModificationNotificationBus` is an internal EBus used by the terrain editing systems to modify the Terrain Macro Material color texture. This is a lower-level API, most systems should use the higher-level [Paint Brush](/docs/user-guide/components/reference/paintbrush/paintbrush) painting API to modify the texture.
 
 | Notification Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
