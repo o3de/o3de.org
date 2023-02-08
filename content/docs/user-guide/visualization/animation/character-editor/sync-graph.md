@@ -248,7 +248,7 @@ Synchronizing the primary and secondary graphs involves the following steps:
 
 1. Placing a Lua script component and Lua script on the primary entity.
 
-The Lua scripts synchonize the two graphs by handling animation graph events in O3DE's [Event Bus (EBus)](/docs/user-guide/programming/ebus/) system.
+The Lua scripts synchonize the two graphs by handling animation graph events in O3DE's [Event Bus (EBus)](/docs/user-guide/programming/messaging/ebus/) system.
 
 ### Getting Input from the Player 
 

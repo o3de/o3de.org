@@ -114,7 +114,7 @@ Inside of your Gem code, you also manage the connection and disconnection of you
 
 For singleton handlers where you only need one interface to communicate across DLLs, consider using [AZ::Interface](/docs/user-guide/programming/messaging/az-interface) and [AZ:Event](/docs/user-guide/programming/messaging/az-event) directly, without EBus.
 
-For details on using EBus, see [Working with the Event Bus (EBus) System](/docs/user-guide/programming/ebus)
+For details on using EBus, see [Working with the Event Bus (EBus) System](/docs/user-guide/programming/messaging/ebus)
 
 ## Component entity system
 

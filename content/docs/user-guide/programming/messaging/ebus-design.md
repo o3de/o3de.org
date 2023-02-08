@@ -34,7 +34,7 @@ You can configure EBuses for various usage patterns. This section presents commo
 
 The simplest configuration is a many-to-one (or zero) communication bus, much like a singleton pattern.
 
-![Many to one pattern](/images/user-guide/programming/messaging/ebus/ebus-in-depth-1.png)
+{{< image-width src="/images/user-guide/programming/messaging/ebus/ebus-in-depth-1.png" width="700" alt="Many to one pattern" >}}
 
 There is at most one handler, to which any sender can dispatch events. Senders need not manually check and de-reference pointers. If no handler is connected to the bus, the event is simply ignored.
 
@@ -50,7 +50,8 @@ static const AZ::EBusAddressPolicy AddressPolicy = AZ::EBusAddressPolicy::Single
 
 Another common configuration is one in which many handlers can be present. You can use this configuration to implement observer patterns, subscriptions to system events, or general-purpose broadcasting.
 
-![Many handlers](/images/user-guide/programming/messaging/ebus/ebus-in-depth-2.png)
+{{< image-width src="/images/user-guide/programming/messaging/ebus/ebus-in-depth-2.png" width="700" alt="Many handlers" >}}
+
 
 Events to the handlers can be received in defined or undefined order. You specify which one in the `HandlerPolicy` trait.
 
@@ -90,7 +91,7 @@ EBuses also support addressing based on a custom ID. Events addressed to an ID a
 
 A common use for this approach is for communication among the components of a single entity, or between components of a separate but related entity. In this case the entity ID is the address.
 
-![Addressing based on specific IDs](/images/user-guide/programming/messaging/ebus/ebus-in-depth-3.png)
+{{< image-width src="/images/user-guide/programming/messaging/ebus/ebus-in-depth-3.png" width="700" alt="Addressing based on specific IDs" >}}
 
 #### Example Without Address Ordering
 
@@ -129,7 +130,7 @@ using BusIdOrderCompare = AZStd::greater<BusIdType>;
 
 In the previous configuration, only one handler is allowed per address. This is often desirable to enforce ownership of an EBus for a specific ID, as in the singleton case above. However, if you want more than one handler per address, you can configure the EBus accordingly:
 
-![More than one handler per address](/images/user-guide/programming/messaging/ebus/ebus-in-depth-4.png)
+{{< image-width src="/images/user-guide/programming/messaging/ebus/ebus-in-depth-4.png" width="700" alt="More than one handler per address" >}}
 
 #### Example: Without Address Ordering
 

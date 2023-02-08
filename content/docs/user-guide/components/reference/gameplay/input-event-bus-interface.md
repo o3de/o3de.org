@@ -20,7 +20,7 @@ You can use the `GameplayNotificationBus` to work with the `InputSubComponent`. 
 
 Use the following notification functions with the event notification bus interface to communicate with other components of your game.
 
-For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
+For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/).
 
 ###  
 
