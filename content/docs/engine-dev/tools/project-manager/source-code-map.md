@@ -16,8 +16,9 @@ This contains brief summaries of various class's functionality and role. If avai
 
 ### Overview
 
-    - main.cpp [[cpp file](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/main.cpp) ]
-        - Entry point for the Project Manager. Initiates the [Application main loop](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/main.cpp#L28).
+| Class | Source Code | Description |
+| - | - | - |
+| main.cpp | [[cpp file](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/main.cpp) ] | Entry point for the Project Manager. Initiates the [Application main loop](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/main.cpp#L28).
     - [Application](#application)  [[header](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/Application.h) ] [[cpp file](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/Application.cpp) ]
         - Houses core startup code and configuration loading for Qt framework, Logging, Python Bindngs and O3DE Engine Registration. Facilitates prior housework to starting up the application main loop, and clean up when tearing down.
     - [ProjectManagerWindow](#projectmanagerwindow)  [[header](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ProjectManagerWindow.h) ] [[cpp file](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ProjectManagerWindow.cpp) ]
