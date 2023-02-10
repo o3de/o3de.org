@@ -12,7 +12,7 @@ This information is for developers of the **Project Manager** tool. If you're a 
 This contains brief summaries of various class's functionality and role. If available, there are additional links in the table of contents, either with expanded information, or github links. All documentation reflects code as of commit [(b79bd3df1f)](https://github.com/o3de/o3de/tree/b79bd3df1fe5d4c2a639d3921a29bd0d95712f6c) 
 {{< /note >}}
 
-## Startup classes
+## Startup and Screen Management
 
 ### Overview
 
@@ -23,7 +23,8 @@ This contains brief summaries of various class's functionality and role. If avai
 |[ProjectManagerWindow](#projectmanagerwindow) | [header](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ProjectManagerWindow.h)  [cpp file](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ProjectManagerWindow.cpp) | Constructs the application's `QMainWindow` and `DownloadController`, and prepares all relevant transition screens for the Project Manager.
 |[ScreensCtrl](#screensctrl) | [header](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ScreensCtrl.h) [cpp file](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ScreensCtrl.cpp) | Container structure for all Project Manager Screens and GUI Widgets. Also houses primary transition code for facilitating Project Manager's business logic.
 |ScreenFactory | [header](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ScreenFactory.h) [cpp file](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ScreenFactory.cpp) | Helper class for `ScreensCtrl` that routes `ProjectManagerScreen` enums to appropriate `ScreenWidget` constructor, invokes that constructor, and returns an instance of a given screen for the Project Manager's business logic.
-
+|ScreenDefs | [header](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ScreenDefs.h) | Contains definitions for `ProjectManagerScreen` enum, which describes all possible types of screens in Project Manager. It also defines a hash function, and a mapping to appropriate string equivalents for each enum.|
+|[ScreenWidget](#screenwidget) | [header](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ScreenWidget.h) | The parent class to all screens in Project Manager. It contains all necessary stubs for screen management and transition. `ScreensCtrl` is defined in terms of `ScreenWidget`, so that all transition logic is polymorphic.|
 
 ### Application
 
@@ -118,5 +119,24 @@ All functions are summarized as follows:
     - `NotifyCurrentScreen` for newly created screen.
 * Update `m_screenMap` with pointer to the new screen.
 * Connect slots for transition functions for new screen.
+
+[Back to Top](#overview)
+
+
+### ScreenWidget
+If you were to check the header file, it would only contain stub functions. In this section we will explain the high level purpose of each function, so that it's easier to recognize what the subclasses are doing when they override a given function.
+
+| Function | Description |
+| - | - |
+| [`ScreenWidget::GetScreenEnum`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ScreenWidget.h#L33) | Each subclass of `ScreenWidget` will use this function to define what type of screen is currently active. |
+| [`ScreenWidget::IsReadyForNextScreen`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ScreenWidget.h#L37) | Meant to validate if a given [screen is ready for a transition](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ScreensCtrl.cpp#L77), or if it must pause for some reason (for example, an uninterruptable task is taking place). Currently it is unused.|
+| [`ScreenWidget::IsTab`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ScreenWidget.h#L41) | This function declares if a given screen is a tab in the `m_tabWidget` data structure. This is used to process tabs as an edgecase in [`ScreensCtrl::ForceChangeToScreen`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ScreensCtrl.cpp#L118) and [`ScreensCtrl::DeleteScreen`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ScreensCtrl.cpp#L223). The classes which override this function are [`GemCatalogScreen`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/GemCatalog/GemCatalogScreen.cpp#L782), [`ProjectsScreen`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ProjectsScreen.cpp#L431), [`ProjectGemCatalogScreen`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ProjectGemCatalogScreen.cpp#L121), and [`EngineScreenCtrl`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/EngineScreenCtrl.cpp#L68).|
+| [`ScreenWidget::GetTabText`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ScreenWidget.h#L45) | Gets the corresponding string value of a tab screen, if defined by the subclass.|
+| [`ScreenWidget::ContainsScreen`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ScreenWidget.h#L50) | There exist some screens in Project Manager, like [`EngineScreenCtrl`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/EngineScreenCtrl.cpp#L75), that contain other smaller screens inside of them. This can be used to check if a given screen exists inside of a parent screen. |
+| [`ScreenWidget::GoToScreen`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ScreenWidget.h#L54) | Defines a transition function where the subclass decides whether or not to move onto a certain screen. |
+| [`ScreenWidget::Init`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ScreenWidget.h#L57) | This function occurs shortly after a screen's constructor runs in [`ScreenFactory::BuildScreen`](https://github.com/o3de/o3de/blob/c33daa6fc7f2ce175fca1e8325b9feac0c0d4d4e/Code/Tools/ProjectManager/Source/ScreenFactory.cpp#L78). This is meant to setup any hooks into the system that cannot be done at construction time. Two examples of this can be found in [`CreateAGemScreen`](https://github.com/o3de/o3de/blob/c33daa6fc7f2ce175fca1e8325b9feac0c0d4d4e/Code/Tools/ProjectManager/Source/CreateAGemScreen.cpp#L79-L93) and [`EditAGemScreen`](https://github.com/o3de/o3de/blob/c33daa6fc7f2ce175fca1e8325b9feac0c0d4d4e/Code/Tools/ProjectManager/Source/EditAGemScreen.cpp#L48-L64), the reasoning of which can be found [here](https://github.com/o3de/o3de/pull/12732/files/a8af31a375ed97152b0c0ae785c85a538c918de0#r1014510710). |
+| [`ScreenWidget::NotifyCurrentScreen`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ScreenWidget.h#L61) | A function that is called anytime the screen needs to refresh itself. All necessary refresh logic should be expressed here. |
+
+`ScreenWidget` also defines various Qt [`signals`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ScreenWidget.h#L65-L70) that are used to facilitate transitions by connecting to Qt [`slots`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ScreensCtrl.cpp#L201-L205) as defined in `ScreensCtrl::ResetScreen`.
 
 [Back to Top](#overview)
