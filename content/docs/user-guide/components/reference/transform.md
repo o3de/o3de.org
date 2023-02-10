@@ -39,7 +39,7 @@ Entities that can't be moved at run time. Some systems in O3DE treat static enti
 
 **TransformBus** is the request bus for the **Transform** component. An entity's transform is the translation, rotation, and scale information.
 
-For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
+For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/).
 
 Use the following request functions with the EBus interface to communicate with other components of your game.
 
@@ -490,7 +490,7 @@ Boolean
 
 **TransformNotificationBus** is the notification bus for the **Transform** component. Use the following notification functions with the EBus interface to communicate with other components of your game.
 
-For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
+For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/).
 
 ### OnTransformChanged 
 

@@ -36,4 +36,4 @@ If you want to place a UI canvas on a 3D mesh that a user can interact with, use
 |-|-|-|-|-|
 | `GetCanvas` | Returns the name of the UI Canvas asset set in the **Canvas pathname** property. | None | Name: String | Yes |
 
-For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
+For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/).
