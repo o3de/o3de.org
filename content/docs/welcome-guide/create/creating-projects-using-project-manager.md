@@ -14,7 +14,7 @@ This tutorial provides an introduction to project configuration and building in 
 
 At the end of the tutorial, you'll have a new O3DE project based on the default project template, ready to open in **O3DE Editor**.
 
-{{< youtube-width id="_BhkXOBDYGA?start=138" title="Installing O3DE for Windows - Create a Project" >}}
+{{< youtube-width id="_BhkXOBDYGA?start=142" title="Installing O3DE for Windows - Create a Project" >}}
 
 ## Prerequisites
 

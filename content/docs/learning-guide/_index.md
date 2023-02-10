@@ -24,9 +24,17 @@ This guide contains video tutorials, written step-by-step tutorials, and sample 
 
 {{< youtube-width id="CQmjAxr7LZs" title="What is O3DE?" >}}
 
+### Installing O3DE for Windows
+
+{{< youtube-width id="_BhkXOBDYGA" title="Installing O3DE for Windows" >}}
+
+### Creating Projects Using Project Manager
+
+{{< youtube-width id="_BhkXOBDYGA?start=142" title="Installing O3DE for Windows - Create a Project" >}}
+
 ### Setting up O3DE from GitHub
 
-{{< youtube-width id="CIw9UoMMeX8" title="Setting up O3DE from GitHub" >}}
+{{< youtube-width id="GZF_6SkAXPw" title="Setting up O3DE from GitHub" >}}
 
 ### Creating Projects Using the Command Line
 
