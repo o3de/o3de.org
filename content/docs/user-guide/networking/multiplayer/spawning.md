@@ -5,7 +5,9 @@ description: A reference for spawning and registering network player entities in
 weight: 700
 ---
 
-In most scenarios, when a player joins a multiplayer session, a controllable networked entity must be spawned for the player. The **Multiplayer Gem** in **Open 3D Engine (O3DE)** provides an interface to specify an *autonomous* entity for a player. For more information about autonomous roles, refer to the [Multiplayer Gem Overview](overview#multiplayer-entity-roles).
+In most networking multiplayer games, when a player joins a session, the host must spawn an [*autonomous*](/docs/user-guide/networking/multiplayer/overview.md#multiplayer-entity-roles) networked entity for the player. Likewise, when a player leaves, the host must remove the entity and clean up. In **Open 3D Engine (O3DE)**, you can set this up exactly, or handle join and leave events in other ways by using `OnPlayerJoin` and `OnPlayerLeave` events, which are provided by the **Multiplayer Gem**'s `IMultiplayerSpawner` interface. Alternatively, to get started sooner, you can bypass programming these events and use the **Simple Player Spawner** component, which sets up `OnPlayerJoin` and `OnPlayerLeave` for this common use case.
+
+## `IMultiplayerSpawner` interface
 
 *IMultiplayerSpawner* is an [`AZ::Interface<T>`](/docs/user-guide/programming/messaging/az-interface) that provides a mechanism to tell the Multiplayer Gem what to spawn and where to spawn it when a player joins a session. `IMultiplayerSpawner` also provides a hook to clean up when a player leaves. All multiplayer games should provide an implementation to handle the events delivered for player join and player leave events.
 
@@ -27,8 +29,15 @@ The `OnPlayerLeave` method of `IMultiplayerSpawner` provides a hook so that when
 
 `OnPlayerLeave` also takes a disconnect reason which allows responding to different kinds of disconnects. For example, it may be undesirable to clean up objects if a player times out if they can attempt to reconnect to the session.
 
-### Spawning examples in MultiplayerSample
 
-A practical example of an implementation for a spawner is [`MultiplayerSampleSystemComponent`](https://github.com/o3de/o3de-multiplayersample/blob/development/Gem/Code/Source/MultiplayerSampleSystemComponent.cpp) in the  [MultiplayerSample project](https://github.com/o3de/o3de-multiplayersample/). MultiplayerSample implements a "round robin"-style spawning system that gathers entities with `NetworkPlayerSpawnerComponents`. `MultiplayerSampleSystemComponent` then queries that system during `OnPlayerJoin`. `OnPlayerLeave` simply marks the entity passed in for removal. 
+## Examples in MultiplayerSample Project
+
+A practical example of an implementation for a spawner is [`MultiplayerSampleSystemComponent`](https://github.com/o3de/o3de-multiplayersample/blob/2c84827ffb20082b8c16fc0edc65cd49226f3cd2/Gem/Code/Source/MultiplayerSampleSystemComponent.cpp) in the  [MultiplayerSample project](https://github.com/o3de/o3de-multiplayersample/). MultiplayerSample Project implements a "round robin"-style spawning system that gathers entities with `NetworkPlayerSpawnerComponents`. `MultiplayerSampleSystemComponent` then queries that system during the `OnPlayerJoin` event. The `OnPlayerLeave` event simply marks the entity that's passed in for removal. 
 
 For more information on the MultiplayerSample project, see the [MultiplayerSample README](https://github.com/o3de/o3de-multiplayersample/blob/development/README.md).
+
+## Simple Player Spawning component
+
+The Simple Player Spawner level component provides a straightforward way to set up `OnPlayerJoin` and `OnPlayerLeave` events. It implements a common use case for handling those events, specifically: when a player joins, create a networked entity for that player, and when a player leaves, remove that entity.
+
+For more information, refer to [Simple Player Spawning component](/docs/user-guide/components/reference/multiplayer/simple-player-spawner). 
