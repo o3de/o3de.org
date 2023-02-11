@@ -4,7 +4,7 @@ description: Learn how to use script events with Lua in Open 3D Engine (O3DE).
 weight: 300
 ---
 
-Lua scripts can use script events to communicate with each other. There are two example scripts that show this communication, both available in the `Gems\ScriptEvents\Assets\Scripts\Example` directory. They are called `ScriptEvents_Addressable.lua` and `ScriptEvents_Broadcast.lua`. If an EBus is addressed, events are sent to a specific address ID. Events that are broadcast globally are received at all addresses. For more information, see [The Open 3D Engine Event Bus (EBus) System](/docs/user-guide/programming/ebus/).
+Lua scripts can use script events to communicate with each other. There are two example scripts that show this communication, both available in the `Gems\ScriptEvents\Assets\Scripts\Example` directory. They are called `ScriptEvents_Addressable.lua` and `ScriptEvents_Broadcast.lua`. If an EBus is addressed, events are sent to a specific address ID. Events that are broadcast globally are received at all addresses. For more information, see [The Open 3D Engine Event Bus (EBus) System](/docs/user-guide/programming/messaging/ebus/).
 
 ### ScriptEvents_Addressable.lua
 

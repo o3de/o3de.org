@@ -421,7 +421,7 @@ EBus handlers must be connected before they can receive events. Make sure your c
 MyBus::BusConnect();
 ```
 
-Depending on the type of bus, you might have to specify an ID to connect to. For more information, refer to [The Open 3D Engine Event Bus (EBus) System](/docs/user-guide/programming/ebus/).
+Depending on the type of bus, you might have to specify an ID to connect to. For more information, refer to [The Open 3D Engine Event Bus (EBus) System](/docs/user-guide/programming/messaging/ebus/).
 
 ## Additional material
 

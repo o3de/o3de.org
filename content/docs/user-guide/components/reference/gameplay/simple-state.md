@@ -43,4 +43,4 @@ The **Simple State** component provides a simple state machine. Each state is re
 |-|-|-|-|-|
 | `OnStateChanged` | Notifies listeners that the state has changed. | None | Old State: String, New State: String | Yes |
 
-For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
+For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/).

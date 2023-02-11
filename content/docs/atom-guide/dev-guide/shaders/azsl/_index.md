@@ -222,7 +222,7 @@ Just like in HLSL, the following rules apply for classes:
   
 ASZL adds the following extended rules for classes:
 - Can instantiate class type variables in an SRG. 
-- Cannot inherit classes, unlike in HLSL. .
+- until 1.7.35: classes cannot inherit. Class inheritance is introduced in azslc 1.8.9 released on December 2022.
 
 ### Matrices
 AZSL follows the HLSL convention to use column major matrices by default. However, in O3DE runtime, the default convention is row major matrices. When declaring a matrix, you can specify the order by using the `row_major` or `column_major` keywords.  
@@ -545,4 +545,4 @@ The problem happens because AZSL does not parse in 2 sweeps, it has only one pas
 source.azsl(5,3) : warning: undeclared sub-symbol in idexpression: a
 ```
   
-This shouldn't be a problem because AZSLc doesn't change the layout of the inner section of classes, so normally doesn't need to be successful identifying class fields. But for structures or enums it would be another story, since they can be used as constant buffer resources, or option values, they may undergo reflection and scope migration + name mutation and collision avoidance during transpilation to HLSL. So it would be a problem if such a tracking miss would happen to a symbol that undergo any of that. Normally it shouldn't happen since structs can't have methods in AZSL. But for safety, you can 
+This shouldn't be a problem because AZSLc doesn't change the layout of the inner section of classes, so normally doesn't need to be successful identifying class fields. But for structures or enums it would be another story, since they can be used as constant buffer resources, or option values, they may undergo reflection and scope migration + name mutation and collision avoidance during transpilation to HLSL. So it would be a problem if such a tracking miss would happen to a symbol that undergo any of that. Normally it shouldn't happen since structs can't have methods in AZSL. But for safety, you can simply apply the following coding rule: always define your methods out-of-class (we call this, deported definitions). Use one-line declarations in-class, and code the body of the functions after the end of the class declaration.

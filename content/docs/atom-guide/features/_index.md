@@ -104,7 +104,7 @@ Tonemapping
 
 Atom's default tonemapping is [ACES](https://acescentral.com/), which simplifies and standardizes color management by maintaining artistic integrity and fidelity. It allows the best reproduction of color from the renderer to the display and across many modern DCC applications that support ACES. 
 
-*Related to: [Display Mapper component](/docs/user-guide/components/reference/atom/display-mapper/), [Tonemapping (Atom Sample Viewer)](/docs/atom-guide/atom-sample-viewer/graphics-feature-samples/#tonemapping)*
+*Related to: [Display Mapper component](/docs/user-guide/components/reference/atom/display-mapper/)*
 
 
 Color Grading  
@@ -121,7 +121,7 @@ Post-processing Volumes
 
 - A **PostFX Gradient Weight Modifier** component sets up a more complex blend by using a gradient signal as a masking operation.
  
-*Related to: PostFX components [PostFX Layer](/docs/user-guide/components/reference/atom/postfx-layer/), [PostFX Gradient Weight](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/), [PostFX Shape Weight Modifier](/docs/user-guide/components/reference/atom/postfx-shape-weight-modifier/), [PostFX Radius Weight Modifier](/docs/user-guide/components/reference/atom/postfx-radius-weight-modifier/)), [Post Process Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html)*
+*Related to: PostFX components ([PostFX Layer](/docs/user-guide/components/reference/atom/postfx-layer/), [PostFX Gradient Weight](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/), [PostFX Shape Weight Modifier](/docs/user-guide/components/reference/atom/postfx-shape-weight-modifier/), [PostFX Radius Weight Modifier](/docs/user-guide/components/reference/atom/postfx-radius-weight-modifier/)), [Post Process Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html)*
 
 
 Bloom  
@@ -160,10 +160,5 @@ Motion Vectors
 Multi-scene   
 : Support for rendering to multiple scenes. An example of this implementation can be found in the Atom Sample Viewer. 
 
-*Related to: [Multi-scene RPI Sample (Atom Sample Viewer)](/docs/atom-guide/atom-sample-viewer/rpi-samples#multi-scene)* 
-
-
 Multi-render Pipeline   
 : Support for using multiple render pipelines in a scene. Multiple render pipelines allow you to switch render pipelines at runtime. An example of this implementation can be found in the Atom Sample Viewer.
-
-*Related to: [Multi-render RPI Sample (Atom Sample Viewer)](/docs/atom-guide/atom-sample-viewer/rpi-samples/#multi-render-pipeline)* 

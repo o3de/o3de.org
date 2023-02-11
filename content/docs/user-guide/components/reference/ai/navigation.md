@@ -53,7 +53,7 @@ Default value: `false`
 
 Use the following request functions with the `NavigationComponentRequestBus` event bus (EBus) interface to communicate with other components of your game.
 
-For more information about using the EBus interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
+For more information about using the EBus interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/).
 
 ### FindPath 
 
@@ -163,7 +163,7 @@ Yes
 
 Use the following notification functions with the `NavigationComponentNotificationBus` event bus (EBus) interface to communicate with other components of your game.
 
-For more information about using the EBus interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
+For more information about using the EBus interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/).
 
 ### OnSearchingForPath 
 
