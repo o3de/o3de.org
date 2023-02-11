@@ -7,13 +7,13 @@ weight: 100
 
 Event messaging systems are essential to a game engine because they allow each system to communicate with each other. **Open 3D Engine (O3DE)** uses a few types of communication methods, which are separated into the following modules: 
 
-- Event bus (EBus): A single global bus that all modules can use to invoke requests and dispatch messages, respectively known as a *request* and *notification* buses.
-- `AZ::Interface`: A C++ template class for a global interface that other components can invoke requests from. The equivalent of EBus's request bus.
-- `AZ::Event`: A C++ template class that can publish single value messages, which other components can subscribe to. The equivalent of EBus's notification bus.
+- **Event Bus (EBus)**: A single global bus that all modules can use to invoke requests and dispatch messages, respectively known as *request* and *notification* buses.
+- `AZ::Interface`: A C++ template class for a global interface that other components can invoke requests from. The equivalent of the EBus sytem's request bus.
+- `AZ::Event`: A C++ template class that can publish single-value messages, which other components can subscribe to. The equivalent of the EBus system's notification bus.
 
-These three modules overlap some of their functionality: `AZ::Interface` provides a request interface, `AZ::Event` provides a publish-subscribe interface, and EBus provides both. However, each has strengths and weaknesses that make them more suitable for different scenarios. 
+Some of the functionality of these three modules overlaps: `AZ::Interface` provides a request interface, `AZ::Event` provides a publish-subscribe interface, and EBus provides both. However, each module has strengths and weaknesses that make it more suitable for different scenarios.
 
-At a glance, the following table compares some key characteristics of EBus, `AZ::Interface`, and `AZ::Event`. All three event messaging modules can be found throughout O3DE's code base.
+The following table compares some key characteristics of EBus, `AZ::Interface`, and `AZ::Event`. You can find all three event messaging modules throughout O3DE's code base.
 
 | | EBus | `AZ::Interface` | `AZ::Event` |
 | --- | --- | --- | --- |
