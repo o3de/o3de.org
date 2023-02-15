@@ -26,4 +26,4 @@ jobs:
           PULL_REQUEST_BODY: |
             This is an automatically generated PR to sync `main` to `development`.
           CONTENT_COMPARISON: true
-          TEAM_REVIEWERS: @o3de/sig-docs-community-maintainers
+          TEAM_REVIEWERS: '["@o3de/sig-docs-community-maintainers"]'
