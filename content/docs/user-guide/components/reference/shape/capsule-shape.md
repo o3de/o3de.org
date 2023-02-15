@@ -33,8 +33,8 @@ The **Capsule Shape** component creates a transparent capsule that's oriented on
 The edit mode provides two sub-modes.
 | Mode | Icon | Description
 | - | - | - |
-| **Dimensions** | ![Shape component mode dimensions submode icon](/images/user-guide/components/reference/shape/shape-component-mode-submode-dimensions.svg) | **Left-click** and drag the black handles on the ends of the Capsule Shape to edit the **Height**. By default, each end of the capsule can be separately edited. Hold **Shift** to edit both ends symmetrically. **Left-click** and drag the black handle halfway along the Capsule Shape to edit the **Radius**. |
-| **Translation Offset** | ![Shape component mode translation offset submode icon](/images/user-guide/components/reference/shape/shape-component-mode-submode-translation-offset.svg) | **Left-click** and drag the linear manipulators or planar manipulators to edit the **Translation Offset**. |
+| **Dimensions** | ![Shape component mode dimensions submode icon](/images/user-guide/components/reference/shape/shape-component-mode-submode-dimensions.svg) | **Left-click** and drag the black handles on the ends of the Capsule Shape to edit the **Height**. By default, each end of the capsule can be separately edited. Hold **Shift** to edit both ends symmetrically. **Left-click** and drag the black handle situated halfway along the Capsule Shape to edit the **Radius**. |
+| **Translation Offset** | ![Shape component mode translation offset submode icon](/images/user-guide/components/reference/shape/shape-component-mode-submode-translation-offset.svg) | **Left-click** and drag the linear or planar manipulators to edit the **Translation Offset**. |
 
 ## CapsuleShapeComponentRequestsBus
 

@@ -31,7 +31,7 @@ The edit mode provides two sub-modes.
 | Mode | Icon | Description
 | - | - | - |
 | **Dimensions** | ![Shape component mode dimensions submode icon](/images/user-guide/components/reference/shape/shape-component-mode-submode-dimensions.svg) | **Left-click** and drag the black handles on the sides of the Axis Aligned Box Shape to resize the box in its local X, Y, and Z dimensions. By default, each face of the box can be separately edited. Hold **Shift** to edit opposite pairs of faces symmetrically. |
-| **Translation Offset** | ![Shape component mode translation offset submode icon](/images/user-guide/components/reference/shape/shape-component-mode-submode-translation-offset.svg) | **Left-click** and drag the linear manipulators or planar manipulators to edit the **Translation Offset**. |
+| **Translation Offset** | ![Shape component mode translation offset submode icon](/images/user-guide/components/reference/shape/shape-component-mode-submode-translation-offset.svg) | **Left-click** and drag the linear or planar manipulators to edit the **Translation Offset**. |
 
 ## BoxShapeComponentRequestsBus
 
