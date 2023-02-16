@@ -7,7 +7,7 @@ blog_img: "/images/blog/dev-series.JPG"
 full_img: ""
 ---
 
-In this post I will attempt to demystify a topic that is the source of confusion for a lot of people as they dip their toes into learning the concepts that underpin computer graphics: vectors, matrices and matrix order.
+_In this blog post, AWS engineer John Coimbra Walsh covers the basics of using vectors, matricies, and matrix order. This is a complicated topic for novice graphics programmers, and hopefully this breakdown can help you!_
 
 ## Matrices & vectors
 
