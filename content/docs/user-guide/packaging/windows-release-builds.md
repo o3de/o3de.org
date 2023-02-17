@@ -42,7 +42,7 @@ The following instructions assume that you have:
   
   - Your project -- If you're using a source engine, you must generate a Visual Studio project for your project. For help, refer to [Create a Visual Studio project](/docs/welcome-guide/create/creating-projects-using-cli/creating-windows#create-a-visual-studio-project).
 
-  - Your engine -- If you're using a pre-built SDK engine, you must generate a Visual Studio project for your engine. For help, refer to the **Pre-built SDK engine** steps in [Building for Windows](/docs/welcome-guide/setup/setup-from-github/building-windows/).
+  - Your engine -- If you're using a pre-built SDK engine, you must generate a Visual Studio project for your engine. For help, refer to the first step in [building the INSTALL target](/docs/user-guide/build/distributable-engine/#build-the-install-target) under the topic of **Engine and Project Distribution**.
 
 - Registered your project to your engine.
 
@@ -134,7 +134,7 @@ For help with troubleshooting failures, refer to [Troubleshooting Packaging in O
 
 Now that you've prepared your project, you can create a project game release layout. You can do this in different ways, depending on how you set up your engine and whether you want to create a non-monolithic or monolithic release build.
 
-When you set up O3DE, you built your engine as either a *source engine* or a *pre-built SDK engine*. You can use either build type to create a project game release layout. For more information on build types, refer to [Build the engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine).
+When you set up O3DE, you built your engine as either a *source engine* or a *pre-built SDK engine*. You can use either build type to create a project game release layout. For more information on build types, refer to [Build the engine](/docs/welcome-guide/setup/setup-from-github/building-windows/#build-the-engine).
 
 Additionally, you can create a project game release layout that's either *non-monolithic* or *monolithic*. A non-monolithic build uses Gems as dynamically linked libraries (`.dll`), whereas a monolithic build uses Gems as statically linked libraries (`.lib`). Using Gems as `.lib` files in a monolithic build strips out unused pieces of code and removes redundant symbols across them. As a result, the total space on disk for a monolithic build is smaller than for a non-monolithic build.
 
