@@ -150,7 +150,7 @@ The following components are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| [Simple Player Spawner](./multiplayer/simple-player-spawner) | A basic implementation for handling player join and player leave events in a network multiplayer session. |
+| [Simple Network Player Spawner](./multiplayer/simple-player-spawner) | A basic implementation for handling player join and player leave events in a network multiplayer session. |
 
 
 ### Non-uniform Scale

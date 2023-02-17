@@ -5,7 +5,7 @@ description: A reference for spawning and registering network player entities in
 weight: 700
 ---
 
-In most networking multiplayer games, when a player joins a session, the host must spawn an [*autonomous*](/docs/user-guide/networking/multiplayer/overview.md#multiplayer-entity-roles) networked entity for the player. Likewise, when a player leaves, the host must remove the entity and clean up. In **Open 3D Engine (O3DE)**, you can set this up exactly, or handle join and leave events in other ways by using `OnPlayerJoin` and `OnPlayerLeave` events, which are provided by the **Multiplayer Gem**'s `IMultiplayerSpawner` interface. Alternatively, to get started sooner, you can bypass programming these events and use the **Simple Player Spawner** component, which sets up `OnPlayerJoin` and `OnPlayerLeave` for this common use case.
+In most networking multiplayer games, when a player joins a session, the host must spawn an [*autonomous*](overview#multiplayer-entity-roles) networked entity for the player. Likewise, when a player leaves, the host must remove the entity and clean up. In **Open 3D Engine (O3DE)**, you can set up your spawning logic in this way, or handle join and leave events in other ways by using `OnPlayerJoin` and `OnPlayerLeave` events, which are provided by the **Multiplayer Gem**'s `IMultiplayerSpawner` interface. Alternatively, to get started sooner, you can bypass programming these events and use the [**Simple Network Player Spawner**](/docs/user-guide/components/reference/multiplayer/simple-player-spawner) component, which sets up `OnPlayerJoin` and `OnPlayerLeave` for this common use case.
 
 ## `IMultiplayerSpawner` interface
 
@@ -38,6 +38,6 @@ For more information on the MultiplayerSample project, see the [MultiplayerSampl
 
 ## Simple Player Spawning component
 
-The Simple Player Spawner level component provides a straightforward way to set up `OnPlayerJoin` and `OnPlayerLeave` events. It implements a common use case for handling those events, specifically: when a player joins, create a networked entity for that player, and when a player leaves, remove that entity.
+The Simple Network Player Spawner level component provides a straightforward way to set up `OnPlayerJoin` and `OnPlayerLeave` events. It implements a common use case for handling those events, specifically: when a player joins, create a networked entity for that player, and when a player leaves, remove that entity.
 
-For more information, refer to [Simple Player Spawning component](/docs/user-guide/components/reference/multiplayer/simple-player-spawner). 
+For more information, refer to [Simple Network Player Spawner component](/docs/user-guide/components/reference/multiplayer/simple-player-spawner). 
