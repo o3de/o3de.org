@@ -36,7 +36,7 @@ The Multiplayer Gem supports the following:
 | Topic | Description |
 |---|---|
 | [Network and Multiplayer Settings](../settings) | Settings to control the client and server behavior in `AzNetworking` and the Multiplayer Gem. |
-| [Multiplayer Components](/docs/user-guide/components/reference/#multiplayer/) | Reference documentation for Multiplayer components. |
+| [Multiplayer Components](/docs/user-guide/components/reference/#multiplayer) | Reference documentation for Multiplayer components. |
 | [Multiplayer Gem API Reference](/docs/api/gems/multiplayer/annotated.html) | The complete C++ API reference for the O3DE Multiplayer Gem. |
 | [Multiplayer Compression Gem](/docs/user-guide/gems/reference/multiplayer/multiplayer-compression) | An example Gem showing how to implement network compression. |
 | [Multiplayer Sample](https://github.com/o3de/o3de-multiplayersample#readme) | Download the multiplayer sample to help you experiment with the features in the Multiplayer Gem. |
