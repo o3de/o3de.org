@@ -1,0 +1,29 @@
+name: Auto Sync PR main-to-dev
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync-branches:
+    runs-on: ubuntu-latest
+    name: Syncing branches main to dev
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Opening pull request
+        id: pull
+        uses: tretuna/sync-branches@1.4.0
+        with:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          FROM_BRANCH: "main"
+          TO_BRANCH: "development"
+          PULL_REQUEST_TITLE: (Auto) Sync main-to-development
+          PULL_REQUEST_BODY: |
+            This is an automatically generated PR to sync `main` to `development`.
+          CONTENT_COMPARISON: true
+          TEAM_REVIEWERS: '["@o3de/sig-docs-community-maintainers"]'
