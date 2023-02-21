@@ -32,12 +32,12 @@ The `OnPlayerLeave` method of `IMultiplayerSpawner` provides a hook so that when
 
 ## Examples in MultiplayerSample Project
 
-A practical example of an implementation for a spawner is [`MultiplayerSampleSystemComponent`](https://github.com/o3de/o3de-multiplayersample/blob/2c84827ffb20082b8c16fc0edc65cd49226f3cd2/Gem/Code/Source/MultiplayerSampleSystemComponent.cpp) in the  [MultiplayerSample project](https://github.com/o3de/o3de-multiplayersample/). MultiplayerSample Project implements a "round robin"-style spawning system that gathers entities with `NetworkPlayerSpawnerComponents`. `MultiplayerSampleSystemComponent` then queries that system during the `OnPlayerJoin` event. The `OnPlayerLeave` event simply marks the entity that's passed in for removal. 
+A practical example of an implementation for a spawner is [`MultiplayerSampleSystemComponent`](https://github.com/o3de/o3de-multiplayersample/blob/2c84827ffb20082b8c16fc0edc65cd49226f3cd2/Gem/Code/Source/MultiplayerSampleSystemComponent.cpp) in [MultiplayerSample Project](https://github.com/o3de/o3de-multiplayersample/). MultiplayerSample Project implements a "round robin"-style spawning system that gathers entities with `NetworkPlayerSpawnerComponents`. `MultiplayerSampleSystemComponent` then queries that system during the `OnPlayerJoin` event. The `OnPlayerLeave` event simply marks the entity that's passed in for removal.
 
-For more information about the MultiplayerSample project, refer to the [MultiplayerSample README](https://github.com/o3de/o3de-multiplayersample/blob/development/README.md).
+For more information about MultiplayerSample Project, refer to the [MultiplayerSample README](https://github.com/o3de/o3de-multiplayersample/blob/development/README.md).
 
 ## Simple Player Spawning component
 
 The Simple Network Player Spawner level component provides a straightforward way to set up `OnPlayerJoin` and `OnPlayerLeave` events. It implements a common use case for handling those events, specifically: when a player joins, create a networked entity for that player, and when a player leaves, remove that entity.
 
-For more information, refer to [Simple Network Player Spawner component](/docs/user-guide/components/reference/multiplayer/simple-player-spawner). 
+For more information, refer to [Simple Network Player Spawner component](/docs/user-guide/components/reference/multiplayer/simple-player-spawner).
