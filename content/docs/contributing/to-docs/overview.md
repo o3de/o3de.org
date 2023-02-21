@@ -63,7 +63,7 @@ Here are some important guidelines you should keep in mind about PRs in O3DE:
 
 Now that you are familiar with the O3DE docs, and have had some exposure to issues and PRs, let's have a look at the high-level process for making a contribution to documentation.
 
-1. **Agree the the O3DE Contributor License Agreement (CLA):** Refer to the project's [CONTRIBUTING.md](https://github.com/o3de/o3de.org/blob/main/CONTRIBUTING.md) for details.
+1. **Agree to the O3DE Contributor License Agreement (CLA):** Refer to the project's [CONTRIBUTING.md](https://github.com/o3de/o3de.org/blob/main/CONTRIBUTING.md) for details.
 
 1. **Create a new issue or claim an existing issue:** All contributions begin with a GitHub issue. You can file an issue and then assign it to yourself, or you can claim an existing issue. When creating a new issue, search the current issue list to ensure the issue hasn't already been submitted.
 
