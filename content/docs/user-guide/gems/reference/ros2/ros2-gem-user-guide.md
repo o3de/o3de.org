@@ -39,25 +39,6 @@ Components allow you to:
   - WheelControllerComponent
 - __Robot Import (URDF) system component__
   - ROS2RobotImporterSystemComponent
-  
-## The Gem and ROS 2 ecosystem
-
-### Supported Platforms and versions
-
-The Gem is currently Linux-only and is being tested with ROS 2 Humble on Ubuntu 22.04 as well as ROS 2 Galactic with Ubuntu 20.04.
-
-It is intended to support any modern ROS 2 version, following these priorities:
-
-- The most recent LTS version (e.g. in June 2022, [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html)).
-- The most recent non-LTS version ([ROS 2 Galactic](https://docs.ros.org/en/galactic/Installation.html)).
-- The always-fresh [ROS 2 Rolling](https://docs.ros.org/en/rolling/Installation.html).
-- Older versions.
-
-Currently tested and validated versions / platforms will be detailed in the [project repository](https://github.com/o3de/o3de-extras/tree/development/Gems/ROS2).
-
-**Currently, the O3DE ROS 2 Gem is not available for Windows.**
- 
-If you have multiple versions installed, make sure you [source](https://docs.ros.org/en/humble/Tutorials/Workspace/Creating-A-Workspace.html#source-the-overlay) the one you would like to use. You can check which version is sourced in your console by checking the value of `ROS_DISTRO` environment variable (`echo $ROS_DISTRO`).
 
 ### ROS 2 Concepts
 
@@ -124,6 +105,7 @@ A wheel controller is a controller that should be attached to the vehicle's whee
 The wheel controller has the following parameters shown below.
 
 ![Wheel Controller](/images/user-guide/gems/ros2/wheelController.png)  
+
 | Parameter Name               | Description                                                                      |
 |------------------------------|----------------------------------------------------------------------------------|
 | `Steering Entity`            | The entity that has a PhysX Hinge Joint that changes the direction of the wheel. |
@@ -136,6 +118,7 @@ The implementation of `AckermannDriveModel` uses [PID controllers](https://en.wi
 ![AckermannModel](/images/user-guide/gems/ros2/ackermanModel.png)
 
 Parameters of the model are exposed to the user via `AckermannVehicleModelComponent`:
+
 | Parameter Name                                 | Description                                                              |
 |------------------------------------------------|--------------------------------------------------------------------------|
 | `DriveModel / Axles `                          | List of axles of the vehicle.                                            |
@@ -159,6 +142,7 @@ The model computes velocities in the joints of the vehicle and applies it accord
 
 ![SkidSteeringModel](/images/user-guide/gems/ros2/skidSteeringModel.png)  
 Parameters of the model are exposed to the user via `AckermannVehicleModelComponent`:
+
 | Parameter Name                                       | Description                                                        |
 |------------------------------------------------------|--------------------------------------------------------------------|
 | `DriveModel / Axles `                                | List of axles of the vehicle.                                      |
@@ -169,6 +153,7 @@ Parameters of the model are exposed to the user via `AckermannVehicleModelCompon
 | `DriveModel / Axles / Wheelbase`                     | Distance between left and right wheel.                             |
 | `DriveModel / Vehicles Limits / Linear speed limit ` | Maximum achievable linear speed in meters per second.              |
 | `DriveModel / Vehicles Limits / Angular speed limit` | Maximum achievable angular speed in radians per second.            |
+
  #### Manual control
 
 The `VehicleModel` will handle input events with names "steering" and "accelerate". This means you can add an [InputComponent](/docs/user-guide/components/reference/gameplay/input/) to the same entity and define an input map for your input devices (such as keyboard or a game pad) to control the vehicle manually.
@@ -194,26 +179,3 @@ It is possible to implement your own control mechanisms with this Component.
   - example call: `ros2 service call /get_spawn_points_names gazebo_msgs/srv/GetWorldProperties`
 - Detailed spawn point info access: spawn point name should be passed in request.model_name. Defined pose is sent in response.pose.
   - example call: `ros2 service call /get_spawn_point_info gazebo_msgs/srv/GetModelState '{model_name: 'spawn_spot'}'`
-
-## Handling custom ROS 2 dependencies
-
-The ROS 2 Gem will respect your choice of [__sourced__](https://docs.ros.org/en/humble/Tutorials/Workspace/Creating-A-Workspace.html#source-the-overlay) ROS 2 environment. The Gem comes with a number of ROS 2 packages already included and linked, but you might want to include additional packages in your project. To do so, use the `target_depends_on_ros2` function in your project's `Gem/CMakeLists.txt`:
-
-```
-target_depends_on_ros2_packages(<your_target> <ros_package1> <ros_package2>)
-```
-
-in your project's `Gem/CMakeLists.txt`.
-
-### Example
-
-It could be the case that you need to create new type of sensor publishing a custom message.
-
-Lets assume your project is called `MyProject`, the custom message package is called `my_sensor_msgs` and ROS 2 workspace `my_ros2_ws`. Take following steps:
-
-1. Build your ROS 2 message package in a workspace as you normally would (e.g. `~/projects/my_ros2_ws`)
-2. Source the overlay: `source ~/projects/my_ros2_ws/install/setup.bash`.
-3. Put `target_depends_on_ros2_packages(MyProject my_sensor_msgs)` in your `Gem/CMakeLists.txt` file.
-4. You can now build `MyProject` and use the new messages.
-
-Remember to __always have your ROS 2 overlay sourced__ when building and running the project as sourcing provides visibility of ROS 2 package paths.
