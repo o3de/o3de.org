@@ -4,7 +4,7 @@ title: Components and EBuses
 weight: 700
 ---
 
-EBuses are not required for components, nor are they directly bound to components in any way. But because they form the backbone of communication among all O3DE components, EBuses offer many benefits. We highly recommend that you learn how to use them in your game, systems, and components. For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
+EBuses are not required for components, nor are they directly bound to components in any way. But because they form the backbone of communication among all O3DE components, EBuses offer many benefits. We highly recommend that you learn how to use them in your game, systems, and components. For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/).
 
 Most components provide two EBuses to facilitate communication: a request bus and a notification bus. Both these EBuses use the `EBusAddressPolicy::ById` address policy and the ID of the entity for identification.
 
@@ -49,7 +49,7 @@ class TransformComponentRequests
 
 ### Base Class and Trait Specification 
 
-The base class for most `AZ::Component` request buses is `AZ::ComponentBus`. This class is a convenience to help set up EBus traits typical of component EBuses. You could also set up EBus traits by inheriting the default `AZ::EbusTraits`. Then you could optionally override any or all of the following traits. For more information, see [ EBus Configuration Options](/docs/user-guide/programming/ebus/design/#ebus-in-depth-configuration).
+The base class for most `AZ::Component` request buses is `AZ::ComponentBus`. This class is a convenience to help set up EBus traits typical of component EBuses. You could also set up EBus traits by inheriting the default `AZ::EbusTraits`. Then you could optionally override any or all of the following traits. For more information, see [EBus Configuration Options](/docs/user-guide/programming/messaging/ebus-design/#ebus-in-depth-configuration).
 + Address policy
 + Bus ID type
 + Connection policy

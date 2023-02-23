@@ -6,7 +6,7 @@ toc: true
 weight: 400
 ---
 
-The AWS Metrics Gem provides a C++ API for submitting metrics and handling notifications using the O3DE EBus. For more information about using the EBus system, refer to the [EBus](/docs/user-guide/programming/ebus) documentation.
+The AWS Metrics Gem provides a C++ API for submitting metrics and handling notifications using the O3DE EBus. For more information about using the EBus system, refer to the [EBus](/docs/user-guide/programming/messaging/ebus) documentation.
 
 ## Using the AWSMetricsRequestBus
 

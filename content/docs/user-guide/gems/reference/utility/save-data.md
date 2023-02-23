@@ -7,7 +7,7 @@ toc: true
 
 The **Save Data** Gem encapsulates all the functionality in **Open 3D Engine (O3DE)** for saving game and individual user data under a single platform-agnostic set of API operations.
 
-The Save Data Gem uses the [Event Bus (EBus)](/docs/user-guide/programming/ebus/), O3DE's general-purpose communication system for dispatching notifications and receiving requests. To make requests related to saving or loading persistent user data, use the Save Data Gem's `SaveDataRequests` bus. To listen for notifications related to saving persistent user data, use the `SaveDataNotifications` bus.
+The Save Data Gem uses the [Event Bus (EBus)](/docs/user-guide/programming/messaging/ebus/), O3DE's general-purpose communication system for dispatching notifications and receiving requests. To make requests related to saving or loading persistent user data, use the Save Data Gem's `SaveDataRequests` bus. To listen for notifications related to saving persistent user data, use the `SaveDataNotifications` bus.
 
 ## Making requests to Save Data
 

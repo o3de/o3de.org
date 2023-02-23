@@ -146,12 +146,12 @@ The following components are grouped by type as they appear in the O3DE Editor.
 | [Slope Gradient](./gradients/slope-gradient) | Generates a gradient based on the surface angle. |
 | [Surface Mask Gradient](./gradients/surface-mask-gradient) | Generates a gradient based on the underlying surface types. |
 
-<!-- 
-### Networking
+### Multiplayer
 
 | Component | Description | 
 | - | - |
--->
+| [Simple Network Player Spawner](./multiplayer/simple-player-spawner) | Implements a basic setup for handling player join and player leave events in a network multiplayer session. |
+
 
 ### Non-uniform Scale
 

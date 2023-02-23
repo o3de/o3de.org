@@ -58,7 +58,7 @@ The following components are currently **incompatible** because they are not yet
 ## EBus Request Bus Interface
 **NonUniformScaleRequestBus** is the request bus for the **Non-uniform Scale** component.
 
-For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
+For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/).
 
 Use the following request functions with the EBus interface to communicate with other components.
 
@@ -86,7 +86,7 @@ None
 
 ### RegisterScaleChangedEvent
 
-Registers a handler for the **[AZ::Event](/docs/user-guide/programming/az-event/)** raised when the entity's non-uniform scale is changed.
+Registers a handler for the **[AZ::Event](/docs/user-guide/programming/messaging/az-event/)** raised when the entity's non-uniform scale is changed.
 
 **Parameters**
 Handler for non-uniform scale change events.

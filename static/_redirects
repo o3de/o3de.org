@@ -22,3 +22,8 @@
 /docs/user-guide/gems/reference/multiplayer/multiplayer-debug                           /docs/user-guide/networking/multiplayer/debug-desync
 /docs/user-guide/gems/reference/multiplayer/multiplayer-debug/debug/desync-audit-trail  /docs/user-guide/networking/multiplayer/debug-desync
 /docs/user-guide/gems/reference/multiplayer/multiplayer-gem/*                           /docs/user-guide/networking/multiplayer/:splat
+
+/docs/user-guide/programming/ebus                   /docs/user-guide/programming/messaging/ebus
+/docs/user-guide/programming/ebus-design            /docs/user-guide/programming/messaging/ebus-design
+/docs/user-guide/programming/az-interface           /docs/user-guide/programming/messaging/az-interface
+/docs/user-guide/programming/az-event               /docs/user-guide/programming/messaging/az-event

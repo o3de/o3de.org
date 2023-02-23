@@ -21,7 +21,7 @@ Script Canvas defines the following _node types_:
 
 ### Event nodes
 
-Event nodes subscribe to event bus (EBus) handlers to listen for events to occur. Examples include entering a trigger area, colliding with an object, turning off a light, and when the game ticks. For more information about using the EBus interface, refer to [The Open 3D Engine Event Bus (EBus) System](/docs/user-guide/programming/ebus/).
+Event nodes subscribe to event bus (EBus) handlers to listen for events to occur. Examples include entering a trigger area, colliding with an object, turning off a light, and when the game ticks. For more information about using the EBus interface, refer to [The Open 3D Engine Event Bus (EBus) System](/docs/user-guide/programming/messaging/ebus/).
 
 ### Action nodes
 
