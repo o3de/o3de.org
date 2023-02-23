@@ -79,9 +79,7 @@ If your actor has custom normals and materials that use normal maps, you might n
 The first node in the list is the scene root node, not the root of the skeleton. Make sure the bone you select is the root bone of the actor's skeleton. The skeleton root bone is critical for animation and root motion. For more information, refer to the [Data Driven Root Motion](/docs/learning-guide/tutorials/animation/data-driven-root-motion) tutorial.
     {{< /note >}}
 
-1. Choose **Update** to save the customized settings for the actor.
-
-    The customizations you make in Scene Settings are stored in a file with a `.assetinfo` extension. When Asset Processor detects a `.assetinfo` file, it uses the settings in the file to process the related source asset. This file is treated as a source dependency for the asset. This means that if the `.assetinfo` file is changed, the source asset will be reprocessed even if the source asset has not changed.
+1. Choose **Update** to save the customized settings for the actor. The asset is immediately reprocessed with the new settings.
 
 1. Locate the actor product asset in Asset Browser and drag the actor into the viewport to create an entity for the actor.
 
