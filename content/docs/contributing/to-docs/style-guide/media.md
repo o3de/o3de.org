@@ -58,7 +58,7 @@ Guide-specific images, such as interface screenshots and diagrams, are located i
 In order to standardize presentation, and to keep the O3DE documentation repository below 1 GB, please adhere to the following guidelines when you create images for documentation:
   
 * Text in images should follow our style guidelines without formatting requirements.
-* Do not include personal identification information (PII) in your screenshots. PII includes, but it not limited to, names, geographic information, project names, IP addresses, DNS names, and directory paths. We recommend you crop out areas of images that might contain PII and that you create projects specifically for documentation contributions that do not expose PII. Using common image filters to blur or disguise PII is not recommended as they can sometimes be reversed. To remove PII from an image:
+* Do not include personal identification information (PII) in your screenshots. PII includes, but is not limited to, names, geographic information, project names, IP addresses, DNS names, and directory paths. We recommend you crop out areas of images that might contain PII and that you create projects specifically for documentation contributions that do not expose PII. Using common image filters to blur or disguise PII is not recommended as they can sometimes be reversed. To remove PII from an image:
 
   1. In any image editor, draw a rectangle selection box around the PII.
 
@@ -128,7 +128,7 @@ Due to limitations on repository size, animated `.gif` images are not accepted i
 
 ### Image strips
 
-To demonstrate steps, consider using horizontal two to four panel annotated image strip that demonstrates the start, action, and result of the process. See the example below:
+To demonstrate steps, consider using a horizontal two to four panel annotated image strip that demonstrates the start, action, and result of the process. See the example below:
 
 {{< image-width "/images/contributing/to-docs/image-strip-example.png" "700" "An image strip example with two panels." >}}
 
