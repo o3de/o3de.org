@@ -66,7 +66,7 @@ Depending on the part of the engine that you want to develop, there are differen
   
   - [Component Entity System (CES)](/docs/welcome-guide/key-concepts/#the-component-entity-system)
   
-  - [Event Bus (EBus) system](/docs/user-guide/programming/ebus/)
+  - [Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/)
   
   - [Programmer's Guide to Component Development](/docs/user-guide/programming/components/)
 

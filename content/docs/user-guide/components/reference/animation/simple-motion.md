@@ -34,7 +34,7 @@ You can use the **Simple Motion** component to play a motion without an animatio
 
 ## SimpleMotionComponentRequestBus ##
 
-Use the following request functions with the `SimpleMotionComponentRequestBus` EBus interface to communicate Simple Motion components in your game. For more information, refer to [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
+Use the following request functions with the `SimpleMotionComponentRequestBus` EBus interface to communicate Simple Motion components in your game. For more information, refer to [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/).
 
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|

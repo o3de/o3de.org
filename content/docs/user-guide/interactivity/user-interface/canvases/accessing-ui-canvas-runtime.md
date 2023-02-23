@@ -5,7 +5,7 @@ title: Accessing UI Elements at Runtime
 weight: 900
 ---
 
-Once a UI canvas loads, you can communicate with its UI elements at runtime by creating [Script Canvas](/docs/user-guide/scripting/script-canvas/get-started) graphs, [Lua scripts](/docs/user-guide/scripting/lua/ebus) or by using [EBuses](/docs/user-guide/programming/ebus) directly from C++.
+Once a UI canvas loads, you can communicate with its UI elements at runtime by creating [Script Canvas](/docs/user-guide/scripting/script-canvas/get-started) graphs, [Lua scripts](/docs/user-guide/scripting/lua/ebus) or by using [EBuses](/docs/user-guide/programming/messaging/ebus) directly from C++.
 
 ## Communicating with components attached to other UI elements
 

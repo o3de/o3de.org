@@ -3,6 +3,11 @@ title = "Open 3D Engine"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 copyright = "O3DE Open 3D Engine Contributors | Documentation Distributed under CC-BY 4.0"
 
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = '0.93.0'
+
 enableGitInfo = true
 enableRobotsTXT = true 
 

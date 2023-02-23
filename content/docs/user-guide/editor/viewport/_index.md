@@ -13,7 +13,7 @@ In **Open 3D Engine** (O3DE), you can interact directly with entities using the 
 
 ### Transform mode widget
 
-You can select one of the three transform modes with the transform mode widget, _translate_, _rotate_, or _scale_.  Each transform mode displays a unique [Manipulator](#manipulators) on the entity in the 3D Viewport that you can adjust with the mouse.  Select a transform mode by clicking the widget with the mouse or using a keyboard hotkey listed in the following table. 
+You can select one of the three transform modes with the transform mode widget, _translate_, _rotate_, or _scale_.  Each transform mode displays a unique [Manipulator](#manipulators) on the entity in the 3D Viewport that you can adjust with the mouse.  Select a transform mode by clicking the widget with the mouse or using a keyboard hotkey listed in the following table. You can quickly switch between translate and rotate modes by pressing **Ctrl + Mousewheel Up/Down**.
 
 ![Image of transform mode widget](/images/user-guide/editor/transform-widget.png)
 
@@ -103,6 +103,7 @@ Refer to the following table for a summary of keyboard hotkeys for the 3D Viewpo
 | **1** | Displays the translation manipulator. |  |
 | **2** | Displays the rotation manipulator. |  |
 | **3** | Displays the scale manipulator. |  |
+| **Ctrl + Mousewheel Up/Down** | Switches between the translation and rotation mode manipulators. |  |
 | **R** | Resets the entity's transform. | Only resets the transform values for the current transform mode. |
 | **Ctrl + Drag** Translation manipulator | Sets all manipulators to a custom translation. | Sets a custom pivot point for rotation and scaling. |
 | **Ctrl + Drag** Rotation manipulator | Sets all manipulators to a custom rotation. | Sets a custom rotation for the axes of translations. |

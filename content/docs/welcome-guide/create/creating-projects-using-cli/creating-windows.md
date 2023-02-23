@@ -21,13 +21,13 @@ To start a project based on the standard template, complete the following steps.
 
 1. Open a command line window and change to your O3DE engine directory by doing one of the following:
 
-    * If you set up your engine as a [source engine](/docs/welcome-guide/setup/setup-from-github/building-windows/#build-the-engine), use the engine source directory. Example:
+    * If you set up your engine as a [source engine](/docs/user-guide/appendix/glossary/#source-engine), use the engine source directory. Example:
 
         ```cmd
         cd C:\o3de
         ```
 
-    * If you installed O3DE or built your engine as an [SDK engine](/docs/welcome-guide/setup/setup-from-github/building-windows/#build-the-engine) using the `INSTALL` target, use the installed engine directory. Example:
+    * If you installed O3DE or built your engine as an [SDK engine](/docs/user-guide/appendix/glossary/#sdk-engine) using the `INSTALL` target, use the installed engine directory. Example:
 
         ```cmd
         cd C:\o3de-install
