@@ -22,11 +22,16 @@ The **Axis Aligned Box Shape** component creates a transparent box that is alway
 | **Filled** | Enable to display the shape as filled.  Disable to display the shape as a wireframe. | Boolean | `Enabled` |
 | **Shape Color** | The color of the shape. | Eight bits per channel color: 0-255 | `255,255,199` |
 | **Dimensions** | The size of the shape in the X, Y and Z dimensions of local space. | Vector3: -Infinity to Infinity | X:`1.0`, Y:`1.0`, Z:`1.0` |
+| **Translation Offset** | Translation offset of the shape relative to its entity. | Vector3: -Infinity to Infinity | X:`0.0`, Y:`0.0`, Z:`0.0` |
 | **Edit** | Choose the **Edit** button to enter Edit mode. In Edit mode, you can modify the dimensions of the shape in the viewport using the methods outlined in [Edit mode actions](#edit-mode-actions) below. While in Edit mode, the Edit menu in the menu bar displays available actions and hotkeys. To exit Edit mode, choose **Done** in the component interface. |  |  |
 
 ## Edit mode actions
 
-* **Left-click** and drag the black handles on the sides of the Axis Aligned Box Shape to resize the box in its local X, Y, and Z dimensions.
+The edit mode provides two sub-modes.
+| Mode | Icon | Description
+| - | - | - |
+| **Dimensions** | ![Shape component mode dimensions submode icon](/images/user-guide/components/reference/shape/shape-component-mode-submode-dimensions.svg) | **Left-click** and drag the black handles on the sides of the Axis Aligned Box Shape to resize the box in its local X, Y, and Z dimensions. By default, each face of the box can be separately edited. Hold **Shift** to edit opposite pairs of faces symmetrically. |
+| **Translation Offset** | ![Shape component mode translation offset submode icon](/images/user-guide/components/reference/shape/shape-component-mode-submode-translation-offset.svg) | **Left-click** and drag the linear or planar manipulators to edit the **Translation Offset**. |
 
 ## BoxShapeComponentRequestsBus
 

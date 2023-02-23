@@ -9,7 +9,7 @@ toc: true
 With the **PhysX Force Region** component, you can create global wind forces or localized wind forces contained within a collider volume. Wind forces act on entities with components that are affected by wind, such as [Cloth components](/docs/user-guide/components/reference/physx/cloth/). For this tutorial, make sure that you have the **NVIDIA Cloth** Gem enabled in your project so that you can easily test the results of the wind provider entity.
 
 {{< note >}}
-Wind forces only affect components that support it, such as **Cloth** compopnents. Wind forces can't affect **PhysX Rigid Body** components.
+Wind forces only affect components that support it, such as **Cloth** compopnents. Wind forces can't affect **PhysX Dynamic Rigid Body** components.
 {{< /note >}}
 
 ## Create a wind provider entity

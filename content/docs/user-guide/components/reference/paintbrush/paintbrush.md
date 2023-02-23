@@ -167,3 +167,18 @@ The **Smoothing Radius** is separate from the Paint Brush **Size**. The Paint Br
 | `ed_paintBrushHardnessPercentAdjustAmount` | Controls how much the `{` and `}` hotkeys adjust the Paint Brush Hardness in percent (0 - 100). |
 | `ed_paintBrushManipulatorInnerColor` | The color of the inner circle of the Paint Brush, which is used to show where the hardness falloff begins. |
 | `ed_paintBrushManipulatorOuterColor` | The color of the outer circle of the Paint Brush, which shows the overall Paint Brush size and where the hardness falloff ends. |
+
+## PaintBrushSessionBus
+
+The PaintBrush provides an EBus that exposes high-level painting APIs for any component that supports runtime painting.
+
+| Request Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `StartPaintSession` | Starts a runtime paint session and creates the temporary data buffers needed for modification. | PaintableEntityId: The entity that contains a paintable component.  | `Uuid`: The new paint session ID. | Yes |
+| `EndPaintSession` | Ends the runtime paint session for the given ID and cleans up the temporary data buffers. | sessionId: The paint session ID to end. | None | Yes |
+| `BeginBrushStroke` | Starts a brush stroke for a paint session with the given brush settings for color/intensity/opacity. | sessionId: The paint session ID, brushSettings: The paint brush settings for this brush stroke. | None  | Yes |
+| `EndBrushStroke` | Ends a brush stroke for a paint session. | sessionId: The paint session ID. | None  | Yes |
+| `IsInBrushStroke` | Returns whether or not a paint session is currently in the middle of a brush stroke. | sessionId: The paint session ID. | `bool`: True if a brush stroke has been started, false if not.  | Yes |
+| `ResetBrushStrokeTracking` | Resets the brush tracking so that the next action will be considered the start of a stroke movement instead of a continuation. | sessionId: The paint session ID. | None  | Yes |
+| `PaintToLocation` | Applies a paint color to the underlying data from the previous location to the provided location using the given brush settings. | sessionId: The paint session ID, brushCenter: The location to move the center of the brush to, brushSettings: The paint brush settings for this brush stroke. | None  | Yes |
+| `SmoothToLocation` | Smooths the underlying data from the previous location to the provided location using the given brush settings. | sessionId: The paint session ID, brushCenter: The location to move the center of the brush to, brushSettings: The paint brush settings for this brush stroke. | None  | Yes |

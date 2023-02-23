@@ -8,7 +8,7 @@ toc: true
 The **PhysX Collider** component adds a PhysX collider to an entity so that the entity can be included in PhysX simulation. The collider can be defined by a mesh you create, automatically generated convex meshes, shapes that have been automatically fit to a decomposed mesh, or a simple shape primitive selected in the the PhysX Collider component. The PhysX Collider component can also define a trigger area or a force region.
 
 {{< note >}}
-The PhysX Collider component attached to an entity by itself creates a *static* (non-moving) entity. Add a [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) component with a PhysX Collider component to create a *dynamic* or a *kinematic* entity. Dynamic entities have simulated movement in response to collisions and forces. Kinematic entities aren't affected by collisions or forces, but are driven by scripted movement. For information about the various PhysX collider types and how to process them, refer to [Process PhysX Collider Assets](/docs/learning-guide/tutorials/assets/physx-colliders/).
+Add a [PhysX Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/) component with a PhysX Collider component to create a *static* entity that will never move. Add a [PhysX Dynamic Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) component to create a *simulated* or a *kinematic* entity. Simulated entities move in response to collisions and forces. Kinematic entities aren't affected by collisions or forces, but are driven by scripted movement. For information about the various PhysX collider types and how to process them, refer to [Process PhysX Collider Assets](/docs/learning-guide/tutorials/assets/physx-colliders/).
 {{< /note >}}
 
 ## Provider
@@ -93,7 +93,7 @@ There are three editing modes available in collider component mode.
 
 | Mode | Description |
 | - | - |
-| **Resize** |  Scales the collider. The manipulator displayed in the viewport in resize mode is dependent on the collider shape. For primitive colliders, the resize manipulator handles are represented as black squares. For **Physics Asset** colliders, the resize manipulator is represented as a familiar scale manipulator. |
+| **Resize** |  Edits the collider dimensions. The manipulator displayed in the viewport in resize mode is dependent on the collider shape. For primitive colliders, the resize manipulator handles are represented as black squares. For **Physics Asset** colliders, the resize manipulator is represented as a scale manipulator which modifies the **Asset Scale**. |
 | **Offset** | Translates the collider relative to its entity transform. |
 | **Rotation** | Rotates the collider around the component's **Offset**. |
 
@@ -105,13 +105,13 @@ Sphere resize mode has one linear manipulator that controls the **Radius** prope
 
 ### Resize (Box Shape)
 
-Box resize mode has six linear manipulators, one on each side of the box. The manipulators control the width, depth, and height **Dimensions** property.
+Box resize mode has six linear manipulators, one on each side of the box. The manipulators control the width, depth, and height aspects of the **Dimensions** property. By default, each face of the box can be separately edited. Hold **Shift** to edit opposite pairs of faces symmetrically.
 
 ![PhysX Collider component mode box resize manipulator](/images/user-guide/components/reference/physx/physx-collider-resize-box.png)
 
 ### Resize (Capsule Shape)
 
-Capsule resize mode has two linear manipulators. The manipulator at the top of the capsule controls the **Height** property. The manipulator on the side controls the **Radius** property.
+Capsule resize mode has three linear manipulators. The manipulators at the top and bottom of the capsule control the **Height** property. By default, each end of the capsule can be separately edited. Hold **Shift** to edit both ends symmetrically. The manipulator on the side controls the **Radius** property.
 
 ![PhysX Collider component mode capsule resize manipulator](/images/user-guide/components/reference/physx/physx-collider-resize-capsule.png)
 

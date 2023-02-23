@@ -25,29 +25,6 @@ Add the **Image Gradient** component to generate a gradient from an image. The c
 | **Preview Position** | Sets the world location of the preview.<br> <br>*This field is available only if there is no entity selected in **Pin Preview to Shape**.* | Vector3: -Infinity to Infinity | X:`0.0`, Y:`0.0`, Z:`0.0` |
 | **Preview Size** | Sets the dimensions of the preview.<br> <br>*This field is available only if there is no entity selected in **Pin Preview to Shape**.* | Vector3: 0.0 to Infinity | X:`1.0`, Y:`1.0`, Z:`1.0` |
 | **Constrain to Shape** | If `Enabled`, the gradient preview uses the bounds of the entity selected in **Pin Preview to Shape**.<br> <br>*This field is available only if an entity is selected in **Pin Preview to Shape**.* | Boolean | `Disabled` |
-| **Source Type** | Determines whether to create a new image or use an existing image. | `Create New Image`, `Use Existing Image` | `Use Existing Image` |
-
-### Create New Image
-
-The `Create New Image` Source Type has the following set of properties.
-
-| Property | Description | Values | Default |
-|-|-|-|-|
-| **Resolution** | Defines the number of pixels to use in the X and Y directions for the created image. | Int32: 1 to 8192 pixels | X: `512`, Y: `512` |
-| **Output Format** | Sets the output format for the created image, which determines how many bytes are used for each pixel. | `R8 (8-bit)`, `R16 (16-bit)`, `R32 (32-bit)` | `R32 (32-bit)` |
-
-To create a new image, set the properties to the desired image size and format and press the **Create** button. You will be prompted for a location to save the image. If the image is saved into a source asset directory that is used by the project, the Image Gradient will automatically switch the **Source Type** to `Use Existing Image` and populate the **Image Asset** field with the saved image.
-
-{{< important >}}
-The image name should end in `_gsi` (ex: `image_gsi.tif`). This will ensure that the image is processed by the Asset Processor as a Gradient Signal Image (gsi) asset which will leave the image data uncompressed.
-{{< /important >}}
-
-### Use Existing Image
-
-The `Use Existing Image` **Source Type** has the following set of properties.
-
-| Property | Description | Values | Default |
-|-|-|-|-|
 | **Image Asset** | Sets the source image to use as the gradient's values.<br><br>**NOTE:** The **Image Gradient** currently only supports a subset of all available pixel formats. Most of the uncompressed formats are supported, as well as the `BC1` compressed format. For a full list of supported formats, refer to [`AZ::RPI::IsImageDataPixelAPISupported`](https://github.com/o3de/o3de/blob/development/Gems/Atom/RPI/Code/Include/Atom/RPI.Public/RPIUtils.h). | `.streamingimage` | None |
 | **Sampling Type** | The sampling type to use on the image data. | `Point`, `Bilinear`, `Bicubic` | `Point` |
 | **Tiling** | Sets the number of times to tile the image horizontally (X) and vertically (Y). | Vector2: 0.01 to Infinity | X: `1.0`, Y: `1.0` |
@@ -67,6 +44,14 @@ There are several sampling types to choose from. Choosing the best sampling type
 | `Point` | `Point` sampling is the default and only samples a single point for each pixel of the source image.<br><br>This will produce blocky artifacts if the image is sampled at a higher frequency than the number of pixels. `Point` sampling produces the best results when the pixel size exactly matches the sampling frequency. | 1x | Poor | ![Image Gradient using point sampling](/images/user-guide/components/reference/gradients/image-gradient-component-point.png) |
 |  `Bilinear` | The `Bilinear` filter smooths out the image by requesting four points in a grid around a requested pixel and then performing interpolation between the points.<br><br>Because this uses linear interpolation between 4 points, bilinear filtering can cause noticeable plus-shaped artifacts in the smoothed data. `Bilinear` sampling is the best general-purpose choice, as it balances performance and quality. | 4x | Good | ![Image Gradient using bilinear interpolation](/images/user-guide/components/reference/gradients/image-gradient-component-bilinear.png) |
 |  `Bicubic` | The `Bicubic` filter smooths out the image by requesting sixteen points in a grid around a requested pixel and then performing Catmull-Rom interpolation between the points.<br><br>Because this uses non-linear interpolation, there are no noticeable plus-shaped artifacts in the smoothed data. `Bicubic` sampling is the best choice when quality is needed over performance. | 16x | Great | ![Image Gradient using bicubic interpolation](/images/user-guide/components/reference/gradients/image-gradient-component-bicubic.png) |
+
+### Creating a new image
+
+To create a new image, press the **Create New Image...** button. You will be prompted for an image width and height in pixels, then for a location to save the image. If the image is saved into a [source asset directory](/docs/user-guide/assets/pipeline/scan-directories/) that is used by the project, the Image Gradient will automatically populate the **Image Asset** field with the saved image.
+
+{{< important >}}
+The image name should end in `_gsi` (for example, `image_gsi.tif`). This will ensure that the image is processed by the Asset Processor as a Gradient Signal Image (gsi) asset which will leave the image data uncompressed.
+{{< /important >}}
 
 ## Editing an image
 

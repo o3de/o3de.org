@@ -1,39 +1,42 @@
 # Ownership owners
-/.github/CODEOWNERS @o3de/sig-docs-community-maintainers
+/.github/CODEOWNERS @o3de/sig-chairs
+
+# Should not be modified in development
+/content/docs/release-notes/* @o3de/sig-chairs
+/static/images/release-notes/* @o3de/sig-chairs
+/content/blog/* @o3de/sig-chairs
+/static/images/blog/* @o3de/sig-chairs
+/CONTRIBUTING @o3de/sig-chairs
+/README.md @o3de/sig-chairs
 
 # Community content
-/content/blog/* @o3de/sig-docs-community-reviewers 
+/content/blog/_index.md @o3de/sig-docs-community-reviewers
 /content/community/* @o3de/sig-docs-community-reviewers 
 /content/contribute/* @o3de/sig-docs-community-reviewers 
 /content/docs/contributing/* @o3de/sig-docs-community-reviewers 
-/static/images/blog/* @o3de/sig-docs-community-reviewers 
 /static/images/community/* @o3de/sig-docs-community-reviewers 
 /static/images/contribute/* @o3de/sig-docs-community-reviewers 
 /static/images/contributing/* @o3de/sig-docs-community-reviewers 
 /static/images/shared/* @o3de/sig-docs-community-reviewers 
 /layouts/blog/* @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers 
+/layouts/partials/blog/* @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 /layouts/community/* @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 /layouts/contribute/* @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
-/layouts/partials/blog/* @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 /layouts/partials/community/* @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 /layouts/partials/contribute/* @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 /layouts/partials/blog-display.html @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 /layouts/partials/css.html @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
-/CONTRIBUTING @o3de/sig-docs-community-reviewers
-/README.md @o3de/sig-docs-community-reviewers
 
-# Release content
-/content/docs/release-notes/* @o3de/sig-docs-community-maintainers @o3de/sig-release-maintainers
-/static/images/release-notes/* @o3de/sig-docs-community-maintainers @o3de/sig-release-maintainers
+# Docs content - Owned by SIG-docs-community on development
+/content/smoketest.md @o3de/sig-docs-community-reviewers
+/static/_redirects @o3de/sig-docs-community-reviewers
 
 # Docs content
 /content/docs/* @o3de/sig-docs-community-reviewers
-/content/smoketest.md @o3de/sig-docs-community-reviewers
+/content/docs/engine-dev/* @o3de/Reviewers
 /static/docs/* @o3de/sig-docs-community-reviewers
-/static/_redirects @o3de/sig-docs-community-reviewers
 /static/images/api-reference/* @o3de/sig-docs-community-reviewers
 /static/images/atom-guide/* @o3de/sig-docs-community-reviewers
-/static/images/community/* @o3de/sig-docs-community-reviewers
 /static/images/contribute/* @o3de/sig-docs-community-reviewers
 /static/images/contributing/* @o3de/sig-docs-community-reviewers
 /static/images/learning-guide/* @o3de/sig-docs-community-reviewers

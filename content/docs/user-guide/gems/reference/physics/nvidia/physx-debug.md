@@ -5,7 +5,7 @@ description: The PhysX Debug Gem provides debugging functionality and visualizat
 toc: true
 ---
 
-The PhysX Debug Gem provides features to debug visualizations for your PhysX scene geometry, such as the **PhysX Collider** and **PhysX Rigid Body** components, and so on.
+The PhysX Debug Gem provides features to debug visualizations for your PhysX scene geometry, such as the **PhysX Collider** and **PhysX Dynamic Rigid Body** components, and so on.
 
 When you enter console variables or the use the **ImGui** tool, you can view the PhysX debug lines in editor and game modes. This Gem uses data directly from PhysX to show a culled (limited by proximity to the camera) view of the simulated world in real time.
 

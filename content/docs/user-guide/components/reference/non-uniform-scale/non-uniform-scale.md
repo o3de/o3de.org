@@ -17,7 +17,8 @@ The following components are **compatible** with **Non-uniform Scale**:
 + **[Quad Shape](/docs/user-guide/components/reference/shape/quad-shape/)**
 + **[PhysX Collider](/docs/user-guide/components/reference/physx/collider/)** - Note that primitive colliders are replaced with convex approximations if they are non-uniformly scaled, which may slightly deteriorate performance. The level of detail of the convex approximation can be adjusted using the **Subdivision level** setting on the [PhysX Collider](/docs/user-guide/components/reference/physx/collider/) component.
 + **[PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/)**
-+ **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/)**
++ **[PhysX Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/)**
++ **[PhysX Dynamic Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/)**
 + **[PhysX Force Region](/docs/user-guide/components/reference/physx/force-region/)**
 + **[Decal](/docs/user-guide/components/reference/atom/decal/)**
 + **Mesh**
