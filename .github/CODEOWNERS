@@ -53,6 +53,7 @@
 
 # Shared community and docs content
 /content/docs/contributing/ @o3de/sig-docs-community-reviewers
+/content/docs/contributing/to-code/ @o3de/sig-docs-community-reviewers @o3de/reviewers
 /static/images/contributing/ @o3de/sig-docs-community-reviewers 
 
 # Foundation-owned materials
