@@ -2,7 +2,7 @@
 linkTitle: Move or Delete Assets
 title: Move or Delete Assets with Asset Processor Batch
 description: Learn how to move assets to new directory locations or delete assets while maintaining internal references with Asset Processor Batch.
-weight: 700
+weight: 600
 toc: true
 ---
 

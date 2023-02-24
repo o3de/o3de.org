@@ -26,7 +26,6 @@ The Multiplayer Gem supports the following:
 | [Configuring a Project](configuration) | How to add and enable the O3DE Multiplayer Gem in a project. |
 | [Running Multiplayer Projects](running) | How to run projects that use the O3DE Multiplayer Gem. |
 | [Multiplayer Auto-components](autocomponents) | How to automatically create components for use with the Multiplayer Gem using the AzAutoGen system. |
-| [Separating Client and Server](code_separation) | How to separate client and server logic and build dependencies.
 | [Testing Multiplayer Projects in the Editor](test-in-editor) | How to automatically launch local servers or connect to a remote persistent server when working on a multiplayer project in the **O3DE Editor**. |
 | [Network Entity Hierarchies](hierarchy) | How to group network entities into hierarchies that process their input together. |
 | [Spawning Players](spawning) | How to spawn an entity for a connecting player to control. |

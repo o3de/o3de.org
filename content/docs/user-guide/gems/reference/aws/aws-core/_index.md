@@ -22,7 +22,7 @@ The AWS Core Gem has the following key features:
     * Provides a common client configuration ready for O3DE. Refer to [AWS Client configuration](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/client-config.html) for details.
 
 * Handles HTTPS calls to AWS services, including responses and errors.
-* Lets you use AWS credentials, including existing AWS Command Line Interface (AWS CLI) profiles and roles, along with console variables (CVARs) for easier configuration. Refer to [Configuring AWS Credentials](./configuring-credentials/) for details.
+* Lets you use AWS credentials, including existing AWS Command Line Interface (AWS CLI) profiles and roles, along with console variables (cvars) for easier configuration. Refer to [Configuring AWS Credentials](./configuring-credentials/) for details.
 * Supports AWS resource sharing, helping you identify AWS resources that you can use from O3DE.
 * Provides utility functions that make it easier to work with AWS services and resources.
 
@@ -32,6 +32,6 @@ To enable the AWS Core Gem, do the following:
 
 1. Use **O3DE Project Manager** or the command line to add the AWS Core Gem to your project.
 
-2. Build your project using Project Manager, Visual Studio, or CMake.
+1. Build your project using Project Manager, Visual Studio, or CMake.
 
-3. To configure your environment and project to use AWS services, follow the instructions in [Getting Started with AWS Gems](./getting-started/).
+1. To configure your environment and project to use AWS services, follow the instructions in [Getting Started with AWS Gems](./getting-started/).

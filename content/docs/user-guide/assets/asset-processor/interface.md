@@ -46,9 +46,9 @@ Jobs in the Asset Status list display the statuses below:
 * {{< icon "pending.svg" >}} **Pending** - The job has been created, but has not run.
 * {{< icon "processing.svg" >}} **Processing** - The job is in progress.
 * {{< icon "warning-yellow.svg" >}} **Completed - Warning** - The job has completed but has emitted a warning.
-* {{< icon "error.svg" >}} **Completed - Error** - The job has completed and has emitted an error.
+* {{< icon "warning-yellow.svg" >}} **Completed - Error** - The job has completed and has emitted an error.
 * {{< icon "valid.svg" >}} **Completed** - The job has completed successfully with no warnings, errors, or failures.
-* {{< icon "failure.svg" >}} **Failed** - The job has failed and has emitted a failure.
+* {{< icon "error.svg" >}} **Failed** - The job has failed and has emitted a failure.
 
 It's possible for a job to emit a combination of warnings, errors, and failures.
 
@@ -141,7 +141,7 @@ The Event Log Details table also features a context menu to copy details to the 
 | **Copy Line With Details** | Copy the selected line and any related details that appear in the **Event Log Line Details** table. |
 | **Copy All** | Copy all log lines and any hidden details for each item. |
 
-If the selected line in the Event Log Details table has any additional information, the Event Log Line Details table will be displayed automatically. The details and additional information are generally useful only when debugging issues with a particular asset.
+The Context Details option in the lower right enables the Event Log Line Details table. It displays any additional information about the selected line in the Event Log Details table. The details and additional information are generally useful only when debugging issues with a particular asset.
 
 The Event Log Line Details table also features a context menu to copy details to the clipboard. **Right-click** on the row to expose a context menu with the following actions:
 
@@ -150,8 +150,6 @@ The Event Log Line Details table also features a context menu to copy details to
 | **Copy Selected Key** | Copy the text in the **Key** column of the selected row. |
 | **Copy Selected Value** | Copy the text in the **Value** column of the selected row. |
 | **Copy All Values** | Copy all keys and values in the table. |
-
-![Event Log Line Details table](/images/user-guide/assets/asset-processor/event_log_line_details.png)
 
 ## Assets
 

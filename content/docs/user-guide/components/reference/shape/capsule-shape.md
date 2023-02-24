@@ -25,16 +25,6 @@ The **Capsule Shape** component creates a transparent capsule that's oriented on
 | **Shape Color** | The color of the shape. | Eight bits per channel color: 0-255 | `255,255,199` |
 | **Height** | The height of the shape in meters. The height value must be at least twice the value of **Radius**. | 0.0 to Infinity | `1.0` |
 | **Radius** | The radius of the shape in meters. The radius value must be no more than half the value of **Height**. | 0.0 to Infinity | `0.25` |
-| **Translation Offset** | Translation offset of the shape relative to its entity. | Vector3: -Infinity to Infinity | X:`0.0`, Y:`0.0`, Z:`0.0` |
-| **Edit** | Choose the **Edit** button to enter Edit mode. In Edit mode, you can modify the dimensions of the shape in the viewport using the methods outlined in [Edit mode actions](#edit-mode-actions) below. While in Edit mode, the Edit menu in the menu bar displays available actions and hotkeys. To exit Edit mode, choose **Done** in the component interface. |  |  |
-
-## Edit mode actions
-
-The edit mode provides two sub-modes.
-| Mode | Icon | Description
-| - | - | - |
-| **Dimensions** | ![Shape component mode dimensions submode icon](/images/user-guide/components/reference/shape/shape-component-mode-submode-dimensions.svg) | **Left-click** and drag the black handles on the ends of the Capsule Shape to edit the **Height**. By default, each end of the capsule can be separately edited. Hold **Shift** to edit both ends symmetrically. **Left-click** and drag the black handle situated halfway along the Capsule Shape to edit the **Radius**. |
-| **Translation Offset** | ![Shape component mode translation offset submode icon](/images/user-guide/components/reference/shape/shape-component-mode-submode-translation-offset.svg) | **Left-click** and drag the linear or planar manipulators to edit the **Translation Offset**. |
 
 ## CapsuleShapeComponentRequestsBus
 

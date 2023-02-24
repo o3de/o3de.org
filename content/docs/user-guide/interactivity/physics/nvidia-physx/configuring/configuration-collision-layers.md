@@ -9,7 +9,7 @@ toc: true
 With collision layers, you can place related PhysX entities into categories. The following list demonstrates some example PhysX collision layers:
 
 * **Terrain** - Terrain, flooring, and any entities that player entities can traverse.
-* **Static objects** - Entities that have colliders and static rigid body components, but no animation, such as large rocks, tree trunks, and walls.
+* **Static objects** - Entities that have colliders, but no animation or rigid body components, such as large rocks, tree trunks, and walls.
 * **Players** - All player controlled entities.
 * **Enemies** - Entities that move via script or AI that can deal damage to, and receive damage from, player controlled entities.
 * **Projectiles** - Entities that can deal damage.

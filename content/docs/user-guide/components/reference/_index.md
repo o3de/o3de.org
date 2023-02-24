@@ -173,8 +173,7 @@ The following components are grouped by type as they appear in the O3DE Editor.
   [PhysX Heightfield Collider](/docs/user-guide/components/reference/physx/heightfield-collider/) | Creates a geometric collider based on the Axis-Aligned Box component. |
 | [PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/) | Creates a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.|
 | [PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/) | Simulates ragdoll physics by creating a hierarchy of rigid bodies connected by joints. |
-| [PhysX Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/) | Defines the entity as a non-movable rigid object that is solid and can collide with other PhysX entities. |
-| [PhysX Dynamic Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) | Defines the movable entity as a movable rigid object that is solid and can collide with other PhysX entities. |
+| [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) | Defines the entity as a rigid object that is solid and can move and collide with other PhysX entities. |
 | [PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/) | Creates a geometric collider based on the **Shape** component. |
 
 ### Scripting
