@@ -57,7 +57,7 @@ The first step in creating a distributable build is generating local binaries fr
 
 Perform the following steps from the O3DE source directory (`C:\o3de-source` in this example):
 
-1.  Generate the toolchain project files using a unique `O3DE_INSTALL_ENGINE_NAME` CMake cache setting. This value is the name of the engine used by **Project Manager** and the O3DE registration system. Giving the install layout a different engine name than the source engine enables the engines to be registered side-by-side.
+1.  Generate the toolchain project files using a unique `LY_VERSION_ENGINE_NAME` CMake cache setting. This value is the name of the engine used by **Project Manager** and the O3DE registration system. Giving the install layout a different engine name than the source engine enables the engines to be registered side-by-side.
 
     ```cmd
     cmake -B build/windows -G "Visual Studio 16" --config profile -DLY_VERSION_ENGINE_NAME="MyO3DE"
