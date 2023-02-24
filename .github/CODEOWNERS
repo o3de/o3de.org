@@ -1,76 +1,69 @@
+# Default site owners
+# These owners will be requested for review unless a later match takes precedence.
+* @o3de/sig-docs-community-maintainers
+
 # Ownership owners
 /.github/CODEOWNERS @o3de/sig-docs-community-maintainers
 
+# Default owner directories
+# These directories have default owners and also exceptions that will be specified in later groups.
+/content/docs/ @o3de/sig-docs-community-reviewers
+/layouts/ @o3de/sig-docs-community-site-reviewers
+/static/images/ @o3de/sig-docs-community-reviewers
+
+# Website content
+/assets/ @o3de/sig-docs-community-site-reviewers
+/content/search/ @o3de/sig-docs-community-site-reviewers
+/static/js/ @o3de/sig-docs-community-site-reviewers
+/config.toml @o3de/sig-docs-community-site-reviewers
+/Makefile @o3de/sig-docs-community-site-reviewers
+/netlify.toml @o3de/sig-docs-community-site-reviewers
+/package.json @o3de/sig-docs-community-site-reviewers
+
 # Community content
-/content/blog/* @o3de/sig-docs-community-reviewers 
-/content/community/* @o3de/sig-docs-community-reviewers 
-/content/contribute/* @o3de/sig-docs-community-reviewers 
-/content/docs/contributing/* @o3de/sig-docs-community-reviewers 
-/static/images/blog/* @o3de/sig-docs-community-reviewers 
-/static/images/community/* @o3de/sig-docs-community-reviewers 
-/static/images/contribute/* @o3de/sig-docs-community-reviewers 
-/static/images/contributing/* @o3de/sig-docs-community-reviewers 
-/static/images/shared/* @o3de/sig-docs-community-reviewers 
-/layouts/blog/* @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers 
-/layouts/community/* @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
-/layouts/contribute/* @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
-/layouts/partials/blog/* @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
-/layouts/partials/community/* @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
-/layouts/partials/contribute/* @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
+/content/blog/ @o3de/sig-docs-community-reviewers 
+/content/community/ @o3de/sig-docs-community-reviewers 
+/content/contribute/ @o3de/sig-docs-community-reviewers 
+/layouts/blog/ @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers 
+/layouts/community/ @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
+/layouts/contribute/ @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
+/layouts/partials/blog/ @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
+/layouts/partials/community/ @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
+/layouts/partials/contribute/ @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 /layouts/partials/blog-display.html @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 /layouts/partials/css.html @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
-/CONTRIBUTING @o3de/sig-docs-community-reviewers
+/static/images/blog/ @o3de/sig-docs-community-reviewers 
+/static/images/community/ @o3de/sig-docs-community-reviewers 
+/static/images/contribute/ @o3de/sig-docs-community-reviewers 
+/CONTRIBUTING.md @o3de/sig-docs-community-reviewers
 /README.md @o3de/sig-docs-community-reviewers
 
 # Release content
-/content/docs/release-notes/* @o3de/sig-docs-community-maintainers @o3de/sig-release-maintainers
-/static/images/release-notes/* @o3de/sig-docs-community-maintainers @o3de/sig-release-maintainers
+/content/docs/release-notes/ @o3de/sig-docs-community-maintainers @o3de/sig-release-maintainers
+/static/images/release-notes/ @o3de/sig-docs-community-maintainers @o3de/sig-release-maintainers
 
 # Docs content
-/content/docs/* @o3de/sig-docs-community-reviewers
 /content/smoketest.md @o3de/sig-docs-community-reviewers
-/static/docs/* @o3de/sig-docs-community-reviewers
+/static/docs/ @o3de/sig-docs-community-reviewers
+/static/files/ @o3de/sig-docs-community-reviewers
 /static/_redirects @o3de/sig-docs-community-reviewers
-/static/images/api-reference/* @o3de/sig-docs-community-reviewers
-/static/images/atom-guide/* @o3de/sig-docs-community-reviewers
-/static/images/community/* @o3de/sig-docs-community-reviewers
-/static/images/contribute/* @o3de/sig-docs-community-reviewers
-/static/images/contributing/* @o3de/sig-docs-community-reviewers
-/static/images/learning-guide/* @o3de/sig-docs-community-reviewers
-/static/images/shared/* @o3de/sig-docs-community-reviewers
-/static/images/tools-ui/* @o3de/sig-docs-community-reviewers
-/static/images/user-guide/* @o3de/sig-docs-community-reviewers
-/static/images/welcome-guide/* @o3de/sig-docs-community-reviewers
-/static/images/icons/* @o3de/sig-docs-community-reviewers
-/layouts/shortcodes/* @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
-/layouts/docs/* @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
-/layouts/partials/docs* @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
+/layouts/shortcodes/ @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
+/layouts/docs/ @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
+/layouts/partials/docs @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 
-# Web content
-/assets/* @o3de/sig-docs-community-site-reviewers
-/layouts/* @o3de/sig-docs-community-site-reviewers
-/content/search/* @o3de/sig-docs-community-site-reviewers
-/static/js/* @o3de/sig-docs-community-site-reviewers
-/config.toml @o3de/sig-docs-community-site-reviewers
-/Makefile @o3de/sig-docs-community-site-reviewers
-/package.json @o3de/sig-docs-community-site-reviewers
+# Shared community and docs content
+/content/docs/contributing/ @o3de/sig-docs-community-reviewers
+/content/docs/contributing/to-code/ @o3de/sig-docs-community-reviewers @o3de/reviewers
+/static/images/contributing/ @o3de/sig-docs-community-reviewers 
 
 # Foundation-owned materials
-/content/download/* @o3de/lf
+/content/download/ @o3de/lf
 /content/_index.md @o3de/lf
 /LICENSE-* @o3de/lf
 /_index.md @o3de/lf
-/netlify.toml @o3de/lf
-/static/apple-touch-icon-114x114.png @o3de/lf
-/static/apple-touch-icon-120x120.png @o3de/lf
-/static/apple-touch-icon-144x144.png @o3de/lf
-/static/apple-touch-icon-152x152.png @o3de/lf
-/static/apple-touch-icon-180x180.png @o3de/lf
-/static/apple-touch-icon-57x57.png @o3de/lf
-/static/apple-touch-icon-72x72.png @o3de/lf
-/static/apple-touch-icon-76x76.png @o3de/lf
-/static/apple-touch-icon.png @o3de/lf
+/static/images/events/ @o3de/lf
+/static/images/home/ @o3de/lf
+/static/img/ @o3de/lf
+/static/video/ @o3de/lf
+/static/apple-touch-icon*.png @o3de/lf
 /static/favicon.ico @o3de/lf
-/static/img/* @o3de/lf
-/static/images/events/* @o3de/lf
-/static/images/home/* @o3de/lf
