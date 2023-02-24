@@ -24,7 +24,7 @@ The workflow:
 
 7. [Submit your document to O3DE Documentation.](#submit-your-component-reference-document)
 
-All documentation must adhere to the standards outlined in the O3DE [Style Guide](/docs/contributing/to-docs/style-guide/)and [Terminology](/docs/contributing/to-docs/terminology/). If you need any help, reach out to the Documentation and Community Special Interest Group (#sig-docs-community) on [Discord](https://discord.com/invite/o3de). 
+All documentation must adhere to the standards outlined in the O3DE [Style Guide](/docs/contributing/to-docs/style-guide/) and [Terminology](/docs/contributing/to-docs/terminology/). If you need any help, reach out to the Documentation and Community Special Interest Group (#sig-docs-community) on [Discord](https://discord.com/invite/o3de). 
 
 
 ## Does my document belong in the O3DE Component Reference?
@@ -257,7 +257,7 @@ For a component card with a complex set of properties, you may need multiple pro
 Another option is to separate the property tables into [tabs](/docs/contributing/to-docs/style-guide/format/#tabs) on your document. When content is in tabs, only the active tab displays content, while the rest is hidden. Because of this behavior, tabs are recommended if the sets of properties define configurations for different workflows that the user may or may not choose. 
 
 **Examples**:
-* [Light component](/docs/user-guide/components/reference/atom/light/): Contains several configurations that don't have a 1-1 relationship with the **Light type** property. Some propery groups are available for more than one light type, so they are documented in different property tables. Each property table specifies which light types support those properties.
+* [Light component](/docs/user-guide/components/reference/atom/light/): Contains several configurations that don't have a 1-1 relationship with the **Light type** property. Some property groups are available for more than one light type, so they are documented in different property tables. Each property table specifies which light types support those properties.
 
 * [PhysX Primitive Collider component](/docs/user-guide/components/reference/physx/collider/): Contains several configurations, which depend on the **Shape** property. Each configuration affect what properties are available, so they are documented in different property tables separated into tabs. 
 
