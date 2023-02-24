@@ -6,7 +6,7 @@ weight: 150
 toc: true
 ---
 
-Follow the **Open 3D Engine (O3DE)** Docs Style Guide in your documentation. This ensures that the documentation is consistent and helpful to users.
+Follow the O3DE Docs Style Guide in your documentation. This ensures that the documentation is consistent and helpful to users. 
 
 | **Language** |  |
 | --- | --- |
@@ -18,7 +18,7 @@ Follow the **Open 3D Engine (O3DE)** Docs Style Guide in your documentation. Thi
 | [Acronyms, abbreviations, and Latin phrases](guidance#acronyms-abbreviations-and-latin-phrases) | Write acronyms or abbreviations in their expanded form first, followed by the acronym in parentheses. Don't abbreviate common words or use Latin phrases; use the complete word or a similar one.  |
 | [Idioms, slang, colloquialisms, or jargon](guidance#idioms-slang-colloquialisms-or-jargon) | Don't use them. These words and phrases may be understood by native U.S. English speakers, but are difficult to translate.  |
 | **Formatting** |
-| [Hugo](../hugo) and [Markdown](format) | Documentation is written in Markdown (`.md`) files and built by [Hugo](https://gohugo.io/), a static site generator. It's primarily formatted using [Markdown syntax](https://www.markdownguide.org/basic-syntax/), with support for in-line HTML. Additional content formatting includes images, videos, callout boxes, math equations, and diagrams. Callout boxes are implemented through [shortcodes](shortcodes). Math equations can be rendered using [MathJax formatting](tools#math-formulas). Diagrams can be rendered using [Mermaid syntax](tools#diagrams) inside Markdown code blocks. |
+| [Hugo](../hugo) and [Markdown](format) | Documentation is written in Markdown (`.md`) files and built by [Hugo](https://gohugo.io/), a static site generator. It's primarily formatted using [Markdown syntax](https://www.markdownguide.org/basic-syntax/), with support for in-line HTML. Additional content formatting includes images, videos, and callout boxes. Callout boxes are implemented through [shortcodes](shortcodes). |
 | [Metadata](metadata) | Documentation must comply with metadata requirements, including *linktitle*, *title*, and *description*. Use *weight* to override the default alphabetical sort order. |
 | [Topic headings](format.md#topic-headings) | Section titles must use H2 (`##`) headings. Subsection titles follow as H3 (`###`) and H4 (`####`) headings. Topic headings must use sentence case. The H1(`#`) heading is reserved for the page title which is specified in the topic's metadata.  |
 | [User interface, inputs, and hotkeys](format#user-interface-inputs-and-hotkeys) | Bold all instances. |

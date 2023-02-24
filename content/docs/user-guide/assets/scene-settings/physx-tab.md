@@ -11,7 +11,7 @@ You can create PhysX collider product assets for PhysX simulation, hit detection
 You can name meshes with the postfix `_phys` in your source asset to automatically process them as PhysX colliders. When a mesh in a source asset has the `_phys` postfix, it is recognized as a collider and automatically added to the default PhysX mesh group.
 
 {{< important >}}
-There are many options for creating PhysX colliders. The *best* options in a scenario depend on many factors including mesh complexity, how the collider is used, and whether the entity containing the collider is static (doesn't move), kinematic (animated), or simulated (driven by forces and collisions). In general, primitive colliders offer the best simulation performance, but you might consider trading performance for precision in situations where collider assets that closely match the shape of a visible mesh are desirable.
+There are many options for creating PhysX colliders. The *best* options in a scenario depend on many factors including mesh complexity, how the collider is used, and whether the entity containing the collider is static (doesn't move), kinematic (animated), or dynamic (simulated movement with a rigid body component). In general, primitive colliders offer the best simulation performance, but you might consider trading performance for precision in situations where collider assets that closely match the shape of a visible mesh are desirable.
 {{< /important >}}
 
 The PhysX tab is available if the source asset contains at least one mesh.
@@ -33,7 +33,7 @@ The PhysX tab is available if the source asset contains at least one mesh.
 
 ![The Scene Settings PhysX triangle mesh asset properties.](/images/user-guide/assets/scene-settings/physx-triangle-mesh-asset.png)
 
-Triangle mesh colliders accurately reproduce the shape of the selected meshes, but cannot be used on simulated entities. Triangle mesh colliders are most suitable for static environment entities that have complex shapes and require colliders that accurately resemble the shape of the visible mesh.
+Triangle mesh colliders accurately reproduce the shape of the selected meshes, but cannot be used on dynamic entities. Triangle mesh colliders are most suitable for static environment entities that have complex shapes and require colliders that accurately resemble the shape of the visible mesh.
 
 | Property | Description |
 | - | - |
@@ -50,7 +50,7 @@ Triangle mesh colliders accurately reproduce the shape of the selected meshes, b
 
 ![The Scene Settings PhysX convex asset properties.](/images/user-guide/assets/scene-settings/physx-convex-asset.png)
 
-Convex hulls are generated colliders that can approximate the shape of the selected meshes. Convex hulls can be used with static, kinematic, and simulated entities, and are often used on interactive entities that require rigid body physics and a collider mesh that resembles the shape of the visible mesh.
+Convex hulls are generated colliders that can approximate the shape of the selected meshes. Convex hulls can be used with static, kinematic, and dynamic entities, and are often used on interactive entities that require rigid body physics and a collider mesh that resembles the shape of the visible mesh.
 
 | Property | Description |
 | - | - |
@@ -68,7 +68,7 @@ Convex hulls are generated colliders that can approximate the shape of the selec
 
 ![The Scene Settings PhysX primitive asset properties.](/images/user-guide/assets/scene-settings/physx-primitive-asset.png)
 
-Primitive colliders are simple parametric shape primitives (box, capsule, sphere) that are fit to the input meshes and can be used with static, kinematic, and simulated entities. Primitive colliders generally provide the best simulation performance, but might not closely match the shape of the visible mesh. They are best suited for simulated entities with simple meshes, as well as projectiles, triggers, and entities where colliders that accurately represent shape of the visible mesh are not necessary.
+Primitive colliders are simple parametric shape primitives (box, capsule, sphere) that are fit to the input meshes and can be used with static, kinematic, and dynamic entities. Primitive colliders generally provide the best simulation performance, but might not closely match the shape of the visible mesh. They are best suited for dynamic entities with simple meshes, as well as projectiles, triggers, and entities where colliders that accurately represent shape of the visible mesh are not necessary.
 
 | Property | Description |
 | - | - |
@@ -79,9 +79,9 @@ Primitive colliders are simple parametric shape primitives (box, capsule, sphere
 
 ![The Scene Settings PhysX decompose meshes properties.](/images/user-guide/assets/scene-settings/physx-decompose-meshes.png)
 
-Exporting a PhysX mesh as a convex or a primitive collider might not produce good results if the mesh's shape is concave or doesn't closely fit one of the primitive shapes. Exporting a PhysX mesh as a triangle mesh collider creates a collider that accurately resembles the original mesh, but won't work with a simulated entity. For these scenarios, O3DE supports approximate convex decomposition. Arbitrary meshes are broken down into convex parts which approximate the original shape before processing each part through the asset pipeline individually.
+Exporting a PhysX mesh as a convex or a primitive collider might not produce good results if the mesh's shape is concave or doesn't closely fit one of the primitive shapes. Exporting a PhysX mesh as a triangle mesh collider creates a collider that accurately resembles the original mesh, but won't work with a dynamic entity. For these scenarios, O3DE supports approximate convex decomposition. Arbitrary meshes are broken down into convex parts which approximate the original shape before processing each part through the asset pipeline individually.
 
-Decomposing meshes has the advantage that each individual convex part can be exported as a convex or primitive approximation. Since the resulting asset doesn't contain any triangle meshes, it can be used on simulated entities.
+Decomposing meshes has the advantage that each individual convex part can be exported as a convex or primitive approximation. Since the resulting asset doesn't contain any triangle meshes, it can be used on dynamic entities.
 
 For more information and illustrated examples of results, see the [V-HACD library on GitHub](https://github.com/kmammou/v-hacd).
 

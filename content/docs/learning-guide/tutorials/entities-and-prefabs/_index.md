@@ -9,5 +9,5 @@ Entities and prefabs provide the foundation for building projects in **Open 3D E
 | Tutorial | Description |
 | - | - |
 | [Entity and Prefab Basics](entity-and-prefab-basics) | Learn the basics of creating and modifying entities and prefabs. |
-| [Override a Prefab](override-a-prefab) | Learn how to make changes to a single prefab instance. |
 | [Spawn and Despawn a Prefab](spawn-a-prefab.md) | Use **Script Canvas** to create a script that spawns and despawns a prefab. |
+

@@ -2,7 +2,7 @@
 linkTitle: Debugging
 title: Debugging Asset Processor Issues
 description: Methods to debug Asset Processor issues in Open 3D Engine (O3DE).
-weight: 600
+weight: 500
 toc: true
 ---
 

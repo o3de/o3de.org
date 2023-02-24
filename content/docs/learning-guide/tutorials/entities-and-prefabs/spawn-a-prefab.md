@@ -2,21 +2,11 @@
 linktitle: Spawn and Despawn
 title: Spawn and Despawn a Prefab
 description: Learn to spawn and despawn prefabs with Script Canvas in Open 3D Engine (O3DE).
-weight: 400
+weight: 300
 toc: true
 ---
 
 In this tutorial, you'll learn how to spawn and despawn prefab instances in **Open 3D Engine (O3DE)**. You'll create a prefab to spawn, create a spawner entity, assemble a spawning script with [Script Canvas Editor](/docs/user-guide/scripting/script-canvas/get-started/editor-interface), and test the results. You should be familiar with [entity and prefab basics](entity-and-prefab-basics) before working through this tutorial.
-
-| O3DE Experience | Time to Complete | Feature Focus | Last Updated |
-| --- | --- | --- | --- |
-| Beginner | 25 Minutes | Spawning and despawning prefabs with Script Canvas. | January 13, 2023 |
-
-## Prerequisites
-
-* Basic knowledge of working with [O3DE Editor](/docs/user-guide/editor).
-* Basic knowledge of working with [Script Canvas Editor](/docs/user-guide/scripting/script-canvas/editor-reference).
-* A project built from the standard project template or one that contains the Gems in the standard template.
 
 ## Create a prefab
 

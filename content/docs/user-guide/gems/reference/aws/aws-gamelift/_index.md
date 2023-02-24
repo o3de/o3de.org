@@ -13,7 +13,7 @@ The **AWS GameLift** Gem provides the following features:
 
 **Build and package management**
 - Instructions to package and optionally upload the dedicated server build.
-- A sample [AWS Cloud Development Kit (AWS CDK)](https://docs.aws.amazon.com/cdk/v2/guide/home.html) application. You can deploy the AWS CDK application to set up basic GameLift resources, or modify the application to meet your needs by adding or updating the deployed resources.
+- A sample [AWS Cloud Development Kit (AWS CDK)](https://docs.aws.amazon.com/cdk/latest/guide/home.html) application. You can deploy the AWS CDK application to set up basic GameLift resources, or modify the application to meet your needs by adding or updating the deployed resources.
 
 ## Release highlights
 

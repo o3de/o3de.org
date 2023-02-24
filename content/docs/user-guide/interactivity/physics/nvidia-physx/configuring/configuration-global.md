@@ -35,7 +35,7 @@ The following table describes the settings for **Scene Configuration**.
 
 ## Editor configuration 
 
-The following options control the appearance of PhysX debug visualizations in **O3DE Editor**, including the **Debug Draw COM** (center of mass) option of the [PhysX Dynamic Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) component.
+The following options control the appearance of PhysX debug visualizations in **O3DE Editor**, including the **Debug Draw COM** (center of mass) option of the [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) component.
 
 {{< note >}}
 These options are part of the [PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/) Gem and are not related to the [Debug Draw](/docs/user-guide/gems/reference/debug/debug-draw/) Gem or the [PhysX Debug](/docs/user-guide/gems/reference/physics/nvidia/physx-debug/) Gem.

@@ -9,21 +9,21 @@ To get started using AWS Gems with AWS services in your O3DE project, complete t
 
 1. [Create an AWS account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) if you don't have one.
 
-2. Configure **AWS credentials** following the instructions in [Configuring AWS Credentials for O3DE](./configuring-credentials/).
+1. Configure **AWS credentials** following the instructions in [Configuring AWS Credentials for O3DE](./configuring-credentials/).
 
     a. Confirm you have credentials using the command `aws configure list`.
 
-3. Install the [AWS Cloud Development Kit (CDK)](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install).
+1. Install the [AWS Cloud Development Kit (CDK)](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html#getting_started_install).
 
-    a. Confirm the AWS CDK is set up using the command `cdk --version`.
+    a. Confirm the CDK is setup using the command `cdk --version`.
 
-4. **Build** your O3DE project with the AWS Core Gem (and other AWS Gems you need) enabled.
+1. **Build** your O3DE project with the AWS Core Gem (and other AWS Gems you need) enabled.
 
-5. Deploy the **AWS CDK applications** for the AWS Gems you have enabled. See [Deploying the AWS CDK Application](./cdk-application/) for instructions.
+1. Deploy the **CDK applications** for the AWS Gems you have enabled. See [Deploying the CDK Application](./cdk-application/) for instructions.
 
-6. Configure a [resource mapping file](./resource-mapping-files/) using the [Resource Mapping Tool](./resource-mapping-tool/).
+1. Configure a [resource mapping file](./resource-mapping-files/) using the [Resource Mapping Tool](./resource-mapping-tool/).
 
-7. Associate the resource mapping file with the project. See the next section entitled [Project Settings](#project-settings).
+1. Associate the resource mapping file with the project. See the next section entitled [Project Settings](#project-settings).
 
 You should now be able to utilize AWS functions in Lua script, Script Canvas, or C++ to communicate with your AWS resources. See [Scripting with AWS Core](./scripting/) for scripting examples.
 
@@ -53,7 +53,6 @@ You will need to create this file if you want to set any of the following option
 | --- | --- |
 | **ProfileName** | \[Optional\] The project will use your **default** profile in `./aws/credentials` (on macOS and Linux) or `%USERPROFILE%\.aws\credentials` (on Windows). Override the **default** profile or any environment variable setting by using this variable. Must be a named profile in your `credentials` file. |
 | **ResourceMappingConfigFileName** | \[Optional\] The name of the resource mapping file to load while starting up. Resource mapping files are expected to be located in `<ProjectName>\Config`. See [Resource Mapping Files](./resource-mapping-files/) for more information. |
-| **AllowAWSMetadataCredentials** | \[Optional\] Whether or not the AWS Core Gem should query AWS environment endpoints like the [Amazon EC2 Instance Metadata Service (IMDS)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html) when looking up credentials. Defaults to `false`. See [Running your O3DE project on Amazon EC2](./configuring-credentials#running-your-o3de-project-on-amazon-ec2) for more information. |
 
 {{< note >}}
 If you make changes to this file, you will need to restart the O3DE Editor.
@@ -62,14 +61,13 @@ If you make changes to this file, you will need to restart the O3DE Editor.
 Example registry settings file:
 
 ```json
-  {
+{
     "Amazon":
     {
-      "AWSCore": {
-          "ProfileName": "testprofile",
-          "ResourceMappingConfigFileName": "default_aws_resource_mappings.json",
-          "AllowAWSMetadataCredentials": false
-      }
+        "AWSCore": {
+            "ProfileName": "testprofile",
+            "ResourceMappingConfigFileName": "default_aws_resource_mappings.json"
+        }
     }
-  }
+}
 ```

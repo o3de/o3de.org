@@ -56,3 +56,4 @@ When this can't be done, such as with an existing file format like FBX files ref
 ### From in-editor tools
 
 In most cases, when authoring an in-editor tool that reads and writes source assets, the file format can be fully controlled by the author. In this case, when referencing another asset, the author should keep in mind potential pathing issues when one asset references another. In other cases, if the in-editor tool is loading an pre-existing file format that can't be modified, see the previous section on handling file references from external tools.
+
