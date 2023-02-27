@@ -29,11 +29,13 @@ The **Sphere Shape** component creates a transparent sphere. The dimensions of t
 
 ## Edit mode actions
 
-The edit mode provides two sub-modes.
-| Mode | Icon | Description
-| - | - | - |
-| **Dimensions** | ![Shape component mode dimensions submode icon](/images/user-guide/components/reference/shape/shape-component-mode-submode-dimensions.svg) | **Left-click** and drag the black handle on the surface of the Sphere Shape to edit the **Radius**. |
-| **Translation Offset** | ![Shape component mode translation offset submode icon](/images/user-guide/components/reference/shape/shape-component-mode-submode-translation-offset.svg) | **Left-click** and drag the linear or planar manipulators to edit the **Translation Offset**. |
+The edit mode provides two sub-modes. You can switch between sub-modes using the buttons in the **Viewport UI Cluster** in the top left of the **Editor**, by using the keyboard hotkeys listed below, or by using **Ctrl + Mousewheel Up/Down**.
+
+| Mode | Icon | Keyboard Hotkey | Description |
+| - | - | - | - |
+| **Dimensions** | ![Shape component mode dimensions submode icon](/images/user-guide/components/reference/shape/shape-component-mode-submode-dimensions.svg) | **1** | **Left-click** and drag the black handle on the surface of the Sphere Shape to edit the **Radius**. |
+| **Translation Offset** | ![Shape component mode translation offset submode icon](/images/user-guide/components/reference/shape/shape-component-mode-submode-translation-offset.svg) | **2** | **Left-click** and drag the linear or planar manipulators to edit the **Translation Offset**. |
+| **Reset Current Mode** | | **R** | Resets the properties manipulated by the current sub-mode to their default values. | 
 
 ## SphereShapeComponentRequestsBus
 
