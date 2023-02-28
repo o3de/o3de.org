@@ -69,7 +69,7 @@ Perform the following steps from the O3DE source directory (`C:\o3de-source` in 
     * `CMAKE_INSTALL_PREFIX`: The parent directory of the `bin` directory containing the distributable binaries. You will find the Project Manager, Editor, and other binaries in the subdirectory `bin\Windows\profile\Default`. If you don't specify this option, the engine SDK binaries will be built to `<ENGINE_SOURCE>\install\bin\Windows\profile\Default`.
 
     {{< note >}}
-Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](./configure-and-build/#configuring-projects).
+Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](../configure-and-build/#configuring-projects).
     {{< /note >}}
 
     The **profile** configuration is recommended for distributed builds, as it provides additional logging and engine introspection capabilities useful during project development at minimal performance cost. **debug** builds are primarily useful during engine development.
