@@ -108,7 +108,7 @@ You can use the small downsampled low pass image in texturing for our Macro mate
 * Use the downsampled low pass to generate a color ramp (and a matching height map), which can be used as input in programs like World Machine to use in colorization
 * Use the downsampled low pass as a color swatch for painting terrain
 
-Then with the proper blending and syncing the repeat, you can augment this with the the high pass detail texture and result in something similar to the original image up close.
+Then with the proper blending and syncing the repeat, you can augment this with the high pass detail texture and result in something similar to the original image up close.
 
 ## High pass detail map
 

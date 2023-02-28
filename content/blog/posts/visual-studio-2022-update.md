@@ -22,7 +22,7 @@ Before the 22.10.0 release, Windows continuous integration nodes only had Visual
 ### CI Nodes Updates
 
 Between the time of the 22.05.0 (May 2022) release the 22.10.0 (October 2022) release the Jenkins CI Nodes have been updated with Visual Studio 2022 17.3 Build Tools and the latest v143 toolset. 
-Furthermore all O3DE build warnings and errors using the the v143 toolset were fixed and future VS2022 compile failures are protected against via the Automated Review pipeline validating each Pull Request that goes into the O3DE repo [development](https://github.com/o3de/o3de) branch.  
+Furthermore all O3DE build warnings and errors using the v143 toolset were fixed and future VS2022 compile failures are protected against via the Automated Review pipeline validating each Pull Request that goes into the O3DE repo [development](https://github.com/o3de/o3de) branch.  
 
 ### Project Manager Updates
 
@@ -73,7 +73,7 @@ First the user should make sure they have the latest `MSVC v142 - VS 2019 C++ x6
 {{< image-width src="/images/blog/vs2022/vs2022-installer-v142-toolset.png" width="100%" alt="Visual Studio Installer Individual Components" >}}
 
 Once it is verified that latest `MSVC v142` toolset is installed, the user can configure the toolset using either the CMake GUI or the CMake CLI via the `-T<toolset>` option which is documented on the CMake website as part of the [CMAKE_GENERATOR_TOOLSET](https://cmake.org/cmake/help/v3.23/variable/CMAKE_GENERATOR_TOOLSET.html#visual-studio-toolset-selection) variable documentation.  
-To use the the latest v142 toolset which is 14.29 at this time, the following value for the `-T` option should be supplied:
+To use the latest v142 toolset which is 14.29 at this time, the following value for the `-T` option should be supplied:
 ```
 -Tv142
 ```

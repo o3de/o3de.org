@@ -5,7 +5,7 @@ description: The PhysX Collider component adds a PhysX collider to an entity so 
 toc: true
 ---
 
-The **PhysX Collider** component adds a PhysX collider to an entity so that the entity can be included in PhysX simulation. The collider can be defined by a mesh you create, automatically generated convex meshes, shapes that have been automatically fit to a decomposed mesh, or a simple shape primitive selected in the the PhysX Collider component. The PhysX Collider component can also define a trigger area or a force region.
+The **PhysX Collider** component adds a PhysX collider to an entity so that the entity can be included in PhysX simulation. The collider can be defined by a mesh you create, automatically generated convex meshes, shapes that have been automatically fit to a decomposed mesh, or a simple shape primitive selected in the PhysX Collider component. The PhysX Collider component can also define a trigger area or a force region.
 
 {{< note >}}
 The PhysX Collider component attached to an entity by itself creates a *static* (non-moving) entity. Add a [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) component with a PhysX Collider component to create a *dynamic* or a *kinematic* entity. Dynamic entities have simulated movement in response to collisions and forces. Kinematic entities aren't affected by collisions or forces, but are driven by scripted movement. For information about the various PhysX collider types and how to process them, refer to [Process PhysX Collider Assets](/docs/learning-guide/tutorials/assets/physx-colliders/).
