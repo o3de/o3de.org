@@ -488,7 +488,7 @@ for(std::size_t i = 0; i < rows; i++)
 }
 ```
 
-You may have noticed that the code for both snippets is identical, bar some flipping of variable names for clarity. Remember that the product of a row vector with a given matrix is the same as the product of a column vector of the transpose of that same matrix:
+You may have noticed that the code for both snippets is identical, bar some flipping of variable names for clarity. Remember that the product of a row vector with a given matrix is the transpose of the product between a column vector and the transpose of that same matrix:
 
 $$
 \vec{r} \cdot \mathbf{M} = (\mathbf{M^T} \cdot \vec{c})^\mathbf{T}}
