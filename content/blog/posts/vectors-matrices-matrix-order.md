@@ -566,7 +566,7 @@ Programming languages themselves have assumptions about the matrix order of mult
 
 > Successive subscript operators designate an element of a multidimensional array object. If E is an n-dimensional array (n >= 2) with dimensions i x j x . . . x k, then E (used as other than an lvalue) is converted to a pointer to an (n - 1)-dimensional array with dimensions j x . . . x k. If the unary * operator is applied to this pointer explicitly, or implicitly as a result of subscripting, the result is the referenced (n - 1)-dimensional array, which itself is converted into a pointer if used as other than an lvalue. **It follows from this that arrays are stored in row-major order (last subscript varies fastest).**
 
-If we were to store our matrices in the natural matrix order of C++ but access the elements in opposing matrix order, we would have element access patterns that are cache unfriendly as each element access will not being contiguous but instead separated by a stride equal to the number of columns in the matrix. Consider the following:
+If we were to store our matrices in the natural matrix order of C++ but access the elements in opposing matrix order, we would have element access patterns that are cache unfriendly as each element access will not be contiguous but instead separated by a stride equal to the number of columns in the matrix. Consider the following:
 
 ```c++
 const std::size_t rows = 3;
