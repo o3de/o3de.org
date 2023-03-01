@@ -13,14 +13,17 @@ The following table describes the `AZ_Tracing` macros and their uses.
 
 ****
 
-| AZ Tracing Macro | Description |
-| --- | --- |
-| `AZ_Assert` |  Use for critical errors when the program cannot continue. `AZ_Assert` macros print an error message, the file name and line number where the error occurred, and then break program execution.  |
-| `AZ_Error` |  Use when an obvious error has occurred but the program can continue safely. `AZ_Error` macros print an error message and the file name and line number where the error occurred. In some environments, `AZ_Error` notifies the user that an error has occurred.  |
-| `AZ_Warning` |  Use when an error might have occurred. `AZ_Warning` macros print an error message and the file name and line number of the possible error, but take no other action.  |
-| `AZ_TracePrintf` |  Use for informational purposes only. `AZ_TracePrintf` macros print a message but take no other action.    |
+| AZ Tracing Macro | Description                                                                                                                                                                                                                                                     |
+|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `AZ_Assert`      | Use for critical errors when the program cannot continue. `AZ_Assert` macros print an error message, the file name and line number where the error occurred, and then break program execution.                                                                  |
+| `AZ_Error`       | Use when an obvious error has occurred but the program can continue safely. `AZ_Error` macros print an error message and the file name and line number where the error occurred. In some environments, `AZ_Error` notifies the user that an error has occurred. |
+| `AZ_Warning`     | Use when an error might have occurred. `AZ_Warning` macros print an error message and the file name and line number of the possible error, but take no other action.                                                                                            |
+| `AZ_Info`        | Use for informational purposes only. Info messages indicate that a normal, expected or relevant event has happened. `AZ_Info` macros print a message but take no other action.                                                                                  |
+| `AZ_Trace`       | Use for debugging informational purposes only. `AZ_Trace` macros print a message but take no other action.                                                                                                                                                      |
+| `AZ_TracePrintf` | __(Deprecated)__ Use for informational purposes only. `AZ_TracePrintf` macros print a message but take no other action. Prefer to use `AZ_Info` and `AZ_Trace` macros.                                                                                          |
 
- For source code, see `Code\Framework\AzCore\AzCore\Debug\Trace.*`.
+There are also versions of many of these macros that only get printed once, for example `AZ_ErrorOnce`. For source code, see `Code\Framework\AzCore\AzCore\Debug\Trace.*`.
+
 
 ## Suppressing AZ Trace Messages in Unit Tests
 

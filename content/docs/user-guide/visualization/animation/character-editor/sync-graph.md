@@ -18,7 +18,7 @@ This topic describes the following main steps for synchronizing two animation gr
 
 1. Add a servant parameter action to the primary graph to send change events to the secondary graph.
 
-1. Synchronize the graphs by using O3DE's [Event Bus (EBus)](/docs/user-guide/programming/ebus/) system and Lua script.
+1. Synchronize the graphs by using O3DE's [Event Bus (EBus)](/docs/user-guide/programming/messaging/ebus/) system and Lua script.
 
 This topic illustrates this graph synchronization with an example that has two actors, a robot actor ("Jack") and a gun actor. When the player activates the sync mode and uses the keyboard to fire, the robot makes a firing motion and the gun fires. When the player deactivates the sync mode, the robot makes a firing motion, but the gun does not fire.
 
@@ -248,7 +248,7 @@ Synchronizing the primary and secondary graphs involves the following steps:
 
 1. Placing a Lua script component and Lua script on the primary entity.
 
-The Lua scripts synchonize the two graphs by handling animation graph events in O3DE's [Event Bus (EBus)](/docs/user-guide/programming/ebus/) system.
+The Lua scripts synchonize the two graphs by handling animation graph events in O3DE's [Event Bus (EBus)](/docs/user-guide/programming/messaging/ebus/) system.
 
 ### Getting Input from the Player 
 

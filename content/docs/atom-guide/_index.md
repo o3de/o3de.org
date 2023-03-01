@@ -15,9 +15,7 @@ Welcome to the Atom Documentation! Atom Renderer is the graphics engine powering
 
 | Section                        | Description |
 |--------------------------------------|---------|
-| [What is Atom?](what-is-atom/) |  An introduction and high-level overview of Atom.  |
-| [Setting Up Atom Projects](setup-atom-projects/) | Atom is already built into O3DE, but you can set up these projects to learn about Atom's features. |
-| [Atom Sample Viewer](atom-sample-viewer/) |  Preview Atom’s rendering features through a series of samples, such as global illumination and multi-scene rendering.  |
+| [Overview](what-is-atom/) |  An introduction and high-level overview of Atom.  |
 | [Features](/docs/atom-guide/features/) |  Learn about graphics features and rendering techniques that Atom provides.  |
 | [Look Development](look-dev/) | Learn about materials, the Material Editor, textures, shaders, and color in Atom. |
 | [Developer Guide](dev-guide/) | Learn about Atom's render pipeline, the Material-, Shader-, and Pass Systems, and AZSL shader programming. |

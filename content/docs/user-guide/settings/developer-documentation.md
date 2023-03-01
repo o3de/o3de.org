@@ -242,7 +242,7 @@ An alternative to using the specialization system is to merge each file with the
 
 ## Merge Platform Abstraction Layer (PAL) directories
 
-`AZ::SettingsRegistry::MergeSettingsFolder` allows users to supply an optional platform name to indicate an OS platform directory to search for `.setreg` and `.setegpatch` files. This allows the merging of platform-specific settings by supplying the `platform` parameter. This parameter should be set to an empty string if platform-specific settings are not required. To merge platform-specific settings for the current OS, use the [AZ_TRAIT_OS_PLATFORM_CODENAME](https://github.com/o3de/o3de/blob/37b1216015567fb7faa49fe7e3f6f7a73379e06a/Code/Framework/AzCore/Platform/Linux/AzCore/AzCore_Traits_Linux.h#L41) define, which expands to the current platform.
+`AZ::SettingsRegistry::MergeSettingsFolder` allows users to supply an optional platform name to indicate an OS platform directory to search for `.setreg` and `.setregpatch` files. This allows the merging of platform-specific settings by supplying the `platform` parameter. This parameter should be set to an empty string if platform-specific settings are not required. To merge platform-specific settings for the current OS, use the [AZ_TRAIT_OS_PLATFORM_CODENAME](https://github.com/o3de/o3de/blob/37b1216015567fb7faa49fe7e3f6f7a73379e06a/Code/Framework/AzCore/Platform/Linux/AzCore/AzCore_Traits_Linux.h#L41) define, which expands to the current platform.
 
 ## Adding specializations from the command line
 

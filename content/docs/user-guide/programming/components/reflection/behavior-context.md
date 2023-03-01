@@ -15,7 +15,7 @@ Use the behavior context to bind the following C++ constructs for scripting:
 + [Constants](#constants)
 + [Enums](#enums)
 
-In addition, the behavior context supports the O3DE [EBus](/docs/user-guide/programming/ebus) and [AZ::Event](/docs/user-guide/programming/az-event) event systems:
+In addition, the behavior context supports the O3DE [EBus](/docs/user-guide/programming/messaging/ebus) and [AZ::Event](/docs/user-guide/programming/messaging/az-event) event systems:
 
 + [EBus](#ebus)
   + [Events](#events)

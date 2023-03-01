@@ -115,7 +115,7 @@ When `AZ::Physics` integration mode is enabled, the navigation mesh voxelizer is
 
 Use the following request function with the `NavigationAreaRequestBus` EBus interface to communicate with other components of your game.
 
-For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/)
+For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/)
 
 ### RefreshArea 
 
