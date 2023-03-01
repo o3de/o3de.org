@@ -76,7 +76,7 @@ Another way of thinking about this is that in order to have a well-defined produ
 
 $$
 \begin{array}{l@{}l}
-\mathbf{M}^{T} \cdot \vec{c} 
+\mathbf{M^T} \cdot \vec{c} 
     &{}= \begin{bmatrix} m_{11} & m_{21} \\\ m_{12} & m_{22}  \end{bmatrix} \cdot \begin{bmatrix} c_{1} \\\ c_{2} \end{bmatrix} \\\ \\\
 &{}= \begin{bmatrix} 
 m_{11}c_{1} + m_{12}c_{1} \\\ 
