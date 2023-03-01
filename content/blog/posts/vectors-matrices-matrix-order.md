@@ -667,6 +667,7 @@ When picking conventions for our vectors and matrices, we can choose any combina
 <td>Row vectors with matrices stored in row-major order</td>
 <td>
 <ul>
+<li>Uses the same vector convention (and thus ordering of vector and matrix products) as a lot of graphics literature.</li>
 <li>Requires no reordering of array data for the matrices.</li>
 <li>Initialization of matrix array elements in code maps naturally to the layout of the matrix.</li>
 <li>Cache-friendly, trivial access to the basis vectors in transformation matrices.</li>
