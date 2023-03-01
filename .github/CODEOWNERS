@@ -21,7 +21,6 @@
 /package.json @o3de/sig-docs-community-site-reviewers
 
 # Community content
-/content/blog/ @o3de/sig-docs-community-reviewers 
 /content/community/ @o3de/sig-docs-community-reviewers 
 /content/contribute/ @o3de/sig-docs-community-reviewers 
 /layouts/blog/ @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers 
@@ -32,15 +31,8 @@
 /layouts/partials/contribute/ @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 /layouts/partials/blog-display.html @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 /layouts/partials/css.html @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
-/static/images/blog/ @o3de/sig-docs-community-reviewers 
 /static/images/community/ @o3de/sig-docs-community-reviewers 
 /static/images/contribute/ @o3de/sig-docs-community-reviewers 
-/CONTRIBUTING.md @o3de/sig-docs-community-reviewers
-/README.md @o3de/sig-docs-community-reviewers
-
-# Release content
-/content/docs/release-notes/ @o3de/sig-docs-community-maintainers @o3de/sig-release-maintainers
-/static/images/release-notes/ @o3de/sig-docs-community-maintainers @o3de/sig-release-maintainers
 
 # Docs content
 /content/smoketest.md @o3de/sig-docs-community-reviewers
