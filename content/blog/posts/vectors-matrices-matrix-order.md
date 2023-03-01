@@ -595,7 +595,7 @@ As we have seen in the previous section, there is nothing stopping us from stori
 
 ```c++
 
-// Rotation of approx. 90 degrees (in radians)
+// Rotation of approx. 45 degrees (in radians)
 const float theta = 0.785;
 
 // 2x2 matrix in row-major order
