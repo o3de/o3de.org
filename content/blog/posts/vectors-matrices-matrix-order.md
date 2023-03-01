@@ -90,7 +90,7 @@ $$
 \begin{bmatrix} 1 & 0 & 3 \\\ 0 & 2 & 0 \\\ 1 & 0 & 3 \end{bmatrix} \cdot \begin{bmatrix} 1 \\\ 0 \\\ 1 \end{bmatrix} =  \begin{bmatrix} 4 \\ 0 \\ 4 \end{bmatrix}
 $$
 
-The matrices themselves have no concept of “row vectors” or “column vectors”, from the perspective of matrix products there’s only matrices with the same well defined rules applied.
+The matrices themselves have no concept of “row vectors” or “column vectors”, from the perspective of matrix products there’s only matrices with the same well defined rules applied. The only difference is that one is a \\(1x3\\) matrix and the other is \\(3x1\\) matrix.
 
 ## Arrays
 
