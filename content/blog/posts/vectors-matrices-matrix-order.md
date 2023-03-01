@@ -69,7 +69,7 @@ $$
 Whereas the column vector product is as follows:
 
 $$
-\begin{bmatrix} 1 & 0 & 1 \\\ 0 & 2 & 0 \\\ 3 & 0 & 3 \end{bmatrix} \cdot \begin{bmatrix} 1 \\\ 0 \\\ 1 \end{bmatrix} =  \begin{bmatrix} 2 & 0 & 6 \end{bmatrix}
+\begin{bmatrix} 1 & 0 & 1 \\\ 0 & 2 & 0 \\\ 3 & 0 & 3 \end{bmatrix} \cdot \begin{bmatrix} 1 \\\ 0 \\\ 1 \end{bmatrix} =  \begin{bmatrix} 2 \\ 0 \\ 6 \end{bmatrix}
 $$
 
 Another way of thinking about this is that in order to have a well-defined product, the row vector has to appear first in the product, and since we have transposed the vector, we also need to transpose the matrix so for \\(\vec{c}\\) we would have:
