@@ -144,7 +144,7 @@ Write the use cases for which a user may want to use this component. This sectio
 
 **Examples**:
 
-* [PhysX Shape Collider component](/docs/user-guide/components/reference/physx/shape-collider/#use-cases) - Clarifies when to use a PhysX Shape Collider component versus a PhysX Collider component. 
+* [PhysX Shape Collider component](/docs/user-guide/components/reference/physx/shape-collider/#use-cases) - Clarifies when to use a PhysX Shape Collider component versus a PhysX Primitive Collider component. 
 
 See `component-reference.md`:
 ```md
@@ -218,7 +218,7 @@ On the other hand, a *complex set of properties* doesn't show all available prop
 
 | Example: Simple set of properties | Example: Complex set of properties | 
 | - | - |
-| ![Box Shape component properties](/images/user-guide/components/reference/shape/box-shape-component-ui-01.png) | ![PhysX Collider component interface.](/images/user-guide/components/reference/physx/physx-collider-ui-01.png) |
+| ![Box Shape component properties](/images/user-guide/components/reference/shape/box-shape-component-ui-01.png) | ![PhysX Primitive Collider component interface.](/images/user-guide/components/reference/physx/physx-collider-ui-01.png) |
 
 {{< tabs >}} 
 {{% tab name="Simple set of properties" %}}
@@ -259,7 +259,7 @@ Another option is to separate the property tables into [tabs](/docs/contributing
 **Examples**:
 * [Light component](/docs/user-guide/components/reference/atom/light/): Contains several configurations that don't have a 1-1 relationship with the **Light type** property. Some propery groups are available for more than one light type, so they are documented in different property tables. Each property table specifies which light types support those properties.
 
-* [PhysX Collider component](/docs/user-guide/components/reference/physx/collider/): Contains several configurations, which depend on the **Shape** property. Each configuration affect what properties are available, so they are documented in different property tables separated into tabs. 
+* [PhysX Primitive Collider component](/docs/user-guide/components/reference/physx/collider/): Contains several configurations, which depend on the **Shape** property. Each configuration affect what properties are available, so they are documented in different property tables separated into tabs. 
 
 * [Camera Rig component](/docs/user-guide/components/reference/camera/camera-rig/): Contains addable property groups with multiple workflows in each. So, each property group is documented in separate property tables and each workflow is further separated into tabs. 
 
@@ -371,7 +371,7 @@ You can write additional sections to explain specific features about your compon
 
 **Examples**:
 
-* [PhysX Collider component](/docs/user-guide/components/reference/physx/collider#collider-component-mode): Contains sections on editing colliders in the viewport and using colliders as triggers.
+* [PhysX Primitive Collider component](/docs/user-guide/components/reference/physx/collider#collider-component-mode): Contains sections on editing colliders in the viewport and using colliders as triggers.
 
 * [PhysX Shape Collider component](/docs/user-guide/components/reference/physx/shape-collider#complex-polygon-prism-shapes): Contains a section that explains intricacies when working with complex polygon prism shapes.
 

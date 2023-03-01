@@ -9,5 +9,5 @@ See the following best practices when working with PhysX.
 + The **PhysX Character Controller** component must be on the same entity as the **Actor** component in order to work with the **Animation Editor**.
 + When adding the **PhysX Static Rigid Body** component to entities, check the **Static** option in the **Transform** component. This allows other systems to apply optimizations to static entities that will never move at run time.
 + Avoid checking the **Static** option when there is a **PhysX Dynamic Rigid Body** component. The rigid body will behave statically and a warning will appear about the incompatibility of the **PhysX Dynamic Rigid Body** component and the **Static** transform option.
-+ When adding the **PhysX Collider** component to entities, prefer a primitive shape (box, capsule, or sphere) for the collider. These shape colliders offer better performance and should be used when possible.
++ When adding a PhysX collider to the entities, prefer a **PhysX Primitive Collider** component. It offers better performance and should be used when possible.
 

@@ -49,7 +49,8 @@ The following table lists some of the components with an edit mode and describes
 | [White Box Tool](\docs\user-guide\components\reference\shape\white-box) | Design models with the White Box Tool. |
 | [Spline](\docs\user-guide\components\reference\shape\spline) | Add, remove, and position spline control points. |
 | [Non-uniform Scale](\docs\user-guide\components\reference\non-uniform-scale) | Edit the scaling of an entity on the X, Y, and Z-axis separately. |
-| [PhysX Collider](\docs\user-guide\components\reference\physx\collider) | Edit the dimensions of a collider. |
+| [PhysX Primitive Collider](\docs\user-guide\components\reference\physx\collider) | Edit the dimensions of a primitive collider. |
+| [PhysX Mesh Collider](\docs\user-guide\components\reference\physx\mesh-collider) | Edit the scale of a PhysX Asset collider. |
 | [PhysX Ball Joint](\docs\user-guide\components\reference\physx\ball-joint) | Edit the position and limitations of a joint. |
 
 ## Manipulators 

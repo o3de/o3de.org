@@ -7,7 +7,7 @@ description: ' Use the White Box Collider component to add PhysX collision to wh
 
 
 
-You can enable collision on white box meshes in **Open 3D Engine (O3DE)** by adding the **White Box Collider** component to an entity that has a **White Box** component mesh. The White Box Collider component supports collision layers and physics materials. It can be used with static and kinematic white box meshes. The White Box Collider component uses the white box mesh as the collision surface. Unlike the **PhysX Collider** component, there is no need to specify a collision shape or provide a PhysX mesh asset.
+You can enable collision on white box meshes in **Open 3D Engine (O3DE)** by adding the **White Box Collider** component to an entity that has a **White Box** component mesh. The White Box Collider component supports collision layers and physics materials. It can be used with static and kinematic white box meshes. The White Box Collider component uses the white box mesh as the collision surface. Unlike the **PhysX Primitive Collider** or **PhysX Mesh Collider** components, there is no need to specify a collision shape or provide a PhysX mesh asset.
 
 ![White Box static collider.](/images/user-guide/components/reference/shape/white-box-collider-A.gif)
 

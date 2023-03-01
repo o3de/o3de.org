@@ -5,7 +5,7 @@ description: The PhysX Dynamic Rigid Body component creates a simulated or kinem
 toc: true
 ---
 
-The **PhysX Dynamic Rigid Body** component makes an entity a *simulated* or *kinematic* solid object that can move and collide with other PhysX entities. The entity must also have at least one [PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/)  or [PhysX Collider](/docs/user-guide/components/reference/physx/collider/) component that defines a collider for the entity.
+The **PhysX Dynamic Rigid Body** component makes an entity a *simulated* or *kinematic* solid object that can move and collide with other PhysX entities. The entity must also have at least one [PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/), [PhysX Primitive Collider](/docs/user-guide/components/reference/physx/collider/) or [PhysX Mesh Collider](/docs/user-guide/components/reference/physx/mesh-collider/) component that defines a collider for the entity.
 
 Simulated rigid bodies are fully driven by PhysX. Simulated rigid bodies move in response to collision events and forces and are not animated through motions or scripts. By default, simulated rigid bodies are affected by gravity, but gravity can be deactivated in the PhysX Dynamic Rigid Body component.
 
