@@ -596,7 +596,7 @@ As we have seen in the previous section, there is nothing stopping us from stori
 ```c++
 
 // Rotation of approx. 90 degrees (in radians)
-const float theta = 0.707;
+const float theta = 0.785;
 
 // 2x2 matrix in row-major order
 const std::size_t rows = 2;
