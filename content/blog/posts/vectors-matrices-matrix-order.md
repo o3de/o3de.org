@@ -87,7 +87,7 @@ $$
 With this in mind, the column vector product between the transpose of the matrix used in the vector product is now equal to that of the vector product as follows:
 
 $$
-\begin{bmatrix} 1 & 0 & 3 \\\ 0 & 2 & 0 \\\ 1 & 0 & 3 \end{bmatrix} \cdot \begin{bmatrix} 1 \\\ 0 \\\ 1 \end{bmatrix} =  \begin{bmatrix} 4 & 0 & 4 \end{bmatrix}
+\begin{bmatrix} 1 & 0 & 3 \\\ 0 & 2 & 0 \\\ 1 & 0 & 3 \end{bmatrix} \cdot \begin{bmatrix} 1 \\\ 0 \\\ 1 \end{bmatrix} =  \begin{bmatrix} 4 \\ 0 \\ 4 \end{bmatrix}
 $$
 
 The matrices themselves have no concept of “row vectors” or “column vectors”, from the perspective of matrix products there’s only matrices with the same well defined rules applied.
