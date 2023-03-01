@@ -248,7 +248,7 @@ const char colMajor[cols][rows] =
     {'a', 'e', 'i'}, // column 0
     {'b', 'f', 'j'}, // column 1
     {'c', 'g', 'k'}, // column 2
-    {'d', 'h', 'l'}  // column 4
+    {'d', 'h', 'l'}  // column 3
 };
 
 // prints the array representation of the matrix (hence the transpose)
