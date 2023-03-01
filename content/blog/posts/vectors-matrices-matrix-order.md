@@ -639,7 +639,7 @@ using mat2x2_type = std::array<col_type, cols>;
 // 2d rotation matrix for column vectors
 const mat2x2_type columnMajor = 
 { 
-    {Sx * cos(theta), sin(theta)}, // column 0 
+    {cos(theta), sin(theta)}, // column 0 
     {-sin(theta),     cos(theta)}  // column 1
 };
 
