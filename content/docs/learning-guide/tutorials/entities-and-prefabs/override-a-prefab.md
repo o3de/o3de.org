@@ -25,11 +25,11 @@ The following image shows two instances of Car prefab in a level. The Car prefab
 
 ![Level in Prefab Edit Mode in Entity Outliner.](/images/learning-guide/tutorials/entities-and-prefabs/level-prefab-edit.png)
 
-Overrides applied to prefab instances are registered for that individual prefab instance and are stored in the parent prefab that contains the prefab instances.
+Overrides applied to prefab instances are registered for that individual prefab instance and are stored in the focused prefab that contains the prefab instances.
 
 In the preceding example, the Car prefab instances are in a level (which is a prefab), so the prefab overrides applied to the Car instances are stored in the level when you save it.
 
-Suppose that the car's four tires are instances of a tire prefab that are nested within the Car prefab. If you apply overrides to each of the tire instances to give them unique appearances, the overrides are stored in the Car prefab when when you save it.
+Suppose that the car's four tires are instances of a tire prefab that are nested within the Car prefab. If you apply overrides to each of the tire instances to give them unique appearances, the overrides are stored in the Car prefab when you save it.
 
 {{< note >}}
 A level is a prefab, and automatically enters Prefab Edit Mode when it is opened. This is indicated by the blue capsule around the level in **Entity Outliner**.
@@ -39,14 +39,14 @@ Overrides are not limited to the level. In fact, any prefab that is open for edi
 
 ## Enable prefab overrides
 
-To enable prefab overrides, create a settings registry file called `editorpreferences.setreg` with the following contents:
+To enable prefab overrides in Entity Outliner, create a settings registry file called `editorpreferences.setreg` with the following contents:
 
 ```JSON
 {
     "O3DE": {
         "Preferences": {
             "Prefabs": {
-                "EnableOverridesUx": true
+                "EnableOutlinerOverrideManagement": true
             }
         }
     }
@@ -66,7 +66,7 @@ You can apply the following types of overrides to prefabs:
 * Add or remove entities
 * Remove nested prefab instances
 
-Overrides are automatically added when you perform the preceding edits on the content of a prefab instance. You must save the parent prefab to retain the overrides.
+Overrides are automatically added when you perform the preceding edits on the content of a prefab instance. You must save the focused prefab to retain the overrides.
 
 ## Override a component property
 
