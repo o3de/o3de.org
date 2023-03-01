@@ -19,7 +19,7 @@ The **Audio Environment** component provides access to features of the [Audio Tr
 
 Use the following request functions with the EBus interface to communicate with other components of your game.
 
-For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
+For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/).
 
 | Name | Description | Parameters | Return | Scriptable |
 |------|-------------|------------|--------|------------|

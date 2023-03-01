@@ -83,7 +83,6 @@ You will need to:
 O3DE ships with many ImGui tools so the options you see will be dependent on the specific gems active in your project.
 
 * [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging/)
-* [Atom Rendering Profiler](/docs/atom-guide/atom-sample-viewer/debug-menu-samples/)
 * [Multiplayer helpers](/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/running/#running-locally-using-imgui-options)
 
 ## CVARs

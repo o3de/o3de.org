@@ -39,7 +39,7 @@ connect
 Console commands in configuration files can be passed to client and server launchers using the `console-command-file` option, for example `MultiplayerSample.ServerLauncher.exe --console-command-file=launch_server.cfg`.
 
 ## Client settings
-The following [console variables](/docs/user-guide/appendix/cvars/) control client behavior.
+The `cl` CVARs control client behavior.
 
 | Setting                | Description                                                                                                                                                                             | Default   | Notes |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|-------|
@@ -68,7 +68,7 @@ The following [console variables](/docs/user-guide/appendix/cvars/) control clie
 
 ## Server settings
 
-The following [console variables](/docs/user-guide/appendix/cvars/) control server behavior.
+The `sv` CVARs control server behavior.
 
 | Setting                 | Description                                                                     | Default | Notes                |
 |-------------------------|---------------------------------------------------------------------------------|---------|----------------------|
@@ -109,7 +109,7 @@ The following [console variables](/docs/user-guide/appendix/cvars/) control serv
 | sv_RewindVolumeExtrudeDistance | The amount to increase rewind volume checks to account for fast moving entities. | 50      |       |
 
 ### Editor server settings
-These settings control how a server will be launched during the "play-in-editor" (CTRL+G) mode.
+The `editorsv` settings control how a server will be launched during the "play-in-editor" (CTRL+G) mode.
 
 | Setting                            | Description                                                                                                                                                                                                                                                                                                              | Default   | Notes                                                                                                                                            |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -126,7 +126,7 @@ These settings control how a server will be launched during the "play-in-editor"
 
 
 ### Dual client server settings
-These settings control behavior on both the client and server.
+The `bg` settings control behavior on both the client and server.
 
 | Setting                                             | Description                                                                             | Default | Notes |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------|---------|-------|
@@ -143,7 +143,7 @@ These settings control behavior on both the client and server.
 
 
 ## Networking settings
-These settings control networking behavior.
+The `net` settings control networking behavior.
 
 ### AzNetworking layer
 | Setting                             | Description                                                                                                                         | Default         | Notes                |

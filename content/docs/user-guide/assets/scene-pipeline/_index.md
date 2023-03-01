@@ -15,6 +15,7 @@ The scene pipeline is a specialized asset builder that imports source scene file
 | [Scene Manifest](scene-manifest) | Contains instructions on what to do with the SceneGraph content. |
 | [Scene Builder](scene-builder) | Asset builders that are designed to manage and export parts of the scene graph. |
 | [User Defined Properties](user_defined_properties.md) | A mechanism to use custom properties set in source scene files in the scene builder pipeline. |
+| [Procedural Prefab](procedural_prefab.md) | Use Python to process prefab assets from scene source files. |
 
 The following diagram shows the scene pipeline flow:
 

@@ -11,4 +11,3 @@ weight: 800
 | [Input](input) | Allow player input such as key presses and mouse clicks, to create an interactive experience in O3DE. |
 | [User interface](user-interface) | Create a user interface in your game such as with images, text, buttons, menus, scroll boxes, and heads-up displays (HUDs). |
 | [Navigation and pathfinding](navigation-and-pathfinding) | Create a navigation mesh and find walkable paths between entities and positions. |
-<!-- | [Entities](entities) | Learn about how to interact with entities in the Editor. | -->

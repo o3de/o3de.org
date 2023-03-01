@@ -7,7 +7,7 @@ description: |
 weight: 700
 toc: true
 menu_uuid: engine
-guide_img: "/images/engine-dev-guide/guide_img.png"
+guide_img: "/images/engine-dev/guide_img.png"
 primary: true
 ---
 

@@ -25,9 +25,11 @@ The highlighted directories in the above diagram are where most contributions wi
 
 * `atom-guide`: The [**Atom Render**](/docs/atom-guide/) section in the O3DE docs. The Atom Guide contains feature and reference documentation for Atom that is exclusive to Atom Renderer. Topics that deal with the connection between Atom and O3DE, and using Atom within the context of O3DE, are in the various O3DE guides.
 
-* `learning-guide`: The [**Tutorials & Examples**](/docs/learning-guide/) section in the O3DE docs. Tutorials and Examples contains user tutorials, a cookbook, and sample documentation. Tutorials should only use assets that are part of the O3DE distribution, are freely available, or can be quickly and easily replicated in open source content creation tools. The Cookbook section contains targeted recipes that demonstrate how to perform specific tasks, such as script canvas snippets. The Cookbook is a fantastic place for O3DE users to make quick, useful contributions. The Samples section contains documentation for samples that are included with the O3DE distribution.
+* `engine-dev`: The [**Engine Developer Guide**](/docs/engine-dev/) section in the O3DE docs. The Engine Developer Guide contains information about O3DE's internal architecture, design principles, and execution flow for developers who are making custom engine modifications and other contributions to the O3DE project. You can find technical information on O3DE frameworks, Gems, and tools in this guide.
 
-* `user-guide`: The [**User Guide**](/docs/user-guide/) section in the O3DE docs. The User Guide contains feature and reference documentation for the tools, gems, components, and systems that are part of the O3DE distribution.
+* `learning-guide`: The [**Tutorials & Examples**](/docs/learning-guide/) section in the O3DE docs. Tutorials and Examples contains user tutorials, a cookbook, and sample documentation. Tutorials should only use assets that are part of the O3DE distribution, are freely available, or can be quickly and easily replicated in open source content creation tools. The Cookbook section contains targeted *recipes* that describe and demonstrate how to perform specific tasks, using snippets of Script Canvas graphs, for example. The Cookbook is a fantastic place for O3DE users to make quick, useful contributions. The Samples section contains documentation for samples that are included with the O3DE distribution.
+
+* `user-guide`: The [**User Guide**](/docs/user-guide/) section in the O3DE docs. The User Guide contains feature and reference documentation for the tools, Gems, components, and systems that are part of the O3DE distribution.
 
 * `welcome-guide`: The [**Welcome**](/docs/welcome-guide/) section in the O3DE docs. The Welcome section contains an overview of O3DE, an installation guide, tutorials to help new users get started, and links to various hubs for O3DE users.
 
@@ -38,7 +40,7 @@ The structure beneath each of the above directories is reflected in the table of
 The remaining directories are less likely to be of interest to individual contributors because their topics are generated through some other process, or because their topics are not directly related to using O3DE. 
 
 
-* `api`: Maps to the [**API Reference**](/docs/api/) section in the O3DE docs. The API reference for O3DE is generated through an automated process.
+* `api`: Maps to the [**API Reference**](/docs/api/) section in the O3DE docs. The API reference for O3DE is generated from Doxygen-formatted comments in the O3DE source code. The generated content is placed in the `/static/docs/api` directory.
 
 * `contributing`: Maps to the [**Contribute**](/docs/contributing/) section in the O3DE docs. This is all the information on contributing to O3DE code and documentation. You are here.
 
