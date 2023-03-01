@@ -627,7 +627,7 @@ col_type basisX()
 Notice that we have to construct an intermediary array and populate it with the basis vector components due to the fact that they’re not stored contiguously in the array representation of the matrix. Now compare that to the following example of retrieving the x-axis basis vector of the same matrix stored in column-major:
 
 ```c++
-// Rotation of approx. 90 degrees (in radians)
+// Rotation of approx. 45 degrees (in radians)
 const float theta = 0.707;
 
 // 2x2 matrix in column-major order
