@@ -49,7 +49,7 @@ $$
 \mathbf{M} \cdot \vec{c} 
     &{}= \begin{bmatrix} m_{11} & m_{12} \\\ m_{21} & m_{22}  \end{bmatrix} \cdot \begin{bmatrix} c_{1} \\\ c_{2} \end{bmatrix} \\\ \\\
 &{}= \begin{bmatrix} 
-m_{11}c_{1} + m_{21}c_{1} \\\ 
+m_{11}c_{1} + m_{12}c_{2} \\
 m_{12}c_{2} + m_{22}c_{2} \end{bmatrix}
 \end{array}
 $$
