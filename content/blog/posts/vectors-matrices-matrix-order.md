@@ -72,7 +72,7 @@ $$
 \begin{bmatrix} 1 & 0 & 1 \\\ 0 & 2 & 0 \\\ 3 & 0 & 3 \end{bmatrix} \cdot \begin{bmatrix} 1 \\\ 0 \\\ 1 \end{bmatrix} =  \begin{bmatrix} 2 & 0 & 6 \end{bmatrix}
 $$
 
-Furthermore, the dimensions of \\(\mathbf{M}\\) may be well defined for \\(\vec{r} \cdot \mathbf{M}\\) but not necessarily for \\(\mathbf{M} \cdot \vec{c}\\). Thus, in order to make \\(\mathbf{M} \cdot \vec{c}\\) well-defined and equivalent to \\(\vec{r} \cdot \mathbf{M}\\), we must multiply \\(\vec{c}\\) by the transpose of \\(\mathbf{M}\\), such that \\(\vec{r} \cdot \mathbf{M} = \mathbf{M^T} \cdot \vec{c}\\) (and visa versa):
+Another way of thinking about this is that in order to have a well-defined product, the row vector has to appear first in the product, and since we have transposed the vector, we also need to transpose the matrix so for \\(\vec{c}\\) we would have:
 
 $$
 \begin{array}{l@{}l}
