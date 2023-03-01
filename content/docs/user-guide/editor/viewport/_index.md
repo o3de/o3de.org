@@ -5,7 +5,7 @@ description: Use the 3D Viewport to interact with entities in Open 3D Engine (O3
 weight: 400
 ---
 
-In **Open 3D Engine** (O3DE), you can interact directly with entities using the 3D Viewport.  The 3D Viewport provides several features to complete common tasks such as editing the position, rotation, and scale of entities, hierarchies of entities, and their components.  [UI widgets](#ui-widgets), [Manipulators](#manipulators), [Hotkeys](#hotkeys), and visual feedback mechanisms simplify the process of editing and arranging entities. With [Reference spaces](reference-spaces), you can quickly select if entities are transformed in world space, local space, in relation to a parent entity, or custom spaces.
+In **Open 3D Engine** (O3DE), you can interact directly with entities using the 3D Viewport.  The 3D Viewport provides several features to complete common tasks such as editing the position, rotation, and scale of entities, hierarchies of entities, and their components.  [UI widgets](#viewport-ui-widgets), [Manipulators](#manipulators), [Hotkeys](#hotkeys), and visual feedback mechanisms simplify the process of editing and arranging entities. With [Reference spaces](reference-spaces), you can quickly select if entities are transformed in world space, local space, in relation to a parent entity, or custom spaces.
 
 ![Screenshot of 3D Viewport with UI widgets, entity, and a manipulator visible.](/images/user-guide/editor/3d-viewport.png)
 
