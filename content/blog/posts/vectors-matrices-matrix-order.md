@@ -196,7 +196,7 @@ i j k l
 </td>
 <td>
 <pre lang="c++">
-a e j
+a e i
 b f j
 c g k
 d h l
