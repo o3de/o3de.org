@@ -42,7 +42,7 @@ r_{1}m_{12} + r_{2}m_{22} \end{bmatrix}
 \end{array}
 $$
 
-In order to multiply a column vector by the same matrix, we must ensure that the number of columns of the matrix on the left hand side matches the number of rows of the matrix on the right hand side. We achieve this by post-multiplying the vector \\(\vec{c}\\) with \\(\mathbf{M}\\), resulting in a \\(2×1\\) matrix:
+In order to multiply a column vector, we must ensure that the number of columns of the matrix on the left hand side matches the number of rows of the matrix on the right hand side. We achieve this by post-multiplying the vector \\(\vec{c}\\) with \\(\mathbf{M}\\), resulting in a \\(2×1\\) matrix:
 
 $$
 \begin{array}{l@{}l}
