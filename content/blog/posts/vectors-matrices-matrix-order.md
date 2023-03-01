@@ -628,7 +628,7 @@ Notice that we have to construct an intermediary array and populate it with the 
 
 ```c++
 // Rotation of approx. 45 degrees (in radians)
-const float theta = 0.707;
+const float theta = 0.785;
 
 // 2x2 matrix in column-major order
 const std::size_t rows = 2;
