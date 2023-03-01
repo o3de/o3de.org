@@ -552,7 +552,7 @@ weight: 600
  # the path to the 'Extended Tags' property
  tagListPropertyPath = 'm_template|Extended Tags'
  
- # get current item count of the the container
+ # get current item count of the container
  outcome = pte.get_container_count(path)
  if(outcome.IsSuccess()):
    count = outcome.GetValue()
