@@ -54,7 +54,7 @@ m_{12}c_{2} + m_{22}c_{2} \end{bmatrix}
 \end{array}
 $$
 
-However, due to the non-commutativity of matrix multiplication, $\vec{r} \cdot \mathbf{M}$ may not equal to $\mathbf{M} \cdot \vec{c}$ as the two products are necessarily not equivalent:
+Since \\(\vec{c}\\) is the transpose of \\(\vec{r}\\), and transpose multiplication follows the identity \\((\mathbf{A}\mathbf{B})^\mathbf{T} = \mathbf{B^T}\mathbf{A^T}\\), we need to transpose \\(\mathbf{M}\\) and reverse the order in the multiplication to get the equivalent product as a column vector. If we didn't reverse the order and take the transpose, we would get a different result:
 
 $$
  \begin{bmatrix} 1 & 0 & 1 \end{bmatrix} \cdot \begin{bmatrix} 1 & 0 & 1 \\\ 0 & 2 & 0 \\\ 3 & 0 & 3 \end{bmatrix}     \neq \begin{bmatrix} 1 & 0 & 1 \\\ 0 & 2 & 0 \\\ 3 & 0 & 3 \end{bmatrix} \cdot \begin{bmatrix} 1 \\\ 0 \\\ 1 \end{bmatrix}
