@@ -20,7 +20,7 @@ Read about [the features provided by Open 3D Engine](/docs/welcome-guide/feature
 | [Build](build/) | Learn how to use the CMake generator with O3DE projects to generate IDE projects and build them. |
 | [Components](components/) | Learn about the components that add functionality to your entities in O3DE. |
 | [Editor](editor/) |  Learn how to use the O3DE Editor. |
-| [Settings Registry](settings/overview) | Learn how to use the Settings Registry to maintain settings and configurations for O3DE applications and tools. |
+| [Settings Registry](settings/) | Learn how to use the Settings Registry to maintain settings and configurations for O3DE applications and tools. |
 | [Gems](gems/) | Learn about the Gems that extend O3DE.|
 | [Interactivity](interactivity/) | Learn how to implement player navigation controls and other world interaction methods. |
 | [Networking](networking/) | Learn about the low-level networking stack in O3DE and the multiplayer framework that uses it to provide multiplayer features in games and simulations. |

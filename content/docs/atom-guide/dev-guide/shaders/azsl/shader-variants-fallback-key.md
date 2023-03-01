@@ -107,7 +107,7 @@ The fallback key is a shader constant and has its own API to configure at runtim
   
 ## Permutations of shader variant assets
 When AZSLc compiles shader code and produces a shader asset, a *root variant* is generated per platform (DX12, Vulkan, Metal, and so on). The root variant can execute any branch in the code at runtime because the byte code uses each shader variant option. Because the size of the shader variant fallback key is 128 bits, the shader developer can use up to 128 unique boolean options.  
-To fully specialize (or bake) all the possible permutations, the shader build pipeline must generate (2<sup>128</sup>  - 1) shader variant assets per platform. You may not need all those shader variant assets, so the the developer can specify which permutations the shader build pipeline builds.  
+To fully specialize (or bake) all the possible permutations, the shader build pipeline must generate (2<sup>128</sup>  - 1) shader variant assets per platform. You may not need all those shader variant assets, so the developer can specify which permutations the shader build pipeline builds.  
   
 In the following example, consider an arbitrary integral option in the range 2 to 17 (16 unique values). In order to fit 16 unique values, **o_numberOfTaps** takes 4 of 128 bits from the shader variant fallback key.  
 If the developer wants to fully avoid dynamic branching, then in addition to the root variant, specify to the shader build pipeline to compile 16 unique shader variant assets per platform.  
