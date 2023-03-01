@@ -491,7 +491,7 @@ for(std::size_t i = 0; i < rows; i++)
 You may have noticed that the code for both snippets is identical, bar some flipping of variable names for clarity. Remember that the product of a row vector with a given matrix is the same as the product of a column vector of the transpose of that same matrix:
 
 $$
-\vec{r} \cdot \mathbf{M} =\mathbf{M}^{T} \cdot \vec{c} 
+\vec{r} \cdot \mathbf{M} = (\mathbf{M^T} \cdot \vec{c})^\mathbf{T}}
 $$
 
 An interesting property of storing our matrices in the array matrix order convention of our vector convention (i.e. row vectors with matrices stored in row-major order and column vectors with matrices stored in column-major order) is that the actual array data for the matrices is identical regardless of which of the two convention combinations you choose. Consider the following 2d transform matrix for scaling, anti-clockwise rotating and translating a given row vector:
