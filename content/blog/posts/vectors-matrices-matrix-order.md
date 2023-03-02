@@ -497,7 +497,7 @@ $$
 An interesting property of storing our matrices in the array matrix order convention of our vector convention (i.e. row vectors with matrices stored in row-major order and column vectors with matrices stored in column-major order) is that the actual array data for the matrices is identical regardless of which of the two convention combinations you choose. Consider the following 2d transform matrix for scaling, anti-clockwise rotating and translating a given row vector:
 
 $$
-\begin{bmatrix}      S_{x} \cdot \cos(\theta) & \sin(\theta) & 0  \\\      -\sin(\theta) & S_{y} \cdot \cos(\theta) & 0  \\\  T_{x} &  T_{y}  & 1  \end{bmatrix}
+\begin{bmatrix}      S_{x} \cdot \cos(\theta) & S_{y} \cdot \sin(\theta) & 0  \\\      -( S_{x} \cdot \sin(\theta)) & S_{y} \cdot \cos(\theta) & 0  \\\  T_{x} &  T_{y}  & 1  \end{bmatrix}
 $$
 
 When laid out in row-major in a two dimensional array, the array is initialized as follows:
@@ -520,16 +520,16 @@ const std::size_t cols = 3;
 
 const float rowMajor[rows][cols] = 
 { 
-    {Sx * cos(theta), sin(theta),      0.f}, // row 0 
-    {-sin(theta),     Sy * cos(theta), 0.f}, // row 1
-    {Tx,              Ty,              1.f}  // row 2
+    {Sx * cos(theta),    Sy * sin(theta), 0.f}, // row 0 
+    {-(Sx * sin(theta)), Sy * cos(theta), 0.f}, // row 1
+    {Tx,                 Ty,              1.f}  // row 2
 };
 ```
 
 Now consider the same transformation matrix transposed for translating a given column vector:
 
 $$
-\begin{bmatrix}      S_{x} \cdot \cos(\theta) & -\sin(\theta) & T_{x} \\\      \sin(\theta) & S_{y} \cdot \cos(\theta) & T_{y} \\\      0 & 0 & 1  \end{bmatrix}
+\begin{bmatrix}      S_{x} \cdot \cos(\theta) & -(S_{x} \cdot \sin(\theta)) & T_{x} \\\      S_{y} \cdot \sin(\theta) & S_{y} \cdot \cos(\theta) & T_{y} \\\      0 & 0 & 1  \end{bmatrix}
 $$
 
 When laid out in column-major in a two dimensional array, the array is initialized as follows:
@@ -552,9 +552,9 @@ const std::size_t cols = 3;
 
 const float columnMajor[cols][rows] = 
 { 
-    {Sx * cos(theta), sin(theta),      0.f}, // column 0 
-    {-sin(theta),     Sy * cos(theta), 0.f}, // column 1
-    {Tx,              Ty,              1.f}  // column 2
+    {Sx * cos(theta),    Sy * sin(theta), 0.f}, // column 0 
+    {-(Sx * sin(theta)), Sy * cos(theta), 0.f}, // column 1
+    {Tx,                 Ty,              1.f}  // column 2
 };
 ```
 
@@ -564,7 +564,7 @@ This is convenient because if we wish to support both row vectors and column vec
 
 Programming languages themselves have assumptions about the matrix order of multidimensional arrays that is independent of the assumptions about the matrix order of our array layout when used to represent matrices. For example, the [C99 language specification §6.5.2.1p3](https://www.open-std.org/jtc1/sc22/WG14/www/docs/n1256.pdf) (thus, by extension, C++) states (emphasis added):
 
-> Successive subscript operators designate an element of a multidimensional array object. If E is an n-dimensional array (n >= 2) with dimensions i x j x . . . x k, then E (used as other than an lvalue) is converted to a pointer to an (n - 1)-dimensional array with dimensions j x . . . x k. If the unary * operator is applied to this pointer explicitly, or implicitly as a result of subscripting, the result is the referenced (n - 1)-dimensional array, which itself is converted into a pointer if used as other than an lvalue. **It follows from this that arrays are stored in row-major order (last subscript varies fastest).**
+>Successive subscript operators designate an element of a multidimensional array object. If E is an n-dimensional array (n >= 2) with dimensions i x j x . . . x k, then E (used as other than an lvalue) is converted to a pointer to an (n - 1)-dimensional array with dimensions j x . . . x k. If the unary * operator is applied to this pointer explicitly, or implicitly as a result of subscripting, the result is the referenced (n - 1)-dimensional array, which itself is converted into a pointer if used as other than an lvalue. **It follows from this that arrays are stored in row-major order (last subscript varies fastest).**
 
 If we were to store our matrices in the natural matrix order of C++ but access the elements in opposing matrix order, we would have element access patterns that are cache unfriendly as each element access will not be contiguous but instead separated by a stride equal to the number of columns in the matrix. Consider the following:
 
