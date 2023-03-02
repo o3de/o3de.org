@@ -6,7 +6,7 @@ weight: 100
 toc: true
 ---
 
-**Open 3D Engine (O3DE)** has a robust set of options for generating PhysX collider assets. In **Scene Settings**, you can customize PhysX collider asset generation. The generated PhysX colliders are stored in `.pxmesh` product assets. You can add the PhysX collider assets to a **PhysX Collider** component by selecting **PhysicsMesh** in the component's **Shape** property.
+**Open 3D Engine (O3DE)** has a robust set of options for generating PhysX collider assets. In **Scene Settings**, you can customize PhysX collider asset generation. The generated PhysX colliders are stored in `.pxmesh` product assets. You can add the PhysX collider assets to a **PhysX Mesh Collider** component.
 
 There are three PhysX asset collider types that you can use in different simulation scenarios. This topic explains the benefits and limitations of the different collider types, as well as the basics of generating PhysX asset colliders with Scene Settings.
 
@@ -112,9 +112,7 @@ To automatically assign meshes in the source asset to a PhysX mesh group, add th
 
     When you drag the asset into the viewport, O3DE automatically creates an entity with a **Mesh** component that references the mesh product asset. If the source asset contains materials that have been processed, O3DE applies the materials to the mesh by default. Note that in Asset Browser, the `.pxmesh` product asset has been generated and appears beneath the source asset.
 
-1. Add a PhysX Collider component to the entity. With the entity selected in the viewport, in **Entity Inspector**, choose **Add Component**, and then select **PhysX Collider** from the component list. The component automatically detects the `.pxmesh` asset. The component's **Shape** property is set to `PhysicsAsset`, and the **PhysX Mesh** property automatically references the `.pxmesh` product asset.
-
-    With just a PhysX Collider component, this is currently a static entity. PhysX objects can collide with this entity, but the entity doesn't move or react to PhysX collisions or forces.
+1. Add a PhysX Mesh Collider component to the entity. With the entity selected in the viewport, in **Entity Inspector**, choose **Add Component**, and then select **PhysX Mesh Collider** from the component list. The component automatically detects the `.pxmesh` asset and assigns it to the **PhysX Mesh** property.
 
 1. Depending on the type of entity that you want, do one of the following:
 

@@ -42,7 +42,7 @@ The setup for each joint type is the same.
 
    1. Add a **PhysX Static Rigid Body** or a **PhysX Dynamic Rigid Body** (type *kinematic* or *simulated*) component depending if you want the leader to move or not.
 
-   1. Add a **PhysX Collider** component to the entity.
+   1. Add a PhysX collider to the entity.
 
 1. Create an entity for the **follower** rigid body and the joint.
 
@@ -50,7 +50,7 @@ The setup for each joint type is the same.
 
    1. Add a **PhysX Dynamic Rigid Body** (type *simulated*) component to the entity.
 
-   1. Add a **PhysX Collider** component to the entity. This is required for angle limits to work correctly. Joints still work without a PhysX Collider component but angle limits and might not be enforced. This is also true when using trigger colliders.
+   1. Add a PhysX collider to the entity. This is required for angle limits to work correctly. Joints still work without a PhysX collider but angle limits and might not be enforced. This is also true when using trigger colliders.
 
    1. Add one of the PhysX joint components:
       + **PhysX Ball Joint**

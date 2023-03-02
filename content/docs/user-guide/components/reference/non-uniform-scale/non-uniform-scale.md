@@ -15,7 +15,8 @@ The following components are **compatible** with **Non-uniform Scale**:
 + **[Box Shape](/docs/user-guide/components/reference/shape/box-shape/)**
 + **[Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/)**
 + **[Quad Shape](/docs/user-guide/components/reference/shape/quad-shape/)**
-+ **[PhysX Collider](/docs/user-guide/components/reference/physx/collider/)** - Note that primitive colliders are replaced with convex approximations if they are non-uniformly scaled, which may slightly deteriorate performance. The level of detail of the convex approximation can be adjusted using the **Subdivision level** setting on the [PhysX Collider](/docs/user-guide/components/reference/physx/collider/) component.
++ **[PhysX Primitive Collider](/docs/user-guide/components/reference/physx/collider/)** - Note that primitive colliders are replaced with convex approximations if they are non-uniformly scaled, which may slightly deteriorate performance. The level of detail of the convex approximation can be adjusted using the **Subdivision level** setting on the [PhysX Primitive Collider](/docs/user-guide/components/reference/physx/collider/) component.
++ **[PhysX Mesh Collider](/docs/user-guide/components/reference/physx/mesh-collider/)**
 + **[PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/)**
 + **[PhysX Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/)**
 + **[PhysX Dynamic Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/)**

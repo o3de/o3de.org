@@ -167,14 +167,15 @@ The following components are grouped by type as they appear in the O3DE Editor.
 | [PhysX Ball Joint](/docs/user-guide/components/reference/physx/ball-joint/) | Simulates a dynamic ball joint that constrains an entity to the joint with freedom to rotate around the y- and z-axes of the joint.|
 | [PhysX Character Controller](/docs/user-guide/components/reference/physx/character-controller/) | Implements basic character interactions with the physical world. |
 | [PhysX Character Gameplay](/docs/user-guide/components/reference/physx/character-gameplay/) | Configures general character properties in the gameplay, such as the character's gravitational strength. |
-| [PhysX Collider](./physx/collider/) | Allows you to specify primitive shapes or PhysX mesh assets to calculate collisions between entities. |
+| [PhysX Dynamic Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) | Defines the movable entity as a movable rigid object that is solid and can collide with other PhysX entities. |
 | [PhysX Fixed Joint](/docs/user-guide/components/reference/physx/fixed-joint/) | Creates a dynamic fixed joint that constrains an entity to the joint with no degree of freedom in any axis. |
 | [PhysX Force Region](/docs/user-guide/components/reference/physx/force-region/) | Applies a physical force on objects that are within the specified region. |
   [PhysX Heightfield Collider](/docs/user-guide/components/reference/physx/heightfield-collider/) | Creates a geometric collider based on the Axis-Aligned Box component. |
 | [PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/) | Creates a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.|
+| [PhysX Mesh Collider](./physx/mesh-collider/) | Allows you to specify PhysX mesh assets to calculate collisions between entities. |
+| [PhysX Primitive Collider](./physx/collider/) | Allows you to specify primitive shapes to calculate collisions between entities. |
 | [PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/) | Simulates ragdoll physics by creating a hierarchy of rigid bodies connected by joints. |
 | [PhysX Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/) | Defines the entity as a non-movable rigid object that is solid and can collide with other PhysX entities. |
-| [PhysX Dynamic Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) | Defines the movable entity as a movable rigid object that is solid and can collide with other PhysX entities. |
 | [PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/) | Creates a geometric collider based on the **Shape** component. |
 
 ### Scripting

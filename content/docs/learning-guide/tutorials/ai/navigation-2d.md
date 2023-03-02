@@ -70,13 +70,13 @@ Navmeshes can be global, meaning they are available in all levels in the project
 
 1. Remove the **ShaderBall** entity.
 
-1. Select the **Grid** entity, and add a new **PhysX Collider** component to it. All entities that will be included in the NavMesh need a PhysX collider.
+1. Select the **Grid** entity, and add a new **PhysX Primitive Collider** component to it. All entities that will be included in the NavMesh need a PhysX collider.
 
     1. On the collider, set the shape property to `Box`.
 
     1. On the collider, set the X and Y scale to `32`, so the box encompasses the grid.
 
-    1. If you activate Debug Helpers (the ![debug helper icon](/images/learning-guide/tutorials/ai/debug-helpers.png) symbol in the top right corner of the viewport) and the **Draw Collider** option is active on the PhysX collider component, you should see the collider debug visualization:
+    1. If you activate Debug Helpers (the ![debug helper icon](/images/learning-guide/tutorials/ai/debug-helpers.png) symbol in the top right corner of the viewport) and the **Draw Collider** option is active on the PhysX Primitive collider component, you should see the collider debug visualization:
     
         ![PhysX collider debug draw](/images/learning-guide/tutorials/ai/collider.png)
 

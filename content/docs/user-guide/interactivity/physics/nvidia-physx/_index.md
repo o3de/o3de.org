@@ -49,7 +49,8 @@ For more information on configuring and building projects see the [Configure and
 ## PhysX Components 
 
 The **PhysX** gem has the following components, which you can [add](/docs/user-guide/components/reference/#adding-components-to-an-entity) to entities by using the [**Entity Inspector**](/docs/user-guide/editor/entity-inspector/):
-+ **[PhysX Collider](/docs/user-guide/components/reference/physx/collider/)** - Enables physics objects to collide with other physics objects.
++ **[PhysX Primitive Collider](/docs/user-guide/components/reference/physx/collider/)** - Enables physics objects to collide with other physics objects, using primitive shapes.
++ **[PhysX Mesh Collider](/docs/user-guide/components/reference/physx/mesh-collider/)** - Enables physics objects to collide with other physics objects, using shapes defined by a PhysX asset.
 + **[PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/)** - Enables physics objects to collide with other physics objects, using geometry defined by a **[Shape component](/docs/user-guide/components/reference/shape/)**.
 + **[PhysX Force Region](/docs/user-guide/components/reference/physx/force-region/)** - Enables an entity to specify a region that applies physical force to entities. For each physics simulation frame, the component applies force to entities that are in the bounds of the region.
 + **[PhysX Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/)** - Enables a non-movable entity to be part of the physics simulation. Static rigid bodies can collide other simulated rigid bodies.

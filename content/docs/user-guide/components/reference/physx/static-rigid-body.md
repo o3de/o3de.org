@@ -5,7 +5,7 @@ description: The PhysX Static Rigid Body component creates a static solid object
 toc: true
 ---
 
-The **PhysX Static Rigid Body** component makes an entity a static solid object that cannot move. It can collide with other PhysX entities. The entity must also have at least one [PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/)  or [PhysX Collider](/docs/user-guide/components/reference/physx/collider/) component that defines a collider for the entity.
+The **PhysX Static Rigid Body** component makes an entity a static solid object that cannot move. It can collide with other PhysX entities. The entity must also have at least one [PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/), [PhysX Primitive Collider](/docs/user-guide/components/reference/physx/collider/) or [PhysX Mesh Collider](/docs/user-guide/components/reference/physx/mesh-collider/) component that defines a collider for the entity.
 
 ## Provider
 
