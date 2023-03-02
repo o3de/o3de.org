@@ -30,7 +30,7 @@ Or columns:
 
 $$\vec{c} = \begin{bmatrix} c_{1} \\\ c_{2} \\\ c_{3} \\\ ... \\\ c_{m}  \end{bmatrix}$$
 
-The vector-matrix product follows the same rules as the matrix product, albeit treating row vectors as \\(1×m\\) matrices and column vectors as \\(m×1\\) matrices. Thus, for a given \\(2×2\\) matrix \\(\mathbf{M}\\) to be multiplied with a given \\(1×2\\) row vector \\(\vec{r}\\), we must ensure that the number of columns of the matrix on the left hand side matches the number of rows of the matrix on the right hand side. We achieve this by pre-multiplying the vector \\(\vec{r}\\) with \\(\mathbf{M}\\), resulting in a \\(1×2\\) matrix:
+The vector-matrix product follows the same rules as the matrix product, albeit treating row vectors as \\(1×m\\) matrices and column vectors as \\(m×1\\) matrices. Thus, for a given \\(2×2\\) matrix \\(\mathbf{M}\\) to be multiplied with a given \\(1×2\\) row vector \\(\vec{r}\\), we must ensure that the number of columns of the matrix on the left hand side matches the number of rows of the matrix on the right hand side. We achieve this by post-multiplying the vector \\(\vec{r}\\) by \\(\mathbf{M}\\), resulting in a \\(1×2\\) matrix:
 
 $$
 \begin{array}{l@{}l}
