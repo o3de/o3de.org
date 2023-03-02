@@ -16,8 +16,8 @@ An \\(n \cdot m\\) matrix consists of \\(n\\) rows and \\(m\\) columns. The prod
 $$
 \begin{array}{l@{}l}
 \mathbf{A} \cdot \mathbf{B} 
-    &{}= \begin{bmatrix} a_{11} & a_{12} & a_{13} \\\ a_{21} & a_{22} & a_{23} \end{bmatrix} \cdot \begin{bmatrix} b_{11} & b_{12} \\ b_{21} & b_{22} \\ b_{31} & b_{32} \end{bmatrix} \\ \\
-    &{}= \begin{bmatrix} a_{11}b_{11} + a_{12}b_{21} + a_{13}b_{31} & a_{11}b_{12} + a_{12}b_{22} + a_{13}b_{32} \\ 
+    &{}= \begin{bmatrix} a_{11} & a_{12} & a_{13} \\\ a_{21} & a_{22} & a_{23} \end{bmatrix} \cdot \begin{bmatrix} b_{11} & b_{12} \\\ b_{21} & b_{22} \\\ b_{31} & b_{32} \end{bmatrix} \\\ \\\
+    &{}= \begin{bmatrix} a_{11}b_{11} + a_{12}b_{21} + a_{13}b_{31} & a_{11}b_{12} + a_{12}b_{22} + a_{13}b_{32} \\\ 
 a_{21}b_{11} + a_{22}b_{21} + a_{23}b_{31} & a_{21}b_{12} + a_{22}b_{22} + a_{23}b_{32} \end{bmatrix}
 \end{array}
 $$
@@ -69,7 +69,7 @@ $$
 Whereas the column vector product is as follows:
 
 $$
-\begin{bmatrix} 1 & 0 & 1 \\\ 0 & 2 & 0 \\\ 3 & 0 & 3 \end{bmatrix} \cdot \begin{bmatrix} 1 \\\ 0 \\\ 1 \end{bmatrix} =  \begin{bmatrix} 2 \\ 0 \\ 6 \end{bmatrix}
+\begin{bmatrix} 1 & 0 & 1 \\\ 0 & 2 & 0 \\\ 3 & 0 & 3 \end{bmatrix} \cdot \begin{bmatrix} 1 \\\ 0 \\\ 1 \end{bmatrix} =  \begin{bmatrix} 2 \\\ 0 \\\ 6 \end{bmatrix}
 $$
 
 Another way of thinking about this is that in order to have a well-defined product, the row vector has to appear first in the product, and since we have transposed the vector, we also need to transpose the matrix so for \\(\vec{c}\\) we would have:
@@ -87,7 +87,7 @@ $$
 With this in mind, the column vector product between the transpose of the matrix used in the vector product is now equal to that of the vector product as follows:
 
 $$
-\begin{bmatrix} 1 & 0 & 3 \\ 0 & 2 & 0 \\ 1 & 0 & 3 \end{bmatrix} \cdot \begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix} =  \begin{bmatrix} 4 \\ 0 \\ 4 \end{bmatrix}
+\begin{bmatrix} 1 & 0 & 3 \\\ 0 & 2 & 0 \\\ 1 & 0 & 3 \end{bmatrix} \cdot \begin{bmatrix} 1 \\\ 0 \\\ 1 \end{bmatrix} =  \begin{bmatrix} 4 \\\ 0 \\\ 4 \end{bmatrix}
 $$
 
 The matrices themselves have no concept of “row vectors” or “column vectors”, from the perspective of matrix products there’s only matrices with the same well defined rules applied. The only difference is that one is a \\(1x3\\) matrix and the other is \\(3x1\\) matrix.
