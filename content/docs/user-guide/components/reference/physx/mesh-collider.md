@@ -60,19 +60,19 @@ There are three editing modes available in collider component mode.
 
 Physics Asset resize mode has a three-axis scale manipulator.
 
-![PhysX Mesh Collider component mode physics asset resize manipulator](/images/user-guide/components/reference/physx/physx-collider-resize-physicsasset.png)
+![PhysX Mesh Collider component mode physics asset resize manipulator](/images/user-guide/components/reference/physx/physx-mesh-collider-resize.png)
 
 ### Offset
 
 Offset mode has a three-axis translate manipulator.
 
-![PhysX Mesh Collider component mode offset manipulator](/images/user-guide/components/reference/physx/physx-collider-offset-mode.png)
+![PhysX Mesh Collider component mode offset manipulator](/images/user-guide/components/reference/physx/physx-mesh-collider-offset-mode.png)
 
 ### Rotation
 
 Rotation mode has a three-axis rotate manipulator.
 
-![PhysX Mesh Collider component mode rotate manipulator](/images/user-guide/components/reference/physx/physx-collider-rotate-mode.png)
+![PhysX Mesh Collider component mode rotate manipulator](/images/user-guide/components/reference/physx/physx-mesh-collider-rotate-mode.png)
 
 ### Collider component mode hotkeys
 

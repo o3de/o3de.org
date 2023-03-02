@@ -79,7 +79,7 @@ Physics materials define the physical properties of PhysX colliders.
 
 When using a **PhysX Primitive Collider** component, one physics material can be assigned for the entire collider.
 
-When using a **PhysX Mesh Collider** components, physics materials can be assigned to entire collider or on a per-face basis if the PhysX asset is a triangle mesh. When the **Physics Materials from Asset** property is enabled, the physics materials for this collider are automatically set based on the Physics Materials from the mesh's PhysX asset (see [FBX Settings PhysX tab](/docs/user-guide/assets/scene-settings/physx-tab/)). To manually set the physics materials in the collider, uncheck the **Physics Materials from Asset** property and select the physics materials from the **Physics Materials** property list to assign it.
+When using a **PhysX Mesh Collider** component, physics materials can be assigned to entire collider or on a per-face basis if the PhysX asset is a triangle mesh. When the **Physics Materials from Asset** property is enabled, the physics materials for this collider are automatically set based on the Physics Materials from the mesh's PhysX asset (see [FBX Settings PhysX tab](/docs/user-guide/assets/scene-settings/physx-tab/)). To manually set the physics materials in the collider, uncheck the **Physics Materials from Asset** property and select the physics materials from the **Physics Materials** property list to assign it.
 
 ![PhysX Primitive Collider, setting the physics materials.](/images/user-guide/physx/physx/ui-physx-material-F.png)
 
