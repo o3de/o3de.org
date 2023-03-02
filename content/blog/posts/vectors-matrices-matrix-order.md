@@ -508,7 +508,7 @@ const float Sx = 2.f;
 const float Sy = 4.f
 
 // Rotation of approx. 45 degrees (in radians)
-const float theta = 0.707;
+const float theta = 0.785;
 
 // Translation of -5 along x axis and 10 along y axis
 const float Tx = -5.f;
