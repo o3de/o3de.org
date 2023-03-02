@@ -7,7 +7,7 @@ blog_img: "/images/blog/dev-series.JPG"
 full_img: ""
 ---
 
-_In this blog post, AWS engineer John Coimbra Walsh covers the basics of using vectors, matricies, and matrix order. This is a complicated topic for novice graphics programmers, and hopefully this breakdown can help you!_
+_In this blog post, AWS engineer John Coimbra Walsh covers the basics of using vectors, matrices, and matrix order. This is a complicated topic for novice graphics programmers, and hopefully this breakdown can help you!_
 
 ## Matrices & vectors
 
