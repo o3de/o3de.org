@@ -1,5 +1,5 @@
 ---
-linktTitle: Project Game Release Layout (Windows)
+linkTitle: Windows Release Build
 title: Creating a Project Game Release Layout for Windows
 description: Learn how to create an Open 3D Engine (O3DE) project game release layout for Windows.
 toc: true
@@ -19,15 +19,15 @@ The instructions here guide you through the following steps:
 
 1. Set the starting level.
 
-1. Process your project's assets.
+2. Process your project's assets.
 
-1. Create a project game release layout.
+3. Create a project game release layout.
 
-1. Bundle your project's assets.
+4. Bundle your project's assets.
 
-1. Run your project's Game Launcher from the project game release layout.
+5. Run your project's Game Launcher from the project game release layout.
 
-1. Distribute your build.
+6. Distribute your build.
 
 
 ## Prerequisites
