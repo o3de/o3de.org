@@ -19,7 +19,7 @@ Single-touch gestures (such as tap, drag, hold, and swipe) can be detected with 
 Enable the Gem in your project to automatically start receiving gesture input events that you can respond to.
 
 {{< note >}}
-Gesture recognizers can only be configured in C++ at the moment. There is no UI available to modify them.
+Gesture recognizers can only be configured in the Gem's source at the moment. There is no UI available to modify them.
 {{< /note >}}
 
 ## Responding to Gesture Input
