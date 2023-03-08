@@ -1,5 +1,5 @@
 ---
-title: "MPS Blog Rough Draft"
+title: "Explore Multiplayer Gaming with the O3DE Multiplayer Sample - Now Available for Download!"
 date: 2055-03-08
 slug: mps-sample 
 Author: Darrin McPherson
