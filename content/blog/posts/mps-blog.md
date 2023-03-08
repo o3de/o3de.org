@@ -2,6 +2,7 @@
 title: "MPS Blog Rough Draft"
 date: 2055-03-08
 slug: mps-sample 
+Author: Darrin McPherson
 blog_img: "/images/blog/mps-sample/image01.png"
 full_img: "/images/blog/mps-sample/image01.png"
 ---
