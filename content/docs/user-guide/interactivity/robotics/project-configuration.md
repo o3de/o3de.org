@@ -79,7 +79,6 @@ scripts/o3de.sh enable-gem -gn ROS2 -pp <PATH_TO_YOUR_PROJECT>
 
 For more information, refer to [Adding and Removing Gems](/docs/user-guide/project-config/add-remove-gems/) and [Registering Gems](/docs/user-guide/project-config/register-gems/).
 
-
 ### Building
 
 The ROS 2 Gem is built when you build an O3DE project and enable the ROS 2 Gem. For more information, refer to [Project Creation](/docs/welcome-guide/create/) and [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems/). Make sure to [source your ROS 2 workspace](#source-your-ros-2-workspace) before building.

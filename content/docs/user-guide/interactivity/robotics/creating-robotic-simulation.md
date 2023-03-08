@@ -7,10 +7,17 @@ toc: true
 
 ## How to create your own robotic simulation
 
+### Tutorials
+
+>This section is to be filled in
+
+### High-level steps
+
 >This section is to be detailed.
 
 Once you are set up and familiar with the example project, consider the following steps:
-1. [Create a new O3DE project](/docs/welcome-guide/create/).
+1. [Create a new O3DE project](/docs/welcome-guide/create/)
+   1. It is best to use one of [Project Templates](/docs/interactivity/robotics/overview.md) for robotics to start quickly.
 2. [Registering ROS2 Gem for your Project](/docs/user-guide/project-config/register-gems/) guide.
 3. Create or import Assets for your robots and environment.
    1. You can use formats supported by O3DE.
@@ -25,3 +32,5 @@ Once you are set up and familiar with the example project, consider the followin
 5. Develop necessary sensors and their prefabs.
 7. Develop your scene and simulation scenario, placing Assets and configuring components.
 8. Run the simulation with your ROS 2 robot stack. You can build quickly one with some of many [ROS 2 packages](https://index.ros.org/packages/#humble) and projects in [ROS 2 ecosystem](https://project-awesome.org/fkromer/awesome-ros2).
+
+

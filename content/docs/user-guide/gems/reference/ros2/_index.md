@@ -7,11 +7,7 @@ toc: true
 
 <!-- # O3DE ROS2 Gem -->
 
-The **ROS 2** Gem provides integration with the [Robot Operating System (ROS) 2](https://docs.ros.org/en/rolling/index.html) library and enables design of simulation of robotics systems.
-It features configurable components for sensor simulation, control of different type of drives as well as manipulator arms,
-dynamic spawning of robots, and plenty of utilities.
-
-## Features
+Open 3D Engine enables robotic simulation thanks to ROS 2 Gem. It has the following features:
 
 * Direct and natural support of ROS 2 ecosystem:
     * No bridges. Your simulation node will function as any other ROS 2 node.
@@ -36,14 +32,9 @@ dynamic spawning of robots, and plenty of utilities.
 * URDF/XACRO (experimental).
     * Allows to import robot from URDF format. 
 
-## Example project
-
-You can test O3DE ROS 2 Gem with the [Robot Vacuum Sample](https://github.com/o3de/RobotVacuumSample) project. This project allows you to run robot navigation. All necessary assets are included.
-
 ## Related topics
 
-| Topic                                                                                                                  | Description                                                  |
-|------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [ROS2 Gem User Guide](ros2-gem-user-guide.md)                                                                          | The complete C++ API reference for the O3DE Multiplayer Gem. |
-| [Gem documentation](https://github.com/o3de/o3de-extras/blob/development/Gems/ROS2/docs/guides/development_in_clion.md)| CLion IDE project setup to support the Gem                   |
-| [Open 3D Engine Contributor guide](/docs/contributing)                                                                 | Read this guide if you wish to contribute to the Gem         |
+| Topic                                                                                                                | Description                            |
+|----------------------------------------------------------------------------------------------------------------------|----------------------------------------|
+| [Robotics in O3DE](interactivity/robotics/_index.md)                                                                 | Gems, Templates and Demos for Robotics |
+| [Concepts and components - an overview](concepts-and-components-overview.md)                                         | Overview of concepts and components    |
