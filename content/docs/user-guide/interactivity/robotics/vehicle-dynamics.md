@@ -1,7 +1,7 @@
 ---
-linkTitle: Guide
-title: O3DE ROS 2 Vehicle Dynamics
-description: Understanding basic concepts and structure of O3DE ROS 2 Gem
+linkTitle: Vehicle Dynamics
+title: ROS 2 Vehicle Dynamics
+description: Understanding basic concepts and structure of the ROS 2 Gem's vehicle dynamics in Open 3D Engine (O3DE).
 toc: true
 ---
 

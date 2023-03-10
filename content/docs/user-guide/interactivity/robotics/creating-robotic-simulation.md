@@ -1,7 +1,7 @@
 ---
-linkTitle: CreatingYourSimulation
-title: Creating a robotic simulation
-description: Steps to create a robotic simulation using the Gem
+linkTitle: Creating a Robotic Simulation
+title: Creating a Robotic Simulation
+description: A step-by-step process on how to create a robotic simulation using the ROS 2 Gem in Open 3D Engine (O3DE).
 toc: true
 ---
 

@@ -155,7 +155,7 @@ toc: true
 
 | Gem | Description |
 | - | - |
-| [ROS 2](./ros2/) | The ROS 2 Gem provides integration with the [Robot Operating System (ROS) 2](https://docs.ros.org/en/rolling/index.html) library and enables design of simulation of robotics systems. |
+| [ROS 2](./robotics/ros2.md) | The ROS 2 Gem provides integration with the [Robot Operating System (ROS) 2](https://docs.ros.org/en/rolling/index.html) library and enables design of simulation of robotics systems. |
 
 ## Script
 

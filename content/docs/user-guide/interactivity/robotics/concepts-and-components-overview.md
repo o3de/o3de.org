@@ -1,7 +1,7 @@
 ---
-linkTitle: Guide
-title: O3DE ROS 2 Concepts and Structure
-description: Understanding basic concepts and structure of O3DE ROS 2 Gem
+linkTitle: Concepts and Structure
+title: ROS 2 Concepts and Structure
+description: Understanding basic concepts and structure of the ROS 2 Gem in Open 3D Engine (O3DE).
 toc: true
 ---
 
@@ -52,7 +52,7 @@ Note that QoS class is a simple wrapper to [`rclcpp::QoS`](https://docs.ros.org/
 - __Robot Import (URDF) system component__
   - ROS2RobotImporterSystemComponent
 
-See the [class diagram](class-diagram.md) to understand how components are connected.
+See the [class diagram](content/docs/user-guide/interactivity/robotics/class-diagram.mdr-guide/interactivity/robotics/class-diagram.md) to understand how components are connected.
 
 ### Frames
 

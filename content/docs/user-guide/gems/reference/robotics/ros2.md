@@ -30,12 +30,12 @@ Open 3D Engine enables robotic simulation thanks to ROS 2 Gem. It has the follow
     * Ackermann Steering, subscribes to message of type [AckermannDrive](http://docs.ros.org/en/api/ackermann_msgs/html/msg/AckermannDrive.html).
     * Differential drive, subscribes to message of type [Twist](http://docs.ros.org/en/noetic/api/geometry_msgs/html/msg/Twist.html).
 * URDF/XACRO (experimental).
-    * Allows to import robot from URDF format. 
+    * Allows to import robot from URDF format.
 
 ## Related topics
 
 | Topic                                                                        | Description                                       |
 |------------------------------------------------------------------------------|---------------------------------------------------|
 | [Robotics in O3DE](/docs/user-guide/interactivity/robotics)                  | Gems, Templates and Demos for Robotics            |
-| [Concepts and components - an overview](concepts-and-components-overview.md) | Overview of concepts and components               |
+| [Concepts and components - an overview](content/docs/user-guide/interactivity/robotics/concepts-and-components-overview.md) | Overview of concepts and components               |
 | [ROS 2 Gem API reference](/docs/api/gems/ros2)                               | ROS 2 Gem API reference (generated documentation) |

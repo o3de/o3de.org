@@ -1,7 +1,7 @@
 ---
-linkTitle: ROS2ProjectConfiguration
-title: Project Configuration
-description: How to install dependencies and build a project with this Gem.
+linkTitle: Project Configuration
+title: ROS 2 Project Configuration
+description: How to install dependencies and build a project with the ROS 2 Gem in Open 3D Engine (O3DE).
 toc: true
 ---
 
