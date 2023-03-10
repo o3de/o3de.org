@@ -15,7 +15,7 @@ The Gem creates a [ROS 2 node](https://docs.ros.org/en/humble/Tutorials/Understa
 
 Note that the simulation node is handled through `ROS2SystemComponent` - a singleton. However, you are free to create and use your own nodes if you need more than one.
 
-Typically, you will be creating publishers and subscriptions. This is done through [rclcpp API](https://docs.ros2.org/humble/api/rclcpp/classrclcpp_1_1Node.html). Example:
+Typically, you will be creating publishers and subscriptions. This is done through [rclcpp API](https://docs.ros.org/en/humble/p/rclcpp/generated/classrclcpp_1_1Node.html#classrclcpp_1_1Node). Example:
 
 ```
 auto ros2Node = ROS2Interface::Get()->GetNode();
@@ -52,7 +52,7 @@ Note that QoS class is a simple wrapper to [`rclcpp::QoS`](https://docs.ros.org/
 - __Robot Import (URDF) system component__
   - ROS2RobotImporterSystemComponent
 
-See the [class diagram](content/docs/user-guide/interactivity/robotics/class-diagram.mdr-guide/interactivity/robotics/class-diagram.md) to understand how components are connected.
+See the [class diagram](/docs/user-guide/interactivity/robotics/class-diagram/) to understand how components are connected.
 
 ### Frames
 
@@ -79,7 +79,7 @@ Sensors can be fall into one of two categories:
 The Gem comes with `ROS2RobotControlComponent`, which you can use to move your robot through:
 
 - [Twist](https://github.com/ros2/common_interfaces/blob/master/geometry_msgs/msg/Twist.msg) messages.
-- [AckermannDrive](https://index.ros.org/p/ackermann_msgs/#humble)
+- [AckermannDrive](https://github.com/ros-drivers/ackermann_msgs/blob/master/msg/AckermannDrive.msg)
   The component subscribes to these command messages on a configured topic. The topic is "cmd_vel" by default, in a namespace as dictated by ROS2Frame.
 
 To make use of received command messages, use either `AckermannControlComponent`, `RigidBodyTwistControlComponent` or `SkidSteeringControlComponent` , depending on steering type. You can also implement your own control component or use LUA scripting to handle these commands. Unless scripting is used, control components should translate ROS 2 commands to events on `VehicleInputControlBus`. These events will be handled by a [`VehicleModelComponent`](#vehicle-model) if it is present. You can use tools such as [rqt_robot_steering](https://index.ros.org/p/rqt_robot_steering/) to move your robot with Twist messages. `RobotControl` is suitable to use with [ROS 2 navigation stack](https://navigation.ros.org/). It is possible to implement your own control mechanisms with this Component.

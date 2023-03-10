@@ -17,7 +17,7 @@ toc: true
 
 Once you are set up and familiar with the example project, consider the following steps:
 1. [Create a new O3DE project](/docs/welcome-guide/create/)
-   1. It is best to use one of [Project Templates](/docs/interactivity/robotics/overview.md) for robotics to start quickly.
+   1. It is best to use one of [Project Templates](/docs/user-guide/interactivity/robotics/overview/#templates) for robotics to start quickly.
 2. [Registering ROS2 Gem for your Project](/docs/user-guide/project-config/register-gems/) guide.
 3. Create or import Assets for your robots and environment.
    1. You can use formats supported by O3DE.

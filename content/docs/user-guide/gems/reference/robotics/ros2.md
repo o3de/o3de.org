@@ -37,5 +37,5 @@ Open 3D Engine enables robotic simulation thanks to ROS 2 Gem. It has the follow
 | Topic                                                                        | Description                                       |
 |------------------------------------------------------------------------------|---------------------------------------------------|
 | [Robotics in O3DE](/docs/user-guide/interactivity/robotics)                  | Gems, Templates and Demos for Robotics            |
-| [Concepts and components - an overview](content/docs/user-guide/interactivity/robotics/concepts-and-components-overview.md) | Overview of concepts and components               |
+| [Concepts and components - an overview](/docs/user-guide/interactivity/robotics/concepts-and-components-overview.md) | Overview of concepts and components               |
 | [ROS 2 Gem API reference](/docs/api/gems/ros2)                               | ROS 2 Gem API reference (generated documentation) |
